@@ -7,7 +7,7 @@ proof: formalized
 
 # Concrete Binary Tower Field
 
-`CompPoly.Fields.Binary.Tower.Concrete.Field`, in [CompPoly/Fields/Binary/Tower/Concrete/Field.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean), by Chung Thai Nguyen, Quang Dao.
+`CompPoly.Fields.Binary.Tower.Concrete.Field`, in [CompPoly/Fields/Binary/Tower/Concrete/Field.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean), by Chung Thai Nguyen, Quang Dao.
 
 > Field-structure lemmas for successive levels of the concrete binary tower. The field
 > dictionary uses binary natural powers and integer powers that invert the natural-power
@@ -18,7 +18,7 @@ proof: formalized
 
 > Lemmas of field properties at level k that depends on field properties at level (k-1)
 
-`ConcreteBinaryTower.concrete_mul_eq` (theorem, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L36))
+`ConcreteBinaryTower.concrete_mul_eq` (theorem, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L36))
 
 ```lean
 theorem concrete_mul_eq
@@ -30,7 +30,7 @@ theorem concrete_mul_eq
       concrete_mul a₀ b₀ + concrete_mul a₁ b₁ 》
 ```
 
-`ConcreteBinaryTower.concrete_zero_mul` (lemma, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L97))
+`ConcreteBinaryTower.concrete_zero_mul` (lemma, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L97))
 
 ```lean
 lemma concrete_zero_mul
@@ -38,7 +38,7 @@ lemma concrete_zero_mul
   (a : ConcreteBTField k) : concrete_mul (zero (k:=k)) a = zero (k:=k)
 ```
 
-`ConcreteBinaryTower.concrete_mul_zero` (lemma, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L118))
+`ConcreteBinaryTower.concrete_mul_zero` (lemma, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L118))
 
 ```lean
 lemma concrete_mul_zero
@@ -46,7 +46,7 @@ lemma concrete_mul_zero
   (a : ConcreteBTField k) : concrete_mul a (zero (k:=k)) = zero (k:=k)
 ```
 
-`ConcreteBinaryTower.concrete_one_mul` (lemma, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L142))
+`ConcreteBinaryTower.concrete_one_mul` (lemma, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L142))
 
 ```lean
 lemma concrete_one_mul
@@ -54,7 +54,7 @@ lemma concrete_one_mul
   (a : ConcreteBTField k) : concrete_mul (one (k:=k)) a = a
 ```
 
-`ConcreteBinaryTower.concrete_mul_one` (lemma, [line 164](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L164))
+`ConcreteBinaryTower.concrete_mul_one` (lemma, [line 164](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L164))
 
 ```lean
 lemma concrete_mul_one
@@ -62,7 +62,7 @@ lemma concrete_mul_one
   (a : ConcreteBTField k) : concrete_mul a (one (k:=k)) = a
 ```
 
-`ConcreteBinaryTower.concrete_pow_base_one` (lemma, [line 190](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L190))
+`ConcreteBinaryTower.concrete_pow_base_one` (lemma, [line 190](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L190))
 
 ```lean
 lemma concrete_pow_base_one
@@ -70,7 +70,7 @@ lemma concrete_pow_base_one
   concrete_pow_nat (k:=k) (x:=1) n = 1
 ```
 
-`ConcreteBinaryTower.concrete_mul_comm` (lemma, [line 229](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L229))
+`ConcreteBinaryTower.concrete_mul_comm` (lemma, [line 229](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L229))
 
 ```lean
 lemma concrete_mul_comm
@@ -79,7 +79,7 @@ lemma concrete_mul_comm
   concrete_mul a b = concrete_mul b a
 ```
 
-`ConcreteBinaryTower.concrete_mul_assoc` (lemma, [line 268](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L268))
+`ConcreteBinaryTower.concrete_mul_assoc` (lemma, [line 268](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L268))
 
 > The recursive multiplication is associative at a positive level whenever the predecessor
 > level satisfies its field laws.
@@ -91,7 +91,7 @@ lemma concrete_mul_assoc
   concrete_mul (concrete_mul a b) c = concrete_mul a (concrete_mul b c)
 ```
 
-`ConcreteBinaryTower.concrete_mul_left_distrib` (lemma, [line 280](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L280))
+`ConcreteBinaryTower.concrete_mul_left_distrib` (lemma, [line 280](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L280))
 
 > At a positive level, recursive multiplication distributes over addition in its second
 > argument whenever the predecessor level satisfies its field laws.
@@ -103,7 +103,7 @@ lemma concrete_mul_left_distrib
     concrete_mul a (b + c) = concrete_mul a b + concrete_mul a c
 ```
 
-`ConcreteBinaryTower.concrete_mul_right_distrib` (lemma, [line 290](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L290))
+`ConcreteBinaryTower.concrete_mul_right_distrib` (lemma, [line 290](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L290))
 
 ```lean
 lemma concrete_mul_right_distrib
@@ -112,7 +112,7 @@ lemma concrete_mul_right_distrib
     concrete_mul (a + b) c = concrete_mul a c + concrete_mul b c
 ```
 
-`ConcreteBinaryTower.norm_of_ne_zero_is_ne_zero` (lemma, [line 316](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L316))
+`ConcreteBinaryTower.norm_of_ne_zero_is_ne_zero` (lemma, [line 316](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L316))
 
 > For a nonzero element at a positive level, `lo * (lo + hi * z) + hi * hi` is nonzero
 > in the predecessor field, where `lo` and `hi` are its low and high halves and `z = Z (k - 1)`.
@@ -127,7 +127,7 @@ lemma norm_of_ne_zero_is_ne_zero {k : ℕ}
   concrete_mul a₀ (a₀ + concrete_mul a₁ (Z (k - 1))) + concrete_mul a₁ a₁ ≠ 0
 ```
 
-`ConcreteBinaryTower.concrete_mul_inv_cancel` (lemma, [line 343](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L343))
+`ConcreteBinaryTower.concrete_mul_inv_cancel` (lemma, [line 343](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L343))
 
 ```lean
 lemma concrete_mul_inv_cancel
@@ -136,7 +136,7 @@ lemma concrete_mul_inv_cancel
   concrete_mul a (concrete_inv a) = one
 ```
 
-`ConcreteBinaryTower.concrete_inv_one` (lemma, [line 431](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L431))
+`ConcreteBinaryTower.concrete_inv_one` (lemma, [line 431](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L431))
 
 ```lean
 lemma concrete_inv_one :
@@ -145,7 +145,7 @@ lemma concrete_inv_one :
 
 > Inductive tower construction, using lemmas from `BTFieldPropsOneLevelLiftingLemmas`
 
-`ConcreteBinaryTower.Z_square_eq` (lemma, [line 443](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L443))
+`ConcreteBinaryTower.Z_square_eq` (lemma, [line 443](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L443))
 
 ```lean
 lemma Z_square_eq (k : ℕ) (prevBTFieldProps : ConcreteBTFieldProps (k := k))
@@ -154,21 +154,21 @@ lemma Z_square_eq (k : ℕ) (prevBTFieldProps : ConcreteBTFieldProps (k := k))
   (Z (k + 1)) ^ 2 = 《 Z (k), 1 》
 ```
 
-`ConcreteBinaryTower.liftBTFieldProps` (theorem, [line 464](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L464))
+`ConcreteBinaryTower.liftBTFieldProps` (theorem, [line 464](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L464))
 
 ```lean
 theorem liftBTFieldProps (k : ℕ) (prevBTFResult : ConcreteBTFStepResult (k := k)) :
   ConcreteBTFieldProps (k + 1)
 ```
 
-`ConcreteBinaryTower.liftConcreteBTField` (definition, [line 498](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L498))
+`ConcreteBinaryTower.liftConcreteBTField` (definition, [line 498](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L498))
 
 ```lean
 def liftConcreteBTField (k : ℕ) (prevBTFResult : ConcreteBTFStepResult (k := k)) :
   Field (ConcreteBTField (k + 1))
 ```
 
-`ConcreteBinaryTower.concreteCanonicalEmbedding` (definition, [line 507](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L507))
+`ConcreteBinaryTower.concreteCanonicalEmbedding` (definition, [line 507](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L507))
 
 > The canonical ring homomorphism embedding `ConcreteBTField k` into
 > `ConcreteBTField (k + 1)`.
@@ -183,7 +183,7 @@ def concreteCanonicalEmbedding (k : ℕ)
   ConcreteBTField k →+* ConcreteBTField (k + 1)
 ```
 
-`ConcreteBinaryTower.instAlgebraLiftConcreteBTField` (instance, [line 554](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L554))
+`ConcreteBinaryTower.instAlgebraLiftConcreteBTField` (instance, [line 554](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L554))
 
 ```lean
 instance instAlgebraLiftConcreteBTField (k : ℕ)
@@ -193,7 +193,7 @@ instance instAlgebraLiftConcreteBTField (k : ℕ)
   Algebra (ConcreteBTField k) (ConcreteBTField (k + 1))
 ```
 
-`ConcreteBinaryTower.Z_square_mul_form` (lemma, [line 566](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L566))
+`ConcreteBinaryTower.Z_square_mul_form` (lemma, [line 566](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L566))
 
 ```lean
 lemma Z_square_mul_form
@@ -210,7 +210,7 @@ lemma Z_square_mul_form
       + 1
 ```
 
-`ConcreteBinaryTower.sum_inv_Z_next_eq` (lemma, [line 602](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L602))
+`ConcreteBinaryTower.sum_inv_Z_next_eq` (lemma, [line 602](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L602))
 
 ```lean
 lemma sum_inv_Z_next_eq
@@ -224,19 +224,19 @@ lemma sum_inv_Z_next_eq
   Z (k + 1) + (Z (k + 1))⁻¹ = (algebraMap (ConcreteBTField k) (ConcreteBTField (k + 1))) (Z k)
 ```
 
-`ConcreteBinaryTower.getBTFResult` (definition, [line 624](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L624))
+`ConcreteBinaryTower.getBTFResult` (definition, [line 624](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L624))
 
 ```lean
 noncomputable def getBTFResult (k : ℕ) : ConcreteBTFStepResult k
 ```
 
-`ConcreteBinaryTower.instFieldConcrete` (instance, [line 826](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L826))
+`ConcreteBinaryTower.instFieldConcrete` (instance, [line 826](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L826))
 
 ```lean
 instance instFieldConcrete {k : ℕ} : Field (ConcreteBTField k)
 ```
 
-`ConcreteBinaryTower.npow_def` (theorem, [line 830](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L830))
+`ConcreteBinaryTower.npow_def` (theorem, [line 830](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L830))
 
 > Natural powers use binary exponentiation of the concrete multiplication.
 
@@ -244,7 +244,7 @@ instance instFieldConcrete {k : ℕ} : Field (ConcreteBTField k)
 theorem npow_def (a : ConcreteBTField k) (n : ℕ) : a ^ n = npowBinRec n a
 ```
 
-`ConcreteBinaryTower.zpow_def` (theorem, [line 833](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L833))
+`ConcreteBinaryTower.zpow_def` (theorem, [line 833](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L833))
 
 > Integer powers use binary exponentiation, followed by inversion for negative exponents.
 
@@ -253,7 +253,7 @@ theorem zpow_def (a : ConcreteBTField k) (n : ℤ) :
     a ^ n = zpowRec npowBinRec n a
 ```
 
-`ConcreteBinaryTower.concrete_pow_nat_eq_pow` (theorem, [line 837](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L837))
+`ConcreteBinaryTower.concrete_pow_nat_eq_pow` (theorem, [line 837](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L837))
 
 > The raw binary-power routine agrees with natural powers in the field.
 
@@ -262,19 +262,19 @@ theorem concrete_pow_nat_eq_pow (a : ConcreteBTField k) (n : ℕ) :
     concrete_pow_nat a n = a ^ n
 ```
 
-`ConcreteBinaryTower.instCharP2` (instance, [line 856](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L856))
+`ConcreteBinaryTower.instCharP2` (instance, [line 856](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L856))
 
 ```lean
 instance instCharP2 {k : ℕ} : CharP (ConcreteBTField k) 2
 ```
 
-`ConcreteBinaryTower.instFintype` (instance, [line 859](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L859))
+`ConcreteBinaryTower.instFintype` (instance, [line 859](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L859))
 
 ```lean
 noncomputable instance instFintype {k : ℕ} : Fintype (ConcreteBTField k)
 ```
 
-`ConcreteBinaryTower.𝕏` (definition, [line 864](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L864))
+`ConcreteBinaryTower.𝕏` (definition, [line 864](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean#L864))
 
 > adjoined root of poly k, generator of successor field BTField (k + 1)
 
@@ -292,5 +292,5 @@ def 𝕏 (k : ℕ) : ConcreteBTField (k + 1)
 
 ## Sources
 
-- [CompPoly/Fields/Binary/Tower/Concrete/Field.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Field.lean)
+- [CompPoly/Fields/Binary/Tower/Concrete/Field.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Field.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Fields.Binary.Tower.Concrete.Field.json)

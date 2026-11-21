@@ -7,12 +7,12 @@ proof: formalized
 
 # Odd Split Correctness for Las Vegas Splitting
 
-`CompPoly.Univariate.Roots.LasVegas.Correctness.Odd`, in [CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.LasVegas.Correctness.Odd`, in [CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean), by Valerii Huhnin.
 
 > Correctness lemmas for the odd-characteristic Cantor-Zassenhaus split attempt
 > and retry loop.
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_child_proper` (theorem, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L185))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_child_proper` (theorem, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L185))
 
 ```lean
 theorem cantorZassenhausOddAttemptWith_child_proper {F : Type*}
@@ -25,7 +25,7 @@ theorem cantorZassenhausOddAttemptWith_child_proper {F : Type*}
     isNontrivialProperChild (CPolynomial.monicNormalize g) child = true
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_size_ge_two` (theorem, [line 203](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L203))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_size_ge_two` (theorem, [line 203](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L203))
 
 ```lean
 theorem cantorZassenhausOddAttemptWith_size_ge_two {F : Type*}
@@ -37,7 +37,7 @@ theorem cantorZassenhausOddAttemptWith_size_ge_two {F : Type*}
     2 ≤ children.size
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_ne_zero` (theorem, [line 219](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L219))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_ne_zero` (theorem, [line 219](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L219))
 
 ```lean
 theorem cantorZassenhausOddAttemptWith_ne_zero {F : Type*}
@@ -49,7 +49,7 @@ theorem cantorZassenhausOddAttemptWith_ne_zero {F : Type*}
     g ≠ 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_root_preserved` (theorem, [line 238](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L238))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_root_preserved` (theorem, [line 238](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L238))
 
 ```lean
 theorem cantorZassenhausOddAttemptWith_root_preserved {F : Type*}
@@ -62,7 +62,7 @@ theorem cantorZassenhausOddAttemptWith_root_preserved {F : Type*}
     ∃ child, child ∈ children.toList ∧ CPolynomial.eval a child = 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_child_dvd_input` (theorem, [line 249](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L249))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_child_dvd_input` (theorem, [line 249](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L249))
 
 ```lean
 theorem cantorZassenhausOddAttemptWith_child_dvd_input {F : Type*}
@@ -75,7 +75,7 @@ theorem cantorZassenhausOddAttemptWith_child_dvd_input {F : Type*}
     child.toPoly ∣ g.toPoly
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_child_normSplitWork_pos` (theorem, [line 301](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L301))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_child_normSplitWork_pos` (theorem, [line 301](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L301))
 
 ```lean
 theorem cantorZassenhausOddAttemptWith_child_normSplitWork_pos {F : Type*}
@@ -88,7 +88,7 @@ theorem cantorZassenhausOddAttemptWith_child_normSplitWork_pos {F : Type*}
     1 ≤ normSplitWork child
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_stackWork_le` (theorem, [line 395](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L395))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_stackWork_le` (theorem, [line 395](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L395))
 
 ```lean
 theorem cantorZassenhausOddAttemptWith_stackWork_le {F : Type*}
@@ -101,7 +101,7 @@ theorem cantorZassenhausOddAttemptWith_stackWork_le {F : Type*}
     stackWork children.toList ≤ splitWork (CPolynomial.monicNormalize g) - 1
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_probe_congr` (theorem, [line 624](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L624))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_probe_congr` (theorem, [line 624](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L624))
 
 > The odd split attempt depends on the probe family only through the probe
 > it actually draws.
@@ -117,7 +117,7 @@ theorem cantorZassenhausOddAttemptWith_probe_congr {F : Type*}
       cantorZassenhausOddAttemptWith M D q p2 g a2
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith_probe_congr` (theorem, [line 638](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L638))
+`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith_probe_congr` (theorem, [line 638](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L638))
 
 > The odd retry loop depends on the probe family only through the probes it
 > actually draws.
@@ -135,7 +135,7 @@ theorem tryOddSplitAttemptsWith_probe_congr {F : Type*}
         tryOddSplitAttemptsWith M D q p2 g attempts offset2
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith_eq_some_exists_attempt` (theorem, [line 669](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L669))
+`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith_eq_some_exists_attempt` (theorem, [line 669](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L669))
 
 > A successful retry loop result is produced by some single attempt.
 
@@ -149,7 +149,7 @@ theorem tryOddSplitAttemptsWith_eq_some_exists_attempt {F : Type*}
       ∃ attempt, cantorZassenhausOddAttemptWith M D q probes g attempt = some children
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith_root` (theorem, [line 693](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L693))
+`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith_root` (theorem, [line 693](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L693))
 
 ```lean
 theorem tryOddSplitAttemptsWith_root {F : Type*}
@@ -162,7 +162,7 @@ theorem tryOddSplitAttemptsWith_root {F : Type*}
         ∃ child, child ∈ children.toList ∧ CPolynomial.eval a child = 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith_child_normSplitWork_pos` (theorem, [line 743](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L743))
+`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith_child_normSplitWork_pos` (theorem, [line 743](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L743))
 
 ```lean
 theorem tryOddSplitAttemptsWith_child_normSplitWork_pos {F : Type*}
@@ -176,7 +176,7 @@ theorem tryOddSplitAttemptsWith_child_normSplitWork_pos {F : Type*}
           1 ≤ normSplitWork child
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith_stackWork_le` (theorem, [line 770](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L770))
+`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith_stackWork_le` (theorem, [line 770](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L770))
 
 ```lean
 theorem tryOddSplitAttemptsWith_stackWork_le {F : Type*}
@@ -189,7 +189,7 @@ theorem tryOddSplitAttemptsWith_stackWork_le {F : Type*}
         stackWork children.toList ≤ splitWork (CPolynomial.monicNormalize g) - 1
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_success_of_bucket_separated` (theorem, [line 1049](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L1049))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausOddAttemptWith_success_of_bucket_separated` (theorem, [line 1049](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean#L1049))
 
 > A fixed probe whose Euler buckets separate two distinct roots of `g` forces the
 > odd Cantor-Zassenhaus split attempt to succeed.
@@ -229,5 +229,5 @@ theorem cantorZassenhausOddAttemptWith_success_of_bucket_separated {F : Type*}
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean)
+- [CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean)
 - [Declaration ledger](../../../../../../../sources/comppoly/CompPoly.Univariate.Roots.LasVegas.Correctness.Odd.json)

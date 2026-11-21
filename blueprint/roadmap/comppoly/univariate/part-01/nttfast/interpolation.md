@@ -7,12 +7,12 @@ proof: formalized
 
 # NTTFast and Interpolation
 
-`CompPoly.Univariate.NTTFast.Interpolation`, in [CompPoly/Univariate/NTTFast/Interpolation.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Interpolation.lean), by Valerii Huhnin.
+`CompPoly.Univariate.NTTFast.Interpolation`, in [CompPoly/Univariate/NTTFast/Interpolation.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Interpolation.lean), by Valerii Huhnin.
 
 > Bridge theorem declarations deriving NTTFast interpolation facts from the shared
 > NTT specification layer.
 
-`CompPoly.CPolynomial.NTTFast.Plan.inverseImpl_interpolatePow_eq` (theorem, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Interpolation.lean#L32))
+`CompPoly.CPolynomial.NTTFast.Plan.inverseImpl_interpolatePow_eq` (theorem, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Interpolation.lean#L32))
 
 > …
 
@@ -24,7 +24,7 @@ theorem inverseImpl_interpolatePow_eq [BEq R] [LawfulBEq R]
         (NTT.loadNaturalVector P.domain values)).val
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.inverseImpl_eval_node_eq` (theorem, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Interpolation.lean#L41))
+`CompPoly.CPolynomial.NTTFast.Plan.inverseImpl_eval_node_eq` (theorem, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Interpolation.lean#L41))
 
 > …
 
@@ -35,7 +35,7 @@ theorem inverseImpl_eval_node_eq
       (inverseImpl P (NTT.Transform.bitRevPermute P.domain values)) = values.getD k.1 0
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.inverseImpl_evalOnDomain_eq` (theorem, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Interpolation.lean#L49))
+`CompPoly.CPolynomial.NTTFast.Plan.inverseImpl_evalOnDomain_eq` (theorem, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Interpolation.lean#L49))
 
 > …
 
@@ -46,7 +46,7 @@ theorem inverseImpl_evalOnDomain_eq
       NTT.loadNaturalArray P.domain values
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.interpolate` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Interpolation.lean#L60))
+`CompPoly.CPolynomial.NTTFast.Plan.interpolate` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Interpolation.lean#L60))
 
 > Interpolate natural-order values on the plan's domain with the cached inverse transform.
 >
@@ -57,7 +57,7 @@ def interpolate [BEq R] [LawfulBEq R] (P : Plan R) (values : Vector R P.domain.n
     CPolynomial R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.interpolate_eq_ntt_interpolate` (theorem, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Interpolation.lean#L66))
+`CompPoly.CPolynomial.NTTFast.Plan.interpolate_eq_ntt_interpolate` (theorem, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Interpolation.lean#L66))
 
 > A well-formed plan's interpolation agrees with the unplanned `NTT.interpolate`.
 
@@ -67,7 +67,7 @@ theorem interpolate_eq_ntt_interpolate [BEq R] [LawfulBEq R]
     interpolate P values = NTT.interpolate P.domain values
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.interpolate_eq_interpolatePow` (theorem, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Interpolation.lean#L74))
+`CompPoly.CPolynomial.NTTFast.Plan.interpolate_eq_interpolatePow` (theorem, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Interpolation.lean#L74))
 
 > A well-formed plan interpolates by Lagrange's formula on the powers of the domain root.
 
@@ -88,5 +88,5 @@ theorem interpolate_eq_interpolatePow [BEq R] [LawfulBEq R]
 
 ## Sources
 
-- [CompPoly/Univariate/NTTFast/Interpolation.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Interpolation.lean)
+- [CompPoly/Univariate/NTTFast/Interpolation.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Interpolation.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.NTTFast.Interpolation.json)

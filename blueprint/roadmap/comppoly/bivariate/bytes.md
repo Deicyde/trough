@@ -7,7 +7,7 @@ proof: formalized
 
 # Serialization of bivariate polynomials
 
-`CompPoly.Bivariate.Bytes`, in [CompPoly/Bivariate/Bytes.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/Bytes.lean), by Derek Sorensen.
+`CompPoly.Bivariate.Bytes`, in [CompPoly/Bivariate/Bytes.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Bytes.lean), by Derek Sorensen.
 
 > `CBivariate R` is `CPolynomial (CPolynomial R)`, so its self-delimiting encoding is the
 > univariate one nested: a `u64` count of `Y`-coefficients, each a `u64` count of
@@ -15,7 +15,7 @@ proof: formalized
 > univariate codec at coefficient type `CPolynomial R`, which is what the delimited-codec design
 > exists for.
 
-`CompPoly.CBivariate.encode_eq` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/Bytes.lean#L30))
+`CompPoly.CBivariate.encode_eq` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Bytes.lean#L30))
 
 ```lean
 theorem encode_eq [DelimitedCodec R] (p : CBivariate R) :
@@ -33,5 +33,5 @@ theorem encode_eq [DelimitedCodec R] (p : CBivariate R) :
 
 ## Sources
 
-- [CompPoly/Bivariate/Bytes.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/Bytes.lean)
+- [CompPoly/Bivariate/Bytes.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/Bytes.lean)
 - [Declaration ledger](../../../sources/comppoly/CompPoly.Bivariate.Bytes.json)

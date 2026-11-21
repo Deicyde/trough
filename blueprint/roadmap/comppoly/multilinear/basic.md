@@ -7,7 +7,7 @@ proof: formalized
 
 # Multilinear Polynomials
 
-`CompPoly.Multilinear.Basic`, in [CompPoly/Multilinear/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean), by Quang Dao, Chung Thai Nguyen, Aristotle (Harmonic), Elias Judin.
+`CompPoly.Multilinear.Basic`, in [CompPoly/Multilinear/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean), by Quang Dao, Chung Thai Nguyen, Aristotle (Harmonic), Elias Judin.
 
 > This file defines computable representations of **multilinear polynomials**.
 >
@@ -20,7 +20,7 @@ proof: formalized
 >
 > …
 
-`CompPoly.CMlPolynomial` (definition, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L39))
+`CompPoly.CMlPolynomial` (definition, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L39))
 
 > `CMlPolynomial n R` is the type of multilinear polynomials in `n` variables over a ring `R`.
 > It is represented by its monomial coefficients as a `Vector` of length `2^n`.
@@ -30,13 +30,13 @@ proof: formalized
 def CMlPolynomial (R : Type*) (n : ℕ)
 ```
 
-`CompPoly.CMlPolynomial.mk` (definition, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L40))
+`CompPoly.CMlPolynomial.mk` (definition, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L40))
 
 ```lean
 def CMlPolynomial.mk {R : Type*} (n : ℕ) (v : Vector R (2 ^ n)) : CMlPolynomial R n
 ```
 
-`CompPoly.CMlPolynomialEval` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L47))
+`CompPoly.CMlPolynomialEval` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L47))
 
 > `CMlPolynomialEval n R` is the type of multilinear polynomials in `n` variables over a ring `R`.
 > It is represented by its evaluations over the Boolean hypercube `{0,1}^n`,
@@ -47,19 +47,19 @@ def CMlPolynomial.mk {R : Type*} (n : ℕ) (v : Vector R (2 ^ n)) : CMlPolynomia
 def CMlPolynomialEval (R : Type*) (n : ℕ)
 ```
 
-`CompPoly.CMlPolynomialEval.mk` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L48))
+`CompPoly.CMlPolynomialEval.mk` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L48))
 
 ```lean
 def CMlPolynomialEval.mk {R : Type*} (n : ℕ) (v : Vector R (2 ^ n)) : CMlPolynomialEval R n
 ```
 
-`CompPoly.CMlPolynomial.inhabited` (instance, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L62))
+`CompPoly.CMlPolynomial.inhabited` (instance, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L62))
 
 ```lean
 instance inhabited [Inhabited R] : Inhabited (CMlPolynomial R n)
 ```
 
-`CompPoly.CMlPolynomial.ofArray` (definition, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L68))
+`CompPoly.CMlPolynomial.ofArray` (definition, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L68))
 
 > Conform a list of coefficients to a `CMlPolynomial` with a given number of variables.
 > May either pad with zeros or truncate.
@@ -68,19 +68,19 @@ instance inhabited [Inhabited R] : Inhabited (CMlPolynomial R n)
 def ofArray [Zero R] (coeffs : Array R) (n : ℕ) : CMlPolynomial R n
 ```
 
-`CompPoly.CMlPolynomial.zero` (definition, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L75))
+`CompPoly.CMlPolynomial.zero` (definition, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L75))
 
 ```lean
 def zero [Zero R] : CMlPolynomial R n
 ```
 
-`CompPoly.CMlPolynomial.zero_def` (lemma, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L77))
+`CompPoly.CMlPolynomial.zero_def` (lemma, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L77))
 
 ```lean
 lemma zero_def [Zero R] : zero = Vector.replicate (2 ^ n) 0
 ```
 
-`CompPoly.CMlPolynomial.add` (definition, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L81))
+`CompPoly.CMlPolynomial.add` (definition, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L81))
 
 > Add two `CMlPolynomial`s
 
@@ -88,7 +88,7 @@ lemma zero_def [Zero R] : zero = Vector.replicate (2 ^ n) 0
 def add [Add R] (p q : CMlPolynomial R n) : CMlPolynomial R n
 ```
 
-`CompPoly.CMlPolynomial.neg` (definition, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L85))
+`CompPoly.CMlPolynomial.neg` (definition, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L85))
 
 > Negation of a `CMlPolynomial`
 
@@ -96,7 +96,7 @@ def add [Add R] (p q : CMlPolynomial R n) : CMlPolynomial R n
 def neg [Neg R] (p : CMlPolynomial R n) : CMlPolynomial R n
 ```
 
-`CompPoly.CMlPolynomial.smul` (definition, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L89))
+`CompPoly.CMlPolynomial.smul` (definition, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L89))
 
 > Scalar multiplication of a `CMlPolynomial`
 
@@ -104,7 +104,7 @@ def neg [Neg R] (p : CMlPolynomial R n) : CMlPolynomial R n
 def smul [Mul R] (r : R) (p : CMlPolynomial R n) : CMlPolynomial R n
 ```
 
-`CompPoly.CMlPolynomial.nsmul` (definition, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L93))
+`CompPoly.CMlPolynomial.nsmul` (definition, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L93))
 
 > Scalar multiplication of a `CMlPolynomial` by a natural number
 
@@ -112,7 +112,7 @@ def smul [Mul R] (r : R) (p : CMlPolynomial R n) : CMlPolynomial R n
 def nsmul [SMul ℕ R] (m : ℕ) (p : CMlPolynomial R n) : CMlPolynomial R n
 ```
 
-`CompPoly.CMlPolynomial.zsmul` (definition, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L98))
+`CompPoly.CMlPolynomial.zsmul` (definition, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L98))
 
 > Scalar multiplication of a `CMlPolynomial` by an integer
 
@@ -120,13 +120,13 @@ def nsmul [SMul ℕ R] (m : ℕ) (p : CMlPolynomial R n) : CMlPolynomial R n
 def zsmul [SMul ℤ R] (m : ℤ) (p : CMlPolynomial R n) : CMlPolynomial R n
 ```
 
-`CompPoly.CMlPolynomial.monomialBasis` (definition, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L160))
+`CompPoly.CMlPolynomial.monomialBasis` (definition, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L160))
 
 ```lean
 def monomialBasis (w : Vector R n) : Vector R (2 ^ n)
 ```
 
-`CompPoly.CMlPolynomial.map_monomialBasis` (theorem, [line 165](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L165))
+`CompPoly.CMlPolynomial.map_monomialBasis` (theorem, [line 165](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L165))
 
 > Mapping each monomial-basis value by a ring homomorphism equals evaluating the
 > monomial basis at the mapped point.
@@ -136,13 +136,13 @@ theorem map_monomialBasis (f : R →+* S) (x : Vector R n) :
     (monomialBasis x).map f = monomialBasis (x.map f)
 ```
 
-`CompPoly.CMlPolynomial.monomialBasis_zero` (theorem, [line 172](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L172))
+`CompPoly.CMlPolynomial.monomialBasis_zero` (theorem, [line 172](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L172))
 
 ```lean
 theorem monomialBasis_zero {w : Vector R 0} : monomialBasis w = #v[1]
 ```
 
-`CompPoly.CMlPolynomial.monomialBasis_getElem` (theorem, [line 181](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L181))
+`CompPoly.CMlPolynomial.monomialBasis_getElem` (theorem, [line 181](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L181))
 
 > The `i`-th element of `monomialBasis w` is the product of `w[j]` if the `j`-th bit of `i` is 1,
 > and `1` if the `j`-th bit of `i` is 0.
@@ -152,14 +152,14 @@ theorem monomialBasis_getElem {w : Vector R n} (i : Fin (2 ^ n)) :
     (monomialBasis w)[i] = ∏ j : Fin n, if (BitVec.ofFin i).getLsb j then w[j] else 1
 ```
 
-`CompPoly.CMlPolynomial.map` (definition, [line 217](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L217))
+`CompPoly.CMlPolynomial.map` (definition, [line 217](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L217))
 
 ```lean
 def map {R S : Type*} [Semiring R] [Semiring S] (f : R →+* S)
     (p : CMlPolynomial R n) : CMlPolynomial S n
 ```
 
-`CompPoly.CMlPolynomial.evalHornerStep` (definition, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L223))
+`CompPoly.CMlPolynomial.evalHornerStep` (definition, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L223))
 
 > One Horner reduction step, eliminating the next little-endian variable.
 
@@ -168,7 +168,7 @@ def evalHornerStep {n : ℕ}
     (coeffs : Vector R (2 ^ (n + 1))) (x0 : R) : Vector R (2 ^ n)
 ```
 
-`CompPoly.CMlPolynomial.evalHornerCoeffs` (definition, [line 230](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L230))
+`CompPoly.CMlPolynomial.evalHornerCoeffs` (definition, [line 230](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L230))
 
 > Evaluate dense multilinear coefficients by eliminating one variable at a time.
 
@@ -177,7 +177,7 @@ def evalHornerCoeffs :
     {n : ℕ} → Vector R (2 ^ n) → Vector R n → R
 ```
 
-`CompPoly.CMlPolynomial.evalHorner` (definition, [line 238](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L238))
+`CompPoly.CMlPolynomial.evalHorner` (definition, [line 238](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L238))
 
 > Evaluate a `CMlPolynomial` at a point using a multilinear Horner method.
 
@@ -185,7 +185,7 @@ def evalHornerCoeffs :
 def evalHorner (p : CMlPolynomial R n) (x : Vector R n) : R
 ```
 
-`CompPoly.CMlPolynomial.eval₂Horner` (definition, [line 243](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L243))
+`CompPoly.CMlPolynomial.eval₂Horner` (definition, [line 243](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L243))
 
 > Evaluate a `CMlPolynomial` using a ring homomorphism and multilinear Horner method.
 
@@ -193,7 +193,7 @@ def evalHorner (p : CMlPolynomial R n) (x : Vector R n) : R
 def eval₂Horner (p : CMlPolynomial R n) (f : R →+* S) (x : Vector S n) : S
 ```
 
-`CompPoly.CMlPolynomial.eval` (definition, [line 247](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L247))
+`CompPoly.CMlPolynomial.eval` (definition, [line 247](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L247))
 
 > Evaluate a `CMlPolynomial` at a point
 
@@ -201,7 +201,7 @@ def eval₂Horner (p : CMlPolynomial R n) (f : R →+* S) (x : Vector S n) : S
 def eval (p : CMlPolynomial R n) (x : Vector R n) : R
 ```
 
-`CompPoly.CMlPolynomial.map_eval` (theorem, [line 252](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L252))
+`CompPoly.CMlPolynomial.map_eval` (theorem, [line 252](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L252))
 
 > Mapping a coefficient-form evaluation by a ring homomorphism equals evaluating the
 > mapped coefficients at the mapped point.
@@ -211,7 +211,7 @@ theorem map_eval (f : R →+* S) (p : CMlPolynomial R n) (x : Vector R n) :
     f (eval p x) = eval (map f p) (x.map f)
 ```
 
-`CompPoly.CMlPolynomial.evalWithProducts` (definition, [line 260](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L260))
+`CompPoly.CMlPolynomial.evalWithProducts` (definition, [line 260](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L260))
 
 > Evaluate monomial coefficients by accumulating their products with the monomial-basis
 > values in `W`, starting at zero, then reducing once to a value in `R`.
@@ -221,7 +221,7 @@ def evalWithProducts {W : Type*} [AddZero W] (product : R → R → W) (reduce :
     (p : CMlPolynomial R n) (x : Vector R n) : R
 ```
 
-`CompPoly.CMlPolynomial.evalWithProducts_eq_eval` (theorem, [line 266](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L266))
+`CompPoly.CMlPolynomial.evalWithProducts_eq_eval` (theorem, [line 266](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L266))
 
 > Product accumulation followed by additive reduction agrees with coefficient evaluation
 > when reducing each product gives the ordinary product of its two factors.
@@ -234,13 +234,13 @@ theorem evalWithProducts_eq_eval {W : Type*} [AddZero W]
     evalWithProducts product reduce p x = eval p x
 ```
 
-`CompPoly.CMlPolynomial.eval₂` (definition, [line 273](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L273))
+`CompPoly.CMlPolynomial.eval₂` (definition, [line 273](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L273))
 
 ```lean
 def eval₂ (p : CMlPolynomial R n) (f : R →+* S) (x : Vector S n) : S
 ```
 
-`CompPoly.CMlPolynomial.eval_horner_eq_eval` (theorem, [line 312](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L312))
+`CompPoly.CMlPolynomial.eval_horner_eq_eval` (theorem, [line 312](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L312))
 
 > Horner evaluation agrees with the dot-product evaluator.
 
@@ -249,7 +249,7 @@ theorem eval_horner_eq_eval (p : CMlPolynomial R n) (x : Vector R n) :
     evalHorner p x = eval p x
 ```
 
-`CompPoly.CMlPolynomial.eval₂_horner_eq_eval₂` (theorem, [line 326](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L326))
+`CompPoly.CMlPolynomial.eval₂_horner_eq_eval₂` (theorem, [line 326](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L326))
 
 > Horner evaluation through a ring homomorphism agrees with the dot-product evaluator.
 
@@ -258,7 +258,7 @@ theorem eval₂_horner_eq_eval₂ (p : CMlPolynomial R n) (f : R →+* S) (x : V
     eval₂Horner p f x = eval₂ p f x
 ```
 
-`CompPoly.CMlPolynomial.eval_add` (theorem, [line 331](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L331))
+`CompPoly.CMlPolynomial.eval_add` (theorem, [line 331](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L331))
 
 > Evaluation is additive in the coefficient vector.
 
@@ -267,7 +267,7 @@ theorem eval_add (p q : CMlPolynomial R n) (x : Vector R n) :
     eval (p + q) x = eval p x + eval q x
 ```
 
-`CompPoly.CMlPolynomial.eval_zero` (theorem, [line 342](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L342))
+`CompPoly.CMlPolynomial.eval_zero` (theorem, [line 342](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L342))
 
 > The zero coefficient vector evaluates to zero.
 
@@ -275,7 +275,7 @@ theorem eval_add (p q : CMlPolynomial R n) (x : Vector R n) :
 theorem eval_zero (x : Vector R n) : eval (0 : CMlPolynomial R n) x = 0
 ```
 
-`CompPoly.CMlPolynomial.eval_smul` (theorem, [line 351](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L351))
+`CompPoly.CMlPolynomial.eval_smul` (theorem, [line 351](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L351))
 
 > Evaluation commutes with scalar multiplication of the coefficient vector.
 
@@ -284,13 +284,13 @@ theorem eval_smul (a : R) (p : CMlPolynomial R n) (x : Vector R n) :
     eval (a • p) x = a * eval p x
 ```
 
-`CompPoly.CMlPolynomialEval.inhabited` (instance, [line 369](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L369))
+`CompPoly.CMlPolynomialEval.inhabited` (instance, [line 369](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L369))
 
 ```lean
 instance inhabited [Inhabited R] : Inhabited (CMlPolynomialEval R n)
 ```
 
-`CompPoly.CMlPolynomialEval.ofArray` (definition, [line 375](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L375))
+`CompPoly.CMlPolynomialEval.ofArray` (definition, [line 375](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L375))
 
 > Conform a list of coefficients to a `CMlPolynomialEval` with a given number of variables.
 > May either pad with zeros or truncate.
@@ -299,19 +299,19 @@ instance inhabited [Inhabited R] : Inhabited (CMlPolynomialEval R n)
 def ofArray [Zero R] (coeffs : Array R) (n : ℕ) : CMlPolynomialEval R n
 ```
 
-`CompPoly.CMlPolynomialEval.zero` (definition, [line 382](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L382))
+`CompPoly.CMlPolynomialEval.zero` (definition, [line 382](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L382))
 
 ```lean
 def zero [Zero R] : CMlPolynomialEval R n
 ```
 
-`CompPoly.CMlPolynomialEval.zero_def` (lemma, [line 384](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L384))
+`CompPoly.CMlPolynomialEval.zero_def` (lemma, [line 384](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L384))
 
 ```lean
 lemma zero_def [Zero R] : zero = Vector.replicate (2 ^ n) 0
 ```
 
-`CompPoly.CMlPolynomialEval.add` (definition, [line 388](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L388))
+`CompPoly.CMlPolynomialEval.add` (definition, [line 388](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L388))
 
 > Add two `CMlPolynomialEval`s
 
@@ -319,7 +319,7 @@ lemma zero_def [Zero R] : zero = Vector.replicate (2 ^ n) 0
 def add [Add R] (p q : CMlPolynomialEval R n) : CMlPolynomialEval R n
 ```
 
-`CompPoly.CMlPolynomialEval.neg` (definition, [line 393](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L393))
+`CompPoly.CMlPolynomialEval.neg` (definition, [line 393](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L393))
 
 > Negation of a `CMlPolynomialEval`
 
@@ -327,7 +327,7 @@ def add [Add R] (p q : CMlPolynomialEval R n) : CMlPolynomialEval R n
 def neg [Neg R] (p : CMlPolynomialEval R n) : CMlPolynomialEval R n
 ```
 
-`CompPoly.CMlPolynomialEval.smul` (definition, [line 398](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L398))
+`CompPoly.CMlPolynomialEval.smul` (definition, [line 398](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L398))
 
 > Scalar multiplication of a `CMlPolynomialEval`
 
@@ -335,7 +335,7 @@ def neg [Neg R] (p : CMlPolynomialEval R n) : CMlPolynomialEval R n
 def smul [Mul R] (r : R) (p : CMlPolynomialEval R n) : CMlPolynomialEval R n
 ```
 
-`CompPoly.CMlPolynomialEval.nsmul` (definition, [line 403](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L403))
+`CompPoly.CMlPolynomialEval.nsmul` (definition, [line 403](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L403))
 
 > Scalar multiplication of a `CMlPolynomialEval` by a natural number
 
@@ -343,7 +343,7 @@ def smul [Mul R] (r : R) (p : CMlPolynomialEval R n) : CMlPolynomialEval R n
 def nsmul [SMul ℕ R] (m : ℕ) (p : CMlPolynomialEval R n) : CMlPolynomialEval R n
 ```
 
-`CompPoly.CMlPolynomialEval.zsmul` (definition, [line 408](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L408))
+`CompPoly.CMlPolynomialEval.zsmul` (definition, [line 408](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L408))
 
 > Scalar multiplication of a `CMlPolynomialEval` by an integer
 
@@ -351,7 +351,7 @@ def nsmul [SMul ℕ R] (m : ℕ) (p : CMlPolynomialEval R n) : CMlPolynomialEval
 def zsmul [SMul ℤ R] (m : ℤ) (p : CMlPolynomialEval R n) : CMlPolynomialEval R n
 ```
 
-`CompPoly.CMlPolynomialEval.lagrangeBasis` (definition, [line 472](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L472))
+`CompPoly.CMlPolynomialEval.lagrangeBasis` (definition, [line 472](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L472))
 
 > Lagrange (hypercube) basis at point `w`.
 >
@@ -365,13 +365,13 @@ def zsmul [SMul ℤ R] (m : ℤ) (p : CMlPolynomialEval R n) : CMlPolynomialEval
 def lagrangeBasis (w : Vector R n) : Vector R (2 ^ n)
 ```
 
-`CompPoly.CMlPolynomialEval.lagrangeBasis_zero` (theorem, [line 476](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L476))
+`CompPoly.CMlPolynomialEval.lagrangeBasis_zero` (theorem, [line 476](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L476))
 
 ```lean
 theorem lagrangeBasis_zero {w : Vector R 0} : lagrangeBasis w = #v[1]
 ```
 
-`CompPoly.CMlPolynomialEval.lagrangeBasis_getElem` (theorem, [line 485](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L485))
+`CompPoly.CMlPolynomialEval.lagrangeBasis_getElem` (theorem, [line 485](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L485))
 
 > The `i`-th element of `lagrangeBasis w` is the product of `w[j]` if the `j`-th bit of `i` is 1,
 > and `1 - w[j]` if the `j`-th bit of `i` is 0.
@@ -381,7 +381,7 @@ theorem lagrangeBasis_getElem {w : Vector R n} (i : Fin (2 ^ n)) :
     (lagrangeBasis w)[i] = ∏ j : Fin n, if (BitVec.ofFin i).getLsb j then w[j] else 1 - w[j]
 ```
 
-`CompPoly.CMlPolynomialEval.map` (definition, [line 523](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L523))
+`CompPoly.CMlPolynomialEval.map` (definition, [line 523](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L523))
 
 > Map a ring homomorphism over a `CMlPolynomialEval`
 
@@ -390,7 +390,7 @@ def map {R S : Type*} [Semiring R] [Semiring S]
     (f : R →+* S) (p : CMlPolynomialEval R n) : CMlPolynomialEval S n
 ```
 
-`CompPoly.CMlPolynomialEval.evalMleStep` (definition, [line 529](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L529))
+`CompPoly.CMlPolynomialEval.evalMleStep` (definition, [line 529](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L529))
 
 > One multilinear-extension interpolation step, eliminating the next little-endian variable.
 
@@ -399,7 +399,7 @@ def evalMleStep {n : ℕ}
     (values : Vector R (2 ^ (n + 1))) (x0 : R) : Vector R (2 ^ n)
 ```
 
-`CompPoly.CMlPolynomialEval.evalMleLayer` (definition, [line 537](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L537))
+`CompPoly.CMlPolynomialEval.evalMleLayer` (definition, [line 537](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L537))
 
 > Public multilinear-extension interpolation layer.
 
@@ -408,7 +408,7 @@ def evalMleLayer {n : ℕ}
     (values : CMlPolynomialEval R (n + 1)) (x0 : R) : CMlPolynomialEval R n
 ```
 
-`CompPoly.CMlPolynomialEval.evalMleLayer_get` (theorem, [line 544](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L544))
+`CompPoly.CMlPolynomialEval.evalMleLayer_get` (theorem, [line 544](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L544))
 
 > The `j`-th entry after one MLE layer is the affine interpolation of its input pair.
 
@@ -420,7 +420,7 @@ theorem evalMleLayer_get [CommRing R] {n : ℕ}
         x0 * values.get ⟨2 * j.val + 1, by omega⟩
 ```
 
-`CompPoly.CMlPolynomialEval.evalMleValues` (definition, [line 553](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L553))
+`CompPoly.CMlPolynomialEval.evalMleValues` (definition, [line 553](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L553))
 
 > Evaluate hypercube values by recursively interpolating the multilinear extension.
 
@@ -429,7 +429,7 @@ def evalMleValues :
     {n : ℕ} → Vector R (2 ^ n) → Vector R n → R
 ```
 
-`CompPoly.CMlPolynomialEval.evalMle` (definition, [line 561](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L561))
+`CompPoly.CMlPolynomialEval.evalMle` (definition, [line 561](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L561))
 
 > Evaluate a `CMlPolynomialEval` by recursive multilinear-extension interpolation.
 
@@ -437,7 +437,7 @@ def evalMleValues :
 def evalMle (p : CMlPolynomialEval R n) (x : Vector R n) : R
 ```
 
-`CompPoly.CMlPolynomialEval.evalMle_zero` (theorem, [line 567](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L567))
+`CompPoly.CMlPolynomialEval.evalMle_zero` (theorem, [line 567](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L567))
 
 > Evaluating a zero-variable hypercube table returns its only value.
 
@@ -446,7 +446,7 @@ theorem evalMle_zero [CommRing R] (p : CMlPolynomialEval R 0) (x : Vector R 0) :
     evalMle p x = p.get ⟨0, by norm_num⟩
 ```
 
-`CompPoly.CMlPolynomialEval.evalMle_succ` (theorem, [line 574](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L574))
+`CompPoly.CMlPolynomialEval.evalMle_succ` (theorem, [line 574](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L574))
 
 > Recursive MLE evaluation first folds the head variable, then evaluates the tail.
 
@@ -456,7 +456,7 @@ theorem evalMle_succ [CommRing R] {n : ℕ}
     evalMle p x = evalMle (evalMleLayer p x.head) x.tail
 ```
 
-`CompPoly.CMlPolynomialEval.eval₂Mle` (definition, [line 582](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L582))
+`CompPoly.CMlPolynomialEval.eval₂Mle` (definition, [line 582](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L582))
 
 > Evaluate a `CMlPolynomialEval` through a ring homomorphism using multilinear-extension
 > interpolation.
@@ -465,7 +465,7 @@ theorem evalMle_succ [CommRing R] {n : ℕ}
 def eval₂Mle (p : CMlPolynomialEval R n) (f : R →+* S) (x : Vector S n) : S
 ```
 
-`CompPoly.CMlPolynomialEval.eval` (definition, [line 586](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L586))
+`CompPoly.CMlPolynomialEval.eval` (definition, [line 586](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L586))
 
 > Evaluate a `CMlPolynomialEval` at a point
 
@@ -473,7 +473,7 @@ def eval₂Mle (p : CMlPolynomialEval R n) (f : R →+* S) (x : Vector S n) : S
 def eval (p : CMlPolynomialEval R n) (x : Vector R n) : R
 ```
 
-`CompPoly.CMlPolynomialEval.eval_smul` (theorem, [line 590](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L590))
+`CompPoly.CMlPolynomialEval.eval_smul` (theorem, [line 590](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L590))
 
 > Evaluation commutes with scalar multiplication of a hypercube table.
 
@@ -482,7 +482,7 @@ theorem eval_smul (a : R) (p : CMlPolynomialEval R n) (x : Vector R n) :
     eval (a • p) x = a * eval p x
 ```
 
-`CompPoly.CMlPolynomialEval.eval₂` (definition, [line 602](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L602))
+`CompPoly.CMlPolynomialEval.eval₂` (definition, [line 602](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L602))
 
 > Evaluate a `CMlPolynomialEval` at a point using a ring homomorphism
 
@@ -490,7 +490,7 @@ theorem eval_smul (a : R) (p : CMlPolynomialEval R n) (x : Vector R n) :
 def eval₂ (p : CMlPolynomialEval R n) (f : R →+* S) (x : Vector S n) : S
 ```
 
-`CompPoly.CMlPolynomialEval.eqTilde` (definition, [line 605](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L605))
+`CompPoly.CMlPolynomialEval.eqTilde` (definition, [line 605](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L605))
 
 > Evaluate the multilinear equality kernel `eq̃(w, x)`.
 
@@ -498,7 +498,7 @@ def eval₂ (p : CMlPolynomialEval R n) (f : R →+* S) (x : Vector S n) : S
 def eqTilde (w x : Vector R n) : R
 ```
 
-`CompPoly.CMlPolynomialEval.eval_mle_eq_eval` (theorem, [line 648](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L648))
+`CompPoly.CMlPolynomialEval.eval_mle_eq_eval` (theorem, [line 648](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L648))
 
 > Multilinear-extension interpolation agrees with the dot-product evaluator.
 
@@ -507,7 +507,7 @@ theorem eval_mle_eq_eval (p : CMlPolynomialEval R n) (x : Vector R n) :
     evalMle p x = eval p x
 ```
 
-`CompPoly.CMlPolynomialEval.eqTilde_eq_prod` (theorem, [line 662](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L662))
+`CompPoly.CMlPolynomialEval.eqTilde_eq_prod` (theorem, [line 662](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L662))
 
 > The multilinear equality kernel is the product of its coordinatewise affine factors.
 
@@ -516,7 +516,7 @@ theorem eqTilde_eq_prod (w x : Vector R n) :
     eqTilde w x = ∏ i : Fin n, (w[i] * x[i] + (1 - w[i]) * (1 - x[i]))
 ```
 
-`CompPoly.CMlPolynomialEval.eqTilde_append` (theorem, [line 694](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L694))
+`CompPoly.CMlPolynomialEval.eqTilde_append` (theorem, [line 694](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L694))
 
 > The equality kernel factors across appended coordinate blocks.
 
@@ -525,7 +525,7 @@ theorem eqTilde_append {m : ℕ} (w₁ x₁ : Vector R n) (w₂ x₂ : Vector R 
     eqTilde (w₁ ++ w₂) (x₁ ++ x₂) = eqTilde w₁ x₁ * eqTilde w₂ x₂
 ```
 
-`CompPoly.CMlPolynomialEval.eval₂_mle_eq_eval₂` (theorem, [line 702](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L702))
+`CompPoly.CMlPolynomialEval.eval₂_mle_eq_eval₂` (theorem, [line 702](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L702))
 
 > Multilinear-extension interpolation through a ring homomorphism agrees with the
 > dot-product evaluator.
@@ -535,7 +535,7 @@ theorem eval₂_mle_eq_eval₂ (p : CMlPolynomialEval R n) (f : R →+* S) (x : 
     eval₂Mle p f x = eval₂ p f x
 ```
 
-`CompPoly.CMlPolynomialEval.eval_add` (theorem, [line 708](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L708))
+`CompPoly.CMlPolynomialEval.eval_add` (theorem, [line 708](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L708))
 
 > Evaluation is additive in the coefficient vector.
 
@@ -544,7 +544,7 @@ theorem eval_add (p q : CMlPolynomialEval R n) (x : Vector R n) :
     eval (p + q) x = eval p x + eval q x
 ```
 
-`CompPoly.CMlPolynomialEval.eval_zero` (theorem, [line 719](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L719))
+`CompPoly.CMlPolynomialEval.eval_zero` (theorem, [line 719](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L719))
 
 > The zero coefficient vector evaluates to zero.
 
@@ -552,7 +552,7 @@ theorem eval_add (p q : CMlPolynomialEval R n) (x : Vector R n) :
 theorem eval_zero (x : Vector R n) : eval (0 : CMlPolynomialEval R n) x = 0
 ```
 
-`CompPoly.CMlPolynomial.monoToLagrangeLevel` (definition, [line 754](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L754))
+`CompPoly.CMlPolynomial.monoToLagrangeLevel` (definition, [line 754](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L754))
 
 > **One level** of the zeta‑transform (coefficient to evaluation).
 >
@@ -575,7 +575,7 @@ theorem eval_zero (x : Vector R n) : eval (0 : CMlPolynomialEval R n) x = 0
 def monoToLagrangeLevel {n : ℕ} (j : Fin n) : Vector R (2 ^ n) → Vector R (2 ^ n)
 ```
 
-`CompPoly.CMlPolynomial.monoToLagrange` (definition, [line 771](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L771))
+`CompPoly.CMlPolynomial.monoToLagrange` (definition, [line 771](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L771))
 
 > **Full zeta transform**: coefficients → evaluations.
 >
@@ -590,7 +590,7 @@ def monoToLagrangeLevel {n : ℕ} (j : Fin n) : Vector R (2 ^ n) → Vector R (2
 def monoToLagrange (n : ℕ) : CMlPolynomial R n → CMlPolynomialEval R n
 ```
 
-`CompPoly.CMlPolynomial.lagrangeToMonoLevel` (definition, [line 789](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L789))
+`CompPoly.CMlPolynomial.lagrangeToMonoLevel` (definition, [line 789](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L789))
 
 > **One level** of the inverse zeta‑transform / Möbius transform (evaluation to
 > coefficient).
@@ -612,7 +612,7 @@ def monoToLagrange (n : ℕ) : CMlPolynomial R n → CMlPolynomialEval R n
 def lagrangeToMonoLevel {n : ℕ} (j : Fin n) : Vector R (2 ^ n) → Vector R (2 ^ n)
 ```
 
-`CompPoly.CMlPolynomial.lagrangeToMono` (definition, [line 808](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L808))
+`CompPoly.CMlPolynomial.lagrangeToMono` (definition, [line 808](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L808))
 
 > **Full inverse / Möbius transform**: evaluations → coefficients.
 >
@@ -629,7 +629,7 @@ def lagrangeToMono (n : ℕ) :
     Vector R (2 ^ n) → Vector R (2 ^ n)
 ```
 
-`CompPoly.CMlPolynomial.lagrangeToMonoSpec` (definition, [line 822](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L822))
+`CompPoly.CMlPolynomial.lagrangeToMonoSpec` (definition, [line 822](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L822))
 
 > The $O(4^n)$ inclusion-exclusion specification for the Möbius transform.
 >
@@ -646,7 +646,7 @@ def lagrangeToMono (n : ℕ) :
 def lagrangeToMonoSpec (p : CMlPolynomialEval R n) : CMlPolynomialEval R n
 ```
 
-`CompPoly.CMlPolynomial.monoToLagrangeSpec` (definition, [line 849](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L849))
+`CompPoly.CMlPolynomial.monoToLagrangeSpec` (definition, [line 849](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L849))
 
 > The $O(4^n)$ specification for the zeta transform (the mirror of
 > `lagrangeToMonoSpec`).
@@ -662,7 +662,7 @@ def lagrangeToMonoSpec (p : CMlPolynomialEval R n) : CMlPolynomialEval R n
 def monoToLagrangeSpec (p : CMlPolynomial R n) : CMlPolynomialEval R n
 ```
 
-`CompPoly.CMlPolynomial.forwardRange` (definition, [line 863](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L863))
+`CompPoly.CMlPolynomial.forwardRange` (definition, [line 863](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L863))
 
 > Generates a list of indices representing a range of bit positions [l, r] in increasing order.
 > Used for optimized recursive transforms that operate on segments of variables.
@@ -673,21 +673,21 @@ def monoToLagrangeSpec (p : CMlPolynomial R n) : CMlPolynomialEval R n
 def forwardRange (n : ℕ) (r : Fin (n)) (l : Fin (r.val + 1)) : List (Fin n)
 ```
 
-`CompPoly.CMlPolynomial.forwardRange_length` (lemma, [line 871](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L871))
+`CompPoly.CMlPolynomial.forwardRange_length` (lemma, [line 871](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L871))
 
 ```lean
 lemma forwardRange_length (n : ℕ) (r : Fin n) (l : Fin (r.val + 1)) :
     (forwardRange n r l).length = r.val - l.val + 1
 ```
 
-`CompPoly.CMlPolynomial.forwardRange_eq_of_r_eq` (lemma, [line 876](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L876))
+`CompPoly.CMlPolynomial.forwardRange_eq_of_r_eq` (lemma, [line 876](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L876))
 
 ```lean
 lemma forwardRange_eq_of_r_eq (n : ℕ) (r1 r2 : Fin n) (h_r_eq : r1 = r2) (l : Fin (r1.val + 1)) :
     forwardRange n r1 l = forwardRange n r2 ⟨l, by omega⟩
 ```
 
-`CompPoly.CMlPolynomial.forwardRange_getElem` (lemma, [line 881](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L881))
+`CompPoly.CMlPolynomial.forwardRange_getElem` (lemma, [line 881](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L881))
 
 ```lean
 lemma forwardRange_getElem (n : ℕ) (r : Fin n) (l : Fin (r.val + 1)) (k : Fin (r.val - l.val + 1)) :
@@ -695,21 +695,21 @@ lemma forwardRange_getElem (n : ℕ) (r : Fin n) (l : Fin (r.val + 1)) (k : Fin 
     rw [forwardRange]; simp only [List.length_ofFn]; omega⟩ = ⟨l.val + k, by omega⟩
 ```
 
-`CompPoly.CMlPolynomial.forwardRange_succ_right_ne_empty` (lemma, [line 888](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L888))
+`CompPoly.CMlPolynomial.forwardRange_succ_right_ne_empty` (lemma, [line 888](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L888))
 
 ```lean
 lemma forwardRange_succ_right_ne_empty (n : ℕ) (r : Fin (n - 1)) (l : Fin (r.val + 1)) :
     forwardRange n ⟨r + 1, by omega⟩ ⟨l, by simp only; omega⟩ ≠ []
 ```
 
-`CompPoly.CMlPolynomial.forwardRange_pred_le_ne_empty` (lemma, [line 894](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L894))
+`CompPoly.CMlPolynomial.forwardRange_pred_le_ne_empty` (lemma, [line 894](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L894))
 
 ```lean
 lemma forwardRange_pred_le_ne_empty (n : ℕ) (r : Fin n) (l : Fin (r.val + 1))
     (h_l_gt_0 : l.val > 0) : forwardRange n r ⟨l.val - 1, by omega⟩ ≠ []
 ```
 
-`CompPoly.CMlPolynomial.forwardRange_dropLast` (lemma, [line 900](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L900))
+`CompPoly.CMlPolynomial.forwardRange_dropLast` (lemma, [line 900](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L900))
 
 ```lean
 lemma forwardRange_dropLast (n : ℕ) (r : Fin (n - 1)) (l : Fin (r.val + 1)) :
@@ -717,14 +717,14 @@ lemma forwardRange_dropLast (n : ℕ) (r : Fin (n - 1)) (l : Fin (r.val + 1)) :
   = forwardRange n ⟨r, by omega⟩ ⟨l, by simp only [Fin.is_lt]⟩
 ```
 
-`CompPoly.CMlPolynomial.forwardRange_tail` (lemma, [line 917](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L917))
+`CompPoly.CMlPolynomial.forwardRange_tail` (lemma, [line 917](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L917))
 
 ```lean
 lemma forwardRange_tail (n : ℕ) (r : Fin n) (l : Fin (r.val + 1)) (h_l_gt_0 : l.val > 0) :
     (forwardRange n r ⟨l.val - 1, by omega⟩).tail = forwardRange n r l
 ```
 
-`CompPoly.CMlPolynomial.forwardRange_0_eq_finRange` (lemma, [line 932](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L932))
+`CompPoly.CMlPolynomial.forwardRange_0_eq_finRange` (lemma, [line 932](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L932))
 
 ```lean
 lemma forwardRange_0_eq_finRange (n : ℕ) [NeZero n] : forwardRange n ⟨n - 1, by
@@ -733,7 +733,7 @@ lemma forwardRange_0_eq_finRange (n : ℕ) [NeZero n] : forwardRange n ⟨n - 1,
   ⟩ 0 = List.finRange n
 ```
 
-`CompPoly.CMlPolynomial.monoToLagrangeSegment` (definition, [line 955](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L955))
+`CompPoly.CMlPolynomial.monoToLagrangeSegment` (definition, [line 955](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L955))
 
 > Performs the zeta-transform (coefficient to evaluation) on a segment of dimensions from `l` to `r`.
 > Iteratively applies `monoToLagrangeLevel` for each dimension in the range.
@@ -744,7 +744,7 @@ def monoToLagrangeSegment (n : ℕ) (r : Fin n) (l : Fin (r.val + 1)) :
     Vector R (2 ^ n) → Vector R (2 ^ n)
 ```
 
-`CompPoly.CMlPolynomial.lagrangeToMonoSegment` (definition, [line 971](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L971))
+`CompPoly.CMlPolynomial.lagrangeToMonoSegment` (definition, [line 971](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L971))
 
 > Performs the inverse zeta-transform (evaluation to coefficient) on a segment of dimensions
 >
@@ -760,7 +760,7 @@ def lagrangeToMonoSegment (n : ℕ) (r : Fin n) (l : Fin (r.val + 1)) :
     Vector R (2 ^ n) → Vector R (2 ^ n)
 ```
 
-`CompPoly.CMlPolynomial.monoToLagrange_eq_monoToLagrangeSegment` (lemma, [line 979](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L979))
+`CompPoly.CMlPolynomial.monoToLagrange_eq_monoToLagrangeSegment` (lemma, [line 979](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L979))
 
 ```lean
 lemma monoToLagrange_eq_monoToLagrangeSegment (n : ℕ) [NeZero n] (v : Vector R (2 ^ n)) :
@@ -768,7 +768,7 @@ lemma monoToLagrange_eq_monoToLagrangeSegment (n : ℕ) [NeZero n] (v : Vector R
   monoToLagrange n v = monoToLagrangeSegment n (r:=⟨n - 1, by omega⟩) (l:=⟨0, by omega⟩) v
 ```
 
-`CompPoly.CMlPolynomial.lagrangeToMono_eq_lagrangeToMonoSegment` (lemma, [line 988](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L988))
+`CompPoly.CMlPolynomial.lagrangeToMono_eq_lagrangeToMonoSegment` (lemma, [line 988](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L988))
 
 ```lean
 lemma lagrangeToMono_eq_lagrangeToMonoSegment (n : ℕ) [NeZero n] (v : Vector R (2 ^ n)) :
@@ -776,35 +776,35 @@ lemma lagrangeToMono_eq_lagrangeToMonoSegment (n : ℕ) [NeZero n] (v : Vector R
   lagrangeToMono n v = lagrangeToMonoSegment n (r:=⟨n - 1, by omega⟩) (l:=⟨0, by omega⟩) v
 ```
 
-`CompPoly.CMlPolynomial.testBit_of_sub_two_pow_of_bit_1` (lemma, [line 997](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L997))
+`CompPoly.CMlPolynomial.testBit_of_sub_two_pow_of_bit_1` (lemma, [line 997](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L997))
 
 ```lean
 lemma testBit_of_sub_two_pow_of_bit_1 {n i : ℕ} (h_testBit_eq_1 : (n).testBit i = true) :
     (n - 2^i).testBit i = false
 ```
 
-`CompPoly.CMlPolynomial.lagrangeToMonoLevel_monoToLagrangeLevel_id` (theorem, [line 1008](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L1008))
+`CompPoly.CMlPolynomial.lagrangeToMonoLevel_monoToLagrangeLevel_id` (theorem, [line 1008](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L1008))
 
 ```lean
 theorem lagrangeToMonoLevel_monoToLagrangeLevel_id (v : Vector R (2 ^ n)) (i : Fin n) :
     lagrangeToMonoLevel i (monoToLagrangeLevel i v) = v
 ```
 
-`CompPoly.CMlPolynomial.monoToLagrangeLevel_lagrangeToMonoLevel_id` (theorem, [line 1028](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L1028))
+`CompPoly.CMlPolynomial.monoToLagrangeLevel_lagrangeToMonoLevel_id` (theorem, [line 1028](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L1028))
 
 ```lean
 theorem monoToLagrangeLevel_lagrangeToMonoLevel_id (v : Vector R (2 ^ n)) (i : Fin n) :
     monoToLagrangeLevel i (lagrangeToMonoLevel i v) = v
 ```
 
-`CompPoly.CMlPolynomial.mobius_apply_zeta_apply_eq_id` (theorem, [line 1046](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L1046))
+`CompPoly.CMlPolynomial.mobius_apply_zeta_apply_eq_id` (theorem, [line 1046](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L1046))
 
 ```lean
 theorem mobius_apply_zeta_apply_eq_id (n : ℕ) [NeZero n] (r : Fin n) (l : Fin (r.val + 1))
     (v : Vector R (2 ^ n)) : lagrangeToMonoSegment n r l (monoToLagrangeSegment n r l v) = v
 ```
 
-`CompPoly.CMlPolynomial.zeta_apply_mobius_apply_eq_id` (lemma, [line 1090](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L1090))
+`CompPoly.CMlPolynomial.zeta_apply_mobius_apply_eq_id` (lemma, [line 1090](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L1090))
 
 ```lean
 lemma zeta_apply_mobius_apply_eq_id (n : ℕ) (r : Fin n) (l : Fin (r.val + 1))
@@ -812,7 +812,7 @@ lemma zeta_apply_mobius_apply_eq_id (n : ℕ) (r : Fin n) (l : Fin (r.val + 1))
     monoToLagrangeSegment n r l (lagrangeToMonoSegment n r l v) = v
 ```
 
-`CompPoly.CMlPolynomial.equivMonomialLagrangeRepr` (definition, [line 1130](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean#L1130))
+`CompPoly.CMlPolynomial.equivMonomialLagrangeRepr` (definition, [line 1130](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean#L1130))
 
 > The equivalence between the monomial basis representation (`CMlPolynomial`)
 > and the Lagrange basis representation (`CMlPolynomialEval`) of a multilinear polynomial.
@@ -834,5 +834,5 @@ def equivMonomialLagrangeRepr : CMlPolynomial R n ≃ CMlPolynomialEval R n
 
 ## Sources
 
-- [CompPoly/Multilinear/Basic.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multilinear/Basic.lean)
+- [CompPoly/Multilinear/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multilinear/Basic.lean)
 - [Declaration ledger](../../../sources/comppoly/CompPoly.Multilinear.Basic.json)

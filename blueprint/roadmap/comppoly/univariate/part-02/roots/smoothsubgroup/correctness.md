@@ -7,12 +7,12 @@ proof: formalized
 
 # Smooth Multiplicative-Subgroup Splitter Correctness
 
-`CompPoly.Univariate.Roots.SmoothSubgroup.Correctness`, in [CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.SmoothSubgroup.Correctness`, in [CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean), by Valerii Huhnin.
 
 > Correctness theorems for the smooth cyclic splitter, including executable
 > contracts and adapter theorems.
 
-`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_smoothSplitterInput` (theorem, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L33))
+`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_smoothSplitterInput` (theorem, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L33))
 
 > Field-root products satisfy the generic smooth-splitter input predicate.
 
@@ -26,7 +26,7 @@ theorem finiteFieldRootProductWith_smoothSplitterInput {F : Type*}
       (finiteFieldRootProductWith M D ctx p)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorProductSplitterWith_sound` (theorem, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L47))
+`CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorProductSplitterWith_sound` (theorem, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L47))
 
 > Soundness theorem for a smooth context adapted to the splitter interface.
 
@@ -40,7 +40,7 @@ theorem smoothLinearFactorProductSplitterWith_sound {F : Type*}
     IsLinearFactor factor
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorProductSplitterWith_complete` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L57))
+`CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorProductSplitterWith_complete` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L57))
 
 > Completeness theorem for a smooth context adapted to the splitter interface.
 
@@ -57,7 +57,7 @@ theorem smoothLinearFactorProductSplitterWith_complete {F : Type*}
         IsLinearRootFactorCandidate factor a
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smooth_zero_root_factor_sound` (theorem, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L70))
+`CompPoly.CPolynomial.Roots.FiniteField.smooth_zero_root_factor_sound` (theorem, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L70))
 
 > Zero-root extraction is sound for the emitted `X` factor.
 
@@ -66,7 +66,7 @@ theorem smooth_zero_root_factor_sound {F : Type*} [Field F] [BEq F] [LawfulBEq F
     IsLinearRootFactorCandidate (CPolynomial.linearFactor (0 : F)) (0 : F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smoothLeafLinearFactors_complete` (theorem, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L185))
+`CompPoly.CPolynomial.Roots.FiniteField.smoothLeafLinearFactors_complete` (theorem, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L185))
 
 > Smooth leaf extraction is complete for roots in the enumerated coset.
 
@@ -81,7 +81,7 @@ theorem smoothLeafLinearFactors_complete {F : Type*}
         IsLinearRootFactorCandidate factor a
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smoothCosetLinearFactorsWithSchedule_sound` (theorem, [line 213](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L213))
+`CompPoly.CPolynomial.Roots.FiniteField.smoothCosetLinearFactorsWithSchedule_sound` (theorem, [line 213](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L213))
 
 > Schedule-driven smooth coset recursion emits only represented nonconstant linear factors.
 
@@ -96,7 +96,7 @@ theorem smoothCosetLinearFactorsWithSchedule_sound {F : Type*}
         IsLinearFactor factor
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorsAlgorithmWith_sound` (theorem, [line 309](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L309))
+`CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorsAlgorithmWith_sound` (theorem, [line 309](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L309))
 
 > The top-level smooth splitter emits only represented nonconstant linear factors.
 
@@ -110,7 +110,7 @@ theorem smoothLinearFactorsAlgorithmWith_sound {F : Type*}
     IsLinearFactor factor
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smooth_coset_split_root_partition_mod` (theorem, [line 339](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L339))
+`CompPoly.CPolynomial.Roots.FiniteField.smooth_coset_split_root_partition_mod` (theorem, [line 339](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L339))
 
 > A smooth coset split maps the residue class `k % ell` to the child-coset equation.
 
@@ -124,7 +124,7 @@ theorem smooth_coset_split_root_partition_mod {F : Type*}
       alpha ^ (order / ell) * (gamma ^ (order / ell)) ^ (k % ell)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smooth_coset_split_root_partition` (theorem, [line 376](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L376))
+`CompPoly.CPolynomial.Roots.FiniteField.smooth_coset_split_root_partition` (theorem, [line 376](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L376))
 
 > A smooth coset split partitions roots according to the child-coset equation.
 
@@ -139,7 +139,7 @@ theorem smooth_coset_split_root_partition {F : Type*}
       x ^ (order / ell) = alpha ^ (order / ell) * (gamma ^ (order / ell)) ^ j
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.exists_generator_pow_of_order_eq_card_sub_one` (theorem, [line 392](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L392))
+`CompPoly.CPolynomial.Roots.FiniteField.exists_generator_pow_of_order_eq_card_sub_one` (theorem, [line 392](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L392))
 
 > A finite-field generator of order `#F - 1` enumerates all nonzero elements.
 
@@ -152,7 +152,7 @@ theorem exists_generator_pow_of_order_eq_card_sub_one {F : Type*}
     ∃ k : Nat, k < q - 1 ∧ a = generator ^ k
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.SmoothCosetInvariant` (definition, [line 432](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L432))
+`CompPoly.CPolynomial.Roots.FiniteField.SmoothCosetInvariant` (definition, [line 432](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L432))
 
 > Roots of `p` are contained in the explicit coset `alpha * <gamma>` of order `order`.
 
@@ -161,7 +161,7 @@ def SmoothCosetInvariant {F : Type*} [Field F]
     (alpha gamma : F) (order : Nat) (p : CPolynomial F) : Prop
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smooth_schedule_recursion_preserves_coset_invariant` (theorem, [line 441](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L441))
+`CompPoly.CPolynomial.Roots.FiniteField.smooth_schedule_recursion_preserves_coset_invariant` (theorem, [line 441](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L441))
 
 > Schedule recursion preserves the smooth coset invariant.
 
@@ -193,7 +193,7 @@ theorem smooth_schedule_recursion_preserves_coset_invariant {F : Type*}
             CPolynomial.C (alpha ^ (order / ell) * (gamma ^ (order / ell)) ^ j))))
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.SmoothScheduleDivides` (definition, [line 469](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L469))
+`CompPoly.CPolynomial.Roots.FiniteField.SmoothScheduleDivides` (definition, [line 469](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L469))
 
 > Schedule factors divide the current coset order along executable smooth recursion.
 
@@ -201,14 +201,14 @@ theorem smooth_schedule_recursion_preserves_coset_invariant {F : Type*}
 def SmoothScheduleDivides : List Nat → Nat → Prop
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.instDecidableSmoothScheduleDivides` (instance, [line 479](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L479))
+`CompPoly.CPolynomial.Roots.FiniteField.instDecidableSmoothScheduleDivides` (instance, [line 479](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L479))
 
 ```lean
 instance instDecidableSmoothScheduleDivides (schedule : List Nat) (order : Nat) :
     Decidable (SmoothScheduleDivides schedule order)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smooth_schedule_reaches_singleton` (theorem, [line 498](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L498))
+`CompPoly.CPolynomial.Roots.FiniteField.smooth_schedule_reaches_singleton` (theorem, [line 498](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L498))
 
 > The declared smooth schedule reaches singleton cosets.
 
@@ -219,7 +219,7 @@ theorem smooth_schedule_reaches_singleton {F : Type*}
     ctx.schedule.toList.foldl (fun order ell ↦ order / ell) (ctx.q - 1) = 1
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smoothCosetLinearFactorsWithSchedule_complete` (theorem, [line 505](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L505))
+`CompPoly.CPolynomial.Roots.FiniteField.smoothCosetLinearFactorsWithSchedule_complete` (theorem, [line 505](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L505))
 
 > Path completeness for the schedule-driven smooth coset recursion.
 
@@ -241,7 +241,7 @@ theorem smoothCosetLinearFactorsWithSchedule_complete {F : Type*}
                     IsLinearRootFactorCandidate factor a
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorsAlgorithmWith_complete` (theorem, [line 704](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L704))
+`CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorsAlgorithmWith_complete` (theorem, [line 704](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean#L704))
 
 > Completeness of the top-level smooth linear-factor splitter.
 
@@ -272,5 +272,5 @@ theorem smoothLinearFactorsAlgorithmWith_complete {F : Type*}
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean)
+- [CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Correctness.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Univariate.Roots.SmoothSubgroup.Correctness.json)

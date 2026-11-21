@@ -7,7 +7,7 @@ proof: formalized
 
 # Fast Goldilocks Field
 
-`CompPoly.Fields.Goldilocks.Fast`, in [CompPoly/Fields/Goldilocks/Fast.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean), by Varun Thakore.
+`CompPoly.Fields.Goldilocks.Fast`, in [CompPoly/Fields/Goldilocks/Fast.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean), by Varun Thakore.
 
 > Verified `UInt64`-backed implementation of Goldilocks arithmetic, `p = 2^64 - 2^32 + 1`.
 > The carrier is a subtype of `UInt64` holding canonical representatives, wrapping the raw
@@ -20,7 +20,7 @@ proof: formalized
 
 > ## Carrier and arithmetic
 
-`Goldilocks.Fast.Field` (abbreviation, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L34))
+`Goldilocks.Fast.Field` (abbreviation, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L34))
 
 > The fast native-word Goldilocks field carrier, stored as a canonical residue.
 
@@ -28,7 +28,7 @@ proof: formalized
 abbrev Field : Type
 ```
 
-`Goldilocks.Fast.raw` (definition, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L41))
+`Goldilocks.Fast.raw` (definition, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L41))
 
 > The raw canonical word backing a fast Goldilocks element.
 
@@ -36,7 +36,7 @@ abbrev Field : Type
 def raw (x : Field) : UInt64
 ```
 
-`Goldilocks.Fast.raw_mk` (theorem, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L45))
+`Goldilocks.Fast.raw_mk` (theorem, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L45))
 
 > Reading the raw word from a subtype literal returns its stored word.
 
@@ -45,7 +45,7 @@ theorem raw_mk (x : UInt64) (h : x.toNat < Goldilocks.fieldSize) :
     raw ⟨x, h⟩ = x
 ```
 
-`Goldilocks.Fast.raw_eq_val` (theorem, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L50))
+`Goldilocks.Fast.raw_eq_val` (theorem, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L50))
 
 > `raw` is the underlying `UInt64` value.
 
@@ -53,7 +53,7 @@ theorem raw_mk (x : UInt64) (h : x.toNat < Goldilocks.fieldSize) :
 theorem raw_eq_val (x : Field) : raw x = x.val
 ```
 
-`Goldilocks.Fast.reduceUInt64` (definition, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L54))
+`Goldilocks.Fast.reduceUInt64` (definition, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L54))
 
 > Reduce a native `UInt64` modulo Goldilocks.
 
@@ -61,7 +61,7 @@ theorem raw_eq_val (x : Field) : raw x = x.val
 def reduceUInt64 (x : UInt64) : Field
 ```
 
-`Goldilocks.Fast.reduceUInt64_cast` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L59))
+`Goldilocks.Fast.reduceUInt64_cast` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L59))
 
 > One-word reduction preserves the represented canonical field element.
 
@@ -71,7 +71,7 @@ theorem reduceUInt64_cast (x : UInt64) :
       (x.toNat : Goldilocks.Field)
 ```
 
-`Goldilocks.Fast.zero` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L66))
+`Goldilocks.Fast.zero` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L66))
 
 > The zero fast Goldilocks element.
 
@@ -79,7 +79,7 @@ theorem reduceUInt64_cast (x : UInt64) :
 def zero : Field
 ```
 
-`Goldilocks.Fast.one` (definition, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L70))
+`Goldilocks.Fast.one` (definition, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L70))
 
 > The one fast Goldilocks element.
 
@@ -87,7 +87,7 @@ def zero : Field
 def one : Field
 ```
 
-`Goldilocks.Fast.ofCanonicalNat` (definition, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L74))
+`Goldilocks.Fast.ofCanonicalNat` (definition, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L74))
 
 > Build a fast element from a canonical natural representative.
 
@@ -95,7 +95,7 @@ def one : Field
 def ofCanonicalNat (n : Nat) (h : n < Goldilocks.fieldSize) : Field
 ```
 
-`Goldilocks.Fast.ofNat` (definition, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L84))
+`Goldilocks.Fast.ofNat` (definition, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L84))
 
 > Convert a natural number into fast canonical representation.
 
@@ -103,7 +103,7 @@ def ofCanonicalNat (n : Nat) (h : n < Goldilocks.fieldSize) : Field
 def ofNat (n : Nat) : Field
 ```
 
-`Goldilocks.Fast.ofUInt64` (definition, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L89))
+`Goldilocks.Fast.ofUInt64` (definition, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L89))
 
 > Convert a 64-bit word into fast canonical representation.
 
@@ -111,7 +111,7 @@ def ofNat (n : Nat) : Field
 def ofUInt64 (x : UInt64) : Field
 ```
 
-`Goldilocks.Fast.ofField` (definition, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L94))
+`Goldilocks.Fast.ofField` (definition, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L94))
 
 > Convert from the canonical `ZMod` Goldilocks field into fast canonical form.
 
@@ -119,7 +119,7 @@ def ofUInt64 (x : UInt64) : Field
 def ofField (x : Goldilocks.Field) : Field
 ```
 
-`Goldilocks.Fast.ofInt` (definition, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L99))
+`Goldilocks.Fast.ofInt` (definition, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L99))
 
 > Convert an integer into fast canonical representation.
 
@@ -127,7 +127,7 @@ def ofField (x : Goldilocks.Field) : Field
 def ofInt (z : Int) : Field
 ```
 
-`Goldilocks.Fast.toNat` (definition, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L104))
+`Goldilocks.Fast.toNat` (definition, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L104))
 
 > Convert a fast Goldilocks element to its canonical natural representative.
 
@@ -135,7 +135,7 @@ def ofInt (z : Int) : Field
 def toNat (x : Field) : Nat
 ```
 
-`Goldilocks.Fast.toNat_mk` (theorem, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L110))
+`Goldilocks.Fast.toNat_mk` (theorem, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L110))
 
 > Reading the natural representative of a subtype literal returns its stored word's
 > natural value.
@@ -145,7 +145,7 @@ theorem toNat_mk (x : UInt64) (h : x.toNat < Goldilocks.fieldSize) :
     toNat ⟨x, h⟩ = x.toNat
 ```
 
-`Goldilocks.Fast.toNat_eq_val_toNat` (theorem, [line 115](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L115))
+`Goldilocks.Fast.toNat_eq_val_toNat` (theorem, [line 115](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L115))
 
 > `toNat` is the natural value of the underlying `UInt64` word.
 
@@ -153,7 +153,7 @@ theorem toNat_mk (x : UInt64) (h : x.toNat < Goldilocks.fieldSize) :
 theorem toNat_eq_val_toNat (x : Field) : toNat x = x.val.toNat
 ```
 
-`Goldilocks.Fast.toField` (definition, [line 119](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L119))
+`Goldilocks.Fast.toField` (definition, [line 119](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L119))
 
 > Convert a fast Goldilocks element to the canonical `ZMod` Goldilocks field.
 
@@ -161,7 +161,7 @@ theorem toNat_eq_val_toNat (x : Field) : toNat x = x.val.toNat
 def toField (x : Field) : Goldilocks.Field
 ```
 
-`Goldilocks.Fast.add` (definition, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L124))
+`Goldilocks.Fast.add` (definition, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L124))
 
 > Fast modular addition in canonical form.
 
@@ -169,7 +169,7 @@ def toField (x : Field) : Goldilocks.Field
 def add (x y : Field) : Field
 ```
 
-`Goldilocks.Fast.neg` (definition, [line 129](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L129))
+`Goldilocks.Fast.neg` (definition, [line 129](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L129))
 
 > Fast modular negation in canonical form.
 
@@ -177,7 +177,7 @@ def add (x y : Field) : Field
 def neg (x : Field) : Field
 ```
 
-`Goldilocks.Fast.sub` (definition, [line 134](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L134))
+`Goldilocks.Fast.sub` (definition, [line 134](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L134))
 
 > Fast modular subtraction in canonical form.
 
@@ -185,7 +185,7 @@ def neg (x : Field) : Field
 def sub (x y : Field) : Field
 ```
 
-`Goldilocks.Fast.mul` (definition, [line 139](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L139))
+`Goldilocks.Fast.mul` (definition, [line 139](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L139))
 
 > Fast modular multiplication in canonical form.
 
@@ -193,7 +193,7 @@ def sub (x y : Field) : Field
 def mul (x y : Field) : Field
 ```
 
-`Goldilocks.Fast.square` (definition, [line 144](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L144))
+`Goldilocks.Fast.square` (definition, [line 144](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L144))
 
 > Fast squaring.
 
@@ -201,7 +201,7 @@ def mul (x y : Field) : Field
 def square (x : Field) : Field
 ```
 
-`Goldilocks.Fast.squareN` (definition, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L149))
+`Goldilocks.Fast.squareN` (definition, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L149))
 
 > Repeated squaring, `squareN x n = x^(2^n)`, as a tail-recursive loop.
 
@@ -209,7 +209,7 @@ def square (x : Field) : Field
 def squareN (x : Field) : Nat → Field
 ```
 
-`Goldilocks.Fast.pow` (definition, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L155))
+`Goldilocks.Fast.pow` (definition, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L155))
 
 > Exponentiation through the lazy ladder `powLazy`, canonicalized once.
 
@@ -217,7 +217,7 @@ def squareN (x : Field) : Nat → Field
 def pow (x : Field) (n : Nat) : Field
 ```
 
-`Goldilocks.Fast.inv` (definition, [line 164](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L164))
+`Goldilocks.Fast.inv` (definition, [line 164](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L164))
 
 > Fast modular inversion through the lazy Fermat chain `invLazy`, canonicalized once.
 
@@ -225,7 +225,7 @@ def pow (x : Field) (n : Nat) : Field
 def inv (x : Field) : Field
 ```
 
-`Goldilocks.Fast.div` (definition, [line 169](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L169))
+`Goldilocks.Fast.div` (definition, [line 169](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L169))
 
 > Division through inversion and fast multiplication.
 
@@ -233,7 +233,7 @@ def inv (x : Field) : Field
 def div (x y : Field) : Field
 ```
 
-`Goldilocks.Fast.instZeroField` (instance, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L173))
+`Goldilocks.Fast.instZeroField` (instance, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L173))
 
 > Use fast zero for standard `0` notation.
 
@@ -241,7 +241,7 @@ def div (x y : Field) : Field
 instance instZeroField : Zero Field
 ```
 
-`Goldilocks.Fast.instOneField` (instance, [line 177](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L177))
+`Goldilocks.Fast.instOneField` (instance, [line 177](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L177))
 
 > Use fast one for standard `1` notation.
 
@@ -249,7 +249,7 @@ instance instZeroField : Zero Field
 instance instOneField : One Field
 ```
 
-`Goldilocks.Fast.raw_zero` (theorem, [line 182](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L182))
+`Goldilocks.Fast.raw_zero` (theorem, [line 182](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L182))
 
 > The raw word backing fast zero is zero.
 
@@ -257,7 +257,7 @@ instance instOneField : One Field
 theorem raw_zero : raw (0 : Field) = 0
 ```
 
-`Goldilocks.Fast.raw_one` (theorem, [line 186](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L186))
+`Goldilocks.Fast.raw_one` (theorem, [line 186](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L186))
 
 > The raw word backing fast one is one.
 
@@ -265,7 +265,7 @@ theorem raw_zero : raw (0 : Field) = 0
 theorem raw_one : raw (1 : Field) = 1
 ```
 
-`Goldilocks.Fast.toNat_zero` (theorem, [line 190](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L190))
+`Goldilocks.Fast.toNat_zero` (theorem, [line 190](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L190))
 
 > The natural representative of fast zero is zero.
 
@@ -273,7 +273,7 @@ theorem raw_one : raw (1 : Field) = 1
 theorem toNat_zero : toNat (0 : Field) = 0
 ```
 
-`Goldilocks.Fast.toNat_one` (theorem, [line 194](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L194))
+`Goldilocks.Fast.toNat_one` (theorem, [line 194](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L194))
 
 > The natural representative of fast one is one.
 
@@ -281,7 +281,7 @@ theorem toNat_zero : toNat (0 : Field) = 0
 theorem toNat_one : toNat (1 : Field) = 1
 ```
 
-`Goldilocks.Fast.instAddField` (instance, [line 197](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L197))
+`Goldilocks.Fast.instAddField` (instance, [line 197](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L197))
 
 > Use fast addition for standard `+` notation.
 
@@ -289,7 +289,7 @@ theorem toNat_one : toNat (1 : Field) = 1
 instance instAddField : Add Field
 ```
 
-`Goldilocks.Fast.instNegField` (instance, [line 201](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L201))
+`Goldilocks.Fast.instNegField` (instance, [line 201](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L201))
 
 > Use fast negation for standard unary `-` notation.
 
@@ -297,7 +297,7 @@ instance instAddField : Add Field
 instance instNegField : Neg Field
 ```
 
-`Goldilocks.Fast.instSubField` (instance, [line 205](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L205))
+`Goldilocks.Fast.instSubField` (instance, [line 205](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L205))
 
 > Use fast subtraction for standard `-` notation.
 
@@ -305,7 +305,7 @@ instance instNegField : Neg Field
 instance instSubField : Sub Field
 ```
 
-`Goldilocks.Fast.instMulField` (instance, [line 209](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L209))
+`Goldilocks.Fast.instMulField` (instance, [line 209](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L209))
 
 > Use fast multiplication for standard `*` notation.
 
@@ -313,7 +313,7 @@ instance instSubField : Sub Field
 instance instMulField : Mul Field
 ```
 
-`Goldilocks.Fast.instInvField` (instance, [line 213](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L213))
+`Goldilocks.Fast.instInvField` (instance, [line 213](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L213))
 
 > Use fast inversion for standard inverse notation.
 
@@ -321,7 +321,7 @@ instance instMulField : Mul Field
 instance instInvField : Inv Field
 ```
 
-`Goldilocks.Fast.instDivField` (instance, [line 217](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L217))
+`Goldilocks.Fast.instDivField` (instance, [line 217](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L217))
 
 > Use fast division for standard `/` notation.
 
@@ -329,7 +329,7 @@ instance instInvField : Inv Field
 instance instDivField : Div Field
 ```
 
-`Goldilocks.Fast.instNatCastField` (instance, [line 221](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L221))
+`Goldilocks.Fast.instNatCastField` (instance, [line 221](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L221))
 
 > Use `ofNat` for natural-number casts into fast Goldilocks.
 
@@ -337,7 +337,7 @@ instance instDivField : Div Field
 instance instNatCastField : NatCast Field
 ```
 
-`Goldilocks.Fast.instIntCastField` (instance, [line 225](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L225))
+`Goldilocks.Fast.instIntCastField` (instance, [line 225](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L225))
 
 > Interpret integer casts through the canonical Goldilocks field.
 
@@ -345,7 +345,7 @@ instance instNatCastField : NatCast Field
 instance instIntCastField : IntCast Field
 ```
 
-`Goldilocks.Fast.instNatSMulField` (instance, [line 229](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L229))
+`Goldilocks.Fast.instNatSMulField` (instance, [line 229](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L229))
 
 > Natural scalar multiplication is multiplication by the corresponding fast natural cast.
 
@@ -353,7 +353,7 @@ instance instIntCastField : IntCast Field
 instance instNatSMulField : SMul Nat Field
 ```
 
-`Goldilocks.Fast.instIntSMulField` (instance, [line 233](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L233))
+`Goldilocks.Fast.instIntSMulField` (instance, [line 233](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L233))
 
 > Integer scalar multiplication is multiplication by the corresponding fast integer cast.
 
@@ -361,7 +361,7 @@ instance instNatSMulField : SMul Nat Field
 instance instIntSMulField : SMul Int Field
 ```
 
-`Goldilocks.Fast.instPowFieldNat` (instance, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L237))
+`Goldilocks.Fast.instPowFieldNat` (instance, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L237))
 
 > Use fast binary exponentiation for natural powers.
 
@@ -369,7 +369,7 @@ instance instIntSMulField : SMul Int Field
 instance instPowFieldNat : Pow Field Nat
 ```
 
-`Goldilocks.Fast.instPowFieldInt` (instance, [line 241](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L241))
+`Goldilocks.Fast.instPowFieldInt` (instance, [line 241](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L241))
 
 > Use fast natural powers and inversion for integer powers.
 
@@ -377,7 +377,7 @@ instance instPowFieldNat : Pow Field Nat
 instance instPowFieldInt : Pow Field Int
 ```
 
-`Goldilocks.Fast.instNNRatCastField` (instance, [line 248](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L248))
+`Goldilocks.Fast.instNNRatCastField` (instance, [line 248](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L248))
 
 > Interpret nonnegative rational casts through the canonical Goldilocks field.
 
@@ -385,7 +385,7 @@ instance instPowFieldInt : Pow Field Int
 instance instNNRatCastField : NNRatCast Field
 ```
 
-`Goldilocks.Fast.instRatCastField` (instance, [line 252](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L252))
+`Goldilocks.Fast.instRatCastField` (instance, [line 252](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L252))
 
 > Interpret rational casts through the canonical Goldilocks field.
 
@@ -393,7 +393,7 @@ instance instNNRatCastField : NNRatCast Field
 instance instRatCastField : RatCast Field
 ```
 
-`Goldilocks.Fast.instNNRatSMulField` (instance, [line 256](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L256))
+`Goldilocks.Fast.instNNRatSMulField` (instance, [line 256](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L256))
 
 > Nonnegative rational scalar multiplication is transported through the canonical field.
 
@@ -401,7 +401,7 @@ instance instRatCastField : RatCast Field
 instance instNNRatSMulField : SMul ℚ≥0 Field
 ```
 
-`Goldilocks.Fast.instRatSMulField` (instance, [line 260](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L260))
+`Goldilocks.Fast.instRatSMulField` (instance, [line 260](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L260))
 
 > Rational scalar multiplication is transported through the canonical field.
 
@@ -411,7 +411,7 @@ instance instRatSMulField : SMul ℚ Field
 
 > ## Correctness against the canonical model
 
-`Goldilocks.Fast.toNat_ofNat` (theorem, [line 288](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L288))
+`Goldilocks.Fast.toNat_ofNat` (theorem, [line 288](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L288))
 
 > The natural representative of a fast value built from `n` is `n` reduced modulo the
 > Goldilocks modulus.
@@ -421,7 +421,7 @@ theorem toNat_ofNat (n : Nat) :
     toNat (ofNat n) = n % Goldilocks.fieldSize
 ```
 
-`Goldilocks.Fast.toNat_ofUInt64` (theorem, [line 296](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L296))
+`Goldilocks.Fast.toNat_ofUInt64` (theorem, [line 296](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L296))
 
 > The natural representative of a fast value built from a `UInt64` is that word's
 > natural value reduced modulo the Goldilocks modulus.
@@ -431,7 +431,7 @@ theorem toNat_ofUInt64 (x : UInt64) :
     toNat (ofUInt64 x) = x.toNat % Goldilocks.fieldSize
 ```
 
-`Goldilocks.Fast.toNat_ofField` (theorem, [line 321](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L321))
+`Goldilocks.Fast.toNat_ofField` (theorem, [line 321](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L321))
 
 > Converting from the canonical `ZMod` field to fast form preserves the canonical
 > representative.
@@ -440,7 +440,7 @@ theorem toNat_ofUInt64 (x : UInt64) :
 theorem toNat_ofField (x : Goldilocks.Field) : toNat (ofField x) = x.val
 ```
 
-`Goldilocks.Fast.toField_ofNat` (theorem, [line 328](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L328))
+`Goldilocks.Fast.toField_ofNat` (theorem, [line 328](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L328))
 
 > Converting a natural number to fast form agrees with the same natural cast in the
 > canonical field.
@@ -450,7 +450,7 @@ theorem toField_ofNat (n : Nat) :
     toField (ofNat n) = (n : Goldilocks.Field)
 ```
 
-`Goldilocks.Fast.toField_ofUInt64` (theorem, [line 338](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L338))
+`Goldilocks.Fast.toField_ofUInt64` (theorem, [line 338](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L338))
 
 > Converting a `UInt64` to fast form agrees with casting its natural value into the
 > canonical field.
@@ -460,7 +460,7 @@ theorem toField_ofUInt64 (x : UInt64) :
     toField (ofUInt64 x) = (x.toNat : Goldilocks.Field)
 ```
 
-`Goldilocks.Fast.toField_ofInt` (theorem, [line 345](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L345))
+`Goldilocks.Fast.toField_ofInt` (theorem, [line 345](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L345))
 
 > Converting an integer to fast form agrees with casting it into the canonical field.
 
@@ -469,7 +469,7 @@ theorem toField_ofInt (z : Int) :
     toField (ofInt z) = (z : Goldilocks.Field)
 ```
 
-`Goldilocks.Fast.toField_ofField` (theorem, [line 353](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L353))
+`Goldilocks.Fast.toField_ofField` (theorem, [line 353](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L353))
 
 > Converting from the canonical field to fast form and back is the identity.
 
@@ -477,7 +477,7 @@ theorem toField_ofInt (z : Int) :
 theorem toField_ofField (x : Goldilocks.Field) : toField (ofField x) = x
 ```
 
-`Goldilocks.Fast.ofField_toField` (theorem, [line 360](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L360))
+`Goldilocks.Fast.ofField_toField` (theorem, [line 360](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L360))
 
 > Converting from fast form to the canonical field and back is the identity.
 
@@ -485,7 +485,7 @@ theorem toField_ofField (x : Goldilocks.Field) : toField (ofField x) = x
 theorem ofField_toField (x : Field) : ofField (toField x) = x
 ```
 
-`Goldilocks.Fast.toField_injective` (theorem, [line 369](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L369))
+`Goldilocks.Fast.toField_injective` (theorem, [line 369](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L369))
 
 > The canonical-field interpretation distinguishes fast Goldilocks values.
 
@@ -493,7 +493,7 @@ theorem ofField_toField (x : Field) : ofField (toField x) = x
 theorem toField_injective : Function.Injective toField
 ```
 
-`Goldilocks.Fast.toField_zero` (theorem, [line 393](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L393))
+`Goldilocks.Fast.toField_zero` (theorem, [line 393](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L393))
 
 > Fast zero maps to canonical zero.
 
@@ -501,7 +501,7 @@ theorem toField_injective : Function.Injective toField
 theorem toField_zero : toField (0 : Field) = 0
 ```
 
-`Goldilocks.Fast.toField_one` (theorem, [line 398](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L398))
+`Goldilocks.Fast.toField_one` (theorem, [line 398](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L398))
 
 > Fast one maps to canonical one.
 
@@ -509,7 +509,7 @@ theorem toField_zero : toField (0 : Field) = 0
 theorem toField_one : toField (1 : Field) = 1
 ```
 
-`Goldilocks.Fast.toField_add` (theorem, [line 403](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L403))
+`Goldilocks.Fast.toField_add` (theorem, [line 403](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L403))
 
 > Fast addition agrees with canonical-field addition.
 
@@ -517,7 +517,7 @@ theorem toField_one : toField (1 : Field) = 1
 theorem toField_add (x y : Field) : toField (x + y) = toField x + toField y
 ```
 
-`Goldilocks.Fast.toField_neg` (theorem, [line 410](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L410))
+`Goldilocks.Fast.toField_neg` (theorem, [line 410](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L410))
 
 > Fast negation agrees with canonical-field negation.
 
@@ -525,7 +525,7 @@ theorem toField_add (x y : Field) : toField (x + y) = toField x + toField y
 theorem toField_neg (x : Field) : toField (-x) = -toField x
 ```
 
-`Goldilocks.Fast.toField_sub` (theorem, [line 417](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L417))
+`Goldilocks.Fast.toField_sub` (theorem, [line 417](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L417))
 
 > Fast subtraction agrees with canonical-field subtraction.
 
@@ -533,7 +533,7 @@ theorem toField_neg (x : Field) : toField (-x) = -toField x
 theorem toField_sub (x y : Field) : toField (x - y) = toField x - toField y
 ```
 
-`Goldilocks.Fast.toField_mul` (theorem, [line 424](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L424))
+`Goldilocks.Fast.toField_mul` (theorem, [line 424](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L424))
 
 > Fast multiplication agrees with canonical-field multiplication.
 
@@ -541,7 +541,7 @@ theorem toField_sub (x y : Field) : toField (x - y) = toField x - toField y
 theorem toField_mul (x y : Field) : toField (x * y) = toField x * toField y
 ```
 
-`Goldilocks.Fast.toField_mul_def` (theorem, [line 431](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L431))
+`Goldilocks.Fast.toField_mul_def` (theorem, [line 431](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L431))
 
 > The named fast multiplication function agrees with canonical-field multiplication.
 
@@ -549,7 +549,7 @@ theorem toField_mul (x y : Field) : toField (x * y) = toField x * toField y
 theorem toField_mul_def (x y : Field) : toField (mul x y) = toField x * toField y
 ```
 
-`Goldilocks.Fast.toField_square` (theorem, [line 436](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L436))
+`Goldilocks.Fast.toField_square` (theorem, [line 436](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L436))
 
 > Fast squaring agrees with multiplying the canonical field value by itself.
 
@@ -557,7 +557,7 @@ theorem toField_mul_def (x y : Field) : toField (mul x y) = toField x * toField 
 theorem toField_square (x : Field) : toField (square x) = toField x * toField x
 ```
 
-`Goldilocks.Fast.toField_squareN` (theorem, [line 442](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L442))
+`Goldilocks.Fast.toField_squareN` (theorem, [line 442](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L442))
 
 > Repeated fast squaring agrees with raising to `2^n` in the canonical field.
 
@@ -566,7 +566,7 @@ theorem toField_squareN (x : Field) (n : Nat) :
     toField (squareN x n) = toField x ^ (2 ^ n)
 ```
 
-`Goldilocks.Fast.toField_pow` (theorem, [line 457](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L457))
+`Goldilocks.Fast.toField_pow` (theorem, [line 457](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L457))
 
 > Fast natural-power computation agrees with powers in the canonical field.
 
@@ -574,7 +574,7 @@ theorem toField_squareN (x : Field) (n : Nat) :
 theorem toField_pow (x : Field) (n : Nat) : toField (pow x n) = toField x ^ n
 ```
 
-`Goldilocks.Fast.toField_inv` (theorem, [line 481](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L481))
+`Goldilocks.Fast.toField_inv` (theorem, [line 481](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L481))
 
 > Fast inversion agrees with inversion in the canonical field.
 
@@ -582,7 +582,7 @@ theorem toField_pow (x : Field) (n : Nat) : toField (pow x n) = toField x ^ n
 theorem toField_inv (x : Field) : toField x⁻¹ = (toField x)⁻¹
 ```
 
-`Goldilocks.Fast.toField_div` (theorem, [line 494](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L494))
+`Goldilocks.Fast.toField_div` (theorem, [line 494](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L494))
 
 > Fast division agrees with division in the canonical field.
 
@@ -590,7 +590,7 @@ theorem toField_inv (x : Field) : toField x⁻¹ = (toField x)⁻¹
 theorem toField_div (x y : Field) : toField (x / y) = toField x / toField y
 ```
 
-`Goldilocks.Fast.toField_natCast` (theorem, [line 501](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L501))
+`Goldilocks.Fast.toField_natCast` (theorem, [line 501](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L501))
 
 > Natural casts in the fast field agree with natural casts in the canonical field.
 
@@ -598,7 +598,7 @@ theorem toField_div (x y : Field) : toField (x / y) = toField x / toField y
 theorem toField_natCast (n : Nat) : toField (n : Field) = (n : Goldilocks.Field)
 ```
 
-`Goldilocks.Fast.toField_intCast` (theorem, [line 507](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L507))
+`Goldilocks.Fast.toField_intCast` (theorem, [line 507](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L507))
 
 > Integer casts in the fast field agree with integer casts in the canonical field.
 
@@ -606,7 +606,7 @@ theorem toField_natCast (n : Nat) : toField (n : Field) = (n : Goldilocks.Field)
 theorem toField_intCast (n : Int) : toField (n : Field) = (n : Goldilocks.Field)
 ```
 
-`Goldilocks.Fast.toField_nsmul` (theorem, [line 513](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L513))
+`Goldilocks.Fast.toField_nsmul` (theorem, [line 513](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L513))
 
 > Fast natural scalar multiplication agrees with canonical-field scalar multiplication.
 
@@ -614,7 +614,7 @@ theorem toField_intCast (n : Int) : toField (n : Field) = (n : Goldilocks.Field)
 theorem toField_nsmul (n : Nat) (x : Field) : toField (n • x) = n • toField x
 ```
 
-`Goldilocks.Fast.toField_zsmul` (theorem, [line 520](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L520))
+`Goldilocks.Fast.toField_zsmul` (theorem, [line 520](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L520))
 
 > Fast integer scalar multiplication agrees with canonical-field scalar multiplication.
 
@@ -622,7 +622,7 @@ theorem toField_nsmul (n : Nat) (x : Field) : toField (n • x) = n • toField 
 theorem toField_zsmul (n : Int) (x : Field) : toField (n • x) = n • toField x
 ```
 
-`Goldilocks.Fast.toField_npow` (theorem, [line 527](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L527))
+`Goldilocks.Fast.toField_npow` (theorem, [line 527](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L527))
 
 > Standard fast natural powers agree with powers in the canonical field.
 
@@ -630,7 +630,7 @@ theorem toField_zsmul (n : Int) (x : Field) : toField (n • x) = n • toField 
 theorem toField_npow (x : Field) (n : Nat) : toField (x ^ n) = toField x ^ n
 ```
 
-`Goldilocks.Fast.toField_zpow` (theorem, [line 533](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L533))
+`Goldilocks.Fast.toField_zpow` (theorem, [line 533](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L533))
 
 > Standard fast integer powers agree with integer powers in the canonical field.
 
@@ -638,7 +638,7 @@ theorem toField_npow (x : Field) (n : Nat) : toField (x ^ n) = toField x ^ n
 theorem toField_zpow (x : Field) (n : Int) : toField (x ^ n) = toField x ^ n
 ```
 
-`Goldilocks.Fast.toField_nnratCast` (theorem, [line 546](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L546))
+`Goldilocks.Fast.toField_nnratCast` (theorem, [line 546](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L546))
 
 > Nonnegative rational casts in the fast field agree with canonical-field casts.
 
@@ -646,7 +646,7 @@ theorem toField_zpow (x : Field) (n : Int) : toField (x ^ n) = toField x ^ n
 theorem toField_nnratCast (q : ℚ≥0) : toField (q : Field) = (q : Goldilocks.Field)
 ```
 
-`Goldilocks.Fast.toField_ratCast` (theorem, [line 552](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L552))
+`Goldilocks.Fast.toField_ratCast` (theorem, [line 552](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L552))
 
 > Rational casts in the fast field agree with canonical-field casts.
 
@@ -654,7 +654,7 @@ theorem toField_nnratCast (q : ℚ≥0) : toField (q : Field) = (q : Goldilocks.
 theorem toField_ratCast (q : ℚ) : toField (q : Field) = (q : Goldilocks.Field)
 ```
 
-`Goldilocks.Fast.toField_nnqsmul` (theorem, [line 559](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L559))
+`Goldilocks.Fast.toField_nnqsmul` (theorem, [line 559](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L559))
 
 > Fast nonnegative rational scalar multiplication agrees with canonical-field scalar
 > multiplication.
@@ -663,7 +663,7 @@ theorem toField_ratCast (q : ℚ) : toField (q : Field) = (q : Goldilocks.Field)
 theorem toField_nnqsmul (q : ℚ≥0) (x : Field) : toField (q • x) = q • toField x
 ```
 
-`Goldilocks.Fast.toField_qsmul` (theorem, [line 565](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L565))
+`Goldilocks.Fast.toField_qsmul` (theorem, [line 565](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L565))
 
 > Fast rational scalar multiplication agrees with canonical-field scalar multiplication.
 
@@ -673,7 +673,7 @@ theorem toField_qsmul (q : ℚ) (x : Field) : toField (q • x) = q • toField 
 
 > ## Canonical bridge and field instances
 
-`Goldilocks.Fast.ringEquiv` (definition, [line 573](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L573))
+`Goldilocks.Fast.ringEquiv` (definition, [line 573](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L573))
 
 > Ring equivalence between the fast representation and canonical Goldilocks.
 
@@ -681,7 +681,7 @@ theorem toField_qsmul (q : ℚ) (x : Field) : toField (q • x) = q • toField 
 def ringEquiv : Field ≃+* Goldilocks.Field
 ```
 
-`Goldilocks.Fast.ringEquiv_apply` (theorem, [line 583](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L583))
+`Goldilocks.Fast.ringEquiv_apply` (theorem, [line 583](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L583))
 
 > Applying `ringEquiv` is the same as interpreting a fast value canonically.
 
@@ -689,7 +689,7 @@ def ringEquiv : Field ≃+* Goldilocks.Field
 theorem ringEquiv_apply (x : Field) : ringEquiv x = toField x
 ```
 
-`Goldilocks.Fast.ringEquiv_symm_apply` (theorem, [line 587](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L587))
+`Goldilocks.Fast.ringEquiv_symm_apply` (theorem, [line 587](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L587))
 
 > Applying the inverse `ringEquiv` converts a canonical value into fast form.
 
@@ -697,7 +697,7 @@ theorem ringEquiv_apply (x : Field) : ringEquiv x = toField x
 theorem ringEquiv_symm_apply (x : Goldilocks.Field) : ringEquiv.symm x = ofField x
 ```
 
-`Goldilocks.Fast.instField` (instance, [line 590](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L590))
+`Goldilocks.Fast.instField` (instance, [line 590](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L590))
 
 > Field instance transferred from canonical Goldilocks through `toField`.
 
@@ -705,7 +705,7 @@ theorem ringEquiv_symm_apply (x : Goldilocks.Field) : ringEquiv.symm x = ofField
 instance (priority := low) instField : _root_.Field Field
 ```
 
-`Goldilocks.Fast.instCommRing` (instance, [line 612](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L612))
+`Goldilocks.Fast.instCommRing` (instance, [line 612](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L612))
 
 > Commutative-ring instance inherited from the transferred field structure.
 
@@ -713,7 +713,7 @@ instance (priority := low) instField : _root_.Field Field
 instance (priority := low) instCommRing : CommRing Field
 ```
 
-`Goldilocks.Fast.instNonBinaryField` (instance, [line 616](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean#L616))
+`Goldilocks.Fast.instNonBinaryField` (instance, [line 616](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean#L616))
 
 > Fast Goldilocks is a non-binary field.
 
@@ -727,5 +727,5 @@ instance (priority := low) instNonBinaryField : NonBinaryField Field
 
 ## Sources
 
-- [CompPoly/Fields/Goldilocks/Fast.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Goldilocks/Fast.lean)
+- [CompPoly/Fields/Goldilocks/Fast.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Goldilocks/Fast.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Fields.Goldilocks.Fast.json)

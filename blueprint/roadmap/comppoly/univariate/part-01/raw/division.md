@@ -7,11 +7,11 @@ proof: formalized
 
 # Raw Univariate Polynomial Division
 
-`CompPoly.Univariate.Raw.Division`, in [CompPoly/Univariate/Raw/Division.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Raw/Division.lean), by Quang Dao, Gregor Mitscha-Baude, Derek Sorensen, Desmond Coles, Valerii Huhnin.
+`CompPoly.Univariate.Raw.Division`, in [CompPoly/Univariate/Raw/Division.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Raw/Division.lean), by Quang Dao, Gregor Mitscha-Baude, Derek Sorensen, Desmond Coles, Valerii Huhnin.
 
 > Division algorithms for raw computable univariate polynomials.
 
-`CompPoly.CPolynomial.Raw.divModByMonicAux` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Raw/Division.lean#L31))
+`CompPoly.CPolynomial.Raw.divModByMonicAux` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Raw/Division.lean#L31))
 
 > Division with remainder by a monic polynomial using polynomial long division.
 
@@ -20,7 +20,7 @@ def divModByMonicAux [CommRing R] (p : CPolynomial.Raw R) (q : CPolynomial.Raw R
     CPolynomial.Raw R × CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.Raw.divByMonic` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Raw/Division.lean#L48))
+`CompPoly.CPolynomial.Raw.divByMonic` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Raw/Division.lean#L48))
 
 > Division of `p : CPolynomial.Raw R` by a monic `q : CPolynomial.Raw R`.
 
@@ -29,7 +29,7 @@ def divByMonic [CommRing R] (p : CPolynomial.Raw R) (q : CPolynomial.Raw R) :
     CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.Raw.modByMonic` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Raw/Division.lean#L53))
+`CompPoly.CPolynomial.Raw.modByMonic` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Raw/Division.lean#L53))
 
 > Modulus of `p : CPolynomial.Raw R` by a monic `q : CPolynomial.Raw R`.
 
@@ -38,7 +38,7 @@ def modByMonic [CommRing R] (p : CPolynomial.Raw R) (q : CPolynomial.Raw R) :
     CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.Raw.subScaledShift` (definition, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Raw/Division.lean#L59))
+`CompPoly.CPolynomial.Raw.subScaledShift` (definition, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Raw/Division.lean#L59))
 
 > Subtract `scale * q * X^shift` from `p` without using general polynomial multiplication.
 
@@ -47,7 +47,7 @@ def subScaledShift [Field R] (p q : CPolynomial.Raw R) (scale : R) (shift : Nat)
     CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.Raw.modByMonicRemainderOnly` (definition, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Raw/Division.lean#L74))
+`CompPoly.CPolynomial.Raw.modByMonicRemainderOnly` (definition, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Raw/Division.lean#L74))
 
 > Remainder-only long division by a monic polynomial.
 >
@@ -60,7 +60,7 @@ def modByMonicRemainderOnly [Field R] (p : CPolynomial.Raw R) (q : CPolynomial.R
     CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.Raw.inverseModX` (definition, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Raw/Division.lean#L90))
+`CompPoly.CPolynomial.Raw.inverseModX` (definition, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Raw/Division.lean#L90))
 
 > Inverse modulo `X^k`, using Newton iteration and the supplied low-product backend.
 
@@ -69,7 +69,7 @@ def inverseModX [Field R] [LawfulBEq R] (M : MulLowContext R) (k : Nat)
     (p : CPolynomial.Raw R) : CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.Raw.modByMonicByReversal` (definition, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Raw/Division.lean#L118))
+`CompPoly.CPolynomial.Raw.modByMonicByReversal` (definition, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Raw/Division.lean#L118))
 
 > Remainder by a monic polynomial through reversal and truncated products.
 >
@@ -83,7 +83,7 @@ def modByMonicByReversal [Field R] [LawfulBEq R] (M : MulLowContext R)
     (p : CPolynomial.Raw R) (q : CPolynomial.Raw R) : CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.Raw.div` (definition, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Raw/Division.lean#L137))
+`CompPoly.CPolynomial.Raw.div` (definition, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Raw/Division.lean#L137))
 
 > Division of two `CPolynomial.Raw`s.
 
@@ -91,7 +91,7 @@ def modByMonicByReversal [Field R] [LawfulBEq R] (M : MulLowContext R)
 def div [Field R] (p q : CPolynomial.Raw R) : CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.Raw.mod` (definition, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Raw/Division.lean#L141))
+`CompPoly.CPolynomial.Raw.mod` (definition, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Raw/Division.lean#L141))
 
 > Modulus of two `CPolynomial.Raw`s.
 
@@ -99,7 +99,7 @@ def div [Field R] (p q : CPolynomial.Raw R) : CPolynomial.Raw R
 def mod [Field R] (p q : CPolynomial.Raw R) : CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.Raw.monicNormalize` (definition, [line 148](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Raw/Division.lean#L148))
+`CompPoly.CPolynomial.Raw.monicNormalize` (definition, [line 148](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Raw/Division.lean#L148))
 
 > Normalize a nonzero raw polynomial to monic form. The zero polynomial stays zero.
 
@@ -107,7 +107,7 @@ def mod [Field R] (p q : CPolynomial.Raw R) : CPolynomial.Raw R
 def monicNormalize [Field R] (p : CPolynomial.Raw R) : CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.Raw.gcdMonicWithFuel` (definition, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Raw/Division.lean#L156))
+`CompPoly.CPolynomial.Raw.gcdMonicWithFuel` (definition, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Raw/Division.lean#L156))
 
 > Raw Euclidean gcd with explicit fuel, normalized to a monic result.
 
@@ -116,7 +116,7 @@ def gcdMonicWithFuel [Field R] :
     Nat → CPolynomial.Raw R → CPolynomial.Raw R → CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.Raw.gcdMonic` (definition, [line 168](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Raw/Division.lean#L168))
+`CompPoly.CPolynomial.Raw.gcdMonic` (definition, [line 168](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Raw/Division.lean#L168))
 
 > Raw monic Euclidean gcd.
 
@@ -130,5 +130,5 @@ def gcdMonic [Field R] (p q : CPolynomial.Raw R) : CPolynomial.Raw R
 
 ## Sources
 
-- [CompPoly/Univariate/Raw/Division.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Raw/Division.lean)
+- [CompPoly/Univariate/Raw/Division.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Raw/Division.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.Raw.Division.json)

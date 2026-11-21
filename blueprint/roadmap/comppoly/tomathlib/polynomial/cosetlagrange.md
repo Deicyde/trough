@@ -7,7 +7,7 @@ proof: formalized
 
 # Lagrange interpolation on a coset of the `n`-th roots of unity
 
-`CompPoly.ToMathlib.Polynomial.CosetLagrange`, in [CompPoly/ToMathlib/Polynomial/CosetLagrange.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/Polynomial/CosetLagrange.lean), by Thomas Coratger.
+`CompPoly.ToMathlib.Polynomial.CosetLagrange`, in [CompPoly/ToMathlib/Polynomial/CosetLagrange.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Polynomial/CosetLagrange.lean), by Thomas Coratger.
 
 > Let `omega` be a primitive `n`-th root of unity, and let `s != 0`.
 >
@@ -36,7 +36,7 @@ proof: formalized
 >
 > The folding follows the Plonky3 periodic-column evaluator.
 
-`Polynomial.rootsOfUnityCoset` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/Polynomial/CosetLagrange.lean#L52))
+`Polynomial.rootsOfUnityCoset` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Polynomial/CosetLagrange.lean#L52))
 
 > The points `s omega^i` of the coset `s mu_n`.
 
@@ -44,14 +44,14 @@ proof: formalized
 def rootsOfUnityCoset (s ω : F) (n : ℕ) : Fin n → F
 ```
 
-`Polynomial.rootsOfUnityCoset_injective` (theorem, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/Polynomial/CosetLagrange.lean#L54))
+`Polynomial.rootsOfUnityCoset_injective` (theorem, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Polynomial/CosetLagrange.lean#L54))
 
 ```lean
 theorem rootsOfUnityCoset_injective {s ω : F} {n : ℕ} (hω : IsPrimitiveRoot ω n) (hs : s ≠ 0) :
     Function.Injective (rootsOfUnityCoset s ω n)
 ```
 
-`Polynomial.nodal_rootsOfUnityCoset` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/Polynomial/CosetLagrange.lean#L59))
+`Polynomial.nodal_rootsOfUnityCoset` (theorem, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Polynomial/CosetLagrange.lean#L59))
 
 > The nodal polynomial of `s mu_n` is `X^n - s^n`.
 
@@ -60,7 +60,7 @@ theorem nodal_rootsOfUnityCoset {s ω : F} {n : ℕ} (hω : IsPrimitiveRoot ω n
     nodal univ (rootsOfUnityCoset s ω n) = X ^ n - C (s ^ n)
 ```
 
-`Polynomial.nodalWeight_rootsOfUnityCoset` (theorem, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/Polynomial/CosetLagrange.lean#L66))
+`Polynomial.nodalWeight_rootsOfUnityCoset` (theorem, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Polynomial/CosetLagrange.lean#L66))
 
 > The barycentric weight of `x_i = s omega^i` is `x_i / (n s^n)`.
 
@@ -70,7 +70,7 @@ theorem nodalWeight_rootsOfUnityCoset {s ω : F} {n : ℕ} (hω : IsPrimitiveRoo
     nodalWeight univ (rootsOfUnityCoset s ω n) i = rootsOfUnityCoset s ω n i / (n * s ^ n)
 ```
 
-`Polynomial.eval_basis_rootsOfUnityCoset` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/Polynomial/CosetLagrange.lean#L84))
+`Polynomial.eval_basis_rootsOfUnityCoset` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Polynomial/CosetLagrange.lean#L84))
 
 > Off the coset, `L_i(x) = (x^n - s^n) x_i / (n s^n (x - x_i))`.
 
@@ -82,7 +82,7 @@ theorem eval_basis_rootsOfUnityCoset {s ω x : F} {n : ℕ} (hω : IsPrimitiveRo
         (rootsOfUnityCoset s ω n i / (n * s ^ n) * (x - rootsOfUnityCoset s ω n i)⁻¹)
 ```
 
-`Polynomial.interpolate_rootsOfUnityCoset_periodic` (theorem, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/Polynomial/CosetLagrange.lean#L99))
+`Polynomial.interpolate_rootsOfUnityCoset_periodic` (theorem, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Polynomial/CosetLagrange.lean#L99))
 
 > A function of period `p` on `s mu_n`, with `n = p m`, interpolates to `Q(X^m)`.
 >
@@ -101,5 +101,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/ToMathlib/Polynomial/CosetLagrange.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/Polynomial/CosetLagrange.lean)
+- [CompPoly/ToMathlib/Polynomial/CosetLagrange.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Polynomial/CosetLagrange.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.ToMathlib.Polynomial.CosetLagrange.json)

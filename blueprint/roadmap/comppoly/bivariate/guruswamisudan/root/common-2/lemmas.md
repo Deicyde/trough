@@ -7,11 +7,11 @@ proof: formalized
 
 # Common Guruswami-Sudan Root Helper Lemmas
 
-`CompPoly.Bivariate.GuruswamiSudan.Root.Common.Lemmas`, in [CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Root.Common.Lemmas`, in [CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean), by Valerii Huhnin.
 
 > Reusable proof facts for bounded bivariate root backends.
 
-`CompPoly.array_mem_eraseDups_fold` (theorem, [line 22](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L22))
+`CompPoly.array_mem_eraseDups_fold` (theorem, [line 22](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L22))
 
 ```lean
 theorem array_mem_eraseDups_fold {α : Type*} [BEq α] [LawfulBEq α]
@@ -20,14 +20,14 @@ theorem array_mem_eraseDups_fold {α : Type*} [BEq α] [LawfulBEq α]
         a ∈ out ∨ a ∈ xs
 ```
 
-`CompPoly.array_mem_of_mem_eraseDups` (theorem, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L48))
+`CompPoly.array_mem_of_mem_eraseDups` (theorem, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L48))
 
 ```lean
 theorem array_mem_of_mem_eraseDups {α : Type*} [BEq α] [LawfulBEq α]
     {xs : Array α} {a : α} (h : a ∈ xs.eraseDups) : a ∈ xs
 ```
 
-`CompPoly.array_mem_eraseDups_fold_of_mem` (theorem, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L56))
+`CompPoly.array_mem_eraseDups_fold_of_mem` (theorem, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L56))
 
 ```lean
 theorem array_mem_eraseDups_fold_of_mem {α : Type*} [BEq α] [LawfulBEq α]
@@ -36,28 +36,28 @@ theorem array_mem_eraseDups_fold_of_mem {α : Type*} [BEq α] [LawfulBEq α]
         a ∈ List.foldl (fun out x ↦ if x ∈ out then out else out.push x) out xs
 ```
 
-`CompPoly.array_mem_eraseDups_of_mem` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L84))
+`CompPoly.array_mem_eraseDups_of_mem` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L84))
 
 ```lean
 theorem array_mem_eraseDups_of_mem {α : Type*} [BEq α] [LawfulBEq α]
     {xs : Array α} {a : α} (h : a ∈ xs) : a ∈ xs.eraseDups
 ```
 
-`CompPoly.GuruswamiSudan.degreeLt_of_degreeLtBool` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L93))
+`CompPoly.GuruswamiSudan.degreeLt_of_degreeLtBool` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L93))
 
 ```lean
 theorem degreeLt_of_degreeLtBool {F : Type*} [Zero F]
     {p : CPolynomial F} {k : Nat} (h : degreeLtBool p k = true) : degreeLt p k
 ```
 
-`CompPoly.GuruswamiSudan.degreeLtBool_of_degreeLt` (theorem, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L104))
+`CompPoly.GuruswamiSudan.degreeLtBool_of_degreeLt` (theorem, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L104))
 
 ```lean
 theorem degreeLtBool_of_degreeLt {F : Type*} [Zero F]
     {p : CPolynomial F} {k : Nat} (h : degreeLt p k) : degreeLtBool p k = true
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_truncate_coeff` (theorem, [line 117](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L117))
+`CompPoly.GuruswamiSudan.cpoly_truncate_coeff` (theorem, [line 117](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L117))
 
 ```lean
 theorem cpoly_truncate_coeff {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
@@ -65,7 +65,7 @@ theorem cpoly_truncate_coeff {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
     (CPolynomial.truncate p n).coeff i = if i < n then p.coeff i else 0
 ```
 
-`CompPoly.GuruswamiSudan.cbivar_coeff_truncateX` (theorem, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L130))
+`CompPoly.GuruswamiSudan.cbivar_coeff_truncateX` (theorem, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L130))
 
 ```lean
 theorem cbivar_coeff_truncateX {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
@@ -74,14 +74,14 @@ theorem cbivar_coeff_truncateX {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
       if i < n then CBivariate.coeff Q i j else 0
 ```
 
-`CompPoly.GuruswamiSudan.polynomialPrefix_zero` (theorem, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L156))
+`CompPoly.GuruswamiSudan.polynomialPrefix_zero` (theorem, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L156))
 
 ```lean
 theorem polynomialPrefix_zero {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
     (p : CPolynomial R) : polynomialPrefix p 0 = 0
 ```
 
-`CompPoly.GuruswamiSudan.polynomialPrefix_succ` (theorem, [line 165](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L165))
+`CompPoly.GuruswamiSudan.polynomialPrefix_succ` (theorem, [line 165](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L165))
 
 ```lean
 theorem polynomialPrefix_succ {F : Type*}
@@ -91,7 +91,7 @@ theorem polynomialPrefix_succ {F : Type*}
       extendPrefix (polynomialPrefix p depth) depth (p.coeff depth)
 ```
 
-`CompPoly.GuruswamiSudan.polynomialPrefix_eq_self_of_degreeLt` (theorem, [line 184](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L184))
+`CompPoly.GuruswamiSudan.polynomialPrefix_eq_self_of_degreeLt` (theorem, [line 184](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L184))
 
 ```lean
 theorem polynomialPrefix_eq_self_of_degreeLt {F : Type*}
@@ -100,7 +100,7 @@ theorem polynomialPrefix_eq_self_of_degreeLt {F : Type*}
     polynomialPrefix p k = p
 ```
 
-`CompPoly.GuruswamiSudan.list_foldl_add_eq_sum` (theorem, [line 200](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L200))
+`CompPoly.GuruswamiSudan.list_foldl_add_eq_sum` (theorem, [line 200](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L200))
 
 ```lean
 theorem list_foldl_add_eq_sum {R : Type*} [AddMonoid R]
@@ -108,7 +108,7 @@ theorem list_foldl_add_eq_sum {R : Type*} [AddMonoid R]
     List.foldl (fun acc i ↦ acc + f i) acc xs = acc + (xs.map f).sum
 ```
 
-`CompPoly.GuruswamiSudan.list_sum_map_range_eq_finset_sum` (theorem, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L208))
+`CompPoly.GuruswamiSudan.list_sum_map_range_eq_finset_sum` (theorem, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L208))
 
 ```lean
 theorem list_sum_map_range_eq_finset_sum {R : Type*} [AddCommMonoid R]
@@ -116,7 +116,7 @@ theorem list_sum_map_range_eq_finset_sum {R : Type*} [AddCommMonoid R]
     (List.map f (List.range n)).sum = ∑ i ∈ Finset.range n, f i
 ```
 
-`CompPoly.GuruswamiSudan.composeY_add` (theorem, [line 215](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L215))
+`CompPoly.GuruswamiSudan.composeY_add` (theorem, [line 215](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L215))
 
 ```lean
 theorem composeY_add {R : Type*}
@@ -125,7 +125,7 @@ theorem composeY_add {R : Type*}
     CBivariate.composeY (P + Q) p = CBivariate.composeY P p + CBivariate.composeY Q p
 ```
 
-`CompPoly.GuruswamiSudan.composeY_outer_monomial` (theorem, [line 222](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L222))
+`CompPoly.GuruswamiSudan.composeY_outer_monomial` (theorem, [line 222](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L222))
 
 ```lean
 theorem composeY_outer_monomial {R : Type*}
@@ -134,7 +134,7 @@ theorem composeY_outer_monomial {R : Type*}
     CBivariate.composeY (CPolynomial.monomial y c : CBivariate R) p = c * p ^ y
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_powCoeff_eq_coeff_pow` (theorem, [line 229](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L229))
+`CompPoly.GuruswamiSudan.cpoly_powCoeff_eq_coeff_pow` (theorem, [line 229](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L229))
 
 ```lean
 theorem cpoly_powCoeff_eq_coeff_pow {R : Type*}
@@ -143,7 +143,7 @@ theorem cpoly_powCoeff_eq_coeff_pow {R : Type*}
     CPolynomial.powCoeff p k n = (p ^ k : CPolynomial R).coeff n
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_mulPowCoeff_eq_coeff_mul_pow` (theorem, [line 245](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L245))
+`CompPoly.GuruswamiSudan.cpoly_mulPowCoeff_eq_coeff_mul_pow` (theorem, [line 245](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L245))
 
 ```lean
 theorem cpoly_mulPowCoeff_eq_coeff_mul_pow {R : Type*}
@@ -152,7 +152,7 @@ theorem cpoly_mulPowCoeff_eq_coeff_mul_pow {R : Type*}
     CPolynomial.mulPowCoeff a p k n = (a * (p ^ k : CPolynomial R)).coeff n
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_coeff_zero_mul` (theorem, [line 255](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L255))
+`CompPoly.GuruswamiSudan.cpoly_coeff_zero_mul` (theorem, [line 255](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L255))
 
 ```lean
 theorem cpoly_coeff_zero_mul {F : Type*}
@@ -161,7 +161,7 @@ theorem cpoly_coeff_zero_mul {F : Type*}
     (p * q).coeff 0 = p.coeff 0 * q.coeff 0
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_coeff_zero_pow` (theorem, [line 264](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L264))
+`CompPoly.GuruswamiSudan.cpoly_coeff_zero_pow` (theorem, [line 264](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L264))
 
 ```lean
 theorem cpoly_coeff_zero_pow {F : Type*}
@@ -170,7 +170,7 @@ theorem cpoly_coeff_zero_pow {F : Type*}
     ∀ n : Nat, (p ^ n : CPolynomial F).coeff 0 = p.coeff 0 ^ n
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_coeff_zero_pow_monomial_zero` (theorem, [line 281](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L281))
+`CompPoly.GuruswamiSudan.cpoly_coeff_zero_pow_monomial_zero` (theorem, [line 281](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L281))
 
 ```lean
 theorem cpoly_coeff_zero_pow_monomial_zero {F : Type*}
@@ -179,7 +179,7 @@ theorem cpoly_coeff_zero_pow_monomial_zero {F : Type*}
     ∀ n : Nat, ((CPolynomial.monomial 0 c) ^ n : CPolynomial F).coeff 0 = c ^ n
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_mulPowCoeff_monomial_zero_depth_zero` (theorem, [line 290](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L290))
+`CompPoly.GuruswamiSudan.cpoly_mulPowCoeff_monomial_zero_depth_zero` (theorem, [line 290](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L290))
 
 ```lean
 theorem cpoly_mulPowCoeff_monomial_zero_depth_zero {F : Type*}
@@ -188,7 +188,7 @@ theorem cpoly_mulPowCoeff_monomial_zero_depth_zero {F : Type*}
     CPolynomial.mulPowCoeff a (CPolynomial.monomial 0 c) y 0 = a.coeff 0 * c ^ y
 ```
 
-`CompPoly.GuruswamiSudan.composeY_coeff_zero_zipIdx_eq_range_aux` (theorem, [line 301](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L301))
+`CompPoly.GuruswamiSudan.composeY_coeff_zero_zipIdx_eq_range_aux` (theorem, [line 301](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L301))
 
 ```lean
 theorem composeY_coeff_zero_zipIdx_eq_range_aux {F : Type*}
@@ -202,7 +202,7 @@ theorem composeY_coeff_zero_zipIdx_eq_range_aux {F : Type*}
         (xs.zipIdx offset)).coeff 0
 ```
 
-`CompPoly.GuruswamiSudan.composeY_coeff_zero_fold_eq` (theorem, [line 333](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L333))
+`CompPoly.GuruswamiSudan.composeY_coeff_zero_fold_eq` (theorem, [line 333](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L333))
 
 ```lean
 theorem composeY_coeff_zero_fold_eq {F : Type*}
@@ -213,7 +213,7 @@ theorem composeY_coeff_zero_fold_eq {F : Type*}
       (Array.foldl (fun acc x ↦ acc + x.1 * p ^ x.2) 0 coeffs.zipIdx).coeff 0
 ```
 
-`CompPoly.GuruswamiSudan.composeY_coeff_zipIdx_eq_range_aux` (theorem, [line 344](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L344))
+`CompPoly.GuruswamiSudan.composeY_coeff_zipIdx_eq_range_aux` (theorem, [line 344](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L344))
 
 ```lean
 theorem composeY_coeff_zipIdx_eq_range_aux {R : Type*}
@@ -227,7 +227,7 @@ theorem composeY_coeff_zipIdx_eq_range_aux {R : Type*}
         (xs.zipIdx offset)).coeff n
 ```
 
-`CompPoly.GuruswamiSudan.composeY_coeff_fold_eq` (theorem, [line 376](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L376))
+`CompPoly.GuruswamiSudan.composeY_coeff_fold_eq` (theorem, [line 376](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L376))
 
 ```lean
 theorem composeY_coeff_fold_eq {R : Type*}
@@ -238,7 +238,7 @@ theorem composeY_coeff_fold_eq {R : Type*}
       (Array.foldl (fun acc x ↦ acc + x.1 * p ^ x.2) 0 coeffs.zipIdx).coeff n
 ```
 
-`CompPoly.GuruswamiSudan.composeYCoeff_eq_composeY_coeff` (theorem, [line 387](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L387))
+`CompPoly.GuruswamiSudan.composeYCoeff_eq_composeY_coeff` (theorem, [line 387](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L387))
 
 ```lean
 theorem composeYCoeff_eq_composeY_coeff {R : Type*}
@@ -247,7 +247,7 @@ theorem composeYCoeff_eq_composeY_coeff {R : Type*}
     CBivariate.composeYCoeff Q p depth = (CBivariate.composeY Q p).coeff depth
 ```
 
-`CompPoly.GuruswamiSudan.fold_range_coeff_add_mul_pow` (theorem, [line 395](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L395))
+`CompPoly.GuruswamiSudan.fold_range_coeff_add_mul_pow` (theorem, [line 395](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L395))
 
 ```lean
 theorem fold_range_coeff_add_mul_pow {R : Type*}
@@ -261,7 +261,7 @@ theorem fold_range_coeff_add_mul_pow {R : Type*}
             accCoeff ys
 ```
 
-`CompPoly.GuruswamiSudan.composeY_eq_range_fold` (theorem, [line 415](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L415))
+`CompPoly.GuruswamiSudan.composeY_eq_range_fold` (theorem, [line 415](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L415))
 
 ```lean
 theorem composeY_eq_range_fold {R : Type*}
@@ -272,7 +272,7 @@ theorem composeY_eq_range_fold {R : Type*}
         (fun acc y ↦ acc + Q.val.coeff y * p ^ y) 0
 ```
 
-`CompPoly.GuruswamiSudan.composeY_zero` (theorem, [line 429](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L429))
+`CompPoly.GuruswamiSudan.composeY_zero` (theorem, [line 429](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L429))
 
 ```lean
 theorem composeY_zero {R : Type*}
@@ -281,7 +281,7 @@ theorem composeY_zero {R : Type*}
     CBivariate.composeY (0 : CBivariate R) p = 0
 ```
 
-`CompPoly.GuruswamiSudan.composeY_toPoly` (theorem, [line 436](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L436))
+`CompPoly.GuruswamiSudan.composeY_toPoly` (theorem, [line 436](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L436))
 
 ```lean
 theorem composeY_toPoly {F : Type*}
@@ -290,7 +290,7 @@ theorem composeY_toPoly {F : Type*}
     (CBivariate.composeY Q p).toPoly = (CBivariate.toPoly Q).eval p.toPoly
 ```
 
-`CompPoly.GuruswamiSudan.initialCoefficientPolynomial_evalHorner_eq_composeYCoeff_monomial_zero` (theorem, [line 454](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L454))
+`CompPoly.GuruswamiSudan.initialCoefficientPolynomial_evalHorner_eq_composeYCoeff_monomial_zero` (theorem, [line 454](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L454))
 
 ```lean
 theorem initialCoefficientPolynomial_evalHorner_eq_composeYCoeff_monomial_zero
@@ -300,7 +300,7 @@ theorem initialCoefficientPolynomial_evalHorner_eq_composeYCoeff_monomial_zero
       CBivariate.composeYCoeff Q (CPolynomial.monomial 0 c) 0
 ```
 
-`CompPoly.GuruswamiSudan.composeYCoeff_monomial_zero_eq_composeY_coeff_zero` (theorem, [line 487](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L487))
+`CompPoly.GuruswamiSudan.composeYCoeff_monomial_zero_eq_composeY_coeff_zero` (theorem, [line 487](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L487))
 
 ```lean
 theorem composeYCoeff_monomial_zero_eq_composeY_coeff_zero {F : Type*}
@@ -310,7 +310,7 @@ theorem composeYCoeff_monomial_zero_eq_composeY_coeff_zero {F : Type*}
       (CBivariate.composeY Q p).coeff 0
 ```
 
-`CompPoly.GuruswamiSudan.initialCoefficientPolynomial_eval_eq_composeY_coeff_zero` (theorem, [line 496](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L496))
+`CompPoly.GuruswamiSudan.initialCoefficientPolynomial_eval_eq_composeY_coeff_zero` (theorem, [line 496](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L496))
 
 ```lean
 theorem initialCoefficientPolynomial_eval_eq_composeY_coeff_zero {F : Type*}
@@ -320,7 +320,7 @@ theorem initialCoefficientPolynomial_eval_eq_composeY_coeff_zero {F : Type*}
       (CBivariate.composeY Q p).coeff 0
 ```
 
-`CompPoly.GuruswamiSudan.rootsInFieldForNonzeroEquation_complete` (theorem, [line 505](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L505))
+`CompPoly.GuruswamiSudan.rootsInFieldForNonzeroEquation_complete` (theorem, [line 505](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L505))
 
 ```lean
 theorem rootsInFieldForNonzeroEquation_complete {F : Type*}
@@ -330,7 +330,7 @@ theorem rootsInFieldForNonzeroEquation_complete {F : Type*}
     a ∈ (rootsInFieldForNonzeroEquation fieldRoots p).toList
 ```
 
-`CompPoly.GuruswamiSudan.composeY_of_composeYHorner_eq_zero` (theorem, [line 516](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L516))
+`CompPoly.GuruswamiSudan.composeY_of_composeYHorner_eq_zero` (theorem, [line 516](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L516))
 
 ```lean
 theorem composeY_of_composeYHorner_eq_zero {F : Type*}
@@ -339,7 +339,7 @@ theorem composeY_of_composeYHorner_eq_zero {F : Type*}
     (h : CBivariate.composeYHorner Q p = 0) : CBivariate.composeY Q p = 0
 ```
 
-`CompPoly.GuruswamiSudan.composeYHorner_eq_zero_of_composeY` (theorem, [line 522](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L522))
+`CompPoly.GuruswamiSudan.composeYHorner_eq_zero_of_composeY` (theorem, [line 522](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L522))
 
 ```lean
 theorem composeYHorner_eq_zero_of_composeY {F : Type*}
@@ -348,7 +348,7 @@ theorem composeYHorner_eq_zero_of_composeY {F : Type*}
     (h : CBivariate.composeY Q p = 0) : CBivariate.composeYHorner Q p = 0
 ```
 
-`CompPoly.GuruswamiSudan.isRootYDegreeLtBool_of_root` (theorem, [line 528](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L528))
+`CompPoly.GuruswamiSudan.isRootYDegreeLtBool_of_root` (theorem, [line 528](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L528))
 
 ```lean
 theorem isRootYDegreeLtBool_of_root {F : Type*}
@@ -358,7 +358,7 @@ theorem isRootYDegreeLtBool_of_root {F : Type*}
     isRootYDegreeLtBool Q k p = true
 ```
 
-`CompPoly.GuruswamiSudan.rootsYDegreeLtFromCandidates_sound` (theorem, [line 537](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L537))
+`CompPoly.GuruswamiSudan.rootsYDegreeLtFromCandidates_sound` (theorem, [line 537](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L537))
 
 ```lean
 theorem rootsYDegreeLtFromCandidates_sound {F : Type*}
@@ -369,7 +369,7 @@ theorem rootsYDegreeLtFromCandidates_sound {F : Type*}
     degreeLt p k ∧ CBivariate.composeY Q p = 0
 ```
 
-`CompPoly.GuruswamiSudan.rootsYDegreeLtFromCandidates_eraseDups_sound` (theorem, [line 547](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L547))
+`CompPoly.GuruswamiSudan.rootsYDegreeLtFromCandidates_eraseDups_sound` (theorem, [line 547](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L547))
 
 ```lean
 theorem rootsYDegreeLtFromCandidates_eraseDups_sound {F : Type*}
@@ -380,7 +380,7 @@ theorem rootsYDegreeLtFromCandidates_eraseDups_sound {F : Type*}
     degreeLt p k ∧ CBivariate.composeY Q p = 0
 ```
 
-`CompPoly.GuruswamiSudan.rootsYDegreeLtFromCandidates_complete_of_mem` (theorem, [line 557](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L557))
+`CompPoly.GuruswamiSudan.rootsYDegreeLtFromCandidates_complete_of_mem` (theorem, [line 557](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L557))
 
 ```lean
 theorem rootsYDegreeLtFromCandidates_complete_of_mem {F : Type*}
@@ -392,7 +392,7 @@ theorem rootsYDegreeLtFromCandidates_complete_of_mem {F : Type*}
     p ∈ (rootsYDegreeLtFromCandidates candidates Q k).toList
 ```
 
-`CompPoly.GuruswamiSudan.rootsYDegreeLtFromCandidates_eraseDups_complete_of_mem` (theorem, [line 567](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L567))
+`CompPoly.GuruswamiSudan.rootsYDegreeLtFromCandidates_eraseDups_complete_of_mem` (theorem, [line 567](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean#L567))
 
 ```lean
 theorem rootsYDegreeLtFromCandidates_eraseDups_complete_of_mem {F : Type*}
@@ -410,5 +410,5 @@ theorem rootsYDegreeLtFromCandidates_eraseDups_complete_of_mem {F : Type*}
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common/Lemmas.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Root.Common.Lemmas.json)

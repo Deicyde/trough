@@ -7,7 +7,7 @@ proof: formalized
 
 # Strassen Polynomial-Matrix Product Correctness
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.StrassenCorrectness`, in [CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.StrassenCorrectness`, in [CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean), by Valerii Huhnin.
 
 > Correctness proofs for the Strassen-style polynomial-matrix products in
 > `CompPoly.LinearAlgebra.PolynomialMatrix.Operations`:
@@ -23,7 +23,7 @@ proof: formalized
 
 > ## Generic array and fold helpers
 
-`CompPoly.PolynomialMatrix.le_nextPowerOfTwoAtLeast` (theorem, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L99))
+`CompPoly.PolynomialMatrix.le_nextPowerOfTwoAtLeast` (theorem, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L99))
 
 > `nextPowerOfTwoAtLeast` is at least its target.
 
@@ -32,7 +32,7 @@ theorem le_nextPowerOfTwoAtLeast (target : Nat) :
     target ≤ nextPowerOfTwoAtLeast target
 ```
 
-`CompPoly.PolynomialMatrix.natArraySlice_getD` (theorem, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L104))
+`CompPoly.PolynomialMatrix.natArraySlice_getD` (theorem, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L104))
 
 > Entry access for `natArraySlice`.
 
@@ -42,7 +42,7 @@ theorem natArraySlice_getD (values : Array Nat) (start count j : Nat) :
       if j < count then values.getD (start + j) 0 else 0
 ```
 
-`CompPoly.PolynomialMatrix.maxNatArrays_getD` (theorem, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L110))
+`CompPoly.PolynomialMatrix.maxNatArrays_getD` (theorem, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L110))
 
 > Entry access for `maxNatArrays`.
 
@@ -53,7 +53,7 @@ theorem maxNatArrays_getD (a b : Array Nat) (j : Nat) :
 
 > ## Row access helpers
 
-`CompPoly.PolynomialMatrix.rowGet_of_size_le` (theorem, [line 121](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L121))
+`CompPoly.PolynomialMatrix.rowGet_of_size_le` (theorem, [line 121](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L121))
 
 > Reading a row past its width yields zero.
 
@@ -64,7 +64,7 @@ theorem rowGet_of_size_le [Zero F] {row : PolynomialRow F} {j : Nat}
 
 > ## `truncateX` algebra
 
-`CompPoly.PolynomialMatrix.truncateX_zero` (theorem, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L137))
+`CompPoly.PolynomialMatrix.truncateX_zero` (theorem, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L137))
 
 > Truncation of the zero polynomial.
 
@@ -73,7 +73,7 @@ theorem truncateX_zero [Semiring F] [BEq F] [LawfulBEq F] (order : Nat) :
     truncateX order (0 : CPolynomial F) = 0
 ```
 
-`CompPoly.PolynomialMatrix.truncateX_add` (theorem, [line 144](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L144))
+`CompPoly.PolynomialMatrix.truncateX_add` (theorem, [line 144](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L144))
 
 > Truncation distributes over addition.
 
@@ -83,7 +83,7 @@ theorem truncateX_add [Semiring F] [BEq F] [LawfulBEq F] (order : Nat)
     truncateX order (p + q) = truncateX order p + truncateX order q
 ```
 
-`CompPoly.PolynomialMatrix.truncateX_sub` (theorem, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L155))
+`CompPoly.PolynomialMatrix.truncateX_sub` (theorem, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L155))
 
 > Truncation distributes over subtraction.
 
@@ -93,7 +93,7 @@ theorem truncateX_sub [Ring F] [BEq F] [LawfulBEq F] (order : Nat)
     truncateX order (p - q) = truncateX order p - truncateX order q
 ```
 
-`CompPoly.PolynomialMatrix.truncateX_truncateX` (theorem, [line 166](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L166))
+`CompPoly.PolynomialMatrix.truncateX_truncateX` (theorem, [line 166](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L166))
 
 > Nested truncations keep the smaller order.
 
@@ -103,7 +103,7 @@ theorem truncateX_truncateX [Semiring F] [BEq F] [LawfulBEq F] (o o' : Nat)
     truncateX o (truncateX o' p) = truncateX (min o o') p
 ```
 
-`CompPoly.PolynomialMatrix.truncateX_sum` (theorem, [line 179](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L179))
+`CompPoly.PolynomialMatrix.truncateX_sum` (theorem, [line 179](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L179))
 
 > Truncation distributes over finite range sums.
 
@@ -114,7 +114,7 @@ theorem truncateX_sum [Semiring F] [BEq F] [LawfulBEq F] (order n : Nat)
       ∑ k ∈ Finset.range n, truncateX order (f k)
 ```
 
-`CompPoly.PolynomialMatrix.truncateX_mul_of_productCoeffCap_le` (theorem, [line 207](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L207))
+`CompPoly.PolynomialMatrix.truncateX_mul_of_productCoeffCap_le` (theorem, [line 207](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L207))
 
 > A product is unchanged by truncation past its coefficient cap.
 
@@ -126,7 +126,7 @@ theorem truncateX_mul_of_productCoeffCap_le [Semiring F] [BEq F] [LawfulBEq F]
 
 > ## `ofFn` access toolkit
 
-`CompPoly.PolynomialMatrix.ofFn_size` (theorem, [line 226](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L226))
+`CompPoly.PolynomialMatrix.ofFn_size` (theorem, [line 226](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L226))
 
 > Row count of `ofFn`.
 
@@ -135,7 +135,7 @@ theorem ofFn_size [Zero F] (rows width : Nat) (entry : Nat → Nat → CPolynomi
     (ofFn rows width entry).size = rows
 ```
 
-`CompPoly.PolynomialMatrix.getD_ofFn` (theorem, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L237))
+`CompPoly.PolynomialMatrix.getD_ofFn` (theorem, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L237))
 
 > Row access for `ofFn` with zero defaults.
 
@@ -146,7 +146,7 @@ theorem getD_ofFn [Zero F] (rows width : Nat) (entry : Nat → Nat → CPolynomi
       if i < rows then ((List.range width).map (entry i)).toArray else #[]
 ```
 
-`CompPoly.PolynomialMatrix.rowGet_ofFn` (theorem, [line 244](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L244))
+`CompPoly.PolynomialMatrix.rowGet_ofFn` (theorem, [line 244](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L244))
 
 > Entry access for `ofFn` with zero defaults.
 
@@ -157,7 +157,7 @@ theorem rowGet_ofFn [Zero F] (rows width : Nat) (entry : Nat → Nat → CPolyno
       if i < rows ∧ j < width then entry i j else 0
 ```
 
-`CompPoly.PolynomialMatrix.MatrixWidth_ofFn` (theorem, [line 264](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L264))
+`CompPoly.PolynomialMatrix.MatrixWidth_ofFn` (theorem, [line 264](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L264))
 
 > Width of `ofFn`.
 
@@ -167,7 +167,7 @@ theorem MatrixWidth_ofFn [Zero F] (rows width : Nat)
     MatrixWidth (ofFn rows width entry) = if rows = 0 then 0 else width
 ```
 
-`CompPoly.PolynomialMatrix.MatrixWidth_ofFn_square` (theorem, [line 276](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L276))
+`CompPoly.PolynomialMatrix.MatrixWidth_ofFn_square` (theorem, [line 276](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L276))
 
 > Width of a square `ofFn`.
 
@@ -177,7 +177,7 @@ theorem MatrixWidth_ofFn_square [Zero F] (n : Nat)
     MatrixWidth (ofFn n n entry) = n
 ```
 
-`CompPoly.PolynomialMatrix.ofFn_congr` (theorem, [line 283](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L283))
+`CompPoly.PolynomialMatrix.ofFn_congr` (theorem, [line 283](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L283))
 
 > Two `ofFn` matrices with entrywise-equal in-range entries are equal.
 
@@ -189,7 +189,7 @@ theorem ofFn_congr [Zero F] {rows width : Nat} {f g : Nat → Nat → CPolynomia
 
 > ## Naive product semantics
 
-`CompPoly.PolynomialMatrix.rowMulMatrixWith_size` (theorem, [line 304](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L304))
+`CompPoly.PolynomialMatrix.rowMulMatrixWith_size` (theorem, [line 304](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L304))
 
 > Width of a naive row-by-matrix product.
 
@@ -200,7 +200,7 @@ theorem rowMulMatrixWith_size [Semiring F] [BEq F] [LawfulBEq F]
     (rowMulMatrixWith mulCtx row M).size = MatrixWidth M
 ```
 
-`CompPoly.PolynomialMatrix.rowGet_rowMulMatrixWith` (theorem, [line 311](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L311))
+`CompPoly.PolynomialMatrix.rowGet_rowMulMatrixWith` (theorem, [line 311](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L311))
 
 > Entry semantics of the naive row-by-matrix product.
 
@@ -212,7 +212,7 @@ theorem rowGet_rowMulMatrixWith [Semiring F] [BEq F] [LawfulBEq F]
       ∑ k ∈ Finset.range row.size, rowGet row k * rowGet (M.getD k #[]) j
 ```
 
-`CompPoly.PolynomialMatrix.rowGet_rowMulMatrixWith_of_width_le` (theorem, [line 320](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L320))
+`CompPoly.PolynomialMatrix.rowGet_rowMulMatrixWith_of_width_le` (theorem, [line 320](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L320))
 
 > The naive row-by-matrix product is zero past the matrix width.
 
@@ -223,7 +223,7 @@ theorem rowGet_rowMulMatrixWith_of_width_le [Semiring F] [BEq F] [LawfulBEq F]
     rowGet (rowMulMatrixWith mulCtx row M) j = 0
 ```
 
-`CompPoly.PolynomialMatrix.mulWith_eq_ofFn` (theorem, [line 350](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L350))
+`CompPoly.PolynomialMatrix.mulWith_eq_ofFn` (theorem, [line 350](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L350))
 
 > The naive matrix product as an `ofFn` matrix of convolution sums.
 
@@ -236,7 +236,7 @@ theorem mulWith_eq_ofFn [Semiring F] [BEq F] [LawfulBEq F]
           rowGet (A.getD i #[]) k * rowGet (B.getD k #[]) j)
 ```
 
-`CompPoly.PolynomialMatrix.mulWith_size` (theorem, [line 364](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L364))
+`CompPoly.PolynomialMatrix.mulWith_size` (theorem, [line 364](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L364))
 
 > Row count of the naive matrix product.
 
@@ -246,7 +246,7 @@ theorem mulWith_size [Semiring F] [BEq F] [LawfulBEq F]
     (mulWith mulCtx A B).size = A.size
 ```
 
-`CompPoly.PolynomialMatrix.mulWith_getD` (theorem, [line 370](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L370))
+`CompPoly.PolynomialMatrix.mulWith_getD` (theorem, [line 370](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L370))
 
 > Rows of the naive matrix product.
 
@@ -257,7 +257,7 @@ theorem mulWith_getD [Semiring F] [BEq F] [LawfulBEq F]
     (mulWith mulCtx A B).getD i #[] = rowMulMatrixWith mulCtx (A.getD i #[]) B
 ```
 
-`CompPoly.PolynomialMatrix.matrixRows_mulWith` (theorem, [line 377](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L377))
+`CompPoly.PolynomialMatrix.matrixRows_mulWith` (theorem, [line 377](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L377))
 
 > Row list of the naive matrix product.
 
@@ -270,7 +270,7 @@ theorem matrixRows_mulWith [Semiring F] [BEq F] [LawfulBEq F]
 
 > ## Bounded product correctness
 
-`CompPoly.PolynomialMatrix.rowMulMatrixBoundedWith_eq_rowMulMatrixWith` (theorem, [line 386](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L386))
+`CompPoly.PolynomialMatrix.rowMulMatrixBoundedWith_eq_rowMulMatrixWith` (theorem, [line 386](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L386))
 
 > The degree-capped row product equals the naive row product.
 
@@ -281,7 +281,7 @@ theorem rowMulMatrixBoundedWith_eq_rowMulMatrixWith [Semiring F] [BEq F] [Lawful
       rowMulMatrixWith lowCtx.mulContext row M
 ```
 
-`CompPoly.PolynomialMatrix.mulBoundedWith_eq_mulWith` (theorem, [line 402](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L402))
+`CompPoly.PolynomialMatrix.mulBoundedWith_eq_mulWith` (theorem, [line 402](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L402))
 
 > The degree-capped matrix product equals the naive matrix product.
 
@@ -293,7 +293,7 @@ theorem mulBoundedWith_eq_mulWith [Semiring F] [BEq F] [LawfulBEq F]
 
 > ## Column-truncated naive product semantics
 
-`CompPoly.PolynomialMatrix.rowGet_rowTruncateColumns` (theorem, [line 412](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L412))
+`CompPoly.PolynomialMatrix.rowGet_rowTruncateColumns` (theorem, [line 412](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L412))
 
 > Entry access for column truncation of a row.
 
@@ -304,7 +304,7 @@ theorem rowGet_rowTruncateColumns [Semiring F] [BEq F] [LawfulBEq F]
       truncateX (orders.getD j 0) (rowGet row j)
 ```
 
-`CompPoly.PolynomialMatrix.truncateColumns_size` (theorem, [line 423](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L423))
+`CompPoly.PolynomialMatrix.truncateColumns_size` (theorem, [line 423](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L423))
 
 > Row count of a column-truncated matrix.
 
@@ -314,7 +314,7 @@ theorem truncateColumns_size [Semiring F] [BEq F] [LawfulBEq F]
     (truncateColumns orders M).size = M.size
 ```
 
-`CompPoly.PolynomialMatrix.truncateColumns_getD` (theorem, [line 429](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L429))
+`CompPoly.PolynomialMatrix.truncateColumns_getD` (theorem, [line 429](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L429))
 
 > Rows of a column-truncated matrix.
 
@@ -325,7 +325,7 @@ theorem truncateColumns_getD [Semiring F] [BEq F] [LawfulBEq F]
       rowTruncateColumns orders (M.getD i #[])
 ```
 
-`CompPoly.PolynomialMatrix.rowMulMatrixTruncColumnWith_eq` (theorem, [line 436](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L436))
+`CompPoly.PolynomialMatrix.rowMulMatrixTruncColumnWith_eq` (theorem, [line 436](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L436))
 
 > The truncated row product is the truncation of the naive row product.
 
@@ -337,7 +337,7 @@ theorem rowMulMatrixTruncColumnWith_eq [Semiring F] [BEq F] [LawfulBEq F]
       rowTruncateColumns orders (rowMulMatrixWith lowCtx.mulContext row M)
 ```
 
-`CompPoly.PolynomialMatrix.mulTruncColumnWith_eq` (theorem, [line 450](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L450))
+`CompPoly.PolynomialMatrix.mulTruncColumnWith_eq` (theorem, [line 450](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L450))
 
 > The column-truncated product is the truncation of the naive product.
 
@@ -350,7 +350,7 @@ theorem mulTruncColumnWith_eq [Semiring F] [BEq F] [LawfulBEq F]
 
 > ## Structural `ofFn` rewrites for the block combinators
 
-`CompPoly.PolynomialMatrix.add_ofFn` (theorem, [line 462](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L462))
+`CompPoly.PolynomialMatrix.add_ofFn` (theorem, [line 462](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L462))
 
 > Pointwise addition of equally shaped `ofFn` matrices.
 
@@ -361,7 +361,7 @@ theorem add_ofFn [Semiring F] [BEq F] [LawfulBEq F] (rows width : Nat)
       ofFn rows width (fun i j ↦ f i j + g i j)
 ```
 
-`CompPoly.PolynomialMatrix.sub_ofFn` (theorem, [line 474](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L474))
+`CompPoly.PolynomialMatrix.sub_ofFn` (theorem, [line 474](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L474))
 
 > Pointwise subtraction of equally shaped `ofFn` matrices.
 
@@ -372,7 +372,7 @@ theorem sub_ofFn [Ring F] [BEq F] [LawfulBEq F] (rows width : Nat)
       ofFn rows width (fun i j ↦ f i j - g i j)
 ```
 
-`CompPoly.PolynomialMatrix.mulWith_ofFn_ofFn` (theorem, [line 486](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L486))
+`CompPoly.PolynomialMatrix.mulWith_ofFn_ofFn` (theorem, [line 486](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L486))
 
 > The naive product of square `ofFn` matrices.
 
@@ -384,7 +384,7 @@ theorem mulWith_ofFn_ofFn [Semiring F] [BEq F] [LawfulBEq F]
       ofFn n n (fun i j ↦ ∑ k ∈ Finset.range n, f i k * g k j)
 ```
 
-`CompPoly.PolynomialMatrix.truncateColumns_ofFn` (theorem, [line 499](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L499))
+`CompPoly.PolynomialMatrix.truncateColumns_ofFn` (theorem, [line 499](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L499))
 
 > Column truncation of an `ofFn` matrix.
 
@@ -401,7 +401,7 @@ theorem truncateColumns_ofFn [Semiring F] [BEq F] [LawfulBEq F] (orders : Array 
 
 > ## Full Strassen correctness
 
-`CompPoly.PolynomialMatrix.mulStrassenWithFuel_eq_mulWith` (theorem, [line 619](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L619))
+`CompPoly.PolynomialMatrix.mulStrassenWithFuel_eq_mulWith` (theorem, [line 619](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L619))
 
 > The fuel-bounded Strassen product equals the naive matrix product.
 
@@ -411,7 +411,7 @@ theorem mulStrassenWithFuel_eq_mulWith [Ring F] [BEq F] [LawfulBEq F]
     mulStrassenWithFuel lowCtx leafCutoff fuel A B = mulWith lowCtx.mulContext A B
 ```
 
-`CompPoly.PolynomialMatrix.mulStrassenWith_eq_mulWith` (theorem, [line 671](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L671))
+`CompPoly.PolynomialMatrix.mulStrassenWith_eq_mulWith` (theorem, [line 671](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L671))
 
 > The Strassen product equals the naive matrix product.
 
@@ -421,7 +421,7 @@ theorem mulStrassenWith_eq_mulWith [Ring F] [BEq F] [LawfulBEq F]
     mulStrassenWith lowCtx leafCutoff A B = mulWith lowCtx.mulContext A B
 ```
 
-`CompPoly.PolynomialMatrix.mulStrassenWith_size` (theorem, [line 677](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L677))
+`CompPoly.PolynomialMatrix.mulStrassenWith_size` (theorem, [line 677](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L677))
 
 > Row count of the Strassen product.
 
@@ -431,7 +431,7 @@ theorem mulStrassenWith_size [Ring F] [BEq F] [LawfulBEq F]
     (mulStrassenWith lowCtx leafCutoff A B).size = A.size
 ```
 
-`CompPoly.PolynomialMatrix.mulStrassenWith_getD` (theorem, [line 683](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L683))
+`CompPoly.PolynomialMatrix.mulStrassenWith_getD` (theorem, [line 683](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L683))
 
 > Rows of the Strassen product are the naive row-by-matrix products.
 
@@ -443,7 +443,7 @@ theorem mulStrassenWith_getD [Ring F] [BEq F] [LawfulBEq F]
       rowMulMatrixWith lowCtx.mulContext (A.getD i #[]) B
 ```
 
-`CompPoly.PolynomialMatrix.matrixRows_mulStrassenWith` (theorem, [line 691](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L691))
+`CompPoly.PolynomialMatrix.matrixRows_mulStrassenWith` (theorem, [line 691](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L691))
 
 > Row list of the Strassen product.
 
@@ -456,7 +456,7 @@ theorem matrixRows_mulStrassenWith [Ring F] [BEq F] [LawfulBEq F]
 
 > ## Column-truncated Strassen correctness
 
-`CompPoly.PolynomialMatrix.mulTruncColumnStrassenWithFuel_eq_truncateColumns` (theorem, [line 701](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L701))
+`CompPoly.PolynomialMatrix.mulTruncColumnStrassenWithFuel_eq_truncateColumns` (theorem, [line 701](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L701))
 
 > The fuel-bounded column-truncated Strassen product equals the
 > column-truncated naive matrix product.
@@ -469,7 +469,7 @@ theorem mulTruncColumnStrassenWithFuel_eq_truncateColumns [Ring F] [BEq F] [Lawf
       truncateColumns orders (mulWith lowCtx.mulContext A B)
 ```
 
-`CompPoly.PolynomialMatrix.mulTruncColumnStrassenWith_eq_truncateColumns` (theorem, [line 788](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L788))
+`CompPoly.PolynomialMatrix.mulTruncColumnStrassenWith_eq_truncateColumns` (theorem, [line 788](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L788))
 
 > The column-truncated Strassen product equals the column-truncated naive
 > matrix product.
@@ -482,7 +482,7 @@ theorem mulTruncColumnStrassenWith_eq_truncateColumns [Ring F] [BEq F] [LawfulBE
       truncateColumns orders (mulWith lowCtx.mulContext A B)
 ```
 
-`CompPoly.PolynomialMatrix.mulTruncColumnStrassenWith_size` (theorem, [line 797](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L797))
+`CompPoly.PolynomialMatrix.mulTruncColumnStrassenWith_size` (theorem, [line 797](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L797))
 
 > Row count of the column-truncated Strassen product.
 
@@ -493,7 +493,7 @@ theorem mulTruncColumnStrassenWith_size [Ring F] [BEq F] [LawfulBEq F]
     (mulTruncColumnStrassenWith lowCtx leafCutoff orders A B).size = A.size
 ```
 
-`CompPoly.PolynomialMatrix.mulTruncColumnStrassenWith_entry` (theorem, [line 806](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L806))
+`CompPoly.PolynomialMatrix.mulTruncColumnStrassenWith_entry` (theorem, [line 806](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean#L806))
 
 > Entries of the column-truncated Strassen product are the order-truncated
 > naive product entries.
@@ -513,5 +513,5 @@ theorem mulTruncColumnStrassenWith_entry [Ring F] [BEq F] [LawfulBEq F]
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/StrassenCorrectness.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.StrassenCorrectness.json)

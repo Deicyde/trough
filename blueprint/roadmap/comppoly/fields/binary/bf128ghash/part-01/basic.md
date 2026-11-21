@@ -7,7 +7,7 @@ proof: formalized
 
 # BinaryField128Ghash
 
-`CompPoly.Fields.Binary.BF128Ghash.Basic`, in [CompPoly/Fields/Binary/BF128Ghash/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF128Ghash/Basic.lean), by Chung Thai Nguyen, Quang Dao.
+`CompPoly.Fields.Binary.BF128Ghash.Basic`, in [CompPoly/Fields/Binary/BF128Ghash/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF128Ghash/Basic.lean), by Chung Thai Nguyen, Quang Dao.
 
 > Define `GF(2^128)` as a single field extension over `GF(2)` using the GHASH polynomial
 > from AES-GCM: `P(X) = X^128 + X^7 + X^2 + X + 1`.
@@ -39,7 +39,7 @@ proof: formalized
 > * [Rabin80] Michael O. Rabin. Probabilistic Algorithms in Finite Fields.
 >   SIAM Journal on Computing, 9(2):273-280, 1980. https://doi.org/10.1137/0209024
 
-`BF128Ghash.irreducible_of_rabin_128_passed_over_GF2` (lemma, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L64))
+`BF128Ghash.irreducible_of_rabin_128_passed_over_GF2` (lemma, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L64))
 
 > **Rabin's Irreducibility Test (Specialized for Degree 128)**
 >
@@ -59,7 +59,7 @@ lemma irreducible_of_rabin_128_passed_over_GF2 (P : Polynomial (ZMod 2))
     Irreducible P
 ```
 
-`BF128Ghash.ghashPoly_irreducible` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L128))
+`BF128Ghash.ghashPoly_irreducible` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L128))
 
 > `ghashPoly` is irreducible, using Rabin's Irreducibility Test:
 > - `X_pow_2_pow_128_eq`: X^(2^128) = X (mod ghashPoly)
@@ -69,7 +69,7 @@ lemma irreducible_of_rabin_128_passed_over_GF2 (P : Polynomial (ZMod 2))
 theorem ghashPoly_irreducible : Irreducible ghashPoly
 ```
 
-`BF128Ghash.BF128Ghash` (abbreviation, [line 152](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L152))
+`BF128Ghash.BF128Ghash` (abbreviation, [line 152](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L152))
 
 > GF(2^128) as the quotient field GF(2)[X]/(P(X)) where P is the GHASH polynomial.
 
@@ -77,7 +77,7 @@ theorem ghashPoly_irreducible : Irreducible ghashPoly
 abbrev BF128Ghash : Type
 ```
 
-`BF128Ghash.instFieldBF128Ghash` (instance, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L155))
+`BF128Ghash.instFieldBF128Ghash` (instance, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L155))
 
 > BF128Ghash is a field.
 
@@ -85,7 +85,7 @@ abbrev BF128Ghash : Type
 instance instFieldBF128Ghash : Field BF128Ghash
 ```
 
-`BF128Ghash.instCommRingBF128Ghash` (instance, [line 158](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L158))
+`BF128Ghash.instCommRingBF128Ghash` (instance, [line 158](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L158))
 
 > BF128Ghash is a commutative ring.
 
@@ -93,7 +93,7 @@ instance instFieldBF128Ghash : Field BF128Ghash
 instance instCommRingBF128Ghash : CommRing BF128Ghash
 ```
 
-`BF128Ghash.instNontrivialBF128Ghash` (instance, [line 161](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L161))
+`BF128Ghash.instNontrivialBF128Ghash` (instance, [line 161](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L161))
 
 > BF128Ghash is nontrivial.
 
@@ -101,7 +101,7 @@ instance instCommRingBF128Ghash : CommRing BF128Ghash
 instance instNontrivialBF128Ghash : Nontrivial BF128Ghash
 ```
 
-`BF128Ghash.ofGF2` (definition, [line 175](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L175))
+`BF128Ghash.ofGF2` (definition, [line 175](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L175))
 
 > The canonical embedding of GF(2) into BF128Ghash.
 
@@ -109,7 +109,7 @@ instance instNontrivialBF128Ghash : Nontrivial BF128Ghash
 def ofGF2 : ZMod 2 →+* BF128Ghash
 ```
 
-`BF128Ghash.root` (definition, [line 178](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L178))
+`BF128Ghash.root` (definition, [line 178](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L178))
 
 > The generator of the field (root of the GHASH polynomial).
 
@@ -117,7 +117,7 @@ def ofGF2 : ZMod 2 →+* BF128Ghash
 def root : BF128Ghash
 ```
 
-`BF128Ghash.root_satisfies_poly` (theorem, [line 182](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L182))
+`BF128Ghash.root_satisfies_poly` (theorem, [line 182](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L182))
 
 > The root satisfies the GHASH polynomial equation:
 > root^128 + root^7 + root^2 + root + 1 = 0
@@ -126,7 +126,7 @@ def root : BF128Ghash
 theorem root_satisfies_poly : root^128 + root^7 + root^2 + root + 1 = 0
 ```
 
-`BF128Ghash.BF128Ghash_card` (theorem, [line 205](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L205))
+`BF128Ghash.BF128Ghash_card` (theorem, [line 205](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF128Ghash/Basic.lean#L205))
 
 > The cardinality of BF128Ghash is 2^128.
 
@@ -144,5 +144,5 @@ theorem BF128Ghash_card : Fintype.card BF128Ghash = 2^128
 
 ## Sources
 
-- [CompPoly/Fields/Binary/BF128Ghash/Basic.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF128Ghash/Basic.lean)
+- [CompPoly/Fields/Binary/BF128Ghash/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF128Ghash/Basic.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Fields.Binary.BF128Ghash.Basic.json)

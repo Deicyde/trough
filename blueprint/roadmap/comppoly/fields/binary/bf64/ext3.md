@@ -7,7 +7,7 @@ proof: formalized
 
 # The degree-3 extension of `GF(2^64)`
 
-`CompPoly.Fields.Binary.BF64.Ext3`, in [CompPoly/Fields/Binary/BF64/Ext3.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean), by Nicolas Schleicher.
+`CompPoly.Fields.Binary.BF64.Ext3`, in [CompPoly/Fields/Binary/BF64/Ext3.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean), by Nicolas Schleicher.
 
 > ```text
 > GF(2^64)[y] / (y^3 + y + 1),   giving GF(2^192)
@@ -44,7 +44,7 @@ proof: formalized
 
 > ## The defining cubic
 
-`BF64.ext3Poly` (definition, [line 58](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L58))
+`BF64.ext3Poly` (definition, [line 58](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L58))
 
 > The extension modulus `y^3 + y + 1` over `GF(2^64)`.
 
@@ -52,7 +52,7 @@ proof: formalized
 noncomputable def ext3Poly : Polynomial BF64
 ```
 
-`BF64.ext3Poly_natDegree` (theorem, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L61))
+`BF64.ext3Poly_natDegree` (theorem, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L61))
 
 > The cubic has degree `3`.
 
@@ -60,7 +60,7 @@ noncomputable def ext3Poly : Polynomial BF64
 theorem ext3Poly_natDegree : ext3Poly.natDegree = 3
 ```
 
-`BF64.ext3Poly_degree` (theorem, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L65))
+`BF64.ext3Poly_degree` (theorem, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L65))
 
 > `ext3Poly_natDegree` in `degree` form.
 
@@ -68,7 +68,7 @@ theorem ext3Poly_natDegree : ext3Poly.natDegree = 3
 theorem ext3Poly_degree : ext3Poly.degree = (3 : ℕ)
 ```
 
-`BF64.ext3Poly_monic` (theorem, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L69))
+`BF64.ext3Poly_monic` (theorem, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L69))
 
 > The cubic is monic, as the extension framework requires.
 
@@ -82,7 +82,7 @@ theorem ext3Poly_monic : ext3Poly.Monic
 > `a^3 = a + 1`, from which `a^7 = 1`. The multiplicative group of `GF(2^64)` has order
 > `2^64 - 1`, which is coprime to `7`, so `a = 1` — and `1` is not a root.
 
-`BF64.ext3Poly_no_root` (theorem, [line 101](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L101))
+`BF64.ext3Poly_no_root` (theorem, [line 101](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L101))
 
 > The cubic has no root in `GF(2^64)`.
 >
@@ -94,7 +94,7 @@ theorem ext3Poly_monic : ext3Poly.Monic
 theorem ext3Poly_no_root (a : BF64) : ¬ext3Poly.IsRoot a
 ```
 
-`BF64.ext3Poly_irreducible` (theorem, [line 127](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L127))
+`BF64.ext3Poly_irreducible` (theorem, [line 127](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L127))
 
 > The cubic `y^3 + y + 1` is irreducible over `GF(2^64)`.
 
@@ -104,7 +104,7 @@ theorem ext3Poly_irreducible : Irreducible ext3Poly
 
 > ## The extension field
 
-`BF64.ext3Params` (definition, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L137))
+`BF64.ext3Params` (definition, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L137))
 
 > Parameters of `GF(2^64)[y] / (y^3 + y + 1)`: degree three, with lower coefficients
 > `(1, 1, 0)` encoding `1 + y` below the leading `y^3`.
@@ -113,7 +113,7 @@ theorem ext3Poly_irreducible : Irreducible ext3Poly
 def ext3Params : ExtensionParams BF64
 ```
 
-`BF64.ext3Params_d` (theorem, [line 147](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L147))
+`BF64.ext3Params_d` (theorem, [line 147](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L147))
 
 > The extension has degree three.
 
@@ -121,7 +121,7 @@ def ext3Params : ExtensionParams BF64
 theorem ext3Params_d : ext3Params.d = 3
 ```
 
-`BF64.ext3Params_q` (theorem, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L149))
+`BF64.ext3Params_q` (theorem, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L149))
 
 > The base field has `2 ^ 64` elements.
 
@@ -129,7 +129,7 @@ theorem ext3Params_d : ext3Params.d = 3
 theorem ext3Params_q : ext3Params.q = 2 ^ 64
 ```
 
-`BF64.ext3Params_poly` (theorem, [line 152](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L152))
+`BF64.ext3Params_poly` (theorem, [line 152](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L152))
 
 > The parameters' defining polynomial is the cubic.
 
@@ -137,7 +137,7 @@ theorem ext3Params_q : ext3Params.q = 2 ^ 64
 theorem ext3Params_poly : ext3Params.poly = ext3Poly
 ```
 
-`BF64.Ext3` (abbreviation, [line 172](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L172))
+`BF64.Ext3` (abbreviation, [line 172](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L172))
 
 > `GF(2^192)`, the degree-three extension `GF(2^64)[y] / (y^3 + y + 1)`.
 >
@@ -147,7 +147,7 @@ theorem ext3Params_poly : ext3Params.poly = ext3Poly
 abbrev Ext3 : Type
 ```
 
-`BF64.ext3Gen` (definition, [line 179](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L179))
+`BF64.ext3Gen` (definition, [line 179](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L179))
 
 > The adjoined root `y` of `y^3 + y + 1`, as an element of `Ext3`.
 
@@ -155,7 +155,7 @@ abbrev Ext3 : Type
 def ext3Gen : Ext3
 ```
 
-`BF64.ext3Gen_eq_gen` (theorem, [line 187](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L187))
+`BF64.ext3Gen_eq_gen` (theorem, [line 187](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L187))
 
 > `ext3Gen` is the framework's `Ext.gen`.
 >
@@ -166,7 +166,7 @@ def ext3Gen : Ext3
 theorem ext3Gen_eq_gen : ext3Gen = Ext.gen
 ```
 
-`BF64.toQuot_ext3Gen` (theorem, [line 190](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L190))
+`BF64.toQuot_ext3Gen` (theorem, [line 190](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L190))
 
 > `ext3Gen` maps to the adjoined root of the specification.
 
@@ -174,7 +174,7 @@ theorem ext3Gen_eq_gen : ext3Gen = Ext.gen
 theorem toQuot_ext3Gen : Ext.toQuot ext3Gen = Ext.rt ext3Params
 ```
 
-`BF64.aeval_ext3Gen` (theorem, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L193))
+`BF64.aeval_ext3Gen` (theorem, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L193))
 
 > `ext3Gen` is a root of `y^3 + y + 1`, in the form `aeval` expects.
 
@@ -182,7 +182,7 @@ theorem toQuot_ext3Gen : Ext.toQuot ext3Gen = Ext.rt ext3Params
 theorem aeval_ext3Gen : aeval ext3Gen ext3Params.poly = 0
 ```
 
-`BF64.ext3Gen_pow_three` (theorem, [line 196](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L196))
+`BF64.ext3Gen_pow_three` (theorem, [line 196](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L196))
 
 > **The defining relation**: the adjoined root satisfies `y^3 = y + 1`.
 
@@ -190,7 +190,7 @@ theorem aeval_ext3Gen : aeval ext3Gen ext3Params.poly = 0
 theorem ext3Gen_pow_three : ext3Gen ^ 3 = ext3Gen + 1
 ```
 
-`BF64.nat_card_ext3` (theorem, [line 203](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L203))
+`BF64.nat_card_ext3` (theorem, [line 203](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L203))
 
 > `Ext3` has `2 ^ 192` elements, independently of an enumeration.
 
@@ -198,7 +198,7 @@ theorem ext3Gen_pow_three : ext3Gen ^ 3 = ext3Gen + 1
 theorem nat_card_ext3 : Nat.card Ext3 = 2 ^ 192
 ```
 
-`BF64.card_ext3` (theorem, [line 209](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean#L209))
+`BF64.card_ext3` (theorem, [line 209](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean#L209))
 
 > Any enumeration of `Ext3` has `2 ^ 192` elements.
 
@@ -213,5 +213,5 @@ theorem card_ext3 [Fintype Ext3] : Fintype.card Ext3 = 2 ^ 192
 
 ## Sources
 
-- [CompPoly/Fields/Binary/BF64/Ext3.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/Ext3.lean)
+- [CompPoly/Fields/Binary/BF64/Ext3.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/Ext3.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Fields.Binary.BF64.Ext3.json)

@@ -7,14 +7,14 @@ proof: formalized
 
 # Fast secp256k1 Fields
 
-`CompPoly.Fields.Secp256k1.Fast`, in [CompPoly/Fields/Secp256k1/Fast.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Secp256k1/Fast.lean), by Georgios Raikos.
+`CompPoly.Fields.Secp256k1.Fast`, in [CompPoly/Fields/Secp256k1/Fast.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Secp256k1/Fast.lean), by Georgios Raikos.
 
 > Native eight-limb Montgomery implementations of the secp256k1 scalar and base fields
 > (`CompPoly.Fields.Montgomery.Native64x8Field`). This module supplies the constants.
 
 > ## Scalar field
 
-`Secp256k1.Fast.instScalarGcdData` (instance, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Secp256k1/Fast.lean#L29))
+`Secp256k1.Fast.instScalarGcdData` (instance, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Secp256k1/Fast.lean#L29))
 
 > Divstep schedule of the binary-GCD inverse candidate over the scalar field.
 
@@ -22,7 +22,7 @@ proof: formalized
 instance instScalarGcdData : GcdData Secp256k1.scalarFieldSize
 ```
 
-`Secp256k1.Fast.instScalarMont64x8Field` (instance, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Secp256k1/Fast.lean#L37))
+`Secp256k1.Fast.instScalarMont64x8Field` (instance, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Secp256k1/Fast.lean#L37))
 
 > The per-field data realizing the secp256k1 scalar field as a fast eight-limb Montgomery
 > field.
@@ -31,7 +31,7 @@ instance instScalarGcdData : GcdData Secp256k1.scalarFieldSize
 instance instScalarMont64x8Field : Mont64x8Field Secp256k1.scalarFieldSize
 ```
 
-`Secp256k1.Fast.ScalarField` (abbreviation, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Secp256k1/Fast.lean#L50))
+`Secp256k1.Fast.ScalarField` (abbreviation, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Secp256k1/Fast.lean#L50))
 
 > The eight-limb secp256k1 scalar field carrier, stored as a Montgomery residue.
 
@@ -39,7 +39,7 @@ instance instScalarMont64x8Field : Mont64x8Field Secp256k1.scalarFieldSize
 abbrev ScalarField : Type
 ```
 
-`Secp256k1.Fast.ofScalarField` (definition, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Secp256k1/Fast.lean#L54))
+`Secp256k1.Fast.ofScalarField` (definition, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Secp256k1/Fast.lean#L54))
 
 > Convert from the canonical `Secp256k1.ScalarField` into fast Montgomery form.
 
@@ -47,7 +47,7 @@ abbrev ScalarField : Type
 def ofScalarField (x : Secp256k1.ScalarField) : ScalarField
 ```
 
-`Secp256k1.Fast.scalarRingEquiv` (definition, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Secp256k1/Fast.lean#L59))
+`Secp256k1.Fast.scalarRingEquiv` (definition, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Secp256k1/Fast.lean#L59))
 
 > Ring equivalence between the eight-limb representation and the canonical
 > `Secp256k1.ScalarField`.
@@ -58,7 +58,7 @@ def scalarRingEquiv : ScalarField ≃+* Secp256k1.ScalarField
 
 > ## Base field
 
-`Secp256k1.Fast.instBaseGcdData` (instance, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Secp256k1/Fast.lean#L65))
+`Secp256k1.Fast.instBaseGcdData` (instance, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Secp256k1/Fast.lean#L65))
 
 > Divstep schedule of the binary-GCD inverse candidate over the base field.
 
@@ -66,7 +66,7 @@ def scalarRingEquiv : ScalarField ≃+* Secp256k1.ScalarField
 instance instBaseGcdData : GcdData Secp256k1.baseFieldSize
 ```
 
-`Secp256k1.Fast.instBaseMont64x8Field` (instance, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Secp256k1/Fast.lean#L71))
+`Secp256k1.Fast.instBaseMont64x8Field` (instance, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Secp256k1/Fast.lean#L71))
 
 > The per-field data realizing the secp256k1 base field as a fast eight-limb Montgomery
 > field.
@@ -75,7 +75,7 @@ instance instBaseGcdData : GcdData Secp256k1.baseFieldSize
 instance instBaseMont64x8Field : Mont64x8Field Secp256k1.baseFieldSize
 ```
 
-`Secp256k1.Fast.BaseField` (abbreviation, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Secp256k1/Fast.lean#L81))
+`Secp256k1.Fast.BaseField` (abbreviation, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Secp256k1/Fast.lean#L81))
 
 > The eight-limb secp256k1 base field carrier, stored as a Montgomery residue.
 
@@ -83,7 +83,7 @@ instance instBaseMont64x8Field : Mont64x8Field Secp256k1.baseFieldSize
 abbrev BaseField : Type
 ```
 
-`Secp256k1.Fast.ofBaseField` (definition, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Secp256k1/Fast.lean#L85))
+`Secp256k1.Fast.ofBaseField` (definition, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Secp256k1/Fast.lean#L85))
 
 > Convert from the canonical `Secp256k1.BaseField` into fast Montgomery form.
 
@@ -91,7 +91,7 @@ abbrev BaseField : Type
 def ofBaseField (x : Secp256k1.BaseField) : BaseField
 ```
 
-`Secp256k1.Fast.baseRingEquiv` (definition, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Secp256k1/Fast.lean#L90))
+`Secp256k1.Fast.baseRingEquiv` (definition, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Secp256k1/Fast.lean#L90))
 
 > Ring equivalence between the eight-limb representation and the canonical
 > `Secp256k1.BaseField`.
@@ -108,5 +108,5 @@ def baseRingEquiv : BaseField ≃+* Secp256k1.BaseField
 
 ## Sources
 
-- [CompPoly/Fields/Secp256k1/Fast.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Secp256k1/Fast.lean)
+- [CompPoly/Fields/Secp256k1/Fast.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Secp256k1/Fast.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Fields.Secp256k1.Fast.json)

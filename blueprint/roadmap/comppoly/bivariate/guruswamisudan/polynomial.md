@@ -7,12 +7,12 @@ proof: formalized
 
 # Guruswami-Sudan Polynomial Helpers
 
-`CompPoly.Bivariate.GuruswamiSudan.Polynomial`, in [CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Polynomial`, in [CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean), by Valerii Huhnin.
 
 > Reusable univariate and bivariate polynomial operations used by the
 > Guruswami-Sudan interpolation and root-finding kernels.
 
-`CompPoly.CPolynomial.dropXPower` (definition, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L27))
+`CompPoly.CPolynomial.dropXPower` (definition, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L27))
 
 > Drop the first `n` powers of `X`, i.e. divide by `X^n` when possible and
 > truncate toward zero otherwise.
@@ -21,7 +21,7 @@ proof: formalized
 def dropXPower {R : Type*} [Zero R] (p : CPolynomial R) : Nat → CPolynomial R
 ```
 
-`CompPoly.CPolynomial.truncate` (definition, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L32))
+`CompPoly.CPolynomial.truncate` (definition, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L32))
 
 > Keep only coefficients of degree `< n`.
 
@@ -30,7 +30,7 @@ def truncate {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
     (p : CPolynomial R) (n : Nat) : CPolynomial R
 ```
 
-`CompPoly.CPolynomial.xAdicOrder?` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L38))
+`CompPoly.CPolynomial.xAdicOrder?` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L38))
 
 > First nonzero coefficient index of a univariate polynomial, if it is
 > nonzero.
@@ -39,7 +39,7 @@ def truncate {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
 def xAdicOrder? {R : Type*} [Zero R] [BEq R] (p : CPolynomial R) : Option Nat
 ```
 
-`CompPoly.CPolynomial.inverseSeriesNextCoeff` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L43))
+`CompPoly.CPolynomial.inverseSeriesNextCoeff` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L43))
 
 > Coefficients of the inverse of a power series with known nonzero constant
 > coefficient, truncated to length `n`.
@@ -49,7 +49,7 @@ def inverseSeriesNextCoeff {F : Type*} [Field F]
     (p : CPolynomial F) (constantInv : F) (prev : Array F) (idx : Nat) : F
 ```
 
-`CompPoly.CPolynomial.inverseSeriesCoeffs` (definition, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L54))
+`CompPoly.CPolynomial.inverseSeriesCoeffs` (definition, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L54))
 
 > Coefficients of the inverse of a power series with known nonzero constant
 > coefficient, truncated to length `n`.
@@ -59,7 +59,7 @@ def inverseSeriesCoeffs {F : Type*} [Field F]
     (p : CPolynomial F) (constantInv : F) (n : Nat) : Array F
 ```
 
-`CompPoly.CPolynomial.inverseSeries?` (definition, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L62))
+`CompPoly.CPolynomial.inverseSeries?` (definition, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L62))
 
 > Inverse of a univariate power series modulo `X^n`, if the constant term is
 > invertible.
@@ -69,7 +69,7 @@ def inverseSeries? {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (p : CPolynomial F) (n : Nat) : Option (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.mulCoeff` (definition, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L71))
+`CompPoly.CPolynomial.mulCoeff` (definition, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L71))
 
 > Coefficient of `X^n` in `p * q`, computed without materializing the
 > product.
@@ -78,7 +78,7 @@ def inverseSeries? {F : Type*} [Field F] [BEq F] [LawfulBEq F]
 def mulCoeff {R : Type*} [Semiring R] (p q : CPolynomial R) (n : Nat) : R
 ```
 
-`CompPoly.CPolynomial.mulWindow` (definition, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L78))
+`CompPoly.CPolynomial.mulWindow` (definition, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L78))
 
 > Coefficient window of `p * q`, shifted down by `low` and truncated to
 > `width`, computed without materializing the full product.
@@ -88,7 +88,7 @@ def mulWindow {R : Type*} [Semiring R] [BEq R] [LawfulBEq R]
     (p q : CPolynomial R) (low width : Nat) : CPolynomial R
 ```
 
-`CompPoly.CPolynomial.mulWindowWithLowProduct` (definition, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L83))
+`CompPoly.CPolynomial.mulWindowWithLowProduct` (definition, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L83))
 
 > Coefficient window of `p * q` computed through a raw low-product context.
 
@@ -99,7 +99,7 @@ def mulWindowWithLowProduct {R : Type*}
     (p q : CPolynomial R) (low width : Nat) : CPolynomial R
 ```
 
-`CompPoly.CPolynomial.powCoeff` (definition, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L92))
+`CompPoly.CPolynomial.powCoeff` (definition, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L92))
 
 > Coefficient of `X^n` in `p^k`, computed by coefficient convolution without
 > materializing the intermediate powers.
@@ -108,7 +108,7 @@ def mulWindowWithLowProduct {R : Type*}
 def powCoeff {R : Type*} [Semiring R] (p : CPolynomial R) : Nat → Nat → R
 ```
 
-`CompPoly.CPolynomial.mulPowCoeff` (definition, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L100))
+`CompPoly.CPolynomial.mulPowCoeff` (definition, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L100))
 
 > Coefficient of `X^n` in `a * p^k`, computed coefficient-wise.
 
@@ -117,7 +117,7 @@ def mulPowCoeff {R : Type*} [Semiring R]
     (a p : CPolynomial R) (k n : Nat) : R
 ```
 
-`CompPoly.CBivariate.Monomial` (structure, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L111))
+`CompPoly.CBivariate.Monomial` (structure, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L111))
 
 > A bivariate monomial exponent pair.
 
@@ -128,7 +128,7 @@ structure Monomial where
 deriving BEq, DecidableEq, Repr
 ```
 
-`CompPoly.CBivariate.HasseTerm` (structure, [line 117](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L117))
+`CompPoly.CBivariate.HasseTerm` (structure, [line 117](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L117))
 
 > One monomial contribution to a Hasse derivative.
 
@@ -139,7 +139,7 @@ structure HasseTerm (R : Type*) where
   coeff : R
 ```
 
-`CompPoly.CBivariate.ofCoeffGrid` (definition, [line 123](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L123))
+`CompPoly.CBivariate.ofCoeffGrid` (definition, [line 123](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L123))
 
 > Construct a bivariate polynomial from a coefficient grid indexed by `grid[y][x]`.
 
@@ -149,7 +149,7 @@ def ofCoeffGrid {R : Type*}
     (grid : Array (Array R)) : CBivariate R
 ```
 
-`CompPoly.CBivariate.ofMonomialCoeffs` (definition, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L135))
+`CompPoly.CBivariate.ofMonomialCoeffs` (definition, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L135))
 
 > Construct a bivariate polynomial from a monomial list and parallel coefficient vector.
 
@@ -159,7 +159,7 @@ def ofMonomialCoeffs {R : Type*}
     (monomials : Array Monomial) (coeffs : Array R) : CBivariate R
 ```
 
-`CompPoly.CBivariate.monomialGrid` (definition, [line 145](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L145))
+`CompPoly.CBivariate.monomialGrid` (definition, [line 145](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L145))
 
 > Candidate monomials in the finite square used by weighted-degree enumeration.
 
@@ -167,7 +167,7 @@ def ofMonomialCoeffs {R : Type*}
 def monomialGrid (bound : Nat) : List Monomial
 ```
 
-`CompPoly.CBivariate.monomialsWeightedDegreeLE` (definition, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L155))
+`CompPoly.CBivariate.monomialsWeightedDegreeLE` (definition, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L155))
 
 > Enumerate monomials inside a finite weighted-degree search rectangle.
 >
@@ -179,7 +179,7 @@ def monomialGrid (bound : Nat) : List Monomial
 def monomialsWeightedDegreeLE (xWeight yWeight bound : Nat) : Array Monomial
 ```
 
-`CompPoly.CBivariate.hasseDerivativeTermList` (definition, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L160))
+`CompPoly.CBivariate.hasseDerivativeTermList` (definition, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L160))
 
 > Shared monomial contributions for materialized and directly evaluated Hasse derivatives.
 
@@ -188,7 +188,7 @@ def hasseDerivativeTermList {R : Type*} [Semiring R]
     (a b : Nat) (Q : CBivariate R) : List (HasseTerm R)
 ```
 
-`CompPoly.CBivariate.hasseDerivativeTerms` (definition, [line 177](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L177))
+`CompPoly.CBivariate.hasseDerivativeTerms` (definition, [line 177](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L177))
 
 > Shared monomial contributions for materialized and directly evaluated Hasse derivatives.
 
@@ -197,7 +197,7 @@ def hasseDerivativeTerms {R : Type*} [Semiring R]
     (a b : Nat) (Q : CBivariate R) : Array (HasseTerm R)
 ```
 
-`CompPoly.CBivariate.hasseDerivativeFromTerms` (definition, [line 182](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L182))
+`CompPoly.CBivariate.hasseDerivativeFromTerms` (definition, [line 182](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L182))
 
 > Materialize a Hasse derivative from a list of derivative terms.
 
@@ -207,7 +207,7 @@ def hasseDerivativeFromTerms {R : Type*}
     (terms : List (HasseTerm R)) : CBivariate R
 ```
 
-`CompPoly.CBivariate.hasseDerivative` (definition, [line 189](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L189))
+`CompPoly.CBivariate.hasseDerivative` (definition, [line 189](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L189))
 
 > Executable Hasse derivative of a bivariate polynomial.
 
@@ -217,7 +217,7 @@ def hasseDerivative {R : Type*}
     (a b : Nat) (Q : CBivariate R) : CBivariate R
 ```
 
-`CompPoly.CBivariate.hasseDerivativeEvalFromTerms` (definition, [line 195](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L195))
+`CompPoly.CBivariate.hasseDerivativeEvalFromTerms` (definition, [line 195](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L195))
 
 > Evaluate derivative terms directly at one point.
 
@@ -226,7 +226,7 @@ def hasseDerivativeEvalFromTerms {R : Type*} [Semiring R]
     (terms : List (HasseTerm R)) (x y : R) : R
 ```
 
-`CompPoly.CBivariate.hasseDerivativeEval` (definition, [line 201](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L201))
+`CompPoly.CBivariate.hasseDerivativeEval` (definition, [line 201](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L201))
 
 > Evaluate a Hasse derivative at one point without materializing the derivative.
 
@@ -235,7 +235,7 @@ def hasseDerivativeEval {R : Type*} [Semiring R]
     (a b : Nat) (x y : R) (Q : CBivariate R) : R
 ```
 
-`CompPoly.CBivariate.derivativeOrderGrid` (definition, [line 206](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L206))
+`CompPoly.CBivariate.derivativeOrderGrid` (definition, [line 206](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L206))
 
 > Candidate derivative orders in the finite square used by multiplicity checks.
 
@@ -243,7 +243,7 @@ def hasseDerivativeEval {R : Type*} [Semiring R]
 def derivativeOrderGrid (multiplicity : Nat) : List (Nat × Nat)
 ```
 
-`CompPoly.CBivariate.derivativeOrders` (definition, [line 211](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L211))
+`CompPoly.CBivariate.derivativeOrders` (definition, [line 211](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L211))
 
 > Derivative orders `(a, b)` with `a + b < multiplicity`.
 
@@ -251,7 +251,7 @@ def derivativeOrderGrid (multiplicity : Nat) : List (Nat × Nat)
 def derivativeOrders (multiplicity : Nat) : Array (Nat × Nat)
 ```
 
-`CompPoly.CBivariate.HasMultiplicityAtLeast` (definition, [line 216](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L216))
+`CompPoly.CBivariate.HasMultiplicityAtLeast` (definition, [line 216](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L216))
 
 > Mathematical multiplicity constraint used by the GS interpolation specification.
 
@@ -260,7 +260,7 @@ def HasMultiplicityAtLeast {R : Type*} [Semiring R]
     (Q : CBivariate R) (x y : R) (multiplicity : Nat) : Prop
 ```
 
-`CompPoly.CBivariate.multiplicityAtLeastBool` (definition, [line 221](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L221))
+`CompPoly.CBivariate.multiplicityAtLeastBool` (definition, [line 221](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L221))
 
 > Executable multiplicity check at one point.
 
@@ -269,7 +269,7 @@ def multiplicityAtLeastBool {R : Type*} [Semiring R] [BEq R]
     (Q : CBivariate R) (x y : R) (multiplicity : Nat) : Bool
 ```
 
-`CompPoly.CBivariate.SatisfiesMultiplicityConstraints` (definition, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L227))
+`CompPoly.CBivariate.SatisfiesMultiplicityConstraints` (definition, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L227))
 
 > Mathematical batch multiplicity constraints over packed point pairs.
 
@@ -278,7 +278,7 @@ def SatisfiesMultiplicityConstraints {R : Type*} [Semiring R]
     (Q : CBivariate R) (points : Array (R × R)) (multiplicity : Nat) : Prop
 ```
 
-`CompPoly.CBivariate.satisfiesMultiplicityConstraintsBool` (definition, [line 233](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L233))
+`CompPoly.CBivariate.satisfiesMultiplicityConstraintsBool` (definition, [line 233](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L233))
 
 > Executable batch multiplicity check over packed point pairs.
 
@@ -287,7 +287,7 @@ def satisfiesMultiplicityConstraintsBool {R : Type*} [Semiring R] [BEq R]
     (Q : CBivariate R) (points : Array (R × R)) (multiplicity : Nat) : Bool
 ```
 
-`CompPoly.CBivariate.composeY` (definition, [line 240](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L240))
+`CompPoly.CBivariate.composeY` (definition, [line 240](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L240))
 
 > Compose a bivariate polynomial with a univariate polynomial in the `Y` slot:
 > `Q(X, p(X))`.
@@ -298,7 +298,7 @@ def composeY {R : Type*}
     (Q : CBivariate R) (p : CPolynomial R) : CPolynomial R
 ```
 
-`CompPoly.CBivariate.composeYHorner` (definition, [line 247](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L247))
+`CompPoly.CBivariate.composeYHorner` (definition, [line 247](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L247))
 
 > Horner implementation of `Q(X, p(X))` in the outer `Y` variable.
 
@@ -308,7 +308,7 @@ def composeYHorner {R : Type*}
     (Q : CBivariate R) (p : CPolynomial R) : CPolynomial R
 ```
 
-`CompPoly.CBivariate.composeYHornerTruncated` (definition, [line 259](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L259))
+`CompPoly.CBivariate.composeYHornerTruncated` (definition, [line 259](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L259))
 
 > Truncated Horner implementation of `Q(X, p(X))` in the outer `Y`
 > variable.
@@ -323,7 +323,7 @@ def composeYHornerTruncated {R : Type*}
     (Q : CBivariate R) (p : CPolynomial R) (n : Nat) : CPolynomial R
 ```
 
-`CompPoly.CBivariate.composeYCoeff` (definition, [line 268](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L268))
+`CompPoly.CBivariate.composeYCoeff` (definition, [line 268](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L268))
 
 > Coefficient of `X^depth` in `Q(X, p(X))`, computed without materializing
 > the whole composed polynomial.
@@ -334,7 +334,7 @@ def composeYCoeff {R : Type*}
     (Q : CBivariate R) (p : CPolynomial R) (depth : Nat) : R
 ```
 
-`CompPoly.CBivariate.yDerivative` (definition, [line 276](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L276))
+`CompPoly.CBivariate.yDerivative` (definition, [line 276](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L276))
 
 > Formal derivative in the outer `Y` variable.
 
@@ -344,7 +344,7 @@ def yDerivative {R : Type*}
     (Q : CBivariate R) : CBivariate R
 ```
 
-`CompPoly.CBivariate.xAdicOrder?` (definition, [line 289](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L289))
+`CompPoly.CBivariate.xAdicOrder?` (definition, [line 289](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L289))
 
 > Minimum `X`-adic order across all nonzero `Y`-coefficients of a bivariate
 > polynomial.
@@ -353,7 +353,7 @@ def yDerivative {R : Type*}
 def xAdicOrder? {R : Type*} [Zero R] [BEq R] (Q : CBivariate R) : Option Nat
 ```
 
-`CompPoly.CBivariate.divXPower` (definition, [line 302](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L302))
+`CompPoly.CBivariate.divXPower` (definition, [line 302](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L302))
 
 > Divide every `Y`-coefficient by `X^n`, truncating coefficients with lower
 > `X`-degree to zero.
@@ -363,7 +363,7 @@ def divXPower {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
     (Q : CBivariate R) (n : Nat) : CBivariate R
 ```
 
-`CompPoly.CBivariate.truncateX` (definition, [line 307](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L307))
+`CompPoly.CBivariate.truncateX` (definition, [line 307](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L307))
 
 > Keep only coefficients of `X`-degree `< n` in every `Y`-coefficient.
 
@@ -372,7 +372,7 @@ def truncateX {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
     (Q : CBivariate R) (n : Nat) : CBivariate R
 ```
 
-`CompPoly.CBivariate.stripXAdicFactor` (definition, [line 312](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L312))
+`CompPoly.CBivariate.stripXAdicFactor` (definition, [line 312](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L312))
 
 > Strip the common `X`-adic factor from a bivariate polynomial.
 
@@ -381,7 +381,7 @@ def stripXAdicFactor {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
     (Q : CBivariate R) : CBivariate R
 ```
 
-`CompPoly.CBivariate.ofYConstant` (definition, [line 320](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L320))
+`CompPoly.CBivariate.ofYConstant` (definition, [line 320](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L320))
 
 > View a univariate polynomial in `X` as a bivariate polynomial constant in
 > `Y`.
@@ -391,7 +391,7 @@ def ofYConstant {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
     (p : CPolynomial R) : CBivariate R
 ```
 
-`CompPoly.CBivariate.ofYCoefficient` (definition, [line 326](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L326))
+`CompPoly.CBivariate.ofYCoefficient` (definition, [line 326](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean#L326))
 
 > View a univariate polynomial in `X` as the coefficient of `Y^y` in a
 > bivariate polynomial.
@@ -408,5 +408,5 @@ def ofYCoefficient {R : Type*}
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Polynomial.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Polynomial.json)

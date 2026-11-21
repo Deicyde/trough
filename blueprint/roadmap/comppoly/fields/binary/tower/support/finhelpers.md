@@ -7,11 +7,11 @@ proof: formalized
 
 # Binary Tower Fin Helpers
 
-`CompPoly.Fields.Binary.Tower.Support.FinHelpers`, in [CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean), by Quang Dao, Chung Thai Nguyen.
+`CompPoly.Fields.Binary.Tower.Support.FinHelpers`, in [CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean), by Quang Dao, Chung Thai Nguyen.
 
 > Finite-index helper lemmas for bit manipulations used in binary tower proofs.
 
-`bit_finProdFinEquiv_symm_2_pow_succ` (theorem, [line 25](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean#L25))
+`bit_finProdFinEquiv_symm_2_pow_succ` (theorem, [line 25](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean#L25))
 
 ```lean
 theorem bit_finProdFinEquiv_symm_2_pow_succ {n : ℕ} (j : Fin (2 ^ (n + 1))) (i : Fin (n + 1)) :
@@ -20,7 +20,7 @@ theorem bit_finProdFinEquiv_symm_2_pow_succ {n : ℕ} (j : Fin (2 ^ (n + 1))) (i
     Nat.getBit (i) j = if i.val > 0 then Nat.getBit (i.val-1) (e j').1 else (e j').2
 ```
 
-`leftDivNat` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean#L49))
+`leftDivNat` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean#L49))
 
 > Equivalence between `Fin m × Fin n` and `Fin (m * n)`
 > which splits quotient part into Fin (n) and the remainder into Fin (m).
@@ -33,19 +33,19 @@ theorem bit_finProdFinEquiv_symm_2_pow_succ {n : ℕ} (j : Fin (2 ^ (n + 1))) (i
 def leftDivNat {m n : ℕ} (i : Fin (m * n)) : Fin n
 ```
 
-`leftModNat` (definition, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean#L54))
+`leftModNat` (definition, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean#L54))
 
 ```lean
 def leftModNat {m n : ℕ} (h_m : m > 0) (i : Fin (m * n)) : Fin m
 ```
 
-`revFinProdFinEquiv` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean#L60))
+`revFinProdFinEquiv` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean#L60))
 
 ```lean
 def revFinProdFinEquiv {m n : ℕ} (h_m : m > 0) : Fin m × Fin n ≃ Fin (m * n)
 ```
 
-`bit_revFinProdFinEquiv_symm_2_pow_succ` (theorem, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean#L89))
+`bit_revFinProdFinEquiv_symm_2_pow_succ` (theorem, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean#L89))
 
 ```lean
 theorem bit_revFinProdFinEquiv_symm_2_pow_succ {n : ℕ} (j : Fin (2 ^ (n + 1))) (i : Fin (n + 1)) :
@@ -63,5 +63,5 @@ theorem bit_revFinProdFinEquiv_symm_2_pow_succ {n : ℕ} (j : Fin (2 ^ (n + 1)))
 
 ## Sources
 
-- [CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean)
+- [CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/FinHelpers.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Fields.Binary.Tower.Support.FinHelpers.json)

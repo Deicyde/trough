@@ -7,7 +7,7 @@ proof: formalized
 
 # Executable Lee-O'Sullivan Interpolation
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Algorithm`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Algorithm`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean), by Valerii Huhnin.
 
 > Executable Lee-O'Sullivan interpolation via an explicit `F[X]` module basis and
 > shifted polynomial-row reduction.
@@ -17,7 +17,7 @@ proof: formalized
 > * [Lee, K., and O'Sullivan, M. E., *List decoding of Reed-Solomon codes from a
 >     Groebner basis perspective*][LOS06]
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.RowChoice` (structure, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean#L36))
+`CompPoly.GuruswamiSudan.LeeOSullivan.RowChoice` (structure, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean#L36))
 
 > Candidate row selected by least-shifted-degree scanning.
 
@@ -28,7 +28,7 @@ structure RowChoice (F : Type*) [Zero F] where
   degree : Nat
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.betterRowChoice` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean#L42))
+`CompPoly.GuruswamiSudan.LeeOSullivan.betterRowChoice` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean#L42))
 
 > Tie-breaking order for least-shifted-degree row selection.
 
@@ -36,7 +36,7 @@ structure RowChoice (F : Type*) [Zero F] where
 def betterRowChoice (candidate current : RowChoice F) : Bool
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leastShiftedDegreeRowStep?` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean#L47))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leastShiftedDegreeRowStep?` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean#L47))
 
 > One left-to-right scan step for least-shifted-degree row selection.
 
@@ -46,7 +46,7 @@ def leastShiftedDegreeRowStep?
     (best : Option (RowChoice F)) (i : Nat) : Option (RowChoice F)
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leastShiftedDegreeChoice?` (definition, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean#L61))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leastShiftedDegreeChoice?` (definition, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean#L61))
 
 > Scan row indices for the best least-shifted-degree candidate.
 
@@ -55,7 +55,7 @@ def leastShiftedDegreeChoice?
     (M : PolynomialMatrix F) (shift : Array Nat) : Option (RowChoice F)
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leastShiftedDegreeRow?` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean#L66))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leastShiftedDegreeRow?` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean#L66))
 
 > Select a nonzero row of least shifted degree from a reduced matrix.
 
@@ -64,7 +64,7 @@ def leastShiftedDegreeRow? (M : PolynomialMatrix F) (shift : Array Nat) :
     Option (PolynomialRow F)
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.normalizeLeeCandidate?` (definition, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean#L71))
+`CompPoly.GuruswamiSudan.LeeOSullivan.normalizeLeeCandidate?` (definition, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean#L71))
 
 > Normalize a row-derived candidate using the shared interpolation vector policy.
 
@@ -73,7 +73,7 @@ def normalizeLeeCandidate? (params : GSInterpParams) (Q : CBivariate F) :
     Option (CBivariate F)
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanPositiveInterpolate` (definition, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean#L77))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanPositiveInterpolate` (definition, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean#L77))
 
 > Positive-`Y`-weight Lee-O'Sullivan interpolation branch.
 
@@ -86,7 +86,7 @@ def leeOSullivanPositiveInterpolate
     Option (CBivariate F)
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanInterpolate` (definition, [line 106](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean#L106))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanInterpolate` (definition, [line 106](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean#L106))
 
 > Lee-O'Sullivan interpolation with the shared low-message branch.
 
@@ -106,5 +106,5 @@ def leeOSullivanInterpolate
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Algorithm.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Algorithm.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Equivalence between `CBivariate` and `CMvPolynomial 2`
 
-`CompPoly.Bivariate.CMvEquiv`, in [CompPoly/Bivariate/CMvEquiv.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/CMvEquiv.lean), by Dimitris Mitsios.
+`CompPoly.Bivariate.CMvEquiv`, in [CompPoly/Bivariate/CMvEquiv.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/CMvEquiv.lean), by Dimitris Mitsios.
 
 > This file establishes the ring equivalence
 > `bivariateEquiv : CBivariate R ≃+* CMvPolynomial 2 R`
@@ -40,7 +40,7 @@ proof: formalized
 > * `CMvPolynomial.finSuccEquiv_symm_X` —
 >   `finSuccEquiv.symm Polynomial.X = CMvPolynomial.X 0`
 
-`CMvPolynomial.isEmptyRingEquiv_symm_apply` (lemma, [line 58](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/CMvEquiv.lean#L58))
+`CMvPolynomial.isEmptyRingEquiv_symm_apply` (lemma, [line 58](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/CMvEquiv.lean#L58))
 
 > `isEmptyRingEquiv.symm` maps scalars to constants.
 
@@ -50,7 +50,7 @@ lemma isEmptyRingEquiv_symm_apply
     CMvPolynomial.isEmptyRingEquiv.symm r = CMvPolynomial.C r
 ```
 
-`CMvPolynomial.finSuccEquiv_symm_C` (lemma, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/CMvEquiv.lean#L67))
+`CMvPolynomial.finSuccEquiv_symm_C` (lemma, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/CMvEquiv.lean#L67))
 
 > `finSuccEquiv.symm` maps `Polynomial.C` to `rename Fin.succ`.
 
@@ -62,7 +62,7 @@ lemma finSuccEquiv_symm_C
       CMvPolynomial.rename Fin.succ x
 ```
 
-`CMvPolynomial.finSuccEquiv_symm_X` (lemma, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/CMvEquiv.lean#L97))
+`CMvPolynomial.finSuccEquiv_symm_X` (lemma, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/CMvEquiv.lean#L97))
 
 > `finSuccEquiv.symm` maps `Polynomial.X` to the zeroth variable.
 
@@ -75,7 +75,7 @@ lemma finSuccEquiv_symm_X
       CMvPolynomial.X 0
 ```
 
-`CompPoly.CBivariate.bivariateEquiv` (definition, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/CMvEquiv.lean#L128))
+`CompPoly.CBivariate.bivariateEquiv` (definition, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/CMvEquiv.lean#L128))
 
 > Ring equivalence between `CBivariate R` and `CMvPolynomial 2 R`.
 
@@ -84,7 +84,7 @@ noncomputable def bivariateEquiv :
     CBivariate R ≃+* CMvPolynomial 2 R
 ```
 
-`CompPoly.CBivariate.bivariateEquiv_add` (lemma, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/CMvEquiv.lean#L142))
+`CompPoly.CBivariate.bivariateEquiv_add` (lemma, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/CMvEquiv.lean#L142))
 
 > `bivariateEquiv` preserves addition.
 
@@ -94,7 +94,7 @@ lemma bivariateEquiv_add (p q : CBivariate R) :
       bivariateEquiv p + bivariateEquiv q
 ```
 
-`CompPoly.CBivariate.bivariateEquiv_mul` (lemma, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/CMvEquiv.lean#L149))
+`CompPoly.CBivariate.bivariateEquiv_mul` (lemma, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/CMvEquiv.lean#L149))
 
 > `bivariateEquiv` preserves multiplication.
 
@@ -104,7 +104,7 @@ lemma bivariateEquiv_mul (p q : CBivariate R) :
       bivariateEquiv p * bivariateEquiv q
 ```
 
-`CompPoly.CBivariate.bivariateEquiv_zero` (lemma, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/CMvEquiv.lean#L156))
+`CompPoly.CBivariate.bivariateEquiv_zero` (lemma, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/CMvEquiv.lean#L156))
 
 > `bivariateEquiv` maps zero to zero.
 
@@ -113,7 +113,7 @@ lemma bivariateEquiv_zero :
     bivariateEquiv (0 : CBivariate R) = 0
 ```
 
-`CompPoly.CBivariate.bivariateEquiv_CC` (lemma, [line 162](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/CMvEquiv.lean#L162))
+`CompPoly.CBivariate.bivariateEquiv_CC` (lemma, [line 162](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/CMvEquiv.lean#L162))
 
 > `bivariateEquiv` maps bivariate constants to multivariate constants.
 
@@ -122,7 +122,7 @@ lemma bivariateEquiv_CC (r : R) :
     bivariateEquiv (CBivariate.CC r) = CMvPolynomial.C r
 ```
 
-`CompPoly.CBivariate.bivariateEquiv_X` (lemma, [line 171](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/CMvEquiv.lean#L171))
+`CompPoly.CBivariate.bivariateEquiv_X` (lemma, [line 171](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/CMvEquiv.lean#L171))
 
 > `bivariateEquiv` maps `CBivariate.X` to the second variable.
 
@@ -132,7 +132,7 @@ lemma bivariateEquiv_X :
       CMvPolynomial.X 1
 ```
 
-`CompPoly.CBivariate.bivariateEquiv_Y` (lemma, [line 179](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/CMvEquiv.lean#L179))
+`CompPoly.CBivariate.bivariateEquiv_Y` (lemma, [line 179](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/CMvEquiv.lean#L179))
 
 > `bivariateEquiv` maps `CBivariate.Y` to the first variable.
 
@@ -142,7 +142,7 @@ lemma bivariateEquiv_Y :
       CMvPolynomial.X 0
 ```
 
-`CompPoly.CBivariate.bivariateEquiv_symm_C` (lemma, [line 187](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/CMvEquiv.lean#L187))
+`CompPoly.CBivariate.bivariateEquiv_symm_C` (lemma, [line 187](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/CMvEquiv.lean#L187))
 
 > `bivariateEquiv.symm` maps multivariate constants to bivariate constants.
 
@@ -152,7 +152,7 @@ lemma bivariateEquiv_symm_C (r : R) :
       CBivariate.CC r
 ```
 
-`CompPoly.CBivariate.bivariateEquiv_symm_X0` (lemma, [line 195](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/CMvEquiv.lean#L195))
+`CompPoly.CBivariate.bivariateEquiv_symm_X0` (lemma, [line 195](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/CMvEquiv.lean#L195))
 
 > `bivariateEquiv.symm` maps the first variable to `CBivariate.Y`.
 
@@ -162,7 +162,7 @@ lemma bivariateEquiv_symm_X0 :
       CBivariate.Y
 ```
 
-`CompPoly.CBivariate.bivariateEquiv_symm_X1` (lemma, [line 203](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/CMvEquiv.lean#L203))
+`CompPoly.CBivariate.bivariateEquiv_symm_X1` (lemma, [line 203](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/CMvEquiv.lean#L203))
 
 > `bivariateEquiv.symm` maps the second variable to `CBivariate.X`.
 
@@ -184,5 +184,5 @@ lemma bivariateEquiv_symm_X1 :
 
 ## Sources
 
-- [CompPoly/Bivariate/CMvEquiv.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/CMvEquiv.lean)
+- [CompPoly/Bivariate/CMvEquiv.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/CMvEquiv.lean)
 - [Declaration ledger](../../../sources/comppoly/CompPoly.Bivariate.CMvEquiv.json)

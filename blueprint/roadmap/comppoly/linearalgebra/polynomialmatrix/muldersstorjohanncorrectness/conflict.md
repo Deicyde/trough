@@ -7,11 +7,11 @@ proof: formalized
 
 # Mulders-Storjohann Correctness Shifted Leading Conflict Helpers
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Conflict`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Conflict`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean), by Valerii Huhnin.
 
 > Bounds and validity lemmas for shifted-leading-position conflict detection.
 
-`CompPoly.PolynomialMatrix.index_lt_of_rowShiftedDegree?_getElem?_eq_some` (theorem, [line 25](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L25))
+`CompPoly.PolynomialMatrix.index_lt_of_rowShiftedDegree?_getElem?_eq_some` (theorem, [line 25](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L25))
 
 ```lean
 theorem index_lt_of_rowShiftedDegree?_getElem?_eq_some
@@ -20,13 +20,13 @@ theorem index_lt_of_rowShiftedDegree?_getElem?_eq_some
     i < M.size
 ```
 
-`CompPoly.PolynomialMatrix.ConflictBounds` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L38))
+`CompPoly.PolynomialMatrix.ConflictBounds` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L38))
 
 ```lean
 def ConflictBounds (M : PolynomialMatrix F) : Option (Nat × Nat) → Prop
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRowFold_bounds` (theorem, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L43))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRowFold_bounds` (theorem, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L43))
 
 ```lean
 theorem shiftedLeadingConflictInRowFold_bounds
@@ -48,7 +48,7 @@ theorem shiftedLeadingConflictInRowFold_bounds
         found)
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRow?_bounds` (theorem, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L86))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRow?_bounds` (theorem, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L86))
 
 ```lean
 theorem shiftedLeadingConflictInRow?_bounds
@@ -57,7 +57,7 @@ theorem shiftedLeadingConflictInRow?_bounds
     ConflictBounds M (shiftedLeadingConflictInRow? M shift i found)
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictFromFold_bounds` (theorem, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L98))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictFromFold_bounds` (theorem, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L98))
 
 ```lean
 theorem shiftedLeadingConflictFromFold_bounds
@@ -71,7 +71,7 @@ theorem shiftedLeadingConflictFromFold_bounds
         found)
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictFrom?_bounds` (theorem, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L118))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictFrom?_bounds` (theorem, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L118))
 
 ```lean
 theorem shiftedLeadingConflictFrom?_bounds
@@ -80,7 +80,7 @@ theorem shiftedLeadingConflictFrom?_bounds
     ConflictBounds M (shiftedLeadingConflictFrom? M shift found)
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflict?_some_bounds` (theorem, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L130))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflict?_some_bounds` (theorem, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L130))
 
 ```lean
 theorem shiftedLeadingConflict?_some_bounds
@@ -89,14 +89,14 @@ theorem shiftedLeadingConflict?_some_bounds
     i < M.size ∧ j < M.size ∧ i < j
 ```
 
-`CompPoly.PolynomialMatrix.ConflictValid` (definition, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L140))
+`CompPoly.PolynomialMatrix.ConflictValid` (definition, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L140))
 
 ```lean
 def ConflictValid (M : PolynomialMatrix F) (shift : Array Nat) :
     Option (Nat × Nat) → Prop
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRowStep?_valid` (theorem, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L149))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRowStep?_valid` (theorem, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L149))
 
 ```lean
 theorem shiftedLeadingConflictInRowStep?_valid
@@ -106,7 +106,7 @@ theorem shiftedLeadingConflictInRowStep?_valid
     ConflictValid M shift (shiftedLeadingConflictInRowStep? M shift i found j)
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRowFold_valid` (theorem, [line 179](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L179))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRowFold_valid` (theorem, [line 179](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L179))
 
 ```lean
 theorem shiftedLeadingConflictInRowFold_valid
@@ -117,7 +117,7 @@ theorem shiftedLeadingConflictInRowFold_valid
       (xs.foldl (shiftedLeadingConflictInRowStep? M shift i) found)
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRow?_valid` (theorem, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L193))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRow?_valid` (theorem, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L193))
 
 ```lean
 theorem shiftedLeadingConflictInRow?_valid
@@ -127,7 +127,7 @@ theorem shiftedLeadingConflictInRow?_valid
     ConflictValid M shift (shiftedLeadingConflictInRow? M shift i found)
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictFromFold_valid` (theorem, [line 202](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L202))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictFromFold_valid` (theorem, [line 202](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L202))
 
 ```lean
 theorem shiftedLeadingConflictFromFold_valid
@@ -138,7 +138,7 @@ theorem shiftedLeadingConflictFromFold_valid
       (xs.foldl (shiftedLeadingConflictFromStep? M shift) found)
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictFrom?_valid` (theorem, [line 216](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L216))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictFrom?_valid` (theorem, [line 216](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L216))
 
 ```lean
 theorem shiftedLeadingConflictFrom?_valid
@@ -147,7 +147,7 @@ theorem shiftedLeadingConflictFrom?_valid
     ConflictValid M shift (shiftedLeadingConflictFrom? M shift found)
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflict?_some_valid` (theorem, [line 224](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L224))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflict?_some_valid` (theorem, [line 224](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L224))
 
 ```lean
 theorem shiftedLeadingConflict?_some_valid
@@ -158,7 +158,7 @@ theorem shiftedLeadingConflict?_some_valid
       rowShiftedLeadingPosition? (M.getD j #[]) shift = some p
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRowFold_some` (theorem, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L237))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRowFold_some` (theorem, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L237))
 
 ```lean
 theorem shiftedLeadingConflictInRowFold_some
@@ -167,7 +167,7 @@ theorem shiftedLeadingConflictInRowFold_some
     xs.foldl (shiftedLeadingConflictInRowStep? M shift i) (some pair) = some pair
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRow?_some` (theorem, [line 248](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L248))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRow?_some` (theorem, [line 248](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L248))
 
 ```lean
 theorem shiftedLeadingConflictInRow?_some
@@ -175,7 +175,7 @@ theorem shiftedLeadingConflictInRow?_some
     shiftedLeadingConflictInRow? M shift i (some pair) = some pair
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictFromFold_some` (theorem, [line 255](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L255))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictFromFold_some` (theorem, [line 255](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L255))
 
 ```lean
 theorem shiftedLeadingConflictFromFold_some
@@ -183,7 +183,7 @@ theorem shiftedLeadingConflictFromFold_some
     xs.foldl (shiftedLeadingConflictFromStep? M shift) (some pair) = some pair
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictFrom?_some` (theorem, [line 265](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L265))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictFrom?_some` (theorem, [line 265](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L265))
 
 ```lean
 theorem shiftedLeadingConflictFrom?_some
@@ -191,7 +191,7 @@ theorem shiftedLeadingConflictFrom?_some
     shiftedLeadingConflictFrom? M shift (some pair) = some pair
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRowFold_none_no_conflict` (theorem, [line 272](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L272))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRowFold_none_no_conflict` (theorem, [line 272](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L272))
 
 ```lean
 theorem shiftedLeadingConflictInRowFold_none_no_conflict
@@ -203,7 +203,7 @@ theorem shiftedLeadingConflictInRowFold_none_no_conflict
     False
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRow?_none_no_conflict` (theorem, [line 299](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L299))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictInRow?_none_no_conflict` (theorem, [line 299](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L299))
 
 ```lean
 theorem shiftedLeadingConflictInRow?_none_no_conflict
@@ -215,7 +215,7 @@ theorem shiftedLeadingConflictInRow?_none_no_conflict
     False
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflictFromFold_none_inner_none` (theorem, [line 315](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L315))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflictFromFold_none_inner_none` (theorem, [line 315](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L315))
 
 ```lean
 theorem shiftedLeadingConflictFromFold_none_inner_none
@@ -225,7 +225,7 @@ theorem shiftedLeadingConflictFromFold_none_inner_none
     shiftedLeadingConflictInRow? M shift i none = none
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflict?_none_no_conflict` (theorem, [line 339](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L339))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflict?_none_no_conflict` (theorem, [line 339](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L339))
 
 ```lean
 theorem shiftedLeadingConflict?_none_no_conflict
@@ -237,7 +237,7 @@ theorem shiftedLeadingConflict?_none_no_conflict
     False
 ```
 
-`CompPoly.PolynomialMatrix.shiftedLeadingConflict?_none_weakPopov` (theorem, [line 355](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L355))
+`CompPoly.PolynomialMatrix.shiftedLeadingConflict?_none_weakPopov` (theorem, [line 355](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean#L355))
 
 ```lean
 theorem shiftedLeadingConflict?_none_weakPopov
@@ -252,5 +252,5 @@ theorem shiftedLeadingConflict?_none_weakPopov
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Conflict.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Conflict.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Shifted Weak-Popov Least-Row Minimality
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.WeakPopovMinimal`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/WeakPopovMinimal.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/WeakPopovMinimal.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.WeakPopovMinimal`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/WeakPopovMinimal.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/WeakPopovMinimal.lean), by Valerii Huhnin.
 
 > Generalized predictable-degree property: any shifted weak-Popov matrix contains a
 > row whose shifted degree is a lower bound for the shifted degree of every row-span
@@ -16,7 +16,7 @@ proof: formalized
 > shifted weak-Popov matrix and without any alignment hypothesis between the shift
 > size and the matrix width.
 
-`CompPoly.PolynomialMatrix.shiftedWeakPopov_least_row_minimal` (theorem, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/WeakPopovMinimal.lean#L38))
+`CompPoly.PolynomialMatrix.shiftedWeakPopov_least_row_minimal` (theorem, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/WeakPopovMinimal.lean#L38))
 
 > Predictable-degree property of shifted weak-Popov matrices: every row-span
 > member with a defined shifted degree is bounded below by the shifted degree of
@@ -37,7 +37,7 @@ theorem shiftedWeakPopov_least_row_minimal
       outDeg ≤ rowDeg
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduce_least_row_minimal_of_weakPopov` (theorem, [line 274](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/WeakPopovMinimal.lean#L274))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduce_least_row_minimal_of_weakPopov` (theorem, [line 274](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/WeakPopovMinimal.lean#L274))
 
 > Least-row minimality of the Mulders-Storjohann reducer, re-derived from the
 > generalized shifted weak-Popov predictable-degree property.
@@ -67,5 +67,5 @@ theorem muldersStorjohannReduce_least_row_minimal_of_weakPopov
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/WeakPopovMinimal.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/WeakPopovMinimal.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/WeakPopovMinimal.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/WeakPopovMinimal.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.WeakPopovMinimal.json)

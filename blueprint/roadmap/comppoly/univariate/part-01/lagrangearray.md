@@ -7,11 +7,11 @@ proof: formalized
 
 # Array Wrappers for Computable Lagrange Interpolation
 
-`CompPoly.Univariate.LagrangeArray`, in [CompPoly/Univariate/LagrangeArray.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/LagrangeArray.lean), by Valerii Huhnin.
+`CompPoly.Univariate.LagrangeArray`, in [CompPoly/Univariate/LagrangeArray.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/LagrangeArray.lean), by Valerii Huhnin.
 
 > Finite-index adapters for `CPolynomial.CLagrange.interpolate`.
 
-`CompPoly.CPolynomial.CLagrange.arrayNode` (definition, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/LagrangeArray.lean#L27))
+`CompPoly.CPolynomial.CLagrange.arrayNode` (definition, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/LagrangeArray.lean#L27))
 
 > The `i`th node in an array, exposed through a `Fin` index.
 
@@ -19,7 +19,7 @@ proof: formalized
 def arrayNode (xs : Array F) (i : Fin xs.size) : F
 ```
 
-`CompPoly.CPolynomial.CLagrange.arrayValue` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/LagrangeArray.lean#L31))
+`CompPoly.CPolynomial.CLagrange.arrayValue` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/LagrangeArray.lean#L31))
 
 > The `i`th value in an array, defaulting only when the value array is shorter.
 
@@ -27,7 +27,7 @@ def arrayNode (xs : Array F) (i : Fin xs.size) : F
 def arrayValue (ys : Array F) {n : Nat} (i : Fin n) : F
 ```
 
-`CompPoly.CPolynomial.CLagrange.interpolateArrays` (definition, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/LagrangeArray.lean#L35))
+`CompPoly.CPolynomial.CLagrange.interpolateArrays` (definition, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/LagrangeArray.lean#L35))
 
 > Lagrange interpolation from separate node and value arrays.
 
@@ -35,7 +35,7 @@ def arrayValue (ys : Array F) {n : Nat} (i : Fin n) : F
 def interpolateArrays (xs ys : Array F) : CPolynomial F
 ```
 
-`CompPoly.CPolynomial.CLagrange.pointNode` (definition, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/LagrangeArray.lean#L40))
+`CompPoly.CPolynomial.CLagrange.pointNode` (definition, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/LagrangeArray.lean#L40))
 
 > The `x` coordinate of the `i`th packed point.
 
@@ -43,7 +43,7 @@ def interpolateArrays (xs ys : Array F) : CPolynomial F
 def pointNode (points : Array (F × F)) (i : Fin points.size) : F
 ```
 
-`CompPoly.CPolynomial.CLagrange.pointValue` (definition, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/LagrangeArray.lean#L44))
+`CompPoly.CPolynomial.CLagrange.pointValue` (definition, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/LagrangeArray.lean#L44))
 
 > The `y` coordinate of the `i`th packed point.
 
@@ -51,7 +51,7 @@ def pointNode (points : Array (F × F)) (i : Fin points.size) : F
 def pointValue (points : Array (F × F)) (i : Fin points.size) : F
 ```
 
-`CompPoly.CPolynomial.CLagrange.interpolateArray` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/LagrangeArray.lean#L48))
+`CompPoly.CPolynomial.CLagrange.interpolateArray` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/LagrangeArray.lean#L48))
 
 > Lagrange interpolation from packed `(x, y)` points.
 
@@ -59,7 +59,7 @@ def pointValue (points : Array (F × F)) (i : Fin points.size) : F
 def interpolateArray (points : Array (F × F)) : CPolynomial F
 ```
 
-`CompPoly.CPolynomial.CLagrange.DistinctPointNodes` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/LagrangeArray.lean#L53))
+`CompPoly.CPolynomial.CLagrange.DistinctPointNodes` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/LagrangeArray.lean#L53))
 
 > Packed points have pairwise distinct Lagrange nodes.
 
@@ -67,7 +67,7 @@ def interpolateArray (points : Array (F × F)) : CPolynomial F
 def DistinctPointNodes (points : Array (F × F)) : Prop
 ```
 
-`CompPoly.CPolynomial.CLagrange.eval_interpolateArray_at_index` (theorem, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/LagrangeArray.lean#L79))
+`CompPoly.CPolynomial.CLagrange.eval_interpolateArray_at_index` (theorem, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/LagrangeArray.lean#L79))
 
 > Evaluating the packed-array interpolant at one indexed node returns the indexed value.
 
@@ -79,7 +79,7 @@ theorem eval_interpolateArray_at_index
       pointValue points i
 ```
 
-`CompPoly.CPolynomial.CLagrange.eval_interpolateArray_at_mem` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/LagrangeArray.lean#L93))
+`CompPoly.CPolynomial.CLagrange.eval_interpolateArray_at_mem` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/LagrangeArray.lean#L93))
 
 > Evaluating the packed-array interpolant at a listed point returns that point's value.
 
@@ -96,5 +96,5 @@ theorem eval_interpolateArray_at_mem
 
 ## Sources
 
-- [CompPoly/Univariate/LagrangeArray.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/LagrangeArray.lean)
+- [CompPoly/Univariate/LagrangeArray.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/LagrangeArray.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Univariate.LagrangeArray.json)

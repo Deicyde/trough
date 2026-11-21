@@ -7,7 +7,7 @@ proof: formalized
 
 # Smooth Multiplicative-Subgroup Linear-Factor Splitting
 
-`CompPoly.Univariate.Roots.SmoothSubgroup.Basic`, in [CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.SmoothSubgroup.Basic`, in [CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean), by Valerii Huhnin.
 
 > Executable splitter for field-root products over finite fields whose
 > multiplicative group admits a smooth cyclic refinement schedule, following the
@@ -22,7 +22,7 @@ proof: formalized
 > * [Menezes, A. J., van Oorschot, P. C., and Vanstone, S. A., *Subgroup
 >     Refinement Algorithms for Root Finding in GF(q)*][MOV92]
 
-`CompPoly.CPolynomial.Roots.FiniteField.smoothSplitterInput` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L46))
+`CompPoly.CPolynomial.Roots.FiniteField.smoothSplitterInput` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L46))
 
 > Splitter-input predicate for a smooth cyclic splitter.
 >
@@ -35,7 +35,7 @@ def smoothSplitterInput {F : Type*} [Field F]
     (q : Nat) (_generator : F) (_schedule : Array Nat) (p : CPolynomial F) : Prop
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.SmoothCyclicRootContext` (structure, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L51))
+`CompPoly.CPolynomial.Roots.FiniteField.SmoothCyclicRootContext` (structure, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L51))
 
 > Package the executable smooth splitter with its field and schedule facts.
 
@@ -68,7 +68,7 @@ structure SmoothCyclicRootContext (F : Type*) [Field F] [BEq F] [LawfulBEq F] wh
                 IsLinearRootFactorCandidate factor a
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smoothCosetPoints` (definition, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L79))
+`CompPoly.CPolynomial.Roots.FiniteField.smoothCosetPoints` (definition, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L79))
 
 > Ordered elements of the coset `alpha * <gamma>` with the supplied order.
 
@@ -77,7 +77,7 @@ def smoothCosetPoints {F : Type*} [Field F]
     (alpha gamma : F) (order : Nat) : Array F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.linearFactorsFromLeafValues` (definition, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L84))
+`CompPoly.CPolynomial.Roots.FiniteField.linearFactorsFromLeafValues` (definition, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L84))
 
 > Emit linear factors for the points whose evaluated value is zero.
 
@@ -86,7 +86,7 @@ def linearFactorsFromLeafValues {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (points values : Array F) : Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smoothLeafLinearFactors` (definition, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L95))
+`CompPoly.CPolynomial.Roots.FiniteField.smoothLeafLinearFactors` (definition, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L95))
 
 > Leaf extraction by evaluating all elements of the current coset.
 
@@ -96,7 +96,7 @@ def smoothLeafLinearFactors {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (p : CPolynomial F) : Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smoothCosetLinearFactorsWithSchedule` (definition, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L102))
+`CompPoly.CPolynomial.Roots.FiniteField.smoothCosetLinearFactorsWithSchedule` (definition, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L102))
 
 > Schedule-driven nonzero-root refinement inside one multiplicative coset.
 
@@ -108,7 +108,7 @@ def smoothCosetLinearFactorsWithSchedule {F : Type*}
     List Nat → Nat → F → F → CPolynomial F → Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smoothNonzeroLinearFactorsWith` (definition, [line 143](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L143))
+`CompPoly.CPolynomial.Roots.FiniteField.smoothNonzeroLinearFactorsWith` (definition, [line 143](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L143))
 
 > Nonzero root extraction by smooth multiplicative-subgroup refinement.
 
@@ -120,7 +120,7 @@ def smoothNonzeroLinearFactorsWith {F : Type*}
     (p : CPolynomial F) : Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorsAlgorithmWith` (definition, [line 152](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L152))
+`CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorsAlgorithmWith` (definition, [line 152](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L152))
 
 > Smooth linear-factor splitting algorithm, including separate handling of root `0`.
 
@@ -132,7 +132,7 @@ def smoothLinearFactorsAlgorithmWith {F : Type*}
     (p : CPolynomial F) : Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smoothCyclicRootContextOf` (definition, [line 170](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L170))
+`CompPoly.CPolynomial.Roots.FiniteField.smoothCyclicRootContextOf` (definition, [line 170](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L170))
 
 > Build a smooth cyclic root context from executable constants and proof fields.
 
@@ -163,7 +163,7 @@ def smoothCyclicRootContextOf {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     SmoothCyclicRootContext F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorProductSplitterWith` (definition, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L208))
+`CompPoly.CPolynomial.Roots.FiniteField.smoothLinearFactorProductSplitterWith` (definition, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean#L208))
 
 > Adapt a smooth cyclic context to the generic splitter interface.
 
@@ -187,5 +187,5 @@ def smoothLinearFactorProductSplitterWith {F : Type*}
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean)
+- [CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/SmoothSubgroup/Basic.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Univariate.Roots.SmoothSubgroup.Basic.json)

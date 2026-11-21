@@ -7,12 +7,12 @@ proof: formalized
 
 # Low Product via NTT
 
-`CompPoly.Univariate.NTT.FastMulLow`, in [CompPoly/Univariate/NTT/FastMulLow.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/FastMulLow.lean), by Valerii Huhnin.
+`CompPoly.Univariate.NTT.FastMulLow`, in [CompPoly/Univariate/NTT/FastMulLow.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMulLow.lean), by Valerii Huhnin.
 
 > This file exposes an NTT-backed `Raw.MulLowContext` for computing the low
 > coefficients of a raw polynomial product.
 
-`CompPoly.CPolynomial.NTT.FastMulLow.run` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/FastMulLow.lean#L48))
+`CompPoly.CPolynomial.NTT.FastMulLow.run` (definition, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMulLow.lean#L48))
 
 ```lean
 def run
@@ -21,7 +21,7 @@ def run
     (k : Nat) (p q : CPolynomial.Raw R) : CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.NTT.FastMulLow.withFallback` (definition, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/FastMulLow.lean#L69))
+`CompPoly.CPolynomial.NTT.FastMulLow.withFallback` (definition, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMulLow.lean#L69))
 
 > NTT-backed low-product context with low-convolution as a fallback.
 >
@@ -44,5 +44,5 @@ def withFallback
 
 ## Sources
 
-- [CompPoly/Univariate/NTT/FastMulLow.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/FastMulLow.lean)
+- [CompPoly/Univariate/NTT/FastMulLow.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/FastMulLow.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.NTT.FastMulLow.json)

@@ -7,11 +7,11 @@ proof: formalized
 
 # Vanishing Polynomials for Array Nodes
 
-`CompPoly.Univariate.Vanishing`, in [CompPoly/Univariate/Vanishing.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Vanishing.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Vanishing`, in [CompPoly/Univariate/Vanishing.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Vanishing.lean), by Valerii Huhnin.
 
 > Reusable executable construction of `∏ x in xs, (X - x)`.
 
-`CompPoly.CPolynomial.vanishingPolynomialArray` (definition, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Vanishing.lean#L26))
+`CompPoly.CPolynomial.vanishingPolynomialArray` (definition, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Vanishing.lean#L26))
 
 > Direct folded vanishing polynomial `∏ x in xs, (X - x)`.
 
@@ -19,7 +19,7 @@ proof: formalized
 def vanishingPolynomialArray (xs : Array F) : CPolynomial F
 ```
 
-`CompPoly.CPolynomial.VanishingPolynomialContext` (structure, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Vanishing.lean#L116))
+`CompPoly.CPolynomial.VanishingPolynomialContext` (structure, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Vanishing.lean#L116))
 
 > Operation dictionary for array vanishing-polynomial construction.
 
@@ -31,7 +31,7 @@ structure VanishingPolynomialContext
     ∀ xs, vanishingPolynomial xs = CPolynomial.vanishingPolynomialArray xs
 ```
 
-`CompPoly.CPolynomial.VanishingPolynomialContext.direct` (definition, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Vanishing.lean#L125))
+`CompPoly.CPolynomial.VanishingPolynomialContext.direct` (definition, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Vanishing.lean#L125))
 
 > Direct folded vanishing-polynomial context.
 
@@ -39,7 +39,7 @@ structure VanishingPolynomialContext
 def direct : VanishingPolynomialContext F
 ```
 
-`CompPoly.CPolynomial.VanishingPolynomialContext.subproduct` (definition, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Vanishing.lean#L132))
+`CompPoly.CPolynomial.VanishingPolynomialContext.subproduct` (definition, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Vanishing.lean#L132))
 
 > Subproduct-tree-backed vanishing-polynomial context.
 
@@ -47,7 +47,7 @@ def direct : VanishingPolynomialContext F
 def subproduct (M : CPolynomial.MulContext F) : VanishingPolynomialContext F
 ```
 
-`CompPoly.CPolynomial.eval_vanishingPolynomialArray_eq_zero_of_mem` (theorem, [line 191](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Vanishing.lean#L191))
+`CompPoly.CPolynomial.eval_vanishingPolynomialArray_eq_zero_of_mem` (theorem, [line 191](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Vanishing.lean#L191))
 
 > Every listed node is a root of the direct vanishing polynomial.
 
@@ -63,5 +63,5 @@ theorem eval_vanishingPolynomialArray_eq_zero_of_mem
 
 ## Sources
 
-- [CompPoly/Univariate/Vanishing.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Vanishing.lean)
+- [CompPoly/Univariate/Vanishing.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Vanishing.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Univariate.Vanishing.json)

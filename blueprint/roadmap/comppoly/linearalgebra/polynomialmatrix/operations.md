@@ -7,14 +7,14 @@ proof: formalized
 
 # Polynomial-Matrix Operations
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.Operations`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.Operations`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean), by Valerii Huhnin.
 
 > Reusable executable operations for polynomial rows and row-major polynomial
 > matrices.  The multiplication and reduction entry points take explicit
 > univariate operation contexts so concrete fields can supply fast polynomial
 > arithmetic.
 
-`CompPoly.PolynomialMatrix.truncateX` (definition, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L34))
+`CompPoly.PolynomialMatrix.truncateX` (definition, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L34))
 
 > Keep the coefficients of degree `< order`.
 
@@ -23,7 +23,7 @@ def truncateX [Zero F] [BEq F] [LawfulBEq F] (order : Nat)
     (p : CPolynomial F) : CPolynomial F
 ```
 
-`CompPoly.PolynomialMatrix.truncateX_coeff` (theorem, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L40))
+`CompPoly.PolynomialMatrix.truncateX_coeff` (theorem, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L40))
 
 > Coefficients of an `X`-adic truncation.
 
@@ -34,7 +34,7 @@ theorem truncateX_coeff [Semiring F] [BEq F] [LawfulBEq F] (order : Nat)
       if i < order then CPolynomial.coeff p i else 0
 ```
 
-`CompPoly.PolynomialMatrix.MulLowContext` (structure, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L62))
+`CompPoly.PolynomialMatrix.MulLowContext` (structure, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L62))
 
 > Polynomial-matrix low-product backend.  The full multiplication context is
 > kept beside the low-product operation because recursive PM-basis still needs
@@ -48,7 +48,7 @@ structure MulLowContext (F : Type*) [Semiring F] [BEq F] [LawfulBEq F] where
   mulLow_eq : ∀ order p q, mulLow order p q = truncateX order (p * q)
 ```
 
-`CompPoly.PolynomialMatrix.MulLowContext.fromMulContext` (definition, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L71))
+`CompPoly.PolynomialMatrix.MulLowContext.fromMulContext` (definition, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L71))
 
 > Low-product backend obtained by truncating a full univariate product.
 
@@ -57,7 +57,7 @@ def fromMulContext [Semiring F] [BEq F] [LawfulBEq F]
     (mulCtx : CPolynomial.MulContext F) : MulLowContext F
 ```
 
-`CompPoly.PolynomialMatrix.MulLowContext.raw` (definition, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L83))
+`CompPoly.PolynomialMatrix.MulLowContext.raw` (definition, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L83))
 
 > Low-product backend backed directly by a raw low-product implementation.
 
@@ -67,7 +67,7 @@ def raw [Semiring F] [BEq F] [LawfulBEq F]
     (rawCtx : CPolynomial.Raw.MulLowContext F) : MulLowContext F
 ```
 
-`CompPoly.PolynomialMatrix.ofFn` (definition, [line 106](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L106))
+`CompPoly.PolynomialMatrix.ofFn` (definition, [line 106](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L106))
 
 > Build a row-major polynomial matrix from an indexed entry function.
 
@@ -76,7 +76,7 @@ def ofFn [Zero F] (rows width : Nat) (entry : Nat → Nat → CPolynomial F) :
     PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.zero` (definition, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L112))
+`CompPoly.PolynomialMatrix.zero` (definition, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L112))
 
 > The zero matrix of a fixed shape.
 
@@ -84,7 +84,7 @@ def ofFn [Zero F] (rows width : Nat) (entry : Nat → Nat → CPolynomial F) :
 def zero [Zero F] (rows width : Nat) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.identity` (definition, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L116))
+`CompPoly.PolynomialMatrix.identity` (definition, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L116))
 
 > The polynomial identity matrix of size `n`.
 
@@ -93,7 +93,7 @@ def identity [Semiring F] [BEq F] [LawfulBEq F] [Nontrivial F] (n : Nat) :
     PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.transpose` (definition, [line 121](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L121))
+`CompPoly.PolynomialMatrix.transpose` (definition, [line 121](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L121))
 
 > Matrix transpose, using zero defaults for ragged input rows.
 
@@ -101,7 +101,7 @@ def identity [Semiring F] [BEq F] [LawfulBEq F] [Nontrivial F] (n : Nat) :
 def transpose [Zero F] (M : PolynomialMatrix F) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.rowDotWith` (definition, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L126))
+`CompPoly.PolynomialMatrix.rowDotWith` (definition, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L126))
 
 > Dot product of two polynomial rows using an explicit univariate
 > multiplication context.
@@ -112,7 +112,7 @@ def rowDotWith [Semiring F] [BEq F] [LawfulBEq F]
     CPolynomial F
 ```
 
-`CompPoly.PolynomialMatrix.rowMulMatrixWith` (definition, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L133))
+`CompPoly.PolynomialMatrix.rowMulMatrixWith` (definition, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L133))
 
 > Row-by-matrix product using an explicit univariate multiplication context.
 
@@ -122,7 +122,7 @@ def rowMulMatrixWith [Semiring F] [BEq F] [LawfulBEq F]
     (M : PolynomialMatrix F) : PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.mulWith` (definition, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L142))
+`CompPoly.PolynomialMatrix.mulWith` (definition, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L142))
 
 > Matrix product using an explicit univariate multiplication context.
 
@@ -132,7 +132,7 @@ def mulWith [Semiring F] [BEq F] [LawfulBEq F]
     PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.mul` (definition, [line 148](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L148))
+`CompPoly.PolynomialMatrix.mul` (definition, [line 148](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L148))
 
 > Matrix product backed by canonical univariate multiplication.
 
@@ -141,7 +141,7 @@ def mul [Semiring F] [BEq F] [LawfulBEq F]
     (A B : PolynomialMatrix F) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.add` (definition, [line 153](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L153))
+`CompPoly.PolynomialMatrix.add` (definition, [line 153](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L153))
 
 > Pointwise matrix addition, using zero defaults for ragged inputs.
 
@@ -150,7 +150,7 @@ def add [Semiring F] [BEq F] [LawfulBEq F]
     (A B : PolynomialMatrix F) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.sub` (definition, [line 159](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L159))
+`CompPoly.PolynomialMatrix.sub` (definition, [line 159](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L159))
 
 > Pointwise matrix subtraction, using zero defaults for ragged inputs.
 
@@ -159,7 +159,7 @@ def sub [Ring F] [BEq F] [LawfulBEq F]
     (A B : PolynomialMatrix F) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.block` (definition, [line 165](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L165))
+`CompPoly.PolynomialMatrix.block` (definition, [line 165](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L165))
 
 > Extract a rectangular block with zero defaults for out-of-range entries.
 
@@ -168,7 +168,7 @@ def block [Zero F] (M : PolynomialMatrix F)
     (rowStart rowCount colStart colCount : Nat) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.joinSquareBlocks` (definition, [line 171](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L171))
+`CompPoly.PolynomialMatrix.joinSquareBlocks` (definition, [line 171](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L171))
 
 > Join four equally sized square blocks into one square matrix.
 
@@ -177,7 +177,7 @@ def joinSquareBlocks [Zero F] (half : Nat)
     (C₁₁ C₁₂ C₂₁ C₂₂ : PolynomialMatrix F) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.nextPowerOfTwoAtLeastLoop` (definition, [line 186](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L186))
+`CompPoly.PolynomialMatrix.nextPowerOfTwoAtLeastLoop` (definition, [line 186](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L186))
 
 > Fuel-bounded doubling loop for the smallest power of two at least `target`.
 
@@ -186,7 +186,7 @@ def nextPowerOfTwoAtLeastLoop (target : Nat) :
     Nat → Nat → Nat
 ```
 
-`CompPoly.PolynomialMatrix.nextPowerOfTwoAtLeast` (definition, [line 196](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L196))
+`CompPoly.PolynomialMatrix.nextPowerOfTwoAtLeast` (definition, [line 196](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L196))
 
 > Smallest power of two at least `target`, with `1` returned for `0`.
 
@@ -194,7 +194,7 @@ def nextPowerOfTwoAtLeastLoop (target : Nat) :
 def nextPowerOfTwoAtLeast (target : Nat) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.multiplicationDimension` (definition, [line 200](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L200))
+`CompPoly.PolynomialMatrix.multiplicationDimension` (definition, [line 200](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L200))
 
 > Runtime dimension controlling rectangular polynomial-matrix multiplication.
 
@@ -202,7 +202,7 @@ def nextPowerOfTwoAtLeast (target : Nat) : Nat
 def multiplicationDimension [Zero F] (A B : PolynomialMatrix F) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.padSquare` (definition, [line 204](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L204))
+`CompPoly.PolynomialMatrix.padSquare` (definition, [line 204](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L204))
 
 > Pad a matrix to an `n × n` square using the zero-default block extractor.
 
@@ -211,7 +211,7 @@ def padSquare [Zero F] (n : Nat) (M : PolynomialMatrix F) :
     PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.trimShape` (definition, [line 209](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L209))
+`CompPoly.PolynomialMatrix.trimShape` (definition, [line 209](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L209))
 
 > Trim a matrix to a rectangular output shape.
 
@@ -220,7 +220,7 @@ def trimShape [Zero F] (rows width : Nat) (M : PolynomialMatrix F) :
     PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.natArraySlice` (definition, [line 214](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L214))
+`CompPoly.PolynomialMatrix.natArraySlice` (definition, [line 214](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L214))
 
 > Slice `count` natural-number entries, using zero defaults out of bounds.
 
@@ -228,7 +228,7 @@ def trimShape [Zero F] (rows width : Nat) (M : PolynomialMatrix F) :
 def natArraySlice (values : Array Nat) (start count : Nat) : Array Nat
 ```
 
-`CompPoly.PolynomialMatrix.maxNatArrays` (definition, [line 218](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L218))
+`CompPoly.PolynomialMatrix.maxNatArrays` (definition, [line 218](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L218))
 
 > Pointwise maximum of two natural-number arrays.
 
@@ -236,7 +236,7 @@ def natArraySlice (values : Array Nat) (start count : Nat) : Array Nat
 def maxNatArrays (a b : Array Nat) : Array Nat
 ```
 
-`CompPoly.PolynomialMatrix.polynomialCoeffCap` (definition, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L223))
+`CompPoly.PolynomialMatrix.polynomialCoeffCap` (definition, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L223))
 
 > Number of coefficients needed to represent a polynomial exactly.
 
@@ -244,7 +244,7 @@ def maxNatArrays (a b : Array Nat) : Array Nat
 def polynomialCoeffCap [Zero F] [BEq F] (p : CPolynomial F) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.productCoeffCap` (definition, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L227))
+`CompPoly.PolynomialMatrix.productCoeffCap` (definition, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L227))
 
 > Number of low coefficients sufficient for one product term exactly.
 
@@ -252,7 +252,7 @@ def polynomialCoeffCap [Zero F] [BEq F] (p : CPolynomial F) : Nat
 def productCoeffCap [Zero F] [BEq F] (p q : CPolynomial F) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.rowMulMatrixEntryCoeffCap` (definition, [line 231](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L231))
+`CompPoly.PolynomialMatrix.rowMulMatrixEntryCoeffCap` (definition, [line 231](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L231))
 
 > Per-entry coefficient cap for one row-by-matrix product entry.
 
@@ -261,7 +261,7 @@ def rowMulMatrixEntryCoeffCap [Zero F] [BEq F]
     (row : PolynomialRow F) (M : PolynomialMatrix F) (j : Nat) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.rowTruncateColumns` (definition, [line 238](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L238))
+`CompPoly.PolynomialMatrix.rowTruncateColumns` (definition, [line 238](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L238))
 
 > Truncate one row with independent output-column orders.
 
@@ -270,7 +270,7 @@ def rowTruncateColumns [Zero F] [BEq F] [LawfulBEq F]
     (orders : Array Nat) (row : PolynomialRow F) : PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.truncateColumns` (definition, [line 244](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L244))
+`CompPoly.PolynomialMatrix.truncateColumns` (definition, [line 244](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L244))
 
 > Truncate a matrix with independent output-column orders.
 
@@ -279,7 +279,7 @@ def truncateColumns [Zero F] [BEq F] [LawfulBEq F]
     (orders : Array Nat) (M : PolynomialMatrix F) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.mulTruncXWith` (definition, [line 249](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L249))
+`CompPoly.PolynomialMatrix.mulTruncXWith` (definition, [line 249](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L249))
 
 > Multiply and retain only coefficients of degree `< order`.
 
@@ -289,7 +289,7 @@ def mulTruncXWith [Semiring F] [BEq F] [LawfulBEq F]
     (p q : CPolynomial F) : CPolynomial F
 ```
 
-`CompPoly.PolynomialMatrix.mulLowXWith` (definition, [line 255](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L255))
+`CompPoly.PolynomialMatrix.mulLowXWith` (definition, [line 255](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L255))
 
 > Low-product entry point for the first `order` coefficients.
 
@@ -299,7 +299,7 @@ def mulLowXWith [Semiring F] [BEq F] [LawfulBEq F]
     (p q : CPolynomial F) : CPolynomial F
 ```
 
-`CompPoly.PolynomialMatrix.divXTrunc` (definition, [line 261](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L261))
+`CompPoly.PolynomialMatrix.divXTrunc` (definition, [line 261](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L261))
 
 > Divide by `X^shift` and keep `order` coefficients.
 
@@ -308,7 +308,7 @@ def divXTrunc [Zero F] [BEq F] [LawfulBEq F] (shift order : Nat)
     (p : CPolynomial F) : CPolynomial F
 ```
 
-`CompPoly.PolynomialMatrix.modByMonicWith` (definition, [line 268](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L268))
+`CompPoly.PolynomialMatrix.modByMonicWith` (definition, [line 268](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L268))
 
 > Reduce by a monic modulus when one is present.  A zero modulus is treated as
 > an absent modulus and leaves the input unchanged.
@@ -319,7 +319,7 @@ def modByMonicWith [Field F] [BEq F] [LawfulBEq F]
     CPolynomial F
 ```
 
-`CompPoly.PolynomialMatrix.rowModDiagonalWith` (definition, [line 275](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L275))
+`CompPoly.PolynomialMatrix.rowModDiagonalWith` (definition, [line 275](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L275))
 
 > Reduce a row by independent diagonal moduli.  The output width is the number
 > of supplied moduli.
@@ -330,7 +330,7 @@ def rowModDiagonalWith [Field F] [BEq F] [LawfulBEq F]
     (row : PolynomialRow F) : PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.modDiagonalWith` (definition, [line 282](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L282))
+`CompPoly.PolynomialMatrix.modDiagonalWith` (definition, [line 282](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L282))
 
 > Reduce every matrix row by independent diagonal moduli.
 
@@ -340,7 +340,7 @@ def modDiagonalWith [Field F] [BEq F] [LawfulBEq F]
     (M : PolynomialMatrix F) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.rowMulMatrixModDiagonalWith` (definition, [line 288](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L288))
+`CompPoly.PolynomialMatrix.rowMulMatrixModDiagonalWith` (definition, [line 288](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L288))
 
 > Row-by-matrix product followed by diagonal modular reduction.
 
@@ -351,7 +351,7 @@ def rowMulMatrixModDiagonalWith [Field F] [BEq F] [LawfulBEq F]
     (moduli : Array (CPolynomial F)) : PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.rowMulMatrixTruncColumnWith` (definition, [line 297](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L297))
+`CompPoly.PolynomialMatrix.rowMulMatrixTruncColumnWith` (definition, [line 297](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L297))
 
 > Row-by-matrix product with independent output-column truncation.  Column
 > `j` keeps coefficients of degree `< orders[j]`; this is the residual-window
@@ -363,7 +363,7 @@ def rowMulMatrixTruncColumnWith [Semiring F] [BEq F] [LawfulBEq F]
     (row : PolynomialRow F) (M : PolynomialMatrix F) : PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.mulTruncColumnWith` (definition, [line 309](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L309))
+`CompPoly.PolynomialMatrix.mulTruncColumnWith` (definition, [line 309](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L309))
 
 > Matrix product with independent output-column truncation.
 
@@ -373,7 +373,7 @@ def mulTruncColumnWith [Semiring F] [BEq F] [LawfulBEq F]
     (A B : PolynomialMatrix F) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.mulTruncColumnStrassenWithFuel` (definition, [line 316](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L316))
+`CompPoly.PolynomialMatrix.mulTruncColumnStrassenWithFuel` (definition, [line 316](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L316))
 
 > Fuel-bounded Strassen-style matrix product with independent output-column
 > truncation orders.
@@ -384,7 +384,7 @@ def mulTruncColumnStrassenWithFuel [Ring F] [BEq F] [LawfulBEq F]
     Nat → Array Nat → PolynomialMatrix F → PolynomialMatrix F → PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.mulTruncColumnStrassenWith` (definition, [line 362](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L362))
+`CompPoly.PolynomialMatrix.mulTruncColumnStrassenWith` (definition, [line 362](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L362))
 
 > Strassen-style matrix product with independent output-column truncation
 > orders and conservative default fuel.
@@ -395,7 +395,7 @@ def mulTruncColumnStrassenWith [Ring F] [BEq F] [LawfulBEq F]
     (orders : Array Nat) (A B : PolynomialMatrix F) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.rowMulMatrixBoundedWith` (definition, [line 371](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L371))
+`CompPoly.PolynomialMatrix.rowMulMatrixBoundedWith` (definition, [line 371](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L371))
 
 > Row-by-matrix product with per-output-entry degree caps inferred from input
 > degree profiles.  This reconstructs the exact row product while routing every
@@ -407,7 +407,7 @@ def rowMulMatrixBoundedWith [Semiring F] [BEq F] [LawfulBEq F]
     (M : PolynomialMatrix F) : PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.mulBoundedWith` (definition, [line 384](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L384))
+`CompPoly.PolynomialMatrix.mulBoundedWith` (definition, [line 384](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L384))
 
 > Matrix product reconstructed from inferred per-entry degree caps.  Recursive
 > composition uses this only as its small-leaf and fuel-exhausted fallback.
@@ -418,7 +418,7 @@ def mulBoundedWith [Semiring F] [BEq F] [LawfulBEq F]
     PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.mulStrassenWithFuel` (definition, [line 395](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L395))
+`CompPoly.PolynomialMatrix.mulStrassenWithFuel` (definition, [line 395](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L395))
 
 > Fuel-bounded Strassen-style matrix product.
 >
@@ -433,7 +433,7 @@ def mulStrassenWithFuel [Ring F] [BEq F] [LawfulBEq F]
     Nat → PolynomialMatrix F → PolynomialMatrix F → PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.mulStrassenWith` (definition, [line 436](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L436))
+`CompPoly.PolynomialMatrix.mulStrassenWith` (definition, [line 436](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L436))
 
 > Strassen-style matrix product with a conservative default fuel.
 
@@ -443,7 +443,7 @@ def mulStrassenWith [Ring F] [BEq F] [LawfulBEq F]
     (A B : PolynomialMatrix F) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.rowSatisfiesModularBool` (definition, [line 443](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L443))
+`CompPoly.PolynomialMatrix.rowSatisfiesModularBool` (definition, [line 443](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L443))
 
 > Executable modular-equation row predicate.
 
@@ -454,7 +454,7 @@ def rowSatisfiesModularBool [Field F] [BEq F] [LawfulBEq F]
     (moduli : Array (CPolynomial F)) : Bool
 ```
 
-`CompPoly.PolynomialMatrix.shiftedRowDegreeProfile` (definition, [line 450](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L450))
+`CompPoly.PolynomialMatrix.shiftedRowDegreeProfile` (definition, [line 450](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L450))
 
 > Shifted row-degree profile for all rows.
 
@@ -463,7 +463,7 @@ def shiftedRowDegreeProfile [Zero F] [BEq F] (M : PolynomialMatrix F)
     (shift : Array Nat) : Array (Option Nat)
 ```
 
-`CompPoly.PolynomialMatrix.RowChoice` (structure, [line 455](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L455))
+`CompPoly.PolynomialMatrix.RowChoice` (structure, [line 455](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L455))
 
 > Candidate row selected by least-shifted-degree scanning.
 
@@ -474,7 +474,7 @@ structure RowChoice (F : Type*) [Zero F] where
   degree : Nat
 ```
 
-`CompPoly.PolynomialMatrix.betterRowChoice` (definition, [line 461](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L461))
+`CompPoly.PolynomialMatrix.betterRowChoice` (definition, [line 461](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L461))
 
 > Tie-breaking order for least-shifted-degree row selection.
 
@@ -482,7 +482,7 @@ structure RowChoice (F : Type*) [Zero F] where
 def betterRowChoice [Zero F] (candidate current : RowChoice F) : Bool
 ```
 
-`CompPoly.PolynomialMatrix.leastShiftedDegreeRowStep?` (definition, [line 466](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L466))
+`CompPoly.PolynomialMatrix.leastShiftedDegreeRowStep?` (definition, [line 466](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L466))
 
 > One left-to-right scan step for least-shifted-degree row selection.
 
@@ -492,7 +492,7 @@ def leastShiftedDegreeRowStep? [Zero F] [BEq F]
     (best : Option (RowChoice F)) (i : Nat) : Option (RowChoice F)
 ```
 
-`CompPoly.PolynomialMatrix.leastShiftedDegreeChoice?` (definition, [line 480](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L480))
+`CompPoly.PolynomialMatrix.leastShiftedDegreeChoice?` (definition, [line 480](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L480))
 
 > Scan row indices for the best least-shifted-degree candidate.
 
@@ -501,7 +501,7 @@ def leastShiftedDegreeChoice? [Zero F] [BEq F]
     (M : PolynomialMatrix F) (shift : Array Nat) : Option (RowChoice F)
 ```
 
-`CompPoly.PolynomialMatrix.leastShiftedDegreeRow?` (definition, [line 485](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L485))
+`CompPoly.PolynomialMatrix.leastShiftedDegreeRow?` (definition, [line 485](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean#L485))
 
 > Select a nonzero row of least shifted degree.
 
@@ -518,5 +518,5 @@ def leastShiftedDegreeRow? [Zero F] [BEq F]
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Operations.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.Operations.json)

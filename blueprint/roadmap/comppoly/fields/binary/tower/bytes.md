@@ -7,7 +7,7 @@ proof: formalized
 
 # Serialization of the binary tower
 
-`CompPoly.Fields.Binary.Tower.Bytes`, in [CompPoly/Fields/Binary/Tower/Bytes.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean), by Derek Sorensen.
+`CompPoly.Fields.Binary.Tower.Bytes`, in [CompPoly/Fields/Binary/Tower/Bytes.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean), by Derek Sorensen.
 
 > A level-`k` tower element `ConcreteBTField k` is its `2 ^ k` low-first tower-basis coordinates.
 > Its canonical natural is that bit pattern read as an integer and its encoding the little-endian
@@ -18,28 +18,28 @@ proof: formalized
 > These are tower-basis coordinates. `AesField` at eight bits and `ConcreteBF128Ghash` at 128 bits
 > use different bases, and their encodings are not interchangeable with these.
 
-`ConcreteBinaryTower.ConcreteBTField.canonicalNat_bound` (theorem, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L38))
+`ConcreteBinaryTower.ConcreteBTField.canonicalNat_bound` (theorem, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L38))
 
 ```lean
 theorem canonicalNat_bound (k : ℕ) :
     CanonicalNat.bound (ConcreteBTField k) = 2 ^ 2 ^ k
 ```
 
-`ConcreteBinaryTower.ConcreteBTField.canonicalNat_toNat` (theorem, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L41))
+`ConcreteBinaryTower.ConcreteBTField.canonicalNat_toNat` (theorem, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L41))
 
 ```lean
 theorem canonicalNat_toNat {k : ℕ} (x : ConcreteBTField k) :
     CanonicalNat.toNat x = x.toNat
 ```
 
-`ConcreteBinaryTower.ConcreteBTField.byteCodec_width` (theorem, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L44))
+`ConcreteBinaryTower.ConcreteBTField.byteCodec_width` (theorem, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L44))
 
 ```lean
 theorem byteCodec_width (k : ℕ) :
     ByteCodec.width (ConcreteBTField k) = Bytes.bytesFor (2 ^ 2 ^ k)
 ```
 
-`ConcreteBinaryTower.ConcreteBTField.byteCodec_width_eq` (theorem, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L49))
+`ConcreteBinaryTower.ConcreteBTField.byteCodec_width_eq` (theorem, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L49))
 
 > A level-`k` element takes `⌈2 ^ k / 8⌉` bytes: one byte at level three, sixteen at
 > level seven.
@@ -49,19 +49,19 @@ theorem byteCodec_width_eq (k : ℕ) :
     ByteCodec.width (ConcreteBTField k) = (2 ^ k + 7) / 8
 ```
 
-`ConcreteBinaryTower.ConcreteBTField.byteCodec_width_three` (theorem, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L53))
+`ConcreteBinaryTower.ConcreteBTField.byteCodec_width_three` (theorem, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L53))
 
 ```lean
 theorem byteCodec_width_three : ByteCodec.width (ConcreteBTField 3) = 1
 ```
 
-`ConcreteBinaryTower.ConcreteBTField.byteCodec_width_seven` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L57))
+`ConcreteBinaryTower.ConcreteBTField.byteCodec_width_seven` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L57))
 
 ```lean
 theorem byteCodec_width_seven : ByteCodec.width (ConcreteBTField 7) = 16
 ```
 
-`ConcreteBinaryTower.Fast.FastBT128.toBitVec` (definition, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L67))
+`ConcreteBinaryTower.Fast.FastBT128.toBitVec` (definition, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L67))
 
 > The two limbs read as a `2 ^ 7`-bit word, `lo` first. The width is written `2 ^ 7` so that
 > the carrier's codec has the same width term as `ConcreteBTField 7`.
@@ -70,7 +70,7 @@ theorem byteCodec_width_seven : ByteCodec.width (ConcreteBTField 7) = 16
 def toBitVec (v : FastBT128) : BitVec (2 ^ 7)
 ```
 
-`ConcreteBinaryTower.Fast.FastBT128.ofBitVec` (definition, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L70))
+`ConcreteBinaryTower.Fast.FastBT128.ofBitVec` (definition, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L70))
 
 > Split a `2 ^ 7`-bit word into two limbs.
 
@@ -78,55 +78,55 @@ def toBitVec (v : FastBT128) : BitVec (2 ^ 7)
 def ofBitVec (b : BitVec (2 ^ 7)) : FastBT128
 ```
 
-`ConcreteBinaryTower.Fast.FastBT128.toNat_lt` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L72))
+`ConcreteBinaryTower.Fast.FastBT128.toNat_lt` (theorem, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L72))
 
 ```lean
 theorem toNat_lt (v : FastBT128) : v.toNat < 2 ^ 2 ^ 7
 ```
 
-`ConcreteBinaryTower.Fast.FastBT128.toNat_ofNat` (theorem, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L78))
+`ConcreteBinaryTower.Fast.FastBT128.toNat_ofNat` (theorem, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L78))
 
 ```lean
 theorem toNat_ofNat (n : ℕ) : (ofNat n).toNat = n % 2 ^ 2 ^ 7
 ```
 
-`ConcreteBinaryTower.Fast.FastBT128.ofNat_toNat` (theorem, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L82))
+`ConcreteBinaryTower.Fast.FastBT128.ofNat_toNat` (theorem, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L82))
 
 ```lean
 theorem ofNat_toNat (v : FastBT128) : ofNat v.toNat = v
 ```
 
-`ConcreteBinaryTower.Fast.FastBT128.ofBitVec_toBitVec` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L93))
+`ConcreteBinaryTower.Fast.FastBT128.ofBitVec_toBitVec` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L93))
 
 ```lean
 theorem ofBitVec_toBitVec (v : FastBT128) : ofBitVec (toBitVec v) = v
 ```
 
-`ConcreteBinaryTower.Fast.FastBT128.toBitVec_ofBitVec` (theorem, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L96))
+`ConcreteBinaryTower.Fast.FastBT128.toBitVec_ofBitVec` (theorem, [line 96](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L96))
 
 ```lean
 theorem toBitVec_ofBitVec (b : BitVec (2 ^ 7)) : toBitVec (ofBitVec b) = b
 ```
 
-`ConcreteBinaryTower.Fast.FastBT128.canonicalNat_bound` (theorem, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L105))
+`ConcreteBinaryTower.Fast.FastBT128.canonicalNat_bound` (theorem, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L105))
 
 ```lean
 theorem canonicalNat_bound : CanonicalNat.bound FastBT128 = 2 ^ 2 ^ 7
 ```
 
-`ConcreteBinaryTower.Fast.FastBT128.canonicalNat_toNat` (theorem, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L107))
+`ConcreteBinaryTower.Fast.FastBT128.canonicalNat_toNat` (theorem, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L107))
 
 ```lean
 theorem canonicalNat_toNat (v : FastBT128) : CanonicalNat.toNat v = v.toNat
 ```
 
-`ConcreteBinaryTower.Fast.FastBT128.byteCodec_width` (theorem, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L111))
+`ConcreteBinaryTower.Fast.FastBT128.byteCodec_width` (theorem, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L111))
 
 ```lean
 theorem byteCodec_width : ByteCodec.width FastBT128 = 16
 ```
 
-`ConcreteBinaryTower.Fast.FastBT128.toList_toBytes_toConcrete` (theorem, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L122))
+`ConcreteBinaryTower.Fast.FastBT128.toList_toBytes_toConcrete` (theorem, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L122))
 
 > The fast carrier and the level-seven tower field encode the same element identically.
 >
@@ -140,7 +140,7 @@ theorem toList_toBytes_toConcrete (v : FastBT128) :
     (ByteCodec.toBytes (toConcrete v)).toList = (ByteCodec.toBytes v).toList
 ```
 
-`ConcreteBinaryTower.Fast.FastBT128.toByteArray_toConcrete` (theorem, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean#L133))
+`ConcreteBinaryTower.Fast.FastBT128.toByteArray_toConcrete` (theorem, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean#L133))
 
 > The same agreement as a `ByteArray` equality, the form a transcript sees.
 
@@ -162,5 +162,5 @@ theorem toByteArray_toConcrete (v : FastBT128) :
 
 ## Sources
 
-- [CompPoly/Fields/Binary/Tower/Bytes.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Bytes.lean)
+- [CompPoly/Fields/Binary/Tower/Bytes.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Bytes.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Fields.Binary.Tower.Bytes.json)

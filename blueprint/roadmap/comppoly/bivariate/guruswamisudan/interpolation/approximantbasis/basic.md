@@ -7,7 +7,7 @@ proof: formalized
 
 # Approximant-Basis Guruswami-Sudan Modular Data
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Basic`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Basic`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean), by Valerii Huhnin.
 
 > Construction of the diagonal modular equations used by the approximant-basis
 > interpolation backend.
@@ -18,7 +18,7 @@ proof: formalized
 >     Villard, G., *Faster algorithms for multivariate interpolation with
 >     multiplicities and simultaneous polynomial approximations*][CJNSV15]
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.gsModuli` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L43))
+`CompPoly.GuruswamiSudan.ApproximantBasis.gsModuli` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L43))
 
 > GS column moduli `M_b = G^(s-b)`, for `b = 0, ..., s-1`, built by iterated
 > context multiplication so each power costs one fast product.
@@ -28,7 +28,7 @@ def gsModuli (mulCtx : CPolynomial.MulContext F) (G : CPolynomial F) (s : Nat) :
     Array (CPolynomial F)
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationEntry` (definition, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L56))
+`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationEntry` (definition, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L56))
 
 > Specification for one relation-matrix entry
 > `choose(j,b) * R^(j-b) mod M_b`, with zero below the triangular support.
@@ -40,7 +40,7 @@ def gsRelationEntry (modCtx : CPolynomial.ModContext F)
     (R modulus : CPolynomial F) (j b : Nat) : CPolynomial F
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationColumn` (definition, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L68))
+`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationColumn` (definition, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L68))
 
 > One relation-matrix column, built by iterated multiply-and-reduce.  Entry
 > `j` of column `b` is `choose(j,b) * R^(j-b) mod M_b`; the reduced power of `R`
@@ -54,7 +54,7 @@ def gsRelationColumn (mulCtx : CPolynomial.MulContext F)
     Array (CPolynomial F)
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationMatrixWithModuli` (definition, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L82))
+`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationMatrixWithModuli` (definition, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L82))
 
 > GS relation matrix for the congruences `p * Fmat = 0 mod (G^s, ..., G)`,
 > assembled from incrementally built columns over precomputed moduli.
@@ -66,7 +66,7 @@ def gsRelationMatrixWithModuli (mulCtx : CPolynomial.MulContext F)
     (params : GSInterpParams) : PolynomialMatrix F
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationMatrixWithRG` (definition, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L94))
+`CompPoly.GuruswamiSudan.ApproximantBasis.gsRelationMatrixWithRG` (definition, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L94))
 
 > GS relation matrix for the congruences
 > `p * Fmat = 0 mod (G^s, ..., G)`.
@@ -77,7 +77,7 @@ def gsRelationMatrixWithRG (mulCtx : CPolynomial.MulContext F)
     (R G : CPolynomial F) (params : GSInterpParams) : PolynomialMatrix F
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.GSModularData` (structure, [line 101](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L101))
+`CompPoly.GuruswamiSudan.ApproximantBasis.GSModularData` (structure, [line 101](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L101))
 
 > Complete GS modular-equation data for the approximant backend.
 
@@ -90,7 +90,7 @@ structure GSModularData (F : Type*) [Zero F] where
   shift : Array Nat
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.buildGSModularDataWithRG` (definition, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L111))
+`CompPoly.GuruswamiSudan.ApproximantBasis.buildGSModularDataWithRG` (definition, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L111))
 
 > Build column moduli, the binomial relation matrix, and the GS shift array
 > from precomputed interpolation polynomials `R` and `G`.  The moduli are
@@ -103,7 +103,7 @@ def buildGSModularDataWithRG
     (R G : CPolynomial F) (params : GSInterpParams) : GSModularData F
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.buildGSModularData` (definition, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L124))
+`CompPoly.GuruswamiSudan.ApproximantBasis.buildGSModularData` (definition, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L124))
 
 > Build `G`, `R`, column moduli, the binomial relation matrix, and the GS
 > shift array.
@@ -117,7 +117,7 @@ def buildGSModularData
     (points : Array (F × F)) (params : GSInterpParams) : GSModularData F
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.modularEquation` (definition, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L135))
+`CompPoly.GuruswamiSudan.ApproximantBasis.modularEquation` (definition, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean#L135))
 
 > Modular-equation view of GS modular data.
 
@@ -133,5 +133,5 @@ def modularEquation (data : GSModularData F) : ModularEquation F
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Basic.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Basic.json)

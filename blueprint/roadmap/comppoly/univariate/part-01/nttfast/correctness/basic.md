@@ -7,12 +7,12 @@ proof: formalized
 
 # Basic NTTFast correctness facts
 
-`CompPoly.Univariate.NTTFast.Correctness.Basic`, in [CompPoly/Univariate/NTTFast/Correctness/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean), by Valerii Huhnin.
+`CompPoly.Univariate.NTTFast.Correctness.Basic`, in [CompPoly/Univariate/NTTFast/Correctness/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean), by Valerii Huhnin.
 
 > Cached-plan well-formedness, twiddle-table facts, and shared proof helpers for
 > `NTTFast` correctness.
 
-`CompPoly.CPolynomial.NTTFast.Plan.WellFormed` (definition, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L30))
+`CompPoly.CPolynomial.NTTFast.Plan.WellFormed` (definition, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L30))
 
 > Well-formedness condition for cached plan data.
 
@@ -20,7 +20,7 @@ proof: formalized
 def WellFormed (P : Plan R) : Prop
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.twiddlePowers_size` (theorem, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L77))
+`CompPoly.CPolynomial.NTTFast.Plan.twiddlePowers_size` (theorem, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L77))
 
 > The cached twiddle powers for a stage have exactly one entry per butterfly offset.
 
@@ -29,7 +29,7 @@ theorem twiddlePowers_size (D : NTT.Domain R) (stage : Nat) :
     (twiddlePowers D stage).size = 2 ^ stage
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.twiddlePowers_getD_eq_pow` (theorem, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L86))
+`CompPoly.CPolynomial.NTTFast.Plan.twiddlePowers_getD_eq_pow` (theorem, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L86))
 
 > Entries of the cached twiddle powers are the corresponding powers of the stage root.
 
@@ -40,7 +40,7 @@ theorem twiddlePowers_getD_eq_pow (D : NTT.Domain R) (stage j : Nat)
       (D.omega ^ (D.n / 2 ^ (stage + 1))) ^ j
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.twiddleTable_getD_eq_twiddlePowers` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L100))
+`CompPoly.CPolynomial.NTTFast.Plan.twiddleTable_getD_eq_twiddlePowers` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L100))
 
 > Looking up a valid stage in the twiddle table returns that stage's twiddle powers.
 
@@ -50,7 +50,7 @@ theorem twiddleTable_getD_eq_twiddlePowers
     (twiddleTable D).getD stage #[] = twiddlePowers D stage
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.ofDomain_wellFormed` (theorem, [line 106](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L106))
+`CompPoly.CPolynomial.NTTFast.Plan.ofDomain_wellFormed` (theorem, [line 106](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L106))
 
 > A plan built directly from a domain has well-formed cached data.
 
@@ -59,7 +59,7 @@ theorem ofDomain_wellFormed (D : NTT.Domain R) :
     WellFormed (ofDomain D)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.loadNaturalArray_eq` (theorem, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L111))
+`CompPoly.CPolynomial.NTTFast.Plan.loadNaturalArray_eq` (theorem, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L111))
 
 > Loading raw coefficients into a domain-sized array is `Array.ofFn` with zero padding.
 
@@ -68,7 +68,7 @@ theorem loadNaturalArray_eq (D : NTT.Domain R) (a : Array R) :
     NTT.loadNaturalArray D a = Array.ofFn (fun i : D.Idx ↦ a.getD i.1 0)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.foldl_range_eq_rec` (theorem, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L116))
+`CompPoly.CPolynomial.NTTFast.Plan.foldl_range_eq_rec` (theorem, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L116))
 
 > Folding over `List.range` is equivalent to the corresponding natural recursion.
 
@@ -78,7 +78,7 @@ theorem foldl_range_eq_rec {α : Type*} (f : Nat → α → α) (x : α) :
       List.foldl (fun acc i ↦ f i acc) x (List.range n) = Nat.rec x (fun i acc ↦ f i acc) n
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.foldl_range_eq_rec_fst` (theorem, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L124))
+`CompPoly.CPolynomial.NTTFast.Plan.foldl_range_eq_rec_fst` (theorem, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L124))
 
 > First projections of pair-valued folds over `List.range` match natural recursion.
 
@@ -89,7 +89,7 @@ theorem foldl_range_eq_rec_fst {α β : Type*}
       (Nat.rec (motive := fun _ ↦ α × β) x (fun i acc ↦ f i acc) n).1
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.foldl_range_congr` (theorem, [line 134](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L134))
+`CompPoly.CPolynomial.NTTFast.Plan.foldl_range_congr` (theorem, [line 134](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L134))
 
 > Two fold functions give the same range fold when they agree at every step.
 
@@ -100,7 +100,7 @@ theorem foldl_range_congr {α : Type*} (f g : α → Nat → α) :
       ∀ acc, List.foldl f acc (List.range n) = List.foldl g acc (List.range n)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.foldl_range_preserve` (theorem, [line 147](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L147))
+`CompPoly.CPolynomial.NTTFast.Plan.foldl_range_preserve` (theorem, [line 147](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L147))
 
 > A property preserved by every step is preserved by folding over `List.range`.
 
@@ -111,7 +111,7 @@ theorem foldl_range_preserve {α : Type*} (p : α → Prop) (f : α → Nat → 
       ∀ acc, p acc → p (List.foldl f acc (List.range n))
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.foldl_range_congr_inv` (theorem, [line 161](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L161))
+`CompPoly.CPolynomial.NTTFast.Plan.foldl_range_congr_inv` (theorem, [line 161](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L161))
 
 > Congruence for range folds under an invariant preserved by the left fold.
 
@@ -123,7 +123,7 @@ theorem foldl_range_congr_inv {α : Type*} (p : α → Prop) (f g : α → Nat �
       ∀ acc, p acc → List.foldl f acc (List.range n) = List.foldl g acc (List.range n)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.foldl_range'_succ_shift` (theorem, [line 182](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L182))
+`CompPoly.CPolynomial.NTTFast.Plan.foldl_range'_succ_shift` (theorem, [line 182](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L182))
 
 > Shift a `List.range'` fold by one when the folded function shifts its index.
 
@@ -134,7 +134,7 @@ theorem foldl_range'_succ_shift {α : Type*} (f : Nat → α → α) :
         List.foldl (fun acc t ↦ f t acc) acc (List.range' (offset + 1) n)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.foldl_range'_eq_range_add` (theorem, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L193))
+`CompPoly.CPolynomial.NTTFast.Plan.foldl_range'_eq_range_add` (theorem, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L193))
 
 > Reindex a `List.range'` fold as a fold over `List.range` with an offset.
 
@@ -145,7 +145,7 @@ theorem foldl_range'_eq_range_add {α : Type*} (f : Nat → α → α)
       List.foldl (fun acc t ↦ f (offset + t) acc) acc (List.range n)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.foldl_range'_append_split` (theorem, [line 200](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L200))
+`CompPoly.CPolynomial.NTTFast.Plan.foldl_range'_append_split` (theorem, [line 200](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L200))
 
 > Split a `List.range'` fold over an appended interval into two folds.
 
@@ -156,7 +156,7 @@ theorem foldl_range'_append_split {α : Type*} (f : α → Nat → α)
       List.foldl f (List.foldl f acc (List.range' s m)) (List.range' (s + m) n)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.three_mul_add_eq_add_two_mul_add` (theorem, [line 210](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L210))
+`CompPoly.CPolynomial.NTTFast.Plan.three_mul_add_eq_add_two_mul_add` (theorem, [line 210](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L210))
 
 > Arithmetic normal form used when rearranging adjacent radix-4 block indices.
 
@@ -165,7 +165,7 @@ theorem three_mul_add_eq_add_two_mul_add (q b : Nat) :
     3 * q + b = q + (2 * q + b)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.foldl_commute` (theorem, [line 215](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L215))
+`CompPoly.CPolynomial.NTTFast.Plan.foldl_commute` (theorem, [line 215](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L215))
 
 > Move an operation through a range fold when it commutes with every step.
 
@@ -177,7 +177,7 @@ theorem foldl_commute {α : Type*} (op : α → α) (f : Nat → α → α) :
         List.foldl (fun x i ↦ f i x) (op x) (List.range n)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.foldl_commute_foldl` (theorem, [line 229](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L229))
+`CompPoly.CPolynomial.NTTFast.Plan.foldl_commute_foldl` (theorem, [line 229](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L229))
 
 > Swap two range folds when every step of one commutes with every step of the other.
 
@@ -191,7 +191,7 @@ theorem foldl_commute_foldl {α : Type*} (f g : Nat → α → α) (m n : Nat)
           (List.range n)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.foldl_pair` (theorem, [line 246](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L246))
+`CompPoly.CPolynomial.NTTFast.Plan.foldl_pair` (theorem, [line 246](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L246))
 
 > Split a fold of paired same-index operations into two separate range folds.
 
@@ -205,7 +205,7 @@ theorem foldl_pair {α : Type*} (f g : Nat → α → α) :
             (List.foldl (fun x i ↦ f i x) x (List.range n)) (List.range n)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.foldl_range_pair` (theorem, [line 265](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L265))
+`CompPoly.CPolynomial.NTTFast.Plan.foldl_range_pair` (theorem, [line 265](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L265))
 
 > Fold a pair of consecutive indexed operations as one fold over twice the range.
 
@@ -216,7 +216,7 @@ theorem foldl_range_pair {α : Type*} (f : Nat → α → α) :
         List.foldl (fun acc k ↦ f k acc) acc (List.range (2 * n))
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.foldl_quad` (theorem, [line 282](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L282))
+`CompPoly.CPolynomial.NTTFast.Plan.foldl_quad` (theorem, [line 282](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L282))
 
 > Split a fold of four same-index operations into four separate range folds.
 
@@ -239,7 +239,7 @@ theorem foldl_quad {α : Type*} (l₁ l₂ h₁ h₂ : Nat → α → α) :
             (List.range n)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyDITBlocks_eq_foldl` (theorem, [line 385](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L385))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyDITBlocks_eq_foldl` (theorem, [line 385](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L385))
 
 > Express the recursive DIT block loop as a fold over baseline NTT block steps.
 
@@ -254,7 +254,7 @@ theorem butterflyDITBlocks_eq_foldl
           acc (List.range' block n)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyDITInner` (theorem, [line 408](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L408))
+`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyDITInner` (theorem, [line 408](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L408))
 
 ```lean
 theorem size_butterflyDITInner
@@ -262,7 +262,7 @@ theorem size_butterflyDITInner
     ∀ acc : Array R, (butterflyDITInner twiddles limit j i0 i1 acc).size = acc.size
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyDITBlocks` (theorem, [line 425](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L425))
+`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyDITBlocks` (theorem, [line 425](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L425))
 
 ```lean
 theorem size_butterflyDITBlocks
@@ -271,7 +271,7 @@ theorem size_butterflyDITBlocks
       (butterflyDITBlocks twiddles blockSize half blocks block acc).size = acc.size
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyStageWithTwiddles` (theorem, [line 443](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L443))
+`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyStageWithTwiddles` (theorem, [line 443](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L443))
 
 ```lean
 theorem size_butterflyStageWithTwiddles
@@ -279,7 +279,7 @@ theorem size_butterflyStageWithTwiddles
     (butterflyStageWithTwiddles D stage twiddles a).size = a.size
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyDITRadix4Inner` (theorem, [line 448](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L448))
+`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyDITRadix4Inner` (theorem, [line 448](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L448))
 
 ```lean
 theorem size_butterflyDITRadix4Inner
@@ -289,7 +289,7 @@ theorem size_butterflyDITRadix4Inner
         acc.size
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyDITRadix4Blocks` (theorem, [line 467](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L467))
+`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyDITRadix4Blocks` (theorem, [line 467](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L467))
 
 ```lean
 theorem size_butterflyDITRadix4Blocks
@@ -299,7 +299,7 @@ theorem size_butterflyDITRadix4Blocks
         acc.size
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyRadix4StageWithTwiddles` (theorem, [line 486](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L486))
+`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyRadix4StageWithTwiddles` (theorem, [line 486](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L486))
 
 ```lean
 theorem size_butterflyRadix4StageWithTwiddles
@@ -308,7 +308,7 @@ theorem size_butterflyRadix4StageWithTwiddles
       a.size
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyDIFInner` (theorem, [line 492](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L492))
+`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyDIFInner` (theorem, [line 492](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L492))
 
 ```lean
 theorem size_butterflyDIFInner
@@ -316,7 +316,7 @@ theorem size_butterflyDIFInner
     ∀ acc : Array R, (butterflyDIFInner twiddles limit j i0 i1 acc).size = acc.size
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyDIFBlocks` (theorem, [line 509](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L509))
+`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyDIFBlocks` (theorem, [line 509](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L509))
 
 ```lean
 theorem size_butterflyDIFBlocks
@@ -325,7 +325,7 @@ theorem size_butterflyDIFBlocks
       (butterflyDIFBlocks twiddles blockSize half blocks block acc).size = acc.size
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyStageDIFWithTwiddles` (theorem, [line 527](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L527))
+`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyStageDIFWithTwiddles` (theorem, [line 527](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L527))
 
 ```lean
 theorem size_butterflyStageDIFWithTwiddles
@@ -333,7 +333,7 @@ theorem size_butterflyStageDIFWithTwiddles
     (butterflyStageDIFWithTwiddles D stage twiddles a).size = a.size
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyDIFRadix4Inner` (theorem, [line 532](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L532))
+`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyDIFRadix4Inner` (theorem, [line 532](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L532))
 
 ```lean
 theorem size_butterflyDIFRadix4Inner
@@ -343,7 +343,7 @@ theorem size_butterflyDIFRadix4Inner
         acc.size
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyDIFRadix4Blocks` (theorem, [line 551](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L551))
+`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyDIFRadix4Blocks` (theorem, [line 551](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L551))
 
 ```lean
 theorem size_butterflyDIFRadix4Blocks
@@ -353,7 +353,7 @@ theorem size_butterflyDIFRadix4Blocks
         acc.size
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyRadix4StageDIFWithTwiddles` (theorem, [line 570](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L570))
+`CompPoly.CPolynomial.NTTFast.Plan.size_butterflyRadix4StageDIFWithTwiddles` (theorem, [line 570](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean#L570))
 
 ```lean
 theorem size_butterflyRadix4StageDIFWithTwiddles
@@ -368,5 +368,5 @@ theorem size_butterflyRadix4StageDIFWithTwiddles
 
 ## Sources
 
-- [CompPoly/Univariate/NTTFast/Correctness/Basic.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Basic.lean)
+- [CompPoly/Univariate/NTTFast/Correctness/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Basic.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Univariate.NTTFast.Correctness.Basic.json)

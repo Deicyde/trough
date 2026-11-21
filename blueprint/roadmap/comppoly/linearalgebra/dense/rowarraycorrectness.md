@@ -7,7 +7,7 @@ proof: formalized
 
 # Row-Array Homogeneous-Kernel Correctness
 
-`CompPoly.LinearAlgebra.Dense.RowArrayCorrectness`, in [CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.Dense.RowArrayCorrectness`, in [CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean), by Valerii Huhnin.
 
 > Soundness and completeness of the row-array RREF kernel
 > `homogeneousKernelBasisRows`: every emitted vector is orthogonal to the input
@@ -23,7 +23,7 @@ proof: formalized
 
 > ## Generic array access lemmas
 
-`CompPoly.DenseMatrix.array_getD_of_le'` (theorem, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L49))
+`CompPoly.DenseMatrix.array_getD_of_le'` (theorem, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L49))
 
 > `getD` at an out-of-bounds index returns the default.
 
@@ -32,7 +32,7 @@ theorem array_getD_of_le' (xs : Array α) (d : α) {i : Nat}
     (h : xs.size ≤ i) : xs.getD i d = d
 ```
 
-`CompPoly.DenseMatrix.array_getD_of_lt'` (theorem, [line 55](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L55))
+`CompPoly.DenseMatrix.array_getD_of_lt'` (theorem, [line 55](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L55))
 
 > `getD` at an in-bounds index returns the indexed element.
 
@@ -41,7 +41,7 @@ theorem array_getD_of_lt' (xs : Array α) (d : α) {i : Nat}
     (h : i < xs.size) : xs.getD i d = xs[i]
 ```
 
-`CompPoly.DenseMatrix.array_getD_setIfInBounds` (theorem, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L61))
+`CompPoly.DenseMatrix.array_getD_setIfInBounds` (theorem, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L61))
 
 > `getD` after `setIfInBounds` in coordinates.
 
@@ -54,7 +54,7 @@ theorem array_getD_setIfInBounds (xs : Array α) (j : Nat) (a : α)
 
 > ## Coordinate access helpers
 
-`CompPoly.DenseMatrix.addScaledScalarRow_getD` (theorem, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L98))
+`CompPoly.DenseMatrix.addScaledScalarRow_getD` (theorem, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L98))
 
 > Coordinatewise description of `addScaledScalarRow`.
 
@@ -65,7 +65,7 @@ theorem addScaledScalarRow_getD [Field F] (target source : Array F)
       target.getD k 0 + factor * source.getD k 0
 ```
 
-`CompPoly.DenseMatrix.normalizeScalarRow_getD` (theorem, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L114))
+`CompPoly.DenseMatrix.normalizeScalarRow_getD` (theorem, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L114))
 
 > Coordinatewise description of `normalizeScalarRow` at a nonzero pivot.
 
@@ -79,7 +79,7 @@ theorem normalizeScalarRow_getD [Field F] [BEq F] [LawfulBEq F]
 
 > ## Scalar dot products and orthogonality
 
-`CompPoly.DenseMatrix.scalarDot` (definition, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L137))
+`CompPoly.DenseMatrix.scalarDot` (definition, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L137))
 
 > Dot product of the first `cols` coordinates of two scalar rows, with
 > zero defaults beyond the stored lengths.
@@ -88,7 +88,7 @@ theorem normalizeScalarRow_getD [Field F] [BEq F] [LawfulBEq F]
 def scalarDot [Field F] (cols : Nat) (r v : Array F) : F
 ```
 
-`CompPoly.DenseMatrix.scalarDot_empty` (theorem, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L141))
+`CompPoly.DenseMatrix.scalarDot_empty` (theorem, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L141))
 
 > The empty row is orthogonal to everything.
 
@@ -97,7 +97,7 @@ theorem scalarDot_empty [Field F] (cols : Nat) (v : Array F) :
     scalarDot cols (#[] : Array F) v = 0
 ```
 
-`CompPoly.DenseMatrix.scalarDot_addScaledScalarRow` (theorem, [line 148](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L148))
+`CompPoly.DenseMatrix.scalarDot_addScaledScalarRow` (theorem, [line 148](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L148))
 
 > `scalarDot` is additive along `addScaledScalarRow`.
 
@@ -108,7 +108,7 @@ theorem scalarDot_addScaledScalarRow [Field F] (cols : Nat)
       scalarDot cols target v + factor * scalarDot cols source v
 ```
 
-`CompPoly.DenseMatrix.scalarDot_eq_pivot_mul_normalize` (theorem, [line 159](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L159))
+`CompPoly.DenseMatrix.scalarDot_eq_pivot_mul_normalize` (theorem, [line 159](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L159))
 
 > A row recovers from its normalization by rescaling with the pivot.
 
@@ -120,7 +120,7 @@ theorem scalarDot_eq_pivot_mul_normalize [Field F] [BEq F] [LawfulBEq F]
       row.getD pivotCol 0 * scalarDot cols (normalizeScalarRow row pivotCol) v
 ```
 
-`CompPoly.DenseMatrix.OrthRows` (definition, [line 172](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L172))
+`CompPoly.DenseMatrix.OrthRows` (definition, [line 172](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L172))
 
 > Orthogonality of `v` to every row of a row-array matrix, expressed via
 > total `getD` access so that out-of-range indices are harmless.
@@ -132,7 +132,7 @@ def OrthRows [Field F] (cols : Nat) (rows : Array (Array F)) (v : Array F) :
 
 > ## Elementary-step characterizations
 
-`CompPoly.DenseMatrix.swapScalarRows_size` (theorem, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L185))
+`CompPoly.DenseMatrix.swapScalarRows_size` (theorem, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L185))
 
 > Swapping rows preserves the row count.
 
@@ -141,7 +141,7 @@ theorem swapScalarRows_size (rows : Array (Array F)) (a b : Nat) :
     (swapScalarRows rows a b).size = rows.size
 ```
 
-`CompPoly.DenseMatrix.swapScalarRows_getD` (theorem, [line 190](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L190))
+`CompPoly.DenseMatrix.swapScalarRows_getD` (theorem, [line 190](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L190))
 
 > Rows of `swapScalarRows rows a b`: rows `a` and `b` are exchanged.
 
@@ -156,7 +156,7 @@ theorem swapScalarRows_getD (rows : Array (Array F)) {a b : Nat}
 
 > ## Backward span: row operations are invertible
 
-`CompPoly.DenseMatrix.normalizeAndEliminateScalarRows_size` (theorem, [line 296](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L296))
+`CompPoly.DenseMatrix.normalizeAndEliminateScalarRows_size` (theorem, [line 296](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L296))
 
 > Normalizing and eliminating preserves the row count.
 
@@ -166,7 +166,7 @@ theorem normalizeAndEliminateScalarRows_size [Field F] [BEq F] [LawfulBEq F]
     (normalizeAndEliminateScalarRows rows pivotRow pivotCol).size = rows.size
 ```
 
-`CompPoly.DenseMatrix.orthRows_of_scalarRrefRows` (theorem, [line 458](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L458))
+`CompPoly.DenseMatrix.orthRows_of_scalarRrefRows` (theorem, [line 458](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L458))
 
 > Orthogonality to all rows of the final RREF matrix transfers back to all
 > rows of the original matrix: every row operation is invertible.
@@ -180,7 +180,7 @@ theorem orthRows_of_scalarRrefRows [Field F] [BEq F] [LawfulBEq F]
 
 > ## Forward RREF shape invariants
 
-`CompPoly.DenseMatrix.normalizeAndEliminateScalarRows_getD_entry` (theorem, [line 558](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L558))
+`CompPoly.DenseMatrix.normalizeAndEliminateScalarRows_getD_entry` (theorem, [line 558](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L558))
 
 > Entries of `normalizeAndEliminateScalarRows`: the pivot row is divided by
 > the pivot, and every other row loses its pivot-column multiple of the normalized
@@ -203,7 +203,7 @@ theorem normalizeAndEliminateScalarRows_getD_entry [Field F] [BEq F]
               (rows.getD pivotRow #[]).getD pivotCol 0)
 ```
 
-`CompPoly.DenseMatrix.ScalarRrefSpec` (structure, [line 622](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L622))
+`CompPoly.DenseMatrix.ScalarRrefSpec` (structure, [line 622](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L622))
 
 > Shape contract satisfied by the result of `scalarRrefRows`: recorded
 > pivot columns are strictly increasing and below `cols`, each pivot column is
@@ -222,7 +222,7 @@ structure ScalarRrefSpec [Field F] (cols : Nat)
     (R.rows.getD i #[]).getD k 0 = 0
 ```
 
-`CompPoly.DenseMatrix.scalarRrefRows_spec` (theorem, [line 783](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L783))
+`CompPoly.DenseMatrix.scalarRrefRows_spec` (theorem, [line 783](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L783))
 
 > The row-array RREF driver satisfies the RREF shape contract.
 
@@ -234,7 +234,7 @@ theorem scalarRrefRows_spec [Field F] [BEq F] [LawfulBEq F]
 
 > ## Kernel basis vectors
 
-`CompPoly.DenseMatrix.freeColumns_mem` (theorem, [line 821](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L821))
+`CompPoly.DenseMatrix.freeColumns_mem` (theorem, [line 821](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L821))
 
 > A free column is below `cols` and is not a recorded pivot column.
 
@@ -244,7 +244,7 @@ theorem freeColumns_mem {cols : Nat} {pivots : Array Nat} {free : Nat}
     free < cols ∧ ∀ t, t < pivots.size → pivots.getD t 0 ≠ free
 ```
 
-`CompPoly.DenseMatrix.pivotRowOfColumn?_some` (theorem, [line 833](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L833))
+`CompPoly.DenseMatrix.pivotRowOfColumn?_some` (theorem, [line 833](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L833))
 
 > `pivotRowOfColumn?` returns an in-range index whose recorded pivot is the
 > requested column.
@@ -255,7 +255,7 @@ theorem pivotRowOfColumn?_some {pivots : Array Nat} {col t : Nat}
     t < pivots.size ∧ pivots.getD t 0 = col
 ```
 
-`CompPoly.DenseMatrix.basisVectorForFreeColumnRows_size` (theorem, [line 870](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L870))
+`CompPoly.DenseMatrix.basisVectorForFreeColumnRows_size` (theorem, [line 870](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L870))
 
 > Each row-array kernel basis vector has `cols` entries.
 
@@ -267,7 +267,7 @@ theorem basisVectorForFreeColumnRows_size [Field F]
 
 > ## Main soundness theorems
 
-`CompPoly.DenseMatrix.homogeneousKernelBasisRows_size` (theorem, [line 980](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L980))
+`CompPoly.DenseMatrix.homogeneousKernelBasisRows_size` (theorem, [line 980](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L980))
 
 > Every vector produced by `homogeneousKernelBasisRows rows cols` has
 > exactly `cols` stored coordinates.
@@ -279,7 +279,7 @@ theorem homogeneousKernelBasisRows_size [Field F] [BEq F] [LawfulBEq F]
     v.size = cols
 ```
 
-`CompPoly.DenseMatrix.homogeneousKernelBasisRows_dot_eq_zero` (theorem, [line 994](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L994))
+`CompPoly.DenseMatrix.homogeneousKernelBasisRows_dot_eq_zero` (theorem, [line 994](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L994))
 
 > **Soundness of the row-array kernel.**  Every vector produced by
 > `homogeneousKernelBasisRows rows cols` is orthogonal, over the coordinates
@@ -299,7 +299,7 @@ theorem homogeneousKernelBasisRows_dot_eq_zero [Field F] [BEq F] [LawfulBEq F]
 
 > ### Free-column bookkeeping for the completeness theorem
 
-`CompPoly.DenseMatrix.freeColumns_getD_mem` (theorem, [line 1138](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L1138))
+`CompPoly.DenseMatrix.freeColumns_getD_mem` (theorem, [line 1138](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L1138))
 
 > In-range entries of `freeColumns` are members of it.
 
@@ -310,7 +310,7 @@ theorem freeColumns_getD_mem {cols : Nat} {pivots : Array Nat}
       (freeColumns cols pivots).toList
 ```
 
-`CompPoly.DenseMatrix.basisVector_getD_freeColumn` (theorem, [line 1193](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L1193))
+`CompPoly.DenseMatrix.basisVector_getD_freeColumn` (theorem, [line 1193](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L1193))
 
 > The basis vector of the `i`-th free column is one at that column and zero at
 > every other free column.
@@ -326,7 +326,7 @@ theorem basisVector_getD_freeColumn [Field F]
       if j = i then 1 else 0
 ```
 
-`CompPoly.DenseMatrix.homogeneousKernelBasisRows_size_eq` (theorem, [line 1310](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L1310))
+`CompPoly.DenseMatrix.homogeneousKernelBasisRows_size_eq` (theorem, [line 1310](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L1310))
 
 > The row-array kernel basis has one vector per free column.
 
@@ -337,7 +337,7 @@ theorem homogeneousKernelBasisRows_size_eq [Field F] [BEq F]
       (freeColumns cols (scalarRrefRows rows cols).pivots).size
 ```
 
-`CompPoly.DenseMatrix.homogeneousKernelBasisRows_getD_eq` (theorem, [line 1318](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L1318))
+`CompPoly.DenseMatrix.homogeneousKernelBasisRows_getD_eq` (theorem, [line 1318](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L1318))
 
 > The `i`-th row-array kernel basis vector is the basis vector of the `i`-th
 > free column.
@@ -354,7 +354,7 @@ theorem homogeneousKernelBasisRows_getD_eq [Field F] [BEq F]
           (scalarRrefRows rows cols).pivots).getD i 0)
 ```
 
-`CompPoly.DenseMatrix.homogeneousKernelBasisRows_complete` (theorem, [line 1336](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L1336))
+`CompPoly.DenseMatrix.homogeneousKernelBasisRows_complete` (theorem, [line 1336](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean#L1336))
 
 > **Completeness of the row-array kernel.**  Every vector orthogonal to
 > all input rows over the coordinates `0, …, cols - 1` is, coordinatewise below
@@ -381,5 +381,5 @@ theorem homogeneousKernelBasisRows_complete [Field F] [BEq F] [LawfulBEq F]
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean)
+- [CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArrayCorrectness.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.LinearAlgebra.Dense.RowArrayCorrectness.json)

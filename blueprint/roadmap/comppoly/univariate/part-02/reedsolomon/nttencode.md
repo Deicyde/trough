@@ -7,7 +7,7 @@ proof: formalized
 
 # NTT Encoding of Reed-Solomon Codewords
 
-`CompPoly.Univariate.ReedSolomon.NTTEncode`, in [CompPoly/Univariate/ReedSolomon/NTTEncode.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ReedSolomon/NTTEncode.lean), by Abraxas1010 (IAOM / Apoth3osis).
+`CompPoly.Univariate.ReedSolomon.NTTEncode`, in [CompPoly/Univariate/ReedSolomon/NTTEncode.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/NTTEncode.lean), by Abraxas1010 (IAOM / Apoth3osis).
 
 > Over the evaluation domain induced by a radix-2 NTT domain (the node array
 > `#[ω⁰, ω¹, …, ω^(n-1)]`, nodup because powers of a primitive `n`-th root below `n` are
@@ -36,7 +36,7 @@ proof: formalized
 >   `encode (nttDomainToRS D) msg`, as arrays.
 > * `ReedSolomon.nttCodeword_eq_encode`: the packaged (vector-level) form.
 
-`CompPoly.ReedSolomon.nttDomainToRS` (definition, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ReedSolomon/NTTEncode.lean#L56))
+`CompPoly.ReedSolomon.nttDomainToRS` (definition, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/NTTEncode.lean#L56))
 
 > The Reed-Solomon evaluation domain induced by a radix-2 NTT domain: the node array
 > `#[ω⁰, ω¹, …, ω^(n-1)]`, nodup because powers of a primitive `n`-th root below `n` are
@@ -46,14 +46,14 @@ proof: formalized
 def nttDomainToRS (D : CPolynomial.NTT.Domain F) : ReedSolomon.Domain F
 ```
 
-`CompPoly.ReedSolomon.nttDomainToRS_n` (lemma, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ReedSolomon/NTTEncode.lean#L64))
+`CompPoly.ReedSolomon.nttDomainToRS_n` (lemma, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/NTTEncode.lean#L64))
 
 ```lean
 lemma nttDomainToRS_n (D : CPolynomial.NTT.Domain F) :
     (nttDomainToRS D).n = D.n
 ```
 
-`CompPoly.ReedSolomon.forwardImpl_eq_encode` (theorem, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ReedSolomon/NTTEncode.lean#L71))
+`CompPoly.ReedSolomon.forwardImpl_eq_encode` (theorem, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/NTTEncode.lean#L71))
 
 > **The certified NTT encoder**: over the induced evaluation domain, the forward NTT of
 > the message polynomial's coefficients is exactly the Reed-Solomon encoding — the
@@ -66,7 +66,7 @@ theorem forwardImpl_eq_encode (D : CPolynomial.NTT.Domain F) {k : ℕ} (msg : Ve
       = (encode (nttDomainToRS D) msg).toArray
 ```
 
-`CompPoly.ReedSolomon.nttCodeword` (definition, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ReedSolomon/NTTEncode.lean#L87))
+`CompPoly.ReedSolomon.nttCodeword` (definition, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/NTTEncode.lean#L87))
 
 > The forward-NTT output packaged as a length-indexed vector over the induced domain.
 
@@ -75,7 +75,7 @@ def nttCodeword (D : CPolynomial.NTT.Domain F) {k : ℕ} (msg : Vector F k) (hk 
     Vector F (nttDomainToRS D).n
 ```
 
-`CompPoly.ReedSolomon.nttCodeword_eq_encode` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ReedSolomon/NTTEncode.lean#L93))
+`CompPoly.ReedSolomon.nttCodeword_eq_encode` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/NTTEncode.lean#L93))
 
 > Vector-level form of `forwardImpl_eq_encode`.
 
@@ -95,5 +95,5 @@ theorem nttCodeword_eq_encode (D : CPolynomial.NTT.Domain F) {k : ℕ} (msg : Ve
 
 ## Sources
 
-- [CompPoly/Univariate/ReedSolomon/NTTEncode.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ReedSolomon/NTTEncode.lean)
+- [CompPoly/Univariate/ReedSolomon/NTTEncode.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/NTTEncode.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.ReedSolomon.NTTEncode.json)

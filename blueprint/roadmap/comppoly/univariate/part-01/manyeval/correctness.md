@@ -7,11 +7,11 @@ proof: formalized
 
 # Many-Polynomial Evaluation Correctness
 
-`CompPoly.Univariate.ManyEval.Correctness`, in [CompPoly/Univariate/ManyEval/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ManyEval/Correctness.lean), by Valerii Huhnin.
+`CompPoly.Univariate.ManyEval.Correctness`, in [CompPoly/Univariate/ManyEval/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ManyEval/Correctness.lean), by Valerii Huhnin.
 
 > Correctness theorem statements for many-polynomial evaluation backends.
 
-`CompPoly.CPolynomial.evalManyHorner_eq_map_eval` (theorem, [line 213](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ManyEval/Correctness.lean#L213))
+`CompPoly.CPolynomial.evalManyHorner_eq_map_eval` (theorem, [line 213](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ManyEval/Correctness.lean#L213))
 
 > Many-polynomial Horner evaluation agrees with scalar evaluation.
 
@@ -21,7 +21,7 @@ theorem evalManyHorner_eq_map_eval [Semiring R]
     evalManyHorner polys x = polys.map (fun p ↦ p.eval x)
 ```
 
-`CompPoly.CPolynomial.evalManySharedPowers_eq_map_eval` (theorem, [line 219](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ManyEval/Correctness.lean#L219))
+`CompPoly.CPolynomial.evalManySharedPowers_eq_map_eval` (theorem, [line 219](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ManyEval/Correctness.lean#L219))
 
 > Shared-powers evaluation agrees with scalar evaluation.
 
@@ -37,5 +37,5 @@ theorem evalManySharedPowers_eq_map_eval [Semiring R]
 
 ## Sources
 
-- [CompPoly/Univariate/ManyEval/Correctness.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ManyEval/Correctness.lean)
+- [CompPoly/Univariate/ManyEval/Correctness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ManyEval/Correctness.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.ManyEval.Correctness.json)

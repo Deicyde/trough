@@ -7,7 +7,7 @@ proof: formalized
 
 # Fast Mulders-Storjohann Reduction Agrees With the Direct Definition
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Fast`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Fast`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean), by Valerii Huhnin.
 
 > The fast reducer caches shifted leading positions once per conflict scan and
 > cancels leading terms through the fused `rowSubScaledShift` update. This file
@@ -17,7 +17,7 @@ proof: formalized
 
 > ### Row-level cancellation
 
-`CompPoly.PolynomialMatrix.rowSubScaledShift_size` (theorem, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L31))
+`CompPoly.PolynomialMatrix.rowSubScaledShift_size` (theorem, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L31))
 
 ```lean
 theorem rowSubScaledShift_size (a : PolynomialRow F) (c : F) (d : Nat)
@@ -25,7 +25,7 @@ theorem rowSubScaledShift_size (a : PolynomialRow F) (c : F) (d : Nat)
     (rowSubScaledShift a c d b).size = max a.size b.size
 ```
 
-`CompPoly.PolynomialMatrix.rowGet_rowSubScaledShift` (theorem, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L36))
+`CompPoly.PolynomialMatrix.rowGet_rowSubScaledShift` (theorem, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L36))
 
 ```lean
 theorem rowGet_rowSubScaledShift (a : PolynomialRow F) (c : F) (d : Nat)
@@ -34,7 +34,7 @@ theorem rowGet_rowSubScaledShift (a : PolynomialRow F) (c : F) (d : Nat)
       CPolynomial.subMulMonomial (rowGet a j) c d (rowGet b j)
 ```
 
-`CompPoly.PolynomialMatrix.rowSubScaledShift_eq` (theorem, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L54))
+`CompPoly.PolynomialMatrix.rowSubScaledShift_eq` (theorem, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L54))
 
 ```lean
 theorem rowSubScaledShift_eq (a : PolynomialRow F) (c : F) (d : Nat)
@@ -42,7 +42,7 @@ theorem rowSubScaledShift_eq (a : PolynomialRow F) (c : F) (d : Nat)
     rowSubScaledShift a c d b = rowSub a (rowScaleMonomial c d b)
 ```
 
-`CompPoly.PolynomialMatrix.cancelShiftedLeadingTermFast_eq` (theorem, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L71))
+`CompPoly.PolynomialMatrix.cancelShiftedLeadingTermFast_eq` (theorem, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L71))
 
 ```lean
 theorem cancelShiftedLeadingTermFast_eq (target reducer : PolynomialRow F)
@@ -53,7 +53,7 @@ theorem cancelShiftedLeadingTermFast_eq (target reducer : PolynomialRow F)
 
 > ### Cached conflict scan
 
-`CompPoly.PolynomialMatrix.rowLeadingPositions_size` (theorem, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L81))
+`CompPoly.PolynomialMatrix.rowLeadingPositions_size` (theorem, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L81))
 
 ```lean
 theorem rowLeadingPositions_size (M : PolynomialMatrix F)
@@ -61,7 +61,7 @@ theorem rowLeadingPositions_size (M : PolynomialMatrix F)
     (rowLeadingPositions M shift).size = M.size
 ```
 
-`CompPoly.PolynomialMatrix.rowLeadingPositions_getD` (theorem, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L87))
+`CompPoly.PolynomialMatrix.rowLeadingPositions_getD` (theorem, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L87))
 
 ```lean
 theorem rowLeadingPositions_getD (M : PolynomialMatrix F) (shift : Array Nat)
@@ -70,7 +70,7 @@ theorem rowLeadingPositions_getD (M : PolynomialMatrix F) (shift : Array Nat)
       rowShiftedLeadingPosition? (M.getD i #[]) shift
 ```
 
-`CompPoly.PolynomialMatrix.cachedLeadingConflictInRowStep?_eq` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L100))
+`CompPoly.PolynomialMatrix.cachedLeadingConflictInRowStep?_eq` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L100))
 
 ```lean
 theorem cachedLeadingConflictInRowStep?_eq (M : PolynomialMatrix F)
@@ -80,7 +80,7 @@ theorem cachedLeadingConflictInRowStep?_eq (M : PolynomialMatrix F)
       shiftedLeadingConflictInRowStep? M shift i found j
 ```
 
-`CompPoly.PolynomialMatrix.cachedLeadingConflictInRow?_eq` (theorem, [line 109](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L109))
+`CompPoly.PolynomialMatrix.cachedLeadingConflictInRow?_eq` (theorem, [line 109](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L109))
 
 ```lean
 theorem cachedLeadingConflictInRow?_eq (M : PolynomialMatrix F)
@@ -90,7 +90,7 @@ theorem cachedLeadingConflictInRow?_eq (M : PolynomialMatrix F)
       shiftedLeadingConflictInRow? M shift i found
 ```
 
-`CompPoly.PolynomialMatrix.cachedLeadingConflict?_eq` (theorem, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L124))
+`CompPoly.PolynomialMatrix.cachedLeadingConflict?_eq` (theorem, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L124))
 
 ```lean
 theorem cachedLeadingConflict?_eq (M : PolynomialMatrix F) (shift : Array Nat) :
@@ -100,7 +100,7 @@ theorem cachedLeadingConflict?_eq (M : PolynomialMatrix F) (shift : Array Nat) :
 
 > ### Step, loop, and reducer
 
-`CompPoly.PolynomialMatrix.muldersStorjohannStepFast_eq` (theorem, [line 139](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L139))
+`CompPoly.PolynomialMatrix.muldersStorjohannStepFast_eq` (theorem, [line 139](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L139))
 
 ```lean
 theorem muldersStorjohannStepFast_eq (M : PolynomialMatrix F)
@@ -108,7 +108,7 @@ theorem muldersStorjohannStepFast_eq (M : PolynomialMatrix F)
     muldersStorjohannStepFast M shift i j = muldersStorjohannStep M shift i j
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuelFast_eq` (theorem, [line 145](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L145))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduceWithFuelFast_eq` (theorem, [line 145](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L145))
 
 ```lean
 theorem muldersStorjohannReduceWithFuelFast_eq :
@@ -117,7 +117,7 @@ theorem muldersStorjohannReduceWithFuelFast_eq :
         muldersStorjohannReduceWithFuel fuel M shift
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduceFast_eq` (theorem, [line 163](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L163))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduceFast_eq` (theorem, [line 163](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L163))
 
 ```lean
 theorem muldersStorjohannReduceFast_eq (M : PolynomialMatrix F)
@@ -127,7 +127,7 @@ theorem muldersStorjohannReduceFast_eq (M : PolynomialMatrix F)
 
 > ### Certified context
 
-`CompPoly.PolynomialMatrix.muldersStorjohannFastReducerContext` (definition, [line 174](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L174))
+`CompPoly.PolynomialMatrix.muldersStorjohannFastReducerContext` (definition, [line 174](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean#L174))
 
 > Certified fast Mulders-Storjohann shifted row-reducer context. The
 > implementation caches leading positions per scan and uses fused row
@@ -149,5 +149,5 @@ def muldersStorjohannFastReducerContext (F : Type*) [Field F] [BEq F]
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Fast.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Fast.json)

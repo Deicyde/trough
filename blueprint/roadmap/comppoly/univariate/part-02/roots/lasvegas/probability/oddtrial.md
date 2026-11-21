@@ -7,14 +7,14 @@ proof: formalized
 
 # One Odd Cantor-Zassenhaus Trial Under Uniform Probes
 
-`CompPoly.Univariate.Roots.LasVegas.Probability.OddTrial`, in [CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.LasVegas.Probability.OddTrial`, in [CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean), by Valerii Huhnin.
 
 > The single-trial probability surface for odd-field Las Vegas splitting: the
 > trial PMF induced by uniform probes, the half-success model, and the theorem
 > that uniform probes really achieve success probability at least `1 / 2` for
 > squarefree root products with at least two distinct roots.
 
-`CompPoly.CPolynomial.Roots.FiniteField.HasTwoDistinctRoots` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L38))
+`CompPoly.CPolynomial.Roots.FiniteField.HasTwoDistinctRoots` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L38))
 
 > The factor has at least two distinct field roots.
 
@@ -22,7 +22,7 @@ proof: formalized
 def HasTwoDistinctRoots {F : Type*} [Semiring F] (g : CPolynomial F) : Prop
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.RootProductProbabilityInput` (structure, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L49))
+`CompPoly.CPolynomial.Roots.FiniteField.RootProductProbabilityInput` (structure, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L49))
 
 > Probability-facing root-product model for the recursive fallback analysis: the
 > factor is a nonzero squarefree product of linear factors over the field, with
@@ -41,7 +41,7 @@ structure RootProductProbabilityInput {F : Type*} [Field F] [BEq F] [LawfulBEq F
   roots_card_eq_degree : g.toPoly.roots.card = g.toPoly.natDegree
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.RootProductProbabilityInput.hasTwoDistinctRoots` (theorem, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L60))
+`CompPoly.CPolynomial.Roots.FiniteField.RootProductProbabilityInput.hasTwoDistinctRoots` (theorem, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L60))
 
 > A squarefree root product of degree at least two has two distinct field roots.
 
@@ -53,7 +53,7 @@ theorem RootProductProbabilityInput.hasTwoDistinctRoots {F : Type*}
     HasTwoDistinctRoots g
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.rootProductProbabilityInput_of_lasVegasSplitterInput` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L95))
+`CompPoly.CPolynomial.Roots.FiniteField.rootProductProbabilityInput_of_lasVegasSplitterInput` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L95))
 
 > Over a field of cardinality `q`, the runtime splitter contract already implies
 > the full probability-facing root-product model: every divisor of the Frobenius
@@ -67,7 +67,7 @@ theorem rootProductProbabilityInput_of_lasVegasSplitterInput {F : Type*}
     RootProductProbabilityInput q g
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_rootProductProbabilityInput` (theorem, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L126))
+`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProductWith_rootProductProbabilityInput` (theorem, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L126))
 
 > Finite-field root products satisfy the probability-facing root-product model.
 > This is the adapter from the concrete `finiteFieldRootProductWith` construction
@@ -81,7 +81,7 @@ theorem finiteFieldRootProductWith_rootProductProbabilityInput {F : Type*}
     RootProductProbabilityInput ctx.q (finiteFieldRootProductWith M D ctx p)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProduct_rootProductProbabilityInput` (theorem, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L137))
+`CompPoly.CPolynomial.Roots.FiniteField.finiteFieldRootProduct_rootProductProbabilityInput` (theorem, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L137))
 
 > Default-backend root products satisfy the probability-facing model.
 
@@ -92,7 +92,7 @@ theorem finiteFieldRootProduct_rootProductProbabilityInput {F : Type*}
     RootProductProbabilityInput ctx.q (finiteFieldRootProduct ctx p)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.IsProperRootPreservingSplit` (definition, [line 148](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L148))
+`CompPoly.CPolynomial.Roots.FiniteField.IsProperRootPreservingSplit` (definition, [line 148](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L148))
 
 > The algebraic validity expected from a successful randomized split: nontrivial
 > proper children, divisibility by the parent, and root preservation.
@@ -102,7 +102,7 @@ def IsProperRootPreservingSplit {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     (parent : CPolynomial F) (children : Array (CPolynomial F)) : Prop
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrialPMF` (definition, [line 158](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L158))
+`CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrialPMF` (definition, [line 158](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L158))
 
 > One odd-field Cantor-Zassenhaus trial under a uniform probe distribution.
 
@@ -115,7 +115,7 @@ noncomputable def oddSplitTrialPMF {F : Type*}
     PMF (TrialResult F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrialPMF_support_success_valid` (theorem, [line 171](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L171))
+`CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrialPMF_support_success_valid` (theorem, [line 171](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L171))
 
 > A successful trial in the support of the PMF is an algebraically valid split.
 
@@ -130,7 +130,7 @@ theorem oddSplitTrialPMF_support_success_valid {F : Type*}
     IsProperRootPreservingSplit g children
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.OddSplitTrialHalfSuccessModel` (definition, [line 205](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L205))
+`CompPoly.CPolynomial.Roots.FiniteField.OddSplitTrialHalfSuccessModel` (definition, [line 205](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L205))
 
 > Model predicate for the finite-field counting argument behind one odd-field
 > Cantor-Zassenhaus trial.
@@ -143,7 +143,7 @@ def OddSplitTrialHalfSuccessModel {F : Type*}
     (g : CPolynomial F) (attempt : Nat) : Prop
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrial_success_probability_ge_half_of_two_le` (theorem, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L227))
+`CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrial_success_probability_ge_half_of_two_le` (theorem, [line 227](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L227))
 
 > Uniform probe polynomials really make one odd Cantor-Zassenhaus attempt succeed
 > with probability at least `1 / 2`.
@@ -172,7 +172,7 @@ theorem oddSplitTrial_success_probability_ge_half_of_two_le {F : Type*}
           g attempt)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrial_success_probability_ge_half_linear` (theorem, [line 279](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L279))
+`CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrial_success_probability_ge_half_linear` (theorem, [line 279](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L279))
 
 > Random affine probes with both coefficients drawn uniformly and independently
 > already achieve the half-success bound: the evaluation pair at two distinct
@@ -192,7 +192,7 @@ theorem oddSplitTrial_success_probability_ge_half_linear {F : Type*}
         (oddSplitTrialPMF M D enumeration.toFieldEnumeration q 2 g attempt)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrialHalfSuccessModel_of_uniformProbe` (theorem, [line 301](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L301))
+`CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrialHalfSuccessModel_of_uniformProbe` (theorem, [line 301](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L301))
 
 > Uniform probe polynomials really make one odd Cantor-Zassenhaus attempt succeed
 > with probability at least `1 / 2`.
@@ -213,7 +213,7 @@ theorem oddSplitTrialHalfSuccessModel_of_uniformProbe {F : Type*}
     OddSplitTrialHalfSuccessModel M D enumeration g attempt
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrial_success_probability_ge_half` (theorem, [line 327](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L327))
+`CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrial_success_probability_ge_half` (theorem, [line 327](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L327))
 
 > For a squarefree finite-field root product over an odd field, one uniform
 > Cantor-Zassenhaus trial succeeds with probability at least `1 / 2`.
@@ -237,7 +237,7 @@ theorem oddSplitTrial_success_probability_ge_half {F : Type*}
           (CPolynomial.natDegree g) g attempt)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrial_success_probability_ge_half_of_model` (theorem, [line 348](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L348))
+`CompPoly.CPolynomial.Roots.FiniteField.oddSplitTrial_success_probability_ge_half_of_model` (theorem, [line 348](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean#L348))
 
 > Compatibility shape of the half-success theorem that still accepts the
 > half-success model as an assumption. Prefer
@@ -276,5 +276,5 @@ theorem oddSplitTrial_success_probability_ge_half_of_model {F : Type*}
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean)
+- [CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/OddTrial.lean)
 - [Declaration ledger](../../../../../../../sources/comppoly/CompPoly.Univariate.Roots.LasVegas.Probability.OddTrial.json)

@@ -7,11 +7,11 @@ proof: formalized
 
 # Lee-O'Sullivan Basis Correctness Helpers
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Basis`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Basis`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean), by Valerii Huhnin.
 
 > Multiplicity, triangularity, and algebraic closure facts for Lee-O'Sullivan basis polynomials.
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.foldl_range_add_eq_sum` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L30))
+`CompPoly.GuruswamiSudan.LeeOSullivan.foldl_range_add_eq_sum` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L30))
 
 ```lean
 theorem foldl_range_add_eq_sum {α : Type*} [AddCommMonoid α]
@@ -20,7 +20,7 @@ theorem foldl_range_add_eq_sum {α : Type*} [AddCommMonoid α]
       ∑ i ∈ Finset.range n, f i
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_Y_mul` (theorem, [line 166](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L166))
+`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_Y_mul` (theorem, [line 166](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L166))
 
 ```lean
 theorem hasMultiplicityAtLeast_Y_mul
@@ -30,7 +30,7 @@ theorem hasMultiplicityAtLeast_Y_mul
       ((CBivariate.Y : CBivariate F) * P) x y m
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_ofYConstant_mul_eval_zero` (theorem, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L185))
+`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_ofYConstant_mul_eval_zero` (theorem, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L185))
 
 ```lean
 theorem hasMultiplicityAtLeast_ofYConstant_mul_eval_zero
@@ -40,7 +40,7 @@ theorem hasMultiplicityAtLeast_ofYConstant_mul_eval_zero
     CBivariate.HasMultiplicityAtLeast (CBivariate.ofYConstant A * P) x y (m + 1)
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_linearYDivisor_mul` (theorem, [line 197](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L197))
+`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_linearYDivisor_mul` (theorem, [line 197](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L197))
 
 ```lean
 theorem hasMultiplicityAtLeast_linearYDivisor_mul
@@ -51,7 +51,7 @@ theorem hasMultiplicityAtLeast_linearYDivisor_mul
       (CBivariate.linearYDivisor R * P) x y (m + 1)
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_one_zero` (theorem, [line 224](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L224))
+`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_one_zero` (theorem, [line 224](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L224))
 
 ```lean
 theorem hasMultiplicityAtLeast_one_zero
@@ -59,7 +59,7 @@ theorem hasMultiplicityAtLeast_one_zero
     CBivariate.HasMultiplicityAtLeast (1 : CBivariate F) x y 0
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_Y_pow_mul` (theorem, [line 230](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L230))
+`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_Y_pow_mul` (theorem, [line 230](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L230))
 
 ```lean
 theorem hasMultiplicityAtLeast_Y_pow_mul
@@ -69,7 +69,7 @@ theorem hasMultiplicityAtLeast_Y_pow_mul
       ((CBivariate.Y : CBivariate F) ^ n * P) x y m
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_ofYConstant_pow_mul_eval_zero` (theorem, [line 242](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L242))
+`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_ofYConstant_pow_mul_eval_zero` (theorem, [line 242](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L242))
 
 ```lean
 theorem hasMultiplicityAtLeast_ofYConstant_pow_mul_eval_zero
@@ -80,7 +80,7 @@ theorem hasMultiplicityAtLeast_ofYConstant_pow_mul_eval_zero
       ((CBivariate.ofYConstant A) ^ n * P) x y (m + n)
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_linearYDivisor_pow_mul` (theorem, [line 261](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L261))
+`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_linearYDivisor_pow_mul` (theorem, [line 261](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L261))
 
 ```lean
 theorem hasMultiplicityAtLeast_linearYDivisor_pow_mul
@@ -91,7 +91,7 @@ theorem hasMultiplicityAtLeast_linearYDivisor_pow_mul
       ((CBivariate.linearYDivisor R) ^ n * P) x y (m + n)
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomial_hasMultiplicityAtLeast` (theorem, [line 280](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L280))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomial_hasMultiplicityAtLeast` (theorem, [line 280](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L280))
 
 ```lean
 theorem leeOSullivanBasisPolynomial_hasMultiplicityAtLeast
@@ -103,7 +103,7 @@ theorem leeOSullivanBasisPolynomial_hasMultiplicityAtLeast
       (leeOSullivanBasisPolynomial R G params idx) x y params.multiplicity
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomial_satisfiesMultiplicityConstraints` (theorem, [line 316](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L316))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomial_satisfiesMultiplicityConstraints` (theorem, [line 316](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L316))
 
 ```lean
 theorem leeOSullivanBasisPolynomial_satisfiesMultiplicityConstraints
@@ -115,7 +115,7 @@ theorem leeOSullivanBasisPolynomial_satisfiesMultiplicityConstraints
       (leeOSullivanBasisPolynomial R G params idx) points params.multiplicity
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomials_satisfiesMultiplicityConstraints` (theorem, [line 327](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L327))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomials_satisfiesMultiplicityConstraints` (theorem, [line 327](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L327))
 
 ```lean
 theorem leeOSullivanBasisPolynomials_satisfiesMultiplicityConstraints
@@ -129,14 +129,14 @@ theorem leeOSullivanBasisPolynomials_satisfiesMultiplicityConstraints
         points params.multiplicity
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.ofYConstant_one` (theorem, [line 343](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L343))
+`CompPoly.GuruswamiSudan.LeeOSullivan.ofYConstant_one` (theorem, [line 343](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L343))
 
 ```lean
 theorem ofYConstant_one :
     CBivariate.ofYConstant (1 : CPolynomial F) = (1 : CBivariate F)
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.ofYConstant_pow` (theorem, [line 352](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L352))
+`CompPoly.GuruswamiSudan.LeeOSullivan.ofYConstant_pow` (theorem, [line 352](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L352))
 
 ```lean
 theorem ofYConstant_pow
@@ -145,7 +145,7 @@ theorem ofYConstant_pow
       (CBivariate.ofYConstant P : CBivariate F) ^ n
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.coeff_ofYConstant_mul_outer` (theorem, [line 362](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L362))
+`CompPoly.GuruswamiSudan.LeeOSullivan.coeff_ofYConstant_mul_outer` (theorem, [line 362](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L362))
 
 ```lean
 theorem coeff_ofYConstant_mul_outer
@@ -154,7 +154,7 @@ theorem coeff_ofYConstant_mul_outer
       A * CPolynomial.coeff P j
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomial_coeffY_self` (theorem, [line 462](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L462))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomial_coeffY_self` (theorem, [line 462](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L462))
 
 ```lean
 theorem leeOSullivanBasisPolynomial_coeffY_self
@@ -163,7 +163,7 @@ theorem leeOSullivanBasisPolynomial_coeffY_self
       G ^ (params.multiplicity - leeOSullivanT params idx)
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomial_coeffY_eq_zero_of_idx_lt` (theorem, [line 488](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L488))
+`CompPoly.GuruswamiSudan.LeeOSullivan.leeOSullivanBasisPolynomial_coeffY_eq_zero_of_idx_lt` (theorem, [line 488](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L488))
 
 > Lee basis polynomials have no `Y` terms above their row index.
 
@@ -174,7 +174,7 @@ theorem leeOSullivanBasisPolynomial_coeffY_eq_zero_of_idx_lt
     CPolynomial.coeff (leeOSullivanBasisPolynomial R G params idx) j = 0
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.ofYConstant_neg` (theorem, [line 556](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L556))
+`CompPoly.GuruswamiSudan.LeeOSullivan.ofYConstant_neg` (theorem, [line 556](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L556))
 
 ```lean
 theorem ofYConstant_neg
@@ -182,7 +182,7 @@ theorem ofYConstant_neg
     CBivariate.ofYConstant (-P) = -CBivariate.ofYConstant P
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.ofYConstant_sub` (theorem, [line 568](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L568))
+`CompPoly.GuruswamiSudan.LeeOSullivan.ofYConstant_sub` (theorem, [line 568](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L568))
 
 ```lean
 theorem ofYConstant_sub
@@ -191,7 +191,7 @@ theorem ofYConstant_sub
       CBivariate.ofYConstant P - CBivariate.ofYConstant Q
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_ofYConstant_mul` (theorem, [line 576](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L576))
+`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_ofYConstant_mul` (theorem, [line 576](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L576))
 
 > Multiplication by a `Y`-constant polynomial preserves multiplicity
 > constraints already satisfied by the bivariate factor.
@@ -203,7 +203,7 @@ theorem hasMultiplicityAtLeast_ofYConstant_mul
     CBivariate.HasMultiplicityAtLeast (CBivariate.ofYConstant A * P) x y m
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_sub` (theorem, [line 586](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L586))
+`CompPoly.GuruswamiSudan.LeeOSullivan.hasMultiplicityAtLeast_sub` (theorem, [line 586](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L586))
 
 ```lean
 theorem hasMultiplicityAtLeast_sub
@@ -213,7 +213,7 @@ theorem hasMultiplicityAtLeast_sub
     CBivariate.HasMultiplicityAtLeast (P - Q) x y m
 ```
 
-`CompPoly.GuruswamiSudan.LeeOSullivan.satisfiesMultiplicityConstraints_sub` (theorem, [line 595](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L595))
+`CompPoly.GuruswamiSudan.LeeOSullivan.satisfiesMultiplicityConstraints_sub` (theorem, [line 595](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean#L595))
 
 ```lean
 theorem satisfiesMultiplicityConstraints_sub
@@ -233,5 +233,5 @@ theorem satisfiesMultiplicityConstraints_sub
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Basis.lean)
 - [Declaration ledger](../../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Basis.json)

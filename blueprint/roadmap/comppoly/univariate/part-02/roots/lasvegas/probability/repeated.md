@@ -7,14 +7,14 @@ proof: formalized
 
 # Repeated Odd Trials and Geometric Fallback Bounds
 
-`CompPoly.Univariate.Roots.LasVegas.Probability.Repeated`, in [CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.LasVegas.Probability.Repeated`, in [CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean), by Valerii Huhnin.
 
 > Independent repeated odd-field split trials for one unresolved factor, the
 > geometric bound on reaching enumeration fallback, and the one-factor witness of
 > the recursive fallback model. The `_of_uniformProbe` variants discharge the
 > per-trial half-success hypothesis from the actual uniform probe source.
 
-`CompPoly.CPolynomial.Roots.FiniteField.repeatedOddSplitTrialsPMF` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L37))
+`CompPoly.CPolynomial.Roots.FiniteField.repeatedOddSplitTrialsPMF` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L37))
 
 > Independent repeated odd-field split trials for one unresolved factor.
 
@@ -27,7 +27,7 @@ noncomputable def repeatedOddSplitTrialsPMF {F : Type*}
     Nat → Nat → PMF (List (TrialResult F))
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.fallbackAfterOddAttemptsProbability` (definition, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L51))
+`CompPoly.CPolynomial.Roots.FiniteField.fallbackAfterOddAttemptsProbability` (definition, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L51))
 
 > Probability that the one-factor loop reaches fallback after all split attempts fail.
 
@@ -40,7 +40,7 @@ noncomputable def fallbackAfterOddAttemptsProbability {F : Type*}
     ℝ≥0∞
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.fallbackAfterOddAttempts_probability_le_geometric` (theorem, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L114))
+`CompPoly.CPolynomial.Roots.FiniteField.fallbackAfterOddAttempts_probability_le_geometric` (theorem, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L114))
 
 > If every one-factor trial succeeds with probability at least `1 / 2`, the
 > probability of using fallback after `attempts` trials is at most `2^-attempts`.
@@ -59,7 +59,7 @@ theorem fallbackAfterOddAttempts_probability_le_geometric {F : Type*}
       ((2 : ℝ≥0∞)⁻¹) ^ attempts
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.fallbackAfterOddAttempts_probability_le_geometric_of_uniformProbe` (theorem, [line 157](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L157))
+`CompPoly.CPolynomial.Roots.FiniteField.fallbackAfterOddAttempts_probability_le_geometric_of_uniformProbe` (theorem, [line 157](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L157))
 
 > For a squarefree finite-field root product over an odd field, the uniform probe
 > source reaches enumeration fallback after `attempts` one-factor trials with
@@ -79,7 +79,7 @@ theorem fallbackAfterOddAttempts_probability_le_geometric_of_uniformProbe {F : T
       ((2 : ℝ≥0∞)⁻¹) ^ attempts
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.repeatedOddSplitTrialsPMF_recursiveFallbackProbabilityModel` (theorem, [line 177](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L177))
+`CompPoly.CPolynomial.Roots.FiniteField.repeatedOddSplitTrialsPMF_recursiveFallbackProbabilityModel` (theorem, [line 177](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L177))
 
 > The repeated one-factor odd-field trial source satisfies the recursive fallback
 > model by concentrating the bad-rank mass at rank `0`.
@@ -101,7 +101,7 @@ theorem repeatedOddSplitTrialsPMF_recursiveFallbackProbabilityModel {F : Type*}
       attempts degree
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.repeatedOddSplitTrialsPMF_recursiveFallbackProbabilityModel_of_uniformProbe` (theorem, [line 216](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L216))
+`CompPoly.CPolynomial.Roots.FiniteField.repeatedOddSplitTrialsPMF_recursiveFallbackProbabilityModel_of_uniformProbe` (theorem, [line 216](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L216))
 
 > The one-factor recursive fallback model witness, with the per-trial
 > half-success hypothesis discharged from the actual uniform probe source.
@@ -123,7 +123,7 @@ theorem repeatedOddSplitTrialsPMF_recursiveFallbackProbabilityModel_of_uniformPr
       attempts degree
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith_uniformTable_none_le_geometric` (theorem, [line 244](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L244))
+`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith_uniformTable_none_le_geometric` (theorem, [line 244](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L244))
 
 > Bridge to the executable retry loop: the deterministic `tryOddSplitAttemptsWith`,
 > driven by a probe table whose entries are sampled independently and uniformly,
@@ -146,7 +146,7 @@ theorem tryOddSplitAttemptsWith_uniformTable_none_le_geometric {F : Type*}
       ((2 : ℝ≥0∞)⁻¹) ^ attempts
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith_uniformTable_none_le_geometric_of_uniformProbe` (theorem, [line 378](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L378))
+`CompPoly.CPolynomial.Roots.FiniteField.tryOddSplitAttemptsWith_uniformTable_none_le_geometric_of_uniformProbe` (theorem, [line 378](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L378))
 
 > For a squarefree odd-field root product, the executable retry loop driven by an
 > honestly sampled uniform probe table reaches fallback with probability at most
@@ -169,7 +169,7 @@ theorem tryOddSplitAttemptsWith_uniformTable_none_le_geometric_of_uniformProbe {
     ((2 : ℝ≥0∞)⁻¹) ^ attempts
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitWithTables` (definition, [line 405](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L405))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitWithTables` (definition, [line 405](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L405))
 
 > Deterministic multi-factor splitter driven by per-factor probe tables: the
 > `n`-th processed splittable factor is handed the `n`-th table through the
@@ -183,7 +183,7 @@ def recursiveSplitWithTables {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     Nat → List (CPolynomial F) → List (List (CPolynomial F)) → List Bool
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.uniformProbeTablesPMF` (definition, [line 424](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L424))
+`CompPoly.CPolynomial.Roots.FiniteField.uniformProbeTablesPMF` (definition, [line 424](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L424))
 
 > Independent uniform probe tables, one per processed factor.
 
@@ -193,7 +193,7 @@ noncomputable def uniformProbeTablesPMF {F : Type*} [Field F] [BEq F] [LawfulBEq
     Nat → PMF (List (List (CPolynomial F)))
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitWithTables_length_le` (theorem, [line 479](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L479))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitWithTables_length_le` (theorem, [line 479](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L479))
 
 > Table-driven traces never exceed the split budget of the initial stack.
 
@@ -207,7 +207,7 @@ theorem recursiveSplitWithTables_length_le
         stackSplitBudget stack
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitWithTables_rank_le_geometric` (theorem, [line 542](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L542))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitWithTables_rank_le_geometric` (theorem, [line 542](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L542))
 
 > Each processed factor of the table-driven splitter falls back with probability
 > at most `2 ^ -attempts` under independently sampled uniform probe tables.
@@ -232,7 +232,7 @@ theorem recursiveSplitWithTables_rank_le_geometric {q : Nat}
       ((2 : ℝ≥0∞)⁻¹) ^ attempts
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitWithTables_rank_eq_zero_of_budget_le` (theorem, [line 696](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L696))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitWithTables_rank_eq_zero_of_budget_le` (theorem, [line 696](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L696))
 
 > Table-driven trace entries beyond the split budget never appear.
 
@@ -251,7 +251,7 @@ theorem recursiveSplitWithTables_rank_eq_zero_of_budget_le
     0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitWithTables_recursiveFallbackProbabilityModel` (theorem, [line 723](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L723))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitWithTables_recursiveFallbackProbabilityModel` (theorem, [line 723](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L723))
 
 > The table-driven splitter satisfies the recursive fallback model under
 > independently sampled uniform probe tables.
@@ -277,7 +277,7 @@ theorem recursiveSplitWithTables_recursiveFallbackProbabilityModel {q : Nat}
       attempts (CPolynomial.natDegree g)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitWithTables_fallback_probability_le_binomialTail` (theorem, [line 776](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L776))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveSplitWithTables_fallback_probability_le_binomialTail` (theorem, [line 776](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L776))
 
 > Generic recursive table bridge: the deterministic table-driven splitter, with
 > one independently sampled uniform probe table per processed factor, reaches
@@ -305,7 +305,7 @@ theorem recursiveSplitWithTables_fallback_probability_le_binomialTail {q : Nat}
     binomialFallbackTail attempts (CPolynomial.natDegree g)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveOddSplitWithTables` (definition, [line 801](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L801))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveOddSplitWithTables` (definition, [line 801](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L801))
 
 > Multi-factor odd Cantor-Zassenhaus splitting driven by probe tables.
 
@@ -316,7 +316,7 @@ def recursiveOddSplitWithTables {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     Nat → List (CPolynomial F) → List (List (CPolynomial F)) → List Bool
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.recursiveOddSplitWithTables_fallback_probability_le_binomialTail` (theorem, [line 818](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L818))
+`CompPoly.CPolynomial.Roots.FiniteField.recursiveOddSplitWithTables_fallback_probability_le_binomialTail` (theorem, [line 818](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L818))
 
 > Recursive table bridge for the odd branch: the deterministic table-driven
 > splitter, run on a splitter-valid input of degree `d` with one independently
@@ -344,7 +344,7 @@ theorem recursiveOddSplitWithTables_fallback_probability_le_binomialTail {F : Ty
     binomialFallbackTail attempts (CPolynomial.natDegree g)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasTryTableSplit` (definition, [line 853](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L853))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasTryTableSplit` (definition, [line 853](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L853))
 
 > Per-factor table-driven split attempt of the full Las Vegas backend: the odd
 > Cantor-Zassenhaus retry loop for odd `q`, the characteristic-two trace retry
@@ -359,7 +359,7 @@ def lasVegasTryTableSplit {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     Option (Array (CPolynomial F))
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitWithTables` (definition, [line 868](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L868))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitWithTables` (definition, [line 868](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L868))
 
 > The full Las Vegas backend driven by per-factor probe tables.
 
@@ -370,7 +370,7 @@ def lasVegasSplitWithTables {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     Nat → List (CPolynomial F) → List (List (CPolynomial F)) → List Bool
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasTryTableSplit_isSplitStep` (theorem, [line 875](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L875))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasTryTableSplit_isSplitStep` (theorem, [line 875](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L875))
 
 > Successful backend table attempts are split steps.
 
@@ -385,7 +385,7 @@ theorem lasVegasTryTableSplit_isSplitStep {F : Type*}
     IsSplitStep g children
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasTryTableSplit_uniformTable_none_le_geometric` (theorem, [line 896](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L896))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasTryTableSplit_uniformTable_none_le_geometric` (theorem, [line 896](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L896))
 
 > Backend table attempts on splitter-valid factors fail with probability at
 > most `2 ^ -attempts`.
@@ -408,7 +408,7 @@ theorem lasVegasTryTableSplit_uniformTable_none_le_geometric {F : Type*}
     ((2 : ℝ≥0∞)⁻¹) ^ attempts
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitWithTables_fallback_probability_le_binomialTail` (theorem, [line 960](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L960))
+`CompPoly.CPolynomial.Roots.FiniteField.lasVegasSplitWithTables_fallback_probability_le_binomialTail` (theorem, [line 960](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean#L960))
 
 > Backend recursive table bridge: over any finite field — odd, or binary with
 > matching trace metadata — the deterministic table-driven Las Vegas backend, run
@@ -441,5 +441,5 @@ theorem lasVegasSplitWithTables_fallback_probability_le_binomialTail {F : Type*}
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean)
+- [CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability/Repeated.lean)
 - [Declaration ledger](../../../../../../../sources/comppoly/CompPoly.Univariate.Roots.LasVegas.Probability.Repeated.json)

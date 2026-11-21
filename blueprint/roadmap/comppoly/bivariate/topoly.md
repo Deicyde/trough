@@ -7,7 +7,7 @@ proof: formalized
 
 # Equivalence with Mathlib Bivariate Polynomials
 
-`CompPoly.Bivariate.ToPoly`, in [CompPoly/Bivariate/ToPoly.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean), by Derek Sorensen.
+`CompPoly.Bivariate.ToPoly`, in [CompPoly/Bivariate/ToPoly.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean), by Derek Sorensen.
 
 > This file establishes the conversion from `CBivariate R` to Mathlib's `R[X][Y]`
 > (`Polynomial (Polynomial R)`).
@@ -23,7 +23,7 @@ proof: formalized
 
 > Core conversion lemmas between `CBivariate R` and `R[X][Y]`.
 
-`CompPoly.CBivariate.toPoly` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L46))
+`CompPoly.CBivariate.toPoly` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L46))
 
 > Convert `CBivariate R` to Mathlib's bivariate polynomial `R[X][Y]`.
 >
@@ -35,7 +35,7 @@ noncomputable def toPoly {R : Type*} [BEq R] [LawfulBEq R] [Semiring R]
     (p : CBivariate R) : R[X][Y]
 ```
 
-`CompPoly.CBivariate.ofPoly` (definition, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L56))
+`CompPoly.CBivariate.ofPoly` (definition, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L56))
 
 > Convert Mathlib's `R[X][Y]` to `CBivariate R` (inverse of `toPoly`).
 >
@@ -47,7 +47,7 @@ def ofPoly {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiring R]
     [DecidableEq R] [Semiring (Polynomial R)] (p : R[X][Y]) : CBivariate R
 ```
 
-`CompPoly.CBivariate.toPoly_add` (lemma, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L64))
+`CompPoly.CBivariate.toPoly_add` (lemma, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L64))
 
 > `toPoly` preserves addition.
 
@@ -56,7 +56,7 @@ lemma toPoly_add {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiring R]
     (p q : CBivariate R) : toPoly (p + q) = toPoly p + toPoly q
 ```
 
-`CompPoly.CBivariate.toPoly_monomial` (lemma, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L100))
+`CompPoly.CBivariate.toPoly_monomial` (lemma, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L100))
 
 > `toPoly` sends a Y-monomial to the corresponding monomial in `R[X][Y]`.
 
@@ -67,7 +67,7 @@ lemma toPoly_monomial {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiring
     toPoly (CPolynomial.monomial n c) = monomial n (c.toPoly)
 ```
 
-`CompPoly.CBivariate.ofPoly_monomial` (lemma, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L114))
+`CompPoly.CBivariate.ofPoly_monomial` (lemma, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L114))
 
 > `ofPoly` sends a Y-monomial in `R[X][Y]` to a bivariate monomial.
 
@@ -79,7 +79,7 @@ lemma ofPoly_monomial {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiring
     CPolynomial.monomial n ⟨c.toImpl, CPolynomial.Raw.isCanonical_toImpl c⟩
 ```
 
-`CompPoly.CBivariate.toImpl_add` (lemma, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L128))
+`CompPoly.CBivariate.toImpl_add` (lemma, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L128))
 
 > `Polynomial.toImpl` preserves addition, accounting for trimming in the raw representation.
 
@@ -88,7 +88,7 @@ lemma toImpl_add {R : Type*} [BEq R] [LawfulBEq R] [Semiring R] (p q : R[X]) :
     p.toImpl + q.toImpl = (p + q).toImpl
 ```
 
-`CompPoly.CBivariate.ofPoly_add` (lemma, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L155))
+`CompPoly.CBivariate.ofPoly_add` (lemma, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L155))
 
 > `ofPoly` preserves addition in `R[X][Y]`.
 
@@ -98,7 +98,7 @@ lemma ofPoly_add {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiring R]
     (p q : R[X][Y]) : ofPoly (p + q) = ofPoly p + ofPoly q
 ```
 
-`CompPoly.CBivariate.ofPoly_coeff` (theorem, [line 184](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L184))
+`CompPoly.CBivariate.ofPoly_coeff` (theorem, [line 184](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L184))
 
 > The outer coefficient of `ofPoly p` converts back to the corresponding `R[X]` coefficient.
 
@@ -108,7 +108,7 @@ theorem ofPoly_coeff {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiring 
     (p : R[X][Y]) (n : ℕ) : (CPolynomial.coeff (ofPoly p) n).toPoly = p.coeff n
 ```
 
-`CompPoly.CBivariate.toPoly_coeff` (theorem, [line 209](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L209))
+`CompPoly.CBivariate.toPoly_coeff` (theorem, [line 209](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L209))
 
 > The outer coefficient of `toPoly p` is `CPolynomial.coeff p n` converted to `R[X]`.
 
@@ -117,7 +117,7 @@ theorem toPoly_coeff {R : Type*} [BEq R] [LawfulBEq R] [Semiring R]
     (p : CBivariate R) (n : ℕ) : (toPoly p).coeff n = (CPolynomial.coeff p n).toPoly
 ```
 
-`CompPoly.CBivariate.toPoly_eq_map` (theorem, [line 218](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L218))
+`CompPoly.CBivariate.toPoly_eq_map` (theorem, [line 218](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L218))
 
 > `toPoly` is the map of the outer polynomial via `CPolynomial.ringEquiv`.
 
@@ -127,7 +127,7 @@ theorem toPoly_eq_map {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiring
     toPoly p = (CPolynomial.toPoly p).map (CPolynomial.ringEquiv (R := R))
 ```
 
-`CompPoly.CBivariate.toPoly_mul` (theorem, [line 234](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L234))
+`CompPoly.CBivariate.toPoly_mul` (theorem, [line 234](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L234))
 
 > `toPoly` preserves multiplication.
 
@@ -139,7 +139,7 @@ theorem toPoly_mul {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiring R]
 
 > Ring equivalence between bivariate representations.
 
-`CompPoly.CBivariate.ofPoly_toPoly` (theorem, [line 250](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L250))
+`CompPoly.CBivariate.ofPoly_toPoly` (theorem, [line 250](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L250))
 
 > Round-trip from Mathlib: converting a polynomial to `CBivariate` and back is the identity.
 
@@ -149,7 +149,7 @@ theorem ofPoly_toPoly {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiring
     (p : R[X][Y]) : toPoly (ofPoly p) = p
 ```
 
-`CompPoly.CBivariate.toPoly_ofPoly` (theorem, [line 262](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L262))
+`CompPoly.CBivariate.toPoly_ofPoly` (theorem, [line 262](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L262))
 
 > Round-trip from `CBivariate`: converting to Mathlib and back is the identity.
 
@@ -159,7 +159,7 @@ theorem toPoly_ofPoly {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiring
     (p : CBivariate R) : ofPoly (toPoly p) = p
 ```
 
-`CompPoly.CBivariate.ringEquiv` (definition, [line 278](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L278))
+`CompPoly.CBivariate.ringEquiv` (definition, [line 278](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L278))
 
 > Ring equivalence between `CBivariate R` and Mathlib's `R[X][Y]`.
 
@@ -169,7 +169,7 @@ noncomputable def ringEquiv
     CBivariate R ≃+* R[X][Y]
 ```
 
-`CompPoly.CBivariate.toPoly_one` (theorem, [line 290](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L290))
+`CompPoly.CBivariate.toPoly_one` (theorem, [line 290](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L290))
 
 > `toPoly` preserves `1`.
 
@@ -179,7 +179,7 @@ theorem toPoly_one
     toPoly (1 : CBivariate R) = 1
 ```
 
-`CompPoly.CBivariate.ofPoly_one` (theorem, [line 296](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L296))
+`CompPoly.CBivariate.ofPoly_one` (theorem, [line 296](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L296))
 
 > `ofPoly` preserves `1`.
 
@@ -189,7 +189,7 @@ theorem ofPoly_one
     ofPoly (1 : R[X][Y]) = 1
 ```
 
-`CompPoly.CBivariate.toPoly_zero` (lemma, [line 305](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L305))
+`CompPoly.CBivariate.toPoly_zero` (lemma, [line 305](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L305))
 
 > `toPoly` maps the zero bivariate polynomial to `0`.
 
@@ -198,7 +198,7 @@ lemma toPoly_zero {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiring R] 
     toPoly (0 : CBivariate R) = 0
 ```
 
-`CompPoly.CBivariate.ofPoly_zero` (lemma, [line 313](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L313))
+`CompPoly.CBivariate.ofPoly_zero` (lemma, [line 313](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L313))
 
 > `ofPoly` maps `0` in `R[X][Y]` to the zero bivariate polynomial.
 
@@ -207,7 +207,7 @@ lemma ofPoly_zero {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiring R] 
     ofPoly (0 : R[X][Y]) = 0
 ```
 
-`CompPoly.CBivariate.toPolyRingHom` (definition, [line 319](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L319))
+`CompPoly.CBivariate.toPolyRingHom` (definition, [line 319](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L319))
 
 > Ring hom from computable bivariates to Mathlib bivariates.
 
@@ -217,7 +217,7 @@ noncomputable def toPolyRingHom
     CBivariate R →+* R[X][Y]
 ```
 
-`CompPoly.CBivariate.ofPolyRingHom` (definition, [line 325](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L325))
+`CompPoly.CBivariate.ofPolyRingHom` (definition, [line 325](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L325))
 
 > Ring hom from Mathlib bivariates to computable bivariates.
 
@@ -227,7 +227,7 @@ noncomputable def ofPolyRingHom
     R[X][Y] →+* CBivariate R
 ```
 
-`CompPoly.CBivariate.ofPoly_mul` (theorem, [line 331](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L331))
+`CompPoly.CBivariate.ofPoly_mul` (theorem, [line 331](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L331))
 
 > `ofPoly` preserves multiplication.
 
@@ -247,7 +247,7 @@ theorem ofPoly_mul
 
 > Correctness lemmas for evaluation, coefficients, support, and degrees.
 
-`CompPoly.CBivariate.evalY_toPoly` (theorem, [line 372](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L372))
+`CompPoly.CBivariate.evalY_toPoly` (theorem, [line 372](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L372))
 
 > `evalY a` corresponds to outer evaluation at `Polynomial.C a`.
 
@@ -257,7 +257,7 @@ theorem evalY_toPoly {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiring 
     (evalY (R := R) a f).toPoly = (toPoly f).eval (Polynomial.C a)
 ```
 
-`CompPoly.CBivariate.eval_y_horner_eq_eval_y` (theorem, [line 391](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L391))
+`CompPoly.CBivariate.eval_y_horner_eq_eval_y` (theorem, [line 391](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L391))
 
 > Horner evaluation in Y agrees with the deferred-trim sum-of-powers evaluator.
 >
@@ -271,7 +271,7 @@ theorem eval_y_horner_eq_eval_y {R : Type*}
     evalYHorner a p = evalY a p
 ```
 
-`CompPoly.CBivariate.eval_eval_horner_y_then_x_eq_eval_eval` (theorem, [line 415](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L415))
+`CompPoly.CBivariate.eval_eval_horner_y_then_x_eq_eval_eval` (theorem, [line 415](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L415))
 
 > `Y`-then-`X` Horner full evaluation agrees with the existing evaluator.
 
@@ -282,7 +282,7 @@ theorem eval_eval_horner_y_then_x_eq_eval_eval {R : Type*}
     evalEvalHornerYThenX x y p = evalEval x y p
 ```
 
-`CompPoly.CBivariate.evalEval_toPoly` (theorem, [line 423](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L423))
+`CompPoly.CBivariate.evalEval_toPoly` (theorem, [line 423](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L423))
 
 > `toPoly` preserves full evaluation: `evalEval x y f = (toPoly f).evalEval x y`.
 
@@ -292,7 +292,7 @@ theorem evalEval_toPoly {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiri
     @CBivariate.evalEval R _ _ _ _ x y f = (toPoly f).evalEval x y
 ```
 
-`CompPoly.CBivariate.coeff_toPoly` (theorem, [line 430](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L430))
+`CompPoly.CBivariate.coeff_toPoly` (theorem, [line 430](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L430))
 
 > `toPoly` preserves coefficients: coefficient of `X^i Y^j` matches.
 
@@ -302,7 +302,7 @@ theorem coeff_toPoly {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiring 
     ((toPoly f).coeff j).coeff i = CBivariate.coeff (R := R) f i j
 ```
 
-`CompPoly.CBivariate.support_toPoly_outer` (theorem, [line 438](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L438))
+`CompPoly.CBivariate.support_toPoly_outer` (theorem, [line 438](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L438))
 
 > The outer support of `toPoly f` equals the Y-support of `f`.
 
@@ -311,7 +311,7 @@ theorem support_toPoly_outer {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [S
     (f : CBivariate R) : (toPoly f).support = f.supportY
 ```
 
-`CompPoly.CBivariate.natDegreeY_toPoly` (theorem, [line 448](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L448))
+`CompPoly.CBivariate.natDegreeY_toPoly` (theorem, [line 448](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L448))
 
 > `toPoly` preserves Y-degree.
 
@@ -320,7 +320,7 @@ theorem natDegreeY_toPoly {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semi
     (f : CBivariate R) : (toPoly f).natDegree = f.natDegreeY
 ```
 
-`CompPoly.CBivariate.coeff_toPoly_Y` (theorem, [line 463](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L463))
+`CompPoly.CBivariate.coeff_toPoly_Y` (theorem, [line 463](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L463))
 
 > The outer `Y`-coefficient formula used for X-degree transport.
 
@@ -330,7 +330,7 @@ theorem coeff_toPoly_Y {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semirin
     (toPoly f).coeff j = CPolynomial.toPoly (f.val.coeff j)
 ```
 
-`CompPoly.CBivariate.natDegreeX_toPoly` (theorem, [line 473](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L473))
+`CompPoly.CBivariate.natDegreeX_toPoly` (theorem, [line 473](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L473))
 
 > `toPoly` preserves X-degree (max over Y-coefficients of their degree in X).
 
@@ -340,7 +340,7 @@ theorem natDegreeX_toPoly {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semi
     (toPoly f).support.sup (fun j ↦ ((toPoly f).coeff j).natDegree) = f.natDegreeX
 ```
 
-`CompPoly.CBivariate.CC_toPoly` (theorem, [line 486](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L486))
+`CompPoly.CBivariate.CC_toPoly` (theorem, [line 486](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L486))
 
 > `CC` corresponds to the nested constant polynomial in `R[X][Y]`.
 
@@ -349,7 +349,7 @@ theorem CC_toPoly {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiring R] 
     toPoly (CC (R := R) r) = Polynomial.C (Polynomial.C r)
 ```
 
-`CompPoly.CBivariate.X_toPoly` (theorem, [line 496](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L496))
+`CompPoly.CBivariate.X_toPoly` (theorem, [line 496](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L496))
 
 > `X` (inner variable) corresponds to `Polynomial.C Polynomial.X` in `R[X][Y]`.
 
@@ -358,7 +358,7 @@ theorem X_toPoly {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiring R] :
     toPoly (X (R := R)) = Polynomial.C Polynomial.X
 ```
 
-`CompPoly.CBivariate.Y_toPoly` (theorem, [line 505](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L505))
+`CompPoly.CBivariate.Y_toPoly` (theorem, [line 505](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L505))
 
 > `Y` (outer variable) corresponds to `Polynomial.X` in `R[X][Y]`.
 
@@ -367,7 +367,7 @@ theorem Y_toPoly {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiring R] [
     toPoly (CBivariate.Y (R := R)) = (Polynomial.X : Polynomial (Polynomial R))
 ```
 
-`CompPoly.CBivariate.monomialXY_toPoly` (theorem, [line 514](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L514))
+`CompPoly.CBivariate.monomialXY_toPoly` (theorem, [line 514](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L514))
 
 > `monomialXY n m c` corresponds to `Y^m` with inner coefficient `X^n * c`.
 
@@ -377,7 +377,7 @@ theorem monomialXY_toPoly {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semi
     toPoly (monomialXY (R := R) n m c) = Polynomial.monomial m (Polynomial.monomial n c)
 ```
 
-`CompPoly.CBivariate.supportX_toPoly` (theorem, [line 525](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L525))
+`CompPoly.CBivariate.supportX_toPoly` (theorem, [line 525](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L525))
 
 > `supportX` corresponds to the union of inner supports of outer coefficients.
 
@@ -388,7 +388,7 @@ theorem supportX_toPoly {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semiri
       (toPoly f).support.biUnion (fun j ↦ ((toPoly f).coeff j).support)
 ```
 
-`CompPoly.CBivariate.totalDegree_toPoly` (theorem, [line 538](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L538))
+`CompPoly.CBivariate.totalDegree_toPoly` (theorem, [line 538](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L538))
 
 > `totalDegree` corresponds to the supremum over `j` of `natDegree ((toPoly f).coeff j) + j`.
 
@@ -399,7 +399,7 @@ theorem totalDegree_toPoly {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Sem
       (toPoly f).support.sup (fun j ↦ ((toPoly f).coeff j).natDegree + j)
 ```
 
-`CompPoly.CBivariate.evalX_toPoly_coeff` (theorem, [line 552](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L552))
+`CompPoly.CBivariate.evalX_toPoly_coeff` (theorem, [line 552](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L552))
 
 > `evalX a` evaluates each inner coefficient at `a`.
 
@@ -409,7 +409,7 @@ theorem evalX_toPoly_coeff {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Sem
     ((evalX (R := R) a f).toPoly).coeff j = ((toPoly f).coeff j).eval a
 ```
 
-`CompPoly.CBivariate.evalX_toPoly_eval_commute` (theorem, [line 579](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L579))
+`CompPoly.CBivariate.evalX_toPoly_eval_commute` (theorem, [line 579](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L579))
 
 > `evalX` is compatible with full bivariate evaluation when `a` and `y` commute.
 
@@ -419,7 +419,7 @@ theorem evalX_toPoly_eval_commute {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial 
     (evalX (R := R) a f).eval y = (toPoly f).evalEval a y
 ```
 
-`CompPoly.CBivariate.evalX_toPoly_eval` (theorem, [line 619](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L619))
+`CompPoly.CBivariate.evalX_toPoly_eval` (theorem, [line 619](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L619))
 
 > `evalX_toPoly_eval_commute` specialized to commutative rings.
 
@@ -429,7 +429,7 @@ theorem evalX_toPoly_eval {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Comm
     (evalX (R := R) a f).eval y = (toPoly f).evalEval a y
 ```
 
-`CompPoly.CBivariate.eval_eval_horner_x_then_y_eq_eval_eval` (theorem, [line 627](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L627))
+`CompPoly.CBivariate.eval_eval_horner_x_then_y_eq_eval_eval` (theorem, [line 627](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L627))
 
 > `X`-then-`Y` Horner full evaluation agrees with the existing evaluator over
 > commutative coefficient semirings.
@@ -441,7 +441,7 @@ theorem eval_eval_horner_x_then_y_eq_eval_eval {R : Type*}
     evalEvalHornerXThenY x y p = evalEval x y p
 ```
 
-`CompPoly.CBivariate.evalX_toPoly_eval_commute_converse` (theorem, [line 666](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L666))
+`CompPoly.CBivariate.evalX_toPoly_eval_commute_converse` (theorem, [line 666](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L666))
 
 > The `Commute` hypothesis in `evalX_toPoly_eval_commute` is necessary:
 > if the identity holds for every bivariate polynomial then `a` and `y` commute.
@@ -455,7 +455,7 @@ theorem evalX_toPoly_eval_commute_converse
     Commute a y
 ```
 
-`CompPoly.CBivariate.eval_comm` (theorem, [line 696](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L696))
+`CompPoly.CBivariate.eval_comm` (theorem, [line 696](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L696))
 
 > Computable analogue of `Polynomial.map_evalRingHom_eval`:
 > evaluating `Y` at `a` and then `X` at `x` agrees with first applying the
@@ -468,7 +468,7 @@ theorem eval_comm {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [CommSemiring
     (evalY (R := R) a f).eval x = (evalX (R := R) x f).eval a
 ```
 
-`CompPoly.CBivariate.leadingCoeffY_toPoly` (theorem, [line 704](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L704))
+`CompPoly.CBivariate.leadingCoeffY_toPoly` (theorem, [line 704](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L704))
 
 > `leadingCoeffY` corresponds to the leading coefficient in the outer variable.
 
@@ -478,7 +478,7 @@ theorem leadingCoeffY_toPoly {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [S
     (leadingCoeffY (R := R) f).toPoly = (toPoly f).leadingCoeff
 ```
 
-`CompPoly.CBivariate.swap_toPoly_coeff` (theorem, [line 720](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L720))
+`CompPoly.CBivariate.swap_toPoly_coeff` (theorem, [line 720](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L720))
 
 > `swap` exchanges X- and Y-exponents.
 
@@ -488,7 +488,7 @@ theorem swap_toPoly_coeff {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [Semi
     ((toPoly (swap (R := R) f)).coeff j).coeff i = ((toPoly f).coeff i).coeff j
 ```
 
-`CompPoly.CBivariate.leadingCoeffX_toPoly` (theorem, [line 827](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean#L827))
+`CompPoly.CBivariate.leadingCoeffX_toPoly` (theorem, [line 827](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean#L827))
 
 > `leadingCoeffX` is the Y-leading coefficient of the swapped polynomial.
 
@@ -509,5 +509,5 @@ theorem leadingCoeffX_toPoly {R : Type*} [BEq R] [LawfulBEq R] [Nontrivial R] [S
 
 ## Sources
 
-- [CompPoly/Bivariate/ToPoly.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/ToPoly.lean)
+- [CompPoly/Bivariate/ToPoly.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/ToPoly.lean)
 - [Declaration ledger](../../../sources/comppoly/CompPoly.Bivariate.ToPoly.json)

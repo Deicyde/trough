@@ -7,9 +7,9 @@ proof: formalized
 
 # Shifted Row Reduction Contexts
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.ShiftedReduction`, in [CompPoly/LinearAlgebra/PolynomialMatrix/ShiftedReduction.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/ShiftedReduction.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.ShiftedReduction`, in [CompPoly/LinearAlgebra/PolynomialMatrix/ShiftedReduction.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/ShiftedReduction.lean), by Valerii Huhnin.
 
-`CompPoly.PolynomialMatrix.ShiftedRowReducerContext` (structure, [line 21](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/ShiftedReduction.lean#L21))
+`CompPoly.PolynomialMatrix.ShiftedRowReducerContext` (structure, [line 21](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/ShiftedReduction.lean#L21))
 
 > Executable shifted row-reduction backend over `F[X]`.
 
@@ -50,5 +50,5 @@ structure ShiftedRowReducerContext
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/ShiftedReduction.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/ShiftedReduction.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/ShiftedReduction.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/ShiftedReduction.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.ShiftedReduction.json)

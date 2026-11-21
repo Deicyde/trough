@@ -7,13 +7,13 @@ proof: formalized
 
 # KoalaBear Guruswami-Sudan Field-Root Backends
 
-`CompPoly.Bivariate.GuruswamiSudan.Root.FieldRoots.KoalaBear`, in [CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Root.FieldRoots.KoalaBear`, in [CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean), by Valerii Huhnin.
 
 > Concrete finite-field root backends for canonical KoalaBear and native-word fast
 > KoalaBear. Both use the generic finite-field algorithm directly over their field
 > carriers.
 
-`CompPoly.GuruswamiSudan.koalaBearFiniteFieldContext` (definition, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L28))
+`CompPoly.GuruswamiSudan.koalaBearFiniteFieldContext` (definition, [line 28](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L28))
 
 > Finite-field context for canonical KoalaBear.
 
@@ -22,7 +22,7 @@ def koalaBearFiniteFieldContext :
     CPolynomial.Roots.FiniteField.FiniteFieldContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearSmoothCyclicRootContext` (definition, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L39))
+`CompPoly.GuruswamiSudan.koalaBearSmoothCyclicRootContext` (definition, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L39))
 
 > Smooth cyclic splitter context for canonical KoalaBear.
 
@@ -31,7 +31,7 @@ def koalaBearSmoothCyclicRootContext :
     CPolynomial.Roots.FiniteField.SmoothCyclicRootContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearFieldRootContext` (definition, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L86))
+`CompPoly.GuruswamiSudan.koalaBearFieldRootContext` (definition, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L86))
 
 > Complete GS-facing finite-field root backend for canonical KoalaBear.
 
@@ -39,7 +39,7 @@ def koalaBearSmoothCyclicRootContext :
 def koalaBearFieldRootContext : FieldRootContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearNttFieldRootContext` (definition, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L95))
+`CompPoly.GuruswamiSudan.koalaBearNttFieldRootContext` (definition, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L95))
 
 > Complete GS-facing finite-field root backend for canonical KoalaBear with NTT arithmetic.
 
@@ -47,7 +47,7 @@ def koalaBearFieldRootContext : FieldRootContext KoalaBear.Field
 def koalaBearNttFieldRootContext : FieldRootContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearNttFastFieldRootContext` (definition, [line 108](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L108))
+`CompPoly.GuruswamiSudan.koalaBearNttFastFieldRootContext` (definition, [line 108](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L108))
 
 > Complete GS-facing finite-field root backend for canonical KoalaBear with NTTFast arithmetic.
 
@@ -55,7 +55,7 @@ def koalaBearNttFieldRootContext : FieldRootContext KoalaBear.Field
 def koalaBearNttFastFieldRootContext : FieldRootContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearFiniteFieldContext` (definition, [line 121](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L121))
+`CompPoly.GuruswamiSudan.fastKoalaBearFiniteFieldContext` (definition, [line 121](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L121))
 
 > Finite-field context for native-word fast KoalaBear.
 
@@ -64,7 +64,7 @@ def fastKoalaBearFiniteFieldContext :
     CPolynomial.Roots.FiniteField.FiniteFieldContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearPrimitiveRoot` (definition, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L138))
+`CompPoly.GuruswamiSudan.fastKoalaBearPrimitiveRoot` (definition, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L138))
 
 > Primitive generator transported to native-word fast KoalaBear.
 
@@ -72,7 +72,7 @@ def fastKoalaBearFiniteFieldContext :
 def fastKoalaBearPrimitiveRoot : KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearPrimitiveRoot_order` (lemma, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L142))
+`CompPoly.GuruswamiSudan.fastKoalaBearPrimitiveRoot_order` (lemma, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L142))
 
 > The transported fast KoalaBear generator has full multiplicative order.
 
@@ -81,7 +81,7 @@ lemma fastKoalaBearPrimitiveRoot_order :
     orderOf fastKoalaBearPrimitiveRoot = KoalaBear.fieldSize - 1
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearSmoothCyclicRootContext` (definition, [line 152](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L152))
+`CompPoly.GuruswamiSudan.fastKoalaBearSmoothCyclicRootContext` (definition, [line 152](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L152))
 
 > Smooth cyclic splitter context for native-word fast KoalaBear.
 
@@ -90,7 +90,7 @@ def fastKoalaBearSmoothCyclicRootContext :
     CPolynomial.Roots.FiniteField.SmoothCyclicRootContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearFieldRootContext` (definition, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L208))
+`CompPoly.GuruswamiSudan.fastKoalaBearFieldRootContext` (definition, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L208))
 
 > Complete GS-facing finite-field root backend for native-word fast KoalaBear.
 
@@ -98,7 +98,7 @@ def fastKoalaBearSmoothCyclicRootContext :
 def fastKoalaBearFieldRootContext : FieldRootContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearNttFieldRootContext` (definition, [line 220](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L220))
+`CompPoly.GuruswamiSudan.fastKoalaBearNttFieldRootContext` (definition, [line 220](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L220))
 
 > Complete GS-facing finite-field root backend for native-word fast KoalaBear with
 > NTT arithmetic.
@@ -107,7 +107,7 @@ def fastKoalaBearFieldRootContext : FieldRootContext KoalaBear.Fast.Field
 def fastKoalaBearNttFieldRootContext : FieldRootContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearNttFastFieldRootContext` (definition, [line 236](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L236))
+`CompPoly.GuruswamiSudan.fastKoalaBearNttFastFieldRootContext` (definition, [line 236](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean#L236))
 
 > Complete GS-facing finite-field root backend for native-word fast KoalaBear with
 > NTTFast arithmetic.
@@ -127,5 +127,5 @@ def fastKoalaBearNttFastFieldRootContext : FieldRootContext KoalaBear.Fast.Field
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/FieldRoots/KoalaBear.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Root.FieldRoots.KoalaBear.json)

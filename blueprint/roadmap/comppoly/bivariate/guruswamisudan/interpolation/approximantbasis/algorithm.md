@@ -7,7 +7,7 @@ proof: formalized
 
 # Executable Approximant-Basis Interpolation
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Algorithm`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Algorithm.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Algorithm.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Algorithm`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Algorithm.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Algorithm.lean), by Valerii Huhnin.
 
 > This backend constructs the GS diagonal modular equations, calls an explicit
 > solution-basis context, selects a least shifted-degree solution row, and
@@ -19,7 +19,7 @@ proof: formalized
 >     Villard, G., *Faster algorithms for multivariate interpolation with
 >     multiplicities and simultaneous polynomial approximations*][CJNSV15]
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.normalizeApproximantCandidate?` (definition, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Algorithm.lean#L40))
+`CompPoly.GuruswamiSudan.ApproximantBasis.normalizeApproximantCandidate?` (definition, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Algorithm.lean#L40))
 
 > Normalize a row-derived approximant candidate using the shared interpolation
 > vector policy.
@@ -29,7 +29,7 @@ def normalizeApproximantCandidate? (params : GSInterpParams) (Q : CBivariate F) 
     Option (CBivariate F)
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.approximantBasisPositiveInterpolate` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Algorithm.lean#L46))
+`CompPoly.GuruswamiSudan.ApproximantBasis.approximantBasisPositiveInterpolate` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Algorithm.lean#L46))
 
 > Positive-`Y`-weight approximant-basis interpolation branch.
 
@@ -42,7 +42,7 @@ def approximantBasisPositiveInterpolate
     Option (CBivariate F)
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.approximantBasisInterpolate` (definition, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Algorithm.lean#L70))
+`CompPoly.GuruswamiSudan.ApproximantBasis.approximantBasisInterpolate` (definition, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Algorithm.lean#L70))
 
 > Approximant-basis interpolation with the shared low-message branch.
 
@@ -61,5 +61,5 @@ def approximantBasisInterpolate
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Algorithm.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Algorithm.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Algorithm.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Algorithm.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Algorithm.json)

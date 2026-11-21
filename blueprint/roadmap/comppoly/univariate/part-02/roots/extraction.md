@@ -7,12 +7,12 @@ proof: formalized
 
 # Root Extraction Helpers
 
-`CompPoly.Univariate.Roots.Extraction`, in [CompPoly/Univariate/Roots/Extraction.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Extraction.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.Extraction`, in [CompPoly/Univariate/Roots/Extraction.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Extraction.lean), by Valerii Huhnin.
 
 > Candidate extraction, validation, and deduplication helpers for univariate root
 > finding.
 
-`CompPoly.CPolynomial.linearRootOfFactor?` (definition, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Extraction.lean#L24))
+`CompPoly.CPolynomial.linearRootOfFactor?` (definition, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Extraction.lean#L24))
 
 > Extract the root of a represented nonconstant linear factor.
 
@@ -21,7 +21,7 @@ def linearRootOfFactor? {F : Type*} [Field F] [BEq F]
     (factor : CPolynomial F) : Option F
 ```
 
-`CompPoly.CPolynomial.validateRootCandidates` (definition, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Extraction.lean#L32))
+`CompPoly.CPolynomial.validateRootCandidates` (definition, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Extraction.lean#L32))
 
 > Keep only candidates that are actual roots of the original polynomial.
 
@@ -30,7 +30,7 @@ def validateRootCandidates {F : Type*} [Field F] [BEq F]
     (p : CPolynomial F) (candidates : Array F) : Array F
 ```
 
-`CompPoly.CPolynomial.rootsFromLinearFactors` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Extraction.lean#L37))
+`CompPoly.CPolynomial.rootsFromLinearFactors` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Extraction.lean#L37))
 
 > Extract, validate, and deduplicate roots from a list of linear factors.
 
@@ -45,5 +45,5 @@ def rootsFromLinearFactors {F : Type*} [Field F] [BEq F]
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/Extraction.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Extraction.lean)
+- [CompPoly/Univariate/Roots/Extraction.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Extraction.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.Roots.Extraction.json)

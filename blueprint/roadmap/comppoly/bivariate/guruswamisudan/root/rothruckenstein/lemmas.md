@@ -7,12 +7,12 @@ proof: formalized
 
 # Roth-Ruckenstein Correctness Support
 
-`CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Lemmas`, in [CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Lemmas`, in [CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean), by Valerii Huhnin.
 
 > Coefficient, composition, and root-filter lemmas used by the Roth-Ruckenstein
 > correctness proofs.
 
-`CompPoly.GuruswamiSudan.cpoly_val_coeff_ofArray` (theorem, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L27))
+`CompPoly.GuruswamiSudan.cpoly_val_coeff_ofArray` (theorem, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L27))
 
 ```lean
 theorem cpoly_val_coeff_ofArray {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
@@ -20,14 +20,14 @@ theorem cpoly_val_coeff_ofArray {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
     (CPolynomial.ofArray coeffs).val.coeff i = coeffs.getD i 0
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_coeff_eq_zero_of_size_le` (theorem, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L33))
+`CompPoly.GuruswamiSudan.cpoly_coeff_eq_zero_of_size_le` (theorem, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L33))
 
 ```lean
 theorem cpoly_coeff_eq_zero_of_size_le {R : Type*} [Zero R]
     (p : CPolynomial R) {i : Nat} (h : p.val.size ≤ i) : p.coeff i = 0
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_size_eq_natDegree_succ_of_ne_zero` (theorem, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L39))
+`CompPoly.GuruswamiSudan.cpoly_size_eq_natDegree_succ_of_ne_zero` (theorem, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L39))
 
 ```lean
 theorem cpoly_size_eq_natDegree_succ_of_ne_zero {R : Type*} [Zero R]
@@ -35,7 +35,7 @@ theorem cpoly_size_eq_natDegree_succ_of_ne_zero {R : Type*} [Zero R]
     p.val.size = p.natDegree + 1
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_coeff_natDegree_ne_zero_of_ne_zero` (theorem, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L53))
+`CompPoly.GuruswamiSudan.cpoly_coeff_natDegree_ne_zero_of_ne_zero` (theorem, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L53))
 
 ```lean
 theorem cpoly_coeff_natDegree_ne_zero_of_ne_zero {R : Type*}
@@ -44,7 +44,7 @@ theorem cpoly_coeff_natDegree_ne_zero_of_ne_zero {R : Type*}
     p.coeff p.natDegree ≠ 0
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_coeff_dropXPower` (theorem, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L62))
+`CompPoly.GuruswamiSudan.cpoly_coeff_dropXPower` (theorem, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L62))
 
 ```lean
 theorem cpoly_coeff_dropXPower {R : Type*} [Zero R]
@@ -52,7 +52,7 @@ theorem cpoly_coeff_dropXPower {R : Type*} [Zero R]
     (CPolynomial.dropXPower p n).coeff i = p.coeff (i + n)
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_toPoly_eq_X_pow_mul_dropXPower_of_coeff_eq_zero_lt` (theorem, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L73))
+`CompPoly.GuruswamiSudan.cpoly_toPoly_eq_X_pow_mul_dropXPower_of_coeff_eq_zero_lt` (theorem, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L73))
 
 ```lean
 theorem cpoly_toPoly_eq_X_pow_mul_dropXPower_of_coeff_eq_zero_lt {R : Type*}
@@ -61,7 +61,7 @@ theorem cpoly_toPoly_eq_X_pow_mul_dropXPower_of_coeff_eq_zero_lt {R : Type*}
     p.toPoly = Polynomial.X ^ n * (CPolynomial.dropXPower p n).toPoly
 ```
 
-`CompPoly.GuruswamiSudan.cbivar_coeff_divXPower` (theorem, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L89))
+`CompPoly.GuruswamiSudan.cbivar_coeff_divXPower` (theorem, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L89))
 
 ```lean
 theorem cbivar_coeff_divXPower {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
@@ -69,7 +69,7 @@ theorem cbivar_coeff_divXPower {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
     CBivariate.coeff (CBivariate.divXPower Q n) i j = CBivariate.coeff Q (i + n) j
 ```
 
-`CompPoly.GuruswamiSudan.cbivar_coeffY_divXPower` (theorem, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L112))
+`CompPoly.GuruswamiSudan.cbivar_coeffY_divXPower` (theorem, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L112))
 
 ```lean
 theorem cbivar_coeffY_divXPower {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
@@ -77,7 +77,7 @@ theorem cbivar_coeffY_divXPower {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
     (CBivariate.divXPower Q n).val.coeff j = CPolynomial.dropXPower (Q.val.coeff j) n
 ```
 
-`CompPoly.GuruswamiSudan.cbivar_coeff_eq_zero_of_y_size_le` (theorem, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L122))
+`CompPoly.GuruswamiSudan.cbivar_coeff_eq_zero_of_y_size_le` (theorem, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L122))
 
 ```lean
 theorem cbivar_coeff_eq_zero_of_y_size_le {R : Type*} [Zero R]
@@ -85,7 +85,7 @@ theorem cbivar_coeff_eq_zero_of_y_size_le {R : Type*} [Zero R]
     CBivariate.coeff Q i j = 0
 ```
 
-`CompPoly.GuruswamiSudan.initialCoefficientPolynomial_coeff_fold` (theorem, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L133))
+`CompPoly.GuruswamiSudan.initialCoefficientPolynomial_coeff_fold` (theorem, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L133))
 
 ```lean
 theorem initialCoefficientPolynomial_coeff_fold {F : Type*}
@@ -99,7 +99,7 @@ theorem initialCoefficientPolynomial_coeff_fold {F : Type*}
           out.coeff j + if j ∈ ys then CBivariate.coeff Q 0 j else 0
 ```
 
-`CompPoly.GuruswamiSudan.initialCoefficientPolynomial_coeff_of_lt` (theorem, [line 163](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L163))
+`CompPoly.GuruswamiSudan.initialCoefficientPolynomial_coeff_of_lt` (theorem, [line 163](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L163))
 
 ```lean
 theorem initialCoefficientPolynomial_coeff_of_lt {F : Type*}
@@ -108,7 +108,7 @@ theorem initialCoefficientPolynomial_coeff_of_lt {F : Type*}
     (initialCoefficientPolynomial Q).coeff j = CBivariate.coeff Q 0 j
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_xAdicOrder?_some_coeff_ne` (theorem, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L173))
+`CompPoly.GuruswamiSudan.cpoly_xAdicOrder?_some_coeff_ne` (theorem, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L173))
 
 ```lean
 theorem cpoly_xAdicOrder?_some_coeff_ne {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
@@ -116,7 +116,7 @@ theorem cpoly_xAdicOrder?_some_coeff_ne {R : Type*} [Zero R] [BEq R] [LawfulBEq 
     p.coeff i ≠ 0
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_xAdicOrder?_some_coeff_eq_zero_of_lt` (theorem, [line 180](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L180))
+`CompPoly.GuruswamiSudan.cpoly_xAdicOrder?_some_coeff_eq_zero_of_lt` (theorem, [line 180](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L180))
 
 ```lean
 theorem cpoly_xAdicOrder?_some_coeff_eq_zero_of_lt {R : Type*}
@@ -126,28 +126,28 @@ theorem cpoly_xAdicOrder?_some_coeff_eq_zero_of_lt {R : Type*}
     p.coeff i = 0
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_xAdicOrder?_none_eq_zero` (theorem, [line 195](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L195))
+`CompPoly.GuruswamiSudan.cpoly_xAdicOrder?_none_eq_zero` (theorem, [line 195](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L195))
 
 ```lean
 theorem cpoly_xAdicOrder?_none_eq_zero {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
     {p : CPolynomial R} (h : CPolynomial.xAdicOrder? p = none) : p = 0
 ```
 
-`CompPoly.GuruswamiSudan.xAdicStep` (definition, [line 217](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L217))
+`CompPoly.GuruswamiSudan.xAdicStep` (definition, [line 217](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L217))
 
 ```lean
 def xAdicStep {R : Type*} [Zero R] [BEq R]
     (Q : CBivariate R) (best : Option Nat) (y : Nat) : Option Nat
 ```
 
-`CompPoly.GuruswamiSudan.xAdicWitness` (definition, [line 226](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L226))
+`CompPoly.GuruswamiSudan.xAdicWitness` (definition, [line 226](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L226))
 
 ```lean
 def xAdicWitness {R : Type*} [Zero R] (Q : CBivariate R)
     (best : Option Nat) : Prop
 ```
 
-`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_step_witness` (theorem, [line 230](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L230))
+`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_step_witness` (theorem, [line 230](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L230))
 
 ```lean
 theorem cbivar_xAdicOrder?_step_witness {R : Type*}
@@ -157,7 +157,7 @@ theorem cbivar_xAdicOrder?_step_witness {R : Type*}
     xAdicWitness Q (xAdicStep Q best y)
 ```
 
-`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_fold_witness` (theorem, [line 273](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L273))
+`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_fold_witness` (theorem, [line 273](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L273))
 
 ```lean
 theorem cbivar_xAdicOrder?_fold_witness {R : Type*}
@@ -169,7 +169,7 @@ theorem cbivar_xAdicOrder?_fold_witness {R : Type*}
           xAdicWitness Q (List.foldl (xAdicStep Q) best ys)
 ```
 
-`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_some_exists` (theorem, [line 293](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L293))
+`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_some_exists` (theorem, [line 293](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L293))
 
 ```lean
 theorem cbivar_xAdicOrder?_some_exists {R : Type*}
@@ -178,7 +178,7 @@ theorem cbivar_xAdicOrder?_some_exists {R : Type*}
     ∃ y, y < Q.val.size ∧ CBivariate.coeff Q order y ≠ 0
 ```
 
-`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_step_some_le_best` (theorem, [line 308](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L308))
+`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_step_some_le_best` (theorem, [line 308](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L308))
 
 ```lean
 theorem cbivar_xAdicOrder?_step_some_le_best {R : Type*}
@@ -187,7 +187,7 @@ theorem cbivar_xAdicOrder?_step_some_le_best {R : Type*}
     result ≤ current
 ```
 
-`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_step_some_le_row` (theorem, [line 325](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L325))
+`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_step_some_le_row` (theorem, [line 325](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L325))
 
 ```lean
 theorem cbivar_xAdicOrder?_step_some_le_row {R : Type*}
@@ -197,7 +197,7 @@ theorem cbivar_xAdicOrder?_step_some_le_row {R : Type*}
     result ≤ rowOrder
 ```
 
-`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_fold_some_le_best` (theorem, [line 341](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L341))
+`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_fold_some_le_best` (theorem, [line 341](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L341))
 
 ```lean
 theorem cbivar_xAdicOrder?_fold_some_le_best {R : Type*}
@@ -208,7 +208,7 @@ theorem cbivar_xAdicOrder?_fold_some_le_best {R : Type*}
           result ≤ current
 ```
 
-`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_fold_some_le_row` (theorem, [line 372](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L372))
+`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_fold_some_le_row` (theorem, [line 372](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L372))
 
 ```lean
 theorem cbivar_xAdicOrder?_fold_some_le_row {R : Type*}
@@ -220,7 +220,7 @@ theorem cbivar_xAdicOrder?_fold_some_le_row {R : Type*}
             result ≤ rowOrder
 ```
 
-`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_some_coeff_eq_zero_of_lt` (theorem, [line 412](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L412))
+`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_some_coeff_eq_zero_of_lt` (theorem, [line 412](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L412))
 
 ```lean
 theorem cbivar_xAdicOrder?_some_coeff_eq_zero_of_lt {R : Type*}
@@ -230,7 +230,7 @@ theorem cbivar_xAdicOrder?_some_coeff_eq_zero_of_lt {R : Type*}
     CBivariate.coeff Q i y = 0
 ```
 
-`CompPoly.GuruswamiSudan.cbivar_toPoly_eq_C_X_pow_mul_divXPower_of_xAdicOrder` (theorem, [line 435](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L435))
+`CompPoly.GuruswamiSudan.cbivar_toPoly_eq_C_X_pow_mul_divXPower_of_xAdicOrder` (theorem, [line 435](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L435))
 
 ```lean
 theorem cbivar_toPoly_eq_C_X_pow_mul_divXPower_of_xAdicOrder {F : Type*}
@@ -241,7 +241,7 @@ theorem cbivar_toPoly_eq_C_X_pow_mul_divXPower_of_xAdicOrder {F : Type*}
         CBivariate.toPoly (CBivariate.divXPower Q order)
 ```
 
-`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_fold_none` (theorem, [line 451](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L451))
+`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_fold_none` (theorem, [line 451](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L451))
 
 ```lean
 theorem cbivar_xAdicOrder?_fold_none {R : Type*}
@@ -251,7 +251,7 @@ theorem cbivar_xAdicOrder?_fold_none {R : Type*}
         best = none ∧ ∀ y, y ∈ ys → CPolynomial.xAdicOrder? (Q.val.coeff y) = none
 ```
 
-`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_none_eq_zero` (theorem, [line 485](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L485))
+`CompPoly.GuruswamiSudan.cbivar_xAdicOrder?_none_eq_zero` (theorem, [line 485](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L485))
 
 ```lean
 theorem cbivar_xAdicOrder?_none_eq_zero {F : Type*}
@@ -259,7 +259,7 @@ theorem cbivar_xAdicOrder?_none_eq_zero {F : Type*}
     {Q : CBivariate F} (h : CBivariate.xAdicOrder? Q = none) : Q = 0
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_dropXPower_add` (theorem, [line 502](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L502))
+`CompPoly.GuruswamiSudan.cpoly_dropXPower_add` (theorem, [line 502](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L502))
 
 ```lean
 theorem cpoly_dropXPower_add {R : Type*} [Zero R]
@@ -268,7 +268,7 @@ theorem cpoly_dropXPower_add {R : Type*} [Zero R]
       CPolynomial.dropXPower p (m + n)
 ```
 
-`CompPoly.GuruswamiSudan.dropXPower_eq_C_add_X_mul_dropXPower_succ` (theorem, [line 515](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L515))
+`CompPoly.GuruswamiSudan.dropXPower_eq_C_add_X_mul_dropXPower_succ` (theorem, [line 515](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L515))
 
 ```lean
 theorem dropXPower_eq_C_add_X_mul_dropXPower_succ {F : Type*}
@@ -279,7 +279,7 @@ theorem dropXPower_eq_C_add_X_mul_dropXPower_succ {F : Type*}
         CPolynomial.X * CPolynomial.dropXPower p (depth + 1)
 ```
 
-`CompPoly.GuruswamiSudan.polynomial_monomial_substitution_term` (theorem, [line 539](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L539))
+`CompPoly.GuruswamiSudan.polynomial_monomial_substitution_term` (theorem, [line 539](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L539))
 
 ```lean
 theorem polynomial_monomial_substitution_term {F : Type*} [Field F]
@@ -291,7 +291,7 @@ theorem polynomial_monomial_substitution_term {F : Type*} [Field F]
         p ^ t
 ```
 
-`CompPoly.GuruswamiSudan.polynomial_monomial_substitution_sum` (theorem, [line 553](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L553))
+`CompPoly.GuruswamiSudan.polynomial_monomial_substitution_sum` (theorem, [line 553](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L553))
 
 ```lean
 theorem polynomial_monomial_substitution_sum {F : Type*} [Field F]
@@ -302,7 +302,7 @@ theorem polynomial_monomial_substitution_sum {F : Type*} [Field F]
       Polynomial.monomial x coeff * (Polynomial.C a + Polynomial.X * p) ^ y
 ```
 
-`CompPoly.GuruswamiSudan.foldl_cpoly_toPoly_add` (theorem, [line 568](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L568))
+`CompPoly.GuruswamiSudan.foldl_cpoly_toPoly_add` (theorem, [line 568](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L568))
 
 ```lean
 theorem foldl_cpoly_toPoly_add {F : Type*}
@@ -314,7 +314,7 @@ theorem foldl_cpoly_toPoly_add {F : Type*}
           xs.foldl (fun acc x ↦ acc + (f x).toPoly) accPoly
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_monomial_substitution_sum` (theorem, [line 586](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L586))
+`CompPoly.GuruswamiSudan.cpoly_monomial_substitution_sum` (theorem, [line 586](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean#L586))
 
 ```lean
 theorem cpoly_monomial_substitution_sum {F : Type*}
@@ -338,5 +338,5 @@ theorem cpoly_monomial_substitution_sum {F : Type*}
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/RothRuckenstein/Lemmas.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Root.RothRuckenstein.Lemmas.json)

@@ -7,12 +7,12 @@ proof: formalized
 
 # Planned NTTFast multiplication
 
-`CompPoly.Univariate.NTTFast.Plan`, in [CompPoly/Univariate/NTTFast/Plan.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean), by Valerii Huhnin.
+`CompPoly.Univariate.NTTFast.Plan`, in [CompPoly/Univariate/NTTFast/Plan.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean), by Valerii Huhnin.
 
 > This file adds a reusable `NTTFast` plan that caches domain-derived data for
 > repeated NTT-based multiplication.
 
-`CompPoly.CPolynomial.NTTFast.Plan` (structure, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L27))
+`CompPoly.CPolynomial.NTTFast.Plan` (structure, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L27))
 
 > Cached domain data for repeated NTTFast multiplications.
 
@@ -25,7 +25,7 @@ structure Plan (R : Type*) [Field R] where
   inverseTwiddles : Array (Array R)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.twiddlePowers` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L37))
+`CompPoly.CPolynomial.NTTFast.Plan.twiddlePowers` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L37))
 
 > Precompute the twiddle powers used by one radix-2 stage.
 
@@ -33,7 +33,7 @@ structure Plan (R : Type*) [Field R] where
 def twiddlePowers (D : NTT.Domain R) (stage : Nat) : Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.twiddleTable` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L49))
+`CompPoly.CPolynomial.NTTFast.Plan.twiddleTable` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L49))
 
 > Precompute the per-stage twiddle table for a domain.
 
@@ -41,7 +41,7 @@ def twiddlePowers (D : NTT.Domain R) (stage : Nat) : Array R
 def twiddleTable (D : NTT.Domain R) : Array (Array R)
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.ofDomain` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L53))
+`CompPoly.CPolynomial.NTTFast.Plan.ofDomain` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L53))
 
 > Build a reusable plan from an NTT domain.
 
@@ -49,7 +49,7 @@ def twiddleTable (D : NTT.Domain R) : Array (Array R)
 def ofDomain (D : NTT.Domain R) : Plan R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyDITInner` (definition, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L61))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyDITInner` (definition, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L61))
 
 > Inner DIT butterfly loop for one block.
 
@@ -58,7 +58,7 @@ def butterflyDITInner
     (twiddles : Array R) (limit : Nat) (j i0 i1 : Nat) (acc : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyDITBlocks` (definition, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L75))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyDITBlocks` (definition, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L75))
 
 > Outer DIT butterfly loop over blocks.
 
@@ -68,7 +68,7 @@ def butterflyDITBlocks
     Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyStageWithTwiddles` (definition, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L88))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyStageWithTwiddles` (definition, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L88))
 
 > One butterfly stage using precomputed twiddle powers for that stage.
 
@@ -77,7 +77,7 @@ def butterflyStageWithTwiddles
     (D : NTT.Domain R) (stage : Nat) (twiddles : Array R) (a : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.runStagesWithTwiddles` (definition, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L95))
+`CompPoly.CPolynomial.NTTFast.Plan.runStagesWithTwiddles` (definition, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L95))
 
 > Run all radix-2 stages using a precomputed per-stage twiddle table.
 
@@ -86,7 +86,7 @@ def runStagesWithTwiddles (D : NTT.Domain R) (twiddles : Array (Array R)) (a : A
     Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyDITRadix4Inner` (definition, [line 103](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L103))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyDITRadix4Inner` (definition, [line 103](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L103))
 
 > Inner fused DIT loop for two adjacent radix-2 stages.
 
@@ -96,7 +96,7 @@ def butterflyDITRadix4Inner
     (acc : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyDITRadix4Blocks` (definition, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L132))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyDITRadix4Blocks` (definition, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L132))
 
 > Outer fused DIT loop over radix-4 blocks.
 
@@ -106,7 +106,7 @@ def butterflyDITRadix4Blocks
     (acc : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyRadix4StageWithTwiddles` (definition, [line 146](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L146))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyRadix4StageWithTwiddles` (definition, [line 146](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L146))
 
 > Run two adjacent DIT radix-2 stages as one radix-4 pass.
 
@@ -116,7 +116,7 @@ def butterflyRadix4StageWithTwiddles
     (a : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.runStagesRadix4WithTwiddles` (definition, [line 154](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L154))
+`CompPoly.CPolynomial.NTTFast.Plan.runStagesRadix4WithTwiddles` (definition, [line 154](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L154))
 
 > Run DIT stages using fused radix-4 passes where possible.
 
@@ -125,7 +125,7 @@ def runStagesRadix4WithTwiddles (D : NTT.Domain R) (twiddles : Array (Array R)) 
     Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyDIFInner` (definition, [line 168](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L168))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyDIFInner` (definition, [line 168](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L168))
 
 > Inner DIF butterfly loop for one block.
 
@@ -134,7 +134,7 @@ def butterflyDIFInner
     (twiddles : Array R) (limit : Nat) (j i0 i1 : Nat) (acc : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyDIFBlocks` (definition, [line 182](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L182))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyDIFBlocks` (definition, [line 182](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L182))
 
 > Outer DIF butterfly loop over blocks.
 
@@ -144,7 +144,7 @@ def butterflyDIFBlocks
     Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyStageDIFWithTwiddles` (definition, [line 200](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L200))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyStageDIFWithTwiddles` (definition, [line 200](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L200))
 
 > One decimation-in-frequency butterfly stage using precomputed twiddle powers.
 >
@@ -156,7 +156,7 @@ def butterflyStageDIFWithTwiddles
     (D : NTT.Domain R) (stage : Nat) (twiddles : Array R) (a : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.runStagesDIFWithTwiddles` (definition, [line 207](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L207))
+`CompPoly.CPolynomial.NTTFast.Plan.runStagesDIFWithTwiddles` (definition, [line 207](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L207))
 
 > Run decimation-in-frequency stages, producing bit-reversed evaluation order.
 
@@ -165,7 +165,7 @@ def runStagesDIFWithTwiddles (D : NTT.Domain R) (twiddles : Array (Array R)) (a 
     Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyDIFPairInner` (definition, [line 216](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L216))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyDIFPairInner` (definition, [line 216](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L216))
 
 > Inner paired DIF butterfly loop for one block.
 
@@ -175,7 +175,7 @@ def butterflyDIFPairInner
     Array R × Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyDIFPairBlocks` (definition, [line 234](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L234))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyDIFPairBlocks` (definition, [line 234](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L234))
 
 > Outer paired DIF butterfly loop over blocks.
 
@@ -185,7 +185,7 @@ def butterflyDIFPairBlocks
     Array R × Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyStageDIFPairWithTwiddles` (definition, [line 247](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L247))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyStageDIFPairWithTwiddles` (definition, [line 247](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L247))
 
 > One paired DIF butterfly stage using precomputed twiddle powers.
 
@@ -195,7 +195,7 @@ def butterflyStageDIFPairWithTwiddles
     Array R × Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyDIFRadix4Inner` (definition, [line 255](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L255))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyDIFRadix4Inner` (definition, [line 255](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L255))
 
 > Inner fused DIF loop for two adjacent radix-2 stages.
 
@@ -205,7 +205,7 @@ def butterflyDIFRadix4Inner
     (acc : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyDIFRadix4Blocks` (definition, [line 280](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L280))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyDIFRadix4Blocks` (definition, [line 280](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L280))
 
 > Outer fused DIF loop over radix-4 blocks.
 
@@ -215,7 +215,7 @@ def butterflyDIFRadix4Blocks
     (acc : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyRadix4StageDIFWithTwiddles` (definition, [line 294](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L294))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyRadix4StageDIFWithTwiddles` (definition, [line 294](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L294))
 
 > Run two adjacent DIF radix-2 stages as one radix-4 pass.
 
@@ -225,7 +225,7 @@ def butterflyRadix4StageDIFWithTwiddles
     (a : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.runStagesDIFRadix4WithTwiddles` (definition, [line 302](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L302))
+`CompPoly.CPolynomial.NTTFast.Plan.runStagesDIFRadix4WithTwiddles` (definition, [line 302](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L302))
 
 > Run DIF stages using fused radix-4 passes where possible.
 
@@ -234,7 +234,7 @@ def runStagesDIFRadix4WithTwiddles
     (D : NTT.Domain R) (twiddles : Array (Array R)) (a : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyDIFRadix4PairInner` (definition, [line 316](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L316))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyDIFRadix4PairInner` (definition, [line 316](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L316))
 
 > Inner paired fused DIF loop for two adjacent radix-2 stages.
 
@@ -244,7 +244,7 @@ def butterflyDIFRadix4PairInner
     (accA accB : Array R) : Array R × Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyDIFRadix4PairBlocks` (definition, [line 351](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L351))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyDIFRadix4PairBlocks` (definition, [line 351](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L351))
 
 > Outer paired fused DIF loop over radix-4 blocks.
 
@@ -254,7 +254,7 @@ def butterflyDIFRadix4PairBlocks
     (accA accB : Array R) : Array R × Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.butterflyRadix4StageDIFPairWithTwiddles` (definition, [line 366](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L366))
+`CompPoly.CPolynomial.NTTFast.Plan.butterflyRadix4StageDIFPairWithTwiddles` (definition, [line 366](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L366))
 
 > Run two adjacent paired DIF radix-2 stages as one radix-4 pass.
 
@@ -264,7 +264,7 @@ def butterflyRadix4StageDIFPairWithTwiddles
     (a b : Array R) : Array R × Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.runStagesDIFRadix4PairWithTwiddles` (definition, [line 375](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L375))
+`CompPoly.CPolynomial.NTTFast.Plan.runStagesDIFRadix4PairWithTwiddles` (definition, [line 375](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L375))
 
 > Run paired DIF stages using fused radix-4 passes where possible.
 
@@ -274,7 +274,7 @@ def runStagesDIFRadix4PairWithTwiddles
     Array R × Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.forwardImpl` (definition, [line 396](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L396))
+`CompPoly.CPolynomial.NTTFast.Plan.forwardImpl` (definition, [line 396](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L396))
 
 > Forward transform through a reusable plan.
 
@@ -282,7 +282,7 @@ def runStagesDIFRadix4PairWithTwiddles
 def forwardImpl (P : Plan R) (p : CPolynomial.Raw R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.forwardPairImpl` (definition, [line 400](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L400))
+`CompPoly.CPolynomial.NTTFast.Plan.forwardPairImpl` (definition, [line 400](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L400))
 
 > Forward-transform two multiplication inputs through the same stage loops.
 
@@ -290,7 +290,7 @@ def forwardImpl (P : Plan R) (p : CPolynomial.Raw R) : Array R
 def forwardPairImpl (P : Plan R) (p q : CPolynomial.Raw R) : Array R × Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.normalize` (definition, [line 405](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L405))
+`CompPoly.CPolynomial.NTTFast.Plan.normalize` (definition, [line 405](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L405))
 
 > Apply the cached inverse-domain normalization factor.
 
@@ -298,7 +298,7 @@ def forwardPairImpl (P : Plan R) (p q : CPolynomial.Raw R) : Array R × Array R
 def normalize (P : Plan R) (a : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.inverseImpl` (definition, [line 409](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L409))
+`CompPoly.CPolynomial.NTTFast.Plan.inverseImpl` (definition, [line 409](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L409))
 
 > Inverse transform through a reusable plan.
 
@@ -306,7 +306,7 @@ def normalize (P : Plan R) (a : Array R) : Array R
 def inverseImpl (P : Plan R) (v : Array R) : CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.Raw.fastMulImpl` (definition, [line 415](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L415))
+`CompPoly.CPolynomial.NTTFast.Plan.Raw.fastMulImpl` (definition, [line 415](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L415))
 
 > …
 
@@ -315,7 +315,7 @@ def fastMulImpl [BEq R]
     (P : Plan R) (p q : CPolynomial.Raw R) : CPolynomial.Raw R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.fastMulImpl` (definition, [line 425](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean#L425))
+`CompPoly.CPolynomial.NTTFast.Plan.fastMulImpl` (definition, [line 425](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean#L425))
 
 > …
 
@@ -330,5 +330,5 @@ def fastMulImpl [BEq R] [LawfulBEq R]
 
 ## Sources
 
-- [CompPoly/Univariate/NTTFast/Plan.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Plan.lean)
+- [CompPoly/Univariate/NTTFast/Plan.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Plan.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.NTTFast.Plan.json)

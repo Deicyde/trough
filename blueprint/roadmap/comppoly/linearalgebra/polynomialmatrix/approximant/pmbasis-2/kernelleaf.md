@@ -7,14 +7,14 @@ proof: formalized
 
 # Scalar Kernel-Leaf PM-Basis Definitions
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeaf`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeaf`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean), by Valerii Huhnin.
 
 > Executable definitions for the classical scalar-kernel PM-basis leaf: the
 > dense coefficient matrix and its row-array RREF kernel, reconstruction of
 > polynomial rows from kernel vectors, monomial completion rows, and the
 > shifted pivot-table reduction used to compact leaf bases.
 
-`CompPoly.PolynomialMatrix.Approximant.leafDegreeCap` (definition, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L35))
+`CompPoly.PolynomialMatrix.Approximant.leafDegreeCap` (definition, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L35))
 
 > Coefficient degree cap used by the classical scalar-kernel PM-basis leaf.
 
@@ -22,7 +22,7 @@ proof: formalized
 def leafDegreeCap (problem : XAdicProblem F) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.coefficientEquationIndices` (definition, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L39))
+`CompPoly.PolynomialMatrix.Approximant.coefficientEquationIndices` (definition, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L39))
 
 > Coefficient-equation indices `(column, coefficientDegree)`.
 
@@ -30,7 +30,7 @@ def leafDegreeCap (problem : XAdicProblem F) : Nat
 def coefficientEquationIndices (orders : Array Nat) : Array (Nat × Nat)
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.coefficientMatrix` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L47))
+`CompPoly.PolynomialMatrix.Approximant.coefficientMatrix` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L47))
 
 > Dense scalar coefficient matrix for the bounded leaf problem.
 
@@ -38,7 +38,7 @@ def coefficientEquationIndices (orders : Array Nat) : Array (Nat × Nat)
 def coefficientMatrix (problem : XAdicProblem F) : DenseMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.coefficientMatrixRow` (definition, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L64))
+`CompPoly.PolynomialMatrix.Approximant.coefficientMatrixRow` (definition, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L64))
 
 > One scalar coefficient row for the bounded leaf problem.
 
@@ -47,7 +47,7 @@ def coefficientMatrixRow (problem : XAdicProblem F) (degreeCap : Nat)
     (equation : Nat × Nat) : Array F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.coefficientMatrixRows` (definition, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L82))
+`CompPoly.PolynomialMatrix.Approximant.coefficientMatrixRows` (definition, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L82))
 
 > Scalar coefficient rows for the bounded leaf problem.  This is the same
 > matrix as `coefficientMatrix`, represented directly as row arrays for the tiny
@@ -57,7 +57,7 @@ def coefficientMatrixRow (problem : XAdicProblem F) (degreeCap : Nat)
 def coefficientMatrixRows (problem : XAdicProblem F) : Array (Array F)
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.vectorToPolynomialRow` (definition, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L88))
+`CompPoly.PolynomialMatrix.Approximant.vectorToPolynomialRow` (definition, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L88))
 
 > Convert one scalar kernel vector back into a polynomial row.
 
@@ -66,7 +66,7 @@ def vectorToPolynomialRow (degreeCap solutionWidth : Nat) (v : Array F) :
     PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.coeffXPower` (definition, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L98))
+`CompPoly.PolynomialMatrix.Approximant.coeffXPower` (definition, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L98))
 
 > Polynomial `c * X^d`, built without the `CPolynomial.monomial`
 > `DecidableEq` assumption.
@@ -75,7 +75,7 @@ def vectorToPolynomialRow (degreeCap solutionWidth : Nat) (v : Array F) :
 def coeffXPower (c : F) (d : Nat) : CPolynomial F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.polynomialScaleCoeffX` (definition, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L102))
+`CompPoly.PolynomialMatrix.Approximant.polynomialScaleCoeffX` (definition, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L102))
 
 > Multiply a row by `c * X^d`, using the coefficient-array monomial builder.
 
@@ -84,7 +84,7 @@ def polynomialScaleCoeffX (c : F) (d : Nat) (p : CPolynomial F) :
     CPolynomial F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.rowScaleCoeffX` (definition, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L114))
+`CompPoly.PolynomialMatrix.Approximant.rowScaleCoeffX` (definition, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L114))
 
 > Multiply a row by `c * X^d`, using coefficient shifting instead of generic
 > polynomial multiplication by a monomial.
@@ -94,7 +94,7 @@ def rowScaleCoeffX (c : F) (d : Nat) (row : PolynomialRow F) :
     PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.monomialUnitRow` (definition, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L120))
+`CompPoly.PolynomialMatrix.Approximant.monomialUnitRow` (definition, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L120))
 
 > Monomial row `X^d * e_i`, used to complete bounded-kernel leaves to a full
 > approximant basis.
@@ -103,7 +103,7 @@ def rowScaleCoeffX (c : F) (d : Nat) (row : PolynomialRow F) :
 def monomialUnitRow (width i d : Nat) : PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.kernelLeafCompletionRows` (definition, [line 127](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L127))
+`CompPoly.PolynomialMatrix.Approximant.kernelLeafCompletionRows` (definition, [line 127](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L127))
 
 > Trivial high-degree approximants present in every X-adic problem.  These
 > rows are essential when the bounded scalar kernel has fewer rows than the module
@@ -114,7 +114,7 @@ def kernelLeafCompletionRows (problem : XAdicProblem F) :
     PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.rowsContainLeadingPosition` (definition, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L135))
+`CompPoly.PolynomialMatrix.Approximant.rowsContainLeadingPosition` (definition, [line 135](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L135))
 
 > Whether a row set already contains a row with a given shifted leading
 > position.
@@ -124,7 +124,7 @@ def rowsContainLeadingPosition (rows : PolynomialMatrix F)
     (shift : Array Nat) (position : Nat) : Bool
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.missingCompletionRows` (definition, [line 145](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L145))
+`CompPoly.PolynomialMatrix.Approximant.missingCompletionRows` (definition, [line 145](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L145))
 
 > High monomial rows for shifted leading positions not represented by `rows`.
 > These rows are always valid approximants and keep recursive residual problems
@@ -136,7 +136,7 @@ def missingCompletionRows (problem : XAdicProblem F)
     PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.completeMissingPivotRows` (definition, [line 157](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L157))
+`CompPoly.PolynomialMatrix.Approximant.completeMissingPivotRows` (definition, [line 157](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L157))
 
 > Add high monomial approximants for missing pivot positions.
 
@@ -146,7 +146,7 @@ def completeMissingPivotRows (problem : XAdicProblem F)
     PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.cancelKernelLeafLeadingTerm` (definition, [line 166](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L166))
+`CompPoly.PolynomialMatrix.Approximant.cancelKernelLeafLeadingTerm` (definition, [line 166](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L166))
 
 > Cancel the shifted leading term of `target` by `reducer`, when their shifted
 > leading positions agree.  This is the small-leaf analogue of polynomial-matrix
@@ -158,7 +158,7 @@ def cancelKernelLeafLeadingTerm
     (target reducer : PolynomialRow F) (shift : Array Nat) : PolynomialRow F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.kernelLeafConflictInRowStep?` (definition, [line 181](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L181))
+`CompPoly.PolynomialMatrix.Approximant.kernelLeafConflictInRowStep?` (definition, [line 181](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L181))
 
 > One inner-loop update for finding a leading-position conflict in a bounded
 > kernel leaf.
@@ -168,7 +168,7 @@ def kernelLeafConflictInRowStep? (rows : PolynomialMatrix F) (shift : Array Nat)
     (i : Nat) (found : Option (Nat × Nat)) (j : Nat) : Option (Nat × Nat)
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.kernelLeafConflictInRow?` (definition, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L193))
+`CompPoly.PolynomialMatrix.Approximant.kernelLeafConflictInRow?` (definition, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L193))
 
 > Scan one row for a shifted-leading-position conflict in a bounded kernel
 > leaf.
@@ -178,7 +178,7 @@ def kernelLeafConflictInRow? (rows : PolynomialMatrix F) (shift : Array Nat)
     (i : Nat) (found : Option (Nat × Nat)) : Option (Nat × Nat)
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.kernelLeafConflictFrom?` (definition, [line 199](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L199))
+`CompPoly.PolynomialMatrix.Approximant.kernelLeafConflictFrom?` (definition, [line 199](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L199))
 
 > Scan all row pairs for the first shifted-leading-position conflict.
 
@@ -187,7 +187,7 @@ def kernelLeafConflictFrom? (rows : PolynomialMatrix F) (shift : Array Nat)
     (found : Option (Nat × Nat)) : Option (Nat × Nat)
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.kernelLeafConflict?` (definition, [line 206](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L206))
+`CompPoly.PolynomialMatrix.Approximant.kernelLeafConflict?` (definition, [line 206](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L206))
 
 > First pair of nonzero bounded-kernel rows with the same shifted leading
 > position.
@@ -197,7 +197,7 @@ def kernelLeafConflict? (rows : PolynomialMatrix F) (shift : Array Nat) :
     Option (Nat × Nat)
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafStep` (definition, [line 211](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L211))
+`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafStep` (definition, [line 211](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L211))
 
 > One shifted-reduction step for bounded scalar-kernel rows.
 
@@ -206,7 +206,7 @@ def reduceKernelLeafStep (rows : PolynomialMatrix F) (shift : Array Nat)
     (i j : Nat) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafFuel` (definition, [line 225](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L225))
+`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafFuel` (definition, [line 225](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L225))
 
 > Fuel for bounded-kernel shifted reduction.  The scalar leaf is already a
 > small base case, so this conservative degree-width bound is acceptable here.
@@ -215,7 +215,7 @@ def reduceKernelLeafStep (rows : PolynomialMatrix F) (shift : Array Nat)
 def reduceKernelLeafFuel (rows : PolynomialMatrix F) (shift : Array Nat) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.pivotRows` (definition, [line 235](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L235))
+`CompPoly.PolynomialMatrix.Approximant.pivotRows` (definition, [line 235](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L235))
 
 > Extract the nonempty pivot rows from a leading-position table.
 
@@ -224,7 +224,7 @@ def pivotRows (pivots : Array (Option (PolynomialRow F))) :
     PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.insertKernelLeafPivotRowWithFuel` (definition, [line 242](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L242))
+`CompPoly.PolynomialMatrix.Approximant.insertKernelLeafPivotRowWithFuel` (definition, [line 242](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L242))
 
 > Insert one row into a shifted weak-Popov pivot table.  Conflicts are resolved
 > only at the current leading position, avoiding the repeated global pair scans
@@ -236,7 +236,7 @@ def insertKernelLeafPivotRowWithFuel :
       Array (Option (PolynomialRow F))
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafRowsByPivots` (definition, [line 265](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L265))
+`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafRowsByPivots` (definition, [line 265](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L265))
 
 > Pivot-table shifted reduction for bounded scalar-kernel rows.
 
@@ -245,7 +245,7 @@ def reduceKernelLeafRowsByPivots (rows : PolynomialMatrix F) (shift : Array Nat)
     PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafWithFuel` (definition, [line 276](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L276))
+`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafWithFuel` (definition, [line 276](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L276))
 
 > Shift-reduce the bounded scalar-kernel rows before compacting them.  This
 > keeps one low representative per shifted leading position instead of selecting
@@ -256,7 +256,7 @@ def reduceKernelLeafWithFuel :
     Nat → PolynomialMatrix F → Array Nat → PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafRows` (definition, [line 286](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L286))
+`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafRows` (definition, [line 286](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L286))
 
 > Shift-reduced bounded scalar-kernel rows for the PM-basis leaf.
 
@@ -265,7 +265,7 @@ def reduceKernelLeafRows (rows : PolynomialMatrix F) (shift : Array Nat) :
     PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.insertKernelLeafRowIncremental` (definition, [line 293](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L293))
+`CompPoly.PolynomialMatrix.Approximant.insertKernelLeafRowIncremental` (definition, [line 293](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L293))
 
 > Insert one bounded-kernel row into a small shifted-reduced leaf basis.  This
 > keeps the live reduction matrix near the module width instead of reducing the
@@ -276,7 +276,7 @@ def insertKernelLeafRowIncremental (basis : PolynomialMatrix F)
     (shift : Array Nat) (row : PolynomialRow F) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafRowsIncremental` (definition, [line 300](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L300))
+`CompPoly.PolynomialMatrix.Approximant.reduceKernelLeafRowsIncremental` (definition, [line 300](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L300))
 
 > Shift-reduce all bounded scalar-kernel rows incrementally.  The dense scalar
 > kernel can have many rows, but after every insertion the weak-Popov conflict loop
@@ -287,7 +287,7 @@ def reduceKernelLeafRowsIncremental (rows : PolynomialMatrix F)
     (shift : Array Nat) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.kernelLeafBasis` (definition, [line 305](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L305))
+`CompPoly.PolynomialMatrix.Approximant.kernelLeafBasis` (definition, [line 305](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L305))
 
 > Classical scalar-kernel leaf for small X-adic approximant problems.
 
@@ -296,7 +296,7 @@ def kernelLeafBasis (problem : XAdicProblem F) (shift : Array Nat) :
     PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.compactNonzeroRows` (definition, [line 317](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L317))
+`CompPoly.PolynomialMatrix.Approximant.compactNonzeroRows` (definition, [line 317](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean#L317))
 
 > Remove zero rows before a recursively computed approximant basis is used as
 > the coordinate system for the next residual problem.
@@ -312,5 +312,5 @@ def compactNonzeroRows (rows : PolynomialMatrix F) : PolynomialMatrix F
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/PMBasis/KernelLeaf.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.PMBasis.KernelLeaf.json)

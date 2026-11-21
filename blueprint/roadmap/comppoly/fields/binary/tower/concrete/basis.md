@@ -7,11 +7,11 @@ proof: formalized
 
 # Concrete Binary Tower Basis
 
-`CompPoly.Fields.Binary.Tower.Concrete.Basis`, in [CompPoly/Fields/Binary/Tower/Concrete/Basis.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean), by Chung Thai Nguyen, Quang Dao.
+`CompPoly.Fields.Binary.Tower.Concrete.Basis`, in [CompPoly/Fields/Binary/Tower/Concrete/Basis.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean), by Chung Thai Nguyen, Quang Dao.
 
 > Basis constructions for the concrete bitvector binary tower.
 
-`ConcreteBinaryTower.Basis_cast_index_eq` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L30))
+`ConcreteBinaryTower.Basis_cast_index_eq` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L30))
 
 ```lean
 theorem Basis_cast_index_eq (i j k n : ℕ) (h_le : k ≤ n) (h_eq : i = j) :
@@ -22,7 +22,7 @@ theorem Basis_cast_index_eq (i j k n : ℕ) (h_le : k ≤ n) (h_eq : i = j) :
     (Basis (Fin (j)) (ConcreteBTField k) (ConcreteBTField n))
 ```
 
-`ConcreteBinaryTower.Basis_cast_dest_eq` (theorem, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L39))
+`ConcreteBinaryTower.Basis_cast_dest_eq` (theorem, [line 39](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L39))
 
 ```lean
 theorem Basis_cast_dest_eq {ι : Type*} (k n m : ℕ) (h_k_le_n : k ≤ n)
@@ -33,7 +33,7 @@ theorem Basis_cast_dest_eq {ι : Type*} (k n m : ℕ) (h_k_le_n : k ≤ n)
   @Basis ι (ConcreteBTField k) (ConcreteBTField n) _ _ instRightAlgebra.toModule
 ```
 
-`ConcreteBinaryTower.PowerBasis_cast_dest_eq` (theorem, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L48))
+`ConcreteBinaryTower.PowerBasis_cast_dest_eq` (theorem, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L48))
 
 ```lean
 theorem PowerBasis_cast_dest_eq (k n m : ℕ) (h_k_le_n : k ≤ n)
@@ -47,7 +47,7 @@ theorem PowerBasis_cast_dest_eq (k n m : ℕ) (h_k_le_n : k ≤ n)
 > The following two theorems are used to cast the basis of `ConcreteBTField α`
 > to `ConcreteBTField β` via changing in index type : `Fin (i)` to `Fin (j)` when `α ≤ β`.
 
-`ConcreteBinaryTower.Basis_cast_index_apply` (theorem, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L61))
+`ConcreteBinaryTower.Basis_cast_index_apply` (theorem, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L61))
 
 ```lean
 theorem Basis_cast_index_apply {α β i j : ℕ} {k : Fin j}
@@ -60,7 +60,7 @@ theorem Basis_cast_index_apply {α β i j : ℕ} {k : Fin j}
   (castBasis k) = b (Fin.cast (h_eq.symm) k)
 ```
 
-`ConcreteBinaryTower.Basis_cast_dest_apply` (theorem, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L73))
+`ConcreteBinaryTower.Basis_cast_dest_apply` (theorem, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L73))
 
 ```lean
 theorem Basis_cast_dest_apply {ι : Type*} (α β γ : ℕ)
@@ -76,7 +76,7 @@ theorem Basis_cast_dest_apply {ι : Type*} (α β γ : ℕ)
       exact cast_ConcreteBTField_eq β γ h_eq) (b k)
 ```
 
-`ConcreteBinaryTower.basisSucc` (definition, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L87))
+`ConcreteBinaryTower.basisSucc` (definition, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L87))
 
 ```lean
 def basisSucc (k : ℕ) : Basis (Fin 2) (ConcreteBTField k) (ConcreteBTField (k + 1))
@@ -84,35 +84,35 @@ def basisSucc (k : ℕ) : Basis (Fin 2) (ConcreteBTField k) (ConcreteBTField (k 
 
 > The power basis for `ConcreteBTField (k + 1)` over `ConcreteBTField k` is {1, Z (k + 1)}
 
-`ConcreteBinaryTower.powerBasisSucc` (definition, [line 167](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L167))
+`ConcreteBinaryTower.powerBasisSucc` (definition, [line 167](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L167))
 
 ```lean
 def powerBasisSucc (k : ℕ) :
     PowerBasis (ConcreteBTField k) (ConcreteBTField (k + 1))
 ```
 
-`ConcreteBinaryTower.powerBasisSucc_gen` (lemma, [line 179](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L179))
+`ConcreteBinaryTower.powerBasisSucc_gen` (lemma, [line 179](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L179))
 
 ```lean
 lemma powerBasisSucc_gen (k : ℕ) :
     (powerBasisSucc k).gen = (Z (k + 1))
 ```
 
-`ConcreteBinaryTower.minPoly_of_powerBasisSucc_generator` (theorem, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L183))
+`ConcreteBinaryTower.minPoly_of_powerBasisSucc_generator` (theorem, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L183))
 
 ```lean
 theorem minPoly_of_powerBasisSucc_generator (k : ℕ) :
     (minpoly (ConcreteBTField k) (powerBasisSucc k).gen) = X^2 + (Z k) • X + 1
 ```
 
-`ConcreteBinaryTower.powerBasisSucc_dim` (lemma, [line 270](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L270))
+`ConcreteBinaryTower.powerBasisSucc_dim` (lemma, [line 270](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L270))
 
 ```lean
 lemma powerBasisSucc_dim (k : ℕ) :
     powerBasisSucc (k:=k).dim = 2
 ```
 
-`ConcreteBinaryTower.hli_level_diff_0` (definition, [line 274](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L274))
+`ConcreteBinaryTower.hli_level_diff_0` (definition, [line 274](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L274))
 
 ```lean
 def hli_level_diff_0 (l : ℕ) :
@@ -120,7 +120,7 @@ def hli_level_diff_0 (l : ℕ) :
   @Basis (Fin 1) (ConcreteBTField l) (ConcreteBTField l) _ _ instAlgebra.toModule
 ```
 
-`ConcreteBinaryTower.isScalarTower_succ_right` (definition, [line 307](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L307))
+`ConcreteBinaryTower.isScalarTower_succ_right` (definition, [line 307](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L307))
 
 > Reducible Prop-valued helper for `letI` scalar-tower instances.
 
@@ -128,7 +128,7 @@ def hli_level_diff_0 (l : ℕ) :
 def isScalarTower_succ_right (l r : ℕ) (h_le : l ≤ r)
 ```
 
-`ConcreteBinaryTower.multilinearBasis` (definition, [line 315](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L315))
+`ConcreteBinaryTower.multilinearBasis` (definition, [line 315](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L315))
 
 > The multilinear basis for `ConcreteBTField τ` over `ConcreteBTField k`
 > is the set of multilinear monomials in the tower generators `Z(k + 1), ..., Z(τ)`.
@@ -140,7 +140,7 @@ def multilinearBasis (l r : ℕ) (h_le : l ≤ r) :
     Basis (Fin (2 ^ (r - l))) (ConcreteBTField l) (ConcreteBTField r)
 ```
 
-`ConcreteBinaryTower.PowerBasis.dim_of_eq_rec` (theorem, [line 367](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L367))
+`ConcreteBinaryTower.PowerBasis.dim_of_eq_rec` (theorem, [line 367](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L367))
 
 ```lean
 theorem PowerBasis.dim_of_eq_rec
@@ -157,7 +157,7 @@ theorem PowerBasis.dim_of_eq_rec
     = b.dim
 ```
 
-`ConcreteBinaryTower.PowerBasis.cast_basis_succ_of_eq_rec_apply` (theorem, [line 383](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L383))
+`ConcreteBinaryTower.PowerBasis.cast_basis_succ_of_eq_rec_apply` (theorem, [line 383](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L383))
 
 ```lean
 theorem PowerBasis.cast_basis_succ_of_eq_rec_apply
@@ -194,14 +194,14 @@ theorem PowerBasis.cast_basis_succ_of_eq_rec_apply
     left k = right
 ```
 
-`ConcreteBinaryTower.coe_basis_apply` (theorem, [line 421](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L421))
+`ConcreteBinaryTower.coe_basis_apply` (theorem, [line 421](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L421))
 
 ```lean
 theorem coe_basis_apply {R S : Type*} [CommRing R] [Ring S] [Algebra R S]
     (pb : PowerBasis R S) (i : Fin pb.dim) : ⇑pb.basis i = pb.gen ^ (i : ℕ)
 ```
 
-`ConcreteBinaryTower.algebraMap_𝕏_eq_of_index_eq` (lemma, [line 426](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L426))
+`ConcreteBinaryTower.algebraMap_𝕏_eq_of_index_eq` (lemma, [line 426](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L426))
 
 > When two indices are equal, the tower algebra maps send the respective 𝕏 to the same element.
 
@@ -217,7 +217,7 @@ lemma algebraMap_𝕏_eq_of_index_eq (r k m : ℕ) (h_k_le : k + 1 ≤ r) (h_m_l
 > The basis element at index `j` is the product of the tower generators at
 > the ON bits in binary representation of `j`.
 
-`ConcreteBinaryTower.multilinearBasis_apply` (theorem, [line 439](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L439))
+`ConcreteBinaryTower.multilinearBasis_apply` (theorem, [line 439](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean#L439))
 
 ```lean
 theorem multilinearBasis_apply (r : ℕ) : ∀ l : ℕ, (h_le : l ≤ r) → ∀ (j : Fin (2 ^ (r - l))),
@@ -238,5 +238,5 @@ theorem multilinearBasis_apply (r : ℕ) : ∀ l : ℕ, (h_le : l ≤ r) → ∀
 
 ## Sources
 
-- [CompPoly/Fields/Binary/Tower/Concrete/Basis.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean)
+- [CompPoly/Fields/Binary/Tower/Concrete/Basis.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Basis.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Fields.Binary.Tower.Concrete.Basis.json)

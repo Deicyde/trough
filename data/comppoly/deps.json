@@ -1,14 +1,14 @@
 {"stats":
- {"theorems_with_proof": 13006,
-  "theorems": 13006,
+ {"theorems_with_proof": 13045,
+  "theorems": 13045,
   "statement_edges": 1413,
-  "requested": 7329,
-  "proof_edges": 693,
+  "requested": 7346,
+  "proof_edges": 688,
   "private": 0,
   "modules": 401,
   "missing": 0},
  "schema": "trough-library-deps/v1",
- "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "rev": "c72a765272497b4c52201be11be47af5718c7488",
  "private": [],
  "modules":
  {"CompPoly.Univariate.Vanishing":
@@ -57,7 +57,7 @@
   "CompPoly.Univariate.ToPoly.Core":
   {"statement":
    ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Raw.Core", "CompPoly.Univariate.Raw.Ops"],
-   "proof": ["CompPoly.Data.Array.Lemmas", "CompPoly.Univariate.Raw.Proofs"]},
+   "proof": ["CompPoly.Data.Array.Lemmas"]},
   "CompPoly.Univariate.ToPoly": {"statement": [], "proof": []},
   "CompPoly.Univariate.Roots.Splitter":
   {"statement":
@@ -337,7 +337,6 @@
    ["CompPoly.Data.Array.Lemmas",
     "CompPoly.Univariate.DivisionCorrectness",
     "CompPoly.Univariate.Raw.Proofs",
-    "CompPoly.Univariate.Raw.Size",
     "CompPoly.Univariate.ToPoly.Equiv",
     "CompPoly.Univariate.ToPoly.Impl"]},
   "CompPoly.Univariate.Roots.Context":
@@ -412,15 +411,14 @@
     "CompPoly.Univariate.ToPoly.Core",
     "CompPoly.Univariate.ToPoly.Impl"]},
   "CompPoly.Univariate.Raw.Size":
-  {"statement": ["CompPoly.Univariate.Raw.Core", "CompPoly.Univariate.Raw.Ops"],
-   "proof": ["CompPoly.Data.Array.Lemmas"]},
+  {"statement": ["CompPoly.Univariate.Raw.Core", "CompPoly.Univariate.Raw.Ops"], "proof": []},
   "CompPoly.Univariate.Raw.Proofs":
   {"statement":
    ["CompPoly.Data.Array.Lemmas",
     "CompPoly.Univariate.Raw.Core",
     "CompPoly.Univariate.Raw.Division",
     "CompPoly.Univariate.Raw.Ops"],
-   "proof": ["CompPoly.Univariate.Raw.Size"]},
+   "proof": []},
   "CompPoly.Univariate.Raw.Ops":
   {"statement": ["CompPoly.Data.Array.Lemmas", "CompPoly.Univariate.Raw.Core"], "proof": []},
   "CompPoly.Univariate.Raw.Modular":
@@ -684,7 +682,7 @@
   "CompPoly.Univariate.Linear":
   {"statement":
    ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Raw.Core", "CompPoly.Univariate.Raw.Ops"],
-   "proof": ["CompPoly.Univariate.Raw.Size"]},
+   "proof": []},
   "CompPoly.Univariate.LagrangeArray":
   {"statement": ["CompPoly.Univariate.Basic", "CompPoly.Univariate.Lagrange"],
    "proof": ["CompPoly.Univariate.ToPoly.Core", "CompPoly.Univariate.ToPoly.Impl"]},

@@ -7,7 +7,7 @@ proof: formalized
 
 # Rabin certificate data for `p = 2` (BaseCertificate)
 
-`CompPoly.Fields.Binary.BF64.BaseCertificate`, in [CompPoly/Fields/Binary/BF64/BaseCertificate.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/BaseCertificate.lean), by Nicolas Schleicher.
+`CompPoly.Fields.Binary.BF64.BaseCertificate`, in [CompPoly/Fields/Binary/BF64/BaseCertificate.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/BaseCertificate.lean), by Nicolas Schleicher.
 
 > The modulus `f` has little-endian coefficients `[1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 > 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -35,7 +35,7 @@ proof: formalized
 > theorems for their specified polynomial. Defining it alone establishes no such
 > theorem.
 
-`BF64.BaseCert.modulus` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/BaseCertificate.lean#L47))
+`BF64.BaseCert.modulus` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/BaseCertificate.lean#L47))
 
 > The modulus `f`.
 
@@ -43,7 +43,7 @@ proof: formalized
 def modulus : ℕ
 ```
 
-`BF64.BaseCert.traceSteps` (definition, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/BaseCertificate.lean#L50))
+`BF64.BaseCert.traceSteps` (definition, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/BaseCertificate.lean#L50))
 
 > Square-and-multiply chain for `X^(p^64) mod f` (64 steps).
 
@@ -53,7 +53,7 @@ def traceSteps : List Step
 
 > ### Coprimality with `X^(p^32) - X`, for the prime factor `2` of `d = 64`.
 
-`BF64.BaseCert.cop32Steps` (definition, [line 119](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/BaseCertificate.lean#L119))
+`BF64.BaseCert.cop32Steps` (definition, [line 119](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/BaseCertificate.lean#L119))
 
 > Square-and-multiply chain for `X^(p^32) mod f` (32 steps).
 
@@ -61,7 +61,7 @@ def traceSteps : List Step
 def cop32Steps : List Step
 ```
 
-`BF64.BaseCert.cop32Rp` (definition, [line 154](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/BaseCertificate.lean#L154))
+`BF64.BaseCert.cop32Rp` (definition, [line 154](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/BaseCertificate.lean#L154))
 
 > The residue `X^(p^32) mod f`.
 
@@ -69,7 +69,7 @@ def cop32Steps : List Step
 def cop32Rp : ℕ
 ```
 
-`BF64.BaseCert.cop32W` (definition, [line 157](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/BaseCertificate.lean#L157))
+`BF64.BaseCert.cop32W` (definition, [line 157](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/BaseCertificate.lean#L157))
 
 > `cop32W = (X^(p^32) mod f) - X`, the reduced form of `X^(p^32) - X`.
 
@@ -77,7 +77,7 @@ def cop32Rp : ℕ
 def cop32W : ℕ
 ```
 
-`BF64.BaseCert.cop32U` (definition, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/BaseCertificate.lean#L160))
+`BF64.BaseCert.cop32U` (definition, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/BaseCertificate.lean#L160))
 
 > Bézout coefficient: `cop32U·f + cop32V·cop32W = 1`.
 
@@ -85,7 +85,7 @@ def cop32W : ℕ
 def cop32U : ℕ
 ```
 
-`BF64.BaseCert.cop32V` (definition, [line 163](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/BaseCertificate.lean#L163))
+`BF64.BaseCert.cop32V` (definition, [line 163](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/BaseCertificate.lean#L163))
 
 > Bézout coefficient: `cop32U·f + cop32V·cop32W = 1`.
 
@@ -99,5 +99,5 @@ def cop32V : ℕ
 
 ## Sources
 
-- [CompPoly/Fields/Binary/BF64/BaseCertificate.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/BF64/BaseCertificate.lean)
+- [CompPoly/Fields/Binary/BF64/BaseCertificate.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/BF64/BaseCertificate.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Fields.Binary.BF64.BaseCertificate.json)

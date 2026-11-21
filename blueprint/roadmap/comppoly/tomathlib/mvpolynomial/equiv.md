@@ -7,11 +7,11 @@ proof: formalized
 
 # MvPolynomial Equiv
 
-`CompPoly.ToMathlib.MvPolynomial.Equiv`, in [CompPoly/ToMathlib/MvPolynomial/Equiv.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean), by Chung Thai Nguyen, Quang Dao.
+`CompPoly.ToMathlib.MvPolynomial.Equiv`, in [CompPoly/ToMathlib/MvPolynomial/Equiv.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean), by Chung Thai Nguyen, Quang Dao.
 
 > Equivalences for multivariable polynomials, including `finSuccEquivNth`.
 
-`MvPolynomial.finSuccEquivNth` (definition, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L33))
+`MvPolynomial.finSuccEquivNth` (definition, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L33))
 
 > The algebra isomorphism between multivariable polynomials in `Fin (n + 1)` and polynomials over
 > multivariable polynomials in `Fin n`, where the `p`-th (pivot) variable is the indeterminate `X`.
@@ -22,7 +22,7 @@ proof: formalized
 def finSuccEquivNth : MvPolynomial (Fin (n + 1)) R ≃ₐ[R] Polynomial (MvPolynomial (Fin n) R)
 ```
 
-`MvPolynomial.finSuccEquivNth_eq` (theorem, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L36))
+`MvPolynomial.finSuccEquivNth_eq` (theorem, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L36))
 
 ```lean
 theorem finSuccEquivNth_eq :
@@ -31,7 +31,7 @@ theorem finSuccEquivNth_eq :
         (Fin.insertNth p Polynomial.X (Polynomial.C ∘ X))
 ```
 
-`MvPolynomial.finSuccEquivNth_apply` (theorem, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L46))
+`MvPolynomial.finSuccEquivNth_apply` (theorem, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L46))
 
 ```lean
 theorem finSuccEquivNth_apply (f : MvPolynomial (Fin (n + 1)) R) :
@@ -40,7 +40,7 @@ theorem finSuccEquivNth_apply (f : MvPolynomial (Fin (n + 1)) R) :
         (Fin.insertNth p Polynomial.X (Polynomial.C ∘ X)) f
 ```
 
-`MvPolynomial.finSuccEquivNth_comp_C_eq_C` (theorem, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L52))
+`MvPolynomial.finSuccEquivNth_comp_C_eq_C` (theorem, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L52))
 
 ```lean
 theorem finSuccEquivNth_comp_C_eq_C :
@@ -48,27 +48,27 @@ theorem finSuccEquivNth_comp_C_eq_C :
         (Polynomial.C.comp C) = (C : R →+* MvPolynomial (Fin n.succ) R)
 ```
 
-`MvPolynomial.finSuccEquivNth_X_same` (theorem, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L65))
+`MvPolynomial.finSuccEquivNth_X_same` (theorem, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L65))
 
 ```lean
 theorem finSuccEquivNth_X_same : finSuccEquivNth R p (X p) = Polynomial.X
 ```
 
-`MvPolynomial.finSuccEquivNth_X_above` (theorem, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L69))
+`MvPolynomial.finSuccEquivNth_X_above` (theorem, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L69))
 
 ```lean
 theorem finSuccEquivNth_X_above {i : Fin n} (h : p < i.succ) :
     finSuccEquivNth R p (X i.succ) = Polynomial.C (X i)
 ```
 
-`MvPolynomial.finSuccEquivNth_X_below` (theorem, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L74))
+`MvPolynomial.finSuccEquivNth_X_below` (theorem, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L74))
 
 ```lean
 theorem finSuccEquivNth_X_below {i : Fin n} (h : i.castSucc < p) :
     finSuccEquivNth R p (X i.castSucc) = Polynomial.C (X i)
 ```
 
-`MvPolynomial.finSuccEquivNth_coeff_coeff` (theorem, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L81))
+`MvPolynomial.finSuccEquivNth_coeff_coeff` (theorem, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L81))
 
 > The coefficient of `m` in the `i`-th coefficient of `finSuccEquivNth R p f` equals the
 > coefficient of `m.insertNth p i` in `f`.
@@ -78,7 +78,7 @@ theorem finSuccEquivNth_coeff_coeff (m : Fin n →₀ ℕ) (f : MvPolynomial (Fi
     ((finSuccEquivNth R p f).coeff i).coeff m = f.coeff (m.insertNth p i)
 ```
 
-`MvPolynomial.eval_eq_eval_mv_eval_finSuccEquivNth` (theorem, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L110))
+`MvPolynomial.eval_eq_eval_mv_eval_finSuccEquivNth` (theorem, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L110))
 
 > The evaluation of `f` at `Fin.insertNth p y s` equals the evaluation at `y` of the polynomial
 > obtained by partially evaluating `finSuccEquivNth R p f` at `s`.
@@ -90,7 +90,7 @@ theorem eval_eq_eval_mv_eval_finSuccEquivNth (s : Fin n → R) (y : R)
         Polynomial.eval y (Polynomial.map (eval s) (finSuccEquivNth R p f))
 ```
 
-`MvPolynomial.support_coeff_finSuccEquivNth` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L128))
+`MvPolynomial.support_coeff_finSuccEquivNth` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L128))
 
 > A monomial index `m` is in the support of the `i`-th coefficient of `finSuccEquivNth R p f` if
 > and only if `m.insertNth p i` is in the support of `f`.
@@ -100,7 +100,7 @@ theorem support_coeff_finSuccEquivNth {f : MvPolynomial (Fin (n + 1)) R} {i : �
     m ∈ ((finSuccEquivNth R p f).coeff i).support ↔ m.insertNth p i ∈ f.support
 ```
 
-`MvPolynomial.totalDegree_coeff_finSuccEquivNth_add_le` (theorem, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L138))
+`MvPolynomial.totalDegree_coeff_finSuccEquivNth_add_le` (theorem, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L138))
 
 > The `totalDegree` of a multivariable polynomial `f` is at least `i` more than the `totalDegree` of
 > the `i`th coefficient of `finSuccEquivNth R p` applied to `f`, if this is nonzero.
@@ -111,7 +111,7 @@ theorem totalDegree_coeff_finSuccEquivNth_add_le (f : MvPolynomial (Fin (n + 1))
       totalDegree ((finSuccEquivNth R p f).coeff i) + i ≤ totalDegree f
 ```
 
-`MvPolynomial.support_finSuccEquivNth` (theorem, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L155))
+`MvPolynomial.support_finSuccEquivNth` (theorem, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L155))
 
 > The support of `finSuccEquivNth R p f` equals the support of `f` projected onto the `p`-th
 > variable.
@@ -121,14 +121,14 @@ theorem support_finSuccEquivNth (f : MvPolynomial (Fin (n + 1)) R) :
     (finSuccEquivNth R p f).support = Finset.image (fun m : Fin (n + 1) →₀ ℕ => m p) f.support
 ```
 
-`MvPolynomial.mem_support_finSuccEquivNth` (theorem, [line 166](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L166))
+`MvPolynomial.mem_support_finSuccEquivNth` (theorem, [line 166](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L166))
 
 ```lean
 theorem mem_support_finSuccEquivNth {f : MvPolynomial (Fin (n + 1)) R} {x} :
     x ∈ (finSuccEquivNth R p f).support ↔ x ∈ (fun m : Fin (n + 1) →₀ _ ↦ m p) '' f.support
 ```
 
-`MvPolynomial.image_support_finSuccEquivNth` (theorem, [line 170](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L170))
+`MvPolynomial.image_support_finSuccEquivNth` (theorem, [line 170](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L170))
 
 ```lean
 theorem image_support_finSuccEquivNth {f : MvPolynomial (Fin (n + 1)) R} {i : ℕ} :
@@ -136,7 +136,7 @@ theorem image_support_finSuccEquivNth {f : MvPolynomial (Fin (n + 1)) R} {i : �
       f.support.filter fun m => m p = i
 ```
 
-`MvPolynomial.mem_image_support_coeff_finSuccEquivNth` (lemma, [line 188](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L188))
+`MvPolynomial.mem_image_support_coeff_finSuccEquivNth` (lemma, [line 188](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L188))
 
 ```lean
 lemma mem_image_support_coeff_finSuccEquivNth {f : MvPolynomial (Fin (n + 1)) R} {i : ℕ} {x} :
@@ -144,21 +144,21 @@ lemma mem_image_support_coeff_finSuccEquivNth {f : MvPolynomial (Fin (n + 1)) R}
       x ∈ f.support ∧ x p = i
 ```
 
-`MvPolynomial.mem_support_coeff_finSuccEquivNth` (lemma, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L193))
+`MvPolynomial.mem_support_coeff_finSuccEquivNth` (lemma, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L193))
 
 ```lean
 lemma mem_support_coeff_finSuccEquivNth {f : MvPolynomial (Fin (n + 1)) R} {i : ℕ} {x} :
     x ∈ ((finSuccEquivNth R p f).coeff i).support ↔ x.insertNth p i ∈ f.support
 ```
 
-`MvPolynomial.support_finSuccEquivNth_nonempty` (theorem, [line 199](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L199))
+`MvPolynomial.support_finSuccEquivNth_nonempty` (theorem, [line 199](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L199))
 
 ```lean
 theorem support_finSuccEquivNth_nonempty {f : MvPolynomial (Fin (n + 1)) R} (h : f ≠ 0) :
     (finSuccEquivNth R p f).support.Nonempty
 ```
 
-`MvPolynomial.degree_finSuccEquivNth` (theorem, [line 204](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L204))
+`MvPolynomial.degree_finSuccEquivNth` (theorem, [line 204](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L204))
 
 > The degree of `finSuccEquivNth R p f` equals the `p`-th degree of `f`.
 
@@ -167,7 +167,7 @@ theorem degree_finSuccEquivNth {f : MvPolynomial (Fin (n + 1)) R} (h : f ≠ 0) 
     (finSuccEquivNth R p f).degree = degreeOf p f
 ```
 
-`MvPolynomial.natDegree_finSuccEquivNth` (theorem, [line 214](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L214))
+`MvPolynomial.natDegree_finSuccEquivNth` (theorem, [line 214](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L214))
 
 > The `natDegree` of `finSuccEquivNth R p f` equals the `p`-th `natDegree` of `f`.
 
@@ -176,7 +176,7 @@ theorem natDegree_finSuccEquivNth (f : MvPolynomial (Fin (n + 1)) R) :
     (finSuccEquivNth R p f).natDegree = degreeOf p f
 ```
 
-`MvPolynomial.degreeOf_coeff_finSuccEquivNth` (theorem, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L223))
+`MvPolynomial.degreeOf_coeff_finSuccEquivNth` (theorem, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L223))
 
 > The degree of `j` in the `i`th coefficient of `finSuccEquivNth R p f` is at most the degree of
 > `j.succ` in `f`.
@@ -186,7 +186,7 @@ theorem degreeOf_coeff_finSuccEquivNth (f : MvPolynomial (Fin (n + 1)) R) (j : F
     degreeOf j ((finSuccEquivNth R p f).coeff i) ≤ degreeOf (p.succAbove j) f
 ```
 
-`MvPolynomial.finSuccEquivNth_rename_finSuccEquivNth` (theorem, [line 241](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L241))
+`MvPolynomial.finSuccEquivNth_rename_finSuccEquivNth` (theorem, [line 241](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean#L241))
 
 > Consider a multivariate polynomial `φ` whose variables are indexed by `Option σ`,
 > and suppose that `σ ≃ Fin n`.
@@ -211,5 +211,5 @@ theorem finSuccEquivNth_rename_finSuccEquivNth (e : σ ≃ Fin n) (φ : MvPolyno
 
 ## Sources
 
-- [CompPoly/ToMathlib/MvPolynomial/Equiv.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/MvPolynomial/Equiv.lean)
+- [CompPoly/ToMathlib/MvPolynomial/Equiv.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/MvPolynomial/Equiv.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.ToMathlib.MvPolynomial.Equiv.json)

@@ -7,32 +7,32 @@ proof: formalized
 
 # Concrete binary tower field construction interface
 
-`CompPoly.Fields.Binary.Tower.Concrete.Core`, in [CompPoly/Fields/Binary/Tower/Concrete/Core.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Core.lean), by Chung Thai Nguyen, Quang Dao.
+`CompPoly.Fields.Binary.Tower.Concrete.Core`, in [CompPoly/Fields/Binary/Tower/Concrete/Core.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Core.lean), by Chung Thai Nguyen, Quang Dao.
 
 > Compatibility entry point for the executable arithmetic, together with the law records,
 > finite-field utilities, and field-instance assembly used by the recursive construction.
 > Arithmetic-only clients can import `CompPoly.Fields.Binary.Tower.Concrete.Arithmetic`;
 > canonical field clients use `CompPoly.Fields.Binary.Tower.Concrete.Field`.
 
-`ConcreteBinaryTower.toConcreteBTF0` (definition, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L44))
+`ConcreteBinaryTower.toConcreteBTF0` (definition, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L44))
 
 ```lean
 noncomputable def toConcreteBTF0 : GF(2) → ConcreteBTField 0
 ```
 
-`ConcreteBinaryTower.fromConcreteBTF0` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L47))
+`ConcreteBinaryTower.fromConcreteBTF0` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L47))
 
 ```lean
 noncomputable def fromConcreteBTF0 : ConcreteBTField 0 → (GF(2))
 ```
 
-`ConcreteBinaryTower.coeffsToBitVec` (definition, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L51))
+`ConcreteBinaryTower.coeffsToBitVec` (definition, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L51))
 
 ```lean
 def coeffsToBitVec {n : ℕ} (coeffs : List (ZMod 2)) : BitVec n
 ```
 
-`ConcreteBinaryTower.ConcreteBTFAddCommGroupProps` (structure, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L56))
+`ConcreteBinaryTower.ConcreteBTFAddCommGroupProps` (structure, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L56))
 
 ```lean
 structure ConcreteBTFAddCommGroupProps (k : ℕ) where
@@ -43,7 +43,7 @@ structure ConcreteBTFAddCommGroupProps (k : ℕ) where
   add_neg : ∀ a : ConcreteBTField k, a + (neg a) = zero := neg_add_cancel
 ```
 
-`ConcreteBinaryTower.ConcreteBTFRingProps` (structure, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L64))
+`ConcreteBinaryTower.ConcreteBTFRingProps` (structure, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L64))
 
 ```lean
 structure ConcreteBTFRingProps (k : ℕ) extends (ConcreteBTFAddCommGroupProps k) where
@@ -72,7 +72,7 @@ structure ConcreteBTFRingProps (k : ℕ) extends (ConcreteBTFAddCommGroupProps k
     = concrete_mul a c + concrete_mul b c
 ```
 
-`ConcreteBinaryTower.ConcreteBTFDivisionRingProps` (structure, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L90))
+`ConcreteBinaryTower.ConcreteBTFDivisionRingProps` (structure, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L90))
 
 ```lean
 structure ConcreteBTFDivisionRingProps (k : ℕ) extends (ConcreteBTFRingProps k) where
@@ -80,7 +80,7 @@ structure ConcreteBTFDivisionRingProps (k : ℕ) extends (ConcreteBTFRingProps k
   mul_inv_cancel : ∀ a : ConcreteBTField k, a ≠ zero → concrete_mul a (concrete_inv a) = one
 ```
 
-`ConcreteBinaryTower.ConcreteBTFieldProps` (structure, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L95))
+`ConcreteBinaryTower.ConcreteBTFieldProps` (structure, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L95))
 
 ```lean
 structure ConcreteBTFieldProps (k : ℕ) extends (ConcreteBTFDivisionRingProps k) where
@@ -88,28 +88,28 @@ structure ConcreteBTFieldProps (k : ℕ) extends (ConcreteBTFDivisionRingProps k
   mul_comm : ∀ a b : ConcreteBTField k, concrete_mul a b = concrete_mul b a
 ```
 
-`ConcreteBinaryTower.mkRingInstance` (definition, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L99))
+`ConcreteBinaryTower.mkRingInstance` (definition, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L99))
 
 ```lean
 def mkRingInstance {k : ℕ} (props : ConcreteBTFieldProps k) :
     Ring (ConcreteBTField k)
 ```
 
-`ConcreteBinaryTower.mkDivisionRingInstance` (definition, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L124))
+`ConcreteBinaryTower.mkDivisionRingInstance` (definition, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L124))
 
 ```lean
 def mkDivisionRingInstance {k : ℕ} (props : ConcreteBTFieldProps k) :
     DivisionRing (ConcreteBTField k)
 ```
 
-`ConcreteBinaryTower.mkFieldInstance` (definition, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L140))
+`ConcreteBinaryTower.mkFieldInstance` (definition, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L140))
 
 ```lean
 def mkFieldInstance {k : ℕ} (props : ConcreteBTFieldProps k) :
     Field (ConcreteBTField k)
 ```
 
-`ConcreteBinaryTower.ConcreteBTFStepResult` (structure, [line 145](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L145))
+`ConcreteBinaryTower.ConcreteBTFStepResult` (structure, [line 145](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Core.lean#L145))
 
 ```lean
 structure ConcreteBTFStepResult (k : ℕ) extends (ConcreteBTFieldProps k) where
@@ -133,5 +133,5 @@ structure ConcreteBTFStepResult (k : ℕ) extends (ConcreteBTFieldProps k) where
 
 ## Sources
 
-- [CompPoly/Fields/Binary/Tower/Concrete/Core.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Core.lean)
+- [CompPoly/Fields/Binary/Tower/Concrete/Core.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Core.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Fields.Binary.Tower.Concrete.Core.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # The selected AES embedding into GHASH
 
-`CompPoly.Fields.Binary.Aes.Ghash`, in [CompPoly/Fields/Binary/Aes/Ghash.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Aes/Ghash.lean), by CompPoly Contributors.
+`CompPoly.Fields.Binary.Aes.Ghash`, in [CompPoly/Fields/Binary/Aes/Ghash.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Aes/Ghash.lean), by CompPoly Contributors.
 
 > AES byte bit `i` represents the coefficient of `X^i`. The selected embedding evaluates
 > these eight coefficients at GHASH word `0x0dcb364640a222fe6b8330483c2e9849`, whose bit `i`
@@ -29,7 +29,7 @@ proof: formalized
 >   `crates/flock-field/src/phi8.rs`.
 >   https://github.com/succinctlabs/flock/blob/387768741ce97386f4926786d59015e6cf3f73b4/crates/flock-field/src/phi8.rs
 
-`AesField.ghashRoot` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Aes/Ghash.lean#L42))
+`AesField.ghashRoot` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Aes/Ghash.lean#L42))
 
 > The selected root of the AES modulus, in GHASH polynomial-basis coordinates.
 
@@ -37,7 +37,7 @@ proof: formalized
 def ghashRoot : ConcreteBF128Ghash
 ```
 
-`AesField.ghashRoot_relation` (theorem, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Aes/Ghash.lean#L46))
+`AesField.ghashRoot_relation` (theorem, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Aes/Ghash.lean#L46))
 
 > The selected GHASH element satisfies the AES defining relation.
 
@@ -46,7 +46,7 @@ theorem ghashRoot_relation :
     ghashRoot ^ 8 + ghashRoot ^ 4 + ghashRoot ^ 3 + ghashRoot + 1 = 0
 ```
 
-`AesField.toGhash` (definition, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Aes/Ghash.lean#L70))
+`AesField.toGhash` (definition, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Aes/Ghash.lean#L70))
 
 > Embed AES coefficients into GHASH by evaluating them at the selected AES root.
 
@@ -54,7 +54,7 @@ theorem ghashRoot_relation :
 def toGhash : AesField →+* ConcreteBF128Ghash
 ```
 
-`AesField.toGhash_apply` (theorem, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Aes/Ghash.lean#L87))
+`AesField.toGhash_apply` (theorem, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Aes/Ghash.lean#L87))
 
 > The embedding evaluates the eight ascending polynomial coefficients at the selected root.
 
@@ -64,7 +64,7 @@ theorem toGhash_apply (a : AesField) :
       ZMod.castHom (dvd_refl 2) ConcreteBF128Ghash (Ext.coeff a i) * ghashRoot ^ (i : ℕ)
 ```
 
-`AesField.toGhash_gen` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Aes/Ghash.lean#L92))
+`AesField.toGhash_gen` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Aes/Ghash.lean#L92))
 
 > The AES polynomial generator maps to the selected GHASH root.
 
@@ -72,7 +72,7 @@ theorem toGhash_apply (a : AesField) :
 theorem toGhash_gen : toGhash gen = ghashRoot
 ```
 
-`AesField.toGhash_injective` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Aes/Ghash.lean#L100))
+`AesField.toGhash_injective` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Aes/Ghash.lean#L100))
 
 > The selected field embedding identifies no distinct AES elements.
 
@@ -87,5 +87,5 @@ theorem toGhash_injective : Function.Injective toGhash
 
 ## Sources
 
-- [CompPoly/Fields/Binary/Aes/Ghash.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Aes/Ghash.lean)
+- [CompPoly/Fields/Binary/Aes/Ghash.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Aes/Ghash.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Fields.Binary.Aes.Ghash.json)

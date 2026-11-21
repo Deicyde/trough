@@ -7,7 +7,7 @@ proof: formalized
 
 # Partial evaluation of the first variable of a `CMvPolynomial`
 
-`CompPoly.Multivariate.PartialEval`, in [CompPoly/Multivariate/PartialEval.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/PartialEval.lean), by Cody Gunton.
+`CompPoly.Multivariate.PartialEval`, in [CompPoly/Multivariate/PartialEval.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/PartialEval.lean), by Cody Gunton.
 
 > `partialEvalFirst a p` fixes variable `0` of a multivariate computable
 > polynomial to a scalar value, together with its evaluation lemma and the
@@ -15,7 +15,7 @@ proof: formalized
 
 > ## Core operation
 
-`CPoly.CMvPolynomial.partialEvalFirst` (definition, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/PartialEval.lean#L114))
+`CPoly.CMvPolynomial.partialEvalFirst` (definition, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/PartialEval.lean#L114))
 
 > Fix variable 0 of a multivariate polynomial to a scalar value `a`.
 
@@ -25,7 +25,7 @@ def partialEvalFirst (a : R) (p : CMvPolynomial (n + 1) R) : CMvPolynomial n R
 
 > ## Evaluation lemma
 
-`CPoly.CMvPolynomial.partialEvalFirst_eval` (theorem, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/PartialEval.lean#L120))
+`CPoly.CMvPolynomial.partialEvalFirst_eval` (theorem, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/PartialEval.lean#L120))
 
 > `partialEvalFirst a p` correctly implements partial evaluation.
 
@@ -36,7 +36,7 @@ theorem partialEvalFirst_eval (a : R) (p : CMvPolynomial (n + 1) R) (v : Fin n â
 
 > ## Degree preservation
 
-`CPoly.CMvPolynomial.partialEvalFirst_degreeOf_le` (theorem, [line 147](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/PartialEval.lean#L147))
+`CPoly.CMvPolynomial.partialEvalFirst_degreeOf_le` (theorem, [line 147](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/PartialEval.lean#L147))
 
 > `partialEvalFirst` preserves degree bounds for each remaining variable.
 
@@ -53,5 +53,5 @@ theorem partialEvalFirst_degreeOf_le [Nontrivial R] {deg : â„•} (a : R)
 
 ## Sources
 
-- [CompPoly/Multivariate/PartialEval.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/PartialEval.lean)
+- [CompPoly/Multivariate/PartialEval.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/PartialEval.lean)
 - [Declaration ledger](../../../sources/comppoly/CompPoly.Multivariate.PartialEval.json)

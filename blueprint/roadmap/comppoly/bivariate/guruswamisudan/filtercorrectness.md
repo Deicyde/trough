@@ -7,12 +7,12 @@ proof: formalized
 
 # Guruswami-Sudan Candidate Filter Correctness
 
-`CompPoly.Bivariate.GuruswamiSudan.FilterCorrectness`, in [CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.FilterCorrectness`, in [CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean), by Valerii Huhnin.
 
 > Correctness and completeness lemmas for generic packed filtering over algebraic
 > `gsCore` outputs.
 
-`CompPoly.GuruswamiSudan.passesCandidateDistance_iff` (theorem, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean#L24))
+`CompPoly.GuruswamiSudan.passesCandidateDistance_iff` (theorem, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean#L24))
 
 > Boolean distance filtering agrees with the executable mismatch count.
 
@@ -23,7 +23,7 @@ theorem passesCandidateDistance_iff {F : Type*} [Semiring F] [BEq F]
       candidateMismatchCount points p ≤ radius
 ```
 
-`CompPoly.GuruswamiSudan.mem_gsFilteredCore_iff` (theorem, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean#L33))
+`CompPoly.GuruswamiSudan.mem_gsFilteredCore_iff` (theorem, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean#L33))
 
 > Membership in `gsFilteredCore` is membership in `gsCore` plus the packed
 > distance predicate.
@@ -40,7 +40,7 @@ theorem mem_gsFilteredCore_iff {F : Type*}
         passesCandidateDistance points radius p = true
 ```
 
-`CompPoly.GuruswamiSudan.gsFilteredCore_sound` (theorem, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean#L47))
+`CompPoly.GuruswamiSudan.gsFilteredCore_sound` (theorem, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean#L47))
 
 > Every filtered candidate is a sound algebraic core output and is within the
 > packed mismatch radius.
@@ -61,7 +61,7 @@ theorem gsFilteredCore_sound {F : Type*}
               candidateMismatchCount points p ≤ radius
 ```
 
-`CompPoly.GuruswamiSudan.gsFilteredCore_complete_of_roots_all_valid_witnesses` (theorem, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean#L71))
+`CompPoly.GuruswamiSudan.gsFilteredCore_complete_of_roots_all_valid_witnesses` (theorem, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean#L71))
 
 > Filtered-core completeness for candidates that root every valid
 > interpolation witness and pass the packed distance filter.
@@ -84,7 +84,7 @@ theorem gsFilteredCore_complete_of_roots_all_valid_witnesses {F : Type*}
     p ∈ (gsFilteredCore points interpContext rootContext params radius).toList
 ```
 
-`CompPoly.GuruswamiSudan.gsFilteredCore_complete_of_enough_matches` (theorem, [line 91](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean#L91))
+`CompPoly.GuruswamiSudan.gsFilteredCore_complete_of_enough_matches` (theorem, [line 91](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean#L91))
 
 > Packed-point semantic completeness for the filtered GS core.
 
@@ -115,5 +115,5 @@ theorem gsFilteredCore_complete_of_enough_matches {F : Type*}
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/FilterCorrectness.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.FilterCorrectness.json)

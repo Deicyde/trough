@@ -7,7 +7,7 @@ proof: formalized
 
 # Correctness of Divisibility-Based Witness Checking
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.WitnessDivisibilityCorrectness`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibilityCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibilityCorrectness.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.WitnessDivisibilityCorrectness`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibilityCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibilityCorrectness.lean), by Valerii Huhnin.
 
 > `satisfiesMultiplicityConstraintsViaDivisibilityBool` agrees with the
 > pointwise Hasse checker `CBivariate.satisfiesMultiplicityConstraintsBool`
@@ -42,7 +42,7 @@ proof: formalized
 
 > ### Main equivalence
 
-`CompPoly.GuruswamiSudan.satisfiesMultiplicityConstraintsViaDivisibilityBool_eq` (theorem, [line 472](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibilityCorrectness.lean#L472))
+`CompPoly.GuruswamiSudan.satisfiesMultiplicityConstraintsViaDivisibilityBool_eq` (theorem, [line 472](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibilityCorrectness.lean#L472))
 
 > The divisibility-based multiplicity checker agrees with the pointwise
 > Hasse checker on point sets with distinct `x`-coordinates.
@@ -59,7 +59,7 @@ theorem satisfiesMultiplicityConstraintsViaDivisibilityBool_eq
       CBivariate.satisfiesMultiplicityConstraintsBool Q points m
 ```
 
-`CompPoly.GuruswamiSudan.interpolationWitnessIsValidViaDivisibilityBool_eq` (theorem, [line 488](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibilityCorrectness.lean#L488))
+`CompPoly.GuruswamiSudan.interpolationWitnessIsValidViaDivisibilityBool_eq` (theorem, [line 488](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibilityCorrectness.lean#L488))
 
 > The divisibility-based witness recognizer agrees with
 > `interpolationWitnessIsValidBool` on point sets with distinct
@@ -88,5 +88,5 @@ theorem interpolationWitnessIsValidViaDivisibilityBool_eq
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibilityCorrectness.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibilityCorrectness.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibilityCorrectness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/WitnessDivisibilityCorrectness.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.WitnessDivisibilityCorrectness.json)

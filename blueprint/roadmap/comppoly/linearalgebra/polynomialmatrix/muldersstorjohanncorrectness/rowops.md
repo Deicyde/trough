@@ -7,53 +7,53 @@ proof: formalized
 
 # Mulders-Storjohann Correctness Row and Row-Span Helpers
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.RowOps`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.RowOps`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean), by Valerii Huhnin.
 
 > Row operation and row-span lemmas used by the Mulders-Storjohann correctness proof.
 
-`CompPoly.PolynomialMatrix.rowScalePolynomial_size` (theorem, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L26))
+`CompPoly.PolynomialMatrix.rowScalePolynomial_size` (theorem, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L26))
 
 ```lean
 theorem rowScalePolynomial_size (c : CPolynomial F) (row : PolynomialRow F) :
     (rowScalePolynomial c row).size = row.size
 ```
 
-`CompPoly.PolynomialMatrix.rowScaleMonomial_size` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L30))
+`CompPoly.PolynomialMatrix.rowScaleMonomial_size` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L30))
 
 ```lean
 theorem rowScaleMonomial_size (c : F) (d : Nat) (row : PolynomialRow F) :
     (rowScaleMonomial c d row).size = row.size
 ```
 
-`CompPoly.PolynomialMatrix.rowNeg_size` (theorem, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L35))
+`CompPoly.PolynomialMatrix.rowNeg_size` (theorem, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L35))
 
 ```lean
 theorem rowNeg_size (row : PolynomialRow F) :
     (rowNeg row).size = row.size
 ```
 
-`CompPoly.PolynomialMatrix.rowAdd_size` (theorem, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L40))
+`CompPoly.PolynomialMatrix.rowAdd_size` (theorem, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L40))
 
 ```lean
 theorem rowAdd_size (a b : PolynomialRow F) :
     (rowAdd a b).size = max a.size b.size
 ```
 
-`CompPoly.PolynomialMatrix.rowSub_size` (theorem, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L45))
+`CompPoly.PolynomialMatrix.rowSub_size` (theorem, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L45))
 
 ```lean
 theorem rowSub_size (a b : PolynomialRow F) :
     (rowSub a b).size = max a.size b.size
 ```
 
-`CompPoly.PolynomialMatrix.rowGet_rowAdd` (theorem, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L50))
+`CompPoly.PolynomialMatrix.rowGet_rowAdd` (theorem, [line 50](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L50))
 
 ```lean
 theorem rowGet_rowAdd (a b : PolynomialRow F) (j : Nat) :
     rowGet (rowAdd a b) j = rowGet a j + rowGet b j
 ```
 
-`CompPoly.PolynomialMatrix.rowGet_rowScalePolynomial` (theorem, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L64))
+`CompPoly.PolynomialMatrix.rowGet_rowScalePolynomial` (theorem, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L64))
 
 ```lean
 theorem rowGet_rowScalePolynomial
@@ -61,21 +61,21 @@ theorem rowGet_rowScalePolynomial
     rowGet (rowScalePolynomial c row) j = c * rowGet row j
 ```
 
-`CompPoly.PolynomialMatrix.rowGet_rowNeg` (theorem, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L77))
+`CompPoly.PolynomialMatrix.rowGet_rowNeg` (theorem, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L77))
 
 ```lean
 theorem rowGet_rowNeg (row : PolynomialRow F) (j : Nat) :
     rowGet (rowNeg row) j = -rowGet row j
 ```
 
-`CompPoly.PolynomialMatrix.rowGet_rowSub` (theorem, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L89))
+`CompPoly.PolynomialMatrix.rowGet_rowSub` (theorem, [line 89](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L89))
 
 ```lean
 theorem rowGet_rowSub (a b : PolynomialRow F) (j : Nat) :
     rowGet (rowSub a b) j = rowGet a j - rowGet b j
 ```
 
-`CompPoly.PolynomialMatrix.rowGet_rowScaleMonomial` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L93))
+`CompPoly.PolynomialMatrix.rowGet_rowScaleMonomial` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L93))
 
 ```lean
 theorem rowGet_rowScaleMonomial
@@ -84,21 +84,21 @@ theorem rowGet_rowScaleMonomial
       CPolynomial.monomial d c * rowGet row j
 ```
 
-`CompPoly.PolynomialMatrix.rowGet_zeroRow` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L100))
+`CompPoly.PolynomialMatrix.rowGet_zeroRow` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L100))
 
 ```lean
 theorem rowGet_zeroRow (width j : Nat) :
     rowGet (zeroRow (F := F) width) j = 0
 ```
 
-`CompPoly.PolynomialMatrix.rowScalePolynomial_zeroRow` (theorem, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L112))
+`CompPoly.PolynomialMatrix.rowScalePolynomial_zeroRow` (theorem, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L112))
 
 ```lean
 theorem rowScalePolynomial_zeroRow (c : CPolynomial F) (width : Nat) :
     rowScalePolynomial c (zeroRow (F := F) width) = zeroRow width
 ```
 
-`CompPoly.PolynomialMatrix.rowScalePolynomial_eq_zeroRow_of_rowIsZero` (theorem, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L120))
+`CompPoly.PolynomialMatrix.rowScalePolynomial_eq_zeroRow_of_rowIsZero` (theorem, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L120))
 
 ```lean
 theorem rowScalePolynomial_eq_zeroRow_of_rowIsZero
@@ -106,28 +106,28 @@ theorem rowScalePolynomial_eq_zeroRow_of_rowIsZero
     rowScalePolynomial c row = zeroRow row.size
 ```
 
-`CompPoly.PolynomialMatrix.zeroRow_rowIsZero` (theorem, [line 134](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L134))
+`CompPoly.PolynomialMatrix.zeroRow_rowIsZero` (theorem, [line 134](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L134))
 
 ```lean
 theorem zeroRow_rowIsZero (width : Nat) :
     RowIsZero (zeroRow (F := F) width)
 ```
 
-`CompPoly.PolynomialMatrix.rowScalePolynomial_zero` (theorem, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L141))
+`CompPoly.PolynomialMatrix.rowScalePolynomial_zero` (theorem, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L141))
 
 ```lean
 theorem rowScalePolynomial_zero (row : PolynomialRow F) :
     rowScalePolynomial (0 : CPolynomial F) row = zeroRow row.size
 ```
 
-`CompPoly.PolynomialMatrix.rowAdd_zeroRow_zeroRow` (theorem, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L160))
+`CompPoly.PolynomialMatrix.rowAdd_zeroRow_zeroRow` (theorem, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L160))
 
 ```lean
 theorem rowAdd_zeroRow_zeroRow (width : Nat) :
     rowAdd (zeroRow (F := F) width) (zeroRow width) = zeroRow width
 ```
 
-`CompPoly.PolynomialMatrix.rowAdd_zeroRow_right` (theorem, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L173))
+`CompPoly.PolynomialMatrix.rowAdd_zeroRow_right` (theorem, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L173))
 
 ```lean
 theorem rowAdd_zeroRow_right
@@ -135,7 +135,7 @@ theorem rowAdd_zeroRow_right
     rowAdd row (zeroRow (F := F) width) = row
 ```
 
-`CompPoly.PolynomialMatrix.rowScalePolynomial_rowAdd` (theorem, [line 186](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L186))
+`CompPoly.PolynomialMatrix.rowScalePolynomial_rowAdd` (theorem, [line 186](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L186))
 
 ```lean
 theorem rowScalePolynomial_rowAdd
@@ -144,21 +144,21 @@ theorem rowScalePolynomial_rowAdd
       rowAdd (rowScalePolynomial c a) (rowScalePolynomial c b)
 ```
 
-`CompPoly.PolynomialMatrix.rowAdd_assoc` (theorem, [line 197](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L197))
+`CompPoly.PolynomialMatrix.rowAdd_assoc` (theorem, [line 197](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L197))
 
 ```lean
 theorem rowAdd_assoc (a b c : PolynomialRow F) :
     rowAdd (rowAdd a b) c = rowAdd a (rowAdd b c)
 ```
 
-`CompPoly.PolynomialMatrix.rowAdd_rowNeg_left` (theorem, [line 210](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L210))
+`CompPoly.PolynomialMatrix.rowAdd_rowNeg_left` (theorem, [line 210](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L210))
 
 ```lean
 theorem rowAdd_rowNeg_left (row : PolynomialRow F) :
     rowAdd (rowNeg row) row = zeroRow row.size
 ```
 
-`CompPoly.PolynomialMatrix.rowSub_add_cancel` (theorem, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L223))
+`CompPoly.PolynomialMatrix.rowSub_add_cancel` (theorem, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L223))
 
 ```lean
 theorem rowSub_add_cancel
@@ -166,7 +166,7 @@ theorem rowSub_add_cancel
     rowAdd (rowSub a b) b = a
 ```
 
-`CompPoly.PolynomialMatrix.rowAdd_medial` (theorem, [line 231](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L231))
+`CompPoly.PolynomialMatrix.rowAdd_medial` (theorem, [line 231](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L231))
 
 ```lean
 theorem rowAdd_medial (a b c d : PolynomialRow F) :
@@ -174,7 +174,7 @@ theorem rowAdd_medial (a b c d : PolynomialRow F) :
       rowAdd (rowAdd a c) (rowAdd b d)
 ```
 
-`CompPoly.PolynomialMatrix.rowScalePolynomial_add` (theorem, [line 247](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L247))
+`CompPoly.PolynomialMatrix.rowScalePolynomial_add` (theorem, [line 247](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L247))
 
 ```lean
 theorem rowScalePolynomial_add
@@ -183,7 +183,7 @@ theorem rowScalePolynomial_add
       rowScalePolynomial (c + d) row
 ```
 
-`CompPoly.PolynomialMatrix.rowScalePolynomial_assoc` (theorem, [line 262](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L262))
+`CompPoly.PolynomialMatrix.rowScalePolynomial_assoc` (theorem, [line 262](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L262))
 
 ```lean
 theorem rowScalePolynomial_assoc
@@ -192,7 +192,7 @@ theorem rowScalePolynomial_assoc
       rowScalePolynomial (c * d) row
 ```
 
-`CompPoly.PolynomialMatrix.getD_map_mul` (theorem, [line 272](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L272))
+`CompPoly.PolynomialMatrix.getD_map_mul` (theorem, [line 272](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L272))
 
 ```lean
 theorem getD_map_mul
@@ -200,7 +200,7 @@ theorem getD_map_mul
     (coeffs.map (fun q ↦ c * q)).getD i 0 = c * coeffs.getD i 0
 ```
 
-`CompPoly.PolynomialMatrix.getD_ofFn_add` (theorem, [line 284](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L284))
+`CompPoly.PolynomialMatrix.getD_ofFn_add` (theorem, [line 284](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L284))
 
 ```lean
 theorem getD_ofFn_add
@@ -210,7 +210,7 @@ theorem getD_ofFn_add
       coeffsA.getD i 0 + coeffsB.getD i 0
 ```
 
-`CompPoly.PolynomialMatrix.rowAdd_rowLinearCombination_range` (theorem, [line 295](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L295))
+`CompPoly.PolynomialMatrix.rowAdd_rowLinearCombination_range` (theorem, [line 295](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L295))
 
 ```lean
 theorem rowAdd_rowLinearCombination_range
@@ -237,7 +237,7 @@ theorem rowAdd_rowLinearCombination_range
         (zeroRow (MatrixWidth M)))
 ```
 
-`CompPoly.PolynomialMatrix.rowAdd_rowLinearCombination` (theorem, [line 329](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L329))
+`CompPoly.PolynomialMatrix.rowAdd_rowLinearCombination` (theorem, [line 329](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L329))
 
 ```lean
 theorem rowAdd_rowLinearCombination
@@ -248,7 +248,7 @@ theorem rowAdd_rowLinearCombination
           (fun k : Fin M.size ↦ coeffsA.getD k.1 0 + coeffsB.getD k.1 0)) M
 ```
 
-`CompPoly.PolynomialMatrix.rowAdd_mem_rowSpan` (theorem, [line 340](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L340))
+`CompPoly.PolynomialMatrix.rowAdd_mem_rowSpan` (theorem, [line 340](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L340))
 
 ```lean
 theorem rowAdd_mem_rowSpan
@@ -257,21 +257,21 @@ theorem rowAdd_mem_rowSpan
     rowAdd a b ∈ RowSpan M
 ```
 
-`CompPoly.PolynomialMatrix.C_neg_one_mul` (theorem, [line 352](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L352))
+`CompPoly.PolynomialMatrix.C_neg_one_mul` (theorem, [line 352](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L352))
 
 ```lean
 theorem C_neg_one_mul (p : CPolynomial F) :
     CPolynomial.C (-1 : F) * p = -p
 ```
 
-`CompPoly.PolynomialMatrix.rowNeg_eq_rowScalePolynomial` (theorem, [line 357](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L357))
+`CompPoly.PolynomialMatrix.rowNeg_eq_rowScalePolynomial` (theorem, [line 357](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L357))
 
 ```lean
 theorem rowNeg_eq_rowScalePolynomial (row : PolynomialRow F) :
     rowNeg row = rowScalePolynomial (CPolynomial.C (-1 : F)) row
 ```
 
-`CompPoly.PolynomialMatrix.rowScalePolynomial_rowLinearCombination_range` (theorem, [line 365](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L365))
+`CompPoly.PolynomialMatrix.rowScalePolynomial_rowLinearCombination_range` (theorem, [line 365](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L365))
 
 ```lean
 theorem rowScalePolynomial_rowLinearCombination_range
@@ -291,7 +291,7 @@ theorem rowScalePolynomial_rowLinearCombination_range
         (zeroRow (MatrixWidth M)))
 ```
 
-`CompPoly.PolynomialMatrix.rowScalePolynomial_rowLinearCombination` (theorem, [line 391](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L391))
+`CompPoly.PolynomialMatrix.rowScalePolynomial_rowLinearCombination` (theorem, [line 391](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L391))
 
 ```lean
 theorem rowScalePolynomial_rowLinearCombination
@@ -300,7 +300,7 @@ theorem rowScalePolynomial_rowLinearCombination
       rowLinearCombination (coeffs.map fun q ↦ c * q) M
 ```
 
-`CompPoly.PolynomialMatrix.rowScalePolynomial_mem_rowSpan` (theorem, [line 399](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L399))
+`CompPoly.PolynomialMatrix.rowScalePolynomial_mem_rowSpan` (theorem, [line 399](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L399))
 
 ```lean
 theorem rowScalePolynomial_mem_rowSpan
@@ -309,7 +309,7 @@ theorem rowScalePolynomial_mem_rowSpan
     rowScalePolynomial c row ∈ RowSpan M
 ```
 
-`CompPoly.PolynomialMatrix.rowScaleMonomial_mem_rowSpan` (theorem, [line 407](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L407))
+`CompPoly.PolynomialMatrix.rowScaleMonomial_mem_rowSpan` (theorem, [line 407](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L407))
 
 ```lean
 theorem rowScaleMonomial_mem_rowSpan
@@ -318,7 +318,7 @@ theorem rowScaleMonomial_mem_rowSpan
     rowScaleMonomial c d row ∈ RowSpan M
 ```
 
-`CompPoly.PolynomialMatrix.rowNeg_mem_rowSpan` (theorem, [line 415](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L415))
+`CompPoly.PolynomialMatrix.rowNeg_mem_rowSpan` (theorem, [line 415](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L415))
 
 ```lean
 theorem rowNeg_mem_rowSpan
@@ -327,7 +327,7 @@ theorem rowNeg_mem_rowSpan
     rowNeg row ∈ RowSpan M
 ```
 
-`CompPoly.PolynomialMatrix.rowSub_mem_rowSpan` (theorem, [line 423](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L423))
+`CompPoly.PolynomialMatrix.rowSub_mem_rowSpan` (theorem, [line 423](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L423))
 
 ```lean
 theorem rowSub_mem_rowSpan
@@ -336,7 +336,7 @@ theorem rowSub_mem_rowSpan
     rowSub a b ∈ RowSpan M
 ```
 
-`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_mem_rowSpan` (theorem, [line 430](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L430))
+`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_mem_rowSpan` (theorem, [line 430](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L430))
 
 ```lean
 theorem cancelShiftedLeadingTerm_mem_rowSpan
@@ -345,7 +345,7 @@ theorem cancelShiftedLeadingTerm_mem_rowSpan
     cancelShiftedLeadingTerm target reducer shift ∈ RowSpan M
 ```
 
-`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_target_mem_rowSpan` (theorem, [line 441](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L441))
+`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_target_mem_rowSpan` (theorem, [line 441](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L441))
 
 ```lean
 theorem cancelShiftedLeadingTerm_target_mem_rowSpan
@@ -356,7 +356,7 @@ theorem cancelShiftedLeadingTerm_target_mem_rowSpan
     target ∈ RowSpan M
 ```
 
-`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_size` (theorem, [line 468](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L468))
+`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_size` (theorem, [line 468](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean#L468))
 
 ```lean
 theorem cancelShiftedLeadingTerm_size
@@ -372,5 +372,5 @@ theorem cancelShiftedLeadingTerm_size
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/RowOps.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.RowOps.json)

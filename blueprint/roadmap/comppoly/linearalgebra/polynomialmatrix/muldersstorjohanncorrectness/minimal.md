@@ -7,11 +7,11 @@ proof: formalized
 
 # Mulders-Storjohann Correctness Reducer Minimality
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Minimal`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Minimal.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Minimal.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Minimal`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Minimal.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Minimal.lean), by Valerii Huhnin.
 
 > Least-row minimality and the certified reducer context.
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReduce_least_row_minimal` (theorem, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Minimal.lean#L24))
+`CompPoly.PolynomialMatrix.muldersStorjohannReduce_least_row_minimal` (theorem, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Minimal.lean#L24))
 
 ```lean
 theorem muldersStorjohannReduce_least_row_minimal
@@ -26,7 +26,7 @@ theorem muldersStorjohannReduce_least_row_minimal
       outDeg ≤ rowDeg
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannReducerContext` (definition, [line 266](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Minimal.lean#L266))
+`CompPoly.PolynomialMatrix.muldersStorjohannReducerContext` (definition, [line 266](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Minimal.lean#L266))
 
 > Certified direct Mulders-Storjohann shifted row-reducer context.
 
@@ -47,5 +47,5 @@ def muldersStorjohannReducerContext (F : Type*) [Field F] [BEq F] [LawfulBEq F]
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Minimal.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Minimal.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Minimal.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Minimal.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Minimal.json)

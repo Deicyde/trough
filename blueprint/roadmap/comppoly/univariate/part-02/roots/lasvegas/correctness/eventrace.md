@@ -7,11 +7,11 @@ proof: formalized
 
 # Even-Trace Split Correctness for Las Vegas Splitting
 
-`CompPoly.Univariate.Roots.LasVegas.Correctness.EvenTrace`, in [CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.LasVegas.Correctness.EvenTrace`, in [CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean), by Valerii Huhnin.
 
 > Correctness lemmas for the characteristic-two trace split attempt and retry loop.
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_child_proper` (theorem, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L74))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_child_proper` (theorem, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L74))
 
 ```lean
 theorem cantorZassenhausEvenTraceAttemptWith_child_proper {F : Type*}
@@ -26,7 +26,7 @@ theorem cantorZassenhausEvenTraceAttemptWith_child_proper {F : Type*}
     isNontrivialProperChild (CPolynomial.monicNormalize g) child = true
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_stackWork_le` (theorem, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L94))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_stackWork_le` (theorem, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L94))
 
 ```lean
 theorem cantorZassenhausEvenTraceAttemptWith_stackWork_le {F : Type*}
@@ -41,7 +41,7 @@ theorem cantorZassenhausEvenTraceAttemptWith_stackWork_le {F : Type*}
     stackWork children.toList ≤ splitWork (CPolynomial.monicNormalize g) - 1
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_child_normSplitWork_pos` (theorem, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L160))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_child_normSplitWork_pos` (theorem, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L160))
 
 ```lean
 theorem cantorZassenhausEvenTraceAttemptWith_child_normSplitWork_pos {F : Type*}
@@ -56,7 +56,7 @@ theorem cantorZassenhausEvenTraceAttemptWith_child_normSplitWork_pos {F : Type*}
     1 ≤ normSplitWork child
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_probe_congr` (theorem, [line 238](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L238))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_probe_congr` (theorem, [line 238](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L238))
 
 > The trace split attempt depends on the probe family only through the probe
 > it actually draws.
@@ -73,7 +73,7 @@ theorem cantorZassenhausEvenTraceAttemptWith_probe_congr {F : Type*}
       cantorZassenhausEvenTraceAttemptWith M D traceCtx q p2 g a2
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_probe_congr` (theorem, [line 253](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L253))
+`CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_probe_congr` (theorem, [line 253](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L253))
 
 > The trace retry loop depends on the probe family only through the probes it
 > actually draws.
@@ -92,7 +92,7 @@ theorem tryEvenTraceSplitAttemptsWith_probe_congr {F : Type*}
         tryEvenTraceSplitAttemptsWith M D traceCtx q p2 g attempts offset2
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_eq_some_exists_attempt` (theorem, [line 285](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L285))
+`CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_eq_some_exists_attempt` (theorem, [line 285](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L285))
 
 > A successful trace retry loop result is produced by some single attempt.
 
@@ -110,7 +110,7 @@ theorem tryEvenTraceSplitAttemptsWith_eq_some_exists_attempt {F : Type*}
           some children
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_root` (theorem, [line 314](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L314))
+`CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_root` (theorem, [line 314](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L314))
 
 ```lean
 theorem tryEvenTraceSplitAttemptsWith_root {F : Type*}
@@ -124,7 +124,7 @@ theorem tryEvenTraceSplitAttemptsWith_root {F : Type*}
         ∃ child, child ∈ children.toList ∧ CPolynomial.eval a child = 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_stackWork_le` (theorem, [line 370](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L370))
+`CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_stackWork_le` (theorem, [line 370](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L370))
 
 ```lean
 theorem tryEvenTraceSplitAttemptsWith_stackWork_le {F : Type*}
@@ -138,7 +138,7 @@ theorem tryEvenTraceSplitAttemptsWith_stackWork_le {F : Type*}
         stackWork children.toList ≤ splitWork (CPolynomial.monicNormalize g) - 1
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_child_normSplitWork_pos` (theorem, [line 398](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L398))
+`CompPoly.CPolynomial.Roots.FiniteField.tryEvenTraceSplitAttemptsWith_child_normSplitWork_pos` (theorem, [line 398](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L398))
 
 ```lean
 theorem tryEvenTraceSplitAttemptsWith_child_normSplitWork_pos {F : Type*}
@@ -153,7 +153,7 @@ theorem tryEvenTraceSplitAttemptsWith_child_normSplitWork_pos {F : Type*}
           1 ≤ normSplitWork child
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.eval_tracePowerSumPolynomialWith_eq` (theorem, [line 463](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L463))
+`CompPoly.CPolynomial.Roots.FiniteField.eval_tracePowerSumPolynomialWith_eq` (theorem, [line 463](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L463))
 
 > Evaluating the modular trace power sum at a root of the modulus computes
 > the field-level trace power sum of the probe value.
@@ -168,7 +168,7 @@ theorem eval_tracePowerSumPolynomialWith_eq {F : Type*}
       tracePowerSum p k (CPolynomial.eval z h)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_size_ge_two` (theorem, [line 487](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L487))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_size_ge_two` (theorem, [line 487](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L487))
 
 ```lean
 theorem cantorZassenhausEvenTraceAttemptWith_size_ge_two {F : Type*}
@@ -182,7 +182,7 @@ theorem cantorZassenhausEvenTraceAttemptWith_size_ge_two {F : Type*}
     2 ≤ children.size
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_child_dvd_input` (theorem, [line 506](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L506))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_child_dvd_input` (theorem, [line 506](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L506))
 
 ```lean
 theorem cantorZassenhausEvenTraceAttemptWith_child_dvd_input {F : Type*}
@@ -197,7 +197,7 @@ theorem cantorZassenhausEvenTraceAttemptWith_child_dvd_input {F : Type*}
     child.toPoly ∣ g.toPoly
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_success_of_trace_separated` (theorem, [line 552](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L552))
+`CompPoly.CPolynomial.Roots.FiniteField.cantorZassenhausEvenTraceAttemptWith_success_of_trace_separated` (theorem, [line 552](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean#L552))
 
 > A fixed probe whose trace power sums separate two roots of `g` forces the
 > characteristic-two trace split attempt to succeed: the root with trace zero
@@ -227,5 +227,5 @@ theorem cantorZassenhausEvenTraceAttemptWith_success_of_trace_separated {F : Typ
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean)
+- [CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness/EvenTrace.lean)
 - [Declaration ledger](../../../../../../../sources/comppoly/CompPoly.Univariate.Roots.LasVegas.Correctness.EvenTrace.json)

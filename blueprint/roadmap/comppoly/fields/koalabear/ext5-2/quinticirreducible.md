@@ -7,7 +7,7 @@ proof: formalized
 
 # Irreducibility of `X^5 + X^2 - 1` over KoalaBear
 
-`CompPoly.Fields.KoalaBear.Ext5.QuinticIrreducible`, in [CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean), by Derek Sorensen.
+`CompPoly.Fields.KoalaBear.Ext5.QuinticIrreducible`, in [CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean), by Derek Sorensen.
 
 > The quintic `X^5 + X^2 - 1` is irreducible over `KoalaBear.Field`, proved by Rabin's test at
 > prime degree (`CompPoly.RabinCert.irreducible_of_rabin_prime_degree`). No degree-5
@@ -28,7 +28,7 @@ proof: formalized
 > * `KoalaBear.quinticPoly_irreducible`, and the `Fact` instance consumed by
 >   `CompPoly.Extension.Ext.instField`.
 
-`KoalaBear.quinticPoly` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L43))
+`KoalaBear.quinticPoly` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L43))
 
 > The defining quintic `X^5 + X^2 - 1` of the degree-5 KoalaBear extension.
 
@@ -36,7 +36,7 @@ proof: formalized
 noncomputable def quinticPoly : Polynomial Field
 ```
 
-`KoalaBear.quinticL` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L46))
+`KoalaBear.quinticL` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L46))
 
 > The quintic's little-endian `ℕ`-coefficient encoding, with `-1` represented as `p - 1`.
 
@@ -44,7 +44,7 @@ noncomputable def quinticPoly : Polynomial Field
 def quinticL : List ℕ
 ```
 
-`KoalaBear.toPoly_quinticL` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L57))
+`KoalaBear.toPoly_quinticL` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L57))
 
 > The `ℕ`-coefficient encoding denotes the quintic.
 
@@ -52,13 +52,13 @@ def quinticL : List ℕ
 theorem toPoly_quinticL : toPoly fieldSize quinticL = quinticPoly
 ```
 
-`KoalaBear.quinticPoly_natDegree` (theorem, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L63))
+`KoalaBear.quinticPoly_natDegree` (theorem, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L63))
 
 ```lean
 theorem quinticPoly_natDegree : quinticPoly.natDegree = 5
 ```
 
-`KoalaBear.quinticPoly_ne_zero` (theorem, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L67))
+`KoalaBear.quinticPoly_ne_zero` (theorem, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L67))
 
 ```lean
 theorem quinticPoly_ne_zero : quinticPoly ≠ 0
@@ -70,7 +70,7 @@ theorem quinticPoly_ne_zero : quinticPoly ≠ 0
 > chain (`cur² = q·f + r`, coefficientwise mod `p`), and `chainExp` recomputes the exponent the
 > chain reaches. `eqModP` checks the Bézout identity for coprimality.
 
-`KoalaBear.quintic_trace_chain` (theorem, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L83))
+`KoalaBear.quintic_trace_chain` (theorem, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L83))
 
 > The 211-step chain for `X^(p^5) mod f` verifies and ends at the residue `X`.
 
@@ -79,7 +79,7 @@ theorem quintic_trace_chain :
     runChain fieldSize quinticL [0, 1] QuinticCert.traceSteps = some [0, 1]
 ```
 
-`KoalaBear.quintic_trace_exp` (theorem, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L88))
+`KoalaBear.quintic_trace_exp` (theorem, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L88))
 
 > The trace chain computes the exponent `p^5`.
 
@@ -87,7 +87,7 @@ theorem quintic_trace_chain :
 theorem quintic_trace_exp : chainExp 1 QuinticCert.traceSteps = fieldSize ^ 5
 ```
 
-`KoalaBear.quintic_frob_chain` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L92))
+`KoalaBear.quintic_frob_chain` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L92))
 
 > The 37-step chain for `X^p mod f` verifies and ends at the recorded residue.
 
@@ -96,7 +96,7 @@ theorem quintic_frob_chain :
     runChain fieldSize quinticL [0, 1] QuinticCert.frobSteps = some QuinticCert.rp
 ```
 
-`KoalaBear.quintic_frob_exp` (theorem, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L97))
+`KoalaBear.quintic_frob_exp` (theorem, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L97))
 
 > The Frobenius chain computes the exponent `p`.
 
@@ -104,7 +104,7 @@ theorem quintic_frob_chain :
 theorem quintic_frob_exp : chainExp 1 QuinticCert.frobSteps = fieldSize
 ```
 
-`KoalaBear.quintic_w_check` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L100))
+`KoalaBear.quintic_w_check` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L100))
 
 > The recorded residue satisfies `rp = w + X`.
 
@@ -113,7 +113,7 @@ theorem quintic_w_check :
     eqModP fieldSize QuinticCert.rp (addNat QuinticCert.w [0, 1]) = true
 ```
 
-`KoalaBear.quintic_bezout_check` (theorem, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L104))
+`KoalaBear.quintic_bezout_check` (theorem, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L104))
 
 > The Bézout identity `u·f + v·w = 1` verifies.
 
@@ -124,10 +124,13 @@ theorem quintic_bezout_check :
       = true
 ```
 
-`KoalaBear.quinticPoly_irreducible` (theorem, [line 111](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L111))
+`KoalaBear.quinticPoly_irreducible` (theorem, [line 114](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean#L114))
 
 > **`X^5 + X^2 - 1` is irreducible over KoalaBear**, by Rabin's test at prime degree with
 > kernel-checked certificates for both conditions.
+>
+> The application supplies the carrier and instances used by the certificate lemmas.
+> See `docs/wiki/field-extensions.md` for the KoalaBear replay history.
 
 ```lean
 theorem quinticPoly_irreducible : Irreducible quinticPoly
@@ -140,5 +143,5 @@ theorem quinticPoly_irreducible : Irreducible quinticPoly
 
 ## Sources
 
-- [CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean)
+- [CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/KoalaBear/Ext5/QuinticIrreducible.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Fields.KoalaBear.Ext5.QuinticIrreducible.json)

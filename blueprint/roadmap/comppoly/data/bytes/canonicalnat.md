@@ -7,7 +7,7 @@ proof: formalized
 
 # Byte codecs from canonical naturals
 
-`CompPoly.Data.Bytes.CanonicalNat`, in [CompPoly/Data/Bytes/CanonicalNat.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Bytes/CanonicalNat.lean), by Derek Sorensen.
+`CompPoly.Data.Bytes.CanonicalNat`, in [CompPoly/Data/Bytes/CanonicalNat.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/CanonicalNat.lean), by Derek Sorensen.
 
 > A type with a `CanonicalNat` structure has a fixed-width byte codec: the little-endian bytes
 > of `toNat`, `bytesFor bound` of them, decoded by `ofNat?`. This is `ByteCodec.ofCanonicalNat`,
@@ -22,7 +22,7 @@ proof: formalized
 > `ZMod p` receives both: `instCanonicalNatZMod` from `CompPoly.Data.Classes.CanonicalNat` and the
 > derived `ByteCodec (ZMod p)` here, so every spec prime field in `CompPoly.Fields` serializes.
 
-`CompPoly.ByteCodec.ofCanonicalNat` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Bytes/CanonicalNat.lean#L42))
+`CompPoly.ByteCodec.ofCanonicalNat` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/CanonicalNat.lean#L42))
 
 > The fixed-width byte codec of a type with canonical naturals: `bytesFor bound` little-endian
 > bytes of `toNat`, decoded by `ofNat?`.
@@ -31,7 +31,7 @@ proof: formalized
 def ByteCodec.ofCanonicalNat (F : Type u) [CanonicalNat F] : ByteCodec F
 ```
 
-`CompPoly.CanonicalNat.ofBytesModOrder` (definition, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Bytes/CanonicalNat.lean#L57))
+`CompPoly.CanonicalNat.ofBytesModOrder` (definition, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/CanonicalNat.lean#L57))
 
 > Read any byte string as a little-endian integer and reduce it modulo `bound`. Total, and
 > close to uniform when the string is longer than `bytesFor bound`.
@@ -40,7 +40,7 @@ def ByteCodec.ofCanonicalNat (F : Type u) [CanonicalNat F] : ByteCodec F
 def ofBytesModOrder {n : ℕ} (v : Vector UInt8 n) : F
 ```
 
-`CompPoly.CanonicalNat.ofByteArrayModOrder` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Bytes/CanonicalNat.lean#L60))
+`CompPoly.CanonicalNat.ofByteArrayModOrder` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/CanonicalNat.lean#L60))
 
 > `ofBytesModOrder` on a `ByteArray` of any size.
 
@@ -48,21 +48,21 @@ def ofBytesModOrder {n : ℕ} (v : Vector UInt8 n) : F
 def ofByteArrayModOrder (b : ByteArray) : F
 ```
 
-`CompPoly.CanonicalNat.deserialize_vector_eq` (theorem, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Bytes/CanonicalNat.lean#L66))
+`CompPoly.CanonicalNat.deserialize_vector_eq` (theorem, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/CanonicalNat.lean#L66))
 
 ```lean
 theorem deserialize_vector_eq {n : ℕ} (v : Vector UInt8 n) :
     (Deserialize.deserialize v : F) = ofBytesModOrder v
 ```
 
-`CompPoly.CanonicalNat.deserialize_byteArray_eq` (theorem, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Bytes/CanonicalNat.lean#L69))
+`CompPoly.CanonicalNat.deserialize_byteArray_eq` (theorem, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/CanonicalNat.lean#L69))
 
 ```lean
 theorem deserialize_byteArray_eq (b : ByteArray) :
     (Deserialize.deserialize b : F) = ofByteArrayModOrder b
 ```
 
-`CompPoly.CanonicalNat.ofBytesModOrder_toVecLE_toNat` (theorem, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Bytes/CanonicalNat.lean#L73))
+`CompPoly.CanonicalNat.ofBytesModOrder_toVecLE_toNat` (theorem, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/CanonicalNat.lean#L73))
 
 > Reading back an exact-width little-endian encoding modulo the order recovers the element.
 
@@ -71,14 +71,14 @@ theorem ofBytesModOrder_toVecLE_toNat (x : F) :
     ofBytesModOrder (toVecLE (bytesFor (bound F)) (toNat x)) = x
 ```
 
-`CompPoly.CanonicalNat.ofByteArrayModOrder_toByteArrayLE_toNat` (theorem, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Bytes/CanonicalNat.lean#L79))
+`CompPoly.CanonicalNat.ofByteArrayModOrder_toByteArrayLE_toNat` (theorem, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/CanonicalNat.lean#L79))
 
 ```lean
 theorem ofByteArrayModOrder_toByteArrayLE_toNat (x : F) :
     ofByteArrayModOrder (toByteArrayLE (bytesFor (bound F)) (toNat x)) = x
 ```
 
-`CompPoly.ByteCodec.ofBytesModOrder_toBytes` (theorem, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Bytes/CanonicalNat.lean#L88))
+`CompPoly.ByteCodec.ofBytesModOrder_toBytes` (theorem, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/CanonicalNat.lean#L88))
 
 > Reading back the `ofCanonicalNat` encoding modulo the order recovers the element.
 
@@ -89,7 +89,7 @@ theorem ByteCodec.ofBytesModOrder_toBytes [CanonicalNat F] (x : F) :
 
 > ## `ZMod`
 
-`CompPoly.instByteCodecZMod` (instance, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Bytes/CanonicalNat.lean#L95))
+`CompPoly.instByteCodecZMod` (instance, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/CanonicalNat.lean#L95))
 
 > The little-endian residue codec of `ZMod p`, `bytesFor p` bytes wide.
 
@@ -97,20 +97,20 @@ theorem ByteCodec.ofBytesModOrder_toBytes [CanonicalNat F] (x : F) :
 instance instByteCodecZMod (p : ℕ) [NeZero p] : ByteCodec (ZMod p)
 ```
 
-`CompPoly.ByteCodec.width_zmod` (theorem, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Bytes/CanonicalNat.lean#L97))
+`CompPoly.ByteCodec.width_zmod` (theorem, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/CanonicalNat.lean#L97))
 
 ```lean
 theorem ByteCodec.width_zmod (p : ℕ) [NeZero p] : ByteCodec.width (ZMod p) = bytesFor p
 ```
 
-`CompPoly.ByteCodec.toBytes_zmod` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Bytes/CanonicalNat.lean#L100))
+`CompPoly.ByteCodec.toBytes_zmod` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/CanonicalNat.lean#L100))
 
 ```lean
 theorem ByteCodec.toBytes_zmod {p : ℕ} [NeZero p] (x : ZMod p) :
     ByteCodec.toBytes x = toVecLE (bytesFor p) x.val
 ```
 
-`CompPoly.ByteCodec.ofBytes?_zmod` (theorem, [line 103](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Bytes/CanonicalNat.lean#L103))
+`CompPoly.ByteCodec.ofBytes?_zmod` (theorem, [line 103](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/CanonicalNat.lean#L103))
 
 ```lean
 theorem ByteCodec.ofBytes?_zmod {p : ℕ} [NeZero p] (v : Vector UInt8 (bytesFor p)) :
@@ -123,7 +123,7 @@ theorem ByteCodec.ofBytes?_zmod {p : ℕ} [NeZero p] (v : Vector UInt8 (bytesFor
 > at the codec's width. Together with `ByteCodec.deserialize_serialize` (the partial decoder) and
 > the `Serialize.IsInjective` instances, this is the full round-trip story a protocol relies on.
 
-`CompPoly.CanonicalNat.deserialize_serialize` (theorem, [line 119](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Bytes/CanonicalNat.lean#L119))
+`CompPoly.CanonicalNat.deserialize_serialize` (theorem, [line 119](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/CanonicalNat.lean#L119))
 
 > The total decoder inverts the serializer at the codec's own width, whenever the codec is
 > the one derived from canonical naturals.
@@ -134,7 +134,7 @@ theorem CanonicalNat.deserialize_serialize {F : Type u} [CanonicalNat F] [inst :
     (Deserialize.deserialize (serialize x : Vector UInt8 (ByteCodec.width F)) : F) = x
 ```
 
-`CompPoly.CanonicalNat.deserialize_serialize_byteArray` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Bytes/CanonicalNat.lean#L125))
+`CompPoly.CanonicalNat.deserialize_serialize_byteArray` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/CanonicalNat.lean#L125))
 
 ```lean
 theorem CanonicalNat.deserialize_serialize_byteArray {F : Type u} [CanonicalNat F]
@@ -142,7 +142,7 @@ theorem CanonicalNat.deserialize_serialize_byteArray {F : Type u} [CanonicalNat 
     (Deserialize.deserialize (serialize x : ByteArray) : F) = x
 ```
 
-`CompPoly.deserialize_serialize_zmod` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Bytes/CanonicalNat.lean#L132))
+`CompPoly.deserialize_serialize_zmod` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/CanonicalNat.lean#L132))
 
 > `ZMod p`: the total decoder inverts the serializer.
 
@@ -159,5 +159,5 @@ theorem deserialize_serialize_zmod {p : ℕ} [NeZero p] (x : ZMod p) :
 
 ## Sources
 
-- [CompPoly/Data/Bytes/CanonicalNat.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Bytes/CanonicalNat.lean)
+- [CompPoly/Data/Bytes/CanonicalNat.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Bytes/CanonicalNat.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Data.Bytes.CanonicalNat.json)

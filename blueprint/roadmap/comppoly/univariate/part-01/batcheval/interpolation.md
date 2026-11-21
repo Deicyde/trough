@@ -7,7 +7,7 @@ proof: formalized
 
 # Subproduct-Tree Interpolation
 
-`CompPoly.Univariate.BatchEval.Interpolation`, in [CompPoly/Univariate/BatchEval/Interpolation.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/BatchEval/Interpolation.lean), by Derek Sorensen.
+`CompPoly.Univariate.BatchEval.Interpolation`, in [CompPoly/Univariate/BatchEval/Interpolation.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Interpolation.lean), by Derek Sorensen.
 
 > Fast interpolation on arbitrary distinct nodes, reusing the subproduct tree of
 > `BatchEval/SubproductTree.lean`. With `G = ∏ (X - xᵢ)` at the root, the interpolant of the
@@ -30,7 +30,7 @@ proof: formalized
 > * `interpolateSubproduct_eq_interpolateArrays`: for pairwise distinct nodes, the result is
 >   the Lagrange interpolant `CLagrange.interpolateArrays`.
 
-`CompPoly.CPolynomial.SubproductTree.leafCount` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/BatchEval/Interpolation.lean#L49))
+`CompPoly.CPolynomial.SubproductTree.leafCount` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Interpolation.lean#L49))
 
 > The number of leaves of a subproduct tree.
 
@@ -38,7 +38,7 @@ proof: formalized
 def leafCount [Zero R] : SubproductTree R → Nat
 ```
 
-`CompPoly.CPolynomial.SubproductTree.interpolateAux` (definition, [line 58](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/BatchEval/Interpolation.lean#L58))
+`CompPoly.CPolynomial.SubproductTree.interpolateAux` (definition, [line 58](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Interpolation.lean#L58))
 
 > Descend with remainders of `r` and recombine the weighted leaves bottom-up.
 >
@@ -51,7 +51,7 @@ def interpolateAux [Field R] [BEq R] [LawfulBEq R] (M : MulContext R) (D : ModCo
     SubproductTree R → CPolynomial R → List R → CPolynomial R
 ```
 
-`CompPoly.CPolynomial.interpolateSubproduct` (definition, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/BatchEval/Interpolation.lean#L72))
+`CompPoly.CPolynomial.interpolateSubproduct` (definition, [line 72](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Interpolation.lean#L72))
 
 > Interpolate the values `ys` on the nodes `xs` through a subproduct tree.
 >
@@ -64,7 +64,7 @@ def interpolateSubproduct [Field R] [BEq R] [LawfulBEq R]
 
 > ### Correctness
 
-`CompPoly.CPolynomial.interpolateSubproduct_eq_interpolateArrays` (theorem, [line 295](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/BatchEval/Interpolation.lean#L295))
+`CompPoly.CPolynomial.interpolateSubproduct_eq_interpolateArrays` (theorem, [line 295](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Interpolation.lean#L295))
 
 > On pairwise distinct nodes, subproduct-tree interpolation is Lagrange interpolation.
 
@@ -87,5 +87,5 @@ theorem interpolateSubproduct_eq_interpolateArrays [Field R] [BEq R] [LawfulBEq 
 
 ## Sources
 
-- [CompPoly/Univariate/BatchEval/Interpolation.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/BatchEval/Interpolation.lean)
+- [CompPoly/Univariate/BatchEval/Interpolation.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/BatchEval/Interpolation.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.BatchEval.Interpolation.json)

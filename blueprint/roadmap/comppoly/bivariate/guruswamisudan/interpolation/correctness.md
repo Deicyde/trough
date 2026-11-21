@@ -7,11 +7,11 @@ proof: formalized
 
 # Shared Guruswami-Sudan Interpolation Correctness
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.Correctness`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Correctness.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.Correctness`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Correctness.lean), by Valerii Huhnin.
 
 > Backend-neutral correctness facts for executable interpolation helpers.
 
-`CompPoly.GuruswamiSudan.interpolationWitnessIsValidBool_iff` (theorem, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Correctness.lean#L26))
+`CompPoly.GuruswamiSudan.interpolationWitnessIsValidBool_iff` (theorem, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Correctness.lean#L26))
 
 > The executable witness recognizer is equivalent to the semantic witness contract.
 
@@ -23,7 +23,7 @@ theorem interpolationWitnessIsValidBool_iff {F : Type*}
       ValidInterpolationWitness points params Q
 ```
 
-`CompPoly.GuruswamiSudan.lowMessageDegreeInterpolation_sound` (theorem, [line 287](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Correctness.lean#L287))
+`CompPoly.GuruswamiSudan.lowMessageDegreeInterpolation_sound` (theorem, [line 287](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Correctness.lean#L287))
 
 > Constructive low-message interpolation returns a semantic GS interpolation witness.
 
@@ -46,5 +46,5 @@ theorem lowMessageDegreeInterpolation_sound {F : Type*}
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Correctness.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Correctness.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/Correctness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/Correctness.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.Correctness.json)

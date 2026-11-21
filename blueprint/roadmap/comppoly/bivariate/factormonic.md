@@ -7,7 +7,7 @@ proof: formalized
 
 # Bridge: synthetic linear division equals general monic division
 
-`CompPoly.Bivariate.FactorMonic`, in [CompPoly/Bivariate/FactorMonic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/FactorMonic.lean), by Dimitris Mitsios.
+`CompPoly.Bivariate.FactorMonic`, in [CompPoly/Bivariate/FactorMonic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/FactorMonic.lean), by Dimitris Mitsios.
 
 > Proves that the bespoke synthetic division `divByLinearY Q f` (Horner) coincides
 > with general monic Euclidean division of `Q` by the linear factor `Y - f`, using
@@ -25,7 +25,7 @@ proof: formalized
 > (`divByLinearY_euclid_toPoly`), and concludes via
 > `Polynomial.div_modByMonic_unique`.
 
-`CompPoly.CBivariate.linearYDivisor` (definition, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/FactorMonic.lean#L41))
+`CompPoly.CBivariate.linearYDivisor` (definition, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/FactorMonic.lean#L41))
 
 > The linear monic divisor `Y - f`, as a bivariate polynomial
 > (`CBivariate R = CPolynomial (CPolynomial R)`).
@@ -35,7 +35,7 @@ def linearYDivisor [CommRing R] [BEq R] [LawfulBEq R] [Nontrivial R]
     (f : CPolynomial R) : CBivariate R
 ```
 
-`CompPoly.CBivariate.linearYDivisor_toPoly` (theorem, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/FactorMonic.lean#L47))
+`CompPoly.CBivariate.linearYDivisor_toPoly` (theorem, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/FactorMonic.lean#L47))
 
 > `toPoly` sends the linear divisor `Y - f` to `X - C f` in `(CPolynomial R)[Y]`.
 
@@ -45,7 +45,7 @@ theorem linearYDivisor_toPoly [CommRing R] [BEq R] [LawfulBEq R] [Nontrivial R] 
     CPolynomial.toPoly (linearYDivisor f) = Polynomial.X - Polynomial.C f
 ```
 
-`CompPoly.CBivariate.linearYDivisor_monic` (theorem, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/FactorMonic.lean#L53))
+`CompPoly.CBivariate.linearYDivisor_monic` (theorem, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/FactorMonic.lean#L53))
 
 > The linear divisor `Y - f` is monic.
 
@@ -55,7 +55,7 @@ theorem linearYDivisor_monic [CommRing R] [BEq R] [LawfulBEq R] [Nontrivial R] [
     CPolynomial.monic (linearYDivisor f) = true
 ```
 
-`CompPoly.CBivariate.divByLinearY_euclid_toPoly` (theorem, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/FactorMonic.lean#L65))
+`CompPoly.CBivariate.divByLinearY_euclid_toPoly` (theorem, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/FactorMonic.lean#L65))
 
 > Euclidean identity for `divByLinearY` in the outer ring `(CPolynomial R)[Y]`:
 > `C rem + (Y - f) * quot = Q` after `toPoly`. Transports `divByLinearY_spec`
@@ -70,7 +70,7 @@ theorem divByLinearY_euclid_toPoly
       = CPolynomial.toPoly Q
 ```
 
-`CompPoly.CBivariate.divByLinearY_eq_divByMonic` (theorem, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/FactorMonic.lean#L83))
+`CompPoly.CBivariate.divByLinearY_eq_divByMonic` (theorem, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/FactorMonic.lean#L83))
 
 > The bespoke synthetic division `divByLinearY` agrees with general monic
 > division by `Y - f`: the quotient matches `divByMonic`, and the constant-in-`Y`
@@ -94,5 +94,5 @@ theorem divByLinearY_eq_divByMonic [CommRing R] [BEq R] [LawfulBEq R] [Nontrivia
 
 ## Sources
 
-- [CompPoly/Bivariate/FactorMonic.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/FactorMonic.lean)
+- [CompPoly/Bivariate/FactorMonic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/FactorMonic.lean)
 - [Declaration ledger](../../../sources/comppoly/CompPoly.Bivariate.FactorMonic.json)
