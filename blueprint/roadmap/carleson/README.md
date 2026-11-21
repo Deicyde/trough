@@ -1,6 +1,10 @@
 # Carleson's theorem
 
-The project's blueprint, read at commit [d4446d3c](https://github.com/fpvandoorn/carleson/tree/d4446d3cab5d096d936a94e998d24c413b2b017d) (2026-11-13): one article for each of its 179 nodes whose Lean declarations it names and marks formalized, or in Mathlib. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
+[fpvandoorn/carleson](https://github.com/fpvandoorn/carleson) says in its README:
+
+> A formalized proof of a generalized Carleson's theorem in the [Lean interactive theorem prover](https://lean-lang.org/).
+
+Its blueprint, by Lars Becker, María Inés de Frutos-Fernández, Leo Diedering, Floris van Doorn, Sébastien Gouëzel, Asgar Jamneshan, Evgenia Karunus, Edward van de Meent, Pietro Monticone, Jasper Mulder-Sohn, Jim Portegies, Joris Roos, Michael Rothgang, Rajula Srivastava, James Sundstrom, Jeremy Tan and Christoph Thiele, read at commit [d4446d3c](https://github.com/fpvandoorn/carleson/tree/d4446d3cab5d096d936a94e998d24c413b2b017d) (2026-11-13): one article for each of its 179 nodes whose Lean declarations it names and marks formalized, or in Mathlib. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
 
 The text is the blueprint's, under its Apache-2.0 license: each page has a section's prose, remarks and examples in the blueprint's order, with each node's statement and proof where the node stands.
 

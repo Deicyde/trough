@@ -9,7 +9,7 @@ The first refresh of a library needs --repo and --entry; later ones read them
 from its source.json. With text (the default) the TeX and BibTeX files the
 blueprint reads are copied into src/, with the repository's license, which
 must be one trough recognizes and the one source.json records (--license
-accepts a new one). With --no-text, for a library whose text trough may not
+accepts a new one), and its README.md, whose opening the front page quotes. With --no-text, for a library whose text trough may not
 reproduce, only structure.json is written: titles, labels, Lean names, marks
 and places.
 
@@ -119,7 +119,7 @@ def main() -> int:
     directory.mkdir(parents=True, exist_ok=True)
     if (directory / "src").exists():
         shutil.rmtree(directory / "src")
-    for stale in ("structure.json", "LICENSE"):
+    for stale in ("structure.json", "LICENSE", "README.md"):
         (directory / stale).unlink(missing_ok=True)
     if text:
         for name in blueprint.files + blueprint.bibliography + blueprint.print_files:
@@ -128,6 +128,10 @@ def main() -> int:
             lake = name.removeprefix(f"{leanblueprint.ARCHITECT}/")
             shutil.copyfile(architect / lake if lake != name else root / name, target)
         shutil.copyfile(args.checkout / license_file, directory / "LICENSE")
+        # The README, whose opening the chapter's front page quotes.
+        readme = next((path for path in sorted(args.checkout.iterdir()) if path.name.lower() == "readme.md"), None)
+        if readme is not None:
+            shutil.copyfile(readme, directory / "README.md")
     else:
         payload = blueprints.structure(blueprint)
         (directory / "structure.json").write_text(json.dumps(payload, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")

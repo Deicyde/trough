@@ -25,10 +25,6 @@ $$
 
 Its statement uses no other node of the blueprint.
 
-## Proof
-
-Test.
-
 ## Lean
 
 Formalized as [`AlmostPeriodicity.just_the_triangle_inequality`](https://yaeldillies.github.io/apap/docs/find/#doc/AlmostPeriodicity.just_the_triangle_inequality).
