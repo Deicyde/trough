@@ -7,7 +7,7 @@ proof: formalized
 
 # Diffie-Hellman Key Exchange in Stateful Processes (testbed)
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.Basic`, in [Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean), by Fabrizio Montesi.
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.Basic`, in [Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean), by Fabrizio Montesi.
 
 > This module formalises the Diffie-Hellman key exchange protocol in `StatefulProcesses`.
 >
@@ -34,7 +34,7 @@ proof: formalized
 
 > ## Basics
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.Params` (structure, [line 50](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L50))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.Params` (structure, [line 50](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L50))
 
 > Parameters of the DH protocol.
 
@@ -70,7 +70,7 @@ structure Params (Pid Var : Type*) where
   ProcName : Type*
 ```
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.computePublicMessage` (definition, [line 83](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L83))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.computePublicMessage` (definition, [line 83](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L83))
 
 > Computes the public DH message from a private exponent.
 
@@ -78,7 +78,7 @@ structure Params (Pid Var : Type*) where
 def computePublicMessage (p : ℕ) (g : ZMod p) (privateExp : ℕ) : ZMod p
 ```
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.computeSharedSecret` (definition, [line 87](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L87))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.computeSharedSecret` (definition, [line 87](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L87))
 
 > Computes the shared secret key from a private exponent and the other party's public message.
 
@@ -86,7 +86,7 @@ def computePublicMessage (p : ℕ) (g : ZMod p) (privateExp : ℕ) : ZMod p
 def computeSharedSecret (p : ℕ) (msg : ZMod p) (privateExp : ℕ) : ZMod p
 ```
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.computePublicMessage_computeSharedSecret_eq` (theorem, [line 92](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L92))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.computePublicMessage_computeSharedSecret_eq` (theorem, [line 92](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L92))
 
 > Correctness of the DH computations: the encryption keys independently computed by the two
 > participants are the same.
@@ -99,7 +99,7 @@ theorem computePublicMessage_computeSharedSecret_eq (p : ℕ) (g : ZMod p) (a b 
 
 > ## Behaviour
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.FunId` (inductive type, [line 103](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L103))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.FunId` (inductive type, [line 103](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L103))
 
 > Function identifiers used in DH.
 
@@ -107,7 +107,7 @@ theorem computePublicMessage_computeSharedSecret_eq (p : ℕ) (g : ZMod p) (a b 
 inductive FunId | computePublicMessage | computeSharedSecret
 ```
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.Params.Val` (inductive type, [line 106](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L106))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.Params.Val` (inductive type, [line 106](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L106))
 
 > Value type for DH.
 
@@ -115,7 +115,7 @@ inductive FunId | computePublicMessage | computeSharedSecret
 inductive Params.Val | nat (n : ℕ) | zMod (z : ZMod params.p)
 ```
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.aliceComputeMesg` (abbreviation, [line 109](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L109))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.aliceComputeMesg` (abbreviation, [line 109](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L109))
 
 > Alice's expression for computing the public message.
 
@@ -123,7 +123,7 @@ inductive Params.Val | nat (n : ℕ) | zMod (z : ZMod params.p)
 abbrev aliceComputeMesg : Expr Var params.Val FunId
 ```
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.aliceComputeSharedSecret` (abbreviation, [line 114](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L114))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.aliceComputeSharedSecret` (abbreviation, [line 114](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L114))
 
 > Alice's expression for computing the shared secret.
 
@@ -131,7 +131,7 @@ abbrev aliceComputeMesg : Expr Var params.Val FunId
 abbrev aliceComputeSharedSecret : Expr Var params.Val FunId
 ```
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.bobComputeMesg` (abbreviation, [line 118](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L118))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.bobComputeMesg` (abbreviation, [line 118](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L118))
 
 > Bob's expression for computing the public message.
 
@@ -139,7 +139,7 @@ abbrev aliceComputeSharedSecret : Expr Var params.Val FunId
 abbrev bobComputeMesg : Expr Var params.Val FunId
 ```
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.bobComputeSharedSecret` (abbreviation, [line 123](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L123))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.bobComputeSharedSecret` (abbreviation, [line 123](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L123))
 
 > Bob's expression for computing the shared secret.
 
@@ -147,7 +147,7 @@ abbrev bobComputeMesg : Expr Var params.Val FunId
 abbrev bobComputeSharedSecret : Expr Var params.Val FunId
 ```
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.alice` (definition, [line 127](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L127))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.alice` (definition, [line 127](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L127))
 
 > Alice's program.
 
@@ -155,7 +155,7 @@ abbrev bobComputeSharedSecret : Expr Var params.Val FunId
 def alice : Process Pid Var params.Val FunId params.SelLabel params.ProcName
 ```
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.bob` (definition, [line 134](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L134))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.bob` (definition, [line 134](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L134))
 
 > Bob's program.
 
@@ -165,7 +165,7 @@ def bob : Process Pid Var params.Val FunId params.SelLabel params.ProcName
 
 > ## Semantics
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.funEval` (definition, [line 144](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L144))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.funEval` (definition, [line 144](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L144))
 
 > Implementation of local function call evaluation.
 > Calls with a mismatched modulus are rejected.
@@ -174,7 +174,7 @@ def bob : Process Pid Var params.Val FunId params.SelLabel params.ProcName
 def funEval : FunCallEval FunId params.Val
 ```
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.net` (definition, [line 152](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L152))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.net` (definition, [line 152](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L152))
 
 > DH network.
 
@@ -182,7 +182,7 @@ def funEval : FunCallEval FunId params.Val
 def net [DecidableEq Pid] : Network Pid Var params.Val FunId params.SelLabel params.ProcName
 ```
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.alice₁` (definition, [line 159](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L159))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.alice₁` (definition, [line 159](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L159))
 
 > Alice's program after one step.
 
@@ -190,7 +190,7 @@ def net [DecidableEq Pid] : Network Pid Var params.Val FunId params.SelLabel par
 def alice₁ : Process Pid Var params.Val FunId params.SelLabel params.ProcName
 ```
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.alice₂` (definition, [line 164](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L164))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.alice₂` (definition, [line 164](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L164))
 
 > Alice's program after two steps.
 
@@ -198,7 +198,7 @@ def alice₁ : Process Pid Var params.Val FunId params.SelLabel params.ProcName
 def alice₂ : Process Pid Var params.Val FunId params.SelLabel params.ProcName
 ```
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.bob₁` (definition, [line 169](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L169))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.bob₁` (definition, [line 169](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L169))
 
 > Bob's program after one step.
 
@@ -206,7 +206,7 @@ def alice₂ : Process Pid Var params.Val FunId params.SelLabel params.ProcName
 def bob₁ : Process Pid Var params.Val FunId params.SelLabel params.ProcName
 ```
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.bob₂` (definition, [line 174](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L174))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.bob₂` (definition, [line 174](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L174))
 
 > Bob's program after two steps.
 
@@ -214,7 +214,7 @@ def bob₁ : Process Pid Var params.Val FunId params.SelLabel params.ProcName
 def bob₂ : Process Pid Var params.Val FunId params.SelLabel params.ProcName
 ```
 
-`Cslib.Algorithms.StatefulProcesses.DiffieHellman.Params.cfgLts` (abbreviation, [line 194](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L194))
+`Cslib.Algorithms.StatefulProcesses.DiffieHellman.Params.cfgLts` (abbreviation, [line 194](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean#L194))
 
 > The LTS of network configurations.
 
@@ -228,5 +228,5 @@ abbrev Params.cfgLts {SelLabel ProcName : Type*}
 
 ## Sources
 
-- [Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean)
+- [Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/StatefulProcesses/DiffieHellman/Basic.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Algorithms.StatefulProcesses.DiffieHellman.Basic.json)

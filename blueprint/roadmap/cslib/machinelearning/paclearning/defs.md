@@ -7,7 +7,7 @@ proof: formalized
 
 # PAC Learning
 
-`Cslib.MachineLearning.PACLearning.Defs`, in [Cslib/MachineLearning/PACLearning/Defs.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean), by Samuel Schlesinger.
+`Cslib.MachineLearning.PACLearning.Defs`, in [Cslib/MachineLearning/PACLearning/Defs.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean), by Samuel Schlesinger.
 
 > This file defines the Probably Approximately Correct (PAC) learning model
 > introduced by Valiant [Valiant1984], generalized to an arbitrary label type `β`
@@ -103,7 +103,7 @@ proof: formalized
 
 > ### Core Definitions
 
-`Cslib.MachineLearning.PACLearning.ConceptClass` (abbreviation, [line 121](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L121))
+`Cslib.MachineLearning.PACLearning.ConceptClass` (abbreviation, [line 121](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L121))
 
 > A *concept class* over domain `α` with label type `β` is a set of functions `α → β`.
 > For binary classification (`β = Bool`), this is equivalent to a collection of subsets of `α`
@@ -113,7 +113,7 @@ proof: formalized
 abbrev ConceptClass (α β : Type*)
 ```
 
-`Cslib.MachineLearning.PACLearning.LabeledSample` (abbreviation, [line 125](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L125))
+`Cslib.MachineLearning.PACLearning.LabeledSample` (abbreviation, [line 125](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L125))
 
 > A *labeled sample* of size `m` over domain `α` with label type `β` is a finite sequence
 > of `(point, label)` pairs.
@@ -122,7 +122,7 @@ abbrev ConceptClass (α β : Type*)
 abbrev LabeledSample (α β : Type*) (m : ℕ)
 ```
 
-`Cslib.MachineLearning.PACLearning.Learner` (abbreviation, [line 129](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L129))
+`Cslib.MachineLearning.PACLearning.Learner` (abbreviation, [line 129](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L129))
 
 > A *learner* using `m` samples is a function that takes a labeled sample and produces
 > a hypothesis (a function from the domain to the label type).
@@ -131,7 +131,7 @@ abbrev LabeledSample (α β : Type*) (m : ℕ)
 abbrev Learner (α β : Type*) (m : ℕ)
 ```
 
-`Cslib.MachineLearning.PACLearning.error` (definition, [line 137](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L137))
+`Cslib.MachineLearning.PACLearning.error` (definition, [line 137](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L137))
 
 > The *prediction error* (0-1 loss) of a hypothesis `h` under a joint distribution `D`
 > on `α × β`, defined as the probability that the prediction disagrees with the label:
@@ -141,7 +141,7 @@ abbrev Learner (α β : Type*) (m : ℕ)
 noncomputable def error (D : Measure (α × β)) (h : α → β) : ℝ≥0∞
 ```
 
-`Cslib.MachineLearning.PACLearning.optimalError` (definition, [line 143](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L143))
+`Cslib.MachineLearning.PACLearning.optimalError` (definition, [line 143](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L143))
 
 > The *optimal error* of a concept class `C` under a joint distribution `D`, defined as the
 > infimum of `error D c` over all concepts `c ∈ C`. When `C` is empty this is `⊤`, making the
@@ -153,7 +153,7 @@ noncomputable def optimalError (D : Measure (α × β)) (C : ConceptClass α β)
 
 > ### PAC Learners
 
-`Cslib.MachineLearning.PACLearning.IsPACLearnerFor` (definition, [line 158](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L158))
+`Cslib.MachineLearning.PACLearning.IsPACLearnerFor` (definition, [line 158](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L158))
 
 > `IsPACLearnerFor m ε δ C 𝒟` asserts that there exists a learner using `m` samples
 > that is `(ε, δ)`-correct for the concept class `C` over the distribution family `𝒟`: for every
@@ -171,7 +171,7 @@ def IsPACLearnerFor (m : ℕ) (ε δ : Set.Ioo (0 : ℝ≥0) 1)
     (C : ConceptClass α β) (𝒟 : Set (Measure (α × β))) : Prop
 ```
 
-`Cslib.MachineLearning.PACLearning.IsRPACLearnerFor` (definition, [line 181](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L181))
+`Cslib.MachineLearning.PACLearning.IsRPACLearnerFor` (definition, [line 181](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L181))
 
 > `IsRPACLearnerFor m ε δ C 𝒟` asserts that there exists a *randomized* learner using
 > `m` samples that is `(ε, δ)`-correct for the concept class `C` over the distribution family
@@ -194,7 +194,7 @@ def IsRPACLearnerFor (m : ℕ) (ε δ : Set.Ioo (0 : ℝ≥0) 1)
     (C : ConceptClass α β) (𝒟 : Set (Measure (α × β))) : Prop
 ```
 
-`Cslib.MachineLearning.PACLearning.IsPACLearnerFor.toIsRPACLearnerFor` (theorem, [line 195](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L195))
+`Cslib.MachineLearning.PACLearning.IsPACLearnerFor.toIsRPACLearnerFor` (theorem, [line 195](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L195))
 
 > Every deterministic PAC learner is in particular a randomized PAC learner
 > (with the trivial one-point randomness space `PUnit`).
@@ -206,7 +206,7 @@ theorem IsPACLearnerFor.toIsRPACLearnerFor {m : ℕ} {ε δ : Set.Ioo (0 : ℝ�
     IsRPACLearnerFor m ε δ C 𝒟
 ```
 
-`Cslib.MachineLearning.PACLearning.IsPACLearnerFor.antitone_family` (theorem, [line 208](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L208))
+`Cslib.MachineLearning.PACLearning.IsPACLearnerFor.antitone_family` (theorem, [line 208](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L208))
 
 > The deterministic PAC learner predicate is antitone in the distribution family: a
 > learner for a larger family `𝒟'` is also a learner for any subfamily `𝒟 ⊆ 𝒟'`.
@@ -218,7 +218,7 @@ theorem IsPACLearnerFor.antitone_family {m : ℕ} {ε δ : Set.Ioo (0 : ℝ≥0)
     IsPACLearnerFor m ε δ C 𝒟
 ```
 
-`Cslib.MachineLearning.PACLearning.IsPACLearnerFor.mono_δ` (theorem, [line 217](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L217))
+`Cslib.MachineLearning.PACLearning.IsPACLearnerFor.mono_δ` (theorem, [line 217](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L217))
 
 > A PAC learner with confidence `δ₁` is also a PAC learner with any weaker confidence
 > `δ₂ ≥ δ₁`: the failure-probability bound only gets looser.
@@ -231,7 +231,7 @@ theorem IsPACLearnerFor.mono_δ {m : ℕ} {ε : Set.Ioo (0 : ℝ≥0) 1}
     IsPACLearnerFor m ε δ₂ C 𝒟
 ```
 
-`Cslib.MachineLearning.PACLearning.IsPACLearnerFor.mono_ε` (theorem, [line 228](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L228))
+`Cslib.MachineLearning.PACLearning.IsPACLearnerFor.mono_ε` (theorem, [line 228](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L228))
 
 > A PAC learner with accuracy `ε₁` is also a PAC learner with any weaker accuracy
 > `ε₂ ≥ ε₁`: the bad event `{error > opt + ε}` only shrinks.
@@ -244,7 +244,7 @@ theorem IsPACLearnerFor.mono_ε {m : ℕ} {δ : Set.Ioo (0 : ℝ≥0) 1}
     IsPACLearnerFor m ε₂ δ C 𝒟
 ```
 
-`Cslib.MachineLearning.PACLearning.IsPACLearnerFor.antitone_C` (theorem, [line 244](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L244))
+`Cslib.MachineLearning.PACLearning.IsPACLearnerFor.antitone_C` (theorem, [line 244](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L244))
 
 > The deterministic PAC learner predicate is antitone in the concept class: a learner
 > for a larger class `C'` is also a learner for any subclass `C ⊆ C'`, since the agnostic
@@ -257,7 +257,7 @@ theorem IsPACLearnerFor.antitone_C {m : ℕ} {ε δ : Set.Ioo (0 : ℝ≥0) 1}
     IsPACLearnerFor m ε δ C 𝒟
 ```
 
-`Cslib.MachineLearning.PACLearning.IsRPACLearnerFor.antitone_family` (theorem, [line 258](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L258))
+`Cslib.MachineLearning.PACLearning.IsRPACLearnerFor.antitone_family` (theorem, [line 258](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L258))
 
 > The randomized PAC learner predicate is antitone in the distribution family. The
 > universe of the randomness space `Ω` is pinned so the hypothesis and conclusion share it.
@@ -269,7 +269,7 @@ theorem IsRPACLearnerFor.antitone_family.{u} {m : ℕ} {ε δ : Set.Ioo (0 : ℝ
     IsRPACLearnerFor.{_, _, u} m ε δ C 𝒟
 ```
 
-`Cslib.MachineLearning.PACLearning.IsRPACLearnerFor.mono_δ` (theorem, [line 268](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L268))
+`Cslib.MachineLearning.PACLearning.IsRPACLearnerFor.mono_δ` (theorem, [line 268](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L268))
 
 > A randomized PAC learner with confidence `δ₁` is also a randomized PAC learner with
 > any weaker confidence `δ₂ ≥ δ₁`. Unlike `mono_ε` or `antitone_C`, this does not touch the
@@ -285,7 +285,7 @@ theorem IsRPACLearnerFor.mono_δ.{u} {m : ℕ} {ε : Set.Ioo (0 : ℝ≥0) 1}
 
 > ### PAC Learnability
 
-`Cslib.MachineLearning.PACLearning.IsPACLearnable` (definition, [line 285](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L285))
+`Cslib.MachineLearning.PACLearning.IsPACLearnable` (definition, [line 285](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L285))
 
 > A concept class `C` is *PAC learnable* over the distribution family `𝒟` if for every
 > accuracy `ε ∈ (0, 1)` and confidence `δ ∈ (0, 1)`, there exists a sample size `m` admitting
@@ -296,7 +296,7 @@ theorem IsRPACLearnerFor.mono_δ.{u} {m : ℕ} {ε : Set.Ioo (0 : ℝ≥0) 1}
 def IsPACLearnable (C : ConceptClass α β) (𝒟 : Set (Measure (α × β))) : Prop
 ```
 
-`Cslib.MachineLearning.PACLearning.IsRPACLearnable` (definition, [line 293](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L293))
+`Cslib.MachineLearning.PACLearning.IsRPACLearnable` (definition, [line 293](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L293))
 
 > A concept class `C` is *randomized PAC learnable* over the distribution family `𝒟` if for
 > every accuracy `ε ∈ (0, 1)` and confidence `δ ∈ (0, 1)`, there exists a sample size `m`
@@ -307,7 +307,7 @@ def IsPACLearnable (C : ConceptClass α β) (𝒟 : Set (Measure (α × β))) : 
 def IsRPACLearnable (C : ConceptClass α β) (𝒟 : Set (Measure (α × β))) : Prop
 ```
 
-`Cslib.MachineLearning.PACLearning.IsPACLearnable.toIsRPACLearnable` (theorem, [line 298](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L298))
+`Cslib.MachineLearning.PACLearning.IsPACLearnable.toIsRPACLearnable` (theorem, [line 298](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L298))
 
 > Deterministic PAC learnability implies randomized PAC learnability.
 
@@ -317,7 +317,7 @@ theorem IsPACLearnable.toIsRPACLearnable {C : ConceptClass α β}
     IsRPACLearnable C 𝒟
 ```
 
-`Cslib.MachineLearning.PACLearning.IsPACLearnable.antitone_family` (theorem, [line 307](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L307))
+`Cslib.MachineLearning.PACLearning.IsPACLearnable.antitone_family` (theorem, [line 307](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L307))
 
 > PAC learnability is antitone in the distribution family: a subfamily of a learnable
 > family is learnable.
@@ -327,7 +327,7 @@ theorem IsPACLearnable.antitone_family {C : ConceptClass α β} {𝒟 𝒟' : Se
     (h𝒟 : 𝒟 ⊆ 𝒟') (h : IsPACLearnable C 𝒟') : IsPACLearnable C 𝒟
 ```
 
-`Cslib.MachineLearning.PACLearning.IsPACLearnable.antitone_C` (theorem, [line 313](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L313))
+`Cslib.MachineLearning.PACLearning.IsPACLearnable.antitone_C` (theorem, [line 313](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L313))
 
 > PAC learnability is antitone in the concept class: a subclass of a learnable class is
 > learnable.
@@ -337,7 +337,7 @@ theorem IsPACLearnable.antitone_C {C C' : ConceptClass α β} (hC : C ⊆ C')
     {𝒟 : Set (Measure (α × β))} (h : IsPACLearnable C' 𝒟) : IsPACLearnable C 𝒟
 ```
 
-`Cslib.MachineLearning.PACLearning.IsRPACLearnable.antitone_family` (theorem, [line 318](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L318))
+`Cslib.MachineLearning.PACLearning.IsRPACLearnable.antitone_family` (theorem, [line 318](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L318))
 
 > Randomized PAC learnability is antitone in the distribution family.
 
@@ -349,7 +349,7 @@ theorem IsRPACLearnable.antitone_family {C : ConceptClass α β}
 
 > ### Sample Complexity
 
-`Cslib.MachineLearning.PACLearning.LearnerModel` (abbreviation, [line 329](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L329))
+`Cslib.MachineLearning.PACLearning.LearnerModel` (abbreviation, [line 329](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L329))
 
 > A *learner model* is a predicate on (sample size, accuracy, confidence, concept class,
 > distribution family) that classifies which sample sizes admit a learner of the given kind.
@@ -360,7 +360,7 @@ theorem IsRPACLearnable.antitone_family {C : ConceptClass α β}
 abbrev LearnerModel (α β : Type*) [MeasurableSpace α] [MeasurableSpace β]
 ```
 
-`Cslib.MachineLearning.PACLearning.sampleComplexity` (definition, [line 342](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L342))
+`Cslib.MachineLearning.PACLearning.sampleComplexity` (definition, [line 342](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L342))
 
 > The *sample complexity* of a concept class `C` under a learner model `L`, at accuracy
 > `ε ∈ (0, 1)` and confidence `δ ∈ (0, 1)` over distribution family `𝒟`, is the smallest sample
@@ -377,7 +377,7 @@ noncomputable def sampleComplexity (L : LearnerModel α β) (C : ConceptClass α
     (ε δ : Set.Ioo (0 : ℝ≥0) 1) (𝒟 : Set (Measure (α × β))) : ℕ
 ```
 
-`Cslib.MachineLearning.PACLearning.rsampleComplexity` (definition, [line 348](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L348))
+`Cslib.MachineLearning.PACLearning.rsampleComplexity` (definition, [line 348](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L348))
 
 > The *randomized sample complexity* of `C`, i.e. `sampleComplexity` instantiated at the
 > randomized learner model `IsRPACLearnerFor`. The randomness space is pinned to `Type 0`.
@@ -396,7 +396,7 @@ noncomputable def rsampleComplexity (C : ConceptClass α β) (ε δ : Set.Ioo (0
 > it the inequality can fail at the degenerate boundary. The `IsPACLearnable`-flavoured variants
 > at the end of this section discharge that witness from a learnability hypothesis.
 
-`Cslib.MachineLearning.PACLearning.sampleComplexity_le_of_forall` (theorem, [line 364](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L364))
+`Cslib.MachineLearning.PACLearning.sampleComplexity_le_of_forall` (theorem, [line 364](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L364))
 
 > General pointwise monotonicity of `sampleComplexity`: if every witness sample size for
 > `(L₁, ε₁, δ₁, C₁, 𝒟₁)` is also a witness for `(L₂, ε₂, δ₂, C₂, 𝒟₂)`, then the latter's
@@ -411,7 +411,7 @@ theorem sampleComplexity_le_of_forall {L₁ L₂ : LearnerModel α β}
     sampleComplexity L₂ C₂ ε₂ δ₂ 𝒟₂ ≤ sampleComplexity L₁ C₁ ε₁ δ₁ 𝒟₁
 ```
 
-`Cslib.MachineLearning.PACLearning.sampleComplexity_antitone_δ` (theorem, [line 374](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L374))
+`Cslib.MachineLearning.PACLearning.sampleComplexity_antitone_δ` (theorem, [line 374](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L374))
 
 > Deterministic sample complexity is antitone in the confidence parameter `δ`: weaker
 > confidence requires no more samples.
@@ -423,7 +423,7 @@ theorem sampleComplexity_antitone_δ {ε δ₁ δ₂ : Set.Ioo (0 : ℝ≥0) 1} 
     sampleComplexity IsPACLearnerFor C ε δ₂ 𝒟 ≤ sampleComplexity IsPACLearnerFor C ε δ₁ 𝒟
 ```
 
-`Cslib.MachineLearning.PACLearning.sampleComplexity_antitone_ε` (theorem, [line 382](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L382))
+`Cslib.MachineLearning.PACLearning.sampleComplexity_antitone_ε` (theorem, [line 382](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L382))
 
 > Deterministic sample complexity is antitone in the accuracy parameter `ε`: weaker
 > accuracy requires no more samples.
@@ -435,7 +435,7 @@ theorem sampleComplexity_antitone_ε {ε₁ ε₂ δ : Set.Ioo (0 : ℝ≥0) 1} 
     sampleComplexity IsPACLearnerFor C ε₂ δ 𝒟 ≤ sampleComplexity IsPACLearnerFor C ε₁ δ 𝒟
 ```
 
-`Cslib.MachineLearning.PACLearning.sampleComplexity_mono_family` (theorem, [line 390](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L390))
+`Cslib.MachineLearning.PACLearning.sampleComplexity_mono_family` (theorem, [line 390](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L390))
 
 > Deterministic sample complexity is monotone in the distribution family under `⊆`: a
 > smaller family (fewer distributions to cover) requires no more samples.
@@ -447,7 +447,7 @@ theorem sampleComplexity_mono_family {ε δ : Set.Ioo (0 : ℝ≥0) 1}
     sampleComplexity IsPACLearnerFor C ε δ 𝒟 ≤ sampleComplexity IsPACLearnerFor C ε δ 𝒟'
 ```
 
-`Cslib.MachineLearning.PACLearning.sampleComplexity_mono_C` (theorem, [line 398](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L398))
+`Cslib.MachineLearning.PACLearning.sampleComplexity_mono_C` (theorem, [line 398](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L398))
 
 > Deterministic sample complexity is monotone in the concept class under `⊆`: a smaller
 > class (weaker agnostic benchmark) requires no more samples.
@@ -459,7 +459,7 @@ theorem sampleComplexity_mono_C {ε δ : Set.Ioo (0 : ℝ≥0) 1}
     sampleComplexity IsPACLearnerFor C ε δ 𝒟 ≤ sampleComplexity IsPACLearnerFor C' ε δ 𝒟
 ```
 
-`Cslib.MachineLearning.PACLearning.rsampleComplexity_antitone_δ` (theorem, [line 405](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L405))
+`Cslib.MachineLearning.PACLearning.rsampleComplexity_antitone_δ` (theorem, [line 405](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L405))
 
 > Randomized sample complexity is antitone in the confidence parameter `δ`.
 
@@ -470,7 +470,7 @@ theorem rsampleComplexity_antitone_δ {ε δ₁ δ₂ : Set.Ioo (0 : ℝ≥0) 1}
     rsampleComplexity C ε δ₂ 𝒟 ≤ rsampleComplexity C ε δ₁ 𝒟
 ```
 
-`Cslib.MachineLearning.PACLearning.rsampleComplexity_mono_family` (theorem, [line 412](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L412))
+`Cslib.MachineLearning.PACLearning.rsampleComplexity_mono_family` (theorem, [line 412](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L412))
 
 > Randomized sample complexity is monotone in the distribution family under `⊆`.
 
@@ -487,7 +487,7 @@ theorem rsampleComplexity_mono_family {ε δ : Set.Ioo (0 : ℝ≥0) 1}
 > `sampleComplexity_*` lemmas, whose unqualified names would resolve as self-recursion inside
 > these theorems' `IsPACLearnable.*` / `IsRPACLearnable.*` namespaces.
 
-`Cslib.MachineLearning.PACLearning.IsPACLearnable.sampleComplexity_antitone_δ` (theorem, [line 426](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L426))
+`Cslib.MachineLearning.PACLearning.IsPACLearnable.sampleComplexity_antitone_δ` (theorem, [line 426](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L426))
 
 > `sampleComplexity_antitone_δ` for a learnable class: the nonemptiness hypothesis comes
 > for free from `IsPACLearnable`.
@@ -499,7 +499,7 @@ theorem IsPACLearnable.sampleComplexity_antitone_δ
     sampleComplexity IsPACLearnerFor C ε δ₂ 𝒟 ≤ sampleComplexity IsPACLearnerFor C ε δ₁ 𝒟
 ```
 
-`Cslib.MachineLearning.PACLearning.IsPACLearnable.sampleComplexity_antitone_ε` (theorem, [line 433](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L433))
+`Cslib.MachineLearning.PACLearning.IsPACLearnable.sampleComplexity_antitone_ε` (theorem, [line 433](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L433))
 
 > `sampleComplexity_antitone_ε` for a learnable class.
 
@@ -510,7 +510,7 @@ theorem IsPACLearnable.sampleComplexity_antitone_ε
     sampleComplexity IsPACLearnerFor C ε₂ δ 𝒟 ≤ sampleComplexity IsPACLearnerFor C ε₁ δ 𝒟
 ```
 
-`Cslib.MachineLearning.PACLearning.IsPACLearnable.sampleComplexity_mono_family` (theorem, [line 441](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L441))
+`Cslib.MachineLearning.PACLearning.IsPACLearnable.sampleComplexity_mono_family` (theorem, [line 441](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L441))
 
 > `sampleComplexity_mono_family` for a learnable class (learnability at the *larger*
 > family `𝒟'` is the hypothesis).
@@ -522,7 +522,7 @@ theorem IsPACLearnable.sampleComplexity_mono_family
     sampleComplexity IsPACLearnerFor C ε δ 𝒟 ≤ sampleComplexity IsPACLearnerFor C ε δ 𝒟'
 ```
 
-`Cslib.MachineLearning.PACLearning.IsPACLearnable.sampleComplexity_mono_C` (theorem, [line 449](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L449))
+`Cslib.MachineLearning.PACLearning.IsPACLearnable.sampleComplexity_mono_C` (theorem, [line 449](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L449))
 
 > `sampleComplexity_mono_C` for a learnable class (learnability at the *larger* class
 > `C'` is the hypothesis).
@@ -534,7 +534,7 @@ theorem IsPACLearnable.sampleComplexity_mono_C
     sampleComplexity IsPACLearnerFor C ε δ 𝒟 ≤ sampleComplexity IsPACLearnerFor C' ε δ 𝒟
 ```
 
-`Cslib.MachineLearning.PACLearning.IsRPACLearnable.rsampleComplexity_antitone_δ` (theorem, [line 456](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L456))
+`Cslib.MachineLearning.PACLearning.IsRPACLearnable.rsampleComplexity_antitone_δ` (theorem, [line 456](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L456))
 
 > `rsampleComplexity_antitone_δ` for a randomized-learnable class.
 
@@ -545,7 +545,7 @@ theorem IsRPACLearnable.rsampleComplexity_antitone_δ
     rsampleComplexity C ε δ₂ 𝒟 ≤ rsampleComplexity C ε δ₁ 𝒟
 ```
 
-`Cslib.MachineLearning.PACLearning.IsRPACLearnable.rsampleComplexity_mono_family` (theorem, [line 463](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L463))
+`Cslib.MachineLearning.PACLearning.IsRPACLearnable.rsampleComplexity_mono_family` (theorem, [line 463](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L463))
 
 > `rsampleComplexity_mono_family` for a randomized-learnable class.
 
@@ -565,7 +565,7 @@ theorem IsRPACLearnable.rsampleComplexity_mono_family
 > The bridge lemma `error_map_eq_hypothesisError` connects the general `error` on `α × Bool`
 > to the binary `hypothesisError` on `α`, showing they coincide for realizable distributions.
 
-`Cslib.MachineLearning.PACLearning.hypothesisError` (definition, [line 485](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L485))
+`Cslib.MachineLearning.PACLearning.hypothesisError` (definition, [line 485](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L485))
 
 > The *symmetric-difference error* of a hypothesis `h` with respect to a target concept `c`
 > (both viewed as subsets of `α`) under distribution `P`, defined as `P(h ∆ c)`.
@@ -574,7 +574,7 @@ theorem IsRPACLearnable.rsampleComplexity_mono_family
 noncomputable def hypothesisError (P : Measure α) (h c : Set α) : ℝ≥0∞
 ```
 
-`Cslib.MachineLearning.PACLearning.falsePositiveError` (definition, [line 490](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L490))
+`Cslib.MachineLearning.PACLearning.falsePositiveError` (definition, [line 490](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L490))
 
 > The *false positive error* `P(h \ c)` — points classified positive but not in the
 > concept.
@@ -583,7 +583,7 @@ noncomputable def hypothesisError (P : Measure α) (h c : Set α) : ℝ≥0∞
 noncomputable def falsePositiveError (P : Measure α) (h c : Set α) : ℝ≥0∞
 ```
 
-`Cslib.MachineLearning.PACLearning.falseNegativeError` (definition, [line 494](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L494))
+`Cslib.MachineLearning.PACLearning.falseNegativeError` (definition, [line 494](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L494))
 
 > The *false negative error* `P(c \ h)` — points in the concept but classified negative.
 
@@ -591,7 +591,7 @@ noncomputable def falsePositiveError (P : Measure α) (h c : Set α) : ℝ≥0�
 noncomputable def falseNegativeError (P : Measure α) (h c : Set α) : ℝ≥0∞
 ```
 
-`Cslib.MachineLearning.PACLearning.hypothesisError_eq_add` (theorem, [line 499](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L499))
+`Cslib.MachineLearning.PACLearning.hypothesisError_eq_add` (theorem, [line 499](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L499))
 
 > The total hypothesis error decomposes as the sum of false positive and false negative
 > errors, since `h ∆ c = (h \ c) ∪ (c \ h)` is a disjoint union.
@@ -602,7 +602,7 @@ theorem hypothesisError_eq_add {P : Measure α} {h c : Set α}
     hypothesisError P h c = falsePositiveError P h c + falseNegativeError P h c
 ```
 
-`Cslib.MachineLearning.PACLearning.error_map_eq_hypothesisError` (theorem, [line 508](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean#L508))
+`Cslib.MachineLearning.PACLearning.error_map_eq_hypothesisError` (theorem, [line 508](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean#L508))
 
 > Under a realizable distribution `P.map (x ↦ (x, c(x)))`, the general 0-1 `error`
 > coincides with the binary `hypothesisError P h c`, where `h` and `c` are viewed as subsets
@@ -621,5 +621,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/MachineLearning/PACLearning/Defs.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/Defs.lean)
+- [Cslib/MachineLearning/PACLearning/Defs.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/Defs.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.MachineLearning.PACLearning.Defs.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Stateful Processes
 
-`Cslib.Languages.StatefulProcesses.Basic`, in [Cslib/Languages/StatefulProcesses/Basic.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Basic.lean), by Fabrizio Montesi.
+`Cslib.Languages.StatefulProcesses.Basic`, in [Cslib/Languages/StatefulProcesses/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean), by Fabrizio Montesi.
 
 > The language of Stateful Processes (SP for short), a process calculus
 > where processes communicate via message passing [Montesi2023]. Stateful processes or similar
@@ -30,12 +30,13 @@ proof: formalized
 >
 > ## References
 >
-> * [M. Acclavio, G. Manara, F. Montesi, X. Qin, *Choreographic Programming: a Semantic Approach*][Acclavio2026]
+> * [M. Acclavio, G. Manara, F. Montesi, X. Qin,
+>   *Choreographic Programming: a Semantic Approach*][Acclavio2026]
 > * [F. Montesi, *Introduction to Choreographies*][Montesi2023]
 
 > ## Syntax of process terms
 
-`Cslib.StatefulProcesses.Prefix` (inductive type, [line 54](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Basic.lean#L54))
+`Cslib.StatefulProcesses.Prefix` (inductive type, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean#L53))
 
 > Prefixes.
 
@@ -51,7 +52,7 @@ inductive Prefix (Pid Var Val FunId SelLabel : Type*) where
   | sendLabel (p : Pid) (l : SelLabel)
 ```
 
-`Cslib.StatefulProcesses.Process` (inductive type, [line 65](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Basic.lean#L65))
+`Cslib.StatefulProcesses.Process` (inductive type, [line 64](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean#L64))
 
 > Processes.
 
@@ -71,7 +72,7 @@ inductive Process (Pid Var Val FunId SelLabel ProcName : Type*) where
 
 > ## Semantics
 
-`Cslib.StatefulProcesses.Act` (inductive type, [line 138](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Basic.lean#L138))
+`Cslib.StatefulProcesses.Act` (inductive type, [line 137](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean#L137))
 
 > Actions.
 
@@ -93,7 +94,7 @@ inductive Act (Pid Var Val FunId SelLabel : Type*) where
   | condElse (e : Expr Var Val FunId)
 ```
 
-`Cslib.StatefulProcesses.Act.isInternal` (definition, [line 155](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Basic.lean#L155))
+`Cslib.StatefulProcesses.Act.isInternal` (definition, [line 154](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean#L154))
 
 > An action is internal if it is not meant to interact with another process.
 
@@ -101,7 +102,7 @@ inductive Act (Pid Var Val FunId SelLabel : Type*) where
 def Act.isInternal : Act Pid Var Val FunId SelLabel → Bool
 ```
 
-`Cslib.StatefulProcesses.Prefix.toAct` (abbreviation, [line 160](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Basic.lean#L160))
+`Cslib.StatefulProcesses.Prefix.toAct` (abbreviation, [line 159](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean#L159))
 
 > Transforms a `Prefix` into an `Act`.
 
@@ -109,7 +110,7 @@ def Act.isInternal : Act Pid Var Val FunId SelLabel → Bool
 abbrev Prefix.toAct : Prefix Pid Var Val FunId SelLabel → Act Pid Var Val FunId SelLabel
 ```
 
-`Cslib.StatefulProcesses.Process.Tr` (inductive type, [line 168](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Basic.lean#L168))
+`Cslib.StatefulProcesses.Process.Tr` (inductive type, [line 167](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean#L167))
 
 > Symbolic transition relation for processes.
 > Do not use this directly, use `Process.lts` instead.
@@ -124,7 +125,7 @@ inductive Process.Tr :
   | recvLabel (h : (l, pr) ∈ branches): Tr (recvLabel p branches) (.recvLabel p l) pr
 ```
 
-`Cslib.StatefulProcesses.Process.lts` (definition, [line 177](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Basic.lean#L177))
+`Cslib.StatefulProcesses.Process.lts` (definition, [line 176](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean#L176))
 
 > Symbolic LTS of processes.
 
@@ -140,5 +141,5 @@ def Process.lts :
 
 ## Sources
 
-- [Cslib/Languages/StatefulProcesses/Basic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Basic.lean)
+- [Cslib/Languages/StatefulProcesses/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Languages.StatefulProcesses.Basic.json)

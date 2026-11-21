@@ -7,12 +7,12 @@ proof: formalized
 
 # Denotational semantics for Modal Logic
 
-`Cslib.Logics.Modal.Denotation`, in [Cslib/Logics/Modal/Denotation.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/Modal/Denotation.lean), by Fabrizio Montesi.
+`Cslib.Logics.Modal.Denotation`, in [Cslib/Logics/Modal/Denotation.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Denotation.lean), by Fabrizio Montesi.
 
 > A denotational semantics for modal logic, inspired by the one for Hennessy-Milner Logic
 > (`Cslib.Logic.HML`).
 
-`Cslib.Logic.Modal.Proposition.denotation` (definition, [line 25](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/Modal/Denotation.lean#L25))
+`Cslib.Logic.Modal.Proposition.denotation` (definition, [line 25](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Denotation.lean#L25))
 
 > Denotation of a proposition.
 
@@ -21,7 +21,7 @@ def Proposition.denotation (m : Model World τ Atom) :
     Proposition τ Atom → Set World
 ```
 
-`Cslib.Logic.Modal.satisfies_mem_denotation` (theorem, [line 35](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/Modal/Denotation.lean#L35))
+`Cslib.Logic.Modal.satisfies_mem_denotation` (theorem, [line 35](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Denotation.lean#L35))
 
 > Characterisation theorem for the denotational semantics.
 
@@ -30,7 +30,7 @@ theorem satisfies_mem_denotation {m : Model World τ Atom} {φ : Proposition τ 
     w ∈ φ.denotation m ↔ ⇓Modal[m,w ⊨ φ]
 ```
 
-`Cslib.Logic.Modal.not_denotation` (theorem, [line 42](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/Modal/Denotation.lean#L42))
+`Cslib.Logic.Modal.not_denotation` (theorem, [line 42](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Denotation.lean#L42))
 
 > A world is in the denotation of a proposition iff it is not in the denotation of the negation
 > of the proposition.
@@ -40,7 +40,7 @@ theorem not_denotation {m : Model World τ Atom} (φ : Proposition τ Atom) :
     w ∉ (¬φ).denotation m ↔ w ∈ φ.denotation m
 ```
 
-`Cslib.Logic.Modal.theoryEq_denotation_eq` (theorem, [line 47](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/Modal/Denotation.lean#L47))
+`Cslib.Logic.Modal.theoryEq_denotation_eq` (theorem, [line 47](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Denotation.lean#L47))
 
 > Two worlds are theory-equivalent iff they are denotationally equivalent.
 
@@ -50,7 +50,7 @@ theorem theoryEq_denotation_eq {m : Model World τ Atom} {w₁ w₂ : World} :
     (∀ (φ : Proposition τ Atom), w₁ ∈ (φ.denotation m) ↔ w₂ ∈ (φ.denotation m))
 ```
 
-`Cslib.Logic.Modal.Proposition.equiv_iff_denotation_eq` (theorem, [line 54](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/Modal/Denotation.lean#L54))
+`Cslib.Logic.Modal.Proposition.equiv_iff_denotation_eq` (theorem, [line 54](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Denotation.lean#L54))
 
 > Logically equivalent propositions under a model have the same denotation.
 
@@ -59,7 +59,7 @@ theorem Proposition.equiv_iff_denotation_eq :
     (φ₁ ≡[Equiv m] φ₂) ↔ φ₁.denotation m = φ₂.denotation m
 ```
 
-`Cslib.Logic.Modal.Proposition.denotation_eq_of_equiv` (theorem, [line 66](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/Modal/Denotation.lean#L66))
+`Cslib.Logic.Modal.Proposition.denotation_eq_of_equiv` (theorem, [line 66](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Denotation.lean#L66))
 
 > `grind`-friendly first part of `Proposition.equiv_iff_denotation_eq`.
 
@@ -74,5 +74,5 @@ theorem Proposition.denotation_eq_of_equiv (h : φ₁ ≡[Equiv m] φ₂) :
 
 ## Sources
 
-- [Cslib/Logics/Modal/Denotation.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/Modal/Denotation.lean)
+- [Cslib/Logics/Modal/Denotation.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Denotation.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Logics.Modal.Denotation.json)

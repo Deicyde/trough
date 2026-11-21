@@ -7,7 +7,7 @@ proof: formalized
 
 # Reading the input from a work tape
 
-`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.InputFromTape`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean), by Christian Reitwiessner, Samuel Schlesinger.
+`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.InputFromTape`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean), by Christian Reitwiessner, Samuel Schlesinger.
 
 > `inputFromTape tm` behaves like `tm`, except that it reads its input from a work tape — the
 > *virtual input tape* — instead of the real one, which it never touches. The virtual input head
@@ -26,7 +26,7 @@ proof: formalized
 > marker on the flag tape, and leaves the real input tape unused. It is a homomorphism of step
 > relations (`inCfgHom`), so each run path of `tm` maps to a run path of the redirected machine.
 
-`Turing.MultiTapeTM.clampMove` (definition, [line 40](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L40))
+`Turing.MultiTapeTM.clampMove` (definition, [line 40](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L40))
 
 > The clamped move of the virtual input head: at the left boundary (blank under the virtual
 > head, flag marked) left moves are blocked, at the right boundary (blank on both) right moves
@@ -36,7 +36,7 @@ proof: formalized
 public def clampMove (wvip wflag : Option Symbol) (m : SignType) : SignType
 ```
 
-`Turing.MultiTapeTM.inputFromTape` (definition, [line 51](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L51))
+`Turing.MultiTapeTM.inputFromTape` (definition, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L51))
 
 > `tm`, reading its input from the virtual input tape `Fin.natAdd k 0`, with the flag tape
 > `Fin.natAdd k 1` marking the cell left of the input. The real input tape is never read and never
@@ -47,7 +47,7 @@ public noncomputable def inputFromTape (tm : MultiTapeTM k Symbol State) :
     MultiTapeTM (k + 2) Symbol State
 ```
 
-`Turing.MultiTapeTM.inCfg` (definition, [line 67](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L67))
+`Turing.MultiTapeTM.inCfg` (definition, [line 67](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L67))
 
 > A configuration of `tm` on `input`, as the redirecting machine sees it, over an arbitrary
 > ambient input: `input` sits on the virtual input tape with the head at cell `inputPos - 1`, the flag
@@ -59,28 +59,28 @@ public def inCfg (mark : Symbol) {input : List Symbol} (c : Cfg k Symbol State i
     (outerInput : List Symbol) : Cfg (k + 2) Symbol State outerInput
 ```
 
-`Turing.MultiTapeTM.inCfg_inputPos` (lemma, [line 81](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L81))
+`Turing.MultiTapeTM.inCfg_inputPos` (lemma, [line 81](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L81))
 
 ```lean
 public lemma inCfg_inputPos (c : Cfg k Symbol State input) :
     (inCfg mark c outerInput).inputPos = 1
 ```
 
-`Turing.MultiTapeTM.inCfg_workTapes_castAdd` (lemma, [line 85](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L85))
+`Turing.MultiTapeTM.inCfg_workTapes_castAdd` (lemma, [line 85](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L85))
 
 ```lean
 public lemma inCfg_workTapes_castAdd (c : Cfg k Symbol State input) (j : Fin k) :
     (inCfg mark c outerInput).workTapes (j.castAdd 2) = c.workTapes j
 ```
 
-`Turing.MultiTapeTM.inCfg_workTapes_vip` (lemma, [line 90](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L90))
+`Turing.MultiTapeTM.inCfg_workTapes_vip` (lemma, [line 90](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L90))
 
 ```lean
 public lemma inCfg_workTapes_vip (c : Cfg k Symbol State input) :
     (inCfg mark c outerInput).workTapes (Fin.natAdd k 0) = tapeOfList input
 ```
 
-`Turing.MultiTapeTM.inCfg_workTapes_flag` (lemma, [line 95](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L95))
+`Turing.MultiTapeTM.inCfg_workTapes_flag` (lemma, [line 95](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L95))
 
 ```lean
 public lemma inCfg_workTapes_flag (c : Cfg k Symbol State input) :
@@ -88,14 +88,14 @@ public lemma inCfg_workTapes_flag (c : Cfg k Symbol State input) :
       Function.update (fun _ => none) (-1) (some mark)
 ```
 
-`Turing.MultiTapeTM.inCfg_workTapePos_castAdd` (lemma, [line 101](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L101))
+`Turing.MultiTapeTM.inCfg_workTapePos_castAdd` (lemma, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L101))
 
 ```lean
 public lemma inCfg_workTapePos_castAdd (c : Cfg k Symbol State input) (j : Fin k) :
     (inCfg mark c outerInput).workTapePos (j.castAdd 2) = c.workTapePos j
 ```
 
-`Turing.MultiTapeTM.inCfg_workTapePos_natAdd` (lemma, [line 107](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L107))
+`Turing.MultiTapeTM.inCfg_workTapePos_natAdd` (lemma, [line 107](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L107))
 
 > The virtual input head and the flag head both stand at cell `inputPos - 1`.
 
@@ -104,14 +104,14 @@ public lemma inCfg_workTapePos_natAdd (c : Cfg k Symbol State input) (i : Fin 2)
     (inCfg mark c outerInput).workTapePos (Fin.natAdd k i) = (c.inputPos.val : ℤ) - 1
 ```
 
-`Turing.MultiTapeTM.inCfg_workTapeSymbols_castAdd` (lemma, [line 112](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L112))
+`Turing.MultiTapeTM.inCfg_workTapeSymbols_castAdd` (lemma, [line 112](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L112))
 
 ```lean
 public lemma inCfg_workTapeSymbols_castAdd (c : Cfg k Symbol State input) (j : Fin k) :
     (inCfg mark c outerInput).workTapeSymbols (j.castAdd 2) = c.workTapeSymbols j
 ```
 
-`Turing.MultiTapeTM.inCfg_workTapeSymbols_vip` (lemma, [line 119](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L119))
+`Turing.MultiTapeTM.inCfg_workTapeSymbols_vip` (lemma, [line 119](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L119))
 
 > The virtual input head reads exactly what the simulated input head reads: the word cells are
 > the input positions, the two boundary cells are blank.
@@ -121,7 +121,7 @@ public lemma inCfg_workTapeSymbols_vip (c : Cfg k Symbol State input) :
     (inCfg mark c outerInput).workTapeSymbols (Fin.natAdd k 0) = c.inputSymbol
 ```
 
-`Turing.MultiTapeTM.inCfg_workTapeSymbols_flag` (lemma, [line 134](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L134))
+`Turing.MultiTapeTM.inCfg_workTapeSymbols_flag` (lemma, [line 134](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L134))
 
 > The flag head reads the mark exactly at the left boundary.
 
@@ -131,7 +131,7 @@ public lemma inCfg_workTapeSymbols_flag (c : Cfg k Symbol State input) :
       if c.inputPos.val = 0 then some mark else none
 ```
 
-`Turing.MultiTapeTM.val_moveInputPos_sub_one_eq_clampMove` (lemma, [line 140](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L140))
+`Turing.MultiTapeTM.val_moveInputPos_sub_one_eq_clampMove` (lemma, [line 140](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L140))
 
 > The clamped move of the virtual input head tracks the simulated input head exactly.
 
@@ -143,7 +143,7 @@ public lemma val_moveInputPos_sub_one_eq_clampMove (mark : Symbol) (c : Cfg k Sy
         (clampMove c.inputSymbol (if c.inputPos.val = 0 then some mark else none) m : ℤ)
 ```
 
-`Turing.MultiTapeTM.inCfgHom` (definition, [line 161](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L161))
+`Turing.MultiTapeTM.inCfgHom` (definition, [line 161](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L161))
 
 > The redirection preserves steps, so it maps run paths of `tm` to run paths of the redirected
 > machine.
@@ -154,7 +154,7 @@ public noncomputable def inCfgHom (tm : MultiTapeTM k Symbol State)
     (tm.stepRel input).Hom (tm.inputFromTape.stepRel outerInput)
 ```
 
-`Turing.MultiTapeTM.space_map_inCfgHom_le` (lemma, [line 176](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L176))
+`Turing.MultiTapeTM.space_map_inCfgHom_le` (lemma, [line 176](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L176))
 
 > **Space of the input-redirected path.** The `k` inner tapes visit exactly what the original
 > path visits; the two extra tapes (virtual input, flag) each move only with the simulated input
@@ -173,5 +173,5 @@ public lemma space_map_inCfgHom_le (tm : MultiTapeTM k Symbol State) (mark : Sym
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean)
 - [Declaration ledger](../../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Plumbing.InputFromTape.json)

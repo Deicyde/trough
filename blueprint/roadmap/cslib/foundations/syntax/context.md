@@ -7,11 +7,11 @@ proof: formalized
 
 # Context
 
-`Cslib.Foundations.Syntax.Context`, in [Cslib/Foundations/Syntax/Context.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Syntax/Context.lean), by Fabrizio Montesi.
+`Cslib.Foundations.Syntax.Context`, in [Cslib/Foundations/Syntax/Context.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Syntax/Context.lean), by Fabrizio Montesi.
 
 > Typeclasses for contexts, with heterogeneous and homogeneous variants.
 
-`Cslib.HasHContext` (class, [line 18](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Syntax/Context.lean#L18))
+`Cslib.HasHContext` (class, [line 18](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Syntax/Context.lean#L18))
 
 > Class for types with a canonical notion of heterogeneous single-hole contexts.
 
@@ -23,7 +23,7 @@ class HasHContext (α β : Type*) where
   fill (c : Context) (b : β) : α
 ```
 
-`Cslib.HasContext` (abbreviation, [line 28](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Syntax/Context.lean#L28))
+`Cslib.HasContext` (abbreviation, [line 28](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Syntax/Context.lean#L28))
 
 > Class for types (`α`) that have a canonical notion of homogeneous single-hole contexts
 > (`Context`).
@@ -32,7 +32,7 @@ class HasHContext (α β : Type*) where
 abbrev HasContext (α : Type*)
 ```
 
-`Cslib.HasContext.Context` (definition, [line 31](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Syntax/Context.lean#L31))
+`Cslib.HasContext.Context` (definition, [line 31](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Syntax/Context.lean#L31))
 
 ```lean
 def HasContext.Context (α : Type*) [HasContext α] : Type*
@@ -44,5 +44,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Foundations/Syntax/Context.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Syntax/Context.lean)
+- [Cslib/Foundations/Syntax/Context.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Syntax/Context.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Foundations.Syntax.Context.json)

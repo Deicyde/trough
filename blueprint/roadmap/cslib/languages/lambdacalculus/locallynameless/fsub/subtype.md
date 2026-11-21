@@ -7,7 +7,7 @@ proof: formalized
 
 # λ-calculus (Subtype)
 
-`Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Subtype`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean), by Chris Henson.
+`Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Subtype`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean), by Chris Henson.
 
 > The λ-calculus with polymorphism and subtyping, with a locally nameless representation of syntax.
 > This file defines the subtyping relation.
@@ -18,7 +18,7 @@ proof: formalized
 > * See also <https://www.cis.upenn.edu/~plclub/popl08-tutorial/code/>, from which
 >   this is adapted
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub` (inductive type, [line 35](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L35))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub` (inductive type, [line 35](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L35))
 
 > The subtyping relation.
 
@@ -35,7 +35,7 @@ inductive Sub : Env Var → Ty Var → Ty Var → Prop
   | sum : Sub Γ σ' σ → Sub Γ τ' τ → Sub Γ (sum σ' τ') (sum σ τ)
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.wf` (lemma, [line 56](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L56))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.wf` (lemma, [line 56](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L56))
 
 > Subtypes have well-formed contexts and types.
 
@@ -43,7 +43,7 @@ inductive Sub : Env Var → Ty Var → Ty Var → Prop
 lemma wf (Γ : Env Var) (σ σ' : Ty Var) (sub : Sub Γ σ σ') : Γ.Wf ∧ σ.Wf Γ ∧ σ'.Wf Γ
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.refl` (lemma, [line 62](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L62))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.refl` (lemma, [line 62](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L62))
 
 > Subtypes are reflexive when well-formed.
 
@@ -51,7 +51,7 @@ lemma wf (Γ : Env Var) (σ σ' : Ty Var) (sub : Sub Γ σ σ') : Γ.Wf ∧ σ.W
 lemma refl (wf_Γ : Γ.Wf) (wf_σ : σ.Wf Γ) : Sub Γ σ σ
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.weaken` (lemma, [line 68](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L68))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.weaken` (lemma, [line 68](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L68))
 
 > Weakening of subtypes.
 
@@ -59,13 +59,13 @@ lemma refl (wf_Γ : Γ.Wf) (wf_σ : σ.Wf Γ) : Sub Γ σ σ
 lemma weaken (sub : Sub (Γ ++ Θ) σ σ') (wf : (Γ ++ Δ ++ Θ).Wf) : Sub (Γ ++ Δ ++ Θ) σ σ'
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.weaken_head` (lemma, [line 76](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L76))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.weaken_head` (lemma, [line 76](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L76))
 
 ```lean
 lemma weaken_head (sub : Sub Δ σ σ') (wf : (Γ ++ Δ).Wf) : Sub (Γ ++ Δ) σ σ'
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.narrow_aux` (lemma, [line 80](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L80))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.narrow_aux` (lemma, [line 80](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L80))
 
 ```lean
 lemma narrow_aux
@@ -74,13 +74,13 @@ lemma narrow_aux
       Sub (Γ ++ ⟨X, Binding.sub δ'⟩ :: Δ) σ τ
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.trans` (lemma, [line 105](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L105))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.trans` (lemma, [line 105](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L105))
 
 ```lean
 lemma trans : Sub Γ σ δ → Sub Γ δ τ → Sub Γ σ τ
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.narrow` (lemma, [line 140](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L140))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.narrow` (lemma, [line 140](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L140))
 
 > Narrowing of subtypes.
 
@@ -89,7 +89,7 @@ lemma narrow (sub_δ : Sub Δ δ δ') (sub_narrow : Sub (Γ ++ ⟨X, Binding.sub
     Sub (Γ ++ ⟨X, Binding.sub δ⟩ :: Δ) σ τ
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.map_subst` (lemma, [line 146](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L146))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.map_subst` (lemma, [line 146](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L146))
 
 > Subtyping of substitutions.
 
@@ -98,7 +98,7 @@ lemma map_subst (sub₁ : Sub (Γ ++ ⟨X, Binding.sub δ'⟩ :: Δ) σ τ) (sub
     Sub (Γ.mapVal (·[X := δ]) ++ Δ) (σ[X := δ]) (τ[X := δ])
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.strengthen` (lemma, [line 163](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L163))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Sub.strengthen` (lemma, [line 163](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean#L163))
 
 > Strengthening of subtypes.
 
@@ -112,5 +112,5 @@ lemma strengthen (sub : Sub (Γ ++ ⟨X, Binding.ty δ⟩ :: Δ) σ τ) :  Sub (
 
 ## Sources
 
-- [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean)
+- [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Subtype.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Subtype.json)

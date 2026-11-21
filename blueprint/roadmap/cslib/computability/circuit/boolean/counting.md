@@ -7,20 +7,20 @@ proof: formalized
 
 # Counting De Morgan circuits
 
-`Cslib.Computability.Circuit.Boolean.Counting`, in [Cslib/Computability/Circuit/Boolean/Counting.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Counting.lean), by Samuel Schlesinger.
+`Cslib.Computability.Circuit.Boolean.Counting`, in [Cslib/Computability/Circuit/Boolean/Counting.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Counting.lean), by Samuel Schlesinger.
 
 > This file specializes the generic circuit counting bound to the five De Morgan operations,
 > all of arity at most two. The resulting factorial correction is used in Shannon's lower bound.
 
-`Cslib.Circuits.Boolean.computableFunctions` (abbreviation, [line 27](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Counting.lean#L27))
+`Cslib.Circuits.Boolean.computableFunctions` (abbreviation, [line 27](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Counting.lean#L27))
 
 > Boolean functions on `n` inputs computable with at most `s` De Morgan gates.
 
 ```lean
-noncomputable abbrev computableFunctions (n s : ℕ) : Finset (BooleanFunction n)
+abbrev computableFunctions (n s : ℕ) : Set (BooleanFunction n)
 ```
 
-`Cslib.Circuits.Boolean.mem_computableFunctions` (theorem, [line 30](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Counting.lean#L30))
+`Cslib.Circuits.Boolean.mem_computableFunctions` (theorem, [line 30](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Counting.lean#L30))
 
 ```lean
 theorem mem_computableFunctions {f : BooleanFunction n} :
@@ -28,13 +28,13 @@ theorem mem_computableFunctions {f : BooleanFunction n} :
       ∃ c : Circuit signature n 1, c.Computes interpretation (single f) ∧ c.size ≤ s
 ```
 
-`Cslib.Circuits.Boolean.card_computableFunctions_mul_factorial_le` (theorem, [line 36](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Counting.lean#L36))
+`Cslib.Circuits.Boolean.card_computableFunctions_mul_factorial_le` (theorem, [line 36](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Counting.lean#L36))
 
 > The De Morgan counting bound, accounting for gate relabelings.
 
 ```lean
 theorem card_computableFunctions_mul_factorial_le (n s : ℕ) :
-    (computableFunctions n s).card * s.factorial ≤
+    (computableFunctions n s).ncard * s.factorial ≤
       (s + 1) * (5 * (n + s + 1) ^ 2) ^ s * (n + s)
 ```
 
@@ -46,5 +46,5 @@ theorem card_computableFunctions_mul_factorial_le (n s : ℕ) :
 
 ## Sources
 
-- [Cslib/Computability/Circuit/Boolean/Counting.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Counting.lean)
+- [Cslib/Computability/Circuit/Boolean/Counting.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Counting.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Circuit.Boolean.Counting.json)

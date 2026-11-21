@@ -7,7 +7,7 @@ proof: formalized
 
 # IsSimulation and Similarity
 
-`Cslib.Foundations.Semantics.LTS.Simulation`, in [Cslib/Foundations/Semantics/LTS/Simulation.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean), by Fabrizio Montesi.
+`Cslib.Foundations.Semantics.LTS.Simulation`, in [Cslib/Foundations/Semantics/LTS/Simulation.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean), by Fabrizio Montesi.
 
 > A simulation is a binary relation on the states of two `LTS`s: if two states `s₁` and `s2` are
 > related by a simulation, then `s2` can mimic all transitions of `s₁` in their respective LTSs.
@@ -40,7 +40,7 @@ proof: formalized
 >
 > - `HomSimulationEquiv.eqv`: homogeneous simulation equivalence is an equivalence relation.
 
-`Cslib.LTS.IsSimulation` (definition, [line 57](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L57))
+`Cslib.LTS.IsSimulation` (definition, [line 57](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L57))
 
 > A relation is a simulation if, whenever it relates two states in an lts,
 > any transition originating from the first state is mimicked by a transition from the second state
@@ -51,7 +51,7 @@ def IsSimulation (lts₁ : LTS State₁ Label) (lts₂ : LTS State₂ Label) (r 
     Prop
 ```
 
-`Cslib.LTS.IsHomSimulation` (abbreviation, [line 62](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L62))
+`Cslib.LTS.IsHomSimulation` (abbreviation, [line 62](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L62))
 
 > A homogeneous simulation is a simulation where the underlying LTSs are the same.
 
@@ -59,7 +59,7 @@ def IsSimulation (lts₁ : LTS State₁ Label) (lts₂ : LTS State₂ Label) (r 
 abbrev IsHomSimulation (lts : LTS State Label)
 ```
 
-`Cslib.LTS.Similarity` (definition, [line 65](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L65))
+`Cslib.LTS.Similarity` (definition, [line 65](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L65))
 
 > Two states are similar if they are related by some simulation.
 
@@ -67,7 +67,7 @@ abbrev IsHomSimulation (lts : LTS State Label)
 def Similarity (lts₁ : LTS State₁ Label) (lts₂ : LTS State₂ Label) : State₁ → State₂ → Prop
 ```
 
-`Cslib.LTS.HomSimilarity` (abbreviation, [line 78](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L78))
+`Cslib.LTS.HomSimilarity` (abbreviation, [line 78](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L78))
 
 > Homogeneous similarity is similarity where the underlying LTSs are the same.
 
@@ -75,7 +75,7 @@ def Similarity (lts₁ : LTS State₁ Label) (lts₂ : LTS State₂ Label) : Sta
 abbrev HomSimilarity (lts : LTS State Label)
 ```
 
-`Cslib.LTS.HomSimilarity.refl` (theorem, [line 84](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L84))
+`Cslib.LTS.HomSimilarity.refl` (theorem, [line 84](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L84))
 
 > Homogeneous similarity is reflexive.
 
@@ -83,7 +83,7 @@ abbrev HomSimilarity (lts : LTS State Label)
 theorem HomSimilarity.refl (s : State) : s ≤[lts] s
 ```
 
-`Cslib.LTS.IsSimulation.comp` (theorem, [line 89](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L89))
+`Cslib.LTS.IsSimulation.comp` (theorem, [line 89](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L89))
 
 > The composition of two simulations is a simulation.
 
@@ -95,7 +95,7 @@ theorem IsSimulation.comp
     IsSimulation lts₁ lts₃ (Relation.Comp r1 r2)
 ```
 
-`Cslib.LTS.Similarity.trans` (theorem, [line 101](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L101))
+`Cslib.LTS.Similarity.trans` (theorem, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L101))
 
 > Similarity is transitive.
 
@@ -104,21 +104,21 @@ theorem Similarity.trans (h1 : s₁ ≤[lts₁,lts₂] s2) (h2 : s2 ≤[lts₂,l
     s₁ ≤[lts₁,lts₃] s₃
 ```
 
-`Cslib.LTS.IsSimulation.sup` (theorem, [line 107](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L107))
+`Cslib.LTS.IsSimulation.sup` (theorem, [line 107](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L107))
 
 ```lean
 theorem IsSimulation.sup (hr : IsSimulation lts₁ lts₂ r)
     (hs : IsSimulation lts₁ lts₂ s) : IsSimulation lts₁ lts₂ (r ⊔ s)
 ```
 
-`Cslib.LTS.IsSimulation.sim_trace` (theorem, [line 115](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L115))
+`Cslib.LTS.IsSimulation.sim_trace` (theorem, [line 115](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L115))
 
 ```lean
 theorem IsSimulation.sim_trace (hr : IsSimulation lts₁ lts₂ r) (hrel : r s₁ s₂) :
     ∀ μs s₁', lts₁.MTr s₁ μs s₁' → ∃ s₂', lts₂.MTr s₂ μs s₂' ∧ r s₁' s₂'
 ```
 
-`Cslib.LTS.IsSimulationMap` (definition, [line 131](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L131))
+`Cslib.LTS.IsSimulationMap` (definition, [line 131](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L131))
 
 > A map of states is a simulation map if it sends every transition of `lts₁` to a transition of
 > `lts₂` with the same label.
@@ -128,7 +128,7 @@ def IsSimulationMap (lts₁ : LTS State₁ Label) (lts₂ : LTS State₂ Label) 
     Prop
 ```
 
-`Cslib.LTS.IsSimulationMap.isSimulation` (theorem, [line 136](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L136))
+`Cslib.LTS.IsSimulationMap.isSimulation` (theorem, [line 136](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L136))
 
 > The graph of a simulation map is a simulation.
 
@@ -138,7 +138,7 @@ theorem IsSimulationMap.isSimulation {lts₁ : LTS State₁ Label} {lts₂ : LTS
     IsSimulation lts₁ lts₂ fun s t => t = f s
 ```
 
-`Cslib.LTS.IsSimulationMap.sim_trace` (theorem, [line 143](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L143))
+`Cslib.LTS.IsSimulationMap.sim_trace` (theorem, [line 143](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L143))
 
 > A simulation map sends multistep transitions to multistep transitions.
 
@@ -148,7 +148,7 @@ theorem IsSimulationMap.sim_trace {lts₁ : LTS State₁ Label} {lts₂ : LTS St
     (h : lts₁.MTr s μs s') : lts₂.MTr (f s) μs (f s')
 ```
 
-`Cslib.LTS.SimulationEquiv` (definition, [line 151](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L151))
+`Cslib.LTS.SimulationEquiv` (definition, [line 151](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L151))
 
 > Simulation equivalence relates all states `s₁` and `s2` such that `s₁ ≤[lts₁ lts₂] s2` and
 > `s2 ≤[lts₂ lts₁] s₁`.
@@ -158,7 +158,7 @@ def SimulationEquiv (lts₁ : LTS State₁ Label) (lts₂ : LTS State₂ Label) 
     State₁ → State₂ → Prop
 ```
 
-`Cslib.LTS.HomSimulationEquiv` (abbreviation, [line 162](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L162))
+`Cslib.LTS.HomSimulationEquiv` (abbreviation, [line 162](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L162))
 
 > Homogeneous simulation equivalence.
 
@@ -166,7 +166,7 @@ def SimulationEquiv (lts₁ : LTS State₁ Label) (lts₂ : LTS State₂ Label) 
 abbrev HomSimulationEquiv (lts : LTS State Label)
 ```
 
-`Cslib.LTS.HomSimulationEquiv.refl` (theorem, [line 168](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L168))
+`Cslib.LTS.HomSimulationEquiv.refl` (theorem, [line 168](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L168))
 
 > Homogeneous simulation equivalence is reflexive.
 
@@ -174,7 +174,7 @@ abbrev HomSimulationEquiv (lts : LTS State Label)
 theorem HomSimulationEquiv.refl (s : State) : s ≤≥[lts] s
 ```
 
-`Cslib.LTS.SimulationEquiv.symm` (theorem, [line 172](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L172))
+`Cslib.LTS.SimulationEquiv.symm` (theorem, [line 172](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L172))
 
 > Simulation equivalence is symmetric.
 
@@ -184,7 +184,7 @@ theorem SimulationEquiv.symm {State₁ State₂ Label : Type*}
     (h : s₁ ≤≥[lts₁,lts₂] s2) : s2 ≤≥[lts₂,lts₁] s₁
 ```
 
-`Cslib.LTS.SimulationEquiv.trans` (theorem, [line 178](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L178))
+`Cslib.LTS.SimulationEquiv.trans` (theorem, [line 178](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L178))
 
 > Simulation equivalence is transitive.
 
@@ -193,7 +193,7 @@ theorem SimulationEquiv.trans (h1 : s₁ ≤≥[lts₁,lts₂] s2) (h2 : s2 ≤�
     s₁ ≤≥[lts₁,lts₃] s₃
 ```
 
-`Cslib.LTS.HomSimulationEquiv.eqv` (theorem, [line 183](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L183))
+`Cslib.LTS.HomSimulationEquiv.eqv` (theorem, [line 183](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L183))
 
 > Homogeneous simulation equivalence is an equivalence relation.
 
@@ -201,7 +201,7 @@ theorem SimulationEquiv.trans (h1 : s₁ ≤≥[lts₁,lts₂] s2) (h2 : s2 ≤�
 theorem HomSimulationEquiv.eqv : Equivalence (· ≤≥[lts] ·)
 ```
 
-`Cslib.LTS.IsSimulation.follow` (theorem, [line 197](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L197))
+`Cslib.LTS.IsSimulation.follow` (theorem, [line 197](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L197))
 
 > Helper for following a transition by the first state in a pair of a simulation.
 
@@ -211,7 +211,7 @@ theorem IsSimulation.follow
     ∃ s₂', lts₂.Tr s₂ μ s₂' ∧ r s₁' s₂'
 ```
 
-`Cslib.LTS.IsSimulation.follow_internal` (lemma, [line 202](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L202))
+`Cslib.LTS.IsSimulation.follow_internal` (lemma, [line 202](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L202))
 
 > Utility theorem for following internal transitions along a saturated lts.
 
@@ -221,7 +221,7 @@ lemma IsSimulation.follow_internal [HasTau Label] {lts₁ : LTS State₁ Label}
     (hstr : lts₁.τSTr s₁ s₁') : ∃ s₂', lts₂.τSTr s₂ s₂' ∧ r s₁' s₂'
 ```
 
-`Cslib.LTS.IsSimulation.isSimulation_saturate_left` (theorem, [line 214](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L214))
+`Cslib.LTS.IsSimulation.isSimulation_saturate_left` (theorem, [line 214](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L214))
 
 > If the right-hand lts is saturated, a simulation lifts along saturating the left-hand lts.
 
@@ -231,7 +231,7 @@ theorem IsSimulation.isSimulation_saturate_left [HasTau Label] {lts₁ : LTS Sta
     IsSimulation lts₁.saturate lts₂.saturate r
 ```
 
-`Cslib.LTS.IsSimulation.mono` (theorem, [line 230](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L230))
+`Cslib.LTS.IsSimulation.mono` (theorem, [line 230](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L230))
 
 > Simulation is preserved by removing transitions on the left, and adding transitions on the
 > right.
@@ -241,7 +241,7 @@ theorem IsSimulation.mono (h₁ : lts₁'.Tr ≤ lts₁.Tr) (h₂ : lts₂.Tr �
     (h : IsSimulation lts₁ lts₂ r) : IsSimulation lts₁' lts₂' r
 ```
 
-`Cslib.LTS.IsSimulation.match_deterministic` (theorem, [line 238](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L238))
+`Cslib.LTS.IsSimulation.match_deterministic` (theorem, [line 238](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L238))
 
 > When a deterministic state matches a transition in a simulation, then the derivatives are still
 > in the simulation.
@@ -252,7 +252,7 @@ theorem IsSimulation.match_deterministic (hb : IsSimulation lts₁ lts₂ r) (hr
     r s₁' s₂'
 ```
 
-`Cslib.LTS.IsSimulation.follow_deterministic` (theorem, [line 245](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean#L245))
+`Cslib.LTS.IsSimulation.follow_deterministic` (theorem, [line 245](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean#L245))
 
 > If a state is deterministic for `μ`, then any transition made by a related state in a
 > simulation is matched by a unique transition.
@@ -269,5 +269,5 @@ theorem IsSimulation.follow_deterministic (hb : IsSimulation lts₁ lts₂ r) (h
 
 ## Sources
 
-- [Cslib/Foundations/Semantics/LTS/Simulation.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Simulation.lean)
+- [Cslib/Foundations/Semantics/LTS/Simulation.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Simulation.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.LTS.Simulation.json)

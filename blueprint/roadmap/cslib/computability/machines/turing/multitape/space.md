@@ -1,13 +1,13 @@
 ---
 catalog: module
-lean: Turing.window, Turing.mem_window, Turing.card_window, Turing.MultiTapeNTM.RunPath.visitedByTapeHead, Turing.MultiTapeNTM.RunPath.spaceUsedByTape, Turing.MultiTapeNTM.RunPath.space, Turing.MultiTapeNTM.RunPath.spaceUsedByTape_le_card, Turing.MultiTapeNTM.RunPath.space_le_sum_card, Turing.MultiTapeNTM.RunPath.space_le_of_subset, Turing.MultiTapeNTM.RunPath.mem_visitedByTapeHead, Turing.MultiTapeNTM.RunPath.visitedByTapeHead_take_subset, Turing.MultiTapeNTM.RunPath.visitedByTapeHead_snoc, Turing.MultiTapeNTM.RunPath.InWindow, Turing.MultiTapeNTM.RunPath.InWindow.space_le, Turing.MultiTapeNTM.RunPath.InWindow.smash, Turing.MultiTapeNTM.RunPath.visitedByTapeHead_map, Turing.MultiTapeNTM.RunPath.space_map_le, Turing.MultiTapeNTM.ComputationPath.spaceUsedByTape, Turing.MultiTapeNTM.ComputationPath.space, Turing.MultiTapeNTM.RunsInSpace, Turing.MultiTapeNTM.RunsInSpace.mono, Turing.MultiTapeNTM.RunsInSpace.exists_space_max, Turing.MultiTapeNTM.runsInSpace_zero_tapes
+lean: Turing.window, Turing.mem_window, Turing.card_window, Turing.MultiTapeNTM.RunPath.visitedByTapeHead, Turing.MultiTapeNTM.RunPath.spaceUsedByTape, Turing.MultiTapeNTM.RunPath.space, Turing.MultiTapeNTM.RunPath.spaceUsedByTape_le_card, Turing.MultiTapeNTM.RunPath.space_le_sum_card, Turing.MultiTapeNTM.RunPath.space_le_of_subset, Turing.MultiTapeNTM.RunPath.mem_visitedByTapeHead, Turing.MultiTapeNTM.RunPath.visitedByTapeHead_take_subset, Turing.MultiTapeNTM.RunPath.visitedByTapeHead_snoc, Turing.MultiTapeNTM.RunPath.InWindow, Turing.MultiTapeNTM.RunPath.InWindow.space_le, Turing.MultiTapeNTM.RunPath.InWindow.smash, Turing.MultiTapeNTM.RunPath.visitedByTapeHead_map, Turing.MultiTapeNTM.RunPath.space_map_le, Turing.MultiTapeNTM.ComputationPath.spaceUsedByTape, Turing.MultiTapeNTM.ComputationPath.space, Turing.MultiTapeNTM.RunsInSpace, Turing.MultiTapeNTM.RunsInSpace.mono, Turing.MultiTapeNTM.RunsInSpace.exists_space_max, Turing.MultiTapeNTM.RunsInSpace.numTapes_le, Turing.MultiTapeNTM.runsInSpace_zero_tapes
 statement: formalized
 proof: formalized
 ---
 
 # Space usage of multi-tape Turing machines
 
-`Cslib.Computability.Machines.Turing.MultiTape.Space`, in [Cslib/Computability/Machines/Turing/MultiTape/Space.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean), by Christian Reitwiessner, Samuel Schlesinger, Aviv Bar Natan.
+`Cslib.Computability.Machines.Turing.MultiTape.Space`, in [Cslib/Computability/Machines/Turing/MultiTape/Space.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean), by Christian Reitwiessner, Samuel Schlesinger, Aviv Bar Natan.
 
 > Defines the space used by a run path of a multi-tape Turing machine. Space usage counts the
 > positions visited by each work-tape head along the path and sums over the tapes.
@@ -40,7 +40,7 @@ proof: formalized
 >
 > * [S. Arora, B. Barak, *Computational Complexity: A Modern Approach*][AroraBarak09]
 
-`Turing.window` (definition, [line 55](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L55))
+`Turing.window` (definition, [line 55](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L55))
 
 > The window `[-s, s]` of tape positions allotted to a tape that uses `s` cells.
 
@@ -48,19 +48,19 @@ proof: formalized
 def window (s : ℕ) : Finset ℤ
 ```
 
-`Turing.mem_window` (lemma, [line 58](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L58))
+`Turing.mem_window` (lemma, [line 58](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L58))
 
 ```lean
 lemma mem_window {s : ℕ} {z : ℤ} : z ∈ window s ↔ z.natAbs ≤ s
 ```
 
-`Turing.card_window` (lemma, [line 62](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L62))
+`Turing.card_window` (lemma, [line 62](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L62))
 
 ```lean
 lemma card_window (s : ℕ) : (window s).card = 2 * s + 1
 ```
 
-`Turing.MultiTapeNTM.RunPath.visitedByTapeHead` (definition, [line 75](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L75))
+`Turing.MultiTapeNTM.RunPath.visitedByTapeHead` (definition, [line 75](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L75))
 
 > The set of positions visited by the head of work tape `i` along a run path.
 
@@ -68,7 +68,7 @@ lemma card_window (s : ℕ) : (window s).card = 2 * s + 1
 def visitedByTapeHead (p : ntm.RunPath input) (i : Fin k) : Finset ℤ
 ```
 
-`Turing.MultiTapeNTM.RunPath.spaceUsedByTape` (definition, [line 79](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L79))
+`Turing.MultiTapeNTM.RunPath.spaceUsedByTape` (definition, [line 79](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L79))
 
 > The number of positions visited by the head of work tape `i` along a run path.
 
@@ -76,7 +76,7 @@ def visitedByTapeHead (p : ntm.RunPath input) (i : Fin k) : Finset ℤ
 def spaceUsedByTape (p : ntm.RunPath input) (i : Fin k) : ℕ
 ```
 
-`Turing.MultiTapeNTM.RunPath.space` (definition, [line 83](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L83))
+`Turing.MultiTapeNTM.RunPath.space` (definition, [line 83](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L83))
 
 > The number of work tape cells visited along a run path.
 
@@ -84,7 +84,7 @@ def spaceUsedByTape (p : ntm.RunPath input) (i : Fin k) : ℕ
 def space (p : ntm.RunPath input) : ℕ
 ```
 
-`Turing.MultiTapeNTM.RunPath.spaceUsedByTape_le_card` (lemma, [line 86](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L86))
+`Turing.MultiTapeNTM.RunPath.spaceUsedByTape_le_card` (lemma, [line 86](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L86))
 
 > A set containing every position of a head along a path bounds the space used by its tape.
 
@@ -93,7 +93,7 @@ lemma spaceUsedByTape_le_card (p : ntm.RunPath input) {i : Fin k} {S : Finset �
     (h : ∀ c ∈ p, c.workTapePos i ∈ S) : p.spaceUsedByTape i ≤ S.card
 ```
 
-`Turing.MultiTapeNTM.RunPath.space_le_sum_card` (lemma, [line 92](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L92))
+`Turing.MultiTapeNTM.RunPath.space_le_sum_card` (lemma, [line 92](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L92))
 
 > Sets containing every position of the heads along a path bound its space by their total
 > size.
@@ -103,7 +103,7 @@ lemma space_le_sum_card (p : ntm.RunPath input) {S : Fin k → Finset ℤ}
     (h : ∀ c ∈ p, ∀ i, c.workTapePos i ∈ S i) : p.space ≤ ∑ i, (S i).card
 ```
 
-`Turing.MultiTapeNTM.RunPath.space_le_of_subset` (lemma, [line 97](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L97))
+`Turing.MultiTapeNTM.RunPath.space_le_of_subset` (lemma, [line 97](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L97))
 
 > A path whose configurations all lie on another path visits no more cells.
 
@@ -111,7 +111,7 @@ lemma space_le_sum_card (p : ntm.RunPath input) {S : Fin k → Finset ℤ}
 lemma space_le_of_subset {p q : ntm.RunPath input} (h : ∀ c ∈ q, c ∈ p) : q.space ≤ p.space
 ```
 
-`Turing.MultiTapeNTM.RunPath.mem_visitedByTapeHead` (lemma, [line 104](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L104))
+`Turing.MultiTapeNTM.RunPath.mem_visitedByTapeHead` (lemma, [line 104](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L104))
 
 > A path visits exactly the head positions of its configurations.
 
@@ -120,7 +120,7 @@ lemma mem_visitedByTapeHead (p : ntm.RunPath input) {i : Fin k} {z : ℤ} :
     z ∈ p.visitedByTapeHead i ↔ ∃ c ∈ p, c.workTapePos i = z
 ```
 
-`Turing.MultiTapeNTM.RunPath.visitedByTapeHead_take_subset` (lemma, [line 109](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L109))
+`Turing.MultiTapeNTM.RunPath.visitedByTapeHead_take_subset` (lemma, [line 109](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L109))
 
 > A prefix of a path visits only cells that the path visits.
 
@@ -129,7 +129,7 @@ lemma visitedByTapeHead_take_subset (p : ntm.RunPath input) (j : Fin (p.length +
     visitedByTapeHead (p.take j) i ⊆ p.visitedByTapeHead i
 ```
 
-`Turing.MultiTapeNTM.RunPath.visitedByTapeHead_snoc` (lemma, [line 115](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L115))
+`Turing.MultiTapeNTM.RunPath.visitedByTapeHead_snoc` (lemma, [line 115](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L115))
 
 > Extending a path by a configuration visits its head positions as well.
 
@@ -141,7 +141,7 @@ lemma visitedByTapeHead_snoc (p : ntm.RunPath input) (c : Cfg k Symbol State inp
 
 > ### Windows
 
-`Turing.MultiTapeNTM.RunPath.InWindow` (definition, [line 124](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L124))
+`Turing.MultiTapeNTM.RunPath.InWindow` (definition, [line 124](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L124))
 
 > Every head stays within the window `[-s, s]` along the path.
 
@@ -149,7 +149,7 @@ lemma visitedByTapeHead_snoc (p : ntm.RunPath input) (c : Cfg k Symbol State inp
 def InWindow (p : ntm.RunPath input) (s : ℕ) : Prop
 ```
 
-`Turing.MultiTapeNTM.RunPath.InWindow.space_le` (lemma, [line 128](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L128))
+`Turing.MultiTapeNTM.RunPath.InWindow.space_le` (lemma, [line 128](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L128))
 
 > A path whose heads stay within `[-s, s]` visits at most `2 * s + 1` cells on each tape.
 
@@ -158,7 +158,7 @@ lemma InWindow.space_le {p : ntm.RunPath input} {s : ℕ} (h : p.InWindow s) :
     p.space ≤ k * (2 * s + 1)
 ```
 
-`Turing.MultiTapeNTM.RunPath.InWindow.smash` (lemma, [line 133](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L133))
+`Turing.MultiTapeNTM.RunPath.InWindow.smash` (lemma, [line 133](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L133))
 
 > Joining two paths whose heads stay within `[-s, s]` keeps them there.
 
@@ -169,7 +169,7 @@ lemma InWindow.smash {p q : ntm.RunPath input} {h : p.last = q.head} {s : ℕ}
 
 > ### Mapped paths
 
-`Turing.MultiTapeNTM.RunPath.visitedByTapeHead_map` (lemma, [line 141](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L141))
+`Turing.MultiTapeNTM.RunPath.visitedByTapeHead_map` (lemma, [line 141](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L141))
 
 > If the head of tape `i'` of a mapped path follows the head of tape `i` of the source path, the
 > two tapes visit the same cells.
@@ -181,7 +181,7 @@ lemma visitedByTapeHead_map (p : ntm.RunPath input)
     (p.map f).visitedByTapeHead i' = p.visitedByTapeHead i
 ```
 
-`Turing.MultiTapeNTM.RunPath.space_map_le` (lemma, [line 150](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L150))
+`Turing.MultiTapeNTM.RunPath.space_map_le` (lemma, [line 150](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L150))
 
 > **Space of a mapped path.** If tape `e j` of the mapped path follows tape `j` of `p`, and every
 > other tape `l` stays in `window l`, the mapped path uses the space of `p` plus the cells of
@@ -195,7 +195,7 @@ lemma space_map_le (p : ntm.RunPath input) (f : (ntm.stepRel input).Hom (ntm'.st
     (p.map f).space ≤ p.space + ∑ l ∈ (Finset.univ.map e)ᶜ, (window l).card
 ```
 
-`Turing.MultiTapeNTM.ComputationPath.spaceUsedByTape` (definition, [line 164](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L164))
+`Turing.MultiTapeNTM.ComputationPath.spaceUsedByTape` (definition, [line 164](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L164))
 
 > The number of positions visited by the head of work tape `i` along a computation path.
 
@@ -203,7 +203,7 @@ lemma space_map_le (p : ntm.RunPath input) (f : (ntm.stepRel input).Hom (ntm'.st
 def ComputationPath.spaceUsedByTape (p : ntm.ComputationPath input) (i : Fin k) : ℕ
 ```
 
-`Turing.MultiTapeNTM.ComputationPath.space` (definition, [line 168](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L168))
+`Turing.MultiTapeNTM.ComputationPath.space` (definition, [line 168](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L168))
 
 > The number of work tape cells visited along a computation path.
 
@@ -211,7 +211,7 @@ def ComputationPath.spaceUsedByTape (p : ntm.ComputationPath input) (i : Fin k) 
 def ComputationPath.space (p : ntm.ComputationPath input) : ℕ
 ```
 
-`Turing.MultiTapeNTM.RunsInSpace` (definition, [line 172](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L172))
+`Turing.MultiTapeNTM.RunsInSpace` (definition, [line 172](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L172))
 
 > Every computation prefix on `input` visits at most `s` work-tape cells, regardless of its
 > outcome.
@@ -220,7 +220,7 @@ def ComputationPath.space (p : ntm.ComputationPath input) : ℕ
 def RunsInSpace (ntm : MultiTapeNTM k Symbol State) (input : List Symbol) (s : ℕ) : Prop
 ```
 
-`Turing.MultiTapeNTM.RunsInSpace.mono` (lemma, [line 176](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L176))
+`Turing.MultiTapeNTM.RunsInSpace.mono` (lemma, [line 176](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L176))
 
 > A space bound can be increased.
 
@@ -229,7 +229,7 @@ lemma RunsInSpace.mono {s s' : ℕ} (h : ntm.RunsInSpace input s) (hs : s ≤ s'
     ntm.RunsInSpace input s'
 ```
 
-`Turing.MultiTapeNTM.RunsInSpace.exists_space_max` (lemma, [line 181](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L181))
+`Turing.MultiTapeNTM.RunsInSpace.exists_space_max` (lemma, [line 181](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L181))
 
 > A machine running in space `s` has a computation path visiting the most cells.
 
@@ -238,7 +238,16 @@ lemma RunsInSpace.exists_space_max {s : ℕ} (hs : ntm.RunsInSpace input s) :
     ∃ p : ntm.ComputationPath input, ∀ q : ntm.ComputationPath input, q.space ≤ p.space
 ```
 
-`Turing.MultiTapeNTM.runsInSpace_zero_tapes` (lemma, [line 192](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L192))
+`Turing.MultiTapeNTM.RunsInSpace.numTapes_le` (lemma, [line 192](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L192))
+
+> A space bound is at least the number of work tapes, since the initial configuration
+> visits one cell on each tape.
+
+```lean
+lemma RunsInSpace.numTapes_le {s : ℕ} (h : ntm.RunsInSpace input s) : k ≤ s
+```
+
+`Turing.MultiTapeNTM.runsInSpace_zero_tapes` (lemma, [line 199](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean#L199))
 
 > A machine without work tapes satisfies every space bound.
 
@@ -253,5 +262,5 @@ lemma runsInSpace_zero_tapes (ntm : MultiTapeNTM 0 Symbol State) (input : List S
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/Space.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Space.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/Space.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Space.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Space.json)

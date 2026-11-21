@@ -7,11 +7,11 @@ proof: formalized
 
 # HasSubstitution
 
-`Cslib.Foundations.Syntax.HasSubstitution`, in [Cslib/Foundations/Syntax/HasSubstitution.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Syntax/HasSubstitution.lean), by Fabrizio Montesi.
+`Cslib.Foundations.Syntax.HasSubstitution`, in [Cslib/Foundations/Syntax/HasSubstitution.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Syntax/HasSubstitution.lean), by Fabrizio Montesi.
 
 > Notation typeclass for substitution.
 
-`Cslib.HasSubstitution` (class, [line 18](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Syntax/HasSubstitution.lean#L18))
+`Cslib.HasSubstitution` (class, [line 18](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Syntax/HasSubstitution.lean#L18))
 
 > Typeclass for substitution relations and access to their notation.
 
@@ -21,7 +21,7 @@ class HasSubstitution (α : Type u) (β : Type v) (γ : Type w) where
   subst (t : α) (x : β) (t' : γ) : α
 ```
 
-`Cslib.unexpandHasSubstitutionSubst` (definition, [line 37](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Syntax/HasSubstitution.lean#L37))
+`Cslib.unexpandHasSubstitutionSubst` (definition, [line 37](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Syntax/HasSubstitution.lean#L37))
 
 > Pretty-printer support for `HasSubstitution.subst`.
 
@@ -35,5 +35,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Foundations/Syntax/HasSubstitution.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Syntax/HasSubstitution.lean)
+- [Cslib/Foundations/Syntax/HasSubstitution.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Syntax/HasSubstitution.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Foundations.Syntax.HasSubstitution.json)

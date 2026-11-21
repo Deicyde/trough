@@ -1,6 +1,6 @@
 # MultiTape
 
-20 modules under `Cslib/Computability/Machines/Turing/MultiTape/`, with 258 public declarations.
+21 modules under `Cslib/Computability/Machines/Turing/MultiTape/`, with 270 public declarations.
 
 - [Combinators](combinators/README.md)
 - [Bounds on the number of reachable configurations in bounded space](configbound.md)

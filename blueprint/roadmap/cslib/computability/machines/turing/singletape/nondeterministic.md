@@ -7,7 +7,7 @@ proof: formalized
 
 # Single-Tape Nondeterministic Turing Machines (NTMs)
 
-`Cslib.Computability.Machines.Turing.SingleTape.NonDeterministic`, in [Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean), by Fabrizio Montesi.
+`Cslib.Computability.Machines.Turing.SingleTape.NonDeterministic`, in [Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean), by Fabrizio Montesi.
 
 > Nondeterministic Turing Machines (NTMs), defined as nondeterministic automata (`NA`) that act on a
 > bidirectional tape (`BiTape`).
@@ -16,7 +16,7 @@ proof: formalized
 >
 > * [M. Sipser, *Introduction to Theory of Computation*][Sipser2013]
 
-`Cslib.Computability.Turing.SingleTape.SingleTapeNTM` (structure, [line 32](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean#L32))
+`Cslib.Computability.Turing.SingleTape.SingleTapeNTM` (structure, [line 32](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean#L32))
 
 > A (single-tape) Nondeterministic Turing Machine (NTM) is a nondeterministic automaton equipped
 > with a set of accepting halting states.
@@ -30,7 +30,7 @@ structure SingleTapeNTM (State Symbol : Type*)
   accept_halting (hmem : s ∈ accept) : ¬∃ μ s', Tr s μ s'
 ```
 
-`Cslib.Computability.Turing.SingleTape.SingleTapeNTM.Yields` (definition, [line 47](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean#L47))
+`Cslib.Computability.Turing.SingleTape.SingleTapeNTM.Yields` (definition, [line 47](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean#L47))
 
 > An NTM yields a small-step operational semantics on configurations, which codifies an execution
 > step. This formalises the 'yields' relation from [Sipser2013].
@@ -40,14 +40,14 @@ def Yields (m : SingleTapeNTM State Symbol)
     (c c' : Cfg State Symbol) : Prop
 ```
 
-`Cslib.Computability.Turing.SingleTape.SingleTapeNTM.yields_tr` (theorem, [line 52](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean#L52))
+`Cslib.Computability.Turing.SingleTape.SingleTapeNTM.yields_tr` (theorem, [line 52](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean#L52))
 
 ```lean
 theorem yields_tr {m : SingleTapeNTM State Symbol} :
     m.Yields c c' ↔ ∃ μ, m.Tr c.state μ c'.state ∧ μ.applyToTape c.tape = c'.tape
 ```
 
-`Cslib.Computability.Turing.SingleTape.SingleTapeNTM.MYields` (definition, [line 58](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean#L58))
+`Cslib.Computability.Turing.SingleTape.SingleTapeNTM.MYields` (definition, [line 58](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean#L58))
 
 > Multistep execution of an NTM, defined as the reflexive and transitive closure of one-step
 > execution.
@@ -56,7 +56,7 @@ theorem yields_tr {m : SingleTapeNTM State Symbol} :
 def MYields (m : SingleTapeNTM State Symbol)
 ```
 
-`Cslib.Computability.Turing.SingleTape.SingleTapeNTM.mYields_mTr` (theorem, [line 64](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean#L64))
+`Cslib.Computability.Turing.SingleTape.SingleTapeNTM.mYields_mTr` (theorem, [line 64](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean#L64))
 
 > Characterisation of executions in terms of multistep transitions.
 
@@ -66,7 +66,7 @@ theorem mYields_mTr {m : SingleTapeNTM State Symbol} :
     μs.foldl TrLabel.applyToTape (some c.tape) = c'.tape
 ```
 
-`Cslib.Computability.Turing.SingleTape.SingleTapeNTM.AcceptsInSteps` (definition, [line 101](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean#L101))
+`Cslib.Computability.Turing.SingleTape.SingleTapeNTM.AcceptsInSteps` (definition, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean#L101))
 
 > The NTM `m` accepts `xs` in `n` execution steps.
 
@@ -74,7 +74,7 @@ theorem mYields_mTr {m : SingleTapeNTM State Symbol} :
 def AcceptsInSteps (m : SingleTapeNTM State Symbol) (xs : List Symbol) (n : ℕ) : Prop
 ```
 
-`Cslib.Computability.Turing.SingleTape.SingleTapeNTM.AcceptsInAtMostSteps` (definition, [line 105](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean#L105))
+`Cslib.Computability.Turing.SingleTape.SingleTapeNTM.AcceptsInAtMostSteps` (definition, [line 105](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean#L105))
 
 > The NTM `m` accepts `xs` in at most `n` execution steps.
 
@@ -91,5 +91,5 @@ def AcceptsInAtMostSteps (m : SingleTapeNTM State Symbol) (xs : List Symbol) (n 
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean)
+- [Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/NonDeterministic.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.SingleTape.NonDeterministic.json)

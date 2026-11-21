@@ -7,7 +7,7 @@ proof: formalized
 
 # Nondeterministic Automaton
 
-`Cslib.Computability.Automata.NA.Basic`, in [Cslib/Computability/Automata/NA/Basic.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/Basic.lean), by Fabrizio Montesi, Ching-Tsun Chou, Chris Henson.
+`Cslib.Computability.Automata.NA.Basic`, in [Cslib/Computability/Automata/NA/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Basic.lean), by Fabrizio Montesi, Ching-Tsun Chou, Chris Henson.
 
 > A Nondeterministic Automaton (NA) is a transition relation equipped with a set of initial states.
 >
@@ -24,7 +24,7 @@ proof: formalized
 > * [J. E. Hopcroft, R. Motwani, J. D. Ullman,
 >   *Introduction to Automata Theory, Languages, and Computation*][Hopcroft2006]
 
-`Cslib.Automata.NA` (structure, [line 39](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/Basic.lean#L39))
+`Cslib.Automata.NA` (structure, [line 39](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Basic.lean#L39))
 
 > A nondeterministic automaton extends a `LTS` with a set of initial states.
 
@@ -34,7 +34,7 @@ structure NA (State Symbol : Type*) extends LTS State Symbol where
   start : Set State
 ```
 
-`Cslib.Automata.NA.Run` (structure, [line 48](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/Basic.lean#L48))
+`Cslib.Automata.NA.Run` (structure, [line 48](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Basic.lean#L48))
 
 > Infinite run.
 
@@ -44,7 +44,7 @@ structure Run (na : NA State Symbol) (xs : ωSequence Symbol) (ss : ωSequence S
   trans : na.OmegaExecution ss xs
 ```
 
-`Cslib.Automata.NA.FinAcc` (structure, [line 53](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/Basic.lean#L53))
+`Cslib.Automata.NA.FinAcc` (structure, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Basic.lean#L53))
 
 > A nondeterministic automaton that accepts finite strings (lists of symbols).
 
@@ -54,7 +54,7 @@ structure FinAcc (State Symbol : Type*) extends NA State Symbol where
   accept : Set State
 ```
 
-`Cslib.Automata.NA.Buchi` (structure, [line 71](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/Basic.lean#L71))
+`Cslib.Automata.NA.Buchi` (structure, [line 71](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Basic.lean#L71))
 
 > Nondeterministic Buchi automaton.
 
@@ -64,7 +64,7 @@ structure Buchi (State Symbol : Type*) extends NA State Symbol where
   accept : Set State
 ```
 
-`Cslib.Automata.NA.Muller` (structure, [line 86](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/Basic.lean#L86))
+`Cslib.Automata.NA.Muller` (structure, [line 86](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Basic.lean#L86))
 
 > Nondeterministic Muller automaton.
 
@@ -86,5 +86,5 @@ structure Muller (State Symbol : Type*) extends NA State Symbol where
 
 ## Sources
 
-- [Cslib/Computability/Automata/NA/Basic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/Basic.lean)
+- [Cslib/Computability/Automata/NA/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Basic.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.NA.Basic.json)

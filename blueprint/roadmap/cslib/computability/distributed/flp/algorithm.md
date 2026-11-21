@@ -7,7 +7,7 @@ proof: formalized
 
 # Distributed algorithms for solving the consensus problem
 
-`Cslib.Computability.Distributed.FLP.Algorithm`, in [Cslib/Computability/Distributed/FLP/Algorithm.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean), by Ching-Tsun Chou.
+`Cslib.Computability.Distributed.FLP.Algorithm`, in [Cslib/Computability/Distributed/FLP/Algorithm.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean), by Ching-Tsun Chou.
 
 > In the consensus problem, each process of a distributed algorithm is given a boolean value
 > at the beginning.  Then by exchanging messages asynchronously, they are supposed to agree on
@@ -27,7 +27,7 @@ proof: formalized
 > `[Fintype P]`, but that assumption will be added only where necessary.  No assumption whatsoever
 > will be made about `M` and `S`.  In particular, they could be infinite.
 
-`Cslib.FLP.Message` (structure, [line 42](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L42))
+`Cslib.FLP.Message` (structure, [line 42](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L42))
 
 > The type of messages that processes send to each other.
 
@@ -41,7 +41,7 @@ structure Message (P M : Type*) where
 deriving DecidableEq
 ```
 
-`Cslib.FLP.ProcState` (structure, [line 51](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L51))
+`Cslib.FLP.ProcState` (structure, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L51))
 
 > The type of a process's local state.
 
@@ -53,7 +53,7 @@ structure ProcState (S : Type*) where
   out : Option Bool
 ```
 
-`Cslib.FLP.State` (structure, [line 58](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L58))
+`Cslib.FLP.State` (structure, [line 58](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L58))
 
 > The global state of the distributed algorithm.
 
@@ -66,7 +66,7 @@ structure State (P M S : Type*) where
   proc : P → ProcState S
 ```
 
-`Cslib.FLP.Algorithm` (structure, [line 69](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L69))
+`Cslib.FLP.Algorithm` (structure, [line 69](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L69))
 
 > The specification of a distributed algorithm for solving the consensus problem.
 > Note that each field below can depend on a process's identifier (recall that each `Message`
@@ -86,7 +86,7 @@ structure Algorithm (P M S : Type*) where
   out : Message P M → ProcState S → Option Bool
 ```
 
-`Cslib.FLP.Action` (abbreviation, [line 82](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L82))
+`Cslib.FLP.Action` (abbreviation, [line 82](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L82))
 
 > The type of labels of the LTS defined by an `Algorithm`, where `some m` denotes
 > the reception of message `m` and `none` denotes a stuttering step.
@@ -95,7 +95,7 @@ structure Algorithm (P M S : Type*) where
 abbrev Action (P M : Type*)
 ```
 
-`Cslib.FLP.DestIn` (definition, [line 85](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L85))
+`Cslib.FLP.DestIn` (definition, [line 85](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L85))
 
 > `DestIn ps x` means that if `x ≠ none`, then `x = some m` with `m.dest ∈ ps`.
 
@@ -103,7 +103,7 @@ abbrev Action (P M : Type*)
 def DestIn (ps : Set P) : Action P M → Prop
 ```
 
-`Cslib.FLP.Algorithm.start` (definition, [line 93](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L93))
+`Cslib.FLP.Algorithm.start` (definition, [line 93](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L93))
 
 > Given `inp : P → Bool`, the initial state of the algorithm `a` contains a single message
 > carrying the boolean value `inp p` to each process `p`, where the initial internal state is
@@ -114,7 +114,7 @@ def DestIn (ps : Set P) : Action P M → Prop
 def Algorithm.start [Fintype P] (a : Algorithm P M S) (inp : P → Bool) : State P M S
 ```
 
-`Cslib.FLP.Algorithm.recvMsg` (definition, [line 101](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L101))
+`Cslib.FLP.Algorithm.recvMsg` (definition, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L101))
 
 > The specification of how the global state of the algorithm changes when a process `p`
 > receives a message `m`.  (This function will be used only when such a message `m` exists.)
@@ -125,7 +125,7 @@ def Algorithm.start [Fintype P] (a : Algorithm P M S) (inp : P → Bool) : State
 def Algorithm.recvMsg (a : Algorithm P M S) (m : Message P M) (s : State P M S) : State P M S
 ```
 
-`Cslib.FLP.Algorithm.lts` (definition, [line 112](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L112))
+`Cslib.FLP.Algorithm.lts` (definition, [line 112](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L112))
 
 > The transition relation of the LTS defined by the algorithm `a`.
 > Note that the stuttering step is always allowed.
@@ -134,7 +134,7 @@ def Algorithm.recvMsg (a : Algorithm P M S) (m : Message P M) (s : State P M S) 
 def Algorithm.lts (a : Algorithm P M S) : LTS (State P M S) (Action P M)
 ```
 
-`Cslib.FLP.Algorithm.Reachable` (definition, [line 118](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L118))
+`Cslib.FLP.Algorithm.Reachable` (definition, [line 118](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L118))
 
 > `a.Reachable inp s` means that `s` is a reachable state of `a` given the initial `inp`.
 
@@ -143,7 +143,7 @@ def Algorithm.Reachable [Fintype P]
     (a : Algorithm P M S) (inp : P → Bool) (s : State P M S) : Prop
 ```
 
-`Cslib.FLP.State.ProcDecided` (abbreviation, [line 124](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L124))
+`Cslib.FLP.State.ProcDecided` (abbreviation, [line 124](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L124))
 
 > `s.ProcDecided p b` means that process `p` is decided on the boolean value `b`
 > in the state `s`.
@@ -152,7 +152,7 @@ def Algorithm.Reachable [Fintype P]
 abbrev State.ProcDecided (s : State P M S) (p : P) (b : Bool) : Prop
 ```
 
-`Cslib.FLP.State.Decided` (definition, [line 129](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L129))
+`Cslib.FLP.State.Decided` (definition, [line 129](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L129))
 
 > `s.Decided b` means that at least one process is decided on the boolean value `b`
 > in the state `s`.
@@ -161,7 +161,7 @@ abbrev State.ProcDecided (s : State P M S) (p : P) (b : Bool) : Prop
 def State.Decided (s : State P M S) (b : Bool) : Prop
 ```
 
-`Cslib.FLP.State.Agreed` (definition, [line 133](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L133))
+`Cslib.FLP.State.Agreed` (definition, [line 133](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L133))
 
 > `s.Agreed` says that all boolean values decided on in state `s` must agree with each other.
 
@@ -169,7 +169,7 @@ def State.Decided (s : State P M S) (b : Bool) : Prop
 def State.Agreed (s : State P M S) : Prop
 ```
 
-`Cslib.FLP.Algorithm.SafeConsensus` (definition, [line 140](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L140))
+`Cslib.FLP.Algorithm.SafeConsensus` (definition, [line 140](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L140))
 
 > `a.SafeConsensus` says that in any reachable state of `a`, (1) all boolean values decided on
 > in that state must agree with each other and (2) that boolean value (if it exists) must be
@@ -180,7 +180,7 @@ def State.Agreed (s : State P M S) : Prop
 def Algorithm.SafeConsensus [Fintype P] (a : Algorithm P M S) : Prop
 ```
 
-`Cslib.FLP.Algorithm.tr_none` (theorem, [line 148](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L148))
+`Cslib.FLP.Algorithm.tr_none` (theorem, [line 148](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L148))
 
 > The stuttering step does not change the global state.
 
@@ -188,7 +188,7 @@ def Algorithm.SafeConsensus [Fintype P] (a : Algorithm P M S) : Prop
 theorem tr_none {s s' : State P M S} (h : a.lts.Tr s none s') : s = s'
 ```
 
-`Cslib.FLP.Algorithm.reachable_start` (theorem, [line 152](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L152))
+`Cslib.FLP.Algorithm.reachable_start` (theorem, [line 152](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L152))
 
 > The initial state is reachable.
 
@@ -197,7 +197,7 @@ theorem reachable_start [Fintype P] :
     a.Reachable inp (a.start inp)
 ```
 
-`Cslib.FLP.Algorithm.reachable_stable` (theorem, [line 158](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L158))
+`Cslib.FLP.Algorithm.reachable_stable` (theorem, [line 158](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L158))
 
 > If `s` is reachable from the initial state and `s'` is reachable from `s`,
 > then `s'` is reachable from the initial state.
@@ -207,7 +207,7 @@ theorem reachable_stable [Fintype P] {s s' : State P M S}
     (hr : a.Reachable inp s) (hc : a.lts.CanReach s s') : a.Reachable inp s'
 ```
 
-`Cslib.FLP.Algorithm.procDecided_stable` (theorem, [line 167](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L167))
+`Cslib.FLP.Algorithm.procDecided_stable` (theorem, [line 167](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L167))
 
 > If `p` is decided on the boolean value `b` in `s` and `s'` is reachable from `s`,
 > then `p` is still decided on `b` in `s'`.
@@ -217,7 +217,7 @@ theorem procDecided_stable {s s' : State P M S} {p : P} {b : Bool}
     (hd : s.ProcDecided p b) (hc : a.lts.CanReach s s') : s'.ProcDecided p b
 ```
 
-`Cslib.FLP.Algorithm.decided_stable` (theorem, [line 174](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L174))
+`Cslib.FLP.Algorithm.decided_stable` (theorem, [line 174](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L174))
 
 > If at least one process is decided on the boolean value `b` in `s` and `s'` is reachable
 > from `s`, then at least one process is still decided on `b` in `s'`.
@@ -227,7 +227,7 @@ theorem decided_stable {s s' : State P M S} {b : Bool}
     (hd : s.Decided b) (hc : a.lts.CanReach s s') : s'.Decided b
 ```
 
-`Cslib.FLP.Algorithm.recvMsg_comm` (theorem, [line 182](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L182))
+`Cslib.FLP.Algorithm.recvMsg_comm` (theorem, [line 182](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L182))
 
 > If `m1` and `m2` are both inflight and they have different destinations,
 > then receiving them in either order produces the same end state.
@@ -239,7 +239,7 @@ theorem recvMsg_comm {m1 m2 : Message P M} {s : State P M S}
     a.recvMsg m2 (a.recvMsg m1 s) = a.recvMsg m1 (a.recvMsg m2 s)
 ```
 
-`Cslib.FLP.Algorithm.tr_diamond` (theorem, [line 201](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L201))
+`Cslib.FLP.Algorithm.tr_diamond` (theorem, [line 201](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L201))
 
 > A diamond property for the transition relation `a.lts.Tr`.
 
@@ -250,7 +250,7 @@ theorem tr_diamond {ps : Set P} {x1 x2 : Action P M} {s s1 s2 : State P M S}
     ∃ s', a.lts.Tr s1 x2 s' ∧ a.lts.Tr s2 x1 s'
 ```
 
-`Cslib.FLP.Algorithm.mTr_notRcvd_enabled` (theorem, [line 218](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L218))
+`Cslib.FLP.Algorithm.mTr_notRcvd_enabled` (theorem, [line 218](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L218))
 
 > A message that is in-flight stays in-flight as long as it is not received
 > (finite execution version).
@@ -260,7 +260,7 @@ theorem mTr_notRcvd_enabled {s t : State P M S} {xl : List (Action P M)} {m : Me
     (hst : a.lts.MTr s xl t) (hs : m ∈ s.msgs) (hxl : ¬ some m ∈ xl) : m ∈ t.msgs
 ```
 
-`Cslib.FLP.Algorithm.omega_notRcvd_enabled` (theorem, [line 228](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean#L228))
+`Cslib.FLP.Algorithm.omega_notRcvd_enabled` (theorem, [line 228](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean#L228))
 
 > A message that is in-flight stays in-flight as long as it is not received
 > (infinite execution version).
@@ -278,5 +278,5 @@ theorem omega_notRcvd_enabled
 
 ## Sources
 
-- [Cslib/Computability/Distributed/FLP/Algorithm.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/Algorithm.lean)
+- [Cslib/Computability/Distributed/FLP/Algorithm.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/Algorithm.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Distributed.FLP.Algorithm.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Statistical Distance of Finite Probability Mass Functions
 
-`Cslib.Probability.StatisticalDistance`, in [Cslib/Probability/StatisticalDistance.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/StatisticalDistance.lean), by Samuel Schlesinger.
+`Cslib.Probability.StatisticalDistance`, in [Cslib/Probability/StatisticalDistance.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/StatisticalDistance.lean), by Samuel Schlesinger.
 
 > For PMFs `p` and `q` on a finite type, their statistical distance is
 >
@@ -48,7 +48,7 @@ proof: formalized
 > * [D. Boneh, V. Shoup, *A Graduate Course in Applied Cryptography*,
 >   Version 0.6][BonehShoup2023]
 
-`Cslib.Probability.PMF.instMetricSpace` (instance, [line 82](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/StatisticalDistance.lean#L82))
+`Cslib.Probability.PMF.instMetricSpace` (instance, [line 82](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/StatisticalDistance.lean#L82))
 
 > Statistical distance makes the PMFs on a finite type a metric space
 > ([BonehShoup2023], Definition 3.5).
@@ -58,7 +58,7 @@ noncomputable scoped instance instMetricSpace [Fintype α] :
     MetricSpace (PMF α)
 ```
 
-`Cslib.Probability.PMF.dist_eq` (theorem, [line 101](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/StatisticalDistance.lean#L101))
+`Cslib.Probability.PMF.dist_eq` (theorem, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/StatisticalDistance.lean#L101))
 
 > The distance between two PMFs on a finite type is their statistical
 > distance ([BonehShoup2023], Definition 3.5).
@@ -68,7 +68,7 @@ theorem dist_eq [Fintype α] (p q : PMF α) :
     dist p q = (∑ a, |(p a).toReal - (q a).toReal|) / 2
 ```
 
-`Cslib.Probability.PMF.dist_le_one` (theorem, [line 106](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/StatisticalDistance.lean#L106))
+`Cslib.Probability.PMF.dist_le_one` (theorem, [line 106](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/StatisticalDistance.lean#L106))
 
 > Statistical distance is at most one.
 
@@ -76,7 +76,7 @@ theorem dist_eq [Fintype α] (p q : PMF α) :
 theorem dist_le_one [Fintype α] (p q : PMF α) : dist p q ≤ 1
 ```
 
-`Cslib.Probability.PMF.dist_eq_one_of_disjoint_support` (theorem, [line 115](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/StatisticalDistance.lean#L115))
+`Cslib.Probability.PMF.dist_eq_one_of_disjoint_support` (theorem, [line 115](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/StatisticalDistance.lean#L115))
 
 > PMFs with disjoint supports are at the maximum statistical distance.
 
@@ -85,7 +85,7 @@ theorem dist_eq_one_of_disjoint_support [Fintype α] {p q : PMF α}
     (h : Disjoint p.support q.support) : dist p q = 1
 ```
 
-`Cslib.Probability.PMF.dist_bind_le` (theorem, [line 130](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/StatisticalDistance.lean#L130))
+`Cslib.Probability.PMF.dist_bind_le` (theorem, [line 130](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/StatisticalDistance.lean#L130))
 
 > Applying the same randomized kernel to two PMFs cannot increase their
 > statistical distance.
@@ -96,7 +96,7 @@ theorem dist_bind_le [Fintype α] [Fintype β]
     dist (p.bind kernel) (q.bind kernel) ≤ dist p q
 ```
 
-`Cslib.Probability.PMF.dist_map_le` (theorem, [line 152](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/StatisticalDistance.lean#L152))
+`Cslib.Probability.PMF.dist_map_le` (theorem, [line 152](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/StatisticalDistance.lean#L152))
 
 > Deterministic postprocessing cannot increase statistical distance
 > ([BonehShoup2023], Theorem 3.13).
@@ -107,7 +107,7 @@ theorem dist_map_le [Fintype α] [Fintype β]
     dist (p.map f) (q.map f) ≤ dist p q
 ```
 
-`Cslib.Probability.PMF.StatisticallyClose` (definition, [line 159](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/StatisticalDistance.lean#L159))
+`Cslib.Probability.PMF.StatisticallyClose` (definition, [line 159](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/StatisticalDistance.lean#L159))
 
 > Two PMFs are `ε`-statistically close when their statistical distance is at
 > most `ε`. The `ℝ≥0` parameter rules out meaningless negative bounds.
@@ -116,7 +116,7 @@ theorem dist_map_le [Fintype α] [Fintype β]
 def StatisticallyClose [Fintype α] (p q : PMF α) (ε : ℝ≥0) : Prop
 ```
 
-`Cslib.Probability.PMF.StatisticallyClose.refl` (theorem, [line 165](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/StatisticalDistance.lean#L165))
+`Cslib.Probability.PMF.StatisticallyClose.refl` (theorem, [line 165](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/StatisticalDistance.lean#L165))
 
 > Every PMF is statistically close to itself with zero error.
 
@@ -124,7 +124,7 @@ def StatisticallyClose [Fintype α] (p q : PMF α) (ε : ℝ≥0) : Prop
 theorem refl [Fintype α] (p : PMF α) : StatisticallyClose p p 0
 ```
 
-`Cslib.Probability.PMF.StatisticallyClose.symm` (theorem, [line 169](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/StatisticalDistance.lean#L169))
+`Cslib.Probability.PMF.StatisticallyClose.symm` (theorem, [line 169](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/StatisticalDistance.lean#L169))
 
 > Statistical closeness is symmetric.
 
@@ -133,7 +133,7 @@ theorem symm [Fintype α] {p q : PMF α} {ε : ℝ≥0}
     (h : StatisticallyClose p q ε) : StatisticallyClose q p ε
 ```
 
-`Cslib.Probability.PMF.StatisticallyClose.mono` (theorem, [line 174](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/StatisticalDistance.lean#L174))
+`Cslib.Probability.PMF.StatisticallyClose.mono` (theorem, [line 174](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/StatisticalDistance.lean#L174))
 
 > A statistical-closeness bound remains valid when its error is enlarged.
 
@@ -141,7 +141,7 @@ theorem symm [Fintype α] {p q : PMF α} {ε : ℝ≥0}
 theorem mono [Fintype α] {p q : PMF α} : Monotone (StatisticallyClose p q)
 ```
 
-`Cslib.Probability.PMF.StatisticallyClose.trans` (theorem, [line 179](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/StatisticalDistance.lean#L179))
+`Cslib.Probability.PMF.StatisticallyClose.trans` (theorem, [line 179](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/StatisticalDistance.lean#L179))
 
 > Closeness bounds chain through an intermediate distribution, adding the
 > errors.
@@ -152,7 +152,7 @@ theorem trans [Fintype α] {p q r : PMF α} {ε δ : ℝ≥0}
     StatisticallyClose p r (ε + δ)
 ```
 
-`Cslib.Probability.PMF.StatisticallyClose.bind` (theorem, [line 186](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/StatisticalDistance.lean#L186))
+`Cslib.Probability.PMF.StatisticallyClose.bind` (theorem, [line 186](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/StatisticalDistance.lean#L186))
 
 > A shared randomized postprocessing kernel preserves statistical
 > closeness.
@@ -163,7 +163,7 @@ theorem bind [Fintype α] [Fintype β] {p q : PMF α} {ε : ℝ≥0}
     StatisticallyClose (p.bind kernel) (q.bind kernel) ε
 ```
 
-`Cslib.Probability.PMF.StatisticallyClose.map` (theorem, [line 192](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/StatisticalDistance.lean#L192))
+`Cslib.Probability.PMF.StatisticallyClose.map` (theorem, [line 192](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/StatisticalDistance.lean#L192))
 
 > Deterministic postprocessing preserves statistical closeness.
 
@@ -173,7 +173,7 @@ theorem map [Fintype α] [Fintype β] {p q : PMF α} {ε : ℝ≥0}
     StatisticallyClose (p.map f) (q.map f) ε
 ```
 
-`Cslib.Probability.PMF.statisticallyClose_zero_iff` (theorem, [line 201](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/StatisticalDistance.lean#L201))
+`Cslib.Probability.PMF.statisticallyClose_zero_iff` (theorem, [line 201](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/StatisticalDistance.lean#L201))
 
 > Statistical closeness with zero error is equality.
 
@@ -188,5 +188,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Probability/StatisticalDistance.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Probability/StatisticalDistance.lean)
+- [Cslib/Probability/StatisticalDistance.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/StatisticalDistance.lean)
 - [Declaration ledger](../../../sources/cslib/Cslib.Probability.StatisticalDistance.json)

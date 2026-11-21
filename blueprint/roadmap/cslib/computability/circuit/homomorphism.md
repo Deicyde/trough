@@ -7,7 +7,7 @@ proof: formalized
 
 # Homomorphisms of interpretations
 
-`Cslib.Computability.Circuit.Homomorphism`, in [Cslib/Computability/Circuit/Homomorphism.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Homomorphism.lean), by Samuel Schlesinger.
+`Cslib.Computability.Circuit.Homomorphism`, in [Cslib/Computability/Circuit/Homomorphism.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Homomorphism.lean), by Samuel Schlesinger.
 
 > A homomorphism between two interpretations of the same signature is a map of
 > carriers that commutes with every operation. This file defines identity and
@@ -17,7 +17,7 @@ proof: formalized
 > programs, and circuits commutes with them (`Line.map_eval`, `Program.map_eval`,
 > `Program.map_trace`, and `Circuit.map_eval`).
 
-`Cslib.Circuits.Homomorphism` (structure, [line 32](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Homomorphism.lean#L32))
+`Cslib.Circuits.Homomorphism` (structure, [line 32](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Homomorphism.lean#L32))
 
 > A map that preserves every operation in a pair of interpretations.
 
@@ -31,7 +31,7 @@ structure Homomorphism (i₁ : Interpretation σ U₁) (i₂ : Interpretation σ
       map (i₁ op input) = i₂ op (map ∘ input)
 ```
 
-`Cslib.Circuits.Homomorphism.ext` (theorem, [line 42](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Homomorphism.lean#L42))
+`Cslib.Circuits.Homomorphism.ext` (theorem, [line 42](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Homomorphism.lean#L42))
 
 ```lean
 theorem ext
@@ -41,7 +41,7 @@ theorem ext
     (map_eq : left.map = right.map) : left = right
 ```
 
-`Cslib.Circuits.Homomorphism.id` (definition, [line 53](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Homomorphism.lean#L53))
+`Cslib.Circuits.Homomorphism.id` (definition, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Homomorphism.lean#L53))
 
 > The identity map is a homomorphism.
 
@@ -50,7 +50,7 @@ def id (interpretation : Interpretation σ U) :
     Homomorphism interpretation interpretation
 ```
 
-`Cslib.Circuits.Homomorphism.comp` (definition, [line 61](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Homomorphism.lean#L61))
+`Cslib.Circuits.Homomorphism.comp` (definition, [line 61](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Homomorphism.lean#L61))
 
 > Compose homomorphisms in the direction of their underlying maps.
 
@@ -63,7 +63,7 @@ def comp
     (inner : Homomorphism i₁ i₂) : Homomorphism i₁ i₃
 ```
 
-`Cslib.Circuits.Homomorphism.id_map` (theorem, [line 73](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Homomorphism.lean#L73))
+`Cslib.Circuits.Homomorphism.id_map` (theorem, [line 73](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Homomorphism.lean#L73))
 
 ```lean
 theorem id_map
@@ -71,7 +71,7 @@ theorem id_map
     (Homomorphism.id interpretation).map = _root_.id
 ```
 
-`Cslib.Circuits.Homomorphism.comp_map` (theorem, [line 77](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Homomorphism.lean#L77))
+`Cslib.Circuits.Homomorphism.comp_map` (theorem, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Homomorphism.lean#L77))
 
 ```lean
 theorem comp_map
@@ -83,7 +83,7 @@ theorem comp_map
     (outer.comp inner).map = outer.map ∘ inner.map
 ```
 
-`Cslib.Circuits.Homomorphism.id_comp` (theorem, [line 85](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Homomorphism.lean#L85))
+`Cslib.Circuits.Homomorphism.id_comp` (theorem, [line 85](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Homomorphism.lean#L85))
 
 ```lean
 theorem id_comp
@@ -93,7 +93,7 @@ theorem id_comp
     (Homomorphism.id target).comp homomorphism = homomorphism
 ```
 
-`Cslib.Circuits.Homomorphism.comp_id` (theorem, [line 93](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Homomorphism.lean#L93))
+`Cslib.Circuits.Homomorphism.comp_id` (theorem, [line 93](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Homomorphism.lean#L93))
 
 ```lean
 theorem comp_id
@@ -103,7 +103,7 @@ theorem comp_id
     homomorphism.comp (Homomorphism.id source) = homomorphism
 ```
 
-`Cslib.Circuits.Homomorphism.comp_assoc` (theorem, [line 101](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Homomorphism.lean#L101))
+`Cslib.Circuits.Homomorphism.comp_assoc` (theorem, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Homomorphism.lean#L101))
 
 ```lean
 theorem comp_assoc
@@ -123,5 +123,5 @@ theorem comp_assoc
 
 ## Sources
 
-- [Cslib/Computability/Circuit/Homomorphism.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Homomorphism.lean)
+- [Cslib/Computability/Circuit/Homomorphism.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Homomorphism.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Circuit.Homomorphism.json)

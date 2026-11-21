@@ -1,13 +1,13 @@
 ---
 catalog: module
-lean: Cslib.RelationAlgebra, Cslib.CompleteRelationAlgebra, Cslib.CompleteAtomicRelationAlgebra, Cslib.RelationAlgebra.ofTarski, Cslib.RelationAlgebra.star_mono, Cslib.RelationAlgebra.starOrderIso, Cslib.RelationAlgebra.star_bot, Cslib.RelationAlgebra.star_le_star_iff, Cslib.RelationAlgebra.star_lt_star_iff, Cslib.RelationAlgebra.star_inf, Cslib.RelationAlgebra.star_compl, Cslib.RelationAlgebra.star_sdiff, Cslib.RelationAlgebra.mul_sup, Cslib.RelationAlgebra.mul_bot, Cslib.RelationAlgebra.isAtom_star_iff, Cslib.RelationAlgebra.atom_cycle_left, Cslib.RelationAlgebra.left_modular, Cslib.RelationAlgebra.exists_atom_le_mul_right, Cslib.RelationAlgebra.exists_atom_le_mul_left, Cslib.RelationAlgebra.IsIntegral, Cslib.RelationAlgebra.identityAtoms, Cslib.RelationAlgebra.symmetricDiversityAtoms, Cslib.RelationAlgebra.nonsymmetricDiversityAtoms, Cslib.RelationAlgebra.le_compl_one_of_mem_nonsymmetricDiversityAtoms
+lean: Cslib.RelationAlgebra, Cslib.CompleteRelationAlgebra, Cslib.CompleteAtomicRelationAlgebra, Cslib.RelationAlgebra.ofTarski, Cslib.RelationAlgebra.star_mono, Cslib.RelationAlgebra.starOrderIso, Cslib.RelationAlgebra.star_bot, Cslib.RelationAlgebra.star_le_star_iff, Cslib.RelationAlgebra.star_lt_star_iff, Cslib.RelationAlgebra.le_star_iff, Cslib.RelationAlgebra.star_inf, Cslib.RelationAlgebra.star_compl, Cslib.RelationAlgebra.star_sdiff, Cslib.RelationAlgebra.mul_sup, Cslib.RelationAlgebra.mul_bot, Cslib.RelationAlgebra.isAtom_star_iff, Cslib.RelationAlgebra.left_modular, Cslib.RelationAlgebra.inf_star_mul_ne_bot, Cslib.RelationAlgebra.atom_cycle_left, Cslib.RelationAlgebra.atom_cycle_left_iff, Cslib.RelationAlgebra.exists_atom_le_mul_right, Cslib.RelationAlgebra.exists_atom_le_mul_left, Cslib.RelationAlgebra.IsIntegral, Cslib.RelationAlgebra.identityAtoms, Cslib.RelationAlgebra.symmetricDiversityAtoms, Cslib.RelationAlgebra.nonsymmetricDiversityAtoms, Cslib.RelationAlgebra.le_compl_one_of_mem_nonsymmetricDiversityAtoms
 statement: formalized
 proof: formalized
 ---
 
 # Relation algebras
 
-`Cslib.Foundations.RelationAlgebra.Basic`, in [Cslib/Foundations/RelationAlgebra/Basic.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean), by Chris Henson.
+`Cslib.Foundations.RelationAlgebra.Basic`, in [Cslib/Foundations/RelationAlgebra/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean), by Chris Henson.
 
 > A relation algebra in the sense of Tarski (not to be confused with a relational algebra) is an
 > extension of Boolean algebras that are designed to form an algebraic analysis of relations,
@@ -18,7 +18,7 @@ proof: formalized
 >
 > * [R. Maddux, *Relation Algebras*][Maddux2006]
 
-`Cslib.RelationAlgebra` (class, [line 36](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L36))
+`Cslib.RelationAlgebra` (class, [line 36](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L36))
 
 > The class of relation algebras. Note the notational differences from the literature. In addition
 > to inheriting Mathlib's notations for Boolean algebras, `star` is used for converse, and the monoid
@@ -31,7 +31,7 @@ class RelationAlgebra (α : Type*) extends BooleanAlgebra α, Monoid α, StarMul
   tarski (a b : α) : star a * (a * b)ᶜ ≤ bᶜ
 ```
 
-`Cslib.CompleteRelationAlgebra` (class, [line 42](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L42))
+`Cslib.CompleteRelationAlgebra` (class, [line 42](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L42))
 
 > The relation algebra of a complete Boolean algebra.
 
@@ -39,7 +39,7 @@ class RelationAlgebra (α : Type*) extends BooleanAlgebra α, Monoid α, StarMul
 class CompleteRelationAlgebra (α : Type*) extends RelationAlgebra α, CompleteBooleanAlgebra α
 ```
 
-`Cslib.CompleteAtomicRelationAlgebra` (class, [line 45](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L45))
+`Cslib.CompleteAtomicRelationAlgebra` (class, [line 45](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L45))
 
 > The relation algebra of a complete and atomic Boolean algebra.
 
@@ -48,7 +48,7 @@ class CompleteAtomicRelationAlgebra (α : Type*) extends CompleteRelationAlgebra
     CompleteAtomicBooleanAlgebra α
 ```
 
-`Cslib.RelationAlgebra.ofTarski` (definition, [line 52](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L52))
+`Cslib.RelationAlgebra.ofTarski` (definition, [line 52](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L52))
 
 > A `RelationAlgebra` can be constructed using Tarski's original ten axioms.
 
@@ -66,13 +66,13 @@ def ofTarski {α : Type*} [Max α] [Compl α] [Mul α] [One α] [Star α]
     (tarski : ∀ a b : α, star a * (a * b)ᶜ ⊔ bᶜ = bᶜ) : RelationAlgebra α
 ```
 
-`Cslib.RelationAlgebra.star_mono` (theorem, [line 85](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L85))
+`Cslib.RelationAlgebra.star_mono` (theorem, [line 85](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L85))
 
 ```lean
 theorem star_mono : Monotone (star : α → α)
 ```
 
-`Cslib.RelationAlgebra.starOrderIso` (definition, [line 91](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L91))
+`Cslib.RelationAlgebra.starOrderIso` (definition, [line 91](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L91))
 
 > Converse as an automorphism of a relation algebra.
 
@@ -80,74 +80,97 @@ theorem star_mono : Monotone (star : α → α)
 def starOrderIso : α ≃o α
 ```
 
-`Cslib.RelationAlgebra.star_bot` (theorem, [line 96](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L96))
+`Cslib.RelationAlgebra.star_bot` (theorem, [line 96](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L96))
 
 ```lean
 theorem star_bot : star (⊥ : α) = ⊥
 ```
 
-`Cslib.RelationAlgebra.star_le_star_iff` (theorem, [line 99](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L99))
+`Cslib.RelationAlgebra.star_le_star_iff` (theorem, [line 99](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L99))
 
 ```lean
 theorem star_le_star_iff {a b : α} : star a ≤ star b ↔ a ≤ b
 ```
 
-`Cslib.RelationAlgebra.star_lt_star_iff` (theorem, [line 102](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L102))
+`Cslib.RelationAlgebra.star_lt_star_iff` (theorem, [line 102](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L102))
 
 ```lean
 theorem star_lt_star_iff {a b : α} : star a < star b ↔ a < b
 ```
 
-`Cslib.RelationAlgebra.star_inf` (theorem, [line 105](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L105))
+`Cslib.RelationAlgebra.le_star_iff` (theorem, [line 105](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L105))
+
+```lean
+theorem le_star_iff {a b : α} : a ≤ star b ↔ star a ≤ b
+```
+
+`Cslib.RelationAlgebra.star_inf` (theorem, [line 108](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L108))
 
 ```lean
 theorem star_inf (a b : α) : star (a ⊓ b) = star a ⊓ star b
 ```
 
-`Cslib.RelationAlgebra.star_compl` (theorem, [line 108](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L108))
+`Cslib.RelationAlgebra.star_compl` (theorem, [line 111](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L111))
 
 ```lean
 theorem star_compl (a : α) : star aᶜ = (star a)ᶜ
 ```
 
-`Cslib.RelationAlgebra.star_sdiff` (theorem, [line 112](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L112))
+`Cslib.RelationAlgebra.star_sdiff` (theorem, [line 115](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L115))
 
 ```lean
 theorem star_sdiff (a b : α) : star (a \ b) = star a \ star b
 ```
 
-`Cslib.RelationAlgebra.mul_sup` (theorem, [line 115](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L115))
+`Cslib.RelationAlgebra.mul_sup` (theorem, [line 118](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L118))
 
 ```lean
 theorem mul_sup (a b c : α) : a * (b ⊔ c) = a * b ⊔ a * c
 ```
 
-`Cslib.RelationAlgebra.mul_bot` (theorem, [line 126](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L126))
+`Cslib.RelationAlgebra.mul_bot` (theorem, [line 129](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L129))
 
 ```lean
 theorem mul_bot (a : α) : a * ⊥ = ⊥
 ```
 
-`Cslib.RelationAlgebra.isAtom_star_iff` (theorem, [line 133](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L133))
+`Cslib.RelationAlgebra.isAtom_star_iff` (theorem, [line 133](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L133))
 
 ```lean
 theorem isAtom_star_iff {a : α} : IsAtom (star a) ↔ IsAtom a
 ```
 
-`Cslib.RelationAlgebra.atom_cycle_left` (theorem, [line 136](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L136))
+`Cslib.RelationAlgebra.left_modular` (theorem, [line 136](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L136))
+
+```lean
+theorem left_modular (a b c : α) : a * b ⊓ c ≤ a * (b ⊓ star a * c)
+```
+
+`Cslib.RelationAlgebra.inf_star_mul_ne_bot` (theorem, [line 146](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L146))
+
+> If a nonzero element lies below a product, the right factor meets its converse image.
+
+```lean
+theorem inf_star_mul_ne_bot {r s p : α} (hp : p ≠ ⊥) (h : p ≤ r * s) : s ⊓ star r * p ≠ ⊥
+```
+
+`Cslib.RelationAlgebra.atom_cycle_left` (theorem, [line 149](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L149))
 
 ```lean
 theorem atom_cycle_left {r s p : α} (hs : IsAtom s) (hp : p ≠ ⊥) (h : p ≤ r * s) :
     s ≤ star r * p
 ```
 
-`Cslib.RelationAlgebra.left_modular` (theorem, [line 146](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L146))
+`Cslib.RelationAlgebra.atom_cycle_left_iff` (theorem, [line 154](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L154))
+
+> For atoms, the cycle law is an equivalence.
 
 ```lean
-theorem left_modular (a b c : α) : a * b ⊓ c ≤ a * (b ⊓ star a * c)
+theorem atom_cycle_left_iff {r s p : α} (hs : IsAtom s) (hp : IsAtom p) :
+    p ≤ r * s ↔ s ≤ star r * p
 ```
 
-`Cslib.RelationAlgebra.exists_atom_le_mul_right` (theorem, [line 156](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L156))
+`Cslib.RelationAlgebra.exists_atom_le_mul_right` (theorem, [line 159](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L159))
 
 > If an atom lies below a product, its right factor can be replaced by an atom below it.
 
@@ -156,7 +179,7 @@ theorem exists_atom_le_mul_right [IsAtomic α] {a b p : α} (hp : IsAtom p) (h :
     ∃ s, IsAtom s ∧ s ≤ b ∧ p ≤ a * s
 ```
 
-`Cslib.RelationAlgebra.exists_atom_le_mul_left` (theorem, [line 166](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L166))
+`Cslib.RelationAlgebra.exists_atom_le_mul_left` (theorem, [line 166](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L166))
 
 > If an atom lies below a product, its left factor can be replaced by an atom below it.
 
@@ -165,7 +188,7 @@ theorem exists_atom_le_mul_left [IsAtomic α] {a b p : α} (hp : IsAtom p) (h : 
     ∃ r, IsAtom r ∧ r ≤ a ∧ p ≤ r * b
 ```
 
-`Cslib.RelationAlgebra.IsIntegral` (definition, [line 173](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L173))
+`Cslib.RelationAlgebra.IsIntegral` (definition, [line 173](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L173))
 
 > A relation algebra is *integral* when its identity is an atom.
 
@@ -173,7 +196,7 @@ theorem exists_atom_le_mul_left [IsAtomic α] {a b p : α} (hp : IsAtom p) (h : 
 def IsIntegral (α : Type*) [RelationAlgebra α] : Prop
 ```
 
-`Cslib.RelationAlgebra.identityAtoms` (definition, [line 176](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L176))
+`Cslib.RelationAlgebra.identityAtoms` (definition, [line 176](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L176))
 
 > The set of identity atoms.
 
@@ -181,7 +204,7 @@ def IsIntegral (α : Type*) [RelationAlgebra α] : Prop
 def identityAtoms (α : Type*) [RelationAlgebra α] : Set α
 ```
 
-`Cslib.RelationAlgebra.symmetricDiversityAtoms` (definition, [line 179](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L179))
+`Cslib.RelationAlgebra.symmetricDiversityAtoms` (definition, [line 179](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L179))
 
 > The set of symmetric diversity atoms, those below the complement of identity.
 
@@ -189,7 +212,7 @@ def identityAtoms (α : Type*) [RelationAlgebra α] : Set α
 def symmetricDiversityAtoms (α : Type*) [RelationAlgebra α] : Set α
 ```
 
-`Cslib.RelationAlgebra.nonsymmetricDiversityAtoms` (definition, [line 184](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L184))
+`Cslib.RelationAlgebra.nonsymmetricDiversityAtoms` (definition, [line 184](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L184))
 
 > The set of nonsymmetric diversity atoms. The diversity condition follows from
 > `le_compl_one_of_mem_nonsymmetricDiversityAtoms`.
@@ -198,7 +221,7 @@ def symmetricDiversityAtoms (α : Type*) [RelationAlgebra α] : Set α
 def nonsymmetricDiversityAtoms (α : Type*) [RelationAlgebra α] : Set α
 ```
 
-`Cslib.RelationAlgebra.le_compl_one_of_mem_nonsymmetricDiversityAtoms` (theorem, [line 188](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean#L188))
+`Cslib.RelationAlgebra.le_compl_one_of_mem_nonsymmetricDiversityAtoms` (theorem, [line 188](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean#L188))
 
 > Every nonsymmetric atom lies below the complement of identity.
 
@@ -213,5 +236,5 @@ theorem le_compl_one_of_mem_nonsymmetricDiversityAtoms {a : α}
 
 ## Sources
 
-- [Cslib/Foundations/RelationAlgebra/Basic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/RelationAlgebra/Basic.lean)
+- [Cslib/Foundations/RelationAlgebra/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/RelationAlgebra/Basic.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Foundations.RelationAlgebra.Basic.json)

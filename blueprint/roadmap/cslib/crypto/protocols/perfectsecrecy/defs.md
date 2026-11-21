@@ -7,7 +7,7 @@ proof: formalized
 
 # Perfect Secrecy: Definitions
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.Defs`, in [Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean), by Samuel Schlesinger.
+`Cslib.Crypto.Protocols.PerfectSecrecy.Defs`, in [Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean), by Samuel Schlesinger.
 
 > Core definitions for perfect secrecy following [KatzLindell2020], Chapter 2.
 >
@@ -26,7 +26,7 @@ proof: formalized
 > - `Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.CiphertextIndist`:
 >   ciphertext indistinguishability ([KatzLindell2020], Lemma 2.5)
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.ciphertextDist` (definition, [line 44](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean#L44))
+`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.ciphertextDist` (definition, [line 44](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean#L44))
 
 > The distribution of `Enc_K(m)` when `K ← Gen`.
 
@@ -34,7 +34,7 @@ proof: formalized
 noncomputable def ciphertextDist (scheme : EncScheme M K C) (m : M) : PMF C
 ```
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.jointDist` (definition, [line 48](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean#L48))
+`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.jointDist` (definition, [line 48](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean#L48))
 
 > Joint distribution of `(M, C)` given a message prior.
 
@@ -42,7 +42,7 @@ noncomputable def ciphertextDist (scheme : EncScheme M K C) (m : M) : PMF C
 noncomputable def jointDist (scheme : EncScheme M K C) (msgDist : PMF M) : PMF (M × C)
 ```
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.marginalCiphertextDist` (definition, [line 53](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean#L53))
+`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.marginalCiphertextDist` (definition, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean#L53))
 
 > Marginal ciphertext distribution given a message prior.
 
@@ -51,7 +51,7 @@ noncomputable def marginalCiphertextDist (scheme : EncScheme M K C)
     (msgDist : PMF M) : PMF C
 ```
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.posteriorMsgDist` (definition, [line 60](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean#L60))
+`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.posteriorMsgDist` (definition, [line 60](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean#L60))
 
 > The posterior message distribution `Pr[M | C = c]` as a probability
 > distribution, given a message prior and a ciphertext in the support of
@@ -63,7 +63,7 @@ noncomputable def posteriorMsgDist (scheme : EncScheme M K C)
     (hc : c ∈ (scheme.marginalCiphertextDist msgDist).support) : PMF M
 ```
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.posteriorMsgDist_apply` (theorem, [line 66](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean#L66))
+`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.posteriorMsgDist_apply` (theorem, [line 66](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean#L66))
 
 ```lean
 theorem posteriorMsgDist_apply (scheme : EncScheme M K C)
@@ -73,7 +73,7 @@ theorem posteriorMsgDist_apply (scheme : EncScheme M K C)
       scheme.jointDist msgDist (m, c) / scheme.marginalCiphertextDist msgDist c
 ```
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.PerfectlySecret` (definition, [line 76](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean#L76))
+`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.PerfectlySecret` (definition, [line 76](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean#L76))
 
 > An encryption scheme is perfectly secret if the posterior message
 > distribution equals the prior for every ciphertext with positive probability
@@ -83,7 +83,7 @@ theorem posteriorMsgDist_apply (scheme : EncScheme M K C)
 def PerfectlySecret (scheme : EncScheme M K C) : Prop
 ```
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.CiphertextIndist` (definition, [line 83](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean#L83))
+`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.CiphertextIndist` (definition, [line 83](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean#L83))
 
 > Ciphertext indistinguishability: the ciphertext distribution is the same
 > for all messages ([KatzLindell2020], Lemma 2.5).
@@ -99,5 +99,5 @@ def CiphertextIndist (scheme : EncScheme M K C) : Prop
 
 ## Sources
 
-- [Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean)
+- [Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Defs.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Crypto.Protocols.PerfectSecrecy.Defs.json)

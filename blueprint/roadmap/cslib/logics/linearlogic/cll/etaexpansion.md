@@ -7,9 +7,9 @@ proof: formalized
 
 # η-expansion for Classical Linear Logic (CLL)
 
-`Cslib.Logics.LinearLogic.CLL.EtaExpansion`, in [Cslib/Logics/LinearLogic/CLL/EtaExpansion.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/EtaExpansion.lean), by Fabrizio Montesi.
+`Cslib.Logics.LinearLogic.CLL.EtaExpansion`, in [Cslib/Logics/LinearLogic/CLL/EtaExpansion.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/EtaExpansion.lean), by Fabrizio Montesi.
 
-`Cslib.Logic.CLL.Proposition.expand` (definition, [line 29](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/EtaExpansion.lean#L29))
+`Cslib.Logic.CLL.Proposition.expand` (definition, [line 29](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/EtaExpansion.lean#L29))
 
 > The η-expansion of a proposition `a` is a `Proof` of `{a, a⫠}` that applies the axiom
 > only to atomic propositions.
@@ -18,7 +18,7 @@ proof: formalized
 def Proposition.expand (a : Proposition Atom) : ⇓({a, a⫠} : Sequent Atom)
 ```
 
-`Cslib.Logic.CLL.Proof.onlyAtomicAxioms` (definition, [line 81](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/EtaExpansion.lean#L81))
+`Cslib.Logic.CLL.Proof.onlyAtomicAxioms` (definition, [line 81](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/EtaExpansion.lean#L81))
 
 > A `Proof` has only atomic axioms if all its instances of the axiom treat atomic propositions.
 
@@ -26,7 +26,7 @@ def Proposition.expand (a : Proposition Atom) : ⇓({a, a⫠} : Sequent Atom)
 def Proof.onlyAtomicAxioms {Γ : Sequent Atom} (p : ⇓Γ) : Bool
 ```
 
-`Cslib.Logic.CLL.Proof.onlyAtomicAxioms_rwConclusion` (theorem, [line 99](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/EtaExpansion.lean#L99))
+`Cslib.Logic.CLL.Proof.onlyAtomicAxioms_rwConclusion` (theorem, [line 99](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/EtaExpansion.lean#L99))
 
 > `Proof.onlyAtomicAxioms` is preserved by `Proof.rwConclusion`.
 
@@ -36,7 +36,7 @@ theorem Proof.onlyAtomicAxioms_rwConclusion {Γ Δ : Sequent Atom} {heq : Γ = �
   (rwConclusion heq p).onlyAtomicAxioms
 ```
 
-`Cslib.Logic.CLL.Proof.expand_onlyAtomicAxioms` (theorem, [line 118](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/EtaExpansion.lean#L118))
+`Cslib.Logic.CLL.Proof.expand_onlyAtomicAxioms` (theorem, [line 118](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/EtaExpansion.lean#L118))
 
 > η-expansion is correct: the proof returned by η-expansion contains only atomic axioms.
 
@@ -50,5 +50,5 @@ theorem Proof.expand_onlyAtomicAxioms (a : Proposition Atom) : a.expand.onlyAtom
 
 ## Sources
 
-- [Cslib/Logics/LinearLogic/CLL/EtaExpansion.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/EtaExpansion.lean)
+- [Cslib/Logics/LinearLogic/CLL/EtaExpansion.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/EtaExpansion.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Logics.LinearLogic.CLL.EtaExpansion.json)

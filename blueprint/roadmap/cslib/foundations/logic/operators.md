@@ -7,7 +7,7 @@ proof: formalized
 
 # Logical operators
 
-`Cslib.Foundations.Logic.Operators`, in [Cslib/Foundations/Logic/Operators.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean), by Fabrizio Montesi, Thomas Waring.
+`Cslib.Foundations.Logic.Operators`, in [Cslib/Foundations/Logic/Operators.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean), by Fabrizio Montesi, Thomas Waring.
 
 > This module contains typeclasses and associated notation for common logical operators: propositional
 > connectives (like `∧` and `→`), modalities (like `◇`, plain and indexed), linear connectives (like
@@ -15,7 +15,7 @@ proof: formalized
 
 > ## Propositional connectives
 
-`Cslib.Logic.HasAnd` (class, [line 28](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L28))
+`Cslib.Logic.HasAnd` (class, [line 28](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L28))
 
 > The type `α` has an and connective (`∧`).
 
@@ -25,7 +25,7 @@ class HasAnd (α : Type*) where
   and (a b : α) : α
 ```
 
-`Cslib.Logic.HasOr` (class, [line 35](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L35))
+`Cslib.Logic.HasOr` (class, [line 35](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L35))
 
 > The type `α` has an or connective (`∨`).
 
@@ -35,7 +35,7 @@ class HasOr (α : Type*) where
   or (a b : α) : α
 ```
 
-`Cslib.Logic.finiteAnd` (definition, [line 42](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L42))
+`Cslib.Logic.finiteAnd` (definition, [line 42](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L42))
 
 > Finite conjunction, with empty conjunction equal to truth.
 
@@ -43,20 +43,20 @@ class HasOr (α : Type*) where
 def finiteAnd [HasAnd α] [Top α] (as : List α) : α
 ```
 
-`Cslib.Logic.finiteAnd_nil` (theorem, [line 47](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L47))
+`Cslib.Logic.finiteAnd_nil` (theorem, [line 47](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L47))
 
 ```lean
 theorem finiteAnd_nil [HasAnd α] [Top α] : ⋀([] : List α) = ⊤
 ```
 
-`Cslib.Logic.finiteAnd_cons` (theorem, [line 50](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L50))
+`Cslib.Logic.finiteAnd_cons` (theorem, [line 50](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L50))
 
 ```lean
 theorem finiteAnd_cons [HasAnd α] [Top α] (a : α) (as : List α) :
     ⋀(a :: as) = (a ∧ ⋀as)
 ```
 
-`Cslib.Logic.finiteOr` (definition, [line 54](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L54))
+`Cslib.Logic.finiteOr` (definition, [line 54](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L54))
 
 > Finite disjunction, with empty disjunction equal to falsehood.
 
@@ -64,20 +64,20 @@ theorem finiteAnd_cons [HasAnd α] [Top α] (a : α) (as : List α) :
 def finiteOr [HasOr α] [Bot α] (as : List α) : α
 ```
 
-`Cslib.Logic.finiteOr_nil` (theorem, [line 59](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L59))
+`Cslib.Logic.finiteOr_nil` (theorem, [line 59](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L59))
 
 ```lean
 theorem finiteOr_nil [HasOr α] [Bot α] : ⋁([] : List α) = ⊥
 ```
 
-`Cslib.Logic.finiteOr_cons` (theorem, [line 62](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L62))
+`Cslib.Logic.finiteOr_cons` (theorem, [line 62](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L62))
 
 ```lean
 theorem finiteOr_cons [HasOr α] [Bot α] (a : α) (as : List α) :
     ⋁(a :: as) = (a ∨ ⋁as)
 ```
 
-`Cslib.Logic.HasImp` (class, [line 66](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L66))
+`Cslib.Logic.HasImp` (class, [line 66](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L66))
 
 > The type `α` has an implication connective (`→`).
 
@@ -87,7 +87,7 @@ class HasImp (α : Type*) where
   imp (a b : α) : α
 ```
 
-`Cslib.Logic.HasIff` (class, [line 73](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L73))
+`Cslib.Logic.HasIff` (class, [line 73](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L73))
 
 > The type `α` has a bi-implication connective (`↔`).
 
@@ -97,7 +97,7 @@ class HasIff (α : Type*) where
   iff (a b : α) : α
 ```
 
-`Cslib.Logic.HasNot` (class, [line 80](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L80))
+`Cslib.Logic.HasNot` (class, [line 80](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L80))
 
 > The type `α` has a negation connective (`¬`).
 
@@ -109,7 +109,7 @@ class HasNot (α : Type*) where
 
 > ## General modalities from modal similarity types (polynomial functors)
 
-`Cslib.Logic.HasTriangle` (class, [line 93](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L93))
+`Cslib.Logic.HasTriangle` (class, [line 93](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L93))
 
 > The type `α` has a family of triangle operators (`Δ`).
 
@@ -120,13 +120,14 @@ class HasTriangle (α : Type*) (τ : outParam PFunctor) where
   triangle (op : τ.A) (arg : τ.B op → α) : α
 ```
 
-`Cslib.Logic.HasNabla` (class, [line 101](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L101))
+`Cslib.Logic.HasNabla` (class, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L101))
 
 > The type `α` has a family of nabla operators (`∇`).
 
 ```lean
 class HasNabla (α : Type*) (τ : outParam PFunctor) where
-  /-- `∇[op](φ₁, ..., φₙ)` means that `φ₁`, ..., `φₙ` are valid at all respective related states. -/
+  /-- `∇[op](φ₁, ..., φₙ)` means that, for every related tuple of states, at least one `φᵢ` is
+  valid at its respective state. -/
   nabla (op : τ.A) (arg : τ.B op → α) : α
 ```
 
@@ -135,7 +136,7 @@ class HasNabla (α : Type*) (τ : outParam PFunctor) where
 > Here we need to use the prefix `d` to distinguish our notation from the normal `[·]` and `⟨·⟩`.
 > …
 
-`Cslib.Logic.HasDynamicDiamond` (class, [line 118](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L118))
+`Cslib.Logic.HasDynamicDiamond` (class, [line 119](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L119))
 
 > The type `α` has a dynamic diamond modality with action type `β` (`d⟨a⟩φ`).
 
@@ -145,7 +146,7 @@ class HasDynamicDiamond (α : Type*) (β : outParam Type*) where
   dynDiamond (a : β) (b : α) : α
 ```
 
-`Cslib.Logic.HasDynamicBox` (class, [line 125](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L125))
+`Cslib.Logic.HasDynamicBox` (class, [line 126](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L126))
 
 > The type `α` has a dynamic box modality with action type `β` (`d[a]φ`).
 
@@ -155,14 +156,14 @@ class HasDynamicBox (α : Type*) (β : outParam Type*) where
   dynBox (a : β) (b : α) : α
 ```
 
-`Cslib.Logic.dynDiamond_eq_triangle` (theorem, [line 137](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L137))
+`Cslib.Logic.dynDiamond_eq_triangle` (theorem, [line 138](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L138))
 
 ```lean
 theorem dynDiamond_eq_triangle [HasTriangle α τ] (op : τ.A) (φ : α) :
     (d⟨op⟩φ) = (Δ[op](PFunctor.const op φ))
 ```
 
-`Cslib.Logic.dynBox_eq_nabla` (theorem, [line 146](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L146))
+`Cslib.Logic.dynBox_eq_nabla` (theorem, [line 147](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L147))
 
 ```lean
 theorem dynBox_eq_nabla [HasNabla α τ] (op : τ.A) (φ : α) :
@@ -171,7 +172,7 @@ theorem dynBox_eq_nabla [HasNabla α τ] (op : τ.A) (φ : α) :
 
 > ## Basic modalities (Unimodal logic operators)
 
-`Cslib.Logic.HasBox` (class, [line 156](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L156))
+`Cslib.Logic.HasBox` (class, [line 157](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L157))
 
 > The type `α` has a box modality (`□`).
 
@@ -181,7 +182,7 @@ class HasBox (α : Type*) where
   box (a : α) : α
 ```
 
-`Cslib.Logic.HasDiamond` (class, [line 163](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L163))
+`Cslib.Logic.HasDiamond` (class, [line 164](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L164))
 
 > The type `α` has a diamond modality (`◇`).
 
@@ -191,14 +192,14 @@ class HasDiamond (α : Type*) where
   diamond (a : α) : α
 ```
 
-`Cslib.Logic.diamond_eq_dynDiamond` (theorem, [line 174](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L174))
+`Cslib.Logic.diamond_eq_dynDiamond` (theorem, [line 175](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L175))
 
 ```lean
 theorem diamond_eq_dynDiamond [Unique β] [HasDynamicDiamond α β] {φ : α} :
     (◇φ) = (d⟨default⟩φ)
 ```
 
-`Cslib.Logic.box_eq_dynBox` (theorem, [line 182](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L182))
+`Cslib.Logic.box_eq_dynBox` (theorem, [line 183](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L183))
 
 ```lean
 theorem box_eq_dynBox [Unique β] [HasDynamicBox α β] {φ : α} :
@@ -207,7 +208,7 @@ theorem box_eq_dynBox [Unique β] [HasDynamicBox α β] {φ : α} :
 
 > ## Linear connectives
 
-`Cslib.Logic.HasTensor` (class, [line 192](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L192))
+`Cslib.Logic.HasTensor` (class, [line 193](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean#L193))
 
 > The type `α` has a tensor connective (⊗).
 
@@ -223,5 +224,5 @@ class HasTensor (α : Type*) where
 
 ## Sources
 
-- [Cslib/Foundations/Logic/Operators.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean)
+- [Cslib/Foundations/Logic/Operators.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/Operators.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Foundations.Logic.Operators.json)

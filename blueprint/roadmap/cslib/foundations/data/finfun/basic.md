@@ -7,13 +7,13 @@ proof: formalized
 
 # Finite functions
 
-`Cslib.Foundations.Data.FinFun.Basic`, in [Cslib/Foundations/Data/FinFun/Basic.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean), by Fabrizio Montesi, Xueying Qin.
+`Cslib.Foundations.Data.FinFun.Basic`, in [Cslib/Foundations/Data/FinFun/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean), by Fabrizio Montesi, Xueying Qin.
 
 > Given types `α` and `β`, and assuming that `β` has a `Zero` element,
 > a `FinFun α β` is a function from `α` to `β` where only a finite number of elements
 > in `α` are mapped to non-zero elements.
 
-`Cslib.FinFun` (structure, [line 27](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L27))
+`Cslib.FinFun` (structure, [line 27](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L27))
 
 > A `FinFun` is a function `fn` with a finite `support`.
 >
@@ -29,35 +29,35 @@ structure FinFun (α β : Type*) [Zero β] where
   mem_support_fn {a : α} : a ∈ support ↔ fn a ≠ 0
 ```
 
-`Cslib.FinFun.fromFun` (definition, [line 45](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L45))
+`Cslib.FinFun.fromFun` (definition, [line 45](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L45))
 
 > Constructs a `FinFun` by restricting a function to a given support, filtering out all elements
-> not mapped to 0 in the support.
+> of the support that are mapped to 0.
 
 ```lean
 def fromFun {α β : Type*} [Zero β] [DecidableEq α]
   [∀ y : β, Decidable (y = 0)] (fn : α → β) (support : Finset α) : α →₀ β
 ```
 
-`Cslib.FinFun.instFunLike` (instance, [line 54](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L54))
+`Cslib.FinFun.instFunLike` (instance, [line 54](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L54))
 
 ```lean
 instance instFunLike [Zero β] : FunLike (α →₀ β) α β
 ```
 
-`Cslib.FinFun.coe_fn` (theorem, [line 61](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L61))
+`Cslib.FinFun.coe_fn` (theorem, [line 61](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L61))
 
 ```lean
 theorem coe_fn [Zero β] {f : α →₀ β} : (f : α → β) = f.fn
 ```
 
-`Cslib.FinFun.coe_eq_fn` (theorem, [line 64](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L64))
+`Cslib.FinFun.coe_eq_fn` (theorem, [line 64](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L64))
 
 ```lean
 theorem coe_eq_fn [Zero β] {f : α →₀ β} : f a = f.fn a
 ```
 
-`Cslib.FinFun.ext` (theorem, [line 69](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L69))
+`Cslib.FinFun.ext` (theorem, [line 69](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L69))
 
 > Extensional equality for `FinFun`.
 
@@ -65,19 +65,19 @@ theorem coe_eq_fn [Zero β] {f : α →₀ β} : f a = f.fn a
 theorem ext [Zero β] {f g : α →₀ β} (h : ∀ (a : α), f a = g a) : f = g
 ```
 
-`Cslib.FinFun.mem_support_not_zero` (theorem, [line 73](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L73))
+`Cslib.FinFun.mem_support_not_zero` (theorem, [line 73](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L73))
 
 ```lean
 theorem mem_support_not_zero [Zero β] {f : α →₀ β} : a ∈ f.support ↔ f a ≠ 0
 ```
 
-`Cslib.FinFun.not_mem_support_zero` (theorem, [line 77](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L77))
+`Cslib.FinFun.not_mem_support_zero` (theorem, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L77))
 
 ```lean
 theorem not_mem_support_zero [Zero β] {f : α →₀ β} : a ∉ f.support ↔ f a = 0
 ```
 
-`Cslib.FinFun.eq_fields_eq` (theorem, [line 82](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L82))
+`Cslib.FinFun.eq_fields_eq` (theorem, [line 82](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L82))
 
 > If two `FinFun`s are equal, their underlying functions and supports are equal.
 
@@ -85,7 +85,7 @@ theorem not_mem_support_zero [Zero β] {f : α →₀ β} : a ∉ f.support ↔ 
 theorem eq_fields_eq [Zero β] {f g : α →₀ β} : f = g → f.fn = g.fn ∧ f.support = g.support
 ```
 
-`Cslib.FinFun.fn_eq_eq` (theorem, [line 88](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L88))
+`Cslib.FinFun.fn_eq_eq` (theorem, [line 88](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L88))
 
 > If two functions are equal, two `FinFun`s respectively using them as underlying functions
 > are equal.
@@ -94,13 +94,13 @@ theorem eq_fields_eq [Zero β] {f g : α →₀ β} : f = g → f.fn = g.fn ∧ 
 theorem fn_eq_eq [Zero β] {f g : α →₀ β} (h : f.fn = g.fn) : f = g
 ```
 
-`Cslib.FinFun.congrFinFun` (theorem, [line 92](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L92))
+`Cslib.FinFun.congrFinFun` (theorem, [line 92](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L92))
 
 ```lean
 theorem congrFinFun [Zero β] {f g : α →₀ β} (h : f = g) (a : α) : f a = g a
 ```
 
-`Cslib.FinFun.fromFun_eq` (theorem, [line 95](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L95))
+`Cslib.FinFun.fromFun_eq` (theorem, [line 95](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L95))
 
 ```lean
 theorem fromFun_eq [Zero β] [DecidableEq α] [∀ y : β, Decidable (y = 0)]
@@ -108,7 +108,7 @@ theorem fromFun_eq [Zero β] [DecidableEq α] [∀ y : β, Decidable (y = 0)]
     (f ↾₀ support) = f
 ```
 
-`Cslib.FinFun.fromFun_fn` (theorem, [line 100](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L100))
+`Cslib.FinFun.fromFun_fn` (theorem, [line 100](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L100))
 
 ```lean
 theorem fromFun_fn [Zero β] [DecidableEq α] [∀ y : β, Decidable (y = 0)]
@@ -116,7 +116,7 @@ theorem fromFun_fn [Zero β] [DecidableEq α] [∀ y : β, Decidable (y = 0)]
     (f ↾₀ support).fn = (fun a => if a ∈ support then f a else 0)
 ```
 
-`Cslib.FinFun.fromFun_support` (theorem, [line 106](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L106))
+`Cslib.FinFun.fromFun_support` (theorem, [line 106](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L106))
 
 ```lean
 theorem fromFun_support [Zero β] [DecidableEq α] [∀ y : β, Decidable (y = 0)]
@@ -124,7 +124,7 @@ theorem fromFun_support [Zero β] [DecidableEq α] [∀ y : β, Decidable (y = 0
     (f ↾₀ support).support = support.filter (f · ≠ 0)
 ```
 
-`Cslib.FinFun.fromFun_idem` (theorem, [line 113](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L113))
+`Cslib.FinFun.fromFun_idem` (theorem, [line 113](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L113))
 
 > Restricting a function twice to the same support is idempotent.
 
@@ -134,7 +134,7 @@ theorem fromFun_idem [Zero β] [DecidableEq α]
     (f ↾₀ support) ↾₀ support = f ↾₀ support
 ```
 
-`Cslib.FinFun.coe_fromFun_id` (theorem, [line 119](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L119))
+`Cslib.FinFun.coe_fromFun_id` (theorem, [line 119](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L119))
 
 > Restricting a `FinFun` to its own support is the identity.
 
@@ -143,7 +143,7 @@ theorem coe_fromFun_id [Zero β] [DecidableEq α] [∀ y : β, Decidable (y = 0)
     (f ↾₀ f.support) = f
 ```
 
-`Cslib.FinFun.fromFun_inter` (theorem, [line 124](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L124))
+`Cslib.FinFun.fromFun_inter` (theorem, [line 124](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L124))
 
 > Restricting a function twice to two supports is equal to restricting to their intersection.
 
@@ -153,7 +153,7 @@ theorem fromFun_inter [Zero β] [DecidableEq α]
     (f ↾₀ support1) ↾₀ support2 = f ↾₀ (support1 ∩ support2)
 ```
 
-`Cslib.FinFun.fromFun_comm` (theorem, [line 130](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L130))
+`Cslib.FinFun.fromFun_comm` (theorem, [line 130](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L130))
 
 > Restricting a function is commutative.
 
@@ -163,7 +163,7 @@ theorem fromFun_comm [Zero β] [DecidableEq α]
     (f ↾₀ support1) ↾₀ support2 = (f ↾₀ support2) ↾₀ support1
 ```
 
-`Cslib.FinFun.instDecidableEq` (instance, [line 136](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean#L136))
+`Cslib.FinFun.instDecidableEq` (instance, [line 136](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean#L136))
 
 > Decidable equality
 
@@ -177,5 +177,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Foundations/Data/FinFun/Basic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/FinFun/Basic.lean)
+- [Cslib/Foundations/Data/FinFun/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/FinFun/Basic.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Data.FinFun.Basic.json)

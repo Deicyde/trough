@@ -7,7 +7,7 @@ proof: formalized
 
 # Single-Tape Turing Machines
 
-`Cslib.Computability.Machines.Turing.SingleTape.Deterministic`, in [Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean), by Bolton Bailey, Pim Spelier, Daan van Gent.
+`Cslib.Computability.Machines.Turing.SingleTape.Deterministic`, in [Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean), by Bolton Bailey, Pim Spelier, Daan van Gent.
 
 > Defines a single-tape Turing machine for computing functions on `List Symbol`
 > for finite alphabet `Symbol`.
@@ -53,7 +53,7 @@ proof: formalized
 >
 > …
 
-`Cslib.Turing.SingleTapeTM.Stmt` (structure, [line 83](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L83))
+`Cslib.Turing.SingleTapeTM.Stmt` (structure, [line 83](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L83))
 
 > A Turing machine "statement" is just a `Option`al command to move left or right,
 > and write a symbol (i.e. an `Option Symbol`, where `none` is the blank symbol) on the `BiTape`
@@ -67,7 +67,7 @@ structure Stmt (Symbol : Type) where
 deriving Inhabited
 ```
 
-`Cslib.Turing.SingleTapeTM` (structure, [line 96](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L96))
+`Cslib.Turing.SingleTapeTM` (structure, [line 96](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L96))
 
 > A single-tape Turing machine
 > over the alphabet of `Option Symbol` (where `none` is the blank `BiTape` symbol).
@@ -91,13 +91,13 @@ structure SingleTapeTM Symbol [Inhabited Symbol] [Fintype Symbol] where
 > the step function that lets the machine transition from one configuration to the next,
 > and the intended initial and final configurations.
 
-`Cslib.Turing.SingleTapeTM.inhabitedStmt` (instance, [line 125](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L125))
+`Cslib.Turing.SingleTapeTM.inhabitedStmt` (instance, [line 125](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L125))
 
 ```lean
 instance inhabitedStmt : Inhabited (Stmt Symbol)
 ```
 
-`Cslib.Turing.SingleTapeTM.Cfg` (structure, [line 132](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L132))
+`Cslib.Turing.SingleTapeTM.Cfg` (structure, [line 132](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L132))
 
 > The configurations of a Turing machine consist of:
 > an `Option`al state (or none for the halting state),
@@ -112,7 +112,7 @@ structure Cfg : Type where
 deriving Inhabited
 ```
 
-`Cslib.Turing.SingleTapeTM.step` (definition, [line 141](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L141))
+`Cslib.Turing.SingleTapeTM.step` (definition, [line 141](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L141))
 
 > The step function corresponding to a `SingleTapeTM`.
 
@@ -120,7 +120,7 @@ deriving Inhabited
 def step : tm.Cfg → Option tm.Cfg
 ```
 
-`Cslib.Turing.SingleTapeTM.initCfg` (definition, [line 157](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L157))
+`Cslib.Turing.SingleTapeTM.initCfg` (definition, [line 157](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L157))
 
 > The initial configuration corresponding to a list in the input alphabet.
 > Note that the entries of the tape constructed by `BiTape.mk₁` are all `some` values.
@@ -130,7 +130,7 @@ def step : tm.Cfg → Option tm.Cfg
 def initCfg (tm : SingleTapeTM Symbol) (s : List Symbol) : tm.Cfg
 ```
 
-`Cslib.Turing.SingleTapeTM.haltCfg` (definition, [line 162](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L162))
+`Cslib.Turing.SingleTapeTM.haltCfg` (definition, [line 162](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L162))
 
 > The final configuration corresponding to a list in the output alphabet.
 > (We demand that the head halts at the leftmost position of the output.)
@@ -139,7 +139,7 @@ def initCfg (tm : SingleTapeTM Symbol) (s : List Symbol) : tm.Cfg
 def haltCfg (tm : SingleTapeTM Symbol) (s : List Symbol) : tm.Cfg
 ```
 
-`Cslib.Turing.SingleTapeTM.Cfg.spaceUsed` (definition, [line 167](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L167))
+`Cslib.Turing.SingleTapeTM.Cfg.spaceUsed` (definition, [line 167](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L167))
 
 > The space used by a configuration is the space used by its tape.
 
@@ -147,28 +147,28 @@ def haltCfg (tm : SingleTapeTM Symbol) (s : List Symbol) : tm.Cfg
 def Cfg.spaceUsed (tm : SingleTapeTM Symbol) (cfg : tm.Cfg) : ℕ
 ```
 
-`Cslib.Turing.SingleTapeTM.Cfg.spaceUsed_initCfg` (lemma, [line 170](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L170))
+`Cslib.Turing.SingleTapeTM.Cfg.spaceUsed_initCfg` (lemma, [line 170](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L170))
 
 ```lean
 lemma Cfg.spaceUsed_initCfg (tm : SingleTapeTM Symbol) (s : List Symbol) :
     (tm.initCfg s).spaceUsed = max 1 s.length
 ```
 
-`Cslib.Turing.SingleTapeTM.Cfg.spaceUsed_haltCfg` (lemma, [line 174](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L174))
+`Cslib.Turing.SingleTapeTM.Cfg.spaceUsed_haltCfg` (lemma, [line 174](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L174))
 
 ```lean
 lemma Cfg.spaceUsed_haltCfg (tm : SingleTapeTM Symbol) (s : List Symbol) :
     (tm.haltCfg s).spaceUsed = max 1 s.length
 ```
 
-`Cslib.Turing.SingleTapeTM.Cfg.spaceUsed_step` (lemma, [line 177](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L177))
+`Cslib.Turing.SingleTapeTM.Cfg.spaceUsed_step` (lemma, [line 177](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L177))
 
 ```lean
 lemma Cfg.spaceUsed_step {tm : SingleTapeTM Symbol} (cfg cfg' : tm.Cfg)
     (hstep : tm.step cfg = some cfg') : cfg'.spaceUsed ≤ cfg.spaceUsed + 1
 ```
 
-`Cslib.Turing.SingleTapeTM.TransitionRelation` (definition, [line 201](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L201))
+`Cslib.Turing.SingleTapeTM.TransitionRelation` (definition, [line 205](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L205))
 
 > The `TransitionRelation` corresponding to a `SingleTapeTM Symbol`
 > is defined by the `step` function,
@@ -178,7 +178,7 @@ lemma Cfg.spaceUsed_step {tm : SingleTapeTM Symbol} (cfg cfg' : tm.Cfg)
 def TransitionRelation (tm : SingleTapeTM Symbol) (c₁ c₂ : tm.Cfg) : Prop
 ```
 
-`Cslib.Turing.SingleTapeTM.Outputs` (definition, [line 204](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L204))
+`Cslib.Turing.SingleTapeTM.Outputs` (definition, [line 208](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L208))
 
 > A proof of `tm` outputting `l'` on input `l`.
 
@@ -186,7 +186,7 @@ def TransitionRelation (tm : SingleTapeTM Symbol) (c₁ c₂ : tm.Cfg) : Prop
 def Outputs (tm : SingleTapeTM Symbol) (l l' : List Symbol) : Prop
 ```
 
-`Cslib.Turing.SingleTapeTM.OutputsWithinTime` (definition, [line 208](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L208))
+`Cslib.Turing.SingleTapeTM.OutputsWithinTime` (definition, [line 212](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L212))
 
 > A proof of `tm` outputting `l'` on input `l` in at most `m` steps.
 
@@ -194,7 +194,7 @@ def Outputs (tm : SingleTapeTM Symbol) (l l' : List Symbol) : Prop
 def OutputsWithinTime (tm : SingleTapeTM Symbol) (l l' : List Symbol) (m : ℕ)
 ```
 
-`Cslib.Turing.SingleTapeTM.output_length_le_input_length_add_time` (lemma, [line 218](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L218))
+`Cslib.Turing.SingleTapeTM.output_length_le_input_length_add_time` (lemma, [line 222](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L222))
 
 > This lemma bounds the size blow-up of the output of a Turing machine.
 > It states that the increase in length of the output over the input is bounded by the runtime.
@@ -208,7 +208,7 @@ lemma output_length_le_input_length_add_time (tm : SingleTapeTM Symbol) (l l' : 
     l'.length ≤ max 1 l.length + t
 ```
 
-`Cslib.Turing.SingleTapeTM.idComputer` (definition, [line 228](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L228))
+`Cslib.Turing.SingleTapeTM.idComputer` (definition, [line 232](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L232))
 
 > A Turing machine computing the identity.
 
@@ -216,7 +216,7 @@ lemma output_length_le_input_length_add_time (tm : SingleTapeTM Symbol) (l l' : 
 def idComputer : SingleTapeTM Symbol
 ```
 
-`Cslib.Turing.SingleTapeTM.compComputer` (definition, [line 240](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L240))
+`Cslib.Turing.SingleTapeTM.compComputer` (definition, [line 244](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L244))
 
 > A Turing machine computing the composition of two other Turing machines.
 >
@@ -230,7 +230,7 @@ def compComputer (tm1 tm2 : SingleTapeTM Symbol) : SingleTapeTM Symbol
 
 > ### Composition Computer Lemmas
 
-`Cslib.Turing.SingleTapeTM.compComputer_q₀_eq` (lemma, [line 275](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L275))
+`Cslib.Turing.SingleTapeTM.compComputer_q₀_eq` (lemma, [line 279](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L279))
 
 ```lean
 lemma compComputer_q₀_eq : (compComputer tm1 tm2).q₀ = Sum.inl tm1.q₀
@@ -240,7 +240,7 @@ lemma compComputer_q₀_eq : (compComputer tm1 tm2).q₀ = Sum.inl tm1.q₀
 >
 > This section defines the notion of time-bounded Turing Machines
 
-`Cslib.Turing.SingleTapeTM.TimeComputable` (structure, [line 392](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L392))
+`Cslib.Turing.SingleTapeTM.TimeComputable` (structure, [line 396](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L396))
 
 > A Turing machine + a time function +
 > a proof it outputs `f` in at most `time(input.length)` steps.
@@ -255,7 +255,7 @@ structure TimeComputable (f : List Symbol → List Symbol) where
   outputsFunInTime (a) : tm.OutputsWithinTime a (f a) (timeBound a.length)
 ```
 
-`Cslib.Turing.SingleTapeTM.TimeComputable.id` (definition, [line 402](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L402))
+`Cslib.Turing.SingleTapeTM.TimeComputable.id` (definition, [line 406](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L406))
 
 > The identity map on Symbol is computable in constant time.
 
@@ -263,7 +263,7 @@ structure TimeComputable (f : List Symbol → List Symbol) where
 def TimeComputable.id : TimeComputable (Symbol := Symbol) id
 ```
 
-`Cslib.Turing.SingleTapeTM.TimeComputable.comp` (definition, [line 421](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L421))
+`Cslib.Turing.SingleTapeTM.TimeComputable.comp` (definition, [line 425](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L425))
 
 > Time bounds for `compComputer`.
 >
@@ -285,7 +285,7 @@ def TimeComputable.comp {f g : List Symbol → List Symbol}
     (TimeComputable (g ∘ f))
 ```
 
-`Cslib.Turing.SingleTapeTM.TimeComputable.withMonotoneBound` (definition, [line 461](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L461))
+`Cslib.Turing.SingleTapeTM.TimeComputable.withMonotoneBound` (definition, [line 465](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L465))
 
 > Convert a `TimeComputable` to one with a monotone time bound, by replacing the time bound `t`
 > with `partialSups t`, i.e. `n ↦ max (t 0) ⋯ (t n)`. The underlying machine is unchanged.
@@ -295,7 +295,7 @@ def TimeComputable.withMonotoneBound {f : List Symbol → List Symbol}
     (hf : TimeComputable f) : TimeComputable f
 ```
 
-`Cslib.Turing.SingleTapeTM.TimeComputable.withMonotoneBound_timeBound_monotone` (lemma, [line 468](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L468))
+`Cslib.Turing.SingleTapeTM.TimeComputable.withMonotoneBound_timeBound_monotone` (lemma, [line 472](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L472))
 
 ```lean
 lemma TimeComputable.withMonotoneBound_timeBound_monotone {f : List Symbol → List Symbol}
@@ -310,7 +310,7 @@ lemma TimeComputable.withMonotoneBound_timeBound_monotone {f : List Symbol → L
 > * The identity function is polynomial time computable
 > * The composition of two polynomial time computable functions is polynomial time computable
 
-`Cslib.Turing.SingleTapeTM.PolyTimeComputable` (structure, [line 491](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L491))
+`Cslib.Turing.SingleTapeTM.PolyTimeComputable` (structure, [line 495](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L495))
 
 > A Turing machine + a polynomial time function +
 > a proof it outputs `f` in at most `time(input.length)` steps.
@@ -323,7 +323,7 @@ structure PolyTimeComputable (f : List Symbol → List Symbol) extends TimeCompu
   bounds : ∀ n, timeBound n ≤ poly.eval n
 ```
 
-`Cslib.Turing.SingleTapeTM.PolyTimeComputable.id` (definition, [line 498](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L498))
+`Cslib.Turing.SingleTapeTM.PolyTimeComputable.id` (definition, [line 502](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L502))
 
 > A proof that the identity map on Symbol is computable in polytime.
 
@@ -331,7 +331,7 @@ structure PolyTimeComputable (f : List Symbol → List Symbol) extends TimeCompu
 noncomputable def PolyTimeComputable.id : PolyTimeComputable (Symbol := Symbol) id
 ```
 
-`Cslib.Turing.SingleTapeTM.PolyTimeComputable.withMonotoneBound` (definition, [line 507](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L507))
+`Cslib.Turing.SingleTapeTM.PolyTimeComputable.withMonotoneBound` (definition, [line 511](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L511))
 
 > Convert a `PolyTimeComputable` to one with a monotone time bound.
 > The polynomial bound is unchanged, since polynomial evaluation over `ℕ` is monotone.
@@ -341,7 +341,7 @@ noncomputable def PolyTimeComputable.withMonotoneBound {f : List Symbol → List
     (hf : PolyTimeComputable f) : PolyTimeComputable f
 ```
 
-`Cslib.Turing.SingleTapeTM.PolyTimeComputable.comp` (definition, [line 519](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L519))
+`Cslib.Turing.SingleTapeTM.PolyTimeComputable.comp` (definition, [line 523](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L523))
 
 > A proof that the composition of two polytime computable functions is polytime computable.
 >
@@ -365,5 +365,5 @@ noncomputable def PolyTimeComputable.comp {f g : List Symbol → List Symbol}
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean)
+- [Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.SingleTape.Deterministic.json)

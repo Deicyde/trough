@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "7c95c37f952458306479b64468cb98d101ee1cf1",
+ "module": "Cslib.Computability.Machines.Turing.MultiTape.Combinators.Concatenate",
+ "file": "Cslib/Computability/Machines/Turing/MultiTape/Combinators/Concatenate.lean",
+ "public": [
+  {"name": "Turing.MultiTapeTM.concatenate", "kind": "def", "line": 30},
+  {"name": "Turing.MultiTapeTM.ComputesInTimeAndSpace.concatenate", "kind": "theorem", "line": 73},
+  {"name": "Turing.MultiTapeTM.ComputesFunInTimeAndSpace.concatenate", "kind": "theorem", "line": 100},
+  {"name": "Turing.MultiTapeTM.ComputableInTimeAndSpace.concatenate", "kind": "theorem", "line": 115}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,8 +1,8 @@
 {
  "repo": "leanprover/cslib",
- "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
- "date": "2026-11-12T03:33:36Z",
- "toolchain": "v4.36.0-rc2",
- "mathlib": "887bb849a9f64e1c66499fd5ff8523c864e78941",
+ "rev": "7c95c37f952458306479b64468cb98d101ee1cf1",
+ "date": "2026-11-20T17:52:20Z",
+ "toolchain": "v4.37.0-rc1",
+ "mathlib": "31ce06eaadf4a200c0e1407c5f10953cf606b8f8",
  "license": "Apache-2.0"
 }

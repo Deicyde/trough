@@ -7,7 +7,7 @@ proof: formalized
 
 # Circuits over the full basis
 
-`Cslib.Computability.Circuit.Full`, in [Cslib/Computability/Circuit/Full.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Full.lean), by Samuel Schlesinger.
+`Cslib.Computability.Circuit.Full`, in [Cslib/Computability/Circuit/Full.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Full.lean), by Samuel Schlesinger.
 
 > The full basis of arity `k` contains every constant and every operation with `k` arguments.
 > Each takes one gate, and so does every operation with at most `k` arguments: a nullary
@@ -20,15 +20,17 @@ proof: formalized
 > arity at most `k`, replacing each operation by one gate. This includes nullary operations and
 > the case `k = 0`, and needs no assumption on the carrier.
 >
-> On a finite carrier, every full basis of arity at least two is functionally complete. The idea
+> Every full basis of arity at least two is functionally complete. On a finite carrier, the idea
 > is disjunctive normal form: a function on a finite carrier is a finite table, so a circuit can
 > find the row that matches its input and return that row's value. For each row, binary gates
 > compare the input with the row one coordinate at a time, giving the row's value on a match and a
 > fixed default otherwise. Further binary gates merge these answers by keeping the one that differs
 > from the default. Over `Bool` with default `false`, this is exactly disjunctive normal form.
+> On an infinite carrier, a bijection `U × U ≃ U` lets binary gates pair up the inputs into a
+> single element that determines them, and one more gate decodes it and applies the function.
 > Larger arities follow by simulation.
 
-`Cslib.Circuits.Synthesis.full_const` (theorem, [line 48](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Full.lean#L48))
+`Cslib.Circuits.Synthesis.full_const` (theorem, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Full.lean#L51))
 
 > A constant can be synthesized with one gate of the full basis.
 
@@ -37,7 +39,7 @@ theorem full_const (value : U) :
     Synthesis (fullInterpretation (k := k)) s {fun _ => value} 1
 ```
 
-`Cslib.Circuits.Synthesis.full_gate` (theorem, [line 54](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Full.lean#L54))
+`Cslib.Circuits.Synthesis.full_gate` (theorem, [line 57](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Full.lean#L57))
 
 > Apply any operation with at most `k` arguments to available functions using one gate.
 > Nullary operations use a constant gate; other operations pad their arguments by repetition.
@@ -48,7 +50,7 @@ theorem full_gate {r : ℕ} (hr : r ≤ k) (op : (Fin r → U) → U)
     Synthesis (fullInterpretation (k := k)) s {fun x => op (fun i => args i x)} 1
 ```
 
-`Cslib.Circuits.Synthesis.full_gate_of_syntheses` (theorem, [line 68](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Full.lean#L68))
+`Cslib.Circuits.Synthesis.full_gate_of_syntheses` (theorem, [line 71](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Full.lean#L71))
 
 > Construct the arguments of an operation of arity at most `k`, then apply it with one
 > further gate. All functions computed while constructing the arguments remain available.
@@ -61,7 +63,7 @@ theorem full_gate_of_syntheses {r : ℕ} (hr : r ≤ k) (op : (Fin r → U) → 
       ((∑ i, cost i) + 1)
 ```
 
-`Cslib.Circuits.Synthesis.full_binary` (theorem, [line 76](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Full.lean#L76))
+`Cslib.Circuits.Synthesis.full_binary` (theorem, [line 79](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Full.lean#L79))
 
 > Apply any binary operation to synthesized functions in the binary full basis.
 
@@ -72,7 +74,7 @@ theorem full_binary {f g : (Fin n → U) → U}
     Synthesis (fullInterpretation (k := 2)) s {fun x => op (f x) (g x)} (a + b + 1)
 ```
 
-`Cslib.Circuits.fullInterpretation_simulatesWithCost` (theorem, [line 86](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Full.lean#L86))
+`Cslib.Circuits.fullInterpretation_simulatesWithCost` (theorem, [line 89](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Full.lean#L89))
 
 > The full basis simulates operations of arity at most `k` with a budget of one gate each.
 
@@ -82,7 +84,7 @@ theorem fullInterpretation_simulatesWithCost {σ : Signature.{v}} (I : Interpret
     (fullInterpretation (k := k)).SimulatesWithCost I (fun _ => 1)
 ```
 
-`Cslib.Circuits.fullInterpretation_simulates` (theorem, [line 94](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Full.lean#L94))
+`Cslib.Circuits.fullInterpretation_simulates` (theorem, [line 97](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Full.lean#L97))
 
 > The full basis simulates any interpretation whose operations have arity at most `k`.
 
@@ -91,12 +93,12 @@ theorem fullInterpretation_simulates {σ : Signature.{v}} (I : Interpretation σ
     (h : ∀ op, σ.Arity op ≤ k) : (fullInterpretation (k := k)).Simulates I
 ```
 
-`Cslib.Circuits.fullInterpretation_isComplete` (theorem, [line 144](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Full.lean#L144))
+`Cslib.Circuits.fullInterpretation_isComplete` (theorem, [line 179](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Full.lean#L179))
 
-> Every full basis of arity at least two is complete on a finite carrier.
+> Every full basis of arity at least two is complete.
 
 ```lean
-theorem fullInterpretation_isComplete [Finite U] (hk : 2 ≤ k) :
+theorem fullInterpretation_isComplete (hk : 2 ≤ k) :
     (fullInterpretation (k := k) (Carrier := U)).IsComplete
 ```
 
@@ -106,5 +108,5 @@ theorem fullInterpretation_isComplete [Finite U] (hk : 2 ≤ k) :
 
 ## Sources
 
-- [Cslib/Computability/Circuit/Full.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Full.lean)
+- [Cslib/Computability/Circuit/Full.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Full.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Circuit.Full.json)

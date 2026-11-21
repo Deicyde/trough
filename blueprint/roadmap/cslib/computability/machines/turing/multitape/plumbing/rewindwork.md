@@ -7,7 +7,7 @@ proof: formalized
 
 # A machine that rewinds a work-tape head
 
-`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindWork`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean), by Christian Reitwiessner, Samuel Schlesinger.
+`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindWork`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean), by Christian Reitwiessner, Samuel Schlesinger.
 
 > A machine that moves the head of its work tape to the left end of its contents and halts. It
 > optionally writes a certain symbol to or clears the cells it moves over while traveling to the
@@ -33,7 +33,7 @@ proof: formalized
 >   `Turing.MultiTapeTM.runFrom_rewindWork_erase` (the whole word is erased).
 > * `Turing.MultiTapeTM.workTapePos_runFrom_rewindWork`: the rewound head stays within `[-1, p]`.
 
-`Turing.MultiTapeTM.RewindWorkState` (inductive type, [line 46](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean#L46))
+`Turing.MultiTapeTM.RewindWorkState` (inductive type, [line 46](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean#L46))
 
 > The control states of the work-tape-rewinding machine: `start` takes one unconditional step
 > left, `scan` walks left towards the start of the word.
@@ -45,7 +45,7 @@ public inductive RewindWorkState : Type
   deriving DecidableEq
 ```
 
-`Turing.MultiTapeTM.rewindWork` (definition, [line 57](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean#L57))
+`Turing.MultiTapeTM.rewindWork` (definition, [line 57](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean#L57))
 
 > The one-tape rewinding machine. In state `start` it moves its head left, unconditionally, and
 > enters state `scan`. In state `scan` it writes `write` over a symbol and moves left, staying in
@@ -57,7 +57,7 @@ public def rewindWork (Symbol : Type*) (write : Option (Option Symbol) := none) 
     MultiTapeTM 1 Symbol RewindWorkState
 ```
 
-`Turing.MultiTapeTM.runFrom_rewindWork` (theorem, [line 128](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean#L128))
+`Turing.MultiTapeTM.runFrom_rewindWork` (theorem, [line 128](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean#L128))
 
 > **The run of the one-tape machine that rewinds its head.** Started with the tape holding a word
 > `w` and the head at a position `p ≤ w.length` — inside the word or at the frontier just past it —
@@ -73,7 +73,7 @@ public theorem runFrom_rewindWork (write : Option (Option Symbol)) (ip : Fin (in
       ⟨none, ip, fun _ z => if 0 ≤ z ∧ z < p then write.getD (t z) else t z, fun _ => 0, out⟩
 ```
 
-`Turing.MultiTapeTM.runFrom_rewindWork_none` (theorem, [line 140](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean#L140))
+`Turing.MultiTapeTM.runFrom_rewindWork_none` (theorem, [line 140](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean#L140))
 
 > **Rewinding without writing** changes nothing but the position of the head.
 
@@ -85,7 +85,7 @@ public theorem runFrom_rewindWork_none (ip : Fin (input.length + 2)) (t : ℤ �
       ⟨none, ip, fun _ => t, fun _ => 0, out⟩
 ```
 
-`Turing.MultiTapeTM.runFrom_rewindWork_erase` (theorem, [line 148](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean#L148))
+`Turing.MultiTapeTM.runFrom_rewindWork_erase` (theorem, [line 148](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean#L148))
 
 > **Rewinding while erasing** from the frontier of the word leaves the tape blank.
 
@@ -98,7 +98,7 @@ public theorem runFrom_rewindWork_erase (ip : Fin (input.length + 2)) (t : ℤ �
       ⟨none, ip, fun _ _ => none, fun _ => 0, out⟩
 ```
 
-`Turing.MultiTapeTM.workTapePos_runFrom_rewindWork` (theorem, [line 165](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean#L165))
+`Turing.MultiTapeTM.workTapePos_runFrom_rewindWork` (theorem, [line 165](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean#L165))
 
 > At every step, the head is within `[-1, p]`: it walks from its start `p ≤ w.length` down to
 > `-1` and back to `0`, where it stays.
@@ -119,5 +119,5 @@ public theorem workTapePos_runFrom_rewindWork (write : Option (Option Symbol))
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean)
 - [Declaration ledger](../../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindWork.json)

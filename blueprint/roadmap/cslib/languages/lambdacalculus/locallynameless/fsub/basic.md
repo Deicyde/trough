@@ -7,7 +7,7 @@ proof: formalized
 
 # λ-calculus (Fsub/Basic)
 
-`Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Basic`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean), by Chris Henson.
+`Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Basic`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean), by Chris Henson.
 
 > The λ-calculus with polymorphism and subtyping, with a locally nameless representation of syntax.
 >
@@ -17,7 +17,7 @@ proof: formalized
 > * See also <https://www.cis.upenn.edu/~plclub/popl08-tutorial/code/>, from which
 >   this is adapted
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty` (inductive type, [line 33](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean#L33))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty` (inductive type, [line 33](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean#L33))
 
 > Types of the polymorphic lambda calculus.
 
@@ -38,7 +38,7 @@ inductive Ty (Var : Type*)
   deriving Inhabited
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term` (inductive type, [line 49](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean#L49))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term` (inductive type, [line 49](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean#L49))
 
 > Syntax of locally nameless lambda terms, with free variables over `Var`.
 
@@ -66,7 +66,7 @@ inductive Term (Var : Type*)
   | case : Term Var → Term Var → Term Var → Term Var
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Binding` (inductive type, [line 72](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean#L72))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Binding` (inductive type, [line 72](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean#L72))
 
 > A context binding.
 
@@ -79,7 +79,7 @@ inductive Binding (Var : Type*)
   deriving Inhabited
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.fv` (definition, [line 81](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean#L81))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.fv` (definition, [line 81](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean#L81))
 
 > Free variables of a type.
 
@@ -87,7 +87,7 @@ inductive Binding (Var : Type*)
 def Ty.fv : Ty Var → Finset Var
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Binding.fv` (definition, [line 88](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean#L88))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Binding.fv` (definition, [line 88](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean#L88))
 
 > Free variables of a binding.
 
@@ -95,7 +95,7 @@ def Ty.fv : Ty Var → Finset Var
 def Binding.fv : Binding Var → Finset Var
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.fvTy` (definition, [line 93](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean#L93))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.fvTy` (definition, [line 93](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean#L93))
 
 > Free type variables of a term.
 
@@ -103,7 +103,7 @@ def Binding.fv : Binding Var → Finset Var
 def Term.fvTy : Term Var → Finset Var
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.fvTm` (definition, [line 102](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean#L102))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.fvTm` (definition, [line 102](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean#L102))
 
 > Free term variables of a term.
 
@@ -111,7 +111,7 @@ def Term.fvTy : Term Var → Finset Var
 def Term.fvTm : Term Var → Finset Var
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Env` (abbreviation, [line 110](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean#L110))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Env` (abbreviation, [line 110](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean#L110))
 
 > A context of bindings.
 
@@ -125,5 +125,5 @@ abbrev Env (Var : Type*)
 
 ## Sources
 
-- [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean)
+- [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Basic.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Basic.json)

@@ -2,7 +2,7 @@
  "schema": "trough-ledger/v1",
  "library": "CSLib",
  "repo": "leanprover/cslib",
- "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "rev": "7c95c37f952458306479b64468cb98d101ee1cf1",
  "module": "Cslib.Foundations.Syntax.HasSubstitution",
  "file": "Cslib/Foundations/Syntax/HasSubstitution.lean",
  "public": [

@@ -7,14 +7,14 @@ proof: formalized
 
 # Topology on ω-sequences
 
-`Cslib.Foundations.Data.OmegaSequence.Topology`, in [Cslib/Foundations/Data/OmegaSequence/Topology.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/OmegaSequence/Topology.lean), by Ching-Tsun Chou.
+`Cslib.Foundations.Data.OmegaSequence.Topology`, in [Cslib/Foundations/Data/OmegaSequence/Topology.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Topology.lean), by Ching-Tsun Chou.
 
 > The topology on ω-sequences is essentially the product topology when `ωSequence α` is
 > viewed as the product space `Π (n : ℕ), α`, where `α` is equipped with the discrete
 > topology.  The notion of "cylinders" are also ported from `Π (n : ℕ), α` and they form
 > a topological basis.
 
-`Cslib.ωSequence.homeomorph` (definition, [line 42](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L42))
+`Cslib.ωSequence.homeomorph` (definition, [line 42](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L42))
 
 > The homeomorphisim from `ωSequence α` to `ℕ → WithDiscreteTopology α`.
 
@@ -22,21 +22,21 @@ proof: formalized
 def homeomorph : ωSequence α ≃ₜ (ℕ → WithDiscreteTopology α)
 ```
 
-`Cslib.ωSequence.homeomorph_apply` (lemma, [line 45](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L45))
+`Cslib.ωSequence.homeomorph_apply` (lemma, [line 45](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L45))
 
 ```lean
 lemma homeomorph_apply (xs : ωSequence α) (i : Nat) :
     homeomorph xs i = .toTopology ⊥ (xs i)
 ```
 
-`Cslib.ωSequence.homeomorph_symm_apply` (lemma, [line 50](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L50))
+`Cslib.ωSequence.homeomorph_symm_apply` (lemma, [line 50](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L50))
 
 ```lean
 lemma homeomorph_symm_apply (f : ℕ → WithDiscreteTopology α) :
     homeomorph.symm f = ωSequence.mk fun i => (f i).ofTopology
 ```
 
-`Cslib.ωSequence.cylinder` (definition, [line 55](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L55))
+`Cslib.ωSequence.cylinder` (definition, [line 55](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L55))
 
 > Port the notion of "cylinders" from `ℕ → WithDiscreteTopology α` to `ωSequence α`.
 
@@ -44,7 +44,7 @@ lemma homeomorph_symm_apply (f : ℕ → WithDiscreteTopology α) :
 def cylinder (xs : ωSequence α) (n : ℕ) : Set (ωSequence α)
 ```
 
-`Cslib.ωSequence.cylinder_def` (theorem, [line 59](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L59))
+`Cslib.ωSequence.cylinder_def` (theorem, [line 59](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L59))
 
 > An alternative characterization of cylinders in terms of `ωSequence α` alone.
 
@@ -53,7 +53,7 @@ theorem cylinder_def (xs : ωSequence α) (n : ℕ) :
     xs.cylinder n = { ys | ∀ k, k < n → ys k = xs k }
 ```
 
-`Cslib.ωSequence.cylinder_eq_prepend_range` (theorem, [line 64](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L64))
+`Cslib.ωSequence.cylinder_eq_prepend_range` (theorem, [line 64](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L64))
 
 > Yet another alternative characterization of cylinders in terms of `ωSequence α` alone.
 
@@ -62,7 +62,7 @@ theorem cylinder_eq_prepend_range (xs : ωSequence α) (n : ℕ) :
     xs.cylinder n = range (xs.take n ++ω ·)
 ```
 
-`Cslib.ωSequence.isTopologicalBasis_cylinders` (theorem, [line 76](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L76))
+`Cslib.ωSequence.isTopologicalBasis_cylinders` (theorem, [line 76](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L76))
 
 > The cylinders form a topological basis.
 
@@ -71,7 +71,7 @@ theorem isTopologicalBasis_cylinders :
     IsTopologicalBasis { s | ∃ (xs : ωSequence α) (n : ℕ), s = xs.cylinder n }
 ```
 
-`Cslib.ωSequence.isOpen_cylinder` (theorem, [line 87](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L87))
+`Cslib.ωSequence.isOpen_cylinder` (theorem, [line 87](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L87))
 
 > All cylinders are open sets.
 
@@ -80,7 +80,7 @@ theorem isOpen_cylinder (xs : ωSequence α) (n : ℕ) :
     IsOpen (xs.cylinder n)
 ```
 
-`Cslib.ωSequence.nhds_cylinders` (theorem, [line 91](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L91))
+`Cslib.ωSequence.nhds_cylinders` (theorem, [line 91](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L91))
 
 > Every ω-sequence in an open set belongs to a cylinder which is contained in the set.
 
@@ -89,7 +89,7 @@ theorem nhds_cylinders {xs : ωSequence α} {s : Set (ωSequence α)} (hx : xs �
     ∃ (ys : ωSequence α) (n : ℕ), xs ∈ ys.cylinder n ∧ ys.cylinder n ⊆ s
 ```
 
-`Cslib.ωSequence.isOpen_iff` (theorem, [line 98](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L98))
+`Cslib.ωSequence.isOpen_iff` (theorem, [line 98](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L98))
 
 > A set is open iff any ω-sequence in the set has a finite prefix all of whose infinite
 > extensions are also in the set.
@@ -99,7 +99,7 @@ theorem isOpen_iff (s : Set (ωSequence α)) :
     IsOpen s ↔ ∀ xs, xs ∈ s → ∃ n, ∀ ys, (xs.take n) ++ω ys ∈ s
 ```
 
-`Cslib.ωSequence.dense_iff` (theorem, [line 110](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L110))
+`Cslib.ωSequence.dense_iff` (theorem, [line 110](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Topology.lean#L110))
 
 > A set is dense iff any finite sequence can be extended to an infinite sequence in the set.
 
@@ -118,5 +118,5 @@ theorem dense_iff (s : Set (ωSequence α)) :
 
 ## Sources
 
-- [Cslib/Foundations/Data/OmegaSequence/Topology.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/OmegaSequence/Topology.lean)
+- [Cslib/Foundations/Data/OmegaSequence/Topology.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Topology.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Data.OmegaSequence.Topology.json)

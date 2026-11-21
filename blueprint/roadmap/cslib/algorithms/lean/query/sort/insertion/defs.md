@@ -7,11 +7,11 @@ proof: formalized
 
 # Insertion Sort as a Query Program
 
-`Cslib.Algorithms.Lean.Query.Sort.Insertion.Defs`, in [Cslib/Algorithms/Lean/Query/Sort/Insertion/Defs.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/Insertion/Defs.lean), by Kim Morrison, Shreyas Srinivas, Eric Wieser.
+`Cslib.Algorithms.Lean.Query.Sort.Insertion.Defs`, in [Cslib/Algorithms/Lean/Query/Sort/Insertion/Defs.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Insertion/Defs.lean), by Kim Morrison, Shreyas Srinivas, Eric Wieser.
 
 > Insertion sort implemented as a `FreeM (LEQuery α)`, making all comparison queries explicit.
 
-`Cslib.Query.orderedInsert` (abbreviation, [line 23](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/Insertion/Defs.lean#L23))
+`Cslib.Query.orderedInsert` (abbreviation, [line 23](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Insertion/Defs.lean#L23))
 
 > Insert `x` into a sorted list using comparison queries.
 
@@ -19,7 +19,7 @@ proof: formalized
 abbrev orderedInsert (x : α) (xs : List α) : FreeM (LEQuery α) (List α)
 ```
 
-`Cslib.Query.insertionSort` (abbreviation, [line 27](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/Insertion/Defs.lean#L27))
+`Cslib.Query.insertionSort` (abbreviation, [line 27](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Insertion/Defs.lean#L27))
 
 > Sort a list using insertion sort with comparison queries.
 
@@ -34,5 +34,5 @@ abbrev insertionSort (xs : List α) : FreeM (LEQuery α) (List α)
 
 ## Sources
 
-- [Cslib/Algorithms/Lean/Query/Sort/Insertion/Defs.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/Insertion/Defs.lean)
+- [Cslib/Algorithms/Lean/Query/Sort/Insertion/Defs.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Insertion/Defs.lean)
 - [Declaration ledger](../../../../../../../sources/cslib/Cslib.Algorithms.Lean.Query.Sort.Insertion.Defs.json)

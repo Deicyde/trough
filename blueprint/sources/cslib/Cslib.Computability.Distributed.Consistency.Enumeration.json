@@ -1,0 +1,18 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "7c95c37f952458306479b64468cb98d101ee1cf1",
+ "module": "Cslib.Computability.Distributed.Consistency.Enumeration",
+ "file": "Cslib/Computability/Distributed/Consistency/Enumeration.lean",
+ "public": [
+  {"name": "Enumeration", "kind": "class", "line": 31},
+  {"name": "Enumeration.instEnumerationSubtype", "kind": "instance", "line": 39},
+  {"name": "Enumeration.lt_isStrictTotalOrder", "kind": "theorem", "line": 53},
+  {"name": "Enumeration.lt_finite_predecessors", "kind": "theorem", "line": 57},
+  {"name": "Enumeration.lt_wellFounded", "kind": "theorem", "line": 61}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

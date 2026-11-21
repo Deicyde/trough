@@ -7,7 +7,7 @@ proof: formalized
 
 # Sequential composition of machines on shared tapes
 
-`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Sequential`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean), by Christian Reitwiessner, Samuel Schlesinger.
+`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Sequential`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean), by Christian Reitwiessner, Samuel Schlesinger.
 
 > `seq tm₀ tm₁` behaves like `tm₀` until `tm₀` would halt, at which point it continues as `tm₁`,
 > started in its initial state on the tapes as `tm₀` left them. The state space is
@@ -26,7 +26,7 @@ proof: formalized
 >   cells that the two paths visit.
 > * `Turing.MultiTapeTM.transformsTapes_seq`: transformations compose, bounds adding.
 
-`Turing.MultiTapeTM.seq` (abbreviation, [line 41](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean#L41))
+`Turing.MultiTapeTM.seq` (abbreviation, [line 41](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean#L41))
 
 > The sequential composition of `tm₀` and `tm₁`: it behaves like `tm₀` until `tm₀` would halt,
 > at which point it switches to the initial state of `tm₁` and behaves like `tm₁`. The switch is
@@ -37,22 +37,23 @@ noncomputable abbrev seq (tm₀ : MultiTapeTM k Symbol State₀) (tm₁ : MultiT
     MultiTapeTM k Symbol (State₀ ⊕ State₁)
 ```
 
-`Turing.MultiTapeTM.exists_runPath_seq` (theorem, [line 51](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean#L51))
+`Turing.MultiTapeTM.exists_runPath_seq` (theorem, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean#L51))
 
 > **Sequential composition of runs.** A run path of `tm₀` to a halted configuration and a run path
 > of `tm₁` started where `tm₀` halted combine into a run path of `seq`: the first path up to its first
-> halted configuration, followed by the second. It takes at most as many steps as the two paths
-> together, and visits only cells that they visit.
+> halted configuration, followed by the second. Time and space are bounded by the sums of the
+> component bounds, and the composed path visits only cells that they visit.
 
 ```lean
 theorem exists_runPath_seq {p₀ : tm₀.RunPath input} (h₀ : p₀.last.Halted)
     {p₁ : tm₁.RunPath input} (h₁ : p₁.head = p₀.last.withState (some tm₁.q₀)) :
     ∃ p : (tm₀.seq tm₁).RunPath input, p.head = p₀.head.mapState (handOver tm₁.q₀) ∧
       p.last = p₁.last.mapState (Option.map .inr) ∧ p.length ≤ p₀.length + p₁.length ∧
+      p.space ≤ p₀.space + p₁.space ∧
       ∀ i, p.visitedByTapeHead i ⊆ p₀.visitedByTapeHead i ∪ p₁.visitedByTapeHead i
 ```
 
-`Turing.MultiTapeTM.transformsTapes_seq` (theorem, [line 72](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean#L72))
+`Turing.MultiTapeTM.transformsTapes_seq` (theorem, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean#L77))
 
 > **Sequential composition of transformations.** If the postcondition of the first
 > transformation implies the precondition of the second, the composed machine performs the two
@@ -79,5 +80,5 @@ theorem transformsTapes_seq
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean)
 - [Declaration ledger](../../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Sequential.json)

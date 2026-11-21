@@ -7,7 +7,7 @@ proof: formalized
 
 # Relations: Definitions
 
-`Cslib.Foundations.Relation.Defs`, in [Cslib/Foundations/Relation/Defs.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean), by Fabrizio Montesi, Thomas Waring, Chris Henson.
+`Cslib.Foundations.Relation.Defs`, in [Cslib/Foundations/Relation/Defs.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean), by Fabrizio Montesi, Thomas Waring, Chris Henson.
 
 > ## References
 >
@@ -17,7 +17,7 @@ proof: formalized
 
 > ### Operations on relations
 
-`Relation.emptyHRelation` (definition, [line 30](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L30))
+`Relation.emptyHRelation` (definition, [line 30](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L30))
 
 > The empty (heterogeneous) relation, which always returns `False`.
 
@@ -25,7 +25,7 @@ proof: formalized
 def emptyHRelation {α : Sort u} {β : Sort v} (_ : α) (_ : β)
 ```
 
-`Relation.dom` (definition, [line 33](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L33))
+`Relation.dom` (definition, [line 33](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L33))
 
 > Domain of a relation.
 
@@ -33,7 +33,7 @@ def emptyHRelation {α : Sort u} {β : Sort v} (_ : α) (_ : β)
 def dom (r : α → β → Prop) : Set α
 ```
 
-`Relation.cod` (definition, [line 36](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L36))
+`Relation.cod` (definition, [line 36](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L36))
 
 > Codomain of a relation, aka range.
 
@@ -41,7 +41,7 @@ def dom (r : α → β → Prop) : Set α
 def cod (r : α → β → Prop) : Set β
 ```
 
-`Relation.Join₂` (definition, [line 39](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L39))
+`Relation.Join₂` (definition, [line 39](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L39))
 
 > Generalisation of `Join` to two relations.
 
@@ -49,7 +49,7 @@ def cod (r : α → β → Prop) : Set β
 def Join₂ (r₁ r₂ : α → α → Prop) (a b : α) : Prop
 ```
 
-`Relation.MJoin` (abbreviation, [line 44](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L44))
+`Relation.MJoin` (abbreviation, [line 44](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L44))
 
 > The join of the reflexive transitive closure. This is not named in Mathlib, but see
 > `#loogle Relation.Join (Relation.ReflTransGen ?r)`
@@ -58,7 +58,7 @@ def Join₂ (r₁ r₂ : α → α → Prop) (a b : α) : Prop
 abbrev MJoin (r : α → α → Prop)
 ```
 
-`Relation.UpTo` (definition, [line 47](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L47))
+`Relation.UpTo` (definition, [line 47](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L47))
 
 > The relation `r` 'up to' the relation `s`.
 
@@ -66,7 +66,7 @@ abbrev MJoin (r : α → α → Prop)
 def UpTo (r s : α → α → Prop) : α → α → Prop
 ```
 
-`Relation.Preserves` (definition, [line 50](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L50))
+`Relation.Preserves` (definition, [line 50](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L50))
 
 > Relation `r` preserves predicate `P`.
 
@@ -76,7 +76,7 @@ def Preserves (r : α → α → Prop) (P : α → Prop) : Prop
 
 > ### Confluence and commutation properties
 
-`Relation.Diamond` (abbreviation, [line 55](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L55))
+`Relation.Diamond` (abbreviation, [line 55](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L55))
 
 > A relation has the diamond property when all reductions with a common origin are joinable
 
@@ -84,7 +84,7 @@ def Preserves (r : α → α → Prop) (P : α → Prop) : Prop
 abbrev Diamond (r : α → α → Prop)
 ```
 
-`Relation.DiamondCommute` (abbreviation, [line 58](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L58))
+`Relation.DiamondCommute` (abbreviation, [line 58](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L58))
 
 > Generalization of `Diamond` to two relations.
 
@@ -92,7 +92,7 @@ abbrev Diamond (r : α → α → Prop)
 abbrev DiamondCommute (r₁ r₂ : α → α → Prop)
 ```
 
-`Relation.Confluent` (abbreviation, [line 62](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L62))
+`Relation.Confluent` (abbreviation, [line 62](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L62))
 
 > A relation is confluent when its reflexive transitive closure has the diamond property.
 
@@ -100,7 +100,7 @@ abbrev DiamondCommute (r₁ r₂ : α → α → Prop)
 abbrev Confluent (r : α → α → Prop)
 ```
 
-`Relation.Commute` (abbreviation, [line 65](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L65))
+`Relation.Commute` (abbreviation, [line 65](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L65))
 
 > Generalization of `Confluent` to two relations.
 
@@ -108,7 +108,7 @@ abbrev Confluent (r : α → α → Prop)
 abbrev Commute (r₁ r₂ : α → α → Prop)
 ```
 
-`Relation.SemiConfluent` (abbreviation, [line 69](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L69))
+`Relation.SemiConfluent` (abbreviation, [line 69](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L69))
 
 > A relation is semi-confluent when single and multiple steps with common origin
 > are multi-joinable.
@@ -117,7 +117,7 @@ abbrev Commute (r₁ r₂ : α → α → Prop)
 abbrev SemiConfluent (r : α → α → Prop)
 ```
 
-`Relation.SemiCommute` (abbreviation, [line 73](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L73))
+`Relation.SemiCommute` (abbreviation, [line 73](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L73))
 
 > Generalisation of `SemiConfluent` to two relations.
 
@@ -125,7 +125,7 @@ abbrev SemiConfluent (r : α → α → Prop)
 abbrev SemiCommute (r₁ r₂ : α → α → Prop)
 ```
 
-`Relation.ChurchRosser` (abbreviation, [line 77](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L77))
+`Relation.ChurchRosser` (abbreviation, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L77))
 
 > A relation has the Church Rosser property when equivalence implies multi-joinability.
 
@@ -133,7 +133,7 @@ abbrev SemiCommute (r₁ r₂ : α → α → Prop)
 abbrev ChurchRosser (r : α → α → Prop)
 ```
 
-`Relation.LocallyConfluent` (abbreviation, [line 80](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L80))
+`Relation.LocallyConfluent` (abbreviation, [line 80](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L80))
 
 > A relation is locally confluent when all reductions with a common origin are multi-joinable
 
@@ -141,7 +141,7 @@ abbrev ChurchRosser (r : α → α → Prop)
 abbrev LocallyConfluent (r : α → α → Prop)
 ```
 
-`Relation.LocallyCommute` (definition, [line 84](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L84))
+`Relation.LocallyCommute` (definition, [line 84](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L84))
 
 > Generalization of `LocallyConfluent` to two relations.
 
@@ -149,7 +149,7 @@ abbrev LocallyConfluent (r : α → α → Prop)
 def LocallyCommute (r₁ r₂ : α → α → Prop)
 ```
 
-`Relation.StronglyConfluent` (abbreviation, [line 88](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L88))
+`Relation.StronglyConfluent` (abbreviation, [line 88](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L88))
 
 > A relation is strongly confluent when single steps are reflexive- and multi-joinable.
 
@@ -157,7 +157,7 @@ def LocallyCommute (r₁ r₂ : α → α → Prop)
 abbrev StronglyConfluent (r : α → α → Prop)
 ```
 
-`Relation.StronglyCommute` (definition, [line 92](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L92))
+`Relation.StronglyCommute` (definition, [line 92](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L92))
 
 > Generalization of `StronglyConfluent` to two relations.
 
@@ -167,7 +167,7 @@ def StronglyCommute (r₁ r₂ : α → α → Prop)
 
 > ### Normalization properties
 
-`Relation.Reducible` (abbreviation, [line 98](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L98))
+`Relation.Reducible` (abbreviation, [line 98](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L98))
 
 > An element is reducible with respect to a relation if there is a value it is related to.
 
@@ -175,7 +175,7 @@ def StronglyCommute (r₁ r₂ : α → α → Prop)
 abbrev Reducible (r : α → α → Prop) (x : α) : Prop
 ```
 
-`Relation.Normal` (abbreviation, [line 101](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L101))
+`Relation.Normal` (abbreviation, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L101))
 
 > An element is normal if it is not reducible.
 
@@ -183,7 +183,7 @@ abbrev Reducible (r : α → α → Prop) (x : α) : Prop
 abbrev Normal (r : α → α → Prop) (x : α) : Prop
 ```
 
-`Relation.Normalizable` (abbreviation, [line 104](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L104))
+`Relation.Normalizable` (abbreviation, [line 104](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L104))
 
 > An element is normalizable if it is related to a normal element.
 
@@ -191,7 +191,7 @@ abbrev Normal (r : α → α → Prop) (x : α) : Prop
 abbrev Normalizable (r : α → α → Prop) (x : α) : Prop
 ```
 
-`Relation.Normalizing` (abbreviation, [line 108](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L108))
+`Relation.Normalizing` (abbreviation, [line 108](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L108))
 
 > A relation is normalizing when every element is normalizable.
 
@@ -199,7 +199,7 @@ abbrev Normalizable (r : α → α → Prop) (x : α) : Prop
 abbrev Normalizing (r : α → α → Prop) : Prop
 ```
 
-`Relation.SN` (abbreviation, [line 113](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L113))
+`Relation.SN` (abbreviation, [line 113](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L113))
 
 > An element `x` is `SN` (for strongly-normalising) for a relation `r` if it is accessible under
 > the inverse of `r`.
@@ -208,7 +208,7 @@ abbrev Normalizing (r : α → α → Prop) : Prop
 abbrev SN (r : α → α → Prop)
 ```
 
-`Relation.Terminating` (abbreviation, [line 117](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L117))
+`Relation.Terminating` (abbreviation, [line 117](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L117))
 
 > A relation is terminating when the inverse of its transitive closure is well-founded.
 > Note that this is also called Noetherian or strongly normalizing in the literature.
@@ -217,7 +217,7 @@ abbrev SN (r : α → α → Prop)
 abbrev Terminating (r : α → α → Prop)
 ```
 
-`Relation.Acyclic` (abbreviation, [line 121](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L121))
+`Relation.Acyclic` (abbreviation, [line 121](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L121))
 
 > A relation is acyclic if its transitive closure is irreflexive, equivalently if it admits no
 > nonempty cycle.
@@ -226,7 +226,7 @@ abbrev Terminating (r : α → α → Prop)
 abbrev Acyclic (r : α → α → Prop)
 ```
 
-`Relation.Convergent` (abbreviation, [line 124](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L124))
+`Relation.Convergent` (abbreviation, [line 124](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L124))
 
 > A relation is convergent when it is both confluent and terminating.
 
@@ -236,7 +236,7 @@ abbrev Convergent (r : α → α → Prop)
 
 > ### Modal properties
 
-`Relation.RightEuclidean` (class, [line 129](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L129))
+`Relation.RightEuclidean` (class, [line 129](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L129))
 
 > A relation `r` is (right) Euclidean if `r a b` and `r a c` guarantee `r b c`.
 
@@ -245,7 +245,7 @@ class RightEuclidean (r : α → α → Prop) where
   rightEuclidean : r a b → r a c → r b c
 ```
 
-`Relation.LeftEuclidean` (class, [line 133](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L133))
+`Relation.LeftEuclidean` (class, [line 133](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L133))
 
 > A relation `r` is (left) Euclidean if `r a c` and `r b c` guarantee `r a b`.
 
@@ -254,7 +254,7 @@ class LeftEuclidean (r : α → α → Prop) where
   leftEuclidean {a b c} : r a c → r b c → r a b
 ```
 
-`Relation.Serial` (class, [line 137](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L137))
+`Relation.Serial` (class, [line 137](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L137))
 
 > A relation `r` is serial if every element is `Reducible`, i.e. `Relator.LeftTotal`.
 
@@ -265,7 +265,7 @@ class Serial (r : α → α → Prop) where
 
 > ### Relations and sets in the underlying types
 
-`Relation.successors` (abbreviation, [line 143](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L143))
+`Relation.successors` (abbreviation, [line 143](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L143))
 
 > The set of successors of an element `a` in a relation `r`.
 
@@ -273,7 +273,7 @@ class Serial (r : α → α → Prop) where
 abbrev successors (r : α → β → Prop) (a : α) : Set β
 ```
 
-`Relation.predecessors` (abbreviation, [line 146](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L146))
+`Relation.predecessors` (abbreviation, [line 146](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L146))
 
 > The set of predecessors of an element `b` in a relation `r`.
 
@@ -281,7 +281,7 @@ abbrev successors (r : α → β → Prop) (a : α) : Set β
 abbrev predecessors (r : α → β → Prop) (b : β) : Set α
 ```
 
-`Relation.restrict` (definition, [line 149](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L149))
+`Relation.restrict` (definition, [line 149](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L149))
 
 > The restriction of a relation `r` to a set `s`.
 
@@ -291,7 +291,7 @@ def restrict (r : α → α → Prop) (s : Set α) : α → α → Prop
 
 > ### Interval order
 
-`Relation.IsIntervalOrder` (definition, [line 158](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L158))
+`Relation.IsIntervalOrder` (definition, [line 158](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L158))
 
 > Fishburn's theorem (see sections 6.6 and 6.7 of [KellerTrotter2017]) shows that
 > the definition below is a sufficient and necessary condition for a relation `r` to have
@@ -304,7 +304,7 @@ def IsIntervalOrder (r : α → α → Prop) : Prop
 
 > ### Properties of relations on restrictions of their (co)domain
 
-`Set.ReflOn` (definition, [line 175](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L175))
+`Set.ReflOn` (definition, [line 175](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L175))
 
 > `ReflOn s r` is true when a relation `r` is reflexive on its restriction to a set `s`.
 
@@ -312,7 +312,7 @@ def IsIntervalOrder (r : α → α → Prop) : Prop
 def ReflOn (s : Set α) (r : α → α → Prop) : Prop
 ```
 
-`Set.LeftQuasiRefl` (abbreviation, [line 181](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L181))
+`Set.LeftQuasiRefl` (abbreviation, [line 181](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L181))
 
 > `LeftQuasiRefl r` is true when a relation `r` is reflexive on its domain.
 
@@ -320,7 +320,7 @@ def ReflOn (s : Set α) (r : α → α → Prop) : Prop
 abbrev LeftQuasiRefl (r : α → α → Prop)
 ```
 
-`Set.RightQuasiRefl` (abbreviation, [line 184](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L184))
+`Set.RightQuasiRefl` (abbreviation, [line 184](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L184))
 
 > `RightQuasiRefl r` is true when a relation `r` is reflexive on its codomain.
 
@@ -328,7 +328,7 @@ abbrev LeftQuasiRefl (r : α → α → Prop)
 abbrev RightQuasiRefl (r : α → α → Prop)
 ```
 
-`Set.SymmOn` (definition, [line 187](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean#L187))
+`Set.SymmOn` (definition, [line 187](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean#L187))
 
 > `SymmOn s r` is true when a relation `r` is symmetric on its restriction to a set `s`.
 
@@ -342,5 +342,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Foundations/Relation/Defs.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Defs.lean)
+- [Cslib/Foundations/Relation/Defs.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Relation/Defs.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Foundations.Relation.Defs.json)

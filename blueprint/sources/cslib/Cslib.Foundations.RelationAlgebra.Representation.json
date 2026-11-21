@@ -2,13 +2,19 @@
  "schema": "trough-ledger/v1",
  "library": "CSLib",
  "repo": "leanprover/cslib",
- "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "rev": "7c95c37f952458306479b64468cb98d101ee1cf1",
  "module": "Cslib.Foundations.RelationAlgebra.Representation",
  "file": "Cslib/Foundations/RelationAlgebra/Representation.lean",
  "public": [
-  {"name": "Cslib.RelationAlgebra.SquareRelations", "kind": "def", "line": 35},
-  {"name": "Cslib.RelationAlgebra.Representation", "kind": "structure", "line": 67},
-  {"name": "Cslib.RelationAlgebra.Representable", "kind": "def", "line": 73}
+  {"name": "SetRel.mul_eq_comp", "kind": "theorem", "line": 54},
+  {"name": "SetRel.one_eq_id", "kind": "theorem", "line": 56},
+  {"name": "SetRel.star_eq_inv", "kind": "theorem", "line": 58},
+  {"name": "SetRel.mem_mul", "kind": "theorem", "line": 61},
+  {"name": "SetRel.mem_one", "kind": "theorem", "line": 64},
+  {"name": "SetRel.mem_star", "kind": "theorem", "line": 67},
+  {"name": "Cslib.RelationAlgebra.Representation", "kind": "structure", "line": 70},
+  {"name": "Cslib.RelationAlgebra.Representable", "kind": "def", "line": 76},
+  {"name": "Cslib.RelationAlgebra.Representable.of_injective", "kind": "theorem", "line": 80}
  ],
  "private": [],
  "missing": [],

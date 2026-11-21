@@ -2,12 +2,14 @@
  "schema": "trough-ledger/v1",
  "library": "CSLib",
  "repo": "leanprover/cslib",
- "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "rev": "7c95c37f952458306479b64468cb98d101ee1cf1",
  "module": "Cslib.Foundations.Semantics.FLTS.SyncTrace",
  "file": "Cslib/Foundations/Semantics/FLTS/SyncTrace.lean",
  "public": [
-  {"name": "Cslib.FLTS.IsSyncTrace", "kind": "def", "line": 24},
-  {"name": "Cslib.FLTS.HasSyncTrace", "kind": "def", "line": 28}
+  {"name": "Cslib.FLTS.IsSyncTrace", "kind": "def", "line": 32},
+  {"name": "Cslib.FLTS.HasSyncTrace", "kind": "def", "line": 36},
+  {"name": "Cslib.FLTS.PairwiseHasSyncTrace", "kind": "def", "line": 40},
+  {"name": "Cslib.FLTS.hasSyncTrace_iff_pairwiseHasSyncTrace", "kind": "theorem", "line": 61}
  ],
  "private": [],
  "missing": [],

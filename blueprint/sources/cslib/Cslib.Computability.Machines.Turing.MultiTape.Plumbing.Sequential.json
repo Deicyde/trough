@@ -2,13 +2,13 @@
  "schema": "trough-ledger/v1",
  "library": "CSLib",
  "repo": "leanprover/cslib",
- "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "rev": "7c95c37f952458306479b64468cb98d101ee1cf1",
  "module": "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Sequential",
  "file": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean",
  "public": [
   {"name": "Turing.MultiTapeTM.seq", "kind": "abbrev", "line": 41},
   {"name": "Turing.MultiTapeTM.exists_runPath_seq", "kind": "theorem", "line": 51},
-  {"name": "Turing.MultiTapeTM.transformsTapes_seq", "kind": "theorem", "line": 72}
+  {"name": "Turing.MultiTapeTM.transformsTapes_seq", "kind": "theorem", "line": 77}
  ],
  "private": [],
  "missing": [],

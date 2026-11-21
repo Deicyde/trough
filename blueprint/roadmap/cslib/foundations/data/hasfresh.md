@@ -7,11 +7,11 @@ proof: formalized
 
 # HasFresh
 
-`Cslib.Foundations.Data.HasFresh`, in [Cslib/Foundations/Data/HasFresh.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/HasFresh.lean), by Fabrizio Montesi, Kenny Lau.
+`Cslib.Foundations.Data.HasFresh`, in [Cslib/Foundations/Data/HasFresh.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/HasFresh.lean), by Fabrizio Montesi, Kenny Lau.
 
 > Computable chacterization of infinite types.
 
-`Cslib.HasFresh` (class, [line 22](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/HasFresh.lean#L22))
+`Cslib.HasFresh` (class, [line 22](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/HasFresh.lean#L22))
 
 > A type `α` has a computable `fresh` function if it is always possible, for any finite set
 > of `α`, to compute a fresh element not in the set.
@@ -24,7 +24,7 @@ class HasFresh (α : Type u) where
   fresh_notMem (s : Finset α) : fresh s ∉ s
 ```
 
-`Cslib.HasFresh.fresh_exists` (theorem, [line 32](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/HasFresh.lean#L32))
+`Cslib.HasFresh.fresh_exists` (theorem, [line 32](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/HasFresh.lean#L32))
 
 > An existential version of the `HasFresh` typeclass. This is useful for the sake of brevity
 > in proofs.
@@ -33,7 +33,7 @@ class HasFresh (α : Type u) where
 theorem HasFresh.fresh_exists {α : Type u} [HasFresh α] (s : Finset α) : ∃ a, a ∉ s
 ```
 
-`Cslib.HasFresh.to_infinite` (instance, [line 38](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/HasFresh.lean#L38))
+`Cslib.HasFresh.to_infinite` (instance, [line 38](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/HasFresh.lean#L38))
 
 > `HasFresh α` implies a computably infinite type.
 
@@ -41,7 +41,7 @@ theorem HasFresh.fresh_exists {α : Type u} [HasFresh α] (s : Finset α) : ∃ 
 instance HasFresh.to_infinite (α : Type u) [HasFresh α] : Infinite α
 ```
 
-`Cslib.HasFresh.ofNatEmbed` (definition, [line 52](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/HasFresh.lean#L52))
+`Cslib.HasFresh.ofNatEmbed` (definition, [line 52](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/HasFresh.lean#L52))
 
 > Construct a fresh element from an embedding of `ℕ` using `Nat.find`.
 
@@ -49,7 +49,7 @@ instance HasFresh.to_infinite (α : Type u) [HasFresh α] : Infinite α
 def HasFresh.ofNatEmbed {α : Type u} [DecidableEq α] (e : ℕ ↪ α) : HasFresh α
 ```
 
-`Cslib.HasFresh.ofSucc` (definition, [line 59](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/HasFresh.lean#L59))
+`Cslib.HasFresh.ofSucc` (definition, [line 59](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/HasFresh.lean#L59))
 
 > Construct a fresh element given a function `f` with `x < f x`.
 
@@ -58,7 +58,7 @@ def HasFresh.ofSucc {α : Type u} [Inhabited α] [SemilatticeSup α] (f : α →
     HasFresh α
 ```
 
-`Cslib.FreeUnionConfig` (structure, [line 97](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/HasFresh.lean#L97))
+`Cslib.FreeUnionConfig` (structure, [line 97](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/HasFresh.lean#L97))
 
 > Configuration for the `free_union` term elaborator.
 
@@ -70,7 +70,7 @@ structure FreeUnionConfig where
   finset : Bool := true
 ```
 
-`Cslib.HasFresh.freeUnion` (definition, [line 143](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/HasFresh.lean#L143))
+`Cslib.HasFresh.freeUnion` (definition, [line 143](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/HasFresh.lean#L143))
 
 > Elaborator for `free_union`.
 
@@ -84,5 +84,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Foundations/Data/HasFresh.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/HasFresh.lean)
+- [Cslib/Foundations/Data/HasFresh.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/HasFresh.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Foundations.Data.HasFresh.json)

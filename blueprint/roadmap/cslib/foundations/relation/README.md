@@ -1,6 +1,6 @@
 # Relation
 
-10 modules under `Cslib/Foundations/Relation/`, with 261 public declarations.
+10 modules under `Cslib/Foundations/Relation/`, with 260 public declarations.
 
 - [Relations: Attributes](attr.md)
 - [Basic properties of relations](basic.md)

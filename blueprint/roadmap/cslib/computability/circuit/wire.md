@@ -7,7 +7,7 @@ proof: formalized
 
 # Circuit wires and renamings
 
-`Cslib.Computability.Circuit.Wire`, in [Cslib/Computability/Circuit/Wire.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean), by Samuel Schlesinger.
+`Cslib.Computability.Circuit.Wire`, in [Cslib/Computability/Circuit/Wire.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean), by Samuel Schlesinger.
 
 > A `Wire inputCount gateCount` refers to an original input or an internal gate.
 > A valuation of wires is assembled with `Wire.elim` from values for the inputs and
@@ -17,7 +17,7 @@ proof: formalized
 > in the target namespace. This file provides identity and composition, extension
 > by a gate, replacement of the last gate, and renaming by a permutation.
 
-`Cslib.Circuits.Wire` (inductive type, [line 28](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L28))
+`Cslib.Circuits.Wire` (inductive type, [line 28](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L28))
 
 > A wire is either an original input or the output of an earlier gate.
 
@@ -30,7 +30,7 @@ inductive Wire (inputCount gateCount : Nat) where
   deriving DecidableEq
 ```
 
-`Cslib.Circuits.Wire.elim` (definition, [line 40](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L40))
+`Cslib.Circuits.Wire.elim` (definition, [line 40](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L40))
 
 > Define a function on wires from its values on inputs and on gates.
 
@@ -39,21 +39,21 @@ protected def elim (inputs : Fin inputCount → α) (gates : Fin gateCount → �
     Wire inputCount gateCount → α
 ```
 
-`Cslib.Circuits.Wire.elim_input` (theorem, [line 45](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L45))
+`Cslib.Circuits.Wire.elim_input` (theorem, [line 45](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L45))
 
 ```lean
 theorem elim_input (inputs : Fin inputCount → α) (gates : Fin gateCount → α)
     (i : Fin inputCount) : Wire.elim inputs gates (input i) = inputs i
 ```
 
-`Cslib.Circuits.Wire.elim_gate` (theorem, [line 48](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L48))
+`Cslib.Circuits.Wire.elim_gate` (theorem, [line 48](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L48))
 
 ```lean
 theorem elim_gate (inputs : Fin inputCount → α) (gates : Fin gateCount → α)
     (j : Fin gateCount) : Wire.elim inputs gates (gate j) = gates j
 ```
 
-`Cslib.Circuits.Wire.equiv` (definition, [line 52](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L52))
+`Cslib.Circuits.Wire.equiv` (definition, [line 52](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L52))
 
 > A wire is an input or a gate.
 
@@ -62,13 +62,13 @@ def equiv (inputCount gateCount : Nat) :
     Wire inputCount gateCount ≃ Fin inputCount ⊕ Fin gateCount
 ```
 
-`Cslib.Circuits.Wire.card` (theorem, [line 63](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L63))
+`Cslib.Circuits.Wire.card` (theorem, [line 63](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L63))
 
 ```lean
 protected theorem card : Fintype.card (Wire inputCount gateCount) = inputCount + gateCount
 ```
 
-`Cslib.Circuits.Wire.mapInputs` (definition, [line 67](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L67))
+`Cslib.Circuits.Wire.mapInputs` (definition, [line 67](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L67))
 
 > Map the input of a wire through a function, if it's connected to one.
 
@@ -77,28 +77,28 @@ def mapInputs {inputCount' : ℕ} (f : Fin inputCount → Fin inputCount') :
     Wire inputCount gateCount → Wire inputCount' gateCount
 ```
 
-`Cslib.Circuits.Wire.mapInputs_input` (theorem, [line 73](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L73))
+`Cslib.Circuits.Wire.mapInputs_input` (theorem, [line 73](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L73))
 
 ```lean
 theorem mapInputs_input {inputCount' : ℕ} (f : Fin inputCount → Fin inputCount')
     (i : Fin inputCount) : (.input i : Wire inputCount gateCount).mapInputs f = .input (f i)
 ```
 
-`Cslib.Circuits.Wire.mapInputs_gate` (theorem, [line 78](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L78))
+`Cslib.Circuits.Wire.mapInputs_gate` (theorem, [line 78](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L78))
 
 ```lean
 theorem mapInputs_gate {inputCount' : ℕ} (f : Fin inputCount → Fin inputCount')
     (g : Fin gateCount) : (.gate g : Wire inputCount gateCount).mapInputs f = .gate g
 ```
 
-`Cslib.Circuits.Wire.mapInputs_id` (theorem, [line 82](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L82))
+`Cslib.Circuits.Wire.mapInputs_id` (theorem, [line 82](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L82))
 
 ```lean
 theorem mapInputs_id :
     (mapInputs id : Wire inputCount gateCount → Wire inputCount gateCount) = id
 ```
 
-`Cslib.Circuits.Wire.mapInputs_mapInputs` (theorem, [line 88](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L88))
+`Cslib.Circuits.Wire.mapInputs_mapInputs` (theorem, [line 88](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L88))
 
 ```lean
 theorem mapInputs_mapInputs {inputCount' inputCount'' : ℕ} (f : Fin inputCount → Fin inputCount')
@@ -106,7 +106,7 @@ theorem mapInputs_mapInputs {inputCount' inputCount'' : ℕ} (f : Fin inputCount
     (w.mapInputs f).mapInputs g = w.mapInputs (g ∘ f)
 ```
 
-`Cslib.Circuits.Wire.elim_mapInputs` (theorem, [line 94](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L94))
+`Cslib.Circuits.Wire.elim_mapInputs` (theorem, [line 94](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L94))
 
 > Evaluating a relabeled wire precomposes the input valuation with the relabeling.
 
@@ -116,7 +116,7 @@ theorem elim_mapInputs {inputCount' : ℕ} (f : Fin inputCount → Fin inputCoun
     Wire.elim inputs gates (wire.mapInputs f) = Wire.elim (inputs ∘ f) gates wire
 ```
 
-`Cslib.Circuits.Wire.elim_comp_mapInputs` (theorem, [line 100](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L100))
+`Cslib.Circuits.Wire.elim_comp_mapInputs` (theorem, [line 100](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L100))
 
 > Function form of `elim_mapInputs`.
 
@@ -126,7 +126,7 @@ theorem elim_comp_mapInputs {inputCount' : ℕ} (f : Fin inputCount → Fin inpu
     Wire.elim inputs gates ∘ Wire.mapInputs f = Wire.elim (inputs ∘ f) gates
 ```
 
-`Cslib.Circuits.Wire.castSucc` (definition, [line 107](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L107))
+`Cslib.Circuits.Wire.castSucc` (definition, [line 107](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L107))
 
 > Regard a wire as a wire in a namespace with one additional gate.
 
@@ -134,21 +134,21 @@ theorem elim_comp_mapInputs {inputCount' : ℕ} (f : Fin inputCount → Fin inpu
 def castSucc : Wire inputCount gateCount → Wire inputCount (gateCount + 1)
 ```
 
-`Cslib.Circuits.Wire.castSucc_input` (theorem, [line 111](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L111))
+`Cslib.Circuits.Wire.castSucc_input` (theorem, [line 111](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L111))
 
 ```lean
 theorem castSucc_input (i : Fin inputCount) :
     (input i : Wire inputCount gateCount).castSucc = input i
 ```
 
-`Cslib.Circuits.Wire.castSucc_gate` (theorem, [line 114](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L114))
+`Cslib.Circuits.Wire.castSucc_gate` (theorem, [line 114](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L114))
 
 ```lean
 theorem castSucc_gate (j : Fin gateCount) :
     (gate j : Wire inputCount gateCount).castSucc = gate j.castSucc
 ```
 
-`Cslib.Circuits.Wire.castAdd` (definition, [line 118](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L118))
+`Cslib.Circuits.Wire.castAdd` (definition, [line 118](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L118))
 
 > Regard a wire as a wire of the same program continued by `extra` further gates.
 
@@ -156,21 +156,21 @@ theorem castSucc_gate (j : Fin gateCount) :
 def castAdd (extra : Nat) : Wire inputCount gateCount → Wire inputCount (gateCount + extra)
 ```
 
-`Cslib.Circuits.Wire.castAdd_input` (theorem, [line 122](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L122))
+`Cslib.Circuits.Wire.castAdd_input` (theorem, [line 122](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L122))
 
 ```lean
 theorem castAdd_input (extra : Nat) (i : Fin inputCount) :
     (input i : Wire inputCount gateCount).castAdd extra = input i
 ```
 
-`Cslib.Circuits.Wire.castAdd_gate` (theorem, [line 125](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L125))
+`Cslib.Circuits.Wire.castAdd_gate` (theorem, [line 125](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L125))
 
 ```lean
 theorem castAdd_gate (extra : Nat) (j : Fin gateCount) :
     (gate j : Wire inputCount gateCount).castAdd extra = gate (j.castAdd extra)
 ```
 
-`Cslib.Circuits.Wire.lastCases` (definition, [line 131](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L131))
+`Cslib.Circuits.Wire.lastCases` (definition, [line 131](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L131))
 
 > A wire in a namespace with one additional gate is either the new last gate or an
 > earlier wire.
@@ -182,7 +182,7 @@ def lastCases {motive : Wire inputCount (gateCount + 1) → Sort*}
     ∀ wire, motive wire
 ```
 
-`Cslib.Circuits.Wire.Renaming` (structure, [line 143](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L143))
+`Cslib.Circuits.Wire.Renaming` (structure, [line 143](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L143))
 
 > A renaming of gate wires that fixes every original input. Gate wires may be
 > sent to either inputs or gates in the target namespace.
@@ -193,7 +193,7 @@ structure Wire.Renaming (inputCount sourceGateCount targetGateCount : Nat) where
   gates : Fin sourceGateCount → Wire inputCount targetGateCount
 ```
 
-`Cslib.Circuits.Wire.Renaming.apply` (definition, [line 153](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L153))
+`Cslib.Circuits.Wire.Renaming.apply` (definition, [line 153](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L153))
 
 > Apply an input-fixing wire renaming.
 
@@ -202,7 +202,7 @@ def apply (ρ : Wire.Renaming inputCount sourceGateCount targetGateCount) :
     Wire inputCount sourceGateCount → Wire inputCount targetGateCount
 ```
 
-`Cslib.Circuits.Wire.Renaming.apply_input` (theorem, [line 161](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L161))
+`Cslib.Circuits.Wire.Renaming.apply_input` (theorem, [line 161](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L161))
 
 ```lean
 theorem apply_input
@@ -210,7 +210,7 @@ theorem apply_input
     ρ (Wire.input input) = Wire.input input
 ```
 
-`Cslib.Circuits.Wire.Renaming.apply_gate` (theorem, [line 165](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L165))
+`Cslib.Circuits.Wire.Renaming.apply_gate` (theorem, [line 165](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L165))
 
 ```lean
 theorem apply_gate
@@ -218,7 +218,7 @@ theorem apply_gate
     ρ (Wire.gate gate) = ρ.gates gate
 ```
 
-`Cslib.Circuits.Wire.Renaming.id` (definition, [line 170](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L170))
+`Cslib.Circuits.Wire.Renaming.id` (definition, [line 170](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L170))
 
 > The identity wire renaming.
 
@@ -226,14 +226,14 @@ theorem apply_gate
 def id : Wire.Renaming inputCount gateCount gateCount
 ```
 
-`Cslib.Circuits.Wire.Renaming.id_apply` (theorem, [line 173](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L173))
+`Cslib.Circuits.Wire.Renaming.id_apply` (theorem, [line 173](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L173))
 
 ```lean
 theorem id_apply (wire : Wire inputCount gateCount) :
     (id : Wire.Renaming inputCount gateCount gateCount) wire = wire
 ```
 
-`Cslib.Circuits.Wire.Renaming.comp` (definition, [line 178](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L178))
+`Cslib.Circuits.Wire.Renaming.comp` (definition, [line 178](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L178))
 
 > Compose input-fixing wire renamings.
 
@@ -244,7 +244,7 @@ def comp
     Wire.Renaming inputCount sourceGateCount targetGateCount
 ```
 
-`Cslib.Circuits.Wire.Renaming.comp_apply` (theorem, [line 184](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L184))
+`Cslib.Circuits.Wire.Renaming.comp_apply` (theorem, [line 184](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L184))
 
 ```lean
 theorem comp_apply
@@ -254,7 +254,7 @@ theorem comp_apply
     (outer.comp inner) wire = outer (inner wire)
 ```
 
-`Cslib.Circuits.Wire.Renaming.castSucc` (definition, [line 192](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L192))
+`Cslib.Circuits.Wire.Renaming.castSucc` (definition, [line 192](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L192))
 
 > Include all wires into a namespace with one additional gate.
 
@@ -262,14 +262,14 @@ theorem comp_apply
 def castSucc : Wire.Renaming inputCount gateCount (gateCount + 1)
 ```
 
-`Cslib.Circuits.Wire.Renaming.castSucc_apply` (theorem, [line 195](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L195))
+`Cslib.Circuits.Wire.Renaming.castSucc_apply` (theorem, [line 195](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L195))
 
 ```lean
 theorem castSucc_apply (wire : Wire inputCount gateCount) :
     (castSucc : Wire.Renaming inputCount gateCount (gateCount + 1)) wire = wire.castSucc
 ```
 
-`Cslib.Circuits.Wire.Renaming.skipLast` (definition, [line 200](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L200))
+`Cslib.Circuits.Wire.Renaming.skipLast` (definition, [line 200](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L200))
 
 > Extend a renaming while replacing the new last gate by an existing wire.
 
@@ -280,7 +280,7 @@ def skipLast
     Wire.Renaming inputCount (sourceGateCount + 1) targetGateCount
 ```
 
-`Cslib.Circuits.Wire.Renaming.skipLast_gates_last` (theorem, [line 206](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L206))
+`Cslib.Circuits.Wire.Renaming.skipLast_gates_last` (theorem, [line 206](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L206))
 
 ```lean
 theorem skipLast_gates_last
@@ -289,7 +289,7 @@ theorem skipLast_gates_last
     (prior.skipLast replacement).gates (Fin.last sourceGateCount) = replacement
 ```
 
-`Cslib.Circuits.Wire.Renaming.skipLast_castSucc` (theorem, [line 212](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L212))
+`Cslib.Circuits.Wire.Renaming.skipLast_castSucc` (theorem, [line 212](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L212))
 
 ```lean
 theorem skipLast_castSucc
@@ -299,7 +299,7 @@ theorem skipLast_castSucc
     prior.skipLast replacement wire.castSucc = prior wire
 ```
 
-`Cslib.Circuits.Wire.Renaming.appendLast` (definition, [line 220](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L220))
+`Cslib.Circuits.Wire.Renaming.appendLast` (definition, [line 220](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L220))
 
 > Extend a renaming and retain the new last gate as a fresh target gate.
 
@@ -309,7 +309,7 @@ def appendLast
     Wire.Renaming inputCount (sourceGateCount + 1) (targetGateCount + 1)
 ```
 
-`Cslib.Circuits.Wire.Renaming.appendLast_gates_last` (theorem, [line 226](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L226))
+`Cslib.Circuits.Wire.Renaming.appendLast_gates_last` (theorem, [line 226](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L226))
 
 ```lean
 theorem appendLast_gates_last
@@ -317,7 +317,7 @@ theorem appendLast_gates_last
     prior.appendLast.gates (Fin.last sourceGateCount) = Wire.gate (Fin.last targetGateCount)
 ```
 
-`Cslib.Circuits.Wire.Renaming.appendLast_castSucc` (theorem, [line 231](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L231))
+`Cslib.Circuits.Wire.Renaming.appendLast_castSucc` (theorem, [line 231](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L231))
 
 ```lean
 theorem appendLast_castSucc
@@ -326,7 +326,7 @@ theorem appendLast_castSucc
     prior.appendLast wire.castSucc = (prior wire).castSucc
 ```
 
-`Cslib.Circuits.Wire.Renaming.ofPermutation` (definition, [line 238](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L238))
+`Cslib.Circuits.Wire.Renaming.ofPermutation` (definition, [line 238](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L238))
 
 > Rename gate wires by a permutation.
 
@@ -335,7 +335,7 @@ def ofPermutation (permutation : Equiv.Perm (Fin gateCount)) :
     Wire.Renaming inputCount gateCount gateCount
 ```
 
-`Cslib.Circuits.Wire.Renaming.ofPermutation_gate` (theorem, [line 242](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L242))
+`Cslib.Circuits.Wire.Renaming.ofPermutation_gate` (theorem, [line 242](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L242))
 
 ```lean
 theorem ofPermutation_gate
@@ -344,7 +344,7 @@ theorem ofPermutation_gate
       Wire.gate (permutation gate)
 ```
 
-`Cslib.Circuits.Wire.Renaming.value_apply` (theorem, [line 249](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean#L249))
+`Cslib.Circuits.Wire.Renaming.value_apply` (theorem, [line 249](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean#L249))
 
 > A source and target gate valuation agree along a renaming when they agree
 > on the image of every source gate. Original inputs agree automatically.
@@ -366,5 +366,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Computability/Circuit/Wire.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Wire.lean)
+- [Cslib/Computability/Circuit/Wire.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Wire.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Circuit.Wire.json)

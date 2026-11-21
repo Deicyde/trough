@@ -7,9 +7,9 @@ proof: formalized
 
 # OmegaAcceptor
 
-`Cslib.Computability.Automata.Acceptors.OmegaAcceptor`, in [Cslib/Computability/Automata/Acceptors/OmegaAcceptor.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/Acceptors/OmegaAcceptor.lean), by Fabrizio Montesi.
+`Cslib.Computability.Automata.Acceptors.OmegaAcceptor`, in [Cslib/Computability/Automata/Acceptors/OmegaAcceptor.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/Acceptors/OmegaAcceptor.lean), by Fabrizio Montesi.
 
-`Cslib.Automata.ωAcceptor` (class, [line 18](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/Acceptors/OmegaAcceptor.lean#L18))
+`Cslib.Automata.ωAcceptor` (class, [line 18](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/Acceptors/OmegaAcceptor.lean#L18))
 
 > An `ωAcceptor` is a machine that recognises infinite sequences of symbols.
 
@@ -19,7 +19,7 @@ class ωAcceptor (A : Type u) (Symbol : outParam (Type v)) where
   Accepts (a : A) (xs : ωSequence Symbol) : Prop
 ```
 
-`Cslib.Automata.ωAcceptor.language` (definition, [line 28](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/Acceptors/OmegaAcceptor.lean#L28))
+`Cslib.Automata.ωAcceptor.language` (definition, [line 28](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/Acceptors/OmegaAcceptor.lean#L28))
 
 > The language of an `ωAcceptor` is the set of sequences it `Accepts`.
 
@@ -27,7 +27,7 @@ class ωAcceptor (A : Type u) (Symbol : outParam (Type v)) where
 def language [ωAcceptor A Symbol] (a : A) : ωLanguage Symbol
 ```
 
-`Cslib.Automata.ωAcceptor.mem_language` (theorem, [line 33](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/Acceptors/OmegaAcceptor.lean#L33))
+`Cslib.Automata.ωAcceptor.mem_language` (theorem, [line 33](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/Acceptors/OmegaAcceptor.lean#L33))
 
 > A string is in the language of an acceptor iff the acceptor accepts it.
 
@@ -42,5 +42,5 @@ theorem mem_language [ωAcceptor A Symbol] (a : A) (xs : ωSequence Symbol) :
 
 ## Sources
 
-- [Cslib/Computability/Automata/Acceptors/OmegaAcceptor.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/Acceptors/OmegaAcceptor.lean)
+- [Cslib/Computability/Automata/Acceptors/OmegaAcceptor.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/Acceptors/OmegaAcceptor.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.Acceptors.OmegaAcceptor.json)

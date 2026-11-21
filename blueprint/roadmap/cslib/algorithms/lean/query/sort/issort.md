@@ -7,13 +7,13 @@ proof: formalized
 
 # IsSort: Specification for Comparison Sorts
 
-`Cslib.Algorithms.Lean.Query.Sort.IsSort`, in [Cslib/Algorithms/Lean/Query/Sort/IsSort.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/IsSort.lean), by Kim Morrison, Shreyas Srinivas.
+`Cslib.Algorithms.Lean.Query.Sort.IsSort`, in [Cslib/Algorithms/Lean/Query/Sort/IsSort.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/IsSort.lean), by Kim Morrison, Shreyas Srinivas.
 
 > `IsSort sort` asserts that `sort` is a correct comparison sort when viewed as a `FreeM`
 > over `LEQuery α`. Correctness means: for any oracle, the result is a permutation of the
 > input; and for any oracle implementing a total order, the result is sorted.
 
-`Cslib.Query.IsSort` (structure, [line 26](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/IsSort.lean#L26))
+`Cslib.Query.IsSort` (structure, [line 26](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/IsSort.lean#L26))
 
 > A `FreeM`-based function is a correct comparison sort if it always produces a permutation
 > of its input, and produces a sorted list when the oracle implements a total order.
@@ -30,7 +30,7 @@ structure IsSort (sort : List α → FreeM (LEQuery α) (List α)) : Prop where
     ((sort xs).eval oracle).Pairwise r
 ```
 
-`Cslib.Query.IsSort.eval_eq` (theorem, [line 38](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/IsSort.lean#L38))
+`Cslib.Query.IsSort.eval_eq` (theorem, [line 38](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/IsSort.lean#L38))
 
 > `IsSort` determines the output: under an oracle implementing an antisymmetric total
 > transitive relation, all correct comparison sorts produce the same list.
@@ -50,5 +50,5 @@ theorem IsSort.eval_eq {sort₁ sort₂ : List α → FreeM (LEQuery α) (List �
 
 ## Sources
 
-- [Cslib/Algorithms/Lean/Query/Sort/IsSort.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/IsSort.lean)
+- [Cslib/Algorithms/Lean/Query/Sort/IsSort.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/IsSort.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Algorithms.Lean.Query.Sort.IsSort.json)

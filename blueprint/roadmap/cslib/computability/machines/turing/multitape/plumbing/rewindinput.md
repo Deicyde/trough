@@ -1,13 +1,13 @@
 ---
 catalog: module
-lean: Turing.MultiTapeTM.RewindState, Turing.MultiTapeTM.rewindInput, Turing.MultiTapeTM.runFrom_rewindInput
+lean: Turing.MultiTapeTM.RewindState, Turing.MultiTapeTM.rewindInput, Turing.MultiTapeTM.runFrom_rewindInput, Turing.MultiTapeTM.exists_runPath_rewindInput
 statement: formalized
 proof: formalized
 ---
 
 # A machine that rewinds the input head
 
-`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindInput`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean), by Christian Reitwiessner.
+`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindInput`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean), by Christian Reitwiessner.
 
 > A two-state machine that, when started in its initial state at any input-head position, returns the
 > head to position 1 (the first input symbol when the input is nonempty, otherwise the right boundary)
@@ -29,8 +29,10 @@ proof: formalized
 >
 > * `Turing.MultiTapeTM.rewindInput`: the machine that rewinds the input head.
 > * `Turing.MultiTapeTM.runFrom_rewindInput`: its run from the initial state.
+> * `Turing.MultiTapeTM.exists_runPath_rewindInput`: its run path inside a machine with `k` work
+>   tapes, started on any configuration.
 
-`Turing.MultiTapeTM.RewindState` (inductive type, [line 42](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean#L42))
+`Turing.MultiTapeTM.RewindState` (inductive type, [line 44](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean#L44))
 
 > The control states of the rewinding machine: `start` takes one unconditional step left,
 > `walk` moves left towards the left boundary of the input.
@@ -42,7 +44,7 @@ public inductive RewindState : Type
   deriving DecidableEq
 ```
 
-`Turing.MultiTapeTM.rewindInput` (definition, [line 57](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean#L57))
+`Turing.MultiTapeTM.rewindInput` (definition, [line 59](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean#L59))
 
 > The rewinding machine. In state `start` it moves the input head left, unconditionally, and
 > enters `walk`. In state `walk` it moves left over a symbol; on the first blank it moves right and
@@ -52,7 +54,7 @@ public inductive RewindState : Type
 public def rewindInput (Symbol : Type*) : MultiTapeTM 0 Symbol RewindState
 ```
 
-`Turing.MultiTapeTM.runFrom_rewindInput` (theorem, [line 99](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean#L99))
+`Turing.MultiTapeTM.runFrom_rewindInput` (theorem, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean#L101))
 
 > From its initial state at input position `p` the machine halts after `p - 1 + 2` steps, with
 > the input head at position `1` and everything else unchanged.
@@ -64,11 +66,27 @@ public theorem runFrom_rewindInput (p : Fin (input.length + 2))
       (p.val - 1 + 2) = ⟨none, 1, tapes, heads, out⟩
 ```
 
+`Turing.MultiTapeTM.exists_runPath_rewindInput` (theorem, [line 114](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean#L114))
+
+> **Rewinding the input inside a machine with `k` work tapes.** Started on any configuration, the
+> rewinding machine halts after `p - 1 + 2` steps, where `p` is the position of the input head. The
+> input head ends at position `1`; the work tapes, their heads and the output are unchanged, and
+> each work tape costs one cell.
+
+```lean
+public theorem exists_runPath_rewindInput {k : ℕ} {State : Type*}
+    (c : Cfg k Symbol State input) :
+    ∃ p : ((rewindInput Symbol).extendTapes (noTapes k)).RunPath input,
+      p.head = c.withState (some (rewindInput Symbol).q₀) ∧
+      p.last = ⟨none, 1, c.workTapes, c.workTapePos, c.output⟩ ∧
+      p.length = c.inputPos.val - 1 + 2 ∧ p.space ≤ k
+```
+
 ## Depends on
 
-- [Deterministic Multi-Tape Turing Machines](../deterministic.md)
+- [Extending a machine with additional work tapes](extendtapes.md)
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean)
 - [Declaration ledger](../../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindInput.json)

@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "7c95c37f952458306479b64468cb98d101ee1cf1",
+ "module": "Cslib.Foundations.Order.FixedPoints",
+ "file": "Cslib/Foundations/Order/FixedPoints.lean",
+ "public": [
+  {"name": "OrderHom.nextFixed_bot_coe", "kind": "theorem", "line": 20},
+  {"name": "OrderHom.prevFixed_top_coe", "kind": "theorem", "line": 23},
+  {"name": "OrderHom.nextFixed_le_of_map_le", "kind": "theorem", "line": 27},
+  {"name": "OrderHom.le_prevFixed_of_map_ge", "kind": "theorem", "line": 33},
+  {"name": "OrderHom.nextFixed_induction", "kind": "theorem", "line": 39},
+  {"name": "OrderHom.prevFixed_induction", "kind": "theorem", "line": 53}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -1,6 +1,6 @@
 # LTS
 
-18 modules under `Cslib/Foundations/Semantics/LTS/`, with 326 public declarations.
+18 modules under `Cslib/Foundations/Semantics/LTS/`, with 370 public declarations.
 
 - [Labelled Transition System (LTS)](basic.md)
 - [Bisimulation and Bisimilarity](bisimulation.md)

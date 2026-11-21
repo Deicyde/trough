@@ -1,6 +1,6 @@
 # Circuit
 
-23 modules under `Cslib/Computability/Circuit/`, with 378 public declarations.
+23 modules under `Cslib/Computability/Circuit/`, with 384 public declarations.
 
 - [Circuits](basic.md)
 - [Boolean](boolean/README.md)
@@ -14,7 +14,7 @@
 - [Semantic circuit normalization](normalization.md)
 - [Straight-line programs](program.md)
 - [Relative circuit complexity](relativecomplexity.md)
-- [Shannon's lower bound for finite carriers and binary bases](shannon.md)
+- [Shannon's lower bounds for finite carriers](shannon.md)
 - [Signatures and interpretations](signature.md)
 - [Simulation between circuit bases with gate budgets](simulation.md)
 - [Simultaneous circuit synthesis](synthesis.md)

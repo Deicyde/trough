@@ -7,7 +7,7 @@ proof: formalized
 
 # Networks of stateful processes and their semantics
 
-`Cslib.Languages.StatefulProcesses.Network`, in [Cslib/Languages/StatefulProcesses/Network.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Network.lean), by Fabrizio Montesi.
+`Cslib.Languages.StatefulProcesses.Network`, in [Cslib/Languages/StatefulProcesses/Network.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Network.lean), by Fabrizio Montesi.
 
 > This module defines networks (maps from process names to process terms), as well as their symbolic
 > and concrete operational semantics.
@@ -23,7 +23,7 @@ proof: formalized
 
 > ## Networks and their symbolic semantics
 
-`Cslib.StatefulProcesses.Network` (abbreviation, [line 36](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Network.lean#L36))
+`Cslib.StatefulProcesses.Network` (abbreviation, [line 36](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Network.lean#L36))
 
 > A network maps process names to process terms.
 
@@ -31,7 +31,7 @@ proof: formalized
 abbrev Network (Pid Var Val FunId SelLabel ProcName : Type*)
 ```
 
-`Cslib.StatefulProcesses.Network.TrLabel` (inductive type, [line 43](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Network.lean#L43))
+`Cslib.StatefulProcesses.Network.TrLabel` (inductive type, [line 43](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Network.lean#L43))
 
 > Symbolic transition labels for networks.
 
@@ -42,7 +42,7 @@ inductive Network.TrLabel Pid Var Val FunId SelLabel
   | sel (p : Pid) (q : Pid) (l : SelLabel)
 ```
 
-`Cslib.StatefulProcesses.Network.Tr` (inductive type, [line 51](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Network.lean#L51))
+`Cslib.StatefulProcesses.Network.Tr` (inductive type, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Network.lean#L51))
 
 > Symbolic transition relation for networks.
 
@@ -66,7 +66,7 @@ inductive Network.Tr :
     Tr n (TrLabel.sel p q l) n'
 ```
 
-`Cslib.StatefulProcesses.Network.lts` (definition, [line 70](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Network.lean#L70))
+`Cslib.StatefulProcesses.Network.lts` (definition, [line 70](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Network.lean#L70))
 
 > Symbolic LTS of networks.
 
@@ -77,7 +77,7 @@ def Network.lts :
 
 > ## Stores, evaluation, and concrete semantics of networks
 
-`Cslib.StatefulProcesses.Cfg` (structure, [line 77](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Network.lean#L77))
+`Cslib.StatefulProcesses.Cfg` (structure, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Network.lean#L77))
 
 > Configurations, consisting of a network and a global store.
 
@@ -89,7 +89,7 @@ structure Cfg (Pid Var Val FunId SelLabel ProcName : Type*) where
   store : GlobalStore Pid Var Val
 ```
 
-`Cslib.StatefulProcesses.Cfg.TrLabel` (inductive type, [line 88](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Network.lean#L88))
+`Cslib.StatefulProcesses.Cfg.TrLabel` (inductive type, [line 88](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Network.lean#L88))
 
 > Transition labels for network configurations.
 >
@@ -103,7 +103,7 @@ inductive Cfg.TrLabel Pid Val SelLabel
   | sel (p : Pid) (q : Pid) (l : SelLabel)
 ```
 
-`Cslib.StatefulProcesses.Cfg.Tr` (inductive type, [line 94](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Network.lean#L94))
+`Cslib.StatefulProcesses.Cfg.Tr` (inductive type, [line 94](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Network.lean#L94))
 
 > Transition relation for network configurations.
 
@@ -141,7 +141,7 @@ inductive Cfg.Tr [DecidableEq Var] (isTrue : Val → Bool) (Eval : FunCallEval F
     Tr isTrue Eval cfg (Cfg.TrLabel.sel p q l) cfg'
 ```
 
-`Cslib.StatefulProcesses.Cfg.lts` (definition, [line 127](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Network.lean#L127))
+`Cslib.StatefulProcesses.Cfg.lts` (definition, [line 127](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Network.lean#L127))
 
 > LTS of network configurations.
 
@@ -156,5 +156,5 @@ def Cfg.lts [DecidableEq Var] (isTrue : Val → Bool) (Eval : FunCallEval FunId 
 
 ## Sources
 
-- [Cslib/Languages/StatefulProcesses/Network.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/StatefulProcesses/Network.lean)
+- [Cslib/Languages/StatefulProcesses/Network.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Network.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Languages.StatefulProcesses.Network.json)

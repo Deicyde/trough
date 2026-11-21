@@ -7,7 +7,7 @@ proof: formalized
 
 # Intersection of nondeterministic Buchi automata
 
-`Cslib.Computability.Automata.NA.BuchiInter`, in [Cslib/Computability/Automata/NA/BuchiInter.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/BuchiInter.lean), by Ching-Tsun Chou.
+`Cslib.Computability.Automata.NA.BuchiInter`, in [Cslib/Computability/Automata/NA/BuchiInter.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/BuchiInter.lean), by Ching-Tsun Chou.
 
 > The intersection automaton consists of the product of the two automata to be intersected
 > plus a history state which is a pointer to one of the two automata. It waits for the
@@ -18,7 +18,7 @@ proof: formalized
 > The two automata to be intersected are indexed by the type `Bool`.  We choose `Bool`
 > simply because toggling can be easily modeled by the boolean operation `not`.
 
-`Cslib.Automata.NA.Buchi.histStart` (definition, [line 36](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/BuchiInter.lean#L36))
+`Cslib.Automata.NA.Buchi.histStart` (definition, [line 36](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/BuchiInter.lean#L36))
 
 > The initial history state.
 
@@ -26,7 +26,7 @@ proof: formalized
 def histStart (_ : Π i, State i) : Bool
 ```
 
-`Cslib.Automata.NA.Buchi.interAcc` (definition, [line 40](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/BuchiInter.lean#L40))
+`Cslib.Automata.NA.Buchi.interAcc` (definition, [line 40](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/BuchiInter.lean#L40))
 
 > The two accepting conditions of the intersection automaton.
 
@@ -34,7 +34,7 @@ def histStart (_ : Π i, State i) : Bool
 def interAcc (j : Bool) (acc : (i : Bool) → Set (State i)) : Set ((Π i, State i) × Bool)
 ```
 
-`Cslib.Automata.NA.Buchi.histTrans` (definition, [line 46](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/BuchiInter.lean#L46))
+`Cslib.Automata.NA.Buchi.histTrans` (definition, [line 46](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/BuchiInter.lean#L46))
 
 > The transition function of the history state.
 
@@ -43,7 +43,7 @@ noncomputable def histTrans (acc : (i : Bool) → Set (State i))
     (s : (Π i, State i) × Bool) (_ : Symbol) (_ : Π i, State i) : Bool
 ```
 
-`Cslib.Automata.NA.Buchi.interNA` (definition, [line 53](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/BuchiInter.lean#L53))
+`Cslib.Automata.NA.Buchi.interNA` (definition, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/BuchiInter.lean#L53))
 
 > The intersection automaton.
 
@@ -52,7 +52,7 @@ noncomputable def interNA (na : (i : Bool) → NA (State i) Symbol)
     (acc : (i : Bool) → Set (State i)) : NA ((Π i, State i) × Bool) Symbol
 ```
 
-`Cslib.Automata.NA.Buchi.interAccept` (definition, [line 59](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/BuchiInter.lean#L59))
+`Cslib.Automata.NA.Buchi.interAccept` (definition, [line 59](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/BuchiInter.lean#L59))
 
 > The overall accepting condition of the intersection automaton.
 
@@ -60,7 +60,7 @@ noncomputable def interNA (na : (i : Bool) → NA (State i) Symbol)
 def interAccept (acc : (i : Bool) → Set (State i)) : Set ((Π i, State i) × Bool)
 ```
 
-`Cslib.Automata.NA.Buchi.inter_freq_acc_freq_acc` (lemma, [line 66](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/BuchiInter.lean#L66))
+`Cslib.Automata.NA.Buchi.inter_freq_acc_freq_acc` (lemma, [line 66](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/BuchiInter.lean#L66))
 
 > If the intersection automaton sees one accepting condition infinitely many times,
 > then it sees the other accepting condition infinitely many times as well.
@@ -71,7 +71,7 @@ lemma inter_freq_acc_freq_acc {xs : ωSequence Symbol} {ss : ωSequence ((Π i, 
     ∃ᶠ k in atTop, ss k ∈ interAcc (!i) acc
 ```
 
-`Cslib.Automata.NA.Buchi.inter_freq_comp_acc_freq_acc` (lemma, [line 80](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/BuchiInter.lean#L80))
+`Cslib.Automata.NA.Buchi.inter_freq_comp_acc_freq_acc` (lemma, [line 80](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/BuchiInter.lean#L80))
 
 > If the intersection automaton sees the accepting conditions of both component automata
 > infinitely many times, then its own accepting condition also happens infinitely many times.
@@ -84,7 +84,7 @@ lemma inter_freq_comp_acc_freq_acc {xs : ωSequence Symbol} {ss : ωSequence ((�
     ∃ᶠ k in atTop, ss k ∈ interAccept acc
 ```
 
-`Cslib.Automata.NA.Buchi.inter_language_eq` (theorem, [line 99](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/BuchiInter.lean#L99))
+`Cslib.Automata.NA.Buchi.inter_language_eq` (theorem, [line 99](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/BuchiInter.lean#L99))
 
 > The language accepted by the intersection automaton is the intersection of
 > the languages accepted by the two component automata.
@@ -106,5 +106,5 @@ theorem inter_language_eq :
 
 ## Sources
 
-- [Cslib/Computability/Automata/NA/BuchiInter.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/BuchiInter.lean)
+- [Cslib/Computability/Automata/NA/BuchiInter.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/BuchiInter.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.NA.BuchiInter.json)
