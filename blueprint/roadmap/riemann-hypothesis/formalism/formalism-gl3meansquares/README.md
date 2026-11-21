@@ -10,7 +10,7 @@
 
 ## Imports
 
-Counted in import lines.
+Counted in import lines. A top-level folder stands for those of its files that have no page of their own.
 
 Its files import modules of Mathlib (154 lines), [Formalism](../README.md) (113 lines), [Lemmata](../../lemmata/README.md) (3 lines), [Development/AbelianVarietyTheory](../../development/development-abelianvarietytheory/README.md) (1 line) and [Development/AutomorphicArithmetic](../../development/development-automorphicarithmetic/README.md) (1 line).
 

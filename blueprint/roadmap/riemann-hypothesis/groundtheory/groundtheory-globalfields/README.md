@@ -31,7 +31,7 @@
 
 ## Imports
 
-Counted in import lines.
+Counted in import lines. A top-level folder stands for those of its files that have no page of their own.
 
 Its files import modules of Mathlib (384 lines), [GroundTheory](../README.md) (79 lines), [GroundTheory/ProfiniteCohomology](../groundtheory-profinitecohomology/README.md) (8 lines), [Development/AutomorphicArithmetic](../../development/development-automorphicarithmetic/README.md) (5 lines) and [GroundTheory/AutomorphicForms](../groundtheory-automorphicforms/README.md) (1 line).
 

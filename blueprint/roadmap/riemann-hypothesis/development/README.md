@@ -22,6 +22,8 @@ Its files import modules of Mathlib (138,749 lines), [Formalism](../formalism/RE
 
 Files of [CompanionTheory](../companiontheory/README.md) (1,437 lines), [PositivityTheory](../positivitytheory/README.md) (632 lines), [Formalism](../formalism/README.md) (236 lines), [GroundTheory](../groundtheory/README.md) (57 lines), [ReciprocityTheory](../reciprocitytheory/README.md) (17 lines) and [Supplements](../supplements/README.md) (6 lines) import its modules.
 
+## Parts
+
 - [Development/AbelianVarietyTheory](development-abelianvarietytheory/README.md)
 - [Development/AutomorphicArithmetic](development-automorphicarithmetic/README.md)
 - [Development/AutomorphicSpectrum](development-automorphicspectrum/README.md)

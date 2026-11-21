@@ -10,7 +10,7 @@
 
 ## Imports
 
-Counted in import lines.
+Counted in import lines. A top-level folder stands for those of its files that have no page of their own.
 
 Its files import modules of Mathlib (498 lines) and [Development/AutomorphicArithmetic](../development-automorphicarithmetic/README.md) (1 line).
 

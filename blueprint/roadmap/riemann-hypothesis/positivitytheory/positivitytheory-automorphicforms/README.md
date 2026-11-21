@@ -8,7 +8,7 @@
 
 ## Imports
 
-Counted in import lines.
+Counted in import lines. A top-level folder stands for those of its files that have no page of their own.
 
 Its files import modules of [Development/AbelianVarietyTheory](../../development/development-abelianvarietytheory/README.md) (260 lines), [Development/AutomorphicArithmetic](../../development/development-automorphicarithmetic/README.md) (249 lines), [Development/AutomorphicSpectrum](../../development/development-automorphicspectrum/README.md) (120 lines), Mathlib (103 lines), [GroundTheory/GlobalFields](../../groundtheory/groundtheory-globalfields/README.md) (74 lines), [GroundTheory/AutomorphicForms](../../groundtheory/groundtheory-automorphicforms/README.md) (25 lines), [GroundTheory](../../groundtheory/README.md) (11 lines), [Formalism/SharpRestriction](../../formalism/formalism-sharprestriction/README.md) (4 lines), [Formalism](../../formalism/README.md) (2 lines), [Formalism/PeriodIntegrals](../../formalism/formalism-periodintegrals/README.md) (2 lines), [ReciprocityTheory](../../reciprocitytheory/README.md) (2 lines) and [GroundTheory/HeightsAndTheta](../../groundtheory/groundtheory-heightsandtheta/README.md) (1 line).
 

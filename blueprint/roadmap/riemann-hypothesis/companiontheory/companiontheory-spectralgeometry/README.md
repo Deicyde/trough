@@ -9,7 +9,7 @@
 
 ## Imports
 
-Counted in import lines.
+Counted in import lines. A top-level folder stands for those of its files that have no page of their own.
 
 Its files import modules of Mathlib (1,241 lines), [Development/AbelianVarietyTheory](../../development/development-abelianvarietytheory/README.md) (764 lines), [CompanionTheory](../README.md) (440 lines), [CompanionTheory/AutomorphicTheory](../companiontheory-automorphictheory/README.md) (161 lines), [Formalism](../../formalism/README.md) (111 lines), [ReciprocityTheory/ReductiveGroups](../../reciprocitytheory/reciprocitytheory-reductivegroups/README.md) (61 lines), [Formalism/HermitianCurvature](../../formalism/formalism-hermitiancurvature/README.md) (47 lines), [Formalism/PeriodIntegrals](../../formalism/formalism-periodintegrals/README.md) (41 lines), [Formalism/SharpRestriction](../../formalism/formalism-sharprestriction/README.md) (34 lines), [Development/AutomorphicSpectrum](../../development/development-automorphicspectrum/README.md) (29 lines), [GroundTheory/GlobalFields](../../groundtheory/groundtheory-globalfields/README.md) (13 lines), [Development/AutomorphicArithmetic](../../development/development-automorphicarithmetic/README.md) (9 lines), [GroundTheory](../../groundtheory/README.md) (6 lines), [GroundTheory/AutomorphicForms](../../groundtheory/groundtheory-automorphicforms/README.md) (4 lines) and [ReciprocityTheory](../../reciprocitytheory/README.md) (2 lines).
 

@@ -39,4 +39,6 @@ Its files import modules of Mathlib (650 lines), [Formalism](../formalism/README
 
 Files of [Development](../development/README.md) (38,051 lines), [GroundTheory](../groundtheory/README.md) (1,161 lines), [Formalism](../formalism/README.md) (348 lines), [CompanionTheory](../companiontheory/README.md) (154 lines), [Lemmata](../lemmata/README.md) (7 lines) and [PositivityTheory](../positivitytheory/README.md) (2 lines) import its modules.
 
+## Parts
+
 - [ReciprocityTheory/ReductiveGroups](reciprocitytheory-reductivegroups/README.md)

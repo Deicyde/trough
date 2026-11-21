@@ -123,6 +123,8 @@ Its files import modules of Mathlib (6,527 lines), [ReciprocityTheory](../recipr
 
 Files of [Development](../development/README.md) (41,859 lines), [CompanionTheory](../companiontheory/README.md) (762 lines), [Lemmata](../lemmata/README.md) (634 lines), [ReciprocityTheory](../reciprocitytheory/README.md) (266 lines), [GroundTheory](../groundtheory/README.md) (10 lines), [PositivityTheory](../positivitytheory/README.md) (8 lines) and [Supplements](../supplements/README.md) (1 line) import its modules.
 
+## Parts
+
 - [Formalism/GL3MeanSquares](formalism-gl3meansquares/README.md)
 - [Formalism/HermitianCurvature](formalism-hermitiancurvature/README.md)
 - [Formalism/LocalToGlobal](formalism-localtoglobal/README.md)

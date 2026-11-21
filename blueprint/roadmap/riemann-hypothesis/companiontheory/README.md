@@ -21,5 +21,7 @@ Its files import modules of Mathlib (1,553 lines), [Development](../development/
 
 Files of [Development](../development/README.md) (1,875 lines), [GroundTheory](../groundtheory/README.md) (2 lines), [Formalism](../formalism/README.md) (1 line) and [ReciprocityTheory](../reciprocitytheory/README.md) (1 line) import its modules.
 
+## Parts
+
 - [CompanionTheory/AutomorphicTheory](companiontheory-automorphictheory/README.md)
 - [CompanionTheory/SpectralGeometry](companiontheory-spectralgeometry/README.md)

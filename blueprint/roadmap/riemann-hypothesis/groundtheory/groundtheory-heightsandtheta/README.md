@@ -9,7 +9,7 @@
 
 ## Imports
 
-Counted in import lines.
+Counted in import lines. A top-level folder stands for those of its files that have no page of their own.
 
 Its files import modules of Mathlib (6,389 lines), [ReciprocityTheory/ReductiveGroups](../../reciprocitytheory/reciprocitytheory-reductivegroups/README.md) (734 lines), [ReciprocityTheory](../../reciprocitytheory/README.md) (426 lines), [GroundTheory](../README.md) (80 lines), [Development/AutomorphicArithmetic](../../development/development-automorphicarithmetic/README.md) (33 lines), [GroundTheory/GlobalFields](../groundtheory-globalfields/README.md) (33 lines), [GroundTheory/AutomorphicForms](../groundtheory-automorphicforms/README.md) (30 lines), [CompanionTheory/AutomorphicTheory](../../companiontheory/companiontheory-automorphictheory/README.md) (1 line) and [Formalism/LocalToGlobal](../../formalism/formalism-localtoglobal/README.md) (1 line).
 

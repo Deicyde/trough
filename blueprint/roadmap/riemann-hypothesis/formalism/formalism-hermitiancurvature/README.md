@@ -9,7 +9,7 @@
 
 ## Imports
 
-Counted in import lines.
+Counted in import lines. A top-level folder stands for those of its files that have no page of their own.
 
 Its files import modules of [Formalism](../README.md) (181 lines), [Formalism/PeriodIntegrals](../formalism-periodintegrals/README.md) (117 lines), Mathlib (83 lines), [Formalism/SharpRestriction](../formalism-sharprestriction/README.md) (15 lines), [Development/AutomorphicArithmetic](../../development/development-automorphicarithmetic/README.md) (12 lines), [Lemmata](../../lemmata/README.md) (6 lines), [Development/AbelianVarietyTheory](../../development/development-abelianvarietytheory/README.md) (2 lines) and [ReciprocityTheory/ReductiveGroups](../../reciprocitytheory/reciprocitytheory-reductivegroups/README.md) (1 line).
 

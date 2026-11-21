@@ -17,7 +17,7 @@
 
 ## Imports
 
-Counted in import lines.
+Counted in import lines. A top-level folder stands for those of its files that have no page of their own.
 
 Its files import modules of [Development/AbelianVarietyTheory](../development-abelianvarietytheory/README.md) (280 lines), Mathlib (69 lines), [Development/AutomorphicArithmetic](../development-automorphicarithmetic/README.md) (18 lines), [ReciprocityTheory/ReductiveGroups](../../reciprocitytheory/reciprocitytheory-reductivegroups/README.md) (4 lines), [Development/WeilBound](../development-weilbound/README.md) (1 line) and [ReciprocityTheory](../../reciprocitytheory/README.md) (1 line).
 
