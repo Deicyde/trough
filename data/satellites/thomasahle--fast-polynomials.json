@@ -61,6 +61,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "F",
     "Matrix"
    ]
   },
@@ -71,7 +72,9 @@
    "line": 108,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F"
+   ]
   }
  ],
  "mathlib_imports": {

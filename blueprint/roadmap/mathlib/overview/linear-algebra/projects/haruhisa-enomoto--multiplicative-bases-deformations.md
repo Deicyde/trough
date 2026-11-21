@@ -14,21 +14,21 @@ proof: formalized
 
 ## Depends on
 
-- [Basis](../../fundamentals/basis.md)
-- [Characteristic of a ring](../../../general-algebra/field-theory/characteristic-of-a-ring.md)
-- [Finite-dimensionality](../../finite-dimensional-vector-spaces/finite-dimensionality.md)
-- [Algebraically closed field](../../../general-algebra/field-theory/algebraically-closed-field.md)
+- [Basis](../fundamentals/basis.md)
+- [Characteristic of a ring](../../general-algebra/field-theory/characteristic-of-a-ring.md)
+- [Finite-dimensionality](../finite-dimensional-vector-spaces/finite-dimensionality.md)
+- [Algebraically closed field](../../general-algebra/field-theory/algebraically-closed-field.md)
 
 ## Proof depends on
 
-- [Maximal ideal](../../../general-algebra/ideals-and-quotients/maximal-ideal.md)
-- [Existence of bases](../../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
-- [Ring](../../../general-algebra/rings/ring.md)
-- [Direct sum](../../../../undergraduate/linear-algebra/fundamentals/direct-sum.md)
-- [Complementary subspaces](../../../../undergraduate/linear-algebra/fundamentals/complementary-subspaces.md)
-- [Noetherian ring](../../../general-algebra/rings/noetherian-ring.md)
-- [Nullstellensatz](../../../geometry/algebraic-geometry/nullstellensatz.md)
-- [Isomorphism](../../../general-algebra/category-theory/isomorphism.md)
+- [Maximal ideal](../../general-algebra/ideals-and-quotients/maximal-ideal.md)
+- [Existence of bases](../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
+- [Ring](../../general-algebra/rings/ring.md)
+- [Direct sum](../../../undergraduate/linear-algebra/fundamentals/direct-sum.md)
+- [Complementary subspaces](../../../undergraduate/linear-algebra/fundamentals/complementary-subspaces.md)
+- [Noetherian ring](../../general-algebra/rings/noetherian-ring.md)
+- [Nullstellensatz](../../geometry/algebraic-geometry/nullstellensatz.md)
+- [Isomorphism](../../general-algebra/category-theory/isomorphism.md)
 
 ## Main results
 

@@ -11,25 +11,25 @@ statement: formalized
 
 ## Depends on
 
-- [Associative algebra over a commutative ring](../../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [33.8 Geometrically irreducible schemes](../../../../../stacks/schemes/33-varieties/part-01/33-8-geometrically-irreducible-schemes.md)
-- [28.3 Integral, irreducible, and reduced schemes](../../../../../stacks/schemes/28-properties-of-schemes/part-01/28-3-integral-irreducible-and-reduced-schemes.md)
-- [29.42 Proper morphisms](../../../../../stacks/schemes/29-morphisms-of-schemes/part-03/29-42-proper-morphisms.md)
-- [Field](../../../general-algebra/field-theory/field.md)
-- [Finite-dimensionality](../../finite-dimensional-vector-spaces/finite-dimensionality.md)
-- [9.7 Finite extensions](../../../../../stacks/preliminaries/part-01/9-fields/part-01/9-7-finite-extensions.md)
-- [Multiset](../../../data-structures/sets/multiset.md)
+- [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [33.8 Geometrically irreducible schemes](../../../../stacks/schemes/33-varieties/part-01/33-8-geometrically-irreducible-schemes.md)
+- [28.3 Integral, irreducible, and reduced schemes](../../../../stacks/schemes/28-properties-of-schemes/part-01/28-3-integral-irreducible-and-reduced-schemes.md)
+- [29.42 Proper morphisms](../../../../stacks/schemes/29-morphisms-of-schemes/part-03/29-42-proper-morphisms.md)
+- [Field](../../general-algebra/field-theory/field.md)
+- [Finite-dimensionality](../finite-dimensional-vector-spaces/finite-dimensionality.md)
+- [9.7 Finite extensions](../../../../stacks/preliminaries/part-01/9-fields/part-01/9-7-finite-extensions.md)
+- [Multiset](../../data-structures/sets/multiset.md)
 
 ## Proof depends on
 
-- [Presheafed space](../../../general-algebra/category-theory/presheafed-space.md)
-- [Functorial homology](../../../general-algebra/homological-algebra/functorial-homology.md)
-- [$p$-adic number](../../../general-algebra/numbers/p-adic-number.md)
-- [Functor](../../../general-algebra/category-theory/functor.md)
-- [The category of rings](../../../general-algebra/rings/the-category-of-rings.md)
-- [Small category](../../../general-algebra/category-theory/small-category.md)
-- [Grothendieck topology](../../../general-algebra/category-theory/grothendieck-topology.md)
-- [Structure of finitely generated abelian groups](../../../general-algebra/group-theory/part-02/structure-of-finitely-generated-abelian-groups.md)
+- [Presheafed space](../../general-algebra/category-theory/presheafed-space.md)
+- [Functorial homology](../../general-algebra/homological-algebra/functorial-homology.md)
+- [$p$-adic number](../../general-algebra/numbers/p-adic-number.md)
+- [Functor](../../general-algebra/category-theory/functor.md)
+- [The category of rings](../../general-algebra/rings/the-category-of-rings.md)
+- [Small category](../../general-algebra/category-theory/small-category.md)
+- [Grothendieck topology](../../general-algebra/category-theory/grothendieck-topology.md)
+- [Structure of finitely generated abelian groups](../../general-algebra/group-theory/part-02/structure-of-finitely-generated-abelian-groups.md)
 
 ## Main results
 

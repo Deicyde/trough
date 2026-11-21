@@ -16,19 +16,19 @@ proof: formalized
 
 ## Depends on
 
-- [Ring-valued matrix](../../matrices/ring-valued-matrix.md)
-- [Permutation group of a type](../../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
+- [Ring-valued matrix](../matrices/ring-valued-matrix.md)
+- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 
 ## Proof depends on
 
-- [Gershgorin circle theorem](../../../../thousand-plus/algebra/15-linear-and-multilinear-algebra-matrix-theory/gershgorin-circle-theorem.md)
-- [Eigenvector](../../structure-theory-of-endomorphisms/eigenvector.md)
-- [Rank of a matrix](../../../../undergraduate/linear-algebra/matrices/rank-of-a-matrix.md)
-- [Range of a linear map](../../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
-- [Unitary group](../../../../undergraduate/group-theory/classical-automorphism-groups/unitary-group.md)
-- [Determinant](../../matrices/determinant.md)
-- [List](../../../data-structures/list-like-structures/list.md)
-- [Existence of orthonormal basis](../../finite-dimensional-inner-product-spaces-see-also/existence-of-orthonormal-basis.md)
+- [Gershgorin circle theorem](../../../thousand-plus/algebra/15-linear-and-multilinear-algebra-matrix-theory/gershgorin-circle-theorem.md)
+- [Eigenvector](../structure-theory-of-endomorphisms/eigenvector.md)
+- [Rank of a matrix](../../../undergraduate/linear-algebra/matrices/rank-of-a-matrix.md)
+- [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
+- [Unitary group](../../../undergraduate/group-theory/classical-automorphism-groups/unitary-group.md)
+- [Determinant](../matrices/determinant.md)
+- [List](../../data-structures/list-like-structures/list.md)
+- [Existence of orthonormal basis](../finite-dimensional-inner-product-spaces-see-also/existence-of-orthonormal-basis.md)
 
 ## Main results
 

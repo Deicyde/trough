@@ -19,14 +19,14 @@ A root module states no result, so the node has no statement edges.
 
 ## Proof depends on
 
-- [Self-adjoint operator](../../../analysis/hilbert-spaces/self-adjoint-operator.md)
-- [Permutation group of a type](../../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Integer](../../../general-algebra/numbers/integer.md)
-- [Finite set](../../../data-structures/sets/finite-set.md)
-- [Ring-valued matrix](../../matrices/ring-valued-matrix.md)
-- [Array](../../../data-structures/list-like-structures/array.md)
-- [List](../../../data-structures/list-like-structures/list.md)
-- [Natural number](../../../general-algebra/numbers/natural-number.md)
+- [Self-adjoint operator](../../analysis/hilbert-spaces/self-adjoint-operator.md)
+- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
+- [Integer](../../general-algebra/numbers/integer.md)
+- [Finite set](../../data-structures/sets/finite-set.md)
+- [Ring-valued matrix](../matrices/ring-valued-matrix.md)
+- [Array](../../data-structures/list-like-structures/array.md)
+- [List](../../data-structures/list-like-structures/list.md)
+- [Natural number](../../general-algebra/numbers/natural-number.md)
 
 ## Root modules
 

@@ -61,7 +61,8 @@
    "sorry": false,
    "names": [
     "MvPolynomial",
-    "Set"
+    "Set",
+    "g"
    ]
   },
   {
@@ -72,6 +73,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "D",
     "MvPolynomial"
    ]
   },
@@ -83,8 +85,12 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "F",
     "Field",
-    "MvPolynomial"
+    "MvPolynomial",
+    "h",
+    "α",
+    "β"
    ]
   },
   {
@@ -95,7 +101,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "MvPolynomial"
+    "G",
+    "MvPolynomial",
+    "h"
    ]
   },
   {
@@ -107,8 +115,11 @@
    "sorry": false,
    "names": [
     "Finset",
+    "G",
     "Ideal",
-    "MvPolynomial"
+    "MvPolynomial",
+    "g",
+    "α"
    ]
   },
   {
@@ -120,8 +131,11 @@
    "sorry": false,
    "names": [
     "Finset",
+    "G",
     "Ideal",
-    "MvPolynomial"
+    "MvPolynomial",
+    "g",
+    "α"
    ]
   },
   {
@@ -131,7 +145,10 @@
    "line": 402,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "G",
+    "h"
+   ]
   }
  ],
  "mathlib_imports": {

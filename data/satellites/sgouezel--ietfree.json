@@ -69,7 +69,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "MeasureTheory.Measure"
+    "MeasureTheory.Measure",
+    "α"
    ]
   },
   {
@@ -121,7 +122,9 @@
    "line": 83,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "α"
+   ]
   },
   {
    "name": "IntervalExchange.Pair.ae_diophantine",

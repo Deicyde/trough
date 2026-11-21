@@ -67,7 +67,10 @@
    "line": 110,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "B",
+    "G"
+   ]
   },
   {
    "name": "Hypernets.SpecimenSystem.contextual_sufficiency",
@@ -112,7 +115,9 @@
    "line": 86,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "B"
+   ]
   },
   {
    "name": "Hypernets.Linear.ClassSafety.countingSimulation_converse",
@@ -121,7 +126,9 @@
    "line": 86,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "B"
+   ]
   }
  ],
  "mathlib_imports": {},

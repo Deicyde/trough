@@ -17,14 +17,14 @@ A root module states no result, so the node has no statement edges.
 
 ## Proof depends on
 
-- [Classification of abelian simple groups](../../../general-algebra/group-theory/part-02/classification-of-abelian-simple-groups.md)
-- [The Fundamental Theorem of Arithmetic](../../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
-- [Simple group](../../../general-algebra/group-theory/part-01/simple-group.md)
-- [Invariant subspaces of an endomorphism](../../../../undergraduate/linear-algebra/structure-theory-of-endomorphisms/invariant-subspaces-of-an-endomorphism.md)
-- [Special unitary group](../../../../undergraduate/group-theory/classical-automorphism-groups/special-unitary-group.md)
-- [Special linear group](../../../../undergraduate/linear-algebra/multilinearity/special-linear-group.md)
-- [Orbit](../../../../undergraduate/group-theory/basic-definitions/orbit.md)
-- [Matrix representation](../../bilinear-and-quadratic-forms/matrix-representation.md)
+- [Classification of abelian simple groups](../../general-algebra/group-theory/part-02/classification-of-abelian-simple-groups.md)
+- [The Fundamental Theorem of Arithmetic](../../../hundred-theorems/part-04/the-fundamental-theorem-of-arithmetic.md)
+- [Simple group](../../general-algebra/group-theory/part-01/simple-group.md)
+- [Invariant subspaces of an endomorphism](../../../undergraduate/linear-algebra/structure-theory-of-endomorphisms/invariant-subspaces-of-an-endomorphism.md)
+- [Special unitary group](../../../undergraduate/group-theory/classical-automorphism-groups/special-unitary-group.md)
+- [Special linear group](../../../undergraduate/linear-algebra/multilinearity/special-linear-group.md)
+- [Orbit](../../../undergraduate/group-theory/basic-definitions/orbit.md)
+- [Matrix representation](../bilinear-and-quadratic-forms/matrix-representation.md)
 
 ## Root modules
 

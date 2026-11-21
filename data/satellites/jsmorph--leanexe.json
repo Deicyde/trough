@@ -130,7 +130,8 @@
    "sorry": false,
    "names": [
     "Array",
-    "Nat"
+    "Nat",
+    "h"
    ]
   },
   {
@@ -171,7 +172,9 @@
    "sorry": false,
    "names": [
     "Array",
-    "Nat"
+    "Nat",
+    "g",
+    "h"
    ]
   },
   {
@@ -183,7 +186,8 @@
    "sorry": false,
    "names": [
     "Array",
-    "Nat"
+    "Nat",
+    "g"
    ]
   },
   {
@@ -193,7 +197,9 @@
    "line": 750,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   }
  ],
  "mathlib_imports": {

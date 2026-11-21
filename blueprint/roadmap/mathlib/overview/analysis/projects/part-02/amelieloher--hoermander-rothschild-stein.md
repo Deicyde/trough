@@ -19,7 +19,6 @@ proof: formalized
 - [Compactness in terms of filters](../../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Linear independence](../../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
 - [Differentials (linear tangent functions)](../../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
-- [42.8 Cycles](../../../../../stacks/topics-in-scheme-theory/part-01/42-chow-homology/part-01/42-8-cycles.md)
 - [Multiplication by a function $C^\infty$ of slow growth](../../../../undergraduate/distribution-calculus/tempered-distributions/multiplication-by-a-function-c-infty-of-slow-gro.md)
 - [Vector-valued integrable function (Bochner integral)](../../measures-and-integral-calculus/part-01/vector-valued-integrable-function-bochner-integr.md)
 - [Distributions](../../distribution-theory/distributions.md)

@@ -16,24 +16,24 @@ proof: formalized
 
 ## Depends on
 
-- [Associative algebra over a commutative ring](../../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [Field](../../../general-algebra/field-theory/field.md)
-- [Finite-dimensionality](../../finite-dimensional-vector-spaces/finite-dimensionality.md)
-- [9.7 Finite extensions](../../../../../stacks/preliminaries/part-01/9-fields/part-01/9-7-finite-extensions.md)
-- [Finite set](../../../data-structures/sets/finite-set.md)
-- [Set](../../../data-structures/sets/set.md)
-- [Characteristic zero](../../../general-algebra/field-theory/characteristic-zero.md)
+- [Associative algebra over a commutative ring](../../general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [Field](../../general-algebra/field-theory/field.md)
+- [Finite-dimensionality](../finite-dimensional-vector-spaces/finite-dimensionality.md)
+- [9.7 Finite extensions](../../../../stacks/preliminaries/part-01/9-fields/part-01/9-7-finite-extensions.md)
+- [Finite set](../../data-structures/sets/finite-set.md)
+- [Set](../../data-structures/sets/set.md)
+- [Characteristic zero](../../general-algebra/field-theory/characteristic-zero.md)
 
 ## Proof depends on
 
-- [The Irrationality of the Square Root of 2](../../../../hundred-theorems/part-01/the-irrationality-of-the-square-root-of-2.md)
-- [Splitting field](../../../general-algebra/field-theory/splitting-field.md)
-- [Algebraic elements](../../../../undergraduate/ring-theory/field-theory/algebraic-elements.md)
-- [Infinite](../../../combinatorics/pigeonhole-principles/infinite.md)
-- [Vector subspace](../../../../undergraduate/linear-algebra/fundamentals/vector-subspace.md)
-- [Rank of a set of vectors](../../../../undergraduate/linear-algebra/finite-dimensional-vector-spaces/rank-of-a-set-of-vectors.md)
-- [Dual vector space](../../duality/dual-vector-space.md)
-- [Transcendental elements](../../../../undergraduate/ring-theory/field-theory/transcendental-elements.md)
+- [The Irrationality of the Square Root of 2](../../../hundred-theorems/part-01/the-irrationality-of-the-square-root-of-2.md)
+- [Splitting field](../../general-algebra/field-theory/splitting-field.md)
+- [Algebraic elements](../../../undergraduate/ring-theory/field-theory/algebraic-elements.md)
+- [Infinite](../../combinatorics/pigeonhole-principles/infinite.md)
+- [Vector subspace](../../../undergraduate/linear-algebra/fundamentals/vector-subspace.md)
+- [Rank of a set of vectors](../../../undergraduate/linear-algebra/finite-dimensional-vector-spaces/rank-of-a-set-of-vectors.md)
+- [Dual vector space](../duality/dual-vector-space.md)
+- [Transcendental elements](../../../undergraduate/ring-theory/field-theory/transcendental-elements.md)
 
 ## Main results
 

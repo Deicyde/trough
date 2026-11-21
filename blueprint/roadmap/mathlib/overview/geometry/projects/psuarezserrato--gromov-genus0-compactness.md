@@ -12,7 +12,6 @@ proof: formalized
 
 ## Depends on
 
-- [5.12 Quasi-compact spaces and maps](../../../../stacks/preliminaries/part-01/5-topology/part-01/5-12-quasi-compact-spaces-and-maps.md)
 - [Compactness in terms of filters](../../topology/general-topology/part-01/compactness-in-terms-of-filters.md)
 - [Smooth or analytic manifold (with boundary and corners)](../differentiable-manifolds/part-01/smooth-or-analytic-manifold-with-boundary-and-co.md)
 - [Normed vector space over a normed field](../../analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)

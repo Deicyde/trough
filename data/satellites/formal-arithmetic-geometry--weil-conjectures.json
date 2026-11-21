@@ -122,14 +122,18 @@
    "kind": "theorem",
    "sorry": true,
    "names": [
+    "A",
     "Algebra",
     "AlgebraicGeometry.GeometricallyIrreducible",
     "AlgebraicGeometry.IsIntegral",
     "AlgebraicGeometry.IsProper",
+    "E",
+    "F",
     "Field",
     "FiniteDimensional",
     "Module.finrank",
-    "Multiset"
+    "Multiset",
+    "α"
    ]
   }
  ],

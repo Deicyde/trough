@@ -16,30 +16,30 @@ proof: formalized
 
 ## Depends on
 
-- [29.35 Smooth morphisms](../../../../../stacks/schemes/29-morphisms-of-schemes/part-02/29-35-smooth-morphisms.md)
-- [Polynomial in one indeterminate](../../polynomials-and-power-series/polynomial-in-one-indeterminate.md)
-- [Characteristic of a ring](../../field-theory/characteristic-of-a-ring.md)
-- [29.44 Projective morphisms](../../../../../stacks/schemes/29-morphisms-of-schemes/part-03/29-44-projective-morphisms.md)
-- [Scheme](../../../geometry/algebraic-geometry/scheme.md)
-- [Finite-dimensionality](../../../linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
-- [9.7 Finite extensions](../../../../../stacks/preliminaries/part-01/9-fields/part-01/9-7-finite-extensions.md)
-- [Associative algebra over a commutative ring](../../algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
-- [33.8 Geometrically irreducible schemes](../../../../../stacks/schemes/33-varieties/part-01/33-8-geometrically-irreducible-schemes.md)
-- [28.3 Integral, irreducible, and reduced schemes](../../../../../stacks/schemes/28-properties-of-schemes/part-01/28-3-integral-irreducible-and-reduced-schemes.md)
-- [29.42 Proper morphisms](../../../../../stacks/schemes/29-morphisms-of-schemes/part-03/29-42-proper-morphisms.md)
-- [Field](../../field-theory/field.md)
-- [Multiset](../../../data-structures/sets/multiset.md)
+- [29.35 Smooth morphisms](../schemes/29-morphisms-of-schemes/part-02/29-35-smooth-morphisms.md)
+- [Polynomial in one indeterminate](../../mathlib/overview/general-algebra/polynomials-and-power-series/polynomial-in-one-indeterminate.md)
+- [Characteristic of a ring](../../mathlib/overview/general-algebra/field-theory/characteristic-of-a-ring.md)
+- [29.44 Projective morphisms](../schemes/29-morphisms-of-schemes/part-03/29-44-projective-morphisms.md)
+- [Scheme](../../mathlib/overview/geometry/algebraic-geometry/scheme.md)
+- [Finite-dimensionality](../../mathlib/overview/linear-algebra/finite-dimensional-vector-spaces/finite-dimensionality.md)
+- [9.7 Finite extensions](../preliminaries/part-01/9-fields/part-01/9-7-finite-extensions.md)
+- [Associative algebra over a commutative ring](../../mathlib/overview/general-algebra/algebras-over-a-ring/associative-algebra-over-a-commutative-ring.md)
+- [33.8 Geometrically irreducible schemes](../schemes/33-varieties/part-01/33-8-geometrically-irreducible-schemes.md)
+- [28.3 Integral, irreducible, and reduced schemes](../schemes/28-properties-of-schemes/part-01/28-3-integral-irreducible-and-reduced-schemes.md)
+- [29.42 Proper morphisms](../schemes/29-morphisms-of-schemes/part-03/29-42-proper-morphisms.md)
+- [Field](../../mathlib/overview/general-algebra/field-theory/field.md)
+- [Multiset](../../mathlib/overview/data-structures/sets/multiset.md)
 
 ## Proof depends on
 
-- [Tensor algebra of a commutative ring](../../algebras-over-a-ring/tensor-algebra-of-a-commutative-ring.md)
-- [Connected components](../../../../undergraduate/topology/topology-and-metric-spaces/connected-components.md)
-- [Adjunction](../../category-theory/adjunction.md)
-- [Natural transformation](../../category-theory/natural-transformation.md)
-- [Noetherian module](../../../linear-algebra/fundamentals/noetherian-module.md)
-- [Abelian category](../../category-theory/abelian-category.md)
-- [Yoneda embedding](../../category-theory/yoneda-embedding.md)
-- [Holomorphic stability under uniform convergence](../../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-stability-under-uniform-convergence.md)
+- [Tensor algebra of a commutative ring](../../mathlib/overview/general-algebra/algebras-over-a-ring/tensor-algebra-of-a-commutative-ring.md)
+- [Connected components](../../mathlib/undergraduate/topology/topology-and-metric-spaces/connected-components.md)
+- [Adjunction](../../mathlib/overview/general-algebra/category-theory/adjunction.md)
+- [Natural transformation](../../mathlib/overview/general-algebra/category-theory/natural-transformation.md)
+- [Noetherian module](../../mathlib/overview/linear-algebra/fundamentals/noetherian-module.md)
+- [Abelian category](../../mathlib/overview/general-algebra/category-theory/abelian-category.md)
+- [Yoneda embedding](../../mathlib/overview/general-algebra/category-theory/yoneda-embedding.md)
+- [Holomorphic stability under uniform convergence](../../mathlib/undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-stability-under-uniform-convergence.md)
 
 ## Main results
 
@@ -62,11 +62,11 @@ No file its headlines import, directly or not (173 files), holds `sorry`, `admit
 ## Builds on
 
 - Mathlib, at [16edf57d](https://github.com/leanprover-community/mathlib4/tree/16edf57de7933555826307a3d81b4391a3657a09).
-- `Stacks` (https://github.com/AxiomMath/Stacks) at `012108f6`.
+- [Stacks](../README.md) at `012108f6`.
 
 ## Placement
 
-4 of the 7 Mathlib concepts its headline statements name are in General algebra.
+Its Lake manifest requires `Stacks`.
 
 ## Mathlib use
 

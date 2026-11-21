@@ -18,14 +18,14 @@ Its headline statements name no Mathlib concept or declaration mapped elsewhere 
 
 ## Proof depends on
 
-- [Cofinality](../../../logic-and-computation/set-theory/cardinals/cofinality.md)
-- [Existence of an eigenvalue](../../structure-theory-of-endomorphisms/existence-of-an-eigenvalue.md)
-- [Quotient space (Fundamentals)](../../fundamentals/quotient-space.md)
-- [Maximal ideal](../../../general-algebra/ideals-and-quotients/maximal-ideal.md)
-- [Ring](../../../general-algebra/rings/ring.md)
-- [Transpose of a linear map](../../../../undergraduate/linear-algebra/duality/transpose-of-a-linear-map.md)
-- [Existence of bases](../../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
-- [Category](../../../general-algebra/category-theory/category.md)
+- [Cofinality](../../logic-and-computation/set-theory/cardinals/cofinality.md)
+- [Existence of an eigenvalue](../structure-theory-of-endomorphisms/existence-of-an-eigenvalue.md)
+- [Quotient space (Fundamentals)](../fundamentals/quotient-space.md)
+- [Maximal ideal](../../general-algebra/ideals-and-quotients/maximal-ideal.md)
+- [Ring](../../general-algebra/rings/ring.md)
+- [Transpose of a linear map](../../../undergraduate/linear-algebra/duality/transpose-of-a-linear-map.md)
+- [Existence of bases](../../../undergraduate/linear-algebra/fundamentals/existence-of-bases.md)
+- [Category](../../general-algebra/category-theory/category.md)
 
 ## Main results
 

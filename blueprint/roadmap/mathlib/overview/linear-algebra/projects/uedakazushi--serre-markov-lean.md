@@ -18,14 +18,14 @@ Its headline statements name no Mathlib concept or declaration mapped elsewhere 
 
 ## Proof depends on
 
-- [Change of basis](../../../../undergraduate/linear-algebra/matrices/change-of-basis.md)
-- [Cayley-Hamilton theorem](../../endomorphism-polynomials/cayley-hamilton-theorem.md)
-- [Presented group](../../../general-algebra/group-theory/part-01/presented-group.md)
-- [Congruence in $\Z$](../../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
-- [Determinant](../../matrices/determinant.md)
-- [First isomorphism theorem](../../../general-algebra/group-theory/part-01/first-isomorphism-theorem.md)
-- [Matrix representation of a linear map](../../matrices/matrix-representation-of-a-linear-map.md)
-- [Ring-valued matrix](../../matrices/ring-valued-matrix.md)
+- [Change of basis](../../../undergraduate/linear-algebra/matrices/change-of-basis.md)
+- [Cayley-Hamilton theorem](../endomorphism-polynomials/cayley-hamilton-theorem.md)
+- [Presented group](../../general-algebra/group-theory/part-01/presented-group.md)
+- [Congruence in $\Z$](../../../undergraduate/ring-theory/divisibility-in-integral-domains/congruence-in-z.md)
+- [Determinant](../matrices/determinant.md)
+- [First isomorphism theorem](../../general-algebra/group-theory/part-01/first-isomorphism-theorem.md)
+- [Matrix representation of a linear map](../matrices/matrix-representation-of-a-linear-map.md)
+- [Ring-valued matrix](../matrices/ring-valued-matrix.md)
 
 ## Main results
 

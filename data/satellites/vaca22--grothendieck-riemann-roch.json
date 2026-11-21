@@ -96,7 +96,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "CategoryTheory.Limits.IsZero"
+    "CategoryTheory.Limits.IsZero",
+    "E"
    ]
   },
   {

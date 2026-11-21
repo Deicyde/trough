@@ -1,4 +1,4 @@
-# Projects building on Logic and computation (8)
+# Projects building on Logic and computation (7)
 
 Lean projects outside the libraries mapped here that build on Mathlib, placed by their use of its logic and computation, read at a pinned commit without Lean, one card each.
 
@@ -8,7 +8,6 @@ Lean projects outside the libraries mapped here that build on Mathlib, placed by
 - [The Four Colour Theorem in Lean 4](corun1024--4ct.md)
 - [Goodstein independence over PA](formalizedformallogic--goodstein-independence.md)
 - [metalean](intgrah--metalean.md)
-- [vaught-conjecture-counterexample](cameronfreer--vaught-conjecture-counterexample.md)
 
 ## Projects without a named main result
 

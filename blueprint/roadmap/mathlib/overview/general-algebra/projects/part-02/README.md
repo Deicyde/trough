@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# p-adic L-functions in Lean to The Weil Conjectures in Lean
+# p-adic L-functions in Lean to TernaryPoly
 
 - [p-adic L-functions in Lean](cbirkbeck--padic-l-functions.md)
 - [Plonky3-lean](plonky3--plonky3-lean.md)
@@ -13,7 +13,6 @@ navigation: transparent
 - [smale6-six-bodies-generic](tejasvi--smale6-six-bodies-generic.md)
 - [tempered-fundamental-groups](lana-agents--tempered-fundamental-groups.md)
 - [TernaryPoly](axiommath--ternarypoly.md)
-- [The Weil Conjectures in Lean](axiommath--weil.md)
 
 ## Projects without a named main result
 

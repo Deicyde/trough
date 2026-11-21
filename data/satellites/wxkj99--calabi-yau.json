@@ -69,6 +69,7 @@
    "names": [
     "BorelSpace",
     "ContMDiff",
+    "F",
     "MeasurableSpace",
     "Real.exp"
    ]
@@ -81,7 +82,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "ContMDiff"
+    "ContMDiff",
+    "F"
    ]
   },
   {
@@ -92,7 +94,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "ContMDiff"
+    "ContMDiff",
+    "F",
+    "h"
    ]
   },
   {

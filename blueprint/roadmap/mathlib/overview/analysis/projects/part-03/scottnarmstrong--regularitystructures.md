@@ -18,7 +18,6 @@ proof: formalized
 - [Probability measure](../../../probability-theory/definitions-in-probability-theory/probability-measure.md)
 - [Positive measure](../../measures-and-integral-calculus/part-01/positive-measure.md)
 - [Set](../../../data-structures/sets/set.md)
-- [Spacetime](../../../../../physlib/physlib/spaceandtime/spacetime/basic.md)
 - [Measurable function](../../measures-and-integral-calculus/part-01/measurable-function.md)
 - [$C^k$ function](../../differentiability/c-k-function.md)
 

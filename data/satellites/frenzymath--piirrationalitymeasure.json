@@ -85,7 +85,9 @@
    "line": 54,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "PiIrrationality.candidate_coordinates",

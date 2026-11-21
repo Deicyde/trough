@@ -176,8 +176,10 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "B",
     "MeasurableSpace",
-    "MeasureTheory.Measure"
+    "MeasureTheory.Measure",
+    "α"
    ]
   },
   {
@@ -188,9 +190,11 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "B",
     "Filter.Tendsto",
     "MeasurableSpace",
-    "MeasureTheory.Measure"
+    "MeasureTheory.Measure",
+    "α"
    ]
   }
  ],

@@ -1490,7 +1490,10 @@
    "line": 267,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h",
+    "α"
+   ]
   }
  ],
  "mathlib_imports": {

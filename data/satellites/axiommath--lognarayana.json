@@ -101,6 +101,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "B",
     "Finset",
     "List"
    ]
@@ -148,6 +149,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "D",
+    "F",
     "MvPolynomial"
    ]
   },
@@ -159,6 +162,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "D",
+    "F",
     "MvPolynomial"
    ]
   }

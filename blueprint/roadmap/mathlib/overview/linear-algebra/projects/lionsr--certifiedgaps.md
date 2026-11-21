@@ -11,24 +11,24 @@ statement: formalized
 
 ## Depends on
 
-- [Infinite sum](../../../topology/topological-algebra/infinite-sum.md)
-- [Logarithm](../../../analysis/special-functions/logarithm.md)
-- [Kernel of a linear map](../../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
-- [Range of a linear map](../../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
-- [Ring-valued matrix](../../matrices/ring-valued-matrix.md)
-- [Finite set](../../../data-structures/sets/finite-set.md)
-- [Exponential](../../../analysis/special-functions/exponential.md)
+- [Infinite sum](../../topology/topological-algebra/infinite-sum.md)
+- [Logarithm](../../analysis/special-functions/logarithm.md)
+- [Kernel of a linear map](../../../undergraduate/linear-algebra/fundamentals/kernel-of-a-linear-map.md)
+- [Range of a linear map](../../../undergraduate/linear-algebra/fundamentals/range-of-a-linear-map.md)
+- [Ring-valued matrix](../matrices/ring-valued-matrix.md)
+- [Finite set](../../data-structures/sets/finite-set.md)
+- [Exponential](../../analysis/special-functions/exponential.md)
 
 ## Proof depends on
 
-- [Matrix exponential](../../../../undergraduate/linear-algebra/exponential/matrix-exponential.md)
-- [Complementary subspaces](../../../../undergraduate/linear-algebra/fundamentals/complementary-subspaces.md)
-- [Invertibility](../../matrices/invertibility.md)
-- [Real number](../../../general-algebra/numbers/real-number.md)
-- [The Binomial Theorem](../../../../hundred-theorems/part-02/the-binomial-theorem.md)
-- [Normed vector space over a normed field](../../../analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [The Triangle Inequality](../../../../hundred-theorems/part-04/the-triangle-inequality.md)
-- [Permutation group of a type](../../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
+- [Matrix exponential](../../../undergraduate/linear-algebra/exponential/matrix-exponential.md)
+- [Complementary subspaces](../../../undergraduate/linear-algebra/fundamentals/complementary-subspaces.md)
+- [Invertibility](../matrices/invertibility.md)
+- [Real number](../../general-algebra/numbers/real-number.md)
+- [The Binomial Theorem](../../../hundred-theorems/part-02/the-binomial-theorem.md)
+- [Normed vector space over a normed field](../../analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-04/the-triangle-inequality.md)
+- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 
 ## Main results
 

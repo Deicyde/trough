@@ -461,7 +461,9 @@
    "line": 237,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "QuadFormsKB.Cassels.Ch11L92.tartakowskyClassicalAt_four_holds",
@@ -490,6 +492,7 @@
    "sorry": false,
    "names": [
     "Algebra",
+    "F",
     "Field",
     "FiniteDimensional",
     "Invertible",
@@ -515,7 +518,9 @@
    "line": 38,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F"
+   ]
   }
  ],
  "mathlib_imports": {

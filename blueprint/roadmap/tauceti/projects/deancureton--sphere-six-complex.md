@@ -20,14 +20,14 @@ Its headline statements name no Mathlib concept or declaration mapped elsewhere 
 
 ## Proof depends on
 
-- [Product of vector spaces](../../../undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
-- [Path connectedness](../../../undergraduate/topology/topology-and-metric-spaces/path-connectedness.md)
-- [Open map](../../topology/general-topology/part-01/open-map.md)
-- [Product of manifolds](../differentiable-manifolds/part-01/product-of-manifolds.md)
-- [Schwarz lemma](../../analysis/complex-analysis/schwarz-lemma.md)
-- [Analyticity of holomorphic functions](../../analysis/complex-analysis/analyticity-of-holomorphic-functions.md)
-- [Chain complex](../../general-algebra/homological-algebra/chain-complex.md)
-- [Urysohn's lemma](../../topology/general-topology/part-02/urysohns-lemma.md)
+- [Product of vector spaces](../../mathlib/undergraduate/linear-algebra/fundamentals/product-of-vector-spaces.md)
+- [Path connectedness](../../mathlib/undergraduate/topology/topology-and-metric-spaces/path-connectedness.md)
+- [Open map](../../mathlib/overview/topology/general-topology/part-01/open-map.md)
+- [Product of manifolds](../../mathlib/overview/geometry/differentiable-manifolds/part-01/product-of-manifolds.md)
+- [Schwarz lemma](../../mathlib/overview/analysis/complex-analysis/schwarz-lemma.md)
+- [Analyticity of holomorphic functions](../../mathlib/overview/analysis/complex-analysis/analyticity-of-holomorphic-functions.md)
+- [Chain complex](../../mathlib/overview/general-algebra/homological-algebra/chain-complex.md)
+- [Urysohn's lemma](../../mathlib/overview/topology/general-topology/part-02/urysohns-lemma.md)
 
 ## Main results
 
@@ -50,12 +50,12 @@ No file its headlines import, directly or not (710 files), holds `sorry`, `admit
 - `DifferentialGeometry` (https://github.com/deancureton/differential-geometry.git) at `67e3631e`.
 - `JordanCurveTheorem` (https://github.com/Paul-Lez/jordan-curve-theorem.git) at `61a188ba`.
 - `SmoothSixSphere` (https://github.com/deancureton/lean-proofs.git) at `613af5fc`.
-- `TauCeti` (https://github.com/TauCetiProject/TauCeti.git) at `6175f404`.
+- [TauCeti](../README.md) at `6175f404`.
 - `VanKampen`.
 
 ## Placement
 
-Of its imports of Mathlib modules in an overview area, 33 of 220 are in Geometry, 6.4 times the average project's share, the most of the areas holding a tenth of its imports.
+Its Lake manifest requires `TauCeti`, whose modules 27 files of the project import.
 
 ## Mathlib use
 

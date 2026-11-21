@@ -79,6 +79,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "F",
+    "G",
     "SheafOfModules"
    ]
   },
@@ -89,7 +91,10 @@
    "line": 171,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F",
+    "h"
+   ]
   },
   {
    "name": "ComplexAnalytic.locallyContractibleSpace_analytification",
@@ -118,7 +123,9 @@
    "line": 118,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F"
+   ]
   },
   {
    "name": "AlgebraicGeometry.ProjectiveSpace.isPreconnected_closedFibre",
@@ -140,6 +147,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
+    "B",
     "Matrix",
     "Subgroup.closure"
    ]

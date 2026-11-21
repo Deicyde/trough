@@ -59,6 +59,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "G",
     "SimpleGraph"
    ]
   },
@@ -70,6 +71,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "G",
     "SimpleGraph"
    ]
   },
@@ -81,6 +83,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "G",
     "SimpleGraph"
    ]
   },
@@ -92,6 +95,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "G",
     "Set",
     "SimpleGraph"
    ]
@@ -104,6 +108,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "G",
     "Set",
     "SimpleGraph"
    ]
@@ -116,6 +121,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "F",
+    "G",
     "Set",
     "SimpleGraph",
     "SimpleGraph.F"
@@ -129,6 +136,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "F",
+    "G",
     "Set",
     "SimpleGraph",
     "SimpleGraph.F"
@@ -142,6 +151,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "D",
+    "G",
     "Set",
     "SimpleGraph"
    ]

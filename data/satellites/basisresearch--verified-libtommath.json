@@ -81,7 +81,9 @@
    "line": 22,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F"
+   ]
   },
   {
    "name": "Tom.InvmodPost.spec_neg_odd",
@@ -91,7 +93,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Int"
+    "Int",
+    "h"
    ]
   },
   {
@@ -102,6 +105,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "F",
     "List",
     "Nat"
    ]
@@ -113,7 +117,9 @@
    "line": 22,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F"
+   ]
   },
   {
    "name": "Specs.mp_gcd",
@@ -122,7 +128,9 @@
    "line": 21,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F"
+   ]
   },
   {
    "name": "Specs.mp_init_copy",
@@ -143,7 +151,9 @@
    "line": 19,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F"
+   ]
   }
  ],
  "mathlib_imports": {},

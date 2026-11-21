@@ -76,6 +76,8 @@
    "names": [
     "BorelSpace",
     "Continuous",
+    "D",
+    "F",
     "Filter.Tendsto",
     "Measurable",
     "MeasurableSpace",
@@ -83,7 +85,8 @@
     "Metric.ball",
     "ProbabilityTheory.IsGaussian",
     "Real.exp",
-    "Real.log"
+    "Real.log",
+    "g"
    ]
   },
   {
@@ -94,8 +97,12 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
+    "B",
     "BorelSpace",
     "Continuous",
+    "D",
+    "F",
     "Filter.Tendsto",
     "IsCompact",
     "Measurable",
@@ -107,7 +114,8 @@
     "ProbabilityTheory.IsGaussian",
     "Real.exp",
     "Real.log",
-    "Set"
+    "Set",
+    "g"
    ]
   },
   {
@@ -117,7 +125,9 @@
    "line": 263,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "SubdiffusiveProcess.anomalous_holder_regularity",
@@ -141,7 +151,9 @@
    "line": 186,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   }
  ],
  "mathlib_imports": {

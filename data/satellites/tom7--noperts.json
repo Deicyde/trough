@@ -262,7 +262,9 @@
    "line": 92,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "g"
+   ]
   },
   {
    "name": "DeltoidalHexecontahedron.DH.kv_mcK",
@@ -271,7 +273,9 @@
    "line": 99,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "g"
+   ]
   },
   {
    "name": "DeltoidalHexecontahedron.DH.eq_of_keq",
@@ -280,7 +284,9 @@
    "line": 110,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "DeltoidalHexecontahedron.DH.val_dotK",
@@ -327,7 +333,9 @@
    "line": 161,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "g"
+   ]
   }
  ],
  "mathlib_imports": {

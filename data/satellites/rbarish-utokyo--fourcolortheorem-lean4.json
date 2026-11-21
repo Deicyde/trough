@@ -86,7 +86,10 @@
    "line": 682,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "D",
+    "G"
+   ]
   },
   {
    "name": "FourColor.four_color_hypermap",
@@ -95,7 +98,10 @@
    "line": 41,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "D",
+    "G"
+   ]
   },
   {
    "name": "FourColor.unavoidability",
@@ -104,7 +110,10 @@
    "line": 93,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "D",
+    "G"
+   ]
   },
   {
    "name": "FourColor.exclude5",

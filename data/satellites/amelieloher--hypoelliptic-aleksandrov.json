@@ -104,6 +104,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
     "Measurable",
     "closure"
    ]
@@ -116,6 +117,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
     "Measurable",
     "closure"
    ]
@@ -151,7 +153,9 @@
    "line": 21,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "β"
+   ]
   },
   {
    "name": "HypoellipticAleksandrov.KineticAleksandrov.kinetic_aleksandrov_autonomous_counterexample",
@@ -161,6 +165,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
     "ContDiff",
     "Filter.Tendsto",
     "Measurable"
@@ -174,6 +179,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
     "IsCompact",
     "Measurable",
     "MeasureTheory.Measure",
@@ -189,6 +195,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "E",
+    "F",
     "Set"
    ]
   }

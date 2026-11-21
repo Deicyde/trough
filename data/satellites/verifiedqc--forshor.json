@@ -202,7 +202,9 @@
    "line": 260,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "E"
+   ]
   },
   {
    "name": "Shor.nextSignedWidthBy_exact_le_scan",

@@ -56,7 +56,9 @@
    "line": 22,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "g"
+   ]
   },
   {
    "name": "PBCounterexample.IsPolynomialLattice.min",
@@ -65,7 +67,9 @@
    "line": 28,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "g"
+   ]
   }
  ],
  "mathlib_imports": {

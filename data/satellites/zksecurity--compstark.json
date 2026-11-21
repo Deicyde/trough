@@ -156,6 +156,7 @@
    "sorry": false,
    "names": [
     "Array",
+    "F",
     "List",
     "Nat"
    ]
@@ -169,6 +170,7 @@
    "sorry": false,
    "names": [
     "Array",
+    "F",
     "List"
    ]
   },
@@ -179,7 +181,10 @@
    "line": 324,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F",
+    "unifSpec"
+   ]
   },
   {
    "name": "CompStark.Iop.Batch.Setup.completeness",
@@ -188,7 +193,10 @@
    "line": 697,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F",
+    "unifSpec"
+   ]
   },
   {
    "name": "CompStark.Iop.knowledgeSoundness",
@@ -198,7 +206,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "List"
+    "F",
+    "List",
+    "unifSpec"
    ]
   },
   {
@@ -209,7 +219,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "List"
+    "F",
+    "List",
+    "unifSpec"
    ]
   },
   {
@@ -220,7 +232,11 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "List"
+    "F",
+    "List",
+    "OracleComp",
+    "OracleSpec.randomOracle",
+    "simulateQ"
    ]
   },
   {
@@ -231,7 +247,11 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "List"
+    "F",
+    "List",
+    "OracleComp",
+    "OracleSpec.randomOracle",
+    "simulateQ"
    ]
   }
  ],

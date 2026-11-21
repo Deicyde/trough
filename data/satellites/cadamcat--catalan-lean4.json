@@ -122,7 +122,9 @@
    "line": 41,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "Catalan.catalan_int_signed",
@@ -131,7 +133,9 @@
    "line": 16,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "Catalan.mihailescu_odd_primes",

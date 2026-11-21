@@ -58,7 +58,9 @@
    "line": 121,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "β"
+   ]
   },
   {
    "name": "Cochrane.AssetsRulesBalanceSheets.PresentValue.real_flow_tvc_iff",
@@ -68,7 +70,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Filter.Tendsto"
+    "Filter.Tendsto",
+    "β"
    ]
   },
   {
@@ -79,7 +82,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Filter.Tendsto"
+    "Filter.Tendsto",
+    "β"
    ]
   },
   {
@@ -89,7 +93,9 @@
    "line": 137,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "β"
+   ]
   },
   {
    "name": "Cochrane.AssetsRulesBalanceSheets.RealDebt.indexedFlow_price_free",
@@ -98,7 +104,9 @@
    "line": 94,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "β"
+   ]
   },
   {
    "name": "Cochrane.AssetsRulesBalanceSheets.RealDebt.indexed_pv_news_zero",
@@ -107,7 +115,9 @@
    "line": 134,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "β"
+   ]
   },
   {
    "name": "Cochrane.AssetsRulesBalanceSheets.RealDebt.nominalOutstanding_price_unique",
@@ -116,7 +126,10 @@
    "line": 191,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "B",
+    "β"
+   ]
   },
   {
    "name": "Cochrane.AssetsRulesBalanceSheets.RealDebt.foreign_default_required",
@@ -125,7 +138,10 @@
    "line": 264,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "B",
+    "D"
+   ]
   }
  ],
  "mathlib_imports": {

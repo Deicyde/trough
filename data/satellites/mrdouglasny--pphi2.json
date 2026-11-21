@@ -93,10 +93,12 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "E",
     "MeasureTheory.Integrable",
     "MeasureTheory.IsProbabilityMeasure",
     "MeasureTheory.Measure",
-    "Real.exp"
+    "Real.exp",
+    "g"
    ]
   },
   {
@@ -111,7 +113,8 @@
     "Filter.Tendsto",
     "MeasureTheory.IsProbabilityMeasure",
     "MeasureTheory.Measure",
-    "ProbabilityTheory.gaussianReal"
+    "ProbabilityTheory.gaussianReal",
+    "g"
    ]
   },
   {
@@ -122,9 +125,11 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "E",
     "MeasureTheory.Integrable",
     "MeasureTheory.Measure",
-    "Real.exp"
+    "Real.exp",
+    "h"
    ]
   },
   {
@@ -135,6 +140,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "E",
     "MeasureTheory.IsProbabilityMeasure",
     "MeasureTheory.Measure",
     "Real.exp"
@@ -148,6 +154,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "E",
     "MeasureTheory.IsProbabilityMeasure",
     "MeasureTheory.Measure",
     "ProbabilityTheory.gaussianReal",
@@ -161,7 +168,9 @@
    "line": 2243,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "η"
+   ]
   },
   {
    "name": "Pphi2.canonicalSumFieldFunction_covariance_eq_GJ",
@@ -170,7 +179,9 @@
    "line": 3859,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "η"
+   ]
   },
   {
    "name": "Pphi2.canonicalRoughFieldFunction_eq_of_snd",

@@ -1,8 +1,7 @@
-# Projects building on Geometry (18)
+# Projects building on Geometry (16)
 
 Lean projects outside the libraries mapped here that build on Mathlib, placed by their use of its geometry, read at a pinned commit without Lean, one card each.
 
-- [A Complex Structure on the Six-Sphere](deancureton--sphere-six-complex.md)
 - [The conjecture](frenzymath--poincare-conjecture.md)
 - [ECCompute](b-mehta--ellipticcurverank.md)
 - [envelope-property-lean](mingchenxia--envelope-property-lean.md)
@@ -16,7 +15,6 @@ Lean projects outside the libraries mapped here that build on Mathlib, placed by
 - [Lean-Atiyah-Singer](alpha-squared-labs--lean-atiyah-singer.md)
 - [LeanAlgebraicGeometry-Horizon](axeldlv00--leanalgebraicgeometry.md)
 - [MiyaokaMori-CharZero](frenzymath--miyaokamori-charzero.md)
-- [The Mordell Conjecture in Lean](axiommath--mordell.md)
 - [Proétale cohomology in Lean](chrisflav--proetale.md)
 - [Rendering](girving--ray.md)
 

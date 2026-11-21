@@ -82,7 +82,10 @@
    "line": 37,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "E",
+    "energy"
+   ]
   },
   {
    "name": "FunctionalInequalities.Poincare.SmoothGradient.Intrinsic.constant",
@@ -91,7 +94,9 @@
    "line": 35,
    "kind": "def",
    "sorry": false,
-   "names": []
+   "names": [
+    "E"
+   ]
   },
   {
    "name": "FunctionalInequalities.Poincare.SmoothGradient.Intrinsic.Holds",
@@ -100,7 +105,9 @@
    "line": 41,
    "kind": "def",
    "sorry": false,
-   "names": []
+   "names": [
+    "E"
+   ]
   },
   {
    "name": "FunctionalInequalities.Poincare.SmoothGradient.Intrinsic.holds_iff_constant_le",
@@ -109,7 +116,9 @@
    "line": 48,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "E"
+   ]
   },
   {
    "name": "FunctionalInequalities.Energy.NormalContraction.smoothed",

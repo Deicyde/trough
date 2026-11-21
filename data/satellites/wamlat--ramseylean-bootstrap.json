@@ -68,6 +68,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "D",
+    "F",
     "HasDerivAt",
     "Real.exp",
     "Real.log"
@@ -101,6 +103,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "D",
+    "F",
     "HasDerivAt",
     "Real.exp"
    ]

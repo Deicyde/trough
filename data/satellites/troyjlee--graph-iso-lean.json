@@ -84,7 +84,9 @@
    "line": 42,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "g"
+   ]
   }
  ],
  "mathlib_imports": {

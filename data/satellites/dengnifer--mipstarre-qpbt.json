@@ -92,7 +92,9 @@
    "line": 88,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "g"
+   ]
   },
   {
    "name": "MIPStarRE.QPBT.pauli_soundness",

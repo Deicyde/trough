@@ -58,7 +58,11 @@
    "line": 117,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "B",
+    "F",
+    "β"
+   ]
   },
   {
    "name": "Miao.Applications.od_option_threshold",
@@ -67,7 +71,11 @@
    "line": 141,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "B",
+    "F",
+    "β"
+   ]
   },
   {
    "name": "Miao.Applications.od_option_threshold_gt_iff",
@@ -76,7 +84,11 @@
    "line": 303,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "B",
+    "F",
+    "β"
+   ]
   },
   {
    "name": "Miao.Applications.od_option_threshold_dirac",
@@ -85,7 +97,10 @@
    "line": 340,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "B",
+    "β"
+   ]
   },
   {
    "name": "Miao.Applications.od_wait_mean",
@@ -95,6 +110,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "F",
     "HasSum"
    ]
   },
@@ -105,7 +121,9 @@
    "line": 125,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F"
+   ]
   },
   {
    "name": "Miao.Applications.od_option_riskier",
@@ -115,8 +133,10 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "B",
     "MeasureTheory.IsProbabilityMeasure",
-    "MeasureTheory.Measure"
+    "MeasureTheory.Measure",
+    "β"
    ]
   },
   {
@@ -126,7 +146,11 @@
    "line": 273,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "B",
+    "F",
+    "β"
+   ]
   }
  ],
  "mathlib_imports": {

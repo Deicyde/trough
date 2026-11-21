@@ -64,7 +64,9 @@
    "line": 1338,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F"
+   ]
   },
   {
    "name": "Anderson4D.sum_eq_sum_paired_tree_incidence_div",
@@ -74,6 +76,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "F",
     "Finset"
    ]
   },
@@ -94,7 +97,10 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Finset"
+    "A",
+    "F",
+    "Finset",
+    "α"
    ]
   },
   {
@@ -105,7 +111,10 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Finset"
+    "A",
+    "F",
+    "Finset",
+    "α"
    ]
   },
   {
@@ -116,6 +125,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
     "Finset"
    ]
   },
@@ -127,6 +137,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
     "Finset"
    ]
   },

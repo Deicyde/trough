@@ -69,7 +69,9 @@
    "line": 126,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "A"
+   ]
   },
   {
    "name": "SerreMarkov.IntrinsicSignature.realFrameChange_isUnit",

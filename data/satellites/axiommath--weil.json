@@ -66,6 +66,7 @@
    "sorry": false,
    "names": [
     "AlgebraicGeometry.Smooth",
+    "B",
     "Polynomial"
    ]
   },
@@ -78,6 +79,7 @@
    "sorry": false,
    "names": [
     "AlgebraicGeometry.Smooth",
+    "B",
     "Polynomial",
     "ringChar"
    ]
@@ -104,6 +106,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "B",
     "Module.finrank"
    ]
   },
@@ -115,14 +118,18 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
     "Algebra",
     "AlgebraicGeometry.GeometricallyIrreducible",
     "AlgebraicGeometry.IsIntegral",
     "AlgebraicGeometry.IsProper",
+    "E",
+    "F",
     "Field",
     "FiniteDimensional",
     "Module.finrank",
-    "Multiset"
+    "Multiset",
+    "α"
    ]
   }
  ],

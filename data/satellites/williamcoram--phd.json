@@ -142,7 +142,8 @@
    "names": [
     "Algebra",
     "CompleteSpace",
-    "PowerSeries"
+    "PowerSeries",
+    "h"
    ]
   }
  ],

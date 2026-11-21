@@ -60,7 +60,9 @@
    "line": 418,
    "kind": "lemma",
    "sorry": false,
-   "names": []
+   "names": [
+    "G"
+   ]
   },
   {
    "name": "FlagAlgebras.subflagDensity_self",
@@ -69,7 +71,9 @@
    "line": 478,
    "kind": "lemma",
    "sorry": false,
-   "names": []
+   "names": [
+    "G"
+   ]
   },
   {
    "name": "FlagAlgebras.subflagDensity_other",
@@ -87,7 +91,10 @@
    "line": 50,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F",
+    "G"
+   ]
   },
   {
    "name": "FlagAlgebras.flagVector_mul_zeroSpace",
@@ -105,7 +112,10 @@
    "line": 767,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "g",
+    "h"
+   ]
   },
   {
    "name": "FlagAlgebras.basisVector_quot_mul_eq_flagMul_quot",
@@ -114,7 +124,10 @@
    "line": 907,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F",
+    "G"
+   ]
   },
   {
    "name": "FlagAlgebras.sum_flagWithSize_eq_one",
@@ -123,7 +136,9 @@
    "line": 885,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F"
+   ]
   }
  ],
  "mathlib_imports": {

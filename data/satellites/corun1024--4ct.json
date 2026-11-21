@@ -108,7 +108,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "List"
+    "D",
+    "List",
+    "h"
    ]
   }
  ],

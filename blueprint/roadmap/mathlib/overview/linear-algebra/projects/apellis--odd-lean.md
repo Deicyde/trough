@@ -20,14 +20,14 @@ Its headline statements name no Mathlib concept or declaration mapped elsewhere 
 
 ## Proof depends on
 
-- [Quotient ring](../../../general-algebra/ideals-and-quotients/quotient-ring.md)
-- [Wilson’s Lemma](../../../../hundred-theorems/part-02/wilsons-lemma.md)
-- [Free algebra of a commutative ring](../../../general-algebra/algebras-over-a-ring/free-algebra-of-a-commutative-ring.md)
-- [Direct sum](../../../../undergraduate/linear-algebra/fundamentals/direct-sum.md)
-- [Isomorphism](../../../general-algebra/category-theory/isomorphism.md)
-- [Sum of an arithmetic series](../../../../hundred-theorems/part-03/sum-of-an-arithmetic-series.md)
-- [Tensor product](../../fundamentals/tensor-product.md)
-- [Multiset](../../../data-structures/sets/multiset.md)
+- [Quotient ring](../../general-algebra/ideals-and-quotients/quotient-ring.md)
+- [Wilson’s Lemma](../../../hundred-theorems/part-02/wilsons-lemma.md)
+- [Free algebra of a commutative ring](../../general-algebra/algebras-over-a-ring/free-algebra-of-a-commutative-ring.md)
+- [Direct sum](../../../undergraduate/linear-algebra/fundamentals/direct-sum.md)
+- [Isomorphism](../../general-algebra/category-theory/isomorphism.md)
+- [Sum of an arithmetic series](../../../hundred-theorems/part-03/sum-of-an-arithmetic-series.md)
+- [Tensor product](../fundamentals/tensor-product.md)
+- [Multiset](../../data-structures/sets/multiset.md)
 
 ## Main results
 

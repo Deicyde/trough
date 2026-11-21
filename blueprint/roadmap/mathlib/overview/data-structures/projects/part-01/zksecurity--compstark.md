@@ -19,6 +19,7 @@ proof: formalized
 - [Array](../../list-like-structures/array.md)
 - [List](../../list-like-structures/list.md)
 - [Natural number](../../../general-algebra/numbers/natural-number.md)
+- [Random Oracle](../../../../../arklib/supporting-theories/the-vcvio-library/def-random-oracle.md)
 
 ## Proof depends on
 

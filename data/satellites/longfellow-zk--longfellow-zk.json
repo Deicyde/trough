@@ -210,7 +210,9 @@
    "line": 26,
    "kind": "lemma",
    "sorry": false,
-   "names": []
+   "names": [
+    "F"
+   ]
   },
   {
    "name": "JBAgreement.RSeval_line",
@@ -219,7 +221,9 @@
    "line": 30,
    "kind": "lemma",
    "sorry": false,
-   "names": []
+   "names": [
+    "F"
+   ]
   },
   {
    "name": "JBAgreement.correlatedAgreement_of_branch",
@@ -229,6 +233,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "F",
     "Finset"
    ]
   },
@@ -240,6 +245,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "F",
     "Finset"
    ]
   }

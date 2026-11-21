@@ -115,7 +115,8 @@
    "kind": "lemma",
    "sorry": false,
    "names": [
-    "Polynomial"
+    "Polynomial",
+    "g"
    ]
   },
   {
@@ -125,7 +126,10 @@
    "line": 76,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "A",
+    "B"
+   ]
   }
  ],
  "mathlib_imports": {

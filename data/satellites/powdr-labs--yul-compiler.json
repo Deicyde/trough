@@ -148,7 +148,9 @@
    "line": 1031,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "YulParser.parse_canon_block",
@@ -158,7 +160,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "List"
+    "List",
+    "h"
    ]
   },
   {
@@ -168,7 +171,9 @@
    "line": 142,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "YulEvmCompiler.Optimizer.LocalPass.optimize_then_compile_correct",

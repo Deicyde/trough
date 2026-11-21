@@ -6,4 +6,4 @@
 - [Riemannian manifolds](riemannian-manifolds/README.md)
 - [Algebraic geometry](algebraic-geometry/README.md)
 - [Convex geometry](convex-geometry/README.md)
-- [Projects building on Geometry (18)](projects/README.md)
+- [Projects building on Geometry (16)](projects/README.md)

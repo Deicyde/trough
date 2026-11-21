@@ -21,14 +21,14 @@ A root module states no result, so the node has no statement edges.
 
 ## Proof depends on
 
-- [Algebra of endomorphisms of a vector space](../../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
-- [Lie's theorem](../../../../thousand-plus/algebra/17-nonassociative-rings-and-algebras/lies-theorem.md)
-- [Adjacency matrix](../../../combinatorics/graph-theory/adjacency-matrix.md)
-- [Cauchy-Schwarz inequality](../../../analysis/hilbert-spaces/cauchy-schwarz-inequality.md)
-- [Lie algebra](../../../general-algebra/algebras-over-a-ring/lie-algebra.md)
-- [Schur–Zassenhaus theorem](../../../../thousand-plus/algebra/20-group-theory-and-generalizations/schur-zassenhaus-theorem.md)
-- [Invariant subspaces of an endomorphism](../../../../undergraduate/linear-algebra/structure-theory-of-endomorphisms/invariant-subspaces-of-an-endomorphism.md)
-- [Rank of a linear map](../../../../undergraduate/linear-algebra/finite-dimensional-vector-spaces/rank-of-a-linear-map.md)
+- [Algebra of endomorphisms of a vector space](../../../undergraduate/linear-algebra/fundamentals/algebra-of-endomorphisms-of-a-vector-space.md)
+- [Lie's theorem](../../../thousand-plus/algebra/17-nonassociative-rings-and-algebras/lies-theorem.md)
+- [Adjacency matrix](../../combinatorics/graph-theory/adjacency-matrix.md)
+- [Cauchy-Schwarz inequality](../../analysis/hilbert-spaces/cauchy-schwarz-inequality.md)
+- [Lie algebra](../../general-algebra/algebras-over-a-ring/lie-algebra.md)
+- [Schur–Zassenhaus theorem](../../../thousand-plus/algebra/20-group-theory-and-generalizations/schur-zassenhaus-theorem.md)
+- [Invariant subspaces of an endomorphism](../../../undergraduate/linear-algebra/structure-theory-of-endomorphisms/invariant-subspaces-of-an-endomorphism.md)
+- [Rank of a linear map](../../../undergraduate/linear-algebra/finite-dimensional-vector-spaces/rank-of-a-linear-map.md)
 
 ## Root modules
 

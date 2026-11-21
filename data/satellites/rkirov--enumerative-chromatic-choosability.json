@@ -141,6 +141,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "G",
     "SimpleGraph"
    ]
   },
@@ -206,6 +207,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "G",
     "SimpleGraph"
    ]
   }

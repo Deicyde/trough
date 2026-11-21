@@ -18,7 +18,6 @@ proof: formalized
 
 - [List](../../list-like-structures/list.md)
 - [Natural number](../../../general-algebra/numbers/natural-number.md)
-- [$\tau$ functional](../../../../../pfr/entropy-version-of-pfr/tau-def.md)
 
 ## Proof depends on
 

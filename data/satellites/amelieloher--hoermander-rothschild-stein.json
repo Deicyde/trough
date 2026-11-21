@@ -127,7 +127,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Set"
+    "Set",
+    "g"
    ]
   },
   {
@@ -210,7 +211,9 @@
     "Distribution",
     "IsCompact",
     "Set",
-    "closure"
+    "closure",
+    "g",
+    "α"
    ]
   },
   {

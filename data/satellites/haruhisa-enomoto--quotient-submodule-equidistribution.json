@@ -66,7 +66,10 @@
    "line": 28,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "A",
+    "h"
+   ]
   },
   {
    "name": "QuotientSubmoduleEquidistribution.BottomLevels.FiniteDimensionalRecurrence.FirstLastFourEndpoint.bottom_top_four",
@@ -75,7 +78,9 @@
    "line": 38,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "B"
+   ]
   },
   {
    "name": "QuotientSubmoduleEquidistribution.BottomLevels.FiniteDimensionalRecurrence.FirstLastFourEndpoint.equidistribution_of_card_le_nine",
@@ -94,6 +99,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
     "Algebra",
     "Field",
     "FiniteDimensional",
@@ -108,6 +114,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
     "Algebra",
     "Field",
     "FiniteDimensional",
@@ -123,11 +130,13 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
     "Algebra",
     "Field",
     "FiniteDimensional",
     "IsAlgClosed",
-    "Ring"
+    "Ring",
+    "h"
    ]
   },
   {
@@ -138,6 +147,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "D",
+    "E",
     "Set"
    ]
   },
@@ -150,6 +161,7 @@
    "sorry": false,
    "names": [
     "Algebra",
+    "D",
     "Field",
     "FiniteDimensional",
     "Module",

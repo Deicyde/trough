@@ -69,8 +69,10 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "DirichletCharacter",
     "Finset",
-    "Ideal"
+    "Ideal",
+    "h"
    ]
   },
   {
@@ -81,8 +83,10 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "DirichletCharacter",
     "Finset",
-    "Ideal"
+    "Ideal",
+    "h"
    ]
   },
   {
@@ -94,6 +98,8 @@
    "sorry": false,
    "names": [
     "ContDiff",
+    "D",
+    "DirichletCharacter",
     "Finset",
     "Ideal",
     "Prime"
@@ -108,8 +114,11 @@
    "sorry": false,
    "names": [
     "ContDiff",
+    "D",
+    "DirichletCharacter",
     "Finset",
-    "Ideal"
+    "Ideal",
+    "h"
    ]
   },
   {
@@ -119,7 +128,9 @@
    "line": 106,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "DirichletCharacter"
+   ]
   }
  ],
  "mathlib_imports": {

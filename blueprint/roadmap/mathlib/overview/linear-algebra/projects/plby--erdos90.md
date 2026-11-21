@@ -15,14 +15,14 @@ A root module states no result, so the node has no statement edges.
 
 ## Proof depends on
 
-- [Field $\Q$ of rational numbers](../../../../undergraduate/ring-theory/field-theory/field-q-of-rational-numbers.md)
-- [Wedderburn's little theorem](../../../../thousand-plus/algebra/13-commutative-algebra/wedderburns-little-theorem.md)
-- [Tensor product of algebras](../../../general-algebra/algebras-over-a-ring/tensor-product-of-algebras.md)
-- [Presented group](../../../general-algebra/group-theory/part-01/presented-group.md)
-- [Sum of two squares](../../../general-algebra/number-theory/sum-of-two-squares.md)
-- [Ring structure $\Z$](../../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
-- [Euclidean domain](../../../general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
-- [Ring of Witt vectors](../../../general-algebra/number-theory/ring-of-witt-vectors.md)
+- [Field $\Q$ of rational numbers](../../../undergraduate/ring-theory/field-theory/field-q-of-rational-numbers.md)
+- [Wedderburn's little theorem](../../../thousand-plus/algebra/13-commutative-algebra/wedderburns-little-theorem.md)
+- [Tensor product of algebras](../../general-algebra/algebras-over-a-ring/tensor-product-of-algebras.md)
+- [Presented group](../../general-algebra/group-theory/part-01/presented-group.md)
+- [Sum of two squares](../../general-algebra/number-theory/sum-of-two-squares.md)
+- [Ring structure $\Z$](../../../undergraduate/ring-theory/fundamentals/ring-structure-z.md)
+- [Euclidean domain](../../general-algebra/divisibility-in-integral-domains/euclidean-domain.md)
+- [Ring of Witt vectors](../../general-algebra/number-theory/ring-of-witt-vectors.md)
 
 ## Root modules
 

@@ -99,7 +99,9 @@
    "line": 346,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "CertifiedGaps.one_sub_squaredPurity_le_squaringDefect",
@@ -120,6 +122,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "E",
     "Real.log"
    ]
   },
@@ -131,6 +134,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "B",
     "LinearMap.ker",
     "LinearMap.range",
     "Matrix"

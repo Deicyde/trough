@@ -100,7 +100,9 @@
    "line": 322,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "LeanerVM.Arithmetization.traceOf_valid",
@@ -109,7 +111,9 @@
    "line": 271,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "LeanerVM.Arithmetization.constraintCompleteness",
@@ -118,7 +122,9 @@
    "line": 402,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "LeanerVM.Arithmetization.satisfiable_iff_valid",

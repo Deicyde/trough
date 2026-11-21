@@ -239,9 +239,11 @@
    "sorry": false,
    "names": [
     "Algebra",
+    "F",
     "Field",
     "FiniteDimensional",
-    "Module.finrank"
+    "Module.finrank",
+    "h"
    ]
   },
   {

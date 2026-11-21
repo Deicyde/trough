@@ -41,3 +41,4 @@ The docstrings and Lean statements are quoted from [AxiomMath/Stacks](https://gi
 - [Miscellany](miscellany/README.md)
 - [EGA](ega/README.md)
 - [SGA](sga/README.md)
+- [Projects building on The Stacks Project in Lean (Axiom) (2)](projects/README.md)

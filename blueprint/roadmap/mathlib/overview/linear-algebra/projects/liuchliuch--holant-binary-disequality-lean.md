@@ -19,14 +19,14 @@ A root module states no result, so the node has no statement edges.
 
 ## Proof depends on
 
-- [Rank of a matrix](../../../../undergraduate/linear-algebra/matrices/rank-of-a-matrix.md)
-- [Orientation of a $\R$-vector space](../../../../undergraduate/linear-algebra/multilinearity/orientation-of-a-r-vector-space.md)
-- [Turing machine](../../../logic-and-computation/computability/turing-machine.md)
-- [Determinant](../../matrices/determinant.md)
-- [Algebraic elements](../../../../undergraduate/ring-theory/field-theory/algebraic-elements.md)
-- [Cyclic group](../../../general-algebra/group-theory/part-01/cyclic-group.md)
-- [Prime numbers](../../../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
-- [Burnside lemma](../../../general-algebra/group-theory/part-01/burnside-lemma.md)
+- [Rank of a matrix](../../../undergraduate/linear-algebra/matrices/rank-of-a-matrix.md)
+- [Orientation of a $\R$-vector space](../../../undergraduate/linear-algebra/multilinearity/orientation-of-a-r-vector-space.md)
+- [Turing machine](../../logic-and-computation/computability/turing-machine.md)
+- [Determinant](../matrices/determinant.md)
+- [Algebraic elements](../../../undergraduate/ring-theory/field-theory/algebraic-elements.md)
+- [Cyclic group](../../general-algebra/group-theory/part-01/cyclic-group.md)
+- [Prime numbers](../../../undergraduate/ring-theory/divisibility-in-integral-domains/prime-numbers.md)
+- [Burnside lemma](../../general-algebra/group-theory/part-01/burnside-lemma.md)
 
 ## Root modules
 

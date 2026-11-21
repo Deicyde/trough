@@ -19,14 +19,14 @@ A root module states no result, so the node has no statement edges.
 
 ## Proof depends on
 
-- [Perfect closure](../../../general-algebra/field-theory/perfect-closure.md)
-- [Tensor algebra of a commutative ring](../../../general-algebra/algebras-over-a-ring/tensor-algebra-of-a-commutative-ring.md)
-- [Tensor product of algebras](../../../general-algebra/algebras-over-a-ring/tensor-product-of-algebras.md)
-- [Functorial homology](../../../general-algebra/homological-algebra/functorial-homology.md)
-- [The category of rings](../../../general-algebra/rings/the-category-of-rings.md)
-- [Lie algebra](../../../general-algebra/algebras-over-a-ring/lie-algebra.md)
-- [Grothendieck topology](../../../general-algebra/category-theory/grothendieck-topology.md)
-- [Cartesian closed](../../../general-algebra/category-theory/cartesian-closed.md)
+- [Perfect closure](../../general-algebra/field-theory/perfect-closure.md)
+- [Tensor algebra of a commutative ring](../../general-algebra/algebras-over-a-ring/tensor-algebra-of-a-commutative-ring.md)
+- [Tensor product of algebras](../../general-algebra/algebras-over-a-ring/tensor-product-of-algebras.md)
+- [Functorial homology](../../general-algebra/homological-algebra/functorial-homology.md)
+- [The category of rings](../../general-algebra/rings/the-category-of-rings.md)
+- [Lie algebra](../../general-algebra/algebras-over-a-ring/lie-algebra.md)
+- [Grothendieck topology](../../general-algebra/category-theory/grothendieck-topology.md)
+- [Cartesian closed](../../general-algebra/category-theory/cartesian-closed.md)
 
 ## Root modules
 

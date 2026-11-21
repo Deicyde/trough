@@ -59,6 +59,7 @@
    "kind": "def",
    "sorry": false,
    "names": [
+    "D",
     "Subgroup"
    ]
   },
@@ -70,6 +71,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "D",
     "Subgroup"
    ]
   },
@@ -81,6 +83,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "D",
     "Subgroup"
    ]
   },
@@ -92,6 +95,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "D",
     "Subgroup"
    ]
   },
@@ -103,6 +107,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "D",
     "Subgroup"
    ]
   },
@@ -114,6 +119,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "D",
     "Subgroup"
    ]
   },
@@ -125,6 +131,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "D",
     "Subgroup"
    ]
   },
@@ -135,7 +142,9 @@
    "line": 9,
    "kind": "def",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   }
  ],
  "mathlib_imports": {

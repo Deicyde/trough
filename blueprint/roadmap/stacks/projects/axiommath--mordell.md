@@ -16,21 +16,21 @@ proof: formalized
 
 ## Depends on
 
-- [33.9 Geometrically integral schemes](../../../../stacks/schemes/33-varieties/part-01/33-9-geometrically-integral-schemes.md)
-- [29.42 Proper morphisms](../../../../stacks/schemes/29-morphisms-of-schemes/part-03/29-42-proper-morphisms.md)
-- [Field](../../general-algebra/field-theory/field.md)
-- [10.18 Local rings](../../../../stacks/preliminaries/part-01/10-commutative-algebra/part-01/10-18-local-rings.md)
+- [33.9 Geometrically integral schemes](../schemes/33-varieties/part-01/33-9-geometrically-integral-schemes.md)
+- [29.42 Proper morphisms](../schemes/29-morphisms-of-schemes/part-03/29-42-proper-morphisms.md)
+- [Field](../../mathlib/overview/general-algebra/field-theory/field.md)
+- [10.18 Local rings](../preliminaries/part-01/10-commutative-algebra/part-01/10-18-local-rings.md)
 
 ## Proof depends on
 
-- [Bézout's identity](../../../undergraduate/ring-theory/divisibility-in-integral-domains/bezouts-identity.md)
-- [Algebraic extension](../../general-algebra/field-theory/algebraic-extension.md)
-- [Separable polynomial](../../general-algebra/polynomials-and-power-series/separable-polynomial.md)
-- [Transcendental elements](../../../undergraduate/ring-theory/field-theory/transcendental-elements.md)
-- [Localization](../../general-algebra/rings/localization.md)
-- [Krull's principal ideal theorem](../../../thousand-plus/algebra/13-commutative-algebra/krulls-principal-ideal-theorem.md)
-- [Infinite](../../combinatorics/pigeonhole-principles/infinite.md)
-- [Multilinear map](../../linear-algebra/fundamentals/multilinear-map.md)
+- [Bézout's identity](../../mathlib/undergraduate/ring-theory/divisibility-in-integral-domains/bezouts-identity.md)
+- [Algebraic extension](../../mathlib/overview/general-algebra/field-theory/algebraic-extension.md)
+- [Separable polynomial](../../mathlib/overview/general-algebra/polynomials-and-power-series/separable-polynomial.md)
+- [Transcendental elements](../../mathlib/undergraduate/ring-theory/field-theory/transcendental-elements.md)
+- [Localization](../../mathlib/overview/general-algebra/rings/localization.md)
+- [Krull's principal ideal theorem](../../mathlib/thousand-plus/algebra/13-commutative-algebra/krulls-principal-ideal-theorem.md)
+- [Infinite](../../mathlib/overview/combinatorics/pigeonhole-principles/infinite.md)
+- [Multilinear map](../../mathlib/overview/linear-algebra/fundamentals/multilinear-map.md)
 
 ## Main results
 
@@ -52,11 +52,11 @@ No file its headlines import, directly or not (382 files), holds `sorry`, `admit
 ## Builds on
 
 - Mathlib, at [56a00585](https://github.com/leanprover-community/mathlib4/tree/56a005855ea17e0b0958f73ec801ae140b0a1679).
-- `Stacks` (https://github.com/AxiomMath/Stacks) at `c496df0d`.
+- [Stacks](../README.md) at `c496df0d`.
 
 ## Placement
 
-Of its imports of Mathlib modules in an overview area, 5 of 27 are in Geometry, 7.8 times the average project's share, the most of the areas holding a tenth of its imports.
+Its Lake manifest requires `Stacks`.
 
 ## Mathlib use
 

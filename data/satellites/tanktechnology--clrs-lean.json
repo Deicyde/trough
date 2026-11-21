@@ -56,7 +56,9 @@
    "line": 501,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "G"
+   ]
   },
   {
    "name": "CLRS.Chapter24.WeightedGraph.dijkstraLoop_correct",
@@ -65,7 +67,9 @@
    "line": 551,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "G"
+   ]
   }
  ],
  "mathlib_imports": {

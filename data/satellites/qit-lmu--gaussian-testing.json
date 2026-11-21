@@ -98,7 +98,9 @@
    "line": 72,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "α"
+   ]
   },
   {
    "name": "GaussianTesting.RobustnessBounds.linear_fidelity",
@@ -107,7 +109,11 @@
    "line": 69,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "E",
+    "h",
+    "α"
+   ]
   },
   {
    "name": "GaussianTesting.schrodingerDifference_even",

@@ -94,6 +94,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
     "Irreducible",
     "IsLocalRing.ResidueField",
     "IsLocalRing.maximalIdeal",
@@ -109,6 +110,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
     "Irreducible",
     "IsLocalRing.ResidueField",
     "IsLocalRing.maximalIdeal",
@@ -124,6 +126,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
     "Irreducible",
     "IsLocalRing.ResidueField",
     "IsLocalRing.maximalIdeal",
@@ -165,7 +168,9 @@
    "line": 537,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "A"
+   ]
   }
  ],
  "mathlib_imports": {

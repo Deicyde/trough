@@ -22,14 +22,14 @@ A root module states no result, so the node has no statement edges.
 
 ## Proof depends on
 
-- [Helly's theorem](../../../../thousand-plus/geometry-and-topology/52-convex-and-discrete-geometry/hellys-theorem.md)
-- [Carathéodory's theorem](../../../analysis/convexity/caratheodorys-theorem.md)
-- [Extreme point](../../../../undergraduate/affine-and-euclidean-geometry/convexity/extreme-point.md)
-- [Cross product](../../../../undergraduate/bilinear-and-quadratic-forms-over-a-vector-space/low-dimensions/cross-product.md)
-- [Affine span](../../../geometry/affine-and-euclidean-geometry/affine-span.md)
-- [Finite](../../../combinatorics/pigeonhole-principles/finite.md)
-- [Convex hull of a subset of an affine real space](../../../../undergraduate/affine-and-euclidean-geometry/convexity/convex-hull-of-a-subset-of-an-affine-real-space.md)
-- [Affine subspace](../../../geometry/affine-and-euclidean-geometry/affine-subspace.md)
+- [Helly's theorem](../../../thousand-plus/geometry-and-topology/52-convex-and-discrete-geometry/hellys-theorem.md)
+- [Carathéodory's theorem](../../analysis/convexity/caratheodorys-theorem.md)
+- [Extreme point](../../../undergraduate/affine-and-euclidean-geometry/convexity/extreme-point.md)
+- [Cross product](../../../undergraduate/bilinear-and-quadratic-forms-over-a-vector-space/low-dimensions/cross-product.md)
+- [Affine span](../../geometry/affine-and-euclidean-geometry/affine-span.md)
+- [Finite](../../combinatorics/pigeonhole-principles/finite.md)
+- [Convex hull of a subset of an affine real space](../../../undergraduate/affine-and-euclidean-geometry/convexity/convex-hull-of-a-subset-of-an-affine-real-space.md)
+- [Affine subspace](../../geometry/affine-and-euclidean-geometry/affine-subspace.md)
 
 ## Root modules
 

@@ -80,7 +80,9 @@
    "line": 432,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "E"
+   ]
   }
  ],
  "mathlib_imports": {

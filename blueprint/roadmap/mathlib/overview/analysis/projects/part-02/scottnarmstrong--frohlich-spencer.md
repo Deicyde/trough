@@ -21,7 +21,6 @@ proof: formalized
 - [Limit of a map with respect to filters](../../../topology/general-topology/part-01/limit-of-a-map-with-respect-to-filters.md)
 - [Finite set](../../../data-structures/sets/finite-set.md)
 - [Exponential](../../special-functions/exponential.md)
-- [Isogeny volcanoes](../../../../../atlas/algebra-number-theory/algebraic-geometry/elliptic-curves/isogeny-volcanoes.md)
 - [Logarithm](../../special-functions/logarithm.md)
 
 ## Proof depends on

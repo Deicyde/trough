@@ -81,6 +81,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
     "IsAlgClosed"
    ]
   }

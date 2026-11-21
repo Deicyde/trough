@@ -1122,7 +1122,9 @@
    "line": 191,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "α"
+   ]
   },
   {
    "name": "Proofs.LinFold.linear_net_lossGrad",
@@ -1131,7 +1133,9 @@
    "line": 39,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "g"
+   ]
   },
   {
    "name": "Proofs.LinFold.linear_net_lossGrad_CE",

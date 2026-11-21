@@ -96,6 +96,7 @@
    "sorry": false,
    "names": [
     "CompactSpace",
+    "E",
     "IsCompact",
     "IsManifold",
     "NormedSpace",
@@ -112,6 +113,7 @@
    "sorry": false,
    "names": [
     "CompactSpace",
+    "E",
     "IsCompact",
     "IsManifold",
     "NormedSpace",
@@ -127,6 +129,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "E",
     "Filter.Tendsto",
     "FiniteDimensional",
     "IsCompact",
@@ -141,7 +144,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "B",
     "Finset",
+    "G",
     "MeasureTheory.Measure"
    ]
   }

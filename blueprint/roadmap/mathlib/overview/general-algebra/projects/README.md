@@ -1,4 +1,4 @@
-# Projects building on General algebra (33)
+# Projects building on General algebra (32)
 
 Lean projects outside the libraries mapped here that build on Mathlib, placed by their use of its general algebra, read at a pinned commit without Lean, one card each.
 
@@ -25,7 +25,7 @@ Lean projects outside the libraries mapped here that build on Mathlib, placed by
 - [oka](part-01/chrisflav--oka.md)
 - [On monic abelian cubic polynomials](part-01/aodesky--abelian-cubics.md)
 
-## [p-adic L-functions in Lean to The Weil Conjectures in Lean](part-02/README.md)
+## [p-adic L-functions in Lean to TernaryPoly](part-02/README.md)
 
 - [p-adic L-functions in Lean](part-02/cbirkbeck--padic-l-functions.md)
 - [Plonky3-lean](part-02/plonky3--plonky3-lean.md)
@@ -36,4 +36,3 @@ Lean projects outside the libraries mapped here that build on Mathlib, placed by
 - [smale6-six-bodies-generic](part-02/tejasvi--smale6-six-bodies-generic.md)
 - [tempered-fundamental-groups](part-02/lana-agents--tempered-fundamental-groups.md)
 - [TernaryPoly](part-02/axiommath--ternarypoly.md)
-- [The Weil Conjectures in Lean](part-02/axiommath--weil.md)

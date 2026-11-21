@@ -80,6 +80,7 @@
    "sorry": true,
    "names": [
     "CharZero",
+    "F",
     "Field",
     "MvPolynomial"
    ]
@@ -93,6 +94,7 @@
    "sorry": true,
    "names": [
     "CharZero",
+    "F",
     "Field",
     "MvPolynomial"
    ]

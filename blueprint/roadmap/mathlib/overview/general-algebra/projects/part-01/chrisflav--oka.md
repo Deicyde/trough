@@ -16,7 +16,6 @@ proof: formalized
 
 ## Depends on
 
-- [6.10 Sheaves of modules](../../../../../stacks/preliminaries/part-01/6-sheaves-on-spaces/part-01/6-10-sheaves-of-modules.md)
 - [Polynomial in several indeterminates](../../polynomials-and-power-series/polynomial-in-several-indeterminates.md)
 - [28.3 Integral, irreducible, and reduced schemes](../../../../../stacks/schemes/28-properties-of-schemes/part-01/28-3-integral-irreducible-and-reduced-schemes.md)
 - [10.18 Local rings](../../../../../stacks/preliminaries/part-01/10-commutative-algebra/part-01/10-18-local-rings.md)

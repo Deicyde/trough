@@ -87,7 +87,9 @@
    "line": 114,
    "kind": "lemma",
    "sorry": false,
-   "names": []
+   "names": [
+    "g"
+   ]
   },
   {
    "name": "OAI.PlaneFiveColor.Spectral.wild_line_average_zero",
@@ -97,6 +99,10 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "B",
+    "D",
+    "E",
+    "F",
     "MeasureTheory.IsProbabilityMeasure",
     "MeasureTheory.Measure"
    ]
@@ -109,6 +115,10 @@
    "kind": "lemma",
    "sorry": false,
    "names": [
+    "B",
+    "D",
+    "E",
+    "F",
     "MeasureTheory.IsProbabilityMeasure",
     "MeasureTheory.Measure"
    ]

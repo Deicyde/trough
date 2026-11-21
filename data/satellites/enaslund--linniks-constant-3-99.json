@@ -156,7 +156,9 @@
    "line": 97,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "DirichletCharacter"
+   ]
   },
   {
    "name": "GradedNear.Cert.checkLeaf_ofCore",
@@ -174,7 +176,9 @@
    "line": 262,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "GradedNear.exists_prime_of_criterion",
@@ -183,7 +187,10 @@
    "line": 136,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "A",
+    "DirichletCharacter"
+   ]
   },
   {
    "name": "GradedNear.Kernel.exists_prime",
@@ -192,7 +199,9 @@
    "line": 77,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "DirichletCharacter"
+   ]
   },
   {
    "name": "GradedNear.Cert.leaf_relaxation",
@@ -219,7 +228,9 @@
    "line": 35,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "DirichletCharacter"
+   ]
   }
  ],
  "mathlib_imports": {

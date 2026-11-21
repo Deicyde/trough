@@ -90,6 +90,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "B",
     "Matrix"
    ]
   },
@@ -101,6 +102,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "D",
     "Equiv.Perm"
    ]
   },

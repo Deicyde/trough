@@ -15,7 +15,6 @@ statement: formalized
 
 ## Depends on
 
-- [5.12 Quasi-compact spaces and maps](../../../../stacks/preliminaries/part-01/5-topology/part-01/5-12-quasi-compact-spaces-and-maps.md)
 - [Connectedness](../../topology/general-topology/part-01/connectedness.md)
 - [Smooth or analytic manifold (with boundary and corners)](../differentiable-manifolds/part-01/smooth-or-analytic-manifold-with-boundary-and-co.md)
 - [Set](../../data-structures/sets/set.md)

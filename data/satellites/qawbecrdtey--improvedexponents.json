@@ -142,7 +142,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Real.log"
+    "Real.log",
+    "η"
    ]
   },
   {
@@ -153,7 +154,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Real.log"
+    "Real.log",
+    "η"
    ]
   },
   {

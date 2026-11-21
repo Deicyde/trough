@@ -12,18 +12,18 @@ proof: formalized
 
 ## Depends on
 
-- [Algebraically closed field](../../../general-algebra/field-theory/algebraically-closed-field.md)
+- [Algebraically closed field](../../general-algebra/field-theory/algebraically-closed-field.md)
 
 ## Proof depends on
 
-- [Ring](../../../general-algebra/rings/ring.md)
-- [Isomorphism with bidual](../../finite-dimensional-vector-spaces/isomorphism-with-bidual.md)
-- [Direct sum](../../../../undergraduate/linear-algebra/fundamentals/direct-sum.md)
-- [Szpilrajn extension theorem](../../../../thousand-plus/general-topics-history-and-foundations/szpilrajn-extension-theorem.md)
-- [Noetherian ring](../../../general-algebra/rings/noetherian-ring.md)
-- [Abelian category](../../../general-algebra/category-theory/abelian-category.md)
-- [Category](../../../general-algebra/category-theory/category.md)
-- [The category of modules over a ring](../../fundamentals/the-category-of-modules-over-a-ring.md)
+- [Ring](../../general-algebra/rings/ring.md)
+- [Isomorphism with bidual](../finite-dimensional-vector-spaces/isomorphism-with-bidual.md)
+- [Direct sum](../../../undergraduate/linear-algebra/fundamentals/direct-sum.md)
+- [Szpilrajn extension theorem](../../../thousand-plus/general-topics-history-and-foundations/szpilrajn-extension-theorem.md)
+- [Noetherian ring](../../general-algebra/rings/noetherian-ring.md)
+- [Abelian category](../../general-algebra/category-theory/abelian-category.md)
+- [Category](../../general-algebra/category-theory/category.md)
+- [The category of modules over a ring](../fundamentals/the-category-of-modules-over-a-ring.md)
 
 ## Main results
 

@@ -74,7 +74,8 @@
     "IsManifold",
     "Set",
     "T2Space",
-    "TopologicalSpace"
+    "TopologicalSpace",
+    "h"
    ]
   },
   {
@@ -89,7 +90,8 @@
     "ConnectedSpace",
     "IsManifold",
     "T2Space",
-    "TopologicalSpace"
+    "TopologicalSpace",
+    "g"
    ]
   },
   {
@@ -105,7 +107,8 @@
     "ContMDiff",
     "IsManifold",
     "T2Space",
-    "TopologicalSpace"
+    "TopologicalSpace",
+    "g"
    ]
   },
   {
@@ -124,7 +127,9 @@
    "line": 148,
    "kind": "lemma",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "Jacobians.Axioms.AX_AbelTheorem",
@@ -148,7 +153,9 @@
    "line": 237,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "Jacobians.Extensions.HyperellipticEven.genus_HyperellipticEven_eq",

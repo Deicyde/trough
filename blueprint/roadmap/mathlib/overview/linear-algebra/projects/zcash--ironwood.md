@@ -16,18 +16,18 @@ proof: formalized
 
 ## Depends on
 
-- [Development](../../../data-structures/projects/part-01/verified-zkevm--clean.md)
+- [Development](../../data-structures/projects/part-01/verified-zkevm--clean.md)
 
 ## Proof depends on
 
-- [Lagrange interpolation](../../../../undergraduate/numerical-analysis/approximation-of-numerical-functions/lagrange-interpolation.md)
-- [Discrete law](../../../probability-theory/random-variables-and-their-laws/discrete-law.md)
-- [Module](../../fundamentals/module.md)
-- [Fermat's little theorem](../../../../thousand-plus/number-theory/part-01/fermats-little-theorem.md)
-- [Multiset](../../../data-structures/sets/multiset.md)
-- [List](../../../data-structures/list-like-structures/list.md)
-- [Formula for the Number of Combinations](../../../../hundred-theorems/part-03/formula-for-the-number-of-combinations.md)
-- [Field](../../../general-algebra/field-theory/field.md)
+- [Lagrange interpolation](../../../undergraduate/numerical-analysis/approximation-of-numerical-functions/lagrange-interpolation.md)
+- [Discrete law](../../probability-theory/random-variables-and-their-laws/discrete-law.md)
+- [Module](../fundamentals/module.md)
+- [Fermat's little theorem](../../../thousand-plus/number-theory/part-01/fermats-little-theorem.md)
+- [Multiset](../../data-structures/sets/multiset.md)
+- [List](../../data-structures/list-like-structures/list.md)
+- [Formula for the Number of Combinations](../../../hundred-theorems/part-03/formula-for-the-number-of-combinations.md)
+- [Field](../../general-algebra/field-theory/field.md)
 
 ## Root modules
 
@@ -43,7 +43,7 @@ The project names no main result in a blueprint, its README or a Main module, so
 ## Builds on
 
 - Mathlib, at [c5ea0035](https://github.com/leanprover-community/mathlib4/tree/c5ea00351c28e24afc9f0f84379aa41082b1188f).
-- [Clean](../../../data-structures/projects/part-01/verified-zkevm--clean.md) at `e4f973bf`.
+- [Clean](../../data-structures/projects/part-01/verified-zkevm--clean.md) at `e4f973bf`.
 - `CompElliptic` (https://github.com/daira/CompElliptic) at `2c044403`.
 
 ## Placement

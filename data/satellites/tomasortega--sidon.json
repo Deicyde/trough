@@ -121,7 +121,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Set"
+    "Set",
+    "h"
    ]
   },
   {
@@ -133,7 +134,8 @@
    "sorry": false,
    "names": [
     "Finset",
-    "Set"
+    "Set",
+    "h"
    ]
   },
   {
@@ -156,7 +158,8 @@
    "sorry": false,
    "names": [
     "Finset",
-    "Set"
+    "Set",
+    "α"
    ]
   }
  ],

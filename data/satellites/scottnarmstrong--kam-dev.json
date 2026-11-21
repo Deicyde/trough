@@ -78,7 +78,10 @@
    "line": 62,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h",
+    "α"
+   ]
   },
   {
    "name": "KAM.CertificateSharp.checkTorusCertificateSharp_sound",
@@ -87,7 +90,10 @@
    "line": 38,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h",
+    "α"
+   ]
   },
   {
    "name": "KAM.Certificate.toyCert3_torus",
@@ -119,8 +125,11 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "B",
     "HasDerivAt",
-    "Set"
+    "Set",
+    "h",
+    "η"
    ]
   },
   {
@@ -131,12 +140,15 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "D",
     "DifferentiableOn",
     "EReal",
+    "F",
     "IsCompact",
     "Set",
     "closure",
-    "fderiv"
+    "fderiv",
+    "η"
    ]
   },
   {

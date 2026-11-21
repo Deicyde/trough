@@ -110,7 +110,9 @@
    "line": 1476,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "Vsa.While.bigStep_not_diverges",
@@ -119,7 +121,9 @@
    "line": 1483,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "Vsa.While.err_not_diverges",
@@ -128,7 +132,9 @@
    "line": 1491,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "Vsa.Sim.Boot.proofElf_halts",

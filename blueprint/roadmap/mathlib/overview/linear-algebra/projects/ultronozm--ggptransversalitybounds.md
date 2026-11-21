@@ -18,14 +18,14 @@ Its headline statements name no Mathlib concept or declaration mapped elsewhere 
 
 ## Proof depends on
 
-- [Orthogonality](../../../../undergraduate/linear-algebra/duality/orthogonality.md)
-- [Greatest Common Divisor Algorithm](../../../../hundred-theorems/part-03/greatest-common-divisor-algorithm.md)
-- [Linear map](../../fundamentals/linear-map.md)
-- [Transpose of a linear map](../../../../undergraduate/linear-algebra/duality/transpose-of-a-linear-map.md)
-- [General linear group (Fundamentals)](../../fundamentals/general-linear-group.md)
-- [Characteristic polynomial](../../endomorphism-polynomials/characteristic-polynomial.md)
-- [Isomorphism with bidual](../../finite-dimensional-vector-spaces/isomorphism-with-bidual.md)
-- [Matrix representation of a linear map](../../matrices/matrix-representation-of-a-linear-map.md)
+- [Orthogonality](../../../undergraduate/linear-algebra/duality/orthogonality.md)
+- [Greatest Common Divisor Algorithm](../../../hundred-theorems/part-03/greatest-common-divisor-algorithm.md)
+- [Linear map](../fundamentals/linear-map.md)
+- [Transpose of a linear map](../../../undergraduate/linear-algebra/duality/transpose-of-a-linear-map.md)
+- [General linear group (Fundamentals)](../fundamentals/general-linear-group.md)
+- [Characteristic polynomial](../endomorphism-polynomials/characteristic-polynomial.md)
+- [Isomorphism with bidual](../finite-dimensional-vector-spaces/isomorphism-with-bidual.md)
+- [Matrix representation of a linear map](../matrices/matrix-representation-of-a-linear-map.md)
 
 ## Main results
 

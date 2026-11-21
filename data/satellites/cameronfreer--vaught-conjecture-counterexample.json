@@ -95,8 +95,10 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "G",
     "Ordinal",
-    "Set"
+    "Set",
+    "β"
    ]
   },
   {
@@ -107,7 +109,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Ordinal"
+    "G",
+    "Ordinal",
+    "β"
    ]
   },
   {
@@ -118,7 +122,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Ordinal"
+    "G",
+    "Ordinal",
+    "β"
    ]
   },
   {
@@ -138,7 +144,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Ordinal"
+    "B",
+    "Ordinal",
+    "β"
    ]
   },
   {
@@ -149,7 +157,10 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Ordinal"
+    "B",
+    "G",
+    "Ordinal",
+    "h"
    ]
   }
  ],

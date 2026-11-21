@@ -1,4 +1,4 @@
-# Projects across Mathlib (3)
+# Projects across Mathlib (2)
 
 Lean projects outside the libraries mapped here that build on Mathlib, read at a pinned commit without Lean, one card each.
 
@@ -7,4 +7,3 @@ Lean projects outside the libraries mapped here that build on Mathlib, read at a
 ## Projects without a named main result
 
 - [CBirkbeck/Adic-Spaces](https://github.com/CBirkbeck/Adic-Spaces) at [eaca3802](https://github.com/CBirkbeck/Adic-Spaces/tree/eaca38020241bc2b6b38af2f9eb9e970263949a5): 270 .lean files, 0 declarations.
-- [GTimG/QuasiRiemannTracker](https://github.com/GTimG/QuasiRiemannTracker) at [42cf5415](https://github.com/GTimG/QuasiRiemannTracker/tree/42cf5415cfaa4205caaa25ab11160724606cdc33): 35,376 .lean files, 0 declarations.

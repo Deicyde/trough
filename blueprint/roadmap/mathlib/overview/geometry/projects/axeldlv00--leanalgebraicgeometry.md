@@ -21,7 +21,6 @@ statement: formalized
 - [29.15 Morphisms of finite type](../../../../stacks/schemes/29-morphisms-of-schemes/part-01/29-15-morphisms-of-finite-type.md)
 - [26.18 Base change in algebraic geometry](../../../../stacks/schemes/26-schemes/part-01/26-18-base-change-in-algebraic-geometry.md)
 - [Field](../../general-algebra/field-theory/field.md)
-- [4.2 Definitions](../../../../stacks/preliminaries/part-01/4-categories/part-01/4-2-definitions.md)
 - [29.26 Flat morphisms](../../../../stacks/schemes/29-morphisms-of-schemes/part-02/29-26-flat-morphisms.md)
 - [59.11 Sheaves](../../../../stacks/topics-in-scheme-theory/part-01/59-etale-cohomology/part-01/59-11-sheaves.md)
 - [26.20 Valuative criterion for universal closedness](../../../../stacks/schemes/26-schemes/part-01/26-20-valuative-criterion-for-universal-closedne.md)

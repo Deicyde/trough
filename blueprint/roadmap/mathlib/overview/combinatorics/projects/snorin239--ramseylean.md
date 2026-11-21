@@ -15,7 +15,6 @@ proof: formalized
 ## Depends on
 
 - [Exponential](../../analysis/special-functions/exponential.md)
-- [Riemann Mapping Theorem](../../../../lean-pool/part-01/30-functions-of-a-complex-variable/riemann-mapping-theorem.md)
 
 ## Proof depends on
 

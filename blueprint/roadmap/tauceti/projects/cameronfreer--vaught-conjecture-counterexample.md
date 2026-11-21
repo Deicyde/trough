@@ -18,20 +18,20 @@ proof: formalized
 
 ## Depends on
 
-- [Language](../formal-languages/language.md)
-- [Ordinal](../set-theory/ordinals/ordinal.md)
-- [Set](../../data-structures/sets/set.md)
+- [Language](../../mathlib/overview/logic-and-computation/formal-languages/language.md)
+- [Ordinal](../../mathlib/overview/logic-and-computation/set-theory/ordinals/ordinal.md)
+- [Set](../../mathlib/overview/data-structures/sets/set.md)
 
 ## Proof depends on
 
-- [First-order structure](../model-theory/first-order-structure.md)
-- [Aleph numbers](../set-theory/cardinals/aleph-numbers.md)
-- [Cardinal](../set-theory/cardinals/cardinal.md)
-- [Finite set](../../data-structures/sets/finite-set.md)
-- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Closure](../../topology/general-topology/part-01/closure.md)
-- [Continuous function](../../topology/general-topology/part-01/continuous-function.md)
-- [List](../../data-structures/list-like-structures/list.md)
+- [First-order structure](../../mathlib/overview/logic-and-computation/model-theory/first-order-structure.md)
+- [Aleph numbers](../../mathlib/overview/logic-and-computation/set-theory/cardinals/aleph-numbers.md)
+- [Cardinal](../../mathlib/overview/logic-and-computation/set-theory/cardinals/cardinal.md)
+- [Finite set](../../mathlib/overview/data-structures/sets/finite-set.md)
+- [Permutation group of a type](../../mathlib/overview/general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
+- [Closure](../../mathlib/overview/topology/general-topology/part-01/closure.md)
+- [Continuous function](../../mathlib/overview/topology/general-topology/part-01/continuous-function.md)
+- [List](../../mathlib/overview/data-structures/list-like-structures/list.md)
 
 ## Main results
 
@@ -60,11 +60,11 @@ No file its headlines import, directly or not (418 files), holds `sorry`, `admit
 - Mathlib, at [2e318fae](https://github.com/leanprover-community/mathlib4/tree/2e318faecff7d70d4e0cf8cc875104424a737355).
 - `ComputableModelTheory` (https://github.com/cameronfreer/computable-model-theory) at `5d5f65ce`.
 - `InfinitaryLogic` (https://github.com/cameronfreer/infinitary-logic) at `004f6381`.
-- `TauCeti` (https://github.com/TauCetiProject/TauCeti) at `330da7fe`.
+- [TauCeti](../README.md) at `330da7fe`.
 
 ## Placement
 
-2 of the 3 Mathlib concepts its headline statements name are in Logic and computation.
+Its Lake manifest requires `TauCeti`.
 
 ## Mathlib use
 

@@ -12,7 +12,6 @@ statement: formalized
 ## Depends on
 
 - [Set](../../../data-structures/sets/set.md)
-- [Space](../../../../../physlib/physlib/spaceandtime/space/part-01/basic.md)
 - [Hausdorff dimension](../../measures-and-integral-calculus/part-01/hausdorff-dimension.md)
 
 ## Proof depends on

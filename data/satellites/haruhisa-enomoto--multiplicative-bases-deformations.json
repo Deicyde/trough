@@ -80,7 +80,9 @@
    "line": 86,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "A"
+   ]
   },
   {
    "name": "MultiplicativeBasisDeformations.awayFromTwoBasis",
@@ -90,6 +92,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
+    "F",
     "Module.Basis",
     "ringChar"
    ]
@@ -102,6 +106,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
+    "F",
     "Module.Basis"
    ]
   },
@@ -113,6 +119,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
     "FiniteDimensional",
     "IsAlgClosed"
    ]
@@ -125,6 +132,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
     "FiniteDimensional",
     "IsAlgClosed"
    ]

@@ -5,7 +5,6 @@ navigation: transparent
 # Leanamics to yul-evm-compiler
 
 - [Leanamics](formal-dynamics--leanamics.md)
-- [leanerVM](verified-zkevm--leanervm.md)
 - [LibSignal Documentation](galoisinc--libsignal-docs-and-models.md)
 - [LogNarayana](axiommath--lognarayana.md)
 - [Logos Checker](cvc5--logos.md)

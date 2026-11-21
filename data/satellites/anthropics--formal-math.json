@@ -82,7 +82,10 @@
    "line": 82,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "B",
+    "h"
+   ]
   },
   {
    "name": "Light.Sec4.Answered.all",
@@ -91,7 +94,9 @@
    "line": 66,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h"
+   ]
   },
   {
    "name": "ThreeSumApsp.lemma_6",
@@ -100,7 +105,10 @@
    "line": 188,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "E",
+    "G"
+   ]
   }
  ],
  "mathlib_imports": {

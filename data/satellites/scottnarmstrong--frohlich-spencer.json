@@ -64,7 +64,8 @@
    "sorry": false,
    "names": [
     "Filter.Tendsto",
-    "Finset"
+    "Finset",
+    "β"
    ]
   },
   {
@@ -76,7 +77,8 @@
    "sorry": false,
    "names": [
     "Filter.Tendsto",
-    "Finset"
+    "Finset",
+    "β"
    ]
   },
   {
@@ -87,7 +89,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Filter.Tendsto"
+    "A",
+    "Filter.Tendsto",
+    "β"
    ]
   },
   {
@@ -98,7 +102,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Real.exp"
+    "Real.exp",
+    "β"
    ]
   },
   {
@@ -109,7 +114,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Filter.Tendsto"
+    "Filter.Tendsto",
+    "β"
    ]
   },
   {
@@ -120,7 +126,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Filter.Tendsto"
+    "D",
+    "Filter.Tendsto",
+    "β"
    ]
   },
   {
@@ -130,7 +138,11 @@
    "line": 29,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "A",
+    "D",
+    "β"
+   ]
   },
   {
    "name": "FroehlichSpencer.BKT.integerGFF_delocalization",
@@ -140,9 +152,11 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "E",
     "Multigraph",
     "Real.exp",
-    "Real.log"
+    "Real.log",
+    "β"
    ]
   }
  ],

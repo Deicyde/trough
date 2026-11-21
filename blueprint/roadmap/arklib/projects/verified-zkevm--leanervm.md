@@ -16,18 +16,18 @@ proof: formalized
 
 ## Depends on
 
-- [Development](../part-01/verified-zkevm--clean.md)
+- [Development](../../mathlib/overview/data-structures/projects/part-01/verified-zkevm--clean.md)
 
 ## Proof depends on
 
-- [Lagrange interpolation](../../../../undergraduate/numerical-analysis/approximation-of-numerical-functions/lagrange-interpolation.md)
-- [Roots of a polynomial](../../../general-algebra/polynomials-and-power-series/roots-of-a-polynomial.md)
-- [Characteristic p](../../../general-algebra/field-theory/characteristic-p.md)
-- [Hash map](../../maps/hash-map.md)
-- [Array](../../list-like-structures/array.md)
-- [Tree](../../trees/tree.md)
-- [Rupture field](../../../general-algebra/field-theory/rupture-field.md)
-- [List](../../list-like-structures/list.md)
+- [Lagrange interpolation](../../mathlib/undergraduate/numerical-analysis/approximation-of-numerical-functions/lagrange-interpolation.md)
+- [Roots of a polynomial](../../mathlib/overview/general-algebra/polynomials-and-power-series/roots-of-a-polynomial.md)
+- [Characteristic p](../../mathlib/overview/general-algebra/field-theory/characteristic-p.md)
+- [Hash map](../../mathlib/overview/data-structures/maps/hash-map.md)
+- [Array](../../mathlib/overview/data-structures/list-like-structures/array.md)
+- [Tree](../../mathlib/overview/data-structures/trees/tree.md)
+- [Rupture field](../../mathlib/overview/general-algebra/field-theory/rupture-field.md)
+- [List](../../mathlib/overview/data-structures/list-like-structures/list.md)
 
 ## Main results
 
@@ -50,15 +50,15 @@ No file its headlines import, directly or not (49 files), holds `sorry`, `admit`
 ## Builds on
 
 - Mathlib, at [56a00585](https://github.com/leanprover-community/mathlib4/tree/56a005855ea17e0b0958f73ec801ae140b0a1679).
-- `Arklib` (https://github.com/Verified-zkEVM/ArkLib) at `011391e5`.
-- [Clean](../part-01/verified-zkevm--clean.md) at `6a2e7bb9`.
+- [Arklib](../README.md) at `011391e5`.
+- [Clean](../../mathlib/overview/data-structures/projects/part-01/verified-zkevm--clean.md) at `6a2e7bb9`.
 - `CompPoly` (https://github.com/Verified-zkEVM/CompPoly) at `e28da348`.
 - `PolyFun` (https://github.com/Verified-zkEVM/PolyFun) at `d3ec3a41`.
 - `VCVio` (https://github.com/Verified-zkEVM/VCVio) at `fc54dd3d`.
 
 ## Placement
 
-Of its imports of Mathlib modules in an overview area, 22 of 78 are in Data structures, 2.0 times the average project's share, the most of the areas holding a tenth of its imports.
+Its Lake manifest requires `Arklib`.
 
 ## Mathlib use
 

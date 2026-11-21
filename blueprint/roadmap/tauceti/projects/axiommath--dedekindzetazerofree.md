@@ -16,20 +16,20 @@ proof: formalized
 
 ## Depends on
 
-- [Holomorphic functions](../../../../undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
-- [Field](../../../general-algebra/field-theory/field.md)
-- [Set](../../../data-structures/sets/set.md)
+- [Holomorphic functions](../../mathlib/undergraduate/single-variable-complex-analysis/functions-on-one-complex-variable/holomorphic-functions.md)
+- [Field](../../mathlib/overview/general-algebra/field-theory/field.md)
+- [Set](../../mathlib/overview/data-structures/sets/set.md)
 
 ## Proof depends on
 
-- [Category of finite-dimensional representations](../../../general-algebra/representation-theory/category-of-finite-dimensional-representations.md)
-- [Character](../../../general-algebra/representation-theory/character.md)
-- [Monotone convergence theorem (1000+ theorems)](../../../../thousand-plus/analysis/26-real-functions/part-01/monotone-convergence-theorem.md)
-- [Finiteness of the class number](../../../general-algebra/algebraic-number-theory/finiteness-of-the-class-number.md)
-- [Jacobson density theorem](../../../../thousand-plus/algebra/13-commutative-algebra/jacobson-density-theorem.md)
-- [Special unitary group](../../../../undergraduate/group-theory/classical-automorphism-groups/special-unitary-group.md)
-- [Rational functions](../../../../undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/rational-functions.md)
-- [Minkowski’s Fundamental Theorem](../../../../hundred-theorems/part-02/minkowskis-fundamental-theorem.md)
+- [Category of finite-dimensional representations](../../mathlib/overview/general-algebra/representation-theory/category-of-finite-dimensional-representations.md)
+- [Character](../../mathlib/overview/general-algebra/representation-theory/character.md)
+- [Monotone convergence theorem (1000+ theorems)](../../mathlib/thousand-plus/analysis/26-real-functions/part-01/monotone-convergence-theorem.md)
+- [Finiteness of the class number](../../mathlib/overview/general-algebra/algebraic-number-theory/finiteness-of-the-class-number.md)
+- [Jacobson density theorem](../../mathlib/thousand-plus/algebra/13-commutative-algebra/jacobson-density-theorem.md)
+- [Special unitary group](../../mathlib/undergraduate/group-theory/classical-automorphism-groups/special-unitary-group.md)
+- [Rational functions](../../mathlib/undergraduate/single-variable-real-analysis/elementary-functions-trigonometric-rational-exp/rational-functions.md)
+- [Minkowski’s Fundamental Theorem](../../mathlib/hundred-theorems/part-02/minkowskis-fundamental-theorem.md)
 
 ## Main results
 
@@ -50,11 +50,11 @@ No file its headlines import, directly or not (3842 files), holds `sorry`, `admi
 
 - Mathlib, at [0493595e](https://github.com/leanprover-community/mathlib4/tree/0493595ecd5da8ef14742febab99728f98e948e8).
 - `FiniteAbelianGlobalReciprocityv2`.
-- `TauCeti` (https://github.com/TauCetiProject/TauCeti.git) at `c197d7bd`.
+- [TauCeti](../README.md) at `c197d7bd`.
 
 ## Placement
 
-Of its imports of Mathlib modules in an overview area, 78 of 610 are in Linear algebra, 2.2 times the average project's share, the most of the areas holding a tenth of its imports.
+Its Lake manifest requires `TauCeti`.
 
 ## Mathlib use
 

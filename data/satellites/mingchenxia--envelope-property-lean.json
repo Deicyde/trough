@@ -70,9 +70,11 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "B",
     "EReal",
     "Field",
-    "IsAlgClosed"
+    "IsAlgClosed",
+    "h"
    ]
   },
   {
@@ -83,9 +85,11 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "B",
     "EReal",
     "Field",
-    "IsAlgClosed"
+    "IsAlgClosed",
+    "h"
    ]
   },
   {
@@ -96,7 +100,10 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Set"
+    "A",
+    "B",
+    "Set",
+    "g"
    ]
   },
   {
@@ -107,7 +114,10 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Set"
+    "A",
+    "B",
+    "Set",
+    "g"
    ]
   },
   {
@@ -117,7 +127,10 @@
    "line": 209,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "B",
+    "g"
+   ]
   },
   {
    "name": "EnvelopeProperty.Berkovich.RelativeSpectrum.centeredGaussAway_support_eq_bot",
@@ -126,7 +139,10 @@
    "line": 221,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "B",
+    "g"
+   ]
   },
   {
    "name": "EnvelopeProperty.Berkovich.RelativeSpectrum.centeredGaussAway_zero_mem_closure_generic",
@@ -136,7 +152,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "closure"
+    "B",
+    "closure",
+    "g"
    ]
   },
   {
@@ -147,6 +165,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
+    "B",
     "IsCompact",
     "Set"
    ]

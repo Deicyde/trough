@@ -66,6 +66,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "B",
     "List",
     "Nat"
    ]

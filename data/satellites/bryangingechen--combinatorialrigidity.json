@@ -65,7 +65,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "SimpleGraph"
+    "G",
+    "SimpleGraph",
+    "h"
    ]
   },
   {
@@ -76,7 +78,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "SimpleGraph"
+    "G",
+    "SimpleGraph",
+    "h"
    ]
   },
   {
@@ -87,7 +91,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "SimpleGraph"
+    "G",
+    "SimpleGraph",
+    "h"
    ]
   },
   {
@@ -109,7 +115,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "SimpleGraph"
+    "G",
+    "SimpleGraph",
+    "h"
    ]
   },
   {
@@ -120,7 +128,10 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "SimpleGraph"
+    "G",
+    "SimpleGraph",
+    "g",
+    "h"
    ]
   },
   {
@@ -142,6 +153,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "G",
     "SimpleGraph"
    ]
   }

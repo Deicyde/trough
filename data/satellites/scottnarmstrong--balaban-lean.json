@@ -62,8 +62,12 @@
    "kind": "theorem",
    "sorry": true,
    "names": [
+    "A",
     "Finset",
-    "Real.exp"
+    "Real.exp",
+    "g",
+    "h",
+    "β"
    ]
   },
   {
@@ -75,7 +79,10 @@
    "sorry": true,
    "names": [
     "Filter.Tendsto",
-    "Real.exp"
+    "G",
+    "Real.exp",
+    "h",
+    "β"
    ]
   }
  ],

@@ -16,18 +16,18 @@ proof: formalized
 
 ## Depends on
 
-- [Simple graph](../../../combinatorics/graph-theory/simple-graph.md)
+- [Simple graph](../../combinatorics/graph-theory/simple-graph.md)
 
 ## Proof depends on
 
-- [Vector subspace](../../../../undergraduate/linear-algebra/fundamentals/vector-subspace.md)
-- [Triple product](../../../../undergraduate/bilinear-and-quadratic-forms-over-a-vector-space/low-dimensions/triple-product.md)
-- [Cross product](../../../../undergraduate/bilinear-and-quadratic-forms-over-a-vector-space/low-dimensions/cross-product.md)
-- [Affine span](../../../geometry/affine-and-euclidean-geometry/affine-span.md)
-- [Linear independence](../../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
-- [Rank of a set of vectors](../../../../undergraduate/linear-algebra/finite-dimensional-vector-spaces/rank-of-a-set-of-vectors.md)
-- [Dual vector space](../../duality/dual-vector-space.md)
-- [Generating sets](../../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
+- [Vector subspace](../../../undergraduate/linear-algebra/fundamentals/vector-subspace.md)
+- [Triple product](../../../undergraduate/bilinear-and-quadratic-forms-over-a-vector-space/low-dimensions/triple-product.md)
+- [Cross product](../../../undergraduate/bilinear-and-quadratic-forms-over-a-vector-space/low-dimensions/cross-product.md)
+- [Affine span](../../geometry/affine-and-euclidean-geometry/affine-span.md)
+- [Linear independence](../../../undergraduate/linear-algebra/fundamentals/linear-independence.md)
+- [Rank of a set of vectors](../../../undergraduate/linear-algebra/finite-dimensional-vector-spaces/rank-of-a-set-of-vectors.md)
+- [Dual vector space](../duality/dual-vector-space.md)
+- [Generating sets](../../../undergraduate/linear-algebra/fundamentals/generating-sets.md)
 
 ## Main results
 

@@ -1,4 +1,4 @@
-# Projects building on Data structures (36)
+# Projects building on Data structures (35)
 
 Lean projects outside the libraries mapped here that build on Mathlib, placed by their use of its data structures, read at a pinned commit without Lean, one card each.
 
@@ -28,7 +28,6 @@ Lean projects outside the libraries mapped here that build on Mathlib, placed by
 ## [Leanamics to yul-evm-compiler](part-02/README.md)
 
 - [Leanamics](part-02/formal-dynamics--leanamics.md)
-- [leanerVM](part-02/verified-zkevm--leanervm.md)
 - [LibSignal Documentation](part-02/galoisinc--libsignal-docs-and-models.md)
 - [LogNarayana](part-02/axiommath--lognarayana.md)
 - [Logos Checker](part-02/cvc5--logos.md)

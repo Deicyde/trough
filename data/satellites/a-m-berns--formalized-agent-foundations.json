@@ -162,7 +162,10 @@
    "line": 19,
    "kind": "lemma",
    "sorry": false,
-   "names": []
+   "names": [
+    "α",
+    "β"
+   ]
   },
   {
    "name": "FactoredSpaces.structIndepGiven_iff_forall_condIndepVar",
@@ -171,7 +174,10 @@
    "line": 63,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "α",
+    "β"
+   ]
   },
   {
    "name": "FactoredSpaces.condIndepVar_of_structIndepGiven",
@@ -180,7 +186,11 @@
    "line": 82,
    "kind": "lemma",
    "sorry": false,
-   "names": []
+   "names": [
+    "h",
+    "α",
+    "β"
+   ]
   },
   {
    "name": "FactoredSpaces.structIndepGiven_of_forall_condIndepVar",
@@ -189,7 +199,11 @@
    "line": 91,
    "kind": "lemma",
    "sorry": false,
-   "names": []
+   "names": [
+    "h",
+    "α",
+    "β"
+   ]
   },
   {
    "name": "FactoredSpaces.structIndepGiven_of_open",
@@ -199,7 +213,10 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Set"
+    "Set",
+    "h",
+    "α",
+    "β"
    ]
   }
  ],

@@ -65,6 +65,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
+    "E",
     "Metric.ball"
    ]
   },
@@ -76,6 +78,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
+    "E",
     "Metric.ball"
    ]
   },
@@ -87,6 +91,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
+    "E",
     "Metric.ball",
     "Module.finrank"
    ]
@@ -99,6 +105,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
+    "E",
     "Metric.ball",
     "Real.exp"
    ]
@@ -111,6 +119,8 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
+    "E",
     "Metric.ball",
     "Real.exp"
    ]
@@ -123,8 +133,11 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
+    "E",
     "Metric.ball",
-    "Real.exp"
+    "Real.exp",
+    "α"
    ]
   },
   {
@@ -135,8 +148,11 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
+    "E",
     "Metric.ball",
-    "Real.exp"
+    "Real.exp",
+    "α"
    ]
   }
  ],

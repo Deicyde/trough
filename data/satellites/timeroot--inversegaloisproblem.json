@@ -175,7 +175,9 @@
    "line": 73,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "A"
+   ]
   },
   {
    "name": "isRegularInverseGalois_of_isSemiabelian",
@@ -185,6 +187,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "G",
     "Group"
    ]
   },
@@ -196,6 +199,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "G",
     "Group"
    ]
   },
@@ -207,8 +211,10 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "G",
     "Group",
-    "Group.IsNilpotent"
+    "Group.IsNilpotent",
+    "h"
    ]
   },
   {
@@ -219,8 +225,10 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "G",
     "Group",
-    "Subgroup"
+    "Subgroup",
+    "h"
    ]
   },
   {
@@ -231,7 +239,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Group"
+    "G",
+    "Group",
+    "h"
    ]
   },
   {
@@ -243,7 +253,8 @@
    "sorry": false,
    "names": [
     "Equiv.Perm",
-    "Subgroup"
+    "Subgroup",
+    "α"
    ]
   }
  ],

@@ -12,18 +12,18 @@ proof: formalized
 
 ## Depends on
 
-- [Orthogonal group](../../../../undergraduate/group-theory/classical-automorphism-groups/orthogonal-group.md)
+- [Orthogonal group](../../../undergraduate/group-theory/classical-automorphism-groups/orthogonal-group.md)
 
 ## Proof depends on
 
-- [Radon's theorem](../../../../thousand-plus/geometry-and-topology/52-convex-and-discrete-geometry/radons-theorem.md)
-- [Krein–Milman theorem](../../../../thousand-plus/geometry-and-topology/52-convex-and-discrete-geometry/krein-milman-theorem.md)
-- [Special orthogonal group](../../../../undergraduate/group-theory/classical-automorphism-groups/special-orthogonal-group.md)
-- [Taylor's theorem with Lagrange form for remainder](../../../../undergraduate/single-variable-real-analysis/taylor-like-theorems/taylors-theorem-with-lagrange-form-for-remainder.md)
-- [Triple product](../../../../undergraduate/bilinear-and-quadratic-forms-over-a-vector-space/low-dimensions/triple-product.md)
-- [Convex hull of a subset of an affine real space](../../../../undergraduate/affine-and-euclidean-geometry/convexity/convex-hull-of-a-subset-of-an-affine-real-space.md)
-- [Vector subspace](../../../../undergraduate/linear-algebra/fundamentals/vector-subspace.md)
-- [Hilbert projection theorem](../../../../undergraduate/topology/hilbert-spaces/hilbert-projection-theorem.md)
+- [Radon's theorem](../../../thousand-plus/geometry-and-topology/52-convex-and-discrete-geometry/radons-theorem.md)
+- [Krein–Milman theorem](../../../thousand-plus/geometry-and-topology/52-convex-and-discrete-geometry/krein-milman-theorem.md)
+- [Special orthogonal group](../../../undergraduate/group-theory/classical-automorphism-groups/special-orthogonal-group.md)
+- [Taylor's theorem with Lagrange form for remainder](../../../undergraduate/single-variable-real-analysis/taylor-like-theorems/taylors-theorem-with-lagrange-form-for-remainder.md)
+- [Triple product](../../../undergraduate/bilinear-and-quadratic-forms-over-a-vector-space/low-dimensions/triple-product.md)
+- [Convex hull of a subset of an affine real space](../../../undergraduate/affine-and-euclidean-geometry/convexity/convex-hull-of-a-subset-of-an-affine-real-space.md)
+- [Vector subspace](../../../undergraduate/linear-algebra/fundamentals/vector-subspace.md)
+- [Hilbert projection theorem](../../../undergraduate/topology/hilbert-spaces/hilbert-projection-theorem.md)
 
 ## Main results
 

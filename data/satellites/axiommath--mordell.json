@@ -65,6 +65,7 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
+    "A",
     "AlgebraicGeometry.GeometricallyIntegral",
     "AlgebraicGeometry.IsProper",
     "Field"
@@ -78,7 +79,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "IsLocalRing.ResidueField"
+    "F",
+    "IsLocalRing.ResidueField",
+    "h"
    ]
   },
   {
@@ -88,7 +91,9 @@
    "line": 124,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F"
+   ]
   },
   {
    "name": "Faltings.LeanEval.genus_eq",
@@ -97,7 +102,9 @@
    "line": 273,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F"
+   ]
   }
  ],
  "mathlib_imports": {

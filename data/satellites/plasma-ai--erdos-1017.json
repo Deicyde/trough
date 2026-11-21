@@ -85,7 +85,10 @@
    "line": 1402,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "A",
+    "α"
+   ]
   }
  ],
  "mathlib_imports": {

@@ -73,7 +73,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Filter.Tendsto"
+    "Filter.Tendsto",
+    "h",
+    "β"
    ]
   },
   {
@@ -108,7 +110,11 @@
    "line": 608,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "h",
+    "α",
+    "β"
+   ]
   },
   {
    "name": "SpinGlass.exists_beta_abs_skGhirlandaGuerra_error_le",
@@ -117,7 +123,11 @@
    "line": 78,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "B",
+    "α",
+    "β"
+   ]
   },
   {
    "name": "SpinGlass.FiniteGibbs.gibbs_average_n_det_mul_sum_gibbs_pmf",
@@ -126,7 +136,10 @@
    "line": 150,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "F",
+    "α"
+   ]
   },
   {
    "name": "SpinGlass.integral_overlapArrayLaw_comp_take",
@@ -136,7 +149,9 @@
    "kind": "theorem",
    "sorry": false,
    "names": [
-    "Measurable"
+    "Measurable",
+    "g",
+    "α"
    ]
   },
   {
@@ -148,7 +163,9 @@
    "sorry": false,
    "names": [
     "MeasureTheory.IsProbabilityMeasure",
-    "MeasureTheory.Measure"
+    "MeasureTheory.Measure",
+    "g",
+    "α"
    ]
   }
  ],

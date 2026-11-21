@@ -84,7 +84,9 @@
    "line": 198,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "A"
+   ]
   },
   {
    "name": "PalomarBridge.isSheafy_iff",
@@ -93,7 +95,9 @@
    "line": 346,
    "kind": "theorem",
    "sorry": false,
-   "names": []
+   "names": [
+    "A"
+   ]
   }
  ],
  "mathlib_imports": {
