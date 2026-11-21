@@ -1,0 +1,144 @@
+{
+ "repo": "leanprover-community/riemann-hypothesis",
+ "rev": "8ec38f92ac54b5c91bc07f4f6f88ea61691b7975",
+ "date": "2026-11-22T03:32:35+11:00",
+ "toolchain": "leanprover/lean4:v4.33.1",
+ "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+ "libraries": [
+  {
+   "name": "BuildAid",
+   "comparator": false,
+   "globs": [
+    "BuildAid.+"
+   ]
+  },
+  {
+   "name": "CompanionTheory",
+   "comparator": false,
+   "globs": [
+    "CompanionTheory.+"
+   ]
+  },
+  {
+   "name": "Development",
+   "comparator": false,
+   "globs": [
+    "Development.+"
+   ]
+  },
+  {
+   "name": "Formalism",
+   "comparator": false,
+   "globs": [
+    "Formalism.+"
+   ]
+  },
+  {
+   "name": "GroundTheory",
+   "comparator": false,
+   "globs": [
+    "GroundTheory.ArithmeticGeometry.+",
+    "GroundTheory.AutomorphicForms.+",
+    "GroundTheory.Brauer.+",
+    "GroundTheory.FunctionField.+",
+    "GroundTheory.HeightsAndTheta.+",
+    "GroundTheory.IdeleRoots.+",
+    "GroundTheory.PAdicHodge.+",
+    "GroundTheory.PowerSubgroups.+",
+    "GroundTheory.ProfiniteCohomology.+",
+    "GroundTheory.TateCohomology.+"
+   ]
+  },
+  {
+   "name": "GroundTheoryFields",
+   "comparator": false,
+   "globs": [
+    "GroundTheory.LocalFields.+",
+    "GroundTheory.GlobalFields.+"
+   ]
+  },
+  {
+   "name": "Lemmata",
+   "comparator": false,
+   "globs": [
+    "Lemmata.+"
+   ]
+  },
+  {
+   "name": "PositivityTheory",
+   "comparator": false,
+   "globs": [
+    "PositivityTheory.+"
+   ]
+  },
+  {
+   "name": "ReciprocityTheory",
+   "comparator": false,
+   "globs": [
+    "ReciprocityTheory.+"
+   ]
+  },
+  {
+   "name": "Supplements",
+   "comparator": false,
+   "globs": [
+    "Supplements.+"
+   ]
+  },
+  {
+   "name": "Main",
+   "comparator": false,
+   "roots": [
+    "Statements",
+    "Main"
+   ]
+  },
+  {
+   "name": "Challenge",
+   "comparator": true,
+   "roots": [
+    "Challenge"
+   ]
+  }
+ ],
+ "theorems": [
+  {
+   "name": "riemannHypothesis",
+   "main_line": 4,
+   "challenge_line": 19
+  },
+  {
+   "name": "riemannZeta_eq_zero_re",
+   "main_line": 6,
+   "challenge_line": 21
+  },
+  {
+   "name": "LFunction_ne_zero_of_half_lt_re",
+   "main_line": 8,
+   "challenge_line": 23
+  },
+  {
+   "name": "LFunction_eq_zero_re",
+   "main_line": 10,
+   "challenge_line": 25
+  },
+  {
+   "name": "LFunction_eq_zero_re_of_isPrimitive",
+   "main_line": 12,
+   "challenge_line": 27
+  }
+ ],
+ "permitted_axioms": [
+  "propext",
+  "Quot.sound",
+  "Classical.choice"
+ ],
+ "totals": {
+  "bytes": 1030531854,
+  "definitions": 242670,
+  "files": 175187,
+  "lines": 17374215,
+  "nonblank": 15531759,
+  "theorems": 818755
+ }
+}
