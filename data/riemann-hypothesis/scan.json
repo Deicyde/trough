@@ -22,12 +22,7 @@
    "files": 0
   },
   {
-   "key": "implemented_by",
-   "lines": 0,
-   "files": 0
-  },
-  {
-   "key": "extern",
+   "key": "skipKernelTC",
    "lines": 0,
    "files": 0
   },
@@ -42,12 +37,17 @@
    "files": 0
   },
   {
-   "key": "debug",
+   "key": "implemented_by",
    "lines": 0,
    "files": 0
   },
   {
-   "key": "skipKernelTC",
+   "key": "extern",
+   "lines": 0,
+   "files": 0
+  },
+  {
+   "key": "debug",
    "lines": 0,
    "files": 0
   },
