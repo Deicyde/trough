@@ -758,8 +758,9 @@ passed, and its build fetches Mathlib's cache, then runs `lake build CompPoly`.
 ## The Riemann Hypothesis chapter
 
 [leanprover-community/riemann-hypothesis](https://github.com/leanprover-community/riemann-hypothesis)
-mirrors the Lean source, announced by Alpöge on 2026-11-20, that claims proofs
-of the Riemann Hypothesis and of GRH for Dirichlet L-functions, with the files
+mirrors the Lean source, announced by Alpöge on 2026-11-20, that claims to
+prove the Riemann Hypothesis and the generalized Riemann Hypothesis for Dirichlet
+L-functions, with the files
 a Comparator check needs. The source has no license, so its chapter, under
 `blueprint/roadmap/riemann-hypothesis/`, gives facts only: names, counts and
 links into the repository at the pinned commit, and none of its text.
