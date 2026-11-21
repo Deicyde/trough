@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 import subprocess
 import tomllib
@@ -99,7 +100,9 @@ UNCHECKED = ("kexactB", "kcopy")
 # Reading the checkout.
 
 def git(checkout: Path, *args: str) -> str:
-    return subprocess.run(["git", "-C", str(checkout), *args], check=True, capture_output=True, text=True).stdout.strip()
+    # Dates in UTC, whatever the committer's zone.
+    return subprocess.run(["git", "-C", str(checkout), *args], check=True, capture_output=True, text=True,
+                          env={**os.environ, "TZ": "UTC"}).stdout.strip()
 
 
 def blob_hash(data: bytes) -> str:
@@ -241,7 +244,8 @@ def refresh(checkout: Path, out: Path, evidence: Path | None = None) -> tuple[li
     out.mkdir(parents=True, exist_ok=True)
     rev = git(checkout, "rev-parse", "HEAD")
     source = {
-        "repo": REPO, "rev": rev, "date": git(checkout, "show", "-s", "--format=%cI", "HEAD"),
+        "repo": REPO, "rev": rev,
+        "date": git(checkout, "show", "-s", "--date=format-local:%Y-%m-%dT%H:%M:%SZ", "--format=%cd", "HEAD"),
         "toolchain": (checkout / "lean-toolchain").read_text(encoding="utf-8").strip(), "mathlib": mathlib,
         "libraries": libraries,
         "theorems": [{"name": name, "main_line": main_lines[name], "challenge_line": challenge_lines[name]}
@@ -278,10 +282,10 @@ def plural(count: int, word: str, many: str | None = None) -> str:
     return f"{count:,} {word if count == 1 else many or word + 's'}"
 
 
-def listing(items: list[str]) -> str:
+def listing(items: list[str], conjunction: str = "and") -> str:
     if len(items) <= 2:
-        return " and ".join(items)
-    return ", ".join(items[:-1]) + " and " + items[-1]
+        return f" {conjunction} ".join(items)
+    return ", ".join(items[:-1]) + f" {conjunction} " + items[-1]
 
 
 def verified(record: dict, names: list[str]) -> bool:
@@ -411,7 +415,7 @@ def chapter(data: dict, fc_root: Container | None = None) -> tuple[Built, dict[s
     def external(name: str) -> str:
         return name.removeprefix("@")
 
-    def imports_lines(members: set[str], group) -> str:
+    def imports_lines(members: set[str], group, note: str = "") -> str:
         """The pages the members' files import and the pages whose files import them, by import lines; *group* maps
         a unit to the page it counts under, or None to leave it out."""
         out: Counter = Counter()
@@ -439,7 +443,7 @@ def chapter(data: dict, fc_root: Container | None = None) -> tuple[Built, dict[s
                      "Its files import no module outside it.")
         lines.append(f"Files of {listing(ordered(into))} import its modules." if into else
                      "No file outside it imports its modules.")
-        return "## Imports\n\nCounted in import lines.\n\n" + "\n\n".join(lines)
+        return f"## Imports\n\nCounted in import lines.{note}\n\n" + "\n\n".join(lines)
 
     pages_known = set(tops) | parts_of
 
@@ -451,7 +455,8 @@ def chapter(data: dict, fc_root: Container | None = None) -> tuple[Built, dict[s
         prose = [count_line(counts, unit)]
         if rows:
             prose.append(table(rows))
-        prose.append(imports_lines({unit}, page_of))
+        prose.append(imports_lines({unit}, page_of, " A top-level folder stands for those of its files that have no "
+                                                     "page of their own."))
         container.prose = "\n\n".join(prose)
         targets[key(unit)] = container
         stats["parts"] += 1
@@ -472,7 +477,7 @@ def chapter(data: dict, fc_root: Container | None = None) -> tuple[Built, dict[s
             label = unit.split("/", 1)[1]
             if unit in parts_of:
                 part = part_page(unit)
-                part_entries.append(Entry(part))
+                part_entries.append(Entry(part, before="" if part_entries else "## Parts"))
                 rows.append((row_link(unit, label), units[unit]))
             else:
                 rows.append((f"[{label}]({tree('src/' + unit)})", units[unit]))
@@ -498,7 +503,7 @@ def chapter(data: dict, fc_root: Container | None = None) -> tuple[Built, dict[s
     present = [f"{label} on {plural(hits[key_]['lines'], 'line')} in {plural(hits[key_]['files'], 'file')}"
                for key_, label, _ in SCAN if hits.get(key_, {}).get("lines")]
     unchecked = [f"`{name}`" for name in UNCHECKED if hits.get(name, {}).get("lines")]
-    scan_text = f"A line scan of every file finds no {listing(absent)}." if absent else ""
+    scan_text = f"A line scan of every file finds no {listing(absent, 'or')}." if absent else ""
     if present:
         scan_text += f" It finds {listing(present)}."
     if unchecked:
