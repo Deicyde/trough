@@ -49,6 +49,11 @@ PART_FILES = 300
 SUCCESS = "Your solution is okay!"
 # The source files the repository added for Comparator, which are not the submission's.
 ADDED = ("Challenge.lean",)
+# The repository's first commit, the source as published. source.json records how src/ at the pin differs from it;
+# the workflow fetches it beside the pin, as trees only.
+PUBLISHED = "40e56bab026552e089d7afcfeff08d2defb9c005"
+# The files under src/ that state the claimed theorems.
+STATEMENT_FILES = ("src/Main.lean", "src/Challenge.lean")
 # What each theorem Comparator's configuration names states, in our words.
 CLAIMS = {
     "riemannHypothesis": "Mathlib's [`RiemannHypothesis`]({rh}).",
@@ -239,6 +244,23 @@ def refresh(checkout: Path, out: Path, evidence: Path | None = None) -> tuple[li
     elif status["status"] != "pending":
         problems.append(f"verification.json has the unknown status {status['status']}")
 
+    published = {}
+    try:
+        first = git(checkout, "rev-parse", "--verify", "--quiet", f"{PUBLISHED}^{{commit}}")
+    except subprocess.CalledProcessError:
+        problems.append(f"the checkout lacks the first commit {PUBLISHED[:8]}; fetch it beside the pin")
+    else:
+        kinds = {"A": "added", "D": "removed", "M": "changed", "T": "changed"}
+        paths: dict[str, list[str]] = {"added": [], "removed": [], "changed": []}
+        fields = git(checkout, "diff", "--no-renames", "--name-status", "-z", first, "HEAD", "--", "src").split("\0")
+        for letter, path in zip(fields[0::2], fields[1::2]):
+            if letter in kinds:
+                paths[kinds[letter]].append(path)
+            else:
+                problems.append(f"git diff gives the status {letter} for {path}")
+        published = {"rev": first, "counts": {kind: len(found) for kind, found in paths.items()}}
+        published |= {kind: sorted(found) for kind, found in paths.items()}
+
     if problems:
         return problems, changes
     out.mkdir(parents=True, exist_ok=True)
@@ -252,6 +274,7 @@ def refresh(checkout: Path, out: Path, evidence: Path | None = None) -> tuple[li
                      for name in names],
         "permitted_axioms": comparator.get("permitted_axioms", []),
         "totals": dict(sorted(totals.items())),
+        "published": published,
     }
     folders = {
         "units": {unit: dict(sorted(units[unit].items()))
@@ -518,12 +541,30 @@ def chapter(data: dict, fc_root: Container | None = None) -> tuple[Built, dict[s
         "The theorem pages show each statement as formalized and no proof, because no passing Comparator run on this "
         f"source has been recorded; the people checking it keep [notes]({blob('verification/NOTES.md')}) in the "
         "repository.")
+    published = source["published"]
+    archive = f"[the source as published]({URL}/tree/{published['rev']}), the repository's first commit"
+    differ = sum(published["counts"].values())
+    if differ:
+        kinds = [f"{count:,} {kind}" for kind, count in published["counts"].items() if count]
+        statement_files = [f"`{path}` was {kind}" if kind != "changed" else f"`{path}` changed"
+                           for path in STATEMENT_FILES for kind in ("added", "removed", "changed")
+                           if path in published[kind]]
+        published_text = (f"`src/` at this commit differs from {archive}, in {plural(differ, 'file')} "
+                          f"({listing(kinds)}; [compare]({URL}/compare/{published['rev'][:12]}...{rev[:12]})).")
+        if statement_files:
+            published_text += (f" Of the two files that state the claimed theorems, "
+                               f"{listing(statement_files)} since then.")
+        else:
+            published_text += (f" Neither `{STATEMENT_FILES[0]}` nor `{STATEMENT_FILES[1]}`, the files that state the "
+                               "claimed theorems, differs.")
+    else:
+        published_text = f"`src/` at this commit is {archive}, unchanged."
     front = [
         "Lean source that claims proofs of the Riemann Hypothesis and of the Generalized Riemann Hypothesis for "
         f"Dirichlet L-functions, announced by Alpöge on 2026-11-20 in [a note]({ANNOUNCEMENT}). "
-        f"[{REPO}]({URL}) holds the published source under `src/`, unchanged, with the files a "
-        f"[Comparator]({COMPARATOR}) check needs. This chapter reads it at commit [{short}]({URL}/tree/{rev}), "
-        f"of {source['date'][:10]}.",
+        f"[{REPO}]({URL}) keeps the source under `src/`, with the files a [Comparator]({COMPARATOR}) check "
+        f"needs. This chapter reads it at commit [{short}]({URL}/tree/{rev}), of {source['date'][:10]}. "
+        + published_text,
         status_sentence,
         "The source has no license, so this chapter gives names, counts and links, and quotes none of its text.",
         f"`src/` holds {plural(totals['files'], '`.lean` file')} of the submission, leaving out Comparator's "
