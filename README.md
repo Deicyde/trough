@@ -6,12 +6,13 @@ vaults, rendered with [AutoformBot](https://github.com/facebookresearch/autoform
 and published at https://trough.jackmccarthy.org/. The book shows no Lean
 progress: the generated `blueprint/roadmap/README.md` sets `tracks_lean: false`.
 
-`catalog/libraries.toml` lists the 81 libraries trough targets: Mathlib, Tau
+`catalog/libraries.toml` lists the 82 libraries trough targets: Mathlib, Tau
 Ceti, ATLAS, the research projects with leanblueprints (among them Imperial's
 FLT, PNT+, PFR, Carleson's theorem, sphere packing and MIP* = RE), Formal
 Conjectures, Physlib, CSLib, Batteries, Aesop, CompPoly, Foundation, the
 Analysis I companion, the large corpora (Anthropic's FLT, Lean
-Pool, OpenAI Math, Axiom's CFSG and Stacks Project) and the 44 Formal Frontier
+Pool, OpenAI Math, Axiom's CFSG, Stacks Project and the Lean source claiming the
+Riemann Hypothesis) and the 44 Formal Frontier
 libraries. Each gets the article unit that suits it, recorded as `map_unit` and
 `map_plan`.
 Mathlib is mapped from its curated lists, Tau Ceti from the declarations its
@@ -23,7 +24,8 @@ its project cards, Anthropic's FLT from the landmark theorems of its proof,
 Axiom's CFSG from its proof's case division and its milestones, Axiom's
 Stacks Project formalization from its Stacks tags, ATLAS from the topics of
 its vault, OpenAI Math from its result families, and CSLib, Batteries, Aesop,
-CompPoly and Physlib from their modules.
+CompPoly and Physlib from their modules, and the Riemann Hypothesis source
+from its claimed theorems and its folders.
 
 ## The Mathlib map
 
@@ -753,6 +755,46 @@ sentence and the opening of its intro. The **CompPoly data** workflow
 workflow; its pin rule takes the newest main commit whose Lean Action CI
 passed, and its build fetches Mathlib's cache, then runs `lake build CompPoly`.
 
+## The Riemann Hypothesis chapter
+
+[leanprover-community/riemann-hypothesis](https://github.com/leanprover-community/riemann-hypothesis)
+mirrors the Lean source, announced by Alpöge on 2026-11-20, that claims to
+prove the Riemann Hypothesis and the generalized Riemann Hypothesis for Dirichlet
+L-functions, with the files
+a Comparator check needs. The source has no license, so its chapter, under
+`blueprint/roadmap/riemann-hypothesis/`, gives facts only: names, counts and
+links into the repository at the pinned commit, and none of its text.
+`tools/trough/riemann_hypothesis.py` reads and builds it.
+
+- An article per theorem `comparator.json` names, with its lines in
+  `src/Main.lean` and `src/Challenge.lean` and a description of our own. Its
+  statement is formalized; its proof is not, until a passing Comparator run is
+  recorded.
+- A page per top-level folder of `src/` and a part per second-level folder of
+  300 files or more, each with file, line and declaration counts from a line
+  scan and the import lines to and from other folders. There is no article per
+  module: the source has 175,187 files.
+- The front page gives the commit, the sizes and the counts of a line scan for
+  constructs that skip checks, such as `sorry`, `axiom` and the source's own
+  `kexactB` and `kcopy` tactics.
+
+The **Riemann Hypothesis data** workflow
+(`.github/workflows/riemann-hypothesis-data.yml`) runs
+`tools/refresh_riemann_hypothesis.py` over a shallow clone, without Lean. It runs
+daily and pins the newest main commit whose `checks` run passed.
+
+`data/riemann-hypothesis/verification.json` records the repository's
+`verification/` folder: its file names and blob hashes, the hash of the Results
+section of its notes, and Comparator's status. The refresh never sets the status.
+When a file is added to or removed from the folder, or the Results section
+changes, the workflow still records the data with the status unchanged, then
+fails with an error naming the changes and the commit, so that a person reads
+them. Only a pull request sets the status to `passed`, naming the file and
+commit that hold Comparator's output. The refresh fetches that file, checks that
+it holds Comparator's passing line and all five theorem names, and records the
+check. `generate.py` shows the proofs as formalized only when that check is
+recorded, and fails on a `passed` status without it.
+
 ## Working on it
 
     uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
@@ -858,3 +900,7 @@ names its module's authors as the file's header does.
 The docstrings, Lean statements and README text in `data/comppoly/` come from
 [CompPoly](https://github.com/Verified-zkEVM/CompPoly), Apache-2.0; each article
 names its module's authors as the file's header does.
+The source mapped in `data/riemann-hypothesis/`,
+[leanprover-community/riemann-hypothesis](https://github.com/leanprover-community/riemann-hypothesis),
+has no license, so trough records only facts about it (names,
+counts, line numbers and hashes) and copies none of its text.

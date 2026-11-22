@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import aesop, anthropic_flt, atlas, batteries, blueprints, catalog, cfsg, comppoly, cslib, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, physlib, stacks, tauceti, wiki
+from trough import aesop, anthropic_flt, atlas, batteries, blueprints, catalog, cfsg, comppoly, cslib, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, physlib, riemann_hypothesis, stacks, tauceti, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -337,6 +337,25 @@ def generate() -> dict[Path, str]:
             f"statement and {ph['proof_edges']} proof edges",
             file=sys.stderr,
         )
+    rh_data = riemann_hypothesis.load(DATA)
+    if rh_data:
+        # After Formal Conjectures, whose Riemann Hypothesis article the claimed theorems' articles link.
+        rh_built, rh_links = riemann_hypothesis.chapter(rh_data, fc_built.root if fc_data else None)
+        assign_paths(rh_built.root, ROADMAP / riemann_hypothesis.ID)
+        blueprints.resolve(rh_built, VAULT)
+        files.update(render_tree(rh_built.root, VAULT))
+        chapters[riemann_hypothesis.ID] = f"{riemann_hypothesis.ID}/README.md"
+        lean_links[riemann_hypothesis.ID] = rh_links
+        rs = Counter(rh_built.stats)
+        blueprint_rows.append((riemann_hypothesis.TITLE, "DECOMPOSED",
+                               f"[{rs['theorems']} claimed theorems](../roadmap/riemann-hypothesis/README.md), one "
+                               f"article each, and {rs['files']:,} source files counted on a page per top-level folder "
+                               "and a part per large second-level folder."))
+        print(
+            f"riemann-hypothesis: {rs['theorems']} theorem articles, {'verified' if rs['verified'] else 'Comparator pending'}; "
+            f"{rs['files']} files on {rs['libraries']} folder pages and {rs['parts']} parts",
+            file=sys.stderr,
+        )
     files[ROOT / "hooks" / "lean-links.json"] = json.dumps(lean_links, indent=1, ensure_ascii=False) + "\n"
     root = ROADMAP / "README.md"
     previous = root.read_text(encoding="utf-8") if root.is_file() else None
@@ -369,6 +388,7 @@ def generate() -> dict[Path, str]:
         cslib=cslib_data["rev"] if cslib_data else None,
         readers=readers,
         physlib=physlib_data["source"]["rev"] if physlib_data else None,
+        riemann_hypothesis=rh_data["source"]["rev"] if rh_data else None,
         blueprint_revs={project.id: project.rev for project in projects},
     )
     print(

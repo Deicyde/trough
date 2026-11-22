@@ -1,0 +1,85 @@
+{
+ "files": 175187,
+ "patterns": [
+  {
+   "key": "sorry",
+   "lines": 0,
+   "files": 0
+  },
+  {
+   "key": "admit",
+   "lines": 0,
+   "files": 0
+  },
+  {
+   "key": "axiom",
+   "lines": 0,
+   "files": 0
+  },
+  {
+   "key": "native_decide",
+   "lines": 0,
+   "files": 0
+  },
+  {
+   "key": "skipKernelTC",
+   "lines": 0,
+   "files": 0
+  },
+  {
+   "key": "unsafe",
+   "lines": 0,
+   "files": 0
+  },
+  {
+   "key": "opaque",
+   "lines": 0,
+   "files": 0
+  },
+  {
+   "key": "implemented_by",
+   "lines": 0,
+   "files": 0
+  },
+  {
+   "key": "extern",
+   "lines": 0,
+   "files": 0
+  },
+  {
+   "key": "debug",
+   "lines": 0,
+   "files": 0
+  },
+  {
+   "key": "addDecl",
+   "lines": 2,
+   "files": 1
+  },
+  {
+   "key": "modifyEnv",
+   "lines": 5,
+   "files": 5
+  },
+  {
+   "key": "run_tac",
+   "lines": 32,
+   "files": 16
+  },
+  {
+   "key": "kexactB",
+   "lines": 278,
+   "files": 50
+  },
+  {
+   "key": "kcopy",
+   "lines": 7,
+   "files": 4
+  },
+  {
+   "key": "allowUnsafeReducibility",
+   "lines": 37,
+   "files": 33
+  }
+ ]
+}
