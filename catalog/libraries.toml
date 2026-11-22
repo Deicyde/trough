@@ -650,6 +650,22 @@ map_unit = "section"
 map_plan = "One article per section of the Stacks Project with a tag that a declaration carries, on a page per chapter in a part per Stacks Project part, with a block per tag listing its declarations' Lean statements, tiers and attribute comments, the declarations registered for it and its EGA and SGA references; an EGA page and an SGA page index the references."
 
 [[library]]
+id = "riemann-hypothesis"
+name = "Riemann Hypothesis (Alpöge)"
+repo = "leanprover-community/riemann-hypothesis"
+group = "corpus"
+what = "Lean source, announced on 2026-11-20, that claims proofs of the Riemann Hypothesis and of the Generalized Riemann Hypothesis for Dirichlet L-functions, mirrored with the files a Comparator check needs; the check is pending. Published without a license."
+informal_layer = "None: the source has no comments or docstrings. The repository's README and verification notes are by the people checking it."
+formalization_yaml = "absent"
+license = "none"
+toolchain = "v4.33.1"
+mathlib = "0df444a360ea"
+lean_files = 175187
+map_status = "live"
+map_unit = "claimed theorem and folder"
+map_plan = "One article per theorem Comparator's configuration names, with its statement formalized and its proof shown only once a passing Comparator run is recorded, and a page per top-level folder of src/ with a part per second-level folder of 300 files or more: file, line and declaration counts and the import lines between folders, read by a line scan without Lean. Facts and links only, since the source has no license."
+
+[[library]]
 id = "ff-adic-modules"
 name = "Adic modules"
 repo = "FormalFrontier/adic-modules"

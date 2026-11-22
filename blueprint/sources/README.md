@@ -95,9 +95,9 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 - `data/physlib/modules/`: each module's title, module docstring and section docstrings, and its declarations with their docstrings and Lean statements, read from the source text without Lean; `data/physlib/api-maps.json`: the content and references of each API map; `data/physlib/source.json`: the commit, the README's words on the project and the significant results scripts/lint/exemptions/Theorems.txt lists. From [leanprover-community/physlib at 8c87bdfb](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4), Apache-2.0.
 - `data/physlib/deps.json`: the modules whose declarations each module's statements and proofs use, and the names read from the source that Lean does not have, written by `lean/physlib/PhyslibDeps.lean` in GitHub Actions.
 
-## Satellite projects
+## Riemann Hypothesis (Alpöge)
 
-- `data/satellites/<slug>.json`: for each of the 255 projects in `data/satellites/projects.toml`, read at the commit the file records without Lean: its Lake requirements, the Mathlib modules it imports, the Mathlib concepts its files name, its headline declarations, and its README's opening where its license file is Apache-2.0, MIT, MIT-0, BSD-2-Clause, BSD-3-Clause, CC0-1.0 or CC-BY-4.0. Placements set by hand are in `data/satellites/overrides.toml`.
+- `data/riemann-hypothesis/`: the commit, Lean toolchain, Mathlib pin and lakefile libraries, the lines of the five theorems Comparator's configuration names, the files, lines and declarations of each folder of `src/` and the import lines between folders, read by a line scan, the counts of a scan for constructs that skip checks, and the verification folder's file names and Comparator's status, from [leanprover-community/riemann-hypothesis at 8ec38f92](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975). The source has no license, so only these facts are recorded; none of its text is copied.
 
 ## Libraries
 
@@ -152,6 +152,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 - [Classification of Finite Simple Groups (Axiom)](https://github.com/AxiomMath/CFSG) at 69cb972f587a: A sorry-free proof of the Classification of Finite Simple Groups, mostly first-generation, using TauCeti's ClassificationStatement; produced by AxiomProver.
 - [Lean Pool](https://github.com/LeanPool/lean-pool) at 307e31252a8b: A pool of permissively licensed Lean projects outside Mathlib's scope, e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa.
 - [The Stacks Project in Lean (Axiom)](https://github.com/AxiomMath/Stacks) at f56a316ddf7a: A formalization of the Stacks Project, indexed by Stacks tag, in two tiers: StacksCore, human-reviewed, and StacksFrontier, drafted with AxiomProver and not yet reviewed. Declarations also carry the EGA and SGA items they prove.
+- [Riemann Hypothesis (Alpöge)](https://github.com/leanprover-community/riemann-hypothesis) at 8ec38f92ac54: Lean source, announced on 2026-11-20, that claims proofs of the Riemann Hypothesis and of the Generalized Riemann Hypothesis for Dirichlet L-functions, mirrored with the files a Comparator check needs; the check is pending. Published without a license.
 
 ### Formal Frontier libraries
 

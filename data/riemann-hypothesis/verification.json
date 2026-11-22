@@ -1,0 +1,12 @@
+{
+ "files": {
+  "CACHE.md": "1d478c319487e0fc9a942fdaad066219a3abadf6",
+  "CI-RUNNERS.md": "cf060675c6e93dae547888df57743126167b66a9",
+  "NOTES.md": "7d0fe0b57fff507d0992cfd2260789edc92283e9",
+  "static-scan.txt": "aaacfa5d30f0251ac1a96b70a8e58415c6c4770d"
+ },
+ "results": "88656dbaf8e288245454c9cbedb4b794f957112a13448b565ec91b0d7f7c1d10",
+ "comparator": {
+  "status": "pending"
+ }
+}
