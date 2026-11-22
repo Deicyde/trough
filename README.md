@@ -776,7 +776,10 @@ links into the repository at the pinned commit, and none of its text.
   module: the source has 175,187 files.
 - The front page gives the commit, the sizes and the counts of a line scan for
   constructs that skip checks, such as `sorry`, `axiom` and the source's own
-  `kexactB` and `kcopy` tactics.
+  `kexactB` and `kcopy` tactics. It also says how many files of `src/` differ
+  from the repository's first commit, the source as published, and whether
+  `src/Main.lean` or `src/Challenge.lean` is among them. `source.json` lists
+  those files.
 
 The **Riemann Hypothesis data** workflow
 (`.github/workflows/riemann-hypothesis-data.yml`) runs

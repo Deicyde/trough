@@ -39,6 +39,12 @@ roots = ["Challenge"]
 """
 
 
+@pytest.fixture(autouse=True)
+def published(monkeypatch):
+    # make_checkout tags its first commit as the source as published.
+    monkeypatch.setattr(rh, "PUBLISHED", "published")
+
+
 def theorems(prefix: str) -> str:
     return "".join(f"{prefix}theorem {name} : True := trivial\n" for name in NAMES)
 
@@ -69,6 +75,7 @@ def make_checkout(path: Path, results: str = "In progress.") -> Path:
         (path / name).write_text(text, encoding="utf-8")
     git(path, "init", "--quiet")
     commit(path)
+    git(path, "tag", "published")
     return path
 
 
@@ -112,6 +119,49 @@ def test_the_refresh_counts_folders_imports_and_the_scan(tmp_path):
     assert scan["kexactB"]["files"] == 1 and scan["axiom"]["lines"] == 0
     record = data["verification"]
     assert set(record["files"]) == {"NOTES.md", "static-scan.txt"} and record["comparator"] == {"status": "pending"}
+    assert source["published"] == {"rev": source["rev"], "counts": {"added": 0, "removed": 0, "changed": 0},
+                                   "added": [], "removed": [], "changed": []}
+
+
+def test_the_refresh_records_how_src_differs_from_the_source_as_published(tmp_path):
+    checkout = make_checkout(tmp_path / "repo")
+    out = tmp_path / "data" / rh.ID
+    first = subprocess.run(["git", "-C", str(checkout), "rev-parse", "HEAD"], check=True, capture_output=True,
+                           text=True).stdout.strip()
+    main = checkout / "src" / "Main.lean"
+    main.write_text(main.read_text(encoding="utf-8").replace("import Alpha.Core.Top\n", ""), encoding="utf-8")
+    (checkout / "src" / "Alpha" / "Loose.lean").unlink()
+    (checkout / "src" / "Alpha" / "Side" / "S.lean").unlink()
+    (checkout / "src" / "Alpha" / "New.lean").write_text("theorem g : True := trivial\n", encoding="utf-8")
+    (checkout / "README.md").write_text("outside src\n", encoding="utf-8")
+    commit(checkout)
+    assert rh.refresh(checkout, out) == ([], [])
+    data = read(out)
+    assert data["source"]["published"] == {
+        "rev": first, "counts": {"added": 1, "removed": 2, "changed": 1}, "added": ["src/Alpha/New.lean"],
+        "removed": ["src/Alpha/Loose.lean", "src/Alpha/Side/S.lean"], "changed": ["src/Main.lean"]}
+    assert data["verification"]["comparator"] == {"status": "pending"}
+    prose = rh.chapter(data)[0].root.prose
+    assert "unchanged" not in prose
+    assert (f"differs from [the source as published]({rh.URL}/tree/{first}), the repository's first commit, in 4 "
+            "files (1 added, 2 removed and 1 changed; [compare]") in prose
+    assert "Of the two files that state the claimed theorems, `src/Main.lean` changed since then." in prose
+    # Only src/ outside the statement files changed.
+    git(checkout, "checkout", "published", "--", "src/Main.lean")
+    commit(checkout)
+    rh.refresh(checkout, out)
+    prose = rh.chapter(read(out))[0].root.prose
+    assert "in 3 files (1 added and 2 removed;" in prose
+    assert "Neither `src/Main.lean` nor `src/Challenge.lean`, the files that state the claimed theorems, differs." in prose
+
+
+def test_the_refresh_needs_the_first_commit(tmp_path, monkeypatch):
+    checkout = make_checkout(tmp_path / "repo")
+    out = tmp_path / "data" / rh.ID
+    monkeypatch.setattr(rh, "PUBLISHED", "0" * 40)
+    problems, _ = rh.refresh(checkout, out)
+    assert problems == [f"the checkout lacks the first commit {'0' * 8}; fetch it beside the pin"]
+    assert not out.exists()
 
 
 def test_a_changed_verification_folder_is_reported_and_the_data_still_written(tmp_path):
@@ -195,6 +245,7 @@ def test_the_chapter_shows_claims_without_proofs_and_folders_with_parts(tmp_path
     containers = [node for node in walk(built.root) if isinstance(node, Container)]
     assert [node.title for node in containers] == [rh.TITLE, "Main and Statements", "Alpha", "Alpha/Core", "Beta"]
     assert "quotes none of its text" in built.root.prose and "no passing Comparator run" in built.root.prose
+    assert "`src/` at this commit is [the source as published]" in built.root.prose and "unchanged." in built.root.prose
     assert "no `sorry`" not in built.root.prose and "`sorry` on 1 line in 1 file" in built.root.prose
     beta = containers[-1]
     assert "2 libraries: `Beta` (One) and `BetaFields` (Two)" in beta.prose
