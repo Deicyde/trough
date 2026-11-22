@@ -3,7 +3,9 @@
 # the lakefile's libraries, the lines of the theorems comparator.json names,
 # each folder's files, lines, declarations and import lines, a scan for
 # constructs that skip checks, and the verification folder. No Lean: a line
-# scan over a shallow clone. The pages are then regenerated from that data.
+# scan over a shallow clone. It also lists how src/ differs from the repository's
+# first commit, the source as published. The pages are then regenerated from
+# that data.
 #
 # A push that changes the reader or the data runs it too, so the committed data
 # always match the pin. The daily run, or a dispatch with "newest", moves the
@@ -105,6 +107,9 @@ jobs:
           git -C "$dir" remote add origin "https://github.com/$REPO.git"
           git -C "$dir" fetch --quiet --depth 1 origin "$REV"
           git -C "$dir" checkout --quiet FETCH_HEAD
+          # The first commit, the source as published, as trees only: the refresh lists how src/ differs from it.
+          published=$(PYTHONPATH=tools uv run --no-dev python -c 'from trough.riemann_hypothesis import PUBLISHED; print(PUBLISHED)')
+          git -C "$dir" fetch --quiet --depth 1 --filter=blob:none origin "$published"
           du -sh "$dir"
 
       - name: Fetch the file a recorded passing run names
