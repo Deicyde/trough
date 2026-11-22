@@ -140,5 +140,18 @@
   "lines": 17374215,
   "nonblank": 15531759,
   "theorems": 818755
+ },
+ "published": {
+  "rev": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "counts": {
+   "added": 1,
+   "removed": 0,
+   "changed": 0
+  },
+  "added": [
+   "src/Challenge.lean"
+  ],
+  "removed": [],
+  "changed": []
  }
 }
