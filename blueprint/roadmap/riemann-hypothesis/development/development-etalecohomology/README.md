@@ -1,24 +1,24 @@
 # Development/EtaleCohomology
 
-[`src/Development/EtaleCohomology/`](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Development/EtaleCohomology) holds 1,398 files: 104,525 lines, 89,965 of them non-blank, with 6,828 `theorem` or `lemma` declarations and 3,474 other declarations.
+[`src/Development/EtaleCohomology/`](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Development/EtaleCohomology) holds 1,307 files: 154,539 lines, 138,364 of them non-blank, with 6,517 `theorem` or `lemma` declarations and 2,919 other declarations.
 
 | Folder | Files | Lines | `theorem` or `lemma` | Other declarations |
 | --- | ---: | ---: | ---: | ---: |
-| [CohomologicalPurity](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Development/EtaleCohomology/CohomologicalPurity) | 202 | 17,247 | 1,253 | 546 |
-| [CyclotomicDiscriminants](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Development/EtaleCohomology/CyclotomicDiscriminants) | 12 | 1,306 | 89 | 8 |
-| [DivisorCycles](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Development/EtaleCohomology/DivisorCycles) | 56 | 4,895 | 344 | 101 |
-| [EtaleDuality](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Development/EtaleCohomology/EtaleDuality) | 4 | 303 | 40 | 33 |
-| [EtaleSheaves](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Development/EtaleCohomology/EtaleSheaves) | 688 | 51,640 | 3,056 | 1,728 |
-| [EtaleTrace](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Development/EtaleCohomology/EtaleTrace) | 70 | 5,035 | 280 | 210 |
-| [KummerExtensions](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Development/EtaleCohomology/KummerExtensions) | 5 | 809 | 75 | 23 |
-| [KummerTheory](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Development/EtaleCohomology/KummerTheory) | 98 | 7,807 | 605 | 208 |
-| [TateTwists](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Development/EtaleCohomology/TateTwists) | 239 | 13,674 | 1,039 | 438 |
-| [WeilConjectures](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Development/EtaleCohomology/WeilConjectures) | 24 | 1,809 | 47 | 179 |
+| [CohomologicalPurity](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Development/EtaleCohomology/CohomologicalPurity) | 202 | 25,677 | 1,245 | 544 |
+| [CyclotomicDiscriminants](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Development/EtaleCohomology/CyclotomicDiscriminants) | 12 | 1,881 | 89 | 8 |
+| [DivisorCycles](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Development/EtaleCohomology/DivisorCycles) | 56 | 7,591 | 343 | 99 |
+| [EtaleDuality](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Development/EtaleCohomology/EtaleDuality) | 2 | 210 | 34 | 0 |
+| [EtaleSheaves](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Development/EtaleCohomology/EtaleSheaves) | 625 | 73,884 | 2,800 | 1,469 |
+| [EtaleTrace](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Development/EtaleCohomology/EtaleTrace) | 67 | 7,534 | 267 | 142 |
+| [KummerExtensions](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Development/EtaleCohomology/KummerExtensions) | 5 | 1,026 | 75 | 23 |
+| [KummerTheory](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Development/EtaleCohomology/KummerTheory) | 98 | 12,108 | 605 | 207 |
+| [TateTwists](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Development/EtaleCohomology/TateTwists) | 224 | 23,098 | 1,027 | 400 |
+| [WeilConjectures](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Development/EtaleCohomology/WeilConjectures) | 16 | 1,530 | 32 | 27 |
 
 ## Imports
 
 Counted in import lines. A top-level folder stands for those of its files that have no page of their own.
 
-Its files import modules of [Development/AbelianVarietyTheory](../development-abelianvarietytheory/README.md) (280 lines), Mathlib (69 lines), [Development/AutomorphicArithmetic](../development-automorphicarithmetic/README.md) (18 lines), [ReciprocityTheory/ReductiveGroups](../../reciprocitytheory/reciprocitytheory-reductivegroups/README.md) (4 lines), [Development/WeilBound](../development-weilbound/README.md) (1 line) and [ReciprocityTheory](../../reciprocitytheory/README.md) (1 line).
+Its files import modules of Mathlib (51,447 lines), [Development/AbelianVarietyTheory](../development-abelianvarietytheory/README.md) (181 lines), Std (61 lines), [Development/AutomorphicArithmetic](../development-automorphicarithmetic/README.md) (26 lines), [ReciprocityTheory/ReductiveGroups](../../reciprocitytheory/reciprocitytheory-reductivegroups/README.md) (10 lines), Aesop (5 lines), [Development/WeilBound](../development-weilbound/README.md) (2 lines) and [ReciprocityTheory](../../reciprocitytheory/README.md) (1 line).
 
-Files of [Development/AutomorphicArithmetic](../development-automorphicarithmetic/README.md) (694 lines) import its modules.
+Files of [Development/AutomorphicArithmetic](../development-automorphicarithmetic/README.md) (583 lines) import its modules.

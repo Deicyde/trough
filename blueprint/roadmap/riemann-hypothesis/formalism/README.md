@@ -1,127 +1,119 @@
 # Formalism
 
-[`src/Formalism/`](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism) holds 18,254 files: 3,200,748 lines, 2,789,976 of them non-blank, with 162,118 `theorem` or `lemma` declarations and 77,981 other declarations.
+[`src/Formalism/`](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism) holds 15,292 files: 3,172,983 lines, 2,811,683 of them non-blank, with 124,689 `theorem` or `lemma` declarations and 49,780 other declarations.
 
 The lakefile builds it as the library `Formalism`.
 
 | Folder | Files | Lines | `theorem` or `lemma` | Other declarations |
 | --- | ---: | ---: | ---: | ---: |
-| Files directly in `src/Formalism/` | 9 | 449 | 0 | 71 |
-| [AdicCompletionExports](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/AdicCompletionExports) | 3 | 202 | 1 | 22 |
-| [AdmissibleDesigns](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/AdmissibleDesigns) | 93 | 20,476 | 944 | 537 |
-| [AlgebraicWeights](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/AlgebraicWeights) | 2 | 228 | 0 | 32 |
-| [AlphaUniqueness](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/AlphaUniqueness) | 1 | 97 | 0 | 13 |
-| [ArtinHasse](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/ArtinHasse) | 2 | 513 | 31 | 22 |
-| [BehrendSets](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/BehrendSets) | 14 | 1,074 | 34 | 55 |
-| [BranchSandwichDivisors](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/BranchSandwichDivisors) | 22 | 7,889 | 394 | 137 |
-| [CMTypeGalois](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/CMTypeGalois) | 14 | 1,724 | 71 | 50 |
-| [CharacterColumnKernels](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/CharacterColumnKernels) | 54 | 7,550 | 212 | 216 |
-| [CoboundaryTransfers](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/CoboundaryTransfers) | 16 | 2,074 | 111 | 103 |
-| [ConjugateSelfDual](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/ConjugateSelfDual) | 3 | 146 | 0 | 20 |
-| [CorankShare](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/CorankShare) | 3 | 563 | 23 | 7 |
-| [CyclotomicNorms](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/CyclotomicNorms) | 21 | 3,643 | 142 | 87 |
-| [DegreeFormula](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/DegreeFormula) | 5 | 902 | 35 | 79 |
-| [DirichletDensity](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/DirichletDensity) | 8 | 1,012 | 42 | 9 |
-| [DistinguishedUnitIdeals](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/DistinguishedUnitIdeals) | 44 | 14,285 | 707 | 339 |
-| [DivisorInequality](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/DivisorInequality) | 5 | 1,411 | 7 | 14 |
-| [DoubleCosetMeasures](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/DoubleCosetMeasures) | 15 | 3,487 | 202 | 79 |
-| [DropLevelBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/DropLevelBounds) | 4 | 366 | 2 | 42 |
-| [EisensteinCokernelLengths](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/EisensteinCokernelLengths) | 12 | 1,201 | 40 | 23 |
-| [EllipticTorsion](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/EllipticTorsion) | 48 | 8,816 | 512 | 135 |
-| [FilteredPoleLength](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/FilteredPoleLength) | 36 | 4,117 | 87 | 144 |
-| [FlagUnipotentLattices](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/FlagUnipotentLattices) | 77 | 31,383 | 1,285 | 1,164 |
-| [FockGram](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/FockGram) | 14 | 773 | 25 | 41 |
-| [FormalDegreeBessel](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/FormalDegreeBessel) | 31 | 5,655 | 341 | 221 |
-| [FormalGroupLog](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/FormalGroupLog) | 5 | 935 | 52 | 39 |
-| [FormalGroupWitt](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/FormalGroupWitt) | 21 | 3,000 | 165 | 75 |
-| [FrobeniusBaseCase](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/FrobeniusBaseCase) | 12 | 1,962 | 134 | 67 |
-| [FrobeniusContraction](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/FrobeniusContraction) | 13 | 1,539 | 87 | 77 |
-| [FrobeniusOrbits](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/FrobeniusOrbits) | 32 | 7,736 | 351 | 91 |
-| [GL3MeanSquares](formalism-gl3meansquares/README.md) | 440 | 78,320 | 3,029 | 1,124 |
-| [GaloisCohomology](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/GaloisCohomology) | 6 | 400 | 6 | 56 |
-| [GaloisIrreducibility](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/GaloisIrreducibility) | 17 | 1,661 | 75 | 38 |
-| [GammaFactorNonvanishing](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/GammaFactorNonvanishing) | 2 | 94 | 4 | 0 |
-| [GaussIdealIdentity](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/GaussIdealIdentity) | 2 | 275 | 8 | 14 |
-| [GaussJetBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/GaussJetBounds) | 90 | 13,581 | 538 | 209 |
-| [GaussValuationBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/GaussValuationBounds) | 16 | 1,914 | 63 | 36 |
-| [GelfandTransference](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/GelfandTransference) | 7 | 793 | 14 | 45 |
-| [GradedWeylDivisibility](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/GradedWeylDivisibility) | 103 | 8,125 | 460 | 176 |
-| [GrowthSums](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/GrowthSums) | 14 | 847 | 24 | 35 |
-| [HalfLinks](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/HalfLinks) | 1 | 186 | 0 | 26 |
-| [HarderNarasimhan](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/HarderNarasimhan) | 43 | 10,412 | 375 | 99 |
-| [HermitianCurvature](formalism-hermitiancurvature/README.md) | 1,922 | 460,802 | 28,075 | 7,883 |
-| [HermitianLattices](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/HermitianLattices) | 43 | 7,418 | 289 | 115 |
-| [HyperbolicPlaceProducts](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/HyperbolicPlaceProducts) | 14 | 1,895 | 74 | 54 |
-| [IncomingBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/IncomingBounds) | 21 | 3,742 | 197 | 102 |
-| [JacobiWeightFamilies](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/JacobiWeightFamilies) | 2 | 209 | 0 | 39 |
-| [JacquetSubsetSums](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/JacquetSubsetSums) | 2 | 149 | 0 | 14 |
-| [JumpKernelCokernel](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/JumpKernelCokernel) | 27 | 1,694 | 72 | 32 |
-| [LFunctionBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/LFunctionBounds) | 7 | 988 | 37 | 54 |
-| [LagrangeIdealLifts](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/LagrangeIdealLifts) | 9 | 1,437 | 76 | 42 |
-| [LandauZeroFreeBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/LandauZeroFreeBounds) | 58 | 6,579 | 231 | 69 |
-| [LatticeLocalGlobal](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/LatticeLocalGlobal) | 2 | 216 | 0 | 24 |
-| [LatticeRigidity](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/LatticeRigidity) | 12 | 1,130 | 23 | 40 |
-| [LatticeSlopes](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/LatticeSlopes) | 18 | 1,977 | 71 | 27 |
-| [LatticeTheta](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/LatticeTheta) | 14 | 1,106 | 63 | 25 |
-| [LocalRingCardinality](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/LocalRingCardinality) | 173 | 35,348 | 1,841 | 1,482 |
-| [LocalToGlobal](formalism-localtoglobal/README.md) | 5,501 | 955,843 | 49,840 | 23,433 |
-| [LogFactorialBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/LogFactorialBounds) | 5 | 371 | 4 | 34 |
-| [LogFactorialIndices](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/LogFactorialIndices) | 11 | 1,403 | 49 | 48 |
-| [LogSumExpBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/LogSumExpBounds) | 16 | 1,744 | 61 | 59 |
-| [LogVandermondeBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/LogVandermondeBounds) | 26 | 3,995 | 162 | 90 |
-| [MahlerMeasure](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/MahlerMeasure) | 54 | 16,821 | 1,036 | 282 |
-| [MeanHeightDescent](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/MeanHeightDescent) | 24 | 3,013 | 68 | 52 |
-| [MirabolicMackeyTheory](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/MirabolicMackeyTheory) | 26 | 4,636 | 197 | 100 |
-| [MoebiusJetDuality](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/MoebiusJetDuality) | 5 | 384 | 0 | 71 |
-| [MonomialMeanResidues](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/MonomialMeanResidues) | 6 | 1,175 | 40 | 39 |
-| [NormUnitaryBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/NormUnitaryBounds) | 14 | 2,086 | 93 | 46 |
-| [PadicSubsetSums](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/PadicSubsetSums) | 82 | 15,796 | 437 | 723 |
-| [PairingDivisors](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/PairingDivisors) | 7 | 700 | 28 | 44 |
-| [PeriodIntegrals](formalism-periodintegrals/README.md) | 4,350 | 451,856 | 23,534 | 9,165 |
-| [PieriBlockIdeals](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/PieriBlockIdeals) | 98 | 29,254 | 1,448 | 1,112 |
-| [PolynomialDimension](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/PolynomialDimension) | 41 | 15,760 | 785 | 263 |
-| [PrimeAboveExistence](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/PrimeAboveExistence) | 1 | 76 | 4 | 1 |
-| [ProductFormula](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/ProductFormula) | 1 | 162 | 0 | 13 |
-| [QuotientMetricDivisors](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/QuotientMetricDivisors) | 63 | 15,247 | 584 | 261 |
-| [RankGapBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/RankGapBounds) | 17 | 1,967 | 66 | 153 |
-| [RealPlaceAnalysis](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/RealPlaceAnalysis) | 54 | 10,653 | 764 | 294 |
-| [ResultantValuation](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/ResultantValuation) | 13 | 842 | 40 | 43 |
-| [SatakeDualWeyl](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/SatakeDualWeyl) | 85 | 14,777 | 798 | 281 |
-| [SelfDualUnimodular](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/SelfDualUnimodular) | 6 | 822 | 46 | 7 |
-| [SharpRestriction](formalism-sharprestriction/README.md) | 3,093 | 709,436 | 33,822 | 20,826 |
-| [SizeWindowBrackets](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/SizeWindowBrackets) | 64 | 28,345 | 997 | 1,271 |
-| [SmithDeterminants](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/SmithDeterminants) | 6 | 403 | 3 | 43 |
-| [SobolevGaussianKernels](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/SobolevGaussianKernels) | 12 | 578 | 18 | 47 |
-| [SubspaceCounting](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/SubspaceCounting) | 32 | 7,069 | 332 | 115 |
-| [SuccessiveMinima](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/SuccessiveMinima) | 15 | 1,693 | 45 | 37 |
-| [TameInertiaTowers](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/TameInertiaTowers) | 15 | 3,127 | 205 | 60 |
-| [ThetaLiftIndependence](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/ThetaLiftIndependence) | 10 | 802 | 27 | 48 |
-| [ThetaLogCoordinates](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/ThetaLogCoordinates) | 292 | 54,555 | 3,012 | 1,197 |
-| [ThetaSupremumBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/ThetaSupremumBounds) | 19 | 3,287 | 102 | 78 |
-| [ThickAverageLoss](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/ThickAverageLoss) | 5 | 1,079 | 54 | 44 |
-| [TorsionNormIteration](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/TorsionNormIteration) | 15 | 2,644 | 181 | 37 |
-| [TowerValuationBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/TowerValuationBounds) | 4 | 1,547 | 26 | 23 |
-| [TranslateCocycles](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/TranslateCocycles) | 7 | 1,952 | 61 | 75 |
-| [TruncatedSeriesCounting](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/TruncatedSeriesCounting) | 39 | 3,676 | 96 | 86 |
-| [TwistFamilyExistence](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/TwistFamilyExistence) | 1 | 87 | 0 | 16 |
-| [UnipotentAdelicQuotients](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/UnipotentAdelicQuotients) | 44 | 4,570 | 159 | 244 |
-| [WachLatticeTwists](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/WachLatticeTwists) | 262 | 38,367 | 722 | 860 |
-| [WachModuleLifts](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/WachModuleLifts) | 9 | 1,239 | 83 | 66 |
-| [WeaklyAdmissibleFiltrations](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/WeaklyAdmissibleFiltrations) | 20 | 2,416 | 95 | 130 |
-| [WeightedDeltaMeans](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/WeightedDeltaMeans) | 2 | 241 | 0 | 27 |
-| [WideWeightTheorem](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/WideWeightTheorem) | 1 | 85 | 0 | 9 |
-| [WindowSums](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/WindowSums) | 11 | 1,002 | 36 | 28 |
-| [YangianSpanCharacter](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/YangianSpanCharacter) | 17 | 1,132 | 52 | 69 |
-| [ZeroFreeRegion](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/ZeroFreeRegion) | 34 | 3,189 | 114 | 29 |
-| [ZetaNonvanishing](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src/Formalism/ZetaNonvanishing) | 15 | 2,338 | 110 | 31 |
+| Files directly in `src/Formalism/` | 7 | 463 | 0 | 25 |
+| [AdicCompletionExports](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/AdicCompletionExports) | 3 | 253 | 1 | 10 |
+| [AdmissibleDesigns](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/AdmissibleDesigns) | 91 | 23,593 | 870 | 510 |
+| [AlgebraicWeights](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/AlgebraicWeights) | 2 | 243 | 0 | 17 |
+| [ArtinHasse](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/ArtinHasse) | 1 | 186 | 7 | 0 |
+| [BranchSandwichDivisors](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/BranchSandwichDivisors) | 14 | 6,447 | 342 | 75 |
+| [CMTypeGalois](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/CMTypeGalois) | 4 | 553 | 14 | 5 |
+| [CharacterColumnKernels](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/CharacterColumnKernels) | 43 | 7,478 | 155 | 123 |
+| [CoboundaryTransfers](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/CoboundaryTransfers) | 10 | 1,390 | 36 | 47 |
+| [ConjugateSelfDual](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/ConjugateSelfDual) | 3 | 245 | 0 | 13 |
+| [CorankShare](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/CorankShare) | 3 | 448 | 18 | 4 |
+| [CyclotomicNorms](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/CyclotomicNorms) | 8 | 1,780 | 48 | 21 |
+| [DegreeFormula](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/DegreeFormula) | 5 | 809 | 31 | 24 |
+| [DirichletDensity](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/DirichletDensity) | 5 | 726 | 19 | 4 |
+| [DistinguishedUnitIdeals](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/DistinguishedUnitIdeals) | 42 | 14,811 | 627 | 293 |
+| [DivisorInequality](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/DivisorInequality) | 5 | 882 | 6 | 3 |
+| [DoubleCosetMeasures](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/DoubleCosetMeasures) | 14 | 3,362 | 147 | 65 |
+| [DropLevelBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/DropLevelBounds) | 3 | 268 | 2 | 13 |
+| [EisensteinCokernelLengths](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/EisensteinCokernelLengths) | 12 | 1,561 | 39 | 14 |
+| [EllipticTorsion](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/EllipticTorsion) | 44 | 10,021 | 433 | 123 |
+| [FilteredPoleLength](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/FilteredPoleLength) | 27 | 3,390 | 62 | 28 |
+| [FlagUnipotentLattices](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/FlagUnipotentLattices) | 38 | 16,023 | 564 | 251 |
+| [FockGram](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/FockGram) | 8 | 736 | 10 | 7 |
+| [FormalDegreeBessel](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/FormalDegreeBessel) | 28 | 5,803 | 265 | 162 |
+| [FormalGroupLog](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/FormalGroupLog) | 5 | 1,058 | 48 | 24 |
+| [FormalGroupWitt](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/FormalGroupWitt) | 13 | 2,219 | 93 | 24 |
+| [FrobeniusBaseCase](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/FrobeniusBaseCase) | 2 | 245 | 9 | 9 |
+| [FrobeniusContraction](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/FrobeniusContraction) | 5 | 575 | 8 | 14 |
+| [FrobeniusOrbits](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/FrobeniusOrbits) | 29 | 8,211 | 306 | 83 |
+| [GL3MeanSquares](formalism-gl3meansquares/README.md) | 355 | 71,975 | 2,223 | 460 |
+| [GaloisCohomology](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/GaloisCohomology) | 4 | 480 | 5 | 44 |
+| [GaloisIrreducibility](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/GaloisIrreducibility) | 14 | 1,838 | 48 | 16 |
+| [GaussIdealIdentity](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/GaussIdealIdentity) | 2 | 176 | 4 | 4 |
+| [GaussJetBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/GaussJetBounds) | 60 | 11,460 | 352 | 129 |
+| [GaussValuationBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/GaussValuationBounds) | 10 | 1,210 | 28 | 16 |
+| [GelfandTransference](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/GelfandTransference) | 4 | 274 | 2 | 6 |
+| [GradedWeylDivisibility](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/GradedWeylDivisibility) | 102 | 12,474 | 448 | 155 |
+| [GrowthSums](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/GrowthSums) | 12 | 1,180 | 19 | 14 |
+| [HarderNarasimhan](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/HarderNarasimhan) | 38 | 11,193 | 319 | 80 |
+| [HermitianCurvature](formalism-hermitiancurvature/README.md) | 1,796 | 484,852 | 22,890 | 6,579 |
+| [HermitianLattices](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/HermitianLattices) | 38 | 7,462 | 226 | 67 |
+| [HyperbolicPlaceProducts](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/HyperbolicPlaceProducts) | 10 | 1,472 | 41 | 16 |
+| [IncomingBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/IncomingBounds) | 17 | 2,787 | 112 | 48 |
+| [JacobiWeightFamilies](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/JacobiWeightFamilies) | 1 | 62 | 0 | 2 |
+| [JacquetSubsetSums](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/JacquetSubsetSums) | 1 | 89 | 0 | 6 |
+| [JumpKernelCokernel](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/JumpKernelCokernel) | 27 | 2,913 | 72 | 32 |
+| [LFunctionBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/LFunctionBounds) | 7 | 1,119 | 37 | 23 |
+| [LagrangeIdealLifts](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/LagrangeIdealLifts) | 7 | 1,406 | 60 | 29 |
+| [LandauZeroFreeBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/LandauZeroFreeBounds) | 57 | 9,036 | 225 | 64 |
+| [LatticeRigidity](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/LatticeRigidity) | 4 | 844 | 18 | 4 |
+| [LatticeSlopes](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/LatticeSlopes) | 18 | 2,796 | 69 | 26 |
+| [LatticeTheta](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/LatticeTheta) | 14 | 1,598 | 48 | 18 |
+| [LocalRingCardinality](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/LocalRingCardinality) | 109 | 25,937 | 963 | 1,027 |
+| [LocalToGlobal](formalism-localtoglobal/README.md) | 4,895 | 984,382 | 38,831 | 16,481 |
+| [LogFactorialBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/LogFactorialBounds) | 1 | 170 | 4 | 0 |
+| [LogFactorialIndices](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/LogFactorialIndices) | 10 | 1,345 | 39 | 15 |
+| [LogSumExpBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/LogSumExpBounds) | 1 | 60 | 0 | 3 |
+| [LogVandermondeBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/LogVandermondeBounds) | 17 | 2,745 | 59 | 40 |
+| [MahlerMeasure](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/MahlerMeasure) | 48 | 17,947 | 1,007 | 239 |
+| [MeanHeightDescent](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/MeanHeightDescent) | 14 | 2,431 | 52 | 13 |
+| [MirabolicMackeyTheory](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/MirabolicMackeyTheory) | 22 | 4,250 | 138 | 61 |
+| [MoebiusJetDuality](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/MoebiusJetDuality) | 1 | 63 | 0 | 3 |
+| [MonomialMeanResidues](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/MonomialMeanResidues) | 3 | 929 | 39 | 4 |
+| [NormUnitaryBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/NormUnitaryBounds) | 2 | 324 | 3 | 0 |
+| [PadicSubsetSums](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/PadicSubsetSums) | 60 | 11,765 | 301 | 163 |
+| [PairingDivisors](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/PairingDivisors) | 7 | 666 | 15 | 16 |
+| [PeriodIntegrals](formalism-periodintegrals/README.md) | 3,369 | 506,004 | 18,866 | 6,212 |
+| [PieriBlockIdeals](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/PieriBlockIdeals) | 86 | 26,159 | 1,142 | 654 |
+| [PolynomialDimension](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/PolynomialDimension) | 32 | 12,314 | 605 | 140 |
+| [PrimeAboveExistence](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/PrimeAboveExistence) | 1 | 128 | 4 | 1 |
+| [QuotientMetricDivisors](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/QuotientMetricDivisors) | 60 | 13,694 | 465 | 140 |
+| [RankGapBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/RankGapBounds) | 10 | 1,367 | 41 | 41 |
+| [RealPlaceAnalysis](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/RealPlaceAnalysis) | 51 | 12,269 | 716 | 233 |
+| [ResultantValuation](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/ResultantValuation) | 4 | 591 | 27 | 4 |
+| [SatakeDualWeyl](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/SatakeDualWeyl) | 83 | 17,034 | 717 | 214 |
+| [SelfDualUnimodular](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/SelfDualUnimodular) | 6 | 1,156 | 45 | 7 |
+| [SharpRestriction](formalism-sharprestriction/README.md) | 2,757 | 672,910 | 25,269 | 12,343 |
+| [SizeWindowBrackets](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/SizeWindowBrackets) | 33 | 9,906 | 366 | 295 |
+| [SmithDeterminants](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/SmithDeterminants) | 4 | 322 | 3 | 3 |
+| [SobolevGaussianKernels](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/SobolevGaussianKernels) | 1 | 57 | 0 | 2 |
+| [SubspaceCounting](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/SubspaceCounting) | 13 | 2,700 | 81 | 34 |
+| [SuccessiveMinima](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/SuccessiveMinima) | 9 | 1,608 | 35 | 16 |
+| [TameInertiaTowers](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/TameInertiaTowers) | 14 | 3,802 | 203 | 60 |
+| [ThetaLiftIndependence](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/ThetaLiftIndependence) | 5 | 611 | 15 | 14 |
+| [ThetaLogCoordinates](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/ThetaLogCoordinates) | 205 | 51,661 | 2,292 | 684 |
+| [ThetaSupremumBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/ThetaSupremumBounds) | 10 | 1,504 | 42 | 22 |
+| [ThickAverageLoss](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/ThickAverageLoss) | 3 | 364 | 16 | 14 |
+| [TorsionNormIteration](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/TorsionNormIteration) | 11 | 1,691 | 75 | 15 |
+| [TowerValuationBounds](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/TowerValuationBounds) | 4 | 1,287 | 21 | 14 |
+| [TranslateCocycles](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/TranslateCocycles) | 1 | 80 | 0 | 8 |
+| [TruncatedSeriesCounting](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/TruncatedSeriesCounting) | 35 | 4,670 | 84 | 50 |
+| [UnipotentAdelicQuotients](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/UnipotentAdelicQuotients) | 39 | 6,119 | 158 | 190 |
+| [WachLatticeTwists](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/WachLatticeTwists) | 115 | 17,621 | 301 | 292 |
+| [WachModuleLifts](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/WachModuleLifts) | 1 | 94 | 0 | 2 |
+| [WeaklyAdmissibleFiltrations](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/WeaklyAdmissibleFiltrations) | 11 | 1,990 | 43 | 97 |
+| [WeightedDeltaMeans](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/WeightedDeltaMeans) | 1 | 69 | 0 | 6 |
+| [WindowSums](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/WindowSums) | 8 | 1,047 | 28 | 10 |
+| [YangianSpanCharacter](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/YangianSpanCharacter) | 9 | 965 | 22 | 27 |
+| [ZeroFreeRegion](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/ZeroFreeRegion) | 34 | 4,712 | 113 | 29 |
+| [ZetaNonvanishing](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Formalism/ZetaNonvanishing) | 5 | 988 | 37 | 13 |
 
 ## Imports
 
 Counted in import lines.
 
-Its files import modules of Mathlib (6,527 lines), [ReciprocityTheory](../reciprocitytheory/README.md) (348 lines), [Development](../development/README.md) (236 lines), [Lemmata](../lemmata/README.md) (118 lines), Lean (2 lines), [CompanionTheory](../companiontheory/README.md) (1 line) and [GroundTheory](../groundtheory/README.md) (1 line).
+Its files import modules of Mathlib (614,868 lines), Std (2,100 lines), [ReciprocityTheory](../reciprocitytheory/README.md) (493 lines), [Development](../development/README.md) (176 lines), [Lemmata](../lemmata/README.md) (114 lines), Aesop (67 lines), [CompanionTheory](../companiontheory/README.md) (4 lines) and [GroundTheory](../groundtheory/README.md) (1 line).
 
-Files of [Development](../development/README.md) (41,859 lines), [CompanionTheory](../companiontheory/README.md) (762 lines), [Lemmata](../lemmata/README.md) (634 lines), [ReciprocityTheory](../reciprocitytheory/README.md) (266 lines), [GroundTheory](../groundtheory/README.md) (10 lines), [PositivityTheory](../positivitytheory/README.md) (8 lines) and [Supplements](../supplements/README.md) (1 line) import its modules.
+Files of [Development](../development/README.md) (50,490 lines), [CompanionTheory](../companiontheory/README.md) (1,293 lines), [ReciprocityTheory](../reciprocitytheory/README.md) (749 lines), [PositivityTheory](../positivitytheory/README.md) (78 lines), [Lemmata](../lemmata/README.md) (19 lines) and [GroundTheory](../groundtheory/README.md) (8 lines) import its modules.
 
 ## Parts
 

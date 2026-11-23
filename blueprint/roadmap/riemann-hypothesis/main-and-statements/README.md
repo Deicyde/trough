@@ -1,6 +1,6 @@
 # Main and Statements
 
-The files directly in [`src/`](https://github.com/leanprover-community/riemann-hypothesis/tree/8ec38f92ac54b5c91bc07f4f6f88ea61691b7975/src), `Main.lean` and `Statements.lean`, hold 2 files: 28 lines, 19 of them non-blank, with 5 `theorem` or `lemma` declarations and 4 other declarations.
+The files directly in [`src/`](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src), `Main.lean` and `Statements.lean`, hold 2 files: 76 lines, 63 of them non-blank, with 5 `theorem` or `lemma` declarations and 4 other declarations.
 
 The lakefile builds it as the library `Main`.
 
@@ -8,6 +8,6 @@ The lakefile builds it as the library `Main`.
 
 Counted in import lines.
 
-Its files import modules of Mathlib (1 line) and [Supplements](../supplements/README.md) (1 line).
+Its files import modules of Mathlib (35 lines) and [Development](../development/README.md) (2 lines).
 
 No file outside it imports its modules.
