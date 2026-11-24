@@ -81,20 +81,15 @@ of calculations carried out below. But may be more difficult to formalize as thi
 we might have clunkier calculations, which ``magically'' turn out just right - of course they're
 explained by the aforementioned structure...]
 
-
-
 Finally, we need Mellin Convolutions and properties thereof.
-
 
 \inputleannode{MellinConvolution}
 
 Let us start with a simple property of the Mellin convolution.
 
-
 \inputleannode{MellinConvolutionSymmetric}
 
 The Mellin transform of a convolution is the product of the Mellin transforms.
-
 
 \inputleannode{MellinConvolutionTransform}
 
@@ -104,26 +99,21 @@ least) like $1/|s|$.
 [Of course it decays faster than any power of $|s|$, but it turns out that we will just need one
 power.]
 
-
 \inputleannode{MellinOfPsi}
 
 We can make a delta spike out of this bumpfunction, as follows.
-
 
 \inputleannode{DeltaSpike}
 
 This spike still has mass one:
 
-
 \inputleannode{DeltaSpikeMass}
 
 The Mellin transform of the delta spike is easy to compute.
 
-
 \inputleannode{MellinOfDeltaSpike}
 
 In particular, for $s=1$, we have that the Mellin transform of $\nu_\epsilon$ is $1+O(\epsilon)$.
-
 
 \inputleannode{MellinOfDeltaSpikeAt1}
 
@@ -137,17 +127,14 @@ $$1_{(0,1]}(x) = \begin{cases}
 This has Mellin transform:
 [Note: this already exists in mathlib]
 
-
 \inputleannode{MellinOf1}
 
 What will be essential for us is properties of the smooth version of $1_{(0,1]}$, obtained as the
  Mellin convolution of $1_{(0,1]}$ with $\nu_\epsilon$.
 
-
 \inputleannode{Smooth1}
 
 In particular, we have the following two properties.
-
 
 \inputleannode{Smooth1Properties_below}
 
@@ -159,7 +146,6 @@ In particular, we have the following two properties.
 
 Combining the above, we have the following three Main Lemmata of this section on the Mellin
 transform of $\widetilde{1_{\epsilon}}$.
-
 
 \inputleannode{MellinOfSmooth1a}
 

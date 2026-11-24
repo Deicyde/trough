@@ -113,7 +113,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 ### Research projects with blueprints
 
 - [Fermat's Last Theorem (Imperial)](https://github.com/ImperialCollegeLondon/FLT) at a3210204ad88: Ongoing formalization of the Wiles/Taylor-Wiles proof of Fermat's Last Theorem, reduced to 1980s-known results (FLT/KnownIn1980s, Assumptions).
-- [PNT+](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd) at a4fb6989b07e: Prime Number Theorem and extensions: Wiener-Ikehara, medium/strong error terms, IEANTN (126 files), zero-free regions, explicit estimates.
+- [PNT+](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd) at b47896b36cc6: Prime Number Theorem and extensions: Wiener-Ikehara, medium/strong error terms, IEANTN (126 files), zero-free regions, explicit estimates.
 - [Polynomial Freiman-Ruzsa](https://github.com/teorth/pfr) at 1ef23c3c5a83: Polynomial Freiman-Ruzsa conjecture (Gowers-Green-Manners-Tao) and related results: entropy and Ruzsa distance, torsion and integer versions, improved exponents.
 - [Equational Theories](https://github.com/teorth/equational_theories) at 8b87204d5b20: The implication graph between equational laws of magmas (crowdsourced and automated).
 - [Strong PNT (Math Inc)](https://github.com/math-inc/strongpnt) at 2f5835c32231: Strong Prime Number Theorem with classical de la Vallee Poussin error term, produced by Math Inc's Gauss agent.
