@@ -1,26 +1,26 @@
 # Development
 
-[`src/Development/`](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Development) holds 121,214 files: 15,474,506 lines, 14,112,708 of them non-blank, with 468,298 `theorem` or `lemma` declarations and 97,052 other declarations.
+[`src/Development/`](https://github.com/leanprover-community/riemann-hypothesis/tree/2d0c622a3464ba41ad98fca9086bab54fb74e303/src/Development) holds 41,959 files: 11,932,512 lines, 10,747,618 of them non-blank, with 421,918 `theorem` or `lemma` declarations and 95,167 other declarations.
 
 The lakefile builds it as the library `Development`.
 
 | Folder | Files | Lines | `theorem` or `lemma` | Other declarations |
 | --- | ---: | ---: | ---: | ---: |
-| [AbelianVarietyTheory](development-abelianvarietytheory/README.md) | 81,319 | 9,989,101 | 298,305 | 55,315 |
-| [AutomorphicArithmetic](development-automorphicarithmetic/README.md) | 17,522 | 2,411,869 | 66,287 | 17,870 |
-| [AutomorphicSpectrum](development-automorphicspectrum/README.md) | 13,644 | 1,629,320 | 50,306 | 7,676 |
-| [DiscreteGroups](https://github.com/leanprover-community/riemann-hypothesis/tree/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Development/DiscreteGroups) | 125 | 17,823 | 581 | 147 |
-| [EtaleCohomology](development-etalecohomology/README.md) | 1,307 | 154,539 | 6,517 | 2,919 |
-| [ResolutionOfSingularities](development-resolutionofsingularities/README.md) | 499 | 157,288 | 6,437 | 1,319 |
-| [WeilBound](development-weilbound/README.md) | 6,798 | 1,114,566 | 39,865 | 11,806 |
+| [AbelianVarietyTheory](development-abelianvarietytheory/README.md) | 26,659 | 7,225,859 | 255,095 | 53,310 |
+| [AutomorphicArithmetic](development-automorphicarithmetic/README.md) | 7,327 | 2,324,305 | 74,504 | 18,662 |
+| [AutomorphicSpectrum](development-automorphicspectrum/README.md) | 3,502 | 1,084,002 | 39,402 | 6,892 |
+| [DiscreteGroups](https://github.com/leanprover-community/riemann-hypothesis/tree/2d0c622a3464ba41ad98fca9086bab54fb74e303/src/Development/DiscreteGroups) | 39 | 5,815 | 178 | 56 |
+| [EtaleCohomology](development-etalecohomology/README.md) | 738 | 117,071 | 5,165 | 2,751 |
+| [ResolutionOfSingularities](development-resolutionofsingularities/README.md) | 340 | 150,679 | 6,366 | 1,321 |
+| [WeilBound](development-weilbound/README.md) | 3,354 | 1,024,781 | 41,208 | 12,175 |
 
 ## Imports
 
 Counted in import lines.
 
-Its files import modules of Mathlib (4,661,823 lines), [Formalism](../formalism/README.md) (50,490 lines), [ReciprocityTheory](../reciprocitytheory/README.md) (33,315 lines), [GroundTheory](../groundtheory/README.md) (8,983 lines), Std (8,304 lines), [CompanionTheory](../companiontheory/README.md) (1,771 lines), [PositivityTheory](../positivitytheory/README.md) (345 lines), Aesop (233 lines), Lean (50 lines), Batteries (19 lines) and [Lemmata](../lemmata/README.md) (4 lines).
+Its files import modules of Mathlib (1,714,084 lines), [Formalism](../formalism/README.md) (33,067 lines), [ReciprocityTheory](../reciprocitytheory/README.md) (22,569 lines), [GroundTheory](../groundtheory/README.md) (6,780 lines), Std (6,435 lines), [CompanionTheory](../companiontheory/README.md) (1,371 lines), [PositivityTheory](../positivitytheory/README.md) (259 lines), Aesop (219 lines), Lean (40 lines), [Lemmata](../lemmata/README.md) (35 lines), Batteries (14 lines) and [Main and Statements](../main-and-statements/README.md) (2 lines).
 
-Files of [CompanionTheory](../companiontheory/README.md) (1,509 lines), [PositivityTheory](../positivitytheory/README.md) (819 lines), [Formalism](../formalism/README.md) (176 lines), [GroundTheory](../groundtheory/README.md) (56 lines), [ReciprocityTheory](../reciprocitytheory/README.md) (13 lines), [Supplements](../supplements/README.md) (4 lines) and [Main and Statements](../main-and-statements/README.md) (2 lines) import its modules.
+Files of [CompanionTheory](../companiontheory/README.md) (1,065 lines), [PositivityTheory](../positivitytheory/README.md) (602 lines), [Formalism](../formalism/README.md) (267 lines), [GroundTheory](../groundtheory/README.md) (63 lines), [ReciprocityTheory](../reciprocitytheory/README.md) (31 lines), [Lemmata](../lemmata/README.md) (4 lines) and [Main and Statements](../main-and-statements/README.md) (2 lines) import its modules.
 
 ## Parts
 

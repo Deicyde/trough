@@ -89218,10 +89218,10 @@
   "θ₂₃": "https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/StandardParameters.lean#L53"
  },
  "riemann-hypothesis": {
-  "LFunction_eq_zero_re": "https://github.com/leanprover-community/riemann-hypothesis/blob/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Main.lean#L51",
-  "LFunction_eq_zero_re_of_isPrimitive": "https://github.com/leanprover-community/riemann-hypothesis/blob/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Main.lean#L54",
-  "LFunction_ne_zero_of_half_lt_re": "https://github.com/leanprover-community/riemann-hypothesis/blob/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Main.lean#L43",
-  "riemannHypothesis": "https://github.com/leanprover-community/riemann-hypothesis/blob/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Main.lean#L46",
-  "riemannZeta_eq_zero_re": "https://github.com/leanprover-community/riemann-hypothesis/blob/c900e67c2fcd1fdb041685820bbd2b867fbc5a4b/src/Main.lean#L49"
+  "LFunction_eq_zero_re": "https://github.com/leanprover-community/riemann-hypothesis/blob/2d0c622a3464ba41ad98fca9086bab54fb74e303/src/Main.lean#L51",
+  "LFunction_eq_zero_re_of_isPrimitive": "https://github.com/leanprover-community/riemann-hypothesis/blob/2d0c622a3464ba41ad98fca9086bab54fb74e303/src/Main.lean#L54",
+  "LFunction_ne_zero_of_half_lt_re": "https://github.com/leanprover-community/riemann-hypothesis/blob/2d0c622a3464ba41ad98fca9086bab54fb74e303/src/Main.lean#L43",
+  "riemannHypothesis": "https://github.com/leanprover-community/riemann-hypothesis/blob/2d0c622a3464ba41ad98fca9086bab54fb74e303/src/Main.lean#L46",
+  "riemannZeta_eq_zero_re": "https://github.com/leanprover-community/riemann-hypothesis/blob/2d0c622a3464ba41ad98fca9086bab54fb74e303/src/Main.lean#L49"
  }
 }
