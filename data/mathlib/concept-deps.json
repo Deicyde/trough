@@ -1,6 +1,6 @@
 {"unresolved": ["Mathlib.FieldTheory.Finite.Basic", "Mathlib.Order.LiminfLimsup"],
  "stats":
- {"walked": 30667, "theorems_with_proof": 452, "theorems": 452, "listed": 936, "cited": 3056},
+ {"walked": 30667, "theorems_with_proof": 452, "theorems": 452, "listed": 936, "cited": 3058},
  "schema": "trough-concept-deps/v1",
  "modules":
  {"Mathlib.Order.LiminfLimsup":
@@ -41267,6 +41267,13 @@
    "line": 453,
    "kind": "theorem",
    "deprecated": null},
+  "Complex.tendsto_integral_boundary_unbounded_rect_one_side_atTop_nhds_sum_other_two_sides":
+  {"signature":
+   "Complex.tendsto_integral_boundary_unbounded_rect_one_side_atTop_nhds_sum_other_two_sides.{u_1}\n  {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℂ E] {f : ℂ → E} {x₁ x₂ : ℝ} (y : ℝ)\n  (hcont : ContinuousOn f (Set.uIcc x₁ x₂ ×ℂ Set.Ici y)) (s : Set ℂ) (hs : s.Countable)\n  (hdiff : ∀ x ∈ Set.Ioo (min x₁ x₂) (max x₁ x₂) ×ℂ Set.Ioi y \\ s, DifferentiableAt ℂ f x) {C₂ : E}\n  (hC₂ :\n    Filter.Tendsto (fun m => Complex.I • ∫ (t : ℝ) in y..m, f (↑x₂ + ↑t * Complex.I)) Filter.atTop\n      (nhds C₂))\n  (htendsto :\n    Filter.Tendsto f\n      (Filter.comap Complex.im Filter.atTop ⊓ Filter.principal (Set.uIcc x₁ x₂ ×ℂ Set.univ))\n      (nhds 0)) :\n  Filter.Tendsto (fun m => Complex.I • ∫ (t : ℝ) in y..m, f (↑x₁ + ↑t * Complex.I)) Filter.atTop\n    (nhds ((∫ (t : ℝ) in x₁..x₂, f (↑t + ↑y * Complex.I)) + C₂))",
+   "module": "Mathlib.Analysis.Complex.CauchyIntegral",
+   "line": 871,
+   "kind": "theorem",
+   "deprecated": null},
   "Complex.star_def":
   {"signature": "Complex.star_def : star = ⇑(starRingEnd ℂ)",
    "module": "Mathlib.Basic.Complex.Basic",
@@ -41430,6 +41437,13 @@
   {"signature": "Complex.inv_def (z : ℂ) : z⁻¹ = (starRingEnd ℂ) z * ↑(Complex.normSq z)⁻¹",
    "module": "Mathlib.Basic.Complex.Basic",
    "line": 682,
+   "kind": "theorem",
+   "deprecated": null},
+  "Complex.integral_boundary_unbounded_rect_eq_zero_of_differentiable_on_off_countable_of_integrable_on":
+  {"signature":
+   "Complex.integral_boundary_unbounded_rect_eq_zero_of_differentiable_on_off_countable_of_integrable_on.{u_1}\n  {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℂ E] {f : ℂ → E} {x₁ x₂ : ℝ} (y : ℝ)\n  (hcont : ContinuousOn f (Set.uIcc x₁ x₂ ×ℂ Set.Ici y)) (s : Set ℂ) (hs : s.Countable)\n  (hdiff : ∀ x ∈ Set.Ioo (min x₁ x₂) (max x₁ x₂) ×ℂ Set.Ioi y \\ s, DifferentiableAt ℂ f x)\n  (hint₁ :\n    MeasureTheory.IntegrableOn (fun t => f (↑x₁ + ↑t * Complex.I)) (Set.Ioi y) MeasureTheory.volume)\n  (hint₂ :\n    MeasureTheory.IntegrableOn (fun t => f (↑x₂ + ↑t * Complex.I)) (Set.Ioi y) MeasureTheory.volume)\n  (htendsto :\n    Filter.Tendsto f\n      (Filter.comap Complex.im Filter.atTop ⊓ Filter.principal (Set.uIcc x₁ x₂ ×ℂ Set.univ))\n      (nhds 0)) :\n  ((∫ (x : ℝ) in x₁..x₂, f (↑x + ↑y * Complex.I)) +\n        Complex.I • ∫ (t : ℝ) in Set.Ioi y, f (↑x₂ + ↑t * Complex.I)) -\n      Complex.I • ∫ (t : ℝ) in Set.Ioi y, f (↑x₁ + ↑t * Complex.I) =\n    0",
+   "module": "Mathlib.Analysis.Complex.CauchyIntegral",
+   "line": 928,
    "kind": "theorem",
    "deprecated": null},
   "Complex.instField":
