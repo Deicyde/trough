@@ -7,7 +7,7 @@ statement: formalized
 
 # Full Binius ring-switching reduction
 
-In the concrete setup above, compose the shared DP24 prefix protocol with the Binary Basefold opening. This is a non-fused composition ending in an accept/reject statement, rather than an unclosed evaluation claim.
+In the concrete setup above, compose the shared DP24 prefix protocol with the Binary Basefold opening. The composition runs a ring-switching sum-check before the opening and ends in an accept/reject statement, rather than an unclosed evaluation claim. The unrolled protocol of Definition [Unrolled FRI-Binius](def-unrolled-fri-binius.md) instead runs a single sum-check.
 
 ## Depends on
 
@@ -20,4 +20,4 @@ Formalized as [`Binius.FRIBinius.RingSwitch.fullReduction`](https://verified-zke
 
 ## Sources
 
-- [ArkLib blueprint: proof_systems/ring_switching.tex, line 159](https://github.com/Verified-zkEVM/ArkLib/blob/e1c185ba001d225d1f3ea84071d67a8c6c56d6a0/blueprint/src/proof_systems/ring_switching.tex#L159)
+- [ArkLib blueprint: proof_systems/ring_switching.tex, line 159](https://github.com/Verified-zkEVM/ArkLib/blob/e9bcc82d3d33a1814822b9b9e6b135bc80d614ee/blueprint/src/proof_systems/ring_switching.tex#L159)

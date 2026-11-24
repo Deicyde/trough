@@ -28,4 +28,4 @@ Formalized as [`KummerCriterion.conj_generator_associated`](https://riccardobras
 
 ## Sources
 
-- [Kummer's criterion blueprint: subsections/cm-splitting.tex, line 97](https://github.com/riccardobrasca/KummerCriterion/blob/b96b2cde81e799bfe8364b6dd469abafd9a26bdf/blueprint/src/subsections/cm-splitting.tex#L97)
+- [Kummer's criterion blueprint: subsections/cm-splitting.tex, line 97](https://github.com/riccardobrasca/KummerCriterion/blob/d6f2d56131fb9a992bcfc97e46aa1dec7d8c7018/blueprint/src/subsections/cm-splitting.tex#L97)

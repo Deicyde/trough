@@ -30,4 +30,4 @@ Formalized as [`KummerCriterion.CPlus_index_prime_dvd_iff_normalizedCPlus_index_
 
 ## Sources
 
-- [Kummer's criterion blueprint: subsections/cyclotomic-units.tex, line 88](https://github.com/riccardobrasca/KummerCriterion/blob/b96b2cde81e799bfe8364b6dd469abafd9a26bdf/blueprint/src/subsections/cyclotomic-units.tex#L88)
+- [Kummer's criterion blueprint: subsections/cyclotomic-units.tex, line 88](https://github.com/riccardobrasca/KummerCriterion/blob/d6f2d56131fb9a992bcfc97e46aa1dec7d8c7018/blueprint/src/subsections/cyclotomic-units.tex#L88)

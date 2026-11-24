@@ -1,7 +1,7 @@
 ---
 declaration: lemma
 origin: cited
-lean: Cayley.rupPair_inner_RzPi, Cayley.shadow_RzPi_mul
+lean: Cayley.rupPair_inner_ZR, Cayley.shadow_ZR_mul
 statement: formalized
 proof: formalized
 ---
@@ -21,8 +21,8 @@ $R_z(\pi)$ negates the screen and $\operatorname{\mathbf{P}} = -\operatorname{\m
 
 ## Lean
 
-Formalized as [`Cayley.rupPair_inner_RzPi`](https://jcreedcmu.github.io/Noperthedron/docs/find/#doc/Cayley.rupPair_inner_RzPi), [`Cayley.shadow_RzPi_mul`](https://jcreedcmu.github.io/Noperthedron/docs/find/#doc/Cayley.shadow_RzPi_mul).
+Formalized as [`Cayley.rupPair_inner_ZR`](https://jcreedcmu.github.io/Noperthedron/docs/find/#doc/Cayley.rupPair_inner_ZR), [`Cayley.shadow_ZR_mul`](https://jcreedcmu.github.io/Noperthedron/docs/find/#doc/Cayley.shadow_ZR_mul).
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/reduction.tex, line 57](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/reduction.tex#L57)
+- [Noperthedron blueprint: chapters/reduction.tex, line 72](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/reduction.tex#L72)

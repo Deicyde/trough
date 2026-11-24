@@ -24,4 +24,4 @@ Formalized as [`KummerCriterion.prime_dvd_num_of_padic_sub_eq_p_mul`](https://ri
 
 ## Sources
 
-- [Kummer's criterion blueprint: subsections/irregular-primes-carlitz.tex, line 67](https://github.com/riccardobrasca/KummerCriterion/blob/b96b2cde81e799bfe8364b6dd469abafd9a26bdf/blueprint/src/subsections/irregular-primes-carlitz.tex#L67)
+- [Kummer's criterion blueprint: subsections/irregular-primes-carlitz.tex, line 67](https://github.com/riccardobrasca/KummerCriterion/blob/d6f2d56131fb9a992bcfc97e46aa1dec7d8c7018/blueprint/src/subsections/irregular-primes-carlitz.tex#L67)

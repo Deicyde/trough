@@ -40,4 +40,4 @@ Formalized as [`Sheffer.Equation345169_is_Boolean`](https://teorth.github.io/equ
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/implications.tex, line 170](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/implications.tex#L170)
+- [Equational Theories blueprint: chapter/implications.tex, line 170](https://github.com/teorth/equational_theories/blob/02b063b67143a897f070803482691c820770501d/blueprint/src/chapter/implications.tex#L170)

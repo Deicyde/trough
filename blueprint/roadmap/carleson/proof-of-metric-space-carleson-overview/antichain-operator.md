@@ -49,4 +49,4 @@ Formalized as [`antichain_operator`](https://fpvandoorn.github.io/carleson/docs/
 
 ## Sources
 
-- [Carleson's theorem blueprint: chapter/main.tex, line 645](https://github.com/fpvandoorn/carleson/blob/d4446d3cab5d096d936a94e998d24c413b2b017d/blueprint/src/chapter/main.tex#L645)
+- [Carleson's theorem blueprint: chapter/main.tex, line 645](https://github.com/fpvandoorn/carleson/blob/f7487cc9da4d1e73f009dc0280cd5b958f3e2c78/blueprint/src/chapter/main.tex#L645)

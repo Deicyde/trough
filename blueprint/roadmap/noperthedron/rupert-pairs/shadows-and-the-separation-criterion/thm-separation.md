@@ -22,7 +22,7 @@ for every vertex $T$ of $\operatorname{\mathbf{P}}$, then $(R_o, R_i)$ is not a 
 
 ## Proof
 
-The outer shadow is the convex hull of the points $\pi(R_o T)$, so it lies in the closed half-plane $\{ z : \langle w, z \rangle \le \langle w, R_i S \rangle \}$. The point $\pi(R_i S)$ of the inner shadow lies on the boundary line of this half-plane, so it is not an interior point of the outer shadow.
+The outer shadow is the convex hull of the points $\pi(R_o T)$, so it lies in the closed half-plane $\{ z : \langle w, z \rangle \le \langle w, R_i S \rangle \}$. A nonzero linear functional is an open map, so it is strictly less than $\langle w, R_i S \rangle$ on the interior of the outer shadow. The point $\pi(R_i S)$ of the inner shadow is therefore not an interior point of the outer shadow.
 
 ## Lean
 
@@ -30,4 +30,4 @@ Formalized as [`Cayley.not_rupPair_of_sep`](https://jcreedcmu.github.io/Noperthe
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/prelims.tex, line 91](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/prelims.tex#L91)
+- [Noperthedron blueprint: chapters/prelims.tex, line 75](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/prelims.tex#L75)

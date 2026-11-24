@@ -6,7 +6,7 @@ We note some selected laws of order more than $5$, which are used in some later 
 
 This law of order $5$ was mentioned in ([Kisielewicz 1997](https://doi.org/10.1007/s000120050057)). See [Equation 5093 has no non-trivial finite models](../../../finite-implications-and-infinite-models/austin-laws/5093-nontrivial.md).
 
-A law that characterizes natural central groupoids; see [Natural central groupoid axiom](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/implications.tex#L188).
+A law that characterizes natural central groupoids; see [Natural central groupoid axiom](https://github.com/teorth/equational_theories/blob/02b063b67143a897f070803482691c820770501d/blueprint/src/chapter/implications.tex#L188).
 
 - [Equation 28770](eq28770.md)
 

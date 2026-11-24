@@ -15,7 +15,7 @@ Its statement uses no other node that has an article here.
 
 ## Proof
 
-The map $d^0 : M \to (G \to M)$ is given by $(d^0 m)(g) = m - g\bullet m$. Using this formula, we obtain (by Lemma [norm comm](https://github.com/kbuzzard/ClassFieldTheory/blob/629ae9ed781748980bb51ab6f5f338ad9d6db3e8/blueprint/src/_2_cohomology.tex#L428)) $d^0 (N_G m) (g) = g \bullet N_G m - N_G m = 0$.
+The map $d^0 : M \to (G \to M)$ is given by $(d^0 m)(g) = m - g\bullet m$. Using this formula, we obtain (by Lemma [norm comm](https://github.com/kbuzzard/ClassFieldTheory/blob/1e7f5dbe38358bd37a0643bb0db2dd3a436e6cb7/blueprint/src/_2_cohomology.tex#L428)) $d^0 (N_G m) (g) = g \bullet N_G m - N_G m = 0$.
 
 ## Lean
 
@@ -23,4 +23,4 @@ Formalized as [`Rep.tateNorm_comp_d`](https://kbuzzard.github.io/ClassFieldTheor
 
 ## Sources
 
-- [Class field theory blueprint: _2_cohomology.tex, line 449](https://github.com/kbuzzard/ClassFieldTheory/blob/629ae9ed781748980bb51ab6f5f338ad9d6db3e8/blueprint/src/_2_cohomology.tex#L449)
+- [Class field theory blueprint: _2_cohomology.tex, line 449](https://github.com/kbuzzard/ClassFieldTheory/blob/1e7f5dbe38358bd37a0643bb0db2dd3a436e6cb7/blueprint/src/_2_cohomology.tex#L449)

@@ -45,7 +45,7 @@ Let $\alpha$ be a proper type index. Suppose that we have model data for all typ
 
 - If $\beta, \gamma : \lambda$ where $\gamma < \beta$, for every $x : \mathsf{TSet}_\gamma$ there is some $y : \mathsf{TSet}_\beta$ such that $U_\beta(y)(\gamma) = \{ x \}$. We write $\operatorname{\mathsf{singleton}}_\beta(x)$ for this object $y$, which is uniquely defined by extensionality.
 
-Note that this structure contains data (the derivative maps for allowable permutations and the singleton operations), but the type is a subsingleton: any two inhabitants are propositionally equal. We will not use this fact directly, but the idea will have relevance in [Wrapping up the main induction](https://github.com/leanprover-community/con-nf/blob/edbce7eb98351870f553cfab6ccb7cab327e4259/blueprint/src/content.tex#L21).
+Note that this structure contains data (the derivative maps for allowable permutations and the singleton operations), but the type is a subsingleton: any two inhabitants are propositionally equal. We will not use this fact directly, but the idea will have relevance in [Wrapping up the main induction](https://github.com/leanprover-community/con-nf/blob/73f4033c7db83bce99c327606ad1ed9e947cd7f9/blueprint/src/content.tex#L21).
 
 ## Depends on
 
@@ -58,4 +58,4 @@ Formalized as [`ConNF.CoherentData`](https://leanprover-community.github.io/con-
 
 ## Sources
 
-- [Consistency of New Foundations blueprint: chapters/environment.tex, line 418](https://github.com/leanprover-community/con-nf/blob/edbce7eb98351870f553cfab6ccb7cab327e4259/blueprint/src/chapters/environment.tex#L418)
+- [Consistency of New Foundations blueprint: chapters/environment.tex, line 418](https://github.com/leanprover-community/con-nf/blob/73f4033c7db83bce99c327606ad1ed9e947cd7f9/blueprint/src/chapters/environment.tex#L418)

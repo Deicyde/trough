@@ -26,4 +26,4 @@ Formalized as [`CategoryTheory.Functor.Faithful.mapGrp`](https://yaeldillies.git
 
 ## Sources
 
-- [Toric varieties blueprint: chapters/1-2-obj.tex, line 7](https://github.com/YaelDillies/toric/blob/5956b80249ec5416a266f68b5142606b060d7628/blueprint/src/chapters/1-2-obj.tex#L7)
+- [Toric varieties blueprint: chapters/1-2-obj.tex, line 7](https://github.com/YaelDillies/toric/blob/97b1287db93f2eee84c8bb4e408058d9e721ce5b/blueprint/src/chapters/1-2-obj.tex#L7)

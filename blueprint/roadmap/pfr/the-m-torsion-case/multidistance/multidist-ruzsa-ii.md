@@ -33,4 +33,4 @@ Formalized as [`multidist_ruzsa_II`](https://teorth.github.io/pfr/docs/find/#doc
 
 ## Sources
 
-- [Polynomial Freiman-Ruzsa blueprint: chapter/torsion.tex, line 222](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/torsion.tex#L222)
+- [Polynomial Freiman-Ruzsa blueprint: chapter/torsion.tex, line 222](https://github.com/teorth/pfr/blob/1899ce8ed95fc310cce53d4c7ecfa2beb20ebec4/blueprint/src/chapter/torsion.tex#L222)

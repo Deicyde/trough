@@ -29,4 +29,4 @@ Formalized as [`Cayley.klein_trace_sum`](https://jcreedcmu.github.io/Noperthedro
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/reduction.tex, line 185](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/reduction.tex#L185)
+- [Noperthedron blueprint: chapters/reduction.tex, line 200](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/reduction.tex#L200)

@@ -25,4 +25,4 @@ Formalized as [`Noperthedron.exactVertex_norm_le_one`](https://jcreedcmu.github.
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/noperthedron.tex, line 82](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/noperthedron.tex#L82)
+- [Noperthedron blueprint: chapters/noperthedron.tex, line 66](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/noperthedron.tex#L66)

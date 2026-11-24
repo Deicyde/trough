@@ -2,7 +2,7 @@
 
 The Sphere Packing problem is a classic optimisation problem with widespread applications that go well beyond mathematics. The task is to determine the “densest" possible arrangement of spheres in a given space. It remains unsolved in all but finitely many dimensions.
 
-It was famously determined, in (11), that the optimal arrangement in $\mathbb{R}^8$ is given by the $E_8$ lattice. The result is strongly dependent on the Cohn-Elkies linear programming bound (Theorem 3.1 in (2)), which, if a $\mathbb{R}^d \to \mathbb{R}$ function satisfying certain conditions exists, bounds the optimal density of sphere packings in $\mathbb{R}^d$ in terms of it. The proof in (11) uses the theory of modular forms to construct a function that can be used to bound the density of all sphere packings in $\mathbb{R}^8$ above by the density of the $E_8$ lattice packing. This then allows us to conclude that no packing in $\mathbb{R}^8$ can be denser than the $E_8$ lattice packing.
+It was famously determined, in (12), that the optimal arrangement in $\mathbb{R}^8$ is given by the $E_8$ lattice. The result is strongly dependent on the Cohn-Elkies linear programming bound (Theorem 3.1 in (2)), which, if a $\mathbb{R}^d \to \mathbb{R}$ function satisfying certain conditions exists, bounds the optimal density of sphere packings in $\mathbb{R}^d$ in terms of it. The proof in (12) uses the theory of modular forms to construct a function that can be used to bound the density of all sphere packings in $\mathbb{R}^8$ above by the density of the $E_8$ lattice packing. This then allows us to conclude that no packing in $\mathbb{R}^8$ can be denser than the $E_8$ lattice packing.
 
 ## The Setup
 

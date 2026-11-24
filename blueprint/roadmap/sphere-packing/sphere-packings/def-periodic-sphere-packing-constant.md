@@ -24,4 +24,4 @@ Formalized as [`PeriodicSpherePackingConstant`](https://thefundamentaltheor3m.gi
 
 ## Sources
 
-- [Sphere packing in dimension 8 blueprint: subsections/lattice-periodic-packings.tex, line 43](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/lattice-periodic-packings.tex#L43)
+- [Sphere packing in dimension 8 blueprint: subsections/lattice-periodic-packings.tex, line 43](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/lattice-periodic-packings.tex#L43)

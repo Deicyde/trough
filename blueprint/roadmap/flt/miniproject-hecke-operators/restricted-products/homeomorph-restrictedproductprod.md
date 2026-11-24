@@ -27,4 +27,4 @@ Formalized as [`Homeomorph.restrictedProductProd`](https://ImperialCollegeLondon
 
 ## Sources
 
-- [Fermat's Last Theorem (Imperial) blueprint: chapter/HeckeOperatorProject.tex, line 160](https://github.com/ImperialCollegeLondon/FLT/blob/a3210204ad8876e851e32f73dd97d882bf1ccd0a/blueprint/src/chapter/HeckeOperatorProject.tex#L160)
+- [Fermat's Last Theorem (Imperial) blueprint: chapter/HeckeOperatorProject.tex, line 160](https://github.com/ImperialCollegeLondon/FLT/blob/019805815d7da565ed1e9f427b6fbd0cbc9d00d3/blueprint/src/chapter/HeckeOperatorProject.tex#L160)

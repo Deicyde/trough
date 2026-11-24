@@ -19,4 +19,4 @@ Stated as [`MvPolynomial.eq_MLE_of_degreeOf_le_one_of_eval_zeroOne_eq`](https://
 
 ## Sources
 
-- [ArkLib blueprint: polynomials/defs.tex, line 14](https://github.com/Verified-zkEVM/ArkLib/blob/e1c185ba001d225d1f3ea84071d67a8c6c56d6a0/blueprint/src/polynomials/defs.tex#L14)
+- [ArkLib blueprint: polynomials/defs.tex, line 14](https://github.com/Verified-zkEVM/ArkLib/blob/e9bcc82d3d33a1814822b9b9e6b135bc80d614ee/blueprint/src/polynomials/defs.tex#L14)

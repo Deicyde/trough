@@ -77,7 +77,7 @@ We still need to talk about topologies though, so let's finish by doing this. Le
 
 We now allow a slight change of index set. Unfortunately I don't think that we can deduce the results just stated above from this one, in Lean, because the product of $Y_w$ over a set of size 1 is not definitionally equal to $Y_w$.
 
-Recall definition [RestrictedProduct.relabelIso](https://github.com/ImperialCollegeLondon/FLT/blob/a3210204ad8876e851e32f73dd97d882bf1ccd0a/blueprint/src/chapter/AdeleMiniproject.tex#L556), giving us a bijection between two restricted products.
+Recall definition [RestrictedProduct.relabelIso](https://github.com/ImperialCollegeLondon/FLT/blob/019805815d7da565ed1e9f427b6fbd0cbc9d00d3/blueprint/src/chapter/AdeleMiniproject.tex#L556), giving us a bijection between two restricted products.
 
 Recall that if
 

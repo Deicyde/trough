@@ -23,4 +23,4 @@ Stated as [`Law.MagmaLaw.Equation1_maximal`](https://teorth.github.io/equational
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/general_implications.tex, line 29](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/general_implications.tex#L29)
+- [Equational Theories blueprint: chapter/general_implications.tex, line 29](https://github.com/teorth/equational_theories/blob/02b063b67143a897f070803482691c820770501d/blueprint/src/chapter/general_implications.tex#L29)

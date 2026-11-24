@@ -31,4 +31,4 @@ Formalized as [`Cayley.Pack.quick_real`](https://jcreedcmu.github.io/Noperthedro
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/certificates.tex, line 187](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/certificates.tex#L187)
+- [Noperthedron blueprint: chapters/certificates.tex, line 188](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/certificates.tex#L188)

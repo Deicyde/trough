@@ -2,7 +2,7 @@
 
 - [box](def-box.md)
 
-Normalizing every box to $[-1,1]^5$ means that every polynomial below is bounded on the same cube.
+The tree walk only uses the points of a box; the leaf tests use the normalized coordinates, so that every polynomial below is bounded on the same cube $[-1,1]^5$.
 
 - [bad](def-bad.md)
 

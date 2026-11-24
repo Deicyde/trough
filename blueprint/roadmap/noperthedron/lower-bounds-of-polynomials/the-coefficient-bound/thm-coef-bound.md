@@ -30,4 +30,4 @@ Formalized as [`Cayley.Pack.lower_le_ev`](https://jcreedcmu.github.io/Noperthedr
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/polybounds.tex, line 29](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/polybounds.tex#L29)
+- [Noperthedron blueprint: chapters/polybounds.tex, line 29](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/polybounds.tex#L29)

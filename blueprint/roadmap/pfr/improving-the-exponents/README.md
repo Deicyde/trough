@@ -2,7 +2,7 @@
 
 The arguments here are due to Jyun-Jie Liao.
 
-Previously in [Definition eta-def](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/entropy_pfr.tex#L3) we had set $\eta=1/9$. …
+Previously in [Definition eta-def](https://github.com/teorth/pfr/blob/1899ce8ed95fc310cce53d4c7ecfa2beb20ebec4/blueprint/src/chapter/entropy_pfr.tex#L3) we had set $\eta=1/9$. …
 
 Let $X^0_1, X^0_2$ be $G$-valued random variables, and let $X_1, X_2$ be $\tau$-minimizers as defined in [$\tau$-minimizer](../entropy-version-of-pfr/tau-min-def.md).
 

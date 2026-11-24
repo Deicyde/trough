@@ -30,4 +30,4 @@ Formalized as [`AlgebraicGeometry.essImage_bialgSpec`](https://yaeldillies.githu
 
 ## Sources
 
-- [Toric varieties blueprint: chapters/4-1-affine-group-schemes.tex, line 152](https://github.com/YaelDillies/toric/blob/5956b80249ec5416a266f68b5142606b060d7628/blueprint/src/chapters/4-1-affine-group-schemes.tex#L152)
+- [Toric varieties blueprint: chapters/4-1-affine-group-schemes.tex, line 152](https://github.com/YaelDillies/toric/blob/97b1287db93f2eee84c8bb4e408058d9e721ce5b/blueprint/src/chapters/4-1-affine-group-schemes.tex#L152)

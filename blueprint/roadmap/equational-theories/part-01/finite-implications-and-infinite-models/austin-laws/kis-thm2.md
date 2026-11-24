@@ -63,4 +63,4 @@ Formalized as [`InfModel.Equation28770_not_implies_Equation2`](https://teorth.gi
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/infinite_models.tex, line 46](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/infinite_models.tex#L46)
+- [Equational Theories blueprint: chapter/infinite_models.tex, line 46](https://github.com/teorth/equational_theories/blob/02b063b67143a897f070803482691c820770501d/blueprint/src/chapter/infinite_models.tex#L46)

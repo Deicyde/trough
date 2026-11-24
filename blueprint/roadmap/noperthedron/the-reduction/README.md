@@ -2,7 +2,7 @@
 
 This chapter shows that if $\operatorname{\mathbf{P}}$ is Rupert, then there is a Rupert pair of a special form, with coordinates in a bounded set.
 
-Theorem [rupert_implies_rot_rupert](../rupert-pairs/rupert-sets/thm-rupert-implies-rot-rupert.md) has already removed the translation, leaving two rotations with three parameters each. Rotating both shadows together in the screen preserves containment, so one of these six parameters is redundant. We use two parameters for the outer viewing direction and three for the relative rotation of the inner copy. Concretely, the coordinates reconstruct the pair as
+Lemma [exists_rup_pair](../rupert-pairs/shadows-and-the-separation-criterion/lem-exists-rup-pair.md) has already removed the translation, leaving two rotations with three parameters each. Rotating both shadows together in the screen preserves containment, so one of these six parameters is redundant. We use two parameters for the outer viewing direction and three for the relative rotation of the inner copy. Concretely, the coordinates reconstruct the pair as
 
 $$
 R_o = s(u,v), \qquad R_i = s(u,v)\,B_j\,\mathrm{Cay}(r).

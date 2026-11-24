@@ -8,7 +8,7 @@ proof: formalized
 
 # ineqAnew
 
-[Lemma ineqABnew-equiv](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/modform-ineq.tex#L50) holds.
+[Lemma ineqABnew-equiv](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/modform-ineq.tex#L50) holds.
 
 ## Depends on
 
@@ -24,4 +24,4 @@ Formalized as [`FG_inequality_1`](https://thefundamentaltheor3m.github.io/Sphere
 
 ## Sources
 
-- [Sphere packing in dimension 8 blueprint: subsections/modform-ineq.tex, line 85](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/modform-ineq.tex#L85)
+- [Sphere packing in dimension 8 blueprint: subsections/modform-ineq.tex, line 85](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/modform-ineq.tex#L85)

@@ -28,4 +28,4 @@ Formalized as [`Cayley.outerRot_row2`](https://jcreedcmu.github.io/Noperthedron/
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/cayley.tex, line 122](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/cayley.tex#L122)
+- [Noperthedron blueprint: chapters/cayley.tex, line 112](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/cayley.tex#L112)

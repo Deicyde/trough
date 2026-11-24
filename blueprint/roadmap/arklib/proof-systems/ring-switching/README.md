@@ -37,6 +37,7 @@ The shared protocol composes a checked head with product sum-check. Its endpoint
 For the concrete Binius construction, specialize the base to a finite field $K$ of cardinality $2$ and let $L$ be a finite extension field with a $K$-basis $\beta$ indexed by $\{0,\ldots,2^\kappa-1\}$, normalized by $\beta_0=1$. Use its associated tensor-product profile. Choose $\ell=\ell'+\kappa$, positive integers $\ell'$, $R$ and $\vartheta$ with $\vartheta\mid\ell'$ and $\ell'+R<2^\kappa$, and a number of opening queries $\gamma\in\mathbb{N}$. Challenges in $L$ use the uniform sampler.
 
 - [Full Binius ring-switching reduction](def-full-ring-switching.md)
+- [Unrolled FRI-Binius](def-unrolled-fri-binius.md)
 
 ## Security
 
@@ -50,3 +51,4 @@ Oracle compatibility specifies the relations certified about the program. Honest
 Every checking verifier aborts on a failed check, so each verifier above has a guarded form and the round-by-round guarantees imply ordinary knowledge soundness at the summed error.
 
 - [Knowledge soundness](thm-ring-switching-knowledge-soundness.md)
+- [Security of unrolled FRI-Binius](thm-unrolled-fri-binius-security.md)

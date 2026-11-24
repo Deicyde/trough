@@ -19,4 +19,4 @@ Stated as [`KZG.CommitmentScheme.correctness`](https://verified-zkevm.github.io/
 
 ## Sources
 
-- [ArkLib blueprint: commitments/kzg.tex, line 27](https://github.com/Verified-zkEVM/ArkLib/blob/e1c185ba001d225d1f3ea84071d67a8c6c56d6a0/blueprint/src/commitments/kzg.tex#L27)
+- [ArkLib blueprint: commitments/kzg.tex, line 27](https://github.com/Verified-zkEVM/ArkLib/blob/e9bcc82d3d33a1814822b9b9e6b135bc80d614ee/blueprint/src/commitments/kzg.tex#L27)

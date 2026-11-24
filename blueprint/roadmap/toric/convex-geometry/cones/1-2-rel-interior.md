@@ -19,4 +19,4 @@ Formalized as [`intrinsicInterior`](https://yaeldillies.github.io/toric/docs/fin
 
 ## Sources
 
-- [Toric varieties blueprint: chapters/3-1-cones.tex, line 335](https://github.com/YaelDillies/toric/blob/5956b80249ec5416a266f68b5142606b060d7628/blueprint/src/chapters/3-1-cones.tex#L335)
+- [Toric varieties blueprint: chapters/3-1-cones.tex, line 335](https://github.com/YaelDillies/toric/blob/97b1287db93f2eee84c8bb4e408058d9e721ce5b/blueprint/src/chapters/3-1-cones.tex#L335)

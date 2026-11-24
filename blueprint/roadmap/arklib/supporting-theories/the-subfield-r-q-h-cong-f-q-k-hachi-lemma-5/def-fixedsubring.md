@@ -19,4 +19,4 @@ Formalized as [`ArkLib.Lattices.CyclotomicModulus.fixedSubring`](https://verifie
 
 ## Sources
 
-- [ArkLib blueprint: lattices/hachi_subfield.tex, line 14](https://github.com/Verified-zkEVM/ArkLib/blob/e1c185ba001d225d1f3ea84071d67a8c6c56d6a0/blueprint/src/lattices/hachi_subfield.tex#L14)
+- [ArkLib blueprint: lattices/hachi_subfield.tex, line 14](https://github.com/Verified-zkEVM/ArkLib/blob/e9bcc82d3d33a1814822b9b9e6b135bc80d614ee/blueprint/src/lattices/hachi_subfield.tex#L14)

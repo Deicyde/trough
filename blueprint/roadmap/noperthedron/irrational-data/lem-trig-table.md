@@ -24,4 +24,4 @@ Formalized as [`Cayley.trig_err`](https://jcreedcmu.github.io/Noperthedron/docs/
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/data.tex, line 33](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/data.tex#L33)
+- [Noperthedron blueprint: chapters/data.tex, line 33](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/data.tex#L33)

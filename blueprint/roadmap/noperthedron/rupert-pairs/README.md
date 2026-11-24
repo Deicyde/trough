@@ -4,5 +4,4 @@ Write $\pi \colon \operatorname{\mathbb{R}}^3 \to \operatorname{\mathbb{R}}^2$ f
 
 - [rupert](def-rupert.md)
 - [exists_non_rupert](def-exists-non-rupert.md)
-- [Rupert sets](rupert-sets/README.md)
 - [Shadows and the separation criterion](shadows-and-the-separation-criterion/README.md)

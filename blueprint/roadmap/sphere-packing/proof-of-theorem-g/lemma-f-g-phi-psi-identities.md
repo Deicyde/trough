@@ -19,10 +19,11 @@ $$
 ## Depends on
 
 - [FG-definition](def-fg-definition.md)
+- [phi4-phi2-phi0](../fourier-eigenfunctions-with-double-zeroes-at-lat/part-01/def-phi4-phi2-phi0.md)
 
 ## Proof
 
-(7) is clear from the definitions. (8) is already shown in Lemma [psi-new](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/construct-a-b.tex#L449).
+(7) is clear from the definitions. (8) is already shown in Lemma [psi-new](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/construct-a-b.tex#L555).
 
 ## Lean
 
@@ -30,4 +31,4 @@ Formalized as [`φ₀_eq_F_div_disc`](https://thefundamentaltheor3m.github.io/Sp
 
 ## Sources
 
-- [Sphere packing in dimension 8 blueprint: subsections/modform-ineq.tex, line 38](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/modform-ineq.tex#L38)
+- [Sphere packing in dimension 8 blueprint: subsections/modform-ineq.tex, line 38](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/modform-ineq.tex#L38)

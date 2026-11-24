@@ -46,4 +46,4 @@ Formalized as [`ConNF.BaseAction.insideExtension`](https://leanprover-community.
 
 ## Sources
 
-- [Consistency of New Foundations blueprint: chapters/foa.tex, line 439](https://github.com/leanprover-community/con-nf/blob/edbce7eb98351870f553cfab6ccb7cab327e4259/blueprint/src/chapters/foa.tex#L439)
+- [Consistency of New Foundations blueprint: chapters/foa.tex, line 439](https://github.com/leanprover-community/con-nf/blob/73f4033c7db83bce99c327606ad1ed9e947cd7f9/blueprint/src/chapters/foa.tex#L439)

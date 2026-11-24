@@ -28,4 +28,4 @@ Formalized as [`ConNF.ModelData`](https://leanprover-community.github.io/con-nf/
 
 ## Sources
 
-- [Consistency of New Foundations blueprint: chapters/environment.tex, line 349](https://github.com/leanprover-community/con-nf/blob/edbce7eb98351870f553cfab6ccb7cab327e4259/blueprint/src/chapters/environment.tex#L349)
+- [Consistency of New Foundations blueprint: chapters/environment.tex, line 349](https://github.com/leanprover-community/con-nf/blob/73f4033c7db83bce99c327606ad1ed9e947cd7f9/blueprint/src/chapters/environment.tex#L349)

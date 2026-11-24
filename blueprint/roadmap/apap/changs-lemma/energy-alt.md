@@ -28,4 +28,4 @@ Formalized as [`boringEnergy_eq`](https://yaeldillies.github.io/apap/docs/find/#
 
 ## Sources
 
-- [Kelley-Meka bound blueprint: chapter/chang.tex, line 151](https://github.com/YaelDillies/apap/blob/5b8cc8c5483512ee077ffa5a8bafc0a1a4c09f86/blueprint/src/chapter/chang.tex#L151)
+- [Kelley-Meka bound blueprint: chapter/chang.tex, line 151](https://github.com/YaelDillies/apap/blob/b401f6e22417e6dbe6f87d6620571ea6c513aed3/blueprint/src/chapter/chang.tex#L151)

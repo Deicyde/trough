@@ -28,4 +28,4 @@ Formalized as [`KLDiv_nonneg`](https://teorth.github.io/pfr/docs/find/#doc/KLDiv
 
 ## Sources
 
-- [Polynomial Freiman-Ruzsa blueprint: chapter/further_improvement.tex, line 22](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/further_improvement.tex#L22)
+- [Polynomial Freiman-Ruzsa blueprint: chapter/further_improvement.tex, line 22](https://github.com/teorth/pfr/blob/1899ce8ed95fc310cce53d4c7ecfa2beb20ebec4/blueprint/src/chapter/further_improvement.tex#L22)

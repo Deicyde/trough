@@ -7,7 +7,7 @@ statement: formalized
 
 # BaseAction
 
-A *base action* is a pair $\xi = (\xi^{\mathcal A}, \xi^{\mathcal N})$ such that $\xi^{\mathcal A}$ and $\xi^{\mathcal N}$ are relations of atoms and near-litters respectively ([Definition relation_props](https://github.com/leanprover-community/con-nf/blob/edbce7eb98351870f553cfab6ccb7cab327e4259/blueprint/src/chapters/auxiliary.tex#L3)), such that
+A *base action* is a pair $\xi = (\xi^{\mathcal A}, \xi^{\mathcal N})$ such that $\xi^{\mathcal A}$ and $\xi^{\mathcal N}$ are relations of atoms and near-litters respectively ([Definition relation_props](https://github.com/leanprover-community/con-nf/blob/73f4033c7db83bce99c327606ad1ed9e947cd7f9/blueprint/src/chapters/auxiliary.tex#L3)), such that
 
 - $\xi^{\mathcal A}$ and $\xi^{\mathcal N}$ are defined on small sets;
 
@@ -42,4 +42,4 @@ Formalized as [`ConNF.BaseAction`](https://leanprover-community.github.io/con-nf
 
 ## Sources
 
-- [Consistency of New Foundations blueprint: chapters/foa.tex, line 409](https://github.com/leanprover-community/con-nf/blob/edbce7eb98351870f553cfab6ccb7cab327e4259/blueprint/src/chapters/foa.tex#L409)
+- [Consistency of New Foundations blueprint: chapters/foa.tex, line 409](https://github.com/leanprover-community/con-nf/blob/73f4033c7db83bce99c327606ad1ed9e947cd7f9/blueprint/src/chapters/foa.tex#L409)

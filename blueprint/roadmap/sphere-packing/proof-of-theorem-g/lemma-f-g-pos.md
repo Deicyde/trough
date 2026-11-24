@@ -31,4 +31,4 @@ Formalized as [`F_imag_axis_pos`](https://thefundamentaltheor3m.github.io/Sphere
 
 ## Sources
 
-- [Sphere packing in dimension 8 blueprint: subsections/modform-ineq.tex, line 74](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/modform-ineq.tex#L74)
+- [Sphere packing in dimension 8 blueprint: subsections/modform-ineq.tex, line 74](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/modform-ineq.tex#L74)

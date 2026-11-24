@@ -33,4 +33,4 @@ Formalized as [`Cayley.gap_identity`](https://jcreedcmu.github.io/Noperthedron/d
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/certificates.tex, line 52](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/certificates.tex#L52)
+- [Noperthedron blueprint: chapters/certificates.tex, line 53](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/certificates.tex#L53)

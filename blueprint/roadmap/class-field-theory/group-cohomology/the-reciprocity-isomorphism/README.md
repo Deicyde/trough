@@ -21,7 +21,7 @@ The reciprocity isomorphism depends on the choice of a fundamental class. In our
 
 **Remark.** Again when $R={\mathbb Z}$ the above proof can be made much simpler.
 
-We issue a warning: the previous lemma shows that the restriction of a fundamental class to a subgroup is a fundamental class. Later on we shall be talking about *the* fundamental class in local class field theory, as opposed to *a* fundamental class, and lemma [restriction fundamental class generates](https://github.com/kbuzzard/ClassFieldTheory/blob/629ae9ed781748980bb51ab6f5f338ad9d6db3e8/blueprint/src/_2_cohomology.tex#L2060) will not be good enough; we will need to check that *the* fundamental class restricts to *the* fundamental class.
+We issue a warning: the previous lemma shows that the restriction of a fundamental class to a subgroup is a fundamental class. Later on we shall be talking about *the* fundamental class in local class field theory, as opposed to *a* fundamental class, and lemma [restriction fundamental class generates](https://github.com/kbuzzard/ClassFieldTheory/blob/1e7f5dbe38358bd37a0643bb0db2dd3a436e6cb7/blueprint/src/_2_cohomology.tex#L2060) will not be good enough; we will need to check that *the* fundamental class restricts to *the* fundamental class.
 
 Say $(R,G,M)$ is a finite class formation. We now begin the construction of the reciprocity isomorphism $G^{\mathrm{ab}}\otimes R\cong H^0_{\mathrm{Tate}}(G,M)$ from a fundamental class.
 

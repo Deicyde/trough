@@ -20,4 +20,4 @@ Formalized as [`Cayley.Bad`](https://jcreedcmu.github.io/Noperthedron/docs/find/
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/certificates.tex, line 20](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/certificates.tex#L20)
+- [Noperthedron blueprint: chapters/certificates.tex, line 21](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/certificates.tex#L21)

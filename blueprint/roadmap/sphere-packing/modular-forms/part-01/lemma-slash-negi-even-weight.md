@@ -24,4 +24,4 @@ Formalized as [`modular_slash_negI_of_even`](https://thefundamentaltheor3m.githu
 
 ## Sources
 
-- [Sphere packing in dimension 8 blueprint: subsections/modular-forms.tex, line 85](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/modular-forms.tex#L85)
+- [Sphere packing in dimension 8 blueprint: subsections/modular-forms.tex, line 85](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/modular-forms.tex#L85)

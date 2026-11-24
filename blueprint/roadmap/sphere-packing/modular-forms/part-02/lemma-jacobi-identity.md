@@ -29,7 +29,7 @@ f|_{T} &= (-H_2 + H_3 - H_4)^{2} = f
 \end{aligned}
 $$
 
-so $f$ is actually a modular form of level $1$. By considering the limit as $z \to i\infty$, $f$ is a cusp form, so we get $f = 0$ from [Corollary dim-mf](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/modular-forms.tex#L319).
+so $f$ is actually a modular form of level $1$. By considering the limit as $z \to i\infty$, $f$ is a cusp form, so we get $f = 0$ from [Corollary dim-mf](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/modular-forms.tex#L319).
 
 ## Lean
 
@@ -37,4 +37,4 @@ Formalized as [`jacobi_identity`](https://thefundamentaltheor3m.github.io/Sphere
 
 ## Sources
 
-- [Sphere packing in dimension 8 blueprint: subsections/modular-forms.tex, line 499](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/modular-forms.tex#L499)
+- [Sphere packing in dimension 8 blueprint: subsections/modular-forms.tex, line 499](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/modular-forms.tex#L499)

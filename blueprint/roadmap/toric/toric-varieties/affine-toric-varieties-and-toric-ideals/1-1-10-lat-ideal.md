@@ -23,4 +23,4 @@ Formalized as [`AddMonoidAlgebra.monoidIdeal`](https://yaeldillies.github.io/tor
 
 ## Sources
 
-- [Toric varieties blueprint: chapters/5-3-toric-ideal.tex, line 11](https://github.com/YaelDillies/toric/blob/5956b80249ec5416a266f68b5142606b060d7628/blueprint/src/chapters/5-3-toric-ideal.tex#L11)
+- [Toric varieties blueprint: chapters/5-3-toric-ideal.tex, line 11](https://github.com/YaelDillies/toric/blob/97b1287db93f2eee84c8bb4e408058d9e721ce5b/blueprint/src/chapters/5-3-toric-ideal.tex#L11)

@@ -71,4 +71,4 @@ Stated as [`Eq63.Greedy.Extension.next`](https://teorth.github.io/equational_the
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/infinite_magma_constructions.tex, line 801](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/infinite_magma_constructions.tex#L801)
+- [Equational Theories blueprint: chapter/infinite_magma_constructions.tex, line 801](https://github.com/teorth/equational_theories/blob/02b063b67143a897f070803482691c820770501d/blueprint/src/chapter/infinite_magma_constructions.tex#L801)

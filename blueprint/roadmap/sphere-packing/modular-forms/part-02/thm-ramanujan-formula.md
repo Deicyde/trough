@@ -41,7 +41,7 @@ E_2'|_{4}\gamma &= E_2' - \frac{ic}{\pi(cz + d)} E_2 - \frac{3c^2}{\pi^2 (cz + d
 E_2^2|_{4}\gamma &= E_2^2 - \frac{12ic}{\pi(cz + d)} E_2 - \frac{36c^2}{\pi^2 (cz + d)^2}\qquad\text{(33)}\end{aligned}
 $$
 
-Hence, (26)$-\frac{1}{12}$(33) is a modular form of weight 4. By [Corollary dim-mf](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/modular-forms.tex#L319), they should be multiples of $E_4, E_6, E_4^2$, and the proportionality constants can be determined by observing the constant terms of $q$-expansions.
+Hence, (26)$-\frac{1}{12}$(33) is a modular form of weight 4. By [Corollary dim-mf](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/modular-forms.tex#L319), they should be multiples of $E_4, E_6, E_4^2$, and the proportionality constants can be determined by observing the constant terms of $q$-expansions.
 
 ## Lean
 
@@ -49,4 +49,4 @@ Stated as [`Derivative.normalizedDerivOfComplex_E₂`](https://thefundamentalthe
 
 ## Sources
 
-- [Sphere packing in dimension 8 blueprint: subsections/modular-forms.tex, line 631](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/modular-forms.tex#L631)
+- [Sphere packing in dimension 8 blueprint: subsections/modular-forms.tex, line 631](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/modular-forms.tex#L631)

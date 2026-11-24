@@ -35,4 +35,4 @@ Stated as [`groupCohomology.trivialCohomology_of_even_of_odd_of_solvable`](https
 
 ## Sources
 
-- [Class field theory blueprint: _2_cohomology.tex, line 1780](https://github.com/kbuzzard/ClassFieldTheory/blob/629ae9ed781748980bb51ab6f5f338ad9d6db3e8/blueprint/src/_2_cohomology.tex#L1780)
+- [Class field theory blueprint: _2_cohomology.tex, line 1780](https://github.com/kbuzzard/ClassFieldTheory/blob/1e7f5dbe38358bd37a0643bb0db2dd3a436e6cb7/blueprint/src/_2_cohomology.tex#L1780)

@@ -23,4 +23,4 @@ Formalized as [`IsRupert`](https://jcreedcmu.github.io/Noperthedron/docs/find/#d
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/prelims.tex, line 7](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/prelims.tex#L7)
+- [Noperthedron blueprint: chapters/prelims.tex, line 7](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/prelims.tex#L7)

@@ -1,6 +1,6 @@
 # Binius
 
-This section documents the binary tower fields underlying the Binius commitment scheme protocols. Their hierarchical structure enables highly efficient arithmetic. ArkLib formalizes Binary Basefold (`ArkLib/ProofSystem/Binius/BinaryBasefold`) and the Binius ring-switching frontend composed with a separate Binary Basefold opening (`ArkLib/ProofSystem/Binius/FRIBinius`); Section [Ring Switching](../ring-switching/README.md) states that composition. The fused FRI-Binius protocol is not part of this coverage; `ROADMAP.md` records its status. This chapter does not describe the protocols further.
+This section documents the binary tower fields underlying the Binius commitment scheme protocols. Their hierarchical structure enables highly efficient arithmetic. ArkLib formalizes Binary Basefold (`ArkLib/ProofSystem/Binius/BinaryBasefold`) and the Binius ring-switching frontend composed with a separate Binary Basefold opening (`ArkLib/ProofSystem/Binius/FRIBinius`); Section [Ring Switching](../ring-switching/README.md) states that composition. The unrolled protocol of ([Diamond and Posen 2024](https://eprint.iacr.org/archive/2024/504/20250922:164810)) (Construction 5.1) for $K = \mathbb{F}_2$, which runs the ring-switching sum-check as the Binary Basefold sum-check, is formalized in `ArkLib/ProofSystem/Binius/FRIBinius/Unrolled` (Definition [Unrolled FRI-Binius](../ring-switching/def-unrolled-fri-binius.md)). This chapter does not describe the protocols further.
 
 ## Binary Tower Fields
 

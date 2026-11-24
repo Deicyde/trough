@@ -15,5 +15,4 @@ The Rodrigues form is the source of the blow-up identity (Lemma [Blow-up identit
 
 - [cayley_trace](lem-cayley-trace.md)
 - [cayley_surj](thm-cayley-surj.md)
-- [Axis-angle form](lem-axis-angle.md)
 - [Outer views](outer-views/README.md)

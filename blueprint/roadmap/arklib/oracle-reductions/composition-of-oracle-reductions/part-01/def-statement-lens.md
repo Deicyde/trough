@@ -22,4 +22,4 @@ Formalized as [`Statement.Lens`](https://verified-zkevm.github.io/ArkLib/docs/fi
 
 ## Sources
 
-- [ArkLib blueprint: oracle_reductions/composition.tex, line 264](https://github.com/Verified-zkEVM/ArkLib/blob/e1c185ba001d225d1f3ea84071d67a8c6c56d6a0/blueprint/src/oracle_reductions/composition.tex#L264)
+- [ArkLib blueprint: oracle_reductions/composition.tex, line 264](https://github.com/Verified-zkEVM/ArkLib/blob/e9bcc82d3d33a1814822b9b9e6b135bc80d614ee/blueprint/src/oracle_reductions/composition.tex#L264)

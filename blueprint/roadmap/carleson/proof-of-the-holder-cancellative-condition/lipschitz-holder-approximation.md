@@ -199,4 +199,4 @@ Formalized as [`support_holderApprox_subset`](https://fpvandoorn.github.io/carle
 
 ## Sources
 
-- [Carleson's theorem blueprint: chapter/main.tex, line 6460](https://github.com/fpvandoorn/carleson/blob/d4446d3cab5d096d936a94e998d24c413b2b017d/blueprint/src/chapter/main.tex#L6460)
+- [Carleson's theorem blueprint: chapter/main.tex, line 6460](https://github.com/fpvandoorn/carleson/blob/f7487cc9da4d1e73f009dc0280cd5b958f3e2c78/blueprint/src/chapter/main.tex#L6460)

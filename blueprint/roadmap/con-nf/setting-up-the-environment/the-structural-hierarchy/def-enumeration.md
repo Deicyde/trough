@@ -7,7 +7,7 @@ statement: formalized
 
 # enumeration
 
-Let $\tau$ be a type. An *enumeration* of $\tau$ is a pair $E = (i, f)$ where $i : \kappa$ and $f$ is a partial function $\kappa \to \tau$, such that all domain elements of $f$ are strictly less than $i$. (This should be encoded as a coinjective relation $\kappa \to \tau \to \mathsf{Prop}$; see [Definition relation_props](https://github.com/leanprover-community/con-nf/blob/edbce7eb98351870f553cfab6ccb7cab327e4259/blueprint/src/chapters/auxiliary.tex#L3).) If $x : \tau$, we write $x \in E$ for $x \in \operatorname{\mathsf{ran}} f$. The set $\{ y \mid y \in E \}$, which we may also loosely call $E$, is small. We will write $\varnothing$ for the empty enumeration $(0, \varnothing)$.
+Let $\tau$ be a type. An *enumeration* of $\tau$ is a pair $E = (i, f)$ where $i : \kappa$ and $f$ is a partial function $\kappa \to \tau$, such that all domain elements of $f$ are strictly less than $i$. (This should be encoded as a coinjective relation $\kappa \to \tau \to \mathsf{Prop}$; see [Definition relation_props](https://github.com/leanprover-community/con-nf/blob/73f4033c7db83bce99c327606ad1ed9e947cd7f9/blueprint/src/chapters/auxiliary.tex#L3).) If $x : \tau$, we write $x \in E$ for $x \in \operatorname{\mathsf{ran}} f$. The set $\{ y \mid y \in E \}$, which we may also loosely call $E$, is small. We will write $\varnothing$ for the empty enumeration $(0, \varnothing)$.
 
 If $g : \tau \to \sigma$, then $g$ lifts to a direct image function mapping enumerations of $\tau$ to enumerations of $\sigma$:
 
@@ -35,7 +35,7 @@ We define a partial order on enumerations by setting $(i, e) \leq (j, f)$ if and
 
 Every small subset of $\tau$ is the range of some enumeration of $\tau$.
 
-If $\#\tau \leq \#\mu$, then there are at most $\#\mu$-many enumerations of $\tau$: enumerations are determined by an element of $\kappa$ and a small subset of $\kappa \times \tau$. If $\#\tau < \#\mu$, then there are strictly less than $\#\mu$-many enumerations of $\tau$: use the same reasoning and apply [mathlib](https://github.com/leanprover-community/con-nf/blob/edbce7eb98351870f553cfab6ccb7cab327e4259/blueprint/src/chapters/auxiliary.tex#L104).
+If $\#\tau \leq \#\mu$, then there are at most $\#\mu$-many enumerations of $\tau$: enumerations are determined by an element of $\kappa$ and a small subset of $\kappa \times \tau$. If $\#\tau < \#\mu$, then there are strictly less than $\#\mu$-many enumerations of $\tau$: use the same reasoning and apply [mathlib](https://github.com/leanprover-community/con-nf/blob/73f4033c7db83bce99c327606ad1ed9e947cd7f9/blueprint/src/chapters/auxiliary.tex#L104).
 
 ## Depends on
 
@@ -47,4 +47,4 @@ Formalized as [`ConNF.Enumeration`](https://leanprover-community.github.io/con-n
 
 ## Sources
 
-- [Consistency of New Foundations blueprint: chapters/environment.tex, line 211](https://github.com/leanprover-community/con-nf/blob/edbce7eb98351870f553cfab6ccb7cab327e4259/blueprint/src/chapters/environment.tex#L211)
+- [Consistency of New Foundations blueprint: chapters/environment.tex, line 211](https://github.com/leanprover-community/con-nf/blob/73f4033c7db83bce99c327606ad1ed9e947cd7f9/blueprint/src/chapters/environment.tex#L211)

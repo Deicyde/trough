@@ -24,4 +24,4 @@ Formalized as [`Cayley.group_approx`](https://jcreedcmu.github.io/Noperthedron/d
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/data.tex, line 67](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/data.tex#L67)
+- [Noperthedron blueprint: chapters/data.tex, line 69](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/data.tex#L69)

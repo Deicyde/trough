@@ -1,9 +1,9 @@
 {
  "repo": "jcreedcmu/Noperthedron",
- "rev": "434011e647523fac1a7116a77df5ac6f283e3fbb",
- "date": "2026-11-09T22:29:17-05:00",
+ "rev": "0143f65be7f59b3ac09b99debb9c37944a0a2f4b",
+ "date": "2026-11-24T01:04:14-05:00",
  "entry": "blueprint/src/web.tex",
  "license": "Apache-2.0",
  "text": true,
- "nodes": 69
+ "nodes": 67
 }

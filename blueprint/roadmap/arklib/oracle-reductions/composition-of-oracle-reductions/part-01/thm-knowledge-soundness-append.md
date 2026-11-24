@@ -21,4 +21,4 @@ Stated as [`Verifier.append_knowledgeSoundness`](https://verified-zkevm.github.i
 
 ## Sources
 
-- [ArkLib blueprint: oracle_reductions/composition.tex, line 171](https://github.com/Verified-zkEVM/ArkLib/blob/e1c185ba001d225d1f3ea84071d67a8c6c56d6a0/blueprint/src/oracle_reductions/composition.tex#L171)
+- [ArkLib blueprint: oracle_reductions/composition.tex, line 171](https://github.com/Verified-zkEVM/ArkLib/blob/e9bcc82d3d33a1814822b9b9e6b135bc80d614ee/blueprint/src/oracle_reductions/composition.tex#L171)

@@ -10,7 +10,7 @@ It is important to note that membership across types in $\mathsf{TTT}$ behaves i
 
 The comprehension axiom allows a set to be built which has a specified extension in a single type. The elements not of this type may be considered ‘controlled junk’.
 
-We now present the following striking theorem, which we will prove a version of in detail in [Model theory and verifying $\operatorname{\mathsf{Con}}({\mathsf{NF}})$](https://github.com/leanprover-community/con-nf/blob/edbce7eb98351870f553cfab6ccb7cab327e4259/blueprint/src/content.tex#L29).
+We now present the following striking theorem, which we will prove a version of in detail in [Model theory and verifying $\operatorname{\mathsf{Con}}({\mathsf{NF}})$](https://github.com/leanprover-community/con-nf/blob/73f4033c7db83bce99c327606ad1ed9e947cd7f9/blueprint/src/content.tex#L29).
 
 **Theorem (Holmes).** $\mathsf{NF}$ is consistent if and only if $\mathsf{TTT}$ is consistent. ([Holmes 1995](http://www.jstor.org/stable/2275515))
 

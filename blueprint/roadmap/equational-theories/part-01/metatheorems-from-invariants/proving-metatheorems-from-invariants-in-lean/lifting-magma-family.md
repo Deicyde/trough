@@ -22,4 +22,4 @@ Formalized as [`LiftingMagmaFamily`](https://teorth.github.io/equational_theorie
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/metatheorems_from_invariants.tex, line 114](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/metatheorems_from_invariants.tex#L114)
+- [Equational Theories blueprint: chapter/metatheorems_from_invariants.tex, line 114](https://github.com/teorth/equational_theories/blob/02b063b67143a897f070803482691c820770501d/blueprint/src/chapter/metatheorems_from_invariants.tex#L114)

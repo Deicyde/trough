@@ -54,7 +54,7 @@ $$
 \end{aligned}
 $$
 
-which proves (9). Similarly, (10) can be proved using Proposition [theta-der](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/modular-forms.tex#L669) and Lemma [lv1-lv2-identities](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/modular-forms.tex#L519).
+which proves (9). Similarly, (10) can be proved using Proposition [theta-der](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/modular-forms.tex#L669) and Lemma [lv1-lv2-identities](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/modular-forms.tex#L519).
 
 ## Lean
 
@@ -62,4 +62,4 @@ Formalized as [`MLDE_F`](https://thefundamentaltheor3m.github.io/Sphere-Packing-
 
 ## Sources
 
-- [Sphere packing in dimension 8 blueprint: subsections/modform-ineq.tex, line 93](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/modform-ineq.tex#L93)
+- [Sphere packing in dimension 8 blueprint: subsections/modform-ineq.tex, line 93](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/modform-ineq.tex#L93)

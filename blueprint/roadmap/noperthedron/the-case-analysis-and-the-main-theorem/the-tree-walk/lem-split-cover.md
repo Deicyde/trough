@@ -16,7 +16,7 @@ Every point of a box is a point of one of its two halves.
 
 ## Proof
 
-If $t_d \le 0$ the point is the point of the lower half at $2 t_d + 1$, otherwise of the upper half at $2 t_d - 1$.
+If $2^K X_d \le c_d$ the point lies in the lower half, otherwise in the upper half; the other coordinates are unchanged (or all doubled, when the scale is increased).
 
 ## Lean
 
@@ -24,4 +24,4 @@ Formalized as [`Cayley.Pack.split_cover`](https://jcreedcmu.github.io/Noperthedr
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/main.tex, line 51](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/main.tex#L51)
+- [Noperthedron blueprint: chapters/main.tex, line 51](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/main.tex#L51)

@@ -19,4 +19,4 @@ Formalized as [`ArkLib.Lattices.Ajtai.InnerOuter.hachiNonrecursive`](https://ver
 
 ## Sources
 
-- [ArkLib blueprint: commitments/hachi.tex, line 26](https://github.com/Verified-zkEVM/ArkLib/blob/e1c185ba001d225d1f3ea84071d67a8c6c56d6a0/blueprint/src/commitments/hachi.tex#L26)
+- [ArkLib blueprint: commitments/hachi.tex, line 26](https://github.com/Verified-zkEVM/ArkLib/blob/e9bcc82d3d33a1814822b9b9e6b135bc80d614ee/blueprint/src/commitments/hachi.tex#L26)

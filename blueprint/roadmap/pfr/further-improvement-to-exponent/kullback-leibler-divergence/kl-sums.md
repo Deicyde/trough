@@ -33,4 +33,4 @@ Formalized as [`KLDiv_add_le_KLDiv_of_indep`](https://teorth.github.io/pfr/docs/
 
 ## Sources
 
-- [Polynomial Freiman-Ruzsa blueprint: chapter/further_improvement.tex, line 56](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/further_improvement.tex#L56)
+- [Polynomial Freiman-Ruzsa blueprint: chapter/further_improvement.tex, line 56](https://github.com/teorth/pfr/blob/1899ce8ed95fc310cce53d4c7ecfa2beb20ebec4/blueprint/src/chapter/further_improvement.tex#L56)

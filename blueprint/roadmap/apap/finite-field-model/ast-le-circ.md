@@ -28,4 +28,4 @@ Formalized as [`cLpNorm_conv_le_cLpNorm_dconv`](https://yaeldillies.github.io/ap
 
 ## Sources
 
-- [Kelley-Meka bound blueprint: chapter/ff.tex, line 63](https://github.com/YaelDillies/apap/blob/5b8cc8c5483512ee077ffa5a8bafc0a1a4c09f86/blueprint/src/chapter/ff.tex#L63)
+- [Kelley-Meka bound blueprint: chapter/ff.tex, line 63](https://github.com/YaelDillies/apap/blob/b401f6e22417e6dbe6f87d6620571ea6c513aed3/blueprint/src/chapter/ff.tex#L63)

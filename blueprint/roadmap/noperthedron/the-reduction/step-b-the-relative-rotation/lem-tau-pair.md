@@ -25,4 +25,4 @@ Formalized as [`Cayley.tauPair`](https://jcreedcmu.github.io/Noperthedron/docs/f
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/reduction.tex, line 124](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/reduction.tex#L124)
+- [Noperthedron blueprint: chapters/reduction.tex, line 139](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/reduction.tex#L139)

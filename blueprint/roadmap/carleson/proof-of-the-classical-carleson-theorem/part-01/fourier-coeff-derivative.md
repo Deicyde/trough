@@ -28,4 +28,4 @@ Formalized as [`fourierCoeffOn_of_hasDerivAt`](https://fpvandoorn.github.io/carl
 
 ## Sources
 
-- [Carleson's theorem blueprint: chapter/main.tex, line 8511](https://github.com/fpvandoorn/carleson/blob/d4446d3cab5d096d936a94e998d24c413b2b017d/blueprint/src/chapter/main.tex#L8511)
+- [Carleson's theorem blueprint: chapter/main.tex, line 8511](https://github.com/fpvandoorn/carleson/blob/f7487cc9da4d1e73f009dc0280cd5b958f3e2c78/blueprint/src/chapter/main.tex#L8511)

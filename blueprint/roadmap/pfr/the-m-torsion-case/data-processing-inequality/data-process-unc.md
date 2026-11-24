@@ -29,4 +29,4 @@ Formalized as [`ProbabilityTheory.mutual_comp_comp_le`](https://teorth.github.io
 
 ## Sources
 
-- [Polynomial Freiman-Ruzsa blueprint: chapter/torsion.tex, line 21](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/torsion.tex#L21)
+- [Polynomial Freiman-Ruzsa blueprint: chapter/torsion.tex, line 21](https://github.com/teorth/pfr/blob/1899ce8ed95fc310cce53d4c7ecfa2beb20ebec4/blueprint/src/chapter/torsion.tex#L21)

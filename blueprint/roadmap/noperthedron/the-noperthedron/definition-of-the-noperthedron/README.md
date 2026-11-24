@@ -25,23 +25,7 @@ $$
 
 - [c1_c2_c3_norms](lem-c1-c2-c3-norms.md)
 
-Rotations about the $x, y, z$ axes $R_x,R_y,R_z:$ $\mathbb{R}\to \mathbb{R}^{3\times 3}$ are defined in the usual way:
-
-$$
-R_x(\alpha):=
-\begin{pmatrix}
-1 & 0 & 0\\
-0 & \cos\alpha & -\sin\alpha\\
-0 & \sin\alpha & \cos\alpha
-\end{pmatrix},
-\hspace{1cm}
-R_y(\alpha):=
-\begin{pmatrix}
-\cos\alpha & 0 & -\sin\alpha\\
-0 & 1 & 0\\
-\sin\alpha & 0 & \cos\alpha
-\end{pmatrix},
-$$
+The rotation about the $z$ axis by the angle $\alpha$ is
 
 $$
 R_z(\alpha):=

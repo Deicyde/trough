@@ -25,4 +25,4 @@ Formalized as [`Quotienting.polyQuotient`](https://verified-zkevm.github.io/ArkL
 
 ## Sources
 
-- [ArkLib blueprint: proof_systems/stir.tex, line 76](https://github.com/Verified-zkEVM/ArkLib/blob/e1c185ba001d225d1f3ea84071d67a8c6c56d6a0/blueprint/src/proof_systems/stir.tex#L76)
+- [ArkLib blueprint: proof_systems/stir.tex, line 76](https://github.com/Verified-zkEVM/ArkLib/blob/e9bcc82d3d33a1814822b9b9e6b135bc80d614ee/blueprint/src/proof_systems/stir.tex#L76)

@@ -23,4 +23,4 @@ Stated as [`int`](https://yaeldillies.github.io/apap/docs/find/#doc/int); the bl
 
 ## Sources
 
-- [Kelley-Meka bound blueprint: chapter/integers.tex, line 125](https://github.com/YaelDillies/apap/blob/5b8cc8c5483512ee077ffa5a8bafc0a1a4c09f86/blueprint/src/chapter/integers.tex#L125)
+- [Kelley-Meka bound blueprint: chapter/integers.tex, line 125](https://github.com/YaelDillies/apap/blob/b401f6e22417e6dbe6f87d6620571ea6c513aed3/blueprint/src/chapter/integers.tex#L125)

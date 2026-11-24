@@ -14,14 +14,16 @@ Every $A \in SO(3)$ with $\operatorname{\mathrm{tr}} A \ge 0$ is $\mathrm{Cay}(r
 
 - [cayley_so3](lem-cayley-so3.md)
 
-## Proof depends on
-
-- [Axis-angle form](lem-axis-angle.md)
-- [Rodrigues form](lem-cayley-rodrigues.md)
-
 ## Proof
 
-Write $A$ as a rotation by angle $\gamma \in (-\pi, \pi]$ about a unit axis $a$ (Lemma [Axis-angle form](lem-axis-angle.md)). Then $\operatorname{\mathrm{tr}} A = 1 + 2 \cos\gamma \ge 0$ gives $\cos\gamma \ge -1/2$. Put $c = \sin\gamma / (1 + \cos\gamma) = \tan(\gamma/2)$ and $r = c\,a$. Then $c^2 = (1 - \cos\gamma)/(1 + \cos\gamma) \le 3$, and comparing the Rodrigues forms of $A$ and of $\mathrm{Cay}(r)$ gives $A = \mathrm{Cay}(r)$.
+Let $d = 1 + \operatorname{\mathrm{tr}} A > 0$ and let $r = (A_{21} - A_{12},\ A_{02} - A_{20},\ A_{10} - A_{01}) / d$ be the skew part of $A$ divided by $d$. (In terms of the unit quaternion $(q_0, q)$ of $A$, $d = 4 q_0^2$ and $r = q / q_0$.) A rotation satisfies $A A^T = A^T A = I$ and is its own cofactor matrix. These quadratic relations give, by linear combination,
+
+$$
+r_0^2 = \frac{1 + A_{00} - A_{11} - A_{22}}{d}, \qquad
+r_0 r_1 = \frac{A_{01} + A_{10}}{d},
+$$
+
+and the four similar identities for the other squares and products. Hence $|r|^2 = (3 - \operatorname{\mathrm{tr}} A)/d \le 3$ and $D(r) = 4/d$, and substituting the six identities into the entries of $N(r)/D(r)$ gives $A$.
 
 ## Lean
 
@@ -29,4 +31,4 @@ Formalized as [`Cayley.exists_cayleyMatrix_of_trace_nonneg`](https://jcreedcmu.g
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/cayley.tex, line 79](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/cayley.tex#L79)
+- [Noperthedron blueprint: chapters/cayley.tex, line 79](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/cayley.tex#L79)

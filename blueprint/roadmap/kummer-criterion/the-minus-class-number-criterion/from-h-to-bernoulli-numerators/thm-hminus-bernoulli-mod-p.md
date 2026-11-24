@@ -34,4 +34,4 @@ Formalized as [`KummerCriterion.hMinus_formula_bernoulli_mod_p`](https://riccard
 
 ## Sources
 
-- [Kummer's criterion blueprint: subsections/hminus-formula.tex, line 256](https://github.com/riccardobrasca/KummerCriterion/blob/b96b2cde81e799bfe8364b6dd469abafd9a26bdf/blueprint/src/subsections/hminus-formula.tex#L256)
+- [Kummer's criterion blueprint: subsections/hminus-formula.tex, line 256](https://github.com/riccardobrasca/KummerCriterion/blob/d6f2d56131fb9a992bcfc97e46aa1dec7d8c7018/blueprint/src/subsections/hminus-formula.tex#L256)

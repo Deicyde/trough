@@ -13,13 +13,13 @@ If $\operatorname{\mathbf{P}}$ is Rupert, then there is a Rupert pair $(R_o, R_i
 ## Depends on
 
 - [shadow](def-shadow.md)
-- [Rupert Polyhedron iff Rupert Set](../rupert-sets/thm-rupert-iff-rupert-set.md)
-- [rupert_implies_rot_rupert](../rupert-sets/thm-rupert-implies-rot-rupert.md)
+- [rupert](../def-rupert.md)
+- [Common centre](lem-common-center.md)
 - [nopert_point_symmetric](../../the-noperthedron/definition-of-the-noperthedron/lemma-nopert-point-symmetric.md)
 
 ## Proof
 
-Combine Theorem [Rupert Polyhedron iff Rupert Set](../rupert-sets/thm-rupert-iff-rupert-set.md) and Theorem [rupert_implies_rot_rupert](../rupert-sets/thm-rupert-implies-rot-rupert.md); $\operatorname{\mathbf{P}}$ is point-symmetric (Lemma [nopert_point_symmetric](../../the-noperthedron/definition-of-the-noperthedron/lemma-nopert-point-symmetric.md)) and convex.
+By definition there are $R_i, R_o \in SO(3)$ and an offset $o$ with $o + \mathrm{Sh}(R_i) \subseteq \operatorname{int} \mathrm{Sh}(R_o)$. A shadow is a linear image of $\operatorname{\mathbf{P}}$, so it is convex and point-symmetric (Lemma [nopert_point_symmetric](../../the-noperthedron/definition-of-the-noperthedron/lemma-nopert-point-symmetric.md)), and so is its interior. Lemma [Common centre](lem-common-center.md) removes the offset.
 
 ## Lean
 
@@ -27,4 +27,4 @@ Formalized as [`Cayley.exists_rupPair`](https://jcreedcmu.github.io/Noperthedron
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/prelims.tex, line 73](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/prelims.tex#L73)
+- [Noperthedron blueprint: chapters/prelims.tex, line 55](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/prelims.tex#L55)

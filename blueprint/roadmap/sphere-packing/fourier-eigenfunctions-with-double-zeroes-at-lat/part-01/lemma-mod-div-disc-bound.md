@@ -28,11 +28,11 @@ Its statement uses no other node of the blueprint.
 
 ## Proof depends on
 
-- [disc-definition](../modular-forms/part-01/def-disc-definition.md)
+- [disc-definition](../../modular-forms/part-01/def-disc-definition.md)
 
 ## Proof
 
-By the product formula [(4)](../modular-forms/part-01/def-disc-definition.md),
+By the product formula [(4)](../../modular-forms/part-01/def-disc-definition.md),
 
 $$
 \begin{aligned}
@@ -50,7 +50,7 @@ $$
 C_f = \frac{\sum_{n \ge n_0} |c_f(n)| e^{-\pi (n - n_0) / 2}}{\prod_{n \ge 1} (1 - e^{-\pi n})^{24}}.
 $$
 
-Note that the summation in the numerator converges absolutely because of polynomial growth. The denominator also converges, which is simply $e^{\pi} \cdot \Delta(i/2)$.
+The summation in the numerator converges absolutely because of polynomial growth, and the denominator converges to the positive value $e^{\pi} \cdot \Delta(i/2)$ by the product formula.
 
 ## Lean
 
@@ -58,4 +58,4 @@ Formalized as [`MagicFunction.PolyFourierCoeffBound.DivDiscBoundOfPolyFourierCoe
 
 ## Sources
 
-- [Sphere packing in dimension 8 blueprint: subsections/construct-a-b.tex, line 96](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/construct-a-b.tex#L96)
+- [Sphere packing in dimension 8 blueprint: subsections/construct-a-b.tex, line 91](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/construct-a-b.tex#L91)

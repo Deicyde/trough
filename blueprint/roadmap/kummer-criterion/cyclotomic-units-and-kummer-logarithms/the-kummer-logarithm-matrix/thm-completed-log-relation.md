@@ -25,4 +25,4 @@ Formalized as [`KummerCriterion.CyclotomicUnits.completedLog_relation_of_CPlus_p
 
 ## Sources
 
-- [Kummer's criterion blueprint: subsections/cyclotomic-units.tex, line 311](https://github.com/riccardobrasca/KummerCriterion/blob/b96b2cde81e799bfe8364b6dd469abafd9a26bdf/blueprint/src/subsections/cyclotomic-units.tex#L311)
+- [Kummer's criterion blueprint: subsections/cyclotomic-units.tex, line 311](https://github.com/riccardobrasca/KummerCriterion/blob/d6f2d56131fb9a992bcfc97e46aa1dec7d8c7018/blueprint/src/subsections/cyclotomic-units.tex#L311)

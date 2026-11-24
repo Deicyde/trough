@@ -7,7 +7,7 @@ statement: formalized
 
 # Schwartz-Space
 
-A $C^\infty$ function $f:\mathbb{R}^d\to\mathbb{C}$ is called a *Schwartz function* if it decays to zero as $\|x\|\to\infty$ faster then any inverse power of $\|x\|$, and the same holds for all partial derivatives of $f$, ie, if for all $k, n \in \mathbb{N}$, there exists a constant $C \in \mathbb{R}$ such that for all $x \in \mathbb{R}^d$, $\left\lVert x \right\rVert^k \cdot \left\lVert f^{(n)}(x) \right\rVert \leq C$, where $f^{(n)}$ denotes the $n$-th derivative of $f$ considered along with the appropriate operator norm. The set of all Schwartz functions from $\mathbb{R}^d$ to $\mathbb{C}$ is called the *Schwartz space*. It is an $\mathbb{R}$-vector space.
+A $C^\infty$ function $f:\mathbb{R}^d\to\mathbb{C}$ is called a *Schwartz function* if it decays to zero as $\|x\|\to\infty$ faster then any inverse power of $\|x\|$, and the same holds for all partial derivatives of $f$, ie, if for all $k \in \mathbb{N}$ and $n \in \mathbb{N}^d$, there exists a constant $C \in \mathbb{R}$ such that for all $x \in \mathbb{R}^d$, $\left\lVert x \right\rVert^k \cdot \left\lvert f^{(n)}(x) \right\rvert \leq C$, where $f^{(n)}$ denotes the $n$-th partial derivative of $f$. The set of all Schwartz functions from $\mathbb{R}^d$ to $\mathbb{C}$ is called the *Schwartz space*. It is an $\mathbb{R}$-vector space.
 
 ## Depends on
 
@@ -19,4 +19,4 @@ Formalized as [`SchwartzMap`](https://thefundamentaltheor3m.github.io/Sphere-Pac
 
 ## Sources
 
-- [Sphere packing in dimension 8 blueprint: subsections/fourier-analysis.tex, line 28](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/fourier-analysis.tex#L28)
+- [Sphere packing in dimension 8 blueprint: subsections/fourier-analysis.tex, line 34](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/fourier-analysis.tex#L34)

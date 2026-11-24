@@ -32,4 +32,4 @@ Formalized as [`AlgebraicGeometry.Scheme.cocharDiag`](https://yaeldillies.github
 
 ## Sources
 
-- [Toric varieties blueprint: chapters/4-3-torus.tex, line 79](https://github.com/YaelDillies/toric/blob/5956b80249ec5416a266f68b5142606b060d7628/blueprint/src/chapters/4-3-torus.tex#L79)
+- [Toric varieties blueprint: chapters/4-3-torus.tex, line 79](https://github.com/YaelDillies/toric/blob/97b1287db93f2eee84c8bb4e408058d9e721ce5b/blueprint/src/chapters/4-3-torus.tex#L79)

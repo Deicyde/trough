@@ -25,4 +25,4 @@ Formalized as [`instIsZLatticeE8Lattice`](https://thefundamentaltheor3m.github.i
 
 ## Sources
 
-- [Sphere packing in dimension 8 blueprint: subsections/E8-defs.tex, line 87](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/E8-defs.tex#L87)
+- [Sphere packing in dimension 8 blueprint: subsections/E8-defs.tex, line 87](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/E8-defs.tex#L87)

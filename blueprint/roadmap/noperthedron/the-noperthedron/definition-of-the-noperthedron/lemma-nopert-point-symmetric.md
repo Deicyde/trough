@@ -1,7 +1,7 @@
 ---
 declaration: lemma
 origin: cited
-lean: Noperthedron.exactPoly_point_symmetric
+lean: Noperthedron.exactHull_pointSym
 statement: formalized
 proof: formalized
 ---
@@ -14,7 +14,6 @@ The noperthedron is point-symmetric.
 
 - [pointsymmetric](def-pointsymmetric.md)
 - [noperthedron](def-noperthedron.md)
-- [nopert_verts_norm_le_one](lemma-nopert-verts-norm-le-one.md)
 
 ## Proof
 
@@ -22,8 +21,8 @@ The set $\mathcal{C}_{30}$ contains $-\operatorname{\mathrm{Id}}$.
 
 ## Lean
 
-Formalized as [`Noperthedron.exactPoly_point_symmetric`](https://jcreedcmu.github.io/Noperthedron/docs/find/#doc/Noperthedron.exactPoly_point_symmetric).
+Formalized as [`Noperthedron.exactHull_pointSym`](https://jcreedcmu.github.io/Noperthedron/docs/find/#doc/Noperthedron.exactHull_pointSym).
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/noperthedron.tex, line 101](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/noperthedron.tex#L101)
+- [Noperthedron blueprint: chapters/noperthedron.tex, line 85](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/noperthedron.tex#L85)

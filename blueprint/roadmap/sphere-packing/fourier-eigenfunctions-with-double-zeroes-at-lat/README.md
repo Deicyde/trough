@@ -7,75 +7,40 @@ $$
 \mathcal{F}(b)&=-b\qquad\text{(2)}\end{aligned}
 $$
 
-which double zeroes at all $\Lambda_8$-vectors of length greater than $\sqrt{2}$. Recall that each vector of $\Lambda_8$ has length $\sqrt{2n}$ for some $n\in\mathbb{N}_{\geq 0}$. We define $a$ and $b$ so that their values are purely imaginary because this simplifies some of our computations. We will show in Section [Proof of Theorem g](../proof-of-theorem-g/README.md) that an appropriate linear combination of functions $a$ and $b$ satisfies conditions [Theorem g](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/cohn-elkies.tex#L44)–[Theorem g](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/cohn-elkies.tex#L44).
+with double zeroes at all $\Lambda_8$-vectors of length greater than $\sqrt{2}$. Recall that each vector of $\Lambda_8$ has length $\sqrt{2n}$ for some $n\in\mathbb{N}_{\geq 0}$. We define $a$ and $b$ so that their values are purely imaginary because this simplifies some of our computations. We will show in Section [Proof of Theorem g](../proof-of-theorem-g/README.md) that an appropriate linear combination of functions $a$ and $b$ satisfies conditions [Theorem g](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/cohn-elkies.tex#L53)–[Theorem g](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/cohn-elkies.tex#L53).
 
-Both of the functions will be defined via certain integrals of (quasi)modular forms. Then the eigenfunction property mainly follows from the Poisson summation formula (Theorem [Poisson summation formula](../facts-from-fourier-analysis/thm-poisson-summation-formula.md)) and the transformation laws of (quasi)modular forms. To apply Theorem [Poisson summation formula](../facts-from-fourier-analysis/thm-poisson-summation-formula.md), we will show that $a(x)$ and $b(x)$ are Schwartz functions, and this can be proved by verifying fast decay of the integrals.
+Both functions are defined as $x \mapsto f(\|x\|^2)$, where $f : \mathbb{R} \to \mathbb{C}$ is a sum of six contour integrals of (quasi)modular forms against the Gaussian $e^{\pi i r z}$. The programme of this section is as follows. Bounds on the relevant (quasi)modular forms (obtained from Lemma [mod-div-disc-bound](part-01/lemma-mod-div-disc-bound.md)) yield rapid decay of the integrals and their derivatives on $[0, \infty)$; smoothness on a neighbourhood of $[0,\infty)$ follows by differentiation under the integral sign; Schwartzness of $a$ and $b$ is then obtained from the smooth-cutoff criterion of Corollary [schwartz-of-nonneg-decay](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/fourier-analysis.tex#L187). The eigenfunction properties (1) and (2) follow from the Fourier transform of the Gaussian (Lemma [Gaussian-Fourier](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/fourier-analysis.tex#L15)) and the transformation laws of the integrands, and the double zeroes are exhibited by deforming contours.
 
-First, we will define function $a$.
+## The Integrands for $a$
 
-For our formalization, we choose rectangular contours for the first and the second integral, and write it as follows.
+To define the function $a$, we consider the following functions:
 
-- [a-definition](def-a-definition.md)
+## [phi4-phi2-phi0 to perm-J12](part-01/README.md)
 
-In the original paper, the integrals $I_1$ and $I_2$ are combined, as well as $I_3$ and $I_4$. We choose to write them separately to simplify the formalization.
+- [phi4-phi2-phi0](part-01/def-phi4-phi2-phi0.md)
+- [phi0-transform](part-01/lemma-phi0-transform.md)
+- [a-definition](part-01/def-a-definition.md)
+- [mod-div-disc-bound](part-01/lemma-mod-div-disc-bound.md)
+- [bound-I1-I3-I5](part-01/lem-bound-i1-i3-i5.md)
+- [bound-I2-I4-I6](part-01/lem-bound-i2-i4-i6.md)
+- [a-schwartz](part-01/prop-a-schwartz.md)
+- [perm-I12](part-01/lemma-perm-i12.md)
+- [perm-I56](part-01/lemma-perm-i56.md)
+- [perm-I-reverse](part-01/lemma-perm-i-reverse.md)
+- [a-fourier](part-01/prop-a-fourier.md)
+- [Cauchy–Goursat for unbounded rectangular contours](part-01/lem-cg-unbounded.md)
+- [a0](part-01/prop-a0.md)
+- [ h](part-01/def-h.md)
+- [psiI-psiT-psiS](part-01/def-psii-psit-psis.md)
+- [psi-explicit](part-01/lemma-psi-explicit.md)
+- [psi-slash-relations](part-01/lemma-psi-slash-relations.md)
+- [b-definition](part-01/def-b-definition.md)
+- [b-schwartz](part-01/prop-b-schwartz.md)
+- [perm-J12](part-01/lemma-perm-j12.md)
 
-Now we prove that $a$ satisfies condition (1). The following lemma will be used to prove Schwartzness of $a$ and $b$.
+## [perm-J56 to b0](part-02/README.md)
 
-- [mod-div-disc-bound](lemma-mod-div-disc-bound.md)
-
-When $f(z)$ is a (quasi)modular form, we can take $k$ to be the weight of $f$.
-
-*The proof of [Lemma mod-div-disc-bound](lemma-mod-div-disc-bound.md) is shown with its statement.*
-
-As corollaries, we have the following bound for $\phi_0$, $\phi_{-2}$, and $\phi_{-4}$.
-
-Note that we can take the constants $C_0$, $C_{-2}$, and $C_{-4}$ as
-
-$$
-\begin{aligned}
-C_0 &= 9 \cdot 240^2 \cdot e^{\pi} \cdot \frac{E_4'(i/2)^{2}}{\Delta(i/2)}  \\
-C_{-2} &= 3 \cdot \frac{E_4(i/2) E_4'(i/2)}{\Delta(i/2)}  \\
-C_{-4} &= e^{-\pi} \cdot \frac{E_4(i/2)^{2}}{\Delta(i/2)}.
-\end{aligned}
-$$
-
-Combined with Lemma [integral-bound](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/construct-a-b.tex#L175), this shows that the integrals $I_1$, $I_3$, and $I_5$ decay faster than any polynomial as $r \to \infty$. For the integrals $I_2$, $I_4$, and $I_6$, it is easier to see this since the contours are not touching the real axis.
-
-Combining these, one can show that $a$ is a Schwartz function.
-
-- [a-schwartz](prop-a-schwartz.md)
-
-Next, we check that $a$ has double zeroes at all $\Lambda_8$-lattice points of length greater then $\sqrt{2}$. Using [Corollary phi0-bound](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/construct-a-b.tex#L131), [Corollary phi2-bound](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/construct-a-b.tex#L152), and [Corollary phi4-bound](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/construct-a-b.tex#L160), we can control the behavior of $\phi_0$ near $0$ and $i\infty$.
-
-Finally, we find another convenient integral representation for $a$ and compute values of $a(r)$ at $r=0$ and $r=\sqrt{2}$.
-
-From the identity [Proposition a-another-integral](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/construct-a-b.tex#L378) we see that the values $a(r)$ are in $i\mathbb{R}$ for all $r\in\mathbb{R}_{\geq0}$.
-
-- [a0](prop-a0.md)
-
-Now we construct function $b$.
-
-It is easy to see that $h\in M^!_{-2}(\Gamma_0(2))$. Indeed, first we check that $h|_{-2}\gamma=h$ for all $\gamma\in\Gamma_0(2)$. Since the group $\Gamma_0(2)$ is generated by elements $\left(\begin{smallmatrix}1&0\\2&1\end{smallmatrix}\right)$ and $\left(\begin{smallmatrix}1&1\\0&1\end{smallmatrix}\right)$ it suffices to check that $h$ is invariant under their action. This follows immediately from [(10)](../modular-forms/part-02/lemma-theta-transform-s-t.md)–[(12)](../modular-forms/part-02/lemma-theta-transform-s-t.md) and [Definition h](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/construct-a-b.tex#L413). Next we analyze the poles of $h$. It is known (7, Chapter I Lemma 4.1) that $\theta_{10}$ has no zeros in the upper-half plane and hence $h$ has poles only at the cusps. At the cusp $i\infty$ this modular form has the Fourier expansion
-
-$$
-h(z)\,=\,q^{-1} + 16 - 132 q + 640 q^2 - 2550 q^3+O(q^4).
-$$
-
-Let $I=\left(\begin{smallmatrix}1&0\\0&1\end{smallmatrix}\right)$, $T=\left(\begin{smallmatrix}1&1\\0&1\end{smallmatrix}\right)$, and $S=\left(\begin{smallmatrix}0&-1\\1&0\end{smallmatrix}\right)$ be elements of $\Gamma_1$.
-
-Now, we are ready to define function $b$. Again, the definition here is slightly different from that in (11), where all the contours are chosen to be the straight lines.
-
-Now we prove that $b$ is a Schwartz function and satisfies condition (2). As in the case of $a(x)$, we start with the following exponential bound of $\psi_S(z)$ and $\psi_I(z)$.
-
-Combining Lemmas [bound-J1-J3-J5](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/construct-a-b.tex#L544), [bound-J2-J4-J6](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/construct-a-b.tex#L551), and Theorem [smooth-fast-decay-schwartz](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/fourier-analysis.tex#L101), we can prove that $b(x)$ is a Schwartz function.
-
-- [b-schwartz](prop-b-schwartz.md)
-- [b-fourier](prop-b-fourier.md)
-
-Now we regard the radial function $b$ as a function on $\mathbb{R}_{\geq0}$. We check that $b$ has double roots at $\Lambda_8$-points.
-
-At the end of this section we find another integral representation of $b(r)$ for $r\in\mathbb{R}_{\geq0}$ and compute special values of $b$.
-
-We see from [Proposition b-another-integral](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/construct-a-b.tex#L699) that $b(r)\in i\mathbb{R}$ far all $r\in\mathbb{R}_\geq{0}$. Another immediate corollary of this proposition is
-
-- [b0](prop-b0.md)
+- [perm-J56](part-02/lemma-perm-j56.md)
+- [perm-J-reverse](part-02/lemma-perm-j-reverse.md)
+- [b-fourier](part-02/prop-b-fourier.md)
+- [b0](part-02/prop-b0.md)

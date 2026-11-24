@@ -48,4 +48,4 @@ Formalized as [`Finset.exists_subset_addSpan_card_le_of_forall_addDissociated`](
 
 ## Sources
 
-- [Kelley-Meka bound blueprint: chapter/chang.tex, line 188](https://github.com/YaelDillies/apap/blob/5b8cc8c5483512ee077ffa5a8bafc0a1a4c09f86/blueprint/src/chapter/chang.tex#L188)
+- [Kelley-Meka bound blueprint: chapter/chang.tex, line 188](https://github.com/YaelDillies/apap/blob/b401f6e22417e6dbe6f87d6620571ea6c513aed3/blueprint/src/chapter/chang.tex#L188)

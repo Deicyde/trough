@@ -24,4 +24,4 @@ Formalized as [`KummerCriterion.exists_large_even_multiple_abs_bernoulli_div_sel
 
 ## Sources
 
-- [Kummer's criterion blueprint: subsections/irregular-primes-carlitz.tex, line 145](https://github.com/riccardobrasca/KummerCriterion/blob/b96b2cde81e799bfe8364b6dd469abafd9a26bdf/blueprint/src/subsections/irregular-primes-carlitz.tex#L145)
+- [Kummer's criterion blueprint: subsections/irregular-primes-carlitz.tex, line 145](https://github.com/riccardobrasca/KummerCriterion/blob/d6f2d56131fb9a992bcfc97e46aa1dec7d8c7018/blueprint/src/subsections/irregular-primes-carlitz.tex#L145)

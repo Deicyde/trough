@@ -17,7 +17,7 @@ This natural map $L\otimes_K\mathbb{A}_{A,K}^\infty\to\mathbb{A}_{B,L}^\infty$ i
 
 ## Proof
 
-Follows immediately from theorem [IsDedekindDomain.FiniteAdeleRing.baseChangeIntegralAlgEquiv](https://github.com/ImperialCollegeLondon/FLT/blob/a3210204ad8876e851e32f73dd97d882bf1ccd0a/blueprint/src/chapter/AdeleMiniproject.tex#L579) and theorem [IsDedekindDomain.AKLB.tensorProduct_module_algEquiv](isdedekinddomain-aklb-tensorproduct-module-algeq.md).
+Follows immediately from theorem [IsDedekindDomain.FiniteAdeleRing.baseChangeIntegralAlgEquiv](https://github.com/ImperialCollegeLondon/FLT/blob/019805815d7da565ed1e9f427b6fbd0cbc9d00d3/blueprint/src/chapter/AdeleMiniproject.tex#L579) and theorem [IsDedekindDomain.AKLB.tensorProduct_module_algEquiv](isdedekinddomain-aklb-tensorproduct-module-algeq.md).
 
 ## Lean
 
@@ -25,4 +25,4 @@ Stated as [`IsDedekindDomain.FiniteAdeleRing.baseChangeAlgEquiv`](https://Imperi
 
 ## Sources
 
-- [Fermat's Last Theorem (Imperial) blueprint: chapter/AdeleMiniproject.tex, line 388](https://github.com/ImperialCollegeLondon/FLT/blob/a3210204ad8876e851e32f73dd97d882bf1ccd0a/blueprint/src/chapter/AdeleMiniproject.tex#L388)
+- [Fermat's Last Theorem (Imperial) blueprint: chapter/AdeleMiniproject.tex, line 388](https://github.com/ImperialCollegeLondon/FLT/blob/019805815d7da565ed1e9f427b6fbd0cbc9d00d3/blueprint/src/chapter/AdeleMiniproject.tex#L388)

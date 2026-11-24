@@ -6,7 +6,3 @@ The following theorem is the key result of (2). (Note that the original theorem 
 
 - [Cohn–Elkies (2)](thm-cohn-elkies-periodic.md)
 - [Cohn–Elkies (2)](thm-cohn-elkies-general.md)
-
-The main step in our proof of [Corollary MainTheorem](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/main-result.tex#L20) is the explicit construction of an optimal function. It will be convenient for us to scale this function by $\sqrt{2}$.
-
-Theorem [Cohn–Elkies (2)](thm-cohn-elkies-general.md) applied to the optimal function $f(x)=g(x/\sqrt{2})$ immediately implies [Corollary MainTheorem](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/main-result.tex#L20).

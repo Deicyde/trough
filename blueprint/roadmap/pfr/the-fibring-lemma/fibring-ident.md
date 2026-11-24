@@ -79,4 +79,4 @@ Formalized as [`rdist_of_indep_eq_sum_fibre`](https://teorth.github.io/pfr/docs/
 
 ## Sources
 
-- [Polynomial Freiman-Ruzsa blueprint: chapter/fibring.tex, line 3](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/fibring.tex#L3)
+- [Polynomial Freiman-Ruzsa blueprint: chapter/fibring.tex, line 3](https://github.com/teorth/pfr/blob/1899ce8ed95fc310cce53d4c7ecfa2beb20ebec4/blueprint/src/chapter/fibring.tex#L3)

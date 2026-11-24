@@ -21,7 +21,7 @@ A bialgebra over a domain is diagonalizable if and only if it is spanned by its 
 
 ## Proof
 
-We know that a diagonalizable bialgebra is spanned by its group-like elements by [0-is-diag-bialg-group-like-span](0-is-diag-bialg-group-like-span.md), and that a bialgebra over a domain that is spanned by its group-like elements is diagonalizable by [Quotient of a diagonalisable bialgebra is diagonalisable](https://github.com/YaelDillies/toric/blob/5956b80249ec5416a266f68b5142606b060d7628/blueprint/src/chapters/2-3-hopf-algebras.tex#L504) (and by the fact that a bijective morphism of bialgebras is an isomorphism).
+We know that a diagonalizable bialgebra is spanned by its group-like elements by [0-is-diag-bialg-group-like-span](0-is-diag-bialg-group-like-span.md), and that a bialgebra over a domain that is spanned by its group-like elements is diagonalizable by [Quotient of a diagonalisable bialgebra is diagonalisable](https://github.com/YaelDillies/toric/blob/97b1287db93f2eee84c8bb4e408058d9e721ce5b/blueprint/src/chapters/2-3-hopf-algebras.tex#L504) (and by the fact that a bijective morphism of bialgebras is an isomorphism).
 
 ## Lean
 
@@ -29,4 +29,4 @@ Formalized as [`Bialgebra.isDiagonalisable_iff_span_isGroupLikeElem_eq_top`](htt
 
 ## Sources
 
-- [Toric varieties blueprint: chapters/2-3-hopf-algebras.tex, line 527](https://github.com/YaelDillies/toric/blob/5956b80249ec5416a266f68b5142606b060d7628/blueprint/src/chapters/2-3-hopf-algebras.tex#L527)
+- [Toric varieties blueprint: chapters/2-3-hopf-algebras.tex, line 527](https://github.com/YaelDillies/toric/blob/97b1287db93f2eee84c8bb4e408058d9e721ce5b/blueprint/src/chapters/2-3-hopf-algebras.tex#L527)

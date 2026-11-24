@@ -28,4 +28,4 @@ Formalized as [`Eq1729.enlarge_S'`](https://teorth.github.io/equational_theories
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/1729.tex, line 266](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/1729.tex#L266)
+- [Equational Theories blueprint: chapter/1729.tex, line 266](https://github.com/teorth/equational_theories/blob/02b063b67143a897f070803482691c820770501d/blueprint/src/chapter/1729.tex#L266)

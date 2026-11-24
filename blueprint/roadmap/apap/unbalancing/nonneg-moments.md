@@ -24,4 +24,4 @@ Formalized as [`pow_inner_nonneg`](https://yaeldillies.github.io/apap/docs/find/
 
 ## Sources
 
-- [Kelley-Meka bound blueprint: chapter/unbalancing.tex, line 3](https://github.com/YaelDillies/apap/blob/5b8cc8c5483512ee077ffa5a8bafc0a1a4c09f86/blueprint/src/chapter/unbalancing.tex#L3)
+- [Kelley-Meka bound blueprint: chapter/unbalancing.tex, line 3](https://github.com/YaelDillies/apap/blob/b401f6e22417e6dbe6f87d6620571ea6c513aed3/blueprint/src/chapter/unbalancing.tex#L3)

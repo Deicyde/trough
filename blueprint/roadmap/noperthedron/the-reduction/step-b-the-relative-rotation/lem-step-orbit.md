@@ -26,4 +26,4 @@ Formalized as [`Cayley.step_orbit`](https://jcreedcmu.github.io/Noperthedron/doc
 
 ## Sources
 
-- [Noperthedron blueprint: chapters/reduction.tex, line 157](https://github.com/jcreedcmu/Noperthedron/blob/434011e647523fac1a7116a77df5ac6f283e3fbb/blueprint/src/chapters/reduction.tex#L157)
+- [Noperthedron blueprint: chapters/reduction.tex, line 172](https://github.com/jcreedcmu/Noperthedron/blob/0143f65be7f59b3ac09b99debb9c37944a0a2f4b/blueprint/src/chapters/reduction.tex#L172)

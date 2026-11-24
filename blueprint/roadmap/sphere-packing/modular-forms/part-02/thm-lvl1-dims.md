@@ -32,4 +32,4 @@ Formalized as [`ModularForm.dimension_level_one`](https://thefundamentaltheor3m.
 
 ## Sources
 
-- [Sphere packing in dimension 8 blueprint: subsections/modular-forms.tex, line 287](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/efe3bbbc1ece548f4672a772b94d8f621c10fdda/blueprint/src/subsections/modular-forms.tex#L287)
+- [Sphere packing in dimension 8 blueprint: subsections/modular-forms.tex, line 287](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/072d555d14b4265f3c996ad195925dc00f47f563/blueprint/src/subsections/modular-forms.tex#L287)
