@@ -8,7 +8,7 @@ proof: formalized
 
 # The representation of `SL(2, ℂ)` on real Lorentz covectors
 
-The module `PhyslibAlpha.Relativity.Tensors.RealTensor.CoVector.Representation`, [PhyslibAlpha/Relativity/Tensors/RealTensor/CoVector/Representation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Tensors/RealTensor/CoVector/Representation.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Relativity.Tensors.RealTensor.CoVector.Representation`, [PhyslibAlpha/Relativity/Tensors/RealTensor/CoVector/Representation.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Tensors/RealTensor/CoVector/Representation.lean): 2 declarations, 2 with a docstring.
 
 > The covector representation pulled back along the covering map, and its dual.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.Relativity.Tensors.RealTensor.CoVector.Representation`,
 
 ## A. The representation of `SL(2, ℂ)`
 
-**`Lorentz.CoVector.sl2Rep`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Tensors/RealTensor/CoVector/Representation.lean#L59).
+**`Lorentz.CoVector.sl2Rep`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Tensors/RealTensor/CoVector/Representation.lean#L59).
 
 > The representation of `SL(2,ℂ)` on real Lorentz covectors, obtained from the
 > representation of the Lorentz group through the covering map
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.Relativity.Tensors.RealTensor.CoVector.Representation`,
 noncomputable def sl2Rep : Representation ℝ SL(2,ℂ) Lorentz.CoVector
 ```
 
-**`Lorentz.CoVector.sl2Rep_dual_dualBasis`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Tensors/RealTensor/CoVector/Representation.lean#L64).
+**`Lorentz.CoVector.sl2Rep_dual_dualBasis`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Tensors/RealTensor/CoVector/Representation.lean#L64).
 
 > The dual of the covector representation on the dual basis: dual covectors
 > transform contravariantly, by the columns of the Lorentz matrix.
@@ -67,4 +67,4 @@ lemma sl2Rep_dual_dualBasis (Λ : SL(2,ℂ)) (μ : Fin 1 ⊕ Fin 3) :
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/Tensors/RealTensor/CoVector/Representation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Tensors/RealTensor/CoVector/Representation.lean)
+- [PhyslibAlpha/Relativity/Tensors/RealTensor/CoVector/Representation.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Tensors/RealTensor/CoVector/Representation.lean)

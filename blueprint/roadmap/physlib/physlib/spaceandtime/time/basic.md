@@ -8,7 +8,7 @@ proof: formalized
 
 # Time
 
-The module `Physlib.SpaceAndTime.Time.Basic`, [Physlib/SpaceAndTime/Time/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean): 17 declarations (8 instances with no name), 6 with a docstring.
+The module `Physlib.SpaceAndTime.Time.Basic`, [Physlib/SpaceAndTime/Time/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean): 17 declarations (8 instances with no name), 6 with a docstring.
 
 > `Time` represents instants with a fixed but arbitrary unit and orientation. It is an
 > affine space over `ℝ`: two instants determine a real-valued elapsed time, and adding
@@ -21,7 +21,7 @@ The module `Physlib.SpaceAndTime.Time.Basic`, [Physlib/SpaceAndTime/Time/Basic.l
 
 ## A. The `Time` type
 
-**`Time`**, a structure, [line 33](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean#L33).
+**`Time`**, a structure, [line 33](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean#L33).
 
 > An instant in time with a given unit and orientation, but no distinguished origin.
 
@@ -31,13 +31,13 @@ structure Time where
   val : ℝ
 ```
 
-**`Time.val_injective`**, a lemma, [line 39](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean#L39).
+**`Time.val_injective`**, a lemma, [line 39](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean#L39).
 
 ```lean
 lemma val_injective : Function.Injective val
 ```
 
-**An instance with no name**, [line 41](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean#L41).
+**An instance with no name**, [line 41](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean#L41).
 
 ```lean
 instance : Nonempty Time
@@ -45,31 +45,31 @@ instance : Nonempty Time
 
 ## B. The affine structure
 
-**An instance with no name**, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean#L47).
+**An instance with no name**, [line 47](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean#L47).
 
 ```lean
 instance : VAdd ℝ Time
 ```
 
-**`Time.vadd_val`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean#L51).
+**`Time.vadd_val`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean#L51).
 
 ```lean
 lemma vadd_val (dt : ℝ) (t : Time) : (dt +ᵥ t).val = dt + t.val
 ```
 
-**An instance with no name**, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean#L53).
+**An instance with no name**, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean#L53).
 
 ```lean
 instance : VSub ℝ Time
 ```
 
-**`Time.vsub_eq_val`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean#L57).
+**`Time.vsub_eq_val`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean#L57).
 
 ```lean
 lemma vsub_eq_val (t₁ t₂ : Time) : t₁ -ᵥ t₂ = t₁.val - t₂.val
 ```
 
-**An instance with no name**, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean#L59).
+**An instance with no name**, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean#L59).
 
 ```lean
 instance : AddTorsor ℝ Time
@@ -77,31 +77,31 @@ instance : AddTorsor ℝ Time
 
 ## C. The metric and manifold structure
 
-**An instance with no name**, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean#L69).
+**An instance with no name**, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean#L69).
 
 ```lean
 instance : MetricSpace Time
 ```
 
-**An instance with no name**, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean#L71).
+**An instance with no name**, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean#L71).
 
 ```lean
 instance : NormedAddTorsor ℝ Time
 ```
 
-**An instance with no name**, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean#L74).
+**An instance with no name**, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean#L74).
 
 ```lean
 instance : ChartedSpace ℝ Time
 ```
 
-**An instance with no name**, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean#L81).
+**An instance with no name**, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean#L81).
 
 ```lean
 instance : IsManifold 𝓘(ℝ, ℝ) ω Time
 ```
 
-**`Time.chartAt_apply`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean#L88).
+**`Time.chartAt_apply`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean#L88).
 
 > The chart of `Time` at `t₀` is `t ↦ t -ᵥ t₀`.
 
@@ -109,7 +109,7 @@ instance : IsManifold 𝓘(ℝ, ℝ) ω Time
 lemma chartAt_apply (t₀ t : Time) : chartAt ℝ t₀ t = t -ᵥ t₀
 ```
 
-**`Time.chartAt_symm_apply`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean#L92).
+**`Time.chartAt_symm_apply`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean#L92).
 
 > The inverse of the chart of `Time` at `t₀` is `τ ↦ τ +ᵥ t₀`.
 
@@ -117,7 +117,7 @@ lemma chartAt_apply (t₀ t : Time) : chartAt ℝ t₀ t = t -ᵥ t₀
 lemma chartAt_symm_apply (t₀ : Time) (τ : ℝ) : (chartAt ℝ t₀).symm τ = τ +ᵥ t₀
 ```
 
-**`Time.extChartAt_apply`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean#L95).
+**`Time.extChartAt_apply`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean#L95).
 
 > The extended chart of `Time` at `t₀` is `t ↦ t -ᵥ t₀`.
 
@@ -125,7 +125,7 @@ lemma chartAt_symm_apply (t₀ : Time) (τ : ℝ) : (chartAt ℝ t₀).symm τ =
 lemma extChartAt_apply (t₀ t : Time) : extChartAt 𝓘(ℝ, ℝ) t₀ t = t -ᵥ t₀
 ```
 
-**`Time.contMDiff_vadd`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean#L98).
+**`Time.contMDiff_vadd`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean#L98).
 
 > The map `τ ↦ τ +ᵥ t₀` from `ℝ` to `Time` is smooth.
 
@@ -134,7 +134,7 @@ lemma contMDiff_vadd (t₀ : Time) (n : ℕ∞ω) :
     ContMDiff 𝓘(ℝ, ℝ) 𝓘(ℝ, ℝ) n (fun τ : ℝ ↦ τ +ᵥ t₀)
 ```
 
-**`Time.contMDiff_vsub`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean#L106).
+**`Time.contMDiff_vsub`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean#L106).
 
 > The map `t ↦ t -ᵥ t₀` from `Time` to `ℝ` is smooth.
 
@@ -149,4 +149,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Time/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/Basic.lean)
+- [Physlib/SpaceAndTime/Time/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/Basic.lean)

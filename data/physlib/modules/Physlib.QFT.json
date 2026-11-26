@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
  "modules": [
   {
    "file": "Physlib/QFT/AnomalyCancellation/Basic.lean",
@@ -522,6 +522,242 @@
    "informal": 0
   },
   {
+   "file": "Physlib/QFT/Euclidean/GlimmJaffe/Axioms.lean",
+   "module": "Physlib.QFT.Euclidean.GlimmJaffe.Axioms",
+   "title": "Glimm–Jaffe axioms",
+   "doc": "The measure and generating-functional formulation of the Euclidean field axioms.\n\n## i. Overview\n\nThis is a formalization of the Glimm–Jaffe variation of the Osterwalder–Schrader axioms,\nas presented in Glimm and Jaffe, *Quantum Physics*, Chapter 6. [ref: glimm1987quantum]\nThis formalism is on the generating functional, while the original OS axioms are on the\nSchwinger functions.\n\nWe port the predicates in `OSforGFF/OS/Axioms.lean`: analyticity (OS0), regularity\n(OS1), full Euclidean invariance (OS2), complex reflection positivity (OS3), and\nergodicity (OS4).\n\nHere `d` counts spatial dimensions, so the source total dimension is `d + 1`.\nReflection positivity, ergodicity and the bundle assume `1 ≤ d`, retaining the source\nminimum of two total dimensions.\n\nOS4 uses exponentials without a factor of `i`, whereas the characteristic functional\nin OS0–OS3 includes that factor.\nThis numbering differs from the distributional Osterwalder–Schrader axioms E0–E4.\n\n## ii. Key results\n\n* `FieldMeasure.GlimmJaffeAxioms`: the five Glimm–Jaffe conditions OS0–OS4, with ergodicity\n  as OS4.\n* `FieldMeasure.TwoPointIntegrable`: the explicit mollifier-limit condition at the OS1 endpoint.\n* `FieldMeasure.OS4Ergodicity`: convergence of centered time averages in mean square.\n\n## iii. Table of contents\n\n- A. Analyticity and regularity\n- B. Euclidean invariance and reflection positivity\n- C. Ergodicity\n- D. Bundled axioms\n\n## iv. References\n\n* Glimm and Jaffe, *Quantum Physics*, Chapter 6. [ref: glimm1987quantum]\n* Cherkis et al., *OSforGFF*, `OS/Axioms.lean`. [ref: osforgff]",
+   "copyright": "",
+   "sections": [
+    {
+     "line": 71,
+     "text": "## A. Analyticity and regularity"
+    },
+    {
+     "line": 96,
+     "text": "## B. Euclidean invariance and reflection positivity"
+    },
+    {
+     "line": 112,
+     "text": "## C. Ergodicity"
+    },
+    {
+     "line": 128,
+     "text": "## D. Bundled axioms"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "GlimmJaffe.FieldMeasure.OS0Analyticity",
+     "kind": "def",
+     "line": 75,
+     "doc": "OS0: the characteristic functional is entire on every finite-dimensional complex\nfamily of Schwartz tests.",
+     "statement": "def OS0Analyticity (μ : FieldMeasure d) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "GlimmJaffe.FieldMeasure.TwoPointIntegrable",
+     "kind": "def",
+     "line": 81,
+     "doc": "The endpoint condition for OS1: mollified second moments converge at every nonzero\nseparation to a locally integrable function. No limit is required at coincidence.",
+     "statement": "def TwoPointIntegrable (μ : FieldMeasure d) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "GlimmJaffe.FieldMeasure.OS1Regularity",
+     "kind": "def",
+     "line": 89,
+     "doc": "OS1: exponential growth controlled by the integrals of `‖f‖` and `‖f‖^p`,\nfor some `1 ≤ p ≤ 2`, with the additional two-point condition when `p = 2`.",
+     "statement": "def OS1Regularity (μ : FieldMeasure d) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "GlimmJaffe.FieldMeasure.OS2EuclideanInvariance",
+     "kind": "def",
+     "line": 99,
+     "doc": "OS2: invariance of the characteristic functional under the full Euclidean group.",
+     "statement": "def OS2EuclideanInvariance (μ : FieldMeasure d) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "GlimmJaffe.FieldMeasure.OS3ReflectionPositivity",
+     "kind": "def",
+     "line": 107,
+     "doc": "OS3 in the source's complex formulation: the real part of every reflected\nquadratic form is nonnegative. Reflection includes complex conjugation of the test.\nThe dimension assumption retains the source's requirement of at least one spatial dimension.",
+     "statement": "def OS3ReflectionPositivity [Fact (1 ≤ d)] (μ : FieldMeasure d) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "GlimmJaffe.FieldMeasure.OS4Ergodicity",
+     "kind": "def",
+     "line": 118,
+     "doc": "OS4 ergodicity: centered time averages of finite linear combinations of\n`exp(⟨ω, f⟩)` converge to zero in mean square. This retains the source's integral\nformulation, with the centering inside the time integral. The dimension restriction retains\nthe source's domain of at least two total dimensions.",
+     "statement": "def OS4Ergodicity [Fact (1 ≤ d)] (μ : FieldMeasure d) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "GlimmJaffe.FieldMeasure.GlimmJaffeAxioms",
+     "kind": "structure",
+     "line": 131,
+     "doc": "The Glimm–Jaffe axioms OS0–OS4, with ergodicity as the OS4 condition.",
+     "statement": "structure GlimmJaffeAxioms [Fact (1 ≤ d)] (μ : FieldMeasure d) : Prop where\n  /-- OS0: entire dependence on finite families of complex tests. -/\n  analytic : OS0Analyticity μ\n  /-- OS1: the exponential bound and endpoint two-point condition. -/\n  regular : OS1Regularity μ\n  /-- OS2: full Euclidean invariance. -/\n  euclideanInvariant : OS2EuclideanInvariance μ\n  /-- OS3: reflection positivity for complex positive-time tests and coefficients. -/\n  reflectionPositive : OS3ReflectionPositivity μ\n  /-- OS4: mean-square ergodicity under time translation. -/\n  ergodic : OS4Ergodicity μ",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/QFT/Euclidean/GlimmJaffe/Basic.lean",
+   "module": "Physlib.QFT.Euclidean.GlimmJaffe.Basic",
+   "title": "Glimm–Jaffe Euclidean fields",
+   "doc": "Generating functionals and Schwinger functions for a real scalar field.\n\n## i. Overview\n\nThis is the measure-based formulation of a real scalar Euclidean quantum field.\nA field configuration, defined in `FieldConfiguration`, is a tempered distribution `ω`,\nso the basic observable is its evaluation `ω f` on a real Schwartz test function `f`.\nA probability measure on these configurations specifies the field statistics, in a way that\nSchwinger functions are expectations of products of field evaluations, and the\ngenerating functional is the expectation of `exp(i ⟨ω, f⟩)`. The Glimm–Jaffe axioms\nin the companion file impose analyticity, growth bounds, Euclidean invariance,\nreflection positivity and ergodicity on this measure. This setup supplies the\nEuclidean data for reconstruction.\n\nThe parameter `d` counts spatial dimensions. Spacetime is Physlib's\n`TimeAndSpace d = Time × Space d`, with the standard origins used by its real\nvector-space instances. Thus the source's total dimension is `d + 1`.\n\nThe Euclidean symmetries, positive-time tests and normalized bumps acting on the\ntest functions are in `TimeAndSpace.TestFunctions.Schwartz`.\n\n## ii. Key results\n\n* `FieldMeasure.generatingFunctional`: the complex characteristic functional.\n* `smearedTwoPointFunction`: the two-point function smeared with an arbitrary normalized bump.\n\n## iii. Table of contents\n\n- A. Generating functionals\n- B. Schwinger functions\n\n## iv. References\n\n* Glimm and Jaffe, *Quantum Physics*. [ref: glimm1987quantum]",
+   "copyright": "",
+   "sections": [
+    {
+     "line": 70,
+     "text": "## A. Generating functionals"
+    },
+    {
+     "line": 77,
+     "text": "## B. Schwinger functions"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "GlimmJaffe.FieldMeasure",
+     "kind": "abbrev",
+     "line": 64,
+     "doc": "A probability measure on field configurations.\nThe Euclidean functional-integral measure `μ`, the rigorous counterpart of `𝒟φ e^{-S}/Z`.",
+     "statement": "abbrev FieldMeasure (d : ℕ) : Type",
+     "sorry": false
+    },
+    {
+     "name": "GlimmJaffe.FieldMeasure.generatingFunctional",
+     "kind": "def",
+     "line": 73,
+     "doc": "The characteristic functional `Z[f] = ∫ exp(i ⟨ω, f⟩) dμ` on complex tests.",
+     "statement": "def generatingFunctional (μ : FieldMeasure d)\n    (f : 𝓢(TimeAndSpace d, ℂ)) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "GlimmJaffe.FieldMeasure.schwingerFunction",
+     "kind": "def",
+     "line": 80,
+     "doc": "The real `n`-point Schwinger function, the expectation of the product of field evaluations.",
+     "statement": "def schwingerFunction (μ : FieldMeasure d) (n : ℕ) (f : Fin n → 𝓢(TimeAndSpace d, ℝ)) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "GlimmJaffe.FieldMeasure.schwingerFunction₂",
+     "kind": "def",
+     "line": 84,
+     "doc": "The real two-point Schwinger function evaluated on two Schwartz tests.",
+     "statement": "def schwingerFunction₂ (μ : FieldMeasure d) (f g : 𝓢(TimeAndSpace d, ℝ)) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "GlimmJaffe.FieldMeasure.smearedTwoPointFunction",
+     "kind": "def",
+     "line": 90,
+     "doc": "The two-point Schwinger function smeared at `x` and zero with an arbitrary normalized bump.\nThis follows `SmearedTwoPointFunction` in `OSforGFF`, with the bump supplied independently\nof the standard sequence used in the OS1 endpoint condition.",
+     "statement": "def smearedTwoPointFunction (μ : FieldMeasure d)\n    (φ : ContDiffBump (0 : EuclideanSpace ℝ (Fin (d + 1)))) (x : TimeAndSpace d) : ℝ",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/QFT/Euclidean/GlimmJaffe/FieldConfiguration.lean",
+   "module": "Physlib.QFT.Euclidean.GlimmJaffe.FieldConfiguration",
+   "title": "Glimm–Jaffe field configurations",
+   "doc": "Real scalar field configurations, their complex pairing and their time translation.\n\n## i. Overview\n\nA field configuration of a real scalar Euclidean quantum field is a tempered distribution `ω`,\nso the basic observable is its evaluation `ω f` on a real Schwartz test function `f`.\nTime translation acts by duality on complex-linear functionals of complex Schwartz tests,\nwhich include the complex-linear extensions of field configurations.\n\nThe parameter `d` counts spatial dimensions. Spacetime is Physlib's\n`TimeAndSpace d = Time × Space d`, so the source's total dimension is `d + 1`.\nField configurations carry the weak dual topology and the cylinder sigma algebra.\nTheir pairing with complex Schwartz functions is extended complex linearly.\n\n## ii. Key results\n\n* `FieldConfiguration`: real tempered distributions with the cylinder sigma algebra.\n* `FieldConfiguration.pairing`: the complex-linear extension of a field configuration.\n* `timeTranslation`: time translation of a field by duality.\n\n## iii. Table of contents\n\n- A. Field configurations\n- B. Time translation\n\n## iv. References\n\n* Glimm and Jaffe, *Quantum Physics*. [ref: glimm1987quantum]",
+   "copyright": "",
+   "sections": [
+    {
+     "line": 53,
+     "text": "## A. Field configurations"
+    },
+    {
+     "line": 84,
+     "text": "## B. Time translation"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "GlimmJaffe.FieldConfiguration",
+     "kind": "abbrev",
+     "line": 56,
+     "doc": "Real scalar field configurations, with the weak dual topology on tempered distributions.",
+     "statement": "abbrev FieldConfiguration (d : ℕ)",
+     "sorry": false
+    },
+    {
+     "name": "GlimmJaffe.FieldConfiguration.fieldConfigurationMeasurableSpace",
+     "kind": "instance",
+     "line": 61,
+     "doc": "The cylinder sigma algebra generated by all real Schwartz evaluations.",
+     "statement": "instance fieldConfigurationMeasurableSpace (d : ℕ) : MeasurableSpace (FieldConfiguration d)",
+     "sorry": false
+    },
+    {
+     "name": "GlimmJaffe.FieldConfiguration.pairing",
+     "kind": "def",
+     "line": 68,
+     "doc": "The complex-linear extension of a real field to complex Schwartz tests,\nas an element of the complex weak dual.",
+     "statement": "def pairing (ω : FieldConfiguration d) : WeakDual ℂ (𝓢(TimeAndSpace d, ℂ))",
+     "sorry": false
+    },
+    {
+     "name": "GlimmJaffe.FieldConfiguration.pairing_apply",
+     "kind": "lemma",
+     "line": 72,
+     "doc": "The pairing evaluates as `ω (Re f) + i ω (Im f)`.",
+     "statement": "lemma pairing_apply (ω : FieldConfiguration d) (f : 𝓢(TimeAndSpace d, ℂ)) :\n    pairing ω f = (ω (SchwartzMap.postcompCLM Complex.reCLM f) : ℂ) +\n      Complex.I * (ω (SchwartzMap.postcompCLM Complex.imCLM f) : ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "GlimmJaffe.FieldConfiguration.timeTranslation",
+     "kind": "def",
+     "line": 90,
+     "doc": "Time translation of a (complexified) field by duality,\n  `(T_s ω)(f) = ω((t, x) ↦ f(t - s, x))`.\nThe dimension assumption retains the source's requirement of at least one spatial dimension.",
+     "statement": "def timeTranslation [Fact (1 ≤ d)] (s : ℝ) (ω : WeakDual ℂ (𝓢(TimeAndSpace d, ℂ))) :\n    WeakDual ℂ (𝓢(TimeAndSpace d, ℂ))",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/QFT/Euclidean/GlimmJaffe/StandardBump.lean",
+   "module": "Physlib.QFT.Euclidean.GlimmJaffe.StandardBump",
+   "title": "Standard bump sequence",
+   "doc": "The mollifier sequence used in the OS1 endpoint condition of the Glimm–Jaffe axioms.\n\n## i. Overview\n\nThe OS1 endpoint condition smears the two-point function with a sequence of smooth bumps\nshrinking to the origin. This file fixes that sequence, following `OSforGFF`: the `n`-th bump\non `EuclideanSpace ℝ (Fin (d + 1))` has inner radius `1 / (2n)` and outer radius `1 / n`.\n\n## ii. Key results\n\n* `standardBumpSequence`: the standard bump sequence, defined for nonzero `n`.\n\n## iii. Table of contents\n\n- A. The standard bump sequence\n\n## iv. References\n\n* Cherkis et al., *OSforGFF*. [ref: osforgff]",
+   "copyright": "",
+   "sections": [
+    {
+     "line": 42,
+     "text": "## A. The standard bump sequence"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "GlimmJaffe.standardBumpSequence",
+     "kind": "def",
+     "line": 45,
+     "doc": "The standard bump sequence from `OSforGFF`, with outer radius `1 / n` for nonzero `n`.",
+     "statement": "def standardBumpSequence (n : ℕ) (hn : n ≠ 0) :\n    ContDiffBump (0 : EuclideanSpace ℝ (Fin (d + 1)))",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
    "file": "Physlib/QFT/PerturbationTheory/CreateAnnihilate.lean",
    "module": "Physlib.QFT.PerturbationTheory.CreateAnnihilate",
    "title": "Creation and annihilation parts of fields",
@@ -642,7 +878,7 @@
      "text": "## The basis of the creation and annihilation free-algebra."
     },
     {
-     "line": 243,
+     "line": 244,
      "text": "## Some useful multi-linear maps."
     }
    ],
@@ -866,7 +1102,7 @@
     {
      "name": "FieldSpecification.FieldOpFreeAlgebra.ofCrAnListF_injective",
      "kind": "lemma",
-     "line": 238,
+     "line": 239,
      "doc": "",
      "statement": "lemma ofCrAnListF_injective : Function.Injective (ofCrAnListF (𝓕 := 𝓕))",
      "sorry": false
@@ -874,7 +1110,7 @@
     {
      "name": "FieldSpecification.FieldOpFreeAlgebra.mulLinearMap",
      "kind": "def",
-     "line": 250,
+     "line": 251,
      "doc": "The bi-linear map associated with multiplication in `FieldOpFreeAlgebra`.",
      "statement": "noncomputable def mulLinearMap : FieldOpFreeAlgebra 𝓕 →ₗ[ℂ] FieldOpFreeAlgebra 𝓕 →ₗ[ℂ]\n    FieldOpFreeAlgebra 𝓕",
      "sorry": false
@@ -882,7 +1118,7 @@
     {
      "name": "FieldSpecification.FieldOpFreeAlgebra.mulLinearMap_apply",
      "kind": "lemma",
-     "line": 264,
+     "line": 265,
      "doc": "",
      "statement": "lemma mulLinearMap_apply (a b : FieldOpFreeAlgebra 𝓕) :\n    mulLinearMap a b = a * b",
      "sorry": false
@@ -890,7 +1126,7 @@
     {
      "name": "FieldSpecification.FieldOpFreeAlgebra.smulLinearMap",
      "kind": "def",
-     "line": 268,
+     "line": 269,
      "doc": "The linear map associated with scalar-multiplication in `FieldOpFreeAlgebra`.",
      "statement": "noncomputable def smulLinearMap (c : ℂ) : FieldOpFreeAlgebra 𝓕 →ₗ[ℂ] FieldOpFreeAlgebra 𝓕",
      "sorry": false
@@ -3733,9 +3969,9 @@
     {
      "name": "FieldStatistic.ofList_freeMonoid",
      "kind": "lemma",
-     "line": 177,
+     "line": 176,
      "doc": "",
-     "statement": "lemma ofList_freeMonoid (s : 𝓕 → FieldStatistic) (φ : 𝓕) : ofList s (FreeMonoid.of φ) = s φ",
+     "statement": "lemma ofList_freeMonoid (s : 𝓕 → FieldStatistic) (φ : 𝓕) :\n    ofList s (FreeMonoid.of φ).toList = s φ",
      "sorry": false
     },
     {
@@ -4081,7 +4317,7 @@
    "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
-     "line": 386,
+     "line": 385,
      "text": "# koszulSign with permutations"
     }
    ],
@@ -4113,15 +4349,15 @@
     {
      "name": "Wick.koszulSign_freeMonoid_of",
      "kind": "lemma",
-     "line": 48,
+     "line": 47,
      "doc": "",
-     "statement": "lemma koszulSign_freeMonoid_of (φ : 𝓕) : koszulSign q le (FreeMonoid.of φ) = 1",
+     "statement": "lemma koszulSign_freeMonoid_of (φ : 𝓕) : koszulSign q le (FreeMonoid.of φ).toList = 1",
      "sorry": false
     },
     {
      "name": "Wick.koszulSignInsert_erase_boson",
      "kind": "lemma",
-     "line": 53,
+     "line": 52,
      "doc": "",
      "statement": "lemma koszulSignInsert_erase_boson {𝓕 : Type} (q : 𝓕 → FieldStatistic)\n    (le : 𝓕 → 𝓕 → Prop) [DecidableRel le] (φ : 𝓕) :\n    (φs : List 𝓕) → (n : Fin φs.length) → (heq : q (φs.get n) = bosonic) →\n    koszulSignInsert q le φ (φs.eraseIdx n) = koszulSignInsert q le φ φs",
      "sorry": false
@@ -4129,7 +4365,7 @@
     {
      "name": "Wick.koszulSign_erase_boson",
      "kind": "lemma",
-     "line": 70,
+     "line": 69,
      "doc": "",
      "statement": "lemma koszulSign_erase_boson {𝓕 : Type} (q : 𝓕 → FieldStatistic) (le : 𝓕 → 𝓕 → Prop)\n    [DecidableRel le] :\n    (φs : List 𝓕) → (n : Fin φs.length) → (heq : q (φs.get n) = bosonic) →\n    koszulSign q le (φs.eraseIdx n) = koszulSign q le φs",
      "sorry": false
@@ -4137,7 +4373,7 @@
     {
      "name": "Wick.koszulSign_insertIdx",
      "kind": "lemma",
-     "line": 91,
+     "line": 90,
      "doc": "",
      "statement": "lemma koszulSign_insertIdx [Std.Total le] [IsTrans 𝓕 le] (φ : 𝓕) :\n    (φs : List 𝓕) → (n : ℕ) → (hn : n ≤ φs.length) →\n    koszulSign q le (List.insertIdx φs n φ) = 𝓢(q φ, ofList q (φs.take n)) * koszulSign q le φs *\n      𝓢(q φ, ofList q ((List.insertionSort le (List.insertIdx φs n φ)).take\n      (insertionSortEquiv le (List.insertIdx φs n φ) ⟨n, by\n        rw [List.length_insertIdx]\n        simp only [hn, ↓reduceIte]\n        omega⟩)))",
      "sorry": false
@@ -4145,7 +4381,7 @@
     {
      "name": "Wick.insertIdx_eraseIdx",
      "kind": "lemma",
-     "line": 197,
+     "line": 196,
      "doc": "",
      "statement": "lemma insertIdx_eraseIdx {I : Type} : (n : ℕ) → (r : List I) → (hn : n < r.length) →\n    List.insertIdx (r.eraseIdx n) n (r.get ⟨n, hn⟩) = r",
      "sorry": false
@@ -4153,7 +4389,7 @@
     {
      "name": "Wick.koszulSign_eraseIdx",
      "kind": "lemma",
-     "line": 208,
+     "line": 207,
      "doc": "",
      "statement": "lemma koszulSign_eraseIdx [Std.Total le] [IsTrans 𝓕 le] (φs : List 𝓕) (n : Fin φs.length) :\n    koszulSign q le (φs.eraseIdx n) = koszulSign q le φs * 𝓢(q (φs.get n), ofList q (φs.take n)) *\n    𝓢(q (φs.get n), ofList q (List.take (↑(insertionSortEquiv le φs n))\n    (List.insertionSort le φs)))",
      "sorry": false
@@ -4161,7 +4397,7 @@
     {
      "name": "Wick.koszulSign_eraseIdx_insertionSortMinPos",
      "kind": "lemma",
-     "line": 249,
+     "line": 248,
      "doc": "",
      "statement": "lemma koszulSign_eraseIdx_insertionSortMinPos [Std.Total le] [IsTrans 𝓕 le] (φ : 𝓕) (φs : List 𝓕) :\n    koszulSign q le ((φ :: φs).eraseIdx (insertionSortMinPos le φ φs)) = koszulSign q le (φ :: φs)\n    * 𝓢(q (insertionSortMin le φ φs), ofList q ((φ :: φs).take (insertionSortMinPos le φ φs)))",
      "sorry": false
@@ -4169,7 +4405,7 @@
     {
      "name": "Wick.koszulSign_swap_eq_rel_cons",
      "kind": "lemma",
-     "line": 263,
+     "line": 262,
      "doc": "",
      "statement": "lemma koszulSign_swap_eq_rel_cons {ψ φ : 𝓕}\n    (h1 : le φ ψ) (h2 : le ψ φ) (φs' : List 𝓕) :\n    koszulSign q le (φ :: ψ :: φs') = koszulSign q le (ψ :: φ :: φs')",
      "sorry": false
@@ -4177,7 +4413,7 @@
     {
      "name": "Wick.koszulSign_swap_eq_rel",
      "kind": "lemma",
-     "line": 271,
+     "line": 270,
      "doc": "",
      "statement": "lemma koszulSign_swap_eq_rel {ψ φ : 𝓕} (h1 : le φ ψ) (h2 : le ψ φ) : (φs φs' : List 𝓕) →\n    koszulSign q le (φs ++ φ :: ψ :: φs') = koszulSign q le (φs ++ ψ :: φ :: φs')",
      "sorry": false
@@ -4185,7 +4421,7 @@
     {
      "name": "Wick.koszulSign_eq_rel_eq_stat_append",
      "kind": "lemma",
-     "line": 283,
+     "line": 282,
      "doc": "",
      "statement": "lemma koszulSign_eq_rel_eq_stat_append {ψ φ : 𝓕} [IsTrans 𝓕 le]\n    (h1 : le φ ψ) (h2 : le ψ φ) (hq : q ψ = q φ) : (φs : List 𝓕) →\n    koszulSign q le (φ :: ψ :: φs) = koszulSign q le φs",
      "sorry": false
@@ -4193,7 +4429,7 @@
     {
      "name": "Wick.koszulSign_eq_rel_eq_stat",
      "kind": "lemma",
-     "line": 297,
+     "line": 296,
      "doc": "",
      "statement": "lemma koszulSign_eq_rel_eq_stat {ψ φ : 𝓕} [IsTrans 𝓕 le]\n    (h1 : le φ ψ) (h2 : le ψ φ) (hq : q ψ = q φ) : (φs' φs : List 𝓕) →\n    koszulSign q le (φs' ++ φ :: ψ :: φs) = koszulSign q le (φs' ++ φs)",
      "sorry": false
@@ -4201,7 +4437,7 @@
     {
      "name": "Wick.koszulSign_of_sorted",
      "kind": "lemma",
-     "line": 313,
+     "line": 312,
      "doc": "",
      "statement": "lemma koszulSign_of_sorted : (φs : List 𝓕)\n    → (hs : List.Pairwise le φs) → koszulSign q le φs = 1",
      "sorry": false
@@ -4209,7 +4445,7 @@
     {
      "name": "Wick.koszulSign_of_insertionSort",
      "kind": "lemma",
-     "line": 325,
+     "line": 324,
      "doc": "",
      "statement": "lemma koszulSign_of_insertionSort [Std.Total le] [IsTrans 𝓕 le] (φs : List 𝓕) :\n    koszulSign q le (List.insertionSort le φs) = 1",
      "sorry": false
@@ -4217,7 +4453,7 @@
     {
      "name": "Wick.koszulSign_of_append_eq_insertionSort_left",
      "kind": "lemma",
-     "line": 330,
+     "line": 329,
      "doc": "",
      "statement": "lemma koszulSign_of_append_eq_insertionSort_left [Std.Total le] [IsTrans 𝓕 le] :\n    (φs φs' : List 𝓕) → koszulSign q le (φs ++ φs') =\n    koszulSign q le (List.insertionSort le φs ++ φs') * koszulSign q le φs",
      "sorry": false
@@ -4225,7 +4461,7 @@
     {
      "name": "Wick.koszulSign_of_append_eq_insertionSort",
      "kind": "lemma",
-     "line": 371,
+     "line": 370,
      "doc": "",
      "statement": "lemma koszulSign_of_append_eq_insertionSort [Std.Total le] [IsTrans 𝓕 le] : (φs'' φs φs' : List 𝓕) →\n    koszulSign q le (φs'' ++ φs ++ φs') =\n    koszulSign q le (φs'' ++ List.insertionSort le φs ++ φs') * koszulSign q le φs",
      "sorry": false
@@ -4233,7 +4469,7 @@
     {
      "name": "Wick.koszulSign_perm_eq_append",
      "kind": "lemma",
-     "line": 392,
+     "line": 391,
      "doc": "",
      "statement": "lemma koszulSign_perm_eq_append [IsTrans 𝓕 le] (φ : 𝓕) (φs φs' φs2 : List 𝓕)\n    (hp : φs.Perm φs') : (h : ∀ φ' ∈ φs, le φ φ' ∧ le φ' φ) →\n    koszulSign q le (φs ++ φs2) = koszulSign q le (φs' ++ φs2)",
      "sorry": false
@@ -4241,7 +4477,7 @@
     {
      "name": "Wick.koszulSign_perm_eq",
      "kind": "lemma",
-     "line": 420,
+     "line": 419,
      "doc": "",
      "statement": "lemma koszulSign_perm_eq [IsTrans 𝓕 le] (φ : 𝓕) : (φs1 φs φs' φs2 : List 𝓕) →\n    (h : ∀ φ' ∈ φs, le φ φ' ∧ le φ' φ) → (hp : φs.Perm φs') →\n    koszulSign q le (φs1 ++ φs ++ φs2) = koszulSign q le (φs1 ++ φs' ++ φs2)",
      "sorry": false

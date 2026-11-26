@@ -8,7 +8,7 @@ proof: formalized
 
 # Power-associativity
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Power.Associative`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean): 8 declarations, 8 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Power.Associative`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean): 8 declarations, 8 with a docstring.
 
 > Jordan algebras are power-associative: `aᵐ ∘ aⁿ = aᵐ⁺ⁿ`.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Power.Associative`,
 
 ## A. Operator commutation for powers
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.commute_mulLeft_sq`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean#L53).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.commute_mulLeft_sq`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean#L53).
 
 > `L_a` and `L_{a²}` commute, which is the Jordan identity.
 
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Power.Associative`,
 lemma commute_mulLeft_sq (a : E) : Commute (L a) (L (a ^[2]))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.commute_mulLeft_apply`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean#L64).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.commute_mulLeft_apply`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean#L64).
 
 > A pointwise restatement of `Commute (L a) (L x)`: `a` and `x` "cross-associate" against any
 > third element `y`.
@@ -48,7 +48,7 @@ lemma commute_mulLeft_apply {a x : E} (h : Commute (L a) (L x)) (y : E) :
     a * (x * y) = x * (a * y)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.linearized_mul_sq`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean#L73).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.linearized_mul_sq`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean#L73).
 
 > A polarized form of the Jordan identity. This is Basic Identity (2.1.2) in McCrimmon's
 > *A Taste of Jordan Algebras*. It is the algebraic engine behind the recursion for multiplication
@@ -61,7 +61,7 @@ lemma linearized_mul_sq (a y z : E) :
         (2 : ℝ) • ((a * y) * (a * z))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.square_mul_jpow`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean#L113).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.square_mul_jpow`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean#L113).
 
 > Multiplying a Jordan power by the square raises its degree by two.
 
@@ -69,7 +69,7 @@ lemma linearized_mul_sq (a y z : E) :
 lemma square_mul_jpow (a : E) (n : ℕ) : (a * a) * a ^[n] = a ^[n + 2]
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.mulLeft_jpow_add_two`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean#L123).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.mulLeft_jpow_add_two`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean#L123).
 
 > The multiplication operator of `a^[n+2]`, expressed recursively in the commuting generators
 > `L_a` and `L_(a²)`.
@@ -82,7 +82,7 @@ lemma mulLeft_jpow_add_two (a : E) (n : ℕ) :
           (2 : ℝ) • ((L (a ^[n + 1])) * (L a)))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.fundamental_mulLeft_commute_pow`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean#L135).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.fundamental_mulLeft_commute_pow`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean#L135).
 
 > Both fundamental commuting operators `L_a` and `L_(a²)` commute with multiplication by every
 > power of `a`.
@@ -92,7 +92,7 @@ lemma fundamental_mulLeft_commute_pow (a : E) (n : ℕ) :
     Commute (L a) (L (a ^[n])) ∧ Commute (L (a * a)) (L (a ^[n]))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.commute_mulLeft_pow`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean#L169).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.commute_mulLeft_pow`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean#L169).
 
 > `a` commutes, as a Jordan multiplication operator, with the multiplication operator of every
 > one of its powers.
@@ -103,7 +103,7 @@ lemma commute_mulLeft_pow (a : E) (n : ℕ) : Commute (L a) (L (a ^[n]))
 
 ## B. Strong power-associativity
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.pow_add`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean#L175).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.pow_add`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean#L175).
 
 > **Power-associativity**: `aᵐ ∘ aⁿ = aᵐ⁺ⁿ`.
 
@@ -117,4 +117,4 @@ lemma pow_add (a : E) (m n : ℕ) : a ^[m] * a ^[n] = a ^[m + n]
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean)

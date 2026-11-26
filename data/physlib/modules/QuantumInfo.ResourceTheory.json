@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
  "modules": [
   {
    "file": "QuantumInfo/ResourceTheory/FreeState.lean",
@@ -13,7 +13,7 @@
     {
      "name": "ResourcePretheory",
      "kind": "class",
-     "line": 25,
+     "line": 24,
      "doc": "A `ResourcePretheory` is a family of Hilbert spaces closed under tensor products, with an\n  instance of `Fintype` and `DecidableEq` for each. It forms a pre-structure then on which to\n  discuss resource theories. For instance, to talk about \"two-party scenarios\", we could write\n  `ResourcePretheory (ℕ × ℕ)`, with `H (a,b) := (Fin a) × (Fin b)`.\n\nThe `Semigroup ι` structure means we have a way to take products of our labels of Hilbert spaces\nin a way that is associative (with actual equality). The `prodEquiv` lets us reinterpret between\na product-labelled Hilbert spaces, and an actual pair of Hilbert spaces.",
      "statement": "class ResourcePretheory (ι : Type*) extends Semigroup ι where\n  /-- The indexing of each Hilbert space -/\n  H : ι → Type*\n  /-- Each space is finite -/\n  [FinH : ∀ i, Fintype (H i)]\n  /-- Each object has decidable equality -/\n  [DecEqH : ∀ i, DecidableEq (H i)]\n  /-- Each space is nonempty (dimension at least 1) -/\n  [NonemptyH : ∀ i, Nonempty (H i)]\n  /-- The product structure induces an isomorphism of Hilbert spaces -/\n  prodEquiv i j : H (i * j) ≃ (H i) × (H j)\n  --Possible we want some fact like the associativity of `prod` or the existence of an identity space,\n  -- which would then imply MonoidalCategory structure later (instead of just Category). For now we\n  -- take the (logically equivalent, in the appropriate model) assumption that the associator is\n  -- actually an equality. This is captured in the `Semigroup ι` assumption. If we wanted to turn\n  -- this into something more flexible, we would replace that with `Mul ι` (dropping `mul_assoc`)\n  -- and get an appropriate associator `Equiv` here.\n  hAssoc i j k :\n    ((prodEquiv (i * j) k).trans <|\n      ((prodEquiv i j).prodCongr (Equiv.refl (H k))).trans <|\n      (Equiv.prodAssoc _ _ _).trans <|\n      ((Equiv.refl (H i)).prodCongr ((prodEquiv j k).symm)).trans\n      (prodEquiv i (j * k)).symm\n    )\n     = Equiv.cast (congrArg H <| mul_assoc i j k)",
      "sorry": false
@@ -21,7 +21,7 @@
     {
      "name": "ResourcePretheory.prodRelabel",
      "kind": "def",
-     "line": 63,
+     "line": 62,
      "doc": "The `prod` operation of `ResourcePretheory` gives the natural product operation on `MState`s\nthat puts us in a new Hilbert space of the category. Accessible by the notation `ρ₁ ⊗ᵣ ρ₂`.",
      "statement": "noncomputable def prodRelabel (ρ₁ : MState (H i)) (ρ₂ : MState (H j)) : MState (H (i * j))",
      "sorry": false
@@ -29,7 +29,7 @@
     {
      "name": "ResourcePretheory.prodRelabel_assoc",
      "kind": "lemma",
-     "line": 69,
+     "line": 68,
      "doc": "",
      "statement": "lemma prodRelabel_assoc (ρ₁ : MState (H i)) (ρ₂ : MState (H j)) (ρ₃ : MState (H k)) :\n    ρ₁ ⊗ᵣ ρ₂ ⊗ᵣ ρ₃ ≍ ρ₁ ⊗ᵣ (ρ₂ ⊗ᵣ ρ₃)",
      "sorry": false
@@ -37,7 +37,7 @@
     {
      "name": "ResourcePretheory.prodRelabel_relabel_cast_prod",
      "kind": "theorem",
-     "line": 86,
+     "line": 85,
      "doc": "A `MState.relabel` can be distributed across a `prodRelabel`, if you have proofs that the factors\ncorrespond correctly.",
      "statement": "theorem prodRelabel_relabel_cast_prod\n    (ρ₁ : MState (H i)) (ρ₂ : MState (H j))\n    (h : H (k * l) = H (i * j)) (hik : k = i) (hlj : l = j) :\n    (ρ₁ ⊗ᵣ ρ₂).relabel (Equiv.cast h) =\n    (ρ₁.relabel (Equiv.cast (congrArg H hik))) ⊗ᵣ (ρ₂.relabel (Equiv.cast (congrArg H hlj)))",
      "sorry": false
@@ -45,7 +45,7 @@
     {
      "name": "ResourcePretheory.prodCPTPMap",
      "kind": "def",
-     "line": 97,
+     "line": 96,
      "doc": "The `prod` operation of `ResourcePretheory` gives the natural product operation on `CPTPMap`s. Accessible\nby the notation `M₁ ⊗ᶜᵖᵣ M₂`.",
      "statement": "noncomputable def prodCPTPMap (M₁ : CPTPMap (H i) (H j)) (M₂ : CPTPMap (H k) (H l)) :\n    CPTPMap (H (i * k)) (H (j * l))",
      "sorry": false
@@ -53,7 +53,7 @@
     {
      "name": "ResourcePretheory.PosDef.prod",
      "kind": "lemma",
-     "line": 105,
+     "line": 104,
      "doc": "",
      "statement": "lemma PosDef.prod {ρ : MState (H i)} {σ : MState (H j)} (hρ : ρ.m.PosDef) (hσ : σ.m.PosDef)\n    : (ρ ⊗ᵣ σ).m.PosDef",
      "sorry": false
@@ -61,7 +61,7 @@
     {
      "name": "ResourcePretheory.qRelEntropy_prodRelabel",
      "kind": "lemma",
-     "line": 143,
+     "line": 142,
      "doc": "",
      "statement": "lemma qRelEntropy_prodRelabel (ρ₁ ρ₂ : MState (H i)) (σ₁ σ₂ : MState (H j)):\n    𝐃(ρ₁ ⊗ᵣ σ₁‖ρ₂ ⊗ᵣ σ₂) = 𝐃(ρ₁‖ρ₂) + 𝐃(σ₁‖σ₂)",
      "sorry": false
@@ -69,7 +69,7 @@
     {
      "name": "ResourcePretheory.sandwichedRelRentropy_prodRelabel",
      "kind": "lemma",
-     "line": 148,
+     "line": 147,
      "doc": "",
      "statement": "lemma sandwichedRelRentropy_prodRelabel {α : ℝ} (ρ₁ ρ₂ : MState (H i)) (σ₁ σ₂ : MState (H j)):\n    D̃_ α(ρ₁ ⊗ᵣ σ₁‖ρ₂ ⊗ᵣ σ₂) = D̃_ α(ρ₁‖ρ₂) + D̃_ α(σ₁‖σ₂)",
      "sorry": false
@@ -77,7 +77,7 @@
     {
      "name": "UnitalPretheory",
      "kind": "class",
-     "line": 157,
+     "line": 156,
      "doc": "A ResourcePretheory is `Unital` if it has a Hilbert space of size 1, i.e. `ℂ`.",
      "statement": "class UnitalPretheory (ι : Type*) extends ResourcePretheory ι, MulOneClass ι, Unique (H 1) where\n  prod_default {i} (ρ : MState (H i)) :\n    (toResourcePretheory.prodRelabel ρ (Inhabited.default : MState (H 1))) ≍ ρ\n  default_prod {i} (ρ : MState (H i)) :\n    (toResourcePretheory.prodRelabel (Inhabited.default : MState (H 1)) ρ) ≍ ρ",
      "sorry": false
@@ -85,7 +85,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 167,
+     "line": 166,
      "doc": "",
      "statement": "instance : Monoid ι",
      "sorry": false
@@ -93,7 +93,7 @@
     {
      "name": "UnitalPretheory.spacePow",
      "kind": "def",
-     "line": 176,
+     "line": 175,
      "doc": "Powers of spaces.\n\nWe define it for `Nat` in a `UnitalPretheory`. In principal this could be done for any\n`ResourcePretheory` and be defined for `PNat` so that we don't have zeroth powers. In\nanticipation that we might some day want that, and that we might do everything with a\nnon-equality associator, we keep this as its own definition and keep our own names for\nrewriting theorems where possible.",
      "statement": "noncomputable def spacePow (i : ι) (n : ℕ) : ι",
      "sorry": false
@@ -101,7 +101,7 @@
     {
      "name": "UnitalPretheory.spacePow_zero",
      "kind": "lemma",
-     "line": 184,
+     "line": 183,
      "doc": "",
      "statement": "lemma spacePow_zero (i : ι) : i ^ 0 = 1",
      "sorry": false
@@ -109,7 +109,7 @@
     {
      "name": "UnitalPretheory.spacePow_one",
      "kind": "lemma",
-     "line": 188,
+     "line": 187,
      "doc": "",
      "statement": "lemma spacePow_one (i : ι) : i ^ 1 = i",
      "sorry": false
@@ -117,7 +117,7 @@
     {
      "name": "UnitalPretheory.spacePow_succ",
      "kind": "lemma",
-     "line": 191,
+     "line": 190,
      "doc": "",
      "statement": "lemma spacePow_succ (i : ι) (n : ℕ) : i ^ (n + 1) = (i ^ n) * i",
      "sorry": false
@@ -125,7 +125,7 @@
     {
      "name": "UnitalPretheory.spacePow_add",
      "kind": "lemma",
-     "line": 194,
+     "line": 193,
      "doc": "",
      "statement": "lemma spacePow_add (m n : ℕ) :\n    i ^ (m + n) = (i ^ m) * (i ^ n)",
      "sorry": false
@@ -133,7 +133,7 @@
     {
      "name": "UnitalPretheory.spacePow_mul",
      "kind": "lemma",
-     "line": 201,
+     "line": 200,
      "doc": "",
      "statement": "lemma spacePow_mul (m n : ℕ) :\n    i ^ (m * n) = (i ^ m) ^ n",
      "sorry": false
@@ -141,7 +141,7 @@
     {
      "name": "UnitalPretheory.statePow",
      "kind": "def",
-     "line": 207,
+     "line": 206,
      "doc": "Powers of states, using the resource theory's notion of product. Accessible via the notation\n`ρ ⊗ᵣ^[n]`.",
      "statement": "noncomputable def statePow (ρ : MState (H i)) (n : ℕ) : MState (H (i ^ n))",
      "sorry": false
@@ -149,7 +149,7 @@
     {
      "name": "UnitalPretheory.statePow_zero",
      "kind": "lemma",
-     "line": 214,
+     "line": 213,
      "doc": "",
      "statement": "lemma statePow_zero (ρ : MState (H i)) : ρ ⊗ᵣ^[0] = default",
      "sorry": false
@@ -157,7 +157,7 @@
     {
      "name": "UnitalPretheory.statePow_one",
      "kind": "lemma",
-     "line": 218,
+     "line": 217,
      "doc": "",
      "statement": "lemma statePow_one (ρ : MState (H i)) : ρ ⊗ᵣ^[1] ≍ ρ",
      "sorry": false
@@ -165,7 +165,7 @@
     {
      "name": "UnitalPretheory.statePow_succ",
      "kind": "lemma",
-     "line": 224,
+     "line": 223,
      "doc": "",
      "statement": "lemma statePow_succ (ρ : MState (H i)) (n : ℕ) : ρ ⊗ᵣ^[n + 1] = ρ ⊗ᵣ^[n] ⊗ᵣ ρ",
      "sorry": false
@@ -173,7 +173,7 @@
     {
      "name": "UnitalPretheory.statePow_add",
      "kind": "lemma",
-     "line": 227,
+     "line": 226,
      "doc": "",
      "statement": "lemma statePow_add (ρ : MState (H i)) (m n : ℕ) : ρ ⊗ᵣ^[m + n] ≍ ρ ⊗ᵣ^[m] ⊗ᵣ ρ ⊗ᵣ^[n]",
      "sorry": false
@@ -181,7 +181,7 @@
     {
      "name": "UnitalPretheory.statePow_add_relabel",
      "kind": "lemma",
-     "line": 240,
+     "line": 239,
      "doc": "",
      "statement": "lemma statePow_add_relabel (ρ : MState (H i)) (m n : ℕ) :\n    ρ ⊗ᵣ^[m + n] = (ρ ⊗ᵣ^[m] ⊗ᵣ ρ ⊗ᵣ^[n]).relabel (Equiv.cast (by congr; exact pow_add i m n))",
      "sorry": false
@@ -189,7 +189,7 @@
     {
      "name": "UnitalPretheory.statePow_mul",
      "kind": "lemma",
-     "line": 248,
+     "line": 247,
      "doc": "",
      "statement": "lemma statePow_mul (ρ : MState (H i)) (m n : ℕ) : ρ ⊗ᵣ^[m * n] ≍ (ρ ⊗ᵣ^[m]) ⊗ᵣ^[n]",
      "sorry": false
@@ -197,7 +197,7 @@
     {
      "name": "UnitalPretheory.statePow_mul_relabel",
      "kind": "lemma",
-     "line": 273,
+     "line": 272,
      "doc": "",
      "statement": "lemma statePow_mul_relabel {i : ι} (ρ : MState (H i)) (m n : ℕ) :\n   ρ ⊗ᵣ^[m * n] = (ρ ⊗ᵣ^[m]) ⊗ᵣ^[n].relabel (Equiv.cast (congrArg H (pow_mul i m n)))",
      "sorry": false
@@ -205,7 +205,7 @@
     {
      "name": "UnitalPretheory.PosDef.npow",
      "kind": "lemma",
-     "line": 281,
+     "line": 280,
      "doc": "",
      "statement": "lemma PosDef.npow {ρ : MState (H i)} (hρ : ρ.m.PosDef) (n : ℕ)\n    : (ρ ⊗ᵣ^[n]).m.PosDef",
      "sorry": false
@@ -213,7 +213,7 @@
     {
      "name": "UnitalPretheory.statePow_rw",
      "kind": "lemma",
-     "line": 288,
+     "line": 287,
      "doc": "",
      "statement": "lemma statePow_rw {n m : ℕ} (h : n = m) (ρ : MState (H i)) :\n    ρ ⊗ᵣ^[n] = (ρ ⊗ᵣ^[m]).relabel (Equiv.cast (by congr))",
      "sorry": false
@@ -221,7 +221,7 @@
     {
      "name": "UnitalPretheory.qRelEntropy_statePow",
      "kind": "lemma",
-     "line": 295,
+     "line": 294,
      "doc": "",
      "statement": "lemma qRelEntropy_statePow (ρ σ : MState (H i)) (n : ℕ) :\n    𝐃(ρ ⊗ᵣ^[n] ‖ σ  ⊗ᵣ^[n]) = n * 𝐃(ρ‖σ)",
      "sorry": false
@@ -229,7 +229,7 @@
     {
      "name": "UnitalPretheory.sInf_spectrum_rprod",
      "kind": "lemma",
-     "line": 303,
+     "line": 302,
      "doc": "",
      "statement": "lemma sInf_spectrum_rprod {j : ι} (ρ : MState (H i)) (σ : MState (H j)) :\n    sInf (spectrum ℝ (ρ ⊗ᵣ σ).m) = sInf (spectrum ℝ ρ.m) * sInf (spectrum ℝ σ.m)",
      "sorry": false
@@ -237,7 +237,7 @@
     {
      "name": "UnitalPretheory.sInf_spectrum_spacePow",
      "kind": "lemma",
-     "line": 308,
+     "line": 307,
      "doc": "",
      "statement": "lemma sInf_spectrum_spacePow (σ : MState (H i)) (n : ℕ) :\n    sInf (spectrum ℝ (σ ⊗ᵣ^[n]).m) = sInf (spectrum ℝ σ.m) ^ n",
      "sorry": false
@@ -245,7 +245,7 @@
     {
      "name": "UnitalPretheory.sandwichedRelRentropy_statePow",
      "kind": "lemma",
-     "line": 323,
+     "line": 322,
      "doc": "",
      "statement": "lemma sandwichedRelRentropy_statePow {α : ℝ} (ρ σ : MState (H i)) (n : ℕ) :\n    D̃_ α(ρ ⊗ᵣ^[n] ‖ σ ⊗ᵣ^[n]) = n * D̃_ α(ρ‖σ)",
      "sorry": false
@@ -253,7 +253,7 @@
     {
      "name": "FreeStateTheory",
      "kind": "class",
-     "line": 342,
+     "line": 341,
      "doc": "A `FreeStateTheory` is a collection of mixed states (`MState`s) in a `ResourcePretheory` that obeys\nsome necessary axioms:\n * For each Hilbert space `H i`, the free states are a closed, convex set\n * For each Hilbert space `H i`, there is a free state of full rank\n * If `ρᵢ ∈ H i` and `ρⱼ ∈ H j` are free, then `ρᵢ ⊗ ρⱼ` is free in `H (prod i j)`.",
      "statement": "class FreeStateTheory (ι : Type*) extends ResourcePretheory ι where\n  /-- The set of states we're calling \"free\" -/\n  IsFree : Set (MState (toResourcePretheory.H i))\n  /-- The set F(H) of free states is closed -/\n  free_closed : IsClosed (@IsFree i)\n  /-- The set F(H) of free states is convex (more precisely, their matrices are) -/\n  free_convex : Convex ℝ (MState.M '' (@IsFree i))\n  /-- The set of free states is closed under tensor product -/\n  free_prod {ρ₁ : MState (H i)} {ρ₂ : MState (H j)} (h₁ : ρ₁ ∈ IsFree) (h₂ : ρ₂ ∈ IsFree) : (ρ₁ ⊗ᵣ ρ₂) ∈ IsFree\n  /-- The set F(H) of free states contains a full-rank state `ρfull`, equivalently `ρfull` is positive definite. -/\n  free_fullRank (i : ι) : open ComplexOrder in ∃ (ρ : MState (H i)), ρ.m.PosDef ∧ ρ ∈ IsFree",
      "sorry": false
@@ -261,7 +261,7 @@
     {
      "name": "FreeStateTheory.Inhabited_IsFree",
      "kind": "instance",
-     "line": 358,
+     "line": 357,
      "doc": "",
      "statement": "noncomputable instance Inhabited_IsFree : Inhabited (IsFree (i := i))",
      "sorry": false
@@ -269,7 +269,7 @@
     {
      "name": "FreeStateTheory.IsFree.of_unique",
      "kind": "lemma",
-     "line": 361,
+     "line": 360,
      "doc": "",
      "statement": "lemma IsFree.of_unique [Unique (H i)] (ρ : MState (H i)) : ρ ∈ IsFree",
      "sorry": false
@@ -277,7 +277,7 @@
     {
      "name": "FreeStateTheory.IsCompact_IsFree",
      "kind": "theorem",
-     "line": 367,
+     "line": 366,
      "doc": "The set of free states is compact because it's a closed subset of a compact space.",
      "statement": "theorem IsCompact_IsFree : IsCompact (IsFree (i := i))",
      "sorry": false
@@ -285,7 +285,7 @@
     {
      "name": "FreeStateTheory.IsFree.mix",
      "kind": "lemma",
-     "line": 373,
+     "line": 372,
      "doc": "",
      "statement": "lemma IsFree.mix {ι : Type*} [FreeStateTheory ι] {i : ι} {σ₁ σ₂ : MState (H i)}\n    (hσ₁ : σ₁ ∈ IsFree) (hσ₂ : σ₂ ∈ IsFree) (p : Prob) : (p [σ₁ ↔ σ₂]) ∈ IsFree",
      "sorry": false
@@ -293,7 +293,7 @@
     {
      "name": "UnitalFreeStateTheory",
      "kind": "class",
-     "line": 385,
+     "line": 384,
      "doc": "",
      "statement": "class UnitalFreeStateTheory (ι : Type*) extends FreeStateTheory ι, UnitalPretheory ι",
      "sorry": false
@@ -301,7 +301,7 @@
     {
      "name": "FreeStateTheory.IsFree.npow",
      "kind": "lemma",
-     "line": 394,
+     "line": 393,
      "doc": "",
      "statement": "lemma _root_.FreeStateTheory.IsFree.npow {i : ι} {ρ : MState (H i)}\n    (hρ : ρ ∈ IsFree) (n : ℕ) : (ρ ⊗ᵣ^[n]) ∈ IsFree",
      "sorry": false
@@ -309,7 +309,7 @@
     {
      "name": "UnitalFreeStateTheory.relabel_cast_isFree",
      "kind": "lemma",
-     "line": 403,
+     "line": 402,
      "doc": "",
      "statement": "lemma relabel_cast_isFree {i j : ι} (ρ : MState (H i)) (h : j = i) {h' : H j = H i}:\n    ρ.relabel (Equiv.cast h') ∈ IsFree ↔ ρ ∈ IsFree",
      "sorry": false
@@ -317,7 +317,7 @@
     {
      "name": "UnitalFreeStateTheory.relativeEntResource_ne_top",
      "kind": "lemma",
-     "line": 413,
+     "line": 412,
      "doc": "In a `FreeStateTheory`, we have free states of full rank, therefore the minimum relative entropy\nof any state `ρ` to a free state is finite.",
      "statement": "lemma relativeEntResource_ne_top (ρ : MState (H i)) : ⨅ σ ∈ IsFree, 𝐃(ρ‖σ) ≠ ⊤",
      "sorry": false
@@ -325,7 +325,7 @@
     {
      "name": "UnitalFreeStateTheory.RelativeEntResource",
      "kind": "def",
-     "line": 426,
+     "line": 425,
      "doc": "",
      "statement": "noncomputable def RelativeEntResource : MState (H i) → ℝ≥0",
      "sorry": false
@@ -333,7 +333,7 @@
     {
      "name": "UnitalFreeStateTheory.exists_isFree_relativeEntResource",
      "kind": "lemma",
-     "line": 432,
+     "line": 431,
      "doc": "",
      "statement": "lemma exists_isFree_relativeEntResource (ρ : MState (H i)) :\n    ∃ σ ∈ IsFree, 𝐃(ρ‖σ) = 𝑅ᵣ ρ",
      "sorry": false
@@ -341,7 +341,7 @@
     {
      "name": "UnitalFreeStateTheory.RelativeEntResource.Subadditive",
      "kind": "lemma",
-     "line": 441,
+     "line": 440,
      "doc": "",
      "statement": "lemma RelativeEntResource.Subadditive (ρ : MState (H i)) :\n    Subadditive fun n ↦ (𝑅ᵣ (ρ ⊗ᵣ^[n]) : ℝ)",
      "sorry": false
@@ -349,7 +349,7 @@
     {
      "name": "UnitalFreeStateTheory.RegularizedRelativeEntResource",
      "kind": "def",
-     "line": 461,
+     "line": 460,
      "doc": "",
      "statement": "noncomputable def RegularizedRelativeEntResource (ρ : MState (H i)) : ℝ≥0",
      "sorry": false
@@ -357,7 +357,7 @@
     {
      "name": "UnitalFreeStateTheory.RelativeEntResource.tendsto",
      "kind": "theorem",
-     "line": 471,
+     "line": 470,
      "doc": "Lemma 5",
      "statement": "theorem RelativeEntResource.tendsto (ρ : MState (H i)) :\n    Filter.atTop.Tendsto (fun n ↦ 𝑅ᵣ (ρ ⊗ᵣ^[n]) / n) (𝓝 (𝑅ᵣ∞ ρ))",
      "sorry": false
@@ -365,7 +365,7 @@
     {
      "name": "UnitalFreeStateTheory.RelativeEntResource.tendsto_ennreal",
      "kind": "theorem",
-     "line": 481,
+     "line": 480,
      "doc": "Alternate version of Lemma 5 which states the convergence with the `ENNReal`\nexpression for `RelativeEntResource`, as opposed its `untop`-ped `NNReal` value.",
      "statement": "theorem RelativeEntResource.tendsto_ennreal (ρ : MState (H i)) :\n    Filter.atTop.Tendsto (fun n ↦ (⨅ σ ∈ IsFree, 𝐃(ρ ⊗ᵣ^[n]‖σ)) / ↑n) (𝓝 (𝑅ᵣ∞ ρ))",
      "sorry": false
@@ -373,7 +373,7 @@
     {
      "name": "UnitalFreeStateTheory.GlobalRobustness",
      "kind": "def",
-     "line": 490,
+     "line": 489,
      "doc": "",
      "statement": "noncomputable def GlobalRobustness {i : ι} : MState (H i) → ℝ≥0",
      "sorry": false
@@ -381,7 +381,7 @@
     {
      "name": "UnitalFreeStateTheory.IsAsymptoticallyNongenerating",
      "kind": "def",
-     "line": 497,
+     "line": 496,
      "doc": "A sequence of operations `f_n` is asymptotically nongenerating if `lim_{n→∞} RG(f_n(ρ_n)) = 0`, where\nRG is `GlobalRobustness` and `ρ_n` is any sequence of free states. Equivalently, we can take the `max` (\nover operations and states) on the left-hand side inside the limit.",
      "statement": "def IsAsymptoticallyNongenerating (dI dO : ι) (f : (n : ℕ) → CPTPMap (H (dI⊗^H[n])) (H (dO⊗^H[n]))) : Prop",
      "sorry": false

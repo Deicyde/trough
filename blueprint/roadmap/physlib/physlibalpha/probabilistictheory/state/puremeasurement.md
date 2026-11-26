@@ -8,7 +8,7 @@ proof: formalized
 
 # Purity is the absence of side information
 
-The module `PhyslibAlpha.ProbabilisticTheory.State.PureMeasurement`, [PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean): 19 declarations, 19 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.State.PureMeasurement`, [PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean): 19 declarations, 19 with a docstring.
 
 > A normal state is pure exactly when no preparation of it carries side information.
 
@@ -49,7 +49,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.State.PureMeasurement`, [PhyslibAlp
 
 ## A. Trivial preparations
 
-**`PhyslibAlpha.ProbabilisticTheory.Preparation.IsTrivial`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L80).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.IsTrivial`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L80).
 
 > A preparation is trivial when, for every observable, almost every roll prepares a state with
 > the same expectation value as the prepared state.
@@ -58,7 +58,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.State.PureMeasurement`, [PhyslibAlp
 def IsTrivial (p : Preparation E X) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Preparation.isTrivial_of_effect`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L84).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.isTrivial_of_effect`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L84).
 
 > A preparation is trivial as soon as it is trivial on effects.
 
@@ -70,7 +70,7 @@ lemma isTrivial_of_effect (p : Preparation E X)
 
 ## B. Preparations of pure states
 
-**`PhyslibAlpha.ProbabilisticTheory.Preparation.conditionalState_eq_of_isPure`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L97).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.conditionalState_eq_of_isPure`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L97).
 
 > Conditioning a preparation of a pure state on an event whose probability is neither `0` nor `1`
 > gives back the pure state.
@@ -81,7 +81,7 @@ lemma conditionalState_eq_of_isPure (p : Preparation E X) (hω : p.state.IsPure)
     (hposc : 0 < (p.law : Measure X).real sᶜ) : p.conditionalState s hpos = p.state
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Preparation.setIntegral_prepare_of_isPure`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L107).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.setIntegral_prepare_of_isPure`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L107).
 
 > Preparing a pure state, the expectation value restricted to any event of rolls is the
 > probability of the event times the expectation value.
@@ -92,7 +92,7 @@ lemma setIntegral_prepare_of_isPure (p : Preparation E X) (hω : p.state.IsPure)
     ∫ x in s, p.prepare x A ∂(p.law : Measure X) = (p.law : Measure X).real s * p.state A
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Preparation.isTrivial_of_isPure`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L126).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.isTrivial_of_isPure`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L126).
 
 > Every preparation of a pure state is trivial.
 
@@ -102,7 +102,7 @@ lemma isTrivial_of_isPure (p : Preparation E X) (hω : p.state.IsPure) : p.IsTri
 
 ## C. Pure states from trivial preparations
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.isPure_of_isTrivial`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L139).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.isPure_of_isTrivial`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L139).
 
 > A normal state all of whose preparations from two states are trivial is pure.
 
@@ -111,7 +111,7 @@ lemma isPure_of_isTrivial (hω : ω.IsNormal)
     (h : ∀ p : Preparation E Bool, p.state = ω → p.IsTrivial) : ω.IsPure
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.isPure_iff_forall_isTrivial`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L149).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.isPure_iff_forall_isTrivial`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L149).
 
 > A normal state is pure exactly when all its preparations are trivial.
 
@@ -123,7 +123,7 @@ lemma isPure_iff_forall_isTrivial (hω : ω.IsNormal) :
 
 ## D. Side information
 
-**`PhyslibAlpha.ProbabilisticTheory.Preparation.NoSideInfo`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L163).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.NoSideInfo`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L163).
 
 > The roll carries no side information about the measurement `M`: the roll and the outcome of `M`
 > are independent random variables.
@@ -132,7 +132,7 @@ lemma isPure_iff_forall_isTrivial (hω : ω.IsNormal) :
 def NoSideInfo (p : Preparation E X) (M : Measurement Ω E) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Preparation.noSideInfo_iff_compProd_eq`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L168).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.noSideInfo_iff_compProd_eq`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L168).
 
 > The roll carries no side information about `M` exactly when the joint law of roll and outcome
 > is the one obtained by ignoring the roll.
@@ -143,7 +143,7 @@ lemma noSideInfo_iff_compProd_eq (p : Preparation E X) (M : Measurement Ω E) :
       (p.law : Measure X) ⊗ₘ p.outcome M = (p.law : Measure X) ⊗ₘ p.forgetfulOutcome M
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Preparation.noSideInfo_of_ae_eq`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L179).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.noSideInfo_of_ae_eq`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L179).
 
 > If the outcome law given the roll almost surely ignores the roll, the roll carries no side
 > information.
@@ -153,7 +153,7 @@ lemma noSideInfo_of_ae_eq (p : Preparation E X) {M : Measurement Ω E}
     (h : p.outcome M =ᵐ[(p.law : Measure X)] p.forgetfulOutcome M) : p.NoSideInfo M
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Preparation.noSideInfo_iff_ae_eq`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L185).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.noSideInfo_iff_ae_eq`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L185).
 
 > With a countably generated outcome space, the roll carries no side information exactly when the
 > outcome law given the roll almost surely ignores the roll.
@@ -164,7 +164,7 @@ lemma noSideInfo_iff_ae_eq [MeasurableSpace.CountablyGenerated Ω] (p : Preparat
     p.NoSideInfo M ↔ p.outcome M =ᵐ[(p.law : Measure X)] p.forgetfulOutcome M
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Preparation.noSideInfo_iff_postprocessEquivAE`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L193).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.noSideInfo_iff_postprocessEquivAE`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L193).
 
 > With a countably generated outcome space, the roll carries no side information exactly when the
 > outcome law given the roll is no more informative than the outcome law ignoring it.
@@ -176,7 +176,7 @@ lemma noSideInfo_iff_postprocessEquivAE [MeasurableSpace.CountablyGenerated Ω]
       Kernel.MutuallyFactorAE (p.law : Measure X) (p.outcome M) (p.forgetfulOutcome M)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Preparation.IsTrivial.outcome_ae_eq`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L205).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.IsTrivial.outcome_ae_eq`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L205).
 
 > In a trivial preparation, the outcome law of a measurement with a countably generated outcome
 > space almost surely ignores the roll.
@@ -187,7 +187,7 @@ lemma IsTrivial.outcome_ae_eq [MeasurableSpace.CountablyGenerated Ω] {p : Prepa
     p.outcome M =ᵐ[(p.law : Measure X)] p.forgetfulOutcome M
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Preparation.ae_prepare_eq_of_noSideInfo`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L215).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.ae_prepare_eq_of_noSideInfo`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L215).
 
 > If the roll carries no side information about the yes/no measurement of `e`, almost every roll
 > predicts the probability of `e` in the prepared state.
@@ -198,7 +198,7 @@ lemma ae_prepare_eq_of_noSideInfo (p : Preparation E X) (e : Effect E)
     ∀ᵐ x ∂(p.law : Measure X), p.prepare x e = p.state e
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Preparation.isTrivial_iff_noSideInfo`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L227).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.isTrivial_iff_noSideInfo`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L227).
 
 > A preparation is trivial exactly when the roll carries no side information about any yes/no
 > measurement.
@@ -208,7 +208,7 @@ lemma isTrivial_iff_noSideInfo (p : Preparation E X) :
     p.IsTrivial ↔ ∀ e : Effect E, p.NoSideInfo (Effect.binaryMeasurement e)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Preparation.noSideInfo_of_isPure`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L234).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.noSideInfo_of_isPure`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L234).
 
 > Preparing a pure state, the roll carries no side information about any measurement with a
 > countably generated outcome space.
@@ -220,7 +220,7 @@ lemma noSideInfo_of_isPure [MeasurableSpace.CountablyGenerated Ω] (p : Preparat
 
 ## E. Purity is the absence of side information
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.HasNoSideInfo`**, a def, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L248).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.HasNoSideInfo`**, a def, [line 248](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L248).
 
 > A state has no side information when, however it is prepared, the roll and the outcome of any
 > yes/no measurement are independent.
@@ -229,7 +229,7 @@ lemma noSideInfo_of_isPure [MeasurableSpace.CountablyGenerated Ω] (p : Preparat
 def HasNoSideInfo (ω : 𝓢[ℝ, E]) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.isPure_iff_hasNoSideInfo`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L255).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.isPure_iff_hasNoSideInfo`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L255).
 
 > **Purity is the absence of side information.** A normal state is pure exactly when, however it
 > is prepared, the roll and the outcome of any yes/no measurement are independent: knowing how the
@@ -239,7 +239,7 @@ def HasNoSideInfo (ω : 𝓢[ℝ, E]) : Prop
 lemma isPure_iff_hasNoSideInfo (hω : ω.IsNormal) : ω.IsPure ↔ ω.HasNoSideInfo
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.isMixed_iff_exists_sideInfo`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L260).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.isMixed_iff_exists_sideInfo`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean#L260).
 
 > **A mixed state leaks side information.** A normal state is mixed exactly when it can be
 > prepared by choosing between two states so that some yes/no measurement detects the choice.
@@ -257,4 +257,4 @@ lemma isMixed_iff_exists_sideInfo (hω : ω.IsNormal) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean)
+- [PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean)

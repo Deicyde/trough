@@ -8,7 +8,7 @@ proof: formalized
 
 # Alternative algebras
 
-The module `PhyslibAlpha.ProbabilisticTheory.Algebra.Alternative`, [PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean): 16 declarations (1 instance with no name), 8 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Algebra.Alternative`, [PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean): 16 declarations (1 instance with no name), 8 with a docstring.
 
 > Alternative algebras, the associator, the flexible law, and the left Moufang identity.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Algebra.Alternative`, [PhyslibAlpha
 
 ## A. Alternative multiplications
 
-**`PhyslibAlpha.ProbabilisticTheory.IsAlternative`**, a class, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L54).
+**`PhyslibAlpha.ProbabilisticTheory.IsAlternative`**, a class, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L54).
 
 > An alternative multiplication has associative repeated factors on either side.
 
@@ -44,7 +44,7 @@ class IsAlternative (A : Type*) [Mul A] : Prop where
   mul_alternative_right : ∀ x y : A, (y * x) * x = y * (x * x)
 ```
 
-**An instance with no name**, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L61).
+**An instance with no name**, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L61).
 
 > Associative algebras are alternative.
 
@@ -54,7 +54,7 @@ instance (priority := 100) {A : Type*} [Semigroup A] : IsAlternative A
 
 ## B. The associator
 
-**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L76).
+**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L76).
 
 > The failure of associativity.
 
@@ -62,28 +62,28 @@ instance (priority := 100) {A : Type*} [Semigroup A] : IsAlternative A
 def associator (x y z : A) : A
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_add_left`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L78).
+**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_add_left`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L78).
 
 ```lean
 lemma associator_add_left (x y z w : A) :
     associator (x + y) z w = associator x z w + associator y z w
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_add_mid`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L84).
+**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_add_mid`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L84).
 
 ```lean
 lemma associator_add_mid (x y z w : A) :
     associator x (y + z) w = associator x y w + associator x z w
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_add_right`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L90).
+**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_add_right`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L90).
 
 ```lean
 lemma associator_add_right (x y z w : A) :
     associator x y (z + w) = associator x y z + associator x y w
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.teichmuller`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L97).
+**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.teichmuller`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L97).
 
 > Teichmüller's identity holds before alternativity is assumed.
 
@@ -95,19 +95,19 @@ lemma teichmuller (x y z w : A) :
 
 ## C. Identities in alternative algebras
 
-**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_self_left`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L112).
+**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_self_left`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L112).
 
 ```lean
 lemma associator_self_left (x y : A) : associator x x y = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_right_self`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L117).
+**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_right_self`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L117).
 
 ```lean
 lemma associator_right_self (x y : A) : associator y x x = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_swap_first`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L123).
+**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_swap_first`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L123).
 
 > The associator is skew under an adjacent swap.
 
@@ -115,25 +115,25 @@ lemma associator_right_self (x y : A) : associator y x x = 0
 lemma associator_swap_first (x y z : A) : associator x y z = -associator y x z
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_swap_last`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L132).
+**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_swap_last`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L132).
 
 ```lean
 lemma associator_swap_last (x y z : A) : associator x y z = -associator x z y
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_cyclic`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L141).
+**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_cyclic`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L141).
 
 ```lean
 lemma associator_cyclic (x y z : A) : associator x y z = associator y z x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_outer_self`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L144).
+**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.associator_outer_self`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L144).
 
 ```lean
 lemma associator_outer_self (x y : A) : associator x y x = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.mul_flexible`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L148).
+**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.mul_flexible`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L148).
 
 > The flexible law is forced by alternativity.
 
@@ -141,7 +141,7 @@ lemma associator_outer_self (x y : A) : associator x y x = 0
 lemma mul_flexible (x y : A) : x * (y * x) = (x * y) * x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.moufang_left`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L154).
+**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.moufang_left`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L154).
 
 > The left Moufang identity.
 
@@ -149,7 +149,7 @@ lemma mul_flexible (x y : A) : x * (y * x) = (x * y) * x
 lemma moufang_left (x y z : A) : (x * (z * x)) * y = x * (z * (x * y))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.left_bumping`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L188).
+**`PhyslibAlpha.ProbabilisticTheory.IsAlternative.left_bumping`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean#L188).
 
 > McCrimmon's left bumping formula, the key alternative-algebra identity for Albert matrices.
 
@@ -163,4 +163,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Algebra/Alternative.lean)

@@ -8,9 +8,9 @@ proof: formalized
 
 # QuantumInfo.ForMathlib.HayataGroup.TraceInequality.OperatorGeometricMean
 
-The module `QuantumInfo.ForMathlib.HayataGroup.TraceInequality.OperatorGeometricMean`, [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/OperatorGeometricMean.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/OperatorGeometricMean.lean): 3 declarations, 3 with a docstring, 2 listed as significant; 4 private, not shown.
+The module `QuantumInfo.ForMathlib.HayataGroup.TraceInequality.OperatorGeometricMean`, [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/OperatorGeometricMean.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/OperatorGeometricMean.lean): 3 declarations, 3 with a docstring, 2 listed as significant; 4 private, not shown.
 
-**`OperatorGeometricMean.operatorPowerMean`**, a def, [line 24](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/OperatorGeometricMean.lean#L24).
+**`OperatorGeometricMean.operatorPowerMean`**, a def, [line 24](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/OperatorGeometricMean.lean#L24).
 
 > The operator `(α, β)`-power mean, realized as a generalized perspective.
 
@@ -18,7 +18,7 @@ The module `QuantumInfo.ForMathlib.HayataGroup.TraceInequality.OperatorGeometric
 noncomputable def operatorPowerMean (α β : ℝ) (A B : L ℋ) : L ℋ
 ```
 
-**`OperatorGeometricMean.operatorPowerMean_jointlyConcaveOn_pdSet`**, a theorem, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/OperatorGeometricMean.lean#L55). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`OperatorGeometricMean.operatorPowerMean_jointlyConcaveOn_pdSet`**, a theorem, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/OperatorGeometricMean.lean#L55). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Theorem 1.1, concave range: the operator `(α, β)`-power mean is jointly concave on
 > strictly positive operators for `0 ≤ α, β ≤ 1`.
@@ -32,7 +32,7 @@ theorem operatorPowerMean_jointlyConcaveOn_pdSet
       (operatorPowerMean (ℋ := ℋ) α β)
 ```
 
-**`OperatorGeometricMean.operatorPowerMean_jointlyConvexOn_pdSet`**, a theorem, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/OperatorGeometricMean.lean#L89). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`OperatorGeometricMean.operatorPowerMean_jointlyConvexOn_pdSet`**, a theorem, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/OperatorGeometricMean.lean#L89). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Theorem 1.1, convex range: the operator `(α, β)`-power mean is jointly convex on
 > strictly positive operators for `1 ≤ α ≤ 2` and `0 ≤ β ≤ 1`.
@@ -52,4 +52,4 @@ theorem operatorPowerMean_jointlyConvexOn_pdSet
 
 ## Sources
 
-- [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/OperatorGeometricMean.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/OperatorGeometricMean.lean)
+- [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/OperatorGeometricMean.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/OperatorGeometricMean.lean)

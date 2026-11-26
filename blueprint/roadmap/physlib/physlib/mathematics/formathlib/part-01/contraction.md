@@ -8,7 +8,7 @@ proof: formalized
 
 # The coordinate pairing of two bases
 
-The module `Physlib.Mathematics.ForMathlib.Contraction`, [Physlib/Mathematics/ForMathlib/Contraction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Contraction.lean): 8 declarations, 8 with a docstring.
+The module `Physlib.Mathematics.ForMathlib.Contraction`, [Physlib/Mathematics/ForMathlib/Contraction.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Contraction.lean): 8 declarations, 8 with a docstring.
 
 > Two bases with the same labels pair two modules by their coordinates.
 
@@ -42,7 +42,7 @@ The module `Physlib.Mathematics.ForMathlib.Contraction`, [Physlib/Mathematics/Fo
 
 ## A. The coordinate pairing of two bases
 
-**`Module.Basis.coordPairing`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Contraction.lean#L69).
+**`Module.Basis.coordPairing`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Contraction.lean#L69).
 
 > The coordinate pairing `M ⊗ N → R` of two bases with the same labels. It sends `x ⊗ y` to
 > `b'.toDual x' y`, where `x'` is the vector of `N` with the coordinates of `x`.
@@ -52,7 +52,7 @@ noncomputable def coordPairing (b : Module.Basis ι R M) (b' : Module.Basis ι R
     M ⊗[R] N →ₗ[R] R
 ```
 
-**`Module.Basis.coordPairing_tmul_basis`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Contraction.lean#L74).
+**`Module.Basis.coordPairing_tmul_basis`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Contraction.lean#L74).
 
 > Pairing with the second basis reads off a coordinate, `b.coordPairing b' (x ⊗ₜ b' J) = x_J`.
 
@@ -61,7 +61,7 @@ lemma coordPairing_tmul_basis (b : Module.Basis ι R M) (b' : Module.Basis ι R 
     b.coordPairing b' (x ⊗ₜ[R] b' J) = b.equivFun x J
 ```
 
-**`Module.Basis.coordPairing_tmul`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Contraction.lean#L79).
+**`Module.Basis.coordPairing_tmul`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Contraction.lean#L79).
 
 > `b.coordPairing b' (x ⊗ₜ y) = ∑_I (b x)_I (b' y)_I`.
 
@@ -70,7 +70,7 @@ lemma coordPairing_tmul (b : Module.Basis ι R M) (b' : Module.Basis ι R N) (x 
     b.coordPairing b' (x ⊗ₜ[R] y) = ∑ I, b.equivFun x I * b'.equivFun y I
 ```
 
-**`Module.Basis.coordPairing_basis_basis`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Contraction.lean#L85).
+**`Module.Basis.coordPairing_basis_basis`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Contraction.lean#L85).
 
 > The two bases are dual, `b.coordPairing b' (b I ⊗ₜ b' J) = δ_{IJ}`.
 
@@ -79,7 +79,7 @@ lemma coordPairing_basis_basis (b : Module.Basis ι R M) (b' : Module.Basis ι R
     b.coordPairing b' (b I ⊗ₜ[R] b' J) = if I = J then 1 else 0
 ```
 
-**`Module.Basis.eq_coordPairing`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Contraction.lean#L90).
+**`Module.Basis.eq_coordPairing`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Contraction.lean#L90).
 
 > A pairing for which the two bases are dual is the coordinate pairing.
 
@@ -88,7 +88,7 @@ lemma eq_coordPairing (b : Module.Basis ι R M) (b' : Module.Basis ι R N) (p : 
     (h : ∀ I J, p (b I ⊗ₜ[R] b' J) = if I = J then 1 else 0) : p = b.coordPairing b'
 ```
 
-**`Module.Basis.coordPairing_comm`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Contraction.lean#L97).
+**`Module.Basis.coordPairing_comm`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Contraction.lean#L97).
 
 > Swapping the factors swaps the bases,
 > `b.coordPairing b' (x ⊗ₜ y) = b'.coordPairing b (y ⊗ₜ x)`.
@@ -98,7 +98,7 @@ lemma coordPairing_comm (b : Module.Basis ι R M) (b' : Module.Basis ι R N) (x 
     b.coordPairing b' (x ⊗ₜ[R] y) = b'.coordPairing b (y ⊗ₜ[R] x)
 ```
 
-**`Module.Basis.isPerfPair_coordPairing`**, an instance, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Contraction.lean#L102).
+**`Module.Basis.isPerfPair_coordPairing`**, an instance, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Contraction.lean#L102).
 
 > The coordinate pairing of two bases with the same labels is a perfect pairing.
 
@@ -109,7 +109,7 @@ instance isPerfPair_coordPairing (b : Module.Basis ι R M) (b' : Module.Basis ι
 
 ## B. Invariance of the coordinate pairing
 
-**`Module.Basis.coordPairing_invariant`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Contraction.lean#L124).
+**`Module.Basis.coordPairing_invariant`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Contraction.lean#L124).
 
 > The coordinate pairing is invariant when an invariant pairing `p` makes the bases dual, since
 > then `p` is the coordinate pairing.
@@ -128,4 +128,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/ForMathlib/Contraction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Contraction.lean)
+- [Physlib/Mathematics/ForMathlib/Contraction.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Contraction.lean)

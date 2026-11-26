@@ -8,7 +8,7 @@ proof: formalized
 
 # The unitary group preserves the domain of its generator (GeneratorInvariance)
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.GeneratorInvariance`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean): 6 declarations, 6 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.GeneratorInvariance`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean): 6 declarations, 6 with a docstring.
 
 > A unitary group preserves the domain of its candidate generator and commutes with it.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.Ge
 
 ## A. Invariance of the candidate domain
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_translate_comm`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean#L63).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_translate_comm`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean#L63).
 
 > `U t (U s ψ)` and `U s (U t ψ)` agree as functions of `s`, since `s + t = t + s`.
 
@@ -39,7 +39,7 @@ lemma stoneCandidateGenerator_translate_comm (ψ : H) (t : ℝ) :
     (fun s : ℝ => (U t : H →L[ℂ] H) (U s ψ)) = (fun s : ℝ => (U s : H →L[ℂ] H) (U t ψ))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_translate_hasDerivAt`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_translate_hasDerivAt`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean#L77).
 
 > If `ψ`'s orbit is differentiable at `0` with witness `φ`, then `U t ψ`'s orbit is again
 > differentiable at `0`, with witness `U t φ` — the group law turns the fixed continuous linear map
@@ -51,7 +51,7 @@ lemma stoneCandidateGenerator_translate_hasDerivAt {ψ φ : H} (t : ℝ)
     HasDerivAt (fun s : ℝ => U s (U t ψ)) (U t φ) 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateDomain_translate`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean#L91).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateDomain_translate`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean#L91).
 
 > The candidate domain is invariant under every `U t`.
 
@@ -60,7 +60,7 @@ lemma stoneCandidateDomain_translate {ψ : H} (hψ : stoneCandidateDomainPred (U
     (t : ℝ) : stoneCandidateDomainPred (U := U) (U t ψ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateDomain_translate_mem`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean#L99).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateDomain_translate_mem`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean#L99).
 
 > The candidate domain, packaged as a `Submodule`-invariance statement under every `U t`.
 
@@ -71,7 +71,7 @@ lemma stoneCandidateDomain_translate_mem (ψ : stoneCandidateDomain (U := U) hUm
 
 ## B. Commutation and differentiability of orbits
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_translate`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean#L113).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_translate`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean#L113).
 
 > The candidate generator commutes with the group it was built from: for `ψ` in `T.domain`,
 > `U t ψ` is again in `T.domain`, and `T (U t ψ) = U t (T ψ)`.
@@ -83,7 +83,7 @@ lemma stoneCandidateGenerator_translate (ψ : stoneCandidateDomain (U := U) hUmu
       U t (stoneCandidateGenerator (U := U) hUmul ψ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_hasDerivAt`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean#L134).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_hasDerivAt`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean#L134).
 
 > The orbit of a domain vector is differentiable at every time `s`, with derivative `i T (U s ψ)`.
 
@@ -99,4 +99,4 @@ lemma stoneCandidateGenerator_hasDerivAt (ψ : stoneCandidateDomain (U := U) hUm
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean)

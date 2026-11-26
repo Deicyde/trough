@@ -8,7 +8,7 @@ proof: formalized
 
 # Contraction of Weyl fermions
 
-The module `Physlib.Relativity.Fermions.Weyl.Contraction`, [Physlib/Relativity/Fermions/Weyl/Contraction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean): 34 declarations, 22 with a docstring.
+The module `Physlib.Relativity.Fermions.Weyl.Contraction`, [Physlib/Relativity/Fermions/Weyl/Contraction.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean): 34 declarations, 22 with a docstring.
 
 > The `SL(2, ℂ)`-invariant contractions of Weyl fermions with their duals, unique up to scale.
 
@@ -40,7 +40,7 @@ The module `Physlib.Relativity.Fermions.Weyl.Contraction`, [Physlib/Relativity/F
 
 ### A.1. The contraction `ψ^a φ_a`
 
-**`Fermion.LeftHandedWeyl.contrBi`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L89).
+**`Fermion.LeftHandedWeyl.contrBi`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L89).
 
 > The bilinear map `(ψ, φ) ↦ ψ^a φ_a` underlying `LeftHandedWeyl.contr`.
 
@@ -48,7 +48,7 @@ The module `Physlib.Relativity.Fermions.Weyl.Contraction`, [Physlib/Relativity/F
 def LeftHandedWeyl.contrBi : LeftHandedWeyl →ₗ[ℂ] DualLeftHandedWeyl →ₗ[ℂ] ℂ
 ```
 
-**`Fermion.LeftHandedWeyl.contr`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L113).
+**`Fermion.LeftHandedWeyl.contr`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L113).
 
 > The contraction `ψ^a φ_a` of a left-handed with a dual-left-handed Weyl fermion, the dot
 > product of their components, as an intertwining map to the trivial representation.
@@ -60,7 +60,7 @@ def LeftHandedWeyl.contr : (LeftHandedWeyl.rep.tprod DualLeftHandedWeyl.rep).Int
 
 #### A.1.1. Basic properties
 
-**`Fermion.LeftHandedWeyl.contr_tmul`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L127).
+**`Fermion.LeftHandedWeyl.contr_tmul`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L127).
 
 ```lean
 lemma LeftHandedWeyl.contr_tmul (ψ : LeftHandedWeyl)
@@ -68,7 +68,7 @@ lemma LeftHandedWeyl.contr_tmul (ψ : LeftHandedWeyl)
     LeftHandedWeyl.contr (ψ ⊗ₜ φ) = ψ.toFin2ℂ ⬝ᵥ φ.toFin2ℂ
 ```
 
-**`Fermion.LeftHandedWeyl.contr_basis`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L132).
+**`Fermion.LeftHandedWeyl.contr_basis`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L132).
 
 ```lean
 lemma LeftHandedWeyl.contr_basis (i j : Fin 2) :
@@ -76,7 +76,7 @@ lemma LeftHandedWeyl.contr_basis (i j : Fin 2) :
       if i.1 = j.1 then (1 : ℂ) else 0
 ```
 
-**`Fermion.LeftHandedWeyl.contr_tmul_basis`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L144).
+**`Fermion.LeftHandedWeyl.contr_tmul_basis`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L144).
 
 > Contracting with the `j`-th basis vector picks out the `j`-th component of `ψ`.
 
@@ -87,7 +87,7 @@ lemma LeftHandedWeyl.contr_tmul_basis (ψ : LeftHandedWeyl) (j : Fin 2) :
 
 ### A.2. The contraction `φ_a ψ^a`
 
-**`Fermion.DualLeftHandedWeyl.contrBi`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L157).
+**`Fermion.DualLeftHandedWeyl.contrBi`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L157).
 
 > The bilinear map `(φ, ψ) ↦ φ_a ψ^a` underlying `DualLeftHandedWeyl.contr`.
 
@@ -95,7 +95,7 @@ lemma LeftHandedWeyl.contr_tmul_basis (ψ : LeftHandedWeyl) (j : Fin 2) :
 def DualLeftHandedWeyl.contrBi : DualLeftHandedWeyl →ₗ[ℂ] LeftHandedWeyl →ₗ[ℂ] ℂ
 ```
 
-**`Fermion.DualLeftHandedWeyl.contr`**, a def, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L180).
+**`Fermion.DualLeftHandedWeyl.contr`**, a def, [line 180](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L180).
 
 > The contraction `φ_a ψ^a` of a dual-left-handed with a left-handed Weyl fermion, the dot
 > product of their components, as an intertwining map to the trivial representation.
@@ -107,14 +107,14 @@ def DualLeftHandedWeyl.contr : (DualLeftHandedWeyl.rep.tprod LeftHandedWeyl.rep)
 
 #### A.2.1. Basic properties
 
-**`Fermion.DualLeftHandedWeyl.contr_tmul`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L194).
+**`Fermion.DualLeftHandedWeyl.contr_tmul`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L194).
 
 ```lean
 lemma DualLeftHandedWeyl.contr_tmul (φ : DualLeftHandedWeyl) (ψ : LeftHandedWeyl) :
     DualLeftHandedWeyl.contr (φ ⊗ₜ ψ) = φ.toFin2ℂ ⬝ᵥ ψ.toFin2ℂ
 ```
 
-**`Fermion.DualLeftHandedWeyl.contr_basis`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L198).
+**`Fermion.DualLeftHandedWeyl.contr_basis`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L198).
 
 ```lean
 lemma DualLeftHandedWeyl.contr_basis (i j : Fin 2) :
@@ -124,14 +124,14 @@ lemma DualLeftHandedWeyl.contr_basis (i j : Fin 2) :
 
 ### A.3. Symmetry
 
-**`Fermion.LeftHandedWeyl.contr_tmul_symm`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L215).
+**`Fermion.LeftHandedWeyl.contr_tmul_symm`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L215).
 
 ```lean
 lemma LeftHandedWeyl.contr_tmul_symm (ψ : LeftHandedWeyl) (φ : DualLeftHandedWeyl) :
     LeftHandedWeyl.contr (ψ ⊗ₜ[ℂ] φ) = DualLeftHandedWeyl.contr (φ ⊗ₜ[ℂ] ψ)
 ```
 
-**`Fermion.DualLeftHandedWeyl.contr_tmul_symm`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L219).
+**`Fermion.DualLeftHandedWeyl.contr_tmul_symm`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L219).
 
 ```lean
 lemma DualLeftHandedWeyl.contr_tmul_symm (φ : DualLeftHandedWeyl) (ψ : LeftHandedWeyl) :
@@ -140,7 +140,7 @@ lemma DualLeftHandedWeyl.contr_tmul_symm (φ : DualLeftHandedWeyl) (ψ : LeftHan
 
 ### A.4. Nondegeneracy
 
-**`Fermion.LeftHandedWeyl.eq_zero_of_contr_tmul_eq_zero`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L230).
+**`Fermion.LeftHandedWeyl.eq_zero_of_contr_tmul_eq_zero`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L230).
 
 > The contraction is nondegenerate: if `ψ^a φ_a = 0` for every `φ` then `ψ = 0`.
 
@@ -149,7 +149,7 @@ lemma LeftHandedWeyl.eq_zero_of_contr_tmul_eq_zero (ψ : LeftHandedWeyl)
     (h : ∀ φ, LeftHandedWeyl.contr (ψ ⊗ₜ φ) = 0) : ψ = 0
 ```
 
-**`Fermion.DualLeftHandedWeyl.eq_zero_of_contr_tmul_eq_zero`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L237).
+**`Fermion.DualLeftHandedWeyl.eq_zero_of_contr_tmul_eq_zero`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L237).
 
 > The contraction is nondegenerate: if `φ_a ψ^a = 0` for every `ψ` then `φ = 0`.
 
@@ -160,7 +160,7 @@ lemma DualLeftHandedWeyl.eq_zero_of_contr_tmul_eq_zero (φ : DualLeftHandedWeyl)
 
 ### A.5. Perfect pairing
 
-**`Fermion.LeftHandedWeyl.contrBi_isPerfPair`**, an instance, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L251).
+**`Fermion.LeftHandedWeyl.contrBi_isPerfPair`**, an instance, [line 251](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L251).
 
 > The pairing `(ψ, φ) ↦ ψ^a φ_a` is perfect. It identifies dual-left-handed Weyl fermions with
 > the dual of left-handed Weyl fermions, and vice versa.
@@ -169,7 +169,7 @@ lemma DualLeftHandedWeyl.eq_zero_of_contr_tmul_eq_zero (φ : DualLeftHandedWeyl)
 instance LeftHandedWeyl.contrBi_isPerfPair : LeftHandedWeyl.contrBi.IsPerfPair
 ```
 
-**`Fermion.DualLeftHandedWeyl.contrBi_isPerfPair`**, an instance, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L262).
+**`Fermion.DualLeftHandedWeyl.contrBi_isPerfPair`**, an instance, [line 262](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L262).
 
 > The pairing `(φ, ψ) ↦ φ_a ψ^a` is perfect. It identifies left-handed Weyl fermions with the
 > dual of dual-left-handed Weyl fermions, and vice versa.
@@ -180,7 +180,7 @@ instance DualLeftHandedWeyl.contrBi_isPerfPair : DualLeftHandedWeyl.contrBi.IsPe
 
 ### A.6. Uniqueness up to scale
 
-**`Fermion.LeftHandedWeyl.eq_smul_contr`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L279).
+**`Fermion.LeftHandedWeyl.eq_smul_contr`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L279).
 
 > Every `SL(2,ℂ)`-invariant pairing of left-handed with dual-left-handed Weyl fermions is a
 > multiple of `LeftHandedWeyl.contr`.
@@ -192,7 +192,7 @@ lemma LeftHandedWeyl.eq_smul_contr
     ∃ z : ℂ, B = z • LeftHandedWeyl.contr
 ```
 
-**`Fermion.DualLeftHandedWeyl.eq_smul_contr`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L303).
+**`Fermion.DualLeftHandedWeyl.eq_smul_contr`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L303).
 
 > Every `SL(2,ℂ)`-invariant pairing of dual-left-handed with left-handed Weyl fermions is a
 > multiple of `DualLeftHandedWeyl.contr`.
@@ -208,7 +208,7 @@ lemma DualLeftHandedWeyl.eq_smul_contr
 
 ### B.1. The contraction `ψ^{dot a} φ_{dot a}`
 
-**`Fermion.RightHandedWeyl.contrBi`**, a def, [line 327](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L327).
+**`Fermion.RightHandedWeyl.contrBi`**, a def, [line 327](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L327).
 
 > The bilinear map `(ψ, φ) ↦ ψ^{dot a} φ_{dot a}` underlying `RightHandedWeyl.contr`.
 
@@ -216,7 +216,7 @@ lemma DualLeftHandedWeyl.eq_smul_contr
 def RightHandedWeyl.contrBi : RightHandedWeyl →ₗ[ℂ] DualRightHandedWeyl →ₗ[ℂ] ℂ
 ```
 
-**`Fermion.RightHandedWeyl.contr`**, a def, [line 352](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L352).
+**`Fermion.RightHandedWeyl.contr`**, a def, [line 352](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L352).
 
 > The contraction `ψ^{dot a} φ_{dot a}` of a right-handed with a dual-right-handed Weyl
 > fermion, the dot product of their components, as an intertwining map to the trivial
@@ -229,7 +229,7 @@ def RightHandedWeyl.contr : (RightHandedWeyl.rep.tprod DualRightHandedWeyl.rep).
 
 #### B.1.1. Basic properties
 
-**`Fermion.RightHandedWeyl.contr_tmul`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L377).
+**`Fermion.RightHandedWeyl.contr_tmul`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L377).
 
 ```lean
 lemma RightHandedWeyl.contr_tmul (ψ : RightHandedWeyl)
@@ -237,7 +237,7 @@ lemma RightHandedWeyl.contr_tmul (ψ : RightHandedWeyl)
     RightHandedWeyl.contr (ψ ⊗ₜ φ) = ψ.toFin2ℂ ⬝ᵥ φ.toFin2ℂ
 ```
 
-**`Fermion.RightHandedWeyl.contr_basis`**, a lemma, [line 382](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L382).
+**`Fermion.RightHandedWeyl.contr_basis`**, a lemma, [line 382](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L382).
 
 ```lean
 lemma RightHandedWeyl.contr_basis (i j : Fin 2) :
@@ -245,7 +245,7 @@ lemma RightHandedWeyl.contr_basis (i j : Fin 2) :
     if i.1 = j.1 then (1 : ℂ) else 0
 ```
 
-**`Fermion.RightHandedWeyl.contr_tmul_basis`**, a lemma, [line 394](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L394).
+**`Fermion.RightHandedWeyl.contr_tmul_basis`**, a lemma, [line 394](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L394).
 
 > Contracting with the `j`-th basis vector picks out the `j`-th component.
 
@@ -256,7 +256,7 @@ lemma RightHandedWeyl.contr_tmul_basis (ψ : RightHandedWeyl) (j : Fin 2) :
 
 ### B.2. The contraction `φ_{dot a} ψ^{dot a}`
 
-**`Fermion.DualRightHandedWeyl.contrBi`**, a def, [line 407](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L407).
+**`Fermion.DualRightHandedWeyl.contrBi`**, a def, [line 407](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L407).
 
 > The bilinear map `(φ, ψ) ↦ φ_{dot a} ψ^{dot a}` underlying `DualRightHandedWeyl.contr`.
 
@@ -264,7 +264,7 @@ lemma RightHandedWeyl.contr_tmul_basis (ψ : RightHandedWeyl) (j : Fin 2) :
 def DualRightHandedWeyl.contrBi : DualRightHandedWeyl →ₗ[ℂ] RightHandedWeyl →ₗ[ℂ] ℂ
 ```
 
-**`Fermion.DualRightHandedWeyl.contr`**, a def, [line 431](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L431).
+**`Fermion.DualRightHandedWeyl.contr`**, a def, [line 431](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L431).
 
 > The contraction `φ_{dot a} ψ^{dot a}` of a dual-right-handed with a right-handed Weyl
 > fermion, the dot product of their components, as an intertwining map to the trivial
@@ -277,7 +277,7 @@ def DualRightHandedWeyl.contr : (DualRightHandedWeyl.rep.tprod RightHandedWeyl.r
 
 #### B.2.1. Basic properties
 
-**`Fermion.DualRightHandedWeyl.contr_tmul`**, a lemma, [line 456](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L456).
+**`Fermion.DualRightHandedWeyl.contr_tmul`**, a lemma, [line 456](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L456).
 
 ```lean
 lemma DualRightHandedWeyl.contr_tmul (φ : DualRightHandedWeyl)
@@ -285,7 +285,7 @@ lemma DualRightHandedWeyl.contr_tmul (φ : DualRightHandedWeyl)
     DualRightHandedWeyl.contr (φ ⊗ₜ ψ) = φ.toFin2ℂ ⬝ᵥ ψ.toFin2ℂ
 ```
 
-**`Fermion.DualRightHandedWeyl.contr_basis`**, a lemma, [line 461](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L461).
+**`Fermion.DualRightHandedWeyl.contr_basis`**, a lemma, [line 461](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L461).
 
 ```lean
 lemma DualRightHandedWeyl.contr_basis (i j : Fin 2) :
@@ -295,14 +295,14 @@ lemma DualRightHandedWeyl.contr_basis (i j : Fin 2) :
 
 ### B.3. Symmetry
 
-**`Fermion.RightHandedWeyl.contr_tmul_symm`**, a lemma, [line 478](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L478).
+**`Fermion.RightHandedWeyl.contr_tmul_symm`**, a lemma, [line 478](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L478).
 
 ```lean
 lemma RightHandedWeyl.contr_tmul_symm (ψ : RightHandedWeyl) (φ : DualRightHandedWeyl) :
     RightHandedWeyl.contr (ψ ⊗ₜ[ℂ] φ) = DualRightHandedWeyl.contr (φ ⊗ₜ[ℂ] ψ)
 ```
 
-**`Fermion.DualRightHandedWeyl.contr_tmul_symm`**, a lemma, [line 482](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L482).
+**`Fermion.DualRightHandedWeyl.contr_tmul_symm`**, a lemma, [line 482](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L482).
 
 ```lean
 lemma DualRightHandedWeyl.contr_tmul_symm (φ : DualRightHandedWeyl) (ψ : RightHandedWeyl) :
@@ -311,7 +311,7 @@ lemma DualRightHandedWeyl.contr_tmul_symm (φ : DualRightHandedWeyl) (ψ : Right
 
 ### B.4. Nondegeneracy
 
-**`Fermion.RightHandedWeyl.eq_zero_of_contr_tmul_eq_zero`**, a lemma, [line 494](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L494).
+**`Fermion.RightHandedWeyl.eq_zero_of_contr_tmul_eq_zero`**, a lemma, [line 494](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L494).
 
 > The contraction is nondegenerate: if `ψ^{dot a} φ_{dot a} = 0` for every `φ` then
 > `ψ = 0`.
@@ -321,7 +321,7 @@ lemma RightHandedWeyl.eq_zero_of_contr_tmul_eq_zero (ψ : RightHandedWeyl)
     (h : ∀ φ, RightHandedWeyl.contr (ψ ⊗ₜ φ) = 0) : ψ = 0
 ```
 
-**`Fermion.DualRightHandedWeyl.eq_zero_of_contr_tmul_eq_zero`**, a lemma, [line 502](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L502).
+**`Fermion.DualRightHandedWeyl.eq_zero_of_contr_tmul_eq_zero`**, a lemma, [line 502](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L502).
 
 > The contraction is nondegenerate: if `φ_{dot a} ψ^{dot a} = 0` for every `ψ` then
 > `φ = 0`.
@@ -333,7 +333,7 @@ lemma DualRightHandedWeyl.eq_zero_of_contr_tmul_eq_zero (φ : DualRightHandedWey
 
 ### B.5. Perfect pairing
 
-**`Fermion.RightHandedWeyl.contrBi_isPerfPair`**, an instance, [line 516](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L516).
+**`Fermion.RightHandedWeyl.contrBi_isPerfPair`**, an instance, [line 516](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L516).
 
 > The pairing `(ψ, φ) ↦ ψ^{dot a} φ_{dot a}` is perfect. It identifies dual-right-handed Weyl
 > fermions with the dual of right-handed Weyl fermions, and vice versa.
@@ -342,7 +342,7 @@ lemma DualRightHandedWeyl.eq_zero_of_contr_tmul_eq_zero (φ : DualRightHandedWey
 instance RightHandedWeyl.contrBi_isPerfPair : RightHandedWeyl.contrBi.IsPerfPair
 ```
 
-**`Fermion.DualRightHandedWeyl.contrBi_isPerfPair`**, an instance, [line 527](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L527).
+**`Fermion.DualRightHandedWeyl.contrBi_isPerfPair`**, an instance, [line 527](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L527).
 
 > The pairing `(φ, ψ) ↦ φ_{dot a} ψ^{dot a}` is perfect. It identifies right-handed Weyl
 > fermions with the dual of dual-right-handed Weyl fermions, and vice versa.
@@ -355,7 +355,7 @@ instance DualRightHandedWeyl.contrBi_isPerfPair : DualRightHandedWeyl.contrBi.Is
 
 > The argument is that of A.6.
 
-**`Fermion.RightHandedWeyl.eq_smul_contr`**, a lemma, [line 546](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L546).
+**`Fermion.RightHandedWeyl.eq_smul_contr`**, a lemma, [line 546](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L546).
 
 > Every `SL(2,ℂ)`-invariant pairing of right-handed with dual-right-handed Weyl fermions is a
 > multiple of `RightHandedWeyl.contr`.
@@ -367,7 +367,7 @@ lemma RightHandedWeyl.eq_smul_contr
     ∃ z : ℂ, B = z • RightHandedWeyl.contr
 ```
 
-**`Fermion.DualRightHandedWeyl.eq_smul_contr`**, a lemma, [line 570](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L570).
+**`Fermion.DualRightHandedWeyl.eq_smul_contr`**, a lemma, [line 570](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean#L570).
 
 > Every `SL(2,ℂ)`-invariant pairing of dual-right-handed with right-handed Weyl fermions is a
 > multiple of `DualRightHandedWeyl.contr`.
@@ -388,4 +388,4 @@ lemma DualRightHandedWeyl.eq_smul_contr
 
 ## Sources
 
-- [Physlib/Relativity/Fermions/Weyl/Contraction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Fermions/Weyl/Contraction.lean)
+- [Physlib/Relativity/Fermions/Weyl/Contraction.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Fermions/Weyl/Contraction.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # W⋆-algebras and normal states
 
-The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.Basic`, [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean): 13 declarations (1 instance with no name), 8 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.Basic`, [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean): 13 declarations (1 instance with no name), 8 with a docstring.
 
 > W⋆-algebras with a chosen predual, their weak-⋆ topology, and normal states.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.Basic`, [PhyslibAlpha/
 
 ## A. W⋆-algebras
 
-**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure`**, a class, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L60).
+**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure`**, a class, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L60).
 
 > **A W⋆-algebra**: a C⋆-algebra with a chosen predual and an isometric identification of the
 > algebra with the dual of its predual.
@@ -52,7 +52,7 @@ class WStarAlgebraStructure (A : Type*) extends CStarAlgebra A, PartialOrder A, 
   toDual : A ≃ₗᵢ[ℂ] StrongDual ℂ Predual
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure.weakStarTopology`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L85).
+**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure.weakStarTopology`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L85).
 
 > **The weak-⋆ topology**, induced from the dual of the predual. States converge in it when their
 > values on each predual element converge. It is not an instance, since `A` already carries its norm
@@ -62,7 +62,7 @@ class WStarAlgebraStructure (A : Type*) extends CStarAlgebra A, PartialOrder A, 
 def weakStarTopology : TopologicalSpace A
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure.norm_le_weakStarTopology`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L89).
+**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure.norm_le_weakStarTopology`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L89).
 
 > **The weak-⋆ topology is coarser than the norm topology.**
 
@@ -73,7 +73,7 @@ lemma norm_le_weakStarTopology :
 
 ## B. The predual pairing
 
-**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure.predualPairing`**, a def, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L103).
+**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure.predualPairing`**, a def, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L103).
 
 > The continuous functional on `A` given by a predual element.
 
@@ -81,21 +81,21 @@ lemma norm_le_weakStarTopology :
 def predualPairing (ξ : WStarAlgebraStructure.Predual A) : A →L[ℂ] ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure.predualPairing_apply`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L108).
+**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure.predualPairing_apply`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L108).
 
 ```lean
 lemma predualPairing_apply (ξ : WStarAlgebraStructure.Predual A) (a : A) :
     predualPairing ξ a = toDual a ξ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure.norm_predualPairing_apply`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L111).
+**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure.norm_predualPairing_apply`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L111).
 
 ```lean
 lemma norm_predualPairing_apply (ξ : WStarAlgebraStructure.Predual A) (a : A) :
     ‖predualPairing ξ a‖ ≤ ‖a‖ * ‖ξ‖
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure.predualPairing_weakStar_continuous`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L117).
+**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure.predualPairing_weakStar_continuous`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L117).
 
 > The functional of a predual element is weak-⋆ continuous.
 
@@ -105,7 +105,7 @@ lemma predualPairing_weakStar_continuous (ξ : WStarAlgebraStructure.Predual A) 
       (predualPairing ξ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure.ext_of_forall_predualPairing_eq`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L138).
+**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure.ext_of_forall_predualPairing_eq`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L138).
 
 > Predual elements separate the points of a W⋆-algebra.
 
@@ -117,7 +117,7 @@ lemma ext_of_forall_predualPairing_eq {a b : A}
 
 > Weak-⋆ convergence is convergence of all predual pairings, for filters.
 
-**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure.tendsto_weakStar_iff_forall_predualPairing_tendsto`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L147).
+**`PhyslibAlpha.ProbabilisticTheory.WStarAlgebraStructure.tendsto_weakStar_iff_forall_predualPairing_tendsto`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L147).
 
 ```lean
 lemma tendsto_weakStar_iff_forall_predualPairing_tendsto
@@ -130,7 +130,7 @@ lemma tendsto_weakStar_iff_forall_predualPairing_tendsto
 
 ## C. Normal states
 
-**`PhyslibAlpha.ProbabilisticTheory.NormalState`**, a structure, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L171).
+**`PhyslibAlpha.ProbabilisticTheory.NormalState`**, a structure, [line 171](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L171).
 
 > A state that is continuous for the weak-* topology of the chosen predual.
 
@@ -143,19 +143,19 @@ structure NormalState (A : Type*) [WStarAlgebraStructure A] where
     Continuous[WStarAlgebraStructure.weakStarTopology A, inferInstance] (⇑toState : A → ℂ)
 ```
 
-**An instance with no name**, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L182).
+**An instance with no name**, [line 182](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L182).
 
 ```lean
 noncomputable instance : CoeFun (NormalState A) (fun _ => A → ℂ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.NormalState.toState_apply`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L186).
+**`PhyslibAlpha.ProbabilisticTheory.NormalState.toState_apply`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L186).
 
 ```lean
 lemma toState_apply (ω : NormalState A) (a : A) : ω.toState a = ω a
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.NormalState.continuous`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L189).
+**`PhyslibAlpha.ProbabilisticTheory.NormalState.continuous`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean#L189).
 
 > Weak-* continuity implies ordinary norm continuity because the weak-* topology is coarser.
 
@@ -169,4 +169,4 @@ lemma continuous (ω : NormalState A) : Continuous (ω : A → ℂ)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean)
+- [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean)

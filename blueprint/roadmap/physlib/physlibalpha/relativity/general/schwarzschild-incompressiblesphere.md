@@ -8,7 +8,7 @@ proof: formalized
 
 # Schwarzschild's incompressible fluid sphere and its junction with the exterior solution
 
-The module `PhyslibAlpha.Relativity.General.Schwarzschild.IncompressibleSphere`, [PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean): 53 declarations, 44 with a docstring.
+The module `PhyslibAlpha.Relativity.General.Schwarzschild.IncompressibleSphere`, [PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean): 53 declarations, 44 with a docstring.
 
 > Junction of Schwarzschild's incompressible fluid sphere with the exterior Schwarzschild metric.
 
@@ -64,7 +64,7 @@ The module `PhyslibAlpha.Relativity.General.Schwarzschild.IncompressibleSphere`,
 > `Ra` of its surface and the constant density `ρ₀`. The sphere is a proper part of the spherical
 > space (`Ra < Rc`, so that `χ_a < π / 2`).
 
-**`GeneralRelativity.IncompressibleSphere`**, a structure, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L107).
+**`GeneralRelativity.IncompressibleSphere`**, a structure, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L107).
 
 > Schwarzschild's incompressible fluid sphere: the curvature radius `Rc` of the interior
 > spherical space (`Rc ^ 2 = 3 / (κ ρ₀)`, Schwarzschild (37)), the areal radius `Ra` of the
@@ -91,7 +91,7 @@ structure IncompressibleSphere where
 
 ## B. The Schwarzschild radius and the angle of the surface
 
-**`GeneralRelativity.IncompressibleSphere.rs`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L135).
+**`GeneralRelativity.IncompressibleSphere.rs`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L135).
 
 > The Schwarzschild radius `α = (κ ρ₀ / 3) P_o ^ 3 = Ra ^ 3 / Rc ^ 2` of the sphere,
 > Schwarzschild (40).
@@ -100,7 +100,7 @@ structure IncompressibleSphere where
 def rs : ℝ
 ```
 
-**`GeneralRelativity.IncompressibleSphere.chia`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L138).
+**`GeneralRelativity.IncompressibleSphere.chia`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L138).
 
 > The polar angle `χ_a` of the surface, `sin χ_a = Ra / Rc`, Schwarzschild (28).
 
@@ -108,7 +108,7 @@ def rs : ℝ
 def chia : ℝ
 ```
 
-**`GeneralRelativity.IncompressibleSphere.cosChia`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L141).
+**`GeneralRelativity.IncompressibleSphere.cosChia`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L141).
 
 > The cosine of the angle of the surface, written as `√(1 - Ra ^ 2 / Rc ^ 2)`.
 
@@ -116,19 +116,19 @@ def chia : ℝ
 def cosChia : ℝ
 ```
 
-**`GeneralRelativity.IncompressibleSphere.one_sub_sq_div_sq_pos`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L143).
+**`GeneralRelativity.IncompressibleSphere.one_sub_sq_div_sq_pos`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L143).
 
 ```lean
 lemma one_sub_sq_div_sq_pos : 0 < 1 - S.Ra ^ 2 / S.Rc ^ 2
 ```
 
-**`GeneralRelativity.IncompressibleSphere.cosChia_sq`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L149).
+**`GeneralRelativity.IncompressibleSphere.cosChia_sq`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L149).
 
 ```lean
 lemma cosChia_sq : S.cosChia ^ 2 = 1 - S.Ra ^ 2 / S.Rc ^ 2
 ```
 
-**`GeneralRelativity.IncompressibleSphere.cosChia_eq_cos_chia`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L154).
+**`GeneralRelativity.IncompressibleSphere.cosChia_eq_cos_chia`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L154).
 
 > `cosChia` is the cosine of `chia`.
 
@@ -136,19 +136,19 @@ lemma cosChia_sq : S.cosChia ^ 2 = 1 - S.Ra ^ 2 / S.Rc ^ 2
 lemma cosChia_eq_cos_chia : S.cosChia = Real.cos S.chia
 ```
 
-**`GeneralRelativity.IncompressibleSphere.cosChia_pos`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L158).
+**`GeneralRelativity.IncompressibleSphere.cosChia_pos`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L158).
 
 ```lean
 lemma cosChia_pos : 0 < S.cosChia
 ```
 
-**`GeneralRelativity.IncompressibleSphere.cosChia_lt_one`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L162).
+**`GeneralRelativity.IncompressibleSphere.cosChia_lt_one`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L162).
 
 ```lean
 lemma cosChia_lt_one : S.cosChia < 1
 ```
 
-**`GeneralRelativity.IncompressibleSphere.rs_div_Ra`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L169).
+**`GeneralRelativity.IncompressibleSphere.rs_div_Ra`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L169).
 
 > Schwarzschild (40): `α / P_o = sin χ_a ^ 2`.
 
@@ -156,7 +156,7 @@ lemma cosChia_lt_one : S.cosChia < 1
 lemma rs_div_Ra : S.rs / S.Ra = Real.sin S.chia ^ 2
 ```
 
-**`GeneralRelativity.IncompressibleSphere.rs_lt_Ra`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L183).
+**`GeneralRelativity.IncompressibleSphere.rs_lt_Ra`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L183).
 
 > The surface of the sphere lies outside its Schwarzschild radius.
 
@@ -166,7 +166,7 @@ lemma rs_lt_Ra : S.rs < S.Ra
 
 ## C. The pressure
 
-**`GeneralRelativity.IncompressibleSphere.pressure`**, a def, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L197).
+**`GeneralRelativity.IncompressibleSphere.pressure`**, a def, [line 197](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L197).
 
 > The pressure of the fluid at the polar angle `χ`, Schwarzschild (30):
 > `ρ₀ + p = ρ₀ 2 cos χ_a / (3 cos χ_a - cos χ)`.
@@ -177,7 +177,7 @@ def pressure (χ : ℝ) : ℝ
 
 ### C.1. Pressure at the surface and at the centre
 
-**`GeneralRelativity.IncompressibleSphere.pressure_chia`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L207).
+**`GeneralRelativity.IncompressibleSphere.pressure_chia`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L207).
 
 > The pressure vanishes at the surface of the fluid.
 
@@ -185,7 +185,7 @@ def pressure (χ : ℝ) : ℝ
 lemma pressure_chia : S.pressure S.chia = 0
 ```
 
-**`GeneralRelativity.IncompressibleSphere.pressure_zero`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L216).
+**`GeneralRelativity.IncompressibleSphere.pressure_zero`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L216).
 
 > The pressure at the centre, away from the critical value `cos χ_a = 1 / 3`.
 
@@ -194,13 +194,13 @@ lemma pressure_zero (h : 3 * S.cosChia ≠ 1) :
     S.pressure 0 = S.ρ₀ * (1 - S.cosChia) / (3 * S.cosChia - 1)
 ```
 
-**`GeneralRelativity.IncompressibleSphere.pressure_zero_pos`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L224).
+**`GeneralRelativity.IncompressibleSphere.pressure_zero_pos`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L224).
 
 ```lean
 lemma pressure_zero_pos (hsub : 1 / 3 < S.cosChia) : 0 < S.pressure 0
 ```
 
-**`GeneralRelativity.IncompressibleSphere.pressure_zero_pos_iff`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L239).
+**`GeneralRelativity.IncompressibleSphere.pressure_zero_pos_iff`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L239).
 
 > The central pressure is positive if and only if `cos χ_a > 1 / 3`. For `cos χ_a < 1 / 3`
 > the formula (30) is negative at the centre; at `cos χ_a = 1 / 3` the division by zero of
@@ -216,13 +216,13 @@ lemma pressure_zero_pos_iff : 0 < S.pressure 0 ↔ 1 / 3 < S.cosChia
 > Schwarzschild, page 9 of the translation: the pressure at the centre stays finite as long as
 > `Ra > 9 / 8 α`.
 
-**`GeneralRelativity.IncompressibleSphere.one_third_lt_cosChia_iff_sq`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L269).
+**`GeneralRelativity.IncompressibleSphere.one_third_lt_cosChia_iff_sq`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L269).
 
 ```lean
 lemma one_third_lt_cosChia_iff_sq : 1 / 3 < S.cosChia ↔ S.Ra ^ 2 < 8 / 9 * S.Rc ^ 2
 ```
 
-**`GeneralRelativity.IncompressibleSphere.one_third_lt_cosChia_iff_Ra_lt`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L280).
+**`GeneralRelativity.IncompressibleSphere.one_third_lt_cosChia_iff_Ra_lt`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L280).
 
 > `cos χ_a > 1 / 3` if and only if `Ra < √(8 / 9) Rc`.
 
@@ -230,7 +230,7 @@ lemma one_third_lt_cosChia_iff_sq : 1 / 3 < S.cosChia ↔ S.Ra ^ 2 < 8 / 9 * S.R
 lemma one_third_lt_cosChia_iff_Ra_lt : 1 / 3 < S.cosChia ↔ S.Ra < √(8 / 9) * S.Rc
 ```
 
-**`GeneralRelativity.IncompressibleSphere.one_third_lt_cosChia_iff_rs`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L287).
+**`GeneralRelativity.IncompressibleSphere.one_third_lt_cosChia_iff_rs`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L287).
 
 > `cos χ_a > 1 / 3` if and only if `9 / 8 α < Ra` (Schwarzschild, page 9).
 
@@ -238,7 +238,7 @@ lemma one_third_lt_cosChia_iff_Ra_lt : 1 / 3 < S.cosChia ↔ S.Ra < √(8 / 9) *
 lemma one_third_lt_cosChia_iff_rs : 1 / 3 < S.cosChia ↔ 9 / 8 * S.rs < S.Ra
 ```
 
-**`GeneralRelativity.IncompressibleSphere.Ra_div_Rc_of_cosChia_eq`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L303).
+**`GeneralRelativity.IncompressibleSphere.Ra_div_Rc_of_cosChia_eq`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L303).
 
 > At the critical value `cos χ_a = 1 / 3` the ratio `Ra / Rc = sin χ_a` (Schwarzschild's
 > fall velocity, (42)) equals `√(8 / 9)`.
@@ -253,7 +253,7 @@ lemma Ra_div_Rc_of_cosChia_eq (hc : S.cosChia = 1 / 3) : S.Ra / S.Rc = √(8 / 9
 > form in `χ` is a lemma (`gttIn_Rc_mul_sin`, `grrIn_Rc_mul_sin`), not a definition. The metric
 > coefficients are taken up to the sign of the signature.
 
-**`GeneralRelativity.IncompressibleSphere.gttIn`**, a def, [line 323](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L323).
+**`GeneralRelativity.IncompressibleSphere.gttIn`**, a def, [line 323](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L323).
 
 > The interior coefficient `g_tt` in the areal radius `r`, Schwarzschild (35):
 > `(3 / 2 cos χ_a - 1 / 2 √(1 - r ^ 2 / Rc ^ 2)) ^ 2`.
@@ -262,7 +262,7 @@ lemma Ra_div_Rc_of_cosChia_eq (hc : S.cosChia = 1 / 3) : S.Ra / S.Rc = √(8 / 9
 def gttIn (r : ℝ) : ℝ
 ```
 
-**`GeneralRelativity.IncompressibleSphere.grrIn`**, a def, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L328).
+**`GeneralRelativity.IncompressibleSphere.grrIn`**, a def, [line 328](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L328).
 
 > The interior coefficient `g_rr` in the areal radius `r`, Schwarzschild (35):
 > `1 / (1 - r ^ 2 / Rc ^ 2)`.
@@ -271,7 +271,7 @@ def gttIn (r : ℝ) : ℝ
 def grrIn (r : ℝ) : ℝ
 ```
 
-**`GeneralRelativity.IncompressibleSphere.gttOut`**, a def, [line 331](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L331).
+**`GeneralRelativity.IncompressibleSphere.gttOut`**, a def, [line 331](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L331).
 
 > The exterior coefficient `g_tt = 1 - α / r`, Schwarzschild (36).
 
@@ -279,7 +279,7 @@ def grrIn (r : ℝ) : ℝ
 def gttOut (r : ℝ) : ℝ
 ```
 
-**`GeneralRelativity.IncompressibleSphere.grrOut`**, a def, [line 334](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L334).
+**`GeneralRelativity.IncompressibleSphere.grrOut`**, a def, [line 334](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L334).
 
 > The exterior coefficient `g_rr = 1 / (1 - α / r)`, Schwarzschild (36).
 
@@ -289,14 +289,14 @@ def grrOut (r : ℝ) : ℝ
 
 ### D.1. The interior metric in the angle `χ`
 
-**`GeneralRelativity.IncompressibleSphere.one_sub_sin_sq`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L342).
+**`GeneralRelativity.IncompressibleSphere.one_sub_sin_sq`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L342).
 
 ```lean
 lemma one_sub_sin_sq (χ : ℝ) :
     1 - (S.Rc * Real.sin χ) ^ 2 / S.Rc ^ 2 = Real.cos χ ^ 2
 ```
 
-**`GeneralRelativity.IncompressibleSphere.gttIn_Rc_mul_sin`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L348).
+**`GeneralRelativity.IncompressibleSphere.gttIn_Rc_mul_sin`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L348).
 
 > Schwarzschild (35): in the angle `χ`, `g_tt = ((3 cos χ_a - cos χ) / 2) ^ 2`.
 
@@ -305,7 +305,7 @@ lemma gttIn_Rc_mul_sin {χ : ℝ} (h0 : 0 ≤ χ) (hπ : χ ≤ π / 2) :
     S.gttIn (S.Rc * Real.sin χ) = ((3 * S.cosChia - Real.cos χ) / 2) ^ 2
 ```
 
-**`GeneralRelativity.IncompressibleSphere.grrIn_Rc_mul_sin`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L356).
+**`GeneralRelativity.IncompressibleSphere.grrIn_Rc_mul_sin`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L356).
 
 > Schwarzschild (35): in the angle `χ`, the coefficient of `dχ ^ 2` is `Rc ^ 2`.
 
@@ -316,7 +316,7 @@ lemma grrIn_Rc_mul_sin {χ : ℝ} (hc : Real.cos χ ≠ 0) :
 
 ### D.2. The values at the surface agree
 
-**`GeneralRelativity.IncompressibleSphere.gttIn_Ra`**, a lemma, [line 369](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L369).
+**`GeneralRelativity.IncompressibleSphere.gttIn_Ra`**, a lemma, [line 369](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L369).
 
 > The interior and exterior formulas for `g_tt` take the same value at `r = Ra`.
 
@@ -324,7 +324,7 @@ lemma grrIn_Rc_mul_sin {χ : ℝ} (hc : Real.cos χ ≠ 0) :
 lemma gttIn_Ra : S.gttIn S.Ra = S.gttOut S.Ra
 ```
 
-**`GeneralRelativity.IncompressibleSphere.grrIn_Ra`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L379).
+**`GeneralRelativity.IncompressibleSphere.grrIn_Ra`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L379).
 
 > The interior and exterior formulas for `g_rr` take the same value at `r = Ra`.
 
@@ -332,7 +332,7 @@ lemma gttIn_Ra : S.gttIn S.Ra = S.gttOut S.Ra
 lemma grrIn_Ra : S.grrIn S.Ra = S.grrOut S.Ra
 ```
 
-**`GeneralRelativity.IncompressibleSphere.eq_rs_of_gttIn_Ra`**, a lemma, [line 388](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L388).
+**`GeneralRelativity.IncompressibleSphere.eq_rs_of_gttIn_Ra`**, a lemma, [line 388](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L388).
 
 > The exterior form of `g_tt` at the surface determines the Schwarzschild radius: if
 > `g_tt (Ra) = 1 - a / Ra` then `a = α = Ra ^ 3 / Rc ^ 2`, which is Schwarzschild (40).
@@ -341,7 +341,7 @@ lemma grrIn_Ra : S.grrIn S.Ra = S.grrOut S.Ra
 lemma eq_rs_of_gttIn_Ra {a : ℝ} (h : S.gttIn S.Ra = 1 - a / S.Ra) : a = S.rs
 ```
 
-**`GeneralRelativity.IncompressibleSphere.gttIn_zero_of_cosChia_eq`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L396).
+**`GeneralRelativity.IncompressibleSphere.gttIn_zero_of_cosChia_eq`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L396).
 
 > At the critical value `cos χ_a = 1 / 3`, `g_tt` vanishes at the centre.
 
@@ -353,14 +353,14 @@ lemma gttIn_zero_of_cosChia_eq (hcrit : S.cosChia = 1 / 3) : S.gttIn 0 = 0
 
 ### E.1. Two auxiliary derivatives
 
-**`GeneralRelativity.IncompressibleSphere.hasDerivAt_one_sub_sq_div`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L413).
+**`GeneralRelativity.IncompressibleSphere.hasDerivAt_one_sub_sq_div`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L413).
 
 ```lean
 lemma hasDerivAt_one_sub_sq_div (Rc r : ℝ) :
     HasDerivAt (fun x : ℝ => 1 - x ^ 2 / Rc ^ 2) (-(2 * r) / Rc ^ 2) r
 ```
 
-**`GeneralRelativity.IncompressibleSphere.hasDerivAt_sqrt_one_sub_sq_div`**, a lemma, [line 418](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L418).
+**`GeneralRelativity.IncompressibleSphere.hasDerivAt_sqrt_one_sub_sq_div`**, a lemma, [line 418](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L418).
 
 ```lean
 lemma hasDerivAt_sqrt_one_sub_sq_div {Rc r : ℝ} (hu : 0 < 1 - r ^ 2 / Rc ^ 2) :
@@ -370,7 +370,7 @@ lemma hasDerivAt_sqrt_one_sub_sq_div {Rc r : ℝ} (hu : 0 < 1 - r ^ 2 / Rc ^ 2) 
 
 ### E.2. Derivatives of `g_tt`
 
-**`GeneralRelativity.IncompressibleSphere.gttIn_hasDerivAt`**, a lemma, [line 435](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L435).
+**`GeneralRelativity.IncompressibleSphere.gttIn_hasDerivAt`**, a lemma, [line 435](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L435).
 
 > The interior `g_tt` is differentiable at `Ra` with derivative `Ra / Rc ^ 2`.
 
@@ -378,7 +378,7 @@ lemma hasDerivAt_sqrt_one_sub_sq_div {Rc r : ℝ} (hu : 0 < 1 - r ^ 2 / Rc ^ 2) 
 lemma gttIn_hasDerivAt : HasDerivAt S.gttIn (S.Ra / S.Rc ^ 2) S.Ra
 ```
 
-**`GeneralRelativity.IncompressibleSphere.deriv_gttIn_Ra`**, a lemma, [line 455](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L455).
+**`GeneralRelativity.IncompressibleSphere.deriv_gttIn_Ra`**, a lemma, [line 455](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L455).
 
 > The derivative of the interior `g_tt` at `Ra` is `Ra / Rc ^ 2`.
 
@@ -386,7 +386,7 @@ lemma gttIn_hasDerivAt : HasDerivAt S.gttIn (S.Ra / S.Rc ^ 2) S.Ra
 lemma deriv_gttIn_Ra : deriv S.gttIn S.Ra = S.Ra / S.Rc ^ 2
 ```
 
-**`GeneralRelativity.IncompressibleSphere.gttOut_hasDerivAt`**, a lemma, [line 459](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L459).
+**`GeneralRelativity.IncompressibleSphere.gttOut_hasDerivAt`**, a lemma, [line 459](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L459).
 
 > The exterior `g_tt` is differentiable at `Ra` with derivative `α / Ra ^ 2 = Ra / Rc ^ 2`.
 
@@ -394,7 +394,7 @@ lemma deriv_gttIn_Ra : deriv S.gttIn S.Ra = S.Ra / S.Rc ^ 2
 lemma gttOut_hasDerivAt : HasDerivAt S.gttOut (S.Ra / S.Rc ^ 2) S.Ra
 ```
 
-**`GeneralRelativity.IncompressibleSphere.deriv_gttOut_Ra`**, a lemma, [line 472](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L472).
+**`GeneralRelativity.IncompressibleSphere.deriv_gttOut_Ra`**, a lemma, [line 472](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L472).
 
 > The derivative of the exterior `g_tt` at `Ra` is `Ra / Rc ^ 2`.
 
@@ -402,7 +402,7 @@ lemma gttOut_hasDerivAt : HasDerivAt S.gttOut (S.Ra / S.Rc ^ 2) S.Ra
 lemma deriv_gttOut_Ra : deriv S.gttOut S.Ra = S.Ra / S.Rc ^ 2
 ```
 
-**`GeneralRelativity.IncompressibleSphere.deriv_gttIn_Ra_eq_deriv_gttOut_Ra`**, a lemma, [line 476](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L476).
+**`GeneralRelativity.IncompressibleSphere.deriv_gttIn_Ra_eq_deriv_gttOut_Ra`**, a lemma, [line 476](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L476).
 
 > The derivatives of the two formulas for `g_tt` agree at `r = Ra`.
 
@@ -412,7 +412,7 @@ lemma deriv_gttIn_Ra_eq_deriv_gttOut_Ra : deriv S.gttIn S.Ra = deriv S.gttOut S.
 
 ### E.3. Derivatives of `g_rr`
 
-**`GeneralRelativity.IncompressibleSphere.grrIn_hasDerivAt`**, a lemma, [line 487](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L487).
+**`GeneralRelativity.IncompressibleSphere.grrIn_hasDerivAt`**, a lemma, [line 487](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L487).
 
 > The interior `g_rr` is differentiable at `Ra` with derivative
 > `2 Ra / (Rc ^ 2 cos χ_a ^ 4)`.
@@ -422,7 +422,7 @@ lemma grrIn_hasDerivAt :
     HasDerivAt S.grrIn (2 * S.Ra / (S.Rc ^ 2 * S.cosChia ^ 4)) S.Ra
 ```
 
-**`GeneralRelativity.IncompressibleSphere.deriv_grrIn_Ra`**, a lemma, [line 503](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L503).
+**`GeneralRelativity.IncompressibleSphere.deriv_grrIn_Ra`**, a lemma, [line 503](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L503).
 
 > The derivative of the interior `g_rr` at `Ra`.
 
@@ -430,7 +430,7 @@ lemma grrIn_hasDerivAt :
 lemma deriv_grrIn_Ra : deriv S.grrIn S.Ra = 2 * S.Ra / (S.Rc ^ 2 * S.cosChia ^ 4)
 ```
 
-**`GeneralRelativity.IncompressibleSphere.grrOut_hasDerivAt`**, a lemma, [line 508](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L508).
+**`GeneralRelativity.IncompressibleSphere.grrOut_hasDerivAt`**, a lemma, [line 508](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L508).
 
 > The exterior `g_rr` is differentiable at `Ra` with derivative
 > `- Ra / (Rc ^ 2 cos χ_a ^ 4)`.
@@ -440,7 +440,7 @@ lemma grrOut_hasDerivAt :
     HasDerivAt S.grrOut (-(S.Ra / (S.Rc ^ 2 * S.cosChia ^ 4))) S.Ra
 ```
 
-**`GeneralRelativity.IncompressibleSphere.deriv_grrOut_Ra`**, a lemma, [line 531](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L531).
+**`GeneralRelativity.IncompressibleSphere.deriv_grrOut_Ra`**, a lemma, [line 531](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L531).
 
 > The derivative of the exterior `g_rr` at `Ra`.
 
@@ -448,7 +448,7 @@ lemma grrOut_hasDerivAt :
 lemma deriv_grrOut_Ra : deriv S.grrOut S.Ra = -(S.Ra / (S.Rc ^ 2 * S.cosChia ^ 4))
 ```
 
-**`GeneralRelativity.IncompressibleSphere.deriv_grrIn_Ra_ne_deriv_grrOut_Ra`**, a lemma, [line 536](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L536).
+**`GeneralRelativity.IncompressibleSphere.deriv_grrIn_Ra_ne_deriv_grrOut_Ra`**, a lemma, [line 536](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L536).
 
 > The derivatives of the two formulas for `g_rr` differ at `r = Ra`, in the curvature
 > coordinate `r`.
@@ -463,7 +463,7 @@ lemma deriv_grrIn_Ra_ne_deriv_grrOut_Ra : deriv S.grrIn S.Ra ≠ deriv S.grrOut 
 > beyond. The glued `g_tt` is differentiable at `Ra`; the glued `g_rr` is continuous but not
 > differentiable at `Ra`, since its one-sided derivatives differ.
 
-**`GeneralRelativity.IncompressibleSphere.gttGlue`**, a def, [line 557](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L557).
+**`GeneralRelativity.IncompressibleSphere.gttGlue`**, a def, [line 557](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L557).
 
 > The glued `g_tt`: interior formula for `r ≤ Ra`, exterior formula beyond.
 
@@ -471,7 +471,7 @@ lemma deriv_grrIn_Ra_ne_deriv_grrOut_Ra : deriv S.grrIn S.Ra ≠ deriv S.grrOut 
 def gttGlue (r : ℝ) : ℝ
 ```
 
-**`GeneralRelativity.IncompressibleSphere.grrGlue`**, a def, [line 560](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L560).
+**`GeneralRelativity.IncompressibleSphere.grrGlue`**, a def, [line 560](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L560).
 
 > The glued `g_rr`: interior formula for `r ≤ Ra`, exterior formula beyond.
 
@@ -479,7 +479,7 @@ def gttGlue (r : ℝ) : ℝ
 def grrGlue (r : ℝ) : ℝ
 ```
 
-**`GeneralRelativity.IncompressibleSphere.gttGlue_hasDerivAt`**, a lemma, [line 563](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L563).
+**`GeneralRelativity.IncompressibleSphere.gttGlue_hasDerivAt`**, a lemma, [line 563](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L563).
 
 > The glued `g_tt` is differentiable at `Ra` with derivative `Ra / Rc ^ 2`.
 
@@ -487,7 +487,7 @@ def grrGlue (r : ℝ) : ℝ
 lemma gttGlue_hasDerivAt : HasDerivAt S.gttGlue (S.Ra / S.Rc ^ 2) S.Ra
 ```
 
-**`GeneralRelativity.IncompressibleSphere.gttGlue_continuousAt`**, a lemma, [line 581](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L581).
+**`GeneralRelativity.IncompressibleSphere.gttGlue_continuousAt`**, a lemma, [line 581](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L581).
 
 > The glued `g_tt` is continuous at `Ra`.
 
@@ -495,7 +495,7 @@ lemma gttGlue_hasDerivAt : HasDerivAt S.gttGlue (S.Ra / S.Rc ^ 2) S.Ra
 lemma gttGlue_continuousAt : ContinuousAt S.gttGlue S.Ra
 ```
 
-**`GeneralRelativity.IncompressibleSphere.grrGlue_hasDerivWithinAt_Iic`**, a lemma, [line 585](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L585).
+**`GeneralRelativity.IncompressibleSphere.grrGlue_hasDerivWithinAt_Iic`**, a lemma, [line 585](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L585).
 
 > The left derivative of the glued `g_rr` at `Ra` (interior formula).
 
@@ -504,7 +504,7 @@ lemma grrGlue_hasDerivWithinAt_Iic :
     HasDerivWithinAt S.grrGlue (2 * S.Ra / (S.Rc ^ 2 * S.cosChia ^ 4)) (Set.Iic S.Ra) S.Ra
 ```
 
-**`GeneralRelativity.IncompressibleSphere.grrGlue_hasDerivWithinAt_Ici`**, a lemma, [line 593](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L593).
+**`GeneralRelativity.IncompressibleSphere.grrGlue_hasDerivWithinAt_Ici`**, a lemma, [line 593](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L593).
 
 > The right derivative of the glued `g_rr` at `Ra` (exterior formula).
 
@@ -513,7 +513,7 @@ lemma grrGlue_hasDerivWithinAt_Ici :
     HasDerivWithinAt S.grrGlue (-(S.Ra / (S.Rc ^ 2 * S.cosChia ^ 4))) (Set.Ici S.Ra) S.Ra
 ```
 
-**`GeneralRelativity.IncompressibleSphere.grrGlue_continuousAt`**, a lemma, [line 604](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L604).
+**`GeneralRelativity.IncompressibleSphere.grrGlue_continuousAt`**, a lemma, [line 604](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L604).
 
 > The glued `g_rr` is continuous at `Ra`.
 
@@ -521,7 +521,7 @@ lemma grrGlue_hasDerivWithinAt_Ici :
 lemma grrGlue_continuousAt : ContinuousAt S.grrGlue S.Ra
 ```
 
-**`GeneralRelativity.IncompressibleSphere.grrGlue_not_differentiableAt`**, a lemma, [line 611](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L611).
+**`GeneralRelativity.IncompressibleSphere.grrGlue_not_differentiableAt`**, a lemma, [line 611](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L611).
 
 > The glued `g_rr` is not differentiable at `Ra`: its left and right derivatives, unique on
 > `Iic Ra` and `Ici Ra`, differ.
@@ -537,7 +537,7 @@ lemma grrGlue_not_differentiableAt : ¬ DifferentiableAt ℝ S.grrGlue S.Ra
 > formulas (Lichnerowicz, chapter III, section 28, evaluated at the surface). The coordinate `l`
 > itself is not constructed here.
 
-**`GeneralRelativity.IncompressibleSphere.one_div_sqrt_grrIn_Ra`**, a lemma, [line 640](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L640).
+**`GeneralRelativity.IncompressibleSphere.one_div_sqrt_grrIn_Ra`**, a lemma, [line 640](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L640).
 
 > `dr / dl = 1 / √g_rr` takes the same value at `Ra` from the two formulas.
 
@@ -545,7 +545,7 @@ lemma grrGlue_not_differentiableAt : ¬ DifferentiableAt ℝ S.grrGlue S.Ra
 lemma one_div_sqrt_grrIn_Ra : 1 / √(S.grrIn S.Ra) = 1 / √(S.grrOut S.Ra)
 ```
 
-**`GeneralRelativity.IncompressibleSphere.deriv_gttIn_div_sqrt_grrIn_Ra`**, a lemma, [line 644](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L644).
+**`GeneralRelativity.IncompressibleSphere.deriv_gttIn_div_sqrt_grrIn_Ra`**, a lemma, [line 644](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean#L644).
 
 > `d g_tt / dl = g_tt' / √g_rr` takes the same value at `Ra` from the two formulas.
 
@@ -565,4 +565,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean)
+- [PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean)

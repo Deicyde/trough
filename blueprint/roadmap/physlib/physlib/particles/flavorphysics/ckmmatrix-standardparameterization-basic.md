@@ -8,7 +8,7 @@ proof: formalized
 
 # Standard parameterization for the CKM Matrix
 
-The module `Physlib.Particles.FlavorPhysics.CKMMatrix.StandardParameterization.Basic`, [Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean): 8 declarations, 6 with a docstring.
+The module `Physlib.Particles.FlavorPhysics.CKMMatrix.StandardParameterization.Basic`, [Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean): 8 declarations, 6 with a docstring.
 
 > This file defines the standard parameterization of CKM matrices in terms of
 > four real numbers `θ₁₂`, `θ₁₃`, `θ₂₃` and `δ₁₃`.
@@ -16,7 +16,7 @@ The module `Physlib.Particles.FlavorPhysics.CKMMatrix.StandardParameterization.B
 > We will show that every CKM matrix can be written within this standard parameterization
 > in the file `FlavorPhysics.CKMMatrix.StandardParameters`.
 
-**`standParamAsMatrix`**, a def, [line 31](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean#L31).
+**`standParamAsMatrix`**, a def, [line 31](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean#L31).
 
 > Given four reals `θ₁₂ θ₁₃ θ₂₃ δ₁₃` the standard parameterization of the CKM matrix
 > as a `3×3` complex matrix.
@@ -25,7 +25,7 @@ The module `Physlib.Particles.FlavorPhysics.CKMMatrix.StandardParameterization.B
 def standParamAsMatrix (θ₁₂ θ₁₃ θ₂₃ δ₁₃ : ℝ) : Matrix (Fin 3) (Fin 3) ℂ
 ```
 
-**`standParamAsMatrix_unitary`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean#L44).
+**`standParamAsMatrix_unitary`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean#L44).
 
 > The standard parameterization forms a unitary matrix.
 
@@ -34,7 +34,7 @@ lemma standParamAsMatrix_unitary (θ₁₂ θ₁₃ θ₂₃ δ₁₃ : ℝ) :
     ((standParamAsMatrix θ₁₂ θ₁₃ θ₂₃ δ₁₃)ᴴ * standParamAsMatrix θ₁₂ θ₁₃ θ₂₃ δ₁₃) = 1
 ```
 
-**`standParam`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean#L59).
+**`standParam`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean#L59).
 
 > A CKM Matrix from four reals `θ₁₂`, `θ₁₃`, `θ₂₃`, and `δ₁₃`. This is the standard
 > parameterization of CKM matrices.
@@ -43,7 +43,7 @@ lemma standParamAsMatrix_unitary (θ₁₂ θ₁₃ θ₂₃ δ₁₃ : ℝ) :
 def standParam (θ₁₂ θ₁₃ θ₂₃ δ₁₃ : ℝ) : CKMMatrix
 ```
 
-**`standParam.cross_product_t`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean#L68).
+**`standParam.cross_product_t`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean#L68).
 
 > The top-row of the standard parameterization is the cross product of the conjugate of the
 > up and charm rows.
@@ -54,7 +54,7 @@ lemma cross_product_t (θ₁₂ θ₁₃ θ₂₃ δ₁₃ : ℝ) :
     (conj [standParam θ₁₂ θ₁₃ θ₂₃ δ₁₃]u ⨯₃ conj [standParam θ₁₂ θ₁₃ θ₂₃ δ₁₃]c)
 ```
 
-**`standParam.eq_rows`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean#L86).
+**`standParam.eq_rows`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean#L86).
 
 > A CKM matrix which has rows equal to that of a standard parameterisation is equal
 > to that standard parameterisation.
@@ -65,7 +65,7 @@ lemma eq_rows (U : CKMMatrix) {θ₁₂ θ₁₃ θ₂₃ δ₁₃ : ℝ} (hu : 
     U = standParam θ₁₂ θ₁₃ θ₂₃ δ₁₃
 ```
 
-**`standParam.eq_exp_of_phases`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean#L95).
+**`standParam.eq_exp_of_phases`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean#L95).
 
 > Two standard parameterisations of CKM matrices are the same matrix if they have
 > the same angles and the exponential of their faces is equal.
@@ -75,7 +75,7 @@ lemma eq_exp_of_phases (θ₁₂ θ₁₃ θ₂₃ δ₁₃ δ₁₃' : ℝ) (h 
     standParam θ₁₂ θ₁₃ θ₂₃ δ₁₃ = standParam θ₁₂ θ₁₃ θ₂₃ δ₁₃'
 ```
 
-**`standParam.VusVubVcdSq_eq`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean#L104).
+**`standParam.VusVubVcdSq_eq`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean#L104).
 
 ```lean
 lemma VusVubVcdSq_eq (θ₁₂ θ₁₃ θ₂₃ δ₁₃ : ℝ) (h1 : 0 ≤ Real.sin θ₁₂)
@@ -84,7 +84,7 @@ lemma VusVubVcdSq_eq (θ₁₂ θ₁₃ θ₂₃ δ₁₃ : ℝ) (h1 : 0 ≤ Rea
     Real.sin θ₁₂ ^ 2 * Real.cos θ₁₃ ^ 2 * Real.sin θ₁₃ ^ 2 * Real.sin θ₂₃ ^ 2
 ```
 
-**`standParam.mulExpδ₁₃_eq`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean#L131).
+**`standParam.mulExpδ₁₃_eq`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean#L131).
 
 ```lean
 lemma mulExpδ₁₃_eq (θ₁₂ θ₁₃ θ₂₃ δ₁₃ : ℝ) (h1 : 0 ≤ Real.sin θ₁₂)
@@ -100,4 +100,4 @@ lemma mulExpδ₁₃_eq (θ₁₂ θ₁₃ θ₂₃ δ₁₃ : ℝ) (h1 : 0 ≤ 
 
 ## Sources
 
-- [Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean)
+- [Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean)

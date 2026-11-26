@@ -8,7 +8,7 @@ proof: formalized
 
 # Bounds on iterated derivatives
 
-The module `PhyslibAlpha.Mathematics.Calculus.IteratedFDerivBounds`, [PhyslibAlpha/Mathematics/Calculus/IteratedFDerivBounds.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/IteratedFDerivBounds.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Mathematics.Calculus.IteratedFDerivBounds`, [PhyslibAlpha/Mathematics/Calculus/IteratedFDerivBounds.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Calculus/IteratedFDerivBounds.lean): 2 declarations, 2 with a docstring.
 
 > Norm bounds for iterated Fréchet derivatives of a composition with a continuous linear map and of
 > a product.
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.Mathematics.Calculus.IteratedFDerivBounds`, [PhyslibAlp
 
 > - `IteratedFDerivBounds.norm_iteratedFDeriv_mul_le_two_pow` : the Leibniz bound for a product.
 
-**`IteratedFDerivBounds.norm_iteratedFDeriv_comp_clm_le`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/IteratedFDerivBounds.lean#L59).
+**`IteratedFDerivBounds.norm_iteratedFDeriv_comp_clm_le`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Calculus/IteratedFDerivBounds.lean#L59).
 
 > Composing with a continuous linear map costs the operator norm to the order of the
 > derivative.
@@ -49,7 +49,7 @@ lemma norm_iteratedFDeriv_comp_clm_le {G : Type*} [NormedAddCommGroup G] [Normed
     ‖iteratedFDeriv ℝ n (f ∘ L) y‖ ≤ ‖iteratedFDeriv ℝ n f (L y)‖ * ‖L‖ ^ n
 ```
 
-**`IteratedFDerivBounds.norm_iteratedFDeriv_mul_le_two_pow`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/IteratedFDerivBounds.lean#L69).
+**`IteratedFDerivBounds.norm_iteratedFDeriv_mul_le_two_pow`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Calculus/IteratedFDerivBounds.lean#L69).
 
 > **The Leibniz bound.** If the derivatives of order up to `k` of `b` and `v` are bounded by `B`
 > and `S` at `x` then the `k`th derivative of `b * v` is bounded by `2 ^ k * B * S`.
@@ -67,4 +67,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Calculus/IteratedFDerivBounds.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/IteratedFDerivBounds.lean)
+- [PhyslibAlpha/Mathematics/Calculus/IteratedFDerivBounds.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Calculus/IteratedFDerivBounds.lean)

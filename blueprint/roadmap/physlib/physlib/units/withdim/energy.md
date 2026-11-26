@@ -8,12 +8,12 @@ proof: formalized
 
 # Energy
 
-The module `Physlib.Units.WithDim.Energy`, [Physlib/Units/WithDim/Energy.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Energy.lean): 5 declarations, 5 with a docstring.
+The module `Physlib.Units.WithDim.Energy`, [Physlib/Units/WithDim/Energy.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Energy.lean): 5 declarations, 5 with a docstring.
 
 > In this module we define the dimensionful type corresponding to an energy.
 > We define specific instances of energy.
 
-**`DimEnergy`**, an abbrev, [line 24](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Energy.lean#L24).
+**`DimEnergy`**, an abbrev, [line 24](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Energy.lean#L24).
 
 > Energy as a dimensional quantity with dimension `MLT⁻2`..
 
@@ -21,7 +21,7 @@ The module `Physlib.Units.WithDim.Energy`, [Physlib/Units/WithDim/Energy.lean](h
 abbrev DimEnergy : Type
 ```
 
-**`DimEnergy.joule`**, a def, [line 30](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Energy.lean#L30).
+**`DimEnergy.joule`**, a def, [line 30](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Energy.lean#L30).
 
 > The dimensional energy corresponding to 1 joule, J.
 
@@ -29,7 +29,7 @@ abbrev DimEnergy : Type
 noncomputable def joule : DimEnergy
 ```
 
-**`DimEnergy.electronVolt`**, a def, [line 33](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Energy.lean#L33).
+**`DimEnergy.electronVolt`**, a def, [line 33](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Energy.lean#L33).
 
 > The dimensional energy corresponding to 1 electron volt, 1.602176634×10−19 J.
 
@@ -37,7 +37,7 @@ noncomputable def joule : DimEnergy
 noncomputable def electronVolt : DimEnergy
 ```
 
-**`DimEnergy.calorie`**, a def, [line 36](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Energy.lean#L36).
+**`DimEnergy.calorie`**, a def, [line 36](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Energy.lean#L36).
 
 > The dimensional energy corresponding to 1 calorie, 4.184 J.
 
@@ -45,7 +45,7 @@ noncomputable def electronVolt : DimEnergy
 noncomputable def calorie : DimEnergy
 ```
 
-**`DimEnergy.kilowattHour`**, a def, [line 39](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Energy.lean#L39).
+**`DimEnergy.kilowattHour`**, a def, [line 39](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Energy.lean#L39).
 
 > The dimensional energy corresponding to 1 kilowatt-hours, (3,600,000 J).
 
@@ -59,4 +59,4 @@ noncomputable def kilowattHour : DimEnergy
 
 ## Sources
 
-- [Physlib/Units/WithDim/Energy.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Energy.lean)
+- [Physlib/Units/WithDim/Energy.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Energy.lean)

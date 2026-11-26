@@ -8,7 +8,7 @@ proof: formalized
 
 # Generalised Laguerre polynomials
 
-The module `PhyslibAlpha.Mathematics.SpecialFunctions.Laguerre`, [PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean): 22 declarations, 13 with a docstring.
+The module `PhyslibAlpha.Mathematics.SpecialFunctions.Laguerre`, [PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean): 22 declarations, 13 with a docstring.
 
 > The generalised Laguerre polynomials `L_N^(α)` for natural `N` and `α`, their differential
 > equation, their moments against `x^q e^(-x)` and the four weighted integrals of `L_N^(α)²` that
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.Mathematics.SpecialFunctions.Laguerre`, [PhyslibAlpha/M
 
 ## A. Definition and differential equation
 
-**`PhyslibAlpha.laguerreCoeff`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L71).
+**`PhyslibAlpha.laguerreCoeff`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L71).
 
 > The coefficient `(-1)^i C(N + α, N - i) / i!` of `x^i` in `L_N^(α)`.
 
@@ -55,7 +55,7 @@ The module `PhyslibAlpha.Mathematics.SpecialFunctions.Laguerre`, [PhyslibAlpha/M
 def laguerreCoeff (N α i : ℕ) : ℝ
 ```
 
-**`PhyslibAlpha.laguerre`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L74).
+**`PhyslibAlpha.laguerre`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L74).
 
 > The generalised Laguerre polynomial `L_N^(α)(x) = Σ_i (-1)^i C(N + α, N - i) x^i / i!`.
 
@@ -63,20 +63,20 @@ def laguerreCoeff (N α i : ℕ) : ℝ
 def laguerre (N α : ℕ) : ℝ[X]
 ```
 
-**`PhyslibAlpha.eval_laguerre`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L79).
+**`PhyslibAlpha.eval_laguerre`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L79).
 
 ```lean
 lemma eval_laguerre (x : ℝ) :
     (laguerre N α).eval x = ∑ i ∈ Finset.range (N + 1), laguerreCoeff N α i * x ^ i
 ```
 
-**`PhyslibAlpha.eval_laguerre_zero`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L83).
+**`PhyslibAlpha.eval_laguerre_zero`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L83).
 
 ```lean
 lemma eval_laguerre_zero : (laguerre N α).eval 0 = ((N + α).choose N : ℝ)
 ```
 
-**`PhyslibAlpha.eval_derivative_laguerre`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L90).
+**`PhyslibAlpha.eval_derivative_laguerre`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L90).
 
 ```lean
 lemma eval_derivative_laguerre (x : ℝ) :
@@ -84,7 +84,7 @@ lemma eval_derivative_laguerre (x : ℝ) :
       ∑ i ∈ Finset.range (N + 1), laguerreCoeff N α i * ((i : ℝ) * x ^ (i - 1))
 ```
 
-**`PhyslibAlpha.eval_derivative_derivative_laguerre`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L97).
+**`PhyslibAlpha.eval_derivative_derivative_laguerre`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L97).
 
 ```lean
 lemma eval_derivative_derivative_laguerre (x : ℝ) :
@@ -93,7 +93,7 @@ lemma eval_derivative_derivative_laguerre (x : ℝ) :
         laguerreCoeff N α i * ((i : ℝ) * ((i - 1 : ℕ) : ℝ) * x ^ (i - 1 - 1))
 ```
 
-**`PhyslibAlpha.laguerreCoeff_succ_mul`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L106).
+**`PhyslibAlpha.laguerreCoeff_succ_mul`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L106).
 
 > The two-term recursion of the coefficients.
 
@@ -103,7 +103,7 @@ lemma laguerreCoeff_succ_mul {i : ℕ} (hi : i < N) :
       -((N : ℝ) - i) * laguerreCoeff N α i
 ```
 
-**`PhyslibAlpha.laguerre_ode`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L130).
+**`PhyslibAlpha.laguerre_ode`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L130).
 
 > **Laguerre's differential equation** `x L'' + (α + 1 - x) L' + N L = 0`.
 
@@ -116,7 +116,7 @@ lemma laguerre_ode (x : ℝ) :
 
 ## B. Moments
 
-**`PhyslibAlpha.sum_choose_mul_choose_neg`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L168).
+**`PhyslibAlpha.sum_choose_mul_choose_neg`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L168).
 
 > `Σ_i (-1)^i C(N + α, N - i) C(q + i, i) = C(N + α - q - 1, N)`, the Chu–Vandermonde identity
 > with a negative upper index.
@@ -127,7 +127,7 @@ lemma sum_choose_mul_choose_neg (q : ℕ) :
       Ring.choose ((N + α : ℤ) - q - 1) N
 ```
 
-**`PhyslibAlpha.sum_laguerreCoeff_mul_factorial`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L185).
+**`PhyslibAlpha.sum_laguerreCoeff_mul_factorial`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L185).
 
 > **Moments.** `Σ_i c_i (q + i)! = q! C(N + α - q - 1, N)`, the integral of `x^q e^(-x) L_N^(α)`
 > with the integer binomial coefficient `Ring.choose`.
@@ -138,19 +138,19 @@ lemma sum_laguerreCoeff_mul_factorial (q : ℕ) :
       (q.factorial : ℝ) * ((Ring.choose ((N + α : ℤ) - q - 1) N : ℤ) : ℝ)
 ```
 
-**`PhyslibAlpha.ringChoose_natCast_of_lt`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L199).
+**`PhyslibAlpha.ringChoose_natCast_of_lt`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L199).
 
 ```lean
 lemma ringChoose_natCast_of_lt {t : ℕ} (h : t < N) : Ring.choose (t : ℤ) N = 0
 ```
 
-**`PhyslibAlpha.ringChoose_neg_one`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L202).
+**`PhyslibAlpha.ringChoose_neg_one`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L202).
 
 ```lean
 lemma ringChoose_neg_one : Ring.choose (-1 : ℤ) N = (-1) ^ N
 ```
 
-**`PhyslibAlpha.ringChoose_neg_two`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L207).
+**`PhyslibAlpha.ringChoose_neg_two`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L207).
 
 ```lean
 lemma ringChoose_neg_two : Ring.choose (-2 : ℤ) N = (-1) ^ N * (N + 1)
@@ -158,14 +158,14 @@ lemma ringChoose_neg_two : Ring.choose (-2 : ℤ) N = (-1) ^ N * (N + 1)
 
 ## C. Integrals
 
-**`PhyslibAlpha.integrableOn_pow_mul_exp_neg`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L220).
+**`PhyslibAlpha.integrableOn_pow_mul_exp_neg`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L220).
 
 ```lean
 lemma integrableOn_pow_mul_exp_neg (q : ℕ) :
     IntegrableOn (fun x : ℝ => x ^ q * Real.exp (-x)) (Ioi 0)
 ```
 
-**`PhyslibAlpha.integral_pow_mul_exp_neg`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L228).
+**`PhyslibAlpha.integral_pow_mul_exp_neg`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L228).
 
 > `∫₀^∞ x^q e^(-x) dx = q!`.
 
@@ -174,7 +174,7 @@ lemma integral_pow_mul_exp_neg (q : ℕ) :
     ∫ x in Ioi (0 : ℝ), x ^ q * Real.exp (-x) = q.factorial
 ```
 
-**`PhyslibAlpha.integral_pow_mul_exp_neg_mul_laguerre_sq`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L238).
+**`PhyslibAlpha.integral_pow_mul_exp_neg_mul_laguerre_sq`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L238).
 
 > `∫₀^∞ x^e e^(-x) L(x)² dx = Σ_j c_j Σ_i c_i (e + j + i)!`.
 
@@ -185,7 +185,7 @@ lemma integral_pow_mul_exp_neg_mul_laguerre_sq (e : ℕ) :
         ∑ i ∈ Finset.range (N + 1), laguerreCoeff N α i * ((e + j + i).factorial : ℝ)
 ```
 
-**`PhyslibAlpha.integral_pow_mul_exp_neg_mul_laguerre_sq_eq`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L262).
+**`PhyslibAlpha.integral_pow_mul_exp_neg_mul_laguerre_sq_eq`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L262).
 
 > The integrals through the moments.
 
@@ -196,13 +196,13 @@ lemma integral_pow_mul_exp_neg_mul_laguerre_sq_eq (e : ℕ) :
         ((Ring.choose ((N + α : ℤ) - (e + j : ℕ) - 1) N : ℤ) : ℝ))
 ```
 
-**`PhyslibAlpha.neg_one_pow_mul_self`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L269).
+**`PhyslibAlpha.neg_one_pow_mul_self`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L269).
 
 ```lean
 lemma neg_one_pow_mul_self (n : ℕ) : (-1 : ℝ) ^ n * (-1) ^ n = 1
 ```
 
-**`PhyslibAlpha.integral_laguerre_sq_alpha`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L273).
+**`PhyslibAlpha.integral_laguerre_sq_alpha`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L273).
 
 > `∫₀^∞ x^α e^(-x) L_N^(α)(x)² dx = (N + α)!/N!`.
 
@@ -212,7 +212,7 @@ lemma integral_laguerre_sq_alpha :
       ((N + α).factorial : ℝ) / N.factorial
 ```
 
-**`PhyslibAlpha.integral_laguerre_sq_alpha_add_one`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L289).
+**`PhyslibAlpha.integral_laguerre_sq_alpha_add_one`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L289).
 
 > `∫₀^∞ x^(α+1) e^(-x) L_N^(α)(x)² dx = (N + α)!/N! · (2N + α + 1)`.
 
@@ -222,7 +222,7 @@ lemma integral_laguerre_sq_alpha_add_one :
       ((N + α).factorial : ℝ) / N.factorial * (2 * N + α + 1)
 ```
 
-**`PhyslibAlpha.integral_laguerre_sq_alpha_sub_one`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L320).
+**`PhyslibAlpha.integral_laguerre_sq_alpha_sub_one`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L320).
 
 > `∫₀^∞ x^(α-1) e^(-x) L_N^(α)(x)² dx = (N + α)!/(N! α)`.
 
@@ -232,7 +232,7 @@ lemma integral_laguerre_sq_alpha_sub_one (hα : 1 ≤ α) :
       ((N + α).factorial : ℝ) / (N.factorial * α)
 ```
 
-**`PhyslibAlpha.integral_laguerre_sq_alpha_sub_two`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L341).
+**`PhyslibAlpha.integral_laguerre_sq_alpha_sub_two`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean#L341).
 
 > `∫₀^∞ x^(α-2) e^(-x) L_N^(α)(x)² dx = (N + α)! (2N + α + 1)/(N! (α - 1) α (α + 1))`.
 
@@ -249,4 +249,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean)
+- [PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/Laguerre.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The cost of a finite bielliptic transfer
 
-The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.Bielliptic`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean): 26 declarations, 14 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.Bielliptic`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean): 26 declarations, 14 with a docstring.
 
 > A third burn can reduce total impulse for a finite radius ratio.
 
@@ -27,7 +27,7 @@ The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.
 
 ## A. The three-burn cost and its strict margin
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.Parameters`**, a structure, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L45).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.Parameters`**, a structure, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L45).
 
 > Normalized radii: departure 1, target R, common apocentre B.
 
@@ -43,7 +43,7 @@ structure Parameters where
   R_lt_B : R < B
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.departureSpeed`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L56).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.departureSpeed`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L56).
 
 > First ellipse periapsis speed.
 
@@ -51,7 +51,7 @@ structure Parameters where
 def departureSpeed (p : Parameters) : ℝ
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.arrivalSpeed`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L58).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.arrivalSpeed`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L58).
 
 > Second ellipse periapsis speed at the final radius.
 
@@ -59,7 +59,7 @@ def departureSpeed (p : Parameters) : ℝ
 def arrivalSpeed (p : Parameters) : ℝ
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.firstApoSpeed`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L60).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.firstApoSpeed`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L60).
 
 > The first ellipse speed at the common apoapsis.
 
@@ -67,7 +67,7 @@ def arrivalSpeed (p : Parameters) : ℝ
 def firstApoSpeed (p : Parameters) : ℝ
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.secondApoSpeed`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L62).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.secondApoSpeed`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L62).
 
 > The second ellipse speed at the common apoapsis.
 
@@ -75,7 +75,7 @@ def firstApoSpeed (p : Parameters) : ℝ
 def secondApoSpeed (p : Parameters) : ℝ
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.cost`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L64).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.cost`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L64).
 
 > Three actual speed-jump magnitudes; the final burn is retrograde.
 
@@ -83,7 +83,7 @@ def secondApoSpeed (p : Parameters) : ℝ
 def cost (p : Parameters) : ℝ
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.hohmannPeri`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L69).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.hohmannPeri`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L69).
 
 > The normalized periapsis speed of the direct Hohmann transfer.
 
@@ -91,7 +91,7 @@ def cost (p : Parameters) : ℝ
 def hohmannPeri (R : ℝ) : ℝ
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.hohmannCost`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L71).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.hohmannCost`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L71).
 
 > The normalized cost of a direct Hohmann transfer to radius `R`.
 
@@ -99,7 +99,7 @@ def hohmannPeri (R : ℝ) : ℝ
 def hohmannCost (R : ℝ) : ℝ
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.time`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L75).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.time`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L75).
 
 > The sum of the two bielliptic half-periods in normalized units.
 
@@ -107,7 +107,7 @@ def hohmannCost (R : ℝ) : ℝ
 def time (p : Parameters) : ℝ
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.hohmannTime`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L78).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.hohmannTime`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L78).
 
 > The direct Hohmann half-period in normalized units.
 
@@ -115,19 +115,19 @@ def time (p : Parameters) : ℝ
 def hohmannTime (R : ℝ) : ℝ
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.cost_nonneg`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L80).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.cost_nonneg`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L80).
 
 ```lean
 lemma cost_nonneg (p : Parameters) : 0 ≤ cost p
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.time_pos`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L83).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.time_pos`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L83).
 
 ```lean
 lemma time_pos (p : Parameters) : 0 < time p
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.«example»`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L90).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.«example»`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L90).
 
 > Concrete finite-radius witness.
 
@@ -135,25 +135,25 @@ lemma time_pos (p : Parameters) : 0 < time p
 def «example» : Parameters
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.example_departure`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L92).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.example_departure`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L92).
 
 ```lean
 lemma example_departure : departureSpeed «example» = Real.sqrt (128/65 : ℝ)
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.example_arrival`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L94).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.example_arrival`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L94).
 
 ```lean
 lemma example_arrival : arrivalSpeed «example» = Real.sqrt (1/10 : ℝ)
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.example_hohmann`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L96).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.example_hohmann`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L96).
 
 ```lean
 lemma example_hohmann : hohmannPeri 16 = Real.sqrt (32/17 : ℝ)
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.sqrt_rational_interval`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L100).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.sqrt_rational_interval`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L100).
 
 > Rational squared bounds; no floating-point/native evaluation is involved.
 
@@ -162,7 +162,7 @@ lemma sqrt_rational_interval {x l u : ℝ} (_hl : 0 ≤ l) (hu : 0 ≤ u)
     (hlo : l^2 ≤ x) (hhi : x ≤ u^2) : l ≤ Real.sqrt x ∧ Real.sqrt x ≤ u
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.example_root_H_bounds`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L107).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.example_root_H_bounds`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L107).
 
 ```lean
 lemma example_root_H_bounds :
@@ -170,7 +170,7 @@ lemma example_root_H_bounds :
       Real.sqrt (32/17 : ℝ) ≤ (1372/1000 : ℝ)
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.example_root_A_bounds`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L111).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.example_root_A_bounds`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L111).
 
 ```lean
 lemma example_root_A_bounds :
@@ -178,7 +178,7 @@ lemma example_root_A_bounds :
       Real.sqrt (128/65 : ℝ) ≤ (14033/10000 : ℝ)
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.example_root_D_bounds`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L115).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.example_root_D_bounds`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L115).
 
 ```lean
 lemma example_root_D_bounds :
@@ -186,7 +186,7 @@ lemma example_root_D_bounds :
       Real.sqrt (1/10 : ℝ) ≤ (31623/100000 : ℝ)
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.example_cost_closed`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L120).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.example_cost_closed`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L120).
 
 ```lean
 lemma example_cost_closed : cost «example» =
@@ -194,14 +194,14 @@ lemma example_cost_closed : cost «example» =
       (5/4 : ℝ)*Real.sqrt (1/10 : ℝ) - (5/4 : ℝ)
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.example_hohmann_closed`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L138).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.example_hohmann_closed`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L138).
 
 ```lean
 lemma example_hohmann_closed : hohmannCost 16 =
     (15/16 : ℝ)*Real.sqrt (32/17 : ℝ)-(3/4 : ℝ)
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.finite_bielliptic_saves_deltaV`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L149).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.finite_bielliptic_saves_deltaV`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L149).
 
 > Exact strict margin: over 0.009 times the departure circular speed.
 
@@ -210,13 +210,13 @@ lemma finite_bielliptic_saves_deltaV :
     (9/1000 : ℝ) < hohmannCost 16 - cost «example»
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.finite_bielliptic_beats_hohmann`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L157).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.finite_bielliptic_beats_hohmann`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L157).
 
 ```lean
 lemma finite_bielliptic_beats_hohmann : cost «example» < hohmannCost 16
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.not_universally_best_against_bielliptic`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L162).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.not_universally_best_against_bielliptic`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L162).
 
 > This refutes an unrestricted optimality claim already in a small subclass
 > of three-burn transfers. It does not identify the all-impulse global optimum.
@@ -226,7 +226,7 @@ lemma not_universally_best_against_bielliptic :
     ¬ (∀ p : Parameters, hohmannCost p.R ≤ cost p)
 ```
 
-**`ClassicalMechanics.HohmannOptimality.Bielliptic.scaled_counterexample`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L170).
+**`ClassicalMechanics.HohmannOptimality.Bielliptic.scaled_counterexample`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean#L170).
 
 ```lean
 lemma scaled_counterexample {v : ℝ} (hv : 0 < v) :
@@ -239,4 +239,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean)
+- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean)

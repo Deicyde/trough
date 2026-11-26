@@ -1,26 +1,49 @@
 ---
 declaration: module
 origin: cited
-lean: SpaceTimeDerivAlgebraℂ.basis_apply_symmetricAlgebra, SpaceTimeDerivAlgebraℂ.basis_nil, SpaceTimeDerivAlgebraℂ.deriv, SpaceTimeDerivAlgebraℂ.deriv_basis, SpaceTimeDerivAlgebraℂ.deriv_comm_apply, SpaceTimeDerivAlgebraℂ.deriv_basis_multiset, SpaceTimeDerivAlgebraℂ.deriv_apply_eq_mul, MvPowerSeries.pderiv_comm
+lean: SpaceTimeDerivAlgebraℂ.basis_apply_symmetricAlgebra, SpaceTimeDerivAlgebraℂ.basis_nil, SpaceTimeDerivAlgebraℂ.deriv, SpaceTimeDerivAlgebraℂ.deriv_basis, SpaceTimeDerivAlgebraℂ.deriv_basis_multiset, SpaceTimeDerivAlgebraℂ.deriv_apply_eq_mul, SpaceTimeDerivAlgebraℂ.eval, SpaceTimeDerivAlgebraℂ.eval_basis
 statement: formalized
 proof: formalized
 ---
 
 # Derivative algebras
 
-The module `PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeDerivAlgebra`, [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean): 63 declarations (1 instance with no name), 48 with a docstring.
+The module `PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeDerivAlgebra`, [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean): 58 declarations (1 instance with no name), 54 with a docstring.
+
+> The algebras of derivative symbols `∂_s` in spacetime, their pairing with jets and their
+> Lorentz action.
 
 ## i. Overview
 
+> A Lagrangian density is built out of fields and their derivatives `∂_μ ∂_ν ⋯ φ`. The symbols
+> `∂_s`, one for each multiset `s` of spacetime directions, span the symmetric algebra
+> `SpaceTimeDerivAlgebraℂ` of the dual of complex covectors (defined in Physlib), and its real
+> form `SpaceTimeDerivAlgebraℝ`. This file gives them the structure that the gauge-theory field
+> algebras are built on.
+>
+> - The basis `basis s = ∂_s`, and the derivative operator `deriv μ`, which appends `μ` to `s`.
+> - The pairing `eval` of a symbol with a jet `f`, under which `∂_s` reads off the base-point
+>   value of `∂_s f` and `deriv μ` is the transpose of the formal partial derivative.
+> - The action `jetRingAction χ` of a jet `χ`, the transpose of multiplication by `χ`. It is the
+>   all-orders Leibniz rule, and is how a jet of gauge transformations acts on the derivatives of
+>   a matter field.
+> - The Lorentz action `repLorentzGroup`, through the dual covector representation.
+> - The derivative-degree scaling `gradeScale t`, multiplying `∂_s` by `t ^ |s|`, and its
+>   polynomial form `gradePoly`, which separates an element into its pieces of fixed degree.
+
 ## ii. Key results
 
-> - `SpaceTimeDerivAlgebraℂ` : the ℂ-algebra of derivative symbols in spacetime
-> - `basis` : the basis of the algebra of derivative symbols, indexed by multisets of spacetime
->   indices: the multiset `s` labels the monomial `∂_s`
-> - `basis_apply_symmetricAlgebra` : the basis vector at a multiset of derivative indices is the
->   monomial of the symmetric algebra of dual symbols
-> - `basis_nil` : the basis vector at the empty multiset is the unit of the algebra: the zeroth-order
->   symbol carries no derivatives
+> - `SpaceTimeDerivAlgebraℂ.basis_apply_symmetricAlgebra` : the basis vector at `s` is the
+>   monomial of the symmetric algebra of dual symbols.
+> - `SpaceTimeDerivAlgebraℂ.eval_basis_eq_constantCoeff_iteratedPDeriv` : the pairing of `∂_s`
+>   with a jet `f` is the base-point value of `∂_s f`.
+> - `SpaceTimeDerivAlgebraℂ.jetRingAction_basis_multiset` : the action of a jet on `∂_s` is the
+>   Leibniz convolution of its base-point derivatives.
+> - `SpaceTimeDerivAlgebraℂ.jetRingAction_mul` : the action of the jet ring is multiplicative.
+> - `SpaceTimeDerivAlgebraℂ.repLorentzGroup`, `SpaceTimeDerivAlgebraℝ.repLorentzGroup` : the
+>   Lorentz action on the derivative symbols.
+> - `SpaceTimeDerivAlgebraℂ.gradePoly_eval_one`, `SpaceTimeDerivAlgebraℝ.gradePoly_eval_one` :
+>   the pieces of fixed derivative degree add up to the element.
 
 ## iv. References
 
@@ -30,7 +53,7 @@ The module `PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeDerivAlgebra`, [Physlib
 
 ### A.1. The basis indexed by multisets
 
-**`SpaceTimeDerivAlgebraℂ.basis_apply_symmetricAlgebra`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L69).
+**`SpaceTimeDerivAlgebraℂ.basis_apply_symmetricAlgebra`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L92).
 
 > The basis vector at a multiset of derivative indices is the corresponding basis monomial
 > of the symmetric algebra of dual symbols. This is `basis_apply` of
@@ -43,9 +66,9 @@ lemma basis_apply_symmetricAlgebra (s : Multiset (Fin 1 ⊕ Fin 3)) :
       Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra (Multiset.toFinsupp s)
 ```
 
-**`SpaceTimeDerivAlgebraℂ.basis_nil`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L77).
+**`SpaceTimeDerivAlgebraℂ.basis_nil`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L100).
 
-> The basis vector at the empty multiset is the unit of the algebra: the
+> The basis vector at the empty multiset is the unit of the algebra. The
 > zeroth-order symbol carries no derivatives.
 
 ```lean
@@ -55,7 +78,7 @@ lemma basis_nil :
 
 ### A.2. The derivative operator
 
-**`SpaceTimeDerivAlgebraℂ.deriv`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L95).
+**`SpaceTimeDerivAlgebraℂ.deriv`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L118).
 
 > The derivative of an element in `SpaceTimeDerivAlgebraℂ` taking e.g.
 > `∂_s` to `∂_μ ∂_s`.
@@ -64,7 +87,9 @@ lemma basis_nil :
 noncomputable def deriv (μ : Fin 1 ⊕ Fin 3) : SpaceTimeDerivAlgebraℂ →ₗ[ℂ] SpaceTimeDerivAlgebraℂ
 ```
 
-**`SpaceTimeDerivAlgebraℂ.deriv_basis`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L99).
+**`SpaceTimeDerivAlgebraℂ.deriv_basis`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L123).
+
+> The derivative operator on a basis monomial of the symmetric algebra.
 
 ```lean
 lemma deriv_basis (μ : Fin 1 ⊕ Fin 3) (m : (Fin 1 ⊕ Fin 3) →₀ ℕ) :
@@ -72,16 +97,9 @@ lemma deriv_basis (μ : Fin 1 ⊕ Fin 3) (m : (Fin 1 ⊕ Fin 3) →₀ ℕ) :
       Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra (m + Finsupp.single μ 1)
 ```
 
-**`SpaceTimeDerivAlgebraℂ.deriv_comm_apply`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L104).
+**`SpaceTimeDerivAlgebraℂ.deriv_basis_multiset`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L130).
 
-```lean
-lemma deriv_comm_apply (μ ν : Fin 1 ⊕ Fin 3) (x : SpaceTimeDerivAlgebraℂ) :
-    deriv μ (deriv ν x) = deriv ν (deriv μ x)
-```
-
-**`SpaceTimeDerivAlgebraℂ.deriv_basis_multiset`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L114).
-
-> The derivative operator on the multiset basis: appending the derivative
+> The derivative operator on the multiset basis, appending the derivative
 > index to the multiset.
 
 ```lean
@@ -89,7 +107,7 @@ lemma deriv_basis_multiset (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3
     deriv μ (basis s) = basis (s + {μ})
 ```
 
-**`SpaceTimeDerivAlgebraℂ.deriv_apply_eq_mul`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L122).
+**`SpaceTimeDerivAlgebraℂ.deriv_apply_eq_mul`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L138).
 
 > The derivative operator is right multiplication by the first-order derivative
 > symbol.
@@ -101,21 +119,9 @@ lemma deriv_apply_eq_mul (μ : Fin 1 ⊕ Fin 3) (a : SpaceTimeDerivAlgebraℂ) :
 
 ### A.3. Evaluating on the Jet ring
 
-**`MvPowerSeries.pderiv_comm`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L138).
+**An instance with no name**, [line 154](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L154).
 
-> Formal partial derivatives of a multivariate power series commute: each is given on
-> coefficients by a shift and a multiplication, and the two shifts commute.
-
-```lean
-lemma _root_.MvPowerSeries.pderiv_comm {σ R : Type*} [CommSemiring R] (i j : σ)
-    (f : MvPowerSeries σ R) :
-    MvPowerSeries.pderiv i (MvPowerSeries.pderiv j f) =
-      MvPowerSeries.pderiv j (MvPowerSeries.pderiv i f)
-```
-
-**An instance with no name**, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L154).
-
-> Differentiating a jet along a multiset of directions is well defined: the partial
+> Differentiating a jet along a multiset of directions is well defined. The partial
 > derivatives commute, so the fold over a multiset does not depend on the order.
 
 ```lean
@@ -123,7 +129,7 @@ instance : RightCommutative
     (fun (f : SpaceTimeAlgebra) (μ : Fin 1 ⊕ Fin 3) => MvPowerSeries.pderiv μ f)
 ```
 
-**`SpaceTimeDerivAlgebraℂ.eval`**, a def, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L159).
+**`SpaceTimeDerivAlgebraℂ.eval`**, a def, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L159).
 
 > The evaluation map taking a function `f : SpaceTimeAlgebra` to `∂_μ f`.
 
@@ -131,7 +137,10 @@ instance : RightCommutative
 noncomputable def eval : SpaceTimeDerivAlgebraℂ →ₗ[ℂ] SpaceTimeAlgebra →ₗ[ℂ] ℂ
 ```
 
-**`SpaceTimeDerivAlgebraℂ.eval_basis`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L165).
+**`SpaceTimeDerivAlgebraℂ.eval_basis`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L167).
+
+> The pairing of a basis monomial with a jet is its Taylor coefficient times the
+> factorials of the multiplicities.
 
 ```lean
 lemma eval_basis (m : (Fin 1 ⊕ Fin 3) →₀ ℕ) (f : SpaceTimeAlgebra) :
@@ -139,7 +148,9 @@ lemma eval_basis (m : (Fin 1 ⊕ Fin 3) →₀ ℕ) (f : SpaceTimeAlgebra) :
       (∏ μ, (m μ)! : ℕ) • MvPowerSeries.coeff m f
 ```
 
-**`SpaceTimeDerivAlgebraℂ.eval_monomial`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L171).
+**`SpaceTimeDerivAlgebraℂ.eval_monomial`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L174).
+
+> The pairing of a symbol with a monomial jet reads off one coordinate of the symbol.
 
 ```lean
 lemma eval_monomial (p : SpaceTimeDerivAlgebraℂ) (m : (Fin 1 ⊕ Fin 3) →₀ ℕ) :
@@ -148,16 +159,18 @@ lemma eval_monomial (p : SpaceTimeDerivAlgebraℂ) (m : (Fin 1 ⊕ Fin 3) →₀
         Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra.repr p m
 ```
 
-**`SpaceTimeDerivAlgebraℂ.eval_injective`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L189).
+**`SpaceTimeDerivAlgebraℂ.eval_injective`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L193).
+
+> A derivative symbol is determined by its pairings with jets.
 
 ```lean
 lemma eval_injective {p q : SpaceTimeDerivAlgebraℂ}
     (h : ∀ f, eval p f = eval q f) : p = q
 ```
 
-**`SpaceTimeDerivAlgebraℂ.eval_deriv`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L201).
+**`SpaceTimeDerivAlgebraℂ.eval_deriv`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L205).
 
-> Adjointness: the shift of derivative symbols is the transpose of the formal
+> Adjointness. The shift of derivative symbols is the transpose of the formal
 > partial derivative under the divided-power pairing.
 
 ```lean
@@ -165,19 +178,19 @@ lemma eval_deriv (ν : Fin 1 ⊕ Fin 3) (p : SpaceTimeDerivAlgebraℂ) (f : Spac
     eval (deriv ν p) f = eval p (MvPowerSeries.pderiv ν f)
 ```
 
-**`SpaceTimeDerivAlgebraℂ.eval_one`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L226).
+**`SpaceTimeDerivAlgebraℂ.eval_one`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L230).
 
 > The pairing of the unit derivative symbol with a jet is its value at the base
-> point: the empty derivative multiset reads off the constant term.
+> point, the empty derivative multiset reads off the constant term.
 
 ```lean
 lemma eval_one (f : SpaceTimeAlgebra) :
     eval (1 : SpaceTimeDerivAlgebraℂ) f = MvPowerSeries.constantCoeff f
 ```
 
-**`SpaceTimeDerivAlgebraℂ.eval_basis_eq_constantCoeff_iteratedPDeriv`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L236).
+**`SpaceTimeDerivAlgebraℂ.eval_basis_eq_constantCoeff_iteratedPDeriv`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L240).
 
-> Iterating adjointness: the pairing of the basis monomial `∂_s` with a jet is the
+> Iterating adjointness. The pairing of the basis monomial `∂_s` with a jet is the
 > constant term of the iterated formal partial derivative `∂_s f`. This is the concrete
 > description of the divided-power pairing that `eval_deriv` encodes one derivative at a
 > time.
@@ -191,7 +204,7 @@ lemma eval_basis_eq_constantCoeff_iteratedPDeriv (s : Multiset (Fin 1 ⊕ Fin 3)
 
 ### A.4. The action of the Jet ring
 
-**`SpaceTimeDerivAlgebraℂ.jetRingAction`**, a def, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L259).
+**`SpaceTimeDerivAlgebraℂ.jetRingAction`**, a def, [line 263](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L263).
 
 > The action of `χ` on the derivatives, this takes `∂_μ ·` to `∂_μ (χ ·)`,
 > expanded out explicitly.
@@ -201,7 +214,9 @@ noncomputable def jetRingAction (χ : SpaceTimeAlgebra) :
     SpaceTimeDerivAlgebraℂ →ₗ[ℂ] SpaceTimeDerivAlgebraℂ
 ```
 
-**`SpaceTimeDerivAlgebraℂ.jetRingAction_basis`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L266).
+**`SpaceTimeDerivAlgebraℂ.jetRingAction_basis`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L271).
+
+> The action of a jet on a basis monomial of the symmetric algebra.
 
 ```lean
 lemma jetRingAction_basis (χ : SpaceTimeAlgebra) (m : (Fin 1 ⊕ Fin 3) →₀ ℕ) :
@@ -211,22 +226,24 @@ lemma jetRingAction_basis (χ : SpaceTimeAlgebra) (m : (Fin 1 ⊕ Fin 3) →₀ 
           Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra p.2
 ```
 
-**`SpaceTimeDerivAlgebraℂ.eval_jetRingAction`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L273).
+**`SpaceTimeDerivAlgebraℂ.eval_jetRingAction`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L279).
+
+> The action of a jet is the transpose of multiplication by it.
 
 ```lean
 lemma eval_jetRingAction (χ f : SpaceTimeAlgebra) (p : SpaceTimeDerivAlgebraℂ) :
     eval (jetRingAction χ p) f = eval p (χ * f)
 ```
 
-**`SpaceTimeDerivAlgebraℂ.jetRingAction_basis_multiset`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L310).
+**`SpaceTimeDerivAlgebraℂ.jetRingAction_basis_multiset`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L316).
 
-> The action of a jet on a derivative monomial, in multiset form: `∂_s` is sent to the
+> The action of a jet on a derivative monomial, in multiset form. `∂_s` is sent to the
 > all-orders Leibniz convolution, each splitting `s = s₁ + s₂` of the derivative multiset
 > contributing the base-point Taylor coefficient `(∂_{s₁} χ)(0)` against the lower monomial
 > `∂_{s₂}`.
 >
 > This is `jetRingAction_basis` with the `Nat.choose` bookkeeping traded for the
-> divided-power pairing: both sides are compared through `eval`, where the identity is the
+> divided-power pairing. Both sides are compared through `eval`, where the identity is the
 > Leibniz rule `SpaceTimeAlgebra.constantCoeff_iteratedPDeriv_mul` at the base point. It is the form
 > in which the transformation law of a matter field is stated.
 
@@ -238,9 +255,9 @@ lemma jetRingAction_basis_multiset (χ : SpaceTimeAlgebra) (s : Multiset (Fin 1 
             (SpaceTimeAlgebra.iteratedPDeriv p.1 χ) • basis p.2).sum
 ```
 
-**`SpaceTimeDerivAlgebraℂ.jetRingAction_C`**, a lemma, [line 332](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L332).
+**`SpaceTimeDerivAlgebraℂ.jetRingAction_C`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L338).
 
-> Constant jets act on the derivative symbols by their value: `C c` has no
+> Constant jets act on the derivative symbols by their value. `C c` has no
 > derivative coordinates.
 
 ```lean
@@ -248,15 +265,17 @@ lemma jetRingAction_C (c : ℂ) :
     jetRingAction (MvPowerSeries.C c) = c • LinearMap.id
 ```
 
-**`SpaceTimeDerivAlgebraℂ.jetRingAction_one`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L341).
+**`SpaceTimeDerivAlgebraℂ.jetRingAction_one`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L348).
+
+> The unit jet acts trivially.
 
 ```lean
 lemma jetRingAction_one : jetRingAction (1 : SpaceTimeAlgebra) = LinearMap.id
 ```
 
-**`SpaceTimeDerivAlgebraℂ.jetRingAction_mul`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L348).
+**`SpaceTimeDerivAlgebraℂ.jetRingAction_mul`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L355).
 
-> The derivative action is multiplicative: it is the transpose of multiplication
+> The derivative action is multiplicative. It is the transpose of multiplication
 > in the commutative jet ring. This makes `χ ↦ χ(∂)` a monoid homomorphism and
 > hence yields representations of the jet gauge group on polynomial jet spaces.
 
@@ -265,41 +284,26 @@ lemma jetRingAction_mul (χ ψ : SpaceTimeAlgebra) :
     jetRingAction (χ * ψ) = jetRingAction χ ∘ₗ jetRingAction ψ
 ```
 
-**`SpaceTimeDerivAlgebraℂ.jetRingAction_zero`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L357).
+**`SpaceTimeDerivAlgebraℂ.jetRingAction_zero`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L364).
+
+> The zero jet acts as zero.
 
 ```lean
 lemma jetRingAction_zero : jetRingAction (0 : SpaceTimeAlgebra) = 0
 ```
 
-**`SpaceTimeDerivAlgebraℂ.jetRingAction_add`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L363).
+**`SpaceTimeDerivAlgebraℂ.jetRingAction_add`**, a lemma, [line 371](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L371).
+
+> The action of the jet ring is additive.
 
 ```lean
 lemma jetRingAction_add (χ ψ : SpaceTimeAlgebra) :
     jetRingAction (χ + ψ) = jetRingAction χ + jetRingAction ψ
 ```
 
-**`SpaceTimeDerivAlgebraℂ.jetRingActionHom`**, a def, [line 372](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L372).
+**`SpaceTimeDerivAlgebraℂ.jetRingAction_apply_one`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L380).
 
-> The derivative action as a ring homomorphism from the jet ring to the
-> endomorphisms of the algebra of derivative symbols: the module structure of the
-> jet ring on its graded dual.
-
-```lean
-noncomputable def jetRingActionHom : SpaceTimeAlgebra →+* Module.End ℂ SpaceTimeDerivAlgebraℂ
-```
-
-**`SpaceTimeDerivAlgebraℂ.jetRingAction_comm`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L380).
-
-> The actions of two jets commute: the jet ring is commutative.
-
-```lean
-lemma jetRingAction_comm (χ ψ : SpaceTimeAlgebra) (a : SpaceTimeDerivAlgebraℂ) :
-    jetRingAction χ (jetRingAction ψ a) = jetRingAction ψ (jetRingAction χ a)
-```
-
-**`SpaceTimeDerivAlgebraℂ.jetRingAction_apply_one`**, a lemma, [line 388](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L388).
-
-> The derivative action on the zeroth-order (field) symbol: it is scaled by the
+> The derivative action on the zeroth-order (field) symbol. It is scaled by the
 > value of the jet at the base point.
 
 ```lean
@@ -308,26 +312,9 @@ lemma jetRingAction_apply_one (χ : SpaceTimeAlgebra) :
       MvPowerSeries.constantCoeff χ • 1
 ```
 
-**`SpaceTimeDerivAlgebraℂ.jetRingAction_apply_ι`**, a lemma, [line 405](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L405).
+**`SpaceTimeDerivAlgebraℂ.jetRingAction_deriv`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L397).
 
-> The derivative action on a first-order derivative symbol implements the Leibniz
-> rule: `∂_μ ↦ χ(0) ∂_μ + (∂_μχ)(0) 1`. The value of the jet multiplies the
-> first-derivative symbol, and its first derivative feeds the zeroth-order
-> symbol.
-
-```lean
-lemma jetRingAction_apply_ι (χ : SpaceTimeAlgebra) (μ : Fin 1 ⊕ Fin 3) :
-    jetRingAction χ (SymmetricAlgebra.ι ℂ (Module.Dual ℂ Lorentz.ComplexCoVector)
-        (Lorentz.ComplexCoVector.basis.dualBasis μ)) =
-      MvPowerSeries.constantCoeff χ •
-        SymmetricAlgebra.ι ℂ (Module.Dual ℂ Lorentz.ComplexCoVector)
-          (Lorentz.ComplexCoVector.basis.dualBasis μ) +
-        MvPowerSeries.coeff (Finsupp.single μ 1) χ • 1
-```
-
-**`SpaceTimeDerivAlgebraℂ.jetRingAction_deriv`**, a lemma, [line 445](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L445).
-
-> The commutation of the jet-ring action with the derivative operator: acting by
+> The commutation of the jet-ring action with the derivative operator. Acting by
 > `χ` after differentiating equals differentiating after acting, plus the action
 > of the derivative `∂_ν χ`. This is the operator form of the Leibniz rule
 > `∂_ν (χ f) = χ ∂_ν f + (∂_ν χ) f` under the divided-power pairing.
@@ -340,7 +327,7 @@ lemma jetRingAction_deriv (χ : SpaceTimeAlgebra) (ν : Fin 1 ⊕ Fin 3) (a : Sp
 
 ### A.5. The action of the Lorentz group
 
-**`SpaceTimeDerivAlgebraℂ.repLorentzGroup`**, a def, [line 463](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L463).
+**`SpaceTimeDerivAlgebraℂ.repLorentzGroup`**, a def, [line 415](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L415).
 
 > The representation of the Lorentz group `SL(2,ℂ)` on the algebra of derivative
 > symbols, extending the dual covector representation multiplicatively.
@@ -349,20 +336,22 @@ lemma jetRingAction_deriv (χ : SpaceTimeAlgebra) (ν : Fin 1 ⊕ Fin 3) (a : Sp
 noncomputable def repLorentzGroup : Representation ℂ SL(2,ℂ) SpaceTimeDerivAlgebraℂ
 ```
 
-**`SpaceTimeDerivAlgebraℂ.repLorentzGroup_apply_one`**, a lemma, [line 486](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L486).
+**`SpaceTimeDerivAlgebraℂ.repLorentzGroup_apply_one`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L438).
 
 ```lean
 lemma repLorentzGroup_apply_one (Λ : SL(2,ℂ)) : repLorentzGroup Λ 1 = 1
 ```
 
-**`SpaceTimeDerivAlgebraℂ.repLorentzGroup_apply_mul`**, a lemma, [line 489](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L489).
+**`SpaceTimeDerivAlgebraℂ.repLorentzGroup_apply_mul`**, a lemma, [line 442](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L442).
+
+> The Lorentz action on the derivative symbols is multiplicative.
 
 ```lean
 lemma repLorentzGroup_apply_mul (Λ : SL(2,ℂ)) (a b : SpaceTimeDerivAlgebraℂ) :
     repLorentzGroup Λ (a * b) = repLorentzGroup Λ a * repLorentzGroup Λ b
 ```
 
-**`SpaceTimeDerivAlgebraℂ.repLorentzGroup_apply_ι`**, a lemma, [line 495](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L495).
+**`SpaceTimeDerivAlgebraℂ.repLorentzGroup_apply_ι`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L448).
 
 > The Lorentz action on a generator.
 
@@ -373,9 +362,9 @@ lemma repLorentzGroup_apply_ι (Λ : SL(2,ℂ)) (x : Module.Dual ℂ Lorentz.Com
         (Lorentz.ComplexCoVector.SL2CRep.dual Λ x)
 ```
 
-**`SpaceTimeDerivAlgebraℂ.repLorentzGroup_deriv`**, a lemma, [line 504](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L504).
+**`SpaceTimeDerivAlgebraℂ.repLorentzGroup_deriv`**, a lemma, [line 457](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L457).
 
-> The Lorentz action on a derivative: the derivative symbol transforms as a
+> The Lorentz action on a derivative. The derivative symbol transforms as a
 > covector, mixing the spacetime directions by the components of `Λ` in the dual
 > covector representation.
 
@@ -386,9 +375,9 @@ lemma repLorentzGroup_deriv (Λ : SL(2,ℂ)) (μ : Fin 1 ⊕ Fin 3) (a : SpaceTi
         (Lorentz.ComplexCoVector.basis ν) • deriv ν (repLorentzGroup Λ a)
 ```
 
-**`SpaceTimeDerivAlgebraℂ.repLorentzGroup_basis_singleton`**, a lemma, [line 524](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L524).
+**`SpaceTimeDerivAlgebraℂ.repLorentzGroup_basis_singleton`**, a lemma, [line 477](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L477).
 
-> The Lorentz action on the singleton derivative monomial: the derivative
+> The Lorentz action on the singleton derivative monomial. The derivative
 > slot transforms by the columns of the Lorentz matrix.
 
 ```lean
@@ -398,9 +387,9 @@ lemma repLorentzGroup_basis_singleton (Λ : SL(2,ℂ)) (μ : Fin 1 ⊕ Fin 3) :
         basis ({ν} : Multiset (Fin 1 ⊕ Fin 3))
 ```
 
-**`SpaceTimeDerivAlgebraℂ.repLorentzGroup_basis_ofFn`**, a lemma, [line 535](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L535).
+**`SpaceTimeDerivAlgebraℂ.repLorentzGroup_basis_ofFn`**, a lemma, [line 488](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L488).
 
-> The Lorentz action on the derivative monomial of an ordered tuple of directions: every
+> The Lorentz action on the derivative monomial of an ordered tuple of directions. Every
 > slot mixes by the columns of the Lorentz matrix, one factor per slot.
 
 ```lean
@@ -412,9 +401,9 @@ lemma repLorentzGroup_basis_ofFn (Λ : SL(2,ℂ)) {n : ℕ} (l : Fin n → (Fin 
 
 ### A.6. The derivative-degree scaling
 
-**`SpaceTimeDerivAlgebraℂ.gradeScale`**, a def, [line 567](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L567).
+**`SpaceTimeDerivAlgebraℂ.gradeScale`**, a def, [line 520](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L520).
 
-> The derivative-degree scaling on the algebra of derivative symbols: the
+> The derivative-degree scaling on the algebra of derivative symbols, the
 > algebra map multiplying each generator by `t`, hence each degree-`n` monomial
 > by `t ^ n`.
 
@@ -422,7 +411,7 @@ lemma repLorentzGroup_basis_ofFn (Λ : SL(2,ℂ)) {n : ℕ} (l : Fin n → (Fin 
 noncomputable def gradeScale (t : ℂ) : SpaceTimeDerivAlgebraℂ →ₐ[ℂ] SpaceTimeDerivAlgebraℂ
 ```
 
-**`SpaceTimeDerivAlgebraℂ.gradeScale_ι`**, a lemma, [line 571](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L571).
+**`SpaceTimeDerivAlgebraℂ.gradeScale_ι`**, a lemma, [line 524](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L524).
 
 ```lean
 lemma gradeScale_ι (t : ℂ) (x : Module.Dual ℂ Lorentz.ComplexCoVector) :
@@ -430,7 +419,7 @@ lemma gradeScale_ι (t : ℂ) (x : Module.Dual ℂ Lorentz.ComplexCoVector) :
       t • SymmetricAlgebra.ι ℂ (Module.Dual ℂ Lorentz.ComplexCoVector) x
 ```
 
-**`SpaceTimeDerivAlgebraℂ.gradeScale_basis`**, a lemma, [line 578](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L578).
+**`SpaceTimeDerivAlgebraℂ.gradeScale_basis`**, a lemma, [line 531](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L531).
 
 > The degree scaling multiplies the basis monomial at `s` by `t ^ |s|`.
 
@@ -439,9 +428,9 @@ lemma gradeScale_basis (t : ℂ) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     gradeScale t (basis s) = t ^ s.card • basis s
 ```
 
-**`SpaceTimeDerivAlgebraℂ.gradeScale_repLorentzGroup`**, a lemma, [line 591](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L591).
+**`SpaceTimeDerivAlgebraℂ.gradeScale_repLorentzGroup`**, a lemma, [line 544](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L544).
 
-> The degree scaling commutes with the Lorentz action: the Lorentz action
+> The degree scaling commutes with the Lorentz action, since the Lorentz action
 > preserves the derivative degree.
 
 ```lean
@@ -456,9 +445,9 @@ lemma gradeScale_repLorentzGroup (t : ℂ) (Λ : SL(2,ℂ)) (a : SpaceTimeDerivA
 > `gradePoly` is the linear map sending the basis monomial `∂_s` to `X ^ |s| ∂_s`, so the
 > coefficient of `X ^ n` in `gradePoly a` is the part of `a` of derivative degree `n`.
 
-**`SpaceTimeDerivAlgebraℂ.gradePoly`**, a def, [line 616](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L616).
+**`SpaceTimeDerivAlgebraℂ.gradePoly`**, a def, [line 569](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L569).
 
-> The derivative-degree polynomial on the algebra of derivative symbols: the linear map
+> The derivative-degree polynomial on the algebra of derivative symbols, the linear map
 > sending the basis monomial `∂_s` to `X ^ |s|` times itself. It is `gradeScale` with the
 > scalar replaced by the formal variable `X`.
 
@@ -466,7 +455,7 @@ lemma gradeScale_repLorentzGroup (t : ℂ) (Λ : SL(2,ℂ)) (a : SpaceTimeDerivA
 noncomputable def gradePoly : SpaceTimeDerivAlgebraℂ →ₗ[ℂ] Polynomial SpaceTimeDerivAlgebraℂ
 ```
 
-**`SpaceTimeDerivAlgebraℂ.gradePoly_basis`**, a lemma, [line 621](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L621).
+**`SpaceTimeDerivAlgebraℂ.gradePoly_basis`**, a lemma, [line 574](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L574).
 
 > The derivative-degree polynomial of a basis monomial is the monomial of degree `|s|`.
 
@@ -475,19 +464,19 @@ lemma gradePoly_basis (s : Multiset (Fin 1 ⊕ Fin 3)) :
     gradePoly (basis s) = Polynomial.monomial (Multiset.card s) (basis s)
 ```
 
-**`SpaceTimeDerivAlgebraℂ.eval_algebraMap_gradePoly`**, a lemma, [line 627](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L627).
+**`SpaceTimeDerivAlgebraℂ.eval_algebraMap_gradePoly`**, a lemma, [line 580](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L580).
 
 > Evaluating the derivative-degree polynomial at a scalar is the derivative-degree
-> scaling by that scalar: the two descriptions of the grading agree.
+> scaling by that scalar, so the two descriptions of the grading agree.
 
 ```lean
 lemma eval_algebraMap_gradePoly (t : ℂ) (a : SpaceTimeDerivAlgebraℂ) :
     (gradePoly a).eval (algebraMap ℂ SpaceTimeDerivAlgebraℂ t) = gradeScale t a
 ```
 
-**`SpaceTimeDerivAlgebraℂ.gradePoly_eval_one`**, a lemma, [line 643](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L643).
+**`SpaceTimeDerivAlgebraℂ.gradePoly_eval_one`**, a lemma, [line 596](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L596).
 
-> Setting the formal variable to one recovers the original element: the pieces of a
+> Setting the formal variable to one recovers the original element, as the pieces of a
 > graded decomposition sum to the element.
 
 ```lean
@@ -496,7 +485,7 @@ lemma gradePoly_eval_one (a : SpaceTimeDerivAlgebraℂ) : (gradePoly a).eval 1 =
 
 ## B. The real derivative algebra
 
-**`SpaceTimeDerivAlgebraℝ`**, an abbrev, [line 660](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L660).
+**`SpaceTimeDerivAlgebraℝ`**, an abbrev, [line 613](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L613).
 
 > The ℝ-algebra of derivative symbols in spacetime.
 
@@ -504,7 +493,7 @@ lemma gradePoly_eval_one (a : SpaceTimeDerivAlgebraℂ) : (gradePoly a).eval 1 =
 abbrev SpaceTimeDerivAlgebraℝ
 ```
 
-**`SpaceTimeDerivAlgebraℝ.repLorentzGroup`**, a def, [line 667](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L667).
+**`SpaceTimeDerivAlgebraℝ.repLorentzGroup`**, a def, [line 620](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L620).
 
 > The representation of the Lorentz group `SL(2,ℂ)` on the algebra of derivative
 > symbols, extending the dual covector representation multiplicatively.
@@ -513,7 +502,7 @@ abbrev SpaceTimeDerivAlgebraℝ
 noncomputable def repLorentzGroup : Representation ℝ SL(2,ℂ) SpaceTimeDerivAlgebraℝ
 ```
 
-**`SpaceTimeDerivAlgebraℝ.repLorentzGroup_apply_ι`**, a lemma, [line 691](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L691).
+**`SpaceTimeDerivAlgebraℝ.repLorentzGroup_apply_ι`**, a lemma, [line 644](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L644).
 
 > The Lorentz action on a generator of the real derivative algebra.
 
@@ -524,9 +513,9 @@ lemma repLorentzGroup_apply_ι (Λ : SL(2,ℂ)) (x : Module.Dual ℝ Lorentz.CoV
         (Lorentz.CoVector.sl2Rep.dual Λ x)
 ```
 
-**`SpaceTimeDerivAlgebraℝ.repLorentzGroup_apply_mul`**, a lemma, [line 699](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L699).
+**`SpaceTimeDerivAlgebraℝ.repLorentzGroup_apply_mul`**, a lemma, [line 652](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L652).
 
-> The real derivative-algebra representation is multiplicative: it is the lift of a linear
+> The real derivative-algebra representation is multiplicative. It is the lift of a linear
 > map to the symmetric algebra.
 
 ```lean
@@ -536,23 +525,23 @@ lemma repLorentzGroup_apply_mul (Λ : SL(2,ℂ))
       SpaceTimeDerivAlgebraℝ.repLorentzGroup Λ a * SpaceTimeDerivAlgebraℝ.repLorentzGroup Λ b
 ```
 
-**`SpaceTimeDerivAlgebraℝ.repLorentzGroup_apply_one`**, a lemma, [line 706](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L706).
+**`SpaceTimeDerivAlgebraℝ.repLorentzGroup_apply_one`**, a lemma, [line 659](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L659).
 
 ```lean
 lemma repLorentzGroup_apply_one (Λ : SL(2,ℂ)) :
     SpaceTimeDerivAlgebraℝ.repLorentzGroup Λ 1 = 1
 ```
 
-**`SpaceTimeDerivAlgebraℝ.gradeScale`**, a def, [line 712](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L712).
+**`SpaceTimeDerivAlgebraℝ.gradeScale`**, a def, [line 665](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L665).
 
-> The derivative-degree scaling on the real algebra of derivative symbols:
+> The derivative-degree scaling on the real algebra of derivative symbols,
 > the algebra map multiplying each generator by `t`.
 
 ```lean
 noncomputable def gradeScale (t : ℝ) : SpaceTimeDerivAlgebraℝ →ₐ[ℝ] SpaceTimeDerivAlgebraℝ
 ```
 
-**`SpaceTimeDerivAlgebraℝ.gradeScale_ι`**, a lemma, [line 716](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L716).
+**`SpaceTimeDerivAlgebraℝ.gradeScale_ι`**, a lemma, [line 669](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L669).
 
 ```lean
 lemma gradeScale_ι (t : ℝ) (x : Module.Dual ℝ Lorentz.CoVector) :
@@ -560,7 +549,7 @@ lemma gradeScale_ι (t : ℝ) (x : Module.Dual ℝ Lorentz.CoVector) :
       t • SymmetricAlgebra.ι ℝ (Module.Dual ℝ Lorentz.CoVector) x
 ```
 
-**`SpaceTimeDerivAlgebraℝ.gradeScale_repLorentzGroup`**, a lemma, [line 724](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L724).
+**`SpaceTimeDerivAlgebraℝ.gradeScale_repLorentzGroup`**, a lemma, [line 677](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L677).
 
 > The degree scaling commutes with the Lorentz action on the real derivative
 > symbols.
@@ -572,7 +561,7 @@ lemma gradeScale_repLorentzGroup (t : ℝ) (Λ : SL(2,ℂ)) (a : SpaceTimeDerivA
 
 ## C. The multiset basis of `SpaceTimeDerivAlgebraℝ`
 
-**`SpaceTimeDerivAlgebraℝ.basisMultiset`**, a def, [line 745](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L745).
+**`SpaceTimeDerivAlgebraℝ.basisMultiset`**, a def, [line 698](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L698).
 
 > The basis of the symmetric algebra of dual real jet slots, indexed by multisets of
 > spacetime indices.
@@ -582,7 +571,7 @@ noncomputable def basisMultiset :
     Basis (Multiset (Fin 1 ⊕ Fin 3)) ℝ (SymmetricAlgebra ℝ (Module.Dual ℝ Lorentz.CoVector))
 ```
 
-**`SpaceTimeDerivAlgebraℝ.basisMultiset_apply`**, a lemma, [line 751](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L751).
+**`SpaceTimeDerivAlgebraℝ.basisMultiset_apply`**, a lemma, [line 704](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L704).
 
 > The multiset basis of the dual derivative symbols, as a basis vector of the
 > symmetric algebra at the corresponding multi-index.
@@ -593,7 +582,7 @@ lemma basisMultiset_apply (s : Multiset (Fin 1 ⊕ Fin 3)) :
       Lorentz.CoVector.basis.dualBasis.symmetricAlgebra (Multiset.toFinsupp s)
 ```
 
-**`SpaceTimeDerivAlgebraℝ.basisMultiset_mul`**, a lemma, [line 759](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L759).
+**`SpaceTimeDerivAlgebraℝ.basisMultiset_mul`**, a lemma, [line 712](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L712).
 
 > The multiset basis vectors of the real dual derivative slots multiply by adding the
 > multisets.
@@ -604,7 +593,7 @@ lemma basisMultiset_mul (s t : Multiset (Fin 1 ⊕ Fin 3)) :
       basisMultiset (s + t)
 ```
 
-**`SpaceTimeDerivAlgebraℝ.basisMultiset_nil`**, a lemma, [line 774](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L774).
+**`SpaceTimeDerivAlgebraℝ.basisMultiset_nil`**, a lemma, [line 727](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L727).
 
 > The multiset basis of the real dual derivative slots at the empty multiset is the
 > unit.
@@ -614,7 +603,7 @@ lemma basisMultiset_nil :
     basisMultiset (0 : Multiset (Fin 1 ⊕ Fin 3)) = 1
 ```
 
-**`SpaceTimeDerivAlgebraℝ.basisMultiset_singleton`**, a lemma, [line 792](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L792).
+**`SpaceTimeDerivAlgebraℝ.basisMultiset_singleton`**, a lemma, [line 745](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L745).
 
 > The multiset basis of the real dual derivative slots at a singleton index.
 
@@ -627,7 +616,7 @@ lemma basisMultiset_singleton (μ : Fin 1 ⊕ Fin 3) :
 
 ## D. The derivative-degree polynomial on the real derivative algebra
 
-**`SpaceTimeDerivAlgebraℝ.gradeScale_basisMultiset`**, a lemma, [line 811](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L811).
+**`SpaceTimeDerivAlgebraℝ.gradeScale_basisMultiset`**, a lemma, [line 764](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L764).
 
 > The degree scaling multiplies the real basis monomial at `s` by `t ^ |s|`.
 
@@ -636,16 +625,16 @@ lemma gradeScale_basisMultiset (t : ℝ) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     gradeScale t (basisMultiset s) = t ^ Multiset.card s • basisMultiset s
 ```
 
-**`SpaceTimeDerivAlgebraℝ.gradePoly`**, a def, [line 824](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L824).
+**`SpaceTimeDerivAlgebraℝ.gradePoly`**, a def, [line 777](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L777).
 
-> The derivative-degree polynomial on the real algebra of derivative symbols: the linear
+> The derivative-degree polynomial on the real algebra of derivative symbols, the linear
 > map sending the basis monomial `∂_s` to `X ^ |s|` times itself.
 
 ```lean
 noncomputable def gradePoly : SpaceTimeDerivAlgebraℝ →ₗ[ℝ] Polynomial SpaceTimeDerivAlgebraℝ
 ```
 
-**`SpaceTimeDerivAlgebraℝ.gradePoly_basisMultiset`**, a lemma, [line 830](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L830).
+**`SpaceTimeDerivAlgebraℝ.gradePoly_basisMultiset`**, a lemma, [line 783](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L783).
 
 > The derivative-degree polynomial of a real basis monomial is the monomial of degree
 > `|s|`.
@@ -656,7 +645,7 @@ lemma gradePoly_basisMultiset (s : Multiset (Fin 1 ⊕ Fin 3)) :
       Polynomial.monomial (Multiset.card s) (basisMultiset s)
 ```
 
-**`SpaceTimeDerivAlgebraℝ.eval_algebraMap_gradePoly`**, a lemma, [line 837](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L837).
+**`SpaceTimeDerivAlgebraℝ.eval_algebraMap_gradePoly`**, a lemma, [line 790](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L790).
 
 > Evaluating the real derivative-degree polynomial at a scalar is the derivative-degree
 > scaling by that scalar.
@@ -666,7 +655,7 @@ lemma eval_algebraMap_gradePoly (t : ℝ) (a : SpaceTimeDerivAlgebraℝ) :
     (gradePoly a).eval (algebraMap ℝ SpaceTimeDerivAlgebraℝ t) = gradeScale t a
 ```
 
-**`SpaceTimeDerivAlgebraℝ.gradePoly_eval_one`**, a lemma, [line 853](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L853).
+**`SpaceTimeDerivAlgebraℝ.gradePoly_eval_one`**, a lemma, [line 806](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean#L806).
 
 > Setting the formal variable to one recovers the original element of the real
 > derivative algebra.
@@ -678,6 +667,7 @@ lemma gradePoly_eval_one (a : SpaceTimeDerivAlgebraℝ) : (gradePoly a).eval 1 =
 ## Depends on
 
 - [The spacetime derivative algebra](../../../physlib/spaceandtime/spacetime/spacetimederivalgebra-basic.md)
+- [Functoriality of the symmetric algebra](../../mathematics/part-01/symmetricalgebra.md)
 - [The representation of `SL(2, ℂ)` on real Lorentz covectors](../../relativity/tensors/realtensor-covector-representation.md)
 
 ## Proof depends on
@@ -687,4 +677,4 @@ lemma gradePoly_eval_one (a : SpaceTimeDerivAlgebraℝ) : (gradePoly a).eval 1 =
 
 ## Sources
 
-- [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean)
+- [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean)

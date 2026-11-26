@@ -8,7 +8,7 @@ proof: formalized
 
 # Angular momentum of a rigid body
 
-The module `Physlib.ClassicalMechanics.RigidBody.AngularMomentum`, [Physlib/ClassicalMechanics/RigidBody/AngularMomentum.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/AngularMomentum.lean): 2 declarations, 2 with a docstring, 1 listed as significant.
+The module `Physlib.ClassicalMechanics.RigidBody.AngularMomentum`, [Physlib/ClassicalMechanics/RigidBody/AngularMomentum.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/RigidBody/AngularMomentum.lean): 2 declarations, 2 with a docstring, 1 listed as significant.
 
 > For a rigid body rotating with angular velocity `ω` about its reference point, each body point at
 > position `r` moves with velocity `ω × r`, so the body's angular momentum about that point is
@@ -20,7 +20,7 @@ The module `Physlib.ClassicalMechanics.RigidBody.AngularMomentum`, [Physlib/Clas
 
 > * Landau and Lifshitz, Mechanics, Section 32. [ref: landau\_mechanics]
 
-**`RigidBody.angularMomentum`**, a def, [line 34](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/AngularMomentum.lean#L34).
+**`RigidBody.angularMomentum`**, a def, [line 34](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/RigidBody/AngularMomentum.lean#L34).
 
 > The angular momentum `L = ∫ r × (ω × r) dm` of a rigid body rotating with angular velocity `ω`
 > about its reference point (each body point at `r` moving with velocity `ω × r`). Its `i`-th
@@ -30,7 +30,7 @@ The module `Physlib.ClassicalMechanics.RigidBody.AngularMomentum`, [Physlib/Clas
 noncomputable def angularMomentum (R : RigidBody 3) (ω : Fin 3 → ℝ) : Fin 3 → ℝ
 ```
 
-**`RigidBody.angularMomentum_eq_inertiaTensor_mulVec`**, a theorem, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/AngularMomentum.lean#L44). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`RigidBody.angularMomentum_eq_inertiaTensor_mulVec`**, a theorem, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/RigidBody/AngularMomentum.lean#L44). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The angular momentum of a rigid body equals its inertia tensor applied to the angular velocity:
 > `L = I ω`.
@@ -50,4 +50,4 @@ theorem angularMomentum_eq_inertiaTensor_mulVec (R : RigidBody 3) (ω : Fin 3 �
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/RigidBody/AngularMomentum.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/RigidBody/AngularMomentum.lean)
+- [Physlib/ClassicalMechanics/RigidBody/AngularMomentum.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/RigidBody/AngularMomentum.lean)

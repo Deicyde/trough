@@ -8,7 +8,7 @@ proof: formalized
 
 # Reversible transformations of observables
 
-The module `Physlib.ProbabilisticTheory.Channel.Reversible`, [Physlib/ProbabilisticTheory/Channel/Reversible.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean): 20 declarations (1 instance with no name), 9 with a docstring.
+The module `Physlib.ProbabilisticTheory.Channel.Reversible`, [Physlib/ProbabilisticTheory/Channel/Reversible.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean): 20 declarations (1 instance with no name), 9 with a docstring.
 
 > Reversible transformations of observables, their group structure and transport of group actions.
 
@@ -36,7 +36,7 @@ The module `Physlib.ProbabilisticTheory.Channel.Reversible`, [Physlib/Probabilis
 
 ### A.1. Definition
 
-**`ProbabilisticTheory.Reversible`**, a structure, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L58).
+**`ProbabilisticTheory.Reversible`**, a structure, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L58).
 
 > A reversible transformation between observable spaces: a linear bijection that preserves and
 > reflects the order and preserves the order unit. Both it and its inverse are channels.
@@ -50,13 +50,13 @@ structure ProbabilisticTheory.Reversible (P Q : ProbabilisticTheory)
   map_one' : toLinearEquiv 1 = 1
 ```
 
-**An instance with no name**, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L69).
+**An instance with no name**, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L69).
 
 ```lean
 instance : FunLike (Reversible P Q) P.Observables Q.Observables
 ```
 
-**`ProbabilisticTheory.Reversible.ext`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L78).
+**`ProbabilisticTheory.Reversible.ext`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L78).
 
 ```lean
 lemma ext {e f : Reversible P Q} (h : ∀ x, e x = f x) : e = f
@@ -64,7 +64,7 @@ lemma ext {e f : Reversible P Q} (h : ∀ x, e x = f x) : e = f
 
 ### A.2. Group structure
 
-**`ProbabilisticTheory.Reversible.refl`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L83).
+**`ProbabilisticTheory.Reversible.refl`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L83).
 
 > The identity reversible transformation.
 
@@ -72,7 +72,7 @@ lemma ext {e f : Reversible P Q} (h : ∀ x, e x = f x) : e = f
 def refl (P : ProbabilisticTheory) : Reversible P P
 ```
 
-**`ProbabilisticTheory.Reversible.symm`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L89).
+**`ProbabilisticTheory.Reversible.symm`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L89).
 
 > The inverse of a reversible transformation.
 
@@ -80,7 +80,7 @@ def refl (P : ProbabilisticTheory) : Reversible P P
 def symm (e : Reversible P Q) : Reversible Q P
 ```
 
-**`ProbabilisticTheory.Reversible.trans`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L96).
+**`ProbabilisticTheory.Reversible.trans`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L96).
 
 > Composition of reversible transformations, applying `e₁` before `e₂`.
 
@@ -88,32 +88,32 @@ def symm (e : Reversible P Q) : Reversible Q P
 def trans (e₁ : Reversible P Q) (e₂ : Reversible Q R) : Reversible P R
 ```
 
-**`ProbabilisticTheory.Reversible.refl_apply`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L104).
+**`ProbabilisticTheory.Reversible.refl_apply`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L104).
 
 ```lean
 lemma refl_apply (x : P.Observables) : refl P x = x
 ```
 
-**`ProbabilisticTheory.Reversible.symm_apply_apply`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L106).
+**`ProbabilisticTheory.Reversible.symm_apply_apply`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L106).
 
 ```lean
 lemma symm_apply_apply (e : Reversible P Q) (x : P.Observables) : e.symm (e x) = x
 ```
 
-**`ProbabilisticTheory.Reversible.apply_symm_apply`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L109).
+**`ProbabilisticTheory.Reversible.apply_symm_apply`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L109).
 
 ```lean
 lemma apply_symm_apply (e : Reversible P Q) (y : Q.Observables) : e (e.symm y) = y
 ```
 
-**`ProbabilisticTheory.Reversible.trans_apply`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L112).
+**`ProbabilisticTheory.Reversible.trans_apply`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L112).
 
 ```lean
 lemma trans_apply (e₁ : Reversible P Q) (e₂ : Reversible Q R) (x : P.Observables) :
     e₁.trans e₂ x = e₂ (e₁ x)
 ```
 
-**`ProbabilisticTheory.Reversible.automorphismGroup`**, an instance, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L116).
+**`ProbabilisticTheory.Reversible.automorphismGroup`**, an instance, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L116).
 
 > Reversible transformations of a single space form a group under composition.
 
@@ -121,19 +121,19 @@ lemma trans_apply (e₁ : Reversible P Q) (e₂ : Reversible Q R) (x : P.Observa
 instance automorphismGroup : Group (Reversible P P)
 ```
 
-**`ProbabilisticTheory.Reversible.mul_apply`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L125).
+**`ProbabilisticTheory.Reversible.mul_apply`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L125).
 
 ```lean
 lemma mul_apply (f g : Reversible P P) (x : P.Observables) : (f * g) x = f (g x)
 ```
 
-**`ProbabilisticTheory.Reversible.one_apply`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L127).
+**`ProbabilisticTheory.Reversible.one_apply`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L127).
 
 ```lean
 lemma one_apply (x : P.Observables) : (1 : Reversible P P) x = x
 ```
 
-**`ProbabilisticTheory.Reversible.inv_apply`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L129).
+**`ProbabilisticTheory.Reversible.inv_apply`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L129).
 
 ```lean
 lemma inv_apply (f : Reversible P P) (x : P.Observables) : f⁻¹ x = f.symm x
@@ -141,7 +141,7 @@ lemma inv_apply (f : Reversible P P) (x : P.Observables) : f⁻¹ x = f.symm x
 
 ### A.3. As channels
 
-**`ProbabilisticTheory.Reversible.toChannel`**, a def, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L134).
+**`ProbabilisticTheory.Reversible.toChannel`**, a def, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L134).
 
 > A reversible transformation regarded as a channel.
 
@@ -149,13 +149,13 @@ lemma inv_apply (f : Reversible P P) (x : P.Observables) : f⁻¹ x = f.symm x
 def toChannel (e : Reversible P Q) : Channel P Q
 ```
 
-**`ProbabilisticTheory.Reversible.toChannel_apply`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L138).
+**`ProbabilisticTheory.Reversible.toChannel_apply`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L138).
 
 ```lean
 lemma toChannel_apply (e : Reversible P Q) (x : P.Observables) : e.toChannel x = e x
 ```
 
-**`ProbabilisticTheory.Reversible.toChannelHom`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L141).
+**`ProbabilisticTheory.Reversible.toChannelHom`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L141).
 
 > Regarding reversible transformations as channels is a homomorphism of monoids.
 
@@ -163,7 +163,7 @@ lemma toChannel_apply (e : Reversible P Q) (x : P.Observables) : e.toChannel x =
 def toChannelHom : Reversible P P →* Channel P P
 ```
 
-**`ProbabilisticTheory.Reversible.toChannelHom_apply`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L146).
+**`ProbabilisticTheory.Reversible.toChannelHom_apply`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L146).
 
 ```lean
 lemma toChannelHom_apply (e : Reversible P P) (x : P.Observables) :
@@ -174,7 +174,7 @@ lemma toChannelHom_apply (e : Reversible P P) (x : P.Observables) :
 
 ### B.1. Conjugation
 
-**`ProbabilisticTheory.Reversible.conj`**, a def, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L154).
+**`ProbabilisticTheory.Reversible.conj`**, a def, [line 154](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L154).
 
 > Conjugation transports reversible dynamics between observable spaces.
 
@@ -184,7 +184,7 @@ def conj (e : Reversible P Q) : Reversible P P →* Reversible Q Q
 
 ### B.2. Transported actions
 
-**`ProbabilisticTheory.Reversible.transport`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L162).
+**`ProbabilisticTheory.Reversible.transport`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean#L162).
 
 > Transport a group action between observable spaces along a reversible transformation.
 
@@ -199,4 +199,4 @@ def transport (ρ : G →* Reversible P P) (e : Reversible P Q) :
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/Channel/Reversible.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Reversible.lean)
+- [Physlib/ProbabilisticTheory/Channel/Reversible.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Reversible.lean)

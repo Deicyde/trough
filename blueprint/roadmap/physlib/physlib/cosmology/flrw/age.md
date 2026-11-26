@@ -8,7 +8,7 @@ proof: formalized
 
 # The age of the universe
 
-The module `Physlib.Cosmology.FLRW.Age`, [Physlib/Cosmology/FLRW/Age.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Age.lean): 2 declarations, 2 with a docstring.
+The module `Physlib.Cosmology.FLRW.Age`, [Physlib/Cosmology/FLRW/Age.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Age.lean): 2 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -32,7 +32,7 @@ The module `Physlib.Cosmology.FLRW.Age`, [Physlib/Cosmology/FLRW/Age.lean](https
 
 ## A. The age of the universe
 
-**`Cosmology.FLRW.FriedmannEquation.age`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Age.lean#L52).
+**`Cosmology.FLRW.FriedmannEquation.age`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Age.lean#L52).
 
 > The age of the universe `t₀ = H₀⁻¹ ∫₀¹ dx / (x E(x))` for a reduced Hubble function `E`:
 > the time elapsed since `a = 0`, obtained by integrating `dt = da / (a H)` with
@@ -42,7 +42,7 @@ The module `Physlib.Cosmology.FLRW.Age`, [Physlib/Cosmology/FLRW/Age.lean](https
 noncomputable def age (H₀ : ℝ) (E : ℝ → ℝ) : ℝ
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.age_eq`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Age.lean#L56).
+**`Cosmology.FLRW.FriedmannEquation.age_eq`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Age.lean#L56).
 
 > The age is proportional to `1 / H₀`.
 
@@ -56,4 +56,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Cosmology/FLRW/Age.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Age.lean)
+- [Physlib/Cosmology/FLRW/Age.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Age.lean)

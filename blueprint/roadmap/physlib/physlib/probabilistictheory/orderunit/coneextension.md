@@ -8,7 +8,7 @@ proof: formalized
 
 # Linear extension from positive observables
 
-The module `Physlib.ProbabilisticTheory.OrderUnit.ConeExtension`, [Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean): 8 declarations, 8 with a docstring.
+The module `Physlib.ProbabilisticTheory.OrderUnit.ConeExtension`, [Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean): 8 declarations, 8 with a docstring.
 
 > Values on positive observables determine a real-linear functional on all observables.
 
@@ -30,7 +30,7 @@ The module `Physlib.ProbabilisticTheory.OrderUnit.ConeExtension`, [Physlib/Proba
 
 ## A. The extension
 
-**`ProbabilisticTheory.PosCone.extend`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean#L52).
+**`ProbabilisticTheory.PosCone.extend`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean#L52).
 
 > Extend values on positive observables by `f (p - q) = f p - f q`, for a chosen decomposition
 > of each observable into positive parts.
@@ -39,7 +39,7 @@ The module `Physlib.ProbabilisticTheory.OrderUnit.ConeExtension`, [Physlib/Proba
 noncomputable def extend (A : P.Observables) : ℝ
 ```
 
-**`ProbabilisticTheory.PosCone.extend_sub`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean#L56).
+**`ProbabilisticTheory.PosCone.extend_sub`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean#L56).
 
 > The extension gives `f p - f q` for every decomposition `A = p - q`.
 
@@ -50,7 +50,7 @@ lemma extend_sub {A : P.Observables} {p q : PosCone P} (h : (p : P.Observables) 
 
 ## B. Linearity
 
-**`ProbabilisticTheory.PosCone.extend_add`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean#L66).
+**`ProbabilisticTheory.PosCone.extend_add`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean#L66).
 
 > The extension is additive.
 
@@ -58,7 +58,7 @@ lemma extend_sub {A : P.Observables} {p q : PosCone P} (h : (p : P.Observables) 
 lemma extend_add (A B : P.Observables) : extend f (A + B) = extend f A + extend f B
 ```
 
-**`ProbabilisticTheory.PosCone.extend_smul`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean#L74).
+**`ProbabilisticTheory.PosCone.extend_smul`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean#L74).
 
 > The extension is homogeneous for every real scalar.
 
@@ -66,7 +66,7 @@ lemma extend_add (A B : P.Observables) : extend f (A + B) = extend f A + extend 
 lemma extend_smul (t : ℝ) (A : P.Observables) : extend f (t • A) = t * extend f A
 ```
 
-**`ProbabilisticTheory.PosCone.extendₗ`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean#L86).
+**`ProbabilisticTheory.PosCone.extendₗ`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean#L86).
 
 > The extension as a real-linear map.
 
@@ -76,7 +76,7 @@ noncomputable def extendₗ : P.Observables →ₗ[ℝ] ℝ
 
 ## C. Agreement and uniqueness
 
-**`ProbabilisticTheory.PosCone.extendₗ_apply`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean#L95).
+**`ProbabilisticTheory.PosCone.extendₗ_apply`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean#L95).
 
 > The linear extension evaluates as the extension.
 
@@ -84,7 +84,7 @@ noncomputable def extendₗ : P.Observables →ₗ[ℝ] ℝ
 lemma extendₗ_apply (A : P.Observables) : extendₗ f A = extend f A
 ```
 
-**`ProbabilisticTheory.PosCone.extend_coe`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean#L99).
+**`ProbabilisticTheory.PosCone.extend_coe`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean#L99).
 
 > The extension agrees with `f` on positive observables.
 
@@ -92,7 +92,7 @@ lemma extendₗ_apply (A : P.Observables) : extendₗ f A = extend f A
 lemma extend_coe (p : PosCone P) : extend f (p : P.Observables) = f p
 ```
 
-**`ProbabilisticTheory.PosCone.extendₗ_unique`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean#L103).
+**`ProbabilisticTheory.PosCone.extendₗ_unique`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean#L103).
 
 > Agreement on positive observables determines the real-linear extension.
 
@@ -107,4 +107,4 @@ lemma extendₗ_unique (g : P.Observables →ₗ[ℝ] ℝ)
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean)
+- [Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/ConeExtension.lean)

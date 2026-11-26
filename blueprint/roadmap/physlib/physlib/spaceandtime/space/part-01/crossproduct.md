@@ -8,7 +8,7 @@ proof: formalized
 
 # The cross product on Euclidean vectors in three dimensions
 
-The module `Physlib.SpaceAndTime.Space.CrossProduct`, [Physlib/SpaceAndTime/Space/CrossProduct.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/CrossProduct.lean): 4 declarations, 2 with a docstring.
+The module `Physlib.SpaceAndTime.Space.CrossProduct`, [Physlib/SpaceAndTime/Space/CrossProduct.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/CrossProduct.lean): 4 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -32,7 +32,7 @@ The module `Physlib.SpaceAndTime.Space.CrossProduct`, [Physlib/SpaceAndTime/Spac
 
 ## B. Time derivatives move out of cross products
 
-**`Space.fderiv_cross_commute`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/CrossProduct.lean#L63).
+**`Space.fderiv_cross_commute`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/CrossProduct.lean#L63).
 
 > Cross product and fderiv commute.
 
@@ -43,7 +43,7 @@ lemma fderiv_cross_commute {t : Time} {s : EuclideanSpace ℝ (Fin 3)}
     = fderiv ℝ (fun t' => s ⨯ₑ₃ (f t')) t 1
 ```
 
-**`Space.time_deriv_cross_commute`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/CrossProduct.lean#L102).
+**`Space.time_deriv_cross_commute`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/CrossProduct.lean#L102).
 
 > Cross product and time derivative commute.
 
@@ -55,14 +55,14 @@ lemma time_deriv_cross_commute {s : EuclideanSpace ℝ (Fin 3)} {f : Time → Eu
 
 ## C. Inner product of vectors with cross products involving themselves
 
-**`Space.inner_cross_self`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/CrossProduct.lean#L115).
+**`Space.inner_cross_self`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/CrossProduct.lean#L115).
 
 ```lean
 lemma inner_cross_self (v w : EuclideanSpace ℝ (Fin 3)) :
     inner ℝ v (w ⨯ₑ₃ v) = 0
 ```
 
-**`Space.inner_self_cross`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/CrossProduct.lean#L123).
+**`Space.inner_self_cross`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/CrossProduct.lean#L123).
 
 ```lean
 lemma inner_self_cross (v w : EuclideanSpace ℝ (Fin 3)) :
@@ -75,4 +75,4 @@ lemma inner_self_cross (v w : EuclideanSpace ℝ (Fin 3)) :
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/CrossProduct.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/CrossProduct.lean)
+- [Physlib/SpaceAndTime/Space/CrossProduct.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/CrossProduct.lean)

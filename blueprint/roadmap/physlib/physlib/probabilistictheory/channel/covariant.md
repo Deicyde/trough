@@ -8,7 +8,7 @@ proof: formalized
 
 # Covariant channels
 
-The module `Physlib.ProbabilisticTheory.Channel.Covariant`, [Physlib/ProbabilisticTheory/Channel/Covariant.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Covariant.lean): 5 declarations, 5 with a docstring.
+The module `Physlib.ProbabilisticTheory.Channel.Covariant`, [Physlib/ProbabilisticTheory/Channel/Covariant.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Covariant.lean): 5 declarations, 5 with a docstring.
 
 > Channels that commute with two group actions by reversible transformations.
 
@@ -35,7 +35,7 @@ The module `Physlib.ProbabilisticTheory.Channel.Covariant`, [Physlib/Probabilist
 
 ### A.1. Definition and closure properties
 
-**`Channel.IsIntertwining`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Covariant.lean#L56).
+**`Channel.IsIntertwining`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Covariant.lean#L56).
 
 > A channel intertwines two group actions if it commutes with their transformations.
 
@@ -44,7 +44,7 @@ def IsIntertwining (Φ : Channel P Q) (ρ : G →* Reversible P P)
     (σ : G →* Reversible Q Q) : Prop
 ```
 
-**`Channel.isIntertwining_id`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Covariant.lean#L60).
+**`Channel.isIntertwining_id`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Covariant.lean#L60).
 
 > The identity channel intertwines a group action with itself.
 
@@ -52,7 +52,7 @@ def IsIntertwining (Φ : Channel P Q) (ρ : G →* Reversible P P)
 lemma isIntertwining_id (ρ : G →* Reversible P P) : (Channel.id P).IsIntertwining ρ ρ
 ```
 
-**`Channel.IsIntertwining.comp`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Covariant.lean#L65).
+**`Channel.IsIntertwining.comp`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Covariant.lean#L65).
 
 > The composition of intertwining channels also intertwines the group actions.
 
@@ -64,7 +64,7 @@ lemma IsIntertwining.comp {R : ProbabilisticTheory} {τ : G →* Reversible R R}
 
 ## B. Covariance of transport
 
-**`Channel.isIntertwining_transport`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Covariant.lean#L74).
+**`Channel.isIntertwining_transport`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Covariant.lean#L74).
 
 > A reversible transformation intertwines an action with its transport.
 
@@ -73,7 +73,7 @@ lemma isIntertwining_transport (ρ : G →* Reversible P P) (e : Reversible P Q)
     e.toChannel.IsIntertwining ρ (e.transport ρ)
 ```
 
-**`Channel.isIntertwining_iff_eq_transport`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Covariant.lean#L81).
+**`Channel.isIntertwining_iff_eq_transport`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Covariant.lean#L81).
 
 > A reversible transformation intertwines two actions exactly when the target action
 > is the transport of the source action.
@@ -90,4 +90,4 @@ lemma isIntertwining_iff_eq_transport (ρ : G →* Reversible P P)
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/Channel/Covariant.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Covariant.lean)
+- [Physlib/ProbabilisticTheory/Channel/Covariant.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Covariant.lean)

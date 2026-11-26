@@ -8,7 +8,7 @@ proof: formalized
 
 # The bounded operators as a W⋆-algebra
 
-The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.Concrete`, [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Concrete.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Concrete.lean): 4 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.Concrete`, [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Concrete.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Concrete.lean): 4 declarations, 3 with a docstring.
 
 > The bounded operators on a Hilbert space form a W⋆-algebra with the trace class as predual.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.Concrete`, [PhyslibAlp
 
 > * None.
 
-**`PhyslibAlpha.ProbabilisticTheory.TraceClass.tracePairing_surjective`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Concrete.lean#L52).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.tracePairing_surjective`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Concrete.lean#L52).
 
 > The concrete trace pairing is surjective onto the strong dual of the trace class.
 
@@ -37,7 +37,7 @@ lemma tracePairing_surjective :
     Function.Surjective (⇑(tracePairingLinearIsometry (H := H)))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.TraceClass.tracePairingEquiv`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Concrete.lean#L57).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.tracePairingEquiv`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Concrete.lean#L57).
 
 > The isometric identification of `H →L[ℂ] H` with the strong dual of its trace class.
 
@@ -45,7 +45,7 @@ lemma tracePairing_surjective :
 def tracePairingEquiv : (H →L[ℂ] H) ≃ₗᵢ[ℂ] StrongDual ℂ (TraceClass H)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.TraceClass.tracePairingEquiv_apply`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Concrete.lean#L60).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.tracePairingEquiv_apply`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Concrete.lean#L60).
 
 ```lean
 lemma tracePairingEquiv_apply (A : H →L[ℂ] H) :
@@ -54,7 +54,7 @@ lemma tracePairingEquiv_apply (A : H →L[ℂ] H) :
 
 ## A. The `WStarAlgebraStructure (H →L[ℂ] H)` instance
 
-**`PhyslibAlpha.ProbabilisticTheory.instWStarAlgebraStructureContinuousLinearMap`**, an instance, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Concrete.lean#L71).
+**`PhyslibAlpha.ProbabilisticTheory.instWStarAlgebraStructureContinuousLinearMap`**, an instance, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Concrete.lean#L71).
 
 > **The bounded operators form a W⋆-algebra**, with predual the trace-class operators and the
 > trace pairing `a ↦ (ρ ↦ Tr (a ρ))`.
@@ -75,4 +75,4 @@ noncomputable instance instWStarAlgebraStructureContinuousLinearMap :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Concrete.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Concrete.lean)
+- [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Concrete.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Concrete.lean)

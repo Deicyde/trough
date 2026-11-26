@@ -8,7 +8,7 @@ proof: formalized
 
 # Probabilistic theories
 
-The module `Physlib.ProbabilisticTheory.Basic`, [Physlib/ProbabilisticTheory/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Basic.lean): 2 declarations, 2 with a docstring.
+The module `Physlib.ProbabilisticTheory.Basic`, [Physlib/ProbabilisticTheory/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Basic.lean): 2 declarations, 2 with a docstring.
 
 > A probabilistic theory is described by its ordered real observables and a certain outcome.
 
@@ -29,7 +29,7 @@ The module `Physlib.ProbabilisticTheory.Basic`, [Physlib/ProbabilisticTheory/Bas
 
 ## A. Observable space and certain outcome
 
-**`ProbabilisticTheory`**, a structure, [line 43](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Basic.lean#L43).
+**`ProbabilisticTheory`**, a structure, [line 43](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Basic.lean#L43).
 
 > An ordered real observable space with a certain outcome and no infinitesimal observables.
 
@@ -60,7 +60,7 @@ structure ProbabilisticTheory where
 
 ## B. The real numbers
 
-**`ProbabilisticTheory.real`**, an abbrev, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Basic.lean#L73).
+**`ProbabilisticTheory.real`**, an abbrev, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Basic.lean#L73).
 
 > The real numbers with their usual order and unit 1.
 
@@ -74,4 +74,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Basic.lean)
+- [Physlib/ProbabilisticTheory/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Basic.lean)

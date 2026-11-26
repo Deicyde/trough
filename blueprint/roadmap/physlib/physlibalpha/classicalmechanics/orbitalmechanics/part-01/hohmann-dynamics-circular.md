@@ -8,7 +8,7 @@ proof: formalized
 
 # Circular orbits for the Hohmann transfer
 
-The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Circular`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean): 13 declarations, 4 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Circular`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean): 13 declarations, 4 with a docstring.
 
 > The two circular coasts obey the same central force law.
 
@@ -27,7 +27,7 @@ The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Ci
 
 ## A. Circular positions, velocities, and accelerations
 
-**`ClassicalMechanics.HohmannTransfer.circularRate`**, a def, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L44).
+**`ClassicalMechanics.HohmannTransfer.circularRate`**, a def, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L44).
 
 > The angular rate of a circular orbit of radius `R`.
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Ci
 def circularRate (mu R : ℝ) : ℝ
 ```
 
-**`ClassicalMechanics.HohmannTransfer.circularSpeed`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L46).
+**`ClassicalMechanics.HohmannTransfer.circularSpeed`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L46).
 
 > The speed of a circular orbit of radius `R`.
 
@@ -43,7 +43,7 @@ def circularRate (mu R : ℝ) : ℝ
 def circularSpeed (mu R : ℝ) : ℝ
 ```
 
-**`ClassicalMechanics.HohmannTransfer.circularPosition`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L48).
+**`ClassicalMechanics.HohmannTransfer.circularPosition`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L48).
 
 > The position on a prograde circle with the given initial phase.
 
@@ -51,7 +51,7 @@ def circularSpeed (mu R : ℝ) : ℝ
 def circularPosition (mu R phase t : ℝ) : ℂ
 ```
 
-**`ClassicalMechanics.HohmannTransfer.circularVelocity`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L52).
+**`ClassicalMechanics.HohmannTransfer.circularVelocity`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L52).
 
 > The velocity on a prograde circle with the given initial phase.
 
@@ -59,56 +59,56 @@ def circularPosition (mu R phase t : ℝ) : ℂ
 def circularVelocity (mu R phase t : ℝ) : ℂ
 ```
 
-**`ClassicalMechanics.HohmannTransfer.circularRate_pos`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L56).
+**`ClassicalMechanics.HohmannTransfer.circularRate_pos`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L56).
 
 ```lean
 lemma circularRate_pos {mu R : ℝ} (hm : 0 < mu) (hR : 0 < R) :
     0 < circularRate mu R
 ```
 
-**`ClassicalMechanics.HohmannTransfer.circularRate_sq`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L58).
+**`ClassicalMechanics.HohmannTransfer.circularRate_sq`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L58).
 
 ```lean
 lemma circularRate_sq {mu R : ℝ} (hm : 0 < mu) (hR : 0 < R) :
     circularRate mu R ^ 2 = mu/R^3
 ```
 
-**`ClassicalMechanics.HohmannTransfer.circularSpeed_pos`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L61).
+**`ClassicalMechanics.HohmannTransfer.circularSpeed_pos`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L61).
 
 ```lean
 lemma circularSpeed_pos {mu R : ℝ} (hm : 0 < mu) (hR : 0 < R) :
     0 < circularSpeed mu R
 ```
 
-**`ClassicalMechanics.HohmannTransfer.circularSpeed_sq`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L63).
+**`ClassicalMechanics.HohmannTransfer.circularSpeed_sq`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L63).
 
 ```lean
 lemma circularSpeed_sq {mu R : ℝ} (hm : 0 < mu) (hR : 0 < R) :
     circularSpeed mu R ^ 2 = mu/R
 ```
 
-**`ClassicalMechanics.HohmannTransfer.circularSpeed_eq_rate`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L66).
+**`ClassicalMechanics.HohmannTransfer.circularSpeed_eq_rate`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L66).
 
 ```lean
 lemma circularSpeed_eq_rate {mu R : ℝ} (hm : 0 < mu) (hR : 0 < R) :
     R*circularRate mu R = circularSpeed mu R
 ```
 
-**`ClassicalMechanics.HohmannTransfer.norm_circularPosition`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L71).
+**`ClassicalMechanics.HohmannTransfer.norm_circularPosition`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L71).
 
 ```lean
 lemma norm_circularPosition {mu R : ℝ} (hR : 0 < R) (phase t : ℝ) :
     ‖circularPosition mu R phase t‖ = R
 ```
 
-**`ClassicalMechanics.HohmannTransfer.hasDerivAt_circularPosition`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L76).
+**`ClassicalMechanics.HohmannTransfer.hasDerivAt_circularPosition`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L76).
 
 ```lean
 lemma hasDerivAt_circularPosition (mu R phase t : ℝ) :
     HasDerivAt (circularPosition mu R phase) (circularVelocity mu R phase t) t
 ```
 
-**`ClassicalMechanics.HohmannTransfer.hasDerivAt_circularVelocity`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L84).
+**`ClassicalMechanics.HohmannTransfer.hasDerivAt_circularVelocity`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L84).
 
 ```lean
 lemma hasDerivAt_circularVelocity (mu R phase t : ℝ) :
@@ -116,7 +116,7 @@ lemma hasDerivAt_circularVelocity (mu R phase t : ℝ) :
       (-(circularRate mu R)^2 • circularPosition mu R phase t) t
 ```
 
-**`ClassicalMechanics.HohmannTransfer.circular_newton`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L95).
+**`ClassicalMechanics.HohmannTransfer.circular_newton`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean#L95).
 
 ```lean
 lemma circular_newton {mu R : ℝ} (hm : 0 < mu) (hR : 0 < R)
@@ -131,8 +131,8 @@ lemma circular_newton {mu R : ℝ} (hm : 0 < mu) (hR : 0 < R)
 
 ## Proof depends on
 
-- [Circular Orbit Vis Viva](../../../../physlib/classicalmechanics/orbitalmechanics/visviva.md)
+- [Vis viva for circular orbits and the escape speed](../../../../physlib/classicalmechanics/orbitalmechanics/visviva.md)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean)
+- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean)

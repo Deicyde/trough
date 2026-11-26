@@ -8,13 +8,13 @@ proof: formalized
 
 # Plane waves
 
-The module `Physlib.QuantumMechanics.HilbertSpaces.OneDimension.PlaneWaves`, [Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PlaneWaves.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PlaneWaves.lean): 3 declarations, 2 with a docstring.
+The module `Physlib.QuantumMechanics.HilbertSpaces.OneDimension.PlaneWaves`, [Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PlaneWaves.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PlaneWaves.lean): 3 declarations, 2 with a docstring.
 
 > We define plane waves as a member of the dual of the Schwartz submodule of the 1d Hilbert space.
 >
 > …
 
-**`QuantumMechanics.OneDimension.HilbertSpace.planewaveFunctional`**, a def, [line 36](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PlaneWaves.lean#L36).
+**`QuantumMechanics.OneDimension.HilbertSpace.planewaveFunctional`**, a def, [line 36](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PlaneWaves.lean#L36).
 
 > Plane waves as a member of the dual of the
 > Schwartz submodule of the Hilbert space.
@@ -26,14 +26,14 @@ The module `Physlib.QuantumMechanics.HilbertSpaces.OneDimension.PlaneWaves`, [Ph
 def planewaveFunctional (k : ℝ) : 𝓢(ℝ, ℂ) →L[ℂ] ℂ
 ```
 
-**`QuantumMechanics.OneDimension.HilbertSpace.planewaveFunctional_apply`**, a lemma, [line 40](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PlaneWaves.lean#L40).
+**`QuantumMechanics.OneDimension.HilbertSpace.planewaveFunctional_apply`**, a lemma, [line 40](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PlaneWaves.lean#L40).
 
 ```lean
 lemma planewaveFunctional_apply (k : ℝ) (ψ : 𝓢(ℝ, ℂ)) :
     planewaveFunctional k ψ = 𝓕 ψ k
 ```
 
-**`QuantumMechanics.OneDimension.HilbertSpace.eq_of_eq_planewaveFunctional`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PlaneWaves.lean#L45).
+**`QuantumMechanics.OneDimension.HilbertSpace.eq_of_eq_planewaveFunctional`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PlaneWaves.lean#L45).
 
 > Two elements of the Schwartz submodule are equal if and only if they are equal on
 > all applications of `planewaveFunctional`.
@@ -50,4 +50,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PlaneWaves.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PlaneWaves.lean)
+- [Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PlaneWaves.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PlaneWaves.lean)

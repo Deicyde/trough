@@ -8,7 +8,7 @@ proof: formalized
 
 # Wigner 3j symbols
 
-The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.Wigner3j`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean): 39 declarations, 22 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.Wigner3j`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean): 39 declarations, 22 with a docstring.
 
 > The 3j symbols in Regge's form, their relation to the Clebsch–Gordan coefficients, their
 > symmetries and orthogonality relations.
@@ -69,7 +69,7 @@ The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.Wigner3j`, [PhyslibAlp
 
 ## A. The six-factorial sum
 
-**`PhyslibAlpha.Sl2.invFact`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L90).
+**`PhyslibAlpha.Sl2.invFact`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L90).
 
 > `1/u!` for `u ≥ 0` and `0` for `u < 0`.
 
@@ -77,37 +77,37 @@ The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.Wigner3j`, [PhyslibAlp
 def invFact (u : ℤ) : ℝ
 ```
 
-**`PhyslibAlpha.Sl2.invFact_natCast`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L92).
+**`PhyslibAlpha.Sl2.invFact_natCast`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L92).
 
 ```lean
 lemma invFact_natCast (t : ℕ) : invFact t = ((t.factorial : ℝ))⁻¹
 ```
 
-**`PhyslibAlpha.Sl2.invFact_eq`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L95).
+**`PhyslibAlpha.Sl2.invFact_eq`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L95).
 
 ```lean
 lemma invFact_eq {u : ℤ} {t : ℕ} (h : u = t) : invFact u = ((t.factorial : ℝ))⁻¹
 ```
 
-**`PhyslibAlpha.Sl2.invFact_of_neg`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L98).
+**`PhyslibAlpha.Sl2.invFact_of_neg`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L98).
 
 ```lean
 lemma invFact_of_neg {u : ℤ} (h : u < 0) : invFact u = 0
 ```
 
-**`PhyslibAlpha.Sl2.nonneg_of_invFact_ne_zero`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L101).
+**`PhyslibAlpha.Sl2.nonneg_of_invFact_ne_zero`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L101).
 
 ```lean
 lemma nonneg_of_invFact_ne_zero {u : ℤ} (h : invFact u ≠ 0) : 0 ≤ u
 ```
 
-**`PhyslibAlpha.Sl2.neg_one_zpow_congr`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L105).
+**`PhyslibAlpha.Sl2.neg_one_zpow_congr`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L105).
 
 ```lean
 lemma neg_one_zpow_congr {p q : ℤ} (h : p % 2 = q % 2) : (-1 : ℝ) ^ p = (-1) ^ q
 ```
 
-**`PhyslibAlpha.Sl2.sixTerm`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L111).
+**`PhyslibAlpha.Sl2.sixTerm`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L111).
 
 > The summand of `sixSum`.
 
@@ -115,7 +115,7 @@ lemma neg_one_zpow_congr {p q : ℤ} (h : p % 2 = q % 2) : (-1 : ℝ) ^ p = (-1)
 def sixTerm (a₁ a₂ a₃ b₁ b₂ b₃ z : ℤ) : ℝ
 ```
 
-**`PhyslibAlpha.Sl2.sixSum`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L117).
+**`PhyslibAlpha.Sl2.sixSum`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L117).
 
 > `Σ_z (-1)^z / ((z - a₁)! (z - a₂)! (z - a₃)! (b₁ - z)! (b₂ - z)! (b₃ - z)!)`, over the `z`
 > for which all six arguments are nonnegative.
@@ -124,35 +124,35 @@ def sixTerm (a₁ a₂ a₃ b₁ b₂ b₃ z : ℤ) : ℝ
 def sixSum (a₁ a₂ a₃ b₁ b₂ b₃ : ℤ) : ℝ
 ```
 
-**`PhyslibAlpha.Sl2.sixSum_swap_a12`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L119).
+**`PhyslibAlpha.Sl2.sixSum_swap_a12`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L119).
 
 ```lean
 lemma sixSum_swap_a12 (a₁ a₂ a₃ b₁ b₂ b₃ : ℤ) :
     sixSum a₁ a₂ a₃ b₁ b₂ b₃ = sixSum a₂ a₁ a₃ b₁ b₂ b₃
 ```
 
-**`PhyslibAlpha.Sl2.sixSum_swap_a23`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L123).
+**`PhyslibAlpha.Sl2.sixSum_swap_a23`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L123).
 
 ```lean
 lemma sixSum_swap_a23 (a₁ a₂ a₃ b₁ b₂ b₃ : ℤ) :
     sixSum a₁ a₂ a₃ b₁ b₂ b₃ = sixSum a₁ a₃ a₂ b₁ b₂ b₃
 ```
 
-**`PhyslibAlpha.Sl2.sixSum_swap_b12`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L127).
+**`PhyslibAlpha.Sl2.sixSum_swap_b12`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L127).
 
 ```lean
 lemma sixSum_swap_b12 (a₁ a₂ a₃ b₁ b₂ b₃ : ℤ) :
     sixSum a₁ a₂ a₃ b₁ b₂ b₃ = sixSum a₁ a₂ a₃ b₂ b₁ b₃
 ```
 
-**`PhyslibAlpha.Sl2.sixSum_swap_b23`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L131).
+**`PhyslibAlpha.Sl2.sixSum_swap_b23`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L131).
 
 ```lean
 lemma sixSum_swap_b23 (a₁ a₂ a₃ b₁ b₂ b₃ : ℤ) :
     sixSum a₁ a₂ a₃ b₁ b₂ b₃ = sixSum a₁ a₂ a₃ b₁ b₃ b₂
 ```
 
-**`PhyslibAlpha.Sl2.sixSum_shift`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L136).
+**`PhyslibAlpha.Sl2.sixSum_shift`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L136).
 
 > Shifting all arguments by `c` multiplies the sum by `(-1)^c`.
 
@@ -162,7 +162,7 @@ lemma sixSum_shift (a₁ a₂ a₃ b₁ b₂ b₃ c : ℤ) :
       (-1) ^ c * sixSum a₁ a₂ a₃ b₁ b₂ b₃
 ```
 
-**`PhyslibAlpha.Sl2.sixSum_neg`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L146).
+**`PhyslibAlpha.Sl2.sixSum_neg`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L146).
 
 > The reflection `z ↦ -z`.
 
@@ -173,7 +173,7 @@ lemma sixSum_neg (a₁ a₂ a₃ b₁ b₂ b₃ : ℤ) :
 
 ## B. Regge squares and the 3j symbol
 
-**`PhyslibAlpha.Sl2.IsMagic`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L163).
+**`PhyslibAlpha.Sl2.IsMagic`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L163).
 
 > All rows and columns of `R` have the same sum as the first row.
 
@@ -181,7 +181,7 @@ lemma sixSum_neg (a₁ a₂ a₃ b₁ b₂ b₃ : ℤ) :
 def IsMagic (R : Fin 3 → Fin 3 → ℕ) : Prop
 ```
 
-**`PhyslibAlpha.Sl2.threeJR`**, a def, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L169).
+**`PhyslibAlpha.Sl2.threeJR`**, a def, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L169).
 
 > The 3j symbol of a Regge square `R`, by Racah's formula.
 
@@ -189,7 +189,7 @@ def IsMagic (R : Fin 3 → Fin 3 → ℕ) : Prop
 def threeJR (R : Fin 3 → Fin 3 → ℕ) : ℝ
 ```
 
-**`PhyslibAlpha.Sl2.neg_one_pow_mul_mul_zpow`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L174).
+**`PhyslibAlpha.Sl2.neg_one_pow_mul_mul_zpow`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L174).
 
 ```lean
 lemma neg_one_pow_mul_mul_zpow {n n' q : ℕ} {s : ℤ} (X Y : ℝ)
@@ -197,7 +197,7 @@ lemma neg_one_pow_mul_mul_zpow {n n' q : ℕ} {s : ℤ} (X Y : ℝ)
     (-1 : ℝ) ^ n' * X * ((-1) ^ s * Y) = (-1) ^ q * ((-1) ^ n * X * Y)
 ```
 
-**`PhyslibAlpha.Sl2.neg_one_pow_mul_mul_zpow'`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L182).
+**`PhyslibAlpha.Sl2.neg_one_pow_mul_mul_zpow'`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L182).
 
 ```lean
 lemma neg_one_pow_mul_mul_zpow' {n n' : ℕ} {s : ℤ} (X Y : ℝ)
@@ -207,7 +207,7 @@ lemma neg_one_pow_mul_mul_zpow' {n n' : ℕ} {s : ℤ} (X Y : ℝ)
 
 ## C. Symmetries
 
-**`PhyslibAlpha.Sl2.threeJR_transpose`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L194).
+**`PhyslibAlpha.Sl2.threeJR_transpose`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L194).
 
 > **Regge symmetry.** Transposing the square leaves the 3j symbol unchanged.
 
@@ -216,7 +216,7 @@ lemma threeJR_transpose {R : Fin 3 → Fin 3 → ℕ} (hR : IsMagic R) :
     threeJR (fun i j => R j i) = threeJR R
 ```
 
-**`PhyslibAlpha.Sl2.threeJR_swap_columns`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L212).
+**`PhyslibAlpha.Sl2.threeJR_swap_columns`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L212).
 
 > Swapping the first two columns multiplies the 3j symbol by `(-1)^J`.
 
@@ -225,7 +225,7 @@ lemma threeJR_swap_columns {R : Fin 3 → Fin 3 → ℕ} (hR : IsMagic R) :
     threeJR (fun i => ![R i 1, R i 0, R i 2]) = (-1) ^ (R 0 0 + R 0 1 + R 0 2) * threeJR R
 ```
 
-**`PhyslibAlpha.Sl2.threeJR_cycle_columns`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L236).
+**`PhyslibAlpha.Sl2.threeJR_cycle_columns`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L236).
 
 > Permuting the columns cyclically leaves the 3j symbol unchanged.
 
@@ -234,7 +234,7 @@ lemma threeJR_cycle_columns {R : Fin 3 → Fin 3 → ℕ} (hR : IsMagic R) :
     threeJR (fun i => ![R i 1, R i 2, R i 0]) = threeJR R
 ```
 
-**`PhyslibAlpha.Sl2.threeJR_swap_rows`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L260).
+**`PhyslibAlpha.Sl2.threeJR_swap_rows`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L260).
 
 > Swapping the last two rows, `m ↦ -m`, multiplies the 3j symbol by `(-1)^J`.
 
@@ -243,28 +243,28 @@ lemma threeJR_swap_rows {R : Fin 3 → Fin 3 → ℕ} (hR : IsMagic R) :
     threeJR ![R 0, R 2, R 1] = (-1) ^ (R 0 0 + R 0 1 + R 0 2) * threeJR R
 ```
 
-**`PhyslibAlpha.Sl2.isMagic_iff`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L279).
+**`PhyslibAlpha.Sl2.isMagic_iff`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L279).
 
 ```lean
 lemma isMagic_iff {R : Fin 3 → Fin 3 → ℕ} :
     IsMagic R ↔ (∀ i, ∑ j, R i j = ∑ j, R 0 j) ∧ ∀ j, ∑ i, R i j = ∑ j, R 0 j
 ```
 
-**`PhyslibAlpha.Sl2.isMagic_perm`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L288).
+**`PhyslibAlpha.Sl2.isMagic_perm`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L288).
 
 ```lean
 lemma isMagic_perm {R : Fin 3 → Fin 3 → ℕ} (hR : IsMagic R) (σ τ : Equiv.Perm (Fin 3)) :
     IsMagic (fun i j => R (σ i) (τ j))
 ```
 
-**`PhyslibAlpha.Sl2.isMagic_transpose`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L298).
+**`PhyslibAlpha.Sl2.isMagic_transpose`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L298).
 
 ```lean
 lemma isMagic_transpose {R : Fin 3 → Fin 3 → ℕ} (hR : IsMagic R) :
     IsMagic (fun i j => R j i)
 ```
 
-**`PhyslibAlpha.Sl2.isMagic_perm_sum`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L305).
+**`PhyslibAlpha.Sl2.isMagic_perm_sum`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L305).
 
 > Under a permutation of rows and columns the sum `J` of a magic square is unchanged.
 
@@ -273,14 +273,14 @@ lemma isMagic_perm_sum {R : Fin 3 → Fin 3 → ℕ} (hR : IsMagic R) (σ τ : E
     R (σ 0) (τ 0) + R (σ 0) (τ 1) + R (σ 0) (τ 2) = R 0 0 + R 0 1 + R 0 2
 ```
 
-**`PhyslibAlpha.Sl2.isMagic_transpose_sum`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L311).
+**`PhyslibAlpha.Sl2.isMagic_transpose_sum`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L311).
 
 ```lean
 lemma isMagic_transpose_sum {R : Fin 3 → Fin 3 → ℕ} (hR : IsMagic R) :
     R 0 0 + R 1 0 + R 2 0 = R 0 0 + R 0 1 + R 0 2
 ```
 
-**`PhyslibAlpha.Sl2.threeJR_perm_columns`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L317).
+**`PhyslibAlpha.Sl2.threeJR_perm_columns`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L317).
 
 > A permutation `τ` of the columns multiplies the 3j symbol by `sign(τ)^J`.
 
@@ -290,7 +290,7 @@ lemma threeJR_perm_columns (τ : Equiv.Perm (Fin 3)) {R : Fin 3 → Fin 3 → �
       ((Equiv.Perm.sign τ : ℤ) : ℝ) ^ (R 0 0 + R 0 1 + R 0 2) * threeJR R
 ```
 
-**`PhyslibAlpha.Sl2.threeJR_perm`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L377).
+**`PhyslibAlpha.Sl2.threeJR_perm`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L377).
 
 > **Symmetries of the 3j symbol.** Permuting the rows by `σ` and the columns by `τ` multiplies
 > the 3j symbol by `(sign(σ) sign(τ))^J`.
@@ -302,7 +302,7 @@ lemma threeJR_perm (σ τ : Equiv.Perm (Fin 3)) {R : Fin 3 → Fin 3 → ℕ} (h
         threeJR R
 ```
 
-**`PhyslibAlpha.Sl2.perm_prodMap_injective`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L396).
+**`PhyslibAlpha.Sl2.perm_prodMap_injective`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L396).
 
 > Distinct pairs of row and column permutations move the entries of a square differently.
 
@@ -312,7 +312,7 @@ lemma perm_prodMap_injective :
       Prod.map (p.1 : Fin 3 → Fin 3) p.2)
 ```
 
-**`PhyslibAlpha.Sl2.prodMap_ne_swap`**, a lemma, [line 405](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L405).
+**`PhyslibAlpha.Sl2.prodMap_ne_swap`**, a lemma, [line 405](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L405).
 
 > Transposition is not a permutation of rows and columns.
 
@@ -323,7 +323,7 @@ lemma prodMap_ne_swap (σ τ : Equiv.Perm (Fin 3)) :
 
 ## D. Relation to the Clebsch–Gordan coefficients
 
-**`PhyslibAlpha.Sl2.regge`**, a def, [line 423](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L423).
+**`PhyslibAlpha.Sl2.regge`**, a def, [line 423](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L423).
 
 > The Regge square of `(j₁ j₂ J; m₁ m₂ -M)` in the parameters of `ClebschGordanCoefficients`:
 > `m = 2j₁`, `n = 2j₂`, `J = (m + n)/2 - k`, `M = J - l`, `m₁ = j₁ - α`, `m₂ = j₂ - β`.
@@ -332,14 +332,14 @@ lemma prodMap_ne_swap (σ τ : Equiv.Perm (Fin 3)) :
 def regge (m n k l α β : ℕ) : Fin 3 → Fin 3 → ℕ
 ```
 
-**`PhyslibAlpha.Sl2.isMagic_regge`**, a lemma, [line 426](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L426).
+**`PhyslibAlpha.Sl2.isMagic_regge`**, a lemma, [line 426](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L426).
 
 ```lean
 lemma isMagic_regge {k l α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n) (hl : l ≤ m + n - 2 * k)
     (hα : α ≤ m) (hβ : β ≤ n) (h : α + β = k + l) : IsMagic (regge m n k l α β)
 ```
 
-**`PhyslibAlpha.Sl2.sixSum_regge_eq_racahSum`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L433).
+**`PhyslibAlpha.Sl2.sixSum_regge_eq_racahSum`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L433).
 
 > Racah's sum `racahSum` of `ClebschGordanFormula` is the six-factorial sum of the square.
 
@@ -349,7 +349,7 @@ lemma sixSum_regge_eq_racahSum {k α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n) (
       racahSum m n k α β
 ```
 
-**`PhyslibAlpha.Sl2.cgCoefficient_eq_threeJR`**, a lemma, [line 477](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L477).
+**`PhyslibAlpha.Sl2.cgCoefficient_eq_threeJR`**, a lemma, [line 477](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L477).
 
 > **The 3j symbols and the Clebsch–Gordan coefficients.**
 > `⟨j₁ m₁ j₂ m₂ | J M⟩ = (-1)^(j₁ - j₂ + M) √(2J + 1) (j₁ j₂ J; m₁ m₂ -M)`, where
@@ -364,7 +364,7 @@ lemma cgCoefficient_eq_threeJR {k l α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n)
 
 ## E. Orthogonality
 
-**`PhyslibAlpha.Sl2.wigner3j`**, a def, [line 517](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L517).
+**`PhyslibAlpha.Sl2.wigner3j`**, a def, [line 517](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L517).
 
 > The 3j symbol `(j₁ j₂ J; m₁ m₂ -M)` in the parameters of `ClebschGordanCoefficients`, zero
 > unless `m₁ + m₂ = M`.
@@ -373,7 +373,7 @@ lemma cgCoefficient_eq_threeJR {k l α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n)
 def wigner3j (m n k l α β : ℕ) : ℝ
 ```
 
-**`PhyslibAlpha.Sl2.cgCoefficient_eq_wigner3j`**, a lemma, [line 520](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L520).
+**`PhyslibAlpha.Sl2.cgCoefficient_eq_wigner3j`**, a lemma, [line 520](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L520).
 
 ```lean
 lemma cgCoefficient_eq_wigner3j (hmn : 0 < m + n) {k l α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n)
@@ -382,7 +382,7 @@ lemma cgCoefficient_eq_wigner3j (hmn : 0 < m + n) {k l α β : ℕ} (hkm : k ≤
       Real.sqrt ((m + n - 2 * k + 1 : ℕ) : ℝ) * wigner3j m n k l α β
 ```
 
-**`PhyslibAlpha.Sl2.sum_wigner3j_mul_wigner3j`**, a lemma, [line 530](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L530).
+**`PhyslibAlpha.Sl2.sum_wigner3j_mul_wigner3j`**, a lemma, [line 530](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L530).
 
 > **Orthogonality.** `Σ\_\{m₁ m₂} (j₁ j₂ J; m₁ m₂ -M) (j₁ j₂ J'; m₁ m₂ -M') =
 > δ\_\{JJ'} δ\_\{MM'} / (2J + 1)`.
@@ -395,7 +395,7 @@ lemma sum_wigner3j_mul_wigner3j (hmn : 0 < m + n) {k k' l l' : ℕ} (hkm : k ≤
         if k = k' ∧ l = l' then 1 / ((m + n - 2 * k + 1 : ℕ) : ℝ) else 0
 ```
 
-**`PhyslibAlpha.Sl2.sum_wigner3j_mul_wigner3j_JM`**, a lemma, [line 575](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L575).
+**`PhyslibAlpha.Sl2.sum_wigner3j_mul_wigner3j_JM`**, a lemma, [line 575](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean#L575).
 
 > **Second orthogonality relation.**
 > `Σ_{J M} (2J + 1) (j₁ j₂ J; m₁ m₂ -M) (j₁ j₂ J; m₁' m₂' -M) = δ_{m₁ m₁'} δ_{m₂ m₂'}`.
@@ -414,4 +414,4 @@ lemma sum_wigner3j_mul_wigner3j_JM (hmn : 0 < m + n) {a b a' b' : ℕ} (ha : a �
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean)
+- [PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean)

@@ -4,7 +4,7 @@ navigation: transparent
 
 # The Wick Algebra to Inserting an element into a…
 
-Modules in [WickAlgebra/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra):
+Modules in [WickAlgebra/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra):
 
 - [The Wick Algebra](wickalgebra-basic.md)
 - [Grading on the field operation algebra](wickalgebra-grading.md)
@@ -18,13 +18,13 @@ Modules in [WickAlgebra/](https://github.com/leanprover-community/physlib/tree/8
 - [Wick's theorem for normal ordered lists](wickalgebra-wickstheoremnormal.md)
 - [Wick term](wickalgebra-wickterm.md)
 
-Modules in [WickAlgebra/NormalOrder/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder):
+Modules in [WickAlgebra/NormalOrder/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder):
 
 - [Normal Ordering on Field operator algebra](wickalgebra-normalorder-basic.md)
 - [Basic properties of normal ordering](wickalgebra-normalorder-lemmas.md)
 - [Normal ordering with relation to Wick contractions](wickalgebra-normalorder-wickcontractions.md)
 
-Modules in [WickContraction/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction):
+Modules in [WickContraction/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction):
 
 - [Wick contractions](wickcontraction-basic.md)
 - [Cardinality of Wick contractions](wickcontraction-card.md)

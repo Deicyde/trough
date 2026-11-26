@@ -8,7 +8,7 @@ proof: formalized
 
 # The potential of the Higgs field
 
-The module `Physlib.Particles.StandardModel.HiggsBoson.Potential`, [Physlib/Particles/StandardModel/HiggsBoson/Potential.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean): 37 declarations, 23 with a docstring, 1 listed as significant; 1 private, not shown.
+The module `Physlib.Particles.StandardModel.HiggsBoson.Potential`, [Physlib/Particles/StandardModel/HiggsBoson/Potential.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean): 37 declarations, 23 with a docstring, 1 listed as significant; 1 private, not shown.
 
 > The classical Higgs potential, its bounds, and its extrema.
 
@@ -31,7 +31,7 @@ The module `Physlib.Particles.StandardModel.HiggsBoson.Potential`, [Physlib/Part
 
 ## A. The Higgs potential
 
-**`StandardModel.HiggsField.Potential`**, a structure, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L63).
+**`StandardModel.HiggsField.Potential`**, a structure, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L63).
 
 > The parameters of the classical Higgs potential. With `s` the squared norm of the field
 > value, the potential is `-μ2 * s + 𝓵 * s ^ 2`.
@@ -44,7 +44,7 @@ structure Potential where
   𝓵 : ℝ
 ```
 
-**`StandardModel.HiggsField.Potential.toFun`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L77).
+**`StandardModel.HiggsField.Potential.toFun`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L77).
 
 > Evaluate the classical Higgs potential on the value of the field `φ` at the point `x`.
 
@@ -52,7 +52,7 @@ structure Potential where
 def toFun (φ : HiggsField) (x : SpaceTime) : ℝ
 ```
 
-**`StandardModel.HiggsField.Potential.toFun_smooth`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L88).
+**`StandardModel.HiggsField.Potential.toFun_smooth`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L88).
 
 > The potential is smooth.
 
@@ -61,7 +61,7 @@ lemma toFun_smooth (φ : HiggsField) :
     ContMDiff 𝓘(ℝ, SpaceTime) 𝓘(ℝ, ℝ) ⊤ (fun x => P.toFun φ x)
 ```
 
-**`StandardModel.HiggsField.Potential.neg`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L95).
+**`StandardModel.HiggsField.Potential.neg`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L95).
 
 > The Higgs potential formed by negating both parameters.
 
@@ -69,19 +69,19 @@ lemma toFun_smooth (φ : HiggsField) :
 def neg : Potential
 ```
 
-**`StandardModel.HiggsField.Potential.toFun_neg`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L100).
+**`StandardModel.HiggsField.Potential.toFun_neg`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L100).
 
 ```lean
 lemma toFun_neg (φ : HiggsField) (x : SpaceTime) : P.neg.toFun φ x = - P.toFun φ x
 ```
 
-**`StandardModel.HiggsField.Potential.μ2_neg`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L105).
+**`StandardModel.HiggsField.Potential.μ2_neg`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L105).
 
 ```lean
 lemma μ2_neg : P.neg.μ2 = - P.μ2
 ```
 
-**`StandardModel.HiggsField.Potential.𝓵_neg`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L108).
+**`StandardModel.HiggsField.Potential.𝓵_neg`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L108).
 
 ```lean
 lemma 𝓵_neg : P.neg.𝓵 = - P.𝓵
@@ -89,13 +89,13 @@ lemma 𝓵_neg : P.neg.𝓵 = - P.𝓵
 
 ## B. Basic properties
 
-**`StandardModel.HiggsField.Potential.toFun_zero`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L117).
+**`StandardModel.HiggsField.Potential.toFun_zero`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L117).
 
 ```lean
 lemma toFun_zero (x : SpaceTime) : P.toFun 0 x = 0
 ```
 
-**`StandardModel.HiggsField.Potential.toFun_eq_of_repGaugeGroupI`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L122).
+**`StandardModel.HiggsField.Potential.toFun_eq_of_repGaugeGroupI`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L122).
 
 > The Higgs potential is gauge invariant: at a spacetime point `x`, it takes the same value on
 > two Higgs fields whose values at `x` are related by an element of the gauge group.
@@ -105,14 +105,14 @@ lemma toFun_eq_of_repGaugeGroupI (g : GaugeGroupI) (φ ψ : HiggsField) (x : Spa
     (h : ψ x = HiggsVec.repGaugeGroupI g (φ x)) : P.toFun ψ x = P.toFun φ x
 ```
 
-**`StandardModel.HiggsField.Potential.complete_square`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L126).
+**`StandardModel.HiggsField.Potential.complete_square`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L126).
 
 ```lean
 lemma complete_square (h : P.𝓵 ≠ 0) (φ : HiggsField) (x : SpaceTime) :
     P.toFun φ x = P.𝓵 * (‖φ‖_H^2 x - P.μ2 / (2 * P.𝓵)) ^ 2 - P.μ2 ^ 2 / (4 * P.𝓵)
 ```
 
-**`StandardModel.HiggsField.Potential.as_quad`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L133).
+**`StandardModel.HiggsField.Potential.as_quad`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L133).
 
 > The quadratic equation satisfied by the Higgs potential at a spacetime point `x`.
 
@@ -121,7 +121,7 @@ lemma as_quad (φ : HiggsField) (x : SpaceTime) :
     P.𝓵 * ‖φ‖_H^2 x * ‖φ‖_H^2 x + (- P.μ2) * ‖φ‖_H^2 x + (- P.toFun φ x) = 0
 ```
 
-**`StandardModel.HiggsField.Potential.toFun_eq_zero_iff`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L140).
+**`StandardModel.HiggsField.Potential.toFun_eq_zero_iff`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L140).
 
 > With nonzero quartic coupling, the potential vanishes exactly when the field value is zero
 > or has squared norm `P.μ2 / P.𝓵`.
@@ -133,7 +133,7 @@ lemma toFun_eq_zero_iff (h : P.𝓵 ≠ 0) (φ : HiggsField) (x : SpaceTime) :
 
 ## C. The discriminant
 
-**`StandardModel.HiggsField.Potential.quadDiscrim`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L162).
+**`StandardModel.HiggsField.Potential.quadDiscrim`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L162).
 
 > The discriminant of the quadratic equation formed by the Higgs potential.
 
@@ -141,7 +141,7 @@ lemma toFun_eq_zero_iff (h : P.𝓵 ≠ 0) (φ : HiggsField) (x : SpaceTime) :
 def quadDiscrim (φ : HiggsField) (x : SpaceTime) : ℝ
 ```
 
-**`StandardModel.HiggsField.Potential.quadDiscrim_nonneg`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L165).
+**`StandardModel.HiggsField.Potential.quadDiscrim_nonneg`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L165).
 
 > The discriminant of the quadratic formed by the potential is non-negative.
 
@@ -150,28 +150,28 @@ lemma quadDiscrim_nonneg (h : P.𝓵 ≠ 0) (φ : HiggsField) (x : SpaceTime) :
     0 ≤ P.quadDiscrim φ x
 ```
 
-**`StandardModel.HiggsField.Potential.quadDiscrim_eq_sqrt_mul_sqrt`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L173).
+**`StandardModel.HiggsField.Potential.quadDiscrim_eq_sqrt_mul_sqrt`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L173).
 
 ```lean
 lemma quadDiscrim_eq_sqrt_mul_sqrt (h : P.𝓵 ≠ 0) (φ : HiggsField) (x : SpaceTime) :
     P.quadDiscrim φ x = Real.sqrt (P.quadDiscrim φ x) * Real.sqrt (P.quadDiscrim φ x)
 ```
 
-**`StandardModel.HiggsField.Potential.quadDiscrim_eq_zero_iff`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L177).
+**`StandardModel.HiggsField.Potential.quadDiscrim_eq_zero_iff`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L177).
 
 ```lean
 lemma quadDiscrim_eq_zero_iff (h : P.𝓵 ≠ 0) (φ : HiggsField) (x : SpaceTime) :
     P.quadDiscrim φ x = 0 ↔ P.toFun φ x = - P.μ2 ^ 2 / (4 * P.𝓵)
 ```
 
-**`StandardModel.HiggsField.Potential.quadDiscrim_eq_zero_iff_normSq`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L187).
+**`StandardModel.HiggsField.Potential.quadDiscrim_eq_zero_iff_normSq`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L187).
 
 ```lean
 lemma quadDiscrim_eq_zero_iff_normSq (h : P.𝓵 ≠ 0) (φ : HiggsField) (x : SpaceTime) :
     P.quadDiscrim φ x = 0 ↔ ‖φ‖_H^2 x = P.μ2 / (2 * P.𝓵)
 ```
 
-**`StandardModel.HiggsField.Potential.neg_𝓵_quadDiscrim_zero_bound`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L203).
+**`StandardModel.HiggsField.Potential.neg_𝓵_quadDiscrim_zero_bound`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L203).
 
 > For an element `P` of `Potential`, if `l < 0` then the following upper bound for the potential
 > exists
@@ -183,7 +183,7 @@ lemma neg_𝓵_quadDiscrim_zero_bound (h : P.𝓵 < 0) (φ : HiggsField) (x : Sp
     P.toFun φ x ≤ - P.μ2 ^ 2 / (4 * P.𝓵)
 ```
 
-**`StandardModel.HiggsField.Potential.pos_𝓵_quadDiscrim_zero_bound`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L214).
+**`StandardModel.HiggsField.Potential.pos_𝓵_quadDiscrim_zero_bound`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L214).
 
 > For an element `P` of `Potential`, if `0 < l` then the following lower bound for the potential
 > exists
@@ -195,7 +195,7 @@ lemma pos_𝓵_quadDiscrim_zero_bound (h : 0 < P.𝓵) (φ : HiggsField) (x : Sp
     - P.μ2 ^ 2 / (4 * P.𝓵) ≤ P.toFun φ x
 ```
 
-**`StandardModel.HiggsField.Potential.neg_𝓵_toFun_neg`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L223).
+**`StandardModel.HiggsField.Potential.neg_𝓵_toFun_neg`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L223).
 
 > If `P.𝓵` is negative, then if `P.μ2` is greater than zero, for all space-time points,
 > the potential is negative `P.toFun φ x ≤ 0`.
@@ -205,7 +205,7 @@ lemma neg_𝓵_toFun_neg (h : P.𝓵 < 0) (φ : HiggsField) (x : SpaceTime) :
     (0 < P.μ2 ∧ P.toFun φ x ≤ 0) ∨ P.μ2 ≤ 0
 ```
 
-**`StandardModel.HiggsField.Potential.pos_𝓵_toFun_pos`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L234).
+**`StandardModel.HiggsField.Potential.pos_𝓵_toFun_pos`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L234).
 
 > If `P.𝓵` is bigger then zero, then if `P.μ2` is less than zero, for all space-time points,
 > the potential is positive `0 ≤ P.toFun φ x`.
@@ -215,7 +215,7 @@ lemma pos_𝓵_toFun_pos (h : 0 < P.𝓵) (φ : HiggsField) (x : SpaceTime) :
     (P.μ2 < 0 ∧ 0 ≤ P.toFun φ x) ∨ 0 ≤ P.μ2
 ```
 
-**`StandardModel.HiggsField.Potential.neg_𝓵_sol_exists_iff`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L246).
+**`StandardModel.HiggsField.Potential.neg_𝓵_sol_exists_iff`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L246).
 
 > For an element `P` of `Potential` with `l < 0` and a real `c : ℝ`, there exists
 >   a Higgs field `φ` and a spacetime point `x` such that `P.toFun φ x = c` iff one of the
@@ -230,7 +230,7 @@ lemma neg_𝓵_sol_exists_iff (h𝓵 : P.𝓵 < 0) (c : ℝ) : (∃ φ x, P.toFu
     (P.μ2 ≤ 0 ∧ c ≤ - P.μ2 ^ 2 / (4 * P.𝓵))
 ```
 
-**`StandardModel.HiggsField.Potential.pos_𝓵_sol_exists_iff`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L289).
+**`StandardModel.HiggsField.Potential.pos_𝓵_sol_exists_iff`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L289).
 
 > For an element `P` of `Potential` with `0 < l` and a real `c : ℝ`, there exists
 >   a Higgs field `φ` and a spacetime point `x` such that `P.toFun φ x = c` iff one of the
@@ -247,7 +247,7 @@ lemma pos_𝓵_sol_exists_iff (h𝓵 : 0 < P.𝓵) (c : ℝ) : (∃ φ x, P.toFu
 
 ## D. Boundedness of the potential
 
-**`StandardModel.HiggsField.Potential.IsBounded`**, a def, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L304).
+**`StandardModel.HiggsField.Potential.IsBounded`**, a def, [line 304](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L304).
 
 > The Higgs potential has a uniform lower bound over all field values at spacetime points.
 
@@ -255,7 +255,7 @@ lemma pos_𝓵_sol_exists_iff (h𝓵 : 0 < P.𝓵) (c : ℝ) : (∃ φ x, P.toFu
 def IsBounded : Prop
 ```
 
-**`StandardModel.HiggsField.Potential.isBounded_𝓵_nonneg`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L309).
+**`StandardModel.HiggsField.Potential.isBounded_𝓵_nonneg`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L309).
 
 > Given a element `P` of `Potential` which is bounded,
 > the quartic coefficient `𝓵` of `P` is non-negative.
@@ -264,7 +264,7 @@ def IsBounded : Prop
 lemma isBounded_𝓵_nonneg (h : P.IsBounded) : 0 ≤ P.𝓵
 ```
 
-**`StandardModel.HiggsField.Potential.isBounded_of_𝓵_pos`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L330).
+**`StandardModel.HiggsField.Potential.isBounded_of_𝓵_pos`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L330).
 
 > Given a element `P` of `Potential` with `0 < 𝓵`, then the potential is bounded.
 
@@ -272,7 +272,7 @@ lemma isBounded_𝓵_nonneg (h : P.IsBounded) : 0 ≤ P.𝓵
 lemma isBounded_of_𝓵_pos (h : 0 < P.𝓵) : P.IsBounded
 ```
 
-**`StandardModel.HiggsField.Potential.isBounded_iff_of_𝓵_zero`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L341).
+**`StandardModel.HiggsField.Potential.isBounded_iff_of_𝓵_zero`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L341).
 
 > With zero quartic coupling, the Higgs potential is bounded below exactly when the
 > coefficient `-P.μ2` of the squared norm is nonnegative.
@@ -281,7 +281,7 @@ lemma isBounded_of_𝓵_pos (h : 0 < P.𝓵) : P.IsBounded
 lemma isBounded_iff_of_𝓵_zero (h𝓵 : P.𝓵 = 0) : P.IsBounded ↔ P.μ2 ≤ 0
 ```
 
-**`StandardModel.HiggsField.Potential.isBounded_iff`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L357).
+**`StandardModel.HiggsField.Potential.isBounded_iff`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L357).
 
 > The Higgs potential is bounded below exactly when the quartic coupling is positive or is
 > zero with a nonnegative coefficient of the squared norm.
@@ -292,14 +292,14 @@ lemma isBounded_iff : P.IsBounded ↔ 0 < P.𝓵 ∨ P.𝓵 = 0 ∧ P.μ2 ≤ 0
 
 ## E. Minimum and maximum
 
-**`StandardModel.HiggsField.Potential.eq_zero_iff_of_μSq_nonpos_𝓵_pos`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L373).
+**`StandardModel.HiggsField.Potential.eq_zero_iff_of_μSq_nonpos_𝓵_pos`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L373).
 
 ```lean
 lemma eq_zero_iff_of_μSq_nonpos_𝓵_pos (h𝓵 : 0 < P.𝓵) (hμ2 : P.μ2 ≤ 0) (φ : HiggsField)
     (x : SpaceTime) : P.toFun φ x = 0 ↔ φ x = 0
 ```
 
-**`StandardModel.HiggsField.Potential.isMinOn_iff_of_μSq_nonpos_𝓵_pos`**, a lemma, [line 382](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L382).
+**`StandardModel.HiggsField.Potential.isMinOn_iff_of_μSq_nonpos_𝓵_pos`**, a lemma, [line 382](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L382).
 
 ```lean
 lemma isMinOn_iff_of_μSq_nonpos_𝓵_pos (h𝓵 : 0 < P.𝓵) (hμ2 : P.μ2 ≤ 0) (φ : HiggsField)
@@ -307,7 +307,7 @@ lemma isMinOn_iff_of_μSq_nonpos_𝓵_pos (h𝓵 : 0 < P.𝓵) (hμ2 : P.μ2 ≤
     ↔ P.toFun φ x = 0
 ```
 
-**`StandardModel.HiggsField.Potential.isMinOn_iff_field_of_μSq_nonpos_𝓵_pos`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L400).
+**`StandardModel.HiggsField.Potential.isMinOn_iff_field_of_μSq_nonpos_𝓵_pos`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L400).
 
 ```lean
 lemma isMinOn_iff_field_of_μSq_nonpos_𝓵_pos (h𝓵 : 0 < P.𝓵) (hμ2 : P.μ2 ≤ 0) (φ : HiggsField)
@@ -315,7 +315,7 @@ lemma isMinOn_iff_field_of_μSq_nonpos_𝓵_pos (h𝓵 : 0 < P.𝓵) (hμ2 : P.�
     ↔ φ x = 0
 ```
 
-**`StandardModel.HiggsField.Potential.isMinOn_iff_of_μSq_nonneg_𝓵_pos`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L406).
+**`StandardModel.HiggsField.Potential.isMinOn_iff_of_μSq_nonneg_𝓵_pos`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L406).
 
 ```lean
 lemma isMinOn_iff_of_μSq_nonneg_𝓵_pos (h𝓵 : 0 < P.𝓵) (hμ2 : 0 ≤ P.μ2) (φ : HiggsField)
@@ -323,7 +323,7 @@ lemma isMinOn_iff_of_μSq_nonneg_𝓵_pos (h𝓵 : 0 < P.𝓵) (hμ2 : 0 ≤ P.�
     P.toFun φ x = - P.μ2 ^ 2 / (4 * P.𝓵)
 ```
 
-**`StandardModel.HiggsField.Potential.isMinOn_iff_field_of_μSq_nonneg_𝓵_pos`**, a lemma, [line 423](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L423).
+**`StandardModel.HiggsField.Potential.isMinOn_iff_field_of_μSq_nonneg_𝓵_pos`**, a lemma, [line 423](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L423).
 
 ```lean
 lemma isMinOn_iff_field_of_μSq_nonneg_𝓵_pos (h𝓵 : 0 < P.𝓵) (hμ2 : 0 ≤ P.μ2) (φ : HiggsField)
@@ -331,7 +331,7 @@ lemma isMinOn_iff_field_of_μSq_nonneg_𝓵_pos (h𝓵 : 0 < P.𝓵) (hμ2 : 0 �
     ‖φ‖_H^2 x = P.μ2 /(2 * P.𝓵)
 ```
 
-**`StandardModel.HiggsField.Potential.isMinOn_iff_field_of_𝓵_pos`**, a theorem, [line 435](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L435). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`StandardModel.HiggsField.Potential.isMinOn_iff_field_of_𝓵_pos`**, a theorem, [line 435](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L435). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Given an element `P` of `Potential` with `0 < l`, then the Higgs field `φ` and
 >   spacetime point `x` minimize the potential if and only if one of the following conditions
@@ -345,7 +345,7 @@ theorem isMinOn_iff_field_of_𝓵_pos (h𝓵 : 0 < P.𝓵) (φ : HiggsField) (x 
     (0 ≤ P.μ2 ∧ ‖φ‖_H^2 x = P.μ2 /(2 * P.𝓵)) ∨ (P.μ2 < 0 ∧ φ x = 0)
 ```
 
-**`StandardModel.HiggsField.Potential.isMinOn_iff_field_of_𝓵_zero`**, a lemma, [line 445](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L445).
+**`StandardModel.HiggsField.Potential.isMinOn_iff_field_of_𝓵_zero`**, a lemma, [line 445](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L445).
 
 > With zero quartic coupling, every field value minimizes the potential if the coefficient
 > of the squared norm is zero. If that coefficient is positive, only the zero field value
@@ -357,7 +357,7 @@ lemma isMinOn_iff_field_of_𝓵_zero (h𝓵 : P.𝓵 = 0) (φ : HiggsField) (x :
       P.μ2 = 0 ∨ (P.μ2 < 0 ∧ φ x = 0)
 ```
 
-**`StandardModel.HiggsField.Potential.isMaxOn_iff_isMinOn_neg`**, a lemma, [line 469](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L469).
+**`StandardModel.HiggsField.Potential.isMaxOn_iff_isMinOn_neg`**, a lemma, [line 469](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L469).
 
 ```lean
 lemma isMaxOn_iff_isMinOn_neg (φ : HiggsField) (x : SpaceTime) :
@@ -365,7 +365,7 @@ lemma isMaxOn_iff_isMinOn_neg (φ : HiggsField) (x : SpaceTime) :
     IsMinOn (fun (φ, x) => P.neg.toFun φ x) Set.univ (φ, x)
 ```
 
-**`StandardModel.HiggsField.Potential.isMaxOn_iff_field_of_𝓵_neg`**, a lemma, [line 482](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L482).
+**`StandardModel.HiggsField.Potential.isMaxOn_iff_field_of_𝓵_neg`**, a lemma, [line 482](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean#L482).
 
 > Given an element `P` of `Potential` with `l < 0`, then the Higgs field `φ` and
 >   spacetime point `x` maximizes the potential if and only if one of the following conditions
@@ -385,4 +385,4 @@ lemma isMaxOn_iff_field_of_𝓵_neg (h𝓵 : P.𝓵 < 0) (φ : HiggsField) (x : 
 
 ## Sources
 
-- [Physlib/Particles/StandardModel/HiggsBoson/Potential.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean)
+- [Physlib/Particles/StandardModel/HiggsBoson/Potential.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/HiggsBoson/Potential.lean)

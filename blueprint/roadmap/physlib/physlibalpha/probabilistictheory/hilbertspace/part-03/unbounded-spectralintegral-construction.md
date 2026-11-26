@@ -8,7 +8,7 @@ proof: formalized
 
 # Integrating unbounded functions against a spectral measure
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.SpectralIntegral.Construction`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean): 67 declarations, 14 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.SpectralIntegral.Construction`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean): 67 declarations, 14 with a docstring.
 
 > The maximal spectral integral `∫ f dμ` of an unbounded function, built from bounded truncations.
 
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.SpectralInte
 
 > * None.
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationFunction`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L64).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationFunction`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L64).
 
 > The bounded real spectral variable truncated to `[-n,n]`.
 
@@ -46,7 +46,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.SpectralInte
 def truncationFunction (n : ℕ) : ℝ → ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.realTruncationFunction`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L68).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.realTruncationFunction`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L68).
 
 > The real-truncation indicator function, real-valued, at cutoff `n`.
 
@@ -54,7 +54,7 @@ def truncationFunction (n : ℕ) : ℝ → ℂ
 def realTruncationFunction (n : ℕ) : ℝ → ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralCutoffSet`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L72).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralCutoffSet`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L72).
 
 > The spectral cutoff set `[-n, n]`.
 
@@ -62,67 +62,67 @@ def realTruncationFunction (n : ℕ) : ℝ → ℝ
 def spectralCutoffSet (n : ℕ) : Set ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralCutoffSet_mono`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L74).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralCutoffSet_mono`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L74).
 
 ```lean
 lemma spectralCutoffSet_mono : Monotone spectralCutoffSet
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralCutoffSet_iUnion`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L79).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralCutoffSet_iUnion`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L79).
 
 ```lean
 lemma spectralCutoffSet_iUnion : ⋃ n, spectralCutoffSet n = Set.univ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationFunction_measurable`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L85).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationFunction_measurable`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L85).
 
 ```lean
 lemma truncationFunction_measurable (n : ℕ) : Measurable (truncationFunction n)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationFunction_bounded`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L88).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationFunction_bounded`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L88).
 
 ```lean
 lemma truncationFunction_bounded (n : ℕ) :
     ∃ C : ℝ, ∀ r, ‖truncationFunction n r‖ ≤ C
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.realTruncationFunction_measurable`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L97).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.realTruncationFunction_measurable`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L97).
 
 ```lean
 lemma realTruncationFunction_measurable (n : ℕ) :
     Measurable (realTruncationFunction n)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.realTruncationFunction_bounded`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L101).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.realTruncationFunction_bounded`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L101).
 
 ```lean
 lemma realTruncationFunction_bounded (n : ℕ) :
     ∃ C : ℝ, ∀ r, |realTruncationFunction n r| ≤ C
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.realTruncationFunction_complex_eq`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L109).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.realTruncationFunction_complex_eq`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L109).
 
 ```lean
 lemma realTruncationFunction_complex_eq (n : ℕ) :
     (fun r => (realTruncationFunction n r : ℂ)) = truncationFunction n
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationFunction_eventually_eq`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L115).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationFunction_eventually_eq`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L115).
 
 ```lean
 lemma truncationFunction_eventually_eq (r : ℝ) :
     ∀ᶠ n : ℕ in Filter.atTop, truncationFunction n r = (r : ℂ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationFunction_tendsto`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L123).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationFunction_tendsto`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L123).
 
 ```lean
 lemma truncationFunction_tendsto (r : ℝ) :
     Filter.Tendsto (fun n : ℕ => truncationFunction n r) Filter.atTop (𝓝 (r : ℂ))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_inner_tendsto_complexWeakIntegral`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L127).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_inner_tendsto_complexWeakIntegral`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L127).
 
 ```lean
 lemma truncationIntegral_inner_tendsto_complexWeakIntegral
@@ -134,7 +134,7 @@ lemma truncationIntegral_inner_tendsto_complexWeakIntegral
       Filter.atTop (𝓝 (μS.complexWeakIntegral (fun r : ℝ => (r : ℂ)) x y))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.integral_indicator_real_eq_complex`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L160).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.integral_indicator_real_eq_complex`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L160).
 
 ```lean
 lemma integral_indicator_real_eq_complex
@@ -146,7 +146,7 @@ lemma integral_indicator_real_eq_complex
         ∂[ContinuousLinearMap.lsmul ℝ ℂ; μ]
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.integral_real_eq_complex`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L173).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.integral_real_eq_complex`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L173).
 
 ```lean
 lemma integral_real_eq_complex
@@ -156,7 +156,7 @@ lemma integral_real_eq_complex
       ∫ᵛ x, (g x : ℂ) ∂[ContinuousLinearMap.lsmul ℝ ℂ; μ]
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral`**, a def, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L250).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral`**, a def, [line 250](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L250).
 
 > The bounded operator obtained by integrating the `n`-th truncated spectral variable.
 
@@ -164,7 +164,7 @@ lemma integral_real_eq_complex
 noncomputable def truncationIntegral (μS : WOTSpectralMeasure ℝ H) (n : ℕ) : H →WOT[ℂ] H
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_sub_apply`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L254).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_sub_apply`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L254).
 
 ```lean
 lemma truncationIntegral_sub_apply (μS : WOTSpectralMeasure ℝ H) (n m : ℕ) (x : H) :
@@ -178,7 +178,7 @@ lemma truncationIntegral_sub_apply (μS : WOTSpectralMeasure ℝ H) (n m : ℕ) 
           exact (norm_sub_le _ _).trans (add_le_add (hCn r) (hCm r))) x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.diagonalMeasure_add_le`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L270).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.diagonalMeasure_add_le`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L270).
 
 ```lean
 lemma diagonalMeasure_add_le (μS : WOTSpectralMeasure ℝ H) (x y : H) :
@@ -187,14 +187,14 @@ lemma diagonalMeasure_add_le (μS : WOTSpectralMeasure ℝ H) (x y : H) :
         (μS.diagonalMeasure y + μS.diagonalMeasure y)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralSquareMomentDomain_zero`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L285).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralSquareMomentDomain_zero`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L285).
 
 ```lean
 lemma spectralSquareMomentDomain_zero (μS : WOTSpectralMeasure ℝ H) :
     (0 : H) ∈ spectralSquareMomentDomain μS
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralSquareMomentDomain_add`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L292).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralSquareMomentDomain_add`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L292).
 
 ```lean
 lemma spectralSquareMomentDomain_add (μS : WOTSpectralMeasure ℝ H) {x y : H}
@@ -203,7 +203,7 @@ lemma spectralSquareMomentDomain_add (μS : WOTSpectralMeasure ℝ H) {x y : H}
     x + y ∈ spectralSquareMomentDomain μS
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralSquareMomentDomain_smul`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L301).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralSquareMomentDomain_smul`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L301).
 
 ```lean
 lemma spectralSquareMomentDomain_smul (μS : WOTSpectralMeasure ℝ H) (c : ℂ) {x : H}
@@ -211,7 +211,7 @@ lemma spectralSquareMomentDomain_smul (μS : WOTSpectralMeasure ℝ H) (c : ℂ)
     c • x ∈ spectralSquareMomentDomain μS
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralSquareMomentSubmodule`**, a def, [line 309](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L309).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralSquareMomentSubmodule`**, a def, [line 309](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L309).
 
 > The vectors of finite second moment, as a submodule.
 
@@ -219,7 +219,7 @@ lemma spectralSquareMomentDomain_smul (μS : WOTSpectralMeasure ℝ H) (c : ℂ)
 def spectralSquareMomentSubmodule (μS : WOTSpectralMeasure ℝ H) : Submodule ℂ H
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_sub_norm_sq`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L315).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_sub_norm_sq`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L315).
 
 ```lean
 lemma truncationIntegral_sub_norm_sq (μS : WOTSpectralMeasure ℝ H) (n m : ℕ) (x : H) :
@@ -229,7 +229,7 @@ lemma truncationIntegral_sub_norm_sq (μS : WOTSpectralMeasure ℝ H) (n m : ℕ
         ∂μS.diagonalMeasure x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_sub_norm_sq_le`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L329).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_sub_norm_sq_le`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L329).
 
 ```lean
 lemma truncationIntegral_sub_norm_sq_le (μS : WOTSpectralMeasure ℝ H) (n m : ℕ) (x : H) :
@@ -240,7 +240,7 @@ lemma truncationIntegral_sub_norm_sq_le (μS : WOTSpectralMeasure ℝ H) (n m : 
           (‖truncationFunction m r - (r : ℂ)‖ ^ 2) ∂μS.diagonalMeasure x)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncation_error_lintegral_tendsto_zero`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L386).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncation_error_lintegral_tendsto_zero`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L386).
 
 ```lean
 lemma truncation_error_lintegral_tendsto_zero
@@ -252,7 +252,7 @@ lemma truncation_error_lintegral_tendsto_zero
       Filter.atTop (𝓝 0)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_cauchy`**, a lemma, [line 449](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L449).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_cauchy`**, a lemma, [line 449](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L449).
 
 ```lean
 lemma truncationIntegral_cauchy (μS : WOTSpectralMeasure ℝ H) {x : H}
@@ -260,7 +260,7 @@ lemma truncationIntegral_cauchy (μS : WOTSpectralMeasure ℝ H) {x : H}
     CauchySeq (fun n : ℕ => truncationIntegral μS n x)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncation_norm_lintegral_tendsto`**, a lemma, [line 504](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L504).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncation_norm_lintegral_tendsto`**, a lemma, [line 504](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L504).
 
 ```lean
 lemma truncation_norm_lintegral_tendsto
@@ -273,7 +273,7 @@ lemma truncation_norm_lintegral_tendsto
       (𝓝 (∫⁻ r, ENNReal.ofReal (r ^ 2) ∂μS.diagonalMeasure x))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationLimit`**, a def, [line 557](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L557).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationLimit`**, a def, [line 557](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L557).
 
 > The limit of the truncated spectral integrals, for `x` in the finite-second-moment domain.
 
@@ -282,7 +282,7 @@ noncomputable def truncationLimit (μS : WOTSpectralMeasure ℝ H)
     (x : spectralSquareMomentSubmodule μS) : H
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationLimit_tendsto`**, a lemma, [line 561](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L561).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationLimit_tendsto`**, a lemma, [line 561](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L561).
 
 ```lean
 lemma truncationLimit_tendsto (μS : WOTSpectralMeasure ℝ H)
@@ -291,7 +291,7 @@ lemma truncationLimit_tendsto (μS : WOTSpectralMeasure ℝ H)
       (𝓝 (truncationLimit μS x))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationLimit_add`**, a lemma, [line 567](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L567).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationLimit_add`**, a lemma, [line 567](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L567).
 
 ```lean
 lemma truncationLimit_add (μS : WOTSpectralMeasure ℝ H)
@@ -299,7 +299,7 @@ lemma truncationLimit_add (μS : WOTSpectralMeasure ℝ H)
     truncationLimit μS (x + y) = truncationLimit μS x + truncationLimit μS y
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationLimit_smul`**, a lemma, [line 577](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L577).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationLimit_smul`**, a lemma, [line 577](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L577).
 
 ```lean
 lemma truncationLimit_smul (μS : WOTSpectralMeasure ℝ H)
@@ -307,7 +307,7 @@ lemma truncationLimit_smul (μS : WOTSpectralMeasure ℝ H)
     truncationLimit μS (c • x) = c • truncationLimit μS x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_norm_sq`**, a lemma, [line 587](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L587).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_norm_sq`**, a lemma, [line 587](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L587).
 
 ```lean
 lemma truncationIntegral_norm_sq (μS : WOTSpectralMeasure ℝ H) (n : ℕ) (x : H) :
@@ -316,14 +316,14 @@ lemma truncationIntegral_norm_sq (μS : WOTSpectralMeasure ℝ H) (n : ℕ) (x :
         ∂μS.diagonalMeasure x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_star`**, a lemma, [line 594](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L594).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_star`**, a lemma, [line 594](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L594).
 
 ```lean
 lemma truncationIntegral_star (μS : WOTSpectralMeasure ℝ H) (n : ℕ) :
     star (truncationIntegral μS n) = truncationIntegral μS n
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_inner_swap`**, a lemma, [line 612](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L612).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_inner_swap`**, a lemma, [line 612](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L612).
 
 ```lean
 lemma truncationIntegral_inner_swap (μS : WOTSpectralMeasure ℝ H) (n : ℕ)
@@ -331,7 +331,7 @@ lemma truncationIntegral_inner_swap (μS : WOTSpectralMeasure ℝ H) (n : ℕ)
     ⟪truncationIntegral μS n x, y⟫_ℂ = ⟪x, truncationIntegral μS n y⟫_ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral`**, a def, [line 623](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L623).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral`**, a def, [line 623](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L623).
 
 > The maximal operator obtained from a real weak spectral measure by norm convergence of bounded
 > truncations.  Its domain is exactly the square-moment submodule.
@@ -341,14 +341,14 @@ noncomputable def maximalSpectralIntegral
     (μS : WOTSpectralMeasure ℝ H) : H →ₗ.[ℂ] H
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_isSymmetric`**, a lemma, [line 630](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L630).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_isSymmetric`**, a lemma, [line 630](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L630).
 
 ```lean
 lemma maximalSpectralIntegral_isSymmetric (μS : WOTSpectralMeasure ℝ H) :
     (maximalSpectralIntegral μS).IsSymmetric
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralCutoff_mem_spectralSquareMomentDomain`**, a lemma, [line 651](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L651).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralCutoff_mem_spectralSquareMomentDomain`**, a lemma, [line 651](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L651).
 
 ```lean
 lemma spectralCutoff_mem_spectralSquareMomentDomain
@@ -356,7 +356,7 @@ lemma spectralCutoff_mem_spectralSquareMomentDomain
     μS (Set.Icc (-C) C) x ∈ spectralSquareMomentDomain μS
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.diagonalMeasure_cutoff_compl_tendsto_zero`**, a lemma, [line 676](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L676).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.diagonalMeasure_cutoff_compl_tendsto_zero`**, a lemma, [line 676](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L676).
 
 ```lean
 lemma diagonalMeasure_cutoff_compl_tendsto_zero
@@ -366,7 +366,7 @@ lemma diagonalMeasure_cutoff_compl_tendsto_zero
       Filter.atTop (𝓝 0)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralCutoff_tendsto`**, a lemma, [line 701](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L701).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.spectralCutoff_tendsto`**, a lemma, [line 701](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L701).
 
 ```lean
 lemma spectralCutoff_tendsto (μS : WOTSpectralMeasure ℝ H) (x : H) :
@@ -374,42 +374,42 @@ lemma spectralCutoff_tendsto (μS : WOTSpectralMeasure ℝ H) (x : H) :
       (fun n : ℕ => μS (spectralCutoffSet n) x) Filter.atTop (𝓝 x)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_hasDenseDomain`**, a lemma, [line 740](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L740).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_hasDenseDomain`**, a lemma, [line 740](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L740).
 
 ```lean
 lemma maximalSpectralIntegral_hasDenseDomain (μS : WOTSpectralMeasure ℝ H) :
     (maximalSpectralIntegral μS).HasDenseDomain
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_isClosable`**, a lemma, [line 750](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L750).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_isClosable`**, a lemma, [line 750](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L750).
 
 ```lean
 lemma maximalSpectralIntegral_isClosable (μS : WOTSpectralMeasure ℝ H) :
     (maximalSpectralIntegral μS).IsClosable
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_isUnbounded`**, a lemma, [line 758](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L758).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_isUnbounded`**, a lemma, [line 758](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L758).
 
 ```lean
 lemma maximalSpectralIntegral_isUnbounded (μS : WOTSpectralMeasure ℝ H) :
     (maximalSpectralIntegral μS).IsUnbounded
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_closure_isClosed`**, a lemma, [line 763](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L763).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_closure_isClosed`**, a lemma, [line 763](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L763).
 
 ```lean
 lemma maximalSpectralIntegral_closure_isClosed (μS : WOTSpectralMeasure ℝ H) :
     (maximalSpectralIntegral μS).closure.IsClosed
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_closure_isSymmetric`**, a lemma, [line 767](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L767).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_closure_isSymmetric`**, a lemma, [line 767](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L767).
 
 ```lean
 lemma maximalSpectralIntegral_closure_isSymmetric (μS : WOTSpectralMeasure ℝ H) :
     (maximalSpectralIntegral μS).closure.IsSymmetric
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_isEssentiallySelfAdjoint_iff`**, a lemma, [line 772](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L772).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_isEssentiallySelfAdjoint_iff`**, a lemma, [line 772](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L772).
 
 ```lean
 lemma maximalSpectralIntegral_isEssentiallySelfAdjoint_iff (μS : WOTSpectralMeasure ℝ H) :
@@ -417,7 +417,7 @@ lemma maximalSpectralIntegral_isEssentiallySelfAdjoint_iff (μS : WOTSpectralMea
       IsSelfAdjoint (maximalSpectralIntegral μS).closure
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_isSelfAdjoint_of_range_eq_top`**, a lemma, [line 777](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L777).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_isSelfAdjoint_of_range_eq_top`**, a lemma, [line 777](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L777).
 
 > If `T ± i` have full range for the integral `T` of the identity, then `T` is self-adjoint.
 
@@ -429,7 +429,7 @@ lemma maximalSpectralIntegral_isSelfAdjoint_of_range_eq_top
     IsSelfAdjoint (maximalSpectralIntegral μS)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_closure_eq_self`**, a lemma, [line 790](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L790).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_closure_eq_self`**, a lemma, [line 790](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L790).
 
 > The closure of the canonical PVM realization is self-adjoint under the same resolvent
 > surjectivity hypotheses.  The stronger conclusion is exposed separately because downstream
@@ -444,7 +444,7 @@ lemma maximalSpectralIntegral_closure_eq_self
     (maximalSpectralIntegral μS).closure = maximalSpectralIntegral μS
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_isEssentiallySelfAdjoint_of_range_eq_top`**, a lemma, [line 798](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L798).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_isEssentiallySelfAdjoint_of_range_eq_top`**, a lemma, [line 798](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L798).
 
 ```lean
 lemma maximalSpectralIntegral_isEssentiallySelfAdjoint_of_range_eq_top
@@ -454,7 +454,7 @@ lemma maximalSpectralIntegral_isEssentiallySelfAdjoint_of_range_eq_top
     (maximalSpectralIntegral μS).IsEssentiallySelfAdjoint
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_norm_sq`**, a lemma, [line 807](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L807).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_norm_sq`**, a lemma, [line 807](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L807).
 
 ```lean
 lemma maximalSpectralIntegral_norm_sq (μS : WOTSpectralMeasure ℝ H)
@@ -463,14 +463,14 @@ lemma maximalSpectralIntegral_norm_sq (μS : WOTSpectralMeasure ℝ H)
       ∫⁻ r, ENNReal.ofReal (r ^ 2) ∂μS.diagonalMeasure x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_domain`**, a lemma, [line 827](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L827).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_domain`**, a lemma, [line 827](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L827).
 
 ```lean
 lemma maximalSpectralIntegral_domain (μS : WOTSpectralMeasure ℝ H) :
     (maximalSpectralIntegral μS).domain = spectralSquareMomentSubmodule μS
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_apply`**, a lemma, [line 830](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L830).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_apply`**, a lemma, [line 830](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L830).
 
 ```lean
 lemma maximalSpectralIntegral_apply (μS : WOTSpectralMeasure ℝ H)
@@ -478,7 +478,7 @@ lemma maximalSpectralIntegral_apply (μS : WOTSpectralMeasure ℝ H)
     (maximalSpectralIntegral μS) ⟨x, hx⟩ = truncationLimit μS ⟨x, hx⟩
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.scalarMeasure_inner_projection`**, a lemma, [line 833](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L833).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.scalarMeasure_inner_projection`**, a lemma, [line 833](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L833).
 
 ```lean
 lemma scalarMeasure_inner_projection (μS : WOTSpectralMeasure ℝ H)
@@ -486,7 +486,7 @@ lemma scalarMeasure_inner_projection (μS : WOTSpectralMeasure ℝ H)
     ⟪y, μS S x⟫_ℂ = ⟪μS S y, μS S x⟫_ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.scalarMeasure_variation_le_diagonal_add`**, a lemma, [line 855](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L855).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.scalarMeasure_variation_le_diagonal_add`**, a lemma, [line 855](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L855).
 
 ```lean
 lemma scalarMeasure_variation_le_diagonal_add (μS : WOTSpectralMeasure ℝ H)
@@ -494,14 +494,14 @@ lemma scalarMeasure_variation_le_diagonal_add (μS : WOTSpectralMeasure ℝ H)
     (μS.scalarMeasure x y).variation ≤ μS.diagonalMeasure x + μS.diagonalMeasure y
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.scalarMeasure_isFiniteVariation`**, a lemma, [line 871](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L871).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.scalarMeasure_isFiniteVariation`**, a lemma, [line 871](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L871).
 
 ```lean
 lemma scalarMeasure_isFiniteVariation (μS : WOTSpectralMeasure ℝ H)
     (x y : H) : IsFiniteMeasure (μS.scalarMeasure x y).variation
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_inner_tendsto_weakIntegral`**, a lemma, [line 877](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L877).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_inner_tendsto_weakIntegral`**, a lemma, [line 877](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L877).
 
 ```lean
 lemma truncationIntegral_inner_tendsto_weakIntegral
@@ -513,7 +513,7 @@ lemma truncationIntegral_inner_tendsto_weakIntegral
       Filter.atTop (𝓝 (μS.weakIntegral id x y))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_inner`**, a lemma, [line 916](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L916).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_inner`**, a lemma, [line 916](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L916).
 
 ```lean
 lemma boundedIntegral_inner
@@ -526,7 +526,7 @@ lemma boundedIntegral_inner
         μS.scalarMeasure x y]
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_inner`**, a lemma, [line 933](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L933).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.truncationIntegral_inner`**, a lemma, [line 933](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L933).
 
 ```lean
 lemma truncationIntegral_inner (μS : WOTSpectralMeasure ℝ H) (n : ℕ)
@@ -536,7 +536,7 @@ lemma truncationIntegral_inner (μS : WOTSpectralMeasure ℝ H) (n : ℕ)
         μS.scalarMeasure x y]
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_weak_truncation_reconstruction`**, a lemma, [line 941](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L941).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_weak_truncation_reconstruction`**, a lemma, [line 941](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L941).
 
 ```lean
 lemma maximalSpectralIntegral_weak_truncation_reconstruction
@@ -555,7 +555,7 @@ lemma maximalSpectralIntegral_weak_truncation_reconstruction
 > spectral variable.  This is the concrete operator realization of the representation-free
 > `PVM.map` operation used by the affiliated-observable API.
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral`**, a def, [line 970](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L970).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral`**, a def, [line 970](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L970).
 
 > The maximal unbounded operator obtained by integrating a measurable real function against a
 > weak spectral measure.  It is defined by PVM pushforward, so no second truncation construction is
@@ -566,14 +566,14 @@ noncomputable def measurableSpectralIntegral (μS : WOTSpectralMeasure ℝ H)
     (f : ℝ → ℝ) (hf : Measurable f) : H →ₗ.[ℂ] H
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_id`**, a lemma, [line 975](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L975).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_id`**, a lemma, [line 975](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L975).
 
 ```lean
 lemma measurableSpectralIntegral_id (μS : WOTSpectralMeasure ℝ H) :
     measurableSpectralIntegral μS id measurable_id = maximalSpectralIntegral μS
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_comp`**, a lemma, [line 980](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L980).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_comp`**, a lemma, [line 980](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L980).
 
 ```lean
 lemma measurableSpectralIntegral_comp
@@ -583,7 +583,7 @@ lemma measurableSpectralIntegral_comp
       measurableSpectralIntegral μS (g ∘ f) (hg.comp hf)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_domain`**, a lemma, [line 991](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L991).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_domain`**, a lemma, [line 991](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L991).
 
 ```lean
 lemma measurableSpectralIntegral_domain (μS : WOTSpectralMeasure ℝ H)
@@ -592,7 +592,7 @@ lemma measurableSpectralIntegral_domain (μS : WOTSpectralMeasure ℝ H)
       spectralSquareMomentSubmodule (μS.map f hf)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.mem_measurableSpectralIntegral_domain_iff`**, a lemma, [line 999](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L999).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.mem_measurableSpectralIntegral_domain_iff`**, a lemma, [line 999](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L999).
 
 > The domain of `∫ f dE` is exactly the square-integrability domain of `f` against every
 > vector-state spectral measure.
@@ -604,7 +604,7 @@ lemma mem_measurableSpectralIntegral_domain_iff (μS : WOTSpectralMeasure ℝ H)
       Integrable (fun r : ℝ => f r ^ 2) (μS.diagonalMeasure x)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_domain_eq_top_of_bounded`**, a lemma, [line 1013](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L1013).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_domain_eq_top_of_bounded`**, a lemma, [line 1013](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L1013).
 
 > A bounded measurable real multiplier has no unbounded domain restriction.  This is the
 > bounded-to-unbounded boundary in the reusable calculus: the same pushforward construction handles
@@ -617,7 +617,7 @@ lemma measurableSpectralIntegral_domain_eq_top_of_bounded
     (measurableSpectralIntegral μS f hf).domain = ⊤
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_inner_eq_complexWeakIntegral`**, a lemma, [line 1029](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L1029).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_inner_eq_complexWeakIntegral`**, a lemma, [line 1029](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L1029).
 
 > Weak reconstruction for a measurable real multiplier.  The only integrability assumption is
 > the natural one on the original scalar spectral measure; the pushforward identity transports it
@@ -632,7 +632,7 @@ lemma measurableSpectralIntegral_inner_eq_complexWeakIntegral
       μS.complexWeakIntegral (fun r : ℝ => (f r : ℂ)) x y
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_ofReal_eq_measurableSpectralIntegral`**, a lemma, [line 1057](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L1057).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_ofReal_eq_measurableSpectralIntegral`**, a lemma, [line 1057](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L1057).
 
 > For a bounded real function the bounded integral and the maximal integral are the same operator.
 
@@ -658,7 +658,7 @@ lemma boundedIntegral_ofReal_eq_measurableSpectralIntegral
 > only uses the PVM norm-square identity, so it is also useful for bounded functional calculus
 > approximations unrelated to the Cayley transform.
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_tendsto_of_pointwise_tendsto_of_bound`**, a lemma, [line 1101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L1101).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_tendsto_of_pointwise_tendsto_of_bound`**, a lemma, [line 1101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean#L1101).
 
 ```lean
 lemma boundedIntegral_tendsto_of_pointwise_tendsto_of_bound
@@ -683,4 +683,4 @@ lemma boundedIntegral_tendsto_of_pointwise_tendsto_of_bound
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean)

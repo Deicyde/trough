@@ -8,7 +8,7 @@ proof: formalized
 
 # Small-angle motion of the simple gravity pendulum
 
-The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.SmallAngle`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean): 29 declarations, 29 with a docstring.
+The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.SmallAngle`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean): 29 declarations, 29 with a docstring.
 
 ## i. Overview
 
@@ -104,7 +104,7 @@ The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.SmallAngle`, [Phy
 > The data of the associated oscillator: the mass `I = m ℓ²` and the spring constant `m g ℓ`,
 > both positive because the data of the pendulum is.
 
-**`ClassicalMechanics.SimplePendulum.toHarmonicOscillator`**, a def, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L152).
+**`ClassicalMechanics.SimplePendulum.toHarmonicOscillator`**, a def, [line 152](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L152).
 
 > The harmonic oscillator to which the pendulum linearizes: mass `I = m ℓ²`, spring
 > constant `m g ℓ`.
@@ -113,7 +113,7 @@ The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.SmallAngle`, [Phy
 noncomputable def toHarmonicOscillator : HarmonicOscillator
 ```
 
-**`ClassicalMechanics.SimplePendulum.toHarmonicOscillator_m`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L161).
+**`ClassicalMechanics.SimplePendulum.toHarmonicOscillator_m`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L161).
 
 > The mass of the harmonic oscillator associated to the simple pendulum is the moment of
 > inertia `I = m ℓ²` of the pendulum about its pivot.
@@ -122,7 +122,7 @@ noncomputable def toHarmonicOscillator : HarmonicOscillator
 lemma toHarmonicOscillator_m : S.toHarmonicOscillator.m = S.inertia
 ```
 
-**`ClassicalMechanics.SimplePendulum.toHarmonicOscillator_k`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L166).
+**`ClassicalMechanics.SimplePendulum.toHarmonicOscillator_k`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L166).
 
 > The spring constant of the harmonic oscillator associated to the simple pendulum is
 > `m g ℓ`, the coefficient of the linearized torque.
@@ -137,7 +137,7 @@ lemma toHarmonicOscillator_k : S.toHarmonicOscillator.k = S.m * S.g * S.ℓ
 > mass cancelling, to `√(g/ℓ)`: the constant `ω` of the pendulum, as promised by its description
 > in `SimplePendulum.Basic` as the frequency of the small oscillations.
 
-**`ClassicalMechanics.SimplePendulum.toHarmonicOscillator_ω`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L180).
+**`ClassicalMechanics.SimplePendulum.toHarmonicOscillator_ω`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L180).
 
 > The angular frequency of the harmonic oscillator associated to the simple pendulum is the
 > angular frequency `ω = √(g/ℓ)` of the small oscillations of the pendulum.
@@ -159,7 +159,7 @@ lemma toHarmonicOscillator_ω : S.toHarmonicOscillator.ω = S.ω
 > The equation `θ̈ + ω² θ = 0`, together with its rotational Newton form `I θ̈ = -m g ℓ θ`, in
 > which the right-hand side is the force of the associated harmonic oscillator.
 
-**`ClassicalMechanics.SimplePendulum.LinearizedEquationOfMotion`**, a def, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L210).
+**`ClassicalMechanics.SimplePendulum.LinearizedEquationOfMotion`**, a def, [line 210](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L210).
 
 > The linearized equation of motion `θ̈ + ω² θ = 0` of the simple pendulum, the small-angle
 > form of the equation of motion, in which the torque is replaced by its linearization at the
@@ -169,7 +169,7 @@ lemma toHarmonicOscillator_ω : S.toHarmonicOscillator.ω = S.ω
 def LinearizedEquationOfMotion (θ : Time → EuclideanSpace ℝ (Fin 1)) : Prop
 ```
 
-**`ClassicalMechanics.SimplePendulum.linearizedEquationOfMotion_iff_newton`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L217).
+**`ClassicalMechanics.SimplePendulum.linearizedEquationOfMotion_iff_newton`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L217).
 
 > The linearized equation of motion in the rotational form of Newton's second law: at every
 > instant the rate of change `I θ̈` of the angular momentum equals the force `-m g ℓ θ` of the
@@ -189,7 +189,7 @@ lemma linearizedEquationOfMotion_iff_newton (θ : Time → EuclideanSpace ℝ (F
 > solution theory of the harmonic oscillator thereby becomes available to the small oscillations
 > of the pendulum.
 
-**`ClassicalMechanics.SimplePendulum.linearizedEquationOfMotion_iff`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L242).
+**`ClassicalMechanics.SimplePendulum.linearizedEquationOfMotion_iff`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L242).
 
 > For a smooth lift of the angle, the linearized equation of motion of the simple pendulum is
 > the equation of motion of the associated harmonic oscillator. The oscillator's equation of
@@ -212,7 +212,7 @@ lemma linearizedEquationOfMotion_iff (θ : Time → EuclideanSpace ℝ (Fin 1))
 > with the torque replaced by its derivative at the equilibrium — linearizing the pendulum is
 > differentiating its torque.
 
-**`ClassicalMechanics.SimplePendulum.fderiv_torque_zero_apply`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L264).
+**`ClassicalMechanics.SimplePendulum.fderiv_torque_zero_apply`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L264).
 
 > The derivative of the torque at the hanging equilibrium is the force of the associated
 > harmonic oscillator: `(Dτ)(0) v = -m g ℓ v`. Linearizing the pendulum is differentiating
@@ -223,7 +223,7 @@ lemma fderiv_torque_zero_apply (v : EuclideanSpace ℝ (Fin 1)) :
     fderiv ℝ S.torque 0 v = S.toHarmonicOscillator.force v
 ```
 
-**`ClassicalMechanics.SimplePendulum.linearizedEquationOfMotion_iff_fderiv_torque`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L286).
+**`ClassicalMechanics.SimplePendulum.linearizedEquationOfMotion_iff_fderiv_torque`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L286).
 
 > The linearized equation of motion is the equation of motion with the torque replaced by
 > its derivative at the hanging equilibrium.
@@ -250,7 +250,7 @@ lemma linearizedEquationOfMotion_iff_fderiv_torque (θ : Time → EuclideanSpace
 > written out it is the familiar `cos (ω t) x₀ + (sin (ω t)/ω) v₀`, with the frequency of the
 > oscillator read as the `ω` of the pendulum.
 
-**`ClassicalMechanics.SimplePendulum.smallAngleTrajectory`**, a def, [line 319](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L319).
+**`ClassicalMechanics.SimplePendulum.smallAngleTrajectory`**, a def, [line 319](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L319).
 
 > The small-angle motion of the simple pendulum with initial angle `IC.x₀` and initial
 > angular velocity `IC.v₀`: the trajectory of the associated harmonic oscillator with the same
@@ -261,7 +261,7 @@ noncomputable def smallAngleTrajectory (IC : HarmonicOscillator.InitialCondition
     Time → EuclideanSpace ℝ (Fin 1)
 ```
 
-**`ClassicalMechanics.SimplePendulum.smallAngleTrajectory_contDiff`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L325).
+**`ClassicalMechanics.SimplePendulum.smallAngleTrajectory_contDiff`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L325).
 
 > The small-angle trajectories of the simple pendulum are smooth in time.
 
@@ -270,7 +270,7 @@ lemma smallAngleTrajectory_contDiff (IC : HarmonicOscillator.InitialConditions)
     {n : WithTop ℕ∞} : ContDiff ℝ n (S.smallAngleTrajectory IC)
 ```
 
-**`ClassicalMechanics.SimplePendulum.smallAngleTrajectory_at_zero`**, a lemma, [line 331](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L331).
+**`ClassicalMechanics.SimplePendulum.smallAngleTrajectory_at_zero`**, a lemma, [line 331](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L331).
 
 > At time `0` the small-angle trajectory passes through its initial angle.
 
@@ -279,7 +279,7 @@ lemma smallAngleTrajectory_at_zero (IC : HarmonicOscillator.InitialConditions) :
     S.smallAngleTrajectory IC 0 = IC.x₀
 ```
 
-**`ClassicalMechanics.SimplePendulum.smallAngleTrajectory_velocity_at_zero`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L337).
+**`ClassicalMechanics.SimplePendulum.smallAngleTrajectory_velocity_at_zero`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L337).
 
 > At time `0` the small-angle trajectory moves with its initial angular velocity.
 
@@ -288,7 +288,7 @@ lemma smallAngleTrajectory_velocity_at_zero (IC : HarmonicOscillator.InitialCond
     ∂ₜ (S.smallAngleTrajectory IC) 0 = IC.v₀
 ```
 
-**`ClassicalMechanics.SimplePendulum.smallAngleTrajectory_eq`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L344).
+**`ClassicalMechanics.SimplePendulum.smallAngleTrajectory_eq`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L344).
 
 > The closed form of the small-angle motion: `cos (ω t) x₀ + (sin (ω t)/ω) v₀`, the
 > trajectory of the associated harmonic oscillator with its frequency read as the `ω` of the
@@ -308,7 +308,7 @@ lemma smallAngleTrajectory_eq (IC : HarmonicOscillator.InitialConditions) :
 > harmonic oscillator, read through the equivalence `linearizedEquationOfMotion_iff` of the two
 > equations of motion.
 
-**`ClassicalMechanics.SimplePendulum.smallAngleTrajectory_linearizedEquationOfMotion`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L364).
+**`ClassicalMechanics.SimplePendulum.smallAngleTrajectory_linearizedEquationOfMotion`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L364).
 
 > The small-angle trajectories satisfy the linearized equation of motion: for every choice
 > of initial conditions the linearized equation has a smooth solution assuming them.
@@ -319,7 +319,7 @@ lemma smallAngleTrajectory_linearizedEquationOfMotion
     S.LinearizedEquationOfMotion (S.smallAngleTrajectory IC)
 ```
 
-**`ClassicalMechanics.SimplePendulum.linearized_unique`**, a lemma, [line 374](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L374).
+**`ClassicalMechanics.SimplePendulum.linearized_unique`**, a lemma, [line 374](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L374).
 
 > Uniqueness of the small-angle motions: a smooth solution of the linearized equation of
 > motion is determined by its initial angle and initial angular velocity, being the
@@ -347,7 +347,7 @@ lemma linearized_unique (IC : HarmonicOscillator.InitialConditions)
 > closed form `2π √(ℓ/g)` involves only the length of the rod and the strength of gravity: the
 > mass of the bob cancelled from the frequency, and the amplitude never entered.
 
-**`ClassicalMechanics.SimplePendulum.smallAnglePeriod`**, a def, [line 406](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L406).
+**`ClassicalMechanics.SimplePendulum.smallAnglePeriod`**, a def, [line 406](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L406).
 
 > The period `2π √(ℓ/g)` of the small oscillations of the simple pendulum: the period of the
 > associated harmonic oscillator. Within the linearization it does not depend on the
@@ -357,7 +357,7 @@ lemma linearized_unique (IC : HarmonicOscillator.InitialConditions)
 noncomputable def smallAnglePeriod : ℝ
 ```
 
-**`ClassicalMechanics.SimplePendulum.smallAnglePeriod_eq_two_pi_div_ω`**, a lemma, [line 410](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L410).
+**`ClassicalMechanics.SimplePendulum.smallAnglePeriod_eq_two_pi_div_ω`**, a lemma, [line 410](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L410).
 
 > The period of the small oscillations is `2π/ω`, one full circle of phase at the angular
 > frequency `ω` of the small oscillations.
@@ -366,7 +366,7 @@ noncomputable def smallAnglePeriod : ℝ
 lemma smallAnglePeriod_eq_two_pi_div_ω : S.smallAnglePeriod = 2 * Real.pi / S.ω
 ```
 
-**`ClassicalMechanics.SimplePendulum.smallAnglePeriod_eq`**, a lemma, [line 416](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L416).
+**`ClassicalMechanics.SimplePendulum.smallAnglePeriod_eq`**, a lemma, [line 416](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L416).
 
 > The closed form of the small-angle period: `2π √(ℓ/g)`. Neither the mass of the bob nor
 > the amplitude of the swing appears.
@@ -375,7 +375,7 @@ lemma smallAnglePeriod_eq_two_pi_div_ω : S.smallAnglePeriod = 2 * Real.pi / S.�
 lemma smallAnglePeriod_eq : S.smallAnglePeriod = 2 * Real.pi * √(S.ℓ / S.g)
 ```
 
-**`ClassicalMechanics.SimplePendulum.smallAnglePeriod_pos`**, a lemma, [line 422](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L422).
+**`ClassicalMechanics.SimplePendulum.smallAnglePeriod_pos`**, a lemma, [line 422](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L422).
 
 > The period of the small oscillations is positive.
 
@@ -390,7 +390,7 @@ lemma smallAnglePeriod_pos : 0 < S.smallAnglePeriod
 > Along each of them the energy of the associated harmonic oscillator is constant, equal to the
 > value fixed by the initial data.
 
-**`ClassicalMechanics.SimplePendulum.smallAngleTrajectory_periodic`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L438).
+**`ClassicalMechanics.SimplePendulum.smallAngleTrajectory_periodic`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L438).
 
 > The small-angle trajectories of the simple pendulum are periodic with the small-angle
 > period `2π √(ℓ/g)`.
@@ -400,7 +400,7 @@ lemma smallAngleTrajectory_periodic (IC : HarmonicOscillator.InitialConditions) 
     Function.Periodic (S.smallAngleTrajectory IC) (S.smallAnglePeriod : Time)
 ```
 
-**`ClassicalMechanics.SimplePendulum.smallAngleTrajectory_energy`**, a lemma, [line 445](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L445).
+**`ClassicalMechanics.SimplePendulum.smallAngleTrajectory_energy`**, a lemma, [line 445](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L445).
 
 > Along a small-angle trajectory the energy of the associated harmonic oscillator is the
 > constant `½ (I ‖v₀‖² + m g ℓ ‖IC.x₀‖²)` fixed by the initial data: the rotational kinetic term
@@ -429,7 +429,7 @@ lemma smallAngleTrajectory_energy (IC : HarmonicOscillator.InitialConditions) :
 > term is cubically small. In the single coordinate of the angle the same bound reads
 > `m g ℓ |θ|³/6`.
 
-**`ClassicalMechanics.SimplePendulum.torque_sub_toHarmonicOscillator_force`**, a lemma, [line 478](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L478).
+**`ClassicalMechanics.SimplePendulum.torque_sub_toHarmonicOscillator_force`**, a lemma, [line 478](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L478).
 
 > The difference between the torque of the simple pendulum and the force of its associated
 > harmonic oscillator is `m g ℓ (θ - sin θ)` times the unit vector of the angular direction:
@@ -441,7 +441,7 @@ lemma torque_sub_toHarmonicOscillator_force (x : EuclideanSpace ℝ (Fin 1)) :
       (S.m * S.g * S.ℓ * (x 0 - Real.sin (x 0))) • EuclideanSpace.single 0 1
 ```
 
-**`ClassicalMechanics.SimplePendulum.norm_torque_sub_toHarmonicOscillator_force_le`**, a lemma, [line 490](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L490).
+**`ClassicalMechanics.SimplePendulum.norm_torque_sub_toHarmonicOscillator_force_le`**, a lemma, [line 490](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L490).
 
 > The normed form of the cubic bound: the torque of the simple pendulum differs from the
 > force of its associated harmonic oscillator by at most `m g ℓ ‖θ‖³ / 6` in norm.
@@ -451,7 +451,7 @@ lemma norm_torque_sub_toHarmonicOscillator_force_le (x : EuclideanSpace ℝ (Fin
     ‖S.torque x - S.toHarmonicOscillator.force x‖ ≤ S.m * S.g * S.ℓ * ‖x‖ ^ 3 / 6
 ```
 
-**`ClassicalMechanics.SimplePendulum.abs_torque_add_linear_le`**, a lemma, [line 503](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L503).
+**`ClassicalMechanics.SimplePendulum.abs_torque_add_linear_le`**, a lemma, [line 503](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L503).
 
 > The torque of the simple pendulum differs from its linearization `-m g ℓ θ` by at most
 > `m g ℓ |θ|³ / 6`: the error of the small-angle approximation is cubic in the angle.
@@ -469,7 +469,7 @@ lemma abs_torque_add_linear_le (x : EuclideanSpace ℝ (Fin 1)) :
 > each instant: the linearization error of the dynamics is the linearization error of the
 > torque.
 
-**`ClassicalMechanics.SimplePendulum.gradLagrangian_sub_toHarmonicOscillator`**, a lemma, [line 534](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L534).
+**`ClassicalMechanics.SimplePendulum.gradLagrangian_sub_toHarmonicOscillator`**, a lemma, [line 534](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L534).
 
 > Along a smooth lift of the angle, the variational gradients of the actions of the simple
 > pendulum and of its associated harmonic oscillator differ exactly by the difference between
@@ -482,7 +482,7 @@ lemma gradLagrangian_sub_toHarmonicOscillator (θ : Time → EuclideanSpace ℝ 
       fun t => S.torque (θ t) - S.toHarmonicOscillator.force (θ t)
 ```
 
-**`ClassicalMechanics.SimplePendulum.norm_gradLagrangian_sub_toHarmonicOscillator_le`**, a lemma, [line 547](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L547).
+**`ClassicalMechanics.SimplePendulum.norm_gradLagrangian_sub_toHarmonicOscillator_le`**, a lemma, [line 547](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L547).
 
 > The normed form: along a smooth lift of the angle the variational gradients of the two
 > actions differ at every instant by at most `m g ℓ ‖θ t‖³ / 6` — the two actions have the
@@ -502,7 +502,7 @@ lemma norm_gradLagrangian_sub_toHarmonicOscillator_le (θ : Time → EuclideanSp
 > small in the angle — the small-angle theory solves the pendulum's own equation up to an error
 > of at most `m g ℓ ‖θ‖³/6` at every instant.
 
-**`ClassicalMechanics.SimplePendulum.norm_equationOfMotion_residual_le`**, a lemma, [line 570](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L570).
+**`ClassicalMechanics.SimplePendulum.norm_equationOfMotion_residual_le`**, a lemma, [line 570](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L570).
 
 > A motion satisfying the linearized equation of motion nearly solves the equation of motion
 > of the pendulum itself: at every instant the residual `I θ̈ - τ(θ)` has norm at most
@@ -514,7 +514,7 @@ lemma norm_equationOfMotion_residual_le (θ : Time → EuclideanSpace ℝ (Fin 1
     ‖S.inertia • ∂ₜ (∂ₜ θ) t - S.torque (θ t)‖ ≤ S.m * S.g * S.ℓ * ‖θ t‖ ^ 3 / 6
 ```
 
-**`ClassicalMechanics.SimplePendulum.norm_gradLagrangian_le_of_linearizedEquationOfMotion`**, a lemma, [line 580](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L580).
+**`ClassicalMechanics.SimplePendulum.norm_gradLagrangian_le_of_linearizedEquationOfMotion`**, a lemma, [line 580](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean#L580).
 
 > The variational form of the residual: a smooth motion of the linearized dynamics is a
 > near-critical point of the pendulum's own action — along it the variational gradient of the
@@ -539,4 +539,4 @@ lemma norm_gradLagrangian_le_of_linearizedEquationOfMotion
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean)
+- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean)

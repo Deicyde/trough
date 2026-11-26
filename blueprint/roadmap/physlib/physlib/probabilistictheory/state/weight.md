@@ -8,7 +8,7 @@ proof: formalized
 
 # States as weights
 
-The module `Physlib.ProbabilisticTheory.State.Weight`, [Physlib/ProbabilisticTheory/State/Weight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Weight.lean): 4 declarations, 3 with a docstring.
+The module `Physlib.ProbabilisticTheory.State.Weight`, [Physlib/ProbabilisticTheory/State/Weight.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Weight.lean): 4 declarations, 3 with a docstring.
 
 > Restriction of a state to positive observables gives a finite normalized weight.
 
@@ -26,7 +26,7 @@ The module `Physlib.ProbabilisticTheory.State.Weight`, [Physlib/ProbabilisticThe
 
 ## A. From a state to a weight
 
-**`ProbabilisticTheory.State.toWeight`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Weight.lean#L51).
+**`ProbabilisticTheory.State.toWeight`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Weight.lean#L51).
 
 > The weight induced by a state: `ENNReal.ofReal` applied to the state's values on the positive
 > cone, where they are automatically nonnegative.
@@ -35,14 +35,14 @@ The module `Physlib.ProbabilisticTheory.State.Weight`, [Physlib/ProbabilisticThe
 noncomputable def toWeight (s : P.State) : Weight P
 ```
 
-**`ProbabilisticTheory.State.toWeight_apply`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Weight.lean#L59).
+**`ProbabilisticTheory.State.toWeight_apply`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Weight.lean#L59).
 
 ```lean
 lemma toWeight_apply (s : P.State) (A : PosCone P) :
     s.toWeight A = ENNReal.ofReal (s (A : P.Observables))
 ```
 
-**`ProbabilisticTheory.State.toReal_toWeight_apply`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Weight.lean#L64).
+**`ProbabilisticTheory.State.toReal_toWeight_apply`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Weight.lean#L64).
 
 > The weight induced by a state agrees with the state itself on the positive cone.
 
@@ -51,7 +51,7 @@ lemma toReal_toWeight_apply (s : P.State) (A : PosCone P) :
     (s.toWeight A).toReal = s (A : P.Observables)
 ```
 
-**`ProbabilisticTheory.State.toWeight_isState`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Weight.lean#L69).
+**`ProbabilisticTheory.State.toWeight_isState`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Weight.lean#L69).
 
 > The weight induced by a state is finite and normalized.
 
@@ -66,4 +66,4 @@ lemma toWeight_isState (s : P.State) : s.toWeight.IsState
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/State/Weight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Weight.lean)
+- [Physlib/ProbabilisticTheory/State/Weight.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Weight.lean)

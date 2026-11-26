@@ -8,7 +8,7 @@ proof: formalized
 
 # Rotation invariance of the sine evolution
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.Rotation`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Rotation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Rotation.lean): 3 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.Rotation`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Rotation.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Rotation.lean): 3 declarations, 2 with a docstring.
 
 > The sine evolution commutes with linear isometries. It therefore maps radial functions to radial
 > functions.
@@ -33,14 +33,14 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.Rotat
 > - `sineEvolution_comp_isometry` : the sine evolution commutes with linear isometries.
 > - `isRadial_sineEvolution` : the sine evolution of a radial function is radial.
 
-**`KleinGordon.multiplier_comp_isometry`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Rotation.lean#L57).
+**`KleinGordon.multiplier_comp_isometry`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Rotation.lean#L57).
 
 ```lean
 lemma multiplier_comp_isometry (A : V ≃ₗᵢ[ℝ] W) (r μ : ℝ) (ξ : V) :
     multiplier r μ (A ξ) = multiplier r μ ξ
 ```
 
-**`KleinGordon.sineEvolution_comp_isometry`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Rotation.lean#L63).
+**`KleinGordon.sineEvolution_comp_isometry`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Rotation.lean#L63).
 
 > **The sine evolution commutes with rotations.**
 
@@ -51,7 +51,7 @@ lemma sineEvolution_comp_isometry {μ : ℝ} (hμ : 0 ≤ μ) (A : V ≃ₗᵢ[�
         x = sineEvolution ℂ r μ g (A x)
 ```
 
-**`KleinGordon.isRadial_sineEvolution`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Rotation.lean#L79).
+**`KleinGordon.isRadial_sineEvolution`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Rotation.lean#L79).
 
 > **The sine evolution of a radial function is radial.**
 
@@ -70,4 +70,4 @@ lemma isRadial_sineEvolution {μ : ℝ} (hμ : 0 ≤ μ) (r : ℝ) {g : 𝓢(V, 
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Rotation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Rotation.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Rotation.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Rotation.lean)

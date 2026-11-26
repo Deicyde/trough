@@ -8,7 +8,7 @@ proof: formalized
 
 # JBW-algebras
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JBW.Basic`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JBW.Basic`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean): 5 declarations, 5 with a docstring.
 
 > JBW-algebras: monotone-complete JB-algebras whose normal states separate points.
 
@@ -27,7 +27,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JBW.Basic`, [Physli
 
 ## A. JBW-algebras
 
-**`PhyslibAlpha.ProbabilisticTheory.JBWAlgebra`**, a class, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean#L46).
+**`PhyslibAlpha.ProbabilisticTheory.JBWAlgebra`**, a class, [line 46](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean#L46).
 
 > A JBW-algebra, presented as a monotone-complete JB-algebra with enough normal states.
 > The ordinary JB, order-unit, and scalar-order data stay in their existing canonical classes.
@@ -42,7 +42,7 @@ class JBWAlgebra (E : Type*) [IsJBOrderUnit E] : Prop
 
 ## B. Separation and monotone convergence
 
-**`PhyslibAlpha.ProbabilisticTheory.JBWAlgebra.eq_of_forall_normal_state_eq`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean#L59).
+**`PhyslibAlpha.ProbabilisticTheory.JBWAlgebra.eq_of_forall_normal_state_eq`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean#L59).
 
 > Equality of observables is detected by all normal states.
 
@@ -51,7 +51,7 @@ lemma eq_of_forall_normal_state_eq {x y : E}
     (h : ∀ ω : 𝓢[ℝ, E], ω.IsNormal → ω x = ω y) : x = y
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JBWAlgebra.exists_isLUB_range_and_normal_state_image`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean#L68).
+**`PhyslibAlpha.ProbabilisticTheory.JBWAlgebra.exists_isLUB_range_and_normal_state_image`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean#L68).
 
 > A bounded increasing sequence has a supremum, and a normal state maps it to the supremum of the
 > values.
@@ -63,7 +63,7 @@ lemma exists_isLUB_range_and_normal_state_image (ω : 𝓢[ℝ, E]) (hω : ω.Is
       IsLUB (Set.range fun n => ω (x n)) (ω a)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JBWAlgebra.isLUB_rangeSup_normal_state_image`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean#L78).
+**`PhyslibAlpha.ProbabilisticTheory.JBWAlgebra.isLUB_rangeSup_normal_state_image`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean#L78).
 
 > The same monotone-convergence statement using the canonical chosen sequence supremum from
 > `MonotoneCompleteOrder`.
@@ -75,7 +75,7 @@ lemma isLUB_rangeSup_normal_state_image (ω : 𝓢[ℝ, E]) (hω : ω.IsNormal)
       (ω (MonotoneCompleteOrder.rangeSup x hx hbounded))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JBWAlgebra.exists_normal_finite_weight_ne_zero`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean#L88).
+**`PhyslibAlpha.ProbabilisticTheory.JBWAlgebra.exists_normal_finite_weight_ne_zero`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean#L88).
 
 > A nonzero positive observable is detected by a normal finite weight.  This is the canonical
 > state-to-weight direction: normal-state separation supplies the state, and the established
@@ -99,4 +99,4 @@ lemma exists_normal_finite_weight_ne_zero {x : E} (hx : 0 ≤ x) (hxne : x ≠ 0
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean)

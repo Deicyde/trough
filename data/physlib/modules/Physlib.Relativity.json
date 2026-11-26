@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
  "modules": [
   {
    "file": "Physlib/Relativity/Bispinors/Basic.lean",
@@ -231,27 +231,27 @@
    "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
-     "line": 36,
+     "line": 35,
      "text": "## Tensorial structure\n\nThe tensorial structure on the type\n`Fin 1 ⊕ Fin 3 → Matrix (Fin 2) (Fin 2) ℂ`\nand properties thereof."
     },
     {
-     "line": 95,
+     "line": 94,
      "text": "## Pauli matrices as a tensor"
     },
     {
-     "line": 279,
+     "line": 278,
      "text": "## Variations of the pauli tensor"
     },
     {
-     "line": 306,
+     "line": 305,
      "text": "## Different forms"
     },
     {
-     "line": 396,
+     "line": 395,
      "text": "## Index dualization"
     },
     {
-     "line": 461,
+     "line": 460,
      "text": "## Group actions"
     }
    ],
@@ -259,7 +259,7 @@
     {
      "name": "PauliMatrix.indexEquiv",
      "kind": "def",
-     "line": 49,
+     "line": 48,
      "doc": "The equivalence between the type of indices of a [.up, .upL, .upR] tensor and\n`(Fin 1 ⊕ Fin 3) × Fin 2 × Fin 2`.",
      "statement": "def indexEquiv : ComponentIdx (S := complexLorentzTensor) ![.up, .upL, .upR] ≃\n    (Fin 1 ⊕ Fin 3) × Fin 2 × Fin 2",
      "sorry": false
@@ -267,7 +267,7 @@
     {
      "name": "PauliMatrix.tensorial",
      "kind": "instance",
-     "line": 58,
+     "line": 57,
      "doc": "",
      "statement": "instance tensorial : TensorSpecies.Tensorial complexLorentzTensor\n    ![.up, .upL, .upR] (Fin 1 ⊕ Fin 3 → Matrix (Fin 2) (Fin 2) ℂ)",
      "sorry": false
@@ -275,7 +275,7 @@
     {
      "name": "PauliMatrix.toTensor_symm_apply",
      "kind": "lemma",
-     "line": 74,
+     "line": 73,
      "doc": "",
      "statement": "lemma toTensor_symm_apply (p : ℂT[.up, .upL, .upR]) :\n    (toTensor (self := tensorial)).symm p =\n    ((Equiv.piCongrRight fun _ => Equiv.curry _ _ _) <|\n    (Equiv.curry _ _ _) <|\n    Equiv.piCongrLeft' _ indexEquiv <|\n    Finsupp.equivFunOnFinite <|\n    (Tensor.basis (S := complexLorentzTensor) _).repr p)",
      "sorry": false
@@ -283,7 +283,7 @@
     {
      "name": "PauliMatrix.toTensor_symm_basis",
      "kind": "lemma",
-     "line": 82,
+     "line": 81,
      "doc": "",
      "statement": "lemma toTensor_symm_basis (b : ComponentIdx (S := complexLorentzTensor) ![.up, .upL, .upR]) :\n    (toTensor (self := tensorial)).symm (Tensor.basis ![Color.up, Color.upL, Color.upR] b) =\n    fun μ α β => if indexEquiv b = (μ, α, β) then 1 else 0",
      "sorry": false
@@ -291,7 +291,7 @@
     {
      "name": "PauliMatrix.toTensor_basis_expand",
      "kind": "lemma",
-     "line": 105,
+     "line": 104,
      "doc": "",
      "statement": "lemma toTensor_basis_expand : σ^^^ =\n    Tensor.basis ![Color.up, Color.upL, Color.upR]\n      (fun | 0 => (Sum.inl 0 : Fin 1 ⊕ Fin 3) | 1 => (0 : Fin 2) | 2 => (0 : Fin 2))\n    + Tensor.basis ![Color.up, Color.upL, Color.upR]\n      (fun | 0 => (Sum.inl 0 : Fin 1 ⊕ Fin 3) | 1 => (1 : Fin 2) | 2 => (1 : Fin 2))\n    + Tensor.basis ![Color.up, Color.upL, Color.upR]\n      (fun | 0 => (Sum.inr 0 : Fin 1 ⊕ Fin 3) | 1 => (0 : Fin 2) | 2 => (1 : Fin 2))\n    + Tensor.basis ![Color.up, Color.upL, Color.upR]\n      (fun | 0 => (Sum.inr 0 : Fin 1 ⊕ Fin 3) | 1 => (1 : Fin 2) | 2 => (0 : Fin 2))\n    - I • Tensor.basis ![Color.up, Color.upL, Color.upR]\n      (fun | 0 => (Sum.inr 1 : Fin 1 ⊕ Fin 3) | 1 => (0 : Fin 2) | 2 => (1 : Fin 2))\n    + I • Tensor.basis ![Color.up, Color.upL, Color.upR]\n      (fun | 0 => (Sum.inr 1 : Fin 1 ⊕ Fin 3) | 1 => (1 : Fin 2) | 2 => (0 : Fin 2))\n    + Tensor.basis ![Color.up, Color.upL, Color.upR]\n      (fun | 0 => (Sum.inr 2 : Fin 1 ⊕ Fin 3) | 1 => (0 : Fin 2) | 2 => (0 : Fin 2))\n    - Tensor.basis ![Color.up, Color.upL, Color.upR]\n      (fun | 0 => (Sum.inr 2 : Fin 1 ⊕ Fin 3) | 1 => (1 : Fin 2) | 2 => (1 : Fin 2))",
      "sorry": false
@@ -299,7 +299,7 @@
     {
      "name": "PauliMatrix.toTensor_eq_pauli",
      "kind": "lemma",
-     "line": 128,
+     "line": 127,
      "doc": "",
      "statement": "lemma toTensor_eq_pauli :\n    σ^^^ = fromConstTriple (S := complexLorentzTensor)\n      (c1 := Color.up) (c2 := Color.upL) (c3 := Color.upR) ComplexVector.pauli",
      "sorry": false
@@ -307,7 +307,7 @@
     {
      "name": "PauliMatrix.pauliContrComponent",
      "kind": "def",
-     "line": 141,
+     "line": 140,
      "doc": "Gaussian integer components of the contravariant Pauli four-vector.",
      "statement": "def pauliContrComponent (mu : Fin 1 ⊕ Fin 3) (a b : Fin 2) : GaussianInt",
      "sorry": false
@@ -315,7 +315,7 @@
     {
      "name": "PauliMatrix.pauliContrDownComponent",
      "kind": "def",
-     "line": 150,
+     "line": 149,
      "doc": "Gaussian integer components of the contravariant conjugate Pauli four-vector.",
      "statement": "def pauliContrDownComponent (mu : Fin 1 ⊕ Fin 3) (a b : Fin 2) : GaussianInt",
      "sorry": false
@@ -323,7 +323,7 @@
     {
      "name": "PauliMatrix.toTensor_eq_ofGaussianInt",
      "kind": "lemma",
-     "line": 158,
+     "line": 157,
      "doc": "",
      "statement": "lemma toTensor_eq_ofGaussianInt : σ^^^ = ofGaussianInt (fun b =>\n    pauliContrComponent (b 0) (b 1) (b 2))",
      "sorry": false
@@ -331,7 +331,7 @@
     {
      "name": "PauliMatrix.toTensor_dualLeft_eq_ofGaussianInt",
      "kind": "lemma",
-     "line": 175,
+     "line": 174,
      "doc": "Gaussian integer components of `σ^^^` after dualizing its left-handed Weyl index.",
      "statement": "lemma toTensor_dualLeft_eq_ofGaussianInt :\n    {σ^^^ | μ τ(α) β}ᵀ =\n      ofGaussianInt (fun b =>\n        ∑ x : Fin 2, pauliContrComponent (b 0) x (b 2) *\n          (if x.val = 0 ∧ Fin.val (b 1) = 1 then 1 else\n            if Fin.val (b 1) = 0 ∧ x.val = 1 then -1 else 0))",
      "sorry": false
@@ -339,7 +339,7 @@
     {
      "name": "PauliMatrix.toTensor_dualWeyl_eq_ofGaussianInt",
      "kind": "lemma",
-     "line": 195,
+     "line": 194,
      "doc": "Gaussian integer components of `σ^^^` after dualizing both Weyl indices.",
      "statement": "lemma toTensor_dualWeyl_eq_ofGaussianInt :\n    {σ^^^ | μ τ(α) τ(β)}ᵀ =\n      ofGaussianInt (fun b =>\n        pauliContrDownComponent (b 0) (b 2) (b 1))",
      "sorry": false
@@ -347,7 +347,7 @@
     {
      "name": "PauliMatrix.toTensor_dualLorentz_eq_ofGaussianInt",
      "kind": "lemma",
-     "line": 214,
+     "line": 213,
      "doc": "Gaussian integer components of `σ^^^` after dualizing its Lorentz index.",
      "statement": "lemma toTensor_dualLorentz_eq_ofGaussianInt :\n    {σ^^^ | τ(μ) α β}ᵀ =\n      ofGaussianInt (fun b => pauliContrDownComponent (b 0) (b 1) (b 2))",
      "sorry": false
@@ -355,7 +355,7 @@
     {
      "name": "PauliMatrix.toTensor_dualLorentzLeft_eq_ofGaussianInt",
      "kind": "lemma",
-     "line": 232,
+     "line": 231,
      "doc": "Gaussian integer components of `σ^^^` after dualizing its Lorentz and left-handed Weyl\nindices.",
      "statement": "lemma toTensor_dualLorentzLeft_eq_ofGaussianInt :\n    {σ^^^ | τ(μ) τ(α) β}ᵀ = ofGaussianInt (fun b =>\n      ∑ x : Fin 2, pauliContrDownComponent (b 0) x (b 2) *\n        (if x.val = 0 ∧ Fin.val (b 1) = 1 then 1 else\n          if Fin.val (b 1) = 0 ∧ x.val = 1 then -1 else 0))",
      "sorry": false
@@ -363,7 +363,7 @@
     {
      "name": "PauliMatrix.toTensor_dualAll_eq_ofGaussianInt",
      "kind": "lemma",
-     "line": 252,
+     "line": 251,
      "doc": "Gaussian integer components of `σ^^^` after dualizing all three indices.",
      "statement": "lemma toTensor_dualAll_eq_ofGaussianInt :\n    {σ^^^ | τ(μ) τ(α) τ(β)}ᵀ =\n      ofGaussianInt (fun b => pauliContrComponent (b 0) (b 2) (b 1))",
      "sorry": false
@@ -371,7 +371,7 @@
     {
      "name": "PauliMatrix.smul_eq_self",
      "kind": "lemma",
-     "line": 270,
+     "line": 269,
      "doc": "",
      "statement": "lemma smul_eq_self (Λ : SL(2,ℂ)) : Λ • pauliMatrix = pauliMatrix",
      "sorry": false
@@ -379,7 +379,7 @@
     {
      "name": "PauliMatrix.toTensor_smul_eq_self",
      "kind": "lemma",
-     "line": 275,
+     "line": 274,
      "doc": "",
      "statement": "lemma toTensor_smul_eq_self (Λ : SL(2,ℂ)) : Λ • σ^^^ = σ^^^",
      "sorry": false
@@ -387,7 +387,7 @@
     {
      "name": "PauliMatrix.pauliCo",
      "kind": "abbrev",
-     "line": 286,
+     "line": 285,
      "doc": "The Pauli matrices as the complex Lorentz tensor `σ_μ^α^{dot β}`.",
      "statement": "abbrev pauliCo : ℂT[.down, .upL, .upR]",
      "sorry": false
@@ -395,7 +395,7 @@
     {
      "name": "PauliMatrix.pauliCoDown",
      "kind": "abbrev",
-     "line": 293,
+     "line": 292,
      "doc": "The Pauli matrices as the complex Lorentz tensor `σ_μ_{dot β}_α`.",
      "statement": "abbrev pauliCoDown : ℂT[.down, .downR, .downL]",
      "sorry": false
@@ -403,7 +403,7 @@
     {
      "name": "PauliMatrix.pauliContrDown",
      "kind": "abbrev",
-     "line": 300,
+     "line": 299,
      "doc": "The Pauli matrices as the complex Lorentz tensor `σ^μ_{dot β}_α`.",
      "statement": "abbrev pauliContrDown : ℂT[.up, .downR, .downL]",
      "sorry": false
@@ -411,7 +411,7 @@
     {
      "name": "PauliMatrix.pauliCo_eq_ofGaussianInt",
      "kind": "lemma",
-     "line": 312,
+     "line": 311,
      "doc": "",
      "statement": "lemma pauliCo_eq_ofGaussianInt : pauliCo = ofGaussianInt (fun b =>\n    pauliContrDownComponent (b 0) (b 1) (b 2))",
      "sorry": false
@@ -419,7 +419,7 @@
     {
      "name": "PauliMatrix.pauliCoDown_eq_ofGaussianInt",
      "kind": "lemma",
-     "line": 332,
+     "line": 331,
      "doc": "",
      "statement": "lemma pauliCoDown_eq_ofGaussianInt : pauliCoDown = ofGaussianInt (fun b =>\n    pauliContrComponent (b 0) (b 1) (b 2))",
      "sorry": false
@@ -427,7 +427,7 @@
     {
      "name": "PauliMatrix.pauliContrDown_ofGaussianInt",
      "kind": "lemma",
-     "line": 364,
+     "line": 363,
      "doc": "",
      "statement": "lemma pauliContrDown_ofGaussianInt : pauliContrDown = ofGaussianInt (fun b =>\n    pauliContrDownComponent (b 0) (b 1) (b 2))",
      "sorry": false
@@ -435,7 +435,7 @@
     {
      "name": "PauliMatrix.toTensor_dualWeyl_eq_pauliContrDown",
      "kind": "lemma",
-     "line": 403,
+     "line": 402,
      "doc": "Dualizing both Weyl indices of `σ^^^` gives `σ^__`.",
      "statement": "lemma toTensor_dualWeyl_eq_pauliContrDown :\n    ({σ^^^ | μ τ(α) τ(β) = σ^__ | μ β α}ᵀ : Prop)",
      "sorry": false
@@ -443,7 +443,7 @@
     {
      "name": "PauliMatrix.toTensor_dualAll_eq_pauliCoDown",
      "kind": "lemma",
-     "line": 410,
+     "line": 409,
      "doc": "Dualizing all three indices of `σ^^^` gives `σ___`.",
      "statement": "lemma toTensor_dualAll_eq_pauliCoDown :\n    ({σ^^^ | τ(μ) τ(α) τ(β) = σ___ | μ β α}ᵀ : Prop)",
      "sorry": false
@@ -451,7 +451,7 @@
     {
      "name": "PauliMatrix.pauliDual_eq_pauliCo",
      "kind": "lemma",
-     "line": 417,
+     "line": 416,
      "doc": "Lowering the Lorentz index of `σ^^^` with `τ` gives `σ_^^`.",
      "statement": "lemma pauliDual_eq_pauliCo :\n    ({σ^^^ | τ(μ) α β = σ_^^ | μ α β}ᵀ : Prop)",
      "sorry": false
@@ -459,7 +459,7 @@
     {
      "name": "PauliMatrix.pauliContrDownDual_eq_pauliCoDown",
      "kind": "lemma",
-     "line": 424,
+     "line": 423,
      "doc": "Lowering the Lorentz index of `σ^__` with `τ` gives `σ___`.",
      "statement": "lemma pauliContrDownDual_eq_pauliCoDown :\n    ({σ^__ | τ(μ) β α = σ___ | μ β α}ᵀ : Prop)",
      "sorry": false
@@ -467,7 +467,7 @@
     {
      "name": "PauliMatrix.smul_pauliCo",
      "kind": "lemma",
-     "line": 468,
+     "line": 467,
      "doc": "The tensor `pauliCo` is invariant under the action of `SL(2,ℂ)`.",
      "statement": "lemma smul_pauliCo (g : SL(2,ℂ)) : g • pauliCo = pauliCo",
      "sorry": false
@@ -475,7 +475,7 @@
     {
      "name": "PauliMatrix.smul_pauliCoDown",
      "kind": "lemma",
-     "line": 474,
+     "line": 473,
      "doc": "The tensor `pauliCoDown` is invariant under the action of `SL(2,ℂ)`.",
      "statement": "lemma smul_pauliCoDown (g : SL(2,ℂ)) : g • pauliCoDown = pauliCoDown",
      "sorry": false
@@ -483,7 +483,7 @@
     {
      "name": "PauliMatrix.smul_pauliContrDown",
      "kind": "lemma",
-     "line": 480,
+     "line": 479,
      "doc": "The tensor `pauliContrDown` is invariant under the action of `SL(2,ℂ)`.",
      "statement": "lemma smul_pauliContrDown (g : SL(2,ℂ)) : g • pauliContrDown = pauliContrDown",
      "sorry": false
@@ -8075,23 +8075,23 @@
      "text": "## The basis"
     },
     {
-     "line": 352,
+     "line": 357,
      "text": "## The rank"
     },
     {
-     "line": 382,
+     "line": 387,
      "text": "## The action"
     },
     {
-     "line": 422,
+     "line": 427,
      "text": "## The action on tensors"
     },
     {
-     "line": 480,
+     "line": 485,
      "text": "## Permutations"
     },
     {
-     "line": 654,
+     "line": 659,
      "text": "## Rank-zero tensors as scalars"
     }
    ],
@@ -8277,7 +8277,7 @@
      "kind": "def",
      "line": 226,
      "doc": "The multilinear map taking pure tensors `p` to a map `ComponentIdx c → k` which when\nevaluated returns the components of `p`.",
-     "statement": "noncomputable def componentMap {n : ℕ} (c : Fin n → C) :\n    MultilinearMap k (fun i => V (c i)) (ComponentIdx (S := S) c → k)",
+     "statement": "noncomputable def componentMap {n : ℕ} (c : Fin n → C) :\n    MultilinearMap (RingHom.id k) (fun i => V (c i)) (ComponentIdx (S := S) c → k)",
      "sorry": false
     },
     {
@@ -8355,7 +8355,7 @@
     {
      "name": "TensorSpecies.Tensor.basis",
      "kind": "def",
-     "line": 313,
+     "line": 318,
      "doc": "The basis of tensors.",
      "statement": "def basis {n : ℕ} (c : Fin n → C) : Basis (ComponentIdx (S := S) c) k (S.Tensor c)",
      "sorry": false
@@ -8363,7 +8363,7 @@
     {
      "name": "TensorSpecies.Tensor.basis_apply",
      "kind": "lemma",
-     "line": 318,
+     "line": 323,
      "doc": "",
      "statement": "lemma basis_apply {n : ℕ} (c : Fin n → C) (φ : ComponentIdx (S := S) c) :\n    basis c φ = (Pure.basisVector c φ).toTensor",
      "sorry": false
@@ -8371,7 +8371,7 @@
     {
      "name": "TensorSpecies.Tensor.basis_repr_pure",
      "kind": "lemma",
-     "line": 324,
+     "line": 329,
      "doc": "",
      "statement": "lemma basis_repr_pure {n : ℕ} (c : Fin n → C)\n    (p : Pure S c) :\n    (basis c).repr p.toTensor = p.component",
      "sorry": false
@@ -8379,7 +8379,7 @@
     {
      "name": "TensorSpecies.Tensor.induction_on_basis",
      "kind": "lemma",
-     "line": 331,
+     "line": 336,
      "doc": "",
      "statement": "lemma induction_on_basis {n : ℕ} {c : Fin n → C} {P : S.Tensor c → Prop}\n    (h : ∀ b, P (basis c b)) (hzero : P 0)\n    (hsmul : ∀ (r : k) t, P t → P (r • t))\n    (hadd : ∀ t1 t2, P t1 → P t2 → P (t1 + t2)) (t : S.Tensor c) : P t",
      "sorry": false
@@ -8387,7 +8387,7 @@
     {
      "name": "TensorSpecies.Tensor.componentMap_eq_repr",
      "kind": "lemma",
-     "line": 342,
+     "line": 347,
      "doc": "`componentMap` is the basis representation `(basis c).repr` definitionally; this bridges the two\nnotations wherever a component computation meets a `repr` rewrite.",
      "statement": "lemma componentMap_eq_repr {n : ℕ} (c : Fin n → C) (t : S.Tensor c)\n    (ψ : ComponentIdx (S := S) c) : componentMap c t ψ = (basis c).repr t ψ",
      "sorry": false
@@ -8395,7 +8395,7 @@
     {
      "name": "TensorSpecies.Tensor.componentMap_ext",
      "kind": "lemma",
-     "line": 346,
+     "line": 351,
      "doc": "Two tensors with the same colour sequence are equal when all their components agree.",
      "statement": "lemma componentMap_ext {n : ℕ} {c : Fin n → C} {t₁ t₂ : S.Tensor c}\n    (h : ∀ b, componentMap c t₁ b = componentMap c t₂ b) : t₁ = t₂",
      "sorry": false
@@ -8403,7 +8403,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 358,
+     "line": 363,
      "doc": "",
      "statement": "instance {k : Type} [Field k] {C : Type} {G : Type} [Group G]\n    {V : C → Type} [∀ c, AddCommGroup (V c)] [∀ c, Module k (V c)]\n    {basisIdx : C → Type} [∀ c, Fintype (basisIdx c)] [∀ c, DecidableEq (basisIdx c)]\n    {rep : (c : C) → Representation k G (V c)} {b : (c : C) → Basis (basisIdx c) k (V c)}\n    (S : TensorSpecies k C G V basisIdx rep b)\n    {c : Fin n → C} : FiniteDimensional k (S.Tensor c)",
      "sorry": false
@@ -8411,7 +8411,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 366,
+     "line": 371,
      "doc": "",
      "statement": "noncomputable instance {k : Type} [RCLike k] {C : Type} {G : Type} [Group G]\n    {V : C → Type} [∀ c, AddCommGroup (V c)] [∀ c, Module k (V c)]\n    {basisIdx : C → Type} [∀ c, Fintype (basisIdx c)] [∀ c, DecidableEq (basisIdx c)]\n    {rep : (c : C) → Representation k G (V c)} {b : (c : C) → Basis (basisIdx c) k (V c)}\n    (S : TensorSpecies k C G V basisIdx rep b)\n    {c : Fin n → C} : TopologicalSpace (S.Tensor c)",
      "sorry": false
@@ -8419,7 +8419,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 374,
+     "line": 379,
      "doc": "",
      "statement": "instance {k : Type} [RCLike k] {C : Type} {G : Type} [Group G]\n    {V : C → Type} [∀ c, AddCommGroup (V c)] [∀ c, Module k (V c)]\n    {basisIdx : C → Type} [∀ c, Fintype (basisIdx c)] [∀ c, DecidableEq (basisIdx c)]\n    {rep : (c : C) → Representation k G (V c)} {b : (c : C) → Basis (basisIdx c) k (V c)}\n    (S : TensorSpecies k C G V basisIdx rep b)\n    {c : Fin n → C} : IsTopologicalAddGroup (S.Tensor c)",
      "sorry": false
@@ -8427,7 +8427,7 @@
     {
      "name": "TensorSpecies.Tensor.Pure.actionP",
      "kind": "instance",
-     "line": 389,
+     "line": 394,
      "doc": "",
      "statement": "noncomputable instance actionP : MulAction G (Pure S c)",
      "sorry": false
@@ -8435,7 +8435,7 @@
     {
      "name": "TensorSpecies.Tensor.Pure.actionP_eq",
      "kind": "lemma",
-     "line": 400,
+     "line": 405,
      "doc": "",
      "statement": "lemma actionP_eq {g : G} {p : Pure S c} : g • p = fun i => rep (c i) g (p i)",
      "sorry": false
@@ -8443,7 +8443,7 @@
     {
      "name": "TensorSpecies.Tensor.Pure.rep_cast",
      "kind": "lemma",
-     "line": 402,
+     "line": 407,
      "doc": "",
      "statement": "lemma rep_cast {g : G} {c c1 : C} (p : V c) (h : c = c1) :\n    LinearEquiv.cast (R := k) h (rep c g p) = rep c1 g (LinearEquiv.cast (R := k) h p)",
      "sorry": false
@@ -8451,7 +8451,7 @@
     {
      "name": "TensorSpecies.Tensor.Pure.actionP_cast",
      "kind": "lemma",
-     "line": 407,
+     "line": 412,
      "doc": "",
      "statement": "lemma actionP_cast {g : G} {p : Pure S c} (h : c = c1) :\n    LinearEquiv.cast (R := k) h (g • p) = g • LinearEquiv.cast (R := k) h p",
      "sorry": false
@@ -8459,7 +8459,7 @@
     {
      "name": "TensorSpecies.Tensor.Pure.drop_actionP",
      "kind": "lemma",
-     "line": 413,
+     "line": 418,
      "doc": "",
      "statement": "lemma drop_actionP {n : ℕ} {c : Fin (n + 1) → C} {i : Fin (n + 1)} {p : Pure S c} (g : G) :\n    (g • p).drop i = g • (p.drop i)",
      "sorry": false
@@ -8467,7 +8467,7 @@
     {
      "name": "TensorSpecies.Tensor.instSMul",
      "kind": "instance",
-     "line": 431,
+     "line": 436,
      "doc": "",
      "statement": "noncomputable instance (priority := high + 1) instSMul : SMul G (S.Tensor c)",
      "sorry": false
@@ -8475,7 +8475,7 @@
     {
      "name": "TensorSpecies.Tensor.actionT_eq",
      "kind": "lemma",
-     "line": 434,
+     "line": 439,
      "doc": "",
      "statement": "lemma actionT_eq {g : G} {t : S.Tensor c} : g • t =\n    PiTensorProduct.map (fun i => rep (c i) g) t",
      "sorry": false
@@ -8483,7 +8483,7 @@
     {
      "name": "TensorSpecies.Tensor.actionT",
      "kind": "instance",
-     "line": 437,
+     "line": 442,
      "doc": "",
      "statement": "noncomputable instance (priority := high + 1) actionT : MulAction G (S.Tensor c)",
      "sorry": false
@@ -8491,7 +8491,7 @@
     {
      "name": "TensorSpecies.Tensor.actionT_pure",
      "kind": "lemma",
-     "line": 447,
+     "line": 452,
      "doc": "",
      "statement": "lemma actionT_pure {g : G} {p : Pure S c} :\n    g • p.toTensor = Pure.toTensor (g • p)",
      "sorry": false
@@ -8499,7 +8499,7 @@
     {
      "name": "TensorSpecies.Tensor.actionT_add",
      "kind": "lemma",
-     "line": 451,
+     "line": 456,
      "doc": "",
      "statement": "lemma actionT_add {g : G} {t1 t2 : S.Tensor c} :\n    g • (t1 + t2) = g • t1 + g • t2",
      "sorry": false
@@ -8507,7 +8507,7 @@
     {
      "name": "TensorSpecies.Tensor.actionT_smul",
      "kind": "lemma",
-     "line": 456,
+     "line": 461,
      "doc": "",
      "statement": "lemma actionT_smul {g : G} {r : k} {t : S.Tensor c} :\n    g • (r • t) = r • (g • t)",
      "sorry": false
@@ -8515,7 +8515,7 @@
     {
      "name": "TensorSpecies.Tensor.actionT_zero",
      "kind": "lemma",
-     "line": 460,
+     "line": 465,
      "doc": "",
      "statement": "lemma actionT_zero {g : G} : g • (0 : S.Tensor c) = 0",
      "sorry": false
@@ -8523,7 +8523,7 @@
     {
      "name": "TensorSpecies.Tensor.actionT_neg",
      "kind": "lemma",
-     "line": 463,
+     "line": 468,
      "doc": "",
      "statement": "lemma actionT_neg {g : G} {t : S.Tensor c} :\n    g • (-t) = -(g • t)",
      "sorry": false
@@ -8531,7 +8531,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 469,
+     "line": 474,
      "doc": "",
      "statement": "noncomputable instance (priority := high + 1) : DistribMulAction G (S.Tensor c)",
      "sorry": false
@@ -8539,7 +8539,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 473,
+     "line": 478,
      "doc": "",
      "statement": "instance : SMulCommClass k G (S.Tensor c)",
      "sorry": false
@@ -8547,7 +8547,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 477,
+     "line": 482,
      "doc": "",
      "statement": "instance : SMulCommClass G k (S.Tensor c)",
      "sorry": false
@@ -8555,7 +8555,7 @@
     {
      "name": "TensorSpecies.Tensor.Pure.permP",
      "kind": "def",
-     "line": 491,
+     "line": 496,
      "doc": "Given a permutation `σ : Fin m → Fin n` of indices satisfying `IsReindexing` through `h`,\nand a pure tensor `p`, `permP σ h p` is the pure tensor permuted according to `σ`.\n\nFor example if `m = n = 2` and `σ = ![1, 0]`, and `p = v ⊗ₜ w` then\n`permP σ _ p = w ⊗ₜ v`.",
      "statement": "def Pure.permP {n m : ℕ} {c : Fin n → C} {c1 : Fin m → C}\n    (σ : Fin m → Fin n) (h : IsReindexing c c1 σ) (p : Pure S c) : Pure S c1",
      "sorry": false
@@ -8563,7 +8563,7 @@
     {
      "name": "TensorSpecies.Tensor.Pure.permP_basisVector",
      "kind": "lemma",
-     "line": 496,
+     "line": 501,
      "doc": "",
      "statement": "lemma Pure.permP_basisVector {n m : ℕ} {c : Fin n → C} {c1 : Fin m → C}\n    (σ : Fin m → Fin n) (h : IsReindexing c c1 σ) (φ : ComponentIdx (S := S) c) :\n    Pure.permP σ h (Pure.basisVector c φ) =\n    Pure.basisVector c1 (fun i => basisIdxCongr (by simp [h.preserve_color]) (φ (σ i)))",
      "sorry": false
@@ -8571,7 +8571,7 @@
     {
      "name": "TensorSpecies.Tensor.Pure.permP_equivariant",
      "kind": "lemma",
-     "line": 504,
+     "line": 509,
      "doc": "",
      "statement": "lemma Pure.permP_equivariant {n m : ℕ} {c : Fin n → C} {c1 : Fin m → C}\n    {σ : Fin m → Fin n} (h : IsReindexing c c1 σ) (g : G) (p : Pure S c) :\n    Pure.permP σ h (g • p) = g • Pure.permP σ h p",
      "sorry": false
@@ -8579,7 +8579,7 @@
     {
      "name": "TensorSpecies.Tensor.permT",
      "kind": "def",
-     "line": 513,
+     "line": 518,
      "doc": "The reindexing of a tensor based on a map `σ : Fin m → Fin n` of indices\nsatisfying `IsReindexing`.",
      "statement": "noncomputable def permT {n m : ℕ} {c : Fin n → C} {c1 : Fin m → C}\n    (σ : Fin m → Fin n) (h : IsReindexing c c1 σ) : S.Tensor c →ₗ[k] S.Tensor c1",
      "sorry": false
@@ -8587,7 +8587,7 @@
     {
      "name": "TensorSpecies.Tensor.permT_pure",
      "kind": "lemma",
-     "line": 519,
+     "line": 524,
      "doc": "",
      "statement": "lemma permT_pure {n m : ℕ} {c : Fin n → C} {c1 : Fin m → C}\n    {σ : Fin m → Fin n} (h : IsReindexing c c1 σ) (p : Pure S c) :\n    permT σ h p.toTensor = (p.permP σ h).toTensor",
      "sorry": false
@@ -8595,7 +8595,7 @@
     {
      "name": "TensorSpecies.Tensor.Pure.permP_id_self",
      "kind": "lemma",
-     "line": 527,
+     "line": 532,
      "doc": "",
      "statement": "lemma Pure.permP_id_self {n : ℕ} {c : Fin n → C} (p : Pure S c) :\n    Pure.permP (id : Fin n → Fin n) (by simp : IsReindexing c c id) p = p",
      "sorry": false
@@ -8603,7 +8603,7 @@
     {
      "name": "TensorSpecies.Tensor.permT_id_self",
      "kind": "lemma",
-     "line": 533,
+     "line": 538,
      "doc": "",
      "statement": "lemma permT_id_self {n : ℕ} {c : Fin n → C} (t : S.Tensor c) :\n    permT (id : Fin n → Fin n) (by simp : IsReindexing c c id) t = t",
      "sorry": false
@@ -8611,7 +8611,7 @@
     {
      "name": "TensorSpecies.Tensor.permT_congr_eq_id",
      "kind": "lemma",
-     "line": 540,
+     "line": 545,
      "doc": "",
      "statement": "lemma permT_congr_eq_id {n : ℕ} {c : Fin n → C} (t : S.Tensor c)\n    (σ : Fin n → Fin n) (hσ : IsReindexing c c σ) (h : σ = id) :\n    permT σ (hσ) t = t",
      "sorry": false
@@ -8619,7 +8619,7 @@
     {
      "name": "TensorSpecies.Tensor.permT_congr_eq_id'",
      "kind": "lemma",
-     "line": 546,
+     "line": 551,
      "doc": "",
      "statement": "lemma permT_congr_eq_id' {n : ℕ} {c : Fin n → C} (t t1 : S.Tensor c)\n    (σ : Fin n → Fin n) (hσ : IsReindexing c c σ) (h : σ = id) (ht : t = t1) :\n    permT σ (hσ) t = t1",
      "sorry": false
@@ -8627,7 +8627,7 @@
     {
      "name": "TensorSpecies.Tensor.permT_equivariant",
      "kind": "lemma",
-     "line": 553,
+     "line": 558,
      "doc": "",
      "statement": "lemma permT_equivariant {n m : ℕ} {c : Fin n → C} {c1 : Fin m → C}\n    {σ : Fin m → Fin n} (h : IsReindexing c c1 σ) (g : G) (t : S.Tensor c) :\n    permT σ h (g • t) = g • permT σ h t",
      "sorry": false
@@ -8635,7 +8635,7 @@
     {
      "name": "TensorSpecies.Tensor.Pure.permP_congr",
      "kind": "lemma",
-     "line": 562,
+     "line": 567,
      "doc": "",
      "statement": "lemma Pure.permP_congr {n m : ℕ} {c : Fin n → C} {c1 : Fin m → C}\n    {σ σ1 : Fin m → Fin n} {h : IsReindexing c c1 σ} {h1 : IsReindexing c c1 σ1}\n    {p p1 : Pure S c} (hmap : σ = σ1) (hpure : p = p1) :\n    Pure.permP σ h p = Pure.permP σ1 h1 p1",
      "sorry": false
@@ -8643,7 +8643,7 @@
     {
      "name": "TensorSpecies.Tensor.permT_congr",
      "kind": "lemma",
-     "line": 570,
+     "line": 575,
      "doc": "",
      "statement": "lemma permT_congr {n m : ℕ} {c : Fin n → C} {c1 : Fin m → C}\n    {σ σ1 : Fin m → Fin n} {h : IsReindexing c c1 σ} {h1 : IsReindexing c c1 σ1}\n    (hmap : σ = σ1) {t t1: S.Tensor c} (htensor : t = t1) :\n    permT σ h t = permT σ1 h1 t1",
      "sorry": false
@@ -8651,7 +8651,7 @@
     {
      "name": "TensorSpecies.Tensor.Pure.permP_permP",
      "kind": "lemma",
-     "line": 578,
+     "line": 583,
      "doc": "",
      "statement": "lemma Pure.permP_permP {n m1 m2 : ℕ} {c : Fin n → C} {c1 : Fin m1 → C} {c2 : Fin m2 → C}\n    {σ : Fin m1 → Fin n} {σ2 : Fin m2 → Fin m1} (h : IsReindexing c c1 σ)\n    (h2 : IsReindexing c1 c2 σ2) (p : Pure S c) :\n    Pure.permP σ2 h2 (Pure.permP σ h p) = Pure.permP (σ ∘ σ2) (h.comp h2) p",
      "sorry": false
@@ -8659,7 +8659,7 @@
     {
      "name": "TensorSpecies.Tensor.permT_permT",
      "kind": "lemma",
-     "line": 586,
+     "line": 591,
      "doc": "",
      "statement": "lemma permT_permT {n m1 m2 : ℕ} {c : Fin n → C} {c1 : Fin m1 → C} {c2 : Fin m2 → C}\n    {σ : Fin m1 → Fin n} {σ2 : Fin m2 → Fin m1} (h : IsReindexing c c1 σ)\n    (h2 : IsReindexing c1 c2 σ2) (t : S.Tensor c) :\n    permT σ2 h2 (permT σ h t) = permT (σ ∘ σ2) (h.comp h2) t",
      "sorry": false
@@ -8667,7 +8667,7 @@
     {
      "name": "TensorSpecies.Tensor.permT_basis_repr_symm_apply",
      "kind": "lemma",
-     "line": 596,
+     "line": 601,
      "doc": "",
      "statement": "lemma permT_basis_repr_symm_apply {n m : ℕ} {c : Fin n → C} {c1 : Fin m → C}\n    {σ : Fin m → Fin n} (h : IsReindexing c c1 σ) (t : S.Tensor c)\n    (φ : ComponentIdx c1) :\n    (basis c1).repr (permT σ h t) φ =\n    (basis c).repr t (fun i =>\n      basisIdxCongr (by simp [IsReindexing.inv_perserve_color]) (φ (h.inv σ i)))",
      "sorry": false
@@ -8675,7 +8675,7 @@
     {
      "name": "TensorSpecies.Tensor.permT_basis_repr_of_id",
      "kind": "lemma",
-     "line": 622,
+     "line": 627,
      "doc": "A reindexing whose slot map is pointwise the identity only transports the labels.",
      "statement": "lemma permT_basis_repr_of_id {n : ℕ} {c c1 : Fin n → C} {σ : Fin n → Fin n}\n    (hσ : ∀ i, σ i = i) (h : IsReindexing c c1 σ) (t : S.Tensor c)\n    (φ : ComponentIdx (S := S) c1) :\n    (basis c1).repr (permT σ h t) φ =\n    (basis c).repr t (fun i => basisIdxCongr (by rw [← h.2 i, hσ]) (φ i))",
      "sorry": false
@@ -8683,7 +8683,7 @@
     {
      "name": "TensorSpecies.Tensor.permT_basis",
      "kind": "lemma",
-     "line": 632,
+     "line": 637,
      "doc": "",
      "statement": "lemma permT_basis {n m : ℕ} {c : Fin n → C} {c1 : Fin m → C}\n    {σ : Fin m → Fin n} (h : IsReindexing c c1 σ)\n    (b : ComponentIdx c) :\n    (permT σ h) (basis (S := S) c b) = basis c1 (fun i =>\n      basisIdxCongr (by simp [h.2]) (b (σ i)))",
      "sorry": false
@@ -8691,7 +8691,7 @@
     {
      "name": "TensorSpecies.Tensor.permT_eq_zero_iff",
      "kind": "lemma",
-     "line": 639,
+     "line": 644,
      "doc": "",
      "statement": "lemma permT_eq_zero_iff {n m : ℕ} {c : Fin n → C} {c1 : Fin m → C}\n    {σ : Fin m → Fin n} (h : IsReindexing c c1 σ) (t : S.Tensor c) :\n    permT σ h t = 0 ↔ t = 0",
      "sorry": false
@@ -8699,7 +8699,7 @@
     {
      "name": "TensorSpecies.Tensor.permT_injective",
      "kind": "lemma",
-     "line": 649,
+     "line": 654,
      "doc": "`permT` is injective.",
      "statement": "lemma permT_injective {n m : ℕ} {c : Fin n → C} {c1 : Fin m → C}\n    {σ : Fin m → Fin n} (h : IsReindexing c c1 σ) :\n    Function.Injective (permT (S := S) σ h)",
      "sorry": false
@@ -8707,7 +8707,7 @@
     {
      "name": "TensorSpecies.Tensor.toScalar",
      "kind": "def",
-     "line": 660,
+     "line": 665,
      "doc": "The linear map between tensors with zero indices and the underlying scalars\n`k`.",
      "statement": "noncomputable def toScalar {c : Fin 0 → C} : S.Tensor c →ₗ[k] k",
      "sorry": false
@@ -8715,7 +8715,7 @@
     {
      "name": "TensorSpecies.Tensor.toScalar_default",
      "kind": "lemma",
-     "line": 663,
+     "line": 668,
      "doc": "",
      "statement": "lemma toScalar_default {c : Fin 0 → C} :\n    toScalar (Pure.toTensor default : S.Tensor c) = 1",
      "sorry": false
@@ -8723,7 +8723,7 @@
     {
      "name": "TensorSpecies.Tensor.toScalar_injective",
      "kind": "lemma",
-     "line": 667,
+     "line": 672,
      "doc": "",
      "statement": "lemma toScalar_injective {c : Fin 0 → C} :\n    Function.Injective (toScalar : S.Tensor c → k)",
      "sorry": false
@@ -8731,7 +8731,7 @@
     {
      "name": "TensorSpecies.Tensor.toScalar_pure",
      "kind": "lemma",
-     "line": 672,
+     "line": 677,
      "doc": "",
      "statement": "lemma toScalar_pure {c : Fin 0 → C} (p : Pure S c) :\n    toScalar (p.toTensor : S.Tensor c) = 1",
      "sorry": false
@@ -8739,7 +8739,7 @@
     {
      "name": "TensorSpecies.Tensor.toScalar_permT",
      "kind": "lemma",
-     "line": 676,
+     "line": 681,
      "doc": "",
      "statement": "lemma toScalar_permT {c c1 : Fin 0 → C} (σ : Fin 0 → Fin 0)\n    (h : IsReindexing c c1 σ) (t : S.Tensor c) :\n    toScalar (permT σ h t) = toScalar t",
      "sorry": false
@@ -8747,7 +8747,7 @@
     {
      "name": "TensorSpecies.Tensor.toScalar_basis_default",
      "kind": "lemma",
-     "line": 686,
+     "line": 691,
      "doc": "",
      "statement": "lemma toScalar_basis_default {c : Fin 0 → C} :\n    toScalar (basis c (@default (ComponentIdx (S := S) c) Unique.instInhabited)) = 1",
      "sorry": false
@@ -8755,7 +8755,7 @@
     {
      "name": "TensorSpecies.Tensor.toScalar_basis",
      "kind": "lemma",
-     "line": 690,
+     "line": 695,
      "doc": "",
      "statement": "lemma toScalar_basis {c : Fin 0 → C} (b : ComponentIdx (S := S) c) :\n    toScalar (basis c b) = 1",
      "sorry": false
@@ -8763,7 +8763,7 @@
     {
      "name": "TensorSpecies.Tensor.toScalar_eq_repr",
      "kind": "lemma",
-     "line": 694,
+     "line": 699,
      "doc": "",
      "statement": "lemma toScalar_eq_repr {c : Fin 0 → C} (t : Tensor S c) :\n    t.toScalar = (basis c).repr t (fun j => Fin.elim0 j)",
      "sorry": false
@@ -8771,7 +8771,7 @@
     {
      "name": "TensorSpecies.Tensor.toScalar_equivariant",
      "kind": "lemma",
-     "line": 702,
+     "line": 707,
      "doc": "",
      "statement": "lemma toScalar_equivariant {c : Fin 0 → C} (g : G) (t : Tensor S c) :\n    toScalar (g • t) = toScalar t",
      "sorry": false
@@ -8779,7 +8779,7 @@
     {
      "name": "TensorSpecies.Tensor.eq_smul_toScalar",
      "kind": "lemma",
-     "line": 709,
+     "line": 714,
      "doc": "",
      "statement": "lemma eq_smul_toScalar {c : Fin 0 → C} (t : Tensor S c) :\n    t = toScalar t • (basis c (@default (ComponentIdx (S := S) c) Unique.instInhabited))",
      "sorry": false
@@ -12928,7 +12928,7 @@
      "kind": "def",
      "line": 394,
      "doc": "The multi-linear map formed by contracting a pair of indices of pure tensors.",
-     "statement": "noncomputable def contrPMultilinear {n : ℕ} {c : Fin (n + 1 + 1) → C}\n    (i j : Fin (n + 1 + 1)) (hij : i ≠ j ∧ S.τ (c i) = c j) :\n    MultilinearMap k (fun i => V (c i))\n      (S.Tensor (c ∘ succSuccAbove i j))",
+     "statement": "noncomputable def contrPMultilinear {n : ℕ} {c : Fin (n + 1 + 1) → C}\n    (i j : Fin (n + 1 + 1)) (hij : i ≠ j ∧ S.τ (c i) = c j) :\n    MultilinearMap (RingHom.id k) (fun i => V (c i))\n      (S.Tensor (c ∘ succSuccAbove i j))",
      "sorry": false
     }
    ],
@@ -14068,7 +14068,7 @@
      "kind": "def",
      "line": 105,
      "doc": "The multi-linear map formed by evaluation of an index of pure tensors.",
-     "statement": "noncomputable def evalPMultilinear {n : ℕ} {c : Fin (n + 1)→ C}\n    (i : Fin (n + 1)) (φ : basisIdx (c i)) :\n    MultilinearMap k (fun i => V (c i))\n      (S.Tensor (c ∘ i.succAbove))",
+     "statement": "noncomputable def evalPMultilinear {n : ℕ} {c : Fin (n + 1)→ C}\n    (i : Fin (n + 1)) (φ : basisIdx (c i)) :\n    MultilinearMap (RingHom.id k) (fun i => V (c i))\n      (S.Tensor (c ∘ i.succAbove))",
      "sorry": false
     },
     {

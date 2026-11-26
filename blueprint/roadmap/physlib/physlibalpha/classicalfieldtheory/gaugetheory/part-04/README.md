@@ -2,27 +2,16 @@
 navigation: transparent
 ---
 
-# Realizations of the local field… to The Lie algebra `su(n)` over a…
+# The local field algebra of a… to The field symbols of the local…
 
-- [Realizations of the local field algebra](localfield-realization.md)
-- [The ordinary sector algebras of the local field algebra](localfield-sector.md)
-- [Realizations of the ordinary sector algebras](localfield-sectorrealization.md)
-- [The field symbols of the local field algebra and their transformation laws](localfield-transformsin.md)
+Modules in [LocalFieldAlgebra/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalFieldAlgebra):
 
-Modules in [LocalGaugeData/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData):
-
-- [Local gauge data: further consequences of the laws](localgaugedata-basic.md)
-- [The Taylor coefficients of the adjoint action](localgaugedata-adjointcoeff.md)
-- [The factors of a gauge group](localgaugedata-factor.md)
-- [Matrix jet groups](localgaugedata-matrixjets.md)
-- [The Maurer–Cartan form of a local gauge data package](localgaugedata-maurercartan.md)
-- [Local gauge data from a list of factors](localgaugedata-offactors.md)
-- [The product of local gauge data](localgaugedata-prod.md)
-- [The truncation filtration of the jet gauge group](localgaugedata-truncation.md)
-- [The local gauge data of `U(1)`](localgaugedata-u1.md)
-
-Modules in [LocalGaugeData/SU/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU):
-
-- [The local gauge data of `SU(n)`](localgaugedata-su-basic.md)
-- [The adjoint representation of `SU(N)`](localgaugedata-su-adjoint.md)
-- [The Lie algebra `su(n)` over a `*`-algebra](localgaugedata-su-algebra.md)
+- [The local field algebra of a gauge theory and its universal property](localfieldalgebra-basic.md)
+- [The covariant derivatives in the local field algebra](localfieldalgebra-covariantderiv.md)
+- [The jet gauge action on the local field algebra](localfieldalgebra-gaugeaction.md)
+- [`V`-valued jets](localfieldalgebra-jet.md)
+- [Fibrewise actions on `V`-valued jets](localfieldalgebra-jetrep.md)
+- [The Lorentz action on the local field algebra](localfieldalgebra-lorentzaction.md)
+- [The mass-weight filtration and the invariants of a local field algebra](localfieldalgebra-massweight.md)
+- [Realizations of the local field algebra](localfieldalgebra-realization.md)
+- [The field symbols of the local field algebra and their transformation laws](localfieldalgebra-symbols.md)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Group characters detected by integrated operators
 
-The module `PhyslibAlpha.Mathematics.TauCeti.RepresentationTheory.Continuous.Pontryagin.Basic`, [PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Basic.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.RepresentationTheory.Continuous.Pontryagin.Basic`, [PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Basic.lean): 1 declaration, 1 with a docstring.
 
 > Let `π` be a strongly continuous unitary representation of an abelian group and let `A` be a
 > complete star subalgebra containing its integrated operators.
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.RepresentationTheory.Continuous.Pon
 
 ## A. Development
 
-**`ContRepresentation.existsUnique_pontryaginDual_of_integratedOperatorL1`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Basic.lean#L63).
+**`ContRepresentation.existsUnique_pontryaginDual_of_integratedOperatorL1`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Basic.lean#L63).
 
 > A nonvanishing character of an algebra containing the integrated form of a strongly
 > continuous unitary representation detects a unique continuous group character. Its value is
@@ -71,4 +71,4 @@ lemma _root_.ContRepresentation.existsUnique_pontryaginDual_of_integratedOperato
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Basic.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Basic.lean)

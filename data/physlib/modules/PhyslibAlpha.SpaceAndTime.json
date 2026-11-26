@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
  "modules": [
   {
    "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/HalfPlane.lean",
@@ -1401,31 +1401,31 @@
    "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean",
    "module": "PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Matrix",
    "title": "Matrices over the jet ring",
-   "doc": "## i. Overview\n\nResults about matrices with entries in `SpaceTimeAlgebra`, chiefly the Euler (radial) transport: a\nmatrix of jets vanishing at the base point is the radial logarithmic derivative of a formal\nfundamental solution.\n\n## ii. Key results\n\n- `mapMatrix_constantCoeff_star` : entrywise evaluation at the base point commutes with the\n  conjugate transpose\n- `coeff_sum_X_smul_map_pderiv` : the Euler operator on matrices of jets acts entrywise on Taylor\n  coefficients as multiplication by the total degree\n- `matrix_eq_zero_of_euler_eq_mul_add_mul` : the vanishing principle for the Euler operator: a\n  matrix of jets vanishing at the base point and satisfying `E W = A W + W B` with `A`, `B`\n  vanishing at the base point is zero\n- `exists_matrix_eulerTransport` : the Euler (radial) transport of a jet matrix `R` vanishing at the\n  base point: a fundamental solution of the radial system `E U = R U` based at the identity, built\n  order-by-order by the Euler recursion\n- `map_pderiv_conj_of_mul_eq_one` : the derivative of the conjugate of a matrix of jets by an\n  invertible matrix of jets, in terms of its Maurer–Cartan matrix\n- `unitsEval`, `unitsOfConstant` : evaluation at the base point and the inclusion of constants,\n  for invertible matrices\n\n## iii. Table of contents\n\n- A. The Euler operator toolkit on matrices\n- B. The Euler vanishing principle by degree on matrices\n- C. Unitarity and determinant of the Euler transport\n- D. The Leibniz rule at the base point for matrices of power series\n- E. Conjugation, scalars and derivatives of matrices of jets\n- F. Invertible matrices of jets\n\n## iv. References\n\n* None.",
+   "doc": "Matrices of jets, their derivatives and Taylor coefficients, and the Euler (radial) transport.\n\n## i. Overview\n\nA gauge transformation near a point is a matrix with entries in `SpaceTimeAlgebra`, the jets at\nthat point. This file collects what is needed to work with such matrices entrywise.\n\nThe central construction is the Euler (radial) transport. The Euler operator\n`E = ∑_ρ x_ρ ∂_ρ` multiplies a Taylor coefficient of degree `n` by `n`. Hence a matrix of jets\n`W` vanishing at the base point with `E W = A W + W B`, for `A` and `B` vanishing at the base\npoint, is zero, since each of its coefficients is a multiple of coefficients of lower degree.\nThe same recursion, run forwards, solves the radial system `E U = R U` with `U = 1` at the base\npoint. This fundamental solution is unitary when `R` is anti-hermitian and has determinant one\nwhen `R` is traceless, and its Maurer–Cartan matrix `(∂_μ U) U⁻¹` solves a linear radial system.\nThis is how a Lie algebra jet is integrated radially into a gauge jet, in\n`GlobalGaugeGroup.exists_sum_X_smul_maurerCartan_eq`.\n\nThe remaining sections give the Leibniz rule for the Taylor coefficients of a product of\nmatrices of jets, the derivatives of conjugates and inverses in terms of Maurer–Cartan\nmatrices, and the invertible matrices of jets.\n\n## ii. Key results\n\n- `SpaceTimeAlgebra.matrix_eq_zero_of_euler_eq_mul_add_mul` : the vanishing principle for the\n  Euler operator.\n- `SpaceTimeAlgebra.exists_matrix_eulerTransport` : the Euler transport of a matrix of jets\n  vanishing at the base point.\n- `SpaceTimeAlgebra.eulerTransport_mul_star`, `SpaceTimeAlgebra.eulerTransport_det` : the Euler\n  transport of an anti-hermitian, traceless matrix is unitary of determinant one.\n- `SpaceTimeAlgebra.euler_map_pderiv_mul_inv_of_eulerTransport` : the radial system solved by\n  the Maurer–Cartan matrix of an Euler transport.\n- `SpaceTimeAlgebra.map_coeff_mul` : the Taylor coefficients of a product of matrices of jets.\n- `SpaceTimeAlgebra.map_pderiv_conj_of_mul_eq_one` : the derivative of the conjugate of a\n  matrix of jets by an invertible one, in terms of its Maurer–Cartan matrix.\n- `SpaceTimeAlgebra.unitsEval`, `SpaceTimeAlgebra.unitsOfConstant` : evaluation at the base\n  point and the inclusion of constants, for invertible matrices.\n\n## iii. Table of contents\n\n- A. The Euler operator and the Euler transport\n- B. The Euler vanishing principle by degree on matrices\n- C. Unitarity, determinant and Maurer–Cartan matrix of the Euler transport\n- D. The Leibniz rule at the base point for matrices of power series\n- E. Conjugation and derivatives of matrices of jets\n- F. Invertible matrices of jets\n\n## iv. References\n\n* None.",
    "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
-     "line": 59,
-     "text": "## A. The Euler operator toolkit on matrices"
+     "line": 73,
+     "text": "## A. The Euler operator and the Euler transport"
     },
     {
-     "line": 213,
+     "line": 251,
      "text": "## B. The Euler vanishing principle by degree on matrices"
     },
     {
-     "line": 259,
-     "text": "## C. Unitarity and determinant of the Euler transport"
+     "line": 297,
+     "text": "## C. Unitarity, determinant and Maurer–Cartan matrix of the Euler transport"
     },
     {
-     "line": 375,
+     "line": 451,
      "text": "## D. The Leibniz rule at the base point for matrices of power series"
     },
     {
-     "line": 407,
-     "text": "## E. Conjugation, scalars and derivatives of matrices of jets"
+     "line": 514,
+     "text": "## E. Conjugation and derivatives of matrices of jets"
     },
     {
-     "line": 528,
+     "line": 607,
      "text": "## F. Invertible matrices of jets"
     }
    ],
@@ -1433,7 +1433,7 @@
     {
      "name": "SpaceTimeAlgebra.mapMatrix_constantCoeff_star",
      "kind": "lemma",
-     "line": 66,
+     "line": 80,
      "doc": "Entrywise evaluation at the base point commutes with the conjugate transpose.",
      "statement": "lemma mapMatrix_constantCoeff_star {n : Type} [Fintype n] [DecidableEq n]\n    (A : Matrix n n SpaceTimeAlgebra) :\n    (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix (star A) =\n      star ((constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix A)",
      "sorry": false
@@ -1441,39 +1441,79 @@
     {
      "name": "SpaceTimeAlgebra.coeff_sum_X_smul_map_pderiv",
      "kind": "lemma",
-     "line": 75,
+     "line": 89,
      "doc": "The Euler operator on matrices of jets acts entrywise on Taylor coefficients as\nmultiplication by the total degree.",
      "statement": "lemma coeff_sum_X_smul_map_pderiv {κ : Type}\n    (M : Matrix κ κ SpaceTimeAlgebra) (p : (Fin 1 ⊕ Fin 3) →₀ ℕ) (i j : κ) :\n    coeff p ((∑ ρ, (X ρ : SpaceTimeAlgebra) • M.map (pderiv ρ)) i j) =\n      ((Finsupp.degree p : ℕ) : ℂ) * coeff p (M i j)",
      "sorry": false
     },
     {
+     "name": "SpaceTimeAlgebra.coeff_mul_apply_congr_left",
+     "kind": "lemma",
+     "line": 102,
+     "doc": "Multiplying on the left by a matrix of jets vanishing at the base point raises degrees, so\nthe Taylor coefficient of `R M` in degree `|p|` only depends on the coefficients of `M` of\nlower degree.",
+     "statement": "lemma coeff_mul_apply_congr_left {κ : Type} [Fintype κ] {R : Matrix κ κ SpaceTimeAlgebra}\n    (hR0 : ∀ i j, constantCoeff (R i j) = 0) (M N : Matrix κ κ SpaceTimeAlgebra)\n    (p : (Fin 1 ⊕ Fin 3) →₀ ℕ)\n    (h : ∀ (i j : κ) (q : (Fin 1 ⊕ Fin 3) →₀ ℕ), Finsupp.degree q < Finsupp.degree p →\n      coeff q (M i j) = coeff q (N i j)) (i j : κ) :\n    coeff p ((R * M) i j) = coeff p ((R * N) i j)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.coeff_mul_apply_congr_right",
+     "kind": "lemma",
+     "line": 119,
+     "doc": "Multiplying on the right by a matrix of jets vanishing at the base point raises degrees.\nThe transpose of `coeff_mul_apply_congr_left`.",
+     "statement": "lemma coeff_mul_apply_congr_right {κ : Type} [Fintype κ] {B : Matrix κ κ SpaceTimeAlgebra}\n    (hB0 : ∀ i j, constantCoeff (B i j) = 0) (M N : Matrix κ κ SpaceTimeAlgebra)\n    (p : (Fin 1 ⊕ Fin 3) →₀ ℕ)\n    (h : ∀ (i j : κ) (q : (Fin 1 ⊕ Fin 3) →₀ ℕ), Finsupp.degree q < Finsupp.degree p →\n      coeff q (M i j) = coeff q (N i j)) (i j : κ) :\n    coeff p ((M * B) i j) = coeff p ((N * B) i j)",
+     "sorry": false
+    },
+    {
      "name": "SpaceTimeAlgebra.matrix_eq_zero_of_euler_eq_mul_add_mul",
      "kind": "lemma",
-     "line": 89,
-     "doc": "The vanishing principle for the Euler operator: a matrix of jets vanishing at the\nbase point and satisfying `E W = A W + W B` with `A`, `B` vanishing at the base point\nis zero. Each Taylor coefficient of `W` is a multiple of coefficients of strictly\nsmaller degree, so all vanish by strong induction on the degree.",
+     "line": 133,
+     "doc": "The vanishing principle for the Euler operator. A matrix of jets vanishing at the\nbase point and satisfying `E W = A W + W B` with `A`, `B` vanishing at the base point\nis zero. Each Taylor coefficient of `W` is a multiple of coefficients of strictly\nsmaller degree, so all vanish by strong induction on the degree.",
      "statement": "lemma matrix_eq_zero_of_euler_eq_mul_add_mul {κ : Type} [Fintype κ]\n    {W : Matrix κ κ SpaceTimeAlgebra} (A B : Matrix κ κ SpaceTimeAlgebra)\n    (hA : ∀ i j, constantCoeff (A i j) = 0) (hB : ∀ i j, constantCoeff (B i j) = 0)\n    (h0 : ∀ i j, constantCoeff (W i j) = 0)\n    (hW : ∑ ρ, (X ρ : SpaceTimeAlgebra) • W.map (pderiv ρ) = A * W + W * B) :\n    W = 0",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.eulerStep",
+     "kind": "def",
+     "line": 176,
+     "doc": "One step of the Euler recursion for the radial system `E U = R U`. It is the identity\nplus `R M` with each Taylor coefficient of degree `n > 0` divided by `n`, and the Euler\ntransport of `R` is its fixed point, reached degree by degree.",
+     "statement": "noncomputable def eulerStep {κ : Type} [Fintype κ] [DecidableEq κ]\n    (R M : Matrix κ κ SpaceTimeAlgebra) : Matrix κ κ SpaceTimeAlgebra",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.coeff_eulerStep_apply",
+     "kind": "lemma",
+     "line": 182,
+     "doc": "The Taylor coefficients of one step of the Euler recursion.",
+     "statement": "lemma coeff_eulerStep_apply {κ : Type} [Fintype κ] [DecidableEq κ]\n    (R M : Matrix κ κ SpaceTimeAlgebra) (i j : κ) (p : (Fin 1 ⊕ Fin 3) →₀ ℕ) :\n    coeff p (eulerStep R M i j) = coeff p ((1 : Matrix κ κ SpaceTimeAlgebra) i j) +\n      if p = 0 then 0 else ((Finsupp.degree p : ℕ) : ℂ)⁻¹ * coeff p ((R * M) i j)",
      "sorry": false
     },
     {
      "name": "SpaceTimeAlgebra.exists_matrix_eulerTransport",
      "kind": "lemma",
-     "line": 150,
-     "doc": "The Euler (radial) transport of a jet matrix `R` vanishing at the base point:\na fundamental solution of the radial system `E U = R U` based at the identity,\nbuilt order-by-order by the Euler recursion.",
+     "line": 192,
+     "doc": "The Euler (radial) transport of a jet matrix `R` vanishing at the base point,\na fundamental solution of the radial system `E U = R U` based at the identity,\nbuilt order-by-order by the Euler recursion.",
      "statement": "lemma exists_matrix_eulerTransport {κ : Type} [Fintype κ] [DecidableEq κ]\n    (R : Matrix κ κ SpaceTimeAlgebra) (hR0 : ∀ i j, constantCoeff (R i j) = 0) :\n    ∃ U : Matrix κ κ SpaceTimeAlgebra, (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix U = 1 ∧\n      ∑ ρ, (X ρ : SpaceTimeAlgebra) • U.map (pderiv ρ) = R * U",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.map_pderiv_sum_X_smul_map_pderiv",
+     "kind": "lemma",
+     "line": 239,
+     "doc": "The formal derivative `∂_μ` and the Euler operator `E` on matrices of jets commute up to\n`∂_μ` itself, `∂_μ (E M) = E (∂_μ M) + ∂_μ M`, since `∂_μ x_ρ = δ_{μρ}`.",
+     "statement": "lemma map_pderiv_sum_X_smul_map_pderiv {κ : Type} (μ : Fin 1 ⊕ Fin 3)\n    (M : Matrix κ κ SpaceTimeAlgebra) :\n    (∑ ρ, (X ρ : SpaceTimeAlgebra) • M.map (pderiv ρ)).map (pderiv μ) =\n      ∑ ρ, (X ρ : SpaceTimeAlgebra) • (M.map (pderiv μ)).map (pderiv ρ) + M.map (pderiv μ)",
      "sorry": false
     },
     {
      "name": "SpaceTimeAlgebra.coeff_entry_eq_zero_of_map_pderiv_eq_mul",
      "kind": "lemma",
-     "line": 222,
-     "doc": "The matrix form of `coeff_eq_zero_of_pderiv_eq_mul`: the entries of a matrix of power\nseries satisfying `∂_ρ A = X_ρ A`, with the `X_ρ` vanishing below degree `n`, have no\ncoefficients in nonzero degree up to `n`.",
+     "line": 260,
+     "doc": "The matrix form of `coeff_eq_zero_of_pderiv_eq_mul`. The entries of a matrix of power\nseries satisfying `∂_ρ A = X_ρ A`, with the `X_ρ` vanishing below degree `n`, have no\ncoefficients in nonzero degree up to `n`.",
      "statement": "lemma coeff_entry_eq_zero_of_map_pderiv_eq_mul {κ : Type} [Fintype κ] {n : ℕ}\n    {A : Matrix κ κ SpaceTimeAlgebra} {X : (Fin 1 ⊕ Fin 3) → Matrix κ κ SpaceTimeAlgebra}\n    (hd : ∀ ρ, A.map (pderiv ρ) = X ρ * A)\n    (hX : ∀ (ρ : Fin 1 ⊕ Fin 3) (q : (Fin 1 ⊕ Fin 3) →₀ ℕ), Finsupp.degree q < n →\n      ∀ i j, coeff q (X ρ i j) = 0)\n    (i j : κ) {p : (Fin 1 ⊕ Fin 3) →₀ ℕ} (hp : p ≠ 0) (hpn : Finsupp.degree p ≤ n) :\n    coeff p (A i j) = 0",
      "sorry": false
     },
     {
      "name": "SpaceTimeAlgebra.matrix_map_truncation_eq_one",
      "kind": "lemma",
-     "line": 236,
+     "line": 274,
      "doc": "A matrix of power series with identity value and no coefficients in nonzero degree up\nto `n` truncates to the identity.",
      "statement": "lemma matrix_map_truncation_eq_one {κ : Type} [Fintype κ] [DecidableEq κ] {n : ℕ}\n    {A : Matrix κ κ SpaceTimeAlgebra}\n        (h0 : (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix A = 1)\n    (hA : ∀ (i j : κ) (p : (Fin 1 ⊕ Fin 3) →₀ ℕ), p ≠ 0 → Finsupp.degree p ≤ n →\n      coeff p (A i j) = 0) :\n    A.map (SpaceTimeAlgebra.truncation n) = (1 : Matrix κ κ SpaceTimeAlgebra).map\n        (SpaceTimeAlgebra.truncation n)",
      "sorry": false
@@ -1481,7 +1521,7 @@
     {
      "name": "SpaceTimeAlgebra.matrix_map_pderiv_mul",
      "kind": "lemma",
-     "line": 266,
+     "line": 304,
      "doc": "The entrywise Leibniz rule for matrix products of jets.",
      "statement": "lemma matrix_map_pderiv_mul {κ : Type} [Fintype κ] (ρ : Fin 1 ⊕ Fin 3)\n    (M N : Matrix κ κ SpaceTimeAlgebra) :\n    (M * N).map (pderiv ρ) = M.map (pderiv ρ) * N + M * N.map (pderiv ρ)",
      "sorry": false
@@ -1489,7 +1529,7 @@
     {
      "name": "SpaceTimeAlgebra.sum_X_smul_map_pderiv_mul",
      "kind": "lemma",
-     "line": 275,
+     "line": 313,
      "doc": "The Euler operator on matrices of jets is a derivation.",
      "statement": "lemma sum_X_smul_map_pderiv_mul {κ : Type} [Fintype κ]\n    (M N : Matrix κ κ SpaceTimeAlgebra) :\n    ∑ ρ, (X ρ : SpaceTimeAlgebra) • (M * N).map (pderiv ρ) =\n      (∑ ρ, (X ρ : SpaceTimeAlgebra) • M.map (pderiv ρ)) * N +\n        M * ∑ ρ, (X ρ : SpaceTimeAlgebra) • N.map (pderiv ρ)",
      "sorry": false
@@ -1497,7 +1537,7 @@
     {
      "name": "SpaceTimeAlgebra.sum_X_smul_map_pderiv_star",
      "kind": "lemma",
-     "line": 285,
+     "line": 323,
      "doc": "The Euler operator commutes with the conjugate transpose.",
      "statement": "lemma sum_X_smul_map_pderiv_star {κ : Type}\n    (M : Matrix κ κ SpaceTimeAlgebra) :\n    ∑ ρ, (X ρ : SpaceTimeAlgebra) • (star M).map (pderiv ρ) =\n      star (∑ ρ, (X ρ : SpaceTimeAlgebra) • M.map (pderiv ρ))",
      "sorry": false
@@ -1505,7 +1545,7 @@
     {
      "name": "SpaceTimeAlgebra.sum_X_smul_map_pderiv_one",
      "kind": "lemma",
-     "line": 294,
+     "line": 332,
      "doc": "The Euler operator kills the identity matrix.",
      "statement": "lemma sum_X_smul_map_pderiv_one {κ : Type} [DecidableEq κ] :\n    ∑ ρ, (X ρ : SpaceTimeAlgebra) • (1 : Matrix κ κ SpaceTimeAlgebra).map (pderiv ρ) = 0",
      "sorry": false
@@ -1513,31 +1553,47 @@
     {
      "name": "SpaceTimeAlgebra.eulerTransport_mul_star",
      "kind": "lemma",
-     "line": 303,
-     "doc": "A fundamental solution of the radial system `E U = R U` based at the identity is\nunitary when `R` is anti-hermitian: `U U† − 1` vanishes at the base point and\nsatisfies a homogeneous linear radial system, so it vanishes identically.",
+     "line": 341,
+     "doc": "A fundamental solution of the radial system `E U = R U` based at the identity is\nunitary when `R` is anti-hermitian. `U U† − 1` vanishes at the base point and\nsatisfies a homogeneous linear radial system, so it vanishes identically.",
      "statement": "lemma eulerTransport_mul_star {κ : Type} [Fintype κ] [DecidableEq κ]\n    {R U : Matrix κ κ SpaceTimeAlgebra} (hRstar : star R = -R)\n    (hR0 : ∀ i j, constantCoeff (R i j) = 0)\n    (hU0 : (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix U = 1)\n    (hEU : ∑ ρ, (X ρ : SpaceTimeAlgebra) • U.map (pderiv ρ) = R * U) :\n    U * star U = 1",
      "sorry": false
     },
     {
      "name": "SpaceTimeAlgebra.sum_X_smul_mcMatrix_of_eulerTransport",
      "kind": "lemma",
-     "line": 330,
-     "doc": "The radial Maurer–Cartan component of a unitary fundamental solution of the radial\nsystem `E V = −i P V` is `P`: `∑_μ x_μ · i (∂_μ V) V† = P`.",
+     "line": 368,
+     "doc": "The radial Maurer–Cartan component of a unitary fundamental solution of the radial\nsystem `E V = −i P V` is `P`, `∑_μ x_μ · i (∂_μ V) V† = P`.",
      "statement": "lemma sum_X_smul_mcMatrix_of_eulerTransport {κ : Type} [Fintype κ] [DecidableEq κ]\n    {P V : Matrix κ κ SpaceTimeAlgebra} (hVu : V * star V = 1)\n    (hEV : ∑ μ, (X μ : SpaceTimeAlgebra) • V.map (pderiv μ) = ((-Complex.I) • P) * V) :\n    ∑ μ, (X μ : SpaceTimeAlgebra) • (Complex.I • (V.map (pderiv μ) * star V)) = P",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.sum_X_smul_map_pderiv_mul_inv_of_eulerTransport",
+     "kind": "lemma",
+     "line": 383,
+     "doc": "The radial component of the Maurer–Cartan matrix of an invertible solution `V` of the\nradial system `E V = R V` is `R`, `∑_μ x_μ (∂_μ V) V⁻¹ = R`.",
+     "statement": "lemma sum_X_smul_map_pderiv_mul_inv_of_eulerTransport {κ : Type} [Fintype κ] [DecidableEq κ]\n    {R V W : Matrix κ κ SpaceTimeAlgebra} (hVW : V * W = 1)\n    (hEV : ∑ μ, (X μ : SpaceTimeAlgebra) • V.map (pderiv μ) = R * V) :\n    ∑ μ, (X μ : SpaceTimeAlgebra) • (V.map (pderiv μ) * W) = R",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.euler_map_pderiv_mul_inv_of_eulerTransport",
+     "kind": "lemma",
+     "line": 393,
+     "doc": "The Maurer–Cartan matrix `ω = (∂_μ V) V⁻¹` of an invertible solution `V` of the radial\nsystem `E V = R V` solves the linear radial system `E ω + ω = ∂_μ R + R ω − ω R`. This is\n`∂_μ` of the radial system, with `∂_μ E = E ∂_μ + ∂_μ` and `E V⁻¹ = −V⁻¹ R`.",
+     "statement": "lemma euler_map_pderiv_mul_inv_of_eulerTransport {κ : Type} [Fintype κ] [DecidableEq κ]\n    (μ : Fin 1 ⊕ Fin 3) {R V W : Matrix κ κ SpaceTimeAlgebra} (hVW : V * W = 1)\n    (hWV : W * V = 1)\n    (hEV : ∑ ρ, (X ρ : SpaceTimeAlgebra) • V.map (pderiv ρ) = R * V) :\n    ∑ ρ, (X ρ : SpaceTimeAlgebra) • (V.map (pderiv μ) * W).map (pderiv ρ) +\n        V.map (pderiv μ) * W =\n      R.map (pderiv μ) + (R * (V.map (pderiv μ) * W) - V.map (pderiv μ) * W * R)",
      "sorry": false
     },
     {
      "name": "SpaceTimeAlgebra.eulerTransport_det",
      "kind": "lemma",
-     "line": 346,
-     "doc": "A fundamental solution of the radial system `E U = R U` based at the identity has\ndeterminant one when `R` is traceless: by Jacobi's formula the determinant is killed\nby the Euler operator, so it is the constant `1`.",
+     "line": 422,
+     "doc": "A fundamental solution of the radial system `E U = R U` based at the identity has\ndeterminant one when `R` is traceless. By Jacobi's formula the determinant is killed\nby the Euler operator, so it is the constant `1`.",
      "statement": "lemma eulerTransport_det {κ : Type} [Fintype κ] [DecidableEq κ]\n    {R U : Matrix κ κ SpaceTimeAlgebra}\n    (hjac : ∀ (M : Matrix κ κ SpaceTimeAlgebra) (μ : Fin 1 ⊕ Fin 3),\n      pderiv μ M.det = (M.map (pderiv μ) * M.adjugate).trace)\n    (hRtr : R.trace = 0)\n    (hU0 : (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix U = 1)\n    (hEU : ∑ ρ, (X ρ : SpaceTimeAlgebra) • U.map (pderiv ρ) = R * U) :\n    U.det = 1",
      "sorry": false
     },
     {
      "name": "SpaceTimeAlgebra.matrix_multiset_sum_apply",
      "kind": "lemma",
-     "line": 382,
+     "line": 458,
      "doc": "The entry of a multiset sum of matrices is the multiset sum of the entries.",
      "statement": "lemma matrix_multiset_sum_apply {κ α : Type*} [AddCommMonoid α]\n    (m : Multiset (Matrix κ κ α)) (i j : κ) :\n    m.sum i j = (m.map fun A => A i j).sum",
      "sorry": false
@@ -1545,55 +1601,39 @@
     {
      "name": "SpaceTimeAlgebra.matrix_constantCoeff_iteratedPDeriv_mul",
      "kind": "lemma",
-     "line": 393,
-     "doc": "The matrix Leibniz rule at the base point: the base-point Taylor coefficients of a\nproduct of matrices of jets are the antidiagonal convolution of the base-point\ncoefficients of the factors.",
+     "line": 469,
+     "doc": "The matrix Leibniz rule at the base point. The base-point Taylor coefficients of a\nproduct of matrices of jets are the antidiagonal convolution of the base-point\ncoefficients of the factors.",
      "statement": "lemma matrix_constantCoeff_iteratedPDeriv_mul {κ : Type} [Fintype κ]\n    (s : Multiset (Fin 1 ⊕ Fin 3)) (M N : Matrix κ κ SpaceTimeAlgebra) :\n    ((M * N).map fun f => constantCoeff (iteratedPDeriv s f))\n      = (s.antidiagonal.map fun p =>\n          (M.map fun f => constantCoeff (iteratedPDeriv p.1 f)) *\n            (N.map fun f => constantCoeff (iteratedPDeriv p.2 f))).sum",
      "sorry": false
     },
     {
-     "name": "SpaceTimeAlgebra.mapMatrix_C_star",
+     "name": "SpaceTimeAlgebra.map_coeff_mul",
      "kind": "lemma",
-     "line": 418,
-     "doc": "Entrywise inclusion of constants commutes with the conjugate transpose.",
-     "statement": "lemma mapMatrix_C_star [Fintype κ] [DecidableEq κ] (A : Matrix κ κ ℂ) :\n    (C : ℂ →+* SpaceTimeAlgebra).mapMatrix (star A) = star\n        ((C : ℂ →+* SpaceTimeAlgebra).mapMatrix A)",
+     "line": 485,
+     "doc": "The Taylor coefficients of a product of matrices of jets are the antidiagonal\nconvolution of the Taylor coefficients of the factors.",
+     "statement": "lemma map_coeff_mul {κ : Type} [Fintype κ] (M N : Matrix κ κ SpaceTimeAlgebra)\n    (p : (Fin 1 ⊕ Fin 3) →₀ ℕ) :\n    (M * N).map (coeff p) =\n      ∑ x ∈ Finset.antidiagonal p, M.map (coeff x.1) * N.map (coeff x.2)",
      "sorry": false
     },
     {
-     "name": "SpaceTimeAlgebra.mapMatrix_C_smul",
+     "name": "SpaceTimeAlgebra.matrix_constantCoeff_iteratedPDeriv_commutator",
      "kind": "lemma",
-     "line": 425,
-     "doc": "Entrywise inclusion of constants commutes with complex scalars.",
-     "statement": "lemma mapMatrix_C_smul [Fintype κ] [DecidableEq κ] (c : ℂ) (M : Matrix κ κ ℂ) :\n    (C : ℂ →+* SpaceTimeAlgebra).mapMatrix (c • M) = c •\n        (C : ℂ →+* SpaceTimeAlgebra).mapMatrix M",
-     "sorry": false
-    },
-    {
-     "name": "SpaceTimeAlgebra.mapMatrix_constantCoeff_smul",
-     "kind": "lemma",
-     "line": 433,
-     "doc": "The entrywise constant coefficient commutes with complex scalars.",
-     "statement": "lemma mapMatrix_constantCoeff_smul [Fintype κ] [DecidableEq κ] (c : ℂ)\n    (M : Matrix κ κ SpaceTimeAlgebra) :\n    (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix (c • M)\n      = c • (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix M",
+     "line": 495,
+     "doc": "The matrix Leibniz rule at the base point for a commutator. The base-point Taylor\ncoefficients of `M N − N M` are sums of commutators of base-point Taylor coefficients.",
+     "statement": "lemma matrix_constantCoeff_iteratedPDeriv_commutator {κ : Type} [Fintype κ]\n    (s : Multiset (Fin 1 ⊕ Fin 3)) (M N : Matrix κ κ SpaceTimeAlgebra) :\n    ((M * N - N * M).map fun f => constantCoeff (iteratedPDeriv s f))\n      = (s.antidiagonal.map fun p =>\n          (M.map fun f => constantCoeff (iteratedPDeriv p.1 f)) *\n            (N.map fun f => constantCoeff (iteratedPDeriv p.2 f)) -\n          (N.map fun f => constantCoeff (iteratedPDeriv p.2 f)) *\n            (M.map fun f => constantCoeff (iteratedPDeriv p.1 f))).sum",
      "sorry": false
     },
     {
      "name": "SpaceTimeAlgebra.star_map_pderiv",
      "kind": "lemma",
-     "line": 441,
+     "line": 525,
      "doc": "The entrywise derivative commutes with the conjugate transpose.",
      "statement": "lemma star_map_pderiv (μ : Fin 1 ⊕ Fin 3) (A : Matrix κ κ SpaceTimeAlgebra) :\n    star (A.map (pderiv μ)) = (star A).map (pderiv μ)",
      "sorry": false
     },
     {
-     "name": "SpaceTimeAlgebra.map_pderiv_smul",
-     "kind": "lemma",
-     "line": 448,
-     "doc": "Pulling a complex scalar out of the entrywise derivative.",
-     "statement": "lemma map_pderiv_smul (μ : Fin 1 ⊕ Fin 3) (c : ℂ) (M : Matrix κ κ SpaceTimeAlgebra) :\n    (c • M).map (pderiv μ) = c • M.map (pderiv μ)",
-     "sorry": false
-    },
-    {
      "name": "SpaceTimeAlgebra.map_pderiv_sub",
      "kind": "lemma",
-     "line": 453,
+     "line": 532,
      "doc": "The entrywise derivative of a difference.",
      "statement": "lemma map_pderiv_sub (μ : Fin 1 ⊕ Fin 3) (M N : Matrix κ κ SpaceTimeAlgebra) :\n    (M - N).map (pderiv μ) = M.map (pderiv μ) - N.map (pderiv μ)",
      "sorry": false
@@ -1601,15 +1641,15 @@
     {
      "name": "SpaceTimeAlgebra.map_pderiv_of_mul_eq_one",
      "kind": "lemma",
-     "line": 460,
-     "doc": "The entrywise derivative of the inverse `V` of a matrix of jets `U`, through the\ndifferentiated relation `U V = 1`: `∂_μ V = −V (∂_μ U) V`.",
+     "line": 539,
+     "doc": "The entrywise derivative of the inverse `V` of a matrix of jets `U`, through the\ndifferentiated relation `U V = 1`, `∂_μ V = −V (∂_μ U) V`.",
      "statement": "lemma map_pderiv_of_mul_eq_one [Fintype κ] [DecidableEq κ] (μ : Fin 1 ⊕ Fin 3)\n    {U V : Matrix κ κ SpaceTimeAlgebra} (hUV : U * V = 1) (hVU : V * U = 1) :\n    V.map (pderiv μ) = -(V * U.map (pderiv μ) * V)",
      "sorry": false
     },
     {
      "name": "SpaceTimeAlgebra.map_pderiv_star_of_unitary",
      "kind": "lemma",
-     "line": 475,
+     "line": 554,
      "doc": "The entrywise derivative of the conjugate transpose of a unitary matrix, through the\ndifferentiated unitarity relation.",
      "statement": "lemma map_pderiv_star_of_unitary [Fintype κ] [DecidableEq κ] (μ : Fin 1 ⊕ Fin 3)\n    {U : Matrix κ κ SpaceTimeAlgebra}\n    (hU : U * star U = 1) (hU' : star U * U = 1) :\n    (star U).map (pderiv μ) = -(star U * U.map (pderiv μ) * star U)",
      "sorry": false
@@ -1617,23 +1657,23 @@
     {
      "name": "SpaceTimeAlgebra.map_pderiv_conj_of_mul_eq_one",
      "kind": "lemma",
-     "line": 484,
-     "doc": "The derivative of the conjugate `V A U` of a matrix of jets by an invertible matrix of\njets `U` with inverse `V`, in terms of the Maurer–Cartan matrix `ω = (∂_μ U) V`:\n`∂_μ (V A U) = V (∂_μ A − (ω A − A ω)) U`.",
+     "line": 563,
+     "doc": "The derivative of the conjugate `V A U` of a matrix of jets by an invertible matrix of\njets `U` with inverse `V`, in terms of the Maurer–Cartan matrix `ω = (∂_μ U) V`,\n`∂_μ (V A U) = V (∂_μ A − (ω A − A ω)) U`.",
      "statement": "lemma map_pderiv_conj_of_mul_eq_one [Fintype κ] [DecidableEq κ] (μ : Fin 1 ⊕ Fin 3)\n    {U V : Matrix κ κ SpaceTimeAlgebra} (hUV : U * V = 1) (hVU : V * U = 1)\n    (A : Matrix κ κ SpaceTimeAlgebra) :\n    (V * A * U).map (pderiv μ) = V * (A.map (pderiv μ) -\n      (U.map (pderiv μ) * V * A - A * (U.map (pderiv μ) * V))) * U",
      "sorry": false
     },
     {
      "name": "SpaceTimeAlgebra.map_pderiv_mul_mul_mul",
      "kind": "lemma",
-     "line": 495,
-     "doc": "The cocycle law of Maurer–Cartan matrices: for invertible matrices of jets `U₁`, `U₂`\nwith inverses `V₁`, `V₂`, `∂_μ (U₁ U₂) (V₂ V₁) = (∂_μ U₁) V₁ + U₁ ((∂_μ U₂) V₂) V₁`.",
+     "line": 574,
+     "doc": "The cocycle law of Maurer–Cartan matrices, for invertible matrices of jets `U₁`, `U₂`\nwith inverses `V₁`, `V₂`, `∂_μ (U₁ U₂) (V₂ V₁) = (∂_μ U₁) V₁ + U₁ ((∂_μ U₂) V₂) V₁`.",
      "statement": "lemma map_pderiv_mul_mul_mul [Fintype κ] [DecidableEq κ] (μ : Fin 1 ⊕ Fin 3)\n    {U₁ U₂ V₁ V₂ : Matrix κ κ SpaceTimeAlgebra} (h : U₂ * V₂ = 1) :\n    (U₁ * U₂).map (pderiv μ) * (V₂ * V₁) =\n      U₁.map (pderiv μ) * V₁ + U₁ * (U₂.map (pderiv μ) * V₂) * V₁",
      "sorry": false
     },
     {
      "name": "SpaceTimeAlgebra.map_pderiv_commutator",
      "kind": "lemma",
-     "line": 505,
+     "line": 584,
      "doc": "The derivative of a commutator of matrices of jets.",
      "statement": "lemma map_pderiv_commutator [Fintype κ] (μ : Fin 1 ⊕ Fin 3) (A B : Matrix κ κ SpaceTimeAlgebra) :\n    (A * B - B * A).map (pderiv μ) = (A.map (pderiv μ) * B - B * A.map (pderiv μ))\n      + (A * B.map (pderiv μ) - B.map (pderiv μ) * A)",
      "sorry": false
@@ -1641,7 +1681,7 @@
     {
      "name": "SpaceTimeAlgebra.map_pderiv_mapMatrix_C",
      "kind": "lemma",
-     "line": 512,
+     "line": 591,
      "doc": "A constant matrix of jets has vanishing derivatives.",
      "statement": "lemma map_pderiv_mapMatrix_C [Fintype κ] [DecidableEq κ] (μ : Fin 1 ⊕ Fin 3)\n    (A : Matrix κ κ ℂ) : ((C : ℂ →+* SpaceTimeAlgebra).mapMatrix A).map (pderiv μ) = 0",
      "sorry": false
@@ -1649,7 +1689,7 @@
     {
      "name": "SpaceTimeAlgebra.star_mcMatrix",
      "kind": "lemma",
-     "line": 518,
+     "line": 597,
      "doc": "The Maurer–Cartan matrix `i (∂_μ U) U†` of a unitary matrix of jets is hermitian.",
      "statement": "lemma star_mcMatrix [Fintype κ] [DecidableEq κ] (μ : Fin 1 ⊕ Fin 3)\n    {U : Matrix κ κ SpaceTimeAlgebra}\n    (hU : U * star U = 1) (hU' : star U * U = 1) :\n    star (Complex.I • (U.map (pderiv μ) * star U)) = Complex.I • (U.map (pderiv μ) * star U)",
      "sorry": false
@@ -1657,7 +1697,7 @@
     {
      "name": "SpaceTimeAlgebra.unitsEval",
      "kind": "def",
-     "line": 539,
+     "line": 618,
      "doc": "Evaluation of an invertible matrix of jets at the base point, entrywise.",
      "statement": "noncomputable def unitsEval : (Matrix κ κ SpaceTimeAlgebra)ˣ →* (Matrix κ κ ℂ)ˣ",
      "sorry": false
@@ -1665,7 +1705,7 @@
     {
      "name": "SpaceTimeAlgebra.unitsEval_val",
      "kind": "lemma",
-     "line": 543,
+     "line": 622,
      "doc": "",
      "statement": "lemma unitsEval_val (U : (Matrix κ κ SpaceTimeAlgebra)ˣ) :\n    (unitsEval U : Matrix κ κ ℂ) = (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix U",
      "sorry": false
@@ -1673,7 +1713,7 @@
     {
      "name": "SpaceTimeAlgebra.unitsOfConstant",
      "kind": "def",
-     "line": 547,
+     "line": 626,
      "doc": "An invertible matrix as a constant invertible matrix of jets, entrywise.",
      "statement": "noncomputable def unitsOfConstant : (Matrix κ κ ℂ)ˣ →* (Matrix κ κ SpaceTimeAlgebra)ˣ",
      "sorry": false
@@ -1681,7 +1721,7 @@
     {
      "name": "SpaceTimeAlgebra.unitsOfConstant_val",
      "kind": "lemma",
-     "line": 551,
+     "line": 630,
      "doc": "",
      "statement": "lemma unitsOfConstant_val (g : (Matrix κ κ ℂ)ˣ) :\n    (unitsOfConstant g : Matrix κ κ SpaceTimeAlgebra) =\n      (C : ℂ →+* SpaceTimeAlgebra).mapMatrix g",
      "sorry": false
@@ -1689,8 +1729,8 @@
     {
      "name": "SpaceTimeAlgebra.unitsEval_unitsOfConstant",
      "kind": "lemma",
-     "line": 555,
-     "doc": "",
+     "line": 635,
+     "doc": "A constant invertible matrix of jets evaluates to itself at the base point.",
      "statement": "lemma unitsEval_unitsOfConstant (g : (Matrix κ κ ℂ)ˣ) : unitsEval (unitsOfConstant g) = g",
      "sorry": false
     }
@@ -1702,40 +1742,24 @@
   {
    "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean",
    "module": "PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Taylor",
-   "title": "Taylor determinacy and completeness of jets",
-   "doc": "## i. Overview\n\nA jet is determined by the base-point values of its iterated derivatives, and a jet all of\nwhose first derivatives vanish is the constant jet of its value. These are the two facts\nthat make the jets of a matrix gauge group a faithful package of local gauge data, in the\nsense of `LocalGaugeData.Faithful`. Conversely every family of base-point Taylor data is\nrealized by a jet, `ofDerivValues`, and entrywise by a matrix of jets, `taylorMatrix`: this\nis the Taylor completeness half of `LocalGaugeData.Free`. In the other direction,\n`derivValueMatrix` reads off the base-point Taylor data of a matrix of jets.\n\n## ii. Key results\n\n- `SpaceTimeAlgebra.ext_of_constantCoeff_iteratedPDeriv` : Taylor determinacy.\n- `SpaceTimeAlgebra.eq_C_of_pderiv_eq_zero` : a jet with vanishing derivatives is constant.\n- `SpaceTimeAlgebra.ofDerivValues` :\n  Taylor completeness.\n- `SpaceTimeAlgebra.taylorMatrix` : Taylor completeness for matrices of jets.\n- `SpaceTimeAlgebra.derivValueMatrix` : the base-point Taylor data of a matrix of jets.\n\n## iii. Table of contents\n\n- A. Taylor completeness\n- B. Base-point derivatives of matrices of jets\n\n## iv. References\n\n* None.",
+   "title": "Taylor data of matrices of jets",
+   "doc": "Matrices of jets are determined by, and can be built from, their base-point Taylor data.\n\n## i. Overview\n\nA jet is determined by the base-point values of its iterated derivatives, and every family of\nsuch values is realized by a jet, `SpaceTimeAlgebra.ofDerivValues` (both in Physlib). This file\ncarries these two facts, Taylor determinacy and Taylor completeness, over to matrices of jets\nentrywise. `taylorMatrix` builds the matrix of jets with prescribed base-point Taylor data, and\n`derivValueMatrix` reads the base-point Taylor data off a matrix of jets. They are what make a\nLie algebra jet of a matrix gauge group determined by, and freely prescribed through, its\nbase-point Taylor data.\n\n## ii. Key results\n\n- `SpaceTimeAlgebra.taylorMatrix` : the matrix of jets with prescribed base-point Taylor data.\n- `SpaceTimeAlgebra.map_constantCoeff_iteratedPDeriv_taylorMatrix` : Taylor completeness for\n  matrices of jets.\n- `SpaceTimeAlgebra.derivValueMatrix` : the base-point Taylor data of a matrix of jets.\n- `SpaceTimeAlgebra.derivValueMatrix_eq_smul_map_coeff` : the base-point derivative along\n  `s` is `s!` times the matrix of Taylor coefficients of `x^s`.\n- `SpaceTimeAlgebra.matrix_ext_of_derivValueMatrix` : Taylor determinacy for matrices of jets.\n\n## iii. Table of contents\n\n- A. Taylor completeness\n- B. Base-point derivatives of matrices of jets\n\n## iv. References\n\n* None.",
    "copyright": "2026 Jinzheng Li",
    "sections": [
     {
-     "line": 49,
+     "line": 52,
      "text": "## A. Taylor completeness"
     },
     {
-     "line": 95,
+     "line": 75,
      "text": "## B. Base-point derivatives of matrices of jets"
     }
    ],
    "declarations": [
     {
-     "name": "SpaceTimeAlgebra.star_ofDerivValues",
-     "kind": "lemma",
-     "line": 55,
-     "doc": "",
-     "statement": "lemma star_ofDerivValues (f : Multiset (Fin 1 ⊕ Fin 3) → ℂ) :\n    star (ofDerivValues f) = ofDerivValues fun s => star (f s)",
-     "sorry": false
-    },
-    {
-     "name": "SpaceTimeAlgebra.ofDerivValues_sum",
-     "kind": "lemma",
-     "line": 61,
-     "doc": "",
-     "statement": "lemma ofDerivValues_sum {ι : Type} (t : Finset ι) (f : ι → Multiset (Fin 1 ⊕ Fin 3) → ℂ) :\n    ofDerivValues (fun s => ∑ i ∈ t, f i s) = ∑ i ∈ t, ofDerivValues (f i)",
-     "sorry": false
-    },
-    {
      "name": "SpaceTimeAlgebra.taylorMatrix",
      "kind": "def",
-     "line": 67,
+     "line": 59,
      "doc": "The matrix of jets with prescribed base-point Taylor data `M`, entrywise.",
      "statement": "noncomputable def taylorMatrix {κ : Type} (M : Multiset (Fin 1 ⊕ Fin 3) → Matrix κ κ ℂ) :\n    Matrix κ κ SpaceTimeAlgebra",
      "sorry": false
@@ -1743,31 +1767,15 @@
     {
      "name": "SpaceTimeAlgebra.taylorMatrix_apply",
      "kind": "lemma",
-     "line": 71,
-     "doc": "",
+     "line": 64,
+     "doc": "An entry of `taylorMatrix M` is the jet with the Taylor data of that entry.",
      "statement": "lemma taylorMatrix_apply {κ : Type} (M : Multiset (Fin 1 ⊕ Fin 3) → Matrix κ κ ℂ) (i j : κ) :\n    taylorMatrix M i j = ofDerivValues fun s => M s i j",
-     "sorry": false
-    },
-    {
-     "name": "SpaceTimeAlgebra.star_taylorMatrix",
-     "kind": "lemma",
-     "line": 75,
-     "doc": "",
-     "statement": "lemma star_taylorMatrix {κ : Type} {M : Multiset (Fin 1 ⊕ Fin 3) → Matrix κ κ ℂ}\n    (hM : ∀ s, star (M s) = M s) : star (taylorMatrix M) = taylorMatrix M",
-     "sorry": false
-    },
-    {
-     "name": "SpaceTimeAlgebra.trace_taylorMatrix",
-     "kind": "lemma",
-     "line": 81,
-     "doc": "",
-     "statement": "lemma trace_taylorMatrix {κ : Type} [Fintype κ] {M : Multiset (Fin 1 ⊕ Fin 3) → Matrix κ κ ℂ}\n    (hM : ∀ s, (M s).trace = 0) : (taylorMatrix M).trace = 0",
      "sorry": false
     },
     {
      "name": "SpaceTimeAlgebra.map_constantCoeff_iteratedPDeriv_taylorMatrix",
      "kind": "lemma",
-     "line": 89,
+     "line": 69,
      "doc": "The base-point Taylor data of `taylorMatrix M` are `M`, entrywise.",
      "statement": "lemma map_constantCoeff_iteratedPDeriv_taylorMatrix {κ : Type}\n    (M : Multiset (Fin 1 ⊕ Fin 3) → Matrix κ κ ℂ) (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    (taylorMatrix M).map (fun f => constantCoeff (iteratedPDeriv s f)) = M s",
      "sorry": false
@@ -1775,7 +1783,7 @@
     {
      "name": "SpaceTimeAlgebra.derivValueMatrix",
      "kind": "def",
-     "line": 108,
+     "line": 88,
      "doc": "The base-point values of the iterated derivatives of a matrix of jets along a multiset\nof directions, taken entrywise. These are the Taylor coefficients up to the factorial\nfactor, matching `SpaceTimeAlgebra.ofDerivValues`.",
      "statement": "noncomputable def derivValueMatrix (s : Multiset (Fin 1 ⊕ Fin 3))\n    (A : Matrix κ κ SpaceTimeAlgebra) : Matrix κ κ ℂ",
      "sorry": false
@@ -1783,31 +1791,31 @@
     {
      "name": "SpaceTimeAlgebra.derivValueMatrix_cons",
      "kind": "lemma",
-     "line": 112,
-     "doc": "",
+     "line": 93,
+     "doc": "One more direction in `s` differentiates the matrix entrywise first.",
      "statement": "lemma derivValueMatrix_cons (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3))\n    (A : Matrix κ κ SpaceTimeAlgebra) :\n    derivValueMatrix (μ ::ₘ s) A = derivValueMatrix s (A.map (pderiv μ))",
      "sorry": false
     },
     {
      "name": "SpaceTimeAlgebra.derivValueMatrix_add",
      "kind": "lemma",
-     "line": 118,
-     "doc": "",
+     "line": 100,
+     "doc": "The base-point Taylor data of a matrix of jets are additive.",
      "statement": "lemma derivValueMatrix_add (s : Multiset (Fin 1 ⊕ Fin 3)) (A B : Matrix κ κ SpaceTimeAlgebra) :\n    derivValueMatrix s (A + B) = derivValueMatrix s A + derivValueMatrix s B",
      "sorry": false
     },
     {
      "name": "SpaceTimeAlgebra.derivValueMatrix_real_smul",
      "kind": "lemma",
-     "line": 123,
-     "doc": "",
+     "line": 106,
+     "doc": "The base-point Taylor data of a matrix of jets commute with real scaling.",
      "statement": "lemma derivValueMatrix_real_smul (s : Multiset (Fin 1 ⊕ Fin 3)) (r : ℝ)\n    (A : Matrix κ κ SpaceTimeAlgebra) :\n    derivValueMatrix s (r • A) = r • derivValueMatrix s A",
      "sorry": false
     },
     {
      "name": "SpaceTimeAlgebra.derivValueMatrix_zero_right",
      "kind": "lemma",
-     "line": 132,
+     "line": 115,
      "doc": "",
      "statement": "lemma derivValueMatrix_zero_right (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    derivValueMatrix s (0 : Matrix κ κ SpaceTimeAlgebra) = 0",
      "sorry": false
@@ -1815,9 +1823,25 @@
     {
      "name": "SpaceTimeAlgebra.derivValueMatrix_zero",
      "kind": "lemma",
-     "line": 140,
+     "line": 123,
      "doc": "",
      "statement": "lemma derivValueMatrix_zero (A : Matrix κ κ SpaceTimeAlgebra) :\n    derivValueMatrix 0 A = (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix A",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.derivValueMatrix_eq_smul_map_coeff",
+     "kind": "lemma",
+     "line": 130,
+     "doc": "The base-point derivative of a matrix of jets along `s` is `s!` times its matrix of\nTaylor coefficients of `x^s`, with `s!` the product of the factorials of the\nmultiplicities in `s`.",
+     "statement": "lemma derivValueMatrix_eq_smul_map_coeff (s : Multiset (Fin 1 ⊕ Fin 3))\n    (A : Matrix κ κ SpaceTimeAlgebra) :\n    derivValueMatrix s A = ((∏ ν, (s.count ν).factorial : ℕ) : ℝ) •\n      A.map (coeff (Multiset.toFinsupp s))",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.matrix_ext_of_derivValueMatrix",
+     "kind": "lemma",
+     "line": 140,
+     "doc": "A matrix of jets is determined by its base-point derivatives.",
+     "statement": "lemma matrix_ext_of_derivValueMatrix {A B : Matrix κ κ SpaceTimeAlgebra}\n    (h : ∀ s, derivValueMatrix s A = derivValueMatrix s B) : A = B",
      "sorry": false
     }
    ],
@@ -1829,51 +1853,51 @@
    "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean",
    "module": "PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeDerivAlgebra",
    "title": "Derivative algebras",
-   "doc": "## i. Overview\n\n\n## ii. Key results\n\n- `SpaceTimeDerivAlgebraℂ` : the ℂ-algebra of derivative symbols in spacetime\n- `basis` : the basis of the algebra of derivative symbols, indexed by multisets of spacetime\n  indices: the multiset `s` labels the monomial `∂_s`\n- `basis_apply_symmetricAlgebra` : the basis vector at a multiset of derivative indices is the\n  monomial of the symmetric algebra of dual symbols\n- `basis_nil` : the basis vector at the empty multiset is the unit of the algebra: the zeroth-order\n  symbol carries no derivatives\n\n## iii. Table of contents\n\n- A. The complex derivative algebra\n  - A.1. The basis indexed by multisets\n  - A.2. The derivative operator\n  - A.3. Evaluating on the Jet ring\n  - A.4. The action of the Jet ring\n  - A.5. The action of the Lorentz group\n  - A.6. The derivative-degree scaling\n  - A.7. The derivative-degree polynomial\n- B. The real derivative algebra\n- C. The multiset basis of `SpaceTimeDerivAlgebraℝ`\n- D. The derivative-degree polynomial on the real derivative algebra\n\n## iv. References\n\n* None.",
+   "doc": "The algebras of derivative symbols `∂_s` in spacetime, their pairing with jets and their\nLorentz action.\n\n## i. Overview\n\nA Lagrangian density is built out of fields and their derivatives `∂_μ ∂_ν ⋯ φ`. The symbols\n`∂_s`, one for each multiset `s` of spacetime directions, span the symmetric algebra\n`SpaceTimeDerivAlgebraℂ` of the dual of complex covectors (defined in Physlib), and its real\nform `SpaceTimeDerivAlgebraℝ`. This file gives them the structure that the gauge-theory field\nalgebras are built on.\n\n- The basis `basis s = ∂_s`, and the derivative operator `deriv μ`, which appends `μ` to `s`.\n- The pairing `eval` of a symbol with a jet `f`, under which `∂_s` reads off the base-point\n  value of `∂_s f` and `deriv μ` is the transpose of the formal partial derivative.\n- The action `jetRingAction χ` of a jet `χ`, the transpose of multiplication by `χ`. It is the\n  all-orders Leibniz rule, and is how a jet of gauge transformations acts on the derivatives of\n  a matter field.\n- The Lorentz action `repLorentzGroup`, through the dual covector representation.\n- The derivative-degree scaling `gradeScale t`, multiplying `∂_s` by `t ^ |s|`, and its\n  polynomial form `gradePoly`, which separates an element into its pieces of fixed degree.\n\n## ii. Key results\n\n- `SpaceTimeDerivAlgebraℂ.basis_apply_symmetricAlgebra` : the basis vector at `s` is the\n  monomial of the symmetric algebra of dual symbols.\n- `SpaceTimeDerivAlgebraℂ.eval_basis_eq_constantCoeff_iteratedPDeriv` : the pairing of `∂_s`\n  with a jet `f` is the base-point value of `∂_s f`.\n- `SpaceTimeDerivAlgebraℂ.jetRingAction_basis_multiset` : the action of a jet on `∂_s` is the\n  Leibniz convolution of its base-point derivatives.\n- `SpaceTimeDerivAlgebraℂ.jetRingAction_mul` : the action of the jet ring is multiplicative.\n- `SpaceTimeDerivAlgebraℂ.repLorentzGroup`, `SpaceTimeDerivAlgebraℝ.repLorentzGroup` : the\n  Lorentz action on the derivative symbols.\n- `SpaceTimeDerivAlgebraℂ.gradePoly_eval_one`, `SpaceTimeDerivAlgebraℝ.gradePoly_eval_one` :\n  the pieces of fixed derivative degree add up to the element.\n\n## iii. Table of contents\n\n- A. The complex derivative algebra\n  - A.1. The basis indexed by multisets\n  - A.2. The derivative operator\n  - A.3. Evaluating on the Jet ring\n  - A.4. The action of the Jet ring\n  - A.5. The action of the Lorentz group\n  - A.6. The derivative-degree scaling\n  - A.7. The derivative-degree polynomial\n- B. The real derivative algebra\n- C. The multiset basis of `SpaceTimeDerivAlgebraℝ`\n- D. The derivative-degree polynomial on the real derivative algebra\n\n## iv. References\n\n* None.",
    "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
-     "line": 51,
+     "line": 74,
      "text": "## A. The complex derivative algebra"
     },
     {
-     "line": 59,
+     "line": 82,
      "text": "### A.1. The basis indexed by multisets"
     },
     {
-     "line": 87,
+     "line": 110,
      "text": "### A.2. The derivative operator"
     },
     {
-     "line": 129,
+     "line": 145,
      "text": "### A.3. Evaluating on the Jet ring"
     },
     {
-     "line": 251,
+     "line": 255,
      "text": "### A.4. The action of the Jet ring"
     },
     {
-     "line": 453,
+     "line": 405,
      "text": "### A.5. The action of the Lorentz group"
     },
     {
-     "line": 558,
+     "line": 511,
      "text": "### A.6. The derivative-degree scaling"
     },
     {
-     "line": 602,
+     "line": 555,
      "text": "### A.7. The derivative-degree polynomial\n\nThe degree scaling of the previous section records the derivative degree in a scalar. The\nsame construction with the scalar replaced by a formal variable records it in a polynomial:\n`gradePoly` is the linear map sending the basis monomial `∂_s` to `X ^ |s| ∂_s`, so the\ncoefficient of `X ^ n` in `gradePoly a` is the part of `a` of derivative degree `n`."
     },
     {
-     "line": 653,
+     "line": 606,
      "text": "## B. The real derivative algebra"
     },
     {
-     "line": 735,
+     "line": 688,
      "text": "## C. The multiset basis of `SpaceTimeDerivAlgebraℝ`"
     },
     {
-     "line": 804,
+     "line": 757,
      "text": "## D. The derivative-degree polynomial on the real derivative algebra"
     }
    ],
@@ -1881,7 +1905,7 @@
     {
      "name": "SpaceTimeDerivAlgebraℂ.basis_apply_symmetricAlgebra",
      "kind": "lemma",
-     "line": 69,
+     "line": 92,
      "doc": "The basis vector at a multiset of derivative indices is the corresponding basis monomial\nof the symmetric algebra of dual symbols. This is `basis_apply` of\n`Physlib.SpaceAndTime.SpaceTime.SpaceTimeDerivAlgebra.Basic` in the symmetric-algebra form,\nrather than through `SymmetricAlgebra.equivMvPolynomial`.",
      "statement": "lemma basis_apply_symmetricAlgebra (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    basis s =\n      Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra (Multiset.toFinsupp s)",
      "sorry": false
@@ -1889,15 +1913,15 @@
     {
      "name": "SpaceTimeDerivAlgebraℂ.basis_nil",
      "kind": "lemma",
-     "line": 77,
-     "doc": "The basis vector at the empty multiset is the unit of the algebra: the\nzeroth-order symbol carries no derivatives.",
+     "line": 100,
+     "doc": "The basis vector at the empty multiset is the unit of the algebra. The\nzeroth-order symbol carries no derivatives.",
      "statement": "lemma basis_nil :\n    basis ({} : Multiset (Fin 1 ⊕ Fin 3)) = 1",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.deriv",
      "kind": "def",
-     "line": 95,
+     "line": 118,
      "doc": "The derivative of an element in `SpaceTimeDerivAlgebraℂ` taking e.g.\n`∂_s` to `∂_μ ∂_s`.",
      "statement": "noncomputable def deriv (μ : Fin 1 ⊕ Fin 3) : SpaceTimeDerivAlgebraℂ →ₗ[ℂ] SpaceTimeDerivAlgebraℂ",
      "sorry": false
@@ -1905,48 +1929,32 @@
     {
      "name": "SpaceTimeDerivAlgebraℂ.deriv_basis",
      "kind": "lemma",
-     "line": 99,
-     "doc": "",
+     "line": 123,
+     "doc": "The derivative operator on a basis monomial of the symmetric algebra.",
      "statement": "lemma deriv_basis (μ : Fin 1 ⊕ Fin 3) (m : (Fin 1 ⊕ Fin 3) →₀ ℕ) :\n    deriv μ (Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra m) =\n      Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra (m + Finsupp.single μ 1)",
-     "sorry": false
-    },
-    {
-     "name": "SpaceTimeDerivAlgebraℂ.deriv_comm_apply",
-     "kind": "lemma",
-     "line": 104,
-     "doc": "",
-     "statement": "lemma deriv_comm_apply (μ ν : Fin 1 ⊕ Fin 3) (x : SpaceTimeDerivAlgebraℂ) :\n    deriv μ (deriv ν x) = deriv ν (deriv μ x)",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.deriv_basis_multiset",
      "kind": "lemma",
-     "line": 114,
-     "doc": "The derivative operator on the multiset basis: appending the derivative\nindex to the multiset.",
+     "line": 130,
+     "doc": "The derivative operator on the multiset basis, appending the derivative\nindex to the multiset.",
      "statement": "lemma deriv_basis_multiset (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    deriv μ (basis s) = basis (s + {μ})",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.deriv_apply_eq_mul",
      "kind": "lemma",
-     "line": 122,
+     "line": 138,
      "doc": "The derivative operator is right multiplication by the first-order derivative\nsymbol.",
      "statement": "lemma deriv_apply_eq_mul (μ : Fin 1 ⊕ Fin 3) (a : SpaceTimeDerivAlgebraℂ) :\n    deriv μ a = a * basis ({μ} : Multiset (Fin 1 ⊕ Fin 3))",
-     "sorry": false
-    },
-    {
-     "name": "MvPowerSeries.pderiv_comm",
-     "kind": "lemma",
-     "line": 138,
-     "doc": "Formal partial derivatives of a multivariate power series commute: each is given on\ncoefficients by a shift and a multiplication, and the two shifts commute.",
-     "statement": "lemma _root_.MvPowerSeries.pderiv_comm {σ R : Type*} [CommSemiring R] (i j : σ)\n    (f : MvPowerSeries σ R) :\n    MvPowerSeries.pderiv i (MvPowerSeries.pderiv j f) =\n      MvPowerSeries.pderiv j (MvPowerSeries.pderiv i f)",
      "sorry": false
     },
     {
      "name": "",
      "kind": "instance",
      "line": 154,
-     "doc": "Differentiating a jet along a multiset of directions is well defined: the partial\nderivatives commute, so the fold over a multiset does not depend on the order.",
+     "doc": "Differentiating a jet along a multiset of directions is well defined. The partial\nderivatives commute, so the fold over a multiset does not depend on the order.",
      "statement": "instance : RightCommutative\n    (fun (f : SpaceTimeAlgebra) (μ : Fin 1 ⊕ Fin 3) => MvPowerSeries.pderiv μ f)",
      "sorry": false
     },
@@ -1961,55 +1969,55 @@
     {
      "name": "SpaceTimeDerivAlgebraℂ.eval_basis",
      "kind": "lemma",
-     "line": 165,
-     "doc": "",
+     "line": 167,
+     "doc": "The pairing of a basis monomial with a jet is its Taylor coefficient times the\nfactorials of the multiplicities.",
      "statement": "lemma eval_basis (m : (Fin 1 ⊕ Fin 3) →₀ ℕ) (f : SpaceTimeAlgebra) :\n    eval (Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra m) f =\n      (∏ μ, (m μ)! : ℕ) • MvPowerSeries.coeff m f",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.eval_monomial",
      "kind": "lemma",
-     "line": 171,
-     "doc": "",
+     "line": 174,
+     "doc": "The pairing of a symbol with a monomial jet reads off one coordinate of the symbol.",
      "statement": "lemma eval_monomial (p : SpaceTimeDerivAlgebraℂ) (m : (Fin 1 ⊕ Fin 3) →₀ ℕ) :\n    eval p (MvPowerSeries.monomial m 1) =\n      ((∏ μ, (m μ)! : ℕ) : ℂ) *\n        Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra.repr p m",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.eval_injective",
      "kind": "lemma",
-     "line": 189,
-     "doc": "",
+     "line": 193,
+     "doc": "A derivative symbol is determined by its pairings with jets.",
      "statement": "lemma eval_injective {p q : SpaceTimeDerivAlgebraℂ}\n    (h : ∀ f, eval p f = eval q f) : p = q",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.eval_deriv",
      "kind": "lemma",
-     "line": 201,
-     "doc": "Adjointness: the shift of derivative symbols is the transpose of the formal\npartial derivative under the divided-power pairing.",
+     "line": 205,
+     "doc": "Adjointness. The shift of derivative symbols is the transpose of the formal\npartial derivative under the divided-power pairing.",
      "statement": "lemma eval_deriv (ν : Fin 1 ⊕ Fin 3) (p : SpaceTimeDerivAlgebraℂ) (f : SpaceTimeAlgebra) :\n    eval (deriv ν p) f = eval p (MvPowerSeries.pderiv ν f)",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.eval_one",
      "kind": "lemma",
-     "line": 226,
-     "doc": "The pairing of the unit derivative symbol with a jet is its value at the base\npoint: the empty derivative multiset reads off the constant term.",
+     "line": 230,
+     "doc": "The pairing of the unit derivative symbol with a jet is its value at the base\npoint, the empty derivative multiset reads off the constant term.",
      "statement": "lemma eval_one (f : SpaceTimeAlgebra) :\n    eval (1 : SpaceTimeDerivAlgebraℂ) f = MvPowerSeries.constantCoeff f",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.eval_basis_eq_constantCoeff_iteratedPDeriv",
      "kind": "lemma",
-     "line": 236,
-     "doc": "Iterating adjointness: the pairing of the basis monomial `∂_s` with a jet is the\nconstant term of the iterated formal partial derivative `∂_s f`. This is the concrete\ndescription of the divided-power pairing that `eval_deriv` encodes one derivative at a\ntime.",
+     "line": 240,
+     "doc": "Iterating adjointness. The pairing of the basis monomial `∂_s` with a jet is the\nconstant term of the iterated formal partial derivative `∂_s f`. This is the concrete\ndescription of the divided-power pairing that `eval_deriv` encodes one derivative at a\ntime.",
      "statement": "lemma eval_basis_eq_constantCoeff_iteratedPDeriv (s : Multiset (Fin 1 ⊕ Fin 3))\n    (f : SpaceTimeAlgebra) :\n    eval (basis s) f =\n      MvPowerSeries.constantCoeff (SpaceTimeAlgebra.iteratedPDeriv s f)",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.jetRingAction",
      "kind": "def",
-     "line": 259,
+     "line": 263,
      "doc": "The action of `χ` on the derivatives, this takes `∂_μ ·` to `∂_μ (χ ·)`,\nexpanded out explicitly.",
      "statement": "noncomputable def jetRingAction (χ : SpaceTimeAlgebra) :\n    SpaceTimeDerivAlgebraℂ →ₗ[ℂ] SpaceTimeDerivAlgebraℂ",
      "sorry": false
@@ -2017,111 +2025,87 @@
     {
      "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_basis",
      "kind": "lemma",
-     "line": 266,
-     "doc": "",
+     "line": 271,
+     "doc": "The action of a jet on a basis monomial of the symmetric algebra.",
      "statement": "lemma jetRingAction_basis (χ : SpaceTimeAlgebra) (m : (Fin 1 ⊕ Fin 3) →₀ ℕ) :\n    jetRingAction χ (Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra m) =\n      ∑ p ∈ Finset.antidiagonal m,\n        ((∏ μ, (m μ).descFactorial (p.1 μ) : ℕ) : ℂ) • MvPowerSeries.coeff p.1 χ •\n          Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra p.2",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.eval_jetRingAction",
      "kind": "lemma",
-     "line": 273,
-     "doc": "",
+     "line": 279,
+     "doc": "The action of a jet is the transpose of multiplication by it.",
      "statement": "lemma eval_jetRingAction (χ f : SpaceTimeAlgebra) (p : SpaceTimeDerivAlgebraℂ) :\n    eval (jetRingAction χ p) f = eval p (χ * f)",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_basis_multiset",
      "kind": "lemma",
-     "line": 310,
-     "doc": "The action of a jet on a derivative monomial, in multiset form: `∂_s` is sent to the\nall-orders Leibniz convolution, each splitting `s = s₁ + s₂` of the derivative multiset\ncontributing the base-point Taylor coefficient `(∂_{s₁} χ)(0)` against the lower monomial\n`∂_{s₂}`.\n\nThis is `jetRingAction_basis` with the `Nat.choose` bookkeeping traded for the\ndivided-power pairing: both sides are compared through `eval`, where the identity is the\nLeibniz rule `SpaceTimeAlgebra.constantCoeff_iteratedPDeriv_mul` at the base point. It is the form\nin which the transformation law of a matter field is stated.",
+     "line": 316,
+     "doc": "The action of a jet on a derivative monomial, in multiset form. `∂_s` is sent to the\nall-orders Leibniz convolution, each splitting `s = s₁ + s₂` of the derivative multiset\ncontributing the base-point Taylor coefficient `(∂_{s₁} χ)(0)` against the lower monomial\n`∂_{s₂}`.\n\nThis is `jetRingAction_basis` with the `Nat.choose` bookkeeping traded for the\ndivided-power pairing. Both sides are compared through `eval`, where the identity is the\nLeibniz rule `SpaceTimeAlgebra.constantCoeff_iteratedPDeriv_mul` at the base point. It is the form\nin which the transformation law of a matter field is stated.",
      "statement": "lemma jetRingAction_basis_multiset (χ : SpaceTimeAlgebra) (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    jetRingAction χ (basis s) =\n      (s.antidiagonal.map fun p =>\n        MvPowerSeries.constantCoeff\n            (SpaceTimeAlgebra.iteratedPDeriv p.1 χ) • basis p.2).sum",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_C",
      "kind": "lemma",
-     "line": 332,
-     "doc": "Constant jets act on the derivative symbols by their value: `C c` has no\nderivative coordinates.",
+     "line": 338,
+     "doc": "Constant jets act on the derivative symbols by their value. `C c` has no\nderivative coordinates.",
      "statement": "lemma jetRingAction_C (c : ℂ) :\n    jetRingAction (MvPowerSeries.C c) = c • LinearMap.id",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_one",
      "kind": "lemma",
-     "line": 341,
-     "doc": "",
+     "line": 348,
+     "doc": "The unit jet acts trivially.",
      "statement": "lemma jetRingAction_one : jetRingAction (1 : SpaceTimeAlgebra) = LinearMap.id",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_mul",
      "kind": "lemma",
-     "line": 348,
-     "doc": "The derivative action is multiplicative: it is the transpose of multiplication\nin the commutative jet ring. This makes `χ ↦ χ(∂)` a monoid homomorphism and\nhence yields representations of the jet gauge group on polynomial jet spaces.",
+     "line": 355,
+     "doc": "The derivative action is multiplicative. It is the transpose of multiplication\nin the commutative jet ring. This makes `χ ↦ χ(∂)` a monoid homomorphism and\nhence yields representations of the jet gauge group on polynomial jet spaces.",
      "statement": "lemma jetRingAction_mul (χ ψ : SpaceTimeAlgebra) :\n    jetRingAction (χ * ψ) = jetRingAction χ ∘ₗ jetRingAction ψ",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_zero",
      "kind": "lemma",
-     "line": 357,
-     "doc": "",
+     "line": 364,
+     "doc": "The zero jet acts as zero.",
      "statement": "lemma jetRingAction_zero : jetRingAction (0 : SpaceTimeAlgebra) = 0",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_add",
      "kind": "lemma",
-     "line": 363,
-     "doc": "",
+     "line": 371,
+     "doc": "The action of the jet ring is additive.",
      "statement": "lemma jetRingAction_add (χ ψ : SpaceTimeAlgebra) :\n    jetRingAction (χ + ψ) = jetRingAction χ + jetRingAction ψ",
-     "sorry": false
-    },
-    {
-     "name": "SpaceTimeDerivAlgebraℂ.jetRingActionHom",
-     "kind": "def",
-     "line": 372,
-     "doc": "The derivative action as a ring homomorphism from the jet ring to the\nendomorphisms of the algebra of derivative symbols: the module structure of the\njet ring on its graded dual.",
-     "statement": "noncomputable def jetRingActionHom : SpaceTimeAlgebra →+* Module.End ℂ SpaceTimeDerivAlgebraℂ",
-     "sorry": false
-    },
-    {
-     "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_comm",
-     "kind": "lemma",
-     "line": 380,
-     "doc": "The actions of two jets commute: the jet ring is commutative.",
-     "statement": "lemma jetRingAction_comm (χ ψ : SpaceTimeAlgebra) (a : SpaceTimeDerivAlgebraℂ) :\n    jetRingAction χ (jetRingAction ψ a) = jetRingAction ψ (jetRingAction χ a)",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_apply_one",
      "kind": "lemma",
-     "line": 388,
-     "doc": "The derivative action on the zeroth-order (field) symbol: it is scaled by the\nvalue of the jet at the base point.",
+     "line": 380,
+     "doc": "The derivative action on the zeroth-order (field) symbol. It is scaled by the\nvalue of the jet at the base point.",
      "statement": "lemma jetRingAction_apply_one (χ : SpaceTimeAlgebra) :\n    jetRingAction χ (1 : SpaceTimeDerivAlgebraℂ) =\n      MvPowerSeries.constantCoeff χ • 1",
-     "sorry": false
-    },
-    {
-     "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_apply_ι",
-     "kind": "lemma",
-     "line": 405,
-     "doc": "The derivative action on a first-order derivative symbol implements the Leibniz\nrule: `∂_μ ↦ χ(0) ∂_μ + (∂_μχ)(0) 1`. The value of the jet multiplies the\nfirst-derivative symbol, and its first derivative feeds the zeroth-order\nsymbol.",
-     "statement": "lemma jetRingAction_apply_ι (χ : SpaceTimeAlgebra) (μ : Fin 1 ⊕ Fin 3) :\n    jetRingAction χ (SymmetricAlgebra.ι ℂ (Module.Dual ℂ Lorentz.ComplexCoVector)\n        (Lorentz.ComplexCoVector.basis.dualBasis μ)) =\n      MvPowerSeries.constantCoeff χ •\n        SymmetricAlgebra.ι ℂ (Module.Dual ℂ Lorentz.ComplexCoVector)\n          (Lorentz.ComplexCoVector.basis.dualBasis μ) +\n        MvPowerSeries.coeff (Finsupp.single μ 1) χ • 1",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_deriv",
      "kind": "lemma",
-     "line": 445,
-     "doc": "The commutation of the jet-ring action with the derivative operator: acting by\n`χ` after differentiating equals differentiating after acting, plus the action\nof the derivative `∂_ν χ`. This is the operator form of the Leibniz rule\n`∂_ν (χ f) = χ ∂_ν f + (∂_ν χ) f` under the divided-power pairing.",
+     "line": 397,
+     "doc": "The commutation of the jet-ring action with the derivative operator. Acting by\n`χ` after differentiating equals differentiating after acting, plus the action\nof the derivative `∂_ν χ`. This is the operator form of the Leibniz rule\n`∂_ν (χ f) = χ ∂_ν f + (∂_ν χ) f` under the divided-power pairing.",
      "statement": "lemma jetRingAction_deriv (χ : SpaceTimeAlgebra) (ν : Fin 1 ⊕ Fin 3) (a : SpaceTimeDerivAlgebraℂ) :\n    jetRingAction χ (deriv ν a) =\n      deriv ν (jetRingAction χ a) + jetRingAction (MvPowerSeries.pderiv ν χ) a",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.repLorentzGroup",
      "kind": "def",
-     "line": 463,
+     "line": 415,
      "doc": "The representation of the Lorentz group `SL(2,ℂ)` on the algebra of derivative\nsymbols, extending the dual covector representation multiplicatively.",
      "statement": "noncomputable def repLorentzGroup : Representation ℂ SL(2,ℂ) SpaceTimeDerivAlgebraℂ",
      "sorry": false
@@ -2129,7 +2113,7 @@
     {
      "name": "SpaceTimeDerivAlgebraℂ.repLorentzGroup_apply_one",
      "kind": "lemma",
-     "line": 486,
+     "line": 438,
      "doc": "",
      "statement": "lemma repLorentzGroup_apply_one (Λ : SL(2,ℂ)) : repLorentzGroup Λ 1 = 1",
      "sorry": false
@@ -2137,15 +2121,15 @@
     {
      "name": "SpaceTimeDerivAlgebraℂ.repLorentzGroup_apply_mul",
      "kind": "lemma",
-     "line": 489,
-     "doc": "",
+     "line": 442,
+     "doc": "The Lorentz action on the derivative symbols is multiplicative.",
      "statement": "lemma repLorentzGroup_apply_mul (Λ : SL(2,ℂ)) (a b : SpaceTimeDerivAlgebraℂ) :\n    repLorentzGroup Λ (a * b) = repLorentzGroup Λ a * repLorentzGroup Λ b",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.repLorentzGroup_apply_ι",
      "kind": "lemma",
-     "line": 495,
+     "line": 448,
      "doc": "The Lorentz action on a generator.",
      "statement": "lemma repLorentzGroup_apply_ι (Λ : SL(2,ℂ)) (x : Module.Dual ℂ Lorentz.ComplexCoVector) :\n    repLorentzGroup Λ (SymmetricAlgebra.ι ℂ (Module.Dual ℂ Lorentz.ComplexCoVector) x) =\n      SymmetricAlgebra.ι ℂ (Module.Dual ℂ Lorentz.ComplexCoVector)\n        (Lorentz.ComplexCoVector.SL2CRep.dual Λ x)",
      "sorry": false
@@ -2153,39 +2137,39 @@
     {
      "name": "SpaceTimeDerivAlgebraℂ.repLorentzGroup_deriv",
      "kind": "lemma",
-     "line": 504,
-     "doc": "The Lorentz action on a derivative: the derivative symbol transforms as a\ncovector, mixing the spacetime directions by the components of `Λ` in the dual\ncovector representation.",
+     "line": 457,
+     "doc": "The Lorentz action on a derivative. The derivative symbol transforms as a\ncovector, mixing the spacetime directions by the components of `Λ` in the dual\ncovector representation.",
      "statement": "lemma repLorentzGroup_deriv (Λ : SL(2,ℂ)) (μ : Fin 1 ⊕ Fin 3) (a : SpaceTimeDerivAlgebraℂ) :\n    repLorentzGroup Λ (deriv μ a) =\n      ∑ ν, (Lorentz.ComplexCoVector.SL2CRep.dual Λ (Lorentz.ComplexCoVector.basis.dualBasis μ))\n        (Lorentz.ComplexCoVector.basis ν) • deriv ν (repLorentzGroup Λ a)",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.repLorentzGroup_basis_singleton",
      "kind": "lemma",
-     "line": 524,
-     "doc": "The Lorentz action on the singleton derivative monomial: the derivative\nslot transforms by the columns of the Lorentz matrix.",
+     "line": 477,
+     "doc": "The Lorentz action on the singleton derivative monomial. The derivative\nslot transforms by the columns of the Lorentz matrix.",
      "statement": "lemma repLorentzGroup_basis_singleton (Λ : SL(2,ℂ)) (μ : Fin 1 ⊕ Fin 3) :\n    repLorentzGroup Λ (basis ({μ} : Multiset (Fin 1 ⊕ Fin 3))) =\n      ∑ ν, (((Lorentz.SL2C.toLorentzGroup Λ).1 ν μ : ℝ) : ℂ) •\n        basis ({ν} : Multiset (Fin 1 ⊕ Fin 3))",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.repLorentzGroup_basis_ofFn",
      "kind": "lemma",
-     "line": 535,
-     "doc": "The Lorentz action on the derivative monomial of an ordered tuple of directions: every\nslot mixes by the columns of the Lorentz matrix, one factor per slot.",
+     "line": 488,
+     "doc": "The Lorentz action on the derivative monomial of an ordered tuple of directions. Every\nslot mixes by the columns of the Lorentz matrix, one factor per slot.",
      "statement": "lemma repLorentzGroup_basis_ofFn (Λ : SL(2,ℂ)) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) :\n    repLorentzGroup Λ (basis (List.ofFn l)) =\n      ∑ p : Fin n → (Fin 1 ⊕ Fin 3),\n        (∏ i, (((Lorentz.SL2C.toLorentzGroup Λ).1 (p i) (l i) : ℝ) : ℂ)) • basis (List.ofFn p)",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.gradeScale",
      "kind": "def",
-     "line": 567,
-     "doc": "The derivative-degree scaling on the algebra of derivative symbols: the\nalgebra map multiplying each generator by `t`, hence each degree-`n` monomial\nby `t ^ n`.",
+     "line": 520,
+     "doc": "The derivative-degree scaling on the algebra of derivative symbols, the\nalgebra map multiplying each generator by `t`, hence each degree-`n` monomial\nby `t ^ n`.",
      "statement": "noncomputable def gradeScale (t : ℂ) : SpaceTimeDerivAlgebraℂ →ₐ[ℂ] SpaceTimeDerivAlgebraℂ",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.gradeScale_ι",
      "kind": "lemma",
-     "line": 571,
+     "line": 524,
      "doc": "",
      "statement": "lemma gradeScale_ι (t : ℂ) (x : Module.Dual ℂ Lorentz.ComplexCoVector) :\n    gradeScale t (SymmetricAlgebra.ι ℂ (Module.Dual ℂ Lorentz.ComplexCoVector) x) =\n      t • SymmetricAlgebra.ι ℂ (Module.Dual ℂ Lorentz.ComplexCoVector) x",
      "sorry": false
@@ -2193,7 +2177,7 @@
     {
      "name": "SpaceTimeDerivAlgebraℂ.gradeScale_basis",
      "kind": "lemma",
-     "line": 578,
+     "line": 531,
      "doc": "The degree scaling multiplies the basis monomial at `s` by `t ^ |s|`.",
      "statement": "lemma gradeScale_basis (t : ℂ) (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    gradeScale t (basis s) = t ^ s.card • basis s",
      "sorry": false
@@ -2201,23 +2185,23 @@
     {
      "name": "SpaceTimeDerivAlgebraℂ.gradeScale_repLorentzGroup",
      "kind": "lemma",
-     "line": 591,
-     "doc": "The degree scaling commutes with the Lorentz action: the Lorentz action\npreserves the derivative degree.",
+     "line": 544,
+     "doc": "The degree scaling commutes with the Lorentz action, since the Lorentz action\npreserves the derivative degree.",
      "statement": "lemma gradeScale_repLorentzGroup (t : ℂ) (Λ : SL(2,ℂ)) (a : SpaceTimeDerivAlgebraℂ) :\n    gradeScale t (repLorentzGroup Λ a) = repLorentzGroup Λ (gradeScale t a)",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.gradePoly",
      "kind": "def",
-     "line": 616,
-     "doc": "The derivative-degree polynomial on the algebra of derivative symbols: the linear map\nsending the basis monomial `∂_s` to `X ^ |s|` times itself. It is `gradeScale` with the\nscalar replaced by the formal variable `X`.",
+     "line": 569,
+     "doc": "The derivative-degree polynomial on the algebra of derivative symbols, the linear map\nsending the basis monomial `∂_s` to `X ^ |s|` times itself. It is `gradeScale` with the\nscalar replaced by the formal variable `X`.",
      "statement": "noncomputable def gradePoly : SpaceTimeDerivAlgebraℂ →ₗ[ℂ] Polynomial SpaceTimeDerivAlgebraℂ",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.gradePoly_basis",
      "kind": "lemma",
-     "line": 621,
+     "line": 574,
      "doc": "The derivative-degree polynomial of a basis monomial is the monomial of degree `|s|`.",
      "statement": "lemma gradePoly_basis (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    gradePoly (basis s) = Polynomial.monomial (Multiset.card s) (basis s)",
      "sorry": false
@@ -2225,23 +2209,23 @@
     {
      "name": "SpaceTimeDerivAlgebraℂ.eval_algebraMap_gradePoly",
      "kind": "lemma",
-     "line": 627,
-     "doc": "Evaluating the derivative-degree polynomial at a scalar is the derivative-degree\nscaling by that scalar: the two descriptions of the grading agree.",
+     "line": 580,
+     "doc": "Evaluating the derivative-degree polynomial at a scalar is the derivative-degree\nscaling by that scalar, so the two descriptions of the grading agree.",
      "statement": "lemma eval_algebraMap_gradePoly (t : ℂ) (a : SpaceTimeDerivAlgebraℂ) :\n    (gradePoly a).eval (algebraMap ℂ SpaceTimeDerivAlgebraℂ t) = gradeScale t a",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℂ.gradePoly_eval_one",
      "kind": "lemma",
-     "line": 643,
-     "doc": "Setting the formal variable to one recovers the original element: the pieces of a\ngraded decomposition sum to the element.",
+     "line": 596,
+     "doc": "Setting the formal variable to one recovers the original element, as the pieces of a\ngraded decomposition sum to the element.",
      "statement": "lemma gradePoly_eval_one (a : SpaceTimeDerivAlgebraℂ) : (gradePoly a).eval 1 = a",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℝ",
      "kind": "abbrev",
-     "line": 660,
+     "line": 613,
      "doc": "The ℝ-algebra of derivative symbols in spacetime.",
      "statement": "abbrev SpaceTimeDerivAlgebraℝ",
      "sorry": false
@@ -2249,7 +2233,7 @@
     {
      "name": "SpaceTimeDerivAlgebraℝ.repLorentzGroup",
      "kind": "def",
-     "line": 667,
+     "line": 620,
      "doc": "The representation of the Lorentz group `SL(2,ℂ)` on the algebra of derivative\nsymbols, extending the dual covector representation multiplicatively.",
      "statement": "noncomputable def repLorentzGroup : Representation ℝ SL(2,ℂ) SpaceTimeDerivAlgebraℝ",
      "sorry": false
@@ -2257,7 +2241,7 @@
     {
      "name": "SpaceTimeDerivAlgebraℝ.repLorentzGroup_apply_ι",
      "kind": "lemma",
-     "line": 691,
+     "line": 644,
      "doc": "The Lorentz action on a generator of the real derivative algebra.",
      "statement": "lemma repLorentzGroup_apply_ι (Λ : SL(2,ℂ)) (x : Module.Dual ℝ Lorentz.CoVector) :\n    repLorentzGroup Λ (SymmetricAlgebra.ι ℝ (Module.Dual ℝ Lorentz.CoVector) x) =\n      SymmetricAlgebra.ι ℝ (Module.Dual ℝ Lorentz.CoVector)\n        (Lorentz.CoVector.sl2Rep.dual Λ x)",
      "sorry": false
@@ -2265,15 +2249,15 @@
     {
      "name": "SpaceTimeDerivAlgebraℝ.repLorentzGroup_apply_mul",
      "kind": "lemma",
-     "line": 699,
-     "doc": "The real derivative-algebra representation is multiplicative: it is the lift of a linear\nmap to the symmetric algebra.",
+     "line": 652,
+     "doc": "The real derivative-algebra representation is multiplicative. It is the lift of a linear\nmap to the symmetric algebra.",
      "statement": "lemma repLorentzGroup_apply_mul (Λ : SL(2,ℂ))\n    (a b : SpaceTimeDerivAlgebraℝ) :\n    SpaceTimeDerivAlgebraℝ.repLorentzGroup Λ (a * b) =\n      SpaceTimeDerivAlgebraℝ.repLorentzGroup Λ a * SpaceTimeDerivAlgebraℝ.repLorentzGroup Λ b",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℝ.repLorentzGroup_apply_one",
      "kind": "lemma",
-     "line": 706,
+     "line": 659,
      "doc": "",
      "statement": "lemma repLorentzGroup_apply_one (Λ : SL(2,ℂ)) :\n    SpaceTimeDerivAlgebraℝ.repLorentzGroup Λ 1 = 1",
      "sorry": false
@@ -2281,15 +2265,15 @@
     {
      "name": "SpaceTimeDerivAlgebraℝ.gradeScale",
      "kind": "def",
-     "line": 712,
-     "doc": "The derivative-degree scaling on the real algebra of derivative symbols:\nthe algebra map multiplying each generator by `t`.",
+     "line": 665,
+     "doc": "The derivative-degree scaling on the real algebra of derivative symbols,\nthe algebra map multiplying each generator by `t`.",
      "statement": "noncomputable def gradeScale (t : ℝ) : SpaceTimeDerivAlgebraℝ →ₐ[ℝ] SpaceTimeDerivAlgebraℝ",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℝ.gradeScale_ι",
      "kind": "lemma",
-     "line": 716,
+     "line": 669,
      "doc": "",
      "statement": "lemma gradeScale_ι (t : ℝ) (x : Module.Dual ℝ Lorentz.CoVector) :\n    gradeScale t (SymmetricAlgebra.ι ℝ (Module.Dual ℝ Lorentz.CoVector) x) =\n      t • SymmetricAlgebra.ι ℝ (Module.Dual ℝ Lorentz.CoVector) x",
      "sorry": false
@@ -2297,7 +2281,7 @@
     {
      "name": "SpaceTimeDerivAlgebraℝ.gradeScale_repLorentzGroup",
      "kind": "lemma",
-     "line": 724,
+     "line": 677,
      "doc": "The degree scaling commutes with the Lorentz action on the real derivative\nsymbols.",
      "statement": "lemma gradeScale_repLorentzGroup (t : ℝ) (Λ : SL(2,ℂ)) (a : SpaceTimeDerivAlgebraℝ) :\n    gradeScale t (repLorentzGroup Λ a) = repLorentzGroup Λ (gradeScale t a)",
      "sorry": false
@@ -2305,7 +2289,7 @@
     {
      "name": "SpaceTimeDerivAlgebraℝ.basisMultiset",
      "kind": "def",
-     "line": 745,
+     "line": 698,
      "doc": "The basis of the symmetric algebra of dual real jet slots, indexed by multisets of\nspacetime indices.",
      "statement": "noncomputable def basisMultiset :\n    Basis (Multiset (Fin 1 ⊕ Fin 3)) ℝ (SymmetricAlgebra ℝ (Module.Dual ℝ Lorentz.CoVector))",
      "sorry": false
@@ -2313,7 +2297,7 @@
     {
      "name": "SpaceTimeDerivAlgebraℝ.basisMultiset_apply",
      "kind": "lemma",
-     "line": 751,
+     "line": 704,
      "doc": "The multiset basis of the dual derivative symbols, as a basis vector of the\nsymmetric algebra at the corresponding multi-index.",
      "statement": "lemma basisMultiset_apply (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    basisMultiset s =\n      Lorentz.CoVector.basis.dualBasis.symmetricAlgebra (Multiset.toFinsupp s)",
      "sorry": false
@@ -2321,7 +2305,7 @@
     {
      "name": "SpaceTimeDerivAlgebraℝ.basisMultiset_mul",
      "kind": "lemma",
-     "line": 759,
+     "line": 712,
      "doc": "The multiset basis vectors of the real dual derivative slots multiply by adding the\nmultisets.",
      "statement": "lemma basisMultiset_mul (s t : Multiset (Fin 1 ⊕ Fin 3)) :\n    basisMultiset s * basisMultiset t =\n      basisMultiset (s + t)",
      "sorry": false
@@ -2329,7 +2313,7 @@
     {
      "name": "SpaceTimeDerivAlgebraℝ.basisMultiset_nil",
      "kind": "lemma",
-     "line": 774,
+     "line": 727,
      "doc": "The multiset basis of the real dual derivative slots at the empty multiset is the\nunit.",
      "statement": "lemma basisMultiset_nil :\n    basisMultiset (0 : Multiset (Fin 1 ⊕ Fin 3)) = 1",
      "sorry": false
@@ -2337,7 +2321,7 @@
     {
      "name": "SpaceTimeDerivAlgebraℝ.basisMultiset_singleton",
      "kind": "lemma",
-     "line": 792,
+     "line": 745,
      "doc": "The multiset basis of the real dual derivative slots at a singleton index.",
      "statement": "lemma basisMultiset_singleton (μ : Fin 1 ⊕ Fin 3) :\n    basisMultiset ({μ} : Multiset (Fin 1 ⊕ Fin 3)) =\n      SymmetricAlgebra.ι ℝ (Module.Dual ℝ Lorentz.CoVector)\n        (Lorentz.CoVector.basis.dualBasis μ)",
      "sorry": false
@@ -2345,7 +2329,7 @@
     {
      "name": "SpaceTimeDerivAlgebraℝ.gradeScale_basisMultiset",
      "kind": "lemma",
-     "line": 811,
+     "line": 764,
      "doc": "The degree scaling multiplies the real basis monomial at `s` by `t ^ |s|`.",
      "statement": "lemma gradeScale_basisMultiset (t : ℝ) (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    gradeScale t (basisMultiset s) = t ^ Multiset.card s • basisMultiset s",
      "sorry": false
@@ -2353,15 +2337,15 @@
     {
      "name": "SpaceTimeDerivAlgebraℝ.gradePoly",
      "kind": "def",
-     "line": 824,
-     "doc": "The derivative-degree polynomial on the real algebra of derivative symbols: the linear\nmap sending the basis monomial `∂_s` to `X ^ |s|` times itself.",
+     "line": 777,
+     "doc": "The derivative-degree polynomial on the real algebra of derivative symbols, the linear\nmap sending the basis monomial `∂_s` to `X ^ |s|` times itself.",
      "statement": "noncomputable def gradePoly : SpaceTimeDerivAlgebraℝ →ₗ[ℝ] Polynomial SpaceTimeDerivAlgebraℝ",
      "sorry": false
     },
     {
      "name": "SpaceTimeDerivAlgebraℝ.gradePoly_basisMultiset",
      "kind": "lemma",
-     "line": 830,
+     "line": 783,
      "doc": "The derivative-degree polynomial of a real basis monomial is the monomial of degree\n`|s|`.",
      "statement": "lemma gradePoly_basisMultiset (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    gradePoly (basisMultiset s) =\n      Polynomial.monomial (Multiset.card s) (basisMultiset s)",
      "sorry": false
@@ -2369,7 +2353,7 @@
     {
      "name": "SpaceTimeDerivAlgebraℝ.eval_algebraMap_gradePoly",
      "kind": "lemma",
-     "line": 837,
+     "line": 790,
      "doc": "Evaluating the real derivative-degree polynomial at a scalar is the derivative-degree\nscaling by that scalar.",
      "statement": "lemma eval_algebraMap_gradePoly (t : ℝ) (a : SpaceTimeDerivAlgebraℝ) :\n    (gradePoly a).eval (algebraMap ℝ SpaceTimeDerivAlgebraℝ t) = gradeScale t a",
      "sorry": false
@@ -2377,13 +2361,107 @@
     {
      "name": "SpaceTimeDerivAlgebraℝ.gradePoly_eval_one",
      "kind": "lemma",
-     "line": 853,
+     "line": 806,
      "doc": "Setting the formal variable to one recovers the original element of the real\nderivative algebra.",
      "statement": "lemma gradePoly_eval_one (a : SpaceTimeDerivAlgebraℝ) : (gradePoly a).eval 1 = a",
      "sorry": false
     }
    ],
    "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/SpaceAndTime/Time/CaesiumClock.lean",
+   "module": "PhyslibAlpha.SpaceAndTime.Time.CaesiumClock",
+   "title": "Measuring elapsed time with a caesium clock",
+   "doc": "An ideal clock measures a duration by the change in phase of a reference oscillation.\n\n## i. Overview\n\nThe SI second fixes the frequency of the radiation corresponding to the unperturbed ground-state\nhyperfine transition of the caesium-133 atom. One second spans exactly 9 192 631 770 periods.\nWe model the accumulated phase in cycles, allowing fractional and signed differences.\n\nFor an ideal uniform clock the phase is an affine function of proper time along the clock.\nThe coordinate on `Time` has a fixed but arbitrary unit. Identifying an observed phase with\nthis ideal radiation is the physical input. Two distinct readings then determine the size of\nthe coordinate unit in SI seconds. The observation interval need not itself last one second,\nand its endpoints need no absolute phase or time origin.\n\n## ii. Key results\n\n- `isCalibrated_iff_rate` relates a calibration observation to the rate in the chosen unit.\n- `isCalibrated_iff_eq_unitOfReadings` recovers the unique time unit from two phase readings.\n- `elapsed_seconds` recovers signed elapsed time in seconds from two phase readings.\n- `one_second_iff` characterizes one-second intervals by the defining cycle count.\n\n## iii. Table of contents\n\n- A. Phase readings and calibration\n- B. Recovering the unit and measuring durations\n\n## iv. References\n\n- BIPM, *The International System of Units (SI)*, 9th edition, section 2.3.1\n  [ref: bipm_si_brochure_2019].",
+   "copyright": "2026 Sabrina Pasterski",
+   "sections": [
+    {
+     "line": 53,
+     "text": "## A. Phase readings and calibration"
+    },
+    {
+     "line": 97,
+     "text": "## B. Recovering the unit and measuring durations"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Time.CaesiumClock.elapsedCycles",
+     "kind": "def",
+     "line": 58,
+     "doc": "The signed number of cycles between two readings, from unwrapped phase readings in cycles.",
+     "statement": "def elapsedCycles {E : Type*} (phase : E → ℝ) (start stop : E) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "Time.CaesiumClock.elapsedCycles_add",
+     "kind": "lemma",
+     "line": 62,
+     "doc": "Cycle counts add when two measurement intervals are joined.",
+     "statement": "lemma elapsedCycles_add {E : Type*} (phase : E → ℝ) (a b c : E) :\n    elapsedCycles phase a b + elapsedCycles phase b c = elapsedCycles phase a c",
+     "sorry": false
+    },
+    {
+     "name": "Time.CaesiumClock.cyclesPerSecond",
+     "kind": "def",
+     "line": 68,
+     "doc": "The number of periods stipulated by the SI definition of one second.",
+     "statement": "def cyclesPerSecond : ℕ",
+     "sorry": false
+    },
+    {
+     "name": "Time.CaesiumClock.IsCalibrated",
+     "kind": "def",
+     "line": 72,
+     "doc": "A uniform clock is calibrated in coordinate unit `u` when a single interval of one second\nadvances its phase by the defining count. The starting instant need not be specified.",
+     "statement": "def IsCalibrated (phase : Time →ᵃ[ℝ] ℝ) (u : TimeUnit) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "Time.CaesiumClock.isCalibrated_iff_rate",
+     "kind": "lemma",
+     "line": 82,
+     "doc": "One calibration interval determines the rate in cycles per coordinate unit.",
+     "statement": "lemma isCalibrated_iff_rate (phase : Time →ᵃ[ℝ] ℝ) (u : TimeUnit) :\n    IsCalibrated phase u ↔ phase.linear 1 = (u / seconds : ℝ) * cyclesPerSecond",
+     "sorry": false
+    },
+    {
+     "name": "Time.CaesiumClock.unitOfReadings",
+     "kind": "def",
+     "line": 104,
+     "doc": "The coordinate time unit inferred from two instants and the observed number of cycles\nbetween them. Its size in seconds is the cycle count divided by the SI count and by the\ncoordinate duration.",
+     "statement": "def unitOfReadings (start stop : Time) (count : ℝ) (ht : 0 < stop -ᵥ start) (hc : 0 < count) :\n    TimeUnit",
+     "sorry": false
+    },
+    {
+     "name": "Time.CaesiumClock.isCalibrated_iff_eq_unitOfReadings",
+     "kind": "lemma",
+     "line": 111,
+     "doc": "For a uniform caesium clock, any two increasing phase readings in forward time determine\nthe unique calibrated unit, without a prior calibration or an independent rate measurement.",
+     "statement": "lemma isCalibrated_iff_eq_unitOfReadings (phase : Time →ᵃ[ℝ] ℝ) (u : TimeUnit)\n    (start stop : Time) (ht : 0 < stop -ᵥ start) (hc : 0 < elapsedCycles phase start stop) :\n    IsCalibrated phase u ↔\n      u = unitOfReadings start stop (elapsedCycles phase start stop) ht hc",
+     "sorry": false
+    },
+    {
+     "name": "Time.CaesiumClock.elapsed_seconds",
+     "kind": "lemma",
+     "line": 130,
+     "doc": "Dividing the signed cycle count by the SI defining count gives the elapsed time in seconds,\neven when the input instants use a different unit.",
+     "statement": "lemma elapsed_seconds {phase : Time →ᵃ[ℝ] ℝ} {u : TimeUnit} (h : IsCalibrated phase u)\n    (start stop : Time) :\n    elapsedCycles phase start stop / cyclesPerSecond = (stop -ᵥ start) * (u / seconds : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "Time.CaesiumClock.one_second_iff",
+     "kind": "lemma",
+     "line": 138,
+     "doc": "A pair of readings differs by the defining cycle count exactly when the second instant\nis one SI second after the first, expressed in the coordinate unit.",
+     "statement": "lemma one_second_iff {phase : Time →ᵃ[ℝ] ℝ} {u : TimeUnit} (h : IsCalibrated phase u)\n    (start stop : Time) :\n    stop -ᵥ start = (seconds / u : ℝ) ↔ elapsedCycles phase start stop = cyclesPerSecond",
+     "sorry": false
+    }
+   ],
+   "private": 1,
    "aliases": 0,
    "informal": 0
   }

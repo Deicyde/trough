@@ -8,11 +8,11 @@ proof: formalized
 
 # The Pure U(1) case with 2 fermions
 
-The module `Physlib.QFT.QED.AnomalyCancellation.LowDim.Two`, [Physlib/QFT/QED/AnomalyCancellation/LowDim/Two.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/LowDim/Two.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.QFT.QED.AnomalyCancellation.LowDim.Two`, [Physlib/QFT/QED/AnomalyCancellation/LowDim/Two.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/LowDim/Two.lean): 1 declaration, 1 with a docstring.
 
 > We define an equivalence between `LinSols` and `Sols`.
 
-**`PureU1.Two.equiv`**, a def, [line 28](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/LowDim/Two.lean#L28).
+**`PureU1.Two.equiv`**, a def, [line 28](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/LowDim/Two.lean#L28).
 
 > An equivalence between `LinSols` and `Sols`.
 
@@ -26,4 +26,4 @@ def equiv : (PureU1 2).LinSols ≃ (PureU1 2).Sols
 
 ## Sources
 
-- [Physlib/QFT/QED/AnomalyCancellation/LowDim/Two.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/LowDim/Two.lean)
+- [Physlib/QFT/QED/AnomalyCancellation/LowDim/Two.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/LowDim/Two.lean)

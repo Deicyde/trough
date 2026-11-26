@@ -8,7 +8,7 @@ proof: formalized
 
 # Normal states give normal weights
 
-The module `PhyslibAlpha.ProbabilisticTheory.State.NormalEquivalence`, [PhyslibAlpha/ProbabilisticTheory/State/NormalEquivalence.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/NormalEquivalence.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.State.NormalEquivalence`, [PhyslibAlpha/ProbabilisticTheory/State/NormalEquivalence.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/NormalEquivalence.lean): 1 declaration, 1 with a docstring.
 
 > The weight of a normal state is a normal weight.
 
@@ -27,7 +27,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.State.NormalEquivalence`, [PhyslibA
 
 ## A. Normal weights from normal states
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal.toWeight_isNormal`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/NormalEquivalence.lean#L51).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal.toWeight_isNormal`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/NormalEquivalence.lean#L51).
 
 > A normal state induces a normal weight.  No new normality predicate is introduced: the proof
 > transports a nonempty directed positive set to `E`, applies the canonical state predicate, and
@@ -44,4 +44,4 @@ lemma IsNormal.toWeight_isNormal {s : 𝓢[ℝ, E]} (hs : s.IsNormal) : s.toWeig
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/State/NormalEquivalence.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/NormalEquivalence.lean)
+- [PhyslibAlpha/ProbabilisticTheory/State/NormalEquivalence.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/NormalEquivalence.lean)

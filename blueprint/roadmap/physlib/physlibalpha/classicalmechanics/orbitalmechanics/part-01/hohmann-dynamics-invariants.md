@@ -8,7 +8,7 @@ proof: formalized
 
 # Mechanical invariants of the Hohmann ellipse
 
-The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Invariants`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean): 10 declarations, 1 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Invariants`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean): 10 declarations, 1 with a docstring.
 
 > The elliptical coast has constant specific energy and angular momentum.
 
@@ -27,7 +27,7 @@ The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.In
 
 ## A. Vis-viva and the two invariants
 
-**`ClassicalMechanics.HohmannTransfer.specificEnergy`**, a def, [line 42](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L42).
+**`ClassicalMechanics.HohmannTransfer.specificEnergy`**, a def, [line 42](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L42).
 
 > The sum of kinetic and gravitational potential energy per unit mass.
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.In
 def specificEnergy (mu : ℝ) (q v : ℂ) : ℝ
 ```
 
-**`ClassicalMechanics.HohmannTransfer.velocity_numerator`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L44).
+**`ClassicalMechanics.HohmannTransfer.velocity_numerator`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L44).
 
 ```lean
 lemma velocity_numerator (p : Parameters) (u : ℝ) :
@@ -43,7 +43,7 @@ lemma velocity_numerator (p : Parameters) (u : ℝ) :
       p.a^2 * D p u * (1+p.e*Real.cos u)
 ```
 
-**`ClassicalMechanics.HohmannTransfer.velocityAtAnomaly_norm_sq`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L53).
+**`ClassicalMechanics.HohmannTransfer.velocityAtAnomaly_norm_sq`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L53).
 
 ```lean
 lemma velocityAtAnomaly_norm_sq (p : Parameters) (u : ℝ) :
@@ -51,49 +51,49 @@ lemma velocityAtAnomaly_norm_sq (p : Parameters) (u : ℝ) :
       p.n^2*p.a^2*(1+p.e*Real.cos u)/D p u
 ```
 
-**`ClassicalMechanics.HohmannTransfer.vis_viva_at_anomaly`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L66).
+**`ClassicalMechanics.HohmannTransfer.vis_viva_at_anomaly`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L66).
 
 ```lean
 lemma vis_viva_at_anomaly (p : Parameters) (u : ℝ) :
     ‖velocityAtAnomaly p u‖^2 = p.mu*(2/‖ellipse p u‖-1/p.a)
 ```
 
-**`ClassicalMechanics.HohmannTransfer.vis_viva`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L73).
+**`ClassicalMechanics.HohmannTransfer.vis_viva`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L73).
 
 ```lean
 lemma vis_viva (p : Parameters) (t : ℝ) :
     ‖deriv (position p) t‖^2 = p.mu*(2/‖position p t‖-1/p.a)
 ```
 
-**`ClassicalMechanics.HohmannTransfer.coast_energy`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L77).
+**`ClassicalMechanics.HohmannTransfer.coast_energy`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L77).
 
 ```lean
 lemma coast_energy (p : Parameters) (t : ℝ) :
     specificEnergy p.mu (position p t) (deriv (position p) t) = -p.mu/(2*p.a)
 ```
 
-**`ClassicalMechanics.HohmannTransfer.coast_energy_negative`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L83).
+**`ClassicalMechanics.HohmannTransfer.coast_energy_negative`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L83).
 
 ```lean
 lemma coast_energy_negative (p : Parameters) (t : ℝ) :
     specificEnergy p.mu (position p t) (deriv (position p) t) < 0
 ```
 
-**`ClassicalMechanics.HohmannTransfer.angular_momentum_at_anomaly`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L87).
+**`ClassicalMechanics.HohmannTransfer.angular_momentum_at_anomaly`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L87).
 
 ```lean
 lemma angular_momentum_at_anomaly (p : Parameters) (u : ℝ) :
     cross (ellipse p u) (velocityAtAnomaly p u) = p.a*p.b*p.n
 ```
 
-**`ClassicalMechanics.HohmannTransfer.coast_angular_momentum`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L96).
+**`ClassicalMechanics.HohmannTransfer.coast_angular_momentum`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L96).
 
 ```lean
 lemma coast_angular_momentum (p : Parameters) (t : ℝ) :
     cross (position p t) (deriv (position p) t) = p.a*p.b*p.n
 ```
 
-**`ClassicalMechanics.HohmannTransfer.coast_angular_momentum_pos`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L100).
+**`ClassicalMechanics.HohmannTransfer.coast_angular_momentum_pos`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean#L100).
 
 ```lean
 lemma coast_angular_momentum_pos (p : Parameters) (t : ℝ) :
@@ -110,4 +110,4 @@ lemma coast_angular_momentum_pos (p : Parameters) (t : ℝ) :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean)
+- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean)

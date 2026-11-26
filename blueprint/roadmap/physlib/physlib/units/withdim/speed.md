@@ -8,12 +8,12 @@ proof: formalized
 
 # Speed
 
-The module `Physlib.Units.WithDim.Speed`, [Physlib/Units/WithDim/Speed.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Speed.lean): 12 declarations, 5 with a docstring.
+The module `Physlib.Units.WithDim.Speed`, [Physlib/Units/WithDim/Speed.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Speed.lean): 12 declarations, 5 with a docstring.
 
 > In this module we define the dimensionful type corresponding to an speed.
 > We define specific instances of speed, such as miles per hour, kilometers per hour, etc.
 
-**`DimSpeed`**, an abbrev, [line 24](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Speed.lean#L24).
+**`DimSpeed`**, an abbrev, [line 24](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Speed.lean#L24).
 
 > The type of speeds in the absence of a choice of unit.
 
@@ -23,7 +23,7 @@ abbrev DimSpeed : Type
 
 ## Basic speeds
 
-**`DimSpeed.oneMeterPerSecond`**, a def, [line 38](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Speed.lean#L38).
+**`DimSpeed.oneMeterPerSecond`**, a def, [line 38](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Speed.lean#L38).
 
 > The dimensional speed corresponding to 1 meter per second.
 
@@ -31,7 +31,7 @@ abbrev DimSpeed : Type
 noncomputable def oneMeterPerSecond : DimSpeed
 ```
 
-**`DimSpeed.oneMilePerHour`**, a def, [line 41](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Speed.lean#L41).
+**`DimSpeed.oneMilePerHour`**, a def, [line 41](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Speed.lean#L41).
 
 > The dimensional speed corresponding to 1 mile per hour.
 
@@ -39,7 +39,7 @@ noncomputable def oneMeterPerSecond : DimSpeed
 noncomputable def oneMilePerHour : DimSpeed
 ```
 
-**`DimSpeed.oneKilometerPerHour`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Speed.lean#L45).
+**`DimSpeed.oneKilometerPerHour`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Speed.lean#L45).
 
 > The dimensional speed corresponding to 1 kilometer per hour.
 
@@ -47,7 +47,7 @@ noncomputable def oneMilePerHour : DimSpeed
 noncomputable def oneKilometerPerHour : DimSpeed
 ```
 
-**`DimSpeed.oneKnot`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Speed.lean#L49).
+**`DimSpeed.oneKnot`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Speed.lean#L49).
 
 > The dimensional speed corresponding to 1 knot, aka, one nautical mile per hour.
 
@@ -57,26 +57,26 @@ noncomputable def oneKnot : DimSpeed
 
 ## Speed in SI units
 
-**`DimSpeed.oneMeterPerSecond_in_SI`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Speed.lean#L59).
+**`DimSpeed.oneMeterPerSecond_in_SI`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Speed.lean#L59).
 
 ```lean
 lemma oneMeterPerSecond_in_SI : oneMeterPerSecond SI = ⟨1⟩
 ```
 
-**`DimSpeed.oneMilePerHour_in_SI`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Speed.lean#L64).
+**`DimSpeed.oneMilePerHour_in_SI`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Speed.lean#L64).
 
 ```lean
 lemma oneMilePerHour_in_SI : oneMilePerHour SI = ⟨0.44704⟩
 ```
 
-**`DimSpeed.oneKilometerPerHour_in_SI`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Speed.lean#L72).
+**`DimSpeed.oneKilometerPerHour_in_SI`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Speed.lean#L72).
 
 ```lean
 lemma oneKilometerPerHour_in_SI :
     oneKilometerPerHour SI = ⟨5/18⟩
 ```
 
-**`DimSpeed.oneKnot_in_SI`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Speed.lean#L83).
+**`DimSpeed.oneKnot_in_SI`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Speed.lean#L83).
 
 ```lean
 lemma oneKnot_in_SI : oneKnot SI = ⟨463/900⟩
@@ -84,21 +84,21 @@ lemma oneKnot_in_SI : oneKnot SI = ⟨463/900⟩
 
 ## Relations between speeds
 
-**`DimSpeed.oneKnot_eq_mul_oneKilometerPerHour`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Speed.lean#L97).
+**`DimSpeed.oneKnot_eq_mul_oneKilometerPerHour`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Speed.lean#L97).
 
 ```lean
 lemma oneKnot_eq_mul_oneKilometerPerHour :
     oneKnot = (1.852 : ℝ≥0) • oneKilometerPerHour
 ```
 
-**`DimSpeed.oneKilometerPerHour_eq_mul_oneKnot`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Speed.lean#L104).
+**`DimSpeed.oneKilometerPerHour_eq_mul_oneKnot`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Speed.lean#L104).
 
 ```lean
 lemma oneKilometerPerHour_eq_mul_oneKnot:
     oneKilometerPerHour = (250/463 : ℝ≥0) • oneKnot
 ```
 
-**`DimSpeed.oneMeterPerSecond_eq_mul_oneMilePerHour`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Speed.lean#L111).
+**`DimSpeed.oneMeterPerSecond_eq_mul_oneMilePerHour`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Speed.lean#L111).
 
 ```lean
 lemma oneMeterPerSecond_eq_mul_oneMilePerHour :
@@ -111,4 +111,4 @@ lemma oneMeterPerSecond_eq_mul_oneMilePerHour :
 
 ## Sources
 
-- [Physlib/Units/WithDim/Speed.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/WithDim/Speed.lean)
+- [Physlib/Units/WithDim/Speed.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/WithDim/Speed.lean)

@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
  "modules": [
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/Addition.lean",
@@ -3088,6 +3088,148 @@
    "informal": 0
   },
   {
+   "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/ThreeJRational.lean",
+   "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.ThreeJRational",
+   "title": "Rational values of the Wigner 3j symbols with general arguments",
+   "doc": "The 3j symbols `threeJ` squared, and times their absolute value, as rational numbers, through the\nrational values of the 3j symbols of a Regge square in `Wigner3jRational`.\n\n## i. Overview\n\n`threeJ j₁ j₂ j₃ m₁ m₂ m₃` is the 3j symbol `threeJR` of the Regge square\n`reggeJ j₁ j₂ j₃ m₁ m₂ m₃` for admissible arguments and `0` otherwise. The rational functions of\n`Wigner3jRational` therefore give its square and its product with its absolute value as rational\nnumbers (`threeJSqQ`, `threeJSgnSqQ`), and the 3j symbol is `sign(q) √|q|` with\n`q = threeJSgnSqQ` (`threeJ_eq_sign_mul_sqrt`). The same gives the squares of the Clebsch–Gordan\ncoefficients (`sq_cgCoefficient`). Section C checks proven identities in the kernel with\n`decide +kernel`: the diagonal orthogonality relations and the symmetries of `SixJSymmetry` on a\ngrid of small spins.\n\nFor an admissible symbol the radicand `∏ R_ij! / (J + 1)!` splits into the triangle coefficient\n`Δ(j₁j₂j₃)²` and the factorials `(jᵢ - mᵢ)! (jᵢ + mᵢ)!` of the projections (`threeJRRadQ_reggeJ`),\nso `threeJ = √(Δ² ∏ᵢ (jᵢ - mᵢ)! (jᵢ + mᵢ)!) · threeJNumQ` (`threeJ_eq_sqrt_mul`). This is the form\nin which the four 3j symbols of a 6j symbol combine in `SixJRational`.\n\n## ii. Key results\n\n- `threeJSqQ`, `cast_threeJSqQ`, `threeJSgnSqQ`, `cast_threeJSgnSqQ`: `threeJ ^ 2` and\n  `threeJ · |threeJ|` over `ℚ`.\n- `threeJ_eq_sign_mul_sqrt`: `threeJ = sign(q) √|q|` with `q = threeJSgnSqQ`.\n- `sq_cgCoefficient`: the square of a Clebsch–Gordan coefficient as a rational number.\n- `triangleSqQ`, `facPairQ`, `threeJNumQ`: the triangle coefficient, the factorials of the\n  projections and the 3j symbol without its square root, over `ℚ`.\n- `threeJ_eq_sqrt_mul`: `threeJ = √(Δ² ∏ᵢ (jᵢ - mᵢ)! (jᵢ + mᵢ)!) · threeJNumQ`.\n\n## iii. Table of contents\n\n- A. The 3j symbol with general arguments\n- B. The Clebsch–Gordan coefficients\n- C. Checks in the kernel\n- D. Triangle coefficients and the 3j symbols\n\n## iv. References\n\n- D. A. Varshalovich, A. N. Moskalev, V. K. Khersonskii, *Quantum Theory of Angular Momentum*,\n  World Scientific (1988): Sec. 8.1.3, p. 237, Eqs. 8.1(14)–(18) (the Regge symbol); Sec. 8.2,\n  p. 237, Eq. 8.2(1) (the Δ symbol); Sec. 8.2.1, p. 238, Eq. 8.2(3) (Racah's sum for the\n  Clebsch–Gordan coefficients).\n- NIST Digital Library of Mathematical Functions, Sec. 34.2, Eqs. 34.2.4–34.2.5,\n  https://dlmf.nist.gov/34.2.",
+   "copyright": "2026 Daniel Leonforte",
+   "sections": [
+    {
+     "line": 66,
+     "text": "## A. The 3j symbol with general arguments"
+    },
+    {
+     "line": 113,
+     "text": "## B. The Clebsch–Gordan coefficients"
+    },
+    {
+     "line": 132,
+     "text": "## C. Checks in the kernel\n\nProven identities, evaluated with `decide +kernel` on small spins (doubled units). The\northogonality relations involving two different 3j symbols are not rational term by term, so only\nthe diagonal relations are checked."
+    },
+    {
+     "line": 186,
+     "text": "## D. Triangle coefficients and the 3j symbols"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "PhyslibAlpha.Sl2.threeJSqQ",
+     "kind": "def",
+     "line": 73,
+     "doc": "`threeJ j₁ j₂ j₃ m₁ m₂ m₃ ^ 2` over `ℚ` (doubled units).",
+     "statement": "def threeJSqQ (j₁ j₂ j₃ : ℕ) (m₁ m₂ m₃ : ℤ) : ℚ",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Sl2.threeJSgnSqQ",
+     "kind": "def",
+     "line": 77,
+     "doc": "`threeJ j₁ j₂ j₃ m₁ m₂ m₃ · |threeJ j₁ j₂ j₃ m₁ m₂ m₃|` over `ℚ` (doubled units).",
+     "statement": "def threeJSgnSqQ (j₁ j₂ j₃ : ℕ) (m₁ m₂ m₃ : ℤ) : ℚ",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Sl2.cast_threeJSqQ",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "`threeJSqQ` is the square of the 3j symbol `threeJ`.",
+     "statement": "lemma cast_threeJSqQ : (threeJSqQ j₁ j₂ j₃ m₁ m₂ m₃ : ℝ) = threeJ j₁ j₂ j₃ m₁ m₂ m₃ ^ 2",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Sl2.cast_threeJSgnSqQ",
+     "kind": "lemma",
+     "line": 90,
+     "doc": "`threeJSgnSqQ` is the 3j symbol `threeJ` times its absolute value.",
+     "statement": "lemma cast_threeJSgnSqQ :\n    (threeJSgnSqQ j₁ j₂ j₃ m₁ m₂ m₃ : ℝ) =\n      threeJ j₁ j₂ j₃ m₁ m₂ m₃ * |threeJ j₁ j₂ j₃ m₁ m₂ m₃|",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Sl2.threeJ_eq_sign_mul_sqrt",
+     "kind": "lemma",
+     "line": 100,
+     "doc": "**The 3j symbol from a rational number.** `threeJ = sign(q) √|q|` with\n`q = threeJSgnSqQ`.",
+     "statement": "lemma threeJ_eq_sign_mul_sqrt :\n    threeJ j₁ j₂ j₃ m₁ m₂ m₃ =\n      Real.sign (threeJSgnSqQ j₁ j₂ j₃ m₁ m₂ m₃ : ℝ) *\n        Real.sqrt |(threeJSgnSqQ j₁ j₂ j₃ m₁ m₂ m₃ : ℝ)|",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Sl2.sq_cgCoefficient",
+     "kind": "lemma",
+     "line": 122,
+     "doc": "**Clebsch–Gordan coefficients squared are rational.**\n`⟨j₁ m₁ j₂ m₂ | J M⟩² = (2J + 1) (j₁ j₂ J; m₁ m₂ -M)²`, in the parameters of\n`ClebschGordanCoefficients`.",
+     "statement": "lemma sq_cgCoefficient {m n : ℕ} (hmn : 0 < m + n) {k l α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n)\n    (hl : l ≤ m + n - 2 * k) (hα : α ≤ m) (hβ : β ≤ n) :\n    cgCoefficient m n k l α β ^ 2 = ((m + n - 2 * k + 1 : ℕ) : ℝ) *\n      (threeJSqQ m n (m + n - 2 * k) ((m : ℤ) - 2 * α) ((n : ℤ) - 2 * β)\n        (-(((m + n - 2 * k : ℕ) : ℤ) - 2 * l)) : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Sl2.triangleSqQ",
+     "kind": "def",
+     "line": 193,
+     "doc": "`Δ(j₁ j₂ j₃)² = (j₁+j₂-j₃)! (j₁-j₂+j₃)! (-j₁+j₂+j₃)! / (j₁+j₂+j₃+1)!` in doubled units.",
+     "statement": "def triangleSqQ (j₁ j₂ j₃ : ℕ) : ℚ",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Sl2.facPairQ",
+     "kind": "def",
+     "line": 198,
+     "doc": "`(j - m)! (j + m)!` in doubled units.",
+     "statement": "def facPairQ (j : ℕ) (m : ℤ) : ℚ",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Sl2.facPairQ_neg",
+     "kind": "lemma",
+     "line": 201,
+     "doc": "",
+     "statement": "lemma facPairQ_neg (j : ℕ) (m : ℤ) : facPairQ j (-m) = facPairQ j m",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Sl2.facPairQ_nonneg",
+     "kind": "lemma",
+     "line": 204,
+     "doc": "",
+     "statement": "lemma facPairQ_nonneg (j : ℕ) (m : ℤ) : 0 ≤ facPairQ j m",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Sl2.triangleSqQ_nonneg",
+     "kind": "lemma",
+     "line": 208,
+     "doc": "",
+     "statement": "lemma triangleSqQ_nonneg (j₁ j₂ j₃ : ℕ) : 0 ≤ triangleSqQ j₁ j₂ j₃",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Sl2.threeJNumQ",
+     "kind": "def",
+     "line": 213,
+     "doc": "The 3j symbol without its square root: `(-1)^(R₂₀ + R₁₁)` times the six-factorial sum.",
+     "statement": "def threeJNumQ (j₁ j₂ j₃ : ℕ) (m₁ m₂ m₃ : ℤ) : ℚ",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Sl2.threeJRRadQ_reggeJ",
+     "kind": "lemma",
+     "line": 219,
+     "doc": "The radicand of the 3j symbol splits into the triangle coefficient and the factorials of the\nprojections.",
+     "statement": "lemma threeJRRadQ_reggeJ {j₁ j₂ j₃ : ℕ} {m₁ m₂ m₃ : ℤ} (h : Adm3 j₁ j₂ j₃ m₁ m₂ m₃) :\n    threeJRRadQ (reggeJ j₁ j₂ j₃ m₁ m₂ m₃) =\n      triangleSqQ j₁ j₂ j₃ * facPairQ j₁ m₁ * facPairQ j₂ m₂ * facPairQ j₃ m₃",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Sl2.threeJ_eq_sqrt_mul",
+     "kind": "lemma",
+     "line": 228,
+     "doc": "`threeJ = √(Δ² (j₁-m₁)!(j₁+m₁)! (j₂-m₂)!(j₂+m₂)! (j₃-m₃)!(j₃+m₃)!) · threeJNumQ`.",
+     "statement": "lemma threeJ_eq_sqrt_mul {j₁ j₂ j₃ : ℕ} {m₁ m₂ m₃ : ℤ} (h : Adm3 j₁ j₂ j₃ m₁ m₂ m₃) :\n    threeJ j₁ j₂ j₃ m₁ m₂ m₃ =\n      Real.sqrt ((triangleSqQ j₁ j₂ j₃ * facPairQ j₁ m₁ * facPairQ j₂ m₂ * facPairQ j₃ m₃ : ℚ) :\n        ℝ) * (threeJNumQ j₁ j₂ j₃ m₁ m₂ m₃ : ℝ)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.Wigner3j",
    "title": "Wigner 3j symbols",
@@ -4854,6 +4996,220 @@
      "line": 309,
      "doc": "The product of unit vectors is a unit vector.",
      "statement": "lemma norm_piProdVec_eq_one {v : ι → 𝓗[α]} (hv : ∀ i, ‖v i‖ = 1) : ‖piProdVec v‖ = 1",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/BoundStatesAdjoint.lean",
+   "module": "PhyslibAlpha.QuantumMechanics.Hydrogen.BoundStatesAdjoint",
+   "title": "The weak eigenvalue equation of the hydrogen bound states",
+   "doc": "Green's identity for a hydrogen bound state and the weak eigenvalue equation.\n\n## i. Overview\n\nThe bound states are not smooth at the nucleus, so they do not lie in the domain of\n`H.hamiltonianOperator` (whose kinetic part is defined on Schwartz maps). To move the\nHamiltonian from a Schwartz map onto a bound state `ψ`, one works with the regularised bound\nstates `ψ_ε(y) = R(√(‖y‖² + ε²)) P(y)` of `GreenIdentity` and lets `ε → 0`.\n\nWith Green's identity for the kinetic term (`integral_boundState_mul_sum_deriv_deriv`) and the\nCoulomb term, the Hamiltonian moves from a Schwartz map onto the bound state\n(`integral_boundState_mul_hamiltonian`), which gives the weak eigenvalue equation\n`⟪E ψ, φ⟫ = ⟪ψ, H φ⟫` for all `φ` in the domain of `H` (`inner_boundStateHS_hamiltonianOperator`).\n\n## ii. Key results\n\n- `laplacian_regBoundState` : the Laplacian of `ψ_ε` away from the origin.\n- `boundState_eq_regG` : the bound state is `ψ_0`.\n- `integral_regBoundState_mul_sum_deriv_deriv` : Green's identity for `ψ_ε`, `ε ≠ 0`.\n- `kineticOperator_apply_of_eq_schwartzEquiv`, `potentialOperator_apply_ae`: the kinetic and\n  potential operators on their domains.\n- `hamiltonianOperator_apply_ae` : on its domain the Hamiltonian is\n  `-ℏ²/(2m) Σᵢ ∂ᵢ∂ᵢ f + V f` almost everywhere, for a Schwartz representative `f`.\n- `exists_abs_laplacian_regBoundState_le` : a bound on `|Δψ_ε|` uniform in `|ε| ≤ 1`.\n- `integral_boundState_mul_sum_deriv_deriv` : Green's identity `∫ ψ Σᵢ ∂ᵢ∂ᵢ f = ∫ (Δψ) f` for a\n  bound state `ψ`, the limit `ε → 0` by dominated convergence\n  (`tendsto_integral_regBoundState_mul_sum_deriv_deriv`,\n  `tendsto_integral_laplacian_regBoundState_mul`).\n- `integral_boundState_mul_hamiltonian` : Green's identity `∫ ψ H f = ∫ (H ψ) f` for a bound state\n  `ψ` and a Schwartz map `f`.\n- `inner_boundStateHS_hamiltonianOperator` : the weak eigenvalue equation\n  `⟪E ψ, φ⟫ = ⟪ψ, H φ⟫` for `φ` in the domain of the Hamiltonian.\n\n## iii. Table of contents\n\n- A. Regularised bound states\n- B. The weak eigenvalue equation\n\n## iv. References\n\n- None.",
+   "copyright": "2026 Daniel Leonforte",
+   "sections": [
+    {
+     "line": 68,
+     "text": "## A. Regularised bound states"
+    },
+    {
+     "line": 172,
+     "text": "## B. The weak eigenvalue equation"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "PhyslibAlpha.Hydrogen.laplacian_regBoundState",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "Away from the origin, `Δψ_ε = ((4l + 2d) G_ε' + 4‖y‖² G_ε'') P` for a homogeneous harmonic `P`\nof degree `l` (also for `ε = 0`, where `ψ_0` is the bound state).",
+     "statement": "lemma laplacian_regBoundState {d : ℕ} (κ : ℝ) (N α : ℕ) {l : ℕ}\n    {P : MvPolynomial (Fin d) ℝ} (hP : P ∈ harmonicSubmodule d l) (ε : ℝ) {y : Space d}\n    (hy : y ≠ 0) :\n    Δ (fun y => regG (radialFactor κ N α) ε (‖y‖ ^ 2) * toFun P y) y =\n      ((4 * l + 2 * d) * regG' (radialFactor' κ N α) ε (‖y‖ ^ 2) +\n        4 * ‖y‖ ^ 2 * regG'' (radialFactor' κ N α) (radialFactor'' κ N α) ε (‖y‖ ^ 2)) *\n          toFun P y",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.boundState_eq_regG",
+     "kind": "lemma",
+     "line": 98,
+     "doc": "The bound state is the regularised bound state at `ε = 0`.",
+     "statement": "lemma boundState_eq_regG (H : QuantumMechanics.HydrogenAtom d) (N l : ℕ)\n    (P : MvPolynomial (Fin d) ℝ) :\n    boundState H N l (toFun P) = fun y =>\n      regG (radialFactor (boundKappa H (N + l)) N (2 * l + d - 2)) 0 (‖y‖ ^ 2) *\n        toFun P y",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.contDiff_regBoundState",
+     "kind": "lemma",
+     "line": 108,
+     "doc": "The regularised bound state `ψ_ε(y) = R(√(‖y‖² + ε²)) P(y)` is twice continuously\ndifferentiable for `ε ≠ 0`.",
+     "statement": "lemma contDiff_regBoundState {d : ℕ} (κ : ℝ) (N α : ℕ) (P : MvPolynomial (Fin d) ℝ) {ε : ℝ}\n    (hε : ε ≠ 0) :\n    ContDiff ℝ 2 (fun y : Space d => regG (radialFactor κ N α) ε (‖y‖ ^ 2) * toFun P y)",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.integral_regBoundState_mul_sum_deriv_deriv",
+     "kind": "lemma",
+     "line": 123,
+     "doc": "**Green's identity for the regularised bound state** `ψ_ε(y) = R(√(‖y‖² + ε²)) P(y)`,\n`R = radialFactor κ N α` with `κ ≥ 0`.",
+     "statement": "lemma integral_regBoundState_mul_sum_deriv_deriv {d : ℕ} {κ : ℝ} (hκ : 0 ≤ κ) (N α : ℕ)\n    (P : MvPolynomial (Fin d) ℝ) {ε : ℝ} (hε : ε ≠ 0) (f : 𝓢(Space d, ℂ)) :\n    ∫ y, ((regG (radialFactor κ N α) ε (‖y‖ ^ 2) * toFun P y : ℝ) : ℂ) *\n        ∑ i, ∂[i] (∂[i] ⇑f) y =\n      ∫ y, ((∑ i, ∂[i] (∂[i] (fun y => regG (radialFactor κ N α) ε (‖y‖ ^ 2) * toFun P y)) y :\n        ℝ) : ℂ) * f y",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.momentumOperator_apply_schwartzEquiv",
+     "kind": "lemma",
+     "line": 182,
+     "doc": "On (the class of) a Schwartz map `g`, the momentum operator acts as `𝐩ᵢ g`.",
+     "statement": "lemma momentumOperator_apply_schwartzEquiv {d : ℕ} (i : Fin d) (g : 𝓢(Space d, ℂ)) :\n    𝓟 i (schwartzEquiv volume g) = schwartzEquiv volume (𝐩 i g)",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.momentumSqOperator_apply_schwartzEquiv",
+     "kind": "lemma",
+     "line": 187,
+     "doc": "On (the class of) a Schwartz map `f`, the momentum squared acts as `Σᵢ 𝐩ᵢ 𝐩ᵢ f`.",
+     "statement": "lemma momentumSqOperator_apply_schwartzEquiv {d : ℕ} (f : 𝓢(Space d, ℂ))\n    (h : ((schwartzEquiv volume f : SchwartzSubmodule d) : SpaceDHilbertSpace d) ∈\n      (momentumSqOperator (d := d)).domain) :\n    momentumSqOperator ⟨_, h⟩ =\n      ((schwartzEquiv volume (∑ i, 𝐩 i (𝐩 i f)) : SchwartzSubmodule d) : SpaceDHilbertSpace d)",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.momentumCLM_momentumCLM_apply",
+     "kind": "lemma",
+     "line": 204,
+     "doc": "Applying the momentum operator twice in the direction `i` to a Schwartz map gives\n`-ℏ² ∂ᵢ∂ᵢ f`.",
+     "statement": "lemma momentumCLM_momentumCLM_apply {d : ℕ} (i : Fin d) (f : 𝓢(Space d, ℂ)) (y : Space d) :\n    (𝐩 i (𝐩 i f)) y = -((Constants.ℏ : ℝ) : ℂ) ^ 2 * ∂[i] (∂[i] ⇑f) y",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.kineticOperator_apply_of_eq_schwartzEquiv",
+     "kind": "lemma",
+     "line": 217,
+     "doc": "On (the class of) a Schwartz map `f`, the kinetic operator acts as `(2m)⁻¹ Σᵢ 𝐩ᵢ 𝐩ᵢ f`.",
+     "statement": "lemma kineticOperator_apply_of_eq_schwartzEquiv (H : HydrogenAtom d)\n    (x : H.kineticOperator.domain) (f : 𝓢(Space d, ℂ))\n    (hx : (x : SpaceDHilbertSpace d) = (schwartzEquiv volume f : SchwartzSubmodule d)) :\n    H.kineticOperator x = ((2 * H.m : ℝ)⁻¹ : ℂ) •\n      ((schwartzEquiv volume (∑ i, 𝐩 i (𝐩 i f)) : SchwartzSubmodule d) :\n        SpaceDHilbertSpace d)",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.potentialOperator_apply_ae",
+     "kind": "lemma",
+     "line": 241,
+     "doc": "The potential operator of the hydrogen atom acts by multiplication with `V`, almost\neverywhere.",
+     "statement": "lemma potentialOperator_apply_ae (H : HydrogenAtom d) (x : H.potentialOperator.domain) :\n    (H.potentialOperator x : SpaceDHilbertSpace d) =ᵐ[volume]\n      fun y => (H.potential y : ℂ) * (x : SpaceDHilbertSpace d) y",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.hamiltonianOperator_apply_ae",
+     "kind": "lemma",
+     "line": 256,
+     "doc": "A vector `φ` in the domain of the Hamiltonian is (the class of) a Schwartz map `f`, and\n`H φ = -ℏ²/(2m) Σᵢ ∂ᵢ∂ᵢ f + V f` almost everywhere.",
+     "statement": "lemma hamiltonianOperator_apply_ae (H : HydrogenAtom d) (φ : H.hamiltonianOperator.domain) :\n    ∃ f : 𝓢(Space d, ℂ), (φ : SpaceDHilbertSpace d) =ᵐ[volume] f ∧\n      H.hamiltonianOperator φ =ᵐ[volume] fun y =>\n        (-((Constants.ℏ : ℝ) : ℂ) ^ 2 / (2 * H.m)) * ∑ i, ∂[i] (∂[i] ⇑f) y +\n          (H.potential y : ℂ) * f y",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.abs_radialLaplacianCoeff_le",
+     "kind": "lemma",
+     "line": 293,
+     "doc": "An elementary bound for the coefficient of the radial Laplacian: for `0 < r ≤ ρ` and `c ≥ 0`,\n`|c a₁/(2ρ) + 4r² (a₂ - a₁/ρ)/(4ρ²)| ≤ (c + 1) B₁/r + B₂` whenever `|a₁| ≤ B₁` and `|a₂| ≤ B₂`.",
+     "statement": "lemma abs_radialLaplacianCoeff_le {r ρ c a₁ a₂ B₁ B₂ : ℝ} (hr : 0 < r) (hrρ : r ≤ ρ)\n    (hc : 0 ≤ c) (h₁ : |a₁| ≤ B₁) (h₂ : |a₂| ≤ B₂) :\n    |c * (a₁ / (2 * ρ)) + 4 * r ^ 2 * ((a₂ - a₁ / ρ) / (4 * ρ ^ 2))| ≤\n      (c + 1) * B₁ * r⁻¹ + B₂",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.exists_abs_laplacian_regBoundState_le",
+     "kind": "lemma",
+     "line": 322,
+     "doc": "A bound `|Δψ_ε(y)| ≤ (A (1 + ‖y‖)^k₁ ‖y‖⁻¹ + C (1 + ‖y‖)^k₂) |P(y)|` away from the origin,\nuniform in `|ε| ≤ 1` (including the bound state itself at `ε = 0`).",
+     "statement": "lemma exists_abs_laplacian_regBoundState_le {d : ℕ} {κ : ℝ} (hκ : 0 ≤ κ) (N α : ℕ) {l : ℕ}\n    {P : MvPolynomial (Fin d) ℝ} (hP : P ∈ harmonicSubmodule d l) :\n    ∃ (A C : ℝ) (k₁ k₂ : ℕ), 0 ≤ A ∧ 0 ≤ C ∧ ∀ ε : ℝ, |ε| ≤ 1 → ∀ y : Space d, y ≠ 0 →\n      |Δ (fun y => regG (radialFactor κ N α) ε (‖y‖ ^ 2) * toFun P y) y| ≤\n        (A * (1 + ‖y‖) ^ k₁ * ‖y‖⁻¹ + C * (1 + ‖y‖) ^ k₂) * |toFun P y|",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.ae_ne_zero_of_two_le",
+     "kind": "lemma",
+     "line": 355,
+     "doc": "For `d ≥ 2`, almost every point of `Space d` is nonzero.",
+     "statement": "lemma ae_ne_zero_of_two_le {d : ℕ} (hd : 2 ≤ d) : ∀ᵐ y ∂(volume : Measure (Space d)), y ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.integrable_laplacianBound_mul",
+     "kind": "lemma",
+     "line": 362,
+     "doc": "The dominating function `‖y‖⁻¹ |A (1 + ‖y‖)^k₁ P(y)| ‖f(y)‖ + |C (1 + ‖y‖)^k₂ P(y)| ‖f(y)‖` of\nthe Laplacians of the regularised bound states is integrable for `d ≥ 2`.",
+     "statement": "lemma integrable_laplacianBound_mul {d : ℕ} (hd : 2 ≤ d) (P : MvPolynomial (Fin d) ℝ)\n    (A C : ℝ) (k₁ k₂ : ℕ) (f : 𝓢(Space d, ℂ)) :\n    Integrable (fun y : Space d => ‖y‖⁻¹ * (|A * (1 + ‖y‖) ^ k₁ * toFun P y| * ‖f y‖) +\n      |C * (1 + ‖y‖) ^ k₂ * toFun P y| * ‖f y‖)",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.norm_mul_le_laplacianBound",
+     "kind": "lemma",
+     "line": 383,
+     "doc": "A pointwise bound `|g(y)| ≤ (A (1 + ‖y‖)^k₁ ‖y‖⁻¹ + C (1 + ‖y‖)^k₂) |P(y)|` gives the bound of\n`g f` by the dominating function of `integrable_laplacianBound_mul`.",
+     "statement": "lemma norm_mul_le_laplacianBound {d : ℕ} {g : Space d → ℝ} {A C : ℝ} {k₁ k₂ : ℕ} (hA : 0 ≤ A)\n    (hC : 0 ≤ C) (P : MvPolynomial (Fin d) ℝ) (f : 𝓢(Space d, ℂ)) {y : Space d}\n    (hb : |g y| ≤ (A * (1 + ‖y‖) ^ k₁ * ‖y‖⁻¹ + C * (1 + ‖y‖) ^ k₂) * |toFun P y|) :\n    ‖((g y : ℝ) : ℂ) * f y‖ ≤ ‖y‖⁻¹ * (|A * (1 + ‖y‖) ^ k₁ * toFun P y| * ‖f y‖) +\n      |C * (1 + ‖y‖) ^ k₂ * toFun P y| * ‖f y‖",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.tendsto_integral_regBoundState_mul_sum_deriv_deriv",
+     "kind": "lemma",
+     "line": 398,
+     "doc": "Along a sequence `εₙ → 0` with `|εₙ| ≤ 1`,\n`∫ ψ_{εₙ} Σᵢ ∂ᵢ∂ᵢ f → ∫ ψ_0 Σᵢ ∂ᵢ∂ᵢ f`, by dominated convergence.",
+     "statement": "lemma tendsto_integral_regBoundState_mul_sum_deriv_deriv {d : ℕ} {κ : ℝ} (hκ : 0 ≤ κ) (N α : ℕ)\n    (P : MvPolynomial (Fin d) ℝ) {εs : ℕ → ℝ} (hεs_le : ∀ n, |εs n| ≤ 1)\n    (hεs : Filter.Tendsto εs Filter.atTop (nhds 0)) (f : 𝓢(Space d, ℂ)) :\n    Filter.Tendsto (fun n => ∫ y, ((regG (radialFactor κ N α) (εs n) (‖y‖ ^ 2) * toFun P y : ℝ) :\n        ℂ) * ∑ i, ∂[i] (∂[i] ⇑f) y) Filter.atTop\n      (nhds (∫ y, ((regG (radialFactor κ N α) 0 (‖y‖ ^ 2) * toFun P y : ℝ) : ℂ) *\n        ∑ i, ∂[i] (∂[i] ⇑f) y))",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.tendsto_laplacian_regBoundState",
+     "kind": "lemma",
+     "line": 442,
+     "doc": "Away from the origin, `Δψ_{εₙ}(y) → Δψ_0(y)` along a sequence `εₙ → 0`.",
+     "statement": "lemma tendsto_laplacian_regBoundState {d : ℕ} (κ : ℝ) (N α : ℕ) {l : ℕ}\n    {P : MvPolynomial (Fin d) ℝ} (hP : P ∈ harmonicSubmodule d l) {εs : ℕ → ℝ}\n    (hεs : Filter.Tendsto εs Filter.atTop (nhds 0)) {y : Space d} (hy : y ≠ 0) :\n    Filter.Tendsto\n      (fun n => Δ (fun y => regG (radialFactor κ N α) (εs n) (‖y‖ ^ 2) * toFun P y) y)\n      Filter.atTop (nhds (Δ (fun y => regG (radialFactor κ N α) 0 (‖y‖ ^ 2) * toFun P y) y))",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.tendsto_integral_laplacian_regBoundState_mul",
+     "kind": "lemma",
+     "line": 468,
+     "doc": "Along a sequence `εₙ → 0` with `|εₙ| ≤ 1`, `∫ (Δψ_{εₙ}) f → ∫ (Δψ_0) f`, by dominated\nconvergence with the bound `exists_abs_laplacian_regBoundState_le`.",
+     "statement": "lemma tendsto_integral_laplacian_regBoundState_mul {d : ℕ} (hd : 2 ≤ d) {κ : ℝ} (hκ : 0 ≤ κ)\n    (N α : ℕ) {l : ℕ} {P : MvPolynomial (Fin d) ℝ} (hP : P ∈ harmonicSubmodule d l)\n    {εs : ℕ → ℝ} (hεs_le : ∀ n, |εs n| ≤ 1) (hεs : Filter.Tendsto εs Filter.atTop (nhds 0))\n    (f : 𝓢(Space d, ℂ)) :\n    Filter.Tendsto (fun n => ∫ y, ((Δ (fun y => regG (radialFactor κ N α) (εs n) (‖y‖ ^ 2) *\n        toFun P y) y : ℝ) : ℂ) * f y) Filter.atTop\n      (nhds (∫ y, ((Δ (fun y => regG (radialFactor κ N α) 0 (‖y‖ ^ 2) * toFun P y) y : ℝ) :\n        ℂ) * f y))",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.integral_boundState_mul_sum_deriv_deriv",
+     "kind": "lemma",
+     "line": 495,
+     "doc": "**Green's identity for the kinetic term**: `∫ ψ Σᵢ ∂ᵢ∂ᵢ f = ∫ (Δψ) f` for a bound state `ψ`,\nthe limit `ε → 0` of `integral_regBoundState_mul_sum_deriv_deriv`.",
+     "statement": "lemma integral_boundState_mul_sum_deriv_deriv (H : HydrogenAtom d) (hd : 2 ≤ d) (hk : 0 < H.k)\n    (N l : ℕ) {P : MvPolynomial (Fin d) ℝ} (hP : P ∈ harmonicSubmodule d l)\n    (f : 𝓢(Space d, ℂ)) :\n    ∫ y, (boundState H N l (toFun P) y : ℂ) * ∑ i, ∂[i] (∂[i] ⇑f) y =\n      ∫ y, ((Δ (boundState H N l (toFun P)) y : ℝ) : ℂ) * f y",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.isPolyBounded_boundState",
+     "kind": "lemma",
+     "line": 522,
+     "doc": "A hydrogen bound state is polynomially bounded.",
+     "statement": "lemma isPolyBounded_boundState (H : HydrogenAtom d) (hd : 2 ≤ d) (hk : 0 < H.k) (N l : ℕ)\n    (P : MvPolynomial (Fin d) ℝ) : IsPolyBounded (boundState H N l (toFun P))",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.integrable_boundState_mul_potential_mul",
+     "kind": "lemma",
+     "line": 536,
+     "doc": "The Coulomb term `ψ V f` of a bound state `ψ` and a Schwartz map `f` is integrable.",
+     "statement": "lemma integrable_boundState_mul_potential_mul (H : HydrogenAtom d) (hd : 2 ≤ d) (hk : 0 < H.k)\n    (N l : ℕ) (P : MvPolynomial (Fin d) ℝ) (f : 𝓢(Space d, ℂ)) :\n    Integrable fun y => (boundState H N l (toFun P) y : ℂ) * ((H.potential y : ℂ) * f y)",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.integrable_laplacian_boundState_mul",
+     "kind": "lemma",
+     "line": 558,
+     "doc": "The kinetic term `(Δψ) f` of a bound state `ψ` and a Schwartz map `f` is integrable.",
+     "statement": "lemma integrable_laplacian_boundState_mul (H : HydrogenAtom d) (hd : 2 ≤ d) (hk : 0 < H.k)\n    (N l : ℕ) {P : MvPolynomial (Fin d) ℝ} (hP : P ∈ harmonicSubmodule d l)\n    (f : 𝓢(Space d, ℂ)) :\n    Integrable fun y => ((Δ (boundState H N l (toFun P)) y : ℝ) : ℂ) * f y",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.integral_boundState_mul_hamiltonian",
+     "kind": "lemma",
+     "line": 579,
+     "doc": "**Green's identity for a bound state.** Moving the Hamiltonian from a Schwartz map `f` onto\nthe bound state `ψ`, which is smooth away from the nucleus:\n`∫ ψ (-ℏ²/(2m) Σᵢ ∂ᵢ∂ᵢ f + V f) = ∫ (-ℏ²/(2m) Δψ + V ψ) f`.",
+     "statement": "lemma integral_boundState_mul_hamiltonian (H : HydrogenAtom d) (hd : 2 ≤ d) (hk : 0 < H.k)\n    (N l : ℕ) {P : MvPolynomial (Fin d) ℝ} (hP : P ∈ harmonicSubmodule d l)\n    (f : 𝓢(Space d, ℂ)) :\n    ∫ y, (boundState H N l (toFun P) y : ℂ) *\n        ((-((Constants.ℏ : ℝ) : ℂ) ^ 2 / (2 * H.m)) * ∑ i, ∂[i] (∂[i] ⇑f) y +\n          (H.potential y : ℂ) * f y) =\n      ∫ y, ((-((Constants.ℏ : ℝ) ^ 2 / (2 * H.m)) * Δ (boundState H N l (toFun P)) y +\n          H.potential y * boundState H N l (toFun P) y : ℝ) : ℂ) * f y",
+     "sorry": false
+    },
+    {
+     "name": "PhyslibAlpha.Hydrogen.inner_boundStateHS_hamiltonianOperator",
+     "kind": "lemma",
+     "line": 629,
+     "doc": "The weak eigenvalue equation `⟪E ψ, φ⟫ = ⟪ψ, H φ⟫` of a bound state `ψ` of the level `N + l`,\nfor every `φ` in the domain of the Hamiltonian.",
+     "statement": "lemma inner_boundStateHS_hamiltonianOperator (H : HydrogenAtom d) (hd : 2 ≤ d) (hk : 0 < H.k)\n    (N l : ℕ) {P : MvPolynomial (Fin d) ℝ} (hP : P ∈ harmonicSubmodule d l)\n    (φ : H.hamiltonianOperator.domain) :\n    ⟪(H.energyLevel (N + l) : ℂ) • boundStateHS H hd hk N l P, (φ : SpaceDHilbertSpace d)⟫_ℂ =\n      ⟪boundStateHS H hd hk N l P, H.hamiltonianOperator φ⟫_ℂ",
      "sorry": false
     }
    ],
@@ -7245,23 +7601,27 @@
    "file": "PhyslibAlpha/QuantumMechanics/RectangularBarrier/ProbabilityCurrent.lean",
    "module": "PhyslibAlpha.QuantumMechanics.RectangularBarrier.ProbabilityCurrent",
    "title": "Stationary probability current at a rectangular barrier",
-   "doc": "Conservation of the one-dimensional current across both barrier interfaces.\n\n## i. Overview\n\nA stationary wave is represented by a function of the real spatial coordinate.\nFor a real potential, the Schrödinger equation makes the derivative of the\nprobability current vanish within each region. Continuity of the wave and its\nfirst derivative gives the same current on both sides of each interface.\n\n## ii. Key results\n\n- `RectangularBarrier.probabilityCurrent_eq` gives equality of the current at any\n  two positions for a classical stationary wave of the barrier.\n\n## iii. Table of contents\n\n- A. Probability current and stationary waves\n- B. Conservation across the interfaces\n\n## iv. References\n\n* None.",
+   "doc": "Conservation of the one-dimensional current across both barrier interfaces.\n\n## i. Overview\n\nA stationary wave is represented by a function of the real spatial coordinate.\nFor a real potential, the Schrödinger equation makes the derivative of the\nprobability current vanish within each region. Continuity of the wave and its\nfirst derivative gives the same current on both sides of each interface.\nFor a wave incident from the left, the common exterior wave number lets us\nexpress this conservation as a balance of the squared amplitudes.\n\n## ii. Key results\n\n- `RectangularBarrier.probabilityCurrent_eq` gives equality of the current at any\n  two positions for a classical stationary wave of the barrier.\n- `RectangularBarrier.reflection_add_transmission_eq_one` gives the normalized\n  flux balance for a stationary wave with the stated exterior plane-wave forms.\n\n## iii. Table of contents\n\n- A. Probability current and stationary waves\n- B. Conservation across the interfaces\n- C. Exterior plane waves and flux balance\n\n## iv. References\n\n* None.",
    "copyright": "2026 Qianli Ma",
    "sections": [
     {
-     "line": 50,
+     "line": 56,
      "text": "## A. Probability current and stationary waves"
     },
     {
-     "line": 66,
+     "line": 72,
      "text": "## B. Conservation across the interfaces"
+    },
+    {
+     "line": 132,
+     "text": "## C. Exterior plane waves and flux balance"
     }
    ],
    "declarations": [
     {
      "name": "QuantumMechanics.RectangularBarrier.probabilityCurrent",
      "kind": "def",
-     "line": 54,
+     "line": 60,
      "doc": "The probability current along the real spatial coordinate, with the\nparticle mass of the rectangular barrier and the reduced Planck constant.",
      "statement": "def probabilityCurrent (Q : RectangularBarrier) (ψ : ℝ → ℂ) (x : ℝ) : ℝ",
      "sorry": false
@@ -7269,7 +7629,7 @@
     {
      "name": "QuantumMechanics.RectangularBarrier.IsStationaryWave",
      "kind": "structure",
-     "line": 60,
+     "line": 66,
      "doc": "A globally continuously differentiable stationary wave of energy `E`.\nThe second derivative obeys the Schrödinger equation on each open region\ndelimited by the two edges of the barrier.",
      "statement": "structure IsStationaryWave (Q : RectangularBarrier) (E : ℝ) (ψ : ℝ → ℂ) : Prop where\n  contDiff : ContDiff ℝ 1 ψ\n  equation : ∀ x : ℝ, x ≠ Q.lower → x ≠ Q.upper →\n    HasDerivAt (deriv ψ)\n      ((2 * Q.m * (Q.potentialFunction ⟨fun _ => x⟩ - E) / (ℏ : ℝ) ^ 2) • ψ x) x",
      "sorry": false
@@ -7277,13 +7637,45 @@
     {
      "name": "QuantumMechanics.RectangularBarrier.probabilityCurrent_eq",
      "kind": "lemma",
-     "line": 93,
+     "line": 99,
      "doc": "For a stationary wave of a rectangular barrier, the probability current\nis independent of position, including at both interfaces.",
      "statement": "lemma probabilityCurrent_eq {Q : RectangularBarrier} {E : ℝ} {ψ : ℝ → ℂ}\n    (hψ : Q.IsStationaryWave E ψ) (x y : ℝ) :\n    Q.probabilityCurrent ψ x = Q.probabilityCurrent ψ y",
      "sorry": false
+    },
+    {
+     "name": "QuantumMechanics.RectangularBarrier.planeWave",
+     "kind": "def",
+     "line": 135,
+     "doc": "The plane wave with wave number `k` at position `x`.",
+     "statement": "def planeWave (k x : ℝ) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "QuantumMechanics.RectangularBarrier.probabilityCurrent_two_plane_waves",
+     "kind": "lemma",
+     "line": 155,
+     "doc": "The current of two counterpropagating plane waves is the difference of their currents.",
+     "statement": "lemma probabilityCurrent_two_plane_waves (Q : RectangularBarrier) (k : ℝ) (A B : ℂ) (x : ℝ) :\n    Q.probabilityCurrent (fun y => A * planeWave k y + B * planeWave (-k) y) x =\n      ((ℏ : ℝ) / Q.m * k) * (‖A‖ ^ 2 - ‖B‖ ^ 2)",
+     "sorry": false
+    },
+    {
+     "name": "QuantumMechanics.RectangularBarrier.incident_norm_sq_eq",
+     "kind": "lemma",
+     "line": 176,
+     "doc": "For a stationary wave with a left incident wave and no right incident wave, the incident\nsquared amplitude equals the sum of the reflected and transmitted squared amplitudes.",
+     "statement": "lemma incident_norm_sq_eq (hψ : Q.IsStationaryWave E ψ) (hk : 0 < k)\n    (hLeft : EqOn ψ (fun x => A * planeWave k x + B * planeWave (-k) x) (Iio Q.lower))\n    (hRight : EqOn ψ (fun x => C * planeWave k x) (Ioi Q.upper)) :\n    ‖A‖ ^ 2 = ‖B‖ ^ 2 + ‖C‖ ^ 2",
+     "sorry": false
+    },
+    {
+     "name": "QuantumMechanics.RectangularBarrier.reflection_add_transmission_eq_one",
+     "kind": "lemma",
+     "line": 197,
+     "doc": "The reflection and transmission coefficients for a nonzero incident wave sum to one.",
+     "statement": "lemma reflection_add_transmission_eq_one (hψ : Q.IsStationaryWave E ψ) (hk : 0 < k) (hA : A ≠ 0)\n    (hLeft : EqOn ψ (fun x => A * planeWave k x + B * planeWave (-k) x) (Iio Q.lower))\n    (hRight : EqOn ψ (fun x => C * planeWave k x) (Ioi Q.upper)) :\n    ‖B‖ ^ 2 / ‖A‖ ^ 2 + ‖C‖ ^ 2 / ‖A‖ ^ 2 = 1",
+     "sorry": false
     }
    ],
-   "private": 2,
+   "private": 6,
    "aliases": 0,
    "informal": 0
   },
@@ -7327,7 +7719,7 @@
      "text": "## H. Completing quantum operations to channels"
     },
     {
-     "line": 933,
+     "line": 931,
      "text": "## I. The Stinespring dilation theorem"
     }
    ],
@@ -7767,7 +8159,7 @@
     {
      "name": "partialTraceLeft",
      "kind": "def",
-     "line": 940,
+     "line": 938,
      "doc": "Partial trace on the left of a tensor product.",
      "statement": "def partialTraceLeft {R : Type*} [RCLike R]\n    {m n : Type*} [Fintype m]\n    (ρ : Matrix (m × n)\n                (m × n) R) : Matrix (n) (n) R",
      "sorry": false
@@ -7775,7 +8167,7 @@
     {
      "name": "stinespringForm_eq",
      "kind": "theorem",
-     "line": 947,
+     "line": 945,
      "doc": "A version of the Stinespring Dilation Theorem.",
      "statement": "theorem stinespringForm_eq {R : Type*} [RCLike R] {m r : ℕ}\n    (K : Fin r → Matrix (Fin m) (Fin m) R)\n    (ρ : Matrix (Fin m) (Fin m) R) :\n    tr₂ (stinespringDilation K ρ) = krausApply K ρ",
      "sorry": false

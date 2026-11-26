@@ -8,7 +8,7 @@ proof: formalized
 
 # Completions of charges
 
-The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Completions`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean): 15 declarations (1 instance with no name), 11 with a docstring.
+The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Completions`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean): 15 declarations (1 instance with no name), 11 with a docstring.
 
 ## i. Overview
 
@@ -40,7 +40,7 @@ The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Completions`, [Ph
 > We say a charge spectrum is complete if it has all types of fields present, i.e.
 > the `Hd` and `Hu` charges are present, and the sets of `5`-bar and `10` charges are non-empty.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.IsComplete`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L74).
+**`SuperSymmetry.SU5.ChargeSpectrum.IsComplete`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L74).
 
 > A charge spectrum is complete if it has all types of fields.
 
@@ -48,7 +48,7 @@ The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Completions`, [Ph
 def IsComplete (x : ChargeSpectrum 𝓩) : Prop
 ```
 
-**An instance with no name**, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L77).
+**An instance with no name**, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L77).
 
 ```lean
 instance [DecidableEq 𝓩] (x : ChargeSpectrum 𝓩) : Decidable (IsComplete x)
@@ -58,7 +58,7 @@ instance [DecidableEq 𝓩] (x : ChargeSpectrum 𝓩) : Decidable (IsComplete x)
 
 > The empty charge spectrum is not complete, since it has no charges present.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.not_isComplete_empty`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L89).
+**`SuperSymmetry.SU5.ChargeSpectrum.not_isComplete_empty`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L89).
 
 ```lean
 lemma not_isComplete_empty : ¬ IsComplete (∅ : ChargeSpectrum 𝓩)
@@ -69,7 +69,7 @@ lemma not_isComplete_empty : ¬ IsComplete (∅ : ChargeSpectrum 𝓩)
 > The predicate `IsComplete` is monotonic with respect to the subset relation. That is, if `x` is a
 > subset of `y` and `x` is complete, then `y` is also complete.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.isComplete_mono`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L101).
+**`SuperSymmetry.SU5.ChargeSpectrum.isComplete_mono`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L101).
 
 ```lean
 lemma isComplete_mono {x y : ChargeSpectrum 𝓩} (h : x ⊆ y) (hx : IsComplete x) :
@@ -82,7 +82,7 @@ lemma isComplete_mono {x y : ChargeSpectrum 𝓩} (h : x ⊆ y) (hx : IsComplete
 > are all the charge spectra `y` which are a super set of `x`, are complete, and have
 > their charges in `S5` and `S10`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.completions`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L131).
+**`SuperSymmetry.SU5.ChargeSpectrum.completions`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L131).
 
 > Given a collection of charges `x` in `ofFinset S5 S10`,
 > the minimal charges `y` in `ofFinset S5 S10` which are a super sets of `x` and are
@@ -96,7 +96,7 @@ def completions (S5 S10 : Finset 𝓩) (x : ChargeSpectrum 𝓩) : Multiset (Cha
 
 > A simple relation for membership of a charge spectrum in the completions of another.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.mem_completions_iff`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L146).
+**`SuperSymmetry.SU5.ChargeSpectrum.mem_completions_iff`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L146).
 
 ```lean
 lemma mem_completions_iff {S5 S10 : Finset 𝓩} {x y : ChargeSpectrum 𝓩} :
@@ -109,7 +109,7 @@ lemma mem_completions_iff {S5 S10 : Finset 𝓩} {x y : ChargeSpectrum 𝓩} :
 
 ### B.2. No duplicate condition
 
-**`SuperSymmetry.SU5.ChargeSpectrum.completions_nodup`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L171).
+**`SuperSymmetry.SU5.ChargeSpectrum.completions_nodup`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L171).
 
 > For speed we define `completions` to be a multiset, but in fact it has no duplicates,
 > so it could be defined as a finite set.
@@ -121,7 +121,7 @@ lemma completions_nodup (S5 S10 : Finset 𝓩) (x : ChargeSpectrum 𝓩) :
 
 ### B.3. Completions of a complete charge spectrum
 
-**`SuperSymmetry.SU5.ChargeSpectrum.completions_eq_singleton_of_complete`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L188).
+**`SuperSymmetry.SU5.ChargeSpectrum.completions_eq_singleton_of_complete`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L188).
 
 > The completions of a complete charge spectrum is just the singleton containing itself.
 
@@ -133,7 +133,7 @@ lemma completions_eq_singleton_of_complete {S5 S10 : Finset 𝓩} (x : ChargeSpe
 
 ### B.4. Membership of own completions
 
-**`SuperSymmetry.SU5.ChargeSpectrum.self_mem_completions_iff_isComplete`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L213).
+**`SuperSymmetry.SU5.ChargeSpectrum.self_mem_completions_iff_isComplete`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L213).
 
 > If a charge spectrum `x` is a member of its own completion then it is complete,
 > and vice versa.
@@ -147,7 +147,7 @@ lemma self_mem_completions_iff_isComplete {S5 S10 : Finset 𝓩} (x : ChargeSpec
 
 > We now show that any member of the completions of a charge spectrum is complete.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.mem_completions_isComplete`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L236).
+**`SuperSymmetry.SU5.ChargeSpectrum.mem_completions_isComplete`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L236).
 
 > A charge spectrum which is a member of the completions of another charge
 > spectrum is complete.
@@ -162,7 +162,7 @@ lemma mem_completions_isComplete {S5 S10 : Finset 𝓩} {x y : ChargeSpectrum �
 > We show that any member of the completions of a charge spectrum is a super set of that
 > charge spectrum.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.self_subset_mem_completions`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L281).
+**`SuperSymmetry.SU5.ChargeSpectrum.self_subset_mem_completions`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L281).
 
 > If `y` is in the completions of `x` then `x ⊆ y`.
 
@@ -171,7 +171,7 @@ lemma self_subset_mem_completions (S5 S10 : Finset 𝓩) (x y : ChargeSpectrum �
     (hy : y ∈ completions S5 S10 x) : x ⊆ y
 ```
 
-**`SuperSymmetry.SU5.ChargeSpectrum.exist_completions_subset_of_complete`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L302).
+**`SuperSymmetry.SU5.ChargeSpectrum.exist_completions_subset_of_complete`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L302).
 
 > If `x` is a subset of `y` and `y` is complete, then there is a completion of `x` which is also
 > a subset of `y`.
@@ -193,7 +193,7 @@ lemma exist_completions_subset_of_complete (S5 S10 : Finset 𝓩) (x y : ChargeS
 > These definitions are primarily for speed, as this is the most common case we will
 > look at.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.completionsTopYukawa`**, a def, [line 366](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L366).
+**`SuperSymmetry.SU5.ChargeSpectrum.completionsTopYukawa`**, a def, [line 366](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L366).
 
 > A fast version of `completions` for an `x` which is in
 > `minimallyAllowsTermsOfFinset S5 S10 .topYukawa`.
@@ -208,7 +208,7 @@ def completionsTopYukawa (S5 : Finset 𝓩) (x : ChargeSpectrum 𝓩) :
 > Like for `completions`, we define `completionsTopYukawa` as a multiset for speed,
 > however, we can show it has no duplicates.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.completionsTopYukawa_nodup`**, a lemma, [line 381](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L381).
+**`SuperSymmetry.SU5.ChargeSpectrum.completionsTopYukawa_nodup`**, a lemma, [line 381](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L381).
 
 > The multiset `completionsTopYukawa S5 x` has no duplicates.
 
@@ -222,7 +222,7 @@ lemma completionsTopYukawa_nodup {S5 : Finset 𝓩} (x : ChargeSpectrum 𝓩) :
 > For charges `x` which are in `minimallyAllowsTermsOfFinset S5 S10 .topYukawa`,
 > we show that `completions S5 S10 x` and `completionsTopYukawa S5 x` are equal multisets.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.completions_eq_completionsTopYukawa_of_mem_minimallyAllowsTermsOfFinset`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L401).
+**`SuperSymmetry.SU5.ChargeSpectrum.completions_eq_completionsTopYukawa_of_mem_minimallyAllowsTermsOfFinset`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean#L401).
 
 > The multisets `completions S5 S10 x` and `completionsTopYukawa S5 x` are equivalent if
 > `x` minimally allows the top Yukawa.
@@ -240,4 +240,4 @@ lemma completions_eq_completionsTopYukawa_of_mem_minimallyAllowsTermsOfFinset [A
 
 ## Sources
 
-- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean)
+- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean)

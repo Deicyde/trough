@@ -8,7 +8,7 @@ proof: formalized
 
 # Charges allowing terms
 
-The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.AllowsTerm`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean): 22 declarations (3 instances with no name), 5 with a docstring.
+The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.AllowsTerm`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean): 22 declarations (3 instances with no name), 5 with a docstring.
 
 ## i. Overview
 
@@ -58,7 +58,7 @@ The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.AllowsTerm`, [Phy
 > That is, if there is some choice of representations present in the theory which will allow that
 > potential term via symmetry.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.AllowsTerm`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L101).
+**`SuperSymmetry.SU5.ChargeSpectrum.AllowsTerm`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L101).
 
 > The charge spectrum of representations `x : ChargeSpectrum 𝓩` allows a potential term
 > `T : PotentialTerm`
@@ -73,7 +73,7 @@ def AllowsTerm (x : ChargeSpectrum 𝓩) (T : PotentialTerm) : Prop
 > We define the decidability of `AllowsTerm` through `ofPotentialTerm'` rather than
 > `ofPotentialTerm` due to the speed of the former compared to the latter.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_iff_zero_mem_ofPotentialTerm'`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L112).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_iff_zero_mem_ofPotentialTerm'`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L112).
 
 ```lean
 lemma allowsTerm_iff_zero_mem_ofPotentialTerm' [DecidableEq 𝓩]
@@ -81,7 +81,7 @@ lemma allowsTerm_iff_zero_mem_ofPotentialTerm' [DecidableEq 𝓩]
     x.AllowsTerm T ↔ 0 ∈ x.ofPotentialTerm' T
 ```
 
-**An instance with no name**, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L117).
+**An instance with no name**, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L117).
 
 ```lean
 instance [DecidableEq 𝓩] (x : ChargeSpectrum 𝓩) (T : PotentialTerm) : Decidable (x.AllowsTerm T)
@@ -93,7 +93,7 @@ instance [DecidableEq 𝓩] (x : ChargeSpectrum 𝓩) (T : PotentialTerm) : Deci
 > That is if a charge spectrum `y` is a subset of a charge spectrum `x`,
 > and `y` allows a potential term `T`, then `x` also allows that potential term `T`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_mono`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L130).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_mono`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L130).
 
 ```lean
 lemma allowsTerm_mono {T : PotentialTerm} {y x : ChargeSpectrum 𝓩}
@@ -108,7 +108,7 @@ lemma allowsTerm_mono {T : PotentialTerm} {y x : ChargeSpectrum 𝓩}
 > These charges are in a minimal form, in the sense that any charge spectrum allowing `T`
 > has a subset of this form.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTermForm`**, a def, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L151).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTermForm`**, a def, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L151).
 
 > A element of `Charges` from three integers `a b c : ℤ` for a given potential term `T`.
 > Defined such that `allowsTermForm a b c T` always allows the potential term `T`,
@@ -123,7 +123,7 @@ def allowsTermForm (a b c : 𝓩) : (T : PotentialTerm) → ChargeSpectrum 𝓩
 
 > Any charge spectrum of the form `allowsTermForm a b c T` allows the potential term `T`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTermForm_allowsTerm`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L173).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTermForm_allowsTerm`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L173).
 
 > The charge spectrum `allowsTermForm a b c T` allows the potential term `T`.
 
@@ -132,7 +132,7 @@ lemma allowsTermForm_allowsTerm {a b c : 𝓩} {T : PotentialTerm} :
     (allowsTermForm a b c T).AllowsTerm T
 ```
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_of_eq_allowsTermForm`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L191).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_of_eq_allowsTermForm`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L191).
 
 ```lean
 lemma allowsTerm_of_eq_allowsTermForm {T : PotentialTerm}
@@ -149,7 +149,7 @@ lemma allowsTerm_of_eq_allowsTermForm {T : PotentialTerm}
 > The reason this does not work for `W1` an `W2` is due to the presence of three
 > charges in the 10d representation.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTermForm_eq_of_subset`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L211).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTermForm_eq_of_subset`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L211).
 
 ```lean
 lemma allowsTermForm_eq_of_subset {a b c a' b' c' : 𝓩} {T : PotentialTerm}
@@ -162,7 +162,7 @@ lemma allowsTermForm_eq_of_subset {a b c a' b' c' : 𝓩} {T : PotentialTerm}
 > The cardinality of the charge spectrum `allowsTermForm a b c T` is always
 > less than or equal to the degree of the potential term `T`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTermForm_card_le_degree`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L245).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTermForm_card_le_degree`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L245).
 
 ```lean
 lemma allowsTermForm_card_le_degree {a b c : 𝓩} {T : PotentialTerm} :
@@ -179,7 +179,7 @@ lemma allowsTermForm_card_le_degree {a b c : 𝓩} {T : PotentialTerm} :
 > The proof of this result is rather long, relying on case-by-case analysis of each
 > of the potential terms of interest.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTermForm_subset_allowsTerm_of_allowsTerm`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L277).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTermForm_subset_allowsTerm_of_allowsTerm`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L277).
 
 ```lean
 lemma allowsTermForm_subset_allowsTerm_of_allowsTerm {T : PotentialTerm} {x : ChargeSpectrum 𝓩}
@@ -195,7 +195,7 @@ lemma allowsTermForm_subset_allowsTerm_of_allowsTerm {T : PotentialTerm} {x : Ch
 >
 > Given what has already been shown, this result is now trivial.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_iff_subset_allowsTermForm`**, a lemma, [line 381](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L381).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_iff_subset_allowsTermForm`**, a lemma, [line 381](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L381).
 
 ```lean
 lemma allowsTerm_iff_subset_allowsTermForm {T : PotentialTerm} {x : ChargeSpectrum 𝓩} :
@@ -211,7 +211,7 @@ lemma allowsTerm_iff_subset_allowsTermForm {T : PotentialTerm} {x : ChargeSpectr
 > This follows from the fact that `allowsTermForm a b c T` always has cardinality
 > less than or equal to the degree of `T`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.subset_card_le_degree_allowsTerm_of_allowsTerm`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L400).
+**`SuperSymmetry.SU5.ChargeSpectrum.subset_card_le_degree_allowsTerm_of_allowsTerm`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L400).
 
 ```lean
 lemma subset_card_le_degree_allowsTerm_of_allowsTerm {T : PotentialTerm} {x : ChargeSpectrum 𝓩}
@@ -227,7 +227,7 @@ lemma subset_card_le_degree_allowsTerm_of_allowsTerm {T : PotentialTerm} {x : Ch
 > We prove a number of properties of this proposition, including its relation
 > to `AllowsTerm` and its decidability.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.AllowsTermQ5`**, a def, [line 420](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L420).
+**`SuperSymmetry.SU5.ChargeSpectrum.AllowsTermQ5`**, a def, [line 420](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L420).
 
 > The proposition for which says, given a charge `x` adding a charge `q5` permits the
 > existence of a potential term `T` due to the addition of that charge.
@@ -242,7 +242,7 @@ def AllowsTermQ5 (x : ChargeSpectrum 𝓩) (q5 : 𝓩) (T : PotentialTerm) : Pro
 > `AllowsTermQ5 x q5 T` is decidable for any charge spectrum `x`, charge `q5`, and
 > potential term `T`.
 
-**An instance with no name**, [line 457](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L457).
+**An instance with no name**, [line 457](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L457).
 
 ```lean
 instance (x : ChargeSpectrum 𝓩) (q5 : 𝓩) (T : PotentialTerm) :
@@ -256,7 +256,7 @@ instance (x : ChargeSpectrum 𝓩) (q5 : 𝓩) (T : PotentialTerm) :
 > allows that potential term `T` *due to* the addition of that charge,
 > or the charge spectrum `x` already allows that potential term `T`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTermQ5_or_allowsTerm_of_allowsTerm_insertQ5`**, a lemma, [line 506](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L506).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTermQ5_or_allowsTerm_of_allowsTerm_insertQ5`**, a lemma, [line 506](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L506).
 
 ```lean
 lemma allowsTermQ5_or_allowsTerm_of_allowsTerm_insertQ5 {qHd qHu : Option 𝓩}
@@ -272,7 +272,7 @@ lemma allowsTermQ5_or_allowsTerm_of_allowsTerm_insertQ5 {qHd qHu : Option 𝓩}
 > *due to* the addition of a charge `q5`, then the charge spectrum `x` with that charge inserted
 > allows that potential term `T`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_insertQ5_of_allowsTermQ5`**, a lemma, [line 613](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L613).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_insertQ5_of_allowsTermQ5`**, a lemma, [line 613](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L613).
 
 ```lean
 lemma allowsTerm_insertQ5_of_allowsTermQ5 {qHd qHu : Option 𝓩}
@@ -288,7 +288,7 @@ lemma allowsTerm_insertQ5_of_allowsTermQ5 {qHd qHu : Option 𝓩}
 > allows that potential term `T` *due to* the addition of that charge,
 > or the charge spectrum `x` already allows that potential term `T`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_insertQ5_iff_allowsTermQ5`**, a lemma, [line 685](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L685).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_insertQ5_iff_allowsTermQ5`**, a lemma, [line 685](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L685).
 
 ```lean
 lemma allowsTerm_insertQ5_iff_allowsTermQ5 {qHd qHu : Option 𝓩}
@@ -310,7 +310,7 @@ lemma allowsTerm_insertQ5_iff_allowsTermQ5 {qHd qHu : Option 𝓩}
 > We prove a number of properties of this proposition, including its relation
 > to `AllowsTerm` and its decidability.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.AllowsTermQ10`**, a def, [line 713](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L713).
+**`SuperSymmetry.SU5.ChargeSpectrum.AllowsTermQ10`**, a def, [line 713](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L713).
 
 > The proposition for which says, given a charge `x` adding a charge `q5` permits the
 > existence of a potential term `T` due to the addition of that charge.
@@ -325,7 +325,7 @@ def AllowsTermQ10 (x : ChargeSpectrum 𝓩) (q10 : 𝓩) (T : PotentialTerm) : P
 > `AllowsTermQ10 x q10 T` is decidable for any charge spectrum `x`, charge `q10`, and
 > potential term `T`.
 
-**An instance with no name**, [line 752](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L752).
+**An instance with no name**, [line 752](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L752).
 
 ```lean
 instance (x : ChargeSpectrum 𝓩) (q10 : 𝓩) (T : PotentialTerm) :
@@ -339,7 +339,7 @@ instance (x : ChargeSpectrum 𝓩) (q10 : 𝓩) (T : PotentialTerm) :
 > allows that potential term `T` *due to* the addition of that charge,
 > or the charge spectrum `x` already allows that potential term `T`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTermQ10_or_allowsTerm_of_allowsTerm_insertQ10`**, a lemma, [line 804](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L804).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTermQ10_or_allowsTerm_of_allowsTerm_insertQ10`**, a lemma, [line 804](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L804).
 
 ```lean
 lemma allowsTermQ10_or_allowsTerm_of_allowsTerm_insertQ10 {qHd qHu : Option 𝓩}
@@ -355,7 +355,7 @@ lemma allowsTermQ10_or_allowsTerm_of_allowsTerm_insertQ10 {qHd qHu : Option 𝓩
 > *due to* the addition of a charge `q10`, then the charge spectrum `x` with that charge inserted
 > allows that potential term `T`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_insertQ10_of_allowsTermQ10`**, a lemma, [line 946](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L946).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_insertQ10_of_allowsTermQ10`**, a lemma, [line 946](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L946).
 
 ```lean
 lemma allowsTerm_insertQ10_of_allowsTermQ10 {qHd qHu : Option 𝓩}
@@ -371,7 +371,7 @@ lemma allowsTerm_insertQ10_of_allowsTermQ10 {qHd qHu : Option 𝓩}
 > allows that potential term `T` *due to* the addition of that charge,
 > or the charge spectrum `x` already allows that potential term `T`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_insertQ10_iff_allowsTermQ10`**, a lemma, [line 1009](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L1009).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_insertQ10_iff_allowsTermQ10`**, a lemma, [line 1009](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean#L1009).
 
 ```lean
 lemma allowsTerm_insertQ10_iff_allowsTermQ10 {qHd qHu : Option 𝓩}
@@ -387,4 +387,4 @@ lemma allowsTerm_insertQ10_iff_allowsTermQ10 {qHd qHu : Option 𝓩}
 
 ## Sources
 
-- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean)
+- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Slices of space
 
-The module `Physlib.SpaceAndTime.Space.Slice`, [Physlib/SpaceAndTime/Space/Slice.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Slice.lean): 15 declarations, 1 with a docstring.
+The module `Physlib.SpaceAndTime.Space.Slice`, [Physlib/SpaceAndTime/Space/Slice.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Slice.lean): 15 declarations, 1 with a docstring.
 
 ## i. Overview
 
@@ -26,7 +26,7 @@ The module `Physlib.SpaceAndTime.Space.Slice`, [Physlib/SpaceAndTime/Space/Slice
 
 ## A. Slicing spaces
 
-**`Space.slice`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Slice.lean#L57).
+**`Space.slice`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Slice.lean#L57).
 
 > The linear equivalence between `Space d.succ` and `ℝ × Space d`
 > extracting the `i`th coordinate.
@@ -37,7 +37,7 @@ def slice {d} (i : Fin d.succ) : Space d.succ ≃L[ℝ] ℝ × Space d
 
 ### A.1. Basic applications of the slicing map
 
-**`Space.slice_symm_apply`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Slice.lean#L101).
+**`Space.slice_symm_apply`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Slice.lean#L101).
 
 ```lean
 lemma slice_symm_apply {d : ℕ} (i : Fin d.succ) (r : ℝ) (x : Space d) :
@@ -45,14 +45,14 @@ lemma slice_symm_apply {d : ℕ} (i : Fin d.succ) (r : ℝ) (x : Space d) :
       Fin.insertNthEquiv (fun _ => ℝ) i (r, x) j
 ```
 
-**`Space.slice_symm_apply_self`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Slice.lean#L106).
+**`Space.slice_symm_apply_self`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Slice.lean#L106).
 
 ```lean
 lemma slice_symm_apply_self {d : ℕ} (i : Fin d.succ) (r : ℝ) (x : Space d) :
     (slice i).symm (r, x) i = r
 ```
 
-**`Space.slice_symm_apply_succAbove`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Slice.lean#L111).
+**`Space.slice_symm_apply_succAbove`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Slice.lean#L111).
 
 ```lean
 lemma slice_symm_apply_succAbove {d : ℕ} (i : Fin d.succ) (r : ℝ) (x : Space d) (j : Fin d) :
@@ -61,7 +61,7 @@ lemma slice_symm_apply_succAbove {d : ℕ} (i : Fin d.succ) (r : ℝ) (x : Space
 
 ### A.2. Slice as a measurable embedding
 
-**`Space.slice_symm_measurableEmbedding`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Slice.lean#L121).
+**`Space.slice_symm_measurableEmbedding`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Slice.lean#L121).
 
 ```lean
 lemma slice_symm_measurableEmbedding {d : ℕ} (i : Fin d.succ) :
@@ -70,21 +70,21 @@ lemma slice_symm_measurableEmbedding {d : ℕ} (i : Fin d.succ) :
 
 ### A.3. The norm of the slice map
 
-**`Space.norm_slice_symm_eq`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Slice.lean#L143).
+**`Space.norm_slice_symm_eq`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Slice.lean#L143).
 
 ```lean
 lemma norm_slice_symm_eq {d : ℕ} (i : Fin d.succ) (r : ℝ) (x : Space d) :
     ‖(slice i).symm (r, x)‖ = √(‖r‖ ^ 2 + ‖x‖ ^ 2)
 ```
 
-**`Space.abs_right_le_norm_slice_symm`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Slice.lean#L152).
+**`Space.abs_right_le_norm_slice_symm`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Slice.lean#L152).
 
 ```lean
 lemma abs_right_le_norm_slice_symm {d : ℕ} (i : Fin d.succ) (r : ℝ) (x : Space d) :
     |r| ≤ ‖(slice i).symm (r, x)‖
 ```
 
-**`Space.norm_left_le_norm_slice_symm`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Slice.lean#L159).
+**`Space.norm_left_le_norm_slice_symm`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Slice.lean#L159).
 
 ```lean
 lemma norm_left_le_norm_slice_symm {d : ℕ} (i : Fin d.succ) (r : ℝ) (x : Space d) :
@@ -93,21 +93,21 @@ lemma norm_left_le_norm_slice_symm {d : ℕ} (i : Fin d.succ) (r : ℝ) (x : Spa
 
 ### A.4. Derivative of the slice map
 
-**`Space.fderiv_slice_symm`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Slice.lean#L173).
+**`Space.fderiv_slice_symm`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Slice.lean#L173).
 
 ```lean
 lemma fderiv_slice_symm {d : ℕ} (i : Fin d.succ) (p1 : ℝ × Space d) :
     fderiv ℝ (slice i).symm p1 = (slice i).symm
 ```
 
-**`Space.fderiv_slice_symm_left_apply`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Slice.lean#L177).
+**`Space.fderiv_slice_symm_left_apply`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Slice.lean#L177).
 
 ```lean
 lemma fderiv_slice_symm_left_apply {d : ℕ} (i : Fin d.succ) (x : Space d) (r1 r2 : ℝ) :
     (fderiv ℝ (fun r => (slice i).symm (r, x))) r1 r2 = (slice i).symm (r2, 0)
 ```
 
-**`Space.fderiv_slice_symm_right_apply`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Slice.lean#L187).
+**`Space.fderiv_slice_symm_right_apply`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Slice.lean#L187).
 
 ```lean
 lemma fderiv_slice_symm_right_apply {d : ℕ} (i : Fin d.succ) (r : ℝ)
@@ -115,7 +115,7 @@ lemma fderiv_slice_symm_right_apply {d : ℕ} (i : Fin d.succ) (r : ℝ)
     (fderiv ℝ (fun x => (slice i).symm (r, x))) x1 x2 = (slice i).symm (0, x2)
 ```
 
-**`Space.fderiv_fun_slice_symm_right_apply`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Slice.lean#L197).
+**`Space.fderiv_fun_slice_symm_right_apply`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Slice.lean#L197).
 
 ```lean
 lemma fderiv_fun_slice_symm_right_apply {d : ℕ} (i : Fin d.succ) (r : ℝ)
@@ -124,7 +124,7 @@ lemma fderiv_fun_slice_symm_right_apply {d : ℕ} (i : Fin d.succ) (r : ℝ)
     fderiv ℝ f ((slice i).symm (r, x1)) ((slice i).symm (0, x2))
 ```
 
-**`Space.fderiv_fun_slice_symm_left_apply`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Slice.lean#L206).
+**`Space.fderiv_fun_slice_symm_left_apply`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Slice.lean#L206).
 
 ```lean
 lemma fderiv_fun_slice_symm_left_apply {d : ℕ} (i : Fin d.succ) (r1 r2 : ℝ)
@@ -135,14 +135,14 @@ lemma fderiv_fun_slice_symm_left_apply {d : ℕ} (i : Fin d.succ) (r1 r2 : ℝ)
 
 ### A.5. Basis in terms of slices
 
-**`Space.basis_self_eq_slice`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Slice.lean#L221).
+**`Space.basis_self_eq_slice`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Slice.lean#L221).
 
 ```lean
 lemma basis_self_eq_slice {d : ℕ} (i : Fin d.succ) :
     basis i = (slice i).symm (1, 0)
 ```
 
-**`Space.basis_succAbove_eq_slice`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Slice.lean#L228).
+**`Space.basis_succAbove_eq_slice`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Slice.lean#L228).
 
 ```lean
 lemma basis_succAbove_eq_slice {d : ℕ} (i : Fin d.succ) (j : Fin d) :
@@ -155,4 +155,4 @@ lemma basis_succAbove_eq_slice {d : ℕ} (i : Fin d.succ) (j : Fin d) :
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/Slice.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Slice.lean)
+- [Physlib/SpaceAndTime/Space/Slice.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Slice.lean)

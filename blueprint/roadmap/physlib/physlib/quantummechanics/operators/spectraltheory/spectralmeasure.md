@@ -8,7 +8,7 @@ proof: formalized
 
 # Spectral measures
 
-The module `Physlib.QuantumMechanics.Operators.SpectralTheory.SpectralMeasure`, [Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean): 10 declarations (1 instance with no name), 1 with a docstring.
+The module `Physlib.QuantumMechanics.Operators.SpectralTheory.SpectralMeasure`, [Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean): 10 declarations (1 instance with no name), 1 with a docstring.
 
 ## i. Overview
 
@@ -30,7 +30,7 @@ The module `Physlib.QuantumMechanics.Operators.SpectralTheory.SpectralMeasure`, 
 
 > * None.
 
-**An instance with no name**, [line 48](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L48).
+**An instance with no name**, [line 48](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L48).
 
 ```lean
 instance (H : Type*) [SeminormedAddCommGroup H] [InnerProductSpace ℂ H] :
@@ -39,7 +39,7 @@ instance (H : Type*) [SeminormedAddCommGroup H] [InnerProductSpace ℂ H] :
 
 ## A. Definition
 
-**`SpectralMeasure`**, a structure, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L61).
+**`SpectralMeasure`**, a structure, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L61).
 
 > A \_spectral measure\_ on a measurable space `α` is a σ-additive function `Set α → H →L[ℂ] H`
 > such that each set is mapped to a star projection on `H`, the empty set and non-measurable sets
@@ -54,25 +54,25 @@ structure SpectralMeasure
   univ' : measureOf' univ = 1
 ```
 
-**`SpectralMeasure.instCoeVectorMeasure`**, an instance, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L76).
+**`SpectralMeasure.instCoeVectorMeasure`**, an instance, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L76).
 
 ```lean
 instance instCoeVectorMeasure : Coe (SpectralMeasure α H) (VectorMeasure α (H →L[ℂ] H))
 ```
 
-**`SpectralMeasure.instCoeFun`**, an instance, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L79).
+**`SpectralMeasure.instCoeFun`**, an instance, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L79).
 
 ```lean
 instance instCoeFun : CoeFun (SpectralMeasure α H) fun _ ↦ Set α → H →L[ℂ] H
 ```
 
-**`SpectralMeasure.isStarProjection`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L82).
+**`SpectralMeasure.isStarProjection`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L82).
 
 ```lean
 lemma isStarProjection (A : Set α) : IsStarProjection (μS A)
 ```
 
-**`SpectralMeasure.univ`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L85).
+**`SpectralMeasure.univ`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L85).
 
 ```lean
 lemma univ : μS univ = 1
@@ -80,13 +80,13 @@ lemma univ : μS univ = 1
 
 ## B. Composition
 
-**`SpectralMeasure.comp_self`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L92).
+**`SpectralMeasure.comp_self`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L92).
 
 ```lean
 lemma comp_self (A : Set α) : μS A ∘L μS A = μS A
 ```
 
-**`SpectralMeasure.comp_of_disjoint`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L94).
+**`SpectralMeasure.comp_of_disjoint`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L94).
 
 ```lean
 lemma comp_of_disjoint
@@ -94,14 +94,14 @@ lemma comp_of_disjoint
     μS A ∘L μS B = 0
 ```
 
-**`SpectralMeasure.comp_eq_of_inter`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L102).
+**`SpectralMeasure.comp_eq_of_inter`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L102).
 
 ```lean
 lemma comp_eq_of_inter {A B : Set α} (hA : MeasurableSet A) (hB : MeasurableSet B) :
     μS A ∘L μS B = μS (A ∩ B)
 ```
 
-**`SpectralMeasure.commute`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L111).
+**`SpectralMeasure.commute`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean#L111).
 
 ```lean
 lemma commute (A B : Set α) : Commute (μS A) (μS B)
@@ -113,4 +113,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean)
+- [Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean)

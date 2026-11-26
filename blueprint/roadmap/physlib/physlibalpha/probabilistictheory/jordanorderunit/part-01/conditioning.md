@@ -8,7 +8,7 @@ proof: formalized
 
 # Conditioning a state on a projection
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Conditioning`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean): 9 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Conditioning`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean): 9 declarations, 5 with a docstring.
 
 > Conditioning a state on a Jordan projection `p`: the state `x ↦ ω(U_p x) / ω(p)`.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Conditioning`, [Phy
 
 ## A. Quadratic conditioning
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.condition`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L57).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.condition`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L57).
 
 > Condition a state on a Jordan projection.  Positivity of the quadratic representation is
 > kept explicit, since it does not follow from the weak `IsJordanOrderUnit` interface.
@@ -44,7 +44,7 @@ noncomputable def IsJordanProjection.condition {p : E}
     (hU : ∀ x, 0 ≤ x → 0 ≤ U p x) : 𝓢[ℝ, E]
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.condition_apply`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L71).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.condition_apply`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L71).
 
 ```lean
 lemma IsJordanProjection.condition_apply {p : E}
@@ -53,7 +53,7 @@ lemma IsJordanProjection.condition_apply {p : E}
     hp.condition ω hmass hU x = (ω p)⁻¹ * ω (U p x)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.condition_one`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.condition_one`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L77).
 
 ```lean
 lemma IsJordanProjection.condition_one {p : E}
@@ -62,7 +62,7 @@ lemma IsJordanProjection.condition_one {p : E}
     hp.condition ω hmass hU 1 = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.condition_nonneg`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L84).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.condition_nonneg`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L84).
 
 ```lean
 lemma IsJordanProjection.condition_nonneg {p : E}
@@ -71,7 +71,7 @@ lemma IsJordanProjection.condition_nonneg {p : E}
     0 ≤ hp.condition ω hmass hU x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.condition_self`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L91).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.condition_self`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L91).
 
 > Conditioning on `p` makes `p` certain.
 
@@ -82,7 +82,7 @@ lemma IsJordanProjection.condition_self {p : E}
     hp.condition ω hmass hU p = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.condition_apply_of_jordanOrthogonal`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L99).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.condition_apply_of_jordanOrthogonal`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L99).
 
 > Conditioning on `p` assigns probability zero to every projection Jordan-orthogonal to `p`.
 
@@ -93,7 +93,7 @@ lemma IsJordanProjection.condition_apply_of_jordanOrthogonal {p q : E}
     hp.condition ω hmass hU q = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.condition_complement`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L106).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.condition_complement`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L106).
 
 > Conditioning on a projection assigns probability zero to its algebraic complement.
 
@@ -104,7 +104,7 @@ lemma IsJordanProjection.condition_complement {p : E}
     hp.condition ω hmass hU (1 - p) = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.conditionOfQuadraticPositive`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L115).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.conditionOfQuadraticPositive`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L115).
 
 > Condition a state on a Jordan projection using the ambient quadratic-order capability.
 > This is the physics-facing form of `condition`: its only non-algebraic input is exactly the
@@ -116,7 +116,7 @@ noncomputable def IsJordanProjection.conditionOfQuadraticPositive {p : E}
     [IsQuadraticallyPositive E] : 𝓢[ℝ, E]
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.conditionOfQuadraticPositive_apply`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L121).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.conditionOfQuadraticPositive_apply`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean#L121).
 
 ```lean
 lemma IsJordanProjection.conditionOfQuadraticPositive_apply {p : E}
@@ -132,4 +132,4 @@ lemma IsJordanProjection.conditionOfQuadraticPositive_apply {p : E}
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean)

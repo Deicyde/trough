@@ -8,7 +8,7 @@ proof: formalized
 
 # Entries of an axis boost
 
-The module `PhyslibAlpha.Relativity.LorentzGroup.Boosts.Axis`, [PhyslibAlpha/Relativity/LorentzGroup/Boosts/Axis.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Boosts/Axis.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Relativity.LorentzGroup.Boosts.Axis`, [PhyslibAlpha/Relativity/LorentzGroup/Boosts/Axis.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzGroup/Boosts/Axis.lean): 1 declaration, 1 with a docstring.
 
 > The Hermiticity of a coordinate-axis boost in `SL(2, ℂ)`, read on its entries.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Boosts.Axis`, [PhyslibAlpha/Rel
 
 ## A. Hermiticity on the entries
 
-**`Lorentz.SL2C.star_boostAxis_apply`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Boosts/Axis.lean#L49).
+**`Lorentz.SL2C.star_boostAxis_apply`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzGroup/Boosts/Axis.lean#L49).
 
 > Hermiticity read on the entries: conjugating an entry of an axis boost transposes it.
 
@@ -45,4 +45,4 @@ lemma star_boostAxis_apply (i : Fin 3) (t : ℝ) (ht : t ≠ 0) (β α : Fin 2) 
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/LorentzGroup/Boosts/Axis.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Boosts/Axis.lean)
+- [PhyslibAlpha/Relativity/LorentzGroup/Boosts/Axis.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzGroup/Boosts/Axis.lean)

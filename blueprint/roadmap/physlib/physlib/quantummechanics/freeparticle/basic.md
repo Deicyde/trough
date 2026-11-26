@@ -8,7 +8,7 @@ proof: formalized
 
 # The free particle on `Space d`
 
-The module `Physlib.QuantumMechanics.FreeParticle.Basic`, [Physlib/QuantumMechanics/FreeParticle/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/FreeParticle/Basic.lean): 6 declarations, 3 with a docstring.
+The module `Physlib.QuantumMechanics.FreeParticle.Basic`, [Physlib/QuantumMechanics/FreeParticle/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/FreeParticle/Basic.lean): 6 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -22,7 +22,7 @@ The module `Physlib.QuantumMechanics.FreeParticle.Basic`, [Physlib/QuantumMechan
 
 > * None.
 
-**`QuantumMechanics.FreeParticle`**, a structure, [line 40](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/FreeParticle/Basic.lean#L40).
+**`QuantumMechanics.FreeParticle`**, a structure, [line 40](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/FreeParticle/Basic.lean#L40).
 
 > A free, spinless quantum particle with mass `m > 0` in `Space d`.
 
@@ -35,19 +35,19 @@ structure FreeParticle (d : ℕ) where
 
 ## A. Basic properties
 
-**`QuantumMechanics.FreeParticle.m_pos`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/FreeParticle/Basic.lean#L54).
+**`QuantumMechanics.FreeParticle.m_pos`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/FreeParticle/Basic.lean#L54).
 
 ```lean
 lemma m_pos : 0 < Q.m
 ```
 
-**`QuantumMechanics.FreeParticle.m_nonneg`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/FreeParticle/Basic.lean#L57).
+**`QuantumMechanics.FreeParticle.m_nonneg`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/FreeParticle/Basic.lean#L57).
 
 ```lean
 lemma m_nonneg : 0 ≤ Q.m
 ```
 
-**`QuantumMechanics.FreeParticle.m_ne_zero`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/FreeParticle/Basic.lean#L60).
+**`QuantumMechanics.FreeParticle.m_ne_zero`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/FreeParticle/Basic.lean#L60).
 
 ```lean
 lemma m_ne_zero : Q.m ≠ 0
@@ -55,7 +55,7 @@ lemma m_ne_zero : Q.m ≠ 0
 
 ## B. Hilbert space
 
-**`QuantumMechanics.FreeParticle.HS`**, an abbrev, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/FreeParticle/Basic.lean#L68).
+**`QuantumMechanics.FreeParticle.HS`**, an abbrev, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/FreeParticle/Basic.lean#L68).
 
 > The Hilbert space for the free particle.
 
@@ -65,7 +65,7 @@ abbrev HS (_ : FreeParticle d) : Type _
 
 ## C. Hamiltonian
 
-**`QuantumMechanics.FreeParticle.hamiltonian`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/FreeParticle/Basic.lean#L75).
+**`QuantumMechanics.FreeParticle.hamiltonian`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/FreeParticle/Basic.lean#L75).
 
 > The Hamiltonian, `p²/(2m)`.
 
@@ -78,8 +78,8 @@ def hamiltonian : Q.HS →ₗ.[ℂ] Q.HS
 ## Depends on
 
 - [Physlib.Meta.Informal.Basic](../../meta/informal/basic.md)
-- [Momentum operators](../operators/momentum.md)
+- [Momentum operators](../operators/spaced-momentum.md)
 
 ## Sources
 
-- [Physlib/QuantumMechanics/FreeParticle/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/FreeParticle/Basic.lean)
+- [Physlib/QuantumMechanics/FreeParticle/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/FreeParticle/Basic.lean)

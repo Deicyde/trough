@@ -8,7 +8,7 @@ proof: formalized
 
 # Finite weights are continuous
 
-The module `PhyslibAlpha.ProbabilisticTheory.Weight.Continuous`, [PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean): 5 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Weight.Continuous`, [PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean): 5 declarations, 3 with a docstring.
 
 > Positive functionals are order-unit-norm bounded, so finite weights are continuous functionals.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Weight.Continuous`, [PhyslibAlpha/P
 
 ## A. Positive functionals are bounded
 
-**`PositiveLinearMap.abs_apply_le_apply_one_mul_orderUnitNorm`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean#L56).
+**`PositiveLinearMap.abs_apply_le_apply_one_mul_orderUnitNorm`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean#L56).
 
 > A positive functional is order-unit-norm bounded, with bound given by its value at the order
 > unit.  For a normalized positive functional this specializes to the contractive state bound.
@@ -38,7 +38,7 @@ lemma abs_apply_le_apply_one_mul_orderUnitNorm (f : E →ₚ[ℝ] ℝ) (x : E) :
     |f x| ≤ f 1 * orderUnitNorm x
 ```
 
-**`PositiveLinearMap.toOrderUnitContinuousLinearMap`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean#L73).
+**`PositiveLinearMap.toOrderUnitContinuousLinearMap`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean#L73).
 
 > A positive functional as a continuous functional on the canonical order-unit-norm copy.
 
@@ -47,7 +47,7 @@ noncomputable def toOrderUnitContinuousLinearMap (f : E →ₚ[ℝ] ℝ) :
     WithOrderUnitNorm E →L[ℝ] ℝ
 ```
 
-**`PositiveLinearMap.toOrderUnitContinuousLinearMap_apply`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean#L81).
+**`PositiveLinearMap.toOrderUnitContinuousLinearMap_apply`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean#L81).
 
 ```lean
 lemma toOrderUnitContinuousLinearMap_apply (f : E →ₚ[ℝ] ℝ) (x : E) :
@@ -56,7 +56,7 @@ lemma toOrderUnitContinuousLinearMap_apply (f : E →ₚ[ℝ] ℝ) (x : E) :
 
 ## B. Finite weights as continuous functionals
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toOrderUnitContinuousLinearMap`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean#L101).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toOrderUnitContinuousLinearMap`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean#L101).
 
 > The canonical continuous linear extension of a finite weight to the order-unit-norm copy.
 
@@ -65,7 +65,7 @@ noncomputable def toOrderUnitContinuousLinearMap {w : Weight E} (hw : w.IsFinite
     WithOrderUnitNorm E →L[ℝ] ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toOrderUnitContinuousLinearMap_apply_of_nonneg`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean#L105).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toOrderUnitContinuousLinearMap_apply_of_nonneg`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean#L105).
 
 ```lean
 lemma toOrderUnitContinuousLinearMap_apply_of_nonneg {w : Weight E} (hw : w.IsFinite)
@@ -80,4 +80,4 @@ lemma toOrderUnitContinuousLinearMap_apply_of_nonneg {w : Weight E} (hw : w.IsFi
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean)

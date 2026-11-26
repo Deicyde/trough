@@ -8,7 +8,7 @@ proof: formalized
 
 # Complete positivity of classical channels
 
-The module `PhyslibAlpha.ProbabilisticTheory.Composite.CompletePositivity`, [PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean): 8 declarations, 8 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Composite.CompletePositivity`, [PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean): 8 declarations, 8 with a docstring.
 
 > Channels into or out of a classical (nuclear) system are completely positive.
 
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Composite.CompletePositivity`, [Phy
 
 ## A. Tensoring with the identity
 
-**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.map_one_tmul_one`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean#L66).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.map_one_tmul_one`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean#L66).
 
 > Applying a channel to the first part of a composite leaves the unit `1 ⊗ 1` in place.
 
@@ -53,7 +53,7 @@ lemma map_one_tmul_one (φ : Channel E F) :
       (1 : F) ⊗ₜ[ℝ] (1 : A)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.map_mem_minTensorClosure`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean#L74).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.map_mem_minTensorClosure`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean#L74).
 
 > Applying a channel to the first part maps the Archimedean closure of the minimal cone into
 > itself.
@@ -66,7 +66,7 @@ lemma map_mem_minTensorClosure (φ : Channel E F) {z : E ⊗[ℝ] A}
 
 ## B. Nuclear inputs and outputs
 
-**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.map_mem_of_isNuclear_left`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean#L88).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.map_mem_of_isNuclear_left`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean#L88).
 
 > **A channel out of a nuclear system is completely positive.** Applied to the first part of a
 > composite observable in the maximal cone with an Archimedean ancilla, it lands in every Archimedean
@@ -78,7 +78,7 @@ lemma map_mem_of_isNuclear_left (hE : IsNuclear E) (φ : Channel E F) {z : E ⊗
     (hmin : minTensorCone F A ≤ C) : TensorProduct.map φ.toLinearMap LinearMap.id z ∈ C
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.map_mem_of_isNuclear_right`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean#L96).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.map_mem_of_isNuclear_right`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean#L96).
 
 > **A positive map into a nuclear system is completely positive.** Applied to the first part of
 > a composite observable in the maximal cone with an Archimedean ancilla, it lands in every
@@ -90,7 +90,7 @@ lemma map_mem_of_isNuclear_right (hF : IsNuclear F) (φ : E →ₚ[ℝ] F) {z : 
     (hmin : minTensorCone F A ≤ C) : TensorProduct.map φ.toLinearMap LinearMap.id z ∈ C
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.map_mem_of_isNuclear_left'`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean#L104).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.map_mem_of_isNuclear_left'`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean#L104).
 
 > A channel out of a nuclear system maps every composite into every Archimedean composite.
 
@@ -100,7 +100,7 @@ lemma map_mem_of_isNuclear_left' (hE : IsNuclear E) (φ : Channel E F) (C₁ : C
     TensorProduct.map φ.toLinearMap LinearMap.id z ∈ C₂
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.map_mem_of_isNuclear_right'`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean#L110).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.map_mem_of_isNuclear_right'`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean#L110).
 
 > A positive map into a nuclear system maps every composite into every Archimedean composite.
 
@@ -112,7 +112,7 @@ lemma map_mem_of_isNuclear_right' (hF : IsNuclear F) (φ : E →ₚ[ℝ] F) (C�
 
 ## C. Classical inputs and outputs
 
-**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.map_mem_of_isClassical_left`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean#L118).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.map_mem_of_isClassical_left`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean#L118).
 
 > **A channel out of a classical system is completely positive.**
 
@@ -122,7 +122,7 @@ lemma map_mem_of_isClassical_left {E : Type*} [ArchimedeanOrderUnitSpace E] (hE 
     {z : E ⊗[ℝ] A} (hz : z ∈ C₁) : TensorProduct.map φ.toLinearMap LinearMap.id z ∈ C₂
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.map_mem_of_isClassical_right`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean#L124).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.map_mem_of_isClassical_right`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean#L124).
 
 > **A positive map into a classical system is completely positive.**
 
@@ -144,4 +144,4 @@ lemma map_mem_of_isClassical_right {F : Type*} [ArchimedeanOrderUnitSpace F] (hF
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean)

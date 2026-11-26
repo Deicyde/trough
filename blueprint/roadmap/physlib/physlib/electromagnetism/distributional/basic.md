@@ -8,7 +8,7 @@ proof: formalized
 
 # The Electromagnetic Potential (Distributional/Basic)
 
-The module `Physlib.Electromagnetism.Distributional.Basic`, [Physlib/Electromagnetism/Distributional/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Distributional/Basic.lean): 6 declarations (2 instances with no name), 4 with a docstring.
+The module `Physlib.Electromagnetism.Distributional.Basic`, [Physlib/Electromagnetism/Distributional/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Distributional/Basic.lean): 6 declarations (2 instances with no name), 4 with a docstring.
 
 ## i. Overview
 
@@ -32,7 +32,7 @@ The module `Physlib.Electromagnetism.Distributional.Basic`, [Physlib/Electromagn
 
 ## A. The electromagnetic potential as a distribution
 
-**`Electromagnetism.DistElectromagneticPotential`**, a structure, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Distributional/Basic.lean#L60).
+**`Electromagnetism.DistElectromagneticPotential`**, a structure, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Distributional/Basic.lean#L60).
 
 > The electromagnetic potential as a distribution and as a tensor `A^μ`.
 
@@ -44,7 +44,7 @@ structure DistElectromagneticPotential (d : ℕ := 3) where
 
 ### A.1. Equivalence to distributions
 
-**`Electromagnetism.DistElectromagneticPotential.valEquiv`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Distributional/Basic.lean#L73).
+**`Electromagnetism.DistElectromagneticPotential.valEquiv`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Distributional/Basic.lean#L73).
 
 > The equivalence between an electromagnetic potential and its underlying distribution.
 
@@ -54,19 +54,19 @@ def valEquiv {d : ℕ} :
       𝓓'(⟨Set.univ (α := SpaceTime d), isOpen_univ⟩, Lorentz.Vector d)
 ```
 
-**An instance with no name**, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Distributional/Basic.lean#L85).
+**An instance with no name**, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Distributional/Basic.lean#L85).
 
 ```lean
 noncomputable instance {d : ℕ} : AddCommGroup (DistElectromagneticPotential d)
 ```
 
-**An instance with no name**, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Distributional/Basic.lean#L88).
+**An instance with no name**, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Distributional/Basic.lean#L88).
 
 ```lean
 noncomputable instance {d : ℕ} : Module ℝ (DistElectromagneticPotential d)
 ```
 
-**`Electromagnetism.DistElectromagneticPotential.valLinearEquiv`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Distributional/Basic.lean#L92).
+**`Electromagnetism.DistElectromagneticPotential.valLinearEquiv`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Distributional/Basic.lean#L92).
 
 > The linear equivalence between an electromagnetic potential and its underlying distribution.
 
@@ -78,7 +78,7 @@ noncomputable def valLinearEquiv {d : ℕ} :
 
 ## B. Functions as distributions
 
-**`Electromagnetism.DistElectromagneticPotential.ofFunction`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Distributional/Basic.lean#L104).
+**`Electromagnetism.DistElectromagneticPotential.ofFunction`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Distributional/Basic.lean#L104).
 
 > The distribution induced by a spacetime function.
 
@@ -93,4 +93,4 @@ noncomputable def ofFunction {d} (f : SpaceTime d → Lorentz.Vector d) :
 
 ## Sources
 
-- [Physlib/Electromagnetism/Distributional/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Distributional/Basic.lean)
+- [Physlib/Electromagnetism/Distributional/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Distributional/Basic.lean)

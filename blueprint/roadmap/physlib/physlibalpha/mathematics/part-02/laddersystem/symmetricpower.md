@@ -8,7 +8,7 @@ proof: formalized
 
 # The excitation sector is the symmetric power
 
-The module `PhyslibAlpha.Mathematics.LadderSystem.SymmetricPower`, [PhyslibAlpha/Mathematics/LadderSystem/SymmetricPower.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/SymmetricPower.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Mathematics.LadderSystem.SymmetricPower`, [PhyslibAlpha/Mathematics/LadderSystem/SymmetricPower.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/SymmetricPower.lean): 2 declarations, 2 with a docstring.
 
 > The excitation-number sector `vacuumSpan L Ω n` is linearly isomorphic to `Sym^n(K^d)`.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.Mathematics.LadderSystem.SymmetricPower`, [PhyslibAlpha
 
 ## A. The isomorphism with the symmetric power
 
-**`LadderSystem.vacuumSpanSymEquiv`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/SymmetricPower.lean#L58).
+**`LadderSystem.vacuumSpanSymEquiv`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/SymmetricPower.lean#L58).
 
 > `vacuumSpan L Ω n` is linearly isomorphic to `Sym^n(K^d)` (realized as the free `K`-module
 > on `Sym (Fin d) n`), matching the natural monomial-type basis on one side to the occupation-number
@@ -46,7 +46,7 @@ noncomputable def vacuumSpanSymEquiv {Ω : V} (P : L.HasVacuum Ω) (n : ℕ) :
 
 ## B. The image of the basis vectors
 
-**`LadderSystem.vacuumSpanSymEquiv_single`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/SymmetricPower.lean#L70).
+**`LadderSystem.vacuumSpanSymEquiv_single`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/SymmetricPower.lean#L70).
 
 > The isomorphism sends the basis vector for multiset `s` to the occupation-number state with
 > that multiset's count function.
@@ -63,4 +63,4 @@ lemma vacuumSpanSymEquiv_single {Ω : V} (P : L.HasVacuum Ω) (n : ℕ) (s : Sym
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/LadderSystem/SymmetricPower.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/SymmetricPower.lean)
+- [PhyslibAlpha/Mathematics/LadderSystem/SymmetricPower.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/SymmetricPower.lean)

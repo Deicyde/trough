@@ -8,7 +8,7 @@ proof: formalized
 
 # The point groups of the orthorhombic lattices
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Orthorhombic`, [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean): 16 declarations (1 instance with no name), 15 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Orthorhombic`, [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean): 16 declarations (1 instance with no name), 15 with a docstring.
 
 > The point groups of the four orthorhombic lattices have order eight: they are the reflections in
 > the three coordinate planes and their products, the holohedry `mmm`.
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Orthorhombic`, [Phys
 
 ## A. Tests on admissible triples
 
-**`CondensedMatter.Crystal.PeriodicGraph.PassesTests`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L67).
+**`CondensedMatter.Crystal.PeriodicGraph.PassesTests`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L67).
 
 > The triple `(a, b, c)` passes the tests `D₀`, `D₁`, `D₂` on its first, first two and three
 > vectors: each test `d` and its image under the triple are neighbours together.
@@ -54,14 +54,14 @@ def PassesTests (N : Finset (Fin 3 → ℤ)) (D₀ : List ℤ) (D₁ : List (ℤ
     (D₂ : List (Fin 3 → ℤ)) (a b c : Fin 3 → ℤ) : Prop
 ```
 
-**An instance with no name**, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L73).
+**An instance with no name**, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L73).
 
 ```lean
 instance (N : Finset (Fin 3 → ℤ)) (D₀ : List ℤ) (D₁ : List (ℤ × ℤ)) (D₂ : List (Fin 3 → ℤ))
     (a b c : Fin 3 → ℤ) : Decidable (PassesTests N D₀ D₁ D₂ a b c)
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.admissible_iff_of_tests`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L80).
+**`CondensedMatter.Crystal.PeriodicGraph.admissible_iff_of_tests`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L80).
 
 > The admissible triples are the triples of `S`, if every triple of `S` is admissible and only
 > the triples of `S` pass the tests.
@@ -74,7 +74,7 @@ lemma admissible_iff_of_tests (hN : ∀ j, (Pi.single j 1 : Fin 3 → ℤ) ∈ N
     (v : Fin 3 → Fin 3 → ℤ) : Admissible N v ↔ v ∈ S
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.card_pointGroup_ofBonds`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L95).
+**`CondensedMatter.Crystal.PeriodicGraph.card_pointGroup_ofBonds`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L95).
 
 > The order of the point group is the number of admissible triples, once they are known.
 
@@ -87,7 +87,7 @@ lemma card_pointGroup_ofBonds (bonds : List (Bond (Fin 3 → ℤ) Unit))
 
 ## B. The admissible triples
 
-**`CondensedMatter.Crystal.orthorhombicPointTriples`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L111).
+**`CondensedMatter.Crystal.orthorhombicPointTriples`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L111).
 
 > The images of the basis vectors under the eight point operations of the primitive orthorhombic
 > lattice, the sign changes of the three basis vectors.
@@ -96,7 +96,7 @@ lemma card_pointGroup_ofBonds (bonds : List (Bond (Fin 3 → ℤ) Unit))
 def orthorhombicPointTriples : Finset (Fin 3 → Fin 3 → ℤ)
 ```
 
-**`CondensedMatter.Crystal.orthorhombic_admissible_iff`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L119).
+**`CondensedMatter.Crystal.orthorhombic_admissible_iff`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L119).
 
 > The point operations of the primitive orthorhombic lattice are the eight of
 > `orthorhombicPointTriples`.
@@ -106,7 +106,7 @@ lemma orthorhombic_admissible_iff (v : Fin 3 → Fin 3 → ℤ) :
     Admissible (bondNeighbors orthorhombicBonds) v ↔ v ∈ orthorhombicPointTriples
 ```
 
-**`CondensedMatter.Crystal.baseCentredOrthorhombicPointTriples`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L126).
+**`CondensedMatter.Crystal.baseCentredOrthorhombicPointTriples`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L126).
 
 > The images of the basis vectors under the eight point operations of the base-centred
 > orthorhombic lattice, in the basis `baseCentredVectors a b c`.
@@ -115,7 +115,7 @@ lemma orthorhombic_admissible_iff (v : Fin 3 → Fin 3 → ℤ) :
 def baseCentredOrthorhombicPointTriples : Finset (Fin 3 → Fin 3 → ℤ)
 ```
 
-**`CondensedMatter.Crystal.baseCentredOrthorhombic_admissible_iff`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L134).
+**`CondensedMatter.Crystal.baseCentredOrthorhombic_admissible_iff`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L134).
 
 > The point operations of the base-centred orthorhombic lattice are the eight of
 > `baseCentredOrthorhombicPointTriples`.
@@ -126,7 +126,7 @@ lemma baseCentredOrthorhombic_admissible_iff (v : Fin 3 → Fin 3 → ℤ) :
       v ∈ baseCentredOrthorhombicPointTriples
 ```
 
-**`CondensedMatter.Crystal.bodyCentredOrthorhombicPointTriples`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L142).
+**`CondensedMatter.Crystal.bodyCentredOrthorhombicPointTriples`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L142).
 
 > The images of the basis vectors under the eight point operations of the body-centred
 > orthorhombic lattice, in the basis `bccVectors a b c`.
@@ -135,7 +135,7 @@ lemma baseCentredOrthorhombic_admissible_iff (v : Fin 3 → Fin 3 → ℤ) :
 def bodyCentredOrthorhombicPointTriples : Finset (Fin 3 → Fin 3 → ℤ)
 ```
 
-**`CondensedMatter.Crystal.bodyCentredOrthorhombic_admissible_iff`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L150).
+**`CondensedMatter.Crystal.bodyCentredOrthorhombic_admissible_iff`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L150).
 
 > The point operations of the body-centred orthorhombic lattice are the eight of
 > `bodyCentredOrthorhombicPointTriples`.
@@ -146,7 +146,7 @@ lemma bodyCentredOrthorhombic_admissible_iff (v : Fin 3 → Fin 3 → ℤ) :
       v ∈ bodyCentredOrthorhombicPointTriples
 ```
 
-**`CondensedMatter.Crystal.faceCentredOrthorhombicPointTriples`**, a def, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L158).
+**`CondensedMatter.Crystal.faceCentredOrthorhombicPointTriples`**, a def, [line 158](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L158).
 
 > The images of the basis vectors under the eight point operations of the face-centred
 > orthorhombic lattice, in the basis `fccVectors a b c`.
@@ -155,7 +155,7 @@ lemma bodyCentredOrthorhombic_admissible_iff (v : Fin 3 → Fin 3 → ℤ) :
 def faceCentredOrthorhombicPointTriples : Finset (Fin 3 → Fin 3 → ℤ)
 ```
 
-**`CondensedMatter.Crystal.faceCentredOrthorhombic_admissible_iff`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L166).
+**`CondensedMatter.Crystal.faceCentredOrthorhombic_admissible_iff`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L166).
 
 > The point operations of the face-centred orthorhombic lattice are the eight of
 > `faceCentredOrthorhombicPointTriples`.
@@ -168,7 +168,7 @@ lemma faceCentredOrthorhombic_admissible_iff (v : Fin 3 → Fin 3 → ℤ) :
 
 ## C. The orders
 
-**`CondensedMatter.Crystal.orthorhombic_card_pointGroup`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L176).
+**`CondensedMatter.Crystal.orthorhombic_card_pointGroup`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L176).
 
 > **The point group of the primitive orthorhombic lattice has order `8`.**
 
@@ -176,7 +176,7 @@ lemma faceCentredOrthorhombic_admissible_iff (v : Fin 3 → Fin 3 → ℤ) :
 lemma orthorhombic_card_pointGroup : Nat.card orthorhombicGraph.pointGroup = 8
 ```
 
-**`CondensedMatter.Crystal.baseCentredOrthorhombic_card_pointGroup`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L181).
+**`CondensedMatter.Crystal.baseCentredOrthorhombic_card_pointGroup`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L181).
 
 > **The point group of the base-centred orthorhombic lattice has order `8`.**
 
@@ -185,7 +185,7 @@ lemma baseCentredOrthorhombic_card_pointGroup :
     Nat.card baseCentredOrthorhombicGraph.pointGroup = 8
 ```
 
-**`CondensedMatter.Crystal.bodyCentredOrthorhombic_card_pointGroup`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L187).
+**`CondensedMatter.Crystal.bodyCentredOrthorhombic_card_pointGroup`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L187).
 
 > **The point group of the body-centred orthorhombic lattice has order `8`.**
 
@@ -194,7 +194,7 @@ lemma bodyCentredOrthorhombic_card_pointGroup :
     Nat.card bodyCentredOrthorhombicGraph.pointGroup = 8
 ```
 
-**`CondensedMatter.Crystal.faceCentredOrthorhombic_card_pointGroup`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L193).
+**`CondensedMatter.Crystal.faceCentredOrthorhombic_card_pointGroup`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean#L193).
 
 > **The point group of the face-centred orthorhombic lattice has order `8`.**
 
@@ -210,4 +210,4 @@ lemma faceCentredOrthorhombic_card_pointGroup :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean)

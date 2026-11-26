@@ -8,7 +8,7 @@ proof: formalized
 
 # The fundamental formula
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Quadratic.Fundamental`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean): 35 declarations, 35 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Quadratic.Fundamental`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean): 35 declarations, 35 with a docstring.
 
 > The fundamental formula `U_{U_a b} = U_a U_b U_a`, proved from the Jordan identity alone.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Quadratic.Fundament
 
 ## A. Fundamental composition identity
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.cyclic_mulLeft_commutator`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L56).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.cyclic_mulLeft_commutator`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L56).
 
 > The polarized Jordan identity, evaluated at a fourth element.
 
@@ -39,7 +39,7 @@ lemma cyclic_mulLeft_commutator (a b c x : E) :
           (c * ((a * b) * x) - (a * b) * (c * x)) = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.cyclic_mulLeft_assoc_sum`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L81).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.cyclic_mulLeft_assoc_sum`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L81).
 
 > The polarized Jordan identity with its three commutators collected.
 
@@ -49,7 +49,7 @@ lemma cyclic_mulLeft_assoc_sum (a b c x : E) :
       (b * c) * (a * x) + (c * a) * (b * x) + (a * b) * (c * x)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.mulLeft_triple_normalize`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L94).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.mulLeft_triple_normalize`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L94).
 
 > The multiplication operator of a triple product in terms of multiplication operators of single
 > and double products.
@@ -61,7 +61,7 @@ lemma mulLeft_triple_normalize (a b c : E) :
         (((L b).comp (L a)).comp (L c) + ((L c).comp (L a)).comp (L b))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.mulLeft_cube_normalize`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L125).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.mulLeft_cube_normalize`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L125).
 
 > First specialization of `mulLeft_triple_normalize`: the multiplication operator of the third
 > Jordan power is a polynomial in `L_a` and `L_(a²)`.
@@ -73,7 +73,7 @@ lemma mulLeft_cube_normalize (a : E) :
         (2 : ℝ) • (((L a).comp (L a)).comp (L a))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.mul_self_mul_self_mulLeft_normalize`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L134).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.mul_self_mul_self_mulLeft_normalize`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L134).
 
 > Second normalization step, evaluated at `x`: multiplication by `(a²)²` is reduced to the
 > commuting operators `L_a` and `L_(a²)`.
@@ -86,7 +86,7 @@ lemma mul_self_mul_self_mulLeft_normalize (a x : E) :
           (4 : ℝ) • (a * (a * (a * (a * x))))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_mul_self_eq_comp`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L167).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_mul_self_eq_comp`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L167).
 
 > The quadratic representation of a Jordan square is the square of its quadratic
 > representation. This is the first nontrivial quadratic fundamental identity; its proof uses only
@@ -97,7 +97,7 @@ lemma quadRep_mul_self_eq_comp (a : E) :
     U (a * a) = (U a).comp (U a)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_add_mul_self_eq_comp`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L186).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_add_mul_self_eq_comp`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L186).
 
 > The square identity evaluated on a sum.  This keeps the polarizing source equation in a
 > canonical bilinear form: the remaining coefficient extraction is purely a finite calculation in
@@ -110,7 +110,7 @@ lemma quadRep_add_mul_self_eq_comp (a b : E) :
         (U a + (2 : ℝ) • quadRepBilin a b + U b)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_add_square_polarized`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L196).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_add_square_polarized`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L196).
 
 > The positive polarization of the square identity, fully expanded in the canonical bilinear
 > quadratic operator.  Pairing this equation with its signed counterpart isolates the standard
@@ -129,7 +129,7 @@ lemma quadRep_add_square_polarized (a b : E) :
                 (quadRepBilin a b).comp (U b))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_sub_square_polarized`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L217).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_sub_square_polarized`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L217).
 
 > The signed companion to `quadRep_add_square_polarized`.  Adding the two equations cancels
 > the cubic terms and leaves precisely the mixed quadratic coefficient.
@@ -147,7 +147,7 @@ lemma quadRep_sub_square_polarized (a b : E) :
                 (quadRepBilin a b).comp (U b))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRepBilin_comp_self_polarization`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L233).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRepBilin_comp_self_polarization`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L233).
 
 > The mixed polarization of the quadratic representation.
 
@@ -160,7 +160,7 @@ lemma quadRepBilin_comp_self_polarization (a b : E) :
 
 ## B. Polarizing the cubic commutation law: the triple commutator identity
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_add_apply'`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L267).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_add_apply'`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L267).
 
 > Pointwise expansion of `U (a + b)` at an arbitrary argument, the elementary consequence of
 > `quadRep_add_eq` used repeatedly below to unfold both sides of the polarized cubic law.
@@ -170,7 +170,7 @@ lemma quadRep_add_apply' (a b y : E) :
     U (a + b) y = U a y + (2 : ℝ) • quadRepBilin a b y + U b y
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_sub_apply'`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L274).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_sub_apply'`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L274).
 
 > Pointwise expansion of `U (a - b)` at an arbitrary argument.
 
@@ -179,7 +179,7 @@ lemma quadRep_sub_apply' (a b y : E) :
     U (a - b) y = U a y - (2 : ℝ) • quadRepBilin a b y + U b y
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRepBilin_mulLeft_polarization`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L280).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRepBilin_mulLeft_polarization`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L280).
 
 > The `(2, 1)`-component of `U_{a + b}` commuting with `L_{a + b}`.
 
@@ -189,7 +189,7 @@ lemma quadRepBilin_mulLeft_polarization (a b x : E) :
       b * U a x + (2 : ℝ) • (a * quadRepBilin a b x)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRepBilin_mulLeft_polarization'`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L293).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRepBilin_mulLeft_polarization'`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L293).
 
 > The `(1, 2)`-component of `U_{a + b}` commuting with `L_{a + b}`.
 
@@ -201,7 +201,7 @@ lemma quadRepBilin_mulLeft_polarization' (a b x : E) :
 
 ## C. Normalizing the multiplication operator of a quadratic image
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.mulLeft_quadRep_normalize`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L302).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.mulLeft_quadRep_normalize`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L302).
 
 > `L_{U_a b}` in terms of `L_a`, `L_b`, `L_{a²}` and `L_{a ∘ b}`.
 
@@ -214,7 +214,7 @@ lemma mulLeft_quadRep_normalize (a b : E) :
             (2 : ℝ) • (((L a).comp (L b)).comp (L a))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_quadRep_eq`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L328).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_quadRep_eq`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L328).
 
 > `U_{U_a b}` in terms of the quadratic representations of `a ∘ (a ∘ b)` and `a² ∘ b`.
 
@@ -231,7 +231,7 @@ lemma quadRep_quadRep_eq (a b : E) :
 > D\_\{a,b}`, the fundamental identity of Jordan triple systems follows from the fact that inner
 > derivations are derivations of the Jordan product.
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_add_left`**, a lemma, [line 354](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L354).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_add_left`**, a lemma, [line 354](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L354).
 
 > Additivity of the inner derivation in its first defining argument.
 
@@ -240,7 +240,7 @@ lemma innerDerivation_add_left (a b c : E) :
     innerDerivation (a + b) c = innerDerivation a c + innerDerivation b c
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_smul_left`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L363).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_smul_left`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L363).
 
 > Real linearity of the inner derivation in its first defining argument.
 
@@ -249,7 +249,7 @@ lemma innerDerivation_smul_left (r : ℝ) (a b : E) :
     innerDerivation (r • a) b = r • innerDerivation a b
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_add_right`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L377).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_add_right`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L377).
 
 > Additivity of the inner derivation in its second defining argument.
 
@@ -258,7 +258,7 @@ lemma innerDerivation_add_right (a b c : E) :
     innerDerivation a (b + c) = innerDerivation a b + innerDerivation a c
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_smul_right`**, a lemma, [line 387](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L387).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_smul_right`**, a lemma, [line 387](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L387).
 
 > Real linearity of the inner derivation in its second defining argument.
 
@@ -267,7 +267,7 @@ lemma innerDerivation_smul_right (r : ℝ) (a b : E) :
     innerDerivation a (r • b) = r • innerDerivation a b
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_sub_left`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L393).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_sub_left`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L393).
 
 > Difference expansion of the inner derivation in its first defining argument.
 
@@ -276,7 +276,7 @@ lemma innerDerivation_sub_left (a b c : E) :
     innerDerivation (a - b) c = innerDerivation a c - innerDerivation b c
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.jordanTriple_diag_left`**, a lemma, [line 404](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L404).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.jordanTriple_diag_left`**, a lemma, [line 404](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L404).
 
 > The diagonal fact for the triple product at `(a, a, x)`: telescoping cancellation collapses
 > it to the plain associative square multiplication `a² x`.  This is the base case used in the
@@ -286,7 +286,7 @@ lemma innerDerivation_sub_left (a b c : E) :
 lemma jordanTriple_diag_left (a x : E) : jordanTriple a a x = a ^[2] * x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_mul`**, a lemma, [line 410](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L410).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_mul`**, a lemma, [line 410](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L410).
 
 > **Inner derivations are derivations**: `D_{a,b} (x ∘ y) = D_{a,b} x ∘ y + x ∘ D_{a,b} y`.
 
@@ -295,7 +295,7 @@ lemma innerDerivation_mul (a b x y : E) :
     innerDerivation a b (x * y) = (innerDerivation a b x) * y + x * (innerDerivation a b y)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_mulLeft_comm`**, a lemma, [line 421](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L421).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_mulLeft_comm`**, a lemma, [line 421](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L421).
 
 > The derivation property restated as an operator commutator: `[D_{a,b}, L_x] = L_{D_{a,b} x}`.
 > This is `innerDerivation_mul` read as a statement about composed multiplication operators; it is
@@ -307,7 +307,7 @@ lemma innerDerivation_mulLeft_comm (a b x : E) :
       L (innerDerivation a b x)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_comm`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L430).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_comm`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L430).
 
 > `[D_{a,b}, D_{c,d}] = D_{D_{a,b} c, d} + D_{c, D_{a,b} d}`.
 
@@ -318,7 +318,7 @@ lemma innerDerivation_comm (a b c d : E) :
       innerDerivation (innerDerivation a b c) d + innerDerivation c (innerDerivation a b d)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.tripleOperator`**, a def, [line 448](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L448).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.tripleOperator`**, a def, [line 448](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L448).
 
 > The Jordan triple operator `V_{a,b} := L_{a*b} + D_{a,b}`.  Its action on any `x` is exactly
 > the Jordan triple product `{a,b,x}` (`triple_eq_V_apply`), so it packages `jordanTriple`'s middle
@@ -328,7 +328,7 @@ lemma innerDerivation_comm (a b c d : E) :
 def tripleOperator (a b : E) : E →ₗ[ℝ] E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.triple_eq_V_apply`**, a lemma, [line 454](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L454).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.triple_eq_V_apply`**, a lemma, [line 454](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L454).
 
 > The Jordan triple operator `V_{a,b}` computes the Jordan triple product in its middle slot.
 
@@ -336,7 +336,7 @@ def tripleOperator (a b : E) : E →ₗ[ℝ] E
 lemma triple_eq_V_apply (a b x : E) : V a b x = jordanTriple a b x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_sub_right`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L462).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_sub_right`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L462).
 
 > Difference expansion of the inner derivation in its second defining argument.
 
@@ -345,7 +345,7 @@ lemma innerDerivation_sub_right (a b c : E) :
     innerDerivation a (b - c) = innerDerivation a b - innerDerivation a c
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_mul_left`**, a lemma, [line 470](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L470).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.innerDerivation_mul_left`**, a lemma, [line 470](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L470).
 
 > The inner derivation of a product in its first argument.
 
@@ -354,7 +354,7 @@ lemma innerDerivation_mul_left (a b q e : E) :
     innerDerivation (a * b) q e = innerDerivation a (b * q) e + innerDerivation b (a * q) e
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.tripleOperator_comm`**, a lemma, [line 479](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L479).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.tripleOperator_comm`**, a lemma, [line 479](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L479).
 
 > `[V_{a,b}, V_{c,d}] = V_{{a,b,c},d} - V_{c,{b,a,d}}`, the fundamental identity of Jordan triple
 > systems.
@@ -365,7 +365,7 @@ lemma tripleOperator_comm (a b c d : E) :
       V (jordanTriple a b c) d - V c (jordanTriple b a d)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.tripleOperator_quadRep_step`**, a lemma, [line 700](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L700).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.tripleOperator_quadRep_step`**, a lemma, [line 700](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L700).
 
 > The triple-operator commutator law specialized to `(x, y, x, z)` and evaluated at `x`.
 
@@ -375,7 +375,7 @@ lemma tripleOperator_quadRep_step (x y z : E) :
       (2 : ℝ) • V x z (U x y) - U x (jordanTriple y x z)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.V_quadRep_eq_quadRep_triple`**, a lemma, [line 720](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L720).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.V_quadRep_eq_quadRep_triple`**, a lemma, [line 720](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L720).
 
 > Combining `tripleOperator_quadRep_step` with its own `y ↔ z` companion (and
 > `jordanTriple_outer_comm`, which identifies `jordanTriple z x y` with `jordanTriple y x z`)
@@ -386,7 +386,7 @@ lemma V_quadRep_eq_quadRep_triple (x y z : E) :
     V x y (U x z) = U x (jordanTriple y x z)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_fundamental_apply`**, a lemma, [line 733](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L733).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_fundamental_apply`**, a lemma, [line 733](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L733).
 
 > Pointwise form of the fundamental formula for the quadratic representation:
 > `U_{U_x y} z = U_x U_y U_x z`.
@@ -396,7 +396,7 @@ lemma quadRep_fundamental_apply (x y z : E) :
     U (U x y) z = U x (U y (U x z))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_fundamental`**, a lemma, [line 1001](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L1001).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_fundamental`**, a lemma, [line 1001](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L1001).
 
 > The fundamental formula for the quadratic representation:
 > `U_{U_x y} = U_x ∘ U_y ∘ U_x`.
@@ -406,7 +406,7 @@ lemma quadRep_fundamental (x y : E) :
     U (U x y) = (U x).comp ((U y).comp (U x))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_fundamental_jpow`**, a lemma, [line 1007](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L1007).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_fundamental_jpow`**, a lemma, [line 1007](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean#L1007).
 
 > The fundamental formula on powers of one element.
 
@@ -426,4 +426,4 @@ lemma quadRep_fundamental_jpow (a : E) (m n k : ℕ) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean)

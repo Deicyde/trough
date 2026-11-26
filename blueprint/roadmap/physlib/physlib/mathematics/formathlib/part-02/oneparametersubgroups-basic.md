@@ -8,7 +8,7 @@ proof: formalized
 
 # One-parameter subgroups of real Banach algebras
 
-The module `Physlib.Mathematics.ForMathlib.OneParameterSubgroups.Basic`, [Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean): 6 declarations (1 instance with no name), 3 with a docstring.
+The module `Physlib.Mathematics.ForMathlib.OneParameterSubgroups.Basic`, [Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean): 6 declarations (1 instance with no name), 3 with a docstring.
 
 ## i. Overview
 
@@ -36,7 +36,7 @@ The module `Physlib.Mathematics.ForMathlib.OneParameterSubgroups.Basic`, [Physli
 
 > * None.
 
-**An instance with no name**, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean#L56).
+**An instance with no name**, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean#L56).
 
 > `NormedSpace.exp`'s API wants a `ℚ`-algebra structure (for the `1/n!` coefficients), which
 > isn't automatic from `NormedAlgebra ℝ E` alone; derive it once here rather than at each use site.
@@ -45,14 +45,14 @@ The module `Physlib.Mathematics.ForMathlib.OneParameterSubgroups.Basic`, [Physli
 local instance : NormedAlgebra ℚ E
 ```
 
-**`OneParameterSubgroup.exists_isUnit_intervalIntegral`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean#L58).
+**`OneParameterSubgroup.exists_isUnit_intervalIntegral`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean#L58).
 
 ```lean
 lemma exists_isUnit_intervalIntegral [Nontrivial E] (U : AddChar ℝ E) (hU : Continuous U) :
     ∃ d : ℝ, 0 < d ∧ IsUnit (∫ x in (0 : ℝ)..d, U x)
 ```
 
-**`OneParameterSubgroup.mul_intervalIntegral_eq_sub`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean#L95).
+**`OneParameterSubgroup.mul_intervalIntegral_eq_sub`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean#L95).
 
 > Translating a one-parameter subgroup translates its interval integral.
 
@@ -62,21 +62,21 @@ lemma mul_intervalIntegral_eq_sub (U : AddChar ℝ E) (hU : Continuous U) (s t :
       (∫ x in (0 : ℝ)..(s + t), U x) - ∫ x in (0 : ℝ)..s, U x
 ```
 
-**`OneParameterSubgroup.differentiable`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean#L115).
+**`OneParameterSubgroup.differentiable`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean#L115).
 
 ```lean
 lemma differentiable [Nontrivial E] (U : AddChar ℝ E) (hU : Continuous U) :
     Differentiable ℝ U
 ```
 
-**`OneParameterSubgroup.apply_eq_exp_smul_deriv`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean#L138).
+**`OneParameterSubgroup.apply_eq_exp_smul_deriv`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean#L138).
 
 ```lean
 lemma apply_eq_exp_smul_deriv (U : AddChar ℝ E) (hU : Continuous U) (t : ℝ) :
     U t = NormedSpace.exp (t • deriv U 0)
 ```
 
-**`OneParameterSubgroup.generator_unique`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean#L182).
+**`OneParameterSubgroup.generator_unique`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean#L182).
 
 > Any exponential generator of a one-parameter subgroup is its derivative at zero.
 
@@ -91,4 +91,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean)
+- [Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean)

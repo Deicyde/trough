@@ -8,7 +8,7 @@ proof: formalized
 
 # The conjugate module
 
-The module `Physlib.Mathematics.Modules.ConjModule`, [Physlib/Mathematics/Modules/ConjModule.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/ConjModule.lean): 9 declarations (1 instance with no name), 8 with a docstring.
+The module `Physlib.Mathematics.Modules.ConjModule`, [Physlib/Mathematics/Modules/ConjModule.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/ConjModule.lean): 9 declarations (1 instance with no name), 8 with a docstring.
 
 > Over a commutative star-ring `k`, the *conjugate module* `ConjModule M` of a `k`-module `M` is the
 > same additive group with the scalar action twisted by conjugation: `r • v := star r • v`. It turns a
@@ -27,7 +27,7 @@ The module `Physlib.Mathematics.Modules.ConjModule`, [Physlib/Mathematics/Module
 > - `ConjModule.involution` : the involution `ConjModule (ConjModule M) ≃ₗ[k] M`.
 > - `Basis.conj` : a basis of `M` transported to a basis of `ConjModule M` (coordinates by `star`).
 
-**`ConjModule`**, a def, [line 43](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/ConjModule.lean#L43).
+**`ConjModule`**, a def, [line 43](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/ConjModule.lean#L43).
 
 > The conjugate module of `M`: the same additive group with the scalar action twisted by
 > conjugation, `r • v = star r • v`. A type synonym so the twisted action stays off `M`.
@@ -36,13 +36,13 @@ The module `Physlib.Mathematics.Modules.ConjModule`, [Physlib/Mathematics/Module
 def ConjModule (M : Type*)
 ```
 
-**An instance with no name**, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/ConjModule.lean#L47).
+**An instance with no name**, [line 47](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/ConjModule.lean#L47).
 
 ```lean
 instance : AddCommGroup (ConjModule M)
 ```
 
-**`ConjModule.instModule`**, an instance, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/ConjModule.lean#L51).
+**`ConjModule.instModule`**, an instance, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/ConjModule.lean#L51).
 
 > The twisted action `r • v = star r • v`, obtained by restricting scalars along the
 > conjugation ring endomorphism `starRingEnd k`.
@@ -51,7 +51,7 @@ instance : AddCommGroup (ConjModule M)
 instance instModule : Module k (ConjModule M)
 ```
 
-**`conjEquiv`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/ConjModule.lean#L58).
+**`conjEquiv`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/ConjModule.lean#L58).
 
 > The canonical conjugate-linear equivalence `M ≃ₛₗ[starRingEnd k] ConjModule M`, the identity on
 > the underlying additive group.
@@ -60,7 +60,7 @@ instance instModule : Module k (ConjModule M)
 def conjEquiv : M ≃ₛₗ[starRingEnd k] ConjModule M
 ```
 
-**`ConjModule.involution`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/ConjModule.lean#L71).
+**`ConjModule.involution`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/ConjModule.lean#L71).
 
 > Conjugating twice returns the original module: the `k`-linear isomorphism
 > `ConjModule (ConjModule M) ≃ₗ[k] M`. It is `k`-linear, not merely semilinear, because
@@ -70,7 +70,7 @@ def conjEquiv : M ≃ₛₗ[starRingEnd k] ConjModule M
 def involution : ConjModule (ConjModule M) ≃ₗ[k] M
 ```
 
-**`ConjModule.starFinsupp`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/ConjModule.lean#L77).
+**`ConjModule.starFinsupp`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/ConjModule.lean#L77).
 
 > Coordinate-wise conjugation on `ι →₀ k`, a conjugate-linear self-equivalence.
 
@@ -78,7 +78,7 @@ def involution : ConjModule (ConjModule M) ≃ₗ[k] M
 noncomputable def starFinsupp : (ι →₀ k) ≃ₛₗ[starRingEnd k] (ι →₀ k)
 ```
 
-**`Basis.conj`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/ConjModule.lean#L90).
+**`Basis.conj`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/ConjModule.lean#L90).
 
 > A basis of `M` transported to a basis of `ConjModule M`: the same basis vectors, with
 > coordinates conjugated (`(Basis.conj b).repr v = star ∘ b.repr v`).
@@ -87,7 +87,7 @@ noncomputable def starFinsupp : (ι →₀ k) ≃ₛₗ[starRingEnd k] (ι →�
 noncomputable def _root_.Basis.conj (b : Basis ι k M) : Basis ι k (ConjModule M)
 ```
 
-**`Basis.conj_repr_apply`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/ConjModule.lean#L95).
+**`Basis.conj_repr_apply`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/ConjModule.lean#L95).
 
 > Coordinates in `Basis.conj b` are the `star` of the coordinates in `b`.
 
@@ -96,7 +96,7 @@ lemma _root_.Basis.conj_repr_apply (b : Basis ι k M) (v : ConjModule M) (i : ι
     (Basis.conj b).repr v i = star (b.repr ((conjEquiv (k := k) (M := M)).symm v) i)
 ```
 
-**`Basis.conj_apply`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/ConjModule.lean#L99).
+**`Basis.conj_apply`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/ConjModule.lean#L99).
 
 > The basis vectors of `Basis.conj b` are those of `b`, viewed through `conjEquiv`.
 
@@ -111,4 +111,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/Modules/ConjModule.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/ConjModule.lean)
+- [Physlib/Mathematics/Modules/ConjModule.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/ConjModule.lean)

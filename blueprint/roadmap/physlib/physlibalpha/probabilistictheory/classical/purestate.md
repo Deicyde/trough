@@ -8,7 +8,7 @@ proof: formalized
 
 # Pure states
 
-The module `PhyslibAlpha.ProbabilisticTheory.Classical.PureState`, [PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean): 16 declarations, 11 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Classical.PureState`, [PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean): 16 declarations, 11 with a docstring.
 
 > Pure states, the functionals below them, and the space of pure states.
 
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.PureState`, [PhyslibAlpha
 
 ## A. Functionals below a pure state
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.normalize`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.normalize`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L77).
 
 > The state `φ / φ 1` of a positive functional with `φ 1 > 0`.
 
@@ -51,21 +51,21 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.PureState`, [PhyslibAlpha
 noncomputable def normalize (φ : E →ₚ[ℝ] ℝ) (h : 0 < φ 1) : 𝓢[ℝ, E]
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.normalize_apply`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L82).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.normalize_apply`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L82).
 
 ```lean
 lemma normalize_apply (φ : E →ₚ[ℝ] ℝ) (h : 0 < φ 1) (f : E) :
     normalize φ h f = (φ 1)⁻¹ * φ f
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.toPositiveLinearMap_apply`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L85).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.toPositiveLinearMap_apply`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L85).
 
 ```lean
 lemma toPositiveLinearMap_apply (ω : 𝓢[ℝ, E]) (f : E) :
     ω.toPositiveLinearMap f = ω f
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsPure.apply_eq_of_le_of_pos`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L89).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsPure.apply_eq_of_le_of_pos`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L89).
 
 > A positive functional below a pure state `ω` with `0 < φ 1 < 1` is `φ 1` times `ω`.
 
@@ -75,7 +75,7 @@ lemma IsPure.apply_eq_of_le_of_pos {ω : 𝓢[ℝ, E]} (hω : ω.IsPure) {φ : E
     φ f = φ 1 * ω f
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsPure.apply_eq_of_le`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L105).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsPure.apply_eq_of_le`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L105).
 
 > A pure state dominates only multiples of itself.
 
@@ -84,7 +84,7 @@ lemma IsPure.apply_eq_of_le {ω : 𝓢[ℝ, E]} (hω : ω.IsPure) {φ : E →ₚ
     (hφ : φ ≤ ω.toPositiveLinearMap) (f : E) : φ f = φ 1 * ω f
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.weighted`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L120).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.weighted`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L120).
 
 > The state `ω` with weight `c`, as a positive functional.
 
@@ -92,13 +92,13 @@ lemma IsPure.apply_eq_of_le {ω : 𝓢[ℝ, E]} (hω : ω.IsPure) {φ : E →ₚ
 def weighted (ω : 𝓢[ℝ, E]) (c : ℝ≥0) : E →ₚ[ℝ] ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.weighted_apply`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L123).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.weighted_apply`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L123).
 
 ```lean
 lemma weighted_apply (ω : 𝓢[ℝ, E]) (c : ℝ≥0) (f : E) : ω.weighted c f = c * ω f
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsPure.apply_eq_of_le_weighted`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L126).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsPure.apply_eq_of_le_weighted`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L126).
 
 > A positive functional below a weighted pure state is a multiple of that state.
 
@@ -107,7 +107,7 @@ lemma IsPure.apply_eq_of_le_weighted {ω : 𝓢[ℝ, E]} (hω : ω.IsPure) {γ :
     (h : γ ≤ ω.weighted c) (f : E) : γ f = γ 1 * ω f
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.eq_zero_of_le_weighted`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L145).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.eq_zero_of_le_weighted`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L145).
 
 > A positive functional below weighted copies of two distinct pure states vanishes.
 
@@ -117,7 +117,7 @@ lemma eq_zero_of_le_weighted {ω₁ ω₂ : 𝓢[ℝ, E]} (h₁ : ω₁.IsPure) 
     γ = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.StateSpace.exists_apply_eq_apply`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L158).
+**`PhyslibAlpha.ProbabilisticTheory.StateSpace.exists_apply_eq_apply`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L158).
 
 > Two distinct states take any two prescribed values on a common observable.
 
@@ -129,7 +129,7 @@ lemma StateSpace.exists_apply_eq_apply {E : Type*} [ArchimedeanOrderUnitSpace E]
 
 ## B. The space of pure states
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState`**, an abbrev, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L184).
+**`PhyslibAlpha.ProbabilisticTheory.PureState`**, an abbrev, [line 184](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L184).
 
 > The pure states, with the weak-star topology.
 
@@ -137,7 +137,7 @@ lemma StateSpace.exists_apply_eq_apply {E : Type*} [ArchimedeanOrderUnitSpace E]
 abbrev PureState : Type _
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.evalPure`**, a def, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L191).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.evalPure`**, a def, [line 191](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L191).
 
 > An observable as the continuous function of its values on the pure states.
 
@@ -145,19 +145,19 @@ abbrev PureState : Type _
 noncomputable def evalPure : E →ₗ[ℝ] C(PureState E, ℝ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.evalPure_apply`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L197).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.evalPure_apply`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L197).
 
 ```lean
 lemma evalPure_apply (f : E) (ω : PureState E) : evalPure f ω = toState ω.1 f
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.evalPure_one`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L199).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.evalPure_one`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L199).
 
 ```lean
 lemma evalPure_one : evalPure (1 : E) = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.nonneg_of_forall_pure`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L202).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.nonneg_of_forall_pure`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L202).
 
 > **Krein–Milman**: an observable nonnegative in every pure state is nonnegative.
 
@@ -165,7 +165,7 @@ lemma evalPure_one : evalPure (1 : E) = 1
 lemma nonneg_of_forall_pure {f : E} (h : ∀ ω : PureState E, 0 ≤ toState ω.1 f) : 0 ≤ f
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.evalPure_le_iff`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L215).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.evalPure_le_iff`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean#L215).
 
 > Pure states determine the order.
 
@@ -181,4 +181,4 @@ lemma evalPure_le_iff {f g : E} : evalPure f ≤ evalPure g ↔ f ≤ g
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean)

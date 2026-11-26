@@ -8,13 +8,13 @@ proof: formalized
 
 # Physlib.Relativity.Bispinors.Basic
 
-The module `Physlib.Relativity.Bispinors.Basic`, [Physlib/Relativity/Bispinors/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Basic.lean): 4 declarations, 4 with a docstring.
+The module `Physlib.Relativity.Bispinors.Basic`, [Physlib/Relativity/Bispinors/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Bispinors/Basic.lean): 4 declarations, 4 with a docstring.
 
 ## Bispinors
 
 ## Definitions
 
-**`complexLorentzTensor.contrBispinorUp`**, a def, [line 39](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Basic.lean#L39).
+**`complexLorentzTensor.contrBispinorUp`**, a def, [line 39](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Bispinors/Basic.lean#L39).
 
 > A bispinor `pᵃᵃ` created from a lorentz vector `p^μ`.
 
@@ -22,7 +22,7 @@ The module `Physlib.Relativity.Bispinors.Basic`, [Physlib/Relativity/Bispinors/B
 def contrBispinorUp (p : ℂT[.up]) : ℂT[.upL, .upR]
 ```
 
-**`complexLorentzTensor.contrBispinorDown`**, a def, [line 43](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Basic.lean#L43).
+**`complexLorentzTensor.contrBispinorDown`**, a def, [line 43](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Bispinors/Basic.lean#L43).
 
 > A bispinor `pₐₐ` created from a lorentz vector `p^μ`.
 
@@ -30,7 +30,7 @@ def contrBispinorUp (p : ℂT[.up]) : ℂT[.upL, .upR]
 def contrBispinorDown (p : ℂT[.up]) : ℂT[.downL, .downR]
 ```
 
-**`complexLorentzTensor.coBispinorUp`**, a def, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Basic.lean#L47).
+**`complexLorentzTensor.coBispinorUp`**, a def, [line 47](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Bispinors/Basic.lean#L47).
 
 > A bispinor `pᵃᵃ` created from a lorentz vector `p_μ`.
 
@@ -38,7 +38,7 @@ def contrBispinorDown (p : ℂT[.up]) : ℂT[.downL, .downR]
 def coBispinorUp (p : ℂT[.down]) : ℂT[.upL, .upR]
 ```
 
-**`complexLorentzTensor.coBispinorDown`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Basic.lean#L51).
+**`complexLorentzTensor.coBispinorDown`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Bispinors/Basic.lean#L51).
 
 > A bispinor `pₐₐ` created from a lorentz vector `p_μ`.
 
@@ -55,4 +55,4 @@ def coBispinorDown (p : ℂT[.down]) : ℂT[.downL, .downR]
 
 ## Sources
 
-- [Physlib/Relativity/Bispinors/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Basic.lean)
+- [Physlib/Relativity/Bispinors/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Bispinors/Basic.lean)

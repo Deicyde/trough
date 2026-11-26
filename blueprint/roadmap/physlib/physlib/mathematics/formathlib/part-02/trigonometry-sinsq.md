@@ -8,7 +8,7 @@ proof: formalized
 
 # Strict bounds on the square of the sine
 
-The module `Physlib.Mathematics.ForMathlib.Trigonometry.SinSq`, [Physlib/Mathematics/ForMathlib/Trigonometry/SinSq.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Trigonometry/SinSq.lean): 2 declarations, 2 with a docstring.
+The module `Physlib.Mathematics.ForMathlib.Trigonometry.SinSq`, [Physlib/Mathematics/ForMathlib/Trigonometry/SinSq.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Trigonometry/SinSq.lean): 2 declarations, 2 with a docstring.
 
 > …
 
@@ -38,7 +38,7 @@ The module `Physlib.Mathematics.ForMathlib.Trigonometry.SinSq`, [Physlib/Mathema
 > On `|x| < π / 2` the cosine is positive, so `1 - sin² x = cos² x` is positive; the half-angle form
 > follows by applying this at `x = θ / 2`.
 
-**`Real.sin_sq_lt_one`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Trigonometry/SinSq.lean#L55).
+**`Real.sin_sq_lt_one`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Trigonometry/SinSq.lean#L55).
 
 > `sin x ^ 2 < 1` for `|x| < π / 2`: the cosine is positive there, and `1 - sin² x = cos² x`.
 
@@ -46,7 +46,7 @@ The module `Physlib.Mathematics.ForMathlib.Trigonometry.SinSq`, [Physlib/Mathema
 lemma sin_sq_lt_one {x : ℝ} (h : |x| < π / 2) : sin x ^ 2 < 1
 ```
 
-**`Real.sin_half_sq_lt_one`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Trigonometry/SinSq.lean#L63).
+**`Real.sin_half_sq_lt_one`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Trigonometry/SinSq.lean#L63).
 
 > The half-angle form of `sin_sq_lt_one`: `sin (θ / 2) ^ 2 < 1` for `|θ| < π`. For the pendulum
 > this says that the parameter `sin² (θ₀ / 2)` of the period formula lies in the domain of
@@ -62,4 +62,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/ForMathlib/Trigonometry/SinSq.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Trigonometry/SinSq.lean)
+- [Physlib/Mathematics/ForMathlib/Trigonometry/SinSq.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Trigonometry/SinSq.lean)

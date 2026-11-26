@@ -8,7 +8,7 @@ proof: formalized
 
 # Components of real Lorentz cross contractions
 
-The module `Physlib.Relativity.Tensors.RealTensor.Contraction.CrossToEnd`, [Physlib/Relativity/Tensors/RealTensor/Contraction/CrossToEnd.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Contraction/CrossToEnd.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.Relativity.Tensors.RealTensor.Contraction.CrossToEnd`, [Physlib/Relativity/Tensors/RealTensor/Contraction/CrossToEnd.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Contraction/CrossToEnd.lean): 1 declaration, 1 with a docstring.
 
 ## i. Overview
 
@@ -27,7 +27,7 @@ The module `Physlib.Relativity.Tensors.RealTensor.Contraction.CrossToEnd`, [Phys
 
 ## A. Basis components
 
-**`realLorentzTensor.crossToEnd_basis_repr_apply_eq_fin`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Contraction/CrossToEnd.lean#L49).
+**`realLorentzTensor.crossToEnd_basis_repr_apply_eq_fin`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Contraction/CrossToEnd.lean#L49).
 
 > For real Lorentz tensors, the component formula for `crossToEnd` collapses to one sum because
 > the standard contravariant and covariant bases are dual under contraction.
@@ -50,4 +50,4 @@ lemma crossToEnd_basis_repr_apply_eq_fin {d nA nB : ℕ} {cA : Fin (nA + 1) → 
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/RealTensor/Contraction/CrossToEnd.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Contraction/CrossToEnd.lean)
+- [Physlib/Relativity/Tensors/RealTensor/Contraction/CrossToEnd.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Contraction/CrossToEnd.lean)

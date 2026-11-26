@@ -8,14 +8,14 @@ proof: formalized
 
 # Orthogonal matrices and the dot product
 
-The module `Physlib.Mathematics.ForMathlib.OrthogonalMatrix`, [Physlib/Mathematics/ForMathlib/OrthogonalMatrix.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/OrthogonalMatrix.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.Mathematics.ForMathlib.OrthogonalMatrix`, [Physlib/Mathematics/ForMathlib/OrthogonalMatrix.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/OrthogonalMatrix.lean): 1 declaration, 1 with a docstring.
 
 > An orthogonal matrix — a square matrix `A` with `Aᵀ A = 1` — preserves the dot product of vectors,
 > and in particular their squared lengths. This is the algebraic content behind the
 > frame-independence of the *rotational* kinetic energy in rigid-body dynamics: rotating a velocity
 > does not change its speed.
 
-**`Matrix.dotProduct_mulVec_orthogonal`**, a lemma, [line 26](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/OrthogonalMatrix.lean#L26).
+**`Matrix.dotProduct_mulVec_orthogonal`**, a lemma, [line 26](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/OrthogonalMatrix.lean#L26).
 
 > An orthogonal matrix preserves the dot product: if `Aᵀ A = 1` then `(A v) ⬝ᵥ (A w) = v ⬝ᵥ w`.
 > Taking `w = v` shows orthogonal matrices preserve squared lengths, `(A v) ⬝ᵥ (A v) = v ⬝ᵥ v`.
@@ -32,4 +32,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/ForMathlib/OrthogonalMatrix.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/OrthogonalMatrix.lean)
+- [Physlib/Mathematics/ForMathlib/OrthogonalMatrix.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/OrthogonalMatrix.lean)

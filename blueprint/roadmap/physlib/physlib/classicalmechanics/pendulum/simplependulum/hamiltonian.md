@@ -8,7 +8,7 @@ proof: formalized
 
 # The Hamiltonian formulation of the simple pendulum
 
-The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Hamiltonian`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean): 11 declarations, 11 with a docstring.
+The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Hamiltonian`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean): 11 declarations, 11 with a docstring.
 
 ## i. Overview
 
@@ -65,7 +65,7 @@ The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Hamiltonian`, [Ph
 > pivot, and since the moment of inertia is positive it is a linear equivalence between
 > velocities and momenta.
 
-**`ClassicalMechanics.SimplePendulum.canonicalMomentum`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L104).
+**`ClassicalMechanics.SimplePendulum.canonicalMomentum`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L104).
 
 > The canonical momentum of the simple pendulum, `p = ∂L/∂θ̇ = I θ̇`, as a linear
 > equivalence between velocities and momenta in the angular chart.
@@ -75,7 +75,7 @@ noncomputable def canonicalMomentum (t : Time) (x : EuclideanSpace ℝ (Fin 1)) 
     EuclideanSpace ℝ (Fin 1) ≃ₗ[ℝ] EuclideanSpace ℝ (Fin 1)
 ```
 
-**`ClassicalMechanics.SimplePendulum.canonicalMomentum_eq`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L115).
+**`ClassicalMechanics.SimplePendulum.canonicalMomentum_eq`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L115).
 
 > The canonical momentum of the simple pendulum is the angular momentum `I θ̇` about the
 > pivot.
@@ -95,7 +95,7 @@ lemma canonicalMomentum_eq (t : Time) (x v : EuclideanSpace ℝ (Fin 1)) :
 > where the angular velocity `θ̇` is a function of `p` and `θ` through the inverse of the
 > canonical momentum.
 
-**`ClassicalMechanics.SimplePendulum.hamiltonian`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L136).
+**`ClassicalMechanics.SimplePendulum.hamiltonian`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L136).
 
 > The Hamiltonian of the simple pendulum as a function of time, momentum and angle: the
 > Legendre transform `H(t, p, θ) = ⟪p, θ̇⟫ - L(t, θ, θ̇)` of the Lagrangian, the angular
@@ -110,7 +110,7 @@ noncomputable def hamiltonian (t : Time) (p x : EuclideanSpace ℝ (Fin 1)) : �
 > We prove a simple equality for the Hamiltonian, to help in computations: it is the kinetic
 > energy written in terms of the momentum, plus the potential energy.
 
-**`ClassicalMechanics.SimplePendulum.hamiltonian_eq`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L151).
+**`ClassicalMechanics.SimplePendulum.hamiltonian_eq`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L151).
 
 > The Hamiltonian of the simple pendulum is the kinetic energy written in terms of the
 > momentum, `½ (1/I) ‖p‖²`, plus the potential energy.
@@ -125,7 +125,7 @@ lemma hamiltonian_eq :
 
 > We show that the Hamiltonian is smooth in all its arguments jointly.
 
-**`ClassicalMechanics.SimplePendulum.hamiltonian_contDiff`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L171).
+**`ClassicalMechanics.SimplePendulum.hamiltonian_contDiff`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L171).
 
 > The Hamiltonian of the simple pendulum is a smooth function of the time, the momentum and
 > the angle jointly.
@@ -139,7 +139,7 @@ lemma hamiltonian_contDiff (n : WithTop ℕ∞) : ContDiff ℝ n ↿S.hamiltonia
 > We now write down the gradients of the Hamiltonian with respect to the angle and the momentum.
 > These are the two sides of Hamilton's equations.
 
-**`ClassicalMechanics.SimplePendulum.gradient_hamiltonian_position_eq`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L186).
+**`ClassicalMechanics.SimplePendulum.gradient_hamiltonian_position_eq`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L186).
 
 > The gradient of the Hamiltonian of the simple pendulum in the angle is the gradient of the
 > potential energy, that is minus the torque.
@@ -149,7 +149,7 @@ lemma gradient_hamiltonian_position_eq (t : Time) (x p : EuclideanSpace ℝ (Fin
     gradient (S.hamiltonian t p) x = gradient S.potentialEnergy x
 ```
 
-**`ClassicalMechanics.SimplePendulum.gradient_hamiltonian_momentum_eq`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L199).
+**`ClassicalMechanics.SimplePendulum.gradient_hamiltonian_momentum_eq`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L199).
 
 > The gradient of the Hamiltonian of the simple pendulum in the momentum is the angular
 > velocity `(1/I) p` recovered from the momentum.
@@ -165,7 +165,7 @@ lemma gradient_hamiltonian_momentum_eq (t : Time) (x p : EuclideanSpace ℝ (Fin
 > of the lift, is the energy. This is independent of whether the lift satisfies the equation of
 > motion or not.
 
-**`ClassicalMechanics.SimplePendulum.hamiltonian_eq_energy`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L223).
+**`ClassicalMechanics.SimplePendulum.hamiltonian_eq_energy`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L223).
 
 > Along any lift of the angle, the Hamiltonian of the simple pendulum evaluated on the
 > canonical momentum of the lift is the energy of the lift. This holds whether or not the lift
@@ -181,7 +181,7 @@ lemma hamiltonian_eq_energy (θ : Time → EuclideanSpace ℝ (Fin 1)) :
 > We define the operator on momentum-angle phase space whose vanishing is equivalent to
 > Hamilton's equations.
 
-**`ClassicalMechanics.SimplePendulum.hamiltonEqOp`**, a def, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L244).
+**`ClassicalMechanics.SimplePendulum.hamiltonEqOp`**, a def, [line 244](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L244).
 
 > The Hamilton-equations operator of the Hamiltonian of the simple pendulum, on
 > momentum-angle phase space; its vanishing is equivalent to Hamilton's equations for the
@@ -199,7 +199,7 @@ noncomputable def hamiltonEqOp (p θ : Time → EuclideanSpace ℝ (Fin 1))
 > velocity, and the equation for the momentum is the balance of the rate of change of the
 > angular momentum against the torque.
 
-**`ClassicalMechanics.SimplePendulum.equationOfMotion_iff_hamiltonEqOp_eq_zero`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L262).
+**`ClassicalMechanics.SimplePendulum.equationOfMotion_iff_hamiltonEqOp_eq_zero`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L262).
 
 > For a smooth lift of the angle the equation of motion of the simple pendulum holds if and
 > only if Hamilton's equations hold for the lift and its canonical momentum, that is if and
@@ -223,7 +223,7 @@ lemma equationOfMotion_iff_hamiltonEqOp_eq_zero (θ : Time → EuclideanSpace �
 > the variational derivative of the action lives in section G.1 of the `Basic` module; the
 > fourth entry states the same variational principle through the variational calculus directly.
 
-**`ClassicalMechanics.SimplePendulum.equationOfMotion_tfae`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L301).
+**`ClassicalMechanics.SimplePendulum.equationOfMotion_tfae`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean#L301).
 
 > For a smooth lift of the angle the following formulations of the dynamics of the simple
 > pendulum are equivalent:
@@ -257,4 +257,4 @@ lemma equationOfMotion_tfae (θ : Time → EuclideanSpace ℝ (Fin 1)) (hθ : Co
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean)
+- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Jordan positivity in a C⋆-algebra
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.CStarAlgebra.Positivity`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean): 5 declarations (1 instance with no name), 5 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.CStarAlgebra.Positivity`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean): 5 declarations (1 instance with no name), 5 with a docstring.
 
 > In a C⋆-algebra, nonnegative observables are Jordan squares and `a₊ ∘ a₋ = 0`.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.CStarAlgebra.Positi
 
 ## A. Positivity via the Jordan square
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.nonneg_iff_exists_jpow_two`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean#L57).
+**`PhyslibAlpha.ProbabilisticTheory.JB.nonneg_iff_exists_jpow_two`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean#L57).
 
 > An observable is positive exactly when it is the Jordan square of an observable — the Jordan
 > form of `Observable.nonneg_iff_exists_observable_sq`, via `mul_self_eq` identifying the Jordan
@@ -42,7 +42,7 @@ lemma nonneg_iff_exists_jpow_two (a : selfAdjoint A) :
       ∃ b : selfAdjoint A, (a : A) = ((JordanAlgebra.jpow b 2 : selfAdjoint A) : A)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.quadRep_nonneg`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean#L65).
+**`PhyslibAlpha.ProbabilisticTheory.JB.quadRep_nonneg`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean#L65).
 
 > The quadratic representation of a C⋆-algebra preserves positivity, since `U_a b = a b a`.
 
@@ -51,7 +51,7 @@ lemma quadRep_nonneg (a : selfAdjoint A) {b : selfAdjoint A} (hb : 0 ≤ b) :
     0 ≤ JordanAlgebra.quadRep a b
 ```
 
-**An instance with no name**, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean#L75).
+**An instance with no name**, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean#L75).
 
 > The canonical self-adjoint Cstar realization supplies the abstract quadratic-order
 > capability.  Thus generic Jordan measurement code can use `U_a` as a positive operation without
@@ -61,7 +61,7 @@ lemma quadRep_nonneg (a : selfAdjoint A) {b : selfAdjoint A} (hb : 0 ≤ b) :
 instance : JordanAlgebra.IsQuadraticallyPositive (selfAdjoint A)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.JordanAlgebra.IsJordanProjection.conditionCStar`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean#L81).
+**`PhyslibAlpha.ProbabilisticTheory.JB.JordanAlgebra.IsJordanProjection.conditionCStar`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean#L81).
 
 > Projection conditioning in the canonical Cstar Jordan realization.  In contrast to the
 > abstract constructor, no separate quadratic-positivity argument is required: it is supplied by
@@ -75,7 +75,7 @@ noncomputable def JordanAlgebra.IsJordanProjection.conditionCStar {p : selfAdjoi
 
 ## B. Orthogonality of the Jordan decomposition
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.jordanOrthogonal_posPart_negPart`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean#L90).
+**`PhyslibAlpha.ProbabilisticTheory.JB.jordanOrthogonal_posPart_negPart`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean#L90).
 
 > The positive and negative parts of an observable are Jordan-orthogonal, `a₊ ∘ a₋ = 0`: the
 > Jordan form of `Observable.posPart_mul_negPart`/`.negPart_mul_posPart`.
@@ -93,4 +93,4 @@ lemma jordanOrthogonal_posPart_negPart (a : selfAdjoint A) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean)

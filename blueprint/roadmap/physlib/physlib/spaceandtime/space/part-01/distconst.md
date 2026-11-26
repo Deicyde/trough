@@ -8,7 +8,7 @@ proof: formalized
 
 # The constant distribution on space
 
-The module `Physlib.SpaceAndTime.Space.DistConst`, [Physlib/SpaceAndTime/Space/DistConst.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistConst.lean): 5 declarations, 1 with a docstring.
+The module `Physlib.SpaceAndTime.Space.DistConst`, [Physlib/SpaceAndTime/Space/DistConst.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistConst.lean): 5 declarations, 1 with a docstring.
 
 ## i. Overview
 
@@ -28,7 +28,7 @@ The module `Physlib.SpaceAndTime.Space.DistConst`, [Physlib/SpaceAndTime/Space/D
 
 ## A. The definition of the constant distribution
 
-**`Space.distConst`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistConst.lean#L49).
+**`Space.distConst`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistConst.lean#L49).
 
 > The constant distribution from `Space d` to a module `M` associated with
 > `m : M`.
@@ -40,7 +40,7 @@ noncomputable def distConst {M } [NormedAddCommGroup M] [NormedSpace ℝ M] (d :
 
 ## B. Derivatives of the constant distribution
 
-**`Space.distDeriv_distConst`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistConst.lean#L59).
+**`Space.distDeriv_distConst`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistConst.lean#L59).
 
 ```lean
 lemma distDeriv_distConst {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -48,21 +48,21 @@ lemma distDeriv_distConst {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
     distDeriv μ (distConst d m) = 0
 ```
 
-**`Space.distGrad_distConst`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistConst.lean#L65).
+**`Space.distGrad_distConst`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistConst.lean#L65).
 
 ```lean
 lemma distGrad_distConst {d} (m : ℝ) :
     distGrad (distConst d m) = 0
 ```
 
-**`Space.distDiv_distConst`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistConst.lean#L70).
+**`Space.distDiv_distConst`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistConst.lean#L70).
 
 ```lean
 lemma distDiv_distConst {d} (m : EuclideanSpace ℝ (Fin d)) :
     distDiv (distConst d m) = 0
 ```
 
-**`Space.distCurl_distConst`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistConst.lean#L75).
+**`Space.distCurl_distConst`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistConst.lean#L75).
 
 ```lean
 lemma distCurl_distConst (m : EuclideanSpace ℝ (Fin 3)) :
@@ -75,4 +75,4 @@ lemma distCurl_distConst (m : EuclideanSpace ℝ (Fin 3)) :
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/DistConst.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistConst.lean)
+- [Physlib/SpaceAndTime/Space/DistConst.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistConst.lean)

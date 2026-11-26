@@ -8,7 +8,7 @@ proof: formalized
 
 # Examples: 1d Quantum Harmonic Oscillator
 
-The module `Physlib.QuantumMechanics.HarmonicOscillator.OneDimension.Examples`, [Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Examples.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Examples.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.QuantumMechanics.HarmonicOscillator.OneDimension.Examples`, [Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Examples.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Examples.lean): 1 declaration, 1 with a docstring.
 
 > This module gives simple examples of how to use the
 > `QuantumMechanics.OneDimension.HarmonicOscillator` API.
@@ -21,7 +21,7 @@ The module `Physlib.QuantumMechanics.HarmonicOscillator.OneDimension.Examples`, 
 > lake env lean Physlib/QuantumMechanics/OneDimension/HarmonicOscillator/Examples.lean
 > ```
 
-**`QuantumMechanics.OneDimension.HarmonicOscillator.Examples.Q`**, a def, [line 35](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Examples.lean#L35).
+**`QuantumMechanics.OneDimension.HarmonicOscillator.Examples.Q`**, a def, [line 34](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Examples.lean#L34).
 
 > A concrete harmonic oscillator with `m = 1`, `ω = 1`.
 
@@ -35,4 +35,4 @@ noncomputable def Q : HarmonicOscillator
 
 ## Sources
 
-- [Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Examples.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Examples.lean)
+- [Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Examples.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Examples.lean)

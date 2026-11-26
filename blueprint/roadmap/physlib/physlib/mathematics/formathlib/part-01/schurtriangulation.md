@@ -8,7 +8,7 @@ proof: formalized
 
 # Schur triangulation
 
-The module `Physlib.Mathematics.ForMathlib.SchurTriangulation`, [Physlib/Mathematics/ForMathlib/SchurTriangulation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean): 15 declarations (2 instances with no name), 13 with a docstring.
+The module `Physlib.Mathematics.ForMathlib.SchurTriangulation`, [Physlib/Mathematics/ForMathlib/SchurTriangulation.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean): 15 declarations (2 instances with no name), 13 with a docstring.
 
 > Schur triangulation is more commonly known as Schur decomposition or Schur triangularization, but
 > "triangulation" makes the API more readable. It states that a square matrix over an algebraically
@@ -23,7 +23,7 @@ The module `Physlib.Mathematics.ForMathlib.SchurTriangulation`, [Physlib/Mathema
 > - Some auxiliary definitions are not meant to be used directly, but
 > `LinearMap.SchurTriangulationAux.of` contains the main algorithm for the triangulation procedure.
 
-**`Fin.subNat'`**, a def, [line 33](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L33).
+**`Fin.subNat'`**, a def, [line 33](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L33).
 
 > `subNat' i h` subtracts `m` from `i`. This is an alternative form of `Fin.subNat`.
 
@@ -31,7 +31,7 @@ The module `Physlib.Mathematics.ForMathlib.SchurTriangulation`, [Physlib/Mathema
 def Fin.subNat' (i : Fin (m + n)) (h : ¬ i < m) : Fin n
 ```
 
-**`Equiv.sumEquivSigmalCond`**, a def, [line 39](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L39).
+**`Equiv.sumEquivSigmalCond`**, a def, [line 39](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L39).
 
 > An alternative form of `Equiv.sumEquivSigmaBool` where `Bool.casesOn` is replaced by `cond`.
 
@@ -39,7 +39,7 @@ def Fin.subNat' (i : Fin (m + n)) (h : ¬ i < m) : Fin n
 def sumEquivSigmalCond : Fin m ⊕ Fin n ≃ Σ b, cond b (Fin m) (Fin n)
 ```
 
-**`Equiv.finAddEquivSigmaCond`**, a def, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L47).
+**`Equiv.finAddEquivSigmaCond`**, a def, [line 47](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L47).
 
 > The composition of `finSumFinEquiv` and `Equiv.sumEquivSigmalCond` used by
 > `LinearMap.SchurTriangulationAux.of`.
@@ -48,19 +48,19 @@ def sumEquivSigmalCond : Fin m ⊕ Fin n ≃ Σ b, cond b (Fin m) (Fin n)
 def finAddEquivSigmaCond : Fin (m + n) ≃ Σ b, cond b (Fin m) (Fin n)
 ```
 
-**`Equiv.finAddEquivSigmaCond_true`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L52).
+**`Equiv.finAddEquivSigmaCond_true`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L52).
 
 ```lean
 lemma finAddEquivSigmaCond_true (h : i < m) : finAddEquivSigmaCond i = ⟨true, i, h⟩
 ```
 
-**`Equiv.finAddEquivSigmaCond_false`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L55).
+**`Equiv.finAddEquivSigmaCond_false`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L55).
 
 ```lean
 lemma finAddEquivSigmaCond_false (h : ¬ i < m) : finAddEquivSigmaCond i = ⟨false, i.subNat' h⟩
 ```
 
-**An instance with no name**, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L66).
+**An instance with no name**, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L66).
 
 > The type family parameterized by `Bool` is finite if each type variant is finite.
 
@@ -68,7 +68,7 @@ lemma finAddEquivSigmaCond_false (h : ¬ i < m) : finAddEquivSigmaCond i = ⟨fa
 instance [M : Fintype m] [N : Fintype n] (b : Bool) : Fintype (cond b m n)
 ```
 
-**An instance with no name**, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L70).
+**An instance with no name**, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L70).
 
 > The type family parameterized by `Bool` has decidable equality if each type variant is
 > decidable.
@@ -77,7 +77,7 @@ instance [M : Fintype m] [N : Fintype n] (b : Bool) : Fintype (cond b m n)
 instance [DecidableEq m] [DecidableEq n] : DecidableEq (Σ b, cond b m n)
 ```
 
-**`Matrix.UpperTriangular`**, an abbrev, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L80).
+**`Matrix.UpperTriangular`**, an abbrev, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L80).
 
 > The subtype of upper triangular matrices.
 
@@ -85,7 +85,7 @@ instance [DecidableEq m] [DecidableEq n] : DecidableEq (Σ b, cond b m n)
 abbrev UpperTriangular (n R) [LT n] [CommRing R]
 ```
 
-**`LinearMap.SchurTriangulationAux`**, a structure, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L93).
+**`LinearMap.SchurTriangulationAux`**, a structure, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L93).
 
 > **Don't use this definition directly.** Instead, use `Matrix.schurTriangulationBasis`,
 > `Matrix.schurTriangulationUnitary`, and `Matrix.schurTriangulation`. See also
@@ -130,7 +130,7 @@ structure SchurTriangulationAux (f : Module.End 𝕜 E) where
 > `Σ b, cond b (Fin m) (Fin n)` has to be used instead of the more natural `Fin m ⊕ Fin n` while their
 > equivalence is propositionally established by `Equiv.sumEquivSigmalCond`.
 
-**`LinearMap.SchurTriangulationAux.of`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L138).
+**`LinearMap.SchurTriangulationAux.of`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L138).
 
 > **Don't use this definition directly.** This is the key algorithm behind
 > `Matrix.schur_triangulation`.
@@ -141,7 +141,7 @@ protected noncomputable def SchurTriangulationAux.of
     SchurTriangulationAux f
 ```
 
-**`Matrix.schurTriangulationAux`**, a def, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L239).
+**`Matrix.schurTriangulationAux`**, a def, [line 239](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L239).
 
 > This is `LinearMap.SchurTriangulationAux` adapted for matrices in the
 > Euclidean space.
@@ -151,7 +151,7 @@ noncomputable def schurTriangulationAux :
     OrthonormalBasis n 𝕜 (EuclideanSpace 𝕜 n) × UpperTriangular n 𝕜
 ```
 
-**`Matrix.schurTriangulationBasis`**, a def, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L256).
+**`Matrix.schurTriangulationBasis`**, a def, [line 256](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L256).
 
 > The change of basis that induces the upper triangular form `A.schurTriangulation` of a matrix
 > `A` over an algebraically closed field.
@@ -160,7 +160,7 @@ noncomputable def schurTriangulationAux :
 noncomputable def schurTriangulationBasis : OrthonormalBasis n 𝕜 (EuclideanSpace 𝕜 n)
 ```
 
-**`Matrix.schurTriangulationUnitary`**, a def, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L261).
+**`Matrix.schurTriangulationUnitary`**, a def, [line 261](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L261).
 
 > The unitary matrix that induces the upper triangular form `A.schurTriangulation` to which a
 > matrix `A` over an algebraically closed field is unitarily similar.
@@ -169,7 +169,7 @@ noncomputable def schurTriangulationBasis : OrthonormalBasis n 𝕜 (EuclideanSp
 noncomputable def schurTriangulationUnitary : unitaryGroup n 𝕜
 ```
 
-**`Matrix.schurTriangulation`**, a def, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L267).
+**`Matrix.schurTriangulation`**, a def, [line 267](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L267).
 
 > The upper triangular form induced by `A.schurTriangulationUnitary` to which a matrix `A` over an
 > algebraically closed field is unitarily similar.
@@ -178,7 +178,7 @@ noncomputable def schurTriangulationUnitary : unitaryGroup n 𝕜
 noncomputable def schurTriangulation : UpperTriangular n 𝕜
 ```
 
-**`Matrix.schur_triangulation`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L273).
+**`Matrix.schur_triangulation`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean#L273).
 
 > **Schur triangulation**, **Schur decomposition** for matrices over an algebraically closed
 > field. In particular, a complex matrix can be converted to upper-triangular form by a change of
@@ -195,4 +195,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/ForMathlib/SchurTriangulation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean)
+- [Physlib/Mathematics/ForMathlib/SchurTriangulation.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SchurTriangulation.lean)

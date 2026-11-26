@@ -8,7 +8,7 @@ proof: formalized
 
 # Fourier–Stieltjes transform of measures on a Pontryagin dual
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Fourier.Pontryagin.Measure`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean): 7 declarations, 7 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Fourier.Pontryagin.Measure`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean): 7 declarations, 7 with a docstring.
 
 > Integrating character evaluations against a finite positive measure on the Pontryagin dual defines a
 > complex-valued function on the original additive group.
@@ -29,7 +29,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Fourier.Pontryagin.Measure
 
 ## A. Development
 
-**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean#L49).
+**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean#L49).
 
 > The Fourier–Stieltjes transform of a finite measure on the Pontryagin dual of an
 > additive group.
@@ -39,7 +39,7 @@ noncomputable def _root_.MeasureTheory.FiniteMeasure.pontryaginMeasureTransform
     (μ : FiniteMeasure (PontryaginDual (Multiplicative G))) (g : G) : ℂ
 ```
 
-**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_apply`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean#L54).
+**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_apply`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean#L54).
 
 > The transform evaluated at a group element is the integral of character evaluations.
 
@@ -50,7 +50,7 @@ lemma _root_.MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_apply
       ∫ χ, (χ (Multiplicative.ofAdd g) : ℂ) ∂μ.toMeasure
 ```
 
-**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_zero`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean#L63).
+**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_zero`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean#L63).
 
 > At the identity, the transform records the total mass of the measure.
 
@@ -60,7 +60,7 @@ lemma _root_.MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_zero
     μ.pontryaginMeasureTransform 0 = (μ.toMeasure.real Set.univ : ℂ)
 ```
 
-**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_zero_measure`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean#L70).
+**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_zero_measure`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean#L70).
 
 > The transform of the zero measure vanishes.
 
@@ -69,7 +69,7 @@ lemma _root_.MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_zero_measure
     (0 : FiniteMeasure (PontryaginDual (Multiplicative G))).pontryaginMeasureTransform = 0
 ```
 
-**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_smul`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean#L77).
+**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_smul`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean#L77).
 
 > The transform commutes with nonnegative scalar multiplication of finite measures.
 
@@ -79,7 +79,7 @@ lemma _root_.MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_smul
     (c • μ).pontryaginMeasureTransform = c • μ.pontryaginMeasureTransform
 ```
 
-**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_add`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean#L87).
+**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_add`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean#L87).
 
 > The transform commutes with addition of finite measures.
 
@@ -90,7 +90,7 @@ lemma _root_.MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_add
       μ.pontryaginMeasureTransform + ν.pontryaginMeasureTransform
 ```
 
-**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_dirac`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean#L101).
+**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_dirac`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean#L101).
 
 > The transform of a point mass is its character.
 
@@ -113,4 +113,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Measure.lean)

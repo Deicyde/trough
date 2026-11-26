@@ -8,7 +8,7 @@ proof: formalized
 
 # Integrating bounded functions against an effect-valued measure
 
-The module `PhyslibAlpha.ProbabilisticTheory.Measurement.BoundedIntegral`, [PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean): 40 declarations, 31 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Measurement.BoundedIntegral`, [PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean): 40 declarations, 31 with a docstring.
 
 > The integral of bounded measurable functions against an effect-valued measure.
 
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Measurement.BoundedIntegral`, [Phys
 
 ## A. The mesh approximation of a bounded measurable function
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.meshBound`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L65).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.meshBound`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L65).
 
 > The number of width-`1/(n+1)` mesh cells it takes to reach out to `M` on either side of `0`:
 > `⌈(n+1)*M⌉₊`. Only depends on `M` and `n`, not on any particular function.
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Measurement.BoundedIntegral`, [Phys
 noncomputable def meshBound (M : ℝ) (n : ℕ) : ℕ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.MeshIndex`**, an abbrev, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L69).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.MeshIndex`**, an abbrev, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L69).
 
 > The mesh cell label set at scale `n` covering `[-M, M]`: integers from `-meshBound M n` to
 > `meshBound M n`.
@@ -56,7 +56,7 @@ noncomputable def meshBound (M : ℝ) (n : ℕ) : ℕ
 abbrev MeshIndex (M : ℝ) (n : ℕ) : Type
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.meshWeight`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L73).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.meshWeight`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L73).
 
 > The weight of mesh cell `k` at scale `n`: `k/(n+1)`, the left endpoint of the cell.
 
@@ -64,7 +64,7 @@ abbrev MeshIndex (M : ℝ) (n : ℕ) : Type
 noncomputable def meshWeight (M : ℝ) (n : ℕ) (k : MeshIndex M n) : ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.meshPiece`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.meshPiece`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L77).
 
 > The mesh cell `k` at scale `n`, pulled back along `f`: the points where `f` rounds down to
 > `k/(n+1)` at that scale, i.e. `⌊(n+1)*f(x)⌋ = k`.
@@ -73,20 +73,20 @@ noncomputable def meshWeight (M : ℝ) (n : ℕ) (k : MeshIndex M n) : ℝ
 noncomputable def meshPiece (f : Ω → ℝ) (M : ℝ) (n : ℕ) (k : MeshIndex M n) : Set Ω
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.mem_meshPiece_iff`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L84).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.mem_meshPiece_iff`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L84).
 
 ```lean
 lemma mem_meshPiece_iff (n : ℕ) (k : MeshIndex M n) (x : Ω) :
     x ∈ meshPiece f M n k ↔ ⌊((n : ℝ) + 1) * f x⌋ = (k : ℤ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.measurableSet_meshPiece`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L90).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.measurableSet_meshPiece`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L90).
 
 ```lean
 lemma measurableSet_meshPiece (n : ℕ) (k : MeshIndex M n) : MeasurableSet (meshPiece f M n k)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.meshIndexOf`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L96).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.meshIndexOf`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L96).
 
 > The label the mesh assigns to the point `x`, together with the proof that it lies in range:
 > `⌊(n+1)*f(x)⌋` always lies in `[-meshBound M n, meshBound M n]` once `|f x| ≤ M`.
@@ -95,20 +95,20 @@ lemma measurableSet_meshPiece (n : ℕ) (k : MeshIndex M n) : MeasurableSet (mes
 noncomputable def meshIndexOf (n : ℕ) (x : Ω) : MeshIndex M n
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.meshIndexOf_coe`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L122).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.meshIndexOf_coe`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L122).
 
 ```lean
 lemma meshIndexOf_coe (n : ℕ) (x : Ω) :
     ((meshIndexOf hM n x : MeshIndex M n) : ℤ) = ⌊((n : ℝ) + 1) * f x⌋
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.mem_meshPiece_meshIndexOf`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L127).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.mem_meshPiece_meshIndexOf`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L127).
 
 ```lean
 lemma mem_meshPiece_meshIndexOf (n : ℕ) (x : Ω) : x ∈ meshPiece f M n (meshIndexOf hM n x)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.isPartition_meshPiece`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L131).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.isPartition_meshPiece`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L131).
 
 > The mesh pieces at scale `n` form a finite measurable partition of `Ω`.
 
@@ -116,7 +116,7 @@ lemma mem_meshPiece_meshIndexOf (n : ℕ) (x : Ω) : x ∈ meshPiece f M n (mesh
 lemma isPartition_meshPiece (n : ℕ) : IsPartition (meshPiece f M n)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleValue_meshWeight_meshPiece`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L145).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleValue_meshWeight_meshPiece`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L145).
 
 > The value of the mesh simple function at `x` is the label `f` is assigned, over `(n+1)`.
 
@@ -126,7 +126,7 @@ lemma simpleValue_meshWeight_meshPiece (n : ℕ) (x : Ω) :
       (⌊((n : ℝ) + 1) * f x⌋ : ℝ) / ((n : ℝ) + 1)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.abs_simpleValue_meshWeight_meshPiece_sub_le`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L155).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.abs_simpleValue_meshWeight_meshPiece_sub_le`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L155).
 
 > **Uniform convergence of the mesh approximation.** At scale `n`, the mesh simple function
 > never differs from `f` by more than the mesh width `1/(n+1)`, at any point.
@@ -138,7 +138,7 @@ lemma abs_simpleValue_meshWeight_meshPiece_sub_le (n : ℕ) (x : Ω) :
 
 ## B. Linear operations on simple values
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleValue_add`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L179).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleValue_add`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L179).
 
 > `simpleValue` is additive in the weights, pointwise.
 
@@ -147,7 +147,7 @@ lemma simpleValue_add (a b : ι → ℝ) (s : ι → Set Ω) (x : Ω) :
     simpleValue (a + b) s x = simpleValue a s x + simpleValue b s x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleValue_smul`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L187).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleValue_smul`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L187).
 
 > `simpleValue` is homogeneous in the weights, pointwise.
 
@@ -163,7 +163,7 @@ lemma simpleValue_smul (r : ℝ) (c : ι → ℝ) (s : ι → Set Ω) (x : Ω) :
 > partitions) both stay within `ε`, resp. `ε'`, of the same `f` everywhere, their integrals against
 > `μ` stay within `ε + ε'` of each other, in the order-unit norm.
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.isPartition_inter`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L211).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.isPartition_inter`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L211).
 
 > The pairwise intersections of two partitions again form a partition, indexed by the product of
 > their labels.
@@ -174,7 +174,7 @@ lemma isPartition_inter {ι ι' : Type*} [Fintype ι] [Fintype ι'] {s : ι → 
     IsPartition (fun p : ι × ι' => s p.1 ∩ s' p.2)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleValue_eq_simpleValue_inter_fst`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L232).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleValue_eq_simpleValue_inter_fst`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L232).
 
 ```lean
 lemma simpleValue_eq_simpleValue_inter_fst {ι ι' : Type*} [Fintype ι] [Fintype ι']
@@ -183,7 +183,7 @@ lemma simpleValue_eq_simpleValue_inter_fst {ι ι' : Type*} [Fintype ι] [Fintyp
     simpleValue c s x = simpleValue (fun p : ι × ι' => c p.1) (fun p => s p.1 ∩ s' p.2) x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleValue_eq_simpleValue_inter_snd`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L244).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleValue_eq_simpleValue_inter_snd`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L244).
 
 ```lean
 lemma simpleValue_eq_simpleValue_inter_snd {ι ι' : Type*} [Fintype ι] [Fintype ι']
@@ -192,7 +192,7 @@ lemma simpleValue_eq_simpleValue_inter_snd {ι ι' : Type*} [Fintype ι] [Fintyp
     simpleValue c' s' x = simpleValue (fun p : ι × ι' => c' p.2) (fun p => s p.1 ∩ s' p.2) x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleValue_add_inter`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L259).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleValue_add_inter`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L259).
 
 > The pointwise sum of two simple functions, over possibly different partitions, is the simple
 > function of their common refinement with pointwise-summed weights. Used to build an admissible
@@ -205,7 +205,7 @@ lemma simpleValue_add_inter {ι ι' : Type*} [Fintype ι] [Fintype ι'] {a : ι 
       simpleValue (fun p : ι × ι' => a p.1 + b p.2) (fun p => s p.1 ∩ s' p.2) x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_eq_simpleIntegral_inter_fst`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L267).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_eq_simpleIntegral_inter_fst`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L267).
 
 ```lean
 lemma simpleIntegral_eq_simpleIntegral_inter_fst {ι ι' : Type*} [Fintype ι] [Fintype ι']
@@ -216,7 +216,7 @@ lemma simpleIntegral_eq_simpleIntegral_inter_fst {ι ι' : Type*} [Fintype ι] [
         (isPartition_inter hs hs')
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_eq_simpleIntegral_inter_snd`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L276).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_eq_simpleIntegral_inter_snd`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L276).
 
 ```lean
 lemma simpleIntegral_eq_simpleIntegral_inter_snd {ι ι' : Type*} [Fintype ι] [Fintype ι']
@@ -227,7 +227,7 @@ lemma simpleIntegral_eq_simpleIntegral_inter_snd {ι ι' : Type*} [Fintype ι] [
         (isPartition_inter hs hs')
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_sub_simpleIntegral`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L288).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_sub_simpleIntegral`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L288).
 
 > The difference of two simple integrals, over possibly different partitions, is itself a simple
 > integral over their common refinement, with weights the pointwise difference of the two original
@@ -242,7 +242,7 @@ lemma simpleIntegral_sub_simpleIntegral {ι ι' : Type*} [Fintype ι] [Fintype �
         (isPartition_inter hs hs')
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_add_simpleIntegral`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L305).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_add_simpleIntegral`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L305).
 
 > The sum of two simple integrals, over possibly different partitions, is itself a simple
 > integral over their common refinement, with weights the pointwise sum of the two original
@@ -258,7 +258,7 @@ lemma simpleIntegral_add_simpleIntegral {ι ι' : Type*} [Fintype ι] [Fintype �
         (isPartition_inter hs hs')
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.sum_apply_eq_one`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L316).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.sum_apply_eq_one`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L316).
 
 > The total measure of a partition is the certain outcome.
 
@@ -268,7 +268,7 @@ lemma sum_apply_eq_one {ι : Type*} [Fintype ι] [DecidableEq ι] (μ : EffectVa
     ∑ i, (μ (s i) (hs.measurable i) : E) = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.orderUnitNorm_simpleIntegral_le`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L326).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.orderUnitNorm_simpleIntegral_le`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L326).
 
 > A simple integral whose weights are bounded by `δ`, on every piece the underlying measure sees
 > (i.e. every nonempty piece), has order-unit norm at most `δ`: every term is sandwiched between
@@ -281,7 +281,7 @@ lemma orderUnitNorm_simpleIntegral_le {ι : Type*} [Fintype ι] [DecidableEq ι]
     orderUnitNorm (simpleIntegral μ c s hs) ≤ δ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_nonneg'`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L363).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_nonneg'`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L363).
 
 > A simple integral is nonnegative as soon as its weights are nonnegative on every piece the
 > underlying measure sees (i.e. every nonempty piece) — the same "only nonempty pieces matter"
@@ -293,7 +293,7 @@ lemma simpleIntegral_nonneg' {ι : Type*} [Fintype ι] (μ : EffectValuedMeasure
     0 ≤ simpleIntegral μ c s hs
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.orderUnitNorm_simpleIntegral_sub_le`**, a lemma, [line 378](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L378).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.orderUnitNorm_simpleIntegral_sub_le`**, a lemma, [line 378](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L378).
 
 > **The key comparison lemma.** Two simple functions that both stay within `ε`, resp. `ε'`, of
 > the same bounded function `f` everywhere give integrals against `μ` that are within `ε + ε'` of
@@ -309,7 +309,7 @@ lemma orderUnitNorm_simpleIntegral_sub_le {ι ι' : Type*} [Fintype ι] [Fintype
     orderUnitNorm (simpleIntegral μ c s hs - simpleIntegral μ c' s' hs') ≤ ε + ε'
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.le_smul_one_of_orderUnitNorm_lt`**, a lemma, [line 404](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L404).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.le_smul_one_of_orderUnitNorm_lt`**, a lemma, [line 404](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L404).
 
 > Any real strictly above the order-unit norm of `y` is itself an order-unit bound of `y`: since
 > `orderUnitBounds y` is an up-set with infimum `orderUnitNorm y`, anything strictly past that
@@ -326,7 +326,7 @@ lemma le_smul_one_of_orderUnitNorm_lt {y : E} {r : ℝ} (h : orderUnitNorm y < r
 > The order-unit norm makes `E` a normed group, assumed complete. Most order-unit spaces are not
 > complete.
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.instNormedAddCommGroup`**, an instance, [line 425](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L425).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.instNormedAddCommGroup`**, an instance, [line 425](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L425).
 
 > The order-unit norm supplies the ambient normed additive-group structure for this section.
 
@@ -334,7 +334,7 @@ lemma le_smul_one_of_orderUnitNorm_lt {y : E} {r : ℝ} (h : orderUnitNorm y < r
 noncomputable local instance instNormedAddCommGroup : NormedAddCommGroup E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.instCompleteSpace`**, an instance, [line 432](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L432).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.instCompleteSpace`**, an instance, [line 432](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L432).
 
 > Completeness of the order-unit-norm copy, read on `E` itself.
 
@@ -342,13 +342,13 @@ noncomputable local instance instNormedAddCommGroup : NormedAddCommGroup E
 local instance instCompleteSpace : CompleteSpace E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.dist_eq_orderUnitNorm`**, a lemma, [line 435](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L435).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.dist_eq_orderUnitNorm`**, a lemma, [line 435](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L435).
 
 ```lean
 lemma dist_eq_orderUnitNorm (x y : E) : dist x y = orderUnitNorm (x - y)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.tendsto_const_smul_of_tendsto`**, a lemma, [line 442](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L442).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.tendsto_const_smul_of_tendsto`**, a lemma, [line 442](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L442).
 
 > Scalar multiplication by a fixed real is continuous, established by hand from
 > `orderUnitNorm_smul_le` since no `NormedSpace ℝ E` instance is assumed at this generality.
@@ -358,7 +358,7 @@ lemma tendsto_const_smul_of_tendsto {a : ℕ → E} {L : E} (c : ℝ)
     (ha : Filter.Tendsto a atTop (𝓝 L)) : Filter.Tendsto (fun n => c • a n) atTop (𝓝 (c • L))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.cauchySeq_meshSimpleIntegral`**, a lemma, [line 459](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L459).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.cauchySeq_meshSimpleIntegral`**, a lemma, [line 459](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L459).
 
 > **The mesh approximation is Cauchy.** Refining the mesh from scale `n` to scale `m`, both past
 > `N`, moves the simple integral by at most `2/(N+1)` in the order-unit norm — the sum of the two
@@ -370,7 +370,7 @@ lemma cauchySeq_meshSimpleIntegral (μ : EffectValuedMeasure Ω E) :
       (isPartition_meshPiece hf hM n))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.integral`**, a def, [line 489](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L489).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.integral`**, a def, [line 489](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L489).
 
 > **The integral of a bounded measurable function against `μ`.** The limit of the mesh
 > approximation's simple integrals, which exists by completeness of `E` since the sequence is
@@ -380,7 +380,7 @@ lemma cauchySeq_meshSimpleIntegral (μ : EffectValuedMeasure Ω E) :
 noncomputable def integral (μ : EffectValuedMeasure Ω E) : E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.integral_tendsto`**, a lemma, [line 494](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L494).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.integral_tendsto`**, a lemma, [line 494](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L494).
 
 > The mesh approximation's simple integrals converge to `integral hf hM μ`, by construction.
 
@@ -390,7 +390,7 @@ lemma integral_tendsto (μ : EffectValuedMeasure Ω E) :
       (isPartition_meshPiece hf hM n)) atTop (𝓝 (integral hf hM μ))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.tendsto_of_uniformly_approximating`**, a lemma, [line 502](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L502).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.tendsto_of_uniformly_approximating`**, a lemma, [line 502](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L502).
 
 > **The integral does not depend on the approximation.** For every sequence of simple functions
 > converging uniformly to `f`, their integrals converge to the integral of `f`.
@@ -403,7 +403,7 @@ lemma tendsto_of_uniformly_approximating (μ : EffectValuedMeasure Ω E) {ι : �
     Tendsto (fun n => simpleIntegral μ (c n) (s n) (hs n)) atTop (𝓝 (integral hf hM μ))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.integral_indep_of_bound`**, a lemma, [line 524](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L524).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.integral_indep_of_bound`**, a lemma, [line 524](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L524).
 
 > **Independence from the choice of bound.** `integral` doesn't depend on which valid bound `M`
 > was used to build it: swapping in another bound `M'` only changes the *range* of mesh cells, not
@@ -415,7 +415,7 @@ lemma integral_indep_of_bound {M' : ℝ} (hM' : ∀ x, |f x| ≤ M') (μ : Effec
     integral hf hM μ = integral hf hM' μ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.integral_eq_simpleIntegral`**, a lemma, [line 538](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L538).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.integral_eq_simpleIntegral`**, a lemma, [line 538](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L538).
 
 > **Consistency with the simple case.** When `f` already *is* a simple function against some
 > partition, `integral` agrees with `simpleIntegral` on it — the general construction extends the
@@ -429,7 +429,7 @@ lemma integral_eq_simpleIntegral {ι : Type*} [Fintype ι] [DecidableEq ι] {c :
     (μ : EffectValuedMeasure Ω E) : integral hf hM μ = simpleIntegral μ c s hs
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.nonneg_integral`**, a lemma, [line 553](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L553).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.nonneg_integral`**, a lemma, [line 553](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L553).
 
 > **Positivity.** A nonnegative `f` integrates to a nonnegative value: every mesh approximation
 > of a nonnegative `f` has nonnegative weight on every piece it actually sees (a piece labelled `k`
@@ -443,7 +443,7 @@ lemma nonneg_integral (hf0 : ∀ x, 0 ≤ f x) (μ : EffectValuedMeasure Ω E) :
     0 ≤ integral hf hM μ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.integral_add`**, a lemma, [line 594](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L594).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.integral_add`**, a lemma, [line 594](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L594).
 
 > **Additivity.** `integral (f + g) = integral f + integral g`, built by combining the two
 > canonical mesh sequences into one admissible sequence for `f + g` (pieces the pairwise
@@ -459,7 +459,7 @@ lemma integral_add {g : Ω → ℝ} (hg : Measurable g) {M' : ℝ} (hM' : ∀ x,
     integral hfg hMfg μ = integral hf hM μ + integral hg hM' μ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.integral_smul`**, a lemma, [line 646](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L646).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.integral_smul`**, a lemma, [line 646](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean#L646).
 
 > **Homogeneity.** `integral (c • f) = c • integral f`, built from the canonical mesh sequence
 > for `f` with weights rescaled by `c` (same partition, so `simpleIntegral_smul` gives the exact
@@ -479,4 +479,4 @@ lemma integral_smul (c : ℝ) {hcf : Measurable (c • f)} {hMcf : ∀ x, |(c �
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean)

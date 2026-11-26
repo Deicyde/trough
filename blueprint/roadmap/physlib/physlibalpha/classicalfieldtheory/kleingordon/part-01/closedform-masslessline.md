@@ -8,7 +8,7 @@ proof: formalized
 
 # The retarded solution of the wave equation in one space dimension
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MasslessLine`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessLine.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessLine.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MasslessLine`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessLine.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessLine.lean): 3 declarations, 3 with a docstring.
 
 > The massless retarded solution in one space dimension is one half of the integral of the source
 > over the backward light cone.
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MasslessLin
 > - `solution_zero_mass_line` : the massless retarded solution on the line is one half of the
 >   integral of the source over the backward light cone.
 
-**`KleinGordon.multiplier_zero_eq`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessLine.lean#L69).
+**`KleinGordon.multiplier_zero_eq`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessLine.lean#L69).
 
 > The massless multiplier on the line is the average of cosines over `[-r, r]`.
 
@@ -56,7 +56,7 @@ lemma multiplier_zero_eq (r : ℝ) (ξ : ℝ) :
     multiplier r 0 ξ = ((1 / 2 * ∫ u in (-r)..r, Real.cos (2 * Real.pi * ξ * u) : ℝ) : ℂ)
 ```
 
-**`KleinGordon.sineEvolution_zero_mass_apply`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessLine.lean#L102).
+**`KleinGordon.sineEvolution_zero_mass_apply`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessLine.lean#L102).
 
 > **The massless sine evolution on the line.** The sine evolution at the origin of the
 > mass is the average of the data over the interval of radius `r`.
@@ -66,7 +66,7 @@ lemma sineEvolution_zero_mass_apply {r : ℝ} (hr : 0 ≤ r) (g : 𝓢(ℝ, ℂ)
     sineEvolution ℂ r 0 g x = 1 / 2 * ∫ y in (x - r)..(x + r), g y
 ```
 
-**`KleinGordon.solution_zero_mass_line`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessLine.lean#L200).
+**`KleinGordon.solution_zero_mass_line`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessLine.lean#L200).
 
 > **The retarded solution of the wave equation on the line.** The massless retarded solution
 > at `(t, x)` is one half of the integral of the source over the backward light cone. This is the
@@ -88,4 +88,4 @@ lemma solution_zero_mass_line (ψ : TestFunction (⊤ : Opens (ℝ × ℝ)) ℂ 
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessLine.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessLine.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessLine.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessLine.lean)

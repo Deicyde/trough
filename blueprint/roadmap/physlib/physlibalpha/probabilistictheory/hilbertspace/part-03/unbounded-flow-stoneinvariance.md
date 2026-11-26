@@ -8,7 +8,7 @@ proof: formalized
 
 # The unitary group preserves the domain of its generator (StoneInvariance)
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Flow.StoneInvariance`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneInvariance.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneInvariance.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Flow.StoneInvariance`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneInvariance.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneInvariance.lean): 3 declarations, 3 with a docstring.
 
 > The unitary group exp(i t T) preserves the domain of T and commutes with T.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Flow.StoneIn
 
 ## A. Invariance of the domain
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_translate_comm`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneInvariance.lean#L66).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_translate_comm`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneInvariance.lean#L66).
 
 > The group law: `D.expUnitaryGroup t (D.expUnitaryGroup s x) = D.expUnitaryGroup (t + s) x`,
 > via `expUnitaryGroup_add` and the (definitional) fact that `WOT`-multiplication is composition.
@@ -38,7 +38,7 @@ lemma expUnitaryGroup_translate_comm (x : H) (s t : ℝ) :
     D.expUnitaryGroup t (D.expUnitaryGroup s x) = D.expUnitaryGroup (t + s) x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_translate_mem`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneInvariance.lean#L73).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_translate_mem`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneInvariance.lean#L73).
 
 > `exp(i s T)` preserves the domain of `T`: the orbit of `exp(i s T) x` is the orbit of `x`
 > shifted by `s`, so it is differentiable at `0`.
@@ -50,7 +50,7 @@ lemma expUnitaryGroup_translate_mem (x : T.domain) (s : ℝ) :
 
 ## B. Commutation with the generator
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_translate`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneInvariance.lean#L98).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_translate`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneInvariance.lean#L98).
 
 > `T` commutes with `D.expUnitaryGroup s` on `T.domain`: for `x ∈ T.domain`,
 > `D.expUnitaryGroup s x ∈ T.domain` and `T (D.expUnitaryGroup s x) = D.expUnitaryGroup s (T x)`.
@@ -71,4 +71,4 @@ lemma expUnitaryGroup_translate (x : T.domain) (s : ℝ) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneInvariance.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneInvariance.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneInvariance.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneInvariance.lean)

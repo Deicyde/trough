@@ -8,7 +8,7 @@ proof: formalized
 
 # The Fourier transform under a linear change of variables
 
-The module `PhyslibAlpha.Mathematics.Fourier.LinearChange`, [PhyslibAlpha/Mathematics/Fourier/LinearChange.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean): 9 declarations, 6 with a docstring.
+The module `PhyslibAlpha.Mathematics.Fourier.LinearChange`, [PhyslibAlpha/Mathematics/Fourier/LinearChange.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean): 9 declarations, 6 with a docstring.
 
 > Composition with the inverse transpose of a linear equivalence turns into evaluation of the
 > transform at the image point.
@@ -49,7 +49,7 @@ The module `PhyslibAlpha.Mathematics.Fourier.LinearChange`, [PhyslibAlpha/Mathem
 
 > - `Fourier.fourier_comp_add_right` : the transform of a translate.
 
-**`Fourier.det_adjoint`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L76).
+**`Fourier.det_adjoint`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L76).
 
 > The determinant of the adjoint.
 
@@ -57,7 +57,7 @@ The module `PhyslibAlpha.Mathematics.Fourier.LinearChange`, [PhyslibAlpha/Mathem
 lemma det_adjoint (f : V →ₗ[ℝ] V) : LinearMap.det (LinearMap.adjoint f) = LinearMap.det f
 ```
 
-**`Fourier.invTranspose`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L83).
+**`Fourier.invTranspose`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L83).
 
 > The inverse transpose of a linear equivalence for the inner product.
 
@@ -65,28 +65,28 @@ lemma det_adjoint (f : V →ₗ[ℝ] V) : LinearMap.det (LinearMap.adjoint f) = 
 def invTranspose (L : V ≃L[ℝ] V) : V ≃L[ℝ] V
 ```
 
-**`Fourier.invTranspose_symm_apply`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L89).
+**`Fourier.invTranspose_symm_apply`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L89).
 
 ```lean
 lemma invTranspose_symm_apply (L : V ≃L[ℝ] V) (x : V) :
     (invTranspose L).symm x = LinearMap.adjoint L.toLinearMap x
 ```
 
-**`Fourier.inner_invTranspose_symm`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L93).
+**`Fourier.inner_invTranspose_symm`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L93).
 
 ```lean
 lemma inner_invTranspose_symm (L : V ≃L[ℝ] V) (x y : V) :
     inner ℝ ((invTranspose L).symm x) y = inner ℝ x (L y)
 ```
 
-**`Fourier.abs_det_invTranspose`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L99).
+**`Fourier.abs_det_invTranspose`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L99).
 
 ```lean
 lemma abs_det_invTranspose (L : V ≃L[ℝ] V) :
     |LinearMap.det (invTranspose L : V →ₗ[ℝ] V)| = |LinearMap.det (L : V →ₗ[ℝ] V)|⁻¹
 ```
 
-**`Fourier.fourier_comp_invTranspose`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L111).
+**`Fourier.fourier_comp_invTranspose`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L111).
 
 > **Fourier transform and a linear change of variables.** Composition with the inverse
 > transpose of `L` turns into evaluation at `L ξ` and the factor `|det L|`.
@@ -96,7 +96,7 @@ lemma fourier_comp_invTranspose (L : V ≃L[ℝ] V) (f : V → E) (ξ : V) :
     𝓕 (f ∘ invTranspose L) ξ = |LinearMap.det (L : V →ₗ[ℝ] V)| • 𝓕 f (L ξ)
 ```
 
-**`Fourier.fourier_eq_complex`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L139).
+**`Fourier.fourier_eq_complex`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L139).
 
 > The Fourier transform of a complex valued function is the explicit integral.
 
@@ -106,7 +106,7 @@ lemma fourier_eq_complex {V : Type*} [NormedAddCommGroup V] [InnerProductSpace �
     𝓕 f ξ = ∫ x, (𝐞 (-inner ℝ x ξ) : ℂ) • f x
 ```
 
-**`Fourier.fourier_comp_isometry`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L151).
+**`Fourier.fourier_comp_isometry`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L151).
 
 > The Fourier transform commutes with linear isometries.
 
@@ -115,7 +115,7 @@ lemma fourier_comp_isometry (A : V ≃ₗᵢ[ℝ] W) (f : W → ℂ) (ξ : V) :
     𝓕 (f ∘ A) ξ = 𝓕 f (A ξ)
 ```
 
-**`Fourier.fourier_comp_add_right`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L165).
+**`Fourier.fourier_comp_add_right`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean#L165).
 
 > The Fourier transform turns translation into a phase.
 
@@ -130,4 +130,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Fourier/LinearChange.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean)
+- [PhyslibAlpha/Mathematics/Fourier/LinearChange.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/LinearChange.lean)

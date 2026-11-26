@@ -8,9 +8,9 @@ proof: formalized
 
 # Unit for complex Lorentz vectors (RealTensor/Units/Pre)
 
-The module `Physlib.Relativity.Tensors.RealTensor.Units.Pre`, [Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean): 12 declarations, 8 with a docstring.
+The module `Physlib.Relativity.Tensors.RealTensor.Units.Pre`, [Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean): 12 declarations, 8 with a docstring.
 
-**`Lorentz.CoMod.unitVal`**, a def, [line 24](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L24).
+**`Lorentz.CoMod.unitVal`**, a def, [line 24](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L24).
 
 > The contra-co unit for complex lorentz vectors. Usually denoted `δⁱᵢ`.
 
@@ -18,7 +18,7 @@ The module `Physlib.Relativity.Tensors.RealTensor.Units.Pre`, [Physlib/Relativit
 def CoMod.unitVal (d : ℕ := 3) : ContrMod d ⊗[ℝ] CoMod d
 ```
 
-**`Lorentz.CoMod.unitVal_expand_tmul`**, a lemma, [line 28](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L28).
+**`Lorentz.CoMod.unitVal_expand_tmul`**, a lemma, [line 28](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L28).
 
 > Expansion of `CoMod.unitVal` into basis.
 
@@ -27,7 +27,7 @@ lemma CoMod.unitVal_expand_tmul {d : ℕ} : CoMod.unitVal d =
     ∑ i, contrBasis d i ⊗ₜ[ℝ] coBasis d i
 ```
 
-**`Lorentz.CoMod.unit`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L49).
+**`Lorentz.CoMod.unit`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L49).
 
 > The contra-co unit for complex lorentz vectors as a morphism
 > `𝟙_ (Rep ℂ SL(2,ℂ)) ⟶ complexContr ⊗ complexCo`, manifesting the invariance under
@@ -39,13 +39,13 @@ def CoMod.unit (d : ℕ := 3) :
     ((ContrMod.rep).tprod (CoMod.rep))
 ```
 
-**`Lorentz.CoMod.unit_apply_one`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L70).
+**`Lorentz.CoMod.unit_apply_one`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L70).
 
 ```lean
 lemma CoMod.unit_apply_one {d : ℕ} : (CoMod.unit d) (1 : ℝ) = CoMod.unitVal d
 ```
 
-**`Lorentz.ContrMod.unitVal`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L75).
+**`Lorentz.ContrMod.unitVal`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L75).
 
 > The co-contra unit for complex lorentz vectors. Usually denoted `δᵢⁱ`.
 
@@ -53,7 +53,7 @@ lemma CoMod.unit_apply_one {d : ℕ} : (CoMod.unit d) (1 : ℝ) = CoMod.unitVal 
 def ContrMod.unitVal (d : ℕ := 3) : CoMod d ⊗[ℝ] ContrMod d
 ```
 
-**`Lorentz.ContrMod.unitVal_expand_tmul`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L79).
+**`Lorentz.ContrMod.unitVal_expand_tmul`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L79).
 
 > Expansion of `ContrMod.unitVal` into basis.
 
@@ -62,7 +62,7 @@ lemma ContrMod.unitVal_expand_tmul {d : ℕ} : ContrMod.unitVal d =
     ∑ i, coBasis d i ⊗ₜ[ℝ] contrBasis d i
 ```
 
-**`Lorentz.ContrMod.unit`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L100).
+**`Lorentz.ContrMod.unit`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L100).
 
 > The co-contra unit for complex lorentz vectors as a morphism
 > `𝟙_ (Rep ℝ (LorentzGroup d)) ⟶ CoMod.rep ⊗ ContrMod.rep`, manifesting the invariance under
@@ -73,7 +73,7 @@ def ContrMod.unit (d : ℕ) : (Representation.trivial ℝ (LorentzGroup d) ℝ).
     ((CoMod.rep).tprod (ContrMod.rep))
 ```
 
-**`Lorentz.ContrMod.unit_apply_one`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L122).
+**`Lorentz.ContrMod.unit_apply_one`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L122).
 
 ```lean
 lemma ContrMod.unit_apply_one {d : ℕ} : (ContrMod.unit d) (1 : ℝ) = ContrMod.unitVal d
@@ -81,7 +81,7 @@ lemma ContrMod.unit_apply_one {d : ℕ} : (ContrMod.unit d) (1 : ℝ) = ContrMod
 
 ## Contraction of the units
 
-**`Lorentz.CoMod.contr_unit`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L133).
+**`Lorentz.CoMod.contr_unit`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L133).
 
 > Contraction on the right with `CoMod.unit` does nothing.
 
@@ -93,7 +93,7 @@ lemma CoMod.contr_unit {d : ℕ} (x : CoMod d) :
     x ⊗ₜ[ℝ] (CoMod.unit d (1 : ℝ))) = x
 ```
 
-**`Lorentz.ContrMod.contr_unit`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L167).
+**`Lorentz.ContrMod.contr_unit`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L167).
 
 > Contraction on the right with `ContrMod.unit` does nothing.
 
@@ -107,7 +107,7 @@ lemma ContrMod.contr_unit {d : ℕ} (x : ContrMod d) :
 
 ## Symmetry properties of the units
 
-**`Lorentz.CoMod.unit_symm`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L207).
+**`Lorentz.CoMod.unit_symm`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L207).
 
 ```lean
 lemma CoMod.unit_symm {d : ℕ} :
@@ -115,7 +115,7 @@ lemma CoMod.unit_symm {d : ℕ} :
       (TensorProduct.comm ℝ _ _ ((ContrMod.unit d) (1 : ℝ)))
 ```
 
-**`Lorentz.ContrMod.unit_symm`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L214).
+**`Lorentz.ContrMod.unit_symm`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean#L214).
 
 ```lean
 lemma ContrMod.unit_symm {d : ℕ} :
@@ -130,4 +130,4 @@ lemma ContrMod.unit_symm {d : ℕ} :
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean)
+- [Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean)

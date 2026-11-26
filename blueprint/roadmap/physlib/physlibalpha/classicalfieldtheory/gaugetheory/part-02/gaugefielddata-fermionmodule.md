@@ -1,37 +1,38 @@
 ---
 declaration: module
 origin: cited
-lean: GaugeFieldData.FermionModule, GaugeFieldData.projFermionValue, GaugeFieldData.inclFermionValue, GaugeFieldData.projFermionValue_apply, GaugeFieldData.projFermionValue_inclFermionValue_self, GaugeFieldData.projFermionValue_inclFermionValue_of_ne, GaugeFieldData.sum_inclFermionValue_proj, GaugeFieldData.fermionModule_hom_ext
+lean: GaugeFieldData.FermionModule, GaugeFieldData.projFermionValue, GaugeFieldData.inclFermionValue, GaugeFieldData.sum_inclFermionValue_proj, GaugeFieldData.finrank_fermionModule
 statement: formalized
 proof: formalized
 ---
 
 # The fermionic module of a gauge theory
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.FermionModule`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean): 9 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.FermionModule`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean): 5 declarations, 5 with a docstring.
+
+> The value space of all the fermionic species of a gauge theory at once.
 
 ## i. Overview
 
-> A `GaugeFieldData jets` records its fermions species by species, each with its own value
+> A `GaugeFieldData G` records its fermions species by species, each with its own value
 > space `(T.fermion i).V`. This file assembles those into a single complex vector space, the
-> **fermionic module**
+> fermionic module
 >
 > `T.FermionModule = ∀ i, (T.fermion i).V`,
 >
 > in which one value of the whole fermionic content of the theory lives at once. For the
-> Standard Model this is the sixteen-complex-dimensional space (fifteen Weyl components in
-> each of three generations, with the doublets counted with their gauge multiplicity) that a
-> physicist writes as the column of all the fermion fields.
+> Standard Model this is the space that a physicist writes as the column of all the fermion
+> fields.
 >
 > It is the *value* space, not a space of component functions, and so it is not the
-> `FermionGenerators` of `GaugeFieldData.Basic`: the latter is a direct sum of component
-> spaces `JetComponentSpace`, one per species, and is infinite-dimensional because it
+> `GaugeFieldData.FermionGenerators` of the sibling file. The latter is a direct sum of component
+> spaces `FieldDerivSpace`, one per species, and is infinite-dimensional because it
 > carries a derivative label of every order. The fermionic module is finite-dimensional,
 > with dimension the sum of the dimensions of the species, and it is the space on which
 > `GaugeFieldData.fermionMatterField` puts the Lorentz, gauge and mass-weight structure of a
 > single matter field.
 >
-> The species type is finite, so the product is also a direct sum: a fermionic
+> The species type is finite, so the product is also a direct sum. A fermionic
 > configuration is the sum of its species components, `sum_inclFermionValue_proj` below, and
 > the two descriptions of the module agree.
 
@@ -51,11 +52,11 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.Fermion
 
 ## A. The fermionic module
 
-**`GaugeFieldData.FermionModule`**, an abbrev, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean#L81).
+**`GaugeFieldData.FermionModule`**, an abbrev, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean#L80).
 
-> **The fermionic module of a gauge theory**: the product, over the fermionic species,
-> of their value spaces. One element of it is a value of the entire fermionic content of
-> the theory — the column of all the fermion fields — as opposed to
+> The fermionic module of a gauge theory, the product over the fermionic species of their
+> value spaces. One element of it is a value of the entire fermionic content of the theory, the
+> column of all the fermion fields. This is as opposed to
 > `GaugeFieldData.FermionGenerators`, which is a space of component *functions* and is
 > infinite-dimensional. Since the species type is finite the product is also their direct
 > sum.
@@ -66,7 +67,7 @@ abbrev FermionModule : Type
 
 ### A.1. The species projections and inclusions
 
-**`GaugeFieldData.projFermionValue`**, an abbrev, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean#L90).
+**`GaugeFieldData.projFermionValue`**, an abbrev, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean#L89).
 
 > The component of a fermionic configuration in one species.
 
@@ -75,7 +76,7 @@ abbrev projFermionValue (i : T.FermionSpecies) :
     T.FermionModule →ₗ[ℂ] T.FermionValue i
 ```
 
-**`GaugeFieldData.inclFermionValue`**, an abbrev, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean#L96).
+**`GaugeFieldData.inclFermionValue`**, an abbrev, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean#L95).
 
 > The inclusion of one fermionic species into the fermionic module, extending a value
 > of that species by zero in every other.
@@ -85,33 +86,9 @@ abbrev inclFermionValue (i : T.FermionSpecies) :
     T.FermionValue i →ₗ[ℂ] T.FermionModule
 ```
 
-**`GaugeFieldData.projFermionValue_apply`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean#L103).
+**`GaugeFieldData.sum_inclFermionValue_proj`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean#L104).
 
-```lean
-lemma projFermionValue_apply (i : T.FermionSpecies) (v : T.FermionModule) :
-    T.projFermionValue i v = v i
-```
-
-**`GaugeFieldData.projFermionValue_inclFermionValue_self`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean#L106).
-
-```lean
-lemma projFermionValue_inclFermionValue_self (i : T.FermionSpecies)
-    (v : T.FermionValue i) : T.projFermionValue i (T.inclFermionValue i v) = v
-```
-
-**`GaugeFieldData.projFermionValue_inclFermionValue_of_ne`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean#L112).
-
-> A value of one species has no component in any other species: the inclusions of
-> distinct species have disjoint supports.
-
-```lean
-lemma projFermionValue_inclFermionValue_of_ne {i j : T.FermionSpecies} (h : i ≠ j)
-    (v : T.FermionValue j) : T.projFermionValue i (T.inclFermionValue j v) = 0
-```
-
-**`GaugeFieldData.sum_inclFermionValue_proj`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean#L119).
-
-> **A fermionic configuration is the sum of its species components**. The product over
+> A fermionic configuration is the sum of its species components. The product over
 > the species is their direct sum, the species type being finite, so nothing is lost in
 > describing the fermionic content of the theory by one module.
 
@@ -120,22 +97,12 @@ lemma sum_inclFermionValue_proj (v : T.FermionModule) :
     ∑ i, T.inclFermionValue i (v i) = v
 ```
 
-**`GaugeFieldData.fermionModule_hom_ext`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean#L124).
-
-> Two linear maps out of the fermionic module agreeing on every species are equal.
-
-```lean
-lemma fermionModule_hom_ext {N : Type} [AddCommGroup N] [Module ℂ N]
-    {F F' : T.FermionModule →ₗ[ℂ] N}
-    (h : ∀ i, F.comp (T.inclFermionValue i) = F'.comp (T.inclFermionValue i)) : F = F'
-```
-
 ### A.2. The dimension of the fermionic module
 
-**`GaugeFieldData.finrank_fermionModule`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean#L140).
+**`GaugeFieldData.finrank_fermionModule`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean#L119).
 
-> **The dimension of the fermionic module is the sum of the dimensions of the
-> species**, each species contributing the number of complex components of its
+> The dimension of the fermionic module is the sum of the dimensions of the
+> species, each species contributing the number of complex components of its
 > multiplet.
 
 ```lean
@@ -145,8 +112,8 @@ lemma finrank_fermionModule :
 
 ## Depends on
 
-- [The field data of a gauge theory](gaugefielddata-basic.md)
+- [The field data of a gauge theory](../part-01/gaugefielddata-basic.md)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean)

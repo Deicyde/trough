@@ -8,7 +8,7 @@ proof: formalized
 
 # Cayley–Klein parameters
 
-The module `Physlib.Relativity.SL2C.CayleyKlein`, [Physlib/Relativity/SL2C/CayleyKlein.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/CayleyKlein.lean): 6 declarations, 6 with a docstring.
+The module `Physlib.Relativity.SL2C.CayleyKlein`, [Physlib/Relativity/SL2C/CayleyKlein.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/CayleyKlein.lean): 6 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -34,7 +34,7 @@ The module `Physlib.Relativity.SL2C.CayleyKlein`, [Physlib/Relativity/SL2C/Cayle
 
 ## A. The Cayley–Klein element
 
-**`Lorentz.SL2C.cayleyKlein`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/CayleyKlein.lean#L61).
+**`Lorentz.SL2C.cayleyKlein`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/CayleyKlein.lean#L61).
 
 > The element `!![a, -conj b; b, conj a]` of `SL(2, ℂ)`, given by its Cayley–Klein
 > parameters `a b` with `‖a‖² + ‖b‖² = 1`.
@@ -43,7 +43,7 @@ The module `Physlib.Relativity.SL2C.CayleyKlein`, [Physlib/Relativity/SL2C/Cayle
 def cayleyKlein (a b : ℂ) (h : normSq a + normSq b = 1) : SL(2, ℂ)
 ```
 
-**`Lorentz.SL2C.cayleyKlein_mem_unitaryGroup`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/CayleyKlein.lean#L67).
+**`Lorentz.SL2C.cayleyKlein_mem_unitaryGroup`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/CayleyKlein.lean#L67).
 
 > A Cayley–Klein element is unitary.
 
@@ -52,7 +52,7 @@ lemma cayleyKlein_mem_unitaryGroup (a b : ℂ) (h : normSq a + normSq b = 1) :
     (cayleyKlein a b h).1 ∈ unitaryGroup (Fin 2) ℂ
 ```
 
-**`Lorentz.SL2C.toLorentzGroup_cayleyKlein_mem_rotations`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/CayleyKlein.lean#L77).
+**`Lorentz.SL2C.toLorentzGroup_cayleyKlein_mem_rotations`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/CayleyKlein.lean#L77).
 
 > The image of a Cayley–Klein element is a rotation.
 
@@ -63,7 +63,7 @@ lemma toLorentzGroup_cayleyKlein_mem_rotations (a b : ℂ) (h : normSq a + normS
 
 ## B. The Cayley–Klein rotation
 
-**`Lorentz.SL2C.cayleyKleinRotation`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/CayleyKlein.lean#L92).
+**`Lorentz.SL2C.cayleyKleinRotation`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/CayleyKlein.lean#L92).
 
 > The rotation of the Cayley–Klein parameters `a b`, as an element of the Lorentz rotation
 > subgroup.
@@ -72,7 +72,7 @@ lemma toLorentzGroup_cayleyKlein_mem_rotations (a b : ℂ) (h : normSq a + normS
 def cayleyKleinRotation (a b : ℂ) (h : normSq a + normSq b = 1) : LorentzGroup.Rotations 3
 ```
 
-**`Lorentz.SL2C.cayleyKleinRotation_inr_inr`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/CayleyKlein.lean#L96).
+**`Lorentz.SL2C.cayleyKleinRotation_inr_inr`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/CayleyKlein.lean#L96).
 
 > The spatial block of the rotation of the Cayley–Klein parameters `a b`.
 
@@ -84,7 +84,7 @@ lemma cayleyKleinRotation_inr_inr (a b : ℂ) (h : normSq a + normSq b = 1) (i j
         -2 * (a * b).re, -2 * (a * b).im, normSq a - normSq b] i j
 ```
 
-**`Lorentz.SL2C.exists_cayleyKleinRotation_apply_two`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/CayleyKlein.lean#L108).
+**`Lorentz.SL2C.exists_cayleyKleinRotation_apply_two`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/CayleyKlein.lean#L108).
 
 > Every unit vector is the image of the third axis under some Cayley–Klein rotation.
 
@@ -102,4 +102,4 @@ lemma exists_cayleyKleinRotation_apply_two (n : Fin 3 → ℝ)
 
 ## Sources
 
-- [Physlib/Relativity/SL2C/CayleyKlein.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/CayleyKlein.lean)
+- [Physlib/Relativity/SL2C/CayleyKlein.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/CayleyKlein.lean)

@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
  "modules": [
   {
    "file": "QuantumInfo/Channels/Bundled.lean",
@@ -1482,7 +1482,7 @@
     {
      "name": "MatrixMap.add_kron",
      "kind": "lemma",
-     "line": 275,
+     "line": 264,
      "doc": "",
      "statement": "lemma add_kron (ML₁ ML₂ : MatrixMap A B R) (MR : MatrixMap C D R) : (ML₁ + ML₂) ⊗ₖₘ MR = ML₁ ⊗ₖₘ MR + ML₂ ⊗ₖₘ MR",
      "sorry": false
@@ -1490,7 +1490,7 @@
     {
      "name": "MatrixMap.kron_add",
      "kind": "lemma",
-     "line": 278,
+     "line": 267,
      "doc": "",
      "statement": "lemma kron_add (ML : MatrixMap A B R) (MR₁ MR₂ : MatrixMap C D R) : ML ⊗ₖₘ (MR₁ + MR₂) = ML ⊗ₖₘ MR₁ + ML ⊗ₖₘ  MR₂",
      "sorry": false
@@ -1498,7 +1498,7 @@
     {
      "name": "MatrixMap.smul_kron",
      "kind": "lemma",
-     "line": 281,
+     "line": 270,
      "doc": "",
      "statement": "lemma smul_kron (r : R) (ML : MatrixMap A B R) (MR : MatrixMap C D R) : (r • ML) ⊗ₖₘ MR = r • (ML ⊗ₖₘ MR)",
      "sorry": false
@@ -1506,7 +1506,7 @@
     {
      "name": "MatrixMap.kron_smul",
      "kind": "lemma",
-     "line": 284,
+     "line": 273,
      "doc": "",
      "statement": "lemma kron_smul (r : R) (ML : MatrixMap A B R) (MR : MatrixMap C D R) : ML ⊗ₖₘ (r • MR) = r • (ML ⊗ₖₘ MR)",
      "sorry": false
@@ -1514,7 +1514,7 @@
     {
      "name": "MatrixMap.zero_kron",
      "kind": "lemma",
-     "line": 288,
+     "line": 277,
      "doc": "",
      "statement": "lemma zero_kron (MR : MatrixMap C D R) : (0 : MatrixMap A B R) ⊗ₖₘ MR = 0",
      "sorry": false
@@ -1522,7 +1522,7 @@
     {
      "name": "MatrixMap.kron_zero",
      "kind": "lemma",
-     "line": 292,
+     "line": 281,
      "doc": "",
      "statement": "lemma kron_zero (ML : MatrixMap A B R) : ML ⊗ₖₘ (0 : MatrixMap C D R) = 0",
      "sorry": false
@@ -1530,7 +1530,7 @@
     {
      "name": "MatrixMap.kron_id_id",
      "kind": "lemma",
-     "line": 296,
+     "line": 285,
      "doc": "",
      "statement": "lemma kron_id_id : (id A R ⊗ₖₘ id B R) = id (A × B) R",
      "sorry": false
@@ -1538,7 +1538,7 @@
     {
      "name": "MatrixMap.kron_comp_distrib",
      "kind": "theorem",
-     "line": 303,
+     "line": 292,
      "doc": "For maps L₁, L₂, R₁, and R₂, the product (L₂ ∘ₗ L₁) ⊗ₖₘ (R₂ ∘ₗ R₁) = (L₂ ⊗ₖₘ R₂) ∘ₗ (L₁ ⊗ₖₘ R₁)",
      "statement": "theorem kron_comp_distrib (L₁ : MatrixMap Dl₁ Dl₂ R) (L₂ : MatrixMap Dl₂ Dl₃ R) (R₁ : MatrixMap Dr₁ Dr₂ R)\n    (R₂ : MatrixMap Dr₂ Dr₃ R) : (L₂ ∘ₗ L₁) ⊗ₖₘ (R₂ ∘ₗ R₁) = (L₂ ⊗ₖₘ R₂) ∘ₗ (L₁ ⊗ₖₘ R₁)",
      "sorry": false
@@ -1546,7 +1546,7 @@
     {
      "name": "MatrixMap.kron_map_of_kron_state",
      "kind": "theorem",
-     "line": 318,
+     "line": 307,
      "doc": "The operational definition of the Kronecker product `MatrixMap.kron`, that it maps a Kronecker\nproduct of inputs to the Kronecker product of outputs. It is the unique bilinear map doing so.",
      "statement": "theorem kron_map_of_kron_state [CommRing R] (M₁ : MatrixMap A B R) (M₂ : MatrixMap C D R) (MA : Matrix A A R) (MC : Matrix C C R) : (M₁ ⊗ₖₘ M₂) (MA ⊗ₖ MC) = (M₁ MA) ⊗ₖ (M₂ MC)",
      "sorry": false
@@ -1554,7 +1554,7 @@
     {
      "name": "MatrixMap.choi_matrix_state_rep",
      "kind": "lemma",
-     "line": 351,
+     "line": 340,
      "doc": "",
      "statement": "lemma choi_matrix_state_rep {B : Type*} [Fintype B] [Nonempty A] (M : MatrixMap A B ℂ) :\n    M.choi_matrix = (↑(Fintype.card (α := A)) : ℂ) • (M ⊗ₖₘ (LinearMap.id : MatrixMap A A ℂ)) (MState.pure (Ket.MES A)).m",
      "sorry": false
@@ -1562,7 +1562,7 @@
     {
      "name": "MatrixMap.submatrix_kron_submatrix",
      "kind": "lemma",
-     "line": 377,
+     "line": 366,
      "doc": "",
      "statement": "lemma submatrix_kron_submatrix [CommSemiring R] (f : B → A) (g : D → C) :\n    submatrix R f ⊗ₖₘ submatrix R g = submatrix R (Prod.map f g)",
      "sorry": false
@@ -1570,7 +1570,7 @@
     {
      "name": "MatrixMap.submatrix_kron_id",
      "kind": "lemma",
-     "line": 383,
+     "line": 372,
      "doc": "",
      "statement": "lemma submatrix_kron_id [CommSemiring R] (f : B → A) :\n    submatrix R f ⊗ₖₘ id C R = submatrix R (Prod.map f _root_.id)",
      "sorry": false
@@ -1578,7 +1578,7 @@
     {
      "name": "MatrixMap.id_kron_submatrix",
      "kind": "lemma",
-     "line": 387,
+     "line": 376,
      "doc": "",
      "statement": "lemma id_kron_submatrix [CommSemiring R] (f : B → A) :\n    id C R ⊗ₖₘ submatrix R f = submatrix R (Prod.map _root_.id f)",
      "sorry": false
@@ -1586,7 +1586,7 @@
     {
      "name": "MatrixMap.piProd",
      "kind": "def",
-     "line": 401,
+     "line": 390,
      "doc": "Finite Pi-type tensor product of MatrixMaps. Defined as `PiTensorProduct.tprod` of the\nunderlying Linear maps. Notation `⨂ₜₘ[R] i, f i`, eventually.",
      "statement": "noncomputable def piProd (Λi : ∀ i, MatrixMap (dI i) (dO i) R) : MatrixMap (∀i, dI i) (∀i, dO i) R",
      "sorry": false
@@ -1594,7 +1594,7 @@
     {
      "name": "MatrixMap.choi_matrix_piProd",
      "kind": "lemma",
-     "line": 412,
+     "line": 401,
      "doc": "",
      "statement": "lemma choi_matrix_piProd (Λi : ∀ i, MatrixMap (dI i) (dO i) R) :\n    (MatrixMap.piProd Λi).choi_matrix =\n      Matrix.reindex\n        (Equiv.arrowProdEquivProdArrow ι dO dI)\n        (Equiv.arrowProdEquivProdArrow ι dO dI)\n        (Matrix.piProd (fun i => (Λi i).choi_matrix))",
      "sorry": false
@@ -1602,7 +1602,7 @@
     {
      "name": "MatrixMap.piProd_comp",
      "kind": "theorem",
-     "line": 437,
+     "line": 426,
      "doc": "Composition of `MatrixMap.piProd` maps distributes over the tensor product.",
      "statement": "theorem piProd_comp\n  {d₁ d₂ d₃ : ι → Type*}\n  [∀ i, Fintype (d₁ i)] [∀ i, DecidableEq (d₁ i)]\n  [∀ i, Fintype (d₂ i)] [∀ i, DecidableEq (d₂ i)]\n  [∀ i, Fintype (d₃ i)] [∀ i, DecidableEq (d₃ i)]\n  (Λ₁ : ∀ i, MatrixMap (d₁ i) (d₂ i) R) (Λ₂ : ∀ i, MatrixMap (d₂ i) (d₃ i) R) :\n    piProd (fun i ↦ (Λ₂ i) ∘ₗ (Λ₁ i)) = (piProd Λ₂) ∘ₗ (piProd Λ₁)",
      "sorry": false
@@ -1610,7 +1610,7 @@
     {
      "name": "MatrixMap.piProd_id",
      "kind": "lemma",
-     "line": 447,
+     "line": 436,
      "doc": "",
      "statement": "lemma piProd_id :\n    piProd (fun i ↦ (LinearMap.id : MatrixMap (dI i) (dI i) R)) = LinearMap.id",
      "sorry": false

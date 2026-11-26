@@ -1,7 +1,8 @@
 # Hydrogen
 
-The folder [PhyslibAlpha/QuantumMechanics/Hydrogen/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen): 10 modules, an article each, in path order.
+The folder [PhyslibAlpha/QuantumMechanics/Hydrogen/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen): 11 modules, an article each, in path order.
 
+- [The weak eigenvalue equation of the hydrogen bound states](boundstatesadjoint.md)
 - [The hydrogen bound states in `L²`](boundstatesl2.md)
 - [The degeneracy of the hydrogen bound states](degeneracy.md)
 - [The bound-state wave functions of the `d`-dimensional hydrogen atom](eigenfunctions.md)

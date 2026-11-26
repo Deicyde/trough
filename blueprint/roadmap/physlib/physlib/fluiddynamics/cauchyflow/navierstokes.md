@@ -8,7 +8,7 @@ proof: formalized
 
 # The Navier-Stokes equations
 
-The module `Physlib.FluidDynamics.CauchyFlow.NavierStokes`, [Physlib/FluidDynamics/CauchyFlow/NavierStokes.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/NavierStokes.lean): 3 declarations, 3 with a docstring, 1 listed as significant.
+The module `Physlib.FluidDynamics.CauchyFlow.NavierStokes`, [Physlib/FluidDynamics/CauchyFlow/NavierStokes.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/CauchyFlow/NavierStokes.lean): 3 declarations, 3 with a docstring, 1 listed as significant.
 
 ## i. Overview
 
@@ -34,7 +34,7 @@ The module `Physlib.FluidDynamics.CauchyFlow.NavierStokes`, [Physlib/FluidDynami
 
 ## A. Navier-Stokes equations
 
-**`FluidDynamics.NavierStokes`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/NavierStokes.lean#L54).
+**`FluidDynamics.NavierStokes`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/CauchyFlow/NavierStokes.lean#L54).
 
 > The conservative Navier-Stokes equations: continuity, Cauchy momentum, and Newtonian
 > stress.
@@ -45,7 +45,7 @@ def NavierStokes
     (pressure shearViscosity secondViscosity : ScalarField d) : Prop
 ```
 
-**`FluidDynamics.ConvectiveNavierStokes`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/NavierStokes.lean#L63).
+**`FluidDynamics.ConvectiveNavierStokes`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/CauchyFlow/NavierStokes.lean#L63).
 
 > The convective Navier-Stokes equations: continuity, convective Cauchy momentum, and
 > Newtonian stress.
@@ -58,7 +58,7 @@ def ConvectiveNavierStokes
 
 ## B. Equivalence of conservative and convective Navier-Stokes forms
 
-**`FluidDynamics.navier_stokes_iff_convective_navier_stokes`**, a theorem, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/NavierStokes.lean#L78). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`FluidDynamics.navier_stokes_iff_convective_navier_stokes`**, a theorem, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/CauchyFlow/NavierStokes.lean#L78). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The conservative and convective Navier-Stokes forms are equivalent when the fields are
 > differentiable enough for the product rules.
@@ -83,4 +83,4 @@ theorem navier_stokes_iff_convective_navier_stokes
 
 ## Sources
 
-- [Physlib/FluidDynamics/CauchyFlow/NavierStokes.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/NavierStokes.lean)
+- [Physlib/FluidDynamics/CauchyFlow/NavierStokes.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/CauchyFlow/NavierStokes.lean)

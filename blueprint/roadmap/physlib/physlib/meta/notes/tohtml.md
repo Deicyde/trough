@@ -8,11 +8,11 @@ proof: formalized
 
 # Physlib.Meta.Notes.ToHTML
 
-The module `Physlib.Meta.Notes.ToHTML`, [Physlib/Meta/Notes/ToHTML.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/ToHTML.lean): 11 declarations, 11 with a docstring.
+The module `Physlib.Meta.Notes.ToHTML`, [Physlib/Meta/Notes/ToHTML.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/ToHTML.lean): 11 declarations, 11 with a docstring.
 
 ## Turns a declaration into a html note structure.
 
-**`Physlib.NoteFile.sortLE`**, a def, [line 26](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/ToHTML.lean#L26).
+**`Physlib.NoteFile.sortLE`**, a def, [line 26](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/ToHTML.lean#L26).
 
 > Sorts `NoteInfo`'s by file name then by line number.
 
@@ -20,7 +20,7 @@ The module `Physlib.Meta.Notes.ToHTML`, [Physlib/Meta/Notes/ToHTML.lean](https:/
 meta def sortLE (ni1 ni2 : HTMLNote) : Bool
 ```
 
-**`Physlib.NoteFile.getNodeInfo`**, a def, [line 33](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/ToHTML.lean#L33).
+**`Physlib.NoteFile.getNodeInfo`**, a def, [line 33](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/ToHTML.lean#L33).
 
 > Returns a sorted list of NodeInfos for a file system.
 
@@ -28,7 +28,7 @@ meta def sortLE (ni1 ni2 : HTMLNote) : Bool
 meta unsafe def getNodeInfo : CoreM (List HTMLNote)
 ```
 
-**`Physlib.NoteFile.codeBlockHTML`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/ToHTML.lean#L45).
+**`Physlib.NoteFile.codeBlockHTML`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/ToHTML.lean#L45).
 
 > The HTML code needed to have syntax highlighting.
 
@@ -36,7 +36,7 @@ meta unsafe def getNodeInfo : CoreM (List HTMLNote)
 meta def codeBlockHTML : String
 ```
 
-**`Physlib.NoteFile.informalDefStyle`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/ToHTML.lean#L73).
+**`Physlib.NoteFile.informalDefStyle`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/ToHTML.lean#L73).
 
 > The html styles for informal definitions.
 
@@ -44,7 +44,7 @@ meta def codeBlockHTML : String
 meta def informalDefStyle : String
 ```
 
-**`Physlib.NoteFile.codeButton`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/ToHTML.lean#L108).
+**`Physlib.NoteFile.codeButton`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/ToHTML.lean#L108).
 
 > The html styles for code button.
 
@@ -52,7 +52,7 @@ meta def informalDefStyle : String
 meta def codeButton : String
 ```
 
-**`Physlib.NoteFile.mathJaxScript`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/ToHTML.lean#L135).
+**`Physlib.NoteFile.mathJaxScript`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/ToHTML.lean#L135).
 
 > HTML allowing the use of mathjax.
 
@@ -60,7 +60,7 @@ meta def codeButton : String
 meta def mathJaxScript : String
 ```
 
-**`Physlib.NoteFile.headerHTML`**, a def, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/ToHTML.lean#L151).
+**`Physlib.NoteFile.headerHTML`**, a def, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/ToHTML.lean#L151).
 
 > The header to the html code.
 
@@ -68,7 +68,7 @@ meta def mathJaxScript : String
 meta def headerHTML : String
 ```
 
-**`Physlib.NoteFile.titleHTML`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/ToHTML.lean#L162).
+**`Physlib.NoteFile.titleHTML`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/ToHTML.lean#L162).
 
 > The html code corresponding to the title, abstract and authors.
 
@@ -76,7 +76,7 @@ meta def headerHTML : String
 meta def titleHTML : String
 ```
 
-**`Physlib.NoteFile.leanNote`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/ToHTML.lean#L168).
+**`Physlib.NoteFile.leanNote`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/ToHTML.lean#L168).
 
 > The html code corresponding to a note about Lean and its use.
 
@@ -84,7 +84,7 @@ meta def titleHTML : String
 meta def leanNote : String
 ```
 
-**`Physlib.NoteFile.footerHTML`**, a def, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/ToHTML.lean#L184).
+**`Physlib.NoteFile.footerHTML`**, a def, [line 184](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/ToHTML.lean#L184).
 
 > The footer of the html file.
 
@@ -92,7 +92,7 @@ meta def leanNote : String
 meta def footerHTML : String
 ```
 
-**`Physlib.NoteFile.toHTMLString`**, a def, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/ToHTML.lean#L189).
+**`Physlib.NoteFile.toHTMLString`**, a def, [line 189](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/ToHTML.lean#L189).
 
 > The html file associated to a NoteFile string.
 
@@ -107,4 +107,4 @@ meta unsafe def toHTMLString : MetaM String
 
 ## Sources
 
-- [Physlib/Meta/Notes/ToHTML.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/ToHTML.lean)
+- [Physlib/Meta/Notes/ToHTML.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/ToHTML.lean)

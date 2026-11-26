@@ -8,7 +8,7 @@ proof: formalized
 
 # Lorentz group actions related to SpaceTime
 
-The module `Physlib.SpaceAndTime.SpaceTime.LorentzAction`, [Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean): 10 declarations (3 instances with no name), 2 with a docstring.
+The module `Physlib.SpaceAndTime.SpaceTime.LorentzAction`, [Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean): 10 declarations (3 instances with no name), 2 with a docstring.
 
 ## i. Overview
 
@@ -28,7 +28,7 @@ The module `Physlib.SpaceAndTime.SpaceTime.LorentzAction`, [Physlib/SpaceAndTime
 
 ### A.1. The definition of the action
 
-**`SpaceTime.schwartzAction`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L69).
+**`SpaceTime.schwartzAction`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L69).
 
 > The Lorentz group action on Schwartz functions taking the Lorentz group to
 > continuous linear maps.
@@ -39,7 +39,7 @@ def schwartzAction {d} : LorentzGroup d →* 𝓢(SpaceTime d, ℝ) →L[ℝ] �
 
 ### A.2. Basic properties of the action
 
-**`SpaceTime.schwartzAction_mul_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L94).
+**`SpaceTime.schwartzAction_mul_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L94).
 
 ```lean
 lemma schwartzAction_mul_apply {d} (Λ₁ Λ₂ : LorentzGroup d)
@@ -48,7 +48,7 @@ lemma schwartzAction_mul_apply {d} (Λ₁ Λ₂ : LorentzGroup d)
     schwartzAction (Λ₂ * Λ₁) η
 ```
 
-**`SpaceTime.schwartzAction_apply`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L100).
+**`SpaceTime.schwartzAction_apply`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L100).
 
 ```lean
 lemma schwartzAction_apply {d} (Λ : LorentzGroup d)
@@ -58,7 +58,7 @@ lemma schwartzAction_apply {d} (Λ : LorentzGroup d)
 
 ### A.3. Injectivity of the action
 
-**`SpaceTime.schwartzAction_injective`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L110).
+**`SpaceTime.schwartzAction_injective`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L110).
 
 ```lean
 lemma schwartzAction_injective {d} (Λ : LorentzGroup d) :
@@ -67,7 +67,7 @@ lemma schwartzAction_injective {d} (Λ : LorentzGroup d) :
 
 ### A.4. Surjectivity of the action
 
-**`SpaceTime.schwartzAction_surjective`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L126).
+**`SpaceTime.schwartzAction_surjective`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L126).
 
 ```lean
 lemma schwartzAction_surjective {d} (Λ : LorentzGroup d) :
@@ -78,13 +78,13 @@ lemma schwartzAction_surjective {d} (Λ : LorentzGroup d) :
 
 ### B.1. The SMul instance
 
-**An instance with no name**, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L151).
+**An instance with no name**, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L151).
 
 ```lean
 instance : SMul (LorentzGroup d) ((SpaceTime d) →d[ℝ] M)
 ```
 
-**`SpaceTime.lorentzGroup_smul_dist_apply`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L154).
+**`SpaceTime.lorentzGroup_smul_dist_apply`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L154).
 
 ```lean
 lemma lorentzGroup_smul_dist_apply (Λ : LorentzGroup d) (f : (SpaceTime d) →d[ℝ] M)
@@ -93,7 +93,7 @@ lemma lorentzGroup_smul_dist_apply (Λ : LorentzGroup d) (f : (SpaceTime d) →d
 
 ### B.2. The DistribMulAction instance
 
-**An instance with no name**, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L164).
+**An instance with no name**, [line 164](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L164).
 
 ```lean
 instance : DistribMulAction (LorentzGroup d) ((SpaceTime d) →d[ℝ] M)
@@ -101,7 +101,7 @@ instance : DistribMulAction (LorentzGroup d) ((SpaceTime d) →d[ℝ] M)
 
 ### B.3. The SMulCommClass instance
 
-**An instance with no name**, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L186).
+**An instance with no name**, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L186).
 
 ```lean
 instance : SMulCommClass ℝ (LorentzGroup d) ((SpaceTime d) →d[ℝ] M)
@@ -109,7 +109,7 @@ instance : SMulCommClass ℝ (LorentzGroup d) ((SpaceTime d) →d[ℝ] M)
 
 ### B.4. Action as a linear map
 
-**`SpaceTime.distActionLinearMap`**, a def, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L199).
+**`SpaceTime.distActionLinearMap`**, a def, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean#L199).
 
 > The Lorentz action on distributions as a linear map.
 
@@ -126,4 +126,4 @@ def distActionLinearMap {d} {M : Type} [NormedAddCommGroup M]
 
 ## Sources
 
-- [Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean)
+- [Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean)

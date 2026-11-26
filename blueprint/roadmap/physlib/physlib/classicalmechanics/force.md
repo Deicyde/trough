@@ -8,7 +8,7 @@ proof: formalized
 
 # Forces
 
-The module `Physlib.ClassicalMechanics.Force`, [Physlib/ClassicalMechanics/Force.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Force.lean): 7 declarations (3 instances with no name), 4 with a docstring.
+The module `Physlib.ClassicalMechanics.Force`, [Physlib/ClassicalMechanics/Force.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Force.lean): 7 declarations (3 instances with no name), 4 with a docstring.
 
 > This module defines forces acting on objects, expressed in a reference frame.
 > A `Force` records its target and its vector value over time. An `InternalForce`
@@ -29,7 +29,7 @@ The module `Physlib.ClassicalMechanics.Force`, [Physlib/ClassicalMechanics/Force
 >
 > The target type `Object` is therefore deliberately left arbitrary. …
 
-**`ClassicalMechanics.ReferenceFrame.Force`**, a structure, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Force.lean#L45).
+**`ClassicalMechanics.ReferenceFrame.Force`**, a structure, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Force.lean#L45).
 
 > A time-dependent force acting on an object.
 
@@ -41,13 +41,13 @@ structure Force (frame : ReferenceFrame d) (Object : Type) where
   target : Object
 ```
 
-**An instance with no name**, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Force.lean#L51).
+**An instance with no name**, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Force.lean#L51).
 
 ```lean
 instance : CoeFun (frame.Force Object) (fun _ => ℝ → frame.Vector)
 ```
 
-**`ClassicalMechanics.ReferenceFrame.InternalForce`**, a structure, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Force.lean#L55).
+**`ClassicalMechanics.ReferenceFrame.InternalForce`**, a structure, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Force.lean#L55).
 
 > A force between two objects.
 
@@ -58,19 +58,19 @@ structure InternalForce (frame : ReferenceFrame d) (Object : Type) extends frame
   source_ne_target : source ≠ target
 ```
 
-**An instance with no name**, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Force.lean#L60).
+**An instance with no name**, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Force.lean#L60).
 
 ```lean
 instance : CoeFun (frame.InternalForce Object) (fun _ => ℝ → frame.Vector)
 ```
 
-**An instance with no name**, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Force.lean#L63).
+**An instance with no name**, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Force.lean#L63).
 
 ```lean
 instance : Coe (frame.InternalForce Object) (frame.Force Object)
 ```
 
-**`ClassicalMechanics.ReferenceFrame.InternalForce.reverse`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Force.lean#L67).
+**`ClassicalMechanics.ReferenceFrame.InternalForce.reverse`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Force.lean#L67).
 
 > The equal-and-opposite force with source and target exchanged.
 
@@ -78,7 +78,7 @@ instance : Coe (frame.InternalForce Object) (frame.Force Object)
 def InternalForce.reverse (force : frame.InternalForce Object) : frame.InternalForce Object
 ```
 
-**`ClassicalMechanics.ReferenceFrame.netForce`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Force.lean#L74).
+**`ClassicalMechanics.ReferenceFrame.netForce`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Force.lean#L74).
 
 > The net force on `object`.
 
@@ -93,4 +93,4 @@ def netForce (object : Object) (internalForces : Multiset (frame.InternalForce O
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/Force.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Force.lean)
+- [Physlib/ClassicalMechanics/Force.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Force.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The Lagrangian in electromagnetism (TemperedDistributional/Dynamics/Lagrangian)
 
-The module `Physlib.Electromagnetism.TemperedDistributional.Dynamics.Lagrangian`, [Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean): 9 declarations, 2 with a docstring.
+The module `Physlib.Electromagnetism.TemperedDistributional.Dynamics.Lagrangian`, [Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean): 9 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `Physlib.Electromagnetism.TemperedDistributional.Dynamics.Lagrangian`
 
 > We define this through the lemma `gradFreeCurrentPotential_eq_sum_basis`
 
-**`Electromagnetism.TempDistElectromagneticPotential.gradFreeCurrentPotential`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L75).
+**`Electromagnetism.TempDistElectromagneticPotential.gradFreeCurrentPotential`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L75).
 
 > The variational gradient of the free current potential for distributional potentials.
 
@@ -46,7 +46,7 @@ noncomputable def gradFreeCurrentPotential {d} :
     TempDistLorentzCurrentDensity d →ₗ[ℝ] ((SpaceTime d) →d[ℝ] Lorentz.Vector d)
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.gradFreeCurrentPotential_eq_sum_basis`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L98).
+**`Electromagnetism.TempDistElectromagneticPotential.gradFreeCurrentPotential_eq_sum_basis`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L98).
 
 ```lean
 lemma gradFreeCurrentPotential_eq_sum_basis {d}
@@ -55,7 +55,7 @@ lemma gradFreeCurrentPotential_eq_sum_basis {d}
     (∑ μ, (η μ μ • (J ε μ) • Lorentz.Vector.basis μ))
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.gradFreeCurrentPotential_sum_inl_0`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L103).
+**`Electromagnetism.TempDistElectromagneticPotential.gradFreeCurrentPotential_sum_inl_0`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L103).
 
 ```lean
 lemma gradFreeCurrentPotential_sum_inl_0 (𝓕 : FreeSpace) {d}
@@ -64,7 +64,7 @@ lemma gradFreeCurrentPotential_sum_inl_0 (𝓕 : FreeSpace) {d}
     𝓕.c * (tempDistTimeSlice 𝓕.c).symm (J.chargeDensity 𝓕.c) ε
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.gradFreeCurrentPotential_sum_inr_i`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L117).
+**`Electromagnetism.TempDistElectromagneticPotential.gradFreeCurrentPotential_sum_inr_i`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L117).
 
 ```lean
 lemma gradFreeCurrentPotential_sum_inr_i (𝓕 : FreeSpace) {d}
@@ -75,7 +75,7 @@ lemma gradFreeCurrentPotential_sum_inr_i (𝓕 : FreeSpace) {d}
 
 #### A.1.1. Free current potential as a tensor
 
-**`Electromagnetism.TempDistElectromagneticPotential.gradFreeCurrentPotential_eq_tensor`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L135).
+**`Electromagnetism.TempDistElectromagneticPotential.gradFreeCurrentPotential_eq_tensor`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L135).
 
 ```lean
 lemma gradFreeCurrentPotential_eq_tensor {d}
@@ -89,7 +89,7 @@ lemma gradFreeCurrentPotential_eq_tensor {d}
 
 > Defined through `gradLagrangian_eq_kineticTerm_sub`.
 
-**`Electromagnetism.TempDistElectromagneticPotential.gradLagrangian`**, a def, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L158).
+**`Electromagnetism.TempDistElectromagneticPotential.gradLagrangian`**, a def, [line 158](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L158).
 
 > The variational gradient of lagrangian for an electromagnetic potential which is
 > a distribution.
@@ -99,7 +99,7 @@ noncomputable def gradLagrangian {d} (𝓕 : FreeSpace) (A : TempDistElectromagn
     (J : TempDistLorentzCurrentDensity d) : ((SpaceTime d) →d[ℝ] Lorentz.Vector d)
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.gradLagrangian_sum_inl_0`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L162).
+**`Electromagnetism.TempDistElectromagneticPotential.gradLagrangian_sum_inl_0`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L162).
 
 ```lean
 lemma gradLagrangian_sum_inl_0 {𝓕 : FreeSpace}
@@ -110,7 +110,7 @@ lemma gradLagrangian_sum_inl_0 {𝓕 : FreeSpace}
     - 𝓕.c * (tempDistTimeSlice 𝓕.c).symm (J.chargeDensity 𝓕.c) ε
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.gradLagrangian_sum_inr_i`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L170).
+**`Electromagnetism.TempDistElectromagneticPotential.gradLagrangian_sum_inr_i`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L170).
 
 ```lean
 lemma gradLagrangian_sum_inr_i {𝓕 : FreeSpace}
@@ -126,7 +126,7 @@ lemma gradLagrangian_sum_inr_i {𝓕 : FreeSpace}
 
 #### A.2.1. The lagrangian gradient as a tensor
 
-**`Electromagnetism.TempDistElectromagneticPotential.gradLagrangian_eq_tensor`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L188).
+**`Electromagnetism.TempDistElectromagneticPotential.gradLagrangian_eq_tensor`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean#L188).
 
 ```lean
 lemma gradLagrangian_eq_tensor {𝓕 : FreeSpace}
@@ -145,4 +145,4 @@ lemma gradLagrangian_eq_tensor {𝓕 : FreeSpace}
 
 ## Sources
 
-- [Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean)
+- [Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean)

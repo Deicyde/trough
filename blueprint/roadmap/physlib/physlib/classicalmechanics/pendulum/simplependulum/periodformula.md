@@ -8,7 +8,7 @@ proof: formalized
 
 # The period formula of the simple gravity pendulum
 
-The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.PeriodFormula`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean): 14 declarations, 14 with a docstring.
+The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.PeriodFormula`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean): 14 declarations, 14 with a docstring.
 
 ## i. Overview
 
@@ -95,7 +95,7 @@ The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.PeriodFormula`, [
 > junk value (see the module docstring of `Physlib.Mathematics.SpecialFunctions.EllipticIntegral`),
 > so nothing is claimed there.
 
-**`ClassicalMechanics.SimplePendulum.periodFormula`**, a def, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L137).
+**`ClassicalMechanics.SimplePendulum.periodFormula`**, a def, [line 137](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L137).
 
 > The classical formula `4 √(ℓ/g) K(sin² (θ₀/2))` for the period of libration of the simple
 > gravity pendulum with amplitude `θ₀` (Landau & Lifshitz, §11, Problem 1, where it is written
@@ -105,7 +105,7 @@ The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.PeriodFormula`, [
 noncomputable def periodFormula (θ₀ : ℝ) : ℝ
 ```
 
-**`ClassicalMechanics.SimplePendulum.periodFormula_neg`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L165).
+**`ClassicalMechanics.SimplePendulum.periodFormula_neg`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L165).
 
 > The period formula is even in the amplitude, `periodFormula (-θ₀) = periodFormula θ₀`: its
 > parameter `sin² (θ₀/2)` is even in `θ₀`.
@@ -123,7 +123,7 @@ lemma periodFormula_neg (θ₀ : ℝ) : S.periodFormula (-θ₀) = S.periodFormu
 > to the small-angle period as the amplitude tends to zero — the sense in which the small-angle
 > theory of `SimplePendulum.SmallAngle` is the limit of the classical formula.
 
-**`ClassicalMechanics.SimplePendulum.periodFormula_zero`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L184).
+**`ClassicalMechanics.SimplePendulum.periodFormula_zero`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L184).
 
 > At zero amplitude the period formula is the small-angle period: `K 0 = π/2` turns
 > `4 √(ℓ/g) K 0` into `2π √(ℓ/g)`.
@@ -132,7 +132,7 @@ lemma periodFormula_neg (θ₀ : ℝ) : S.periodFormula (-θ₀) = S.periodFormu
 lemma periodFormula_zero : S.periodFormula 0 = S.smallAnglePeriod
 ```
 
-**`ClassicalMechanics.SimplePendulum.continuousOn_periodFormula`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L192).
+**`ClassicalMechanics.SimplePendulum.continuousOn_periodFormula`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L192).
 
 > The period formula is continuous on the libration range `(-π, π)`: `completeEllipticK` is
 > continuous at every parameter `m < 1`, and the parameter `sin² (θ₀/2)` is continuous in `θ₀`
@@ -142,7 +142,7 @@ lemma periodFormula_zero : S.periodFormula 0 = S.smallAnglePeriod
 lemma continuousOn_periodFormula : ContinuousOn S.periodFormula (Set.Ioo (-Real.pi) Real.pi)
 ```
 
-**`ClassicalMechanics.SimplePendulum.continuousAt_periodFormula_zero`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L200).
+**`ClassicalMechanics.SimplePendulum.continuousAt_periodFormula_zero`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L200).
 
 > The period formula is continuous at zero amplitude, an interior point of `(-π, π)`.
 
@@ -150,7 +150,7 @@ lemma continuousOn_periodFormula : ContinuousOn S.periodFormula (Set.Ioo (-Real.
 lemma continuousAt_periodFormula_zero : ContinuousAt S.periodFormula 0
 ```
 
-**`ClassicalMechanics.SimplePendulum.periodFormula_tendsto_smallAnglePeriod`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L206).
+**`ClassicalMechanics.SimplePendulum.periodFormula_tendsto_smallAnglePeriod`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L206).
 
 > The period formula tends to the small-angle period as the amplitude tends to zero: it is
 > continuous at `0`, where its value is the small-angle period.
@@ -176,7 +176,7 @@ lemma periodFormula_tendsto_smallAnglePeriod :
 > the rest. The strict version uses the strict monotonicity of the sine on the same interval and
 > of `K`. Both are restated as bundled `MonotoneOn` and `StrictMonoOn` facts on `[0, π)`.
 
-**`ClassicalMechanics.SimplePendulum.periodFormula_mono`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L239).
+**`ClassicalMechanics.SimplePendulum.periodFormula_mono`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L239).
 
 > The period formula is increasing in the amplitude on `[0, π)`: for `0 ≤ θ₁ ≤ θ₂ < π`,
 > `periodFormula θ₁ ≤ periodFormula θ₂`. …
@@ -186,7 +186,7 @@ lemma periodFormula_mono {θ₁ θ₂ : ℝ} (h0 : 0 ≤ θ₁) (h12 : θ₁ ≤
     S.periodFormula θ₁ ≤ S.periodFormula θ₂
 ```
 
-**`ClassicalMechanics.SimplePendulum.periodFormula_strictMono`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L253).
+**`ClassicalMechanics.SimplePendulum.periodFormula_strictMono`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L253).
 
 > The period formula is strictly increasing in the amplitude on `[0, π)`: for
 > `0 ≤ θ₁ < θ₂ < π`, `periodFormula θ₁ < periodFormula θ₂`.
@@ -196,7 +196,7 @@ lemma periodFormula_strictMono {θ₁ θ₂ : ℝ} (h0 : 0 ≤ θ₁) (h12 : θ�
     S.periodFormula θ₁ < S.periodFormula θ₂
 ```
 
-**`ClassicalMechanics.SimplePendulum.monotoneOn_periodFormula`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L269).
+**`ClassicalMechanics.SimplePendulum.monotoneOn_periodFormula`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L269).
 
 > The period formula is monotone on `[0, π)`, as a bundled `MonotoneOn` statement.
 
@@ -204,7 +204,7 @@ lemma periodFormula_strictMono {θ₁ θ₂ : ℝ} (h0 : 0 ≤ θ₁) (h12 : θ�
 lemma monotoneOn_periodFormula : MonotoneOn S.periodFormula (Set.Ico 0 Real.pi)
 ```
 
-**`ClassicalMechanics.SimplePendulum.strictMonoOn_periodFormula`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L274).
+**`ClassicalMechanics.SimplePendulum.strictMonoOn_periodFormula`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L274).
 
 > The period formula is strictly increasing on `[0, π)`, as a bundled `StrictMonoOn`
 > statement.
@@ -222,7 +222,7 @@ lemma strictMonoOn_periodFormula : StrictMonoOn S.periodFormula (Set.Ico 0 Real.
 > period divided by the cosine of the half-amplitude, a quantity that grows without bound as the
 > amplitude approaches the inverted position.
 
-**`ClassicalMechanics.SimplePendulum.smallAnglePeriod_le_periodFormula`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L292).
+**`ClassicalMechanics.SimplePendulum.smallAnglePeriod_le_periodFormula`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L292).
 
 > The period formula is at least the small-angle period: for `sin² (θ₀/2) < 1`,
 > `smallAnglePeriod ≤ periodFormula θ₀`, since `π/2 ≤ K m` on `[0, 1)`.
@@ -232,7 +232,7 @@ lemma smallAnglePeriod_le_periodFormula {θ₀ : ℝ} (h : Real.sin (θ₀ / 2) 
     S.smallAnglePeriod ≤ S.periodFormula θ₀
 ```
 
-**`ClassicalMechanics.SimplePendulum.periodFormula_pos`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L303).
+**`ClassicalMechanics.SimplePendulum.periodFormula_pos`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L303).
 
 > The period formula is positive for `sin² (θ₀/2) < 1`: it is at least the small-angle
 > period, which is positive.
@@ -241,7 +241,7 @@ lemma smallAnglePeriod_le_periodFormula {θ₀ : ℝ} (h : Real.sin (θ₀ / 2) 
 lemma periodFormula_pos {θ₀ : ℝ} (h : Real.sin (θ₀ / 2) ^ 2 < 1) : 0 < S.periodFormula θ₀
 ```
 
-**`ClassicalMechanics.SimplePendulum.periodFormula_le`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L309).
+**`ClassicalMechanics.SimplePendulum.periodFormula_le`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L309).
 
 > The period formula is at most `2π √(ℓ/g) / cos (θ₀/2)` for `|θ₀| < π`: the bound
 > `K m ≤ (π/2) (1 - m)^(-1/2)` at `m = sin² (θ₀/2)`, where `1 - sin² (θ₀/2) = cos² (θ₀/2)`
@@ -252,7 +252,7 @@ lemma periodFormula_le {θ₀ : ℝ} (h : |θ₀| < Real.pi) :
     S.periodFormula θ₀ ≤ 2 * Real.pi * √(S.ℓ / S.g) / Real.cos (θ₀ / 2)
 ```
 
-**`ClassicalMechanics.SimplePendulum.periodFormula_le'`**, a lemma, [line 331](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L331).
+**`ClassicalMechanics.SimplePendulum.periodFormula_le'`**, a lemma, [line 331](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L331).
 
 > The period formula is at most the small-angle period divided by `cos (θ₀/2)`, for
 > `|θ₀| < π`: `periodFormula_le` with `2π √(ℓ/g) = smallAnglePeriod`. Together with
@@ -277,4 +277,4 @@ lemma periodFormula_le' {θ₀ : ℝ} (h : |θ₀| < Real.pi) :
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean)
+- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean)

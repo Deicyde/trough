@@ -8,7 +8,7 @@ proof: formalized
 
 # Point groups of Bravais lattices
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Basic`, [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean): 8 declarations, 6 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Basic`, [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean): 8 declarations, 6 with a docstring.
 
 > The point group of a crystal with one site per cell is the group of automorphisms of its
 > translation lattice that preserve its bonds.
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Basic`, [PhyslibAlph
 
 ## A. Automorphisms preserving the bonds
 
-**`CondensedMatter.Crystal.PeriodicGraph.pointStabilizer`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean#L63).
+**`CondensedMatter.Crystal.PeriodicGraph.pointStabilizer`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean#L63).
 
 > The lattice automorphisms that map bonded displacements to bonded displacements.
 
@@ -50,7 +50,7 @@ def pointStabilizer (g : PeriodicGraph (Crystal.ofUnitCell G Unit)) :
     Subgroup (Multiplicative (AddAut G))
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.linearHom`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean#L80).
+**`CondensedMatter.Crystal.PeriodicGraph.linearHom`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean#L80).
 
 > The linear part of a cell symmetry as a homomorphism to the lattice automorphisms.
 
@@ -58,7 +58,7 @@ def pointStabilizer (g : PeriodicGraph (Crystal.ofUnitCell G Unit)) :
 def linearHom (G F : Type*) [AddCommGroup G] : CellSymmetry G F →* Multiplicative (AddAut G)
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.linear_mem_pointStabilizer`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean#L86).
+**`CondensedMatter.Crystal.PeriodicGraph.linear_mem_pointStabilizer`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean#L86).
 
 > Bond-preserving symmetries have linear parts in the point stabilizer.
 
@@ -70,7 +70,7 @@ lemma linear_mem_pointStabilizer (g : PeriodicGraph (Crystal.ofUnitCell G Unit))
 
 ## B. The point group of a crystal with one site per cell
 
-**`CondensedMatter.Crystal.PeriodicGraph.pointHom`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean#L98).
+**`CondensedMatter.Crystal.PeriodicGraph.pointHom`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean#L98).
 
 > The homomorphism from bond-preserving symmetries to the point stabilizer taking a symmetry to
 > its action on the lattice.
@@ -80,21 +80,21 @@ def pointHom (g : PeriodicGraph (Crystal.ofUnitCell G Unit)) :
     g.symmetries →* g.pointStabilizer
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.pointHom_surjective`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean#L103).
+**`CondensedMatter.Crystal.PeriodicGraph.pointHom_surjective`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean#L103).
 
 ```lean
 lemma pointHom_surjective (g : PeriodicGraph (Crystal.ofUnitCell G Unit)) :
     Function.Surjective (pointHom g)
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.ker_pointHom`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean#L111).
+**`CondensedMatter.Crystal.PeriodicGraph.ker_pointHom`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean#L111).
 
 ```lean
 lemma ker_pointHom (g : PeriodicGraph (Crystal.ofUnitCell G Unit)) :
     (pointHom g).ker = (CellSymmetry.translations G Unit).subgroupOf g.symmetries
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.pointGroupEquiv`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean#L132).
+**`CondensedMatter.Crystal.PeriodicGraph.pointGroupEquiv`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean#L132).
 
 > **The point group of a crystal with one site per cell is the group of lattice automorphisms
 > preserving the bonded displacements.**
@@ -106,7 +106,7 @@ noncomputable def pointGroupEquiv (g : PeriodicGraph (Crystal.ofUnitCell G Unit)
 
 ## C. The action on the lattice of any crystal
 
-**`CondensedMatter.Crystal.PeriodicGraph.pointLinearHom`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean#L141).
+**`CondensedMatter.Crystal.PeriodicGraph.pointLinearHom`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean#L141).
 
 > **The point group of any crystal acts on its translation lattice** through the linear parts of
 > its symmetries.
@@ -122,4 +122,4 @@ noncomputable def pointLinearHom {F : Type*} [Finite F]
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean)

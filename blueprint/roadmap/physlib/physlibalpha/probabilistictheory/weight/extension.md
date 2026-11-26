@@ -8,7 +8,7 @@ proof: formalized
 
 # Extending finite weights (PhyslibAlpha)
 
-The module `PhyslibAlpha.ProbabilisticTheory.Weight.Extension`, [PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean): 16 declarations, 15 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Weight.Extension`, [PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean): 16 declarations, 15 with a docstring.
 
 > A finite weight extends uniquely to a positive linear functional on the order unit space.
 
@@ -29,7 +29,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Weight.Extension`, [PhyslibAlpha/Pr
 
 ## A. The raw shifted value
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.rawValue`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L59).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.rawValue`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L59).
 
 > `A` shifted into the cone by `r` copies of the order unit, minus the corresponding multiple
 > of the weight of the order unit.
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Weight.Extension`, [PhyslibAlpha/Pr
 noncomputable def rawValue (w : Weight E) (A : E) (r : ℝ) (h : 0 ≤ r • (1 : E) + A) : ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.rawValue_of_le`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L63).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.rawValue_of_le`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L63).
 
 > Shifting by a larger `s` gives the same value as shifting by `r`.
 
@@ -47,7 +47,7 @@ lemma rawValue_of_le (hw : w.IsFinite) (A : E) {r s : ℝ} (hr : 0 ≤ r • (1 
     (hs : 0 ≤ s • (1 : E) + A) (hrs : r ≤ s) : rawValue w A s hs = rawValue w A r hr
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.rawValue_indep`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L78).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.rawValue_indep`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L78).
 
 > The shifted value of a finite weight does not depend on the chosen shift.
 
@@ -58,7 +58,7 @@ lemma rawValue_indep (hw : w.IsFinite) (A : E) {r s : ℝ} (hr : 0 ≤ r • (1 
 
 ## B. The linear extension
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toFun`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L90).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toFun`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L90).
 
 > The linear extension of a finite weight from the positive cone to all of `E`.
 
@@ -66,7 +66,7 @@ lemma rawValue_indep (hw : w.IsFinite) (A : E) {r s : ℝ} (hr : 0 ≤ r • (1 
 noncomputable def toFun (w : Weight E) (A : E) : ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toFun_eq`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L95).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toFun_eq`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L95).
 
 > The extension can be computed with any shift `r` making `r • 1 + A` nonnegative.
 
@@ -75,13 +75,13 @@ lemma toFun_eq (hw : w.IsFinite) (A : E) {r : ℝ} (h : 0 ≤ r • (1 : E) + A)
     toFun w A = rawValue w A r h
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toFun_of_nonneg`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L100).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toFun_of_nonneg`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L100).
 
 ```lean
 lemma toFun_of_nonneg (hw : w.IsFinite) (A : PosCone E) : toFun w (A : E) = (w A).toReal
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toFun_zero`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L107).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toFun_zero`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L107).
 
 > The extension of a finite weight sends `0` to `0`.
 
@@ -89,7 +89,7 @@ lemma toFun_of_nonneg (hw : w.IsFinite) (A : PosCone E) : toFun w (A : E) = (w A
 lemma toFun_zero (hw : w.IsFinite) : toFun w (0 : E) = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toFun_add`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L111).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toFun_add`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L111).
 
 > The extension of a finite weight is additive.
 
@@ -97,7 +97,7 @@ lemma toFun_zero (hw : w.IsFinite) : toFun w (0 : E) = 0
 lemma toFun_add (hw : w.IsFinite) (A B : E) : toFun w (A + B) = toFun w A + toFun w B
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toFun_neg`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L127).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toFun_neg`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L127).
 
 > The extension of a finite weight is odd.
 
@@ -105,7 +105,7 @@ lemma toFun_add (hw : w.IsFinite) (A B : E) : toFun w (A + B) = toFun w A + toFu
 lemma toFun_neg (hw : w.IsFinite) (A : E) : toFun w (-A) = -toFun w A
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toFun_real_nonneg_smul`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L133).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toFun_real_nonneg_smul`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L133).
 
 > Nonnegative real homogeneity of the finite-weight extension.
 
@@ -114,7 +114,7 @@ lemma toFun_real_nonneg_smul (hw : w.IsFinite) {t : ℝ} (ht : 0 ≤ t) (A : E) 
     toFun w (t • A) = t * toFun w A
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toFun_smul`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L150).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toFun_smul`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L150).
 
 > Full real homogeneity of the finite-weight extension.
 
@@ -122,7 +122,7 @@ lemma toFun_real_nonneg_smul (hw : w.IsFinite) {t : ℝ} (ht : 0 ≤ t) (A : E) 
 lemma toFun_smul (hw : w.IsFinite) (t : ℝ) (A : E) : toFun w (t • A) = t * toFun w A
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toLinearMap`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L157).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toLinearMap`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L157).
 
 > The `ℝ`-linear map extending a finite weight.
 
@@ -130,7 +130,7 @@ lemma toFun_smul (hw : w.IsFinite) (t : ℝ) (A : E) : toFun w (t • A) = t * t
 noncomputable def toLinearMap (hw : w.IsFinite) : E →ₗ[ℝ] ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toLinearMap_apply`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L164).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toLinearMap_apply`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L164).
 
 > The linear extension agrees with `toFun` by construction.
 
@@ -138,7 +138,7 @@ noncomputable def toLinearMap (hw : w.IsFinite) : E →ₗ[ℝ] ℝ
 lemma toLinearMap_apply (hw : w.IsFinite) (A : E) : toLinearMap hw A = toFun w A
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toPositiveLinearMap`**, a def, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L167).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toPositiveLinearMap`**, a def, [line 167](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L167).
 
 > The positive linear extension of a finite weight.
 
@@ -146,7 +146,7 @@ lemma toLinearMap_apply (hw : w.IsFinite) (A : E) : toLinearMap hw A = toFun w A
 noncomputable def toPositiveLinearMap (hw : w.IsFinite) : E →ₚ[ℝ] ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toPositiveLinearMap_apply`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L174).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toPositiveLinearMap_apply`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L174).
 
 > The positive extension agrees with the underlying finite-weight extension.
 
@@ -155,7 +155,7 @@ lemma toPositiveLinearMap_apply (hw : w.IsFinite) (A : E) :
     hw.toPositiveLinearMap A = toFun w A
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toPositiveLinearMap_apply_of_nonneg`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L178).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsFinite.toPositiveLinearMap_apply_of_nonneg`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean#L178).
 
 > On positive elements, the positive extension is the real value of the weight.
 
@@ -170,4 +170,4 @@ lemma toPositiveLinearMap_apply_of_nonneg (hw : w.IsFinite) (A : PosCone E) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean)

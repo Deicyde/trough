@@ -8,7 +8,7 @@ proof: formalized
 
 # Ladder systems
 
-The module `PhyslibAlpha.Mathematics.LadderSystem.Basic`, [PhyslibAlpha/Mathematics/LadderSystem/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean): 23 declarations, 19 with a docstring, 4 listed as significant.
+The module `PhyslibAlpha.Mathematics.LadderSystem.Basic`, [PhyslibAlpha/Mathematics/LadderSystem/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean): 23 declarations, 19 with a docstring, 4 listed as significant.
 
 > Ladder systems of creation and annihilation operators, their `gl(d)` action and number operators.
 
@@ -54,7 +54,7 @@ The module `PhyslibAlpha.Mathematics.LadderSystem.Basic`, [PhyslibAlpha/Mathemat
 
 ## A. The `LadderSystem` structure
 
-**`bracketRight`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L86).
+**`bracketRight`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L86).
 
 > Bracketing on the right by a fixed element, as a `K`-linear self-map.
 
@@ -62,7 +62,7 @@ The module `PhyslibAlpha.Mathematics.LadderSystem.Basic`, [PhyslibAlpha/Mathemat
 def bracketRight (y : L) : L →ₗ[K] L
 ```
 
-**`bracketLeft`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L92).
+**`bracketLeft`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L92).
 
 > Bracketing on the left by a fixed element, as a `K`-linear self-map.
 
@@ -70,7 +70,7 @@ def bracketRight (y : L) : L →ₗ[K] L
 def bracketLeft (x : L) : L →ₗ[K] L
 ```
 
-**`LinearMap.lie_apply_eq_of_lie_basis_eq`**, a theorem, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L104). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`LinearMap.lie_apply_eq_of_lie_basis_eq`**, a theorem, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L104). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > A `K`-linear map agreeing with the bracket on basis pairs agrees with the bracket
 > everywhere.
@@ -81,7 +81,7 @@ theorem LinearMap.lie_apply_eq_of_lie_basis_eq (b : Basis ι K L) (f : L →ₗ[
     f ⁅x, y⁆ = ⁅f x, f y⁆
 ```
 
-**`LinearMap.lie_apply_eq_of_lie_span_eq`**, a theorem, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L124). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`LinearMap.lie_apply_eq_of_lie_span_eq`**, a theorem, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L124). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Same, from a spanning set rather than a basis (`LinearMap.ext_on` in place of `Basis.ext`) —
 > for generators that span but aren't worth packaging as an indexed basis.
@@ -92,7 +92,7 @@ theorem LinearMap.lie_apply_eq_of_lie_span_eq {s : Set L} (hs : Submodule.span K
     f ⁅x, y⁆ = ⁅f x, f y⁆
 ```
 
-**`LadderSystem`**, a structure, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L148).
+**`LadderSystem`**, a structure, [line 148](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L148).
 
 > A system of `d` independent ladder pairs on a `K`-vector space `V`: annihilation operators
 > `a i` and creation operators `ac i` (`i : Fin d`), satisfying the canonical commutation relations.
@@ -114,14 +114,14 @@ structure LadderSystem (K V : Type*) [Field K] [AddCommGroup V] [Module K V] (d 
   comm_ac_ac : ∀ i j, (⁅ac i, ac j⁆ : Module.End K V) = 0
 ```
 
-**`LadderSystem.assoc_leibniz`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L164).
+**`LadderSystem.assoc_leibniz`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L164).
 
 ```lean
 lemma assoc_leibniz (x y z : Module.End K V) :
     (⁅x, y * z⁆ : Module.End K V) = ⁅x, y⁆ * z + y * ⁅x, z⁆
 ```
 
-**`LadderSystem.assoc_leibniz'`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L169).
+**`LadderSystem.assoc_leibniz'`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L169).
 
 ```lean
 lemma assoc_leibniz' (x y z : Module.End K V) :
@@ -130,7 +130,7 @@ lemma assoc_leibniz' (x y z : Module.End K V) :
 
 ## B. The `gl(d)`-module structure
 
-**`LadderSystem.E`**, a def, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L181).
+**`LadderSystem.E`**, a def, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L181).
 
 > The `gl(d)` bilinears `E i j := ac i · a j`.
 
@@ -138,7 +138,7 @@ lemma assoc_leibniz' (x y z : Module.End K V) :
 def E (i j : Fin d) : Module.End K V
 ```
 
-**`LadderSystem.lie_E`**, a theorem, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L185). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`LadderSystem.lie_E`**, a theorem, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L185). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > `E` satisfies the defining relations of `gl(d)`:
 > `[E i j, E k l] = δⱼₖ E i l - δₗᵢ E k j`.
@@ -149,7 +149,7 @@ theorem lie_E (i j k l : Fin d) :
       = (δ[j,k] : K) • L.E i l - (δ[l,i] : K) • L.E k j
 ```
 
-**`LadderSystem.lie_single`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L199).
+**`LadderSystem.lie_single`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L199).
 
 > The matrix units satisfy the same relations, at the level of `gl(d)` itself.
 
@@ -159,7 +159,7 @@ lemma lie_single (i j k l : Fin d) :
       = (δ[j,k] : K) • Matrix.single i l 1 - (δ[l,i] : K) • Matrix.single k j 1
 ```
 
-**`LadderSystem.toGlHomLinear`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L208).
+**`LadderSystem.toGlHomLinear`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L208).
 
 > The `K`-linear map sending matrix unit `Matrix.single i j 1` to `E i j`.
 
@@ -168,21 +168,21 @@ noncomputable def toGlHomLinear (L : LadderSystem K V d) :
     Matrix (Fin d) (Fin d) K →ₗ[K] Module.End K V
 ```
 
-**`LadderSystem.toGlHomLinear_stdBasis`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L212).
+**`LadderSystem.toGlHomLinear_stdBasis`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L212).
 
 ```lean
 lemma toGlHomLinear_stdBasis (L : LadderSystem K V d) (i j : Fin d) :
     L.toGlHomLinear (Matrix.stdBasis K (Fin d) (Fin d) (i, j)) = L.E i j
 ```
 
-**`LadderSystem.toGlHomLinear_single`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L216).
+**`LadderSystem.toGlHomLinear_single`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L216).
 
 ```lean
 lemma toGlHomLinear_single (L : LadderSystem K V d) (i j : Fin d) :
     L.toGlHomLinear (Matrix.single i j (1 : K)) = L.E i j
 ```
 
-**`LadderSystem.toGlHomLinear_lie`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L221).
+**`LadderSystem.toGlHomLinear_lie`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L221).
 
 > `toGlHomLinear` respects brackets.
 
@@ -191,7 +191,7 @@ lemma toGlHomLinear_lie (L : LadderSystem K V d) (x y : Matrix (Fin d) (Fin d) K
     L.toGlHomLinear ⁅x, y⁆ = ⁅L.toGlHomLinear x, L.toGlHomLinear y⁆
 ```
 
-**`LadderSystem.toGlHom`**, a def, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L229).
+**`LadderSystem.toGlHom`**, a def, [line 229](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L229).
 
 > The `gl(d)`-representation on `V` generated by a ladder system, bundled as a `LieHom`.
 
@@ -200,7 +200,7 @@ noncomputable def toGlHom (L : LadderSystem K V d) :
     Matrix (Fin d) (Fin d) K →ₗ⁅K⁆ Module.End K V
 ```
 
-**`LadderSystem.toLieRingModule`**, a def, [line 235](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L235).
+**`LadderSystem.toLieRingModule`**, a def, [line 235](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L235).
 
 > `V` as a `gl(d)`-module, the `LieRingModule` instance (not global -- depends on `L`; use via
 > `haveI := L.toLieRingModule`).
@@ -210,7 +210,7 @@ noncomputable def toLieRingModule (L : LadderSystem K V d) :
     LieRingModule (Matrix (Fin d) (Fin d) K) V
 ```
 
-**`LadderSystem.toLieModule`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L240).
+**`LadderSystem.toLieModule`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L240).
 
 > The companion `LieModule` instance.
 
@@ -221,7 +221,7 @@ lemma toLieModule (L : LadderSystem K V d) :
 
 ## C. The number operator
 
-**`LadderSystem.N`**, a def, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L251).
+**`LadderSystem.N`**, a def, [line 251](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L251).
 
 > The number operator for mode `i`, `Nᵢ ≔ Eᵢᵢ = acᵢaᵢ`.
 
@@ -231,7 +231,7 @@ def N (i : Fin d) : Module.End K V
 
 ### C.1. Commutation relations
 
-**`LadderSystem.lie_N_a`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L260).
+**`LadderSystem.lie_N_a`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L260).
 
 > `[Nᵢ, aⱼ] = -δᵢⱼaᵢ`.
 
@@ -240,7 +240,7 @@ lemma lie_N_a (i j : Fin d) :
     (⁅L.N i, L.a j⁆ : Module.End K V) = (-δ[i,j] : K) • L.a i
 ```
 
-**`LadderSystem.lie_N_ac`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L270).
+**`LadderSystem.lie_N_ac`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L270).
 
 > `[Nᵢ, acⱼ] = δᵢⱼacᵢ`.
 
@@ -249,7 +249,7 @@ lemma lie_N_ac (i j : Fin d) :
     (⁅L.N i, L.ac j⁆ : Module.End K V) = (δ[i,j] : K) • L.ac i
 ```
 
-**`LadderSystem.lie_N_N`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L278).
+**`LadderSystem.lie_N_N`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L278).
 
 > `[Nᵢ, Nⱼ] = 0`: the number operators commute among themselves.
 
@@ -259,7 +259,7 @@ lemma lie_N_N (i j : Fin d) : (⁅L.N i, L.N j⁆ : Module.End K V) = 0
 
 ### C.2. The total number operator
 
-**`LadderSystem.totalN`**, a def, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L293).
+**`LadderSystem.totalN`**, a def, [line 293](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L293).
 
 > The total number operator, `∑ᵢNᵢ` -- the total excitation count across every mode.
 
@@ -267,7 +267,7 @@ lemma lie_N_N (i j : Fin d) : (⁅L.N i, L.N j⁆ : Module.End K V) = 0
 def totalN (L : LadderSystem K V d) : Module.End K V
 ```
 
-**`LadderSystem.lie_totalN_E`**, a theorem, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L301). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`LadderSystem.lie_totalN_E`**, a theorem, [line 301](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean#L301). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The total number operator is central in `gl(d)`: it commutes with every generator
 > `E i j`, not just the diagonal ones (contrast `lie_N_N`, which only says the diagonal `Nᵢ`
@@ -286,4 +286,4 @@ theorem lie_totalN_E (j k : Fin d) : (⁅L.totalN, L.E j k⁆ : Module.End K V) 
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/LadderSystem/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean)
+- [PhyslibAlpha/Mathematics/LadderSystem/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/LadderSystem/Basic.lean)

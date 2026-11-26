@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: TimeAndSpace, TimeAndSpace.time, TimeAndSpace.space, TimeAndSpace.time_apply, TimeAndSpace.space_apply, TimeAndSpace.dist_time_le, TimeAndSpace.dist_space_le, Space.fderiv_space_eq_fderiv_curry
+lean: TimeAndSpace, TimeAndSpace.time, TimeAndSpace.space, TimeAndSpace.time_apply, TimeAndSpace.space_apply, TimeAndSpace.dist_time_le, TimeAndSpace.dist_space_le, TimeAndSpace.euclideanCoordinates
 statement: formalized
 proof: formalized
 ---
 
 # Functions and distributions on Time and Space d
 
-The module `Physlib.SpaceAndTime.TimeAndSpace.Basic`, [Physlib/SpaceAndTime/TimeAndSpace/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean): 36 declarations, 12 with a docstring.
+The module `Physlib.SpaceAndTime.TimeAndSpace.Basic`, [Physlib/SpaceAndTime/TimeAndSpace/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean): 41 declarations, 17 with a docstring.
 
 ## i. Overview
 
@@ -21,6 +21,8 @@ The module `Physlib.SpaceAndTime.TimeAndSpace.Basic`, [Physlib/SpaceAndTime/Time
 
 > - `TimeAndSpace d` : Euclidean spacetime as the product of time and space.
 > - `TimeAndSpace.time` : The projection from `TimeAndSpace d` to `Time`.
+> - `TimeAndSpace.euclideanCoordinates` : Time-first Euclidean coordinates.
+> - `TimeAndSpace.timeReflection` : Reflection about the chosen time origin.
 > - `TimeAndSpace.space` : The projection from `TimeAndSpace d` to `Space d`.
 > - `distTimeDeriv` : The derivative of a distribution on `Time × Space d` along the
 >   temporal coordinate.
@@ -38,7 +40,7 @@ The module `Physlib.SpaceAndTime.TimeAndSpace.Basic`, [Physlib/SpaceAndTime/Time
 
 ### A.1. The `TimeAndSpace` coordinate product
 
-**`TimeAndSpace`**, an abbrev, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L76).
+**`TimeAndSpace`**, an abbrev, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L79).
 
 > Euclidean spacetime as the product of time and `d`-dimensional space.
 
@@ -46,7 +48,7 @@ The module `Physlib.SpaceAndTime.TimeAndSpace.Basic`, [Physlib/SpaceAndTime/Time
 abbrev TimeAndSpace (d : ℕ := 3)
 ```
 
-**`TimeAndSpace.time`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L83).
+**`TimeAndSpace.time`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L86).
 
 > The time-coordinate projection from `TimeAndSpace d`.
 
@@ -54,7 +56,7 @@ abbrev TimeAndSpace (d : ℕ := 3)
 noncomputable def time {d : ℕ} : TimeAndSpace d →L[ℝ] Time
 ```
 
-**`TimeAndSpace.space`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L87).
+**`TimeAndSpace.space`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L90).
 
 > The spatial-coordinate projection from `TimeAndSpace d`.
 
@@ -62,21 +64,21 @@ noncomputable def time {d : ℕ} : TimeAndSpace d →L[ℝ] Time
 noncomputable def space {d : ℕ} : TimeAndSpace d →L[ℝ] Space d
 ```
 
-**`TimeAndSpace.time_apply`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L91).
+**`TimeAndSpace.time_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L94).
 
 ```lean
 lemma time_apply (tx : TimeAndSpace d) :
     time tx = tx.1
 ```
 
-**`TimeAndSpace.space_apply`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L95).
+**`TimeAndSpace.space_apply`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L98).
 
 ```lean
 lemma space_apply (tx : TimeAndSpace d) :
     space tx = tx.2
 ```
 
-**`TimeAndSpace.dist_time_le`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L99).
+**`TimeAndSpace.dist_time_le`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L102).
 
 > The time projection is nonexpanding for the product metric.
 
@@ -85,7 +87,7 @@ lemma dist_time_le (tx ty : TimeAndSpace d) :
     dist (time tx) (time ty) ≤ dist tx ty
 ```
 
-**`TimeAndSpace.dist_space_le`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L105).
+**`TimeAndSpace.dist_space_le`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L108).
 
 > The spatial projection is nonexpanding for the product metric.
 
@@ -94,9 +96,54 @@ lemma dist_space_le (tx ty : TimeAndSpace d) :
     dist (space tx) (space ty) ≤ dist tx ty
 ```
 
+**`TimeAndSpace.euclideanCoordinates`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L114).
+
+> Euclidean coordinates with time first and the spatial coordinates following it.
+
+```lean
+noncomputable def euclideanCoordinates : TimeAndSpace d ≃L[ℝ] EuclideanSpace ℝ (Fin (d + 1))
+```
+
+**`TimeAndSpace.euclideanCoordinates_measurePreserving`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L134).
+
+> The time-first Euclidean coordinates preserve spacetime volume.
+
+```lean
+lemma euclideanCoordinates_measurePreserving :
+    MeasurePreserving (euclideanCoordinates (d := d)) volume volume
+```
+
+#### A.1.1. Time reflection
+
+**`TimeAndSpace.timeReflection`**, a def, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L151).
+
+> Time reflection about the chosen time origin, fixing all spatial coordinates.
+
+```lean
+noncomputable def timeReflection : TimeAndSpace d ≃L[ℝ] TimeAndSpace d
+```
+
+**`TimeAndSpace.timeReflection_apply`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L156).
+
+> Time reflection reverses time and leaves space unchanged.
+
+```lean
+lemma timeReflection_apply (tx : TimeAndSpace d) :
+    timeReflection tx = (-tx.1, tx.2)
+```
+
+**`TimeAndSpace.timeReflection_involutive`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L160).
+
+> Applying time reflection twice returns the original spacetime point.
+
+```lean
+lemma timeReflection_involutive (tx : TimeAndSpace d) :
+    timeReflection (timeReflection tx) = tx
+```
+
 ### A.2. Space and time derivatives in terms of curried functions
 
-**`Space.fderiv_space_eq_fderiv_curry`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L120).
+**`Space.fderiv_space_eq_fderiv_curry`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L174).
 
 ```lean
 lemma fderiv_space_eq_fderiv_curry {M} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -105,7 +152,7 @@ lemma fderiv_space_eq_fderiv_curry {M} [NormedAddCommGroup M] [NormedSpace ℝ M
     fderiv ℝ (fun x' => f t x') x dx = fderiv ℝ ↿f (t, x) (0, dx)
 ```
 
-**`Space.fderiv_time_eq_fderiv_curry`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L131).
+**`Space.fderiv_time_eq_fderiv_curry`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L185).
 
 ```lean
 lemma fderiv_time_eq_fderiv_curry {M} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -116,7 +163,7 @@ lemma fderiv_time_eq_fderiv_curry {M} [NormedAddCommGroup M] [NormedSpace ℝ M]
 
 ### A.3. Commuting time and space derivatives
 
-**`Space.fderiv_time_commute_fderiv_space`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L149).
+**`Space.fderiv_time_commute_fderiv_space`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L203).
 
 > Derivatives along space coordinates and time commute.
 
@@ -128,7 +175,7 @@ lemma fderiv_time_commute_fderiv_space {M} [NormedAddCommGroup M] [NormedSpace �
     = fderiv ℝ (fun x' => fderiv ℝ (fun t' => f t' x') t dt) x dx
 ```
 
-**`Space.time_deriv_comm_space_deriv`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L173).
+**`Space.time_deriv_comm_space_deriv`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L227).
 
 ```lean
 lemma time_deriv_comm_space_deriv {d i} {M} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -139,7 +186,7 @@ lemma time_deriv_comm_space_deriv {d i} {M} [NormedAddCommGroup M] [NormedSpace 
 
 ### A.4. Differentiablity conditions
 
-**`Space.space_deriv_differentiable_time`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L187).
+**`Space.space_deriv_differentiable_time`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L241).
 
 ```lean
 lemma space_deriv_differentiable_time {d i} {M} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -147,7 +194,7 @@ lemma space_deriv_differentiable_time {d i} {M} [NormedAddCommGroup M] [NormedSp
     Differentiable ℝ (fun t => Space.deriv i (f t) x)
 ```
 
-**`Space.time_deriv_differentiable_space`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L208).
+**`Space.time_deriv_differentiable_space`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L262).
 
 ```lean
 lemma time_deriv_differentiable_space {d } {M} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -155,7 +202,7 @@ lemma time_deriv_differentiable_space {d } {M} [NormedAddCommGroup M] [NormedSpa
     Differentiable ℝ (fun x => Time.deriv (f · x) t)
 ```
 
-**`Space.curl_differentiable_time`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L229).
+**`Space.curl_differentiable_time`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L283).
 
 ```lean
 lemma curl_differentiable_time
@@ -166,7 +213,7 @@ lemma curl_differentiable_time
 
 ### A.5. Time derivative commute with curl
 
-**`Space.time_deriv_curl_commute`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L245).
+**`Space.time_deriv_curl_commute`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L299).
 
 > Curl and time derivative commute.
 
@@ -178,7 +225,7 @@ lemma time_deriv_curl_commute (fₜ : Time → Space → EuclideanSpace ℝ (Fin
 
 ### A.6. Constant of time deriative and space derivatives zero
 
-**`Space.space_fun_of_time_deriv_eq_zero`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L273).
+**`Space.space_fun_of_time_deriv_eq_zero`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L327).
 
 ```lean
 lemma space_fun_of_time_deriv_eq_zero {d} {M} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -187,7 +234,7 @@ lemma space_fun_of_time_deriv_eq_zero {d} {M} [NormedAddCommGroup M] [NormedSpac
     ∃ (g : Space d → M), ∀ t x, f t x = g x
 ```
 
-**`Space.time_fun_of_space_deriv_eq_zero`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L291).
+**`Space.time_fun_of_space_deriv_eq_zero`**, a lemma, [line 345](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L345).
 
 ```lean
 lemma time_fun_of_space_deriv_eq_zero {d} {M} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -196,7 +243,7 @@ lemma time_fun_of_space_deriv_eq_zero {d} {M} [NormedAddCommGroup M] [NormedSpac
     ∃ (g : Time → M), ∀ t x, f t x = g t
 ```
 
-**`Space.const_of_time_deriv_space_deriv_eq_zero`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L307).
+**`Space.const_of_time_deriv_space_deriv_eq_zero`**, a lemma, [line 361](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L361).
 
 ```lean
 lemma const_of_time_deriv_space_deriv_eq_zero {d} {M} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -208,7 +255,7 @@ lemma const_of_time_deriv_space_deriv_eq_zero {d} {M} [NormedAddCommGroup M] [No
 
 ### A.7. Equal up to a constant of time and space derivatives equal
 
-**`Space.equal_up_to_const_of_deriv_eq`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L324).
+**`Space.equal_up_to_const_of_deriv_eq`**, a lemma, [line 378](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L378).
 
 ```lean
 lemma equal_up_to_const_of_deriv_eq {d} {M} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -222,7 +269,7 @@ lemma equal_up_to_const_of_deriv_eq {d} {M} [NormedAddCommGroup M] [NormedSpace 
 
 ### B.1. Time derivatives
 
-**`Space.distTimeDeriv`**, a def, [line 360](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L360).
+**`Space.distTimeDeriv`**, a def, [line 414](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L414).
 
 > The time derivative of a distribution dependent on time and space.
 
@@ -231,7 +278,7 @@ noncomputable def distTimeDeriv {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
     ((Time × Space d) →d[ℝ] M) →ₗ[ℝ] (Time × Space d) →d[ℝ] M
 ```
 
-**`Space.distTimeDeriv_apply`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L375).
+**`Space.distTimeDeriv_apply`**, a lemma, [line 429](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L429).
 
 ```lean
 lemma distTimeDeriv_apply {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -239,7 +286,7 @@ lemma distTimeDeriv_apply {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
     (distTimeDeriv f) ε = fderivD ℝ f ε (1, 0)
 ```
 
-**`Space.distTimeDeriv_apply'`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L380).
+**`Space.distTimeDeriv_apply'`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L434).
 
 ```lean
 lemma distTimeDeriv_apply' {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -249,7 +296,7 @@ lemma distTimeDeriv_apply' {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
     ((fderivCLM ℝ (Time × Space d) ℝ) ε))
 ```
 
-**`Space.apply_fderiv_eq_distTimeDeriv`**, a lemma, [line 387](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L387).
+**`Space.apply_fderiv_eq_distTimeDeriv`**, a lemma, [line 441](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L441).
 
 ```lean
 lemma apply_fderiv_eq_distTimeDeriv {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -260,7 +307,7 @@ lemma apply_fderiv_eq_distTimeDeriv {M d} [NormedAddCommGroup M] [NormedSpace �
 
 #### B.1.1. Composition with a CLM
 
-**`Space.distTimeDeriv_apply_CLM`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L399).
+**`Space.distTimeDeriv_apply_CLM`**, a lemma, [line 453](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L453).
 
 ```lean
 lemma distTimeDeriv_apply_CLM {M M2 d} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -270,7 +317,7 @@ lemma distTimeDeriv_apply_CLM {M M2 d} [NormedAddCommGroup M] [NormedSpace ℝ M
 
 ### B.2. Space derivatives
 
-**`Space.distSpaceDeriv`**, a def, [line 412](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L412).
+**`Space.distSpaceDeriv`**, a def, [line 466](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L466).
 
 > The space derivative of a distribution dependent on time and space.
 
@@ -279,7 +326,7 @@ noncomputable def distSpaceDeriv {M d} [NormedAddCommGroup M] [NormedSpace ℝ M
     (i : Fin d) : ((Time × Space d) →d[ℝ] M) →ₗ[ℝ] (Time × Space d) →d[ℝ] M
 ```
 
-**`Space.distSpaceDeriv_apply`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L427).
+**`Space.distSpaceDeriv_apply`**, a lemma, [line 481](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L481).
 
 ```lean
 lemma distSpaceDeriv_apply {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -287,7 +334,7 @@ lemma distSpaceDeriv_apply {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
     (distSpaceDeriv i f) ε = fderivD ℝ f ε (0, basis i)
 ```
 
-**`Space.distSpaceDeriv_apply'`**, a lemma, [line 432](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L432).
+**`Space.distSpaceDeriv_apply'`**, a lemma, [line 486](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L486).
 
 ```lean
 lemma distSpaceDeriv_apply' {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -297,7 +344,7 @@ lemma distSpaceDeriv_apply' {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
     ((fderivCLM ℝ (Time × Space d) ℝ) ε))
 ```
 
-**`Space.apply_fderiv_eq_distSpaceDeriv`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L439).
+**`Space.apply_fderiv_eq_distSpaceDeriv`**, a lemma, [line 493](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L493).
 
 ```lean
 lemma apply_fderiv_eq_distSpaceDeriv {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -309,7 +356,7 @@ lemma apply_fderiv_eq_distSpaceDeriv {M d} [NormedAddCommGroup M] [NormedSpace �
 
 #### B.2.1. Space derivatives commute
 
-**`Space.distSpaceDeriv_commute`**, a lemma, [line 452](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L452).
+**`Space.distSpaceDeriv_commute`**, a lemma, [line 506](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L506).
 
 ```lean
 lemma distSpaceDeriv_commute {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -319,7 +366,7 @@ lemma distSpaceDeriv_commute {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
 
 #### B.2.2. Composition with a CLM
 
-**`Space.distSpaceDeriv_apply_CLM`**, a lemma, [line 474](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L474).
+**`Space.distSpaceDeriv_apply_CLM`**, a lemma, [line 528](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L528).
 
 ```lean
 lemma distSpaceDeriv_apply_CLM {M M2 d} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -330,7 +377,7 @@ lemma distSpaceDeriv_apply_CLM {M M2 d} [NormedAddCommGroup M] [NormedSpace ℝ 
 
 ### B.3. Time and space derivatives commute
 
-**`Space.distTimeDeriv_commute_distSpaceDeriv`**, a lemma, [line 487](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L487).
+**`Space.distTimeDeriv_commute_distSpaceDeriv`**, a lemma, [line 541](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L541).
 
 ```lean
 lemma distTimeDeriv_commute_distSpaceDeriv {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -340,7 +387,7 @@ lemma distTimeDeriv_commute_distSpaceDeriv {M d} [NormedAddCommGroup M] [NormedS
 
 ### B.4. The spatial gradient
 
-**`Space.distSpaceGrad`**, a def, [line 510](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L510).
+**`Space.distSpaceGrad`**, a def, [line 564](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L564).
 
 > The spatial gradient of a distribution dependent on time and space.
 
@@ -349,7 +396,7 @@ noncomputable def distSpaceGrad {d} :
     ((Time × Space d) →d[ℝ] ℝ) →ₗ[ℝ] (Time × Space d) →d[ℝ] (EuclideanSpace ℝ (Fin d))
 ```
 
-**`Space.distSpaceGrad_apply`**, a lemma, [line 524](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L524).
+**`Space.distSpaceGrad_apply`**, a lemma, [line 578](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L578).
 
 ```lean
 lemma distSpaceGrad_apply {d} (f : (Time × Space d) →d[ℝ] ℝ) (ε : 𝓢(Time × Space d, ℝ)) :
@@ -358,7 +405,7 @@ lemma distSpaceGrad_apply {d} (f : (Time × Space d) →d[ℝ] ℝ) (ε : 𝓢(T
 
 ### B.5. The spatial divergence
 
-**`Space.distSpaceDiv`**, a def, [line 535](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L535).
+**`Space.distSpaceDiv`**, a def, [line 589](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L589).
 
 > The spatial divergence of a distribution dependent on time and space.
 
@@ -367,7 +414,7 @@ noncomputable def distSpaceDiv {d} :
     ((Time × Space d) →d[ℝ] (EuclideanSpace ℝ (Fin d))) →ₗ[ℝ] (Time × Space d) →d[ℝ] ℝ
 ```
 
-**`Space.distSpaceDiv_apply_eq_sum_distSpaceDeriv`**, a lemma, [line 549](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L549).
+**`Space.distSpaceDiv_apply_eq_sum_distSpaceDeriv`**, a lemma, [line 603](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L603).
 
 ```lean
 lemma distSpaceDiv_apply_eq_sum_distSpaceDeriv {d}
@@ -377,7 +424,7 @@ lemma distSpaceDiv_apply_eq_sum_distSpaceDeriv {d}
 
 ### B.6. The spatial curl
 
-**`Space.distSpaceCurl`**, a def, [line 560](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L560).
+**`Space.distSpaceCurl`**, a def, [line 614](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean#L614).
 
 > The curl of a distribution dependent on time and space.
 
@@ -393,4 +440,4 @@ noncomputable def distSpaceCurl : ((Time × Space 3) →d[ℝ] (EuclideanSpace �
 
 ## Sources
 
-- [Physlib/SpaceAndTime/TimeAndSpace/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean)
+- [Physlib/SpaceAndTime/TimeAndSpace/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/Basic.lean)

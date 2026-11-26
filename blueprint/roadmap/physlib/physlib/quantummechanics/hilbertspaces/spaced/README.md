@@ -1,8 +1,8 @@
 # SpaceD
 
-The folder [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD): 8 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [Physlib/QuantumMechanics/HilbertSpaces/SpaceD/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HilbertSpaces/SpaceD): 8 modules, an article each, in path order with Basic.lean first in its folder.
 
-The repository's API map for this folder, *Hilbert spaces on Space* ([Physlib/QuantumMechanics/HilbertSpaces/SpaceD/API-map.md](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
+The repository's API map for this folder, *Hilbert spaces on Space* ([Physlib/QuantumMechanics/HilbertSpaces/SpaceD/API-map.md](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HilbertSpaces/SpaceD/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
 
 *Content (Alpha)*
 
@@ -12,7 +12,7 @@ The repository's API map for this folder, *Hilbert spaces on Space* ([Physlib/Qu
 >
 > Restricting attention to a region of space gives further structure. The functions supported in a given subset of space form a Hilbert space of their own, with an inclusion into the full space and a projection onto it. [\[5\]](basic.md) The elements satisfying homogeneous Dirichlet boundary conditions on a subset of space form a subspace. [\[6\]](dirichletsubmodule.md) …
 >
-> Operators on these spaces come in two families. Any complex function of position gives a multiplication operator with maximal domain [\[7\]](../../operators/multiplication.md) , and the position operators are such multiplication operators. [\[8\]](../../operators/position.md) … The general theory of these operators lives in the operator algebra \{2}.
+> Operators on these spaces come in two families. Any complex function of position gives a multiplication operator with maximal domain [\[7\]](../../operators/spaced-multiplication.md) , and the position operators are such multiplication operators. [\[8\]](../../operators/spaced-position.md) … The general theory of these operators lives in the operator algebra \{2}.
 
 Its references:
 

@@ -8,7 +8,7 @@ proof: formalized
 
 # Polynomials with coefficients in an algebra
 
-The module `PhyslibAlpha.Mathematics.PolynomialEval`, [PhyslibAlpha/Mathematics/PolynomialEval.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PolynomialEval.lean): 11 declarations, 7 with a docstring.
+The module `PhyslibAlpha.Mathematics.PolynomialEval`, [PhyslibAlpha/Mathematics/PolynomialEval.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/PolynomialEval.lean): 11 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.Mathematics.PolynomialEval`, [PhyslibAlpha/Mathematics/
 
 ## A. Determinacy by evaluation at scalars
 
-**`Polynomial.eq_zero_of_forall_eval_algebraMap_eq_zero`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PolynomialEval.lean#L65).
+**`Polynomial.eq_zero_of_forall_eval_algebraMap_eq_zero`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/PolynomialEval.lean#L65).
 
 > A polynomial with coefficients in an algebra over an infinite field vanishes as soon as
 > it vanishes at the image of every scalar. Linear functionals separate the coefficients,
@@ -55,7 +55,7 @@ lemma eq_zero_of_forall_eval_algebraMap_eq_zero {k A : Type*} [Field k] [Infinit
     (h : ∀ c : k, p.eval (algebraMap k A c) = 0) : p = 0
 ```
 
-**`Polynomial.ext_of_forall_eval_algebraMap`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PolynomialEval.lean#L93).
+**`Polynomial.ext_of_forall_eval_algebraMap`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/PolynomialEval.lean#L93).
 
 > Two polynomials with coefficients in an algebra over an infinite field are equal as soon
 > as they agree at the image of every scalar.
@@ -68,7 +68,7 @@ lemma ext_of_forall_eval_algebraMap {k A : Type*} [Field k] [Infinite k]
 
 ## B. Applying a linear map to the coefficients
 
-**`Polynomial.mapCoeffs`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PolynomialEval.lean#L113).
+**`Polynomial.mapCoeffs`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/PolynomialEval.lean#L113).
 
 > The polynomial obtained by applying a function to every coefficient. Unlike
 > `Polynomial.map` this needs no multiplicativity, so it applies to derivations.
@@ -83,20 +83,20 @@ noncomputable def mapCoeffs {A : Type*} [Semiring A] (f : A → A) (p : Polynomi
     Polynomial A
 ```
 
-**`Polynomial.coeff_mapCoeffs`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PolynomialEval.lean#L117).
+**`Polynomial.coeff_mapCoeffs`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/PolynomialEval.lean#L117).
 
 ```lean
 lemma coeff_mapCoeffs {A : Type*} [Semiring A] {f : A → A} (hf0 : f 0 = 0)
     (p : Polynomial A) (n : ℕ) : (mapCoeffs f p).coeff n = f (p.coeff n)
 ```
 
-**`Polynomial.mapCoeffs_zero`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PolynomialEval.lean#L127).
+**`Polynomial.mapCoeffs_zero`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/PolynomialEval.lean#L127).
 
 ```lean
 lemma mapCoeffs_zero {A : Type*} [Semiring A] (f : A → A) : mapCoeffs f 0 = 0
 ```
 
-**`Polynomial.mapCoeffs_monomial`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PolynomialEval.lean#L130).
+**`Polynomial.mapCoeffs_monomial`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/PolynomialEval.lean#L130).
 
 ```lean
 lemma mapCoeffs_monomial {A : Type*} [Semiring A] {f : A → A} (hf0 : f 0 = 0)
@@ -104,7 +104,7 @@ lemma mapCoeffs_monomial {A : Type*} [Semiring A] {f : A → A} (hf0 : f 0 = 0)
     mapCoeffs f (Polynomial.monomial n a) = Polynomial.monomial n (f a)
 ```
 
-**`Polynomial.mapCoeffs_add`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PolynomialEval.lean#L139).
+**`Polynomial.mapCoeffs_add`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/PolynomialEval.lean#L140).
 
 ```lean
 lemma mapCoeffs_add {A : Type*} [Semiring A] {f : A → A} (hf0 : f 0 = 0)
@@ -112,7 +112,7 @@ lemma mapCoeffs_add {A : Type*} [Semiring A] {f : A → A} (hf0 : f 0 = 0)
     mapCoeffs f (p + q) = mapCoeffs f p + mapCoeffs f q
 ```
 
-**`Polynomial.eval_algebraMap_mapAlgHom`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PolynomialEval.lean#L148).
+**`Polynomial.eval_algebraMap_mapAlgHom`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/PolynomialEval.lean#L149).
 
 > Evaluation at a scalar commutes with pushing a polynomial along an algebra map: an
 > algebra map fixes the scalars.
@@ -123,7 +123,7 @@ lemma eval_algebraMap_mapAlgHom {k A B : Type*} [CommSemiring k] [Semiring A] [S
     (Polynomial.mapAlgHom f p).eval (algebraMap k B c) = f (p.eval (algebraMap k A c))
 ```
 
-**`Polynomial.eval_algebraMap_mapCoeffs`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PolynomialEval.lean#L162).
+**`Polynomial.eval_algebraMap_mapCoeffs`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/PolynomialEval.lean#L163).
 
 > Evaluation at a scalar commutes with applying a linear map to the coefficients: the
 > powers of the scalar are central, so they pass through the linear map.
@@ -134,7 +134,7 @@ lemma eval_algebraMap_mapCoeffs {k A : Type*} [Field k] [Ring A] [Algebra k A]
     (mapCoeffs f p).eval (algebraMap k A c) = f (p.eval (algebraMap k A c))
 ```
 
-**`Polynomial.eval_one_mapAlgHom`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PolynomialEval.lean#L176).
+**`Polynomial.eval_one_mapAlgHom`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/PolynomialEval.lean#L177).
 
 > Evaluation at one commutes with pushing a polynomial along an algebra map.
 
@@ -144,7 +144,7 @@ lemma eval_one_mapAlgHom {k A B : Type*} [CommSemiring k] [Semiring A] [Semiring
     (Polynomial.mapAlgHom f p).eval 1 = f (p.eval 1)
 ```
 
-**`Polynomial.mapCoeffs_mul_of_leibniz`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PolynomialEval.lean#L184).
+**`Polynomial.mapCoeffs_mul_of_leibniz`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/PolynomialEval.lean#L185).
 
 > A map satisfying the Leibniz rule satisfies it coefficientwise on polynomials. Applied to
 > a total derivative this is the Leibniz rule for the mass-weight polynomial.
@@ -162,4 +162,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/PolynomialEval.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/PolynomialEval.lean)
+- [PhyslibAlpha/Mathematics/PolynomialEval.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/PolynomialEval.lean)

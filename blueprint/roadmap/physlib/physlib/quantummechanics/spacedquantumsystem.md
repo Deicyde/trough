@@ -8,7 +8,7 @@ proof: formalized
 
 # Single-particle quantum system on `Space d`
 
-The module `Physlib.QuantumMechanics.SpaceDQuantumSystem`, [Physlib/QuantumMechanics/SpaceDQuantumSystem.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean): 21 declarations, 8 with a docstring.
+The module `Physlib.QuantumMechanics.SpaceDQuantumSystem`, [Physlib/QuantumMechanics/SpaceDQuantumSystem.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean): 22 declarations, 9 with a docstring.
 
 ## i. Overview
 
@@ -23,7 +23,7 @@ The module `Physlib.QuantumMechanics.SpaceDQuantumSystem`, [Physlib/QuantumMecha
 
 > * None.
 
-**`QuantumMechanics.SpaceDQuantumSystem`**, a structure, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L47).
+**`QuantumMechanics.SpaceDQuantumSystem`**, a structure, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L49).
 
 > A single-particle quantum system with Hilbert space `SpaceDHilbertSpace d`,
 > characterized by the particle's mass `m > 0` and potential function `potential : Space d → ℝ`.
@@ -37,7 +37,7 @@ structure SpaceDQuantumSystem (d : ℕ) where
   potential : Space d → ℝ
 ```
 
-**`QuantumMechanics.SpaceDQuantumSystem.HS`**, an abbrev, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L60).
+**`QuantumMechanics.SpaceDQuantumSystem.HS`**, an abbrev, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L62).
 
 > The Hilbert space, `SpaceDHilbertSpace d`.
 
@@ -47,19 +47,19 @@ abbrev HS (_ : SpaceDQuantumSystem d)
 
 ## A. Basic properties
 
-**`QuantumMechanics.SpaceDQuantumSystem.m_pos`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L67).
+**`QuantumMechanics.SpaceDQuantumSystem.m_pos`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L69).
 
 ```lean
 lemma m_pos : 0 < Q.m
 ```
 
-**`QuantumMechanics.SpaceDQuantumSystem.m_nonneg`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L70).
+**`QuantumMechanics.SpaceDQuantumSystem.m_nonneg`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L72).
 
 ```lean
 lemma m_nonneg : 0 ≤ Q.m
 ```
 
-**`QuantumMechanics.SpaceDQuantumSystem.m_ne_zero`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L73).
+**`QuantumMechanics.SpaceDQuantumSystem.m_ne_zero`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L75).
 
 ```lean
 lemma m_ne_zero : Q.m ≠ 0
@@ -69,7 +69,7 @@ lemma m_ne_zero : Q.m ≠ 0
 
 ### B.1. Kinetic energy
 
-**`QuantumMechanics.SpaceDQuantumSystem.kineticCLM`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L88).
+**`QuantumMechanics.SpaceDQuantumSystem.kineticCLM`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L90).
 
 > The kinetic operator `(2m)⁻¹𝐩²` as a continuous linear map on Schwartz space.
 
@@ -77,13 +77,13 @@ lemma m_ne_zero : Q.m ≠ 0
 def kineticCLM : 𝓢(Space d, ℂ) →L[ℂ] 𝓢(Space d, ℂ)
 ```
 
-**`QuantumMechanics.SpaceDQuantumSystem.kineticCLM_eq`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L90).
+**`QuantumMechanics.SpaceDQuantumSystem.kineticCLM_eq`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L92).
 
 ```lean
 lemma kineticCLM_eq : Q.kineticCLM = (2 * Q.m)⁻¹ • (𝐩 ⬝ᵥ 𝐩)
 ```
 
-**`QuantumMechanics.SpaceDQuantumSystem.kineticOperator`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L93).
+**`QuantumMechanics.SpaceDQuantumSystem.kineticOperator`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L95).
 
 > The kinetic operator as an unbounded operator with domain `schwartzSubmodule Q.d`.
 
@@ -91,7 +91,7 @@ lemma kineticCLM_eq : Q.kineticCLM = (2 * Q.m)⁻¹ • (𝐩 ⬝ᵥ 𝐩)
 def kineticOperator : Q.HS →ₗ.[ℂ] Q.HS
 ```
 
-**`QuantumMechanics.SpaceDQuantumSystem.kineticOperator_eq`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L95).
+**`QuantumMechanics.SpaceDQuantumSystem.kineticOperator_eq`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L97).
 
 ```lean
 lemma kineticOperator_eq : Q.kineticOperator = ofReal (2 * Q.m)⁻¹ • momentumSqOperator
@@ -99,7 +99,7 @@ lemma kineticOperator_eq : Q.kineticOperator = ofReal (2 * Q.m)⁻¹ • momentu
 
 ### B.2. Potential energy
 
-**`QuantumMechanics.SpaceDQuantumSystem.potentialCLM`**, a def, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L103).
+**`QuantumMechanics.SpaceDQuantumSystem.potentialCLM`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L105).
 
 > The potential operator as a continuous linear map on Schwartz space,
 > where `Q.potential` is a function of temperate growth.
@@ -108,20 +108,20 @@ lemma kineticOperator_eq : Q.kineticOperator = ofReal (2 * Q.m)⁻¹ • momentu
 def potentialCLM : 𝓢(Space d, ℂ) →L[ℂ] 𝓢(Space d, ℂ)
 ```
 
-**`QuantumMechanics.SpaceDQuantumSystem.potentialCLM_eq`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L105).
+**`QuantumMechanics.SpaceDQuantumSystem.potentialCLM_eq`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L107).
 
 ```lean
 lemma potentialCLM_eq : Q.potentialCLM = smulLeftCLM ℂ (ofReal ∘ Q.potential)
 ```
 
-**`QuantumMechanics.SpaceDQuantumSystem.potentialCLM_apply`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L107).
+**`QuantumMechanics.SpaceDQuantumSystem.potentialCLM_apply`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L109).
 
 ```lean
 lemma potentialCLM_apply (h_HTG : Q.potential.HasTemperateGrowth) (ψ : 𝓢(Space d, ℂ)) :
     Q.potentialCLM ψ = fun x ↦ Q.potential x • ψ x
 ```
 
-**`QuantumMechanics.SpaceDQuantumSystem.potentialCLM_apply_apply`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L113).
+**`QuantumMechanics.SpaceDQuantumSystem.potentialCLM_apply_apply`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L115).
 
 ```lean
 lemma potentialCLM_apply_apply
@@ -129,7 +129,7 @@ lemma potentialCLM_apply_apply
     Q.potentialCLM ψ x = Q.potential x • ψ x
 ```
 
-**`QuantumMechanics.SpaceDQuantumSystem.potentialOperator`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L120).
+**`QuantumMechanics.SpaceDQuantumSystem.potentialOperator`**, a def, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L122).
 
 > The potential operator as a self-adjoint, unbounded multiplication operator
 > with domain `{ψ ∈ Q.HS | Q.potential • ψ ∈ Q.HS}`.
@@ -138,20 +138,20 @@ lemma potentialCLM_apply_apply
 def potentialOperator : Q.HS →ₗ.[ℂ] Q.HS
 ```
 
-**`QuantumMechanics.SpaceDQuantumSystem.potentialOperator_eq`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L122).
+**`QuantumMechanics.SpaceDQuantumSystem.potentialOperator_eq`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L124).
 
 ```lean
 lemma potentialOperator_eq : Q.potentialOperator = 𝓜 volume (ofReal ∘ Q.potential)
 ```
 
-**`QuantumMechanics.SpaceDQuantumSystem.potentialOperator_isSelfAdjoint`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L124).
+**`QuantumMechanics.SpaceDQuantumSystem.potentialOperator_isSelfAdjoint`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L126).
 
 ```lean
 lemma potentialOperator_isSelfAdjoint (h_AESM : AEStronglyMeasurable Q.potential) :
     IsSelfAdjoint Q.potentialOperator
 ```
 
-**`QuantumMechanics.SpaceDQuantumSystem.potentialOperator_domain_ge`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L128).
+**`QuantumMechanics.SpaceDQuantumSystem.potentialOperator_domain_ge`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L130).
 
 ```lean
 lemma potentialOperator_domain_ge (h_HTG : Q.potential.HasTemperateGrowth) :
@@ -160,7 +160,7 @@ lemma potentialOperator_domain_ge (h_HTG : Q.potential.HasTemperateGrowth) :
 
 ### B.3. Hamiltonian
 
-**`QuantumMechanics.SpaceDQuantumSystem.hamiltonianCLM`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L138).
+**`QuantumMechanics.SpaceDQuantumSystem.hamiltonianCLM`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L140).
 
 > The Hamiltonian operator as a continuous linear map on Schwartz space,
 > where `Q.potential` is a function of temperate growth.
@@ -169,13 +169,13 @@ lemma potentialOperator_domain_ge (h_HTG : Q.potential.HasTemperateGrowth) :
 def hamiltonianCLM : 𝓢(Space d, ℂ) →L[ℂ] 𝓢(Space d, ℂ)
 ```
 
-**`QuantumMechanics.SpaceDQuantumSystem.hamiltonianCLM_eq`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L140).
+**`QuantumMechanics.SpaceDQuantumSystem.hamiltonianCLM_eq`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L142).
 
 ```lean
 lemma hamiltonianCLM_eq : Q.hamiltonianCLM = Q.kineticCLM + Q.potentialCLM
 ```
 
-**`QuantumMechanics.SpaceDQuantumSystem.hamiltonianOperator`**, a def, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L143).
+**`QuantumMechanics.SpaceDQuantumSystem.hamiltonianOperator`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L145).
 
 > The Hamilontian operator as a symmetric unbounded operator.
 
@@ -183,17 +183,33 @@ lemma hamiltonianCLM_eq : Q.hamiltonianCLM = Q.kineticCLM + Q.potentialCLM
 def hamiltonianOperator : Q.HS →ₗ.[ℂ] Q.HS
 ```
 
-**`QuantumMechanics.SpaceDQuantumSystem.hamiltonianOperator_eq`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L145).
+**`QuantumMechanics.SpaceDQuantumSystem.hamiltonianOperator_eq`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L147).
 
 ```lean
 lemma hamiltonianOperator_eq : Q.hamiltonianOperator = Q.kineticOperator + Q.potentialOperator
 ```
 
+## C. Reflectionless systems in one dimension
+
+**`QuantumMechanics.SpaceDQuantumSystem.IsReflectionless`**, a def, [line 164](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean#L164).
+
+> A system in one dimension is reflectionless if for every wavenumber `k ≠ 0` there is a
+> generalized eigenvector `⟨Ψ|` of the Hamiltonian in the strong dual of the Schwartz space, with
+> energy `ℏ² k² / (2 m)`, which looks like a non-zero multiple of the plane wave bra `⟨k|` at both
+> ends. Far away is probed by translating a test function by `a`:
+> `e^{i k a} ⟨Ψ|τₐ φ⟩ → T ⟨k|φ⟩` as `a → ∞`, and likewise with `T'` as `a → -∞`. A reflected wave
+> `e^{-i k x}` would add a term oscillating like `e^{2 i k a}`, so the limits would not exist.
+
+```lean
+def IsReflectionless (Q : SpaceDQuantumSystem 1) : Prop
+```
+
 ## Depends on
 
-- [Momentum operators](operators/momentum.md)
-- [Multiplication operators on `SpaceDHilbertSpace`](operators/multiplication.md)
+- [Momentum states](hilbertspaces/spaced/momentumstates.md)
+- [Multiplication operators on `SpaceDHilbertSpace`](operators/spaced-multiplication.md)
+- [Translations on space](../spaceandtime/space/part-01/translations.md)
 
 ## Sources
 
-- [Physlib/QuantumMechanics/SpaceDQuantumSystem.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean)
+- [Physlib/QuantumMechanics/SpaceDQuantumSystem.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/SpaceDQuantumSystem.lean)

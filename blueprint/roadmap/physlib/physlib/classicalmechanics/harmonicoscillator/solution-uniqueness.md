@@ -8,7 +8,7 @@ proof: formalized
 
 # Uniqueness
 
-The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Uniqueness`, [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Uniqueness.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Uniqueness.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Uniqueness`, [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Uniqueness.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Uniqueness.lean): 1 declaration, 1 with a docstring.
 
 ## i. Overview
 
@@ -28,7 +28,7 @@ The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Uniqueness`, 
 > We show that the trajectories are the unique solutions to the equation of motion
 > for the given initial conditions.
 
-**`ClassicalMechanics.HarmonicOscillator.InitialConditions.trajectories_unique`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Uniqueness.lean#L56).
+**`ClassicalMechanics.HarmonicOscillator.InitialConditions.trajectories_unique`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Uniqueness.lean#L56).
 
 > The trajectories to the equation of motion for a given set of initial conditions
 > are unique.
@@ -51,4 +51,4 @@ lemma trajectories_unique (IC : InitialConditions) (x : Time → EuclideanSpace 
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Uniqueness.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Uniqueness.lean)
+- [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Uniqueness.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Uniqueness.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # A. Electromagnetism
 
-The module `Physlib.Electromagnetism.Basic`, [Physlib/Electromagnetism/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Basic.lean): 8 declarations, 8 with a docstring.
+The module `Physlib.Electromagnetism.Basic`, [Physlib/Electromagnetism/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Basic.lean): 8 declarations, 8 with a docstring.
 
 > Electromagnetism describes electric and magnetic fields, their potentials and sources, and the
 > relations between them on space and spacetime. This module provides a compact foundational API used
@@ -30,7 +30,7 @@ The module `Physlib.Electromagnetism.Basic`, [Physlib/Electromagnetism/Basic.lea
 
 …
 
-**`Electromagnetism.ElectricField`**, an abbrev, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Basic.lean#L44).
+**`Electromagnetism.ElectricField`**, an abbrev, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Basic.lean#L44).
 
 > The electric field is a map from `(d + 1)`-dimensional spacetime to `ℝ^d`.
 
@@ -38,7 +38,7 @@ The module `Physlib.Electromagnetism.Basic`, [Physlib/Electromagnetism/Basic.lea
 abbrev ElectricField (d : ℕ := 3)
 ```
 
-**`Electromagnetism.MagneticField`**, an abbrev, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Basic.lean#L47).
+**`Electromagnetism.MagneticField`**, an abbrev, [line 47](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Basic.lean#L47).
 
 > The magnetic field is a map from `(d + 1)`-dimensional spacetime to `ℝ^d`.
 
@@ -46,7 +46,7 @@ abbrev ElectricField (d : ℕ := 3)
 abbrev MagneticField (d : ℕ := 3)
 ```
 
-**`Electromagnetism.VectorPotential`**, an abbrev, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Basic.lean#L52).
+**`Electromagnetism.VectorPotential`**, an abbrev, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Basic.lean#L52).
 
 > The vector potential of an electromagnetic field.
 
@@ -54,7 +54,7 @@ abbrev MagneticField (d : ℕ := 3)
 abbrev VectorPotential (d : ℕ := 3)
 ```
 
-**`Electromagnetism.EMSystem`**, a structure, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Basic.lean#L55).
+**`Electromagnetism.EMSystem`**, a structure, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Basic.lean#L55).
 
 > The electric permittivity and the magnetic permeability of free space.
 
@@ -66,7 +66,7 @@ structure EMSystem where
   μ₀ : ℝ
 ```
 
-**`Electromagnetism.ChargeDensity`**, an abbrev, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Basic.lean#L68).
+**`Electromagnetism.ChargeDensity`**, an abbrev, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Basic.lean#L68).
 
 > The charge density.
 
@@ -74,7 +74,7 @@ structure EMSystem where
 abbrev ChargeDensity
 ```
 
-**`Electromagnetism.CurrentDensity`**, an abbrev, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Basic.lean#L71).
+**`Electromagnetism.CurrentDensity`**, an abbrev, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Basic.lean#L71).
 
 > The current density.
 
@@ -82,7 +82,7 @@ abbrev ChargeDensity
 abbrev CurrentDensity
 ```
 
-**`Electromagnetism.EMSystem.c`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Basic.lean#L78).
+**`Electromagnetism.EMSystem.c`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Basic.lean#L78).
 
 > The speed of light.
 
@@ -90,7 +90,7 @@ abbrev CurrentDensity
 noncomputable def c : ℝ
 ```
 
-**`Electromagnetism.EMSystem.coulombConstant`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Basic.lean#L81).
+**`Electromagnetism.EMSystem.coulombConstant`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Basic.lean#L81).
 
 > Coulomb's constant.
 
@@ -104,4 +104,4 @@ noncomputable def coulombConstant : ℝ
 
 ## Sources
 
-- [Physlib/Electromagnetism/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Basic.lean)
+- [Physlib/Electromagnetism/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Basic.lean)

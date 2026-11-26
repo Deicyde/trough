@@ -8,7 +8,7 @@ proof: formalized
 
 # Existence of an outward Hohmann transfer
 
-The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.PublicStatement`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/PublicStatement.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/PublicStatement.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.PublicStatement`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/PublicStatement.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/PublicStatement.lean): 2 declarations, 2 with a docstring.
 
 > Two positive ordered radii admit a tangential two-impulse transfer.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Pu
 
 ## A. Existence and physical transfer identities
 
-**`ClassicalMechanics.HohmannTransfer.hohmann_transfer`**, a lemma, [line 43](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/PublicStatement.lean#L43).
+**`ClassicalMechanics.HohmannTransfer.hohmann_transfer`**, a lemma, [line 43](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/PublicStatement.lean#L43).
 
 > The explicit outward transfer satisfies the Newtonian equations and burn identities.
 
@@ -58,7 +58,7 @@ lemma hohmann_transfer (p : Parameters) :
     (∀ t, cross (position p t) (deriv (position p) t) = p.a*p.b*p.n)
 ```
 
-**`ClassicalMechanics.HohmannTransfer.exists_hohmann_transfer`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/PublicStatement.lean#L79).
+**`ClassicalMechanics.HohmannTransfer.exists_hohmann_transfer`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/PublicStatement.lean#L79).
 
 > Existence without asking the reader to trust a project-defined orbit predicate.
 > All geometric and motion hypotheses are consequences, not input fields.
@@ -92,4 +92,4 @@ lemma exists_hohmann_transfer (mu r₁ r₂ : ℝ)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/PublicStatement.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/PublicStatement.lean)
+- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/PublicStatement.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/PublicStatement.lean)

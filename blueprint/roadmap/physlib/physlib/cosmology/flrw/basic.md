@@ -8,7 +8,7 @@ proof: formalized
 
 # The Friedmann-Lemaître-Robertson-Walker metric
 
-The module `Physlib.Cosmology.FLRW.Basic`, [Physlib/Cosmology/FLRW/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean): 37 declarations, 31 with a docstring.
+The module `Physlib.Cosmology.FLRW.Basic`, [Physlib/Cosmology/FLRW/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean): 37 declarations, 31 with a docstring.
 
 > The spatial geometry of an FLRW model and its curvature parameter, the structures `FLRW` and
 > `CosmicFluid`, the density and pressure of the cosmological constant as a fluid and the cosmic
@@ -17,7 +17,7 @@ The module `Physlib.Cosmology.FLRW.Basic`, [Physlib/Cosmology/FLRW/Basic.lean](h
 > second-order Friedmann equations, the proposition `FLRW.FriedmannSolution` that a model and a
 > fluid solve them, and the Hubble and deceleration parameters.
 
-**`Cosmology.SpatialGeometry`**, an inductive, [line 37](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L37).
+**`Cosmology.SpatialGeometry`**, an inductive, [line 37](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L37).
 
 > The inductive type with three constructors:
 > - `Spherical (k : ℝ)`
@@ -31,7 +31,7 @@ inductive SpatialGeometry : Type where
   | Saddle (k : ℝ) (h : k > 0)
 ```
 
-**`Cosmology.SpatialGeometry.S`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L49).
+**`Cosmology.SpatialGeometry.S`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L49).
 
 > For `s` corresponding to
 > - `Spherical k`, `S s r = k * sin (r / k)`
@@ -42,7 +42,7 @@ inductive SpatialGeometry : Type where
 noncomputable def S (s : SpatialGeometry) : ℝ → ℝ
 ```
 
-**`Cosmology.SpatialGeometry.mul_sinh_as_div`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L58).
+**`Cosmology.SpatialGeometry.mul_sinh_as_div`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L58).
 
 > The limit of `S (Saddle k) r` as `k → ∞` is equal to `S (Flat) r`.
 > First show that `k * sinh(r / k) = sinh(r / k) / (1 / k)` pointwise.
@@ -52,7 +52,7 @@ lemma mul_sinh_as_div (r k : ℝ) :
     k * Real.sinh (r / k) = Real.sinh (r / k) / (1 / k)
 ```
 
-**`Cosmology.SpatialGeometry.tendsto_sinh_rx_over_x`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L63).
+**`Cosmology.SpatialGeometry.tendsto_sinh_rx_over_x`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L63).
 
 > First, show that limit of `sinh(r * x) / x` is r at the limit x goes to zero.
 > Then the next theorem will address the rewrite using Filter.Tendsto.comp
@@ -62,14 +62,14 @@ lemma tendsto_sinh_rx_over_x (r : ℝ) :
     Tendsto (fun x : ℝ => Real.sinh (r * x) / x) (𝓝[≠] 0) (𝓝 r)
 ```
 
-**`Cosmology.SpatialGeometry.limit_S_saddle`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L68).
+**`Cosmology.SpatialGeometry.limit_S_saddle`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L68).
 
 ```lean
 lemma limit_S_saddle (r : ℝ) :
     Tendsto (fun k : ℝ => k * Real.sinh (r / k)) atTop (𝓝 r)
 ```
 
-**`Cosmology.SpatialGeometry.mul_sin_as_div`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L77).
+**`Cosmology.SpatialGeometry.mul_sin_as_div`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L77).
 
 > The limit of `S (Sphere k) r` as `k → ∞` is equal to `S (Flat) r`.
 > First show that `k * sinh(r / k) = sin(r / k) / (1 / k)` pointwise.
@@ -79,7 +79,7 @@ lemma mul_sin_as_div (r k : ℝ) :
     k * Real.sin (r / k) = Real.sin (r / k) / (1 / k)
 ```
 
-**`Cosmology.SpatialGeometry.tendsto_sin_rx_over_x`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L82).
+**`Cosmology.SpatialGeometry.tendsto_sin_rx_over_x`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L82).
 
 > First, show that limit of `sin(r * x) / x` is r at the limit x goes to zero.
 > Then the next theorem will address the rewrite using Filter.Tendsto.comp
@@ -89,14 +89,14 @@ lemma tendsto_sin_rx_over_x (r : ℝ) :
     Tendsto (fun x : ℝ => Real.sin (r * x) / x) (𝓝[≠] 0) (𝓝 r)
 ```
 
-**`Cosmology.SpatialGeometry.limit_S_sphere`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L87).
+**`Cosmology.SpatialGeometry.limit_S_sphere`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L87).
 
 ```lean
 lemma limit_S_sphere(r : ℝ) :
     Tendsto (fun k : ℝ => k * Real.sin (r / k)) atTop (𝓝 r)
 ```
 
-**`Cosmology.SpatialGeometry.curvature`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L101).
+**`Cosmology.SpatialGeometry.curvature`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L101).
 
 > The curvature parameter of the spatial geometry, the constant `k` of the first-order
 >   Friedmann equation `FLRW.FriedmannEquation.FirstOrderFriedmann`:
@@ -109,13 +109,13 @@ lemma limit_S_sphere(r : ℝ) :
 noncomputable def curvature : SpatialGeometry → ℝ
 ```
 
-**`Cosmology.SpatialGeometry.curvature_flat`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L107).
+**`Cosmology.SpatialGeometry.curvature_flat`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L107).
 
 ```lean
 lemma curvature_flat : Flat.curvature = 0
 ```
 
-**`Cosmology.SpatialGeometry.curvature_spherical_pos`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L110).
+**`Cosmology.SpatialGeometry.curvature_spherical_pos`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L110).
 
 > The spherical geometry has a positive curvature parameter.
 
@@ -123,7 +123,7 @@ lemma curvature_flat : Flat.curvature = 0
 lemma curvature_spherical_pos (k : ℝ) (h : k < 0) : 0 < (Spherical k h).curvature
 ```
 
-**`Cosmology.SpatialGeometry.curvature_saddle_neg`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L116).
+**`Cosmology.SpatialGeometry.curvature_saddle_neg`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L116).
 
 > The saddle geometry has a negative curvature parameter.
 
@@ -131,7 +131,7 @@ lemma curvature_spherical_pos (k : ℝ) (h : k < 0) : 0 < (Spherical k h).curvat
 lemma curvature_saddle_neg (k : ℝ) (h : k > 0) : (Saddle k h).curvature < 0
 ```
 
-**`Cosmology.FLRW`**, a structure, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L128).
+**`Cosmology.FLRW`**, a structure, [line 128](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L128).
 
 > An FLRW model: the scale factor `a` of the Friedmann-Lemaître-Robertson-Walker metric on an
 > open interval `I` of cosmic time, positive and twice differentiable on `I`, together with the
@@ -159,7 +159,7 @@ structure FLRW where
   geometry : SpatialGeometry
 ```
 
-**`Cosmology.CosmicFluid`**, a structure, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L150).
+**`Cosmology.CosmicFluid`**, a structure, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L150).
 
 > The cosmic fluid filling an FLRW model, described by its total energy density `ρ` and its
 > pressure `p`, both functions of cosmic time, as in the first- and second-order Friedmann
@@ -174,7 +174,7 @@ structure CosmicFluid where
   p : Time → ℝ
 ```
 
-**`Cosmology.CosmicFluid.empty`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L157).
+**`Cosmology.CosmicFluid.empty`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L157).
 
 > The empty cosmic fluid, with zero energy density and zero pressure at all times.
 
@@ -182,7 +182,7 @@ structure CosmicFluid where
 def CosmicFluid.empty : CosmicFluid
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.cosmologicalConstantDensity`**, a def, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L160).
+**`Cosmology.FLRW.FriedmannEquation.cosmologicalConstantDensity`**, a def, [line 160](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L160).
 
 > The density `ρ_Λ = Λ c² / (8 π G)` associated with the cosmological constant.
 
@@ -191,7 +191,7 @@ noncomputable def FLRW.FriedmannEquation.cosmologicalConstantDensity (Λ G : ℝ
     (c : SpeedOfLight) : ℝ
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.cosmologicalConstantPressure`**, a def, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L165).
+**`Cosmology.FLRW.FriedmannEquation.cosmologicalConstantPressure`**, a def, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L165).
 
 > The pressure `p_Λ = - ρ_Λ c²` associated with the cosmological constant.
 
@@ -200,7 +200,7 @@ noncomputable def FLRW.FriedmannEquation.cosmologicalConstantPressure (Λ G : �
     (c : SpeedOfLight) : ℝ
 ```
 
-**`Cosmology.CosmicFluid.addCosmologicalConstant`**, a def, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L170).
+**`Cosmology.CosmicFluid.addCosmologicalConstant`**, a def, [line 170](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L170).
 
 > The cosmic fluid `F` with the cosmological constant folded in as a fluid.
 
@@ -209,19 +209,19 @@ noncomputable def CosmicFluid.addCosmologicalConstant (F : CosmicFluid) (Λ G : 
     (c : SpeedOfLight) : CosmicFluid
 ```
 
-**`Cosmology.FLRW.a_ne_zero`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L183).
+**`Cosmology.FLRW.a_ne_zero`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L183).
 
 ```lean
 lemma a_ne_zero {t : Time} (ht : t ∈ U.I) : U.a t ≠ 0
 ```
 
-**`Cosmology.FLRW.differentiableAt_a`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L185).
+**`Cosmology.FLRW.differentiableAt_a`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L185).
 
 ```lean
 lemma differentiableAt_a {t : Time} (ht : t ∈ U.I) : DifferentiableAt ℝ U.a t
 ```
 
-**`Cosmology.FLRW.differentiableAt_deriv_a`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L188).
+**`Cosmology.FLRW.differentiableAt_deriv_a`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L188).
 
 ```lean
 lemma differentiableAt_deriv_a {t : Time} (ht : t ∈ U.I) : DifferentiableAt ℝ (∂ₜ U.a) t
@@ -231,7 +231,7 @@ lemma differentiableAt_deriv_a {t : Time} (ht : t ∈ U.I) : DifferentiableAt �
 
 > These statements hold for any FLRW model; they do not use the Friedmann equations.
 
-**`Cosmology.FLRW.mk_mem_I_of_mem_Icc`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L206).
+**`Cosmology.FLRW.mk_mem_I_of_mem_Icc`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L206).
 
 > The times between two times of the interval `U.I` of an FLRW model are in `U.I`.
 
@@ -240,7 +240,7 @@ lemma mk_mem_I_of_mem_Icc (U : FLRW) {σ τ x : ℝ} (hσ : (⟨σ⟩ : Time) �
     (hτ : (⟨τ⟩ : Time) ∈ U.I) (hx : x ∈ Set.Icc σ τ) : (⟨x⟩ : Time) ∈ U.I
 ```
 
-**`Cosmology.FLRW.continuousOn_deriv_scaleFactor_mk`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L212).
+**`Cosmology.FLRW.continuousOn_deriv_scaleFactor_mk`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L212).
 
 > Along the time coordinate, the derivative of the scale factor is continuous on any segment
 > of the interval `U.I`.
@@ -250,7 +250,7 @@ lemma continuousOn_deriv_scaleFactor_mk (U : FLRW) {σ τ : ℝ} (hσ : (⟨σ�
     (hτ : (⟨τ⟩ : Time) ∈ U.I) : ContinuousOn (fun x : ℝ => ∂ₜ U.a ⟨x⟩) (Set.Icc σ τ)
 ```
 
-**`Cosmology.FLRW.scaleFactor_le_tangent`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L221).
+**`Cosmology.FLRW.scaleFactor_le_tangent`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L221).
 
 > If the scale factor decelerates on the interval (`∂ₜ ∂ₜ a ≤ 0` on `U.I`), it lies below its
 > tangent line at any time `t₀` of `U.I`: `a t ≤ a t₀ + ∂ₜ a t₀ (t - t₀)` for `t ∈ U.I`. The
@@ -262,7 +262,7 @@ lemma scaleFactor_le_tangent (U : FLRW) (hdec : ∀ s ∈ U.I, ∂ₜ (∂ₜ U.
     (ht₀ : t₀ ∈ U.I) (ht : t ∈ U.I) : U.a t ≤ U.a t₀ + ∂ₜ U.a t₀ * (t.val - t₀.val)
 ```
 
-**`Cosmology.FLRW.lt_of_mem_I_of_decelerating`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L268).
+**`Cosmology.FLRW.lt_of_mem_I_of_decelerating`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L268).
 
 > The Big-Bang bound for an FLRW model: if the scale factor decelerates on `U.I` and the model
 > expands at `t₀ ∈ U.I`, every time of `U.I` is later than `t₀ - a t₀ / ∂ₜ a t₀`. Earlier, the
@@ -274,7 +274,7 @@ lemma lt_of_mem_I_of_decelerating (U : FLRW) (hdec : ∀ s ∈ U.I, ∂ₜ (∂�
     t₀.val - U.a t₀ / ∂ₜ U.a t₀ < t.val
 ```
 
-**`Cosmology.FLRW.bddBelow_I_of_decelerating`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L283).
+**`Cosmology.FLRW.bddBelow_I_of_decelerating`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L283).
 
 > Hence the interval of an FLRW model that decelerates on `U.I` and expands at one of its
 > times is bounded below.
@@ -284,7 +284,7 @@ lemma bddBelow_I_of_decelerating (U : FLRW) (hdec : ∀ s ∈ U.I, ∂ₜ (∂�
     (ht₀ : t₀ ∈ U.I) (h0 : 0 < ∂ₜ U.a t₀) : BddBelow U.I
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.FirstOrderFriedmann`**, a def, [line 310](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L310).
+**`Cosmology.FLRW.FriedmannEquation.FirstOrderFriedmann`**, a def, [line 310](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L310).
 
 > The first-order Friedmann equation.
 >
@@ -304,7 +304,7 @@ lemma bddBelow_I_of_decelerating (U : FLRW) (hdec : ∀ s ∈ U.I, ∂ₜ (∂�
 def FirstOrderFriedmann (a ρ : Time → ℝ) (k Λ G : ℝ) (c : SpeedOfLight) (t : Time) : Prop
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.SecondOrderFriedmann`**, a def, [line 333](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L333).
+**`Cosmology.FLRW.FriedmannEquation.SecondOrderFriedmann`**, a def, [line 333](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L333).
 
 > The second-order Friedmann equation.
 > Note: Other sources may call this the Raychaudhuri equation.
@@ -327,7 +327,7 @@ def FirstOrderFriedmann (a ρ : Time → ℝ) (k Λ G : ℝ) (c : SpeedOfLight) 
 def SecondOrderFriedmann (a ρ p : Time → ℝ) (Λ G : ℝ) (c : SpeedOfLight) (t : Time) : Prop
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.hubbleConstant`**, a def, [line 344](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L344).
+**`Cosmology.FLRW.FriedmannEquation.hubbleConstant`**, a def, [line 344](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L344).
 
 > The hubble constant defined in terms of the scale factor
 > as `(dₜ a) / a`.
@@ -340,7 +340,7 @@ def SecondOrderFriedmann (a ρ p : Time → ℝ) (Λ G : ℝ) (c : SpeedOfLight)
 noncomputable def hubbleConstant (a : Time → ℝ) (t : Time) : ℝ
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.hubbleConstant_ne_zero`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L348).
+**`Cosmology.FLRW.FriedmannEquation.hubbleConstant_ne_zero`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L348).
 
 > The Hubble constant is nonzero whenever `∂ₜ a t` and `a t` are both nonzero.
 
@@ -350,7 +350,7 @@ lemma hubbleConstant_ne_zero {a : Time → ℝ} {t : Time}
     hubbleConstant a t ≠ 0
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.decelerationParameter`**, a def, [line 368](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L368).
+**`Cosmology.FLRW.FriedmannEquation.decelerationParameter`**, a def, [line 368](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L368).
 
 > The deceleration parameter defined in terms of the scale factor
 > as `- (dₜdₜ a) a / (dₜ a)^2`.
@@ -363,7 +363,7 @@ lemma hubbleConstant_ne_zero {a : Time → ℝ} {t : Time}
 noncomputable def decelerationParameter (a : Time → ℝ) (t : Time) : ℝ
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.deriv_hubbleConstant`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L373).
+**`Cosmology.FLRW.FriedmannEquation.deriv_hubbleConstant`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L373).
 
 > Quotient-rule expression for the time derivative of the Hubble constant:
 > `dₜ H = (a'' a - (a')^2) / a^2`.
@@ -376,7 +376,7 @@ lemma deriv_hubbleConstant {a : Time → ℝ} {t : Time}
       (∂ₜ (∂ₜ a) t * a t - (∂ₜ a t) ^ 2) / (a t) ^ 2
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.decelerationParameter_eq_one_plus_hubbleConstant`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L383).
+**`Cosmology.FLRW.FriedmannEquation.decelerationParameter_eq_one_plus_hubbleConstant`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L383).
 
 > The deceleration parameter is equal to `- (1 + (dₜ H)/H^2)`.
 
@@ -389,7 +389,7 @@ lemma decelerationParameter_eq_one_plus_hubbleConstant
       -(1 + ∂ₜ (hubbleConstant a) t / (hubbleConstant a t) ^ 2)
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.deriv_hubbleConstant_eq_neg_sq_mul`**, a lemma, [line 394](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L394).
+**`Cosmology.FLRW.FriedmannEquation.deriv_hubbleConstant_eq_neg_sq_mul`**, a lemma, [line 394](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L394).
 
 > The time derivative of the Hubble constant equals `-H² (1 + q)`.
 
@@ -402,7 +402,7 @@ lemma deriv_hubbleConstant_eq_neg_sq_mul
       -(hubbleConstant a t) ^ 2 * (1 + decelerationParameter a t)
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.deriv_hubbleConstant_neg_iff`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L406).
+**`Cosmology.FLRW.FriedmannEquation.deriv_hubbleConstant_neg_iff`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L406).
 
 > Pointwise: `∂ₜ H t < 0` iff `-1 < q t` (assuming `a` is twice differentiable at `t`
 > and both `a t` and `∂ₜ a t` are nonzero).
@@ -415,7 +415,7 @@ lemma deriv_hubbleConstant_neg_iff
     ∂ₜ (hubbleConstant a) t < 0 ↔ -1 < decelerationParameter a t
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.exists_deriv_hubbleConstant_neg_iff`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L419).
+**`Cosmology.FLRW.FriedmannEquation.exists_deriv_hubbleConstant_neg_iff`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L419).
 
 > There exists a time at which `∂ₜ H < 0` iff there exists a time with `q > -1`.
 >
@@ -431,7 +431,7 @@ lemma exists_deriv_hubbleConstant_neg_iff
     (∃ t, ∂ₜ (hubbleConstant a) t < 0) ↔ (∃ t, -1 < decelerationParameter a t)
 ```
 
-**`Cosmology.FLRW.FriedmannSolution`**, a structure, [line 438](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean#L438).
+**`Cosmology.FLRW.FriedmannSolution`**, a structure, [line 438](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean#L438).
 
 > The proposition that the FLRW model `U` filled with the cosmic fluid `F` solves the
 > Friedmann equations: the first- and second-order Friedmann equations, with cosmological
@@ -455,4 +455,4 @@ structure FriedmannSolution (U : FLRW) (F : CosmicFluid) (Λ G : ℝ) (c : Speed
 
 ## Sources
 
-- [Physlib/Cosmology/FLRW/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Basic.lean)
+- [Physlib/Cosmology/FLRW/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Basic.lean)

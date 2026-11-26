@@ -1,8 +1,8 @@
 # SimplePendulum
 
-The folder [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum): 11 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum): 11 modules, an article each, in path order with Basic.lean first in its folder.
 
-The repository's API map for this folder, *Simple pendulum* ([Physlib/ClassicalMechanics/Pendulum/SimplePendulum/API-map.md](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
+The repository's API map for this folder, *Simple pendulum* ([Physlib/ClassicalMechanics/Pendulum/SimplePendulum/API-map.md](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
 
 *Content (Alpha)*
 
@@ -42,7 +42,7 @@ Its references:
 - [Small-angle motion of the simple gravity pendulum](smallangle.md)
 - [Existence and uniqueness of the solutions of the simple pendulum](solution.md)
 
-Modules in [Geometric/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric):
+Modules in [Geometric/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric):
 
 - [Configuration space of the simple pendulum](geometric-basic.md)
 - [The simple pendulum in physical space](geometric-physicalspace.md)

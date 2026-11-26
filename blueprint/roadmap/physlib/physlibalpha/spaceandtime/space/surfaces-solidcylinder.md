@@ -8,7 +8,7 @@ proof: formalized
 
 # Solid cylinder surface in `Space 3`
 
-The module `PhyslibAlpha.SpaceAndTime.Space.Surfaces.SolidCylinder`, [PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean): 13 declarations, 3 with a docstring.
+The module `PhyslibAlpha.SpaceAndTime.Space.Surfaces.SolidCylinder`, [PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean): 13 declarations, 3 with a docstring.
 
 > The solid unit cylinder in `Space 3` with its measure, distribution and positive volume.
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.SpaceAndTime.Space.Surfaces.SolidCylinder`, [PhyslibAlp
 
 ## A. The definition of the solid cylinder surface
 
-**`Space.solidCylinder`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L64).
+**`Space.solidCylinder`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L64).
 
 > The map embedding a cross-sectional disk extruded along the axis into `Space 3`. The disk is
 > cut out by the solid-cylinder measure, which is supported on the closed unit disk.
@@ -44,32 +44,32 @@ The module `PhyslibAlpha.SpaceAndTime.Space.Surfaces.SolidCylinder`, [PhyslibAlp
 def solidCylinder : Space 2 × ℝ → Space 3
 ```
 
-**`Space.solidCylinder_eq`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L67).
+**`Space.solidCylinder_eq`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L67).
 
 ```lean
 lemma solidCylinder_eq :
     solidCylinder = (slice 2).symm ∘ (fun x : Space 2 × ℝ => (x.2, x.1))
 ```
 
-**`Space.solidCylinder_injective`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L70).
+**`Space.solidCylinder_injective`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L70).
 
 ```lean
 lemma solidCylinder_injective : Function.Injective solidCylinder
 ```
 
-**`Space.solidCylinder_continuous`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L77).
+**`Space.solidCylinder_continuous`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L77).
 
 ```lean
 lemma solidCylinder_continuous : Continuous solidCylinder
 ```
 
-**`Space.solidCylinder_measurableEmbedding`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L81).
+**`Space.solidCylinder_measurableEmbedding`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L81).
 
 ```lean
 lemma solidCylinder_measurableEmbedding : MeasurableEmbedding solidCylinder
 ```
 
-**`Space.norm_solidCylinder`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L85).
+**`Space.norm_solidCylinder`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L85).
 
 ```lean
 lemma norm_solidCylinder (x : Space 2 × ℝ) :
@@ -78,7 +78,7 @@ lemma norm_solidCylinder (x : Space 2 × ℝ) :
 
 ## B. The measure associated with the solid cylinder
 
-**`Space.solidCylinderMeasure`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L98).
+**`Space.solidCylinderMeasure`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L98).
 
 > The measure on `Space 3` corresponding to integration over a solid cylinder, i.e. the
 > pushforward of the product of the solid-sphere (closed unit disk) measure on `Space 2` with the
@@ -88,14 +88,14 @@ lemma norm_solidCylinder (x : Space 2 × ℝ) :
 def solidCylinderMeasure : Measure (Space 3)
 ```
 
-**`Space.solidCylinderMeasure_hasTemperateGrowth`**, an instance, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L101).
+**`Space.solidCylinderMeasure_hasTemperateGrowth`**, an instance, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L101).
 
 ```lean
 instance solidCylinderMeasure_hasTemperateGrowth :
     solidCylinderMeasure.HasTemperateGrowth
 ```
 
-**`Space.solidCylinderMeasure_sFinite`**, an instance, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L126).
+**`Space.solidCylinderMeasure_sFinite`**, an instance, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L126).
 
 ```lean
 instance solidCylinderMeasure_sFinite : SFinite solidCylinderMeasure
@@ -103,7 +103,7 @@ instance solidCylinderMeasure_sFinite : SFinite solidCylinderMeasure
 
 ## C. The distribution associated with the solid cylinder
 
-**`Space.solidCylinderDist`**, a def, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L139).
+**`Space.solidCylinderDist`**, a def, [line 139](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L139).
 
 > The distribution on `Space 3` corresponding to integration over a solid cylinder.
 > One can roughly think of this distribution as taking a test function `f` to its integral against
@@ -113,14 +113,14 @@ instance solidCylinderMeasure_sFinite : SFinite solidCylinderMeasure
 def solidCylinderDist : (Space 3) →d[ℝ] ℝ
 ```
 
-**`Space.solidCylinderDist_apply_eq_integral_solidCylinderMeasure`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L142).
+**`Space.solidCylinderDist_apply_eq_integral_solidCylinderMeasure`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L142).
 
 ```lean
 lemma solidCylinderDist_apply_eq_integral_solidCylinderMeasure (f : 𝓢(Space 3, ℝ)) :
     solidCylinderDist f = ∫ x, f x ∂solidCylinderMeasure
 ```
 
-**`Space.solidCylinderDist_apply_eq_integral_disk_volume`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L146).
+**`Space.solidCylinderDist_apply_eq_integral_disk_volume`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L146).
 
 ```lean
 lemma solidCylinderDist_apply_eq_integral_disk_volume (f : 𝓢(Space 3, ℝ)) :
@@ -130,7 +130,7 @@ lemma solidCylinderDist_apply_eq_integral_disk_volume (f : 𝓢(Space 3, ℝ)) :
 
 ## D. The solid cylinder has positive ambient volume
 
-**`Space.solidCylinderMeasure_univ_pos`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L158).
+**`Space.solidCylinderMeasure_univ_pos`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean#L158).
 
 ```lean
 lemma solidCylinderMeasure_univ_pos : 0 < solidCylinderMeasure Set.univ
@@ -143,4 +143,4 @@ lemma solidCylinderMeasure_univ_pos : 0 < solidCylinderMeasure Set.univ
 
 ## Sources
 
-- [PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean)
+- [PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean)

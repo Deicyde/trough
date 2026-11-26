@@ -8,7 +8,7 @@ proof: formalized
 
 # Charge conservation on a box from Maxwell's equations
 
-The module `PhyslibAlpha.Electromagnetism.BoxChargeConservation`, [PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean): 12 declarations, 8 with a docstring, 1 listed as significant.
+The module `PhyslibAlpha.Electromagnetism.BoxChargeConservation`, [PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean): 12 declarations, 8 with a docstring, 1 listed as significant.
 
 ## i. Overview
 
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.Electromagnetism.BoxChargeConservation`, [PhyslibAlpha/
 
 ### A.1. Time derivatives and the divergence
 
-**`Space.div_differentiable_time`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L78).
+**`Space.div_differentiable_time`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L78).
 
 ```lean
 lemma div_differentiable_time {d} (f : Time → Space d → EuclideanSpace ℝ (Fin d))
@@ -55,7 +55,7 @@ lemma div_differentiable_time {d} (f : Time → Space d → EuclideanSpace ℝ (
     Differentiable ℝ (fun t => (∇ ⬝ f t) x)
 ```
 
-**`Space.time_deriv_div_commute`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L87).
+**`Space.time_deriv_div_commute`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L87).
 
 > The divergence and the time derivative commute.
 
@@ -67,7 +67,7 @@ lemma time_deriv_div_commute {d} (f : Time → Space d → EuclideanSpace ℝ (F
 
 ### A.2. Smoothness of the curl
 
-**`Space.curl_contDiff`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L109).
+**`Space.curl_contDiff`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L109).
 
 ```lean
 lemma curl_contDiff {n : WithTop ℕ∞} (f : Space → EuclideanSpace ℝ (Fin 3))
@@ -83,7 +83,7 @@ lemma curl_contDiff {n : WithTop ℕ∞} (f : Space → EuclideanSpace ℝ (Fin 
 > The divergence theorem below integrates over the box in coordinates, `x ∈ [a, b]`, rather than
 > over the image of the box in `Space`.
 
-**`Space.div_mk_eq_sum_fderiv`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L132).
+**`Space.div_mk_eq_sum_fderiv`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L132).
 
 ```lean
 lemma div_mk_eq_sum_fderiv {n : ℕ} (f : Space n → EuclideanSpace ℝ (Fin n))
@@ -91,7 +91,7 @@ lemma div_mk_eq_sum_fderiv {n : ℕ} (f : Space n → EuclideanSpace ℝ (Fin n)
     (∇ ⬝ f) ⟨x⟩ = ∑ i, fderiv ℝ (fun y : Fin n → ℝ => f ⟨y⟩ i) x (Pi.single i 1)
 ```
 
-**`Space.integral_div_box`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L145).
+**`Space.integral_div_box`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L145).
 
 > The divergence theorem on a coordinate box in `Space`.
 
@@ -107,7 +107,7 @@ lemma integral_div_box {n : ℕ} (f : Space (n + 1) → EuclideanSpace ℝ (Fin 
 
 ### B.1. The continuity equation from Gauss's and Ampère's laws
 
-**`Electromagnetism.ThreeDimension.continuity_of_gauss_ampere`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L178).
+**`Electromagnetism.ThreeDimension.continuity_of_gauss_ampere`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L178).
 
 > Fields `E`, `B`, `ρ` and `J` obeying Gauss's law for the electric field and Ampère's law
 > obey the continuity equation.
@@ -124,14 +124,14 @@ lemma continuity_of_gauss_ampere (𝓕 : FreeSpace)
 
 ### B.2. The continuity equation for an electromagnetic potential
 
-**`Electromagnetism.ThreeDimension.magneticField_contDiff_space`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L211).
+**`Electromagnetism.ThreeDimension.magneticField_contDiff_space`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L211).
 
 ```lean
 lemma magneticField_contDiff_space (hV : ContDiff ℝ ∞ V) (t : Time) :
     ContDiff ℝ 2 (V.magneticField 𝓕.c t)
 ```
 
-**`Electromagnetism.ThreeDimension.continuityEquation`**, a theorem, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L218). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`Electromagnetism.ThreeDimension.continuityEquation`**, a theorem, [line 218](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L218). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The continuity equation: Maxwell's equations imply local conservation of charge.
 
@@ -145,7 +145,7 @@ theorem continuityEquation (t : Time) (x : Space)
 
 ### C.1. Currents through a box
 
-**`Electromagnetism.LorentzCurrentDensity.boxFaceCurrent`**, a def, [line 235](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L235).
+**`Electromagnetism.LorentzCurrentDensity.boxFaceCurrent`**, a def, [line 235](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L235).
 
 > The electric current at time `t` through the face `x i = s` of the coordinate box `[a, b]`,
 > counted positively in the direction of increasing `x i`.
@@ -156,7 +156,7 @@ noncomputable def _root_.Electromagnetism.LorentzCurrentDensity.boxFaceCurrent
     (s : ℝ) : ℝ
 ```
 
-**`Electromagnetism.LorentzCurrentDensity.boxOutwardCurrent`**, a def, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L242).
+**`Electromagnetism.LorentzCurrentDensity.boxOutwardCurrent`**, a def, [line 242](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L242).
 
 > The net electric current at time `t` leaving the coordinate box `[a, b]` through its six
 > faces.
@@ -168,7 +168,7 @@ noncomputable def _root_.Electromagnetism.LorentzCurrentDensity.boxOutwardCurren
 
 ### C.2. The integral form of charge conservation
 
-**`Electromagnetism.ThreeDimension.boxOutwardCurrent_eq`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L254).
+**`Electromagnetism.ThreeDimension.boxOutwardCurrent_eq`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L254).
 
 > The net current leaving the coordinate box `[a, b]` equals minus the rate of change of the
 > charge inside it.
@@ -182,7 +182,7 @@ lemma boxOutwardCurrent_eq (t : Time) (a b : Fin 3 → ℝ) (hle : a ≤ b)
 
 ### C.3. Steady charge in a box
 
-**`Electromagnetism.ThreeDimension.boxOutwardCurrent_eq_zero_of_steady`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L277).
+**`Electromagnetism.ThreeDimension.boxOutwardCurrent_eq_zero_of_steady`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean#L277).
 
 > If no charge accumulates inside the coordinate box `[a, b]`, the net current leaving through
 > its six faces is zero. This is motivated by Kirchhoff's current law, with the box enclosing a
@@ -205,4 +205,4 @@ lemma boxOutwardCurrent_eq_zero_of_steady (t : Time) (a b : Fin 3 → ℝ) (hle 
 
 ## Sources
 
-- [PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean)
+- [PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean)

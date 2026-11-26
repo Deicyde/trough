@@ -8,7 +8,7 @@ proof: formalized
 
 # The observables of a C⋆-algebra (PhyslibAlpha)
 
-The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.OrderUnit`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.OrderUnit`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean): 5 declarations, 5 with a docstring.
 
 > The self-adjoint part of a unital C⋆-algebra is an Archimedean order-unit space.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.OrderUnit`, [PhyslibAl
 
 ## A. The order-unit space of observables
 
-**`PhyslibAlpha.ProbabilisticTheory.selfAdjoint.instPosSMulMono`**, an instance, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean#L60).
+**`PhyslibAlpha.ProbabilisticTheory.selfAdjoint.instPosSMulMono`**, an instance, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean#L60).
 
 > Nonnegative real scalars preserve the order on observables.
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.OrderUnit`, [PhyslibAl
 instance instPosSMulMono : PosSMulMono ℝ (selfAdjoint 𝒜)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.selfAdjoint.le_nsmul_one_ceil_norm`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean#L66).
+**`PhyslibAlpha.ProbabilisticTheory.selfAdjoint.le_nsmul_one_ceil_norm`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean#L66).
 
 > Every observable lies below a natural multiple of the identity.
 
@@ -52,7 +52,7 @@ instance instPosSMulMono : PosSMulMono ℝ (selfAdjoint 𝒜)
 lemma le_nsmul_one_ceil_norm (x : selfAdjoint 𝒜) : x ≤ ⌈‖(x : 𝒜)‖⌉₊ • (1 : selfAdjoint 𝒜)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.selfAdjoint.instOrderUnitSpace`**, an instance, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.selfAdjoint.instOrderUnitSpace`**, an instance, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean#L77).
 
 > The observables of a quantum system form an order-unit space with unit `1`.
 
@@ -62,7 +62,7 @@ noncomputable instance instOrderUnitSpace : OrderUnitSpace (selfAdjoint 𝒜)
 
 ## B. The Archimedean property
 
-**`PhyslibAlpha.ProbabilisticTheory.selfAdjoint.le_zero_of_forall_pos_smul_one_le`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean#L88).
+**`PhyslibAlpha.ProbabilisticTheory.selfAdjoint.le_zero_of_forall_pos_smul_one_le`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean#L88).
 
 > An observable below every positive multiple of the identity is below zero.
 
@@ -71,7 +71,7 @@ lemma le_zero_of_forall_pos_smul_one_le {x : selfAdjoint 𝒜}
     (h : ∀ ε : ℝ, 0 < ε → x ≤ ε • (1 : selfAdjoint 𝒜)) : x ≤ 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.selfAdjoint.instArchimedeanOrderUnitSpace`**, an instance, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean#L97).
+**`PhyslibAlpha.ProbabilisticTheory.selfAdjoint.instArchimedeanOrderUnitSpace`**, an instance, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean#L97).
 
 > The order of observables is Archimedean.
 
@@ -86,4 +86,4 @@ noncomputable instance instArchimedeanOrderUnitSpace :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean)
+- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean)

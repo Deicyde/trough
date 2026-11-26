@@ -8,7 +8,7 @@ proof: formalized
 
 # The Lorentz Current Density (TemperedDistributional/Dynamics/CurrentDensity)
 
-The module `Physlib.Electromagnetism.TemperedDistributional.Dynamics.CurrentDensity`, [Physlib/Electromagnetism/TemperedDistributional/Dynamics/CurrentDensity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/CurrentDensity.lean): 3 declarations, 3 with a docstring.
+The module `Physlib.Electromagnetism.TemperedDistributional.Dynamics.CurrentDensity`, [Physlib/Electromagnetism/TemperedDistributional/Dynamics/CurrentDensity.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/CurrentDensity.lean): 3 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -30,7 +30,7 @@ The module `Physlib.Electromagnetism.TemperedDistributional.Dynamics.CurrentDens
 
 ## A. The Lorentz current density as a distribution
 
-**`Electromagnetism.TempDistLorentzCurrentDensity`**, an abbrev, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/CurrentDensity.lean#L56).
+**`Electromagnetism.TempDistLorentzCurrentDensity`**, an abbrev, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/CurrentDensity.lean#L56).
 
 > The Lorentz current density, also called four-current as a distribution.
 
@@ -40,7 +40,7 @@ abbrev TempDistLorentzCurrentDensity (d : ℕ := 3)
 
 ### A.1. The underlying charge density
 
-**`Electromagnetism.TempDistLorentzCurrentDensity.chargeDensity`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/CurrentDensity.lean#L67).
+**`Electromagnetism.TempDistLorentzCurrentDensity.chargeDensity`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/CurrentDensity.lean#L67).
 
 > The charge density underlying a Lorentz current density which is a distribution.
 
@@ -51,7 +51,7 @@ noncomputable def chargeDensity {d : ℕ} (c : SpeedOfLight) :
 
 ### A.2. The underlying current density
 
-**`Electromagnetism.TempDistLorentzCurrentDensity.currentDensity`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/CurrentDensity.lean#L84).
+**`Electromagnetism.TempDistLorentzCurrentDensity.currentDensity`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/CurrentDensity.lean#L84).
 
 > The underlying (non-Lorentz) current density associated with a distributive
 > Lorentz current density.
@@ -67,4 +67,4 @@ noncomputable def currentDensity (c : SpeedOfLight) :
 
 ## Sources
 
-- [Physlib/Electromagnetism/TemperedDistributional/Dynamics/CurrentDensity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/CurrentDensity.lean)
+- [Physlib/Electromagnetism/TemperedDistributional/Dynamics/CurrentDensity.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/CurrentDensity.lean)

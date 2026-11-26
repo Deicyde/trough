@@ -8,7 +8,7 @@ proof: formalized
 
 # Functions on `Space d` which can be made into distributions
 
-The module `Physlib.SpaceAndTime.Space.IsDistBounded`, [Physlib/SpaceAndTime/Space/IsDistBounded.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean): 64 declarations (1 instance with no name), 1 with a docstring.
+The module `Physlib.SpaceAndTime.Space.IsDistBounded`, [Physlib/SpaceAndTime/Space/IsDistBounded.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean): 64 declarations (1 instance with no name), 1 with a docstring.
 
 ## i. Overview
 
@@ -38,7 +38,7 @@ The module `Physlib.SpaceAndTime.Space.IsDistBounded`, [Physlib/SpaceAndTime/Spa
 
 ## A. The predicate `IsDistBounded f`
 
-**`Space.IsDistBounded`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L90).
+**`Space.IsDistBounded`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L90).
 
 > The boundedness condition on a function `Space d → F`
 > for it to form a distribution.
@@ -51,14 +51,14 @@ def IsDistBounded {d : ℕ} (f : Space d → F) : Prop
 
 ### B.1. `AEStronglyMeasurable` conditions
 
-**`Space.IsDistBounded.aestronglyMeasurable`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L113).
+**`Space.IsDistBounded.aestronglyMeasurable`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L113).
 
 ```lean
 lemma aestronglyMeasurable {d : ℕ} {f : Space d → F} (hf : IsDistBounded f) :
     AEStronglyMeasurable (fun x => f x) volume
 ```
 
-**`Space.IsDistBounded.aeStronglyMeasurable_schwartzMap_smul`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L117).
+**`Space.IsDistBounded.aeStronglyMeasurable_schwartzMap_smul`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L117).
 
 ```lean
 lemma aeStronglyMeasurable_schwartzMap_smul {d : ℕ} {f : Space d → F}
@@ -66,7 +66,7 @@ lemma aeStronglyMeasurable_schwartzMap_smul {d : ℕ} {f : Space d → F}
     AEStronglyMeasurable (fun x => η x • f x)
 ```
 
-**`Space.IsDistBounded.aeStronglyMeasurable_fderiv_schwartzMap_smul`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L123).
+**`Space.IsDistBounded.aeStronglyMeasurable_fderiv_schwartzMap_smul`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L123).
 
 ```lean
 lemma aeStronglyMeasurable_fderiv_schwartzMap_smul {d : ℕ} {f : Space d → F}
@@ -74,7 +74,7 @@ lemma aeStronglyMeasurable_fderiv_schwartzMap_smul {d : ℕ} {f : Space d → F}
     AEStronglyMeasurable (fun x => fderiv ℝ η x y • f x)
 ```
 
-**`Space.IsDistBounded.aeStronglyMeasurable_inv_pow`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L129).
+**`Space.IsDistBounded.aeStronglyMeasurable_inv_pow`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L129).
 
 ```lean
 lemma aeStronglyMeasurable_inv_pow {d r : ℕ} {f : Space d → F}
@@ -82,7 +82,7 @@ lemma aeStronglyMeasurable_inv_pow {d r : ℕ} {f : Space d → F}
     AEStronglyMeasurable (fun x => ‖((1 + ‖x‖) ^ r)⁻¹‖ • f x)
 ```
 
-**`Space.IsDistBounded.aeStronglyMeasurable_time_schwartzMap_smul`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L135).
+**`Space.IsDistBounded.aeStronglyMeasurable_time_schwartzMap_smul`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L135).
 
 ```lean
 lemma aeStronglyMeasurable_time_schwartzMap_smul {d : ℕ} {f : Space d → F}
@@ -92,7 +92,7 @@ lemma aeStronglyMeasurable_time_schwartzMap_smul {d : ℕ} {f : Space d → F}
 
 ### B.2. Integrability with respect to Schwartz maps on space
 
-**`Space.IsDistBounded.integrable_space`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L147).
+**`Space.IsDistBounded.integrable_space`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L147).
 
 ```lean
 lemma integrable_space {d : ℕ} {f : Space d → F} (hf : IsDistBounded f)
@@ -100,7 +100,7 @@ lemma integrable_space {d : ℕ} {f : Space d → F} (hf : IsDistBounded f)
     Integrable (fun x : Space d => η x • f x) volume
 ```
 
-**`Space.IsDistBounded.integrable_space_mul`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L214).
+**`Space.IsDistBounded.integrable_space_mul`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L214).
 
 ```lean
 lemma integrable_space_mul {d : ℕ} {f : Space d → ℝ} (hf : IsDistBounded f)
@@ -108,7 +108,7 @@ lemma integrable_space_mul {d : ℕ} {f : Space d → ℝ} (hf : IsDistBounded f
     Integrable (fun x : Space d => η x * f x) volume
 ```
 
-**`Space.IsDistBounded.integrable_space_fderiv`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L220).
+**`Space.IsDistBounded.integrable_space_fderiv`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L220).
 
 ```lean
 lemma integrable_space_fderiv {d : ℕ} {f : Space d → F} (hf : IsDistBounded f)
@@ -116,7 +116,7 @@ lemma integrable_space_fderiv {d : ℕ} {f : Space d → F} (hf : IsDistBounded 
     Integrable (fun x : Space d => fderiv ℝ η x y • f x) volume
 ```
 
-**`Space.IsDistBounded.integrable_space_fderiv_mul`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L226).
+**`Space.IsDistBounded.integrable_space_fderiv_mul`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L226).
 
 ```lean
 lemma integrable_space_fderiv_mul {d : ℕ} {f : Space d → ℝ} (hf : IsDistBounded f)
@@ -126,7 +126,7 @@ lemma integrable_space_fderiv_mul {d : ℕ} {f : Space d → ℝ} (hf : IsDistBo
 
 ### B.3. Integrability with respect to Schwartz maps on time and space
 
-**An instance with no name**, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L237).
+**An instance with no name**, [line 237](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L237).
 
 ```lean
 instance {D1 : Type} [NormedAddCommGroup D1] [MeasurableSpace D1]
@@ -137,7 +137,7 @@ instance {D1 : Type} [NormedAddCommGroup D1] [MeasurableSpace D1]
     Measure.HasTemperateGrowth (μ1.prod μ2)
 ```
 
-**`Space.IsDistBounded.integrable_time_space`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L266).
+**`Space.IsDistBounded.integrable_time_space`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L266).
 
 ```lean
 lemma integrable_time_space {d : ℕ} {f : Space d → F} (hf : IsDistBounded f)
@@ -147,7 +147,7 @@ lemma integrable_time_space {d : ℕ} {f : Space d → F} (hf : IsDistBounded f)
 
 ### B.4. Integrability with respect to inverse powers
 
-**`Space.IsDistBounded.integrable_mul_inv_pow`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L365).
+**`Space.IsDistBounded.integrable_mul_inv_pow`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L365).
 
 ```lean
 lemma integrable_mul_inv_pow {d : ℕ}
@@ -157,7 +157,7 @@ lemma integrable_mul_inv_pow {d : ℕ}
 
 ## C. Integral on Schwartz maps is bounded by seminorms
 
-**`Space.IsDistBounded.integral_mul_schwartzMap_bounded`**, a lemma, [line 457](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L457).
+**`Space.IsDistBounded.integral_mul_schwartzMap_bounded`**, a lemma, [line 457](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L457).
 
 ```lean
 lemma integral_mul_schwartzMap_bounded {d : ℕ} {f : Space d → F} (hf : IsDistBounded f) :
@@ -168,7 +168,7 @@ lemma integral_mul_schwartzMap_bounded {d : ℕ} {f : Space d → F} (hf : IsDis
 
 ## D. Construction rules for `IsDistBounded f`
 
-**`Space.IsDistBounded.zero`**, a lemma, [line 501](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L501).
+**`Space.IsDistBounded.zero`**, a lemma, [line 501](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L501).
 
 ```lean
 lemma zero {d} : IsDistBounded (0 : Space d → F)
@@ -176,14 +176,14 @@ lemma zero {d} : IsDistBounded (0 : Space d → F)
 
 ### D.1. Addition
 
-**`Space.IsDistBounded.add`**, a lemma, [line 510](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L510).
+**`Space.IsDistBounded.add`**, a lemma, [line 510](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L510).
 
 ```lean
 lemma add {d : ℕ} {f g : Space d → F}
     (hf : IsDistBounded f) (hg : IsDistBounded g) : IsDistBounded (f + g)
 ```
 
-**`Space.IsDistBounded.fun_add`**, a lemma, [line 528](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L528).
+**`Space.IsDistBounded.fun_add`**, a lemma, [line 528](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L528).
 
 ```lean
 lemma fun_add {d : ℕ} {f g : Space d → F}
@@ -192,14 +192,14 @@ lemma fun_add {d : ℕ} {f g : Space d → F}
 
 ### D.2. Finite sums
 
-**`Space.IsDistBounded.sum`**, a lemma, [line 538](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L538).
+**`Space.IsDistBounded.sum`**, a lemma, [line 538](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L538).
 
 ```lean
 lemma sum {ι : Type*} {s : Finset ι} {d : ℕ} {f : ι → Space d → F}
     (hf : ∀ i ∈ s, IsDistBounded (f i)) : IsDistBounded (∑ i ∈ s, f i)
 ```
 
-**`Space.IsDistBounded.sum_fun`**, a lemma, [line 547](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L547).
+**`Space.IsDistBounded.sum_fun`**, a lemma, [line 547](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L547).
 
 ```lean
 lemma sum_fun {ι : Type*} {s : Finset ι} {d : ℕ} {f : ι → Space d → F}
@@ -208,28 +208,28 @@ lemma sum_fun {ι : Type*} {s : Finset ι} {d : ℕ} {f : ι → Space d → F}
 
 ### D.3. Scalar multiplication
 
-**`Space.IsDistBounded.const_smul`**, a lemma, [line 558](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L558).
+**`Space.IsDistBounded.const_smul`**, a lemma, [line 558](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L558).
 
 ```lean
 lemma const_smul {d : ℕ} [NormedSpace ℝ F] {f : Space d → F}
     (hf : IsDistBounded f) (c : ℝ) : IsDistBounded (c • f)
 ```
 
-**`Space.IsDistBounded.neg`**, a lemma, [line 567](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L567).
+**`Space.IsDistBounded.neg`**, a lemma, [line 567](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L567).
 
 ```lean
 lemma neg {d : ℕ} [NormedSpace ℝ F] {f : Space d → F}
     (hf : IsDistBounded f) : IsDistBounded (fun x => - f x)
 ```
 
-**`Space.IsDistBounded.const_fun_smul`**, a lemma, [line 572](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L572).
+**`Space.IsDistBounded.const_fun_smul`**, a lemma, [line 572](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L572).
 
 ```lean
 lemma const_fun_smul {d : ℕ} [NormedSpace ℝ F] {f : Space d → F}
     (hf : IsDistBounded f) (c : ℝ) : IsDistBounded (fun x => c • f x)
 ```
 
-**`Space.IsDistBounded.const_mul_fun`**, a lemma, [line 576](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L576).
+**`Space.IsDistBounded.const_mul_fun`**, a lemma, [line 576](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L576).
 
 ```lean
 lemma const_mul_fun {d : ℕ}
@@ -237,7 +237,7 @@ lemma const_mul_fun {d : ℕ}
     (hf : IsDistBounded f) (c : ℝ) : IsDistBounded (fun x => c * f x)
 ```
 
-**`Space.IsDistBounded.mul_const_fun`**, a lemma, [line 581](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L581).
+**`Space.IsDistBounded.mul_const_fun`**, a lemma, [line 581](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L581).
 
 ```lean
 lemma mul_const_fun {d : ℕ}
@@ -247,7 +247,7 @@ lemma mul_const_fun {d : ℕ}
 
 ### D.4. Components of functions
 
-**`Space.IsDistBounded.pi_comp`**, a lemma, [line 593](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L593).
+**`Space.IsDistBounded.pi_comp`**, a lemma, [line 593](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L593).
 
 ```lean
 lemma pi_comp {d n : ℕ}
@@ -255,7 +255,7 @@ lemma pi_comp {d n : ℕ}
     (hf : IsDistBounded f) (j : Fin n) : IsDistBounded (fun x => f x j)
 ```
 
-**`Space.IsDistBounded.vector_component`**, a lemma, [line 600](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L600).
+**`Space.IsDistBounded.vector_component`**, a lemma, [line 600](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L600).
 
 ```lean
 lemma vector_component {d n : ℕ} {f : Space d → Lorentz.Vector n}
@@ -264,7 +264,7 @@ lemma vector_component {d n : ℕ} {f : Space d → Lorentz.Vector n}
 
 ### D.5. Compositions with additions and subtractions
 
-**`Space.IsDistBounded.comp_add_right`**, a lemma, [line 612](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L612).
+**`Space.IsDistBounded.comp_add_right`**, a lemma, [line 612](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L612).
 
 ```lean
 lemma comp_add_right {d : ℕ} {f : Space d → F}
@@ -272,7 +272,7 @@ lemma comp_add_right {d : ℕ} {f : Space d → F}
     IsDistBounded (fun x => f (x + c))
 ```
 
-**`Space.IsDistBounded.comp_sub_right`**, a lemma, [line 621](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L621).
+**`Space.IsDistBounded.comp_sub_right`**, a lemma, [line 621](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L621).
 
 ```lean
 lemma comp_sub_right {d : ℕ} {f : Space d → F}
@@ -282,7 +282,7 @@ lemma comp_sub_right {d : ℕ} {f : Space d → F}
 
 ### D.6. Congruence with respect to the norm
 
-**`Space.IsDistBounded.congr`**, a lemma, [line 632](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L632).
+**`Space.IsDistBounded.congr`**, a lemma, [line 632](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L632).
 
 ```lean
 lemma congr {d : ℕ} {f : Space d → F}
@@ -293,7 +293,7 @@ lemma congr {d : ℕ} {f : Space d → F}
 
 ### D.7. Monotonicity with respect to the norm
 
-**`Space.IsDistBounded.mono`**, a lemma, [line 646](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L646).
+**`Space.IsDistBounded.mono`**, a lemma, [line 646](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L646).
 
 ```lean
 lemma mono {d : ℕ} {f : Space d → F}
@@ -304,7 +304,7 @@ lemma mono {d : ℕ} {f : Space d → F}
 
 ### D.8. Inner products
 
-**`Space.IsDistBounded.inner_left`**, a lemma, [line 661](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L661).
+**`Space.IsDistBounded.inner_left`**, a lemma, [line 661](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L661).
 
 ```lean
 lemma inner_left {d n : ℕ}
@@ -315,7 +315,7 @@ lemma inner_left {d n : ℕ}
 
 ### D.9. Scalar multiplication with constant
 
-**`Space.IsDistBounded.smul_const`**, a lemma, [line 678](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L678).
+**`Space.IsDistBounded.smul_const`**, a lemma, [line 678](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L678).
 
 ```lean
 lemma smul_const {d : ℕ} [NormedSpace ℝ F] {c : Space d → ℝ}
@@ -326,7 +326,7 @@ lemma smul_const {d : ℕ} [NormedSpace ℝ F] {c : Space d → ℝ}
 
 ### E.1. Constant functions
 
-**`Space.IsDistBounded.const`**, a lemma, [line 694](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L694).
+**`Space.IsDistBounded.const`**, a lemma, [line 694](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L694).
 
 ```lean
 lemma const {d : ℕ} (f : F) :
@@ -335,14 +335,14 @@ lemma const {d : ℕ} (f : F) :
 
 ### E.2. Powers of norms
 
-**`Space.IsDistBounded.pow`**, a lemma, [line 705](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L705).
+**`Space.IsDistBounded.pow`**, a lemma, [line 705](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L705).
 
 ```lean
 lemma pow {d : ℕ} (n : ℤ) (hn : - (d - 1 : ℕ) ≤ n) :
     IsDistBounded (d := d) (fun x => ‖x‖ ^ n)
 ```
 
-**`Space.IsDistBounded.pow_shift`**, a lemma, [line 711](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L711).
+**`Space.IsDistBounded.pow_shift`**, a lemma, [line 711](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L711).
 
 ```lean
 lemma pow_shift {d : ℕ} (n : ℤ)
@@ -350,35 +350,35 @@ lemma pow_shift {d : ℕ} (n : ℤ)
     IsDistBounded (d := d) (fun x => ‖x - g‖ ^ n)
 ```
 
-**`Space.IsDistBounded.inv_shift`**, a lemma, [line 718](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L718).
+**`Space.IsDistBounded.inv_shift`**, a lemma, [line 718](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L718).
 
 ```lean
 lemma inv_shift {d : ℕ} (g : Space d) (hd : 2 ≤ d := by omega) :
     IsDistBounded (d := d) (fun x => ‖x - g‖⁻¹)
 ```
 
-**`Space.IsDistBounded.nat_pow`**, a lemma, [line 722](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L722).
+**`Space.IsDistBounded.nat_pow`**, a lemma, [line 722](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L722).
 
 ```lean
 lemma nat_pow {d : ℕ} (n : ℕ) :
     IsDistBounded (d := d) (fun x => ‖x‖ ^ n)
 ```
 
-**`Space.IsDistBounded.norm_add_nat_pow`**, a lemma, [line 727](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L727).
+**`Space.IsDistBounded.norm_add_nat_pow`**, a lemma, [line 727](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L727).
 
 ```lean
 lemma norm_add_nat_pow {d : ℕ} (n : ℕ) (a : ℝ) :
     IsDistBounded (d := d) (fun x => (‖x‖ + a) ^ n)
 ```
 
-**`Space.IsDistBounded.norm_add_pos_nat_zpow`**, a lemma, [line 733](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L733).
+**`Space.IsDistBounded.norm_add_pos_nat_zpow`**, a lemma, [line 733](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L733).
 
 ```lean
 lemma norm_add_pos_nat_zpow {d : ℕ} (n : ℤ) (a : ℝ) (ha : 0 < a) :
     IsDistBounded (d := d) (fun x => (‖x‖ + a) ^ n)
 ```
 
-**`Space.IsDistBounded.nat_pow_shift`**, a lemma, [line 745](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L745).
+**`Space.IsDistBounded.nat_pow_shift`**, a lemma, [line 745](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L745).
 
 ```lean
 lemma nat_pow_shift {d : ℕ} (n : ℕ)
@@ -386,55 +386,55 @@ lemma nat_pow_shift {d : ℕ} (n : ℕ)
     IsDistBounded (d := d) (fun x => ‖x - g‖ ^ n)
 ```
 
-**`Space.IsDistBounded.norm_sub`**, a lemma, [line 751](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L751).
+**`Space.IsDistBounded.norm_sub`**, a lemma, [line 751](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L751).
 
 ```lean
 lemma norm_sub {d : ℕ} (g : Space d) :
     IsDistBounded (d := d) (fun x => ‖x - g‖)
 ```
 
-**`Space.IsDistBounded.norm_add`**, a lemma, [line 756](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L756).
+**`Space.IsDistBounded.norm_add`**, a lemma, [line 756](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L756).
 
 ```lean
 lemma norm_add {d : ℕ} (g : Space d) :
     IsDistBounded (d := d) (fun x => ‖x + g‖)
 ```
 
-**`Space.IsDistBounded.inv`**, a lemma, [line 761](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L761).
+**`Space.IsDistBounded.inv`**, a lemma, [line 761](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L761).
 
 ```lean
 lemma inv {d : ℕ} (hd: 2 ≤ d := by omega):
     IsDistBounded (d := d) (fun x => ‖x‖⁻¹)
 ```
 
-**`Space.IsDistBounded.norm`**, a lemma, [line 766](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L766).
+**`Space.IsDistBounded.norm`**, a lemma, [line 766](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L766).
 
 ```lean
 lemma norm {d : ℕ} : IsDistBounded (d := d) (fun x => ‖x‖)
 ```
 
-**`Space.IsDistBounded.log_norm`**, a lemma, [line 770](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L770).
+**`Space.IsDistBounded.log_norm`**, a lemma, [line 770](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L770).
 
 ```lean
 lemma log_norm {d : ℕ} (hd : 2 ≤ d := by omega) :
     IsDistBounded (d := d) (fun x => Real.log ‖x‖)
 ```
 
-**`Space.IsDistBounded.zpow_smul_self`**, a lemma, [line 783](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L783).
+**`Space.IsDistBounded.zpow_smul_self`**, a lemma, [line 783](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L783).
 
 ```lean
 lemma zpow_smul_self {d : ℕ} (n : ℤ) (hn : - (d - 1 : ℕ) - 1 ≤ n) :
     IsDistBounded (d := d) (fun x => ‖x‖ ^ n • x)
 ```
 
-**`Space.IsDistBounded.zpow_smul_repr_self`**, a lemma, [line 796](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L796).
+**`Space.IsDistBounded.zpow_smul_repr_self`**, a lemma, [line 796](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L796).
 
 ```lean
 lemma zpow_smul_repr_self {d : ℕ} (n : ℤ) (hn : - (d - 1 : ℕ) - 1 ≤ n) :
     IsDistBounded (d := d) (fun x => ‖x‖ ^ n • basis.repr x)
 ```
 
-**`Space.IsDistBounded.zpow_smul_repr_self_sub`**, a lemma, [line 801](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L801).
+**`Space.IsDistBounded.zpow_smul_repr_self_sub`**, a lemma, [line 801](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L801).
 
 ```lean
 lemma zpow_smul_repr_self_sub {d : ℕ} (n : ℤ) (hn : - (d - 1 : ℕ) - 1 ≤ n)
@@ -442,14 +442,14 @@ lemma zpow_smul_repr_self_sub {d : ℕ} (n : ℤ) (hn : - (d - 1 : ℕ) - 1 ≤ 
     IsDistBounded (d := d) (fun x => ‖x - y‖ ^ n • basis.repr (x - y))
 ```
 
-**`Space.IsDistBounded.inv_pow_smul_self`**, a lemma, [line 806](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L806).
+**`Space.IsDistBounded.inv_pow_smul_self`**, a lemma, [line 806](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L806).
 
 ```lean
 lemma inv_pow_smul_self {d : ℕ} (n : ℕ) (hn : - (d - 1 : ℕ) - 1 ≤ (- n : ℤ)) :
     IsDistBounded (d := d) (fun x => ‖x‖⁻¹ ^ n • x)
 ```
 
-**`Space.IsDistBounded.inv_pow_smul_repr_self`**, a lemma, [line 810](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L810).
+**`Space.IsDistBounded.inv_pow_smul_repr_self`**, a lemma, [line 810](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L810).
 
 ```lean
 lemma inv_pow_smul_repr_self {d : ℕ} (n : ℕ) (hn : - (d - 1 : ℕ) - 1 ≤ (- n : ℤ)) :
@@ -458,21 +458,21 @@ lemma inv_pow_smul_repr_self {d : ℕ} (n : ℕ) (hn : - (d - 1 : ℕ) - 1 ≤ (
 
 ## F. Multiplication by norms and components
 
-**`Space.IsDistBounded.norm_smul_nat_pow`**, a lemma, [line 820](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L820).
+**`Space.IsDistBounded.norm_smul_nat_pow`**, a lemma, [line 820](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L820).
 
 ```lean
 lemma norm_smul_nat_pow {d} (p : ℕ) (c : Space d) :
     IsDistBounded (fun x => ‖x‖ * ‖x + c‖ ^ p)
 ```
 
-**`Space.IsDistBounded.norm_smul_zpow`**, a lemma, [line 832](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L832).
+**`Space.IsDistBounded.norm_smul_zpow`**, a lemma, [line 832](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L832).
 
 ```lean
 lemma norm_smul_zpow {d} (p : ℤ) (c : Space d) (hn : - (d - 1 : ℕ) ≤ p) :
     IsDistBounded (fun x => ‖x‖ * ‖x + c‖ ^ p)
 ```
 
-**`Space.IsDistBounded.norm_smul_isDistBounded`**, a lemma, [line 865](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L865).
+**`Space.IsDistBounded.norm_smul_isDistBounded`**, a lemma, [line 865](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L865).
 
 ```lean
 lemma norm_smul_isDistBounded {d : ℕ} [NormedSpace ℝ F] {f : Space d → F}
@@ -480,7 +480,7 @@ lemma norm_smul_isDistBounded {d : ℕ} [NormedSpace ℝ F] {f : Space d → F}
     IsDistBounded (fun x => ‖x‖ • f x)
 ```
 
-**`Space.IsDistBounded.norm_mul_isDistBounded`**, a lemma, [line 882](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L882).
+**`Space.IsDistBounded.norm_mul_isDistBounded`**, a lemma, [line 882](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L882).
 
 ```lean
 lemma norm_mul_isDistBounded {d : ℕ} {f : Space d → ℝ}
@@ -488,7 +488,7 @@ lemma norm_mul_isDistBounded {d : ℕ} {f : Space d → ℝ}
     IsDistBounded (fun x => ‖x‖ * f x)
 ```
 
-**`Space.IsDistBounded.component_smul_isDistBounded`**, a lemma, [line 887](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L887).
+**`Space.IsDistBounded.component_smul_isDistBounded`**, a lemma, [line 887](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L887).
 
 ```lean
 lemma component_smul_isDistBounded {d : ℕ} [NormedSpace ℝ F] {f : Space d → F}
@@ -496,7 +496,7 @@ lemma component_smul_isDistBounded {d : ℕ} [NormedSpace ℝ F] {f : Space d �
     IsDistBounded (fun x => x i • f x)
 ```
 
-**`Space.IsDistBounded.component_mul_isDistBounded`**, a lemma, [line 898](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L898).
+**`Space.IsDistBounded.component_mul_isDistBounded`**, a lemma, [line 898](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L898).
 
 ```lean
 lemma component_mul_isDistBounded {d : ℕ} {f : Space d → ℝ}
@@ -504,28 +504,28 @@ lemma component_mul_isDistBounded {d : ℕ} {f : Space d → ℝ}
     IsDistBounded (fun x => x i * f x)
 ```
 
-**`Space.IsDistBounded.isDistBounded_smul_self`**, a lemma, [line 903](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L903).
+**`Space.IsDistBounded.isDistBounded_smul_self`**, a lemma, [line 903](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L903).
 
 ```lean
 lemma isDistBounded_smul_self {d : ℕ} {f : Space d → ℝ}
     (hf : IsDistBounded f) : IsDistBounded (fun x => f x • x)
 ```
 
-**`Space.IsDistBounded.isDistBounded_smul_self_repr`**, a lemma, [line 910](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L910).
+**`Space.IsDistBounded.isDistBounded_smul_self_repr`**, a lemma, [line 910](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L910).
 
 ```lean
 lemma isDistBounded_smul_self_repr {d : ℕ} {f : Space d → ℝ}
     (hf : IsDistBounded f) : IsDistBounded (fun x => f x • basis.repr x)
 ```
 
-**`Space.IsDistBounded.isDistBounded_smul_inner`**, a lemma, [line 918](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L918).
+**`Space.IsDistBounded.isDistBounded_smul_inner`**, a lemma, [line 918](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L918).
 
 ```lean
 lemma isDistBounded_smul_inner {d : ℕ} [NormedSpace ℝ F] {f : Space d → F}
     (hf : IsDistBounded f) (y : Space d) : IsDistBounded (fun x => ⟪y, x⟫_ℝ • f x)
 ```
 
-**`Space.IsDistBounded.isDistBounded_smul_inner_of_smul_norm`**, a lemma, [line 925](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L925).
+**`Space.IsDistBounded.isDistBounded_smul_inner_of_smul_norm`**, a lemma, [line 925](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L925).
 
 ```lean
 lemma isDistBounded_smul_inner_of_smul_norm {d : ℕ} [NormedSpace ℝ F] {f : Space d → F}
@@ -533,21 +533,21 @@ lemma isDistBounded_smul_inner_of_smul_norm {d : ℕ} [NormedSpace ℝ F] {f : S
     IsDistBounded (fun x => ⟪y, x⟫_ℝ • f x)
 ```
 
-**`Space.IsDistBounded.isDistBounded_mul_inner`**, a lemma, [line 936](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L936).
+**`Space.IsDistBounded.isDistBounded_mul_inner`**, a lemma, [line 936](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L936).
 
 ```lean
 lemma isDistBounded_mul_inner {d : ℕ} {f : Space d → ℝ}
     (hf : IsDistBounded f) (y : Space d) : IsDistBounded (fun x => ⟪y, x⟫_ℝ * f x)
 ```
 
-**`Space.IsDistBounded.isDistBounded_mul_inner'`**, a lemma, [line 940](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L940).
+**`Space.IsDistBounded.isDistBounded_mul_inner'`**, a lemma, [line 940](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L940).
 
 ```lean
 lemma isDistBounded_mul_inner' {d : ℕ} {f : Space d → ℝ}
     (hf : IsDistBounded f) (y : Space d) : IsDistBounded (fun x => ⟪x, y⟫_ℝ * f x)
 ```
 
-**`Space.IsDistBounded.isDistBounded_mul_inner_of_smul_norm`**, a lemma, [line 944](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L944).
+**`Space.IsDistBounded.isDistBounded_mul_inner_of_smul_norm`**, a lemma, [line 944](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L944).
 
 ```lean
 lemma isDistBounded_mul_inner_of_smul_norm {d : ℕ} {f : Space d → ℝ}
@@ -555,7 +555,7 @@ lemma isDistBounded_mul_inner_of_smul_norm {d : ℕ} {f : Space d → ℝ}
     IsDistBounded (fun x => ⟪y, x⟫_ℝ * f x)
 ```
 
-**`Space.IsDistBounded.mul_inner_pow_neg_two`**, a lemma, [line 949](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L949).
+**`Space.IsDistBounded.mul_inner_pow_neg_two`**, a lemma, [line 949](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean#L949).
 
 ```lean
 lemma mul_inner_pow_neg_two {d : ℕ} (y : Space d) (hd : 2 ≤ d := by omega) :
@@ -574,4 +574,4 @@ lemma mul_inner_pow_neg_two {d : ℕ} (y : Space d) (hd : 2 ≤ d := by omega) :
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/IsDistBounded.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/IsDistBounded.lean)
+- [Physlib/SpaceAndTime/Space/IsDistBounded.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/IsDistBounded.lean)

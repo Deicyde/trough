@@ -4,7 +4,7 @@ navigation: transparent
 
 # Point groups of Bravais lattices to The point groups of the…
 
-Modules in [PointGroup/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup):
+Modules in [PointGroup/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup):
 
 - [Point groups of Bravais lattices](pointgroup-basic.md)
 - [Counting the point group of a Bravais lattice](pointgroup-count.md)

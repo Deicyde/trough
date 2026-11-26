@@ -8,7 +8,7 @@ proof: formalized
 
 # Local Euler-Lagrange operators
 
-The module `PhyslibAlpha.ClassicalFieldTheory.Local.EulerLagrange`, [PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean): 7 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.Local.EulerLagrange`, [PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean): 7 declarations, 3 with a docstring.
 
 > The local Euler-Lagrange operator of a local Lagrangian, built componentwise.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.Local.EulerLagrange`, [PhyslibAlph
 
 ## A. Euler-Lagrange summands
 
-**`ClassicalFieldTheory.Local.eulerLagrangeTerm`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean#L55).
+**`ClassicalFieldTheory.Local.eulerLagrangeTerm`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean#L55).
 
 > The summand `(-1)^|I| D_I (∂L/∂u^a_I)` in the local Euler-Lagrange formula.
 
@@ -43,7 +43,7 @@ noncomputable def eulerLagrangeTerm (L : Lagrangian d m k) (I : DerivativeIndex 
     (f : Space d → EuclideanSpace ℝ (Fin m)) : Space d → ℝ
 ```
 
-**`ClassicalFieldTheory.Local.eulerLagrangeTerm_apply`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean#L61).
+**`ClassicalFieldTheory.Local.eulerLagrangeTerm_apply`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean#L61).
 
 ```lean
 lemma eulerLagrangeTerm_apply (L : Lagrangian d m k) (I : DerivativeIndex d k) (a : Fin m)
@@ -54,7 +54,7 @@ lemma eulerLagrangeTerm_apply (L : Lagrangian d m k) (I : DerivativeIndex d k) (
 
 ## B. Components of the Euler-Lagrange operator
 
-**`ClassicalFieldTheory.Local.eulerLagrangeComponent`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean#L72).
+**`ClassicalFieldTheory.Local.eulerLagrangeComponent`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean#L72).
 
 > The `a`-th component of the local Euler-Lagrange operator.
 
@@ -63,7 +63,7 @@ noncomputable def eulerLagrangeComponent (L : Lagrangian d m k) (a : Fin m)
     (f : Space d → EuclideanSpace ℝ (Fin m)) : Space d → ℝ
 ```
 
-**`ClassicalFieldTheory.Local.eulerLagrangeComponent_apply`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean#L77).
+**`ClassicalFieldTheory.Local.eulerLagrangeComponent_apply`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean#L77).
 
 ```lean
 lemma eulerLagrangeComponent_apply (L : Lagrangian d m k) (a : Fin m)
@@ -73,7 +73,7 @@ lemma eulerLagrangeComponent_apply (L : Lagrangian d m k) (a : Fin m)
 
 ## C. The full operator
 
-**`ClassicalFieldTheory.Local.eulerLagrangeOp`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean#L87).
+**`ClassicalFieldTheory.Local.eulerLagrangeOp`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean#L87).
 
 > The local Euler-Lagrange operator attached to a local Lagrangian.
 
@@ -82,7 +82,7 @@ noncomputable def eulerLagrangeOp (L : Lagrangian d m k) (f : Space d → Euclid
     Space d → EuclideanSpace ℝ (Fin m)
 ```
 
-**`ClassicalFieldTheory.Local.eulerLagrangeOp_apply`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean#L91).
+**`ClassicalFieldTheory.Local.eulerLagrangeOp_apply`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean#L91).
 
 ```lean
 lemma eulerLagrangeOp_apply (L : Lagrangian d m k) (f : Space d → EuclideanSpace ℝ (Fin m))
@@ -90,7 +90,7 @@ lemma eulerLagrangeOp_apply (L : Lagrangian d m k) (f : Space d → EuclideanSpa
     eulerLagrangeOp L f x a = eulerLagrangeComponent L a f x
 ```
 
-**`ClassicalFieldTheory.Local.eulerLagrangeOp_eq`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean#L97).
+**`ClassicalFieldTheory.Local.eulerLagrangeOp_eq`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean#L97).
 
 ```lean
 lemma eulerLagrangeOp_eq (L : Lagrangian d m k) (f : Space d → EuclideanSpace ℝ (Fin m)) :
@@ -103,4 +103,4 @@ lemma eulerLagrangeOp_eq (L : Lagrangian d m k) (f : Space d → EuclideanSpace 
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean)

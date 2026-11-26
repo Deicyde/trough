@@ -8,7 +8,7 @@ proof: formalized
 
 # The trace as a positive map
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Trace`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean): 6 declarations, 4 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Trace`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean): 6 declarations, 4 with a docstring.
 
 > The trace on bounded operators as a positive tracial functional, and the functional `Tr (x ρ)`.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Trace`, [PhyslibAlpha/
 
 ## A. Conjugation as a positive map
 
-**`PositiveLinearMap.conjugateₚ`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean#L61).
+**`PositiveLinearMap.conjugateₚ`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean#L61).
 
 > Conjugation `x ↦ c * x * star x`, as a positive linear map.
 
@@ -41,7 +41,7 @@ def _root_.PositiveLinearMap.conjugateₚ (c : A) : A →ₚ[R] A
 
 ## B. The trace as a positive functional
 
-**`ContinuousLinearMap.traceₚ`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean#L86).
+**`ContinuousLinearMap.traceₚ`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean#L86).
 
 > The trace on continuous linear maps, bundled as a positive linear map.
 
@@ -49,7 +49,7 @@ def _root_.PositiveLinearMap.conjugateₚ (c : A) : A →ₚ[R] A
 noncomputable def traceₚ : (E →L[ℂ] E) →ₚ[ℂ] ℂ
 ```
 
-**`ContinuousLinearMap.traceₚ_isTracial`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean#L95).
+**`ContinuousLinearMap.traceₚ_isTracial`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean#L95).
 
 > The trace is tracial.
 
@@ -58,7 +58,7 @@ lemma traceₚ_isTracial :
     PhyslibAlpha.ProbabilisticTheory.LinearMap.IsTracial (traceₚ (E := E)).toLinearMap
 ```
 
-**`ContinuousLinearMap.traceMulOpₚ`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean#L102).
+**`ContinuousLinearMap.traceMulOpₚ`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean#L102).
 
 > The positive linear functional `x ↦ tr (√ρ * x * √ρ†)`.
 
@@ -66,14 +66,14 @@ lemma traceₚ_isTracial :
 noncomputable def traceMulOpₚ (ρ : E →L[ℂ] E) : (E →L[ℂ] E) →ₚ[ℂ] ℂ
 ```
 
-**`ContinuousLinearMap.traceMulOpₚ_apply_of_nonneg`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean#L106).
+**`ContinuousLinearMap.traceMulOpₚ_apply_of_nonneg`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean#L106).
 
 ```lean
 lemma traceMulOpₚ_apply_of_nonneg {ρ : E →L[ℂ] E} (h : 0 ≤ ρ) (x : E →L[ℂ] E) :
     ρ.traceMulOpₚ x = (↑x * ↑ρ : E →ₗ[ℂ] E).trace ℂ E
 ```
 
-**`ContinuousLinearMap.traceMulOpₚ_apply_of_not_nonneg`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean#L115).
+**`ContinuousLinearMap.traceMulOpₚ_apply_of_not_nonneg`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean#L115).
 
 ```lean
 lemma traceMulOpₚ_apply_of_not_nonneg {ρ : E →L[ℂ] E} (h : ¬0 ≤ ρ) (x : E →L[ℂ] E) :
@@ -86,4 +86,4 @@ lemma traceMulOpₚ_apply_of_not_nonneg {ρ : E →L[ℂ] E} (h : ¬0 ≤ ρ) (x
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean)

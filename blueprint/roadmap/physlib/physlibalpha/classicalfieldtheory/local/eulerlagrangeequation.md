@@ -8,7 +8,7 @@ proof: formalized
 
 # Local Euler-Lagrange equations
 
-The module `PhyslibAlpha.ClassicalFieldTheory.Local.EulerLagrangeEquation`, [PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean): 6 declarations, 1 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.Local.EulerLagrangeEquation`, [PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean): 6 declarations, 1 with a docstring.
 
 > A named predicate for the local Euler-Lagrange equations and the criticality criteria using it.
 
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.Local.EulerLagrangeEquation`, [Phy
 
 ## A. Euler-Lagrange equation predicate
 
-**`ClassicalFieldTheory.Local.SatisfiesEulerLagrange`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean#L59).
+**`ClassicalFieldTheory.Local.SatisfiesEulerLagrange`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean#L59).
 
 > A field satisfies the local Euler-Lagrange equations for a local lagrangian when the
 > Euler-Lagrange operator vanishes along that field.
@@ -49,7 +49,7 @@ def SatisfiesEulerLagrange (L : Lagrangian d m k)
     (f : Space d → EuclideanSpace ℝ (Fin m)) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.satisfiesEulerLagrange_iff`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean#L64).
+**`ClassicalFieldTheory.Local.satisfiesEulerLagrange_iff`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean#L64).
 
 ```lean
 lemma satisfiesEulerLagrange_iff (L : Lagrangian d m k)
@@ -57,7 +57,7 @@ lemma satisfiesEulerLagrange_iff (L : Lagrangian d m k)
     SatisfiesEulerLagrange L f ↔ eulerLagrangeOp L f = 0
 ```
 
-**`ClassicalFieldTheory.Local.SatisfiesEulerLagrange.eulerLagrangeOp_eq_zero`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean#L69).
+**`ClassicalFieldTheory.Local.SatisfiesEulerLagrange.eulerLagrangeOp_eq_zero`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean#L69).
 
 ```lean
 lemma SatisfiesEulerLagrange.eulerLagrangeOp_eq_zero
@@ -66,7 +66,7 @@ lemma SatisfiesEulerLagrange.eulerLagrangeOp_eq_zero
     eulerLagrangeOp L f = 0
 ```
 
-**`ClassicalFieldTheory.Local.SatisfiesEulerLagrange.of_eulerLagrangeOp_eq_zero`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean#L75).
+**`ClassicalFieldTheory.Local.SatisfiesEulerLagrange.of_eulerLagrangeOp_eq_zero`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean#L75).
 
 ```lean
 lemma SatisfiesEulerLagrange.of_eulerLagrangeOp_eq_zero
@@ -77,7 +77,7 @@ lemma SatisfiesEulerLagrange.of_eulerLagrangeOp_eq_zero
 
 ## B. Criticality criteria
 
-**`ClassicalFieldTheory.Local.isCritical_iff_satisfiesEulerLagrange_of_contDiff_and_smoothInCoordinates`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean#L86).
+**`ClassicalFieldTheory.Local.isCritical_iff_satisfiesEulerLagrange_of_contDiff_and_smoothInCoordinates`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean#L86).
 
 ```lean
 lemma isCritical_iff_satisfiesEulerLagrange_of_contDiff_and_smoothInCoordinates
@@ -87,7 +87,7 @@ lemma isCritical_iff_satisfiesEulerLagrange_of_contDiff_and_smoothInCoordinates
     IsCritical L f ↔ SatisfiesEulerLagrange L f
 ```
 
-**`ClassicalFieldTheory.Local.isCritical_iff_satisfiesEulerLagrange_of_admissibleForAction_and_smoothInCoordinates`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean#L93).
+**`ClassicalFieldTheory.Local.isCritical_iff_satisfiesEulerLagrange_of_admissibleForAction_and_smoothInCoordinates`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean#L93).
 
 ```lean
 lemma isCritical_iff_satisfiesEulerLagrange_of_admissibleForAction_and_smoothInCoordinates
@@ -108,4 +108,4 @@ lemma isCritical_iff_satisfiesEulerLagrange_of_admissibleForAction_and_smoothInC
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean)

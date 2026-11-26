@@ -6,9 +6,9 @@ statement: formalized
 proof: formalized
 ---
 
-# The type corresponding to quark doublets (Physlib)
+# The type corresponding to quark doublets
 
-The module `Physlib.Particles.StandardModel.Fermions.QuarkDoublet`, [Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean): 18 declarations (2 instances with no name), 7 with a docstring.
+The module `Physlib.Particles.StandardModel.Fermions.QuarkDoublet`, [Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean): 18 declarations (2 instances with no name), 7 with a docstring.
 
 > In this module we define the type corresponding to
 > the target vector space of a quark field in the Standard Model.
@@ -16,7 +16,7 @@ The module `Physlib.Particles.StandardModel.Fermions.QuarkDoublet`, [Physlib/Par
 > On this type we define a representation of the Lorentz group, and a
 > representation of the Standard Model gauge group.
 
-**`StandardModel.QuarkDoublet`**, a structure, [line 30](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L30).
+**`StandardModel.QuarkDoublet`**, a structure, [line 30](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L30).
 
 > The vector space of a quark field in the Standard Model.
 > These live in the (3, 2)\_\{1} representation of the gauge group.
@@ -29,7 +29,7 @@ structure QuarkDoublet where
 
 ## Equivalence with the underlying tensor product space
 
-**`StandardModel.QuarkDoublet.valEquiv`**, a def, [line 43](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L43).
+**`StandardModel.QuarkDoublet.valEquiv`**, a def, [line 43](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L43).
 
 > The linear equivalence between `QuarkDoublet` and its underlying tensor product space.
 
@@ -42,19 +42,19 @@ def valEquiv : QuarkDoublet ≃
 
 > The AddCommGroup and module instances are inherited from the underlying tensor product space.
 
-**An instance with no name**, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L55).
+**An instance with no name**, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L55).
 
 ```lean
 instance : AddCommGroup QuarkDoublet
 ```
 
-**An instance with no name**, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L57).
+**An instance with no name**, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L57).
 
 ```lean
 instance : Module ℂ QuarkDoublet
 ```
 
-**`StandardModel.QuarkDoublet.valLinEquiv`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L60).
+**`StandardModel.QuarkDoublet.valLinEquiv`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L60).
 
 > The linear equivalence between `QuarkDoublet` and its underlying tensor product space.
 
@@ -63,13 +63,13 @@ def valLinEquiv : QuarkDoublet ≃ₗ[ℂ]
     Fermion.LeftHandedWeyl ⊗[ℂ] EuclideanSpace ℂ (Fin 3) ⊗[ℂ] EuclideanSpace ℂ (Fin 2)
 ```
 
-**`StandardModel.QuarkDoublet.valLinEquiv_apply`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L68).
+**`StandardModel.QuarkDoublet.valLinEquiv_apply`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L68).
 
 ```lean
 lemma valLinEquiv_apply (q : QuarkDoublet) : valLinEquiv q = q.val
 ```
 
-**`StandardModel.QuarkDoublet.valLinEquiv_symm_apply`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L70).
+**`StandardModel.QuarkDoublet.valLinEquiv_symm_apply`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L70).
 
 ```lean
 lemma valLinEquiv_symm_apply
@@ -77,13 +77,13 @@ lemma valLinEquiv_symm_apply
     valLinEquiv.symm m = ⟨m⟩
 ```
 
-**`StandardModel.QuarkDoublet.val_add`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L75).
+**`StandardModel.QuarkDoublet.val_add`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L75).
 
 ```lean
 lemma val_add (q1 q2 : QuarkDoublet) : (q1 + q2).val = q1.val + q2.val
 ```
 
-**`StandardModel.QuarkDoublet.val_smul`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L78).
+**`StandardModel.QuarkDoublet.val_smul`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L78).
 
 ```lean
 lemma val_smul (r : ℂ) (q : QuarkDoublet) : (r • q).val = r • q.val
@@ -91,7 +91,7 @@ lemma val_smul (r : ℂ) (q : QuarkDoublet) : (r • q).val = r • q.val
 
 ## Lorentz group representation
 
-**`StandardModel.QuarkDoublet.repLorentzGroup`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L89).
+**`StandardModel.QuarkDoublet.repLorentzGroup`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L89).
 
 > The representation of the Lorentz group on the space of quark fields.
 
@@ -101,7 +101,7 @@ noncomputable def repLorentzGroup : Representation ℂ (SL(2,ℂ)) QuarkDoublet
 
 ## The representation of the Standard Model gauge group
 
-**`StandardModel.QuarkDoublet.repGaugeGroupI`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L110).
+**`StandardModel.QuarkDoublet.repGaugeGroupI`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L110).
 
 > The action of the full Standard Model gauge group on quark fields.
 
@@ -109,7 +109,7 @@ noncomputable def repLorentzGroup : Representation ℂ (SL(2,ℂ)) QuarkDoublet
 noncomputable def repGaugeGroupI : Representation ℂ GaugeGroupI QuarkDoublet
 ```
 
-**`StandardModel.QuarkDoublet.repGaugeGroupI_tmul`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L127).
+**`StandardModel.QuarkDoublet.repGaugeGroupI_tmul`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L127).
 
 ```lean
 lemma repGaugeGroupI_tmul (g : GaugeGroupI) (ψ : Fermion.LeftHandedWeyl)
@@ -118,7 +118,7 @@ lemma repGaugeGroupI_tmul (g : GaugeGroupI) (ψ : Fermion.LeftHandedWeyl)
       (g.toSU2.1.toEuclideanLin w)⟩
 ```
 
-**`StandardModel.QuarkDoublet.repGaugeGroupI_tmul_basis_eq_sum`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L135).
+**`StandardModel.QuarkDoublet.repGaugeGroupI_tmul_basis_eq_sum`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L135).
 
 > The action of the full gauge group on a tensor product of basis elements, expanded as a
 > sum over the columns of the `SU(3)` and `SU(2)` matrices.
@@ -132,7 +132,7 @@ lemma repGaugeGroupI_tmul_basis_eq_sum (g : GaugeGroupI) (k : Fin 2) (i : Fin 3)
           ⊗ₜ[ℂ] EuclideanSpace.basisFun (Fin 2) ℂ j'⟩ : QuarkDoublet)
 ```
 
-**`StandardModel.QuarkDoublet.repGaugeGroupI_eq_iff_mul_eq`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L157).
+**`StandardModel.QuarkDoublet.repGaugeGroupI_eq_iff_mul_eq`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L157).
 
 ```lean
 lemma repGaugeGroupI_eq_iff_mul_eq {g1 g2 : GaugeGroupI} :
@@ -141,7 +141,7 @@ lemma repGaugeGroupI_eq_iff_mul_eq {g1 g2 : GaugeGroupI} :
     g2.toU1.1 * g2.toSU3.1 i' i * g2.toSU2.1 j' j
 ```
 
-**`StandardModel.QuarkDoublet.mem_repGaugeGroupI_ker_iff_eq`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L185).
+**`StandardModel.QuarkDoublet.mem_repGaugeGroupI_ker_iff_eq`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L185).
 
 ```lean
 lemma mem_repGaugeGroupI_ker_iff_eq {g : GaugeGroupI} :
@@ -149,21 +149,21 @@ lemma mem_repGaugeGroupI_ker_iff_eq {g : GaugeGroupI} :
       a * b * g.toU1.1 = 1
 ```
 
-**`StandardModel.QuarkDoublet.gaugeGroup_subgroup_ℤ₆_le_ker_repGaugeGroupI`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L206).
+**`StandardModel.QuarkDoublet.gaugeGroup_subgroup_ℤ₆_le_ker_repGaugeGroupI`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L206).
 
 ```lean
 lemma gaugeGroup_subgroup_ℤ₆_le_ker_repGaugeGroupI :
     GaugeGroupQuot.subgroup .ℤ₆ ≤ repGaugeGroupI.ker
 ```
 
-**`StandardModel.QuarkDoublet.gaugeGroup_subgroup_le_ker_repGaugeGroupI`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L220).
+**`StandardModel.QuarkDoublet.gaugeGroup_subgroup_le_ker_repGaugeGroupI`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L220).
 
 ```lean
 lemma gaugeGroup_subgroup_le_ker_repGaugeGroupI (Q : GaugeGroupQuot) :
     Q.subgroup ≤ repGaugeGroupI.ker
 ```
 
-**`StandardModel.QuarkDoublet.repGaugeGroup`**, a def, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L226).
+**`StandardModel.QuarkDoublet.repGaugeGroup`**, a def, [line 226](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean#L226).
 
 > The action of the Standard Model gauge group, potentially quotiented by
 > a discrete factor on quark fields.
@@ -180,4 +180,4 @@ noncomputable def repGaugeGroup : (Q : GaugeGroupQuot) →
 
 ## Sources
 
-- [Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean)
+- [Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean)

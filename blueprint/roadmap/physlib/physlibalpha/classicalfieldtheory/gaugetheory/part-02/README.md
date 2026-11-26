@@ -2,14 +2,8 @@
 navigation: transparent
 ---
 
-# The symmetrized derivatives of… to Realizations of the covariant…
+# The bosonic generators of a… to The Lie algebra of a global…
 
-- [The symmetrized derivatives of a gauge field and the classification of invariants](gaugeboson-realization-symmetrized.md)
-- [Adjoint gauge tensors and the covariant derivative](gaugeboson-realization-transformsadjoint.md)
-
-Modules in [GaugeFieldData/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData):
-
-- [The field data of a gauge theory](gaugefielddata-basic.md)
 - [The bosonic generators of a gauge theory](gaugefielddata-bosongenerators.md)
 - [The bosonic matter field of a gauge theory](gaugefielddata-bosonmatterfield.md)
 - [The bosonic module of a gauge theory](gaugefielddata-bosonmodule.md)
@@ -17,15 +11,22 @@ Modules in [GaugeFieldData/](https://github.com/leanprover-community/physlib/tre
 - [The fermionic matter field of a gauge theory](gaugefielddata-fermionmatterfield.md)
 - [The fermionic module of a gauge theory](gaugefielddata-fermionmodule.md)
 
-Modules in [GlobalGaugeGroup/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup):
+Modules in [GlobalGaugeGroup/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup):
 
 - [Global gauge groups](globalgaugegroup-basic.md)
-- [The gauge jets of a global gauge group](globalgaugegroup-gaugejetgroup.md)
-- [The Lie algebra jets of a global gauge group](globalgaugegroup-jetliealgebra.md)
-- [The local gauge data of a global gauge group](globalgaugegroup-localgaugedata.md)
+- [The Taylor coefficients of the adjoint action](globalgaugegroup-adjointcoeff.md)
+- [The jet gauge group of a global gauge group](globalgaugegroup-gaugejetgroup.md)
+- [The jet operations of a global gauge group](globalgaugegroup-jetoperations.md)
+- [The Maurer–Cartan form on the jet gauge group](globalgaugegroup-maurercartan.md)
+- [The product of global gauge groups](globalgaugegroup-prod.md)
+- [The global gauge group SO(n)](globalgaugegroup-so.md)
+- [The global gauge group Sp(n)](globalgaugegroup-sp.md)
+- [The global gauge group SU(n)](globalgaugegroup-su.md)
+- [The symmetrized Maurer–Cartan form of a global gauge group](globalgaugegroup-symmetrizedmaurercartan.md)
+- [The truncation filtration of the jet gauge group](globalgaugegroup-truncation.md)
+- [The global gauge group U(1)](globalgaugegroup-u1.md)
+- [The gauge jets of unitary gauge groups](globalgaugegroup-unitaryjet.md)
 
-Modules in [LocalCovField/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField):
+Modules in [GlobalGaugeGroup/LieAlgebra/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/LieAlgebra):
 
-- [The covariant field algebra of a gauge theory](localcovfield-basic.md)
-- [The covariant gauge sector as the complexified covariant gauge-only algebra](localcovfield-gaugesector.md)
-- [Realizations of the covariant gauge sector](localcovfield-gaugesectorrealization.md)
+- [The Lie algebra of a global gauge group](globalgaugegroup-liealgebra-basic.md)

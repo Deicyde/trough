@@ -8,7 +8,7 @@ proof: formalized
 
 # Analyticity and dense non-vanishing sets
 
-The module `Physlib.Mathematics.ForMathlib.Analytic`, [Physlib/Mathematics/ForMathlib/Analytic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Analytic.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.Mathematics.ForMathlib.Analytic`, [Physlib/Mathematics/ForMathlib/Analytic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Analytic.lean): 1 declaration, 1 with a docstring.
 
 > Density of the non-vanishing set of an analytic function.
 
@@ -31,7 +31,7 @@ The module `Physlib.Mathematics.ForMathlib.Analytic`, [Physlib/Mathematics/ForMa
 
 ## A. Density of the non-vanishing set
 
-**`AnalyticOnNhd.dense_setOf_ne_zero`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Analytic.lean#L50).
+**`AnalyticOnNhd.dense_setOf_ne_zero`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Analytic.lean#L50).
 
 > A function analytic on a connected space, and non-zero at some point, is non-zero on a dense
 > set.
@@ -49,4 +49,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/ForMathlib/Analytic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Analytic.lean)
+- [Physlib/Mathematics/ForMathlib/Analytic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Analytic.lean)

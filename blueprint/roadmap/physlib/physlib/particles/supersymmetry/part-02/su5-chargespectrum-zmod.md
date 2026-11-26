@@ -8,7 +8,7 @@ proof: formalized
 
 # Charge spectra with values in `ZMod n`
 
-The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.ZMod`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean): 8 declarations, 6 with a docstring.
+The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.ZMod`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean): 8 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -38,7 +38,7 @@ The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.ZMod`, [Physlib/P
 
 ### A.1. General construction
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ZModCharges`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean#L80).
+**`SuperSymmetry.SU5.ChargeSpectrum.ZModCharges`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean#L80).
 
 > The finite set of `ZMod n` valued charges which are complete,
 > not pheno-constrained and don't regenerate dangerous couplings
@@ -50,7 +50,7 @@ def ZModCharges (n : ℕ) [NeZero n] : Finset (ChargeSpectrum (ZMod n))
 
 ### A.2. Finite set of viable `ZMod 1` charge spectra is empty
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ZModCharges_one_eq`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean#L92).
+**`SuperSymmetry.SU5.ChargeSpectrum.ZModCharges_one_eq`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean#L92).
 
 > This lemma corresponds to the statement that there are no choices of `ℤ₁` representations
 > which give a phenomenologically viable theory.
@@ -61,7 +61,7 @@ lemma ZModCharges_one_eq : ZModCharges 1 = ∅
 
 ### A.3. Finite set of viable `ZMod 2` charge spectra is empty
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ZModCharges_two_eq`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean#L103).
+**`SuperSymmetry.SU5.ChargeSpectrum.ZModCharges_two_eq`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean#L103).
 
 > This lemma corresponds to the statement that there are no choices of `ℤ₂` representations
 > which give a phenomenologically viable theory.
@@ -72,7 +72,7 @@ lemma ZModCharges_two_eq : ZModCharges 2 = ∅
 
 ### A.4. Finite set of viable `ZMod 3` charge spectra is empty
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ZModCharges_three_eq`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean#L114).
+**`SuperSymmetry.SU5.ChargeSpectrum.ZModCharges_three_eq`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean#L114).
 
 > This lemma corresponds to the statement that there are no choices of `ℤ₃` representations
 > which give a phenomenologically viable theory.
@@ -83,7 +83,7 @@ lemma ZModCharges_three_eq : ZModCharges 3 = ∅
 
 ### A.5. Finite set of viable `ZMod 4` has four elements
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ZModCharges_four_eq`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean#L123).
+**`SuperSymmetry.SU5.ChargeSpectrum.ZModCharges_four_eq`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean#L123).
 
 ```lean
 lemma ZModCharges_four_eq : ZModCharges 4 = {⟨some 0, some 2, {1}, {3}⟩,
@@ -92,7 +92,7 @@ lemma ZModCharges_four_eq : ZModCharges 4 = {⟨some 0, some 2, {1}, {3}⟩,
 
 ### A.6. Finite set of viable `ZMod 5` charge spectra is empty (pseudo result)
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ZModCharges_five_eq`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean#L136).
+**`SuperSymmetry.SU5.ChargeSpectrum.ZModCharges_five_eq`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean#L136).
 
 > This lemma corresponds to the statement that there are no choices of `ℤ₅` representations
 > which give a phenomenologically viable theory.
@@ -103,7 +103,7 @@ lemma ZModCharges_five_eq : ZModCharges 5 = ∅
 
 ### A.7. Finite set of viable `ZMod 6` charge spectra is non-empty (pseudo result)
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ZModCharges_six_eq`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean#L145).
+**`SuperSymmetry.SU5.ChargeSpectrum.ZModCharges_six_eq`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean#L145).
 
 ```lean
 lemma ZModCharges_six_eq : ZModCharges 6 = {⟨some 0, some 2, {5}, {1}⟩,
@@ -118,7 +118,7 @@ lemma ZModCharges_six_eq : ZModCharges 6 = {⟨some 0, some 2, {5}, {1}⟩,
 
 ### B.1. General construction
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ZModZModCharges`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean#L168).
+**`SuperSymmetry.SU5.ChargeSpectrum.ZModZModCharges`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean#L168).
 
 > The finite set of `ZMod n × ZMod m` valued charges which are complete,
 > not pheno-constrained and don't regenerate dangerous couplings
@@ -135,4 +135,4 @@ def ZModZModCharges (n m : ℕ) [NeZero n] [NeZero m] : Finset (ChargeSpectrum (
 
 ## Sources
 
-- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean)
+- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean)

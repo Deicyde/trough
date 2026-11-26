@@ -8,7 +8,7 @@ proof: formalized
 
 # Charged-lepton singlets (Physlib)
 
-The module `Physlib.Particles.StandardModel.Fermions.LeptonSinglet`, [Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean): 18 declarations (2 instances with no name), 12 with a docstring.
+The module `Physlib.Particles.StandardModel.Fermions.LeptonSinglet`, [Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean): 18 declarations (2 instances with no name), 12 with a docstring.
 
 ## i. Overview
 
@@ -38,7 +38,7 @@ The module `Physlib.Particles.StandardModel.Fermions.LeptonSinglet`, [Physlib/Pa
 > The Weyl spinor carries the right-handed Lorentz index, and it is the whole of the multiplet:
 > a charged-lepton singlet has no colour index and no weak-isospin index.
 
-**`StandardModel.LeptonSinglet`**, a structure, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L62).
+**`StandardModel.LeptonSinglet`**, a structure, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L62).
 
 > The target vector space of one Standard Model charged-lepton singlet.
 > It carries the `(1, 1)_{-6}` representation of the gauge group.
@@ -55,7 +55,7 @@ structure LeptonSinglet where
 > The following equivalences transfer the linear structure of the Weyl-spinor space and expose
 > that model when defining representations.
 
-**`StandardModel.LeptonSinglet.valEquiv`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L78).
+**`StandardModel.LeptonSinglet.valEquiv`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L78).
 
 > Identifies a charged-lepton singlet with its underlying Weyl spinor.
 
@@ -63,19 +63,19 @@ structure LeptonSinglet where
 def valEquiv : LeptonSinglet ≃ Fermion.RightHandedWeyl
 ```
 
-**An instance with no name**, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L82).
+**An instance with no name**, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L82).
 
 ```lean
 instance : AddCommGroup LeptonSinglet
 ```
 
-**An instance with no name**, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L84).
+**An instance with no name**, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L84).
 
 ```lean
 instance : Module ℂ LeptonSinglet
 ```
 
-**`StandardModel.LeptonSinglet.valLinEquiv`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L87).
+**`StandardModel.LeptonSinglet.valLinEquiv`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L87).
 
 > The linear identification with the underlying Weyl-spinor space.
 
@@ -83,26 +83,26 @@ instance : Module ℂ LeptonSinglet
 def valLinEquiv : LeptonSinglet ≃ₗ[ℂ] Fermion.RightHandedWeyl
 ```
 
-**`StandardModel.LeptonSinglet.valLinEquiv_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L94).
+**`StandardModel.LeptonSinglet.valLinEquiv_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L94).
 
 ```lean
 lemma valLinEquiv_apply (l : LeptonSinglet) : valLinEquiv l = l.val
 ```
 
-**`StandardModel.LeptonSinglet.valLinEquiv_symm_apply`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L96).
+**`StandardModel.LeptonSinglet.valLinEquiv_symm_apply`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L96).
 
 ```lean
 lemma valLinEquiv_symm_apply (m : Fermion.RightHandedWeyl) :
     valLinEquiv.symm m = ⟨m⟩
 ```
 
-**`StandardModel.LeptonSinglet.val_add`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L100).
+**`StandardModel.LeptonSinglet.val_add`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L100).
 
 ```lean
 lemma val_add (l₁ l₂ : LeptonSinglet) : (l₁ + l₂).val = l₁.val + l₂.val
 ```
 
-**`StandardModel.LeptonSinglet.val_smul`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L103).
+**`StandardModel.LeptonSinglet.val_smul`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L103).
 
 ```lean
 lemma val_smul (r : ℂ) (l : LeptonSinglet) : (r • l).val = r • l.val
@@ -113,7 +113,7 @@ lemma val_smul (r : ℂ) (l : LeptonSinglet) : (r • l).val = r • l.val
 > The Lorentz group acts through the right-handed Weyl representation, transported along the
 > identification of a charged-lepton singlet with its spinor.
 
-**`StandardModel.LeptonSinglet.repLorentzGroup`**, a def, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L116).
+**`StandardModel.LeptonSinglet.repLorentzGroup`**, a def, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L116).
 
 > The right-handed Lorentz representation on charged-lepton singlets.
 
@@ -129,7 +129,7 @@ noncomputable def repLorentzGroup : Representation ℂ (SL(2,ℂ)) LeptonSinglet
 >
 > The formulas below expose the scalar used to compare actions and compute the kernel.
 
-**`StandardModel.LeptonSinglet.repGaugeGroupI`**, a def, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L137).
+**`StandardModel.LeptonSinglet.repGaugeGroupI`**, a def, [line 137](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L137).
 
 > The `(1, 1)_{-6}` action of the unquotiented Standard Model gauge group.
 
@@ -137,7 +137,7 @@ noncomputable def repLorentzGroup : Representation ℂ (SL(2,ℂ)) LeptonSinglet
 noncomputable def repGaugeGroupI : Representation ℂ GaugeGroupI LeptonSinglet
 ```
 
-**`StandardModel.LeptonSinglet.repGaugeGroupI_apply`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L150).
+**`StandardModel.LeptonSinglet.repGaugeGroupI_apply`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L150).
 
 > The gauge group acts on a charged-lepton singlet by the hypercharge scalar alone.
 
@@ -146,7 +146,7 @@ lemma repGaugeGroupI_apply (g : GaugeGroupI) (ψ : Fermion.RightHandedWeyl) :
     repGaugeGroupI g ⟨ψ⟩ = ⟨(star g.toU1.1 ^ 6) • ψ⟩
 ```
 
-**`StandardModel.LeptonSinglet.repGaugeGroupI_basis`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L155).
+**`StandardModel.LeptonSinglet.repGaugeGroupI_basis`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L155).
 
 > The gauge action is diagonal in the standard Weyl basis.
 
@@ -156,7 +156,7 @@ lemma repGaugeGroupI_basis (g : GaugeGroupI) (k : Fin 2) :
       (star g.toU1.1 ^ 6) • (⟨RightHandedWeyl.basis k⟩ : LeptonSinglet)
 ```
 
-**`StandardModel.LeptonSinglet.repGaugeGroupI_eq_iff`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L161).
+**`StandardModel.LeptonSinglet.repGaugeGroupI_eq_iff`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L161).
 
 > Two gauge elements induce the same action exactly when their hypercharge scalars agree.
 
@@ -171,7 +171,7 @@ lemma repGaugeGroupI_eq_iff {g₁ g₂ : GaugeGroupI} :
 > An element acts trivially exactly when its hypercharge scalar is one. Its colour and weak
 > components are unrestricted, since neither appears in the action.
 
-**`StandardModel.LeptonSinglet.mem_repGaugeGroupI_ker_iff_eq`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L185).
+**`StandardModel.LeptonSinglet.mem_repGaugeGroupI_ker_iff_eq`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L185).
 
 > Characterizes the full-group elements acting trivially on the charged-lepton singlet.
 
@@ -186,7 +186,7 @@ lemma mem_repGaugeGroupI_ker_iff_eq {g : GaugeGroupI} :
 > The `U(1)` component of a central element is a sixth root of unity, so conjugating and raising
 > to the sixth power gives one, and charge `-6` therefore acts trivially.
 
-**`StandardModel.LeptonSinglet.gaugeGroup_subgroup_ℤ₆_le_ker_repGaugeGroupI`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L200).
+**`StandardModel.LeptonSinglet.gaugeGroup_subgroup_ℤ₆_le_ker_repGaugeGroupI`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L200).
 
 > The central `ℤ₆` subgroup acts trivially on `(1, 1)_{-6}`.
 
@@ -195,7 +195,7 @@ lemma gaugeGroup_subgroup_ℤ₆_le_ker_repGaugeGroupI :
     GaugeGroupQuot.subgroup .ℤ₆ ≤ repGaugeGroupI.ker
 ```
 
-**`StandardModel.LeptonSinglet.gaugeGroup_subgroup_le_ker_repGaugeGroupI`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L211).
+**`StandardModel.LeptonSinglet.gaugeGroup_subgroup_le_ker_repGaugeGroupI`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L211).
 
 > Every supported quotient subgroup acts trivially on the charged-lepton singlet.
 
@@ -204,7 +204,7 @@ lemma gaugeGroup_subgroup_le_ker_repGaugeGroupI (Q : GaugeGroupQuot) :
     Q.subgroup ≤ repGaugeGroupI.ker
 ```
 
-**`StandardModel.LeptonSinglet.repGaugeGroup`**, a def, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L217).
+**`StandardModel.LeptonSinglet.repGaugeGroup`**, a def, [line 217](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean#L217).
 
 > The `(1, 1)_{-6}` representation for every supported global form of the
 > Standard Model gauge group.
@@ -221,4 +221,4 @@ noncomputable def repGaugeGroup : (Q : GaugeGroupQuot) →
 
 ## Sources
 
-- [Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean)
+- [Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Effects from the functional calculus
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JB.GeneratedByOne.Effect`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/Effect.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/Effect.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JB.GeneratedByOne.Effect`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/Effect.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/Effect.lean): 2 declarations, 2 with a docstring.
 
 > A continuous `[0, 1]`-valued function of an observable in a JB-algebra is an effect.
 
@@ -27,7 +27,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JB.GeneratedByOne.E
 
 ## A. Effects from the functional calculus
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.jordanCfcEffect`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/Effect.lean#L54).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.jordanCfcEffect`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/Effect.lean#L54).
 
 > The effect `f(a)` of a continuous function `f` with values in `[0, 1]`.
 
@@ -36,7 +36,7 @@ noncomputable def jordanCfcEffect [Nontrivial E] (a : E)
     (f : C(jordanSpectrum a, ℝ)) (hf0 : ∀ x, 0 ≤ f x) (hf1 : ∀ x, f x ≤ 1) : Effect E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.coe_jordanCfcEffect`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/Effect.lean#L65).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.coe_jordanCfcEffect`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/Effect.lean#L65).
 
 > Coercing the CFC effect forgets only its proved bounds.
 
@@ -52,4 +52,4 @@ lemma coe_jordanCfcEffect [Nontrivial E] (a : E)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/Effect.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/Effect.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/Effect.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/Effect.lean)

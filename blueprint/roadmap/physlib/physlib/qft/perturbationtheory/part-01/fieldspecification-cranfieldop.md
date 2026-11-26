@@ -8,7 +8,7 @@ proof: formalized
 
 # Creation and annihilation states
 
-The module `Physlib.QFT.PerturbationTheory.FieldSpecification.CrAnFieldOp`, [Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean): 9 declarations (2 instances with no name), 8 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.FieldSpecification.CrAnFieldOp`, [Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean): 9 declarations (2 instances with no name), 8 with a docstring.
 
 > Called `CrAnFieldOp` for short here.
 >
@@ -31,7 +31,7 @@ The module `Physlib.QFT.PerturbationTheory.FieldSpecification.CrAnFieldOp`, [Phy
 > - The map `crAnStatistics` takes a `CrAnFieldOp` to its corresponding `FieldStatistic`
 > (bosonic or fermionic).
 
-**`FieldSpecification.fieldOpToCrAnType`**, a def, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L44).
+**`FieldSpecification.fieldOpToCrAnType`**, a def, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L44).
 
 > To each field operator the specification of the type of creation and annihilation parts.
 > For asymptotic states there is only one allowed part, whilst for position
@@ -41,7 +41,7 @@ The module `Physlib.QFT.PerturbationTheory.FieldSpecification.CrAnFieldOp`, [Phy
 def fieldOpToCrAnType : 𝓕.FieldOp → Type
 ```
 
-**An instance with no name**, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L50).
+**An instance with no name**, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L50).
 
 > The instance of a finite type on `𝓕.fieldOpToCreateAnnihilateType i`.
 
@@ -49,7 +49,7 @@ def fieldOpToCrAnType : 𝓕.FieldOp → Type
 instance : ∀ i, Fintype (𝓕.fieldOpToCrAnType i)
 ```
 
-**An instance with no name**, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L57).
+**An instance with no name**, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L57).
 
 > The instance of a decidable equality on `𝓕.fieldOpToCreateAnnihilateType i`.
 
@@ -57,7 +57,7 @@ instance : ∀ i, Fintype (𝓕.fieldOpToCrAnType i)
 instance : ∀ i, DecidableEq (𝓕.fieldOpToCrAnType i)
 ```
 
-**`FieldSpecification.fieldOpToCreateAnnihilateTypeCongr`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L65).
+**`FieldSpecification.fieldOpToCreateAnnihilateTypeCongr`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L65).
 
 > The equivalence between `𝓕.fieldOpToCreateAnnihilateType i` and
 > `𝓕.fieldOpToCreateAnnihilateType j` from an equality `i = j`.
@@ -67,7 +67,7 @@ def fieldOpToCreateAnnihilateTypeCongr : {i j : 𝓕.FieldOp} → i = j →
     𝓕.fieldOpToCrAnType i ≃ 𝓕.fieldOpToCrAnType j
 ```
 
-**`FieldSpecification.CrAnFieldOp`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L98).
+**`FieldSpecification.CrAnFieldOp`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L98).
 
 > For a field specification `𝓕`, the (sigma) type `𝓕.CrAnFieldOp`
 > corresponds to the type of creation and annihilation parts of field operators.
@@ -100,7 +100,7 @@ def fieldOpToCreateAnnihilateTypeCongr : {i j : 𝓕.FieldOp} → i = j →
 def CrAnFieldOp : Type
 ```
 
-**`FieldSpecification.crAnFieldOpToFieldOp`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L101).
+**`FieldSpecification.crAnFieldOpToFieldOp`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L101).
 
 > The map from creation and annihilation field operator to their underlying states.
 
@@ -108,14 +108,14 @@ def CrAnFieldOp : Type
 def crAnFieldOpToFieldOp : 𝓕.CrAnFieldOp → 𝓕.FieldOp
 ```
 
-**`FieldSpecification.crAnFieldOpToFieldOp_prod`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L104).
+**`FieldSpecification.crAnFieldOpToFieldOp_prod`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L104).
 
 ```lean
 lemma crAnFieldOpToFieldOp_prod (s : 𝓕.FieldOp) (t : 𝓕.fieldOpToCrAnType s) :
     𝓕.crAnFieldOpToFieldOp ⟨s, t⟩ = s
 ```
 
-**`FieldSpecification.crAnFieldOpToCreateAnnihilate`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L114).
+**`FieldSpecification.crAnFieldOpToCreateAnnihilate`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L114).
 
 > For a field specification `𝓕`, `𝓕.crAnFieldOpToCreateAnnihilate` is the map from
 >   `𝓕.CrAnFieldOp` to `CreateAnnihilate` taking `φ` to `create` if
@@ -128,7 +128,7 @@ lemma crAnFieldOpToFieldOp_prod (s : 𝓕.FieldOp) (t : 𝓕.fieldOpToCrAnType s
 def crAnFieldOpToCreateAnnihilate : 𝓕.CrAnFieldOp → CreateAnnihilate
 ```
 
-**`FieldSpecification.crAnStatistics`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L129).
+**`FieldSpecification.crAnStatistics`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean#L129).
 
 > For a field specification `𝓕`, and an element `φ` in `𝓕.CrAnFieldOp`, the field
 > statistic `crAnStatistics φ` is defined to be the statistic associated with the field `𝓕.Field`
@@ -150,4 +150,4 @@ def crAnStatistics : 𝓕.CrAnFieldOp → FieldStatistic
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean)
+- [Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean)

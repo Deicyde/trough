@@ -8,7 +8,7 @@ proof: formalized
 
 # Invariant states by Følner averaging
 
-The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Invariant`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean): 24 declarations, 18 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Invariant`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean): 24 declarations, 18 with a docstring.
 
 > A state of a `*`-algebra with a group of automorphisms has invariant limit points, obtained by
 > averaging over larger and larger finite subsets of the group.
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Invariant`, [PhyslibAlp
 
 ## A. Bounded observables
 
-**`PhyslibAlpha.ProbabilisticTheory.IsBounded`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L71).
+**`PhyslibAlpha.ProbabilisticTheory.IsBounded`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L71).
 
 > An observable `a` is **bounded** if some multiple `c · 1` of the identity exceeds `a* a` by a
 > sum of squares.
@@ -53,7 +53,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Invariant`, [PhyslibAlp
 def IsBounded (a : A) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.norm_sq_le_of_isBounded`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L75).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.norm_sq_le_of_isBounded`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L75).
 
 > **Every state is bounded on a bounded observable**, by the same constant.
 
@@ -62,7 +62,7 @@ lemma AlgState.norm_sq_le_of_isBounded {a : A} {c : ℝ} {p : A} (hp : p ∈ sum
     (h : star a * a + p = (c : ℂ) • (1 : A)) (ω : AlgState A) : ‖ω a‖ ^ 2 ≤ c
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.sumSq_map`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L91).
+**`PhyslibAlpha.ProbabilisticTheory.sumSq_map`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L91).
 
 > A star-algebra equivalence maps sums of squares to sums of squares.
 
@@ -71,7 +71,7 @@ lemma sumSq_map {B : Type*} [Ring B] [Algebra ℂ B] [StarRing B]
     (σ : A ≃⋆ₐ[ℂ] B) {p : A} (hp : p ∈ sumSq A) : σ p ∈ sumSq B
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsBounded.map`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L102).
+**`PhyslibAlpha.ProbabilisticTheory.IsBounded.map`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L102).
 
 > A star-algebra automorphism preserves boundedness.
 
@@ -81,7 +81,7 @@ lemma IsBounded.map {a : A} (ha : IsBounded a) (σ : A ≃⋆ₐ[ℂ] A) : IsBou
 
 ## B. Limits of states
 
-**`PhyslibAlpha.ProbabilisticTheory.exists_tendsto_state`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L115).
+**`PhyslibAlpha.ProbabilisticTheory.exists_tendsto_state`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L115).
 
 > The values of a bounded net of states on an observable have a limit along an ultrafilter.
 
@@ -91,7 +91,7 @@ lemma exists_tendsto_state (ψ : ι → AlgState A) (𝒰 : Ultrafilter ι)
     ∃ z, Tendsto (fun i => ψ i a) 𝒰 (𝓝 z)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.limit`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L126).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.limit`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L126).
 
 > **The limit of a bounded net of states along an ultrafilter** is a state.
 
@@ -100,7 +100,7 @@ def AlgState.limit (ψ : ι → AlgState A) (𝒰 : Ultrafilter ι)
     (hb : ∀ a : A, ∃ c : ℝ, ∀ i, ‖ψ i a‖ ≤ c) : AlgState A
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.tendsto_limit`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L160).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.tendsto_limit`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L160).
 
 ```lean
 lemma AlgState.tendsto_limit (ψ : ι → AlgState A) (𝒰 : Ultrafilter ι)
@@ -110,13 +110,13 @@ lemma AlgState.tendsto_limit (ψ : ι → AlgState A) (𝒰 : Ultrafilter ι)
 
 ## C. Averages over a finite set of automorphisms
 
-**`PhyslibAlpha.ProbabilisticTheory.starAlgEquiv_smul`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L174).
+**`PhyslibAlpha.ProbabilisticTheory.starAlgEquiv_smul`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L174).
 
 ```lean
 lemma starAlgEquiv_smul (σ : A ≃⋆ₐ[ℂ] A) (c : ℂ) (a : A) : σ (c • a) = c • σ a
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.averageMap`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L178).
+**`PhyslibAlpha.ProbabilisticTheory.averageMap`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L178).
 
 > The linear functional `a ↦ |F|⁻¹ ∑_{g ∈ F} φ (α g a)`.
 
@@ -124,14 +124,14 @@ lemma starAlgEquiv_smul (σ : A ≃⋆ₐ[ℂ] A) (c : ℂ) (a : A) : σ (c • 
 def averageMap (φ : AlgState A) (α : Γ → (A ≃⋆ₐ[ℂ] A)) (F : Finset Γ) : A →ₗ[ℂ] ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.averageMap_apply`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L186).
+**`PhyslibAlpha.ProbabilisticTheory.averageMap_apply`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L186).
 
 ```lean
 lemma averageMap_apply (φ : AlgState A) (α : Γ → (A ≃⋆ₐ[ℂ] A)) (F : Finset Γ) (a : A) :
     averageMap φ α F a = ((F.card : ℂ))⁻¹ * ∑ g ∈ F, φ (α g a)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.average`**, a def, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L190).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.average`**, a def, [line 190](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L190).
 
 > **The average of a state over a finite set of automorphisms** is a state.
 
@@ -140,7 +140,7 @@ def AlgState.average (φ : AlgState A) (α : Γ → (A ≃⋆ₐ[ℂ] A)) (F : F
     (hF : F.Nonempty) : AlgState A
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.average_apply`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L212).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.average_apply`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L212).
 
 ```lean
 lemma AlgState.average_apply (φ : AlgState A) (α : Γ → (A ≃⋆ₐ[ℂ] A)) (F : Finset Γ)
@@ -150,7 +150,7 @@ lemma AlgState.average_apply (φ : AlgState A) (α : Γ → (A ≃⋆ₐ[ℂ] A)
 
 ## D. Invariance of Følner limits
 
-**`PhyslibAlpha.ProbabilisticTheory.compMap`**, a def, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L225).
+**`PhyslibAlpha.ProbabilisticTheory.compMap`**, a def, [line 225](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L225).
 
 > The linear functional `a ↦ φ (σ a)`.
 
@@ -158,13 +158,13 @@ lemma AlgState.average_apply (φ : AlgState A) (α : Γ → (A ≃⋆ₐ[ℂ] A)
 def compMap (φ : AlgState A) (σ : A ≃⋆ₐ[ℂ] A) : A →ₗ[ℂ] ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.compMap_apply`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L230).
+**`PhyslibAlpha.ProbabilisticTheory.compMap_apply`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L230).
 
 ```lean
 lemma compMap_apply (φ : AlgState A) (σ : A ≃⋆ₐ[ℂ] A) (a : A) : compMap φ σ a = φ (σ a)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.comp`**, a def, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L233).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.comp`**, a def, [line 233](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L233).
 
 > **The composition of a state with an automorphism** is a state.
 
@@ -172,13 +172,13 @@ lemma compMap_apply (φ : AlgState A) (σ : A ≃⋆ₐ[ℂ] A) (a : A) : compMa
 def AlgState.comp (φ : AlgState A) (σ : A ≃⋆ₐ[ℂ] A) : AlgState A
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.comp_apply`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L242).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.comp_apply`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L242).
 
 ```lean
 lemma AlgState.comp_apply (φ : AlgState A) (σ : A ≃⋆ₐ[ℂ] A) (a : A) : φ.comp σ a = φ (σ a)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.norm_le_of_isBounded`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L246).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.norm_le_of_isBounded`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L246).
 
 > The bound on a state on a bounded observable, as a norm bound.
 
@@ -187,7 +187,7 @@ lemma AlgState.norm_le_of_isBounded {a : A} {c : ℝ} {p : A} (hp : p ∈ sumSq 
     (h : star a * a + p = (c : ℂ) • (1 : A)) (ω : AlgState A) : ‖ω a‖ ≤ c + 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.norm_sum_sub_le`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L254).
+**`PhyslibAlpha.ProbabilisticTheory.norm_sum_sub_le`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L254).
 
 > A difference of two sums of a bounded function is bounded by the size of the symmetric
 > difference of the index sets.
@@ -197,7 +197,7 @@ lemma norm_sum_sub_le (f : Γ → ℂ) (C : ℝ) (hf : ∀ k, ‖f k‖ ≤ C) (
     ‖∑ k ∈ S, f k - ∑ k ∈ T, f k‖ ≤ ((S \ T).card + (T \ S).card) * C
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsRightFolner`**, a def, [line 271](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L271).
+**`PhyslibAlpha.ProbabilisticTheory.IsRightFolner`**, a def, [line 271](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L271).
 
 > The finite sets `F i` are **asymptotically invariant under right translation** along an
 > ultrafilter (a Følner condition): `|F h Δ F| / |F| → 0` for every `h`.
@@ -206,7 +206,7 @@ lemma norm_sum_sub_le (f : Γ → ℂ) (C : ℝ) (hf : ∀ k, ‖f k‖ ≤ C) (
 def IsRightFolner (F : ι → Finset Γ) (𝒰 : Ultrafilter ι) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.average_bounded`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L279).
+**`PhyslibAlpha.ProbabilisticTheory.average_bounded`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L279).
 
 > The averaged states of a state over the sets `F i` are bounded on every observable.
 
@@ -215,7 +215,7 @@ lemma average_bounded (φ : AlgState A) (hb : ∀ a : A, IsBounded a) (a : A) :
     ∃ c : ℝ, ∀ i, ‖(φ.average (fun g => α g) (F i) (hne i)) a‖ ≤ c
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.invariantLimit`**, a def, [line 300](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L300).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.invariantLimit`**, a def, [line 300](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L300).
 
 > **The Følner limit of a state**: the ultrafilter limit of its averages over the sets `F i`.
 
@@ -224,7 +224,7 @@ def AlgState.invariantLimit (φ : AlgState A) (hb : ∀ a : A, IsBounded a) (�
     AlgState A
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.invariantLimit_invariant`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L308).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.invariantLimit_invariant`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L308).
 
 > **The Følner limit of a state is invariant.** When the sets `F i` are asymptotically invariant
 > under right translation along `𝒰`, every limit of the averages of a state over them is invariant
@@ -238,7 +238,7 @@ lemma AlgState.invariantLimit_invariant (φ : AlgState A) (hb : ∀ a : A, IsBou
 
 ## E. Boundedness in the quasi-local algebra
 
-**`PhyslibAlpha.ProbabilisticTheory.sumSq_map_hom`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L353).
+**`PhyslibAlpha.ProbabilisticTheory.sumSq_map_hom`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L353).
 
 > A star-algebra homomorphism maps sums of squares to sums of squares.
 
@@ -247,7 +247,7 @@ lemma sumSq_map_hom {B : Type*} [Ring B] [Algebra ℂ B] [StarRing B]
     (σ : A →⋆ₐ[ℂ] B) {p : A} (hp : p ∈ sumSq A) : σ p ∈ sumSq B
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgebraNet.isBounded_of_isLocallyBounded`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L364).
+**`PhyslibAlpha.ProbabilisticTheory.AlgebraNet.isBounded_of_isLocallyBounded`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean#L364).
 
 > **Every observable of the quasi-local algebra of a locally bounded net is bounded.**
 
@@ -262,4 +262,4 @@ lemma AlgebraNet.isBounded_of_isLocallyBounded (hb : N.IsLocallyBounded) (x : N.
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean)
+- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean)

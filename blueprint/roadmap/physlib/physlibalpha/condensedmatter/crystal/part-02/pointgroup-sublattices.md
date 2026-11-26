@@ -8,7 +8,7 @@ proof: formalized
 
 # The point group of a crystal with several sites per cell
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Sublattices`, [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean): 13 declarations, 9 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Sublattices`, [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean): 13 declarations, 9 with a docstring.
 
 > The point group of a crystal with several sites per cell is compared with the point group of a
 > Bravais lattice, the lattice of differences of its bonds.
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Sublattices`, [Physl
 
 ## A. Bonded displacements of a bond list
 
-**`CondensedMatter.Crystal.PeriodicGraph.bondDisplacements`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L70).
+**`CondensedMatter.Crystal.PeriodicGraph.bondDisplacements`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L70).
 
 > The displacements `d` such that site `i` of the reference cell is bonded to site `j` of the
 > cell `d`, in the graph of a bond list.
@@ -56,14 +56,14 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Sublattices`, [Physl
 def bondDisplacements (bonds : List (Bond G F)) (i j : F) : Finset G
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.bonded_ofBonds_iff`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L75).
+**`CondensedMatter.Crystal.PeriodicGraph.bonded_ofBonds_iff`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L75).
 
 ```lean
 lemma bonded_ofBonds_iff (bonds : List (Bond G F)) (i j : F) (d : G) :
     (ofBonds bonds).Bonded i j d ↔ d ∈ bondDisplacements bonds i j
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.mem_symmetries_ofBonds_iff`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L93).
+**`CondensedMatter.Crystal.PeriodicGraph.mem_symmetries_ofBonds_iff`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L93).
 
 > **A finite criterion for the symmetries of the graph of a bond list**: `(A, σ, b)` is a
 > symmetry exactly when `d ↦ A d + b j - b i` maps `E i j` onto `E (σ i) (σ j)` for all labels.
@@ -77,7 +77,7 @@ lemma mem_symmetries_ofBonds_iff (bonds : List (Bond G F)) (s : CellSymmetry G F
 
 ## B. Differences of bonds
 
-**`CondensedMatter.Crystal.PeriodicGraph.bondDifferences`**, a def, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L116).
+**`CondensedMatter.Crystal.PeriodicGraph.bondDifferences`**, a def, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L116).
 
 > The nonzero differences `d₁ - d₂` of two displacements in a common `E i j`: translations
 > between two sites with the same label that are bonded to a common site.
@@ -86,7 +86,7 @@ lemma mem_symmetries_ofBonds_iff (bonds : List (Bond G F)) (s : CellSymmetry G F
 def bondDifferences (bonds : List (Bond G F)) : Finset G
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.mem_bondDifferences`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L121).
+**`CondensedMatter.Crystal.PeriodicGraph.mem_bondDifferences`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L121).
 
 ```lean
 lemma mem_bondDifferences (bonds : List (Bond G F)) (e : G) :
@@ -94,7 +94,7 @@ lemma mem_bondDifferences (bonds : List (Bond G F)) (e : G) :
       ∃ d₂ ∈ bondDisplacements bonds i j, e = d₁ - d₂
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.linear_mem_bondDifferences`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L132).
+**`CondensedMatter.Crystal.PeriodicGraph.linear_mem_bondDifferences`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L132).
 
 ```lean
 lemma linear_mem_bondDifferences {bonds : List (Bond G F)} {s : CellSymmetry G F}
@@ -102,7 +102,7 @@ lemma linear_mem_bondDifferences {bonds : List (Bond G F)} {s : CellSymmetry G F
     s.linear e ∈ bondDifferences bonds
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.linear_mem_bondDifferences_iff`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L148).
+**`CondensedMatter.Crystal.PeriodicGraph.linear_mem_bondDifferences_iff`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L148).
 
 > **The linear part of a symmetry preserves the differences of bonds.**
 
@@ -114,7 +114,7 @@ lemma linear_mem_bondDifferences_iff {bonds : List (Bond G F)} {s : CellSymmetry
 
 ## C. Comparison of point groups
 
-**`CondensedMatter.Crystal.PeriodicGraph.linearToLattice`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L163).
+**`CondensedMatter.Crystal.PeriodicGraph.linearToLattice`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L163).
 
 > The linear part of a symmetry, as an element of the point stabilizer of the lattice of
 > differences.
@@ -124,7 +124,7 @@ def linearToLattice (hΔ : bondDifferences bonds = bondNeighbors bonds') :
     (ofBonds bonds).symmetries →* (ofBonds bonds').pointStabilizer
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.ker_linearToLattice`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L169).
+**`CondensedMatter.Crystal.PeriodicGraph.ker_linearToLattice`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L169).
 
 ```lean
 lemma ker_linearToLattice (hΔ : bondDifferences bonds = bondNeighbors bonds')
@@ -134,7 +134,7 @@ lemma ker_linearToLattice (hΔ : bondDifferences bonds = bondNeighbors bonds')
       (CellSymmetry.translations (Fin n → ℤ) F).subgroupOf (ofBonds bonds).symmetries
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.pointGroupMulEquivOfLift`**, a def, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L189).
+**`CondensedMatter.Crystal.PeriodicGraph.pointGroupMulEquivOfLift`**, a def, [line 189](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L189).
 
 > **The point group of a crystal with several sites per cell is the point group of its lattice
 > of differences**, if only translations have the identity as linear part and every point
@@ -150,7 +150,7 @@ noncomputable def pointGroupMulEquivOfLift (hΔ : bondDifferences bonds = bondNe
 
 ## D. Finite checks
 
-**`CondensedMatter.Crystal.PeriodicGraph.shiftCandidates`**, a def, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L200).
+**`CondensedMatter.Crystal.PeriodicGraph.shiftCandidates`**, a def, [line 200](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L200).
 
 > The candidates for the cell offsets of a symmetry, relative to the label `i₀`.
 
@@ -158,7 +158,7 @@ noncomputable def pointGroupMulEquivOfLift (hΔ : bondDifferences bonds = bondNe
 def shiftCandidates (bonds : List (Bond (Fin n → ℤ) F)) (i₀ : F) : Finset (Fin n → ℤ)
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.mem_translations_of_linear_eq`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L207).
+**`CondensedMatter.Crystal.PeriodicGraph.mem_translations_of_linear_eq`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L207).
 
 > **Only translations have the identity as linear part**, if every label is bonded to `i₀` and
 > this holds for the finitely many candidate offsets.
@@ -173,7 +173,7 @@ lemma mem_translations_of_linear_eq (i₀ : F)
     (hL : s.linear = AddEquiv.refl _) : s ∈ CellSymmetry.translations (Fin n → ℤ) F
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.lift_of_admissible`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L242).
+**`CondensedMatter.Crystal.PeriodicGraph.lift_of_admissible`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean#L242).
 
 > **Every point operation of the lattice of differences lifts to a symmetry**, if every
 > admissible tuple of neighbours does, with a permutation and offsets `b i ∈ T i`.
@@ -193,4 +193,4 @@ lemma lift_of_admissible (hΔ : bondDifferences bonds = bondNeighbors bonds')
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean)

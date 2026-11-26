@@ -8,7 +8,7 @@ proof: formalized
 
 # Positive-definite sesquilinear forms
 
-The module `Physlib.Mathematics.ForMathlib.SesquilinearForm`, [Physlib/Mathematics/ForMathlib/SesquilinearForm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SesquilinearForm.lean): 5 declarations, 4 with a docstring.
+The module `Physlib.Mathematics.ForMathlib.SesquilinearForm`, [Physlib/Mathematics/ForMathlib/SesquilinearForm.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SesquilinearForm.lean): 5 declarations, 4 with a docstring.
 
 > A sesquilinear form is positive-definite when it is symmetric and strictly positive on nonzero
 > vectors.
@@ -40,7 +40,7 @@ The module `Physlib.Mathematics.ForMathlib.SesquilinearForm`, [Physlib/Mathemati
 
 ### A.1. The definition
 
-**`LinearMap.IsPosDef`**, a structure, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SesquilinearForm.lean#L70).
+**`LinearMap.IsPosDef`**, a structure, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SesquilinearForm.lean#L70).
 
 > A sesquilinear form `B` is **positive-definite** if it is symmetric and `0 < B x x` for every
 > nonzero `x`.
@@ -51,7 +51,7 @@ structure IsPosDef [LT R] (B : M →ₛₗ[I₁] M →ₗ[R] R) : Prop extends i
   pos : ∀ x, x ≠ 0 → 0 < B x x
 ```
 
-**`LinearMap.isPosDef_def`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SesquilinearForm.lean#L74).
+**`LinearMap.isPosDef_def`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SesquilinearForm.lean#L74).
 
 ```lean
 lemma isPosDef_def [LT R] {B : M →ₛₗ[I₁] M →ₗ[R] R} :
@@ -60,7 +60,7 @@ lemma isPosDef_def [LT R] {B : M →ₛₗ[I₁] M →ₗ[R] R} :
 
 ### A.2. Consequences over a preorder
 
-**`LinearMap.IsPosDef.isPosSemidef`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SesquilinearForm.lean#L87).
+**`LinearMap.IsPosDef.isPosSemidef`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SesquilinearForm.lean#L87).
 
 > A positive-definite form is positive-semidefinite.
 
@@ -68,7 +68,7 @@ lemma isPosDef_def [LT R] {B : M →ₛₗ[I₁] M →ₗ[R] R} :
 lemma IsPosDef.isPosSemidef (hB : B.IsPosDef) : B.IsPosSemidef
 ```
 
-**`LinearMap.IsPosDef.nondegenerate`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SesquilinearForm.lean#L92).
+**`LinearMap.IsPosDef.nondegenerate`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SesquilinearForm.lean#L92).
 
 > A positive-definite form is nondegenerate: a nonzero `x` is not orthogonal to itself.
 
@@ -78,7 +78,7 @@ lemma IsPosDef.nondegenerate (hB : B.IsPosDef) : B.Nondegenerate
 
 ### A.3. The matrix of a positive-definite form
 
-**`LinearMap.isPosDef_iff_posDef_toMatrix`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SesquilinearForm.lean#L110).
+**`LinearMap.isPosDef_iff_posDef_toMatrix`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SesquilinearForm.lean#L110).
 
 > A sesquilinear form is positive-definite exactly when its matrix in a basis is.
 
@@ -92,4 +92,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/ForMathlib/SesquilinearForm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/SesquilinearForm.lean)
+- [Physlib/Mathematics/ForMathlib/SesquilinearForm.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/SesquilinearForm.lean)

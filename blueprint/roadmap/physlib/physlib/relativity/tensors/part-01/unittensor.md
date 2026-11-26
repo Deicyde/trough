@@ -8,9 +8,9 @@ proof: formalized
 
 # The unit tensors
 
-The module `Physlib.Relativity.Tensors.UnitTensor`, [Physlib/Relativity/Tensors/UnitTensor.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/UnitTensor.lean): 15 declarations, 10 with a docstring.
+The module `Physlib.Relativity.Tensors.UnitTensor`, [Physlib/Relativity/Tensors/UnitTensor.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/UnitTensor.lean): 15 declarations, 10 with a docstring.
 
-**`TensorSpecies.unitTensor`**, a def, [line 31](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/UnitTensor.lean#L31).
+**`TensorSpecies.unitTensor`**, a def, [line 31](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/UnitTensor.lean#L31).
 
 > The unit tensor associated with a color `c`.
 
@@ -18,7 +18,7 @@ The module `Physlib.Relativity.Tensors.UnitTensor`, [Physlib/Relativity/Tensors/
 noncomputable def unitTensor (c : C) : S.Tensor ![S.τ c, c]
 ```
 
-**`TensorSpecies.unitTensor_basis_repr`**, a lemma, [line 36](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/UnitTensor.lean#L36).
+**`TensorSpecies.unitTensor_basis_repr`**, a lemma, [line 36](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/UnitTensor.lean#L36).
 
 > A component of the unit tensor is the corresponding component of the unit intertwiner in the
 > tensor-product basis.
@@ -30,14 +30,14 @@ lemma unitTensor_basis_repr (c : C) (φ : ComponentIdx (S := S) ![S.τ c, c]) :
         (φ 0, φ 1)
 ```
 
-**`TensorSpecies.unitTensor_congr`**, a lemma, [line 42](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/UnitTensor.lean#L42).
+**`TensorSpecies.unitTensor_congr`**, a lemma, [line 42](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/UnitTensor.lean#L42).
 
 ```lean
 lemma unitTensor_congr {c c1 : C} (h : c = c1) :
     unitTensor c = permT id (by simp [h]) (unitTensor (S := S) c1)
 ```
 
-**`TensorSpecies.unitTensor_eq_permT_dual`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/UnitTensor.lean#L49).
+**`TensorSpecies.unitTensor_eq_permT_dual`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/UnitTensor.lean#L49).
 
 > The unit tensor is symmetric on dualing the color.
 
@@ -47,7 +47,7 @@ lemma unitTensor_eq_permT_dual (c : C) :
     (unitTensor (S.τ c))
 ```
 
-**`TensorSpecies.dual_unitTensor_eq_permT_unitTensor`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/UnitTensor.lean#L76).
+**`TensorSpecies.dual_unitTensor_eq_permT_unitTensor`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/UnitTensor.lean#L76).
 
 ```lean
 lemma dual_unitTensor_eq_permT_unitTensor (c : C) :
@@ -55,7 +55,7 @@ lemma dual_unitTensor_eq_permT_unitTensor (c : C) :
       (unitTensor c)
 ```
 
-**`TensorSpecies.unit_fromSingleTContrFromPairT_eq_fromSingleT`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/UnitTensor.lean#L83).
+**`TensorSpecies.unit_fromSingleTContrFromPairT_eq_fromSingleT`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/UnitTensor.lean#L83).
 
 ```lean
 lemma unit_fromSingleTContrFromPairT_eq_fromSingleT {c : C} (x : V c) :
@@ -63,7 +63,7 @@ lemma unit_fromSingleTContrFromPairT_eq_fromSingleT {c : C} (x : V c) :
     fromSingleT x
 ```
 
-**`TensorSpecies.contrT_single_unitTensor`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/UnitTensor.lean#L91).
+**`TensorSpecies.contrT_single_unitTensor`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/UnitTensor.lean#L91).
 
 > This lemma represents the de-categorification of `S.contr_unit`.
 
@@ -73,7 +73,7 @@ lemma contrT_single_unitTensor {c : C} (x : Tensor S ![c]) :
     permT id (by simp; rfl) x
 ```
 
-**`TensorSpecies.contrT_unitTensor_dual_single`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/UnitTensor.lean#L100).
+**`TensorSpecies.contrT_unitTensor_dual_single`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/UnitTensor.lean#L100).
 
 ```lean
 lemma contrT_unitTensor_dual_single {c : C} (x : Tensor S ![S.τ c]) :
@@ -81,14 +81,14 @@ lemma contrT_unitTensor_dual_single {c : C} (x : Tensor S ![S.τ c]) :
     permT id (by simp; rfl) x
 ```
 
-**`TensorSpecies.unitTensor_invariant`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/UnitTensor.lean#L124).
+**`TensorSpecies.unitTensor_invariant`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/UnitTensor.lean#L124).
 
 ```lean
 lemma unitTensor_invariant {c : C} (g : G) :
     g • S.unitTensor c = S.unitTensor c
 ```
 
-**`TensorSpecies.unitTensor_pair_basis_repr`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/UnitTensor.lean#L130).
+**`TensorSpecies.unitTensor_pair_basis_repr`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/UnitTensor.lean#L130).
 
 > For a species with dual bases at dual colours, the unit tensor's components are a Kronecker δ,
 > the first label carried across the variance dual by `contrDualIdxEquiv`.
@@ -100,7 +100,7 @@ lemma unitTensor_pair_basis_repr [HasContrDualBases S] (c : C) (J y : basisIdx c
       if J = y then 1 else 0
 ```
 
-**`TensorSpecies.unitTensor_basis_repr_eq_ite`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/UnitTensor.lean#L159).
+**`TensorSpecies.unitTensor_basis_repr_eq_ite`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/UnitTensor.lean#L159).
 
 > `unitTensor_pair_basis_repr` at an arbitrary component index.
 
@@ -111,7 +111,7 @@ lemma unitTensor_basis_repr_eq_ite [HasContrDualBases S] (c : C)
       if HasContrDualBases.contrDualIdxEquiv S c (φ 0) = φ 1 then 1 else 0
 ```
 
-**`TensorSpecies.Tensor.toMatrix_permT_unitTensor`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/UnitTensor.lean#L175).
+**`TensorSpecies.Tensor.toMatrix_permT_unitTensor`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/UnitTensor.lean#L175).
 
 > The component matrix of a unit tensor recoloured without moving its slots is the identity, with
 > the labels transported back to the unit tensor's colours.
@@ -126,7 +126,7 @@ lemma toMatrix_permT_unitTensor [HasContrDualBases S] (c : C) {cs : Fin 2 → C}
         (fun y => basisIdxCongr (by rw [← hperm.2 1, hσ]; rfl) y)
 ```
 
-**`TensorSpecies.Tensor.toMatrix_unitTensor`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/UnitTensor.lean#L189).
+**`TensorSpecies.Tensor.toMatrix_unitTensor`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/UnitTensor.lean#L189).
 
 > The unit tensor's component matrix is the identity, carried along `contrDualIdxEquiv`.
 
@@ -137,7 +137,7 @@ lemma toMatrix_unitTensor [HasContrDualBases S] (c : C) :
         ⇑(HasContrDualBases.contrDualIdxEquiv S c) id
 ```
 
-**`TensorSpecies.Tensor.IsReindexing.unitTensor_of_tau_eq`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/UnitTensor.lean#L198).
+**`TensorSpecies.Tensor.IsReindexing.unitTensor_of_tau_eq`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/UnitTensor.lean#L198).
 
 > If `τ e = a`, the identity is a reindexing from `![τ e, e]` to `![a, e]`, so `permT` renames the
 > colours of `unitTensor e` to `![a, e]`.
@@ -147,7 +147,7 @@ lemma IsReindexing.unitTensor_of_tau_eq {a e : C} (h : S.τ e = a) :
     IsReindexing (![S.τ e, e] : Fin 2 → C) ![a, e] (id : Fin 2 → Fin 2)
 ```
 
-**`TensorSpecies.Tensor.toMatrix_permT_unitTensor_of_tau_eq`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/UnitTensor.lean#L205).
+**`TensorSpecies.Tensor.toMatrix_permT_unitTensor_of_tau_eq`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/UnitTensor.lean#L205).
 
 > The matrix of `unitTensor e`, with its colours renamed to `![a, e]`, is the identity matrix with
 > its rows relabelled by `dualIdxEquiv h`.
@@ -170,4 +170,4 @@ lemma toMatrix_permT_unitTensor_of_tau_eq [HasContrDualBases S] {a e : C} (h : S
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/UnitTensor.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/UnitTensor.lean)
+- [Physlib/Relativity/Tensors/UnitTensor.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/UnitTensor.lean)

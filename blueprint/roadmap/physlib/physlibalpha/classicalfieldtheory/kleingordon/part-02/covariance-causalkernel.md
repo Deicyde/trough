@@ -8,7 +8,7 @@ proof: formalized
 
 # The causal propagator kernel
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Covariance.CausalKernel`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/CausalKernel.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/CausalKernel.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Covariance.CausalKernel`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/CausalKernel.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/CausalKernel.lean): 4 declarations, 4 with a docstring.
 
 > The causal propagator kernel is invariant under the orthochronous Lorentz group and odd under time
 > reversal.
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Covariance.CausalKerne
 > - `causalKernel_actDist` : the kernel is invariant under orthochronous Lorentz transformations.
 > - `causalKernel_actDist_of_not` : the kernel changes sign under time reversing ones.
 
-**`KleinGordon.Solution.causalKernel`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/CausalKernel.lean#L60).
+**`KleinGordon.Solution.causalKernel`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/CausalKernel.lean#L60).
 
 > The causal propagator kernel: the retarded kernel minus the advanced kernel at the origin.
 
@@ -48,7 +48,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Covariance.CausalKerne
 def causalKernel (m : ℝ) : DistributionField d ℝ
 ```
 
-**`KleinGordon.Solution.smul_zero_of_translation_eq_zero`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/CausalKernel.lean#L64).
+**`KleinGordon.Solution.smul_zero_of_translation_eq_zero`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/CausalKernel.lean#L64).
 
 > A Poincaré transformation without translation fixes the origin.
 
@@ -57,7 +57,7 @@ lemma smul_zero_of_translation_eq_zero {g : PoincareGroup d} (h : g.translation 
     g • (0 : SpaceTime d) = 0
 ```
 
-**`KleinGordon.Solution.causalKernel_actDist`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/CausalKernel.lean#L70).
+**`KleinGordon.Solution.causalKernel_actDist`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/CausalKernel.lean#L70).
 
 > **Lorentz invariance of the causal kernel.** An orthochronous Lorentz transformation leaves
 > the causal propagator kernel invariant.
@@ -67,7 +67,7 @@ lemma causalKernel_actDist (m : ℝ) {g : PoincareGroup d} (hg : g.IsOrthochrono
     (h : g.translation = 0) : actDist g (causalKernel m) = causalKernel m
 ```
 
-**`KleinGordon.Solution.causalKernel_actDist_of_not`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/CausalKernel.lean#L77).
+**`KleinGordon.Solution.causalKernel_actDist_of_not`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/CausalKernel.lean#L77).
 
 > A time-reversing Lorentz transformation changes the sign of the causal propagator kernel.
 
@@ -87,4 +87,4 @@ lemma causalKernel_actDist_of_not (m : ℝ) {g : PoincareGroup d} (hg : ¬ g.IsO
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/CausalKernel.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/CausalKernel.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/CausalKernel.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/CausalKernel.lean)

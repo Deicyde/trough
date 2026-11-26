@@ -8,16 +8,16 @@ proof: formalized
 
 # Equivalence extracting element from contraction
 
-The module `Physlib.QFT.PerturbationTheory.WickContraction.ExtractEquiv`, [Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean): 10 declarations, 5 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.WickContraction.ExtractEquiv`, [Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean): 10 declarations, 5 with a docstring.
 
-**`WickContraction.extractEquiv_equiv`**, a lemma, [line 26](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L26).
+**`WickContraction.extractEquiv_equiv`**, a lemma, [line 26](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L26).
 
 ```lean
 lemma extractEquiv_equiv {c1 c2 : (c : WickContraction n) × Option c.uncontracted}
     (h : c1.1 = c2.1) (ho : c1.2 = uncontractedCongr (by rw [h]) c2.2) : c1 = c2
 ```
 
-**`WickContraction.extractEquiv`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L45).
+**`WickContraction.extractEquiv`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L45).
 
 > The equivalence between `WickContraction n.succ` and the sigma type
 > `(c : WickContraction n) × Option c.uncontracted` formed by inserting
@@ -28,7 +28,7 @@ def extractEquiv (i : Fin n.succ) : WickContraction n.succ ≃
     (c : WickContraction n) × Option c.uncontracted
 ```
 
-**`WickContraction.extractEquiv_symm_none_uncontracted`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L58).
+**`WickContraction.extractEquiv_symm_none_uncontracted`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L58).
 
 ```lean
 lemma extractEquiv_symm_none_uncontracted (i : Fin n.succ) (c : WickContraction n) :
@@ -36,7 +36,7 @@ lemma extractEquiv_symm_none_uncontracted (i : Fin n.succ) (c : WickContraction 
     (Insert.insert i (c.uncontracted.map i.succAboveEmb))
 ```
 
-**`WickContraction.extractEquiv_apply_congr_symm_apply`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L64).
+**`WickContraction.extractEquiv_apply_congr_symm_apply`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L64).
 
 ```lean
 lemma extractEquiv_apply_congr_symm_apply {n m : ℕ} (k : ℕ)
@@ -45,7 +45,7 @@ lemma extractEquiv_apply_congr_symm_apply {n m : ℕ} (k : ℕ)
     (congr (by rw [hnm]) ((extractEquiv ⟨k, hnk⟩).symm ⟨c, i⟩)))).1 = c
 ```
 
-**`WickContraction.fintypeZero`**, an instance, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L73).
+**`WickContraction.fintypeZero`**, an instance, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L73).
 
 > The fintype instance of `WickContraction 0` defined through its single
 > element `empty`.
@@ -54,14 +54,14 @@ lemma extractEquiv_apply_congr_symm_apply {n m : ℕ} (k : ℕ)
 instance fintypeZero : Fintype (WickContraction 0)
 ```
 
-**`WickContraction.sum_WickContraction_nil`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L89).
+**`WickContraction.sum_WickContraction_nil`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L89).
 
 ```lean
 lemma sum_WickContraction_nil (f : WickContraction 0 → M) [AddCommMonoid M] :
     ∑ c, f c = f empty
 ```
 
-**`WickContraction.fintypeSucc`**, an instance, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L99).
+**`WickContraction.fintypeSucc`**, an instance, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L99).
 
 > The fintype instance of `WickContraction n`, for `n.succ` this is defined
 > through the equivalence `extractEquiv`.
@@ -70,7 +70,7 @@ lemma sum_WickContraction_nil (f : WickContraction 0 → M) [AddCommMonoid M] :
 instance fintypeSucc : (n : ℕ) → Fintype (WickContraction n)
 ```
 
-**`WickContraction.sum_extractEquiv_congr`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L105).
+**`WickContraction.sum_extractEquiv_congr`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L105).
 
 ```lean
 lemma sum_extractEquiv_congr [AddCommMonoid M] {n m : ℕ} (i : Fin n) (f : WickContraction n → M)
@@ -79,7 +79,7 @@ lemma sum_extractEquiv_congr [AddCommMonoid M] {n m : ℕ} (i : Fin n) (f : Wick
     f (congr h.symm ((extractEquiv (finCongr h i)).symm ⟨c, k⟩))
 ```
 
-**`WickContraction.mem_three`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L124).
+**`WickContraction.mem_three`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L124).
 
 > For `n = 3` there are `4` possible Wick contractions:
 >
@@ -96,7 +96,7 @@ lemma mem_three (c : WickContraction 3) : c.1 ∈ ({∅, {{0, 1}}, {{0, 2}}, {{1
     Finset (Finset (Finset (Fin 3))))
 ```
 
-**`WickContraction.mem_four`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L140).
+**`WickContraction.mem_four`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean#L140).
 
 > For `n = 4` there are `10` possible Wick contractions including e.g.
 >
@@ -122,4 +122,4 @@ lemma mem_four (c : WickContraction 4) : c.1 ∈ ({∅,
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean)
+- [Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean)

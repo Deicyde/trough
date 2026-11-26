@@ -8,27 +8,27 @@ proof: formalized
 
 # QuantumInfo.ForMathlib.HayataGroup.TraceInequality.JensenOperatorInequalityIImpIV
 
-The module `QuantumInfo.ForMathlib.HayataGroup.TraceInequality.JensenOperatorInequalityIImpIV`, [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean): 10 declarations (3 instances with no name), 5 with a docstring; 30 private, not shown.
+The module `QuantumInfo.ForMathlib.HayataGroup.TraceInequality.JensenOperatorInequalityIImpIV`, [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean): 10 declarations (3 instances with no name), 5 with a docstring; 30 private, not shown.
 
-**An instance with no name**, [line 28](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L28).
+**An instance with no name**, [line 28](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L28).
 
 ```lean
 noncomputable local instance : ContinuousFunctionalCalculus ℂ (L ℋ × L ℋ) IsStarNormal
 ```
 
-**An instance with no name**, [line 32](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L32).
+**An instance with no name**, [line 32](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L32).
 
 ```lean
 noncomputable local instance : ContinuousFunctionalCalculus ℝ (L ℋ × L ℋ) IsSelfAdjoint
 ```
 
-**An instance with no name**, [line 36](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L36).
+**An instance with no name**, [line 36](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L36).
 
 ```lean
 noncomputable local instance : NonnegSpectrumClass ℝ (L (HSum ℋ))
 ```
 
-**`JensenOperatorInequality.CondIV`**, a def, [line 39](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L39).
+**`JensenOperatorInequality.CondIV`**, a def, [line 39](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L39).
 
 > Condition (iv) in Theorem 2.5.2.
 
@@ -36,7 +36,7 @@ noncomputable local instance : NonnegSpectrumClass ℝ (L (HSum ℋ))
 def CondIV (f : ℝ → ℝ) : Prop
 ```
 
-**`JensenOperatorInequality.CondI`**, a def, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L44).
+**`JensenOperatorInequality.CondI`**, a def, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L44).
 
 > Condition (i) in Theorem 2.5.2 on the fixed Hilbert space `ℋ`.
 
@@ -44,7 +44,7 @@ def CondIV (f : ℝ → ℝ) : Prop
 def CondI (f : ℝ → ℝ) : Prop
 ```
 
-**`JensenOperatorInequality.CondIAll`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L51).
+**`JensenOperatorInequality.CondIAll`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L51).
 
 > Uniform version of Condition (i), packaged as `OperatorConvexAll` together with `f 0 ≤ 0`.
 
@@ -52,7 +52,7 @@ def CondI (f : ℝ → ℝ) : Prop
 def CondIAll (f : ℝ → ℝ) : Prop
 ```
 
-**`JensenOperatorInequality.CondIciAll`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L60).
+**`JensenOperatorInequality.CondIciAll`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L60).
 
 > Uniform localized version of Condition (i), packaged as
 > `OperatorConvexOnAll (Set.Ici 0)` together with continuity and `f 0 ≤ 0`.
@@ -61,7 +61,7 @@ def CondIAll (f : ℝ → ℝ) : Prop
 def CondIciAll (f : ℝ → ℝ) : Prop
 ```
 
-**`JensenOperatorInequality.CondV`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L66).
+**`JensenOperatorInequality.CondV`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L66).
 
 > Condition (v) in Theorem 2.5.2.
 
@@ -69,14 +69,14 @@ def CondIciAll (f : ℝ → ℝ) : Prop
 def CondV (f : ℝ → ℝ) : Prop
 ```
 
-**`JensenOperatorInequality.theorem_2_5_2_i_ici_all_imp_iv`**, a lemma, [line 546](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L546).
+**`JensenOperatorInequality.theorem_2_5_2_i_ici_all_imp_iv`**, a lemma, [line 546](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L546).
 
 ```lean
 lemma theorem_2_5_2_i_ici_all_imp_iv {f : ℝ → ℝ} (hf : CondIciAll.{u} f) :
     CondIV (ℋ := ℋ) f
 ```
 
-**`JensenOperatorInequality.theorem_2_5_2_i_all_imp_iv`**, a lemma, [line 804](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L804).
+**`JensenOperatorInequality.theorem_2_5_2_i_all_imp_iv`**, a lemma, [line 804](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean#L804).
 
 ```lean
 lemma theorem_2_5_2_i_all_imp_iv {f : ℝ → ℝ} (hf : CondIAll.{u} f) :
@@ -89,4 +89,4 @@ lemma theorem_2_5_2_i_all_imp_iv {f : ℝ → ℝ} (hf : CondIAll.{u} f) :
 
 ## Sources
 
-- [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean)
+- [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean)

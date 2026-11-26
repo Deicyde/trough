@@ -8,7 +8,7 @@ proof: formalized
 
 # Basic integration results
 
-The module `Physlib.Mathematics.ForMathlib.Integration.Basic`, [Physlib/Mathematics/ForMathlib/Integration/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Integration/Basic.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.Mathematics.ForMathlib.Integration.Basic`, [Physlib/Mathematics/ForMathlib/Integration/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Integration/Basic.lean): 1 declaration, 1 with a docstring.
 
 > Basic results related to integration not in Mathlib.
 
@@ -29,7 +29,7 @@ The module `Physlib.Mathematics.ForMathlib.Integration.Basic`, [Physlib/Mathemat
 
 ## A. Integrals against a real-valued density
 
-**`Integration.integral_withDensity_ofReal_eq_integral_smul`**, a lemma, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Integration/Basic.lean#L47).
+**`Integration.integral_withDensity_ofReal_eq_integral_smul`**, a lemma, [line 47](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Integration/Basic.lean#L47).
 
 > Integrating `g` against the measure with real-valued density `f` (taken through
 > `ENNReal.ofReal`) is integrating `f x • g x` against the original measure, for measurable
@@ -49,4 +49,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/ForMathlib/Integration/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Integration/Basic.lean)
+- [Physlib/Mathematics/ForMathlib/Integration/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Integration/Basic.lean)

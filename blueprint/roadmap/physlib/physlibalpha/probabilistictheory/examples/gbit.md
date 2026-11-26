@@ -8,7 +8,7 @@ proof: formalized
 
 # The generalized bit
 
-The module `PhyslibAlpha.ProbabilisticTheory.Examples.GBit`, [PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean): 9 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Examples.GBit`, [PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean): 9 declarations, 5 with a docstring.
 
 > The generalized bit: the sup-norm cone over `ℝ³`, with an octahedral, non-simplex state space.
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Examples.GBit`, [PhyslibAlpha/Proba
 
 ## A. The gbit as a norm cone
 
-**`PhyslibAlpha.ProbabilisticTheory.GBit`**, an abbrev, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L57).
+**`PhyslibAlpha.ProbabilisticTheory.GBit`**, an abbrev, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L57).
 
 > The generalized bit: `ℝ × ℝ³` ordered by the sup-norm cone.
 
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Examples.GBit`, [PhyslibAlpha/Proba
 abbrev GBit : Type
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.GBit.stateEquiv`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L64).
+**`PhyslibAlpha.ProbabilisticTheory.GBit.stateEquiv`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L64).
 
 > The states of the gbit are the octahedron `∑ i, |a i| ≤ 1`.
 
@@ -53,7 +53,7 @@ noncomputable def stateEquiv : 𝓢[ℝ, GBit] ≃ {a : Fin 3 → ℝ // ∑ i, 
 
 ## B. Too many pure states
 
-**`PhyslibAlpha.ProbabilisticTheory.GBit.dualEquiv`**, an abbrev, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L73).
+**`PhyslibAlpha.ProbabilisticTheory.GBit.dualEquiv`**, an abbrev, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L73).
 
 > A functional on `Fin 3 → ℝ` is its vector of values on the standard basis.
 
@@ -61,14 +61,14 @@ noncomputable def stateEquiv : 𝓢[ℝ, GBit] ≃ {a : Fin 3 → ℝ // ∑ i, 
 noncomputable abbrev dualEquiv : ((Fin 3 → ℝ) →L[ℝ] ℝ) ≃ₗ[ℝ] (Fin 3 → ℝ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.GBit.dualEquiv_symm_image_ball`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L76).
+**`PhyslibAlpha.ProbabilisticTheory.GBit.dualEquiv_symm_image_ball`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L76).
 
 ```lean
 lemma dualEquiv_symm_image_ball :
     dualEquiv.symm '' {a : Fin 3 → ℝ | ∑ i, |a i| ≤ 1} = {f | ‖f‖ ≤ 1}
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.GBit.purePoint`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L82).
+**`PhyslibAlpha.ProbabilisticTheory.GBit.purePoint`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L82).
 
 > The pure state whose functional is `±1` times a coordinate.
 
@@ -76,25 +76,25 @@ lemma dualEquiv_symm_image_ball :
 noncomputable def purePoint (j : Fin 3 × Bool) : 𝓢[ℝ, GBit]
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.GBit.isPure_purePoint`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L89).
+**`PhyslibAlpha.ProbabilisticTheory.GBit.isPure_purePoint`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L89).
 
 ```lean
 lemma isPure_purePoint (j : Fin 3 × Bool) : (purePoint j).IsPure
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.GBit.purePoint_injective`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L93).
+**`PhyslibAlpha.ProbabilisticTheory.GBit.purePoint_injective`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L93).
 
 ```lean
 lemma purePoint_injective : Function.Injective purePoint
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.GBit.finrank_eq_four`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L96).
+**`PhyslibAlpha.ProbabilisticTheory.GBit.finrank_eq_four`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L96).
 
 ```lean
 lemma finrank_eq_four : Module.finrank ℝ GBit = 4
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.GBit.not_isSimplex_stateSpace`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L102).
+**`PhyslibAlpha.ProbabilisticTheory.GBit.not_isSimplex_stateSpace`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean#L102).
 
 > **The gbit is not classical**: it has `6` pure states in a `4`-dimensional space, too many
 > for a simplex.
@@ -112,4 +112,4 @@ lemma not_isSimplex_stateSpace :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Inner regularity under almost everywhere continuous maps
 
-The module `PhyslibAlpha.Mathematics.TauCeti.MeasureTheory.Measure.Regular`, [PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/Regular.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/Regular.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.MeasureTheory.Measure.Regular`, [PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/Regular.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/Regular.lean): 1 declaration, 1 with a docstring.
 
 > A measurable map that is continuous on a measurable set of full measure sends an inner regular
 > measure to an inner regular measure.
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.MeasureTheory.Measure.Regular`, [Ph
 
 ## A. Development
 
-**`TauCeti.innerRegular_map_of_continuousOn`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/Regular.lean#L49).
+**`TauCeti.innerRegular_map_of_continuousOn`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/Regular.lean#L49).
 
 > A measurable map continuous on a measurable set of full measure preserves inner regularity.
 > No separation, countability or finiteness assumption is required.
@@ -48,4 +48,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/Regular.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/Regular.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/Regular.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/Regular.lean)

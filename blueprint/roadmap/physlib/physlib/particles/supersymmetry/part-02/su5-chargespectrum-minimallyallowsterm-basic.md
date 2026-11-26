@@ -8,7 +8,7 @@ proof: formalized
 
 # Charge spectrum which minimally allows terms
 
-The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTerm.Basic`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean): 11 declarations (1 instance with no name), 1 with a docstring.
+The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTerm.Basic`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean): 11 declarations (1 instance with no name), 1 with a docstring.
 
 ## i. Overview
 
@@ -44,7 +44,7 @@ The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTe
 >
 > We prove properties of charge spectra which minimally allow potential terms.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTerm`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L78).
+**`SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTerm`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L78).
 
 > A charge spectrum `x : ChargeSpectrum 𝓩` is said to minimally allow
 > the potential term `T` if it allows `T` and no strict subset of it allows `T`.
@@ -57,7 +57,7 @@ def MinimallyAllowsTerm (x : ChargeSpectrum 𝓩) (T : PotentialTerm) : Prop
 
 > We show that `MinimallyAllowsTerm` is decidable.
 
-**An instance with no name**, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L88).
+**An instance with no name**, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L88).
 
 ```lean
 instance (x : ChargeSpectrum 𝓩) (T : PotentialTerm) : Decidable (x.MinimallyAllowsTerm T)
@@ -67,7 +67,7 @@ instance (x : ChargeSpectrum 𝓩) (T : PotentialTerm) : Decidable (x.MinimallyA
 
 > Somewhat trivially a charge spectrum which minimally allows the term does indeed allow the term.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_of_minimallyAllowsTerm`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L101).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_of_minimallyAllowsTerm`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L101).
 
 ```lean
 lemma allowsTerm_of_minimallyAllowsTerm (h : x.MinimallyAllowsTerm T) : x.AllowsTerm T
@@ -77,7 +77,7 @@ lemma allowsTerm_of_minimallyAllowsTerm (h : x.MinimallyAllowsTerm T) : x.Allows
 
 > If a charge spectrum `x` has a subset which minimally allows a term `T`, then `x` allows `T`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_of_has_minimallyAllowsTerm_subset`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L113).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_of_has_minimallyAllowsTerm_subset`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L113).
 
 ```lean
 lemma allowsTerm_of_has_minimallyAllowsTerm_subset
@@ -89,7 +89,7 @@ lemma allowsTerm_of_has_minimallyAllowsTerm_subset
 > A charge spectrum `x` minimally allows a term `T` if and only if the only member of its
 > own powerset which allows `T` is itself.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.minimallyAllowsTerm_iff_powerset_filter_eq`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L129).
+**`SuperSymmetry.SU5.ChargeSpectrum.minimallyAllowsTerm_iff_powerset_filter_eq`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L129).
 
 ```lean
 lemma minimallyAllowsTerm_iff_powerset_filter_eq :
@@ -101,7 +101,7 @@ lemma minimallyAllowsTerm_iff_powerset_filter_eq :
 > A charge spectrum `x` minimally allows a term `T` if and only the
 > the number of members of its powerset which allow `T` is one.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.minimallyAllowsTerm_iff_powerset_countP_eq_one`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L165).
+**`SuperSymmetry.SU5.ChargeSpectrum.minimallyAllowsTerm_iff_powerset_countP_eq_one`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L165).
 
 ```lean
 lemma minimallyAllowsTerm_iff_powerset_countP_eq_one :
@@ -112,7 +112,7 @@ lemma minimallyAllowsTerm_iff_powerset_countP_eq_one :
 
 > If a charge spectrum `x` allows a term `T`, then it has a subset which minimally allows `T`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.subset_minimallyAllowsTerm_of_allowsTerm`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L199).
+**`SuperSymmetry.SU5.ChargeSpectrum.subset_minimallyAllowsTerm_of_allowsTerm`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L199).
 
 ```lean
 lemma subset_minimallyAllowsTerm_of_allowsTerm
@@ -124,7 +124,7 @@ lemma subset_minimallyAllowsTerm_of_allowsTerm
 > We combine results above to show that a charge spectrum allows a term if and only if it has a subset
 > which minimally allows the term.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_iff_subset_minimallyAllowsTerm`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L226).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTerm_iff_subset_minimallyAllowsTerm`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L226).
 
 ```lean
 lemma allowsTerm_iff_subset_minimallyAllowsTerm :
@@ -136,7 +136,7 @@ lemma allowsTerm_iff_subset_minimallyAllowsTerm :
 > We show that the cardinality of a charge spectrum which minimally allows a term `T` is at most the
 > degree of `T`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.card_le_degree_of_minimallyAllowsTerm`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L240).
+**`SuperSymmetry.SU5.ChargeSpectrum.card_le_degree_of_minimallyAllowsTerm`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L240).
 
 ```lean
 lemma card_le_degree_of_minimallyAllowsTerm (h : x.MinimallyAllowsTerm T) :
@@ -153,7 +153,7 @@ lemma card_le_degree_of_minimallyAllowsTerm (h : x.MinimallyAllowsTerm T) :
 > We show that any charge spectrum which minimally allows a term `T` is of the form
 > `allowsTermForm a b c T` for some `a b c : 𝓩`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.eq_allowsTermForm_of_minimallyAllowsTerm`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L270).
+**`SuperSymmetry.SU5.ChargeSpectrum.eq_allowsTermForm_of_minimallyAllowsTerm`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L270).
 
 ```lean
 lemma eq_allowsTermForm_of_minimallyAllowsTerm (h1 : x.MinimallyAllowsTerm T) :
@@ -165,7 +165,7 @@ lemma eq_allowsTermForm_of_minimallyAllowsTerm (h1 : x.MinimallyAllowsTerm T) :
 > We show that charge spectra of the form `allowsTermForm a b c T` minimally allow `T` provided that
 > `T` is not one of `W1` or `W2`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.allowsTermForm_minimallyAllowsTerm`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L291).
+**`SuperSymmetry.SU5.ChargeSpectrum.allowsTermForm_minimallyAllowsTerm`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean#L291).
 
 ```lean
 lemma allowsTermForm_minimallyAllowsTerm {a b c : 𝓩} {T : PotentialTerm}
@@ -179,4 +179,4 @@ lemma allowsTermForm_minimallyAllowsTerm {a b c : 𝓩} {T : PotentialTerm}
 
 ## Sources
 
-- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean)
+- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean)

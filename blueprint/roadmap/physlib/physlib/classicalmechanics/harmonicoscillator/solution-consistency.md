@@ -8,7 +8,7 @@ proof: formalized
 
 # Consistency of the initial conditions
 
-The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Consistency`, [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean): 7 declarations, 7 with a docstring.
+The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Consistency`, [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean): 7 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -49,7 +49,7 @@ The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Consistency`,
 
 ### A.1. Correctness of InitialConditionsAtTime conversion
 
-**`ClassicalMechanics.HarmonicOscillator.InitialConditionsAtTime.toInitialConditions_trajectory_at_t₀`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean#L88).
+**`ClassicalMechanics.HarmonicOscillator.InitialConditionsAtTime.toInitialConditions_trajectory_at_t₀`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean#L88).
 
 > The trajectory resulting from `toInitialConditions` passes through the specified
 > position `xT₀` at time `t₀`.
@@ -60,7 +60,7 @@ lemma toInitialConditions_trajectory_at_t₀ (S : HarmonicOscillator)
     (IC.toInitialConditions S).trajectory S IC.t₀ = IC.xT₀
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.InitialConditionsAtTime.toInitialConditions_velocity_at_t₀`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean#L100).
+**`ClassicalMechanics.HarmonicOscillator.InitialConditionsAtTime.toInitialConditions_velocity_at_t₀`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean#L100).
 
 > The trajectory resulting from `toInitialConditions` has the specified
 > velocity `vT₀` at time `t₀`.
@@ -71,7 +71,7 @@ lemma toInitialConditions_velocity_at_t₀ (S : HarmonicOscillator)
     ∂ₜ ((IC.toInitialConditions S).trajectory S) IC.t₀ = IC.vT₀
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.InitialConditionsAtTime.toInitialConditions_energy_at_t₀`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean#L112).
+**`ClassicalMechanics.HarmonicOscillator.InitialConditionsAtTime.toInitialConditions_energy_at_t₀`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean#L112).
 
 > The energy of the trajectory at time `t₀` equals the energy computed from the
 > initial conditions at `t₀`.
@@ -93,7 +93,7 @@ lemma toInitialConditions_energy_at_t₀ (S : HarmonicOscillator)
 > Under this nondegeneracy condition, we prove that the resulting trajectory passes through `xT₁`
 > at `t₁` and `xT₂` at `t₂`.
 
-**`ClassicalMechanics.HarmonicOscillator.InitialConditionsFromTwoPositions.toInitialConditions_trajectory_at_t₁`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean#L141).
+**`ClassicalMechanics.HarmonicOscillator.InitialConditionsFromTwoPositions.toInitialConditions_trajectory_at_t₁`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean#L141).
 
 > The trajectory from `toInitialConditions` passes through `xT₁` at time `t₁`,
 > provided `sin (S.ω * (t₂ - t₁)) ≠ 0`.
@@ -105,7 +105,7 @@ lemma toInitialConditions_trajectory_at_t₁ (S : HarmonicOscillator)
     (IC.toInitialConditions S).trajectory S IC.t₁ = IC.xT₁
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.InitialConditionsFromTwoPositions.toInitialConditions_trajectory_at_t₂`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean#L153).
+**`ClassicalMechanics.HarmonicOscillator.InitialConditionsFromTwoPositions.toInitialConditions_trajectory_at_t₂`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean#L153).
 
 > The trajectory from `toInitialConditions` passes through `xT₂` at time `t₂`,
 > provided `sin (S.ω * (t₂ - t₁)) ≠ 0`.
@@ -123,7 +123,7 @@ lemma toInitialConditions_trajectory_at_t₂ (S : HarmonicOscillator)
 > nondegeneracy condition, we prove that the resulting trajectory has velocity `vT₁` at `t₁` and
 > `vT₂` at `t₂`.
 
-**`ClassicalMechanics.HarmonicOscillator.InitialConditionsFromTwoVelocities.toInitialConditions_velocity_at_t₁`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean#L179).
+**`ClassicalMechanics.HarmonicOscillator.InitialConditionsFromTwoVelocities.toInitialConditions_velocity_at_t₁`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean#L179).
 
 > The trajectory from `toInitialConditions` has velocity `vT₁` at time `t₁`,
 > provided `sin (S.ω * (t₂ - t₁)) ≠ 0`.
@@ -135,7 +135,7 @@ lemma toInitialConditions_velocity_at_t₁ (S : HarmonicOscillator)
     ∂ₜ ((IC.toInitialConditions S).trajectory S) IC.t₁ = IC.vT₁
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.InitialConditionsFromTwoVelocities.toInitialConditions_velocity_at_t₂`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean#L192).
+**`ClassicalMechanics.HarmonicOscillator.InitialConditionsFromTwoVelocities.toInitialConditions_velocity_at_t₂`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean#L192).
 
 > The trajectory from `toInitialConditions` has velocity `vT₂` at time `t₂`,
 > provided `sin (S.ω * (t₂ - t₁)) ≠ 0`.
@@ -153,4 +153,4 @@ lemma toInitialConditions_velocity_at_t₂ (S : HarmonicOscillator)
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean)
+- [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean)

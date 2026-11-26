@@ -8,7 +8,7 @@ proof: formalized
 
 # The spacetime algebra
 
-The module `Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Basic`, [Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean): 20 declarations (1 instance with no name), 13 with a docstring.
+The module `Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Basic`, [Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean): 20 declarations (1 instance with no name), 13 with a docstring.
 
 ## i. Overview
 
@@ -56,7 +56,7 @@ The module `Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Basic`, [Physlib/Spa
 > the infinite-order jet of a smooth complex-valued field at the base point is recorded by the
 > series of its Taylor coefficients, which is an element of the spacetime algebra.
 
-**`SpaceTimeAlgebra`**, an abbrev, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L80).
+**`SpaceTimeAlgebra`**, an abbrev, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L80).
 
 > Formal power series in the four spacetime directions, with complex coefficients.
 
@@ -75,7 +75,7 @@ abbrev SpaceTimeAlgebra : Type
 > write `∂^s f` for `iteratedPDeriv s f`. For example, the multiset containing `μ` twice and `ν` once
 > gives `∂_μ ∂_μ ∂_ν f`.
 
-**`SpaceTimeAlgebra.pderiv_comm`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L102).
+**`SpaceTimeAlgebra.pderiv_comm`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L102).
 
 > Formal partial derivatives commute.
 
@@ -84,7 +84,7 @@ lemma pderiv_comm (μ ν : Fin 1 ⊕ Fin 3) (f : SpaceTimeAlgebra) :
     pderiv μ (pderiv ν f) = pderiv ν (pderiv μ f)
 ```
 
-**An instance with no name**, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L113).
+**An instance with no name**, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L113).
 
 > Formal partial differentiation can be iterated over a multiset of directions.
 
@@ -92,7 +92,7 @@ lemma pderiv_comm (μ ν : Fin 1 ⊕ Fin 3) (f : SpaceTimeAlgebra) :
 instance : RightCommutative (fun (f : SpaceTimeAlgebra) (μ : Fin 1 ⊕ Fin 3) => pderiv μ f)
 ```
 
-**`SpaceTimeAlgebra.iteratedPDeriv`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L118).
+**`SpaceTimeAlgebra.iteratedPDeriv`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L118).
 
 > The iterated formal partial derivative `∂^s f`, differentiating once along each element of
 > `s`.
@@ -102,13 +102,13 @@ noncomputable def iteratedPDeriv (s : Multiset (Fin 1 ⊕ Fin 3)) (f : SpaceTime
     SpaceTimeAlgebra
 ```
 
-**`SpaceTimeAlgebra.iteratedPDeriv_zero`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L123).
+**`SpaceTimeAlgebra.iteratedPDeriv_zero`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L123).
 
 ```lean
 lemma iteratedPDeriv_zero (f : SpaceTimeAlgebra) : iteratedPDeriv 0 f = f
 ```
 
-**`SpaceTimeAlgebra.iteratedPDeriv_cons`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L126).
+**`SpaceTimeAlgebra.iteratedPDeriv_cons`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L126).
 
 ```lean
 lemma iteratedPDeriv_cons (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3))
@@ -116,14 +116,14 @@ lemma iteratedPDeriv_cons (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)
     iteratedPDeriv (μ ::ₘ s) f = iteratedPDeriv s (pderiv μ f)
 ```
 
-**`SpaceTimeAlgebra.iteratedPDeriv_singleton`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L132).
+**`SpaceTimeAlgebra.iteratedPDeriv_singleton`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L132).
 
 ```lean
 lemma iteratedPDeriv_singleton (μ : Fin 1 ⊕ Fin 3) (f : SpaceTimeAlgebra) :
     iteratedPDeriv {μ} f = pderiv μ f
 ```
 
-**`SpaceTimeAlgebra.iteratedPDeriv_add`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L135).
+**`SpaceTimeAlgebra.iteratedPDeriv_add`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L135).
 
 ```lean
 lemma iteratedPDeriv_add (s : Multiset (Fin 1 ⊕ Fin 3)) (f g : SpaceTimeAlgebra) :
@@ -141,7 +141,7 @@ lemma iteratedPDeriv_add (s : Multiset (Fin 1 ⊕ Fin 3)) (f g : SpaceTimeAlgebr
 > `∂^s` turns `x^s` into the constant `s!`, while every other monomial ends up either zero or without
 > a constant term, so `(∂^s f)(0)` is `s!` times the coefficient of `x^s` in `f`.
 
-**`SpaceTimeAlgebra.constantCoeff_iteratedPDeriv`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L157).
+**`SpaceTimeAlgebra.constantCoeff_iteratedPDeriv`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L157).
 
 > The base-point value of `∂^s f` is `s!` times the coefficient of `x^s` in `f`.
 
@@ -160,7 +160,7 @@ lemma constantCoeff_iteratedPDeriv (s : Multiset (Fin 1 ⊕ Fin 3)) (f : SpaceTi
 > holds for base-point derivative values, but not for the Taylor coefficients, which are divided by
 > `s!`.
 
-**`SpaceTimeAlgebra.iteratedPDeriv_mul`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L190).
+**`SpaceTimeAlgebra.iteratedPDeriv_mul`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L190).
 
 > The all-orders Leibniz rule for iterated formal partial derivatives.
 
@@ -170,7 +170,7 @@ lemma iteratedPDeriv_mul (s : Multiset (Fin 1 ⊕ Fin 3)) (f g : SpaceTimeAlgebr
       (s.antidiagonal.map fun p => iteratedPDeriv p.1 f * iteratedPDeriv p.2 g).sum
 ```
 
-**`SpaceTimeAlgebra.constantCoeff_iteratedPDeriv_mul`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L201).
+**`SpaceTimeAlgebra.constantCoeff_iteratedPDeriv_mul`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L201).
 
 > The Leibniz rule for the base-point derivative values of a product.
 
@@ -188,7 +188,7 @@ lemma constantCoeff_iteratedPDeriv_mul (s : Multiset (Fin 1 ⊕ Fin 3)) (f g : S
 > equal. Similarly, a series whose first derivatives all vanish is the constant series given by its
 > base-point value.
 
-**`SpaceTimeAlgebra.ext_of_constantCoeff_iteratedPDeriv`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L219).
+**`SpaceTimeAlgebra.ext_of_constantCoeff_iteratedPDeriv`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L219).
 
 > Series whose iterated derivatives have the same base-point values are equal.
 
@@ -198,7 +198,7 @@ lemma ext_of_constantCoeff_iteratedPDeriv {f g : SpaceTimeAlgebra}
     f = g
 ```
 
-**`SpaceTimeAlgebra.eq_C_of_pderiv_eq_zero`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L231).
+**`SpaceTimeAlgebra.eq_C_of_pderiv_eq_zero`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L231).
 
 > A series with vanishing first derivatives is constant.
 
@@ -216,7 +216,7 @@ lemma eq_C_of_pderiv_eq_zero {f : SpaceTimeAlgebra} (hf : ∀ μ, pderiv μ f = 
 > values of `F`. Applied to the base-point derivative values of a series `f`, this construction
 > returns `f`, which is Taylor's formula `f = Σ_s (∂^s f)(0) / s! · x^s` (Haukkanen, Theorem 4.1).
 
-**`SpaceTimeAlgebra.ofDerivValues`**, a def, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L249).
+**`SpaceTimeAlgebra.ofDerivValues`**, a def, [line 249](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L249).
 
 > The series whose base-point derivative values are `F`.
 
@@ -224,7 +224,7 @@ lemma eq_C_of_pderiv_eq_zero {f : SpaceTimeAlgebra} (hf : ∀ μ, pderiv μ f = 
 noncomputable def ofDerivValues (F : Multiset (Fin 1 ⊕ Fin 3) → ℂ) : SpaceTimeAlgebra
 ```
 
-**`SpaceTimeAlgebra.coeff_ofDerivValues`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L252).
+**`SpaceTimeAlgebra.coeff_ofDerivValues`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L252).
 
 ```lean
 lemma coeff_ofDerivValues (F : Multiset (Fin 1 ⊕ Fin 3) → ℂ) (m : (Fin 1 ⊕ Fin 3) →₀ ℕ) :
@@ -232,7 +232,7 @@ lemma coeff_ofDerivValues (F : Multiset (Fin 1 ⊕ Fin 3) → ℂ) (m : (Fin 1 �
       ((∏ ν, (m ν).factorial : ℕ) : ℂ)⁻¹ * F (Finsupp.toMultiset m)
 ```
 
-**`SpaceTimeAlgebra.constantCoeff_iteratedPDeriv_ofDerivValues`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L258).
+**`SpaceTimeAlgebra.constantCoeff_iteratedPDeriv_ofDerivValues`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L258).
 
 > The base-point derivative values of `ofDerivValues F` are `F`.
 
@@ -242,7 +242,7 @@ lemma constantCoeff_iteratedPDeriv_ofDerivValues (F : Multiset (Fin 1 ⊕ Fin 3)
     constantCoeff (iteratedPDeriv s (ofDerivValues F)) = F s
 ```
 
-**`SpaceTimeAlgebra.ofDerivValues_constantCoeff_iteratedPDeriv`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L267).
+**`SpaceTimeAlgebra.ofDerivValues_constantCoeff_iteratedPDeriv`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L267).
 
 > A series is recovered from its base-point derivative values by `ofDerivValues`.
 
@@ -256,7 +256,7 @@ lemma ofDerivValues_constantCoeff_iteratedPDeriv (f : SpaceTimeAlgebra) :
 > The two constructions are mutually inverse and `ℂ`-linear, so together they form the linear
 > equivalence `derivValuesEquiv` between the spacetime algebra and `Multiset (Fin 1 ⊕ Fin 3) → ℂ`.
 
-**`SpaceTimeAlgebra.derivValuesEquiv`**, a def, [line 281](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L281).
+**`SpaceTimeAlgebra.derivValuesEquiv`**, a def, [line 281](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L281).
 
 > The linear equivalence between series and their base-point derivative values.
 
@@ -264,14 +264,14 @@ lemma ofDerivValues_constantCoeff_iteratedPDeriv (f : SpaceTimeAlgebra) :
 noncomputable def derivValuesEquiv : SpaceTimeAlgebra ≃ₗ[ℂ] (Multiset (Fin 1 ⊕ Fin 3) → ℂ)
 ```
 
-**`SpaceTimeAlgebra.derivValuesEquiv_apply`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L291).
+**`SpaceTimeAlgebra.derivValuesEquiv_apply`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L291).
 
 ```lean
 lemma derivValuesEquiv_apply (f : SpaceTimeAlgebra) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     derivValuesEquiv f s = constantCoeff (iteratedPDeriv s f)
 ```
 
-**`SpaceTimeAlgebra.derivValuesEquiv_symm_apply`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L295).
+**`SpaceTimeAlgebra.derivValuesEquiv_symm_apply`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L295).
 
 ```lean
 lemma derivValuesEquiv_symm_apply (F : Multiset (Fin 1 ⊕ Fin 3) → ℂ) :
@@ -284,4 +284,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean)
+- [Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean)

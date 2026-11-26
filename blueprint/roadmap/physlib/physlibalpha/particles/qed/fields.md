@@ -8,7 +8,7 @@ proof: formalized
 
 # The fields of quantum electrodynamics
 
-The module `PhyslibAlpha.Particles.QED.Fields`, [PhyslibAlpha/Particles/QED/Fields.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Fields.lean): 12 declarations, 12 with a docstring.
+The module `PhyslibAlpha.Particles.QED.Fields`, [PhyslibAlpha/Particles/QED/Fields.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/Fields.lean): 12 declarations, 12 with a docstring.
 
 ## i. Overview
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.Particles.QED.Fields`, [PhyslibAlpha/Particles/QED/Fiel
 
 ## A. The field strength and Maxwell term of the photon
 
-**`QED.Photon.JetAlgebra.fieldStrength`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Fields.lean#L71).
+**`QED.Photon.JetAlgebra.fieldStrength`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/Fields.lean#L71).
 
 > The formal field strength `∂_s F_{μν} = ∂_s ∂_μ A_ν - ∂_s ∂_ν A_μ`.
 
@@ -53,7 +53,7 @@ noncomputable def fieldStrength (s : Multiset (Fin 1 ⊕ Fin 3)) (μ ν : Fin 1 
     JetAlgebra
 ```
 
-**`QED.Photon.JetAlgebra.maxwellTerm`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Fields.lean#L77).
+**`QED.Photon.JetAlgebra.maxwellTerm`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/Fields.lean#L77).
 
 > The formal Maxwell term `F_{μν} F^{μν}`, both indices raised with the
 > (diagonal) Minkowski metric.
@@ -62,7 +62,7 @@ noncomputable def fieldStrength (s : Multiset (Fin 1 ⊕ Fin 3)) (μ ν : Fin 1 
 noncomputable def maxwellTerm : JetAlgebra
 ```
 
-**`QED.Photon.JetAlgebra.maxwellOperator`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Fields.lean#L84).
+**`QED.Photon.JetAlgebra.maxwellOperator`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/Fields.lean#L84).
 
 > The Maxwell operator `∂_μ F^{μν}`: the divergence of the field strength
 > with raised indices.  Its vanishing is the vacuum Maxwell equation; its
@@ -79,7 +79,7 @@ noncomputable def maxwellOperator (ν : Fin 1 ⊕ Fin 3) : JetAlgebra
 > `∂_s ψ_α`, `∂_s ψ̄_α`, as elements of the QED jet algebra, together with the
 > field strength and the Maxwell term.
 
-**`QED.JetAlgebra.A`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Fields.lean#L104).
+**`QED.JetAlgebra.A`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/Fields.lean#L104).
 
 > The photon jet coordinate `∂_s A_μ` in the QED jet algebra.
 
@@ -88,7 +88,7 @@ noncomputable def A (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3) :
     JetAlgebra
 ```
 
-**`QED.JetAlgebra.ψ`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Fields.lean#L109).
+**`QED.JetAlgebra.ψ`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/Fields.lean#L109).
 
 > The electron jet coordinate `∂_s ψ_α` in the QED jet algebra.
 
@@ -97,7 +97,7 @@ noncomputable def ψ (s : Multiset (Fin 1 ⊕ Fin 3)) (α : Fin 2 ⊕ Fin 2) :
     JetAlgebra
 ```
 
-**`QED.JetAlgebra.barψ`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Fields.lean#L114).
+**`QED.JetAlgebra.barψ`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/Fields.lean#L114).
 
 > The conjugate electron jet coordinate `∂_s ψ̄_α` in the QED jet algebra.
 
@@ -106,7 +106,7 @@ noncomputable def barψ (s : Multiset (Fin 1 ⊕ Fin 3)) (α : Fin 2 ⊕ Fin 2) 
     JetAlgebra
 ```
 
-**`QED.JetAlgebra.fieldStrength`**, a def, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Fields.lean#L119).
+**`QED.JetAlgebra.fieldStrength`**, a def, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/Fields.lean#L119).
 
 > The formal field strength `∂_s F_{μν}` in the QED jet algebra.
 
@@ -115,7 +115,7 @@ noncomputable def fieldStrength (s : Multiset (Fin 1 ⊕ Fin 3))
     (μ ν : Fin 1 ⊕ Fin 3) : JetAlgebra
 ```
 
-**`QED.JetAlgebra.maxwellTerm`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Fields.lean#L126).
+**`QED.JetAlgebra.maxwellTerm`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/Fields.lean#L126).
 
 > The formal Maxwell term `F_{μν} F^{μν}` in the QED jet algebra.  Its
 > evaluation on an honest electromagnetic potential is the Maxwell Lagrangian;
@@ -131,7 +131,7 @@ noncomputable def maxwellTerm : JetAlgebra
 > `σ^μ = (1, σ^i)` and `σ̄^μ = (1, -σ^i)`; since the Minkowski matrix is
 > diagonal, `σ̄^μ = η_{μμ} σ^μ` with no sum over `μ`.
 
-**`QED.JetAlgebra.gammaMatrix`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Fields.lean#L142).
+**`QED.JetAlgebra.gammaMatrix`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/Fields.lean#L142).
 
 > The Dirac γ matrices in the chiral (Weyl) representation:
 > `γ^μ = ((0, σ^μ), (σ̄^μ, 0))`, acting on the Dirac index `Fin 2 ⊕ Fin 2`
@@ -142,7 +142,7 @@ noncomputable def gammaMatrix (μ : Fin 1 ⊕ Fin 3) :
     Matrix (Fin 2 ⊕ Fin 2) (Fin 2 ⊕ Fin 2) ℂ
 ```
 
-**`QED.JetAlgebra.kineticGamma`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Fields.lean#L149).
+**`QED.JetAlgebra.kineticGamma`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/Fields.lean#L149).
 
 > The contraction matrices `γ⁰ γ^μ = ((σ̄^μ, 0), (0, σ^μ))` of the Dirac
 > kinetic term `i ψ† (γ⁰ γ^μ) D_μ ψ`; see
@@ -158,7 +158,7 @@ noncomputable def kineticGamma (μ : Fin 1 ⊕ Fin 3) :
 > The electron has electric charge `-1`, so `D_μ ψ = ∂_μ ψ + i e A_μ ψ` and
 > `D_μ ψ̄ = ∂_μ ψ̄ - i e A_μ ψ̄`, with `e` the electric coupling.
 
-**`QED.JetAlgebra.covDψ`**, a def, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Fields.lean#L164).
+**`QED.JetAlgebra.covDψ`**, a def, [line 164](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/Fields.lean#L164).
 
 > The covariant derivative jet `(D_μ ψ)_α = ∂_μ ψ_α + i e A_μ ψ_α` of the
 > electron.
@@ -168,7 +168,7 @@ noncomputable def covDψ (e : ℝ) (μ : Fin 1 ⊕ Fin 3) (α : Fin 2 ⊕ Fin 2)
     JetAlgebra
 ```
 
-**`QED.JetAlgebra.covDbarψ`**, a def, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Fields.lean#L170).
+**`QED.JetAlgebra.covDbarψ`**, a def, [line 170](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/Fields.lean#L170).
 
 > The covariant derivative jet `(D_μ ψ̄)_α = ∂_μ ψ̄_α - i e A_μ ψ̄_α` of the
 > conjugate electron.
@@ -184,4 +184,4 @@ noncomputable def covDbarψ (e : ℝ) (μ : Fin 1 ⊕ Fin 3) (α : Fin 2 ⊕ Fin
 
 ## Sources
 
-- [PhyslibAlpha/Particles/QED/Fields.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Fields.lean)
+- [PhyslibAlpha/Particles/QED/Fields.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/Fields.lean)

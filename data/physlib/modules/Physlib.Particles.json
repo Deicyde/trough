@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
  "modules": [
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/GeorgiGlashow/Basic.lean",
@@ -4418,7 +4418,7 @@
      "name": "C₂₃",
      "kind": "def",
      "line": 65,
-     "doc": "Given a CKM matrix `V` the real number corresponding to `sin θ₂₃` in the\nstandard parameterization. -",
+     "doc": "Given a CKM matrix `V` the real number corresponding to `cos θ₂₃` in the\nstandard parameterization. -",
      "statement": "def C₂₃ (V : Quotient CKMMatrixSetoid) : ℝ",
      "sorry": false
     },
@@ -7632,103 +7632,103 @@
      "text": "#### A.5.1. The rotation matrix to ofReal\n\nWe define an element of `GaugeGroupI` which takes a given Higgs vector to the\ncorresponding `ofReal` Higgs vector."
     },
     {
-     "line": 374,
+     "line": 369,
      "text": "#### A.5.2. Members of orbits\n\nMembers of the orbit of a Higgs vector under the action of `GaugeGroupI` are exactly those\nHiggs vectors with the same norm."
     },
     {
-     "line": 396,
+     "line": 391,
      "text": "#### A.5.3. Local gauge orbits of Higgs doublets\n\nIn a trivialization, a doublet field is a map into `HiggsVec`. The weak rotation\nto the neutral representative preserves the regularity of the field wherever\nit is nonzero. The following results concern the action on the doublet itself.\n\nIf both doublets vanish at the same point, equal norms need not give a transformation continuous\nat that point. For example, `(x + iy, 0)` and `(x - iy, 0)` both vanish at the origin and have\nequal norms everywhere. The transforming matrix would have to send the first basis vector to\nitself on the punctured `x`-axis and to its negative on the punctured `y`-axis, so it cannot be\ncontinuous at the origin."
     },
     {
-     "line": 439,
+     "line": 434,
      "text": "### A.6. The stability group of a Higgs vector\n\nThe stability group of a Higgs vector `φ` is the subgroup `repGaugeGroupI.stabilizer φ` of\n`GaugeGroupI` fixing `φ`, i.e. the gauge group left unbroken when the Higgs field takes the\nvalue `φ`. For the vacuum `ofReal a = (0, √a)` with `a > 0` it is `SU(3) × U(1)_EM`, and for\nany other non-zero Higgs vector it is a conjugate of this subgroup. The subgroup fixing every\nHiggs vector is `SU(3) × ℤ₆`."
     },
     {
-     "line": 544,
+     "line": 539,
      "text": "### A.7. The electromagnetic U(1) and the phase of the first component"
     },
     {
-     "line": 594,
+     "line": 589,
      "text": "### A.8. To real scalars"
     },
     {
-     "line": 628,
+     "line": 623,
      "text": "## B. The Higgs bundle\n\nWe define the Higgs bundle as the trivial vector bundle with base `SpaceTime` and fiber `HiggsVec`.\nThe Higgs field will then be defined as smooth sections of this bundle."
     },
     {
-     "line": 636,
+     "line": 631,
      "text": "### B.1. Definition of the Higgs bundle\n\nWe define the Higgs bundle."
     },
     {
-     "line": 650,
+     "line": 645,
      "text": "### B.2. Instance of a vector bundle\n\nWe given the Higgs bundle an instance of a smooth vector bundle."
     },
     {
-     "line": 662,
+     "line": 657,
      "text": "## C. The Higgs fields\n\n`HiggsField` consists of real analytic sections of the trivial Higgs bundle.\nThese correspond to real analytic maps from `SpaceTime` to `HiggsVec`.\nWe here define the type of Higgs fields and create an API around them."
     },
     {
-     "line": 680,
+     "line": 675,
      "text": "### C.1. Relations between `HiggsField` and `HiggsVec`"
     },
     {
-     "line": 686,
+     "line": 681,
      "text": "#### C.1.1. The constant Higgs field\n\nWe define the constant Higgs field associated to a given Higgs vector."
     },
     {
-     "line": 715,
+     "line": 710,
      "text": "#### C.1.2. The map from `HiggsField` to `SpaceTime → HiggsVec`"
     },
     {
-     "line": 731,
+     "line": 726,
      "text": "### C.2. Smoothness properties of components\n\nWe prove some smoothness properties of the components of a Higgs field."
     },
     {
-     "line": 760,
+     "line": 755,
      "text": "### C.3. The pointwise inner product\n\nThe pointwise inner product on the Higgs field."
     },
     {
-     "line": 773,
+     "line": 768,
      "text": "#### C.3.1. Basic equalities"
     },
     {
-     "line": 796,
+     "line": 791,
      "text": "#### C.3.2. Symmetry properties"
     },
     {
-     "line": 806,
+     "line": 801,
      "text": "#### C.3.3. Linearity conditions"
     },
     {
-     "line": 838,
+     "line": 833,
      "text": "#### C.3.4. Smoothness of the inner product"
     },
     {
-     "line": 849,
+     "line": 844,
      "text": "### C.4. The pointwise norm\n\nWe define the pointwise norm-squared of a Higgs field."
     },
     {
-     "line": 868,
+     "line": 863,
      "text": "#### C.4.1. Basic equalities"
     },
     {
-     "line": 888,
+     "line": 883,
      "text": "#### C.4.2. Positivity"
     },
     {
-     "line": 896,
+     "line": 891,
      "text": "#### C.4.3. On the zero section"
     },
     {
-     "line": 907,
+     "line": 902,
      "text": "#### C.4.4. Smoothness of the norm-squared"
     },
     {
-     "line": 918,
+     "line": 913,
      "text": "#### C.4.5. Norm-squared of constant Higgs fields"
     },
     {
-     "line": 928,
+     "line": 923,
      "text": "### C.5. The action of the gauge group on Higgs fields\n\nWhen two Higgs fields have equal pointwise squared norms on a region and the first is nowhere\nzero there, A.5.3 gives a weak gauge transformation with real analytic matrix entries on that\nregion. This concerns the scalar part of unitary gauge in the trivial Higgs bundle.\n\nThe general gauge action on sections remains informal. A pointwise action on `HiggsField` must\npreserve analyticity, which arbitrary smooth gauge transformations need not do."
     }
    ],
@@ -7840,7 +7840,7 @@
     {
      "name": "StandardModel.HiggsVec.toRealGroupElem_apply_self",
      "kind": "lemma",
-     "line": 283,
+     "line": 278,
      "doc": "",
      "statement": "lemma toRealGroupElem_apply_self (φ : HiggsVec) :\n    repGaugeGroupI (toRealGroupElem φ) φ = ofReal (‖φ‖ ^ 2)",
      "sorry": false
@@ -7848,7 +7848,7 @@
     {
      "name": "StandardModel.HiggsVec.toRealGroupElem_toSU2_of_ne_zero",
      "kind": "lemma",
-     "line": 306,
+     "line": 301,
      "doc": "The matrix of the weak rotation to the neutral representative of a nonzero Higgs vector.",
      "statement": "lemma toRealGroupElem_toSU2_of_ne_zero (v : HiggsVec) (hv : v ≠ 0) :\n    (toRealGroupElem v).toSU2.val =\n      !![v 1 / ‖v‖, -v 0 / ‖v‖; conj (v 0) / ‖v‖, conj (v 1) / ‖v‖]",
      "sorry": false
@@ -7856,7 +7856,7 @@
     {
      "name": "StandardModel.HiggsVec.toRealGroupElem_eq_toSU2",
      "kind": "lemma",
-     "line": 312,
+     "line": 307,
      "doc": "The rotation to the neutral representative has trivial colour and hypercharge factors.",
      "statement": "lemma toRealGroupElem_eq_toSU2 (v : HiggsVec) :\n    toRealGroupElem v = (1, (toRealGroupElem v).toSU2, 1)",
      "sorry": false
@@ -7864,7 +7864,7 @@
     {
      "name": "StandardModel.HiggsVec.toRealGroupElem_toSU2_apply_self",
      "kind": "lemma",
-     "line": 321,
+     "line": 316,
      "doc": "The weak factor of `toRealGroupElem` alone rotates the Higgs doublet to\nthe neutral representative `(0, ‖v‖)`, as used in unitary gauge.",
      "statement": "lemma toRealGroupElem_toSU2_apply_self (v : HiggsVec) :\n    repGaugeGroupI (1, (toRealGroupElem v).toSU2, 1) v = ofReal (‖v‖ ^ 2)",
      "sorry": false
@@ -7872,7 +7872,7 @@
     {
      "name": "StandardModel.HiggsVec.contDiffOn_toRealGroupElem_toSU2",
      "kind": "lemma",
-     "line": 327,
+     "line": 322,
      "doc": "The matrix entries of the explicit weak rotation to the neutral representative\nare `C^n` away from the zero vector, including for `n = ∞` (smooth) and `n = ω` (analytic).",
      "statement": "lemma contDiffOn_toRealGroupElem_toSU2 {n : ℕ∞ω} :\n    ContDiffOn ℝ n (fun (v : HiggsVec) (i j : Fin 2) => (toRealGroupElem v).toSU2.val i j)\n      {v | v ≠ 0}",
      "sorry": false
@@ -7880,7 +7880,7 @@
     {
      "name": "StandardModel.HiggsVec.exists_repGaugeGroupI_eq_iff_norm_eq",
      "kind": "lemma",
-     "line": 385,
+     "line": 380,
      "doc": "Two Higgs vectors are in the same gauge orbit (i.e. related by `repGaugeGroupI`)\nif and only if they have the same norm.",
      "statement": "lemma exists_repGaugeGroupI_eq_iff_norm_eq (φ : HiggsVec) (ψ : HiggsVec) :\n    (∃ g : GaugeGroupI, repGaugeGroupI g φ = ψ) ↔ ‖ψ‖ = ‖φ‖",
      "sorry": false
@@ -7888,7 +7888,7 @@
     {
      "name": "StandardModel.HiggsVec.exists_contDiffOn_su2_rep_eq_iff_norm_sq_eq",
      "kind": "lemma",
-     "line": 414,
+     "line": 409,
      "doc": "On a set where the first of two `C^n` doublets is nonzero, their pointwise squared norms\nagree exactly when a weak `SU(2)` transformation with `C^n` entries relates them there.",
      "statement": "lemma exists_contDiffOn_su2_rep_eq_iff_norm_sq_eq {E : Type*}\n    [NormedAddCommGroup E] [NormedSpace ℝ E]\n    {n : ℕ∞ω} {s : Set E} {φ ψ : E → HiggsVec} (hφ : ContDiffOn ℝ n φ s) (hψ : ContDiffOn ℝ n ψ s)\n    (hnφ : ∀ x ∈ s, φ x ≠ 0) :\n    (∃ g : E → specialUnitaryGroup (Fin 2) ℂ,\n      ContDiffOn ℝ n (fun x (i j : Fin 2) => (g x).val i j) s ∧\n      ∀ x ∈ s, repGaugeGroupI (1, g x, 1) (φ x) = ψ x) ↔\n    ∀ x ∈ s, ‖φ x‖ ^ 2 = ‖ψ x‖ ^ 2",
      "sorry": false
@@ -7896,7 +7896,7 @@
     {
      "name": "StandardModel.HiggsVec.mem_stabilizer_ofReal_iff",
      "kind": "lemma",
-     "line": 453,
+     "line": 448,
      "doc": "A gauge transformation fixes the non-zero Higgs vector `ofReal a = (0, √a)` if and only if\nits `SU(2)` part is `diag(u³, ū³)`, where `u` is its `U(1)` part.",
      "statement": "lemma mem_stabilizer_ofReal_iff {a : ℝ} (ha : 0 < a) (g : GaugeGroupI) :\n    g ∈ repGaugeGroupI.stabilizer (ofReal a) ↔\n    GaugeGroupI.toSU2 g = GaugeGroupI.diagSU2 (GaugeGroupI.toU1 g ^ 3)",
      "sorry": false
@@ -7904,7 +7904,7 @@
     {
      "name": "StandardModel.HiggsVec.stabilizer_ofReal",
      "kind": "theorem",
-     "line": 486,
+     "line": 481,
      "doc": "The Higgs vacuum breaks electroweak symmetry down to color and electromagnetism: the\nstability group of the non-zero Higgs vector `ofReal a = (0, √a)` is the subgroup\n`SU(3) × U(1)_EM` of `GaugeGroupI`, with elements `(h, diag(u³, ū³), u)`.",
      "statement": "theorem stabilizer_ofReal {a : ℝ} (ha : 0 < a) :\n    repGaugeGroupI.stabilizer (ofReal a) = UnbrokenGaugeGroupI.incl.range",
      "sorry": false
@@ -7912,7 +7912,7 @@
     {
      "name": "StandardModel.HiggsVec.exists_stabilizer_eq_conj_unbrokenGaugeGroupI",
      "kind": "lemma",
-     "line": 497,
+     "line": 492,
      "doc": "The stability group of any non-zero Higgs vector is conjugate to `SU(3) × U(1)_EM`.",
      "statement": "lemma exists_stabilizer_eq_conj_unbrokenGaugeGroupI (φ : HiggsVec) (hφ : φ ≠ 0) :\n    ∃ g : GaugeGroupI, repGaugeGroupI.stabilizer φ =\n      UnbrokenGaugeGroupI.incl.range.map (MulAut.conj g)",
      "sorry": false
@@ -7920,7 +7920,7 @@
     {
      "name": "StandardModel.HiggsVec.mem_iInf_stabilizer_iff",
      "kind": "lemma",
-     "line": 510,
+     "line": 505,
      "doc": "The gauge transformations fixing every Higgs vector are those of the form\n`(h, α⁻³ I₂, α)` with `h ∈ SU(3)` arbitrary and `α` a sixth root of unity, i.e. the subgroup\n`SU(3) × ℤ₆` of `GaugeGroupI`. Here `ℤ₆` sits inside `SU(2) × U(1)`: it is the image there of\nthe central `ℤ₆` used for `GaugeGroupℤ₆`, whose elements also carry the `SU(3)` part `α² I₃`,\nso this subgroup contains the central `ℤ₆`.",
      "statement": "lemma mem_iInf_stabilizer_iff (g : GaugeGroupI) :\n    g ∈ ⨅ φ, repGaugeGroupI.stabilizer φ ↔\n    ∃ α : rootsOfUnity 6 ℂ, GaugeGroupI.toSU2 g = gaugeGroupℤ₆SU2OfRoot α ∧\n      GaugeGroupI.toU1 g = gaugeGroupℤ₆UnitaryOfRoot α",
      "sorry": false
@@ -7928,7 +7928,7 @@
     {
      "name": "StandardModel.HiggsVec.electromagnetismU1_repGaugeGroupI_apply",
      "kind": "lemma",
-     "line": 552,
+     "line": 547,
      "doc": "The electromagnetic `U(1)` acts on a Higgs vector as `diag(u⁶, 1)`: the upper component\nhas electric charge `+1` and the lower component is neutral.",
      "statement": "lemma electromagnetismU1_repGaugeGroupI_apply (g : unitary ℂ) (φ : HiggsVec) :\n    repGaugeGroupI (StandardModel.GaugeGroupI.electromagnetismU1 g) φ =\n    (WithLp.toLp 2 <| !![g.1 ^ 6, 0; 0, 1] *ᵥ φ.ofLp)",
      "sorry": false
@@ -7936,7 +7936,7 @@
     {
      "name": "StandardModel.HiggsVec.electromagnetismU1_repGaugeGroupI_ofReal",
      "kind": "lemma",
-     "line": 566,
+     "line": 561,
      "doc": "The electromagnetic `U(1)` leaves the Higgs vector `ofReal a = (0, √a)` invariant:\nthe Higgs vacuum is electrically neutral, so electromagnetism is unbroken.",
      "statement": "lemma electromagnetismU1_repGaugeGroupI_ofReal (g : unitary ℂ) (a : ℝ) :\n    repGaugeGroupI (StandardModel.GaugeGroupI.electromagnetismU1 g) (ofReal a) = ofReal a",
      "sorry": false
@@ -7944,7 +7944,7 @@
     {
      "name": "StandardModel.HiggsVec.exists_electromagnetismU1_fst_eq_norm",
      "kind": "lemma",
-     "line": 576,
+     "line": 571,
      "doc": "There is an element of the electromagnetic `U(1)` making the first (charged) component of a\nHiggs vector real and non-negative. It fixes second components, and so the Higgs vacuum\n`ofReal a`. This is used to gauge-fix two-Higgs-doublet configurations to\n`Φ1 = (0, ‖Φ1‖)`.",
      "statement": "lemma exists_electromagnetismU1_fst_eq_norm (φ : HiggsVec) :\n    ∃ g : unitary ℂ,\n      (repGaugeGroupI (StandardModel.GaugeGroupI.electromagnetismU1 g) φ).ofLp 0 = ‖φ.ofLp 0‖",
      "sorry": false
@@ -7952,7 +7952,7 @@
     {
      "name": "StandardModel.HiggsVec.toRealScalars",
      "kind": "def",
-     "line": 601,
+     "line": 596,
      "doc": "The underlying real values of the Higgs vector.",
      "statement": "def toRealScalars : HiggsVec →ₗ[ℝ] (Fin 4 → ℝ)",
      "sorry": false
@@ -7960,7 +7960,7 @@
     {
      "name": "StandardModel.HiggsVec.toRealScalars_smul_real",
      "kind": "lemma",
-     "line": 614,
+     "line": 609,
      "doc": "",
      "statement": "lemma toRealScalars_smul_real (a : ℝ) (φ : HiggsVec) :\n    toRealScalars (a • φ) = a • toRealScalars φ",
      "sorry": false
@@ -7968,7 +7968,7 @@
     {
      "name": "StandardModel.HiggsVec.ofReal_toRealScalars",
      "kind": "lemma",
-     "line": 617,
+     "line": 612,
      "doc": "",
      "statement": "lemma ofReal_toRealScalars (a : ℝ) :\n    toRealScalars (ofReal a) = !₄[0, 0, Real.sqrt a, 0]",
      "sorry": false
@@ -7976,7 +7976,7 @@
     {
      "name": "StandardModel.HiggsVec.ofReal_toRealScalars_norm",
      "kind": "lemma",
-     "line": 622,
+     "line": 617,
      "doc": "",
      "statement": "lemma ofReal_toRealScalars_norm (φ : HiggsVec) :\n    toRealScalars (ofReal (‖φ‖ ^ 2)) = !₄[0, 0, ‖φ‖, 0]",
      "sorry": false
@@ -7984,7 +7984,7 @@
     {
      "name": "StandardModel.HiggsBundle",
      "kind": "abbrev",
-     "line": 648,
+     "line": 643,
      "doc": "The `HiggsBundle` is defined as the trivial vector bundle with base `SpaceTime` and\nfiber `HiggsVec`. Thus as a manifold it corresponds to `ℝ⁴ × ℂ²`.",
      "statement": "abbrev HiggsBundle",
      "sorry": false
@@ -7992,7 +7992,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 659,
+     "line": 654,
      "doc": "The instance of a smooth vector bundle with total space `HiggsBundle` and fiber `HiggsVec`.",
      "statement": "instance : ContMDiffVectorBundle ⊤ HiggsVec HiggsBundle (Lorentz.Vector.asSmoothManifold 3)",
      "sorry": false
@@ -8000,7 +8000,7 @@
     {
      "name": "StandardModel.HiggsField",
      "kind": "abbrev",
-     "line": 674,
+     "line": 669,
      "doc": "Real analytic sections of the trivial Higgs bundle, equivalently real analytic maps from\n`SpaceTime` to `HiggsVec`. The regularity `⊤` here means `ω`, not ordinary `C^∞`.",
      "statement": "abbrev HiggsField : Type",
      "sorry": false
@@ -8008,7 +8008,7 @@
     {
      "name": "StandardModel.HiggsField.const",
      "kind": "def",
-     "line": 696,
+     "line": 691,
      "doc": "Given a vector in `HiggsVec` the constant Higgs field with value equal to that\nsection.",
      "statement": "def const : HiggsVec →ₗ[ℝ] HiggsField",
      "sorry": false
@@ -8016,7 +8016,7 @@
     {
      "name": "StandardModel.HiggsField.const_apply",
      "kind": "lemma",
-     "line": 713,
+     "line": 708,
      "doc": "For all spacetime points, the constant Higgs field defined by a Higgs vector,\nreturns that Higgs Vector.",
      "statement": "lemma const_apply (φ : HiggsVec) (x : SpaceTime) : const φ x = φ",
      "sorry": false
@@ -8024,7 +8024,7 @@
     {
      "name": "StandardModel.HiggsField.toHiggsVec",
      "kind": "def",
-     "line": 722,
+     "line": 717,
      "doc": "Given a `HiggsField`, the corresponding map from `SpaceTime` to `HiggsVec`.",
      "statement": "def toHiggsVec (φ : HiggsField) : SpaceTime → HiggsVec",
      "sorry": false
@@ -8032,7 +8032,7 @@
     {
      "name": "StandardModel.HiggsField.toHiggsVec_smooth",
      "kind": "lemma",
-     "line": 724,
+     "line": 719,
      "doc": "",
      "statement": "lemma toHiggsVec_smooth (φ : HiggsField) :\n    ContMDiff 𝓘(ℝ, SpaceTime) 𝓘(ℝ, HiggsVec) ⊤ φ.toHiggsVec",
      "sorry": false
@@ -8040,7 +8040,7 @@
     {
      "name": "StandardModel.HiggsField.const_toHiggsVec_apply",
      "kind": "lemma",
-     "line": 728,
+     "line": 723,
      "doc": "",
      "statement": "lemma const_toHiggsVec_apply (φ : HiggsField) (x : SpaceTime) :\n    const (φ.toHiggsVec x) x = φ x",
      "sorry": false
@@ -8048,7 +8048,7 @@
     {
      "name": "StandardModel.HiggsField.contDiff",
      "kind": "lemma",
-     "line": 740,
+     "line": 735,
      "doc": "",
      "statement": "lemma contDiff (φ : HiggsField) :\n    ContDiff ℝ ⊤ φ",
      "sorry": false
@@ -8056,7 +8056,7 @@
     {
      "name": "StandardModel.HiggsField.toVec_smooth",
      "kind": "lemma",
-     "line": 744,
+     "line": 739,
      "doc": "",
      "statement": "lemma toVec_smooth (φ : HiggsField) :\n    ContMDiff 𝓘(ℝ, SpaceTime) 𝓘(ℝ, EuclideanSpace ℂ (Fin 2)) ⊤ φ",
      "sorry": false
@@ -8064,7 +8064,7 @@
     {
      "name": "StandardModel.HiggsField.apply_smooth",
      "kind": "lemma",
-     "line": 748,
+     "line": 743,
      "doc": "",
      "statement": "lemma apply_smooth (φ : HiggsField) :\n    ∀ i, ContMDiff 𝓘(ℝ, SpaceTime) 𝓘(ℝ, ℂ) ⊤ (fun (x : SpaceTime) => (φ x i))",
      "sorry": false
@@ -8072,7 +8072,7 @@
     {
      "name": "StandardModel.HiggsField.apply_re_smooth",
      "kind": "lemma",
-     "line": 752,
+     "line": 747,
      "doc": "",
      "statement": "lemma apply_re_smooth (φ : HiggsField) (i : Fin 2) :\n    ContMDiff 𝓘(ℝ, SpaceTime) 𝓘(ℝ, ℝ) ⊤ (reCLM ∘ (fun (x : SpaceTime) => (φ x i)))",
      "sorry": false
@@ -8080,7 +8080,7 @@
     {
      "name": "StandardModel.HiggsField.apply_im_smooth",
      "kind": "lemma",
-     "line": 756,
+     "line": 751,
      "doc": "",
      "statement": "lemma apply_im_smooth (φ : HiggsField) (i : Fin 2) :\n    ContMDiff 𝓘(ℝ, SpaceTime) 𝓘(ℝ, ℝ) ⊤ (imCLM ∘ (fun (x : SpaceTime) => (φ x i)))",
      "sorry": false
@@ -8088,7 +8088,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 770,
+     "line": 765,
      "doc": "",
      "statement": "instance : Inner (SpaceTime → ℂ) (HiggsField)",
      "sorry": false
@@ -8096,7 +8096,7 @@
     {
      "name": "StandardModel.HiggsField.inner_apply",
      "kind": "lemma",
-     "line": 779,
+     "line": 774,
      "doc": "",
      "statement": "lemma inner_apply (φ1 φ2 : HiggsField) (x : SpaceTime) :\n    ⟪φ1, φ2⟫_(SpaceTime → ℂ) x = ⟪φ1 x, φ2 x⟫_ℂ",
      "sorry": false
@@ -8104,7 +8104,7 @@
     {
      "name": "StandardModel.HiggsField.inner_eq_expand",
      "kind": "lemma",
-     "line": 782,
+     "line": 777,
      "doc": "",
      "statement": "lemma inner_eq_expand (φ1 φ2 : HiggsField) :\n    ⟪φ1, φ2⟫_(SpaceTime → ℂ) = fun x => equivRealProdCLM.symm (((φ1 x 0).re * (φ2 x 0).re\n    + (φ1 x 1).re * (φ2 x 1).re+ (φ1 x 0).im * (φ2 x 0).im + (φ1 x 1).im * (φ2 x 1).im),\n    ((φ1 x 0).re * (φ2 x 0).im + (φ1 x 1).re * (φ2 x 1).im\n    - (φ1 x 0).im * (φ2 x 0).re - (φ1 x 1).im * (φ2 x 1).re))",
      "sorry": false
@@ -8112,7 +8112,7 @@
     {
      "name": "StandardModel.HiggsField.inner_expand_conj",
      "kind": "lemma",
-     "line": 792,
+     "line": 787,
      "doc": "Expands the inner product on Higgs fields in terms of complex components of the\nHiggs fields.",
      "statement": "lemma inner_expand_conj (φ1 φ2 : HiggsField) (x : SpaceTime) :\n    ⟪φ1, φ2⟫_(SpaceTime → ℂ) x = conj (φ1 x 0) * φ2 x 0 + conj (φ1 x 1) * φ2 x 1",
      "sorry": false
@@ -8120,7 +8120,7 @@
     {
      "name": "StandardModel.HiggsField.inner_symm",
      "kind": "lemma",
-     "line": 802,
+     "line": 797,
      "doc": "",
      "statement": "lemma inner_symm (φ1 φ2 : HiggsField) :\n    conj ⟪φ2, φ1⟫_(SpaceTime → ℂ) = ⟪φ1, φ2⟫_(SpaceTime → ℂ)",
      "sorry": false
@@ -8128,7 +8128,7 @@
     {
      "name": "StandardModel.HiggsField.inner_add_left",
      "kind": "lemma",
-     "line": 812,
+     "line": 807,
      "doc": "",
      "statement": "lemma inner_add_left (φ1 φ2 φ3 : HiggsField) :\n    ⟪φ1 + φ2, φ3⟫_(SpaceTime → ℂ) = ⟪φ1, φ3⟫_(SpaceTime → ℂ) + ⟪φ2, φ3⟫_(SpaceTime → ℂ)",
      "sorry": false
@@ -8136,7 +8136,7 @@
     {
      "name": "StandardModel.HiggsField.inner_add_right",
      "kind": "lemma",
-     "line": 816,
+     "line": 811,
      "doc": "",
      "statement": "lemma inner_add_right (φ1 φ2 φ3 : HiggsField) :\n    ⟪φ1, φ2 + φ3⟫_(SpaceTime → ℂ) = ⟪φ1, φ2⟫_(SpaceTime → ℂ) + ⟪φ1, φ3⟫_(SpaceTime → ℂ)",
      "sorry": false
@@ -8144,7 +8144,7 @@
     {
      "name": "StandardModel.HiggsField.inner_zero_left",
      "kind": "lemma",
-     "line": 821,
+     "line": 816,
      "doc": "",
      "statement": "lemma inner_zero_left (φ : HiggsField) :\n    ⟪0, φ⟫_(SpaceTime → ℂ) = 0",
      "sorry": false
@@ -8152,7 +8152,7 @@
     {
      "name": "StandardModel.HiggsField.inner_zero_right",
      "kind": "lemma",
-     "line": 826,
+     "line": 821,
      "doc": "",
      "statement": "lemma inner_zero_right (φ : HiggsField) :\n    ⟪φ, 0⟫_(SpaceTime → ℂ) = 0",
      "sorry": false
@@ -8160,7 +8160,7 @@
     {
      "name": "StandardModel.HiggsField.inner_neg_left",
      "kind": "lemma",
-     "line": 830,
+     "line": 825,
      "doc": "",
      "statement": "lemma inner_neg_left (φ1 φ2 : HiggsField) :\n    ⟪-φ1, φ2⟫_(SpaceTime → ℂ) = -⟪φ1, φ2⟫_(SpaceTime → ℂ)",
      "sorry": false
@@ -8168,7 +8168,7 @@
     {
      "name": "StandardModel.HiggsField.inner_neg_right",
      "kind": "lemma",
-     "line": 834,
+     "line": 829,
      "doc": "",
      "statement": "lemma inner_neg_right (φ1 φ2 : HiggsField) :\n    ⟪φ1, -φ2⟫_(SpaceTime → ℂ) = -⟪φ1, φ2⟫_(SpaceTime → ℂ)",
      "sorry": false
@@ -8176,7 +8176,7 @@
     {
      "name": "StandardModel.HiggsField.inner_smooth",
      "kind": "lemma",
-     "line": 844,
+     "line": 839,
      "doc": "",
      "statement": "lemma inner_smooth (φ1 φ2 : HiggsField) : ContMDiff 𝓘(ℝ, SpaceTime) 𝓘(ℝ, ℂ) ⊤\n    ⟪φ1, φ2⟫_(SpaceTime → ℂ)",
      "sorry": false
@@ -8184,7 +8184,7 @@
     {
      "name": "StandardModel.HiggsField.normSq",
      "kind": "def",
-     "line": 863,
+     "line": 858,
      "doc": "Given an element `φ` of `HiggsField`, `normSq φ` is defined as the\nthe function `SpaceTime → ℝ` obtained by taking the square norm of the\npointwise Higgs vector. In other words, `normSq φ x = ‖φ x‖ ^ 2`.\n\nThe notation `‖φ‖_H^2` is used for the `normSq φ`.",
      "statement": "def normSq (φ : HiggsField) : SpaceTime → ℝ",
      "sorry": false
@@ -8192,7 +8192,7 @@
     {
      "name": "StandardModel.HiggsField.inner_self_eq_normSq",
      "kind": "lemma",
-     "line": 874,
+     "line": 869,
      "doc": "",
      "statement": "lemma inner_self_eq_normSq (φ : HiggsField) (x : SpaceTime) :\n    ⟪φ, φ⟫_(SpaceTime → ℂ) x = ‖φ‖_H^2 x",
      "sorry": false
@@ -8200,7 +8200,7 @@
     {
      "name": "StandardModel.HiggsField.normSq_eq_inner_self_re",
      "kind": "lemma",
-     "line": 878,
+     "line": 873,
      "doc": "",
      "statement": "lemma normSq_eq_inner_self_re (φ : HiggsField) (x : SpaceTime) :\n    φ.normSq x = (⟪φ, φ⟫_(SpaceTime → ℂ) x).re",
      "sorry": false
@@ -8208,7 +8208,7 @@
     {
      "name": "StandardModel.HiggsField.normSq_expand",
      "kind": "lemma",
-     "line": 883,
+     "line": 878,
      "doc": "The expansion of the norm squared of into components.",
      "statement": "lemma normSq_expand (φ : HiggsField) :\n    φ.normSq = fun x => (conj (φ x 0) * (φ x 0) + conj (φ x 1) * (φ x 1)).re",
      "sorry": false
@@ -8216,7 +8216,7 @@
     {
      "name": "StandardModel.HiggsField.normSq_nonneg",
      "kind": "lemma",
-     "line": 894,
+     "line": 889,
      "doc": "",
      "statement": "lemma normSq_nonneg (φ : HiggsField) (x : SpaceTime) : 0 ≤ ‖φ‖_H^2 x",
      "sorry": false
@@ -8224,7 +8224,7 @@
     {
      "name": "StandardModel.HiggsField.normSq_zero",
      "kind": "lemma",
-     "line": 903,
+     "line": 898,
      "doc": "",
      "statement": "lemma normSq_zero : ‖0‖_H^2 = 0",
      "sorry": false
@@ -8232,7 +8232,7 @@
     {
      "name": "StandardModel.HiggsField.normSq_smooth",
      "kind": "lemma",
-     "line": 914,
+     "line": 909,
      "doc": "The norm squared of the Higgs field is a smooth function on space-time.",
      "statement": "lemma normSq_smooth (φ : HiggsField) : ContMDiff 𝓘(ℝ, SpaceTime) 𝓘(ℝ, ℝ) ⊤ φ.normSq",
      "sorry": false
@@ -8240,7 +8240,7 @@
     {
      "name": "StandardModel.HiggsField.const_normSq",
      "kind": "lemma",
-     "line": 925,
+     "line": 920,
      "doc": "",
      "statement": "lemma const_normSq (φ : HiggsVec) (x : SpaceTime) :\n    ‖const φ‖_H^2 x = ‖φ‖ ^ 2",
      "sorry": false
@@ -8248,7 +8248,7 @@
     {
      "name": "StandardModel.HiggsField.exists_analytic_su2_rep_eq_iff_normSq_eq",
      "kind": "lemma",
-     "line": 942,
+     "line": 937,
      "doc": "The `HiggsField` specialization of `HiggsVec.exists_contDiffOn_su2_rep_eq_iff_norm_sq_eq`.\nThe action and real analyticity of the matrix entries hold on the given region.",
      "statement": "lemma exists_analytic_su2_rep_eq_iff_normSq_eq (φ ψ : HiggsField) (s : Set SpaceTime)\n    (hφ : ∀ x ∈ s, φ x ≠ 0) :\n    (∃ g : SpaceTime → specialUnitaryGroup (Fin 2) ℂ,\n      ContDiffOn ℝ ω (fun x (i j : Fin 2) => (g x).val i j) s ∧\n      ∀ x ∈ s, HiggsVec.repGaugeGroupI (1, g x, 1) (φ x) = ψ x) ↔\n    ∀ x ∈ s, φ.normSq x = ψ.normSq x",
      "sorry": false
@@ -12574,11 +12574,11 @@
      "text": "### C.2. Showing that `ofPotentialTerm'` is a subset of `ofPotentialTerm`\n\nWe now show the other direction of the subset relation, that\n`ofPotentialTerm'` is a subset of `ofPotentialTerm`."
     },
     {
-     "line": 371,
+     "line": 370,
      "text": "### C.3. Equivalence of elements of `ofPotentialTerm` and `ofPotentialTerm'`\n\nWe now show that a charge is in `ofPotentialTerm` if and only if it is in\n`ofPotentialTerm'`. I.e. their underlying finite sets are equal.\nWe do not say anything about the multiplicity of elements within the multisets,\nwhich is not important for us."
     },
     {
-     "line": 388,
+     "line": 387,
      "text": "### C.4. Induced monotonicity of `ofPotentialTerm'`\n\nDue to the equivalence of elements of `ofPotentialTerm` and `ofPotentialTerm'`,\nwe can now also show that `ofPotentialTerm'` is monotone in its charge spectrum argument."
     }
    ],
@@ -12706,7 +12706,7 @@
     {
      "name": "SuperSymmetry.SU5.ChargeSpectrum.mem_ofPotentialTerm_iff_mem_ofPotentialTerm",
      "kind": "lemma",
-     "line": 381,
+     "line": 380,
      "doc": "",
      "statement": "lemma mem_ofPotentialTerm_iff_mem_ofPotentialTerm [DecidableEq 𝓩]\n    {T : PotentialTerm} {n : 𝓩} {y : ChargeSpectrum 𝓩} :\n    n ∈ y.ofPotentialTerm T ↔ n ∈ y.ofPotentialTerm' T",
      "sorry": false
@@ -12714,7 +12714,7 @@
     {
      "name": "SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_mono",
      "kind": "lemma",
-     "line": 397,
+     "line": 396,
      "doc": "",
      "statement": "lemma ofPotentialTerm'_mono [DecidableEq 𝓩] {x y : ChargeSpectrum 𝓩}\n    (h : x ⊆ y) (T : PotentialTerm) :\n    x.ofPotentialTerm' T ⊆ y.ofPotentialTerm' T",
      "sorry": false

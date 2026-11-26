@@ -8,7 +8,7 @@ proof: formalized
 
 # Jordan order-unit spaces
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Basic`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Basic.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Basic`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Basic.lean): 2 declarations, 2 with a docstring.
 
 > Jordan order-unit spaces: order-unit spaces that are Jordan algebras with nonnegative squares.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Basic`, [PhyslibAlp
 
 ## A. The compatibility class
 
-**`PhyslibAlpha.ProbabilisticTheory.IsJordanOrderUnit`**, a class, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Basic.lean#L49).
+**`PhyslibAlpha.ProbabilisticTheory.IsJordanOrderUnit`**, a class, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Basic.lean#L49).
 
 > A coherent unital Jordan algebra with an order unit and positive squares. Bundling the
 > data-bearing algebra and order-unit parents together prevents incompatible additions, scalar
@@ -50,7 +50,7 @@ class IsJordanOrderUnit (E : Type*) extends NonAssocCommRing E, OrderUnitSpace E
 
 ## B. Consequences
 
-**`PhyslibAlpha.ProbabilisticTheory.IsJordanOrderUnit.sq_nonneg`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Basic.lean#L66).
+**`PhyslibAlpha.ProbabilisticTheory.IsJordanOrderUnit.sq_nonneg`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Basic.lean#L66).
 
 > Squares are nonnegative.
 
@@ -64,4 +64,4 @@ lemma sq_nonneg (a : E) : 0 ≤ a * a
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Basic.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Basic.lean)

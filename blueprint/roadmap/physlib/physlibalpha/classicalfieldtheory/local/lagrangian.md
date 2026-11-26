@@ -8,7 +8,7 @@ proof: formalized
 
 # Local Lagrangians
 
-The module `PhyslibAlpha.ClassicalFieldTheory.Local.Lagrangian`, [PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean): 14 declarations (1 instance with no name), 8 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.Local.Lagrangian`, [PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean): 14 declarations (1 instance with no name), 8 with a docstring.
 
 > Local finite-order Lagrangians on jet points, their regularity, and evaluation along fields.
 
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.Local.Lagrangian`, [PhyslibAlpha/C
 
 ## A. Local Lagrangians
 
-**`ClassicalFieldTheory.Local.Lagrangian`**, a structure, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L61).
+**`ClassicalFieldTheory.Local.Lagrangian`**, a structure, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L61).
 
 > A local `k`-th order Lagrangian for fields `Space d → EuclideanSpace ℝ (Fin m)`.
 
@@ -57,13 +57,13 @@ structure Lagrangian (d m k : ℕ) where
         (∑ I : DerivativeIndex d k, ∑ a : Fin m, coordDeriv I a J * V.coord I a) 0
 ```
 
-**An instance with no name**, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L77).
+**An instance with no name**, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L77).
 
 ```lean
 instance : CoeFun (Lagrangian d m k) (fun _ => JetPoint d m k → ℝ)
 ```
 
-**`ClassicalFieldTheory.Local.Lagrangian.fiberDerivative`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L81).
+**`ClassicalFieldTheory.Local.Lagrangian.fiberDerivative`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L81).
 
 > The derivative of `L` along the fiber-jet direction `V` based at `J`.
 
@@ -72,7 +72,7 @@ noncomputable def fiberDerivative (L : Lagrangian d m k) (J : JetPoint d m k)
     (V : JetFiberData d m k) : ℝ
 ```
 
-**`ClassicalFieldTheory.Local.Lagrangian.hasDerivAt_lineMap`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L85).
+**`ClassicalFieldTheory.Local.Lagrangian.hasDerivAt_lineMap`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L85).
 
 ```lean
 lemma hasDerivAt_lineMap (L : Lagrangian d m k) (J : JetPoint d m k) (V : JetFiberData d m k) :
@@ -81,7 +81,7 @@ lemma hasDerivAt_lineMap (L : Lagrangian d m k) (J : JetPoint d m k) (V : JetFib
 
 ## B. Regularity packages
 
-**`ClassicalFieldTheory.Local.Lagrangian.ContinuousInCoordinates`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L95).
+**`ClassicalFieldTheory.Local.Lagrangian.ContinuousInCoordinates`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L95).
 
 > Continuity of a local lagrangian in the explicit local jet coordinates `(x, u^a_I)`.
 
@@ -89,7 +89,7 @@ lemma hasDerivAt_lineMap (L : Lagrangian d m k) (J : JetPoint d m k) (V : JetFib
 def ContinuousInCoordinates (L : Lagrangian d m k) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.Lagrangian.ContDiffCoordDerivInCoordinates`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L101).
+**`ClassicalFieldTheory.Local.Lagrangian.ContDiffCoordDerivInCoordinates`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L101).
 
 > Intrinsic smoothness of the jet-coordinate derivatives of a local Lagrangian in the explicit
 > local jet coordinates `(x, u^a_I)`.
@@ -98,7 +98,7 @@ def ContinuousInCoordinates (L : Lagrangian d m k) : Prop
 def ContDiffCoordDerivInCoordinates (L : Lagrangian d m k) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.Lagrangian.SmoothInCoordinates`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L109).
+**`ClassicalFieldTheory.Local.Lagrangian.SmoothInCoordinates`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L109).
 
 > Public regularity package for a smooth local lagrangian in explicit local jet coordinates:
 > continuity of the lagrangian itself together with smoothness of all jet-coordinate derivatives.
@@ -107,7 +107,7 @@ def ContDiffCoordDerivInCoordinates (L : Lagrangian d m k) : Prop
 def SmoothInCoordinates (L : Lagrangian d m k) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.Lagrangian.ContDiffCoordDerivAlongField`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L113).
+**`ClassicalFieldTheory.Local.Lagrangian.ContDiffCoordDerivAlongField`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L113).
 
 > Smoothness of all coefficient functions `x ↦ ∂L/∂u_I^a (j^k f(x))` along a field `f`.
 
@@ -116,7 +116,7 @@ def ContDiffCoordDerivAlongField (L : Lagrangian d m k)
     (f : Space d → EuclideanSpace ℝ (Fin m)) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.Lagrangian.ContinuousCoordDerivAlongFamily`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L120).
+**`ClassicalFieldTheory.Local.Lagrangian.ContinuousCoordDerivAlongFamily`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L120).
 
 > Continuity of the coefficient family `(s, x) ↦ ∂L/∂u_I^a (j^k(F s)(x))` along a
 > one-parameter family of fields `F : ℝ → Space d → EuclideanSpace ℝ (Fin m)`.
@@ -126,7 +126,7 @@ def ContinuousCoordDerivAlongFamily (L : Lagrangian d m k)
     (F : ℝ → Space d → EuclideanSpace ℝ (Fin m)) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.Lagrangian.continuousAlongField_of_inCoordinates`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L125).
+**`ClassicalFieldTheory.Local.Lagrangian.continuousAlongField_of_inCoordinates`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L125).
 
 ```lean
 lemma continuousAlongField_of_inCoordinates (L : Lagrangian d m k)
@@ -135,7 +135,7 @@ lemma continuousAlongField_of_inCoordinates (L : Lagrangian d m k)
     Continuous (fun x : Space d => L (jetAt k f x))
 ```
 
-**`ClassicalFieldTheory.Local.Lagrangian.contDiffCoordDerivAlongField_of_inCoordinates`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L132).
+**`ClassicalFieldTheory.Local.Lagrangian.contDiffCoordDerivAlongField_of_inCoordinates`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L132).
 
 ```lean
 lemma contDiffCoordDerivAlongField_of_inCoordinates (L : Lagrangian d m k)
@@ -144,7 +144,7 @@ lemma contDiffCoordDerivAlongField_of_inCoordinates (L : Lagrangian d m k)
     ContDiffCoordDerivAlongField L f
 ```
 
-**`ClassicalFieldTheory.Local.Lagrangian.continuousCoordDerivAlongFamily_of_inCoordinates`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L143).
+**`ClassicalFieldTheory.Local.Lagrangian.continuousCoordDerivAlongFamily_of_inCoordinates`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L143).
 
 ```lean
 lemma continuousCoordDerivAlongFamily_of_inCoordinates (L : Lagrangian d m k)
@@ -156,7 +156,7 @@ lemma continuousCoordDerivAlongFamily_of_inCoordinates (L : Lagrangian d m k)
 
 ## C. Evaluation along a field
 
-**`ClassicalFieldTheory.Local.Lagrangian.alongField`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L162).
+**`ClassicalFieldTheory.Local.Lagrangian.alongField`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L162).
 
 > Evaluate a local Lagrangian along the `k`-jets of a field.
 
@@ -165,7 +165,7 @@ noncomputable def alongField (L : Lagrangian d m k)
     (f : Space d → EuclideanSpace ℝ (Fin m)) : Space d → ℝ
 ```
 
-**`ClassicalFieldTheory.Local.Lagrangian.alongField_apply`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L167).
+**`ClassicalFieldTheory.Local.Lagrangian.alongField_apply`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean#L167).
 
 ```lean
 lemma alongField_apply (L : Lagrangian d m k)
@@ -184,4 +184,4 @@ lemma alongField_apply (L : Lagrangian d m k)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Angular-momentum observables under a central force
 
-The module `PhyslibAlpha.ClassicalMechanics.CentralForce.AngularMomentum`, [PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean): 20 declarations, 20 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.CentralForce.AngularMomentum`, [PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean): 20 declarations, 20 with a docstring.
 
 > Squared angular momentum, its axial component, and their Poisson brackets for central forces.
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.ClassicalMechanics.CentralForce.AngularMomentum`, [Phys
 
 ## A. The angular momentum
 
-**`ClassicalMechanics.CentralForce.angularMomentum`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L76).
+**`ClassicalMechanics.CentralForce.angularMomentum`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L76).
 
 > The angular momentum `L = q × p` of a particle at position `q` with momentum `p`.
 
@@ -52,7 +52,7 @@ The module `PhyslibAlpha.ClassicalMechanics.CentralForce.AngularMomentum`, [Phys
 noncomputable def angularMomentum (p q : EuclideanSpace ℝ (Fin 3)) : EuclideanSpace ℝ (Fin 3)
 ```
 
-**`ClassicalMechanics.CentralForce.angularMomentum_apply_zero`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L80).
+**`ClassicalMechanics.CentralForce.angularMomentum_apply_zero`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L80).
 
 > The x-component of the angular momentum is `q₁ p₂ - q₂ p₁`.
 
@@ -61,7 +61,7 @@ lemma angularMomentum_apply_zero (p q : EuclideanSpace ℝ (Fin 3)) :
     angularMomentum p q 0 = q 1 * p 2 - q 2 * p 1
 ```
 
-**`ClassicalMechanics.CentralForce.angularMomentum_apply_one`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L85).
+**`ClassicalMechanics.CentralForce.angularMomentum_apply_one`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L85).
 
 > The y-component of the angular momentum is `q₂ p₀ - q₀ p₂`.
 
@@ -70,7 +70,7 @@ lemma angularMomentum_apply_one (p q : EuclideanSpace ℝ (Fin 3)) :
     angularMomentum p q 1 = q 2 * p 0 - q 0 * p 2
 ```
 
-**`ClassicalMechanics.CentralForce.angularMomentum_apply_two`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L90).
+**`ClassicalMechanics.CentralForce.angularMomentum_apply_two`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L90).
 
 > The z-component of the angular momentum is `q₀ p₁ - q₁ p₀`.
 
@@ -81,7 +81,7 @@ lemma angularMomentum_apply_two (p q : EuclideanSpace ℝ (Fin 3)) :
 
 ### A.1. The squared magnitude and the z-component
 
-**`ClassicalMechanics.CentralForce.angularMomentumSq`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L102).
+**`ClassicalMechanics.CentralForce.angularMomentumSq`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L102).
 
 > The squared magnitude `L² = ‖q × p‖²` of the angular momentum, as a function on phase
 > space.
@@ -90,7 +90,7 @@ lemma angularMomentum_apply_two (p q : EuclideanSpace ℝ (Fin 3)) :
 noncomputable def angularMomentumSq (p q : EuclideanSpace ℝ (Fin 3)) : ℝ
 ```
 
-**`ClassicalMechanics.CentralForce.angularMomentumZ`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L106).
+**`ClassicalMechanics.CentralForce.angularMomentumZ`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L106).
 
 > The component `L_z` of the angular momentum along the z-axis, as a function on phase space.
 
@@ -98,7 +98,7 @@ noncomputable def angularMomentumSq (p q : EuclideanSpace ℝ (Fin 3)) : ℝ
 noncomputable def angularMomentumZ (p q : EuclideanSpace ℝ (Fin 3)) : ℝ
 ```
 
-**`ClassicalMechanics.CentralForce.angularMomentumSq_eq_sum`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L110).
+**`ClassicalMechanics.CentralForce.angularMomentumSq_eq_sum`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L110).
 
 > The squared magnitude of the angular momentum is the sum of the squares of its components.
 
@@ -108,7 +108,7 @@ lemma angularMomentumSq_eq_sum (p q : EuclideanSpace ℝ (Fin 3)) :
       angularMomentum p q 0 ^ 2 + angularMomentum p q 1 ^ 2 + angularMomentum p q 2 ^ 2
 ```
 
-**`ClassicalMechanics.CentralForce.angularMomentumSq_eq`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L118).
+**`ClassicalMechanics.CentralForce.angularMomentumSq_eq`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L118).
 
 > Lagrange's identity: the squared magnitude of the angular momentum `q × p` is
 > `⟪q, q⟫ ⟪p, p⟫ - ⟪q, p⟫²`.
@@ -120,7 +120,7 @@ lemma angularMomentumSq_eq (p q : EuclideanSpace ℝ (Fin 3)) :
 
 ### A.2. Smoothness
 
-**`ClassicalMechanics.CentralForce.contDiff_angularMomentumSq`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L132).
+**`ClassicalMechanics.CentralForce.contDiff_angularMomentumSq`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L132).
 
 > The squared magnitude of the angular momentum is a smooth function on phase space.
 
@@ -128,7 +128,7 @@ lemma angularMomentumSq_eq (p q : EuclideanSpace ℝ (Fin 3)) :
 lemma contDiff_angularMomentumSq : ContDiff ℝ ∞ (Function.uncurry angularMomentumSq)
 ```
 
-**`ClassicalMechanics.CentralForce.contDiff_angularMomentumZ`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L142).
+**`ClassicalMechanics.CentralForce.contDiff_angularMomentumZ`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L142).
 
 > The z-component of the angular momentum is a smooth function on phase space.
 
@@ -138,7 +138,7 @@ lemma contDiff_angularMomentumZ : ContDiff ℝ ∞ (Function.uncurry angularMome
 
 ## B. Gradients
 
-**`ClassicalMechanics.CentralForce.hasGradientAt_angularMomentumSq_momentum`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L157).
+**`ClassicalMechanics.CentralForce.hasGradientAt_angularMomentumSq_momentum`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L157).
 
 > The momentum gradient of `L²` is `2 ⟪q, q⟫ p - 2 ⟪q, p⟫ q`.
 
@@ -148,7 +148,7 @@ lemma hasGradientAt_angularMomentumSq_momentum (p q : EuclideanSpace ℝ (Fin 3)
       ((2 * ⟪q, q⟫_ℝ) • p - (2 * ⟪q, p⟫_ℝ) • q) p
 ```
 
-**`ClassicalMechanics.CentralForce.hasGradientAt_angularMomentumSq_position`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L166).
+**`ClassicalMechanics.CentralForce.hasGradientAt_angularMomentumSq_position`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L166).
 
 > The position gradient of `L²` is `2 ⟪p, p⟫ q - 2 ⟪q, p⟫ p`.
 
@@ -158,7 +158,7 @@ lemma hasGradientAt_angularMomentumSq_position (p q : EuclideanSpace ℝ (Fin 3)
       ((2 * ⟪p, p⟫_ℝ) • q - (2 * ⟪q, p⟫_ℝ) • p) q
 ```
 
-**`ClassicalMechanics.CentralForce.hasGradientAt_angularMomentumZ_momentum`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L175).
+**`ClassicalMechanics.CentralForce.hasGradientAt_angularMomentumZ_momentum`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L175).
 
 > The momentum gradient of `L_z` is `q₀ e₁ - q₁ e₀`.
 
@@ -168,7 +168,7 @@ lemma hasGradientAt_angularMomentumZ_momentum (p q : EuclideanSpace ℝ (Fin 3))
       (q 0 • EuclideanSpace.single 1 1 - q 1 • EuclideanSpace.single 0 1) p
 ```
 
-**`ClassicalMechanics.CentralForce.hasGradientAt_angularMomentumZ_position`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L183).
+**`ClassicalMechanics.CentralForce.hasGradientAt_angularMomentumZ_position`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L183).
 
 > The position gradient of `L_z` is `p₁ e₀ - p₀ e₁`.
 
@@ -182,7 +182,7 @@ lemma hasGradientAt_angularMomentumZ_position (p q : EuclideanSpace ℝ (Fin 3))
 
 ### C.1. The squared magnitude and the z-component are in involution
 
-**`ClassicalMechanics.CentralForce.poissonBracket_angularMomentumSq_angularMomentumZ`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L204).
+**`ClassicalMechanics.CentralForce.poissonBracket_angularMomentumSq_angularMomentumZ`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L204).
 
 > The squared magnitude of the angular momentum and its z-component are in involution.
 
@@ -197,7 +197,7 @@ lemma poissonBracket_angularMomentumSq_angularMomentumZ (p q : EuclideanSpace �
 > and its position gradient is parallel to the position, its Poisson brackets with `L²` and `L_z`
 > vanish. These sufficient conditions apply to the central-force Hamiltonian away from the centre.
 
-**`ClassicalMechanics.CentralForce.poissonBracket_angularMomentumSq_eq_zero_of_hasGradientAt`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L225).
+**`ClassicalMechanics.CentralForce.poissonBracket_angularMomentumSq_eq_zero_of_hasGradientAt`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L225).
 
 > `L²` Poisson-commutes with any phase-space function whose momentum gradient is parallel to the
 > momentum and whose position gradient is parallel to the position.
@@ -211,7 +211,7 @@ lemma poissonBracket_angularMomentumSq_eq_zero_of_hasGradientAt
     poissonBracket angularMomentumSq H p q = 0
 ```
 
-**`ClassicalMechanics.CentralForce.poissonBracket_angularMomentumZ_eq_zero_of_hasGradientAt`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L238).
+**`ClassicalMechanics.CentralForce.poissonBracket_angularMomentumZ_eq_zero_of_hasGradientAt`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L238).
 
 > `L_z` Poisson-commutes with any phase-space function whose momentum gradient is parallel to
 > the momentum and whose position gradient is parallel to the position.
@@ -227,7 +227,7 @@ lemma poissonBracket_angularMomentumZ_eq_zero_of_hasGradientAt
 
 ### C.3. Conservation under a central force
 
-**`ClassicalMechanics.CentralForce.poissonBracket_angularMomentumSq_hamiltonian`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L260).
+**`ClassicalMechanics.CentralForce.poissonBracket_angularMomentumSq_hamiltonian`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L260).
 
 > Away from the centre of force, the squared magnitude of the angular momentum Poisson-commutes
 > with the Hamiltonian of a central-force system, so is conserved by the motion.
@@ -238,7 +238,7 @@ lemma poissonBracket_angularMomentumSq_hamiltonian (p : EuclideanSpace ℝ (Fin 
     poissonBracket angularMomentumSq S.hamiltonian p q = 0
 ```
 
-**`ClassicalMechanics.CentralForce.poissonBracket_angularMomentumZ_hamiltonian`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L268).
+**`ClassicalMechanics.CentralForce.poissonBracket_angularMomentumZ_hamiltonian`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L268).
 
 > Away from the centre of force, the z-component of the angular momentum Poisson-commutes with
 > the Hamiltonian of a central-force system, so is conserved by the motion.
@@ -251,7 +251,7 @@ lemma poissonBracket_angularMomentumZ_hamiltonian (p : EuclideanSpace ℝ (Fin 3
 
 ## D. Conservation along a trajectory
 
-**`ClassicalMechanics.CentralForce.hamiltonian_angularMomentumZ_eq_on_Icc`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L280).
+**`ClassicalMechanics.CentralForce.hamiltonian_angularMomentumZ_eq_on_Icc`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean#L280).
 
 > The energy and signed axial angular momentum agree at any two times on a central-force
 > trajectory satisfying Hamilton's equations away from the centre.
@@ -274,4 +274,4 @@ lemma hamiltonian_angularMomentumZ_eq_on_Icc
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean)
+- [PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean)

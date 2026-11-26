@@ -8,7 +8,7 @@ proof: formalized
 
 # Causal support geometry
 
-The module `PhyslibAlpha.Mathematics.Order.CausalRelation`, [PhyslibAlpha/Mathematics/Order/CausalRelation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean): 28 declarations, 14 with a docstring.
+The module `PhyslibAlpha.Mathematics.Order.CausalRelation`, [PhyslibAlpha/Mathematics/Order/CausalRelation.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean): 28 declarations, 14 with a docstring.
 
 ## i. Overview
 
@@ -56,7 +56,7 @@ The module `PhyslibAlpha.Mathematics.Order.CausalRelation`, [PhyslibAlpha/Mathem
 > Lemmas: `mono`, `isPastCompact_empty`, `union`, `causalFuture_inter_causalPast`,
 > `isPastCompact_of_futureSupported`, `isClosed_causalFuture`.
 
-**`CausalRelation`**, a structure, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L76).
+**`CausalRelation`**, a structure, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L76).
 
 > The causal relation used to bound field propagation. Further geometric hypotheses belong
 > in the results requiring them rather than in this minimal structure.
@@ -71,7 +71,7 @@ structure CausalRelation (M : Type*) where
   trans : ∀ {p q r}, Precedes p q → Precedes q r → Precedes p r
 ```
 
-**`CausalRelation.reverse`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L90).
+**`CausalRelation.reverse`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L90).
 
 > Reversing the causal direction exchanges retarded and advanced support.
 
@@ -79,7 +79,7 @@ structure CausalRelation (M : Type*) where
 def reverse : CausalRelation M
 ```
 
-**`CausalRelation.causalFuture`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L96).
+**`CausalRelation.causalFuture`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L96).
 
 > The events reachable from at least one event of a source set.
 
@@ -87,7 +87,7 @@ def reverse : CausalRelation M
 def causalFuture (A : Set M) : Set M
 ```
 
-**`CausalRelation.causalPast`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L99).
+**`CausalRelation.causalPast`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L99).
 
 > The events able to influence at least one event of a target set.
 
@@ -95,7 +95,7 @@ def causalFuture (A : Set M) : Set M
 def causalPast (A : Set M) : Set M
 ```
 
-**`CausalRelation.causalHull`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L102).
+**`CausalRelation.causalHull`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L102).
 
 > The union of the causal past and future of a set.
 
@@ -103,73 +103,73 @@ def causalPast (A : Set M) : Set M
 def causalHull (A : Set M) : Set M
 ```
 
-**`CausalRelation.subset_causalFuture`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L104).
+**`CausalRelation.subset_causalFuture`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L104).
 
 ```lean
 lemma subset_causalFuture : A ⊆ C.causalFuture A
 ```
 
-**`CausalRelation.subset_causalPast`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L107).
+**`CausalRelation.subset_causalPast`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L107).
 
 ```lean
 lemma subset_causalPast : A ⊆ C.causalPast A
 ```
 
-**`CausalRelation.causalFuture_mono`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L110).
+**`CausalRelation.causalFuture_mono`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L110).
 
 ```lean
 lemma causalFuture_mono (h : A ⊆ B) : C.causalFuture A ⊆ C.causalFuture B
 ```
 
-**`CausalRelation.causalPast_mono`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L113).
+**`CausalRelation.causalPast_mono`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L113).
 
 ```lean
 lemma causalPast_mono (h : A ⊆ B) : C.causalPast A ⊆ C.causalPast B
 ```
 
-**`CausalRelation.causalHull_mono`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L116).
+**`CausalRelation.causalHull_mono`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L116).
 
 ```lean
 lemma causalHull_mono (h : A ⊆ B) : C.causalHull A ⊆ C.causalHull B
 ```
 
-**`CausalRelation.causalFuture_empty`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L120).
+**`CausalRelation.causalFuture_empty`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L120).
 
 ```lean
 lemma causalFuture_empty : C.causalFuture ∅ = ∅
 ```
 
-**`CausalRelation.causalPast_empty`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L125).
+**`CausalRelation.causalPast_empty`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L125).
 
 ```lean
 lemma causalPast_empty : C.causalPast ∅ = ∅
 ```
 
-**`CausalRelation.causalFuture_union`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L130).
+**`CausalRelation.causalFuture_union`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L130).
 
 ```lean
 lemma causalFuture_union : C.causalFuture (A ∪ B) = C.causalFuture A ∪ C.causalFuture B
 ```
 
-**`CausalRelation.causalPast_union`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L142).
+**`CausalRelation.causalPast_union`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L142).
 
 ```lean
 lemma causalPast_union : C.causalPast (A ∪ B) = C.causalPast A ∪ C.causalPast B
 ```
 
-**`CausalRelation.causalFuture_idem`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L154).
+**`CausalRelation.causalFuture_idem`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L154).
 
 ```lean
 lemma causalFuture_idem : C.causalFuture (C.causalFuture A) = C.causalFuture A
 ```
 
-**`CausalRelation.causalPast_idem`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L161).
+**`CausalRelation.causalPast_idem`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L161).
 
 ```lean
 lemma causalPast_idem : C.causalPast (C.causalPast A) = C.causalPast A
 ```
 
-**`CausalRelation.IsSpacelikeCompact`**, a def, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L169).
+**`CausalRelation.IsSpacelikeCompact`**, a def, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L169).
 
 > A closed field support is spacelike compact when it lies in the causal hull of a compact set.
 > No equivalence with a Cauchy-surface definition is asserted without geometric hypotheses.
@@ -178,14 +178,14 @@ lemma causalPast_idem : C.causalPast (C.causalPast A) = C.causalPast A
 def IsSpacelikeCompact [TopologicalSpace M] (A : Set M) : Prop
 ```
 
-**`CausalRelation.IsSpacelikeCompact.mono`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L172).
+**`CausalRelation.IsSpacelikeCompact.mono`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L172).
 
 ```lean
 lemma IsSpacelikeCompact.mono [TopologicalSpace M]
     (hB : C.IsSpacelikeCompact B) (h : A ⊆ B) : C.IsSpacelikeCompact A
 ```
 
-**`CausalRelation.HasCompactCausalDiamonds`**, a def, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L179).
+**`CausalRelation.HasCompactCausalDiamonds`**, a def, [line 179](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L179).
 
 > Compact causal diamonds are the geometric compactness input for Green exactness.
 > This does not by itself assert every part of global hyperbolicity.
@@ -194,7 +194,7 @@ lemma IsSpacelikeCompact.mono [TopologicalSpace M]
 def HasCompactCausalDiamonds [TopologicalSpace M] : Prop
 ```
 
-**`CausalRelation.HasCompactCausalDiamonds.reverse`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L184).
+**`CausalRelation.HasCompactCausalDiamonds.reverse`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L184).
 
 > Compact causal diamonds are unchanged by reversing time orientation.
 
@@ -203,7 +203,7 @@ lemma HasCompactCausalDiamonds.reverse [TopologicalSpace M]
     (h : C.HasCompactCausalDiamonds) : C.reverse.HasCompactCausalDiamonds
 ```
 
-**`CausalRelation.IsPastCompact`**, a def, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L197).
+**`CausalRelation.IsPastCompact`**, a def, [line 197](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L197).
 
 > A set is past compact when its intersection with the causal past of every compact set is
 > compact.
@@ -212,20 +212,20 @@ lemma HasCompactCausalDiamonds.reverse [TopologicalSpace M]
 def IsPastCompact (A : Set M) : Prop
 ```
 
-**`CausalRelation.isPastCompact_empty`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L200).
+**`CausalRelation.isPastCompact_empty`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L200).
 
 ```lean
 lemma isPastCompact_empty : C.IsPastCompact ∅
 ```
 
-**`CausalRelation.IsPastCompact.union`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L204).
+**`CausalRelation.IsPastCompact.union`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L204).
 
 ```lean
 lemma IsPastCompact.union (hA : C.IsPastCompact A) (hB : C.IsPastCompact B) :
     C.IsPastCompact (A ∪ B)
 ```
 
-**`CausalRelation.IsPastCompact.mono`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L211).
+**`CausalRelation.IsPastCompact.mono`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L211).
 
 > A closed subset of a past-compact set remains past compact.
 
@@ -234,7 +234,7 @@ lemma IsPastCompact.mono (hB : C.IsPastCompact B) (hA : IsClosed A) (hAB : A ⊆
     C.IsPastCompact A
 ```
 
-**`CausalRelation.causalFuture_inter_causalPast`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L224).
+**`CausalRelation.causalFuture_inter_causalPast`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L224).
 
 > Causal transitivity localizes a future inside the past of an observation set.
 
@@ -244,7 +244,7 @@ lemma causalFuture_inter_causalPast (A K : Set M) :
       C.causalFuture (A ∩ C.causalPast K) ∩ C.causalPast K
 ```
 
-**`CausalRelation.IsPastCompact.causalFuture`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L235).
+**`CausalRelation.IsPastCompact.causalFuture`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L235).
 
 > Compact causal diamonds imply that the future of a past-compact source is past compact.
 
@@ -253,7 +253,7 @@ lemma IsPastCompact.causalFuture (hC : C.HasCompactCausalDiamonds) (hA : C.IsPas
     C.IsPastCompact (C.causalFuture A)
 ```
 
-**`CausalRelation.isPastCompact_of_futureSupported`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L242).
+**`CausalRelation.isPastCompact_of_futureSupported`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L242).
 
 > Closed support in the future of a compact set is past compact under compact-diamond geometry.
 
@@ -263,7 +263,7 @@ lemma isPastCompact_of_futureSupported (hC : C.HasCompactCausalDiamonds)
     C.IsPastCompact A
 ```
 
-**`CausalRelation.IsPastCompact.isClosed_causalFuture`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L249).
+**`CausalRelation.IsPastCompact.isClosed_causalFuture`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean#L249).
 
 > Local upper causal bounds and closed compact futures imply closed futures of past-compact sets.
 > These are geometric hypotheses, independent of the field equation or Green operators.
@@ -281,4 +281,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Order/CausalRelation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Order/CausalRelation.lean)
+- [PhyslibAlpha/Mathematics/Order/CausalRelation.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Order/CausalRelation.lean)

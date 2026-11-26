@@ -5,7 +5,7 @@ origin: cited
 
 # Operators on the Hilbert space of a finite target system
 
-The module `PhyslibAlpha.QuantumMechanics.HilbertSpaces.FiniteTarget.Operators`, [PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean): 3 declarations (3 instances with no name), none with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.HilbertSpaces.FiniteTarget.Operators`, [PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean): 3 declarations (3 instances with no name), none with a docstring.
 
 > Real scalar tower and self-adjoint decomposition instances for operators on `𝓗[d]`.
 
@@ -33,13 +33,13 @@ The module `PhyslibAlpha.QuantumMechanics.HilbertSpaces.FiniteTarget.Operators`,
 
 ## A. The real scalar action
 
-**An instance with no name**, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean#L60).
+**An instance with no name**, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean#L60).
 
 ```lean
 instance : IsScalarTower ℝ (𝓗[d] →L[ℂ] 𝓗[d]) (𝓗[d] →L[ℂ] 𝓗[d])
 ```
 
-**An instance with no name**, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean#L63).
+**An instance with no name**, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean#L63).
 
 ```lean
 instance : SMulCommClass ℝ (𝓗[d] →L[ℂ] 𝓗[d]) (𝓗[d] →L[ℂ] 𝓗[d])
@@ -47,7 +47,7 @@ instance : SMulCommClass ℝ (𝓗[d] →L[ℂ] 𝓗[d]) (𝓗[d] →L[ℂ] 𝓗
 
 ## B. Positive and negative parts
 
-**An instance with no name**, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean#L72).
+**An instance with no name**, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean#L72).
 
 ```lean
 instance : SelfAdjointDecompose (𝓗[d] →L[ℂ] 𝓗[d])
@@ -59,4 +59,4 @@ instance : SelfAdjointDecompose (𝓗[d] →L[ℂ] 𝓗[d])
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean)
+- [PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean)

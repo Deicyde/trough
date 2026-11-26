@@ -8,7 +8,7 @@ proof: formalized
 
 # The Field Strength Tensor (TemperedDistributional/FieldStrength)
 
-The module `Physlib.Electromagnetism.TemperedDistributional.FieldStrength`, [Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean): 16 declarations, 2 with a docstring.
+The module `Physlib.Electromagnetism.TemperedDistributional.FieldStrength`, [Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean): 16 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -27,7 +27,7 @@ The module `Physlib.Electromagnetism.TemperedDistributional.FieldStrength`, [Phy
 
 ### A.1. Auxiliary definition of field strength for distributions, with no linearity
 
-**`Electromagnetism.TempDistElectromagneticPotential.fieldStrengthAux`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L66).
+**`Electromagnetism.TempDistElectromagneticPotential.fieldStrengthAux`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L66).
 
 > An auxiliary definition for the field strength of an electromagnetic potential
 > based on a distribution. On Schwartz maps this has the same value as the field strength
@@ -38,7 +38,7 @@ noncomputable def fieldStrengthAux {d} (A : TempDistElectromagneticPotential d)
     (ε : 𝓢(SpaceTime d, ℝ)) : Lorentz.Vector d ⊗[ℝ] Lorentz.Vector d
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.fieldStrengthAux_eq_add`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L72).
+**`Electromagnetism.TempDistElectromagneticPotential.fieldStrengthAux_eq_add`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L72).
 
 ```lean
 lemma fieldStrengthAux_eq_add {d} (A : TempDistElectromagneticPotential d) (ε : 𝓢(SpaceTime d, ℝ)) :
@@ -49,7 +49,7 @@ lemma fieldStrengthAux_eq_add {d} (A : TempDistElectromagneticPotential d) (ε :
       {(η d | μ μ' ⊗ distTensorDeriv A ε | μ' ν)}ᵀ)
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.toTensor_fieldStrengthAux`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L86).
+**`Electromagnetism.TempDistElectromagneticPotential.toTensor_fieldStrengthAux`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L86).
 
 ```lean
 lemma toTensor_fieldStrengthAux {d} (A : TempDistElectromagneticPotential d)
@@ -60,7 +60,7 @@ lemma toTensor_fieldStrengthAux {d} (A : TempDistElectromagneticPotential d)
       {(η d | μ μ' ⊗ distTensorDeriv A ε | μ' ν)}ᵀ)
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.toTensor_fieldStrengthAux_basis_repr`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L95).
+**`Electromagnetism.TempDistElectromagneticPotential.toTensor_fieldStrengthAux_basis_repr`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L95).
 
 ```lean
 lemma toTensor_fieldStrengthAux_basis_repr {d} (A : TempDistElectromagneticPotential d)
@@ -71,7 +71,7 @@ lemma toTensor_fieldStrengthAux_basis_repr {d} (A : TempDistElectromagneticPoten
       η (b 1) κ * SpaceTime.distDeriv κ A ε (b 0))
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.fieldStrengthAux_tensor_basis_eq_basis`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L125).
+**`Electromagnetism.TempDistElectromagneticPotential.fieldStrengthAux_tensor_basis_eq_basis`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L125).
 
 ```lean
 lemma fieldStrengthAux_tensor_basis_eq_basis {d} (A : TempDistElectromagneticPotential d)
@@ -82,7 +82,7 @@ lemma fieldStrengthAux_tensor_basis_eq_basis {d} (A : TempDistElectromagneticPot
       (b 0, b 1)
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.fieldStrengthAux_basis_repr_apply`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L147).
+**`Electromagnetism.TempDistElectromagneticPotential.fieldStrengthAux_basis_repr_apply`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L147).
 
 ```lean
 lemma fieldStrengthAux_basis_repr_apply {d} {μν : (Fin 1 ⊕ Fin d) × (Fin 1 ⊕ Fin d)}
@@ -91,7 +91,7 @@ lemma fieldStrengthAux_basis_repr_apply {d} {μν : (Fin 1 ⊕ Fin d) × (Fin 1 
     ∑ κ, ((η μν.1 κ * distDeriv κ A ε μν.2) - η μν.2 κ * distDeriv κ A ε μν.1)
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.fieldStrengthAux_basis_repr_apply_eq_single`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L158).
+**`Electromagnetism.TempDistElectromagneticPotential.fieldStrengthAux_basis_repr_apply_eq_single`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L158).
 
 ```lean
 lemma fieldStrengthAux_basis_repr_apply_eq_single {d} {μν : (Fin 1 ⊕ Fin d) × (Fin 1 ⊕ Fin d)}
@@ -100,7 +100,7 @@ lemma fieldStrengthAux_basis_repr_apply_eq_single {d} {μν : (Fin 1 ⊕ Fin d) 
     ((η μν.1 μν.1 * distDeriv μν.1 A ε μν.2) - η μν.2 μν.2 * distDeriv μν.2 A ε μν.1)
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.fieldStrengthAux_eq_basis`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L176).
+**`Electromagnetism.TempDistElectromagneticPotential.fieldStrengthAux_eq_basis`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L176).
 
 ```lean
 lemma fieldStrengthAux_eq_basis {d} (A : TempDistElectromagneticPotential d)
@@ -112,7 +112,7 @@ lemma fieldStrengthAux_eq_basis {d} (A : TempDistElectromagneticPotential d)
 
 ### A.2. The definition of the field strength
 
-**`Electromagnetism.TempDistElectromagneticPotential.fieldStrength`**, a def, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L197).
+**`Electromagnetism.TempDistElectromagneticPotential.fieldStrength`**, a def, [line 197](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L197).
 
 > The field strength of an electromagnetic potential which is a distribution.
 
@@ -122,7 +122,7 @@ noncomputable def fieldStrength {d} :
     (SpaceTime d) →d[ℝ] Lorentz.Vector d ⊗[ℝ] Lorentz.Vector d
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.fieldStrength_eq_fieldStrengthAux`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L232).
+**`Electromagnetism.TempDistElectromagneticPotential.fieldStrength_eq_fieldStrengthAux`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L232).
 
 ```lean
 lemma fieldStrength_eq_fieldStrengthAux {d} (A : TempDistElectromagneticPotential d)
@@ -132,7 +132,7 @@ lemma fieldStrength_eq_fieldStrengthAux {d} (A : TempDistElectromagneticPotentia
 
 ### A.3. Field strength written in terms of a basis
 
-**`Electromagnetism.TempDistElectromagneticPotential.fieldStrength_eq_basis`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L241).
+**`Electromagnetism.TempDistElectromagneticPotential.fieldStrength_eq_basis`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L241).
 
 ```lean
 lemma fieldStrength_eq_basis {d} (A : TempDistElectromagneticPotential d)
@@ -142,7 +142,7 @@ lemma fieldStrength_eq_basis {d} (A : TempDistElectromagneticPotential d)
       • Lorentz.Vector.basis μ ⊗ₜ[ℝ] Lorentz.Vector.basis ν
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.fieldStrength_basis_repr_eq_single`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L249).
+**`Electromagnetism.TempDistElectromagneticPotential.fieldStrength_basis_repr_eq_single`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L249).
 
 ```lean
 lemma fieldStrength_basis_repr_eq_single {d} {μν : (Fin 1 ⊕ Fin d) × (Fin 1 ⊕ Fin d)}
@@ -151,7 +151,7 @@ lemma fieldStrength_basis_repr_eq_single {d} {μν : (Fin 1 ⊕ Fin d) × (Fin 1
     ((η μν.1 μν.1 * distDeriv μν.1 A ε μν.2) - η μν.2 μν.2 * distDeriv μν.2 A ε μν.1)
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.fieldStrength_diag_zero`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L257).
+**`Electromagnetism.TempDistElectromagneticPotential.fieldStrength_diag_zero`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L257).
 
 ```lean
 lemma fieldStrength_diag_zero {d} (A : TempDistElectromagneticPotential d)
@@ -160,7 +160,7 @@ lemma fieldStrength_diag_zero {d} (A : TempDistElectromagneticPotential d)
     (A.fieldStrength ε) (μ, μ) = 0
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.distDeriv_fieldStrength_diag_zero`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L265).
+**`Electromagnetism.TempDistElectromagneticPotential.distDeriv_fieldStrength_diag_zero`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L265).
 
 ```lean
 lemma distDeriv_fieldStrength_diag_zero {d} (A : TempDistElectromagneticPotential d)
@@ -169,7 +169,7 @@ lemma distDeriv_fieldStrength_diag_zero {d} (A : TempDistElectromagneticPotentia
     (distDeriv ν A.fieldStrength ε) (μ, μ) = 0
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.fieldStrength_antisymmetric_basis`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L272).
+**`Electromagnetism.TempDistElectromagneticPotential.fieldStrength_antisymmetric_basis`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L272).
 
 ```lean
 lemma fieldStrength_antisymmetric_basis {d} (A : TempDistElectromagneticPotential d)
@@ -181,7 +181,7 @@ lemma fieldStrength_antisymmetric_basis {d} (A : TempDistElectromagneticPotentia
 
 ### A.4. Equivariance of the field strength for distributions
 
-**`Electromagnetism.TempDistElectromagneticPotential.fieldStrength_equivariant`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L286).
+**`Electromagnetism.TempDistElectromagneticPotential.fieldStrength_equivariant`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean#L286).
 
 ```lean
 lemma fieldStrength_equivariant {d} (A : TempDistElectromagneticPotential d)
@@ -195,4 +195,4 @@ lemma fieldStrength_equivariant {d} (A : TempDistElectromagneticPotential d)
 
 ## Sources
 
-- [Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean)
+- [Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean)

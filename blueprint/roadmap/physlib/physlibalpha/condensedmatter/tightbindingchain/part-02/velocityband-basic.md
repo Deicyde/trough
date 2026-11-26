@@ -8,7 +8,7 @@ proof: formalized
 
 # The velocity band of forced uncertainty
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.VelocityBand.Basic`, [PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean): 18 declarations, 12 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.VelocityBand.Basic`, [PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean): 18 declarations, 12 with a docstring.
 
 ## i. Overview
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.VelocityBand.Basic`, 
 
 ## A. Uncertainty in a vector
 
-**`CondensedMatter.TightBindingChain.meanOf`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L60).
+**`CondensedMatter.TightBindingChain.meanOf`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L60).
 
 > The mean `re ⟨ψ|A|ψ⟩` of an operator in a vector.
 
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.VelocityBand.Basic`, 
 noncomputable def meanOf (A : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace) (ψ : T.HilbertSpace) : ℝ
 ```
 
-**`CondensedMatter.TightBindingChain.flucOf`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L64).
+**`CondensedMatter.TightBindingChain.flucOf`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L64).
 
 > The fluctuation `A ψ - ⟨A⟩ ψ` of an operator in a vector.
 
@@ -52,7 +52,7 @@ noncomputable def flucOf (A : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace) (ψ : T
     T.HilbertSpace
 ```
 
-**`CondensedMatter.TightBindingChain.defectOf`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L69).
+**`CondensedMatter.TightBindingChain.defectOf`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L69).
 
 > The centered Gram defect `‖u‖² ‖w‖² - |⟪u, w⟫|²` of `H` and `X` in a vector.
 
@@ -60,25 +60,25 @@ noncomputable def flucOf (A : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace) (ψ : T
 noncomputable def defectOf (ψ : T.HilbertSpace) : ℝ
 ```
 
-**`CondensedMatter.TightBindingChain.continuous_meanOf`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L73).
+**`CondensedMatter.TightBindingChain.continuous_meanOf`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L73).
 
 ```lean
 lemma continuous_meanOf (A : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace) : Continuous (T.meanOf A)
 ```
 
-**`CondensedMatter.TightBindingChain.continuous_defectOf`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L76).
+**`CondensedMatter.TightBindingChain.continuous_defectOf`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L76).
 
 ```lean
 lemma continuous_defectOf : Continuous T.defectOf
 ```
 
-**`CondensedMatter.TightBindingChain.defectOf_nonneg`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L82).
+**`CondensedMatter.TightBindingChain.defectOf_nonneg`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L82).
 
 ```lean
 lemma defectOf_nonneg (ψ : T.HilbertSpace) : 0 ≤ T.defectOf ψ
 ```
 
-**`CondensedMatter.TightBindingChain.expectation_ofVec`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L87).
+**`CondensedMatter.TightBindingChain.expectation_ofVec`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L87).
 
 > In a unit vector, the mean is the expectation of the vector state.
 
@@ -88,7 +88,7 @@ lemma expectation_ofVec {ψ : T.HilbertSpace} (h : ‖ψ‖ = 1)
     (ofVec h)⟨T.toObservable A hA⟩ = T.meanOf A ψ
 ```
 
-**`CondensedMatter.TightBindingChain.centeredGramDefect_ofVec_eq`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L94).
+**`CondensedMatter.TightBindingChain.centeredGramDefect_ofVec_eq`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L94).
 
 > In a unit vector, `defectOf` is the centered Gram defect of the vector state.
 
@@ -100,7 +100,7 @@ lemma centeredGramDefect_ofVec_eq {ψ : T.HilbertSpace} (h : ‖ψ‖ = 1) :
 
 ## B. The threshold
 
-**`CondensedMatter.TightBindingChain.minUncertainty`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L110).
+**`CondensedMatter.TightBindingChain.minUncertainty`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L110).
 
 > The unit vectors of minimum uncertainty.
 
@@ -108,13 +108,13 @@ lemma centeredGramDefect_ofVec_eq {ψ : T.HilbertSpace} (h : ‖ψ‖ = 1) :
 noncomputable def minUncertainty : Set T.HilbertSpace
 ```
 
-**`CondensedMatter.TightBindingChain.isCompact_minUncertainty`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L112).
+**`CondensedMatter.TightBindingChain.isCompact_minUncertainty`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L112).
 
 ```lean
 lemma isCompact_minUncertainty : IsCompact T.minUncertainty
 ```
 
-**`CondensedMatter.TightBindingChain.localizedState_mem_minUncertainty`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L117).
+**`CondensedMatter.TightBindingChain.localizedState_mem_minUncertainty`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L117).
 
 > A localized electron has minimum uncertainty: its position is sharp.
 
@@ -129,7 +129,7 @@ lemma localizedState_mem_minUncertainty (n : Fin T.N) : (|n⟩ : T.HilbertSpace)
   simp [defectOf, hX]
 ```
 
-**`CondensedMatter.TightBindingChain.threshold`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L127).
+**`CondensedMatter.TightBindingChain.threshold`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L127).
 
 > The largest speed `|⟨J⟩|` of a vector of minimum uncertainty.
 
@@ -137,7 +137,7 @@ lemma localizedState_mem_minUncertainty (n : Fin T.N) : (|n⟩ : T.HilbertSpace)
 noncomputable def threshold : ℝ
 ```
 
-**`CondensedMatter.TightBindingChain.exists_threshold`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L130).
+**`CondensedMatter.TightBindingChain.exists_threshold`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L130).
 
 > The threshold is attained by a vector of minimum uncertainty.
 
@@ -146,14 +146,14 @@ lemma exists_threshold :
     ∃ ψ ∈ T.minUncertainty, |T.meanOf T.current ψ| = T.threshold
 ```
 
-**`CondensedMatter.TightBindingChain.le_threshold`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L135).
+**`CondensedMatter.TightBindingChain.le_threshold`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L135).
 
 ```lean
 lemma le_threshold {ψ : T.HilbertSpace} (hψ : ψ ∈ T.minUncertainty) :
     |T.meanOf T.current ψ| ≤ T.threshold
 ```
 
-**`CondensedMatter.TightBindingChain.threshold_le_maxCurrent`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L140).
+**`CondensedMatter.TightBindingChain.threshold_le_maxCurrent`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L140).
 
 ```lean
 lemma threshold_le_maxCurrent (ht : T.t ≠ 0) : T.threshold ≤ T.maxCurrent
@@ -161,7 +161,7 @@ lemma threshold_le_maxCurrent (ht : T.t ≠ 0) : T.threshold ≤ T.maxCurrent
 
 ## C. The band
 
-**`CondensedMatter.TightBindingChain.velocityBand`**, a def, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L153).
+**`CondensedMatter.TightBindingChain.velocityBand`**, a def, [line 153](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L153).
 
 > The velocity band `(threshold, maxCurrent]` of forced uncertainty.
 
@@ -169,7 +169,7 @@ lemma threshold_le_maxCurrent (ht : T.t ≠ 0) : T.threshold ≤ T.maxCurrent
 noncomputable def velocityBand : Set ℝ
 ```
 
-**`CondensedMatter.TightBindingChain.defectOf_pos_of_mem_velocityBand`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L156).
+**`CondensedMatter.TightBindingChain.defectOf_pos_of_mem_velocityBand`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L156).
 
 > In the velocity band, the uncertainty defect is forced.
 
@@ -178,7 +178,7 @@ lemma defectOf_pos_of_mem_velocityBand {ψ : T.HilbertSpace} (hψ : ‖ψ‖ = 1
     (hv : |T.meanOf T.current ψ| ∈ T.velocityBand) : 0 < T.defectOf ψ
 ```
 
-**`CondensedMatter.TightBindingChain.velocityBand_eq_empty`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L162).
+**`CondensedMatter.TightBindingChain.velocityBand_eq_empty`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean#L162).
 
 > For `N = 2, 3` the maximal current state has minimum uncertainty: the band is empty.
 
@@ -198,4 +198,4 @@ lemma velocityBand_eq_empty (ht : T.t ≠ 0) (hN : T.N = 2 ∨ T.N = 3) :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean)

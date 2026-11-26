@@ -8,7 +8,7 @@ proof: formalized
 
 # First variation and the Euler-Lagrange criterion
 
-The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation`, [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean): 3 declarations, none with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation`, [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean): 3 declarations, none with a docstring.
 
 > Public entry point: a field is critical iff its local Euler-Lagrange operator vanishes.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation`, [PhyslibAlp
 
 ## A. Smooth-coordinate regularity
 
-**`ClassicalFieldTheory.Local.hasSmoothEulerLagrangeRegularity_of_smoothInCoordinates`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean#L52).
+**`ClassicalFieldTheory.Local.hasSmoothEulerLagrangeRegularity_of_smoothInCoordinates`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean#L52).
 
 ```lean
 lemma hasSmoothEulerLagrangeRegularity_of_smoothInCoordinates
@@ -44,7 +44,7 @@ lemma hasSmoothEulerLagrangeRegularity_of_smoothInCoordinates
 
 ## B. Final Euler-Lagrange criteria
 
-**`ClassicalFieldTheory.Local.isCritical_iff_eulerLagrange_zero_of_contDiff_and_smoothInCoordinates`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean#L62).
+**`ClassicalFieldTheory.Local.isCritical_iff_eulerLagrange_zero_of_contDiff_and_smoothInCoordinates`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean#L62).
 
 ```lean
 lemma isCritical_iff_eulerLagrange_zero_of_contDiff_and_smoothInCoordinates
@@ -54,7 +54,7 @@ lemma isCritical_iff_eulerLagrange_zero_of_contDiff_and_smoothInCoordinates
     IsCritical L f ↔ eulerLagrangeOp L f = 0
 ```
 
-**`ClassicalFieldTheory.Local.isCritical_iff_eulerLagrange_zero_of_admissibleForAction_and_smoothInCoordinates`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean#L71).
+**`ClassicalFieldTheory.Local.isCritical_iff_eulerLagrange_zero_of_admissibleForAction_and_smoothInCoordinates`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean#L71).
 
 ```lean
 lemma isCritical_iff_eulerLagrange_zero_of_admissibleForAction_and_smoothInCoordinates
@@ -74,4 +74,4 @@ lemma isCritical_iff_eulerLagrange_zero_of_admissibleForAction_and_smoothInCoord
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean)

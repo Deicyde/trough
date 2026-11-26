@@ -1,10 +1,10 @@
 # Bispinors
 
-The folder [Physlib/Relativity/Bispinors/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors): 4 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [Physlib/Relativity/Bispinors/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Bispinors): 4 modules, an article each, in path order with Basic.lean first in its folder.
 
 - [Physlib.Relativity.Bispinors.Basic](basic.md)
 
-Modules in [Pauli/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli):
+Modules in [Pauli/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Bispinors/Pauli):
 
 - [Physlib.Relativity.Bispinors.Pauli.Basic](pauli-basic.md)
 - [Physlib.Relativity.Bispinors.Pauli.Relations](pauli-relations.md)

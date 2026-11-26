@@ -8,14 +8,14 @@ proof: formalized
 
 # The Levi-Civita tensor as a complex Lorentz tensor
 
-The module `Physlib.Relativity.Tensors.LeviCivita.Complex`, [Physlib/Relativity/Tensors/LeviCivita/Complex.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Complex.lean): 4 declarations, 4 with a docstring.
+The module `Physlib.Relativity.Tensors.LeviCivita.Complex`, [Physlib/Relativity/Tensors/LeviCivita/Complex.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/LeviCivita/Complex.lean): 4 declarations, 4 with a docstring.
 
 > This file complexifies the real Lorentz Levi-Civita tensor and records its components in the
 > Gaussian integer tensor basis.
 
 ## A. Definition and components
 
-**`complexLorentzTensor.leviCivita_isReindexing`**, a lemma, [line 39](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Complex.lean#L39).
+**`complexLorentzTensor.leviCivita_isReindexing`**, a lemma, [line 39](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/LeviCivita/Complex.lean#L39).
 
 > The index colors of the complexified real Levi-Civita tensor agree with four complex
 > contravariant Lorentz indices.
@@ -28,7 +28,7 @@ lemma leviCivita_isReindexing : IsReindexing
     ![Color.up, Color.up, Color.up, Color.up] id
 ```
 
-**`complexLorentzTensor.leviCivita`**, a def, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Complex.lean#L47).
+**`complexLorentzTensor.leviCivita`**, a def, [line 47](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/LeviCivita/Complex.lean#L47).
 
 > The Levi-Civita tensor `εᵘᵛᵖᵟ` as a complex Lorentz tensor, with `ε⁰¹²³ = 1`.
 
@@ -36,7 +36,7 @@ lemma leviCivita_isReindexing : IsReindexing
 noncomputable def leviCivita : ℂT[.up, .up, .up, .up]
 ```
 
-**`complexLorentzTensor.leviCivita_eq_ofGaussianInt`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Complex.lean#L56).
+**`complexLorentzTensor.leviCivita_eq_ofGaussianInt`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/LeviCivita/Complex.lean#L56).
 
 > The complex Levi-Civita tensor has the Levi-Civita symbol as its real component and zero
 > imaginary component in the standard basis.
@@ -49,7 +49,7 @@ lemma leviCivita_eq_ofGaussianInt : ε4ℂ = ofGaussianInt (fun
       (id : Fin 4 → Fin 4) : GaussianInt))
 ```
 
-**`complexLorentzTensor.leviCivita_eq_ofGaussianInt_prod`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Complex.lean#L100).
+**`complexLorentzTensor.leviCivita_eq_ofGaussianInt_prod`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/LeviCivita/Complex.lean#L100).
 
 > The components of the complex Levi-Civita tensor as the product over pairs `i < j` of the
 > sign of `b j - b i`, from `leviCivitaSymbol_eq_prod_prod_Ioi`. Unlike the determinant appearing
@@ -75,4 +75,4 @@ lemma leviCivita_eq_ofGaussianInt_prod : ε4ℂ = ofGaussianInt (fun
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/LeviCivita/Complex.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/LeviCivita/Complex.lean)
+- [Physlib/Relativity/Tensors/LeviCivita/Complex.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/LeviCivita/Complex.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Bloch Sphere
 
-The module `QuantumInfo.States.Pure.BlochSphere`, [QuantumInfo/States/Pure/BlochSphere.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BlochSphere.lean): 7 declarations, 7 with a docstring.
+The module `QuantumInfo.States.Pure.BlochSphere`, [QuantumInfo/States/Pure/BlochSphere.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/States/Pure/BlochSphere.lean): 7 declarations, 7 with a docstring.
 
 > The Bloch sphere is the unit sphere S² in ℝ³, used to represent
 > pure states of a two-level quantum system (qubit). Each point on the
@@ -35,7 +35,7 @@ The module `QuantumInfo.States.Pure.BlochSphere`, [QuantumInfo/States/Pure/Bloch
 > * M. V. Berry, Quantal phase factors accompanying adiabatic changes, Proc. R. Soc. London A 392,
 >   45–57 (1984). [ref: berry1984]
 
-**`BlochSphere`**, an abbrev, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BlochSphere.lean#L45).
+**`BlochSphere`**, an abbrev, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/States/Pure/BlochSphere.lean#L45).
 
 > The Bloch sphere: unit sphere in `EuclideanSpace ℝ (Fin 3)`.
 
@@ -43,7 +43,7 @@ The module `QuantumInfo.States.Pure.BlochSphere`, [QuantumInfo/States/Pure/Bloch
 abbrev BlochSphere
 ```
 
-**`BlochSphere.blochVecRaw`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BlochSphere.lean#L50).
+**`BlochSphere.blochVecRaw`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/States/Pure/BlochSphere.lean#L50).
 
 > The raw Bloch vector for angles (α, θ). Internal helper for `blochPoint`.
 
@@ -51,7 +51,7 @@ abbrev BlochSphere
 def blochVecRaw (α θ : ℝ) : Fin 3 → ℝ
 ```
 
-**`BlochSphere.blochVecRaw_norm`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BlochSphere.lean#L54).
+**`BlochSphere.blochVecRaw_norm`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/States/Pure/BlochSphere.lean#L54).
 
 > The Bloch vector has unit norm: sin²α(cos²θ + sin²θ) + cos²α = 1.
 
@@ -61,7 +61,7 @@ lemma blochVecRaw_norm (α θ : ℝ) :
       (blochVecRaw α θ 2) ^ 2) = 1
 ```
 
-**`BlochSphere.blochPoint`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BlochSphere.lean#L69).
+**`BlochSphere.blochPoint`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/States/Pure/BlochSphere.lean#L69).
 
 > A point on the Bloch sphere parameterized by polar angle `α` and
 > azimuthal angle `θ`.
@@ -70,7 +70,7 @@ lemma blochVecRaw_norm (α θ : ℝ) :
 def blochPoint (α θ : ℝ) : BlochSphere
 ```
 
-**`BlochSphere.blochPoint_val`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BlochSphere.lean#L75).
+**`BlochSphere.blochPoint_val`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/States/Pure/BlochSphere.lean#L75).
 
 > The underlying vector of a `blochPoint`.
 
@@ -82,7 +82,7 @@ lemma blochPoint_val (α θ : ℝ) :
 
 ## Solid angle via Van Vleck formula
 
-**`BlochSphere.solidAngle`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BlochSphere.lean#L86).
+**`BlochSphere.solidAngle`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/States/Pure/BlochSphere.lean#L86).
 
 > Solid angle of a geodesic triangle on the Bloch sphere, computed via
 > the Van Vleck formula using `Complex.arg` for full-quadrant support.
@@ -96,7 +96,7 @@ def solidAngle (p₁ p₂ p₃ : BlochSphere) : ℝ
 
 ## Dot product of Bloch vectors
 
-**`BlochSphere.dot_blochPoint`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BlochSphere.lean#L97).
+**`BlochSphere.dot_blochPoint`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/States/Pure/BlochSphere.lean#L97).
 
 > The dot product of two Bloch points expressed in angle differences.
 
@@ -114,4 +114,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [QuantumInfo/States/Pure/BlochSphere.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BlochSphere.lean)
+- [QuantumInfo/States/Pure/BlochSphere.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/States/Pure/BlochSphere.lean)

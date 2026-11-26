@@ -8,7 +8,7 @@ proof: formalized
 
 # The Poincaré group
 
-The module `PhyslibAlpha.Relativity.Poincare.Basic`, [PhyslibAlpha/Relativity/Poincare/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean): 27 declarations (2 instances with no name), 26 with a docstring.
+The module `PhyslibAlpha.Relativity.Poincare.Basic`, [PhyslibAlpha/Relativity/Poincare/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean): 27 declarations (2 instances with no name), 26 with a docstring.
 
 > The Poincaré group acts on spacetime by Lorentz transformations and translations.
 
@@ -52,7 +52,7 @@ The module `PhyslibAlpha.Relativity.Poincare.Basic`, [PhyslibAlpha/Relativity/Po
 
 > - `PoincareGroup.act` : the action `(g • u) x = u (g⁻¹ x)` on functions of spacetime.
 
-**`PoincareGroup`**, a structure, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L74).
+**`PoincareGroup`**, a structure, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L74).
 
 > The Poincaré group of `SpaceTime d`. An element `⟨a, Λ⟩` acts by `x ↦ Λ x + a`.
 
@@ -64,13 +64,13 @@ structure PoincareGroup (d : ℕ) where
   lorentz : LorentzGroup d
 ```
 
-**An instance with no name**, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L86).
+**An instance with no name**, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L86).
 
 ```lean
 instance : Group (PoincareGroup d)
 ```
 
-**`PoincareGroup.translation_mul`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L113).
+**`PoincareGroup.translation_mul`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L113).
 
 > The translation part of a product.
 
@@ -79,7 +79,7 @@ lemma translation_mul (g h : PoincareGroup d) :
     (g * h).translation = g.translation + g.lorentz • h.translation
 ```
 
-**`PoincareGroup.lorentz_mul`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L117).
+**`PoincareGroup.lorentz_mul`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L117).
 
 > The Lorentz part of a product.
 
@@ -87,7 +87,7 @@ lemma translation_mul (g h : PoincareGroup d) :
 lemma lorentz_mul (g h : PoincareGroup d) : (g * h).lorentz = g.lorentz * h.lorentz
 ```
 
-**`PoincareGroup.translation_inv`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L120).
+**`PoincareGroup.translation_inv`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L120).
 
 > The translation part of an inverse.
 
@@ -96,7 +96,7 @@ lemma translation_inv (g : PoincareGroup d) :
     g⁻¹.translation = -(g.lorentz⁻¹ • g.translation)
 ```
 
-**`PoincareGroup.lorentz_inv`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L124).
+**`PoincareGroup.lorentz_inv`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L124).
 
 > The Lorentz part of an inverse.
 
@@ -104,7 +104,7 @@ lemma translation_inv (g : PoincareGroup d) :
 lemma lorentz_inv (g : PoincareGroup d) : g⁻¹.lorentz = g.lorentz⁻¹
 ```
 
-**An instance with no name**, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L131).
+**An instance with no name**, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L131).
 
 > The Poincaré group acts on spacetime by `x ↦ Λ x + a`.
 
@@ -112,7 +112,7 @@ lemma lorentz_inv (g : PoincareGroup d) : g⁻¹.lorentz = g.lorentz⁻¹
 instance : MulAction (PoincareGroup d) (SpaceTime d)
 ```
 
-**`PoincareGroup.smul_def`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L143).
+**`PoincareGroup.smul_def`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L143).
 
 > The action on a point.
 
@@ -121,7 +121,7 @@ lemma smul_def (g : PoincareGroup d) (x : SpaceTime d) :
     g • x = g.lorentz • x + g.translation
 ```
 
-**`PoincareGroup.toHomeomorph`**, a def, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L147).
+**`PoincareGroup.toHomeomorph`**, a def, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L147).
 
 > Each element is a homeomorphism of spacetime.
 
@@ -129,7 +129,7 @@ lemma smul_def (g : PoincareGroup d) (x : SpaceTime d) :
 def toHomeomorph (g : PoincareGroup d) : SpaceTime d ≃ₜ SpaceTime d
 ```
 
-**`PoincareGroup.toHomeomorph_apply`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L160).
+**`PoincareGroup.toHomeomorph_apply`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L160).
 
 > The homeomorphism acts as the point action.
 
@@ -137,7 +137,7 @@ def toHomeomorph (g : PoincareGroup d) : SpaceTime d ≃ₜ SpaceTime d
 lemma toHomeomorph_apply (g : PoincareGroup d) (x : SpaceTime d) : g.toHomeomorph x = g • x
 ```
 
-**`PoincareGroup.toHomeomorph_symm_apply`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L163).
+**`PoincareGroup.toHomeomorph_symm_apply`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L163).
 
 > The inverse homeomorphism acts as the inverse point action.
 
@@ -146,7 +146,7 @@ lemma toHomeomorph_symm_apply (g : PoincareGroup d) (x : SpaceTime d) :
     g.toHomeomorph.symm x = g⁻¹ • x
 ```
 
-**`PoincareGroup.isCompact_smul`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L167).
+**`PoincareGroup.isCompact_smul`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L167).
 
 > The image of a compact set under a Poincaré transformation is compact.
 
@@ -155,7 +155,7 @@ lemma isCompact_smul (g : PoincareGroup d) {K : Set (SpaceTime d)} (hK : IsCompa
     IsCompact (g • K)
 ```
 
-**`PoincareGroup.IsOrthochronous`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L178).
+**`PoincareGroup.IsOrthochronous`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L178).
 
 > A Poincaré element is orthochronous when its Lorentz part preserves the direction of time.
 
@@ -163,7 +163,7 @@ lemma isCompact_smul (g : PoincareGroup d) {K : Set (SpaceTime d)} (hK : IsCompa
 def IsOrthochronous (g : PoincareGroup d) : Prop
 ```
 
-**`PoincareGroup.isOrthochronous_one`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L181).
+**`PoincareGroup.isOrthochronous_one`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L181).
 
 > The identity is orthochronous.
 
@@ -171,7 +171,7 @@ def IsOrthochronous (g : PoincareGroup d) : Prop
 lemma isOrthochronous_one : IsOrthochronous (1 : PoincareGroup d)
 ```
 
-**`PoincareGroup.IsOrthochronous.mul`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L185).
+**`PoincareGroup.IsOrthochronous.mul`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L185).
 
 > Products of orthochronous elements are orthochronous.
 
@@ -180,7 +180,7 @@ lemma IsOrthochronous.mul {g h : PoincareGroup d} (hg : IsOrthochronous g)
     (hh : IsOrthochronous h) : IsOrthochronous (g * h)
 ```
 
-**`PoincareGroup.IsOrthochronous.inv`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L190).
+**`PoincareGroup.IsOrthochronous.inv`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L190).
 
 > Inverses of orthochronous elements are orthochronous.
 
@@ -189,7 +189,7 @@ lemma IsOrthochronous.inv {g : PoincareGroup d} (hg : IsOrthochronous g) :
     IsOrthochronous g⁻¹
 ```
 
-**`PoincareGroup.pointReflection`**, a def, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L199).
+**`PoincareGroup.pointReflection`**, a def, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L199).
 
 > The point reflection `x ↦ p - x` as a Poincaré transformation.
 
@@ -197,7 +197,7 @@ lemma IsOrthochronous.inv {g : PoincareGroup d} (hg : IsOrthochronous g) :
 def pointReflection (p : SpaceTime d) : PoincareGroup d
 ```
 
-**`PoincareGroup.pointReflection_smul`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L202).
+**`PoincareGroup.pointReflection_smul`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L202).
 
 > The point reflection sends `x` to `p - x`.
 
@@ -205,7 +205,7 @@ def pointReflection (p : SpaceTime d) : PoincareGroup d
 lemma pointReflection_smul (p x : SpaceTime d) : pointReflection p • x = p - x
 ```
 
-**`PoincareGroup.not_isOrthochronous_pointReflection`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L209).
+**`PoincareGroup.not_isOrthochronous_pointReflection`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L209).
 
 > The point reflection is not orthochronous.
 
@@ -214,7 +214,7 @@ lemma not_isOrthochronous_pointReflection (p : SpaceTime d) :
     ¬ (pointReflection p).IsOrthochronous
 ```
 
-**`PoincareGroup.act`**, a def, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L223).
+**`PoincareGroup.act`**, a def, [line 223](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L223).
 
 > The action on functions of spacetime: `(g • u) x = u (g⁻¹ x)`.
 
@@ -222,7 +222,7 @@ lemma not_isOrthochronous_pointReflection (p : SpaceTime d) :
 def act (g : PoincareGroup d) (u : SpaceTime d → V) : SpaceTime d → V
 ```
 
-**`PoincareGroup.act_apply`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L226).
+**`PoincareGroup.act_apply`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L226).
 
 > The value of the transformed function.
 
@@ -231,7 +231,7 @@ lemma act_apply (g : PoincareGroup d) (u : SpaceTime d → V) (x : SpaceTime d) 
     act g u x = u (g⁻¹ • x)
 ```
 
-**`PoincareGroup.act_one`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L230).
+**`PoincareGroup.act_one`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L230).
 
 > The identity acts trivially.
 
@@ -239,7 +239,7 @@ lemma act_apply (g : PoincareGroup d) (u : SpaceTime d → V) (x : SpaceTime d) 
 lemma act_one (u : SpaceTime d → V) : act (1 : PoincareGroup d) u = u
 ```
 
-**`PoincareGroup.act_mul`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L235).
+**`PoincareGroup.act_mul`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L235).
 
 > The action is a left action.
 
@@ -248,7 +248,7 @@ lemma act_mul (g h : PoincareGroup d) (u : SpaceTime d → V) :
     act (g * h) u = act g (act h u)
 ```
 
-**`PoincareGroup.act_inv_act`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L241).
+**`PoincareGroup.act_inv_act`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L241).
 
 > The action of an element and its inverse cancel.
 
@@ -256,7 +256,7 @@ lemma act_mul (g h : PoincareGroup d) (u : SpaceTime d → V) :
 lemma act_inv_act (g : PoincareGroup d) (u : SpaceTime d → V) : act g⁻¹ (act g u) = u
 ```
 
-**`PoincareGroup.act_add`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L245).
+**`PoincareGroup.act_add`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L245).
 
 > The action commutes with addition.
 
@@ -265,7 +265,7 @@ lemma act_add [AddCommGroup V] (g : PoincareGroup d) (u v : SpaceTime d → V) :
     act g (u + v) = act g u + act g v
 ```
 
-**`PoincareGroup.act_smul`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L249).
+**`PoincareGroup.act_smul`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L249).
 
 > The action commutes with scalar multiplication.
 
@@ -274,7 +274,7 @@ lemma act_smul {R : Type*} [SMul R V] (g : PoincareGroup d) (c : R) (u : SpaceTi
     act g (c • u) = c • act g u
 ```
 
-**`PoincareGroup.tsupport_act`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean#L256).
+**`PoincareGroup.tsupport_act`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean#L256).
 
 > The support of the transformed function is the image of the support.
 
@@ -289,4 +289,4 @@ lemma tsupport_act [Zero V] (g : PoincareGroup d) (u : SpaceTime d → V) :
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/Poincare/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Basic.lean)
+- [PhyslibAlpha/Relativity/Poincare/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Poincare/Basic.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Criteria for essential self-adjointness
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.RealAnalytic`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean): 5 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.RealAnalytic`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean): 5 declarations, 3 with a docstring.
 
 > Criteria for essential self-adjointness: trivial deficiency spaces, eigenbases.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.RealAnalytic
 
 ## A. Von Neumann's defect criterion
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DefectIndexCertificate`**, a structure, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean#L55).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DefectIndexCertificate`**, a structure, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean#L55).
 
 > A densely defined symmetric operator whose deficiency spaces at `± i` are trivial.
 
@@ -44,7 +44,7 @@ structure DefectIndexCertificate (T : H →ₗ.[ℂ] H) where
   minus : T.defectNumber (-Complex.I) = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DefectIndexCertificate.essentiallySelfAdjoint`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean#L61).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DefectIndexCertificate.essentiallySelfAdjoint`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean#L61).
 
 ```lean
 lemma DefectIndexCertificate.essentiallySelfAdjoint
@@ -52,7 +52,7 @@ lemma DefectIndexCertificate.essentiallySelfAdjoint
     T.IsEssentiallySelfAdjoint
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DefectIndexCertificate.closure_isSelfAdjoint`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean#L66).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DefectIndexCertificate.closure_isSelfAdjoint`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean#L66).
 
 ```lean
 lemma DefectIndexCertificate.closure_isSelfAdjoint
@@ -60,7 +60,7 @@ lemma DefectIndexCertificate.closure_isSelfAdjoint
     IsSelfAdjoint T.closure
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.ofSelfAdjoint_isEssentiallySelfAdjoint`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean#L72).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.ofSelfAdjoint_isEssentiallySelfAdjoint`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean#L72).
 
 > A self-adjoint operator is automatically an essentially self-adjoint core for itself.
 
@@ -79,7 +79,7 @@ lemma ofSelfAdjoint_isEssentiallySelfAdjoint
 > arbitrary `y : H` (with coefficients divided by `λ - z`) produces, in the limit of its partial
 > sums, an explicit preimage of `y` under `T.closure ∓ i`.
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.isEssentiallySelfAdjoint_of_hilbertBasis_eigenvectors`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean#L97).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.isEssentiallySelfAdjoint_of_hilbertBasis_eigenvectors`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean#L97).
 
 > **Essential self-adjointness from a Hilbert basis of eigenvectors.** If `T`'s domain is exactly
 > the (algebraic) span of a Hilbert basis `e`, and each basis vector `e i` is an eigenvector of `T`
@@ -95,6 +95,7 @@ lemma isEssentiallySelfAdjoint_of_hilbertBasis_eigenvectors
 
 ## Depends on
 
+- [Essentially self-adjoint operators](../../../../physlib/quantummechanics/operators/essentiallyselfadjoint.md)
 - [Spectral theory for closed operators](../../../../physlib/quantummechanics/operators/spectraltheory/basic.md)
 
 ## Proof depends on
@@ -103,4 +104,4 @@ lemma isEssentiallySelfAdjoint_of_hilbertBasis_eigenvectors
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Saturation of the uncertainty relation in the maximal current state
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.Saturation`, [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean): 5 declarations, 5 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.Saturation`, [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean): 5 declarations, 5 with a docstring; 1 private, not shown.
 
 ## i. Overview
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.Satur
 
 ## A. The fluctuations
 
-**`CondensedMatter.TightBindingChain.inner_energyFluctuation_maxCurrentState`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean#L55).
+**`CondensedMatter.TightBindingChain.inner_energyFluctuation_maxCurrentState`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean#L55).
 
 > The energy fluctuation of the maximal current state, site by site.
 
@@ -49,7 +49,7 @@ lemma inner_energyFluctuation_maxCurrentState (m : Fin T.N) :
   ring
 ```
 
-**`CondensedMatter.TightBindingChain.inner_positionFluctuation_maxCurrentState`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean#L67).
+**`CondensedMatter.TightBindingChain.inner_positionFluctuation_maxCurrentState`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean#L67).
 
 > The position fluctuation of the maximal current state, site by site.
 
@@ -68,7 +68,7 @@ lemma inner_positionFluctuation_maxCurrentState (m : Fin T.N) :
 
 ## B. Saturation
 
-**`CondensedMatter.TightBindingChain.centeredGramDefect_maxCurrentState_eq_zero_iff`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean#L106).
+**`CondensedMatter.TightBindingChain.centeredGramDefect_maxCurrentState_eq_zero_iff`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean#L106).
 
 > In the maximal current state of a chain with `N ≥ 2` sites and hopping `t ≠ 0`, the centered
 > Gram defect of `H` and `X` vanishes exactly for `N = 2` and `N = 3`.
@@ -79,7 +79,7 @@ lemma centeredGramDefect_maxCurrentState_eq_zero_iff (ht : T.t ≠ 0) (hN : 2 �
       T.positionObservable = 0 ↔ T.N = 2 ∨ T.N = 3
 ```
 
-**`CondensedMatter.TightBindingChain.robertson_schrodinger_maxCurrentState_eq_iff`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean#L198).
+**`CondensedMatter.TightBindingChain.robertson_schrodinger_maxCurrentState_eq_iff`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean#L198).
 
 > **Saturation.** In the maximal current state of a chain with `N ≥ 2` sites and hopping
 > `t ≠ 0`, the energy–position uncertainty relation is an equality exactly for `N = 2, 3`.
@@ -92,7 +92,7 @@ lemma robertson_schrodinger_maxCurrentState_eq_iff (ht : T.t ≠ 0) (hN : 2 ≤ 
         variance T.maxCurrentVectorState T.positionObservable ↔ T.N = 2 ∨ T.N = 3
 ```
 
-**`CondensedMatter.TightBindingChain.robertson_schrodinger_maxCurrentState_lt`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean#L208).
+**`CondensedMatter.TightBindingChain.robertson_schrodinger_maxCurrentState_lt`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean#L208).
 
 > From four sites on, the uncertainty relation of the maximal current state is strict.
 
@@ -115,4 +115,4 @@ lemma robertson_schrodinger_maxCurrentState_lt (ht : T.t ≠ 0) (hN : 4 ≤ T.N)
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean)

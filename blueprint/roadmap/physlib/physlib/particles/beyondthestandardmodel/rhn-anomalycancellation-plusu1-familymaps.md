@@ -8,12 +8,12 @@ proof: formalized
 
 # Family Maps for SM with RHN
 
-The module `Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.FamilyMaps`, [Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/FamilyMaps.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/FamilyMaps.lean): 3 declarations, 3 with a docstring.
+The module `Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.FamilyMaps`, [Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/FamilyMaps.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/FamilyMaps.lean): 3 declarations, 3 with a docstring.
 
 > We give some properties of the family maps for the SM with RHN, in particular, we
 > define family universal maps in the case of `LinSols`, `QuadSols`, and `Sols`.
 
-**`SMRHN.PlusU1.familyUniversalLinear`**, a def, [line 30](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/FamilyMaps.lean#L30).
+**`SMRHN.PlusU1.familyUniversalLinear`**, a def, [line 30](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/FamilyMaps.lean#L30).
 
 > The family universal maps on `LinSols`.
 
@@ -22,7 +22,7 @@ def familyUniversalLinear (n : ℕ) :
     (PlusU1 1).LinSols →ₗ[ℚ] (PlusU1 n).LinSols
 ```
 
-**`SMRHN.PlusU1.familyUniversalQuad`**, a def, [line 42](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/FamilyMaps.lean#L42).
+**`SMRHN.PlusU1.familyUniversalQuad`**, a def, [line 42](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/FamilyMaps.lean#L42).
 
 > The family universal maps on `QuadSols`.
 
@@ -31,7 +31,7 @@ def familyUniversalQuad (n : ℕ) :
     (PlusU1 1).QuadSols → (PlusU1 n).QuadSols
 ```
 
-**`SMRHN.PlusU1.familyUniversalAF`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/FamilyMaps.lean#L53).
+**`SMRHN.PlusU1.familyUniversalAF`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/FamilyMaps.lean#L53).
 
 > The family universal maps on `Sols`.
 
@@ -47,4 +47,4 @@ def familyUniversalAF (n : ℕ) :
 
 ## Sources
 
-- [Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/FamilyMaps.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/FamilyMaps.lean)
+- [Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/FamilyMaps.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/FamilyMaps.lean)

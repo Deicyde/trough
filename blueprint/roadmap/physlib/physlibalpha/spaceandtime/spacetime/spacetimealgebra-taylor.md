@@ -1,33 +1,36 @@
 ---
 declaration: module
 origin: cited
-lean: SpaceTimeAlgebra.star_ofDerivValues, SpaceTimeAlgebra.ofDerivValues_sum, SpaceTimeAlgebra.taylorMatrix, SpaceTimeAlgebra.taylorMatrix_apply, SpaceTimeAlgebra.star_taylorMatrix, SpaceTimeAlgebra.trace_taylorMatrix, SpaceTimeAlgebra.map_constantCoeff_iteratedPDeriv_taylorMatrix, SpaceTimeAlgebra.derivValueMatrix
+lean: SpaceTimeAlgebra.taylorMatrix, SpaceTimeAlgebra.taylorMatrix_apply, SpaceTimeAlgebra.map_constantCoeff_iteratedPDeriv_taylorMatrix, SpaceTimeAlgebra.derivValueMatrix, SpaceTimeAlgebra.derivValueMatrix_cons, SpaceTimeAlgebra.derivValueMatrix_add, SpaceTimeAlgebra.derivValueMatrix_real_smul, SpaceTimeAlgebra.derivValueMatrix_zero_right
 statement: formalized
 proof: formalized
 ---
 
-# Taylor determinacy and completeness of jets
+# Taylor data of matrices of jets
 
-The module `PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Taylor`, [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean): 13 declarations, 3 with a docstring.
+The module `PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Taylor`, [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean): 11 declarations, 9 with a docstring.
+
+> Matrices of jets are determined by, and can be built from, their base-point Taylor data.
 
 ## i. Overview
 
-> A jet is determined by the base-point values of its iterated derivatives, and a jet all of
-> whose first derivatives vanish is the constant jet of its value. These are the two facts
-> that make the jets of a matrix gauge group a faithful package of local gauge data, in the
-> sense of `LocalGaugeData.Faithful`. Conversely every family of base-point Taylor data is
-> realized by a jet, `ofDerivValues`, and entrywise by a matrix of jets, `taylorMatrix`: this
-> is the Taylor completeness half of `LocalGaugeData.Free`. In the other direction,
-> `derivValueMatrix` reads off the base-point Taylor data of a matrix of jets.
+> A jet is determined by the base-point values of its iterated derivatives, and every family of
+> such values is realized by a jet, `SpaceTimeAlgebra.ofDerivValues` (both in Physlib). This file
+> carries these two facts, Taylor determinacy and Taylor completeness, over to matrices of jets
+> entrywise. `taylorMatrix` builds the matrix of jets with prescribed base-point Taylor data, and
+> `derivValueMatrix` reads the base-point Taylor data off a matrix of jets. They are what make a
+> Lie algebra jet of a matrix gauge group determined by, and freely prescribed through, its
+> base-point Taylor data.
 
 ## ii. Key results
 
-> - `SpaceTimeAlgebra.ext_of_constantCoeff_iteratedPDeriv` : Taylor determinacy.
-> - `SpaceTimeAlgebra.eq_C_of_pderiv_eq_zero` : a jet with vanishing derivatives is constant.
-> - `SpaceTimeAlgebra.ofDerivValues` :
->   Taylor completeness.
-> - `SpaceTimeAlgebra.taylorMatrix` : Taylor completeness for matrices of jets.
+> - `SpaceTimeAlgebra.taylorMatrix` : the matrix of jets with prescribed base-point Taylor data.
+> - `SpaceTimeAlgebra.map_constantCoeff_iteratedPDeriv_taylorMatrix` : Taylor completeness for
+>   matrices of jets.
 > - `SpaceTimeAlgebra.derivValueMatrix` : the base-point Taylor data of a matrix of jets.
+> - `SpaceTimeAlgebra.derivValueMatrix_eq_smul_map_coeff` : the base-point derivative along
+>   `s` is `s!` times the matrix of Taylor coefficients of `x^s`.
+> - `SpaceTimeAlgebra.matrix_ext_of_derivValueMatrix` : Taylor determinacy for matrices of jets.
 
 ## iv. References
 
@@ -35,21 +38,7 @@ The module `PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Taylor`, [Physl
 
 ## A. Taylor completeness
 
-**`SpaceTimeAlgebra.star_ofDerivValues`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L55).
-
-```lean
-lemma star_ofDerivValues (f : Multiset (Fin 1 ⊕ Fin 3) → ℂ) :
-    star (ofDerivValues f) = ofDerivValues fun s => star (f s)
-```
-
-**`SpaceTimeAlgebra.ofDerivValues_sum`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L61).
-
-```lean
-lemma ofDerivValues_sum {ι : Type} (t : Finset ι) (f : ι → Multiset (Fin 1 ⊕ Fin 3) → ℂ) :
-    ofDerivValues (fun s => ∑ i ∈ t, f i s) = ∑ i ∈ t, ofDerivValues (f i)
-```
-
-**`SpaceTimeAlgebra.taylorMatrix`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L67).
+**`SpaceTimeAlgebra.taylorMatrix`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L59).
 
 > The matrix of jets with prescribed base-point Taylor data `M`, entrywise.
 
@@ -58,28 +47,16 @@ noncomputable def taylorMatrix {κ : Type} (M : Multiset (Fin 1 ⊕ Fin 3) → M
     Matrix κ κ SpaceTimeAlgebra
 ```
 
-**`SpaceTimeAlgebra.taylorMatrix_apply`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L71).
+**`SpaceTimeAlgebra.taylorMatrix_apply`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L64).
+
+> An entry of `taylorMatrix M` is the jet with the Taylor data of that entry.
 
 ```lean
 lemma taylorMatrix_apply {κ : Type} (M : Multiset (Fin 1 ⊕ Fin 3) → Matrix κ κ ℂ) (i j : κ) :
     taylorMatrix M i j = ofDerivValues fun s => M s i j
 ```
 
-**`SpaceTimeAlgebra.star_taylorMatrix`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L75).
-
-```lean
-lemma star_taylorMatrix {κ : Type} {M : Multiset (Fin 1 ⊕ Fin 3) → Matrix κ κ ℂ}
-    (hM : ∀ s, star (M s) = M s) : star (taylorMatrix M) = taylorMatrix M
-```
-
-**`SpaceTimeAlgebra.trace_taylorMatrix`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L81).
-
-```lean
-lemma trace_taylorMatrix {κ : Type} [Fintype κ] {M : Multiset (Fin 1 ⊕ Fin 3) → Matrix κ κ ℂ}
-    (hM : ∀ s, (M s).trace = 0) : (taylorMatrix M).trace = 0
-```
-
-**`SpaceTimeAlgebra.map_constantCoeff_iteratedPDeriv_taylorMatrix`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L89).
+**`SpaceTimeAlgebra.map_constantCoeff_iteratedPDeriv_taylorMatrix`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L69).
 
 > The base-point Taylor data of `taylorMatrix M` are `M`, entrywise.
 
@@ -91,7 +68,7 @@ lemma map_constantCoeff_iteratedPDeriv_taylorMatrix {κ : Type}
 
 ## B. Base-point derivatives of matrices of jets
 
-**`SpaceTimeAlgebra.derivValueMatrix`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L108).
+**`SpaceTimeAlgebra.derivValueMatrix`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L88).
 
 > The base-point values of the iterated derivatives of a matrix of jets along a multiset
 > of directions, taken entrywise. These are the Taylor coefficients up to the factorial
@@ -102,7 +79,9 @@ noncomputable def derivValueMatrix (s : Multiset (Fin 1 ⊕ Fin 3))
     (A : Matrix κ κ SpaceTimeAlgebra) : Matrix κ κ ℂ
 ```
 
-**`SpaceTimeAlgebra.derivValueMatrix_cons`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L112).
+**`SpaceTimeAlgebra.derivValueMatrix_cons`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L93).
+
+> One more direction in `s` differentiates the matrix entrywise first.
 
 ```lean
 lemma derivValueMatrix_cons (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3))
@@ -110,14 +89,18 @@ lemma derivValueMatrix_cons (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 
     derivValueMatrix (μ ::ₘ s) A = derivValueMatrix s (A.map (pderiv μ))
 ```
 
-**`SpaceTimeAlgebra.derivValueMatrix_add`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L118).
+**`SpaceTimeAlgebra.derivValueMatrix_add`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L100).
+
+> The base-point Taylor data of a matrix of jets are additive.
 
 ```lean
 lemma derivValueMatrix_add (s : Multiset (Fin 1 ⊕ Fin 3)) (A B : Matrix κ κ SpaceTimeAlgebra) :
     derivValueMatrix s (A + B) = derivValueMatrix s A + derivValueMatrix s B
 ```
 
-**`SpaceTimeAlgebra.derivValueMatrix_real_smul`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L123).
+**`SpaceTimeAlgebra.derivValueMatrix_real_smul`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L106).
+
+> The base-point Taylor data of a matrix of jets commute with real scaling.
 
 ```lean
 lemma derivValueMatrix_real_smul (s : Multiset (Fin 1 ⊕ Fin 3)) (r : ℝ)
@@ -125,23 +108,45 @@ lemma derivValueMatrix_real_smul (s : Multiset (Fin 1 ⊕ Fin 3)) (r : ℝ)
     derivValueMatrix s (r • A) = r • derivValueMatrix s A
 ```
 
-**`SpaceTimeAlgebra.derivValueMatrix_zero_right`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L132).
+**`SpaceTimeAlgebra.derivValueMatrix_zero_right`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L115).
 
 ```lean
 lemma derivValueMatrix_zero_right (s : Multiset (Fin 1 ⊕ Fin 3)) :
     derivValueMatrix s (0 : Matrix κ κ SpaceTimeAlgebra) = 0
 ```
 
-**`SpaceTimeAlgebra.derivValueMatrix_zero`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L140).
+**`SpaceTimeAlgebra.derivValueMatrix_zero`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L123).
 
 ```lean
 lemma derivValueMatrix_zero (A : Matrix κ κ SpaceTimeAlgebra) :
     derivValueMatrix 0 A = (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix A
 ```
 
+**`SpaceTimeAlgebra.derivValueMatrix_eq_smul_map_coeff`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L130).
+
+> The base-point derivative of a matrix of jets along `s` is `s!` times its matrix of
+> Taylor coefficients of `x^s`, with `s!` the product of the factorials of the
+> multiplicities in `s`.
+
+```lean
+lemma derivValueMatrix_eq_smul_map_coeff (s : Multiset (Fin 1 ⊕ Fin 3))
+    (A : Matrix κ κ SpaceTimeAlgebra) :
+    derivValueMatrix s A = ((∏ ν, (s.count ν).factorial : ℕ) : ℝ) •
+      A.map (coeff (Multiset.toFinsupp s))
+```
+
+**`SpaceTimeAlgebra.matrix_ext_of_derivValueMatrix`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean#L140).
+
+> A matrix of jets is determined by its base-point derivatives.
+
+```lean
+lemma matrix_ext_of_derivValueMatrix {A B : Matrix κ κ SpaceTimeAlgebra}
+    (h : ∀ s, derivValueMatrix s A = derivValueMatrix s B) : A = B
+```
+
 ## Depends on
 
-- [Complex conjugation in the spacetime algebra](../../../physlib/spaceandtime/spacetime/spacetimealgebra-star.md)
+- [The spacetime algebra](../../../physlib/spaceandtime/spacetime/spacetimealgebra-basic.md)
 
 ## Proof depends on
 
@@ -149,4 +154,4 @@ lemma derivValueMatrix_zero (A : Matrix κ κ SpaceTimeAlgebra) :
 
 ## Sources
 
-- [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean)
+- [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Smooth radial lifts
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.RadialLift`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean): 10 declarations, 6 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.RadialLift`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean): 10 declarations, 6 with a docstring.
 
 > A smooth radial source in `d` space dimensions and its lift to `d + 2` dimensions.
 
@@ -54,7 +54,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.Radia
 > - `transportSource_spaceThree` : a radial source on the Euclidean three-space is radial on
 >   `Space 3`.
 
-**`KleinGordon.radialSource`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L81).
+**`KleinGordon.radialSource`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L81).
 
 > The radial source `(s, x) ↦ P (s, ‖x‖²)` built from a test function `P` of time and the squared
 > radius.
@@ -64,14 +64,14 @@ def radialSource (P : 𝓓((⊤ : TopologicalSpace.Opens (ℝ × ℝ)), ℂ)) :
     𝓓((⊤ : TopologicalSpace.Opens (ℝ × V)), ℂ)
 ```
 
-**`KleinGordon.radialSource_apply`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L101).
+**`KleinGordon.radialSource_apply`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L101).
 
 ```lean
 lemma radialSource_apply (P : 𝓓((⊤ : TopologicalSpace.Opens (ℝ × ℝ)), ℂ)) (s : ℝ) (x : V) :
     radialSource V P (s, x) = P (s, ‖x‖ ^ 2)
 ```
 
-**`KleinGordon.integral_tail_sq`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L107).
+**`KleinGordon.integral_tail_sq`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L107).
 
 > The tail integral of `u P'(u²)` is `-P(ρ²) / 2` for a smooth compactly supported profile.
 
@@ -80,7 +80,7 @@ lemma integral_tail_sq {P : ℝ → ℂ} (hP : ContDiff ℝ ∞ P) (hc : HasComp
     ∫ u in Ioi ρ, u • deriv P (u ^ 2) = -(P (ρ ^ 2) / 2)
 ```
 
-**`KleinGordon.integral_plane_lift`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L152).
+**`KleinGordon.integral_plane_lift`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L152).
 
 > The plane integral of the lift at a given radius: the lifted profile integrates to the
 > original profile.
@@ -92,7 +92,7 @@ lemma integral_plane_lift {g : ℝ → ℂ} (hg : ContDiff ℝ ∞ g) (hc : HasC
       g (ρ ^ 2)
 ```
 
-**`KleinGordon.liftProfile`**, a def, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L199).
+**`KleinGordon.liftProfile`**, a def, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L199).
 
 > The lift of a profile to two more space dimensions: `-(1/π) ∂_q P`.
 
@@ -101,21 +101,21 @@ def liftProfile (P : 𝓓((⊤ : TopologicalSpace.Opens (ℝ × ℝ)), ℂ)) :
     𝓓((⊤ : TopologicalSpace.Opens (ℝ × ℝ)), ℂ)
 ```
 
-**`KleinGordon.deriv_slice_eq`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L204).
+**`KleinGordon.deriv_slice_eq`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L204).
 
 ```lean
 lemma deriv_slice_eq (P : 𝓓((⊤ : TopologicalSpace.Opens (ℝ × ℝ)), ℂ)) (s q : ℝ) :
     deriv (fun q' : ℝ => P (s, q')) q = lineDeriv ℝ P (s, q) ((0 : ℝ), (1 : ℝ))
 ```
 
-**`KleinGordon.liftProfile_apply`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L212).
+**`KleinGordon.liftProfile_apply`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L212).
 
 ```lean
 lemma liftProfile_apply (P : 𝓓((⊤ : TopologicalSpace.Opens (ℝ × ℝ)), ℂ)) (s q : ℝ) :
     liftProfile P (s, q) = (-(1 / Real.pi : ℝ) : ℝ) • deriv (fun q' : ℝ => P (s, q')) q
 ```
 
-**`KleinGordon.radialSource_marginal`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L228).
+**`KleinGordon.radialSource_marginal`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L228).
 
 > **The lifted radial source integrates to the original one.** The integral over the plane of the
 > lift `-(1/π) ∂_q P` is `P`.
@@ -127,7 +127,7 @@ lemma radialSource_marginal (A : WithLp 2 (E × EuclideanSpace ℝ (Fin 2)) ≃�
       radialSource E' (liftProfile P) (s, A (WithLp.toLp 2 (x, y)))
 ```
 
-**`KleinGordon.hasDerivAt_solution_radialSource`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L250).
+**`KleinGordon.hasDerivAt_solution_radialSource`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L250).
 
 > **Dimension raising for a smooth radial source.** The retarded solution in `d + 2` space
 > dimensions of the lift `-(1/π) ∂_q P` of the radial source `P(s, ‖x‖²)` is `-(1 / (2π ρ)) ∂ρ` of the
@@ -142,7 +142,7 @@ lemma hasDerivAt_solution_radialSource {μ : ℝ} (hμ : 0 ≤ μ) (d : ℕ)
         ((spaceSplit d).symm (WithLp.toLp 2 (ρ • e, 0)))) ρ
 ```
 
-**`KleinGordon.transportSource_spaceThree`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L263).
+**`KleinGordon.transportSource_spaceThree`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean#L263).
 
 ```lean
 lemma transportSource_spaceThree (Q : 𝓓((⊤ : TopologicalSpace.Opens (ℝ × ℝ)), ℂ)) :
@@ -155,4 +155,4 @@ lemma transportSource_spaceThree (Q : 𝓓((⊤ : TopologicalSpace.Opens (ℝ ×
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean)

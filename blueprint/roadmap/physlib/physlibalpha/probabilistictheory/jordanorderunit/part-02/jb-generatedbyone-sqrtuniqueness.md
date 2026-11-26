@@ -8,7 +8,7 @@ proof: formalized
 
 # Uniqueness of the positive square root
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JB.GeneratedByOne.SqrtUniqueness`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean): 10 declarations, 10 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JB.GeneratedByOne.SqrtUniqueness`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean): 10 declarations, 10 with a docstring.
 
 > A nonnegative square root of an observable equals its functional-calculus square root.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JB.GeneratedByOne.S
 
 ## A. The ambient-independent polynomial evaluation
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.jordanPolyEval`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L61).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.jordanPolyEval`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L61).
 
 > Evaluate a real polynomial at a Jordan element by repeated Jordan multiplication. Unlike
 > `Polynomial.aeval (closedGenerator x) p`, this definition makes no reference to any particular
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JB.GeneratedByOne.S
 def jordanPolyEval (x : E) (p : Polynomial ℝ) : E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.aevalCoe_eq_jordanPolyEval`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L65).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.aevalCoe_eq_jordanPolyEval`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L65).
 
 > Evaluating a polynomial in any `C(u)` containing `x` gives its Jordan evaluation at `x`.
 
@@ -50,7 +50,7 @@ lemma aevalCoe_eq_jordanPolyEval {u : E} (x : ClosedGeneratedByOne u) (p : Polyn
     (Polynomial.aeval x p : E) = jordanPolyEval (x : E) p
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.jordanPolyEval_add`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L74).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.jordanPolyEval_add`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L74).
 
 > `jordanPolyEval` is additive in the polynomial argument.
 
@@ -59,7 +59,7 @@ lemma jordanPolyEval_add (x : E) (p q : Polynomial ℝ) :
     jordanPolyEval x (p + q) = jordanPolyEval x p + jordanPolyEval x q
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.jordanPolyEval_comp_sq`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L85).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.jordanPolyEval_comp_sq`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L85).
 
 > The key algebraic identity behind square-root uniqueness: substituting `X ^ 2` before
 > evaluating at `v` agrees with evaluating directly at `v * v`. This is a purely algebraic identity,
@@ -72,7 +72,7 @@ lemma jordanPolyEval_comp_sq (v : E) (p : Polynomial ℝ) :
 
 ## B. Approximation of the polynomial calculus
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.jordanCfc_toContinuousMapOnAlgHom`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L110).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.jordanCfc_toContinuousMapOnAlgHom`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L110).
 
 > `jordanCfc` applied to a polynomial function is exactly `jordanPolyEval` at the same
 > polynomial. This connects the ambient-independent algebraic evaluation of §A to the intrinsic
@@ -83,7 +83,7 @@ lemma jordanCfc_toContinuousMapOnAlgHom [Nontrivial E] (a : E) (p : Polynomial �
     jordanCfc a (Polynomial.toContinuousMapOnAlgHom (jordanSpectrum a) p) = jordanPolyEval a p
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.norm_jordanPolyEval_sub_jordanCfc_le`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L133).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.norm_jordanPolyEval_sub_jordanCfc_le`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L133).
 
 > Norm bound transporting a uniform polynomial approximation of a continuous target function
 > into a norm bound between `jordanPolyEval` and the intrinsic calculus.
@@ -97,7 +97,7 @@ lemma norm_jordanPolyEval_sub_jordanCfc_le [Nontrivial E]
 
 ## C. Uniform polynomial approximation of the square root
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.exists_polynomialRepresentative_of_mem`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L153).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.exists_polynomialRepresentative_of_mem`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L153).
 
 > Every polynomial function on a compact real interval `[0, M]` extends to a global real
 > polynomial. This is the interval specialization of the general fact used for `jordanSpectrum`.
@@ -108,7 +108,7 @@ lemma exists_polynomialRepresentative_of_mem {s : Set ℝ} {g : C(s, ℝ)}
     ∃ p : Polynomial ℝ, Polynomial.toContinuousMapOnAlgHom s p = g
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.exists_polynomial_approx_sqrt`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L161).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.exists_polynomial_approx_sqrt`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L161).
 
 > Classical uniform polynomial approximation of the real square root on a compact interval
 > `[0, M]`. This is ordinary Stone--Weierstrass applied on a fixed real interval, entirely
@@ -121,7 +121,7 @@ lemma exists_polynomial_approx_sqrt (M : ℝ) (ε : ℝ) (hε : 0 < ε) :
 
 ## D. Unrestricted uniqueness of the positive square root
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.jordanSqrt_eq_of_nonneg_of_mul_self`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L191).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.jordanSqrt_eq_of_nonneg_of_mul_self`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L191).
 
 > **The positive square root is unique**: every nonnegative `b` with `b ∘ b = a` is `√a`.
 
@@ -131,7 +131,7 @@ lemma jordanSqrt_eq_of_nonneg_of_mul_self [Nontrivial E]
     b = jordanSqrt a ha
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.eq_of_nonneg_of_mul_self_eq_mul_self`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L276).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.eq_of_nonneg_of_mul_self_eq_mul_self`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean#L276).
 
 > Uniqueness of the positive square root, restated as equality of two arbitrary nonnegative
 > roots of the same element.
@@ -147,4 +147,4 @@ lemma eq_of_nonneg_of_mul_self_eq_mul_self [Nontrivial E]
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean)

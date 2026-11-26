@@ -8,7 +8,7 @@ proof: formalized
 
 # The ISQ base quantities
 
-The module `Physlib.Units.ISQDimensionBase`, [Physlib/Units/ISQDimensionBase.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQDimensionBase.lean): 10 declarations (2 instances with no name), 8 with a docstring.
+The module `Physlib.Units.ISQDimensionBase`, [Physlib/Units/ISQDimensionBase.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQDimensionBase.lean): 10 declarations (2 instances with no name), 8 with a docstring.
 
 > The International System of Quantities (ISQ), specified in ISO/IEC 80000-1 and
 > described in the International Vocabulary of Metrology (VIM, 3rd edition,
@@ -31,7 +31,7 @@ The module `Physlib.Units.ISQDimensionBase`, [Physlib/Units/ISQDimensionBase.lea
 > * JCGM 200:2012, International vocabulary of metrology — Basic and general concepts and associated
 >   terms (VIM, 3rd edition). [ref: jcgm\_200\_2012]
 
-**`ISQDimensionBase`**, an inductive, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQDimensionBase.lean#L44).
+**`ISQDimensionBase`**, an inductive, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQDimensionBase.lean#L44).
 
 > The seven ISQ base quantities (ISO/IEC 80000-1; VIM 3rd edition). Unlike
 > `LTMCTDimensionBase`, electric current is the electromagnetic base quantity (so
@@ -57,19 +57,19 @@ inductive ISQDimensionBase where
 deriving DecidableEq
 ```
 
-**An instance with no name**, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQDimensionBase.lean#L61).
+**An instance with no name**, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQDimensionBase.lean#L61).
 
 ```lean
 instance : Fintype ISQDimensionBase
 ```
 
-**An instance with no name**, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQDimensionBase.lean#L65).
+**An instance with no name**, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQDimensionBase.lean#L65).
 
 ```lean
 instance : DimensionBasis ISQDimensionBase
 ```
 
-**`ISQDimensionBase.card_eq_seven`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQDimensionBase.lean#L70).
+**`ISQDimensionBase.card_eq_seven`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQDimensionBase.lean#L70).
 
 > The ISQ has seven base quantities.
 
@@ -77,7 +77,7 @@ instance : DimensionBasis ISQDimensionBase
 lemma card_eq_seven : Fintype.card ISQDimensionBase = 7
 ```
 
-**`ISQDimensionBase.charge`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQDimensionBase.lean#L73).
+**`ISQDimensionBase.charge`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQDimensionBase.lean#L73).
 
 > Electric charge is a *derived* dimension in the ISQ: `Q = I · T`.
 
@@ -85,7 +85,7 @@ lemma card_eq_seven : Fintype.card ISQDimensionBase = 7
 def charge : Dimension ISQDimensionBase
 ```
 
-**`ISQDimensionBase.charge_exponent_current`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQDimensionBase.lean#L76).
+**`ISQDimensionBase.charge_exponent_current`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQDimensionBase.lean#L76).
 
 > The derived charge dimension has electric-current exponent `1`.
 
@@ -93,7 +93,7 @@ def charge : Dimension ISQDimensionBase
 lemma charge_exponent_current : charge.exponent .current = 1
 ```
 
-**`ISQDimensionBase.charge_exponent_time`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQDimensionBase.lean#L80).
+**`ISQDimensionBase.charge_exponent_time`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQDimensionBase.lean#L80).
 
 > The derived charge dimension has time exponent `1`.
 
@@ -101,7 +101,7 @@ lemma charge_exponent_current : charge.exponent .current = 1
 lemma charge_exponent_time : charge.exponent .time = 1
 ```
 
-**`ISQDimensionBase.charge_exponent_mass`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQDimensionBase.lean#L84).
+**`ISQDimensionBase.charge_exponent_mass`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQDimensionBase.lean#L84).
 
 > The derived charge dimension has mass exponent `0`.
 
@@ -109,7 +109,7 @@ lemma charge_exponent_time : charge.exponent .time = 1
 lemma charge_exponent_mass : charge.exponent .mass = 0
 ```
 
-**`ISQDimensionBase.single_amount_ne_one`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQDimensionBase.lean#L89).
+**`ISQDimensionBase.single_amount_ne_one`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQDimensionBase.lean#L89).
 
 > Amount of substance is an independent base dimension (absent from
 > `LTMCTDimensionBase`).
@@ -118,7 +118,7 @@ lemma charge_exponent_mass : charge.exponent .mass = 0
 lemma single_amount_ne_one : single (.amount : ISQDimensionBase) ≠ 1
 ```
 
-**`ISQDimensionBase.single_luminousIntensity_ne_one`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQDimensionBase.lean#L96).
+**`ISQDimensionBase.single_luminousIntensity_ne_one`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQDimensionBase.lean#L96).
 
 > Luminous intensity is an independent base dimension (absent from
 > `LTMCTDimensionBase`).
@@ -134,4 +134,4 @@ lemma single_luminousIntensity_ne_one :
 
 ## Sources
 
-- [Physlib/Units/ISQDimensionBase.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQDimensionBase.lean)
+- [Physlib/Units/ISQDimensionBase.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQDimensionBase.lean)

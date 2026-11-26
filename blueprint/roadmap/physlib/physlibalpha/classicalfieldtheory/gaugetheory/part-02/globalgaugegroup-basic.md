@@ -1,16 +1,16 @@
 ---
 declaration: module
 origin: cited
-lean: GlobalGaugeGroup, GlobalGaugeGroup.lieAlgebra, GlobalGaugeGroup.mem_lieAlgebra_iff, GlobalGaugeGroup.lieSubalgebra, GlobalGaugeGroup.mem_lieSubalgebra
+lean: GlobalGaugeGroup, GlobalGaugeGroup.ofSubmonoid, GlobalGaugeGroup.mem_ofSubmonoid_iff, GlobalGaugeGroup.mem_ofSubmonoid_iff_of_star_mem
 statement: formalized
 proof: formalized
 ---
 
 # Global gauge groups
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GlobalGaugeGroup.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean): 7 declarations (2 instances with no name), 3 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GlobalGaugeGroup.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean): 5 declarations (1 instance with no name), 4 with a docstring.
 
-> A global gauge group as a closed group of invertible matrices, with its Lie algebra.
+> A global gauge group as a closed group of invertible matrices.
 
 ## i. Overview
 
@@ -18,21 +18,23 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GlobalGaugeGroup.Basic
 > general linear group `GL(κ, ℂ)`. These are the matrix Lie groups. They include every compact
 > Lie group, so every gauge group of the Standard Model and its extensions, as well as
 > non-compact groups such as `Sp(2n, ℝ)`, `SO(p, q)`, `SL(n, ℝ)` and the Lorentz group,
-> disconnected groups such as `O(n)`, and finite groups, whose Lie algebra is zero. A real
-> group sits inside `GL(κ, ℂ)` as the real matrices it contains. Lie groups with no faithful
-> finite-dimensional representation, such as the metaplectic group, are not covered.
+> disconnected groups such as `O(n)`, and finite groups. A real group sits inside `GL(κ, ℂ)` as
+> the real matrices it contains. Lie groups with no faithful finite-dimensional
+> representation, such as the metaplectic group, are not covered.
 >
-> The Lie algebra `𝔤` is determined by the group: it is the real subspace of matrices `X`
-> whose one-parameter subgroup `t ↦ exp (t X)` lies in `G`, `Matrix.lieAlgebraOfIsClosed`.
-> That this is a subspace closed under the commutator, and invariant under conjugation by `G`,
-> is proved there. For a compact group inside the unitary group the generators `X` are
-> anti-hermitian, and the hermitian generators of physics are `−i X`.
+> Most groups of physical interest are cut out of the matrices by closed conditions, such as
+> unitarity, a determinant or an invariant bilinear form. Such conditions define a closed
+> submonoid of matrices, and its invertible elements whose inverses also satisfy the conditions
+> form a global gauge group, `GlobalGaugeGroup.ofSubmonoid`. The special cases `U(1)`, `SU(n)`,
+> `SO(n)` and `Sp(n)` are built this way in the files `SO.lean`, `SU.lean`, `Sp.lean` and `U1.lean`.
+>
+> The Lie algebra of a global gauge group is in the `LieAlgebra` directory.
 
 ## ii. Key results
 
 > - `GlobalGaugeGroup` : a closed subgroup of a general linear group.
-> - `GlobalGaugeGroup.lieAlgebra` : its Lie algebra.
-> - `GlobalGaugeGroup.lieSubalgebra` : the Lie algebra as a Lie subalgebra of matrices.
+> - `GlobalGaugeGroup.ofSubmonoid` : the global gauge group of the invertible elements of a
+>   closed submonoid of matrices.
 
 ## iv. References
 
@@ -41,9 +43,9 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GlobalGaugeGroup.Basic
 
 ## A. The structure
 
-**`GlobalGaugeGroup`**, a structure, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean#L63).
+**`GlobalGaugeGroup`**, a structure, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean#L66).
 
-> A global gauge group: a closed subgroup of the general linear group `GL(κ, ℂ)`.
+> A global gauge group, a closed subgroup of the general linear group `GL(κ, ℂ)`.
 
 ```lean
 structure GlobalGaugeGroup (κ : Type) [Fintype κ] [DecidableEq κ] where
@@ -53,53 +55,52 @@ structure GlobalGaugeGroup (κ : Type) [Fintype κ] [DecidableEq κ] where
   isClosed : IsClosed (group : Set (GeneralLinearGroup κ ℂ))
 ```
 
-## B. The Lie algebra
+## B. Global gauge groups from closed submonoids of matrices
 
-**`GlobalGaugeGroup.lieAlgebra`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean#L80).
+**`GlobalGaugeGroup.ofSubmonoid`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean#L84).
 
-> The Lie algebra: the generators of the one-parameter subgroups of the group.
+> The global gauge group of a closed submonoid `S` of matrices. Its elements are the
+> invertible matrices which lie in `S` together with their inverses.
 
 ```lean
-def lieAlgebra : Submodule ℝ (Matrix κ κ ℂ)
+def ofSubmonoid (S : Submonoid (Matrix κ κ ℂ)) (hS : IsClosed (S : Set (Matrix κ κ ℂ))) :
+    GlobalGaugeGroup κ
 ```
 
-**`GlobalGaugeGroup.mem_lieAlgebra_iff`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean#L83).
+**`GlobalGaugeGroup.mem_ofSubmonoid_iff`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean#L89).
 
 ```lean
-lemma mem_lieAlgebra_iff (X : Matrix κ κ ℂ) : X ∈ G.lieAlgebra ↔
-    ∀ t : ℝ, exp (t • X) ∈ Set.range fun g : G.group => (g.1 : Matrix κ κ ℂ)
+lemma mem_ofSubmonoid_iff {S : Submonoid (Matrix κ κ ℂ)} {hS : IsClosed (S : Set (Matrix κ κ ℂ))}
+    {g : GeneralLinearGroup κ ℂ} :
+    g ∈ (ofSubmonoid S hS).group ↔ (g : Matrix κ κ ℂ) ∈ S ∧ (↑g⁻¹ : Matrix κ κ ℂ) ∈ S
 ```
 
-**`GlobalGaugeGroup.lieSubalgebra`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean#L87).
+**`GlobalGaugeGroup.mem_ofSubmonoid_iff_of_star_mem`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean#L97).
 
-> The Lie algebra, as a Lie subalgebra of matrices under the commutator.
+> For a submonoid of unitary matrices closed under the conjugate transpose, an invertible
+> matrix lies in its global gauge group exactly when it lies in the submonoid, since its
+> inverse is then its conjugate transpose.
 
 ```lean
-def lieSubalgebra : LieSubalgebra ℝ (Matrix κ κ ℂ)
+lemma mem_ofSubmonoid_iff_of_star_mem {S : Submonoid (Matrix κ κ ℂ)}
+    {hS : IsClosed (S : Set (Matrix κ κ ℂ))} (hU : S ≤ unitaryGroup κ ℂ)
+    (hstar : ∀ A ∈ S, star A ∈ S) {g : GeneralLinearGroup κ ℂ} :
+    g ∈ (ofSubmonoid S hS).group ↔ (g : Matrix κ κ ℂ) ∈ S
 ```
 
-**`GlobalGaugeGroup.mem_lieSubalgebra`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean#L94).
+**An instance with no name**, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean#L107).
+
+> The group structure of a global gauge group, recorded directly so that instance search
+> does not pass through the units of the matrices.
 
 ```lean
-lemma mem_lieSubalgebra {X : Matrix κ κ ℂ} : X ∈ G.lieSubalgebra ↔ X ∈ G.lieAlgebra
-```
-
-**An instance with no name**, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean#L96).
-
-```lean
-noncomputable instance : LieRing G.lieSubalgebra
-```
-
-**An instance with no name**, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean#L98).
-
-```lean
-noncomputable instance : LieAlgebra ℝ G.lieSubalgebra
+instance (G : GlobalGaugeGroup κ) : Group G.group
 ```
 
 ## Depends on
 
-- [The Lie algebra of a closed group of matrices](../../../mathematics/part-02/formathlib/analysis-normed-algebra-matrixliealgebra.md)
+Its declarations' statements use no declaration of another module with an article here.
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/Basic.lean)

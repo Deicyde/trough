@@ -8,7 +8,7 @@ proof: formalized
 
 # States of a classical system
 
-The module `PhyslibAlpha.ProbabilisticTheory.Classical.NormalStates`, [PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean): 16 declarations, 9 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Classical.NormalStates`, [PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean): 16 declarations, 9 with a docstring.
 
 > The normal states of a classical system are exactly the probability measures on its outcomes.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.NormalStates`, [PhyslibAl
 
 ## A. Deterministic states
 
-**`BoundedMeasurable.eval`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L64).
+**`BoundedMeasurable.eval`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L64).
 
 > The deterministic state at the outcome `x`.
 
@@ -44,13 +44,13 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.NormalStates`, [PhyslibAl
 def eval (x : Ω) : 𝓢[ℝ, BoundedMeasurable Ω]
 ```
 
-**`BoundedMeasurable.eval_apply`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L67).
+**`BoundedMeasurable.eval_apply`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L67).
 
 ```lean
 lemma eval_apply (x : Ω) (f : BoundedMeasurable Ω) : eval x f = f x
 ```
 
-**`BoundedMeasurable.isNormal_eval`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L69).
+**`BoundedMeasurable.isNormal_eval`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L69).
 
 ```lean
 lemma isNormal_eval (x : Ω) : (eval x).IsNormal
@@ -58,7 +58,7 @@ lemma isNormal_eval (x : Ω) : (eval x).IsNormal
 
 ## B. Purity
 
-**`BoundedMeasurable.isPure_eval`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L80).
+**`BoundedMeasurable.isPure_eval`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L80).
 
 > Deterministic states are pure: the value of the smaller of two observables at `x` is the
 > smaller value.
@@ -69,7 +69,7 @@ lemma isPure_eval (x : Ω) : (eval x).IsPure
 
 ## C. From measures to states
 
-**`BoundedMeasurable.abs_apply_le`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L99).
+**`BoundedMeasurable.abs_apply_le`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L99).
 
 > A state is bounded by any pointwise bound of an observable.
 
@@ -78,7 +78,7 @@ lemma abs_apply_le (ω : 𝓢[ℝ, BoundedMeasurable Ω]) {g : BoundedMeasurable
     (hg : ∀ x, |g x| ≤ ε) : |ω g| ≤ ε
 ```
 
-**`BoundedMeasurable.ofMeasure`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L109).
+**`BoundedMeasurable.ofMeasure`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L109).
 
 > Integration against a probability measure, as a state.
 
@@ -86,14 +86,14 @@ lemma abs_apply_le (ω : 𝓢[ℝ, BoundedMeasurable Ω]) {g : BoundedMeasurable
 noncomputable def ofMeasure (μ : ProbabilityMeasure Ω) : 𝓢[ℝ, BoundedMeasurable Ω]
 ```
 
-**`BoundedMeasurable.ofMeasure_apply`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L115).
+**`BoundedMeasurable.ofMeasure_apply`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L115).
 
 ```lean
 lemma ofMeasure_apply (μ : ProbabilityMeasure Ω) (f : BoundedMeasurable Ω) :
     ofMeasure μ f = ∫ x, f x ∂(μ : Measure Ω)
 ```
 
-**`BoundedMeasurable.isNormal_ofMeasure`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L119).
+**`BoundedMeasurable.isNormal_ofMeasure`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L119).
 
 > Integration against a probability measure is normal, by dominated convergence.
 
@@ -103,7 +103,7 @@ lemma isNormal_ofMeasure (μ : ProbabilityMeasure Ω) : (ofMeasure μ).IsNormal
 
 ## D. From states to measures
 
-**`BoundedMeasurable.toMeasure`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L141).
+**`BoundedMeasurable.toMeasure`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L141).
 
 > The outcome distribution of a normal state.
 
@@ -112,7 +112,7 @@ noncomputable def toMeasure (ω : 𝓢[ℝ, BoundedMeasurable Ω]) (hω : ω.IsN
     ProbabilityMeasure Ω
 ```
 
-**`BoundedMeasurable.toMeasure_apply`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L145).
+**`BoundedMeasurable.toMeasure_apply`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L145).
 
 ```lean
 lemma toMeasure_apply (ω : 𝓢[ℝ, BoundedMeasurable Ω]) (hω : ω.IsNormal) {s : Set Ω}
@@ -120,7 +120,7 @@ lemma toMeasure_apply (ω : 𝓢[ℝ, BoundedMeasurable Ω]) (hω : ω.IsNormal)
     (toMeasure ω hω : Measure Ω) s = ENNReal.ofReal (ω (indicator s hs))
 ```
 
-**`BoundedMeasurable.measureReal_toMeasure`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L150).
+**`BoundedMeasurable.measureReal_toMeasure`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L150).
 
 ```lean
 lemma measureReal_toMeasure (ω : 𝓢[ℝ, BoundedMeasurable Ω]) (hω : ω.IsNormal) {s : Set Ω}
@@ -128,7 +128,7 @@ lemma measureReal_toMeasure (ω : 𝓢[ℝ, BoundedMeasurable Ω]) (hω : ω.IsN
     (toMeasure ω hω : Measure Ω).real s = ω (indicator s hs)
 ```
 
-**`BoundedMeasurable.toMeasure_ofMeasure`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L156).
+**`BoundedMeasurable.toMeasure_ofMeasure`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L156).
 
 ```lean
 lemma toMeasure_ofMeasure (μ : ProbabilityMeasure Ω) :
@@ -137,7 +137,7 @@ lemma toMeasure_ofMeasure (μ : ProbabilityMeasure Ω) :
 
 ## E. The correspondence
 
-**`BoundedMeasurable.ofMeasure_toMeasure_staircase`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L170).
+**`BoundedMeasurable.ofMeasure_toMeasure_staircase`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L170).
 
 > Integration against the outcome distribution agrees with the normal state on indicators, hence
 > on staircases.
@@ -148,7 +148,7 @@ lemma ofMeasure_toMeasure_staircase (ω : 𝓢[ℝ, BoundedMeasurable Ω]) (hω 
     ofMeasure (toMeasure ω hω) (staircase g N K) = ω (staircase g N K)
 ```
 
-**`BoundedMeasurable.ofMeasure_toMeasure_apply_of_nonneg`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L180).
+**`BoundedMeasurable.ofMeasure_toMeasure_apply_of_nonneg`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L180).
 
 ```lean
 lemma ofMeasure_toMeasure_apply_of_nonneg (ω : 𝓢[ℝ, BoundedMeasurable Ω]) (hω : ω.IsNormal)
@@ -156,7 +156,7 @@ lemma ofMeasure_toMeasure_apply_of_nonneg (ω : 𝓢[ℝ, BoundedMeasurable Ω])
     ofMeasure (toMeasure ω hω) g = ω g
 ```
 
-**`BoundedMeasurable.ofMeasure_toMeasure`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L196).
+**`BoundedMeasurable.ofMeasure_toMeasure`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L196).
 
 > A normal state is integration against its outcome distribution.
 
@@ -165,7 +165,7 @@ lemma ofMeasure_toMeasure (ω : 𝓢[ℝ, BoundedMeasurable Ω]) (hω : ω.IsNor
     ofMeasure (toMeasure ω hω) = ω
 ```
 
-**`BoundedMeasurable.normalStateEquiv`**, a def, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L213).
+**`BoundedMeasurable.normalStateEquiv`**, a def, [line 213](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean#L213).
 
 > **The normal states of a classical system are the probability measures on its outcomes.**
 
@@ -186,4 +186,4 @@ noncomputable def normalStateEquiv :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean)

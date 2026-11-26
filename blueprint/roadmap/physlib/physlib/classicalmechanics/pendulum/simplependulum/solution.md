@@ -8,7 +8,7 @@ proof: formalized
 
 # Existence and uniqueness of the solutions of the simple pendulum
 
-The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Solution`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean): 11 declarations, 11 with a docstring.
+The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Solution`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean): 11 declarations, 11 with a docstring.
 
 ## i. Overview
 
@@ -82,7 +82,7 @@ The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Solution`, [Physl
 
 ### A.1. The definition of the vector field
 
-**`ClassicalMechanics.SimplePendulum.phaseVectorField`**, a def, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L123).
+**`ClassicalMechanics.SimplePendulum.phaseVectorField`**, a def, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L123).
 
 > The phase-space vector field of the simple pendulum, sending `(θ, θ̇)` to
 > `(θ̇, -ω² sin θ)`. It is the right-hand side of the first-order system on the phase space
@@ -95,7 +95,7 @@ noncomputable def phaseVectorField (p : EuclideanSpace ℝ (Fin 1) × EuclideanS
 
 ### A.2. The Lipschitz bound
 
-**`ClassicalMechanics.SimplePendulum.phaseVectorField_lipschitz`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L136).
+**`ClassicalMechanics.SimplePendulum.phaseVectorField_lipschitz`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L136).
 
 > The phase-space vector field of the simple pendulum is globally Lipschitz, with constant
 > `1 + ω²`: the first component is the projection onto the angular velocity, and the second is
@@ -117,7 +117,7 @@ lemma phaseVectorField_lipschitz :
 
 ### B.1. The angular acceleration along a solution
 
-**`ClassicalMechanics.SimplePendulum.acceleration_eq_of_equationOfMotion`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L175).
+**`ClassicalMechanics.SimplePendulum.acceleration_eq_of_equationOfMotion`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L175).
 
 > Solving the equation of motion for the angular acceleration: along a solution the second
 > derivative of the angle is `-ω² sin θ` times the unit vector of the angular coordinate, the
@@ -129,7 +129,7 @@ lemma acceleration_eq_of_equationOfMotion (θ : Time → EuclideanSpace ℝ (Fin
     ∂ₜ (∂ₜ θ) t = -(S.ω ^ 2 * Real.sin (θ t 0)) • EuclideanSpace.single 0 1
 ```
 
-**`ClassicalMechanics.SimplePendulum.inertia_smul_eq_torque`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L185).
+**`ClassicalMechanics.SimplePendulum.inertia_smul_eq_torque`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L185).
 
 > The pointwise equation of motion in terms of the angular frequency: the moment of inertia
 > times the acceleration `-ω² sin θ` is the torque. This reads the equation of motion back off
@@ -142,7 +142,7 @@ lemma inertia_smul_eq_torque (x : EuclideanSpace ℝ (Fin 1)) :
 
 ### B.2. The phase curve as an integral curve
 
-**`ClassicalMechanics.SimplePendulum.phaseCurve_hasDerivAt`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L199).
+**`ClassicalMechanics.SimplePendulum.phaseCurve_hasDerivAt`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L199).
 
 > The phase curve `τ ↦ (θ t, θ̇ t)` (with `t = toRealCLE.symm τ`) of a smooth solution `θ`
 > solves the first-order phase-space ODE with vector field `phaseVectorField`.
@@ -163,7 +163,7 @@ lemma phaseCurve_hasDerivAt {θ : Time → EuclideanSpace ℝ (Fin 1)}
 > not used here: the nonlinear equation of motion is handled exactly as the linear damped one, by the
 > first-order reduction alone.
 
-**`ClassicalMechanics.SimplePendulum.equationOfMotion_unique`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L222).
+**`ClassicalMechanics.SimplePendulum.equationOfMotion_unique`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L222).
 
 > Any two smooth solutions of the equation of motion of the simple pendulum with the same
 > initial angle and angular velocity are equal.
@@ -175,7 +175,7 @@ lemma equationOfMotion_unique {x y : Time → EuclideanSpace ℝ (Fin 1)}
     (h0 : x 0 = y 0) (hv0 : ∂ₜ x 0 = ∂ₜ y 0) : x = y
 ```
 
-**`ClassicalMechanics.SimplePendulum.IsSolution.eq_of_initial`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L239).
+**`ClassicalMechanics.SimplePendulum.IsSolution.eq_of_initial`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L239).
 
 > Two solutions of the simple pendulum with the same initial angle and angular velocity are
 > equal.
@@ -198,7 +198,7 @@ lemma IsSolution.eq_of_initial {S : SimplePendulum} {x y : Time → EuclideanSpa
 
 ### D.1. Time reversal of solutions
 
-**`ClassicalMechanics.SimplePendulum.isSolution_comp_neg`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L268).
+**`ClassicalMechanics.SimplePendulum.isSolution_comp_neg`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L268).
 
 > The time reversal `t ↦ θ (-t)` of a solution of the simple pendulum is a solution: the
 > equation of motion has no velocity term, and the angular acceleration is unchanged by the
@@ -211,7 +211,7 @@ lemma isSolution_comp_neg {S : SimplePendulum} {θ : Time → EuclideanSpace ℝ
 
 ### D.2. Motions released from rest
 
-**`ClassicalMechanics.SimplePendulum.releasedFromRest_even`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L284).
+**`ClassicalMechanics.SimplePendulum.releasedFromRest_even`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L284).
 
 > A solution of the simple pendulum released from rest at the instant `0` is an even function
 > of time: it retraces its path, `θ (-t) = θ t`. The time reversal of the solution has the same
@@ -244,7 +244,7 @@ lemma releasedFromRest_even {S : SimplePendulum} {θ : Time → EuclideanSpace �
 
 ### E.1. Smoothness of the phase-space vector field
 
-**`ClassicalMechanics.SimplePendulum.phaseVectorField_contDiff`**, a lemma, [line 322](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L322).
+**`ClassicalMechanics.SimplePendulum.phaseVectorField_contDiff`**, a lemma, [line 322](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L322).
 
 > The phase-space vector field of the simple pendulum is smooth: its components are the
 > projection onto the angular velocity and `sin` of the angle.
@@ -255,7 +255,7 @@ lemma phaseVectorField_contDiff (n : WithTop ℕ∞) : ContDiff ℝ n S.phaseVec
 
 ### E.2. Local existence of solutions
 
-**`ClassicalMechanics.SimplePendulum.exists_local_solution`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L338).
+**`ClassicalMechanics.SimplePendulum.exists_local_solution`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean#L338).
 
 > **Local existence** of solutions of the simple pendulum: for any initial angle `x₀` and
 > angular velocity `v₀` there are `ε > 0` and a curve `θ` with `θ 0 = x₀` and `∂ₜ θ 0 = v₀` which,
@@ -277,4 +277,4 @@ lemma exists_local_solution (x₀ v₀ : EuclideanSpace ℝ (Fin 1)) :
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean)
+- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean)

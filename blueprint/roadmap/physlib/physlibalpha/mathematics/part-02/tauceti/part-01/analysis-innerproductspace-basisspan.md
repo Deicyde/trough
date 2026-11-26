@@ -8,7 +8,7 @@ proof: formalized
 
 # Spans of orthonormal subfamilies
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.InnerProductSpace.BasisSpan`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean): 9 declarations, 9 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.InnerProductSpace.BasisSpan`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean): 9 declarations, 9 with a docstring.
 
 > For a finite-index orthonormal basis and a set of indices, `spanIndices` is the subspace spanned by
 > the corresponding basis vectors.
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.InnerProductSpace.BasisSpa
 
 ## A. Development
 
-**`OrthonormalBasis.spanIndices`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L58).
+**`OrthonormalBasis.spanIndices`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L58).
 
 > The subspace spanned by the orthonormal basis vectors `b i` for indices
 > `i ∈ s`.
@@ -48,7 +48,7 @@ noncomputable def spanIndices (b : OrthonormalBasis ι 𝕜 E) (s : Set ι) :
     Submodule 𝕜 E
 ```
 
-**`OrthonormalBasis.spanIndices_eq_span`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L64).
+**`OrthonormalBasis.spanIndices_eq_span`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L64).
 
 > The selected subspace is the span of its basis vectors.
 > Use this identity to apply `Submodule.span`'s induction or universal property.
@@ -58,7 +58,7 @@ lemma spanIndices_eq_span (b : OrthonormalBasis ι 𝕜 E) (s : Set ι) :
     b.spanIndices s = Submodule.span 𝕜 (b '' s)
 ```
 
-**`OrthonormalBasis.spanIndices_mono`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L68).
+**`OrthonormalBasis.spanIndices_mono`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L68).
 
 > Selecting more indices spans more.
 
@@ -67,7 +67,7 @@ lemma spanIndices_mono (b : OrthonormalBasis ι 𝕜 E) {s t : Set ι} (h : s �
     b.spanIndices s ≤ b.spanIndices t
 ```
 
-**`OrthonormalBasis.mem_spanIndices_of_mem`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L74).
+**`OrthonormalBasis.mem_spanIndices_of_mem`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L74).
 
 > A selected basis vector lies in the span of its index set.
 
@@ -76,7 +76,7 @@ lemma mem_spanIndices_of_mem (b : OrthonormalBasis ι 𝕜 E) {s : Set ι} {i : 
     (hi : i ∈ s) : b i ∈ b.spanIndices s
 ```
 
-**`OrthonormalBasis.repr_eq_zero_of_mem_spanIndices`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L81).
+**`OrthonormalBasis.repr_eq_zero_of_mem_spanIndices`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L81).
 
 > A vector in the span of a selected subfamily has zero coordinate at any
 > index outside the selection.
@@ -87,7 +87,7 @@ lemma repr_eq_zero_of_mem_spanIndices (b : OrthonormalBasis ι 𝕜 E)
     b.repr x i = 0
 ```
 
-**`OrthonormalBasis.mem_spanIndices_iff`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L101).
+**`OrthonormalBasis.mem_spanIndices_iff`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L101).
 
 > Membership in the span of a selected subfamily is exactly the vanishing of
 > the coordinates outside the selection.
@@ -98,7 +98,7 @@ lemma mem_spanIndices_iff (b : OrthonormalBasis ι 𝕜 E)
     x ∈ b.spanIndices s ↔ ∀ i ∉ s, b.repr x i = 0
 ```
 
-**`OrthonormalBasis.finrank_spanIndices`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L115).
+**`OrthonormalBasis.finrank_spanIndices`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L115).
 
 > The span of a selected subfamily has dimension the number of selected
 > indices.
@@ -108,7 +108,7 @@ lemma finrank_spanIndices (b : OrthonormalBasis ι 𝕜 E) (s : Finset ι) :
     finrank 𝕜 (b.spanIndices ↑s) = s.card
 ```
 
-**`OrthonormalBasis.finrank_spanIndices_set`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L126).
+**`OrthonormalBasis.finrank_spanIndices_set`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L126).
 
 > The span of a selected set of basis vectors has dimension equal to the
 > number of selected indices.
@@ -118,7 +118,7 @@ lemma finrank_spanIndices_set (b : OrthonormalBasis ι 𝕜 E) (s : Set ι) :
     finrank 𝕜 (b.spanIndices s) = s.ncard
 ```
 
-**`OrthonormalBasis.orthogonal_spanIndices`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L134).
+**`OrthonormalBasis.orthogonal_spanIndices`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean#L134).
 
 > The orthogonal complement of the span of a selected subfamily is the span
 > of the complementary subfamily.
@@ -134,4 +134,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/BasisSpan.lean)

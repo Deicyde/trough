@@ -8,7 +8,7 @@ proof: formalized
 
 # Polynomials invariant under fiberwise translations of variables
 
-The module `PhyslibAlpha.Mathematics.MvPolynomialTranslation`, [PhyslibAlpha/Mathematics/MvPolynomialTranslation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MvPolynomialTranslation.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.Mathematics.MvPolynomialTranslation`, [PhyslibAlpha/Mathematics/MvPolynomialTranslation.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MvPolynomialTranslation.lean): 4 declarations, 4 with a docstring.
 
 ## i. Overview
 
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.Mathematics.MvPolynomialTranslation`, [PhyslibAlpha/Mat
 
 ## A. Invariance under fiberwise translations
 
-**`MvPolynomial.eval_aeval`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MvPolynomialTranslation.lean#L67).
+**`MvPolynomial.eval_aeval`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MvPolynomialTranslation.lean#L67).
 
 > Evaluation of a substitution of a multivariate polynomial: substitution followed
 > by evaluation is evaluation at the evaluated substituents.
@@ -53,7 +53,7 @@ lemma eval_aeval (x : I → R) (g : I → MvPolynomial I R) (p : MvPolynomial I 
     eval x (aeval g p) = eval (fun i => eval x (g i)) p
 ```
 
-**`MvPolynomial.aeval_update_zero_eq_of_forall_aeval_add_eq`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MvPolynomialTranslation.lean#L76).
+**`MvPolynomial.aeval_update_zero_eq_of_forall_aeval_add_eq`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MvPolynomialTranslation.lean#L76).
 
 > A polynomial invariant under all translations of a fixed variable is unchanged
 > by setting that variable to zero.
@@ -64,7 +64,7 @@ lemma aeval_update_zero_eq_of_forall_aeval_add_eq (Q : MvPolynomial I R) (j : I)
     aeval (fun i => if i = j then 0 else X i) Q = Q
 ```
 
-**`MvPolynomial.notMem_vars_of_forall_aeval_add_eq`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MvPolynomialTranslation.lean#L94).
+**`MvPolynomial.notMem_vars_of_forall_aeval_add_eq`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MvPolynomialTranslation.lean#L94).
 
 > A polynomial invariant under all translations of a fixed variable does not
 > involve that variable.
@@ -75,7 +75,7 @@ lemma notMem_vars_of_forall_aeval_add_eq (Q : MvPolynomial I R) (j : I)
     j ∉ Q.vars
 ```
 
-**`MvPolynomial.mem_adjoin_range_X_sub_X_of_forall_aeval_add_eq`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MvPolynomialTranslation.lean#L114).
+**`MvPolynomial.mem_adjoin_range_X_sub_X_of_forall_aeval_add_eq`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MvPolynomialTranslation.lean#L114).
 
 > A multivariate polynomial over an infinite integral domain that is invariant
 > under simultaneously translating, for every fiber of an idempotent map `π` on the
@@ -96,4 +96,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/MvPolynomialTranslation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MvPolynomialTranslation.lean)
+- [PhyslibAlpha/Mathematics/MvPolynomialTranslation.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MvPolynomialTranslation.lean)

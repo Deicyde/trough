@@ -8,7 +8,7 @@ proof: formalized
 
 # Abstract angular momentum representations
 
-The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.Basic`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean): 41 declarations, 31 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.Basic`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean): 41 declarations, 31 with a docstring.
 
 > Packages three endomorphisms obeying the angular momentum commutation relations and
 > connects them to `sl₂`.
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.Basic`, [PhyslibAlpha/
 
 ## A. Angular momentum and its `sl₂` triple
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation`**, a structure, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L58).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation`**, a structure, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L58).
 
 > Angular momentum representation. Three operators
 > `Jx, Jy, Jz` on a state space `V`, satisfying the `so(3)` commutation relations
@@ -54,7 +54,7 @@ structure AngularMomentumRepresentation where
   comm_zx : ⁅Jz, Jx⁆ = Complex.I • Jy
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jp`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L74).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jp`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L74).
 
 > Ladder operators. `J± := Jx ± iJy`.
 
@@ -62,13 +62,13 @@ structure AngularMomentumRepresentation where
 def Jp (ρ : AngularMomentumRepresentation V) : Module.End ℂ V
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jm`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L77).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jm`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L77).
 
 ```lean
 def Jm (ρ : AngularMomentumRepresentation V) : Module.End ℂ V
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.comm_z_p`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L81).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.comm_z_p`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L81).
 
 > Commutation relations for the ladder operators:
 > `[Jz, J±] = ±J±` and `[J+, J-] = 2Jz`.
@@ -77,20 +77,20 @@ def Jm (ρ : AngularMomentumRepresentation V) : Module.End ℂ V
 lemma comm_z_p (ρ : AngularMomentumRepresentation V) : ⁅ρ.Jz, ρ.Jp⁆ = ρ.Jp
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.comm_z_m`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L87).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.comm_z_m`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L87).
 
 ```lean
 lemma comm_z_m (ρ : AngularMomentumRepresentation V) : ⁅ρ.Jz, ρ.Jm⁆ = -ρ.Jm
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.comm_p_m`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L93).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.comm_p_m`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L93).
 
 ```lean
 lemma comm_p_m (ρ : AngularMomentumRepresentation V) :
     ⁅ρ.Jp, ρ.Jm⁆ = (2 : ℂ) • ρ.Jz
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.isSl2Triple`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L117).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.isSl2Triple`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L117).
 
 > Angular momentum generates an `sl₂`-triple, via
 > `h := 2 • Jz`, `e := J+`, `f := J-` (the doubling of `Jz` reconciles the physicists'
@@ -109,7 +109,7 @@ lemma isSl2Triple (ρ : AngularMomentumRepresentation V) (hz : ρ.Jz ≠ 0) :
 
 ### A.1. Spin classification
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.IsIrreducible`**, a def, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L134).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.IsIrreducible`**, a def, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L134).
 
 > Irreducibility of an angular momentum representation: no proper subspace is
 > invariant under `Jx`, `Jy`, and `Jz` simultaneously.
@@ -118,7 +118,7 @@ lemma isSl2Triple (ρ : AngularMomentumRepresentation V) (hz : ρ.Jz ≠ 0) :
 def IsIrreducible (ρ : AngularMomentumRepresentation V) : Prop
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jx_mem_sl2`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L143).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jx_mem_sl2`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L143).
 
 > Irreducibility transfers along the bridge:
 > `ρ.IsIrreducible` agrees with irreducibility of the induced module for the `sl₂`-subalgebra
@@ -130,21 +130,21 @@ lemma Jx_mem_sl2 (ρ : AngularMomentumRepresentation V) (hz : ρ.Jz ≠ 0) :
     ρ.Jx ∈ (ρ.isSl2Triple hz).toLieSubalgebra ℂ
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jy_mem_sl2`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L148).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jy_mem_sl2`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L148).
 
 ```lean
 lemma Jy_mem_sl2 (ρ : AngularMomentumRepresentation V) (hz : ρ.Jz ≠ 0) :
     ρ.Jy ∈ (ρ.isSl2Triple hz).toLieSubalgebra ℂ
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jz_mem_sl2`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L161).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jz_mem_sl2`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L161).
 
 ```lean
 lemma Jz_mem_sl2 (ρ : AngularMomentumRepresentation V) (hz : ρ.Jz ≠ 0) :
     ρ.Jz ∈ (ρ.isSl2Triple hz).toLieSubalgebra ℂ
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jp_mem_of_invariant`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L167).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jp_mem_of_invariant`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L167).
 
 ```lean
 lemma Jp_mem_of_invariant (ρ : AngularMomentumRepresentation V)
@@ -152,7 +152,7 @@ lemma Jp_mem_of_invariant (ρ : AngularMomentumRepresentation V)
     (hy : ∀ v ∈ W, ρ.Jy v ∈ W) {v : V} (hv : v ∈ W) : ρ.Jp v ∈ W
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jm_mem_of_invariant`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L173).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jm_mem_of_invariant`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L173).
 
 ```lean
 lemma Jm_mem_of_invariant (ρ : AngularMomentumRepresentation V)
@@ -160,7 +160,7 @@ lemma Jm_mem_of_invariant (ρ : AngularMomentumRepresentation V)
     (hy : ∀ v ∈ W, ρ.Jy v ∈ W) {v : V} (hv : v ∈ W) : ρ.Jm v ∈ W
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.sl2_invariant_of_angular_invariant`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L179).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.sl2_invariant_of_angular_invariant`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L179).
 
 ```lean
 lemma sl2_invariant_of_angular_invariant (ρ : AngularMomentumRepresentation V)
@@ -170,7 +170,7 @@ lemma sl2_invariant_of_angular_invariant (ρ : AngularMomentumRepresentation V)
     {v : V} (hv : v ∈ W) : ⁅x, v⁆ ∈ W
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.nontrivial_of_Jz_ne_zero`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L194).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.nontrivial_of_Jz_ne_zero`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L194).
 
 > A nonzero `Jz` forces the representation space to be nontrivial.
 
@@ -179,7 +179,7 @@ lemma nontrivial_of_Jz_ne_zero (ρ : AngularMomentumRepresentation V) (hz : ρ.J
     Nontrivial V
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.lieSubmodule_stable`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L201).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.lieSubmodule_stable`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L201).
 
 > Lie submodules are stable under every operator in the generated subalgebra.
 
@@ -189,7 +189,7 @@ lemma lieSubmodule_stable (ρ : AngularMomentumRepresentation V) (hz : ρ.Jz ≠
     (hx : x ∈ (ρ.isSl2Triple hz).toLieSubalgebra ℂ) : ∀ v ∈ (N : Submodule ℂ V), x v ∈ N
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.angular_irreducible_implies_sl2`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L208).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.angular_irreducible_implies_sl2`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L208).
 
 ```lean
 lemma angular_irreducible_implies_sl2 (ρ : AngularMomentumRepresentation V)
@@ -197,7 +197,7 @@ lemma angular_irreducible_implies_sl2 (ρ : AngularMomentumRepresentation V)
     LieModule.IsIrreducible ℂ ↥((ρ.isSl2Triple hz).toLieSubalgebra ℂ) V
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.sl2_irreducible_implies_angular`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L219).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.sl2_irreducible_implies_angular`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L219).
 
 ```lean
 lemma sl2_irreducible_implies_angular (ρ : AngularMomentumRepresentation V)
@@ -206,7 +206,7 @@ lemma sl2_irreducible_implies_angular (ρ : AngularMomentumRepresentation V)
     ρ.IsIrreducible
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.isIrreducible_iff`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L234).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.isIrreducible_iff`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L234).
 
 > Invariance under `Jx`, `Jy`, `Jz` is equivalent to irreducibility for the generated
 > `sl₂` Lie subalgebra.
@@ -216,7 +216,7 @@ lemma isIrreducible_iff (ρ : AngularMomentumRepresentation V) (hz : ρ.Jz ≠ 0
     ρ.IsIrreducible ↔ LieModule.IsIrreducible ℂ (↥((ρ.isSl2Triple hz).toLieSubalgebra ℂ)) V
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.spin_classification`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L242).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.spin_classification`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L242).
 
 > A finite-dimensional irreducible angular momentum representation is isomorphic to a
 > standard `sl₂` module for the subalgebra generated by `(2Jz, Jp, Jm)`.
@@ -228,7 +228,7 @@ lemma spin_classification [FiniteDimensional ℂ V] (ρ : AngularMomentumReprese
       Nonempty (V ≃ₗ⁅ℂ, ↥((ρ.isSl2Triple hz).toLieSubalgebra ℂ)⁆ StandardSl2Module ℂ n)
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jp_mul_Jm`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L254).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jp_mul_Jm`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L254).
 
 > `J+J- = Jx²+Jy²+Jz`: the standard ladder-operator identity, a purely algebraic
 > consequence of the commutation relations (no representation theory needed). Used to
@@ -240,7 +240,7 @@ lemma Jp_mul_Jm (ρ : AngularMomentumRepresentation V) :
     ρ.Jp * ρ.Jm = ρ.Jx * ρ.Jx + ρ.Jy * ρ.Jy + ρ.Jz
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_eq_Jp_mul_Jm`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L270).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_eq_Jp_mul_Jm`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L270).
 
 > `J² = J+J- + Jz² - Jz`: a purely algebraic consequence of the commutation
 > relations (no representation theory needed), used to reduce `Jsq_eq_smul` to a
@@ -252,7 +252,7 @@ lemma Jsq_eq_Jp_mul_Jm (ρ : AngularMomentumRepresentation V) :
       ρ.Jp * ρ.Jm + ρ.Jz * ρ.Jz - ρ.Jz
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.leibniz_end`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L277).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.leibniz_end`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L277).
 
 > Product Leibniz rule for the associative-ring bracket on `Module.End ℂ V`:
 > `⁅a*x, z⁆ = a*⁅x,z⁆ + ⁅a,z⁆*x`.
@@ -262,7 +262,7 @@ lemma leibniz_end (a x z : Module.End ℂ V) :
     (⁅a * x, z⁆ : Module.End ℂ V) = a * ⁅x, z⁆ + ⁅a, z⁆ * x
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.mul_eq_of_lie_eq`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L283).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.mul_eq_of_lie_eq`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L283).
 
 > Unfolds the associative-ring bracket relation `⁅a, b⁆ = c` into `a * b = b * a + c`.
 
@@ -271,7 +271,7 @@ lemma mul_eq_of_lie_eq {a b c : Module.End ℂ V} (h : (⁅a, b⁆ : Module.End 
     a * b = b * a + c
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_comm_p`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L290).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_comm_p`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L290).
 
 > `J²` commutes with `J+`: a step towards showing `J²` is central, hence (on an
 > irreducible module) acts as a scalar.
@@ -281,7 +281,7 @@ lemma Jsq_comm_p (ρ : AngularMomentumRepresentation V) :
     (⁅ρ.Jx * ρ.Jx + ρ.Jy * ρ.Jy + ρ.Jz * ρ.Jz, ρ.Jp⁆ : Module.End ℂ V) = 0
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_comm_m`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L302).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_comm_m`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L302).
 
 > `J²` commutes with `J-`: a step towards showing `J²` is central, hence (on an
 > irreducible module) acts as a scalar.
@@ -291,7 +291,7 @@ lemma Jsq_comm_m (ρ : AngularMomentumRepresentation V) :
     (⁅ρ.Jx * ρ.Jx + ρ.Jy * ρ.Jy + ρ.Jz * ρ.Jz, ρ.Jm⁆ : Module.End ℂ V) = 0
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_comm_z`**, a lemma, [line 314](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L314).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_comm_z`**, a lemma, [line 314](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L314).
 
 > `J²` commutes with `Jz`: derived from `Jsq_comm_p`/`Jsq_comm_m` via the Jacobi
 > identity, since `2•Jz = ⁅Jp,Jm⁆`.
@@ -301,7 +301,7 @@ lemma Jsq_comm_z (ρ : AngularMomentumRepresentation V) :
     (⁅ρ.Jx * ρ.Jx + ρ.Jy * ρ.Jy + ρ.Jz * ρ.Jz, ρ.Jz⁆ : Module.End ℂ V) = 0
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq`**, a def, [line 322](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L322).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq`**, a def, [line 322](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L322).
 
 > The quadratic angular momentum operator `Jx² + Jy² + Jz²`.
 
@@ -309,7 +309,7 @@ lemma Jsq_comm_z (ρ : AngularMomentumRepresentation V) :
 def Jsq (ρ : AngularMomentumRepresentation V) : Module.End ℂ V
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.JpJm_on_primitive`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L326).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.JpJm_on_primitive`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L326).
 
 > On a primitive vector of weight `n`, `Jp Jm` acts by `n`.
 
@@ -319,7 +319,7 @@ lemma JpJm_on_primitive (ρ : AngularMomentumRepresentation V) (hz : ρ.Jz ≠ 0
     ρ.Jp (ρ.Jm v) = (n : ℂ) • v
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jz_on_primitive`**, a lemma, [line 340](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L340).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jz_on_primitive`**, a lemma, [line 340](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L340).
 
 > The Cartan operator acts by half the highest weight on a primitive vector.
 
@@ -329,7 +329,7 @@ lemma Jz_on_primitive (ρ : AngularMomentumRepresentation V) (hz : ρ.Jz ≠ 0)
     ρ.Jz v = ((n : ℂ) / 2) • v
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_on_primitive`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L350).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_on_primitive`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L350).
 
 > The quadratic operator has the expected eigenvalue on a primitive vector.
 
@@ -339,7 +339,7 @@ lemma Jsq_on_primitive (ρ : AngularMomentumRepresentation V) (hz : ρ.Jz ≠ 0)
     ρ.Jsq v = ((n : ℂ) / 2 * ((n : ℂ) / 2 + 1)) • v
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.ker_scalar_stable`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L363).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.ker_scalar_stable`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L363).
 
 > An eigenspace of an endomorphism is stable under commuting endomorphisms.
 
@@ -350,7 +350,7 @@ lemma ker_scalar_stable (C A : Module.End ℂ V) (c : ℂ)
     A v ∈ LinearMap.ker (C - c • (1 : Module.End ℂ V))
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jx_apply_eq`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L379).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jx_apply_eq`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L379).
 
 > `Jx` is half the sum of the ladder operators.
 
@@ -359,7 +359,7 @@ lemma Jx_apply_eq (ρ : AngularMomentumRepresentation V) (v : V) :
     ρ.Jx v = ((1 : ℂ) / 2) • (ρ.Jp v + ρ.Jm v)
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jy_apply_eq`**, a lemma, [line 385](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L385).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jy_apply_eq`**, a lemma, [line 385](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L385).
 
 > `Jy` is `-i/2` times the difference of the ladder operators.
 
@@ -368,7 +368,7 @@ lemma Jy_apply_eq (ρ : AngularMomentumRepresentation V) (v : V) :
     ρ.Jy v = (-(Complex.I / 2)) • (ρ.Jp v - ρ.Jm v)
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_ker_stable_x`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L397).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_ker_stable_x`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L397).
 
 > The `J²` eigenspace is stable under `Jx`.
 
@@ -378,7 +378,7 @@ lemma Jsq_ker_stable_x (ρ : AngularMomentumRepresentation V) (c : ℂ)
     ρ.Jx v ∈ LinearMap.ker (ρ.Jsq - c • (1 : Module.End ℂ V))
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_ker_stable_y`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L406).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_ker_stable_y`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L406).
 
 > The `J²` eigenspace is stable under `Jy`.
 
@@ -388,7 +388,7 @@ lemma Jsq_ker_stable_y (ρ : AngularMomentumRepresentation V) (c : ℂ)
     ρ.Jy v ∈ LinearMap.ker (ρ.Jsq - c • (1 : Module.End ℂ V))
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_ker_eq_top`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L415).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_ker_eq_top`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L415).
 
 > A nonzero vector in a `J²` eigenspace forces that eigenspace to be everything.
 
@@ -399,7 +399,7 @@ lemma Jsq_ker_eq_top (ρ : AngularMomentumRepresentation V)
     LinearMap.ker (ρ.Jsq - c • (1 : Module.End ℂ V)) = ⊤
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_eq_scalar_of_eigenvector`**, a lemma, [line 425](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L425).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_eq_scalar_of_eigenvector`**, a lemma, [line 425](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L425).
 
 > A nonzero `J²` eigenvector forces `J²` to be that scalar on an irreducible module.
 
@@ -409,7 +409,7 @@ lemma Jsq_eq_scalar_of_eigenvector (ρ : AngularMomentumRepresentation V)
     (hCv : ρ.Jsq v = c • v) : ρ.Jsq = c • (1 : Module.End ℂ V)
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_eq_zero_of_Jz_eq_zero`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L434).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_eq_zero_of_Jz_eq_zero`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L434).
 
 > If `Jz = 0`, the commutation relations force all three angular momentum operators
 > to vanish.
@@ -419,7 +419,7 @@ lemma Jsq_eq_zero_of_Jz_eq_zero (ρ : AngularMomentumRepresentation V)
     (hz : ρ.Jz = 0) : ρ.Jsq = 0
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_eq_smul`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L448).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_eq_smul`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L448).
 
 > On an irreducible finite-dimensional representation, `J²` acts by `j(j+1)` for
 > some `j = n/2`.
@@ -430,7 +430,7 @@ lemma Jsq_eq_smul [FiniteDimensional ℂ V] (ρ : AngularMomentumRepresentation 
     ∃ n : ℕ, ρ.Jsq = ((n : ℂ) / 2 * ((n : ℂ) / 2 + 1)) • (1 : Module.End ℂ V)
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.magneticBasisVec`**, a def, [line 462](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L462).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.magneticBasisVec`**, a def, [line 462](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean#L462).
 
 > Magnetic-weight ladder vectors: given a primitive vector
 > `v₀` of weight `n` for the triple `(2Jz, J+, J-)`, this defines `(J-)ᵏ v₀` for
@@ -451,4 +451,4 @@ def magneticBasisVec (ρ : AngularMomentumRepresentation V) (hz : ρ.Jz ≠ 0) {
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean)
+- [PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean)

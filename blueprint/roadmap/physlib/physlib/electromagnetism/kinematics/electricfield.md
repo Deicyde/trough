@@ -8,7 +8,7 @@ proof: formalized
 
 # The Electric Field (Kinematics/ElectricField)
 
-The module `Physlib.Electromagnetism.Kinematics.ElectricField`, [Physlib/Electromagnetism/Kinematics/ElectricField.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ElectricField.lean): 14 declarations, 3 with a docstring.
+The module `Physlib.Electromagnetism.Kinematics.ElectricField`, [Physlib/Electromagnetism/Kinematics/ElectricField.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/ElectricField.lean): 14 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -29,7 +29,7 @@ The module `Physlib.Electromagnetism.Kinematics.ElectricField`, [Physlib/Electro
 
 ## A. Definition of the Electric Field
 
-**`Electromagnetism.ElectromagneticPotential.electricField`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L67).
+**`Electromagnetism.ElectromagneticPotential.electricField`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L67).
 
 > The electric field from the electromagnetic potential.
 
@@ -38,7 +38,7 @@ noncomputable def electricField {d} (c : SpeedOfLight := 1)
     (A : ElectromagneticPotential d) : ElectricField d
 ```
 
-**`Electromagnetism.ElectromagneticPotential.electricField_eq`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L71).
+**`Electromagnetism.ElectromagneticPotential.electricField_eq`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L71).
 
 ```lean
 lemma electricField_eq {c : SpeedOfLight} (A : ElectromagneticPotential d) :
@@ -48,7 +48,7 @@ lemma electricField_eq {c : SpeedOfLight} (A : ElectromagneticPotential d) :
 
 ## B. Relation to constructors
 
-**`Electromagnetism.ElectromagneticPotential.ofScalarPotential_electricField`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L83).
+**`Electromagnetism.ElectromagneticPotential.ofScalarPotential_electricField`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L83).
 
 > A scalar-only potential produces the negative spatial gradient as its electric field.
 
@@ -58,7 +58,7 @@ lemma ofScalarPotential_electricField {d} (c : SpeedOfLight)
     (ofScalarPotential c φ).electricField c = fun t x => - ∇ (φ t) x
 ```
 
-**`Electromagnetism.ElectromagneticPotential.ofElectromagneticField_electricField`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L93).
+**`Electromagnetism.ElectromagneticPotential.ofElectromagneticField_electricField`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L93).
 
 > The electric field of the electromagnetic potential created from the electric field
 > `E` and the magnetic field `B` is `E`, as long as Gauss's law for magnetism and
@@ -77,7 +77,7 @@ lemma ofElectromagneticField_electricField {c : SpeedOfLight}
 > The electric field can be expressed in terms of the field strength tensor as
 > `E_i = - c * F_0^i`.
 
-**`Electromagnetism.ElectromagneticPotential.electricField_eq_toFieldStrength_eval`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L140).
+**`Electromagnetism.ElectromagneticPotential.electricField_eq_toFieldStrength_eval`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L140).
 
 ```lean
 lemma electricField_eq_toFieldStrength_eval {c : SpeedOfLight}
@@ -87,7 +87,7 @@ lemma electricField_eq_toFieldStrength_eval {c : SpeedOfLight}
     toScalar {A.toFieldStrength ((toTimeAndSpace c).symm (t, x)) | [Sum.inl 0] [Sum.inr i]}ᵀ
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_inl_inr_eq_electricField`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L180).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_inl_inr_eq_electricField`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L180).
 
 ```lean
 lemma toFieldStrength_eval_inl_inr_eq_electricField {c : SpeedOfLight}
@@ -97,7 +97,7 @@ lemma toFieldStrength_eval_inl_inr_eq_electricField {c : SpeedOfLight}
     - (1 /c) * A.electricField c (x.time c) x.space i
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_inr_inl_eq_electricField`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L188).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_inr_inl_eq_electricField`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L188).
 
 ```lean
 lemma toFieldStrength_eval_inr_inl_eq_electricField {c : SpeedOfLight}
@@ -109,14 +109,14 @@ lemma toFieldStrength_eval_inr_inl_eq_electricField {c : SpeedOfLight}
 
 ## C. Smoothness of the electric field
 
-**`Electromagnetism.ElectromagneticPotential.electricField_contDiff`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L203).
+**`Electromagnetism.ElectromagneticPotential.electricField_contDiff`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L203).
 
 ```lean
 lemma electricField_contDiff {n} {c : SpeedOfLight} {A : ElectromagneticPotential d}
     (hA : ContDiff ℝ (n + 1) A) : ContDiff ℝ n ↿(A.electricField c)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.electricField_apply_contDiff_space`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L217).
+**`Electromagnetism.ElectromagneticPotential.electricField_apply_contDiff_space`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L217).
 
 ```lean
 lemma electricField_apply_contDiff_space {n} {A : ElectromagneticPotential d}
@@ -127,7 +127,7 @@ lemma electricField_apply_contDiff_space {n} {A : ElectromagneticPotential d}
 
 ## D. Differentiability of the electric field
 
-**`Electromagnetism.ElectromagneticPotential.electricField_differentiable_time`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L230).
+**`Electromagnetism.ElectromagneticPotential.electricField_differentiable_time`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L230).
 
 ```lean
 lemma electricField_differentiable_time {A : ElectromagneticPotential d} {c : SpeedOfLight}
@@ -136,7 +136,7 @@ lemma electricField_differentiable_time {A : ElectromagneticPotential d} {c : Sp
 
 ## E. Time derivative of the vector potential in terms of the electric field
 
-**`Electromagnetism.ElectromagneticPotential.time_deriv_vectorPotential_eq_electricField`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L240).
+**`Electromagnetism.ElectromagneticPotential.time_deriv_vectorPotential_eq_electricField`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L240).
 
 ```lean
 lemma time_deriv_vectorPotential_eq_electricField {d} {c : SpeedOfLight}
@@ -146,7 +146,7 @@ lemma time_deriv_vectorPotential_eq_electricField {d} {c : SpeedOfLight}
     - A.electricField c t x - ∇ (A.scalarPotential c t) x
 ```
 
-**`Electromagnetism.ElectromagneticPotential.time_deriv_comp_vectorPotential_eq_electricField`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L248).
+**`Electromagnetism.ElectromagneticPotential.time_deriv_comp_vectorPotential_eq_electricField`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L248).
 
 ```lean
 lemma time_deriv_comp_vectorPotential_eq_electricField {d} {A : ElectromagneticPotential d}
@@ -159,7 +159,7 @@ lemma time_deriv_comp_vectorPotential_eq_electricField {d} {A : ElectromagneticP
 
 ## F. Derivatives of the electric field in terms of field strength tensor
 
-**`Electromagnetism.ElectromagneticPotential.time_deriv_electricField_eq_toFieldStrength_eval`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L267).
+**`Electromagnetism.ElectromagneticPotential.time_deriv_electricField_eq_toFieldStrength_eval`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L267).
 
 ```lean
 lemma time_deriv_electricField_eq_toFieldStrength_eval {d} {A : ElectromagneticPotential d}
@@ -169,7 +169,7 @@ lemma time_deriv_electricField_eq_toFieldStrength_eval {d} {A : ElectromagneticP
     ((toTimeAndSpace c).symm (t, x))
 ```
 
-**`Electromagnetism.ElectromagneticPotential.div_electricField_eq_toFieldStrength_eval`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L283).
+**`Electromagnetism.ElectromagneticPotential.div_electricField_eq_toFieldStrength_eval`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/ElectricField.lean#L283).
 
 ```lean
 lemma div_electricField_eq_toFieldStrength_eval {d} {A : ElectromagneticPotential d}
@@ -187,4 +187,4 @@ lemma div_electricField_eq_toFieldStrength_eval {d} {A : ElectromagneticPotentia
 
 ## Sources
 
-- [Physlib/Electromagnetism/Kinematics/ElectricField.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ElectricField.lean)
+- [Physlib/Electromagnetism/Kinematics/ElectricField.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/ElectricField.lean)

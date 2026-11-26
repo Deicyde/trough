@@ -8,7 +8,7 @@ proof: formalized
 
 # The unitary group of a self-adjoint operator
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Flow.Stone`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean): 6 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Flow.Stone`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean): 6 declarations, 3 with a docstring.
 
 > The unitary group exp(i t T) of a self-adjoint operator and its differentiable orbits.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Flow.Stone`,
 
 ## A. Differentiability of orbits
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_strong_slope_tendsto`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean#L69).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_strong_slope_tendsto`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean#L69).
 
 > For `x` in the domain of `T`, the difference quotients `(exp(i t T) x - x) / t` converge to `i T
 > x`.
@@ -47,7 +47,7 @@ lemma expUnitaryGroup_strong_slope_tendsto
       (𝓝 (Complex.I • T x))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_hasDerivAt_zero`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean#L102).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_hasDerivAt_zero`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean#L102).
 
 ```lean
 lemma expUnitaryGroup_hasDerivAt_zero
@@ -56,7 +56,7 @@ lemma expUnitaryGroup_hasDerivAt_zero
       (Complex.I • T x) 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_hasDerivAt`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean#L112).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_hasDerivAt`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean#L112).
 
 > For `x` in the domain of `T`, the orbit `t ↦ exp(i t T) x` is differentiable at every time.
 
@@ -69,7 +69,7 @@ lemma expUnitaryGroup_hasDerivAt
 
 ## B. The domain via differentiable orbits
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.mem_domain_iff_expUnitaryGroup_strong_slope`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean#L152).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.mem_domain_iff_expUnitaryGroup_strong_slope`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean#L152).
 
 ```lean
 lemma mem_domain_iff_expUnitaryGroup_strong_slope
@@ -80,7 +80,7 @@ lemma mem_domain_iff_expUnitaryGroup_strong_slope
         (𝓝[≠] (0 : ℝ)) (𝓝 y)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.mem_domain_iff_expUnitaryGroup_hasDerivAt_zero`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean#L278).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.mem_domain_iff_expUnitaryGroup_hasDerivAt_zero`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean#L278).
 
 ```lean
 lemma mem_domain_iff_expUnitaryGroup_hasDerivAt_zero
@@ -91,7 +91,7 @@ lemma mem_domain_iff_expUnitaryGroup_hasDerivAt_zero
 
 ## C. The adjoint of the unitary group
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_star`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean#L301).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_star`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean#L301).
 
 > `exp(i t T)⋆ = exp(-i t T)`.
 
@@ -111,4 +111,4 @@ lemma expUnitaryGroup_star (D : DomainAwareSelfAdjointSpectralTheorem T μS) (t 
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean)

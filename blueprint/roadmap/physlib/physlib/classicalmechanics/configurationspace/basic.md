@@ -8,7 +8,7 @@ proof: formalized
 
 # Configuration spaces
 
-The module `Physlib.ClassicalMechanics.ConfigurationSpace.Basic`, [Physlib/ClassicalMechanics/ConfigurationSpace/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/ConfigurationSpace/Basic.lean): 2 declarations (1 instance with no name), 1 with a docstring.
+The module `Physlib.ClassicalMechanics.ConfigurationSpace.Basic`, [Physlib/ClassicalMechanics/ConfigurationSpace/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/ConfigurationSpace/Basic.lean): 2 declarations (1 instance with no name), 1 with a docstring.
 
 > Smooth manifolds without boundary.
 
@@ -26,7 +26,7 @@ The module `Physlib.ClassicalMechanics.ConfigurationSpace.Basic`, [Physlib/Class
 
 ## A. Configuration spaces
 
-**`ClassicalMechanics.ConfigurationSpace`**, a structure, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/ConfigurationSpace/Basic.lean#L46).
+**`ClassicalMechanics.ConfigurationSpace`**, a structure, [line 46](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/ConfigurationSpace/Basic.lean#L46).
 
 > A smooth manifold without boundary.
 
@@ -40,7 +40,7 @@ structure ConfigurationSpace (I : ModelWithCorners ℝ E H) where
   [boundarylessManifold : BoundarylessManifold I carrier]
 ```
 
-**An instance with no name**, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/ConfigurationSpace/Basic.lean#L56).
+**An instance with no name**, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/ConfigurationSpace/Basic.lean#L56).
 
 ```lean
 instance : CoeSort (ConfigurationSpace I) (Type _)
@@ -52,4 +52,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/ConfigurationSpace/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/ConfigurationSpace/Basic.lean)
+- [Physlib/ClassicalMechanics/ConfigurationSpace/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/ConfigurationSpace/Basic.lean)

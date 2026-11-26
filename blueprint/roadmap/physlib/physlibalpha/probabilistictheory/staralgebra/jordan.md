@@ -8,7 +8,7 @@ proof: formalized
 
 # The Jordan product of observables
 
-The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Jordan`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean): 27 declarations, 20 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Jordan`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean): 27 declarations, 20 with a docstring.
 
 > The Jordan product ½ (a b + b a) makes the self-adjoint elements a commutative Jordan ring.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Jordan`, [PhyslibAlpha/
 
 ## A. The anticommutator
 
-**`selfAdjoint.anticommutator`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L56).
+**`selfAdjoint.anticommutator`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L56).
 
 > The unnormalized anticommutator, retained as a low-level formula while `jordanMul` is the
 > canonical normalized Jordan product.
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Jordan`, [PhyslibAlpha/
 def anticommutator (a b : selfAdjoint A) : selfAdjoint A
 ```
 
-**`selfAdjoint.coe_anticommutator`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L62).
+**`selfAdjoint.coe_anticommutator`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L62).
 
 ```lean
 lemma coe_anticommutator (a b : selfAdjoint A) :
@@ -49,7 +49,7 @@ lemma coe_anticommutator (a b : selfAdjoint A) :
 
 ## B. The normalized Jordan product
 
-**`selfAdjoint.jordanMul`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L71).
+**`selfAdjoint.jordanMul`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L71).
 
 > The normalized Jordan product of two self-adjoint elements,
 > `a ∘ b := ½(ab + ba)`. It is self-adjoint regardless of whether `a` and `b` commute, since
@@ -59,7 +59,7 @@ lemma coe_anticommutator (a b : selfAdjoint A) :
 noncomputable def jordanMul (a b : selfAdjoint A) : selfAdjoint A
 ```
 
-**`selfAdjoint.val_jordanMul`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L75).
+**`selfAdjoint.val_jordanMul`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L75).
 
 ```lean
 lemma val_jordanMul (a b : selfAdjoint A) :
@@ -67,7 +67,7 @@ lemma val_jordanMul (a b : selfAdjoint A) :
       (2 : ℝ)⁻¹ • ((a : A) * (b : A) + (b : A) * (a : A))
 ```
 
-**`selfAdjoint.jordanMul_comm`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L81).
+**`selfAdjoint.jordanMul_comm`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L81).
 
 > The Jordan product is commutative.
 
@@ -75,7 +75,7 @@ lemma val_jordanMul (a b : selfAdjoint A) :
 lemma jordanMul_comm (a b : selfAdjoint A) : jordanMul a b = jordanMul b a
 ```
 
-**`selfAdjoint.one_jordanMul`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L86).
+**`selfAdjoint.one_jordanMul`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L86).
 
 > The unit of the ambient algebra is a unit for the normalized Jordan product.
 
@@ -83,7 +83,7 @@ lemma jordanMul_comm (a b : selfAdjoint A) : jordanMul a b = jordanMul b a
 lemma one_jordanMul (a : selfAdjoint A) : jordanMul 1 a = a
 ```
 
-**`selfAdjoint.jordanMul_one`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L94).
+**`selfAdjoint.jordanMul_one`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L94).
 
 > The normalized Jordan product has the same unit in its right argument.
 
@@ -93,7 +93,7 @@ lemma jordanMul_one (a : selfAdjoint A) : jordanMul a 1 = a
 
 ## C. Additivity, scalars and the Jordan identity
 
-**`selfAdjoint.jordanMul_add_right`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L100).
+**`selfAdjoint.jordanMul_add_right`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L100).
 
 > The Jordan product distributes over addition in its right argument.
 
@@ -102,7 +102,7 @@ lemma jordanMul_add_right (a b c : selfAdjoint A) :
     jordanMul a (b + c) = jordanMul a b + jordanMul a c
 ```
 
-**`selfAdjoint.jordanMul_add_left`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L107).
+**`selfAdjoint.jordanMul_add_left`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L107).
 
 > The Jordan product distributes over addition in its left argument.
 
@@ -111,7 +111,7 @@ lemma jordanMul_add_left (a b c : selfAdjoint A) :
     jordanMul (a + b) c = jordanMul a c + jordanMul b c
 ```
 
-**`selfAdjoint.anticommutator_smul_left`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L112).
+**`selfAdjoint.anticommutator_smul_left`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L112).
 
 ```lean
 lemma anticommutator_smul_left [SMulCommClass ℝ A A] [IsScalarTower ℝ A A]
@@ -119,7 +119,7 @@ lemma anticommutator_smul_left [SMulCommClass ℝ A A] [IsScalarTower ℝ A A]
     anticommutator (c • a) b = c • anticommutator a b
 ```
 
-**`selfAdjoint.anticommutator_smul_right`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L118).
+**`selfAdjoint.anticommutator_smul_right`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L118).
 
 ```lean
 lemma anticommutator_smul_right [SMulCommClass ℝ A A] [IsScalarTower ℝ A A]
@@ -127,7 +127,7 @@ lemma anticommutator_smul_right [SMulCommClass ℝ A A] [IsScalarTower ℝ A A]
     anticommutator a (c • b) = c • anticommutator a b
 ```
 
-**`selfAdjoint.anticommutator_identity`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L125).
+**`selfAdjoint.anticommutator_identity`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L125).
 
 ```lean
 lemma anticommutator_identity (a b : selfAdjoint A) :
@@ -135,7 +135,7 @@ lemma anticommutator_identity (a b : selfAdjoint A) :
       anticommutator a (anticommutator b (anticommutator a a))
 ```
 
-**`selfAdjoint.jordanMul_jordanMul_jordanMul_self`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L135).
+**`selfAdjoint.jordanMul_jordanMul_jordanMul_self`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L135).
 
 > The Jordan identity: `∘`-multiplication by `a` and by `a ∘ a` commute, i.e.
 > `(a ∘ b) ∘ (a ∘ a) = a ∘ (b ∘ (a ∘ a))`. This is the "weak associativity" law that survives
@@ -149,7 +149,7 @@ lemma jordanMul_jordanMul_jordanMul_self [SMulCommClass ℝ A A] [IsScalarTower 
 
 ## D. The Jordan product as a multiplication
 
-**`selfAdjoint.instMul`**, an instance, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L145).
+**`selfAdjoint.instMul`**, an instance, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L145).
 
 > The Jordan product as a scoped multiplication on `selfAdjoint A`.
 
@@ -157,13 +157,13 @@ lemma jordanMul_jordanMul_jordanMul_self [SMulCommClass ℝ A A] [IsScalarTower 
 noncomputable scoped instance instMul : Mul (selfAdjoint A)
 ```
 
-**`selfAdjoint.mul_def`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L148).
+**`selfAdjoint.mul_def`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L148).
 
 ```lean
 lemma mul_def (a b : selfAdjoint A) : a * b = jordanMul a b
 ```
 
-**`selfAdjoint.coe_mul`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L152).
+**`selfAdjoint.coe_mul`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L152).
 
 > Coercing the canonical Jordan product back to the ambient algebra gives the normalized
 > anticommutator.
@@ -174,7 +174,7 @@ lemma coe_mul (a b : selfAdjoint A) :
       (2 : ℝ)⁻¹ • ((a : A) * (b : A) + (b : A) * (a : A))
 ```
 
-**`selfAdjoint.jordanMul_smul_left`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L158).
+**`selfAdjoint.jordanMul_smul_left`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L158).
 
 > Real scalars pull out of the left argument of the normalized Jordan product.
 
@@ -183,7 +183,7 @@ lemma jordanMul_smul_left [SMulCommClass ℝ A A] [IsScalarTower ℝ A A]
     (c : ℝ) (a b : selfAdjoint A) : jordanMul (c • a) b = c • jordanMul a b
 ```
 
-**`selfAdjoint.jordanMul_smul_right`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L165).
+**`selfAdjoint.jordanMul_smul_right`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L165).
 
 > Real scalars pull out of the right argument of the normalized Jordan product.
 
@@ -193,7 +193,7 @@ lemma jordanMul_smul_right [SMulCommClass ℝ A A] [IsScalarTower ℝ A A]
     jordanMul a (c • b) = c • jordanMul a b
 ```
 
-**`selfAdjoint.jordanMul_jordanMul_right`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L173).
+**`selfAdjoint.jordanMul_jordanMul_right`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L173).
 
 > Expanding one right-nested Jordan product produces a common factor `1 / 4` and a nested
 > unnormalized anticommutator. This is useful for associative calculations in concrete
@@ -208,13 +208,13 @@ lemma jordanMul_jordanMul_right [SMulCommClass ℝ A A] [IsScalarTower ℝ A A]
 
 ## E. The Jordan ring structure
 
-**`selfAdjoint.jordanMul_zero`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L186).
+**`selfAdjoint.jordanMul_zero`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L186).
 
 ```lean
 lemma jordanMul_zero (a : selfAdjoint A) : jordanMul a 0 = 0
 ```
 
-**`selfAdjoint.instNonUnitalNonAssocCommRing`**, an instance, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L192).
+**`selfAdjoint.instNonUnitalNonAssocCommRing`**, an instance, [line 192](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L192).
 
 > The normalized product gives the self-adjoint part its canonical commutative,
 > nonassociative ring structure.
@@ -224,7 +224,7 @@ noncomputable scoped instance instNonUnitalNonAssocCommRing :
     NonUnitalNonAssocCommRing (selfAdjoint A)
 ```
 
-**`selfAdjoint.instNonAssocRing`**, an instance, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L205).
+**`selfAdjoint.instNonAssocRing`**, an instance, [line 205](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L205).
 
 > The canonical Jordan product is unital with the inherited self-adjoint unit. Bundling this as
 > `NonAssocCommRing` prevents stronger layers from carrying an unrelated `One` plus duplicated unit
@@ -234,7 +234,7 @@ noncomputable scoped instance instNonUnitalNonAssocCommRing :
 noncomputable scoped instance instNonAssocRing : NonAssocRing (selfAdjoint A)
 ```
 
-**`selfAdjoint.instNonAssocCommRing`**, an instance, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L221).
+**`selfAdjoint.instNonAssocCommRing`**, an instance, [line 221](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L221).
 
 > The coherent unital commutative nonassociative ring structure on the self-adjoint part.
 
@@ -242,7 +242,7 @@ noncomputable scoped instance instNonAssocRing : NonAssocRing (selfAdjoint A)
 noncomputable scoped instance instNonAssocCommRing : NonAssocCommRing (selfAdjoint A)
 ```
 
-**`selfAdjoint.instSMulCommClass`**, an instance, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L226).
+**`selfAdjoint.instSMulCommClass`**, an instance, [line 226](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L226).
 
 > Real scalar multiplication commutes with Jordan multiplication.
 
@@ -250,7 +250,7 @@ noncomputable scoped instance instNonAssocCommRing : NonAssocCommRing (selfAdjoi
 scoped instance instSMulCommClass : SMulCommClass ℝ (selfAdjoint A) (selfAdjoint A)
 ```
 
-**`selfAdjoint.instIsScalarTower`**, an instance, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L230).
+**`selfAdjoint.instIsScalarTower`**, an instance, [line 230](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L230).
 
 > Real scalar multiplication is a tower over Jordan multiplication.
 
@@ -258,7 +258,7 @@ scoped instance instSMulCommClass : SMulCommClass ℝ (selfAdjoint A) (selfAdjoi
 scoped instance instIsScalarTower : IsScalarTower ℝ (selfAdjoint A) (selfAdjoint A)
 ```
 
-**`selfAdjoint.instIsCommJordan`**, an instance, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L236).
+**`selfAdjoint.instIsCommJordan`**, an instance, [line 236](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L236).
 
 > The Jordan product makes `selfAdjoint A` a commutative Jordan ring, in the sense of mathlib's
 > `IsCommJordan`: this is the connection from the abstract axioms in `Mathlib.Algebra.Jordan.Basic`
@@ -270,7 +270,7 @@ scoped instance instIsCommJordan : IsCommJordan (selfAdjoint A)
 
 ## F. The Jordan product of observables
 
-**`PhyslibAlpha.ProbabilisticTheory.Observable.jordanMul`**, an abbrev, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L248).
+**`PhyslibAlpha.ProbabilisticTheory.Observable.jordanMul`**, an abbrev, [line 248](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean#L248).
 
 > The Jordan product of observables.
 
@@ -286,4 +286,4 @@ noncomputable abbrev Observable.jordanMul {A : Type*} [Ring A] [StarRing A] [Mod
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean)
+- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean)

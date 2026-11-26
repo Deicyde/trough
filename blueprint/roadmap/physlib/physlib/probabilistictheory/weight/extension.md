@@ -8,7 +8,7 @@ proof: formalized
 
 # Extending finite weights (Physlib)
 
-The module `Physlib.ProbabilisticTheory.Weight.Extension`, [Physlib/ProbabilisticTheory/Weight/Extension.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Weight/Extension.lean): 4 declarations, 2 with a docstring.
+The module `Physlib.ProbabilisticTheory.Weight.Extension`, [Physlib/ProbabilisticTheory/Weight/Extension.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Weight/Extension.lean): 4 declarations, 2 with a docstring.
 
 > Finite weights extend to real-linear functionals on all observables.
 
@@ -25,7 +25,7 @@ The module `Physlib.ProbabilisticTheory.Weight.Extension`, [Physlib/Probabilisti
 
 ## A. Extending finite weights
 
-**`Weight.IsFinite.toReal`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Weight/Extension.lean#L45).
+**`Weight.IsFinite.toReal`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Weight/Extension.lean#L45).
 
 > A finite weight, read as a real-valued `ℝ≥0`-linear map on the positive cone.
 
@@ -33,13 +33,13 @@ The module `Physlib.ProbabilisticTheory.Weight.Extension`, [Physlib/Probabilisti
 noncomputable def IsFinite.toReal (hw : w.IsFinite) : PosCone P →ₗ[ℝ≥0] ℝ
 ```
 
-**`Weight.IsFinite.toReal_apply`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Weight/Extension.lean#L51).
+**`Weight.IsFinite.toReal_apply`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Weight/Extension.lean#L51).
 
 ```lean
 lemma IsFinite.toReal_apply (hw : w.IsFinite) (A : PosCone P) : hw.toReal A = (w A).toReal
 ```
 
-**`Weight.IsFinite.toLinearMap`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Weight/Extension.lean#L54).
+**`Weight.IsFinite.toLinearMap`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Weight/Extension.lean#L54).
 
 > The `ℝ`-linear map extending a finite weight.
 
@@ -47,7 +47,7 @@ lemma IsFinite.toReal_apply (hw : w.IsFinite) (A : PosCone P) : hw.toReal A = (w
 noncomputable def IsFinite.toLinearMap (hw : w.IsFinite) : P.Observables →ₗ[ℝ] ℝ
 ```
 
-**`Weight.IsFinite.toLinearMap_coe`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Weight/Extension.lean#L58).
+**`Weight.IsFinite.toLinearMap_coe`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Weight/Extension.lean#L58).
 
 ```lean
 lemma IsFinite.toLinearMap_coe (hw : w.IsFinite) (A : PosCone P) :
@@ -61,4 +61,4 @@ lemma IsFinite.toLinearMap_coe (hw : w.IsFinite) (A : PosCone P) :
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/Weight/Extension.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Weight/Extension.lean)
+- [Physlib/ProbabilisticTheory/Weight/Extension.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Weight/Extension.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The Laplace transform of the sine propagation function
 
-The module `PhyslibAlpha.Mathematics.SpecialFunctions.SincPropagator.Laplace`, [PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Laplace.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Laplace.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.Mathematics.SpecialFunctions.SincPropagator.Laplace`, [PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Laplace.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Laplace.lean): 3 declarations, 3 with a docstring.
 
 > The transform of `t ↦ sin (ω t) / ω` over the positive half line is `1 / (ω² - z²)`.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.Mathematics.SpecialFunctions.SincPropagator.Laplace`, [
 
 > - `integral_exp_mul_sincPropagator` : the transform for a nonzero frequency.
 
-**`Real.integral_exp_mul_sincPropagator`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Laplace.lean#L50).
+**`Real.integral_exp_mul_sincPropagator`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Laplace.lean#L50).
 
 > The Laplace transform of the sine propagation function for a nonzero frequency.
 
@@ -41,7 +41,7 @@ lemma integral_exp_mul_sincPropagator {ω : ℝ} (hω : ω ≠ 0) {z : ℂ} (hz 
       1 / ((ω : ℂ) ^ 2 - z ^ 2)
 ```
 
-**`Real.integral_exp_mul_sincPropagator_zero`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Laplace.lean#L93).
+**`Real.integral_exp_mul_sincPropagator_zero`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Laplace.lean#L93).
 
 > The Laplace transform of the sine propagation function at zero frequency.
 
@@ -51,7 +51,7 @@ lemma integral_exp_mul_sincPropagator_zero {z : ℂ} (hz : 0 < z.im) :
       1 / ((0 : ℂ) ^ 2 - z ^ 2)
 ```
 
-**`Real.integral_exp_mul_sincPropagator_all`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Laplace.lean#L157).
+**`Real.integral_exp_mul_sincPropagator_all`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Laplace.lean#L157).
 
 > The Laplace transform of the sine propagation function for every frequency.
 
@@ -67,4 +67,4 @@ lemma integral_exp_mul_sincPropagator_all (ω : ℝ) {z : ℂ} (hz : 0 < z.im) :
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Laplace.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Laplace.lean)
+- [PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Laplace.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Laplace.lean)

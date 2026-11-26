@@ -1,45 +1,59 @@
 ---
 declaration: module
 origin: cited
-lean: SpaceTimeAlgebra.mapMatrix_constantCoeff_star, SpaceTimeAlgebra.coeff_sum_X_smul_map_pderiv, SpaceTimeAlgebra.matrix_eq_zero_of_euler_eq_mul_add_mul, SpaceTimeAlgebra.exists_matrix_eulerTransport, SpaceTimeAlgebra.coeff_entry_eq_zero_of_map_pderiv_eq_mul, SpaceTimeAlgebra.matrix_map_truncation_eq_one, SpaceTimeAlgebra.matrix_map_pderiv_mul, SpaceTimeAlgebra.sum_X_smul_map_pderiv_mul
+lean: SpaceTimeAlgebra.mapMatrix_constantCoeff_star, SpaceTimeAlgebra.coeff_sum_X_smul_map_pderiv, SpaceTimeAlgebra.coeff_mul_apply_congr_left, SpaceTimeAlgebra.coeff_mul_apply_congr_right, SpaceTimeAlgebra.matrix_eq_zero_of_euler_eq_mul_add_mul, SpaceTimeAlgebra.eulerStep, SpaceTimeAlgebra.coeff_eulerStep_apply, SpaceTimeAlgebra.exists_matrix_eulerTransport
 statement: formalized
 proof: formalized
 ---
 
 # Matrices over the jet ring
 
-The module `PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Matrix`, [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean): 33 declarations, 30 with a docstring.
+The module `PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Matrix`, [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean): 38 declarations, 36 with a docstring.
+
+> Matrices of jets, their derivatives and Taylor coefficients, and the Euler (radial) transport.
 
 ## i. Overview
 
-> Results about matrices with entries in `SpaceTimeAlgebra`, chiefly the Euler (radial) transport: a
-> matrix of jets vanishing at the base point is the radial logarithmic derivative of a formal
-> fundamental solution.
+> A gauge transformation near a point is a matrix with entries in `SpaceTimeAlgebra`, the jets at
+> that point. This file collects what is needed to work with such matrices entrywise.
+>
+> The central construction is the Euler (radial) transport. The Euler operator
+> `E = ∑_ρ x_ρ ∂_ρ` multiplies a Taylor coefficient of degree `n` by `n`. Hence a matrix of jets
+> `W` vanishing at the base point with `E W = A W + W B`, for `A` and `B` vanishing at the base
+> point, is zero, since each of its coefficients is a multiple of coefficients of lower degree.
+> The same recursion, run forwards, solves the radial system `E U = R U` with `U = 1` at the base
+> point. This fundamental solution is unitary when `R` is anti-hermitian and has determinant one
+> when `R` is traceless, and its Maurer–Cartan matrix `(∂_μ U) U⁻¹` solves a linear radial system.
+> This is how a Lie algebra jet is integrated radially into a gauge jet, in
+> `GlobalGaugeGroup.exists_sum_X_smul_maurerCartan_eq`.
+>
+> The remaining sections give the Leibniz rule for the Taylor coefficients of a product of
+> matrices of jets, the derivatives of conjugates and inverses in terms of Maurer–Cartan
+> matrices, and the invertible matrices of jets.
 
 ## ii. Key results
 
-> - `mapMatrix_constantCoeff_star` : entrywise evaluation at the base point commutes with the
->   conjugate transpose
-> - `coeff_sum_X_smul_map_pderiv` : the Euler operator on matrices of jets acts entrywise on Taylor
->   coefficients as multiplication by the total degree
-> - `matrix_eq_zero_of_euler_eq_mul_add_mul` : the vanishing principle for the Euler operator: a
->   matrix of jets vanishing at the base point and satisfying `E W = A W + W B` with `A`, `B`
->   vanishing at the base point is zero
-> - `exists_matrix_eulerTransport` : the Euler (radial) transport of a jet matrix `R` vanishing at the
->   base point: a fundamental solution of the radial system `E U = R U` based at the identity, built
->   order-by-order by the Euler recursion
-> - `map_pderiv_conj_of_mul_eq_one` : the derivative of the conjugate of a matrix of jets by an
->   invertible matrix of jets, in terms of its Maurer–Cartan matrix
-> - `unitsEval`, `unitsOfConstant` : evaluation at the base point and the inclusion of constants,
->   for invertible matrices
+> - `SpaceTimeAlgebra.matrix_eq_zero_of_euler_eq_mul_add_mul` : the vanishing principle for the
+>   Euler operator.
+> - `SpaceTimeAlgebra.exists_matrix_eulerTransport` : the Euler transport of a matrix of jets
+>   vanishing at the base point.
+> - `SpaceTimeAlgebra.eulerTransport_mul_star`, `SpaceTimeAlgebra.eulerTransport_det` : the Euler
+>   transport of an anti-hermitian, traceless matrix is unitary of determinant one.
+> - `SpaceTimeAlgebra.euler_map_pderiv_mul_inv_of_eulerTransport` : the radial system solved by
+>   the Maurer–Cartan matrix of an Euler transport.
+> - `SpaceTimeAlgebra.map_coeff_mul` : the Taylor coefficients of a product of matrices of jets.
+> - `SpaceTimeAlgebra.map_pderiv_conj_of_mul_eq_one` : the derivative of the conjugate of a
+>   matrix of jets by an invertible one, in terms of its Maurer–Cartan matrix.
+> - `SpaceTimeAlgebra.unitsEval`, `SpaceTimeAlgebra.unitsOfConstant` : evaluation at the base
+>   point and the inclusion of constants, for invertible matrices.
 
 ## iv. References
 
 > * None.
 
-## A. The Euler operator toolkit on matrices
+## A. The Euler operator and the Euler transport
 
-**`SpaceTimeAlgebra.mapMatrix_constantCoeff_star`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L66).
+**`SpaceTimeAlgebra.mapMatrix_constantCoeff_star`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L80).
 
 > Entrywise evaluation at the base point commutes with the conjugate transpose.
 
@@ -50,7 +64,7 @@ lemma mapMatrix_constantCoeff_star {n : Type} [Fintype n] [DecidableEq n]
       star ((constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix A)
 ```
 
-**`SpaceTimeAlgebra.coeff_sum_X_smul_map_pderiv`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L75).
+**`SpaceTimeAlgebra.coeff_sum_X_smul_map_pderiv`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L89).
 
 > The Euler operator on matrices of jets acts entrywise on Taylor coefficients as
 > multiplication by the total degree.
@@ -62,9 +76,38 @@ lemma coeff_sum_X_smul_map_pderiv {κ : Type}
       ((Finsupp.degree p : ℕ) : ℂ) * coeff p (M i j)
 ```
 
-**`SpaceTimeAlgebra.matrix_eq_zero_of_euler_eq_mul_add_mul`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L89).
+**`SpaceTimeAlgebra.coeff_mul_apply_congr_left`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L102).
 
-> The vanishing principle for the Euler operator: a matrix of jets vanishing at the
+> Multiplying on the left by a matrix of jets vanishing at the base point raises degrees, so
+> the Taylor coefficient of `R M` in degree `|p|` only depends on the coefficients of `M` of
+> lower degree.
+
+```lean
+lemma coeff_mul_apply_congr_left {κ : Type} [Fintype κ] {R : Matrix κ κ SpaceTimeAlgebra}
+    (hR0 : ∀ i j, constantCoeff (R i j) = 0) (M N : Matrix κ κ SpaceTimeAlgebra)
+    (p : (Fin 1 ⊕ Fin 3) →₀ ℕ)
+    (h : ∀ (i j : κ) (q : (Fin 1 ⊕ Fin 3) →₀ ℕ), Finsupp.degree q < Finsupp.degree p →
+      coeff q (M i j) = coeff q (N i j)) (i j : κ) :
+    coeff p ((R * M) i j) = coeff p ((R * N) i j)
+```
+
+**`SpaceTimeAlgebra.coeff_mul_apply_congr_right`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L119).
+
+> Multiplying on the right by a matrix of jets vanishing at the base point raises degrees.
+> The transpose of `coeff_mul_apply_congr_left`.
+
+```lean
+lemma coeff_mul_apply_congr_right {κ : Type} [Fintype κ] {B : Matrix κ κ SpaceTimeAlgebra}
+    (hB0 : ∀ i j, constantCoeff (B i j) = 0) (M N : Matrix κ κ SpaceTimeAlgebra)
+    (p : (Fin 1 ⊕ Fin 3) →₀ ℕ)
+    (h : ∀ (i j : κ) (q : (Fin 1 ⊕ Fin 3) →₀ ℕ), Finsupp.degree q < Finsupp.degree p →
+      coeff q (M i j) = coeff q (N i j)) (i j : κ) :
+    coeff p ((M * B) i j) = coeff p ((N * B) i j)
+```
+
+**`SpaceTimeAlgebra.matrix_eq_zero_of_euler_eq_mul_add_mul`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L133).
+
+> The vanishing principle for the Euler operator. A matrix of jets vanishing at the
 > base point and satisfying `E W = A W + W B` with `A`, `B` vanishing at the base point
 > is zero. Each Taylor coefficient of `W` is a multiple of coefficients of strictly
 > smaller degree, so all vanish by strong induction on the degree.
@@ -78,9 +121,31 @@ lemma matrix_eq_zero_of_euler_eq_mul_add_mul {κ : Type} [Fintype κ]
     W = 0
 ```
 
-**`SpaceTimeAlgebra.exists_matrix_eulerTransport`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L150).
+**`SpaceTimeAlgebra.eulerStep`**, a def, [line 176](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L176).
 
-> The Euler (radial) transport of a jet matrix `R` vanishing at the base point:
+> One step of the Euler recursion for the radial system `E U = R U`. It is the identity
+> plus `R M` with each Taylor coefficient of degree `n > 0` divided by `n`, and the Euler
+> transport of `R` is its fixed point, reached degree by degree.
+
+```lean
+noncomputable def eulerStep {κ : Type} [Fintype κ] [DecidableEq κ]
+    (R M : Matrix κ κ SpaceTimeAlgebra) : Matrix κ κ SpaceTimeAlgebra
+```
+
+**`SpaceTimeAlgebra.coeff_eulerStep_apply`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L182).
+
+> The Taylor coefficients of one step of the Euler recursion.
+
+```lean
+lemma coeff_eulerStep_apply {κ : Type} [Fintype κ] [DecidableEq κ]
+    (R M : Matrix κ κ SpaceTimeAlgebra) (i j : κ) (p : (Fin 1 ⊕ Fin 3) →₀ ℕ) :
+    coeff p (eulerStep R M i j) = coeff p ((1 : Matrix κ κ SpaceTimeAlgebra) i j) +
+      if p = 0 then 0 else ((Finsupp.degree p : ℕ) : ℂ)⁻¹ * coeff p ((R * M) i j)
+```
+
+**`SpaceTimeAlgebra.exists_matrix_eulerTransport`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L192).
+
+> The Euler (radial) transport of a jet matrix `R` vanishing at the base point,
 > a fundamental solution of the radial system `E U = R U` based at the identity,
 > built order-by-order by the Euler recursion.
 
@@ -91,11 +156,23 @@ lemma exists_matrix_eulerTransport {κ : Type} [Fintype κ] [DecidableEq κ]
       ∑ ρ, (X ρ : SpaceTimeAlgebra) • U.map (pderiv ρ) = R * U
 ```
 
+**`SpaceTimeAlgebra.map_pderiv_sum_X_smul_map_pderiv`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L239).
+
+> The formal derivative `∂_μ` and the Euler operator `E` on matrices of jets commute up to
+> `∂_μ` itself, `∂_μ (E M) = E (∂_μ M) + ∂_μ M`, since `∂_μ x_ρ = δ_{μρ}`.
+
+```lean
+lemma map_pderiv_sum_X_smul_map_pderiv {κ : Type} (μ : Fin 1 ⊕ Fin 3)
+    (M : Matrix κ κ SpaceTimeAlgebra) :
+    (∑ ρ, (X ρ : SpaceTimeAlgebra) • M.map (pderiv ρ)).map (pderiv μ) =
+      ∑ ρ, (X ρ : SpaceTimeAlgebra) • (M.map (pderiv μ)).map (pderiv ρ) + M.map (pderiv μ)
+```
+
 ## B. The Euler vanishing principle by degree on matrices
 
-**`SpaceTimeAlgebra.coeff_entry_eq_zero_of_map_pderiv_eq_mul`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L222).
+**`SpaceTimeAlgebra.coeff_entry_eq_zero_of_map_pderiv_eq_mul`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L260).
 
-> The matrix form of `coeff_eq_zero_of_pderiv_eq_mul`: the entries of a matrix of power
+> The matrix form of `coeff_eq_zero_of_pderiv_eq_mul`. The entries of a matrix of power
 > series satisfying `∂_ρ A = X_ρ A`, with the `X_ρ` vanishing below degree `n`, have no
 > coefficients in nonzero degree up to `n`.
 
@@ -109,7 +186,7 @@ lemma coeff_entry_eq_zero_of_map_pderiv_eq_mul {κ : Type} [Fintype κ] {n : ℕ
     coeff p (A i j) = 0
 ```
 
-**`SpaceTimeAlgebra.matrix_map_truncation_eq_one`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L236).
+**`SpaceTimeAlgebra.matrix_map_truncation_eq_one`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L274).
 
 > A matrix of power series with identity value and no coefficients in nonzero degree up
 > to `n` truncates to the identity.
@@ -124,9 +201,9 @@ lemma matrix_map_truncation_eq_one {κ : Type} [Fintype κ] [DecidableEq κ] {n 
         (SpaceTimeAlgebra.truncation n)
 ```
 
-## C. Unitarity and determinant of the Euler transport
+## C. Unitarity, determinant and Maurer–Cartan matrix of the Euler transport
 
-**`SpaceTimeAlgebra.matrix_map_pderiv_mul`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L266).
+**`SpaceTimeAlgebra.matrix_map_pderiv_mul`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L304).
 
 > The entrywise Leibniz rule for matrix products of jets.
 
@@ -136,7 +213,7 @@ lemma matrix_map_pderiv_mul {κ : Type} [Fintype κ] (ρ : Fin 1 ⊕ Fin 3)
     (M * N).map (pderiv ρ) = M.map (pderiv ρ) * N + M * N.map (pderiv ρ)
 ```
 
-**`SpaceTimeAlgebra.sum_X_smul_map_pderiv_mul`**, a lemma, [line 275](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L275).
+**`SpaceTimeAlgebra.sum_X_smul_map_pderiv_mul`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L313).
 
 > The Euler operator on matrices of jets is a derivation.
 
@@ -148,7 +225,7 @@ lemma sum_X_smul_map_pderiv_mul {κ : Type} [Fintype κ]
         M * ∑ ρ, (X ρ : SpaceTimeAlgebra) • N.map (pderiv ρ)
 ```
 
-**`SpaceTimeAlgebra.sum_X_smul_map_pderiv_star`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L285).
+**`SpaceTimeAlgebra.sum_X_smul_map_pderiv_star`**, a lemma, [line 323](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L323).
 
 > The Euler operator commutes with the conjugate transpose.
 
@@ -159,7 +236,7 @@ lemma sum_X_smul_map_pderiv_star {κ : Type}
       star (∑ ρ, (X ρ : SpaceTimeAlgebra) • M.map (pderiv ρ))
 ```
 
-**`SpaceTimeAlgebra.sum_X_smul_map_pderiv_one`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L294).
+**`SpaceTimeAlgebra.sum_X_smul_map_pderiv_one`**, a lemma, [line 332](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L332).
 
 > The Euler operator kills the identity matrix.
 
@@ -168,10 +245,10 @@ lemma sum_X_smul_map_pderiv_one {κ : Type} [DecidableEq κ] :
     ∑ ρ, (X ρ : SpaceTimeAlgebra) • (1 : Matrix κ κ SpaceTimeAlgebra).map (pderiv ρ) = 0
 ```
 
-**`SpaceTimeAlgebra.eulerTransport_mul_star`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L303).
+**`SpaceTimeAlgebra.eulerTransport_mul_star`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L341).
 
 > A fundamental solution of the radial system `E U = R U` based at the identity is
-> unitary when `R` is anti-hermitian: `U U† − 1` vanishes at the base point and
+> unitary when `R` is anti-hermitian. `U U† − 1` vanishes at the base point and
 > satisfies a homogeneous linear radial system, so it vanishes identically.
 
 ```lean
@@ -183,10 +260,10 @@ lemma eulerTransport_mul_star {κ : Type} [Fintype κ] [DecidableEq κ]
     U * star U = 1
 ```
 
-**`SpaceTimeAlgebra.sum_X_smul_mcMatrix_of_eulerTransport`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L330).
+**`SpaceTimeAlgebra.sum_X_smul_mcMatrix_of_eulerTransport`**, a lemma, [line 368](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L368).
 
 > The radial Maurer–Cartan component of a unitary fundamental solution of the radial
-> system `E V = −i P V` is `P`: `∑_μ x_μ · i (∂_μ V) V† = P`.
+> system `E V = −i P V` is `P`, `∑_μ x_μ · i (∂_μ V) V† = P`.
 
 ```lean
 lemma sum_X_smul_mcMatrix_of_eulerTransport {κ : Type} [Fintype κ] [DecidableEq κ]
@@ -195,10 +272,38 @@ lemma sum_X_smul_mcMatrix_of_eulerTransport {κ : Type} [Fintype κ] [DecidableE
     ∑ μ, (X μ : SpaceTimeAlgebra) • (Complex.I • (V.map (pderiv μ) * star V)) = P
 ```
 
-**`SpaceTimeAlgebra.eulerTransport_det`**, a lemma, [line 346](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L346).
+**`SpaceTimeAlgebra.sum_X_smul_map_pderiv_mul_inv_of_eulerTransport`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L383).
+
+> The radial component of the Maurer–Cartan matrix of an invertible solution `V` of the
+> radial system `E V = R V` is `R`, `∑_μ x_μ (∂_μ V) V⁻¹ = R`.
+
+```lean
+lemma sum_X_smul_map_pderiv_mul_inv_of_eulerTransport {κ : Type} [Fintype κ] [DecidableEq κ]
+    {R V W : Matrix κ κ SpaceTimeAlgebra} (hVW : V * W = 1)
+    (hEV : ∑ μ, (X μ : SpaceTimeAlgebra) • V.map (pderiv μ) = R * V) :
+    ∑ μ, (X μ : SpaceTimeAlgebra) • (V.map (pderiv μ) * W) = R
+```
+
+**`SpaceTimeAlgebra.euler_map_pderiv_mul_inv_of_eulerTransport`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L393).
+
+> The Maurer–Cartan matrix `ω = (∂_μ V) V⁻¹` of an invertible solution `V` of the radial
+> system `E V = R V` solves the linear radial system `E ω + ω = ∂_μ R + R ω − ω R`. This is
+> `∂_μ` of the radial system, with `∂_μ E = E ∂_μ + ∂_μ` and `E V⁻¹ = −V⁻¹ R`.
+
+```lean
+lemma euler_map_pderiv_mul_inv_of_eulerTransport {κ : Type} [Fintype κ] [DecidableEq κ]
+    (μ : Fin 1 ⊕ Fin 3) {R V W : Matrix κ κ SpaceTimeAlgebra} (hVW : V * W = 1)
+    (hWV : W * V = 1)
+    (hEV : ∑ ρ, (X ρ : SpaceTimeAlgebra) • V.map (pderiv ρ) = R * V) :
+    ∑ ρ, (X ρ : SpaceTimeAlgebra) • (V.map (pderiv μ) * W).map (pderiv ρ) +
+        V.map (pderiv μ) * W =
+      R.map (pderiv μ) + (R * (V.map (pderiv μ) * W) - V.map (pderiv μ) * W * R)
+```
+
+**`SpaceTimeAlgebra.eulerTransport_det`**, a lemma, [line 422](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L422).
 
 > A fundamental solution of the radial system `E U = R U` based at the identity has
-> determinant one when `R` is traceless: by Jacobi's formula the determinant is killed
+> determinant one when `R` is traceless. By Jacobi's formula the determinant is killed
 > by the Euler operator, so it is the constant `1`.
 
 ```lean
@@ -214,7 +319,7 @@ lemma eulerTransport_det {κ : Type} [Fintype κ] [DecidableEq κ]
 
 ## D. The Leibniz rule at the base point for matrices of power series
 
-**`SpaceTimeAlgebra.matrix_multiset_sum_apply`**, a lemma, [line 382](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L382).
+**`SpaceTimeAlgebra.matrix_multiset_sum_apply`**, a lemma, [line 458](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L458).
 
 > The entry of a multiset sum of matrices is the multiset sum of the entries.
 
@@ -224,9 +329,9 @@ lemma matrix_multiset_sum_apply {κ α : Type*} [AddCommMonoid α]
     m.sum i j = (m.map fun A => A i j).sum
 ```
 
-**`SpaceTimeAlgebra.matrix_constantCoeff_iteratedPDeriv_mul`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L393).
+**`SpaceTimeAlgebra.matrix_constantCoeff_iteratedPDeriv_mul`**, a lemma, [line 469](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L469).
 
-> The matrix Leibniz rule at the base point: the base-point Taylor coefficients of a
+> The matrix Leibniz rule at the base point. The base-point Taylor coefficients of a
 > product of matrices of jets are the antidiagonal convolution of the base-point
 > coefficients of the factors.
 
@@ -239,40 +344,37 @@ lemma matrix_constantCoeff_iteratedPDeriv_mul {κ : Type} [Fintype κ]
             (N.map fun f => constantCoeff (iteratedPDeriv p.2 f))).sum
 ```
 
-## E. Conjugation, scalars and derivatives of matrices of jets
+**`SpaceTimeAlgebra.map_coeff_mul`**, a lemma, [line 485](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L485).
 
-**`SpaceTimeAlgebra.mapMatrix_C_star`**, a lemma, [line 418](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L418).
-
-> Entrywise inclusion of constants commutes with the conjugate transpose.
-
-```lean
-lemma mapMatrix_C_star [Fintype κ] [DecidableEq κ] (A : Matrix κ κ ℂ) :
-    (C : ℂ →+* SpaceTimeAlgebra).mapMatrix (star A) = star
-        ((C : ℂ →+* SpaceTimeAlgebra).mapMatrix A)
-```
-
-**`SpaceTimeAlgebra.mapMatrix_C_smul`**, a lemma, [line 425](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L425).
-
-> Entrywise inclusion of constants commutes with complex scalars.
+> The Taylor coefficients of a product of matrices of jets are the antidiagonal
+> convolution of the Taylor coefficients of the factors.
 
 ```lean
-lemma mapMatrix_C_smul [Fintype κ] [DecidableEq κ] (c : ℂ) (M : Matrix κ κ ℂ) :
-    (C : ℂ →+* SpaceTimeAlgebra).mapMatrix (c • M) = c •
-        (C : ℂ →+* SpaceTimeAlgebra).mapMatrix M
+lemma map_coeff_mul {κ : Type} [Fintype κ] (M N : Matrix κ κ SpaceTimeAlgebra)
+    (p : (Fin 1 ⊕ Fin 3) →₀ ℕ) :
+    (M * N).map (coeff p) =
+      ∑ x ∈ Finset.antidiagonal p, M.map (coeff x.1) * N.map (coeff x.2)
 ```
 
-**`SpaceTimeAlgebra.mapMatrix_constantCoeff_smul`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L433).
+**`SpaceTimeAlgebra.matrix_constantCoeff_iteratedPDeriv_commutator`**, a lemma, [line 495](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L495).
 
-> The entrywise constant coefficient commutes with complex scalars.
+> The matrix Leibniz rule at the base point for a commutator. The base-point Taylor
+> coefficients of `M N − N M` are sums of commutators of base-point Taylor coefficients.
 
 ```lean
-lemma mapMatrix_constantCoeff_smul [Fintype κ] [DecidableEq κ] (c : ℂ)
-    (M : Matrix κ κ SpaceTimeAlgebra) :
-    (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix (c • M)
-      = c • (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix M
+lemma matrix_constantCoeff_iteratedPDeriv_commutator {κ : Type} [Fintype κ]
+    (s : Multiset (Fin 1 ⊕ Fin 3)) (M N : Matrix κ κ SpaceTimeAlgebra) :
+    ((M * N - N * M).map fun f => constantCoeff (iteratedPDeriv s f))
+      = (s.antidiagonal.map fun p =>
+          (M.map fun f => constantCoeff (iteratedPDeriv p.1 f)) *
+            (N.map fun f => constantCoeff (iteratedPDeriv p.2 f)) -
+          (N.map fun f => constantCoeff (iteratedPDeriv p.2 f)) *
+            (M.map fun f => constantCoeff (iteratedPDeriv p.1 f))).sum
 ```
 
-**`SpaceTimeAlgebra.star_map_pderiv`**, a lemma, [line 441](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L441).
+## E. Conjugation and derivatives of matrices of jets
+
+**`SpaceTimeAlgebra.star_map_pderiv`**, a lemma, [line 525](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L525).
 
 > The entrywise derivative commutes with the conjugate transpose.
 
@@ -281,16 +383,7 @@ lemma star_map_pderiv (μ : Fin 1 ⊕ Fin 3) (A : Matrix κ κ SpaceTimeAlgebra)
     star (A.map (pderiv μ)) = (star A).map (pderiv μ)
 ```
 
-**`SpaceTimeAlgebra.map_pderiv_smul`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L448).
-
-> Pulling a complex scalar out of the entrywise derivative.
-
-```lean
-lemma map_pderiv_smul (μ : Fin 1 ⊕ Fin 3) (c : ℂ) (M : Matrix κ κ SpaceTimeAlgebra) :
-    (c • M).map (pderiv μ) = c • M.map (pderiv μ)
-```
-
-**`SpaceTimeAlgebra.map_pderiv_sub`**, a lemma, [line 453](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L453).
+**`SpaceTimeAlgebra.map_pderiv_sub`**, a lemma, [line 532](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L532).
 
 > The entrywise derivative of a difference.
 
@@ -299,10 +392,10 @@ lemma map_pderiv_sub (μ : Fin 1 ⊕ Fin 3) (M N : Matrix κ κ SpaceTimeAlgebra
     (M - N).map (pderiv μ) = M.map (pderiv μ) - N.map (pderiv μ)
 ```
 
-**`SpaceTimeAlgebra.map_pderiv_of_mul_eq_one`**, a lemma, [line 460](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L460).
+**`SpaceTimeAlgebra.map_pderiv_of_mul_eq_one`**, a lemma, [line 539](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L539).
 
 > The entrywise derivative of the inverse `V` of a matrix of jets `U`, through the
-> differentiated relation `U V = 1`: `∂_μ V = −V (∂_μ U) V`.
+> differentiated relation `U V = 1`, `∂_μ V = −V (∂_μ U) V`.
 
 ```lean
 lemma map_pderiv_of_mul_eq_one [Fintype κ] [DecidableEq κ] (μ : Fin 1 ⊕ Fin 3)
@@ -310,7 +403,7 @@ lemma map_pderiv_of_mul_eq_one [Fintype κ] [DecidableEq κ] (μ : Fin 1 ⊕ Fin
     V.map (pderiv μ) = -(V * U.map (pderiv μ) * V)
 ```
 
-**`SpaceTimeAlgebra.map_pderiv_star_of_unitary`**, a lemma, [line 475](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L475).
+**`SpaceTimeAlgebra.map_pderiv_star_of_unitary`**, a lemma, [line 554](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L554).
 
 > The entrywise derivative of the conjugate transpose of a unitary matrix, through the
 > differentiated unitarity relation.
@@ -322,10 +415,10 @@ lemma map_pderiv_star_of_unitary [Fintype κ] [DecidableEq κ] (μ : Fin 1 ⊕ F
     (star U).map (pderiv μ) = -(star U * U.map (pderiv μ) * star U)
 ```
 
-**`SpaceTimeAlgebra.map_pderiv_conj_of_mul_eq_one`**, a lemma, [line 484](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L484).
+**`SpaceTimeAlgebra.map_pderiv_conj_of_mul_eq_one`**, a lemma, [line 563](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L563).
 
 > The derivative of the conjugate `V A U` of a matrix of jets by an invertible matrix of
-> jets `U` with inverse `V`, in terms of the Maurer–Cartan matrix `ω = (∂_μ U) V`:
+> jets `U` with inverse `V`, in terms of the Maurer–Cartan matrix `ω = (∂_μ U) V`,
 > `∂_μ (V A U) = V (∂_μ A − (ω A − A ω)) U`.
 
 ```lean
@@ -336,9 +429,9 @@ lemma map_pderiv_conj_of_mul_eq_one [Fintype κ] [DecidableEq κ] (μ : Fin 1 �
       (U.map (pderiv μ) * V * A - A * (U.map (pderiv μ) * V))) * U
 ```
 
-**`SpaceTimeAlgebra.map_pderiv_mul_mul_mul`**, a lemma, [line 495](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L495).
+**`SpaceTimeAlgebra.map_pderiv_mul_mul_mul`**, a lemma, [line 574](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L574).
 
-> The cocycle law of Maurer–Cartan matrices: for invertible matrices of jets `U₁`, `U₂`
+> The cocycle law of Maurer–Cartan matrices, for invertible matrices of jets `U₁`, `U₂`
 > with inverses `V₁`, `V₂`, `∂_μ (U₁ U₂) (V₂ V₁) = (∂_μ U₁) V₁ + U₁ ((∂_μ U₂) V₂) V₁`.
 
 ```lean
@@ -348,7 +441,7 @@ lemma map_pderiv_mul_mul_mul [Fintype κ] [DecidableEq κ] (μ : Fin 1 ⊕ Fin 3
       U₁.map (pderiv μ) * V₁ + U₁ * (U₂.map (pderiv μ) * V₂) * V₁
 ```
 
-**`SpaceTimeAlgebra.map_pderiv_commutator`**, a lemma, [line 505](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L505).
+**`SpaceTimeAlgebra.map_pderiv_commutator`**, a lemma, [line 584](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L584).
 
 > The derivative of a commutator of matrices of jets.
 
@@ -358,7 +451,7 @@ lemma map_pderiv_commutator [Fintype κ] (μ : Fin 1 ⊕ Fin 3) (A B : Matrix κ
       + (A * B.map (pderiv μ) - B.map (pderiv μ) * A)
 ```
 
-**`SpaceTimeAlgebra.map_pderiv_mapMatrix_C`**, a lemma, [line 512](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L512).
+**`SpaceTimeAlgebra.map_pderiv_mapMatrix_C`**, a lemma, [line 591](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L591).
 
 > A constant matrix of jets has vanishing derivatives.
 
@@ -367,7 +460,7 @@ lemma map_pderiv_mapMatrix_C [Fintype κ] [DecidableEq κ] (μ : Fin 1 ⊕ Fin 3
     (A : Matrix κ κ ℂ) : ((C : ℂ →+* SpaceTimeAlgebra).mapMatrix A).map (pderiv μ) = 0
 ```
 
-**`SpaceTimeAlgebra.star_mcMatrix`**, a lemma, [line 518](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L518).
+**`SpaceTimeAlgebra.star_mcMatrix`**, a lemma, [line 597](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L597).
 
 > The Maurer–Cartan matrix `i (∂_μ U) U†` of a unitary matrix of jets is hermitian.
 
@@ -380,7 +473,7 @@ lemma star_mcMatrix [Fintype κ] [DecidableEq κ] (μ : Fin 1 ⊕ Fin 3)
 
 ## F. Invertible matrices of jets
 
-**`SpaceTimeAlgebra.unitsEval`**, a def, [line 539](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L539).
+**`SpaceTimeAlgebra.unitsEval`**, a def, [line 618](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L618).
 
 > Evaluation of an invertible matrix of jets at the base point, entrywise.
 
@@ -388,14 +481,14 @@ lemma star_mcMatrix [Fintype κ] [DecidableEq κ] (μ : Fin 1 ⊕ Fin 3)
 noncomputable def unitsEval : (Matrix κ κ SpaceTimeAlgebra)ˣ →* (Matrix κ κ ℂ)ˣ
 ```
 
-**`SpaceTimeAlgebra.unitsEval_val`**, a lemma, [line 543](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L543).
+**`SpaceTimeAlgebra.unitsEval_val`**, a lemma, [line 622](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L622).
 
 ```lean
 lemma unitsEval_val (U : (Matrix κ κ SpaceTimeAlgebra)ˣ) :
     (unitsEval U : Matrix κ κ ℂ) = (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix U
 ```
 
-**`SpaceTimeAlgebra.unitsOfConstant`**, a def, [line 547](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L547).
+**`SpaceTimeAlgebra.unitsOfConstant`**, a def, [line 626](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L626).
 
 > An invertible matrix as a constant invertible matrix of jets, entrywise.
 
@@ -403,7 +496,7 @@ lemma unitsEval_val (U : (Matrix κ κ SpaceTimeAlgebra)ˣ) :
 noncomputable def unitsOfConstant : (Matrix κ κ ℂ)ˣ →* (Matrix κ κ SpaceTimeAlgebra)ˣ
 ```
 
-**`SpaceTimeAlgebra.unitsOfConstant_val`**, a lemma, [line 551](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L551).
+**`SpaceTimeAlgebra.unitsOfConstant_val`**, a lemma, [line 630](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L630).
 
 ```lean
 lemma unitsOfConstant_val (g : (Matrix κ κ ℂ)ˣ) :
@@ -411,7 +504,9 @@ lemma unitsOfConstant_val (g : (Matrix κ κ ℂ)ˣ) :
       (C : ℂ →+* SpaceTimeAlgebra).mapMatrix g
 ```
 
-**`SpaceTimeAlgebra.unitsEval_unitsOfConstant`**, a lemma, [line 555](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L555).
+**`SpaceTimeAlgebra.unitsEval_unitsOfConstant`**, a lemma, [line 635](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean#L635).
+
+> A constant invertible matrix of jets evaluates to itself at the base point.
 
 ```lean
 lemma unitsEval_unitsOfConstant (g : (Matrix κ κ ℂ)ˣ) : unitsEval (unitsOfConstant g) = g
@@ -427,4 +522,4 @@ lemma unitsEval_unitsOfConstant (g : (Matrix κ κ ℂ)ˣ) : unitsEval (unitsOfC
 
 ## Sources
 
-- [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean)
+- [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean)

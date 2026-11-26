@@ -8,7 +8,7 @@ proof: formalized
 
 # Conserved quantities for central forces
 
-The module `PhyslibAlpha.ClassicalMechanics.CentralForce.ConservedQuantities`, [PhyslibAlpha/ClassicalMechanics/CentralForce/ConservedQuantities.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/ConservedQuantities.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.CentralForce.ConservedQuantities`, [PhyslibAlpha/ClassicalMechanics/CentralForce/ConservedQuantities.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/ConservedQuantities.lean): 3 declarations, 3 with a docstring.
 
 > The Hamiltonian, squared angular momentum, and axial angular momentum as a family of observables.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ClassicalMechanics.CentralForce.ConservedQuantities`, [
 
 ## A. The conserved quantities
 
-**`ClassicalMechanics.CentralForce.conservedQuantities`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/ConservedQuantities.lean#L54).
+**`ClassicalMechanics.CentralForce.conservedQuantities`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/ConservedQuantities.lean#L54).
 
 > The three conserved quantities in involution of a central-force system: the Hamiltonian `H`,
 > the squared magnitude `L²` of the angular momentum, and its z-component `L_z`.
@@ -42,7 +42,7 @@ noncomputable def conservedQuantities :
 
 ### A.1. Involution
 
-**`ClassicalMechanics.CentralForce.poissonBracket_conservedQuantities`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/ConservedQuantities.lean#L66).
+**`ClassicalMechanics.CentralForce.poissonBracket_conservedQuantities`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/ConservedQuantities.lean#L66).
 
 > Away from the centre of force, the conserved quantities of a central-force system are pairwise
 > in involution.
@@ -55,7 +55,7 @@ lemma poissonBracket_conservedQuantities (i j : Fin 3) (p : EuclideanSpace ℝ (
 
 ### A.2. Gradients
 
-**`ClassicalMechanics.CentralForce.gradient_conservedQuantities`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/ConservedQuantities.lean#L88).
+**`ClassicalMechanics.CentralForce.gradient_conservedQuantities`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/ConservedQuantities.lean#L88).
 
 > Away from the centre of force, the phase-space gradients of the conserved quantities of a
 > central-force system.
@@ -77,4 +77,4 @@ lemma gradient_conservedQuantities (p : EuclideanSpace ℝ (Fin 3)) {q : Euclide
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/CentralForce/ConservedQuantities.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/ConservedQuantities.lean)
+- [PhyslibAlpha/ClassicalMechanics/CentralForce/ConservedQuantities.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/ConservedQuantities.lean)

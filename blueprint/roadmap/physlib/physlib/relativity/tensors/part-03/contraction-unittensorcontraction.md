@@ -8,7 +8,7 @@ proof: formalized
 
 # Contraction against the unit tensor
 
-The module `Physlib.Relativity.Tensors.Contraction.UnitTensorContraction`, [Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean): 7 declarations, 7 with a docstring; 3 private, not shown.
+The module `Physlib.Relativity.Tensors.Contraction.UnitTensorContraction`, [Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean): 7 declarations, 7 with a docstring; 3 private, not shown.
 
 ## i. Overview
 
@@ -48,7 +48,7 @@ The module `Physlib.Relativity.Tensors.Contraction.UnitTensorContraction`, [Phys
 > Contracting a named slot against `unitTensor` returns the tensor unchanged, the slot carried to the
 > survivor tail by `move_last`.
 
-**`TensorSpecies.Tensor.crossToEnd_unitTensor`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean#L163).
+**`TensorSpecies.Tensor.crossToEnd_unitTensor`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean#L163).
 
 > Contracting slot `i` of `t1` against the unit tensor for that slot's color returns `t1`, the
 > contracted slot relabelled by `move_last i`. The unit tensor acts as an identity for `crossToEnd`
@@ -66,7 +66,7 @@ lemma crossToEnd_unitTensor {nA : ℕ} {cA : Fin (nA + 1) → C} {c : C}
 > If `M_{μν} M'^{νρ} = δ_μ^ρ`, contracting an index of a tensor `t` with `M` and then with `M'` gives
 > back `t`. The metric and its inverse are such a pair.
 
-**`TensorSpecies.Tensor.crossToEnd_round_trip_of_unit_slot`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean#L205).
+**`TensorSpecies.Tensor.crossToEnd_round_trip_of_unit_slot`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean#L205).
 
 > If `M₁_{μν} M₂^{νρ} = δ_μ^ρ`, contracting slot `i` of `t` with `M₁` and then with `M₂` gives
 > back `t` with that slot moved to the end, because `crossToEnd` places the surviving index last.
@@ -101,7 +101,7 @@ lemma crossToEnd_round_trip_of_unit_slot {nA : ℕ} {c : Fin (nA + 1) → C} {d 
         t
 ```
 
-**`TensorSpecies.Tensor.crossToSlot_raise_lower_round_trip`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean#L302).
+**`TensorSpecies.Tensor.crossToSlot_raise_lower_round_trip`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean#L302).
 
 > If `M_{μν} M'^{νρ} = δ_μ^ρ`, contracting slot `i` of `t` with `M` and then with `M'` gives back
 > `t` in place, up to renaming the colour of slot `i`. The equalities `ha`, `hb` and `he` match
@@ -129,7 +129,7 @@ lemma crossToSlot_raise_lower_round_trip {nA : ℕ} {c : Fin (nA + 1) → C} {cs
 > the two indices of `M` are in bijection, as for a metric, the second law follows from the first
 > (section D).
 
-**`TensorSpecies.Tensor.crossToSlotInv_crossToSlot`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean#L351).
+**`TensorSpecies.Tensor.crossToSlotInv_crossToSlot`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean#L351).
 
 > If `M_{μν} M'^{νρ} = δ_μ^ρ`, `crossToSlotInv` with `M'` undoes `crossToSlot` with `M`.
 
@@ -138,7 +138,7 @@ lemma crossToSlotInv_crossToSlot (t : Tensor S c) :
     crossToSlotInv i he hb M' (crossToSlot i (0 : Fin 2) ha M t) = t
 ```
 
-**`TensorSpecies.Tensor.crossToSlot_crossToSlotInv`**, a lemma, [line 362](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean#L362).
+**`TensorSpecies.Tensor.crossToSlot_crossToSlotInv`**, a lemma, [line 362](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean#L362).
 
 > If also `M'^{νρ} M_{ρσ} = δ^ν_σ`, `crossToSlot` with `M` undoes `crossToSlotInv` with `M'`. The
 > second law makes `crossToSlotInv` injective, so its left inverse is also a right inverse.
@@ -148,7 +148,7 @@ lemma crossToSlot_crossToSlotInv (t : Tensor S (Function.update c i (cs 1))) :
     crossToSlot i (0 : Fin 2) ha M (crossToSlotInv i he hb M' t) = t
 ```
 
-**`TensorSpecies.Tensor.crossToSlotEquiv`**, a def, [line 383](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean#L383).
+**`TensorSpecies.Tensor.crossToSlotEquiv`**, a def, [line 383](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean#L383).
 
 > The linear equivalence `crossToSlot` with `M`, with inverse `crossToSlotInv` with `M'`, when
 > `M_{μν} M'^{νρ} = δ_μ^ρ` and `M'^{νρ} M_{ρσ} = δ^ν_σ`. Slot `i` has colour `c i` on one side and
@@ -161,7 +161,7 @@ noncomputable def crossToSlotEquiv : Tensor S c ≃ₗ[k] Tensor S (Function.upd
 
 ## D. One contraction law from the other
 
-**`TensorSpecies.Tensor.contractInnerT_eq_unitTensor_comm`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean#L400).
+**`TensorSpecies.Tensor.contractInnerT_eq_unitTensor_comm`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean#L400).
 
 > If the label sets of the two indices of `M` are in bijection, `M_{μν} M'^{νρ} = δ_μ^ρ` implies
 > `M'^{νρ} M_{ρσ} = δ^ν_σ`. Without the bijection `e` this fails, since `A B = 1` does not imply
@@ -188,4 +188,4 @@ lemma contractInnerT_eq_unitTensor_comm [HasContrDualBases S] {cs ds : Fin 2 →
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean)
+- [Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean)

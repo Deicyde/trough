@@ -8,7 +8,7 @@ proof: formalized
 
 # Time slices of test functions
 
-The module `PhyslibAlpha.Mathematics.Distribution.TimeSlice`, [PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean): 41 declarations, 14 with a docstring.
+The module `PhyslibAlpha.Mathematics.Distribution.TimeSlice`, [PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean): 41 declarations, 14 with a docstring.
 
 > A test function on time and space has a Schwartz function as its slice at a fixed time.
 
@@ -73,25 +73,25 @@ The module `PhyslibAlpha.Mathematics.Distribution.TimeSlice`, [PhyslibAlpha/Math
 > Lemmas: `slice_dx`, `slice_spatialLaplacian`, `dt_reflect`, `dt_neg`, `dt_dt_reflect`,
 > `slice_reflect`, `dx_reflect`, `spatialLaplacian_reflect`.
 
-**`TimeSlice.isClosedEmbedding_prodMk`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L106).
+**`TimeSlice.isClosedEmbedding_prodMk`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L106).
 
 ```lean
 lemma isClosedEmbedding_prodMk (s : ℝ) : IsClosedEmbedding fun x : E => (s, x)
 ```
 
-**`TimeSlice.hasCompactSupport_slice`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L114).
+**`TimeSlice.hasCompactSupport_slice`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L114).
 
 ```lean
 lemma hasCompactSupport_slice (s : ℝ) : HasCompactSupport fun x : E => f (s, x)
 ```
 
-**`TimeSlice.contDiff_slice`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L118).
+**`TimeSlice.contDiff_slice`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L118).
 
 ```lean
 lemma contDiff_slice (s : ℝ) : ContDiff ℝ ∞ fun x : E => f (s, x)
 ```
 
-**`TimeSlice.slice`**, a def, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L122).
+**`TimeSlice.slice`**, a def, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L122).
 
 > The slice `f(s, ·)` of a spacetime test function at the time `s` is a Schwartz function.
 
@@ -99,13 +99,13 @@ lemma contDiff_slice (s : ℝ) : ContDiff ℝ ∞ fun x : E => f (s, x)
 def slice (s : ℝ) : 𝓢(E, F)
 ```
 
-**`TimeSlice.slice_apply`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L127).
+**`TimeSlice.slice_apply`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L127).
 
 ```lean
 lemma slice_apply (s : ℝ) (x : E) : slice F f s x = f (s, x)
 ```
 
-**`TimeSlice.norm_iteratedFDeriv_slice_le`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L131).
+**`TimeSlice.norm_iteratedFDeriv_slice_le`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L131).
 
 > The derivatives of a slice are bounded by the derivatives of the spacetime function.
 
@@ -114,20 +114,20 @@ lemma norm_iteratedFDeriv_slice_le (p : ℕ) (s : ℝ) (x : E) :
     ‖iteratedFDeriv ℝ p (fun x : E => f (s, x)) x‖ ≤ ‖iteratedFDeriv ℝ p f (s, x)‖
 ```
 
-**`TimeSlice.exists_bound_iteratedFDeriv`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L150).
+**`TimeSlice.exists_bound_iteratedFDeriv`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L150).
 
 ```lean
 lemma exists_bound_iteratedFDeriv (p : ℕ) :
     ∃ M : ℝ, ∀ y : ℝ × E, ‖iteratedFDeriv ℝ p f y‖ ≤ M
 ```
 
-**`TimeSlice.exists_radius`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L160).
+**`TimeSlice.exists_radius`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L160).
 
 ```lean
 lemma exists_radius : ∃ R : ℝ, 0 ≤ R ∧ ∀ y ∈ tsupport f, ‖y‖ ≤ R
 ```
 
-**`TimeSlice.exists_seminorm_slice_le`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L166).
+**`TimeSlice.exists_seminorm_slice_le`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L166).
 
 > The Schwartz seminorms of the slices are bounded uniformly in the time.
 
@@ -136,7 +136,7 @@ lemma exists_seminorm_slice_le (k p : ℕ) :
     ∃ C : ℝ, ∀ s, SchwartzMap.seminorm ℂ k p (slice F f s) ≤ C
 ```
 
-**`TimeSlice.exists_fourier_bound`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L190).
+**`TimeSlice.exists_fourier_bound`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L190).
 
 > The Fourier transforms of the slices decay uniformly in the time.
 
@@ -145,7 +145,7 @@ lemma exists_fourier_bound (N : ℕ) :
     ∃ C : ℝ, ∀ s (ξ : E), ‖ξ‖ ^ N * ‖𝓕 (slice F f s) ξ‖ ≤ C
 ```
 
-**`TimeSlice.exists_fourier_decay_pow`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L219).
+**`TimeSlice.exists_fourier_decay_pow`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L219).
 
 > Polynomial decay of any order of the Fourier transforms of the slices, uniformly in the
 > time.
@@ -155,7 +155,7 @@ lemma exists_fourier_decay_pow (N : ℕ) :
     ∃ K : ℝ, ∀ s (ξ : E), ‖𝓕 (slice F f s) ξ‖ ≤ K * (1 + ‖ξ‖) ^ (-(N : ℝ))
 ```
 
-**`TimeSlice.exists_fourier_decay`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L238).
+**`TimeSlice.exists_fourier_decay`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L238).
 
 ```lean
 lemma exists_fourier_decay :
@@ -163,27 +163,27 @@ lemma exists_fourier_decay :
       ℝ))
 ```
 
-**`TimeSlice.fourier_slice_apply`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L244).
+**`TimeSlice.fourier_slice_apply`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L244).
 
 ```lean
 lemma fourier_slice_apply (s : ℝ) (ξ : E) :
     𝓕 (slice F f s) ξ = ∫ x : E, 𝐞 (-inner ℝ x ξ) • f (s, x)
 ```
 
-**`TimeSlice.continuous_fourier_slice`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L250).
+**`TimeSlice.continuous_fourier_slice`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L250).
 
 ```lean
 lemma continuous_fourier_slice :
     Continuous fun p : ℝ × E => 𝓕 (slice F f p.1) p.2
 ```
 
-**`TimeSlice.slice_eq_zero_of_notMem`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L281).
+**`TimeSlice.slice_eq_zero_of_notMem`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L281).
 
 ```lean
 lemma slice_eq_zero_of_notMem {s : ℝ} (hs : s ∉ Prod.fst '' tsupport f) : slice F f s = 0
 ```
 
-**`TimeSlice.isCompact_timeSupport`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L288).
+**`TimeSlice.isCompact_timeSupport`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L288).
 
 > The time support of a spacetime test function is compact.
 
@@ -191,7 +191,7 @@ lemma slice_eq_zero_of_notMem {s : ℝ} (hs : s ∉ Prod.fst '' tsupport f) : sl
 lemma isCompact_timeSupport : IsCompact (Prod.fst '' tsupport f)
 ```
 
-**`TimeSlice.timeReflect`**, a def, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L298).
+**`TimeSlice.timeReflect`**, a def, [line 298](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L298).
 
 > Reflection in time.
 
@@ -199,13 +199,13 @@ lemma isCompact_timeSupport : IsCompact (Prod.fst '' tsupport f)
 def timeReflect : ℝ × E ≃ₜ ℝ × E
 ```
 
-**`TimeSlice.timeReflect_apply`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L302).
+**`TimeSlice.timeReflect_apply`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L302).
 
 ```lean
 lemma timeReflect_apply (p : ℝ × E) : timeReflect p = (-p.1, p.2)
 ```
 
-**`TimeSlice.reflect`**, a def, [line 305](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L305).
+**`TimeSlice.reflect`**, a def, [line 305](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L305).
 
 > The time-reflected test function.
 
@@ -213,13 +213,13 @@ lemma timeReflect_apply (p : ℝ × E) : timeReflect p = (-p.1, p.2)
 def reflect : 𝓓((⊤ : Opens (ℝ × E)), F)
 ```
 
-**`TimeSlice.reflect_apply`**, a lemma, [line 312](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L312).
+**`TimeSlice.reflect_apply`**, a lemma, [line 312](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L312).
 
 ```lean
 lemma reflect_apply (p : ℝ × E) : reflect F f p = f (-p.1, p.2)
 ```
 
-**`TimeSlice.reflect_reflect`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L316).
+**`TimeSlice.reflect_reflect`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L316).
 
 > Time reflection is an involution.
 
@@ -227,26 +227,26 @@ lemma reflect_apply (p : ℝ × E) : reflect F f p = f (-p.1, p.2)
 lemma reflect_reflect : reflect F (reflect F f) = f
 ```
 
-**`TimeSlice.tsupport_reflect`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L321).
+**`TimeSlice.tsupport_reflect`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L321).
 
 ```lean
 lemma tsupport_reflect : tsupport (reflect F f) = timeReflect ⁻¹' tsupport f
 ```
 
-**`TimeSlice.slice_add`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L326).
+**`TimeSlice.slice_add`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L326).
 
 ```lean
 lemma slice_add (g : 𝓓((⊤ : Opens (ℝ × E)), F)) (s : ℝ) :
     slice F (f + g) s = slice F f s + slice F g s
 ```
 
-**`TimeSlice.slice_smul`**, a lemma, [line 331](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L331).
+**`TimeSlice.slice_smul`**, a lemma, [line 331](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L331).
 
 ```lean
 lemma slice_smul (c : ℝ) (s : ℝ) : slice F (c • f) s = c • slice F f s
 ```
 
-**`TimeSlice.dt`**, a def, [line 335](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L335).
+**`TimeSlice.dt`**, a def, [line 335](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L335).
 
 > The time derivative of a spacetime test function.
 
@@ -254,19 +254,19 @@ lemma slice_smul (c : ℝ) (s : ℝ) : slice F (c • f) s = c • slice F f s
 def dt : 𝓓((⊤ : Opens (ℝ × E)), F)
 ```
 
-**`TimeSlice.dt_apply`**, a lemma, [line 339](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L339).
+**`TimeSlice.dt_apply`**, a lemma, [line 339](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L339).
 
 ```lean
 lemma dt_apply (p : ℝ × E) : dt F f p = lineDeriv ℝ f p ((1 : ℝ), (0 : E))
 ```
 
-**`TimeSlice.hasDerivAt_time`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L344).
+**`TimeSlice.hasDerivAt_time`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L344).
 
 ```lean
 lemma hasDerivAt_time (s : ℝ) (y : E) : HasDerivAt (fun r : ℝ => f (r, y)) (dt F f (s, y)) s
 ```
 
-**`TimeSlice.reflectSourceCLM`**, a def, [line 361](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L361).
+**`TimeSlice.reflectSourceCLM`**, a def, [line 361](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L361).
 
 > Time reflection acts continuously on the native compact source space.
 
@@ -275,14 +275,14 @@ def reflectSourceCLM :
     𝓓((⊤ : Opens (ℝ × E)), F) →L[ℝ] 𝓓((⊤ : Opens (ℝ × E)), F)
 ```
 
-**`TimeSlice.reflectSourceCLM_eq`**, a lemma, [line 367](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L367).
+**`TimeSlice.reflectSourceCLM_eq`**, a lemma, [line 367](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L367).
 
 ```lean
 lemma reflectSourceCLM_eq (f : 𝓓((⊤ : Opens (ℝ × E)), F)) :
     reflectSourceCLM F f = reflect F f
 ```
 
-**`TimeSlice.timeReflectionCLE`**, a def, [line 373](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L373).
+**`TimeSlice.timeReflectionCLE`**, a def, [line 373](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L373).
 
 > Time reflection on time-space coordinates.
 
@@ -291,13 +291,13 @@ def timeReflectionCLE (E : Type u) [NormedAddCommGroup E] [NormedSpace ℝ E] :
     (ℝ × E) ≃L[ℝ] (ℝ × E)
 ```
 
-**`TimeSlice.timeReflectionCLE_apply`**, a lemma, [line 378](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L378).
+**`TimeSlice.timeReflectionCLE_apply`**, a lemma, [line 378](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L378).
 
 ```lean
 lemma timeReflectionCLE_apply (p : ℝ × E) : timeReflectionCLE E p = (-p.1, p.2)
 ```
 
-**`TimeSlice.dx`**, a def, [line 387](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L387).
+**`TimeSlice.dx`**, a def, [line 387](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L387).
 
 > Spatial differentiation of a spacetime test field in the direction `m`.
 
@@ -305,13 +305,13 @@ lemma timeReflectionCLE_apply (p : ℝ × E) : timeReflectionCLE E p = (-p.1, p.
 def dx (m : E) : 𝓓((⊤ : Opens (ℝ × E)), F)
 ```
 
-**`TimeSlice.slice_dx`**, a lemma, [line 391](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L391).
+**`TimeSlice.slice_dx`**, a lemma, [line 391](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L391).
 
 ```lean
 lemma slice_dx (m : E) (s : ℝ) : slice F (dx F f m) s = ∂_{m} (slice F f s)
 ```
 
-**`TimeSlice.spatialLaplacian`**, a def, [line 403](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L403).
+**`TimeSlice.spatialLaplacian`**, a def, [line 403](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L403).
 
 > The spatial Laplacian on compact spacetime test fields.
 
@@ -319,44 +319,44 @@ lemma slice_dx (m : E) (s : ℝ) : slice F (dx F f m) s = ∂_{m} (slice F f s)
 def spatialLaplacian : 𝓓((⊤ : Opens (ℝ × E)), F)
 ```
 
-**`TimeSlice.slice_spatialLaplacian`**, a lemma, [line 407](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L407).
+**`TimeSlice.slice_spatialLaplacian`**, a lemma, [line 407](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L407).
 
 ```lean
 lemma slice_spatialLaplacian (s : ℝ) :
     slice F (spatialLaplacian F f) s = Δ (slice F f s)
 ```
 
-**`TimeSlice.dt_reflect`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L417).
+**`TimeSlice.dt_reflect`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L417).
 
 ```lean
 lemma dt_reflect : dt F (reflect F f) = -reflect F (dt F f)
 ```
 
-**`TimeSlice.dt_neg`**, a lemma, [line 424](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L424).
+**`TimeSlice.dt_neg`**, a lemma, [line 424](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L424).
 
 ```lean
 lemma dt_neg : dt F (-f) = -dt F f
 ```
 
-**`TimeSlice.dt_dt_reflect`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L427).
+**`TimeSlice.dt_dt_reflect`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L427).
 
 ```lean
 lemma dt_dt_reflect : dt F (dt F (reflect F f)) = reflect F (dt F (dt F f))
 ```
 
-**`TimeSlice.slice_reflect`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L433).
+**`TimeSlice.slice_reflect`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L433).
 
 ```lean
 lemma slice_reflect (s : ℝ) : slice F (reflect F f) s = slice F f (-s)
 ```
 
-**`TimeSlice.dx_reflect`**, a lemma, [line 437](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L437).
+**`TimeSlice.dx_reflect`**, a lemma, [line 437](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L437).
 
 ```lean
 lemma dx_reflect (m : E) : dx F (reflect F f) m = reflect F (dx F f m)
 ```
 
-**`TimeSlice.spatialLaplacian_reflect`**, a lemma, [line 443](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L443).
+**`TimeSlice.spatialLaplacian_reflect`**, a lemma, [line 443](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean#L443).
 
 ```lean
 lemma spatialLaplacian_reflect :
@@ -369,4 +369,4 @@ lemma spatialLaplacian_reflect :
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean)
+- [PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSlice.lean)

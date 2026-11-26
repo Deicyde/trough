@@ -8,7 +8,7 @@ proof: formalized
 
 # Tensor species (Species)
 
-The module `Physlib.Mathematics.Tensors.Species`, [Physlib/Mathematics/Tensors/Species.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean): 20 declarations, 20 with a docstring.
+The module `Physlib.Mathematics.Tensors.Species`, [Physlib/Mathematics/Tensors/Species.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean): 20 declarations, 20 with a docstring.
 
 > A species gives each color of index a space, an action of the symmetry group and a basis. Its
 > tensors are built from these.
@@ -73,7 +73,7 @@ The module `Physlib.Mathematics.Tensors.Species`, [Physlib/Mathematics/Tensors/S
 > At a lower color it is the condition at the upper color with the factors swapped, and
 > `invariant_of_up` proves it from the upper colors.
 
-**`Tensor.Species`**, a structure, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L101).
+**`Tensor.Species`**, a structure, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L100).
 
 > A tensor species gives each color `c` a space `V c`, a representation `rep c` of `G` on it and
 > a basis `basis c` labelled by `basisIdx c.kind`, so that a color and its dual share labels. Its one
@@ -99,7 +99,7 @@ structure Species (k : Type) [RCLike k] (G : Type) [Group G] (K : Type)
     (basis c).coordPairing (basis c.dual) (x ⊗ₜ y)
 ```
 
-**`Tensor.Species.invariant_of_up`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L127).
+**`Tensor.Species.invariant_of_up`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L126).
 
 > The condition `invariant` at every color from the condition at the upper colors. At a lower
 > color the pairing is the pairing at the dual, upper color with its factors swapped.
@@ -115,7 +115,7 @@ lemma invariant_of_up {V : Color K → Type} [∀ c, AddCommGroup (V c)] [∀ c,
       (basis c).coordPairing (basis c.dual) (x ⊗ₜ y)
 ```
 
-**`Tensor.Species.finiteDimensional`**, an instance, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L140).
+**`Tensor.Species.finiteDimensional`**, an instance, [line 139](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L139).
 
 > The space of each color is finite-dimensional, since it has a finite basis.
 
@@ -133,7 +133,7 @@ instance finiteDimensional (S : Species k G K basisIdx) (c : Color K) :
 > `V c`, so Mathlib's results on duals apply. When an invariant pairing for which the bases are
 > dual is already known, `Module.Basis.coordPairing_invariant` gives the condition.
 
-**`Tensor.Species.contr`**, a def, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L161).
+**`Tensor.Species.contr`**, a def, [line 160](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L160).
 
 > The invariant contraction `V c ⊗ V c.dual → k`, `u ⊗ α ↦ u^μ α_μ`, the coordinate pairing of
 > the bases. The vector of color `c` is the first factor.
@@ -143,7 +143,7 @@ noncomputable def contr (c : Color K) :
     ((S.rep c).tprod (S.rep c.dual)).IntertwiningMap (Representation.trivial k G k)
 ```
 
-**`Tensor.Species.contr_basis`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L167).
+**`Tensor.Species.contr_basis`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L166).
 
 > The bases of a color and its dual are dual, `S.contr c (e_μ ⊗ e^ν) = δ_μ^ν`.
 
@@ -152,7 +152,7 @@ lemma contr_basis (c : Color K) (μ ν : basisIdx c.kind) :
     S.contr c (S.basis c μ ⊗ₜ S.basis c.dual ν) = if μ = ν then 1 else 0
 ```
 
-**`Tensor.Species.contr_tmul_eq_sum_basis`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L173).
+**`Tensor.Species.contr_tmul_eq_sum_basis`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L172).
 
 > The contraction in components, `S.contr c (u ⊗ α) = ∑ μ, u^μ α_μ`.
 
@@ -161,7 +161,7 @@ lemma contr_tmul_eq_sum_basis (c : Color K) (x : S.V c) (y : S.V c.dual) :
     S.contr c (x ⊗ₜ y) = ∑ μ, (S.basis c).repr x μ * (S.basis c.dual).repr y μ
 ```
 
-**`Tensor.Species.contr_tmul_symm`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L179).
+**`Tensor.Species.contr_tmul_symm`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L178).
 
 > The contraction is symmetric. `u^μ α_μ` at `c` is `α_μ u^μ` at `c.dual`, with the factors
 > swapped.
@@ -171,7 +171,7 @@ lemma contr_tmul_symm (c : Color K) (x : S.V c) (y : S.V c.dual) :
     S.contr c (x ⊗ₜ[k] y) = S.contr c.dual (y ⊗ₜ[k] x)
 ```
 
-**`Tensor.Species.isPerfPair_contr`**, an instance, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L184).
+**`Tensor.Species.isPerfPair_contr`**, an instance, [line 183](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L183).
 
 > The contraction is a perfect pairing, so it identifies `V c.dual` with the dual of `V c`.
 
@@ -180,7 +180,7 @@ instance isPerfPair_contr (c : Color K) :
     (TensorProduct.curry (S.contr c).toLinearMap).IsPerfPair
 ```
 
-**`Tensor.Species.ext_contr`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L191).
+**`Tensor.Species.ext_contr`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L190).
 
 > The contraction is nondegenerate in its second argument. Two vectors of `c.dual` with the
 > same contraction against every vector of `c` are equal.
@@ -190,7 +190,7 @@ lemma ext_contr {c : Color K} {α α' : S.V c.dual}
     (h : ∀ u, S.contr c (u ⊗ₜ α) = S.contr c (u ⊗ₜ α')) : α = α'
 ```
 
-**`Tensor.Species.contr_invariant`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L197).
+**`Tensor.Species.contr_invariant`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L196).
 
 > The contraction is invariant, `(Λu)^μ (Λα)_μ = u^μ α_μ` for every `Λ : G`.
 
@@ -199,7 +199,7 @@ lemma contr_invariant (c : Color K) (g : G) (x : S.V c) (y : S.V c.dual) :
     S.contr c (S.rep c g x ⊗ₜ[k] S.rep c.dual g y) = S.contr c (x ⊗ₜ[k] y)
 ```
 
-**`Tensor.Species.contr_tmul_rep`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L202).
+**`Tensor.Species.contr_tmul_rep`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L201).
 
 > Contracting `u` with `Λα` is contracting `Λ⁻¹u` with `α`.
 
@@ -208,7 +208,7 @@ lemma contr_tmul_rep (c : Color K) (g : G) (u : S.V c) (α : S.V c.dual) :
     S.contr c (u ⊗ₜ S.rep c.dual g α) = S.contr c (S.rep c g⁻¹ u ⊗ₜ α)
 ```
 
-**`Tensor.Species.dualEquiv`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L208).
+**`Tensor.Species.dualEquiv`**, a def, [line 207](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L207).
 
 > The space of `c.dual` is the dual representation of the space of `c`, a vector `α` read as the
 > linear form `u ↦ u^μ α_μ`.
@@ -217,7 +217,7 @@ lemma contr_tmul_rep (c : Color K) (g : G) (u : S.V c) (α : S.V c.dual) :
 noncomputable def dualEquiv (c : Color K) : (S.rep c.dual).Equiv (S.rep c).dual
 ```
 
-**`Tensor.Species.dualEquiv_apply`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L214).
+**`Tensor.Species.dualEquiv_apply`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L213).
 
 > `dualEquiv c α` is the linear form `u ↦ u^μ α_μ`.
 
@@ -235,7 +235,7 @@ lemma dualEquiv_apply (c : Color K) (α : S.V c.dual) (u : S.V c) :
 > `S.V a'` without changing it. The lemmas below say that `S.cast` keeps the group action, the
 > components and the contraction, so that proofs can remove it.
 
-**`Tensor.Species.cast`**, a def, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L236).
+**`Tensor.Species.cast`**, a def, [line 235](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L235).
 
 > Moving a vector along an equality of colors `a = a'`, Mathlib's `LinearEquiv.cast`, as an
 > equivalence of representations.
@@ -244,7 +244,7 @@ lemma dualEquiv_apply (c : Color K) (α : S.V c.dual) (u : S.V c) :
 protected def cast {a a' : Color K} (p : a = a') : (S.rep a).Equiv (S.rep a')
 ```
 
-**`Tensor.Species.cast_apply`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L241).
+**`Tensor.Species.cast_apply`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L240).
 
 > `S.cast p` is Mathlib's `cast` of the vector.
 
@@ -253,7 +253,7 @@ lemma cast_apply {a a' : Color K} (p : a = a') (x : S.V a) :
     S.cast p x = cast (congrArg S.V p) x
 ```
 
-**`Tensor.Species.cast_rep`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L245).
+**`Tensor.Species.cast_rep`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L244).
 
 > Moving a vector along an equality of colors `a = a'` commutes with the group action.
 
@@ -262,7 +262,7 @@ lemma cast_rep {a a' : Color K} (p : a = a') (g : G) (x : S.V a) :
     S.cast p (S.rep a g x) = S.rep a' g (S.cast p x)
 ```
 
-**`Tensor.Species.basis_repr_cast`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L251).
+**`Tensor.Species.basis_repr_cast`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L250).
 
 > Moving a vector along an equality of colors `a = b` keeps its components, with the label cast
 > back to a label at `a`.
@@ -273,7 +273,7 @@ lemma basis_repr_cast {a b : Color K} (p : a = b) (v : S.V a) (μ : basisIdx b.k
       (S.basis a).repr v (cast (congrArg (basisIdx ∘ Color.kind) p.symm) μ)
 ```
 
-**`Tensor.Species.cast_apply_congr`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L259).
+**`Tensor.Species.cast_apply_congr`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L258).
 
 > For a family `f` of vectors on indices, moving `f s` to the color `b` is moving `f s'`, for
 > any index `s'` equal to `s`.
@@ -283,7 +283,7 @@ lemma cast_apply_congr {ι : Type} {d : ι → Color K} (f : Π s, S.V (d s)) {s
     (e : s = s') {b : Color K} (p : d s = b) : S.cast p (f s) = S.cast (e ▸ p) (f s')
 ```
 
-**`Tensor.Species.contr_cast_tmul_cast`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L265).
+**`Tensor.Species.contr_cast_tmul_cast`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L264).
 
 > The contraction of two vectors does not depend on the colors they are moved to.
 
@@ -293,7 +293,7 @@ lemma contr_cast_tmul_cast {d e a b : Color K} (x : S.V d) (y : S.V e) (p : d = 
     S.contr a (S.cast p x ⊗ₜ S.cast q y) = S.contr b (S.cast p' x ⊗ₜ S.cast q' y)
 ```
 
-**`Tensor.Species.contr_cast_tmul_cast_symm`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean#L273).
+**`Tensor.Species.contr_cast_tmul_cast_symm`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean#L272).
 
 > The contraction of two vectors moved along equalities of colors is symmetric,
 > `u^μ α_μ = α_μ u^μ`.
@@ -311,4 +311,4 @@ lemma contr_cast_tmul_cast_symm {d e a b : Color K} (x : S.V d) (y : S.V e) (p :
 
 ## Sources
 
-- [Physlib/Mathematics/Tensors/Species.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Species.lean)
+- [Physlib/Mathematics/Tensors/Species.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Species.lean)

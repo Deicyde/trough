@@ -8,7 +8,7 @@ proof: formalized
 
 # The state–effect pairing (PhyslibAlpha)
 
-The module `PhyslibAlpha.ProbabilisticTheory.State.Pairing`, [PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean): 8 declarations, 8 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.State.Pairing`, [PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean): 8 declarations, 8 with a docstring.
 
 > The state–effect pairing is affine, takes values in [0, 1], and separates states and effects.
 
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.State.Pairing`, [PhyslibAlpha/Proba
 
 ## A. State–effect evaluation
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.apply_mem_Icc`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean#L66).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.apply_mem_Icc`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean#L66).
 
 > State–effect evaluation takes values in `[0, 1]`.
 
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.State.Pairing`, [PhyslibAlpha/Proba
 lemma apply_mem_Icc (ω : 𝓢[ℝ, E]) (e : Effect E) : ω (e : E) ∈ Set.Icc (0 : ℝ) 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.apply_mix`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean#L70).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.apply_mix`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean#L70).
 
 > Evaluation is affine in the effect argument.
 
@@ -58,7 +58,7 @@ lemma apply_mix (ω : 𝓢[ℝ, E]) (e f : Effect E) (t : unitInterval) :
 
 ## B. Effects separate states
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.ext_of_effect_eq_of_nonneg`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean#L81).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.ext_of_effect_eq_of_nonneg`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean#L81).
 
 > Two states that agree on all effects agree on every nonnegative element.
 
@@ -67,7 +67,7 @@ lemma ext_of_effect_eq_of_nonneg {ω φ : 𝓢[ℝ, E]}
     (h : ∀ e : Effect E, ω (e : E) = φ (e : E)) {B : E} (hB : 0 ≤ B) : ω B = φ B
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.ext_of_effect_eq`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean#L87).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.ext_of_effect_eq`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean#L87).
 
 > A state is determined by its values on effects.
 
@@ -76,7 +76,7 @@ lemma ext_of_effect_eq {ω φ : 𝓢[ℝ, E]}
     (h : ∀ e : Effect E, ω (e : E) = φ (e : E)) : ω = φ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.injective_apply_effect`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean#L94).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.injective_apply_effect`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean#L94).
 
 > Evaluation on effects is injective on states.
 
@@ -87,7 +87,7 @@ lemma injective_apply_effect :
 
 ## C. States separate effects
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.dist_eq_sSup_abs_apply`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean#L106).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.dist_eq_sSup_abs_apply`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean#L106).
 
 > The distance between two effects is the supremum of the difference in their evaluations over
 > all states.
@@ -98,7 +98,7 @@ lemma _root_.PhyslibAlpha.ProbabilisticTheory.Effect.dist_eq_sSup_abs_apply [Non
     Dist.dist e f = sSup (Set.range fun ω : 𝓢[ℝ, E] => |ω (e : E) - ω (f : E)|)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.ext_of_forall_apply_eq`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean#L113).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.ext_of_forall_apply_eq`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean#L113).
 
 > An effect is determined by its values under all states.
 
@@ -107,7 +107,7 @@ lemma _root_.PhyslibAlpha.ProbabilisticTheory.Effect.ext_of_forall_apply_eq {e f
     (h : ∀ ω : 𝓢[ℝ, E], ω (e : E) = ω (f : E)) : e = f
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.injective_apply_state`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean#L118).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.injective_apply_state`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean#L118).
 
 > Evaluation by states is injective on effects.
 
@@ -128,4 +128,4 @@ lemma _root_.PhyslibAlpha.ProbabilisticTheory.Effect.injective_apply_state :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean)
+- [PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean)

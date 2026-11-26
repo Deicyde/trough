@@ -8,7 +8,7 @@ proof: formalized
 
 # Local nets of observables
 
-The module `Physlib.ProbabilisticTheory.LocalNet.Basic`, [Physlib/ProbabilisticTheory/LocalNet/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean): 19 declarations (2 instances with no name), 19 with a docstring.
+The module `Physlib.ProbabilisticTheory.LocalNet.Basic`, [Physlib/ProbabilisticTheory/LocalNet/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean): 19 declarations (2 instances with no name), 19 with a docstring.
 
 > Observables of subsystems and their inclusion into larger subsystems.
 
@@ -48,7 +48,7 @@ The module `Physlib.ProbabilisticTheory.LocalNet.Basic`, [Physlib/ProbabilisticT
 
 ## A. Subsystems and inclusions
 
-**`ProbabilisticTheory.LocalNet`**, a structure, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L69).
+**`ProbabilisticTheory.LocalNet`**, a structure, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L69).
 
 > The observables of each subsystem, with channels into larger subsystems.
 
@@ -63,7 +63,7 @@ structure ProbabilisticTheory.LocalNet (R : Type*) [Preorder R] (A : R → Proba
     incl h₃ = (incl h₂).comp (incl h₁)
 ```
 
-**`ProbabilisticTheory.LocalNet.incl_refl_apply`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L84).
+**`ProbabilisticTheory.LocalNet.incl_refl_apply`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L84).
 
 > An observable is unchanged by inclusion into the same subsystem.
 
@@ -72,7 +72,7 @@ lemma incl_refl_apply (N : LocalNet R A) (X : R) (a : (A X).Observables) :
     N.incl (le_refl X) a = a
 ```
 
-**`ProbabilisticTheory.LocalNet.incl_trans_apply`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L89).
+**`ProbabilisticTheory.LocalNet.incl_trans_apply`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L89).
 
 > Including an observable through an intermediate subsystem agrees with direct inclusion.
 
@@ -84,7 +84,7 @@ lemma incl_trans_apply (N : LocalNet R A) (h₁ : X ≤ Y) (h₂ : Y ≤ Z) (h�
 
 ## B. Order-embedding inclusions
 
-**`ProbabilisticTheory.LocalNet.IsOrderEmbedding`**, a class, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L97).
+**`ProbabilisticTheory.LocalNet.IsOrderEmbedding`**, a class, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L97).
 
 > The inclusion maps are order embeddings if each reflects positivity.
 
@@ -94,7 +94,7 @@ class IsOrderEmbedding (N : LocalNet R A) : Prop where
   nonneg_of_incl_nonneg : ∀ {X Y : R} (h : X ≤ Y) {a : (A X).Observables}, 0 ≤ N.incl h a → 0 ≤ a
 ```
 
-**`ProbabilisticTheory.LocalNet.map_le_map_iff`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L102).
+**`ProbabilisticTheory.LocalNet.map_le_map_iff`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L102).
 
 > Inclusion in an order-embedding net preserves and reflects inequalities.
 
@@ -103,7 +103,7 @@ lemma map_le_map_iff (N : LocalNet R A) [N.IsOrderEmbedding] (h : X ≤ Y) {a b 
     N.incl h a ≤ N.incl h b ↔ a ≤ b
 ```
 
-**`ProbabilisticTheory.LocalNet.incl_injective`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L108).
+**`ProbabilisticTheory.LocalNet.incl_injective`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L108).
 
 > The inclusion maps of an order-embedding net are injective.
 
@@ -118,7 +118,7 @@ lemma incl_injective (N : LocalNet R A) [N.IsOrderEmbedding] (h : X ≤ Y) :
 > common larger one and combined there. The direct limit identifies all such local descriptions
 > consistently and supplies the resulting real vector space.
 
-**`ProbabilisticTheory.LocalNet.inclLin`**, an abbrev, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L126).
+**`ProbabilisticTheory.LocalNet.inclLin`**, an abbrev, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L126).
 
 > The inclusions as linear maps: the transition maps of the direct limit defining
 > `N.Quasilocal`.
@@ -128,7 +128,7 @@ abbrev inclLin (N : LocalNet R A) (X Y : R) (h : X ≤ Y) :
     (A X).Observables →ₗ[ℝ] (A Y).Observables
 ```
 
-**`ProbabilisticTheory.LocalNet.directedSystem`**, an instance, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L132).
+**`ProbabilisticTheory.LocalNet.directedSystem`**, an instance, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L132).
 
 > The inclusions form a directed system: including a subsystem into itself does nothing, and
 > successive inclusions compose.
@@ -138,7 +138,7 @@ instance directedSystem (N : LocalNet R A) :
     DirectedSystem (fun X => (A X).Observables) fun i j h => N.inclLin i j h
 ```
 
-**`ProbabilisticTheory.LocalNet.Quasilocal`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L138).
+**`ProbabilisticTheory.LocalNet.Quasilocal`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L138).
 
 > The algebraic direct limit of the local observable spaces.
 
@@ -146,7 +146,7 @@ instance directedSystem (N : LocalNet R A) :
 def Quasilocal (N : LocalNet R A) : Type _
 ```
 
-**An instance with no name**, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L142).
+**An instance with no name**, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L142).
 
 > Quasilocal observables add, as elements of a direct limit of vector spaces.
 
@@ -154,7 +154,7 @@ def Quasilocal (N : LocalNet R A) : Type _
 noncomputable instance : AddCommGroup N.Quasilocal
 ```
 
-**An instance with no name**, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L146).
+**An instance with no name**, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L146).
 
 > Quasilocal observables can be scaled by real numbers.
 
@@ -167,7 +167,7 @@ noncomputable instance : Module ℝ N.Quasilocal
 > The map `toQuasilocal N i` takes an observable of subsystem `i` to the quasilocal observable it
 > represents.
 
-**`ProbabilisticTheory.LocalNet.toQuasilocal`**, a def, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L158).
+**`ProbabilisticTheory.LocalNet.toQuasilocal`**, a def, [line 158](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L158).
 
 > Regard an observable of subsystem `i` as a quasilocal observable.
 
@@ -175,7 +175,7 @@ noncomputable instance : Module ℝ N.Quasilocal
 noncomputable def toQuasilocal (N : LocalNet R A) (i : R) : (A i).Observables →ₗ[ℝ] N.Quasilocal
 ```
 
-**`ProbabilisticTheory.LocalNet.toQuasilocal_incl`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L162).
+**`ProbabilisticTheory.LocalNet.toQuasilocal_incl`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L162).
 
 > Including an observable in a larger subsystem does not change its quasilocal representation.
 
@@ -184,7 +184,7 @@ lemma toQuasilocal_incl {i j : R} (h : i ≤ j) (a : (A i).Observables) :
     toQuasilocal N j (N.incl h a) = toQuasilocal N i a
 ```
 
-**`ProbabilisticTheory.LocalNet.toQuasilocal_eq_of_incl_eq`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L168).
+**`ProbabilisticTheory.LocalNet.toQuasilocal_eq_of_incl_eq`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L168).
 
 > Observables that agree in a common larger subsystem represent the same quasilocal
 > observable.
@@ -200,7 +200,7 @@ lemma toQuasilocal_eq_of_incl_eq {i j k : R} (hik : i ≤ k) (hjk : j ≤ k)
 > If any two subsystems are contained in a common larger one, the quasilocal observable space is
 > described by representatives in single subsystems.
 
-**`ProbabilisticTheory.LocalNet.exists_incl_eq_of_toQuasilocal_eq`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L188).
+**`ProbabilisticTheory.LocalNet.exists_incl_eq_of_toQuasilocal_eq`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L188).
 
 > Observables representing the same quasilocal observable agree in a common larger
 > subsystem.
@@ -211,7 +211,7 @@ lemma exists_incl_eq_of_toQuasilocal_eq {i j : R} {a : (A i).Observables} {b : (
     ∃ (k : R) (hik : i ≤ k) (hjk : j ≤ k), N.incl hik a = N.incl hjk b
 ```
 
-**`ProbabilisticTheory.LocalNet.toQuasilocal_eq_iff`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L201).
+**`ProbabilisticTheory.LocalNet.toQuasilocal_eq_iff`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L201).
 
 > Two local observables represent the same quasilocal observable exactly when they agree in a
 > common larger subsystem.
@@ -222,7 +222,7 @@ lemma toQuasilocal_eq_iff {i j : R} (a : (A i).Observables) (b : (A j).Observabl
       ∃ (k : R) (hik : i ≤ k) (hjk : j ≤ k), N.incl hik a = N.incl hjk b
 ```
 
-**`ProbabilisticTheory.LocalNet.toQuasilocal_injective`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L207).
+**`ProbabilisticTheory.LocalNet.toQuasilocal_injective`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L207).
 
 > Order-embedding inclusions keep distinct local observables distinct in the quasilocal space.
 
@@ -231,7 +231,7 @@ lemma toQuasilocal_injective [N.IsOrderEmbedding] (i : R) :
     Function.Injective (toQuasilocal N i)
 ```
 
-**`ProbabilisticTheory.LocalNet.exists_toQuasilocal_eq`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L218).
+**`ProbabilisticTheory.LocalNet.exists_toQuasilocal_eq`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L218).
 
 > Every quasilocal observable has a representative in some subsystem.
 
@@ -240,7 +240,7 @@ lemma exists_toQuasilocal_eq (x : N.Quasilocal) :
     ∃ (i : R) (a : (A i).Observables), toQuasilocal N i a = x
 ```
 
-**`ProbabilisticTheory.LocalNet.exists_toQuasilocal_eq₂`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L223).
+**`ProbabilisticTheory.LocalNet.exists_toQuasilocal_eq₂`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean#L223).
 
 > Any two quasilocal observables have representatives in a common subsystem.
 
@@ -255,4 +255,4 @@ lemma exists_toQuasilocal_eq₂ (x y : N.Quasilocal) :
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/LocalNet/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Basic.lean)
+- [Physlib/ProbabilisticTheory/LocalNet/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/Basic.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # One-parameter groups
 
-The module `PhyslibAlpha.ProbabilisticTheory.Dynamics.OneParameterGroup`, [PhyslibAlpha/ProbabilisticTheory/Dynamics/OneParameterGroup.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Dynamics/OneParameterGroup.lean): 4 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Dynamics.OneParameterGroup`, [PhyslibAlpha/ProbabilisticTheory/Dynamics/OneParameterGroup.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Dynamics/OneParameterGroup.lean): 4 declarations, 2 with a docstring.
 
 > Defines one-parameter groups `α : ℝ → E → E` satisfying `α 0 = id` and the group law.
 
@@ -27,7 +27,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Dynamics.OneParameterGroup`, [Physl
 
 ## A. The group law
 
-**`PhyslibAlpha.ProbabilisticTheory.IsOneParameterGroup`**, a structure, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Dynamics/OneParameterGroup.lean#L44).
+**`PhyslibAlpha.ProbabilisticTheory.IsOneParameterGroup`**, a structure, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Dynamics/OneParameterGroup.lean#L44).
 
 > `α : ℝ → E → E` is a one-parameter group of (not-yet-specified-as-anything) transformations of
 > `E`: `α 0 = id` and `α (s + t) = α s ∘ α t`. Nothing about linearity, order, a product, or
@@ -41,7 +41,7 @@ structure IsOneParameterGroup {E : Type*} (α : ℝ → E → E) : Prop where
   map_add : ∀ s t a, α (s + t) a = α s (α t a)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsOneParameterGroup.left_inv`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Dynamics/OneParameterGroup.lean#L57).
+**`PhyslibAlpha.ProbabilisticTheory.IsOneParameterGroup.left_inv`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Dynamics/OneParameterGroup.lean#L57).
 
 > Every time-`t` map has a two-sided inverse, `α (-t)`: an immediate consequence of the group
 > law, recorded once here rather than re-derived at each point of use.
@@ -50,13 +50,13 @@ structure IsOneParameterGroup {E : Type*} (α : ℝ → E → E) : Prop where
 lemma left_inv (t : ℝ) (a : E) : α (-t) (α t a) = a
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsOneParameterGroup.right_inv`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Dynamics/OneParameterGroup.lean#L61).
+**`PhyslibAlpha.ProbabilisticTheory.IsOneParameterGroup.right_inv`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Dynamics/OneParameterGroup.lean#L61).
 
 ```lean
 lemma right_inv (t : ℝ) (a : E) : α t (α (-t) a) = a
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsOneParameterGroup.bijective`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Dynamics/OneParameterGroup.lean#L65).
+**`PhyslibAlpha.ProbabilisticTheory.IsOneParameterGroup.bijective`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Dynamics/OneParameterGroup.lean#L65).
 
 ```lean
 lemma bijective (t : ℝ) : Function.Bijective (α t)
@@ -68,4 +68,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Dynamics/OneParameterGroup.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Dynamics/OneParameterGroup.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Dynamics/OneParameterGroup.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Dynamics/OneParameterGroup.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Indexing a net by the members of a filter
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Order.Filter.SmallSets`, [PhyslibAlpha/Mathematics/TauCeti/Order/Filter/SmallSets.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Order/Filter/SmallSets.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Order.Filter.SmallSets`, [PhyslibAlpha/Mathematics/TauCeti/Order/Filter/SmallSets.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Order/Filter/SmallSets.lean): 1 declaration, 1 with a docstring.
 
 > A family indexed by the members of a filter `l` — a net of the shape `k : {s : Set α // s ∈ l} → β`
 > — is naturally taken along `Filter.comap Subtype.val l.smallSets`, for which `∀ᶠ s in _, p s` says
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Order.Filter.SmallSets`, [PhyslibAl
 
 ## A. Development
 
-**`TauCeti.comap_val_smallSets_neBot`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Order/Filter/SmallSets.lean#L49).
+**`TauCeti.comap_val_smallSets_neBot`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Order/Filter/SmallSets.lean#L49).
 
 > **A filter indexes a nontrivial net by its own members.** A net indexed by the members of a
 > filter `l` converges along this filter, the members read through `Filter.smallSets`, so that
@@ -49,4 +49,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Order/Filter/SmallSets.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Order/Filter/SmallSets.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Order/Filter/SmallSets.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Order/Filter/SmallSets.lean)

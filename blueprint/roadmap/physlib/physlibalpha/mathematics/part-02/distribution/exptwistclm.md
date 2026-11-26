@@ -8,7 +8,7 @@ proof: formalized
 
 # Exponential twists on test functions
 
-The module `PhyslibAlpha.Mathematics.Distribution.ExpTwistCLM`, [PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean): 17 declarations, 6 with a docstring.
+The module `PhyslibAlpha.Mathematics.Distribution.ExpTwistCLM`, [PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean): 17 declarations, 6 with a docstring.
 
 > Conjugating a continuous linear operator on test functions by the exponential twist moves its
 > values by `O (|a|)` in every derivative.
@@ -48,7 +48,7 @@ The module `PhyslibAlpha.Mathematics.Distribution.ExpTwistCLM`, [PhyslibAlpha/Ma
 
 > - `ExpTwist.tendsto_distribution_twist` : the conjugation limit.
 
-**`ExpTwist.twistCLM`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L72).
+**`ExpTwist.twistCLM`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L72).
 
 > Multiplication of a test function by the twist.
 
@@ -56,14 +56,14 @@ The module `PhyslibAlpha.Mathematics.Distribution.ExpTwistCLM`, [PhyslibAlpha/Ma
 def twistCLM (a : ℝ) : 𝓓((⊤ : Opens E), ℝ) →L[ℝ] 𝓓((⊤ : Opens E), ℝ)
 ```
 
-**`ExpTwist.twistCLM_apply`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L75).
+**`ExpTwist.twistCLM_apply`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L75).
 
 ```lean
 lemma twistCLM_apply (a : ℝ) (φ : 𝓓((⊤ : Opens E), ℝ)) (x : E) :
     twistCLM ℓ a φ x = φ x * twist ℓ a x
 ```
 
-**`ExpTwist.iterDerivCLM`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L80).
+**`ExpTwist.iterDerivCLM`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L80).
 
 > The `k`-th derivative of a test function as a bounded continuous function.
 
@@ -71,28 +71,28 @@ lemma twistCLM_apply (a : ℝ) (φ : 𝓓((⊤ : Opens E), ℝ)) (x : E) :
 def iterDerivCLM (k : ℕ) : 𝓓((⊤ : Opens E), ℝ) →L[ℝ] (E →ᵇ (E [×k]→L[ℝ] ℝ))
 ```
 
-**`ExpTwist.iterDerivCLM_apply`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L97).
+**`ExpTwist.iterDerivCLM_apply`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L97).
 
 ```lean
 lemma iterDerivCLM_apply (k : ℕ) (φ : 𝓓((⊤ : Opens E), ℝ)) (x : E) :
     iterDerivCLM E k φ x = iteratedFDeriv ℝ k φ x
 ```
 
-**`ExpTwist.norm_iteratedFDeriv_le_iterDerivCLM`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L102).
+**`ExpTwist.norm_iteratedFDeriv_le_iterDerivCLM`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L102).
 
 ```lean
 lemma norm_iteratedFDeriv_le_iterDerivCLM (k : ℕ) (φ : 𝓓((⊤ : Opens E), ℝ)) (x : E) :
     ‖iteratedFDeriv ℝ k φ x‖ ≤ ‖iterDerivCLM E k φ‖
 ```
 
-**`ExpTwist.norm_iterDerivCLM_le`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L107).
+**`ExpTwist.norm_iterDerivCLM_le`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L107).
 
 ```lean
 lemma norm_iterDerivCLM_le (k : ℕ) (φ : 𝓓((⊤ : Opens E), ℝ)) {C : ℝ} (hC : 0 ≤ C)
     (h : ∀ x, ‖iteratedFDeriv ℝ k φ x‖ ≤ C) : ‖iterDerivCLM E k φ‖ ≤ C
 ```
 
-**`ExpTwist.twistConst`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L115).
+**`ExpTwist.twistConst`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L115).
 
 > The constant in the twist estimate.
 
@@ -100,7 +100,7 @@ lemma norm_iterDerivCLM_le (k : ℕ) (φ : 𝓓((⊤ : Opens E), ℝ)) {C : ℝ}
 def twistConst (R : ℝ) (k : ℕ) : ℝ
 ```
 
-**`ExpTwist.dnorm_twistCLM_sub_le`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L118).
+**`ExpTwist.dnorm_twistCLM_sub_le`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L118).
 
 ```lean
 lemma dnorm_twistCLM_sub_le {a R : ℝ} (hR : 0 ≤ R) (ha : |a| ≤ 1) (φ : 𝓓((⊤ : Opens E), ℝ))
@@ -109,14 +109,14 @@ lemma dnorm_twistCLM_sub_le {a R : ℝ} (hR : 0 ≤ R) (ha : |a| ≤ 1) (φ : �
       |a| * twistConst ℓ R k * ∑ j ∈ Finset.range (k + 1), ‖iterDerivCLM E j φ‖
 ```
 
-**`ExpTwist.tendsto_twistCLM`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L141).
+**`ExpTwist.tendsto_twistCLM`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L141).
 
 ```lean
 lemma tendsto_twistCLM (φ : 𝓓((⊤ : Opens E), ℝ)) :
     Filter.Tendsto (fun a : ℝ => twistCLM ℓ a φ) (nhds 0) (nhds φ)
 ```
 
-**`ExpTwist.exists_bound_of_tsupport_subset`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L191).
+**`ExpTwist.exists_bound_of_tsupport_subset`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L191).
 
 > **Finite order.** A distribution is bounded on test functions supported in a compact set by
 > finitely many sup norms of derivatives.
@@ -127,7 +127,7 @@ lemma exists_bound_of_tsupport_subset (T : 𝓓((⊤ : Opens E), ℝ) →L[ℝ] 
       |T w| ≤ c * ∑ k ∈ Finset.range (N + 1), ‖iterDerivCLM E k w‖
 ```
 
-**`ExpTwist.dsum`**, a def, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L223).
+**`ExpTwist.dsum`**, a def, [line 223](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L223).
 
 > The sum of the sup norms of the derivatives up to the order `N`.
 
@@ -135,26 +135,26 @@ lemma exists_bound_of_tsupport_subset (T : 𝓓((⊤ : Opens E), ℝ) →L[ℝ] 
 def dsum (N : ℕ) (w : 𝓓((⊤ : Opens E), ℝ)) : ℝ
 ```
 
-**`ExpTwist.dsum_nonneg`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L226).
+**`ExpTwist.dsum_nonneg`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L226).
 
 ```lean
 lemma dsum_nonneg (N : ℕ) (w : 𝓓((⊤ : Opens E), ℝ)) : 0 ≤ dsum E N w
 ```
 
-**`ExpTwist.dsum_add_le`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L229).
+**`ExpTwist.dsum_add_le`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L229).
 
 ```lean
 lemma dsum_add_le (N : ℕ) (v w : 𝓓((⊤ : Opens E), ℝ)) :
     dsum E N (v + w) ≤ dsum E N v + dsum E N w
 ```
 
-**`ExpTwist.dsum_neg`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L237).
+**`ExpTwist.dsum_neg`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L237).
 
 ```lean
 lemma dsum_neg (N : ℕ) (w : 𝓓((⊤ : Opens E), ℝ)) : dsum E N (-w) = dsum E N w
 ```
 
-**`ExpTwist.dsum_twistCLM_sub_le`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L243).
+**`ExpTwist.dsum_twistCLM_sub_le`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L243).
 
 ```lean
 lemma dsum_twistCLM_sub_le {a R : ℝ} (hR : 0 ≤ R) (ha : |a| ≤ 1) (N : ℕ)
@@ -163,14 +163,14 @@ lemma dsum_twistCLM_sub_le {a R : ℝ} (hR : 0 ≤ R) (ha : |a| ≤ 1) (N : ℕ)
       |a| * (∑ k ∈ Finset.range (N + 1), twistConst ℓ R k) * dsum E N φ
 ```
 
-**`ExpTwist.tsupport_twistCLM_subset`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L261).
+**`ExpTwist.tsupport_twistCLM_subset`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L261).
 
 ```lean
 lemma tsupport_twistCLM_subset (a : ℝ) (g : 𝓓((⊤ : Opens E), ℝ)) :
     tsupport ⇑(twistCLM ℓ a g) ⊆ tsupport g
 ```
 
-**`ExpTwist.tendsto_distribution_twist`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L267).
+**`ExpTwist.tendsto_distribution_twist`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean#L267).
 
 > **Conjugation by the twist.** For a continuous linear `C` with values supported in a ball and
 > a distribution `T`, the twisted values `T (M_a C M_{-a} φ)` converge to `T (C φ)`.
@@ -189,4 +189,4 @@ lemma tendsto_distribution_twist [ProperSpace E] (T : 𝓓((⊤ : Opens E), ℝ)
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean)
+- [PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/ExpTwistCLM.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Integrals in Space
 
-The module `Physlib.SpaceAndTime.Space.Integrals.Basic`, [Physlib/SpaceAndTime/Space/Integrals/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/Basic.lean): 13 declarations (1 instance with no name), none with a docstring.
+The module `Physlib.SpaceAndTime.Space.Integrals.Basic`, [Physlib/SpaceAndTime/Space/Integrals/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/Basic.lean): 13 declarations (1 instance with no name), none with a docstring.
 
 ## i. Overview
 
@@ -29,34 +29,34 @@ The module `Physlib.SpaceAndTime.Space.Integrals.Basic`, [Physlib/SpaceAndTime/S
 
 ## A. Properties of the volume measure
 
-**`Space.volume_eq_addHaar`**, a lemma, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L47).
+**`Space.volume_eq_addHaar`**, a lemma, [line 47](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L47).
 
 ```lean
 lemma volume_eq_addHaar {d} : (volume (α := Space d)) = Space.basis.toBasis.addHaar
 ```
 
-**`Space.volume_metricBall_three`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L51).
+**`Space.volume_metricBall_three`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L51).
 
 ```lean
 lemma volume_metricBall_three :
     volume (Metric.ball (0 : Space 3) 1) = ENNReal.ofReal (4 / 3 * Real.pi)
 ```
 
-**`Space.volume_metricBall_two`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L60).
+**`Space.volume_metricBall_two`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L60).
 
 ```lean
 lemma volume_metricBall_two :
     volume (Metric.ball (0 : Space 2) 1) = ENNReal.ofReal Real.pi
 ```
 
-**`Space.volume_metricBall_two_real`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L67).
+**`Space.volume_metricBall_two_real`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L67).
 
 ```lean
 lemma volume_metricBall_two_real :
     (volume.real (Metric.ball (0 : Space 2) 1)) = Real.pi
 ```
 
-**`Space.volume_metricBall_three_real`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L76).
+**`Space.volume_metricBall_three_real`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L76).
 
 ```lean
 lemma volume_metricBall_three_real :
@@ -65,7 +65,7 @@ lemma volume_metricBall_three_real :
 
 ## B. Integrals over one-dimensional space
 
-**`Space.integral_one_dim_eq_integral_real`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L90).
+**`Space.integral_one_dim_eq_integral_real`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L90).
 
 ```lean
 lemma integral_one_dim_eq_integral_real {f : Space 1 → ℝ} :
@@ -74,7 +74,7 @@ lemma integral_one_dim_eq_integral_real {f : Space 1 → ℝ} :
 
 ## C. Integrals over volume to spherical
 
-**`Space.integral_volume_eq_spherical`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L99).
+**`Space.integral_volume_eq_spherical`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L99).
 
 ```lean
 lemma integral_volume_eq_spherical (d : ℕ) [NeZero d] (f : Space d → F)
@@ -83,7 +83,7 @@ lemma integral_volume_eq_spherical (d : ℕ) [NeZero d] (f : Space d → F)
         (Measure.volumeIoiPow (Module.finrank ℝ (Space d) - 1)))
 ```
 
-**`Space.integrable_spherical_of_integrable`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L128).
+**`Space.integrable_spherical_of_integrable`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L128).
 
 ```lean
 lemma integrable_spherical_of_integrable {d : ℕ} {F : Type*}
@@ -96,7 +96,7 @@ lemma integrable_spherical_of_integrable {d : ℕ} {F : Type*}
         (Measure.volumeIoiPow (Module.finrank ℝ (Space d) - 1)))
 ```
 
-**`Space.integral_volume_eq_spherical_iterated`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L157).
+**`Space.integral_volume_eq_spherical_iterated`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L157).
 
 ```lean
 lemma integral_volume_eq_spherical_iterated {d : ℕ} [NeZero d] {F : Type*}
@@ -109,14 +109,14 @@ lemma integral_volume_eq_spherical_iterated {d : ℕ} [NeZero d] {F : Type*}
         ∂(volume (α := Space d).toSphere)
 ```
 
-**An instance with no name**, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L172).
+**An instance with no name**, [line 172](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L172).
 
 ```lean
 instance : SFinite (@Measure.comap ↑(Set.Ioi 0) ℝ Subtype.instMeasurableSpace
         Real.measureSpace.toMeasurableSpace Subtype.val volume)
 ```
 
-**`Space.integral_volume_eq_spherical_integral`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L199).
+**`Space.integral_volume_eq_spherical_integral`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L199).
 
 ```lean
 lemma integral_volume_eq_spherical_integral {d : ℕ} [NeZero d] {F : Type*}
@@ -131,7 +131,7 @@ lemma integral_volume_eq_spherical_integral {d : ℕ} [NeZero d] {F : Type*}
 
 ## D. Lower Lebesgue integral over volume to spherical
 
-**`Space.lintegral_volume_eq_spherical`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L222).
+**`Space.lintegral_volume_eq_spherical`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L222).
 
 ```lean
 lemma lintegral_volume_eq_spherical (d : ℕ) [NeZero d]
@@ -140,7 +140,7 @@ lemma lintegral_volume_eq_spherical (d : ℕ) [NeZero d]
         (Measure.volumeIoiPow (Module.finrank ℝ (Space d) - 1)))
 ```
 
-**`Space.lintegral_volume_eq_spherical_mul`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L248).
+**`Space.lintegral_volume_eq_spherical_mul`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/Basic.lean#L248).
 
 ```lean
 lemma lintegral_volume_eq_spherical_mul (d : ℕ) [NeZero d]
@@ -159,4 +159,4 @@ lemma lintegral_volume_eq_spherical_mul (d : ℕ) [NeZero d]
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/Integrals/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/Basic.lean)
+- [Physlib/SpaceAndTime/Space/Integrals/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/Basic.lean)

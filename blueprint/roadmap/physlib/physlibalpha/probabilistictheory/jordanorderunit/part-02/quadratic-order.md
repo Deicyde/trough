@@ -8,7 +8,7 @@ proof: formalized
 
 # Positive quadratic representations
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Quadratic.Order`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean): 7 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Quadratic.Order`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean): 7 declarations, 5 with a docstring.
 
 > Quadratically positive Jordan order-unit spaces, where each `U_a` is a positive linear map.
 
@@ -29,7 +29,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Quadratic.Order`, [
 
 ## A. Quadratically positive Jordan algebras
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsQuadraticallyPositive`**, a class, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean#L53).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsQuadraticallyPositive`**, a class, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean#L53).
 
 > Every quadratic representation `U_a` preserves the positive cone.
 
@@ -39,7 +39,7 @@ class IsQuadraticallyPositive (E : Type*) [NonAssocCommRing E] [PartialOrder E]
   quadRep_nonneg : ∀ (a : E) {b : E}, 0 ≤ b → 0 ≤ U a b
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_nonneg`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean#L60).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_nonneg`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean#L60).
 
 > Quadratic representations map nonnegative observables to nonnegative observables.
 
@@ -49,7 +49,7 @@ lemma quadRep_nonneg (a : E) {b : E} (hb : 0 ≤ b) : 0 ≤ U a b
 
 ## B. The positive linear map `U_a`
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRepPositiveLinearMap`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean#L66).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRepPositiveLinearMap`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean#L66).
 
 > The quadratic representation as a bundled positive linear operation.
 
@@ -57,20 +57,20 @@ lemma quadRep_nonneg (a : E) {b : E} (hb : 0 ≤ b) : 0 ≤ U a b
 def quadRepPositiveLinearMap (a : E) : E →ₚ[ℝ] E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.coe_quadRepPositiveLinearMap`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean#L70).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.coe_quadRepPositiveLinearMap`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean#L70).
 
 ```lean
 lemma coe_quadRepPositiveLinearMap (a : E) :
     (quadRepPositiveLinearMap a : E →ₗ[ℝ] E) = U a
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRepPositiveLinearMap_apply`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean#L75).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRepPositiveLinearMap_apply`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean#L75).
 
 ```lean
 lemma quadRepPositiveLinearMap_apply (a b : E) : quadRepPositiveLinearMap a b = U a b
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRepPositiveLinearMap_one`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean#L80).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRepPositiveLinearMap_one`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean#L80).
 
 > The unit has the identity quadratic operation.
 
@@ -79,7 +79,7 @@ lemma quadRepPositiveLinearMap_one :
     quadRepPositiveLinearMap (1 : E) = PositiveLinearMap.id ℝ E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_monotone`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean#L87).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.quadRep_monotone`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean#L87).
 
 > Positivity of `U a` implies monotonicity.
 
@@ -93,4 +93,4 @@ lemma quadRep_monotone (a : E) : Monotone (U a)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean)

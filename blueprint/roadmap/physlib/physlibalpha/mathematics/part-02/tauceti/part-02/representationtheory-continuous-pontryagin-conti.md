@@ -8,7 +8,7 @@ proof: formalized
 
 # Continuity of the integrated-character parameter
 
-The module `PhyslibAlpha.Mathematics.TauCeti.RepresentationTheory.Continuous.Pontryagin.Continuity`, [PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean): 7 declarations, 7 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.RepresentationTheory.Continuous.Pontryagin.Continuity`, [PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean): 7 declarations, 7 with a docstring.
 
 > Let `π` be a strongly continuous unitary representation of an abelian topological group equipped
 > with a regular invariant measure, and let `A` be a complete star subalgebra containing all
@@ -53,7 +53,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.RepresentationTheory.Continuous.Pon
 
 ## A. Development
 
-**`ContRepresentation.integratedCharacterSet`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean#L85).
+**`ContRepresentation.integratedCharacterSet`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean#L85).
 
 > The characters of an algebra containing the integrated form which do not annihilate every
 > integrated operator.  When `π` is unitary, these are exactly the algebra characters from which
@@ -63,7 +63,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.RepresentationTheory.Continuous.Pon
 def integratedCharacterSet : Set (characterSpace ℂ A)
 ```
 
-**`ContRepresentation.mem_integratedCharacterSet_iff`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean#L91).
+**`ContRepresentation.mem_integratedCharacterSet_iff`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean#L91).
 
 > Membership in the integrated-character set means nonvanishing on some integrated operator.
 
@@ -73,7 +73,7 @@ lemma mem_integratedCharacterSet_iff (ω : characterSpace ℂ A) :
       ∃ f : G →₁[μ] ℂ, ω ⟨π.integratedOperatorL1 hcont hbdd μ f, hA f⟩ ≠ 0
 ```
 
-**`ContRepresentation.isOpen_integratedCharacterSet`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean#L98).
+**`ContRepresentation.isOpen_integratedCharacterSet`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean#L98).
 
 > The integrated-character set is open in the character space.
 
@@ -82,7 +82,7 @@ lemma isOpen_integratedCharacterSet :
     IsOpen (π.integratedCharacterSet hcont hbdd A hA)
 ```
 
-**`ContRepresentation.integratedCharacterToPontryaginDual`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean#L112).
+**`ContRepresentation.integratedCharacterToPontryaginDual`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean#L112).
 
 > The continuous group character detected by an algebra character that does not annihilate the
 > integrated form.
@@ -92,7 +92,7 @@ noncomputable def integratedCharacterToPontryaginDual
     (ω : π.integratedCharacterSet hcont hbdd A hA) : PontryaginDual (Multiplicative G)
 ```
 
-**`ContRepresentation.integratedCharacterToPontryaginDual_spec`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean#L120).
+**`ContRepresentation.integratedCharacterToPontryaginDual_spec`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean#L120).
 
 > The defining multiplier identity for the group character detected by an integrated
 > character.
@@ -108,7 +108,7 @@ lemma integratedCharacterToPontryaginDual_spec
         ω.1 ⟨π.integratedOperatorL1 hcont hbdd μ f, hA f⟩
 ```
 
-**`ContRepresentation.coe_integratedCharacterToPontryaginDual_apply_eq_div`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean#L133).
+**`ContRepresentation.coe_integratedCharacterToPontryaginDual_apply_eq_div`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean#L133).
 
 > Local quotient formula for the group character detected by an integrated character.
 
@@ -123,7 +123,7 @@ lemma coe_integratedCharacterToPontryaginDual_apply_eq_div
         ω.1 ⟨π.integratedOperatorL1 hcont hbdd μ f, hA f⟩
 ```
 
-**`ContRepresentation.continuous_integratedCharacterToPontryaginDual`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean#L146).
+**`ContRepresentation.continuous_integratedCharacterToPontryaginDual`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean#L146).
 
 > The group character detected by a nonvanishing integrated character depends continuously on
 > the algebra character.
@@ -143,4 +143,4 @@ lemma continuous_integratedCharacterToPontryaginDual :
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Pontryagin/Continuity.lean)

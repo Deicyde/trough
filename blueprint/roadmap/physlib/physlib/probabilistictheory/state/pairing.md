@@ -8,7 +8,7 @@ proof: formalized
 
 # The state–effect pairing (Physlib)
 
-The module `Physlib.ProbabilisticTheory.State.Pairing`, [Physlib/ProbabilisticTheory/State/Pairing.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Pairing.lean): 4 declarations, 4 with a docstring.
+The module `Physlib.ProbabilisticTheory.State.Pairing`, [Physlib/ProbabilisticTheory/State/Pairing.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Pairing.lean): 4 declarations, 4 with a docstring.
 
 > State–effect evaluation gives probabilities that distinguish states and effects alike.
 
@@ -29,7 +29,7 @@ The module `Physlib.ProbabilisticTheory.State.Pairing`, [Physlib/ProbabilisticTh
 
 ## A. State–effect evaluation
 
-**`ProbabilisticTheory.State.apply_mem_Icc`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Pairing.lean#L56).
+**`ProbabilisticTheory.State.apply_mem_Icc`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Pairing.lean#L56).
 
 > State–effect evaluation takes values in `[0, 1]`.
 
@@ -37,7 +37,7 @@ The module `Physlib.ProbabilisticTheory.State.Pairing`, [Physlib/ProbabilisticTh
 lemma apply_mem_Icc (ω : P.State) (e : P.Effect) : ω e ∈ Set.Icc 0 1
 ```
 
-**`ProbabilisticTheory.State.apply_mix`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Pairing.lean#L60).
+**`ProbabilisticTheory.State.apply_mix`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Pairing.lean#L60).
 
 > Evaluation is affine in the effect argument.
 
@@ -48,7 +48,7 @@ lemma apply_mix (ω : P.State) (e f : P.Effect) (t : unitInterval) :
 
 ## B. Effects separate states
 
-**`ProbabilisticTheory.State.ext_of_effect_eq`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Pairing.lean#L71).
+**`ProbabilisticTheory.State.ext_of_effect_eq`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Pairing.lean#L71).
 
 > A state is determined by its values on effects.
 
@@ -58,7 +58,7 @@ lemma ext_of_effect_eq {ω φ : P.State} (h : ∀ e : P.Effect, ω e = φ e) : �
 
 ## C. States separate effects
 
-**`ProbabilisticTheory.Effect.ext_of_forall_apply_eq`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Pairing.lean#L93).
+**`ProbabilisticTheory.Effect.ext_of_forall_apply_eq`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Pairing.lean#L93).
 
 > An effect is determined by its values under all states.
 
@@ -78,4 +78,4 @@ lemma ext_of_forall_apply_eq {e f : P.Effect}
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/State/Pairing.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Pairing.lean)
+- [Physlib/ProbabilisticTheory/State/Pairing.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Pairing.lean)

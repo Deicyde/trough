@@ -8,7 +8,7 @@ proof: formalized
 
 # QuantumInfo.ResourceTheory.HypothesisTesting
 
-The module `QuantumInfo.ResourceTheory.HypothesisTesting`, [QuantumInfo/ResourceTheory/HypothesisTesting.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean): 21 declarations (1 instance with no name), 11 with a docstring, 9 listed as significant.
+The module `QuantumInfo.ResourceTheory.HypothesisTesting`, [QuantumInfo/ResourceTheory/HypothesisTesting.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean): 21 declarations (1 instance with no name), 11 with a docstring, 9 listed as significant.
 
 > Defines `OptimalHypothesisRate`, the optimal rate of distinguishing an `MState` ρ from a set of other
 > mixed states `S`, with at most Type I error ε.
@@ -26,7 +26,7 @@ The module `QuantumInfo.ResourceTheory.HypothesisTesting`, [QuantumInfo/Resource
 > See [The tangled state of quantum hypothesis testing](https://doi.org/10.1038/s41567-023-02289-9) by
 > Mario Berta et al. for a broader overview.
 
-**`OptimalHypothesisRate`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L45).
+**`OptimalHypothesisRate`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L45).
 
 > The optimal hypothesis testing rate, for a tolerance ε: given a state ρ and a set of states S,
 > the optimum distinguishing rate that allows a probability ε of errors.
@@ -35,7 +35,7 @@ The module `QuantumInfo.ResourceTheory.HypothesisTesting`, [QuantumInfo/Resource
 noncomputable def OptimalHypothesisRate (ρ : MState d) (ε : Prob) (S : Set (MState d)) : Prob
 ```
 
-**`OptimalHypothesisRate.iInf_Inhabited`**, an instance, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L54).
+**`OptimalHypothesisRate.iInf_Inhabited`**, an instance, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L54).
 
 > The space of strategies `T` in `OptimalHypothesisRate` is inhabited, we always have some valid strategy.
 
@@ -44,13 +44,13 @@ instance iInf_Inhabited (ρ : MState d) (ε : Prob) :
     Inhabited { m // ρ.exp_val (1 - m) ≤ ε ∧ 0 ≤ m ∧ m ≤ 1 }
 ```
 
-**An instance with no name**, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L58).
+**An instance with no name**, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L58).
 
 ```lean
 instance (ρ : MState d) (ε : Prob) : Inhabited {m | ρ.exp_val (1 - m) ≤ ε ∧ 0 ≤ m ∧ m ≤ 1}
 ```
 
-**`OptimalHypothesisRate.iInf_IsCompact`**, a theorem, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L62). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`OptimalHypothesisRate.iInf_IsCompact`**, a theorem, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L62). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The space of strategies `T` in `OptimalHypothesisRate` is compact.
 
@@ -58,7 +58,7 @@ instance (ρ : MState d) (ε : Prob) : Inhabited {m | ρ.exp_val (1 - m) ≤ ε 
 theorem iInf_IsCompact (ρ : MState d) (ε : Prob) : IsCompact { m | ρ.exp_val (1 - m) ≤ ε ∧ 0 ≤ m ∧ m ≤ 1 }
 ```
 
-**`OptimalHypothesisRate.iInf_IsConvex`**, a theorem, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L73). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`OptimalHypothesisRate.iInf_IsConvex`**, a theorem, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L73). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The space of strategies `T` in `OptimalHypothesisRate` is convex.
 
@@ -66,7 +66,7 @@ theorem iInf_IsCompact (ρ : MState d) (ε : Prob) : IsCompact { m | ρ.exp_val 
 theorem iInf_IsConvex (ρ : MState d) (ε : Prob) : Convex ℝ { m | ρ.exp_val (1 - m) ≤ ε ∧ 0 ≤ m ∧ m ≤ 1 }
 ```
 
-**`OptimalHypothesisRate.of_empty`**, a theorem, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L92). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`OptimalHypothesisRate.of_empty`**, a theorem, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L92). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > When `S` is empty, the optimal hypothesis testing rate is zero.
 
@@ -74,7 +74,7 @@ theorem iInf_IsConvex (ρ : MState d) (ε : Prob) : Convex ℝ { m | ρ.exp_val 
 theorem of_empty {ρ : MState d} (ε : Prob) : β_ ε(ρ‖∅) = 0
 ```
 
-**`OptimalHypothesisRate.le_sup_exp_val`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L97).
+**`OptimalHypothesisRate.le_sup_exp_val`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L97).
 
 ```lean
 lemma le_sup_exp_val {ρ : MState d} (ε : Prob) {S : Set (MState d)}
@@ -82,14 +82,14 @@ lemma le_sup_exp_val {ρ : MState d} (ε : Prob) {S : Set (MState d)}
     β_ ε(ρ‖S) ≤ ⨆ σ ∈ S, ⟨_, σ.exp_val_prob hm⟩
 ```
 
-**`OptimalHypothesisRate.le_of_subset`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L104).
+**`OptimalHypothesisRate.le_of_subset`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L104).
 
 ```lean
 lemma le_of_subset (ρ : MState d) (ε : Prob) {S1 S2 : Set (MState d)} (h : S1 ⊆ S2) :
     β_ ε(ρ‖S1) ≤ β_ ε(ρ‖S2)
 ```
 
-**`OptimalHypothesisRate.of_singleton`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L108).
+**`OptimalHypothesisRate.of_singleton`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L108).
 
 ```lean
 lemma of_singleton {ρ σ : MState d} {ε : Prob} :
@@ -98,14 +98,14 @@ lemma of_singleton {ρ σ : MState d} {ε : Prob} :
         ⟨_, σ.exp_val_prob T.2.right⟩
 ```
 
-**`OptimalHypothesisRate.negLog_le_singleton`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L115).
+**`OptimalHypothesisRate.negLog_le_singleton`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L115).
 
 ```lean
 lemma negLog_le_singleton (ρ : MState d) (ε : Prob) (S : Set (MState d))
     (σ : MState d) (h : σ ∈ S) : —log β_ ε(ρ‖S) ≤ —log β_ ε(ρ‖{σ})
 ```
 
-**`OptimalHypothesisRate.singleton_le_exp_val`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L122).
+**`OptimalHypothesisRate.singleton_le_exp_val`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L122).
 
 ```lean
 lemma singleton_le_exp_val {ρ σ : MState d} {ε : Prob} (m : HermitianMat d ℂ)
@@ -113,7 +113,7 @@ lemma singleton_le_exp_val {ρ σ : MState d} {ε : Prob} (m : HermitianMat d �
   β_ ε(ρ‖{σ}) ≤ ⟨_, σ.exp_val_prob hm⟩
 ```
 
-**`OptimalHypothesisRate.exists_min'`**, a theorem, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L133). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`OptimalHypothesisRate.exists_min'`**, a theorem, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L133). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > There exists an optimal T for the hypothesis testing, that is, it's a minimum
 > and not just an infimum. This states we have `1 - ε ≤ ρ.exp_val T`, but we can always
@@ -126,7 +126,7 @@ theorem exists_min' (ρ : MState d) (ε : Prob) (S : Set (MState d)):
       ∧ 1 - ε ≤ ρ.exp_val T
 ```
 
-**`OptimalHypothesisRate.exists_min`**, a theorem, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L176). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`OptimalHypothesisRate.exists_min`**, a theorem, [line 176](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L176). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > There exists an optimal T for the hypothesis testing, that is, it's a minimum and
 > not just an infimum. This tightens the `T` from `exists_min'` to a `⟪ρ,T⟫ = 1 - ε` bound.
@@ -138,7 +138,7 @@ theorem exists_min (ρ : MState d) (ε : Prob) (S : Set (MState d)):
       ∧ ρ.exp_val T = 1 - ε
 ```
 
-**`OptimalHypothesisRate.pos_of_lt_one`**, a theorem, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L231). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`OptimalHypothesisRate.pos_of_lt_one`**, a theorem, [line 231](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L231). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > When the allowed Type I error `ε` is less than 1 (so, we have some limit on our errors),
 > and the kernel of the state `ρ` contains the kernel of some element in `S`, then the optimal
@@ -151,21 +151,21 @@ theorem pos_of_lt_one {ρ : MState d} (S : Set (MState d))
   {ε : Prob} (hε : ε < 1) : 0 < β_ ε(ρ‖S)
 ```
 
-**`OptimalHypothesisRate.Lemma3`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L261).
+**`OptimalHypothesisRate.Lemma3`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L261).
 
 ```lean
 lemma Lemma3 {ρ : MState d} (ε : Prob) {S : Set (MState d)} (hS₁ : IsCompact S)
     (hS₂ : Convex ℝ (MState.M '' S)) : ⨆ σ ∈ S, β_ ε(ρ‖{σ}) = β_ ε(ρ‖S)
 ```
 
-**`OptimalHypothesisRate.ker_diagonal_prob_eq_bot`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L304).
+**`OptimalHypothesisRate.ker_diagonal_prob_eq_bot`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L304).
 
 ```lean
 lemma ker_diagonal_prob_eq_bot {q : Prob} (hq₁ : 0 < q) (hq₂ : q < 1) :
     HermitianMat.ker (.diagonal ℂ (ProbDistribution.coin q ·)) = ⊥
 ```
 
-**`OptimalHypothesisRate.optimalHypothesisRate_antitone`**, a theorem, [line 326](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L326). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`OptimalHypothesisRate.optimalHypothesisRate_antitone`**, a theorem, [line 326](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L326). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Lemma S1
 
@@ -174,7 +174,7 @@ theorem optimalHypothesisRate_antitone (ρ σ : MState d) (ℰ : CPTPMap d d₂)
     β_ ε(ρ‖{σ}) ≤ β_ ε(ℰ ρ‖{ℰ σ})
 ```
 
-**`OptimalHypothesisRate.Ref81Lem5`**, a theorem, [line 357](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L357). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`OptimalHypothesisRate.Ref81Lem5`**, a theorem, [line 357](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L357). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > This is from [Strong converse exponents for a quantum channel discrimination problem
 > and quantum-feedback-assisted communication](https://doi.org/10.1007/s00220-016-2645-4), Lemma 5.
@@ -188,21 +188,21 @@ theorem Ref81Lem5 (ρ σ : MState d) (ε : Prob) (hε : ε < 1) (α : ℝ) (hα 
       (.ofNNReal ⟨α, zero_le_one.trans hα.le⟩) / (.ofNNReal ⟨α - 1, sub_nonneg_of_le hα.le⟩)
 ```
 
-**`OptimalHypothesisRate.rate_pos_of_smul_pos`**, a lemma, [line 524](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L524).
+**`OptimalHypothesisRate.rate_pos_of_smul_pos`**, a lemma, [line 524](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L524).
 
 ```lean
 lemma rate_pos_of_smul_pos {ε : Prob} {d : Type*} [Fintype d] [DecidableEq d] {ρ σ₁ σ₂ : MState d}
     (hσ₂ : 0 < β_ ε(ρ‖{σ₂})) {c : ℝ} (hc : 0 < c) (hσ : c • σ₂ ≤ σ₁.M) : 0 < β_ ε(ρ‖{σ₁})
 ```
 
-**`OptimalHypothesisRate.rate_Continuous_singleton`**, a lemma, [line 542](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L542).
+**`OptimalHypothesisRate.rate_Continuous_singleton`**, a lemma, [line 542](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L542).
 
 ```lean
 lemma rate_Continuous_singleton {ε : Prob} {d : Type*} [Fintype d] [DecidableEq d] (ρ : MState d) :
     Continuous fun σ ↦ β_ ε(ρ‖{σ})
 ```
 
-**`OptimalHypothesisRate.optimalHypothesisRate_unique`**, a theorem, [line 554](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L554). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`OptimalHypothesisRate.optimalHypothesisRate_unique`**, a theorem, [line 554](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean#L554). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > On the 1D Hilbert space, the optimal hypothesis testing rate is simply 1 - ε,
 > since there's nothing to learn. (More generally this would hold whenever ρ=σ.) -
@@ -226,4 +226,4 @@ theorem optimalHypothesisRate_unique {d : Type*} [Fintype d] [DecidableEq d]
 
 ## Sources
 
-- [QuantumInfo/ResourceTheory/HypothesisTesting.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ResourceTheory/HypothesisTesting.lean)
+- [QuantumInfo/ResourceTheory/HypothesisTesting.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ResourceTheory/HypothesisTesting.lean)

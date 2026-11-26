@@ -8,7 +8,7 @@ proof: formalized
 
 # Real rotations of a qubit and multiplexed gates
 
-The module `PhyslibAlpha.QuantumMechanics.QubitGates`, [PhyslibAlpha/QuantumMechanics/QubitGates.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/QubitGates.lean): 5 declarations, 3 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.QubitGates`, [PhyslibAlpha/QuantumMechanics/QubitGates.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/QubitGates.lean): 5 declarations, 3 with a docstring.
 
 > The rotation `Ry` of a qubit given by its cosine and sine, and gates controlled by the value of a
 > register.
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.QuantumMechanics.QubitGates`, [PhyslibAlpha/QuantumMech
 
 ## A. The rotation `Ry`
 
-**`PhyslibAlpha.Qubit.ry`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/QubitGates.lean#L56).
+**`PhyslibAlpha.Qubit.ry`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/QubitGates.lean#L56).
 
 > The rotation `!![c, -s; s, c]` of a qubit, for real `c`, `s` with `c² + s² = 1`.
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.QuantumMechanics.QubitGates`, [PhyslibAlpha/QuantumMech
 def ry (c s : ℝ) (h : c ^ 2 + s ^ 2 = 1) : 𝐔[Qubit]
 ```
 
-**`PhyslibAlpha.Qubit.ry_apply`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/QubitGates.lean#L65).
+**`PhyslibAlpha.Qubit.ry_apply`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/QubitGates.lean#L65).
 
 ```lean
 lemma ry_apply (c s : ℝ) (h : c ^ 2 + s ^ 2 = 1) :
@@ -53,7 +53,7 @@ lemma ry_apply (c s : ℝ) (h : c ^ 2 + s ^ 2 = 1) :
 
 ## B. Multiplexed gates
 
-**`PhyslibAlpha.Qubit.blockDiagonal_mem_unitaryGroup`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/QubitGates.lean#L77).
+**`PhyslibAlpha.Qubit.blockDiagonal_mem_unitaryGroup`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/QubitGates.lean#L77).
 
 > A block-diagonal matrix whose blocks are unitary is unitary.
 
@@ -62,7 +62,7 @@ lemma blockDiagonal_mem_unitaryGroup (g : ι → 𝐔[k]) :
     blockDiagonal (fun r => (g r : Matrix k k ℂ)) ∈ unitaryGroup (k × ι) ℂ
 ```
 
-**`PhyslibAlpha.Qubit.multiplex`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/QubitGates.lean#L86).
+**`PhyslibAlpha.Qubit.multiplex`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/QubitGates.lean#L86).
 
 > The multiplexed gate `Σ_r |r⟩⟨r| ⊗ g r` on `ι × k`: the gate `g r` on `k`, controlled by the
 > value `r` of the register `ι`.
@@ -71,7 +71,7 @@ lemma blockDiagonal_mem_unitaryGroup (g : ι → 𝐔[k]) :
 def multiplex (g : ι → 𝐔[k]) : 𝐔[ι × k]
 ```
 
-**`PhyslibAlpha.Qubit.multiplex_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/QubitGates.lean#L94).
+**`PhyslibAlpha.Qubit.multiplex_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/QubitGates.lean#L94).
 
 ```lean
 lemma multiplex_apply (g : ι → 𝐔[k]) (r r' : ι) (q q' : k) :
@@ -85,4 +85,4 @@ lemma multiplex_apply (g : ι → 𝐔[k]) (r r' : ι) (q q' : k) :
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/QubitGates.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/QubitGates.lean)
+- [PhyslibAlpha/QuantumMechanics/QubitGates.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/QubitGates.lean)

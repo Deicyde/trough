@@ -8,7 +8,7 @@ proof: formalized
 
 # Linear minorants of sublinear functionals
 
-The module `PhyslibAlpha.Mathematics.Sublinear`, [PhyslibAlpha/Mathematics/Sublinear.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Sublinear.lean): 3 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Mathematics.Sublinear`, [PhyslibAlpha/Mathematics/Sublinear.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Sublinear.lean): 3 declarations, 2 with a docstring.
 
 > A sublinear functional has a linear minorant attaining it at any given point (Hahn–Banach).
 
@@ -28,13 +28,13 @@ The module `PhyslibAlpha.Mathematics.Sublinear`, [PhyslibAlpha/Mathematics/Subli
 
 ## A. Linear minorants
 
-**`map_zero_of_sublinear`**, a lemma, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Sublinear.lean#L47).
+**`map_zero_of_sublinear`**, a lemma, [line 47](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Sublinear.lean#L47).
 
 ```lean
 lemma map_zero_of_sublinear : N 0 = 0
 ```
 
-**`smul_le_of_sublinear`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Sublinear.lean#L54).
+**`smul_le_of_sublinear`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Sublinear.lean#L54).
 
 > A sublinear functional dominates the multiples of its value at a point.
 
@@ -42,7 +42,7 @@ lemma map_zero_of_sublinear : N 0 = 0
 lemma smul_le_of_sublinear (c : ℝ) (x : V) : c * N x ≤ N (c • x)
 ```
 
-**`exists_linearMap_le_eq_of_sublinear`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Sublinear.lean#L66).
+**`exists_linearMap_le_eq_of_sublinear`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Sublinear.lean#L66).
 
 > **Hahn–Banach**: a sublinear functional has a linear minorant attaining it at `x`.
 
@@ -57,4 +57,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Sublinear.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Sublinear.lean)
+- [PhyslibAlpha/Mathematics/Sublinear.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Sublinear.lean)

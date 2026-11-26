@@ -8,7 +8,7 @@ proof: formalized
 
 # Interpolation of complete observables
 
-The module `PhyslibAlpha.ProbabilisticTheory.OrderUnit.Interpolation`, [PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean): 11 declarations, 9 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.OrderUnit.Interpolation`, [PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean): 11 declarations, 9 with a docstring.
 
 > Exact interpolants and the Riesz decomposition for complete observables with a lattice dual cone.
 
@@ -33,19 +33,19 @@ The module `PhyslibAlpha.ProbabilisticTheory.OrderUnit.Interpolation`, [PhyslibA
 
 ## A. Closed order intervals
 
-**`PhyslibAlpha.ProbabilisticTheory.ArchimedeanOrderUnitSpace.isClosed_setOf_le`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L56).
+**`PhyslibAlpha.ProbabilisticTheory.ArchimedeanOrderUnitSpace.isClosed_setOf_le`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L56).
 
 ```lean
 lemma isClosed_setOf_le (c : F) : IsClosed {x : F | c ≤ x}
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ArchimedeanOrderUnitSpace.isClosed_setOf_ge`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L60).
+**`PhyslibAlpha.ProbabilisticTheory.ArchimedeanOrderUnitSpace.isClosed_setOf_ge`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L60).
 
 ```lean
 lemma isClosed_setOf_ge (c : F) : IsClosed {x : F | x ≤ c}
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ArchimedeanOrderUnitSpace.dist_le_of_le_of_le`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L65).
+**`PhyslibAlpha.ProbabilisticTheory.ArchimedeanOrderUnitSpace.dist_le_of_le_of_le`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L65).
 
 > Two observables within `c • 1` of each other are at distance at most `c`.
 
@@ -54,7 +54,7 @@ lemma dist_le_of_le_of_le {x y : F} {c : ℝ} (hc : 0 ≤ c) (h₁ : x - c • 1
     (h₂ : y ≤ x + c • 1) : dist x y ≤ c
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ArchimedeanOrderUnitSpace.le_zero_of_forall_le_half_pow`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L72).
+**`PhyslibAlpha.ProbabilisticTheory.ArchimedeanOrderUnitSpace.le_zero_of_forall_le_half_pow`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L72).
 
 > An observable below every power `(1 / 2) ^ k` of the unit is nonpositive.
 
@@ -64,7 +64,7 @@ lemma le_zero_of_forall_le_half_pow {x : F} (hx : ∀ k : ℕ, x ≤ ((1 / 2 : �
 
 ## B. Exact interpolants
 
-**`HasLatticeDualCone.IsApproxInterpolant`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L95).
+**`HasLatticeDualCone.IsApproxInterpolant`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L95).
 
 > `g` interpolates between `a` and `b` up to `δ`.
 
@@ -72,7 +72,7 @@ lemma le_zero_of_forall_le_half_pow {x : F} (hx : ∀ k : ℕ, x ≤ ((1 / 2 : �
 def IsApproxInterpolant (a : Fin n → F) (b : Fin m → F) (δ : ℝ) (g : F) : Prop
 ```
 
-**`HasLatticeDualCone.snoc_le_snoc`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L101).
+**`HasLatticeDualCone.snoc_le_snoc`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L101).
 
 > Appending `g - δ • 1` below and `g + δ • 1` above keeps the lower observables below the upper
 > ones.
@@ -83,7 +83,7 @@ lemma snoc_le_snoc {δ : ℝ} (hδ : 0 ≤ δ) {g : F} (hg : IsApproxInterpolant
       Fin.snoc (α := fun _ => F) b (g + δ • 1) j
 ```
 
-**`HasLatticeDualCone.exists_isApproxInterpolant_near`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L114).
+**`HasLatticeDualCone.exists_isApproxInterpolant_near`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L114).
 
 > An approximate interpolant can be improved to any smaller error while moving by at most the sum
 > of the two errors.
@@ -94,7 +94,7 @@ lemma exists_isApproxInterpolant_near [Nontrivial F] {δ δ' : ℝ} (hδ : 0 ≤
     ∃ g', IsApproxInterpolant a b δ' g' ∧ g - (δ + δ') • 1 ≤ g' ∧ g' ≤ g + (δ + δ') • 1
 ```
 
-**`HasLatticeDualCone.exists_seq`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L131).
+**`HasLatticeDualCone.exists_seq`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L131).
 
 > A sequence of interpolants with errors `(1 / 2) ^ k`, each within
 > `(1 / 2) ^ k + (1 / 2) ^ (k + 1)` of the next.
@@ -106,7 +106,7 @@ lemma exists_seq [Nontrivial F] [NeZero n] [NeZero m] : ∃ g : ℕ → F, ∀ k
       g (k + 1) ≤ g k + ((1 / 2) ^ k + (1 / 2) ^ (k + 1) : ℝ) • 1
 ```
 
-**`HasLatticeDualCone.isApproxInterpolant_zero_of_tendsto`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L157).
+**`HasLatticeDualCone.isApproxInterpolant_zero_of_tendsto`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L157).
 
 > A limit of interpolants with errors `(1 / 2) ^ k` is an exact interpolant.
 
@@ -116,7 +116,7 @@ lemma isApproxInterpolant_zero_of_tendsto {g : ℕ → F} {g' : F}
     (∀ i, a i ≤ g') ∧ ∀ j, g' ≤ b j
 ```
 
-**`HasLatticeDualCone.exists_interpolant`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L175).
+**`HasLatticeDualCone.exists_interpolant`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L175).
 
 > **Exact interpolation.** On a complete Archimedean order-unit space whose positive functionals
 > form a lattice, lower observables below upper observables have an interpolant.
@@ -126,7 +126,7 @@ lemma exists_interpolant [CompleteSpace F] [NeZero n] [NeZero m] :
     ∃ g : F, (∀ i, a i ≤ g) ∧ ∀ j, g ≤ b j
 ```
 
-**`HasLatticeDualCone.hasRieszDecomposition`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L194).
+**`HasLatticeDualCone.hasRieszDecomposition`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean#L194).
 
 > On a complete Archimedean order-unit space whose positive functionals form a lattice,
 > observables have the Riesz decomposition.
@@ -148,4 +148,4 @@ lemma _root_.HasLatticeDualCone.hasRieszDecomposition {F : Type*} [ArchimedeanOr
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean)
+- [PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean)

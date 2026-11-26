@@ -8,7 +8,7 @@ proof: formalized
 
 # The simple gravity pendulum
 
-The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Basic`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean): 55 declarations, 55 with a docstring.
+The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Basic`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean): 55 declarations, 55 with a docstring.
 
 ## i. Overview
 
@@ -84,7 +84,7 @@ The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Basic`, [Physlib/
 > The three numbers are carried by a structure, together with the positivity assumptions: a
 > pendulum with a massless bob, a rod of zero length or no gravity is not a pendulum.
 
-**`ClassicalMechanics.SimplePendulum`**, a structure, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L137).
+**`ClassicalMechanics.SimplePendulum`**, a structure, [line 137](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L137).
 
 > The simple gravity pendulum is specified by the mass `m` of its bob, the length `ℓ` of its
 > rod, and the gravitational acceleration `g`. All three are assumed to be positive. The
@@ -108,7 +108,7 @@ structure SimplePendulum where
 > The positivity of the input data is used most often through the corresponding non-vanishing
 > statements, which is the form in which the field-clearing tactics consume it.
 
-**`ClassicalMechanics.SimplePendulum.m_ne_zero`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L163).
+**`ClassicalMechanics.SimplePendulum.m_ne_zero`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L163).
 
 > The mass of the bob is not equal to zero.
 
@@ -116,7 +116,7 @@ structure SimplePendulum where
 lemma m_ne_zero : S.m ≠ 0
 ```
 
-**`ClassicalMechanics.SimplePendulum.ℓ_ne_zero`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L167).
+**`ClassicalMechanics.SimplePendulum.ℓ_ne_zero`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L167).
 
 > The length of the rod is not equal to zero.
 
@@ -124,7 +124,7 @@ lemma m_ne_zero : S.m ≠ 0
 lemma ℓ_ne_zero : S.ℓ ≠ 0
 ```
 
-**`ClassicalMechanics.SimplePendulum.g_ne_zero`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L171).
+**`ClassicalMechanics.SimplePendulum.g_ne_zero`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L171).
 
 > The gravitational acceleration is not equal to zero.
 
@@ -148,7 +148,7 @@ lemma g_ne_zero : S.g ≠ 0
 > harmonic oscillator of angular frequency `√(g/ℓ)`. The exact motion is not harmonic, but this
 > frequency is the natural time scale of the pendulum and appears throughout its analysis.
 
-**`ClassicalMechanics.SimplePendulum.ω`**, a def, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L199).
+**`ClassicalMechanics.SimplePendulum.ω`**, a def, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L199).
 
 > The angular frequency of the simple pendulum, `ω`, is defined as `√(g/ℓ)`. It is the angular
 > frequency of the small oscillations of the pendulum about the bottom of its swing.
@@ -157,7 +157,7 @@ lemma g_ne_zero : S.g ≠ 0
 noncomputable def ω : ℝ
 ```
 
-**`ClassicalMechanics.SimplePendulum.ω_pos`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L203).
+**`ClassicalMechanics.SimplePendulum.ω_pos`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L203).
 
 > The angular frequency of the simple pendulum is positive.
 
@@ -165,7 +165,7 @@ noncomputable def ω : ℝ
 lemma ω_pos : 0 < S.ω
 ```
 
-**`ClassicalMechanics.SimplePendulum.ω_ne_zero`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L206).
+**`ClassicalMechanics.SimplePendulum.ω_ne_zero`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L206).
 
 > The angular frequency of the simple pendulum is not equal to zero.
 
@@ -173,7 +173,7 @@ lemma ω_pos : 0 < S.ω
 lemma ω_ne_zero : S.ω ≠ 0
 ```
 
-**`ClassicalMechanics.SimplePendulum.ω_sq`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L209).
+**`ClassicalMechanics.SimplePendulum.ω_sq`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L209).
 
 > The square of the angular frequency of the simple pendulum is equal to `g/ℓ`.
 
@@ -181,7 +181,7 @@ lemma ω_ne_zero : S.ω ≠ 0
 lemma ω_sq : S.ω ^ 2 = S.g / S.ℓ
 ```
 
-**`ClassicalMechanics.SimplePendulum.inverse_ω_sq`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L212).
+**`ClassicalMechanics.SimplePendulum.inverse_ω_sq`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L212).
 
 > The inverse of the square of the angular frequency of the simple pendulum is `ℓ/g`.
 
@@ -195,7 +195,7 @@ lemma inverse_ω_sq : (S.ω ^ 2)⁻¹ = S.ℓ / S.g
 > pendulum about the pivot is `m ℓ²`. It is the coefficient relating the angular acceleration to
 > the torque, and so plays for the angle the role that the mass plays for a position.
 
-**`ClassicalMechanics.SimplePendulum.inertia`**, a def, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L226).
+**`ClassicalMechanics.SimplePendulum.inertia`**, a def, [line 226](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L226).
 
 > The moment of inertia of the simple pendulum about its pivot is `I = m ℓ²`, the moment of
 > inertia of a point mass `m` at distance `ℓ` from the axis.
@@ -204,7 +204,7 @@ lemma inverse_ω_sq : (S.ω ^ 2)⁻¹ = S.ℓ / S.g
 def inertia : ℝ
 ```
 
-**`ClassicalMechanics.SimplePendulum.inertia_pos`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L229).
+**`ClassicalMechanics.SimplePendulum.inertia_pos`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L229).
 
 > The moment of inertia of the simple pendulum is positive.
 
@@ -212,7 +212,7 @@ def inertia : ℝ
 lemma inertia_pos : 0 < S.inertia
 ```
 
-**`ClassicalMechanics.SimplePendulum.inertia_ne_zero`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L233).
+**`ClassicalMechanics.SimplePendulum.inertia_ne_zero`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L233).
 
 > The moment of inertia of the simple pendulum is not equal to zero.
 
@@ -220,7 +220,7 @@ lemma inertia_pos : 0 < S.inertia
 lemma inertia_ne_zero : S.inertia ≠ 0
 ```
 
-**`ClassicalMechanics.SimplePendulum.ω_sq_mul_inertia`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L238).
+**`ClassicalMechanics.SimplePendulum.ω_sq_mul_inertia`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L238).
 
 > The square of the angular frequency times the moment of inertia is `m g ℓ`, the coefficient
 > appearing in the potential energy and in the torque. This is the identity by which the mass
@@ -244,7 +244,7 @@ lemma ω_sq_mul_inertia : S.ω ^ 2 * S.inertia = S.m * S.g * S.ℓ
 > We define the three energies; it is these energies which control the dynamics of the pendulum,
 > through the Lagrangian.
 
-**`ClassicalMechanics.SimplePendulum.kineticEnergy`**, a def, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L269).
+**`ClassicalMechanics.SimplePendulum.kineticEnergy`**, a def, [line 269](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L269).
 
 > The kinetic energy of the simple pendulum along a lift `θ` of the angle is
 > $\frac{1}{2} I ‖\dot θ‖^2$, where `I` is the moment of inertia about the pivot.
@@ -253,7 +253,7 @@ lemma ω_sq_mul_inertia : S.ω ^ 2 * S.inertia = S.m * S.g * S.ℓ
 noncomputable def kineticEnergy (θ : Time → EuclideanSpace ℝ (Fin 1)) : Time → ℝ
 ```
 
-**`ClassicalMechanics.SimplePendulum.potentialEnergy`**, a def, [line 275](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L275).
+**`ClassicalMechanics.SimplePendulum.potentialEnergy`**, a def, [line 275](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L275).
 
 > The potential energy of the simple pendulum at the angle `x` is `m g ℓ (1 - cos (x 0))`, the
 > work done against gravity in raising the bob from the bottom of the swing. It is normalized to
@@ -263,7 +263,7 @@ noncomputable def kineticEnergy (θ : Time → EuclideanSpace ℝ (Fin 1)) : Tim
 noncomputable def potentialEnergy (x : EuclideanSpace ℝ (Fin 1)) : ℝ
 ```
 
-**`ClassicalMechanics.SimplePendulum.energy`**, a def, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L279).
+**`ClassicalMechanics.SimplePendulum.energy`**, a def, [line 279](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L279).
 
 > The energy of the simple pendulum is the kinetic energy plus the potential energy.
 
@@ -279,7 +279,7 @@ noncomputable def energy (θ : Time → EuclideanSpace ℝ (Fin 1)) : Time → �
 > analogue is the upper bound: the potential energy of the pendulum is at most `2 m g ℓ`, its
 > value at the top of the swing.
 
-**`ClassicalMechanics.SimplePendulum.kineticEnergy_eq`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L295).
+**`ClassicalMechanics.SimplePendulum.kineticEnergy_eq`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L295).
 
 > The kinetic energy of the simple pendulum, written out.
 
@@ -288,7 +288,7 @@ lemma kineticEnergy_eq (θ : Time → EuclideanSpace ℝ (Fin 1)) :
     S.kineticEnergy θ = fun t => (1 / (2 : ℝ)) * S.inertia * ⟪∂ₜ θ t, ∂ₜ θ t⟫_ℝ
 ```
 
-**`ClassicalMechanics.SimplePendulum.potentialEnergy_eq`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L299).
+**`ClassicalMechanics.SimplePendulum.potentialEnergy_eq`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L299).
 
 > The potential energy of the simple pendulum, written out.
 
@@ -297,7 +297,7 @@ lemma potentialEnergy_eq (x : EuclideanSpace ℝ (Fin 1)) :
     S.potentialEnergy x = S.m * S.g * S.ℓ * (1 - Real.cos (x 0))
 ```
 
-**`ClassicalMechanics.SimplePendulum.energy_eq`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L303).
+**`ClassicalMechanics.SimplePendulum.energy_eq`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L303).
 
 > The energy of the simple pendulum, written out.
 
@@ -306,7 +306,7 @@ lemma energy_eq (θ : Time → EuclideanSpace ℝ (Fin 1)) :
     S.energy θ = fun t => S.kineticEnergy θ t + S.potentialEnergy (θ t)
 ```
 
-**`ClassicalMechanics.SimplePendulum.potentialEnergy_nonneg`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L308).
+**`ClassicalMechanics.SimplePendulum.potentialEnergy_nonneg`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L308).
 
 > The potential energy of the simple pendulum is non-negative, the bottom of the swing being
 > the lowest point of the circle on which the bob moves.
@@ -315,7 +315,7 @@ lemma energy_eq (θ : Time → EuclideanSpace ℝ (Fin 1)) :
 lemma potentialEnergy_nonneg (x : EuclideanSpace ℝ (Fin 1)) : 0 ≤ S.potentialEnergy x
 ```
 
-**`ClassicalMechanics.SimplePendulum.potentialEnergy_le`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L318).
+**`ClassicalMechanics.SimplePendulum.potentialEnergy_le`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L318).
 
 > The potential energy of the simple pendulum is at most `2 m g ℓ`, its value at the top of the
 > swing.
@@ -325,7 +325,7 @@ lemma potentialEnergy_le (x : EuclideanSpace ℝ (Fin 1)) :
     S.potentialEnergy x ≤ 2 * (S.m * S.g * S.ℓ)
 ```
 
-**`ClassicalMechanics.SimplePendulum.potentialEnergy_eq_zero_iff`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L330).
+**`ClassicalMechanics.SimplePendulum.potentialEnergy_eq_zero_iff`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L330).
 
 > The potential energy of the simple pendulum vanishes exactly when the cosine of the angle is
 > equal to `1`, that is exactly at the bottom of the swing.
@@ -345,7 +345,7 @@ lemma potentialEnergy_eq_zero_iff (x : EuclideanSpace ℝ (Fin 1)) :
 > from the differentiability in the angle of the potential energy — which is the differentiability
 > that the time derivatives of section C.4 consume.
 
-**`ClassicalMechanics.SimplePendulum.potentialEnergy_contDiff`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L351).
+**`ClassicalMechanics.SimplePendulum.potentialEnergy_contDiff`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L351).
 
 > The potential energy of the simple pendulum is a smooth function of the angle.
 
@@ -353,7 +353,7 @@ lemma potentialEnergy_eq_zero_iff (x : EuclideanSpace ℝ (Fin 1)) :
 lemma potentialEnergy_contDiff (n : WithTop ℕ∞) : ContDiff ℝ n S.potentialEnergy
 ```
 
-**`ClassicalMechanics.SimplePendulum.differentiable_potentialEnergy`**, a lemma, [line 359](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L359).
+**`ClassicalMechanics.SimplePendulum.differentiable_potentialEnergy`**, a lemma, [line 359](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L359).
 
 > The potential energy of the simple pendulum is a differentiable function of the angle. This
 > is differentiability in the angle; for differentiability in time along a smooth lift of the
@@ -363,7 +363,7 @@ lemma potentialEnergy_contDiff (n : WithTop ℕ∞) : ContDiff ℝ n S.potential
 lemma differentiable_potentialEnergy : Differentiable ℝ S.potentialEnergy
 ```
 
-**`ClassicalMechanics.SimplePendulum.gradient_potentialEnergy`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L364).
+**`ClassicalMechanics.SimplePendulum.gradient_potentialEnergy`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L364).
 
 > The gradient of the potential energy of the simple pendulum is `m g ℓ sin θ` times the unit
 > vector of the angular coordinate.
@@ -374,7 +374,7 @@ lemma gradient_potentialEnergy (x : EuclideanSpace ℝ (Fin 1)) :
       (S.m * S.g * S.ℓ * Real.sin (x 0)) • EuclideanSpace.single 0 1
 ```
 
-**`ClassicalMechanics.SimplePendulum.kineticEnergy_differentiable`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L380).
+**`ClassicalMechanics.SimplePendulum.kineticEnergy_differentiable`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L380).
 
 > Along a smooth lift of the angle the kinetic energy is differentiable in time.
 
@@ -383,7 +383,7 @@ lemma kineticEnergy_differentiable (θ : Time → EuclideanSpace ℝ (Fin 1)) (h
     Differentiable ℝ (S.kineticEnergy θ)
 ```
 
-**`ClassicalMechanics.SimplePendulum.potentialEnergy_differentiable`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L389).
+**`ClassicalMechanics.SimplePendulum.potentialEnergy_differentiable`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L389).
 
 > Along a smooth lift of the angle the potential energy is a differentiable function of the
 > time. This is differentiability in time along the lift; for differentiability in the angle see
@@ -394,7 +394,7 @@ lemma potentialEnergy_differentiable (θ : Time → EuclideanSpace ℝ (Fin 1)) 
     Differentiable ℝ (fun t => S.potentialEnergy (θ t))
 ```
 
-**`ClassicalMechanics.SimplePendulum.energy_differentiable`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L396).
+**`ClassicalMechanics.SimplePendulum.energy_differentiable`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L396).
 
 > Along a smooth lift of the angle the energy is differentiable in time.
 
@@ -409,7 +409,7 @@ lemma energy_differentiable (θ : Time → EuclideanSpace ℝ (Fin 1)) (hθ : Co
 > compute the time derivatives of the energies. Each is an inner product against the angular
 > velocity: the equation of motion will be exactly the statement that the two contributions cancel.
 
-**`ClassicalMechanics.SimplePendulum.kineticEnergy_deriv`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L413).
+**`ClassicalMechanics.SimplePendulum.kineticEnergy_deriv`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L413).
 
 > The rate of change of the kinetic energy is the angular velocity paired with the angular
 > momentum's rate of change, `I θ̈`.
@@ -419,7 +419,7 @@ lemma kineticEnergy_deriv (θ : Time → EuclideanSpace ℝ (Fin 1)) (hθ : Cont
     ∂ₜ (S.kineticEnergy θ) = fun t => ⟪∂ₜ θ t, S.inertia • ∂ₜ (∂ₜ θ) t⟫_ℝ
 ```
 
-**`ClassicalMechanics.SimplePendulum.potentialEnergy_deriv`**, a lemma, [line 426](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L426).
+**`ClassicalMechanics.SimplePendulum.potentialEnergy_deriv`**, a lemma, [line 426](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L426).
 
 > The rate of change of the potential energy is the angular velocity paired with the gradient
 > of the potential.
@@ -430,7 +430,7 @@ lemma potentialEnergy_deriv (θ : Time → EuclideanSpace ℝ (Fin 1)) (hθ : Co
       fun t => ⟪∂ₜ θ t, gradient S.potentialEnergy (θ t)⟫_ℝ
 ```
 
-**`ClassicalMechanics.SimplePendulum.energy_deriv`**, a lemma, [line 440](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L440).
+**`ClassicalMechanics.SimplePendulum.energy_deriv`**, a lemma, [line 440](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L440).
 
 > The rate of change of the energy is the angular velocity paired with the sum of `I θ̈` and
 > the gradient of the potential; the equation of motion is exactly the vanishing of that sum.
@@ -457,7 +457,7 @@ lemma energy_deriv (θ : Time → EuclideanSpace ℝ (Fin 1)) (hθ : ContDiff �
 > so that the equalities below are the two ways of reading it: expanded in the input data, and as
 > the kinetic energy minus the potential energy along a lift of the angle.
 
-**`ClassicalMechanics.SimplePendulum.lagrangian`**, a def, [line 477](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L477).
+**`ClassicalMechanics.SimplePendulum.lagrangian`**, a def, [line 477](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L477).
 
 > The Lagrangian of the simple pendulum, `L(t, θ, θ̇) = ½ I ‖θ̇‖² - V(θ)`, the kinetic energy
 > minus the potential energy as a function on phase space. It does not depend on the time.
@@ -466,7 +466,7 @@ lemma energy_deriv (θ : Time → EuclideanSpace ℝ (Fin 1)) (hθ : ContDiff �
 noncomputable def lagrangian (t : Time) (x v : EuclideanSpace ℝ (Fin 1)) : ℝ
 ```
 
-**`ClassicalMechanics.SimplePendulum.lagrangian_eq`**, a lemma, [line 481](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L481).
+**`ClassicalMechanics.SimplePendulum.lagrangian_eq`**, a lemma, [line 481](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L481).
 
 > The Lagrangian of the simple pendulum, written out in the input data.
 
@@ -476,7 +476,7 @@ lemma lagrangian_eq :
       (1 / (2 : ℝ)) * S.inertia * ⟪v, v⟫_ℝ - S.m * S.g * S.ℓ * (1 - Real.cos (x 0))
 ```
 
-**`ClassicalMechanics.SimplePendulum.lagrangian_eq_kineticEnergy_sub_potentialEnergy`**, a lemma, [line 489](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L489).
+**`ClassicalMechanics.SimplePendulum.lagrangian_eq_kineticEnergy_sub_potentialEnergy`**, a lemma, [line 489](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L489).
 
 > Along a lift of the angle the Lagrangian of the simple pendulum is the kinetic energy minus
 > the potential energy.
@@ -493,7 +493,7 @@ lemma lagrangian_eq_kineticEnergy_sub_potentialEnergy (t : Time)
 > the Euler–Lagrange theorem of Physlib places on a Lagrangian, so it is recorded on the uncurried
 > form `↿S.lagrangian`.
 
-**`ClassicalMechanics.SimplePendulum.contDiff_lagrangian`**, a lemma, [line 506](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L506).
+**`ClassicalMechanics.SimplePendulum.contDiff_lagrangian`**, a lemma, [line 506](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L506).
 
 > The Lagrangian of the simple pendulum is a smooth function of the time, the angle and the
 > angular velocity jointly.
@@ -508,7 +508,7 @@ lemma contDiff_lagrangian (n : WithTop ℕ∞) : ContDiff ℝ n ↿S.lagrangian
 > gradient in the angle is minus the gradient of the potential energy, that is the torque of
 > section E; the gradient in the angular velocity is the angular momentum `I θ̇`.
 
-**`ClassicalMechanics.SimplePendulum.gradient_lagrangian_position_eq`**, a lemma, [line 522](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L522).
+**`ClassicalMechanics.SimplePendulum.gradient_lagrangian_position_eq`**, a lemma, [line 522](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L522).
 
 > The gradient of the Lagrangian of the simple pendulum in the angle is minus the gradient of
 > the potential energy, `-m g ℓ sin θ` times the unit vector of the angular coordinate.
@@ -519,7 +519,7 @@ lemma gradient_lagrangian_position_eq (t : Time) (x v : EuclideanSpace ℝ (Fin 
       -((S.m * S.g * S.ℓ * Real.sin (x 0)) • EuclideanSpace.single 0 1)
 ```
 
-**`ClassicalMechanics.SimplePendulum.gradient_lagrangian_velocity_eq`**, a lemma, [line 536](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L536).
+**`ClassicalMechanics.SimplePendulum.gradient_lagrangian_velocity_eq`**, a lemma, [line 536](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L536).
 
 > The gradient of the Lagrangian of the simple pendulum in the angular velocity is the angular
 > momentum `I θ̇` about the pivot.
@@ -555,7 +555,7 @@ lemma gradient_lagrangian_velocity_eq (t : Time) (x v : EuclideanSpace ℝ (Fin 
 > gradient of the potential energy. It is a torque about the pivot rather than a force, the angle
 > being the coordinate; this is why it is `m g ℓ sin θ` and not `m g sin θ`.
 
-**`ClassicalMechanics.SimplePendulum.torque`**, a def, [line 582](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L582).
+**`ClassicalMechanics.SimplePendulum.torque`**, a def, [line 582](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L582).
 
 > The generalized force of the simple pendulum conjugate to the angle, that is the torque about
 > the pivot, is minus the gradient of the potential energy, `τ = -∂V/∂θ`.
@@ -564,7 +564,7 @@ lemma gradient_lagrangian_velocity_eq (t : Time) (x v : EuclideanSpace ℝ (Fin 
 noncomputable def torque (x : EuclideanSpace ℝ (Fin 1)) : EuclideanSpace ℝ (Fin 1)
 ```
 
-**`ClassicalMechanics.SimplePendulum.torque_eq`**, a lemma, [line 588](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L588).
+**`ClassicalMechanics.SimplePendulum.torque_eq`**, a lemma, [line 588](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L588).
 
 > The torque of the simple pendulum is `-m g ℓ sin θ` times the unit vector of the angular
 > coordinate. It is restoring near the bottom of the swing: for `|θ| < π` it opposes the
@@ -575,7 +575,7 @@ lemma torque_eq (x : EuclideanSpace ℝ (Fin 1)) :
     S.torque x = -((S.m * S.g * S.ℓ * Real.sin (x 0)) • EuclideanSpace.single 0 1)
 ```
 
-**`ClassicalMechanics.SimplePendulum.torque_apply`**, a lemma, [line 593](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L593).
+**`ClassicalMechanics.SimplePendulum.torque_apply`**, a lemma, [line 593](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L593).
 
 > The single component of the torque of the simple pendulum is `-m g ℓ sin θ`.
 
@@ -589,7 +589,7 @@ lemma torque_apply (x : EuclideanSpace ℝ (Fin 1)) :
 > The equation of motion of the simple pendulum equates the rate of change of the angular momentum
 > about the pivot with the torque of gravity, at every instant.
 
-**`ClassicalMechanics.SimplePendulum.EquationOfMotion`**, a def, [line 613](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L613).
+**`ClassicalMechanics.SimplePendulum.EquationOfMotion`**, a def, [line 613](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L613).
 
 > The equation of motion of the simple pendulum: at every instant the rate of change `I θ̈` of
 > the angular momentum about the pivot equals the torque `τ(θ)` of gravity.
@@ -602,7 +602,7 @@ lemma torque_apply (x : EuclideanSpace ℝ (Fin 1)) :
 def EquationOfMotion (θ : Time → EuclideanSpace ℝ (Fin 1)) : Prop
 ```
 
-**`ClassicalMechanics.SimplePendulum.equationOfMotion_iff_newtons_2nd_law`**, a lemma, [line 621](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L621).
+**`ClassicalMechanics.SimplePendulum.equationOfMotion_iff_newtons_2nd_law`**, a lemma, [line 621](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L621).
 
 > The equation of motion of the simple pendulum with all of its terms on one side: at every
 > instant the rate of change `I θ̈` of the angular momentum plus the gradient of the potential
@@ -626,7 +626,7 @@ lemma equationOfMotion_iff_newtons_2nd_law (θ : Time → EuclideanSpace ℝ (Fi
 > Demanding smoothness excludes such junk, and is the regularity under which the variational
 > description of the motion agrees with the pointwise one.
 
-**`ClassicalMechanics.SimplePendulum.IsSolution`**, a def, [line 642](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L642).
+**`ClassicalMechanics.SimplePendulum.IsSolution`**, a def, [line 642](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L642).
 
 > A solution of the simple pendulum is a smooth lift of the angle satisfying the equation of
 > motion.
@@ -635,7 +635,7 @@ lemma equationOfMotion_iff_newtons_2nd_law (θ : Time → EuclideanSpace ℝ (Fi
 def IsSolution (θ : Time → EuclideanSpace ℝ (Fin 1)) : Prop
 ```
 
-**`ClassicalMechanics.SimplePendulum.IsSolution.contDiff`**, a lemma, [line 646](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L646).
+**`ClassicalMechanics.SimplePendulum.IsSolution.contDiff`**, a lemma, [line 646](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L646).
 
 > A solution of the simple pendulum is smooth.
 
@@ -644,7 +644,7 @@ lemma IsSolution.contDiff {S : SimplePendulum} {θ : Time → EuclideanSpace ℝ
     (h : S.IsSolution θ) : ContDiff ℝ ∞ θ
 ```
 
-**`ClassicalMechanics.SimplePendulum.IsSolution.equationOfMotion`**, a lemma, [line 650](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L650).
+**`ClassicalMechanics.SimplePendulum.IsSolution.equationOfMotion`**, a lemma, [line 650](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L650).
 
 > A solution of the simple pendulum satisfies the equation of motion.
 
@@ -660,7 +660,7 @@ lemma IsSolution.equationOfMotion {S : SimplePendulum} {θ : Time → EuclideanS
 > inertia, using `ω_sq_mul_inertia`, cancels the mass and leaves `θ̈ + ω² sin θ = 0`: two pendulums
 > with the same `ω = √(g/ℓ)` have exactly the same angular motions, whatever their masses.
 
-**`ClassicalMechanics.SimplePendulum.equationOfMotion_iff_scalar`**, a lemma, [line 666](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L666).
+**`ClassicalMechanics.SimplePendulum.equationOfMotion_iff_scalar`**, a lemma, [line 666](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L666).
 
 > The equation of motion of the simple pendulum in scalar form, `θ̈ + ω² sin θ = 0`. The mass
 > has cancelled: only the angular frequency `ω = √(g/ℓ)` survives.
@@ -670,7 +670,7 @@ lemma equationOfMotion_iff_scalar (θ : Time → EuclideanSpace ℝ (Fin 1)) :
     S.EquationOfMotion θ ↔ ∀ t, ∂ₜ (∂ₜ θ) t 0 + S.ω ^ 2 * Real.sin (θ t 0) = 0
 ```
 
-**`ClassicalMechanics.SimplePendulum.equationOfMotion_iff_of_eq_ω`**, a lemma, [line 693](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L693).
+**`ClassicalMechanics.SimplePendulum.equationOfMotion_iff_of_eq_ω`**, a lemma, [line 693](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L693).
 
 > Two simple pendulums with the same angular frequency have the same angular equation of
 > motion, and hence the same angular motions; in particular, changing only the mass does not
@@ -696,7 +696,7 @@ lemma equationOfMotion_iff_of_eq_ω (S' : SimplePendulum) (h : S'.ω = S.ω)
 > pendulum. Recall that it is defined to be `0` when no variational gradient exists, so the lemmas
 > below are stated for smooth lifts of the angle.
 
-**`ClassicalMechanics.SimplePendulum.gradLagrangian`**, a def, [line 721](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L721).
+**`ClassicalMechanics.SimplePendulum.gradLagrangian`**, a def, [line 721](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L721).
 
 > The variational derivative of the action of the simple pendulum, the action being the time
 > integral of the Lagrangian along a lift of the angle.
@@ -712,7 +712,7 @@ noncomputable def gradLagrangian (θ : Time → EuclideanSpace ℝ (Fin 1)) :
 > operator of the Lagrangian, by the general theorem `euler_lagrange_varGradient`; the hypotheses
 > of that theorem are the smoothness of the lift and `contDiff_lagrangian`.
 
-**`ClassicalMechanics.SimplePendulum.gradLagrangian_eq_eulerLagrangeOp`**, a lemma, [line 737](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L737).
+**`ClassicalMechanics.SimplePendulum.gradLagrangian_eq_eulerLagrangeOp`**, a lemma, [line 737](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L737).
 
 > For a smooth lift of the angle the variational derivative of the action of the simple
 > pendulum is the Euler–Lagrange operator of its Lagrangian.
@@ -730,7 +730,7 @@ lemma gradLagrangian_eq_eulerLagrangeOp (θ : Time → EuclideanSpace ℝ (Fin 1
 > therefore the equation of motion of section E; that equivalence is
 > `equationOfMotion_iff_gradLagrangian_zero` of section G.
 
-**`ClassicalMechanics.SimplePendulum.gradLagrangian_eq_torque`**, a lemma, [line 755](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L755).
+**`ClassicalMechanics.SimplePendulum.gradLagrangian_eq_torque`**, a lemma, [line 755](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L755).
 
 > For a smooth lift of the angle the variational derivative of the action of the simple
 > pendulum is the torque minus the rate of change `I θ̈` of the angular momentum.
@@ -756,7 +756,7 @@ lemma gradLagrangian_eq_torque (θ : Time → EuclideanSpace ℝ (Fin 1)) (hθ :
 > the torque minus the rate of change of the angular momentum, so its vanishing is a rearrangement
 > of the equation of motion.
 
-**`ClassicalMechanics.SimplePendulum.equationOfMotion_iff_gradLagrangian_zero`**, a lemma, [line 789](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L789).
+**`ClassicalMechanics.SimplePendulum.equationOfMotion_iff_gradLagrangian_zero`**, a lemma, [line 789](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L789).
 
 > For a smooth lift of the angle the equation of motion of the simple pendulum holds if and
 > only if the variational derivative of the action vanishes: the smooth motions of the pendulum
@@ -775,7 +775,7 @@ lemma equationOfMotion_iff_gradLagrangian_zero (θ : Time → EuclideanSpace ℝ
 > characterization: the solutions of the pendulum are exactly the smooth lifts of the angle along
 > which the variational derivative of the action vanishes.
 
-**`ClassicalMechanics.SimplePendulum.isSolution_iff`**, a lemma, [line 809](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L809).
+**`ClassicalMechanics.SimplePendulum.isSolution_iff`**, a lemma, [line 809](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L809).
 
 > A lift of the angle is a solution of the simple pendulum if and only if it is smooth and the
 > variational derivative of the action vanishes along it.
@@ -797,7 +797,7 @@ lemma isSolution_iff (θ : Time → EuclideanSpace ℝ (Fin 1)) :
 > The first form of energy conservation: the time derivative of the energy vanishes identically
 > along any smooth lift of the angle satisfying the equation of motion.
 
-**`ClassicalMechanics.SimplePendulum.energy_conservation_of_equationOfMotion`**, a lemma, [line 835](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L835).
+**`ClassicalMechanics.SimplePendulum.energy_conservation_of_equationOfMotion`**, a lemma, [line 835](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L835).
 
 > Along a smooth lift of the angle satisfying the equation of motion the time derivative of
 > the energy of the simple pendulum vanishes.
@@ -813,7 +813,7 @@ lemma energy_conservation_of_equationOfMotion (θ : Time → EuclideanSpace ℝ 
 > vanishing of its derivative makes it a constant function of the time, equal to its initial
 > value.
 
-**`ClassicalMechanics.SimplePendulum.energy_conservation_of_equationOfMotion'`**, a lemma, [line 854](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L854).
+**`ClassicalMechanics.SimplePendulum.energy_conservation_of_equationOfMotion'`**, a lemma, [line 854](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L854).
 
 > Along a smooth lift of the angle satisfying the equation of motion the energy of the simple
 > pendulum at any time is equal to its initial value.
@@ -829,7 +829,7 @@ lemma energy_conservation_of_equationOfMotion' (θ : Time → EuclideanSpace ℝ
 > The hypotheses of energy conservation — smoothness and the equation of motion — are exactly the
 > two components of being a solution, so for solutions conservation takes its most compact form.
 
-**`ClassicalMechanics.SimplePendulum.IsSolution.energy_eq`**, a lemma, [line 875](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L875).
+**`ClassicalMechanics.SimplePendulum.IsSolution.energy_eq`**, a lemma, [line 875](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean#L875).
 
 > The energy of the simple pendulum along a solution at any time is equal to its initial
 > value.
@@ -849,4 +849,4 @@ lemma IsSolution.energy_eq {S : SimplePendulum} {θ : Time → EuclideanSpace �
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean)
+- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean)

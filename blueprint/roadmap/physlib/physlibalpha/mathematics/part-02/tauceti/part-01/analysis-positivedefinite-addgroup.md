@@ -8,7 +8,7 @@ proof: formalized
 
 # Positive-definite functions on an additive commutative group
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.AddGroup`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean): 46 declarations (4 instances with no name), 39 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.AddGroup`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean): 46 declarations (4 instances with no name), 39 with a docstring.
 
 > On an additive commutative group `G` the classical positive-definiteness condition for `F : G → ℂ`
 > reads `∑_{i,j} cᵢ · conj(cⱼ) · F(aᵢ - aⱼ) ≥ 0`: the involution is negation, so the kernel is the
@@ -69,7 +69,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.AddGroup`
 
 ### A.1. The negation involution
 
-**`TauCeti.WithNegStar`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L101).
+**`TauCeti.WithNegStar`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L101).
 
 > `WithNegStar G` is a type synonym for an additive commutative group `G`, carrying the negation
 > involution `star a = -a`.
@@ -82,31 +82,31 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.AddGroup`
 def WithNegStar (G : Type*) : Type _
 ```
 
-**An instance with no name**, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L109).
+**An instance with no name**, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L109).
 
 ```lean
 instance : AddCommGroup (WithNegStar G)
 ```
 
-**An instance with no name**, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L111).
+**An instance with no name**, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L111).
 
 ```lean
 instance : Star (WithNegStar G)
 ```
 
-**`TauCeti.WithNegStar.star_eq_neg`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L114).
+**`TauCeti.WithNegStar.star_eq_neg`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L114).
 
 ```lean
 lemma star_eq_neg (a : WithNegStar G) : star a = -a
 ```
 
-**An instance with no name**, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L116).
+**An instance with no name**, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L116).
 
 ```lean
 instance : StarAddMonoid (WithNegStar G)
 ```
 
-**`TauCeti.WithNegStar.toNegStar`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L121).
+**`TauCeti.WithNegStar.toNegStar`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L121).
 
 > The identity additive equivalence from `G` to its negation-involution copy.
 
@@ -114,7 +114,7 @@ instance : StarAddMonoid (WithNegStar G)
 def toNegStar : G ≃+ WithNegStar G
 ```
 
-**`TauCeti.WithNegStar.ofNegStar`**, a def, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L124).
+**`TauCeti.WithNegStar.ofNegStar`**, a def, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L124).
 
 > The identity additive equivalence from the negation-involution copy of `G` back to `G`.
 
@@ -122,19 +122,19 @@ def toNegStar : G ≃+ WithNegStar G
 def ofNegStar : WithNegStar G ≃+ G
 ```
 
-**`TauCeti.WithNegStar.ofNegStar_toNegStar`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L127).
+**`TauCeti.WithNegStar.ofNegStar_toNegStar`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L127).
 
 ```lean
 lemma ofNegStar_toNegStar (a : G) : ofNegStar (toNegStar a) = a
 ```
 
-**`TauCeti.WithNegStar.toNegStar_ofNegStar`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L131).
+**`TauCeti.WithNegStar.toNegStar_ofNegStar`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L131).
 
 ```lean
 lemma toNegStar_ofNegStar (a : WithNegStar G) : toNegStar (ofNegStar a) = a
 ```
 
-**An instance with no name**, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L140).
+**An instance with no name**, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L140).
 
 ```lean
 instance : SeminormedAddCommGroup (WithNegStar G)
@@ -142,7 +142,7 @@ instance : SeminormedAddCommGroup (WithNegStar G)
 
 ### A.2. The subtraction-form predicate
 
-**`TauCeti.IsPositiveDefiniteSub`**, a def, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L159).
+**`TauCeti.IsPositiveDefiniteSub`**, a def, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L159).
 
 > A function `F : G → ℂ` on an additive commutative group is **positive definite** when, for
 > every finite family of scalars `c : Fin n → ℂ` and points `v : Fin n → G`, the Hermitian form
@@ -157,7 +157,7 @@ instance : SeminormedAddCommGroup (WithNegStar G)
 def IsPositiveDefiniteSub (F : G → ℂ) : Prop
 ```
 
-**`TauCeti.isPositiveDefiniteSub_iff_forall_sum_nonneg`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L165).
+**`TauCeti.isPositiveDefiniteSub_iff_forall_sum_nonneg`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L165).
 
 > The defining finite-family characterization, for building a positive-definite function
 > directly from the quadratic-form condition.
@@ -168,7 +168,7 @@ lemma isPositiveDefiniteSub_iff_forall_sum_nonneg :
       0 ≤ ∑ i, ∑ j, c i * conj (c j) * F (v i - v j)
 ```
 
-**`TauCeti.isPositiveDefiniteSub_iff_isPositiveDefinite`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L172).
+**`TauCeti.isPositiveDefiniteSub_iff_isPositiveDefinite`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L172).
 
 > Subtraction-form positive definiteness is the generic involutive predicate for the negation
 > involution, read on the type synonym `TauCeti.WithNegStar`.
@@ -179,7 +179,7 @@ lemma isPositiveDefiniteSub_iff_isPositiveDefinite :
       IsPositiveDefinite fun a : WithNegStar G => F (WithNegStar.ofNegStar a)
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.isPositiveDefinite`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L185).
+**`TauCeti.IsPositiveDefiniteSub.isPositiveDefinite`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L185).
 
 > The generic involutive predicate attached to a subtraction-form positive-definite function.
 > This is the workhorse for transporting the generic API.
@@ -189,7 +189,7 @@ lemma isPositiveDefinite (hF : IsPositiveDefiniteSub F) :
     IsPositiveDefinite fun a : WithNegStar G => F (WithNegStar.ofNegStar a)
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.sum_nonneg`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L190).
+**`TauCeti.IsPositiveDefiniteSub.sum_nonneg`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L190).
 
 > Positive-definiteness holds for an arbitrary finite index type, not just `Fin n`.
 
@@ -198,7 +198,7 @@ lemma sum_nonneg (hF : IsPositiveDefiniteSub F) {ι : Type*} [Fintype ι] (c : �
     0 ≤ ∑ i, ∑ j, c i * conj (c j) * F (v i - v j)
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.posSemidef`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L197).
+**`TauCeti.IsPositiveDefiniteSub.posSemidef`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L197).
 
 > A subtraction-form positive-definite function gives the translation-invariant
 > positive-definite kernel `K(a, b) = F (a - b)`.
@@ -208,7 +208,7 @@ lemma posSemidef (hF : IsPositiveDefiniteSub F) :
     Matrix.PosSemidef fun a b : G => F (a - b)
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.of_posSemidef`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L211).
+**`TauCeti.IsPositiveDefiniteSub.of_posSemidef`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L211).
 
 > A function whose translation-invariant kernel `K(a, b) = F (a - b)` is positive definite is
 > positive definite.
@@ -218,7 +218,7 @@ lemma of_posSemidef (hK : Matrix.PosSemidef fun a b : G => F (a - b)) :
     IsPositiveDefiniteSub F
 ```
 
-**`TauCeti.isPositiveDefiniteSub_iff_posSemidef`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L228).
+**`TauCeti.isPositiveDefiniteSub_iff_posSemidef`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L228).
 
 > The PD-function ↔ PD-kernel equivalence in its classical translation-invariant form: `F` is
 > positive definite if and only if the kernel `K(a, b) = F (a - b)` is positive definite.
@@ -228,7 +228,7 @@ lemma isPositiveDefiniteSub_iff_posSemidef :
     IsPositiveDefiniteSub F ↔ Matrix.PosSemidef fun a b : G => F (a - b)
 ```
 
-**`TauCeti.isPositiveDefinite_iff_isPositiveDefiniteSub`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L234).
+**`TauCeti.isPositiveDefinite_iff_isPositiveDefiniteSub`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L234).
 
 > On a group whose own involution is negation, the generic involutive predicate and the
 > subtraction-form predicate agree.
@@ -240,7 +240,7 @@ lemma isPositiveDefinite_iff_isPositiveDefiniteSub [StarAddMonoid G]
 
 ### A.3. Values at and around the origin
 
-**`TauCeti.IsPositiveDefiniteSub.map_zero_nonneg`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L243).
+**`TauCeti.IsPositiveDefiniteSub.map_zero_nonneg`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L243).
 
 > The value of a positive-definite function at `0` is real and nonnegative.
 
@@ -248,7 +248,7 @@ lemma isPositiveDefinite_iff_isPositiveDefiniteSub [StarAddMonoid G]
 lemma map_zero_nonneg (hF : IsPositiveDefiniteSub F) : 0 ≤ F 0
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.map_zero_im`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L248).
+**`TauCeti.IsPositiveDefiniteSub.map_zero_im`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L248).
 
 > The value of a positive-definite function at `0` has zero imaginary part.
 
@@ -256,7 +256,7 @@ lemma map_zero_nonneg (hF : IsPositiveDefiniteSub F) : 0 ≤ F 0
 lemma map_zero_im (hF : IsPositiveDefiniteSub F) : (F 0).im = 0
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.map_zero_re_nonneg`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L252).
+**`TauCeti.IsPositiveDefiniteSub.map_zero_re_nonneg`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L252).
 
 > The real part of the value of a positive-definite function at `0` is nonnegative.
 
@@ -264,7 +264,7 @@ lemma map_zero_im (hF : IsPositiveDefiniteSub F) : (F 0).im = 0
 lemma map_zero_re_nonneg (hF : IsPositiveDefiniteSub F) : 0 ≤ (F 0).re
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.map_zero_eq_ofReal_re`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L257).
+**`TauCeti.IsPositiveDefiniteSub.map_zero_eq_ofReal_re`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L257).
 
 > The value at the origin of a positive-definite function is the real number `(F 0).re`, viewed
 > as a complex number.
@@ -273,7 +273,7 @@ lemma map_zero_re_nonneg (hF : IsPositiveDefiniteSub F) : 0 ≤ (F 0).re
 lemma map_zero_eq_ofReal_re (hF : IsPositiveDefiniteSub F) : F 0 = ((F 0).re : ℂ)
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.map_zero_re_pos_of_ne_zero`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L262).
+**`TauCeti.IsPositiveDefiniteSub.map_zero_re_pos_of_ne_zero`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L262).
 
 > If a positive-definite function is nonzero at the origin, then the real part of that value is
 > strictly positive.
@@ -283,7 +283,7 @@ lemma map_zero_re_pos_of_ne_zero (hF : IsPositiveDefiniteSub F) (h0 : F 0 ≠ 0)
     0 < (F 0).re
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.conj_symm`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L269).
+**`TauCeti.IsPositiveDefiniteSub.conj_symm`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L269).
 
 > A positive-definite function is conjugate symmetric: `conj (F (b - a)) = F (a - b)`.
 
@@ -291,7 +291,7 @@ lemma map_zero_re_pos_of_ne_zero (hF : IsPositiveDefiniteSub F) (h0 : F 0 ≠ 0)
 lemma conj_symm (hF : IsPositiveDefiniteSub F) (a b : G) : conj (F (b - a)) = F (a - b)
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.map_neg`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L274).
+**`TauCeti.IsPositiveDefiniteSub.map_neg`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L274).
 
 > A positive-definite function satisfies `F (-a) = conj (F a)`.
 
@@ -299,7 +299,7 @@ lemma conj_symm (hF : IsPositiveDefiniteSub F) (a b : G) : conj (F (b - a)) = F 
 lemma map_neg (hF : IsPositiveDefiniteSub F) (a : G) : F (-a) = conj (F a)
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.normSq_le`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L279).
+**`TauCeti.IsPositiveDefiniteSub.normSq_le`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L279).
 
 > The Cauchy–Schwarz inequality for a positive-definite function: the squared norm of any value
 > is bounded by the square of the value at the origin.
@@ -309,7 +309,7 @@ lemma normSq_le (hF : IsPositiveDefiniteSub F) (a b : G) :
     Complex.normSq (F (a - b)) ≤ (F 0).re * (F 0).re
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.norm_apply_le_map_zero_re`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L285).
+**`TauCeti.IsPositiveDefiniteSub.norm_apply_le_map_zero_re`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L285).
 
 > A positive-definite function is bounded by its value at the origin.
 
@@ -317,7 +317,7 @@ lemma normSq_le (hF : IsPositiveDefiniteSub F) (a b : G) :
 lemma norm_apply_le_map_zero_re (hF : IsPositiveDefiniteSub F) (a : G) : ‖F a‖ ≤ (F 0).re
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.apply_eq_zero_of_map_zero_re_eq_zero`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L291).
+**`TauCeti.IsPositiveDefiniteSub.apply_eq_zero_of_map_zero_re_eq_zero`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L291).
 
 > **A positive-definite function with `(F 0).re = 0` vanishes identically.**
 
@@ -328,7 +328,7 @@ lemma apply_eq_zero_of_map_zero_re_eq_zero (hF : IsPositiveDefiniteSub F) (h0 : 
 
 ### A.4. Closure properties
 
-**`TauCeti.IsPositiveDefiniteSub.add`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L299).
+**`TauCeti.IsPositiveDefiniteSub.add`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L299).
 
 > Positive-definite functions are closed under addition.
 
@@ -337,7 +337,7 @@ lemma add (hF : IsPositiveDefiniteSub F) (hH : IsPositiveDefiniteSub H) :
     IsPositiveDefiniteSub fun x => F x + H x
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.const_mul`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L306).
+**`TauCeti.IsPositiveDefiniteSub.const_mul`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L306).
 
 > Positive-definite functions are closed under multiplication by a nonnegative complex
 > scalar.
@@ -347,7 +347,7 @@ lemma const_mul {k : ℂ} (hk : 0 ≤ k) (hF : IsPositiveDefiniteSub F) :
     IsPositiveDefiniteSub fun x => k * F x
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.real_smul`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L311).
+**`TauCeti.IsPositiveDefiniteSub.real_smul`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L311).
 
 > Positive-definite functions are closed under multiplication by a nonnegative real scalar.
 
@@ -356,7 +356,7 @@ lemma real_smul {r : ℝ} (hr : 0 ≤ r) (hF : IsPositiveDefiniteSub F) :
     IsPositiveDefiniteSub fun x => r • F x
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.mul`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L316).
+**`TauCeti.IsPositiveDefiniteSub.mul`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L316).
 
 > Positive-definite functions are closed under pointwise multiplication (Schur product).
 
@@ -365,7 +365,7 @@ lemma mul (hF : IsPositiveDefiniteSub F) (hH : IsPositiveDefiniteSub H) :
     IsPositiveDefiniteSub fun x => F x * H x
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.sum`**, a lemma, [line 322](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L322).
+**`TauCeti.IsPositiveDefiniteSub.sum`**, a lemma, [line 322](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L322).
 
 > Positive-definite functions are closed under finite sums.
 
@@ -375,7 +375,7 @@ lemma sum {ι : Type*} {s : Finset ι} {F : ι → G → ℂ}
     IsPositiveDefiniteSub fun x => ∑ i ∈ s, F i x
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.prod`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L329).
+**`TauCeti.IsPositiveDefiniteSub.prod`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L329).
 
 > Positive-definite functions are closed under finite products (Schur products).
 
@@ -387,7 +387,7 @@ lemma prod {ι : Type*} {s : Finset ι} {F : ι → G → ℂ}
 
 ### A.5. Pullbacks
 
-**`TauCeti.IsPositiveDefiniteSub.comp_addMonoidHom`**, a lemma, [line 340](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L340).
+**`TauCeti.IsPositiveDefiniteSub.comp_addMonoidHom`**, a lemma, [line 340](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L340).
 
 > Positive definiteness is preserved by precomposition with an additive homomorphism; no
 > compatibility with an involution is needed, since an additive homomorphism automatically
@@ -398,7 +398,7 @@ lemma comp_addMonoidHom {N : Type*} [AddCommGroup N] (hF : IsPositiveDefiniteSub
     (φ : N →+ G) : IsPositiveDefiniteSub fun x => F (φ x)
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.comp_smul`**, a lemma, [line 346](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L346).
+**`TauCeti.IsPositiveDefiniteSub.comp_smul`**, a lemma, [line 346](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L346).
 
 > Positive definiteness is preserved by rescaling the argument.
 
@@ -407,7 +407,7 @@ lemma comp_smul {R : Type*} [DistribSMul R G] (hF : IsPositiveDefiniteSub F) (r 
     IsPositiveDefiniteSub fun x => F (r • x)
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.comp_neg`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L352).
+**`TauCeti.IsPositiveDefiniteSub.comp_neg`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L352).
 
 > Positive definiteness is preserved by negating the argument.
 
@@ -417,7 +417,7 @@ lemma comp_neg (hF : IsPositiveDefiniteSub F) : IsPositiveDefiniteSub fun x => F
 
 ### A.6. Limits
 
-**`TauCeti.IsPositiveDefiniteSub.of_tendsto`**, a lemma, [line 359](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L359).
+**`TauCeti.IsPositiveDefiniteSub.of_tendsto`**, a lemma, [line 359](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L359).
 
 > Positive definiteness is preserved under pointwise limits along a nontrivial filter.
 
@@ -430,7 +430,7 @@ lemma of_tendsto {ι : Type*} {l : Filter ι} [NeBot l] {F : ι → G → ℂ} {
 
 ### A.7. Normalization
 
-**`TauCeti.IsPositiveDefiniteSub.normalize`**, a lemma, [line 371](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L371).
+**`TauCeti.IsPositiveDefiniteSub.normalize`**, a lemma, [line 371](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L371).
 
 > Multiplying a positive-definite function by the reciprocal of its real value at the origin
 > preserves positive definiteness.
@@ -440,7 +440,7 @@ lemma normalize (hF : IsPositiveDefiniteSub F) :
     IsPositiveDefiniteSub fun x => (((F 0).re)⁻¹ : ℂ) * F x
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.normalize_apply_zero`**, a lemma, [line 378](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L378).
+**`TauCeti.IsPositiveDefiniteSub.normalize_apply_zero`**, a lemma, [line 378](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L378).
 
 > The normalized function has value `1` at the origin.
 
@@ -449,7 +449,7 @@ lemma normalize_apply_zero (hF : IsPositiveDefiniteSub F) (h0 : F 0 ≠ 0) :
     (((F 0).re)⁻¹ : ℂ) * F 0 = 1
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.norm_normalize_apply_le_one`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L386).
+**`TauCeti.IsPositiveDefiniteSub.norm_normalize_apply_le_one`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L386).
 
 > A normalized positive-definite function is bounded by `1`.
 
@@ -460,7 +460,7 @@ lemma norm_normalize_apply_le_one (hF : IsPositiveDefiniteSub F) (a : G) :
 
 ### A.8. Continuity
 
-**`TauCeti.IsPositiveDefiniteSub.uniformContinuous_of_continuousAt_zero`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L401).
+**`TauCeti.IsPositiveDefiniteSub.uniformContinuous_of_continuousAt_zero`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L401).
 
 > A positive-definite function on a seminormed additive commutative group is uniformly
 > continuous as soon as it is continuous at the origin.
@@ -470,7 +470,7 @@ lemma uniformContinuous_of_continuousAt_zero (hF : IsPositiveDefiniteSub F)
     (hcont : ContinuousAt F 0) : UniformContinuous F
 ```
 
-**`TauCeti.IsPositiveDefiniteSub.continuous_of_continuousAt_zero`**, a lemma, [line 408](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L408).
+**`TauCeti.IsPositiveDefiniteSub.continuous_of_continuousAt_zero`**, a lemma, [line 408](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L408).
 
 > A positive-definite function on a seminormed additive commutative group is continuous as soon
 > as it is continuous at the origin.
@@ -480,7 +480,7 @@ lemma continuous_of_continuousAt_zero (hF : IsPositiveDefiniteSub F)
     (hcont : ContinuousAt F 0) : Continuous F
 ```
 
-**`TauCeti.isPositiveDefiniteSub_const`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L415).
+**`TauCeti.isPositiveDefiniteSub_const`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L415).
 
 > A nonnegative real constant is a positive-definite function.
 
@@ -489,7 +489,7 @@ lemma isPositiveDefiniteSub_const {k : ℂ} (hk : 0 ≤ k) :
     IsPositiveDefiniteSub (fun _ : G => k)
 ```
 
-**`TauCeti.isPositiveDefiniteSub_zero`**, a lemma, [line 420](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L420).
+**`TauCeti.isPositiveDefiniteSub_zero`**, a lemma, [line 420](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean#L420).
 
 > The zero function is positive definite.
 
@@ -511,4 +511,4 @@ lemma isPositiveDefiniteSub_zero : IsPositiveDefiniteSub (fun _ : G => (0 : ℂ)
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AddGroup.lean)

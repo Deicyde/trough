@@ -8,7 +8,7 @@ proof: formalized
 
 # Finite measures are determined by separating test functions
 
-The module `PhyslibAlpha.Mathematics.TauCeti.MeasureTheory.Measure.FiniteMeasureExt`, [PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/FiniteMeasureExt.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/FiniteMeasureExt.lean): 4 declarations, 4 with a docstring; 2 private, not shown.
+The module `PhyslibAlpha.Mathematics.TauCeti.MeasureTheory.Measure.FiniteMeasureExt`, [PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/FiniteMeasureExt.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/FiniteMeasureExt.lean): 4 declarations, 4 with a docstring; 2 private, not shown.
 
 > Two finite Borel measures on a Polish space are equal once their integrals agree on a family of real
 > bounded continuous functions that separates points, contains the constant `1` and is closed under
@@ -60,7 +60,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.MeasureTheory.Measure.FiniteMeasure
 
 ## A. Development
 
-**`TauCeti.MeasureTheory.ext_of_forall_mem_submonoid_integral_eq_of_polish`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/FiniteMeasureExt.lean#L87).
+**`TauCeti.MeasureTheory.ext_of_forall_mem_submonoid_integral_eq_of_polish`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/FiniteMeasureExt.lean#L87).
 
 > **A separating submonoid of test functions determines a finite measure.** Two finite Borel
 > measures on a Polish space that give the same integral to every member of a submonoid `S` of the
@@ -73,7 +73,7 @@ lemma ext_of_forall_mem_submonoid_integral_eq_of_polish [PolishSpace E] [BorelSp
     (heq : ∀ g ∈ S, ∫ x, g x ∂P = ∫ x, g x ∂P') : P = P'
 ```
 
-**`TauCeti.MeasureTheory.abs_integral_mulExpNegMulSq_comp_sub_le_of_isTightMeasureSet`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/FiniteMeasureExt.lean#L171).
+**`TauCeti.MeasureTheory.abs_integral_mulExpNegMulSq_comp_sub_le_of_isTightMeasureSet`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/FiniteMeasureExt.lean#L171).
 
 > If two tight finite measures on a Hausdorff space integrate every member of a point-separating
 > real subalgebra `A` of `E →ᵇ ℝ` equally, then their integrals of `mulExpNegMulSq ε ∘ f` differ by
@@ -88,7 +88,7 @@ lemma abs_integral_mulExpNegMulSq_comp_sub_le_of_isTightMeasureSet
     |∫ x, mulExpNegMulSq ε (f x) ∂P - ∫ x, mulExpNegMulSq ε (f x) ∂P'| ≤ 6 * √ε
 ```
 
-**`TauCeti.MeasureTheory.integral_eq_of_forall_mem_subalgebra_integral_eq_of_isTightMeasureSet`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/FiniteMeasureExt.lean#L224).
+**`TauCeti.MeasureTheory.integral_eq_of_forall_mem_subalgebra_integral_eq_of_isTightMeasureSet`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/FiniteMeasureExt.lean#L224).
 
 > **A separating subalgebra determines the integrals of tight measures.** Two tight finite
 > measures on a Hausdorff space that integrate every member of a point-separating star
@@ -103,7 +103,7 @@ lemma integral_eq_of_forall_mem_subalgebra_integral_eq_of_isTightMeasureSet {�
     ∫ x, f x ∂P = ∫ x, f x ∂P'
 ```
 
-**`TauCeti.MeasureTheory.ext_of_forall_mem_subalgebra_integral_eq_of_innerRegular`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/FiniteMeasureExt.lean#L278).
+**`TauCeti.MeasureTheory.ext_of_forall_mem_subalgebra_integral_eq_of_innerRegular`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/FiniteMeasureExt.lean#L278).
 
 > **A separating subalgebra determines a finite inner regular measure.** On a locally compact
 > Hausdorff space, two finite inner regular (equivalently, for finite Borel measures there, regular)
@@ -125,4 +125,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/FiniteMeasureExt.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/FiniteMeasureExt.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/FiniteMeasureExt.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Measure/FiniteMeasureExt.lean)

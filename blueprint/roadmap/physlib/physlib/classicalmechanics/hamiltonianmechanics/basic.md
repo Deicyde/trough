@@ -8,7 +8,7 @@ proof: formalized
 
 # Hamiltonian systems
 
-The module `Physlib.ClassicalMechanics.HamiltonianMechanics.Basic`, [Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean): 8 declarations, 8 with a docstring.
+The module `Physlib.ClassicalMechanics.HamiltonianMechanics.Basic`, [Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean): 8 declarations, 8 with a docstring.
 
 > Smooth time-dependent Hamiltonians on open domains of cotangent phase space.
 
@@ -35,7 +35,7 @@ The module `Physlib.ClassicalMechanics.HamiltonianMechanics.Basic`, [Physlib/Cla
 
 ## A. Hamiltonian systems and their domains
 
-**`ClassicalMechanics.HamiltonianSystem`**, a structure, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean#L60).
+**`ClassicalMechanics.HamiltonianSystem`**, a structure, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean#L60).
 
 > A time-dependent Hamiltonian smooth on an open domain of the cotangent phase space.
 > The Hamiltonian is represented by a total function, with smoothness required on the domain.
@@ -55,7 +55,7 @@ structure HamiltonianSystem where
 
 ## B. Coordinate constructors
 
-**`ClassicalMechanics.HamiltonianSystem.ofCoordinates`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean#L85).
+**`ClassicalMechanics.HamiltonianSystem.ofCoordinates`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean#L85).
 
 > Pull a Hamiltonian and its domain back along global phase-space coordinates.
 
@@ -67,7 +67,7 @@ def ofCoordinates {P : Type*} [NormedAddCommGroup P] [NormedSpace ℝ P]
     HamiltonianSystem I Q
 ```
 
-**`ClassicalMechanics.HamiltonianSystem.ofNormedSpace`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean#L104).
+**`ClassicalMechanics.HamiltonianSystem.ofNormedSpace`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean#L104).
 
 > The Hamiltonian system on a normed space given by `H(t, p, q)` on an open domain `U`,
 > with momentum `p` in the continuous dual.
@@ -76,7 +76,7 @@ def ofCoordinates {P : Type*} [NormedAddCommGroup P] [NormedSpace ℝ P]
 def ofNormedSpace : HamiltonianSystem 𝓘(ℝ, E) ⟨E⟩
 ```
 
-**`ClassicalMechanics.HamiltonianSystem.mem_domain_ofNormedSpace`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean#L109).
+**`ClassicalMechanics.HamiltonianSystem.mem_domain_ofNormedSpace`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean#L109).
 
 > The coordinate constructor preserves membership in the Hamiltonian's domain.
 
@@ -85,7 +85,7 @@ lemma mem_domain_ofNormedSpace (p : E →L[ℝ] ℝ) (q : E) :
     PhaseSpace.ofNormedSpace p q ∈ (ofNormedSpace U hU H hH).domain ↔ (p, q) ∈ U
 ```
 
-**`ClassicalMechanics.HamiltonianSystem.hamiltonian_ofNormedSpace`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean#L117).
+**`ClassicalMechanics.HamiltonianSystem.hamiltonian_ofNormedSpace`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean#L117).
 
 > The coordinate constructor preserves the value of the Hamiltonian.
 
@@ -94,7 +94,7 @@ lemma hamiltonian_ofNormedSpace (t : Time) (p : E →L[ℝ] ℝ) (q : E) :
     (ofNormedSpace U hU H hH).hamiltonian (t, PhaseSpace.ofNormedSpace p q) = H (t, p, q)
 ```
 
-**`ClassicalMechanics.HamiltonianSystem.ofInnerProductSpace`**, a def, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean#L134).
+**`ClassicalMechanics.HamiltonianSystem.ofInnerProductSpace`**, a def, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean#L134).
 
 > The Hamiltonian system on a real Hilbert space given by `H(t, p, q)` on an open domain `U`,
 > with momentum represented by a vector using the Riesz map.
@@ -103,7 +103,7 @@ lemma hamiltonian_ofNormedSpace (t : Time) (p : E →L[ℝ] ℝ) (q : E) :
 def ofInnerProductSpace : HamiltonianSystem 𝓘(ℝ, E) ⟨E⟩
 ```
 
-**`ClassicalMechanics.HamiltonianSystem.mem_domain_ofInnerProductSpace`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean#L139).
+**`ClassicalMechanics.HamiltonianSystem.mem_domain_ofInnerProductSpace`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean#L139).
 
 > The vector-coordinate constructor preserves membership in the Hamiltonian's domain.
 
@@ -112,7 +112,7 @@ lemma mem_domain_ofInnerProductSpace (p q : E) :
     PhaseSpace.ofInnerProductSpace p q ∈ (ofInnerProductSpace U hU H hH).domain ↔ (p, q) ∈ U
 ```
 
-**`ClassicalMechanics.HamiltonianSystem.hamiltonian_ofInnerProductSpace`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean#L147).
+**`ClassicalMechanics.HamiltonianSystem.hamiltonian_ofInnerProductSpace`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean#L147).
 
 > The vector-coordinate constructor preserves the value of the Hamiltonian.
 
@@ -129,4 +129,4 @@ lemma hamiltonian_ofInnerProductSpace (t : Time) (p q : E) :
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean)
+- [Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean)

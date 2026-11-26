@@ -8,7 +8,7 @@ proof: formalized
 
 # Comparing linear combinations by their Gram kernels
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.InnerProductSpace.LinearCombination`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/LinearCombination.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/LinearCombination.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.InnerProductSpace.LinearCombination`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/LinearCombination.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/LinearCombination.lean): 1 declaration, 1 with a docstring.
 
 > Two families with the same pairwise inner products give linear combinations of the same norm when
 > supplied with the same finitely supported coefficients.
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.InnerProductSpace.LinearCo
 
 ## A. Development
 
-**`Finsupp.norm_linearCombination_eq_of_inner_eq`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/LinearCombination.lean#L50).
+**`Finsupp.norm_linearCombination_eq_of_inner_eq`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/LinearCombination.lean#L50).
 
 > Families with equal pairwise inner products give linear combinations of equal norm
 > for the same finitely supported coefficients.
@@ -47,4 +47,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/LinearCombination.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/LinearCombination.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/LinearCombination.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/InnerProductSpace/LinearCombination.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The Born rule for effect-valued measures
 
-The module `PhyslibAlpha.ProbabilisticTheory.Measurement.BornRule`, [PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean): 10 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Measurement.BornRule`, [PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean): 10 declarations, 5 with a docstring.
 
 > An effect-valued measure sends each normal state to a probability law on its outcomes.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Measurement.BornRule`, [PhyslibAlph
 
 ## A. Effect-valued measures on `ℝ` are probability measures
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.ofReal_iUnion`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L54).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.ofReal_iUnion`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L54).
 
 ```lean
 lemma ofReal_iUnion (ν : EffectValuedMeasure Ω ℝ) ⦃s : ℕ → Set Ω⦄ (hs : ∀ n, MeasurableSet (s n))
@@ -39,7 +39,7 @@ lemma ofReal_iUnion (ν : EffectValuedMeasure Ω ℝ) ⦃s : ℕ → Set Ω⦄ (
     ENNReal.ofReal (ν (⋃ n, s n) (.iUnion hs)) = ∑' n, ENNReal.ofReal (ν (s n) (hs n))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.toMeasure`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L63).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.toMeasure`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L63).
 
 > An effect-valued measure on `ℝ` as a measure.
 
@@ -47,21 +47,21 @@ lemma ofReal_iUnion (ν : EffectValuedMeasure Ω ℝ) ⦃s : ℕ → Set Ω⦄ (
 noncomputable def toMeasure (ν : EffectValuedMeasure Ω ℝ) : Measure Ω
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.toMeasure_apply`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L67).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.toMeasure_apply`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L67).
 
 ```lean
 lemma toMeasure_apply (ν : EffectValuedMeasure Ω ℝ) (s : Set Ω) (hs : MeasurableSet s) :
     ν.toMeasure s = ENNReal.ofReal (ν s hs)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.isProbabilityMeasure_toMeasure`**, an instance, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L71).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.isProbabilityMeasure_toMeasure`**, an instance, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L71).
 
 ```lean
 instance isProbabilityMeasure_toMeasure (ν : EffectValuedMeasure Ω ℝ) :
     IsProbabilityMeasure ν.toMeasure
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.toProbabilityMeasure`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L76).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.toProbabilityMeasure`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L76).
 
 > An effect-valued measure on `ℝ` as a probability measure.
 
@@ -71,7 +71,7 @@ noncomputable def toProbabilityMeasure (ν : EffectValuedMeasure Ω ℝ) : Proba
 
 ## B. The Born rule
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.scalarize`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L84).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.scalarize`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L84).
 
 > The effect-valued measure on `ℝ` obtained by pushing `μ` forward along the normal state `ω`.
 
@@ -80,14 +80,14 @@ def scalarize (μ : EffectValuedMeasure Ω E) (ω : 𝓢[ℝ, E]) (hω : ω.IsNo
     EffectValuedMeasure Ω ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.coe_scalarize_apply`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L89).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.coe_scalarize_apply`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L89).
 
 ```lean
 lemma coe_scalarize_apply (μ : EffectValuedMeasure Ω E) (ω : 𝓢[ℝ, E]) (hω : ω.IsNormal)
     (s : Set Ω) (hs : MeasurableSet s) : (μ.scalarize ω hω s hs : ℝ) = ω (μ s hs)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.probabilityLaw`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L93).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.probabilityLaw`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L93).
 
 > The outcome distribution of the effect-valued measure `μ` in the normal state `ω`.
 
@@ -96,7 +96,7 @@ noncomputable def probabilityLaw (μ : EffectValuedMeasure Ω E) (ω : 𝓢[ℝ,
     ProbabilityMeasure Ω
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.probabilityLaw_apply`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L98).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.probabilityLaw_apply`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L98).
 
 ```lean
 lemma probabilityLaw_apply (μ : EffectValuedMeasure Ω E) (ω : 𝓢[ℝ, E]) (hω : ω.IsNormal)
@@ -106,7 +106,7 @@ lemma probabilityLaw_apply (μ : EffectValuedMeasure Ω E) (ω : 𝓢[ℝ, E]) (
 
 ## C. Relabeling outcomes
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.probabilityLaw_mapOutcome`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L110).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.probabilityLaw_mapOutcome`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean#L110).
 
 > Relabeling outcomes pushes each Born law forward along the relabeling map.
 
@@ -122,4 +122,4 @@ lemma probabilityLaw_mapOutcome (N : EffectValuedMeasure Ω' E) (f : Ω' → Ω)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean)

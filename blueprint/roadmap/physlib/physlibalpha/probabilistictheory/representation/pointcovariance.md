@@ -8,7 +8,7 @@ proof: formalized
 
 # Covariance of the spectral measure under a finite group of symmetries
 
-The module `PhyslibAlpha.ProbabilisticTheory.Representation.PointCovariance`, [PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean): 14 declarations, 8 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Representation.PointCovariance`, [PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean): 14 declarations, 8 with a docstring.
 
 > A group acting on the translation group acts on its characters, and the spectral measure of a
 > covariant representation is covariant.
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.PointCovariance`, [P
 
 ## A. The action on the characters
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.autCont`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L70).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.autCont`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L70).
 
 > The automorphism `φ p` of the translation group as a continuous homomorphism.
 
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.PointCovariance`, [P
 def autCont (p : P) : Multiplicative G →ₜ* Multiplicative G
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.dualAct`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L75).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.dualAct`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L75).
 
 > The action of `p` on a character `χ`: `(p • χ)(g) = χ(φ(p⁻¹) g)`.
 
@@ -58,27 +58,27 @@ def autCont (p : P) : Multiplicative G →ₜ* Multiplicative G
 def dualAct (p : P) : PontryaginDual (Multiplicative G) →ₜ* PontryaginDual (Multiplicative G)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.dualAct_apply`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L78).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.dualAct_apply`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L78).
 
 ```lean
 lemma dualAct_apply (p : P) (χ : PontryaginDual (Multiplicative G)) (g : Multiplicative G) :
     dualAct φ p χ g = χ (φ p⁻¹ g)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.dualAct_mul`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L81).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.dualAct_mul`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L81).
 
 ```lean
 lemma dualAct_mul (p q : P) (χ : PontryaginDual (Multiplicative G)) :
     dualAct φ (p * q) χ = dualAct φ p (dualAct φ q χ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.dualAct_one`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L88).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.dualAct_one`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L88).
 
 ```lean
 lemma dualAct_one (χ : PontryaginDual (Multiplicative G)) : dualAct φ 1 χ = χ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.dualActEquiv`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L95).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.dualActEquiv`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L95).
 
 > The action of `p` on the characters is a bijection.
 
@@ -89,7 +89,7 @@ def dualActEquiv (p : P) :
 
 ## B. Covariance of the spectral measure
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.IsCovariantRep`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L113).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.IsCovariantRep`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L113).
 
 > The representation `ρ` of `P` is covariant with respect to the translations `π` and the
 > action `φ`: `ρ(p) π(g) = π(φ(p) g) ρ(p)`.
@@ -98,13 +98,13 @@ def dualActEquiv (p : P) :
 def IsCovariantRep : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.measurable_dualAct`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L116).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.measurable_dualAct`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L116).
 
 ```lean
 lemma measurable_dualAct (p : P) : Measurable (dualAct φ p)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.isCovariantRep_comp`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L125).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.isCovariantRep_comp`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L125).
 
 > A representation of a group `Q` acting on the translations, restricted to the translations,
 > is covariant when the group relation `s t(a) = t(φ(s) a) s` holds.
@@ -116,7 +116,7 @@ lemma isCovariantRep_comp {Q : Type*} [Group Q] (φ : Q →* MulAut (Multiplicat
     IsCovariantRep φ (U.comp τ) U
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.inner_rho_translation`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L138).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.inner_rho_translation`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L138).
 
 > The matrix coefficient of the translated vector.
 
@@ -128,7 +128,7 @@ lemma inner_rho_translation (hcov : IsCovariantRep φ π ρ) (p : P) (g : Multip
       = ⟪ξ, ((π (φ p⁻¹ g) : unitary (H →L[ℂ] H)) : H →L[ℂ] H) ξ⟫_ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.vectorMeasure_rho`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L156).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.vectorMeasure_rho`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L156).
 
 > **The spectral measure of `ρ(p) ξ` is the pushforward of that of `ξ`** under the action of `p`
 > on the characters.
@@ -139,21 +139,21 @@ lemma vectorMeasure_rho (hcov : IsCovariantRep φ π ρ) (p : P) (ξ : H) :
       Measure.map (dualAct φ p) (vectorMeasure π ξ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.norm_sq_projection`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L168).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.norm_sq_projection`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L168).
 
 ```lean
 lemma norm_sq_projection (S : Set (PontryaginDual (Multiplicative G))) (hS : MeasurableSet S)
     (η : H) : ‖projection π S η‖ ^ 2 = (vectorMeasure π η S).toReal
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.inner_projection_self`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L174).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.inner_projection_self`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L174).
 
 ```lean
 lemma inner_projection_self (S : Set (PontryaginDual (Multiplicative G))) (η : H) :
     ⟪projection π S η, η⟫_ℂ = ((‖projection π S η‖ ^ 2 : ℝ) : ℂ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_mul_projection`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L189).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.rho_mul_projection`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean#L189).
 
 > **The spectral projections are covariant**: `ρ(p) P(S) = P(p • S) ρ(p)` for every measurable
 > set `S` of characters. The unitary `ρ(p)` carries the sector of momenta in `S` onto the sector of
@@ -172,4 +172,4 @@ lemma rho_mul_projection (hcov : IsCovariantRep φ π ρ) (p : P)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Coupled spring potential
 
-The module `PhyslibAlpha.ClassicalMechanics.CoupledSpringPotential`, [PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean): 7 declarations, 1 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.CoupledSpringPotential`, [PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean): 7 declarations, 1 with a docstring.
 
 > The coupled spring potential x₀² + x₀x₁ + x₁² has a local minimum at the origin.
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.ClassicalMechanics.CoupledSpringPotential`, [PhyslibAlp
 
 ## A. The coupled spring potential
 
-**`couplingPotential`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean#L56).
+**`couplingPotential`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean#L56).
 
 > The potential energy of a pair of coupled springs.
 
@@ -47,14 +47,14 @@ noncomputable def couplingPotential (x : EuclideanSpace ℝ (Fin 2)) : ℝ
 
 ## B. Analyticity and derivatives
 
-**`couplingPotential_analyticAt`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean#L68).
+**`couplingPotential_analyticAt`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean#L68).
 
 ```lean
 lemma couplingPotential_analyticAt (z : EuclideanSpace ℝ (Fin 2)) :
     AnalyticAt ℝ couplingPotential z
 ```
 
-**`couplingPotential_hasFDerivAt`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean#L81).
+**`couplingPotential_hasFDerivAt`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean#L81).
 
 ```lean
 lemma couplingPotential_hasFDerivAt (x : EuclideanSpace ℝ (Fin 2)) :
@@ -63,14 +63,14 @@ lemma couplingPotential_hasFDerivAt (x : EuclideanSpace ℝ (Fin 2)) :
         + (x 0 + 2 * x 1) • (EuclideanSpace.proj (𝕜 := ℝ) 1)) x
 ```
 
-**`couplingPotential_gradient_zero`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean#L97).
+**`couplingPotential_gradient_zero`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean#L97).
 
 ```lean
 lemma couplingPotential_gradient_zero :
     gradient couplingPotential (!₂[0, 0] : EuclideanSpace ℝ (Fin 2)) = 0
 ```
 
-**`couplingPotential_iteratedFDeriv_two`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean#L106).
+**`couplingPotential_iteratedFDeriv_two`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean#L106).
 
 ```lean
 lemma couplingPotential_iteratedFDeriv_two (z : EuclideanSpace ℝ (Fin 2))
@@ -81,7 +81,7 @@ lemma couplingPotential_iteratedFDeriv_two (z : EuclideanSpace ℝ (Fin 2))
 
 ## C. The local minimum at the origin
 
-**`couplingPotential_posDef`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean#L142).
+**`couplingPotential_posDef`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean#L130).
 
 ```lean
 lemma couplingPotential_posDef :
@@ -89,7 +89,7 @@ lemma couplingPotential_posDef :
     (!₂[0, 0] : EuclideanSpace ℝ (Fin 2))).PosDef
 ```
 
-**`coupled_spring_potential`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean#L153).
+**`coupled_spring_potential`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean#L141).
 
 ```lean
 lemma coupled_spring_potential :
@@ -105,4 +105,4 @@ lemma coupled_spring_potential :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean)
+- [PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CoupledSpringPotential.lean)

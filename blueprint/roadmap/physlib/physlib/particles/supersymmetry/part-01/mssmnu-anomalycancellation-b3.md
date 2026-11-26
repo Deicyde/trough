@@ -8,7 +8,7 @@ proof: formalized
 
 # The definition of the solution B₃ and properties thereof
 
-The module `Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.B3`, [Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean): 4 declarations, 2 with a docstring.
+The module `Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.B3`, [Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean): 4 declarations, 2 with a docstring.
 
 > We define `B₃` and show that it is a double point of the cubic.
 
@@ -16,7 +16,7 @@ The module `Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.B3`, [Phy
 
 > * The main reference for the material in this file. [ref: Allanach:2021yjy]
 
-**`MSSMACC.B₃AsCharge`**, a def, [line 29](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean#L29).
+**`MSSMACC.B₃AsCharge`**, a def, [line 29](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean#L29).
 
 > `B₃` is the charge which is $B-L$ in all families, but with the third
 > family of the opposite sign.
@@ -25,7 +25,7 @@ The module `Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.B3`, [Phy
 def B₃AsCharge : MSSMACC.Charges
 ```
 
-**`MSSMACC.B₃`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean#L56).
+**`MSSMACC.B₃`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean#L56).
 
 > `B₃` as a solution.
 
@@ -33,13 +33,13 @@ def B₃AsCharge : MSSMACC.Charges
 def B₃ : MSSMACC.Sols
 ```
 
-**`MSSMACC.B₃_val`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean#L61).
+**`MSSMACC.B₃_val`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean#L61).
 
 ```lean
 lemma B₃_val : B₃.val = B₃AsCharge
 ```
 
-**`MSSMACC.doublePoint_B₃_B₃`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean#L65).
+**`MSSMACC.doublePoint_B₃_B₃`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean#L65).
 
 ```lean
 lemma doublePoint_B₃_B₃ (R : MSSMACC.LinSols) : cubeTriLin B₃.val B₃.val R.val = 0
@@ -51,4 +51,4 @@ lemma doublePoint_B₃_B₃ (R : MSSMACC.LinSols) : cubeTriLin B₃.val B₃.val
 
 ## Sources
 
-- [Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean)
+- [Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean)

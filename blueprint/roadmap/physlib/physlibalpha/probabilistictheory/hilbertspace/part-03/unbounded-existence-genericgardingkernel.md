@@ -8,7 +8,7 @@ proof: formalized
 
 # Gårding vectors of smooth kernels
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.GenericGardingKernel`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GenericGardingKernel.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GenericGardingKernel.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.GenericGardingKernel`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GenericGardingKernel.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GenericGardingKernel.lean): 3 declarations, 3 with a docstring.
 
 > Gårding vectors of a general kernel and the differentiability of their orbits.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.Ge
 
 ## A. Gårding vectors and translation
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gardingVectorAt`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GenericGardingKernel.lean#L67).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gardingVectorAt`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GenericGardingKernel.lean#L67).
 
 > The Gårding vector of `ψ` against a generic (real-valued) kernel `k`, generalizing
 > `analyticGardingVector U ε ψ = gardingVectorAt U (gaussianKernel ε) ψ`.
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.Ge
 def gardingVectorAt (k : ℝ → ℝ) (ψ : H) : H
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gardingVectorAt_translate`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GenericGardingKernel.lean#L71).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gardingVectorAt_translate`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GenericGardingKernel.lean#L71).
 
 > Translating a Gårding vector by `U s` translates the kernel by `s`.
 
@@ -51,7 +51,7 @@ lemma gardingVectorAt_translate (k : ℝ → ℝ) (ψ : H)
 
 ## B. Differentiability of the orbit
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gardingVectorAt_hasDerivAt`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GenericGardingKernel.lean#L94).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gardingVectorAt_hasDerivAt`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GenericGardingKernel.lean#L94).
 
 > If `k` is differentiable with a locally dominated continuous derivative `k'`, the orbit of the
 > Gårding vector of `k` is differentiable at `0`, with derivative the Gårding vector of `-k'`.
@@ -73,4 +73,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GenericGardingKernel.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GenericGardingKernel.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GenericGardingKernel.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GenericGardingKernel.lean)

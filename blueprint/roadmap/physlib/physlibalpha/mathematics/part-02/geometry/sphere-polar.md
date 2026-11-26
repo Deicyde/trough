@@ -8,7 +8,7 @@ proof: formalized
 
 # Polar coordinates on balls of space
 
-The module `PhyslibAlpha.Mathematics.Geometry.Sphere.Polar`, [PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean): 15 declarations, 7 with a docstring.
+The module `PhyslibAlpha.Mathematics.Geometry.Sphere.Polar`, [PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean): 15 declarations, 7 with a docstring.
 
 > Integrals over balls of `Space 3` reduce to integrals over the unit sphere and the radius.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.Mathematics.Geometry.Sphere.Polar`, [PhyslibAlpha/Mathe
 
 ## A. Volume preservation of coordinate maps
 
-**`Sphere3.equivPi_measurePreserving`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L53).
+**`Sphere3.equivPi_measurePreserving`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L53).
 
 ```lean
 lemma equivPi_measurePreserving (d : ℕ) :
@@ -42,7 +42,7 @@ lemma equivPi_measurePreserving (d : ℕ) :
       (volume : Measure (Fin d → ℝ))
 ```
 
-**`Sphere3.slice_measurePreserving`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L63).
+**`Sphere3.slice_measurePreserving`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L63).
 
 ```lean
 lemma slice_measurePreserving {d : ℕ} (i : Fin d.succ) :
@@ -52,14 +52,14 @@ lemma slice_measurePreserving {d : ℕ} (i : Fin d.succ) :
 
 ## B. Integrals over a ball of a function of one coordinate
 
-**`Sphere3.volume_ball_two`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L81).
+**`Sphere3.volume_ball_two`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L81).
 
 ```lean
 lemma volume_ball_two (ρ : ℝ) (hρ : 0 ≤ ρ) :
     volume (Metric.ball (0 : Space 2) ρ) = ENNReal.ofReal (Real.pi * ρ ^ 2)
 ```
 
-**`Sphere3.integral_ball_coord_aux`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L89).
+**`Sphere3.integral_ball_coord_aux`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L89).
 
 ```lean
 lemma integral_ball_coord_aux {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]
@@ -69,7 +69,7 @@ lemma integral_ball_coord_aux {F : Type*} [NormedAddCommGroup F] [NormedSpace �
         ((Space.slice i).symm p)
 ```
 
-**`Sphere3.indicator_slice_apply`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L102).
+**`Sphere3.indicator_slice_apply`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L102).
 
 ```lean
 lemma indicator_slice_apply {F : Type*} [NormedAddCommGroup F]
@@ -78,7 +78,7 @@ lemma indicator_slice_apply {F : Type*} [NormedAddCommGroup F]
       {y' : Space 2 | z ^ 2 + ‖y'‖ ^ 2 < R ^ 2}.indicator (fun _ => h z) y
 ```
 
-**`Sphere3.slab_section_volume`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L117).
+**`Sphere3.slab_section_volume`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L117).
 
 ```lean
 lemma slab_section_volume (R z : ℝ) :
@@ -86,7 +86,7 @@ lemma slab_section_volume (R z : ℝ) :
       ENNReal.ofReal (Real.pi * (R ^ 2 - z ^ 2))
 ```
 
-**`Sphere3.integral_ball_coord`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L141).
+**`Sphere3.integral_ball_coord`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L141).
 
 > A ball integral of a function of one coordinate reduces to a one-dimensional integral against
 > the disc area.
@@ -100,15 +100,15 @@ lemma integral_ball_coord {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]
 
 ## C. Polar coordinates on the ball
 
-**`Sphere3.Sph`**, an abbrev, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L214).
+**`Sphere3.Sph`**, an abbrev, [line 214](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L214).
 
 > The unit sphere of `Space 3` with its surface measure.
 
 ```lean
-abbrev Sph
+noncomputable abbrev Sph
 ```
 
-**`Sphere3.sphereMeasure`**, an abbrev, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L217).
+**`Sphere3.sphereMeasure`**, an abbrev, [line 217](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L217).
 
 > The surface measure on the unit sphere, normalized so that the total mass is `4 π`.
 
@@ -116,7 +116,7 @@ abbrev Sph
 noncomputable abbrev sphereMeasure : Measure Sph
 ```
 
-**`Sphere3.integrable_ball_indicator_coord`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L219).
+**`Sphere3.integrable_ball_indicator_coord`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L219).
 
 ```lean
 lemma integrable_ball_indicator_coord {F : Type*} [NormedAddCommGroup F]
@@ -124,7 +124,7 @@ lemma integrable_ball_indicator_coord {F : Type*} [NormedAddCommGroup F]
     Integrable ((Metric.ball (0 : Space 3) R).indicator (fun x => h (x i))) volume
 ```
 
-**`Sphere3.ball_integral_polar`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L227).
+**`Sphere3.ball_integral_polar`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L227).
 
 ```lean
 lemma ball_integral_polar {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]
@@ -135,7 +135,7 @@ lemma ball_integral_polar {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]
 
 ## D. Polar coordinates for general integrands
 
-**`Sphere3.integrable_ball_indicator`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L260).
+**`Sphere3.integrable_ball_indicator`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L260).
 
 > A continuous function has an integrable restriction to a ball.
 
@@ -145,7 +145,7 @@ lemma integrable_ball_indicator {F : Type*} [NormedAddCommGroup F]
     Integrable ((Metric.ball (0 : Space 3) R).indicator g) volume
 ```
 
-**`Sphere3.integrable_inv_norm_mul`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L268).
+**`Sphere3.integrable_inv_norm_mul`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L268).
 
 > `‖z‖⁻¹` times a continuous function is integrable on a ball of `Space 3`.
 
@@ -155,7 +155,7 @@ lemma integrable_inv_norm_mul {F : Type*} [NormedAddCommGroup F] [NormedSpace �
     Integrable ((Metric.ball (0 : Space 3) R).indicator (fun z => (‖z‖⁻¹ : ℝ) • k z)) volume
 ```
 
-**`Sphere3.ball_integral_polar_general`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L286).
+**`Sphere3.ball_integral_polar_general`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L286).
 
 > Polar coordinates on a ball for a general continuous integrand.
 
@@ -167,7 +167,7 @@ lemma ball_integral_polar_general {F : Type*} [NormedAddCommGroup F] [NormedSpac
       ∫ n : Sph, ∫ r in Set.Ioo 0 R, r ^ 2 • g (r • n.1) ∂volume ∂sphereMeasure
 ```
 
-**`Sphere3.setIntegral_ball_translate`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L316).
+**`Sphere3.setIntegral_ball_translate`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean#L316).
 
 > Translation of a ball integral to the origin.
 
@@ -187,4 +187,4 @@ lemma setIntegral_ball_translate {F : Type*} [NormedAddCommGroup F] [NormedSpace
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean)
+- [PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Polar.lean)

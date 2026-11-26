@@ -8,9 +8,9 @@ proof: formalized
 
 # QuantumInfo.ForMathlib.ComplexLaplaceTransform
 
-The module `QuantumInfo.ForMathlib.ComplexLaplaceTransform`, [QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean): 9 declarations, 6 with a docstring, 3 listed as significant; 8 private, not shown.
+The module `QuantumInfo.ForMathlib.ComplexLaplaceTransform`, [QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean): 9 declarations, 6 with a docstring, 3 listed as significant; 8 private, not shown.
 
-**`ComplexLaplaceIntegrand`**, a def, [line 18](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L18).
+**`ComplexLaplaceIntegrand`**, a def, [line 18](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L18).
 
 > The integrand of the complex Laplace transform of a possibly infinite-valued energy function.
 
@@ -18,7 +18,7 @@ The module `QuantumInfo.ForMathlib.ComplexLaplaceTransform`, [QuantumInfo/ForMat
 def ComplexLaplaceIntegrand {α : Type*} (E : α → WithTop ℝ) (z : ℂ) (x : α) : ℂ
 ```
 
-**`ComplexLaplaceTransform`**, a def, [line 22](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L22).
+**`ComplexLaplaceTransform`**, a def, [line 22](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L22).
 
 > The complex Laplace transform of a possibly infinite-valued energy function.
 
@@ -27,7 +27,7 @@ def ComplexLaplaceTransform {α : Type*} [MeasureTheory.MeasureSpace α]
     (E : α → WithTop ℝ) (z : ℂ) : ℂ
 ```
 
-**`ComplexLaplaceConvergenceDomain`**, a def, [line 27](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L27).
+**`ComplexLaplaceConvergenceDomain`**, a def, [line 27](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L27).
 
 > The complex convergence domain of a Laplace transform.
 
@@ -36,7 +36,7 @@ def ComplexLaplaceConvergenceDomain {α : Type*} [MeasureTheory.MeasureSpace α]
     (E : α → WithTop ℝ) : Set ℂ
 ```
 
-**`analyticAt_complexLaplaceIntegrand`**, a theorem, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L116). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`analyticAt_complexLaplaceIntegrand`**, a theorem, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L116). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > For each configuration, the complex Laplace integrand is analytic in the parameter.
 
@@ -46,7 +46,7 @@ theorem analyticAt_complexLaplaceIntegrand
     AnalyticAt ℂ (fun w : ℂ => ComplexLaplaceIntegrand E w x) z
 ```
 
-**`measurable_complexLaplaceIntegrand`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L124).
+**`measurable_complexLaplaceIntegrand`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L124).
 
 ```lean
 lemma measurable_complexLaplaceIntegrand
@@ -54,7 +54,7 @@ lemma measurable_complexLaplaceIntegrand
     Measurable (ComplexLaplaceIntegrand E z)
 ```
 
-**`eventually_integrable_complexLaplaceIntegrand_of_mem_interior_convergenceDomain`**, a theorem, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L151). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`eventually_integrable_complexLaplaceIntegrand_of_mem_interior_convergenceDomain`**, a theorem, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L151). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Interior convergence gives integrability throughout a neighborhood of the parameter.
 
@@ -66,7 +66,7 @@ theorem eventually_integrable_complexLaplaceIntegrand_of_mem_interior_convergenc
       MeasureTheory.Integrable (μ := MeasureTheory.volume) (ComplexLaplaceIntegrand E w)
 ```
 
-**`continuousAt_complexLaplaceTransform_of_mem_interior_convergenceDomain`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L158).
+**`continuousAt_complexLaplaceTransform_of_mem_interior_convergenceDomain`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L158).
 
 ```lean
 lemma continuousAt_complexLaplaceTransform_of_mem_interior_convergenceDomain
@@ -75,7 +75,7 @@ lemma continuousAt_complexLaplaceTransform_of_mem_interior_convergenceDomain
     ContinuousAt (ComplexLaplaceTransform E) z
 ```
 
-**`continuousOn_complexLaplaceTransform_interior_convergenceDomain`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L188).
+**`continuousOn_complexLaplaceTransform_interior_convergenceDomain`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L188).
 
 ```lean
 lemma continuousOn_complexLaplaceTransform_interior_convergenceDomain
@@ -83,7 +83,7 @@ lemma continuousOn_complexLaplaceTransform_interior_convergenceDomain
     ContinuousOn (ComplexLaplaceTransform E) (interior (ComplexLaplaceConvergenceDomain E))
 ```
 
-**`analyticAt_complexLaplaceTransform_of_mem_interior_convergenceDomain`**, a theorem, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L306). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`analyticAt_complexLaplaceTransform_of_mem_interior_convergenceDomain`**, a theorem, [line 306](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean#L306). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > A complex Laplace transform is analytic on the interior of its convergence domain.
 
@@ -102,4 +102,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean)
+- [QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean)

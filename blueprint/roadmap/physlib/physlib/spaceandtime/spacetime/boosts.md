@@ -8,7 +8,7 @@ proof: formalized
 
 # Boosts of space time
 
-The module `Physlib.SpaceAndTime.SpaceTime.Boosts`, [Physlib/SpaceAndTime/SpaceTime/Boosts.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/Boosts.lean): 2 declarations, none with a docstring.
+The module `Physlib.SpaceAndTime.SpaceTime.Boosts`, [Physlib/SpaceAndTime/SpaceTime/Boosts.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/Boosts.lean): 2 declarations, none with a docstring.
 
 ## i. Overview
 
@@ -30,7 +30,7 @@ The module `Physlib.SpaceAndTime.SpaceTime.Boosts`, [Physlib/SpaceAndTime/SpaceT
 > We show that boosting in the `x`-direction takes `(t, x, y, z)` to
 > `(γ (t - β x), γ (x - β t), y, z)`.
 
-**`SpaceTime.boost_x_smul`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/Boosts.lean#L52).
+**`SpaceTime.boost_x_smul`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/Boosts.lean#L52).
 
 ```lean
 lemma boost_x_smul (β : ℝ) (hβ : |β| < 1) (x : SpaceTime) :
@@ -41,7 +41,7 @@ lemma boost_x_smul (β : ℝ) (hβ : |β| < 1) (x : SpaceTime) :
           | Sum.inr 2=> x (Sum.inr 2)
 ```
 
-**`SpaceTime.boost_zero_apply_time_space`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/Boosts.lean#L64).
+**`SpaceTime.boost_zero_apply_time_space`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/Boosts.lean#L64).
 
 ```lean
 lemma boost_zero_apply_time_space {d : ℕ} {β : ℝ} (hβ : |β| < 1) (c : SpeedOfLight)
@@ -61,4 +61,4 @@ lemma boost_zero_apply_time_space {d : ℕ} {β : ℝ} (hβ : |β| < 1) (c : Spe
 
 ## Sources
 
-- [Physlib/SpaceAndTime/SpaceTime/Boosts.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/Boosts.lean)
+- [Physlib/SpaceAndTime/SpaceTime/Boosts.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/Boosts.lean)

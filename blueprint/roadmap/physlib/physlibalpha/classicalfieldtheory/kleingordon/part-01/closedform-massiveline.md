@@ -8,7 +8,7 @@ proof: formalized
 
 # The retarded solution of the Klein–Gordon equation on the line
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MassiveLine`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveLine.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveLine.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MassiveLine`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveLine.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveLine.lean): 3 declarations, 3 with a docstring.
 
 > The retarded Green function in one space dimension is `½ Θ(t - |x|) J₀(m √(t² - x²))`.
 
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MassiveLine
 > - `sineEvolution_mass_line` : the sine evolution with mass on the line.
 > - `solution_mass_line` : the retarded solution with mass on the line.
 
-**`KleinGordon.sineEvolution_of_kernel`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveLine.lean#L61).
+**`KleinGordon.sineEvolution_of_kernel`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveLine.lean#L61).
 
 > **A multiplier that is a cosine transform is a convolution.**
 
@@ -53,7 +53,7 @@ lemma sineEvolution_of_kernel {μ r : ℝ} (hμ : 0 ≤ μ) (hr : 0 ≤ r) (w : 
     sineEvolution ℂ r μ g x = ∫ u in (-r)..r, (w u : ℂ) * g (x + u)
 ```
 
-**`KleinGordon.sineEvolution_mass_line`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveLine.lean#L171).
+**`KleinGordon.sineEvolution_mass_line`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveLine.lean#L171).
 
 > **The massive sine evolution on the line.** The sine evolution of the mass `m` is the average
 > of the data against the Bessel kernel `½ J₀ (m √(r² - u²))` over the interval of radius `r`.
@@ -64,7 +64,7 @@ lemma sineEvolution_mass_line {r : ℝ} (hr : 0 ≤ r) (m : ℝ) (g : 𝓢(ℝ, 
       ∫ u in (-r)..r, ((1 / 2 * Real.besselSq (m ^ 2 * (r ^ 2 - u ^ 2)) : ℝ) : ℂ) * g (x + u)
 ```
 
-**`KleinGordon.solution_mass_line`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveLine.lean#L223).
+**`KleinGordon.solution_mass_line`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveLine.lean#L223).
 
 > **The retarded solution of the Klein–Gordon equation on the line.** The retarded solution at
 > `(t, x)` is the integral of the source against the retarded Green function
@@ -87,4 +87,4 @@ lemma solution_mass_line (m : ℝ) (ψ : TestFunction (⊤ : Opens (ℝ × ℝ))
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveLine.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveLine.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveLine.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveLine.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Compact operators and weakly null sequences
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.EssentialSpectrum.WeakCompact`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/WeakCompact.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/WeakCompact.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.EssentialSpectrum.WeakCompact`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/WeakCompact.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/WeakCompact.lean): 2 declarations, 2 with a docstring.
 
 > Orthonormal sequences are weakly null, and compact operators make them norm-null.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.EssentialSpe
 
 ## A. Orthonormal sequences are weakly null
 
-**`Orthonormal.tendsto_inner_atTop_zero`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/WeakCompact.lean#L61).
+**`Orthonormal.tendsto_inner_atTop_zero`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/WeakCompact.lean#L61).
 
 > An orthonormal sequence is **weakly null**: for every fixed `g`, the inner products
 > `⟪g, ψ n⟫` tend to `0`. (Bessel's inequality makes `∑ ‖⟪ψ n, g⟫‖²` summable, so its terms — hence
@@ -43,7 +43,7 @@ lemma _root_.Orthonormal.tendsto_inner_atTop_zero {ψ : ℕ → H} (hψ : Orthon
 
 ## B. Compact operators on weakly null sequences
 
-**`IsCompactOperator.tendsto_norm_apply_of_weaklyNull`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/WeakCompact.lean#L88).
+**`IsCompactOperator.tendsto_norm_apply_of_weaklyNull`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/WeakCompact.lean#L88).
 
 > A **compact** operator maps a bounded weakly-null sequence to a norm-null sequence.
 >
@@ -67,4 +67,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/WeakCompact.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/WeakCompact.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/WeakCompact.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/WeakCompact.lean)

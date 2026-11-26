@@ -8,11 +8,11 @@ proof: formalized
 
 # The Restricted Lorentz Group
 
-The module `Physlib.Relativity.LorentzGroup.Restricted.Basic`, [Physlib/Relativity/LorentzGroup/Restricted/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Restricted/Basic.lean): 4 declarations, 3 with a docstring.
+The module `Physlib.Relativity.LorentzGroup.Restricted.Basic`, [Physlib/Relativity/LorentzGroup/Restricted/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Restricted/Basic.lean): 4 declarations, 3 with a docstring.
 
 > This file is currently a stub.
 
-**`LorentzGroup.restricted`**, a def, [line 26](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Restricted/Basic.lean#L26).
+**`LorentzGroup.restricted`**, a def, [line 26](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Restricted/Basic.lean#L26).
 
 > The restricted Lorentz group comprises the proper and orthochronous elements of the
 > Lorentz group.
@@ -21,14 +21,14 @@ The module `Physlib.Relativity.LorentzGroup.Restricted.Basic`, [Physlib/Relativi
 def restricted (d : ℕ) : Subgroup (LorentzGroup d)
 ```
 
-**`LorentzGroup.isOrthochronous_of_restricted`**, a lemma, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Restricted/Basic.lean#L47).
+**`LorentzGroup.isOrthochronous_of_restricted`**, a lemma, [line 47](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Restricted/Basic.lean#L47).
 
 ```lean
 lemma isOrthochronous_of_restricted {d : ℕ} (Λ : restricted d) :
     IsOrthochronous Λ.1
 ```
 
-**`LorentzGroup.restricted_normal_subgroup`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Restricted/Basic.lean#L51).
+**`LorentzGroup.restricted_normal_subgroup`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Restricted/Basic.lean#L51).
 
 > The restricted Lorentz group is a normal subgroup of the Lorentz group.
 
@@ -36,7 +36,7 @@ lemma isOrthochronous_of_restricted {d : ℕ} (Λ : restricted d) :
 lemma restricted_normal_subgroup {d : ℕ} : (restricted d).Normal
 ```
 
-**`LorentzGroup.restricted_eq_identity_component_of_isConnected`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Restricted/Basic.lean#L68).
+**`LorentzGroup.restricted_eq_identity_component_of_isConnected`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Restricted/Basic.lean#L68).
 
 > Given the hypothesis that the restricted Lorentz group is connected,
 > the proof that the restricted lorentz group is equal to the connected component of the
@@ -54,4 +54,4 @@ lemma restricted_eq_identity_component_of_isConnected {d : ℕ}
 
 ## Sources
 
-- [Physlib/Relativity/LorentzGroup/Restricted/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Restricted/Basic.lean)
+- [Physlib/Relativity/LorentzGroup/Restricted/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Restricted/Basic.lean)

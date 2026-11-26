@@ -8,7 +8,7 @@ proof: formalized
 
 # Continuous functions are a.e. strongly measurable for inner regular measures
 
-The module `PhyslibAlpha.Mathematics.TauCeti.MeasureTheory.Function.StronglyMeasurable.InnerRegular`, [PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Function/StronglyMeasurable/InnerRegular.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Function/StronglyMeasurable/InnerRegular.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.MeasureTheory.Function.StronglyMeasurable.InnerRegular`, [PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Function/StronglyMeasurable/InnerRegular.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Function/StronglyMeasurable/InnerRegular.lean): 3 declarations, 3 with a docstring.
 
 > Mathlib's `ContinuousOn.aestronglyMeasurable` and `Continuous.aestronglyMeasurable` read almost
 > everywhere strong measurability of a continuous function off second countability of its source or
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.MeasureTheory.Function.StronglyMeas
 
 ## A. Development
 
-**`ContinuousOn.aestronglyMeasurable_of_measure_ne_top`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Function/StronglyMeasurable/InnerRegular.lean#L66).
+**`ContinuousOn.aestronglyMeasurable_of_measure_ne_top`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Function/StronglyMeasurable/InnerRegular.lean#L66).
 
 > For a measure that is inner regular with respect to compact sets on sets of finite measure, a
 > function continuous on a measurable set `s` of finite measure is a.e. strongly measurable for the
@@ -59,7 +59,7 @@ lemma ContinuousOn.aestronglyMeasurable_of_measure_ne_top {f : α → β} {s : S
     AEStronglyMeasurable f (μ.restrict s)
 ```
 
-**`Continuous.aestronglyMeasurable_of_sigmaFinite`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Function/StronglyMeasurable/InnerRegular.lean#L86).
+**`Continuous.aestronglyMeasurable_of_sigmaFinite`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Function/StronglyMeasurable/InnerRegular.lean#L86).
 
 > A continuous function is a.e. strongly measurable for a σ-finite measure that is inner regular
 > with respect to compact sets on sets of finite measure. Compare `Continuous.aestronglyMeasurable`,
@@ -70,7 +70,7 @@ lemma Continuous.aestronglyMeasurable_of_sigmaFinite [SigmaFinite μ] {f : α �
     (hf : Continuous f) : AEStronglyMeasurable f μ
 ```
 
-**`MeasureTheory.AEFinStronglyMeasurable.aestronglyMeasurable_smul`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Function/StronglyMeasurable/InnerRegular.lean#L97).
+**`MeasureTheory.AEFinStronglyMeasurable.aestronglyMeasurable_smul`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Function/StronglyMeasurable/InnerRegular.lean#L97).
 
 > The product of an a.e. finitely strongly measurable function `f`, for instance an integrable
 > one, and a continuous function `g` is a.e. strongly measurable, for a measure that is inner regular
@@ -91,4 +91,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Function/StronglyMeasurable/InnerRegular.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Function/StronglyMeasurable/InnerRegular.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Function/StronglyMeasurable/InnerRegular.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Function/StronglyMeasurable/InnerRegular.lean)

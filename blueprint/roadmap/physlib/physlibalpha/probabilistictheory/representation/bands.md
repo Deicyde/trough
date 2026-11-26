@@ -8,7 +8,7 @@ proof: formalized
 
 # Bloch bands
 
-The module `PhyslibAlpha.ProbabilisticTheory.Representation.Bands`, [PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Representation.Bands`, [PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean): 5 declarations, 5 with a docstring.
 
 > The ordered eigenvalues of a Hermitian Bloch matrix are continuous functions on the Brillouin zone,
 > and they exhaust the spectrum of the translation-invariant operator.
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.Bands`, [PhyslibAlph
 
 ## A. Bands of Hermitian matrices
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.bandOf`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean#L60).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.bandOf`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean#L60).
 
 > The `k`-th largest eigenvalue of a Hermitian matrix: its `k`-th band.
 
@@ -45,7 +45,7 @@ def bandOf {N : ℕ} {M : Matrix (Fin N) (Fin N) ℂ} (hM : M.IsHermitian)
     (k : Fin (Fintype.card (Fin N))) : ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.abs_bandOf_sub_le`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean#L66).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.abs_bandOf_sub_le`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean#L66).
 
 > **Weyl's inequality for bands**: the `k`-th band of two Hermitian matrices differ by at most
 > the operator norm of the difference.
@@ -57,7 +57,7 @@ lemma abs_bandOf_sub_le {N : ℕ} {M S : Matrix (Fin N) (Fin N) ℂ} (hM : M.IsH
       ‖LinearMap.toContinuousLinearMap (Matrix.toEuclideanLin (M - S))‖
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.continuous_bandOf`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.continuous_bandOf`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean#L77).
 
 > **Bands are continuous**: the `k`-th band of a continuous family of Hermitian matrices is a
 > continuous function.
@@ -70,7 +70,7 @@ lemma continuous_bandOf {X : Type*} [TopologicalSpace X] {N : ℕ}
 
 ## B. Bands of a translation-invariant operator
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.isSelfAdjoint_blochHom`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean#L112).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.isSelfAdjoint_blochHom`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean#L112).
 
 > The operator of a Hermitian symbol is self-adjoint.
 
@@ -80,7 +80,7 @@ lemma isSelfAdjoint_blochHom
     (hb : ∀ χ, (b χ).IsHermitian) : IsSelfAdjoint (blochHom π ι hι b)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.exists_band_eq_of_mem_spectrum`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean#L123).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.exists_band_eq_of_mem_spectrum`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean#L123).
 
 > **Every point of the spectrum of the operator of a Hermitian symbol is a band value**: it is
 > the `k`-th band `ε_k(χ)` of some crystal momentum `χ`.
@@ -103,4 +103,4 @@ lemma exists_band_eq_of_mem_spectrum
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean)

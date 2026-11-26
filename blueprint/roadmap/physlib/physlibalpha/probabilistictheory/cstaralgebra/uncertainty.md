@@ -8,7 +8,7 @@ proof: formalized
 
 # Uncertainty relations
 
-The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.Uncertainty`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean): 36 declarations, 34 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.Uncertainty`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean): 36 declarations, 34 with a docstring.
 
 > Cauchy–Schwarz for states and the Robertson and Robertson–Schrödinger uncertainty relations.
 
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.Uncertainty`, [Physlib
 
 > * None.
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.smul_one_comm`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L83).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.smul_one_comm`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L83).
 
 > A real multiple of `1` commutes with everything: the algebraic fact making `commutator`
 > insensitive to shifting by a constant.
@@ -56,7 +56,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.Uncertainty`, [Physlib
 lemma smul_one_comm (r : ℝ) (x : A) : (r • (1 : A)) * x = x * (r • (1 : A))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.bracket_centered`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L89).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.bracket_centered`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L89).
 
 > The commutator only sees fluctuations, not means: centering `a` and `b` changes nothing about
 > how badly they fail to commute, since scalar multiples of `1` commute with everything and so
@@ -67,7 +67,7 @@ lemma bracket_centered (ω : 𝓢[ℂ, A]) (a b : Observable A) :
     ⁅centered ω a, centered ω b⁆ = ⁅a, b⁆
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.apply_centered_mul_centered`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L107).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.apply_centered_mul_centered`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L107).
 
 > The expectation of a raw product of two fluctuations splits into a real symmetric part
 > (covariance) and an imaginary antisymmetric part (the commutator's expectation). This is what
@@ -81,7 +81,7 @@ lemma apply_centered_mul_centered (ω : 𝓢[ℂ, A]) (a b : Observable A) :
 
 ## A. Cauchy–Schwarz
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.inner_gnsRep_gnsCyclicVector_gnsRep_gnsCyclicVector`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L130).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.inner_gnsRep_gnsCyclicVector_gnsRep_gnsCyclicVector`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L130).
 
 > `⟪π_ω(x) Ω_ω, π_ω(y) Ω_ω⟫ = ω(x⋆ y)`.
 
@@ -90,7 +90,7 @@ lemma inner_gnsRep_gnsCyclicVector_gnsRep_gnsCyclicVector (ω : 𝓢[ℂ, A]) (x
     ⟪ω.gnsRep x ω.gnsCyclicVector, ω.gnsRep y ω.gnsCyclicVector⟫_ℂ = ω (star x * y)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.gns_cauchy_schwarz`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L136).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.gns_cauchy_schwarz`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L136).
 
 > **Cauchy–Schwarz for a state**: `|ω(x⋆ y)|² ≤ ω(x⋆ x) ω(y⋆ y)`.
 
@@ -100,7 +100,7 @@ lemma gns_cauchy_schwarz (ω : 𝓢[ℂ, A]) (x y : A) :
       (ω (star x * x)).re * (ω (star y * y)).re
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.centered_gns_cauchy_schwarz`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L149).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.centered_gns_cauchy_schwarz`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L149).
 
 > No state can correlate two fluctuations more strongly than the product of their spreads
 > allows — the GNS-Cauchy–Schwarz seed of every uncertainty relation below, before splitting the
@@ -113,7 +113,7 @@ lemma centered_gns_cauchy_schwarz (ω : 𝓢[ℂ, A]) (a b : Observable A) :
       variance ω a * variance ω b
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.centered_cauchy_schwarz`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L159).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.centered_cauchy_schwarz`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L159).
 
 > The squared-magnitude form of `centered_gns_cauchy_schwarz`, ready to be split via
 > `apply_centered_mul_centered` into `robertson_schrodinger`.
@@ -126,7 +126,7 @@ lemma centered_cauchy_schwarz (ω : 𝓢[ℂ, A]) (a b : Observable A) :
 
 ## B. Uncertainty relations
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.robertson_schrodinger`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L174).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.robertson_schrodinger`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L174).
 
 > **The Robertson–Schrödinger uncertainty relation**, bounding the squared covariance plus the
 > squared expectation of the commutator by the product of the variances.
@@ -137,7 +137,7 @@ lemma robertson_schrodinger (ω : 𝓢[ℂ, A]) (a b : Observable A) :
       variance ω a * variance ω b
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.covariance_cauchy_schwarz`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L184).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.covariance_cauchy_schwarz`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L184).
 
 > Two observables cannot be more correlated than the product of their uncertainties allows —
 > the familiar `|correlation| ≤ σ_a · σ_b`, from dropping the commutator term in
@@ -148,7 +148,7 @@ lemma covariance_cauchy_schwarz (ω : 𝓢[ℂ, A]) (a b : Observable A) :
     covariance ω a b ^ 2 ≤ variance ω a * variance ω b
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.robertson`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L191).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.robertson`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L191).
 
 > Heisenberg's uncertainty relation: observables that fail to commute cannot both be measured
 > with arbitrary precision. For position and momentum, `⁅x, p⁆ = iℏ` gives `ΔxΔp ≥ ℏ/2`. Obtained
@@ -161,7 +161,7 @@ lemma robertson (ω : 𝓢[ℂ, A]) (a b : Observable A) :
 
 ## C. Equality in the uncertainty relations
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.centeredGramDefect`**, a def, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L199).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.centeredGramDefect`**, a def, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L199).
 
 > The Cauchy–Schwarz defect of two centered observables, the slack in the Robertson–Schrödinger
 > relation.
@@ -170,7 +170,7 @@ lemma robertson (ω : 𝓢[ℂ, A]) (a b : Observable A) :
 noncomputable def centeredGramDefect (ω : 𝓢[ℂ, A]) (a b : Observable A) : ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.centeredGramDefect_nonneg`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L204).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.centeredGramDefect_nonneg`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L204).
 
 > Positivity of the state makes the centered Gram defect nonnegative.
 
@@ -179,7 +179,7 @@ lemma centeredGramDefect_nonneg (ω : 𝓢[ℂ, A]) (a b : Observable A) :
     0 ≤ centeredGramDefect ω a b
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.normSq_centered_pairing`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L210).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.normSq_centered_pairing`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L210).
 
 > The squared centered pairing consists of squared covariance and squared
 > expectation of the observable Lie bracket.
@@ -190,7 +190,7 @@ lemma normSq_centered_pairing (ω : 𝓢[ℂ, A]) (a b : Observable A) :
       covariance ω a b ^ 2 + ω⟨⁅a, b⁆⟩ ^ 2
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.robertson_gap_decomposition`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L217).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.robertson_gap_decomposition`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L217).
 
 > The slack in the Robertson relation is the Cauchy–Schwarz defect plus the squared covariance.
 
@@ -200,7 +200,7 @@ lemma robertson_gap_decomposition (ω : 𝓢[ℂ, A]) (a b : Observable A) :
       centeredGramDefect ω a b + covariance ω a b ^ 2
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.robertson_schrodinger_eq_iff_gram_zero`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L225).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.robertson_schrodinger_eq_iff_gram_zero`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L225).
 
 > Robertson–Schrödinger saturates exactly when the centered Gram defect vanishes.
 
@@ -210,7 +210,7 @@ lemma robertson_schrodinger_eq_iff_gram_zero (ω : 𝓢[ℂ, A]) (a b : Observab
       centeredGramDefect ω a b = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.robertson_eq_iff_gram_zero_and_covariance_zero`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L234).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.robertson_eq_iff_gram_zero_and_covariance_zero`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L234).
 
 > Robertson saturates exactly when Cauchy–Schwarz saturates for the centered
 > pairing and the covariance is zero. Includes zero-variance cases without division.
@@ -224,7 +224,7 @@ lemma robertson_eq_iff_gram_zero_and_covariance_zero (ω : 𝓢[ℂ, A])
 
 ## D. Normalized variance bounds
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.normalized_variance_product`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L253).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.normalized_variance_product`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L253).
 
 > A raw commutator expectation of magnitude one yields the normalized variance
 > product bound for arbitrary states, with no extra positivity hypotheses.
@@ -235,7 +235,7 @@ lemma normalized_variance_product (ω : 𝓢[ℂ, A]) (a b : Observable A)
     1 ≤ 4 * variance ω a * variance ω b
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.variances_pos_of_normalized_pairing`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L261).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.variances_pos_of_normalized_pairing`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L261).
 
 > Normalization itself forces both variances to be positive.
 
@@ -247,7 +247,7 @@ lemma variances_pos_of_normalized_pairing (ω : 𝓢[ℂ, A]) (a b : Observable 
 
 ## E. A determinant bound for positive matrices
 
-**`Matrix.PosDef.normalizer`**, a def, [line 284](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L284).
+**`Matrix.PosDef.normalizer`**, a def, [line 284](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L284).
 
 > A matrix `T` with `T A Tᴴ = 1` for a positive definite `A`: the inverse square roots of the
 > eigenvalues of `A` times the adjoint of its eigenvector unitary.
@@ -256,14 +256,14 @@ lemma variances_pos_of_normalized_pairing (ω : 𝓢[ℂ, A]) (a b : Observable 
 noncomputable def PosDef.normalizer {A : Matrix n n ℂ} (hA : A.PosDef) : Matrix n n ℂ
 ```
 
-**`Matrix.PosDef.normalizer_mul_mul_conjTranspose`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L288).
+**`Matrix.PosDef.normalizer_mul_mul_conjTranspose`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L288).
 
 ```lean
 lemma PosDef.normalizer_mul_mul_conjTranspose {A : Matrix n n ℂ} (hA : A.PosDef) :
     hA.normalizer * A * hA.normalizerᴴ = 1
 ```
 
-**`Matrix.IsHermitian.abs_eigenvalues_le_one`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L319).
+**`Matrix.IsHermitian.abs_eigenvalues_le_one`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L319).
 
 > The eigenvalues of a hermitian `K` with `1 − K` and `1 + K` positive semidefinite lie in
 > `[−1, 1]`.
@@ -273,7 +273,7 @@ lemma IsHermitian.abs_eigenvalues_le_one {K : Matrix n n ℂ} (hK : K.IsHermitia
     (hm : (1 - K).PosSemidef) (hp : (1 + K).PosSemidef) (i : n) : |hK.eigenvalues i| ≤ 1
 ```
 
-**`Matrix.PosDef.norm_det_le_re_det`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L337).
+**`Matrix.PosDef.norm_det_le_re_det`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L337).
 
 > If `A` is positive definite, `B` hermitian and `A − B`, `A + B` positive semidefinite, then
 > `‖det B‖ ≤ re (det A)`: conjugating by the normalizer of `A` puts `B` between `−1` and `1`.
@@ -283,14 +283,14 @@ lemma PosDef.norm_det_le_re_det {A B : Matrix n n ℂ} (hA : A.PosDef) (hB : B.I
     (h₁ : (A - B).PosSemidef) (h₂ : (A + B).PosSemidef) : ‖B.det‖ ≤ (A.det).re
 ```
 
-**`Matrix.map_ofReal_add_smul_one`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L370).
+**`Matrix.map_ofReal_add_smul_one`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L370).
 
 ```lean
 lemma map_ofReal_add_smul_one (S : Matrix n n ℝ) (ε : ℝ) :
     (S + ε • 1).map ((↑) : ℝ → ℂ) = S.map ((↑) : ℝ → ℂ) + (ε : ℂ) • 1
 ```
 
-**`Matrix.abs_det_le_det_of_posSemidef`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L377).
+**`Matrix.abs_det_le_det_of_posSemidef`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L377).
 
 > For real `S` and `W`, if `S − iW` and `S + iW` are positive semidefinite then
 > `|det W| ≤ det S`.
@@ -304,7 +304,7 @@ lemma abs_det_le_det_of_posSemidef {S W : Matrix n n ℝ}
 
 ### E.1. The equality case
 
-**`Matrix.IsHermitian.mul_self_eq_one`**, a lemma, [line 420](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L420).
+**`Matrix.IsHermitian.mul_self_eq_one`**, a lemma, [line 420](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L420).
 
 > A hermitian `K` with eigenvalues in `[−1, 1]` and `‖det K‖ = 1` squares to the identity.
 
@@ -313,7 +313,7 @@ lemma IsHermitian.mul_self_eq_one {K : Matrix n n ℂ} (hK : K.IsHermitian)
     (hle : ∀ i, |hK.eigenvalues i| ≤ 1) (h1 : ‖K.det‖ = 1) : K * K = 1
 ```
 
-**`Matrix.PosDef.inv_eq_conjTranspose_normalizer_mul`**, a lemma, [line 450](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L450).
+**`Matrix.PosDef.inv_eq_conjTranspose_normalizer_mul`**, a lemma, [line 450](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L450).
 
 > The normalizer of a positive definite `A` is invertible, and `A⁻¹ = Tᴴ T`.
 
@@ -322,7 +322,7 @@ lemma PosDef.inv_eq_conjTranspose_normalizer_mul {A : Matrix n n ℂ} (hA : A.Po
     A⁻¹ = hA.normalizerᴴ * hA.normalizer
 ```
 
-**`Matrix.PosDef.add_mul_inv_mul_sub_eq_zero`**, a lemma, [line 466](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L466).
+**`Matrix.PosDef.add_mul_inv_mul_sub_eq_zero`**, a lemma, [line 466](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L466).
 
 > **The equality case.** If `A` is positive definite, `B` hermitian, `A ∓ B` positive
 > semidefinite and `‖det B‖ = re (det A)`, then `(A + B) A⁻¹ (A − B) = 0`: every eigenvalue of the
@@ -334,7 +334,7 @@ lemma PosDef.add_mul_inv_mul_sub_eq_zero {A B : Matrix n n ℂ} (hA : A.PosDef)
     (heq : ‖B.det‖ = (A.det).re) : (A + B) * A⁻¹ * (A - B) = 0
 ```
 
-**`Matrix.PosDef.card_le_finrank_ker_add_finrank_ker`**, a lemma, [line 512](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L512).
+**`Matrix.PosDef.card_le_finrank_ker_add_finrank_ker`**, a lemma, [line 512](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L512).
 
 > At equality the kernels of `A + B` and `A − B` together have dimension at least `n`: every
 > vector is `A⁻¹ (A − B) x / 2 + A⁻¹ (A + B) x / 2`.
@@ -347,7 +347,7 @@ lemma PosDef.card_le_finrank_ker_add_finrank_ker {A B : Matrix n n ℂ} (hA : A.
       Module.finrank ℂ (LinearMap.ker (A - B).mulVecLin)
 ```
 
-**`Matrix.finrank_ker_transpose`**, a lemma, [line 539](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L539).
+**`Matrix.finrank_ker_transpose`**, a lemma, [line 539](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L539).
 
 > `G` and `Gᵀ` have kernels of the same dimension.
 
@@ -357,7 +357,7 @@ lemma finrank_ker_transpose (G : Matrix n n ℂ) :
       Module.finrank ℂ (LinearMap.ker G.mulVecLin)
 ```
 
-**`Matrix.card_le_two_mul_finrank_ker`**, a lemma, [line 551](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L551).
+**`Matrix.card_le_two_mul_finrank_ker`**, a lemma, [line 551](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L551).
 
 > **Equality in Robertson's determinant relation.** Let `G = S + iW` be positive semidefinite
 > with `Gᵀ = S − iW`, for real `S` and `W`. If `|det W| = det S ≠ 0`, the kernel of `G` has at
@@ -373,7 +373,7 @@ lemma card_le_two_mul_finrank_ker {G : Matrix n n ℂ} {S W : Matrix n n ℝ} (h
 
 ## F. Several observables
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.covarianceMatrix`**, a def, [line 598](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L598).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.covarianceMatrix`**, a def, [line 598](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L598).
 
 > The covariance matrix `Σ_jk = cov(a_j, a_k)` of a family of observables.
 
@@ -381,7 +381,7 @@ lemma card_le_two_mul_finrank_ker {G : Matrix n n ℂ} {S W : Matrix n n ℝ} (h
 noncomputable def covarianceMatrix (ω : 𝓢[ℂ, A]) (a : ι → Observable A) : Matrix ι ι ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.bracketMatrix`**, a def, [line 602](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L602).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.bracketMatrix`**, a def, [line 602](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L602).
 
 > The matrix `Ω_jk = ω⟨⁅a_j, a_k⁆⟩` of expectations of brackets of a family of observables.
 
@@ -389,7 +389,7 @@ noncomputable def covarianceMatrix (ω : 𝓢[ℂ, A]) (a : ι → Observable A)
 noncomputable def bracketMatrix (ω : 𝓢[ℂ, A]) (a : ι → Observable A) : Matrix ι ι ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.centeredGNSVector`**, a def, [line 606](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L606).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.centeredGNSVector`**, a def, [line 606](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L606).
 
 > The GNS vectors of the centered observables.
 
@@ -397,7 +397,7 @@ noncomputable def bracketMatrix (ω : 𝓢[ℂ, A]) (a : ι → Observable A) : 
 noncomputable def centeredGNSVector (ω : 𝓢[ℂ, A]) (a : Observable A)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.gram_centeredGNSVector`**, a lemma, [line 610](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L610).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.gram_centeredGNSVector`**, a lemma, [line 610](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L610).
 
 > `Σ + iΩ` is the Gram matrix of the GNS vectors of the centered observables.
 
@@ -408,7 +408,7 @@ lemma gram_centeredGNSVector (ω : 𝓢[ℂ, A]) (a : ι → Observable A) :
         Complex.I • (bracketMatrix ω a).map ((↑) : ℝ → ℂ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.transpose_gram_centeredGNSVector`**, a lemma, [line 621](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L621).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.transpose_gram_centeredGNSVector`**, a lemma, [line 621](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L621).
 
 > `Σ − iΩ` is the transpose of the Gram matrix.
 
@@ -419,7 +419,7 @@ lemma transpose_gram_centeredGNSVector (ω : 𝓢[ℂ, A]) (a : ι → Observabl
         Complex.I • (bracketMatrix ω a).map ((↑) : ℝ → ℂ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.robertson_det`**, a lemma, [line 633](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L633).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.robertson_det`**, a lemma, [line 633](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean#L633).
 
 > **Robertson's uncertainty relation for several observables**: for every state and every
 > finite family of observables, `|det Ω| ≤ det Σ`.
@@ -437,4 +437,4 @@ lemma robertson_det [Fintype ι] [DecidableEq ι] (ω : 𝓢[ℂ, A]) (a : ι �
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean)
+- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean)

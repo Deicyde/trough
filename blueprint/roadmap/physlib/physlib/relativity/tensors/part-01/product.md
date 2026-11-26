@@ -8,7 +8,7 @@ proof: formalized
 
 # The product of tensors
 
-The module `Physlib.Relativity.Tensors.Product`, [Physlib/Relativity/Tensors/Product.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean): 31 declarations, 4 with a docstring.
+The module `Physlib.Relativity.Tensors.Product`, [Physlib/Relativity/Tensors/Product.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean): 31 declarations, 4 with a docstring.
 
 ## i. Overview
 
@@ -43,7 +43,7 @@ The module `Physlib.Relativity.Tensors.Product`, [Physlib/Relativity/Tensors/Pro
 
 ### B.2. The product of two pure tensors
 
-**`TensorSpecies.Tensor.Pure.prodP`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L109).
+**`TensorSpecies.Tensor.Pure.prodP`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L109).
 
 > Given two pure tensors `p1 : Pure S c` and `p2 : Pure S c`, `prodP p p2` is the tensor
 > product of those tensors returning an element in
@@ -56,7 +56,7 @@ def Pure.prodP {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
 
 ### B.3. The vectors making up product of two pure tensors
 
-**`TensorSpecies.Tensor.Pure.prodP_apply_castAdd`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L121).
+**`TensorSpecies.Tensor.Pure.prodP_apply_castAdd`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L121).
 
 ```lean
 lemma Pure.prodP_apply_castAdd {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
@@ -65,7 +65,7 @@ lemma Pure.prodP_apply_castAdd {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
     LinearEquiv.cast (R := k) (by simp) (p1 i)
 ```
 
-**`TensorSpecies.Tensor.Pure.prodP_apply_natAdd`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L128).
+**`TensorSpecies.Tensor.Pure.prodP_apply_natAdd`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L128).
 
 ```lean
 lemma Pure.prodP_apply_natAdd {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
@@ -74,7 +74,7 @@ lemma Pure.prodP_apply_natAdd {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
     LinearEquiv.cast (R := k) (by simp) (p2 i)
 ```
 
-**`TensorSpecies.Tensor.Pure.prodP_apply_finSumFinEquiv`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L134).
+**`TensorSpecies.Tensor.Pure.prodP_apply_finSumFinEquiv`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L134).
 
 ```lean
 lemma Pure.prodP_apply_finSumFinEquiv {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
@@ -87,7 +87,7 @@ lemma Pure.prodP_apply_finSumFinEquiv {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 �
 
 ### B.4. The product of two pure basis vectors
 
-**`TensorSpecies.Tensor.Pure.prodP_basisVector`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L155).
+**`TensorSpecies.Tensor.Pure.prodP_basisVector`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L155).
 
 ```lean
 lemma Pure.prodP_basisVector {n n1 : ℕ} {c : Fin n → C} {c1 : Fin n1 → C}
@@ -98,7 +98,7 @@ lemma Pure.prodP_basisVector {n n1 : ℕ} {c : Fin n → C} {c1 : Fin n1 → C}
 
 ### B.5. The basis components of the product of two pure tensors
 
-**`TensorSpecies.Tensor.Pure.prodP_component`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L182).
+**`TensorSpecies.Tensor.Pure.prodP_component`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L182).
 
 ```lean
 lemma Pure.prodP_component {n m : ℕ} {c : Fin n → C} {c1 : Fin m → C}
@@ -110,7 +110,7 @@ lemma Pure.prodP_component {n m : ℕ} {c : Fin n → C} {c1 : Fin m → C}
 
 ### B.6. Equivariance of the product of two pure tensors
 
-**`TensorSpecies.Tensor.Pure.prodP_equivariant`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L214).
+**`TensorSpecies.Tensor.Pure.prodP_equivariant`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L214).
 
 ```lean
 lemma Pure.prodP_equivariant {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
@@ -120,7 +120,7 @@ lemma Pure.prodP_equivariant {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
 
 ### B.7. Product with a tensor with no indices on the right
 
-**`TensorSpecies.Tensor.Pure.prodP_zero_right`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L242).
+**`TensorSpecies.Tensor.Pure.prodP_zero_right`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L242).
 
 ```lean
 lemma Pure.prodP_zero_right {n} {c : Fin n → C}
@@ -130,7 +130,7 @@ lemma Pure.prodP_zero_right {n} {c : Fin n → C}
 
 ### B.8. Swapping the order of the product of two pure tensors
 
-**`TensorSpecies.Tensor.Pure.prodP_swap`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L258).
+**`TensorSpecies.Tensor.Pure.prodP_swap`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L258).
 
 ```lean
 lemma Pure.prodP_swap {n n1} {c : Fin n → C} {c1 : Fin n1 → C} (p : Pure S c) (p1 : Pure S c1) :
@@ -139,7 +139,7 @@ lemma Pure.prodP_swap {n n1} {c : Fin n → C} {c1 : Fin n1 → C} (p : Pure S c
 
 ### B.9. Permuting the indices of the left tensor in a product
 
-**`TensorSpecies.Tensor.Pure.prodP_permP_left`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L274).
+**`TensorSpecies.Tensor.Pure.prodP_permP_left`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L274).
 
 ```lean
 lemma Pure.prodP_permP_left {n n'} {c : Fin n → C} {c' : Fin n' → C}
@@ -149,7 +149,7 @@ lemma Pure.prodP_permP_left {n n'} {c : Fin n → C} {c' : Fin n' → C}
 
 ### B.10. Permuting the indices of the right tensor in a product
 
-**`TensorSpecies.Tensor.Pure.prodP_permP_right`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L292).
+**`TensorSpecies.Tensor.Pure.prodP_permP_right`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L292).
 
 ```lean
 lemma Pure.prodP_permP_right {n n'} {c : Fin n → C} {c' : Fin n' → C}
@@ -159,7 +159,7 @@ lemma Pure.prodP_permP_right {n n'} {c : Fin n → C} {c' : Fin n' → C}
 
 ### B.11. Associativity of the product of three pure tensors in one direction
 
-**`TensorSpecies.Tensor.Pure.prodP_assoc`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L308).
+**`TensorSpecies.Tensor.Pure.prodP_assoc`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L308).
 
 ```lean
 lemma Pure.prodP_assoc {n n1 n2} {c : Fin n → C}
@@ -171,7 +171,7 @@ lemma Pure.prodP_assoc {n n1 n2} {c : Fin n → C}
 
 ### B.12. Associativity of the product of three pure tensors in the other direction
 
-**`TensorSpecies.Tensor.Pure.prodP_assoc'`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L328).
+**`TensorSpecies.Tensor.Pure.prodP_assoc'`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L328).
 
 ```lean
 lemma Pure.prodP_assoc' {n n1 n2} {c : Fin n → C}
@@ -182,7 +182,7 @@ lemma Pure.prodP_assoc' {n n1 n2} {c : Fin n → C}
 
 ### B.13. Linearity of the product
 
-**`TensorSpecies.Tensor.Pure.prodP_update_left`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L350).
+**`TensorSpecies.Tensor.Pure.prodP_update_left`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L350).
 
 ```lean
 lemma Pure.prodP_update_left {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
@@ -192,7 +192,7 @@ lemma Pure.prodP_update_left {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
       (LinearEquiv.cast (R := k) (by simp) x)
 ```
 
-**`TensorSpecies.Tensor.Pure.prodP_update_right`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L375).
+**`TensorSpecies.Tensor.Pure.prodP_update_right`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L375).
 
 ```lean
 lemma Pure.prodP_update_right {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
@@ -202,7 +202,7 @@ lemma Pure.prodP_update_right {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
       (LinearEquiv.cast (R := k) (by simp) x)
 ```
 
-**`TensorSpecies.Tensor.Pure.prodP_update_add_toTensor_left`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L399).
+**`TensorSpecies.Tensor.Pure.prodP_update_add_toTensor_left`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L399).
 
 ```lean
 lemma Pure.prodP_update_add_toTensor_left {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
@@ -216,7 +216,7 @@ lemma Pure.prodP_update_add_toTensor_left {n1 n2} {c : Fin n1 → C} {c1 : Fin n
 
 ### C.2. The product of two tensors
 
-**`TensorSpecies.Tensor.prodT`**, a def, [line 418](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L418).
+**`TensorSpecies.Tensor.prodT`**, a def, [line 418](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L418).
 
 > The tensor product of two tensors as a bi-linear map from
 > `S.Tensor c` and `S.Tensor c1` to `S.Tensor (Fin.append c c1)`.
@@ -228,7 +228,7 @@ noncomputable def prodT {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C} :
 
 ### C.3. The product of two pure tensors as a tensor
 
-**`TensorSpecies.Tensor.prodT_pure`**, a lemma, [line 443](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L443).
+**`TensorSpecies.Tensor.prodT_pure`**, a lemma, [line 443](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L443).
 
 ```lean
 lemma prodT_pure {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
@@ -238,7 +238,7 @@ lemma prodT_pure {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
 
 ### C.4. The product of basis vectors
 
-**`TensorSpecies.Tensor.prodT_basis`**, a lemma, [line 456](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L456).
+**`TensorSpecies.Tensor.prodT_basis`**, a lemma, [line 456](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L456).
 
 ```lean
 lemma prodT_basis {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
@@ -247,7 +247,7 @@ lemma prodT_basis {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
     (Pure.basisVector _ (ComponentIdx.prod.symm (b, b1))).toTensor
 ```
 
-**`TensorSpecies.Tensor.prodT_basis'`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L462).
+**`TensorSpecies.Tensor.prodT_basis'`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L462).
 
 ```lean
 lemma prodT_basis' {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
@@ -258,7 +258,7 @@ lemma prodT_basis' {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
 
 ### C.5. The product as an equivalence
 
-**`TensorSpecies.Tensor.tensorEquivProd`**, a def, [line 477](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L477).
+**`TensorSpecies.Tensor.tensorEquivProd`**, a def, [line 477](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L477).
 
 > The linear equivalence between `S.Tensor c ⊗[k] S.Tensor c1` and
 > `S.Tensor (Fin.append c c1)`.
@@ -270,7 +270,7 @@ noncomputable def tensorEquivProd {n n2 : ℕ} {c : Fin n → C} {c1 : Fin n2 �
 
 ### C.6. Rewriting the basis for the product in terms of the tensor product basis
 
-**`TensorSpecies.Tensor.basis_prod_eq`**, a lemma, [line 534](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L534).
+**`TensorSpecies.Tensor.basis_prod_eq`**, a lemma, [line 534](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L534).
 
 > Rewriting basis for the product in terms of the tensor product basis.
 
@@ -281,7 +281,7 @@ lemma basis_prod_eq {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C} :
     (ComponentIdx.prod.symm)).map tensorEquivProd
 ```
 
-**`TensorSpecies.Tensor.prodT_basis_repr_apply`**, a lemma, [line 547](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L547).
+**`TensorSpecies.Tensor.prodT_basis_repr_apply`**, a lemma, [line 547](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L547).
 
 ```lean
 lemma prodT_basis_repr_apply {n m : ℕ} {c : Fin n → C} {c1 : Fin m → C}
@@ -294,7 +294,7 @@ lemma prodT_basis_repr_apply {n m : ℕ} {c : Fin n → C} {c1 : Fin m → C}
 
 ### C.7. Equivariance of the product of two tensors
 
-**`TensorSpecies.Tensor.prodT_equivariant`**, a lemma, [line 578](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L578).
+**`TensorSpecies.Tensor.prodT_equivariant`**, a lemma, [line 578](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L578).
 
 ```lean
 lemma prodT_equivariant {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
@@ -304,7 +304,7 @@ lemma prodT_equivariant {n1 n2} {c : Fin n1 → C} {c1 : Fin n2 → C}
 
 ### C.8. The product with the default tensor with no indices on the right
 
-**`TensorSpecies.Tensor.prodT_default_right`**, a lemma, [line 595](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L595).
+**`TensorSpecies.Tensor.prodT_default_right`**, a lemma, [line 595](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L595).
 
 ```lean
 lemma prodT_default_right {n} {c : Fin n → C}
@@ -313,7 +313,7 @@ lemma prodT_default_right {n} {c : Fin n → C}
     permT id (IsReindexing.append_zero_right) t
 ```
 
-**`TensorSpecies.Tensor.prodT_zero_right`**, a lemma, [line 606](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L606).
+**`TensorSpecies.Tensor.prodT_zero_right`**, a lemma, [line 606](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L606).
 
 ```lean
 lemma prodT_zero_right {n} {c : Fin n → C}
@@ -323,7 +323,7 @@ lemma prodT_zero_right {n} {c : Fin n → C}
 
 ### C.9. Swapping the order of the product of two tensors
 
-**`TensorSpecies.Tensor.prodT_swap`**, a lemma, [line 623](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L623).
+**`TensorSpecies.Tensor.prodT_swap`**, a lemma, [line 623](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L623).
 
 ```lean
 lemma prodT_swap {n n1} {c : Fin n → C} {c1 : Fin n1 → C} (t : S.Tensor c) (t1 : S.Tensor c1) :
@@ -332,7 +332,7 @@ lemma prodT_swap {n n1} {c : Fin n → C} {c1 : Fin n1 → C} (t : S.Tensor c) (
 
 ### C.10. Permuting the indices of the left tensor in a product
 
-**`TensorSpecies.Tensor.prodT_permT_left`**, a lemma, [line 640](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L640).
+**`TensorSpecies.Tensor.prodT_permT_left`**, a lemma, [line 640](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L640).
 
 ```lean
 lemma prodT_permT_left {n n'} {c : Fin n → C} {c' : Fin n' → C}
@@ -342,7 +342,7 @@ lemma prodT_permT_left {n n'} {c : Fin n → C} {c' : Fin n' → C}
 
 ### C.11. Permuting the indices of the right tensor in a product
 
-**`TensorSpecies.Tensor.prodT_permT_right`**, a lemma, [line 658](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L658).
+**`TensorSpecies.Tensor.prodT_permT_right`**, a lemma, [line 658](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L658).
 
 ```lean
 lemma prodT_permT_right {n n'} {c : Fin n → C} {c' : Fin n' → C}
@@ -352,7 +352,7 @@ lemma prodT_permT_right {n n'} {c : Fin n → C} {c' : Fin n' → C}
 
 ### C.12. Associativity of the product of three tensors in one direction
 
-**`TensorSpecies.Tensor.prodT_assoc`**, a lemma, [line 675](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L675).
+**`TensorSpecies.Tensor.prodT_assoc`**, a lemma, [line 675](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L675).
 
 ```lean
 lemma prodT_assoc {n n1 n2} {c : Fin n → C}
@@ -362,7 +362,7 @@ lemma prodT_assoc {n n1 n2} {c : Fin n → C}
 
 ### C.13. Associativity of the product of three tensors in the other direction
 
-**`TensorSpecies.Tensor.prodT_assoc'`**, a lemma, [line 695](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean#L695).
+**`TensorSpecies.Tensor.prodT_assoc'`**, a lemma, [line 695](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean#L695).
 
 ```lean
 lemma prodT_assoc' {n n1 n2} {c : Fin n → C}
@@ -377,4 +377,4 @@ lemma prodT_assoc' {n n1 n2} {c : Fin n → C}
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/Product.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Product.lean)
+- [Physlib/Relativity/Tensors/Product.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Product.lean)

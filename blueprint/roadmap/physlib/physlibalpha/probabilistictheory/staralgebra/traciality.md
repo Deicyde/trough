@@ -8,7 +8,7 @@ proof: formalized
 
 # Tracial states and weights
 
-The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Traciality`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean): 6 declarations, 6 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Traciality`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean): 6 declarations, 6 with a docstring.
 
 > Tracial weights and tracial states.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Traciality`, [PhyslibAl
 
 ## A. Tracial weights
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsTracial`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean#L52).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsTracial`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean#L52).
 
 > A weight is tracial when its finite positive-linear extensions assign equal values to `x† x`
 > and `x x†`.
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Traciality`, [PhyslibAl
 def IsTracial (w : Weight A) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsTracial.toPositiveLinearMap_star_mul_self`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean#L62).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsTracial.toPositiveLinearMap_star_mul_self`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean#L62).
 
 > A finite tracial weight's real positive-linear extension has equal values on `x† x` and
 > `x x†`.
@@ -49,7 +49,7 @@ lemma toPositiveLinearMap_star_mul_self (ht : w.IsTracial) (hw : w.IsFinite) (x 
 
 ## B. Tracial states
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsTracial`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsTracial`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean#L77).
 
 > A state is tracial when it assigns equal values to `x† x` and `x x†`.
 
@@ -57,7 +57,7 @@ lemma toPositiveLinearMap_star_mul_self (ht : w.IsTracial) (hw : w.IsFinite) (x 
 def IsTracial (s : 𝓢[ℝ, A]) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Weight.IsState.isTracial`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean#L86).
+**`PhyslibAlpha.ProbabilisticTheory.Weight.IsState.isTracial`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean#L86).
 
 > The state of a tracial weight assigns equal values to `x†x` and `xx†`.
 
@@ -68,7 +68,7 @@ lemma isTracial (hw : w.IsState) (ht : w.IsTracial) :
 
 ## C. Tracial functionals
 
-**`PhyslibAlpha.ProbabilisticTheory.LinearMap.IsTracial`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean#L101).
+**`PhyslibAlpha.ProbabilisticTheory.LinearMap.IsTracial`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean#L101).
 
 > A complex-linear functional is tracial when it is invariant under cyclic permutations.
 
@@ -76,7 +76,7 @@ lemma isTracial (hw : w.IsState) (ht : w.IsTracial) :
 def IsTracial (f : A →ₗ[ℂ] ℂ) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.LinearMap.isTracial_iff_star_mul_self_eq_mul_star_self`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean#L105).
+**`PhyslibAlpha.ProbabilisticTheory.LinearMap.isTracial_iff_star_mul_self_eq_mul_star_self`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean#L105).
 
 > Equality on `x†x` and `xx†` characterizes tracial complex-linear functionals.
 
@@ -91,4 +91,4 @@ lemma isTracial_iff_star_mul_self_eq_mul_star_self (f : A →ₗ[ℂ] ℂ) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean)
+- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean)

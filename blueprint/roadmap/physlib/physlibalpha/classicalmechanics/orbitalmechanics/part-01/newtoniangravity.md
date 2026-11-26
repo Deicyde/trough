@@ -8,7 +8,7 @@ proof: formalized
 
 # Pairwise Newtonian gravitation
 
-The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.NewtonianGravity`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean): 10 declarations, 10 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.NewtonianGravity`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean): 10 declarations, 10 with a docstring.
 
 > Pair forces for a finite collection of point particles in a reference frame.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.NewtonianGravity`, 
 
 ## A. Gravitational forces and acceleration
 
-**`ClassicalMechanics.ReferenceFrame.pairGravityAcceleration`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L59).
+**`ClassicalMechanics.ReferenceFrame.pairGravityAcceleration`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L59).
 
 > The contribution of the source to the target's gravitational acceleration.
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.NewtonianGravity`, 
 def pairGravityAcceleration (source target : particles) (t : ℝ) : frame.Vector
 ```
 
-**`ClassicalMechanics.ReferenceFrame.gravityAcceleration`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L64).
+**`ClassicalMechanics.ReferenceFrame.gravityAcceleration`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L64).
 
 > The target's gravitational acceleration from all other particle occurrences.
 
@@ -52,7 +52,7 @@ def pairGravityAcceleration (source target : particles) (t : ℝ) : frame.Vector
 def gravityAcceleration (target : particles) (t : ℝ) : frame.Vector
 ```
 
-**`ClassicalMechanics.ReferenceFrame.pairGravity`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L69).
+**`ClassicalMechanics.ReferenceFrame.pairGravity`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L69).
 
 > The Newtonian force exerted by one particle on another in the given frame.
 
@@ -61,7 +61,7 @@ def pairGravity (source target : particles) (hne : source ≠ target) :
     frame.InternalForce particles
 ```
 
-**`ClassicalMechanics.ReferenceFrame.pairGravity_reverse`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L77).
+**`ClassicalMechanics.ReferenceFrame.pairGravity_reverse`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L77).
 
 > Exchanging source and target gives the equal and opposite force.
 
@@ -71,7 +71,7 @@ lemma pairGravity_reverse (source target : particles) (hne : source ≠ target) 
       pairGravity G particles target source hne.symm
 ```
 
-**`ClassicalMechanics.ReferenceFrame.GravityPairs`**, an abbrev, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L96).
+**`ClassicalMechanics.ReferenceFrame.GravityPairs`**, an abbrev, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L96).
 
 > All ordered pairs of distinct particle occurrences, grouped by target.
 
@@ -79,7 +79,7 @@ lemma pairGravity_reverse (source target : particles) (hne : source ≠ target) 
 abbrev GravityPairs
 ```
 
-**`ClassicalMechanics.ReferenceFrame.gravityForces`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L99).
+**`ClassicalMechanics.ReferenceFrame.gravityForces`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L99).
 
 > The internal gravitational forces, with each ordered pair occurring once.
 
@@ -87,7 +87,7 @@ abbrev GravityPairs
 def gravityForces : Multiset (frame.InternalForce particles)
 ```
 
-**`ClassicalMechanics.ReferenceFrame.gravityForces_reverse`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L104).
+**`ClassicalMechanics.ReferenceFrame.gravityForces_reverse`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L104).
 
 > Newton's third law for the collection of pairwise gravitational forces.
 
@@ -96,7 +96,7 @@ lemma gravityForces_reverse :
     (gravityForces G particles).map InternalForce.reverse = gravityForces G particles
 ```
 
-**`ClassicalMechanics.ReferenceFrame.netForce_gravity`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L120).
+**`ClassicalMechanics.ReferenceFrame.netForce_gravity`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L120).
 
 > The net internal force is the target mass times its gravitational acceleration.
 
@@ -106,14 +106,13 @@ lemma netForce_gravity (target : particles) (t : ℝ) :
       target.1.mass • gravityAcceleration G particles target t
 ```
 
-**`ClassicalMechanics.ReferenceFrame.acceleration_eq_gravity_iff`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L145).
+**`ClassicalMechanics.ReferenceFrame.acceleration_eq_gravity_iff`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L145).
 
 > In an inertial frame, the gravitational acceleration equation is equivalent to Newton's
 > second law for the constructed internal forces.
 
 ```lean
-lemma acceleration_eq_gravity_iff [Fact frame.IsInertial]
-    (target : particles) (t : ℝ) :
+lemma acceleration_eq_gravity_iff (target : particles) (t : ℝ) :
     target.1.acceleration t = gravityAcceleration G particles target t ↔
       netForce target (gravityForces G particles) 0 t =
         target.1.mass • target.1.acceleration t
@@ -121,7 +120,7 @@ lemma acceleration_eq_gravity_iff [Fact frame.IsInertial]
 
 ## B. Newtonian systems under gravity
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.ofGravity`**, a def, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L170).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.ofGravity`**, a def, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean#L169).
 
 > Bundle particles that follow the gravitational equations of motion as a Newtonian system
 > with no external forces. The inverse-square law describes the motion at collision-free times.
@@ -135,8 +134,8 @@ def ofGravity (G : ℝ) (particles : Multiset frame.Particle)
 
 ## Depends on
 
-- [Newtonian point-particle systems](../../../../physlib/classicalmechanics/pointparticle/newtoniansystem-basic.md)
+- [Newtonian point-particle systems](../../../../physlib/classicalmechanics/pointparticle/newtoniansystem/basic.md)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean)
+- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean)

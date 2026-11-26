@@ -8,7 +8,7 @@ proof: formalized
 
 # Variations of curves
 
-The module `Physlib.ClassicalMechanics.ConfigurationSpace.Variation`, [Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean): 4 declarations, 4 with a docstring.
+The module `Physlib.ClassicalMechanics.ConfigurationSpace.Variation`, [Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean): 4 declarations, 4 with a docstring.
 
 > Smooth variations of a curve in a configuration space fixing the endpoints.
 
@@ -29,7 +29,7 @@ The module `Physlib.ClassicalMechanics.ConfigurationSpace.Variation`, [Physlib/C
 
 ## A. Variations
 
-**`ClassicalMechanics.Variation`**, a structure, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean#L55).
+**`ClassicalMechanics.Variation`**, a structure, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean#L55).
 
 > A smooth variation of `γ` on `[t₀, t₁]` fixing `γ t₀` and `γ t₁`.
 
@@ -45,7 +45,7 @@ structure Variation (γ : Time → M) (t₀ t₁ : Time) where
   apply_right : ∀ s, toFun (s, t₁) = γ t₁
 ```
 
-**`ClassicalMechanics.Variation.nonempty`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean#L69).
+**`ClassicalMechanics.Variation.nonempty`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean#L69).
 
 > A smooth curve admits the constant variation.
 
@@ -56,7 +56,7 @@ lemma nonempty {γ : Time → M} {t₀ t₁ : Time} (hγ : ContMDiff 𝓘(ℝ, �
 
 ## B. Variations in a normed space
 
-**`ClassicalMechanics.Variation.contDiff_comp_vadd`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean#L78).
+**`ClassicalMechanics.Variation.contDiff_comp_vadd`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean#L78).
 
 > `(s, τ) ↦ h (s, τ +ᵥ t₀)` is smooth.
 
@@ -66,7 +66,7 @@ lemma contDiff_comp_vadd {γ : Time → E} {t₀ t₁ : Time}
     ContDiff ℝ ∞ (fun p : ℝ × ℝ ↦ h.toFun (p.1, p.2 +ᵥ t₀))
 ```
 
-**`ClassicalMechanics.Variation.exists_bump`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean#L90).
+**`ClassicalMechanics.Variation.exists_bump`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean#L90).
 
 > For a smooth curve `γ`, smooth `ψ` supported in `(0, t₁ -ᵥ t₀)` and `w : E`, there exists a
 > variation `h` of `γ` with `h (s, τ +ᵥ t₀) = γ (τ +ᵥ t₀) + s • ψ τ • w`.
@@ -89,4 +89,4 @@ lemma exists_bump {γ : Time → E} {t₀ t₁ : Time} (hγ : ContMDiff 𝓘(ℝ
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean)
+- [Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean)

@@ -6,15 +6,15 @@ statement: formalized
 proof: formalized
 ---
 
-# Unbounded operators (OneDimension/Unbounded)
+# Unbounded operators (Unbounded)
 
-The module `Physlib.QuantumMechanics.Operators.OneDimension.Unbounded`, [Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean): 7 declarations (1 instance with no name), 4 with a docstring.
+The module `Physlib.QuantumMechanics.Operators.OneDimension.Unbounded`, [Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean): 7 declarations (1 instance with no name), 4 with a docstring.
 
 ## Note
 
 > …
 
-**`QuantumMechanics.OneDimension.UnboundedOperator`**, a def, [line 32](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean#L32).
+**`QuantumMechanics.OneDimension.UnboundedOperator`**, a def, [line 32](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean#L32).
 
 > An unbounded operator on the one-dimensional Hilbert space,
 > corresponds to a subobject `ι : S →L[ℂ] HilbertSpace` of the Hilbert
@@ -26,13 +26,13 @@ def UnboundedOperator {S : Type} [AddCommGroup S] [Module ℂ S]
     (_ : Function.Injective ι)
 ```
 
-**An instance with no name**, [line 42](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean#L42).
+**An instance with no name**, [line 42](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean#L42).
 
 ```lean
 instance : CoeFun (UnboundedOperator ι hι) (fun _ => S → HilbertSpace)
 ```
 
-**`QuantumMechanics.OneDimension.UnboundedOperator.ofSelfCLM`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean#L46).
+**`QuantumMechanics.OneDimension.UnboundedOperator.ofSelfCLM`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean#L46).
 
 > An unbounded operator created from a continuous linear map ` S →L[ℂ] S`.
 
@@ -40,14 +40,14 @@ instance : CoeFun (UnboundedOperator ι hι) (fun _ => S → HilbertSpace)
 def ofSelfCLM (Op : S →L[ℂ] S) : UnboundedOperator ι hι
 ```
 
-**`QuantumMechanics.OneDimension.UnboundedOperator.ofSelfCLM_apply`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean#L49).
+**`QuantumMechanics.OneDimension.UnboundedOperator.ofSelfCLM_apply`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean#L49).
 
 ```lean
 lemma ofSelfCLM_apply (Op : S →L[ℂ] S) (ψ : S) :
     ofSelfCLM (hι := hι) Op ψ = ι (Op ψ)
 ```
 
-**`QuantumMechanics.OneDimension.UnboundedOperator.IsGeneralizedEigenvector`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean#L54).
+**`QuantumMechanics.OneDimension.UnboundedOperator.IsGeneralizedEigenvector`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean#L54).
 
 > A map `F : S →L[ℂ] ℂ` is a generalized eigenvector of an unbounded operator `U`
 > on `S` if there is an eigenvalue `c` such that for all `ψ`, `F (U ψ) = c ⬝ F ψ`
@@ -56,7 +56,7 @@ lemma ofSelfCLM_apply (Op : S →L[ℂ] S) (ψ : S) :
 def IsGeneralizedEigenvector (F : S →L[ℂ] ℂ) (c : ℂ) : Prop
 ```
 
-**`QuantumMechanics.OneDimension.UnboundedOperator.isGeneralizedEigenvector_ofSelfCLM_iff`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean#L57).
+**`QuantumMechanics.OneDimension.UnboundedOperator.isGeneralizedEigenvector_ofSelfCLM_iff`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean#L57).
 
 ```lean
 lemma isGeneralizedEigenvector_ofSelfCLM_iff {Op : S →L[ℂ] S}
@@ -65,7 +65,7 @@ lemma isGeneralizedEigenvector_ofSelfCLM_iff {Op : S →L[ℂ] S}
     ∀ ψ : S, F (Op ψ) = c • F ψ
 ```
 
-**`QuantumMechanics.OneDimension.UnboundedOperator.IsSymmetric`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean#L70).
+**`QuantumMechanics.OneDimension.UnboundedOperator.IsSymmetric`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean#L70).
 
 > The condition for an unbounded operator to be *symmetric* (equivalently, formally
 > self-adjoint): `⟪U ψ1, ι ψ2⟫ = ⟪ι ψ1, U ψ2⟫` for all `ψ1 ψ2`. This is the Hermitian
@@ -83,4 +83,4 @@ def IsSymmetric : Prop
 
 ## Sources
 
-- [Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean)
+- [Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The two Hohmann velocity impulses
 
-The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Impulses`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean): 20 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Impulses`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean): 20 declarations, 5 with a docstring.
 
 > The velocity jumps match the transfer ellipse to the circles.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Im
 
 ## A. Vector jumps and their magnitudes
 
-**`ClassicalMechanics.HohmannTransfer.deltaV₁`**, a def, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L44).
+**`ClassicalMechanics.HohmannTransfer.deltaV₁`**, a def, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L44).
 
 > The magnitude of the departure velocity impulse.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Im
 def deltaV₁ (p : Parameters) : ℝ
 ```
 
-**`ClassicalMechanics.HohmannTransfer.deltaV₂`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L46).
+**`ClassicalMechanics.HohmannTransfer.deltaV₂`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L46).
 
 > The magnitude of the arrival velocity impulse.
 
@@ -44,7 +44,7 @@ def deltaV₁ (p : Parameters) : ℝ
 def deltaV₂ (p : Parameters) : ℝ
 ```
 
-**`ClassicalMechanics.HohmannTransfer.totalDeltaV`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L48).
+**`ClassicalMechanics.HohmannTransfer.totalDeltaV`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L48).
 
 > The sum of the departure and arrival impulse magnitudes.
 
@@ -52,7 +52,7 @@ def deltaV₂ (p : Parameters) : ℝ
 def totalDeltaV (p : Parameters) : ℝ
 ```
 
-**`ClassicalMechanics.HohmannTransfer.entryImpulse`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L50).
+**`ClassicalMechanics.HohmannTransfer.entryImpulse`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L50).
 
 > The change in velocity from the inner circle to the ellipse.
 
@@ -60,7 +60,7 @@ def totalDeltaV (p : Parameters) : ℝ
 def entryImpulse (p : Parameters) : ℂ
 ```
 
-**`ClassicalMechanics.HohmannTransfer.exitImpulse`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L53).
+**`ClassicalMechanics.HohmannTransfer.exitImpulse`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L53).
 
 > The change in velocity from the ellipse to the outer circle.
 
@@ -68,7 +68,7 @@ def entryImpulse (p : Parameters) : ℂ
 def exitImpulse (p : Parameters) : ℂ
 ```
 
-**`ClassicalMechanics.HohmannTransfer.peri_excess_sq`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L56).
+**`ClassicalMechanics.HohmannTransfer.peri_excess_sq`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L56).
 
 ```lean
 lemma peri_excess_sq (p : Parameters) :
@@ -76,7 +76,7 @@ lemma peri_excess_sq (p : Parameters) :
       p.mu*(p.r₂-p.r₁)/(p.r₁*(p.r₁+p.r₂))
 ```
 
-**`ClassicalMechanics.HohmannTransfer.apo_deficit_sq`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L62).
+**`ClassicalMechanics.HohmannTransfer.apo_deficit_sq`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L62).
 
 ```lean
 lemma apo_deficit_sq (p : Parameters) :
@@ -84,39 +84,39 @@ lemma apo_deficit_sq (p : Parameters) :
       p.mu*(p.r₂-p.r₁)/(p.r₂*(p.r₁+p.r₂))
 ```
 
-**`ClassicalMechanics.HohmannTransfer.deltaV₁_pos`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L68).
+**`ClassicalMechanics.HohmannTransfer.deltaV₁_pos`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L68).
 
 ```lean
 lemma deltaV₁_pos (p : Parameters) : 0 < deltaV₁ p
 ```
 
-**`ClassicalMechanics.HohmannTransfer.deltaV₂_pos`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L76).
+**`ClassicalMechanics.HohmannTransfer.deltaV₂_pos`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L76).
 
 ```lean
 lemma deltaV₂_pos (p : Parameters) : 0 < deltaV₂ p
 ```
 
-**`ClassicalMechanics.HohmannTransfer.totalDeltaV_pos`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L84).
+**`ClassicalMechanics.HohmannTransfer.totalDeltaV_pos`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L84).
 
 ```lean
 lemma totalDeltaV_pos (p : Parameters) : 0 < totalDeltaV p
 ```
 
-**`ClassicalMechanics.HohmannTransfer.periSpeed_factorized`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L86).
+**`ClassicalMechanics.HohmannTransfer.periSpeed_factorized`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L86).
 
 ```lean
 lemma periSpeed_factorized (p : Parameters) :
     periSpeed p = circularSpeed p.mu p.r₁ * Real.sqrt (2*p.r₂/(p.r₁+p.r₂))
 ```
 
-**`ClassicalMechanics.HohmannTransfer.apoSpeed_factorized`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L100).
+**`ClassicalMechanics.HohmannTransfer.apoSpeed_factorized`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L100).
 
 ```lean
 lemma apoSpeed_factorized (p : Parameters) :
     apoSpeed p = circularSpeed p.mu p.r₂ * Real.sqrt (2*p.r₁/(p.r₁+p.r₂))
 ```
 
-**`ClassicalMechanics.HohmannTransfer.deltaV₁_formula`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L114).
+**`ClassicalMechanics.HohmannTransfer.deltaV₁_formula`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L114).
 
 ```lean
 lemma deltaV₁_formula (p : Parameters) :
@@ -124,7 +124,7 @@ lemma deltaV₁_formula (p : Parameters) :
       (Real.sqrt (2*p.r₂/(p.r₁+p.r₂))-1)
 ```
 
-**`ClassicalMechanics.HohmannTransfer.deltaV₂_formula`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L120).
+**`ClassicalMechanics.HohmannTransfer.deltaV₂_formula`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L120).
 
 ```lean
 lemma deltaV₂_formula (p : Parameters) :
@@ -132,38 +132,38 @@ lemma deltaV₂_formula (p : Parameters) :
       (1-Real.sqrt (2*p.r₁/(p.r₁+p.r₂)))
 ```
 
-**`ClassicalMechanics.HohmannTransfer.entryImpulse_eq`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L126).
+**`ClassicalMechanics.HohmannTransfer.entryImpulse_eq`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L126).
 
 ```lean
 lemma entryImpulse_eq (p : Parameters) : entryImpulse p = pack 0 (deltaV₁ p)
 ```
 
-**`ClassicalMechanics.HohmannTransfer.exitImpulse_eq`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L129).
+**`ClassicalMechanics.HohmannTransfer.exitImpulse_eq`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L129).
 
 ```lean
 lemma exitImpulse_eq (p : Parameters) : exitImpulse p = pack 0 (-deltaV₂ p)
 ```
 
-**`ClassicalMechanics.HohmannTransfer.entryImpulse_norm`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L135).
+**`ClassicalMechanics.HohmannTransfer.entryImpulse_norm`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L135).
 
 ```lean
 lemma entryImpulse_norm (p : Parameters) : ‖entryImpulse p‖ = deltaV₁ p
 ```
 
-**`ClassicalMechanics.HohmannTransfer.exitImpulse_norm`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L137).
+**`ClassicalMechanics.HohmannTransfer.exitImpulse_norm`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L137).
 
 ```lean
 lemma exitImpulse_norm (p : Parameters) : ‖exitImpulse p‖ = deltaV₂ p
 ```
 
-**`ClassicalMechanics.HohmannTransfer.totalDeltaV_eq_sum_norms`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L139).
+**`ClassicalMechanics.HohmannTransfer.totalDeltaV_eq_sum_norms`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L139).
 
 ```lean
 lemma totalDeltaV_eq_sum_norms (p : Parameters) :
     totalDeltaV p = ‖entryImpulse p‖ + ‖exitImpulse p‖
 ```
 
-**`ClassicalMechanics.HohmannTransfer.impulses_tangential`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L143).
+**`ClassicalMechanics.HohmannTransfer.impulses_tangential`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean#L143).
 
 ```lean
 lemma impulses_tangential (p : Parameters) :
@@ -180,4 +180,4 @@ lemma impulses_tangential (p : Parameters) :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean)
+- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean)

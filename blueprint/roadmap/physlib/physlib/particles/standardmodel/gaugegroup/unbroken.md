@@ -8,7 +8,7 @@ proof: formalized
 
 # The unbroken gauge group
 
-The module `Physlib.Particles.StandardModel.GaugeGroup.Unbroken`, [Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean): 5 declarations, 2 with a docstring.
+The module `Physlib.Particles.StandardModel.GaugeGroup.Unbroken`, [Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean): 5 declarations, 2 with a docstring.
 
 > We define the gauge group `SU(3) × U(1)_EM` left unbroken by the Higgs vacuum.
 
@@ -28,7 +28,7 @@ The module `Physlib.Particles.StandardModel.GaugeGroup.Unbroken`, [Physlib/Parti
 
 ## A. The unbroken gauge group
 
-**`StandardModel.UnbrokenGaugeGroupI`**, an abbrev, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean#L49).
+**`StandardModel.UnbrokenGaugeGroupI`**, an abbrev, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean#L49).
 
 > The gauge group `SU(3) × U(1)_EM` left unbroken by the Higgs vacuum. As for `GaugeGroupI`,
 > the `I` indicates that no discrete quotient is taken.
@@ -37,7 +37,7 @@ The module `Physlib.Particles.StandardModel.GaugeGroup.Unbroken`, [Physlib/Parti
 abbrev UnbrokenGaugeGroupI : Type
 ```
 
-**`StandardModel.UnbrokenGaugeGroupI.incl`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean#L54).
+**`StandardModel.UnbrokenGaugeGroupI.incl`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean#L54).
 
 > The inclusion `(h, u) ↦ (h, diag(u³, ū³), u)` of `SU(3) × U(1)_EM` into `GaugeGroupI`.
 
@@ -45,20 +45,20 @@ abbrev UnbrokenGaugeGroupI : Type
 noncomputable def incl : UnbrokenGaugeGroupI →* GaugeGroupI
 ```
 
-**`StandardModel.UnbrokenGaugeGroupI.incl_toSU3`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean#L61).
+**`StandardModel.UnbrokenGaugeGroupI.incl_toSU3`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean#L61).
 
 ```lean
 lemma incl_toSU3 (p : UnbrokenGaugeGroupI) : GaugeGroupI.toSU3 (incl p) = p.1
 ```
 
-**`StandardModel.UnbrokenGaugeGroupI.incl_toSU2`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean#L64).
+**`StandardModel.UnbrokenGaugeGroupI.incl_toSU2`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean#L64).
 
 ```lean
 lemma incl_toSU2 (p : UnbrokenGaugeGroupI) :
     GaugeGroupI.toSU2 (incl p) = GaugeGroupI.diagSU2 (p.2 ^ 3)
 ```
 
-**`StandardModel.UnbrokenGaugeGroupI.incl_toU1`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean#L68).
+**`StandardModel.UnbrokenGaugeGroupI.incl_toU1`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean#L68).
 
 ```lean
 lemma incl_toU1 (p : UnbrokenGaugeGroupI) : GaugeGroupI.toU1 (incl p) = p.2
@@ -70,4 +70,4 @@ lemma incl_toU1 (p : UnbrokenGaugeGroupI) : GaugeGroupI.toU1 (incl p) = p.2
 
 ## Sources
 
-- [Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean)
+- [Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean)

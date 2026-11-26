@@ -8,7 +8,7 @@ proof: formalized
 
 # Gårding vectors
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.GardingVectors`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean): 22 declarations, 16 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.GardingVectors`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean): 22 declarations, 16 with a docstring.
 
 > Gårding vectors: heat-kernel smoothings along a unitary group, dense in the domain.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.Ga
 
 > * None.
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L62).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L62).
 
 > The heat kernel `(π ε)^(-1/2) exp(-t² / ε)`, a Gaussian of variance `ε / 2` with integral `1`.
 
@@ -39,20 +39,20 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.Ga
 def gaussianKernel (ε t : ℝ) : ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_pos`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L64).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_pos`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L64).
 
 ```lean
 lemma gaussianKernel_pos {ε : ℝ} (hε : 0 < ε) (t : ℝ) : 0 < gaussianKernel ε t
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_integral`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L69).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_integral`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L69).
 
 ```lean
 lemma gaussianKernel_integral {ε : ℝ} (hε : 0 < ε) :
     ∫ t : ℝ, gaussianKernel ε t = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_smul_integrable`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L82).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_smul_integrable`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L82).
 
 > The heat kernel is integrable against any bounded continuous function, in particular against
 > `t ↦ U t ψ` (bounded because `U t` is unitary, `‖U t ψ‖ = ‖ψ‖`).
@@ -64,7 +64,7 @@ lemma gaussianKernel_smul_integrable (hUunit : ∀ t, U t ∈ unitary (H →L[�
     Integrable (fun t : ℝ => (gaussianKernel ε t : ℂ) • U t ψ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.analyticGardingVector`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L106).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.analyticGardingVector`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L106).
 
 > The Gårding vector of `ψ` mollified against the heat kernel of width `ε`.
 
@@ -72,7 +72,7 @@ lemma gaussianKernel_smul_integrable (hUunit : ∀ t, U t ∈ unitary (H →L[�
 def analyticGardingVector (ε : ℝ) (ψ : H) : H
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.standardGaussianKernel`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L109).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.standardGaussianKernel`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L109).
 
 > The heat kernel with `ε = 1`.
 
@@ -80,32 +80,32 @@ def analyticGardingVector (ε : ℝ) (ψ : H) : H
 def standardGaussianKernel (x : ℝ) : ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.standardGaussianKernel_pos`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L111).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.standardGaussianKernel_pos`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L111).
 
 ```lean
 lemma standardGaussianKernel_pos (x : ℝ) : 0 < standardGaussianKernel x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.standardGaussianKernel_eq_gaussianKernel_one`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L114).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.standardGaussianKernel_eq_gaussianKernel_one`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L114).
 
 ```lean
 lemma standardGaussianKernel_eq_gaussianKernel_one :
     standardGaussianKernel = gaussianKernel 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.standardGaussianKernel_integral`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L118).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.standardGaussianKernel_integral`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L118).
 
 ```lean
 lemma standardGaussianKernel_integral : ∫ x : ℝ, standardGaussianKernel x = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.standardGaussianKernel_integrable`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L121).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.standardGaussianKernel_integrable`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L121).
 
 ```lean
 lemma standardGaussianKernel_integrable : Integrable standardGaussianKernel
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_scale_eq_standardGaussianKernel`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L133).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_scale_eq_standardGaussianKernel`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L133).
 
 > The rescaling identity at the level of the kernel itself: `√ε · gaussianKernel ε (√ε x) =
 > standardGaussianKernel x`, i.e. the `ε`-dependence exactly cancels once the extra `√ε` from the
@@ -116,7 +116,7 @@ lemma gaussianKernel_scale_eq_standardGaussianKernel {ε : ℝ} (hε : 0 < ε) (
     Real.sqrt ε * gaussianKernel ε (Real.sqrt ε * x) = standardGaussianKernel x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.analyticGardingVector_eq_standardGaussian`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L147).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.analyticGardingVector_eq_standardGaussian`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L147).
 
 > The Gårding vector after the substitution `t = √ε x`.
 
@@ -126,7 +126,7 @@ lemma analyticGardingVector_eq_standardGaussian {ε : ℝ} (hε : 0 < ε) (ψ : 
       ∫ x : ℝ, (standardGaussianKernel x : ℂ) • U (Real.sqrt ε * x) ψ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.analyticGardingVector_tendsto`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L172).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.analyticGardingVector_tendsto`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L172).
 
 > **Gårding vectors converge to `ψ` as `ε → 0`**, by dominated convergence after the substitution
 > `t = √ε x`.
@@ -142,7 +142,7 @@ lemma analyticGardingVector_tendsto (hU0 : U 0 = 1)
 > Translating a Gårding vector by `U s` translates the kernel. Differentiating under the integral in
 > `s` gives the action of the candidate generator.
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.analyticGardingVector_translate`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L227).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.analyticGardingVector_translate`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L227).
 
 > Translating a Gårding vector by `U s` translates the kernel by `s`.
 
@@ -152,7 +152,7 @@ lemma analyticGardingVector_translate (hUunit : ∀ t, U t ∈ unitary (H →L[�
     U s (analyticGardingVector U ε ψ) = ∫ u : ℝ, (gaussianKernel ε (u - s) : ℂ) • U u ψ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_hasDerivAt`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L247).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_hasDerivAt`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L247).
 
 > Explicit `HasDerivAt` for the heat kernel: `gaussianKernel ε` is differentiable everywhere,
 > with derivative `gaussianKernel ε t * (-(2 * t) / ε)` (the usual `d/dt exp(-t²/ε) = (-2t/ε)
@@ -163,7 +163,7 @@ lemma gaussianKernel_hasDerivAt {ε : ℝ} (_hε : 0 < ε) (t : ℝ) :
     HasDerivAt (gaussianKernel ε) (gaussianKernel ε t * (-(2 * t) / ε)) t
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_deriv`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L260).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_deriv`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L260).
 
 > Corollary of `gaussianKernel_hasDerivAt` as a `deriv` equation.
 
@@ -172,7 +172,7 @@ lemma gaussianKernel_deriv {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
     deriv (gaussianKernel ε) t = gaussianKernel ε t * (-(2 * t) / ε)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_deriv_continuous`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L265).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_deriv_continuous`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L265).
 
 > `deriv (gaussianKernel ε)` is continuous.
 
@@ -181,7 +181,7 @@ lemma gaussianKernel_deriv_continuous {ε : ℝ} (hε : 0 < ε) :
     Continuous (deriv (gaussianKernel ε))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_deriv_shift_bound`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L274).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_deriv_shift_bound`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L274).
 
 > The shifted derivative of the heat kernel is dominated by `C (|u| + 1) exp(-u² / (2 ε))`.
 
@@ -193,7 +193,7 @@ lemma gaussianKernel_deriv_shift_bound {ε : ℝ} (hε : 0 < ε) {x : ℝ} (hx :
         ((|u| + 1) * Real.exp (-(u ^ 2) / (2 * ε)))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_deriv_bound_integrable`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L313).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gaussianKernel_deriv_bound_integrable`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L313).
 
 > The `L¹` domination bound is itself integrable in `u`: it is `const * ((|u|+1) *
 > Gaussian(u))`, and `|u| * Gaussian(u)` and `Gaussian(u)` are each classically integrable
@@ -204,7 +204,7 @@ lemma gaussianKernel_deriv_bound_integrable {ε : ℝ} (hε : 0 < ε) (c : ℝ) 
     Integrable (fun u : ℝ => c * ((|u| + 1) * Real.exp (-(u ^ 2) / (2 * ε))))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.analyticGardingVector_hasDerivAt`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L335).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.analyticGardingVector_hasDerivAt`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L335).
 
 > The orbit of a Gårding vector is differentiable at `0`, with derivative the Gårding vector of
 > `-g'`.
@@ -217,7 +217,7 @@ lemma analyticGardingVector_hasDerivAt
       (∫ u : ℝ, ((-(deriv (gaussianKernel ε) u) : ℝ) : ℂ) • U u ψ) 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.analyticGardingVector_mem_stoneCandidateDomain`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L363).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.analyticGardingVector_mem_stoneCandidateDomain`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L363).
 
 > Gårding vectors lie in the domain of the candidate generator.
 
@@ -227,7 +227,7 @@ lemma analyticGardingVector_mem_stoneCandidateDomain (hUunit : ∀ t, U t ∈ un
     analyticGardingVector U ε ψ ∈ (stoneCandidateGenerator (U := U) hUmul).domain
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_analyticGardingVector`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L370).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_analyticGardingVector`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean#L370).
 
 > The candidate generator acts on a Gårding vector by smoothing against the derivative of the
 > kernel.
@@ -251,4 +251,4 @@ lemma stoneCandidateGenerator_analyticGardingVector (hUunit : ∀ t, U t ∈ uni
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean)

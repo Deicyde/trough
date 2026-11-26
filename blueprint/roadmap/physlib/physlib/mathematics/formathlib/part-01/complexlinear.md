@@ -8,7 +8,7 @@ proof: formalized
 
 # Upgrading a real-linear map to a complex-linear one
 
-The module `Physlib.Mathematics.ForMathlib.ComplexLinear`, [Physlib/Mathematics/ForMathlib/ComplexLinear.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/ComplexLinear.lean): 4 declarations, 3 with a docstring.
+The module `Physlib.Mathematics.ForMathlib.ComplexLinear`, [Physlib/Mathematics/ForMathlib/ComplexLinear.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/ComplexLinear.lean): 4 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -29,7 +29,7 @@ The module `Physlib.Mathematics.ForMathlib.ComplexLinear`, [Physlib/Mathematics/
 
 ## A. The scalar law
 
-**`LinearMap.map_smul_of_commutesI`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/ComplexLinear.lean#L55).
+**`LinearMap.map_smul_of_commutesI`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/ComplexLinear.lean#L55).
 
 > An `ℝ`-linear map commuting with `i` along `v` commutes with every complex scalar along `v`.
 
@@ -41,7 +41,7 @@ lemma map_smul_of_commutesI (L : V →ₗ[ℝ] E) {v : V}
 
 ## B. Commuting with `i` on a basis
 
-**`LinearMap.commutesI_of_basis`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/ComplexLinear.lean#L73).
+**`LinearMap.commutesI_of_basis`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/ComplexLinear.lean#L73).
 
 > An `ℝ`-linear map commuting with `i` on a `ℂ`-basis commutes with `i` everywhere.
 
@@ -53,7 +53,7 @@ lemma commutesI_of_basis {ι : Type*} [Fintype ι] (L : V →ₗ[ℝ] E) (b : Mo
 
 ## C. The complex-linear map
 
-**`ContinuousLinearMap.complexOfCommutesI`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/ComplexLinear.lean#L95).
+**`ContinuousLinearMap.complexOfCommutesI`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/ComplexLinear.lean#L95).
 
 > A continuous `ℝ`-linear map commuting with `i`, as a continuous `ℂ`-linear map.
 
@@ -62,7 +62,7 @@ def complexOfCommutesI (L : V →L[ℝ] E)
     (h : ∀ v, L (Complex.I • v) = Complex.I • L v) : V →L[ℂ] E
 ```
 
-**`ContinuousLinearMap.complexOfCommutesI_apply`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/ComplexLinear.lean#L103).
+**`ContinuousLinearMap.complexOfCommutesI_apply`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/ComplexLinear.lean#L103).
 
 ```lean
 lemma complexOfCommutesI_apply (L : V →L[ℝ] E)
@@ -76,4 +76,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/ForMathlib/ComplexLinear.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/ComplexLinear.lean)
+- [Physlib/Mathematics/ForMathlib/ComplexLinear.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/ComplexLinear.lean)

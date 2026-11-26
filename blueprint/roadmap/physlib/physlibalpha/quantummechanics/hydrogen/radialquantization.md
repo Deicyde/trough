@@ -8,7 +8,7 @@ proof: formalized
 
 # Quantisation of the hydrogen levels
 
-The module `PhyslibAlpha.QuantumMechanics.Hydrogen.RadialQuantization`, [PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean): 33 declarations, 15 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.Hydrogen.RadialQuantization`, [PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean): 33 declarations, 15 with a docstring.
 
 > Why the bound-state energies of hydrogen are discrete: a square integrable solution of the radial
 > equation of the form `ρ^(l+1) e^(-κρ) × (power series)` exists only for `κ = 1/ν` with a natural
@@ -60,7 +60,7 @@ The module `PhyslibAlpha.QuantumMechanics.Hydrogen.RadialQuantization`, [Physlib
 
 ## A. Power series with infinite radius of convergence
 
-**`PhyslibAlpha.Hydrogen.EntireCoeff`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L84).
+**`PhyslibAlpha.Hydrogen.EntireCoeff`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L84).
 
 > The coefficients `c` define a power series that converges absolutely on all of `ℝ`.
 
@@ -68,7 +68,7 @@ The module `PhyslibAlpha.QuantumMechanics.Hydrogen.RadialQuantization`, [Physlib
 def EntireCoeff (c : ℕ → ℝ) : Prop
 ```
 
-**`PhyslibAlpha.Hydrogen.psum`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L87).
+**`PhyslibAlpha.Hydrogen.psum`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L87).
 
 > The power series `Σ c_k x^k`.
 
@@ -76,7 +76,7 @@ def EntireCoeff (c : ℕ → ℝ) : Prop
 def psum (c : ℕ → ℝ) (x : ℝ) : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.dcoeff`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L90).
+**`PhyslibAlpha.Hydrogen.dcoeff`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L90).
 
 > The coefficients of the derivative, `(k + 1) c_{k+1}`.
 
@@ -84,45 +84,45 @@ def psum (c : ℕ → ℝ) (x : ℝ) : ℝ
 def dcoeff (c : ℕ → ℝ) (k : ℕ) : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.succ_mul_pow_le_pow_succ`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L94).
+**`PhyslibAlpha.Hydrogen.succ_mul_pow_le_pow_succ`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L94).
 
 ```lean
 lemma succ_mul_pow_le_pow_succ {r : ℝ} (hr : 0 ≤ r) (k : ℕ) :
     ((k : ℝ) + 1) * r ^ k ≤ (1 + r) ^ (k + 1)
 ```
 
-**`PhyslibAlpha.Hydrogen.EntireCoeff.summable`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L105).
+**`PhyslibAlpha.Hydrogen.EntireCoeff.summable`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L105).
 
 ```lean
 lemma EntireCoeff.summable (hc : EntireCoeff c) (x : ℝ) : Summable fun k => c k * x ^ k
 ```
 
-**`PhyslibAlpha.Hydrogen.EntireCoeff.derivCoeff`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L109).
+**`PhyslibAlpha.Hydrogen.EntireCoeff.derivCoeff`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L109).
 
 ```lean
 lemma EntireCoeff.derivCoeff (hc : EntireCoeff c) : EntireCoeff (dcoeff c)
 ```
 
-**`PhyslibAlpha.Hydrogen.EntireCoeff.shift`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L118).
+**`PhyslibAlpha.Hydrogen.EntireCoeff.shift`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L118).
 
 ```lean
 lemma EntireCoeff.shift (hc : EntireCoeff c) : EntireCoeff fun k => c (k + 1)
 ```
 
-**`PhyslibAlpha.Hydrogen.psum_eq_add`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L126).
+**`PhyslibAlpha.Hydrogen.psum_eq_add`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L126).
 
 ```lean
 lemma psum_eq_add (hc : EntireCoeff c) (x : ℝ) :
     psum c x = c 0 + x * psum (fun k => c (k + 1)) x
 ```
 
-**`PhyslibAlpha.Hydrogen.psum_zero`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L133).
+**`PhyslibAlpha.Hydrogen.psum_zero`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L133).
 
 ```lean
 lemma psum_zero (c : ℕ → ℝ) : psum c 0 = c 0
 ```
 
-**`PhyslibAlpha.Hydrogen.hasDerivAt_psum`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L138).
+**`PhyslibAlpha.Hydrogen.hasDerivAt_psum`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L138).
 
 > Termwise differentiation of an everywhere convergent power series.
 
@@ -131,7 +131,7 @@ lemma hasDerivAt_psum (hc : EntireCoeff c) (x : ℝ) :
     HasDerivAt (psum c) (psum (dcoeff c) x) x
 ```
 
-**`PhyslibAlpha.Hydrogen.coeff_eq_zero_of_psum`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L173).
+**`PhyslibAlpha.Hydrogen.coeff_eq_zero_of_psum`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L173).
 
 > A power series that vanishes on `(0, ∞)` has vanishing coefficients.
 
@@ -140,51 +140,51 @@ lemma coeff_eq_zero_of_psum (n : ℕ) : ∀ c : ℕ → ℝ, EntireCoeff c →
     (∀ x : ℝ, 0 < x → psum c x = 0) → c n = 0
 ```
 
-**`PhyslibAlpha.Hydrogen.EntireCoeff.unshift`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L198).
+**`PhyslibAlpha.Hydrogen.EntireCoeff.unshift`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L198).
 
 ```lean
 lemma EntireCoeff.unshift (h : EntireCoeff fun k => c (k + 1)) : EntireCoeff c
 ```
 
-**`PhyslibAlpha.Hydrogen.EntireCoeff.add`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L203).
+**`PhyslibAlpha.Hydrogen.EntireCoeff.add`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L203).
 
 ```lean
 lemma EntireCoeff.add {c' : ℕ → ℝ} (hc : EntireCoeff c) (hc' : EntireCoeff c') :
     EntireCoeff fun k => c k + c' k
 ```
 
-**`PhyslibAlpha.Hydrogen.EntireCoeff.const_mul`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L211).
+**`PhyslibAlpha.Hydrogen.EntireCoeff.const_mul`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L211).
 
 ```lean
 lemma EntireCoeff.const_mul (hc : EntireCoeff c) (a : ℝ) : EntireCoeff fun k => a * c k
 ```
 
-**`PhyslibAlpha.Hydrogen.psum_add`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L215).
+**`PhyslibAlpha.Hydrogen.psum_add`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L215).
 
 ```lean
 lemma psum_add {c' : ℕ → ℝ} (hc : EntireCoeff c) (hc' : EntireCoeff c') (x : ℝ) :
     psum (fun k => c k + c' k) x = psum c x + psum c' x
 ```
 
-**`PhyslibAlpha.Hydrogen.psum_const_mul`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L220).
+**`PhyslibAlpha.Hydrogen.psum_const_mul`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L220).
 
 ```lean
 lemma psum_const_mul (c : ℕ → ℝ) (a x : ℝ) : psum (fun k => a * c k) x = a * psum c x
 ```
 
-**`PhyslibAlpha.Hydrogen.dcoeff_eq`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L224).
+**`PhyslibAlpha.Hydrogen.dcoeff_eq`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L224).
 
 ```lean
 lemma dcoeff_eq (c : ℕ → ℝ) : (fun k : ℕ => ((k + 1 : ℕ) : ℝ) * c (k + 1)) = dcoeff c
 ```
 
-**`PhyslibAlpha.Hydrogen.EntireCoeff.natMul`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L227).
+**`PhyslibAlpha.Hydrogen.EntireCoeff.natMul`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L227).
 
 ```lean
 lemma EntireCoeff.natMul (hc : EntireCoeff c) : EntireCoeff fun k => (k : ℝ) * c k
 ```
 
-**`PhyslibAlpha.Hydrogen.mul_psum_dcoeff`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L233).
+**`PhyslibAlpha.Hydrogen.mul_psum_dcoeff`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L233).
 
 > `x Σ_k (k + 1) c_{k+1} x^k = Σ_k k c_k x^k`.
 
@@ -195,7 +195,7 @@ lemma mul_psum_dcoeff (hc : EntireCoeff c) (x : ℝ) :
 
 ## B. The radial equation for a power series ansatz
 
-**`PhyslibAlpha.Hydrogen.radialSeries`**, a def, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L245).
+**`PhyslibAlpha.Hydrogen.radialSeries`**, a def, [line 245](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L245).
 
 > The ansatz `u(ρ) = ρ^(l+1) e^(-κρ) Σ_k c_k ρ^k` for a bound state of energy `-κ²`.
 
@@ -203,14 +203,14 @@ lemma mul_psum_dcoeff (hc : EntireCoeff c) (x : ℝ) :
 def radialSeries (κ : ℝ) (l : ℕ) (c : ℕ → ℝ) (ρ : ℝ) : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.hasDerivAt_exp_neg_mul`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L250).
+**`PhyslibAlpha.Hydrogen.hasDerivAt_exp_neg_mul`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L250).
 
 ```lean
 lemma hasDerivAt_exp_neg_mul (κ ρ : ℝ) :
     HasDerivAt (fun ρ => Real.exp (-(κ * ρ))) (Real.exp (-(κ * ρ)) * (-κ)) ρ
 ```
 
-**`PhyslibAlpha.Hydrogen.radialSeriesD`**, a def, [line 255](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L255).
+**`PhyslibAlpha.Hydrogen.radialSeriesD`**, a def, [line 255](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L255).
 
 > The first derivative of `radialSeries`.
 
@@ -218,14 +218,14 @@ lemma hasDerivAt_exp_neg_mul (κ ρ : ℝ) :
 def radialSeriesD (κ : ℝ) (l : ℕ) (c : ℕ → ℝ) (ρ : ℝ) : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.hasDerivAt_radialSeries`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L259).
+**`PhyslibAlpha.Hydrogen.hasDerivAt_radialSeries`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L259).
 
 ```lean
 lemma hasDerivAt_radialSeries (hc : EntireCoeff c) (ρ : ℝ) :
     HasDerivAt (radialSeries κ l c) (radialSeriesD κ l c ρ) ρ
 ```
 
-**`PhyslibAlpha.Hydrogen.hasDerivAt_radialSeriesD`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L268).
+**`PhyslibAlpha.Hydrogen.hasDerivAt_radialSeriesD`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L268).
 
 ```lean
 lemma hasDerivAt_radialSeriesD (hc : EntireCoeff c) (ρ : ℝ) :
@@ -238,7 +238,7 @@ lemma hasDerivAt_radialSeriesD (hc : EntireCoeff c) (ρ : ℝ) :
             ρ ^ (l + 1) * psum (dcoeff (dcoeff c)) ρ)))) ρ
 ```
 
-**`PhyslibAlpha.Hydrogen.radial_identity`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L287).
+**`PhyslibAlpha.Hydrogen.radial_identity`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L287).
 
 > The radial operator applied to the ansatz, in terms of the series `W`, `W'`, `W''`.
 
@@ -252,7 +252,7 @@ lemma radial_identity (κ ρ W W₁ W₂ E : ℝ) (l : ℕ) (hρ : ρ ≠ 0) :
     ρ ^ l * E * (ρ * W₂ + (2 * l + 2 - 2 * κ * ρ) * W₁ + (2 - 2 * κ * (l + 1)) * W)
 ```
 
-**`PhyslibAlpha.Hydrogen.recursion_of_radial_ode`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L306).
+**`PhyslibAlpha.Hydrogen.recursion_of_radial_ode`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L306).
 
 > **The coefficient recursion.** If the ansatz solves the radial equation with energy `-κ²`, the
 > coefficients satisfy `(k + 1)(k + 2l + 2) c_{k+1} = (2κ(k + l + 1) - 2) c_k`.
@@ -266,7 +266,7 @@ lemma recursion_of_radial_ode (hc : EntireCoeff c)
 
 ## C. Terminating series: the Laguerre polynomials
 
-**`PhyslibAlpha.Hydrogen.RadialRec`**, an abbrev, [line 342](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L342).
+**`PhyslibAlpha.Hydrogen.RadialRec`**, an abbrev, [line 342](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L342).
 
 > The coefficient recursion `(k + 1)(k + 2l + 2) c_{k+1} = (2κ(k + l + 1) - 2) c_k`.
 
@@ -274,7 +274,7 @@ lemma recursion_of_radial_ode (hc : EntireCoeff c)
 abbrev RadialRec (κ : ℝ) (l : ℕ) (c : ℕ → ℝ) : Prop
 ```
 
-**`PhyslibAlpha.Hydrogen.coeff_of_terminating`**, a lemma, [line 347](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L347).
+**`PhyslibAlpha.Hydrogen.coeff_of_terminating`**, a lemma, [line 347](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L347).
 
 > If `κ (N + l + 1) = 1`, the recursion terminates after `c_N` and reproduces the coefficients
 > of `L_N^(2l+1)(2κρ)`.
@@ -285,7 +285,7 @@ lemma coeff_of_terminating (hrec : RadialRec κ l c) {N : ℕ} (hN : κ * (N + l
       (2 * κ) ^ k) ∧ ∀ k, N < k → c k = 0
 ```
 
-**`PhyslibAlpha.Hydrogen.radialSeries_eq_of_terminating`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L383).
+**`PhyslibAlpha.Hydrogen.radialSeries_eq_of_terminating`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L383).
 
 > In the terminating case the ansatz is a multiple of the hydrogen radial function.
 
@@ -298,14 +298,14 @@ lemma radialSeries_eq_of_terminating (hrec : RadialRec κ l c) {N : ℕ}
 
 ## D. Non-terminating series are not normalisable
 
-**`PhyslibAlpha.Hydrogen.tendsto_pow_mul_exp_neg_mul`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L409).
+**`PhyslibAlpha.Hydrogen.tendsto_pow_mul_exp_neg_mul`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L409).
 
 ```lean
 lemma tendsto_pow_mul_exp_neg_mul (hκ : 0 < κ) (k : ℕ) :
     Tendsto (fun ρ : ℝ => ρ ^ k * Real.exp (-(κ * ρ))) atTop (𝓝 0)
 ```
 
-**`PhyslibAlpha.Hydrogen.coeff_ne_zero`**, a lemma, [line 420](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L420).
+**`PhyslibAlpha.Hydrogen.coeff_ne_zero`**, a lemma, [line 420](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L420).
 
 ```lean
 lemma coeff_ne_zero (hrec : RadialRec κ l c) (hnt : ∀ N : ℕ, κ * (N + l + 1) ≠ 1)
@@ -313,7 +313,7 @@ lemma coeff_ne_zero (hrec : RadialRec κ l c) (hnt : ∀ N : ℕ, κ * (N + l + 
     ∀ k, c k ≠ 0
 ```
 
-**`PhyslibAlpha.Hydrogen.not_integrableOn_of_nonterminating`**, a lemma, [line 435](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L435).
+**`PhyslibAlpha.Hydrogen.not_integrableOn_of_nonterminating`**, a lemma, [line 435](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L435).
 
 > **Non-terminating series grow like `e^(3κρ/2)`.** Then `u = ρ^(l+1) e^(-κρ) Σ c_k ρ^k` is not
 > square integrable.
@@ -326,7 +326,7 @@ lemma not_integrableOn_of_nonterminating (hκ : 0 < κ) (hc : EntireCoeff c)
 
 ## E. Quantisation
 
-**`PhyslibAlpha.Hydrogen.radial_quantization`**, a lemma, [line 596](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L596).
+**`PhyslibAlpha.Hydrogen.radial_quantization`**, a lemma, [line 596](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean#L596).
 
 > **Quantisation of the hydrogen levels.** Let `u(ρ) = ρ^(l+1) e^(-κρ) Σ_k c_k ρ^k` with an
 > everywhere convergent power series, `c_0 ≠ 0` and `κ > 0`, solve the radial equation
@@ -349,4 +349,4 @@ lemma radial_quantization (hκ : 0 < κ) (hc : EntireCoeff c) (h0 : c 0 ≠ 0)
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean)
+- [PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean)

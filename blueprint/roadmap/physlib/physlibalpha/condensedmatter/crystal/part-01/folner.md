@@ -8,7 +8,7 @@ proof: formalized
 
 # Boxes of a lattice are asymptotically translation invariant
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.Folner`, [PhyslibAlpha/CondensedMatter/Crystal/Folner.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean): 11 declarations, 6 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.Folner`, [PhyslibAlpha/CondensedMatter/Crystal/Folner.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean): 11 declarations, 6 with a docstring.
 
 > The cubes `{0, …, n-1}^d` of the lattice `ℤ^d` satisfy the Følner condition for the translations.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Folner`, [PhyslibAlpha/Condense
 
 ## A. Cubes and their translates
 
-**`CondensedMatter.Crystal.box`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L55).
+**`CondensedMatter.Crystal.box`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L55).
 
 > The cube `{0, …, m-1}^d` of the lattice `ℤ^d`.
 
@@ -41,26 +41,26 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Folner`, [PhyslibAlpha/Condense
 def box (d m : ℕ) : Finset (Fin d → ℤ)
 ```
 
-**`CondensedMatter.Crystal.card_box`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L57).
+**`CondensedMatter.Crystal.card_box`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L57).
 
 ```lean
 lemma card_box (d m : ℕ) : (box d m).card = m ^ d
 ```
 
-**`CondensedMatter.Crystal.image_add_box`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L60).
+**`CondensedMatter.Crystal.image_add_box`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L60).
 
 ```lean
 lemma image_add_box (d m : ℕ) (h : Fin d → ℤ) :
     (box d m).image (· + h) = Fintype.piFinset fun j => Finset.Ico (h j) (m + h j)
 ```
 
-**`CondensedMatter.Crystal.card_image_add_box`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L75).
+**`CondensedMatter.Crystal.card_image_add_box`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L75).
 
 ```lean
 lemma card_image_add_box (d m : ℕ) (h : Fin d → ℤ) : ((box d m).image (· + h)).card = m ^ d
 ```
 
-**`CondensedMatter.Crystal.card_inter_box`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L79).
+**`CondensedMatter.Crystal.card_inter_box`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L79).
 
 > The overlap of the cube with its translate.
 
@@ -72,14 +72,14 @@ lemma card_inter_box (d m : ℕ) (h : Fin d → ℤ) :
 
 ## B. The Følner property
 
-**`CondensedMatter.Crystal.card_Ico_inter`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L86).
+**`CondensedMatter.Crystal.card_Ico_inter`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L86).
 
 ```lean
 lemma card_Ico_inter (m : ℕ) (a : ℤ) (ha : |a| ≤ m) :
     (Finset.Ico a (m + a) ∩ Finset.Ico (0 : ℤ) m).card = m - a.natAbs
 ```
 
-**`CondensedMatter.Crystal.card_sdiff_add_card_sdiff`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L93).
+**`CondensedMatter.Crystal.card_sdiff_add_card_sdiff`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L93).
 
 > The number of points of the cube not shared with its translate.
 
@@ -89,7 +89,7 @@ lemma card_sdiff_add_card_sdiff (d m : ℕ) (h : Fin d → ℤ) :
       2 * ((m : ℝ) ^ d - ∏ j, ((Finset.Ico (h j) (m + h j) ∩ Finset.Ico (0 : ℤ) m).card : ℝ))
 ```
 
-**`CondensedMatter.Crystal.tendsto_box_sdiff`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L109).
+**`CondensedMatter.Crystal.tendsto_box_sdiff`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L109).
 
 > **The cubes are asymptotically invariant under translation**: the fraction of the points of
 > `{0, …, n}^d` that are not shared with a fixed translate tends to zero.
@@ -101,7 +101,7 @@ lemma tendsto_box_sdiff (d : ℕ) (h : Fin d → ℤ) :
       atTop (𝓝 0)
 ```
 
-**`CondensedMatter.Crystal.boxes`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L144).
+**`CondensedMatter.Crystal.boxes`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L144).
 
 > The cubes `{0, …, n}^d`, as finite sets of the translation group.
 
@@ -109,7 +109,7 @@ lemma tendsto_box_sdiff (d : ℕ) (h : Fin d → ℤ) :
 def boxes (d n : ℕ) : Finset (Multiplicative (Fin d → ℤ))
 ```
 
-**`CondensedMatter.Crystal.image_mul_boxes`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L147).
+**`CondensedMatter.Crystal.image_mul_boxes`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L147).
 
 ```lean
 lemma image_mul_boxes (d n : ℕ) (h : Multiplicative (Fin d → ℤ)) :
@@ -118,7 +118,7 @@ lemma image_mul_boxes (d n : ℕ) (h : Multiplicative (Fin d → ℤ)) :
         Multiplicative.ofAdd.toEmbedding
 ```
 
-**`CondensedMatter.Crystal.isRightFolner_boxes`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L161).
+**`CondensedMatter.Crystal.isRightFolner_boxes`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean#L161).
 
 > **The cubes are a Følner family** for the translations of `ℤ^d`, along any ultrafilter on
 > `ℕ` finer than the filter of large cubes.
@@ -134,4 +134,4 @@ lemma isRightFolner_boxes (d : ℕ) (𝒰 : Ultrafilter ℕ) (h𝒰 : (𝒰 : Fi
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/Folner.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/Folner.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Folner.lean)

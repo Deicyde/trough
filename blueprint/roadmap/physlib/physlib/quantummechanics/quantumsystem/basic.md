@@ -8,7 +8,7 @@ proof: formalized
 
 # Quantum system
 
-The module `Physlib.QuantumMechanics.QuantumSystem.Basic`, [Physlib/QuantumMechanics/QuantumSystem/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/QuantumSystem/Basic.lean): 12 declarations (3 instances with no name), 8 with a docstring.
+The module `Physlib.QuantumMechanics.QuantumSystem.Basic`, [Physlib/QuantumMechanics/QuantumSystem/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/QuantumSystem/Basic.lean): 9 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -34,7 +34,7 @@ The module `Physlib.QuantumMechanics.QuantumSystem.Basic`, [Physlib/QuantumMecha
 
 ## A. Definition
 
-**`QuantumMechanics.QuantumSystem`**, a structure, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L56).
+**`QuantumMechanics.QuantumSystem`**, a structure, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L56).
 
 > A quantum system is identified by its Hilbert space and self-adjoint Hamiltonian operator.
 
@@ -53,31 +53,13 @@ structure QuantumSystem where
   ℋ_self_adjoint : IsSelfAdjoint ℋ
 ```
 
-**An instance with no name**, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L71).
-
-```lean
-instance (Q : QuantumSystem) : NormedAddCommGroup Q.HS
-```
-
-**An instance with no name**, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L73).
-
-```lean
-instance (Q : QuantumSystem) : InnerProductSpace ℂ Q.HS
-```
-
-**An instance with no name**, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L75).
-
-```lean
-instance (Q : QuantumSystem) : CompleteSpace Q.HS
-```
-
 ## B. Creation from an essentially self-adjoint operator
 
 > An essentially self-adjoint operator has a unique self-adjoint extension
 > (c.f. `IsEssentiallySelfAdjoint.unique_self_adjoint_extension`).
 > For this reason, a quantum system can be uniquely associated to an e.s.a. Hamiltonian operator.
 
-**`QuantumMechanics.QuantumSystem.mkESA`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L87).
+**`QuantumMechanics.QuantumSystem.mkESA`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L83).
 
 > Create a quantum system from a Hamiltonian operator which is merely
 > essentially self-adjoint by taking its closure.
@@ -89,7 +71,7 @@ def mkESA {HS : Type*} [NormedAddCommGroup HS] [InnerProductSpace ℂ HS] [Compl
 
 ## C. Zero
 
-**`QuantumMechanics.QuantumSystem.instZero`**, an instance, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L94).
+**`QuantumMechanics.QuantumSystem.instZero`**, an instance, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L90).
 
 ```lean
 instance instZero : Zero QuantumSystem
@@ -97,7 +79,7 @@ instance instZero : Zero QuantumSystem
 
 ## D. Unitary equivalence
 
-**`QuantumMechanics.QuantumSystem.UnitaryRelation`**, a def, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L103).
+**`QuantumMechanics.QuantumSystem.UnitaryRelation`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L99).
 
 > The relation on quantum systems where `Q₁` is related to `Q₂` if there exists a linear isometry
 > equivalence `e : Q₁.HS ≃ₗᵢ[ℂ] Q₂.HS` between the respective Hilbert spaces satisfying
@@ -107,7 +89,7 @@ instance instZero : Zero QuantumSystem
 def UnitaryRelation (Q₁ Q₂ : QuantumSystem) : Prop
 ```
 
-**`QuantumMechanics.QuantumSystem.unitaryRelation_refl`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L108).
+**`QuantumMechanics.QuantumSystem.unitaryRelation_refl`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L104).
 
 > The relation `UnitaryRelation` is reflexive.
 
@@ -115,7 +97,7 @@ def UnitaryRelation (Q₁ Q₂ : QuantumSystem) : Prop
 lemma unitaryRelation_refl (Q : QuantumSystem) : UnitaryRelation Q Q
 ```
 
-**`QuantumMechanics.QuantumSystem.unitaryRelation_symm`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L112).
+**`QuantumMechanics.QuantumSystem.unitaryRelation_symm`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L108).
 
 > The relation `UnitaryRelation` is symmetric.
 
@@ -124,7 +106,7 @@ lemma unitaryRelation_symm {Q₁ Q₂ : QuantumSystem} (h₁₂ : UnitaryRelatio
     UnitaryRelation Q₂ Q₁
 ```
 
-**`QuantumMechanics.QuantumSystem.unitaryRelation_trans`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L120).
+**`QuantumMechanics.QuantumSystem.unitaryRelation_trans`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L116).
 
 > The relation `UnitaryRelation` is transitive.
 
@@ -133,7 +115,7 @@ lemma unitaryRelation_trans {Q₁ Q₂ Q₃ : QuantumSystem} (h₁₂ : UnitaryR
     (h₂₃ : UnitaryRelation Q₂ Q₃) : UnitaryRelation Q₁ Q₃
 ```
 
-**`QuantumMechanics.QuantumSystem.unitaryRelation_equiv`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L127).
+**`QuantumMechanics.QuantumSystem.unitaryRelation_equiv`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L123).
 
 > The relation `UnitaryRelation` is an equivalence relation.
 
@@ -141,7 +123,7 @@ lemma unitaryRelation_trans {Q₁ Q₂ Q₃ : QuantumSystem} (h₁₂ : UnitaryR
 lemma unitaryRelation_equiv : Equivalence UnitaryRelation
 ```
 
-**`QuantumMechanics.QuantumSystem.QuantumSystemSetoid`**, an instance, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L133).
+**`QuantumMechanics.QuantumSystem.QuantumSystemSetoid`**, an instance, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/QuantumSystem/Basic.lean#L129).
 
 > The setoid of quantum systems with `UnitaryRelation` for equivalence relation.
 
@@ -151,8 +133,8 @@ instance QuantumSystemSetoid : Setoid QuantumSystem
 
 ## Depends on
 
-- [Unbounded operators (Operators/Unbounded)](../operators/unbounded.md)
+- [Essentially self-adjoint operators](../operators/essentiallyselfadjoint.md)
 
 ## Sources
 
-- [Physlib/QuantumMechanics/QuantumSystem/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/QuantumSystem/Basic.lean)
+- [Physlib/QuantumMechanics/QuantumSystem/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/QuantumSystem/Basic.lean)

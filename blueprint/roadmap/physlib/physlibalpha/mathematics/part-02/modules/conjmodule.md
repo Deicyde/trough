@@ -8,7 +8,7 @@ proof: formalized
 
 # Algebras, duals and representations on a conjugate module
 
-The module `PhyslibAlpha.Mathematics.Modules.ConjModule`, [PhyslibAlpha/Mathematics/Modules/ConjModule.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean): 29 declarations (1 instance with no name), 14 with a docstring.
+The module `PhyslibAlpha.Mathematics.Modules.ConjModule`, [PhyslibAlpha/Mathematics/Modules/ConjModule.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean): 29 declarations (1 instance with no name), 14 with a docstring.
 
 > The conjugate module of an algebra, the conjugate dual, and the conjugate of a representation.
 
@@ -45,13 +45,13 @@ The module `PhyslibAlpha.Mathematics.Modules.ConjModule`, [PhyslibAlpha/Mathemat
 
 ## A. The conjugate module of an algebra
 
-**An instance with no name**, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L75).
+**An instance with no name**, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L75).
 
 ```lean
 instance : Ring (ConjModule A)
 ```
 
-**`ConjModule.instAlgebra`**, an instance, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L82).
+**`ConjModule.instAlgebra`**, an instance, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L82).
 
 > The conjugate module of a `k`-algebra is a `k`-algebra: the same ring, with scalars
 > acting through `star`.
@@ -62,7 +62,7 @@ instance instAlgebra [Algebra k A] : Algebra k (ConjModule A)
 
 ## B. The conjugate dual
 
-**`conjDualEquiv`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L96).
+**`conjDualEquiv`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L96).
 
 > The canonical conjugate-linear equivalence between the dual of a module `M` and
 > the dual of its conjugate.
@@ -73,7 +73,7 @@ def conjDualEquiv : Module.Dual k M ≃ₛₗ[starRingEnd k] Module.Dual k (Conj
 
 ## C. The conjugate of a representation
 
-**`Representation.conj`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L127).
+**`Representation.conj`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L127).
 
 > The conjugate of a representation `ρ` of `G` on `M`: the same maps `ρ g`, acting on
 > `ConjModule M` through `conjEquiv`.
@@ -83,7 +83,7 @@ def _root_.Representation.conj {G} [Group G] (ρ : Representation k G M) :
     Representation k G (ConjModule M)
 ```
 
-**`Representation.conj_apply`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L138).
+**`Representation.conj_apply`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L138).
 
 ```lean
 lemma _root_.Representation.conj_apply {G} [Group G] (ρ : Representation k G M) (g : G)
@@ -91,7 +91,7 @@ lemma _root_.Representation.conj_apply {G} [Group G] (ρ : Representation k G M)
     ρ.conj g m = conjEquiv (k := k) (M := M) (ρ g ((conjEquiv (k := k) (M := M)).symm m))
 ```
 
-**`Representation.conj_trivial_apply`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L143).
+**`Representation.conj_trivial_apply`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L143).
 
 > The conjugate of the trivial representation acts trivially.
 
@@ -100,7 +100,7 @@ lemma _root_.Representation.conj_trivial_apply {G : Type*} [Group G] (g : G)
     (m : ConjModule M) : (Representation.trivial k G M).conj g m = m
 ```
 
-**`Representation.conj_trivial_dual_apply`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L149).
+**`Representation.conj_trivial_dual_apply`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L149).
 
 > The dual of the conjugate of the trivial representation acts trivially.
 
@@ -121,7 +121,7 @@ lemma _root_.Representation.conj_trivial_dual_apply {G : Type*} [Group G] (g : G
 > pick the *twisted* module instances, landing in the wrong tensor product; converting
 > explicitly with `conjEquiv` fixes every instance by construction.
 
-**`ConjModule.map`**, a def, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L174).
+**`ConjModule.map`**, a def, [line 174](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L174).
 
 > Functoriality of conjugation: a `k`-linear map induces a `k`-linear map of the
 > conjugate modules, given by the same underlying function.
@@ -130,13 +130,13 @@ lemma _root_.Representation.conj_trivial_dual_apply {G : Type*} [Group G] (g : G
 def map (f : M →ₗ[k] N) : ConjModule M →ₗ[k] ConjModule N
 ```
 
-**`ConjModule.map_apply`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L180).
+**`ConjModule.map_apply`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L180).
 
 ```lean
 lemma map_apply (f : M →ₗ[k] N) (x : ConjModule M) : map f x = f x
 ```
 
-**`ConjModule.prodEquiv`**, a def, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L185).
+**`ConjModule.prodEquiv`**, a def, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L185).
 
 > **Conjugation commutes with finite products.** The conjugate of a product is the product
 > of the conjugates, by the identity underlying function: the twisted scalar action is applied
@@ -146,14 +146,14 @@ lemma map_apply (f : M →ₗ[k] N) (x : ConjModule M) : map f x = f x
 def prodEquiv : ConjModule (M × N) ≃ₗ[k] ConjModule M × ConjModule N
 ```
 
-**`ConjModule.prodEquiv_apply`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L194).
+**`ConjModule.prodEquiv_apply`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L194).
 
 ```lean
 lemma prodEquiv_apply (x : ConjModule (M × N)) :
     prodEquiv (k := k) x = (map (LinearMap.fst k M N) x, map (LinearMap.snd k M N) x)
 ```
 
-**`ConjModule.piEquiv`**, a def, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L205).
+**`ConjModule.piEquiv`**, a def, [line 205](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L205).
 
 > **Conjugation commutes with arbitrary products.** The conjugate of a product of a
 > family of modules is the product of their conjugates, by the identity underlying
@@ -164,7 +164,7 @@ lemma prodEquiv_apply (x : ConjModule (M × N)) :
 def piEquiv : ConjModule (∀ i, P i) ≃ₗ[k] ∀ i, ConjModule (P i)
 ```
 
-**`ConjModule.piEquiv_apply`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L214).
+**`ConjModule.piEquiv_apply`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L214).
 
 ```lean
 lemma piEquiv_apply (x : ConjModule (∀ i, P i)) (i : ι) :
@@ -172,7 +172,7 @@ lemma piEquiv_apply (x : ConjModule (∀ i, P i)) (i : ι) :
       = map (k := k) (LinearMap.proj i) x
 ```
 
-**`ConjModule.piEquiv_symm_apply`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L218).
+**`ConjModule.piEquiv_symm_apply`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L218).
 
 ```lean
 lemma piEquiv_symm_apply (x : ∀ i, ConjModule (P i)) (i : ι) :
@@ -180,7 +180,7 @@ lemma piEquiv_symm_apply (x : ∀ i, ConjModule (P i)) (i : ι) :
         ((piEquiv P : ConjModule (∀ i, P i) ≃ₗ[k] ∀ i, ConjModule (P i)).symm x) = x i
 ```
 
-**`ConjModule.instFinite`**, an instance, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L226).
+**`ConjModule.instFinite`**, an instance, [line 226](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L226).
 
 > The conjugate module of a finite free module is finite: the conjugated basis
 > `Basis.conj` is indexed by the same type.
@@ -190,7 +190,7 @@ instance instFinite [Module.Free k M] [Module.Finite k M] :
     Module.Finite k (ConjModule M)
 ```
 
-**`ConjModule.tensorHom`**, a def, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L232).
+**`ConjModule.tensorHom`**, a def, [line 232](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L232).
 
 > The canonical `k`-linear map `ConjModule M ⊗ ConjModule N → ConjModule (M ⊗ N)`,
 > the identity on pure tensors.
@@ -199,7 +199,7 @@ instance instFinite [Module.Free k M] [Module.Finite k M] :
 noncomputable def tensorHom : ConjModule M ⊗[k] ConjModule N →ₗ[k] ConjModule (M ⊗[k] N)
 ```
 
-**`ConjModule.tensorHom_tmul`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L257).
+**`ConjModule.tensorHom_tmul`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L257).
 
 ```lean
 lemma tensorHom_tmul (m : ConjModule M) (n : ConjModule N) :
@@ -208,7 +208,7 @@ lemma tensorHom_tmul (m : ConjModule M) (n : ConjModule N) :
         ((conjEquiv (k := k) (M := M)).symm m ⊗ₜ[k] (conjEquiv (k := k) (M := N)).symm n)
 ```
 
-**`ConjModule.tensorInv`**, a def, [line 266](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L266).
+**`ConjModule.tensorInv`**, a def, [line 266](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L266).
 
 > The inverse map `ConjModule (M ⊗ N) → ConjModule M ⊗ ConjModule N`, again the identity
 > on pure tensors. A `k`-linear map out of `ConjModule X` is the same data as a `k`-linear
@@ -218,7 +218,7 @@ lemma tensorHom_tmul (m : ConjModule M) (n : ConjModule N) :
 noncomputable def tensorInv : ConjModule (M ⊗[k] N) →ₗ[k] ConjModule M ⊗[k] ConjModule N
 ```
 
-**`ConjModule.tensorEquiv`**, a def, [line 294](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L294).
+**`ConjModule.tensorEquiv`**, a def, [line 294](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L294).
 
 > **Conjugation is monoidal.** `ConjModule M ⊗ ConjModule N ≃ₗ[k] ConjModule (M ⊗ N)`,
 > the identity on pure tensors. Injectivity comes from `tensorInv` being a left inverse;
@@ -229,7 +229,7 @@ noncomputable def tensorEquiv :
     ConjModule M ⊗[k] ConjModule N ≃ₗ[k] ConjModule (M ⊗[k] N)
 ```
 
-**`ConjModule.tensorEquiv_tmul`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L317).
+**`ConjModule.tensorEquiv_tmul`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L317).
 
 ```lean
 lemma tensorEquiv_tmul (m : ConjModule M) (n : ConjModule N) :
@@ -238,7 +238,7 @@ lemma tensorEquiv_tmul (m : ConjModule M) (n : ConjModule N) :
         ((conjEquiv (k := k) (M := M)).symm m ⊗ₜ[k] (conjEquiv (k := k) (M := N)).symm n)
 ```
 
-**`ConjModule.tensorEquiv_symm_conjEquiv_tmul`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L324).
+**`ConjModule.tensorEquiv_symm_conjEquiv_tmul`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L324).
 
 ```lean
 lemma tensorEquiv_symm_conjEquiv_tmul (m : M) (n : N) :
@@ -253,7 +253,7 @@ lemma tensorEquiv_symm_conjEquiv_tmul (m : M) (n : N) :
 > nothing at the level of the additive group, so the structural identities hold
 > definitionally; only the real-scalar one needs an argument.
 
-**`ConjModule.endConj`**, a def, [line 345](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L345).
+**`ConjModule.endConj`**, a def, [line 345](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L345).
 
 > A linear endomorphism read on the conjugate module: the same underlying map,
 > through the identity `conjEquiv`. Conjugating twists nothing at the level of the
@@ -266,7 +266,7 @@ def endConj {k : Type*} [CommRing k] [StarRing k] {M : Type*}
     ConjModule M →ₗ[k] ConjModule M
 ```
 
-**`ConjModule.endConj_apply`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L353).
+**`ConjModule.endConj_apply`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L353).
 
 ```lean
 lemma endConj_apply {k : Type*} [CommRing k] [StarRing k] {M : Type*}
@@ -275,7 +275,7 @@ lemma endConj_apply {k : Type*} [CommRing k] [StarRing k] {M : Type*}
       conjEquiv (k := k) (M := M) (f ((conjEquiv (k := k) (M := M)).symm v))
 ```
 
-**`ConjModule.endConj_id`**, a lemma, [line 358](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L358).
+**`ConjModule.endConj_id`**, a lemma, [line 358](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L358).
 
 ```lean
 lemma endConj_id {k : Type*} [CommRing k] [StarRing k] {M : Type*}
@@ -283,7 +283,7 @@ lemma endConj_id {k : Type*} [CommRing k] [StarRing k] {M : Type*}
     ConjModule.endConj (LinearMap.id : M →ₗ[k] M) = LinearMap.id
 ```
 
-**`ConjModule.endConj_comp`**, a lemma, [line 362](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L362).
+**`ConjModule.endConj_comp`**, a lemma, [line 362](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L362).
 
 ```lean
 lemma endConj_comp {k : Type*} [CommRing k] [StarRing k] {M : Type*}
@@ -291,7 +291,7 @@ lemma endConj_comp {k : Type*} [CommRing k] [StarRing k] {M : Type*}
     ConjModule.endConj (f ∘ₗ g) = ConjModule.endConj f ∘ₗ ConjModule.endConj g
 ```
 
-**`ConjModule.endConj_add`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L366).
+**`ConjModule.endConj_add`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L366).
 
 ```lean
 lemma endConj_add {k : Type*} [CommRing k] [StarRing k] {M : Type*}
@@ -299,7 +299,7 @@ lemma endConj_add {k : Type*} [CommRing k] [StarRing k] {M : Type*}
     ConjModule.endConj (f + g) = ConjModule.endConj f + ConjModule.endConj g
 ```
 
-**`ConjModule.endConj_neg`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L370).
+**`ConjModule.endConj_neg`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L370).
 
 ```lean
 lemma endConj_neg {k : Type*} [CommRing k] [StarRing k] {M : Type*}
@@ -307,7 +307,7 @@ lemma endConj_neg {k : Type*} [CommRing k] [StarRing k] {M : Type*}
     ConjModule.endConj (-f) = -ConjModule.endConj f
 ```
 
-**`ConjModule.endConj_multiset_sum`**, a lemma, [line 374](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L374).
+**`ConjModule.endConj_multiset_sum`**, a lemma, [line 374](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L374).
 
 ```lean
 lemma endConj_multiset_sum {k : Type*} [CommRing k] [StarRing k]
@@ -315,7 +315,7 @@ lemma endConj_multiset_sum {k : Type*} [CommRing k] [StarRing k]
     ConjModule.endConj S.sum = (S.map ConjModule.endConj).sum
 ```
 
-**`ConjModule.endConj_real_smul`**, a lemma, [line 385](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L385).
+**`ConjModule.endConj_real_smul`**, a lemma, [line 385](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean#L385).
 
 > Conjugation of endomorphisms commutes with real scalars: the star on the
 > conjugated complex scalar is invisible on the reals.
@@ -332,4 +332,4 @@ lemma endConj_real_smul {M : Type*} [AddCommGroup M] [Module ℂ M]
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Modules/ConjModule.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Modules/ConjModule.lean)
+- [PhyslibAlpha/Mathematics/Modules/ConjModule.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Modules/ConjModule.lean)

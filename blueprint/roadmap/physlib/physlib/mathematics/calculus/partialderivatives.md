@@ -8,7 +8,7 @@ proof: formalized
 
 # Partial derivatives on products
 
-The module `Physlib.Mathematics.Calculus.PartialDerivatives`, [Physlib/Mathematics/Calculus/PartialDerivatives.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/PartialDerivatives.lean): 4 declarations, 4 with a docstring.
+The module `Physlib.Mathematics.Calculus.PartialDerivatives`, [Physlib/Mathematics/Calculus/PartialDerivatives.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/PartialDerivatives.lean): 4 declarations, 4 with a docstring.
 
 > Splitting derivatives of functions on `X × Y × Z` and of families `H : ℝ × ℝ → F`.
 
@@ -28,7 +28,7 @@ The module `Physlib.Mathematics.Calculus.PartialDerivatives`, [Physlib/Mathemati
 
 ## A. Functions on a triple product
 
-**`fderiv_partial_snd`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/PartialDerivatives.lean#L49).
+**`fderiv_partial_snd`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/PartialDerivatives.lean#L49).
 
 > The derivative in the middle argument of `f` as a restriction of the total derivative.
 
@@ -39,7 +39,7 @@ lemma fderiv_partial_snd {f : X × Y × Z → F} {a : X} {y : Y} {z : Z}
       ((0 : Y →L[ℝ] X).prod ((ContinuousLinearMap.id ℝ Y).prod (0 : Y →L[ℝ] Z)))
 ```
 
-**`fderiv_partial_thd`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/PartialDerivatives.lean#L57).
+**`fderiv_partial_thd`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/PartialDerivatives.lean#L57).
 
 > The derivative in the last argument of `f` as a restriction of the total derivative.
 
@@ -50,7 +50,7 @@ lemma fderiv_partial_thd {f : X × Y × Z → F} {a : X} {y : Y} {z : Z}
       ((0 : Z →L[ℝ] X).prod ((0 : Z →L[ℝ] Y).prod (ContinuousLinearMap.id ℝ Z)))
 ```
 
-**`fderiv_apply_zero_prod`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/PartialDerivatives.lean#L65).
+**`fderiv_apply_zero_prod`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/PartialDerivatives.lean#L65).
 
 > The total derivative of `f` on `(0, u, w)` splits into its middle and last partials.
 
@@ -63,7 +63,7 @@ lemma fderiv_apply_zero_prod {f : X × Y × Z → F} {a : X} {y : Y} {z : Z}
 
 ## B. Two-parameter families
 
-**`deriv_fderiv_apply_comm`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/PartialDerivatives.lean#L81).
+**`deriv_fderiv_apply_comm`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/PartialDerivatives.lean#L81).
 
 > Mixed partial derivatives of a two-parameter family, `C²` at the point, commute.
 
@@ -79,4 +79,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/Calculus/PartialDerivatives.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/PartialDerivatives.lean)
+- [Physlib/Mathematics/Calculus/PartialDerivatives.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/PartialDerivatives.lean)

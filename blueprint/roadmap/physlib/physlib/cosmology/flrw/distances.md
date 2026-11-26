@@ -8,7 +8,7 @@ proof: formalized
 
 # Distances and redshift in FLRW cosmology
 
-The module `Physlib.Cosmology.FLRW.Distances`, [Physlib/Cosmology/FLRW/Distances.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean): 18 declarations, 17 with a docstring.
+The module `Physlib.Cosmology.FLRW.Distances`, [Physlib/Cosmology/FLRW/Distances.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean): 18 declarations, 17 with a docstring.
 
 ## i. Overview
 
@@ -45,7 +45,7 @@ The module `Physlib.Cosmology.FLRW.Distances`, [Physlib/Cosmology/FLRW/Distances
 
 ## A. The comoving distance
 
-**`Cosmology.FLRW.comovingDistance`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L73).
+**`Cosmology.FLRW.comovingDistance`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L73).
 
 > The line-of-sight comoving distance `χ = c ∫_t^{t₀} dτ / a(τ)` of a source emitting at `t`
 > and observed at `t₀`.
@@ -54,7 +54,7 @@ The module `Physlib.Cosmology.FLRW.Distances`, [Physlib/Cosmology/FLRW/Distances
 noncomputable def comovingDistance (c : SpeedOfLight) (t t₀ : Time) : ℝ
 ```
 
-**`Cosmology.FLRW.deriv_comovingDistance`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L77).
+**`Cosmology.FLRW.deriv_comovingDistance`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L77).
 
 > For `t` and `t₀` in the interval of the model, `∂ₜ χ = - c / a`.
 
@@ -65,7 +65,7 @@ lemma deriv_comovingDistance {c : SpeedOfLight} {t₀ t : Time} (ht₀ : t₀ �
 
 ## B. The redshift and the change of variables
 
-**`Cosmology.FLRW.redshift`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L101).
+**`Cosmology.FLRW.redshift`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L101).
 
 > The redshift `z` of a source emitting at `t` and observed at `t₀`, with
 > `1 + z = a(t₀) / a(t)`.
@@ -74,13 +74,13 @@ lemma deriv_comovingDistance {c : SpeedOfLight} {t₀ t : Time} (ht₀ : t₀ �
 noncomputable def redshift (t₀ t : Time) : ℝ
 ```
 
-**`Cosmology.FLRW.one_add_redshift`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L103).
+**`Cosmology.FLRW.one_add_redshift`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L103).
 
 ```lean
 lemma one_add_redshift (t₀ t : Time) : 1 + U.redshift t₀ t = U.a t₀ / U.a t
 ```
 
-**`Cosmology.FLRW.deriv_redshift`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L108).
+**`Cosmology.FLRW.deriv_redshift`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L108).
 
 > For `t` in the interval of the model, `∂ₜ z = -(1 + z) H`.
 
@@ -89,7 +89,7 @@ lemma deriv_redshift {t₀ t : Time} (ht : t ∈ U.I) :
     ∂ₜ (U.redshift t₀) t = -(1 + U.redshift t₀ t) * hubbleConstant U.a t
 ```
 
-**`Cosmology.FLRW.deriv_scaleFactor_eq_mul_hubbleConstant`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L120).
+**`Cosmology.FLRW.deriv_scaleFactor_eq_mul_hubbleConstant`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L120).
 
 > For `t` in the interval of the model, `∂ₜ a = a H`.
 
@@ -98,7 +98,7 @@ lemma deriv_scaleFactor_eq_mul_hubbleConstant {t : Time} (ht : t ∈ U.I) :
     ∂ₜ U.a t = U.a t * hubbleConstant U.a t
 ```
 
-**`Cosmology.FLRW.deriv_comovingDistance_eq_mul_deriv_redshift`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L129).
+**`Cosmology.FLRW.deriv_comovingDistance_eq_mul_deriv_redshift`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L129).
 
 > For `t` and `t₀` in the interval of the model with `H(t) ≠ 0`,
 > `∂ₜ χ = (c / (a(t₀) H)) ∂ₜ z`. For `a(t₀) = 1`, this is the change of variables
@@ -113,7 +113,7 @@ lemma deriv_comovingDistance_eq_mul_deriv_redshift {c : SpeedOfLight} {t₀ t : 
 
 ## C. The proper distance and the Hubble radius
 
-**`Cosmology.FLRW.properDistance`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L145).
+**`Cosmology.FLRW.properDistance`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L145).
 
 > The proper distance `D = a χ` at fixed comoving distance `χ`.
 
@@ -121,7 +121,7 @@ lemma deriv_comovingDistance_eq_mul_deriv_redshift {c : SpeedOfLight} {t₀ t : 
 noncomputable def properDistance (χ : ℝ) (t : Time) : ℝ
 ```
 
-**`Cosmology.FLRW.deriv_properDistance`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L148).
+**`Cosmology.FLRW.deriv_properDistance`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L148).
 
 > The Hubble-Lemaître law `∂ₜ D = H D`, for `t` in the interval of the model.
 
@@ -130,7 +130,7 @@ lemma deriv_properDistance {χ : ℝ} {t : Time} (ht : t ∈ U.I) :
     ∂ₜ (U.properDistance χ) t = hubbleConstant U.a t * U.properDistance χ t
 ```
 
-**`Cosmology.FLRW.hubbleRadius`**, a def, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L158).
+**`Cosmology.FLRW.hubbleRadius`**, a def, [line 158](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L158).
 
 > The Hubble radius `R_H = c / H`.
 
@@ -138,7 +138,7 @@ lemma deriv_properDistance {χ : ℝ} {t : Time} (ht : t ∈ U.I) :
 noncomputable def hubbleRadius (c : SpeedOfLight) (t : Time) : ℝ
 ```
 
-**`Cosmology.FLRW.deriv_properDistance_eq_iff`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L163).
+**`Cosmology.FLRW.deriv_properDistance_eq_iff`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L163).
 
 > For `t` in the interval of the model with `H(t) ≠ 0`, the recession velocity `∂ₜ D` equals
 > `c` exactly at the Hubble radius.
@@ -151,7 +151,7 @@ lemma deriv_properDistance_eq_iff {χ : ℝ} {c : SpeedOfLight} {t : Time} (ht :
 
 ## D. The transverse comoving distance
 
-**`Cosmology.FLRW.transverseComovingDistance`**, a def, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L176).
+**`Cosmology.FLRW.transverseComovingDistance`**, a def, [line 176](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L176).
 
 > The transverse comoving distance `r(χ) = S(χ)` for the spatial geometry of an FLRW model.
 
@@ -159,7 +159,7 @@ lemma deriv_properDistance_eq_iff {χ : ℝ} {c : SpeedOfLight} {t : Time} (ht :
 noncomputable def transverseComovingDistance (χ : ℝ) : ℝ
 ```
 
-**`Cosmology.FLRW.transverseComovingDistance_of_curvature_pos`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L179).
+**`Cosmology.FLRW.transverseComovingDistance_of_curvature_pos`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L179).
 
 > For a positive curvature parameter `K`, `r(χ) = (1 / √K) sin (√K χ)`.
 
@@ -169,7 +169,7 @@ lemma transverseComovingDistance_of_curvature_pos (hK : 0 < U.geometry.curvature
       = 1 / √U.geometry.curvature * Real.sin (√U.geometry.curvature * χ)
 ```
 
-**`Cosmology.FLRW.transverseComovingDistance_of_curvature_eq_zero`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L198).
+**`Cosmology.FLRW.transverseComovingDistance_of_curvature_eq_zero`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L198).
 
 > For a zero curvature parameter, `r(χ) = χ`.
 
@@ -178,7 +178,7 @@ lemma transverseComovingDistance_of_curvature_eq_zero (hK : U.geometry.curvature
     U.transverseComovingDistance χ = χ
 ```
 
-**`Cosmology.FLRW.transverseComovingDistance_of_curvature_neg`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L208).
+**`Cosmology.FLRW.transverseComovingDistance_of_curvature_neg`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L208).
 
 > For a negative curvature parameter `K`, `r(χ) = (1 / √(-K)) sinh (√(-K) χ)`.
 
@@ -190,7 +190,7 @@ lemma transverseComovingDistance_of_curvature_neg (hK : U.geometry.curvature < 0
 
 ## E. The horizons
 
-**`Cosmology.FLRW.particleHorizon`**, a def, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L234).
+**`Cosmology.FLRW.particleHorizon`**, a def, [line 234](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L234).
 
 > The particle horizon at `t`, the integral of `c / a` over the times of the interval of the
 > model before `t`. It is a Lebesgue integral, equal to `0` when the integrand is not
@@ -200,7 +200,7 @@ lemma transverseComovingDistance_of_curvature_neg (hK : U.geometry.curvature < 0
 noncomputable def particleHorizon (c : SpeedOfLight) (t : Time) : ℝ
 ```
 
-**`Cosmology.FLRW.eventHorizon`**, a def, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L240).
+**`Cosmology.FLRW.eventHorizon`**, a def, [line 240](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L240).
 
 > The event horizon at `t`, the integral of `c / a` over the times of the interval of the
 > model after `t`. It is a Lebesgue integral, equal to `0` when the integrand is not
@@ -210,7 +210,7 @@ noncomputable def particleHorizon (c : SpeedOfLight) (t : Time) : ℝ
 noncomputable def eventHorizon (c : SpeedOfLight) (t : Time) : ℝ
 ```
 
-**`Cosmology.FLRW.particleHorizon_einsteinDeSitter`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean#L244).
+**`Cosmology.FLRW.particleHorizon_einsteinDeSitter`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean#L244).
 
 > The particle horizon of the Einstein-de Sitter model at `t > 0` is `3 c t₀^(2/3) t^(1/3)`.
 
@@ -227,4 +227,4 @@ lemma particleHorizon_einsteinDeSitter {t₀ : Time} {c : SpeedOfLight} (ht₀ :
 
 ## Sources
 
-- [Physlib/Cosmology/FLRW/Distances.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Distances.lean)
+- [Physlib/Cosmology/FLRW/Distances.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/Distances.lean)

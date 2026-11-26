@@ -8,7 +8,7 @@ proof: formalized
 
 # The line through B₃ and Y₃
 
-The module `Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.LineY3B3`, [Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean): 8 declarations, 2 with a docstring.
+The module `Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.LineY3B3`, [Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean): 8 declarations, 2 with a docstring.
 
 > We give properties of lines through `B₃` and `Y₃`. We show that every point on this line
 > is a solution to the quadratic `lineY₃B₃Charges_quad` and a double point of the cubic
@@ -18,7 +18,7 @@ The module `Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.LineY3B3`
 
 > * The main reference for the material in this file. [ref: Allanach:2021yjy]
 
-**`MSSMACC.lineY₃B₃Charges`**, a def, [line 30](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean#L30).
+**`MSSMACC.lineY₃B₃Charges`**, a def, [line 30](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean#L30).
 
 > The line through $Y_3$ and $B_3$ as `LinSols`.
 
@@ -26,26 +26,26 @@ The module `Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.LineY3B3`
 def lineY₃B₃Charges (a b : ℚ) : MSSMACC.LinSols
 ```
 
-**`MSSMACC.lineY₃B₃Charges_val`**, a lemma, [line 32](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean#L32).
+**`MSSMACC.lineY₃B₃Charges_val`**, a lemma, [line 32](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean#L32).
 
 ```lean
 lemma lineY₃B₃Charges_val (a b : ℚ) :
     (lineY₃B₃Charges a b).val = a • Y₃.1.1.val + b • B₃.1.1.val
 ```
 
-**`MSSMACC.lineY₃B₃Charges_quad`**, a lemma, [line 36](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean#L36).
+**`MSSMACC.lineY₃B₃Charges_quad`**, a lemma, [line 36](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean#L36).
 
 ```lean
 lemma lineY₃B₃Charges_quad (a b : ℚ) : accQuad (lineY₃B₃Charges a b).val = 0
 ```
 
-**`MSSMACC.lineY₃B₃Charges_cubic`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean#L44).
+**`MSSMACC.lineY₃B₃Charges_cubic`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean#L44).
 
 ```lean
 lemma lineY₃B₃Charges_cubic (a b : ℚ) : accCube (lineY₃B₃Charges a b).val = 0
 ```
 
-**`MSSMACC.lineY₃B₃`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean#L54).
+**`MSSMACC.lineY₃B₃`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean#L54).
 
 > The line through $Y_3$ and $B_3$ as `Sols`.
 
@@ -53,20 +53,20 @@ lemma lineY₃B₃Charges_cubic (a b : ℚ) : accCube (lineY₃B₃Charges a b).
 def lineY₃B₃ (a b : ℚ) : MSSMACC.Sols
 ```
 
-**`MSSMACC.lineY₃B₃_val`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean#L57).
+**`MSSMACC.lineY₃B₃_val`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean#L57).
 
 ```lean
 lemma lineY₃B₃_val (a b : ℚ) : (lineY₃B₃ a b).val = a • Y₃.val + b • B₃.val
 ```
 
-**`MSSMACC.doublePoint_Y₃_B₃`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean#L61).
+**`MSSMACC.doublePoint_Y₃_B₃`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean#L61).
 
 ```lean
 lemma doublePoint_Y₃_B₃ (R : MSSMACC.LinSols) :
     cubeTriLin Y₃.val B₃.val R.val = 0
 ```
 
-**`MSSMACC.lineY₃B₃_doublePoint`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean#L81).
+**`MSSMACC.lineY₃B₃_doublePoint`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean#L81).
 
 ```lean
 lemma lineY₃B₃_doublePoint (R : MSSMACC.LinSols) (a b : ℚ) :
@@ -80,4 +80,4 @@ lemma lineY₃B₃_doublePoint (R : MSSMACC.LinSols) (a b : ℚ) :
 
 ## Sources
 
-- [Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean)
+- [Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean)

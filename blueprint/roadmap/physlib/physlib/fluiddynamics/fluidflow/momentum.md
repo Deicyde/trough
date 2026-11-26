@@ -8,7 +8,7 @@ proof: formalized
 
 # Momentum fields for fluid flows
 
-The module `Physlib.FluidDynamics.FluidFlow.Momentum`, [Physlib/FluidDynamics/FluidFlow/Momentum.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Momentum.lean): 9 declarations, 9 with a docstring.
+The module `Physlib.FluidDynamics.FluidFlow.Momentum`, [Physlib/FluidDynamics/FluidFlow/Momentum.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Momentum.lean): 9 declarations, 9 with a docstring.
 
 ## i. Overview
 
@@ -31,7 +31,7 @@ The module `Physlib.FluidDynamics.FluidFlow.Momentum`, [Physlib/FluidDynamics/Fl
 
 ## A. Momentum fields
 
-**`FluidDynamics.FluidFlow.momentumDensity`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L55).
+**`FluidDynamics.FluidFlow.momentumDensity`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L55).
 
 > The momentum density `rho u`.
 
@@ -39,7 +39,7 @@ The module `Physlib.FluidDynamics.FluidFlow.Momentum`, [Physlib/FluidDynamics/Fl
 def momentumDensity (d : ℕ) (fluid : FluidFlow d) : MomentumDensityField d
 ```
 
-**`FluidDynamics.FluidFlow.momentumFlux`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L59).
+**`FluidDynamics.FluidFlow.momentumFlux`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L59).
 
 > The convective momentum flux `rho u ⊗ u`.
 
@@ -47,7 +47,7 @@ def momentumDensity (d : ℕ) (fluid : FluidFlow d) : MomentumDensityField d
 def momentumFlux (d : ℕ) (fluid : FluidFlow d) : Time → Space d → Matrix (Fin d) (Fin d) ℝ
 ```
 
-**`FluidDynamics.FluidFlow.convectiveTerm`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L65).
+**`FluidDynamics.FluidFlow.convectiveTerm`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L65).
 
 > The nonlinear transport term `(u · ∇)u`.
 
@@ -55,7 +55,7 @@ def momentumFlux (d : ℕ) (fluid : FluidFlow d) : Time → Space d → Matrix (
 noncomputable def convectiveTerm (d : ℕ) (fluid : FluidFlow d) : VectorField d
 ```
 
-**`FluidDynamics.FluidFlow.materialAcceleration`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L69).
+**`FluidDynamics.FluidFlow.materialAcceleration`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L69).
 
 > The material acceleration `∂ₜ u + (u · ∇)u`.
 
@@ -65,7 +65,7 @@ noncomputable def materialAcceleration (d : ℕ) (fluid : FluidFlow d) : VectorF
 
 ## B. Momentum transport identity
 
-**`FluidDynamics.FluidFlow.timeDeriv_smul_velocity`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L79).
+**`FluidDynamics.FluidFlow.timeDeriv_smul_velocity`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L79).
 
 > Product rule for the time derivative of a scalar field times a velocity field.
 
@@ -78,7 +78,7 @@ lemma timeDeriv_smul_velocity (d : ℕ) (rhoAtPosition : Time → ℝ)
       rhoAtPosition t • ∂ₜ velocityAtPosition t + ∂ₜ rhoAtPosition t • velocityAtPosition t
 ```
 
-**`FluidDynamics.FluidFlow.timeDeriv_momentumDensity`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L93).
+**`FluidDynamics.FluidFlow.timeDeriv_momentumDensity`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L93).
 
 > Product rule for the time derivative of the momentum density `rho u`.
 
@@ -91,7 +91,7 @@ lemma timeDeriv_momentumDensity (d : ℕ) (fluid : FluidFlow d)
       fluid.rho t x • ∂ₜ (fluid.velocity · x) t + ∂ₜ (fluid.rho · x) t • fluid.velocity t x
 ```
 
-**`FluidDynamics.FluidFlow.spaceDeriv_momentumFlux_component`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L103).
+**`FluidDynamics.FluidFlow.spaceDeriv_momentumFlux_component`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L103).
 
 > Product rule for one spatial derivative of one component of `rho u ⊗ u`.
 
@@ -105,7 +105,7 @@ lemma spaceDeriv_momentumFlux_component (d : ℕ) (fluid : FluidFlow d)
       ∂[j] (fun x' => fluid.velocity t x' i) x • momentumDensity d fluid t x j
 ```
 
-**`FluidDynamics.FluidFlow.matrixDiv_momentumFlux`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L121).
+**`FluidDynamics.FluidFlow.matrixDiv_momentumFlux`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L121).
 
 > The matrix divergence of `rho u ⊗ u` split into continuity and convective parts.
 
@@ -119,7 +119,7 @@ lemma matrixDiv_momentumFlux (d : ℕ) (fluid : FluidFlow d)
         fluid.rho t x • convectiveTerm d fluid t x
 ```
 
-**`FluidDynamics.FluidFlow.momentumTransport_eq_materialAcceleration_add_continuityResidual`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L161).
+**`FluidDynamics.FluidFlow.momentumTransport_eq_materialAcceleration_add_continuityResidual`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Momentum.lean#L161).
 
 > The conservative momentum transport terms equal mass density times material acceleration plus
 > the continuity residual times velocity.
@@ -144,4 +144,4 @@ lemma momentumTransport_eq_materialAcceleration_add_continuityResidual
 
 ## Sources
 
-- [Physlib/FluidDynamics/FluidFlow/Momentum.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Momentum.lean)
+- [Physlib/FluidDynamics/FluidFlow/Momentum.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Momentum.lean)

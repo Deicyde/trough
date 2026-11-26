@@ -8,7 +8,7 @@ proof: formalized
 
 # A Schwartz bound for the retarded kernel
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.Tempered`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean): 11 declarations, 10 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.Tempered`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean): 11 declarations, 10 with a docstring.
 
 > The retarded kernel tested against a test function is bounded by a finite number of weighted
 > derivative bounds of the test function. The bound does not depend on the test function.
@@ -59,7 +59,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.Tempere
 > - `temperedKernel` : the retarded kernel as a tempered distribution.
 > - `temperedKernel_unique` : the tempered extension is unique.
 
-**`KleinGordon.norm_sineEvolution_zero_le`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L94).
+**`KleinGordon.norm_sineEvolution_zero_le`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L94).
 
 > The sine evolution at the origin is bounded by the time and the `L¹` norm of the transform.
 
@@ -69,7 +69,7 @@ lemma norm_sineEvolution_zero_le [MeasurableSpace E] [BorelSpace E] [FiniteDimen
     ‖sineEvolution F r μ g 0‖ ≤ |r| * ∫ ξ : E, ‖𝓕 g ξ‖
 ```
 
-**`KleinGordon.weighted_seminorm_slice_le`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L113).
+**`KleinGordon.weighted_seminorm_slice_le`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L113).
 
 > **Weighted bounds of `ψ` bound the seminorms of its slices.** If `(1 + ‖y‖)^N` times the
 > derivatives of `ψ` up to the order `N` are bounded by `M`, then the seminorm `(k, p)` of the slice
@@ -82,7 +82,7 @@ lemma weighted_seminorm_slice_le (ψ : 𝓓((⊤ : TopologicalSpace.Opens (ℝ �
     SchwartzMap.seminorm ℂ k p (TimeSlice.slice F ψ s) ≤ M / (1 + |s|) ^ 3
 ```
 
-**`KleinGordon.exists_norm_integral_sineEvolution_le`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L142).
+**`KleinGordon.exists_norm_integral_sineEvolution_le`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L142).
 
 > **The time integral is bounded.** There are an order `N` and a constant `C` such that weighted
 > bounds of the derivatives of `ψ` by `M` bound the damped time integral of the sine evolution of
@@ -96,7 +96,7 @@ lemma exists_norm_integral_sineEvolution_le {μ : ℝ} (hμ : 0 ≤ μ) :
         sineEvolution ℂ s μ (TimeSlice.slice ℂ ψ s) 0‖ ≤ C * M
 ```
 
-**`KleinGordon.exists_weighted_bound_sourceEquiv`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L203).
+**`KleinGordon.exists_weighted_bound_sourceEquiv`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L203).
 
 > Transporting a complexified spacetime test function to time-space coordinates keeps the
 > weighted derivative bounds up to a constant.
@@ -110,7 +110,7 @@ lemma exists_weighted_bound_sourceEquiv (d N : ℕ) :
           A * M
 ```
 
-**`KleinGordon.exists_abs_retardedPointSource_le`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L250).
+**`KleinGordon.exists_abs_retardedPointSource_le`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L250).
 
 > **The retarded kernel is bounded by Schwartz-type seminorms.** There are an order `N` and a
 > constant `C` such that weighted derivative bounds of a test function by `M` bound the retarded
@@ -123,7 +123,7 @@ lemma exists_abs_retardedPointSource_le (d : ℕ) (m : ℝ) :
       |retardedPointSource m (0 : SpaceTime d) φ| ≤ C * M
 ```
 
-**`KleinGordon.exists_seminorm_weighted_le`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L279).
+**`KleinGordon.exists_seminorm_weighted_le`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L279).
 
 > **Weighted bounds from Schwartz seminorms.** There is a continuous seminorm `q` on Schwartz
 > space such that `q` of a test function bounds its weighted derivatives of order up to `N`.
@@ -135,7 +135,7 @@ lemma exists_seminorm_weighted_le (d N : ℕ) :
         (1 + ‖y‖) ^ N * ‖iteratedFDeriv ℝ n φ y‖ ≤ 2 ^ (N + 1) * q (ofTestFunction φ)
 ```
 
-**`KleinGordon.exists_tempered_extension`**, a lemma, [line 334](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L334).
+**`KleinGordon.exists_tempered_extension`**, a lemma, [line 334](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L334).
 
 > **The retarded kernel is a tempered distribution.** The retarded kernel extends to a
 > continuous linear functional on the Schwartz space of spacetime.
@@ -146,7 +146,7 @@ lemma exists_tempered_extension (d : ℕ) (m : ℝ) :
       T (ofTestFunction φ) = retardedPointSource m (0 : SpaceTime d) φ
 ```
 
-**`KleinGordon.tempered_ext`**, a lemma, [line 372](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L372).
+**`KleinGordon.tempered_ext`**, a lemma, [line 372](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L372).
 
 > Two tempered distributions that agree on test functions are equal.
 
@@ -156,7 +156,7 @@ lemma tempered_ext (d : ℕ) {T T' : 𝓢(SpaceTime d, ℝ) →L[ℝ] ℝ}
       T (ofTestFunction φ) = T' (ofTestFunction φ)) : T = T'
 ```
 
-**`KleinGordon.temperedKernel`**, a def, [line 381](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L381).
+**`KleinGordon.temperedKernel`**, a def, [line 381](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L381).
 
 > The retarded kernel as a tempered distribution on spacetime.
 
@@ -164,7 +164,7 @@ lemma tempered_ext (d : ℕ) {T T' : 𝓢(SpaceTime d, ℝ) →L[ℝ] ℝ}
 def temperedKernel (d : ℕ) (m : ℝ) : 𝓢(SpaceTime d, ℝ) →L[ℝ] ℝ
 ```
 
-**`KleinGordon.temperedKernel_apply`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L384).
+**`KleinGordon.temperedKernel_apply`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L384).
 
 ```lean
 lemma temperedKernel_apply (d : ℕ) (m : ℝ)
@@ -172,7 +172,7 @@ lemma temperedKernel_apply (d : ℕ) (m : ℝ)
     temperedKernel d m (ofTestFunction φ) = retardedPointSource m (0 : SpaceTime d) φ
 ```
 
-**`KleinGordon.temperedKernel_unique`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L390).
+**`KleinGordon.temperedKernel_unique`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean#L390).
 
 > **The tempered extension is unique.**
 
@@ -195,4 +195,4 @@ lemma temperedKernel_unique (d : ℕ) (m : ℝ) {T : 𝓢(SpaceTime d, ℝ) →L
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Coordinate-axis boosts in `SL(2,ℂ)` and the Lorentz group
 
-The module `Physlib.Relativity.LorentzGroup.Boosts.Axis`, [Physlib/Relativity/LorentzGroup/Boosts/Axis.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean): 10 declarations, 10 with a docstring.
+The module `Physlib.Relativity.LorentzGroup.Boosts.Axis`, [Physlib/Relativity/LorentzGroup/Boosts/Axis.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean): 10 declarations, 10 with a docstring.
 
 ## i. Overview
 
@@ -41,7 +41,7 @@ The module `Physlib.Relativity.LorentzGroup.Boosts.Axis`, [Physlib/Relativity/Lo
 
 ## A. The axis-boost lift
 
-**`Lorentz.SL2C.boostAxis`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L65).
+**`Lorentz.SL2C.boostAxis`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L65).
 
 > The `SL(2,ℂ)` lift of the boost along spatial axis `i`, with `0 = x`, `1 = y`, and
 > `2 = z`. The parameter `t` is multiplicative, and for `t > 0` the rapidity is `2 * log t`.
@@ -50,7 +50,7 @@ The module `Physlib.Relativity.LorentzGroup.Boosts.Axis`, [Physlib/Relativity/Lo
 noncomputable def boostAxis : Fin 3 → (t : ℝ) → t ≠ 0 → SL(2,ℂ)
 ```
 
-**`Lorentz.SL2C.boostAxis_zero_apply`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L99).
+**`Lorentz.SL2C.boostAxis_zero_apply`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L99).
 
 > The matrix entries of the `SL(2,ℂ)` boost lift along the `x`-axis.
 
@@ -61,7 +61,7 @@ lemma boostAxis_zero_apply (t : ℝ) (ht : t ≠ 0) (j k : Fin 2) :
         ((t : ℂ) - (t : ℂ)⁻¹) / 2, ((t : ℂ) + (t : ℂ)⁻¹) / 2]) j k
 ```
 
-**`Lorentz.SL2C.boostAxis_one_apply`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L105).
+**`Lorentz.SL2C.boostAxis_one_apply`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L105).
 
 > The matrix entries of the `SL(2,ℂ)` boost lift along the `y`-axis.
 
@@ -74,7 +74,7 @@ lemma boostAxis_one_apply (t : ℝ) (ht : t ≠ 0) (j k : Fin 2) :
         ((t : ℂ) + (t : ℂ)⁻¹) / 2]) j k
 ```
 
-**`Lorentz.SL2C.boostAxis_two_apply`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L113).
+**`Lorentz.SL2C.boostAxis_two_apply`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L113).
 
 > The matrix entries of the diagonal `SL(2,ℂ)` boost lift along the `z`-axis.
 
@@ -83,7 +83,7 @@ lemma boostAxis_two_apply (t : ℝ) (ht : t ≠ 0) (j k : Fin 2) :
     (boostAxis 2 t ht).1 j k = (!![(t : ℂ), 0; 0, (t : ℂ)⁻¹]) j k
 ```
 
-**`Lorentz.SL2C.boostAxis_inv`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L117).
+**`Lorentz.SL2C.boostAxis_inv`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L117).
 
 > Inverting an axis boost replaces its multiplicative parameter `t` by `t⁻¹`.
 
@@ -92,7 +92,7 @@ lemma boostAxis_inv (i : Fin 3) (t : ℝ) (ht : t ≠ 0) :
     (boostAxis i t ht)⁻¹ = boostAxis i t⁻¹ (inv_ne_zero ht)
 ```
 
-**`Lorentz.SL2C.boostAxis_conjTranspose`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L136).
+**`Lorentz.SL2C.boostAxis_conjTranspose`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L136).
 
 > The matrix underlying an axis-boost lift is Hermitian.
 
@@ -103,7 +103,7 @@ lemma boostAxis_conjTranspose (i : Fin 3) (t : ℝ) (ht : t ≠ 0) :
 
 ## B. Axis conjugation
 
-**`Lorentz.SL2C.boostAxis_eq_conj`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L147).
+**`Lorentz.SL2C.boostAxis_eq_conj`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L147).
 
 > Every axis boost is obtained by conjugating the `z`-axis boost by `rotationZToAxis`.
 
@@ -113,7 +113,7 @@ lemma boostAxis_eq_conj (i : Fin 3) (t : ℝ) (ht : t ≠ 0) :
       rotationZToAxis i * boostAxis 2 t ht * (rotationZToAxis i)⁻¹
 ```
 
-**`Lorentz.SL2C.exists_conj_boostAxis`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L172).
+**`Lorentz.SL2C.exists_conj_boostAxis`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L172).
 
 > Every coordinate-axis boost is conjugate to the `z`-axis boost.
 
@@ -125,7 +125,7 @@ lemma exists_conj_boostAxis (i : Fin 3) :
 
 ## C. The induced Lorentz transformation
 
-**`LorentzGroup.boostAxis`**, a def, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L189).
+**`LorentzGroup.boostAxis`**, a def, [line 189](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L189).
 
 > The Lorentz transformation induced by the multiplicatively parameterized `SL(2,ℂ)` boost
 > along spatial axis `i`.
@@ -134,7 +134,7 @@ lemma exists_conj_boostAxis (i : Fin 3) :
 noncomputable def boostAxis (i : Fin 3) (t : ℝ) (ht : t ≠ 0) : LorentzGroup 3
 ```
 
-**`LorentzGroup.boostAxis_apply`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L193).
+**`LorentzGroup.boostAxis_apply`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean#L193).
 
 > The entries of an axis boost in the Lorentz group.
 
@@ -155,4 +155,4 @@ lemma boostAxis_apply (i : Fin 3) (t : ℝ) (ht : t ≠ 0) (a b : Fin 1 ⊕ Fin 
 
 ## Sources
 
-- [Physlib/Relativity/LorentzGroup/Boosts/Axis.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean)
+- [Physlib/Relativity/LorentzGroup/Boosts/Axis.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzGroup/Boosts/Axis.lean)

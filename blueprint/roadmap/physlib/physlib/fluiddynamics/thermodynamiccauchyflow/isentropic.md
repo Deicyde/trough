@@ -8,7 +8,7 @@ proof: formalized
 
 # Isentropic thermodynamic Cauchy flows
 
-The module `Physlib.FluidDynamics.ThermodynamicCauchyFlow.Isentropic`, [Physlib/FluidDynamics/ThermodynamicCauchyFlow/Isentropic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Isentropic.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.FluidDynamics.ThermodynamicCauchyFlow.Isentropic`, [Physlib/FluidDynamics/ThermodynamicCauchyFlow/Isentropic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Isentropic.lean): 1 declaration, 1 with a docstring.
 
 ## i. Overview
 
@@ -25,7 +25,7 @@ The module `Physlib.FluidDynamics.ThermodynamicCauchyFlow.Isentropic`, [Physlib/
 
 ## A. Thermodynamic-flow predicates
 
-**`FluidDynamics.ThermodynamicCauchyFlow.IsIsentropic`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Isentropic.lean#L46).
+**`FluidDynamics.ThermodynamicCauchyFlow.IsIsentropic`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Isentropic.lean#L46).
 
 > A thermodynamic flow is isentropic when the entropy is materially conserved along the
 > underlying fluid velocity field.
@@ -41,4 +41,4 @@ def IsIsentropic (d : ℕ) (flow : ThermodynamicCauchyFlow d) : Prop
 
 ## Sources
 
-- [Physlib/FluidDynamics/ThermodynamicCauchyFlow/Isentropic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Isentropic.lean)
+- [Physlib/FluidDynamics/ThermodynamicCauchyFlow/Isentropic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Isentropic.lean)

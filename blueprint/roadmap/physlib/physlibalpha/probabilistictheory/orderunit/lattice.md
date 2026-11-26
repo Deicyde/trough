@@ -8,7 +8,7 @@ proof: formalized
 
 # Lattice-ordered observables (Lattice)
 
-The module `PhyslibAlpha.ProbabilisticTheory.OrderUnit.Lattice`, [PhyslibAlpha/ProbabilisticTheory/OrderUnit/Lattice.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Lattice.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.OrderUnit.Lattice`, [PhyslibAlpha/ProbabilisticTheory/OrderUnit/Lattice.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Lattice.lean): 2 declarations, 2 with a docstring.
 
 > Order-unit lattices: Archimedean order-unit spaces whose order is a lattice.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.OrderUnit.Lattice`, [PhyslibAlpha/P
 
 ## A. Order-unit lattices
 
-**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice`**, a class, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Lattice.lean#L54).
+**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice`**, a class, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Lattice.lean#L54).
 
 > An Archimedean order-unit space whose order is a lattice.
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.OrderUnit.Lattice`, [PhyslibAlpha/P
 class OrderUnitLattice (E : Type*) extends ArchimedeanOrderUnitSpace E, Lattice E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.map_sup_of_map_inf`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Lattice.lean#L61).
+**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.map_sup_of_map_inf`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Lattice.lean#L61).
 
 > A positive functional preserves suprema whenever it preserves infima.
 
@@ -56,4 +56,4 @@ lemma map_sup_of_map_inf {ω : E →ₚ[ℝ] ℝ} (h : ∀ f g, ω (f ⊓ g) = m
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/OrderUnit/Lattice.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Lattice.lean)
+- [PhyslibAlpha/ProbabilisticTheory/OrderUnit/Lattice.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Lattice.lean)

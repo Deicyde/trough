@@ -8,7 +8,7 @@ proof: formalized
 
 # Operators on one coordinate of a product of finite targets
 
-The module `PhyslibAlpha.QuantumMechanics.HilbertSpaces.FiniteTarget.Product`, [PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean): 13 declarations, 11 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.HilbertSpaces.FiniteTarget.Product`, [PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean): 13 declarations, 11 with a docstring.
 
 ## i. Overview
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.QuantumMechanics.HilbertSpaces.FiniteTarget.Product`, [
 
 ## A. Amplitudes
 
-**`QuantumMechanics.FiniteHilbertSpace.val_apply_basisFun`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L58).
+**`QuantumMechanics.FiniteHilbertSpace.val_apply_basisFun`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L58).
 
 > The amplitude `⟨a|A|a'⟩` of an operator is the `a` component of `A |a'⟩`.
 
@@ -40,7 +40,7 @@ lemma val_apply_basisFun (A : 𝓗[α] →ₗ[ℂ] 𝓗[α]) (a a' : α) :
     (A (basisFun α a')).val a = ⟪basisFun α a, A (basisFun α a')⟫_ℂ
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.val_apply`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L63).
+**`QuantumMechanics.FiniteHilbertSpace.val_apply`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L63).
 
 > An operator in components: `(A ψ) a = ∑ a', ⟨a|A|a'⟩ ψ a'`.
 
@@ -51,7 +51,7 @@ lemma val_apply (A : 𝓗[α] →ₗ[ℂ] 𝓗[α]) (ψ : 𝓗[α]) (a : α) :
 
 ## B. Operators on one coordinate
 
-**`QuantumMechanics.FiniteHilbertSpace.onFst`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L80).
+**`QuantumMechanics.FiniteHilbertSpace.onFst`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L80).
 
 > The operator `A` acting on the first coordinate: `(A Ψ) (a, b) = ∑ a', ⟨a|A|a'⟩ Ψ (a', b)`.
 
@@ -59,7 +59,7 @@ lemma val_apply (A : 𝓗[α] →ₗ[ℂ] 𝓗[α]) (ψ : 𝓗[α]) (a : α) :
 noncomputable def onFst (A : 𝓗[α] →ₗ[ℂ] 𝓗[α]) : 𝓗[α × β] →ₗ[ℂ] 𝓗[α × β]
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.onSnd`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L90).
+**`QuantumMechanics.FiniteHilbertSpace.onSnd`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L90).
 
 > The operator `B` acting on the second coordinate: `(B Ψ) (a, b) = ∑ b', ⟨b|B|b'⟩ Ψ (a, b')`.
 
@@ -67,14 +67,14 @@ noncomputable def onFst (A : 𝓗[α] →ₗ[ℂ] 𝓗[α]) : 𝓗[α × β] →
 noncomputable def onSnd (B : 𝓗[β] →ₗ[ℂ] 𝓗[β]) : 𝓗[α × β] →ₗ[ℂ] 𝓗[α × β]
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.onFst_val`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L99).
+**`QuantumMechanics.FiniteHilbertSpace.onFst_val`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L99).
 
 ```lean
 lemma onFst_val (A : 𝓗[α] →ₗ[ℂ] 𝓗[α]) (Ψ : 𝓗[α × β]) (p : α × β) :
     (onFst A Ψ).val p = ∑ a, (A (basisFun α a)).val p.1 * Ψ.val (a, p.2)
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.onSnd_val`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L102).
+**`QuantumMechanics.FiniteHilbertSpace.onSnd_val`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L102).
 
 ```lean
 lemma onSnd_val (B : 𝓗[β] →ₗ[ℂ] 𝓗[β]) (Ψ : 𝓗[α × β]) (p : α × β) :
@@ -83,7 +83,7 @@ lemma onSnd_val (B : 𝓗[β] →ₗ[ℂ] 𝓗[β]) (Ψ : 𝓗[α × β]) (p : �
 
 ## C. Composition
 
-**`QuantumMechanics.FiniteHilbertSpace.onFst_comp`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L112).
+**`QuantumMechanics.FiniteHilbertSpace.onFst_comp`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L112).
 
 > Acting twice on the first coordinate composes the operators.
 
@@ -92,7 +92,7 @@ lemma onFst_comp (A A' : 𝓗[α] →ₗ[ℂ] 𝓗[α]) :
     onFst (β := β) (A ∘ₗ A') = onFst A ∘ₗ onFst A'
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.onSnd_comp`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L121).
+**`QuantumMechanics.FiniteHilbertSpace.onSnd_comp`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L121).
 
 > Acting twice on the second coordinate composes the operators.
 
@@ -101,7 +101,7 @@ lemma onSnd_comp (B B' : 𝓗[β] →ₗ[ℂ] 𝓗[β]) :
     onSnd (α := α) (B ∘ₗ B') = onSnd B ∘ₗ onSnd B'
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.onFst_comp_onSnd`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L130).
+**`QuantumMechanics.FiniteHilbertSpace.onFst_comp_onSnd`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L130).
 
 > Operators on different coordinates commute.
 
@@ -112,7 +112,7 @@ lemma onFst_comp_onSnd (A : 𝓗[α] →ₗ[ℂ] 𝓗[α]) (B : 𝓗[β] →ₗ[
 
 ## D. Hermiticity
 
-**`QuantumMechanics.FiniteHilbertSpace.inner_eq_sum`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L144).
+**`QuantumMechanics.FiniteHilbertSpace.inner_eq_sum`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L144).
 
 > The inner product of `𝓗[α × β]` in components.
 
@@ -121,7 +121,7 @@ lemma inner_eq_sum (Ψ Φ : 𝓗[α × β]) :
     ⟪Ψ, Φ⟫_ℂ = ∑ p, (starRingEnd ℂ) (Ψ.val p) * Φ.val p
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.conj_val_apply_basisFun`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L150).
+**`QuantumMechanics.FiniteHilbertSpace.conj_val_apply_basisFun`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L150).
 
 > Hermitian amplitudes: `conj ⟨a'|A|a⟩ = ⟨a|A|a'⟩`.
 
@@ -130,7 +130,7 @@ lemma conj_val_apply_basisFun {A : 𝓗[α] →ₗ[ℂ] 𝓗[α]} (hA : A.IsSymm
     (starRingEnd ℂ) ((A (basisFun α a)).val a') = (A (basisFun α a')).val a
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.onFst_isSymmetric`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L155).
+**`QuantumMechanics.FiniteHilbertSpace.onFst_isSymmetric`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L155).
 
 > A hermitian operator on the first coordinate is hermitian.
 
@@ -139,7 +139,7 @@ lemma onFst_isSymmetric {A : 𝓗[α] →ₗ[ℂ] 𝓗[α]} (hA : A.IsSymmetric)
     (onFst (β := β) A).IsSymmetric
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.onSnd_isSymmetric`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L168).
+**`QuantumMechanics.FiniteHilbertSpace.onSnd_isSymmetric`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean#L168).
 
 > A hermitian operator on the second coordinate is hermitian.
 
@@ -154,4 +154,4 @@ lemma onSnd_isSymmetric {B : 𝓗[β] →ₗ[ℂ] 𝓗[β]} (hB : B.IsSymmetric)
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean)
+- [PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean)

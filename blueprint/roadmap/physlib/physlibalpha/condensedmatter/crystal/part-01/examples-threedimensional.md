@@ -8,7 +8,7 @@ proof: formalized
 
 # Orthorhombic, cubic and hexagonal close-packed crystals
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.Examples.ThreeDimensional`, [PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean): 31 declarations (1 instance with no name), 30 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.CondensedMatter.Crystal.Examples.ThreeDimensional`, [PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean): 31 declarations (1 instance with no name), 30 with a docstring; 1 private, not shown.
 
 > The orthorhombic lattice and the face-centred cubic, body-centred cubic and hexagonal
 > close-packed crystals, with embeddings that allow different lengths along the coordinate axes.
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Examples.ThreeDimensional`, [Ph
 
 ## A. Orthorhombic lattices
 
-**`CondensedMatter.Crystal.orthorhombicVectors`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L67).
+**`CondensedMatter.Crystal.orthorhombicVectors`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L67).
 
 > The primitive vectors of an orthorhombic lattice: `l i` along the `i`-th coordinate axis.
 
@@ -55,7 +55,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Examples.ThreeDimensional`, [Ph
 noncomputable def orthorhombicVectors {d : ℕ} (l : Fin d → ℝ) : Fin d → EuclideanSpace ℝ (Fin d)
 ```
 
-**`CondensedMatter.Crystal.orthorhombicVectors_independent`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L71).
+**`CondensedMatter.Crystal.orthorhombicVectors_independent`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L71).
 
 > The primitive vectors of an orthorhombic lattice are independent when no length vanishes.
 
@@ -64,7 +64,7 @@ lemma orthorhombicVectors_independent {d : ℕ} {l : Fin d → ℝ} (hl : ∀ i,
     LinearIndependent ℝ (orthorhombicVectors l)
 ```
 
-**`CondensedMatter.Crystal.orthorhombicGeometry`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L80).
+**`CondensedMatter.Crystal.orthorhombicGeometry`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L80).
 
 > The hypercubic crystal embedded with the length `l i` along the `i`-th axis.
 
@@ -75,7 +75,7 @@ noncomputable def orthorhombicGeometry {d : ℕ} (l : Fin d → ℝ) (hl : ∀ i
 
 ## B. Face-centred cubic lattice
 
-**`CondensedMatter.Crystal.fcc`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L89).
+**`CondensedMatter.Crystal.fcc`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L89).
 
 > One site per primitive cell of the face-centred cubic lattice.
 
@@ -83,7 +83,7 @@ noncomputable def orthorhombicGeometry {d : ℕ} (l : Fin d → ℝ) (hl : ∀ i
 def fcc
 ```
 
-**`CondensedMatter.Crystal.fccVectors`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L93).
+**`CondensedMatter.Crystal.fccVectors`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L93).
 
 > Primitive vectors from a corner to the centres of the three adjacent faces of a box with
 > sides `a`, `b`, `c`.
@@ -92,7 +92,7 @@ def fcc
 noncomputable def fccVectors (a b c : ℝ) : Fin 3 → EuclideanSpace ℝ (Fin 3)
 ```
 
-**`CondensedMatter.Crystal.fccVectors_independent`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L97).
+**`CondensedMatter.Crystal.fccVectors_independent`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L97).
 
 > The primitive vectors of the face-centred lattice are independent for positive lengths.
 
@@ -101,7 +101,7 @@ lemma fccVectors_independent {a b c : ℝ} (ha : 0 < a) (hb : 0 < b) (hc : 0 < c
     LinearIndependent ℝ (fccVectors a b c)
 ```
 
-**`CondensedMatter.Crystal.fccGeometry`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L114).
+**`CondensedMatter.Crystal.fccGeometry`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L114).
 
 > The face-centred cubic lattice embedded with a box of sides `a`, `b`, `c`.
 
@@ -110,7 +110,7 @@ noncomputable def fccGeometry (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < 
     Geometry fcc (EuclideanSpace ℝ (Fin 3))
 ```
 
-**`CondensedMatter.Crystal.fccBonds`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L121).
+**`CondensedMatter.Crystal.fccBonds`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L121).
 
 > The twelve nearest neighbours, up to sign: along the three primitive vectors and along their
 > differences.
@@ -119,7 +119,7 @@ noncomputable def fccGeometry (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < 
 def fccBonds : List (Bond (Fin 3 → ℤ) Unit)
 ```
 
-**`CondensedMatter.Crystal.fccGraph`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L126).
+**`CondensedMatter.Crystal.fccGraph`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L126).
 
 > The twelve-neighbour face-centred cubic graph.
 
@@ -129,7 +129,7 @@ def fccGraph : PeriodicGraph fcc
 
 ## C. Body-centred cubic lattice
 
-**`CondensedMatter.Crystal.bcc`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L132).
+**`CondensedMatter.Crystal.bcc`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L132).
 
 > One site per primitive cell of the body-centred cubic lattice.
 
@@ -137,7 +137,7 @@ def fccGraph : PeriodicGraph fcc
 def bcc
 ```
 
-**`CondensedMatter.Crystal.bccVectors`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L136).
+**`CondensedMatter.Crystal.bccVectors`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L136).
 
 > Primitive vectors from a corner to the centres of three adjacent boxes of sides `a`, `b`,
 > `c`.
@@ -146,7 +146,7 @@ def bcc
 noncomputable def bccVectors (a b c : ℝ) : Fin 3 → EuclideanSpace ℝ (Fin 3)
 ```
 
-**`CondensedMatter.Crystal.bccVectors_independent`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L140).
+**`CondensedMatter.Crystal.bccVectors_independent`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L140).
 
 > The primitive vectors of the body-centred lattice are independent for positive lengths.
 
@@ -155,7 +155,7 @@ lemma bccVectors_independent {a b c : ℝ} (ha : 0 < a) (hb : 0 < b) (hc : 0 < c
     LinearIndependent ℝ (bccVectors a b c)
 ```
 
-**`CondensedMatter.Crystal.bccGeometry`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L157).
+**`CondensedMatter.Crystal.bccGeometry`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L157).
 
 > The body-centred cubic lattice embedded with a box of sides `a`, `b`, `c`.
 
@@ -164,7 +164,7 @@ noncomputable def bccGeometry (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < 
     Geometry bcc (EuclideanSpace ℝ (Fin 3))
 ```
 
-**`CondensedMatter.Crystal.bccBonds`**, a def, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L164).
+**`CondensedMatter.Crystal.bccBonds`**, a def, [line 164](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L164).
 
 > The eight nearest neighbours, up to sign: along the three primitive vectors and along their
 > sum, the body diagonal of the box.
@@ -173,7 +173,7 @@ noncomputable def bccGeometry (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < 
 def bccBonds : List (Bond (Fin 3 → ℤ) Unit)
 ```
 
-**`CondensedMatter.Crystal.bccGraph`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L168).
+**`CondensedMatter.Crystal.bccGraph`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L168).
 
 > The eight-neighbour body-centred cubic graph.
 
@@ -183,7 +183,7 @@ def bccGraph : PeriodicGraph bcc
 
 ## D. Hexagonal close-packed crystal
 
-**`CondensedMatter.Crystal.HcpLabel`**, an inductive, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L174).
+**`CondensedMatter.Crystal.HcpLabel`**, an inductive, [line 174](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L174).
 
 > The two layers of an hcp crystal: the sites of the second layer are shifted within the plane
 > and raised by half a period.
@@ -197,13 +197,13 @@ inductive HcpLabel
   deriving DecidableEq, Repr
 ```
 
-**An instance with no name**, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L181).
+**An instance with no name**, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L181).
 
 ```lean
 instance : Fintype HcpLabel
 ```
 
-**`CondensedMatter.Crystal.hcp`**, a def, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L187).
+**`CondensedMatter.Crystal.hcp`**, a def, [line 187](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L187).
 
 > Two sites per primitive cell of the hexagonal close-packed crystal.
 
@@ -211,7 +211,7 @@ instance : Fintype HcpLabel
 def hcp
 ```
 
-**`CondensedMatter.Crystal.hcpVectors`**, a def, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L190).
+**`CondensedMatter.Crystal.hcpVectors`**, a def, [line 190](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L190).
 
 > Primitive vectors of the hexagonal lattice with in-plane length `a` and period `c`.
 
@@ -219,7 +219,7 @@ def hcp
 noncomputable def hcpVectors (a c : ℝ) : Fin 3 → EuclideanSpace ℝ (Fin 3)
 ```
 
-**`CondensedMatter.Crystal.hcpVectors_independent`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L194).
+**`CondensedMatter.Crystal.hcpVectors_independent`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L194).
 
 > The primitive vectors of the hexagonal lattice are independent for positive lengths.
 
@@ -228,7 +228,7 @@ lemma hcpVectors_independent {a c : ℝ} (ha : 0 < a) (hc : 0 < c) :
     LinearIndependent ℝ (hcpVectors a c)
 ```
 
-**`CondensedMatter.Crystal.hcpBasis`**, a def, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L211).
+**`CondensedMatter.Crystal.hcpBasis`**, a def, [line 211](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L211).
 
 > Positions of the two sites in the reference cell.
 
@@ -236,7 +236,7 @@ lemma hcpVectors_independent {a c : ℝ} (ha : 0 < a) (hc : 0 < c) :
 noncomputable def hcpBasis (a c : ℝ) : HcpLabel → EuclideanSpace ℝ (Fin 3)
 ```
 
-**`CondensedMatter.Crystal.hcp_positions_injective`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L216).
+**`CondensedMatter.Crystal.hcp_positions_injective`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L216).
 
 > The two layers occupy distinct positions.
 
@@ -246,7 +246,7 @@ lemma hcp_positions_injective {a c : ℝ} (ha : 0 < a) (hc : 0 < c) : Function.I
       latticeMap (hcpVectors a c) x.cell + hcpBasis a c x.label)
 ```
 
-**`CondensedMatter.Crystal.hcpGeometry`**, a def, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L240).
+**`CondensedMatter.Crystal.hcpGeometry`**, a def, [line 240](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L240).
 
 > The hexagonal close-packed crystal with in-plane length `a` and layer period `c`.
 
@@ -255,7 +255,7 @@ noncomputable def hcpGeometry (a c : ℝ) (ha : 0 < a) (hc : 0 < c) :
     Geometry hcp (EuclideanSpace ℝ (Fin 3))
 ```
 
-**`CondensedMatter.Crystal.hcpBonds`**, a def, [line 246](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L246).
+**`CondensedMatter.Crystal.hcpBonds`**, a def, [line 246](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L246).
 
 > The nearest neighbours: six in the plane of each layer, and three in each adjacent layer.
 
@@ -263,7 +263,7 @@ noncomputable def hcpGeometry (a c : ℝ) (ha : 0 < a) (hc : 0 < c) :
 def hcpBonds : List (Bond (Fin 3 → ℤ) HcpLabel)
 ```
 
-**`CondensedMatter.Crystal.hcpGraph`**, a def, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L253).
+**`CondensedMatter.Crystal.hcpGraph`**, a def, [line 253](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L253).
 
 > The twelve-neighbour hexagonal close-packed graph.
 
@@ -273,7 +273,7 @@ def hcpGraph : PeriodicGraph hcp
 
 ## E. Coordination numbers
 
-**`CondensedMatter.Crystal.fcc_neighbors_card`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L258).
+**`CondensedMatter.Crystal.fcc_neighbors_card`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L258).
 
 > Each site of the face-centred cubic lattice has twelve neighbours.
 
@@ -281,7 +281,7 @@ def hcpGraph : PeriodicGraph hcp
 lemma fcc_neighbors_card (x : fcc.Site) : (fccGraph.neighbors x).card = 12
 ```
 
-**`CondensedMatter.Crystal.bcc_neighbors_card`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L265).
+**`CondensedMatter.Crystal.bcc_neighbors_card`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L265).
 
 > Each site of the body-centred cubic lattice has eight neighbours.
 
@@ -289,7 +289,7 @@ lemma fcc_neighbors_card (x : fcc.Site) : (fccGraph.neighbors x).card = 12
 lemma bcc_neighbors_card (x : bcc.Site) : (bccGraph.neighbors x).card = 8
 ```
 
-**`CondensedMatter.Crystal.hcp_neighbors_card`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L272).
+**`CondensedMatter.Crystal.hcp_neighbors_card`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L272).
 
 > Both sites of the hexagonal close-packed crystal have twelve neighbours.
 
@@ -299,7 +299,7 @@ lemma hcp_neighbors_card (x : hcp.Site) : (hcpGraph.neighbors x).card = 12
 
 ## F. Bond lengths
 
-**`CondensedMatter.Crystal.fcc_bond_length`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L287).
+**`CondensedMatter.Crystal.fcc_bond_length`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L287).
 
 > In the face-centred cubic lattice with cube side `a`, every edge has length `a √2 / 2`.
 
@@ -309,7 +309,7 @@ lemma fcc_bond_length {a : ℝ} (ha : 0 < a) {x y : fcc.Site}
     (fccGeometry a a a ha ha ha).distance x y = a * Real.sqrt 2 / 2
 ```
 
-**`CondensedMatter.Crystal.bcc_bond_length`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L302).
+**`CondensedMatter.Crystal.bcc_bond_length`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L302).
 
 > In the body-centred cubic lattice with cube side `a`, every edge has length `a √3 / 2`.
 
@@ -319,7 +319,7 @@ lemma bcc_bond_length {a : ℝ} (ha : 0 < a) {x y : bcc.Site}
     (bccGeometry a a a ha ha ha).distance x y = a * Real.sqrt 3 / 2
 ```
 
-**`CondensedMatter.Crystal.hcp_bond_length`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L318).
+**`CondensedMatter.Crystal.hcp_bond_length`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean#L318).
 
 > In the ideal hexagonal close-packed crystal, with `c ^ 2 = 8 a ^ 2 / 3`, every edge has
 > length `a`.
@@ -336,4 +336,4 @@ lemma hcp_bond_length {a c : ℝ} (ha : 0 < a) (hc : 0 < c) (hideal : c ^ 2 = 8 
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean)

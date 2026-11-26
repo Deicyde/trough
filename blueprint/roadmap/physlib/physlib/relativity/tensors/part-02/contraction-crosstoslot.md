@@ -8,7 +8,7 @@ proof: formalized
 
 # Result-to-slot contraction against a rank-2 tensor
 
-The module `Physlib.Relativity.Tensors.Contraction.CrossToSlot`, [Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean): 9 declarations, 9 with a docstring.
+The module `Physlib.Relativity.Tensors.Contraction.CrossToSlot`, [Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean): 9 declarations, 9 with a docstring.
 
 ## i. Overview
 
@@ -46,7 +46,7 @@ The module `Physlib.Relativity.Tensors.Contraction.CrossToSlot`, [Physlib/Relati
 
 ## A. The result-to-slot contraction
 
-**`TensorSpecies.Tensor.IsReindexing.crossToSlot_cycle`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L73).
+**`TensorSpecies.Tensor.IsReindexing.crossToSlot_cycle`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L73).
 
 > The survivor color of `crossToEnd i j` against a rank-2 tensor of color `cM` is `c` with
 > slot `i` replaced by the surviving color `cM (j.succAbove 0)`, once the survivors are rotated
@@ -61,7 +61,7 @@ lemma IsReindexing.crossToSlot_cycle {nA : ℕ} {c : Fin (nA + 1) → C} {cM : F
       ⇑(Fin.cycleIcc i (Fin.last nA)).symm
 ```
 
-**`TensorSpecies.Tensor.crossToSlot`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L97).
+**`TensorSpecies.Tensor.crossToSlot`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L97).
 
 > Contract slot `i` of `t` against slot `j` of the rank-2 tensor `M`, whose `j`-slot color must
 > equal the dual color `τ (c i)` (propositionally, via `hc`), and rotate `M`'s surviving slot back
@@ -77,7 +77,7 @@ noncomputable def crossToSlot {nA : ℕ} {c : Fin (nA + 1) → C} {cM : Fin 2 �
     S.Tensor c →ₗ[k] S.Tensor (Function.update c i (cM (j.succAbove 0)))
 ```
 
-**`TensorSpecies.Tensor.crossToSlot_eq_crossToEnd`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L105).
+**`TensorSpecies.Tensor.crossToSlot_eq_crossToEnd`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L105).
 
 > The bridge between the two conventions: `crossToSlot i j hc M t` is `crossToEnd i j hc t M`
 > with the survivor rotated from the last slot back to slot `i` by the inverse cycle.
@@ -90,7 +90,7 @@ lemma crossToSlot_eq_crossToEnd {nA : ℕ} {c : Fin (nA + 1) → C} {cM : Fin 2 
         (crossToEnd i j hc t M)
 ```
 
-**`TensorSpecies.Tensor.crossToSlot_basis_repr_apply`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L113).
+**`TensorSpecies.Tensor.crossToSlot_basis_repr_apply`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L113).
 
 > A component of `crossToSlot` is the corresponding component of `crossToEnd`, with the
 > surviving indices rotated back into the contracted slot.
@@ -107,7 +107,7 @@ lemma crossToSlot_basis_repr_apply {nA : ℕ} {c : Fin (nA + 1) → C} {cM : Fin
             ⇑(Fin.cycleIcc i (Fin.last nA)).symm m)))
 ```
 
-**`TensorSpecies.Tensor.crossToSlotInv`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L126).
+**`TensorSpecies.Tensor.crossToSlotInv`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L126).
 
 > `crossToSlot` of slot `i` with the first index of `M'`, followed by renaming slot `i` back to
 > its original colour `c i` (`he`).
@@ -118,7 +118,7 @@ noncomputable def crossToSlotInv {nA : ℕ} {c : Fin (nA + 1) → C} {d : C} {ds
     S.Tensor (Function.update c i d) →ₗ[k] S.Tensor c
 ```
 
-**`TensorSpecies.Tensor.crossToSlot_permT_right_id`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L137).
+**`TensorSpecies.Tensor.crossToSlot_permT_right_id`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L137).
 
 > An identity reindexing of the rank-2 tensor becomes the corresponding identity reindexing of
 > the contracted output: the `crossToSlot`-level case of `crossToEnd_permT_right` where the rank-2
@@ -138,7 +138,7 @@ lemma crossToSlot_permT_right_id {nA : ℕ} {c : Fin (nA + 1) → C} {cM cM' : F
         (crossToSlot i j (hc.trans (hM.2 j).symm) M t)
 ```
 
-**`TensorSpecies.Tensor.crossToSlot_basis_repr_eq_sum_fin`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L163).
+**`TensorSpecies.Tensor.crossToSlot_basis_repr_eq_sum_fin`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L163).
 
 > The component formula for a cross contraction into an arbitrary slot, for a species whose bases
 > are not assumed adapted to the contraction: each contracted label is summed over its own slot and
@@ -162,7 +162,7 @@ lemma crossToSlot_basis_repr_eq_sum_fin {nA : ℕ} {c : Fin (nA + 1) → C}
           b (S.τ (c i)) (basisIdxCongr (by rw [hc]) x₂))
 ```
 
-**`TensorSpecies.Tensor.crossToSlot_basis_repr_eq_sum_dual`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L208).
+**`TensorSpecies.Tensor.crossToSlot_basis_repr_eq_sum_dual`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L208).
 
 > The component formula for a cross contraction into an arbitrary slot, for a species with
 > contraction-dual bases: the contraction coefficient is `δ` and one sum remains, the contracted label
@@ -183,7 +183,7 @@ lemma crossToSlot_basis_repr_eq_sum_dual [HasContrDualBases S] {nA : ℕ} {c : F
             fun m => basisIdxCongr (by fin_cases m; simp) (φ i)))
 ```
 
-**`TensorSpecies.Tensor.crossToSlot_equivariant`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L227).
+**`TensorSpecies.Tensor.crossToSlot_equivariant`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean#L227).
 
 > Cross contraction into a slot is `G`-equivariant, both constituents (`crossToEnd`, `permT`)
 > being so.
@@ -201,4 +201,4 @@ lemma crossToSlot_equivariant {nA : ℕ} {c : Fin (nA + 1) → C} {cM : Fin 2 �
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean)
+- [Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean)

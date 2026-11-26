@@ -8,7 +8,7 @@ proof: formalized
 
 # Projection resolutions in JBW-algebras
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JBW.ProjectionResolution`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JBW.ProjectionResolution`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean): 5 declarations, 5 with a docstring.
 
 > Normal states turn projection resolutions into probability laws and separate them.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JBW.ProjectionResol
 
 ## A. Probability laws
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.probabilityLaw`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean#L56).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.probabilityLaw`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean#L56).
 
 > The probability law of a projection resolution in a normal state.
 
@@ -42,7 +42,7 @@ noncomputable def probabilityLaw (P : MeasurableProjectionResolution Ω E)
     (ω : 𝓢[ℝ, E]) (hω : ω.IsNormal) : ProbabilityMeasure Ω
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.probabilityLaw_apply`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean#L61).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.probabilityLaw_apply`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean#L61).
 
 > The probability of an event is the state evaluated at its projection.
 
@@ -52,7 +52,7 @@ lemma probabilityLaw_apply (P : MeasurableProjectionResolution Ω E)
     (P.probabilityLaw ω hω : Measure Ω) s = ENNReal.ofReal (ω (P s hs : E))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.scalarBoundedBorel_eq_integral`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean#L68).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.scalarBoundedBorel_eq_integral`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean#L68).
 
 > A normal state applied to the bounded Borel calculus is the bounded integral against the
 > scalarized measure.
@@ -67,7 +67,7 @@ lemma scalarBoundedBorel_eq_integral (P : MeasurableProjectionResolution Ω E)
 
 ## B. Separation by normal states
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.eq_of_forall_normal_state_eq`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean#L78).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.eq_of_forall_normal_state_eq`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean#L78).
 
 > Normal states separate projection resolutions pointwise.
 
@@ -76,7 +76,7 @@ lemma eq_of_forall_normal_state_eq {P Q : MeasurableProjectionResolution Ω E} [
     (h : ∀ ω : 𝓢[ℝ, E], ω.IsNormal → ∀ s hs, ω (P s hs : E) = ω (Q s hs : E)) : P = Q
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.eq_of_forall_normal_probabilityLaw_eq`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean#L84).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.eq_of_forall_normal_probabilityLaw_eq`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean#L84).
 
 > A projection resolution in a JBW-algebra is determined by its probability laws in all normal
 > states.
@@ -100,4 +100,4 @@ lemma eq_of_forall_normal_probabilityLaw_eq {P Q : MeasurableProjectionResolutio
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean)

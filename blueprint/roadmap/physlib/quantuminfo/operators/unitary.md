@@ -8,7 +8,7 @@ proof: formalized
 
 # Unitary operators on quantum state
 
-The module `QuantumInfo.Operators.Unitary`, [QuantumInfo/Operators/Unitary.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Operators/Unitary.lean): 4 declarations, 3 with a docstring, 2 listed as significant.
+The module `QuantumInfo.Operators.Unitary`, [QuantumInfo/Operators/Unitary.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Operators/Unitary.lean): 4 declarations, 3 with a docstring, 2 listed as significant.
 
 > This file is intended for lemmas about unitary matrices (`Matrix.unitaryGroup`) and how they
 > apply to `Bra`s, `Ket`s, and `MState` mixed states.
@@ -16,7 +16,7 @@ The module `QuantumInfo.Operators.Unitary`, [QuantumInfo/Operators/Unitary.lean]
 > This is imported by `CPTPMap` to define things like unitary channels, Kraus operators, and
 > complementary channels, so this file itself does not discuss channels yet.
 
-**`MState.uConj`**, a def, [line 33](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Operators/Unitary.lean#L33).
+**`MState.uConj`**, a def, [line 33](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Operators/Unitary.lean#L33).
 
 > Conjugate a state by a unitary matrix (applying the unitary as an evolution).
 
@@ -24,7 +24,7 @@ The module `QuantumInfo.Operators.Unitary`, [QuantumInfo/Operators/Unitary.lean]
 def uConj (ρ : MState d) (U : 𝐔[d]) : MState d
 ```
 
-**`MState.uConj_spectrum_eq`**, a theorem, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Operators/Unitary.lean#L49). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`MState.uConj_spectrum_eq`**, a theorem, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Operators/Unitary.lean#L49). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > You might think this should only be true up to permutation, so that it would read like
 > `∃ σ : Equiv.Perm d, (ρ.uConj U).spectrum = ρ.spectrum.relabel σ`. But since eigenvalues
@@ -35,13 +35,13 @@ theorem uConj_spectrum_eq (ρ : MState d) (U : 𝐔[d]) :
     (ρ.uConj U).spectrum = ρ.spectrum
 ```
 
-**`MState.inner_uConj`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Operators/Unitary.lean#L54).
+**`MState.inner_uConj`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Operators/Unitary.lean#L54).
 
 ```lean
 lemma inner_uConj (ρ σ : MState d) (U : 𝐔[d]) : ⟪U ◃ ρ, U ◃ σ⟫_Prob = ⟪ρ, σ⟫_Prob
 ```
 
-**`MState.no_cloning`**, a theorem, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Operators/Unitary.lean#L61). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`MState.no_cloning`**, a theorem, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Operators/Unitary.lean#L61). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The **No-cloning theorem**, saying that if states `ψ` and `φ` can both be perfectly cloned
 > using a unitary `U` and a fiducial state `f`, and they aren't identical (their inner product is
@@ -62,4 +62,4 @@ theorem no_cloning {U : 𝐔[d × d]}
 
 ## Sources
 
-- [QuantumInfo/Operators/Unitary.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Operators/Unitary.lean)
+- [QuantumInfo/Operators/Unitary.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Operators/Unitary.lean)

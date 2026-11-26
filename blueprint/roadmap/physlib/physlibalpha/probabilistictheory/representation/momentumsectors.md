@@ -8,7 +8,7 @@ proof: formalized
 
 # Crystal momentum sectors
 
-The module `PhyslibAlpha.ProbabilisticTheory.Representation.MomentumSectors`, [PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean): 22 declarations, 14 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Representation.MomentumSectors`, [PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean): 22 declarations, 14 with a docstring.
 
 > Sectors and fibers of definite crystal momentum for a translation-invariant system, and their
 > conservation.
@@ -48,7 +48,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.MomentumSectors`, [P
 
 ## A. Sectors and fibers
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.sector`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L75).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.sector`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L75).
 
 > The momentum sector of the character `χ`: vectors on which `g` acts as the scalar `χ g`.
 
@@ -56,14 +56,14 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.MomentumSectors`, [P
 def sector (β : G →* Module.End K V) (χ : G → K) : Submodule K V
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.mem_sector`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L81).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.mem_sector`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L81).
 
 ```lean
 lemma mem_sector {β : G →* Module.End K V} {χ : G → K} {v : V} :
     v ∈ sector β χ ↔ ∀ g, β g v = χ g • v
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.cobound`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L86).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.cobound`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L86).
 
 > The submodule `span {β g v - χ g • v}` whose quotient is the momentum fiber. It is the
 > "coboundary" submodule of the twisted action.
@@ -72,14 +72,14 @@ lemma mem_sector {β : G →* Module.End K V} {χ : G → K} {v : V} :
 def cobound (β : G →* Module.End K V) (χ : G → K) : Submodule K V
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.sub_smul_mem_cobound`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L89).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.sub_smul_mem_cobound`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L89).
 
 ```lean
 lemma sub_smul_mem_cobound (β : G →* Module.End K V) (χ : G → K) (g : G) (v : V) :
     β g v - χ g • v ∈ cobound β χ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.Fiber`**, an abbrev, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L94).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.Fiber`**, an abbrev, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L94).
 
 > The momentum fiber of the character `χ`: `V` modulo the vectors `β g v - χ g • v`.
 
@@ -87,7 +87,7 @@ lemma sub_smul_mem_cobound (β : G →* Module.End K V) (χ : G → K) (g : G) (
 abbrev Fiber (β : G →* Module.End K V) (χ : G → K) : Type _
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.Fiber.mk`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L97).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.Fiber.mk`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L97).
 
 > The canonical projection `V → V(χ)`.
 
@@ -95,7 +95,7 @@ abbrev Fiber (β : G →* Module.End K V) (χ : G → K) : Type _
 def Fiber.mk (β : G →* Module.End K V) (χ : G → K) : V →ₗ[K] Fiber β χ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.Fiber.mk_action`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L101).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.Fiber.mk_action`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L101).
 
 > In the fiber, `g` acts as the scalar `χ g`.
 
@@ -106,7 +106,7 @@ lemma Fiber.mk_action (β : G →* Module.End K V) (χ : G → K) (g : G) (v : V
 
 ## B. Equivariant maps
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L113).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L113).
 
 > A linear map intertwining two actions of the same monoid.
 
@@ -115,7 +115,7 @@ def IsEquivariant (β : G →* Module.End K V) (β' : G →* Module.End K W)
     (T : V →ₗ[K] W) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.mapsTo_sector`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L121).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.mapsTo_sector`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L121).
 
 > Every equivariant linear map preserves each momentum sector.
 
@@ -124,7 +124,7 @@ lemma IsEquivariant.mapsTo_sector (hT : IsEquivariant β β' T) {v : V}
     (hv : v ∈ sector β χ) : T v ∈ sector β' χ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.sectorMap`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L126).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.sectorMap`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L126).
 
 > The restriction of an equivariant map to a momentum sector.
 
@@ -133,14 +133,14 @@ def IsEquivariant.sectorMap (hT : IsEquivariant β β' T) (χ : G → K) :
     sector β χ →ₗ[K] sector β' χ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.coe_sectorMap`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L131).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.coe_sectorMap`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L131).
 
 ```lean
 lemma IsEquivariant.coe_sectorMap (hT : IsEquivariant β β' T) (v : sector β χ) :
     (hT.sectorMap χ v : W) = T v
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.cobound_le_comap`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L136).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.cobound_le_comap`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L136).
 
 > An equivariant map sends the span defining the fiber of `V` into the span defining the fiber
 > of `W`.
@@ -150,7 +150,7 @@ lemma IsEquivariant.cobound_le_comap (hT : IsEquivariant β β' T) (χ : G → K
     cobound β χ ≤ (cobound β' χ).comap T
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.fiberMap`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L144).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.fiberMap`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L144).
 
 > Every equivariant linear map induces a well-defined linear map on each momentum fiber.
 
@@ -159,14 +159,14 @@ def IsEquivariant.fiberMap (hT : IsEquivariant β β' T) (χ : G → K) :
     Fiber β χ →ₗ[K] Fiber β' χ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.fiberMap_mk`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L149).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.fiberMap_mk`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L149).
 
 ```lean
 lemma IsEquivariant.fiberMap_mk (hT : IsEquivariant β β' T) (χ : G → K) (v : V) :
     hT.fiberMap χ (Fiber.mk β χ v) = Fiber.mk β' χ (T v)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.fiberMap_comp_mk`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L153).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.fiberMap_comp_mk`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L153).
 
 > The fiber map is the unique map making the square with the projections commute.
 
@@ -177,27 +177,27 @@ lemma IsEquivariant.fiberMap_comp_mk (hT : IsEquivariant β β' T) (χ : G → K
 
 ## C. Functoriality
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.isEquivariant_id`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L162).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.isEquivariant_id`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L162).
 
 ```lean
 lemma isEquivariant_id (β : G →* Module.End K V) : IsEquivariant β β LinearMap.id
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.comp`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L165).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.comp`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L165).
 
 ```lean
 lemma IsEquivariant.comp (hS : IsEquivariant β' β'' S) (hT : IsEquivariant β β' T) :
     IsEquivariant β β'' (S ∘ₗ T)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.fiberMap_id`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L169).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.fiberMap_id`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L169).
 
 ```lean
 lemma fiberMap_id (χ : G → K) :
     (isEquivariant_id β).fiberMap χ = LinearMap.id
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.fiberMap_comp`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L173).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.fiberMap_comp`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L173).
 
 ```lean
 lemma IsEquivariant.fiberMap_comp (hS : IsEquivariant β' β'' S) (hT : IsEquivariant β β' T)
@@ -205,7 +205,7 @@ lemma IsEquivariant.fiberMap_comp (hS : IsEquivariant β' β'' S) (hT : IsEquiva
     (hS.comp hT).fiberMap χ = (hS.fiberMap χ) ∘ₗ (hT.fiberMap χ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.mapsTo_sector_self`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L181).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.mapsTo_sector_self`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L181).
 
 > Equivariant maps commute with the dynamics they generate: if `D` is an equivariant
 > endomorphism, it preserves every sector and descends to every fiber. This is the form used for
@@ -218,7 +218,7 @@ lemma IsEquivariant.mapsTo_sector_self {D : V →ₗ[K] V} (hD : IsEquivariant �
 
 ## D. From sectors to fibers
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.sectorToFiber`**, a def, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L191).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.sectorToFiber`**, a def, [line 191](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L191).
 
 > The canonical map from the sector of `χ` to the fiber of `χ`.
 
@@ -227,7 +227,7 @@ def sectorToFiber (β : G →* Module.End K V) (χ : G → K) :
     sector β χ →ₗ[K] Fiber β χ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.fiberMap_comp_sectorToFiber`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L196).
+**`PhyslibAlpha.ProbabilisticTheory.Representation.IsEquivariant.fiberMap_comp_sectorToFiber`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean#L196).
 
 > The canonical map from sector to fiber is natural for equivariant maps.
 
@@ -243,4 +243,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean)

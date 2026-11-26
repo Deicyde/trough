@@ -8,7 +8,7 @@ proof: formalized
 
 # Tracial functionals
 
-The module `Physlib.ProbabilisticTheory.CStarAlgebra.Traciality`, [Physlib/ProbabilisticTheory/CStarAlgebra/Traciality.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Traciality.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.ProbabilisticTheory.CStarAlgebra.Traciality`, [Physlib/ProbabilisticTheory/CStarAlgebra/Traciality.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Traciality.lean): 1 declaration, 1 with a docstring.
 
 > A functional on an algebra is tracial if the order of a product does not change its value.
 
@@ -29,7 +29,7 @@ The module `Physlib.ProbabilisticTheory.CStarAlgebra.Traciality`, [Physlib/Proba
 
 ## A. Checking cyclicity on `x⋆ x`
 
-**`LinearMap.map_mul_comm_iff_star_mul_self_eq_mul_star_self`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Traciality.lean#L51).
+**`LinearMap.map_mul_comm_iff_star_mul_self_eq_mul_star_self`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Traciality.lean#L51).
 
 > A functional is tracial if and only if `f (x⋆ x) = f (x x⋆)` for all `x`.
 
@@ -45,4 +45,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/CStarAlgebra/Traciality.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Traciality.lean)
+- [Physlib/ProbabilisticTheory/CStarAlgebra/Traciality.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Traciality.lean)

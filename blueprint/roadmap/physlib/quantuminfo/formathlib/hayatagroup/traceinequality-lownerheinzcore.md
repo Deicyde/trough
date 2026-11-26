@@ -8,7 +8,7 @@ proof: formalized
 
 # QuantumInfo.ForMathlib.HayataGroup.TraceInequality.LownerHeinzCore
 
-The module `QuantumInfo.ForMathlib.HayataGroup.TraceInequality.LownerHeinzCore`, [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean): 43 declarations (3 instances with no name), 16 with a docstring; 24 private, not shown.
+The module `QuantumInfo.ForMathlib.HayataGroup.TraceInequality.LownerHeinzCore`, [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean): 43 declarations (3 instances with no name), 16 with a docstring; 24 private, not shown.
 
 ## 構造（Core / Wrapper）
 
@@ -23,13 +23,13 @@ The module `QuantumInfo.ForMathlib.HayataGroup.TraceInequality.LownerHeinzCore`,
 > 漏れないようにしています。また `NonnegSpectrumClass` は必要な層で明示し、場当たりの `infer_instance`
 > 散布を避けています。
 
-**`LownerHeinzCore.cfcR`**, an abbrev, [line 42](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L42).
+**`LownerHeinzCore.cfcR`**, an abbrev, [line 41](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L41).
 
 ```lean
 noncomputable abbrev cfcR (f : ℝ → ℝ) (A : 𝓐) : 𝓐
 ```
 
-**`LownerHeinzCore.OperatorMonotone`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L46).
+**`LownerHeinzCore.OperatorMonotone`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L45).
 
 > Fixed-space operator monotonicity on the ambient algebra `𝓐`.
 
@@ -37,7 +37,7 @@ noncomputable abbrev cfcR (f : ℝ → ℝ) (A : 𝓐) : 𝓐
 def OperatorMonotone (f : ℝ → ℝ) : Prop
 ```
 
-**`LownerHeinzCore.OperatorMonotoneOn`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L50).
+**`LownerHeinzCore.OperatorMonotoneOn`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L49).
 
 > Fixed-space operator monotonicity on `s` for the ambient algebra `𝓐`.
 
@@ -45,7 +45,7 @@ def OperatorMonotone (f : ℝ → ℝ) : Prop
 def OperatorMonotoneOn (s : Set ℝ) (f : ℝ → ℝ) : Prop
 ```
 
-**`LownerHeinzCore.OperatorAntitone`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L57).
+**`LownerHeinzCore.OperatorAntitone`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L56).
 
 > Fixed-space operator antitonicity on the ambient algebra `𝓐`.
 
@@ -53,7 +53,7 @@ def OperatorMonotoneOn (s : Set ℝ) (f : ℝ → ℝ) : Prop
 def OperatorAntitone (f : ℝ → ℝ) : Prop
 ```
 
-**`LownerHeinzCore.OperatorAntitoneOn`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L62).
+**`LownerHeinzCore.OperatorAntitoneOn`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L61).
 
 > Fixed-space operator antitonicity on `s` for the ambient algebra `𝓐`.
 
@@ -61,7 +61,7 @@ def OperatorAntitone (f : ℝ → ℝ) : Prop
 def OperatorAntitoneOn (s : Set ℝ) (f : ℝ → ℝ) : Prop
 ```
 
-**`LownerHeinzCore.OperatorConvex`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L69).
+**`LownerHeinzCore.OperatorConvex`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L68).
 
 > Fixed-space operator convexity on the ambient algebra `𝓐`.
 
@@ -69,7 +69,7 @@ def OperatorAntitoneOn (s : Set ℝ) (f : ℝ → ℝ) : Prop
 def OperatorConvex (f : ℝ → ℝ) : Prop
 ```
 
-**`LownerHeinzCore.OperatorConvexOn`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L75).
+**`LownerHeinzCore.OperatorConvexOn`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L74).
 
 > Fixed-space operator convexity on `s` for the ambient algebra `𝓐`.
 
@@ -77,7 +77,7 @@ def OperatorConvex (f : ℝ → ℝ) : Prop
 def OperatorConvexOn (s : Set ℝ) (f : ℝ → ℝ) : Prop
 ```
 
-**`LownerHeinzCore.OperatorConcave`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L84).
+**`LownerHeinzCore.OperatorConcave`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L83).
 
 > Fixed-space operator concavity on the ambient algebra `𝓐`.
 
@@ -85,7 +85,7 @@ def OperatorConvexOn (s : Set ℝ) (f : ℝ → ℝ) : Prop
 def OperatorConcave (f : ℝ → ℝ) : Prop
 ```
 
-**`LownerHeinzCore.OperatorConcaveOn`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L88).
+**`LownerHeinzCore.OperatorConcaveOn`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L87).
 
 > Fixed-space operator concavity on `s` for the ambient algebra `𝓐`.
 
@@ -93,7 +93,7 @@ def OperatorConcave (f : ℝ → ℝ) : Prop
 def OperatorConcaveOn (s : Set ℝ) (f : ℝ → ℝ) : Prop
 ```
 
-**`LownerHeinzCore.OperatorMonotoneAll`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L93).
+**`LownerHeinzCore.OperatorMonotoneAll`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L92).
 
 > Uniform operator monotonicity over all ambient algebras in universe `u`.
 
@@ -101,7 +101,7 @@ def OperatorConcaveOn (s : Set ℝ) (f : ℝ → ℝ) : Prop
 def OperatorMonotoneAll (f : ℝ → ℝ) : Prop
 ```
 
-**`LownerHeinzCore.OperatorMonotoneOnAll`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L100).
+**`LownerHeinzCore.OperatorMonotoneOnAll`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L99).
 
 > Uniform operator monotonicity on `s` over all ambient algebras in universe `u`.
 
@@ -109,7 +109,7 @@ def OperatorMonotoneAll (f : ℝ → ℝ) : Prop
 def OperatorMonotoneOnAll (s : Set ℝ) (f : ℝ → ℝ) : Prop
 ```
 
-**`LownerHeinzCore.OperatorAntitoneAll`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L107).
+**`LownerHeinzCore.OperatorAntitoneAll`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L106).
 
 > Uniform operator antitonicity over all ambient algebras in universe `u`.
 
@@ -117,7 +117,7 @@ def OperatorMonotoneOnAll (s : Set ℝ) (f : ℝ → ℝ) : Prop
 def OperatorAntitoneAll (f : ℝ → ℝ) : Prop
 ```
 
-**`LownerHeinzCore.OperatorAntitoneOnAll`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L114).
+**`LownerHeinzCore.OperatorAntitoneOnAll`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L113).
 
 > Uniform operator antitonicity on `s` over all ambient algebras in universe `u`.
 
@@ -125,7 +125,7 @@ def OperatorAntitoneAll (f : ℝ → ℝ) : Prop
 def OperatorAntitoneOnAll (s : Set ℝ) (f : ℝ → ℝ) : Prop
 ```
 
-**`LownerHeinzCore.OperatorConvexAll`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L121).
+**`LownerHeinzCore.OperatorConvexAll`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L120).
 
 > Uniform operator convexity over all ambient algebras in universe `u`.
 
@@ -133,7 +133,7 @@ def OperatorAntitoneOnAll (s : Set ℝ) (f : ℝ → ℝ) : Prop
 def OperatorConvexAll (f : ℝ → ℝ) : Prop
 ```
 
-**`LownerHeinzCore.OperatorConvexOnAll`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L128).
+**`LownerHeinzCore.OperatorConvexOnAll`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L127).
 
 > Uniform operator convexity on `s` over all ambient algebras in universe `u`.
 
@@ -141,7 +141,7 @@ def OperatorConvexAll (f : ℝ → ℝ) : Prop
 def OperatorConvexOnAll (s : Set ℝ) (f : ℝ → ℝ) : Prop
 ```
 
-**`LownerHeinzCore.OperatorConcaveAll`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L135).
+**`LownerHeinzCore.OperatorConcaveAll`**, a def, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L134).
 
 > Uniform operator concavity over all ambient algebras in universe `u`.
 
@@ -149,7 +149,7 @@ def OperatorConvexOnAll (s : Set ℝ) (f : ℝ → ℝ) : Prop
 def OperatorConcaveAll (f : ℝ → ℝ) : Prop
 ```
 
-**`LownerHeinzCore.OperatorConcaveOnAll`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L142).
+**`LownerHeinzCore.OperatorConcaveOnAll`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L141).
 
 > Uniform operator concavity on `s` over all ambient algebras in universe `u`.
 
@@ -157,179 +157,179 @@ def OperatorConcaveAll (f : ℝ → ℝ) : Prop
 def OperatorConcaveOnAll (s : Set ℝ) (f : ℝ → ℝ) : Prop
 ```
 
-**`LownerHeinzCore.conjugate_isPositive`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L157).
+**`LownerHeinzCore.conjugate_isPositive`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L156).
 
 ```lean
 lemma conjugate_isPositive {X T : 𝓐} (hX : 0 ≤ X) (hT : IsSelfAdjoint T) :
     0 ≤ T * X * T
 ```
 
-**`LownerHeinzCore.one_div_operatorAntitoneOn_Ioi`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L162).
+**`LownerHeinzCore.one_div_operatorAntitoneOn_Ioi`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L161).
 
 ```lean
 lemma one_div_operatorAntitoneOn_Ioi :
     OperatorAntitoneOn (𝓐 := 𝓐) (Set.Ioi (0 : ℝ)) (fun x : ℝ ↦ 1 / x)
 ```
 
-**`LownerHeinzCore.one_div_operatorConvexOn_Ioi`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L329).
+**`LownerHeinzCore.one_div_operatorConvexOn_Ioi`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L328).
 
 ```lean
 lemma one_div_operatorConvexOn_Ioi :
   OperatorConvexOn (𝓐 := 𝓐) (Set.Ioi (0 : ℝ)) (fun x : ℝ ↦ 1 / x)
 ```
 
-**`LownerHeinzCore.one_div_add_t_operatorAntitoneOn_Ici`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L438).
+**`LownerHeinzCore.one_div_add_t_operatorAntitoneOn_Ici`**, a lemma, [line 437](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L437).
 
 ```lean
 lemma one_div_add_t_operatorAntitoneOn_Ici : ∀ (t : ℝ), 0 < t →
   OperatorAntitoneOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x : ℝ ↦ 1 / (x + t))
 ```
 
-**`LownerHeinzCore.one_div_add_t_operatorConvexOn_Ici`**, a lemma, [line 489](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L489).
+**`LownerHeinzCore.one_div_add_t_operatorConvexOn_Ici`**, a lemma, [line 488](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L488).
 
 ```lean
 lemma one_div_add_t_operatorConvexOn_Ici : ∀ (t : ℝ), 0 < t →
   OperatorConvexOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x : ℝ ↦ 1 / (x + t))
 ```
 
-**`LownerHeinzCore.ratio_add_t_operatorMonotoneOn_Ici`**, a lemma, [line 673](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L673).
+**`LownerHeinzCore.ratio_add_t_operatorMonotoneOn_Ici`**, a lemma, [line 672](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L672).
 
 ```lean
 lemma ratio_add_t_operatorMonotoneOn_Ici : ∀ (t : ℝ), 0 < t →
   OperatorMonotoneOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x : ℝ ↦ x / (x + t))
 ```
 
-**`LownerHeinzCore.ratio_add_t_operatorConcaveOn_Ici`**, a lemma, [line 745](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L745).
+**`LownerHeinzCore.ratio_add_t_operatorConcaveOn_Ici`**, a lemma, [line 744](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L744).
 
 ```lean
 lemma ratio_add_t_operatorConcaveOn_Ici : ∀ (t : ℝ), 0 < t →
   OperatorConcaveOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x : ℝ ↦ x / (x + t))
 ```
 
-**`LownerHeinzCore.power_Icc_zero_one_operatorMonotoneOn_Ici`**, a lemma, [line 935](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L935).
+**`LownerHeinzCore.power_Icc_zero_one_operatorMonotoneOn_Ici`**, a lemma, [line 934](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L934).
 
 ```lean
 lemma power_Icc_zero_one_operatorMonotoneOn_Ici : ∀ p ∈ Set.Icc (0 : ℝ) 1,
   OperatorMonotoneOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x ↦ x ^ p)
 ```
 
-**`LownerHeinzCore.power_Icc_zero_one_operatorConcaveOn_Ici`**, a lemma, [line 1114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L1114).
+**`LownerHeinzCore.power_Icc_zero_one_operatorConcaveOn_Ici`**, a lemma, [line 1113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L1113).
 
 ```lean
 lemma power_Icc_zero_one_operatorConcaveOn_Ici : ∀ p ∈ Set.Icc (0 : ℝ) 1,
   OperatorConcaveOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x ↦ x ^ p)
 ```
 
-**`LownerHeinzCore.power_Icc_one_two_operatorConvexOn_Ici`**, a lemma, [line 1784](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L1784).
+**`LownerHeinzCore.power_Icc_one_two_operatorConvexOn_Ici`**, a lemma, [line 1783](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L1783).
 
 ```lean
 lemma power_Icc_one_two_operatorConvexOn_Ici : ∀ p ∈ Set.Icc (1 : ℝ) 2,
   OperatorConvexOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x ↦ x ^ p)
 ```
 
-**`LownerHeinzCore.power_Icc_neg_one_zero_neg_operatorMonotoneOn_Ioi`**, a lemma, [line 1842](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L1842).
+**`LownerHeinzCore.power_Icc_neg_one_zero_neg_operatorMonotoneOn_Ioi`**, a lemma, [line 1841](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L1841).
 
 ```lean
 lemma power_Icc_neg_one_zero_neg_operatorMonotoneOn_Ioi : ∀ p ∈ Set.Icc (-1 : ℝ) 0,
     OperatorMonotoneOn (𝓐 := 𝓐) (Set.Ioi (0 : ℝ)) (fun x ↦ -(x ^ p))
 ```
 
-**`LownerHeinzCore.power_Icc_neg_one_zero_neg_operatorConcaveOn_Ioi`**, a lemma, [line 2012](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2012).
+**`LownerHeinzCore.power_Icc_neg_one_zero_neg_operatorConcaveOn_Ioi`**, a lemma, [line 2011](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2011).
 
 ```lean
 lemma power_Icc_neg_one_zero_neg_operatorConcaveOn_Ioi : ∀ p ∈ Set.Icc (-1 : ℝ) 0,
     OperatorConcaveOn (𝓐 := 𝓐) (Set.Ioi (0 : ℝ)) (fun x ↦ -(x ^ p))
 ```
 
-**An instance with no name**, [line 2344](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2344).
+**An instance with no name**, [line 2343](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2343).
 
 ```lean
 noncomputable local instance : PartialOrder 𝓐
 ```
 
-**An instance with no name**, [line 2345](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2345).
+**An instance with no name**, [line 2344](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2344).
 
 ```lean
 noncomputable local instance : StarOrderedRing 𝓐
 ```
 
-**An instance with no name**, [line 2346](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2346).
+**An instance with no name**, [line 2345](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2345).
 
 ```lean
 noncomputable local instance : NonnegSpectrumClass ℝ 𝓐
 ```
 
-**`LownerHeinzCore.Spectral.one_div_operatorAntitoneOn_Ioi`**, a lemma, [line 2351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2351).
+**`LownerHeinzCore.Spectral.one_div_operatorAntitoneOn_Ioi`**, a lemma, [line 2350](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2350).
 
 ```lean
 lemma one_div_operatorAntitoneOn_Ioi :
     OperatorAntitoneOn (𝓐 := 𝓐) (Set.Ioi (0 : ℝ)) (fun x : ℝ ↦ 1 / x)
 ```
 
-**`LownerHeinzCore.Spectral.one_div_operatorConvexOn_Ioi`**, a lemma, [line 2355](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2355).
+**`LownerHeinzCore.Spectral.one_div_operatorConvexOn_Ioi`**, a lemma, [line 2354](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2354).
 
 ```lean
 lemma one_div_operatorConvexOn_Ioi :
     OperatorConvexOn (𝓐 := 𝓐) (Set.Ioi (0 : ℝ)) (fun x : ℝ ↦ 1 / x)
 ```
 
-**`LownerHeinzCore.Spectral.one_div_add_t_operatorAntitoneOn_Ici`**, a lemma, [line 2360](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2360).
+**`LownerHeinzCore.Spectral.one_div_add_t_operatorAntitoneOn_Ici`**, a lemma, [line 2359](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2359).
 
 ```lean
 lemma one_div_add_t_operatorAntitoneOn_Ici : ∀ (t : ℝ), 0 < t →
     OperatorAntitoneOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x : ℝ ↦ 1 / (x + t))
 ```
 
-**`LownerHeinzCore.Spectral.one_div_add_t_operatorConvexOn_Ici`**, a lemma, [line 2365](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2365).
+**`LownerHeinzCore.Spectral.one_div_add_t_operatorConvexOn_Ici`**, a lemma, [line 2364](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2364).
 
 ```lean
 lemma one_div_add_t_operatorConvexOn_Ici : ∀ (t : ℝ), 0 < t →
     OperatorConvexOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x : ℝ ↦ 1 / (x + t))
 ```
 
-**`LownerHeinzCore.Spectral.ratio_add_t_operatorMonotoneOn_Ici`**, a lemma, [line 2371](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2371).
+**`LownerHeinzCore.Spectral.ratio_add_t_operatorMonotoneOn_Ici`**, a lemma, [line 2370](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2370).
 
 ```lean
 lemma ratio_add_t_operatorMonotoneOn_Ici : ∀ (t : ℝ), 0 < t →
     OperatorMonotoneOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x : ℝ ↦ x / (x + t))
 ```
 
-**`LownerHeinzCore.Spectral.ratio_add_t_operatorConcaveOn_Ici`**, a lemma, [line 2376](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2376).
+**`LownerHeinzCore.Spectral.ratio_add_t_operatorConcaveOn_Ici`**, a lemma, [line 2375](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2375).
 
 ```lean
 lemma ratio_add_t_operatorConcaveOn_Ici : ∀ (t : ℝ), 0 < t →
     OperatorConcaveOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x : ℝ ↦ x / (x + t))
 ```
 
-**`LownerHeinzCore.Spectral.power_Icc_zero_one_operatorMonotoneOn_Ici`**, a lemma, [line 2382](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2382).
+**`LownerHeinzCore.Spectral.power_Icc_zero_one_operatorMonotoneOn_Ici`**, a lemma, [line 2381](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2381).
 
 ```lean
 lemma power_Icc_zero_one_operatorMonotoneOn_Ici : ∀ p ∈ Set.Icc (0 : ℝ) 1,
     OperatorMonotoneOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x ↦ x ^ p)
 ```
 
-**`LownerHeinzCore.Spectral.power_Icc_zero_one_operatorConcaveOn_Ici`**, a lemma, [line 2387](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2387).
+**`LownerHeinzCore.Spectral.power_Icc_zero_one_operatorConcaveOn_Ici`**, a lemma, [line 2386](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2386).
 
 ```lean
 lemma power_Icc_zero_one_operatorConcaveOn_Ici : ∀ p ∈ Set.Icc (0 : ℝ) 1,
     OperatorConcaveOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x ↦ x ^ p)
 ```
 
-**`LownerHeinzCore.Spectral.power_Icc_one_two_operatorConvexOn_Ici`**, a lemma, [line 2392](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2392).
+**`LownerHeinzCore.Spectral.power_Icc_one_two_operatorConvexOn_Ici`**, a lemma, [line 2391](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2391).
 
 ```lean
 lemma power_Icc_one_two_operatorConvexOn_Ici : ∀ p ∈ Set.Icc (1 : ℝ) 2,
     OperatorConvexOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x ↦ x ^ p)
 ```
 
-**`LownerHeinzCore.Spectral.power_Icc_neg_one_zero_neg_operatorMonotoneOn_Ioi`**, a lemma, [line 2398](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2398).
+**`LownerHeinzCore.Spectral.power_Icc_neg_one_zero_neg_operatorMonotoneOn_Ioi`**, a lemma, [line 2397](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2397).
 
 ```lean
 lemma power_Icc_neg_one_zero_neg_operatorMonotoneOn_Ioi : ∀ p ∈ Set.Icc (-1 : ℝ) 0,
     OperatorMonotoneOn (𝓐 := 𝓐) (Set.Ioi (0 : ℝ)) (fun x ↦ -(x ^ p))
 ```
 
-**`LownerHeinzCore.Spectral.power_Icc_neg_one_zero_neg_operatorConcaveOn_Ioi`**, a lemma, [line 2403](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2403).
+**`LownerHeinzCore.Spectral.power_Icc_neg_one_zero_neg_operatorConcaveOn_Ioi`**, a lemma, [line 2402](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean#L2402).
 
 ```lean
 lemma power_Icc_neg_one_zero_neg_operatorConcaveOn_Ioi : ∀ p ∈ Set.Icc (-1 : ℝ) 0,
@@ -342,4 +342,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean)
+- [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean)

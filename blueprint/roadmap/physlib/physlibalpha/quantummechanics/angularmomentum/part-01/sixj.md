@@ -8,7 +8,7 @@ proof: formalized
 
 # Recoupling coefficients and the 6j symbols
 
-The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.SixJ`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean): 27 declarations (1 instance with no name), 13 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.SixJ`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean): 27 declarations (1 instance with no name), 13 with a docstring.
 
 > The recoupling coefficients between the two coupling schemes of `j₁ ⊗ j₂ ⊗ j₃` and the
 > 6j symbols, with their independence of `M` and their orthogonality.
@@ -51,7 +51,7 @@ The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.SixJ`, [PhyslibAlpha/Q
 
 ## A. Eigenvalues, ladders and orthonormality of the coupled states
 
-**`PhyslibAlpha.Sl2.tripleH_stateA`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L90).
+**`PhyslibAlpha.Sl2.tripleH_stateA`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L90).
 
 ```lean
 lemma tripleH_stateA (l : ℕ) :
@@ -59,7 +59,7 @@ lemma tripleH_stateA (l : ℕ) :
       (((a + b - 2 * (k₁ : ℕ) + c - 2 * k₂ : ℕ) : ℝ) - 2 * l) • stateA hab k₁ k₂ l
 ```
 
-**`PhyslibAlpha.Sl2.tripleCas_stateA`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L96).
+**`PhyslibAlpha.Sl2.tripleCas_stateA`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L96).
 
 ```lean
 lemma tripleCas_stateA (l : ℕ) :
@@ -68,7 +68,7 @@ lemma tripleCas_stateA (l : ℕ) :
         (((a + b - 2 * (k₁ : ℕ) + c - 2 * k₂ : ℕ) : ℝ) + 2) / 2) • stateA hab k₁ k₂ l
 ```
 
-**`PhyslibAlpha.Sl2.tripleF_stateA`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L103).
+**`PhyslibAlpha.Sl2.tripleF_stateA`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L103).
 
 ```lean
 lemma tripleF_stateA {l : ℕ} (hl : l < a + b - 2 * (k₁ : ℕ) + c - 2 * k₂) :
@@ -77,7 +77,7 @@ lemma tripleF_stateA {l : ℕ} (hl : l < a + b - 2 * (k₁ : ℕ) + c - 2 * k₂
         stateA hab k₁ k₂ (l + 1)
 ```
 
-**`PhyslibAlpha.Sl2.tripleH_stateB`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L117).
+**`PhyslibAlpha.Sl2.tripleH_stateB`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L117).
 
 ```lean
 lemma tripleH_stateB (l : ℕ) :
@@ -85,7 +85,7 @@ lemma tripleH_stateB (l : ℕ) :
       (((a + (b + c - 2 * (k₃ : ℕ)) - 2 * k₄ : ℕ) : ℝ) - 2 * l) • stateB hbc k₃ k₄ l
 ```
 
-**`PhyslibAlpha.Sl2.tripleCas_stateB`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L123).
+**`PhyslibAlpha.Sl2.tripleCas_stateB`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L123).
 
 ```lean
 lemma tripleCas_stateB (l : ℕ) :
@@ -94,7 +94,7 @@ lemma tripleCas_stateB (l : ℕ) :
         (((a + (b + c - 2 * (k₃ : ℕ)) - 2 * k₄ : ℕ) : ℝ) + 2) / 2) • stateB hbc k₃ k₄ l
 ```
 
-**`PhyslibAlpha.Sl2.tripleE_stateB_succ`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L130).
+**`PhyslibAlpha.Sl2.tripleE_stateB_succ`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L130).
 
 ```lean
 lemma tripleE_stateB_succ {l : ℕ} (hl : l < a + (b + c - 2 * (k₃ : ℕ)) - 2 * k₄) :
@@ -103,14 +103,14 @@ lemma tripleE_stateB_succ {l : ℕ} (hl : l < a + (b + c - 2 * (k₃ : ℕ)) - 2
         stateB hbc k₃ k₄ l
 ```
 
-**`PhyslibAlpha.Sl2.tripleForm_stateB_self`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L137).
+**`PhyslibAlpha.Sl2.tripleForm_stateB_self`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L137).
 
 ```lean
 lemma tripleForm_stateB_self {l : ℕ} (hl : l ≤ a + (b + c - 2 * (k₃ : ℕ)) - 2 * k₄) :
     tripleForm a b c (stateB hbc k₃ k₄ l) (stateB hbc k₃ k₄ l) = 1
 ```
 
-**`PhyslibAlpha.Sl2.tripleForm_stateB_of_ne`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L142).
+**`PhyslibAlpha.Sl2.tripleForm_stateB_of_ne`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L142).
 
 ```lean
 lemma tripleForm_stateB_of_ne {k₃' : Fin (min b c + 1)} (hk : k₃ ≠ k₃') (k₄' l l' : ℕ) :
@@ -119,7 +119,7 @@ lemma tripleForm_stateB_of_ne {k₃' : Fin (min b c + 1)} (hk : k₃ ≠ k₃') 
 
 ### A.1. Completeness of the first coupling scheme
 
-**`PhyslibAlpha.Sl2.eq_sum_of_orthonormal`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L155).
+**`PhyslibAlpha.Sl2.eq_sum_of_orthonormal`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L155).
 
 > An orthonormal family of `finrank` many vectors expands every vector.
 
@@ -131,7 +131,7 @@ lemma eq_sum_of_orthonormal {ι M : Type*} [Fintype ι] [DecidableEq ι] [Nonemp
     x = ∑ i, B (v i) x • v i
 ```
 
-**`PhyslibAlpha.Sl2.IndexA`**, an abbrev, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L179).
+**`PhyslibAlpha.Sl2.IndexA`**, an abbrev, [line 179](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L179).
 
 > The index set `(k₁, k₂, l)` of the first coupling scheme.
 
@@ -139,13 +139,13 @@ lemma eq_sum_of_orthonormal {ι M : Type*} [Fintype ι] [DecidableEq ι] [Nonemp
 abbrev IndexA : Type
 ```
 
-**An instance with no name**, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L181).
+**An instance with no name**, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L181).
 
 ```lean
 instance : Nonempty (IndexA a b c)
 ```
 
-**`PhyslibAlpha.Sl2.vecA`**, a def, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L184).
+**`PhyslibAlpha.Sl2.vecA`**, a def, [line 184](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L184).
 
 > The states of the first coupling scheme, as a family indexed by `IndexA`.
 
@@ -153,20 +153,20 @@ instance : Nonempty (IndexA a b c)
 def vecA (hab : 0 < a + b) (i : IndexA a b c) : Triple a b c
 ```
 
-**`PhyslibAlpha.Sl2.card_indexA`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L186).
+**`PhyslibAlpha.Sl2.card_indexA`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L186).
 
 ```lean
 lemma card_indexA : Fintype.card (IndexA a b c) = Module.finrank ℝ (Triple a b c)
 ```
 
-**`PhyslibAlpha.Sl2.tripleForm_vecA`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L195).
+**`PhyslibAlpha.Sl2.tripleForm_vecA`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L195).
 
 ```lean
 lemma tripleForm_vecA (hab : 0 < a + b) (hc : 0 < c) (i j : IndexA a b c) :
     tripleForm a b c (vecA hab i) (vecA hab j) = if i = j then 1 else 0
 ```
 
-**`PhyslibAlpha.Sl2.eq_sum_vecA`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L219).
+**`PhyslibAlpha.Sl2.eq_sum_vecA`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L219).
 
 > **Completeness.** The states `|(j₁ j₂) j₁₂, j₃; J, M⟩` form an orthonormal basis.
 
@@ -177,13 +177,13 @@ lemma eq_sum_vecA (hab : 0 < a + b) (hc : 0 < c) (x : Triple a b c) :
 
 ### A.2. Separation by `J` and `M`
 
-**`PhyslibAlpha.Sl2.nat_eq_of_mul_add_two_eq`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L229).
+**`PhyslibAlpha.Sl2.nat_eq_of_mul_add_two_eq`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L229).
 
 ```lean
 lemma nat_eq_of_mul_add_two_eq {p q : ℕ} (h : p * (p + 2) = q * (q + 2)) : p = q
 ```
 
-**`PhyslibAlpha.Sl2.tripleForm_stateA_stateB_eq_zero`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L238).
+**`PhyslibAlpha.Sl2.tripleForm_stateA_stateB_eq_zero`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L238).
 
 > States of different total `J` or different `M` are orthogonal.
 
@@ -197,7 +197,7 @@ lemma tripleForm_stateA_stateB_eq_zero (hab : 0 < a + b) (hbc : 0 < b + c) (ha :
 
 ### A.3. The recoupling coefficients
 
-**`PhyslibAlpha.Sl2.ValidA`**, an abbrev, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L272).
+**`PhyslibAlpha.Sl2.ValidA`**, an abbrev, [line 272](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L272).
 
 > `k₁` gives an admissible intermediate `j₁₂` for the total `J = (a + b + c)/2 - K`.
 
@@ -205,7 +205,7 @@ lemma tripleForm_stateA_stateB_eq_zero (hab : 0 < a + b) (hbc : 0 < b + c) (ha :
 abbrev ValidA (K k₁ : ℕ) : Prop
 ```
 
-**`PhyslibAlpha.Sl2.ValidB`**, an abbrev, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L276).
+**`PhyslibAlpha.Sl2.ValidB`**, an abbrev, [line 276](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L276).
 
 > `k₃` gives an admissible intermediate `j₂₃` for the total `J = (a + b + c)/2 - K`.
 
@@ -213,7 +213,7 @@ abbrev ValidA (K k₁ : ℕ) : Prop
 abbrev ValidB (K k₃ : ℕ) : Prop
 ```
 
-**`PhyslibAlpha.Sl2.recoupling`**, a def, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L280).
+**`PhyslibAlpha.Sl2.recoupling`**, a def, [line 280](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L280).
 
 > The recoupling coefficient `⟨(j₁ j₂) j₁₂, j₃; J M | j₁, (j₂ j₃) j₂₃; J M⟩` with
 > `J = (a + b + c)/2 - K`, `M = J - l`, `j₁₂ = (a + b)/2 - k₁` and `j₂₃ = (b + c)/2 - k₃`.
@@ -223,7 +223,7 @@ def recoupling (hab : 0 < a + b) (hbc : 0 < b + c) (K l : ℕ) (k₁ : Fin (min 
     (k₃ : Fin (min b c + 1)) : ℝ
 ```
 
-**`PhyslibAlpha.Sl2.recoupling_succ`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L284).
+**`PhyslibAlpha.Sl2.recoupling_succ`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L284).
 
 ```lean
 lemma recoupling_succ (hab : 0 < a + b) (hbc : 0 < b + c) (ha : 0 < a) {K l : ℕ}
@@ -232,7 +232,7 @@ lemma recoupling_succ (hab : 0 < a + b) (hbc : 0 < b + c) (ha : 0 < a) {K l : �
     recoupling hab hbc K (l + 1) k₁ k₃ = recoupling hab hbc K l k₁ k₃
 ```
 
-**`PhyslibAlpha.Sl2.recoupling_eq_recoupling_zero`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L306).
+**`PhyslibAlpha.Sl2.recoupling_eq_recoupling_zero`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L306).
 
 > The recoupling coefficients do not depend on `M`.
 
@@ -245,7 +245,7 @@ lemma recoupling_eq_recoupling_zero (hab : 0 < a + b) (hbc : 0 < b + c) (ha : 0 
 
 ### A.4. Orthogonality
 
-**`PhyslibAlpha.Sl2.sum_recoupling_mul_recoupling`**, a lemma, [line 323](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L323).
+**`PhyslibAlpha.Sl2.sum_recoupling_mul_recoupling`**, a lemma, [line 323](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L323).
 
 > **Orthogonality of the recoupling coefficients.** For fixed `J` and `M`,
 > `Σ\_\{j₁₂} ⟨(j₁ j₂) j₁₂, j₃; J M | j₁, (j₂ j₃) j₂₃; J M⟩ ⟨(j₁ j₂) j₁₂, j₃; J M |
@@ -262,7 +262,7 @@ lemma sum_recoupling_mul_recoupling (hab : 0 < a + b) (hbc : 0 < b + c) (ha : 0 
 
 ## B. The 6j symbols
 
-**`PhyslibAlpha.Sl2.sixJ`**, a def, [line 384](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L384).
+**`PhyslibAlpha.Sl2.sixJ`**, a def, [line 384](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L384).
 
 > The **6j symbol** `{j₁ j₂ j₁₂; j₃ J j₂₃}`, with `j₁ = a/2`, `j₂ = b/2`, `j₃ = c/2`,
 > `j₁₂ = (a + b)/2 - k₁`, `j₂₃ = (b + c)/2 - k₃` and `J = (a + b + c)/2 - K`, defined through
@@ -274,7 +274,7 @@ def sixJ (hab : 0 < a + b) (hbc : 0 < b + c) (K : ℕ) (k₁ : Fin (min a b + 1)
     (k₃ : Fin (min b c + 1)) : ℝ
 ```
 
-**`PhyslibAlpha.Sl2.recoupling_eq_sixJ`**, a lemma, [line 392](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L392).
+**`PhyslibAlpha.Sl2.recoupling_eq_sixJ`**, a lemma, [line 392](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L392).
 
 > The recoupling coefficients in terms of the 6j symbols, for every `M`.
 
@@ -287,7 +287,7 @@ lemma recoupling_eq_sixJ (hab : 0 < a + b) (hbc : 0 < b + c) (ha : 0 < a) {K l :
         sixJ hab hbc K k₁ k₃
 ```
 
-**`PhyslibAlpha.Sl2.mul_mul_div_mul_div_sqrt`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L406).
+**`PhyslibAlpha.Sl2.mul_mul_div_mul_div_sqrt`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L406).
 
 ```lean
 lemma mul_mul_div_mul_div_sqrt {s U U' p₁ p₃ p₃' : ℝ} (hs : s * s = 1) (h₁ : 0 < p₁) :
@@ -295,7 +295,7 @@ lemma mul_mul_div_mul_div_sqrt {s U U' p₁ p₃ p₃' : ℝ} (hs : s * s = 1) (
       Real.sqrt p₃ / Real.sqrt p₃' * (U * U')
 ```
 
-**`PhyslibAlpha.Sl2.sum_sixJ_mul_sixJ`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L417).
+**`PhyslibAlpha.Sl2.sum_sixJ_mul_sixJ`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean#L417).
 
 > **Orthogonality of the 6j symbols.**
 > `Σ_{j₁₂} (2j₁₂ + 1)(2j₂₃ + 1) {j₁ j₂ j₁₂; j₃ J j₂₃} {j₁ j₂ j₁₂; j₃ J j₂₃'} = δ_{j₂₃ j₂₃'}`.
@@ -315,4 +315,4 @@ lemma sum_sixJ_mul_sixJ (hab : 0 < a + b) (hbc : 0 < b + c) (ha : 0 < a) (hc : 0
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean)
+- [PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean)

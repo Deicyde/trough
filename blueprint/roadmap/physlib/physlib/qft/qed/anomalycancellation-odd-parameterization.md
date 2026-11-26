@@ -8,7 +8,7 @@ proof: formalized
 
 # Parameterization in odd case
 
-The module `Physlib.QFT.QED.AnomalyCancellation.Odd.Parameterization`, [Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean): 14 declarations, 5 with a docstring.
+The module `Physlib.QFT.QED.AnomalyCancellation.Odd.Parameterization`, [Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean): 14 declarations, 5 with a docstring.
 
 > Given maps `g : Fin n → ℚ`, `f : Fin n → ℚ` and `a : ℚ` we form a solution to the anomaly
 > equations. We show that every solution can be got in this way, up to permutation, unless it is zero.
@@ -17,7 +17,7 @@ The module `Physlib.QFT.QED.AnomalyCancellation.Odd.Parameterization`, [Physlib/
 
 > * The main reference is https://arxiv.org/pdf/1912.04804.pdf. [ref: arxiv\_1912\_04804]
 
-**`PureU1.Odd.parameterizationAsLinear`**, a def, [line 31](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L31).
+**`PureU1.Odd.parameterizationAsLinear`**, a def, [line 31](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L31).
 
 > Given a `g f : Fin n → ℚ` and a `a : ℚ` we form a linear solution. We will later
 > show that this can be extended to a complete solution.
@@ -27,7 +27,7 @@ def parameterizationAsLinear (g f : Fin n → ℚ) (a : ℚ) :
     (PureU1 (2 * n + 1)).LinSols
 ```
 
-**`PureU1.Odd.parameterizationAsLinear_val`**, a lemma, [line 39](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L39).
+**`PureU1.Odd.parameterizationAsLinear_val`**, a lemma, [line 39](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L39).
 
 ```lean
 lemma parameterizationAsLinear_val (g f : Fin n → ℚ) (a : ℚ) :
@@ -39,7 +39,7 @@ lemma parameterizationAsLinear_val (g f : Fin n → ℚ) (a : ℚ) :
           (Shifted.planeCharges f)) • Shifted.planeCharges f)
 ```
 
-**`PureU1.Odd.parameterizationCharge_cube`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L52).
+**`PureU1.Odd.parameterizationCharge_cube`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L52).
 
 > The parameterization satisfies the cubic ACC.
 
@@ -48,7 +48,7 @@ lemma parameterizationCharge_cube (g f : Fin n → ℚ) (a : ℚ) :
     accCube (2 * n + 1) (parameterizationAsLinear g f a).val = 0
 ```
 
-**`PureU1.Odd.parameterization`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L64).
+**`PureU1.Odd.parameterization`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L64).
 
 > Given a `g f : Fin n → ℚ` and a `a : ℚ` we form a solution.
 
@@ -57,7 +57,7 @@ def parameterization (g f : Fin n → ℚ) (a : ℚ) :
     (PureU1 (2 * n + 1)).Sols
 ```
 
-**`PureU1.Odd.anomalyFree_param`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L69).
+**`PureU1.Odd.anomalyFree_param`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L69).
 
 ```lean
 lemma anomalyFree_param {S : (PureU1 (2 * n + 1)).Sols}
@@ -68,7 +68,7 @@ lemma anomalyFree_param {S : (PureU1 (2 * n + 1)).Sols}
       (Unshifted.planeCharges g)
 ```
 
-**`PureU1.Odd.GenericCase`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L94).
+**`PureU1.Odd.GenericCase`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L94).
 
 > A proposition on a solution which is true if
 > `accCubeTriLinSymm (Unshifted.planeCharges g, Unshifted.planeCharges g,
@@ -79,7 +79,7 @@ lemma anomalyFree_param {S : (PureU1 (2 * n + 1)).Sols}
 def GenericCase (S : (PureU1 (2 * n.succ + 1)).Sols) : Prop
 ```
 
-**`PureU1.Odd.genericCase_exists`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L100).
+**`PureU1.Odd.genericCase_exists`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L100).
 
 ```lean
 lemma genericCase_exists (S : (PureU1 (2 * n.succ + 1)).Sols)
@@ -89,7 +89,7 @@ lemma genericCase_exists (S : (PureU1 (2 * n.succ + 1)).Sols)
         (Shifted.planeCharges f) ≠ 0) : GenericCase S
 ```
 
-**`PureU1.Odd.SpecialCase`**, a def, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L116).
+**`PureU1.Odd.SpecialCase`**, a def, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L116).
 
 > A proposition on a solution which is true if
 > `accCubeTriLinSymm (Unshifted.planeCharges g, Unshifted.planeCharges g,
@@ -100,7 +100,7 @@ lemma genericCase_exists (S : (PureU1 (2 * n.succ + 1)).Sols)
 def SpecialCase (S : (PureU1 (2 * n.succ + 1)).Sols) : Prop
 ```
 
-**`PureU1.Odd.specialCase_exists`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L122).
+**`PureU1.Odd.specialCase_exists`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L122).
 
 ```lean
 lemma specialCase_exists (S : (PureU1 (2 * n.succ + 1)).Sols)
@@ -110,21 +110,21 @@ lemma specialCase_exists (S : (PureU1 (2 * n.succ + 1)).Sols)
         (Shifted.planeCharges f) = 0) : SpecialCase S
 ```
 
-**`PureU1.Odd.generic_or_special`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L134).
+**`PureU1.Odd.generic_or_special`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L134).
 
 ```lean
 lemma generic_or_special (S : (PureU1 (2 * n.succ + 1)).Sols) :
     GenericCase S ∨ SpecialCase S
 ```
 
-**`PureU1.Odd.generic_case`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L147).
+**`PureU1.Odd.generic_case`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L147).
 
 ```lean
 lemma generic_case {S : (PureU1 (2 * n.succ + 1)).Sols} (h : GenericCase S) :
     ∃ g f a, S = parameterization g f a
 ```
 
-**`PureU1.Odd.special_case_lineInCubic`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L162).
+**`PureU1.Odd.special_case_lineInCubic`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L162).
 
 ```lean
 lemma special_case_lineInCubic {S : (PureU1 (2 * n.succ + 1)).Sols}
@@ -132,7 +132,7 @@ lemma special_case_lineInCubic {S : (PureU1 (2 * n.succ + 1)).Sols}
       LineInCubic S.1.1
 ```
 
-**`PureU1.Odd.special_case_lineInCubic_perm`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L180).
+**`PureU1.Odd.special_case_lineInCubic_perm`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L180).
 
 ```lean
 lemma special_case_lineInCubic_perm {S : (PureU1 (2 * n.succ + 1)).Sols}
@@ -141,7 +141,7 @@ lemma special_case_lineInCubic_perm {S : (PureU1 (2 * n.succ + 1)).Sols}
     LineInCubicPerm S.1.1
 ```
 
-**`PureU1.Odd.special_case`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L188).
+**`PureU1.Odd.special_case`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean#L188).
 
 ```lean
 lemma special_case {S : (PureU1 (2 * n.succ.succ + 1)).Sols}
@@ -156,4 +156,4 @@ lemma special_case {S : (PureU1 (2 * n.succ.succ + 1)).Sols}
 
 ## Sources
 
-- [Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean)
+- [Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean)

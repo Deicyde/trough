@@ -8,7 +8,7 @@ proof: formalized
 
 # Derivatives on Space
 
-The module `Physlib.SpaceAndTime.Space.Derivatives.Basic`, [Physlib/SpaceAndTime/Space/Derivatives/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean): 40 declarations, 13 with a docstring.
+The module `Physlib.SpaceAndTime.Space.Derivatives.Basic`, [Physlib/SpaceAndTime/Space/Derivatives/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean): 40 declarations, 13 with a docstring.
 
 ## i. Overview
 
@@ -26,7 +26,7 @@ The module `Physlib.SpaceAndTime.Space.Derivatives.Basic`, [Physlib/SpaceAndTime
 
 ## A. Derivatives of functions on `Space d`
 
-**`Space.deriv`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L70).
+**`Space.deriv`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L69).
 
 > Given a function `f : Space d → M` the derivative of `f` in direction `μ`.
 
@@ -37,7 +37,7 @@ noncomputable def deriv {M d} [AddCommGroup M] [Module ℝ M] [TopologicalSpace 
 
 ### A.1. Basic equalities
 
-**`Space.deriv_eq`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L83).
+**`Space.deriv_eq`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L82).
 
 ```lean
 lemma deriv_eq [AddCommGroup M] [Module ℝ M] [TopologicalSpace M]
@@ -45,7 +45,7 @@ lemma deriv_eq [AddCommGroup M] [Module ℝ M] [TopologicalSpace M]
     deriv μ f x = fderiv ℝ f x (basis μ)
 ```
 
-**`Space.deriv_eq_fderiv_fun`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L87).
+**`Space.deriv_eq_fderiv_fun`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L86).
 
 ```lean
 lemma deriv_eq_fderiv_fun [AddCommGroup M] [Module ℝ M] [TopologicalSpace M]
@@ -53,7 +53,7 @@ lemma deriv_eq_fderiv_fun [AddCommGroup M] [Module ℝ M] [TopologicalSpace M]
     deriv μ f = fun x => fderiv ℝ (fun x => f x) x (basis μ)
 ```
 
-**`Space.deriv_eq_fderiv_basis`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L91).
+**`Space.deriv_eq_fderiv_basis`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L90).
 
 ```lean
 lemma deriv_eq_fderiv_basis [AddCommGroup M] [Module ℝ M] [TopologicalSpace M]
@@ -61,7 +61,7 @@ lemma deriv_eq_fderiv_basis [AddCommGroup M] [Module ℝ M] [TopologicalSpace M]
     deriv μ f x = fderiv ℝ f x (basis μ)
 ```
 
-**`Space.fderiv_eq_sum_deriv`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L95).
+**`Space.fderiv_eq_sum_deriv`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L94).
 
 ```lean
 lemma fderiv_eq_sum_deriv {M d} [AddCommGroup M] [Module ℝ M] [TopologicalSpace M]
@@ -69,7 +69,7 @@ lemma fderiv_eq_sum_deriv {M d} [AddCommGroup M] [Module ℝ M] [TopologicalSpac
     fderiv ℝ f x y = ∑ i : Fin d, y i • ∂[i] f x
 ```
 
-**`Space.deriv_eq_mfderiv`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L104).
+**`Space.deriv_eq_mfderiv`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L103).
 
 > The spatial-derivative in terms of the derivative of functions between
 > manifolds.
@@ -80,7 +80,7 @@ lemma deriv_eq_mfderiv {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
     deriv μ f x = mfderiv 𝓘(ℝ, Space d) 𝓘(ℝ, M) f x (basis μ)
 ```
 
-**`Space.mdifferentiable_manifoldStructure_iff_differentiable`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L111).
+**`Space.mdifferentiable_manifoldStructure_iff_differentiable`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L110).
 
 ```lean
 lemma mdifferentiable_manifoldStructure_iff_differentiable {M d} [NormedAddCommGroup M]
@@ -88,7 +88,7 @@ lemma mdifferentiable_manifoldStructure_iff_differentiable {M d} [NormedAddCommG
     MDifferentiableAt (𝓡 d) 𝓘(ℝ, M) f x ↔ DifferentiableAt ℝ f x
 ```
 
-**`Space.deriv_eq_mfderiv_manifoldStructure`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L127).
+**`Space.deriv_eq_mfderiv_manifoldStructure`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L126).
 
 > The spatial-derivative in terms of the derivative of functions between
 > manifolds with the manifold structure `Space.manifoldStructure d`.
@@ -101,7 +101,7 @@ lemma deriv_eq_mfderiv_manifoldStructure {M d} [NormedAddCommGroup M] [NormedSpa
 
 ### A.2. Derivative of the constant function
 
-**`Space.deriv_const`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L152).
+**`Space.deriv_const`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L151).
 
 ```lean
 lemma deriv_const [NormedAddCommGroup M] [NormedSpace ℝ M] (m : M) (μ : Fin d) :
@@ -110,7 +110,7 @@ lemma deriv_const [NormedAddCommGroup M] [NormedSpace ℝ M] (m : M) (μ : Fin d
 
 ### A.3. Derivative distributes over addition and subtraction
 
-**`Space.deriv_add`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L164).
+**`Space.deriv_add`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L163).
 
 > Derivatives on space distribute over addition.
 
@@ -120,7 +120,7 @@ lemma deriv_add [NormedAddCommGroup M] [NormedSpace ℝ M]
     ∂[u] (f1 + f2) = ∂[u] f1 + ∂[u] f2
 ```
 
-**`Space.deriv_coord_add`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L171).
+**`Space.deriv_coord_add`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L170).
 
 > Derivatives on space distribute coordinate-wise over addition.
 
@@ -131,7 +131,7 @@ lemma deriv_coord_add (f1 f2 : Space d → EuclideanSpace ℝ (Fin d))
       (∂[u] (fun x => f1 x i)) + (∂[u] (fun x => f2 x i))
 ```
 
-**`Space.deriv_sub`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L179).
+**`Space.deriv_sub`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L178).
 
 > Derivatives on space distribute over subtraction.
 
@@ -143,7 +143,7 @@ lemma deriv_sub [NormedAddCommGroup M] [NormedSpace ℝ M]
 
 ### A.4. Derivative distributes over scalar multiplication
 
-**`Space.deriv_smul`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L192).
+**`Space.deriv_smul`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L191).
 
 > Space derivatives on scalar product of functions.
 
@@ -154,7 +154,7 @@ lemma deriv_smul [NormedAddCommGroup M] [NormedSpace ℝ M] [NontriviallyNormedF
     ∂[u] (c • f) x = c x • ∂[u] f x + ∂[u] c x • f x
 ```
 
-**`Space.deriv_const_smul`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L199).
+**`Space.deriv_const_smul`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L198).
 
 > Space derivatives on scalar times function.
 
@@ -164,7 +164,7 @@ lemma deriv_const_smul [NormedAddCommGroup M] [NormedSpace ℝ M] [Semiring R]
     (h : Differentiable ℝ f) : ∂[u] (c • f) = c • ∂[u] f
 ```
 
-**`Space.deriv_coord_smul`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L206).
+**`Space.deriv_coord_smul`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L205).
 
 > Coordinate-wise scalar multiplication on space derivatives.
 
@@ -176,7 +176,7 @@ lemma deriv_coord_smul (f : Space d → EuclideanSpace ℝ (Fin d)) (k : ℝ)
 
 ### A.5. Two spatial derivatives commute
 
-**`Space.deriv_commute`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L218).
+**`Space.deriv_commute`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L217).
 
 > Derivatives on space commute with one another.
 
@@ -187,21 +187,21 @@ lemma deriv_commute [NormedAddCommGroup M] [NormedSpace ℝ M]
 
 ### A.6. Derivative of a component
 
-**`Space.deriv_component_same`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L235).
+**`Space.deriv_component_same`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L234).
 
 ```lean
 lemma deriv_component_same (μ : Fin d) (x : Space d) :
     ∂[μ] (fun x => x μ) x = 1
 ```
 
-**`Space.deriv_component_diff`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L241).
+**`Space.deriv_component_diff`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L240).
 
 ```lean
 lemma deriv_component_diff (μ ν : Fin d) (x : Space d) (h : μ ≠ ν) :
     (deriv μ (fun x => x ν) x) = 0
 ```
 
-**`Space.deriv_component`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L247).
+**`Space.deriv_component`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L246).
 
 ```lean
 lemma deriv_component (μ ν : Fin d) (x : Space d) :
@@ -210,7 +210,7 @@ lemma deriv_component (μ ν : Fin d) (x : Space d) :
 
 ### A.7. Derivative of a component squared
 
-**`Space.deriv_component_sq`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L259).
+**`Space.deriv_component_sq`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L258).
 
 ```lean
 lemma deriv_component_sq {d : ℕ} {ν μ : Fin d} (x : Space d) :
@@ -219,7 +219,7 @@ lemma deriv_component_sq {d : ℕ} {ν μ : Fin d} (x : Space d) :
 
 ### A.8. Derivative of a product of functions of single coordinates
 
-**`Space.deriv_prod_coord`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L272).
+**`Space.deriv_prod_coord`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L271).
 
 > The derivative in direction `μ` of `x ↦ ∏ⱼ gⱼ (xⱼ)`, a product of differentiable functions
 > of one coordinate each, is `gμ' (xμ)` times the product of the other factors.
@@ -233,7 +233,7 @@ lemma deriv_prod_coord {d : ℕ} (g : Fin d → ℝ → ℂ) (hg : ∀ j, Differ
 
 ### A.8. Derivivatives of components
 
-**`Space.deriv_euclid`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L300).
+**`Space.deriv_euclid`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L299).
 
 ```lean
 lemma deriv_euclid {d ν μ} {f : Space d → EuclideanSpace ℝ (Fin n)}
@@ -241,7 +241,7 @@ lemma deriv_euclid {d ν μ} {f : Space d → EuclideanSpace ℝ (Fin n)}
     deriv ν (fun x => f x μ) x = deriv ν (fun x => f x) x μ
 ```
 
-**`Space.deriv_lorentz_vector`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L308).
+**`Space.deriv_lorentz_vector`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L307).
 
 ```lean
 lemma deriv_lorentz_vector {d ν μ} {f : Space d → Lorentz.Vector d}
@@ -253,7 +253,7 @@ lemma deriv_lorentz_vector {d ν μ} {f : Space d → Lorentz.Vector d}
 
 #### A.9.1. Differentiability of the norm squared function
 
-**`Space.norm_sq_differentiable`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L328).
+**`Space.norm_sq_differentiable`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L327).
 
 ```lean
 lemma norm_sq_differentiable : Differentiable ℝ (fun x : Space d => ‖x‖ ^ 2)
@@ -261,7 +261,7 @@ lemma norm_sq_differentiable : Differentiable ℝ (fun x : Space d => ‖x‖ ^ 
 
 #### A.9.2. Derivative of the norm squared function
 
-**`Space.deriv_norm_sq`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L337).
+**`Space.deriv_norm_sq`**, a lemma, [line 336](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L336).
 
 ```lean
 lemma deriv_norm_sq (x : Space d) (i : Fin d) :
@@ -272,7 +272,7 @@ lemma deriv_norm_sq (x : Space d) (i : Fin d) :
 
 #### A.10.1. Differentiability of the inner product function
 
-**`Space.inner_differentiable`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L357).
+**`Space.inner_differentiable`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L356).
 
 > The inner product is differentiable.
 
@@ -281,14 +281,14 @@ lemma inner_differentiable {d : ℕ} :
     Differentiable ℝ (fun y : Space d => ⟪y, y⟫_ℝ)
 ```
 
-**`Space.inner_differentiableAt`**, a lemma, [line 362](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L362).
+**`Space.inner_differentiableAt`**, a lemma, [line 361](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L361).
 
 ```lean
 lemma inner_differentiableAt {d : ℕ} (x : Space d) :
     DifferentiableAt ℝ (fun y : Space d => ⟪y, y⟫_ℝ) x
 ```
 
-**`Space.inner_apply_differentiableAt`**, a lemma, [line 367](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L367).
+**`Space.inner_apply_differentiableAt`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L366).
 
 ```lean
 lemma inner_apply_differentiableAt {d : ℕ} [NormedAddCommGroup M]
@@ -298,7 +298,7 @@ lemma inner_apply_differentiableAt {d : ℕ} [NormedAddCommGroup M]
     DifferentiableAt ℝ (fun y : M => ⟪f y, g y⟫_ℝ) x
 ```
 
-**`Space.inner_apply_differentiable`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L375).
+**`Space.inner_apply_differentiable`**, a lemma, [line 374](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L374).
 
 ```lean
 lemma inner_apply_differentiable {d : ℕ} [NormedAddCommGroup M]
@@ -308,14 +308,14 @@ lemma inner_apply_differentiable {d : ℕ} [NormedAddCommGroup M]
     Differentiable ℝ (fun y : M => ⟪f y, g y⟫_ℝ)
 ```
 
-**`Space.inner_contDiff`**, a lemma, [line 382](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L382).
+**`Space.inner_contDiff`**, a lemma, [line 381](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L381).
 
 ```lean
 lemma inner_contDiff {n : WithTop ℕ∞} {d : ℕ} :
     ContDiff ℝ n (fun y : Space d => ⟪y, y⟫_ℝ)
 ```
 
-**`Space.inner_apply_contDiff`**, a lemma, [line 387](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L387).
+**`Space.inner_apply_contDiff`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L386).
 
 ```lean
 lemma inner_apply_contDiff {n : WithTop ℕ∞} {d : ℕ} [NormedAddCommGroup M]
@@ -327,7 +327,7 @@ lemma inner_apply_contDiff {n : WithTop ℕ∞} {d : ℕ} [NormedAddCommGroup M]
 
 #### A.10.2. Derivative of the inner product function
 
-**`Space.deriv_eq_inner_self`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L399).
+**`Space.deriv_eq_inner_self`**, a lemma, [line 398](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L398).
 
 ```lean
 lemma deriv_eq_inner_self (x : Space d) (i : Fin d) :
@@ -336,14 +336,14 @@ lemma deriv_eq_inner_self (x : Space d) (i : Fin d) :
 
 #### A.10.3. Derivative of the inner product on one side
 
-**`Space.deriv_inner_left`**, a lemma, [line 410](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L410).
+**`Space.deriv_inner_left`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L409).
 
 ```lean
 lemma deriv_inner_left {d} (x1 x2 : Space d) (i : Fin d) :
     deriv i (fun x => ⟪x, x2⟫_ℝ) x1 = x2 i
 ```
 
-**`Space.deriv_inner_right`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L415).
+**`Space.deriv_inner_right`**, a lemma, [line 414](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L414).
 
 ```lean
 lemma deriv_inner_right {d} (x1 x2 : Space d) (i : Fin d) :
@@ -352,7 +352,7 @@ lemma deriv_inner_right {d} (x1 x2 : Space d) (i : Fin d) :
 
 ### A.11. Differentiability of derivatives
 
-**`Space.deriv_differentiable`**, a lemma, [line 425](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L425).
+**`Space.deriv_differentiable`**, a lemma, [line 424](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L424).
 
 ```lean
 lemma deriv_differentiable {M} [NormedAddCommGroup M]
@@ -361,7 +361,7 @@ lemma deriv_differentiable {M} [NormedAddCommGroup M]
     Differentiable ℝ (deriv i f)
 ```
 
-**`Space.deriv_contDiff`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L434).
+**`Space.deriv_contDiff`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L433).
 
 ```lean
 lemma deriv_contDiff {d} {f : Space d → ℝ} (hf : ContDiff ℝ (n + 1) f) :
@@ -372,7 +372,7 @@ lemma deriv_contDiff {d} {f : Space d → ℝ} (hf : ContDiff ℝ (n + 1) f) :
 
 ### B.1. The definition
 
-**`Space.distDeriv`**, a def, [line 454](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L454).
+**`Space.distDeriv`**, a def, [line 453](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L453).
 
 > Given a distribution (function) `f : Space d →d[ℝ] M` the derivative
 > of `f` in direction `μ`.
@@ -384,7 +384,7 @@ noncomputable def distDeriv {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
 
 ### B.2. Basic equality
 
-**`Space.distDeriv_apply`**, a lemma, [line 478](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L478).
+**`Space.distDeriv_apply`**, a lemma, [line 477](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L477).
 
 ```lean
 lemma distDeriv_apply {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -394,7 +394,7 @@ lemma distDeriv_apply {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
 
 ### B.3. Commutation of derivatives
 
-**`Space.schwartMap_fderiv_comm`**, a lemma, [line 489](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L489).
+**`Space.schwartMap_fderiv_comm`**, a lemma, [line 488](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L488).
 
 ```lean
 lemma schwartMap_fderiv_comm {d}
@@ -407,7 +407,7 @@ lemma schwartMap_fderiv_comm {d}
       ((fderivCLM ℝ (Space d) ℝ) η)))) x
 ```
 
-**`Space.distDeriv_commute`**, a lemma, [line 500](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L500).
+**`Space.distDeriv_commute`**, a lemma, [line 499](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean#L499).
 
 ```lean
 lemma distDeriv_commute {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -423,4 +423,4 @@ lemma distDeriv_commute {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/Derivatives/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean)
+- [Physlib/SpaceAndTime/Space/Derivatives/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Derivatives/Basic.lean)

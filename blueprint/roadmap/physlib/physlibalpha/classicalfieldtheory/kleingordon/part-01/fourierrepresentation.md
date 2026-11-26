@@ -8,7 +8,7 @@ proof: formalized
 
 # The spatial Fourier transform of the retarded solution
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.FourierRepresentation`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FourierRepresentation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FourierRepresentation.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.FourierRepresentation`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FourierRepresentation.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FourierRepresentation.lean): 3 declarations, 3 with a docstring.
 
 > The retarded solution at time `t` has the spatial Fourier transform given by the Duhamel integral
 > of the sine multiplier.
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.FourierRepresentation`
 
 > - `fourier_solutionSlice` : the Fourier transform of the retarded slice.
 
-**`KleinGordon.fourier_solutionSlice_of_le`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FourierRepresentation.lean#L60).
+**`KleinGordon.fourier_solutionSlice_of_le`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FourierRepresentation.lean#L60).
 
 > The Fourier transform of the retarded slice, when the source vanishes before the time `a`.
 
@@ -43,7 +43,7 @@ lemma fourier_solutionSlice_of_le {μ : ℝ} (hμ : 0 ≤ μ) {a : ℝ}
     𝓕 (solutionSlice F f hμ t) ξ = freqSolution F f μ a ξ t
 ```
 
-**`KleinGordon.fourier_solutionSlice`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FourierRepresentation.lean#L83).
+**`KleinGordon.fourier_solutionSlice`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FourierRepresentation.lean#L83).
 
 > The Fourier transform of the retarded slice at time `t` is the integral over earlier times of
 > the sine multiplier times the Fourier transform of the source slice.
@@ -54,7 +54,7 @@ lemma fourier_solutionSlice {μ : ℝ} (hμ : 0 ≤ μ) (t : ℝ) (ξ : E) :
       ∫ s in Set.Iic t, multiplier (t - s) μ ξ • 𝓕 (slice F f s) ξ
 ```
 
-**`KleinGordon.freqSolution_cauchy`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FourierRepresentation.lean#L103).
+**`KleinGordon.freqSolution_cauchy`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FourierRepresentation.lean#L103).
 
 > After the last time of the source the Fourier mode of the retarded solution is the free
 > oscillator evolution of its value and velocity at that time.
@@ -73,4 +73,4 @@ lemma freqSolution_cauchy {μ : ℝ} {a T t : ℝ} (hT : ∀ s ≥ T, s ∉ Prod
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FourierRepresentation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FourierRepresentation.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FourierRepresentation.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FourierRepresentation.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Generators of JB automorphism groups
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JB.Dynamics`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean): 9 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JB.Dynamics`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean): 9 declarations, 7 with a docstring.
 
 > The Jordan product is bounded, and generators of Jordan automorphism families are derivations.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JB.Dynamics`, [Phys
 
 ## A. The Jordan product is bounded bilinear
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.isBoundedBilinearMap_mul`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L55).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.isBoundedBilinearMap_mul`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L55).
 
 > The Jordan product of a normed Jordan algebra is bounded bilinear, with bound constant `1`.
 
@@ -42,7 +42,7 @@ lemma isBoundedBilinearMap_mul :
     IsBoundedBilinearMap ℝ (fun p : E × E => p.1 * p.2)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.continuous_mul_left`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L64).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.continuous_mul_left`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L64).
 
 > Left Jordan multiplication by a fixed element is continuous.
 
@@ -50,7 +50,7 @@ lemma isBoundedBilinearMap_mul :
 lemma continuous_mul_left (a : E) : Continuous fun x : E => a * x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.continuous_mul_right`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L68).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.continuous_mul_right`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L68).
 
 > Right Jordan multiplication by a fixed element is continuous.
 
@@ -60,7 +60,7 @@ lemma continuous_mul_right (a : E) : Continuous fun x : E => x * a
 
 ## B. Continuous multiplication and quadratic operators
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.mulLeftCLM`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.mulLeftCLM`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L77).
 
 > Left Jordan multiplication as a bounded linear operator, with operator bound `‖a‖`.
 
@@ -68,13 +68,13 @@ lemma continuous_mul_right (a : E) : Continuous fun x : E => x * a
 noncomputable def mulLeftCLM (a : E) : E →L[ℝ] E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.mulLeftCLM_apply`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L81).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.mulLeftCLM_apply`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L81).
 
 ```lean
 lemma mulLeftCLM_apply (a b : E) : mulLeftCLM a b = a * b
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.norm_quadRep_le`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L85).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.norm_quadRep_le`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L85).
 
 > A uniform norm bound for the quadratic representation:
 > `‖U_a b‖ ≤ 3 ‖a‖² ‖b‖`. The sharp constant is not needed for continuity.
@@ -83,7 +83,7 @@ lemma mulLeftCLM_apply (a b : E) : mulLeftCLM a b = a * b
 lemma norm_quadRep_le (a b : E) : ‖U a b‖ ≤ 3 * ‖a‖ ^ 2 * ‖b‖
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.quadRepCLM`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L104).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.quadRepCLM`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L104).
 
 > The quadratic representation as a bounded linear operator.
 
@@ -91,7 +91,7 @@ lemma norm_quadRep_le (a b : E) : ‖U a b‖ ≤ 3 * ‖a‖ ^ 2 * ‖b‖
 noncomputable def quadRepCLM (a : E) : E →L[ℝ] E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.quadRepCLM_apply`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L108).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.quadRepCLM_apply`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L108).
 
 ```lean
 lemma quadRepCLM_apply (a b : E) : quadRepCLM a b = U a b
@@ -99,7 +99,7 @@ lemma quadRepCLM_apply (a b : E) : quadRepCLM a b = U a b
 
 ## C. The derivation corollary
 
-**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.isDerivation_of_isAutomorphismFamily`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L113).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra.isDerivation_of_isAutomorphismFamily`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean#L113).
 
 > **The generator of a differentiable family of Jordan automorphisms is a Jordan derivation.**
 
@@ -122,4 +122,4 @@ lemma isDerivation_of_isAutomorphismFamily {α : ℝ → E → E}
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean)

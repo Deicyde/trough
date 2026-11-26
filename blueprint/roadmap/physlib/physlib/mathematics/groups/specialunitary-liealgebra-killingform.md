@@ -8,7 +8,7 @@ proof: formalized
 
 # The Killing form of `su(n)`
 
-The module `Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.KillingForm`, [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/KillingForm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/KillingForm.lean): 3 declarations, 3 with a docstring.
+The module `Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.KillingForm`, [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/KillingForm.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/KillingForm.lean): 3 declarations, 3 with a docstring.
 
 > The Killing form of `su(n)` and its complexification, and its relation to the adjoint contraction.
 
@@ -36,7 +36,7 @@ The module `Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.KillingForm`, [
 
 ## A. The Killing form as a trace
 
-**`SULieAlgebra.killingForm_eq_trace`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/KillingForm.lean#L61).
+**`SULieAlgebra.killingForm_eq_trace`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/KillingForm.lean#L61).
 
 > The Killing form of the complexification is the trace form of the matrices,
 > `K(A, B) = -2n tr (A B)`. The sign comes from the factor `i` in the bracket, which makes
@@ -49,7 +49,7 @@ lemma killingForm_eq_trace {n : ℕ} (A B : Complexification n) :
 
 ## B. The contraction as the Killing form
 
-**`SULieAlgebra.adjointℂContr_eq_killingForm`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/KillingForm.lean#L90).
+**`SULieAlgebra.adjointℂContr_eq_killingForm`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/KillingForm.lean#L90).
 
 > The contraction is the Killing form on the complexified Lie
 > algebra, up to a factor of `-1/(2n)`.
@@ -59,7 +59,7 @@ lemma adjointℂContr_eq_killingForm {n : ℕ} (A B : Complexification n) :
     adjointℂContr (A ⊗ₜ B) = -(1 / (2 * (n : ℂ))) * killingForm ℂ (Complexification n) A B
 ```
 
-**`SULieAlgebra.adjointContr_eq_killingForm`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/KillingForm.lean#L99).
+**`SULieAlgebra.adjointContr_eq_killingForm`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/KillingForm.lean#L99).
 
 > The contraction is the Killing form on the Lie algebra, up to a factor of `-1/(2n)`.
 
@@ -74,4 +74,4 @@ lemma adjointContr_eq_killingForm {n : ℕ} (x y : SULieAlgebra n ℂ) :
 
 ## Sources
 
-- [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/KillingForm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/KillingForm.lean)
+- [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/KillingForm.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/KillingForm.lean)

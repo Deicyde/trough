@@ -8,7 +8,7 @@ proof: formalized
 
 # The boundary value formula for point sources
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.PointSource`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/PointSource.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/PointSource.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.PointSource`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/PointSource.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/PointSource.lean): 2 declarations, 2 with a docstring.
 
 > The retarded response of a point source at `p` is the boundary value of the resolvent pairing of
 > the translated test function.
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.PointSo
 
 > - `tendsto_fourierPairing_translate` : the boundary value for a point source at `p`.
 
-**`KleinGordon.retardedPointSource_eq_kernel_translate`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/PointSource.lean#L65).
+**`KleinGordon.retardedPointSource_eq_kernel_translate`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/PointSource.lean#L65).
 
 > The retarded point source at `p` is the retarded kernel at the origin applied to the
 > translate.
@@ -52,7 +52,7 @@ lemma retardedPointSource_eq_kernel_translate (m : ℝ) (p : SpaceTime d)
       retardedPointSource m (0 : SpaceTime d) (precompTranslationCLM p φ)
 ```
 
-**`KleinGordon.tendsto_fourierPairing_translate`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/PointSource.lean#L81).
+**`KleinGordon.tendsto_fourierPairing_translate`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/PointSource.lean#L81).
 
 > **The boundary value formula for a point source.** The retarded response of the point source
 > at `p` tested against `φ` is the limit for `ε → 0+` of the resolvent pairing of the translate of
@@ -74,4 +74,4 @@ lemma tendsto_fourierPairing_translate (m : ℝ) (p : SpaceTime d)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/PointSource.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/PointSource.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/PointSource.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/PointSource.lean)

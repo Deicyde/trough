@@ -8,7 +8,7 @@ proof: formalized
 
 # Generators of the Lorentz algebra
 
-The module `Physlib.Relativity.LorentzAlgebra.Basis`, [Physlib/Relativity/LorentzAlgebra/Basis.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzAlgebra/Basis.lean): 9 declarations, 9 with a docstring.
+The module `Physlib.Relativity.LorentzAlgebra.Basis`, [Physlib/Relativity/LorentzAlgebra/Basis.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzAlgebra/Basis.lean): 9 declarations, 9 with a docstring.
 
 > Standard boost and rotation generators and the tangent of a finite boost curve.
 
@@ -46,7 +46,7 @@ The module `Physlib.Relativity.LorentzAlgebra.Basis`, [Physlib/Relativity/Lorent
 
 ## A. Generator definitions
 
-**`lorentzAlgebra.boostGenerator`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzAlgebra/Basis.lean#L82).
+**`lorentzAlgebra.boostGenerator`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzAlgebra/Basis.lean#L82).
 
 > The boost generator K\_i in the Lorentz algebra so(1,3).
 >
@@ -67,7 +67,7 @@ The module `Physlib.Relativity.LorentzAlgebra.Basis`, [Physlib/Relativity/Lorent
 def boostGenerator (i : Fin 3) : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) ℝ
 ```
 
-**`lorentzAlgebra.rotationGenerator`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzAlgebra/Basis.lean#L106).
+**`lorentzAlgebra.rotationGenerator`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzAlgebra/Basis.lean#L106).
 
 > The rotation generator J\_i in the Lorentz algebra so(1,3).
 >
@@ -94,7 +94,7 @@ def rotationGenerator (i : Fin 3) : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) �
 
 ## B. Algebraic properties
 
-**`lorentzAlgebra.boostGenerator_mem`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzAlgebra/Basis.lean#L122).
+**`lorentzAlgebra.boostGenerator_mem`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzAlgebra/Basis.lean#L122).
 
 > The boost generator K\_i is in the Lorentz algebra.
 
@@ -102,7 +102,7 @@ def rotationGenerator (i : Fin 3) : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) �
 lemma boostGenerator_mem (i : Fin 3) : boostGenerator i ∈ lorentzAlgebra
 ```
 
-**`lorentzAlgebra.rotationGenerator_mem`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzAlgebra/Basis.lean#L129).
+**`lorentzAlgebra.rotationGenerator_mem`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzAlgebra/Basis.lean#L129).
 
 > The rotation generator J\_i is in the Lorentz algebra.
 
@@ -110,7 +110,7 @@ lemma boostGenerator_mem (i : Fin 3) : boostGenerator i ∈ lorentzAlgebra
 lemma rotationGenerator_mem (i : Fin 3) : rotationGenerator i ∈ lorentzAlgebra
 ```
 
-**`lorentzAlgebra.boostGenerator_transpose`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzAlgebra/Basis.lean#L137).
+**`lorentzAlgebra.boostGenerator_transpose`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzAlgebra/Basis.lean#L137).
 
 > The boost generators are symmetric.
 
@@ -119,7 +119,7 @@ lemma boostGenerator_transpose (i : Fin 3) :
     (boostGenerator i)ᵀ = boostGenerator i
 ```
 
-**`lorentzAlgebra.boostGenerator_trace`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzAlgebra/Basis.lean#L144).
+**`lorentzAlgebra.boostGenerator_trace`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzAlgebra/Basis.lean#L144).
 
 > The boost generators are traceless.
 
@@ -128,7 +128,7 @@ lemma boostGenerator_trace (i : Fin 3) :
     Matrix.trace (boostGenerator i) = 0
 ```
 
-**`lorentzAlgebra.rotationGenerator_transpose`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzAlgebra/Basis.lean#L150).
+**`lorentzAlgebra.rotationGenerator_transpose`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzAlgebra/Basis.lean#L150).
 
 > The rotation generators are antisymmetric.
 
@@ -137,7 +137,7 @@ lemma rotationGenerator_transpose (i : Fin 3) :
     (rotationGenerator i)ᵀ = -rotationGenerator i
 ```
 
-**`lorentzAlgebra.rotationGenerator_trace`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzAlgebra/Basis.lean#L157).
+**`lorentzAlgebra.rotationGenerator_trace`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzAlgebra/Basis.lean#L157).
 
 > The rotation generators are traceless.
 
@@ -148,7 +148,7 @@ lemma rotationGenerator_trace (i : Fin 3) :
 
 ## C. Rapidity derivatives
 
-**`lorentzAlgebra.hasDerivAt_boost_tanh_zero`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzAlgebra/Basis.lean#L167).
+**`lorentzAlgebra.hasDerivAt_boost_tanh_zero`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzAlgebra/Basis.lean#L167).
 
 > The tangent at zero of the finite boost curve parametrized by rapidity
 > is the negative of the named boost generator.
@@ -166,4 +166,4 @@ lemma hasDerivAt_boost_tanh_zero (i : Fin 3) :
 
 ## Sources
 
-- [Physlib/Relativity/LorentzAlgebra/Basis.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/LorentzAlgebra/Basis.lean)
+- [Physlib/Relativity/LorentzAlgebra/Basis.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/LorentzAlgebra/Basis.lean)

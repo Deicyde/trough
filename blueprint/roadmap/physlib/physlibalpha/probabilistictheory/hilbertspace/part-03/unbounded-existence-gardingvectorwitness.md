@@ -8,7 +8,7 @@ proof: formalized
 
 # Gårding vectors are analytic
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.GardingVectorWitness`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectorWitness.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectorWitness.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.GardingVectorWitness`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectorWitness.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectorWitness.lean): 3 declarations, 3 with a docstring.
 
 > Gårding vectors are analytic vectors of the candidate generator.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.Ga
 
 ## A. The generator on iterated-kernel Gårding vectors
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gardingVectorAt_iteratedKernel_mem_stoneCandidateDomain`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectorWitness.lean#L63).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.gardingVectorAt_iteratedKernel_mem_stoneCandidateDomain`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectorWitness.lean#L63).
 
 > Domain membership of the `n`-th iterated-kernel Gårding vector, derived (not assumed) from the
 > differentiability of its orbit — the same pattern as
@@ -42,7 +42,7 @@ lemma gardingVectorAt_iteratedKernel_mem_stoneCandidateDomain
       (stoneCandidateGenerator (U := U) hUmul).domain
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_gardingVectorAt_iteratedKernel`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectorWitness.lean#L74).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_gardingVectorAt_iteratedKernel`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectorWitness.lean#L74).
 
 > The commutation identity at every order: applying `stoneCandidateGenerator` to `Gₙ` gives (up
 > to the factor `I`) `Gₙ₊₁`. Exactly `stoneCandidateGenerator_analyticGardingVector`'s proof, one
@@ -60,7 +60,7 @@ lemma stoneCandidateGenerator_gardingVectorAt_iteratedKernel
 
 ## B. Analyticity of Gårding vectors
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.analyticGardingVector_isAnalyticVector`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectorWitness.lean#L111).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.analyticGardingVector_isAnalyticVector`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectorWitness.lean#L111).
 
 > **Gårding vectors are analytic vectors** of the candidate generator.
 
@@ -82,4 +82,4 @@ lemma analyticGardingVector_isAnalyticVector (hUunit : ∀ t, U t ∈ unitary (H
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectorWitness.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectorWitness.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectorWitness.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectorWitness.lean)

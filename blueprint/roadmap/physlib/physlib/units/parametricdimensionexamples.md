@@ -8,7 +8,7 @@ proof: formalized
 
 # Examples: parametric dimensions and comparing dimensioned quantities
 
-The module `Physlib.Units.ParametricDimensionExamples`, [Physlib/Units/ParametricDimensionExamples.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ParametricDimensionExamples.lean): 4 declarations (1 instance with no name), 3 with a docstring.
+The module `Physlib.Units.ParametricDimensionExamples`, [Physlib/Units/ParametricDimensionExamples.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ParametricDimensionExamples.lean): 4 declarations (1 instance with no name), 3 with a docstring.
 
 > `Dimension B` is parameterised by a basis `B` of base dimensions. This module
 > illustrates two consequences.
@@ -42,7 +42,7 @@ The module `Physlib.Units.ParametricDimensionExamples`, [Physlib/Units/Parametri
 > A basis with two base dimensions of its own — `bit` and `symbol` — that
 > `LTMCTDimensionBase` does not have. Nothing in the standard units system is involved.
 
-**`ParametricDimensionExamples.Info`**, an inductive, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ParametricDimensionExamples.lean#L83).
+**`ParametricDimensionExamples.Info`**, an inductive, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ParametricDimensionExamples.lean#L80).
 
 > A basis of information-theoretic base dimensions.
 
@@ -54,13 +54,13 @@ inductive Info
   | symbol
 ```
 
-**An instance with no name**, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ParametricDimensionExamples.lean#L89).
+**An instance with no name**, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ParametricDimensionExamples.lean#L86).
 
 ```lean
 instance : DimensionBasis Info
 ```
 
-**`ParametricDimensionExamples.bitDim`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ParametricDimensionExamples.lean#L92).
+**`ParametricDimensionExamples.bitDim`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ParametricDimensionExamples.lean#L89).
 
 > The `bit` base dimension.
 
@@ -68,7 +68,7 @@ instance : DimensionBasis Info
 def bitDim : Dimension Info
 ```
 
-**`ParametricDimensionExamples.symbolDim`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ParametricDimensionExamples.lean#L95).
+**`ParametricDimensionExamples.symbolDim`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ParametricDimensionExamples.lean#L92).
 
 > The `symbol` base dimension.
 
@@ -82,4 +82,4 @@ def symbolDim : Dimension Info
 
 ## Sources
 
-- [Physlib/Units/ParametricDimensionExamples.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ParametricDimensionExamples.lean)
+- [Physlib/Units/ParametricDimensionExamples.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ParametricDimensionExamples.lean)

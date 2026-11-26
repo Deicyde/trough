@@ -8,7 +8,7 @@ proof: formalized
 
 # Products of functions on a finite product
 
-The module `QuantumInfo.ForMathlib.ExchangeRelations`, [QuantumInfo/ForMathlib/ExchangeRelations.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ExchangeRelations.lean): 6 declarations, 6 with a docstring.
+The module `QuantumInfo.ForMathlib.ExchangeRelations`, [QuantumInfo/ForMathlib/ExchangeRelations.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ExchangeRelations.lean): 6 declarations, 6 with a docstring.
 
 > With at least one coordinate, a function `T` on a finite product `(i : ι) → κ i` is a product of
 > functions of one variable exactly when it satisfies the exchange relations.
@@ -44,7 +44,7 @@ The module `QuantumInfo.ForMathlib.ExchangeRelations`, [QuantumInfo/ForMathlib/E
 
 ## A. Product identities
 
-**`Finset.prod_apply_update`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ExchangeRelations.lean#L70).
+**`Finset.prod_apply_update`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ExchangeRelations.lean#L70).
 
 > Changing coordinate `i` of `x` to `a` changes only the factor indexed by `i` in
 > `∏ j, v j (x j)`.
@@ -54,7 +54,7 @@ lemma Finset.prod_apply_update (v : (i : ι) → κ i → K) (x : (i : ι) → �
     (a : κ i) : ∏ j, v j (update x i a j) = v i a * ∏ j ∈ Finset.univ.erase i, v j (x j)
 ```
 
-**`Finset.prod_update_const_mul`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ExchangeRelations.lean#L77).
+**`Finset.prod_update_const_mul`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ExchangeRelations.lean#L77).
 
 > Multiplying the function indexed by `i₀` by `c` multiplies `∏ i, v i (x i)` by `c`.
 
@@ -64,7 +64,7 @@ lemma Finset.prod_update_const_mul (v : (i : ι) → κ i → K) (c : K) (i₀ :
     ∏ i, update v i₀ (fun a ↦ c * v i₀ a) i (x i) = c * ∏ i, v i (x i)
 ```
 
-**`prod_apply_update_mul_prod_apply_update`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ExchangeRelations.lean#L87).
+**`prod_apply_update_mul_prod_apply_update`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ExchangeRelations.lean#L87).
 
 > A product `x ↦ ∏ i, v i (x i)` of functions of one variable satisfies the exchange
 > relations.
@@ -78,7 +78,7 @@ lemma prod_apply_update_mul_prod_apply_update (v : (i : ι) → κ i → K) (x y
 
 ## B. Factorization from the exchange relations
 
-**`eq_mul_prod_of_mul_update`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ExchangeRelations.lean#L109).
+**`eq_mul_prod_of_mul_update`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ExchangeRelations.lean#L109).
 
 > If `T` satisfies the exchange relations and `T x₀ ≠ 0`, then every `x` that agrees with `x₀`
 > outside a finite set `s` of coordinates satisfies
@@ -93,7 +93,7 @@ lemma eq_mul_prod_of_mul_update {T : ((i : ι) → κ i) → K}
       T x = T x₀ * ∏ j ∈ s, T (update x₀ j (x j)) / T x₀
 ```
 
-**`exists_prod_of_mul_update`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ExchangeRelations.lean#L140).
+**`exists_prod_of_mul_update`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ExchangeRelations.lean#L140).
 
 > If `ι` is nonempty, a function on a finite product that satisfies the exchange relations
 > factors as a product of functions of one variable.
@@ -105,7 +105,7 @@ lemma exists_prod_of_mul_update [Fintype ι] [Nonempty ι] {T : ((i : ι) → κ
     ∃ v : (i : ι) → κ i → K, ∀ x, T x = ∏ i, v i (x i)
 ```
 
-**`exists_prod_iff_mul_update`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ExchangeRelations.lean#L156).
+**`exists_prod_iff_mul_update`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ExchangeRelations.lean#L156).
 
 > If `ι` is nonempty, a function on a finite product factors as a product of functions of one
 > variable if and only if it satisfies the exchange relations.
@@ -123,4 +123,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [QuantumInfo/ForMathlib/ExchangeRelations.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ExchangeRelations.lean)
+- [QuantumInfo/ForMathlib/ExchangeRelations.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ExchangeRelations.lean)

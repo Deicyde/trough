@@ -8,7 +8,7 @@ proof: formalized
 
 # Wick's theorem
 
-The module `Physlib.QFT.PerturbationTheory.WickAlgebra.WicksTheorem`, [Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheorem.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheorem.lean): 2 declarations, 1 with a docstring, 1 listed as significant.
+The module `Physlib.QFT.PerturbationTheory.WickAlgebra.WicksTheorem`, [Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheorem.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheorem.lean): 2 declarations, 1 with a docstring, 1 listed as significant.
 
 > This file constrains the time-dependent version of Wick's theorem
 > for lists of fields containing both fermions and bosons.
@@ -19,7 +19,7 @@ The module `Physlib.QFT.PerturbationTheory.WickAlgebra.WicksTheorem`, [Physlib/Q
 
 ## Wick's theorem
 
-**`FieldSpecification.wicks_theorem_congr`**, a lemma, [line 42](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheorem.lean#L42).
+**`FieldSpecification.wicks_theorem_congr`**, a lemma, [line 42](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheorem.lean#L42).
 
 ```lean
 lemma wicks_theorem_congr {φs φs' : List 𝓕.FieldOp} (h : φs = φs') :
@@ -27,7 +27,7 @@ lemma wicks_theorem_congr {φs φs' : List 𝓕.FieldOp} (h : φs = φs') :
     = ∑ (φs'Λ : WickContraction φs'.length), φs'Λ.wickTerm
 ```
 
-**`FieldSpecification.wicks_theorem`**, a theorem, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheorem.lean#L79). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`FieldSpecification.wicks_theorem`**, a theorem, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheorem.lean#L79). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > For a list `φs` of `𝓕.FieldOp`, Wick's theorem states that
 >
@@ -72,4 +72,4 @@ theorem wicks_theorem : (φs : List 𝓕.FieldOp) → 𝓣(ofFieldOpList φs) =
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheorem.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheorem.lean)
+- [Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheorem.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheorem.lean)

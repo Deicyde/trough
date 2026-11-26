@@ -8,7 +8,7 @@ proof: formalized
 
 # The hat map on three-dimensional vectors
 
-The module `Physlib.Mathematics.Modules.CrossProductMatrix`, [Physlib/Mathematics/Modules/CrossProductMatrix.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/CrossProductMatrix.lean): 6 declarations, 6 with a docstring.
+The module `Physlib.Mathematics.Modules.CrossProductMatrix`, [Physlib/Mathematics/Modules/CrossProductMatrix.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/CrossProductMatrix.lean): 6 declarations, 6 with a docstring.
 
 > The hat map sends a vector `ω : Fin 3 → ℝ` to the skew-symmetric matrix `[ω]ₓ` characterised by
 > `[ω]ₓ *ᵥ v = ω ⨯₃ v`. It realises the correspondence between `ℝ³` and the skew-symmetric `3 × 3`
@@ -16,7 +16,7 @@ The module `Physlib.Mathematics.Modules.CrossProductMatrix`, [Physlib/Mathematic
 > The vee map only selects matrix entries and is defined for arbitrary coefficient types,
 > including operator-valued matrices.
 
-**`Matrix.crossProductMatrix`**, a def, [line 28](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/CrossProductMatrix.lean#L28).
+**`Matrix.crossProductMatrix`**, a def, [line 28](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/CrossProductMatrix.lean#L28).
 
 > The hat map `[ω]ₓ`: the skew-symmetric `3 × 3` matrix acting as the cross product with `ω`,
 > i.e. `[ω]ₓ *ᵥ v = ω ⨯₃ v`.
@@ -25,7 +25,7 @@ The module `Physlib.Mathematics.Modules.CrossProductMatrix`, [Physlib/Mathematic
 def crossProductMatrix (ω : Fin 3 → ℝ) : Matrix (Fin 3) (Fin 3) ℝ
 ```
 
-**`Matrix.crossProductMatrix_mulVec`**, a lemma, [line 33](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/CrossProductMatrix.lean#L33).
+**`Matrix.crossProductMatrix_mulVec`**, a lemma, [line 33](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/CrossProductMatrix.lean#L33).
 
 > The hat matrix acts on a vector as the cross product.
 
@@ -34,7 +34,7 @@ lemma crossProductMatrix_mulVec (ω v : Fin 3 → ℝ) :
     crossProductMatrix ω *ᵥ v = ω ⨯₃ v
 ```
 
-**`Matrix.crossProductMatrix_transpose`**, a lemma, [line 41](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/CrossProductMatrix.lean#L41).
+**`Matrix.crossProductMatrix_transpose`**, a lemma, [line 41](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/CrossProductMatrix.lean#L41).
 
 > The hat map produces skew-symmetric matrices.
 
@@ -43,7 +43,7 @@ lemma crossProductMatrix_transpose (ω : Fin 3 → ℝ) :
     (crossProductMatrix ω)ᵀ = - crossProductMatrix ω
 ```
 
-**`Matrix.crossProductVee`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/CrossProductMatrix.lean#L48).
+**`Matrix.crossProductVee`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/CrossProductMatrix.lean#L48).
 
 > The vee map: reads the vector off a `3 × 3` matrix with arbitrary coefficients.
 > For real coefficients, it is a left inverse of the hat map.
@@ -52,7 +52,7 @@ lemma crossProductMatrix_transpose (ω : Fin 3 → ℝ) :
 def crossProductVee {α : Type*} (A : Matrix (Fin 3) (Fin 3) α) : Fin 3 → α
 ```
 
-**`Matrix.crossProductVee_crossProductMatrix`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/CrossProductMatrix.lean#L53).
+**`Matrix.crossProductVee_crossProductMatrix`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/CrossProductMatrix.lean#L53).
 
 > The vee map is a left inverse of the hat map.
 
@@ -61,7 +61,7 @@ lemma crossProductVee_crossProductMatrix (ω : Fin 3 → ℝ) :
     crossProductVee (crossProductMatrix ω) = ω
 ```
 
-**`Matrix.crossProductMatrix_crossProductVee`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/CrossProductMatrix.lean#L61).
+**`Matrix.crossProductMatrix_crossProductVee`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/CrossProductMatrix.lean#L61).
 
 > On skew-symmetric matrices the hat map is also a right inverse of the vee map: if `Aᵀ = -A`
 > then `[Aᵛ]ₓ = A`. Together with `crossProductVee_crossProductMatrix` this identifies `ℝ³` with the
@@ -78,4 +78,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/Modules/CrossProductMatrix.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Modules/CrossProductMatrix.lean)
+- [Physlib/Mathematics/Modules/CrossProductMatrix.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Modules/CrossProductMatrix.lean)

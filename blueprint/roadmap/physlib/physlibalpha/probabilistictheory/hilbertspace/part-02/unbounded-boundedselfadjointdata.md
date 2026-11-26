@@ -8,7 +8,7 @@ proof: formalized
 
 # Spectral measures of bounded self-adjoint operators
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.BoundedSelfAdjointData`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedSelfAdjointData.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedSelfAdjointData.lean): 4 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.BoundedSelfAdjointData`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedSelfAdjointData.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedSelfAdjointData.lean): 4 declarations, 2 with a docstring.
 
 > The real spectral measure of a bounded self-adjoint operator.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.BoundedSelfA
 
 ## A. The real spectral measure
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.boundedSelfAdjointSpectralMeasure`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedSelfAdjointData.lean#L62).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.boundedSelfAdjointSpectralMeasure`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedSelfAdjointData.lean#L62).
 
 > The real spectral measure of a bounded self-adjoint operator: the spectral measure on its
 > complex spectrum, pushed forward along `Complex.re`.
@@ -43,7 +43,7 @@ noncomputable def boundedSelfAdjointSpectralMeasure
     QuantumMechanics.WOTSpectralMeasure ℝ H
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.boundedSelfAdjointSpectralMeasure_reconstruction`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedSelfAdjointData.lean#L68).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.boundedSelfAdjointSpectralMeasure_reconstruction`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedSelfAdjointData.lean#L68).
 
 ```lean
 lemma boundedSelfAdjointSpectralMeasure_reconstruction
@@ -54,7 +54,7 @@ lemma boundedSelfAdjointSpectralMeasure_reconstruction
 
 ## B. Commutation and bounded support
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.boundedSelfAdjointSpectralMeasure_commute_of_commute`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedSelfAdjointData.lean#L113).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.boundedSelfAdjointSpectralMeasure_commute_of_commute`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedSelfAdjointData.lean#L113).
 
 > The spectral projections of a bounded self-adjoint operator commute with every unitary that
 > commutes with it.
@@ -67,7 +67,7 @@ lemma boundedSelfAdjointSpectralMeasure_commute_of_commute
       ContinuousLinearMapWOT.ofCLM T * boundedSelfAdjointSpectralMeasure A hA E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.exists_boundedSelfAdjointSpectralSupport`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedSelfAdjointData.lean#L130).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.exists_boundedSelfAdjointSpectralSupport`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedSelfAdjointData.lean#L130).
 
 ```lean
 lemma exists_boundedSelfAdjointSpectralSupport
@@ -87,4 +87,4 @@ lemma exists_boundedSelfAdjointSpectralSupport
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedSelfAdjointData.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedSelfAdjointData.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedSelfAdjointData.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedSelfAdjointData.lean)

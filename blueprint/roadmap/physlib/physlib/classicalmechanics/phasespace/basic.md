@@ -8,7 +8,7 @@ proof: formalized
 
 # Canonical phase spaces
 
-The module `Physlib.ClassicalMechanics.PhaseSpace.Basic`, [Physlib/ClassicalMechanics/PhaseSpace/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean): 20 declarations, 14 with a docstring; 1 private, not shown.
+The module `Physlib.ClassicalMechanics.PhaseSpace.Basic`, [Physlib/ClassicalMechanics/PhaseSpace/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean): 20 declarations, 14 with a docstring; 1 private, not shown.
 
 > The cotangent phase space of a configuration space and its momentum-position coordinates.
 
@@ -38,7 +38,7 @@ The module `Physlib.ClassicalMechanics.PhaseSpace.Basic`, [Physlib/ClassicalMech
 
 ## A. States and their configurations
 
-**`ClassicalMechanics.PhaseSpace`**, an abbrev, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L66).
+**`ClassicalMechanics.PhaseSpace`**, an abbrev, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L66).
 
 > The canonical phase space `T*Q`, whose states pair a configuration with a momentum covector.
 
@@ -46,7 +46,7 @@ The module `Physlib.ClassicalMechanics.PhaseSpace.Basic`, [Physlib/ClassicalMech
 abbrev PhaseSpace
 ```
 
-**`ClassicalMechanics.PhaseSpace.position`**, an abbrev, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L79).
+**`ClassicalMechanics.PhaseSpace.position`**, an abbrev, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L79).
 
 > The configuration of a phase-space state.
 
@@ -54,7 +54,7 @@ abbrev PhaseSpace
 abbrev position (s : PhaseSpace I Q) : Q
 ```
 
-**`ClassicalMechanics.PhaseSpace.momentum`**, an abbrev, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L82).
+**`ClassicalMechanics.PhaseSpace.momentum`**, an abbrev, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L82).
 
 > The momentum covector of a state, acting on tangent vectors at its configuration.
 
@@ -62,7 +62,7 @@ abbrev position (s : PhaseSpace I Q) : Q
 abbrev momentum (s : PhaseSpace I Q) : TangentSpace I s.position →L[ℝ] ℝ
 ```
 
-**`ClassicalMechanics.PhaseSpace.mk`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L85).
+**`ClassicalMechanics.PhaseSpace.mk`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L85).
 
 > Construct a state from a configuration and its momentum covector.
 
@@ -70,19 +70,19 @@ abbrev momentum (s : PhaseSpace I Q) : TangentSpace I s.position →L[ℝ] ℝ
 def mk (q : Q) (p : TangentSpace I q →L[ℝ] ℝ) : PhaseSpace I Q
 ```
 
-**`ClassicalMechanics.PhaseSpace.position_mk`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L88).
+**`ClassicalMechanics.PhaseSpace.position_mk`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L88).
 
 ```lean
 lemma position_mk (q : Q) (p : TangentSpace I q →L[ℝ] ℝ) : (mk q p).position = q
 ```
 
-**`ClassicalMechanics.PhaseSpace.momentum_mk`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L91).
+**`ClassicalMechanics.PhaseSpace.momentum_mk`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L91).
 
 ```lean
 lemma momentum_mk (q : Q) (p : TangentSpace I q →L[ℝ] ℝ) : (mk q p).momentum = p
 ```
 
-**`ClassicalMechanics.PhaseSpace.contMDiff_position`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L94).
+**`ClassicalMechanics.PhaseSpace.contMDiff_position`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L94).
 
 > The configuration projection from phase space is smooth.
 
@@ -91,7 +91,7 @@ lemma contMDiff_position :
     ContMDiff (I.prod 𝓘(ℝ, E →L[ℝ] ℝ)) I ∞ (position : PhaseSpace I Q → Q)
 ```
 
-**`ClassicalMechanics.PhaseSpace.zeroMomentum`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L99).
+**`ClassicalMechanics.PhaseSpace.zeroMomentum`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L99).
 
 > The state with zero momentum at a given configuration.
 
@@ -99,7 +99,7 @@ lemma contMDiff_position :
 def zeroMomentum (q : Q) : PhaseSpace I Q
 ```
 
-**`ClassicalMechanics.PhaseSpace.contMDiff_zeroMomentum`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L102).
+**`ClassicalMechanics.PhaseSpace.contMDiff_zeroMomentum`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L102).
 
 > Assigning zero momentum to each configuration is a smooth section of phase space.
 
@@ -110,7 +110,7 @@ lemma contMDiff_zeroMomentum :
 
 ## B. Global momentum-position coordinates
 
-**`ClassicalMechanics.PhaseSpace.normedSpaceDiffeomorph`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L125).
+**`ClassicalMechanics.PhaseSpace.normedSpaceDiffeomorph`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L125).
 
 > Global covector-position coordinates on the phase space of a real normed space.
 
@@ -120,7 +120,7 @@ noncomputable def normedSpaceDiffeomorph :
       𝓘(ℝ, (E →L[ℝ] ℝ) × E)⟯ (E →L[ℝ] ℝ) × E
 ```
 
-**`ClassicalMechanics.PhaseSpace.normedSpaceDiffeomorph_apply`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L150).
+**`ClassicalMechanics.PhaseSpace.normedSpaceDiffeomorph_apply`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L150).
 
 ```lean
 lemma normedSpaceDiffeomorph_apply (s : PhaseSpace 𝓘(ℝ, E) ⟨E⟩) :
@@ -129,7 +129,7 @@ lemma normedSpaceDiffeomorph_apply (s : PhaseSpace 𝓘(ℝ, E) ⟨E⟩) :
         s.position)
 ```
 
-**`ClassicalMechanics.PhaseSpace.normedSpaceDiffeomorph_symm_apply`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L156).
+**`ClassicalMechanics.PhaseSpace.normedSpaceDiffeomorph_symm_apply`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L156).
 
 ```lean
 lemma normedSpaceDiffeomorph_symm_apply (p : E →L[ℝ] ℝ) (q : E) :
@@ -137,7 +137,7 @@ lemma normedSpaceDiffeomorph_symm_apply (p : E →L[ℝ] ℝ) (q : E) :
       mk q (p.comp (NormedSpace.fromTangentSpace q).toContinuousLinearMap)
 ```
 
-**`ClassicalMechanics.PhaseSpace.ofNormedSpace`**, a def, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L164).
+**`ClassicalMechanics.PhaseSpace.ofNormedSpace`**, a def, [line 164](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L164).
 
 > The phase-space state on a normed space with momentum covector `p` and position `q`.
 > The argument order agrees with the momentum-position coordinates of Hamilton's equations.
@@ -146,14 +146,14 @@ lemma normedSpaceDiffeomorph_symm_apply (p : E →L[ℝ] ℝ) (q : E) :
 def ofNormedSpace (p : E →L[ℝ] ℝ) (q : E) : PhaseSpace 𝓘(ℝ, E) ⟨E⟩
 ```
 
-**`ClassicalMechanics.PhaseSpace.position_ofNormedSpace`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L168).
+**`ClassicalMechanics.PhaseSpace.position_ofNormedSpace`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L168).
 
 ```lean
 lemma position_ofNormedSpace (p : E →L[ℝ] ℝ) (q : E) :
     (ofNormedSpace p q).position = q
 ```
 
-**`ClassicalMechanics.PhaseSpace.momentum_ofNormedSpace_apply`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L175).
+**`ClassicalMechanics.PhaseSpace.momentum_ofNormedSpace_apply`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L175).
 
 > The constructed momentum covector acts on tangent vectors through their normed-space
 > coordinates.
@@ -164,7 +164,7 @@ lemma momentum_ofNormedSpace_apply (p : E →L[ℝ] ℝ) (q : E) (v : TangentSpa
       p (NormedSpace.fromTangentSpace q v)
 ```
 
-**`ClassicalMechanics.PhaseSpace.innerProductSpaceDiffeomorph`**, a def, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L186).
+**`ClassicalMechanics.PhaseSpace.innerProductSpaceDiffeomorph`**, a def, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L186).
 
 > Global momentum-vector-position coordinates, using the real Hilbert-space Riesz map.
 
@@ -174,7 +174,7 @@ noncomputable def innerProductSpaceDiffeomorph :
       𝓘(ℝ, E × E)⟯ E × E
 ```
 
-**`ClassicalMechanics.PhaseSpace.innerProductSpaceDiffeomorph_symm_apply`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L195).
+**`ClassicalMechanics.PhaseSpace.innerProductSpaceDiffeomorph_symm_apply`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L195).
 
 > A coordinate momentum vector acts on velocities by the real inner product.
 
@@ -185,7 +185,7 @@ lemma innerProductSpaceDiffeomorph_symm_apply (p q : E) :
         (NormedSpace.fromTangentSpace q).toContinuousLinearMap)
 ```
 
-**`ClassicalMechanics.PhaseSpace.ofInnerProductSpace`**, a def, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L205).
+**`ClassicalMechanics.PhaseSpace.ofInnerProductSpace`**, a def, [line 205](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L205).
 
 > The phase-space state on a real Hilbert space with momentum vector `p` and position `q`.
 > The Riesz map turns `p` into a momentum covector, with the same argument order as Hamilton's
@@ -195,14 +195,14 @@ lemma innerProductSpaceDiffeomorph_symm_apply (p q : E) :
 def ofInnerProductSpace (p q : E) : PhaseSpace 𝓘(ℝ, E) ⟨E⟩
 ```
 
-**`ClassicalMechanics.PhaseSpace.position_ofInnerProductSpace`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L209).
+**`ClassicalMechanics.PhaseSpace.position_ofInnerProductSpace`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L209).
 
 ```lean
 lemma position_ofInnerProductSpace (p q : E) :
     (ofInnerProductSpace p q).position = q
 ```
 
-**`ClassicalMechanics.PhaseSpace.momentum_ofInnerProductSpace_apply`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L214).
+**`ClassicalMechanics.PhaseSpace.momentum_ofInnerProductSpace_apply`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean#L214).
 
 > The momentum covector associated to `p` acts by taking the inner product with `p`.
 
@@ -218,4 +218,4 @@ lemma momentum_ofInnerProductSpace_apply (p q : E) (v : TangentSpace 𝓘(ℝ, E
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/PhaseSpace/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean)
+- [Physlib/ClassicalMechanics/PhaseSpace/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/PhaseSpace/Basic.lean)

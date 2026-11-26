@@ -8,9 +8,9 @@ proof: formalized
 
 # Metric for real Lorentz vectors
 
-The module `Physlib.Relativity.Tensors.RealTensor.Metrics.Pre`, [Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean): 12 declarations, 6 with a docstring.
+The module `Physlib.Relativity.Tensors.RealTensor.Metrics.Pre`, [Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean): 12 declarations, 6 with a docstring.
 
-**`Lorentz.ContrMod.metricVal`**, a def, [line 24](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L24).
+**`Lorentz.ContrMod.metricVal`**, a def, [line 24](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L24).
 
 > The metric `ηᵃᵃ` as an element of `(ContrMod d ⊗[ℝ] ContrMod d)`.
 
@@ -18,14 +18,14 @@ The module `Physlib.Relativity.Tensors.RealTensor.Metrics.Pre`, [Physlib/Relativ
 def ContrMod.metricVal (d : ℕ := 3) : ContrMod d ⊗[ℝ] ContrMod d
 ```
 
-**`Lorentz.ContrMod.metricVal_expand_tmul_minkowskiMatrix`**, a lemma, [line 27](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L27).
+**`Lorentz.ContrMod.metricVal_expand_tmul_minkowskiMatrix`**, a lemma, [line 27](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L27).
 
 ```lean
 lemma ContrMod.metricVal_expand_tmul_minkowskiMatrix {d : ℕ} : ContrMod.metricVal d =
     ∑ i, (minkowskiMatrix i i) • (contrBasis d i ⊗ₜ[ℝ] contrBasis d i)
 ```
 
-**`Lorentz.ContrMod.metricVal_expand_tmul`**, a lemma, [line 34](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L34).
+**`Lorentz.ContrMod.metricVal_expand_tmul`**, a lemma, [line 34](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L34).
 
 > Expansion of `ContrMod.metricVal` into basis.
 
@@ -35,7 +35,7 @@ lemma ContrMod.metricVal_expand_tmul {d : ℕ} : ContrMod.metricVal d =
     ∑ i, contrBasis d (Sum.inr i) ⊗ₜ[ℝ] contrBasis d (Sum.inr i)
 ```
 
-**`Lorentz.ContrMod.metric`**, a def, [line 43](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L43).
+**`Lorentz.ContrMod.metric`**, a def, [line 43](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L43).
 
 > The metric `ηᵃᵃ` as a morphism `𝟙_ (Rep ℝ (LorentzGroup d)) ⟶ ContrMod.rep ⊗ ContrMod.rep`,
 > making its invariance under the action of `LorentzGroup d`.
@@ -46,13 +46,13 @@ def ContrMod.metric (d : ℕ := 3) :
     ((ContrMod.rep).tprod (ContrMod.rep))
 ```
 
-**`Lorentz.ContrMod.metric_apply_one`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L62).
+**`Lorentz.ContrMod.metric_apply_one`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L62).
 
 ```lean
 lemma ContrMod.metric_apply_one {d : ℕ} : (ContrMod.metric d) (1 : ℝ) = ContrMod.metricVal d
 ```
 
-**`Lorentz.CoMod.metricVal`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L66).
+**`Lorentz.CoMod.metricVal`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L66).
 
 > The metric `ηᵢᵢ` as an element of `(CoMod d ⊗[ℝ] CoMod d)`.
 
@@ -60,14 +60,14 @@ lemma ContrMod.metric_apply_one {d : ℕ} : (ContrMod.metric d) (1 : ℝ) = Cont
 def CoMod.metricVal (d : ℕ := 3) : CoMod d ⊗[ℝ] CoMod d
 ```
 
-**`Lorentz.CoMod.metricVal_expand_tmul_minkowskiMatrix`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L69).
+**`Lorentz.CoMod.metricVal_expand_tmul_minkowskiMatrix`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L69).
 
 ```lean
 lemma CoMod.metricVal_expand_tmul_minkowskiMatrix {d : ℕ} : CoMod.metricVal d =
     ∑ i, (minkowskiMatrix i i) • (coBasis d i ⊗ₜ[ℝ] coBasis d i)
 ```
 
-**`Lorentz.CoMod.metricVal_expand_tmul`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L76).
+**`Lorentz.CoMod.metricVal_expand_tmul`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L76).
 
 > Expansion of `ContrMod.metricVal` into basis.
 
@@ -77,7 +77,7 @@ lemma CoMod.metricVal_expand_tmul {d : ℕ} : CoMod.metricVal d =
     ∑ i, coBasis d (Sum.inr i) ⊗ₜ[ℝ] coBasis d (Sum.inr i)
 ```
 
-**`Lorentz.CoMod.metric`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L85).
+**`Lorentz.CoMod.metric`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L85).
 
 > The metric `ηᵢᵢ` as a morphism `𝟙_ (Rep ℂ (LorentzGroup d))) ⟶ CoMod.rep ⊗ CoMod.rep`,
 > making its invariance under the action of `LorentzGroup d`.
@@ -87,7 +87,7 @@ def CoMod.metric (d : ℕ := 3) : (Representation.trivial ℝ (LorentzGroup d) �
     ((CoMod.rep).tprod (CoMod.rep))
 ```
 
-**`Lorentz.CoMod.metric_apply_one`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L102).
+**`Lorentz.CoMod.metric_apply_one`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L102).
 
 ```lean
 lemma CoMod.metric_apply_one {d : ℕ} : (CoMod.metric d) (1 : ℝ) = CoMod.metricVal d
@@ -95,7 +95,7 @@ lemma CoMod.metric_apply_one {d : ℕ} : (CoMod.metric d) (1 : ℝ) = CoMod.metr
 
 ## Contraction of metrics
 
-**`Lorentz.ContrMod.contr_metric`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L112).
+**`Lorentz.ContrMod.contr_metric`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L112).
 
 ```lean
 lemma ContrMod.contr_metric {d : ℕ} :
@@ -108,7 +108,7 @@ lemma ContrMod.contr_metric {d : ℕ} :
       (ContrMod.metric d 1) ⊗ₜ[ℝ] (CoMod.metric d 1)) = ContrMod.unit d (1 : ℝ)
 ```
 
-**`Lorentz.CoMod.contr_metric`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L152).
+**`Lorentz.CoMod.contr_metric`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean#L152).
 
 ```lean
 lemma CoMod.contr_metric {d : ℕ} :
@@ -127,4 +127,4 @@ lemma CoMod.contr_metric {d : ℕ} :
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean)
+- [Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Unit tensors for real Lorentz tensors
 
-The module `Physlib.Relativity.Tensors.RealTensor.Units.Basic`, [Physlib/Relativity/Tensors/RealTensor/Units/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Units/Basic.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.Relativity.Tensors.RealTensor.Units.Basic`, [Physlib/Relativity/Tensors/RealTensor/Units/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Units/Basic.lean): 1 declaration, 1 with a docstring.
 
 ## i. Overview
 
@@ -26,7 +26,7 @@ The module `Physlib.Relativity.Tensors.RealTensor.Units.Basic`, [Physlib/Relativ
 
 ## A. Basis components
 
-**`realLorentzTensor.unitTensor_repr_apply`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Units/Basic.lean#L51).
+**`realLorentzTensor.unitTensor_repr_apply`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Units/Basic.lean#L51).
 
 > In the standard contravariant and covariant bases, either real Lorentz unit tensor has
 > Kronecker-delta components.
@@ -45,4 +45,4 @@ lemma unitTensor_repr_apply {d : ℕ} (c : Color)
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/RealTensor/Units/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Units/Basic.lean)
+- [Physlib/Relativity/Tensors/RealTensor/Units/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Units/Basic.lean)

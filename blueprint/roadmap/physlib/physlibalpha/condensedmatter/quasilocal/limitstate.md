@@ -8,7 +8,7 @@ proof: formalized
 
 # Thermodynamic limit states of an interaction
 
-The module `PhyslibAlpha.CondensedMatter.QuasiLocal.LimitState`, [PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.QuasiLocal.LimitState`, [PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean): 5 declarations, 5 with a docstring.
 
 > The Gibbs states of the finite boxes have limit points, which are states of the infinite system.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.CondensedMatter.QuasiLocal.LimitState`, [PhyslibAlpha/C
 
 ## A. Local boundedness of the net of operators
 
-**`CondensedMatter.QuasiLocal.matrix_exists_sumSq`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean#L65).
+**`CondensedMatter.QuasiLocal.matrix_exists_sumSq`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean#L65).
 
 > In a matrix algebra every `a* a` lies below a multiple of the identity by a sum of
 > squares.
@@ -44,7 +44,7 @@ lemma matrix_exists_sumSq {n : Type*} [Fintype n] [DecidableEq n] (a : Matrix n 
     ∃ c : ℝ, ∃ p ∈ sumSq (Matrix n n ℂ), star a * a + p = (c : ℂ) • (1 : Matrix n n ℂ)
 ```
 
-**`CondensedMatter.QuasiLocal.quantumNet_isLocallyBounded`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean#L78).
+**`CondensedMatter.QuasiLocal.quantumNet_isLocallyBounded`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean#L78).
 
 > **The net of operators is locally bounded.**
 
@@ -54,7 +54,7 @@ lemma quantumNet_isLocallyBounded : (quantumNet Ω).IsLocallyBounded
 
 ## B. Limit states of the ensembles
 
-**`CondensedMatter.QuasiLocal.Interaction.canonicalLimitState`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean#L87).
+**`CondensedMatter.QuasiLocal.Interaction.canonicalLimitState`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean#L87).
 
 > **The thermodynamic limit state of the canonical ensemble** along an ultrafilter of boxes:
 > a state of the infinite system.
@@ -64,7 +64,7 @@ def Interaction.canonicalLimitState (I : Interaction Ω) (β : ℝ) (𝒰 : Ultr
     (h𝒰 : (𝒰 : Filter (Finset S)) ≤ atTop) : AlgState (quantumNet Ω).Quasilocal
 ```
 
-**`CondensedMatter.QuasiLocal.Interaction.grandCanonicalLimitState`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean#L93).
+**`CondensedMatter.QuasiLocal.Interaction.grandCanonicalLimitState`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean#L93).
 
 > **The thermodynamic limit state of the grand canonical ensemble** along an ultrafilter of
 > boxes.
@@ -75,7 +75,7 @@ def Interaction.grandCanonicalLimitState (I : Interaction Ω) (q : Charge Ω) (�
     AlgState (quantumNet Ω).Quasilocal
 ```
 
-**`CondensedMatter.QuasiLocal.Interaction.canonicalLimitState_of`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean#L101).
+**`CondensedMatter.QuasiLocal.Interaction.canonicalLimitState_of`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean#L101).
 
 > The limit state of the canonical ensemble on a local observable is the limit of the box
 > expectations.
@@ -95,4 +95,4 @@ lemma Interaction.canonicalLimitState_of (I : Interaction Ω) (β : ℝ) (𝒰 :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean)
+- [PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean)

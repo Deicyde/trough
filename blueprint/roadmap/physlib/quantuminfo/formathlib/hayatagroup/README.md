@@ -1,8 +1,8 @@
 # HayataGroup
 
-The folder [QuantumInfo/ForMathlib/HayataGroup/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup): 10 modules, an article each, in path order.
+The folder [QuantumInfo/ForMathlib/HayataGroup/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup): 10 modules, an article each, in path order.
 
-Modules in [TraceInequality/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality):
+Modules in [TraceInequality/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HayataGroup/TraceInequality):
 
 - [`2 × 2` block operators on a Hilbert sum](traceinequality-blockdiagonal.md)
 - [QuantumInfo.ForMathlib.HayataGroup.TraceInequality.GeneralizedPerspectiveFunction](traceinequality-generalizedperspectivefunction.md)

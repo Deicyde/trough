@@ -8,7 +8,7 @@ proof: formalized
 
 # Descent from `d + k` to `d` space dimensions
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.Descent`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Descent.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Descent.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.Descent`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Descent.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Descent.lean): 1 declaration, 1 with a docstring.
 
 > Integrating the sine evolution in `d + k` space dimensions over the extra variables gives the sine
 > evolution in `d` space dimensions of the integrated data.
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.Desce
 
 > - `integral_sineEvolution_marginal` : descent for the sine evolution, for every mass.
 
-**`KleinGordon.integral_sineEvolution_marginal`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Descent.lean#L57).
+**`KleinGordon.integral_sineEvolution_marginal`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Descent.lean#L57).
 
 > **Descent.** Integrating the sine evolution in `E × F` over `F` gives the sine evolution in
 > `E` of the integrated data.
@@ -56,4 +56,4 @@ lemma integral_sineEvolution_marginal {μ : ℝ} (hμ : 0 ≤ μ) (r : ℝ)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Descent.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Descent.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Descent.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Descent.lean)

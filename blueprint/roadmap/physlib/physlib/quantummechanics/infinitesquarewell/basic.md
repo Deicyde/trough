@@ -8,7 +8,7 @@ proof: formalized
 
 # The infinite square well
 
-The module `Physlib.QuantumMechanics.InfiniteSquareWell.Basic`, [Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean): 7 declarations, 4 with a docstring.
+The module `Physlib.QuantumMechanics.InfiniteSquareWell.Basic`, [Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean): 7 declarations, 4 with a docstring.
 
 ## i. Overview
 
@@ -22,7 +22,7 @@ The module `Physlib.QuantumMechanics.InfiniteSquareWell.Basic`, [Physlib/Quantum
 
 > * None.
 
-**`QuantumMechanics.InfiniteSquareWell`**, a structure, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean#L46).
+**`QuantumMechanics.InfiniteSquareWell`**, a structure, [line 46](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean#L46).
 
 > A spinless quantum particle with mass `m > 0` confined to a cuboid in `Space d`.
 >
@@ -44,19 +44,19 @@ structure InfiniteSquareWell (d : ℕ) where
 
 ## A. Basic properties
 
-**`QuantumMechanics.InfiniteSquareWell.m_pos`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean#L66).
+**`QuantumMechanics.InfiniteSquareWell.m_pos`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean#L66).
 
 ```lean
 lemma m_pos : 0 < Q.m
 ```
 
-**`QuantumMechanics.InfiniteSquareWell.m_nonneg`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean#L69).
+**`QuantumMechanics.InfiniteSquareWell.m_nonneg`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean#L69).
 
 ```lean
 lemma m_nonneg : 0 ≤ Q.m
 ```
 
-**`QuantumMechanics.InfiniteSquareWell.m_ne_zero`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean#L72).
+**`QuantumMechanics.InfiniteSquareWell.m_ne_zero`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean#L72).
 
 ```lean
 lemma m_ne_zero : Q.m ≠ 0
@@ -64,7 +64,7 @@ lemma m_ne_zero : Q.m ≠ 0
 
 ## B. Domain
 
-**`QuantumMechanics.InfiniteSquareWell.well`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean#L79).
+**`QuantumMechanics.InfiniteSquareWell.well`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean#L79).
 
 > The domain of the infinite square well as a Cartesian product of closed intervals.
 
@@ -74,7 +74,7 @@ def well : Set (Space d)
 
 ## C. Hilbert space
 
-**`QuantumMechanics.InfiniteSquareWell.measure`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean#L86).
+**`QuantumMechanics.InfiniteSquareWell.measure`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean#L86).
 
 > The measure associated with the domain of the infinite square well.
 
@@ -82,7 +82,7 @@ def well : Set (Space d)
 def measure : Measure (Space d)
 ```
 
-**`QuantumMechanics.InfiniteSquareWell.HS`**, an abbrev, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean#L89).
+**`QuantumMechanics.InfiniteSquareWell.HS`**, an abbrev, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean#L89).
 
 > The Hilbert space for the infinite square well.
 
@@ -101,4 +101,4 @@ abbrev HS : Type _
 
 ## Sources
 
-- [Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean)
+- [Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean)

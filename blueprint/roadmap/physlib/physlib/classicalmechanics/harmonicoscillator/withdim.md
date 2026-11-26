@@ -8,7 +8,7 @@ proof: formalized
 
 # A. A harmonic oscillator with dimension-tagged parameters
 
-The module `Physlib.ClassicalMechanics.HarmonicOscillator.WithDim`, [Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean): 9 declarations, 8 with a docstring.
+The module `Physlib.ClassicalMechanics.HarmonicOscillator.WithDim`, [Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean): 9 declarations, 8 with a docstring.
 
 > This module applies `WithDim` to the existing harmonic-oscillator model. The mass and spring
 > constant themselves carry their physical dimensions, and the potential energy is assembled from
@@ -23,7 +23,7 @@ The module `Physlib.ClassicalMechanics.HarmonicOscillator.WithDim`, [Physlib/Cla
 
 ## A.1. Dimension-tagged oscillator data
 
-**`ClassicalMechanics.HarmonicOscillatorWithDim`**, a structure, [line 41](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L41).
+**`ClassicalMechanics.HarmonicOscillatorWithDim`**, a structure, [line 41](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L41).
 
 > A harmonic oscillator whose physical parameters carry their dimensions.
 >
@@ -42,7 +42,7 @@ structure HarmonicOscillatorWithDim where
   k_pos : 0 < k
 ```
 
-**`ClassicalMechanics.HarmonicOscillatorWithDim.toHarmonicOscillator`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L54).
+**`ClassicalMechanics.HarmonicOscillatorWithDim.toHarmonicOscillator`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L54).
 
 > Forget the dimension tags on the parameters to recover the existing numerical model.
 
@@ -50,7 +50,7 @@ structure HarmonicOscillatorWithDim where
 def toHarmonicOscillator (S : HarmonicOscillatorWithDim) : HarmonicOscillator
 ```
 
-**`ClassicalMechanics.HarmonicOscillatorWithDim.positionNormSq`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L61).
+**`ClassicalMechanics.HarmonicOscillatorWithDim.positionNormSq`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L61).
 
 > The squared norm of a length-tagged position, carrying dimension `L²`.
 
@@ -59,14 +59,14 @@ noncomputable def positionNormSq
     (x : WithDim L𝓭 (EuclideanSpace ℝ (Fin 1))) : WithDim (L𝓭 * L𝓭) ℝ
 ```
 
-**`ClassicalMechanics.HarmonicOscillatorWithDim.positionNormSq_val`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L66).
+**`ClassicalMechanics.HarmonicOscillatorWithDim.positionNormSq_val`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L66).
 
 ```lean
 lemma positionNormSq_val (x : WithDim L𝓭 (EuclideanSpace ℝ (Fin 1))) :
     (positionNormSq x).val = ⟪x.val, x.val⟫_ℝ
 ```
 
-**`ClassicalMechanics.HarmonicOscillatorWithDim.potentialEnergy`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L70).
+**`ClassicalMechanics.HarmonicOscillatorWithDim.potentialEnergy`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L70).
 
 > The potential energy `1/2 k x²`, with its energy dimension checked by the tagged expression.
 
@@ -76,7 +76,7 @@ noncomputable def potentialEnergy (S : HarmonicOscillatorWithDim) :
       WithDim (M𝓭 * L𝓭 * L𝓭 * T𝓭⁻¹ * T𝓭⁻¹) ℝ
 ```
 
-**`ClassicalMechanics.HarmonicOscillatorWithDim.potentialEnergy_val`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L77).
+**`ClassicalMechanics.HarmonicOscillatorWithDim.potentialEnergy_val`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L77).
 
 > In numerical coordinates, the tagged potential energy is the existing oscillator potential.
 
@@ -86,7 +86,7 @@ lemma potentialEnergy_val (S : HarmonicOscillatorWithDim)
     (S.potentialEnergy x).val = S.toHarmonicOscillator.potentialEnergy x.val
 ```
 
-**`ClassicalMechanics.HarmonicOscillatorWithDim.potentialEnergy_eq_transport`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L84).
+**`ClassicalMechanics.HarmonicOscillatorWithDim.potentialEnergy_eq_transport`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L84).
 
 > The typed potential energy is the explicit coordinate transport of the existing model.
 
@@ -99,7 +99,7 @@ lemma potentialEnergy_eq_transport (S : HarmonicOscillatorWithDim) :
 
 ## A.2. Analytic reuse
 
-**`ClassicalMechanics.HarmonicOscillatorWithDim.hasFDerivAt_potentialEnergy`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L97).
+**`ClassicalMechanics.HarmonicOscillatorWithDim.hasFDerivAt_potentialEnergy`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L97).
 
 > The tagged potential energy is differentiable with the transported numerical derivative.
 
@@ -111,7 +111,7 @@ lemma hasFDerivAt_potentialEnergy (S : HarmonicOscillatorWithDim)
         (fderiv ℝ S.toHarmonicOscillator.potentialEnergy x.val)) x
 ```
 
-**`ClassicalMechanics.HarmonicOscillatorWithDim.continuous_potentialEnergy`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L110).
+**`ClassicalMechanics.HarmonicOscillatorWithDim.continuous_potentialEnergy`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean#L110).
 
 > The dimension-tagged potential energy is continuous.
 
@@ -127,4 +127,4 @@ lemma continuous_potentialEnergy (S : HarmonicOscillatorWithDim) :
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean)
+- [Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean)

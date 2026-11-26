@@ -8,7 +8,7 @@ proof: formalized
 
 # Kinematic quantities for fluid flows
 
-The module `Physlib.FluidDynamics.FluidFlow.Kinematics`, [Physlib/FluidDynamics/FluidFlow/Kinematics.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Kinematics.lean): 2 declarations, 2 with a docstring.
+The module `Physlib.FluidDynamics.FluidFlow.Kinematics`, [Physlib/FluidDynamics/FluidFlow/Kinematics.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Kinematics.lean): 2 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -25,7 +25,7 @@ The module `Physlib.FluidDynamics.FluidFlow.Kinematics`, [Physlib/FluidDynamics/
 
 ## A. Flow-derived scalar quantities
 
-**`FluidDynamics.FluidFlow.materialDerivative`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Kinematics.lean#L50).
+**`FluidDynamics.FluidFlow.materialDerivative`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Kinematics.lean#L50).
 
 > The material derivative `D_t f = partial_t f + u · grad f` of a scalar field.
 
@@ -34,7 +34,7 @@ noncomputable def materialDerivative (d : ℕ) (fluid : FluidFlow d)
     (field : ScalarField d) : ScalarField d
 ```
 
-**`FluidDynamics.FluidFlow.specificKineticEnergy`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Kinematics.lean#L55).
+**`FluidDynamics.FluidFlow.specificKineticEnergy`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Kinematics.lean#L55).
 
 > The specific kinetic energy `|u|^2 / 2` of a fluid flow.
 
@@ -50,4 +50,4 @@ noncomputable def specificKineticEnergy (d : ℕ) (fluid : FluidFlow d) : Scalar
 
 ## Sources
 
-- [Physlib/FluidDynamics/FluidFlow/Kinematics.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Kinematics.lean)
+- [Physlib/FluidDynamics/FluidFlow/Kinematics.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Kinematics.lean)

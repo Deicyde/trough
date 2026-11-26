@@ -8,7 +8,7 @@ proof: formalized
 
 # Scalar matrices
 
-The module `PhyslibAlpha.Mathematics.ForMathlib.DataStructures.Matrix.Scalar`, [PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean): 7 declarations, 6 with a docstring.
+The module `PhyslibAlpha.Mathematics.ForMathlib.DataStructures.Matrix.Scalar`, [PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean): 7 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.Mathematics.ForMathlib.DataStructures.Matrix.Scalar`, [
 
 ## A. Scalar matrices
 
-**`Matrix.star_scalar`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean#L50).
+**`Matrix.star_scalar`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean#L50).
 
 > The conjugate transpose of a scalar matrix is the scalar matrix of the star.
 
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.Mathematics.ForMathlib.DataStructures.Matrix.Scalar`, [
 lemma star_scalar [StarRing R] (x : R) : star (scalar n x) = scalar n (star x)
 ```
 
-**`Matrix.map_scalar`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean#L55).
+**`Matrix.map_scalar`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean#L55).
 
 > An entrywise map fixing zero sends a scalar matrix to a scalar matrix.
 
@@ -47,7 +47,7 @@ lemma map_scalar {S : Type*} [CommRing S] (f : R → S) (hf : f 0 = 0) (x : R) :
     (scalar n x).map f = scalar n (f x)
 ```
 
-**`Matrix.scalar_smul`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean#L60).
+**`Matrix.scalar_smul`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean#L60).
 
 > A scalar action passes into a scalar matrix.
 
@@ -56,7 +56,7 @@ lemma scalar_smul {M : Type*} [Monoid M] [DistribMulAction M R] (c : M) (x : R) 
     scalar n (c • x) = c • scalar n x
 ```
 
-**`Matrix.scalar_eq_conj`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean#L66).
+**`Matrix.scalar_eq_conj`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean#L66).
 
 > Conjugation by a unitary scalar fixes a scalar matrix.
 
@@ -65,7 +65,7 @@ lemma scalar_eq_conj [StarRing R] {u : R} (hu : u * star u = 1) (x : R) :
     scalar n x = scalar n u * scalar n x * star (scalar n u)
 ```
 
-**`Matrix.scalarSelfAdjoint`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean#L71).
+**`Matrix.scalarSelfAdjoint`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean#L71).
 
 > A self-adjoint element as a scalar matrix, real-linearly.
 
@@ -74,14 +74,14 @@ noncomputable def scalarSelfAdjoint [StarRing R] [Algebra ℝ R] [StarModule ℝ
     ↥(selfAdjoint R) →ₗ[ℝ] Matrix n n R
 ```
 
-**`Matrix.scalarSelfAdjoint_apply`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean#L78).
+**`Matrix.scalarSelfAdjoint_apply`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean#L78).
 
 ```lean
 lemma scalarSelfAdjoint_apply [StarRing R] [Algebra ℝ R] [StarModule ℝ R]
     (a : ↥(selfAdjoint R)) : (scalarSelfAdjoint (n := n)) a = scalar n a.1
 ```
 
-**`Matrix.eq_scalar_fin_one`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean#L82).
+**`Matrix.eq_scalar_fin_one`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean#L82).
 
 > A `1 × 1` matrix is the scalar matrix of its entry.
 
@@ -95,4 +95,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean)
+- [PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/DataStructures/Matrix/Scalar.lean)

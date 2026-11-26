@@ -8,7 +8,7 @@ proof: formalized
 
 # Classical Ising models on standard crystals
 
-The module `PhyslibAlpha.CondensedMatter.IsingModel.Examples`, [PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean): 33 declarations, 26 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.IsingModel.Examples`, [PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean): 33 declarations, 26 with a docstring.
 
 ## i. Overview
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.CondensedMatter.IsingModel.Examples`, [PhyslibAlpha/Con
 
 ## A. Ising models on the standard crystals
 
-**`CondensedMatter.IsingModel.hypercubic`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L63).
+**`CondensedMatter.IsingModel.hypercubic`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L63).
 
 > Uniform classical Ising interactions on the hypercubic bond graph in arbitrary dimension.
 
@@ -52,7 +52,7 @@ The module `PhyslibAlpha.CondensedMatter.IsingModel.Examples`, [PhyslibAlpha/Con
 def hypercubic (d : ℕ) (J h : ℝ) : IsingModel (Crystal.hypercubicGraph d).toSimpleGraph
 ```
 
-**`CondensedMatter.IsingModel.square`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L67).
+**`CondensedMatter.IsingModel.square`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L67).
 
 > The square-lattice model, specializing the hypercubic construction to two dimensions.
 
@@ -60,7 +60,7 @@ def hypercubic (d : ℕ) (J h : ℝ) : IsingModel (Crystal.hypercubicGraph d).to
 def square (J h : ℝ) : IsingModel Crystal.squareGraph.toSimpleGraph
 ```
 
-**`CondensedMatter.IsingModel.honeycomb`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L71).
+**`CondensedMatter.IsingModel.honeycomb`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L71).
 
 > The honeycomb classical Ising model, using the crystal's existing bonds.
 
@@ -70,7 +70,7 @@ def honeycomb (J h : ℝ) : IsingModel Crystal.honeycombGraph.toSimpleGraph
 
 ## B. Hypercubes of unit cells in an arbitrary crystal
 
-**`CondensedMatter.IsingModel.Hypercube.cells`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L83).
+**`CondensedMatter.IsingModel.Hypercube.cells`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L83).
 
 > The cells `{0, …, n}^d` of a hypercube of side `n + 1` unit cells.
 
@@ -78,20 +78,20 @@ def honeycomb (J h : ℝ) : IsingModel Crystal.honeycombGraph.toSimpleGraph
 def cells (d n : ℕ) : Finset (Fin d → ℤ)
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.mem_cells`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L86).
+**`CondensedMatter.IsingModel.Hypercube.mem_cells`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L86).
 
 ```lean
 lemma mem_cells {d n : ℕ} (c : Fin d → ℤ) :
     c ∈ cells d n ↔ ∀ i, 0 ≤ c i ∧ c i ≤ n
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.card_cells`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L90).
+**`CondensedMatter.IsingModel.Hypercube.card_cells`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L90).
 
 ```lean
 lemma card_cells (d n : ℕ) : (cells d n).card = (n + 1) ^ d
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.interior`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L94).
+**`CondensedMatter.IsingModel.Hypercube.interior`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L94).
 
 > The cells at least `R` unit cells away from every face of the hypercube.
 
@@ -99,14 +99,14 @@ lemma card_cells (d n : ℕ) : (cells d n).card = (n + 1) ^ d
 def interior (d n R : ℕ) : Finset (Fin d → ℤ)
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.mem_interior`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L97).
+**`CondensedMatter.IsingModel.Hypercube.mem_interior`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L97).
 
 ```lean
 lemma mem_interior {d n R : ℕ} (c : Fin d → ℤ) :
     c ∈ interior d n R ↔ ∀ i, (R : ℤ) ≤ c i ∧ c i ≤ n - R
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.card_interior`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L102).
+**`CondensedMatter.IsingModel.Hypercube.card_interior`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L102).
 
 > The interior of a hypercube of side `n + 1` is a hypercube of side `n + 1 - 2 R`.
 
@@ -114,13 +114,13 @@ lemma mem_interior {d n R : ℕ} (c : Fin d → ℤ) :
 lemma card_interior (d n R : ℕ) : (interior d n R).card = (n + 1 - 2 * R) ^ d
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.interior_subset`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L106).
+**`CondensedMatter.IsingModel.Hypercube.interior_subset`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L106).
 
 ```lean
 lemma interior_subset {d n R : ℕ} : interior d n R ⊆ cells d n
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.region`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L115).
+**`CondensedMatter.IsingModel.Hypercube.region`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L115).
 
 > All sites of the crystal with unit cell labels `F` that lie in the cells `B`.
 
@@ -128,14 +128,14 @@ lemma interior_subset {d n R : ℕ} : interior d n R ⊆ cells d n
 def region (B : Finset (Fin d → ℤ)) : Finset (Crystal.ofUnitCell (Fin d → ℤ) F).Site
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.mem_region`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L119).
+**`CondensedMatter.IsingModel.Hypercube.mem_region`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L119).
 
 ```lean
 lemma mem_region {B : Finset (Fin d → ℤ)} (x : (Crystal.ofUnitCell (Fin d → ℤ) F).Site) :
     x ∈ region B ↔ x.cell ∈ B
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.sum_region`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L125).
+**`CondensedMatter.IsingModel.Hypercube.sum_region`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L125).
 
 ```lean
 lemma sum_region {M : Type*} [AddCommMonoid M] {B : Finset (Fin d → ℤ)}
@@ -143,14 +143,14 @@ lemma sum_region {M : Type*} [AddCommMonoid M] {B : Finset (Fin d → ℤ)}
     ∑ x ∈ region B, f x = ∑ c ∈ B, ∑ i : F, f ⟨c, i⟩
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.card_region`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L131).
+**`CondensedMatter.IsingModel.Hypercube.card_region`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L131).
 
 ```lean
 lemma card_region (B : Finset (Fin d → ℤ)) :
     (region (F := F) B).card = B.card * Fintype.card F
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.region_cells_nonempty`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L136).
+**`CondensedMatter.IsingModel.Hypercube.region_cells_nonempty`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L136).
 
 > Every hypercube contains at least one site if the unit cell does.
 
@@ -159,7 +159,7 @@ lemma region_cells_nonempty [Nonempty F] (d n : ℕ) :
     (region (F := F) (cells d n)).Nonempty
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.exists_range`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L147).
+**`CondensedMatter.IsingModel.Hypercube.exists_range`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L147).
 
 > Bonds have a finite range: there is a distance `R`, in units of the cell spacing, beyond
 > which no two sites are connected. This holds because the coordination is finite and every
@@ -171,7 +171,7 @@ lemma exists_range :
       g.toSimpleGraph.Adj x y → ∀ k, |y.cell k - x.cell k| ≤ R
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.neighbors_subset_region`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L177).
+**`CondensedMatter.IsingModel.Hypercube.neighbors_subset_region`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L177).
 
 > Sites in the interior of a hypercube have all their neighbors in the sample, once
 > the interior is at least the bond range away from the surface.
@@ -184,7 +184,7 @@ lemma neighbors_subset_region {n R : ℕ}
     g.neighbors x ⊆ region (cells d n)
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.meanCoordination`**, a def, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L192).
+**`CondensedMatter.IsingModel.Hypercube.meanCoordination`**, a def, [line 192](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L192).
 
 > The mean number of neighbors per site of a crystal with unit cell `F`: the coordination
 > averaged over the sites of one unit cell.
@@ -193,7 +193,7 @@ lemma neighbors_subset_region {n R : ℕ}
 noncomputable def meanCoordination : ℝ
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.sum_card_neighbors_region`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L197).
+**`CondensedMatter.IsingModel.Hypercube.sum_card_neighbors_region`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L197).
 
 > Summing the coordination over the sites of a set of cells counts every unit-cell
 > coordination once per cell.
@@ -204,7 +204,7 @@ lemma sum_card_neighbors_region (B : Finset (Fin d → ℤ)) :
       B.card * ∑ i : F, (g.neighbors ⟨0, i⟩).card
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.bondCountBetween_le`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L207).
+**`CondensedMatter.IsingModel.Hypercube.bondCountBetween_le`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L207).
 
 > The ordered bonds inside a region number at most the total coordination of its sites.
 
@@ -213,7 +213,7 @@ lemma bondCountBetween_le (Λ : Finset (Crystal.ofUnitCell (Fin d → ℤ) F).Si
     g.toSimpleGraph.bondCountBetween Λ Λ ≤ ∑ x ∈ Λ, (g.neighbors x).card
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.sum_interior_le_bondCountBetween`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L214).
+**`CondensedMatter.IsingModel.Hypercube.sum_interior_le_bondCountBetween`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L214).
 
 > Every site in the interior of the hypercube has all its bonds inside the hypercube.
 
@@ -225,7 +225,7 @@ lemma sum_interior_le_bondCountBetween {n R : ℕ}
       g.toSimpleGraph.bondCountBetween (region (cells d n)) (region (cells d n))
 ```
 
-**`CondensedMatter.IsingModel.Hypercube.tendsto_averageCoordination`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L234).
+**`CondensedMatter.IsingModel.Hypercube.tendsto_averageCoordination`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L234).
 
 > The average coordination of hypercubes converges to the mean coordination of the
 > crystal: the sites near the surface, whose neighbors are cut off, become a vanishing fraction
@@ -241,7 +241,7 @@ lemma tendsto_averageCoordination :
 
 ## C. Ground-state energy density of a ferromagnetic crystal
 
-**`CondensedMatter.IsingModel.tendsto_groundEnergyDensity_hypercube`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L307).
+**`CondensedMatter.IsingModel.tendsto_groundEnergyDensity_hypercube`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L307).
 
 > The ground-state energy per spin of a ferromagnetic Ising model on any crystal, in
 > hypercubes of growing size, converges to `-(J / 2) z̄ - |h|`, where `z̄` is the mean
@@ -255,7 +255,7 @@ lemma tendsto_groundEnergyDensity_hypercube (I : IsingModel g.toSimpleGraph) (hJ
       Filter.atTop (nhds (-(I.J / 2) * meanCoordination g - |I.h|))
 ```
 
-**`CondensedMatter.IsingModel.meanCoordination_honeycomb`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L316).
+**`CondensedMatter.IsingModel.meanCoordination_honeycomb`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L316).
 
 > The honeycomb lattice has three neighbors per site.
 
@@ -263,7 +263,7 @@ lemma tendsto_groundEnergyDensity_hypercube (I : IsingModel g.toSimpleGraph) (hJ
 lemma meanCoordination_honeycomb : Hypercube.meanCoordination Crystal.honeycombGraph = 3
 ```
 
-**`CondensedMatter.IsingModel.tendsto_groundEnergyDensity_honeycomb`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L328).
+**`CondensedMatter.IsingModel.tendsto_groundEnergyDensity_honeycomb`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L328).
 
 > The ground-state energy per spin of the ferromagnetic honeycomb Ising model converges to
 > `-3 J / 2 - |h|` as the sample grows.
@@ -275,7 +275,7 @@ lemma tendsto_groundEnergyDensity_honeycomb (J h : ℝ) (hJ : 0 ≤ J) :
       Filter.atTop (nhds (-(3 * J / 2) - |h|))
 ```
 
-**`CondensedMatter.IsingModel.meanCoordination_square`**, a lemma, [line 340](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L340).
+**`CondensedMatter.IsingModel.meanCoordination_square`**, a lemma, [line 340](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L340).
 
 > The square lattice has four neighbors per site.
 
@@ -283,7 +283,7 @@ lemma tendsto_groundEnergyDensity_honeycomb (J h : ℝ) (hJ : 0 ≤ J) :
 lemma meanCoordination_square : Hypercube.meanCoordination Crystal.squareGraph = 4
 ```
 
-**`CondensedMatter.IsingModel.tendsto_groundEnergyDensity_square`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L348).
+**`CondensedMatter.IsingModel.tendsto_groundEnergyDensity_square`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L348).
 
 > The ground-state energy per spin of the ferromagnetic square-lattice Ising model
 > converges to `-2 J - |h|` as the sample grows.
@@ -297,7 +297,7 @@ lemma tendsto_groundEnergyDensity_square (J h : ℝ) (hJ : 0 ≤ J) :
 
 ## D. Regular crystals
 
-**`CondensedMatter.IsingModel.meanCoordination_of_card`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L366).
+**`CondensedMatter.IsingModel.meanCoordination_of_card`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L366).
 
 > If every site has `q` neighbors, the mean coordination is `q`.
 
@@ -306,7 +306,7 @@ lemma meanCoordination_of_card {q : ℕ} (h : ∀ x, (g.neighbors x).card = q) :
     Hypercube.meanCoordination g = q
 ```
 
-**`CondensedMatter.IsingModel.tendsto_groundEnergyDensity_of_card`**, a lemma, [line 374](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L374).
+**`CondensedMatter.IsingModel.tendsto_groundEnergyDensity_of_card`**, a lemma, [line 374](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L374).
 
 > **The ferromagnetic ground-state energy density of a `q`-regular crystal** converges to
 > `-q J / 2 - |h|`.
@@ -318,7 +318,7 @@ lemma tendsto_groundEnergyDensity_of_card {q : ℕ} (h : ∀ x, (g.neighbors x).
       Filter.atTop (nhds (-(q * I.J / 2) - |I.h|))
 ```
 
-**`CondensedMatter.IsingModel.tendsto_groundEnergyDensity_diamond`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L384).
+**`CondensedMatter.IsingModel.tendsto_groundEnergyDensity_diamond`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L384).
 
 > The diamond lattice has four neighbors per site.
 
@@ -329,7 +329,7 @@ lemma tendsto_groundEnergyDensity_diamond (J h : ℝ) (hJ : 0 ≤ J) :
       Filter.atTop (nhds (-(4 * J / 2) - |h|))
 ```
 
-**`CondensedMatter.IsingModel.tendsto_groundEnergyDensity_fcc`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L393).
+**`CondensedMatter.IsingModel.tendsto_groundEnergyDensity_fcc`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L393).
 
 > The face-centred cubic lattice has twelve neighbors per site.
 
@@ -340,7 +340,7 @@ lemma tendsto_groundEnergyDensity_fcc (J h : ℝ) (hJ : 0 ≤ J) :
       Filter.atTop (nhds (-(12 * J / 2) - |h|))
 ```
 
-**`CondensedMatter.IsingModel.tendsto_groundEnergyDensity_bcc`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L401).
+**`CondensedMatter.IsingModel.tendsto_groundEnergyDensity_bcc`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L401).
 
 > The body-centred cubic lattice has eight neighbors per site.
 
@@ -351,7 +351,7 @@ lemma tendsto_groundEnergyDensity_bcc (J h : ℝ) (hJ : 0 ≤ J) :
       Filter.atTop (nhds (-(8 * J / 2) - |h|))
 ```
 
-**`CondensedMatter.IsingModel.tendsto_groundEnergyDensity_hcp`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L409).
+**`CondensedMatter.IsingModel.tendsto_groundEnergyDensity_hcp`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean#L409).
 
 > The hexagonal close-packed crystal has twelve neighbors per site.
 
@@ -369,4 +369,4 @@ lemma tendsto_groundEnergyDensity_hcp (J h : ℝ) (hJ : 0 ≤ J) :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean)
+- [PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean)

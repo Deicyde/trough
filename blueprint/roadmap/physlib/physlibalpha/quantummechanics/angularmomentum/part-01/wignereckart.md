@@ -8,7 +8,7 @@ proof: formalized
 
 # The Wigner–Eckart theorem for sl₂
 
-The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.WignerEckart`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean): 9 declarations, 9 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.WignerEckart`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean): 9 declarations, 9 with a docstring.
 
 > Tensor operators between standard `sl₂` modules and the factorisation of their matrix elements.
 
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.WignerEckart`, [Physli
 
 ### A.1. Definition
 
-**`PhyslibAlpha.Sl2.IsTensorOperator`**, a structure, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L79).
+**`PhyslibAlpha.Sl2.IsTensorOperator`**, a structure, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L79).
 
 > A tensor operator of rank `k` from `V(m)` to `V(p)`: a linear map
 > `T : V(k) → Hom(V(m), V(p))` with `[X, T x] = T (X x)` for `X = e, f, h`.
@@ -66,7 +66,7 @@ structure IsTensorOperator
 
 ### A.2. Tensor operators as tensor intertwiners
 
-**`PhyslibAlpha.Sl2.IsTensorOperator.apply_ρE`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L97).
+**`PhyslibAlpha.Sl2.IsTensorOperator.apply_ρE`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L97).
 
 > Leibniz form of the commutation relation for the raising operator.
 
@@ -75,7 +75,7 @@ lemma apply_ρE (hT : IsTensorOperator T) (x : StandardSl2Module K k)
     (y : StandardSl2Module K m) : ρE (T x y) = T (ρE x) y + T x (ρE y)
 ```
 
-**`PhyslibAlpha.Sl2.IsTensorOperator.apply_ρF`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L104).
+**`PhyslibAlpha.Sl2.IsTensorOperator.apply_ρF`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L104).
 
 > Leibniz form of the commutation relation for the lowering operator.
 
@@ -84,7 +84,7 @@ lemma apply_ρF (hT : IsTensorOperator T) (x : StandardSl2Module K k)
     (y : StandardSl2Module K m) : ρF (T x y) = T (ρF x) y + T x (ρF y)
 ```
 
-**`PhyslibAlpha.Sl2.IsTensorOperator.apply_ρH`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L111).
+**`PhyslibAlpha.Sl2.IsTensorOperator.apply_ρH`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L111).
 
 > Leibniz form of the commutation relation for the weight operator.
 
@@ -93,7 +93,7 @@ lemma apply_ρH (hT : IsTensorOperator T) (x : StandardSl2Module K k)
     (y : StandardSl2Module K m) : ρH (T x y) = T (ρH x) y + T x (ρH y)
 ```
 
-**`PhyslibAlpha.Sl2.IsTensorOperator.lift_isTensorIntertwiner`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L118).
+**`PhyslibAlpha.Sl2.IsTensorOperator.lift_isTensorIntertwiner`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L118).
 
 > The map `x ⊗ y ↦ T x y` of a tensor operator is a tensor intertwiner.
 
@@ -106,7 +106,7 @@ lemma lift_isTensorIntertwiner (hT : IsTensorOperator T) :
 
 ### B.1. Factorisation and the triangle rule
 
-**`PhyslibAlpha.Sl2.IsTensorOperator.eq_zero_of_forall_ne`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L146).
+**`PhyslibAlpha.Sl2.IsTensorOperator.eq_zero_of_forall_ne`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L146).
 
 > **Triangle and parity rule.** If `p` is not of the form `k + m - 2j` with `j ≤ min k m`,
 > every tensor operator of rank `k` from `V(m)` to `V(p)` is zero.
@@ -118,7 +118,7 @@ lemma eq_zero_of_forall_ne (hkm : 0 < k + m)
     T = 0
 ```
 
-**`PhyslibAlpha.Sl2.IsTensorOperator.exists_eq_smul_cgProj`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L158).
+**`PhyslibAlpha.Sl2.IsTensorOperator.exists_eq_smul_cgProj`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L158).
 
 > **Wigner–Eckart theorem.** A tensor operator of rank `k` from `V(m)` to `V(k + m - 2j)`
 > factorises as `T x y = c • cgProj (x ⊗ y)`: a single reduced matrix element `c` times the
@@ -132,7 +132,7 @@ lemma exists_eq_smul_cgProj (hkm : 0 < k + m) {j : Fin (min k m + 1)}
     ∃ c : K, ∀ x y, T x y = c • cgProj hkm j (x ⊗ₜ y)
 ```
 
-**`PhyslibAlpha.Sl2.IsTensorOperator.exists_coord_eq`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L171).
+**`PhyslibAlpha.Sl2.IsTensorOperator.exists_coord_eq`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L171).
 
 > **Wigner–Eckart theorem**, matrix-element form: every matrix element
 > `⟨v_s | T v_q | v_r⟩` is the reduced matrix element `c` times the Clebsch–Gordan coefficient, the
@@ -149,7 +149,7 @@ lemma exists_coord_eq (hkm : 0 < k + m) {j : Fin (min k m + 1)}
 
 ### B.2. The weight selection rule
 
-**`PhyslibAlpha.Sl2.IsTensorOperator.apply_vNat_eq_zero_of_weight_ne`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L188).
+**`PhyslibAlpha.Sl2.IsTensorOperator.apply_vNat_eq_zero_of_weight_ne`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean#L188).
 
 > **Weight selection rule.** The matrix element `⟨v_s | T v_q | v_r⟩` vanishes unless the
 > weights add up, `(k - 2q) + (m - 2r) = p - 2s`. In physics notation this is `μ + m_j = m_{j'}`.
@@ -168,4 +168,4 @@ lemma apply_vNat_eq_zero_of_weight_ne
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean)
+- [PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean)

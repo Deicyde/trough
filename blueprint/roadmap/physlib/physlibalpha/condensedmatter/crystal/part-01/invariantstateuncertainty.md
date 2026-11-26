@@ -8,7 +8,7 @@ proof: formalized
 
 # Uncertainty relations in the invariant states of an infinite crystal
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.InvariantStateUncertainty`, [PhyslibAlpha/CondensedMatter/Crystal/InvariantStateUncertainty.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/InvariantStateUncertainty.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.InvariantStateUncertainty`, [PhyslibAlpha/CondensedMatter/Crystal/InvariantStateUncertainty.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/InvariantStateUncertainty.lean): 3 declarations, 3 with a docstring.
 
 > Robertson's relation for several observables holds in the translation invariant state of an
 > interaction on the crystal `ℤ^d`, and the translations that fix the state fix entries of `Σ`
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.InvariantStateUncertainty`, [Ph
 
 ## A. Uncertainty relations in the invariant state
 
-**`CondensedMatter.Crystal.robertson_det_translationInvariantState`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/InvariantStateUncertainty.lean#L67).
+**`CondensedMatter.Crystal.robertson_det_translationInvariantState`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/InvariantStateUncertainty.lean#L67).
 
 > **Robertson's relation for several observables in the translation invariant state** of an
 > interaction on the crystal `ℤ^d`.
@@ -53,7 +53,7 @@ lemma robertson_det_translationInvariantState {ι : Type*} [Fintype ι] [Decidab
       ((I.translationInvariantState β).covarianceMatrix a).det
 ```
 
-**`CondensedMatter.Crystal.covariance_translationInvariantState_eq_zero`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/InvariantStateUncertainty.lean#L82).
+**`CondensedMatter.Crystal.covariance_translationInvariantState_eq_zero`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/InvariantStateUncertainty.lean#L82).
 
 > In the translation invariant state, an observable fixed and one reversed by a translation
 > are uncorrelated.
@@ -63,7 +63,7 @@ lemma covariance_translationInvariantState_eq_zero :
     (I.translationInvariantState β).covariance A B = 0
 ```
 
-**`CondensedMatter.Crystal.bracket_translationInvariantState_eq_zero`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/InvariantStateUncertainty.lean#L88).
+**`CondensedMatter.Crystal.bracket_translationInvariantState_eq_zero`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/InvariantStateUncertainty.lean#L88).
 
 > In the translation invariant state, an observable fixed and one reversed by a translation
 > have a bracket of expectation zero.
@@ -80,4 +80,4 @@ lemma bracket_translationInvariantState_eq_zero :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/InvariantStateUncertainty.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/InvariantStateUncertainty.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/InvariantStateUncertainty.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/InvariantStateUncertainty.lean)

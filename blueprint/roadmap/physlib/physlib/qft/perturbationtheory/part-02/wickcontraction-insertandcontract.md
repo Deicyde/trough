@@ -8,11 +8,11 @@ proof: formalized
 
 # Inserting an element into a contraction based on a list
 
-The module `Physlib.QFT.PerturbationTheory.WickContraction.InsertAndContract`, [Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean): 24 declarations, 3 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.WickContraction.InsertAndContract`, [Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean): 24 declarations, 3 with a docstring.
 
 ## Inserting an element into a list
 
-**`WickContraction.insertAndContract`**, a def, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L47).
+**`WickContraction.insertAndContract`**, a def, [line 47](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L47).
 
 > Given a Wick contraction `φsΛ` for a list `φs` of `𝓕.FieldOp`,
 > an element `φ` of `𝓕.FieldOp`, an `i ≤ φs.length` and a `k`
@@ -37,7 +37,7 @@ def insertAndContract {φs : List 𝓕.FieldOp} (φ : 𝓕.FieldOp) (φsΛ : Wic
     WickContraction (φs.insertIdx i φ).length
 ```
 
-**`WickContraction.insertAndContract_fstFieldOfContract`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L56).
+**`WickContraction.insertAndContract_fstFieldOfContract`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L56).
 
 ```lean
 lemma insertAndContract_fstFieldOfContract (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -47,7 +47,7 @@ lemma insertAndContract_fstFieldOfContract (φ : 𝓕.FieldOp) (φs : List 𝓕.
     finCongr (insertIdx_length_fin φ φs i).symm (i.succAbove (φsΛ.fstFieldOfContract a))
 ```
 
-**`WickContraction.insertAndContract_sndFieldOfContract`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L64).
+**`WickContraction.insertAndContract_sndFieldOfContract`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L64).
 
 ```lean
 lemma insertAndContract_sndFieldOfContract (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -57,7 +57,7 @@ lemma insertAndContract_sndFieldOfContract (φ : 𝓕.FieldOp) (φs : List 𝓕.
     finCongr (insertIdx_length_fin φ φs i).symm (i.succAbove (φsΛ.sndFieldOfContract a))
 ```
 
-**`WickContraction.insertAndContract_fstFieldOfContract_some_incl`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L72).
+**`WickContraction.insertAndContract_fstFieldOfContract_some_incl`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L72).
 
 ```lean
 lemma insertAndContract_fstFieldOfContract_some_incl (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -72,7 +72,7 @@ lemma insertAndContract_fstFieldOfContract_some_incl (φ : 𝓕.FieldOp) (φs : 
 
 ## insertAndContract and getDual?
 
-**`WickContraction.insertAndContract_none_getDual?_self`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L111).
+**`WickContraction.insertAndContract_none_getDual?_self`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L111).
 
 ```lean
 lemma insertAndContract_none_getDual?_self (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -80,7 +80,7 @@ lemma insertAndContract_none_getDual?_self (φ : 𝓕.FieldOp) (φs : List 𝓕.
     (φsΛ ↩Λ φ i none).getDual? (Fin.cast (insertIdx_length_fin φ φs i).symm i) = none
 ```
 
-**`WickContraction.insertAndContract_isSome_getDual?_self`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L118).
+**`WickContraction.insertAndContract_isSome_getDual?_self`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L118).
 
 ```lean
 lemma insertAndContract_isSome_getDual?_self (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -89,7 +89,7 @@ lemma insertAndContract_isSome_getDual?_self (φ : 𝓕.FieldOp) (φs : List �
     (Fin.cast (insertIdx_length_fin φ φs i).symm i)).isSome
 ```
 
-**`WickContraction.insertAndContract_some_getDual?_self_not_none`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L124).
+**`WickContraction.insertAndContract_some_getDual?_self_not_none`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L124).
 
 ```lean
 lemma insertAndContract_some_getDual?_self_not_none (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -98,7 +98,7 @@ lemma insertAndContract_some_getDual?_self_not_none (φ : 𝓕.FieldOp) (φs : L
     (Fin.cast (insertIdx_length_fin φ φs i).symm i)) = none
 ```
 
-**`WickContraction.insertAndContract_some_getDual?_self_eq`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L131).
+**`WickContraction.insertAndContract_some_getDual?_self_eq`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L131).
 
 ```lean
 lemma insertAndContract_some_getDual?_self_eq (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -107,7 +107,7 @@ lemma insertAndContract_some_getDual?_self_eq (φ : 𝓕.FieldOp) (φs : List �
     = some (Fin.cast (insertIdx_length_fin φ φs i).symm (i.succAbove j))
 ```
 
-**`WickContraction.insertAndContract_some_getDual?_some_eq`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L138).
+**`WickContraction.insertAndContract_some_getDual?_some_eq`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L138).
 
 ```lean
 lemma insertAndContract_some_getDual?_some_eq (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -117,7 +117,7 @@ lemma insertAndContract_some_getDual?_some_eq (φ : 𝓕.FieldOp) (φs : List �
     = some (Fin.cast (insertIdx_length_fin φ φs i).symm i)
 ```
 
-**`WickContraction.insertAndContract_none_succAbove_getDual?_eq_none_iff`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L149).
+**`WickContraction.insertAndContract_none_succAbove_getDual?_eq_none_iff`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L149).
 
 ```lean
 lemma insertAndContract_none_succAbove_getDual?_eq_none_iff (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -126,7 +126,7 @@ lemma insertAndContract_none_succAbove_getDual?_eq_none_iff (φ : 𝓕.FieldOp) 
       (i.succAbove j)) = none ↔ φsΛ.getDual? j = none
 ```
 
-**`WickContraction.insertAndContract_some_succAbove_getDual?_eq_option`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L156).
+**`WickContraction.insertAndContract_some_succAbove_getDual?_eq_option`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L156).
 
 ```lean
 lemma insertAndContract_some_succAbove_getDual?_eq_option (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -137,7 +137,7 @@ lemma insertAndContract_some_succAbove_getDual?_eq_option (φ : 𝓕.FieldOp) (�
     (φsΛ.getDual? j)
 ```
 
-**`WickContraction.insertAndContract_none_succAbove_getDual?_isSome_iff`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L168).
+**`WickContraction.insertAndContract_none_succAbove_getDual?_isSome_iff`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L168).
 
 ```lean
 lemma insertAndContract_none_succAbove_getDual?_isSome_iff (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -146,7 +146,7 @@ lemma insertAndContract_none_succAbove_getDual?_isSome_iff (φ : 𝓕.FieldOp) (
       (i.succAbove j))).isSome ↔ (φsΛ.getDual? j).isSome
 ```
 
-**`WickContraction.insertAndContract_none_getDual?_get_eq`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L176).
+**`WickContraction.insertAndContract_none_getDual?_get_eq`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L176).
 
 ```lean
 lemma insertAndContract_none_getDual?_get_eq (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -158,7 +158,7 @@ lemma insertAndContract_none_getDual?_get_eq (φ : 𝓕.FieldOp) (φs : List �
     (i.succAbove ((φsΛ.getDual? j).get (by simpa using h)))
 ```
 
-**`WickContraction.insertAndContract_sndFieldOfContract_some_incl`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L187).
+**`WickContraction.insertAndContract_sndFieldOfContract_some_incl`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L187).
 
 ```lean
 lemma insertAndContract_sndFieldOfContract_some_incl (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -171,7 +171,7 @@ lemma insertAndContract_sndFieldOfContract_some_incl (φ : 𝓕.FieldOp) (φs : 
     finCongr (insertIdx_length_fin φ φs i).symm i
 ```
 
-**`WickContraction.insertAndContract_none_prod_contractions`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L219).
+**`WickContraction.insertAndContract_none_prod_contractions`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L219).
 
 ```lean
 lemma insertAndContract_none_prod_contractions (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -181,7 +181,7 @@ lemma insertAndContract_none_prod_contractions (φ : 𝓕.FieldOp) (φs : List �
       (insertLift i none a))
 ```
 
-**`WickContraction.insertAndContract_some_prod_contractions`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L231).
+**`WickContraction.insertAndContract_some_prod_contractions`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L231).
 
 ```lean
 lemma insertAndContract_some_prod_contractions (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -192,7 +192,7 @@ lemma insertAndContract_some_prod_contractions (φ : 𝓕.FieldOp) (φs : List �
     ∏ (a : φsΛ.1), f (congrLift (insertIdx_length_fin φ φs i).symm (insertLift i (some j) a))
 ```
 
-**`WickContraction.insertAndContractLiftFinset`**, a def, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L249).
+**`WickContraction.insertAndContractLiftFinset`**, a def, [line 249](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L249).
 
 > Given a finite set of `Fin φs.length` the finite set of `(φs.insertIdx i φ).length`
 > formed by mapping elements using `i.succAboveEmb` and `finCongr`.
@@ -203,7 +203,7 @@ def insertAndContractLiftFinset (φ : 𝓕.FieldOp) {φs : List 𝓕.FieldOp}
     Finset (Fin (φs.insertIdx i φ).length)
 ```
 
-**`WickContraction.self_not_mem_insertAndContractLiftFinset`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L255).
+**`WickContraction.self_not_mem_insertAndContractLiftFinset`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L255).
 
 ```lean
 lemma self_not_mem_insertAndContractLiftFinset (φ : 𝓕.FieldOp) {φs : List 𝓕.FieldOp}
@@ -211,7 +211,7 @@ lemma self_not_mem_insertAndContractLiftFinset (φ : 𝓕.FieldOp) {φs : List �
     Fin.cast (insertIdx_length_fin φ φs i).symm i ∉ insertAndContractLiftFinset φ i a
 ```
 
-**`WickContraction.succAbove_mem_insertAndContractLiftFinset`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L264).
+**`WickContraction.succAbove_mem_insertAndContractLiftFinset`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L264).
 
 ```lean
 lemma succAbove_mem_insertAndContractLiftFinset (φ : 𝓕.FieldOp) {φs : List 𝓕.FieldOp}
@@ -220,7 +220,7 @@ lemma succAbove_mem_insertAndContractLiftFinset (φ : 𝓕.FieldOp) {φs : List 
     ∈ insertAndContractLiftFinset φ i a ↔ j ∈ a
 ```
 
-**`WickContraction.insert_fin_eq_self`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L279).
+**`WickContraction.insert_fin_eq_self`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L279).
 
 ```lean
 lemma insert_fin_eq_self (φ : 𝓕.FieldOp) {φs : List 𝓕.FieldOp}
@@ -229,7 +229,7 @@ lemma insert_fin_eq_self (φ : 𝓕.FieldOp) {φs : List 𝓕.FieldOp}
     ∨ ∃ k, j = Fin.cast (insertIdx_length_fin φ φs i).symm (i.succAbove k)
 ```
 
-**`WickContraction.insertLift_sum`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L308).
+**`WickContraction.insertLift_sum`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L308).
 
 > For a list `φs` of `𝓕.FieldOp`, a Wick contraction `φsΛ` of `φs`, an element `φ` of
 > `𝓕.FieldOp` and a `i ≤ φs.length` then a sum over
@@ -255,7 +255,7 @@ lemma insertLift_sum (φ : 𝓕.FieldOp) {φs : List 𝓕.FieldOp}
 
 ## Uncontracted list
 
-**`WickContraction.insertAndContract_uncontractedList_none_map`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L321).
+**`WickContraction.insertAndContract_uncontractedList_none_map`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L321).
 
 ```lean
 lemma insertAndContract_uncontractedList_none_map (φ : 𝓕.FieldOp) {φs : List 𝓕.FieldOp}
@@ -263,7 +263,7 @@ lemma insertAndContract_uncontractedList_none_map (φ : 𝓕.FieldOp) {φs : Lis
     [φsΛ ↩Λ φ i none]ᵘᶜ = List.insertIdx [φsΛ]ᵘᶜ (φsΛ.uncontractedListOrderPos i) φ
 ```
 
-**`WickContraction.insertAndContract_uncontractedList_none_zero`**, a lemma, [line 334](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L334).
+**`WickContraction.insertAndContract_uncontractedList_none_zero`**, a lemma, [line 334](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L334).
 
 ```lean
 lemma insertAndContract_uncontractedList_none_zero (φ : 𝓕.FieldOp) {φs : List 𝓕.FieldOp}
@@ -271,7 +271,7 @@ lemma insertAndContract_uncontractedList_none_zero (φ : 𝓕.FieldOp) {φs : Li
     [φsΛ ↩Λ φ 0 none]ᵘᶜ = φ :: [φsΛ]ᵘᶜ
 ```
 
-**`WickContraction.stat_ofFinset_of_insertAndContractLiftFinset`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L341).
+**`WickContraction.stat_ofFinset_of_insertAndContractLiftFinset`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean#L341).
 
 ```lean
 lemma stat_ofFinset_of_insertAndContractLiftFinset (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -281,10 +281,10 @@ lemma stat_ofFinset_of_insertAndContractLiftFinset (φ : 𝓕.FieldOp) (φs : Li
 
 ## Depends on
 
-- [List lemmas (InsertIdx)](../../../mathematics/formathlib/part-01/list-insertidx.md)
+- [List lemmas (InsertIdx)](../../../mathematics/formathlib/part-02/list-insertidx.md)
 - [Field statistics of a finite set.](../part-01/fieldstatistics-offinset.md)
 - [List of uncontracted elements of a Wick contraction](../part-03/wickcontraction-uncontractedlist.md)
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean)
+- [Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean)

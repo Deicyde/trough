@@ -8,7 +8,7 @@ proof: formalized
 
 # Coordinate-level jet points
 
-The module `PhyslibAlpha.ClassicalFieldTheory.Local.JetPoint`, [PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean): 22 declarations, 8 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.Local.JetPoint`, [PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean): 22 declarations, 8 with a docstring.
 
 > Coordinate-level jet points of fields on `Space d` and the jets of a field at a point.
 
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.Local.JetPoint`, [PhyslibAlpha/Cla
 
 ## A. Jet coordinates
 
-**`ClassicalFieldTheory.Local.JetCoordinates`**, an abbrev, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L67).
+**`ClassicalFieldTheory.Local.JetCoordinates`**, an abbrev, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L67).
 
 > Coordinate data `u^a_I` for `k`-th order jet points.
 >
@@ -56,7 +56,7 @@ abbrev JetCoordinates (d m k : ℕ)
 
 ## B. Jet points
 
-**`ClassicalFieldTheory.Local.JetPoint`**, a structure, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L76).
+**`ClassicalFieldTheory.Local.JetPoint`**, a structure, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L76).
 
 > The coordinate-level points of the locally trivialized `k`-jet bundle for fields
 > `Space d → EuclideanSpace ℝ (Fin m)`.
@@ -69,7 +69,7 @@ structure JetPoint (d m k : ℕ) where
   fiber : JetCoordinates d m k
 ```
 
-**`ClassicalFieldTheory.Local.JetPoint.coord`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L87).
+**`ClassicalFieldTheory.Local.JetPoint.coord`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L87).
 
 > The coordinate `u^a_I` of a jet point.
 
@@ -77,7 +77,7 @@ structure JetPoint (d m k : ℕ) where
 def coord (J : JetPoint d m k) (I : DerivativeIndex d k) (a : Fin m) : ℝ
 ```
 
-**`ClassicalFieldTheory.Local.JetPoint.value`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L90).
+**`ClassicalFieldTheory.Local.JetPoint.value`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L90).
 
 > The zero-th order value encoded by a jet point.
 
@@ -85,14 +85,14 @@ def coord (J : JetPoint d m k) (I : DerivativeIndex d k) (a : Fin m) : ℝ
 def value (J : JetPoint d m k) : EuclideanSpace ℝ (Fin m)
 ```
 
-**`ClassicalFieldTheory.Local.JetPoint.value_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L94).
+**`ClassicalFieldTheory.Local.JetPoint.value_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L94).
 
 ```lean
 lemma value_apply (J : JetPoint d m k) (a : Fin m) :
     J.value a = J.coord 0 a
 ```
 
-**`ClassicalFieldTheory.Local.JetPoint.ext`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L99).
+**`ClassicalFieldTheory.Local.JetPoint.ext`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L99).
 
 ```lean
 lemma ext (J K : JetPoint d m k) (hbase : J.base = K.base)
@@ -100,7 +100,7 @@ lemma ext (J K : JetPoint d m k) (hbase : J.base = K.base)
     J = K
 ```
 
-**`ClassicalFieldTheory.Local.JetPoint.ofBaseCoordinates`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L113).
+**`ClassicalFieldTheory.Local.JetPoint.ofBaseCoordinates`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L113).
 
 > Build a jet point from a base point and its jet coordinates.
 
@@ -108,7 +108,7 @@ lemma ext (J K : JetPoint d m k) (hbase : J.base = K.base)
 def ofBaseCoordinates (x : Space d) (u : JetCoordinates d m k) : JetPoint d m k
 ```
 
-**`ClassicalFieldTheory.Local.JetPoint.toBaseCoordinates`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L118).
+**`ClassicalFieldTheory.Local.JetPoint.toBaseCoordinates`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L118).
 
 > The base point and jet coordinates of a jet point.
 
@@ -116,21 +116,21 @@ def ofBaseCoordinates (x : Space d) (u : JetCoordinates d m k) : JetPoint d m k
 def toBaseCoordinates (J : JetPoint d m k) : Space d × JetCoordinates d m k
 ```
 
-**`ClassicalFieldTheory.Local.JetPoint.ofBaseCoordinates_base`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L121).
+**`ClassicalFieldTheory.Local.JetPoint.ofBaseCoordinates_base`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L121).
 
 ```lean
 lemma ofBaseCoordinates_base (x : Space d) (u : JetCoordinates d m k) :
     (ofBaseCoordinates x u).base = x
 ```
 
-**`ClassicalFieldTheory.Local.JetPoint.ofBaseCoordinates_fiber`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L125).
+**`ClassicalFieldTheory.Local.JetPoint.ofBaseCoordinates_fiber`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L125).
 
 ```lean
 lemma ofBaseCoordinates_fiber (x : Space d) (u : JetCoordinates d m k) :
     (ofBaseCoordinates x u).fiber = u
 ```
 
-**`ClassicalFieldTheory.Local.JetPoint.ofBaseCoordinates_coord`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L129).
+**`ClassicalFieldTheory.Local.JetPoint.ofBaseCoordinates_coord`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L129).
 
 ```lean
 lemma ofBaseCoordinates_coord (x : Space d) (u : JetCoordinates d m k)
@@ -138,14 +138,14 @@ lemma ofBaseCoordinates_coord (x : Space d) (u : JetCoordinates d m k)
     (ofBaseCoordinates x u).coord I a = u I a
 ```
 
-**`ClassicalFieldTheory.Local.JetPoint.ofBaseCoordinates_base_fiber`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L134).
+**`ClassicalFieldTheory.Local.JetPoint.ofBaseCoordinates_base_fiber`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L134).
 
 ```lean
 lemma ofBaseCoordinates_base_fiber (J : JetPoint d m k) :
     ofBaseCoordinates J.base J.fiber = J
 ```
 
-**`ClassicalFieldTheory.Local.JetPoint.toBaseCoordinates_ofBaseCoordinates`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L142).
+**`ClassicalFieldTheory.Local.JetPoint.toBaseCoordinates_ofBaseCoordinates`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L142).
 
 ```lean
 lemma toBaseCoordinates_ofBaseCoordinates (x : Space d) (u : JetCoordinates d m k) :
@@ -154,7 +154,7 @@ lemma toBaseCoordinates_ofBaseCoordinates (x : Space d) (u : JetCoordinates d m 
 
 ## C. Jet points of fields
 
-**`ClassicalFieldTheory.Local.jetCoordinatesAt`**, a def, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L153).
+**`ClassicalFieldTheory.Local.jetCoordinatesAt`**, a def, [line 153](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L153).
 
 > The jet-coordinate function determined by a field `g`.
 
@@ -164,7 +164,7 @@ noncomputable def jetCoordinatesAt (k : ℕ) (g : Space d → EuclideanSpace ℝ
     JetCoordinates d m k
 ```
 
-**`ClassicalFieldTheory.Local.jetAt`**, a def, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L159).
+**`ClassicalFieldTheory.Local.jetAt`**, a def, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L159).
 
 > The coordinate-level `k`-jet point of a field `f` at the point `x`.
 
@@ -173,21 +173,21 @@ noncomputable def jetAt (k : ℕ) (f : Space d → EuclideanSpace ℝ (Fin m)) (
     JetPoint d m k
 ```
 
-**`ClassicalFieldTheory.Local.jetAt_base`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L165).
+**`ClassicalFieldTheory.Local.jetAt_base`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L165).
 
 ```lean
 lemma jetAt_base (k : ℕ) (f : Space d → EuclideanSpace ℝ (Fin m)) (x : Space d) :
     (jetAt k f x).base = x
 ```
 
-**`ClassicalFieldTheory.Local.jetAt_value`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L169).
+**`ClassicalFieldTheory.Local.jetAt_value`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L169).
 
 ```lean
 lemma jetAt_value (k : ℕ) (f : Space d → EuclideanSpace ℝ (Fin m)) (x : Space d) :
     (jetAt k f x).value = f x
 ```
 
-**`ClassicalFieldTheory.Local.jetAt_coord`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L175).
+**`ClassicalFieldTheory.Local.jetAt_coord`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L175).
 
 ```lean
 lemma jetAt_coord (k : ℕ) (f : Space d → EuclideanSpace ℝ (Fin m)) (x : Space d)
@@ -195,7 +195,7 @@ lemma jetAt_coord (k : ℕ) (f : Space d → EuclideanSpace ℝ (Fin m)) (x : Sp
     (jetAt k f x).coord I a = ∂^[I.1] (fun y => (f y) a) x
 ```
 
-**`ClassicalFieldTheory.Local.jetAt_coord_zero`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L179).
+**`ClassicalFieldTheory.Local.jetAt_coord_zero`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L179).
 
 ```lean
 lemma jetAt_coord_zero (k : ℕ) (f : Space d → EuclideanSpace ℝ (Fin m)) (x : Space d)
@@ -203,7 +203,7 @@ lemma jetAt_coord_zero (k : ℕ) (f : Space d → EuclideanSpace ℝ (Fin m)) (x
     (jetAt k f x).coord 0 a = (f x) a
 ```
 
-**`ClassicalFieldTheory.Local.jetCoordinatesAt_eq`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L185).
+**`ClassicalFieldTheory.Local.jetCoordinatesAt_eq`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L185).
 
 ```lean
 lemma jetCoordinatesAt_eq (k : ℕ) (g : Space d → EuclideanSpace ℝ (Fin m)) (x : Space d)
@@ -211,7 +211,7 @@ lemma jetCoordinatesAt_eq (k : ℕ) (g : Space d → EuclideanSpace ℝ (Fin m))
     jetCoordinatesAt k g x I a = ∂^[I.1] (fun y => (g y) a) x
 ```
 
-**`ClassicalFieldTheory.Local.jetCoordinatesAt_zero`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L189).
+**`ClassicalFieldTheory.Local.jetCoordinatesAt_zero`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L189).
 
 ```lean
 lemma jetCoordinatesAt_zero (k : ℕ) (g : Space d → EuclideanSpace ℝ (Fin m))
@@ -219,7 +219,7 @@ lemma jetCoordinatesAt_zero (k : ℕ) (g : Space d → EuclideanSpace ℝ (Fin m
     jetCoordinatesAt k g x 0 a = (g x) a
 ```
 
-**`ClassicalFieldTheory.Local.jetAt_eq_ofBaseCoordinates`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L194).
+**`ClassicalFieldTheory.Local.jetAt_eq_ofBaseCoordinates`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean#L194).
 
 ```lean
 lemma jetAt_eq_ofBaseCoordinates (k : ℕ) (f : Space d → EuclideanSpace ℝ (Fin m))
@@ -234,4 +234,4 @@ lemma jetAt_eq_ofBaseCoordinates (k : ℕ) (f : Space d → EuclideanSpace ℝ (
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Solutions of the Friedmann equations: dynamical criteria
 
-The module `Physlib.Cosmology.FLRW.FriedmannSolution`, [Physlib/Cosmology/FLRW/FriedmannSolution.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/FriedmannSolution.lean): 10 declarations, 10 with a docstring.
+The module `Physlib.Cosmology.FLRW.FriedmannSolution`, [Physlib/Cosmology/FLRW/FriedmannSolution.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/FriedmannSolution.lean): 10 declarations, 10 with a docstring.
 
 ## i. Overview
 
@@ -51,7 +51,7 @@ The module `Physlib.Cosmology.FLRW.FriedmannSolution`, [Physlib/Cosmology/FLRW/F
 
 ## A. The cosmological constant folded into the cosmic fluid
 
-**`Cosmology.FLRW.friedmannSolution_iff_addCosmologicalConstant`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L78).
+**`Cosmology.FLRW.friedmannSolution_iff_addCosmologicalConstant`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L78).
 
 > An FLRW model filled with the cosmic fluid `F` solves the Friedmann equations with the
 > cosmological constant `Λ` if and only if it solves them without cosmological constant for the
@@ -65,7 +65,7 @@ lemma _root_.Cosmology.FLRW.friedmannSolution_iff_addCosmologicalConstant {U : F
 
 ## B. Accelerated expansion and the strong energy condition
 
-**`Cosmology.FLRW.FriedmannSolution.deriv_deriv_scaleFactor_pos_iff`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L98).
+**`Cosmology.FLRW.FriedmannSolution.deriv_deriv_scaleFactor_pos_iff`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L98).
 
 > On the interval of a solution without cosmological constant, the second derivative
 > `∂ₜ ∂ₜ a` of the scale factor is positive (the expansion accelerates) if and only if
@@ -77,7 +77,7 @@ lemma deriv_deriv_scaleFactor_pos_iff (h : U.FriedmannSolution F 0 G c) (hG : 0 
     (ht : t ∈ U.I) : 0 < ∂ₜ (∂ₜ U.a) t ↔ F.ρ t + 3 * F.p t / (c : ℝ) ^ 2 < 0
 ```
 
-**`Cosmology.FLRW.FriedmannSolution.deriv_deriv_scaleFactor_pos_iff_lambda`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L118).
+**`Cosmology.FLRW.FriedmannSolution.deriv_deriv_scaleFactor_pos_iff_lambda`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L118).
 
 > With cosmological constant `Λ`, on the interval of a solution, `∂ₜ ∂ₜ a` is positive if and
 > only if the total fluid, `Λ` folded in as the `w = -1` component, violates
@@ -92,7 +92,7 @@ lemma deriv_deriv_scaleFactor_pos_iff_lambda (h : U.FriedmannSolution F Λ G c) 
 
 ## C. The deceleration parameter in terms of the density parameters
 
-**`Cosmology.FLRW.FriedmannSolution.decelerationParameter_eq_sum`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L135).
+**`Cosmology.FLRW.FriedmannSolution.decelerationParameter_eq_sum`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L135).
 
 > For a solution of the Friedmann equations without cosmological constant whose cosmic fluid is
 > a sum of barotropic components of pressure `w_i ρ_i c²`, the deceleration parameter is
@@ -108,7 +108,7 @@ lemma decelerationParameter_eq_sum {n : ℕ} {Fi : Fin n → CosmicFluid} {w : F
       = 1 / 2 * ∑ i, U.densityParameter (Fi i) G t * (1 + 3 * w i)
 ```
 
-**`Cosmology.FLRW.FriedmannSolution.decelerationParameter_lambdaCDM`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L173).
+**`Cosmology.FLRW.FriedmannSolution.decelerationParameter_lambdaCDM`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L173).
 
 > For a solution of the Friedmann equations whose cosmic fluid is the sum of matter (zero
 > pressure) and radiation (pressure `ρ_r c² / 3`), the deceleration parameter is
@@ -125,7 +125,7 @@ lemma decelerationParameter_lambdaCDM {Fm Fr : CosmicFluid} (h : U.FriedmannSolu
 
 ## D. Eternal expansion
 
-**`Cosmology.FLRW.FriedmannSolution.deriv_scaleFactor_ne_zero`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L205).
+**`Cosmology.FLRW.FriedmannSolution.deriv_scaleFactor_ne_zero`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L205).
 
 > For a spatial geometry of non-positive curvature parameter, `0 ≤ Λ` and a positive density
 > at a time `t` of the interval, the first-order Friedmann equation forces `0 < H²` at `t`:
@@ -137,7 +137,7 @@ lemma deriv_scaleFactor_ne_zero (h : U.FriedmannSolution F Λ G c)
     (hρ : 0 < F.ρ t) : ∂ₜ U.a t ≠ 0
 ```
 
-**`Cosmology.FLRW.FriedmannSolution.deriv_scaleFactor_pos`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L226).
+**`Cosmology.FLRW.FriedmannSolution.deriv_scaleFactor_pos`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L226).
 
 > If moreover the density is positive on the interval and the model expands at one time `t₀`
 > of `U.I`, it expands at all times of `U.I`: with a non-positive curvature parameter, `0 ≤ Λ`
@@ -151,7 +151,7 @@ lemma deriv_scaleFactor_pos (h : U.FriedmannSolution F Λ G c) (hk : U.geometry.
 
 ## E. The Big-Bang bound for a solution of the Friedmann equations
 
-**`Cosmology.FLRW.FriedmannSolution.deriv_deriv_scaleFactor_nonpos`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L252).
+**`Cosmology.FLRW.FriedmannSolution.deriv_deriv_scaleFactor_nonpos`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L252).
 
 > With `0 ≤ ρ`, `0 ≤ p` and `Λ = 0` at a time `t` of the interval, the second-order Friedmann
 > equation gives `∂ₜ ∂ₜ a ≤ 0` at `t`: the expansion decelerates.
@@ -161,7 +161,7 @@ lemma deriv_deriv_scaleFactor_nonpos (h : U.FriedmannSolution F 0 G c) (hG : 0 <
     (ht : t ∈ U.I) (hρ : 0 ≤ F.ρ t) (hp : 0 ≤ F.p t) : ∂ₜ (∂ₜ U.a) t ≤ 0
 ```
 
-**`Cosmology.FLRW.FriedmannSolution.lt_of_mem_I`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L269).
+**`Cosmology.FLRW.FriedmannSolution.lt_of_mem_I`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L269).
 
 > The Big-Bang bound for a solution of the Friedmann equations with `0 ≤ ρ`, `0 ≤ p` and
 > `Λ = 0` on its interval: if the model expands at `t₀ ∈ U.I`, every time of `U.I` is later than
@@ -174,7 +174,7 @@ lemma lt_of_mem_I (h : U.FriedmannSolution F 0 G c) (hG : 0 < G) (hρ : ∀ s �
     t₀.val - 1 / hubbleConstant U.a t₀ < t.val
 ```
 
-**`Cosmology.FLRW.FriedmannSolution.bddBelow_I`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L280).
+**`Cosmology.FLRW.FriedmannSolution.bddBelow_I`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/FriedmannSolution.lean#L280).
 
 > Under the same assumptions, the interval of the model is bounded below.
 
@@ -191,4 +191,4 @@ lemma bddBelow_I (h : U.FriedmannSolution F 0 G c) (hG : 0 < G) (hρ : ∀ s ∈
 
 ## Sources
 
-- [Physlib/Cosmology/FLRW/FriedmannSolution.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/FriedmannSolution.lean)
+- [Physlib/Cosmology/FLRW/FriedmannSolution.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/FriedmannSolution.lean)

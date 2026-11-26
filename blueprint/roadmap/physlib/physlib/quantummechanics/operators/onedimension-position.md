@@ -8,7 +8,7 @@ proof: formalized
 
 # Position operator
 
-The module `Physlib.QuantumMechanics.Operators.OneDimension.Position`, [Physlib/QuantumMechanics/Operators/OneDimension/Position.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean): 7 declarations, 3 with a docstring.
+The module `Physlib.QuantumMechanics.Operators.OneDimension.Position`, [Physlib/QuantumMechanics/Operators/OneDimension/Position.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean): 7 declarations, 3 with a docstring.
 
 > In this module we define:
 > - The position operator on functions `ℝ → ℂ`
@@ -18,7 +18,7 @@ The module `Physlib.QuantumMechanics.Operators.OneDimension.Position`, [Physlib/
 
 ## The position operator on functions `ℝ → ℂ`
 
-**`QuantumMechanics.OneDimension.positionOperator`**, a def, [line 42](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean#L42).
+**`QuantumMechanics.OneDimension.positionOperator`**, a def, [line 42](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean#L42).
 
 > The position operator is defined as the linear map from `ℝ → ℂ` to `ℝ → ℂ` taking
 > `ψ` to `x * ψ`.
@@ -29,7 +29,7 @@ def positionOperator : (ℝ → ℂ) →ₗ[ℂ] ℝ → ℂ
 
 ## The position operator on Schwartz maps
 
-**`QuantumMechanics.OneDimension.positionOperatorSchwartz`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean#L64).
+**`QuantumMechanics.OneDimension.positionOperatorSchwartz`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean#L64).
 
 > The position operator on the Schwartz maps is defined as the linear map from
 > `𝓢(ℝ, ℂ)` to itself, such that `ψ` is taken to `fun x => x * ψ x`.
@@ -38,21 +38,21 @@ def positionOperator : (ℝ → ℂ) →ₗ[ℂ] ℝ → ℂ
 def positionOperatorSchwartz : 𝓢(ℝ, ℂ) →L[ℂ] 𝓢(ℝ, ℂ)
 ```
 
-**`QuantumMechanics.OneDimension.positionOperatorSchwartz_apply_fun`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean#L66).
+**`QuantumMechanics.OneDimension.positionOperatorSchwartz_apply_fun`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean#L66).
 
 ```lean
 lemma positionOperatorSchwartz_apply_fun (ψ : 𝓢(ℝ, ℂ)) :
     (positionOperatorSchwartz ψ) = fun x => x * ψ x
 ```
 
-**`QuantumMechanics.OneDimension.positionOperatorSchwartz_apply`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean#L72).
+**`QuantumMechanics.OneDimension.positionOperatorSchwartz_apply`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean#L72).
 
 ```lean
 lemma positionOperatorSchwartz_apply (ψ : 𝓢(ℝ, ℂ)) (x : ℝ) :
     (positionOperatorSchwartz ψ) x = x * ψ x
 ```
 
-**`QuantumMechanics.OneDimension.positionOperatorUnbounded`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean#L78).
+**`QuantumMechanics.OneDimension.positionOperatorUnbounded`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean#L78).
 
 > The unbounded position operator, whose domain is Schwartz maps.
 
@@ -62,7 +62,7 @@ def positionOperatorUnbounded : UnboundedOperator schwartzIncl schwartzIncl_inje
 
 ## Generalized eigenvectors of the position operator
 
-**`QuantumMechanics.OneDimension.positionStates_generalized_eigenvector_positionOperatorUnbounded`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean#L87).
+**`QuantumMechanics.OneDimension.positionStates_generalized_eigenvector_positionOperatorUnbounded`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean#L87).
 
 ```lean
 lemma positionStates_generalized_eigenvector_positionOperatorUnbounded (x : ℝ) :
@@ -71,7 +71,7 @@ lemma positionStates_generalized_eigenvector_positionOperatorUnbounded (x : ℝ)
 
 ## Position operator is symmetric
 
-**`QuantumMechanics.OneDimension.positionOperatorUnbounded_isSymmetric`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean#L100).
+**`QuantumMechanics.OneDimension.positionOperatorUnbounded_isSymmetric`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean#L100).
 
 ```lean
 lemma positionOperatorUnbounded_isSymmetric :
@@ -83,8 +83,8 @@ lemma positionOperatorUnbounded_isSymmetric :
 - [Physlib.Mathematics.Distribution.PowMul](../../mathematics/distribution/powmul.md)
 - [Position states (OneDimension/PositionStates)](../hilbertspaces/onedimension-positionstates.md)
 - [Schwartz submodule of the Hilbert space](../hilbertspaces/onedimension-schwartzsubmodule.md)
-- [Unbounded operators (OneDimension/Unbounded)](onedimension-unbounded.md)
+- [Unbounded operators (Unbounded)](onedimension-unbounded.md)
 
 ## Sources
 
-- [Physlib/QuantumMechanics/Operators/OneDimension/Position.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean)
+- [Physlib/QuantumMechanics/Operators/OneDimension/Position.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension/Position.lean)

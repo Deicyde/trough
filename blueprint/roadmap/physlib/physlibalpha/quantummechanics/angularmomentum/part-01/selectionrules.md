@@ -8,7 +8,7 @@ proof: formalized
 
 # Selection rules for multipole transitions
 
-The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.SelectionRules`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean): 14 declarations (2 instances with no name), 12 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.SelectionRules`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean): 14 declarations (2 instances with no name), 12 with a docstring.
 
 > The triangle rule for tensor operators in the usual inequality form, and the angular momentum
 > and parity selection rules for electromagnetic multipole transitions.
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.SelectionRules`, [Phys
 
 ## A. The triangle rule
 
-**`PhyslibAlpha.Sl2.TriangleRule`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L68).
+**`PhyslibAlpha.Sl2.TriangleRule`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L68).
 
 > The triangle rule in doubled units: `p ≤ k + m`, `k ≤ m + p`, `m ≤ k + p` and `k + m + p`
 > even. For `k = 2λ`, `m = 2Iᵢ`, `p = 2I_f` this is `|Iᵢ - I_f| ≤ λ ≤ Iᵢ + I_f` with
@@ -55,13 +55,13 @@ The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.SelectionRules`, [Phys
 def TriangleRule (k m p : ℕ) : Prop
 ```
 
-**An instance with no name**, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L71).
+**An instance with no name**, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L71).
 
 ```lean
 instance (k m p : ℕ) : Decidable (TriangleRule k m p)
 ```
 
-**`PhyslibAlpha.Sl2.exists_eq_iff_triangleRule`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L77).
+**`PhyslibAlpha.Sl2.exists_eq_iff_triangleRule`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L77).
 
 > `p` occurs in the Clebsch–Gordan decomposition of `V(k) ⊗ V(m)` exactly when the triangle
 > rule holds.
@@ -71,7 +71,7 @@ lemma exists_eq_iff_triangleRule {k m p : ℕ} :
     (∃ j : Fin (min k m + 1), k + m - 2 * (j : ℕ) = p) ↔ TriangleRule k m p
 ```
 
-**`PhyslibAlpha.Sl2.IsTensorOperator.triangleRule`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L89).
+**`PhyslibAlpha.Sl2.IsTensorOperator.triangleRule`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L89).
 
 > **Triangle rule.** A nonzero tensor operator of rank `k` from `V(m)` to `V(p)` satisfies
 > `TriangleRule k m p`.
@@ -85,7 +85,7 @@ lemma IsTensorOperator.triangleRule {K : Type*} [Field K] [CharZero K] {k m p : 
 
 ## B. Parity and multipole transitions
 
-**`PhyslibAlpha.Sl2.parity_eq_of_ne_zero`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L104).
+**`PhyslibAlpha.Sl2.parity_eq_of_ne_zero`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L104).
 
 > **Parity rule.** If a linear map between states of definite parities `πᵢ` and `π_f` has
 > parity `π_T`, in the sense `π_f • T = π_T • πᵢ • T`, and is nonzero, then `π_f = π_T * πᵢ`.
@@ -96,7 +96,7 @@ lemma parity_eq_of_ne_zero {K V W : Type*} [Field K] [AddCommGroup V] [Module K 
     (h : πf • T = πT • πi • T) (hT : T ≠ 0) : πf = πT * πi
 ```
 
-**`PhyslibAlpha.Sl2.MultipoleType`**, an inductive, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L111).
+**`PhyslibAlpha.Sl2.MultipoleType`**, an inductive, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L111).
 
 > Electric and magnetic multipoles.
 
@@ -109,7 +109,7 @@ inductive MultipoleType
   deriving DecidableEq
 ```
 
-**`PhyslibAlpha.Sl2.MultipoleType.parity`**, a def, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L119).
+**`PhyslibAlpha.Sl2.MultipoleType.parity`**, a def, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L119).
 
 > The parity of a multipole operator of order `λ`: `(-1)^λ` for `Eλ`, `(-1)^(λ+1)` for `Mλ`.
 
@@ -117,7 +117,7 @@ inductive MultipoleType
 def MultipoleType.parity : MultipoleType → ℕ → ℤ
 ```
 
-**`PhyslibAlpha.Sl2.IsAllowedMultipole`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L126).
+**`PhyslibAlpha.Sl2.IsAllowedMultipole`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L126).
 
 > A multipole transition of type `t` and order `l` between a state of spin `Iᵢ` and parity
 > `πᵢ` and a state of spin `I_f` and parity `π_f` (spins in doubled units `twoIi = 2Iᵢ`,
@@ -127,7 +127,7 @@ def MultipoleType.parity : MultipoleType → ℕ → ℤ
 def IsAllowedMultipole (twoIi twoIf : ℕ) (πi πf : ℤ) (t : MultipoleType) (l : ℕ) : Prop
 ```
 
-**An instance with no name**, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L129).
+**An instance with no name**, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L129).
 
 ```lean
 instance (twoIi twoIf : ℕ) (πi πf : ℤ) (t : MultipoleType) (l : ℕ) :
@@ -139,7 +139,7 @@ instance (twoIi twoIf : ℕ) (πi πf : ℤ) (t : MultipoleType) (l : ℕ) :
 > Spins in doubled units: `16⁺` is `(32, 1)`, `13⁻` is `(26, -1)`, `12⁻` is `(24, -1)`, `11⁻` is
 > `(22, -1)`, and the `8⁻` and `8⁺` levels of the `4 s` isomer decay are `(16, -1)` and `(16, 1)`.
 
-**`PhyslibAlpha.Sl2.hf178_primary_branches_allowed`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L145).
+**`PhyslibAlpha.Sl2.hf178_primary_branches_allowed`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L145).
 
 > The three branches depopulating the `16⁺` isomer are allowed: `E3` to `13⁻`, `M4` to `12⁻`,
 > `E5` to `11⁻`.
@@ -150,7 +150,7 @@ lemma hf178_primary_branches_allowed :
       IsAllowedMultipole 32 22 1 (-1) .electric 5
 ```
 
-**`PhyslibAlpha.Sl2.hf178_E3_lowest`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L151).
+**`PhyslibAlpha.Sl2.hf178_E3_lowest`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L151).
 
 > `E3` is the lowest allowed multipole for `16⁺ → 13⁻`.
 
@@ -159,7 +159,7 @@ lemma hf178_E3_lowest : ∀ l < 3, ¬ IsAllowedMultipole 32 26 1 (-1) .electric 
     ¬ IsAllowedMultipole 32 26 1 (-1) .magnetic l
 ```
 
-**`PhyslibAlpha.Sl2.hf178_M4_lowest`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L156).
+**`PhyslibAlpha.Sl2.hf178_M4_lowest`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L156).
 
 > `M4` is the lowest allowed multipole for `16⁺ → 12⁻`; `E4` is forbidden by parity.
 
@@ -169,7 +169,7 @@ lemma hf178_M4_lowest : (∀ l < 4, ¬ IsAllowedMultipole 32 24 1 (-1) .electric
     ¬ IsAllowedMultipole 32 24 1 (-1) .electric 4
 ```
 
-**`PhyslibAlpha.Sl2.hf178_E5_lowest`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L162).
+**`PhyslibAlpha.Sl2.hf178_E5_lowest`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L162).
 
 > `E5` is the lowest allowed multipole for `16⁺ → 11⁻`.
 
@@ -179,7 +179,7 @@ lemma hf178_E5_lowest : (∀ l < 5, ¬ IsAllowedMultipole 32 22 1 (-1) .electric
     ¬ IsAllowedMultipole 32 22 1 (-1) .magnetic 5
 ```
 
-**`PhyslibAlpha.Sl2.hf178_E1_8minus`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L168).
+**`PhyslibAlpha.Sl2.hf178_E1_8minus`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean#L168).
 
 > The `8⁻ → 8⁺` decay of the `4 s` isomer is `E1`, and `M1` is forbidden by parity.
 
@@ -194,4 +194,4 @@ lemma hf178_E1_8minus : IsAllowedMultipole 16 16 (-1) 1 .electric 1 ∧
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean)
+- [PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean)

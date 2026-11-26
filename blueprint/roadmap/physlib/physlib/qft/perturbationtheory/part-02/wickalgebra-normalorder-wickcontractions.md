@@ -8,11 +8,11 @@ proof: formalized
 
 # Normal ordering with relation to Wick contractions
 
-The module `Physlib.QFT.PerturbationTheory.WickAlgebra.NormalOrder.WickContractions`, [Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/WickContractions.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/WickContractions.lean): 2 declarations, 2 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.WickAlgebra.NormalOrder.WickContractions`, [Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/WickContractions.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/WickContractions.lean): 2 declarations, 2 with a docstring.
 
 ## Normal order of uncontracted terms within proto-algebra.
 
-**`FieldSpecification.WickAlgebra.normalOrder_uncontracted_none`**, a lemma, [line 42](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/WickContractions.lean#L42).
+**`FieldSpecification.WickAlgebra.normalOrder_uncontracted_none`**, a lemma, [line 42](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/WickContractions.lean#L42).
 
 > For a list `φs = φ₀…φₙ` of `𝓕.FieldOp`, a Wick contraction `φsΛ` of `φs`, an element `φ` of
 > `𝓕.FieldOp`, and a `i ≤ φs.length`, then the following relation holds:
@@ -31,7 +31,7 @@ lemma normalOrder_uncontracted_none (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp
     𝓝(ofFieldOpList (φ :: [φsΛ]ᵘᶜ))
 ```
 
-**`FieldSpecification.WickAlgebra.normalOrder_uncontracted_some`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/WickContractions.lean#L89).
+**`FieldSpecification.WickAlgebra.normalOrder_uncontracted_some`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/WickContractions.lean#L89).
 
 > For a list `φs = φ₀…φₙ` of `𝓕.FieldOp`, a Wick contraction `φsΛ` of `φs`, an element `φ` of
 > `𝓕.FieldOp`, a `i ≤ φs.length` and a `k` in `φsΛ.uncontracted`, then
@@ -58,4 +58,4 @@ lemma normalOrder_uncontracted_some (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/WickContractions.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/WickContractions.lean)
+- [Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/WickContractions.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/WickContractions.lean)

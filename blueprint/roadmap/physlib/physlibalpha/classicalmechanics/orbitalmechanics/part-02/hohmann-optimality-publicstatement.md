@@ -8,7 +8,7 @@ proof: formalized
 
 # Global two-impulse Hohmann bounds
 
-The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.PublicStatement`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/PublicStatement.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/PublicStatement.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.PublicStatement`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/PublicStatement.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/PublicStatement.lean): 3 declarations, 3 with a docstring.
 
 > Every allowed Newtonian comparison arc satisfies the Hohmann lower bound.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.
 
 ## A. The lower bound and the finite cost comparison
 
-**`ClassicalMechanics.HohmannOptimality.global_two_impulse_endpoint_optimality`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/PublicStatement.lean#L45).
+**`ClassicalMechanics.HohmannOptimality.global_two_impulse_endpoint_optimality`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/PublicStatement.lean#L45).
 
 > Global means all feasible TWO-impulse, coplanar, co-oriented circle-to-circle
 > transfers, with free departure phase and flight time. A coast may have radial
@@ -43,7 +43,7 @@ lemma global_two_impulse_endpoint_optimality (s : Shape) :
       z.radial₁=0 ∧ z.radial₂=0)
 ```
 
-**`ClassicalMechanics.HohmannOptimality.global_two_impulse_newton_lower_bound`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/PublicStatement.lean#L56).
+**`ClassicalMechanics.HohmannOptimality.global_two_impulse_newton_lower_bound`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/PublicStatement.lean#L56).
 
 > The global inequality applies to genuinely differentiable Newtonian coast
 > arcs; conservation is proved in KeplerConservation rather than postulated.
@@ -54,7 +54,7 @@ lemma global_two_impulse_newton_lower_bound (p : Units) (a : KeplerArc p.mu)
     p.bound ≤ (a.state a.t₀).impulse p.speed+(a.state a.t₁).impulse p.circular₂
 ```
 
-**`ClassicalMechanics.HohmannOptimality.finite_three_impulse_counterexample`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/PublicStatement.lean#L63).
+**`ClassicalMechanics.HohmannOptimality.finite_three_impulse_counterexample`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/PublicStatement.lean#L63).
 
 > An unrestricted all-maneuver assertion is false: a finite 1→64→16
 > bielliptic construction has strictly smaller delta-v than Hohmann 1→16.
@@ -71,4 +71,4 @@ lemma finite_three_impulse_counterexample :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/PublicStatement.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/PublicStatement.lean)
+- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/PublicStatement.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/PublicStatement.lean)

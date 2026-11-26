@@ -8,7 +8,7 @@ proof: formalized
 
 # A polynomial family of orbit representatives for the two Higgs doublet model
 
-The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.OrbitRepresentative`, [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean): 11 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.OrbitRepresentative`, [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean): 11 declarations, 2 with a docstring.
 
 > Every 2HDM gauge orbit meets a four-parameter family whose Gram vector is polynomial.
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.OrbitRepresenta
 
 ## A. The representative family
 
-**`TwoHiggsDoublet.repHiggs`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L67).
+**`TwoHiggsDoublet.repHiggs`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L67).
 
 > A four–real–parameter polynomial family of representatives for the gauge orbits: the first
 > doublet is `(0, X₀)` and the second is `(X₃, X₁ + i X₂)`.
@@ -50,33 +50,33 @@ The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.OrbitRepresenta
 def repHiggs (X : Fin 4 → ℝ) : TwoHiggsDoublet
 ```
 
-**`TwoHiggsDoublet.repHiggs_Φ1`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L72).
+**`TwoHiggsDoublet.repHiggs_Φ1`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L72).
 
 ```lean
 lemma repHiggs_Φ1 (X : Fin 4 → ℝ) : (repHiggs X).Φ1 = !₂[0, (X 0 : ℂ)]
 ```
 
-**`TwoHiggsDoublet.repHiggs_Φ2`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L75).
+**`TwoHiggsDoublet.repHiggs_Φ2`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L75).
 
 ```lean
 lemma repHiggs_Φ2 (X : Fin 4 → ℝ) :
     (repHiggs X).Φ2 = !₂[(X 3 : ℂ), (X 1 : ℂ) + Complex.I * (X 2 : ℂ)]
 ```
 
-**`TwoHiggsDoublet.normSq_repHiggs_Φ1`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L78).
+**`TwoHiggsDoublet.normSq_repHiggs_Φ1`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L78).
 
 ```lean
 lemma normSq_repHiggs_Φ1 (X : Fin 4 → ℝ) : ‖(repHiggs X).Φ1‖ ^ 2 = X 0 ^ 2
 ```
 
-**`TwoHiggsDoublet.normSq_repHiggs_Φ2`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L82).
+**`TwoHiggsDoublet.normSq_repHiggs_Φ2`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L82).
 
 ```lean
 lemma normSq_repHiggs_Φ2 (X : Fin 4 → ℝ) :
     ‖(repHiggs X).Φ2‖ ^ 2 = X 1 ^ 2 + X 2 ^ 2 + X 3 ^ 2
 ```
 
-**`TwoHiggsDoublet.inner_repHiggs`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L91).
+**`TwoHiggsDoublet.inner_repHiggs`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L91).
 
 ```lean
 lemma inner_repHiggs (X : Fin 4 → ℝ) :
@@ -87,28 +87,28 @@ lemma inner_repHiggs (X : Fin 4 → ℝ) :
 
 > The Gram vector of `repHiggs X` is an explicit polynomial in the four real parameters `X`.
 
-**`TwoHiggsDoublet.gramVector_repHiggs_inl`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L107).
+**`TwoHiggsDoublet.gramVector_repHiggs_inl`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L107).
 
 ```lean
 lemma gramVector_repHiggs_inl (X : Fin 4 → ℝ) :
     (repHiggs X).gramVector (Sum.inl 0) = X 0 ^ 2 + (X 1 ^ 2 + X 2 ^ 2 + X 3 ^ 2)
 ```
 
-**`TwoHiggsDoublet.gramVector_repHiggs_inr0`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L112).
+**`TwoHiggsDoublet.gramVector_repHiggs_inr0`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L112).
 
 ```lean
 lemma gramVector_repHiggs_inr0 (X : Fin 4 → ℝ) :
     (repHiggs X).gramVector (Sum.inr 0) = 2 * X 0 * X 1
 ```
 
-**`TwoHiggsDoublet.gramVector_repHiggs_inr1`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L120).
+**`TwoHiggsDoublet.gramVector_repHiggs_inr1`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L120).
 
 ```lean
 lemma gramVector_repHiggs_inr1 (X : Fin 4 → ℝ) :
     (repHiggs X).gramVector (Sum.inr 1) = 2 * X 0 * X 2
 ```
 
-**`TwoHiggsDoublet.gramVector_repHiggs_inr2`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L128).
+**`TwoHiggsDoublet.gramVector_repHiggs_inr2`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L128).
 
 ```lean
 lemma gramVector_repHiggs_inr2 (X : Fin 4 → ℝ) :
@@ -117,7 +117,7 @@ lemma gramVector_repHiggs_inr2 (X : Fin 4 → ℝ) :
 
 ## C. Every configuration is gauge equivalent to a representative
 
-**`TwoHiggsDoublet.exists_smul_eq_repHiggs`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L140).
+**`TwoHiggsDoublet.exists_smul_eq_repHiggs`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean#L140).
 
 > Every field configuration is in the gauge orbit of a representative `repHiggs X`. This is the
 > key fact that lets a gauge invariant potential be evaluated on the polynomial family.
@@ -133,4 +133,4 @@ lemma exists_smul_eq_repHiggs (φ : TwoHiggsDoublet) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean)
+- [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean)

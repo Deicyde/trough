@@ -8,7 +8,7 @@ proof: formalized
 
 # Wirtinger calculus
 
-The module `Physlib.Mathematics.Calculus.Wirtinger.Basic`, [Physlib/Mathematics/Calculus/Wirtinger/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean): 37 declarations, 37 with a docstring, 2 listed as significant; 8 private, not shown.
+The module `Physlib.Mathematics.Calculus.Wirtinger.Basic`, [Physlib/Mathematics/Calculus/Wirtinger/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean): 37 declarations, 37 with a docstring, 2 listed as significant; 8 private, not shown.
 
 ## Notation
 
@@ -145,7 +145,7 @@ The module `Physlib.Mathematics.Calculus.Wirtinger.Basic`, [Physlib/Mathematics/
 > derivative — the engine of Schwarz's theorem (§G, §I) — a single bridge lemma. Both are
 > `ℂ`-valued and depend on the base point `u`.
 
-**`Physlib.Wirtinger.weightedDirDeriv`**, a def, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L181).
+**`Physlib.Wirtinger.weightedDirDeriv`**, a def, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L181).
 
 > The base-point field `p ↦ (1/2)(d_{b₁} f + c·d_{b₂} f)`, a weighted combination of the
 > real Fréchet derivative of `f` along two directions `b₁`, `b₂`. The directional Wirtinger
@@ -157,7 +157,7 @@ The module `Physlib.Mathematics.Calculus.Wirtinger.Basic`, [Physlib/Mathematics/
 def weightedDirDeriv (f : V → ℂ) (c : ℂ) (b₁ b₂ : V) : V → ℂ
 ```
 
-**`Physlib.Wirtinger.dWirtingerDir`**, a def, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L186).
+**`Physlib.Wirtinger.dWirtingerDir`**, a def, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L186).
 
 > The holomorphic directional Wirtinger derivative `∂_v f = (1/2)(d_v f − i·d_{i·v} f)`
 > of `f : V → ℂ` along the direction vector `v : V`, the `weightedDirDeriv` at `c = -i`.
@@ -166,7 +166,7 @@ def weightedDirDeriv (f : V → ℂ) (c : ℂ) (b₁ b₂ : V) : V → ℂ
 def dWirtingerDir (f : V → ℂ) (v u : V) : ℂ
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiDir`**, a def, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L192).
+**`Physlib.Wirtinger.dWirtingerAntiDir`**, a def, [line 192](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L192).
 
 > The anti-holomorphic directional Wirtinger derivative
 > `∂̄_v f = (1/2)(d_v f + i·d_{i·v} f)` of `f : V → ℂ` along the direction vector `v : V`,
@@ -176,7 +176,7 @@ def dWirtingerDir (f : V → ℂ) (v u : V) : ℂ
 def dWirtingerAntiDir (f : V → ℂ) (v u : V) : ℂ
 ```
 
-**`Physlib.Wirtinger.dWirtingerDir_apply`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L197).
+**`Physlib.Wirtinger.dWirtingerDir_apply`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L197).
 
 > Definitional unfolding of `dWirtingerDir` to the explicit Wirtinger combination, used to
 > expand the outer operator of a composition without touching the inner one.
@@ -187,7 +187,7 @@ lemma dWirtingerDir_apply (g : V → ℂ) (v u : V) :
       = (1 / 2 : ℂ) * (fderiv ℝ g u v - Complex.I * fderiv ℝ g u (Complex.I • v))
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiDir_apply`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L203).
+**`Physlib.Wirtinger.dWirtingerAntiDir_apply`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L203).
 
 > Definitional unfolding of `dWirtingerAntiDir` to the explicit Wirtinger combination.
 
@@ -204,7 +204,7 @@ lemma dWirtingerAntiDir_apply (g : V → ℂ) (v u : V) :
 > finite-sum rule, and — through the Fréchet product rule — a Wirtinger Leibniz
 > rule.
 
-**`Physlib.Wirtinger.dWirtingerDir_const`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L220).
+**`Physlib.Wirtinger.dWirtingerDir_const`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L220).
 
 > Constants have zero holomorphic directional Wirtinger derivative, `∂_v c = 0`.
 
@@ -213,7 +213,7 @@ lemma dWirtingerDir_const (c : ℂ) (v u : V) :
     dWirtingerDir (fun _ : V => c) v u = 0
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiDir_const`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L224).
+**`Physlib.Wirtinger.dWirtingerAntiDir_const`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L224).
 
 > Constants have zero anti-holomorphic directional Wirtinger derivative, `∂̄_v c = 0`.
 
@@ -222,7 +222,7 @@ lemma dWirtingerAntiDir_const (c : ℂ) (v u : V) :
     dWirtingerAntiDir (fun _ : V => c) v u = 0
 ```
 
-**`Physlib.Wirtinger.dWirtingerDir_neg`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L230).
+**`Physlib.Wirtinger.dWirtingerDir_neg`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L230).
 
 > `dWirtingerDir` of a negated function, `∂_v(−g) = −∂_v g`. Holds with no
 > differentiability hypothesis, since `fderiv` of a negation is unconditional.
@@ -232,7 +232,7 @@ lemma dWirtingerDir_neg (g : V → ℂ) (v u : V) :
     dWirtingerDir (fun p => -(g p)) v u = -(dWirtingerDir g v u)
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiDir_neg`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L236).
+**`Physlib.Wirtinger.dWirtingerAntiDir_neg`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L236).
 
 > `dWirtingerAntiDir` of a negated function, `∂̄_v(−g) = −∂̄_v g`.
 
@@ -241,7 +241,7 @@ lemma dWirtingerAntiDir_neg (g : V → ℂ) (v u : V) :
     dWirtingerAntiDir (fun p => -(g p)) v u = -(dWirtingerAntiDir g v u)
 ```
 
-**`Physlib.Wirtinger.dWirtingerDir_add`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L242).
+**`Physlib.Wirtinger.dWirtingerDir_add`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L242).
 
 > Additivity of `dWirtingerDir`, `∂_v(g + h) = ∂_v g + ∂_v h`.
 
@@ -251,7 +251,7 @@ lemma dWirtingerDir_add {g h : V → ℂ} (hg : DifferentiableAt ℝ g u)
     dWirtingerDir (g + h) v u = dWirtingerDir g v u + dWirtingerDir h v u
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiDir_add`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L249).
+**`Physlib.Wirtinger.dWirtingerAntiDir_add`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L249).
 
 > Additivity of `dWirtingerAntiDir`, `∂̄_v(g + h) = ∂̄_v g + ∂̄_v h`.
 
@@ -261,7 +261,7 @@ lemma dWirtingerAntiDir_add {g h : V → ℂ} (hg : DifferentiableAt ℝ g u)
     dWirtingerAntiDir (g + h) v u = dWirtingerAntiDir g v u + dWirtingerAntiDir h v u
 ```
 
-**`Physlib.Wirtinger.dWirtingerDir_smul`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L257).
+**`Physlib.Wirtinger.dWirtingerDir_smul`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L257).
 
 > Compatibility of `dWirtingerDir` with complex scalar multiplication,
 > `∂_v(c·g) = c·∂_v g`.
@@ -271,7 +271,7 @@ lemma dWirtingerDir_smul (c : ℂ) {g : V → ℂ} (hg : DifferentiableAt ℝ g 
     dWirtingerDir (c • g) v u = c • dWirtingerDir g v u
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiDir_smul`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L264).
+**`Physlib.Wirtinger.dWirtingerAntiDir_smul`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L264).
 
 > Compatibility of `dWirtingerAntiDir` with complex scalar multiplication,
 > `∂̄_v(c·g) = c·∂̄_v g`.
@@ -281,7 +281,7 @@ lemma dWirtingerAntiDir_smul (c : ℂ) {g : V → ℂ} (hg : DifferentiableAt �
     dWirtingerAntiDir (c • g) v u = c • dWirtingerAntiDir g v u
 ```
 
-**`Physlib.Wirtinger.dWirtingerDir_mul`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L278).
+**`Physlib.Wirtinger.dWirtingerDir_mul`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L278).
 
 > The Wirtinger Leibniz rule for `dWirtingerDir`,
 > `∂_v(g·h) = ∂_v g·h + g·∂_v h`.
@@ -292,7 +292,7 @@ lemma dWirtingerDir_mul {g h : V → ℂ} (hg : DifferentiableAt ℝ g u)
     dWirtingerDir (g * h) v u = dWirtingerDir g v u * h u + g u * dWirtingerDir h v u
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiDir_mul`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L285).
+**`Physlib.Wirtinger.dWirtingerAntiDir_mul`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L285).
 
 > The Wirtinger Leibniz rule for `dWirtingerAntiDir`,
 > `∂̄_v(g·h) = ∂̄_v g·h + g·∂̄_v h`.
@@ -304,7 +304,7 @@ lemma dWirtingerAntiDir_mul {g h : V → ℂ} (hg : DifferentiableAt ℝ g u)
       dWirtingerAntiDir g v u * h u + g u * dWirtingerAntiDir h v u
 ```
 
-**`Physlib.Wirtinger.dWirtingerDir_fun_sum`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L292).
+**`Physlib.Wirtinger.dWirtingerDir_fun_sum`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L292).
 
 > Finite-sum rule for `dWirtingerDir`, `∂_v(∑ₐ Fₐ) = ∑ₐ ∂_v Fₐ`.
 
@@ -314,7 +314,7 @@ lemma dWirtingerDir_fun_sum {α : Type*} {s : Finset α} {F : α → V → ℂ}
     dWirtingerDir (fun p => ∑ a ∈ s, F a p) v u = ∑ a ∈ s, dWirtingerDir (F a) v u
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiDir_fun_sum`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L299).
+**`Physlib.Wirtinger.dWirtingerAntiDir_fun_sum`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L299).
 
 > Finite-sum rule for `dWirtingerAntiDir`, `∂̄_v(∑ₐ Fₐ) = ∑ₐ ∂̄_v Fₐ`.
 
@@ -342,7 +342,7 @@ lemma dWirtingerAntiDir_fun_sum {α : Type*} {s : Finset α} {F : α → V → �
 >
 > The chain rule of §D builds on these to handle a conjugated inner argument.
 
-**`Physlib.Wirtinger.fderiv_star_eq`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L338).
+**`Physlib.Wirtinger.fderiv_star_eq`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L338).
 
 > Differentiation commutes with conjugation: the real Fréchet derivative of the
 > pointwise conjugate `p ↦ star (f p)` is `conjCLE` (conjugation on `ℂ`) composed with
@@ -363,7 +363,7 @@ lemma fderiv_star_eq {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
       Complex.conjCLE.toContinuousLinearMap.comp (fderiv ℝ f u)
 ```
 
-**`Physlib.Wirtinger.dWirtingerDir_star_comp`**, a lemma, [line 346](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L346).
+**`Physlib.Wirtinger.dWirtingerDir_star_comp`**, a lemma, [line 346](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L346).
 
 > Conjugating the function swaps the operators up to an outer conjugation:
 > `∂_v f̄ = conj (∂̄_v f)`.
@@ -373,7 +373,7 @@ lemma dWirtingerDir_star_comp (hf : DifferentiableAt ℝ f u) (v : V) :
     dWirtingerDir (fun p => star (f p)) v u = star (dWirtingerAntiDir f v u)
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiDir_star_comp`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L357).
+**`Physlib.Wirtinger.dWirtingerAntiDir_star_comp`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L357).
 
 > Conjugating the function swaps the operators up to an outer conjugation:
 > `∂̄_v f̄ = conj (∂_v f)`. Dual of `dWirtingerDir_star_comp`.
@@ -397,7 +397,7 @@ lemma dWirtingerAntiDir_star_comp (hf : DifferentiableAt ℝ f u) (v : V) :
 > that gives `a = ∂g/∂f`, `b = ∂g/∂f̄`. The proof applies this split to the outer factor and
 > reuses the §C conjugation lemmas for the `∂_v f̄` term.
 
-**`Physlib.Wirtinger.realLinear_apply_eq_wirtinger`**, a lemma, [line 394](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L394).
+**`Physlib.Wirtinger.realLinear_apply_eq_wirtinger`**, a lemma, [line 394](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L394).
 
 > Split a real-linear map `ℂ → ℂ` into its Wirtinger components. Any
 > real-linear `L : ℂ →L[ℝ] ℂ` splits into a holomorphic and an anti-holomorphic part
@@ -418,7 +418,7 @@ lemma realLinear_apply_eq_wirtinger (L : ℂ →L[ℝ] ℂ) (w : ℂ) :
         + ((1 / 2 : ℂ) * (L 1 + Complex.I * L Complex.I)) * star w
 ```
 
-**`Physlib.Wirtinger.dWirtingerDir_comp`**, a lemma, [line 411](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L411).
+**`Physlib.Wirtinger.dWirtingerDir_comp`**, a lemma, [line 411](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L411).
 
 > The two-term Wirtinger chain rule for `dWirtingerDir`, outer `g : ℂ → ℂ` and inner
 > `f : V → ℂ`:
@@ -437,7 +437,7 @@ lemma dWirtingerDir_comp {g : ℂ → ℂ} (hg : DifferentiableAt ℝ g (f u))
         + dWirtingerAntiDir g 1 (f u) * dWirtingerDir (fun p => star (f p)) v u
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiDir_comp`**, a lemma, [line 431](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L431).
+**`Physlib.Wirtinger.dWirtingerAntiDir_comp`**, a lemma, [line 431](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L431).
 
 > The two-term Wirtinger chain rule for `dWirtingerAntiDir`, the anti-holomorphic dual of
 > `dWirtingerDir_comp`:
@@ -491,7 +491,7 @@ lemma dWirtingerAntiDir_comp {g : ℂ → ℂ} (hg : DifferentiableAt ℝ g (f u
 > complex derivative (§F, and the example above). The proof uses only `L`'s anti-commutation
 > with `i`, so it holds over any complex `V`, `V'`.
 
-**`Physlib.Wirtinger.fderiv_comp_clm_apply`**, a lemma, [line 492](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L492).
+**`Physlib.Wirtinger.fderiv_comp_clm_apply`**, a lemma, [line 492](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L492).
 
 > Chain rule for an inner continuous linear map `L`. Because the derivative of a linear
 > map is the map itself, the real Fréchet derivative of `g ∘ L` at `u`, applied to `x`, equals
@@ -503,7 +503,7 @@ lemma fderiv_comp_clm_apply {g : V' → ℂ} {L : V →L[ℝ] V'} {u : V}
     fderiv ℝ (fun p => g (L p)) u x = fderiv ℝ g (L u) (L x)
 ```
 
-**`Physlib.Wirtinger.dWirtingerDir_comp_conjLinear`**, a lemma, [line 501](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L501).
+**`Physlib.Wirtinger.dWirtingerDir_comp_conjLinear`**, a lemma, [line 501](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L501).
 
 > Domain conjugation swaps the operators: precomposing with a conjugate-`ℂ`-linear `L`
 > turns the holomorphic derivative of `g ∘ L` at `u` into the anti-holomorphic derivative of
@@ -517,7 +517,7 @@ lemma dWirtingerDir_comp_conjLinear {g : V' → ℂ} {L : V →L[ℝ] V'} {u : V
     dWirtingerDir (fun p => g (L p)) v u = dWirtingerAntiDir g (L v) (L u)
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiDir_comp_conjLinear`**, a lemma, [line 512](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L512).
+**`Physlib.Wirtinger.dWirtingerAntiDir_comp_conjLinear`**, a lemma, [line 512](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L512).
 
 > Dual of `dWirtingerDir_comp_conjLinear`: the anti-holomorphic derivative of `g ∘ L` at
 > `u` is the holomorphic derivative of `g` at the mapped point `L u`, in the mapped direction
@@ -549,7 +549,7 @@ lemma dWirtingerAntiDir_comp_conjLinear {g : V' → ℂ} {L : V →L[ℝ] V'} {u
 > through `fderiv ℝ`. The Cauchy–Riemann criterion
 > `differentiableAt_complex_iff_dWirtingerAntiDir_eq_zero` relates them.
 
-**`Physlib.Wirtinger.dWirtingerDir_eq_of_clinear`**, a lemma, [line 547](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L547).
+**`Physlib.Wirtinger.dWirtingerDir_eq_of_clinear`**, a lemma, [line 547](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L547).
 
 > Holomorphic collapse: along a direction where the real derivative is `ℂ`-linear, the
 > holomorphic derivative is the full real derivative, `∂_v f = d_v f`.
@@ -560,7 +560,7 @@ lemma dWirtingerDir_eq_of_clinear {v : V}
     dWirtingerDir f v u = fderiv ℝ f u v
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiDir_eq_zero_of_clinear`**, a lemma, [line 555](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L555).
+**`Physlib.Wirtinger.dWirtingerAntiDir_eq_zero_of_clinear`**, a lemma, [line 555](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L555).
 
 > Holomorphic collapse: the anti-holomorphic derivative vanishes along a direction
 > of `ℂ`-linearity, `∂̄_v f = 0`.
@@ -571,7 +571,7 @@ lemma dWirtingerAntiDir_eq_zero_of_clinear {v : V}
     dWirtingerAntiDir f v u = 0
 ```
 
-**`Physlib.Wirtinger.dWirtingerDir_eq_zero_of_antilinear`**, a lemma, [line 563](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L563).
+**`Physlib.Wirtinger.dWirtingerDir_eq_zero_of_antilinear`**, a lemma, [line 563](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L563).
 
 > Anti-holomorphic collapse: a direction of conjugate-`ℂ`-linearity kills the
 > holomorphic derivative, `∂_v f = 0`.
@@ -582,7 +582,7 @@ lemma dWirtingerDir_eq_zero_of_antilinear {v : V}
     dWirtingerDir f v u = 0
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiDir_eq_of_antilinear`**, a lemma, [line 571](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L571).
+**`Physlib.Wirtinger.dWirtingerAntiDir_eq_of_antilinear`**, a lemma, [line 571](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L571).
 
 > Anti-holomorphic collapse: the anti-holomorphic derivative is the full real
 > derivative along a direction of conjugate-`ℂ`-linearity, `∂̄_v f = d_v f`.
@@ -593,7 +593,7 @@ lemma dWirtingerAntiDir_eq_of_antilinear {v : V}
     dWirtingerAntiDir f v u = fderiv ℝ f u v
 ```
 
-**`Physlib.Wirtinger.clinear_of_dWirtingerAntiDir_eq_zero`**, a lemma, [line 578](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L578).
+**`Physlib.Wirtinger.clinear_of_dWirtingerAntiDir_eq_zero`**, a lemma, [line 578](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L578).
 
 > The converse of `dWirtingerAntiDir_eq_zero_of_clinear`. It needs no differentiability.
 
@@ -602,7 +602,7 @@ lemma clinear_of_dWirtingerAntiDir_eq_zero {v : V} (h : dWirtingerAntiDir f v u 
     fderiv ℝ f u (Complex.I • v) = Complex.I • fderiv ℝ f u v
 ```
 
-**`Physlib.Wirtinger.differentiableAt_complex_iff_dWirtingerAntiDir_eq_zero`**, a theorem, [line 593](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L593). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`Physlib.Wirtinger.differentiableAt_complex_iff_dWirtingerAntiDir_eq_zero`**, a theorem, [line 593](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L593). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > **Cauchy–Riemann.** `f` is `ℂ`-differentiable at `u` iff it is real-differentiable there and
 > every anti-holomorphic Wirtinger derivative vanishes. Real differentiability is needed: `fderiv`
@@ -680,7 +680,7 @@ theorem differentiableAt_complex_iff_dWirtingerAntiDir_eq_zero (f : V → ℂ) (
 > form asks for regularity only on a neighbourhood of `u`, which a restricted-domain function
 > has at each point of its domain.
 
-**`Physlib.Wirtinger.differentiableAt_dWirtingerDir`**, a lemma, [line 746](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L746).
+**`Physlib.Wirtinger.differentiableAt_dWirtingerDir`**, a lemma, [line 746](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L746).
 
 > On a `C²` field the holomorphic directional derivative is itself
 > real-differentiable.
@@ -690,7 +690,7 @@ lemma differentiableAt_dWirtingerDir (hf2 : ContDiffAt ℝ 2 f u) (v : V) :
     DifferentiableAt ℝ (fun p => dWirtingerDir f v p) u
 ```
 
-**`Physlib.Wirtinger.differentiableAt_dWirtingerAntiDir`**, a lemma, [line 753](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L753).
+**`Physlib.Wirtinger.differentiableAt_dWirtingerAntiDir`**, a lemma, [line 753](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L753).
 
 > On a `C²` field the anti-holomorphic directional derivative is itself
 > real-differentiable.
@@ -700,7 +700,7 @@ lemma differentiableAt_dWirtingerAntiDir (hf2 : ContDiffAt ℝ 2 f u) (w : V) :
     DifferentiableAt ℝ (fun p => dWirtingerAntiDir f w p) u
 ```
 
-**`Physlib.Wirtinger.dWirtingerDir_congr_of_eventuallyEq`**, a lemma, [line 760](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L760).
+**`Physlib.Wirtinger.dWirtingerDir_congr_of_eventuallyEq`**, a lemma, [line 760](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L760).
 
 > The holomorphic directional derivative depends only on the field near the point:
 > fields agreeing on a neighbourhood have equal derivative.
@@ -711,7 +711,7 @@ lemma dWirtingerDir_congr_of_eventuallyEq {f₁ f₂ : V → ℂ} {u : V}
     dWirtingerDir f₁ v u = dWirtingerDir f₂ v u
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiDir_congr_of_eventuallyEq`**, a lemma, [line 767](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L767).
+**`Physlib.Wirtinger.dWirtingerAntiDir_congr_of_eventuallyEq`**, a lemma, [line 767](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L767).
 
 > The anti-holomorphic directional derivative depends only on the field near the
 > point; dual of `dWirtingerDir_congr_of_eventuallyEq`.
@@ -724,7 +724,7 @@ lemma dWirtingerAntiDir_congr_of_eventuallyEq {f₁ f₂ : V → ℂ} {u : V}
 
 ## I. Schwarz's theorem
 
-**`Physlib.Wirtinger.dWirtingerDir_dWirtingerAntiDir_comm`**, a theorem, [line 787](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L787). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`Physlib.Wirtinger.dWirtingerDir_dWirtingerAntiDir_comm`**, a theorem, [line 787](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean#L787). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > **Schwarz's theorem** for the directional Wirtinger operators: on a `C²` field `f` the
 > holomorphic and anti-holomorphic directional derivatives commute in any two directions,
@@ -752,4 +752,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/Calculus/Wirtinger/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean)
+- [Physlib/Mathematics/Calculus/Wirtinger/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Basic.lean)

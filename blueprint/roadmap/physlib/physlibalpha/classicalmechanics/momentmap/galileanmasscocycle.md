@@ -8,7 +8,7 @@ proof: formalized
 
 # The mass cocycle of the Galilean group (Souriau)
 
-The module `PhyslibAlpha.ClassicalMechanics.MomentMap.GalileanMassCocycle`, [PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean): 59 declarations (9 instances with no name), 52 with a docstring; 3 private, not shown.
+The module `PhyslibAlpha.ClassicalMechanics.MomentMap.GalileanMassCocycle`, [PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean): 59 declarations (9 instances with no name), 52 with a docstring; 3 private, not shown.
 
 > Souriau's mass cocycle of the Galilean group is a cocycle but not a coboundary.
 
@@ -89,7 +89,7 @@ The module `PhyslibAlpha.ClassicalMechanics.MomentMap.GalileanMassCocycle`, [Phy
 
 ## A. Orthogonal matrices and the cross product
 
-**`ClassicalMechanics.ofLp_orthogonal_smul`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L125).
+**`ClassicalMechanics.ofLp_orthogonal_smul`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L125).
 
 > On coordinates, the action of `O(3)` on `EuclideanSpace ℝ (Fin 3)` is the matrix product.
 
@@ -98,7 +98,7 @@ lemma ofLp_orthogonal_smul (v : EuclideanSpace ℝ (Fin 3)) :
     WithLp.ofLp (R • v) = R.1 *ᵥ WithLp.ofLp v
 ```
 
-**`ClassicalMechanics.ofLp_real_smul`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L130).
+**`ClassicalMechanics.ofLp_real_smul`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L130).
 
 > On coordinates, the real scalar multiplication of `EuclideanSpace ℝ (Fin 3)`. Stated apart
 > from `WithLp.ofLp_smul`, which would also rewrite the action of `O(3)`.
@@ -108,7 +108,7 @@ lemma ofLp_real_smul (k : ℝ) (v : EuclideanSpace ℝ (Fin 3)) :
     WithLp.ofLp (k • v) = k • WithLp.ofLp v
 ```
 
-**`ClassicalMechanics.orthogonal_transpose_mul_self`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L134).
+**`ClassicalMechanics.orthogonal_transpose_mul_self`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L134).
 
 > An orthogonal matrix satisfies `Rᵀ R = 1`.
 
@@ -116,7 +116,7 @@ lemma ofLp_real_smul (k : ℝ) (v : EuclideanSpace ℝ (Fin 3)) :
 lemma orthogonal_transpose_mul_self : R.1ᵀ * R.1 = 1
 ```
 
-**`ClassicalMechanics.orthogonal_mul_transpose_self`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L140).
+**`ClassicalMechanics.orthogonal_mul_transpose_self`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L140).
 
 > An orthogonal matrix satisfies `R Rᵀ = 1`.
 
@@ -124,7 +124,7 @@ lemma orthogonal_transpose_mul_self : R.1ᵀ * R.1 = 1
 lemma orthogonal_mul_transpose_self : R.1 * R.1ᵀ = 1
 ```
 
-**`ClassicalMechanics.orthogonal_inv_val`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L146).
+**`ClassicalMechanics.orthogonal_inv_val`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L146).
 
 > The inverse of an orthogonal matrix is its transpose.
 
@@ -132,7 +132,7 @@ lemma orthogonal_mul_transpose_self : R.1 * R.1ᵀ = 1
 lemma orthogonal_inv_val : (R⁻¹).1 = R.1ᵀ
 ```
 
-**`ClassicalMechanics.orthogonal_det_mul_self`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L153).
+**`ClassicalMechanics.orthogonal_det_mul_self`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L153).
 
 > The determinant of an orthogonal matrix is `1` or `-1`: its square is `1`.
 
@@ -140,7 +140,7 @@ lemma orthogonal_inv_val : (R⁻¹).1 = R.1ᵀ
 lemma orthogonal_det_mul_self : R.1.det * R.1.det = 1
 ```
 
-**`ClassicalMechanics.orthogonal_det_inv`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L158).
+**`ClassicalMechanics.orthogonal_det_inv`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L158).
 
 > The inverse of an orthogonal matrix has the same determinant.
 
@@ -148,7 +148,7 @@ lemma orthogonal_det_mul_self : R.1.det * R.1.det = 1
 lemma orthogonal_det_inv : (R⁻¹).1.det = R.1.det
 ```
 
-**`ClassicalMechanics.orthogonal_mulVec_dotProduct`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L162).
+**`ClassicalMechanics.orthogonal_mulVec_dotProduct`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L162).
 
 > An orthogonal matrix preserves the dot product.
 
@@ -156,7 +156,7 @@ lemma orthogonal_det_inv : (R⁻¹).1.det = R.1.det
 lemma orthogonal_mulVec_dotProduct (u v : ℝ³) : (R.1 *ᵥ u) ⬝ᵥ (R.1 *ᵥ v) = u ⬝ᵥ v
 ```
 
-**`ClassicalMechanics.dotProduct_transpose_mulVec`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L167).
+**`ClassicalMechanics.dotProduct_transpose_mulVec`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L167).
 
 > Moving an orthogonal matrix to the other side of a dot product: `⟨x, Rᵀ y⟩ = ⟨R x, y⟩`.
 
@@ -164,7 +164,7 @@ lemma orthogonal_mulVec_dotProduct (u v : ℝ³) : (R.1 *ᵥ u) ⬝ᵥ (R.1 *ᵥ
 lemma dotProduct_transpose_mulVec (x y : ℝ³) : x ⬝ᵥ (R.1ᵀ *ᵥ y) = (R.1 *ᵥ x) ⬝ᵥ y
 ```
 
-**`ClassicalMechanics.orthogonal_adjugate`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L180).
+**`ClassicalMechanics.orthogonal_adjugate`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L180).
 
 > The adjugate of an orthogonal matrix is `det R • Rᵀ`.
 
@@ -172,7 +172,7 @@ lemma dotProduct_transpose_mulVec (x y : ℝ³) : x ⬝ᵥ (R.1ᵀ *ᵥ y) = (R.
 lemma orthogonal_adjugate : adjugate R.1 = R.1.det • R.1ᵀ
 ```
 
-**`ClassicalMechanics.orthogonal_mulVec_cross`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L188).
+**`ClassicalMechanics.orthogonal_mulVec_cross`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L188).
 
 > An orthogonal matrix maps the cross product to `det R` times the cross product of the images:
 > `R (u × v) = det R • (R u × R v)`. A rotation (`det R = 1`) preserves the cross product.
@@ -182,7 +182,7 @@ lemma orthogonal_mulVec_cross (u v : ℝ³) :
     R.1 *ᵥ (u ⨯₃ v) = R.1.det • ((R.1 *ᵥ u) ⨯₃ (R.1 *ᵥ v))
 ```
 
-**`ClassicalMechanics.orthogonal_transpose_mulVec_cross`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L194).
+**`ClassicalMechanics.orthogonal_transpose_mulVec_cross`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L194).
 
 > The same for the transpose: `Rᵀ (u × v) = det R • (Rᵀ u × Rᵀ v)`.
 
@@ -191,7 +191,7 @@ lemma orthogonal_transpose_mulVec_cross (u v : ℝ³) :
     R.1ᵀ *ᵥ (u ⨯₃ v) = R.1.det • ((R.1ᵀ *ᵥ u) ⨯₃ (R.1ᵀ *ᵥ v))
 ```
 
-**`ClassicalMechanics.cross_dotProduct_det_smul_transpose_mulVec`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L200).
+**`ClassicalMechanics.cross_dotProduct_det_smul_transpose_mulVec`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L200).
 
 > `⟨u × v, det R • Rᵀ w⟩ = ⟨R u × R v, w⟩`: the angular momentum paired with an axial vector.
 
@@ -202,7 +202,7 @@ lemma cross_dotProduct_det_smul_transpose_mulVec (u v w : ℝ³) :
 
 ## B. The action on the evolution space
 
-**An instance with no name**, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L220).
+**An instance with no name**, [line 220](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L220).
 
 > The action (12.76) of the Galilean group on the evolution space of `N` material points,
 > `t* = t + e`, `r_j* = R r_j + b t + c`, `v_j* = R v_j + b`, for
@@ -212,14 +212,14 @@ lemma cross_dotProduct_det_smul_transpose_mulVec (u v w : ℝ³) :
 instance : SMul (GalileanGroup 3) (EvolutionSpace N)
 ```
 
-**`ClassicalMechanics.EvolutionSpace.smul_t`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L227).
+**`ClassicalMechanics.EvolutionSpace.smul_t`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L227).
 
 ```lean
 lemma smul_t (a : GalileanGroup 3) (y : EvolutionSpace N) :
     (a • y).t = y.t + a.timeTranslation.val
 ```
 
-**`ClassicalMechanics.EvolutionSpace.smul_r`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L231).
+**`ClassicalMechanics.EvolutionSpace.smul_r`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L231).
 
 ```lean
 lemma smul_r (a : GalileanGroup 3) (y : EvolutionSpace N) (j : Fin N) :
@@ -227,14 +227,14 @@ lemma smul_r (a : GalileanGroup 3) (y : EvolutionSpace N) (j : Fin N) :
       + WithLp.ofLp a.spaceTranslation
 ```
 
-**`ClassicalMechanics.EvolutionSpace.smul_v`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L236).
+**`ClassicalMechanics.EvolutionSpace.smul_v`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L236).
 
 ```lean
 lemma smul_v (a : GalileanGroup 3) (y : EvolutionSpace N) (j : Fin N) :
     (a • y).v j = a.rotation.1 *ᵥ y.v j + WithLp.ofLp a.velocity
 ```
 
-**An instance with no name**, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L240).
+**An instance with no name**, [line 240](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L240).
 
 > The Galilean group acts on the evolution space (12.77).
 
@@ -242,7 +242,7 @@ lemma smul_v (a : GalileanGroup 3) (y : EvolutionSpace N) (j : Fin N) :
 instance : MulAction (GalileanGroup 3) (EvolutionSpace N)
 ```
 
-**`ClassicalMechanics.EvolutionSpace.tangentSMul`**, a def, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L265).
+**`ClassicalMechanics.EvolutionSpace.tangentSMul`**, a def, [line 265](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L265).
 
 > The differential of the affine map `y ↦ a • y`, applied to a tangent vector `dy`:
 > `(dt, R dr_j + b dt, R dv_j)`.
@@ -251,7 +251,7 @@ instance : MulAction (GalileanGroup 3) (EvolutionSpace N)
 def tangentSMul (a : GalileanGroup 3) (dy : EvolutionSpace N) : EvolutionSpace N
 ```
 
-**`ClassicalMechanics.EvolutionSpace.smul_line`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L271).
+**`ClassicalMechanics.EvolutionSpace.smul_line`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L271).
 
 > The action is affine with linear part `tangentSMul a`: it maps the line `s ↦ y + s dy` to the
 > line `s ↦ a • y + s (tangentSMul a dy)`.
@@ -261,7 +261,7 @@ lemma smul_line (a : GalileanGroup 3) (y dy : EvolutionSpace N) (s : ℝ) :
     a • line y dy s = line (a • y) (tangentSMul a dy) s
 ```
 
-**`ClassicalMechanics.EvolutionSpace.smul_time_position`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L286).
+**`ClassicalMechanics.EvolutionSpace.smul_time_position`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L286).
 
 > On each material point, the action is Physlib's action of the Galilean group on
 > `Time × Space 3`: the time and the position of the `j`th point of `a • y` are the images of those
@@ -273,7 +273,7 @@ lemma smul_time_position (a : GalileanGroup 3) (y : EvolutionSpace N) (j : Fin N
       = ((⟨(a • y).t⟩ : Time), Space.vectorToSpace (WithLp.toLp 2 ((a • y).r j)))
 ```
 
-**`ClassicalMechanics.EvolutionSpace.lagrangeForm_smul`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L297).
+**`ClassicalMechanics.EvolutionSpace.lagrangeForm_smul`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L297).
 
 > (12.76 ♣): the Galilean group preserves the Lagrange form of free material points,
 > `σ(a • y)(a dy)(a δy) = σ(y)(dy)(δy)`.
@@ -285,7 +285,7 @@ lemma lagrangeForm_smul (m : Fin N → ℝ) (a : GalileanGroup 3) (y dy δy : Ev
 
 ## C. The adjoint action
 
-**An instance with no name**, [line 324](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L324).
+**An instance with no name**, [line 324](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L324).
 
 > The adjoint action (6.24) of the Galilean group on its Lie algebra, in components: with
 > `ω* = det R • R ω`, `a • (ω, β, γ, ε) = (ω*, R β - ω* × b, R γ + ε b - e R β - ω* × (c - e b), ε)`.
@@ -298,14 +298,14 @@ lemma lagrangeForm_smul (m : Fin N → ℝ) (a : GalileanGroup 3) (y dy δy : Ev
 instance : SMul (GalileanGroup 3) GalileanAlgebra
 ```
 
-**`ClassicalMechanics.GalileanAlgebra.smul_ω`**, a lemma, [line 334](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L334).
+**`ClassicalMechanics.GalileanAlgebra.smul_ω`**, a lemma, [line 334](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L334).
 
 ```lean
 lemma smul_ω (a : GalileanGroup 3) (Z : GalileanAlgebra) :
     (a • Z).ω = a.rotation.1.det • (a.rotation.1 *ᵥ Z.ω)
 ```
 
-**`ClassicalMechanics.GalileanAlgebra.smul_β`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L338).
+**`ClassicalMechanics.GalileanAlgebra.smul_β`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L338).
 
 ```lean
 lemma smul_β (a : GalileanGroup 3) (Z : GalileanAlgebra) :
@@ -313,7 +313,7 @@ lemma smul_β (a : GalileanGroup 3) (Z : GalileanAlgebra) :
       - (a.rotation.1.det • (a.rotation.1 *ᵥ Z.ω)) ⨯₃ WithLp.ofLp a.velocity
 ```
 
-**`ClassicalMechanics.GalileanAlgebra.smul_γ`**, a lemma, [line 343](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L343).
+**`ClassicalMechanics.GalileanAlgebra.smul_γ`**, a lemma, [line 343](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L343).
 
 ```lean
 lemma smul_γ (a : GalileanGroup 3) (Z : GalileanAlgebra) :
@@ -323,13 +323,13 @@ lemma smul_γ (a : GalileanGroup 3) (Z : GalileanAlgebra) :
         (WithLp.ofLp a.spaceTranslation - a.timeTranslation.val • WithLp.ofLp a.velocity)
 ```
 
-**`ClassicalMechanics.GalileanAlgebra.smul_ε`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L350).
+**`ClassicalMechanics.GalileanAlgebra.smul_ε`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L350).
 
 ```lean
 lemma smul_ε (a : GalileanGroup 3) (Z : GalileanAlgebra) : (a • Z).ε = Z.ε
 ```
 
-**An instance with no name**, [line 353](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L353).
+**An instance with no name**, [line 353](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L353).
 
 > The adjoint action is an action of the Galilean group on its Lie algebra.
 
@@ -337,7 +337,7 @@ lemma smul_ε (a : GalileanGroup 3) (Z : GalileanAlgebra) : (a • Z).ε = Z.ε
 instance : MulAction (GalileanGroup 3) GalileanAlgebra
 ```
 
-**`ClassicalMechanics.GalileanAlgebra.inv_smul_eq`**, a lemma, [line 376](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L376).
+**`ClassicalMechanics.GalileanAlgebra.inv_smul_eq`**, a lemma, [line 376](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L376).
 
 > The adjoint action of `a⁻¹` in closed form:
 > `a⁻¹ • Z = (det R • Rᵀ ω, Rᵀ (β + ω × b), Rᵀ (γ - ε b + e β + ω × c), ε)`.
@@ -350,7 +350,7 @@ lemma inv_smul_eq (a : GalileanGroup 3) (Z : GalileanAlgebra) :
         + Z.ω ⨯₃ WithLp.ofLp a.spaceTranslation), Z.ε⟩
 ```
 
-**`ClassicalMechanics.EvolutionSpace.vectorField_smul`**, a lemma, [line 405](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L405).
+**`ClassicalMechanics.EvolutionSpace.vectorField_smul`**, a lemma, [line 405](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L405).
 
 > (6.25): the vector field of `a • Z` at `a • y` is the image of the vector field of `Z` at `y`,
 > `(a • Z)_V(a • y) = D(a_V)(y)(Z_V(y))`.
@@ -360,7 +360,7 @@ lemma vectorField_smul (a : GalileanGroup 3) (Z : GalileanAlgebra) (y : Evolutio
     vectorField (a • Z) (a • y) = tangentSMul a (vectorField Z y)
 ```
 
-**`ClassicalMechanics.EvolutionSpace.vectorField_injective`**, a lemma, [line 421](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L421).
+**`ClassicalMechanics.EvolutionSpace.vectorField_injective`**, a lemma, [line 421](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L421).
 
 > For `N ≥ 1` the map `Z ↦ Z_V` is injective, so (6.25) characterises the adjoint action.
 
@@ -371,7 +371,7 @@ lemma vectorField_injective [NeZero N] {Z Z' : GalileanAlgebra}
 
 ## D. Torsors and the coadjoint action
 
-**`ClassicalMechanics.GalileanTorsor.equivProd`**, a def, [line 457](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L457).
+**`ClassicalMechanics.GalileanTorsor.equivProd`**, a def, [line 457](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L457).
 
 > The torsors as `ℝ³ × ℝ³ × ℝ³ × ℝ`, to transfer the vector space structure.
 
@@ -379,7 +379,7 @@ lemma vectorField_injective [NeZero N] {Z Z' : GalileanAlgebra}
 def equivProd : GalileanTorsor ≃ ℝ³ × ℝ³ × ℝ³ × ℝ
 ```
 
-**An instance with no name**, [line 464](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L464).
+**An instance with no name**, [line 464](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L464).
 
 > The torsors form an additive group, component by component.
 
@@ -387,7 +387,7 @@ def equivProd : GalileanTorsor ≃ ℝ³ × ℝ³ × ℝ³ × ℝ
 instance : AddCommGroup GalileanTorsor
 ```
 
-**An instance with no name**, [line 467](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L467).
+**An instance with no name**, [line 467](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L467).
 
 > The torsors form a real vector space, component by component.
 
@@ -395,7 +395,7 @@ instance : AddCommGroup GalileanTorsor
 instance : Module ℝ GalileanTorsor
 ```
 
-**`ClassicalMechanics.GalileanTorsor.pair_add`**, a lemma, [line 470](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L470).
+**`ClassicalMechanics.GalileanTorsor.pair_add`**, a lemma, [line 470](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L470).
 
 > The pairing is additive in the torsor.
 
@@ -404,7 +404,7 @@ lemma pair_add (μ ν : GalileanTorsor) (Z : GalileanAlgebra) :
     (μ + ν).pair Z = μ.pair Z + ν.pair Z
 ```
 
-**`ClassicalMechanics.GalileanTorsor.pair_sub`**, a lemma, [line 477](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L477).
+**`ClassicalMechanics.GalileanTorsor.pair_sub`**, a lemma, [line 477](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L477).
 
 > The pairing is additive in the torsor: subtraction.
 
@@ -413,7 +413,7 @@ lemma pair_sub (μ ν : GalileanTorsor) (Z : GalileanAlgebra) :
     (μ - ν).pair Z = μ.pair Z - ν.pair Z
 ```
 
-**`ClassicalMechanics.GalileanTorsor.pair_zero`**, a lemma, [line 484](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L484).
+**`ClassicalMechanics.GalileanTorsor.pair_zero`**, a lemma, [line 484](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L484).
 
 > The zero torsor pairs to zero.
 
@@ -421,7 +421,7 @@ lemma pair_sub (μ ν : GalileanTorsor) (Z : GalileanAlgebra) :
 lemma pair_zero (Z : GalileanAlgebra) : (0 : GalileanTorsor).pair Z = 0
 ```
 
-**`ClassicalMechanics.GalileanTorsor.pair_smul`**, a lemma, [line 489](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L489).
+**`ClassicalMechanics.GalileanTorsor.pair_smul`**, a lemma, [line 489](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L489).
 
 > The pairing is linear in the torsor.
 
@@ -430,7 +430,7 @@ lemma pair_smul (k : ℝ) (μ : GalileanTorsor) (Z : GalileanAlgebra) :
     (k • μ).pair Z = k * μ.pair Z
 ```
 
-**`ClassicalMechanics.GalileanTorsor.ext_pair`**, a lemma, [line 496](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L496).
+**`ClassicalMechanics.GalileanTorsor.ext_pair`**, a lemma, [line 496](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L496).
 
 > A torsor is determined by its values on the Lie algebra.
 
@@ -438,7 +438,7 @@ lemma pair_smul (k : ℝ) (μ : GalileanTorsor) (Z : GalileanAlgebra) :
 lemma ext_pair {μ ν : GalileanTorsor} (h : ∀ Z, μ.pair Z = ν.pair Z) : μ = ν
 ```
 
-**An instance with no name**, [line 509](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L509).
+**An instance with no name**, [line 509](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L509).
 
 > The coadjoint action (11.15) of the Galilean group on the torsors, in closed form:
 > `a • {l, g, p, E} = {det R • R l - b × R g + c × R p, R g - e R p, R p, E + ⟨R p, b⟩}`.
@@ -448,7 +448,7 @@ lemma ext_pair {μ ν : GalileanTorsor} (h : ∀ Z, μ.pair Z = ν.pair Z) : μ 
 instance : SMul (GalileanGroup 3) GalileanTorsor
 ```
 
-**`ClassicalMechanics.GalileanTorsor.coadjoint_pair`**, a lemma, [line 517](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L517).
+**`ClassicalMechanics.GalileanTorsor.coadjoint_pair`**, a lemma, [line 517](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L517).
 
 > (11.15): `(a • μ)(Z) = μ(a⁻¹ • Z)`.
 
@@ -457,7 +457,7 @@ lemma coadjoint_pair (a : GalileanGroup 3) (μ : GalileanTorsor) (Z : GalileanAl
     (a • μ).pair Z = μ.pair (a⁻¹ • Z)
 ```
 
-**An instance with no name**, [line 542](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L542).
+**An instance with no name**, [line 542](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L542).
 
 > The coadjoint action is an action of the Galilean group on the torsors.
 
@@ -465,7 +465,7 @@ lemma coadjoint_pair (a : GalileanGroup 3) (μ : GalileanTorsor) (Z : GalileanAl
 instance : MulAction (GalileanGroup 3) GalileanTorsor
 ```
 
-**An instance with no name**, [line 548](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L548).
+**An instance with no name**, [line 548](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L548).
 
 > The coadjoint action is additive; it is linear by `coadjoint_smul_real`.
 
@@ -473,7 +473,7 @@ instance : MulAction (GalileanGroup 3) GalileanTorsor
 instance : DistribMulAction (GalileanGroup 3) GalileanTorsor
 ```
 
-**`ClassicalMechanics.GalileanTorsor.coadjoint_smul_real`**, a lemma, [line 555](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L555).
+**`ClassicalMechanics.GalileanTorsor.coadjoint_smul_real`**, a lemma, [line 555](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L555).
 
 > The coadjoint action commutes with the real scalar multiplication: it is a linear
 > representation, as in (11.14)-(11.15).
@@ -485,7 +485,7 @@ lemma coadjoint_smul_real (a : GalileanGroup 3) (k : ℝ) (μ : GalileanTorsor) 
 
 ## E. The cocycle `θ₀` and the mass
 
-**`ClassicalMechanics.massCocycle`**, a def, [line 569](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L569).
+**`ClassicalMechanics.massCocycle`**, a def, [line 569](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L569).
 
 > Souriau's cocycle `θ₀(a) = {c × b, c - b e, b, ½ ‖b‖²}` of the Galilean group (12.127), for
 > `a = (R, b, c, e)`.
@@ -494,7 +494,7 @@ lemma coadjoint_smul_real (a : GalileanGroup 3) (k : ℝ) (μ : GalileanTorsor) 
 def massCocycle (a : GalileanGroup 3) : GalileanTorsor
 ```
 
-**`ClassicalMechanics.massCocycle_one`**, a lemma, [line 575](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L575).
+**`ClassicalMechanics.massCocycle_one`**, a lemma, [line 575](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L575).
 
 > `θ₀(1) = 0`.
 
@@ -502,7 +502,7 @@ def massCocycle (a : GalileanGroup 3) : GalileanTorsor
 lemma massCocycle_one : massCocycle 1 = 0
 ```
 
-**`ClassicalMechanics.isCocycle₁_massCocycle`**, a lemma, [line 584](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L584).
+**`ClassicalMechanics.isCocycle₁_massCocycle`**, a lemma, [line 584](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L584).
 
 > (12.128): `θ₀` satisfies the cocycle identity (11.19 ♡) for the coadjoint action,
 > `θ₀(a a') = a • θ₀(a') + θ₀(a)` (`groupCohomology.IsCocycle₁`). The differentiability also
@@ -512,7 +512,7 @@ lemma massCocycle_one : massCocycle 1 = 0
 lemma isCocycle₁_massCocycle : groupCohomology.IsCocycle₁ massCocycle
 ```
 
-**`ClassicalMechanics.eq_zero_of_smul_massCocycle_boost`**, a lemma, [line 623](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L623).
+**`ClassicalMechanics.eq_zero_of_smul_massCocycle_boost`**, a lemma, [line 623](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L623).
 
 > The witness of p. 151: if `a • μ₀ - μ₀ = M θ₀(a)` for the pure boost `a = (1, e₁, 0, 0)`,
 > then `M = 0`. This boost has `R = 1`, so it lies in Souriau's group `properGalileanGroup`.
@@ -523,7 +523,7 @@ lemma eq_zero_of_smul_massCocycle_boost (M : ℝ) (μ₀ : GalileanTorsor)
       = M • massCocycle ⟨1, WithLp.toLp 2 ![1, 0, 0], 0, 0⟩) : M = 0
 ```
 
-**`ClassicalMechanics.isCoboundary₁_smul_massCocycle_iff`**, a lemma, [line 641](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L641).
+**`ClassicalMechanics.isCoboundary₁_smul_massCocycle_iff`**, a lemma, [line 641](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L641).
 
 > `M θ₀` is a coboundary of Physlib's Galilean group (rotations in `O(3)`),
 > `M θ₀(a) = a • μ₀ - μ₀` for some torsor `μ₀` (11.19 ◇), if and only if `M = 0`. For Souriau's
@@ -535,7 +535,7 @@ lemma isCoboundary₁_smul_massCocycle_iff (M : ℝ) :
     groupCohomology.IsCoboundary₁ (fun a : GalileanGroup 3 => M • massCocycle a) ↔ M = 0
 ```
 
-**`ClassicalMechanics.not_isCoboundary₁_massCocycle`**, a lemma, [line 652](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L652).
+**`ClassicalMechanics.not_isCoboundary₁_massCocycle`**, a lemma, [line 652](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L652).
 
 > `θ₀` is not a coboundary of Physlib's Galilean group (rotations in `O(3)`). Souriau's
 > statement (p. 151) is on his group (12.73) and is `not_isCoboundary₁_massCocycle_proper`; it is
@@ -545,7 +545,7 @@ lemma isCoboundary₁_smul_massCocycle_iff (M : ℝ) :
 lemma not_isCoboundary₁_massCocycle : ¬ groupCohomology.IsCoboundary₁ massCocycle
 ```
 
-**`ClassicalMechanics.properGalileanGroup`**, a def, [line 659](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L659).
+**`ClassicalMechanics.properGalileanGroup`**, a def, [line 659](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L659).
 
 > Souriau's Galilean group (12.73): the elements of `GalileanGroup 3` whose rotation part has
 > determinant `1`, that is `R ∈ SO(3)`.
@@ -554,7 +554,7 @@ lemma not_isCoboundary₁_massCocycle : ¬ groupCohomology.IsCoboundary₁ massC
 def properGalileanGroup : Subgroup (GalileanGroup 3)
 ```
 
-**`ClassicalMechanics.isCocycle₁_massCocycle_proper`**, a lemma, [line 676](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L676).
+**`ClassicalMechanics.isCocycle₁_massCocycle_proper`**, a lemma, [line 676](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L676).
 
 > (12.128) on Souriau's group (12.73): the restriction of `θ₀` to `properGalileanGroup` satisfies
 > the cocycle identity (11.19 ♡).
@@ -564,7 +564,7 @@ lemma isCocycle₁_massCocycle_proper :
     groupCohomology.IsCocycle₁ (fun a : properGalileanGroup => massCocycle a)
 ```
 
-**`ClassicalMechanics.isCoboundary₁_smul_massCocycle_proper_iff`**, a lemma, [line 682](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L682).
+**`ClassicalMechanics.isCoboundary₁_smul_massCocycle_proper_iff`**, a lemma, [line 682](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L682).
 
 > p. 151 on Souriau's group (12.73): `M θ₀` is a coboundary of `properGalileanGroup`,
 > `M θ₀(a) = a • μ₀ - μ₀` for some torsor `μ₀` (11.19 ◇), if and only if `M = 0`.
@@ -575,7 +575,7 @@ lemma isCoboundary₁_smul_massCocycle_proper_iff (M : ℝ) :
       M = 0
 ```
 
-**`ClassicalMechanics.not_isCoboundary₁_massCocycle_proper`**, a lemma, [line 696](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L696).
+**`ClassicalMechanics.not_isCoboundary₁_massCocycle_proper`**, a lemma, [line 696](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L696).
 
 > p. 151 on Souriau's group (12.73): `θ₀` is not a coboundary of `properGalileanGroup`, so it
 > defines a non-zero cohomology class of Souriau's Galilean group.
@@ -585,7 +585,7 @@ lemma not_isCoboundary₁_massCocycle_proper :
     ¬ groupCohomology.IsCoboundary₁ (fun a : properGalileanGroup => massCocycle a)
 ```
 
-**`ClassicalMechanics.EvolutionSpace.moment_smul_sub`**, a lemma, [line 709](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L709).
+**`ClassicalMechanics.EvolutionSpace.moment_smul_sub`**, a lemma, [line 709](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L709).
 
 > (12.126)-(12.127) for `N` points: with the moment of `GalileanMass` (additive constant zero)
 > and `m = Σ_j m_j` (12.135), `μ(a • y) - a • μ(y) = m θ₀(a)`, independently of `y`. Souriau
@@ -596,7 +596,7 @@ lemma moment_smul_sub (m : Fin N → ℝ) (a : GalileanGroup 3) (y : EvolutionSp
     moment m (a • y) - a • moment m y = totalMass m • massCocycle a
 ```
 
-**`ClassicalMechanics.EvolutionSpace.not_isCoboundary₁_moment_smul_sub`**, a lemma, [line 736](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L736).
+**`ClassicalMechanics.EvolutionSpace.not_isCoboundary₁_moment_smul_sub`**, a lemma, [line 736](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L736).
 
 > (12.132) and (12.136) at the level of the group, on Physlib's Galilean group (rotations in
 > `O(3)`): for a non-zero total mass, the cocycle `a ↦ μ(a • y) - a • μ(y)` of the system is not a
@@ -610,7 +610,7 @@ lemma not_isCoboundary₁_moment_smul_sub (m : Fin N → ℝ) (hM : totalMass m 
       (fun a : GalileanGroup 3 => moment m (a • y) - a • moment m y)
 ```
 
-**`ClassicalMechanics.EvolutionSpace.not_isCoboundary₁_moment_smul_sub_proper`**, a lemma, [line 747](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L747).
+**`ClassicalMechanics.EvolutionSpace.not_isCoboundary₁_moment_smul_sub_proper`**, a lemma, [line 747](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L747).
 
 > (12.132) and (12.136) at the level of the group, on Souriau's group (12.73): for a non-zero
 > total mass, the cocycle `a ↦ μ(a • y) - a • μ(y)` of the system, restricted to
@@ -625,7 +625,7 @@ lemma not_isCoboundary₁_moment_smul_sub_proper (m : Fin N → ℝ) (hM : total
 
 ## F. The derivative of `θ₀` at the identity
 
-**`ClassicalMechanics.hasDerivAt_massCocycle`**, a lemma, [line 798](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L798).
+**`ClassicalMechanics.hasDerivAt_massCocycle`**, a lemma, [line 798](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L798).
 
 > (12.130), `f₀ = D(θ₀)(e)`: along a curve `s ↦ γ s` of the Galilean group through the identity
 > whose velocity, space translation and time translation are differentiable at `0`, with derivatives
@@ -641,7 +641,7 @@ lemma hasDerivAt_massCocycle (γ : ℝ → GalileanGroup 3) (hγ : γ 0 = 1)
       (GalileanAlgebra.cocycle ⟨0, WithLp.ofLp b', WithLp.ofLp c', 0⟩ Z) 0
 ```
 
-**`ClassicalMechanics.hasDerivAt_massCocycle_line`**, a lemma, [line 823](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L823).
+**`ClassicalMechanics.hasDerivAt_massCocycle_line`**, a lemma, [line 823](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean#L823).
 
 > (12.130) along the curve `s ↦ (1, s b', s c', s e')`, which satisfies the hypotheses of
 > `hasDerivAt_massCocycle`.
@@ -660,4 +660,4 @@ lemma hasDerivAt_massCocycle_line (b' c' : EuclideanSpace ℝ (Fin 3)) (e' : ℝ
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean)
+- [PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/MomentMap/GalileanMassCocycle.lean)

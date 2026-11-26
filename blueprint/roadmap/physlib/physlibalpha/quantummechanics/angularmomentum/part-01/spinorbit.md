@@ -8,7 +8,7 @@ proof: formalized
 
 # Spin–orbit coupling
 
-The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.SpinOrbit`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean): 9 declarations, 9 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.SpinOrbit`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean): 9 declarations, 9 with a docstring.
 
 > The operator `L · S` on coupled angular momenta, its eigenvalues on the states of total angular
 > momentum `J`, the fine-structure doublet and Landé's interval rule.
@@ -52,7 +52,7 @@ The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.SpinOrbit`, [PhyslibAl
 
 ## A. The scalar product of two angular momenta
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.dot`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L83).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.dot`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L83).
 
 > The scalar product `L · S = Lx ⊗ Sx + Ly ⊗ Sy + Lz ⊗ Sz` on `V ⊗ W`.
 
@@ -61,7 +61,7 @@ def dot (ρ₁ : AngularMomentumRepresentation V) (ρ₂ : AngularMomentumRepres
     Module.End ℂ (V ⊗[ℂ] W)
 ```
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_tensor`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L88).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_tensor`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L88).
 
 > **`J² = L² + S² + 2 L · S`.**
 
@@ -72,7 +72,7 @@ lemma Jsq_tensor (ρ₁ : AngularMomentumRepresentation V) (ρ₂ : AngularMomen
 
 ## B. The Casimir operator of `V(n)`
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_standard`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L103).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.Jsq_standard`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L103).
 
 > `J² = j(j + 1)` on the spin-`j` representation `V(2j)`.
 
@@ -84,7 +84,7 @@ lemma Jsq_standard (n : ℕ) :
 
 ## C. Eigenvalues of `L · S`
 
-**`PhyslibAlpha.Sl2.spinOrbitValue`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L126).
+**`PhyslibAlpha.Sl2.spinOrbitValue`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L126).
 
 > The eigenvalue `(J(J + 1) - l(l + 1) - s(s + 1)) / 2` of `L · S` for `l = m/2`, `s = n/2`
 > and `J = (m + n)/2 - k`.
@@ -93,7 +93,7 @@ lemma Jsq_standard (n : ℕ) :
 def spinOrbitValue (m n k : ℕ) : ℂ
 ```
 
-**`PhyslibAlpha.Sl2.dot_coupled_stringVec`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L133).
+**`PhyslibAlpha.Sl2.dot_coupled_stringVec`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L133).
 
 > **Spin–orbit eigenvalues.** Every vector of the `k`-th lowering string of `V(m) ⊗ V(n)`, a
 > state of total angular momentum `J = (m + n)/2 - k`, is an eigenvector of `L · S` with eigenvalue
@@ -107,7 +107,7 @@ lemma dot_coupled_stringVec {k : ℕ} (hmn : 0 < m + n) (hkm : k ≤ m) (hkn : k
 
 ## D. Fine structure and the interval rule
 
-**`PhyslibAlpha.Sl2.dot_coupled_stringVec_doublet_upper`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L154).
+**`PhyslibAlpha.Sl2.dot_coupled_stringVec_doublet_upper`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L154).
 
 > **Fine-structure doublet, upper level.** For spin `1/2` and `J = l + 1/2`,
 > `L · S = l/2` (`l = m/2`).
@@ -118,7 +118,7 @@ lemma dot_coupled_stringVec_doublet_upper (l' : ℕ) :
       ((m : ℂ) / 4) • stringVec m 1 0 l'
 ```
 
-**`PhyslibAlpha.Sl2.dot_coupled_stringVec_doublet_lower`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L164).
+**`PhyslibAlpha.Sl2.dot_coupled_stringVec_doublet_lower`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L164).
 
 > **Fine-structure doublet, lower level.** For spin `1/2` and `J = l - 1/2`,
 > `L · S = -(l + 1)/2` (`l = m/2`, `m ≥ 1`).
@@ -129,7 +129,7 @@ lemma dot_coupled_stringVec_doublet_lower (hm : 1 ≤ m) (l' : ℕ) :
       (-((m : ℂ) + 2) / 4) • stringVec m 1 1 l'
 ```
 
-**`PhyslibAlpha.Sl2.spinOrbitValue_doublet_sub`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L174).
+**`PhyslibAlpha.Sl2.spinOrbitValue_doublet_sub`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L174).
 
 > The doublet splitting `l/2 + (l + 1)/2 = (2l + 1)/2`.
 
@@ -138,7 +138,7 @@ lemma spinOrbitValue_doublet_sub (hm : 1 ≤ m) :
     spinOrbitValue m 1 0 - spinOrbitValue m 1 1 = ((m : ℂ) + 1) / 2
 ```
 
-**`PhyslibAlpha.Sl2.spinOrbitValue_sub_succ`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L182).
+**`PhyslibAlpha.Sl2.spinOrbitValue_sub_succ`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean#L182).
 
 > **Landé's interval rule.** The levels `J` and `J - 1` of a multiplet differ in `L · S` by `J`,
 > `J = (m + n)/2 - k`.
@@ -158,4 +158,4 @@ lemma spinOrbitValue_sub_succ {k : ℕ} (hkm : k + 1 ≤ m) (hkn : k + 1 ≤ n) 
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean)
+- [PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean)

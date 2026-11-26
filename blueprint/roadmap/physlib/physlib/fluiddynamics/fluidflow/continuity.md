@@ -8,7 +8,7 @@ proof: formalized
 
 # Continuity equation for fluid flows
 
-The module `Physlib.FluidDynamics.FluidFlow.Continuity`, [Physlib/FluidDynamics/FluidFlow/Continuity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Continuity.lean): 4 declarations, 4 with a docstring.
+The module `Physlib.FluidDynamics.FluidFlow.Continuity`, [Physlib/FluidDynamics/FluidFlow/Continuity.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Continuity.lean): 4 declarations, 4 with a docstring.
 
 ## i. Overview
 
@@ -30,7 +30,7 @@ The module `Physlib.FluidDynamics.FluidFlow.Continuity`, [Physlib/FluidDynamics/
 
 ## A. Continuity equations
 
-**`FluidDynamics.FluidFlow.ClassicalContinuityEquation`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Continuity.lean#L58).
+**`FluidDynamics.FluidFlow.ClassicalContinuityEquation`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Continuity.lean#L58).
 
 > Classical conservation of mass in conservative form, `partial_t rho + div (rho u) = 0`.
 >
@@ -41,7 +41,7 @@ The module `Physlib.FluidDynamics.FluidFlow.Continuity`, [Physlib/FluidDynamics/
 def ClassicalContinuityEquation (d : ℕ) (fluid : FluidFlow d) : Prop
 ```
 
-**`FluidDynamics.FluidFlow.continuityResidual`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Continuity.lean#L65).
+**`FluidDynamics.FluidFlow.continuityResidual`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Continuity.lean#L65).
 
 > The scalar continuity-equation residual
 > `partial_t rho + div (rho u)`.
@@ -50,7 +50,7 @@ def ClassicalContinuityEquation (d : ℕ) (fluid : FluidFlow d) : Prop
 noncomputable def continuityResidual (d : ℕ) (fluid : FluidFlow d) : Time → Space d → ℝ
 ```
 
-**`FluidDynamics.FluidFlow.SmoothContinuityEquation`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Continuity.lean#L74).
+**`FluidDynamics.FluidFlow.SmoothContinuityEquation`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Continuity.lean#L74).
 
 > A stronger continuity equation for globally differentiable fields.
 >
@@ -62,7 +62,7 @@ noncomputable def continuityResidual (d : ℕ) (fluid : FluidFlow d) : Time → 
 def SmoothContinuityEquation (d : ℕ) (fluid : FluidFlow d) : Prop
 ```
 
-**`FluidDynamics.FluidFlow.classicalContinuityEquation_of_smoothContinuityEquation`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Continuity.lean#L80).
+**`FluidDynamics.FluidFlow.classicalContinuityEquation_of_smoothContinuityEquation`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Continuity.lean#L80).
 
 > A smooth continuity equation satisfies the guarded classical continuity equation.
 
@@ -80,4 +80,4 @@ lemma classicalContinuityEquation_of_smoothContinuityEquation
 
 ## Sources
 
-- [Physlib/FluidDynamics/FluidFlow/Continuity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Continuity.lean)
+- [Physlib/FluidDynamics/FluidFlow/Continuity.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/FluidFlow/Continuity.lean)

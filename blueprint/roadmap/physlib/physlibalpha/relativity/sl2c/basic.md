@@ -8,7 +8,7 @@ proof: formalized
 
 # Conjugation and the kernel of the covering map
 
-The module `PhyslibAlpha.Relativity.SL2C.Basic`, [PhyslibAlpha/Relativity/SL2C/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/SL2C/Basic.lean): 7 declarations, 6 with a docstring.
+The module `PhyslibAlpha.Relativity.SL2C.Basic`, [PhyslibAlpha/Relativity/SL2C/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/SL2C/Basic.lean): 7 declarations, 6 with a docstring.
 
 > Entrywise conjugation on `SL(2, ℂ)`, and the covering map on `-1`, on entries and on adjoints.
 
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.Relativity.SL2C.Basic`, [PhyslibAlpha/Relativity/SL2C/B
 
 ## A. Entrywise conjugation
 
-**`Lorentz.SL2C.conjHom`**, an abbrev, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/SL2C/Basic.lean#L73).
+**`Lorentz.SL2C.conjHom`**, an abbrev, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/SL2C/Basic.lean#L73).
 
 > Entrywise complex conjugation as a monoid endomorphism of `SL(2,ℂ)`: Mathlib's
 > `SpecialLinearGroup.map` along `starRingEnd ℂ`.
@@ -54,13 +54,13 @@ The module `PhyslibAlpha.Relativity.SL2C.Basic`, [PhyslibAlpha/Relativity/SL2C/B
 abbrev conjHom : SL(2,ℂ) →* SL(2,ℂ)
 ```
 
-**`Lorentz.SL2C.conjHom_coe`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/SL2C/Basic.lean#L75).
+**`Lorentz.SL2C.conjHom_coe`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/SL2C/Basic.lean#L75).
 
 ```lean
 lemma conjHom_coe (g : SL(2,ℂ)) : (conjHom g).1 = g.1.map star
 ```
 
-**`Lorentz.SL2C.conjHom_involutive`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/SL2C/Basic.lean#L78).
+**`Lorentz.SL2C.conjHom_involutive`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/SL2C/Basic.lean#L78).
 
 > Conjugation is an involution, hence surjective.
 
@@ -68,7 +68,7 @@ lemma conjHom_coe (g : SL(2,ℂ)) : (conjHom g).1 = g.1.map star
 lemma conjHom_involutive : Function.Involutive conjHom
 ```
 
-**`Lorentz.SL2C.conjHom_inv_conjTranspose`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/SL2C/Basic.lean#L86).
+**`Lorentz.SL2C.conjHom_inv_conjTranspose`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/SL2C/Basic.lean#L86).
 
 > Conjugating the group argument undoes the conjugation of the entries: the inverse
 > conjugate transpose at `conjHom g` is the inverse transpose at `g`.
@@ -79,7 +79,7 @@ lemma conjHom_inv_conjTranspose (g : SL(2,ℂ)) : (((conjHom g).1)⁻¹)ᴴ = (g
 
 ## B. The kernel of the covering map
 
-**`Lorentz.SL2C.toLorentzGroup_neg_one`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/SL2C/Basic.lean#L103).
+**`Lorentz.SL2C.toLorentzGroup_neg_one`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/SL2C/Basic.lean#L103).
 
 > **The centre of `SL(2, ℂ)` covers the identity Lorentz transformation.** The covering
 > map sandwiches, `A ↦ M A Mᴴ`, so the two signs of `-1` cancel. Together with
@@ -91,7 +91,7 @@ lemma toLorentzGroup_neg_one : toLorentzGroup (-1) = 1
 
 ## C. The intertwining identity on entries
 
-**`Lorentz.SL2C.sum_pauliLower_mul_sl2c`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/SL2C/Basic.lean#L121).
+**`Lorentz.SL2C.sum_pauliLower_mul_sl2c`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/SL2C/Basic.lean#L121).
 
 > The intertwining identity `toSelfAdjointMap_basis` read entrywise: sandwiching the
 > covariant Pauli matrix `σ_μ` between `g` and `gᴴ` mixes the covariant Pauli matrices by the
@@ -106,7 +106,7 @@ lemma sum_pauliLower_mul_sl2c (g : SL(2,ℂ)) (μ : Fin 1 ⊕ Fin 3) (β β' : F
 
 ## D. The covering map and adjoints
 
-**`Lorentz.SL2C.toLorentzGroup_conjTranspose`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/SL2C/Basic.lean#L145).
+**`Lorentz.SL2C.toLorentzGroup_conjTranspose`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/SL2C/Basic.lean#L145).
 
 > The covering map intertwines conjugate transposition with matrix
 > transposition: `L(M†) = L(M)ᵀ`.
@@ -123,4 +123,4 @@ lemma toLorentzGroup_conjTranspose {M N : SL(2,ℂ)} (hN : N.1 = M.1ᴴ) :
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/SL2C/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/SL2C/Basic.lean)
+- [PhyslibAlpha/Relativity/SL2C/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/SL2C/Basic.lean)

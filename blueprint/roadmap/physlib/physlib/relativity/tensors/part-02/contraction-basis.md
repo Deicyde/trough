@@ -8,9 +8,9 @@ proof: formalized
 
 # Contractions on basis tensors
 
-The module `Physlib.Relativity.Tensors.Contraction.Basis`, [Physlib/Relativity/Tensors/Contraction/Basis.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basis.lean): 6 declarations, 2 with a docstring.
+The module `Physlib.Relativity.Tensors.Contraction.Basis`, [Physlib/Relativity/Tensors/Contraction/Basis.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/Basis.lean): 6 declarations, 2 with a docstring.
 
-**`TensorSpecies.Tensor.Pure.dropPair_basisVector`**, a lemma, [line 33](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basis.lean#L33).
+**`TensorSpecies.Tensor.Pure.dropPair_basisVector`**, a lemma, [line 33](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/Basis.lean#L33).
 
 ```lean
 lemma Pure.dropPair_basisVector {n : ℕ} {c : Fin (n + 1 + 1) → C}
@@ -19,7 +19,7 @@ lemma Pure.dropPair_basisVector {n : ℕ} {c : Fin (n + 1 + 1) → C}
     basisVector (S := S) (c ∘ Fin.succSuccAbove i j) fun m => b (Fin.succSuccAbove i j m)
 ```
 
-**`TensorSpecies.Tensor.Pure.contrPCoeff_basisVector`**, a lemma, [line 43](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basis.lean#L43).
+**`TensorSpecies.Tensor.Pure.contrPCoeff_basisVector`**, a lemma, [line 43](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/Basis.lean#L43).
 
 > For a species with dual bases (`HasContrDualBases`), the contraction coefficient of a basis
 > vector is the Kronecker δ of its labels at `i` and `j`, the label at `j` read as a label at the
@@ -33,7 +33,7 @@ lemma Pure.contrPCoeff_basisVector [HasContrDualBases S] {n : ℕ} {c : Fin n �
       else 0
 ```
 
-**`TensorSpecies.Tensor.contrT_basis_repr_apply`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basis.lean#L53).
+**`TensorSpecies.Tensor.contrT_basis_repr_apply`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/Basis.lean#L53).
 
 ```lean
 lemma contrT_basis_repr_apply {n : ℕ} {c : Fin (n + 1 + 1) → C} {i j : Fin (n + 1 + 1)}
@@ -45,7 +45,7 @@ lemma contrT_basis_repr_apply {n : ℕ} {c : Fin (n + 1 + 1) → C} {i j : Fin (
       (basisIdxCongr (by rw [h.2]) (b'.1 j))))
 ```
 
-**`TensorSpecies.Tensor.contrT_basis_repr_apply_eq_sum_fin`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basis.lean#L91).
+**`TensorSpecies.Tensor.contrT_basis_repr_apply_eq_sum_fin`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/Basis.lean#L91).
 
 ```lean
 lemma contrT_basis_repr_apply_eq_sum_fin {n : ℕ} {c : Fin (n + 1 + 1) → C} {i j : Fin (n + 1 + 1)}
@@ -58,7 +58,7 @@ lemma contrT_basis_repr_apply_eq_sum_fin {n : ℕ} {c : Fin (n + 1 + 1) → C} {
     (b (c i) x1 ⊗ₜ[k] b (S.τ (c i)) (basisIdxCongr (by rw [h.2]) x2)))
 ```
 
-**`TensorSpecies.Tensor.contrT_basis_repr_apply_eq_sum_dual`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basis.lean#L107).
+**`TensorSpecies.Tensor.contrT_basis_repr_apply_eq_sum_dual`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/Basis.lean#L107).
 
 > For a species with dual bases (`HasContrDualBases`), a component of a contraction is a single
 > sum over the labels at the first contracted index: the δ law
@@ -75,7 +75,7 @@ lemma contrT_basis_repr_apply_eq_sum_dual [HasContrDualBases S] {n : ℕ} {c : F
         (x, basisIdxCongr h.2 ((HasContrDualBases.contrDualIdxEquiv S (c i)).symm x))).1
 ```
 
-**`TensorSpecies.Tensor.contrT_basis`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basis.lean#L118).
+**`TensorSpecies.Tensor.contrT_basis`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/Basis.lean#L118).
 
 ```lean
 lemma contrT_basis {n : ℕ} {c : Fin (n + 1 + 1) → C} {i j : Fin (n + 1 + 1)}
@@ -93,4 +93,4 @@ lemma contrT_basis {n : ℕ} {c : Fin (n + 1 + 1) → C} {i j : Fin (n + 1 + 1)}
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/Contraction/Basis.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basis.lean)
+- [Physlib/Relativity/Tensors/Contraction/Basis.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction/Basis.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Classical systems with separable observables
 
-The module `PhyslibAlpha.ProbabilisticTheory.Classical.SeparableObservables`, [PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean): 9 declarations, 6 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Classical.SeparableObservables`, [PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean): 9 declarations, 6 with a docstring.
 
 > Choquet–Meyer: with separable observables, classical exactly when ensembles refine.
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.SeparableObservables`, [P
 
 ## A. A dense sequence of observables separates states
 
-**`PhyslibAlpha.ProbabilisticTheory.StateSpace.denseEval`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L73).
+**`PhyslibAlpha.ProbabilisticTheory.StateSpace.denseEval`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L73).
 
 > The expectation value of the `n`-th observable of a dense sequence, as a continuous linear
 > functional on the weak dual.
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.SeparableObservables`, [P
 noncomputable def denseEval (n : ℕ) : WeakDual ℝ E →L[ℝ] ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.StateSpace.denseEval_injective`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.StateSpace.denseEval_injective`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L77).
 
 > The expectation values of a dense sequence of observables separate states.
 
@@ -62,7 +62,7 @@ lemma denseEval_injective (x y : stateSpace E)
 
 ## B. Every state is a mixture of pure states
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.exists_pure_representingMeasure`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L95).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.exists_pure_representingMeasure`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L95).
 
 > **Choquet representation of states.** Every state is the barycenter of a probability measure
 > living on the pure states.
@@ -75,19 +75,19 @@ lemma exists_pure_representingMeasure (ω : 𝓢[ℝ, E]) :
 
 ## C. Pure decompositions
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.measurableSet_setOf_isPure`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L113).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.measurableSet_setOf_isPure`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L113).
 
 ```lean
 lemma measurableSet_setOf_isPure : MeasurableSet {ω : stateSpace E | (toState ω).IsPure}
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.measurableEmbedding_val`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L117).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.measurableEmbedding_val`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L117).
 
 ```lean
 lemma measurableEmbedding_val : MeasurableEmbedding (Subtype.val : PureState E → stateSpace E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.map_comap_val_eq`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L121).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.map_comap_val_eq`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L121).
 
 > A probability measure on the state space living on the pure states, restricted to them.
 
@@ -97,7 +97,7 @@ lemma map_comap_val_eq {μ : Measure (stateSpace E)}
     (μ.comap (Subtype.val : PureState E → stateSpace E)).map Subtype.val = μ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.isProbabilityMeasure_comap_val`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L127).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.isProbabilityMeasure_comap_val`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L127).
 
 ```lean
 lemma isProbabilityMeasure_comap_val {μ : Measure (stateSpace E)} [IsProbabilityMeasure μ]
@@ -105,7 +105,7 @@ lemma isProbabilityMeasure_comap_val {μ : Measure (stateSpace E)} [IsProbabilit
     IsProbabilityMeasure (μ.comap (Subtype.val : PureState E → stateSpace E))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.hasPureDecomposition_of_separable`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L135).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.hasPureDecomposition_of_separable`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L135).
 
 > With separable observables, every state decomposes into pure states.
 
@@ -115,7 +115,7 @@ lemma hasPureDecomposition_of_separable (ω : 𝓢[ℝ, E]) : ω.HasPureDecompos
 
 ## D. Classical systems are those whose ensembles refine
 
-**`PhyslibAlpha.ProbabilisticTheory.isSimplexStateSpace_iff_ensemblesRefine`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L156).
+**`PhyslibAlpha.ProbabilisticTheory.isSimplexStateSpace_iff_ensemblesRefine`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean#L156).
 
 > **Choquet–Meyer**: for separable observables, the state space is a simplex exactly when
 > ensembles refine.
@@ -136,4 +136,4 @@ lemma isSimplexStateSpace_iff_ensemblesRefine : IsSimplexStateSpace E ↔ Ensemb
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Cutoff functions
 
-The module `Physlib.Mathematics.ForMathlib.Cutoff`, [Physlib/Mathematics/ForMathlib/Cutoff.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Cutoff.lean): 2 declarations, 2 with a docstring.
+The module `Physlib.Mathematics.ForMathlib.Cutoff`, [Physlib/Mathematics/ForMathlib/Cutoff.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Cutoff.lean): 2 declarations, 2 with a docstring.
 
 > Smooth cutoffs around a compact set.
 
@@ -28,7 +28,7 @@ The module `Physlib.Mathematics.ForMathlib.Cutoff`, [Physlib/Mathematics/ForMath
 
 ## A. Cutoff functions
 
-**`IsCompact.exists_cutoff`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Cutoff.lean#L45).
+**`IsCompact.exists_cutoff`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Cutoff.lean#L45).
 
 > A smooth cutoff which is `1` on a neighbourhood `N` of a compact set `K` inside an open set `U`
 > and has topological support inside `U`.
@@ -41,7 +41,7 @@ lemma IsCompact.exists_cutoff {X : Type*} [NormedAddCommGroup X] [NormedSpace �
       (∀ y ∈ N, χ y = 1) ∧ tsupport χ ⊆ U
 ```
 
-**`contDiff_smul_of_cutoff`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Cutoff.lean#L63).
+**`contDiff_smul_of_cutoff`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Cutoff.lean#L63).
 
 > `ρ • f` is smooth if `tsupport ρ ⊆ W` and `f` is smooth on `W`.
 
@@ -58,4 +58,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/ForMathlib/Cutoff.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/Cutoff.lean)
+- [Physlib/Mathematics/ForMathlib/Cutoff.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/Cutoff.lean)

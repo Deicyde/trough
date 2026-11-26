@@ -8,9 +8,9 @@ proof: formalized
 
 # The Microcanonical Ensemble
 
-The module `Physlib.StatisticalMechanics.MicroCanonicalEnsemble.Basic`, [Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean): 5 declarations, 5 with a docstring.
+The module `Physlib.StatisticalMechanics.MicroCanonicalEnsemble.Basic`, [Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean): 5 declarations, 5 with a docstring.
 
-**`MicroHamiltonian`**, a structure, [line 27](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean#L27).
+**`MicroHamiltonian`**, a structure, [line 27](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean#L27).
 
 > The Hamiltonian for a microcanonical ensemble, parameterized by any extrinsic parameters of data
 > D. Since it's an arbitrary type, 'T' would be nice, but we use 'D' for data to avoid confusion
@@ -33,7 +33,7 @@ structure MicroHamiltonian (D : Type) where
   measurable_H : ∀ d, Measurable (@H d)
 ```
 
-**`microHamiltonianFintype`**, an instance, [line 39](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean#L39).
+**`microHamiltonianFintype`**, an instance, [line 39](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean#L39).
 
 > The dimFin to the instance cache is added so that things like the measure can be synthesized
 
@@ -41,7 +41,7 @@ structure MicroHamiltonian (D : Type) where
 instance microHamiltonianFintype {D} (H : MicroHamiltonian D) (d : D) : Fintype (H.dim d)
 ```
 
-**`NVEHamiltonian`**, an abbrev, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean#L44).
+**`NVEHamiltonian`**, an abbrev, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean#L44).
 
 > The standard microcanonical ensemble Hamiltonian, where the data is the particle number N and
 > the volume V.
@@ -50,7 +50,7 @@ instance microHamiltonianFintype {D} (H : MicroHamiltonian D) (d : D) : Fintype 
 abbrev NVEHamiltonian
 ```
 
-**`NVEHamiltonian.N`**, a def, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean#L47).
+**`NVEHamiltonian.N`**, a def, [line 47](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean#L47).
 
 > Helper to get the number in an N-V Hamiltonian
 
@@ -58,7 +58,7 @@ abbrev NVEHamiltonian
 def NVEHamiltonian.N : (ℕ × ℝ) → ℕ
 ```
 
-**`NVEHamiltonian.V`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean#L50).
+**`NVEHamiltonian.V`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean#L50).
 
 > Helper to get the volume in an N-V Hamiltonian
 
@@ -72,4 +72,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean)
+- [Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # LinearPMap
 
-The module `Physlib.Mathematics.ForMathlib.LinearPMap`, [Physlib/Mathematics/ForMathlib/LinearPMap.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean): 55 declarations, 6 with a docstring.
+The module `Physlib.Mathematics.ForMathlib.LinearPMap`, [Physlib/Mathematics/ForMathlib/LinearPMap.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean): 55 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -36,109 +36,109 @@ The module `Physlib.Mathematics.ForMathlib.LinearPMap`, [Physlib/Mathematics/For
 
 ## A. Inequalities
 
-**`LinearPMap.sub_le_zero`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L65).
+**`LinearPMap.sub_le_zero`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L65).
 
 ```lean
 lemma sub_le_zero : f - f ≤ 0
 ```
 
-**`LinearPMap.neg_add_le_zero`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L67).
+**`LinearPMap.neg_add_le_zero`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L67).
 
 ```lean
 lemma neg_add_le_zero : -f + f ≤ 0
 ```
 
-**`LinearPMap.le_iff_neg_le_neg`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L69).
+**`LinearPMap.le_iff_neg_le_neg`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L69).
 
 ```lean
 lemma le_iff_neg_le_neg : g₁ ≤ g₂ ↔ -g₁ ≤ -g₂
 ```
 
-**`LinearPMap.le_neg_iff_neg_le`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L72).
+**`LinearPMap.le_neg_iff_neg_le`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L72).
 
 ```lean
 lemma le_neg_iff_neg_le : g₁ ≤ -g₂ ↔ -g₁ ≤ g₂
 ```
 
-**`LinearPMap.add_sub_le_cancel`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L74).
+**`LinearPMap.add_sub_le_cancel`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L74).
 
 ```lean
 lemma add_sub_le_cancel : f₁ + (f₂ - f₁) ≤ f₂
 ```
 
-**`LinearPMap.add_sub_le_cancel_left`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L77).
+**`LinearPMap.add_sub_le_cancel_left`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L77).
 
 ```lean
 lemma add_sub_le_cancel_left : f₁ + f₂ - f₁ ≤ f₂
 ```
 
-**`LinearPMap.add_sub_le_cancel_right`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L79).
+**`LinearPMap.add_sub_le_cancel_right`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L79).
 
 ```lean
 lemma add_sub_le_cancel_right : f₁ + f₂ - f₂ ≤ f₁
 ```
 
-**`LinearPMap.add_add_sub_le_cancel`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L81).
+**`LinearPMap.add_add_sub_le_cancel`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L81).
 
 ```lean
 lemma add_add_sub_le_cancel : f₁ + f₂ + (f₃ - f₂) ≤ f₁ + f₃
 ```
 
-**`LinearPMap.add_sub_sub_le_cancel`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L84).
+**`LinearPMap.add_sub_sub_le_cancel`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L84).
 
 ```lean
 lemma add_sub_sub_le_cancel : f₁ + f₂ - (f₁ - f₃) ≤ f₂ + f₃
 ```
 
-**`LinearPMap.sub_sub_sub_le_cancel_right`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L87).
+**`LinearPMap.sub_sub_sub_le_cancel_right`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L87).
 
 ```lean
 lemma sub_sub_sub_le_cancel_right : f₁ - f₂ - (f₃ - f₂) ≤ f₁ - f₃
 ```
 
-**`LinearPMap.sub_sub_sub_le_cancel_left`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L91).
+**`LinearPMap.sub_sub_sub_le_cancel_left`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L91).
 
 ```lean
 lemma sub_sub_sub_le_cancel_left : f₁ - f₂ - (f₁ - f₃) ≤ f₃ - f₂
 ```
 
-**`LinearPMap.sub_le_of_le_add`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L94).
+**`LinearPMap.sub_le_of_le_add`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L94).
 
 ```lean
 lemma sub_le_of_le_add (h : g ≤ g₁ + g₂) : g - g₂ ≤ g₁
 ```
 
-**`LinearPMap.sub_add_le_cancel`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L100).
+**`LinearPMap.sub_add_le_cancel`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L100).
 
 ```lean
 lemma sub_add_le_cancel : f₁ - f₂ + f₂ ≤ f₁
 ```
 
-**`LinearPMap.add_le_of_le_sub`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L103).
+**`LinearPMap.add_le_of_le_sub`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L103).
 
 ```lean
 lemma add_le_of_le_sub (h : g ≤ g₁ - g₂) : g + g₂ ≤ g₁
 ```
 
-**`LinearPMap.add_left_le_of_le`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L106).
+**`LinearPMap.add_left_le_of_le`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L106).
 
 ```lean
 lemma add_left_le_of_le (h : g₁ ≤ g₂) : f + g₁ ≤ f + g₂
 ```
 
-**`LinearPMap.add_right_le_of_le`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L113).
+**`LinearPMap.add_right_le_of_le`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L113).
 
 ```lean
 lemma add_right_le_of_le (h : g₁ ≤ g₂) : g₁ + f ≤ g₂ + f
 ```
 
-**`LinearPMap.sub_right_le_of_le`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L116).
+**`LinearPMap.sub_right_le_of_le`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L116).
 
 ```lean
 lemma sub_right_le_of_le (h : g₁ ≤ g₂) : g₁ - f ≤ g₂ - f
 ```
 
-**`LinearPMap.sub_left_le_of_le`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L119).
+**`LinearPMap.sub_left_le_of_le`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L119).
 
 ```lean
 lemma sub_left_le_of_le (h : g₁ ≤ g₂) : f - g₁ ≤ f - g₂
@@ -146,13 +146,13 @@ lemma sub_left_le_of_le (h : g₁ ≤ g₂) : f - g₁ ≤ f - g₂
 
 ## B. Zero smul
 
-**`LinearPMap.zero_smul_le`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L132).
+**`LinearPMap.zero_smul_le`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L132).
 
 ```lean
 lemma zero_smul_le (f : E →ₗ.[𝕜] F) : (0 : 𝕜) • f ≤ 0
 ```
 
-**`LinearPMap.zero_smul_eq`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L135).
+**`LinearPMap.zero_smul_eq`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L135).
 
 ```lean
 lemma zero_smul_eq {f : E →ₗ.[𝕜] F} (h : f.domain = ⊤) : (0 : 𝕜) • f = 0
@@ -160,7 +160,7 @@ lemma zero_smul_eq {f : E →ₗ.[𝕜] F} (h : f.domain = ⊤) : (0 : 𝕜) •
 
 ## C. Finite sums
 
-**`LinearPMap.sum`**, a def, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L152).
+**`LinearPMap.sum`**, a def, [line 152](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L152).
 
 > A finite sum of partial linear maps.
 >
@@ -171,19 +171,19 @@ lemma zero_smul_eq {f : E →ₗ.[𝕜] F} (h : f.domain = ⊤) : (0 : 𝕜) •
 def sum : E →ₗ.[R] F
 ```
 
-**`LinearPMap.sum_domain`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L156).
+**`LinearPMap.sum_domain`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L156).
 
 ```lean
 lemma sum_domain : (sum f).domain = ⨅ a, (f a).domain
 ```
 
-**`LinearPMap.sum_domain_le`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L158).
+**`LinearPMap.sum_domain_le`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L158).
 
 ```lean
 lemma sum_domain_le (a : α) : (sum f).domain ≤ (f a).domain
 ```
 
-**`LinearPMap.sum_apply`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L161).
+**`LinearPMap.sum_apply`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L161).
 
 ```lean
 lemma sum_apply (ψ : (sum f).domain) : sum f ψ = ∑ a, f a ⟨ψ, sum_domain_le f a ψ.2⟩
@@ -191,7 +191,7 @@ lemma sum_apply (ψ : (sum f).domain) : sum f ψ = ∑ a, f a ⟨ψ, sum_domain_
 
 ## D. Restricted composition
 
-**`LinearPMap.compRestricted`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L178).
+**`LinearPMap.compRestricted`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L178).
 
 > `g ∘ᵣ f` is the composition of `g` with `f` restricted to a domain consisting of exactly those
 > `x : f.domain` for which `f x ∈ g.domain`.
@@ -200,46 +200,46 @@ lemma sum_apply (ψ : (sum f).domain) : sum f ψ = ∑ a, f a ⟨ψ, sum_domain_
 def compRestricted : E →ₗ.[R] G
 ```
 
-**`LinearPMap.compRestricted_domain_le`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L190).
+**`LinearPMap.compRestricted_domain_le`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L190).
 
 ```lean
 lemma compRestricted_domain_le : (g ∘ᵣ f).domain ≤ f.domain
 ```
 
-**`LinearPMap.compRestricted_domain`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L192).
+**`LinearPMap.compRestricted_domain`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L192).
 
 ```lean
 lemma compRestricted_domain : (g ∘ᵣ f).domain = (g.domain.comap f.toFun).map f.domain.subtype
 ```
 
-**`LinearPMap.mem_compRestricted_domain_iff`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L201).
+**`LinearPMap.mem_compRestricted_domain_iff`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L201).
 
 ```lean
 lemma mem_compRestricted_domain_iff {x : E} :
     x ∈ (v ∘ᵣ u).domain ↔ ∃ h : x ∈ u.domain, u ⟨x, h⟩ ∈ v.domain
 ```
 
-**`LinearPMap.mem_compRestricted_domain_iff'`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L205).
+**`LinearPMap.mem_compRestricted_domain_iff'`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L205).
 
 ```lean
 lemma mem_compRestricted_domain_iff' {x : E} :
     x ∈ (v ∘ᵣ u).domain ↔ ∃ y : u.domain, x = y ∧ ∃ y' : v.domain, u y = y'
 ```
 
-**`LinearPMap.mem_domain_of_mem_compRestricted_domain`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L209).
+**`LinearPMap.mem_domain_of_mem_compRestricted_domain`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L209).
 
 ```lean
 lemma mem_domain_of_mem_compRestricted_domain (x : (v ∘ᵣ u).domain) : u ⟨x, x.2.2⟩ ∈ v.domain
 ```
 
-**`LinearPMap.compRestricted_apply`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L213).
+**`LinearPMap.compRestricted_apply`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L213).
 
 ```lean
 lemma compRestricted_apply (x : (v ∘ᵣ u).domain) :
     (v ∘ᵣ u) x = v ⟨u ⟨x, x.2.2⟩, mem_domain_of_mem_compRestricted_domain x⟩
 ```
 
-**`LinearPMap.compRestricted_zero`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L218).
+**`LinearPMap.compRestricted_zero`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L218).
 
 > The zero map is right-absorbing.
 
@@ -247,7 +247,7 @@ lemma compRestricted_apply (x : (v ∘ᵣ u).domain) :
 lemma compRestricted_zero : g ∘ᵣ (0 : E →ₗ.[R] F) = 0
 ```
 
-**`LinearPMap.compRestricted_assoc`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L223).
+**`LinearPMap.compRestricted_assoc`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L223).
 
 ```lean
 lemma compRestricted_assoc {H : Type*} [AddCommGroup H] [Module R H]
@@ -255,7 +255,7 @@ lemma compRestricted_assoc {H : Type*} [AddCommGroup H] [Module R H]
     (f₁ ∘ᵣ f₂) ∘ᵣ f₃ = f₁ ∘ᵣ f₂ ∘ᵣ f₃
 ```
 
-**`LinearPMap.compRestricted_eq_comp`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L232).
+**`LinearPMap.compRestricted_eq_comp`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L232).
 
 > `compRestricted` is the same as `comp` when the range of `u` is contained in `v.domain`.
 
@@ -264,7 +264,7 @@ lemma compRestricted_eq_comp (h : ∀ x : u.domain, u x ∈ v.domain) :
     v ∘ᵣ u = v.comp u h
 ```
 
-**`LinearPMap.comp_le_compRestricted`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L240).
+**`LinearPMap.comp_le_compRestricted`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L240).
 
 > `compRestricted` is maximal amongst compositions of `v` with domain restrictions of `u`.
 
@@ -274,57 +274,57 @@ lemma comp_le_compRestricted
     v.comp (u.domRestrict S) h ≤ v ∘ᵣ u
 ```
 
-**`LinearPMap.compRestricted_mono_left`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L245).
+**`LinearPMap.compRestricted_mono_left`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L245).
 
 ```lean
 lemma compRestricted_mono_left {g g' : F →ₗ.[R] G} (h : g ≤ g') (f : E →ₗ.[R] F) :
     g ∘ᵣ f ≤ g' ∘ᵣ f
 ```
 
-**`LinearPMap.compRestricted_mono_right`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L255).
+**`LinearPMap.compRestricted_mono_right`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L255).
 
 ```lean
 lemma compRestricted_mono_right (g : F →ₗ.[R] G) {f f' : E →ₗ.[R] F} (h : f ≤ f') :
     g ∘ᵣ f ≤ g ∘ᵣ f'
 ```
 
-**`LinearPMap.neg_compRestricted`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L265).
+**`LinearPMap.neg_compRestricted`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L265).
 
 ```lean
 lemma neg_compRestricted : (-g) ∘ᵣ f = -g ∘ᵣ f
 ```
 
-**`LinearPMap.compRestricted_neg`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L268).
+**`LinearPMap.compRestricted_neg`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L268).
 
 ```lean
 lemma compRestricted_neg : g ∘ᵣ (-f) = -g ∘ᵣ f
 ```
 
-**`LinearPMap.add_compRestricted`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L274).
+**`LinearPMap.add_compRestricted`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L274).
 
 ```lean
 lemma add_compRestricted : (g₁ + g₂) ∘ᵣ f = g₁ ∘ᵣ f + g₂ ∘ᵣ f
 ```
 
-**`LinearPMap.sub_compRestricted`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L280).
+**`LinearPMap.sub_compRestricted`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L280).
 
 ```lean
 lemma sub_compRestricted : (g₁ - g₂) ∘ᵣ f = g₁ ∘ᵣ f - g₂ ∘ᵣ f
 ```
 
-**`LinearPMap.compRestricted_add_ge`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L283).
+**`LinearPMap.compRestricted_add_ge`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L283).
 
 ```lean
 lemma compRestricted_add_ge : g ∘ᵣ f₁ + g ∘ᵣ f₂ ≤ g ∘ᵣ (f₁ + f₂)
 ```
 
-**`LinearPMap.compRestricted_sub_ge`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L294).
+**`LinearPMap.compRestricted_sub_ge`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L294).
 
 ```lean
 lemma compRestricted_sub_ge : g ∘ᵣ f₁ - g ∘ᵣ f₂ ≤ g ∘ᵣ (f₁ - f₂)
 ```
 
-**`LinearPMap.compRestricted_smul`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L298).
+**`LinearPMap.compRestricted_smul`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L298).
 
 ```lean
 lemma compRestricted_smul {S : Type*} [DivisionRing S]
@@ -333,7 +333,7 @@ lemma compRestricted_smul {S : Type*} [DivisionRing S]
     g ∘ᵣ (c • f) = c • (g ∘ᵣ f)
 ```
 
-**`LinearPMap.smul_compRestricted`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L308).
+**`LinearPMap.smul_compRestricted`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L308).
 
 ```lean
 lemma smul_compRestricted {M : Type*} [Monoid M] [DistribMulAction M G] [SMulCommClass R M G]
@@ -346,31 +346,31 @@ lemma smul_compRestricted {M : Type*} [Monoid M] [DistribMulAction M G] [SMulCom
 > Partial linear maps `E →ₗ.[R] E` with `compRestricted` for multiplication and
 > the identity map (domain `⊤`) for `1` comprise a monoid.
 
-**`LinearPMap.instMonoid`**, an instance, [line 326](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L326).
+**`LinearPMap.instMonoid`**, an instance, [line 326](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L326).
 
 ```lean
 instance instMonoid : Monoid (E →ₗ.[R] E)
 ```
 
-**`LinearPMap.mul_def`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L341).
+**`LinearPMap.mul_def`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L341).
 
 ```lean
 lemma mul_def (f₁ f₂ : E →ₗ.[R] E) : f₁ * f₂ = f₁ ∘ᵣ f₂
 ```
 
-**`LinearPMap.one_domain`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L344).
+**`LinearPMap.one_domain`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L344).
 
 ```lean
 lemma one_domain : (1 : E →ₗ.[R] E).domain = ⊤
 ```
 
-**`LinearPMap.one_toFun`**, a lemma, [line 347](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L347).
+**`LinearPMap.one_toFun`**, a lemma, [line 347](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L347).
 
 ```lean
 lemma one_toFun : (1 : E →ₗ.[R] E).toFun = topEquiv.toLinearMap
 ```
 
-**`LinearPMap.one_coe`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L350).
+**`LinearPMap.one_coe`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L350).
 
 ```lean
 lemma one_coe : (1 : E →ₗ.[R] E).toFun' = ⇑topEquiv.toLinearMap
@@ -378,7 +378,7 @@ lemma one_coe : (1 : E →ₗ.[R] E).toFun' = ⇑topEquiv.toLinearMap
 
 ## F. Inverses
 
-**`LinearPMap.toFun_ker_eq_bot_iff`**, a lemma, [line 361](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L361).
+**`LinearPMap.toFun_ker_eq_bot_iff`**, a lemma, [line 361](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L361).
 
 > The kernel of `f.toFun` is trivial exactly when the kernel of `f` is.
 
@@ -386,25 +386,25 @@ lemma one_coe : (1 : E →ₗ.[R] E).toFun' = ⇑topEquiv.toLinearMap
 lemma toFun_ker_eq_bot_iff {f : E →ₗ.[R] F} : f.toFun.ker = ⊥ ↔ f.ker = ⊥
 ```
 
-**`LinearPMap.inverse_ker`**, a lemma, [line 368](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L368).
+**`LinearPMap.inverse_ker`**, a lemma, [line 368](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L368).
 
 ```lean
 lemma inverse_ker : f.inverse.toFun.ker = ⊥
 ```
 
-**`LinearPMap.inverse_inverse`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L373).
+**`LinearPMap.inverse_inverse`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L373).
 
 ```lean
 lemma inverse_inverse : f.inverse.inverse = f
 ```
 
-**`LinearPMap.inverse_compRestricted_eq`**, a lemma, [line 381](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L381).
+**`LinearPMap.inverse_compRestricted_eq`**, a lemma, [line 381](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L381).
 
 ```lean
 lemma inverse_compRestricted_eq : f.inverse ∘ᵣ f = domRestrict 1 f.domain
 ```
 
-**`LinearPMap.compRestricted_inverse_eq`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L386).
+**`LinearPMap.compRestricted_inverse_eq`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean#L386).
 
 ```lean
 lemma compRestricted_inverse_eq : f ∘ᵣ f.inverse = domRestrict 1 f.inverse.domain
@@ -416,4 +416,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/ForMathlib/LinearPMap.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/LinearPMap.lean)
+- [Physlib/Mathematics/ForMathlib/LinearPMap.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/LinearPMap.lean)

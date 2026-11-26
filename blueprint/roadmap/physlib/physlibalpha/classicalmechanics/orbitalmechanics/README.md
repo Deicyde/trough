@@ -1,9 +1,10 @@
 # OrbitalMechanics
 
-The folder [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics): 26 modules, an article each, in path order.
+The folder [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics): 27 modules, an article each, in path order.
 
-## [Lagrange's circular equilateral… to Hohmann optimality in the ideal…](part-01/README.md)
+## [The Newtonian two-body reduction to Optimality over normalized…](part-01/README.md)
 
+- [The Newtonian two-body reduction](part-01/binarystar.md)
 - [Lagrange's circular equilateral solution](part-01/lagrangeequilateral.md)
 - [Pairwise Newtonian gravitation](part-01/newtoniangravity.md)
 - [Circular orbits for the Hohmann transfer](part-01/hohmann-dynamics-circular.md)
@@ -23,10 +24,10 @@ The folder [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/](https://github.co
 - [A physical bielliptic counterexample](part-01/hohmann-optimality-biellipticwitness.md)
 - [Lower bounds on the two Hohmann impulses](part-01/hohmann-optimality-endpointbounds.md)
 - [Optimality over normalized endpoint velocities](part-01/hohmann-optimality-endpointoptimality.md)
-- [Hohmann optimality in the ideal rocket model](part-01/hohmann-optimality-fuel.md)
 
-## [Attainment of the Hohmann lower… to Dimensionless Hohmann parameters](part-02/README.md)
+## [Hohmann optimality in the ideal… to Dimensionless Hohmann parameters](part-02/README.md)
 
+- [Hohmann optimality in the ideal rocket model](part-02/hohmann-optimality-fuel.md)
 - [Attainment of the Hohmann lower bound](part-02/hohmann-optimality-h1bridge.md)
 - [Kepler conservation and two-impulse bounds](part-02/hohmann-optimality-keplerconservation.md)
 - [Restoring physical units to the Hohmann bounds](part-02/hohmann-optimality-physicalunits.md)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Complementary effects (Physlib)
 
-The module `Physlib.ProbabilisticTheory.Effect.Complement`, [Physlib/ProbabilisticTheory/Effect/Complement.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Complement.lean): 7 declarations, 3 with a docstring.
+The module `Physlib.ProbabilisticTheory.Effect.Complement`, [Physlib/ProbabilisticTheory/Effect/Complement.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Effect/Complement.lean): 7 declarations, 3 with a docstring.
 
 > The complement `1 - e` of an effect, its antitonicity and compatibility with mixtures.
 
@@ -29,7 +29,7 @@ The module `Physlib.ProbabilisticTheory.Effect.Complement`, [Physlib/Probabilist
 
 ## A. The complement
 
-**`ProbabilisticTheory.Effect.complement`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Complement.lean#L51).
+**`ProbabilisticTheory.Effect.complement`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Effect/Complement.lean#L51).
 
 > The complementary effect.
 
@@ -37,13 +37,13 @@ The module `Physlib.ProbabilisticTheory.Effect.Complement`, [Physlib/Probabilist
 def complement (e : P.Effect) : P.Effect
 ```
 
-**`ProbabilisticTheory.Effect.coe_complement`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Complement.lean#L55).
+**`ProbabilisticTheory.Effect.coe_complement`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Effect/Complement.lean#L55).
 
 ```lean
 lemma coe_complement (e : P.Effect) : ((complement e : P.Effect) : P.Observables) = 1 - e
 ```
 
-**`ProbabilisticTheory.Effect.complement_complement`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Complement.lean#L58).
+**`ProbabilisticTheory.Effect.complement_complement`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Effect/Complement.lean#L58).
 
 ```lean
 lemma complement_complement (e : P.Effect) : complement (complement e) = e
@@ -51,7 +51,7 @@ lemma complement_complement (e : P.Effect) : complement (complement e) = e
 
 ## B. Monotonicity of the complement
 
-**`ProbabilisticTheory.Effect.complement_antitone`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Complement.lean#L68).
+**`ProbabilisticTheory.Effect.complement_antitone`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Effect/Complement.lean#L68).
 
 > The complement reverses order: a more certain test's complement is a less certain one.
 
@@ -59,13 +59,13 @@ lemma complement_complement (e : P.Effect) : complement (complement e) = e
 lemma complement_antitone : Antitone (complement (P := P))
 ```
 
-**`ProbabilisticTheory.Effect.complement_zero`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Complement.lean#L72).
+**`ProbabilisticTheory.Effect.complement_zero`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Effect/Complement.lean#L72).
 
 ```lean
 lemma complement_zero : complement (0 : P.Effect) = 1
 ```
 
-**`ProbabilisticTheory.Effect.complement_one`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Complement.lean#L75).
+**`ProbabilisticTheory.Effect.complement_one`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Effect/Complement.lean#L75).
 
 ```lean
 lemma complement_one : complement (1 : P.Effect) = 0
@@ -73,7 +73,7 @@ lemma complement_one : complement (1 : P.Effect) = 0
 
 ## C. The complement and mixtures
 
-**`ProbabilisticTheory.Effect.complement_mix`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Complement.lean#L84).
+**`ProbabilisticTheory.Effect.complement_mix`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Effect/Complement.lean#L84).
 
 > Mixing commutes with taking the complement.
 
@@ -88,4 +88,4 @@ lemma complement_mix (e f : P.Effect) (t : unitInterval) :
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/Effect/Complement.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Complement.lean)
+- [Physlib/ProbabilisticTheory/Effect/Complement.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Effect/Complement.lean)

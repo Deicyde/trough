@@ -8,7 +8,7 @@ proof: formalized
 
 # Trace-class operators
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.Basic`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean): 24 declarations, 18 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.Basic`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean): 24 declarations, 18 with a docstring.
 
 > Defines trace-class operators, their trace norm and trace, and shows basis independence.
 
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.Basic`, [Ph
 
 ## A. Trace class
 
-**`PhyslibAlpha.ProbabilisticTheory.IsTraceClass`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L72).
+**`PhyslibAlpha.ProbabilisticTheory.IsTraceClass`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L72).
 
 > **`T` is trace class**: `∑ᵢ ⟪eᵢ, |T| eᵢ⟫` converges for some Hilbert basis `{eᵢ}` of `H`
 > (`|T| := CFC.abs T`, Mathlib's continuous functional calculus absolute value `√(T⋆T)`). By the
@@ -58,7 +58,7 @@ def IsTraceClass (T : H →L[ℂ] H) : Prop
 > The proofs use the square root of the functional calculus and Parseval's identity for Hilbert
 > bases.
 
-**`PhyslibAlpha.ProbabilisticTheory.hasSum_norm_sq_inner_basis`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L82).
+**`PhyslibAlpha.ProbabilisticTheory.hasSum_norm_sq_inner_basis`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L82).
 
 > **Parseval's identity**: `∑ᵢ |⟪eᵢ, y⟫|² = ‖y‖²` for a Hilbert basis `{eᵢ}`.
 
@@ -67,7 +67,7 @@ lemma hasSum_norm_sq_inner_basis {w : Set H} (b : HilbertBasis w ℂ H) (y : H) 
     HasSum (fun i : w => ‖⟪b i, y⟫_ℂ‖ ^ 2) (‖y‖ ^ 2)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.hasSum_norm_sq_apply_of_selfAdjoint`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L95).
+**`PhyslibAlpha.ProbabilisticTheory.hasSum_norm_sq_apply_of_selfAdjoint`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L95).
 
 > For self-adjoint `S`, the sum `∑ᵢ ‖S eᵢ‖²` does not depend on the Hilbert basis.
 
@@ -78,7 +78,7 @@ lemma hasSum_norm_sq_apply_of_selfAdjoint {S : H →L[ℂ] H} (hS : IsSelfAdjoin
     HasSum (fun j : w' => ‖S (c j)‖ ^ 2) (∑' i : w, ‖S (b i)‖ ^ 2)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.summable_inner_abs_of_hilbertBasis`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L153).
+**`PhyslibAlpha.ProbabilisticTheory.summable_inner_abs_of_hilbertBasis`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L153).
 
 > **Trace class does not depend on the basis**: the diagonal of `|T|` is summable in every Hilbert
 > basis.
@@ -89,7 +89,7 @@ lemma summable_inner_abs_of_hilbertBasis {T : H →L[ℂ] H} (h : IsTraceClass T
     Summable (fun i => (⟪b i, CFC.abs T (b i)⟫_ℂ).re)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_iff`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L182).
+**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_iff`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L182).
 
 > An operator is trace class iff the diagonal of `|T|` is summable in every Hilbert basis.
 
@@ -100,7 +100,7 @@ lemma isTraceClass_iff {T : H →L[ℂ] H} :
         Summable (fun i => (⟪b i, CFC.abs T (b i)⟫_ℂ).re)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_of_finiteDimensional`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L194).
+**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_of_finiteDimensional`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L194).
 
 > Every operator on a finite-dimensional Hilbert space is trace class.
 
@@ -109,7 +109,7 @@ lemma isTraceClass_of_finiteDimensional [FiniteDimensional ℂ H] (T : H →L[�
     IsTraceClass T
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.trace_eq_sum_inner_hilbertBasis_of_finiteDimensional`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L205).
+**`PhyslibAlpha.ProbabilisticTheory.trace_eq_sum_inner_hilbertBasis_of_finiteDimensional`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L205).
 
 > The ordinary finite-dimensional trace is the diagonal sum in any Hilbert basis.
 
@@ -119,7 +119,7 @@ lemma trace_eq_sum_inner_hilbertBasis_of_finiteDimensional
     LinearMap.trace ℂ H T.toLinearMap = ∑' i : w, ⟪b i, T (b i)⟫_ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.traceNorm`**, a def, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L217).
+**`PhyslibAlpha.ProbabilisticTheory.traceNorm`**, a def, [line 217](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L217).
 
 > The trace norm `‖T‖₁ := ∑ᵢ ⟪eᵢ, |T| eᵢ⟫`, computed via a chosen witness Hilbert basis (any
 > basis gives the same value, by `summable_inner_abs_of_hilbertBasis` — this definition just needs
@@ -129,7 +129,7 @@ lemma trace_eq_sum_inner_hilbertBasis_of_finiteDimensional
 def traceNorm (T : H →L[ℂ] H) (h : IsTraceClass T) : ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.traceNorm_congr`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L223).
+**`PhyslibAlpha.ProbabilisticTheory.traceNorm_congr`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L223).
 
 > The witness proof argument of `traceNorm` is immaterial.  This small lemma is useful when
 > transporting a trace-class operator through a construction that produces a new proof of the same
@@ -140,7 +140,7 @@ lemma traceNorm_congr {T : H →L[ℂ] H} {h₁ h₂ : IsTraceClass T} :
     traceNorm T h₁ = traceNorm T h₂
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.trace`**, a def, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L230).
+**`PhyslibAlpha.ProbabilisticTheory.trace`**, a def, [line 230](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L230).
 
 > **The trace** `Tr T = ∑ᵢ ⟪eᵢ, T eᵢ⟫` of a trace-class operator, in the basis witnessing that it
 > is trace class.
@@ -149,7 +149,7 @@ lemma traceNorm_congr {T : H →L[ℂ] H} {h₁ h₂ : IsTraceClass T} :
 def trace (T : H →L[ℂ] H) (h : IsTraceClass T) : ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.trace_congr`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L234).
+**`PhyslibAlpha.ProbabilisticTheory.trace_congr`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L234).
 
 > The trace does not depend on the proof that the operator is trace class.
 
@@ -158,7 +158,7 @@ lemma trace_congr {T : H →L[ℂ] H} {h₁ h₂ : IsTraceClass T} :
     trace T h₁ = trace T h₂
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.traceNorm_eq_of_hilbertBasis`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L242).
+**`PhyslibAlpha.ProbabilisticTheory.traceNorm_eq_of_hilbertBasis`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L242).
 
 > The trace norm is independent of the witness basis used in `IsTraceClass`.  This is the
 > strong form of `summable_inner_abs_of_hilbertBasis`: the square-root/Parseval argument identifies
@@ -170,14 +170,14 @@ lemma traceNorm_eq_of_hilbertBasis {T : H →L[ℂ] H} (h : IsTraceClass T) {w :
     traceNorm T h = ∑' i, (⟪b i, CFC.abs T (b i)⟫_ℂ).re
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.real_inner_nonneg_of_nonneg`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L288).
+**`PhyslibAlpha.ProbabilisticTheory.real_inner_nonneg_of_nonneg`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L288).
 
 ```lean
 lemma real_inner_nonneg_of_nonneg {T : H →L[ℂ] H} (hT : 0 ≤ T) (x : H) :
     0 ≤ (⟪x, T x⟫_ℂ).re
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.traceNorm_nonneg`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L300).
+**`PhyslibAlpha.ProbabilisticTheory.traceNorm_nonneg`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L300).
 
 > The trace norm is nonnegative.  This is exposed separately from its basis-independence result
 > so norm estimates can use it without unpacking the chosen Hilbert-basis witness.
@@ -186,28 +186,28 @@ lemma real_inner_nonneg_of_nonneg {T : H →L[ℂ] H} (hT : 0 ≤ T) (x : H) :
 lemma traceNorm_nonneg (T : H →L[ℂ] H) (h : IsTraceClass T) : 0 ≤ traceNorm T h
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.real_inner_mono_of_le`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L306).
+**`PhyslibAlpha.ProbabilisticTheory.real_inner_mono_of_le`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L306).
 
 ```lean
 lemma real_inner_mono_of_le {P Q : H →L[ℂ] H} (hPQ : P ≤ Q) (x : H) :
     (⟪x, P x⟫_ℂ).re ≤ (⟪x, Q x⟫_ℂ).re
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_posPart_of_isSelfAdjoint`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L319).
+**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_posPart_of_isSelfAdjoint`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L319).
 
 ```lean
 lemma isTraceClass_posPart_of_isSelfAdjoint {T : H →L[ℂ] H} (hT : IsSelfAdjoint T)
     (h : IsTraceClass T) : IsTraceClass T⁺
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_negPart_of_isSelfAdjoint`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L335).
+**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_negPart_of_isSelfAdjoint`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L335).
 
 ```lean
 lemma isTraceClass_negPart_of_isSelfAdjoint {T : H →L[ℂ] H} (hT : IsSelfAdjoint T)
     (h : IsTraceClass T) : IsTraceClass T⁻
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.summable_inner_of_nonneg`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L351).
+**`PhyslibAlpha.ProbabilisticTheory.summable_inner_of_nonneg`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L351).
 
 ```lean
 lemma summable_inner_of_nonneg {T : H →L[ℂ] H} (hT : 0 ≤ T) (h : IsTraceClass T)
@@ -222,7 +222,7 @@ lemma summable_inner_of_nonneg {T : H →L[ℂ] H} (hT : 0 ≤ T) (h : IsTraceCl
 > Parseval double-sum theorem already proved above gives the same sum in every Hilbert basis.  This
 > is the positive case needed by density operators and does not use polar decomposition.
 
-**`PhyslibAlpha.ProbabilisticTheory.trace_eq_of_hilbertBasis_of_nonneg`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L386).
+**`PhyslibAlpha.ProbabilisticTheory.trace_eq_of_hilbertBasis_of_nonneg`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L386).
 
 ```lean
 lemma trace_eq_of_hilbertBasis_of_nonneg {T : H →L[ℂ] H} (hT : 0 ≤ T)
@@ -230,7 +230,7 @@ lemma trace_eq_of_hilbertBasis_of_nonneg {T : H →L[ℂ] H} (hT : 0 ≤ T)
     trace T h = ∑' i, ⟪b i, T (b i)⟫_ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.trace_eq_of_hilbertBasis_of_isSelfAdjoint`**, a lemma, [line 435](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L435).
+**`PhyslibAlpha.ProbabilisticTheory.trace_eq_of_hilbertBasis_of_isSelfAdjoint`**, a lemma, [line 435](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L435).
 
 > Basis-independent trace for self-adjoint trace-class operators.  The proof reduces to the
 > positive theorem through the continuous-functional-calculus decomposition `T = T⁺ - T⁻`; no
@@ -244,7 +244,7 @@ lemma trace_eq_of_hilbertBasis_of_isSelfAdjoint {T : H →L[ℂ] H} (hT : IsSelf
 
 ## B. Finite multiplicity
 
-**`PhyslibAlpha.ProbabilisticTheory.HasFiniteMultiplicity`**, a def, [line 485](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L485).
+**`PhyslibAlpha.ProbabilisticTheory.HasFiniteMultiplicity`**, a def, [line 485](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L485).
 
 > A projection has finite multiplicity when it is trace class.
 
@@ -252,7 +252,7 @@ lemma trace_eq_of_hilbertBasis_of_isSelfAdjoint {T : H →L[ℂ] H} (hT : IsSelf
 def HasFiniteMultiplicity (p : H →L[ℂ] H) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.HasFiniteMultiplicity.finiteDimensional_range`**, a lemma, [line 488](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L488).
+**`PhyslibAlpha.ProbabilisticTheory.HasFiniteMultiplicity.finiteDimensional_range`**, a lemma, [line 488](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L488).
 
 > A projection of finite multiplicity has finite-dimensional range.
 
@@ -262,7 +262,7 @@ lemma HasFiniteMultiplicity.finiteDimensional_range {p : H →L[ℂ] H}
     FiniteDimensional ℂ (LinearMap.range p.toLinearMap)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.HasFiniteMultiplicity.trace_eq_finrank_range`**, a lemma, [line 543](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L543).
+**`PhyslibAlpha.ProbabilisticTheory.HasFiniteMultiplicity.trace_eq_finrank_range`**, a lemma, [line 543](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L543).
 
 > A finite-multiplicity projection has the expected trace.  The basis calculation is finite-rank:
 > extend an orthonormal basis of the range to one of `H`; the projection vanishes on the complementary
@@ -274,7 +274,7 @@ lemma HasFiniteMultiplicity.trace_eq_finrank_range
     trace p hp.2 = (Module.finrank ℂ (LinearMap.range p.toLinearMap) : ℂ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.HasFiniteMultiplicity.trace_eq_finrank_range_of_finiteDimensional`**, a lemma, [line 704](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L704).
+**`PhyslibAlpha.ProbabilisticTheory.HasFiniteMultiplicity.trace_eq_finrank_range_of_finiteDimensional`**, a lemma, [line 704](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean#L704).
 
 > In finite dimension, the trace of a projection is the dimension of its range.
 
@@ -290,4 +290,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean)

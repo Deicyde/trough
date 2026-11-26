@@ -8,7 +8,7 @@ proof: formalized
 
 # The integrated form of a strongly continuous representation
 
-The module `PhyslibAlpha.Mathematics.TauCeti.RepresentationTheory.Continuous.Integrated.Basic`, [PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean): 14 declarations, 14 with a docstring; 2 private, not shown.
+The module `PhyslibAlpha.Mathematics.TauCeti.RepresentationTheory.Continuous.Integrated.Basic`, [PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean): 14 declarations, 14 with a docstring; 2 private, not shown.
 
 > Let `π` be a representation of an additive topological group `G` (written multiplicatively, as a
 > `ContRepresentation` of `Multiplicative G`) on a normed space `E`, which is **strongly continuous**
@@ -89,7 +89,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.RepresentationTheory.Continuous.Int
 
 ## A. Development
 
-**`ContRepresentation.integratedOperatorL1`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L150).
+**`ContRepresentation.integratedOperatorL1`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L150).
 
 > The **integrated form** of a strongly continuous, uniformly bounded representation `π` of an
 > additive group `G` (written multiplicatively as `Multiplicative G`): the bounded operator
@@ -103,7 +103,7 @@ noncomputable def _root_.ContRepresentation.integratedOperatorL1
     (G →₁[μ] 𝕜) →L[𝕜] E →L[𝕜] E
 ```
 
-**`ContRepresentation.integratedOperatorL1_apply`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L181).
+**`ContRepresentation.integratedOperatorL1_apply`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L181).
 
 > The integrated form acts on a vector by integrating its orbit against the weight.
 
@@ -112,7 +112,7 @@ lemma _root_.ContRepresentation.integratedOperatorL1_apply (f : G →₁[μ] �
     π.integratedOperatorL1 hcont hbdd μ f v = ∫ g, f g • π (.ofAdd g) v ∂μ
 ```
 
-**`ContRepresentation.integratedOperatorL1_toL1`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L187).
+**`ContRepresentation.integratedOperatorL1_toL1`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L187).
 
 > The integrated form of the class of an integrable function.
 
@@ -122,7 +122,7 @@ lemma _root_.ContRepresentation.integratedOperatorL1_toL1 {f : G → 𝕜} (hf :
     π.integratedOperatorL1 hcont hbdd μ (hf.toL1 f) v = ∫ g, f g • π (.ofAdd g) v ∂μ
 ```
 
-**`ContRepresentation.norm_integratedOperatorL1_le`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L197).
+**`ContRepresentation.norm_integratedOperatorL1_le`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L197).
 
 > The integrated form is bounded by the uniform bound of the representation times the `L¹`
 > norm of the weight.
@@ -133,7 +133,7 @@ lemma _root_.ContRepresentation.norm_integratedOperatorL1_le {C : ℝ} (hC : ∀
     ‖π.integratedOperatorL1 hcont hbdd μ f‖ ≤ C * ‖f‖
 ```
 
-**`ContRepresentation.comp_integratedOperatorL1`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L207).
+**`ContRepresentation.comp_integratedOperatorL1`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L207).
 
 > Translating the weight on the left by `h` amounts to composing the integrated form with
 > `π h`.
@@ -146,7 +146,7 @@ lemma _root_.ContRepresentation.comp_integratedOperatorL1 [CompleteSpace E] [Mea
         (Lp.compMeasurePreserving (fun g ↦ -h + g) (measurePreserving_add_left μ (-h)) f)
 ```
 
-**`ContRepresentation.continuous_comp_integratedOperatorL1`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L230).
+**`ContRepresentation.continuous_comp_integratedOperatorL1`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L230).
 
 > Although `π` is only strongly continuous, `h ↦ π h ∘L π(f)` is continuous in the operator norm:
 > by `comp_integratedOperatorL1` it is the integrated form of the left translates of `f`, which
@@ -159,7 +159,7 @@ lemma _root_.ContRepresentation.continuous_comp_integratedOperatorL1 [CompleteSp
     Continuous fun h : G ↦ π (.ofAdd h) ∘L π.integratedOperatorL1 hcont hbdd μ f
 ```
 
-**`ContRepresentation.commute_integratedOperatorL1`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L253).
+**`ContRepresentation.commute_integratedOperatorL1`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L253).
 
 > Every action operator of a representation of an abelian group commutes with its
 > integrated operators. No invariance hypothesis on the measure is needed.
@@ -170,7 +170,7 @@ lemma _root_.ContRepresentation.commute_integratedOperatorL1
     Commute (π g) (π.integratedOperatorL1 hcont hbdd μ f)
 ```
 
-**`ContRepresentation.integratedOperatorL1_commute`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L269).
+**`ContRepresentation.integratedOperatorL1_commute`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L269).
 
 > Integrated operators of an abelian-group representation commute for any measure.
 
@@ -180,7 +180,7 @@ lemma _root_.ContRepresentation.integratedOperatorL1_commute (f₁ f₂ : G →�
       (π.integratedOperatorL1 hcont hbdd μ f₂)
 ```
 
-**`ContRepresentation.integratedOperatorL1_convolution`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L300).
+**`ContRepresentation.integratedOperatorL1_convolution`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L300).
 
 > The integrated form turns convolution of weights into composition of operators:
 > `π(f₁ ⋆ f₂) = π(f₁) ∘L π(f₂)`.
@@ -194,7 +194,7 @@ lemma _root_.ContRepresentation.integratedOperatorL1_convolution {f₁ f₂ : G 
         π.integratedOperatorL1 hcont hbdd μ (hf₂.toL1 f₂)
 ```
 
-**`ContRepresentation.inner_integratedOperatorL1_apply`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L350).
+**`ContRepresentation.inner_integratedOperatorL1_apply`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L350).
 
 > Matrix coefficients of the integrated form are the integrals of the matrix coefficients of the
 > representation against the weight.
@@ -204,7 +204,7 @@ lemma _root_.ContRepresentation.inner_integratedOperatorL1_apply (f : G →₁[�
     ⟪w, π.integratedOperatorL1 hcont hbdd μ f v⟫_𝕜 = ∫ g, f g * ⟪w, π (.ofAdd g) v⟫_𝕜 ∂μ
 ```
 
-**`ContRepresentation.adjoint_integratedOperatorL1`**, a lemma, [line 358](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L358).
+**`ContRepresentation.adjoint_integratedOperatorL1`**, a lemma, [line 358](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L358).
 
 > The adjoint of the integrated form of a unitary representation is the integrated form of the
 > involuted weight `g ↦ conj (f (-g))`.
@@ -217,7 +217,7 @@ lemma _root_.ContRepresentation.adjoint_integratedOperatorL1 [MeasurableNeg G]
         (star (Lp.compMeasurePreserving Neg.neg (Measure.measurePreserving_neg μ) f))
 ```
 
-**`ContRepresentation.isStarNormal_integratedOperatorL1`**, a lemma, [line 388](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L388).
+**`ContRepresentation.isStarNormal_integratedOperatorL1`**, a lemma, [line 388](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L388).
 
 > The integrated operators of a unitary abelian-group representation are normal.
 
@@ -227,7 +227,7 @@ lemma _root_.ContRepresentation.isStarNormal_integratedOperatorL1
     IsStarNormal (π.integratedOperatorL1 hcont hbdd μ f)
 ```
 
-**`ContRepresentation.tendsto_integratedOperatorL1_apply`**, a lemma, [line 412](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L412).
+**`ContRepresentation.tendsto_integratedOperatorL1_apply`**, a lemma, [line 412](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L412).
 
 > **Approximate identities for the integrated form.** If the weights `f i` eventually have unit
 > integral and `L¹` norm at most `C`, and concentrate at `0` (for every neighbourhood `U` of `0`,
@@ -242,7 +242,7 @@ lemma _root_.ContRepresentation.tendsto_integratedOperatorL1_apply {ι : Type*} 
     Tendsto (fun i ↦ π.integratedOperatorL1 hcont hbdd μ (f i) v) l (𝓝 v)
 ```
 
-**`ContRepresentation.mem_closure_range_integratedOperatorL1_apply`**, a lemma, [line 425](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L425).
+**`ContRepresentation.mem_closure_range_integratedOperatorL1_apply`**, a lemma, [line 425](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean#L425).
 
 > **The integrated form is nondegenerate.** For a measure positive on nonempty open sets and
 > finite on some neighbourhood of each point, such as a Haar measure on a locally compact group, every
@@ -266,4 +266,4 @@ lemma _root_.ContRepresentation.mem_closure_range_integratedOperatorL1_apply
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Integrated/Basic.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The positive-definite function ↔ positive-definite kernel correspondence
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Function.Kernel`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Kernel.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Kernel.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Function.Kernel`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Kernel.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Kernel.lean): 3 declarations, 3 with a docstring.
 
 > A positive-definite function `F : M → ℂ` on an involutive additive monoid and a positive-definite
 > kernel `K : M → M → ℂ` are two views of the same data, linked by the assignment `K(a, b) = F(a +
@@ -53,7 +53,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Function.
 
 ## A. Development
 
-**`TauCeti.isPositiveDefinite_iff_posSemidef`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Kernel.lean#L72).
+**`TauCeti.isPositiveDefinite_iff_posSemidef`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Kernel.lean#L72).
 
 > A function `F` on an involutive additive monoid is positive definite if and only if the
 > two-variable kernel `K(a, b) = F(a + b⋆)` is positive definite.
@@ -63,7 +63,7 @@ lemma isPositiveDefinite_iff_posSemidef :
     IsPositiveDefinite F ↔ Matrix.PosSemidef (fun a b => F (a + star b))
 ```
 
-**`TauCeti.IsPositiveDefinite.posSemidef_sub`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Kernel.lean#L83).
+**`TauCeti.IsPositiveDefinite.posSemidef_sub`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Kernel.lean#L83).
 
 > Under the negation involution `a⋆ = -a`, a positive-definite function `F` gives the
 > translation-invariant positive-definite kernel `K(a, b) = F(a - b)`. This is the form in which
@@ -74,7 +74,7 @@ lemma posSemidef_sub (hstar : ∀ a : G, star a = -a) (hF : IsPositiveDefinite F
     Matrix.PosSemidef (fun a b => F (a - b))
 ```
 
-**`TauCeti.isPositiveDefinite_iff_posSemidef_sub`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Kernel.lean#L97).
+**`TauCeti.isPositiveDefinite_iff_posSemidef_sub`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Kernel.lean#L97).
 
 > Under the negation involution `a⋆ = -a`, `F` is positive definite if and only if the
 > translation-invariant kernel `K(a, b) = F(a - b)` is positive definite.
@@ -90,4 +90,4 @@ lemma isPositiveDefinite_iff_posSemidef_sub (hstar : ∀ a : G, star a = -a) :
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Kernel.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Kernel.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Kernel.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Kernel.lean)

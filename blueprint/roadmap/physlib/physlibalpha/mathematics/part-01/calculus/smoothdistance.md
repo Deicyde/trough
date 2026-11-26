@@ -8,7 +8,7 @@ proof: formalized
 
 # A smooth substitute for the distance
 
-The module `PhyslibAlpha.Mathematics.Calculus.SmoothDistance`, [PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean): 9 declarations, 1 with a docstring.
+The module `PhyslibAlpha.Mathematics.Calculus.SmoothDistance`, [PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean): 9 declarations, 1 with a docstring.
 
 > The function `sqrt (ε^2 + ‖x - x₀‖^2)` is smooth and bounds the distance.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.Mathematics.Calculus.SmoothDistance`, [PhyslibAlpha/Mat
 > `hasFDerivAt_smoothDist`, `deriv_expNegInvGlue_nonneg`, `deriv_expNegInvGlue_of_nonpos`,
 > `continuous_deriv_expNegInvGlue`, `hasDerivAt_expNegInvGlue`.
 
-**`SmoothDistance.smoothDist`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L62).
+**`SmoothDistance.smoothDist`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L62).
 
 > The smooth distance `√(ε² + ‖x - x₀‖²)`.
 
@@ -44,50 +44,50 @@ The module `PhyslibAlpha.Mathematics.Calculus.SmoothDistance`, [PhyslibAlpha/Mat
 def smoothDist (ε : ℝ) (x₀ x : E) : ℝ
 ```
 
-**`SmoothDistance.smoothDist_pos`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L65).
+**`SmoothDistance.smoothDist_pos`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L65).
 
 ```lean
 lemma smoothDist_pos {ε : ℝ} (hε : 0 < ε) (x₀ x : E) : 0 < smoothDist ε x₀ x
 ```
 
-**`SmoothDistance.norm_sub_le_smoothDist`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L69).
+**`SmoothDistance.norm_sub_le_smoothDist`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L69).
 
 ```lean
 lemma norm_sub_le_smoothDist (ε : ℝ) (x₀ x : E) : ‖x - x₀‖ ≤ smoothDist ε x₀ x
 ```
 
-**`SmoothDistance.continuous_smoothDist`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L74).
+**`SmoothDistance.continuous_smoothDist`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L74).
 
 ```lean
 lemma continuous_smoothDist (ε : ℝ) (x₀ : E) : Continuous (smoothDist ε x₀)
 ```
 
-**`SmoothDistance.hasFDerivAt_smoothDist`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L77).
+**`SmoothDistance.hasFDerivAt_smoothDist`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L77).
 
 ```lean
 lemma hasFDerivAt_smoothDist {ε : ℝ} (hε : 0 < ε) (x₀ x : E) :
     HasFDerivAt (smoothDist ε x₀) ((1 / smoothDist ε x₀ x) • innerSL ℝ (x - x₀)) x
 ```
 
-**`SmoothDistance.deriv_expNegInvGlue_nonneg`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L92).
+**`SmoothDistance.deriv_expNegInvGlue_nonneg`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L92).
 
 ```lean
 lemma deriv_expNegInvGlue_nonneg (r : ℝ) : 0 ≤ deriv expNegInvGlue r
 ```
 
-**`SmoothDistance.deriv_expNegInvGlue_of_nonpos`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L95).
+**`SmoothDistance.deriv_expNegInvGlue_of_nonpos`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L95).
 
 ```lean
 lemma deriv_expNegInvGlue_of_nonpos {r : ℝ} (hr : r ≤ 0) : deriv expNegInvGlue r = 0
 ```
 
-**`SmoothDistance.continuous_deriv_expNegInvGlue`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L107).
+**`SmoothDistance.continuous_deriv_expNegInvGlue`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L107).
 
 ```lean
 lemma continuous_deriv_expNegInvGlue : Continuous (deriv expNegInvGlue)
 ```
 
-**`SmoothDistance.hasDerivAt_expNegInvGlue`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L110).
+**`SmoothDistance.hasDerivAt_expNegInvGlue`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean#L110).
 
 ```lean
 lemma hasDerivAt_expNegInvGlue (r : ℝ) : HasDerivAt expNegInvGlue (deriv expNegInvGlue r) r
@@ -99,4 +99,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean)
+- [PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Calculus/SmoothDistance.lean)

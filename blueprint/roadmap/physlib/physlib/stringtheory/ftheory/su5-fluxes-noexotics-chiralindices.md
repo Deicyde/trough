@@ -8,7 +8,7 @@ proof: formalized
 
 # Constraints on chiral indices from the condition of no chiral exotics
 
-The module `Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.ChiralIndices`, [Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean): 25 declarations, 14 with a docstring.
+The module `Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.ChiralIndices`, [Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean): 25 declarations, 14 with a docstring.
 
 ## i. Overview
 
@@ -38,7 +38,7 @@ The module `Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.ChiralIndices`, [P
 
 > The chiral indices of all the SM representations are non-negative if there are no chiral exotics.
 
-**`FTheory.SU5.FluxesFive.chiralIndicesOfD_noneg_of_noExotics`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L66).
+**`FTheory.SU5.FluxesFive.chiralIndicesOfD_noneg_of_noExotics`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L66).
 
 > The chiral indices of the representations `D = (bar 3,1)_{1/3}` are all non-negative if
 > there are no chiral exotics in the spectrum.
@@ -48,7 +48,7 @@ lemma FluxesFive.chiralIndicesOfD_noneg_of_noExotics (F : FluxesFive) (hF : NoEx
     (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfD) : 0 ≤ ci
 ```
 
-**`FTheory.SU5.FluxesFive.chiralIndicesOfL_noneg_of_noExotics`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L84).
+**`FTheory.SU5.FluxesFive.chiralIndicesOfL_noneg_of_noExotics`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L84).
 
 > The chiral indices of the representations `L = (1,2)_{-1/2}` are all non-negative if
 > there are no chiral exotics in the spectrum.
@@ -58,7 +58,7 @@ lemma FluxesFive.chiralIndicesOfL_noneg_of_noExotics (F : FluxesFive) (hF : NoEx
     (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfL) : 0 ≤ ci
 ```
 
-**`FTheory.SU5.FluxesTen.chiralIndicesOfQ_noneg_of_noExotics`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L102).
+**`FTheory.SU5.FluxesTen.chiralIndicesOfQ_noneg_of_noExotics`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L102).
 
 > The chiral indices of the representations `Q = (3,2)_{1/6}` are all non-negative if
 > there are no chiral exotics in the spectrum.
@@ -68,7 +68,7 @@ lemma FluxesTen.chiralIndicesOfQ_noneg_of_noExotics (F : FluxesTen) (hF : NoExot
     (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfQ) : 0 ≤ ci
 ```
 
-**`FTheory.SU5.FluxesTen.chiralIndicesOfU_noneg_of_noExotics`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L120).
+**`FTheory.SU5.FluxesTen.chiralIndicesOfU_noneg_of_noExotics`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L120).
 
 > The chiral indices of the representations `U = (bar 3,1)_{-2/3}` are all non-negative if
 > there are no chiral exotics in the spectrum.
@@ -78,7 +78,7 @@ lemma FluxesTen.chiralIndicesOfU_noneg_of_noExotics (F : FluxesTen) (hF : NoExot
     (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfU) : 0 ≤ ci
 ```
 
-**`FTheory.SU5.FluxesTen.chiralIndicesOfE_noneg_of_noExotics`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L136).
+**`FTheory.SU5.FluxesTen.chiralIndicesOfE_noneg_of_noExotics`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L136).
 
 ```lean
 lemma FluxesTen.chiralIndicesOfE_noneg_of_noExotics (F : FluxesTen) (hF : NoExotics F)
@@ -90,7 +90,7 @@ lemma FluxesTen.chiralIndicesOfE_noneg_of_noExotics (F : FluxesTen) (hF : NoExot
 > The sum of the chiral indices of each representation is equal to three if
 > there are no chiral exotics.
 
-**`FTheory.SU5.FluxesFive.chiralIndicesOfD_sum_eq_three_of_noExotics`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L163).
+**`FTheory.SU5.FluxesFive.chiralIndicesOfD_sum_eq_three_of_noExotics`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L163).
 
 > The sum of the chiral indices of the representations `D = (bar 3,1)_{1/3}` is equal
 > to `3` in the presences of no exotics.
@@ -100,7 +100,7 @@ lemma FluxesFive.chiralIndicesOfD_sum_eq_three_of_noExotics (F : FluxesFive) (hF
     F.chiralIndicesOfD.sum = 3
 ```
 
-**`FTheory.SU5.FluxesFive.chiralIndicesOfL_sum_eq_three_of_noExotics`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L171).
+**`FTheory.SU5.FluxesFive.chiralIndicesOfL_sum_eq_three_of_noExotics`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L171).
 
 > The sum of the chiral indices of the representations `L = (1,2)_{-1/2}` is equal
 > to `3` in the presences of no exotics.
@@ -110,7 +110,7 @@ lemma FluxesFive.chiralIndicesOfL_sum_eq_three_of_noExotics (F : FluxesFive) (hF
     F.chiralIndicesOfL.sum = 3
 ```
 
-**`FTheory.SU5.FluxesTen.chiralIndicesOfQ_sum_eq_three_of_noExotics`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L179).
+**`FTheory.SU5.FluxesTen.chiralIndicesOfQ_sum_eq_three_of_noExotics`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L179).
 
 > The sum of the chiral indices of the representations `Q = (3,2)_{1/6}` is equal
 > to `3` in the presences of no exotics.
@@ -120,7 +120,7 @@ lemma FluxesTen.chiralIndicesOfQ_sum_eq_three_of_noExotics (F : FluxesTen) (hF :
     F.chiralIndicesOfQ.sum = 3
 ```
 
-**`FTheory.SU5.FluxesTen.chiralIndicesOfU_sum_eq_three_of_noExotics`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L187).
+**`FTheory.SU5.FluxesTen.chiralIndicesOfU_sum_eq_three_of_noExotics`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L187).
 
 > The sum of the chiral indices of the representations `U = (bar 3,1)_{-2/3}` is equal
 > to `3` in the presences of no exotics.
@@ -130,7 +130,7 @@ lemma FluxesTen.chiralIndicesOfU_sum_eq_three_of_noExotics (F : FluxesTen) (hF :
     F.chiralIndicesOfU.sum = 3
 ```
 
-**`FTheory.SU5.FluxesTen.chiralIndicesOfE_sum_eq_three_of_noExotics`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L195).
+**`FTheory.SU5.FluxesTen.chiralIndicesOfE_sum_eq_three_of_noExotics`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L195).
 
 > The sum of the chiral indices of the representations `E = (1,1)_{1}` is equal
 > to `3` in the presences of no exotics.
@@ -142,7 +142,7 @@ lemma FluxesTen.chiralIndicesOfE_sum_eq_three_of_noExotics (F : FluxesTen) (hF :
 
 ## C. Each chiral index is less then or equal to three given no exotics
 
-**`FTheory.SU5.FluxesFive.chiralIndicesOfD_le_three_of_noExotics`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L209).
+**`FTheory.SU5.FluxesFive.chiralIndicesOfD_le_three_of_noExotics`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L209).
 
 > The chiral indices of the representation `D = (bar 3,1)_{1/3}` are less then
 > or equal to `3`.
@@ -152,7 +152,7 @@ lemma FluxesFive.chiralIndicesOfD_le_three_of_noExotics (F : FluxesFive) (hF : N
     (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfD) : ci ≤ 3
 ```
 
-**`FTheory.SU5.FluxesFive.chiralIndicesOfL_le_three_of_noExotics`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L217).
+**`FTheory.SU5.FluxesFive.chiralIndicesOfL_le_three_of_noExotics`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L217).
 
 > The chiral indices of the representation `L = (1,2)_{-1/2}` are less then
 > or equal to `3`.
@@ -162,7 +162,7 @@ lemma FluxesFive.chiralIndicesOfL_le_three_of_noExotics (F : FluxesFive) (hF : N
     (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfL) : ci ≤ 3
 ```
 
-**`FTheory.SU5.FluxesTen.chiralIndicesOfQ_le_three_of_noExotics`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L225).
+**`FTheory.SU5.FluxesTen.chiralIndicesOfQ_le_three_of_noExotics`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L225).
 
 > The chiral indices of the representation `Q = (3,2)_{1/6}` are less then
 > or equal to `3`.
@@ -172,7 +172,7 @@ lemma FluxesTen.chiralIndicesOfQ_le_three_of_noExotics (F : FluxesTen) (hF : NoE
     (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfQ) : ci ≤ 3
 ```
 
-**`FTheory.SU5.FluxesTen.chiralIndicesOfU_le_three_of_noExotics`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L233).
+**`FTheory.SU5.FluxesTen.chiralIndicesOfU_le_three_of_noExotics`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L233).
 
 > The chiral indices of the representation `U = (bar 3,1)_{-2/3}` are less then
 > or equal to `3`.
@@ -182,7 +182,7 @@ lemma FluxesTen.chiralIndicesOfU_le_three_of_noExotics (F : FluxesTen) (hF : NoE
     (ci : ℤ) (hci : ci ∈ F.chiralIndicesOfU) : ci ≤ 3
 ```
 
-**`FTheory.SU5.FluxesTen.chiralIndicesOfE_le_three_of_noExotics`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L241).
+**`FTheory.SU5.FluxesTen.chiralIndicesOfE_le_three_of_noExotics`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L241).
 
 > The chiral indices of the representation `E = (1,1)_{1}` are less then
 > or equal to `3`.
@@ -194,7 +194,7 @@ lemma FluxesTen.chiralIndicesOfE_le_three_of_noExotics (F : FluxesTen) (hF : NoE
 
 ## D. Each chiral index is 0, 1, 2, or 3 given no exotics
 
-**`FTheory.SU5.FluxesFive.mem_chiralIndicesOfD_mem_of_noExotics`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L253).
+**`FTheory.SU5.FluxesFive.mem_chiralIndicesOfD_mem_of_noExotics`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L253).
 
 ```lean
 lemma FluxesFive.mem_chiralIndicesOfD_mem_of_noExotics (F : FluxesFive)
@@ -202,7 +202,7 @@ lemma FluxesFive.mem_chiralIndicesOfD_mem_of_noExotics (F : FluxesFive)
     ci ∈ ({0, 1, 2, 3} : Finset ℤ)
 ```
 
-**`FTheory.SU5.FluxesFive.mem_chiralIndicesOfL_mem_of_noExotics`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L261).
+**`FTheory.SU5.FluxesFive.mem_chiralIndicesOfL_mem_of_noExotics`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L261).
 
 ```lean
 lemma FluxesFive.mem_chiralIndicesOfL_mem_of_noExotics (F : FluxesFive)
@@ -210,7 +210,7 @@ lemma FluxesFive.mem_chiralIndicesOfL_mem_of_noExotics (F : FluxesFive)
     ci ∈ ({0, 1, 2, 3} : Finset ℤ)
 ```
 
-**`FTheory.SU5.FluxesTen.mem_chiralIndicesOfQ_mem_of_noExotics`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L269).
+**`FTheory.SU5.FluxesTen.mem_chiralIndicesOfQ_mem_of_noExotics`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L269).
 
 ```lean
 lemma FluxesTen.mem_chiralIndicesOfQ_mem_of_noExotics (F : FluxesTen)
@@ -218,7 +218,7 @@ lemma FluxesTen.mem_chiralIndicesOfQ_mem_of_noExotics (F : FluxesTen)
     ci ∈ ({0, 1, 2, 3} : Finset ℤ)
 ```
 
-**`FTheory.SU5.FluxesTen.mem_chiralIndicesOfU_mem_of_noExotics`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L277).
+**`FTheory.SU5.FluxesTen.mem_chiralIndicesOfU_mem_of_noExotics`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L277).
 
 ```lean
 lemma FluxesTen.mem_chiralIndicesOfU_mem_of_noExotics (F : FluxesTen)
@@ -226,7 +226,7 @@ lemma FluxesTen.mem_chiralIndicesOfU_mem_of_noExotics (F : FluxesTen)
     ci ∈ ({0, 1, 2, 3} : Finset ℤ)
 ```
 
-**`FTheory.SU5.FluxesTen.mem_chiralIndicesOfE_mem_of_noExotics`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L285).
+**`FTheory.SU5.FluxesTen.mem_chiralIndicesOfE_mem_of_noExotics`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L285).
 
 ```lean
 lemma FluxesTen.mem_chiralIndicesOfE_mem_of_noExotics (F : FluxesTen)
@@ -236,7 +236,7 @@ lemma FluxesTen.mem_chiralIndicesOfE_mem_of_noExotics (F : FluxesTen)
 
 ## E. Sum of a subset of chiral indices is less then or equal to 3 given no exotics
 
-**`FTheory.SU5.FluxesFive.chiralIndicesOfD_subset_sum_le_three_of_noExotics`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L299).
+**`FTheory.SU5.FluxesFive.chiralIndicesOfD_subset_sum_le_three_of_noExotics`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L299).
 
 ```lean
 lemma FluxesFive.chiralIndicesOfD_subset_sum_le_three_of_noExotics (F : FluxesFive)
@@ -244,7 +244,7 @@ lemma FluxesFive.chiralIndicesOfD_subset_sum_le_three_of_noExotics (F : FluxesFi
     (hSle : S ≤ F) : (S.map (fun x => x.1)).sum ≤ 3
 ```
 
-**`FTheory.SU5.FluxesFive.chiralIndicesOfL_subset_sum_le_three_of_noExotics`**, a lemma, [line 312](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L312).
+**`FTheory.SU5.FluxesFive.chiralIndicesOfL_subset_sum_le_three_of_noExotics`**, a lemma, [line 312](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L312).
 
 ```lean
 lemma FluxesFive.chiralIndicesOfL_subset_sum_le_three_of_noExotics (F : FluxesFive)
@@ -252,7 +252,7 @@ lemma FluxesFive.chiralIndicesOfL_subset_sum_le_three_of_noExotics (F : FluxesFi
     (hSle : S ≤ F) : (S.map (fun x => (x.1 + x.2))).sum ≤ 3
 ```
 
-**`FTheory.SU5.FluxesTen.chiralIndicesOfQ_subset_sum_le_three_of_noExotics`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L325).
+**`FTheory.SU5.FluxesTen.chiralIndicesOfQ_subset_sum_le_three_of_noExotics`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L325).
 
 ```lean
 lemma FluxesTen.chiralIndicesOfQ_subset_sum_le_three_of_noExotics (F : FluxesTen)
@@ -260,7 +260,7 @@ lemma FluxesTen.chiralIndicesOfQ_subset_sum_le_three_of_noExotics (F : FluxesTen
     (hSle : S ≤ F) : (S.map (fun x => x.1)).sum ≤ 3
 ```
 
-**`FTheory.SU5.FluxesTen.chiralIndicesOfU_subset_sum_le_three_of_noExotics`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L338).
+**`FTheory.SU5.FluxesTen.chiralIndicesOfU_subset_sum_le_three_of_noExotics`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L338).
 
 ```lean
 lemma FluxesTen.chiralIndicesOfU_subset_sum_le_three_of_noExotics (F : FluxesTen)
@@ -268,7 +268,7 @@ lemma FluxesTen.chiralIndicesOfU_subset_sum_le_three_of_noExotics (F : FluxesTen
     (hSle : S ≤ F) : (S.map (fun x => (x.1 - x.2))).sum ≤ 3
 ```
 
-**`FTheory.SU5.FluxesTen.chiralIndicesOfE_subset_sum_le_three_of_noExotics`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L351).
+**`FTheory.SU5.FluxesTen.chiralIndicesOfE_subset_sum_le_three_of_noExotics`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean#L351).
 
 ```lean
 lemma FluxesTen.chiralIndicesOfE_subset_sum_le_three_of_noExotics (F : FluxesTen)
@@ -282,4 +282,4 @@ lemma FluxesTen.chiralIndicesOfE_subset_sum_le_three_of_noExotics (F : FluxesTen
 
 ## Sources
 
-- [Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean)
+- [Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean)

@@ -8,11 +8,11 @@ proof: formalized
 
 # Note file
 
-The module `Physlib.Meta.Notes.NoteFile`, [Physlib/Meta/Notes/NoteFile.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/NoteFile.lean): 2 declarations, 2 with a docstring.
+The module `Physlib.Meta.Notes.NoteFile`, [Physlib/Meta/Notes/NoteFile.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/NoteFile.lean): 2 declarations, 2 with a docstring.
 
 > A note file is a structure which contains the information to go into a note.
 
-**`Physlib.NoteFile`**, a structure, [line 23](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/NoteFile.lean#L23).
+**`Physlib.NoteFile`**, a structure, [line 23](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/NoteFile.lean#L23).
 
 > A note consists of a title and a list of Lean files which make up the note.
 
@@ -28,7 +28,7 @@ structure NoteFile where
   files : List Name
 ```
 
-**`Physlib.NoteFile.imports`**, a def, [line 38](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/NoteFile.lean#L38).
+**`Physlib.NoteFile.imports`**, a def, [line 38](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/NoteFile.lean#L38).
 
 > All imports associated to a note.
 
@@ -42,4 +42,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Meta/Notes/NoteFile.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/NoteFile.lean)
+- [Physlib/Meta/Notes/NoteFile.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/NoteFile.lean)

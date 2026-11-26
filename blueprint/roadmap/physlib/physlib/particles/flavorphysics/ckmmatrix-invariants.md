@@ -8,7 +8,7 @@ proof: formalized
 
 # Invariants of the CKM Matrix
 
-The module `Physlib.Particles.FlavorPhysics.CKMMatrix.Invariants`, [Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean): 5 declarations, 5 with a docstring.
+The module `Physlib.Particles.FlavorPhysics.CKMMatrix.Invariants`, [Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean): 5 declarations, 5 with a docstring.
 
 > The CKM matrix is only defined up to an equivalence.
 >
@@ -17,7 +17,7 @@ The module `Physlib.Particles.FlavorPhysics.CKMMatrix.Invariants`, [Physlib/Part
 >
 > Of note, this file defines the complex jarlskog invariant.
 
-**`Invariant.jarlskogℂCKM`**, a def, [line 30](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean#L30).
+**`Invariant.jarlskogℂCKM`**, a def, [line 30](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean#L30).
 
 > The complex jarlskog invariant for a CKM matrix.
 
@@ -25,7 +25,7 @@ The module `Physlib.Particles.FlavorPhysics.CKMMatrix.Invariants`, [Physlib/Part
 def jarlskogℂCKM (V : CKMMatrix) : ℂ
 ```
 
-**`Invariant.jarlskogℂCKM_equiv`**, a lemma, [line 34](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean#L34).
+**`Invariant.jarlskogℂCKM_equiv`**, a lemma, [line 34](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean#L34).
 
 > The complex jarlskog invariant is equal for equivalent CKM matrices.
 
@@ -34,7 +34,7 @@ lemma jarlskogℂCKM_equiv (V U : CKMMatrix) (h : V ≈ U) :
     jarlskogℂCKM V = jarlskogℂCKM U
 ```
 
-**`Invariant.jarlskogℂ`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean#L45).
+**`Invariant.jarlskogℂ`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean#L45).
 
 > The complex jarlskog invariant for an equivalence class of CKM matrices.
 
@@ -42,7 +42,7 @@ lemma jarlskogℂCKM_equiv (V U : CKMMatrix) (h : V ≈ U) :
 def jarlskogℂ : Quotient CKMMatrixSetoid → ℂ
 ```
 
-**`Invariant.VusVubVcdSq`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean#L51).
+**`Invariant.VusVubVcdSq`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean#L51).
 
 > An invariant for CKM matrices corresponding to the square of the absolute values
 > of the `us`, `ub` and `cb` elements multiplied together divided by `(VudAbs V ^ 2 + VusAbs V ^2)`.
@@ -51,7 +51,7 @@ def jarlskogℂ : Quotient CKMMatrixSetoid → ℂ
 def VusVubVcdSq (V : Quotient CKMMatrixSetoid) : ℝ
 ```
 
-**`Invariant.mulExpδ₁₃`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean#L56).
+**`Invariant.mulExpδ₁₃`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean#L56).
 
 > An invariant for CKM matrices. The argument of this invariant is `δ₁₃` in the
 > standard parameterization.
@@ -66,4 +66,4 @@ def mulExpδ₁₃ (V : Quotient CKMMatrixSetoid) : ℂ
 
 ## Sources
 
-- [Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean)
+- [Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Completeness of the regular radial solutions of hydrogen
 
-The module `PhyslibAlpha.QuantumMechanics.Hydrogen.RadialCompleteness`, [PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean): 15 declarations, 12 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.Hydrogen.RadialCompleteness`, [PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean): 15 declarations, 12 with a docstring.
 
 > Every solution of the radial equation of hydrogen that vanishes at the origin is of the power
 > series form assumed in `RadialQuantization`. Together with `radial_quantization` this shows,
@@ -53,7 +53,7 @@ The module `PhyslibAlpha.QuantumMechanics.Hydrogen.RadialCompleteness`, [Physlib
 
 ## A. The regular solution
 
-**`PhyslibAlpha.Hydrogen.radialPot`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L80).
+**`PhyslibAlpha.Hydrogen.radialPot`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L80).
 
 > The radial potential term `q(ρ) = l(l+1)/ρ² - 2/ρ + κ²`, so that the radial equation reads
 > `u'' = q u`.
@@ -62,7 +62,7 @@ The module `PhyslibAlpha.QuantumMechanics.Hydrogen.RadialCompleteness`, [Physlib
 def radialPot (κ : ℝ) (l : ℕ) (ρ : ℝ) : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.regCoeff`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L84).
+**`PhyslibAlpha.Hydrogen.regCoeff`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L84).
 
 > The coefficients of the regular solution: `c_0 = 1` and
 > `c_{k+1} = (2κ(k + l + 1) - 2) / ((k + 1)(k + 2l + 2)) c_k`.
@@ -71,25 +71,25 @@ def radialPot (κ : ℝ) (l : ℕ) (ρ : ℝ) : ℝ
 def regCoeff (κ : ℝ) (l : ℕ) : ℕ → ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.regCoeff_zero`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L89).
+**`PhyslibAlpha.Hydrogen.regCoeff_zero`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L89).
 
 ```lean
 lemma regCoeff_zero : regCoeff κ l 0 = 1
 ```
 
-**`PhyslibAlpha.Hydrogen.radialRec_regCoeff`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L91).
+**`PhyslibAlpha.Hydrogen.radialRec_regCoeff`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L91).
 
 ```lean
 lemma radialRec_regCoeff : RadialRec κ l (regCoeff κ l)
 ```
 
-**`PhyslibAlpha.Hydrogen.entireCoeff_regCoeff`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L97).
+**`PhyslibAlpha.Hydrogen.entireCoeff_regCoeff`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L97).
 
 ```lean
 lemma entireCoeff_regCoeff : EntireCoeff (regCoeff κ l)
 ```
 
-**`PhyslibAlpha.Hydrogen.radial_ode_of_radialRec`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L129).
+**`PhyslibAlpha.Hydrogen.radial_ode_of_radialRec`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L129).
 
 > **Converse of `recursion_of_radial_ode`.** If the coefficients satisfy the recursion, the
 > ansatz solves the radial equation on `(0, ∞)`.
@@ -102,7 +102,7 @@ lemma radial_ode_of_radialRec {c : ℕ → ℝ} (hc : EntireCoeff c) (hrec : Rad
 
 ## B. The regular solution near the origin and the Wronskian
 
-**`PhyslibAlpha.Hydrogen.regSol_near_zero`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L159).
+**`PhyslibAlpha.Hydrogen.regSol_near_zero`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L159).
 
 > Near the origin the regular solution is comparable to `ρ^(l+1)`.
 
@@ -112,7 +112,7 @@ lemma regSol_near_zero : ∃ δ > 0, ∃ a > 0, ∃ b > 0, ∀ ρ ∈ Ioc 0 δ,
       radialSeries κ l (regCoeff κ l) ρ ≤ b * ρ ^ (l + 1)
 ```
 
-**`PhyslibAlpha.Hydrogen.exists_const_of_hasDerivAt_zero`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L193).
+**`PhyslibAlpha.Hydrogen.exists_const_of_hasDerivAt_zero`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L193).
 
 > A function with vanishing derivative on an open preconnected set is constant there.
 
@@ -121,7 +121,7 @@ lemma exists_const_of_hasDerivAt_zero {f : ℝ → ℝ} {s : Set ℝ} (hs : IsOp
     (hs' : IsPreconnected s) (h : ∀ x ∈ s, HasDerivAt f 0 x) : ∃ a, ∀ x ∈ s, f x = a
 ```
 
-**`PhyslibAlpha.Hydrogen.wronskian_const`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L199).
+**`PhyslibAlpha.Hydrogen.wronskian_const`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L199).
 
 > The Wronskian of two solutions of `u'' = q u` on `(0, ∞)` is constant.
 
@@ -134,7 +134,7 @@ lemma wronskian_const {q u u' v v' : ℝ → ℝ}
 
 ## C. Solutions vanishing at the origin
 
-**`PhyslibAlpha.Hydrogen.wronskian_nonpos_of_tendsto`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L216).
+**`PhyslibAlpha.Hydrogen.wronskian_nonpos_of_tendsto`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L216).
 
 > One sign of the Wronskian: if it were positive, `u/u₁ - K ρ^(-(2l+1))` would be antitone near
 > `0`, so `u(ρ) ≥ K a - |M| b ρ` for small `ρ`, contradicting `u → 0`.
@@ -148,7 +148,7 @@ lemma wronskian_nonpos_of_tendsto {u u' : ℝ → ℝ}
       u' ρ₀ * radialSeries κ l (regCoeff κ l) ρ₀ ≤ 0
 ```
 
-**`PhyslibAlpha.Hydrogen.wronskian_eq_zero_of_tendsto`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L306).
+**`PhyslibAlpha.Hydrogen.wronskian_eq_zero_of_tendsto`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L306).
 
 > A solution tending to `0` at the origin has vanishing Wronskian with the regular solution.
 
@@ -160,7 +160,7 @@ lemma wronskian_eq_zero_of_tendsto {u u' : ℝ → ℝ}
     u ρ * radialSeriesD κ l (regCoeff κ l) ρ - u' ρ * radialSeries κ l (regCoeff κ l) ρ = 0
 ```
 
-**`PhyslibAlpha.Hydrogen.exists_eqOn_near_zero_of_tendsto`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L318).
+**`PhyslibAlpha.Hydrogen.exists_eqOn_near_zero_of_tendsto`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L318).
 
 > A solution tending to `0` at the origin is a multiple of the regular solution near `0`.
 
@@ -174,7 +174,7 @@ lemma exists_eqOn_near_zero_of_tendsto {u u' : ℝ → ℝ}
 
 ## D. Uniqueness away from the origin
 
-**`PhyslibAlpha.Hydrogen.eqOn_zero_of_eqOn_Ioo`**, a lemma, [line 346](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L346).
+**`PhyslibAlpha.Hydrogen.eqOn_zero_of_eqOn_Ioo`**, a lemma, [line 346](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L346).
 
 > A solution of `w'' = q w` with continuous `q` that vanishes on `(0, δ)` vanishes on `(0, ∞)`.
 
@@ -187,7 +187,7 @@ lemma eqOn_zero_of_eqOn_Ioo {q w w' : ℝ → ℝ} (hq : ContinuousOn q (Ioi 0))
 
 ## E. Completeness and quantisation
 
-**`PhyslibAlpha.Hydrogen.radial_regular_solution`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L401).
+**`PhyslibAlpha.Hydrogen.radial_regular_solution`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L401).
 
 > **Completeness of the regular radial solutions.** Every solution of the radial equation
 > `u'' = (l(l+1)/ρ² - 2/ρ + κ²) u` on `(0, ∞)` with `u(ρ) → 0` as `ρ → 0⁺` is of the form
@@ -204,7 +204,7 @@ lemma radial_regular_solution {u : ℝ → ℝ}
       ((∃ ρ, 0 < ρ ∧ u ρ ≠ 0) → c 0 ≠ 0)
 ```
 
-**`PhyslibAlpha.Hydrogen.radial_quantization_of_tendsto`**, a lemma, [line 441](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L441).
+**`PhyslibAlpha.Hydrogen.radial_quantization_of_tendsto`**, a lemma, [line 441](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean#L441).
 
 > **Quantisation of the hydrogen levels without ansatz.** A non-zero square integrable solution
 > of the radial equation on `(0, ∞)` with energy `-κ²`, `κ > 0`, and `u(ρ) → 0` as `ρ → 0⁺` exists
@@ -226,4 +226,4 @@ lemma radial_quantization_of_tendsto (hκ : 0 < κ) {u : ℝ → ℝ}
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean)
+- [PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean)

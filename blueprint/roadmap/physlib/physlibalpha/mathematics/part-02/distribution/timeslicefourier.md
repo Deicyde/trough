@@ -8,7 +8,7 @@ proof: formalized
 
 # The space and time Fourier transform of a test function
 
-The module `PhyslibAlpha.Mathematics.Distribution.TimeSliceFourier`, [PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean): 12 declarations, 9 with a docstring.
+The module `PhyslibAlpha.Mathematics.Distribution.TimeSliceFourier`, [PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean): 12 declarations, 9 with a docstring.
 
 > A test function on time and space is transformed in the space variable and then in the time
 > variable.
@@ -51,7 +51,7 @@ The module `PhyslibAlpha.Mathematics.Distribution.TimeSliceFourier`, [PhyslibAlp
 > - `TimeSlice.exists_seminorm_spaceFourier_le` : decay of the Schwartz seminorms.
 > - `TimeSlice.exists_integral_norm_timeFourier_le` : decay of the integral over the frequency.
 
-**`TimeSlice.spaceFourier`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L77).
+**`TimeSlice.spaceFourier`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L77).
 
 > The spatial transform of the slices of `ψ` at the frequency `ξ` as a function of the time.
 
@@ -59,21 +59,21 @@ The module `PhyslibAlpha.Mathematics.Distribution.TimeSliceFourier`, [PhyslibAlp
 def spaceFourier (ψ : 𝓓((⊤ : Opens (ℝ × E)), ℂ)) (ξ : E) (s : ℝ) : ℂ
 ```
 
-**`TimeSlice.hasCompactSupport_spaceFourier`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L79).
+**`TimeSlice.hasCompactSupport_spaceFourier`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L79).
 
 ```lean
 lemma hasCompactSupport_spaceFourier (ψ : 𝓓((⊤ : Opens (ℝ × E)), ℂ)) (ξ : E) :
     HasCompactSupport (spaceFourier ψ ξ)
 ```
 
-**`TimeSlice.contDiff_spaceFourier`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L84).
+**`TimeSlice.contDiff_spaceFourier`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L84).
 
 ```lean
 lemma contDiff_spaceFourier (ψ : 𝓓((⊤ : Opens (ℝ × E)), ℂ)) (ξ : E) :
     ContDiff ℝ ∞ (spaceFourier ψ ξ)
 ```
 
-**`TimeSlice.spaceFourierSchwartz`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L89).
+**`TimeSlice.spaceFourierSchwartz`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L89).
 
 > The spatial transform of a test function is a Schwartz function of the time.
 
@@ -81,7 +81,7 @@ lemma contDiff_spaceFourier (ψ : 𝓓((⊤ : Opens (ℝ × E)), ℂ)) (ξ : E) 
 def spaceFourierSchwartz (ψ : 𝓓((⊤ : Opens (ℝ × E)), ℂ)) (ξ : E) : 𝓢(ℝ, ℂ)
 ```
 
-**`TimeSlice.timeFourier`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L93).
+**`TimeSlice.timeFourier`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L93).
 
 > The transform in the time of the spatial transform.
 
@@ -89,7 +89,7 @@ def spaceFourierSchwartz (ψ : 𝓓((⊤ : Opens (ℝ × E)), ℂ)) (ξ : E) : �
 def timeFourier (ψ : 𝓓((⊤ : Opens (ℝ × E)), ℂ)) (w : ℝ) (ξ : E) : ℂ
 ```
 
-**`TimeSlice.spaceFourier_eq_integral`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L98).
+**`TimeSlice.spaceFourier_eq_integral`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L98).
 
 > **Fourier inversion in the time.** The spatial transform of a slice is the inverse transform
 > in the time of `timeFourier`.
@@ -99,7 +99,7 @@ lemma spaceFourier_eq_integral (ψ : 𝓓((⊤ : Opens (ℝ × E)), ℂ)) (ξ : 
     spaceFourier ψ ξ s = ∫ w : ℝ, (𝐞 (s * w) : ℂ) • timeFourier ψ w ξ
 ```
 
-**`TimeSlice.timeFourier_eq_integral`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L104).
+**`TimeSlice.timeFourier_eq_integral`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L104).
 
 > The transform in the time as an integral.
 
@@ -108,7 +108,7 @@ lemma timeFourier_eq_integral (χ : 𝓓((⊤ : Opens (ℝ × E)), ℂ)) (v : �
     timeFourier χ v ξ = ∫ s : ℝ, (𝐞 (-(s * v)) : ℂ) • spaceFourier χ ξ s
 ```
 
-**`TimeSlice.continuous_timeFourier`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L111).
+**`TimeSlice.continuous_timeFourier`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L111).
 
 > The transformed test function is jointly continuous in the frequency and the wave vector.
 
@@ -117,7 +117,7 @@ lemma continuous_timeFourier (χ : 𝓓((⊤ : Opens (ℝ × E)), ℂ)) :
     Continuous fun p : ℝ × E => timeFourier χ p.1 p.2
 ```
 
-**`TimeSlice.timeFourier_reflect`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L132).
+**`TimeSlice.timeFourier_reflect`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L132).
 
 > Reflecting the source in the time reflects the frequency.
 
@@ -126,14 +126,14 @@ lemma timeFourier_reflect (ψ : 𝓓((⊤ : Opens (ℝ × E)), ℂ)) (w : ℝ) (
     timeFourier (reflect ℂ ψ) w ξ = timeFourier ψ (-w) ξ
 ```
 
-**`TimeSlice.integrable_timeFourier`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L141).
+**`TimeSlice.integrable_timeFourier`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L141).
 
 ```lean
 lemma integrable_timeFourier (χ : 𝓓((⊤ : Opens (ℝ × E)), ℂ)) (ξ : E) :
     Integrable fun w : ℝ => timeFourier χ w ξ
 ```
 
-**`TimeSlice.exists_seminorm_spaceFourier_le`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L146).
+**`TimeSlice.exists_seminorm_spaceFourier_le`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L146).
 
 > The Schwartz seminorms of the spatial transform of a test function decay in the frequency.
 
@@ -143,7 +143,7 @@ lemma exists_seminorm_spaceFourier_le (ψ : 𝓓((⊤ : Opens (ℝ × E)), ℂ))
       B * (1 + ‖ξ‖) ^ (-(N : ℝ))
 ```
 
-**`TimeSlice.exists_integral_norm_timeFourier_le`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L182).
+**`TimeSlice.exists_integral_norm_timeFourier_le`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean#L182).
 
 > The integral over the frequency of the transformed test function decays in `ξ`.
 
@@ -164,4 +164,4 @@ lemma exists_integral_norm_timeFourier_le (ψ : 𝓓((⊤ : Opens (ℝ × E)), �
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean)
+- [PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TimeSliceFourier.lean)

@@ -8,11 +8,11 @@ proof: formalized
 
 # Dimensional invariance of the integral
 
-The module `Physlib.Units.Integral`, [Physlib/Units/Integral.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Integral.lean): 3 declarations (1 instance with no name), 1 with a docstring.
+The module `Physlib.Units.Integral`, [Physlib/Units/Integral.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Integral.lean): 3 declarations (1 instance with no name), 1 with a docstring.
 
 > In this module we prove that the dimensional properties of the integral.
 
-**An instance with no name**, [line 26](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Integral.lean#L26).
+**An instance with no name**, [line 26](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Integral.lean#L26).
 
 ```lean
 noncomputable instance (M : Type)
@@ -21,14 +21,14 @@ noncomputable instance (M : Type)
       MulUnitDependent (MeasureTheory.Measure M)
 ```
 
-**`scaleUnit_measure`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Integral.lean#L57).
+**`scaleUnit_measure`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Integral.lean#L57).
 
 ```lean
 lemma scaleUnit_measure (u1 u2 : LTMCTUnitChoices) (μ : MeasureTheory.Measure M) :
     scaleUnit u1 u2 μ = μ.map (fun m => scaleUnit u1 u2 m)
 ```
 
-**`integral_isDimensionallyCorrect`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Integral.lean#L72).
+**`integral_isDimensionallyCorrect`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Integral.lean#L72).
 
 > The statement that for a measure `μ` of dimension `d`, and a function
 >   `f : M → G` of dimension `(CarriesDimension.d G * d⁻¹)` (where `CarriesDimension.d G`
@@ -55,4 +55,4 @@ lemma integral_isDimensionallyCorrect (d : Dimension LTMCTDimensionBase) :
 
 ## Sources
 
-- [Physlib/Units/Integral.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Integral.lean)
+- [Physlib/Units/Integral.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Integral.lean)

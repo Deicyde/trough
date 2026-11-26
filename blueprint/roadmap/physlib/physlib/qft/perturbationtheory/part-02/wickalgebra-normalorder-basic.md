@@ -8,7 +8,7 @@ proof: formalized
 
 # Normal Ordering on Field operator algebra
 
-The module `Physlib.QFT.PerturbationTheory.WickAlgebra.NormalOrder.Basic`, [Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean): 15 declarations, 1 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.WickAlgebra.NormalOrder.Basic`, [Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean): 15 declarations, 1 with a docstring.
 
 ## Normal order on super-commutators.
 
@@ -17,7 +17,7 @@ The module `Physlib.QFT.PerturbationTheory.WickAlgebra.NormalOrder.Basic`, [Phys
 > which states that applying `ι` to the normal order of something containing a super-commutator
 > is zero.
 
-**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_ofCrAnListF_ofCrAnListF_eq_zero`**, a lemma, [line 37](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L37).
+**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_ofCrAnListF_ofCrAnListF_eq_zero`**, a lemma, [line 37](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L37).
 
 ```lean
 lemma ι_normalOrderF_superCommuteF_ofCrAnListF_ofCrAnListF_eq_zero
@@ -25,7 +25,7 @@ lemma ι_normalOrderF_superCommuteF_ofCrAnListF_ofCrAnListF_eq_zero
     ι 𝓝ᶠ(ofCrAnListF φs * [ofCrAnOpF φa, ofCrAnOpF φa']ₛF * ofCrAnListF φs') = 0
 ```
 
-**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_ofCrAnListF_eq_zero`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L57).
+**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_ofCrAnListF_eq_zero`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L57).
 
 ```lean
 lemma ι_normalOrderF_superCommuteF_ofCrAnListF_eq_zero
@@ -34,7 +34,7 @@ lemma ι_normalOrderF_superCommuteF_ofCrAnListF_eq_zero
     ι 𝓝ᶠ(ofCrAnListF φs * [ofCrAnOpF φa, ofCrAnOpF φa']ₛF * a) = 0
 ```
 
-**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_ofCrAnOpF_eq_zero_mul`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L73).
+**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_ofCrAnOpF_eq_zero_mul`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L73).
 
 ```lean
 lemma ι_normalOrderF_superCommuteF_ofCrAnOpF_eq_zero_mul (φa φa' : 𝓕.CrAnFieldOp)
@@ -42,7 +42,7 @@ lemma ι_normalOrderF_superCommuteF_ofCrAnOpF_eq_zero_mul (φa φa' : 𝓕.CrAnF
     ι 𝓝ᶠ(a * [ofCrAnOpF φa, ofCrAnOpF φa']ₛF * b) = 0
 ```
 
-**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_ofCrAnOpF_ofCrAnListF_eq_zero_mul`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L91).
+**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_ofCrAnOpF_ofCrAnListF_eq_zero_mul`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L91).
 
 ```lean
 lemma ι_normalOrderF_superCommuteF_ofCrAnOpF_ofCrAnListF_eq_zero_mul (φa : 𝓕.CrAnFieldOp)
@@ -50,7 +50,7 @@ lemma ι_normalOrderF_superCommuteF_ofCrAnOpF_ofCrAnListF_eq_zero_mul (φa : �
     ι 𝓝ᶠ(a * [ofCrAnOpF φa, ofCrAnListF φs]ₛF * b) = 0
 ```
 
-**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_ofCrAnListF_ofCrAnOpF_eq_zero_mul`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L103).
+**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_ofCrAnListF_ofCrAnOpF_eq_zero_mul`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L103).
 
 ```lean
 lemma ι_normalOrderF_superCommuteF_ofCrAnListF_ofCrAnOpF_eq_zero_mul (φa : 𝓕.CrAnFieldOp)
@@ -58,7 +58,7 @@ lemma ι_normalOrderF_superCommuteF_ofCrAnListF_ofCrAnOpF_eq_zero_mul (φa : �
     ι 𝓝ᶠ(a * [ofCrAnListF φs, ofCrAnOpF φa]ₛF * b) = 0
 ```
 
-**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_ofCrAnListF_ofCrAnListF_eq_zero_mul`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L112).
+**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_ofCrAnListF_ofCrAnListF_eq_zero_mul`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L112).
 
 ```lean
 lemma ι_normalOrderF_superCommuteF_ofCrAnListF_ofCrAnListF_eq_zero_mul
@@ -66,7 +66,7 @@ lemma ι_normalOrderF_superCommuteF_ofCrAnListF_ofCrAnListF_eq_zero_mul
     ι 𝓝ᶠ(a * [ofCrAnListF φs, ofCrAnListF φs']ₛF * b) = 0
 ```
 
-**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_ofCrAnListF_eq_zero_mul`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L123).
+**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_ofCrAnListF_eq_zero_mul`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L123).
 
 ```lean
 lemma ι_normalOrderF_superCommuteF_ofCrAnListF_eq_zero_mul
@@ -75,35 +75,35 @@ lemma ι_normalOrderF_superCommuteF_ofCrAnListF_eq_zero_mul
     ι 𝓝ᶠ(a * [ofCrAnListF φs, c]ₛF * b) = 0
 ```
 
-**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_eq_zero_mul`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L141).
+**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_eq_zero_mul`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L141).
 
 ```lean
 lemma ι_normalOrderF_superCommuteF_eq_zero_mul
     (a b c d : 𝓕.FieldOpFreeAlgebra) : ι 𝓝ᶠ(a * [d, c]ₛF * b) = 0
 ```
 
-**`FieldSpecification.WickAlgebra.ι_normalOrder_superCommuteF_eq_zero_mul_right`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L157).
+**`FieldSpecification.WickAlgebra.ι_normalOrder_superCommuteF_eq_zero_mul_right`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L157).
 
 ```lean
 lemma ι_normalOrder_superCommuteF_eq_zero_mul_right (b c d : 𝓕.FieldOpFreeAlgebra) :
     ι 𝓝ᶠ([d, c]ₛF * b) = 0
 ```
 
-**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_eq_zero_mul_left`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L163).
+**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_eq_zero_mul_left`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L163).
 
 ```lean
 lemma ι_normalOrderF_superCommuteF_eq_zero_mul_left (a c d : 𝓕.FieldOpFreeAlgebra) :
     ι 𝓝ᶠ(a * [d, c]ₛF) = 0
 ```
 
-**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_eq_zero_mul_mul_right`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L169).
+**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_eq_zero_mul_mul_right`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L169).
 
 ```lean
 lemma ι_normalOrderF_superCommuteF_eq_zero_mul_mul_right (a b1 b2 c d: 𝓕.FieldOpFreeAlgebra) :
     ι 𝓝ᶠ(a * [d, c]ₛF * b1 * b2) = 0
 ```
 
-**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_eq_zero`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L176).
+**`FieldSpecification.WickAlgebra.ι_normalOrderF_superCommuteF_eq_zero`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L176).
 
 ```lean
 lemma ι_normalOrderF_superCommuteF_eq_zero (c d : 𝓕.FieldOpFreeAlgebra) : ι 𝓝ᶠ([d, c]ₛF) = 0
@@ -111,21 +111,21 @@ lemma ι_normalOrderF_superCommuteF_eq_zero (c d : 𝓕.FieldOpFreeAlgebra) : ι
 
 ## Defining normal order for `FiedOpAlgebra`.
 
-**`FieldSpecification.WickAlgebra.ι_normalOrderF_zero_of_mem_ideal`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L186).
+**`FieldSpecification.WickAlgebra.ι_normalOrderF_zero_of_mem_ideal`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L186).
 
 ```lean
 lemma ι_normalOrderF_zero_of_mem_ideal (a : 𝓕.FieldOpFreeAlgebra)
     (h : a ∈ TwoSidedIdeal.span 𝓕.fieldOpIdealSet) : ι 𝓝ᶠ(a) = 0
 ```
 
-**`FieldSpecification.WickAlgebra.ι_normalOrderF_eq_of_equiv`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L219).
+**`FieldSpecification.WickAlgebra.ι_normalOrderF_eq_of_equiv`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L219).
 
 ```lean
 lemma ι_normalOrderF_eq_of_equiv (a b : 𝓕.FieldOpFreeAlgebra) (h : a ≈ b) :
     ι 𝓝ᶠ(a) = ι 𝓝ᶠ(b)
 ```
 
-**`FieldSpecification.WickAlgebra.normalOrder`**, a def, [line 235](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L235).
+**`FieldSpecification.WickAlgebra.normalOrder`**, a def, [line 235](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean#L235).
 
 > For a field specification `𝓕`, `normalOrder` is the linear map
 >
@@ -148,4 +148,4 @@ noncomputable def normalOrder : WickAlgebra 𝓕 →ₗ[ℂ] WickAlgebra 𝓕
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean)
+- [Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean)

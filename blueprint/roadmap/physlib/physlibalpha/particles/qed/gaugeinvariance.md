@@ -8,7 +8,7 @@ proof: formalized
 
 # Gauge invariance of quantum electrodynamics
 
-The module `PhyslibAlpha.Particles.QED.GaugeInvariance`, [PhyslibAlpha/Particles/QED/GaugeInvariance.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean): 24 declarations, 11 with a docstring.
+The module `PhyslibAlpha.Particles.QED.GaugeInvariance`, [PhyslibAlpha/Particles/QED/GaugeInvariance.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean): 24 declarations, 11 with a docstring.
 
 ## i. Overview
 
@@ -66,7 +66,7 @@ The module `PhyslibAlpha.Particles.QED.GaugeInvariance`, [PhyslibAlpha/Particles
 
 ## A. The gauge group acting on the photon jet algebra
 
-**`QED.Photon.JetAlgebra.gaugeAction_comp`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L101).
+**`QED.Photon.JetAlgebra.gaugeAction_comp`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L101).
 
 > Photon gauge jets compose by addition: the gauge transformations form a
 > group acting on the photon jet algebra.
@@ -76,7 +76,7 @@ lemma gaugeAction_comp (c₁ c₂ : GaugeJet) :
     (gaugeAction c₁).comp (gaugeAction c₂) = gaugeAction (c₁ + c₂)
 ```
 
-**`QED.Photon.JetAlgebra.gaugeAction_zero`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L112).
+**`QED.Photon.JetAlgebra.gaugeAction_zero`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L112).
 
 ```lean
 lemma gaugeAction_zero : gaugeAction 0 = AlgHom.id ℝ JetAlgebra
@@ -89,7 +89,7 @@ lemma gaugeAction_zero : gaugeAction 0 = AlgHom.id ℝ JetAlgebra
 > `∂_s ∂_ν ∂_μ χ`, indexed by `s + {μ} + {ν}` and `s + {ν} + {μ}`.  Clairaut's
 > lemma is built into the indexing.
 
-**`QED.Photon.JetAlgebra.gaugeAction_fieldStrength`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L130).
+**`QED.Photon.JetAlgebra.gaugeAction_fieldStrength`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L130).
 
 ```lean
 lemma gaugeAction_fieldStrength (c : GaugeJet) (s : Multiset (Fin 1 ⊕ Fin 3))
@@ -97,7 +97,7 @@ lemma gaugeAction_fieldStrength (c : GaugeJet) (s : Multiset (Fin 1 ⊕ Fin 3))
     gaugeAction c (fieldStrength s μ ν) = fieldStrength s μ ν
 ```
 
-**`QED.Photon.JetAlgebra.gaugeAction_maxwellTerm`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L139).
+**`QED.Photon.JetAlgebra.gaugeAction_maxwellTerm`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L139).
 
 ```lean
 lemma gaugeAction_maxwellTerm (c : GaugeJet) : gaugeAction c maxwellTerm = maxwellTerm
@@ -109,7 +109,7 @@ lemma gaugeAction_maxwellTerm (c : GaugeJet) : gaugeAction c maxwellTerm = maxwe
 > the splitting `(0, t)` occurs exactly once, so an indicator supported at the
 > zero multiset picks out the identity.
 
-**`QED.Electron.JetAlgebra.gaugeAction_trivial`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L166).
+**`QED.Electron.JetAlgebra.gaugeAction_trivial`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L166).
 
 > The trivial gauge jet acts trivially on the electron jet algebra: the
 > gauge action is unital.
@@ -119,7 +119,7 @@ lemma gaugeAction_trivial (e : ℝ) :
     gaugeAction (GaugeJet.trivial e) = AlgHom.id ℂ JetAlgebra
 ```
 
-**`QED.JetAlgebra.gaugeAction_trivial`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L202).
+**`QED.JetAlgebra.gaugeAction_trivial`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L202).
 
 > The trivial gauge jet acts trivially on the QED jet algebra: the gauge
 > action is unital.
@@ -129,7 +129,7 @@ lemma gaugeAction_trivial (e : ℝ) :
     gaugeAction (GaugeJet.trivial e) = AlgHom.id ℂ JetAlgebra
 ```
 
-**`QED.Electron.JetAlgebra.gaugeAction_mul`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L212).
+**`QED.Electron.JetAlgebra.gaugeAction_mul`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L212).
 
 > The electron gauge actions compose through the monoid of gauge jets.
 
@@ -139,7 +139,7 @@ lemma _root_.QED.Electron.JetAlgebra.gaugeAction_mul {e : ℝ} (g₁ g₂ : Gaug
       Electron.JetAlgebra.gaugeAction (g₁ * g₂)
 ```
 
-**`QED.JetAlgebra.gaugeActionPhoton_comp`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L277).
+**`QED.JetAlgebra.gaugeActionPhoton_comp`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L277).
 
 > The complexified photon gauge actions compose by addition of the gauge
 > jets.
@@ -150,7 +150,7 @@ lemma gaugeActionPhoton_comp (c₁ c₂ : Photon.JetAlgebra.GaugeJet) :
       gaugeActionPhoton (c₁ + c₂)
 ```
 
-**`QED.JetAlgebra.gaugeAction_mul`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L286).
+**`QED.JetAlgebra.gaugeAction_mul`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L286).
 
 > **The gauge actions compose through the monoid of gauge jets**: the QED
 > gauge action is a monoid action on the jet algebra.
@@ -160,7 +160,7 @@ lemma gaugeAction_mul {e : ℝ} (g₁ g₂ : GaugeJet e) :
     (gaugeAction g₁).comp (gaugeAction g₂) = gaugeAction (g₁ * g₂)
 ```
 
-**`QED.JetAlgebra.gaugeAction_mul_apply`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L292).
+**`QED.JetAlgebra.gaugeAction_mul_apply`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L292).
 
 ```lean
 lemma gaugeAction_mul_apply {e : ℝ} (g₁ g₂ : GaugeJet e) (x : JetAlgebra) :
@@ -175,7 +175,7 @@ lemma gaugeAction_mul_apply {e : ℝ} (g₁ g₂ : GaugeJet e) (x : JetAlgebra) 
 > `∂_s ∂_μ χ` of the gauge function; in the full algebra the constant is the
 > scalar multiple `(∂_s ∂_μ χ) • 1`.
 
-**`QED.JetAlgebra.gaugeAction_A`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L310).
+**`QED.JetAlgebra.gaugeAction_A`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L310).
 
 > The gauge action on the photon jet coordinate: the affine shift
 > `∂_s A_μ ↦ ∂_s A_μ + ∂_s ∂_μ χ`.
@@ -192,21 +192,21 @@ lemma gaugeAction_A {e : ℝ} (g : GaugeJet e) (s : Multiset (Fin 1 ⊕ Fin 3))
 > (charge `+1`) by the phase; on first-order jets the Leibniz rule feeds the
 > first derivative of the phase into the zeroth-order coordinate.
 
-**`QED.JetAlgebra.gaugeAction_ψ_zero`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L329).
+**`QED.JetAlgebra.gaugeAction_ψ_zero`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L329).
 
 ```lean
 lemma gaugeAction_ψ_zero {e : ℝ} (g : GaugeJet e) (α : Fin 2 ⊕ Fin 2) :
     gaugeAction g (ψ 0 α) = star (g.phase 0) • ψ 0 α
 ```
 
-**`QED.JetAlgebra.gaugeAction_barψ_zero`**, a lemma, [line 336](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L336).
+**`QED.JetAlgebra.gaugeAction_barψ_zero`**, a lemma, [line 336](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L336).
 
 ```lean
 lemma gaugeAction_barψ_zero {e : ℝ} (g : GaugeJet e) (α : Fin 2 ⊕ Fin 2) :
     gaugeAction g (barψ 0 α) = g.phase 0 • barψ 0 α
 ```
 
-**`QED.JetAlgebra.gaugeAction_ψ_singleton`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L342).
+**`QED.JetAlgebra.gaugeAction_ψ_singleton`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L342).
 
 ```lean
 lemma gaugeAction_ψ_singleton {e : ℝ} (g : GaugeJet e) (μ : Fin 1 ⊕ Fin 3)
@@ -215,7 +215,7 @@ lemma gaugeAction_ψ_singleton {e : ℝ} (g : GaugeJet e) (μ : Fin 1 ⊕ Fin 3)
       star (g.phase 0) • ψ {μ} α + star (g.phase {μ}) • ψ 0 α
 ```
 
-**`QED.JetAlgebra.gaugeAction_barψ_singleton`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L351).
+**`QED.JetAlgebra.gaugeAction_barψ_singleton`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L351).
 
 ```lean
 lemma gaugeAction_barψ_singleton {e : ℝ} (g : GaugeJet e) (μ : Fin 1 ⊕ Fin 3)
@@ -229,7 +229,7 @@ lemma gaugeAction_barψ_singleton {e : ℝ} (g : GaugeJet e) (μ : Fin 1 ⊕ Fin
 > Both invariances are inherited from the photon jet algebra, where the proof
 > is the commutativity of multiset addition.
 
-**`QED.JetAlgebra.gaugeAction_fieldStrength`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L370).
+**`QED.JetAlgebra.gaugeAction_fieldStrength`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L370).
 
 ```lean
 lemma gaugeAction_fieldStrength {e : ℝ} (g : GaugeJet e)
@@ -237,7 +237,7 @@ lemma gaugeAction_fieldStrength {e : ℝ} (g : GaugeJet e)
     gaugeAction g (fieldStrength s μ ν) = fieldStrength s μ ν
 ```
 
-**`QED.JetAlgebra.gaugeAction_maxwellTerm`**, a lemma, [line 378](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L378).
+**`QED.JetAlgebra.gaugeAction_maxwellTerm`**, a lemma, [line 378](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L378).
 
 ```lean
 lemma gaugeAction_maxwellTerm {e : ℝ} (g : GaugeJet e) :
@@ -252,7 +252,7 @@ lemma gaugeAction_maxwellTerm {e : ℝ} (g : GaugeJet e) :
 > contributions cancel and the covariant derivative rotates like the field
 > itself.
 
-**`QED.JetAlgebra.gaugeAction_covDψ`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L399).
+**`QED.JetAlgebra.gaugeAction_covDψ`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L399).
 
 > **Gauge covariance of the covariant derivative**: `D_μ ψ` rotates by the
 > conjugate phase, exactly like `ψ` itself.  The shift of the photon
@@ -264,7 +264,7 @@ lemma gaugeAction_covDψ {e : ℝ} (g : GaugeJet e) (μ : Fin 1 ⊕ Fin 3)
     gaugeAction g (covDψ e μ α) = star (g.phase 0) • covDψ e μ α
 ```
 
-**`QED.JetAlgebra.gaugeAction_covDbarψ`**, a lemma, [line 411](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L411).
+**`QED.JetAlgebra.gaugeAction_covDbarψ`**, a lemma, [line 411](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L411).
 
 > Gauge covariance of the conjugate covariant derivative: `D_μ ψ̄` rotates
 > by the phase, exactly like `ψ̄` itself.
@@ -279,7 +279,7 @@ lemma gaugeAction_covDbarψ {e : ℝ} (g : GaugeJet e) (μ : Fin 1 ⊕ Fin 3)
 
 ### E.1. Cancellation of the phases in fermion bilinears
 
-**`QED.JetAlgebra.gaugeAction_mul_phase_cancel`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L433).
+**`QED.JetAlgebra.gaugeAction_mul_phase_cancel`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L433).
 
 > A product of a factor rotating by the phase and a factor rotating by the
 > conjugate phase is gauge invariant: the phases cancel by unitarity.  This is
@@ -295,21 +295,21 @@ lemma gaugeAction_mul_phase_cancel {e : ℝ} (g : GaugeJet e) {x y : JetAlgebra}
 
 ### E.2. Invariance of each term
 
-**`QED.JetAlgebra.gaugeAction_diracKineticTerm`**, a lemma, [line 446](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L446).
+**`QED.JetAlgebra.gaugeAction_diracKineticTerm`**, a lemma, [line 446](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L446).
 
 ```lean
 lemma gaugeAction_diracKineticTerm {e : ℝ} (g : GaugeJet e) :
     gaugeAction g (diracKineticTerm e) = diracKineticTerm e
 ```
 
-**`QED.JetAlgebra.gaugeAction_diracKineticTermBar`**, a lemma, [line 460](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L460).
+**`QED.JetAlgebra.gaugeAction_diracKineticTermBar`**, a lemma, [line 460](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L460).
 
 ```lean
 lemma gaugeAction_diracKineticTermBar {e : ℝ} (g : GaugeJet e) :
     gaugeAction g (diracKineticTermBar e) = diracKineticTermBar e
 ```
 
-**`QED.JetAlgebra.gaugeAction_electronMassTerm`**, a lemma, [line 474](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L474).
+**`QED.JetAlgebra.gaugeAction_electronMassTerm`**, a lemma, [line 474](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L474).
 
 ```lean
 lemma gaugeAction_electronMassTerm {e : ℝ} (g : GaugeJet e) :
@@ -318,7 +318,7 @@ lemma gaugeAction_electronMassTerm {e : ℝ} (g : GaugeJet e) :
 
 ### E.3. Invariance of the QED Lagrangian
 
-**`QED.JetAlgebra.gaugeAction_lagrangian`**, a lemma, [line 494](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L494).
+**`QED.JetAlgebra.gaugeAction_lagrangian`**, a lemma, [line 494](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean#L494).
 
 > **Gauge invariance of the QED Lagrangian.**  The Maxwell term is invariant
 > by the symmetry of the photon shift in its derivative indices, the kinetic
@@ -336,4 +336,4 @@ lemma gaugeAction_lagrangian {e : ℝ} (g : GaugeJet e) (m : ℝ) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/QED/GaugeInvariance.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GaugeInvariance.lean)
+- [PhyslibAlpha/Particles/QED/GaugeInvariance.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GaugeInvariance.lean)

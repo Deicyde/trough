@@ -8,7 +8,7 @@ proof: formalized
 
 # Smoothness of the retarded solution
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Smoothness`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean): 11 declarations, 9 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Smoothness`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean): 11 declarations, 9 with a docstring.
 
 ## i. Overview
 
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Smoothness`, [PhyslibA
 > `solution_eq_integral_solutionIntegrand`, `contDiff_integral_solutionIntegrand`,
 > `contDiff_solution`, `contDiff_advancedSolution`.
 
-**`KleinGordon.solutionIntegrand`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L66).
+**`KleinGordon.solutionIntegrand`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L66).
 
 > The integrand of the retarded solution in the variables `(r, ξ)`, at the point `p = (t, x)`.
 
@@ -48,21 +48,21 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Smoothness`, [PhyslibA
 def solutionIntegrand (μ : ℝ) (p : ℝ × E) (z : ℝ × E) : F
 ```
 
-**`KleinGordon.contDiff_solutionIntegrand_joint`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L69).
+**`KleinGordon.contDiff_solutionIntegrand_joint`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L69).
 
 ```lean
 lemma contDiff_solutionIntegrand_joint {μ : ℝ} (hμ : 0 ≤ μ) :
     ContDiff ℝ ∞ fun w : (ℝ × E) × (ℝ × E) => solutionIntegrand F f μ w.1 w.2
 ```
 
-**`KleinGordon.contDiff_solutionIntegrand_p`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L81).
+**`KleinGordon.contDiff_solutionIntegrand_p`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L81).
 
 ```lean
 lemma contDiff_solutionIntegrand_p {μ : ℝ} (hμ : 0 ≤ μ) (z : ℝ × E) :
     ContDiff ℝ ∞ fun p : ℝ × E => solutionIntegrand F f μ p z
 ```
 
-**`KleinGordon.norm_iteratedFDeriv_solutionIntegrand_le`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L87).
+**`KleinGordon.norm_iteratedFDeriv_solutionIntegrand_le`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L87).
 
 > The Leibniz bound separates the spatial character from the time derivatives of the source.
 
@@ -73,7 +73,7 @@ lemma norm_iteratedFDeriv_solutionIntegrand_le (μ : ℝ) (k : ℕ) (p z : ℝ �
         (|z.1| * ‖iteratedDeriv (k - i) (fun s => 𝓕 (slice F f s) z.2) (p.1 - z.1)‖)
 ```
 
-**`KleinGordon.exists_char_mul_timeDeriv_bound`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L115).
+**`KleinGordon.exists_char_mul_timeDeriv_bound`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L115).
 
 > Each Leibniz term has arbitrarily rapid frequency decay, uniformly in time.
 
@@ -84,7 +84,7 @@ lemma exists_char_mul_timeDeriv_bound (i j N : ℕ) :
         C * (1 + ‖ξ‖) ^ (-(N : ℝ))
 ```
 
-**`KleinGordon.exists_solutionIntegrand_bound`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L133).
+**`KleinGordon.exists_solutionIntegrand_bound`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L133).
 
 > All parameter derivatives have rapid frequency decay on bounded propagation intervals.
 
@@ -95,7 +95,7 @@ lemma exists_solutionIntegrand_bound (μ : ℝ) (k N : ℕ) (R : ℝ) :
         C * (1 + ‖z.2‖) ^ (-(N : ℝ))
 ```
 
-**`KleinGordon.integrable_solutionIntegrand`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L157).
+**`KleinGordon.integrable_solutionIntegrand`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L157).
 
 > The Fourier integrand is integrable over a bounded propagation interval and all frequencies.
 
@@ -105,7 +105,7 @@ lemma integrable_solutionIntegrand {μ : ℝ} (hμ : 0 ≤ μ) (R : ℝ) (p : �
       ((volume.restrict (Set.Ioc 0 R)).prod volume)
 ```
 
-**`KleinGordon.solution_eq_integral_solutionIntegrand`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L174).
+**`KleinGordon.solution_eq_integral_solutionIntegrand`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L174).
 
 > A fixed propagation interval represents the solution when its lower source time precedes
 > the support.
@@ -117,7 +117,7 @@ lemma solution_eq_integral_solutionIntegrand {μ : ℝ} (hμ : 0 ≤ μ) {R : �
       ∂((volume.restrict (Set.Ioc 0 R)).prod volume)
 ```
 
-**`KleinGordon.contDiff_integral_solutionIntegrand`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L188).
+**`KleinGordon.contDiff_integral_solutionIntegrand`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L188).
 
 > Integrating over a fixed bounded propagation interval gives a smooth spacetime field.
 
@@ -127,7 +127,7 @@ lemma contDiff_integral_solutionIntegrand {μ : ℝ} (hμ : 0 ≤ μ) (R : ℝ) 
       ∂((volume.restrict (Set.Ioc 0 R)).prod volume))
 ```
 
-**`KleinGordon.contDiff_solution`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L213).
+**`KleinGordon.contDiff_solution`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L213).
 
 > The retarded Klein–Gordon solution of a smooth compactly supported source is smooth on
 > spacetime.
@@ -137,7 +137,7 @@ lemma contDiff_solution {μ : ℝ} (hμ : 0 ≤ μ) :
     ContDiff ℝ ∞ (fun p : ℝ × E => solution F f μ p.1 p.2)
 ```
 
-**`KleinGordon.contDiff_advancedSolution`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L229).
+**`KleinGordon.contDiff_advancedSolution`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean#L229).
 
 > The advanced Klein–Gordon solution is smooth on spacetime.
 
@@ -152,4 +152,4 @@ lemma contDiff_advancedSolution {μ : ℝ} (hμ : 0 ≤ μ) :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean)

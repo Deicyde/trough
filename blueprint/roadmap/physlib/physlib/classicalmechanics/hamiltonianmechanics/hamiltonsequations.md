@@ -8,7 +8,7 @@ proof: formalized
 
 # Hamilton's equations
 
-The module `Physlib.ClassicalMechanics.HamiltonianMechanics.HamiltonsEquations`, [Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean): 4 declarations, 2 with a docstring, 1 listed as significant.
+The module `Physlib.ClassicalMechanics.HamiltonianMechanics.HamiltonsEquations`, [Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean): 4 declarations, 2 with a docstring, 1 listed as significant.
 
 > In this module, given a Hamiltonian function `H : Time → X → X → ℝ`,
 > we define the operator `hamiltonEqOp`
@@ -24,7 +24,7 @@ The module `Physlib.ClassicalMechanics.HamiltonianMechanics.HamiltonsEquations`,
 >   <https://groups.csail.mit.edu/mac/users/gjs/6946/sicm-html/book-Z-H-36.html#%_sec_3.1.2>.
 >   [ref: sussman\_wisdom\_sicm]
 
-**`ClassicalMechanics.hamiltonEqOp`**, a def, [line 39](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean#L39).
+**`ClassicalMechanics.hamiltonEqOp`**, a def, [line 39](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean#L39).
 
 > Given a hamiltonian `H : Time → X → X → ℝ` the operator which when
 > set to zero implies the Hamilton equations.
@@ -34,7 +34,7 @@ noncomputable def hamiltonEqOp (H : Time → X → X → ℝ) (p : Time → X) (
     Time → X × X
 ```
 
-**`ClassicalMechanics.hamiltonEqOp_eq`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean#L44).
+**`ClassicalMechanics.hamiltonEqOp_eq`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean#L44).
 
 ```lean
 lemma hamiltonEqOp_eq (H : Time → X → X → ℝ) (p : Time → X) (q : Time → X) :
@@ -42,7 +42,7 @@ lemma hamiltonEqOp_eq (H : Time → X → X → ℝ) (p : Time → X) (q : Time 
       - ∂ₜ p t + -gradient (fun x => H t (p t) x) (q t))
 ```
 
-**`ClassicalMechanics.hamiltonEqOp_eq_zero_iff_hamiltons_equations`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean#L49).
+**`ClassicalMechanics.hamiltonEqOp_eq_zero_iff_hamiltons_equations`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean#L49).
 
 ```lean
 lemma hamiltonEqOp_eq_zero_iff_hamiltons_equations (H : Time → X → X → ℝ)
@@ -52,7 +52,7 @@ lemma hamiltonEqOp_eq_zero_iff_hamiltons_equations (H : Time → X → X → ℝ
     (∀ t, ∂ₜ p t = -gradient (fun x => H t (p t) x) (q t))
 ```
 
-**`ClassicalMechanics.hamiltons_equations_varGradient`**, a theorem, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean#L58). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`ClassicalMechanics.hamiltons_equations_varGradient`**, a theorem, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean#L58). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The variational derivative of `⟪(pq' t).1, ∂ₜ (Prod.snd ∘ pq') t⟫_ℝ - H t (pq' t).1 (pq' t).2`
 > for a hamiltonian `H` is equal to the Hamilton equations operator.
@@ -72,4 +72,4 @@ theorem hamiltons_equations_varGradient
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean)
+- [Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean)

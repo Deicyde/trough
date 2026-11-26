@@ -8,7 +8,7 @@ proof: formalized
 
 # Commuting observables are Jordan compatible
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.CStarAlgebra.Compatibility`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Compatibility.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Compatibility.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.CStarAlgebra.Compatibility`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Compatibility.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Compatibility.lean): 1 declaration, 1 with a docstring.
 
 > Commuting self-adjoint elements of a C⋆-algebra are Jordan compatible.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.CStarAlgebra.Compat
 
 ## A. Commuting observables
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.isJordanCompatible_of_commute`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Compatibility.lean#L50).
+**`PhyslibAlpha.ProbabilisticTheory.JB.isJordanCompatible_of_commute`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Compatibility.lean#L50).
 
 > Commuting self-adjoint elements are Jordan compatible.
 
@@ -45,4 +45,4 @@ lemma isJordanCompatible_of_commute {a b : selfAdjoint A}
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Compatibility.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Compatibility.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Compatibility.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Compatibility.lean)

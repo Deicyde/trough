@@ -8,7 +8,7 @@ proof: formalized
 
 # Separation by states (Physlib)
 
-The module `Physlib.ProbabilisticTheory.State.Separation`, [Physlib/ProbabilisticTheory/State/Separation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Separation.lean): 8 declarations, 8 with a docstring.
+The module `Physlib.ProbabilisticTheory.State.Separation`, [Physlib/ProbabilisticTheory/State/Separation.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Separation.lean): 8 declarations, 8 with a docstring.
 
 > States determine positivity, the order-unit norm, and equality of observables.
 
@@ -36,7 +36,7 @@ The module `Physlib.ProbabilisticTheory.State.Separation`, [Physlib/Probabilisti
 
 ## A. Separating points from the cone
 
-**`ProbabilisticTheory.State.apply_eq_zero_of_apply_one_eq_zero`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Separation.lean#L62).
+**`ProbabilisticTheory.State.apply_eq_zero_of_apply_one_eq_zero`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Separation.lean#L62).
 
 > A positive functional vanishing at the order unit vanishes everywhere.
 
@@ -45,7 +45,7 @@ lemma apply_eq_zero_of_apply_one_eq_zero {p : P.Observables →ₚ[ℝ] ℝ}
     (h1 : p (1 : P.Observables) = 0) (A : P.Observables) : p A = 0
 ```
 
-**`ProbabilisticTheory.State.exists_apply_neg_of_not_nonneg`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Separation.lean#L69).
+**`ProbabilisticTheory.State.exists_apply_neg_of_not_nonneg`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Separation.lean#L69).
 
 > Every element outside the positive cone is strictly separated from it by a state.
 
@@ -56,7 +56,7 @@ lemma exists_apply_neg_of_not_nonneg {A : P.Observables} (hA : ¬ 0 ≤ A) :
 
 ## B. The positive cone
 
-**`ProbabilisticTheory.State.nonneg_iff_forall_state_nonneg`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Separation.lean#L86).
+**`ProbabilisticTheory.State.nonneg_iff_forall_state_nonneg`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Separation.lean#L86).
 
 > An element is positive iff every state assigns it a nonnegative value.
 
@@ -66,7 +66,7 @@ lemma nonneg_iff_forall_state_nonneg (A : P.Observables) : 0 ≤ A ↔ ∀ ω : 
 
 ## C. The order-unit norm
 
-**`ProbabilisticTheory.State.instNonemptyState`**, an instance, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Separation.lean#L99).
+**`ProbabilisticTheory.State.instNonemptyState`**, an instance, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Separation.lean#L99).
 
 > Every nontrivial Archimedean order-unit space has a state.
 
@@ -74,7 +74,7 @@ lemma nonneg_iff_forall_state_nonneg (A : P.Observables) : 0 ≤ A ↔ ∀ ω : 
 instance instNonemptyState [Nontrivial P.Observables] : Nonempty P.State
 ```
 
-**`ProbabilisticTheory.State.orderUnitNorm_le_iff_forall_abs_apply_le`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Separation.lean#L107).
+**`ProbabilisticTheory.State.orderUnitNorm_le_iff_forall_abs_apply_le`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Separation.lean#L107).
 
 > The order-unit norm is at most `r` iff every state predicts an absolute value at most `r`.
 
@@ -84,7 +84,7 @@ lemma orderUnitNorm_le_iff_forall_abs_apply_le [Nontrivial P.Observables] (A : P
     orderUnitNorm A ≤ r ↔ ∀ ω : P.State, |ω A| ≤ r
 ```
 
-**`ProbabilisticTheory.State.sSup_abs_apply_eq_orderUnitNorm`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Separation.lean#L118).
+**`ProbabilisticTheory.State.sSup_abs_apply_eq_orderUnitNorm`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Separation.lean#L118).
 
 > The order-unit norm is the supremum of `|ω A|` over all states `ω`.
 
@@ -93,7 +93,7 @@ lemma sSup_abs_apply_eq_orderUnitNorm [Nontrivial P.Observables] (A : P.Observab
     sSup (Set.range fun ω : P.State => |ω A|) = orderUnitNorm A
 ```
 
-**`ProbabilisticTheory.State.orderUnitNorm_one`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Separation.lean#L126).
+**`ProbabilisticTheory.State.orderUnitNorm_one`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Separation.lean#L126).
 
 > The order unit has norm exactly `1`.
 
@@ -103,7 +103,7 @@ lemma orderUnitNorm_one [Nontrivial P.Observables] : orderUnitNorm (1 : P.Observ
 
 ## D. Separation of points
 
-**`ProbabilisticTheory.State.ext_of_forall_apply_eq`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Separation.lean#L136).
+**`ProbabilisticTheory.State.ext_of_forall_apply_eq`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Separation.lean#L136).
 
 > States separate points: if `ω A = ω B` for every state `ω`, then `A = B`.
 
@@ -122,4 +122,4 @@ lemma ext_of_forall_apply_eq {A B : P.Observables} (h : ∀ ω : P.State, ω A =
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/State/Separation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Separation.lean)
+- [Physlib/ProbabilisticTheory/State/Separation.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Separation.lean)

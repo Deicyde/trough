@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
  "modules": [
   {
    "file": "Physlib/Electromagnetism/Basic.lean",
@@ -1626,39 +1626,39 @@
      "text": "### A.4. Differentiability\n\nWe show that the potential and its derivatives are differentiable (or smooth) if the potential\nis, in the forms `fun_prop` cannot derive on its own. Differentiability of a component\n`fun x => A x μ` of a differentiable potential is found by `fun_prop` directly."
     },
     {
-     "line": 321,
+     "line": 322,
      "text": "#### A.4.1. Differentiability of the derivative of the potential\n\nThe derivatives `∂_ μ A x ν` of the potential are `C^n` if the potential is `C^{n+2}`.\nThis is what is needed to make sense of second derivatives of the potential, as appear for\nexample in Maxwell's equations. Differentiability for a `C^3` potential follows by `fun_prop`\nfrom these lemmas and `SpaceTime.differentiable_deriv`, so is not stated separately.\n\nA second derivative of a component can be written in two ways: as `∂_ μ (fun x => ∂_ ν A x ρ) x`,\nthe derivative of the real-valued component `∂_ ν A x ρ` (the `_component` lemmas), or as\n`∂_ μ (∂_ ν A) x ρ`, the component of the derivative of the vector-valued `∂_ ν A`\n(the `_apply` lemmas). The two agree for a `C^2` potential by `SpaceTime.deriv_apply_eq`.\n\nThe differentiability of the first-derivative components `∂_ μ A x ν` for a `C^2` (or\n`C^{n+1}`) potential is found by `fun_prop` directly, so only the smooth variants are stated."
     },
     {
-     "line": 366,
+     "line": 367,
      "text": "### A.5. Differentiability in terms of constructors"
     },
     {
-     "line": 462,
+     "line": 463,
      "text": "### A.6. The action on the space-time derivatives\n\nGiven a ElectromagneticPotential `A^μ`, we can consider its derivative `∂_μ A^ν`.\nUnder a Lorentz transformation `Λ`, this transforms as\n`∂_ μ (Λ • A)`, we write an expression for this in terms of the tensor.\n`∂_ ρ A (Λ⁻¹ • x) κ`."
     },
     {
-     "line": 483,
+     "line": 484,
      "text": "### A.7. Variational adjoint derivative of component\n\nWe find the variational adjoint derivative of the components of the potential.\nThis will be used to find e.g. the variational derivative of the kinetic term,\nand derive the equations of motion."
     },
     {
-     "line": 513,
+     "line": 514,
      "text": "### A.8. Variational adjoint derivative of derivatives of the potential\n\nWe find the variational adjoint derivative of the derivatives of the components of the potential.\nThis will again be used to find the variational derivative of the kinetic term,\nand derive the equations of motion (Maxwell's equations)."
     },
     {
-     "line": 536,
+     "line": 537,
      "text": "## B. The derivative tensor of the electromagnetic potential\n\nWe define the derivative as a tensor in `Lorentz.CoVector ⊗[ℝ] Lorentz.Vector` for the\nelectromagnetic potential `A^μ`. We then prove that this tensor transforms correctly\nunder Lorentz transformations."
     },
     {
-     "line": 575,
+     "line": 576,
      "text": "### B.1. Equivariance of the derivative tensor\n\nWe show that the derivative tensor is equivariant under the action of the Lorentz group.\nThat is, `∂_μ (fun x => Λ • A (Λ⁻¹ • x)) = Λ • (∂_μ A (Λ⁻¹ • x))`, or in words:\napplying the Lorentz transformation to the potential and then taking the derivative is the same\nas taking the derivative and then applying the Lorentz transformation to the resulting tensor."
     },
     {
-     "line": 591,
+     "line": 592,
      "text": "### B.2. The elements of the derivative tensor in terms of the basis\n\nWe show that in the standard basis, the elements of the derivative tensor\nare just equal to `∂_ μ A x ν`."
     },
     {
-     "line": 659,
+     "line": 660,
      "text": "### B.3. Differentiability of the derivative tensor\n\nWe show that the derivative tensor `∂_μ A^ν`, as a function on spacetime, is differentiable\n(or `C^n`) if the potential is `C^2` (or `C^{n+1}`)."
     }
    ],
@@ -1932,13 +1932,13 @@
      "kind": "lemma",
      "line": 296,
      "doc": "",
-     "statement": "lemma differentiable_action {d} (Λ : LorentzGroup d) (A : ElectromagneticPotential d)\n    (hA : Differentiable ℝ A) : Differentiable ℝ (fun x => Λ • A (Λ⁻¹ • x))",
+     "statement": "lemma differentiable_action {d} (Λ : LorentzGroup d) (A : ElectromagneticPotential d)\n    (hA : Differentiable ℝ A) : Differentiable ℝ (Λ • A).val",
      "sorry": false
     },
     {
      "name": "Electromagnetism.ElectromagneticPotential.contDiff_action",
      "kind": "lemma",
-     "line": 302,
+     "line": 303,
      "doc": "",
      "statement": "lemma contDiff_action {d} (Λ : LorentzGroup d) (A : ElectromagneticPotential d)\n    (hA : ContDiff ℝ n A) : ContDiff ℝ n (fun x => Λ • A (Λ⁻¹ • x))",
      "sorry": false
@@ -1946,7 +1946,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.differentiable_deriv_component_of_smooth",
      "kind": "lemma",
-     "line": 308,
+     "line": 309,
      "doc": "",
      "statement": "lemma differentiable_deriv_component_of_smooth {d} {A : ElectromagneticPotential d}\n    (hA : ContDiff ℝ ∞ A) (μ ν : Fin 1 ⊕ Fin d) :\n    Differentiable ℝ (fun x => ∂_ μ A x ν)",
      "sorry": false
@@ -1954,7 +1954,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.contDiff_deriv_component_of_smooth",
      "kind": "lemma",
-     "line": 315,
+     "line": 316,
      "doc": "",
      "statement": "lemma contDiff_deriv_component_of_smooth {n : ℕ} {d} {A : ElectromagneticPotential d}\n    (hA : ContDiff ℝ ∞ A) (μ ν : Fin 1 ⊕ Fin d) :\n    ContDiff ℝ n (fun x => ∂_ μ A x ν)",
      "sorry": false
@@ -1962,7 +1962,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.contDiff_deriv_deriv_component",
      "kind": "lemma",
-     "line": 342,
+     "line": 343,
      "doc": "The second derivatives `∂_ μ ∂_ ν A^ρ` of a `C^{n+2}` potential are `C^n`.",
      "statement": "lemma contDiff_deriv_deriv_component {n} {d} {A : ElectromagneticPotential d}\n    (hA : ContDiff ℝ (n + 2) A) (μ ν ρ : Fin 1 ⊕ Fin d) :\n    ContDiff ℝ n (fun x => ∂_ μ (fun x => ∂_ ν A x ρ) x)",
      "sorry": false
@@ -1970,7 +1970,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.contDiff_deriv_deriv_apply",
      "kind": "lemma",
-     "line": 350,
+     "line": 351,
      "doc": "The `ρ` component of `∂_ μ (∂_ ν A)` is `C^n` for a `C^{n+2}` potential.",
      "statement": "lemma contDiff_deriv_deriv_apply {n} {d} {A : ElectromagneticPotential d}\n    (hA : ContDiff ℝ (n + 2) A) (μ ν ρ : Fin 1 ⊕ Fin d) :\n    ContDiff ℝ n (fun x => ∂_ μ (∂_ ν A) x ρ)",
      "sorry": false
@@ -1978,7 +1978,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.differentiable_deriv_deriv_apply_of_smooth",
      "kind": "lemma",
-     "line": 360,
+     "line": 361,
      "doc": "",
      "statement": "lemma differentiable_deriv_deriv_apply_of_smooth {d} {A : ElectromagneticPotential d}\n    (hA : ContDiff ℝ ∞ A) (μ ν ρ : Fin 1 ⊕ Fin d) :\n    Differentiable ℝ (fun x => ∂_ μ (∂_ ν A) x ρ)",
      "sorry": false
@@ -1986,7 +1986,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.differentiable_ofScalarPotential",
      "kind": "lemma",
-     "line": 372,
+     "line": 373,
      "doc": "",
      "statement": "lemma differentiable_ofScalarPotential {d} (c : SpeedOfLight) (φ : Time → Space d → ℝ)\n    (hϕ : Differentiable ℝ ↿φ) : Differentiable ℝ (ofScalarPotential c φ)",
      "sorry": false
@@ -1994,7 +1994,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.contDiff_ofScalarPotential",
      "kind": "lemma",
-     "line": 380,
+     "line": 381,
      "doc": "",
      "statement": "lemma contDiff_ofScalarPotential {n} {d} (c : SpeedOfLight) (φ : Time → Space d → ℝ)\n    (hϕ : ContDiff ℝ n ↿φ) : ContDiff ℝ n (ofScalarPotential c φ)",
      "sorry": false
@@ -2002,7 +2002,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.differentiable_ofVectorPotential",
      "kind": "lemma",
-     "line": 388,
+     "line": 389,
      "doc": "",
      "statement": "lemma differentiable_ofVectorPotential {d} (c : SpeedOfLight)\n    (A : Time → Space d → EuclideanSpace ℝ (Fin d))\n    (hA : Differentiable ℝ ↿A) : Differentiable ℝ (ofVectorPotential c A)",
      "sorry": false
@@ -2010,7 +2010,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.contDiff_ofVectorPotential",
      "kind": "lemma",
-     "line": 397,
+     "line": 398,
      "doc": "",
      "statement": "lemma contDiff_ofVectorPotential {n} {d} (c : SpeedOfLight)\n    (A : Time → Space d → EuclideanSpace ℝ (Fin d))\n    (hA : ContDiff ℝ n ↿A) : ContDiff ℝ n (ofVectorPotential c A)",
      "sorry": false
@@ -2018,7 +2018,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.differentiable_ofPotentials",
      "kind": "lemma",
-     "line": 406,
+     "line": 407,
      "doc": "",
      "statement": "lemma differentiable_ofPotentials {d} (c : SpeedOfLight) (φ : Time → Space d → ℝ)\n    (A : Time → Space d → EuclideanSpace ℝ (Fin d)) (hϕ : Differentiable ℝ ↿φ)\n    (hA : Differentiable ℝ ↿A) : Differentiable ℝ (ofPotentials c φ A)",
      "sorry": false
@@ -2026,7 +2026,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.contDiff_ofPotentials",
      "kind": "lemma",
-     "line": 415,
+     "line": 416,
      "doc": "",
      "statement": "lemma contDiff_ofPotentials {n} {d} (c : SpeedOfLight) (φ : Time → Space d → ℝ)\n    (A : Time → Space d → EuclideanSpace ℝ (Fin d)) (hϕ : ContDiff ℝ n ↿φ)\n    (hA : ContDiff ℝ n ↿A) : ContDiff ℝ n (ofPotentials c φ A)",
      "sorry": false
@@ -2034,7 +2034,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.contDiff_ofElectromagneticField",
      "kind": "lemma",
-     "line": 425,
+     "line": 426,
      "doc": "",
      "statement": "lemma contDiff_ofElectromagneticField {n : ℕ} (c : SpeedOfLight)\n    (E : Time → Space 3 → EuclideanSpace ℝ (Fin 3))\n    (B : Time → Space 3 → EuclideanSpace ℝ (Fin 3)) (hE : ContDiff ℝ n ↿E)\n    (hB : ContDiff ℝ n ↿B) : ContDiff ℝ n (ofElectromagneticField c E B)",
      "sorry": false
@@ -2042,7 +2042,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.spaceTime_deriv_action_eq_sum",
      "kind": "lemma",
-     "line": 473,
+     "line": 474,
      "doc": "",
      "statement": "lemma spaceTime_deriv_action_eq_sum {d} {μ ν : Fin 1 ⊕ Fin d} {x : SpaceTime d}\n    (Λ : LorentzGroup d) (A : ElectromagneticPotential d) (hA : Differentiable ℝ A) :\n    ∂_ μ (Λ • A) x ν = ∑ κ, ∑ ρ, (Λ.1 ν κ * Λ⁻¹.1 ρ μ) * ∂_ ρ A (Λ⁻¹ • x) κ",
      "sorry": false
@@ -2050,7 +2050,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.hasVarAdjDerivAt_component",
      "kind": "lemma",
-     "line": 494,
+     "line": 495,
      "doc": "",
      "statement": "lemma hasVarAdjDerivAt_component {d : ℕ} (μ : Fin 1 ⊕ Fin d) (A : SpaceTime d → Lorentz.Vector d)\n    (hA : ContDiff ℝ ∞ A) :\n        HasVarAdjDerivAt (fun (A' : SpaceTime d → Lorentz.Vector d) x => A' x μ)\n          (fun (A' : SpaceTime d → ℝ) x => A' x • Lorentz.Vector.basis μ) A",
      "sorry": false
@@ -2058,7 +2058,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.deriv_hasVarAdjDerivAt",
      "kind": "lemma",
-     "line": 523,
+     "line": 524,
      "doc": "",
      "statement": "lemma deriv_hasVarAdjDerivAt {d} (μ ν : Fin 1 ⊕ Fin d) (A : SpaceTime d → Lorentz.Vector d)\n    (hA : ContDiff ℝ ∞ A) :\n    HasVarAdjDerivAt (fun (A : SpaceTime d → Lorentz.Vector d) x => ∂_ μ A x ν)\n      (fun ψ x => - (fderiv ℝ ψ x) (Lorentz.Vector.basis μ) • Lorentz.Vector.basis ν) A",
      "sorry": false
@@ -2066,7 +2066,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.deriv",
      "kind": "def",
-     "line": 547,
+     "line": 548,
      "doc": "The derivative of the electric potential, `∂_μ A^ν`.",
      "statement": "noncomputable def deriv {d} (A : ElectromagneticPotential d) :\n    SpaceTime d → Lorentz.CoVector d ⊗[ℝ] Lorentz.Vector d",
      "sorry": false
@@ -2074,7 +2074,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.deriv_eq_tensorDeriv",
      "kind": "lemma",
-     "line": 551,
+     "line": 552,
      "doc": "",
      "statement": "lemma deriv_eq_tensorDeriv {d} (A : ElectromagneticPotential d)\n    (hA : Differentiable ℝ A) (x : SpaceTime d) :\n    A.deriv x = tensorDeriv A.val x",
      "sorry": false
@@ -2082,7 +2082,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.deriv_equivariant",
      "kind": "lemma",
-     "line": 585,
+     "line": 586,
      "doc": "",
      "statement": "lemma deriv_equivariant {d} {x : SpaceTime d} (A : ElectromagneticPotential d)\n    (Λ : LorentzGroup d)\n    (hf : Differentiable ℝ A) : deriv (Λ • A) x = Λ • (deriv A (Λ⁻¹ • x))",
      "sorry": false
@@ -2090,7 +2090,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.tensorDeriv_eval_eq",
      "kind": "lemma",
-     "line": 602,
+     "line": 603,
      "doc": "Evaluation of the tensor components of `∂_ μ A x ν`.",
      "statement": "lemma tensorDeriv_eval_eq {d} {A : ElectromagneticPotential d} (hA : Differentiable ℝ A)\n    (x : SpaceTime d) (μ ν : Fin 1 ⊕ Fin d) :\n    toScalar {tensorDeriv A.val x | [μ] [ν]}ᵀ = ∂_ μ A x ν",
      "sorry": false
@@ -2098,7 +2098,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.deriv_basis_repr_apply",
      "kind": "lemma",
-     "line": 632,
+     "line": 633,
      "doc": "",
      "statement": "lemma deriv_basis_repr_apply {d} {μν : (Fin 1 ⊕ Fin d) × (Fin 1 ⊕ Fin d)}\n    (A : ElectromagneticPotential d)\n    (x : SpaceTime d) :\n    (Lorentz.CoVector.basis.tensorProduct Lorentz.Vector.basis).repr (deriv A x) μν =\n    ∂_ μν.1 A x μν.2",
      "sorry": false
@@ -2106,7 +2106,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.toTensor_deriv_basis_repr_apply",
      "kind": "lemma",
-     "line": 640,
+     "line": 641,
      "doc": "",
      "statement": "lemma toTensor_deriv_basis_repr_apply {d} (A : ElectromagneticPotential d)\n    (x : SpaceTime d) (b : ComponentIdx (S := realLorentzTensor d)\n      (Fin.append ![Color.down] ![Color.up])) :\n    (Tensor.basis _).repr (Tensorial.toTensor (deriv A x)) b =\n    ∂_ (b 0) A x (b 1)",
      "sorry": false
@@ -2114,7 +2114,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.differentiable_deriv",
      "kind": "lemma",
-     "line": 670,
+     "line": 671,
      "doc": "The derivative tensor of a `C^2` potential is differentiable.",
      "statement": "lemma differentiable_deriv {d} {A : ElectromagneticPotential d} (hA : ContDiff ℝ 2 A) :\n    Differentiable ℝ A.deriv",
      "sorry": false
@@ -2122,7 +2122,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.differentiable_deriv_of_smooth",
      "kind": "lemma",
-     "line": 676,
+     "line": 677,
      "doc": "",
      "statement": "lemma differentiable_deriv_of_smooth {d} {A : ElectromagneticPotential d}\n    (hA : ContDiff ℝ ∞ A) : Differentiable ℝ A.deriv",
      "sorry": false
@@ -2130,7 +2130,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.contDiff_deriv",
      "kind": "lemma",
-     "line": 682,
+     "line": 683,
      "doc": "The derivative tensor of a `C^{n+1}` potential is `C^n`.",
      "statement": "lemma contDiff_deriv {n} {d} {A : ElectromagneticPotential d} (hA : ContDiff ℝ (n + 1) A) :\n    ContDiff ℝ n A.deriv",
      "sorry": false
@@ -3210,35 +3210,35 @@
    "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
-     "line": 54,
+     "line": 53,
      "text": "## A. The current density"
     },
     {
-     "line": 96,
+     "line": 95,
      "text": "## B. The Potentials"
     },
     {
-     "line": 102,
+     "line": 101,
      "text": "### B.1. The electromagnetic potential"
     },
     {
-     "line": 140,
+     "line": 139,
      "text": "### B.3. The scalar potential"
     },
     {
-     "line": 163,
+     "line": 162,
      "text": "## C. The electric field"
     },
     {
-     "line": 188,
+     "line": 187,
      "text": "### C.1. The time derivative of the electric field"
     },
     {
-     "line": 200,
+     "line": 199,
      "text": "## D. The magnetic field"
     },
     {
-     "line": 210,
+     "line": 209,
      "text": "## E. Maxwell's equations"
     }
    ],
@@ -3246,7 +3246,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticleCurrentDensity",
      "kind": "def",
-     "line": 62,
+     "line": 61,
      "doc": "The current density of a point particle stationary at the origin\nof 1d space.",
      "statement": "noncomputable def oneDimPointParticleCurrentDensity (c : SpeedOfLight) (q : ℝ) (r₀ : Space 1) :\n    TempDistLorentzCurrentDensity 1",
      "sorry": false
@@ -3254,7 +3254,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticleCurrentDensity_eq_distTranslate",
      "kind": "lemma",
-     "line": 66,
+     "line": 65,
      "doc": "",
      "statement": "lemma oneDimPointParticleCurrentDensity_eq_distTranslate (c : SpeedOfLight) (q : ℝ) (r₀ : Space 1) :\n    oneDimPointParticleCurrentDensity c q r₀ = ((tempDistTimeSlice c).symm <|\n    constantTime <|\n    distTranslate (basis.repr r₀) <|\n    ((c * q) • diracDelta' ℝ 0 (Lorentz.Vector.basis (Sum.inl 0))))",
      "sorry": false
@@ -3262,7 +3262,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticleCurrentDensity_currentDensity",
      "kind": "lemma",
-     "line": 77,
+     "line": 76,
      "doc": "",
      "statement": "lemma oneDimPointParticleCurrentDensity_currentDensity (c : SpeedOfLight) (q : ℝ) (r₀ : Space 1) :\n    (oneDimPointParticleCurrentDensity c q r₀).currentDensity c = 0",
      "sorry": false
@@ -3270,7 +3270,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticleCurrentDensity_chargeDensity",
      "kind": "lemma",
-     "line": 84,
+     "line": 83,
      "doc": "",
      "statement": "lemma oneDimPointParticleCurrentDensity_chargeDensity (c : SpeedOfLight) (q : ℝ) (r₀ : Space 1) :\n    (oneDimPointParticleCurrentDensity c q r₀).chargeDensity c =\n    constantTime (q • diracDelta ℝ r₀)",
      "sorry": false
@@ -3278,7 +3278,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle",
      "kind": "def",
-     "line": 110,
+     "line": 109,
      "doc": "The electromagnetic potential of a point particle stationary at `r₀`\nof 1d space.",
      "statement": "noncomputable def oneDimPointParticle (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 1) :\n    TempDistElectromagneticPotential 1",
      "sorry": false
@@ -3286,7 +3286,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_eq_distTranslate",
      "kind": "lemma",
-     "line": 116,
+     "line": 115,
      "doc": "",
      "statement": "lemma oneDimPointParticle_eq_distTranslate (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 1) :\n    oneDimPointParticle 𝓕 q r₀ = ((tempDistTimeSlice 𝓕.c).symm <|\n    constantTime <|\n    distTranslate (basis.repr r₀) <|\n    distOfFunction (fun x => ((- (q * 𝓕.μ₀ * 𝓕.c)/ 2) * ‖x‖) • Lorentz.Vector.basis (Sum.inl 0))\n      (by fun_prop))",
      "sorry": false
@@ -3294,7 +3294,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_vectorPotential",
      "kind": "lemma",
-     "line": 134,
+     "line": 133,
      "doc": "",
      "statement": "lemma oneDimPointParticle_vectorPotential (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 1) :\n    (oneDimPointParticle 𝓕 q r₀).vectorPotential 𝓕.c = 0",
      "sorry": false
@@ -3302,7 +3302,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_scalarPotential",
      "kind": "lemma",
-     "line": 146,
+     "line": 145,
      "doc": "",
      "statement": "lemma oneDimPointParticle_scalarPotential (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 1) :\n    (oneDimPointParticle 𝓕 q r₀).scalarPotential 𝓕.c =\n    Space.constantTime (distOfFunction (fun x =>\n      - ((q * 𝓕.μ₀ * 𝓕.c ^ 2)/(2)) • ‖x-r₀‖) (by fun_prop))",
      "sorry": false
@@ -3310,7 +3310,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_electricField",
      "kind": "lemma",
-     "line": 169,
+     "line": 168,
      "doc": "",
      "statement": "lemma oneDimPointParticle_electricField (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 1) :\n    (oneDimPointParticle 𝓕 q r₀).electricField 𝓕.c =\n    ((q * 𝓕.μ₀ * 𝓕.c ^ 2) / 2) • constantTime (distOfFunction (fun x : Space 1 =>\n      ‖x - r₀‖ ^ (- 1 : ℤ) • basis.repr (x - r₀))\n      ((IsDistBounded.zpow_smul_repr_self (- 1 : ℤ) (by omega)).comp_sub_right r₀))",
      "sorry": false
@@ -3318,7 +3318,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_electricField_timeDeriv",
      "kind": "lemma",
-     "line": 195,
+     "line": 194,
      "doc": "",
      "statement": "lemma oneDimPointParticle_electricField_timeDeriv (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 1) :\n    Space.distTimeDeriv ((oneDimPointParticle 𝓕 q r₀).electricField 𝓕.c) = 0",
      "sorry": false
@@ -3326,7 +3326,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_magneticFieldMatrix",
      "kind": "lemma",
-     "line": 206,
+     "line": 205,
      "doc": "",
      "statement": "lemma oneDimPointParticle_magneticFieldMatrix (q : ℝ) (r₀ : Space 1) :\n    (oneDimPointParticle 𝓕 q r₀).magneticFieldMatrix 𝓕.c = 0",
      "sorry": false
@@ -3334,7 +3334,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_div_electricField",
      "kind": "lemma",
-     "line": 216,
+     "line": 215,
      "doc": "",
      "statement": "lemma oneDimPointParticle_div_electricField {𝓕} (q : ℝ) (r₀ : Space 1) :\n    distSpaceDiv ((oneDimPointParticle 𝓕 q r₀).electricField 𝓕.c) =\n    (𝓕.μ₀ * 𝓕.c ^ 2) • constantTime (q • diracDelta ℝ r₀)",
      "sorry": false
@@ -3342,7 +3342,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_isExterma",
      "kind": "lemma",
-     "line": 245,
+     "line": 244,
      "doc": "",
      "statement": "lemma oneDimPointParticle_isExterma (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 1) :\n    (oneDimPointParticle 𝓕 q r₀).IsExtrema 𝓕 (oneDimPointParticleCurrentDensity 𝓕.c q r₀)",
      "sorry": false
@@ -3360,47 +3360,47 @@
    "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
-     "line": 56,
+     "line": 55,
      "text": "## A. The current density\n\nThe current density of a point particle in 3d space is given by:\n\n$$J(r) = (c q \\delta(r - r₀), 0, 0, 0) $$\n\nwhere $c$ is the speed light, $q$ is the charge of the particle and $r₀$ is the position of the\nparticle in 3d space."
     },
     {
-     "line": 86,
+     "line": 85,
      "text": "### A.1. The charge density\n\nThe charge density of a point particle in 3d space is given by:\n$$ρ(r) = q \\delta(r - r₀) $$\n\nwhere $q$ is the charge of the particle and $r₀$ is the position of the particle in 3d space."
     },
     {
-     "line": 110,
+     "line": 109,
      "text": "### A.2. The 3-current density\n\nThe 3-current density of a point particle in 3d space is given by:\n$$\\vec J(r) = 0.$$\n\nIn other words, there is no current flow for a point particle at rest."
     },
     {
-     "line": 128,
+     "line": 127,
      "text": "## B. The Potentials"
     },
     {
-     "line": 134,
+     "line": 133,
      "text": "### B.1. The electromagnetic potential\n\nThe 4-potential of a point particle in 3d space is given by:\n\n$$A(r) = \\frac{q μ₀ c}{4 π |r - r₀|} (1, 0, 0, 0) $$\n\nwhere $μ₀$ is the permeability of free space, $c$ is the speed of light,\n$q$ is the charge of the particle and $r₀$ is the position of the particle in 3d space."
     },
     {
-     "line": 168,
+     "line": 167,
      "text": "### B.2. The scalar potential\n\nThe first component of the 4-potential is the scalar potential, once\none has taken account of factors of the speed of light. It is given by:\n\n$$V(r) = \\frac{q}{4 π \\epsilon_0 |r - r_0|}.$$"
     },
     {
-     "line": 198,
+     "line": 197,
      "text": "### B.3. The vector potential is zero\n\nThe spatial components of the 4-potential give the vector potential, which is zero\nfor a stationary point particle.\n\n$$\\vec A(r) = 0.$$"
     },
     {
-     "line": 216,
+     "line": 215,
      "text": "## C. The electric field\n\nThe electric field of a point particle in 3d space is given by:\n$$\\vec E(r) = \\frac{q}{4 π \\epsilon_0} \\frac{\\vec r - \\vec r₀}{|\\vec r - \\vec r₀|^3}.$$"
     },
     {
-     "line": 242,
+     "line": 241,
      "text": "### C.1. the time derivative of the electric field"
     },
     {
-     "line": 254,
+     "line": 253,
      "text": "## D. The magnetic field\n\nGiven that the vector potential is zero, the magnetic field is also zero."
     },
     {
-     "line": 268,
+     "line": 267,
      "text": "## E. Maxwell's equations\n\nThe divergence of the electric field of a point particle in 3d space is given by:\n$$∇ · \\vec E(r) = \\frac{1}{\\epsilon_0} q \\delta(r - r₀).$$\n\nFrom this, it follows that the electromagnetic potential of a point particle in 3d space\nsatisfies Maxwell's equations for a point particle at rest."
     }
    ],
@@ -3408,7 +3408,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticleCurrentDensity",
      "kind": "def",
-     "line": 71,
+     "line": 70,
      "doc": "The current density of a point particle stationary at a point `r₀`\nof 3d space.",
      "statement": "noncomputable def threeDimPointParticleCurrentDensity (c : SpeedOfLight) (q : ℝ) (r₀ : Space 3) :\n    TempDistLorentzCurrentDensity 3",
      "sorry": false
@@ -3416,7 +3416,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticleCurrentDensity_eq_distTranslate",
      "kind": "lemma",
-     "line": 75,
+     "line": 74,
      "doc": "",
      "statement": "lemma threeDimPointParticleCurrentDensity_eq_distTranslate (c : SpeedOfLight) (q : ℝ)\n    (r₀ : Space 3) :\n    threeDimPointParticleCurrentDensity c q r₀ = ((tempDistTimeSlice c).symm <|\n    constantTime <|\n    distTranslate (basis.repr r₀) <|\n    ((c * q) • diracDelta' ℝ 0 (Lorentz.Vector.basis (Sum.inl 0))))",
      "sorry": false
@@ -3424,7 +3424,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticleCurrentDensity_chargeDensity",
      "kind": "lemma",
-     "line": 98,
+     "line": 97,
      "doc": "",
      "statement": "lemma threeDimPointParticleCurrentDensity_chargeDensity (c : SpeedOfLight) (q : ℝ) (r₀ : Space 3) :\n    (threeDimPointParticleCurrentDensity c q r₀).chargeDensity c =\n    constantTime (q • diracDelta ℝ r₀)",
      "sorry": false
@@ -3432,7 +3432,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticleCurrentDensity_currentDensity",
      "kind": "lemma",
-     "line": 122,
+     "line": 121,
      "doc": "",
      "statement": "lemma threeDimPointParticleCurrentDensity_currentDensity (c : SpeedOfLight) (q : ℝ) (r₀ : Space 3) :\n    (threeDimPointParticleCurrentDensity c q r₀).currentDensity c = 0",
      "sorry": false
@@ -3440,7 +3440,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle",
      "kind": "def",
-     "line": 150,
+     "line": 149,
      "doc": "The electromagnetic potential of a point particle stationary at `r₀`\nof 3d space.",
      "statement": "noncomputable def threeDimPointParticle (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 3) :\n    TempDistElectromagneticPotential 3",
      "sorry": false
@@ -3448,7 +3448,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_eq_distTranslate",
      "kind": "lemma",
-     "line": 156,
+     "line": 155,
      "doc": "",
      "statement": "lemma threeDimPointParticle_eq_distTranslate (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 3) :\n    threeDimPointParticle 𝓕 q r₀ = ((tempDistTimeSlice 𝓕.c).symm <|\n    constantTime <|\n    distTranslate (basis.repr r₀) <|\n    distOfFunction (fun x => (((q * 𝓕.μ₀ * 𝓕.c)/ (4 * π))* ‖x‖⁻¹) •\n      Lorentz.Vector.basis (Sum.inl 0))\n      (((IsDistBounded.inv (by norm_num)).const_mul_fun _).smul_const _))",
      "sorry": false
@@ -3456,7 +3456,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_scalarPotential",
      "kind": "lemma",
-     "line": 179,
+     "line": 178,
      "doc": "",
      "statement": "lemma threeDimPointParticle_scalarPotential (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 3) :\n    (threeDimPointParticle 𝓕 q r₀).scalarPotential 𝓕.c =\n    Space.constantTime (distOfFunction (fun x => (q/ (4 * π * 𝓕.ε₀))• ‖x - r₀‖⁻¹)\n      (((IsDistBounded.inv_shift _).const_mul_fun _)))",
      "sorry": false
@@ -3464,7 +3464,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_vectorPotential",
      "kind": "lemma",
-     "line": 210,
+     "line": 209,
      "doc": "",
      "statement": "lemma threeDimPointParticle_vectorPotential (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 3) :\n    (threeDimPointParticle 𝓕 q r₀).vectorPotential 𝓕.c = 0",
      "sorry": false
@@ -3472,7 +3472,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_electricField",
      "kind": "lemma",
-     "line": 225,
+     "line": 224,
      "doc": "",
      "statement": "lemma threeDimPointParticle_electricField (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 3) :\n    (threeDimPointParticle 𝓕 q r₀).electricField 𝓕.c =\n    (q/ (4 * π * 𝓕.ε₀)) • constantTime (distOfFunction (fun x : Space 3 =>\n      ‖x - r₀‖ ^ (- 3 : ℤ) • basis.repr (x - r₀))\n      ((IsDistBounded.zpow_smul_repr_self (- 3 : ℤ) (by omega)).comp_sub_right r₀))",
      "sorry": false
@@ -3480,7 +3480,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_electricField_timeDeriv",
      "kind": "lemma",
-     "line": 249,
+     "line": 248,
      "doc": "",
      "statement": "lemma threeDimPointParticle_electricField_timeDeriv (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 3) :\n    Space.distTimeDeriv ((threeDimPointParticle 𝓕 q r₀).electricField 𝓕.c) = 0",
      "sorry": false
@@ -3488,7 +3488,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_magneticFieldMatrix",
      "kind": "lemma",
-     "line": 263,
+     "line": 262,
      "doc": "",
      "statement": "lemma threeDimPointParticle_magneticFieldMatrix (q : ℝ) (r₀ : Space 3) :\n    (threeDimPointParticle 𝓕 q r₀).magneticFieldMatrix 𝓕.c = 0",
      "sorry": false
@@ -3496,7 +3496,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_div_electricField",
      "kind": "lemma",
-     "line": 280,
+     "line": 279,
      "doc": "",
      "statement": "lemma threeDimPointParticle_div_electricField {𝓕} (q : ℝ) (r₀ : Space 3) :\n    distSpaceDiv ((threeDimPointParticle 𝓕 q r₀).electricField 𝓕.c) =\n    (1/𝓕.ε₀) • constantTime (q • diracDelta ℝ r₀)",
      "sorry": false
@@ -3504,7 +3504,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.threeDimPointParticle_isExterma",
      "kind": "lemma",
-     "line": 303,
+     "line": 302,
      "doc": "",
      "statement": "lemma threeDimPointParticle_isExterma (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 3) :\n    (threeDimPointParticle 𝓕 q r₀).IsExtrema 𝓕 (threeDimPointParticleCurrentDensity 𝓕.c q r₀)",
      "sorry": false
@@ -4160,11 +4160,11 @@
      "text": "### A.1. Magnetic field matrix in terms of vector potentials"
     },
     {
-     "line": 116,
+     "line": 117,
      "text": "### A.2. The magnetic field matrix in terms of the field strength"
     },
     {
-     "line": 140,
+     "line": 141,
      "text": "### A.3. Magnetic field matrix in 1d"
     }
    ],
@@ -4188,7 +4188,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.magneticFieldMatrix_basis_repr_eq_vector_potential",
      "kind": "lemma",
-     "line": 97,
+     "line": 98,
      "doc": "",
      "statement": "lemma magneticFieldMatrix_basis_repr_eq_vector_potential {c : SpeedOfLight}\n    (A : TempDistElectromagneticPotential d)\n    (ε : 𝓢(Time × Space d, ℝ)) (i j : Fin d) :\n    ((PiLp.basisFun 2 ℝ (Fin d)).tensorProduct (PiLp.basisFun 2 ℝ (Fin d))).repr\n        (A.magneticFieldMatrix c ε) (i, j) =\n      Space.distSpaceDeriv j (A.vectorPotential c) ε i -\n      Space.distSpaceDeriv i (A.vectorPotential c) ε j",
      "sorry": false
@@ -4196,7 +4196,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.magneticFieldMatrix_distSpaceDeriv_basis_repr_eq_vector_potential",
      "kind": "lemma",
-     "line": 106,
+     "line": 107,
      "doc": "",
      "statement": "lemma magneticFieldMatrix_distSpaceDeriv_basis_repr_eq_vector_potential {c : SpeedOfLight}\n    (A : TempDistElectromagneticPotential d)\n    (ε : 𝓢(Time × Space d, ℝ)) (i j k : Fin d) :\n    ((PiLp.basisFun 2 ℝ (Fin d)).tensorProduct (PiLp.basisFun 2 ℝ (Fin d))).repr\n    (Space.distSpaceDeriv k (A.magneticFieldMatrix c) ε) (i, j) =\n    Space.distSpaceDeriv k (Space.distSpaceDeriv j (A.vectorPotential c)) ε i -\n    Space.distSpaceDeriv k (Space.distSpaceDeriv i (A.vectorPotential c)) ε j",
      "sorry": false
@@ -4204,7 +4204,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.magneticFieldMatrix_basis_repr_eq_fieldStrength",
      "kind": "lemma",
-     "line": 122,
+     "line": 123,
      "doc": "",
      "statement": "lemma magneticFieldMatrix_basis_repr_eq_fieldStrength {c : SpeedOfLight}\n    (A : TempDistElectromagneticPotential d)\n    (ε : 𝓢(Time × Space d, ℝ)) (i j : Fin d) :\n    ((PiLp.basisFun 2 ℝ (Fin d)).tensorProduct (PiLp.basisFun 2 ℝ (Fin d))).repr\n        (A.magneticFieldMatrix c ε) (i, j) =\n      (Lorentz.Vector.basis.tensorProduct Lorentz.Vector.basis).repr\n        (tempDistTimeSlice c A.fieldStrength ε) (Sum.inr i, Sum.inr j)",
      "sorry": false
@@ -4212,7 +4212,7 @@
     {
      "name": "Electromagnetism.TempDistElectromagneticPotential.magneticFieldMatrix_one_dim_eq_zero",
      "kind": "lemma",
-     "line": 147,
+     "line": 148,
      "doc": "",
      "statement": "lemma magneticFieldMatrix_one_dim_eq_zero {c : SpeedOfLight}\n    (A : TempDistElectromagneticPotential 1) :\n    A.magneticFieldMatrix c = 0",
      "sorry": false
@@ -4495,63 +4495,63 @@
      "text": "### A.2. Smoothness of the electromagnetic potential"
     },
     {
-     "line": 136,
+     "line": 138,
      "text": "## B. The scalar potential\n\nThe scalar potential of the harmonic wave is zero."
     },
     {
-     "line": 152,
+     "line": 154,
      "text": "## C. The vector potential"
     },
     {
-     "line": 158,
+     "line": 160,
      "text": "### C.1. Components of the vector potential"
     },
     {
-     "line": 188,
+     "line": 190,
      "text": "### C.2. Space derivatives of the vector potential"
     },
     {
-     "line": 233,
+     "line": 235,
      "text": "## D. The electric field"
     },
     {
-     "line": 239,
+     "line": 241,
      "text": "### D.1. Components of the electric field"
     },
     {
-     "line": 268,
+     "line": 270,
      "text": "### D.2. Spatial derivatives of the electric field"
     },
     {
-     "line": 294,
+     "line": 296,
      "text": "### D.3. Time derivatives of the electric field"
     },
     {
-     "line": 317,
+     "line": 319,
      "text": "### D.4. Divergence of the electric field"
     },
     {
-     "line": 331,
+     "line": 333,
      "text": "## E. The magnetic field matrix for a harmonic wave"
     },
     {
-     "line": 336,
+     "line": 338,
      "text": "### E.1. Components of the magnetic field matrix"
     },
     {
-     "line": 374,
+     "line": 376,
      "text": "### E.2. Space derivatives of the magnetic field matrix"
     },
     {
-     "line": 438,
+     "line": 440,
      "text": "## F. Maxwell's equations for a harmonic wave"
     },
     {
-     "line": 480,
+     "line": 482,
      "text": "## G. The harmonic wave is a plane wave"
     },
     {
-     "line": 542,
+     "line": 544,
      "text": "## H. Polarization ellipse of the harmonic wave"
     }
    ],
@@ -4599,7 +4599,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_scalarPotential_eq_zero",
      "kind": "lemma",
-     "line": 145,
+     "line": 147,
      "doc": "",
      "statement": "lemma harmonicWaveX_scalarPotential_eq_zero {d} (𝓕 : FreeSpace) (k : ℝ)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) :\n    (harmonicWaveX 𝓕 k E₀ φ).scalarPotential 𝓕.c = 0",
      "sorry": false
@@ -4607,7 +4607,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_vectorPotential_zero_eq_zero",
      "kind": "lemma",
-     "line": 165,
+     "line": 167,
      "doc": "",
      "statement": "lemma harmonicWaveX_vectorPotential_zero_eq_zero {d} (𝓕 : FreeSpace) (k : ℝ)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) (t : Time) (x : Space d.succ) :\n    (harmonicWaveX 𝓕 k E₀ φ).vectorPotential 𝓕.c t x 0 = 0",
      "sorry": false
@@ -4615,7 +4615,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_vectorPotential_succ",
      "kind": "lemma",
-     "line": 171,
+     "line": 173,
      "doc": "",
      "statement": "lemma harmonicWaveX_vectorPotential_succ {d} (𝓕 : FreeSpace) (k : ℝ)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) (t : Time) (x : Space d.succ) (i : Fin d) :\n    (harmonicWaveX 𝓕 k E₀ φ).vectorPotential 𝓕.c t x i.succ =\n    - E₀ i * 1 / (𝓕.c * k) * Real.sin (k * (t.val * 𝓕.c - x 0) + φ i)",
      "sorry": false
@@ -4623,7 +4623,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_vectorPotential_succ'",
      "kind": "lemma",
-     "line": 179,
+     "line": 181,
      "doc": "",
      "statement": "lemma harmonicWaveX_vectorPotential_succ' {d} (𝓕 : FreeSpace) (k : ℝ)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) (t : Time) (x : Space d.succ) (i : ℕ)\n    (hi : i.succ < d.succ) :\n    (harmonicWaveX 𝓕 k E₀ φ).vectorPotential 𝓕.c t x ⟨i.succ, hi⟩ =\n    - E₀ ⟨i, by grind⟩ * 1 / (𝓕.c * k) * Real.sin (k * (t.val * 𝓕.c - x 0) + φ ⟨i, by grind⟩)",
      "sorry": false
@@ -4631,7 +4631,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_vectorPotential_space_deriv_succ",
      "kind": "lemma",
-     "line": 196,
+     "line": 198,
      "doc": "",
      "statement": "lemma harmonicWaveX_vectorPotential_space_deriv_succ {d} (𝓕 : FreeSpace) (k : ℝ)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) (t : Time) (x : Space d.succ) (j : Fin d)\n    (i : Fin d.succ) :\n    Space.deriv j.succ (fun x => vectorPotential 𝓕.c (harmonicWaveX 𝓕 k E₀ φ) t x i) x\n    = 0",
      "sorry": false
@@ -4639,7 +4639,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_vectorPotential_succ_space_deriv_zero",
      "kind": "lemma",
-     "line": 217,
+     "line": 219,
      "doc": "",
      "statement": "lemma harmonicWaveX_vectorPotential_succ_space_deriv_zero {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) (t : Time) (x : Space d.succ) (i : Fin d) :\n    Space.deriv 0 (fun x => vectorPotential 𝓕.c (harmonicWaveX 𝓕 k E₀ φ) t x i.succ) x\n    = E₀ i / 𝓕.c.val * Real.cos (𝓕.c.val * k * t.val - k * x 0 + φ i)",
      "sorry": false
@@ -4647,7 +4647,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_electricField_zero",
      "kind": "lemma",
-     "line": 244,
+     "line": 246,
      "doc": "",
      "statement": "lemma harmonicWaveX_electricField_zero {d} (𝓕 : FreeSpace) (k : ℝ)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) (t : Time) (x : Space d.succ) :\n    (harmonicWaveX 𝓕 k E₀ φ).electricField 𝓕.c t x 0 = 0",
      "sorry": false
@@ -4655,7 +4655,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_electricField_succ",
      "kind": "lemma",
-     "line": 252,
+     "line": 254,
      "doc": "",
      "statement": "lemma harmonicWaveX_electricField_succ {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) (t : Time) (x : Space d.succ) (i : Fin d) :\n    (harmonicWaveX 𝓕 k E₀ φ).electricField 𝓕.c t x i.succ =\n    E₀ i * Real.cos (k * 𝓕.c * t.val - k * x 0 + φ i)",
      "sorry": false
@@ -4663,7 +4663,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_electricField_space_deriv_same",
      "kind": "lemma",
-     "line": 274,
+     "line": 276,
      "doc": "",
      "statement": "lemma harmonicWaveX_electricField_space_deriv_same {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) (t : Time) (x : Space d.succ) (i : Fin d.succ) :\n    Space.deriv i (fun x => electricField 𝓕.c (harmonicWaveX 𝓕 k E₀ φ) t x i) x\n    = 0",
      "sorry": false
@@ -4671,7 +4671,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_electricField_succ_time_deriv",
      "kind": "lemma",
-     "line": 300,
+     "line": 302,
      "doc": "",
      "statement": "lemma harmonicWaveX_electricField_succ_time_deriv {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) (t : Time) (x : Space d.succ) (i : Fin d) :\n    Time.deriv (fun t => electricField 𝓕.c (harmonicWaveX 𝓕 k E₀ φ) t x i.succ) t\n    = - k * 𝓕.c * E₀ i * Real.sin (k * 𝓕.c * t.val - k * x 0 + φ i)",
      "sorry": false
@@ -4679,7 +4679,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_div_electricField_eq_zero",
      "kind": "lemma",
-     "line": 324,
+     "line": 326,
      "doc": "",
      "statement": "lemma harmonicWaveX_div_electricField_eq_zero {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) (t : Time) (x : Space d.succ) :\n    Space.div (fun x => electricField 𝓕.c (harmonicWaveX 𝓕 k E₀ φ) t x) x = 0",
      "sorry": false
@@ -4687,7 +4687,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_magneticFieldMatrix_succ_succ",
      "kind": "lemma",
-     "line": 343,
+     "line": 345,
      "doc": "",
      "statement": "lemma harmonicWaveX_magneticFieldMatrix_succ_succ {d} (𝓕 : FreeSpace) (k : ℝ)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) (t : Time) (x : Space d.succ)\n    (i j : Fin d) :\n    (harmonicWaveX 𝓕 k E₀ φ).magneticFieldMatrix 𝓕.c t x (i.succ, j.succ) = 0",
      "sorry": false
@@ -4695,7 +4695,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_magneticFieldMatrix_zero_succ",
      "kind": "lemma",
-     "line": 350,
+     "line": 352,
      "doc": "",
      "statement": "lemma harmonicWaveX_magneticFieldMatrix_zero_succ {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) (t : Time) (x : Space d.succ)\n    (i : Fin d) :\n    (harmonicWaveX 𝓕 k E₀ φ).magneticFieldMatrix 𝓕.c t x (0, i.succ) =\n    (- E₀ i / 𝓕.c.val) * cos (𝓕.c.val * k * t.val - k * x 0 + φ i)",
      "sorry": false
@@ -4703,7 +4703,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_magneticFieldMatrix_succ_zero",
      "kind": "lemma",
-     "line": 363,
+     "line": 365,
      "doc": "",
      "statement": "lemma harmonicWaveX_magneticFieldMatrix_succ_zero {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) (t : Time) (x : Space d.succ)\n    (i : Fin d) :\n    (harmonicWaveX 𝓕 k E₀ φ).magneticFieldMatrix 𝓕.c t x (i.succ, 0) =\n    (E₀ i / 𝓕.c.val) * cos (𝓕.c.val * k * t.val - k * x 0 + φ i)",
      "sorry": false
@@ -4711,7 +4711,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_magneticFieldMatrix_space_deriv_succ",
      "kind": "lemma",
-     "line": 380,
+     "line": 382,
      "doc": "",
      "statement": "lemma harmonicWaveX_magneticFieldMatrix_space_deriv_succ {d} (𝓕 : FreeSpace) (k : ℝ)\n    (hk : k ≠ 0)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) (t : Time) (x : Space d.succ)\n    (i j : Fin d.succ) (l : Fin d) :\n    Space.deriv l.succ (fun x => magneticFieldMatrix 𝓕.c (harmonicWaveX 𝓕 k E₀ φ) t x (i, j)) x\n    = 0",
      "sorry": false
@@ -4719,7 +4719,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_magneticFieldMatrix_zero_succ_space_deriv_zero",
      "kind": "lemma",
-     "line": 415,
+     "line": 417,
      "doc": "",
      "statement": "lemma harmonicWaveX_magneticFieldMatrix_zero_succ_space_deriv_zero {d} (𝓕 : FreeSpace) (k : ℝ)\n    (hk : k ≠ 0)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) (t : Time) (x : Space d.succ)\n    (i : Fin d) :\n    Space.deriv 0 (fun x => magneticFieldMatrix 𝓕.c (harmonicWaveX 𝓕 k E₀ φ) t x (0, i.succ)) x\n    = -E₀ i * k / 𝓕.c.val * sin (𝓕.c.val * k * t.val - k * x 0 + φ i)",
      "sorry": false
@@ -4727,7 +4727,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_isExtrema",
      "kind": "lemma",
-     "line": 444,
+     "line": 446,
      "doc": "",
      "statement": "lemma harmonicWaveX_isExtrema {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) :\n    IsExtrema 𝓕 (harmonicWaveX 𝓕 k E₀ φ) 0",
      "sorry": false
@@ -4735,7 +4735,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_isPlaneWave",
      "kind": "lemma",
-     "line": 486,
+     "line": 488,
      "doc": "",
      "statement": "lemma harmonicWaveX_isPlaneWave {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) :\n    IsPlaneWave 𝓕 (harmonicWaveX 𝓕 k E₀ φ) ⟨Space.basis 0, by simp⟩",
      "sorry": false
@@ -4743,7 +4743,7 @@
     {
      "name": "Electromagnetism.ElectromagneticPotential.harmonicWaveX_polarization_ellipse",
      "kind": "lemma",
-     "line": 549,
+     "line": 551,
      "doc": "",
      "statement": "lemma harmonicWaveX_polarization_ellipse {d} (𝓕 : FreeSpace) (k : ℝ) (hk : k ≠ 0)\n    (E₀ : Fin d → ℝ) (φ : Fin d → ℝ) (t : Time) (x : Space d.succ) (hi : ∀ i, E₀ i ≠ 0) :\n    2 * d * ∑ i : Fin d, ((harmonicWaveX 𝓕 k E₀ φ).electricField 𝓕.c t x i.succ / E₀ i) ^ 2 -\n    2 * ∑ i, ∑ j, ((harmonicWaveX 𝓕 k E₀ φ).electricField 𝓕.c t x i.succ / E₀ i) *\n      ((harmonicWaveX 𝓕 k E₀ φ).electricField 𝓕.c t x j.succ / E₀ j) *\n      Real.cos (φ j - φ i) =\n    ∑ i, ∑ j, Real.sin (φ j - φ i) ^ 2",
      "sorry": false

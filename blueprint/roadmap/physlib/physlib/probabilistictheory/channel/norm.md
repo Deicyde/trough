@@ -8,7 +8,7 @@ proof: formalized
 
 # Channels are contractions
 
-The module `Physlib.ProbabilisticTheory.Channel.Norm`, [Physlib/ProbabilisticTheory/Channel/Norm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Norm.lean): 5 declarations, 4 with a docstring.
+The module `Physlib.ProbabilisticTheory.Channel.Norm`, [Physlib/ProbabilisticTheory/Channel/Norm.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Norm.lean): 5 declarations, 4 with a docstring.
 
 > Unital positive linear maps are contractions with respect to the order-unit norm and are
 > therefore continuous.
@@ -29,7 +29,7 @@ The module `Physlib.ProbabilisticTheory.Channel.Norm`, [Physlib/ProbabilisticThe
 
 ## A. Contractivity and continuity
 
-**`Channel.orderUnitNorm_apply_le`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Norm.lean#L49).
+**`Channel.orderUnitNorm_apply_le`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Norm.lean#L49).
 
 > Unital positive linear maps are contractions for the order-unit norm.
 
@@ -38,7 +38,7 @@ lemma orderUnitNorm_apply_le (T : Channel P Q) (x : P.Observables) :
     orderUnitNorm (T x) ≤ orderUnitNorm x
 ```
 
-**`Channel.norm_apply_le`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Norm.lean#L57).
+**`Channel.norm_apply_le`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Norm.lean#L57).
 
 > Unital positive linear maps are contractions for the norm.
 
@@ -46,7 +46,7 @@ lemma orderUnitNorm_apply_le (T : Channel P Q) (x : P.Observables) :
 lemma norm_apply_le (T : Channel P Q) (x : P.Observables) : ‖T x‖ ≤ ‖x‖
 ```
 
-**`Channel.continuous`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Norm.lean#L62).
+**`Channel.continuous`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Norm.lean#L62).
 
 > Unital positive linear maps are continuous.
 
@@ -54,7 +54,7 @@ lemma norm_apply_le (T : Channel P Q) (x : P.Observables) : ‖T x‖ ≤ ‖x�
 lemma continuous (T : Channel P Q) : Continuous T
 ```
 
-**`Channel.toContinuousLinearMap`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Norm.lean#L66).
+**`Channel.toContinuousLinearMap`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Norm.lean#L66).
 
 > A unital positive linear map regarded as a continuous linear map.
 
@@ -62,7 +62,7 @@ lemma continuous (T : Channel P Q) : Continuous T
 noncomputable def toContinuousLinearMap (T : Channel P Q) : P.Observables →L[ℝ] Q.Observables
 ```
 
-**`Channel.toContinuousLinearMap_apply`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Norm.lean#L69).
+**`Channel.toContinuousLinearMap_apply`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Norm.lean#L69).
 
 ```lean
 lemma toContinuousLinearMap_apply (T : Channel P Q) (x : P.Observables) :
@@ -76,4 +76,4 @@ lemma toContinuousLinearMap_apply (T : Channel P Q) (x : P.Observables) :
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/Channel/Norm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Norm.lean)
+- [Physlib/ProbabilisticTheory/Channel/Norm.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Norm.lean)

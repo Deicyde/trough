@@ -8,7 +8,7 @@ proof: formalized
 
 # The Bessel function `J₀` and the massive sine propagation function on the line
 
-The module `PhyslibAlpha.Mathematics.SpecialFunctions.SincPropagator.Bessel`, [PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean): 24 declarations, 15 with a docstring.
+The module `PhyslibAlpha.Mathematics.SpecialFunctions.SincPropagator.Bessel`, [PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean): 24 declarations, 15 with a docstring.
 
 > The sine propagation function with mass is the cosine transform of the Bessel kernel on the
 > interval `[-r, r]`.
@@ -57,7 +57,7 @@ The module `PhyslibAlpha.Mathematics.SpecialFunctions.SincPropagator.Bessel`, [P
 > - `besselSqDeriv_sq` : the derivative at `z²` in terms of `J₁`.
 > - `mul_besselSqDeriv_eq_besselJ1` : the tail of the Green function in terms of `J₁`.
 
-**`Real.momentFormula`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L81).
+**`Real.momentFormula`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L81).
 
 > The closed form of the moments of `(1 - s²)ⁿ`.
 
@@ -65,14 +65,14 @@ The module `PhyslibAlpha.Mathematics.SpecialFunctions.SincPropagator.Bessel`, [P
 def momentFormula (n j : ℕ) : ℝ
 ```
 
-**`Real.momentFormula_succ`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L84).
+**`Real.momentFormula_succ`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L84).
 
 ```lean
 lemma momentFormula_succ (n j : ℕ) :
     momentFormula (n + 1) j = momentFormula n j - momentFormula n (j + 1)
 ```
 
-**`Real.moment_eq`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L118).
+**`Real.moment_eq`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L118).
 
 > The moments of `(1 - s²)ⁿ` on `[-1, 1]`.
 
@@ -81,7 +81,7 @@ lemma moment_eq (n j : ℕ) :
     ∫ s in (-1 : ℝ)..1, (1 - s ^ 2) ^ n * s ^ (2 * j) = momentFormula n j
 ```
 
-**`Real.besselSq`**, a def, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L148).
+**`Real.besselSq`**, a def, [line 148](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L148).
 
 > `J₀ (√y)` as a power series in `y`: `∑ (-y / 4)ⁿ / (n !)²`.
 
@@ -89,26 +89,26 @@ lemma moment_eq (n j : ℕ) :
 def besselSq (y : ℝ) : ℝ
 ```
 
-**`Real.summable_pow_div_factorial_sq`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L150).
+**`Real.summable_pow_div_factorial_sq`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L150).
 
 ```lean
 lemma summable_pow_div_factorial_sq (a : ℝ) : Summable fun n : ℕ => a ^ n / (n ! : ℝ) ^ 2
 ```
 
-**`Real.summable_even_pow_div_factorial`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L159).
+**`Real.summable_even_pow_div_factorial`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L159).
 
 ```lean
 lemma summable_even_pow_div_factorial (x : ℝ) :
     Summable fun j : ℕ => x ^ (2 * j) / ((2 * j) ! : ℝ)
 ```
 
-**`Real.hasSum_besselSq`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L163).
+**`Real.hasSum_besselSq`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L163).
 
 ```lean
 lemma hasSum_besselSq (y : ℝ) : HasSum (fun n : ℕ => (-y / 4) ^ n / (n ! : ℝ) ^ 2) (besselSq y)
 ```
 
-**`Real.moment_scaled`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L167).
+**`Real.moment_scaled`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L167).
 
 > The moments of `(r² - u²)ⁿ` on `[-r, r]`.
 
@@ -118,7 +118,7 @@ lemma moment_scaled {r : ℝ} (hr : 0 ≤ r) (n j : ℕ) :
       r ^ (2 * n + 2 * j + 1) * momentFormula n j
 ```
 
-**`Real.hasSum_integral_besselSq_cos`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L187).
+**`Real.hasSum_integral_besselSq_cos`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L187).
 
 > The cosine transform of the Bessel kernel as a double series.
 
@@ -130,7 +130,7 @@ lemma hasSum_integral_besselSq_cos {r : ℝ} (hr : 0 ≤ r) (k M : ℝ) :
       (∫ u in (-r)..r, besselSq (M * (r ^ 2 - u ^ 2)) * Real.cos (k * u))
 ```
 
-**`Real.coeff_eq`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L260).
+**`Real.coeff_eq`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L260).
 
 > The coefficient of the double series, simplified.
 
@@ -142,7 +142,7 @@ lemma coeff_eq (r k M : ℝ) (n j : ℕ) :
         (((n + j).choose n : ℝ) * M ^ n * (k ^ 2) ^ j)
 ```
 
-**`Real.hasSum_integral_besselSq_cos_series`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L279).
+**`Real.hasSum_integral_besselSq_cos_series`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L279).
 
 > **The cosine transform of the Bessel kernel as a series in the frequency squared.**
 
@@ -153,7 +153,7 @@ lemma hasSum_integral_besselSq_cos_series {r : ℝ} (hr : 0 ≤ r) (k M : ℝ) :
       (∫ u in (-r)..r, besselSq (M * (r ^ 2 - u ^ 2)) * Real.cos (k * u))
 ```
 
-**`Real.hasSum_sincPropagator_series`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L311).
+**`Real.hasSum_sincPropagator_series`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L311).
 
 > The sine propagation function as a power series in the frequency squared.
 
@@ -163,7 +163,7 @@ lemma hasSum_sincPropagator_series (r a : ℝ) (ha : 0 ≤ a) :
       (Real.sincPropagator r (Real.sqrt a))
 ```
 
-**`Real.integral_besselSq_cos`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L333).
+**`Real.integral_besselSq_cos`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L333).
 
 > **The cosine transform of the Bessel kernel.** For `r ≥ 0` and `k² + M ≥ 0`
 > `∫_{-r}^{r} J₀ (√M √(r² - u²)) cos (k u) du = 2 sin (r √(k² + M)) / √(k² + M)`.
@@ -174,7 +174,7 @@ lemma integral_besselSq_cos {r : ℝ} (hr : 0 ≤ r) (k M : ℝ) (h : 0 ≤ k ^ 
       2 * Real.sincPropagator r (Real.sqrt (k ^ 2 + M))
 ```
 
-**`Real.continuousOn_besselSq`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L342).
+**`Real.continuousOn_besselSq`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L342).
 
 > The Bessel series is continuous on bounded sets.
 
@@ -182,7 +182,7 @@ lemma integral_besselSq_cos {r : ℝ} (hr : 0 ≤ r) (k M : ℝ) (h : 0 ≤ k ^ 
 lemma continuousOn_besselSq (R : ℝ) : ContinuousOn besselSq (Set.Icc (-R) R)
 ```
 
-**`Real.besselSqDeriv`**, a def, [line 354](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L354).
+**`Real.besselSqDeriv`**, a def, [line 354](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L354).
 
 > The termwise derivative of the Bessel series.
 
@@ -190,14 +190,14 @@ lemma continuousOn_besselSq (R : ℝ) : ContinuousOn besselSq (Set.Icc (-R) R)
 def besselSqDeriv (y : ℝ) : ℝ
 ```
 
-**`Real.summable_besselSqDeriv_bound`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L356).
+**`Real.summable_besselSqDeriv_bound`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L356).
 
 ```lean
 lemma summable_besselSqDeriv_bound (a : ℝ) (ha : 0 ≤ a) :
     Summable fun n : ℕ => (n : ℝ) * (1 / 4) * a ^ (n - 1) / (n ! : ℝ) ^ 2
 ```
 
-**`Real.hasDerivAt_besselSq`**, a lemma, [line 372](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L372).
+**`Real.hasDerivAt_besselSq`**, a lemma, [line 372](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L372).
 
 > **The derivative of the Bessel series.**
 
@@ -205,13 +205,13 @@ lemma summable_besselSqDeriv_bound (a : ℝ) (ha : 0 ≤ a) :
 lemma hasDerivAt_besselSq (y : ℝ) : HasDerivAt besselSq (besselSqDeriv y) y
 ```
 
-**`Real.continuous_besselSqDeriv`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L396).
+**`Real.continuous_besselSqDeriv`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L396).
 
 ```lean
 lemma continuous_besselSqDeriv : Continuous besselSqDeriv
 ```
 
-**`Real.besselJ1`**, a def, [line 415](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L415).
+**`Real.besselJ1`**, a def, [line 415](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L415).
 
 > The Bessel function `J₁` by its power series.
 
@@ -219,14 +219,14 @@ lemma continuous_besselSqDeriv : Continuous besselSqDeriv
 def besselJ1 (z : ℝ) : ℝ
 ```
 
-**`Real.summable_besselSqDeriv`**, a lemma, [line 418](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L418).
+**`Real.summable_besselSqDeriv`**, a lemma, [line 418](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L418).
 
 ```lean
 lemma summable_besselSqDeriv (y : ℝ) :
     Summable fun n : ℕ => (n : ℝ) * (-1 / 4) * (-y / 4) ^ (n - 1) / (n ! : ℝ) ^ 2
 ```
 
-**`Real.besselSqDeriv_sq`**, a lemma, [line 428](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L428).
+**`Real.besselSqDeriv_sq`**, a lemma, [line 428](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L428).
 
 > The derivative of the Bessel series is `-J₁ (z) / (2 z)` at `y = z²`.
 
@@ -234,19 +234,19 @@ lemma summable_besselSqDeriv (y : ℝ) :
 lemma besselSqDeriv_sq {z : ℝ} (hz : z ≠ 0) : besselSqDeriv (z ^ 2) = -besselJ1 z / (2 * z)
 ```
 
-**`Real.continuous_besselSq`**, a lemma, [line 455](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L455).
+**`Real.continuous_besselSq`**, a lemma, [line 455](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L455).
 
 ```lean
 lemma continuous_besselSq : Continuous besselSq
 ```
 
-**`Real.besselSq_zero`**, a lemma, [line 458](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L458).
+**`Real.besselSq_zero`**, a lemma, [line 458](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L458).
 
 ```lean
 lemma besselSq_zero : besselSq 0 = 1
 ```
 
-**`Real.mul_besselSqDeriv_eq_besselJ1`**, a lemma, [line 467](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L467).
+**`Real.mul_besselSqDeriv_eq_besselJ1`**, a lemma, [line 467](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean#L467).
 
 > **The Bessel tail in terms of `J₁`.** For `|u| < τ` the derivative of the Bessel series at
 > `m² (τ² - u²)` is `J₁ (m √(τ² - u²)) / √(τ² - u²)` up to the factor `-1 / (2 m)`.
@@ -263,4 +263,4 @@ lemma mul_besselSqDeriv_eq_besselJ1 {m τ u : ℝ} (hm : m ≠ 0) (hu : |u| < τ
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean)
+- [PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean)

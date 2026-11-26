@@ -8,7 +8,7 @@ proof: formalized
 
 # Regularity and support for jet-coordinate maps
 
-The module `PhyslibAlpha.ClassicalFieldTheory.Local.JetPointRegularity`, [PhyslibAlpha/ClassicalFieldTheory/Local/JetPointRegularity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPointRegularity.lean): 4 declarations, 4 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.ClassicalFieldTheory.Local.JetPointRegularity`, [PhyslibAlpha/ClassicalFieldTheory/Local/JetPointRegularity.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPointRegularity.lean): 4 declarations, 4 with a docstring; 1 private, not shown.
 
 > Smoothness of jet-coordinate maps of smooth fields and their vanishing outside the support.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.Local.JetPointRegularity`, [Physli
 
 ## A. Smoothness of jet-coordinate maps
 
-**`ClassicalFieldTheory.Local.jetCoordinatesAt_contDiff`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPointRegularity.lean#L56).
+**`ClassicalFieldTheory.Local.jetCoordinatesAt_contDiff`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPointRegularity.lean#L56).
 
 > Smoothness of the jet-coordinate map of a smooth field.
 
@@ -46,7 +46,7 @@ lemma jetCoordinatesAt_contDiff (k : ℕ) (g : Space d → EuclideanSpace ℝ (F
     ContDiff ℝ ∞ (jetCoordinatesAt k g)
 ```
 
-**`ClassicalFieldTheory.Local.jetBaseCoordinates_contDiff`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPointRegularity.lean#L69).
+**`ClassicalFieldTheory.Local.jetBaseCoordinates_contDiff`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPointRegularity.lean#L69).
 
 > Smoothness of the base-plus-coordinate jet map of a smooth field.
 
@@ -58,7 +58,7 @@ lemma jetBaseCoordinates_contDiff (k : ℕ) (g : Space d → EuclideanSpace ℝ 
 
 ## B. Support and vanishing lemmas
 
-**`ClassicalFieldTheory.Local.jetCoordinatesAt_eq_zero_of_notMem_tsupport`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPointRegularity.lean#L87).
+**`ClassicalFieldTheory.Local.jetCoordinatesAt_eq_zero_of_notMem_tsupport`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPointRegularity.lean#L87).
 
 > Outside the topological support of a field, all of its jet coordinates vanish.
 
@@ -69,7 +69,7 @@ lemma jetCoordinatesAt_eq_zero_of_notMem_tsupport (k : ℕ)
     jetCoordinatesAt k g x = 0
 ```
 
-**`ClassicalFieldTheory.Local.jetDirectionAt_eq_zero_of_notMem_tsupport`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPointRegularity.lean#L96).
+**`ClassicalFieldTheory.Local.jetDirectionAt_eq_zero_of_notMem_tsupport`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPointRegularity.lean#L96).
 
 > Outside the topological support of a field, the corresponding jet-fiber direction vanishes.
 
@@ -86,4 +86,4 @@ lemma jetDirectionAt_eq_zero_of_notMem_tsupport (k : ℕ)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/Local/JetPointRegularity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/JetPointRegularity.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/Local/JetPointRegularity.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/JetPointRegularity.lean)

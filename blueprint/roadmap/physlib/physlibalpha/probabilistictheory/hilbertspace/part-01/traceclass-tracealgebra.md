@@ -8,7 +8,7 @@ proof: formalized
 
 # Linearity and cyclicity of the trace
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.TraceAlgebra`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/TraceAlgebra.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/TraceAlgebra.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.TraceAlgebra`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/TraceAlgebra.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/TraceAlgebra.lean): 3 declarations, 3 with a docstring.
 
 > The trace is linear on trace-class operators and cyclic against bounded operators.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.TraceAlgebr
 
 ## A. Linearity and cyclicity of the trace
 
-**`PhyslibAlpha.ProbabilisticTheory.trace_smul`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/TraceAlgebra.lean#L56).
+**`PhyslibAlpha.ProbabilisticTheory.trace_smul`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/TraceAlgebra.lean#L56).
 
 > Scalar homogeneity of the trace, with the canonical trace-class proof for the scaled
 > operator.
@@ -40,7 +40,7 @@ lemma trace_smul {T : H →L[ℂ] H} (c : ℂ) (hT : IsTraceClass T) :
 
 ### A.1. Additivity and cyclicity
 
-**`PhyslibAlpha.ProbabilisticTheory.trace_add`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/TraceAlgebra.lean#L75).
+**`PhyslibAlpha.ProbabilisticTheory.trace_add`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/TraceAlgebra.lean#L75).
 
 > Additivity of the unconditional trace.
 
@@ -49,7 +49,7 @@ lemma trace_add {T T' : H →L[ℂ] H} (hT : IsTraceClass T) (hT' : IsTraceClass
     trace (T + T') (isTraceClass_add hT hT') = trace T hT + trace T' hT'
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.trace_mul_cycle`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/TraceAlgebra.lean#L93).
+**`PhyslibAlpha.ProbabilisticTheory.trace_mul_cycle`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/TraceAlgebra.lean#L93).
 
 > Cyclicity of the trace across a bounded factor and a trace-class factor.
 
@@ -65,4 +65,4 @@ lemma trace_mul_cycle {A T : H →L[ℂ] H} (hT : IsTraceClass T) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/TraceAlgebra.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/TraceAlgebra.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/TraceAlgebra.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/TraceAlgebra.lean)

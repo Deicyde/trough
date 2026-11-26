@@ -8,7 +8,7 @@ proof: formalized
 
 # Cutoff responses of compact sources
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.CutoffResponse`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean): 13 declarations, 9 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.CutoffResponse`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean): 13 declarations, 9 with a docstring.
 
 ## i. Overview
 
@@ -62,7 +62,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.CutoffResponse`, [Phys
 >
 > Lemmas: `cutoffAdvancedSolution_apply`.
 
-**`KleinGordon.exists_solution_supported_seminorm`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L92).
+**`KleinGordon.exists_solution_supported_seminorm`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L92).
 
 > On bounded time intervals the response is controlled by a continuous source seminorm,
 > uniformly over every spatial observation point.
@@ -75,7 +75,7 @@ lemma exists_solution_supported_seminorm (K : Compacts (ℝ × E)) {μ : ℝ} (h
         ‖solution F (supportedSource F K f) μ p.1 p.2‖ ≤ q f
 ```
 
-**`KleinGordon.solutionEvaluation`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L141).
+**`KleinGordon.solutionEvaluation`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L141).
 
 > Evaluation of the retarded response at a fixed event is continuous in the native LF topology.
 
@@ -84,7 +84,7 @@ def solutionEvaluation {μ : ℝ} (hμ : 0 ≤ μ) (p : ℝ × E) :
     𝓓((⊤ : Opens (ℝ × E)), F) →L[ℝ] F
 ```
 
-**`KleinGordon.solutionEvaluation_apply`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L164).
+**`KleinGordon.solutionEvaluation_apply`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L164).
 
 ```lean
 lemma solutionEvaluation_apply {μ : ℝ} (hμ : 0 ≤ μ) (p : ℝ × E)
@@ -92,7 +92,7 @@ lemma solutionEvaluation_apply {μ : ℝ} (hμ : 0 ≤ μ) (p : ℝ × E)
     solutionEvaluation F hμ p f = solution F f μ p.1 p.2
 ```
 
-**`KleinGordon.advancedSolutionEvaluation`**, a def, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L169).
+**`KleinGordon.advancedSolutionEvaluation`**, a def, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L169).
 
 > Evaluation of the advanced response is continuous in the native LF source topology.
 
@@ -101,7 +101,7 @@ def advancedSolutionEvaluation {μ : ℝ} (hμ : 0 ≤ μ) (p : ℝ × E) :
     𝓓((⊤ : Opens (ℝ × E)), F) →L[ℝ] F
 ```
 
-**`KleinGordon.advancedSolutionEvaluation_apply`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L174).
+**`KleinGordon.advancedSolutionEvaluation_apply`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L174).
 
 ```lean
 lemma advancedSolutionEvaluation_apply {μ : ℝ} (hμ : 0 ≤ μ) (p : ℝ × E)
@@ -109,7 +109,7 @@ lemma advancedSolutionEvaluation_apply {μ : ℝ} (hμ : 0 ≤ μ) (p : ℝ × E
     advancedSolutionEvaluation F hμ p f = advancedSolution F f μ p.1 p.2
 ```
 
-**`KleinGordon.exists_integrand_derivative_supported_seminorm`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L183).
+**`KleinGordon.exists_integrand_derivative_supported_seminorm`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L183).
 
 > Every parameter derivative of the Fourier integrand has a continuous source bound.
 
@@ -122,7 +122,7 @@ lemma exists_integrand_derivative_supported_seminorm (K : Compacts (ℝ × E))
           q f * (1 + ‖z.2‖) ^ (-(N : ℝ))
 ```
 
-**`KleinGordon.exists_integral_derivative_supported_seminorm`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L212).
+**`KleinGordon.exists_integral_derivative_supported_seminorm`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L212).
 
 > Every derivative of a fixed-interval Fourier response is controlled continuously by the source.
 
@@ -135,7 +135,7 @@ lemma exists_integral_derivative_supported_seminorm (K : Compacts (ℝ × E))
           ∂((volume.restrict (Set.Ioc 0 (R : ℝ))).prod volume)) p‖ ≤ q f
 ```
 
-**`KleinGordon.exists_solution_derivative_supported_seminorm`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L251).
+**`KleinGordon.exists_solution_derivative_supported_seminorm`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L251).
 
 > Every spacetime derivative of the retarded field is controlled by a continuous source seminorm
 > on bounded time intervals, uniformly in the spatial observation point.
@@ -148,7 +148,7 @@ lemma exists_solution_derivative_supported_seminorm (K : Compacts (ℝ × E))
         ‖iteratedFDeriv ℝ k (fun w => solution F (supportedSource F K f) μ w.1 w.2) p‖ ≤ q f
 ```
 
-**`KleinGordon.cutoffSolutionSupported`**, a def, [line 284](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L284).
+**`KleinGordon.cutoffSolutionSupported`**, a def, [line 284](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L284).
 
 > A compactly cut off retarded response is continuous between fixed-support source and target
 > spaces in every derivative seminorm.
@@ -159,7 +159,7 @@ def cutoffSolutionSupported {μ : ℝ} (hμ : 0 ≤ μ) (K₁ K₂ : Compacts (�
     ContDiffMapSupportedIn (ℝ × E) F ⊤ K₁ →L[ℝ] ContDiffMapSupportedIn (ℝ × E) F ⊤ K₂
 ```
 
-**`KleinGordon.cutoffSolution`**, a def, [line 326](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L326).
+**`KleinGordon.cutoffSolution`**, a def, [line 326](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L326).
 
 > Multiplying the retarded Fourier response by a compact smooth cutoff is continuous on the
 > native LF test-function space.
@@ -169,7 +169,7 @@ def cutoffSolution {μ : ℝ} (hμ : 0 ≤ μ) (χ : 𝓓((⊤ : Opens (ℝ × E
     𝓓((⊤ : Opens (ℝ × E)), F) →L[ℝ] 𝓓((⊤ : Opens (ℝ × E)), F)
 ```
 
-**`KleinGordon.cutoffSolution_apply`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L351).
+**`KleinGordon.cutoffSolution_apply`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L351).
 
 ```lean
 lemma cutoffSolution_apply {μ : ℝ} (hμ : 0 ≤ μ) (χ : 𝓓((⊤ : Opens (ℝ × E)), ℝ))
@@ -177,7 +177,7 @@ lemma cutoffSolution_apply {μ : ℝ} (hμ : 0 ≤ μ) (χ : 𝓓((⊤ : Opens (
     cutoffSolution F hμ χ f p = χ p • solution F f μ p.1 p.2
 ```
 
-**`KleinGordon.cutoffAdvancedSolution`**, a def, [line 356](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L356).
+**`KleinGordon.cutoffAdvancedSolution`**, a def, [line 356](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L356).
 
 > A compactly cut off advanced response is continuous on native smooth tests.
 
@@ -186,7 +186,7 @@ def cutoffAdvancedSolution {μ : ℝ} (hμ : 0 ≤ μ) (χ : 𝓓((⊤ : Opens (
     𝓓((⊤ : Opens (ℝ × E)), F) →L[ℝ] 𝓓((⊤ : Opens (ℝ × E)), F)
 ```
 
-**`KleinGordon.cutoffAdvancedSolution_apply`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L363).
+**`KleinGordon.cutoffAdvancedSolution_apply`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean#L363).
 
 ```lean
 lemma cutoffAdvancedSolution_apply {μ : ℝ} (hμ : 0 ≤ μ) (χ : 𝓓((⊤ : Opens (ℝ × E)), ℝ))
@@ -201,4 +201,4 @@ lemma cutoffAdvancedSolution_apply {μ : ℝ} (hμ : 0 ≤ μ) (χ : 𝓓((⊤ :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean)

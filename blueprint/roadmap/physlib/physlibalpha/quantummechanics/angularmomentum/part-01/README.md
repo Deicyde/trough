@@ -19,7 +19,7 @@ navigation: transparent
 - [The tetrahedral symmetry of the 6j symbols](sixjsymmetry.md)
 - [Spin ½ and the Pauli matrices](spinhalf.md)
 - [Spin–orbit coupling](spinorbit.md)
+- [Rational values of the Wigner 3j symbols with general arguments](threejrational.md)
 - [Wigner 3j symbols](wigner3j.md)
 - [Rational values of the Wigner 3j symbols](wigner3jrational.md)
 - [The Wigner–Eckart theorem for sl₂](wignereckart.md)
-- [The Wigner–Eckart theorem for irreducible angular momentum representations](wignereckartirreducible.md)

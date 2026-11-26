@@ -8,7 +8,7 @@ proof: formalized
 
 # Order-unit structure on quasilocal observables
 
-The module `Physlib.ProbabilisticTheory.LocalNet.QuasilocalOrder`, [Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean): 19 declarations (4 instances with no name), 18 with a docstring.
+The module `Physlib.ProbabilisticTheory.LocalNet.QuasilocalOrder`, [Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean): 19 declarations (4 instances with no name), 18 with a docstring.
 
 > Positivity and a common unit for observables assembled from a local net.
 
@@ -44,7 +44,7 @@ The module `Physlib.ProbabilisticTheory.LocalNet.QuasilocalOrder`, [Physlib/Prob
 > Positive observables from different subsystems can be brought into a common larger subsystem and
 > added there. Nonnegative scaling preserves positivity within any one subsystem.
 
-**`ProbabilisticTheory.LocalNet.positive`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L72).
+**`ProbabilisticTheory.LocalNet.positive`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L72).
 
 > Global observables with a positive local representative.
 
@@ -52,7 +52,7 @@ The module `Physlib.ProbabilisticTheory.LocalNet.QuasilocalOrder`, [Physlib/Prob
 def positive (N : LocalNet R A) : Set N.Quasilocal
 ```
 
-**`ProbabilisticTheory.LocalNet.toQuasilocal_mem_pos`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L76).
+**`ProbabilisticTheory.LocalNet.toQuasilocal_mem_pos`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L76).
 
 > A positive local observable is positive globally.
 
@@ -61,7 +61,7 @@ lemma toQuasilocal_mem_pos {i : R} {a : (A i).Observables} (ha : 0 ≤ a) :
     toQuasilocal N i a ∈ positive N
 ```
 
-**`ProbabilisticTheory.LocalNet.smul_mem_pos`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L81).
+**`ProbabilisticTheory.LocalNet.smul_mem_pos`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L81).
 
 > Nonnegative scaling preserves global positivity.
 
@@ -70,7 +70,7 @@ lemma smul_mem_pos {c : ℝ} (hc : 0 ≤ c) {x : N.Quasilocal}
     (hx : x ∈ positive N) : c • x ∈ positive N
 ```
 
-**`ProbabilisticTheory.LocalNet.add_mem_pos`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L91).
+**`ProbabilisticTheory.LocalNet.add_mem_pos`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L91).
 
 > The sum of positive global observables is positive.
 
@@ -80,7 +80,7 @@ lemma add_mem_pos {x y : N.Quasilocal}
     x + y ∈ positive N
 ```
 
-**`ProbabilisticTheory.LocalNet.eq_zero_of_mem_pos_of_neg_mem_pos`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L101).
+**`ProbabilisticTheory.LocalNet.eq_zero_of_mem_pos_of_neg_mem_pos`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L101).
 
 > A global observable that is both positive and negative is zero.
 
@@ -94,7 +94,7 @@ lemma eq_zero_of_mem_pos_of_neg_mem_pos {x : N.Quasilocal}
 > The certain observable must not depend on which subsystem describes it. Every inclusion preserves
 > `1`, so the local units all represent one global observable.
 
-**An instance with no name**, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L133).
+**An instance with no name**, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L133).
 
 > The common global image of the local units.
 
@@ -102,7 +102,7 @@ lemma eq_zero_of_mem_pos_of_neg_mem_pos {x : N.Quasilocal}
 noncomputable instance : One N.Quasilocal
 ```
 
-**`ProbabilisticTheory.LocalNet.one_eq_toQuasilocal`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L136).
+**`ProbabilisticTheory.LocalNet.one_eq_toQuasilocal`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L136).
 
 > The global unit is represented by the unit of the chosen subsystem.
 
@@ -111,7 +111,7 @@ lemma one_eq_toQuasilocal :
     (1 : N.Quasilocal) = toQuasilocal N (Classical.arbitrary R) 1
 ```
 
-**`ProbabilisticTheory.LocalNet.toQuasilocal_one`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L144).
+**`ProbabilisticTheory.LocalNet.toQuasilocal_one`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L144).
 
 > Every local unit represents the global unit.
 
@@ -126,15 +126,15 @@ lemma toQuasilocal_one (i : R) :
 > an observable cannot be both positive and negative unless it is zero. When inclusions reflect
 > order, comparisons made within a subsystem agree with comparisons in the global system.
 
-**`ProbabilisticTheory.LocalNet.posCone`**, a def, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L169).
+**`ProbabilisticTheory.LocalNet.posCone`**, a def, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L169).
 
 > The cone of positive global observables.
 
 ```lean
-noncomputable def posCone : AddGroupCone N.Quasilocal
+noncomputable def posCone : AddSubmonoid N.Quasilocal
 ```
 
-**An instance with no name**, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L176).
+**An instance with no name**, [line 175](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L175).
 
 > The order on global observables induced by local positivity.
 
@@ -142,7 +142,7 @@ noncomputable def posCone : AddGroupCone N.Quasilocal
 noncomputable instance : PartialOrder N.Quasilocal
 ```
 
-**`ProbabilisticTheory.LocalNet.le_iff`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L180).
+**`ProbabilisticTheory.LocalNet.le_iff`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L180).
 
 > `x ≤ y` exactly when `y - x` has a positive local representative.
 
@@ -151,7 +151,7 @@ lemma le_iff {x y : N.Quasilocal} :
     x ≤ y ↔ y - x ∈ positive N
 ```
 
-**`ProbabilisticTheory.LocalNet.nonneg_iff`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L184).
+**`ProbabilisticTheory.LocalNet.nonneg_iff`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L184).
 
 > A global observable is nonnegative exactly when it belongs to `positive N`.
 
@@ -159,7 +159,7 @@ lemma le_iff {x y : N.Quasilocal} :
 lemma nonneg_iff {x : N.Quasilocal} : 0 ≤ x ↔ x ∈ positive N
 ```
 
-**An instance with no name**, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L188).
+**An instance with no name**, [line 188](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L188).
 
 > Adding the same global observable preserves a comparison.
 
@@ -167,7 +167,7 @@ lemma nonneg_iff {x : N.Quasilocal} : 0 ≤ x ↔ x ∈ positive N
 instance : IsOrderedAddMonoid N.Quasilocal
 ```
 
-**An instance with no name**, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L192).
+**An instance with no name**, [line 193](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L193).
 
 > Nonnegative scaling preserves comparisons between global observables.
 
@@ -175,7 +175,7 @@ instance : IsOrderedAddMonoid N.Quasilocal
 instance : PosSMulMono ℝ N.Quasilocal
 ```
 
-**`ProbabilisticTheory.LocalNet.toQuasilocal_nonneg_iff`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L202).
+**`ProbabilisticTheory.LocalNet.toQuasilocal_nonneg_iff`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L203).
 
 > A local observable is positive globally exactly when it is positive locally.
 
@@ -184,7 +184,7 @@ lemma toQuasilocal_nonneg_iff
     (i : R) (a : (A i).Observables) : 0 ≤ toQuasilocal N i a ↔ 0 ≤ a
 ```
 
-**`ProbabilisticTheory.LocalNet.toQuasilocal_le_iff`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L213).
+**`ProbabilisticTheory.LocalNet.toQuasilocal_le_iff`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L214).
 
 > A comparison of local observables has the same meaning globally.
 
@@ -201,7 +201,7 @@ lemma toQuasilocal_le_iff
 > carry the local Archimedean property to the global space. Each subsystem then maps into the
 > global observable space by a channel.
 
-**`ProbabilisticTheory.LocalNet.quasilocalTheory`**, an abbrev, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L230).
+**`ProbabilisticTheory.LocalNet.quasilocalTheory`**, an abbrev, [line 231](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L231).
 
 > The quasilocal observables equipped with their Archimedean order and common unit.
 
@@ -210,7 +210,7 @@ noncomputable abbrev quasilocalTheory (N : LocalNet R A) [N.IsOrderEmbedding] :
     ProbabilisticTheory
 ```
 
-**`ProbabilisticTheory.LocalNet.toQuasilocalChannel`**, a def, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L251).
+**`ProbabilisticTheory.LocalNet.toQuasilocalChannel`**, a def, [line 252](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L252).
 
 > Regard a subsystem observable as a global observable by a channel.
 
@@ -219,7 +219,7 @@ noncomputable def toQuasilocalChannel (N : LocalNet R A) [N.IsOrderEmbedding] (i
     Channel (A i) N.quasilocalTheory
 ```
 
-**`ProbabilisticTheory.LocalNet.toQuasilocalChannel_apply`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L256).
+**`ProbabilisticTheory.LocalNet.toQuasilocalChannel_apply`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean#L257).
 
 ```lean
 lemma toQuasilocalChannel_apply
@@ -237,4 +237,4 @@ lemma toQuasilocalChannel_apply
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean)
+- [Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean)

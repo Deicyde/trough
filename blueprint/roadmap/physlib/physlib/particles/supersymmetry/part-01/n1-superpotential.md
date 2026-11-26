@@ -8,7 +8,7 @@ proof: formalized
 
 # SUSY N=1 superpotential
 
-The module `Physlib.Particles.SuperSymmetry.N1.Superpotential`, [Physlib/Particles/SuperSymmetry/N1/Superpotential.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/N1/Superpotential.lean): 4 declarations (1 instance with no name), 4 with a docstring.
+The module `Physlib.Particles.SuperSymmetry.N1.Superpotential`, [Physlib/Particles/SuperSymmetry/N1/Superpotential.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/N1/Superpotential.lean): 4 declarations (1 instance with no name), 4 with a docstring.
 
 > The superpotential of the N=1 chiral sector, and its gradient as a chiral tensor.
 
@@ -32,7 +32,7 @@ The module `Physlib.Particles.SuperSymmetry.N1.Superpotential`, [Physlib/Particl
 
 ## A. The superpotential
 
-**`SUSY.N1.Superpotential`**, a structure, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/N1/Superpotential.lean#L57).
+**`SUSY.N1.Superpotential`**, a structure, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/N1/Superpotential.lean#L57).
 
 > A superpotential on the domain `D`: a function `W` of the chiral configuration, holomorphic on
 > `D`.
@@ -46,7 +46,7 @@ structure Superpotential (ι : Type) [Fintype ι] [DecidableEq ι]
   holomorphic : ∀ u ∈ D, DifferentiableAt ℂ W u
 ```
 
-**An instance with no name**, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/N1/Superpotential.lean#L71).
+**An instance with no name**, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/N1/Superpotential.lean#L71).
 
 > A superpotential is applied as the function `W`.
 
@@ -56,7 +56,7 @@ instance : CoeFun (Superpotential ι D) (fun _ => ChiralScalarConfiguration ι �
 
 ## B. The gradient
 
-**`SUSY.N1.Superpotential.dW`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/N1/Superpotential.lean#L79).
+**`SUSY.N1.Superpotential.dW`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/N1/Superpotential.lean#L79).
 
 > The gradient `∂_I W` of the superpotential, a covector of colour `chiralDown`.
 
@@ -65,7 +65,7 @@ def dW (W : Superpotential ι D) (u : ChiralScalarConfiguration ι) :
     (chiralTensor (ι := ι)).Tensor ![chiralDown]
 ```
 
-**`SUSY.N1.Superpotential.repr_dW`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/N1/Superpotential.lean#L84).
+**`SUSY.N1.Superpotential.repr_dW`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/N1/Superpotential.lean#L84).
 
 > The `I`-th component of the gradient is `∂_I W`.
 
@@ -82,4 +82,4 @@ lemma repr_dW (W : Superpotential ι D) (u : ChiralScalarConfiguration ι) (I : 
 
 ## Sources
 
-- [Physlib/Particles/SuperSymmetry/N1/Superpotential.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/N1/Superpotential.lean)
+- [Physlib/Particles/SuperSymmetry/N1/Superpotential.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/N1/Superpotential.lean)

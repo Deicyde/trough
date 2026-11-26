@@ -8,9 +8,9 @@ proof: formalized
 
 # Basis for tensors in a tensor species
 
-The module `Physlib.Relativity.Tensors.OfInt`, [Physlib/Relativity/Tensors/OfInt.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/OfInt.lean): 4 declarations, 2 with a docstring.
+The module `Physlib.Relativity.Tensors.OfInt`, [Physlib/Relativity/Tensors/OfInt.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/OfInt.lean): 4 declarations, 2 with a docstring.
 
-**`TensorSpecies.Tensor.TensorInt`**, an abbrev, [line 30](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/OfInt.lean#L30).
+**`TensorSpecies.Tensor.TensorInt`**, an abbrev, [line 30](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/OfInt.lean#L30).
 
 > A tensor with integer components with respect to the basis.
 
@@ -18,7 +18,7 @@ The module `Physlib.Relativity.Tensors.OfInt`, [Physlib/Relativity/Tensors/OfInt
 abbrev TensorInt {n : ℕ} (c : Fin n → C)
 ```
 
-**`TensorSpecies.Tensor.TensorInt.toTensor`**, a def, [line 37](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/OfInt.lean#L37).
+**`TensorSpecies.Tensor.TensorInt.toTensor`**, a def, [line 37](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/OfInt.lean#L37).
 
 > The element of `S.Tensor c` created from a tensor `TensorInt S c`.
 
@@ -27,7 +27,7 @@ noncomputable def toTensor {n : ℕ} {c : Fin n → C} (f : TensorInt S c) :
     S.Tensor c
 ```
 
-**`TensorSpecies.Tensor.TensorInt.basis_repr_apply`**, a lemma, [line 42](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/OfInt.lean#L42).
+**`TensorSpecies.Tensor.TensorInt.basis_repr_apply`**, a lemma, [line 42](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/OfInt.lean#L42).
 
 ```lean
 lemma basis_repr_apply {n : ℕ} {c : Fin n → C}
@@ -35,7 +35,7 @@ lemma basis_repr_apply {n : ℕ} {c : Fin n → C}
     (Tensor.basis c).repr (toTensor f) b = Int.cast (f b)
 ```
 
-**`TensorSpecies.Tensor.basis_eq_tensorInt`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/OfInt.lean#L50).
+**`TensorSpecies.Tensor.basis_eq_tensorInt`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/OfInt.lean#L50).
 
 ```lean
 lemma basis_eq_tensorInt {n : ℕ} {c : Fin n → C}
@@ -49,4 +49,4 @@ lemma basis_eq_tensorInt {n : ℕ} {c : Fin n → C}
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/OfInt.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/OfInt.lean)
+- [Physlib/Relativity/Tensors/OfInt.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/OfInt.lean)

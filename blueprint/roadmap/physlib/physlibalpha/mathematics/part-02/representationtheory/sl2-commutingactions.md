@@ -8,7 +8,7 @@ proof: formalized
 
 # Classification for two commuting sl₂ actions
 
-The module `PhyslibAlpha.Mathematics.RepresentationTheory.Sl2.CommutingActions`, [PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/CommutingActions.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/CommutingActions.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.Mathematics.RepresentationTheory.Sl2.CommutingActions`, [PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/CommutingActions.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/CommutingActions.lean): 3 declarations, 3 with a docstring.
 
 > Uses the bivariate basis to obtain a tensor-product vector-space description.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.Mathematics.RepresentationTheory.Sl2.CommutingActions`,
 
 ## A. Two commuting actions
 
-**`PhyslibAlpha.Sl2.finrank_standardSl2Module`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/CommutingActions.lean#L51).
+**`PhyslibAlpha.Sl2.finrank_standardSl2Module`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/CommutingActions.lean#L51).
 
 > The standard module `V(k)` has dimension `k + 1`.
 
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.Mathematics.RepresentationTheory.Sl2.CommutingActions`,
 lemma finrank_standardSl2Module (k : ℕ) : Module.finrank K (StandardSl2Module K k) = k + 1
 ```
 
-**`PhyslibAlpha.Sl2.commuting_classification_finrank`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/CommutingActions.lean#L67).
+**`PhyslibAlpha.Sl2.commuting_classification_finrank`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/CommutingActions.lean#L67).
 
 > Dimension consequence of `commuting_classification`: `finrank K V = (m+1)(n+1)`.
 
@@ -47,7 +47,7 @@ lemma commuting_classification_finrank :
     ∃ m n : ℕ, Module.finrank K V = (m + 1) * (n + 1)
 ```
 
-**`PhyslibAlpha.Sl2.commuting_classification`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/CommutingActions.lean#L82).
+**`PhyslibAlpha.Sl2.commuting_classification`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/CommutingActions.lean#L82).
 
 > Classification of jointly irreducible commuting `sl₂`-actions.
 > Two `sl₂`-triples of operators on a
@@ -69,4 +69,4 @@ lemma commuting_classification :
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/CommutingActions.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/CommutingActions.lean)
+- [PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/CommutingActions.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/CommutingActions.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The nearest neighbours of fcc and bcc are words of axis steps
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.Examples.AxisStepWords`, [PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean): 15 declarations, 15 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.Examples.AxisStepWords`, [PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean): 15 declarations, 15 with a docstring.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Examples.AxisStepWords`, [Physl
 
 ## A. Axis steps and their words
 
-**`CondensedMatter.Crystal.axisStep`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L54).
+**`CondensedMatter.Crystal.axisStep`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L54).
 
 > The step of length one along the axis `i`, forward or backward.
 
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Examples.AxisStepWords`, [Physl
 def axisStep (i : Fin 3) (s : Bool) : Fin 3 → ℤ
 ```
 
-**`CondensedMatter.Crystal.twoStepWords`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L57).
+**`CondensedMatter.Crystal.twoStepWords`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L57).
 
 > The words of two steps along different axes.
 
@@ -53,7 +53,7 @@ def axisStep (i : Fin 3) (s : Bool) : Fin 3 → ℤ
 def twoStepWords : Finset ((Fin 3 × Bool) × (Fin 3 × Bool))
 ```
 
-**`CondensedMatter.Crystal.threeStepWords`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L61).
+**`CondensedMatter.Crystal.threeStepWords`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L61).
 
 > The words of three steps along the three different axes.
 
@@ -61,7 +61,7 @@ def twoStepWords : Finset ((Fin 3 × Bool) × (Fin 3 × Bool))
 def threeStepWords : Finset ((Fin 3 × Bool) × (Fin 3 × Bool) × (Fin 3 × Bool))
 ```
 
-**`CondensedMatter.Crystal.twoStepSum`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L65).
+**`CondensedMatter.Crystal.twoStepSum`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L65).
 
 > The displacement of a word of two steps.
 
@@ -69,7 +69,7 @@ def threeStepWords : Finset ((Fin 3 × Bool) × (Fin 3 × Bool) × (Fin 3 × Boo
 def twoStepSum (w : (Fin 3 × Bool) × (Fin 3 × Bool)) : Fin 3 → ℤ
 ```
 
-**`CondensedMatter.Crystal.threeStepSum`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L69).
+**`CondensedMatter.Crystal.threeStepSum`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L69).
 
 > The displacement of a word of three steps.
 
@@ -77,7 +77,7 @@ def twoStepSum (w : (Fin 3 × Bool) × (Fin 3 × Bool)) : Fin 3 → ℤ
 def threeStepSum (w : (Fin 3 × Bool) × (Fin 3 × Bool) × (Fin 3 × Bool)) : Fin 3 → ℤ
 ```
 
-**`CondensedMatter.Crystal.twoStepSum_swap`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L74).
+**`CondensedMatter.Crystal.twoStepSum_swap`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L74).
 
 > Steps along different axes commute: both orders of a word of two steps reach the same
 > site.
@@ -89,7 +89,7 @@ lemma twoStepSum_swap (w : (Fin 3 × Bool) × (Fin 3 × Bool)) :
 
 ## B. Coordinates of the box
 
-**`CondensedMatter.Crystal.fccCoord`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L80).
+**`CondensedMatter.Crystal.fccCoord`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L80).
 
 > The coordinates in the box, in units of half its sides, of the cell `n` of the fcc lattice.
 
@@ -97,7 +97,7 @@ lemma twoStepSum_swap (w : (Fin 3 × Bool) × (Fin 3 × Bool)) :
 def fccCoord (n : Fin 3 → ℤ) : Fin 3 → ℤ
 ```
 
-**`CondensedMatter.Crystal.bccCoord`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L83).
+**`CondensedMatter.Crystal.bccCoord`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L83).
 
 > The coordinates in the box, in units of half its sides, of the cell `n` of the bcc lattice.
 
@@ -105,7 +105,7 @@ def fccCoord (n : Fin 3 → ℤ) : Fin 3 → ℤ
 def bccCoord (n : Fin 3 → ℤ) : Fin 3 → ℤ
 ```
 
-**`CondensedMatter.Crystal.signedDisplacements`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L87).
+**`CondensedMatter.Crystal.signedDisplacements`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L87).
 
 > The displacements of the bonds of a list, with both signs.
 
@@ -113,7 +113,7 @@ def bccCoord (n : Fin 3 → ℤ) : Fin 3 → ℤ
 def signedDisplacements (bonds : List (Bond (Fin 3 → ℤ) Unit)) : Finset (Fin 3 → ℤ)
 ```
 
-**`CondensedMatter.Crystal.latticeMap_fccVectors`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L92).
+**`CondensedMatter.Crystal.latticeMap_fccVectors`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L92).
 
 > The physical position of a cell of the fcc lattice is `fccCoord` in units of half the sides
 > of the box.
@@ -123,7 +123,7 @@ lemma latticeMap_fccVectors (a b c : ℝ) (n : Fin 3 → ℤ) (k : Fin 3) :
     latticeMap (fccVectors a b c) n k = ![a, b, c] k / 2 * (fccCoord n k : ℝ)
 ```
 
-**`CondensedMatter.Crystal.latticeMap_bccVectors`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L100).
+**`CondensedMatter.Crystal.latticeMap_bccVectors`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L100).
 
 > The physical position of a cell of the bcc lattice is `bccCoord` in units of half the sides
 > of the box.
@@ -135,7 +135,7 @@ lemma latticeMap_bccVectors (a b c : ℝ) (n : Fin 3 → ℤ) (k : Fin 3) :
 
 ## C. The neighbours as words
 
-**`CondensedMatter.Crystal.fccBonds_eq_twoStepWords`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L110).
+**`CondensedMatter.Crystal.fccBonds_eq_twoStepWords`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L110).
 
 > The nearest neighbours of the fcc lattice, up to sign, are the sums of two steps along
 > different axes.
@@ -145,7 +145,7 @@ lemma fccBonds_eq_twoStepWords :
     (signedDisplacements fccBonds).image fccCoord = twoStepWords.image twoStepSum
 ```
 
-**`CondensedMatter.Crystal.bccBonds_eq_threeStepWords`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L116).
+**`CondensedMatter.Crystal.bccBonds_eq_threeStepWords`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L116).
 
 > The nearest neighbours of the bcc lattice, up to sign, are the sums of three steps along the
 > three axes.
@@ -155,7 +155,7 @@ lemma bccBonds_eq_threeStepWords :
     (signedDisplacements bccBonds).image bccCoord = threeStepWords.image threeStepSum
 ```
 
-**`CondensedMatter.Crystal.card_twoStepWords_fiber`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L121).
+**`CondensedMatter.Crystal.card_twoStepWords_fiber`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L121).
 
 > Each nearest neighbour of the fcc lattice is reached by exactly two words of two steps.
 
@@ -164,7 +164,7 @@ lemma card_twoStepWords_fiber :
     ∀ v ∈ twoStepWords.image twoStepSum, (twoStepWords.filter (twoStepSum · = v)).card = 2
 ```
 
-**`CondensedMatter.Crystal.card_threeStepWords_fiber`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L126).
+**`CondensedMatter.Crystal.card_threeStepWords_fiber`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean#L126).
 
 > Each nearest neighbour of the bcc lattice is reached by exactly six words of three steps.
 
@@ -180,4 +180,4 @@ lemma card_threeStepWords_fiber :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean)

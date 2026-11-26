@@ -8,14 +8,14 @@ proof: formalized
 
 # Permutations of Wick contractions
 
-The module `Physlib.QFT.PerturbationTheory.WickContraction.Perm`, [Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean): 4 declarations, 4 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.WickContraction.Perm`, [Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean): 4 declarations, 4 with a docstring.
 
 > We define two Wick contractions to be permutations of each other
 > if the Wick term they produce is equal.
 >
 > …
 
-**`WickContraction.Perm`**, a def, [line 43](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean#L43).
+**`WickContraction.Perm`**, a def, [line 43](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean#L43).
 
 > For a list `φs` of `𝓕.FieldOp`, and two Wick contractions `φsΛ₁` and `φsΛ₂` of `φs`,
 > we say that `φsΛ₁` and `φsΛ₂` are permutations of each other if they have the same Wick term.
@@ -24,7 +24,7 @@ The module `Physlib.QFT.PerturbationTheory.WickContraction.Perm`, [Physlib/QFT/P
 def Perm {φs : List 𝓕.FieldOp} (φsΛ₁ φsΛ₂ : WickContraction φs.length) : Prop
 ```
 
-**`WickContraction.Perm.refl`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean#L52).
+**`WickContraction.Perm.refl`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean#L52).
 
 > The reflexivity of the `Perm` relation.
 
@@ -32,7 +32,7 @@ def Perm {φs : List 𝓕.FieldOp} (φsΛ₁ φsΛ₂ : WickContraction φs.leng
 lemma refl : Perm φsΛ φsΛ
 ```
 
-**`WickContraction.Perm.symm`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean#L57).
+**`WickContraction.Perm.symm`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean#L57).
 
 > The symmetry of the `Perm` relation.
 
@@ -40,7 +40,7 @@ lemma refl : Perm φsΛ φsΛ
 lemma symm (h : Perm φsΛ₁ φsΛ₂) : Perm φsΛ₂ φsΛ₁
 ```
 
-**`WickContraction.Perm.trans`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean#L63).
+**`WickContraction.Perm.trans`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean#L63).
 
 > The transitivity of the `Perm` relation.
 
@@ -56,4 +56,4 @@ lemma trans (h12 : Perm φsΛ₁ φsΛ₂) (h23 : Perm φsΛ₂ φsΛ₃) :
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean)
+- [Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean)

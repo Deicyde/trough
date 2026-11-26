@@ -8,7 +8,7 @@ proof: formalized
 
 # The wave operator is Poincaré invariant
 
-The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Poincare`, [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean): 7 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Poincare`, [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean): 7 declarations, 7 with a docstring.
 
 > The wave operator commutes with the action of the Poincaré group on fields.
 
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Poincare`, [PhyslibAl
 
 > - `deriv_comp_add_right` : a translation commutes with the spacetime derivative.
 
-**`WaveEquation.sum_eta_lorentz`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean#L68).
+**`WaveEquation.sum_eta_lorentz`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean#L68).
 
 > The matrix of a Lorentz transformation preserves the metric.
 
@@ -51,7 +51,7 @@ lemma sum_eta_lorentz (Λ : LorentzGroup d) (ν ρ : Fin 1 ⊕ Fin d) :
     ∑ μ, η μ μ * Λ.1 ν μ * Λ.1 ρ μ = η ν ρ
 ```
 
-**`WaveEquation.deriv_finset_sum`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean#L96).
+**`WaveEquation.deriv_finset_sum`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean#L96).
 
 > The spacetime derivative of a finite sum is the sum of the derivatives.
 
@@ -61,7 +61,7 @@ lemma deriv_finset_sum {ι : Type*} (s : Finset ι) (f : ι → SpaceTime d → 
     ∂_ μ (fun y => ∑ i ∈ s, f i y) x = ∑ i ∈ s, ∂_ μ (f i) x
 ```
 
-**`WaveEquation.deriv_deriv_comp_lorentz`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean#L103).
+**`WaveEquation.deriv_deriv_comp_lorentz`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean#L103).
 
 > The second derivative of a Lorentz transformed function.
 
@@ -72,7 +72,7 @@ lemma deriv_deriv_comp_lorentz (u : SpaceTime d → V) (hu : ContDiff ℝ ∞ u)
       ∑ ν, ∑ ρ, (Λ.1 ν μ * Λ.1 ρ μ) • ∂_ ρ (∂_ ν u) (Λ • x)
 ```
 
-**`WaveEquation.waveTrace_comp_lorentz`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean#L128).
+**`WaveEquation.waveTrace_comp_lorentz`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean#L128).
 
 > The metric trace of the second derivative of a Lorentz transformed function.
 
@@ -83,7 +83,7 @@ lemma waveTrace_comp_lorentz (u : SpaceTime d → V) (hu : ContDiff ℝ ∞ u) (
       ∑ ν, (η ν ν : ℝ) • ∂_ ν (∂_ ν u) (Λ • x)
 ```
 
-**`WaveEquation.deriv_comp_add_right`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean#L159).
+**`WaveEquation.deriv_comp_add_right`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean#L159).
 
 > A translation commutes with the spacetime derivative.
 
@@ -92,7 +92,7 @@ lemma deriv_comp_add_right (u : SpaceTime d → V) (b : SpaceTime d) (μ : Fin 1
     ∂_ μ (fun y => u (y + b)) = fun y => ∂_ μ u (y + b)
 ```
 
-**`WaveEquation.waveTrace_act`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean#L166).
+**`WaveEquation.waveTrace_act`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean#L166).
 
 > The metric trace of the second derivative of a transformed function.
 
@@ -103,7 +103,7 @@ lemma waveTrace_act (g : PoincareGroup d) (u : SpaceTime d → V) (hu : ContDiff
       ∑ μ, (η μ μ : ℝ) • ∂_ μ (∂_ μ u) (g⁻¹ • x)
 ```
 
-**`WaveEquation.smoothWaveOperator_actSmooth`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean#L185).
+**`WaveEquation.smoothWaveOperator_actSmooth`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean#L185).
 
 > The wave operator commutes with the action of the Poincaré group.
 
@@ -120,4 +120,4 @@ lemma smoothWaveOperator_actSmooth (g : PoincareGroup d) (u : smoothFields d V) 
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean)

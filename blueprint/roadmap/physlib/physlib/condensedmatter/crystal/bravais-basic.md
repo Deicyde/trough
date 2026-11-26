@@ -8,7 +8,7 @@ proof: formalized
 
 # Bravais lattices
 
-The module `Physlib.CondensedMatter.Crystal.Bravais.Basic`, [Physlib/CondensedMatter/Crystal/Bravais/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Bravais/Basic.lean): 6 declarations, 6 with a docstring.
+The module `Physlib.CondensedMatter.Crystal.Bravais.Basic`, [Physlib/CondensedMatter/Crystal/Bravais/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Bravais/Basic.lean): 6 declarations, 6 with a docstring.
 
 > A Bravais lattice with one site per cell, repeated by `d` independent translations, and its
 > embedding given by `d` primitive vectors.
@@ -41,7 +41,7 @@ The module `Physlib.CondensedMatter.Crystal.Bravais.Basic`, [Physlib/CondensedMa
 
 ## A. The crystal
 
-**`Physlib.CondensedMatter.Crystal.bravais`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Bravais/Basic.lean#L58).
+**`Physlib.CondensedMatter.Crystal.bravais`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Bravais/Basic.lean#L58).
 
 > The Bravais lattice of dimension `d`: the translation group is `ℤᵈ` and the unit cell has a
 > single site.
@@ -52,7 +52,7 @@ def bravais (d : ℕ) : Crystal (Fin d → ℤ)
 
 ## B. The embedding
 
-**`Physlib.CondensedMatter.Crystal.Embedding.ofVectors`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Bravais/Basic.lean#L67).
+**`Physlib.CondensedMatter.Crystal.Embedding.ofVectors`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Bravais/Basic.lean#L67).
 
 > The embedding of the Bravais lattice of dimension `d` given by `d` primitive vectors.
 
@@ -60,7 +60,7 @@ def bravais (d : ℕ) : Crystal (Fin d → ℤ)
 def ofVectors (v : Fin d → E) : Embedding (bravais d) E
 ```
 
-**`Physlib.CondensedMatter.Crystal.Embedding.position_ofVectors`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Bravais/Basic.lean#L76).
+**`Physlib.CondensedMatter.Crystal.Embedding.position_ofVectors`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Bravais/Basic.lean#L76).
 
 > The position of a site is the integer combination of the primitive vectors given by its
 > cell.
@@ -72,7 +72,7 @@ lemma position_ofVectors (v : Fin d → E) (x : (bravais d).Site) :
 
 ## C. Spanning and independence
 
-**`Physlib.CondensedMatter.Crystal.Embedding.isSpaceFilling_ofVectors_iff`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Bravais/Basic.lean#L86).
+**`Physlib.CondensedMatter.Crystal.Embedding.isSpaceFilling_ofVectors_iff`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Bravais/Basic.lean#L86).
 
 > The embedding of a Bravais lattice is space filling exactly when the primitive vectors span
 > the space.
@@ -82,7 +82,7 @@ lemma isSpaceFilling_ofVectors_iff (v : Fin d → E) :
     (ofVectors v).IsSpaceFilling ↔ Submodule.span ℝ (Set.range v) = ⊤
 ```
 
-**`Physlib.CondensedMatter.Crystal.Embedding.position_ofVectors_injective`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Bravais/Basic.lean#L96).
+**`Physlib.CondensedMatter.Crystal.Embedding.position_ofVectors_injective`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Bravais/Basic.lean#L96).
 
 > Linearly independent primitive vectors give distinct positions to distinct sites.
 
@@ -91,7 +91,7 @@ lemma position_ofVectors_injective {v : Fin d → E} (hv : LinearIndependent ℝ
     Function.Injective (ofVectors v).position
 ```
 
-**`Physlib.CondensedMatter.Crystal.Embedding.finrank_eq_of_ofVectors`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Bravais/Basic.lean#L110).
+**`Physlib.CondensedMatter.Crystal.Embedding.finrank_eq_of_ofVectors`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Bravais/Basic.lean#L110).
 
 > A space-filling embedding of a Bravais lattice with linearly independent primitive vectors
 > lives in a space of dimension `d`.
@@ -107,4 +107,4 @@ lemma finrank_eq_of_ofVectors {v : Fin d → E} (hv : LinearIndependent ℝ v)
 
 ## Sources
 
-- [Physlib/CondensedMatter/Crystal/Bravais/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Bravais/Basic.lean)
+- [Physlib/CondensedMatter/Crystal/Bravais/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Bravais/Basic.lean)

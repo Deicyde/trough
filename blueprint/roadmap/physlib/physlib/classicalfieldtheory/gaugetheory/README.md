@@ -1,8 +1,8 @@
 # GaugeTheory
 
-The folder [Physlib/ClassicalFieldTheory/GaugeTheory/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory): 1 module, with an article.
+The folder [Physlib/ClassicalFieldTheory/GaugeTheory/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalFieldTheory/GaugeTheory): 1 module, with an article.
 
-The repository's API map for this folder, *Gauge theory* ([Physlib/ClassicalFieldTheory/GaugeTheory/API-map.md](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
+The repository's API map for this folder, *Gauge theory* ([Physlib/ClassicalFieldTheory/GaugeTheory/API-map.md](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalFieldTheory/GaugeTheory/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
 
 *Content (Alpha)*
 
@@ -44,6 +44,6 @@ Its references:
 > - \{4\} Wikipedia, Gauge theory, https://en.wikipedia.org/wiki/Gauge\_theory
 > - \{5\} Physlib GitHub issue #859, https://github.com/leanprover-community/physlib/issues/859
 
-Modules in [LocalGaugeData/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData):
+Modules in [LocalGaugeData/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData):
 
 - [Local gauge data](localgaugedata-basic.md)

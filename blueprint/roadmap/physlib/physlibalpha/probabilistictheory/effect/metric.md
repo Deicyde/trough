@@ -8,7 +8,7 @@ proof: formalized
 
 # The metric space of effects (PhyslibAlpha)
 
-The module `PhyslibAlpha.ProbabilisticTheory.Effect.Metric`, [PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean): 7 declarations, 6 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Effect.Metric`, [PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean): 7 declarations, 6 with a docstring.
 
 > The order-unit metric on effects and their identification with the order-unit-norm ball.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Effect.Metric`, [PhyslibAlpha/Proba
 
 ## A. The effect metric
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.instMetricSpace`**, an instance, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean#L56).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.instMetricSpace`**, an instance, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean#L56).
 
 > Effects, metrized by the order-unit norm on `E`.
 
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Effect.Metric`, [PhyslibAlpha/Proba
 noncomputable scoped instance instMetricSpace : MetricSpace (Effect E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.dist_eq_orderUnitNorm`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean#L61).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.dist_eq_orderUnitNorm`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean#L61).
 
 ```lean
 lemma dist_eq_orderUnitNorm (e f : Effect E) : dist e f = orderUnitNorm ((e : E) - (f : E))
@@ -47,7 +47,7 @@ lemma dist_eq_orderUnitNorm (e f : Effect E) : dist e f = orderUnitNorm ((e : E)
 
 ## B. Effects as points of the order-unit-norm ball
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.orderUnitNorm_two_smul_sub_one_le_one`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean#L71).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.orderUnitNorm_two_smul_sub_one_le_one`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean#L71).
 
 > Doubling and re-centering an effect at the order unit lands in the order-unit-norm ball.
 
@@ -56,7 +56,7 @@ lemma orderUnitNorm_two_smul_sub_one_le_one (e : Effect E) :
     orderUnitNorm (2 • (e : E) - 1) ≤ 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.mem_effect_two_inv_smul_one_add`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean#L85).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.mem_effect_two_inv_smul_one_add`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean#L85).
 
 > Undoing the re-centering on a point of the order-unit-norm ball gives back an effect.
 
@@ -65,7 +65,7 @@ lemma mem_effect_two_inv_smul_one_add {A : E} (hA : orderUnitNorm A ≤ 1) :
     (2 : ℝ)⁻¹ • (1 + A) ∈ Effect E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.two_inv_smul_one_add_two_smul_sub_one`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean#L96).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.two_inv_smul_one_add_two_smul_sub_one`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean#L96).
 
 > Re-centering, then undoing it, returns the original effect.
 
@@ -74,7 +74,7 @@ lemma two_inv_smul_one_add_two_smul_sub_one (e : Effect E) :
     (2 : ℝ)⁻¹ • (1 + (2 • (e : E) - 1)) = (e : E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.two_smul_two_inv_smul_one_add_sub_one`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean#L102).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.two_smul_two_inv_smul_one_add_sub_one`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean#L102).
 
 > Undoing the re-centering, then redoing it, returns the original ball point.
 
@@ -83,7 +83,7 @@ lemma two_smul_two_inv_smul_one_add_sub_one (A : E) :
     2 • ((2 : ℝ)⁻¹ • (1 + A)) - 1 = A
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.effectEquiv`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean#L109).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.effectEquiv`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean#L109).
 
 > Effects correspond to points of the order-unit-norm ball by doubling and re-centering at the
 > order unit: `e ↦ 2 • e - 1`, with inverse `A ↦ (1 + A) / 2`.
@@ -98,4 +98,4 @@ noncomputable def effectEquiv : Effect E ≃ {A : E // orderUnitNorm A ≤ 1}
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Effect/Metric.lean)

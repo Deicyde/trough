@@ -8,7 +8,7 @@ proof: formalized
 
 # The Poisson bracket
 
-The module `Physlib.ClassicalMechanics.HamiltonianMechanics.PoissonBracket`, [Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean): 17 declarations, 17 with a docstring, 1 listed as significant.
+The module `Physlib.ClassicalMechanics.HamiltonianMechanics.PoissonBracket`, [Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean): 17 declarations, 17 with a docstring, 1 listed as significant.
 
 > The Poisson bracket of phase-space observables and their Hamiltonian time evolution.
 
@@ -55,7 +55,7 @@ The module `Physlib.ClassicalMechanics.HamiltonianMechanics.PoissonBracket`, [Ph
 
 ## A. The definition of the Poisson bracket
 
-**`ClassicalMechanics.poissonBracket`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L88).
+**`ClassicalMechanics.poissonBracket`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L88).
 
 > The Poisson bracket of two phase-space functions `f g : X → X → ℝ`, each read as `f p q` for
 > a momentum `p` and a position `q`, at a point `(p, q)` of phase space.
@@ -64,7 +64,7 @@ The module `Physlib.ClassicalMechanics.HamiltonianMechanics.PoissonBracket`, [Ph
 noncomputable def poissonBracket (f g : X → X → ℝ) (p q : X) : ℝ
 ```
 
-**`ClassicalMechanics.poissonBracket_eq_of_hasGradientAt`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L94).
+**`ClassicalMechanics.poissonBracket_eq_of_hasGradientAt`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L94).
 
 > The Poisson bracket of two phase-space functions whose partial gradients at `(p, q)` are
 > known.
@@ -78,7 +78,7 @@ lemma poissonBracket_eq_of_hasGradientAt {f g : X → X → ℝ} {p q fp fq gp g
 
 ## B. Antisymmetry
 
-**`ClassicalMechanics.poissonBracket_antisymm`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L107).
+**`ClassicalMechanics.poissonBracket_antisymm`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L107).
 
 > The Poisson bracket is antisymmetric.
 
@@ -87,7 +87,7 @@ lemma poissonBracket_antisymm (f g : X → X → ℝ) (p q : X) :
     poissonBracket f g p q = -poissonBracket g f p q
 ```
 
-**`ClassicalMechanics.poissonBracket_self`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L114).
+**`ClassicalMechanics.poissonBracket_self`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L114).
 
 > The Poisson bracket of a phase-space function with itself vanishes.
 
@@ -100,7 +100,7 @@ lemma poissonBracket_self (f : X → X → ℝ) (p q : X) : poissonBracket f f p
 > The bracket is additive and homogeneous under scaling by a constant in each argument. We prove
 > this for the first argument; the second-argument versions follow from `poissonBracket_antisymm`.
 
-**`ClassicalMechanics.poissonBracket_add_left`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L129).
+**`ClassicalMechanics.poissonBracket_add_left`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L129).
 
 > The Poisson bracket is additive in its first argument, for functions differentiable in both
 > phase-space directions.
@@ -115,7 +115,7 @@ lemma poissonBracket_add_left (f₁ f₂ g : X → X → ℝ) (p q : X)
       poissonBracket f₁ g p q + poissonBracket f₂ g p q
 ```
 
-**`ClassicalMechanics.poissonBracket_const_mul_left`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L142).
+**`ClassicalMechanics.poissonBracket_const_mul_left`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L142).
 
 > The Poisson bracket is homogeneous of degree one in its first argument, for a function
 > differentiable in both phase-space directions.
@@ -127,7 +127,7 @@ lemma poissonBracket_const_mul_left (c : ℝ) (f g : X → X → ℝ) (p q : X)
     poissonBracket (fun p' q' => c * f p' q') g p q = c * poissonBracket f g p q
 ```
 
-**`ClassicalMechanics.poissonBracket_add_right`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L151).
+**`ClassicalMechanics.poissonBracket_add_right`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L151).
 
 > The Poisson bracket is additive in its second argument.
 
@@ -141,7 +141,7 @@ lemma poissonBracket_add_right (f g₁ g₂ : X → X → ℝ) (p q : X)
       poissonBracket f g₁ p q + poissonBracket f g₂ p q
 ```
 
-**`ClassicalMechanics.poissonBracket_const_mul_right`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L163).
+**`ClassicalMechanics.poissonBracket_const_mul_right`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L163).
 
 > The Poisson bracket is homogeneous of degree one in its second argument.
 
@@ -154,7 +154,7 @@ lemma poissonBracket_const_mul_right (c : ℝ) (f g : X → X → ℝ) (p q : X)
 
 ## D. The Leibniz rule
 
-**`ClassicalMechanics.poissonBracket_mul_left`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L178).
+**`ClassicalMechanics.poissonBracket_mul_left`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L178).
 
 > The Poisson bracket satisfies the Leibniz rule in its first argument.
 
@@ -168,7 +168,7 @@ lemma poissonBracket_mul_left (f₁ f₂ g : X → X → ℝ) (p q : X)
       poissonBracket f₁ g p q * f₂ p q + f₁ p q * poissonBracket f₂ g p q
 ```
 
-**`ClassicalMechanics.poissonBracket_mul_right`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L192).
+**`ClassicalMechanics.poissonBracket_mul_right`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L192).
 
 > The Poisson bracket satisfies the Leibniz rule in its second argument.
 
@@ -186,7 +186,7 @@ lemma poissonBracket_mul_right (f g₁ g₂ : X → X → ℝ) (p q : X)
 
 ### E.1. The chain rule for a phase-space function along a trajectory
 
-**`ClassicalMechanics.deriv_comp_eq_inner_gradient_add`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L217).
+**`ClassicalMechanics.deriv_comp_eq_inner_gradient_add`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L217).
 
 > The time derivative of a phase-space function `f` composed with trajectories `p q : Time → X`
 > is the sum of the gradients of `f` paired with the velocities `∂ₜ p` and `∂ₜ q`.
@@ -202,7 +202,7 @@ lemma deriv_comp_eq_inner_gradient_add (f : X → X → ℝ) (p q : Time → X) 
 
 ### E.2. Time evolution as the Poisson bracket with the Hamiltonian
 
-**`ClassicalMechanics.deriv_comp_eq_poissonBracket`**, a theorem, [line 241](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L241). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`ClassicalMechanics.deriv_comp_eq_poissonBracket`**, a theorem, [line 241](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L241). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Along a solution of Hamilton's equations for a Hamiltonian `H`, the time derivative of a
 > phase-space observable `f` is its Poisson bracket with `H t`.
@@ -215,7 +215,7 @@ theorem deriv_comp_eq_poissonBracket (H : Time → X → X → ℝ) (p q : Time 
     ∂ₜ (fun t => f (p t) (q t)) t = poissonBracket f (H t) (p t) (q t)
 ```
 
-**`ClassicalMechanics.hasDerivAt_comp_eq_poissonBracket`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L253).
+**`ClassicalMechanics.hasDerivAt_comp_eq_poissonBracket`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L253).
 
 > The Poisson bracket gives the derivative of an observable at a real time where the
 > position and momentum derivatives satisfy Hamilton's equations.
@@ -228,7 +228,7 @@ lemma hasDerivAt_comp_eq_poissonBracket (H f : X → X → ℝ) {p q : ℝ → X
     HasDerivAt (fun s => f (p s) (q s)) (poissonBracket f H (p t) (q t)) t
 ```
 
-**`ClassicalMechanics.observable_eq_of_poissonBracket_eq_zero`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L273).
+**`ClassicalMechanics.observable_eq_of_poissonBracket_eq_zero`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L273).
 
 > A time-independent observable takes the same value at any two times in an interval
 > where the trajectory satisfies Hamilton's equations and the observable Poisson-commutes
@@ -251,7 +251,7 @@ lemma observable_eq_of_poissonBracket_eq_zero (H : ℝ → X → X → ℝ) {p q
 > vanish.
 > The argument order remains momentum first, position second, as in `poissonBracket`.
 
-**`ClassicalMechanics.poissonBracket_position_momentum`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L301).
+**`ClassicalMechanics.poissonBracket_position_momentum`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L301).
 
 > The Poisson bracket of a position coordinate with a momentum coordinate is the Kronecker
 > delta.
@@ -262,7 +262,7 @@ lemma poissonBracket_position_momentum {ι : Type*} [Fintype ι] [DecidableEq ι
     poissonBracket (fun _ q => q i) (fun p _ => p j) p q = δ[i,j]
 ```
 
-**`ClassicalMechanics.poissonBracket_position_position`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L309).
+**`ClassicalMechanics.poissonBracket_position_position`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L309).
 
 > The Poisson bracket of two position coordinates vanishes.
 
@@ -272,7 +272,7 @@ lemma poissonBracket_position_position {ι : Type*} [Fintype ι] (i j : ι)
     poissonBracket (fun _ q => q i) (fun _ q => q j) p q = 0
 ```
 
-**`ClassicalMechanics.poissonBracket_momentum_momentum`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L316).
+**`ClassicalMechanics.poissonBracket_momentum_momentum`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean#L316).
 
 > The Poisson bracket of two momentum coordinates vanishes.
 
@@ -293,4 +293,4 @@ lemma poissonBracket_momentum_momentum {ι : Type*} [Fintype ι] (i j : ι)
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean)
+- [Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean)

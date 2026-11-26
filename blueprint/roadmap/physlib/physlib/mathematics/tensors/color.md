@@ -8,7 +8,7 @@ proof: formalized
 
 # Colors of tensor indices
 
-The module `Physlib.Mathematics.Tensors.Color`, [Physlib/Mathematics/Tensors/Color.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Color.lean): 7 declarations, 7 with a docstring.
+The module `Physlib.Mathematics.Tensors.Color`, [Physlib/Mathematics/Tensors/Color.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Color.lean): 7 declarations, 7 with a docstring.
 
 > A color gives the kind of an index of a tensor and whether the index is up or down.
 
@@ -46,7 +46,7 @@ The module `Physlib.Mathematics.Tensors.Color`, [Physlib/Mathematics/Tensors/Col
 > `Variance` is two booleans, and `dual` swaps them. So `c.dual.dual` is `c` by definition, also for
 > a variable color `c`, and the spaces `S.V c.dual.dual` and `S.V c` of a species are the same type.
 
-**`Tensor.Variance`**, a structure, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Color.lean#L65).
+**`Tensor.Variance`**, a structure, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Color.lean#L65).
 
 > The variance of an index, up (contravariant, `v^μ`) or down (covariant, `w_μ`).
 
@@ -61,7 +61,7 @@ structure Variance where
 deriving DecidableEq
 ```
 
-**`Tensor.Variance.up`**, an abbrev, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Color.lean#L78).
+**`Tensor.Variance.up`**, an abbrev, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Color.lean#L78).
 
 > An upper index, as in `v^μ`.
 
@@ -69,7 +69,7 @@ deriving DecidableEq
 abbrev up : Variance
 ```
 
-**`Tensor.Variance.down`**, an abbrev, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Color.lean#L82).
+**`Tensor.Variance.down`**, an abbrev, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Color.lean#L82).
 
 > A lower index, as in `w_μ`.
 
@@ -77,7 +77,7 @@ abbrev up : Variance
 abbrev down : Variance
 ```
 
-**`Tensor.Variance.dual`**, an abbrev, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Color.lean#L86).
+**`Tensor.Variance.dual`**, an abbrev, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Color.lean#L86).
 
 > The dual variance, exchanging up and down. It is an abbrev, so that `simp` and `rw` see
 > `c.dual.dual` as `c`.
@@ -88,7 +88,7 @@ abbrev dual (v : Variance) : Variance
 
 ## B. Colors
 
-**`Tensor.Color`**, a structure, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Color.lean#L97).
+**`Tensor.Color`**, a structure, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Color.lean#L97).
 
 > A color `⟨κ, v⟩`, made of a kind of index `κ : K` and its variance `v`.
 
@@ -101,7 +101,7 @@ structure Color (K : Type) where
 deriving DecidableEq
 ```
 
-**`Tensor.Color.dual`**, an abbrev, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Color.lean#L105).
+**`Tensor.Color.dual`**, an abbrev, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Color.lean#L105).
 
 > The dual color, with the same kind and the other variance.
 
@@ -109,7 +109,7 @@ deriving DecidableEq
 abbrev Color.dual {K : Type} (c : Color K) : Color K
 ```
 
-**`Tensor.Color.dual_dual`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Color.lean#L108).
+**`Tensor.Color.dual_dual`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Color.lean#L108).
 
 > Taking the dual twice gives back the color.
 
@@ -123,4 +123,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/Tensors/Color.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Tensors/Color.lean)
+- [Physlib/Mathematics/Tensors/Color.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Tensors/Color.lean)

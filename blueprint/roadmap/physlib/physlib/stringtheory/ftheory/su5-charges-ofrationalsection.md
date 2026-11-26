@@ -8,7 +8,7 @@ proof: formalized
 
 # Allowed charges
 
-The module `Physlib.StringTheory.FTheory.SU5.Charges.OfRationalSection`, [Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean): 6 declarations (3 instances with no name), 3 with a docstring.
+The module `Physlib.StringTheory.FTheory.SU5.Charges.OfRationalSection`, [Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean): 6 declarations (3 instances with no name), 3 with a docstring.
 
 ## i. Overview
 
@@ -43,7 +43,7 @@ The module `Physlib.StringTheory.FTheory.SU5.Charges.OfRationalSection`, [Physli
 
 ## A. The distinct section configurations
 
-**`FTheory.SU5.CodimensionOneConfig`**, an inductive, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean#L74).
+**`FTheory.SU5.CodimensionOneConfig`**, an inductive, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean#L74).
 
 > The distinct codimension one configurations of the
 > zero-section (`σ₀`) relativity to the additional rational section (`σ₁`s).
@@ -64,7 +64,7 @@ deriving DecidableEq
 
 ### A.1. The finiteness of the set of configurations
 
-**An instance with no name**, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean#L94).
+**An instance with no name**, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean#L94).
 
 ```lean
 instance : Fintype CodimensionOneConfig
@@ -74,7 +74,7 @@ instance : Fintype CodimensionOneConfig
 
 ### B.1. The allowed charges of the 5-bar matter
 
-**`FTheory.SU5.CodimensionOneConfig.allowedBarFiveCharges`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean#L112).
+**`FTheory.SU5.CodimensionOneConfig.allowedBarFiveCharges`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean#L112).
 
 > The allowed `U(1)`-charges of matter in the 5-bar representation of `SU(5)`
 > given a `CodimensionOneConfig`.
@@ -85,7 +85,7 @@ def allowedBarFiveCharges : CodimensionOneConfig → Finset ℤ
 
 ### B.2. The allowed charges of the 10d matter
 
-**`FTheory.SU5.CodimensionOneConfig.allowedTenCharges`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean#L125).
+**`FTheory.SU5.CodimensionOneConfig.allowedTenCharges`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean#L125).
 
 > The allowed `U(1)`-charges of matter in the 10d representation of `SU(5)`
 > given a `CodimensionOneConfig`.
@@ -96,13 +96,13 @@ def allowedTenCharges : CodimensionOneConfig → Finset ℤ
 
 ### B.3. The finiteness of the allowed charges
 
-**An instance with no name**, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean#L136).
+**An instance with no name**, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean#L136).
 
 ```lean
 instance : (I : CodimensionOneConfig) → Fintype I.allowedBarFiveCharges
 ```
 
-**An instance with no name**, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean#L141).
+**An instance with no name**, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean#L141).
 
 ```lean
 instance : (I : CodimensionOneConfig) → Fintype I.allowedTenCharges
@@ -114,4 +114,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean)
+- [Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean)

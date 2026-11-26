@@ -8,7 +8,7 @@ proof: formalized
 
 # Distributions from functions on space
 
-The module `Physlib.SpaceAndTime.Space.DistOfFunction`, [Physlib/SpaceAndTime/Space/DistOfFunction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistOfFunction.lean): 11 declarations, 2 with a docstring.
+The module `Physlib.SpaceAndTime.Space.DistOfFunction`, [Physlib/SpaceAndTime/Space/DistOfFunction.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistOfFunction.lean): 11 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -29,7 +29,7 @@ The module `Physlib.SpaceAndTime.Space.DistOfFunction`, [Physlib/SpaceAndTime/Sp
 
 ## A. Definition of a distribution from a function
 
-**`Space.distOfFunction`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L61).
+**`Space.distOfFunction`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L61).
 
 > A distribution `Space d →d[ℝ] F` from a function
 > `f : Space d → F` which satisfies the `IsDistBounded f` condition.
@@ -39,7 +39,7 @@ def distOfFunction {d : ℕ} (f : Space d → F) (hf : IsDistBounded f) :
     (Space d) →d[ℝ] F
 ```
 
-**`Space.distOfFunction_apply`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L79).
+**`Space.distOfFunction_apply`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L79).
 
 ```lean
 lemma distOfFunction_apply {d : ℕ} (f : Space d → F)
@@ -49,14 +49,14 @@ lemma distOfFunction_apply {d : ℕ} (f : Space d → F)
 
 ## B. Linarity properties of getting distributions from functions
 
-**`Space.distOfFunction_zero_eq_zero`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L89).
+**`Space.distOfFunction_zero_eq_zero`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L89).
 
 ```lean
 lemma distOfFunction_zero_eq_zero {d : ℕ} :
     distOfFunction (fun _ : Space d => (0 : F)) (by fun_prop) = 0
 ```
 
-**`Space.distOfFunction_smul`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L94).
+**`Space.distOfFunction_smul`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L94).
 
 ```lean
 lemma distOfFunction_smul {d : ℕ} (f : Space d → F)
@@ -64,7 +64,7 @@ lemma distOfFunction_smul {d : ℕ} (f : Space d → F)
     distOfFunction (c • f) (by fun_prop) = c • distOfFunction f hf
 ```
 
-**`Space.distOfFunction_smul_fun`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L106).
+**`Space.distOfFunction_smul_fun`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L106).
 
 ```lean
 lemma distOfFunction_smul_fun {d : ℕ} (f : Space d → F)
@@ -72,7 +72,7 @@ lemma distOfFunction_smul_fun {d : ℕ} (f : Space d → F)
     distOfFunction (fun x => c • f x) (by fun_prop) = c • distOfFunction f hf
 ```
 
-**`Space.distOfFunction_mul_fun`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L117).
+**`Space.distOfFunction_mul_fun`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L117).
 
 ```lean
 lemma distOfFunction_mul_fun {d : ℕ} (f : Space d → ℝ)
@@ -80,7 +80,7 @@ lemma distOfFunction_mul_fun {d : ℕ} (f : Space d → ℝ)
     distOfFunction (fun x => c * f x) (by fun_prop) = c • distOfFunction f hf
 ```
 
-**`Space.distOfFunction_neg`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L122).
+**`Space.distOfFunction_neg`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L122).
 
 ```lean
 lemma distOfFunction_neg {d : ℕ} (f : Space d → F)
@@ -90,7 +90,7 @@ lemma distOfFunction_neg {d : ℕ} (f : Space d → F)
 
 ## C. Properties related to inner products
 
-**`Space.distOfFunction_inner`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L137).
+**`Space.distOfFunction_inner`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L137).
 
 ```lean
 lemma distOfFunction_inner {d n : ℕ} (f : Space d → EuclideanSpace ℝ (Fin n))
@@ -101,7 +101,7 @@ lemma distOfFunction_inner {d n : ℕ} (f : Space d → EuclideanSpace ℝ (Fin 
 
 ## D. Derivatives
 
-**`Space.distDeriv_distOfFunction`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L158).
+**`Space.distDeriv_distOfFunction`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L158).
 
 > The distributional spatial derivative of the distribution associated to a differentiable
 > function is the distribution associated to the corresponding pointwise spatial derivative.
@@ -115,7 +115,7 @@ lemma distDeriv_distOfFunction {d : ℕ} (μ : Fin d) (f : Space d → F)
 
 ## E. Components
 
-**`Space.distOfFunction_eculid_eval`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L181).
+**`Space.distOfFunction_eculid_eval`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L181).
 
 ```lean
 lemma distOfFunction_eculid_eval {d n : ℕ} (f : Space d → EuclideanSpace ℝ (Fin n))
@@ -123,7 +123,7 @@ lemma distOfFunction_eculid_eval {d n : ℕ} (f : Space d → EuclideanSpace ℝ
     distOfFunction f hf η i = distOfFunction (fun x => f x i) (hf.pi_comp i) η
 ```
 
-**`Space.distOfFunction_vector_eval`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L191).
+**`Space.distOfFunction_vector_eval`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistOfFunction.lean#L191).
 
 ```lean
 lemma distOfFunction_vector_eval {d n : ℕ} (f : Space d → Lorentz.Vector n)
@@ -138,4 +138,4 @@ lemma distOfFunction_vector_eval {d n : ℕ} (f : Space d → Lorentz.Vector n)
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/DistOfFunction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/DistOfFunction.lean)
+- [Physlib/SpaceAndTime/Space/DistOfFunction.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/DistOfFunction.lean)

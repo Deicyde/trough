@@ -8,7 +8,7 @@ proof: formalized
 
 # Density operators
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.State.Density`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Density.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Density.lean): 2 declarations, 1 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.State.Density`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Density.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Density.lean): 2 declarations, 1 with a docstring.
 
 > A positive trace-one operator on a Hilbert space defines the state `x ↦ Tr (x ρ)`.
 
@@ -27,7 +27,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.State.Density`, [Physl
 
 ## A. The state of a density operator
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.ofDensity`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Density.lean#L53).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.ofDensity`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Density.lean#L53).
 
 > A trace-one positive continuous linear map defines a state.
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.State.Density`, [Physl
 noncomputable def ofDensity : 𝓢[ℂ, H →L[ℂ] H]
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.ofDensity_apply`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Density.lean#L57).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.ofDensity_apply`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Density.lean#L57).
 
 ```lean
 lemma ofDensity_apply {ρ : H →L[ℂ] H} (hpos : 0 ≤ ρ)
@@ -49,4 +49,4 @@ lemma ofDensity_apply {ρ : H →L[ℂ] H} (hpos : 0 ≤ ρ)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Density.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Density.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Density.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Density.lean)

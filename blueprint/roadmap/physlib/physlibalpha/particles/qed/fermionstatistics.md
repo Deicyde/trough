@@ -8,16 +8,18 @@ proof: formalized
 
 # Spin-statistics of the QED fields
 
-The module `PhyslibAlpha.Particles.QED.FermionStatistics`, [PhyslibAlpha/Particles/QED/FermionStatistics.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FermionStatistics.lean): 10 declarations, 9 with a docstring.
+The module `PhyslibAlpha.Particles.QED.FermionStatistics`, [PhyslibAlpha/Particles/QED/FermionStatistics.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/FermionStatistics.lean): 10 declarations, 9 with a docstring.
+
+> The electron jet coordinates anticommute and the photon jet coordinates commute.
 
 ## i. Overview
 
-> The statistics of the fields of QED, as encoded in the QED jet algebra: the
+> The statistics of the fields of QED are encoded in the QED jet algebra. The
 > electron jet coordinates anticommute among themselves and square to zero
 > (fermionic statistics), while the photon jet coordinates commute with
 > everything (bosonic statistics).
 >
-> This file contains no definitions, only theorems about the fields of
+> This file contains no definitions, only lemmas about the fields of
 > `PhyslibAlpha.Particles.QED.Fields`.
 
 ## ii. Key results
@@ -39,16 +41,16 @@ The module `PhyslibAlpha.Particles.QED.FermionStatistics`, [PhyslibAlpha/Particl
 
 ## A. Fermionic statistics of the electron jet coordinates
 
-**`QED.Electron.JetAlgebra.ofGenerator_mul_self`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L62).
+**`QED.Electron.JetAlgebra.ofGenerator_mul_self`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L64).
 
 ```lean
 lemma ofGenerator_mul_self (j : JetGenerators) :
     ofGenerator j * ofGenerator j = 0
 ```
 
-**`QED.Electron.JetAlgebra.ofGenerator_anticommute`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L68).
+**`QED.Electron.JetAlgebra.ofGenerator_anticommute`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L70).
 
-> The jet coordinates of the electron anticommute: the electron is a
+> The jet coordinates of the electron anticommute. The electron is a
 > fermion.
 
 ```lean
@@ -58,7 +60,7 @@ lemma ofGenerator_anticommute (i j : JetGenerators) :
 
 ## B. Fermionic statistics in the QED jet algebra
 
-**`QED.JetAlgebra.ψ_mul_ψ_anticomm`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L89).
+**`QED.JetAlgebra.ψ_mul_ψ_anticomm`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L91).
 
 > The electron jet coordinates anticommute.
 
@@ -67,7 +69,7 @@ lemma ψ_mul_ψ_anticomm (s t : Multiset (Fin 1 ⊕ Fin 3)) (α β : Fin 2 ⊕ F
     ψ s α * ψ t β = -(ψ t β * ψ s α)
 ```
 
-**`QED.JetAlgebra.ψ_mul_barψ_anticomm`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L95).
+**`QED.JetAlgebra.ψ_mul_barψ_anticomm`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L97).
 
 > The electron and conjugate-electron jet coordinates anticommute.
 
@@ -76,7 +78,7 @@ lemma ψ_mul_barψ_anticomm (s t : Multiset (Fin 1 ⊕ Fin 3)) (α β : Fin 2 �
     ψ s α * barψ t β = -(barψ t β * ψ s α)
 ```
 
-**`QED.JetAlgebra.barψ_mul_barψ_anticomm`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L101).
+**`QED.JetAlgebra.barψ_mul_barψ_anticomm`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L103).
 
 > The conjugate-electron jet coordinates anticommute.
 
@@ -85,18 +87,18 @@ lemma barψ_mul_barψ_anticomm (s t : Multiset (Fin 1 ⊕ Fin 3)) (α β : Fin 2
     barψ s α * barψ t β = -(barψ t β * barψ s α)
 ```
 
-**`QED.JetAlgebra.ψ_mul_self`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L108).
+**`QED.JetAlgebra.ψ_mul_self`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L110).
 
-> Pauli exclusion: an electron jet coordinate squares to zero.
+> Pauli exclusion. An electron jet coordinate squares to zero.
 
 ```lean
 lemma ψ_mul_self (s : Multiset (Fin 1 ⊕ Fin 3)) (α : Fin 2 ⊕ Fin 2) :
     ψ s α * ψ s α = 0
 ```
 
-**`QED.JetAlgebra.barψ_mul_self`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L114).
+**`QED.JetAlgebra.barψ_mul_self`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L116).
 
-> Pauli exclusion: a conjugate electron jet coordinate squares to zero.
+> Pauli exclusion. A conjugate electron jet coordinate squares to zero.
 
 ```lean
 lemma barψ_mul_self (s : Multiset (Fin 1 ⊕ Fin 3)) (α : Fin 2 ⊕ Fin 2) :
@@ -105,9 +107,9 @@ lemma barψ_mul_self (s : Multiset (Fin 1 ⊕ Fin 3)) (α : Fin 2 ⊕ Fin 2) :
 
 ## C. Bosonic statistics of the photon jet coordinates
 
-**`QED.JetAlgebra.A_mul_A_comm`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L126).
+**`QED.JetAlgebra.A_mul_A_comm`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L128).
 
-> The photon jet coordinates commute among themselves: the photon is a
+> The photon jet coordinates commute among themselves. The photon is a
 > boson.
 
 ```lean
@@ -115,7 +117,7 @@ lemma A_mul_A_comm (s t : Multiset (Fin 1 ⊕ Fin 3)) (μ ν : Fin 1 ⊕ Fin 3) 
     A s μ * A t ν = A t ν * A s μ
 ```
 
-**`QED.JetAlgebra.A_mul_ψ_comm`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L132).
+**`QED.JetAlgebra.A_mul_ψ_comm`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L134).
 
 > The photon jet coordinates commute with the electron jet coordinates.
 
@@ -125,7 +127,7 @@ lemma A_mul_ψ_comm (s t : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3)
     A s μ * ψ t α = ψ t α * A s μ
 ```
 
-**`QED.JetAlgebra.A_mul_barψ_comm`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L139).
+**`QED.JetAlgebra.A_mul_barψ_comm`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/FermionStatistics.lean#L141).
 
 > The photon jet coordinates commute with the conjugate electron jet
 > coordinates.
@@ -142,4 +144,4 @@ lemma A_mul_barψ_comm (s t : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3)
 
 ## Sources
 
-- [PhyslibAlpha/Particles/QED/FermionStatistics.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/FermionStatistics.lean)
+- [PhyslibAlpha/Particles/QED/FermionStatistics.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/FermionStatistics.lean)

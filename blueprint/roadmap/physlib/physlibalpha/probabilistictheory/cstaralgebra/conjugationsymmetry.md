@@ -8,7 +8,7 @@ proof: formalized
 
 # Unitary conjugation as a symmetry
 
-The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.ConjugationSymmetry`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean): 17 declarations, 10 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.ConjugationSymmetry`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean): 17 declarations, 10 with a docstring.
 
 > Conjugation by a unitary as a channel and a symmetry, and symmetry actions of representations.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.ConjugationSymmetry`, 
 
 ## A. Conjugation as a linear map
 
-**`unitary.conjugationLinearMap`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L56).
+**`unitary.conjugationLinearMap`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L56).
 
 > The underlying `ℝ`-linear map of conjugation by a unitary `u`, `a ↦ u a u*`, restricted to
 > self-adjoint elements. Lands back in `selfAdjoint A` by `IsSelfAdjoint.conjugate`.
@@ -42,14 +42,14 @@ The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.ConjugationSymmetry`, 
 def conjugationLinearMap (u : unitary A) : selfAdjoint A →ₗ[ℝ] selfAdjoint A
 ```
 
-**`unitary.coe_conjugationLinearMap`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L69).
+**`unitary.coe_conjugationLinearMap`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L69).
 
 ```lean
 lemma coe_conjugationLinearMap (u : unitary A) (a : selfAdjoint A) :
     (conjugationLinearMap u a : A) = (u : A) * (a : A) * star (u : A)
 ```
 
-**`unitary.conjugationLinearMap_conjugationLinearMap`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L73).
+**`unitary.conjugationLinearMap_conjugationLinearMap`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L73).
 
 > Conjugating by `v` and then by `u` is conjugating by `u * v`.
 
@@ -58,7 +58,7 @@ lemma conjugationLinearMap_conjugationLinearMap (u v : unitary A) (a : selfAdjoi
     conjugationLinearMap u (conjugationLinearMap v a) = conjugationLinearMap (u * v) a
 ```
 
-**`unitary.conjugationLinearMap_one`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L83).
+**`unitary.conjugationLinearMap_one`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L83).
 
 > Conjugation by `1` does nothing.
 
@@ -67,7 +67,7 @@ lemma conjugationLinearMap_one (a : selfAdjoint A) :
     conjugationLinearMap (1 : unitary A) a = a
 ```
 
-**`unitary.conjugationLinearMap_star_conjugationLinearMap`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L91).
+**`unitary.conjugationLinearMap_star_conjugationLinearMap`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L91).
 
 > Conjugating by `u` then by `star u` is the identity: this is
 > `conjugationLinearMap_conjugationLinearMap` specialized along `star u * u = 1`.
@@ -77,7 +77,7 @@ lemma conjugationLinearMap_star_conjugationLinearMap (u : unitary A) (a : selfAd
     conjugationLinearMap (star u) (conjugationLinearMap u a) = a
 ```
 
-**`unitary.conjugationLinearMap_conjugationLinearMap_star`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L97).
+**`unitary.conjugationLinearMap_conjugationLinearMap_star`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L97).
 
 > Conjugating by `star u` then by `u` is the identity: this is
 > `conjugationLinearMap_conjugationLinearMap` specialized along `u * star u = 1`.
@@ -89,7 +89,7 @@ lemma conjugationLinearMap_conjugationLinearMap_star (u : unitary A) (a : selfAd
 
 ## B. Conjugation as a unital positive linear map
 
-**`unitary.conjugationChannel`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L105).
+**`unitary.conjugationChannel`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L105).
 
 > Conjugation by a unitary `u`, `a ↦ u a u*`, as a unital positive linear map (channel) on
 > `selfAdjoint A`: positive by `star_right_conjugate_nonneg`, unital because `u * star u = 1`.
@@ -98,21 +98,21 @@ lemma conjugationLinearMap_conjugationLinearMap_star (u : unitary A) (a : selfAd
 noncomputable def conjugationChannel (u : unitary A) : Channel (selfAdjoint A) (selfAdjoint A)
 ```
 
-**`unitary.coe_conjugationChannel`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L114).
+**`unitary.coe_conjugationChannel`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L114).
 
 ```lean
 lemma coe_conjugationChannel (u : unitary A) (a : selfAdjoint A) :
     (conjugationChannel u a : A) = (u : A) * (a : A) * star (u : A)
 ```
 
-**`unitary.conjugationChannel_comp_conjugationChannel`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L117).
+**`unitary.conjugationChannel_comp_conjugationChannel`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L117).
 
 ```lean
 lemma conjugationChannel_comp_conjugationChannel (u v : unitary A) :
     (conjugationChannel u).comp (conjugationChannel v) = conjugationChannel (u * v)
 ```
 
-**`unitary.conjugationChannel_one`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L122).
+**`unitary.conjugationChannel_one`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L122).
 
 ```lean
 lemma conjugationChannel_one : conjugationChannel (1 : unitary A) = .id ℝ (selfAdjoint A)
@@ -120,7 +120,7 @@ lemma conjugationChannel_one : conjugationChannel (1 : unitary A) = .id ℝ (sel
 
 ## C. Conjugation as a symmetry
 
-**`unitary.conjugationSymmetry`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L130).
+**`unitary.conjugationSymmetry`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L130).
 
 > Conjugation by a unitary `u`, as a symmetry of the observables, with inverse conjugation by
 > `u⋆`.
@@ -129,14 +129,14 @@ lemma conjugationChannel_one : conjugationChannel (1 : unitary A) = .id ℝ (sel
 noncomputable def conjugationSymmetry (u : unitary A) : Symmetry (selfAdjoint A)
 ```
 
-**`unitary.val_conjugationSymmetry`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L138).
+**`unitary.val_conjugationSymmetry`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L138).
 
 ```lean
 lemma val_conjugationSymmetry (u : unitary A) :
     (conjugationSymmetry u : Channel (selfAdjoint A) (selfAdjoint A)) = conjugationChannel u
 ```
 
-**`unitary.conjugationSymmetryHom`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L142).
+**`unitary.conjugationSymmetryHom`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L142).
 
 > Conjugation as a group homomorphism from the unitaries to the symmetries of the observables.
 
@@ -144,7 +144,7 @@ lemma val_conjugationSymmetry (u : unitary A) :
 noncomputable def conjugationSymmetryHom : unitary A →* Symmetry (selfAdjoint A)
 ```
 
-**`unitary.conjugationSymmetryHom_apply`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L151).
+**`unitary.conjugationSymmetryHom_apply`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L151).
 
 ```lean
 lemma conjugationSymmetryHom_apply (u : unitary A) :
@@ -153,7 +153,7 @@ lemma conjugationSymmetryHom_apply (u : unitary A) :
 
 ## D. Unitary representations induce symmetry actions
 
-**`PhyslibAlpha.ProbabilisticTheory.Unitary.Representation.toSymmetryHom`**, a def, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L165).
+**`PhyslibAlpha.ProbabilisticTheory.Unitary.Representation.toSymmetryHom`**, a def, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L165).
 
 > The symmetry action `α_g(a) = U_g a U_g*` of a unitary representation `U : G →* unitary A`.
 
@@ -162,14 +162,14 @@ noncomputable def Representation.toSymmetryHom {G : Type*} [Group G] (U : G →*
     G →* Symmetry (selfAdjoint A)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Unitary.Representation.toSymmetryHom_apply`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L170).
+**`PhyslibAlpha.ProbabilisticTheory.Unitary.Representation.toSymmetryHom_apply`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L170).
 
 ```lean
 lemma Representation.toSymmetryHom_apply {G : Type*} [Group G] (U : G →* unitary A) (g : G) :
     Representation.toSymmetryHom U g = unitary.conjugationSymmetry (U g)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Unitary.Representation.toSymmetryHom_apply_coe`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L175).
+**`PhyslibAlpha.ProbabilisticTheory.Unitary.Representation.toSymmetryHom_apply_coe`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean#L175).
 
 > Unwinding `Representation.toSymmetryHom` on an element `a` recovers `α_g(a) = U_g a U_g*`
 > literally.
@@ -187,4 +187,4 @@ lemma Representation.toSymmetryHom_apply_coe {G : Type*} [Group G] (U : G →* u
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean)
+- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean)

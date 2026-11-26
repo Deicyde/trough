@@ -8,7 +8,7 @@ proof: formalized
 
 # Elementary real bounds
 
-The module `PhyslibAlpha.Mathematics.Analysis.RealBounds`, [PhyslibAlpha/Mathematics/Analysis/RealBounds.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Analysis/RealBounds.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.Mathematics.Analysis.RealBounds`, [PhyslibAlpha/Mathematics/Analysis/RealBounds.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Analysis/RealBounds.lean): 3 declarations, 3 with a docstring.
 
 > Elementary real estimates: suprema of sums, bounds up to `1 / (n + 1)`, and weighted averages.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.Mathematics.Analysis.RealBounds`, [PhyslibAlpha/Mathema
 
 ## A. Suprema
 
-**`Real.ciSup_add`**, a lemma, [line 48](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Analysis/RealBounds.lean#L48).
+**`Real.ciSup_add`**, a lemma, [line 48](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Analysis/RealBounds.lean#L48).
 
 > Suprema of two bounded families add when any two indices are dominated by a common one.
 
@@ -40,7 +40,7 @@ lemma ciSup_add {ι : Type*} [Nonempty ι] {f g : ι → ℝ} (hf : BddAbove (Se
     ⨆ i, (f i + g i) = (⨆ i, f i) + ⨆ i, g i
 ```
 
-**`Real.le_of_forall_nat_le_add`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Analysis/RealBounds.lean#L60).
+**`Real.le_of_forall_nat_le_add`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Analysis/RealBounds.lean#L60).
 
 > A real number that is at most `b + 1 / (n + 1)` for every `n` is at most `b`.
 
@@ -50,7 +50,7 @@ lemma le_of_forall_nat_le_add {a b : ℝ} (h : ∀ n : ℕ, a ≤ b + 1 / (n + 1
 
 ## B. Averages
 
-**`Real.abs_sum_mul_sub_le`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Analysis/RealBounds.lean#L69).
+**`Real.abs_sum_mul_sub_le`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Analysis/RealBounds.lean#L69).
 
 > An average of numbers bounded by `A`, with weight at least `1 - θ` on the `i`-th number, is
 > within `2 * A * θ` of it.
@@ -67,4 +67,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Analysis/RealBounds.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Analysis/RealBounds.lean)
+- [PhyslibAlpha/Mathematics/Analysis/RealBounds.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Analysis/RealBounds.lean)

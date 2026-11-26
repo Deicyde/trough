@@ -8,7 +8,7 @@ proof: formalized
 
 # Spherical profiles and invariant sphere integrals
 
-The module `PhyslibAlpha.Mathematics.Geometry.Sphere.Profile`, [PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean): 12 declarations, 6 with a docstring.
+The module `PhyslibAlpha.Mathematics.Geometry.Sphere.Profile`, [PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean): 12 declarations, 6 with a docstring.
 
 > The invariant sphere measure has mass `4 π` and admits directional integration formulas.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.Mathematics.Geometry.Sphere.Profile`, [PhyslibAlpha/Mat
 
 ## A. The radial profile of the sphere average
 
-**`Sphere3.sphereProfile`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L50).
+**`Sphere3.sphereProfile`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L50).
 
 > The average of `h (r n_i)` over the unit sphere, as a function of the radius.
 
@@ -41,7 +41,7 @@ noncomputable def sphereProfile {F : Type*} [NormedAddCommGroup F] [NormedSpace 
     (i : Fin 3) (h : ℝ → F) (r : ℝ) : F
 ```
 
-**`Sphere3.ball_integral_profile`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L54).
+**`Sphere3.ball_integral_profile`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L54).
 
 ```lean
 lemma ball_integral_profile {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]
@@ -50,7 +50,7 @@ lemma ball_integral_profile {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ 
       ∫ r in Set.Ioo 0 R, r ^ 2 • sphereProfile i h r
 ```
 
-**`Sphere3.continuous_sphereProfile`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L90).
+**`Sphere3.continuous_sphereProfile`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L90).
 
 ```lean
 lemma continuous_sphereProfile {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]
@@ -60,7 +60,7 @@ lemma continuous_sphereProfile {F : Type*} [NormedAddCommGroup F] [NormedSpace �
 
 ## B. Archimedes' projection
 
-**`Sphere3.discProfile`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L107).
+**`Sphere3.discProfile`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L107).
 
 > The closed-form side: the integral of `π (R² - z²) h(z)`, as a function of `R`.
 
@@ -69,7 +69,7 @@ noncomputable def discProfile {F : Type*} [NormedAddCommGroup F] [NormedSpace �
     (h : ℝ → F) (R : ℝ) : F
 ```
 
-**`Sphere3.hasDerivAt_discProfile`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L111).
+**`Sphere3.hasDerivAt_discProfile`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L111).
 
 ```lean
 lemma hasDerivAt_discProfile {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]
@@ -77,7 +77,7 @@ lemma hasDerivAt_discProfile {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ
     HasDerivAt (discProfile h) ((2 * Real.pi * R) • ∫ z in (-R)..R, h z) R
 ```
 
-**`Sphere3.sphereProfile_eq`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L146).
+**`Sphere3.sphereProfile_eq`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L146).
 
 ```lean
 lemma sphereProfile_eq {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F] [CompleteSpace F]
@@ -87,7 +87,7 @@ lemma sphereProfile_eq {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F] [C
 
 ## C. Rotation invariance and general directions
 
-**`Sphere3.sphereEquiv`**, a def, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L198).
+**`Sphere3.sphereEquiv`**, a def, [line 198](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L198).
 
 > The restriction of a linear isometry of `Space 3` to the unit sphere.
 
@@ -95,21 +95,21 @@ lemma sphereProfile_eq {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F] [C
 noncomputable def sphereEquiv (U : Space 3 ≃ₗᵢ[ℝ] Space 3) : Sph ≃ₜ Sph
 ```
 
-**`Sphere3.sphereEquiv_coe`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L208).
+**`Sphere3.sphereEquiv_coe`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L208).
 
 ```lean
 lemma sphereEquiv_coe (U : Space 3 ≃ₗᵢ[ℝ] Space 3) (n : Sph) :
     ((sphereEquiv U n : Sph) : Space 3) = U n.1
 ```
 
-**`Sphere3.sphereEquiv_measurePreserving`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L211).
+**`Sphere3.sphereEquiv_measurePreserving`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L211).
 
 ```lean
 lemma sphereEquiv_measurePreserving (U : Space 3 ≃ₗᵢ[ℝ] Space 3) :
     MeasurePreserving (sphereEquiv U) sphereMeasure sphereMeasure
 ```
 
-**`Sphere3.sphereMeasure_univ`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L252).
+**`Sphere3.sphereMeasure_univ`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L252).
 
 > The total mass of the sphere measure is the area `4 π`.
 
@@ -119,7 +119,7 @@ lemma sphereMeasure_univ : sphereMeasure Set.univ = ENNReal.ofReal (4 * Real.pi)
 
 ## D. Functions of one direction
 
-**`Sphere3.sphereIntegral_dir`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L262).
+**`Sphere3.sphereIntegral_dir`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L262).
 
 > **Archimedes in an arbitrary direction.** The sphere integral of a function of the inner product
 > with a fixed vector `z ≠ 0` is a one-dimensional integral over `[-‖z‖, ‖z‖]`.
@@ -131,7 +131,7 @@ lemma sphereIntegral_dir {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F] 
       (2 * Real.pi / ‖z‖) • ∫ s in (-‖z‖)..‖z‖, h s
 ```
 
-**`Sphere3.integral_sphere_neg`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L292).
+**`Sphere3.integral_sphere_neg`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean#L292).
 
 > The sphere measure is invariant under the antipodal map.
 
@@ -146,4 +146,4 @@ lemma integral_sphere_neg {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean)
+- [PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Geometry/Sphere/Profile.lean)

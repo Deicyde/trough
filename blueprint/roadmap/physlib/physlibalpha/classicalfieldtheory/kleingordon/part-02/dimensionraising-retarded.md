@@ -8,7 +8,7 @@ proof: formalized
 
 # Dimension raising for the retarded solution
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.Retarded`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Retarded.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Retarded.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.Retarded`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Retarded.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Retarded.lean): 4 declarations, 4 with a docstring.
 
 > The retarded solution in `d + 2` space dimensions is `-(1 / (2π ρ)) ∂ρ` of the one in `d` dimensions
 > for sources that are radial in the extra variables.
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.DimensionRaising.Retar
 
 > - `hasDerivAt_solution_radial` : dimension raising for the retarded solution.
 
-**`KleinGordon.exists_bound_integrand`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Retarded.lean#L64).
+**`KleinGordon.exists_bound_integrand`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Retarded.lean#L64).
 
 > The Fourier integrand of the sine evolution of the slice at time `s` is bounded uniformly.
 
@@ -50,7 +50,7 @@ lemma exists_bound_integrand {μ : ℝ} (ψ : 𝓓((⊤ : Opens (ℝ × E)), ℂ
         A * (1 + ‖ξ‖) ^ (-((Module.finrank ℝ E + 1 : ℕ) : ℝ))
 ```
 
-**`KleinGordon.norm_sineEvolution_slice_le`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Retarded.lean#L93).
+**`KleinGordon.norm_sineEvolution_slice_le`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Retarded.lean#L93).
 
 > The sine evolution of the slices is bounded, and vanishes outside the time support.
 
@@ -60,7 +60,7 @@ lemma norm_sineEvolution_slice_le {μ : ℝ} (hμ : 0 ≤ μ) (ψ : 𝓓((⊤ : 
       (Prod.fst '' tsupport ψ).indicator (fun _ => B) s
 ```
 
-**`KleinGordon.continuous_sineEvolution_slice`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Retarded.lean#L111).
+**`KleinGordon.continuous_sineEvolution_slice`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Retarded.lean#L111).
 
 > The sine evolution of the slices is continuous in the time.
 
@@ -69,7 +69,7 @@ lemma continuous_sineEvolution_slice {μ : ℝ} (hμ : 0 ≤ μ) (ψ : 𝓓((⊤
     (z : E) : Continuous fun s : ℝ => sineEvolution ℂ (t - s) μ (slice ℂ ψ s) z
 ```
 
-**`KleinGordon.hasDerivAt_solution_radial`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Retarded.lean#L146).
+**`KleinGordon.hasDerivAt_solution_radial`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Retarded.lean#L146).
 
 > **Dimension raising for the retarded solution.** Let `ψ'` be a source on `E × ℝ²` that is
 > radial in the space variables at each time and let `ψb` be its integral over the plane. The
@@ -96,4 +96,4 @@ lemma hasDerivAt_solution_radial {μ : ℝ} (hμ : 0 ≤ μ)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Retarded.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Retarded.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Retarded.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Retarded.lean)

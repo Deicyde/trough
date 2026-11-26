@@ -8,9 +8,9 @@ proof: formalized
 
 # Universality properties of WickAlgebra
 
-The module `Physlib.QFT.PerturbationTheory.WickAlgebra.Universality`, [Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean): 5 declarations, 3 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.WickAlgebra.Universality`, [Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean): 5 declarations, 3 with a docstring.
 
-**`FieldSpecification.WickAlgebra.universalLiftMap`**, a def, [line 29](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean#L29).
+**`FieldSpecification.WickAlgebra.universalLiftMap`**, a def, [line 29](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean#L29).
 
 > For a field specification, `𝓕`, given an algebra `A` and a function `f : 𝓕.CrAnFieldOp → A`
 > such that the lift of `f` to `FreeAlgebra.lift ℂ f : FreeAlgebra ℂ 𝓕.CrAnFieldOp → A` is
@@ -22,7 +22,7 @@ def universalLiftMap {A : Type} [Semiring A] [Algebra ℂ A] (f : 𝓕.CrAnField
     WickAlgebra 𝓕 → A
 ```
 
-**`FieldSpecification.WickAlgebra.universalLiftMap_ι`**, a lemma, [line 41](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean#L41).
+**`FieldSpecification.WickAlgebra.universalLiftMap_ι`**, a lemma, [line 41](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean#L41).
 
 ```lean
 lemma universalLiftMap_ι {A : Type} [Semiring A] [Algebra ℂ A] (f : 𝓕.CrAnFieldOp → A)
@@ -30,7 +30,7 @@ lemma universalLiftMap_ι {A : Type} [Semiring A] [Algebra ℂ A] (f : 𝓕.CrAn
     universalLiftMap f h1 (ι a) = FreeAlgebra.lift ℂ f a
 ```
 
-**`FieldSpecification.WickAlgebra.universalLift`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean#L50).
+**`FieldSpecification.WickAlgebra.universalLift`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean#L50).
 
 > For a field specification, `𝓕`, given an algebra `A` and a function `f : 𝓕.CrAnFieldOp → A`
 > such that the lift of `f` to `FreeAlgebra.lift ℂ f : FreeAlgebra ℂ 𝓕.CrAnFieldOp → A` is
@@ -43,7 +43,7 @@ def universalLift {A : Type} [Semiring A] [Algebra ℂ A] (f : 𝓕.CrAnFieldOp 
     WickAlgebra 𝓕 →ₐ[ℂ] A
 ```
 
-**`FieldSpecification.WickAlgebra.universalLift_ι`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean#L75).
+**`FieldSpecification.WickAlgebra.universalLift_ι`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean#L75).
 
 ```lean
 lemma universalLift_ι {A : Type} [Semiring A] [Algebra ℂ A] (f : 𝓕.CrAnFieldOp → A)
@@ -51,7 +51,7 @@ lemma universalLift_ι {A : Type} [Semiring A] [Algebra ℂ A] (f : 𝓕.CrAnFie
     universalLift f h1 (ι a) = FreeAlgebra.lift ℂ f a
 ```
 
-**`FieldSpecification.WickAlgebra.universality`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean#L87).
+**`FieldSpecification.WickAlgebra.universality`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean#L87).
 
 > For a field specification, `𝓕`, the algebra `𝓕.WickAlgebra` satisfies the following universal
 > property. Let `f : 𝓕.CrAnFieldOp → A` be a function and `g : 𝓕.FieldOpFreeAlgebra →ₐ[ℂ] A`
@@ -72,4 +72,4 @@ lemma universality {A : Type} [Semiring A] [Algebra ℂ A] (f : 𝓕.CrAnFieldOp
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean)
+- [Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean)

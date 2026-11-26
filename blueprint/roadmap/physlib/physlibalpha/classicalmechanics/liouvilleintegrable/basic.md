@@ -8,7 +8,7 @@ proof: formalized
 
 # Liouville integrable systems
 
-The module `PhyslibAlpha.ClassicalMechanics.LiouvilleIntegrable.Basic`, [PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.LiouvilleIntegrable.Basic`, [PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean): 5 declarations, 5 with a docstring.
 
 > Liouville integrability on an open dense domain and conservation along Hamiltonian trajectories.
 
@@ -59,7 +59,7 @@ The module `PhyslibAlpha.ClassicalMechanics.LiouvilleIntegrable.Basic`, [Physlib
 
 ## A. The definition of Liouville integrability
 
-**`ClassicalMechanics.LiouvilleIntegrableOn`**, a structure, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean#L94).
+**`ClassicalMechanics.LiouvilleIntegrableOn`**, a structure, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean#L94).
 
 > A Liouville integrable system for a Hamiltonian `H` on an open dense domain `U` of the
 > `2d`-dimensional phase space `EuclideanSpace ℝ (Fin d) × EuclideanSpace ℝ (Fin d)`, whose points
@@ -91,7 +91,7 @@ structure LiouvilleIntegrableOn {d : ℕ}
 
 ### A.1. Integrability of Hamiltonian systems
 
-**`ClassicalMechanics.HamiltonianSystem.LiouvilleIntegrabilityData`**, a structure, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean#L121).
+**`ClassicalMechanics.HamiltonianSystem.LiouvilleIntegrabilityData`**, a structure, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean#L121).
 
 > An autonomous coordinate Hamiltonian and its Liouville integrability data, related to a
 > Hamiltonian system on a coordinate domain.
@@ -111,7 +111,7 @@ structure HamiltonianSystem.LiouvilleIntegrabilityData {d : ℕ}
   integrable : LiouvilleIntegrableOn U coordinateHamiltonian
 ```
 
-**`ClassicalMechanics.HamiltonianSystem.IsLiouvilleIntegrableOn`**, a def, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean#L137).
+**`ClassicalMechanics.HamiltonianSystem.IsLiouvilleIntegrableOn`**, a def, [line 137](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean#L137).
 
 > A Hamiltonian system is Liouville integrable on a coordinate domain when that domain lies
 > inside the system's domain and, for every time, the system agrees there with an autonomous
@@ -125,7 +125,7 @@ def HamiltonianSystem.IsLiouvilleIntegrableOn {d : ℕ}
 
 ## B. Conservation along the flow
 
-**`ClassicalMechanics.LiouvilleIntegrableOn.deriv_comp_eq_zero`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean#L150).
+**`ClassicalMechanics.LiouvilleIntegrableOn.deriv_comp_eq_zero`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean#L150).
 
 > Each conserved quantity of a Liouville integrable system has zero time derivative along a
 > solution of Hamilton's equations for `H` which lies in the domain `U` at time `t`.
@@ -143,7 +143,7 @@ lemma LiouvilleIntegrableOn.deriv_comp_eq_zero {d : ℕ}
 
 ## C. Systems with one degree of freedom
 
-**`ClassicalMechanics.LiouvilleIntegrableOn.oneDegreeOfFreedom`**, a def, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean#L176).
+**`ClassicalMechanics.LiouvilleIntegrableOn.oneDegreeOfFreedom`**, a def, [line 176](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean#L176).
 
 > A Hamiltonian system with one degree of freedom is Liouville integrable, with the Hamiltonian as
 > its single conserved quantity, on any open dense domain on which the Hamiltonian is smooth and has
@@ -166,4 +166,4 @@ def LiouvilleIntegrableOn.oneDegreeOfFreedom
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean)
+- [PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean)

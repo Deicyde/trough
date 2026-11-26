@@ -8,7 +8,7 @@ proof: formalized
 
 # A two-qubit circuit for the Clebsch–Gordan coefficients of two spins ½
 
-The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.ClebschGordanCircuit`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean): 7 declarations, 7 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.ClebschGordanCircuit`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean): 7 declarations, 7 with a docstring.
 
 > The change of basis from the product basis to the coupled basis of two spins `1/2` as a
 > two-qubit circuit.
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.ClebschGordanCircuit`,
 
 ## A. The Clebsch–Gordan matrix and the circuit
 
-**`PhyslibAlpha.Sl2.cgK`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean#L63).
+**`PhyslibAlpha.Sl2.cgK`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean#L63).
 
 > The label `k` of the coupled state in column `q`: `0` for the triplet, `1` for the singlet
 > `q = (1, 1)`.
@@ -51,7 +51,7 @@ The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.ClebschGordanCircuit`,
 def cgK (q : Qubit × Qubit) : ℕ
 ```
 
-**`PhyslibAlpha.Sl2.cgL`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean#L67).
+**`PhyslibAlpha.Sl2.cgL`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean#L67).
 
 > The label `l = J - M` of the coupled state in column `q`: the columns `(0,0), (0,1), (1,0)`
 > are the triplet states with `M = 1, 0, -1`, the column `(1,1)` the singlet.
@@ -60,7 +60,7 @@ def cgK (q : Qubit × Qubit) : ℕ
 def cgL (q : Qubit × Qubit) : ℕ
 ```
 
-**`PhyslibAlpha.Sl2.cgMatrix`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean#L71).
+**`PhyslibAlpha.Sl2.cgMatrix`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean#L71).
 
 > The Clebsch–Gordan matrix of two spins `1/2`: the entry in row `(a, b)` and column `q` is
 > `⟨½ m₁ ½ m₂ | J M⟩` with `m₁ = ½ - a`, `m₂ = ½ - b` and `J, M` given by `cgK q`, `cgL q`.
@@ -69,7 +69,7 @@ def cgL (q : Qubit × Qubit) : ℕ
 def cgMatrix : Matrix (Qubit × Qubit) (Qubit × Qubit) ℂ
 ```
 
-**`PhyslibAlpha.Sl2.CH21`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean#L75).
+**`PhyslibAlpha.Sl2.CH21`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean#L75).
 
 > The Hadamard gate on the first qubit controlled by the second qubit.
 
@@ -77,7 +77,7 @@ def cgMatrix : Matrix (Qubit × Qubit) (Qubit × Qubit) ℂ
 def CH21 : Matrix (Qubit × Qubit) (Qubit × Qubit) ℂ
 ```
 
-**`PhyslibAlpha.Sl2.cnot_mul_CH21`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean#L79).
+**`PhyslibAlpha.Sl2.cnot_mul_CH21`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean#L79).
 
 > The circuit `CH21` followed by `CNOT` is the Clebsch–Gordan matrix of two spins `1/2`.
 
@@ -85,7 +85,7 @@ def CH21 : Matrix (Qubit × Qubit) (Qubit × Qubit) ℂ
 lemma cnot_mul_CH21 : CNOT.val * CH21 = cgMatrix
 ```
 
-**`PhyslibAlpha.Sl2.CH21_mem_unitaryGroup`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean#L90).
+**`PhyslibAlpha.Sl2.CH21_mem_unitaryGroup`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean#L90).
 
 > `CH21` is unitary, as a reindexing of the unitary `C[H]`.
 
@@ -93,7 +93,7 @@ lemma cnot_mul_CH21 : CNOT.val * CH21 = cgMatrix
 lemma CH21_mem_unitaryGroup : CH21 ∈ Matrix.unitaryGroup (Qubit × Qubit) ℂ
 ```
 
-**`PhyslibAlpha.Sl2.cgMatrix_mem_unitaryGroup`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean#L96).
+**`PhyslibAlpha.Sl2.cgMatrix_mem_unitaryGroup`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean#L96).
 
 > The Clebsch–Gordan matrix of two spins `1/2` is unitary.
 
@@ -108,4 +108,4 @@ lemma cgMatrix_mem_unitaryGroup : cgMatrix ∈ Matrix.unitaryGroup (Qubit × Qub
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean)
+- [PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean)

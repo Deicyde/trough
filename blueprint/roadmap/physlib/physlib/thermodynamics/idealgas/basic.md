@@ -8,7 +8,7 @@ proof: formalized
 
 # Ideal gas: basic entropy and adiabatic relations
 
-The module `Physlib.Thermodynamics.IdealGas.Basic`, [Physlib/Thermodynamics/IdealGas/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Thermodynamics/IdealGas/Basic.lean): 3 declarations, 3 with a docstring, 2 listed as significant.
+The module `Physlib.Thermodynamics.IdealGas.Basic`, [Physlib/Thermodynamics/IdealGas/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Thermodynamics/IdealGas/Basic.lean): 3 declarations, 3 with a docstring, 2 listed as significant.
 
 > In this module we formalize a simple thermodynamic model of a monophase
 > ideal gas. We:
@@ -22,7 +22,7 @@ The module `Physlib.Thermodynamics.IdealGas.Basic`, [Physlib/Thermodynamics/Idea
 >   2. (U\_a/U\_b)^c (V\_a/V\_b) = 1,
 >   3. U\_a^c V\_a = U\_b^c V\_b (the latter follows from (2)).
 
-**`entropy`**, a def, [line 34](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Thermodynamics/IdealGas/Basic.lean#L34).
+**`entropy`**, a def, [line 34](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Thermodynamics/IdealGas/Basic.lean#L34).
 
 > Entropy of a monophase ideal gas:
 > S(U,V,N) = N s0 + N R (c log(U/U0) + log(V/V0) - (c+1) log(N/N0)).
@@ -32,7 +32,7 @@ def entropy
     (c R s0 U0 V0 N0 : ℝ) (U V N : ℝ) : ℝ
 ```
 
-**`adiabatic_relation_log`**, a theorem, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Thermodynamics/IdealGas/Basic.lean#L46). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`adiabatic_relation_log`**, a theorem, [line 46](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Thermodynamics/IdealGas/Basic.lean#L46). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Adiabatic relation in logarithmic form:
 > If S(Ua,Va,N) = S(Ub,Vb,N) with N fixed,
@@ -53,7 +53,7 @@ theorem adiabatic_relation_log
     c * log (Ua / Ub) + log (Va / Vb) = 0
 ```
 
-**`adiabatic_relation_UaUbVaVb`**, a theorem, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Thermodynamics/IdealGas/Basic.lean#L75). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`adiabatic_relation_UaUbVaVb`**, a theorem, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Thermodynamics/IdealGas/Basic.lean#L75). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Adiabatic relation in product form:
 > If S(Ua,Va,N) = S(Ub,Vb,N) with N fixed,
@@ -80,4 +80,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Thermodynamics/IdealGas/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Thermodynamics/IdealGas/Basic.lean)
+- [Physlib/Thermodynamics/IdealGas/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Thermodynamics/IdealGas/Basic.lean)

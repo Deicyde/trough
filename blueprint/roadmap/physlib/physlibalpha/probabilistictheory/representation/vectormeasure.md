@@ -8,7 +8,7 @@ proof: formalized
 
 # The spectral measure of a vector
 
-The module `PhyslibAlpha.ProbabilisticTheory.Representation.VectorMeasure`, [PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean): 7 declarations (1 instance with no name), 5 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Representation.VectorMeasure`, [PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean): 7 declarations (1 instance with no name), 5 with a docstring.
 
 > The distribution of a vector over the characters of the group, and its uniqueness.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.VectorMeasure`, [Phy
 
 ## A. The spectral measure of a vector
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.vectorMeasure`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean#L67).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.vectorMeasure`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean#L67).
 
 > The spectral measure `S ↦ ‖P(S) ξ‖²` of a vector `ξ`, a finite measure on the Pontryagin dual:
 > the distribution of `ξ` over the characters of the group.
@@ -43,13 +43,13 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.VectorMeasure`, [Phy
 def vectorMeasure (ξ : H) : Measure (PontryaginDual (Multiplicative G))
 ```
 
-**An instance with no name**, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean#L70).
+**An instance with no name**, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean#L70).
 
 ```lean
 instance (ξ : H) : IsFiniteMeasure (vectorMeasure π ξ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.vectorMeasure_apply`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean#L73).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.vectorMeasure_apply`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean#L73).
 
 ```lean
 lemma vectorMeasure_apply (ξ : H) {S : Set (PontryaginDual (Multiplicative G))}
@@ -57,7 +57,7 @@ lemma vectorMeasure_apply (ξ : H) {S : Set (PontryaginDual (Multiplicative G))}
     vectorMeasure π ξ S = ENNReal.ofReal (‖spectralMeasure π S ξ‖ ^ 2)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.vectorMeasure_univ`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean#L79).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.vectorMeasure_univ`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean#L79).
 
 > The total mass of the spectral measure of a vector is its squared norm.
 
@@ -65,7 +65,7 @@ lemma vectorMeasure_apply (ξ : H) {S : Set (PontryaginDual (Multiplicative G))}
 lemma vectorMeasure_univ (ξ : H) : vectorMeasure π ξ univ = ENNReal.ofReal (‖ξ‖ ^ 2)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.vectorMeasure_eq_map`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean#L83).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.vectorMeasure_eq_map`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean#L83).
 
 > The vector measure is the pushforward of the Riesz measure of the vector state.
 
@@ -74,7 +74,7 @@ lemma vectorMeasure_eq_map (ξ : H) :
     vectorMeasure π ξ = Measure.map (dual π) (starHomScalarMeasure (family π).starHom ξ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.inner_eq_integral_vectorMeasure`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean#L91).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.inner_eq_integral_vectorMeasure`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean#L91).
 
 > **The spectral measure of a vector represents its matrix coefficients**:
 > `⟪ξ, π(g) ξ⟫ = ∫ χ(g) dμ_ξ(χ)`.
@@ -87,7 +87,7 @@ lemma inner_eq_integral_vectorMeasure (ξ : H) (g : Multiplicative G) :
 
 ## B. Uniqueness
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.eq_vectorMeasure_of_transform_eq`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean#L111).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.eq_vectorMeasure_of_transform_eq`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean#L111).
 
 > **Uniqueness of the spectral measure of a vector.** For a countable group, a finite measure on
 > the Pontryagin dual whose Fourier–Stieltjes transform is `g ↦ ⟪ξ, π(g) ξ⟫` is the spectral
@@ -112,4 +112,4 @@ lemma eq_vectorMeasure_of_transform_eq (ξ : H) (μ : Measure (PontryaginDual (M
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean)

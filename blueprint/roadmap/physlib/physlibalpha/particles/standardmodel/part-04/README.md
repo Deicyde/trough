@@ -2,27 +2,26 @@
 navigation: transparent
 ---
 
-# The standard basis of the gauge… to Truncation of the jet gauge…
+# The kinetic terms at mass… to The invariants below mass…
 
-- [The standard basis of the gauge algebra](gaugealgebra-basis.md)
-- [The jet gauge algebra](gaugealgebra-jetgaugealgebra.md)
-- [The root decomposition of the gauge algebra](gaugealgebra-rootdecomposition.md)
+- [The kinetic terms at mass weight eight](localfieldalgebra-fermionsector-massweight-massd.md)
+- [The invariants below mass weight eight (FermionSector/MassWeight/MassDimLTEight)](localfieldalgebra-fermionsector-massweight-massd-2.md)
 
-Modules in [GaugeGroup/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup):
+Modules in [LocalFieldAlgebra/GaugeHiggsSector/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/LocalFieldAlgebra/GaugeHiggsSector):
 
-- [A primitive cube root of unity](gaugegroup-basic.md)
-- [The adjoint matrices of `SU(2)` and `SU(3)`](gaugegroup-adjointmatrix.md)
-- [Gauge weight decompositions](gaugegroup-gaugeweight.md)
-- [The Standard Model gauge group as local gauge data](gaugegroup-localgaugedata.md)
-- [The antisymmetric symbol and complex conjugation in `SU(2)`](gaugegroup-su2conjugation.md)
+- [The mixed gauge-Higgs sector](localfieldalgebra-gaugehiggssector-basic.md)
+- [The gauge-Higgs invariants below mass weight nine](localfieldalgebra-gaugehiggssector-massweight.md)
 
-Modules in [GaugeGroup/Invariants/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants):
+Modules in [LocalFieldAlgebra/GaugeSector/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/LocalFieldAlgebra/GaugeSector):
 
-- [Families of colour and isospin components and their invariants](gaugegroup-invariants-basic.md)
-- [Families of adjoint components and their invariants](gaugegroup-invariants-adjoint.md)
-- [Families with two `u(1)` adjoint indices](gaugegroup-invariants-isu1biadjoint.md)
+- [The gauge sector](localfieldalgebra-gaugesector-basic.md)
 
-Modules in [GaugeGroup/JetGaugeGroup/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup):
+Modules in [LocalFieldAlgebra/GaugeSector/Deriv/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/LocalFieldAlgebra/GaugeSector/Deriv):
 
-- [The jet gauge group](gaugegroup-jetgaugegroup-basic.md)
-- [Truncation of the jet gauge group](gaugegroup-jetgaugegroup-truncation.md)
+- [The centre of `SL(2,ℂ)` on the gauge sector](localfieldalgebra-gaugesector-deriv-centre.md)
+
+Modules in [LocalFieldAlgebra/GaugeSector/MassWeight/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/LocalFieldAlgebra/GaugeSector/MassWeight):
+
+- [The mass-weight grading of the gauge sector](localfieldalgebra-gaugesector-massweight-basic.md)
+- [Products of two field strengths as bi-adjoint gauge tensors](localfieldalgebra-gaugesector-massweight-massdim.md)
+- [The invariants below mass weight eight (GaugeSector/MassWeight/MassDimLTEight)](localfieldalgebra-gaugesector-massweight-massdim-2.md)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The Field Strength Tensor (Kinematics/FieldStrength)
 
-The module `Physlib.Electromagnetism.Kinematics.FieldStrength`, [Physlib/Electromagnetism/Kinematics/FieldStrength.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean): 30 declarations, 9 with a docstring.
+The module `Physlib.Electromagnetism.Kinematics.FieldStrength`, [Physlib/Electromagnetism/Kinematics/FieldStrength.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean): 30 declarations, 9 with a docstring.
 
 ## i. Overview
 
@@ -33,7 +33,7 @@ The module `Physlib.Electromagnetism.Kinematics.FieldStrength`, [Physlib/Electro
 > electromagnetic potential `A^μ`. We then prove that this tensor transforms correctly
 > under Lorentz transformations.
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L73).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L73).
 
 > The field strength from an electromagnetic potential, as a tensor `F^{μν}`.
 
@@ -49,7 +49,7 @@ noncomputable def toFieldStrength {d} (A : ElectromagneticPotential d) :
 > we don't expect them to be used explicitly. They are useful for proving some
 > of the API within this module.
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eq_deriv`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L90).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eq_deriv`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L90).
 
 ```lean
 lemma toFieldStrength_eq_deriv {d} (A : ElectromagneticPotential d) (x : SpaceTime d) :
@@ -58,7 +58,7 @@ lemma toFieldStrength_eq_deriv {d} (A : ElectromagneticPotential d) (x : SpaceTi
     + - (η d | ν ν' ⊗ A.deriv x | ν' μ)}ᵀ)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eq_tensorDeriv`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L96).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eq_tensorDeriv`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L96).
 
 ```lean
 lemma toFieldStrength_eq_tensorDeriv {d} {A : ElectromagneticPotential d}
@@ -68,7 +68,7 @@ lemma toFieldStrength_eq_tensorDeriv {d} {A : ElectromagneticPotential d}
     + - (η d | ν ν' ⊗ tensorDeriv A x | ν' μ)}ᵀ)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eq_add`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L103).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eq_add`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L103).
 
 ```lean
 lemma toFieldStrength_eq_add {d} (A : ElectromagneticPotential d) (x : SpaceTime d) :
@@ -78,7 +78,7 @@ lemma toFieldStrength_eq_add {d} (A : ElectromagneticPotential d) (x : SpaceTime
       {(η d | μ μ' ⊗ A.deriv x | μ' ν)}ᵀ)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eq_sub_tensorDeriv`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L111).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eq_sub_tensorDeriv`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L111).
 
 ```lean
 lemma toFieldStrength_eq_sub_tensorDeriv {d} {A : ElectromagneticPotential d}
@@ -89,7 +89,7 @@ lemma toFieldStrength_eq_sub_tensorDeriv {d} {A : ElectromagneticPotential d}
     {η d | μ μ' ⊗ tensorDeriv A x | μ' ν}ᵀ)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toTensor_toFieldStrength`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L120).
+**`Electromagnetism.ElectromagneticPotential.toTensor_toFieldStrength`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L120).
 
 ```lean
 lemma toTensor_toFieldStrength {d} (A : ElectromagneticPotential d) (x : SpaceTime d) :
@@ -104,7 +104,7 @@ lemma toTensor_toFieldStrength {d} (A : ElectromagneticPotential d) (x : SpaceTi
 > They match some of the familiar forms one might expect to see the field strength
 > tensor in.
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eq_sum_basis_eval`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L138).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eq_sum_basis_eval`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L138).
 
 > The statement that `F = F^{μν} eᵤ ⊗ eᵥ` written explicitly, with
 > the components extracted via `toScalar`.
@@ -115,7 +115,7 @@ lemma toFieldStrength_eq_sum_basis_eval {d} {A : ElectromagneticPotential d} :
       Vector.basis μ ⊗ₜ[ℝ] Vector.basis ν
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eq_sum_basis`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L147).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eq_sum_basis`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L147).
 
 > The statement that `F = F^{μν} eᵤ ⊗ eᵥ` written explicitly, with
 > the components given by `∑ κ, (η μ κ * ∂_ κ A x ν - η ν κ * ∂_ κ A x μ)`.
@@ -127,7 +127,7 @@ lemma toFieldStrength_eq_sum_basis {d} {A : ElectromagneticPotential d}
       Lorentz.Vector.basis μ ⊗ₜ Lorentz.Vector.basis ν
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eq_sum_basis_single`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L171).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eq_sum_basis_single`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L171).
 
 > The statement that `F = F^{μν} eᵤ ⊗ eᵥ` written explicitly, with
 > with the components given by `(η μ μ * ∂_ μ A x ν - η ν ν * ∂_ ν A x μ)`.
@@ -145,7 +145,7 @@ lemma toFieldStrength_eq_sum_basis_single {d} {A : ElectromagneticPotential d}
 > That is transforming the potential and then taking the field strength is the same
 > as taking the field strength and then transforming the resulting tensor.
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_equivariant`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L194).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_equivariant`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L194).
 
 ```lean
 lemma toFieldStrength_equivariant {d} (A : ElectromagneticPotential d) (Λ : LorentzGroup d)
@@ -155,14 +155,14 @@ lemma toFieldStrength_equivariant {d} (A : ElectromagneticPotential d) (Λ : Lor
 
 ## A.4. Differentiability and smoothness of the field strength tensor
 
-**`Electromagnetism.ElectromagneticPotential.differentiable_toFieldStrength`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L208).
+**`Electromagnetism.ElectromagneticPotential.differentiable_toFieldStrength`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L208).
 
 ```lean
 lemma differentiable_toFieldStrength {d} {A : ElectromagneticPotential d} (hA : ContDiff ℝ 2 A) :
     Differentiable ℝ A.toFieldStrength
 ```
 
-**`Electromagnetism.ElectromagneticPotential.differentiable_toFieldStrength_of_smooth`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L217).
+**`Electromagnetism.ElectromagneticPotential.differentiable_toFieldStrength_of_smooth`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L217).
 
 ```lean
 lemma differentiable_toFieldStrength_of_smooth {d}
@@ -170,7 +170,7 @@ lemma differentiable_toFieldStrength_of_smooth {d}
     Differentiable ℝ A.toFieldStrength
 ```
 
-**`Electromagnetism.ElectromagneticPotential.contDiff_toFieldStrength`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L223).
+**`Electromagnetism.ElectromagneticPotential.contDiff_toFieldStrength`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L223).
 
 ```lean
 lemma contDiff_toFieldStrength {d} {n : WithTop ℕ∞} {A : ElectromagneticPotential d}
@@ -185,7 +185,7 @@ lemma contDiff_toFieldStrength {d} {n : WithTop ℕ∞} {A : ElectromagneticPote
 
 #### A.5.1. Index evaluation
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_eq_tensor_basis_repr`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L243).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_eq_tensor_basis_repr`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L243).
 
 > Evaluating both tensor indices of the field strength gives the coefficient in the
 > tensor basis.
@@ -197,7 +197,7 @@ lemma toFieldStrength_eval_eq_tensor_basis_repr {d} (A : ElectromagneticPotentia
     (Tensor.basis _).repr (Tensorial.toTensor (toFieldStrength A x)) (fun | 0 => μ | 1 => ν)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_tensor_basis_repr_eq_eval`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L251).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_tensor_basis_repr_eq_eval`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L251).
 
 > The coefficient of the field strength tensor in the tensor basis is given by
 > index evaluation.
@@ -210,7 +210,7 @@ lemma toFieldStrength_tensor_basis_repr_eq_eval {d} (A : ElectromagneticPotentia
     toScalar {A.toFieldStrength x | [b 0] [b 1]}ᵀ
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_apply`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L263).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_apply`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L263).
 
 > The evaluated components of the field strength tensor in terms of derivatives of the
 > electromagnetic potential.
@@ -222,7 +222,7 @@ lemma toFieldStrength_eval_apply {d} (A : ElectromagneticPotential d)
     ∑ κ, (η μ κ * ∂_ κ A x ν - η ν κ * ∂_ κ A x μ)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_apply_eq_single`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L276).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_apply_eq_single`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L276).
 
 > The evaluated components of the field strength tensor after using diagonal form of the
 > Minkowski metric.
@@ -236,7 +236,7 @@ lemma toFieldStrength_eval_apply_eq_single {d} (A : ElectromagneticPotential d)
 
 #### A.5.2. Differentiability of the components
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_differentiable`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L294).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_differentiable`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L294).
 
 ```lean
 lemma toFieldStrength_eval_differentiable {d} {A : ElectromagneticPotential d}
@@ -244,7 +244,7 @@ lemma toFieldStrength_eval_differentiable {d} {A : ElectromagneticPotential d}
     Differentiable ℝ (fun x => toScalar {A.toFieldStrength x | [μ] [ν]}ᵀ)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_differentiable_space`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L301).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_differentiable_space`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L301).
 
 ```lean
 lemma toFieldStrength_eval_differentiable_space {d} {A : ElectromagneticPotential d}
@@ -253,7 +253,7 @@ lemma toFieldStrength_eval_differentiable_space {d} {A : ElectromagneticPotentia
       toScalar {A.toFieldStrength ((toTimeAndSpace c).symm (t, x)) | [μ] [ν]}ᵀ)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_differentiable_time`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L310).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_differentiable_time`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L310).
 
 ```lean
 lemma toFieldStrength_eval_differentiable_time {d} {A : ElectromagneticPotential d}
@@ -262,7 +262,7 @@ lemma toFieldStrength_eval_differentiable_time {d} {A : ElectromagneticPotential
       toScalar {A.toFieldStrength ((toTimeAndSpace c).symm (t, x)) | [μ] [ν]}ᵀ)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_contDiff`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L319).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_contDiff`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L319).
 
 ```lean
 lemma toFieldStrength_eval_contDiff {d} {n : WithTop ℕ∞} {A : ElectromagneticPotential d}
@@ -274,7 +274,7 @@ lemma toFieldStrength_eval_contDiff {d} {n : WithTop ℕ∞} {A : Electromagneti
 
 > We show that the field strength tensor is antisymmetric.
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_antisymm`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L333).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_antisymm`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L333).
 
 ```lean
 lemma toFieldStrength_eval_antisymm {d} (A : ElectromagneticPotential d) (x : SpaceTime d)
@@ -282,7 +282,7 @@ lemma toFieldStrength_eval_antisymm {d} (A : ElectromagneticPotential d) (x : Sp
     toScalar {A.toFieldStrength x | [μ] [ν]}ᵀ = - toScalar {A.toFieldStrength x | [ν] [μ]}ᵀ
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_diag_eq_zero`**, a lemma, [line 339](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L339).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_diag_eq_zero`**, a lemma, [line 339](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L339).
 
 ```lean
 lemma toFieldStrength_eval_diag_eq_zero {d} (A : ElectromagneticPotential d) (x : SpaceTime d)
@@ -290,7 +290,7 @@ lemma toFieldStrength_eval_diag_eq_zero {d} (A : ElectromagneticPotential d) (x 
     toScalar {A.toFieldStrength x | [μ] [μ]}ᵀ = 0
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_antisymmetric`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L344).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_antisymmetric`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L344).
 
 ```lean
 lemma toFieldStrength_antisymmetric {d} (A : ElectromagneticPotential d) (x : SpaceTime d) :
@@ -299,7 +299,7 @@ lemma toFieldStrength_antisymmetric {d} (A : ElectromagneticPotential d) (x : Sp
 
 ### A.7. Equivariance of the components of the field strength tensor
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_equivariant`**, a lemma, [line 359](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L359).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_equivariant`**, a lemma, [line 359](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L359).
 
 ```lean
 lemma toFieldStrength_eval_equivariant {d} (A : ElectromagneticPotential d)
@@ -309,7 +309,7 @@ lemma toFieldStrength_eval_equivariant {d} (A : ElectromagneticPotential d)
     ∑ κ, ∑ ρ, (Λ.1 μ κ * Λ.1 ν ρ) * toScalar {A.toFieldStrength (Λ⁻¹ • x) | [κ] [ρ]}ᵀ
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_action_eq_sum`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L383).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_action_eq_sum`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L383).
 
 > This lemma expresses the component form of the transformed field strength
 > tensor: when a Lorentz transformation Λ acts on the potential A, the resulting field strength
@@ -328,7 +328,7 @@ lemma toFieldStrength_action_eq_sum {d} (A : ElectromagneticPotential d) (Λ : L
 
 > We show that the field strength tensor is linear in the potential.
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_add`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L399).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_add`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L399).
 
 ```lean
 lemma toFieldStrength_eval_add {d} (A1 A2 : ElectromagneticPotential d)
@@ -338,7 +338,7 @@ lemma toFieldStrength_eval_add {d} (A1 A2 : ElectromagneticPotential d)
     toScalar {A1.toFieldStrength x | [μ] [ν]}ᵀ + toScalar {A2.toFieldStrength x | [μ] [ν]}ᵀ
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_add`**, a lemma, [line 410](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L410).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_add`**, a lemma, [line 410](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L410).
 
 ```lean
 lemma toFieldStrength_add {d} (A1 A2 : ElectromagneticPotential d)
@@ -346,7 +346,7 @@ lemma toFieldStrength_add {d} (A1 A2 : ElectromagneticPotential d)
     toFieldStrength (A1 + A2) x = toFieldStrength A1 x + toFieldStrength A2 x
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_smul`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L419).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_smul`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L419).
 
 ```lean
 lemma toFieldStrength_eval_smul {d} (c : ℝ) (A : ElectromagneticPotential d)
@@ -355,7 +355,7 @@ lemma toFieldStrength_eval_smul {d} (c : ℝ) (A : ElectromagneticPotential d)
     c * toScalar {A.toFieldStrength x | [μ] [ν]}ᵀ
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_smul`**, a lemma, [line 429](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L429).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_smul`**, a lemma, [line 429](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean#L429).
 
 ```lean
 lemma toFieldStrength_smul {d} (c : ℝ) (A : ElectromagneticPotential d)
@@ -369,4 +369,4 @@ lemma toFieldStrength_smul {d} (c : ℝ) (A : ElectromagneticPotential d)
 
 ## Sources
 
-- [Physlib/Electromagnetism/Kinematics/FieldStrength.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/FieldStrength.lean)
+- [Physlib/Electromagnetism/Kinematics/FieldStrength.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/FieldStrength.lean)

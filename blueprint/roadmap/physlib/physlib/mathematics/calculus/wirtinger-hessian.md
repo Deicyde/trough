@@ -8,7 +8,7 @@ proof: formalized
 
 # The mixed Wirtinger Hessian
 
-The module `Physlib.Mathematics.Calculus.Wirtinger.Hessian`, [Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean): 22 declarations, 19 with a docstring; 1 private, not shown.
+The module `Physlib.Mathematics.Calculus.Wirtinger.Hessian`, [Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean): 22 declarations, 19 with a docstring; 1 private, not shown.
 
 > The mixed Wirtinger Hessian, and its block-diagonal form for a sum of sector functions.
 
@@ -72,7 +72,7 @@ The module `Physlib.Mathematics.Calculus.Wirtinger.Hessian`, [Physlib/Mathematic
 > For a real Kähler potential `K` the mixed Wirtinger Hessian is the Kähler metric `g_{IJ̄}`.
 > Reality of `K` and Schwarz's theorem make it Hermitian.
 
-**`Physlib.Wirtinger.hessianMatrixOf`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L97).
+**`Physlib.Wirtinger.hessianMatrixOf`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L97).
 
 > The mixed Wirtinger Hessian of `f` at `u`: the matrix with `(I, J)` entry `∂_I ∂̄_J f`.
 
@@ -80,7 +80,7 @@ The module `Physlib.Mathematics.Calculus.Wirtinger.Hessian`, [Physlib/Mathematic
 noncomputable def hessianMatrixOf (f : (ι → ℂ) → ℂ) (u : ι → ℂ) : Matrix ι ι ℂ
 ```
 
-**`Physlib.Wirtinger.hessianMatrixOfR`**, an abbrev, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L102).
+**`Physlib.Wirtinger.hessianMatrixOfR`**, an abbrev, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L102).
 
 > The mixed Wirtinger Hessian of a real-valued `K`, through `Complex.ofReal`. An `abbrev`, so
 > lemmas about `hessianMatrixOf` apply to it.
@@ -89,7 +89,7 @@ noncomputable def hessianMatrixOf (f : (ι → ℂ) → ℂ) (u : ι → ℂ) : 
 noncomputable abbrev hessianMatrixOfR (K : (ι → ℂ) → ℝ) (u : ι → ℂ) : Matrix ι ι ℂ
 ```
 
-**`Physlib.Wirtinger.hessianMatrixOfR_isHermitian`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L107).
+**`Physlib.Wirtinger.hessianMatrixOfR_isHermitian`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L107).
 
 > The mixed Wirtinger Hessian of a real function `C²` at `u` is Hermitian,
 > `(g_{JĪ})^* = g_{IJ̄}`.
@@ -104,7 +104,7 @@ lemma hessianMatrixOfR_isHermitian {K : (ι → ℂ) → ℝ} {u : ι → ℂ} (
 > The fields are labelled by `Σ k, ι k`, with `ι k` labelling the fields of sector `k`. A potential
 > that is a sum of sector potentials has a block-diagonal Hessian.
 
-**`Physlib.Wirtinger.restrict`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L140).
+**`Physlib.Wirtinger.restrict`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L140).
 
 > The restriction `q ↦ q ∘ Sigma.mk k` to sector `k`, as a continuous ℝ-linear map.
 
@@ -112,13 +112,13 @@ lemma hessianMatrixOfR_isHermitian {K : (ι → ℂ) → ℝ} {u : ι → ℂ} (
 noncomputable def restrict (k : K) : ((Σ k, ι k) → ℂ) →L[ℝ] (ι k → ℂ)
 ```
 
-**`Physlib.Wirtinger.restrict_apply`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L144).
+**`Physlib.Wirtinger.restrict_apply`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L144).
 
 ```lean
 lemma restrict_apply (k : K) (q : (Σ k, ι k) → ℂ) : restrict k q = q ∘ Sigma.mk k
 ```
 
-**`Physlib.Wirtinger.restrict_single_same`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L148).
+**`Physlib.Wirtinger.restrict_single_same`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L148).
 
 > `restrict k` sends the basis vector of field `⟨k, a'⟩` to the basis vector of field `a'`.
 
@@ -127,7 +127,7 @@ lemma restrict_single_same (k : K) (a' : ι k) (z : ℂ) :
     restrict k (Pi.single (⟨k, a'⟩ : Σ k, ι k) z) = Pi.single a' z
 ```
 
-**`Physlib.Wirtinger.restrict_single_ne`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L156).
+**`Physlib.Wirtinger.restrict_single_ne`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L156).
 
 > `restrict k` sends the basis vector of a field of another sector to zero.
 
@@ -136,7 +136,7 @@ lemma restrict_single_ne {k k' : K} (h : k ≠ k') (a' : ι k') (z : ℂ) :
     restrict k (Pi.single (⟨k', a'⟩ : Σ k, ι k) z) = 0
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_block_own`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L163).
+**`Physlib.Wirtinger.dWirtingerCoord_block_own`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L163).
 
 > `∂_⟨k, a⟩` of a function of sector `k` alone is its `∂_a`.
 
@@ -147,7 +147,7 @@ lemma dWirtingerCoord_block_own {k : K} (g : (ι k → ℂ) → ℂ) (a : ι k)
       = dWirtingerCoord g a (u ∘ Sigma.mk k)
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_block_ne`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L171).
+**`Physlib.Wirtinger.dWirtingerCoord_block_ne`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L171).
 
 > `∂_⟨k, a⟩` of a function of another sector vanishes.
 
@@ -157,7 +157,7 @@ lemma dWirtingerCoord_block_ne {k k' : K} (h : k ≠ k') (g : (ι k' → ℂ) �
     dWirtingerCoord (fun q => g (q ∘ Sigma.mk k')) (⟨k, a⟩ : Σ k, ι k) u = 0
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_block_own`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L178).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_block_own`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L178).
 
 > Anti-holomorphic mirror of `dWirtingerCoord_block_own`.
 
@@ -168,7 +168,7 @@ lemma dWirtingerAntiCoord_block_own {k : K} (g : (ι k → ℂ) → ℂ) (a : ι
       = dWirtingerAntiCoord g a (u ∘ Sigma.mk k)
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_block_ne`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L186).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_block_ne`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L186).
 
 > Anti-holomorphic mirror of `dWirtingerCoord_block_ne`.
 
@@ -178,7 +178,7 @@ lemma dWirtingerAntiCoord_block_ne {k k' : K} (h : k ≠ k') (g : (ι k' → ℂ
     dWirtingerAntiCoord (fun q => g (q ∘ Sigma.mk k')) (⟨k, a⟩ : Σ k, ι k) u = 0
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_block_sum`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L193).
+**`Physlib.Wirtinger.dWirtingerCoord_block_sum`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L193).
 
 > `∂_⟨k₀, a⟩` of a sum of sector functions is the `∂_a` of the sector-`k₀` function.
 
@@ -189,7 +189,7 @@ lemma dWirtingerCoord_block_sum (f : ∀ k, (ι k → ℂ) → ℂ) (k₀ : K) (
       = dWirtingerCoord (f k₀) a (u ∘ Sigma.mk k₀)
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_block_sum`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L205).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_block_sum`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L205).
 
 > `∂̄_⟨k₀, a⟩` of a sum of sector functions is the `∂̄_a` of the sector-`k₀` function.
 
@@ -200,7 +200,7 @@ lemma dWirtingerAntiCoord_block_sum (f : ∀ k, (ι k → ℂ) → ℂ) (k₀ : 
       = dWirtingerAntiCoord (f k₀) a (u ∘ Sigma.mk k₀)
 ```
 
-**`Physlib.Wirtinger.hessianMatrixOf_sum_eq_blockDiagonal'`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L218).
+**`Physlib.Wirtinger.hessianMatrixOf_sum_eq_blockDiagonal'`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L218).
 
 > The Hessian of a sum of sector functions is the block-diagonal matrix of the sector
 > Hessians.
@@ -216,7 +216,7 @@ lemma hessianMatrixOf_sum_eq_blockDiagonal' (f : ∀ k, (ι k → ℂ) → ℂ) 
 
 > Relabelling the fields by a bijection `ε` permutes the rows and columns of the Hessian.
 
-**`Physlib.Wirtinger.precompEquiv`**, a def, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L257).
+**`Physlib.Wirtinger.precompEquiv`**, a def, [line 257](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L257).
 
 > The relabelling `q ↦ q ∘ ε.symm` along `ε`, as a continuous ℝ-linear map.
 
@@ -224,7 +224,7 @@ lemma hessianMatrixOf_sum_eq_blockDiagonal' (f : ∀ k, (ι k → ℂ) → ℂ) 
 noncomputable def precompEquiv (ε : ι ≃ ι') : (ι → ℂ) →L[ℝ] (ι' → ℂ)
 ```
 
-**`Physlib.Wirtinger.precompEquiv_single`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L266).
+**`Physlib.Wirtinger.precompEquiv_single`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L266).
 
 > `precompEquiv ε` sends the basis vector of field `c` to the basis vector of field `ε c`.
 
@@ -233,7 +233,7 @@ lemma precompEquiv_single (ε : ι ≃ ι') (c : ι) (z : ℂ) :
     precompEquiv ε (Pi.single c z) = Pi.single (ε c) z
 ```
 
-**`Physlib.Wirtinger.hessianMatrixOf_comp_equiv`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L272).
+**`Physlib.Wirtinger.hessianMatrixOf_comp_equiv`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L272).
 
 > Relabelling the coordinates by `ε` reindexes the Hessian by `ε`.
 
@@ -248,7 +248,7 @@ lemma hessianMatrixOf_comp_equiv (ε : ι ≃ ι') (H : (ι' → ℂ) → ℂ) (
 
 > Two sectors with fields indexed by `ι₁ ⊕ ι₂`, obtained from §B by relabelling with §C.
 
-**`Physlib.Wirtinger.restrictInl`**, a def, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L304).
+**`Physlib.Wirtinger.restrictInl`**, a def, [line 304](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L304).
 
 > The restriction `q ↦ q ∘ Sum.inl` to the first sector, as a continuous ℝ-linear map.
 
@@ -256,7 +256,7 @@ lemma hessianMatrixOf_comp_equiv (ε : ι ≃ ι') (H : (ι' → ℂ) → ℂ) (
 noncomputable def restrictInl : (ι₁ ⊕ ι₂ → ℂ) →L[ℝ] (ι₁ → ℂ)
 ```
 
-**`Physlib.Wirtinger.restrictInr`**, a def, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L308).
+**`Physlib.Wirtinger.restrictInr`**, a def, [line 308](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L308).
 
 > The restriction `q ↦ q ∘ Sum.inr` to the second sector, as a continuous ℝ-linear map.
 
@@ -264,21 +264,21 @@ noncomputable def restrictInl : (ι₁ ⊕ ι₂ → ℂ) →L[ℝ] (ι₁ → �
 noncomputable def restrictInr : (ι₁ ⊕ ι₂ → ℂ) →L[ℝ] (ι₂ → ℂ)
 ```
 
-**`Physlib.Wirtinger.restrictInl_apply`**, a lemma, [line 312](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L312).
+**`Physlib.Wirtinger.restrictInl_apply`**, a lemma, [line 312](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L312).
 
 ```lean
 lemma restrictInl_apply (q : ι₁ ⊕ ι₂ → ℂ) :
     restrictInl (ι₁ := ι₁) (ι₂ := ι₂) q = q ∘ Sum.inl
 ```
 
-**`Physlib.Wirtinger.restrictInr_apply`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L316).
+**`Physlib.Wirtinger.restrictInr_apply`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L316).
 
 ```lean
 lemma restrictInr_apply (q : ι₁ ⊕ ι₂ → ℂ) :
     restrictInr (ι₁ := ι₁) (ι₂ := ι₂) q = q ∘ Sum.inr
 ```
 
-**`Physlib.Wirtinger.hessianMatrixOf_add_eq_fromBlocks`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L321).
+**`Physlib.Wirtinger.hessianMatrixOf_add_eq_fromBlocks`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean#L321).
 
 > The Hessian of `f₁ (q ∘ Sum.inl) + f₂ (q ∘ Sum.inr)` is `fromBlocks` of the two sector
 > Hessians.
@@ -298,4 +298,4 @@ lemma hessianMatrixOf_add_eq_fromBlocks
 
 ## Sources
 
-- [Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean)
+- [Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean)

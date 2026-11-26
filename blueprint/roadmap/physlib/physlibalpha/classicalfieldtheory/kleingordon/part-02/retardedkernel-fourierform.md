@@ -8,7 +8,7 @@ proof: formalized
 
 # The Fourier form of the tempered retarded kernel
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.FourierForm`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean): 21 declarations, 14 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.FourierForm`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean): 21 declarations, 14 with a docstring.
 
 > The retarded kernel on Schwartz functions is the boundary value of the resolvent integrated
 > against the spacetime Fourier transform.
@@ -60,7 +60,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.Fourier
 > - `exists_abs_fourierPairing_le` : the uniform bound on Schwartz space by closure.
 > - `tendsto_fourierPairing` : the boundary value.
 
-**`KleinGordon.SplitSpace`**, an abbrev, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L83).
+**`KleinGordon.SplitSpace`**, an abbrev, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L83).
 
 > Time and space with the Euclidean product norm.
 
@@ -68,7 +68,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.Fourier
 abbrev SplitSpace (d : ℕ)
 ```
 
-**`KleinGordon.splitResolvent`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L88).
+**`KleinGordon.splitResolvent`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L88).
 
 > The resolvent as a function on the split space.
 
@@ -76,21 +76,21 @@ abbrev SplitSpace (d : ℕ)
 def splitResolvent (μ ε : ℝ) (p : SplitSpace d) : ℂ
 ```
 
-**`KleinGordon.norm_splitResolvent_le`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L90).
+**`KleinGordon.norm_splitResolvent_le`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L90).
 
 ```lean
 lemma norm_splitResolvent_le {μ : ℝ} {ε : ℝ} (hε : 0 < ε) (p : SplitSpace d) :
     ‖splitResolvent μ ε p‖ ≤ 2 / ε ^ 2
 ```
 
-**`KleinGordon.continuous_splitResolvent`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L98).
+**`KleinGordon.continuous_splitResolvent`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L98).
 
 ```lean
 lemma continuous_splitResolvent {μ : ℝ} {ε : ℝ} (hε : 0 < ε) :
     Continuous (splitResolvent (d := d) μ ε)
 ```
 
-**`KleinGordon.splitEquiv`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L117).
+**`KleinGordon.splitEquiv`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L117).
 
 > Split space and spacetime are the same vector space.
 
@@ -98,7 +98,7 @@ lemma continuous_splitResolvent {μ : ℝ} {ε : ℝ} (hε : 0 < ε) :
 def splitEquiv (d : ℕ) : SplitSpace d ≃L[ℝ] SpaceTime d
 ```
 
-**`KleinGordon.splitSource`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L121).
+**`KleinGordon.splitSource`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L121).
 
 > A real Schwartz function of spacetime as a complex Schwartz function of the split space.
 
@@ -106,14 +106,14 @@ def splitEquiv (d : ℕ) : SplitSpace d ≃L[ℝ] SpaceTime d
 def splitSource (d : ℕ) : 𝓢(SpaceTime d, ℝ) →L[ℝ] 𝓢(SplitSpace d, ℂ)
 ```
 
-**`KleinGordon.splitSource_apply`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L125).
+**`KleinGordon.splitSource_apply`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L125).
 
 ```lean
 lemma splitSource_apply (φ : 𝓢(SpaceTime d, ℝ)) (p : SplitSpace d) :
     splitSource d φ p = (φ (splitEquiv d p) : ℂ)
 ```
 
-**`KleinGordon.spacetimeFourier`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L129).
+**`KleinGordon.spacetimeFourier`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L129).
 
 > The spacetime Fourier transform of a real Schwartz function.
 
@@ -121,14 +121,14 @@ lemma splitSource_apply (φ : 𝓢(SpaceTime d, ℝ)) (p : SplitSpace d) :
 def spacetimeFourier (d : ℕ) : 𝓢(SpaceTime d, ℝ) →L[ℝ] 𝓢(SplitSpace d, ℂ)
 ```
 
-**`KleinGordon.spacetimeFourier_apply`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L132).
+**`KleinGordon.spacetimeFourier_apply`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L132).
 
 ```lean
 lemma spacetimeFourier_apply (φ : 𝓢(SpaceTime d, ℝ)) (p : SplitSpace d) :
     spacetimeFourier d φ p = 𝓕 (splitSource d φ) p
 ```
 
-**`KleinGordon.fourierPairing`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L136).
+**`KleinGordon.fourierPairing`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L136).
 
 > **The pairing of the transform with the resolvent.**
 
@@ -136,14 +136,14 @@ lemma spacetimeFourier_apply (φ : 𝓢(SpaceTime d, ℝ)) (p : SplitSpace d) :
 def fourierPairing (μ ε : ℝ) (φ : 𝓢(SpaceTime d, ℝ)) : ℂ
 ```
 
-**`KleinGordon.integrable_mul_splitResolvent`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L139).
+**`KleinGordon.integrable_mul_splitResolvent`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L139).
 
 ```lean
 lemma integrable_mul_splitResolvent {μ ε : ℝ} (hε : 0 < ε) (g : 𝓢(SplitSpace d, ℂ)) :
     Integrable fun p : SplitSpace d => g p * splitResolvent μ ε p
 ```
 
-**`KleinGordon.pairingRe`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L149).
+**`KleinGordon.pairingRe`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L149).
 
 > The real part of the pairing as a real linear functional.
 
@@ -151,21 +151,21 @@ lemma integrable_mul_splitResolvent {μ ε : ℝ} (hε : 0 < ε) (g : 𝓢(Split
 def pairingRe (μ : ℝ) {ε : ℝ} (hε : 0 < ε) : 𝓢(SpaceTime d, ℝ) →ₗ[ℝ] ℝ
 ```
 
-**`KleinGordon.pairingRe_apply`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L159).
+**`KleinGordon.pairingRe_apply`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L159).
 
 ```lean
 lemma pairingRe_apply (μ : ℝ) {ε : ℝ} (hε : 0 < ε) (φ : 𝓢(SpaceTime d, ℝ)) :
     pairingRe μ hε φ = (fourierPairing μ ε φ).re
 ```
 
-**`KleinGordon.norm_fourierPairing_le`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L162).
+**`KleinGordon.norm_fourierPairing_le`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L162).
 
 ```lean
 lemma norm_fourierPairing_le {μ ε : ℝ} (hε : 0 < ε) (φ : 𝓢(SpaceTime d, ℝ)) :
     ‖fourierPairing μ ε φ‖ ≤ (2 / ε ^ 2) * ∫ p : SplitSpace d, ‖𝓕 (splitSource d φ) p‖
 ```
 
-**`KleinGordon.timeFourier_eq_fourier`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L171).
+**`KleinGordon.timeFourier_eq_fourier`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L171).
 
 > The transform of the transported test function is the transform on split space.
 
@@ -175,7 +175,7 @@ lemma timeFourier_eq_fourier (φ : 𝓓((⊤ : Opens (SpaceTime d)), ℝ)) (w : 
       𝓕 (splitSource d (ofTestFunction φ)) (WithLp.toLp 2 (w, ξ))
 ```
 
-**`KleinGordon.fourierPairing_eq_integral_integral`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L181).
+**`KleinGordon.fourierPairing_eq_integral_integral`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L181).
 
 > **The pairing as an iterated integral.**
 
@@ -185,7 +185,7 @@ lemma fourierPairing_eq_integral_integral {μ ε : ℝ} (hε : 0 < ε) (φ : �
       spacetimeFourier d φ (WithLp.toLp 2 (w, ξ)) * resolvent μ ε w ξ
 ```
 
-**`KleinGordon.fourierPairing_ofTestFunction`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L192).
+**`KleinGordon.fourierPairing_ofTestFunction`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L192).
 
 > **For test functions the pairing is the damped kernel.**
 
@@ -196,7 +196,7 @@ lemma fourierPairing_ofTestFunction {m ε : ℝ} (hε : 0 < ε)
       dampedKernel (m ^ 2) ε (sourceEquiv ℂ (TestFunction.postcompCLM Complex.ofRealCLM φ))
 ```
 
-**`KleinGordon.exists_abs_dampedKernel_le`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L202).
+**`KleinGordon.exists_abs_dampedKernel_le`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L202).
 
 > **The damped kernel is bounded uniformly in the damping.**
 
@@ -209,7 +209,7 @@ lemma exists_abs_dampedKernel_le (d : ℕ) (m : ℝ) :
           C * q (ofTestFunction φ)
 ```
 
-**`KleinGordon.continuous_pairingRe`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L220).
+**`KleinGordon.continuous_pairingRe`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L220).
 
 > The test functions are dense in Schwartz space.
 
@@ -218,7 +218,7 @@ lemma continuous_pairingRe (μ : ℝ) {ε : ℝ} (hε : 0 < ε) :
     Continuous fun φ : 𝓢(SpaceTime d, ℝ) => (fourierPairing μ ε φ).re
 ```
 
-**`KleinGordon.exists_abs_fourierPairing_le`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L243).
+**`KleinGordon.exists_abs_fourierPairing_le`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L243).
 
 > **The pairing is bounded on all Schwartz functions uniformly in `ε`.**
 
@@ -229,7 +229,7 @@ lemma exists_abs_fourierPairing_le (d : ℕ) (m : ℝ) :
         |(fourierPairing (m ^ 2) ε φ).re| ≤ C * q φ
 ```
 
-**`KleinGordon.tendsto_fourierPairing`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L263).
+**`KleinGordon.tendsto_fourierPairing`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean#L263).
 
 > **Fourier form of the tempered retarded kernel.** For every real Schwartz function `φ` the
 > tempered kernel is the limit for `ε → 0+` of the integral of the spacetime Fourier transform of
@@ -252,4 +252,4 @@ lemma tendsto_fourierPairing (m : ℝ) (φ : 𝓢(SpaceTime d, ℝ)) :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean)

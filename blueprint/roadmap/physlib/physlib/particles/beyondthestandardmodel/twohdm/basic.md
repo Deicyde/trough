@@ -8,7 +8,7 @@ proof: formalized
 
 # The Two Higgs Doublet Model
 
-The module `Physlib.Particles.BeyondTheStandardModel.TwoHDM.Basic`, [Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean): 6 declarations (2 instances with no name), 1 with a docstring.
+The module `Physlib.Particles.BeyondTheStandardModel.TwoHDM.Basic`, [Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean): 6 declarations (2 instances with no name), 1 with a docstring.
 
 > The two Higgs doublet model is the standard model plus an additional Higgs doublet.
 
@@ -24,7 +24,7 @@ The module `Physlib.Particles.BeyondTheStandardModel.TwoHDM.Basic`, [Physlib/Par
 
 ## A. The configuration space
 
-**`TwoHiggsDoublet`**, a structure, [line 38](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean#L38).
+**`TwoHiggsDoublet`**, a structure, [line 38](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean#L38).
 
 > The configuration space of the two Higgs doublet model.
 > In otherwords, the underlying vector space associated with the model.
@@ -37,7 +37,7 @@ structure TwoHiggsDoublet where
   Φ2 : HiggsVec
 ```
 
-**`TwoHiggsDoublet.ext_of_fst_snd`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean#L49).
+**`TwoHiggsDoublet.ext_of_fst_snd`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean#L49).
 
 ```lean
 lemma ext_of_fst_snd {H1 H2 : TwoHiggsDoublet}
@@ -46,27 +46,27 @@ lemma ext_of_fst_snd {H1 H2 : TwoHiggsDoublet}
 
 ## B. Gauge group actions
 
-**An instance with no name**, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean#L59).
+**An instance with no name**, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean#L59).
 
 ```lean
 noncomputable instance : SMul StandardModel.GaugeGroupI TwoHiggsDoublet
 ```
 
-**`TwoHiggsDoublet.gaugeGroupI_smul_fst`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean#L65).
+**`TwoHiggsDoublet.gaugeGroupI_smul_fst`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean#L65).
 
 ```lean
 lemma gaugeGroupI_smul_fst (g : StandardModel.GaugeGroupI) (H : TwoHiggsDoublet) :
     (g • H).Φ1 = StandardModel.HiggsVec.repGaugeGroupI g H.Φ1
 ```
 
-**`TwoHiggsDoublet.gaugeGroupI_smul_snd`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean#L69).
+**`TwoHiggsDoublet.gaugeGroupI_smul_snd`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean#L69).
 
 ```lean
 lemma gaugeGroupI_smul_snd (g : StandardModel.GaugeGroupI) (H : TwoHiggsDoublet) :
     (g • H).Φ2 = StandardModel.HiggsVec.repGaugeGroupI g H.Φ2
 ```
 
-**An instance with no name**, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean#L72).
+**An instance with no name**, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean#L72).
 
 ```lean
 noncomputable instance : MulAction StandardModel.GaugeGroupI TwoHiggsDoublet
@@ -78,4 +78,4 @@ noncomputable instance : MulAction StandardModel.GaugeGroupI TwoHiggsDoublet
 
 ## Sources
 
-- [Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean)
+- [Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean)

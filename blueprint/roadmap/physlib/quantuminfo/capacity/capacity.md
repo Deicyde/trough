@@ -8,7 +8,7 @@ proof: formalized
 
 # Quantum Capacity
 
-The module `QuantumInfo.Capacity.Capacity`, [QuantumInfo/Capacity/Capacity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Capacity/Capacity.lean): 11 declarations, 11 with a docstring, 7 listed as significant.
+The module `QuantumInfo.Capacity.Capacity`, [QuantumInfo/Capacity/Capacity.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Capacity/Capacity.lean): 11 declarations, 11 with a docstring, 7 listed as significant.
 
 ## i. Overview
 
@@ -49,7 +49,7 @@ The module `QuantumInfo.Capacity.Capacity`, [QuantumInfo/Capacity/Capacity.lean]
 
 ## A. Basic definitions
 
-**`CPTPMap.Emulates`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Capacity/Capacity.lean#L109).
+**`CPTPMap.Emulates`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Capacity/Capacity.lean#L109).
 
 > A channel Λ₁ `Emulates` another channel Λ₂ if there are D and E such that D∘Λ₁∘E = Λ₂.
 
@@ -57,7 +57,7 @@ The module `QuantumInfo.Capacity.Capacity`, [QuantumInfo/Capacity/Capacity.lean]
 def Emulates (Λ₁ : CPTPMap d₁ d₂) (Λ₂ : CPTPMap d₃ d₄) : Prop
 ```
 
-**`CPTPMap.εApproximates`**, a def, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Capacity/Capacity.lean#L116).
+**`CPTPMap.εApproximates`**, a def, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Capacity/Capacity.lean#L116).
 
 > A channel A `εApproximates` channel B of the same dimensions if for every state ρ, the
 > fidelity F(A(ρ), B(ρ)) is at least 1-ε.
@@ -66,7 +66,7 @@ def Emulates (Λ₁ : CPTPMap d₁ d₂) (Λ₂ : CPTPMap d₃ d₄) : Prop
 def εApproximates (A B : CPTPMap d₁ d₂) (ε : ℝ) : Prop
 ```
 
-**`CPTPMap.AchievesRate`**, a def, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Capacity/Capacity.lean#L123).
+**`CPTPMap.AchievesRate`**, a def, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Capacity/Capacity.lean#L123).
 
 > A channel A `AchievesRate` R:ℝ if for every ε>0, some n copies of A emulates a channel B such
 > that log2(dimout(B))/n ≥ R, and that B εApproximates the identity channel.
@@ -75,7 +75,7 @@ def εApproximates (A B : CPTPMap d₁ d₂) (ε : ℝ) : Prop
 def AchievesRate (A : CPTPMap d₁ d₂) (R : ℝ) : Prop
 ```
 
-**`CPTPMap.quantumCapacity`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Capacity/Capacity.lean#L133).
+**`CPTPMap.quantumCapacity`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Capacity/Capacity.lean#L133).
 
 > The quantum capacity of a channel A: the supremum of all rates R such that
 > `A.AchievesRate R`, i.e. the maximum asymptotic rate at which quantum information can be
@@ -87,7 +87,7 @@ noncomputable def quantumCapacity (A : CPTPMap d₁ d₂) : ℝ
 
 ## B. Emulation between channels
 
-**`CPTPMap.emulates_self`**, a theorem, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Capacity/Capacity.lean#L147). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`CPTPMap.emulates_self`**, a theorem, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Capacity/Capacity.lean#L147). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Every quantum channel emulates itself.
 
@@ -95,7 +95,7 @@ noncomputable def quantumCapacity (A : CPTPMap d₁ d₂) : ℝ
 theorem emulates_self (Λ : CPTPMap d₁ d₂) : Λ.Emulates Λ
 ```
 
-**`CPTPMap.emulates_trans`**, a theorem, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Capacity/Capacity.lean#L152). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`CPTPMap.emulates_trans`**, a theorem, [line 152](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Capacity/Capacity.lean#L152). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > If a quantum channel A emulates B, and B emulates C, then A emulates C.
 
@@ -106,7 +106,7 @@ theorem emulates_trans (Λ₁ : CPTPMap d₁ d₂) (Λ₂ : CPTPMap d₃ d₄) (
 
 ## C. Approximation between channels
 
-**`CPTPMap.εApproximates_self`**, a theorem, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Capacity/Capacity.lean#L169). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`CPTPMap.εApproximates_self`**, a theorem, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Capacity/Capacity.lean#L169). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Every quantum channel perfectly approximates itself, that is, `εApproximates` with `ε = 0`.
 
@@ -114,7 +114,7 @@ theorem emulates_trans (Λ₁ : CPTPMap d₁ d₂) (Λ₂ : CPTPMap d₃ d₄) (
 theorem εApproximates_self (Λ : CPTPMap d₁ d₂) : Λ.εApproximates Λ 0
 ```
 
-**`CPTPMap.εApproximates_monotone`**, a theorem, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Capacity/Capacity.lean#L173). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`CPTPMap.εApproximates_monotone`**, a theorem, [line 173](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Capacity/Capacity.lean#L173). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > If a quantum channel A approximates B with ε₀, it also approximates B with all larger ε₁.
 
@@ -125,7 +125,7 @@ theorem εApproximates_monotone {A B : CPTPMap d₁ d₂} {ε₀ : ℝ} (h : A.�
 
 ## D. Achievable rates
 
-**`CPTPMap.achievesRate_0`**, a theorem, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Capacity/Capacity.lean#L188). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`CPTPMap.achievesRate_0`**, a theorem, [line 188](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Capacity/Capacity.lean#L188). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Every quantum channel out of a nonempty space achieves at least a rate of zero.
 
@@ -133,7 +133,7 @@ theorem εApproximates_monotone {A B : CPTPMap d₁ d₂} {ε₀ : ℝ} (h : A.�
 theorem achievesRate_0 (Λ : CPTPMap d₁ d₂) [Nonempty d₁] : Λ.AchievesRate 0
 ```
 
-**`CPTPMap.id_achievesRate_log_dim`**, a theorem, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Capacity/Capacity.lean#L195). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`CPTPMap.id_achievesRate_log_dim`**, a theorem, [line 195](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Capacity/Capacity.lean#L195). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The identity channel on D dimensional space achieves a rate of log2(D).
 
@@ -144,7 +144,7 @@ theorem id_achievesRate_log_dim :
 
 ## E. The quantum capacity
 
-**`CPTPMap.zero_le_quantumCapacity`**, a theorem, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Capacity/Capacity.lean#L250). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`CPTPMap.zero_le_quantumCapacity`**, a theorem, [line 250](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Capacity/Capacity.lean#L250). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Quantum channel capacity is nonnegative for channels out of a nonempty space.
 
@@ -160,4 +160,4 @@ theorem zero_le_quantumCapacity (Λ : CPTPMap d₁ d₂) [Nonempty d₁] :
 
 ## Sources
 
-- [QuantumInfo/Capacity/Capacity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Capacity/Capacity.lean)
+- [QuantumInfo/Capacity/Capacity.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Capacity/Capacity.lean)

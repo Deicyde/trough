@@ -8,7 +8,7 @@ proof: formalized
 
 # The self-adjoint part of a C⋆-algebra is a JB-algebra
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.CStarAlgebra.Basic`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean): 13 declarations, 8 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.CStarAlgebra.Basic`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean): 13 declarations, 8 with a docstring.
 
 > The self-adjoint elements of a unital C⋆-algebra form a JB-algebra under `½ (a b + b a)`.
 
@@ -33,13 +33,13 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.CStarAlgebra.Basic`
 
 ## A. C⋆ order compatibility
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.one_mul`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L58).
+**`PhyslibAlpha.ProbabilisticTheory.JB.one_mul`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L58).
 
 ```lean
 lemma one_mul (a : selfAdjoint A) : (1 : selfAdjoint A) * a = a
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.mul_self_eq`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L69).
+**`PhyslibAlpha.ProbabilisticTheory.JB.mul_self_eq`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L69).
 
 > The Jordan square of a self-adjoint element, for the normalized product, is exactly its
 > ordinary (associative) square. This is the reason `moment`/`variance` computed via the abstract
@@ -49,13 +49,13 @@ lemma one_mul (a : selfAdjoint A) : (1 : selfAdjoint A) * a = a
 lemma mul_self_eq (a : selfAdjoint A) : ((a * a : selfAdjoint A) : A) = (a : A) * (a : A)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.mul_self_nonneg`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L73).
+**`PhyslibAlpha.ProbabilisticTheory.JB.mul_self_nonneg`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L73).
 
 ```lean
 lemma mul_self_nonneg (a : selfAdjoint A) : 0 ≤ a * a
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.instIsJordanOrderUnit`**, an instance, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L80).
+**`PhyslibAlpha.ProbabilisticTheory.JB.instIsJordanOrderUnit`**, an instance, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L80).
 
 > The self-adjoint part of a C⋆-algebra is a Jordan order-unit space.
 
@@ -65,13 +65,13 @@ noncomputable scoped instance instIsJordanOrderUnit : IsJordanOrderUnit (selfAdj
 
 ## B. The JB-algebra instance
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.norm_mul_le'`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L96).
+**`PhyslibAlpha.ProbabilisticTheory.JB.norm_mul_le'`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L96).
 
 ```lean
 lemma norm_mul_le' (a b : selfAdjoint A) : ‖a * b‖ ≤ ‖a‖ * ‖b‖
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.instNormedJordanAlgebra`**, an instance, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L109).
+**`PhyslibAlpha.ProbabilisticTheory.JB.instNormedJordanAlgebra`**, an instance, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L109).
 
 > The self-adjoint part carries one coherent normed Jordan structure inherited from the ambient
 > Cstar algebra.
@@ -80,7 +80,7 @@ lemma norm_mul_le' (a b : selfAdjoint A) : ‖a * b‖ ≤ ‖a‖ * ‖b‖
 noncomputable scoped instance instNormedJordanAlgebra : NormedJordanAlgebra (selfAdjoint A)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.instCompleteSpace`**, an instance, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L123).
+**`PhyslibAlpha.ProbabilisticTheory.JB.instCompleteSpace`**, an instance, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L123).
 
 > The self-adjoint part of a Cstar algebra is complete because it is the closed fixed-point set
 > of the continuous star operation.
@@ -89,19 +89,19 @@ noncomputable scoped instance instNormedJordanAlgebra : NormedJordanAlgebra (sel
 scoped instance instCompleteSpace : CompleteSpace (selfAdjoint A)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.norm_mul_self'`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L126).
+**`PhyslibAlpha.ProbabilisticTheory.JB.norm_mul_self'`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L126).
 
 ```lean
 lemma norm_mul_self' (a : selfAdjoint A) : ‖a * a‖ = ‖a‖ ^ 2
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.norm_mul_self_le_add'`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L131).
+**`PhyslibAlpha.ProbabilisticTheory.JB.norm_mul_self_le_add'`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L131).
 
 ```lean
 lemma norm_mul_self_le_add' (a b : selfAdjoint A) : ‖a * a‖ ≤ ‖a * a + b * b‖
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.instJBAlgebra`**, an instance, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L146).
+**`PhyslibAlpha.ProbabilisticTheory.JB.instJBAlgebra`**, an instance, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L146).
 
 > The self-adjoint part of a unital C⋆-algebra is a JB-algebra under `a ∘ b = ½ (a b + b a)`.
 
@@ -111,7 +111,7 @@ scoped instance instJBAlgebra : JBAlgebra (selfAdjoint A)
 
 ## C. Squares, `U_a = aba` and projections
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.quadRep_eq_conj`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L156).
+**`PhyslibAlpha.ProbabilisticTheory.JB.quadRep_eq_conj`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L156).
 
 > **`U_a b = a b a`** for self-adjoint elements of a C⋆-algebra.
 
@@ -120,7 +120,7 @@ lemma quadRep_eq_conj (a b : selfAdjoint A) :
     ((JordanAlgebra.quadRep a b : selfAdjoint A) : A) = (a : A) * (b : A) * (a : A)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.isJordanProjection_iff_isIdempotentElem`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L176).
+**`PhyslibAlpha.ProbabilisticTheory.JB.isJordanProjection_iff_isIdempotentElem`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L176).
 
 > **Realization identity**: a Jordan projection for the normalized product is exactly an ordinary
 > idempotent, `p² = p`.
@@ -130,7 +130,7 @@ lemma isJordanProjection_iff_isIdempotentElem {p : selfAdjoint A} :
     JordanAlgebra.IsJordanProjection p ↔ IsIdempotentElem (p : A)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JB.jordanOrthogonal_iff`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L184).
+**`PhyslibAlpha.ProbabilisticTheory.JB.jordanOrthogonal_iff`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean#L184).
 
 > **Realization identity**: Jordan orthogonality for the normalized product is exactly ordinary
 > operator orthogonality `p q = 0`.
@@ -149,4 +149,4 @@ lemma jordanOrthogonal_iff {p q : selfAdjoint A} :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean)

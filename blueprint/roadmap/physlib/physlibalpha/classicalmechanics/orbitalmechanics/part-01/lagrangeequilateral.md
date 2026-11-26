@@ -8,7 +8,7 @@ proof: formalized
 
 # Lagrange's circular equilateral solution
 
-The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.LagrangeEquilateral`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/LagrangeEquilateral.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/LagrangeEquilateral.lean): 1 declaration, 1 with a docstring; 22 private, not shown.
+The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.LagrangeEquilateral`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/LagrangeEquilateral.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/LagrangeEquilateral.lean): 1 declaration, 1 with a docstring; 22 private, not shown.
 
 > Three positive masses form a rotating equilateral triangle in a Newtonian gravitational system.
 
@@ -37,15 +37,15 @@ The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.LagrangeEquilateral
 
 ## C. The Lagrange solution
 
-**`ClassicalMechanics.LagrangeOrbit.exists_lagrange_equilateral_solution`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/LagrangeEquilateral.lean#L282).
+**`ClassicalMechanics.LagrangeOrbit.exists_lagrange_equilateral_solution`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/LagrangeEquilateral.lean#L277).
 
 > The Lagrange relative equilibrium for three positive masses in a planar inertial frame.
 > The labelled particles move on a rigid equilateral triangle about their mass barycentre,
 > with a positive common period obeying Kepler's third law.
 
 ```lean
-public lemma exists_lagrange_equilateral_solution (frame : ReferenceFrame 2) [Fact frame.IsInertial]
-    (hG : 0 < G) (hℓ : 0 < ℓ) :
+public lemma exists_lagrange_equilateral_solution (frame : ReferenceFrame 2)
+    (hframe : frame.IsInertial) (hG : 0 < G) (hℓ : 0 < ℓ) :
     ∃ (system : NewtonianSystem 2) (e : Fin 3 ≃ system.Particle) (T : ℝ),
       system.frame = frame ∧
       system.internalForces = gravityForces G system.particles ∧
@@ -66,4 +66,4 @@ public lemma exists_lagrange_equilateral_solution (frame : ReferenceFrame 2) [Fa
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/LagrangeEquilateral.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/LagrangeEquilateral.lean)
+- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/LagrangeEquilateral.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/LagrangeEquilateral.lean)

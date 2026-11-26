@@ -8,7 +8,7 @@ proof: formalized
 
 # Sharp effects (PhyslibAlpha)
 
-The module `PhyslibAlpha.ProbabilisticTheory.Effect.Sharp`, [PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Effect.Sharp`, [PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean): 5 declarations, 5 with a docstring.
 
 > Sharp effects: extreme points of the effect interval, preserved by taking complements.
 
@@ -29,7 +29,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Effect.Sharp`, [PhyslibAlpha/Probab
 
 ## A. Sharp effects
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.IsSharp`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean#L54).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.IsSharp`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean#L54).
 
 > An effect is sharp when it is an extreme point of the effect interval: it cannot be written as
 > a nontrivial mixture of two distinct effects.
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Effect.Sharp`, [PhyslibAlpha/Probab
 def IsSharp (e : Effect E) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.isSharp_zero`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean#L57).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.isSharp_zero`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean#L57).
 
 > The impossible outcome 0 is sharp.
 
@@ -46,7 +46,7 @@ def IsSharp (e : Effect E) : Prop
 lemma isSharp_zero : IsSharp (0 : Effect E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.isSharp_complement`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean#L65).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.isSharp_complement`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean#L65).
 
 > Sharpness is preserved by taking the complement:
 > `e ↦ 1 - e` is an affine involution of the effect interval.
@@ -55,7 +55,7 @@ lemma isSharp_zero : IsSharp (0 : Effect E)
 lemma isSharp_complement {e : Effect E} (h : IsSharp e) : IsSharp (complement e)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.isSharp_complement_iff`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean#L74).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.isSharp_complement_iff`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean#L74).
 
 > Sharpness is preserved by taking the complement, in either direction.
 
@@ -63,7 +63,7 @@ lemma isSharp_complement {e : Effect E} (h : IsSharp e) : IsSharp (complement e)
 lemma isSharp_complement_iff {e : Effect E} : IsSharp (complement e) ↔ IsSharp e
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.isSharp_one`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean#L78).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.isSharp_one`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean#L78).
 
 > The certain outcome 1 is sharp.
 
@@ -77,4 +77,4 @@ lemma isSharp_one : IsSharp (1 : Effect E)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Effect/Sharp.lean)

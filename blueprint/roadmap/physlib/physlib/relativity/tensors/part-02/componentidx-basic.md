@@ -8,7 +8,7 @@ proof: formalized
 
 # Component indices
 
-The module `Physlib.Relativity.Tensors.ComponentIdx.Basic`, [Physlib/Relativity/Tensors/ComponentIdx/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Basic.lean): 3 declarations, 2 with a docstring.
+The module `Physlib.Relativity.Tensors.ComponentIdx.Basic`, [Physlib/Relativity/Tensors/ComponentIdx/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComponentIdx/Basic.lean): 3 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -33,7 +33,7 @@ The module `Physlib.Relativity.Tensors.ComponentIdx.Basic`, [Physlib/Relativity/
 
 ## A. Basic definitions
 
-**`TensorSpecies.Tensor.ComponentIdx`**, an abbrev, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Basic.lean#L64).
+**`TensorSpecies.Tensor.ComponentIdx`**, an abbrev, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComponentIdx/Basic.lean#L64).
 
 > Given a list of indices `c : Fin n → C`, the type `ComponentIdx c` is the type of
 > component indices of a tensor with those colors. For instance, if `c = ![.up, .down]`,
@@ -45,14 +45,14 @@ abbrev ComponentIdx {n : ℕ} {S : TensorSpecies k C G V basisIdx rep b}
     (c : Fin n → C) : Type
 ```
 
-**`TensorSpecies.Tensor.ComponentIdx.congr_right`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Basic.lean#L68).
+**`TensorSpecies.Tensor.ComponentIdx.congr_right`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComponentIdx/Basic.lean#L68).
 
 ```lean
 lemma ComponentIdx.congr_right {n : ℕ} {c : Fin n → C} (b : ComponentIdx (S := S) c)
     (i j : Fin n) (h : i = j) : b i = basisIdxCongr (by simp [h]) (b j)
 ```
 
-**`TensorSpecies.Tensor.ComponentIdx.cast`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Basic.lean#L74).
+**`TensorSpecies.Tensor.ComponentIdx.cast`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComponentIdx/Basic.lean#L74).
 
 > Casting of a `ComponentIdx` through equivalent color maps.
 
@@ -68,4 +68,4 @@ def ComponentIdx.cast {n m : ℕ} {c : Fin n → C} {cm : Fin m → C}
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/ComponentIdx/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Basic.lean)
+- [Physlib/Relativity/Tensors/ComponentIdx/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComponentIdx/Basic.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Local and global analytic orbits
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.AnalyticVector.Local`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean): 36 declarations (2 instances with no name), 16 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.AnalyticVector.Local`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean): 36 declarations (2 instances with no name), 16 with a docstring.
 
 > Local analytic orbits agree on overlaps and glue into a global orbit orthogonal to deficiencies.
 
@@ -32,14 +32,14 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.AnalyticVect
 > - M. Reed and B. Simon, *Methods of Modern Mathematical Physics II*, Academic Press, 1975, Thm.
 >   X.39.
 
-**An instance with no name**, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L55).
+**An instance with no name**, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L55).
 
 ```lean
 instance {T : H →ₗ.[ℂ] H} {x : H} : CoeFun (LocalAnalyticOrbit T x)
     (fun _ => ℝ → H)
 ```
 
-**`LinearPMap.LocalAnalyticOrbit.translateTo`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L59).
+**`LinearPMap.LocalAnalyticOrbit.translateTo`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L59).
 
 > Recentring is the basic overlap operation in the finite-radius continuation argument.
 
@@ -48,14 +48,14 @@ def translateTo {T : H →ₗ.[ℂ] H} {x : H} (U : LocalAnalyticOrbit T x) (a :
     (ha : |a| < U.radius) : LocalAnalyticOrbit T (U a)
 ```
 
-**`LinearPMap.LocalAnalyticOrbit.translate`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L90).
+**`LinearPMap.LocalAnalyticOrbit.translate`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L90).
 
 ```lean
 lemma translate {T : H →ₗ.[ℂ] H} {x : H} (U : LocalAnalyticOrbit T x) (a : ℝ)
     (ha : |a| < U.radius) : Nonempty (LocalAnalyticOrbit T (U a))
 ```
 
-**`LinearPMap.LocalAnalyticOrbit.restrictTo`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L95).
+**`LinearPMap.LocalAnalyticOrbit.restrictTo`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L95).
 
 > The direct (non-`Nonempty`) form of chart restriction.
 
@@ -64,7 +64,7 @@ def restrictTo {T : H →ₗ.[ℂ] H} {x : H} (U : LocalAnalyticOrbit T x)
     {r : ℝ} (hr : 0 < r) (hrU : r ≤ U.radius) : LocalAnalyticOrbit T x
 ```
 
-**`LinearPMap.LocalAnalyticOrbit.restrict`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L107).
+**`LinearPMap.LocalAnalyticOrbit.restrict`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L107).
 
 > Restrict a local orbit to a smaller symmetric interval.
 
@@ -74,7 +74,7 @@ lemma restrict {T : H →ₗ.[ℂ] H} {x : H} (U : LocalAnalyticOrbit T x)
     Nonempty (LocalAnalyticOrbit T x)
 ```
 
-**`LinearPMap.LocalAnalyticOrbit.eq_of_same_initial`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L113).
+**`LinearPMap.LocalAnalyticOrbit.eq_of_same_initial`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L113).
 
 ```lean
 lemma eq_of_same_initial
@@ -88,7 +88,7 @@ lemma eq_of_same_initial
 > continuation below; the explicit radius inequalities keep the asymmetric translated radius out of
 > the later gluing proof.
 
-**`LinearPMap.LocalAnalyticOrbit.translate_eq_of_same_initial_on_core`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L180).
+**`LinearPMap.LocalAnalyticOrbit.translate_eq_of_same_initial_on_core`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L180).
 
 ```lean
 lemma translate_eq_of_same_initial_on_core
@@ -99,7 +99,7 @@ lemma translate_eq_of_same_initial_on_core
     (hs : |s| < R) : U (δ + s) = V s
 ```
 
-**`LinearPMap.LocalAnalyticOrbit.translate_eq_of_same_initial_on_core'`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L202).
+**`LinearPMap.LocalAnalyticOrbit.translate_eq_of_same_initial_on_core'`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L202).
 
 ```lean
 lemma translate_eq_of_same_initial_on_core'
@@ -110,7 +110,7 @@ lemma translate_eq_of_same_initial_on_core'
     (hs : |s| < R) : U (a + s) = V s
 ```
 
-**`LinearPMap.LocalAnalyticOrbit.of_closure`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L222).
+**`LinearPMap.LocalAnalyticOrbit.of_closure`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L222).
 
 > Transport a local orbit certificate for the closure back to a closable operator.  This is the
 > local counterpart of `GlobalAnalyticOrbit.of_closure`; it is needed when a fresh chart is produced
@@ -121,7 +121,7 @@ lemma of_closure {T : H →ₗ.[ℂ] H} {x : H} (hT : T.IsClosable)
     (U : LocalAnalyticOrbit T.closure x) : Nonempty (LocalAnalyticOrbit T x)
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit`**, a structure, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L257).
+**`LinearPMap.GlobalAnalyticOrbit`**, a structure, [line 257](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L257).
 
 > A global norm-preserving orbit for a vector, with the differential equation interpreted in the
 > closed operator.  This is the exact analytic certificate needed by the deficiency argument; the
@@ -138,21 +138,21 @@ structure GlobalAnalyticOrbit (T : H →ₗ.[ℂ] H) (x : H) where
   norm_eq : ∀ s, ‖toFun s‖ = ‖x‖
 ```
 
-**An instance with no name**, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L268).
+**An instance with no name**, [line 268](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L268).
 
 ```lean
 instance {T : H →ₗ.[ℂ] H} {x : H} : CoeFun (GlobalAnalyticOrbit T x)
     (fun _ => ℝ → H)
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.exists_bound_choose_mul_geometric`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L271).
+**`LinearPMap.GlobalAnalyticOrbit.exists_bound_choose_mul_geometric`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L271).
 
 ```lean
 lemma exists_bound_choose_mul_geometric {r : ℝ} (hr : 0 ≤ r) (hr' : r < 1) (k : ℕ) :
     ∃ C : ℝ, ∀ n : ℕ, (n + k).choose k * r ^ n ≤ C
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.summable_shifted_factorial_majorant`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L280).
+**`LinearPMap.GlobalAnalyticOrbit.summable_shifted_factorial_majorant`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L280).
 
 ```lean
 lemma summable_shifted_factorial_majorant {a : ℕ → ℝ} {t q : ℝ}
@@ -161,7 +161,7 @@ lemma summable_shifted_factorial_majorant {a : ℕ → ℝ} {t q : ℝ}
     Summable (fun n : ℕ => a (n + k) * q ^ n / n.factorial)
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.shiftedIterates`**, a def, [line 345](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L345).
+**`LinearPMap.GlobalAnalyticOrbit.shiftedIterates`**, a def, [line 345](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L345).
 
 > The iterate sequence `v` shifted by `k` steps, `n ↦ v (n + k)`.
 
@@ -169,7 +169,7 @@ lemma summable_shifted_factorial_majorant {a : ℕ → ℝ} {t q : ℝ}
 def shiftedIterates {T : H →ₗ.[ℂ] H} (v : ℕ → T.domain) (k : ℕ) : ℕ → T.domain
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.IteratesSeq.shift`**, a lemma, [line 349](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L349).
+**`LinearPMap.GlobalAnalyticOrbit.IteratesSeq.shift`**, a lemma, [line 349](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L349).
 
 ```lean
 lemma IteratesSeq.shift {T : H →ₗ.[ℂ] H} {x : H} {v : ℕ → T.domain}
@@ -177,7 +177,7 @@ lemma IteratesSeq.shift {T : H →ₗ.[ℂ] H} {x : H} {v : ℕ → T.domain}
     IteratesSeq T (v k) (shiftedIterates v k)
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.summable_shifted_iterates`**, a lemma, [line 358](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L358).
+**`LinearPMap.GlobalAnalyticOrbit.summable_shifted_iterates`**, a lemma, [line 358](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L358).
 
 ```lean
 lemma summable_shifted_iterates {T : H →ₗ.[ℂ] H} {v : ℕ → T.domain}
@@ -186,7 +186,7 @@ lemma summable_shifted_iterates {T : H →ₗ.[ℂ] H} {v : ℕ → T.domain}
     Summable (fun n : ℕ => ‖(shiftedIterates v k n : H)‖ * q ^ n / n.factorial)
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.neg_I_smul_tsum_analyticExpDerivTerm_shift_eq`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L366).
+**`LinearPMap.GlobalAnalyticOrbit.neg_I_smul_tsum_analyticExpDerivTerm_shift_eq`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L366).
 
 ```lean
 lemma neg_I_smul_tsum_analyticExpDerivTerm_shift_eq
@@ -197,7 +197,7 @@ lemma neg_I_smul_tsum_analyticExpDerivTerm_shift_eq
       analyticExp T (shiftedIterates v (k + 1)) s
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.IsAnalyticVector.localAnalyticOrbit_at_exp`**, a lemma, [line 429](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L429).
+**`LinearPMap.GlobalAnalyticOrbit.IsAnalyticVector.localAnalyticOrbit_at_exp`**, a lemma, [line 429](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L429).
 
 ```lean
 lemma IsAnalyticVector.localAnalyticOrbit_at_exp
@@ -209,7 +209,7 @@ lemma IsAnalyticVector.localAnalyticOrbit_at_exp
     Nonempty (LocalAnalyticOrbit T (analyticExp T v a))
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.IsAnalyticVector.analyticExp_at_isAnalyticVector`**, a lemma, [line 538](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L538).
+**`LinearPMap.GlobalAnalyticOrbit.IsAnalyticVector.analyticExp_at_isAnalyticVector`**, a lemma, [line 538](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L538).
 
 > The value of the exponential series at a time inside the half-radius is again an analytic
 > vector, for the closure of `T`.
@@ -224,7 +224,7 @@ lemma IsAnalyticVector.analyticExp_at_isAnalyticVector
     T.closure.IsAnalyticVector (analyticExp T v a)
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.IsAnalyticVector.analyticExp_at_isAnalyticVector_witness_of_radius`**, a lemma, [line 606](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L606).
+**`LinearPMap.GlobalAnalyticOrbit.IsAnalyticVector.analyticExp_at_isAnalyticVector_witness_of_radius`**, a lemma, [line 606](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L606).
 
 > The value of the exponential series at a time inside the half-radius is an analytic vector with
 > every radius smaller than the original one.
@@ -240,7 +240,7 @@ lemma IsAnalyticVector.analyticExp_at_isAnalyticVector_witness_of_radius
       0 < q ∧ Summable (fun n : ℕ => ‖(w n : H)‖ * q ^ n / n.factorial)
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.IsAnalyticVector.analyticExp_at_isAnalyticVector_of_radius`**, a lemma, [line 684](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L684).
+**`LinearPMap.GlobalAnalyticOrbit.IsAnalyticVector.analyticExp_at_isAnalyticVector_of_radius`**, a lemma, [line 684](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L684).
 
 ```lean
 lemma IsAnalyticVector.analyticExp_at_isAnalyticVector_of_radius
@@ -254,7 +254,7 @@ lemma IsAnalyticVector.analyticExp_at_isAnalyticVector_of_radius
 
 ## A. Gluing local orbits
 
-**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCover`**, a structure, [line 700](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L700).
+**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCover`**, a structure, [line 700](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L700).
 
 > A countable cover of `ℝ` by local analytic orbits, all based at states of the same norm as
 > `x`, agreeing pairwise on their overlaps.
@@ -280,7 +280,7 @@ structure LocalOrbitCover (T : H →ₗ.[ℂ] H) (x : H) where
 > the full overlap of two symmetric charts, which need not be contained in a recentered symmetric
 > domain.
 
-**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCoreCover`**, a structure, [line 721](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L721).
+**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCoreCover`**, a structure, [line 721](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L721).
 
 > A `LocalOrbitCover` where compatibility is only required on a (possibly smaller) symmetric
 > core of each chart's radius.
@@ -306,7 +306,7 @@ structure LocalOrbitCoreCover (T : H →ₗ.[ℂ] H) (x : H) where
       chart m (s - center m) = chart n (s - center n)
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.exists_int_center_of_pos_step`**, a lemma, [line 740](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L740).
+**`LinearPMap.GlobalAnalyticOrbit.exists_int_center_of_pos_step`**, a lemma, [line 740](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L740).
 
 ```lean
 lemma exists_int_center_of_pos_step {δ R s : ℝ} (hδ : 0 < δ) (hδR : δ < R) :
@@ -318,7 +318,7 @@ lemma exists_int_center_of_pos_step {δ R s : ℝ} (hδ : 0 < δ) (hδR : δ < R
 > are enough: the distance to the affine integer grid is convex, so every intermediate coordinate
 > remains in the same core.
 
-**`LinearPMap.GlobalAnalyticOrbit.eq_of_adjacent_of_le`**, a lemma, [line 765](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L765).
+**`LinearPMap.GlobalAnalyticOrbit.eq_of_adjacent_of_le`**, a lemma, [line 765](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L765).
 
 ```lean
 lemma eq_of_adjacent_of_le
@@ -330,7 +330,7 @@ lemma eq_of_adjacent_of_le
     F m (s - (m : ℝ) * δ) = F n (s - (n : ℝ) * δ)
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.eq_of_adjacent`**, a lemma, [line 812](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L812).
+**`LinearPMap.GlobalAnalyticOrbit.eq_of_adjacent`**, a lemma, [line 812](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L812).
 
 ```lean
 lemma eq_of_adjacent
@@ -342,7 +342,7 @@ lemma eq_of_adjacent
     F m (s - (m : ℝ) * δ) = F n (s - (n : ℝ) * δ)
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCoreCover.ofIntIndex`**, a def, [line 826](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L826).
+**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCoreCover.ofIntIndex`**, a def, [line 826](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L826).
 
 > Reindex a bi-infinite integer-indexed core cover by `ℕ`.  The reindexing is purely set-theoretic
 > and uses `Equiv.intEquivNat`; it lets the existing choice-based gluing implementation remain
@@ -364,7 +364,7 @@ noncomputable def LocalOrbitCoreCover.ofIntIndex
     LocalOrbitCoreCover T x
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCoreCover.ofAdjacentIntIndex`**, a def, [line 862](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L862).
+**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCoreCover.ofAdjacentIntIndex`**, a def, [line 862](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L862).
 
 > A family of local orbits centered at integer multiples of a step, agreeing on adjacent overlaps,
 > is a core cover of the real line.
@@ -382,7 +382,7 @@ noncomputable def LocalOrbitCoreCover.ofAdjacentIntIndex
     LocalOrbitCoreCover T x
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCoreCover.toLocalOrbitCover`**, a def, [line 887](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L887).
+**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCoreCover.toLocalOrbitCover`**, a def, [line 887](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L887).
 
 > Restricts every chart of a core cover down to its core radius, forgetting the extra room
 > outside it.
@@ -392,7 +392,7 @@ noncomputable def LocalOrbitCoreCover.toLocalOrbitCover
     {T : H →ₗ.[ℂ] H} {x : H} (C : LocalOrbitCoreCover T x) : LocalOrbitCover T x
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCover.toGlobal`**, a def, [line 905](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L905).
+**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCover.toGlobal`**, a def, [line 905](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L905).
 
 > Glues a local orbit cover into a single global analytic orbit, choosing at each time the
 > chart that covers it.
@@ -402,7 +402,7 @@ noncomputable def LocalOrbitCover.toGlobal {T : H →ₗ.[ℂ] H} {x : H}
     (C : LocalOrbitCover T x) : GlobalAnalyticOrbit T x
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCoreCover.toGlobal`**, a def, [line 964](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L964).
+**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCoreCover.toGlobal`**, a def, [line 964](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L964).
 
 > Glues a core cover into a single global analytic orbit, via its underlying `LocalOrbitCover`.
 
@@ -411,21 +411,21 @@ noncomputable def LocalOrbitCoreCover.toGlobal {T : H →ₗ.[ℂ] H} {x : H}
     (C : LocalOrbitCoreCover T x) : GlobalAnalyticOrbit T x
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCoreCover.toGlobal_nonempty`**, a lemma, [line 969](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L969).
+**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCoreCover.toGlobal_nonempty`**, a lemma, [line 969](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L969).
 
 ```lean
 lemma LocalOrbitCoreCover.toGlobal_nonempty {T : H →ₗ.[ℂ] H} {x : H}
     (C : LocalOrbitCoreCover T x) : Nonempty (GlobalAnalyticOrbit T x)
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCover.toGlobal_nonempty`**, a lemma, [line 974](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L974).
+**`LinearPMap.GlobalAnalyticOrbit.LocalOrbitCover.toGlobal_nonempty`**, a lemma, [line 974](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L974).
 
 ```lean
 lemma LocalOrbitCover.toGlobal_nonempty {T : H →ₗ.[ℂ] H} {x : H}
     (C : LocalOrbitCover T x) : Nonempty (GlobalAnalyticOrbit T x)
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.of_closure`**, a lemma, [line 982](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L982).
+**`LinearPMap.GlobalAnalyticOrbit.of_closure`**, a lemma, [line 982](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L982).
 
 > A global orbit for the closure of a closable operator is also a global orbit for the original
 > operator.  The only issue is the dependent domain proof in the differential equation; the closed
@@ -436,7 +436,7 @@ lemma of_closure {T : H →ₗ.[ℂ] H} {x : H} (hT : T.IsClosable)
     (U : GlobalAnalyticOrbit T.closure x) : Nonempty (GlobalAnalyticOrbit T x)
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.inner_deficiency_eq_zero`**, a lemma, [line 1011](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L1011).
+**`LinearPMap.GlobalAnalyticOrbit.inner_deficiency_eq_zero`**, a lemma, [line 1011](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L1011).
 
 ```lean
 lemma inner_deficiency_eq_zero
@@ -445,7 +445,7 @@ lemma inner_deficiency_eq_zero
     ⟪y, x⟫_ℂ = 0
 ```
 
-**`LinearPMap.GlobalAnalyticOrbit.inner_deficiency_eq_zero_neg`**, a lemma, [line 1091](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L1091).
+**`LinearPMap.GlobalAnalyticOrbit.inner_deficiency_eq_zero_neg`**, a lemma, [line 1091](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean#L1091).
 
 ```lean
 lemma inner_deficiency_eq_zero_neg
@@ -460,4 +460,4 @@ lemma inner_deficiency_eq_zero_neg
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean)

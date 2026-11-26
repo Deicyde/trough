@@ -8,11 +8,11 @@ proof: formalized
 
 # Physlib.Meta.Informal.Post
 
-The module `Physlib.Meta.Informal.Post`, [Physlib/Meta/Informal/Post.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/Post.lean): 9 declarations, 9 with a docstring.
+The module `Physlib.Meta.Informal.Post`, [Physlib/Meta/Informal/Post.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Informal/Post.lean): 9 declarations, 9 with a docstring.
 
 ## Informal definitions and lemmas
 
-**`Informal.isInformal`**, a def, [line 23](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/Post.lean#L23).
+**`Informal.isInformal`**, a def, [line 23](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Informal/Post.lean#L23).
 
 > Is true if and only if a `ConstantInfo` corresponds to an `InformalLemma` or a
 > `InformalDefinition`.
@@ -21,7 +21,7 @@ The module `Physlib.Meta.Informal.Post`, [Physlib/Meta/Informal/Post.lean](https
 def isInformal : ConstantInfo → Bool
 ```
 
-**`Informal.isInformalLemma`**, a def, [line 28](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/Post.lean#L28).
+**`Informal.isInformalLemma`**, a def, [line 28](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Informal/Post.lean#L28).
 
 > Is true if and only if a `ConstantInfo` corresponds to an `InformalLemma`.
 
@@ -29,7 +29,7 @@ def isInformal : ConstantInfo → Bool
 def isInformalLemma : ConstantInfo → Bool
 ```
 
-**`Informal.isInformalDef`**, a def, [line 33](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/Post.lean#L33).
+**`Informal.isInformalDef`**, a def, [line 33](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Informal/Post.lean#L33).
 
 > Is true if and only if a `ConstantInfo` corresponds to an `InformalDefinition`.
 
@@ -37,7 +37,7 @@ def isInformalLemma : ConstantInfo → Bool
 def isInformalDef : ConstantInfo → Bool
 ```
 
-**`Informal.constantInfoToInformalLemma`**, a def, [line 39](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/Post.lean#L39).
+**`Informal.constantInfoToInformalLemma`**, a def, [line 39](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Informal/Post.lean#L39).
 
 > Takes a `ConstantInfo` corresponding to a `InformalLemma` and returns
 > the corresponding `InformalLemma`.
@@ -46,7 +46,7 @@ def isInformalDef : ConstantInfo → Bool
 unsafe def constantInfoToInformalLemma (c : ConstantInfo) : CoreM InformalLemma
 ```
 
-**`Informal.constantInfoToInformalDefinition`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/Post.lean#L46).
+**`Informal.constantInfoToInformalDefinition`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Informal/Post.lean#L46).
 
 > Takes a `ConstantInfo` corresponding to a `InformalDefinition` and returns
 > the corresponding `InformalDefinition`.
@@ -55,7 +55,7 @@ unsafe def constantInfoToInformalLemma (c : ConstantInfo) : CoreM InformalLemma
 unsafe def constantInfoToInformalDefinition (c : ConstantInfo) : CoreM InformalDefinition
 ```
 
-**`Informal.getTag`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/Post.lean#L53).
+**`Informal.getTag`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Informal/Post.lean#L53).
 
 > Gets the tag associated with an informal definition or lemma.
 
@@ -63,7 +63,7 @@ unsafe def constantInfoToInformalDefinition (c : ConstantInfo) : CoreM InformalD
 unsafe def getTag (c : ConstantInfo) : CoreM String
 ```
 
-**`Physlib.noInformalLemmas`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/Post.lean#L68).
+**`Physlib.noInformalLemmas`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Informal/Post.lean#L68).
 
 > The number of informal lemmas in Physlib.
 
@@ -71,7 +71,7 @@ unsafe def getTag (c : ConstantInfo) : CoreM String
 def noInformalLemmas : CoreM Nat
 ```
 
-**`Physlib.noInformalDefs`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/Post.lean#L74).
+**`Physlib.noInformalDefs`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Informal/Post.lean#L74).
 
 > The number of informal definitions in Physlib.
 
@@ -79,7 +79,7 @@ def noInformalLemmas : CoreM Nat
 def noInformalDefs : CoreM Nat
 ```
 
-**`Physlib.AllInformal`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/Post.lean#L80).
+**`Physlib.AllInformal`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Informal/Post.lean#L80).
 
 > All informal results.
 
@@ -94,4 +94,4 @@ def AllInformal : CoreM (Array ConstantInfo)
 
 ## Sources
 
-- [Physlib/Meta/Informal/Post.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/Post.lean)
+- [Physlib/Meta/Informal/Post.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Informal/Post.lean)

@@ -1,8 +1,8 @@
 # Pendulum
 
-The folder [Physlib/ClassicalMechanics/Pendulum/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum): 1 module, with an article; then 1 folder below it, a page each, 12 modules in all.
+The folder [Physlib/ClassicalMechanics/Pendulum/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum): 1 module, with an article; then 1 folder below it, a page each, 12 modules in all.
 
-The repository's API map for this folder, *Configuration space for pendulum* ([Physlib/ClassicalMechanics/Pendulum/API-map.md](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
+The repository's API map for this folder, *Configuration space for pendulum* ([Physlib/ClassicalMechanics/Pendulum/API-map.md](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Pendulum/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
 
 *Content (Alpha)*
 

@@ -8,9 +8,9 @@ proof: formalized
 
 # QuantumInfo.States.Mixed.TraceDistance
 
-The module `QuantumInfo.States.Mixed.TraceDistance`, [QuantumInfo/States/Mixed/TraceDistance.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/TraceDistance.lean): 6 declarations, 4 with a docstring, 2 listed as significant.
+The module `QuantumInfo.States.Mixed.TraceDistance`, [QuantumInfo/States/Mixed/TraceDistance.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/States/Mixed/TraceDistance.lean): 6 declarations, 4 with a docstring, 2 listed as significant.
 
-**`TrDistance`**, a def, [line 24](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/TraceDistance.lean#L24).
+**`TrDistance`**, a def, [line 24](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/States/Mixed/TraceDistance.lean#L24).
 
 > The trace distance between two quantum states: half the trace norm of the difference (ρ - σ).
 
@@ -18,19 +18,19 @@ The module `QuantumInfo.States.Mixed.TraceDistance`, [QuantumInfo/States/Mixed/T
 def TrDistance (ρ σ : MState d) : ℝ
 ```
 
-**`TrDistance.ge_zero`**, a lemma, [line 31](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/TraceDistance.lean#L31).
+**`TrDistance.ge_zero`**, a lemma, [line 31](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/States/Mixed/TraceDistance.lean#L31).
 
 ```lean
 lemma ge_zero : 0 ≤ TrDistance ρ σ
 ```
 
-**`TrDistance.le_one`**, a lemma, [line 35](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/TraceDistance.lean#L35).
+**`TrDistance.le_one`**, a lemma, [line 35](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/States/Mixed/TraceDistance.lean#L35).
 
 ```lean
 lemma le_one : TrDistance ρ σ ≤ 1
 ```
 
-**`TrDistance.prob`**, a def, [line 42](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/TraceDistance.lean#L42).
+**`TrDistance.prob`**, a def, [line 42](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/States/Mixed/TraceDistance.lean#L42).
 
 > The trace distance, as a `Prob` probability with value between 0 and 1.
 
@@ -38,7 +38,7 @@ lemma le_one : TrDistance ρ σ ≤ 1
 def prob : Prob
 ```
 
-**`TrDistance.symm`**, a theorem, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/TraceDistance.lean#L46). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`TrDistance.symm`**, a theorem, [line 46](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/States/Mixed/TraceDistance.lean#L46). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The trace distance is a symmetric quantity.
 
@@ -46,7 +46,7 @@ def prob : Prob
 theorem symm : TrDistance ρ σ = TrDistance σ ρ
 ```
 
-**`TrDistance.eq_abs_eigenvalues`**, a theorem, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/TraceDistance.lean#L51). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`TrDistance.eq_abs_eigenvalues`**, a theorem, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/States/Mixed/TraceDistance.lean#L51). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The trace distance is equal to half the 1-norm of the eigenvalues of their difference .
 
@@ -61,4 +61,4 @@ theorem eq_abs_eigenvalues : TrDistance ρ σ = (1/2:ℝ) *
 
 ## Sources
 
-- [QuantumInfo/States/Mixed/TraceDistance.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Mixed/TraceDistance.lean)
+- [QuantumInfo/States/Mixed/TraceDistance.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/States/Mixed/TraceDistance.lean)

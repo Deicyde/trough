@@ -8,9 +8,9 @@ proof: formalized
 
 # Filters of lists of CrAnFieldOp
 
-The module `Physlib.QFT.PerturbationTheory.FieldSpecification.Filters`, [Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean): 12 declarations, 2 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.FieldSpecification.Filters`, [Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean): 12 declarations, 2 with a docstring.
 
-**`FieldSpecification.createFilter`**, a def, [line 24](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L24).
+**`FieldSpecification.createFilter`**, a def, [line 24](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L24).
 
 > Given a list of creation and annihilation states, the filtered list only containing
 > the creation states. As a schematic example, for the list:
@@ -20,7 +20,7 @@ The module `Physlib.QFT.PerturbationTheory.FieldSpecification.Filters`, [Physlib
 def createFilter (φs : List 𝓕.CrAnFieldOp) : List 𝓕.CrAnFieldOp
 ```
 
-**`FieldSpecification.createFilter_cons_create`**, a lemma, [line 27](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L27).
+**`FieldSpecification.createFilter_cons_create`**, a lemma, [line 27](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L27).
 
 ```lean
 lemma createFilter_cons_create {φ : 𝓕.CrAnFieldOp}
@@ -28,7 +28,7 @@ lemma createFilter_cons_create {φ : 𝓕.CrAnFieldOp}
     createFilter (φ :: φs) = φ :: createFilter φs
 ```
 
-**`FieldSpecification.createFilter_cons_annihilate`**, a lemma, [line 34](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L34).
+**`FieldSpecification.createFilter_cons_annihilate`**, a lemma, [line 34](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L34).
 
 ```lean
 lemma createFilter_cons_annihilate {φ : 𝓕.CrAnFieldOp}
@@ -36,14 +36,14 @@ lemma createFilter_cons_annihilate {φ : 𝓕.CrAnFieldOp}
     createFilter (φ :: φs) = createFilter φs
 ```
 
-**`FieldSpecification.createFilter_append`**, a lemma, [line 41](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L41).
+**`FieldSpecification.createFilter_append`**, a lemma, [line 41](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L41).
 
 ```lean
 lemma createFilter_append (φs φs' : List 𝓕.CrAnFieldOp) :
     createFilter (φs ++ φs') = createFilter φs ++ createFilter φs'
 ```
 
-**`FieldSpecification.createFilter_singleton_create`**, a lemma, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L46).
+**`FieldSpecification.createFilter_singleton_create`**, a lemma, [line 46](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L46).
 
 ```lean
 lemma createFilter_singleton_create (φ : 𝓕.CrAnFieldOp)
@@ -51,14 +51,14 @@ lemma createFilter_singleton_create (φ : 𝓕.CrAnFieldOp)
     createFilter [φ] = [φ]
 ```
 
-**`FieldSpecification.createFilter_singleton_annihilate`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L51).
+**`FieldSpecification.createFilter_singleton_annihilate`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L51).
 
 ```lean
 lemma createFilter_singleton_annihilate (φ : 𝓕.CrAnFieldOp)
     (hφ : 𝓕 |>ᶜ φ = CreateAnnihilate.annihilate) : createFilter [φ] = []
 ```
 
-**`FieldSpecification.annihilateFilter`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L60).
+**`FieldSpecification.annihilateFilter`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L60).
 
 > Given a list of creation and annihilation states, the filtered list only containing
 > the annihilation states.
@@ -69,7 +69,7 @@ lemma createFilter_singleton_annihilate (φ : 𝓕.CrAnFieldOp)
 def annihilateFilter (φs : List 𝓕.CrAnFieldOp) : List 𝓕.CrAnFieldOp
 ```
 
-**`FieldSpecification.annihilateFilter_cons_create`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L63).
+**`FieldSpecification.annihilateFilter_cons_create`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L63).
 
 ```lean
 lemma annihilateFilter_cons_create {φ : 𝓕.CrAnFieldOp}
@@ -77,7 +77,7 @@ lemma annihilateFilter_cons_create {φ : 𝓕.CrAnFieldOp}
     annihilateFilter (φ :: φs) = annihilateFilter φs
 ```
 
-**`FieldSpecification.annihilateFilter_cons_annihilate`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L70).
+**`FieldSpecification.annihilateFilter_cons_annihilate`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L70).
 
 ```lean
 lemma annihilateFilter_cons_annihilate {φ : 𝓕.CrAnFieldOp}
@@ -85,14 +85,14 @@ lemma annihilateFilter_cons_annihilate {φ : 𝓕.CrAnFieldOp}
     annihilateFilter (φ :: φs) = φ :: annihilateFilter φs
 ```
 
-**`FieldSpecification.annihilateFilter_append`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L77).
+**`FieldSpecification.annihilateFilter_append`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L77).
 
 ```lean
 lemma annihilateFilter_append (φs φs' : List 𝓕.CrAnFieldOp) :
     annihilateFilter (φs ++ φs') = annihilateFilter φs ++ annihilateFilter φs'
 ```
 
-**`FieldSpecification.annihilateFilter_singleton_create`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L82).
+**`FieldSpecification.annihilateFilter_singleton_create`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L82).
 
 ```lean
 lemma annihilateFilter_singleton_create (φ : 𝓕.CrAnFieldOp)
@@ -100,7 +100,7 @@ lemma annihilateFilter_singleton_create (φ : 𝓕.CrAnFieldOp)
     annihilateFilter [φ] = []
 ```
 
-**`FieldSpecification.annihilateFilter_singleton_annihilate`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L87).
+**`FieldSpecification.annihilateFilter_singleton_annihilate`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean#L87).
 
 ```lean
 lemma annihilateFilter_singleton_annihilate (φ : 𝓕.CrAnFieldOp)
@@ -114,4 +114,4 @@ lemma annihilateFilter_singleton_annihilate (φ : 𝓕.CrAnFieldOp)
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean)
+- [Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean)

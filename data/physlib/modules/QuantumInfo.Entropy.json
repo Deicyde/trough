@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
  "modules": [
   {
    "file": "QuantumInfo/Entropy/DPI.lean",
@@ -1197,7 +1197,7 @@
     {
      "name": "Sᵥₙ_wm",
      "kind": "lemma",
-     "line": 1055,
+     "line": 1057,
      "doc": "Weak monotonicity, version with partial traces.",
      "statement": "lemma Sᵥₙ_wm (ρ : MState (d₁ × d₂ × d₃)) :\n    Sᵥₙ ρ.traceRight + Sᵥₙ ρ.traceLeft.traceLeft ≤\n    Sᵥₙ ρ.assoc'.traceRight + Sᵥₙ ρ.traceLeft",
      "sorry": false
@@ -1205,7 +1205,7 @@
     {
      "name": "Sᵥₙ_strong_subadditivity",
      "kind": "theorem",
-     "line": 1189,
+     "line": 1191,
      "doc": "Strong subadditivity on a tripartite system",
      "statement": "theorem Sᵥₙ_strong_subadditivity (ρ₁₂₃ : MState (d₁ × d₂ × d₃)) :\n    let ρ₁₂ := ρ₁₂₃.assoc'.traceRight;\n    let ρ₂₃ := ρ₁₂₃.traceLeft;\n    let ρ₂ := ρ₁₂₃.traceLeft.traceRight;\n    Sᵥₙ ρ₁₂₃ + Sᵥₙ ρ₂ ≤ Sᵥₙ ρ₁₂ + Sᵥₙ ρ₂₃",
      "sorry": false
@@ -1213,7 +1213,7 @@
     {
      "name": "Sᵥₙ_subadditivity",
      "kind": "theorem",
-     "line": 1201,
+     "line": 1203,
      "doc": "\"Ordinary\" subadditivity of von Neumann entropy",
      "statement": "theorem Sᵥₙ_subadditivity (ρ : MState (d₁ × d₂)) :\n    Sᵥₙ ρ ≤ Sᵥₙ ρ.traceRight + Sᵥₙ ρ.traceLeft",
      "sorry": false
@@ -1221,7 +1221,7 @@
     {
      "name": "Sᵥₙ_pure_tripartite_triangle",
      "kind": "theorem",
-     "line": 1214,
+     "line": 1216,
      "doc": "Triangle inequality for pure tripartite states: S(A) ≤ S(B) + S(C).",
      "statement": "theorem Sᵥₙ_pure_tripartite_triangle (ψ : Ket ((d₁ × d₂) × d₃)) :\n    Sᵥₙ (MState.pure ψ).traceRight.traceRight ≤\n    Sᵥₙ (MState.pure ψ).traceRight.traceLeft + Sᵥₙ (MState.pure ψ).traceLeft",
      "sorry": false
@@ -1229,7 +1229,7 @@
     {
      "name": "Sᵥₙ_triangle_ineq_one_way",
      "kind": "theorem",
-     "line": 1224,
+     "line": 1226,
      "doc": "One direction of the Araki-Lieb triangle inequality: S(A) ≤ S(B) + S(AB).",
      "statement": "theorem Sᵥₙ_triangle_ineq_one_way (ρ : MState (d₁ × d₂)) : Sᵥₙ ρ.traceRight ≤ Sᵥₙ ρ.traceLeft + Sᵥₙ ρ",
      "sorry": false
@@ -1237,7 +1237,7 @@
     {
      "name": "Sᵥₙ_triangle_subaddivity",
      "kind": "theorem",
-     "line": 1230,
+     "line": 1232,
      "doc": "Araki-Lieb triangle inequality on von Neumann entropy",
      "statement": "theorem Sᵥₙ_triangle_subaddivity (ρ : MState (d₁ × d₂)) :\n    abs (Sᵥₙ ρ.traceRight - Sᵥₙ ρ.traceLeft) ≤ Sᵥₙ ρ",
      "sorry": false
@@ -1245,7 +1245,7 @@
     {
      "name": "Sᵥₙ_weak_monotonicity",
      "kind": "theorem",
-     "line": 1241,
+     "line": 1243,
      "doc": "Weak monotonicity of quantum conditional entropy: S(A|B) + S(A|C) ≥ 0.",
      "statement": "theorem Sᵥₙ_weak_monotonicity (ρ : MState (dA × dB × dC)) :\n    let ρAB := ρ.assoc'.traceRight\n    let ρAC := ρ.SWAP.assoc.traceLeft.SWAP\n    0 ≤ qConditionalEnt ρAB + qConditionalEnt ρAC",
      "sorry": false
@@ -1253,7 +1253,7 @@
     {
      "name": "qConditionalEnt_strong_subadditivity",
      "kind": "theorem",
-     "line": 1255,
+     "line": 1257,
      "doc": "Strong subadditivity, stated in terms of conditional entropies.\nAlso called the data processing inequality. H(A|BC) ≤ H(A|B).",
      "statement": "theorem qConditionalEnt_strong_subadditivity (ρ₁₂₃ : MState (d₁ × d₂ × d₃)) :\n    qConditionalEnt ρ₁₂₃ ≤ qConditionalEnt ρ₁₂₃.assoc'.traceRight",
      "sorry": false
@@ -1261,7 +1261,7 @@
     {
      "name": "qMutualInfo_strong_subadditivity",
      "kind": "theorem",
-     "line": 1264,
+     "line": 1266,
      "doc": "Strong subadditivity, stated in terms of quantum mutual information.\nI(A;BC) ≥ I(A;B).",
      "statement": "theorem qMutualInfo_strong_subadditivity (ρ₁₂₃ : MState (d₁ × d₂ × d₃)) :\n    qMutualInfo ρ₁₂₃ ≥ qMutualInfo ρ₁₂₃.assoc'.traceRight",
      "sorry": false
@@ -1269,7 +1269,7 @@
     {
      "name": "qcmi_nonneg",
      "kind": "theorem",
-     "line": 1272,
+     "line": 1274,
      "doc": "The quantum conditional mutual information `QCMI` is nonnegative.",
      "statement": "theorem qcmi_nonneg (ρ : MState (dA × dB × dC)) :\n    0 ≤ qcmi ρ",
      "sorry": false
@@ -1277,7 +1277,7 @@
     {
      "name": "qcmi_le_2_log_dim",
      "kind": "theorem",
-     "line": 1279,
+     "line": 1281,
      "doc": "The quantum conditional mutual information `QCMI ρABC` is at most 2 log dA.",
      "statement": "theorem qcmi_le_2_log_dim (ρ : MState (dA × dB × dC)) :\n    qcmi ρ ≤ 2 * Real.log (Fintype.card dA)",
      "sorry": false
@@ -1285,7 +1285,7 @@
     {
      "name": "qcmi_le_2_log_dim'",
      "kind": "theorem",
-     "line": 1286,
+     "line": 1288,
      "doc": "The quantum conditional mutual information `QCMI ρABC` is at most 2 log dC.",
      "statement": "theorem qcmi_le_2_log_dim' (ρ : MState (dA × dB × dC)) :\n    qcmi ρ ≤ 2 * Real.log (Fintype.card dC)",
      "sorry": false

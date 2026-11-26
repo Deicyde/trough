@@ -8,7 +8,7 @@ proof: formalized
 
 # Products of Hilbert–Schmidt operators
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.GeneralProduct`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean): 6 declarations, 6 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.GeneralProduct`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean): 6 declarations, 6 with a docstring.
 
 > Products of Hilbert–Schmidt operators are trace class; trace class is a ⋆-closed ideal.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.GeneralProd
 
 ## A. Products of Hilbert–Schmidt operators
 
-**`PhyslibAlpha.ProbabilisticTheory.diagonal_star_mul_eq_inner`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean#L61).
+**`PhyslibAlpha.ProbabilisticTheory.diagonal_star_mul_eq_inner`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean#L61).
 
 > The diagonal of `star W * (R * S)` (for any contraction `W`) unwinds to a Hilbert–Schmidt
 > Cauchy–Schwarz pairing. This is the pointwise identity feeding both the master product theorem and
@@ -44,7 +44,7 @@ lemma diagonal_star_mul_eq_inner {R S W : H →L[ℂ] H} {w : Set H} (b : Hilber
     ⟪b i, (star W * (R * S)) (b i)⟫_ℂ = ⟪(ContinuousLinearMap.adjoint R * W) (b i), S (b i)⟫_ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_mul_of_isHilbertSchmidt`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean#L71).
+**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_mul_of_isHilbertSchmidt`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean#L71).
 
 > **A product of two Hilbert–Schmidt operators is trace class.**
 
@@ -53,7 +53,7 @@ lemma isTraceClass_mul_of_isHilbertSchmidt {R S : H →L[ℂ] H}
     (hR : IsHilbertSchmidt R) (hS : IsHilbertSchmidt S) : IsTraceClass (R * S)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.isHilbertSchmidt_polarFactor_mul_sqrt_abs_and_sqrt_abs`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean#L106).
+**`PhyslibAlpha.ProbabilisticTheory.isHilbertSchmidt_polarFactor_mul_sqrt_abs_and_sqrt_abs`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean#L106).
 
 > Every trace-class operator factors as a product of two Hilbert–Schmidt operators: the polar
 > factor composed with the Hilbert–Schmidt square root of `|T|`, and that same square root again.
@@ -68,7 +68,7 @@ lemma isHilbertSchmidt_polarFactor_mul_sqrt_abs_and_sqrt_abs {T : H →L[ℂ] H}
 
 ## B. Closure properties of trace class
 
-**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_add`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean#L125).
+**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_add`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean#L125).
 
 > Trace-class operators are closed under addition.
 
@@ -77,7 +77,7 @@ lemma isTraceClass_add {T T' : H →L[ℂ] H} (hT : IsTraceClass T) (hT' : IsTra
     IsTraceClass (T + T')
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_mul_mul`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean#L186).
+**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_mul_mul`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean#L186).
 
 > **Trace-class operators form a two-sided ideal**: `A T B` is trace class for trace-class `T` and
 > bounded `A`, `B`.
@@ -87,7 +87,7 @@ lemma isTraceClass_mul_mul {A B T : H →L[ℂ] H} (hT : IsTraceClass T) :
     IsTraceClass (A * T * B)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_star`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean#L201).
+**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_star`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean#L201).
 
 > Taking the adjoint preserves trace class.
 
@@ -106,4 +106,4 @@ lemma isTraceClass_star {T : H →L[ℂ] H} (hT : IsTraceClass T) : IsTraceClass
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean)

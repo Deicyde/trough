@@ -8,7 +8,7 @@ proof: formalized
 
 # Semiformal results
 
-The module `Physlib.Meta.Informal.SemiFormal`, [Physlib/Meta/Informal/SemiFormal.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/SemiFormal.lean): 3 declarations, 3 with a docstring.
+The module `Physlib.Meta.Informal.SemiFormal`, [Physlib/Meta/Informal/SemiFormal.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Informal/SemiFormal.lean): 3 declarations, 3 with a docstring.
 
 > Semiformal results sit in between informal and formal results. There type or proposition is
 > defined, by the proof or definition is not.
@@ -19,7 +19,7 @@ The module `Physlib.Meta.Informal.SemiFormal`, [Physlib/Meta/Informal/SemiFormal
 > Released under the Apache 2.0 license, copyright 2023 Lean FRO, authored by
 > David Thrane Christiansen.
 
-**`WantedInfo`**, a structure, [line 31](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/SemiFormal.lean#L31).
+**`WantedInfo`**, a structure, [line 31](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Informal/SemiFormal.lean#L31).
 
 > The information from a `TODO ...` command.
 
@@ -37,7 +37,7 @@ structure WantedInfo where
   tag : String
 ```
 
-**`«semiformal_result»`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/SemiFormal.lean#L61).
+**`«semiformal_result»`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Informal/SemiFormal.lean#L61).
 
 > A semiformal result is either a
 > - definition in which the type is given but not the definition.
@@ -53,7 +53,7 @@ structure WantedInfo where
 meta def «semiformal_result»
 ```
 
-**`elabLemmaWanted`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/SemiFormal.lean#L66).
+**`elabLemmaWanted`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Informal/SemiFormal.lean#L66).
 
 > The elaborator for semiformal results.
 
@@ -67,4 +67,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Meta/Informal/SemiFormal.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/SemiFormal.lean)
+- [Physlib/Meta/Informal/SemiFormal.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Informal/SemiFormal.lean)

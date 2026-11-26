@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
  "api_maps": [
   {
    "file": "Physlib/ClassicalFieldTheory/GaugeTheory/API-map.md",
@@ -242,6 +242,61 @@
    },
    "references": {
     "1": "Christian Bär, [Green-hyperbolic operators on globally hyperbolic spacetimes](https://arxiv.org/abs/1310.0738v2). Communications in Mathematical Physics 333, 1585–1615 (2015), Definition 3.1 and Theorems 3.8 and 3.22."
+   }
+  },
+  {
+   "file": "Physlib/ClassicalFieldTheory/KleinGordon/API-map.md",
+   "folder": "Physlib/ClassicalFieldTheory/KleinGordon",
+   "title": "Retarded propagation for the Klein–Gordon equation",
+   "content": [
+    {
+     "heading": "Content (Alpha)",
+     "text": "### The retarded field\n\nLet $f(t,x)$ be a smooth, compactly supported complex source on Minkowski spacetime with\nthree spatial dimensions and $c=1$. The retarded solution of\n$(\\partial_t^2-\\Delta+m^2)\\phi=f$ is obtained by propagating the source at each earlier\ntime $s$ for a duration $t-s$ and integrating over $s\\le t$. [1] Its support lies in\nthe causal future of the support of $f$. [2] The corresponding retarded and advanced\ninverses are described in the Green operators API map. {1}\n\n### The massless field on the light cone\n\nWrite $M_r g(x)$ for the average of $g(x+r n)$ over unit directions $n$, with the solid\nangle measure divided by $4\\pi$. [3] For $m=0$, the contribution from a source slice at\ntime $s$ is $(t-s)M_{t-s}f(s,\\cdot)(x)$. [4][5] Hence only source values at distance\n$t-s$ from $x$ enter that slice's contribution. Once the expanding sphere has passed the\nsupport of a slice, its contribution vanishes, as the strong Huygens principle predicts. [4]\n\n### The massive tail inside the cone\n\nFor $m>0$, each source slice contributes the same Kirchhoff term and an integral of\nspherical means over smaller radii. The formula gives the retarded field at $(t,x)$\nfor every smooth, compactly supported source. [6] In kernel notation, write $\\tau=t-s$\nfor the elapsed time, $r=|x-y|$ for the distance to the source point $y$, and\n$\\sigma=\\sqrt{\\tau^2-r^2}$ for the proper time inside the cone. The cone term is\n$\\delta(\\tau-r)/(4\\pi r)$. The interior term has density $-m J_1(m\\sigma)/(4\\pi\\sigma)$\nfor $0\\le r<\\tau$, where $J_1$ is the Bessel function of the first kind of order one.\n[6][7] {2}"
+    }
+   ],
+   "lean": {
+    "1": {
+     "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedSolution.lean",
+     "names": [
+      "solution_equation_at",
+      "solution_eq_integral"
+     ]
+    },
+    "2": {
+     "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FinitePropagation.lean",
+     "names": [
+      "tsupport_solution_subset"
+     ]
+    },
+    "3": {
+     "file": "PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean",
+     "names": [
+      "sphericalIntegral",
+      "sphericalMean"
+     ]
+    },
+    "5": {
+     "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean",
+     "names": [
+      "solution_zero_mass_three"
+     ]
+    },
+    "6": {
+     "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveSpace.lean",
+     "names": [
+      "solution_mass_three_besselJ1"
+     ]
+    },
+    "7": {
+     "file": "PhyslibAlpha/Mathematics/SpecialFunctions/SincPropagator/Bessel.lean",
+     "names": [
+      "besselJ1"
+     ]
+    }
+   },
+   "references": {
+    "1": "Green operators and the causal propagator API map — Physlib/ClassicalFieldTheory/GreenOperator/API-map.md",
+    "2": "P. Forgács and Á. Lukács, [Charge screening in the Abelian Higgs model](https://link.springer.com/article/10.1140/epjc/s10052-021-09022-x#Equ66). European Physical Journal C 81, 243 (2021), Appendix B, Eq. (66)."
    }
   },
   {
@@ -642,6 +697,68 @@
    }
   },
   {
+   "file": "Physlib/ClassicalMechanics/OrbitalMechanics/API-map.md",
+   "folder": "Physlib/ClassicalMechanics/OrbitalMechanics",
+   "title": "Orbital mechanics",
+   "content": [
+    {
+     "heading": "Content (Alpha)",
+     "text": "### System and configuration\n\nThe system is the gravitational constant G, the central mass M and the orbiting mass m, and a\nconfiguration is the orbital radius r. [1] The circular speed, the specific orbital energy and the\nescape speed use the gravitational parameter G M of the central body alone, the limit of a test\nbody with m ≪ M; the two-body period and the reflex motion use the total mass M + m. [1]\n\n### Circular orbits\n\nThe circular speed at radius r is √(G M / r), with square G M / r. [2] It equals the radius times\nthe circular angular rate √(G M / r³). [3]\n\n### The two-body period and the reflex motion\n\nThe period of a circular two-body orbit at separation r is 2π √(r³ / (G (M + m))), which satisfies\nKepler's third law P² G (M + m) = 4π² r³ {1}. [4] The central body circles the barycentre at\ndistance m r / (M + m), and its reflex speed, once round that circle per period, satisfies\nK³ = 2π G m³ / (P (M + m)²); for a star with a planet on an edge-on circular orbit this is the\nradial-velocity semi-amplitude {2}. [5]\n\n### Energy and the escape speed\n\nThe specific orbital energy at speed v and radius r is v² / 2 − G M / r, and on a circular orbit it\nis −(G M / r) / 2, half the potential energy per unit mass. [6] The escape speed √(2 G M / r) is\npositive, its square is 2 G M / r, and the specific orbital energy vanishes there. [7] It is √2\ntimes the circular speed at the same radius, so a body on a circular orbit moves more slowly than\nthe escape speed and is bound. [8]\n\n### General orbits\n\nOn an orbit of semi-major axis a the vis-viva equation gives v² = G M (2 / r − 1 / a) {1}. [TODO]\nThe two-body problem reduces to the motion of a single body of reduced mass M m / (M + m) in the\nrelative coordinate {1}. [TODO] In a planar binary, the relative displacement sweeps out equal\nsigned areas in equal times within a collision-free interval. Its areal rate is half the signed\nangular momentum per unit reduced mass. [9] Bound nonradial orbits are ellipses with the centre of\nforce at a focus, and their squared periods are proportional to a³ {1}. [TODO]"
+    }
+   ],
+   "lean": {
+    "1": {
+     "file": "Physlib/ClassicalMechanics/OrbitalMechanics/VisViva.lean",
+     "names": [
+      "VisViva",
+      "VisViva.ConfigurationSpace"
+     ]
+    },
+    "2": {
+     "file": "Physlib/ClassicalMechanics/OrbitalMechanics/VisViva.lean",
+     "names": [
+      "VisViva.speedCircular",
+      "VisViva.speedCircular_sq"
+     ]
+    },
+    "4": {
+     "file": "Physlib/ClassicalMechanics/OrbitalMechanics/VisViva.lean",
+     "names": [
+      "VisViva.periodTwoBody",
+      "VisViva.periodTwoBody_sq"
+     ]
+    },
+    "5": {
+     "file": "Physlib/ClassicalMechanics/OrbitalMechanics/VisViva.lean",
+     "names": [
+      "VisViva.reflexRadius",
+      "VisViva.reflexSpeed",
+      "VisViva.reflexSpeed_pow_three"
+     ]
+    },
+    "6": {
+     "file": "Physlib/ClassicalMechanics/OrbitalMechanics/VisViva.lean",
+     "names": [
+      "VisViva.specificOrbitalEnergy",
+      "VisViva.specificOrbitalEnergy_speedCircular"
+     ]
+    },
+    "7": {
+     "file": "Physlib/ClassicalMechanics/OrbitalMechanics/VisViva.lean",
+     "names": [
+      "VisViva.speedEscape",
+      "VisViva.speedEscape_sq",
+      "VisViva.speedEscape_pos",
+      "VisViva.specificOrbitalEnergy_speedEscape"
+     ]
+    }
+   },
+   "references": {
+    "1": "Landau & Lifshitz, *Mechanics*, 3rd ed., Sections 13 and 15.",
+    "2": "Perryman, *The Exoplanet Handbook*, 2nd ed., Chapter 2."
+   }
+  },
+  {
    "file": "Physlib/ClassicalMechanics/Pendulum/API-map.md",
    "folder": "Physlib/ClassicalMechanics/Pendulum",
    "title": "Configuration space for pendulum",
@@ -842,6 +959,44 @@
     "4": "Landau & Lifshitz, *Mechanics*, 3rd Edition, Chapter 7 (The canonical equations), Section 40 (Hamilton's equations).",
     "5": "Landau & Lifshitz, *Mechanics*, 3rd Edition, Chapter 5 (Small oscillations), Section 21 (Free oscillations in one dimension).",
     "6": "Landau & Lifshitz, *Mechanics*, 3rd Edition, Chapter 3 (Integration of the equations of motion), Section 11 (Motion in one dimension), Problem 1."
+   }
+  },
+  {
+   "file": "Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/API-map.md",
+   "folder": "Physlib/ClassicalMechanics/PointParticle/NewtonianSystem",
+   "title": "Newtonian systems of point particles",
+   "content": [
+    {
+     "heading": "Content (Alpha)",
+     "text": "### Particles and forces in an inertial frame\n\nA particle has a constant positive mass and a position that depends on time. In an inertial\nframe the position is twice differentiable. Its first derivative is the velocity and its\nsecond derivative is the acceleration. [1]\n\nA Newtonian system collects the particles and the forces acting on them in one inertial\nframe. Each force has a time-dependent vector value and a target particle. An internal force\nalso has a source particle distinct from its target. The net force on a particle is the sum\nof all internal and external forces on that target, counting each occurrence. [2][3]\n\nNewton's second law identifies this net force with the particle's mass times its acceleration.\nNewton's third law pairs each internal force with its reverse, which swaps the source and\ntarget and negates the force. The two occur with the same multiplicity, so the sum of all\ninternal forces vanishes at each time {1}. [2][4]\n\n### Total quantities and the center of mass\n\nSumming the particle masses gives the total mass M. Summing their momenta gives the total\nmomentum P(t), and summing their individual kinetic energies gives the total kinetic energy.\nThe net external force sums just the forces applied from outside the system. [5]\n\nFor positive M, the center of mass R(t) is the mass-weighted average of the particle positions\nand its velocity is R′(t) = P(t) / M. [6] If the collection of external forces is empty, the\ncenter of mass moves at constant velocity. Its position at any time t is\nR(t) = R(t₀) + (t − t₀) P(t₀) / M for any reference time t₀ {1}. [7]\n\n### An isolated binary star\n\nConsider two stars of masses m₀ and m₁ at positions x₀(t) and x₁(t), interacting only\nthrough gravity. The gravitational forces on the two stars are equal and opposite. [8]\nTheir center of mass R(t) = (m₀ x₀(t) + m₁ x₁(t)) / M, where M = m₀ + m₁, moves at\nconstant velocity because there are no external forces. [7][9] Let G be the gravitational constant and\nr(t) = x₁(t) − x₀(t) the relative displacement. Whenever r(t) ≠ 0, the relative motion\nsatisfies the inverse-square equation r″(t) = −G M r(t) / ‖r(t)‖³ {1}. [10]"
+    }
+   ],
+   "lean": {
+    "1": {
+     "file": "Physlib/ClassicalMechanics/PointParticle/Basic.lean",
+     "names": [
+      "Particle",
+      "velocity",
+      "acceleration"
+     ]
+    },
+    "3": {
+     "file": "Physlib/ClassicalMechanics/Force.lean",
+     "names": [
+      "Force",
+      "InternalForce",
+      "netForce"
+     ]
+    },
+    "4": {
+     "file": "Physlib/ClassicalMechanics/Force.lean",
+     "names": [
+      "InternalForce.reverse"
+     ]
+    }
+   },
+   "references": {
+    "1": "H. Goldstein, C. P. Poole and J. L. Safko, *Classical Mechanics*, 3rd ed., Addison-Wesley, 2002, §§1.2, 3.1 and 3.7."
    }
   },
   {
@@ -2003,13 +2158,13 @@
      ]
     },
     "7": {
-     "file": "Physlib/QuantumMechanics/Operators/Multiplication.lean",
+     "file": "Physlib/QuantumMechanics/Operators/SpaceD/Multiplication.lean",
      "names": [
       "mulOperator"
      ]
     },
     "8": {
-     "file": "Physlib/QuantumMechanics/Operators/Position.lean",
+     "file": "Physlib/QuantumMechanics/Operators/SpaceD/Position.lean",
      "names": [
       "positionOperator"
      ]
@@ -2064,7 +2219,7 @@
    ],
    "lean": {
     "1": {
-     "file": "Physlib/QuantumMechanics/Operators/Unbounded.lean",
+     "file": "Physlib/QuantumMechanics/Operators/Basic.lean",
      "names": [
       "HasDenseDomain",
       "IsUnbounded",
@@ -2073,14 +2228,14 @@
      ]
     },
     "2": {
-     "file": "Physlib/QuantumMechanics/Operators/Unbounded.lean",
+     "file": "Physlib/QuantumMechanics/Operators/Basic.lean",
      "names": [
       "IsSymmetric",
       "isSymmetric_iff_inner_map_self_real"
      ]
     },
     "3": {
-     "file": "Physlib/QuantumMechanics/Operators/Unbounded.lean",
+     "file": "Physlib/QuantumMechanics/Operators/Basic.lean",
      "names": [
       "IsSymmetric.isClosable",
       "IsSymmetric.closure",
@@ -2091,15 +2246,16 @@
      ]
     },
     "4": {
-     "file": "Physlib/QuantumMechanics/Operators/Unbounded.lean",
+     "file": "Physlib/QuantumMechanics/Operators/EssentiallySelfAdjoint.lean",
      "names": [
       "IsEssentiallySelfAdjoint",
       "IsEssentiallySelfAdjoint.isUnbounded",
-      "IsEssentiallySelfAdjoint.unique_self_adjoint_extension"
+      "IsEssentiallySelfAdjoint.unique_self_adjoint_extension",
+      "IsSymmetric.isEssentiallySelfAdjoint_iff"
      ]
     },
     "5": {
-     "file": "Physlib/QuantumMechanics/Operators/Unbounded.lean",
+     "file": "Physlib/QuantumMechanics/Operators/Basic.lean",
      "names": [
       "adjoint_smul",
       "adjoint_neg",
@@ -2112,15 +2268,14 @@
      ]
     },
     "6": {
-     "file": "Physlib/QuantumMechanics/Operators/Unbounded.lean",
+     "file": "Physlib/QuantumMechanics/Operators/Basic.lean",
      "names": [
       "IsSymmetric.isSelfAdjoint_of_range_eq_top",
-      "IsSymmetric.isSelfAdjoint_iff",
-      "IsSymmetric.isEssentiallySelfAdjoint_iff"
+      "IsSymmetric.isSelfAdjoint_iff"
      ]
     },
     "7": {
-     "file": "Physlib/QuantumMechanics/Operators/Unbounded.lean",
+     "file": "Physlib/QuantumMechanics/Operators/Basic.lean",
      "names": [
       "unitaryConj",
       "mem_unitaryConj_domain_iff",
@@ -2131,7 +2286,7 @@
      ]
     },
     "8": {
-     "file": "Physlib/QuantumMechanics/Operators/Multiplication.lean",
+     "file": "Physlib/QuantumMechanics/Operators/SpaceD/Multiplication.lean",
      "names": [
       "mulOperator",
       "notation 𝓜",
@@ -2141,7 +2296,7 @@
      ]
     },
     "9": {
-     "file": "Physlib/QuantumMechanics/Operators/Multiplication.lean",
+     "file": "Physlib/QuantumMechanics/Operators/SpaceD/Multiplication.lean",
      "names": [
       "mulOperator_domain_eq_top",
       "mulOperator_domain_antitone",
@@ -2150,7 +2305,7 @@
      ]
     },
     "10": {
-     "file": "Physlib/QuantumMechanics/Operators/Multiplication.lean",
+     "file": "Physlib/QuantumMechanics/Operators/SpaceD/Multiplication.lean",
      "names": [
       "mulOperator_adjoint_eq_conj",
       "mulOperator_isSelfAdjoint_ofReal",
@@ -2160,7 +2315,7 @@
      ]
     },
     "11": {
-     "file": "Physlib/QuantumMechanics/Operators/Multiplication.lean",
+     "file": "Physlib/QuantumMechanics/Operators/SpaceD/Multiplication.lean",
      "names": [
       "mulOperator_const_smul_eq",
       "mulOperator_add_ge",
@@ -2170,7 +2325,7 @@
      ]
     },
     "12": {
-     "file": "Physlib/QuantumMechanics/Operators/Position.lean",
+     "file": "Physlib/QuantumMechanics/Operators/SpaceD/Position.lean",
      "names": [
       "positionCLM",
       "notation 𝐱",
@@ -2184,7 +2339,7 @@
      ]
     },
     "13": {
-     "file": "Physlib/QuantumMechanics/Operators/Position.lean",
+     "file": "Physlib/QuantumMechanics/Operators/SpaceD/Position.lean",
      "names": [
       "radiusRegPowCLM",
       "notation 𝐫₀",
@@ -2201,7 +2356,7 @@
      ]
     },
     "14": {
-     "file": "Physlib/QuantumMechanics/Operators/Momentum.lean",
+     "file": "Physlib/QuantumMechanics/Operators/SpaceD/Momentum.lean",
      "names": [
       "momentumCLM",
       "notation 𝐩",
@@ -2250,7 +2405,7 @@
      ]
     },
     "18": {
-     "file": "Physlib/QuantumMechanics/Operators/AngularMomentum.lean",
+     "file": "Physlib/QuantumMechanics/Operators/SpaceD/AngularMomentum.lean",
      "names": [
       "angularMomentumCLM",
       "notation 𝐋",
@@ -2266,7 +2421,7 @@
      ]
     },
     "19": {
-     "file": "Physlib/QuantumMechanics/Operators/AngularMomentum.lean",
+     "file": "Physlib/QuantumMechanics/Operators/SpaceD/AngularMomentum.lean",
      "names": [
       "angularMomentum_commutation_position",
       "angularMomentum_commutation_momentum",
@@ -2274,7 +2429,7 @@
      ]
     },
     "20": {
-     "file": "Physlib/QuantumMechanics/Operators/AngularMomentum.lean",
+     "file": "Physlib/QuantumMechanics/Operators/SpaceD/AngularMomentum.lean",
      "names": [
       "angularMomentumSqr_commutation_angularMomentum",
       "angularMomentumSqr_commutation_momentumSqr",
@@ -2284,7 +2439,7 @@
      ]
     },
     "21": {
-     "file": "Physlib/QuantumMechanics/Operators/AngularMomentum.lean",
+     "file": "Physlib/QuantumMechanics/Operators/SpaceD/AngularMomentum.lean",
      "names": [
       "angularMomentumOperator",
       "angularMomentumOperator_domain_eq",
@@ -2298,7 +2453,7 @@
      ]
     },
     "22": {
-     "file": "Physlib/QuantumMechanics/Operators/AngularMomentum.lean",
+     "file": "Physlib/QuantumMechanics/Operators/SpaceD/AngularMomentum.lean",
      "names": [
       "angularMomentumSqOperator",
       "angularMomentumSqOperator_apply",
@@ -2312,7 +2467,7 @@
      ]
     },
     "23": {
-     "file": "Physlib/QuantumMechanics/Operators/AngularMomentum/DimThree.lean",
+     "file": "Physlib/QuantumMechanics/Operators/SpaceD/AngularMomentum/DimThree.lean",
      "names": [
       "angularMomentumDimThreeOperator",
       "angularMomentumDimThreeOperator_isSymmetric",
@@ -2327,7 +2482,7 @@
      ]
     },
     "24": {
-     "file": "Physlib/QuantumMechanics/Operators/AngularMomentum/DimThree.lean",
+     "file": "Physlib/QuantumMechanics/Operators/SpaceD/AngularMomentum/DimThree.lean",
      "names": [
       "angularMomentumRaisingCLM",
       "angularMomentumLoweringCLM",
@@ -2419,7 +2574,7 @@
    "content": [
     {
      "heading": "Content (Alpha)",
-     "text": "### Resolvent and spectrum\n\nA complex number z lies in the resolvent set of an operator T {1} when T - z has a bounded inverse,\nthe resolvent; the resolvent set is open, and for a closed operator it is exactly the set of z for\nwhich T - z is a bijection from the domain onto the space. [1] The spectrum is the complement of the\nresolvent set; it is closed, and splits into the point, residual and continuous spectra. [2]\nResolvents satisfy the two resolvent identities, relating resolvents at two points and of two\noperators. [3] The treatment follows the standard references of Hall {2}, Reed and Simon {3}, and\nSchmüdgen {4}.\n\n### Regularity domain and numerical range\n\nA point z is a point of regularity when T - z is bounded below. The regularity domain is open, the\ndeficiency subspace at z is the orthogonal complement of the range of T - z, and its dimension is\nthe defect number; for a closable operator it is constant on each connected component of the\nregularity domain. [4] The numerical range is the set of values of the pairing of a unit vector with\nits image; it is convex by the Toeplitz-Hausdorff theorem, and the exterior of its closure consists\nof points of regularity. [5]\n\n### Symmetric operators\n\nThe numerical range of a symmetric operator is real, and so is described by its projection to the\nreal axis. [6] Every point off the real axis is therefore a point of regularity, and the regularity\ndomain is connected when the operator is bounded above or below. [7] A symmetric operator whose\ndefect numbers at i and -i both vanish is essentially self-adjoint. [8] The eigenvalues of a\nsymmetric operator are real. [9]\n\n### Self-adjoint operators\n\nFor a self-adjoint operator the resolvent set and the regularity domain coincide, and every complex\nnumber with non-zero imaginary part lies in the resolvent set, with T - z onto. [10] The spectrum of\na self-adjoint operator lies in the real axis and its residual spectrum is empty. [11] Conjugation\nby a unitary preserves self-adjointness, so an observable keeps its status under a change of\nrepresentation. [12]\n\n### Spectral measures and the spectral theorem\n\nA spectral measure is a vector measure valued in the bounded operators whose values are star\nprojections and which sends the whole outcome space to the identity. [13] The projections of two\nmeasurable sets compose to the projection of their intersection, disjoint sets give orthogonal\nprojections, and all of them commute. [14]\n\nEvery self-adjoint operator is the integral of the identity against a spectral measure supported on\nits spectrum; equivalently, it is unitarily equivalent to multiplication by a real function on an L²\nspace. [TODO] The spectral theorem yields a functional calculus, and Stone's theorem gives the\nunitary time evolution generated by a self-adjoint Hamiltonian. [TODO] The spectrum of a\nmultiplication operator is the essential range of its multiplier. [TODO]"
+     "text": "### Resolvent and spectrum\n\nA complex number z lies in the resolvent set of an operator T {1} when T - z has a bounded inverse,\nthe resolvent; the resolvent set is open, and for a closed operator it is exactly the set of z for\nwhich T - z is a bijection from the domain onto the space. [1] The spectrum is the complement of the\nresolvent set; it is closed, and for a closed operator it is the union of the point, residual and\ncontinuous spectra. The point spectrum is the set of eigenvalues. [2]\nResolvents satisfy the two resolvent identities, relating resolvents at two points and of two\noperators. [3] The treatment follows the standard references of Hall {2}, Reed and Simon {3}, and\nSchmüdgen {4}.\n\n### Regularity domain and numerical range\n\nA point z is a point of regularity when T - z is bounded below. The regularity domain is open, the\ndeficiency subspace at z is the orthogonal complement of the range of T - z, and its dimension is\nthe defect number, which vanishes exactly when this range is dense; for a closable operator the\ndefect number is constant on each connected component of the regularity domain. [4] The numerical\nrange is the set of values of the pairing of a unit vector with its image; it is convex by the\nToeplitz-Hausdorff theorem, and the exterior of its closure consists of points of regularity. [5]\n\n### Symmetric operators\n\nThe numerical range of a symmetric operator is real, and so is described by its projection to the\nreal axis. [6] Every point off the real axis is therefore a point of regularity, and the regularity\ndomain is connected when the operator is bounded above or below. [7] The eigenvalues of a\nsymmetric operator are real. [8] A densely defined symmetric operator whose defect numbers at i\nand -i both vanish is essentially self-adjoint. This is the case when its eigenvectors span a\ndense subspace, since for z off the real axis the range of T - z contains every eigenvector, and\nis therefore dense. [9]\n\n### Self-adjoint operators\n\nFor a self-adjoint operator the resolvent set and the regularity domain coincide, and every complex\nnumber with non-zero imaginary part lies in the resolvent set, with T - z onto. [10] The spectrum of\na self-adjoint operator lies in the real axis and its residual spectrum is empty. [11] Conjugation\nby a unitary preserves self-adjointness, so an observable keeps its status under a change of\nrepresentation. [12]\n\n### Spectral measures and the spectral theorem\n\nA spectral measure is a vector measure valued in the bounded operators whose values are star\nprojections and which sends the whole outcome space to the identity. [13] The projections of two\nmeasurable sets compose to the projection of their intersection, disjoint sets give orthogonal\nprojections, and all of them commute. [14]\n\nEvery self-adjoint operator is the integral of the identity against a spectral measure supported on\nits spectrum; equivalently, it is unitarily equivalent to multiplication by a real function on an L²\nspace. [TODO] The spectral theorem yields a functional calculus, and Stone's theorem gives the\nunitary time evolution generated by a self-adjoint Hamiltonian. [TODO] The spectrum of a\nmultiplication operator is the essential range of its multiplier (the support of the pushforward\nof the measure); for a continuous multiplier it is the closure of the range. [15]"
     }
    ],
    "lean": {
@@ -2447,7 +2602,8 @@
       "residualSpectrum",
       "continuousSpectrum",
       "IsClosed.spectrum_eq",
-      "pointSpectrum_inter_residualSpectrum"
+      "pointSpectrum_inter_residualSpectrum",
+      "IsEigenvector.mem_pointSpectrum"
      ]
     },
     "3": {
@@ -2466,6 +2622,7 @@
       "deficiencySubspace",
       "defectNumber",
       "IsClosed.defectNumber_eq_zero_iff",
+      "defectNumber_eq_zero_iff_dense",
       "IsClosable.defectNumber_const",
       "IsClosable.closure_range_sub_eq_range_closure_sub"
      ]
@@ -2506,13 +2663,15 @@
     "8": {
      "file": "Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean",
      "names": [
-      "isEssentiallySelfAdjoint_of_defectNumber_eq_zero"
+      "pointSpectrum_real"
      ]
     },
     "9": {
      "file": "Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean",
      "names": [
-      "pointSpectrum_real"
+      "isEssentiallySelfAdjoint_of_defectNumber_eq_zero",
+      "mem_range_sub_of_apply_eq_of_im_ne_zero",
+      "isEssentiallySelfAdjoint_of_dense_span_eigenvectors"
      ]
     },
     "10": {
@@ -2552,6 +2711,14 @@
       "comp_of_disjoint",
       "comp_eq_of_inter",
       "commute"
+     ]
+    },
+    "15": {
+     "file": "Physlib/QuantumMechanics/Operators/SpectralTheory/Multiplication.lean",
+     "names": [
+      "mulOperator_spectrum_eq_support_map",
+      "mulOperator_spectrum_subset_support_map",
+      "mulOperator_spectrum_eq_closure_range"
      ]
     }
    },
@@ -4207,7 +4374,7 @@
    "content": [
     {
      "heading": "Content (Alpha)",
-     "text": "### Frames\n\nA reference frame records a time origin, together with an affine origin and a basis of displacements\nof space {1} at each time. [1] Its time origin converts a real time coordinate into an instant of\ntime {2}. [14] A frame can be built from the trajectories of a collection of reference points,\nprovided those points form an affine basis at every time: one point serves as the origin, and the\ndisplacements from it to the others serve as the basis. [2] The origin and basis of a frame built in\nthis way are exactly those points and displacements. [TODO]\n\nA frame may induce the same inner product on coordinates at every time, in which case it\nconserves its coordinate metric. [3] A frame may also have orthonormal axes at every time; such a\nframe conserves its coordinate metric, and typeclass inference knows this. [4]\n\n### Inertial frames\n\nA frame is inertial when its origin moves with constant velocity and its axes are the same at\nevery time, both measured against the affine structure that space itself supplies. [5] This is a\nrestriction on the observer rather than on whatever is being observed. An inertial frame's origin\nhas a definite constant velocity. [6] Over any elapsed time the origin is displaced by that\nelapsed time multiplied by this velocity. This velocity is uniquely determined by the displacement\nlaw, and the origin has an affine trajectory through its position at the frame's time origin. [15]\nAn inertial frame conserves its coordinate\nmetric, and typeclass inference knows this. [7]\n\nThe relative motion of two inertial frames is the boost, rotation and translation carrying one to\nthe other, and it induces a transformation law on measured components. [TODO] A frame whose\naxes are constant and whose origin moves with constant velocity relative to an inertial frame is\nitself inertial. [TODO]\n\n### Measured vector quantities\n\nA vector quantity measured by an observer, a relative position, a velocity, an acceleration, a\nforce, a momentum, is a list of components read off that observer's axes. These components have\na carrier of their own, equivalent to the tuples of coordinates. [8] They add and scale\ncomponentwise, inheriting the additive and scalar structure of their entries, regardless of which\nquantity they stand for; the physical dimension, units and transformation law belong to whatever\nsupplies the quantity. [9] The components carry a topology, a continuous linear equivalence with\ncoordinate tuples, and finite dimensionality. [11]\n\nThrough the frame's basis at a given time, such components name a geometric displacement in\nspace, as a linear and as a continuous linear map. [10] Lengths and angles are geometric facts\nabout that displacement rather than about the numbers. For a frame that conserves its coordinate\nmetric, the components carry a norm and an inner product pulled back through the frame basis from\ndisplacement space, so that a displacement keeps its length and its angles even when the axes are\nskew or unequally scaled. [12] In an orthonormal frame these reduce to the familiar Euclidean\nformulas: the sum of the squared components gives the squared length, and the sum of the\ncomponentwise products gives the inner product. [13]\n\nThe derivative of a trajectory expressed in a frame gives the velocity and acceleration that frame\nmeasures, as the time derivative of the coordinate components. [TODO]"
+     "text": "### Frames\n\nA reference frame records a time origin, together with an affine origin and a basis of displacements\nof space {1} at each time. [1] Its time origin converts a real time coordinate into an instant of\ntime {2}. [14] The spatial origin and each basis vector are smooth in time. [2]\n\nThe pairwise inner products of the basis vectors are constant in time: the axes may rotate,\nbut their lengths and the angles between them stay fixed. [3] A frame may also have orthonormal\naxes at every time. [4]\n\n### Inertial frames\n\nA frame is inertial when its origin moves with constant velocity and its axes are the same at\nevery time, both measured against the affine structure that space itself supplies. [5] This is a\nrestriction on the observer rather than on whatever is being observed. An inertial frame's origin\nhas a definite constant velocity. [6] Over any elapsed time the origin is displaced by that\nelapsed time multiplied by this velocity. [7]\n\nThe relative motion of two inertial frames is the boost, rotation and translation carrying one to\nthe other, and it induces a transformation law on measured components. [TODO] A frame whose\naxes are constant and whose origin moves with constant velocity relative to an inertial frame is\nitself inertial. Its velocity is the sum of the original frame velocity and the relative velocity,\nboth expressed in ambient space. [15]\n\n### Measured vector quantities\n\nA vector quantity measured by an observer, a relative position, a velocity, an acceleration, a\nforce, a momentum, is a list of components read off that observer's axes. These components have\na carrier of their own, equivalent to the tuples of coordinates. [8] They add and scale\ncomponentwise, inheriting the additive and scalar structure of their entries, regardless of which\nquantity they stand for; the physical dimension, units and transformation law belong to whatever\nsupplies the quantity. [9] The frame vectors form a finite-dimensional real vector space. [11]\n\nThrough the frame's basis at a given time, such components name a geometric displacement in\nspace by a linear isometry. [10] Lengths and angles are geometric facts\nabout that displacement rather than about the numbers. In every frame, the components carry\na norm and an inner product pulled back through the frame basis from\ndisplacement space, so that a displacement keeps its length and its angles even when the axes are\nskew or unequally scaled. [12] In an orthonormal frame these reduce to the familiar Euclidean\nformulas: the sum of the squared components gives the squared length, and the sum of the\ncomponentwise products gives the inner product. [13]\n\nThe derivative of a trajectory expressed in a frame gives the velocity and acceleration that frame\nmeasures, as the time derivative of the coordinate components. [TODO]"
     }
    ],
    "lean": {
@@ -4223,29 +4390,28 @@
     "2": {
      "file": "Physlib/SpaceAndTime/ReferenceFrame.lean",
      "names": [
-      "ReferenceFrame.fromReferencePoints"
+      "ReferenceFrame.origin_smooth",
+      "ReferenceFrame.basis_smooth"
      ]
     },
     "3": {
      "file": "Physlib/SpaceAndTime/ReferenceFrame.lean",
      "names": [
-      "ReferenceFrame.IsMetricConserved"
+      "ReferenceFrame.gram_matrix_constant"
      ]
     },
     "4": {
      "file": "Physlib/SpaceAndTime/ReferenceFrame.lean",
      "names": [
-      "ReferenceFrame.Orthonormal",
-      "Orthonormal.isMetricConserved",
-      "Fact frame.IsMetricConserved"
+      "ReferenceFrame.Orthonormal"
      ]
     },
     "5": {
      "file": "Physlib/SpaceAndTime/ReferenceFrame.lean",
      "names": [
       "ReferenceFrame.IsInertial",
-      "origin_moves_uniformly",
-      "basis_conserved"
+      "IsInertial.velocity_constant",
+      "IsInertial.basis_constant"
      ]
     },
     "6": {
@@ -4257,8 +4423,7 @@
     "7": {
      "file": "Physlib/SpaceAndTime/ReferenceFrame.lean",
      "names": [
-      "IsInertial.isMetricConserved",
-      "Fact frame.IsMetricConserved"
+      "IsInertial.origin_vsub_eq"
      ]
     },
     "8": {
@@ -4280,15 +4445,13 @@
     "10": {
      "file": "Physlib/SpaceAndTime/ReferenceFrame.lean",
      "names": [
-      "dispEquiv",
-      "contDispEquiv"
+      "Vector.dispEquiv",
+      "Vector.dispIsometry"
      ]
     },
     "11": {
      "file": "Physlib/SpaceAndTime/ReferenceFrame.lean",
      "names": [
-      "componentContLinearEquiv",
-      "TopologicalSpace frame.Vector",
       "FiniteDimensional ℝ frame.Vector"
      ]
     },
@@ -4316,9 +4479,7 @@
     "15": {
      "file": "Physlib/SpaceAndTime/ReferenceFrame.lean",
      "names": [
-      "IsInertial.origin_vsub_eq",
-      "IsInertial.velocity_eq_of_origin_vsub_eq",
-      "IsInertial.origin_eq"
+      "IsInertial.of_relative_motion"
      ]
     }
    },
@@ -4808,7 +4969,7 @@
    "content": [
     {
      "heading": "Content (Alpha)",
-     "text": "### Wavevectors and their basic structure\n\nA wavevector is identified by its $d$ real coordinates. [1]\nWavevector space has a distinguished zero and is a vector space over the reals:\nwavevectors may be added, subtracted and multiplied by real numbers. [2]\nIt has both a norm and inner product structure with which it is isometric\nto standard $d$-dimensional Euclidean space. [3]\nIt has an orthonormal set of basis vectors, and for each basis vector\nthere is a corresponding coordinate function given by orthogonal projection. [4]\nWavevectors carry units of inverse-length and are rescaled\nunder a change of inverse-length unit. [TODO]\n\n### Derivatives\n\nFunctions from wavevector space into a normed space can be differentiated along\nthe coordinate directions; the partial derivatives satisfy the usual linearity properties,\nproduct rule and power rule. [5]\nThe gradient, divergence, laplacian and curl are defined for functions of wavevector. [TODO]\n\n### Duality with Space\n\nThere is a natural pairing of wavevector space with spatial displacements in Space {1}:\nfor a given wavevector $k$ and point in space $x$ the pairing $k\\cdot x = \\sum_i k_ix^i$\ngives the phase difference relative to some fixed reference point. [6]\nFixing a wavevector $k$ gives its dual functional $x \\mapsto k\\cdot x$ on space and similarly\nfixing a displacement $x$ gives its dual functional $k \\mapsto k\\cdot x$ on wavevector space. [7]\nChanging the reference point changes the phase at all points in space by the same amount. [TODO]\n\n### Fourier transforms\n\nThe Fourier transform takes a suitably nice function of space to a function of wavevector,\nresolving its spatial dependence into plane-wave components; the inverse Fourier transform\nreconstructs the spatial function from those components. [8]\nThe transform and its inverse have a consistent choice of normalization\nand preserve inner products up to the corresponding normalization factor. [TODO]\nThe Fourier transform maps derivatives with respect to space to multiplication by wavevector\nand *vice versa*, under suitable regularity and decay assumptions. [TODO]"
+     "text": "### Wavevectors and their basic structure\n\nA wavevector is identified by its $d$ real coordinates. [1]\nWavevector space has a distinguished zero and is a vector space over the reals:\nwavevectors may be added, subtracted and multiplied by real numbers. [2]\nIt has both a norm and inner product structure with which it is isometric\nto standard $d$-dimensional Euclidean space. [3]\nIt has an orthonormal set of basis vectors, and for each basis vector\nthere is a corresponding coordinate function given by orthogonal projection. [4]\nWavevectors carry units of inverse-length and are rescaled\nunder a change of inverse-length unit. [TODO]\n\n### Derivatives\n\nFunctions from wavevector space into a normed space can be differentiated along\nthe coordinate directions; the partial derivatives satisfy the usual linearity properties,\nproduct rule and power rule. [5]\nThe gradient, divergence, laplacian and curl are defined for functions of wavevector. [TODO]\n\n### Duality with Space\n\nThere is a natural pairing of wavevector space with spatial displacements in Space {1}:\nfor a given wavevector $k$ and point in space $x$ the pairing $k\\cdot x = \\sum_i k_ix^i$\ngives the phase difference relative to some fixed reference point. [6]\nFixing a wavevector $k$ gives its dual functional $x \\mapsto k\\cdot x$ on space and similarly\nfixing a displacement $x$ gives its dual functional $k \\mapsto k\\cdot x$ on wavevector space. [7]\nChanging the reference point changes the phase at all points in space by the same amount. [TODO]\n\n### Fourier transforms\n\nThe Fourier transform (FT) takes a suitably nice function of space to a function of wavevector,\nresolving its spatial dependence into plane-wave components; the inverse Fourier transform (IFT)\nreconstructs the spatial function from those components. [8]\nUnder suitable regularity and integrability assumptions,\nthe FT maps derivatives with respect to space to multiplication by wavevector and *vice versa* [9],\nthe FT and IFT are in fact left and right inverses with a consistent choice of normalization [10],\nand the FT and IFT are continuously differentiable [11].\n\nBoth FT and IFT preserve inner products up to a constant normalization factor. [TODO]"
     }
    ],
    "lean": {
@@ -4869,6 +5030,28 @@
      "names": [
       "fourierIntegral",
       "fourierIntegralInv"
+     ]
+    },
+    "9": {
+     "file": "Physlib/SpaceAndTime/WaveVectorSpace/Fourier.lean",
+     "names": [
+      "fderiv_fourierIntegral",
+      "fderiv_fourierIntegralInv",
+      "deriv_fourierIntegral",
+      "deriv_fourierIntegralInv",
+      "fourierIntegral_fderiv",
+      "fourierIntegralInv_fderiv",
+      "fourierIntegral_deriv",
+      "fourierIntegralInv_deriv"
+     ]
+    },
+    "11": {
+     "file": "Physlib/SpaceAndTime/WaveVectorSpace/Fourier.lean",
+     "names": [
+      "differentiable_fourierIntegral",
+      "differentiable_fourierIntegralInv",
+      "contDiff_fourierIntegral",
+      "contDiff_fourierIntegralInv"
      ]
     }
    },

@@ -8,7 +8,7 @@ proof: formalized
 
 # The projection theorem for vector operators
 
-The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.ProjectionTheorem`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean): 19 declarations, 7 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.ProjectionTheorem`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean): 19 declarations, 7 with a docstring.
 
 > Tensor operators are unique up to a scalar, and every vector operator on an irreducible
 > multiplet is a multiple of the angular momentum itself.
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.ProjectionTheorem`, [P
 
 ## A. Uniqueness up to a scalar
 
-**`PhyslibAlpha.Sl2.IsTensorIntertwiner.exists_eq_smul_of_ne_zero`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L68).
+**`PhyslibAlpha.Sl2.IsTensorIntertwiner.exists_eq_smul_of_ne_zero`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L68).
 
 > Two tensor intertwiners into the same `V(p)` are proportional, provided the second one is
 > nonzero.
@@ -52,7 +52,7 @@ lemma IsTensorIntertwiner.exists_eq_smul_of_ne_zero (hmn : 0 < m + n)
     ∃ c : K, φ = c • ψ
 ```
 
-**`PhyslibAlpha.Sl2.IsTensorOperator.exists_eq_smul_of_ne_zero`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L85).
+**`PhyslibAlpha.Sl2.IsTensorOperator.exists_eq_smul_of_ne_zero`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L85).
 
 > Two tensor operators of rank `k` from `V(m)` to `V(p)` are proportional, provided the second
 > one is nonzero.
@@ -68,7 +68,7 @@ lemma IsTensorOperator.exists_eq_smul_of_ne_zero (hkm : 0 < k + m)
 
 ### B.1. Definition and values
 
-**`PhyslibAlpha.Sl2.sl2Operator`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L112).
+**`PhyslibAlpha.Sl2.sl2Operator`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L112).
 
 > The `sl₂` action on `V(n)` as a tensor operator of rank 2: `v_0 ↦ e`, `v_1 ↦ -h`,
 > `v_2 ↦ -2f`. These are the spherical components of the angular momentum, up to normalisation.
@@ -77,25 +77,25 @@ lemma IsTensorOperator.exists_eq_smul_of_ne_zero (hkm : 0 < k + m)
 def sl2Operator : StandardSl2Module K 2 →ₗ[K] Module.End K (StandardSl2Module K n)
 ```
 
-**`PhyslibAlpha.Sl2.sl2Operator_vNat_zero`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L118).
+**`PhyslibAlpha.Sl2.sl2Operator_vNat_zero`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L118).
 
 ```lean
 lemma sl2Operator_vNat_zero : sl2Operator (K := K) n (vNat 2 0) = ρE
 ```
 
-**`PhyslibAlpha.Sl2.sl2Operator_vNat_one`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L122).
+**`PhyslibAlpha.Sl2.sl2Operator_vNat_one`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L122).
 
 ```lean
 lemma sl2Operator_vNat_one : sl2Operator (K := K) n (vNat 2 1) = (-1 : K) • ρH
 ```
 
-**`PhyslibAlpha.Sl2.sl2Operator_vNat_two`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L126).
+**`PhyslibAlpha.Sl2.sl2Operator_vNat_two`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L126).
 
 ```lean
 lemma sl2Operator_vNat_two : sl2Operator (K := K) n (vNat 2 2) = (-2 : K) • ρF
 ```
 
-**`PhyslibAlpha.Sl2.sl2Operator_vNat_of_lt`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L130).
+**`PhyslibAlpha.Sl2.sl2Operator_vNat_of_lt`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L130).
 
 ```lean
 lemma sl2Operator_vNat_of_lt {l : ℕ} (hl : 2 < l) : sl2Operator (K := K) n (vNat 2 l) = 0
@@ -103,59 +103,59 @@ lemma sl2Operator_vNat_of_lt {l : ℕ} (hl : 2 < l) : sl2Operator (K := K) n (vN
 
 ### B.2. Commutation relations
 
-**`PhyslibAlpha.Sl2.ρE_mul_ρF'`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L139).
+**`PhyslibAlpha.Sl2.ρE_mul_ρF'`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L139).
 
 ```lean
 lemma ρE_mul_ρF' : (ρE : Module.End K (StandardSl2Module K n)) * ρF = ρF * ρE + ρH
 ```
 
-**`PhyslibAlpha.Sl2.ρH_mul_ρE'`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L146).
+**`PhyslibAlpha.Sl2.ρH_mul_ρE'`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L146).
 
 ```lean
 lemma ρH_mul_ρE' : (ρH : Module.End K (StandardSl2Module K n)) * ρE = ρE * ρH + (2 : K) • ρE
 ```
 
-**`PhyslibAlpha.Sl2.ρH_mul_ρF'`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L153).
+**`PhyslibAlpha.Sl2.ρH_mul_ρF'`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L153).
 
 ```lean
 lemma ρH_mul_ρF' : (ρH : Module.End K (StandardSl2Module K n)) * ρF = ρF * ρH - (2 : K) • ρF
 ```
 
-**`PhyslibAlpha.Sl2.ρE_vNat_two_one`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L159).
+**`PhyslibAlpha.Sl2.ρE_vNat_two_one`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L159).
 
 ```lean
 lemma ρE_vNat_two_one : (ρE : Module.End K (StandardSl2Module K 2)) (vNat 2 1) =
     (2 : K) • vNat 2 0
 ```
 
-**`PhyslibAlpha.Sl2.ρE_vNat_two_two`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L164).
+**`PhyslibAlpha.Sl2.ρE_vNat_two_two`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L164).
 
 ```lean
 lemma ρE_vNat_two_two : (ρE : Module.End K (StandardSl2Module K 2)) (vNat 2 2) =
     (2 : K) • vNat 2 1
 ```
 
-**`PhyslibAlpha.Sl2.ρH_vNat_two_zero`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L170).
+**`PhyslibAlpha.Sl2.ρH_vNat_two_zero`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L170).
 
 ```lean
 lemma ρH_vNat_two_zero : (ρH : Module.End K (StandardSl2Module K 2)) (vNat 2 0) =
     (2 : K) • vNat 2 0
 ```
 
-**`PhyslibAlpha.Sl2.ρH_vNat_two_one`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L176).
+**`PhyslibAlpha.Sl2.ρH_vNat_two_one`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L176).
 
 ```lean
 lemma ρH_vNat_two_one : (ρH : Module.End K (StandardSl2Module K 2)) (vNat 2 1) = 0
 ```
 
-**`PhyslibAlpha.Sl2.ρH_vNat_two_two`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L181).
+**`PhyslibAlpha.Sl2.ρH_vNat_two_two`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L181).
 
 ```lean
 lemma ρH_vNat_two_two : (ρH : Module.End K (StandardSl2Module K 2)) (vNat 2 2) =
     (-2 : K) • vNat 2 2
 ```
 
-**`PhyslibAlpha.Sl2.comm_of_vNat`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L189).
+**`PhyslibAlpha.Sl2.comm_of_vNat`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L189).
 
 > A commutation relation `[Y, A x] = A (X x)` for a linear `A` holds for all `x` once it holds
 > on the coordinate vectors.
@@ -169,7 +169,7 @@ lemma comm_of_vNat {X : Module.End K (StandardSl2Module K k)}
     Y ∘ₗ A x - A x ∘ₗ Y = A (X x)
 ```
 
-**`PhyslibAlpha.Sl2.isTensorOperator_sl2Operator`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L204).
+**`PhyslibAlpha.Sl2.isTensorOperator_sl2Operator`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L204).
 
 > The `sl₂` action is a tensor operator of rank 2 on every `V(n)`.
 
@@ -177,7 +177,7 @@ lemma comm_of_vNat {X : Module.End K (StandardSl2Module K k)}
 lemma isTensorOperator_sl2Operator : IsTensorOperator (sl2Operator (K := K) n)
 ```
 
-**`PhyslibAlpha.Sl2.sl2Operator_ne_zero`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L253).
+**`PhyslibAlpha.Sl2.sl2Operator_ne_zero`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L253).
 
 > On `V(n)` with `n > 0` the `sl₂` action is a nonzero tensor operator.
 
@@ -187,7 +187,7 @@ lemma sl2Operator_ne_zero (hn : 0 < n) : sl2Operator (K := K) n ≠ 0
 
 ## C. The projection theorem
 
-**`PhyslibAlpha.Sl2.IsTensorOperator.exists_eq_smul_sl2Operator`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L273).
+**`PhyslibAlpha.Sl2.IsTensorOperator.exists_eq_smul_sl2Operator`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean#L273).
 
 > **Projection theorem.** Every vector operator (tensor operator of rank 2) on the multiplet
 > `V(n)` is a scalar multiple of the angular momentum `sl2Operator n`.
@@ -204,4 +204,4 @@ lemma IsTensorOperator.exists_eq_smul_sl2Operator
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean)
+- [PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean)

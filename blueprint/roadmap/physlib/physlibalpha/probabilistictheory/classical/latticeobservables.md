@@ -8,7 +8,7 @@ proof: formalized
 
 # Lattice-ordered observables (LatticeObservables)
 
-The module `PhyslibAlpha.ProbabilisticTheory.Classical.LatticeObservables`, [PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean): 31 declarations (2 instances with no name), 15 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Classical.LatticeObservables`, [PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean): 31 declarations (2 instances with no name), 15 with a docstring.
 
 > When observables form a lattice, the state space is a Bauer simplex.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.LatticeObservables`, [Phy
 
 ## A. The band component
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.band`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L76).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.band`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L76).
 
 > The part of `ω` carried by `u`: `h ↦ sup {ω (h ⊓ a • u) | a ≥ 0}`.
 
@@ -44,52 +44,52 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.LatticeObservables`, [Phy
 noncomputable def band (h : E) : ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.bddAbove_band`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L80).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.bddAbove_band`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L80).
 
 ```lean
 lemma bddAbove_band (h : E) : BddAbove (range fun a : ℝ≥0 => ω (h ⊓ (a : ℝ) • u))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.le_band`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L83).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.le_band`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L83).
 
 ```lean
 lemma le_band (h : E) (a : ℝ≥0) : ω (h ⊓ (a : ℝ) • u) ≤ band ω u h
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.band_le`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L86).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.band_le`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L86).
 
 ```lean
 lemma band_le {h : E} {r : ℝ} (hr : ∀ a : ℝ≥0, ω (h ⊓ (a : ℝ) • u) ≤ r) : band ω u h ≤ r
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.band_nonneg`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L89).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.band_nonneg`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L89).
 
 ```lean
 lemma band_nonneg {h : E} (hh : 0 ≤ h) : 0 ≤ band ω u h
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.band_add`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L92).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.band_add`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L92).
 
 ```lean
 lemma band_add (hu : 0 ≤ u) {h₁ h₂ : E} (h₁0 : 0 ≤ h₁) (h₂0 : 0 ≤ h₂) :
     band ω u (h₁ + h₂) = band ω u h₁ + band ω u h₂
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.apply_smul_inf_smul`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L106).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.apply_smul_inf_smul`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L106).
 
 ```lean
 lemma apply_smul_inf_smul {c : ℝ} (hc : 0 ≤ c) (h : E) (a : ℝ) :
     ω (c • h ⊓ (c * a) • u) = c * ω (h ⊓ a • u)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.band_smul`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L110).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.band_smul`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L110).
 
 ```lean
 lemma band_smul {c : ℝ} (hc : 0 < c) {h : E} :
     band ω u (c • h) = c * band ω u h
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.bandMap`**, a def, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L124).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.bandMap`**, a def, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L124).
 
 > The part of `ω` carried by a positive element `u`, as a positive functional.
 
@@ -97,25 +97,25 @@ lemma band_smul {c : ℝ} (hc : 0 < c) {h : E} :
 noncomputable def bandMap (hu : 0 ≤ u) : E →ₚ[ℝ] ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.bandMap_apply`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L128).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.bandMap_apply`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L128).
 
 ```lean
 lemma bandMap_apply (hu : 0 ≤ u) {h : E} (hh : 0 ≤ h) : bandMap ω hu h = band ω u h
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.bandMap_le`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L131).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.bandMap_le`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L131).
 
 ```lean
 lemma bandMap_le (hu : 0 ≤ u) : bandMap ω hu ≤ ω
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.bandMap_self`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L135).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.bandMap_self`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L135).
 
 ```lean
 lemma bandMap_self (hu : 0 ≤ u) : bandMap ω hu u = ω u
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.bandMap_eq_zero`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L140).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.bandMap_eq_zero`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L140).
 
 ```lean
 lemma bandMap_eq_zero (hu : 0 ≤ u) {g : E} (hg : 0 ≤ g) (h : g ⊓ u = 0) : bandMap ω hu g = 0
@@ -123,7 +123,7 @@ lemma bandMap_eq_zero (hu : 0 ≤ u) {g : E} (hg : 0 ≤ g) (h : g ⊓ u = 0) : 
 
 ## B. Pure states preserve infima
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsPure.apply_eq_zero_of_inf_eq_zero`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L152).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsPure.apply_eq_zero_of_inf_eq_zero`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L152).
 
 > A pure state vanishes on one of any two disjoint positive elements.
 
@@ -132,7 +132,7 @@ lemma IsPure.apply_eq_zero_of_inf_eq_zero {ω : 𝓢[ℝ, E]} (hω : ω.IsPure) 
     (hu : 0 ≤ u) (h : g ⊓ u = 0) : ω g = 0 ∨ ω u = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsPure.map_inf`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L167).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsPure.map_inf`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L167).
 
 > Pure states preserve infima.
 
@@ -143,7 +143,7 @@ lemma IsPure.map_inf {ω : 𝓢[ℝ, E]} (hω : ω.IsPure) (f g : E) :
 
 ## C. States preserving infima are pure
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.map_abs_sub_eq_zero_of_map_inf`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L184).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.map_abs_sub_eq_zero_of_map_inf`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L184).
 
 > An infimum-preserving state does not see the deviation of an observable from its value.
 
@@ -152,7 +152,7 @@ lemma map_abs_sub_eq_zero_of_map_inf {ω : 𝓢[ℝ, E]} (h : ∀ f g, ω (f ⊓
     (f : E) : ω |f - ω f • (1 : E)| = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.eq_of_le_smul_of_map_inf`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L193).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.eq_of_le_smul_of_map_inf`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L193).
 
 > A state dominated by a multiple of an infimum-preserving state is that state.
 
@@ -161,7 +161,7 @@ lemma eq_of_le_smul_of_map_inf {ω φ : 𝓢[ℝ, E]} (h : ∀ f g, ω (f ⊓ g)
     {c : ℝ} (hφ : ∀ f, 0 ≤ f → φ f ≤ c * ω f) : φ = ω
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.isPure_of_map_inf`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L208).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.isPure_of_map_inf`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L208).
 
 > States preserving infima are pure.
 
@@ -169,7 +169,7 @@ lemma eq_of_le_smul_of_map_inf {ω φ : 𝓢[ℝ, E]} (h : ∀ f g, ω (f ⊓ g)
 lemma isPure_of_map_inf {ω : 𝓢[ℝ, E]} (h : ∀ f g, ω (f ⊓ g) = min (ω f) (ω g)) : ω.IsPure
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.isPure_iff_map_inf`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L221).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.isPure_iff_map_inf`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L221).
 
 > The pure states of an order-unit lattice are the states preserving infima.
 
@@ -179,7 +179,7 @@ lemma isPure_iff_map_inf {ω : 𝓢[ℝ, E]} : ω.IsPure ↔ ∀ f g, ω (f ⊓ 
 
 ## D. Pure states of order-unit lattices
 
-**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.isClosed_setOf_isPure`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L239).
+**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.isClosed_setOf_isPure`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L239).
 
 > The pure states of an order-unit lattice form a weak-star closed set.
 
@@ -187,7 +187,7 @@ lemma isPure_iff_map_inf {ω : 𝓢[ℝ, E]} : ω.IsPure ↔ ∀ f g, ω (f ⊓ 
 lemma isClosed_setOf_isPure : IsClosed {ω : stateSpace E | (toState ω).IsPure}
 ```
 
-**An instance with no name**, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L257).
+**An instance with no name**, [line 257](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L257).
 
 ```lean
 instance : CompactSpace (PureState E)
@@ -195,25 +195,25 @@ instance : CompactSpace (PureState E)
 
 ## E. Observables as continuous functions
 
-**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.evalPure_inf`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L266).
+**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.evalPure_inf`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L266).
 
 ```lean
 lemma evalPure_inf (f g : E) : evalPure (f ⊓ g) = evalPure f ⊓ evalPure g
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.evalPure_sup`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L270).
+**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.evalPure_sup`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L270).
 
 ```lean
 lemma evalPure_sup (f g : E) : evalPure (f ⊔ g) = evalPure f ⊔ evalPure g
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.separatesPointsStrongly`**, a lemma, [line 275](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L275).
+**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.separatesPointsStrongly`**, a lemma, [line 275](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L275).
 
 ```lean
 lemma separatesPointsStrongly : (range (evalPure (E := E))).SeparatesPointsStrongly
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.denseRange_evalPure`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L283).
+**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.denseRange_evalPure`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L283).
 
 > **Stone–Weierstrass**: observables are dense among continuous functions on the pure
 > states.
@@ -224,7 +224,7 @@ lemma denseRange_evalPure : DenseRange (evalPure (E := E))
 
 ## F. Unique decomposition
 
-**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.isBauerSimplexStateSpace`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L297).
+**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.isBauerSimplexStateSpace`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L297).
 
 > **Classicality of lattice-ordered observables**: the state space of an order-unit lattice is a
 > Bauer simplex.
@@ -233,7 +233,7 @@ lemma denseRange_evalPure : DenseRange (evalPure (E := E))
 lemma isBauerSimplexStateSpace : IsBauerSimplexStateSpace E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.hasUniquePureDecomposition`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L303).
+**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.hasUniquePureDecomposition`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L303).
 
 > **Unique decomposition into pure states**: every state of an order-unit lattice is a mixture
 > of pure states in exactly one way.
@@ -244,7 +244,7 @@ lemma hasUniquePureDecomposition (φ : 𝓢[ℝ, E]) : φ.HasUniquePureDecomposi
 
 ## G. Classical systems are Bauer simplices
 
-**`BoundedMeasurable.isBauerSimplexStateSpace`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L325).
+**`BoundedMeasurable.isBauerSimplexStateSpace`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L325).
 
 > **The state space of a classical system is a Bauer simplex.**
 
@@ -252,7 +252,7 @@ lemma hasUniquePureDecomposition (φ : 𝓢[ℝ, E]) : φ.HasUniquePureDecomposi
 lemma isBauerSimplexStateSpace : IsBauerSimplexStateSpace (BoundedMeasurable Ω)
 ```
 
-**`BoundedMeasurable.hasUniquePureDecomposition`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L329).
+**`BoundedMeasurable.hasUniquePureDecomposition`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L329).
 
 > **Classicality**: every state of a classical system decomposes uniquely into pure states.
 
@@ -263,13 +263,13 @@ lemma hasUniquePureDecomposition
 
 ## H. Finite classical systems are Bauer simplices
 
-**An instance with no name**, [line 351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L351).
+**An instance with no name**, [line 351](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L351).
 
 ```lean
 instance : OrderUnitLattice (FiniteClassicalSystem ι)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.FiniteClassicalSystem.isBauerSimplexStateSpace`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L356).
+**`PhyslibAlpha.ProbabilisticTheory.FiniteClassicalSystem.isBauerSimplexStateSpace`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean#L356).
 
 > The state space of a finite classical system is a Bauer simplex.
 
@@ -289,4 +289,4 @@ lemma isBauerSimplexStateSpace : IsBauerSimplexStateSpace (FiniteClassicalSystem
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean)

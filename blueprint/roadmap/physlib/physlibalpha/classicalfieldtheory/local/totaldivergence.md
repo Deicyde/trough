@@ -8,7 +8,7 @@ proof: formalized
 
 # Total divergences in local classical field theory
 
-The module `PhyslibAlpha.ClassicalFieldTheory.Local.TotalDivergence`, [PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean): 7 declarations (1 instance with no name), 3 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.Local.TotalDivergence`, [PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean): 7 declarations (1 instance with no name), 3 with a docstring.
 
 > Packaged total-divergence Lagrangians and the Euler-Lagrange-triviality property.
 
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.Local.TotalDivergence`, [PhyslibAl
 
 ## A. Total-divergence predicates
 
-**`ClassicalFieldTheory.Local.HasTotalDivergenceDensity`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean#L67).
+**`ClassicalFieldTheory.Local.HasTotalDivergenceDensity`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean#L67).
 
 > A lagrangian density has total-divergence form if, along every field, it is the sum of the
 > total derivatives of a jet-dependent current. A current of order `k` gives a density of order
@@ -56,7 +56,7 @@ def HasTotalDivergenceDensity (L : Lagrangian d m (k + 1))
     (current : Fin d → JetPoint d m k → ℝ) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.IsEulerLagrangeTrivial`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean#L74).
+**`ClassicalFieldTheory.Local.IsEulerLagrangeTrivial`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean#L74).
 
 > A local lagrangian is Euler-Lagrange-trivial if its Euler-Lagrange operator vanishes along
 > every field.
@@ -67,7 +67,7 @@ def IsEulerLagrangeTrivial (L : Lagrangian d m k) : Prop
 
 ## B. Packaged total-divergence lagrangians
 
-**`ClassicalFieldTheory.Local.TotalDivergence`**, a structure, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean#L87).
+**`ClassicalFieldTheory.Local.TotalDivergence`**, a structure, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean#L87).
 
 > A packaged local total divergence.
 >
@@ -87,13 +87,13 @@ structure TotalDivergence (d m k : ℕ) where
   isEulerLagrangeTrivial : IsEulerLagrangeTrivial lagrangian
 ```
 
-**An instance with no name**, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean#L101).
+**An instance with no name**, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean#L101).
 
 ```lean
 instance : CoeFun (TotalDivergence d m k) (fun _ => Lagrangian d m (k + 1))
 ```
 
-**`ClassicalFieldTheory.Local.TotalDivergence.actionDensity_eq`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean#L105).
+**`ClassicalFieldTheory.Local.TotalDivergence.actionDensity_eq`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean#L105).
 
 ```lean
 lemma actionDensity_eq (T : TotalDivergence d m k)
@@ -102,7 +102,7 @@ lemma actionDensity_eq (T : TotalDivergence d m k)
       fun x => ∑ i : Fin d, totalDerivative k i (T.current i) f x
 ```
 
-**`ClassicalFieldTheory.Local.TotalDivergence.eulerLagrangeOp_eq_zero`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean#L111).
+**`ClassicalFieldTheory.Local.TotalDivergence.eulerLagrangeOp_eq_zero`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean#L111).
 
 ```lean
 lemma eulerLagrangeOp_eq_zero (T : TotalDivergence d m k)
@@ -110,7 +110,7 @@ lemma eulerLagrangeOp_eq_zero (T : TotalDivergence d m k)
     eulerLagrangeOp T.lagrangian f = 0
 ```
 
-**`ClassicalFieldTheory.Local.TotalDivergence.isCritical`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean#L116).
+**`ClassicalFieldTheory.Local.TotalDivergence.isCritical`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean#L116).
 
 ```lean
 lemma isCritical (T : TotalDivergence d m k)
@@ -131,4 +131,4 @@ lemma isCritical (T : TotalDivergence d m k)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean)

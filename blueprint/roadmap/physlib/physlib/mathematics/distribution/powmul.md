@@ -8,14 +8,14 @@ proof: formalized
 
 # Physlib.Mathematics.Distribution.PowMul
 
-The module `Physlib.Mathematics.Distribution.PowMul`, [Physlib/Mathematics/Distribution/PowMul.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/PowMul.lean): 3 declarations, 1 with a docstring.
+The module `Physlib.Mathematics.Distribution.PowMul`, [Physlib/Mathematics/Distribution/PowMul.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Distribution/PowMul.lean): 3 declarations, 1 with a docstring.
 
 ## The multiple of a Schwartz map by `x`
 
 > In this module we define the continuous linear map from the Schwartz space
 > `𝓢(ℝ, 𝕜)` to itself which takes a Schwartz map `η` to the Schwartz map `x * η`.
 
-**`Physlib.Distribution.norm_iteratedFDeriv_ofRealCLM`**, a lemma, [line 31](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/PowMul.lean#L31).
+**`Physlib.Distribution.norm_iteratedFDeriv_ofRealCLM`**, a lemma, [line 31](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Distribution/PowMul.lean#L31).
 
 ```lean
 lemma norm_iteratedFDeriv_ofRealCLM {x} (i : ℕ) :
@@ -23,7 +23,7 @@ lemma norm_iteratedFDeriv_ofRealCLM {x} (i : ℕ) :
       if i = 0 then |x| else if i = 1 then 1 else 0
 ```
 
-**`Physlib.Distribution.powOneMul`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/PowMul.lean#L48).
+**`Physlib.Distribution.powOneMul`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Distribution/PowMul.lean#L48).
 
 > The continuous linear map `𝓢(ℝ, 𝕜) →L[𝕜] 𝓢(ℝ, 𝕜)` taking a Schwartz map
 > `η` to `x * η`.
@@ -32,7 +32,7 @@ lemma norm_iteratedFDeriv_ofRealCLM {x} (i : ℕ) :
 def powOneMul : 𝓢(ℝ, 𝕜) →L[𝕜] 𝓢(ℝ, 𝕜)
 ```
 
-**`Physlib.Distribution.powOneMul_apply`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/PowMul.lean#L136).
+**`Physlib.Distribution.powOneMul_apply`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Distribution/PowMul.lean#L136).
 
 ```lean
 lemma powOneMul_apply (ψ : 𝓢(ℝ, 𝕜)) (x : ℝ) :
@@ -45,4 +45,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/Distribution/PowMul.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/PowMul.lean)
+- [Physlib/Mathematics/Distribution/PowMul.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Distribution/PowMul.lean)

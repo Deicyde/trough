@@ -8,7 +8,7 @@ proof: formalized
 
 # Operations on test functions
 
-The module `PhyslibAlpha.Mathematics.Distribution.TestFunction`, [PhyslibAlpha/Mathematics/Distribution/TestFunction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean): 8 declarations, 7 with a docstring.
+The module `PhyslibAlpha.Mathematics.Distribution.TestFunction`, [PhyslibAlpha/Mathematics/Distribution/TestFunction.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean): 8 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -52,7 +52,7 @@ The module `PhyslibAlpha.Mathematics.Distribution.TestFunction`, [PhyslibAlpha/M
 >
 > Lemmas: `weightedTestBCF_apply`, `smoothWeightTest_apply`.
 
-**`TestFunction.precompLinearEquivSupportedCLM`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean#L78).
+**`TestFunction.precompLinearEquivSupportedCLM`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean#L78).
 
 > Pullback between fixed-support smooth test spaces by an invertible linear coordinate map.
 
@@ -62,7 +62,7 @@ def precompLinearEquivSupportedCLM (e : A ≃L[ℝ] B) (K : Compacts B) :
       ContDiffMapSupportedIn A F ⊤ (K.map e.symm e.symm.continuous)
 ```
 
-**`TestFunction.precompLinearEquivCLM`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean#L111).
+**`TestFunction.precompLinearEquivCLM`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean#L111).
 
 > Pullback by an invertible continuous linear coordinate change is continuous on smooth tests.
 
@@ -71,14 +71,14 @@ def precompLinearEquivCLM (e : A ≃L[ℝ] B) :
     𝓓((⊤ : Opens B), F) →L[ℝ] 𝓓((⊤ : Opens A), F)
 ```
 
-**`TestFunction.precompLinearEquivCLM_apply`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean#L124).
+**`TestFunction.precompLinearEquivCLM_apply`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean#L124).
 
 ```lean
 lemma precompLinearEquivCLM_apply (e : A ≃L[ℝ] B) (f : 𝓓((⊤ : Opens B), F)) (x : A) :
     precompLinearEquivCLM e f x = f (e x)
 ```
 
-**`TestFunction.weightedTestBCFLinear`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean#L133).
+**`TestFunction.weightedTestBCFLinear`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean#L133).
 
 > Weight a compact smooth test field and retain its bounded continuous representative.
 
@@ -87,7 +87,7 @@ def weightedTestBCFLinear (w : E → ℝ) (hw : Continuous w) :
     _root_.TestFunction (⊤ : TopologicalSpace.Opens E) V ⊤ →ₗ[ℝ] (E →ᵇ V)
 ```
 
-**`TestFunction.weightedTestBCF`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean#L142).
+**`TestFunction.weightedTestBCF`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean#L142).
 
 > Arbitrary continuous weights give continuous maps from the native LF test-function space
 > into the uniform norm. No global bound on the weight is required.
@@ -97,7 +97,7 @@ def weightedTestBCF (w : E → ℝ) (hw : Continuous w) :
     _root_.TestFunction (⊤ : TopologicalSpace.Opens E) V ⊤ →L[ℝ] (E →ᵇ V)
 ```
 
-**`TestFunction.weightedTestBCF_apply`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean#L169).
+**`TestFunction.weightedTestBCF_apply`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean#L169).
 
 > The weighted embedding retains the pointwise weighted field.
 
@@ -107,7 +107,7 @@ lemma weightedTestBCF_apply (w : E → ℝ) (hw : Continuous w)
     weightedTestBCF w hw φ x = w x • φ x
 ```
 
-**`TestFunction.smoothWeightTest`**, a def, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean#L174).
+**`TestFunction.smoothWeightTest`**, a def, [line 174](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean#L174).
 
 > Multiplication by a smooth weight is continuous in the native LF test topology.
 
@@ -117,7 +117,7 @@ def smoothWeightTest (w : E → ℝ) (hw : ContDiff ℝ ∞ w) :
       _root_.TestFunction (⊤ : TopologicalSpace.Opens E) V ⊤
 ```
 
-**`TestFunction.smoothWeightTest_apply`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean#L195).
+**`TestFunction.smoothWeightTest_apply`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean#L195).
 
 > The LF-continuous weight map is pointwise scalar multiplication.
 
@@ -133,4 +133,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Distribution/TestFunction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean)
+- [PhyslibAlpha/Mathematics/Distribution/TestFunction.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/TestFunction.lean)

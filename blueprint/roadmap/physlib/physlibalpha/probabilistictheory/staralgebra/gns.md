@@ -8,7 +8,7 @@ proof: formalized
 
 # The GNS representation of a state on a unital `*`-algebra
 
-The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.GNS`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean): 35 declarations (5 instances with no name), 15 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.GNS`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean): 35 declarations (5 instances with no name), 15 with a docstring.
 
 > A state on a unital complex `*`-algebra defines a Hilbert space, the completion of the algebra for
 > the inner product `⟨a, b⟩ = ω(a* b)`, on which a group of state preserving `*`-automorphisms acts
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.GNS`, [PhyslibAlpha/Pro
 
 ## A. States and the pre-Hilbert space
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState`**, a structure, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L65).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState`**, a structure, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L65).
 
 > A state on a unital complex `*`-algebra: a normalized, Hermitian, positive linear
 > functional.
@@ -58,43 +58,43 @@ structure AlgState (A : Type*) [Ring A] [Algebra ℂ A] [StarRing A] [StarModule
   nonneg' : ∀ a, 0 ≤ toLinearMap (star a * a)
 ```
 
-**An instance with no name**, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L79).
+**An instance with no name**, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L79).
 
 ```lean
 instance : FunLike (AlgState A) A ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.map_one`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L89).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.map_one`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L89).
 
 ```lean
 lemma map_one : ω 1 = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.map_star`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L91).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.map_star`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L91).
 
 ```lean
 lemma map_star (a : A) : ω (star a) = star (ω a)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.nonneg`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L93).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.nonneg`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L93).
 
 ```lean
 lemma nonneg (a : A) : 0 ≤ ω (star a * a)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.map_add`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L95).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.map_add`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L95).
 
 ```lean
 lemma map_add (a b : A) : ω (a + b) = ω a + ω b
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.map_smul`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L97).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.map_smul`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L97).
 
 ```lean
 lemma map_smul (c : ℂ) (a : A) : ω (c • a) = c * ω a
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.PreGNS`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L101).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.PreGNS`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L101).
 
 > The algebra with the inner product induced by a state, before completion.
 
@@ -102,19 +102,19 @@ lemma map_smul (c : ℂ) (a : A) : ω (c • a) = c * ω a
 def PreGNS (_ω : AlgState A)
 ```
 
-**An instance with no name**, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L103).
+**An instance with no name**, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L103).
 
 ```lean
 instance : AddCommGroup ω.PreGNS
 ```
 
-**An instance with no name**, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L104).
+**An instance with no name**, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L104).
 
 ```lean
 instance : Module ℂ ω.PreGNS
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.toPre`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L107).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.toPre`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L107).
 
 > The identification of the algebra with its pre-Hilbert space.
 
@@ -122,7 +122,7 @@ instance : Module ℂ ω.PreGNS
 def toPre : A ≃ₗ[ℂ] ω.PreGNS
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.ofPre`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L110).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.ofPre`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L110).
 
 > The identification of the pre-Hilbert space with the algebra.
 
@@ -130,7 +130,7 @@ def toPre : A ≃ₗ[ℂ] ω.PreGNS
 def ofPre : ω.PreGNS ≃ₗ[ℂ] A
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.core`**, an abbrev, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L113).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.core`**, an abbrev, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L113).
 
 > The inner product `⟨a, b⟩ = ω (a* b)`.
 
@@ -138,25 +138,25 @@ def ofPre : ω.PreGNS ≃ₗ[ℂ] A
 noncomputable abbrev core : PreInnerProductSpace.Core ℂ ω.PreGNS
 ```
 
-**An instance with no name**, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L127).
+**An instance with no name**, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L127).
 
 ```lean
 noncomputable instance : SeminormedAddCommGroup ω.PreGNS
 ```
 
-**An instance with no name**, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L130).
+**An instance with no name**, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L130).
 
 ```lean
 noncomputable instance : InnerProductSpace ℂ ω.PreGNS
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.inner_pre`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L132).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.inner_pre`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L132).
 
 ```lean
 lemma inner_pre (a b : ω.PreGNS) : ⟪a, b⟫_ℂ = ω (star (ω.ofPre a) * ω.ofPre b)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.GNS`**, an abbrev, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L136).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.GNS`**, an abbrev, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L136).
 
 > The **GNS Hilbert space** of a state: the completion of the algebra for the inner product
 > `⟨a, b⟩ = ω (a* b)`.
@@ -167,7 +167,7 @@ abbrev GNS : Type _
 
 ## B. Implementing automorphisms
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.preAut`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L144).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.preAut`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L144).
 
 > The map `[a] ↦ [σ a]` on the pre-Hilbert space.
 
@@ -175,26 +175,26 @@ abbrev GNS : Type _
 def preAut : ω.PreGNS →ₗ[ℂ] ω.PreGNS
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.ofPre_preAut`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L147).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.ofPre_preAut`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L147).
 
 ```lean
 lemma ofPre_preAut (x : ω.PreGNS) : ω.ofPre (preAut ω σ x) = σ (ω.ofPre x)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.inner_preAut`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L149).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.inner_preAut`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L149).
 
 ```lean
 lemma inner_preAut (hσ : ∀ a, ω (σ a) = ω a) (x y : ω.PreGNS) :
     ⟪preAut ω σ x, preAut ω σ y⟫_ℂ = ⟪x, y⟫_ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.norm_preAut`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L155).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.norm_preAut`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L155).
 
 ```lean
 lemma norm_preAut (hσ : ∀ a, ω (σ a) = ω a) (x : ω.PreGNS) : ‖preAut ω σ x‖ = ‖x‖
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.preAutCLM`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L162).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.preAutCLM`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L162).
 
 > The automorphism as a bounded operator on the pre-Hilbert space.
 
@@ -202,7 +202,7 @@ lemma norm_preAut (hσ : ∀ a, ω (σ a) = ω a) (x : ω.PreGNS) : ‖preAut ω
 def preAutCLM (hσ : ∀ a, ω (σ a) = ω a) : ω.PreGNS →L[ℂ] ω.PreGNS
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsAut`**, a def, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L166).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsAut`**, a def, [line 166](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L166).
 
 > **The operator on the GNS space implementing a state preserving automorphism.**
 
@@ -210,14 +210,14 @@ def preAutCLM (hσ : ∀ a, ω (σ a) = ω a) : ω.PreGNS →L[ℂ] ω.PreGNS
 def gnsAut (hσ : ∀ a, ω (σ a) = ω a) : ω.GNS →L[ℂ] ω.GNS
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsAut_coe`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L168).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsAut_coe`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L168).
 
 ```lean
 lemma gnsAut_coe (hσ : ∀ a, ω (σ a) = ω a) (x : ω.PreGNS) :
     gnsAut σ hσ (x : ω.GNS) = ((preAut ω σ x : ω.PreGNS) : ω.GNS)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.inner_gnsAut`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L172).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.inner_gnsAut`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L172).
 
 ```lean
 lemma inner_gnsAut (hσ : ∀ a, ω (σ a) = ω a) (x y : ω.GNS) :
@@ -226,33 +226,33 @@ lemma inner_gnsAut (hσ : ∀ a, ω (σ a) = ω a) (x y : ω.GNS) :
 
 ## C. Representations of groups
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsAut_mul`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L190).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsAut_mul`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L190).
 
 ```lean
 lemma gnsAut_mul (g h : Γ) :
     gnsAut (α (g * h)) (hα (g * h)) = gnsAut (α g) (hα g) * gnsAut (α h) (hα h)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsAut_one`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L204).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsAut_one`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L204).
 
 ```lean
 lemma gnsAut_one : gnsAut (α 1) (hα 1) = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.star_gnsAut_mul_gnsAut`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L216).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.star_gnsAut_mul_gnsAut`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L216).
 
 ```lean
 lemma star_gnsAut_mul_gnsAut (g : Γ) :
     star (gnsAut (α g) (hα g)) * gnsAut (α g) (hα g) = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.star_gnsAut`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L222).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.star_gnsAut`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L222).
 
 ```lean
 lemma star_gnsAut (g : Γ) : star (gnsAut (α g) (hα g)) = gnsAut (α g⁻¹) (hα g⁻¹)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsUnitary`**, a def, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L231).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsUnitary`**, a def, [line 231](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L231).
 
 > **The unitary operator on the GNS space implementing a symmetry** of the state.
 
@@ -260,7 +260,7 @@ lemma star_gnsAut (g : Γ) : star (gnsAut (α g) (hα g)) = gnsAut (α g⁻¹) (
 def gnsUnitary (g : Γ) : unitary (ω.GNS →L[ℂ] ω.GNS)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsRep`**, a def, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L239).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsRep`**, a def, [line 239](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L239).
 
 > **The unitary representation of a group of symmetries on the GNS space of an invariant
 > state.**
@@ -269,7 +269,7 @@ def gnsUnitary (g : Γ) : unitary (ω.GNS →L[ℂ] ω.GNS)
 def gnsRep : Γ →* unitary (ω.GNS →L[ℂ] ω.GNS)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.cyclicVector`**, a def, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L245).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.cyclicVector`**, a def, [line 245](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L245).
 
 > The cyclic vector: the class of the unit.
 
@@ -279,7 +279,7 @@ def cyclicVector : ω.GNS
 
 ## D. Composition and commutation of implementing operators
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsAut_comp`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L258).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsAut_comp`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L258).
 
 > The operator implementing a composite of automorphisms is the composite of the operators.
 
@@ -289,7 +289,7 @@ lemma gnsAut_comp :
       gnsAut σ hσ * gnsAut τ hτ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsAut_congr`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L272).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsAut_congr`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L272).
 
 > Equal automorphisms are implemented by equal operators.
 
@@ -298,7 +298,7 @@ lemma gnsAut_congr {σ τ : A ≃⋆ₐ[ℂ] A} (h : σ = τ) (hσ : ∀ a, ω (
     (hτ : ∀ a, ω (τ a) = ω a) : gnsAut σ hσ = gnsAut τ hτ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsAut_commute`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L277).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.gnsAut_commute`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean#L277).
 
 > Commuting automorphisms are implemented by commuting operators.
 
@@ -313,4 +313,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean)
+- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean)

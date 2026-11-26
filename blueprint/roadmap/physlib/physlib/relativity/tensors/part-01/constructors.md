@@ -8,13 +8,13 @@ proof: formalized
 
 # Constructors of tensors.
 
-The module `Physlib.Relativity.Tensors.Constructors`, [Physlib/Relativity/Tensors/Constructors.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean): 41 declarations, 15 with a docstring.
+The module `Physlib.Relativity.Tensors.Constructors`, [Physlib/Relativity/Tensors/Constructors.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean): 41 declarations, 15 with a docstring.
 
 > There are a number of ways to construct explicit tensors.
 
 ## Tensors with a single index.
 
-**`TensorSpecies.Tensor.Pure.fromSingleP`**, a def, [line 39](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L39).
+**`TensorSpecies.Tensor.Pure.fromSingleP`**, a def, [line 39](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L39).
 
 > The equivalence between `V c` and `Pure S ![c]`.
 
@@ -22,7 +22,7 @@ The module `Physlib.Relativity.Tensors.Constructors`, [Physlib/Relativity/Tensor
 noncomputable def Pure.fromSingleP {c : C} : V c ≃ₗ[k] Pure S ![c]
 ```
 
-**`TensorSpecies.Tensor.fromSingleT`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L57).
+**`TensorSpecies.Tensor.fromSingleT`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L57).
 
 > The equivalence between `V c` and `S.Tensor ![c]`.
 
@@ -30,28 +30,28 @@ noncomputable def Pure.fromSingleP {c : C} : V c ≃ₗ[k] Pure S ![c]
 noncomputable def fromSingleT {c : C} : V c ≃ₗ[k] S.Tensor ![c]
 ```
 
-**`TensorSpecies.Tensor.fromSingleT_symm_pure`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L60).
+**`TensorSpecies.Tensor.fromSingleT_symm_pure`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L60).
 
 ```lean
 lemma fromSingleT_symm_pure {c : C} (p : Pure S ![c]) :
     fromSingleT.symm p.toTensor = Pure.fromSingleP.symm p
 ```
 
-**`TensorSpecies.Tensor.fromSingleT_eq_pureT`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L64).
+**`TensorSpecies.Tensor.fromSingleT_eq_pureT`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L64).
 
 ```lean
 lemma fromSingleT_eq_pureT {c : C} (x : V c) :
     fromSingleT (S := S) x = Pure.toTensor (fun 0 => x : Pure S ![c])
 ```
 
-**`TensorSpecies.Tensor.actionT_fromSingleT`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L71).
+**`TensorSpecies.Tensor.actionT_fromSingleT`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L71).
 
 ```lean
 lemma actionT_fromSingleT {c : C} (x : V c) (g : G) :
     g • fromSingleT (S := S) x = fromSingleT (rep c g x)
 ```
 
-**`TensorSpecies.Tensor.fromSingleT_map`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L79).
+**`TensorSpecies.Tensor.fromSingleT_map`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L79).
 
 ```lean
 lemma fromSingleT_map {c c1 : C}
@@ -60,7 +60,7 @@ lemma fromSingleT_map {c c1 : C}
     permT id (by simp [h]) (fromSingleT (S := S) x)
 ```
 
-**`TensorSpecies.Tensor.contrT_fromSingleT_fromSingleT`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L89).
+**`TensorSpecies.Tensor.contrT_fromSingleT_fromSingleT`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L89).
 
 ```lean
 lemma contrT_fromSingleT_fromSingleT {c : C} (x : V c)
@@ -73,7 +73,7 @@ lemma contrT_fromSingleT_fromSingleT {c : C} (x : V c)
 
 ## fromPairT
 
-**`TensorSpecies.Tensor.fromPairT`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L117).
+**`TensorSpecies.Tensor.fromPairT`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L117).
 
 > The construction of a tensor with two indices from the tensor product
 > `V c1 ⊗[k] V c2 ` defined
@@ -84,7 +84,7 @@ noncomputable def fromPairT {c1 c2 : C} :
     V c1 ⊗[k] V c2 →ₗ[k] S.Tensor ![c1, c2]
 ```
 
-**`TensorSpecies.Tensor.fromPairT_tmul`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L126).
+**`TensorSpecies.Tensor.fromPairT_tmul`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L126).
 
 ```lean
 lemma fromPairT_tmul {c1 c2 : C} (x : V c1)
@@ -93,14 +93,14 @@ lemma fromPairT_tmul {c1 c2 : C} (x : V c1)
     (prodT (fromSingleT (S := S) x) (fromSingleT y))
 ```
 
-**`TensorSpecies.Tensor.fromPairT_eq_pure`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L133).
+**`TensorSpecies.Tensor.fromPairT_eq_pure`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L133).
 
 ```lean
 lemma fromPairT_eq_pure {c1 c2 : C} (x : V c1) (y : V c2) :
     fromPairT (S := S) (x ⊗ₜ[k] y) = Pure.toTensor (fun | 0 => x | 1 => y)
 ```
 
-**`TensorSpecies.Tensor.actionT_fromPairT`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L141).
+**`TensorSpecies.Tensor.actionT_fromPairT`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L141).
 
 ```lean
 lemma actionT_fromPairT {c1 c2 : C}
@@ -110,7 +110,7 @@ lemma actionT_fromPairT {c1 c2 : C}
       (rep c2 g) x)
 ```
 
-**`TensorSpecies.Tensor.fromPairT_map_right`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L155).
+**`TensorSpecies.Tensor.fromPairT_map_right`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L155).
 
 ```lean
 lemma fromPairT_map_right {c1 c2 c2' : C} (h :c2 = c2')
@@ -120,7 +120,7 @@ lemma fromPairT_map_right {c1 c2 c2' : C} (h :c2 = c2')
     permT id (by simp [h]) (fromPairT (S := S) x)
 ```
 
-**`TensorSpecies.Tensor.fromPairT_comm`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L172).
+**`TensorSpecies.Tensor.fromPairT_comm`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L172).
 
 ```lean
 lemma fromPairT_comm {c1 c2 : C}
@@ -132,7 +132,7 @@ lemma fromPairT_comm {c1 c2 : C}
 
 ### Contraction of fromPairT with fromSingleT
 
-**`TensorSpecies.Tensor.fromSingleTContrFromPairT`**, a def, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L194).
+**`TensorSpecies.Tensor.fromSingleTContrFromPairT`**, a def, [line 194](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L194).
 
 > The contraction of tensors with one index with one with two indices defined categorically.
 
@@ -141,7 +141,7 @@ noncomputable def fromSingleTContrFromPairT {c c2 : C}
     (x : V c) (y : V (S.τ c) ⊗[k] V c2) : S.Tensor ![c2]
 ```
 
-**`TensorSpecies.Tensor.fromSingleTContrFromPairT_tmul`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L202).
+**`TensorSpecies.Tensor.fromSingleTContrFromPairT_tmul`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L202).
 
 ```lean
 lemma fromSingleTContrFromPairT_tmul {c c2 : C}
@@ -150,7 +150,7 @@ lemma fromSingleTContrFromPairT_tmul {c c2 : C}
     S.contr c (x ⊗ₜ[k] y1) • fromSingleT y2
 ```
 
-**`TensorSpecies.Tensor.fromSingleT_contr_fromPairT_tmul`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L209).
+**`TensorSpecies.Tensor.fromSingleT_contr_fromPairT_tmul`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L209).
 
 ```lean
 lemma fromSingleT_contr_fromPairT_tmul {c c2 : C}
@@ -160,7 +160,7 @@ lemma fromSingleT_contr_fromPairT_tmul {c c2 : C}
     permT id (by simp; rfl) (fromSingleTContrFromPairT x (y1 ⊗ₜ[k] y2))
 ```
 
-**`TensorSpecies.Tensor.contrT_fromSingleT_fromPairT`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L258).
+**`TensorSpecies.Tensor.contrT_fromSingleT_fromPairT`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L258).
 
 ```lean
 lemma contrT_fromSingleT_fromPairT {c c2 : C}
@@ -173,7 +173,7 @@ lemma contrT_fromSingleT_fromPairT {c c2 : C}
 
 ### Contraction of fromPairT with fromPairT
 
-**`TensorSpecies.Tensor.fromPairTContr`**, a def, [line 278](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L278).
+**`TensorSpecies.Tensor.fromPairTContr`**, a def, [line 278](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L278).
 
 > The contraction of tensors with two indices defined categorically.
 
@@ -182,7 +182,7 @@ noncomputable def fromPairTContr {c c1 c2 : C}(x : V c1 ⊗[k] V c) (y : V (S.τ
     S.Tensor ![c1, c2]
 ```
 
-**`TensorSpecies.Tensor.fromPairTContr_tmul_tmul`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L291).
+**`TensorSpecies.Tensor.fromPairTContr_tmul_tmul`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L291).
 
 ```lean
 lemma fromPairTContr_tmul_tmul {c c1 c2 : C} (x1 : V c1) (x2 : V c) (y1 : V (S.τ c))
@@ -190,7 +190,7 @@ lemma fromPairTContr_tmul_tmul {c c1 c2 : C} (x1 : V c1) (x2 : V c) (y1 : V (S.�
     (S.contr c) (x2 ⊗ₜ[k] y1) • fromPairT (x1 ⊗ₜ[k] y2)
 ```
 
-**`TensorSpecies.Tensor.fromPairT_contr_fromPairT_eq_fromPairTContr_tmul`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L296).
+**`TensorSpecies.Tensor.fromPairT_contr_fromPairT_eq_fromPairTContr_tmul`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L296).
 
 ```lean
 lemma fromPairT_contr_fromPairT_eq_fromPairTContr_tmul (c c1 c2 : C)
@@ -201,7 +201,7 @@ lemma fromPairT_contr_fromPairT_eq_fromPairTContr_tmul (c c1 c2 : C)
     (fromPairTContr (x1 ⊗ₜ[k] x2) (y1 ⊗ₜ[k] y2))
 ```
 
-**`TensorSpecies.Tensor.fromPairT_contr_fromPairT_eq_fromPairTContr`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L308).
+**`TensorSpecies.Tensor.fromPairT_contr_fromPairT_eq_fromPairTContr`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L308).
 
 ```lean
 lemma fromPairT_contr_fromPairT_eq_fromPairTContr (c c1 c2 : C)
@@ -212,7 +212,7 @@ lemma fromPairT_contr_fromPairT_eq_fromPairTContr (c c1 c2 : C)
     permT id (by simp; exact ⟨rfl, rfl⟩) (fromPairTContr x y)
 ```
 
-**`TensorSpecies.Tensor.fromPairT_basis_repr`**, a lemma, [line 331](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L331).
+**`TensorSpecies.Tensor.fromPairT_basis_repr`**, a lemma, [line 331](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L331).
 
 ```lean
 lemma fromPairT_basis_repr {c c1 : C}
@@ -222,7 +222,7 @@ lemma fromPairT_basis_repr {c c1 : C}
     (Basis.tensorProduct (b c) (b c1)).repr x (φ 0, φ 1)
 ```
 
-**`TensorSpecies.Tensor.fromPairT_apply_basis_repr`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L353).
+**`TensorSpecies.Tensor.fromPairT_apply_basis_repr`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L353).
 
 ```lean
 lemma fromPairT_apply_basis_repr {c c1 : C}
@@ -233,7 +233,7 @@ lemma fromPairT_apply_basis_repr {c c1 : C}
 
 ## fromConstPair
 
-**`TensorSpecies.Tensor.fromConstPair`**, a def, [line 380](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L380).
+**`TensorSpecies.Tensor.fromConstPair`**, a def, [line 380](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L380).
 
 > A constant two tensor (e.g. metric and unit).
 
@@ -243,7 +243,7 @@ noncomputable def fromConstPair {c1 c2 : C}
     S.Tensor ![c1, c2]
 ```
 
-**`TensorSpecies.Tensor.actionT_fromConstPair`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L386).
+**`TensorSpecies.Tensor.actionT_fromConstPair`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L386).
 
 > Tensors formed by `fromConstPair` are invariant under the group action.
 
@@ -255,7 +255,7 @@ lemma actionT_fromConstPair {c1 c2 : C}
 
 ## fromMatrixT
 
-**`TensorSpecies.Tensor.fromMatrixT`**, a def, [line 400](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L400).
+**`TensorSpecies.Tensor.fromMatrixT`**, a def, [line 400](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L400).
 
 > Rank-two tensors and their component matrices, as a linear equivalence: `fromMatrixT c0 c1 M`
 > is the tensor with component matrix `M`.
@@ -265,7 +265,7 @@ noncomputable def fromMatrixT (c0 c1 : C) :
     Matrix (basisIdx c0) (basisIdx c1) k ≃ₗ[k] S.Tensor ![c0, c1]
 ```
 
-**`TensorSpecies.Tensor.fromMatrixT_basis_repr`**, a lemma, [line 421](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L421).
+**`TensorSpecies.Tensor.fromMatrixT_basis_repr`**, a lemma, [line 421](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L421).
 
 ```lean
 lemma fromMatrixT_basis_repr (c0 c1 : C) (M : Matrix (basisIdx c0) (basisIdx c1) k)
@@ -273,7 +273,7 @@ lemma fromMatrixT_basis_repr (c0 c1 : C) (M : Matrix (basisIdx c0) (basisIdx c1)
     (basis ![c0, c1]).repr (fromMatrixT (S := S) c0 c1 M) φ = M (φ 0) (φ 1)
 ```
 
-**`TensorSpecies.Tensor.toMatrix`**, a def, [line 429](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L429).
+**`TensorSpecies.Tensor.toMatrix`**, a def, [line 429](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L429).
 
 > The component matrix of a rank-two tensor: the `(x, y)` entry is
 > `repr t (ComponentIdx.pair.symm (x, y))`.
@@ -283,7 +283,7 @@ noncomputable def toMatrix {cs : Fin 2 → C} (t : S.Tensor cs) :
     Matrix (basisIdx (cs 0)) (basisIdx (cs 1)) k
 ```
 
-**`TensorSpecies.Tensor.toMatrix_apply`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L434).
+**`TensorSpecies.Tensor.toMatrix_apply`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L434).
 
 ```lean
 lemma toMatrix_apply {cs : Fin 2 → C} (t : S.Tensor cs)
@@ -291,7 +291,7 @@ lemma toMatrix_apply {cs : Fin 2 → C} (t : S.Tensor cs)
     toMatrix t x y = (basis cs).repr t (ComponentIdx.pair.symm (x, y))
 ```
 
-**`TensorSpecies.Tensor.toMatrix_apply_cons`**, a lemma, [line 441](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L441).
+**`TensorSpecies.Tensor.toMatrix_apply_cons`**, a lemma, [line 441](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L441).
 
 > `toMatrix_apply` at a `cons` colour list `![c0, c1]`, where the labels are named by the
 > colours.
@@ -302,21 +302,21 @@ lemma toMatrix_apply_cons {c0 c1 : C} (t : S.Tensor ![c0, c1])
     toMatrix t x y = (basis ![c0, c1]).repr t (ComponentIdx.pair.symm (x, y))
 ```
 
-**`TensorSpecies.Tensor.toMatrix_fromMatrixT`**, a lemma, [line 446](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L446).
+**`TensorSpecies.Tensor.toMatrix_fromMatrixT`**, a lemma, [line 446](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L446).
 
 ```lean
 lemma toMatrix_fromMatrixT (c0 c1 : C) (M : Matrix (basisIdx c0) (basisIdx c1) k) :
     toMatrix (fromMatrixT (S := S) c0 c1 M) = M
 ```
 
-**`TensorSpecies.Tensor.fromMatrixT_toMatrix`**, a lemma, [line 451](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L451).
+**`TensorSpecies.Tensor.fromMatrixT_toMatrix`**, a lemma, [line 451](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L451).
 
 ```lean
 lemma fromMatrixT_toMatrix {c0 c1 : C} (t : S.Tensor ![c0, c1]) :
     fromMatrixT (S := S) c0 c1 (toMatrix t) = t
 ```
 
-**`TensorSpecies.Tensor.toMatrix_injective`**, a lemma, [line 456](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L456).
+**`TensorSpecies.Tensor.toMatrix_injective`**, a lemma, [line 456](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L456).
 
 > Rank-two tensors with equal component matrices are equal.
 
@@ -325,7 +325,7 @@ lemma toMatrix_injective {cs : Fin 2 → C} :
     Function.Injective (toMatrix (S := S) (cs := cs))
 ```
 
-**`TensorSpecies.Tensor.toMatrix_permT_swap`**, a lemma, [line 466](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L466).
+**`TensorSpecies.Tensor.toMatrix_permT_swap`**, a lemma, [line 466](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L466).
 
 > Swapping the two slots of a rank-two tensor transposes its component matrix.
 
@@ -338,7 +338,7 @@ lemma toMatrix_permT_swap {c c1 : Fin 2 → C} (h0 : c 1 = c1 0) (h1 : c 0 = c1 
 
 ## fromTripleT
 
-**`TensorSpecies.Tensor.fromTripleT`**, a def, [line 489](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L489).
+**`TensorSpecies.Tensor.fromTripleT`**, a def, [line 489](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L489).
 
 > The construction of a tensor with two indices from the tensor product
 > `V c1 ⊗[k] V c2 ` defined
@@ -349,7 +349,7 @@ noncomputable def fromTripleT {c1 c2 c3 : C} :
     V c1 ⊗[k] (V c2 ⊗[k] V c3) →ₗ[k] S.Tensor ![c1, c2, c3]
 ```
 
-**`TensorSpecies.Tensor.fromTripleT_tmul`**, a lemma, [line 504](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L504).
+**`TensorSpecies.Tensor.fromTripleT_tmul`**, a lemma, [line 504](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L504).
 
 ```lean
 lemma fromTripleT_tmul {c1 c2 c3 : C} (x : V c1)
@@ -359,7 +359,7 @@ lemma fromTripleT_tmul {c1 c2 c3 : C} (x : V c1)
       (prodT (fromSingleT (S := S) x) (prodT (fromSingleT y) (fromSingleT z)))
 ```
 
-**`TensorSpecies.Tensor.actionT_fromTripleT`**, a lemma, [line 512](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L512).
+**`TensorSpecies.Tensor.actionT_fromTripleT`**, a lemma, [line 512](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L512).
 
 ```lean
 lemma actionT_fromTripleT {c1 c2 c3 : C}
@@ -368,7 +368,7 @@ lemma actionT_fromTripleT {c1 c2 c3 : C}
       (TensorProduct.map (rep c2 g) (rep c3 g)) x)
 ```
 
-**`TensorSpecies.Tensor.fromTripleT_basis_repr`**, a lemma, [line 528](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L528).
+**`TensorSpecies.Tensor.fromTripleT_basis_repr`**, a lemma, [line 528](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L528).
 
 ```lean
 lemma fromTripleT_basis_repr {c c1 c2 : C}
@@ -379,7 +379,7 @@ lemma fromTripleT_basis_repr {c c1 c2 : C}
     (φ 0, φ 1, φ 2)
 ```
 
-**`TensorSpecies.Tensor.fromTripleT_apply_basis`**, a lemma, [line 560](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L560).
+**`TensorSpecies.Tensor.fromTripleT_apply_basis`**, a lemma, [line 560](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L560).
 
 ```lean
 lemma fromTripleT_apply_basis {c c1 c2 : C}
@@ -391,7 +391,7 @@ lemma fromTripleT_apply_basis {c c1 c2 : C}
 
 ## fromConstTriple
 
-**`TensorSpecies.Tensor.fromConstTriple`**, a def, [line 593](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L593).
+**`TensorSpecies.Tensor.fromConstTriple`**, a def, [line 593](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L593).
 
 > A constant three tensor (e.g. the Pauli matrices).
 
@@ -402,7 +402,7 @@ noncomputable def fromConstTriple {c1 c2 c3 : C}
   S.Tensor ![c1, c2, c3]
 ```
 
-**`TensorSpecies.Tensor.actionT_fromConstTriple`**, a lemma, [line 600](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean#L600).
+**`TensorSpecies.Tensor.actionT_fromConstTriple`**, a lemma, [line 600](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean#L600).
 
 > Tensors formed by `fromConstPair` are invariant under the group action.
 
@@ -424,4 +424,4 @@ lemma actionT_fromConstTriple {c1 c2 c3 : C}
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/Constructors.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Constructors.lean)
+- [Physlib/Relativity/Tensors/Constructors.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Constructors.lean)

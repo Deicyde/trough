@@ -8,7 +8,7 @@ proof: formalized
 
 # Rank-one positive operators
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.RankOne`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean): 4 declarations, none with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.RankOne`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean): 4 declarations, none with a docstring.
 
 > The rank-one operator `|x⟩⟨x|` is trace class with trace and trace norm `‖x‖²`.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.RankOne`, [
 
 ## A. Rank-one positive operators
 
-**`PhyslibAlpha.ProbabilisticTheory.rankOne_self_diagonal`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean#L53).
+**`PhyslibAlpha.ProbabilisticTheory.rankOne_self_diagonal`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean#L53).
 
 ```lean
 lemma rankOne_self_diagonal {x : H} {w : Set H}
@@ -37,14 +37,14 @@ lemma rankOne_self_diagonal {x : H} {w : Set H}
       ‖⟪x, b i⟫_ℂ‖ ^ 2
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_rankOne_self`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean#L62).
+**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_rankOne_self`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean#L62).
 
 ```lean
 lemma isTraceClass_rankOne_self (x : H) :
     IsTraceClass (InnerProductSpace.rankOne ℂ x x)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.trace_rankOne_self`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean#L73).
+**`PhyslibAlpha.ProbabilisticTheory.trace_rankOne_self`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean#L73).
 
 ```lean
 lemma trace_rankOne_self (x : H) :
@@ -52,7 +52,7 @@ lemma trace_rankOne_self (x : H) :
       (‖x‖ ^ 2 : ℝ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.traceNorm_rankOne_self`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean#L90).
+**`PhyslibAlpha.ProbabilisticTheory.traceNorm_rankOne_self`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean#L90).
 
 ```lean
 lemma traceNorm_rankOne_self (x : H) :
@@ -70,4 +70,4 @@ lemma traceNorm_rankOne_self (x : H) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean)

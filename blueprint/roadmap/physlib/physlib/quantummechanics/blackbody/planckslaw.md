@@ -8,7 +8,7 @@ proof: formalized
 
 # Planck's Law
 
-The module `Physlib.QuantumMechanics.Blackbody.PlancksLaw`, [Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean): 21 declarations, 21 with a docstring.
+The module `Physlib.QuantumMechanics.Blackbody.PlancksLaw`, [Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean): 21 declarations, 21 with a docstring.
 
 > In this module we define Planck's law for blackbody radiation: The spectral density of
 > electromagnetic radiation emitted by a black body in thermal equilibrium at a given
@@ -56,7 +56,7 @@ The module `Physlib.QuantumMechanics.Blackbody.PlancksLaw`, [Physlib/QuantumMech
 
 ## A. The BlackBody structure
 
-**`BlackBody`**, a structure, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L78).
+**`BlackBody`**, a structure, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L78).
 
 > An idealized black body in thermal equilibrium at temperature `T`.
 
@@ -68,7 +68,7 @@ structure BlackBody where
 
 ## B. Spectral radiance per unit frequency
 
-**`BlackBody.spectralRadiance`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L100).
+**`BlackBody.spectralRadiance`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L100).
 
 > The spectral radiance per unit frequency of blackbody radiation at frequency `ν`
 > for a black body `B`, speed of light `c` and Boltzmann constant `kB`:
@@ -86,7 +86,7 @@ noncomputable def spectralRadiance (B : BlackBody) (c : SpeedOfLight) (kB : Bolt
     (ν : Frequency) : ℝ
 ```
 
-**`BlackBody.spectralRadiance_pos`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L109).
+**`BlackBody.spectralRadiance_pos`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L109).
 
 > The spectral radiance of blackbody radiation is positive for positive frequency
 > and positive temperature.
@@ -96,7 +96,7 @@ lemma spectralRadiance_pos (B : BlackBody) (c : SpeedOfLight) (kB : BoltzmannCon
     (ν : Frequency) (hν : 0 < ν.val) (hT : 0 < (B.T : ℝ)) : 0 < B.spectralRadiance c kB ν
 ```
 
-**`BlackBody.spectralRadiance_nonneg`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L121).
+**`BlackBody.spectralRadiance_nonneg`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L121).
 
 > The spectral radiance per unit frequency is non-negative on the physical domain.
 
@@ -105,7 +105,7 @@ lemma spectralRadiance_nonneg (B : BlackBody) (c : SpeedOfLight) (kB : Boltzmann
     (ν : Frequency) (hν : 0 < ν.val) (hT : 0 < (B.T : ℝ)) : 0 ≤ B.spectralRadiance c kB ν
 ```
 
-**`BlackBody.spectralRadiance_absZero`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L126).
+**`BlackBody.spectralRadiance_absZero`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L126).
 
 > The spectral radiance vanishes at absolute zero temperature.
 
@@ -114,7 +114,7 @@ lemma spectralRadiance_absZero (c : SpeedOfLight) (kB : BoltzmannConstant) (ν :
     spectralRadiance ⟨0⟩ c kB ν = 0
 ```
 
-**`BlackBody.spectralRadiance_zeroFreq`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L134).
+**`BlackBody.spectralRadiance_zeroFreq`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L134).
 
 > The spectral radiance vanishes at zero frequency.
 
@@ -123,7 +123,7 @@ lemma spectralRadiance_zeroFreq (B : BlackBody) (c : SpeedOfLight) (kB : Boltzma
     B.spectralRadiance c kB 0 = 0
 ```
 
-**`BlackBody.spectralRadiance_eq_zero_of_nonpos_freq`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L139).
+**`BlackBody.spectralRadiance_eq_zero_of_nonpos_freq`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L139).
 
 > The spectral radiance vanishes when frequency is non-positive.
 
@@ -135,7 +135,7 @@ lemma spectralRadiance_eq_zero_of_nonpos_freq (B : BlackBody) (c : SpeedOfLight)
 
 ## C. Spectral radiance per unit wavelength
 
-**`BlackBody.spectralRadianceWave`**, a def, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L154).
+**`BlackBody.spectralRadianceWave`**, a def, [line 154](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L154).
 
 > Spectral radiance per unit wavelength of blackbody radiation at wavelength
 > `λ` for a black body `B`, speed of light `c` and Boltzmann constant `kB`:
@@ -149,7 +149,7 @@ noncomputable def spectralRadianceWave (B : BlackBody) (c : SpeedOfLight) (kB : 
     (lam : Wavelength) : ℝ
 ```
 
-**`BlackBody.spectralRadianceWave_pos`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L163).
+**`BlackBody.spectralRadianceWave_pos`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L163).
 
 > The spectral radiance per unit wavelength is positive for positive wavelength
 > and positive temperature.
@@ -160,7 +160,7 @@ lemma spectralRadianceWave_pos (B : BlackBody) (c : SpeedOfLight) (kB : Boltzman
     0 < B.spectralRadianceWave c kB lam
 ```
 
-**`BlackBody.spectralRadianceWave_nonneg`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L179).
+**`BlackBody.spectralRadianceWave_nonneg`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L179).
 
 > The spectral radiance per unit wavelength is non-negative on the physical domain.
 
@@ -170,7 +170,7 @@ lemma spectralRadianceWave_nonneg (B : BlackBody) (c : SpeedOfLight) (kB : Boltz
     0 ≤ B.spectralRadianceWave c kB lam
 ```
 
-**`BlackBody.spectralRadianceWave_absZero`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L185).
+**`BlackBody.spectralRadianceWave_absZero`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L185).
 
 > The spectral radiance per unit wavelength vanishes at absolute zero.
 
@@ -179,7 +179,7 @@ lemma spectralRadianceWave_absZero (c : SpeedOfLight) (kB : BoltzmannConstant)
     (lam : Wavelength) : spectralRadianceWave ⟨0⟩ c kB lam = 0
 ```
 
-**`BlackBody.spectralRadianceWave_zeroWave`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L193).
+**`BlackBody.spectralRadianceWave_zeroWave`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L193).
 
 > The spectral radiance per unit wavelength vanishes at zero wavelength.
 
@@ -188,7 +188,7 @@ lemma spectralRadianceWave_zeroWave (B : BlackBody) (c : SpeedOfLight) (kB : Bol
     B.spectralRadianceWave c kB 0 = 0
 ```
 
-**`BlackBody.spectralRadianceWave_eq_zero_of_nonpos_wave`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L199).
+**`BlackBody.spectralRadianceWave_eq_zero_of_nonpos_wave`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L199).
 
 > The spectral radiance per unit wavelength vanishes when wavelength is
 > non-positive.
@@ -205,7 +205,7 @@ lemma spectralRadianceWave_eq_zero_of_nonpos_wave (B : BlackBody) (c : SpeedOfLi
 > the wavelength form equals `c / λ²` times the frequency form evaluated at
 > `ν = c / λ`.
 
-**`BlackBody.spectralRadianceWave_eq_spectralRadiance`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L215).
+**`BlackBody.spectralRadianceWave_eq_spectralRadiance`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L215).
 
 > Correspondence between the wavelength and frequency forms of Planck's law:
 > `B(λ, T) = (c / λ²) B(ν = c / λ, T)`, where the frequency `c / λ` is given by
@@ -224,7 +224,7 @@ lemma spectralRadianceWave_eq_spectralRadiance (B : BlackBody) (c : SpeedOfLight
 > The wavelength variant uses only the combinations `2 h c²` and `h c / kB`,
 > called the first and second radiation constants.
 
-**`BlackBody.firstRadiationConstant`**, a def, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L239).
+**`BlackBody.firstRadiationConstant`**, a def, [line 239](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L239).
 
 > The first radiation constant `c₁L = 2 h c²`.
 
@@ -232,7 +232,7 @@ lemma spectralRadianceWave_eq_spectralRadiance (B : BlackBody) (c : SpeedOfLight
 noncomputable def firstRadiationConstant (c : SpeedOfLight) : ℝ
 ```
 
-**`BlackBody.firstRadiationConstant_pos`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L243).
+**`BlackBody.firstRadiationConstant_pos`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L243).
 
 > The first radiation constant is positive.
 
@@ -241,7 +241,7 @@ lemma firstRadiationConstant_pos (c : SpeedOfLight) :
     0 < firstRadiationConstant c
 ```
 
-**`BlackBody.firstRadiationConstant_eq`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L249).
+**`BlackBody.firstRadiationConstant_eq`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L249).
 
 > The first radiation constant equals `2 * h * c ^ 2`.
 
@@ -250,7 +250,7 @@ lemma firstRadiationConstant_eq (c : SpeedOfLight) :
     firstRadiationConstant c = 2 * h * (c : ℝ) ^ 2
 ```
 
-**`BlackBody.secondRadiationConstant`**, a def, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L253).
+**`BlackBody.secondRadiationConstant`**, a def, [line 253](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L253).
 
 > The second radiation constant `c₂ = h c / kB`.
 
@@ -258,7 +258,7 @@ lemma firstRadiationConstant_eq (c : SpeedOfLight) :
 noncomputable def secondRadiationConstant (c : SpeedOfLight) (kB : BoltzmannConstant) : ℝ
 ```
 
-**`BlackBody.secondRadiationConstant_pos`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L257).
+**`BlackBody.secondRadiationConstant_pos`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L257).
 
 > The second radiation constant is positive.
 
@@ -267,7 +267,7 @@ lemma secondRadiationConstant_pos (c : SpeedOfLight) (kB : BoltzmannConstant) :
     0 < secondRadiationConstant c kB
 ```
 
-**`BlackBody.secondRadiationConstant_eq`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L263).
+**`BlackBody.secondRadiationConstant_eq`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L263).
 
 > The second radiation constant equals `h * c / kB`.
 
@@ -276,7 +276,7 @@ lemma secondRadiationConstant_eq (c : SpeedOfLight) (kB : BoltzmannConstant) :
     secondRadiationConstant c kB = (h : ℝ) * (c : ℝ) / (kB : ℝ)
 ```
 
-**`BlackBody.spectralRadianceWave_eq_constants`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L268).
+**`BlackBody.spectralRadianceWave_eq_constants`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean#L268).
 
 > Planck's law per unit wavelength in terms of the radiation constants:
 > `B(λ, T) = (c₁L / λ⁵) / (e ^ (c₂ / (λ T)) - 1)`.
@@ -298,4 +298,4 @@ lemma spectralRadianceWave_eq_constants (B : BlackBody) (c : SpeedOfLight)
 
 ## Sources
 
-- [Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean)
+- [Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean)

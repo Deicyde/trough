@@ -8,7 +8,7 @@ proof: formalized
 
 # Channels and integrals
 
-The module `PhyslibAlpha.ProbabilisticTheory.Measurement.BoundedScalarization`, [PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedScalarization.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedScalarization.lean): 4 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Measurement.BoundedScalarization`, [PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedScalarization.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedScalarization.lean): 4 declarations, 2 with a docstring.
 
 > Normal channels commute with integration against effect-valued measures.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Measurement.BoundedScalarization`, 
 
 ## A. Simple integrals
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.map_simpleIntegral`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedScalarization.lean#L51).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.map_simpleIntegral`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedScalarization.lean#L51).
 
 > Pushing an effect-valued measure through a normal channel commutes with its simple integral.
 
@@ -40,19 +40,19 @@ lemma map_simpleIntegral (μ : EffectValuedMeasure Ω E) (φ : Channel E F) (hφ
 
 ## B. Bounded integrals
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.instNormedAddCommGroupE`**, an instance, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedScalarization.lean#L68).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.instNormedAddCommGroupE`**, an instance, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedScalarization.lean#L68).
 
 ```lean
 noncomputable local instance instNormedAddCommGroupE : NormedAddCommGroup E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.instNormedAddCommGroupF`**, an instance, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedScalarization.lean#L72).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.instNormedAddCommGroupF`**, an instance, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedScalarization.lean#L72).
 
 ```lean
 noncomputable local instance instNormedAddCommGroupF : NormedAddCommGroup F
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.map_integral`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedScalarization.lean#L80).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.map_integral`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedScalarization.lean#L80).
 
 > A normal channel commutes with the bounded effect-valued integral.  The only analytic input is
 > order-unit contractivity of a unital positive map; normality is used solely to make `μ.map φ hφ`
@@ -71,4 +71,4 @@ lemma map_integral {f : Ω → ℝ} {M : ℝ} (hf : Measurable f) (hM : ∀ x, |
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedScalarization.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedScalarization.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedScalarization.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedScalarization.lean)

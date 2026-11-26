@@ -8,7 +8,7 @@ proof: formalized
 
 # The structure factor of an invariant state
 
-The module `PhyslibAlpha.ProbabilisticTheory.Representation.StructureFactor`, [PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean): 6 declarations, 6 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Representation.StructureFactor`, [PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean): 6 declarations, 6 with a docstring.
 
 > The correlation function of a translation-invariant positive functional is the Fourier transform of
 > a positive measure on the momenta.
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.StructureFactor`, [P
 
 > * None.
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.StructureFactor.correlation`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean#L70).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.StructureFactor.correlation`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean#L70).
 
 > The correlation function `g ↦ ω(a⋆ α_g(a))` of an observable `a`.
 
@@ -49,7 +49,7 @@ def correlation (a : B) (g : G) : ℂ
 
 ## A. Positive definiteness of the correlation function
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.StructureFactor.isPositiveDefiniteSub_correlation`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean#L75).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.StructureFactor.isPositiveDefiniteSub_correlation`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean#L75).
 
 > **The correlation function of an invariant positive functional is positive definite.**
 
@@ -61,7 +61,7 @@ lemma isPositiveDefiniteSub_correlation (hpos : ∀ b : B, 0 ≤ ω (star b * b)
 
 ## B. The structure factor
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.StructureFactor.exists_measure`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean#L121).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.StructureFactor.exists_measure`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean#L121).
 
 > **The structure factor exists.** The correlation function of an observable in an invariant
 > positive functional is the Fourier transform of a finite positive measure on the momenta:
@@ -74,7 +74,7 @@ lemma exists_measure (hpos : ∀ b : B, 0 ≤ ω (star b * b)) (hinv : ∀ g b, 
       ∀ g : G, ∫ χ, ((χ (Multiplicative.ofAdd g) : Circle) : ℂ) ∂μ = correlation ω α a g
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.StructureFactor.integral_one_eq`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean#L133).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.StructureFactor.integral_one_eq`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean#L133).
 
 > The total mass of the structure factor is the expectation of `a⋆ a`.
 
@@ -85,7 +85,7 @@ lemma integral_one_eq {μ : Measure (PontryaginDual (Multiplicative G))}
     (μ.real univ : ℂ) = ω (star a * a)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.StructureFactor.eq_of_transform_eq`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean#L147).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.StructureFactor.eq_of_transform_eq`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean#L147).
 
 > **The structure factor is unique.** For a countable group a finite measure on the momenta is
 > determined by its Fourier transform.
@@ -97,7 +97,7 @@ lemma eq_of_transform_eq {μ ν : Measure (PontryaginDual (Multiplicative G))}
       ∫ χ, ((χ (Multiplicative.ofAdd g) : Circle) : ℂ) ∂ν) : μ = ν
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.StructureFactor.isPositiveDefiniteSub_iff_exists_measure`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean#L170).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.StructureFactor.isPositiveDefiniteSub_iff_exists_measure`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean#L170).
 
 > **Positive semidefinite translation-invariant couplings are Fourier transforms of positive
 > measures.** A coupling `J(r)` depending only on the displacement `r` is positive semidefinite, in
@@ -123,4 +123,4 @@ lemma isPositiveDefiniteSub_iff_exists_measure (J : G → ℂ) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Stinespring dilation
 
-The module `PhyslibAlpha.QuantumMechanics.StinespringDilation`, [PhyslibAlpha/QuantumMechanics/StinespringDilation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean): 56 declarations, 55 with a docstring, 11 listed as significant.
+The module `PhyslibAlpha.QuantumMechanics.StinespringDilation`, [PhyslibAlpha/QuantumMechanics/StinespringDilation.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean): 56 declarations, 55 with a docstring, 11 listed as significant.
 
 > Kraus maps, the Stinespring isometry and unitary dilation, and completion of Kraus families.
 
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.QuantumMechanics.StinespringDilation`, [PhyslibAlpha/Qu
 
 ## A. Kraus maps and density matrices
 
-**`krausApply`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L82).
+**`krausApply`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L82).
 
 > Completely positive map given by a (not necessarily minimal) Kraus family.
 
@@ -57,7 +57,7 @@ def krausApply {R : Type*} [Mul R] [Star R] [AddCommMonoid R]
     (K : r → Matrix q q R) (ρ : Matrix q q R) : Matrix q q R
 ```
 
-**`krausApply.posSemidef`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L88).
+**`krausApply.posSemidef`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L88).
 
 > Kraus operator preserves PSD property.
 
@@ -70,7 +70,7 @@ lemma krausApply.posSemidef {R : Type*} [Ring R] [PartialOrder R] [StarRing R]
     (krausApply K ρ).PosSemidef
 ```
 
-**`IsKrausChannel`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L97).
+**`IsKrausChannel`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L97).
 
 > A Kraus family defines a quantum channel: its Kraus operators satisfy `∑ Kᵢᴴ Kᵢ = 1`.
 
@@ -80,7 +80,7 @@ def IsKrausChannel {R : Type*} [Mul R] [One R] [Star R] [AddCommMonoid R]
     (K : r → Matrix q q R)
 ```
 
-**`QuantumOperation`**, a def, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L103).
+**`QuantumOperation`**, a def, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L103).
 
 > Quantum operation.
 
@@ -90,7 +90,7 @@ def QuantumOperation {R : Type*} [RCLike R]
     (K : r → Matrix q q R)
 ```
 
-**`densityMatrix`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L108).
+**`densityMatrix`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L108).
 
 > Density matrix.
 
@@ -98,7 +98,7 @@ def QuantumOperation {R : Type*} [RCLike R]
 def densityMatrix {R : Type*} [Ring R] [PartialOrder R] [StarRing R] (d : Type*) [Fintype d]
 ```
 
-**`densityMatrix.convexComb`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L112).
+**`densityMatrix.convexComb`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L112).
 
 > Density matrices are closed under real convex combinations.
 
@@ -110,7 +110,7 @@ def densityMatrix.convexComb {R : Type*} [RCLike R]
 
 ## B. The Stinespring isometry
 
-**`tr₂`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L128).
+**`tr₂`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L128).
 
 > Also known as `partialTraceRight`.
 
@@ -119,7 +119,7 @@ def tr₂ {R : Type*} [Ring R] {m n m' : Type*} [Fintype n]
     (ρ : Matrix (m × n) (m' × n) R) : Matrix m m' R
 ```
 
-**`stinespringOp`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L133).
+**`stinespringOp`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L133).
 
 > `stinespringOp` is often written as `V`.
 
@@ -129,7 +129,7 @@ def stinespringOp {R : Type*} [Ring R]
   (K : r → Matrix m m R) : Matrix (m × r) m R
 ```
 
-**`stinespringOp_apply`**, a theorem, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L141). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`stinespringOp_apply`**, a theorem, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L141). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Entrywise formula for the Stinespring isometry: its `((x₁, x₂), y)` entry is `K x₂ x₁ y`.
 
@@ -139,7 +139,7 @@ theorem stinespringOp_apply {R : Type*} [Ring R] {m r : Type*} [Fintype r] [Deci
     stinespringOp K x y = K x.2 x.1 y
 ```
 
-**`stinespringDilation`**, a def, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L148).
+**`stinespringDilation`**, a def, [line 148](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L148).
 
 > The Stinespring dilation.
 
@@ -150,7 +150,7 @@ def stinespringDilation {R : Type*} [Ring R] [StarRing R]
     (ρ : Matrix m m R)
 ```
 
-**`stinespringForm`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L156).
+**`stinespringForm`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L156).
 
 > The partial trace of the Stinespring dilation.
 
@@ -160,7 +160,7 @@ def stinespringForm {R : Type*} [Ring R] [StarRing R]
     (K : r → Matrix m m R)
 ```
 
-**`stinespringOp_adjoint_mul_self`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L162).
+**`stinespringOp_adjoint_mul_self`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L162).
 
 > A useful identity for Stinespring dilations.
 
@@ -171,7 +171,7 @@ lemma stinespringOp_adjoint_mul_self {R : Type*} [Ring R] [StarRing R]
     ∑ i, star K i * K i = (stinespringOp K)ᴴ * stinespringOp K
 ```
 
-**`stinespringForm_CPTNI`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L176).
+**`stinespringForm_CPTNI`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L176).
 
 > A useful identity for completely positive, trace non-increasing maps.
 
@@ -183,7 +183,7 @@ lemma stinespringForm_CPTNI {R : Type*} [RCLike R]
   (stinespringOp K)ᴴ * (stinespringOp K) ≤ 1
 ```
 
-**`stinespringForm_CPTP_isometry`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L187).
+**`stinespringForm_CPTP_isometry`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L187).
 
 > The Stinespring operator of a completely positive, trace-preserving maps
 > is an isometry. (Note that `stinespringOp K` is not a square matrix in general.)
@@ -196,7 +196,7 @@ lemma stinespringForm_CPTP_isometry {R : Type*} [Ring R] [StarRing R]
   (stinespringOp K)ᴴ * (stinespringOp K) = 1
 ```
 
-**`stinespringOrtho`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L199).
+**`stinespringOrtho`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L199).
 
 > Proving the columns of `V = stinespringOp K` are independent is a step
 > on the way to constructing the unitary dilation.
@@ -212,7 +212,7 @@ lemma stinespringOrtho {R : Type*} [RCLike R]
 
 ## C. Extending the Stinespring columns to an orthonormal basis
 
-**`basisCard`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L240).
+**`basisCard`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L240).
 
 > `m` will of course be finite and bounded by `n` here,
 > but no need to assume or prove that.
@@ -224,7 +224,7 @@ lemma basisCard {R : Type*} [RCLike R] {n m : Type*} [Fintype n] {s : Matrix n m
     ho.toSubtypeRange.exists_orthonormalBasis_extension.choose.card
 ```
 
-**`stinespringCard`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L251).
+**`stinespringCard`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L251).
 
 > Calculating the cardinality of the orthonormal basis obtained by
 > extending the Stinespring orthonormal set, the columns of `stinespringOp K`.
@@ -238,7 +238,7 @@ lemma stinespringCard {R : Type*} [RCLike R]
     hK).toSubtypeRange.exists_orthonormalBasis_extension.choose.card
 ```
 
-**`complCard`**, a theorem, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L267). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`complCard`**, a theorem, [line 267](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L267). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > We need the 1 matrix, which we don't seem to have for an arbitrary
 > `[Fintype m]`.
@@ -255,7 +255,7 @@ theorem complCard {R : Type*} [RCLike R] {m r : ℕ}
       Fintype.card (Fin m × Fin (r-1)) = #u'
 ```
 
-**`Fin.predAboveOfNe`**, a def, [line 318](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L318).
+**`Fin.predAboveOfNe`**, a def, [line 318](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L318).
 
 > See discussion at https://leanprover.zulipchat.com/#narrow/channel/217875-Is-there-code-for-X.3F/topic/succAbove.20and.20predAbove.20lemmas/with/584270574
 
@@ -264,7 +264,7 @@ def Fin.predAboveOfNe {n : ℕ} {k i : Fin n}
     (h : i ≠ k) : Fin (n - 1)
 ```
 
-**`Fin.predAboveOfNe_injective`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L325).
+**`Fin.predAboveOfNe_injective`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L325).
 
 > A "missing lemma" for `Fin` types.
 
@@ -274,7 +274,7 @@ lemma Fin.predAboveOfNe_injective (n : ℕ) (k x y : Fin n)
     (heq : Fin.predAboveOfNe hx = Fin.predAboveOfNe hy) : x = y
 ```
 
-**`onbPart`**, a def, [line 338](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L338).
+**`onbPart`**, a def, [line 338](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L338).
 
 > The way this is written, `Fin r` and `Fin (r-1)` both occur
 > so it is tricky to go to a general `Fintype`.
@@ -287,7 +287,7 @@ def onbPart {R : Type*} [RCLike R]
   Fin m × Fin r → R
 ```
 
-**`onbPart_inner`**, a lemma, [line 354](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L354).
+**`onbPart_inner`**, a lemma, [line 354](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L354).
 
 ```lean
 lemma onbPart_inner {R : Type*} [RCLike R] {m r : ℕ} {K : Fin r → Matrix (Fin m) (Fin m) R}
@@ -299,7 +299,7 @@ lemma onbPart_inner {R : Type*} [RCLike R] {m r : ℕ} {K : Fin r → Matrix (Fi
             (WithLp.toLp 2 <| onbPart hK x hx) = 0
 ```
 
-**`onbPart_norm`**, a lemma, [line 395](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L395).
+**`onbPart_norm`**, a lemma, [line 395](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L395).
 
 > The vectors in the Stinespring orthonormal basis have norm 1.
 
@@ -312,7 +312,7 @@ lemma onbPart_norm {R : Type*} [RCLike R] {m r : ℕ} {K : Fin r → Matrix (Fin
 
 ## D. The unitary dilation
 
-**`Ud`**, a def, [line 412](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L412).
+**`Ud`**, a def, [line 412](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L412).
 
 > Also known as `unitaryDilation`. Respects x,y order.
 
@@ -323,7 +323,7 @@ def Ud {R : Type*} [RCLike R] {m r : ℕ}
     Matrix (Fin m × Fin r) (Fin m × Fin r) R
 ```
 
-**`generalDilation`**, a def, [line 424](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L424).
+**`generalDilation`**, a def, [line 424](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L424).
 
 > This generalization of Stinespring dilation has the right
 > "shape" but otherwise nothing specific to it.
@@ -337,7 +337,7 @@ def generalDilation {R : Type*}
     Matrix (m × r) (m × r) R
 ```
 
-**`dilation`**, a def, [line 434](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L434).
+**`dilation`**, a def, [line 434](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L434).
 
 > A general, not necessarily unitary, dilation.
 
@@ -348,7 +348,7 @@ def dilation {R : Type*} [Ring R]
     Matrix (m × r) (m × r) R
 ```
 
-**`Ud_orthonormal₁`**, a theorem, [line 442](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L442). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`Ud_orthonormal₁`**, a theorem, [line 442](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L442). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > One version of orthonormality of `stinespringOp`.
 
@@ -359,7 +359,7 @@ theorem Ud_orthonormal₁ {R : Type*} [RCLike R] {m r : ℕ} {K : Fin r → Matr
     else WithLp.toLp 2 fun i ↦ onbPart hK y hy i
 ```
 
-**`Ud_orthonormal₂`**, a theorem, [line 489](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L489). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`Ud_orthonormal₂`**, a theorem, [line 489](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L489). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The Stinespring dilation columns form an orthonormal basis.
 
@@ -371,7 +371,7 @@ theorem Ud_orthonormal₂ {R : Type*} [RCLike R]
       WithLp.toLp 2 fun i ↦ if hy : y.2 = z then stinespringOp K i y.1 else onbPart hK y hy i
 ```
 
-**`smul_self_one_of_norm_one`**, a lemma, [line 510](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L510).
+**`smul_self_one_of_norm_one`**, a lemma, [line 510](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L510).
 
 > If `β` has length 1 then the dot product of `β` with itself is 1.
 
@@ -381,7 +381,7 @@ lemma smul_self_one_of_norm_one {R : Type*} [RCLike R]
   ∑ x, (starRingEnd R) (β x) * β x = 1
 ```
 
-**`unitary_of_orthonormal`**, a theorem, [line 527](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L527). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`unitary_of_orthonormal`**, a theorem, [line 527](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L527). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > A matrix whose columns are orthonormal is unitary.
 
@@ -392,7 +392,7 @@ theorem unitary_of_orthonormal {R : Type*} [RCLike R]
   (h₀ : Orthonormal R fun i ↦ WithLp.toLp 2 (α i)) : α * star α = 1
 ```
 
-**`Ud_unitaryT`**, a lemma, [line 549](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L549).
+**`Ud_unitaryT`**, a lemma, [line 549](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L549).
 
 > The transpose of the unitary dilation is unitary.
 
@@ -403,7 +403,7 @@ lemma Ud_unitaryT {R : Type*} [RCLike R]
     (Ud hK z)ᵀ ∈ unitary _
 ```
 
-**`Ud_unitary`**, a lemma, [line 561](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L561).
+**`Ud_unitary`**, a lemma, [line 561](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L561).
 
 > The unitary dilation `Ud` is in fact unitary.
 
@@ -416,7 +416,7 @@ lemma Ud_unitary {R : Type*} [RCLike R]
 
 ## E. Stinespring forms
 
-**`tr₂_e₀Xe₀`**, a lemma, [line 589](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L589).
+**`tr₂_e₀Xe₀`**, a lemma, [line 589](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L589).
 
 > Taking the partial trace of a tensor product with a matrix of trace 1 is the
 > identity map.
@@ -429,7 +429,7 @@ lemma tr₂_e₀Xe₀ {R : Type*} [RCLike R]
     tr₂ (ρ ⊗ₖ e) = ρ
 ```
 
-**`stinespringUnitaryForm`**, a def, [line 606](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L606).
+**`stinespringUnitaryForm`**, a def, [line 606](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L606).
 
 > The Stinespring unitary form.
 
@@ -441,7 +441,7 @@ def stinespringUnitaryForm {R : Type*} [RCLike R] {m r : ℕ}
     (Matrix (Fin m) (Fin m) R)
 ```
 
-**`stinespringUnitaryFormE`**, a def, [line 615](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L615).
+**`stinespringUnitaryFormE`**, a def, [line 615](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L615).
 
 > The Stinespring unitary form, general version.
 
@@ -453,7 +453,7 @@ def stinespringUnitaryFormE {R : Type*} [RCLike R] {m r : ℕ}
     (Matrix (Fin m) (Fin m) R)
 ```
 
-**`tracefree_version`**, a theorem, [line 624](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L624). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`tracefree_version`**, a theorem, [line 624](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L624). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Trace-free version of the Stinespring Dilation Theorem.
 
@@ -466,7 +466,7 @@ theorem tracefree_version {R : Type*} [RCLike R]
     Uᴴ * (ρ ⊗ₖ (1 : Matrix r r R)) * U = stinespringForm K ρ
 ```
 
-**`heisenberg_schrõdinger`**, a theorem, [line 641](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L641). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`heisenberg_schrõdinger`**, a theorem, [line 641](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L641). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > A Heisberg picture / Schrödinger picture view of the Stinespring dilation.
 
@@ -483,7 +483,7 @@ theorem heisenberg_schrõdinger {R : Type*} [RCLike R]
     schrõdinger = heisenberg
 ```
 
-**`generalForm`**, a def, [line 656](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L656).
+**`generalForm`**, a def, [line 656](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L656).
 
 > A further generalization of `stinespringGeneralForm`.
 
@@ -495,7 +495,7 @@ def generalForm {R : Type*} [RCLike R]
     (M : Matrix (m × r) (m × r) R)
 ```
 
-**`stinespringGeneralForm`**, a def, [line 665](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L665).
+**`stinespringGeneralForm`**, a def, [line 665](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L665).
 
 > General form of the Stinespring dilation.
 
@@ -506,7 +506,7 @@ def stinespringGeneralForm {R : Type*} [RCLike R]
     (M : Matrix (m × r) (m × r) R)
 ```
 
-**`stinespringGeneralFormE`**, a def, [line 673](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L673).
+**`stinespringGeneralFormE`**, a def, [line 673](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L673).
 
 > Even more general form of the Stinespring dilation.
 
@@ -517,7 +517,7 @@ def stinespringGeneralFormE {R : Type*} [RCLike R]
     (M : Matrix (m × r) (m × r) R)
 ```
 
-**`unitaryForm_of_general`**, a theorem, [line 686](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L686). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`unitaryForm_of_general`**, a theorem, [line 686](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L686). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > When we plug in `M = Ud hK`
 > into the general `stinespringGeneralForm`,
@@ -532,7 +532,7 @@ theorem unitaryForm_of_general {R : Type*} [RCLike R] {m r : ℕ}
     stinespringUnitaryForm hK z
 ```
 
-**`unitaryForm_of_general_e`**, a theorem, [line 699](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L699). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`unitaryForm_of_general_e`**, a theorem, [line 699](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L699). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The Stinespring unitary form as a general form applied to the unitary dilation.
 
@@ -544,7 +544,7 @@ theorem unitaryForm_of_general_e {R : Type*} [RCLike R] {m r : ℕ}
     stinespringUnitaryFormE hK z e
 ```
 
-**`stinespringGeneralForm_works`**, a lemma, [line 719](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L719).
+**`stinespringGeneralForm_works`**, a lemma, [line 719](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L719).
 
 > Note we don't need any special properties of M,
 > and we don't need K to be CPTP.
@@ -559,7 +559,7 @@ lemma stinespringGeneralForm_works {R : Type*} [RCLike R] {m r : ℕ}
     stinespringGeneralForm K z M = krausApply K
 ```
 
-**`stinespringUnitaryForm_works`**, a lemma, [line 745](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L745).
+**`stinespringUnitaryForm_works`**, a lemma, [line 745](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L745).
 
 > Notice that unitarity is a side property, it is not why
 > the Stinespring form works.
@@ -575,7 +575,7 @@ lemma stinespringUnitaryForm_works {R : Type*} [RCLike R] {m r : ℕ}
 
 ## F. The Kraus completion
 
-**`krausCompletion`**, a def, [line 761](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L761).
+**`krausCompletion`**, a def, [line 761](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L761).
 
 > The "orthogonal" CPTP completion of a CPTNI map.
 > `Vtilde` is an alternative name for `krausCompletion`.
@@ -586,7 +586,7 @@ def krausCompletion {R : Type*} [RCLike R] {m r : ℕ}
     Matrix (Fin m × Fin (r+1)) (Fin m) R
 ```
 
-**`stinespringOp_gram`**, a theorem, [line 768](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L768). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`stinespringOp_gram`**, a theorem, [line 768](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L768). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The Gram matrix of the Stinespring isometry is `∑ i, (K i)ᴴ * K i`.
 
@@ -596,7 +596,7 @@ theorem stinespringOp_gram {R : Type*} [RCLike R] {m r : ℕ}
     (stinespringOp K)ᴴ * stinespringOp K = ∑ i, star (K i) * K i
 ```
 
-**`krausCompletion_isometry_of_TNI`**, a lemma, [line 785](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L785).
+**`krausCompletion_isometry_of_TNI`**, a lemma, [line 785](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L785).
 
 > Mar 14, 2026 by Bjørn for 4.27
 > June 13, 2026 by Aristotle for 4.31 including
@@ -611,7 +611,7 @@ lemma krausCompletion_isometry_of_TNI {R : Type*} [RCLike R] {m r : ℕ}
 
 ## G. Partial traces and unitary dilations
 
-**`unital`**, a def, [line 842](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L842).
+**`unital`**, a def, [line 842](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L842).
 
 > A unital operator.
 
@@ -620,7 +620,7 @@ def unital {R : Type*} [RCLike R] {m r : ℕ}
     (K : Fin r → Matrix (Fin m) (Fin m) R)
 ```
 
-**`subunital`**, a def, [line 846](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L846).
+**`subunital`**, a def, [line 846](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L846).
 
 > A subunital operator.
 
@@ -629,7 +629,7 @@ def subunital {R : Type*} [RCLike R] {m r : ℕ}
     (K : Fin r → Matrix (Fin m) (Fin m) R)
 ```
 
-**`partialTrace_tensor`**, a lemma, [line 851](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L851).
+**`partialTrace_tensor`**, a lemma, [line 851](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L851).
 
 > The identity `Tr_B (A ⨂ B) = Tr(B) · A`
 
@@ -639,7 +639,7 @@ lemma partialTrace_tensor {R : Type*} [RCLike R] {m n : ℕ}
     tr₂ (A ⊗ₖ B) = (trace B) • A
 ```
 
-**`krausApply_of_tensor`**, a lemma, [line 864](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L864).
+**`krausApply_of_tensor`**, a lemma, [line 864](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L864).
 
 > A unitary dilation view of the application of a Kraus operator.
 
@@ -652,7 +652,7 @@ lemma krausApply_of_tensor {R : Type*} [RCLike R] {m r : ℕ}
     krausApply K ρ = α
 ```
 
-**`trace_tr₂`**, a lemma, [line 879](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L879).
+**`trace_tr₂`**, a lemma, [line 879](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L879).
 
 > Trace of partial trace equals trace.
 
@@ -664,7 +664,7 @@ lemma trace_tr₂ {R : Type*} [RCLike R] {m n : ℕ}
 
 ## H. Completing quantum operations to channels
 
-**`krausCompletionChannelMap`**, a def, [line 892](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L892).
+**`krausCompletionChannelMap`**, a def, [line 892](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L892).
 
 > The Kraus completion as a map from
 > operations to channels.
@@ -675,7 +675,7 @@ def krausCompletionChannelMap {R : Type*} [RCLike R] {q r : ℕ}
     {K : Fin (r+1) → Matrix (Fin q) (Fin q) R | IsKrausChannel K}
 ```
 
-**`CPTP_of_CPTNI`**, a lemma, [line 906](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L906).
+**`CPTP_of_CPTNI`**, a lemma, [line 906](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L906).
 
 > The "not orthogonal" CPTP completion of a CPTNI map.
 
@@ -691,7 +691,7 @@ lemma CPTP_of_CPTNI {R : Type*} [RCLike R]
 
 ## I. The Stinespring dilation theorem
 
-**`partialTraceLeft`**, a def, [line 940](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L940).
+**`partialTraceLeft`**, a def, [line 938](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L938).
 
 > Partial trace on the left of a tensor product.
 
@@ -702,7 +702,7 @@ def partialTraceLeft {R : Type*} [RCLike R]
                 (m × n) R) : Matrix (n) (n) R
 ```
 
-**`stinespringForm_eq`**, a theorem, [line 947](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L947). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`stinespringForm_eq`**, a theorem, [line 945](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean#L945). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > A version of the Stinespring Dilation Theorem.
 
@@ -719,4 +719,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/StinespringDilation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean)
+- [PhyslibAlpha/QuantumMechanics/StinespringDilation.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/StinespringDilation.lean)

@@ -1,6 +1,6 @@
 # QuantumMechanics
 
-The folder [PhyslibAlpha/QuantumMechanics/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics): 2 modules, an article each, in path order; then 7 folders below it, a page each, 41 modules in all.
+The folder [PhyslibAlpha/QuantumMechanics/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics): 2 modules, an article each, in path order; then 7 folders below it, a page each, 43 modules in all.
 
 - [Real rotations of a qubit and multiplexed gates](qubitgates.md)
 - [Stinespring dilation](stinespringdilation.md)

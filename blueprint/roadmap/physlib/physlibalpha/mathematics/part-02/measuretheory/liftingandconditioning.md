@@ -8,7 +8,7 @@ proof: formalized
 
 # Lifting, averaging and conditioning probability measures
 
-The module `PhyslibAlpha.Mathematics.MeasureTheory.LiftingAndConditioning`, [PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean): 10 declarations, 5 with a docstring.
+The module `PhyslibAlpha.Mathematics.MeasureTheory.LiftingAndConditioning`, [PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean): 10 declarations, 5 with a docstring.
 
 > Lifting, averaging, conditioning and replacing parts of probability measures.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.Mathematics.MeasureTheory.LiftingAndConditioning`, [Phy
 
 ## A. Lifting through a compact continuous map
 
-**`ProbabilityMeasure.exists_map_eq_of_continuous_of_compl_range_null`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L67).
+**`ProbabilityMeasure.exists_map_eq_of_continuous_of_compl_range_null`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L67).
 
 > A probability measure charging only the range of a continuous map from a compact space lifts
 > through that map: integration against it is a positive functional on continuous functions on the
@@ -48,7 +48,7 @@ lemma exists_map_eq_of_continuous_of_compl_range_null (q : X → Y) (hq : Contin
 
 ## B. Averaging two pushforwards
 
-**`ProbabilityMeasure.averageMap`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L94).
+**`ProbabilityMeasure.averageMap`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L94).
 
 > The average of the two pushforwards of a probability measure.
 
@@ -57,7 +57,7 @@ noncomputable def averageMap (rho : ProbabilityMeasure A) (f g : A → B)
     (hf : AEMeasurable f rho) (hg : AEMeasurable g rho) : ProbabilityMeasure B
 ```
 
-**`ProbabilityMeasure.integral_averageMap`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L107).
+**`ProbabilityMeasure.integral_averageMap`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L107).
 
 ```lean
 lemma integral_averageMap {rho : ProbabilityMeasure A} {f g : A → B}
@@ -71,7 +71,7 @@ lemma integral_averageMap {rho : ProbabilityMeasure A} {f g : A → B}
 
 ## C. Conditioning and replacing part of a measure
 
-**`ProbabilityMeasure.condition`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L135).
+**`ProbabilityMeasure.condition`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L135).
 
 > The conditional law of a probability measure on a positive-measure event.
 
@@ -80,7 +80,7 @@ noncomputable def condition (mu : ProbabilityMeasure B) (S : Set B)
     (hS : (mu : Measure B) S ≠ 0) : ProbabilityMeasure B
 ```
 
-**`ProbabilityMeasure.condition_compl_apply`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L140).
+**`ProbabilityMeasure.condition_compl_apply`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L140).
 
 ```lean
 lemma condition_compl_apply (mu : ProbabilityMeasure B) {S : Set B}
@@ -88,7 +88,7 @@ lemma condition_compl_apply (mu : ProbabilityMeasure B) {S : Set B}
     (condition mu S hS : Measure B) Sᶜ = 0
 ```
 
-**`ProbabilityMeasure.measure_smul_condition_eq_restrict`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L147).
+**`ProbabilityMeasure.measure_smul_condition_eq_restrict`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L147).
 
 ```lean
 lemma measure_smul_condition_eq_restrict (mu : ProbabilityMeasure B) {S : Set B}
@@ -96,7 +96,7 @@ lemma measure_smul_condition_eq_restrict (mu : ProbabilityMeasure B) {S : Set B}
     (mu : Measure B) S • (condition mu S hS : Measure B) = (mu : Measure B).restrict S
 ```
 
-**`ProbabilityMeasure.replacePart`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L156).
+**`ProbabilityMeasure.replacePart`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L156).
 
 > Replace the mass of `mu` on `S` by the same amount of another probability measure.
 
@@ -105,7 +105,7 @@ noncomputable def replacePart (mu eta : ProbabilityMeasure B) (S : Set B)
     (hS : MeasurableSet S) : ProbabilityMeasure B
 ```
 
-**`ProbabilityMeasure.replacePart_toMeasure`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L165).
+**`ProbabilityMeasure.replacePart_toMeasure`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L165).
 
 ```lean
 lemma replacePart_toMeasure (mu eta : ProbabilityMeasure B) (S : Set B)
@@ -114,7 +114,7 @@ lemma replacePart_toMeasure (mu eta : ProbabilityMeasure B) (S : Set B)
       (mu : Measure B).restrict Sᶜ + (mu : Measure B) S • (eta : Measure B)
 ```
 
-**`ProbabilityMeasure.integral_eq_restrict_compl_add_condition`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L172).
+**`ProbabilityMeasure.integral_eq_restrict_compl_add_condition`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L172).
 
 > Integrating against `mu` splits into the part off `S` plus the mass of `S` times the
 > conditional integral on `S`.
@@ -127,7 +127,7 @@ lemma integral_eq_restrict_compl_add_condition (mu : ProbabilityMeasure B) {S : 
       ((mu : Measure B) S).toReal * ∫ x, f x ∂(condition mu S hpos : Measure B)
 ```
 
-**`ProbabilityMeasure.integral_replacePart`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L181).
+**`ProbabilityMeasure.integral_replacePart`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean#L181).
 
 ```lean
 lemma integral_replacePart (mu eta : ProbabilityMeasure B) (S : Set B) (hS : MeasurableSet S)
@@ -146,4 +146,4 @@ lemma integral_replacePart (mu eta : ProbabilityMeasure B) (S : Set B) (hS : Mea
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean)
+- [PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/LiftingAndConditioning.lean)

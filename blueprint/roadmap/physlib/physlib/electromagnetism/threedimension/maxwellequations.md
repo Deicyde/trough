@@ -8,7 +8,7 @@ proof: formalized
 
 # A. Maxwell's equations in three dimensions
 
-The module `Physlib.Electromagnetism.ThreeDimension.MaxwellEquations`, [Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean): 4 declarations, 4 with a docstring, 4 listed as significant.
+The module `Physlib.Electromagnetism.ThreeDimension.MaxwellEquations`, [Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean): 4 declarations, 4 with a docstring, 4 listed as significant.
 
 > Maxwell's equations relate electric and magnetic fields to electric charge and current. In three
 > spatial dimensions they can be written using the familiar divergence, curl, and time-derivative
@@ -38,7 +38,7 @@ The module `Physlib.Electromagnetism.ThreeDimension.MaxwellEquations`, [Physlib/
 > boundary conditions, and constitutive laws for material media are outside the current scope of this
 > module.
 
-**`Electromagnetism.ThreeDimension.gaussLawElectric`**, a theorem, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean#L66). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`Electromagnetism.ThreeDimension.gaussLawElectric`**, a theorem, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean#L66). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Gauss's law for the electric field.
 
@@ -48,7 +48,7 @@ theorem gaussLawElectric (t : Time) (x : Space)
     (∇ ⬝ E t) x = ρ t x / ε₀
 ```
 
-**`Electromagnetism.ThreeDimension.gaussLawMagnetic`**, a theorem, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean#L72). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`Electromagnetism.ThreeDimension.gaussLawMagnetic`**, a theorem, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean#L72). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Gauss's law for the magnetic field.
 
@@ -57,7 +57,7 @@ theorem gaussLawMagnetic (t : Time) (x : Space) (hV : ContDiff ℝ ∞ V) :
     (∇ ⬝ B t) x = 0
 ```
 
-**`Electromagnetism.ThreeDimension.ampereLaw`**, a theorem, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean#L77). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`Electromagnetism.ThreeDimension.ampereLaw`**, a theorem, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean#L77). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Ampère's law.
 
@@ -67,7 +67,7 @@ theorem ampereLaw (t : Time) (x : Space)
       (∇ ⨯ B t) x = μ₀ • J t x + μ₀ • ε₀ • ∂ₜ (fun t => E t x) t
 ```
 
-**`Electromagnetism.ThreeDimension.faradayLaw`**, a theorem, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean#L86). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`Electromagnetism.ThreeDimension.faradayLaw`**, a theorem, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean#L86). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Faraday's law.
 
@@ -86,4 +86,4 @@ theorem faradayLaw (t : Time) (x : Space) (hV : ContDiff ℝ ∞ V) :
 
 ## Sources
 
-- [Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean)
+- [Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean)

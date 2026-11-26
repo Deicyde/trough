@@ -8,7 +8,7 @@ proof: formalized
 
 # Moments, variance and Jordan projections
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Observable`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean): 26 declarations, 18 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Observable`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean): 26 declarations, 18 with a docstring.
 
 > Moments and variance of observables, and Jordan projections as effects and compressions.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Observable`, [Physl
 
 ## A. Moments and variance
 
-**`PhyslibAlpha.ProbabilisticTheory.IsJordanOrderUnit.moment`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L61).
+**`PhyslibAlpha.ProbabilisticTheory.IsJordanOrderUnit.moment`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L61).
 
 > The `n`-th moment of the observable `a` in the state `ω`: `moment_n(ω, a) = ω(a^n)`.
 
@@ -40,19 +40,19 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Observable`, [Physl
 def moment (n : ℕ) (ω : 𝓢[ℝ, E]) (a : E) : ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsJordanOrderUnit.moment_zero`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L63).
+**`PhyslibAlpha.ProbabilisticTheory.IsJordanOrderUnit.moment_zero`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L63).
 
 ```lean
 lemma moment_zero (ω : 𝓢[ℝ, E]) (a : E) : moment 0 ω a = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsJordanOrderUnit.moment_one`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L67).
+**`PhyslibAlpha.ProbabilisticTheory.IsJordanOrderUnit.moment_one`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L67).
 
 ```lean
 lemma moment_one (ω : 𝓢[ℝ, E]) (a : E) : moment 1 ω a = ω a
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsJordanOrderUnit.variance`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L72).
+**`PhyslibAlpha.ProbabilisticTheory.IsJordanOrderUnit.variance`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L72).
 
 > The variance of the observable `a` in the state `ω`, inherited from the generic covariance
 > form of its underlying linear functional.
@@ -61,7 +61,7 @@ lemma moment_one (ω : 𝓢[ℝ, E]) (a : E) : moment 1 ω a = ω a
 def variance (ω : 𝓢[ℝ, E]) (a : E) : ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsJordanOrderUnit.variance_eq`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L75).
+**`PhyslibAlpha.ProbabilisticTheory.IsJordanOrderUnit.variance_eq`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L75).
 
 > The variance is expressed directly, unfolding `moment 2` to the Jordan square.
 
@@ -69,7 +69,7 @@ def variance (ω : 𝓢[ℝ, E]) (a : E) : ℝ
 lemma variance_eq (ω : 𝓢[ℝ, E]) (a : E) : variance ω a = ω (a * a) - (ω a) ^ 2
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsJordanOrderUnit.moment_two_nonneg`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L81).
+**`PhyslibAlpha.ProbabilisticTheory.IsJordanOrderUnit.moment_two_nonneg`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L81).
 
 > The second moment of any observable is nonnegative: it is the state's value on the
 > (possible-outcome) Jordan square.
@@ -80,7 +80,7 @@ lemma moment_two_nonneg (ω : 𝓢[ℝ, E]) (a : E) : 0 ≤ moment 2 ω a
 
 ## B. Jordan projections and orthogonality
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L101).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L101).
 
 > A Jordan projection: an element idempotent for the Jordan product, `p ∘ p = p`. The
 > Jordan-algebraic analogue of a self-adjoint projection, and (in the canonical C⋆-algebra
@@ -90,7 +90,7 @@ lemma moment_two_nonneg (ω : 𝓢[ℝ, E]) (a : E) : 0 ≤ moment 2 ω a
 def IsJordanProjection (p : E) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanOrthogonal`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L105).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanOrthogonal`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L105).
 
 > Two elements are Jordan-orthogonal when their Jordan product vanishes, `p ∘ q = 0`: the
 > Jordan-algebraic analogue of `Effect.Orthogonal`.
@@ -99,37 +99,37 @@ def IsJordanProjection (p : E) : Prop
 def JordanOrthogonal (p q : E) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.isJordanProjection_zero`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L107).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.isJordanProjection_zero`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L107).
 
 ```lean
 lemma isJordanProjection_zero : IsJordanProjection (0 : E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.isJordanProjection_one`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L110).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.isJordanProjection_one`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L110).
 
 ```lean
 lemma isJordanProjection_one : IsJordanProjection (1 : E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.jordanOrthogonal_comm`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L112).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.jordanOrthogonal_comm`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L112).
 
 ```lean
 lemma jordanOrthogonal_comm {p q : E} (h : JordanOrthogonal p q) : JordanOrthogonal q p
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.jordanOrthogonal_zero_left`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L116).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.jordanOrthogonal_zero_left`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L116).
 
 ```lean
 lemma jordanOrthogonal_zero_left (p : E) : JordanOrthogonal 0 p
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.jordanOrthogonal_zero_right`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L119).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.jordanOrthogonal_zero_right`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L119).
 
 ```lean
 lemma jordanOrthogonal_zero_right (p : E) : JordanOrthogonal p 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.nonneg`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L130).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.nonneg`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L130).
 
 > A Jordan projection is automatically a possible outcome (`0 ≤ p`), since it equals its own
 > Jordan square.
@@ -138,7 +138,7 @@ lemma jordanOrthogonal_zero_right (p : E) : JordanOrthogonal p 0
 lemma IsJordanProjection.nonneg {p : E} (hp : IsJordanProjection p) : 0 ≤ p
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.add_of_jordanOrthogonal`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L136).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.add_of_jordanOrthogonal`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L136).
 
 > The sum of two orthogonal Jordan projections is again a Jordan projection: the abstract,
 > operator-free analogue of "two orthogonal projections add to a projection", the algebraic content
@@ -150,7 +150,7 @@ lemma IsJordanProjection.add_of_jordanOrthogonal {p q : E} (hp : IsJordanProject
     IsJordanProjection (p + q)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.complement`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L146).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.complement`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L146).
 
 > The complement `1 - p` of a Jordan projection is again a Jordan projection: the Jordan-algebra
 > analogue of `Effect.complement`.
@@ -160,7 +160,7 @@ lemma IsJordanProjection.complement {p : E} (hp : IsJordanProjection p) :
     IsJordanProjection (1 - p)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.jordanOrthogonal_complement`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L153).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.jordanOrthogonal_complement`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L153).
 
 > A Jordan projection is orthogonal to its own complement: `p ∘ (1 - p) = 0`.
 
@@ -171,7 +171,7 @@ lemma IsJordanProjection.jordanOrthogonal_complement {p : E} (hp : IsJordanProje
 
 ## C. Projections as effects
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.le_one`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L164).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.le_one`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L164).
 
 > A Jordan projection is bounded above by the order unit. Its complement is another projection,
 > hence a nonnegative square, and `0 ≤ 1 - p` is exactly `p ≤ 1`.
@@ -180,7 +180,7 @@ lemma IsJordanProjection.jordanOrthogonal_complement {p : E} (hp : IsJordanProje
 lemma IsJordanProjection.le_one {p : E} (hp : IsJordanProjection p) : p ≤ 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.toEffect`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L168).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.toEffect`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L168).
 
 > A Jordan projection, bundled as an effect.
 
@@ -188,14 +188,14 @@ lemma IsJordanProjection.le_one {p : E} (hp : IsJordanProjection p) : p ≤ 1
 def IsJordanProjection.toEffect {p : E} (hp : IsJordanProjection p) : Effect E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.coe_toEffect`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L172).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.coe_toEffect`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L172).
 
 ```lean
 lemma IsJordanProjection.coe_toEffect {p : E} (hp : IsJordanProjection p) :
     (hp.toEffect : E) = p
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.toEffect_complement`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L176).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.toEffect_complement`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L176).
 
 > Bundling a projection's algebraic complement agrees with taking its effect complement.
 
@@ -204,7 +204,7 @@ lemma IsJordanProjection.toEffect_complement {p : E} (hp : IsJordanProjection p)
     hp.complement.toEffect = Effect.complement hp.toEffect
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.effectOrthogonal_of_jordanOrthogonal`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L182).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.effectOrthogonal_of_jordanOrthogonal`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L182).
 
 > Jordan-orthogonal projections have a defined partial sum in the effect algebra. This is the
 > forward direction that follows from square positivity alone; the converse needs the stronger JB
@@ -216,7 +216,7 @@ lemma IsJordanProjection.effectOrthogonal_of_jordanOrthogonal {p q : E}
     Effect.Orthogonal hp.toEffect hq.toEffect
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.addOfOrthogonal_toEffect`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L189).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.addOfOrthogonal_toEffect`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L189).
 
 > The effect-algebra partial sum of Jordan-orthogonal projections is their algebraic projection
 > sum.
@@ -231,7 +231,7 @@ lemma IsJordanProjection.addOfOrthogonal_toEffect {p q : E}
 
 ## D. Compression: `U_p` for an idempotent `p`
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.quadRep_self`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L207).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.quadRep_self`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L207).
 
 > **Compression onto an event.** For a Jordan projection `p`, `U_p(p) = p`: compressing `p`
 > itself onto the event `p` changes nothing. The Jordan-algebraic seed of "the outcome that already
@@ -241,7 +241,7 @@ lemma IsJordanProjection.addOfOrthogonal_toEffect {p q : E}
 lemma IsJordanProjection.quadRep_self {p : E} (hp : IsJordanProjection p) : U p p = p
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.quadRep_jordanOrthogonal`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L214).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.quadRep_jordanOrthogonal`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L214).
 
 > `U_p q = 0` for projections `q` orthogonal to `p`.
 
@@ -250,7 +250,7 @@ lemma IsJordanProjection.quadRep_jordanOrthogonal {p q : E} (hp : IsJordanProjec
     (horth : JordanOrthogonal p q) : U p q = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.quadRep_one`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L224).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanProjection.quadRep_one`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean#L224).
 
 > **Compression of the unit recovers the event itself.** For a Jordan projection `p`,
 > `U_p(1) = p`: this is `quadRep_apply_one` specialized using `p² = p`.
@@ -270,4 +270,4 @@ lemma IsJordanProjection.quadRep_one {p : E} (hp : IsJordanProjection p) : U p (
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean)

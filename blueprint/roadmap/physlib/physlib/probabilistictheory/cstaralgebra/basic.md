@@ -8,7 +8,7 @@ proof: formalized
 
 # The observables of a C⋆-algebra (Physlib)
 
-The module `Physlib.ProbabilisticTheory.CStarAlgebra.Basic`, [Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean): 5 declarations, 5 with a docstring.
+The module `Physlib.ProbabilisticTheory.CStarAlgebra.Basic`, [Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean): 5 declarations, 5 with a docstring.
 
 > The self-adjoint part of a unital C⋆-algebra is an Archimedean order-unit space.
 
@@ -36,7 +36,7 @@ The module `Physlib.ProbabilisticTheory.CStarAlgebra.Basic`, [Physlib/Probabilis
 
 ## A. The order-unit space of observables
 
-**`ProbabilisticTheory.instPosSMulMonoSelfAdjoint`**, an instance, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean#L62).
+**`ProbabilisticTheory.instPosSMulMonoSelfAdjoint`**, an instance, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean#L62).
 
 > Nonnegative real scalars preserve the order on observables.
 
@@ -44,7 +44,7 @@ The module `Physlib.ProbabilisticTheory.CStarAlgebra.Basic`, [Physlib/Probabilis
 instance instPosSMulMonoSelfAdjoint : PosSMulMono ℝ (selfAdjoint 𝒜)
 ```
 
-**`ProbabilisticTheory.selfAdjoint_le_nsmul_one_ceil_norm`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean#L68).
+**`ProbabilisticTheory.selfAdjoint_le_nsmul_one_ceil_norm`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean#L68).
 
 > Every observable lies below a natural multiple of the identity.
 
@@ -55,7 +55,7 @@ lemma selfAdjoint_le_nsmul_one_ceil_norm (x : selfAdjoint 𝒜) :
 
 ## B. The Archimedean property
 
-**`ProbabilisticTheory.selfAdjoint_le_zero_of_forall_pos_smul_one_le`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean#L86).
+**`ProbabilisticTheory.selfAdjoint_le_zero_of_forall_pos_smul_one_le`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean#L86).
 
 > An observable below every positive multiple of the identity is below zero.
 
@@ -66,7 +66,7 @@ lemma selfAdjoint_le_zero_of_forall_pos_smul_one_le {x : selfAdjoint 𝒜}
 
 ## C. Quantum observables and scalar outcomes
 
-**`ProbabilisticTheory.ofCStarAlgebra`**, an abbrev, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean#L97).
+**`ProbabilisticTheory.ofCStarAlgebra`**, an abbrev, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean#L97).
 
 > The self-adjoint elements of a C⋆-algebra, with their Archimedean order and unit.
 
@@ -75,7 +75,7 @@ noncomputable abbrev ofCStarAlgebra (𝒜 : Type*) [CStarAlgebra 𝒜] [PartialO
     [StarOrderedRing 𝒜] : ProbabilisticTheory
 ```
 
-**`ProbabilisticTheory.realEquivComplex`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean#L105).
+**`ProbabilisticTheory.realEquivComplex`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean#L105).
 
 > The real numbers are the observables of the quantum system with algebra `ℂ`.
 
@@ -89,4 +89,4 @@ noncomputable def realEquivComplex : Reversible real (ofCStarAlgebra ℂ)
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean)
+- [Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean)

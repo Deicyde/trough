@@ -8,7 +8,7 @@ proof: formalized
 
 # The Degradable Order
 
-The module `QuantumInfo.Channels.DegradableOrder`, [QuantumInfo/Channels/DegradableOrder.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Channels/DegradableOrder.lean): 1 declaration, none with a docstring.
+The module `QuantumInfo.Channels.DegradableOrder`, [QuantumInfo/Channels/DegradableOrder.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Channels/DegradableOrder.lean): 1 declaration, none with a docstring.
 
 > We define the "degradable order" on channels, where M ≤ N if N can be degraded to M. This is a
 > scoped instance, because there are other reasonable orders on channels.
@@ -28,7 +28,7 @@ The module `QuantumInfo.Channels.DegradableOrder`, [QuantumInfo/Channels/Degrada
 > channels parameterized by their output type. And since the output type needs to be a Fintype and
 > DecidableEq, the argument is also a Sigma to bring this along.
 
-**`DegradablePreorder`**, a def, [line 37](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Channels/DegradableOrder.lean#L37).
+**`DegradablePreorder`**, a def, [line 37](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Channels/DegradableOrder.lean#L37).
 
 ```lean
 def DegradablePreorder (dIn : Type*) [Fintype dIn] [DecidableEq dIn] : Preorder
@@ -41,4 +41,4 @@ def DegradablePreorder (dIn : Type*) [Fintype dIn] [DecidableEq dIn] : Preorder
 
 ## Sources
 
-- [QuantumInfo/Channels/DegradableOrder.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/Channels/DegradableOrder.lean)
+- [QuantumInfo/Channels/DegradableOrder.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/Channels/DegradableOrder.lean)

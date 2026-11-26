@@ -8,7 +8,7 @@ proof: formalized
 
 # Spectral data of bounded normal and unitary operators
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Cayley.Certificate`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean): 9 declarations, 4 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Cayley.Certificate`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean): 9 declarations, 4 with a docstring.
 
 > Spectral measures reconstructing bounded normal and unitary operators.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Cayley.Certi
 
 ## A. Bounded normal spectral data
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedNormalSpectralData`**, a structure, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L60).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedNormalSpectralData`**, a structure, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L60).
 
 > A spectral measure on `ℂ` whose integral of the identity is the bounded normal operator `U`.
 
@@ -46,14 +46,14 @@ structure BoundedNormalSpectralData (U : H →L[ℂ] H) where
     spectralMeasure.complexWeakIntegral id x y = ⟪y, U x⟫_ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedNormalSpectralData.ext`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L71).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedNormalSpectralData.ext`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L71).
 
 ```lean
 lemma ext {D E : BoundedNormalSpectralData U}
     (h : D.spectralMeasure = E.spectralMeasure) : D = E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedNormalSpectralData.ext_of_boundedIntegral_eq`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L84).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedNormalSpectralData.ext_of_boundedIntegral_eq`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L84).
 
 ```lean
 lemma ext_of_boundedIntegral_eq {D E : BoundedNormalSpectralData U}
@@ -66,7 +66,7 @@ lemma ext_of_boundedIntegral_eq {D E : BoundedNormalSpectralData U}
 
 ## B. Bounded unitary spectral data
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedUnitarySpectralData`**, a structure, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L99).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedUnitarySpectralData`**, a structure, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L99).
 
 > A spectral measure of the unitary `u`, supported on the unit circle and giving no mass to `1`.
 
@@ -80,14 +80,14 @@ structure BoundedUnitarySpectralData (u : H ≃ₗᵢ[ℂ] H) where
     spectralMeasure.complexWeakIntegral id x y = ⟪y, u x⟫_ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedUnitarySpectralData.ext`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L112).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedUnitarySpectralData.ext`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L112).
 
 ```lean
 lemma ext {D E : BoundedUnitarySpectralData u}
     (h : D.spectralMeasure = E.spectralMeasure) : D = E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedUnitarySpectralData.ext_of_boundedIntegral_eq`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L121).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedUnitarySpectralData.ext_of_boundedIntegral_eq`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L121).
 
 ```lean
 lemma ext_of_boundedIntegral_eq {D E : BoundedUnitarySpectralData u}
@@ -98,7 +98,7 @@ lemma ext_of_boundedIntegral_eq {D E : BoundedUnitarySpectralData u}
     D = E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedUnitarySpectralData.realSpectralMeasure`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L133).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedUnitarySpectralData.realSpectralMeasure`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L133).
 
 > Pull the bounded unitary measure back to the real line.
 
@@ -106,14 +106,14 @@ lemma ext_of_boundedIntegral_eq {D E : BoundedUnitarySpectralData u}
 def realSpectralMeasure : WOTSpectralMeasure ℝ H
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedUnitarySpectralData.cayleyMap_realSpectralMeasure`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L136).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedUnitarySpectralData.cayleyMap_realSpectralMeasure`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L136).
 
 ```lean
 lemma cayleyMap_realSpectralMeasure :
     WOTSpectralMeasure.cayleyMap D.realSpectralMeasure = D.spectralMeasure
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedUnitarySpectralData.realSpectralMeasure_eq_of_cayleyMap_eq`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L163).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.BoundedUnitarySpectralData.realSpectralMeasure_eq_of_cayleyMap_eq`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean#L163).
 
 > The real measure recovered from bounded Cayley data is unique among real measures with the
 > same Cayley pushforward.
@@ -135,4 +135,4 @@ lemma realSpectralMeasure_eq_of_cayleyMap_eq
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean)

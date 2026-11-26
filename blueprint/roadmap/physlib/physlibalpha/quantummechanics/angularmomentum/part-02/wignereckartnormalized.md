@@ -8,7 +8,7 @@ proof: formalized
 
 # The Wigner–Eckart theorem with Clebsch–Gordan coefficients
 
-The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.WignerEckartNormalized`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean): 7 declarations, 5 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.WignerEckartNormalized`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean): 7 declarations, 5 with a docstring.
 
 > The matrix elements of a tensor operator in the orthonormal bases are a reduced matrix element
 > times the Clebsch–Gordan coefficients, and the total rate out of a substate does not depend on
@@ -53,13 +53,13 @@ The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.WignerEckartNormalized
 
 ## A. Exchanging the coupled angular momenta
 
-**`PhyslibAlpha.Sl2.neg_one_pow_congr_nat`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean#L77).
+**`PhyslibAlpha.Sl2.neg_one_pow_congr_nat`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean#L77).
 
 ```lean
 lemma neg_one_pow_congr_nat {p q : ℕ} (h : p % 2 = q % 2) : (-1 : ℝ) ^ p = (-1) ^ q
 ```
 
-**`PhyslibAlpha.Sl2.wigner3j_swap`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean#L85).
+**`PhyslibAlpha.Sl2.wigner3j_swap`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean#L85).
 
 > `(j₂ j₁ J; m₂ m₁ -M) = (-1)^(j₁ + j₂ + J) (j₁ j₂ J; m₁ m₂ -M)`.
 
@@ -69,7 +69,7 @@ lemma wigner3j_swap {k l α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n) (hl : l �
     wigner3j n m k l β α = (-1) ^ (m + n - k) * wigner3j m n k l α β
 ```
 
-**`PhyslibAlpha.Sl2.cgCoefficient_swap`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean#L107).
+**`PhyslibAlpha.Sl2.cgCoefficient_swap`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean#L107).
 
 > **Exchange symmetry.** `⟨j₁ m₁ j₂ m₂ | J M⟩ = (-1)^(j₁ + j₂ - J) ⟨j₂ m₂ j₁ m₁ | J M⟩`.
 
@@ -81,14 +81,14 @@ lemma cgCoefficient_swap (hmn : 0 < m + n) {k l α β : ℕ} (hkm : k ≤ m) (hk
 
 ## B. The projections in the orthonormal bases
 
-**`PhyslibAlpha.Sl2.stringVec_eq_smul_embed`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean#L131).
+**`PhyslibAlpha.Sl2.stringVec_eq_smul_embed`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean#L131).
 
 ```lean
 lemma stringVec_eq_smul_embed (hmn : 0 < m + n) (j : Fin (min m n + 1)) (l : ℕ) :
     stringVec m n j l = Real.sqrt (hwNormSq m n j) • embed hmn j (vNat _ l)
 ```
 
-**`PhyslibAlpha.Sl2.invForm_cgProj`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean#L139).
+**`PhyslibAlpha.Sl2.invForm_cgProj`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean#L139).
 
 > `⟨u, cgProj x⟩ = ⟨w_j, w_j⟩^(-1/2) ⟨embed u, x⟩`.
 
@@ -102,7 +102,7 @@ lemma invForm_cgProj (hmn : 0 < m + n) (j : Fin (min m n + 1))
 
 ## C. The Wigner–Eckart theorem
 
-**`PhyslibAlpha.Sl2.IsTensorOperator.exists_normVec_eq`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean#L180).
+**`PhyslibAlpha.Sl2.IsTensorOperator.exists_normVec_eq`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean#L180).
 
 > **Wigner–Eckart theorem with Clebsch–Gordan coefficients.** With `κ = k/2`, `μ = κ - q`,
 > `J = m/2`, `M = J - r`, `J' = (k + m)/2 - j` and `M' = J' - s`, there is a reduced matrix element
@@ -116,7 +116,7 @@ lemma exists_normVec_eq (hT : IsTensorOperator T) :
 
 ## D. The total strength out of a substate
 
-**`PhyslibAlpha.Sl2.IsTensorOperator.sum_sq_normVec`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean#L197).
+**`PhyslibAlpha.Sl2.IsTensorOperator.sum_sq_normVec`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean#L197).
 
 > **The total strength out of a substate.** If `⟨J' M' | T^κ_μ | J M⟩ = R · ⟨κ μ J M | J' M'⟩`,
 > then `Σ_{μ M'} |⟨J' M' | T^κ_μ | J M⟩|² = R² (2J' + 1) / (2J + 1)` for every `M`.
@@ -142,4 +142,4 @@ lemma sum_sq_normVec (R : ℝ)
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean)
+- [PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Binary measurements
 
-The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Binary`, [PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean): 5 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Binary`, [PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean): 5 declarations, 2 with a docstring.
 
 > The yes/no measurement defined by an effect of an Archimedean system.
 
@@ -27,7 +27,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Binary`, [PhyslibAlpha/
 
 ## A. Binary measurements
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.binaryAtom`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean#L46).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.binaryAtom`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean#L46).
 
 > The effect of each outcome of the binary measurement of `e`: `e` for `true`, its complement
 > for `false`.
@@ -36,13 +36,13 @@ The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Binary`, [PhyslibAlpha/
 def binaryAtom (e : Effect E) (b : Bool) : Effect E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.sum_binaryAtom`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean#L49).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.sum_binaryAtom`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean#L49).
 
 ```lean
 lemma sum_binaryAtom (e : Effect E) : ∑ b, (binaryAtom e b : E) = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.binaryMeasurement`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean#L55).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.binaryMeasurement`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean#L55).
 
 > The two-outcome measurement whose `true` effect is `e` and whose `false` effect is `1 - e`.
 
@@ -50,14 +50,14 @@ lemma sum_binaryAtom (e : Effect E) : ∑ b, (binaryAtom e b : E) = 1
 noncomputable def binaryMeasurement (e : Effect F) : Measurement Bool F
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.binaryMeasurement_true`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean#L59).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.binaryMeasurement_true`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean#L59).
 
 ```lean
 lemma binaryMeasurement_true (e : Effect F) (h : MeasurableSet {true}) :
     binaryMeasurement e {true} h = e
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Effect.binaryMeasurement_false`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean#L64).
+**`PhyslibAlpha.ProbabilisticTheory.Effect.binaryMeasurement_false`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean#L64).
 
 ```lean
 lemma binaryMeasurement_false (e : Effect F) (h : MeasurableSet {false}) :
@@ -71,4 +71,4 @@ lemma binaryMeasurement_false (e : Effect F) (h : MeasurableSet {false}) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean)

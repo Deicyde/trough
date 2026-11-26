@@ -8,7 +8,7 @@ proof: formalized
 
 # Alpha extensions for admissible local variations
 
-The module `PhyslibAlpha.ClassicalFieldTheory.Local.Variation`, [PhyslibAlpha/ClassicalFieldTheory/Local/Variation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Variation.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.Local.Variation`, [PhyslibAlpha/ClassicalFieldTheory/Local/Variation.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Variation.lean): 1 declaration, 1 with a docstring.
 
 > Euclidean components of admissible variations are test functions.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.Local.Variation`, [PhyslibAlpha/Cl
 
 ## A. Euclidean components of admissible variations
 
-**`ClassicalFieldTheory.Local.AdmissibleVariation.coord_euclidean`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Variation.lean#L56).
+**`ClassicalFieldTheory.Local.AdmissibleVariation.coord_euclidean`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Variation.lean#L56).
 
 > A Euclidean component of an admissible variation is again a test function.
 
@@ -46,4 +46,4 @@ lemma coord_euclidean (η : AdmissibleVariation d (EuclideanSpace ℝ (Fin m))) 
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/Local/Variation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Variation.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/Local/Variation.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Variation.lean)

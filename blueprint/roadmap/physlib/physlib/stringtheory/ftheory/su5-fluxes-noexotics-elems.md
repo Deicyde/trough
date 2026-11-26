@@ -8,7 +8,7 @@ proof: formalized
 
 # Terms of `FluxesFive` and `FluxesTen` with no chiral exotics
 
-The module `Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.Elems`, [Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean): 16 declarations, 2 with a docstring.
+The module `Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.Elems`, [Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean): 16 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.Elems`, [Physlib/S
 
 ### A.1. The definition of the multiset
 
-**`FTheory.SU5.FluxesFive.elemsNoExotics`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L81).
+**`FTheory.SU5.FluxesFive.elemsNoExotics`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L81).
 
 > The elements of `FluxesFive` for which the `NoExotics` condition holds.
 
@@ -47,7 +47,7 @@ def elemsNoExotics : Multiset FluxesFive
 
 ### A.2. The cardinality of the multiset is 31
 
-**`FTheory.SU5.FluxesFive.elemsNoExotics_card`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L111).
+**`FTheory.SU5.FluxesFive.elemsNoExotics_card`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L111).
 
 ```lean
 lemma elemsNoExotics_card : elemsNoExotics.card = 31
@@ -55,7 +55,7 @@ lemma elemsNoExotics_card : elemsNoExotics.card = 31
 
 ### A.3. The multiset has no duplicates
 
-**`FTheory.SU5.FluxesFive.elemsNoExotics_nodup`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L120).
+**`FTheory.SU5.FluxesFive.elemsNoExotics_nodup`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L120).
 
 ```lean
 lemma elemsNoExotics_nodup : elemsNoExotics.Nodup
@@ -63,7 +63,7 @@ lemma elemsNoExotics_nodup : elemsNoExotics.Nodup
 
 ### A.4. Every element of the multiset obeys `NoExotics`
 
-**`FTheory.SU5.FluxesFive.noExotics_of_mem_elemsNoExotics`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L129).
+**`FTheory.SU5.FluxesFive.noExotics_of_mem_elemsNoExotics`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L129).
 
 ```lean
 lemma noExotics_of_mem_elemsNoExotics (F : FluxesFive) (h : F ∈ elemsNoExotics) :
@@ -72,7 +72,7 @@ lemma noExotics_of_mem_elemsNoExotics (F : FluxesFive) (h : F ∈ elemsNoExotics
 
 ### A.5. Every element of the multiset has at most 4 distinct flux pairs
 
-**`FTheory.SU5.FluxesFive.toFinset_card_le_four_mem_elemsNoExotics`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L140).
+**`FTheory.SU5.FluxesFive.toFinset_card_le_four_mem_elemsNoExotics`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L140).
 
 ```lean
 lemma toFinset_card_le_four_mem_elemsNoExotics (F : FluxesFive) (h : F ∈ elemsNoExotics) :
@@ -81,7 +81,7 @@ lemma toFinset_card_le_four_mem_elemsNoExotics (F : FluxesFive) (h : F ∈ elems
 
 ### A.6. Every element of the multiset has at most 6 flux pairs
 
-**`FTheory.SU5.FluxesFive.card_le_six_mem_elemsNoExotics`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L151).
+**`FTheory.SU5.FluxesFive.card_le_six_mem_elemsNoExotics`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L151).
 
 ```lean
 lemma card_le_six_mem_elemsNoExotics (F : FluxesFive) (h : F ∈ elemsNoExotics) :
@@ -90,7 +90,7 @@ lemma card_le_six_mem_elemsNoExotics (F : FluxesFive) (h : F ∈ elemsNoExotics)
 
 ### A.7. The sum of all flux-pairs in any element of the multiset is (3, 0)
 
-**`FTheory.SU5.FluxesFive.sum_of_mem_elemsNoExotics`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L162).
+**`FTheory.SU5.FluxesFive.sum_of_mem_elemsNoExotics`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L162).
 
 ```lean
 lemma sum_of_mem_elemsNoExotics (F : FluxesFive) (h : F ∈ elemsNoExotics) :
@@ -99,7 +99,7 @@ lemma sum_of_mem_elemsNoExotics (F : FluxesFive) (h : F ∈ elemsNoExotics) :
 
 ### A.8. Every element of the multiset obeys `HasNoZero`
 
-**`FTheory.SU5.FluxesFive.hasNoZero_of_mem_elemsNoExotics`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L173).
+**`FTheory.SU5.FluxesFive.hasNoZero_of_mem_elemsNoExotics`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L173).
 
 ```lean
 lemma hasNoZero_of_mem_elemsNoExotics (F : FluxesFive) (h : F ∈ elemsNoExotics) :
@@ -108,7 +108,7 @@ lemma hasNoZero_of_mem_elemsNoExotics (F : FluxesFive) (h : F ∈ elemsNoExotics
 
 ### A.9. A sum relation for subsets of elements of the multiset
 
-**`FTheory.SU5.FluxesFive.map_sum_add_of_mem_powerset_elemsNoExotics`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L184).
+**`FTheory.SU5.FluxesFive.map_sum_add_of_mem_powerset_elemsNoExotics`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L184).
 
 ```lean
 lemma map_sum_add_of_mem_powerset_elemsNoExotics (F S : FluxesFive)
@@ -122,7 +122,7 @@ lemma map_sum_add_of_mem_powerset_elemsNoExotics (F S : FluxesFive)
 
 ### B.1. The definition of the multiset
 
-**`FTheory.SU5.FluxesTen.elemsNoExotics`**, a def, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L207).
+**`FTheory.SU5.FluxesTen.elemsNoExotics`**, a def, [line 207](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L207).
 
 > The elements of `FluxesTen` for which the `NoExotics` condition holds.
 
@@ -132,7 +132,7 @@ def elemsNoExotics : Multiset FluxesTen
 
 ### B.2. The cardinality of the multiset is 6
 
-**`FTheory.SU5.FluxesTen.elemsNoExotics_card`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L218).
+**`FTheory.SU5.FluxesTen.elemsNoExotics_card`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L218).
 
 ```lean
 lemma elemsNoExotics_card : elemsNoExotics.card = 6
@@ -140,7 +140,7 @@ lemma elemsNoExotics_card : elemsNoExotics.card = 6
 
 ### B.3. The multiset has no duplicates
 
-**`FTheory.SU5.FluxesTen.elemsNoExotics_nodup`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L227).
+**`FTheory.SU5.FluxesTen.elemsNoExotics_nodup`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L227).
 
 ```lean
 lemma elemsNoExotics_nodup : elemsNoExotics.Nodup
@@ -148,7 +148,7 @@ lemma elemsNoExotics_nodup : elemsNoExotics.Nodup
 
 ### B.4. Every element of the multiset obeys `NoExotics`
 
-**`FTheory.SU5.FluxesTen.noExotics_of_mem_elemsNoExotics`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L236).
+**`FTheory.SU5.FluxesTen.noExotics_of_mem_elemsNoExotics`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L236).
 
 ```lean
 lemma noExotics_of_mem_elemsNoExotics (F : FluxesTen) (h : F ∈ elemsNoExotics) :
@@ -157,7 +157,7 @@ lemma noExotics_of_mem_elemsNoExotics (F : FluxesTen) (h : F ∈ elemsNoExotics)
 
 ### B.5. Every element of the multiset has at most 3 distinct flux pairs
 
-**`FTheory.SU5.FluxesTen.toFinset_card_le_three_mem_elemsNoExotics`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L247).
+**`FTheory.SU5.FluxesTen.toFinset_card_le_three_mem_elemsNoExotics`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L247).
 
 ```lean
 lemma toFinset_card_le_three_mem_elemsNoExotics (F : FluxesTen) (h : F ∈ elemsNoExotics) :
@@ -166,7 +166,7 @@ lemma toFinset_card_le_three_mem_elemsNoExotics (F : FluxesTen) (h : F ∈ elems
 
 ### B.6. The sum of all flux-pairs in any element of the multiset is (3, 0)
 
-**`FTheory.SU5.FluxesTen.sum_of_mem_elemsNoExotics`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L258).
+**`FTheory.SU5.FluxesTen.sum_of_mem_elemsNoExotics`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L258).
 
 ```lean
 lemma sum_of_mem_elemsNoExotics (F : FluxesTen) (h : F ∈ elemsNoExotics) :
@@ -175,7 +175,7 @@ lemma sum_of_mem_elemsNoExotics (F : FluxesTen) (h : F ∈ elemsNoExotics) :
 
 ### B.7. Every element of the multiset obeys `HasNoZero`
 
-**`FTheory.SU5.FluxesTen.hasNoZero_of_mem_elemsNoExotics`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L269).
+**`FTheory.SU5.FluxesTen.hasNoZero_of_mem_elemsNoExotics`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean#L269).
 
 ```lean
 lemma hasNoZero_of_mem_elemsNoExotics (F : FluxesTen) (h : F ∈ elemsNoExotics) :
@@ -188,4 +188,4 @@ lemma hasNoZero_of_mem_elemsNoExotics (F : FluxesTen) (h : F ∈ elemsNoExotics)
 
 ## Sources
 
-- [Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean)
+- [Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Normal channels
 
-The module `PhyslibAlpha.ProbabilisticTheory.Channel.Normal`, [PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean): 7 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Channel.Normal`, [PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean): 7 declarations, 3 with a docstring.
 
 > Normal positive maps and channels: those preserving suprema of increasing sequences.
 
@@ -29,7 +29,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Channel.Normal`, [PhyslibAlpha/Prob
 
 ## A. Normal positive maps
 
-**`PositiveLinearMap.IsNormal`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean#L48).
+**`PositiveLinearMap.IsNormal`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean#L48).
 
 > A positive linear map is normal when it preserves least upper bounds of increasing
 > sequences.
@@ -38,20 +38,20 @@ The module `PhyslibAlpha.ProbabilisticTheory.Channel.Normal`, [PhyslibAlpha/Prob
 def IsNormal (φ : E →ₚ[ℝ] F) : Prop
 ```
 
-**`PositiveLinearMap.isNormal_id`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean#L51).
+**`PositiveLinearMap.isNormal_id`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean#L51).
 
 ```lean
 lemma isNormal_id : (PositiveLinearMap.id ℝ E).IsNormal
 ```
 
-**`PositiveLinearMap.IsNormal.comp`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean#L53).
+**`PositiveLinearMap.IsNormal.comp`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean#L53).
 
 ```lean
 lemma IsNormal.comp {φ : E →ₚ[ℝ] F} {ψ : F →ₚ[ℝ] G} (hφ : φ.IsNormal) (hψ : ψ.IsNormal) :
     (ψ.comp φ).IsNormal
 ```
 
-**`PositiveLinearMap.IsNormal.isLUB_partialSums`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean#L58).
+**`PositiveLinearMap.IsNormal.isLUB_partialSums`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean#L58).
 
 > A normal map preserves countable sums of positive elements.
 
@@ -63,7 +63,7 @@ lemma IsNormal.isLUB_partialSums {φ : E →ₚ[ℝ] F} (hφ : φ.IsNormal) {f :
 
 ## B. Normal channels
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal`**, an abbrev, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean#L75).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal`**, an abbrev, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean#L75).
 
 > A channel is normal when its underlying positive linear map is.
 
@@ -71,13 +71,13 @@ lemma IsNormal.isLUB_partialSums {φ : E →ₚ[ℝ] F} (hφ : φ.IsNormal) {f :
 abbrev IsNormal (φ : Channel E F) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.isNormal_id`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.isNormal_id`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean#L77).
 
 ```lean
 lemma isNormal_id : (UnitalPositiveLinearMap.id ℝ E).IsNormal
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal.comp`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean#L79).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal.comp`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean#L79).
 
 ```lean
 lemma IsNormal.comp {φ : Channel E F} {ψ : Channel F G} (hφ : φ.IsNormal) (hψ : ψ.IsNormal) :
@@ -90,4 +90,4 @@ lemma IsNormal.comp {φ : Channel E F} {ψ : Channel F G} (hφ : φ.IsNormal) (h
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean)

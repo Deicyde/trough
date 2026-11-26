@@ -8,7 +8,7 @@ proof: formalized
 
 # The integral of a radial function over the plane
 
-The module `PhyslibAlpha.Mathematics.MeasureTheory.RadialPlane`, [PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean): 7 declarations, 7 with a docstring.
+The module `PhyslibAlpha.Mathematics.MeasureTheory.RadialPlane`, [PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean): 7 declarations, 7 with a docstring.
 
 > Integrating a radial function over two extra variables gives the tail integral of its profile.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.Mathematics.MeasureTheory.RadialPlane`, [PhyslibAlpha/M
 
 > - `RadialPlane.hasDerivAt_tail` : the derivative of the tail integral.
 
-**`RadialPlane.RadialDecay`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean#L57).
+**`RadialPlane.RadialDecay`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean#L57).
 
 > The decay of the profile used in the radial estimates.
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.Mathematics.MeasureTheory.RadialPlane`, [PhyslibAlpha/M
 def RadialDecay (Φ : ℝ → ℂ) : Prop
 ```
 
-**`RadialPlane.radial_bound`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean#L61).
+**`RadialPlane.radial_bound`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean#L61).
 
 > A bound for the profile times the radius.
 
@@ -53,7 +53,7 @@ lemma radial_bound {Φ : ℝ → ℂ} {C : ℝ} (hC : ∀ u : ℝ, 0 ≤ u → �
     {x u : ℝ} (hx : 0 ≤ x) (hxu : x ≤ u) : ‖x • Φ u‖ ≤ |C| * (1 + ‖x‖) ^ (-(2 : ℝ))
 ```
 
-**`RadialPlane.integral_plane_radial`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean#L85).
+**`RadialPlane.integral_plane_radial`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean#L85).
 
 > **The integral of a radial function over the plane.**
 
@@ -63,7 +63,7 @@ lemma integral_plane_radial {Φ : ℝ → ℂ} (hΦ : RadialDecay Φ) {ρ : ℝ}
       (2 * Real.pi : ℝ) • ∫ u in Ioi ρ, u • Φ u
 ```
 
-**`RadialPlane.integrableOn_radial`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean#L169).
+**`RadialPlane.integrableOn_radial`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean#L169).
 
 > The profile times the radius is integrable on a half line.
 
@@ -72,7 +72,7 @@ lemma integrableOn_radial {Φ : ℝ → ℂ} (hΦ : RadialDecay Φ) {a : ℝ} (h
     IntegrableOn (fun u : ℝ => u • Φ u) (Ioi a)
 ```
 
-**`RadialPlane.hasDerivAt_tail`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean#L181).
+**`RadialPlane.hasDerivAt_tail`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean#L181).
 
 > **The derivative of the tail integral.**
 
@@ -81,7 +81,7 @@ lemma hasDerivAt_tail {Φ : ℝ → ℂ} (hΦ : RadialDecay Φ) {ρ : ℝ} (hρ 
     HasDerivAt (fun r : ℝ => ∫ u in Ioi r, u • Φ u) (-(ρ • Φ ρ)) ρ
 ```
 
-**`RadialPlane.radialDecay_of_vanishing`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean#L195).
+**`RadialPlane.radialDecay_of_vanishing`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean#L195).
 
 > A continuous profile that vanishes beyond some radius has the radial decay.
 
@@ -90,7 +90,7 @@ lemma radialDecay_of_vanishing {Φ : ℝ → ℂ} (hc : Continuous Φ) {S : ℝ}
     (h : ∀ u, S < u → Φ u = 0) : RadialDecay Φ
 ```
 
-**`RadialPlane.integral_plane_radial_zero`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean#L220).
+**`RadialPlane.integral_plane_radial_zero`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean#L220).
 
 > **The integral of a radial function over the plane at the origin.**
 
@@ -105,4 +105,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean)
+- [PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/MeasureTheory/RadialPlane.lean)

@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
  "modules": [
   {
    "file": "Physlib/Units/Basic.lean",
@@ -2322,7 +2322,7 @@
    "copyright": "2026 Nicolas Rouquette",
    "sections": [
     {
-     "line": 75,
+     "line": 72,
      "text": "## The same comparison over a non-standard basis\n\nA basis with two base dimensions of its own — `bit` and `symbol` — that\n`LTMCTDimensionBase` does not have. Nothing in the standard units system is involved."
     }
    ],
@@ -2330,7 +2330,7 @@
     {
      "name": "ParametricDimensionExamples.Info",
      "kind": "inductive",
-     "line": 83,
+     "line": 80,
      "doc": "A basis of information-theoretic base dimensions.",
      "statement": "inductive Info\n  /-- The information base dimension (bits). -/\n  | bit\n  /-- The symbol base dimension. -/\n  | symbol",
      "sorry": false
@@ -2338,7 +2338,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 89,
+     "line": 86,
      "doc": "",
      "statement": "instance : DimensionBasis Info",
      "sorry": false
@@ -2346,7 +2346,7 @@
     {
      "name": "ParametricDimensionExamples.bitDim",
      "kind": "def",
-     "line": 92,
+     "line": 89,
      "doc": "The `bit` base dimension.",
      "statement": "def bitDim : Dimension Info",
      "sorry": false
@@ -2354,7 +2354,7 @@
     {
      "name": "ParametricDimensionExamples.symbolDim",
      "kind": "def",
-     "line": 95,
+     "line": 92,
      "doc": "The `symbol` base dimension.",
      "statement": "def symbolDim : Dimension Info",
      "sorry": false

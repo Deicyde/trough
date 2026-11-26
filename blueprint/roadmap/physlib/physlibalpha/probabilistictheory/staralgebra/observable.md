@@ -8,7 +8,7 @@ proof: formalized
 
 # Observables
 
-The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Observable`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Observable.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Observable.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Observable`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Observable.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Observable.lean): 4 declarations, 4 with a docstring.
 
 > Observables as self-adjoint elements, and the real state on observables of a complex state.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Observable`, [PhyslibAl
 
 ## A. Observables
 
-**`PhyslibAlpha.ProbabilisticTheory.Observable`**, an abbrev, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Observable.lean#L46).
+**`PhyslibAlpha.ProbabilisticTheory.Observable`**, an abbrev, [line 46](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Observable.lean#L46).
 
 > An observable in a space with an additive involution.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Observable`, [PhyslibAl
 abbrev Observable (A : Type*) [AddGroup A] [StarAddMonoid A]
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.PositiveObservable`**, an abbrev, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Observable.lean#L49).
+**`PhyslibAlpha.ProbabilisticTheory.PositiveObservable`**, an abbrev, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Observable.lean#L49).
 
 > A positive observable in an ordered space with an additive involution.
 
@@ -46,7 +46,7 @@ abbrev PositiveObservable (A : Type*) [AddGroup A] [StarAddMonoid A] [PartialOrd
 
 ## B. The real state on observables
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.onObservables`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Observable.lean#L62).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.onObservables`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Observable.lean#L62).
 
 > The real state on observables induced by a complex state on the ambient starred space.
 
@@ -54,7 +54,7 @@ abbrev PositiveObservable (A : Type*) [AddGroup A] [StarAddMonoid A] [PartialOrd
 noncomputable def onObservables (ω : 𝓢[ℂ, A]) : 𝓢[ℝ, Observable A]
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.coe_onObservables_apply`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Observable.lean#L68).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.coe_onObservables_apply`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Observable.lean#L68).
 
 > Restricting a state to observables does not change its values, after regarding the real
 > expectation value as a complex number.
@@ -72,4 +72,4 @@ lemma coe_onObservables_apply (ω : 𝓢[ℂ, A]) (a : Observable A) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Observable.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Observable.lean)
+- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Observable.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Observable.lean)

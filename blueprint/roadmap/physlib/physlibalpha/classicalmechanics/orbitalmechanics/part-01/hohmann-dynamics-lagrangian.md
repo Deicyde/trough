@@ -8,7 +8,7 @@ proof: formalized
 
 # Lagrangian dynamics of the Hohmann transfer coast
 
-The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Lagrangian`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Lagrangian.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Lagrangian.lean): 3 declarations, 3 with a docstring; 7 private, not shown.
+The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Lagrangian`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Lagrangian.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Lagrangian.lean): 3 declarations, 3 with a docstring; 7 private, not shown.
 
 > The smooth coast satisfies the Euler–Lagrange equation for a Kepler Lagrangian on its radial range.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.La
 
 ## A. The Lagrangian on the plane
 
-**`ClassicalMechanics.HohmannTransfer.lagrangianSystem`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Lagrangian.lean#L84).
+**`ClassicalMechanics.HohmannTransfer.lagrangianSystem`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Lagrangian.lean#L84).
 
 > The Lagrangian system on the plane that agrees with the Kepler Lagrangian on the coast.
 
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.La
 def lagrangianSystem (p : Parameters) : LagrangianSystem 𝓘(ℝ, ℂ) ⟨ℂ⟩
 ```
 
-**`ClassicalMechanics.HohmannTransfer.lagrangianSystem_coord_eq`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Lagrangian.lean#L89).
+**`ClassicalMechanics.HohmannTransfer.lagrangianSystem_coord_eq`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Lagrangian.lean#L89).
 
 > Outside the modified region the coordinate Lagrangian is the original Kepler Lagrangian.
 
@@ -51,7 +51,7 @@ lemma lagrangianSystem_coord_eq (p : Parameters) (t₀ : Time) (t : ℝ) {q : �
 
 ## B. The Euler–Lagrange equation along the coast
 
-**`ClassicalMechanics.HohmannTransfer.eulerLagrange_position`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Lagrangian.lean#L131).
+**`ClassicalMechanics.HohmannTransfer.eulerLagrange_position`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Lagrangian.lean#L131).
 
 > The Hohmann transfer coast satisfies the Euler–Lagrange equation in the planar system.
 
@@ -71,4 +71,4 @@ lemma eulerLagrange_position (p : Parameters) (t₀ : Time) (t : ℝ) :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Lagrangian.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Lagrangian.lean)
+- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Lagrangian.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Lagrangian.lean)

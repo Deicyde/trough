@@ -8,7 +8,7 @@ proof: formalized
 
 # The action of the Euclidean group on `TimeAndSpace`
 
-The module `Physlib.SpaceAndTime.TimeAndSpace.EuclideanGroup.Action`, [Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean): 13 declarations, 12 with a docstring.
+The module `Physlib.SpaceAndTime.TimeAndSpace.EuclideanGroup.Action`, [Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean): 13 declarations, 12 with a docstring.
 
 ## i. Overview
 
@@ -30,7 +30,7 @@ The module `Physlib.SpaceAndTime.TimeAndSpace.EuclideanGroup.Action`, [Physlib/S
 
 ## A. The Euclidean group action
 
-**`TimeAndSpace.instMulActionEuclideanGroup`**, an instance, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L51).
+**`TimeAndSpace.instMulActionEuclideanGroup`**, an instance, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L51).
 
 > The Euclidean group acts on `TimeAndSpace d` by fixing time and acting on space.
 
@@ -39,7 +39,7 @@ noncomputable instance instMulActionEuclideanGroup :
     MulAction (EuclideanGroup d) (TimeAndSpace d)
 ```
 
-**`TimeAndSpace.smul_mk`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L65).
+**`TimeAndSpace.smul_mk`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L65).
 
 > Coordinate formula for the Euclidean-group action on `TimeAndSpace d`.
 
@@ -48,7 +48,7 @@ lemma smul_mk (g : EuclideanGroup d) (t : Time) (x : Space d) :
     g • ((t, x) : TimeAndSpace d) = (t, g • x)
 ```
 
-**`TimeAndSpace.fst_smul`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L72).
+**`TimeAndSpace.fst_smul`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L72).
 
 > The Euclidean-group action fixes the first coordinate.
 
@@ -57,7 +57,7 @@ lemma fst_smul (g : EuclideanGroup d) (tx : TimeAndSpace d) :
     (g • tx).1 = tx.1
 ```
 
-**`TimeAndSpace.snd_smul`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L79).
+**`TimeAndSpace.snd_smul`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L79).
 
 > The Euclidean-group action applies to the second coordinate.
 
@@ -66,7 +66,7 @@ lemma snd_smul (g : EuclideanGroup d) (tx : TimeAndSpace d) :
     (g • tx).2 = g • tx.2
 ```
 
-**`TimeAndSpace.time_smul`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L85).
+**`TimeAndSpace.time_smul`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L85).
 
 > The Euclidean-group action fixes the time projection.
 
@@ -75,7 +75,7 @@ lemma time_smul (g : EuclideanGroup d) (tx : TimeAndSpace d) :
     time (g • tx) = time tx
 ```
 
-**`TimeAndSpace.space_smul`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L90).
+**`TimeAndSpace.space_smul`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L90).
 
 > The Euclidean-group action applies to the space projection.
 
@@ -84,7 +84,7 @@ lemma space_smul (g : EuclideanGroup d) (tx : TimeAndSpace d) :
     space (g • tx) = g • space tx
 ```
 
-**`TimeAndSpace.dist_smul`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L95).
+**`TimeAndSpace.dist_smul`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L95).
 
 > The Euclidean-group action on `TimeAndSpace d` preserves product distance.
 
@@ -95,7 +95,7 @@ lemma dist_smul (g : EuclideanGroup d) (tx ty : TimeAndSpace d) :
 
 ## B. Temperate growth of the coordinate action
 
-**`TimeAndSpace.actionLinearMap`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L109).
+**`TimeAndSpace.actionLinearMap`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L109).
 
 > The linear part of the Euclidean-group action on `TimeAndSpace d`.
 
@@ -104,7 +104,7 @@ noncomputable def actionLinearMap (g : EuclideanGroup d) :
     TimeAndSpace d →L[ℝ] TimeAndSpace d
 ```
 
-**`TimeAndSpace.actionTranslation`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L118).
+**`TimeAndSpace.actionTranslation`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L118).
 
 > The translation part of the Euclidean-group action on `TimeAndSpace d`.
 
@@ -112,14 +112,14 @@ noncomputable def actionLinearMap (g : EuclideanGroup d) :
 noncomputable def actionTranslation (g : EuclideanGroup d) : TimeAndSpace d
 ```
 
-**`TimeAndSpace.smul_eq_actionLinearMap_add`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L121).
+**`TimeAndSpace.smul_eq_actionLinearMap_add`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L121).
 
 ```lean
 lemma smul_eq_actionLinearMap_add (g : EuclideanGroup d) (tx : TimeAndSpace d) :
     g • tx = actionLinearMap g tx + actionTranslation g
 ```
 
-**`TimeAndSpace.smul_hasTemperateGrowth`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L133).
+**`TimeAndSpace.smul_hasTemperateGrowth`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L133).
 
 > The Euclidean-group action on `TimeAndSpace d` has temperate growth.
 
@@ -128,7 +128,7 @@ lemma smul_hasTemperateGrowth (g : EuclideanGroup d) :
     Function.HasTemperateGrowth (fun tx : TimeAndSpace d => g • tx)
 ```
 
-**`TimeAndSpace.isometry_smul`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L144).
+**`TimeAndSpace.isometry_smul`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L144).
 
 > The Euclidean-group action on `TimeAndSpace d` is an isometry.
 
@@ -137,7 +137,7 @@ lemma isometry_smul (g : EuclideanGroup d) :
     Isometry (fun tx : TimeAndSpace d => g • tx)
 ```
 
-**`TimeAndSpace.antilipschitz_smul`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L149).
+**`TimeAndSpace.antilipschitz_smul`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean#L149).
 
 > The Euclidean-group action on `TimeAndSpace d` is antilipschitz.
 
@@ -153,4 +153,4 @@ lemma antilipschitz_smul (g : EuclideanGroup d) :
 
 ## Sources
 
-- [Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean)
+- [Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean)

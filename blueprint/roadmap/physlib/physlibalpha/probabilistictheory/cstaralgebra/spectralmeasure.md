@@ -8,7 +8,7 @@ proof: formalized
 
 # The distribution of an observable
 
-The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.SpectralMeasure`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean): 22 declarations, 17 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.SpectralMeasure`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean): 22 declarations, 17 with a docstring.
 
 > The outcome distribution of an observable in a state, and the measurement of an isolated eigenvalue.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.SpectralMeasure`, [Phy
 
 > * None.
 
-**`PhyslibAlpha.ProbabilisticTheory.spectralFunctional`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L54).
+**`PhyslibAlpha.ProbabilisticTheory.spectralFunctional`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L54).
 
 > The positive functional `f ↦ ω(f(a))` on continuous functions on the spectrum of `a`.
 
@@ -41,7 +41,7 @@ noncomputable def spectralFunctional (ω : 𝓢[ℂ, A]) (a : Observable A) :
     C(spectrum ℝ (a : A), ℝ) →ₚ[ℝ] ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.spectralFunctionalCc`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L76).
+**`PhyslibAlpha.ProbabilisticTheory.spectralFunctionalCc`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L76).
 
 > `spectralFunctional` on compactly supported functions.
 
@@ -50,7 +50,7 @@ noncomputable def spectralFunctionalCc (ω : 𝓢[ℂ, A]) (a : Observable A) :
     C_c(spectrum ℝ (a : A), ℝ) →ₚ[ℝ] ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.spectralMeasure`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L90).
+**`PhyslibAlpha.ProbabilisticTheory.spectralMeasure`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L90).
 
 > `spectralMeasure` on the spectrum itself; `realSpectralMeasure` below places it inside `ℝ`.
 
@@ -59,21 +59,21 @@ noncomputable def spectralMeasure (ω : 𝓢[ℂ, A]) (a : Observable A) :
     Measure (spectrum ℝ (a : A))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.spectralMeasure_isFiniteMeasure`**, an instance, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L94).
+**`PhyslibAlpha.ProbabilisticTheory.spectralMeasure_isFiniteMeasure`**, an instance, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L94).
 
 ```lean
 instance spectralMeasure_isFiniteMeasure (ω : 𝓢[ℂ, A]) (a : Observable A) :
     IsFiniteMeasure (spectralMeasure ω a)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.spectralFunctional_one`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L98).
+**`PhyslibAlpha.ProbabilisticTheory.spectralFunctional_one`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L98).
 
 ```lean
 lemma spectralFunctional_one (ω : 𝓢[ℂ, A]) (a : Observable A) :
     spectralFunctional ω a 1 = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.spectralMeasure_isProbabilityMeasure`**, an instance, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L108).
+**`PhyslibAlpha.ProbabilisticTheory.spectralMeasure_isProbabilityMeasure`**, an instance, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L108).
 
 > Total mass one, matching `ω(1) = 1`.
 
@@ -82,7 +82,7 @@ instance spectralMeasure_isProbabilityMeasure (ω : 𝓢[ℂ, A]) (a : Observabl
     IsProbabilityMeasure (spectralMeasure ω a)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.spectralMeasure_integral`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L116).
+**`PhyslibAlpha.ProbabilisticTheory.spectralMeasure_integral`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L116).
 
 > `∫ f dμ = ω(f(a))` on the spectrum.
 
@@ -93,7 +93,7 @@ lemma spectralMeasure_integral (ω : 𝓢[ℂ, A]) (a : Observable A)
       ∫ x, f x ∂(spectralMeasure ω a)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.realSpectralMeasure`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L127).
+**`PhyslibAlpha.ProbabilisticTheory.realSpectralMeasure`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L127).
 
 > **The distribution of `a` in `ω`**, the probability measure `μ_{ω,a}` on `ℝ` with `ω(f(a)) = ∫ f
 > dμ\_\{ω,a}`.
@@ -102,14 +102,14 @@ lemma spectralMeasure_integral (ω : 𝓢[ℂ, A]) (a : Observable A)
 noncomputable def realSpectralMeasure (ω : 𝓢[ℂ, A]) (a : Observable A) : Measure ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.realSpectralMeasure_isProbabilityMeasure`**, an instance, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L130).
+**`PhyslibAlpha.ProbabilisticTheory.realSpectralMeasure_isProbabilityMeasure`**, an instance, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L130).
 
 ```lean
 instance realSpectralMeasure_isProbabilityMeasure (ω : 𝓢[ℂ, A]) (a : Observable A) :
     IsProbabilityMeasure (realSpectralMeasure ω a)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.realSpectralMeasure_compl_spectrum`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L135).
+**`PhyslibAlpha.ProbabilisticTheory.realSpectralMeasure_compl_spectrum`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L135).
 
 > `μ_{ω,a}` is concentrated on `a`'s spectrum.
 
@@ -118,7 +118,7 @@ lemma realSpectralMeasure_compl_spectrum (ω : 𝓢[ℂ, A]) (a : Observable A) 
     realSpectralMeasure ω a (spectrum ℝ (a : A))ᶜ = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.realSpectralMeasure_integral`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L146).
+**`PhyslibAlpha.ProbabilisticTheory.realSpectralMeasure_integral`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L146).
 
 > `∫ f dμ_{ω,a} = ω(f(a))`, for any `f` continuous on the spectrum of `a`.
 
@@ -129,7 +129,7 @@ lemma realSpectralMeasure_integral (ω : 𝓢[ℂ, A]) (a : Observable A) (f : �
       ∫ y, f y ∂(realSpectralMeasure ω a)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.exists_continuousOn_extend`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L166).
+**`PhyslibAlpha.ProbabilisticTheory.exists_continuousOn_extend`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L166).
 
 > Every continuous function on the spectrum extends to one on `ℝ`, continuous on the spectrum.
 
@@ -139,7 +139,7 @@ lemma exists_continuousOn_extend (a : Observable A) (g : C(spectrum ℝ (a : A),
       ∀ x : spectrum ℝ (a : A), f (x : ℝ) = g x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.comap_integral_eq`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L179).
+**`PhyslibAlpha.ProbabilisticTheory.comap_integral_eq`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L179).
 
 > If a measure `μ` on `ℝ` reproduces `ω(f(a))` for every continuous `f`, then pulling `μ` back
 > to the spectrum integrates every continuous test
@@ -156,7 +156,7 @@ lemma comap_integral_eq (ω : 𝓢[ℂ, A]) (a : Observable A) (μ : Measure ℝ
       ∫ x, g x ∂(spectralMeasure ω a)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.realSpectralMeasure_unique`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L216).
+**`PhyslibAlpha.ProbabilisticTheory.realSpectralMeasure_unique`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L216).
 
 > `μ_{ω,a}` is the only probability measure on `ℝ`, concentrated on `a`'s spectrum, with
 > `∫ f dμ = ω(f(a))`: any other measure with these two properties already is `μ_{ω,a}`.
@@ -177,7 +177,7 @@ lemma realSpectralMeasure_unique (ω : 𝓢[ℂ, A]) (a : Observable A) (μ : Me
 > takes the value `x`, and the probability of `true` in `ω` is `μ_{ω,a}({x})`. Spectral projections of
 > arbitrary Borel sets need the Borel functional calculus.
 
-**`PhyslibAlpha.ProbabilisticTheory.eigenIndicator`**, a def, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L254).
+**`PhyslibAlpha.ProbabilisticTheory.eigenIndicator`**, a def, [line 254](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L254).
 
 > The indicator function of an isolated point `x` of `a`'s spectrum, as a continuous function on
 > the spectrum: continuous because `{x}` is clopen (`IsClopen.continuous_indicator`).
@@ -187,7 +187,7 @@ noncomputable def eigenIndicator (a : Observable A) {x : spectrum ℝ (a : A)}
     (hx : IsClopen ({x} : Set (spectrum ℝ (a : A)))) : C(spectrum ℝ (a : A), ℝ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.eigenIndicator_apply`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L260).
+**`PhyslibAlpha.ProbabilisticTheory.eigenIndicator_apply`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L260).
 
 ```lean
 lemma eigenIndicator_apply (a : Observable A) {x : spectrum ℝ (a : A)}
@@ -195,7 +195,7 @@ lemma eigenIndicator_apply (a : Observable A) {x : spectrum ℝ (a : A)}
     eigenIndicator a hx y = Set.indicator {x} 1 y
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.eigenEffect`**, a def, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L265).
+**`PhyslibAlpha.ProbabilisticTheory.eigenEffect`**, a def, [line 265](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L265).
 
 > The spectral projection of `a` at an isolated point `x` of its spectrum.
 
@@ -204,7 +204,7 @@ noncomputable def eigenEffect (a : Observable A) {x : spectrum ℝ (a : A)}
     (hx : IsClopen ({x} : Set (spectrum ℝ (a : A)))) : Effect (Observable A)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.eigenIndicator_mul_self`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L288).
+**`PhyslibAlpha.ProbabilisticTheory.eigenIndicator_mul_self`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L288).
 
 ```lean
 lemma eigenIndicator_mul_self (a : Observable A) {x : spectrum ℝ (a : A)}
@@ -212,7 +212,7 @@ lemma eigenIndicator_mul_self (a : Observable A) {x : spectrum ℝ (a : A)}
     eigenIndicator a hx * eigenIndicator a hx = eigenIndicator a hx
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.isIdempotentElem_eigenEffect`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L297).
+**`PhyslibAlpha.ProbabilisticTheory.isIdempotentElem_eigenEffect`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L297).
 
 > `eigenEffect` is idempotent: `cfcHom` is an algebra homomorphism, and the indicator function
 > `eigenIndicator a hx` is already idempotent under pointwise multiplication.
@@ -223,7 +223,7 @@ lemma isIdempotentElem_eigenEffect (a : Observable A) {x : spectrum ℝ (a : A)}
     IsIdempotentElem (((eigenEffect a hx : Effect (Observable A)) : Observable A) : A)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.isSharp_eigenEffect`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L305).
+**`PhyslibAlpha.ProbabilisticTheory.isSharp_eigenEffect`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L305).
 
 > The spectral projection at an isolated point is sharp.
 
@@ -233,7 +233,7 @@ lemma isSharp_eigenEffect (a : Observable A) {x : spectrum ℝ (a : A)}
     Effect.IsSharp (eigenEffect a hx)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.eigenMeasurement`**, a def, [line 311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L311).
+**`PhyslibAlpha.ProbabilisticTheory.eigenMeasurement`**, a def, [line 311](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L311).
 
 > The two-outcome measurement "does `a` read out the isolated spectral point `x`, or not?"
 
@@ -242,7 +242,7 @@ noncomputable def eigenMeasurement (a : Observable A) {x : spectrum ℝ (a : A)}
     (hx : IsClopen ({x} : Set (spectrum ℝ (a : A)))) : Measurement Bool (Observable A)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.eigenMeasurement_true`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L318).
+**`PhyslibAlpha.ProbabilisticTheory.eigenMeasurement_true`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean#L318).
 
 > The probability that `eigenMeasurement` reads out `x` in `ω` is `μ_{ω,a}({x})`: the Born rule
 > of the two-outcome measurement "does `a` read out `x`?" agrees with the probability measure built
@@ -269,4 +269,4 @@ lemma eigenMeasurement_true (ω : 𝓢[ℂ, A]) (a : Observable A)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean)
+- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean)

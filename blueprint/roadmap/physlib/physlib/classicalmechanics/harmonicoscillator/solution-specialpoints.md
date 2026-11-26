@@ -8,7 +8,7 @@ proof: formalized
 
 # Special conditions of the trajectory
 
-The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.SpecialPoints`, [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean): 7 declarations, 7 with a docstring.
+The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.SpecialPoints`, [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean): 7 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -42,7 +42,7 @@ The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.SpecialPoints
 > `AmplitudePhase`. We now transport those identities back to ordinary `InitialConditions` using
 > `AmplitudePhase.fromInitialConditions`.
 
-**`ClassicalMechanics.HarmonicOscillator.trajectory_eq_cos`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean#L69).
+**`ClassicalMechanics.HarmonicOscillator.trajectory_eq_cos`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean#L69).
 
 > Every trajectory of the harmonic oscillator is a single shifted cosine after converting its
 > initial conditions to amplitude-phase form.
@@ -54,7 +54,7 @@ lemma trajectory_eq_cos (IC : InitialConditions) (t : Time) :
         cos (S.ω * t - (AmplitudePhase.fromInitialConditions S IC).φ))
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.trajectory_velocity_eq_sin`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean#L79).
+**`ClassicalMechanics.HarmonicOscillator.trajectory_velocity_eq_sin`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean#L79).
 
 > The velocity of every trajectory is the corresponding shifted sine in amplitude-phase form.
 
@@ -71,7 +71,7 @@ lemma trajectory_velocity_eq_sin (IC : InitialConditions) (t : Time) :
 > vanishes exactly when `sin (ω t - φ) = 0`, equivalently when `ω t - φ` is an
 > integer multiple of `π`.
 
-**`ClassicalMechanics.HarmonicOscillator.trajectory_velocity_eq_zero_iff_sin_eq_zero`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean#L100).
+**`ClassicalMechanics.HarmonicOscillator.trajectory_velocity_eq_zero_iff_sin_eq_zero`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean#L100).
 
 > For nonzero amplitude, the velocity vanishes exactly when the sine factor in
 > amplitude-phase form vanishes.
@@ -83,7 +83,7 @@ lemma trajectory_velocity_eq_zero_iff_sin_eq_zero (IC : InitialConditions)
       sin (S.ω * t.val - (AmplitudePhase.fromInitialConditions S IC).φ) = 0
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.trajectory_velocity_eq_zero_iff_exists_int`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean#L108).
+**`ClassicalMechanics.HarmonicOscillator.trajectory_velocity_eq_zero_iff_exists_int`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean#L108).
 
 > For nonzero amplitude, the velocity is zero exactly at phase times `φ + nπ`.
 
@@ -105,7 +105,7 @@ lemma trajectory_velocity_eq_zero_iff_exists_int (IC : InitialConditions)
 > The statement also covers the degenerate case `A = 0`: then the trajectory and its velocity are
 > identically zero, so both sides of the equivalence hold at every time.
 
-**`ClassicalMechanics.HarmonicOscillator.trajectory_velocity_eq_zero_iff_norm_eq_amplitude`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean#L141).
+**`ClassicalMechanics.HarmonicOscillator.trajectory_velocity_eq_zero_iff_norm_eq_amplitude`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean#L141).
 
 > The velocity vanishes exactly when the trajectory has norm equal to the amplitude.
 
@@ -122,7 +122,7 @@ lemma trajectory_velocity_eq_zero_iff_norm_eq_amplitude (IC : InitialConditions)
 > vanishes exactly when `cos (ω t - φ) = 0`, equivalently when the phase is an odd multiple
 > of `π / 2`.
 
-**`ClassicalMechanics.HarmonicOscillator.trajectory_eq_zero_iff_cos_eq_zero`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean#L180).
+**`ClassicalMechanics.HarmonicOscillator.trajectory_eq_zero_iff_cos_eq_zero`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean#L180).
 
 > For nonzero amplitude, the trajectory passes through zero exactly when the cosine factor in
 > amplitude-phase form vanishes.
@@ -134,7 +134,7 @@ lemma trajectory_eq_zero_iff_cos_eq_zero (IC : InitialConditions)
       cos (S.ω * t.val - (AmplitudePhase.fromInitialConditions S IC).φ) = 0
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.trajectory_eq_zero_iff_exists_int`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean#L189).
+**`ClassicalMechanics.HarmonicOscillator.trajectory_eq_zero_iff_exists_int`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean#L189).
 
 > For nonzero amplitude, the trajectory passes through zero exactly at phase times
 > `φ + (2n + 1)π / 2`.
@@ -154,4 +154,4 @@ lemma trajectory_eq_zero_iff_exists_int (IC : InitialConditions)
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean)
+- [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean)

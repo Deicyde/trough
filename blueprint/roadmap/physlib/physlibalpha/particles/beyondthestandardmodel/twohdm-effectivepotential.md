@@ -8,7 +8,7 @@ proof: formalized
 
 # The effective potential of the two Higgs doublet model
 
-The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.EffectivePotential`, [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/EffectivePotential.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/EffectivePotential.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.EffectivePotential`, [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/EffectivePotential.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/EffectivePotential.lean): 4 declarations, 4 with a docstring.
 
 > Effective potentials of the 2HDM, their gauge invariance, and their maximum mass dimension.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.EffectivePotent
 
 > * None.
 
-**`TwoHiggsDoublet.EffectivePotential`**, an abbrev, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/EffectivePotential.lean#L53).
+**`TwoHiggsDoublet.EffectivePotential`**, an abbrev, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/EffectivePotential.lean#L53).
 
 > A general potential of the Higgs field.
 
@@ -43,7 +43,7 @@ abbrev EffectivePotential : Type
 
 ## A. The effective potential and its gauge invariance
 
-**`TwoHiggsDoublet.EffectivePotential.IsInvariant`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/EffectivePotential.lean#L63).
+**`TwoHiggsDoublet.EffectivePotential.IsInvariant`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/EffectivePotential.lean#L63).
 
 > The proposition that the general potential is invariant under
 > the global action of the gauge group.
@@ -54,7 +54,7 @@ def IsInvariant (V : EffectivePotential) : Prop
 
 ## B. Maximum mass dimension
 
-**`TwoHiggsDoublet.EffectivePotential.HasMaxMassDimLE`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/EffectivePotential.lean#L72).
+**`TwoHiggsDoublet.EffectivePotential.HasMaxMassDimLE`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/EffectivePotential.lean#L72).
 
 > The proposition that the potential `V` has a maximum mass dimension
 > less then or equal to `n` - also implying it is a polynomial.
@@ -63,7 +63,7 @@ def IsInvariant (V : EffectivePotential) : Prop
 def HasMaxMassDimLE (V : EffectivePotential) (n : ℕ) : Prop
 ```
 
-**`TwoHiggsDoublet.EffectivePotential.HasMaxMassDimLE.exists_comp_linear_poly`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/EffectivePotential.lean#L79).
+**`TwoHiggsDoublet.EffectivePotential.HasMaxMassDimLE.exists_comp_linear_poly`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/EffectivePotential.lean#L79).
 
 > A polynomial potential, restricted along any real-linear parametrisation `L` of field
 > configurations, is a genuine polynomial in the parameters. This is the bookkeeping that lets the
@@ -82,4 +82,4 @@ lemma HasMaxMassDimLE.exists_comp_linear_poly {V : EffectivePotential} {n : ℕ}
 
 ## Sources
 
-- [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/EffectivePotential.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/EffectivePotential.lean)
+- [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/EffectivePotential.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/EffectivePotential.lean)

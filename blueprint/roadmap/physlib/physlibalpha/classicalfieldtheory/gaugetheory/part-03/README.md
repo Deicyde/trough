@@ -2,20 +2,29 @@
 navigation: transparent
 ---
 
-# Realizations of the covariant… to The mass-weight filtration and…
+# The adjoint action of a global… to The eigenspaces of the elements…
 
-- [Realizations of the covariant field algebra (LocalCovField/Realization)](localcovfield-realization.md)
-- [The covariant sector algebras of the local field algebra](localcovfield-sector.md)
-- [Realizations of the covariant sector algebras](localcovfield-sectorrealization.md)
+- [The adjoint action of a global gauge group on its Lie algebra](globalgaugegroup-liealgebra-adjoint.md)
+- [The Lie algebra jets of a global gauge group](globalgaugegroup-liealgebra-jet.md)
+- [One-parameter subgroups of a global gauge group](globalgaugegroup-liealgebra-oneparameter.md)
 
-Modules in [LocalField/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField):
+Modules in [GlobalGaugeGroup/SU/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/SU):
 
-- [The local field algebra of a gauge theory and its universal property](localfield-basic.md)
-- [The covariant derivatives in the local field algebra](localfield-covariantderiv.md)
-- [The jet gauge action on the local field algebra](localfield-gaugeaction.md)
-- [The gauge sector as the complexified gauge-only algebra](localfield-gaugesector.md)
-- [Realizations of the ordinary gauge sector](localfield-gaugesectorrealization.md)
-- [`V`-valued jets](localfield-jet.md)
-- [Fibrewise actions on `V`-valued jets](localfield-jetrep.md)
-- [The Lorentz action on the local field algebra](localfield-lorentzaction.md)
-- [The mass-weight filtration and the invariants of a local field algebra](localfield-massweight.md)
+- [The adjoint representation of `SU(N)`](globalgaugegroup-su-adjoint.md)
+- [The Lie algebra `su(n)` over a `*`-algebra](globalgaugegroup-su-algebra.md)
+- [The eigenspaces of the centre of `SU(N)`](globalgaugegroup-su-centreeigenspace.md)
+- [The generalized Gell-Mann matrices (PhyslibAlpha)](globalgaugegroup-su-gellmann.md)
+- [The complex tensor species of `SU(N)`](globalgaugegroup-su-tensorspecies.md)
+
+Modules in [GlobalGaugeGroup/SU/Invariants/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/SU/Invariants):
+
+- [What commutes with the adjoint action of `SU(N)`, and the Reynolds element of its tensors](globalgaugegroup-su-invariants-basic.md)
+- [The unit tensor of the adjoint colour of `SU(N)`](globalgaugegroup-su-invariants-adjunit.md)
+- [The Kronecker delta of `SU(N)`](globalgaugegroup-su-invariants-delta.md)
+- [The generator tensor of `SU(N)`](globalgaugegroup-su-invariants-generator.md)
+- [The Levi-Civita tensors of `SU(N)`](globalgaugegroup-su-invariants-levicivita.md)
+- [The pairings of four fundamental indices of `SU(2)` by the Levi-Civita symbol](globalgaugegroup-su-invariants-levicivitapairing.md)
+
+Modules in [GlobalGaugeGroup/U1/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GlobalGaugeGroup/U1):
+
+- [The eigenspaces of the elements of `U(1)`](globalgaugegroup-u1-centreeigenspace.md)

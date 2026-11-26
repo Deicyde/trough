@@ -8,7 +8,7 @@ proof: formalized
 
 # Covariance (Physlib)
 
-The module `Physlib.QuantumMechanics.Operators.Covariance`, [Physlib/QuantumMechanics/Operators/Covariance.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Covariance.lean): 5 declarations, 4 with a docstring.
+The module `Physlib.QuantumMechanics.Operators.Covariance`, [Physlib/QuantumMechanics/Operators/Covariance.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Covariance.lean): 5 declarations, 4 with a docstring.
 
 ## i. Overview
 
@@ -29,7 +29,7 @@ The module `Physlib.QuantumMechanics.Operators.Covariance`, [Physlib/QuantumMech
 
 ## A. Covariance
 
-**`LinearPMap.covariance`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Covariance.lean#L58).
+**`LinearPMap.covariance`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Covariance.lean#L58).
 
 > Covariance, defined as the real part of the centered inner product.
 
@@ -37,7 +37,7 @@ The module `Physlib.QuantumMechanics.Operators.Covariance`, [Physlib/QuantumMech
 def covariance : ℝ
 ```
 
-**`LinearPMap.covariance_eq_re_inner_centered`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Covariance.lean#L62).
+**`LinearPMap.covariance_eq_re_inner_centered`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Covariance.lean#L62).
 
 > Covariance, unfolded to the real part of the centered inner product.
 
@@ -47,7 +47,7 @@ lemma covariance_eq_re_inner_centered :
       (⟪centered A ψ, centered B ⟨ψ, hψB⟩⟫_ℂ).re
 ```
 
-**`LinearPMap.covariance_comm`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Covariance.lean#L68).
+**`LinearPMap.covariance_comm`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Covariance.lean#L68).
 
 > Swapping the two observables does not change the covariance.
 
@@ -56,7 +56,7 @@ lemma covariance_comm :
     covariance A B ψ hψB = covariance B A ⟨ψ, hψB⟩ ψ.2
 ```
 
-**`LinearPMap.covariance_eq_re_symm_centered`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Covariance.lean#L81).
+**`LinearPMap.covariance_eq_re_symm_centered`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Covariance.lean#L81).
 
 > Covariance as the real part of the symmetrized centered inner product.
 
@@ -67,7 +67,7 @@ lemma covariance_eq_re_symm_centered :
         ⟪centered B ⟨ψ, hψB⟩, centered A ψ⟫_ℂ).re) / 2
 ```
 
-**`LinearPMap.covariance_self_eq_variance`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Covariance.lean#L93).
+**`LinearPMap.covariance_self_eq_variance`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Covariance.lean#L93).
 
 ```lean
 lemma covariance_self_eq_variance (A : H →ₗ.[ℂ] H) (ψ : A.domain) :
@@ -80,4 +80,4 @@ lemma covariance_self_eq_variance (A : H →ₗ.[ℂ] H) (ψ : A.domain) :
 
 ## Sources
 
-- [Physlib/QuantumMechanics/Operators/Covariance.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Covariance.lean)
+- [Physlib/QuantumMechanics/Operators/Covariance.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Covariance.lean)

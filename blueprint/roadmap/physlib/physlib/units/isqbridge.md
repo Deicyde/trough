@@ -8,7 +8,7 @@ proof: formalized
 
 # Bridging PhysLib's default basis and the ISQ basis
 
-The module `Physlib.Units.ISQBridge`, [Physlib/Units/ISQBridge.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQBridge.lean): 13 declarations, 13 with a docstring.
+The module `Physlib.Units.ISQBridge`, [Physlib/Units/ISQBridge.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQBridge.lean): 13 declarations, 13 with a docstring.
 
 > `LTMCTDimensionBase` (length, time, mass, charge, temperature) and `ISQDimensionBase`
 > (the seven ISO/IEC 80000-1 base quantities) make different base/derived choices. This
@@ -31,7 +31,7 @@ The module `Physlib.Units.ISQBridge`, [Physlib/Units/ISQBridge.lean](https://git
 > That is the asymmetry: one can reduce ISQ to LTMCT, but not conjure the extra base
 > quantities back without *adding* them.
 
-**`Dimension.toISQFun`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQBridge.lean#L46).
+**`Dimension.toISQFun`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQBridge.lean#L46).
 
 > The function underlying `toISQHom`: fix length, mass, time and temperature, and
 > send PhysLib's charge generator to the derived ISQ charge `I · T` (the current
@@ -41,7 +41,7 @@ The module `Physlib.Units.ISQBridge`, [Physlib/Units/ISQBridge.lean](https://git
 def toISQFun (d : Dimension LTMCTDimensionBase) : Dimension ISQDimensionBase
 ```
 
-**`Dimension.toISQHom`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQBridge.lean#L57).
+**`Dimension.toISQHom`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQBridge.lean#L57).
 
 > The dimension-preserving embedding of PhysLib dimensions into the ISQ dimensions.
 
@@ -49,7 +49,7 @@ def toISQFun (d : Dimension LTMCTDimensionBase) : Dimension ISQDimensionBase
 def toISQHom : Dimension LTMCTDimensionBase →* Dimension ISQDimensionBase
 ```
 
-**`Dimension.toISQHom_apply`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQBridge.lean#L66).
+**`Dimension.toISQHom_apply`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQBridge.lean#L66).
 
 > `toISQHom` applied to a dimension is `toISQFun`.
 
@@ -57,7 +57,7 @@ def toISQHom : Dimension LTMCTDimensionBase →* Dimension ISQDimensionBase
 lemma toISQHom_apply (d : Dimension LTMCTDimensionBase) : toISQHom d = toISQFun d
 ```
 
-**`Dimension.fromISQFun`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQBridge.lean#L71).
+**`Dimension.fromISQFun`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQBridge.lean#L71).
 
 > The function underlying `fromISQHom`: fix length, mass and temperature, read
 > electric current as charge/time (the charge exponent is the current exponent, and the
@@ -67,7 +67,7 @@ lemma toISQHom_apply (d : Dimension LTMCTDimensionBase) : toISQHom d = toISQFun 
 def fromISQFun (d : Dimension ISQDimensionBase) : Dimension LTMCTDimensionBase
 ```
 
-**`Dimension.fromISQHom`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQBridge.lean#L80).
+**`Dimension.fromISQHom`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQBridge.lean#L80).
 
 > The truth-preserving reduction of ISQ dimensions onto PhysLib's.
 
@@ -75,7 +75,7 @@ def fromISQFun (d : Dimension ISQDimensionBase) : Dimension LTMCTDimensionBase
 def fromISQHom : Dimension ISQDimensionBase →* Dimension LTMCTDimensionBase
 ```
 
-**`Dimension.fromISQHom_apply`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQBridge.lean#L89).
+**`Dimension.fromISQHom_apply`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQBridge.lean#L89).
 
 > `fromISQHom` applied to a dimension is `fromISQFun`.
 
@@ -83,7 +83,7 @@ def fromISQHom : Dimension ISQDimensionBase →* Dimension LTMCTDimensionBase
 lemma fromISQHom_apply (d : Dimension ISQDimensionBase) : fromISQHom d = fromISQFun d
 ```
 
-**`Dimension.fromISQHom_comp_toISQHom`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQBridge.lean#L93).
+**`Dimension.fromISQHom_comp_toISQHom`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQBridge.lean#L93).
 
 > The projection recovers PhysLib's basis from its image under the embedding:
 > `fromISQHom ∘ toISQHom = id`.
@@ -93,7 +93,7 @@ lemma fromISQHom_comp_toISQHom :
     fromISQHom.comp toISQHom = MonoidHom.id (Dimension LTMCTDimensionBase)
 ```
 
-**`Dimension.toISQHom_injective`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQBridge.lean#L101).
+**`Dimension.toISQHom_injective`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQBridge.lean#L101).
 
 > `toISQHom` is injective: PhysLib dimensions include faithfully into ISQ.
 
@@ -101,7 +101,7 @@ lemma fromISQHom_comp_toISQHom :
 lemma toISQHom_injective : Function.Injective toISQHom
 ```
 
-**`Dimension.fromISQHom_surjective`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQBridge.lean#L121).
+**`Dimension.fromISQHom_surjective`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQBridge.lean#L121).
 
 > `fromISQHom` is surjective: every PhysLib dimension is the reduction of some ISQ
 > dimension (namely its own embedding).
@@ -110,7 +110,7 @@ lemma toISQHom_injective : Function.Injective toISQHom
 lemma fromISQHom_surjective : Function.Surjective fromISQHom
 ```
 
-**`Dimension.ltmctToISQ`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQBridge.lean#L125).
+**`Dimension.ltmctToISQ`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQBridge.lean#L125).
 
 > PhysLib's dimensions embed into the ISQ dimensions (charge ↦ `I · T`).
 
@@ -118,7 +118,7 @@ lemma fromISQHom_surjective : Function.Surjective fromISQHom
 def ltmctToISQ : Embedding LTMCTDimensionBase ISQDimensionBase
 ```
 
-**`Dimension.isqToLTMCT`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQBridge.lean#L131).
+**`Dimension.isqToLTMCT`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQBridge.lean#L131).
 
 > The ISQ dimensions project onto PhysLib's, reading current as charge/time and
 > forgetting amount of substance and luminous intensity.
@@ -127,7 +127,7 @@ def ltmctToISQ : Embedding LTMCTDimensionBase ISQDimensionBase
 def isqToLTMCT : Projection ISQDimensionBase LTMCTDimensionBase
 ```
 
-**`Dimension.isqToLTMCT_comp_ltmctToISQ`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQBridge.lean#L138).
+**`Dimension.isqToLTMCT_comp_ltmctToISQ`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQBridge.lean#L138).
 
 > The projection is a retraction of the embedding: `isqToLTMCT ∘ ltmctToISQ = id`. So
 > PhysLib's basis embeds faithfully into ISQ and is recovered by the projection, but not
@@ -138,7 +138,7 @@ lemma isqToLTMCT_comp_ltmctToISQ :
     isqToLTMCT.toHom.comp ltmctToISQ.toHom = MonoidHom.id (Dimension LTMCTDimensionBase)
 ```
 
-**`Dimension.toISQHom_C𝓭`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQBridge.lean#L144).
+**`Dimension.toISQHom_C𝓭`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQBridge.lean#L144).
 
 > The embedding is physically faithful on charge: PhysLib's charge generator `C𝓭`
 > maps to the *derived* ISQ charge `I · T`.
@@ -154,4 +154,4 @@ lemma toISQHom_C𝓭 : toISQHom C𝓭 = ISQDimensionBase.charge
 
 ## Sources
 
-- [Physlib/Units/ISQBridge.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/ISQBridge.lean)
+- [Physlib/Units/ISQBridge.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/ISQBridge.lean)

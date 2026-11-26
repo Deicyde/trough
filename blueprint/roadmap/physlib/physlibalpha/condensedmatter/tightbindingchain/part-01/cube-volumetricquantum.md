@@ -8,7 +8,7 @@ proof: formalized
 
 # The volumetric quantum of the open tight binding cube
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Cube.VolumetricQuantum`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean): 7 declarations, 7 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Cube.VolumetricQuantum`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean): 7 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Cube.VolumetricQuantu
 
 ## A. The volumetric quantum
 
-**`CondensedMatter.TightBindingChain.volQuantum`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean#L57).
+**`CondensedMatter.TightBindingChain.volQuantum`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean#L57).
 
 > The volumetric quantum of the cube `Nx × Ny × Nz`: the product of the dimensional quanta of
 > its axes, each axis carrying its own `C` (`uncertaintyRatio_alongX`, `uncertaintyRatio_alongY`,
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Cube.VolumetricQuantu
 noncomputable def volQuantum : ℝ
 ```
 
-**`CondensedMatter.TightBindingChain.volQuantum_eq_zero_iff`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean#L62).
+**`CondensedMatter.TightBindingChain.volQuantum_eq_zero_iff`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean#L62).
 
 > The volumetric quantum vanishes iff some axis has `2` or `3` sites.
 
@@ -53,7 +53,7 @@ lemma volQuantum_eq_zero_iff (hx : Tx.t ≠ 0) (hy : Ty.t ≠ 0) (hz : Tz.t ≠ 
       (Tx.N = 2 ∨ Tx.N = 3) ∨ (Ty.N = 2 ∨ Ty.N = 3) ∨ (Tz.N = 2 ∨ Tz.N = 3)
 ```
 
-**`CondensedMatter.TightBindingChain.volQuantum_pos`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean#L70).
+**`CondensedMatter.TightBindingChain.volQuantum_pos`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean#L70).
 
 > From `4 × 4 × 4` on, the volumetric quantum is positive.
 
@@ -62,7 +62,7 @@ lemma volQuantum_pos (hx : Tx.t ≠ 0) (hy : Ty.t ≠ 0) (hz : Tz.t ≠ 0)
     (hNx : 4 ≤ Tx.N) (hNy : 4 ≤ Ty.N) (hNz : 4 ≤ Tz.N) : 0 < volQuantum Tx Ty Tz
 ```
 
-**`CondensedMatter.TightBindingChain.volQuantum_lt_volQuantum_x`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean#L76).
+**`CondensedMatter.TightBindingChain.volQuantum_lt_volQuantum_x`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean#L76).
 
 > From `4 × 4 × 4` on, the volumetric quantum grows strictly along `x`.
 
@@ -72,7 +72,7 @@ lemma volQuantum_lt_volQuantum_x {Tx' : TightBindingChain} (hx : Tx.t ≠ 0) (hx
     (h : Tx.N < Tx'.N) : volQuantum Tx Ty Tz < volQuantum Tx' Ty Tz
 ```
 
-**`CondensedMatter.TightBindingChain.volQuantum_lt_volQuantum_y`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean#L86).
+**`CondensedMatter.TightBindingChain.volQuantum_lt_volQuantum_y`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean#L86).
 
 > From `4 × 4 × 4` on, the volumetric quantum grows strictly along `y`.
 
@@ -82,7 +82,7 @@ lemma volQuantum_lt_volQuantum_y {Ty' : TightBindingChain} (hx : Tx.t ≠ 0) (hy
     (h : Ty.N < Ty'.N) : volQuantum Tx Ty Tz < volQuantum Tx Ty' Tz
 ```
 
-**`CondensedMatter.TightBindingChain.volQuantum_lt_volQuantum_z`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean#L96).
+**`CondensedMatter.TightBindingChain.volQuantum_lt_volQuantum_z`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean#L96).
 
 > From `4 × 4 × 4` on, the volumetric quantum grows strictly along `z`.
 
@@ -92,7 +92,7 @@ lemma volQuantum_lt_volQuantum_z {Tz' : TightBindingChain} (hx : Tx.t ≠ 0) (hy
     (h : Tz.N < Tz'.N) : volQuantum Tx Ty Tz < volQuantum Tx Ty Tz'
 ```
 
-**`CondensedMatter.TightBindingChain.volQuantum_lt`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean#L106).
+**`CondensedMatter.TightBindingChain.volQuantum_lt`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean#L106).
 
 > From `4 × 4 × 4` on, the volumetric quantum stays below `(√(π² / 3 - 2) - 1)³`.
 
@@ -108,4 +108,4 @@ lemma volQuantum_lt (hx : Tx.t ≠ 0) (hy : Ty.t ≠ 0) (hz : Tz.t ≠ 0)
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean)

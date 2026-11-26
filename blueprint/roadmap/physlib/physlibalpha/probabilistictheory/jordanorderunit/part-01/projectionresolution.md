@@ -8,7 +8,7 @@ proof: formalized
 
 # Projection resolutions
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.ProjectionResolution`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean): 20 declarations (2 instances with no name), 18 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.ProjectionResolution`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean): 20 declarations (2 instances with no name), 18 with a docstring.
 
 > Projection resolutions: projection-valued effect measures and their bounded Borel calculus.
 
@@ -29,7 +29,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.ProjectionResolutio
 
 > * None.
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution`**, a structure, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L52).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution`**, a structure, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L52).
 
 > A projection resolution: an effect-valued measure whose values are Jordan projections, with the
 > value on an intersection the Jordan product of the values.
@@ -48,20 +48,20 @@ structure MeasurableProjectionResolution (Ω : Type*) [MeasurableSpace Ω] (E : 
       (toEffectValuedMeasure (s ∩ t) (hs.inter ht) : E)
 ```
 
-**An instance with no name**, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L66).
+**An instance with no name**, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L66).
 
 ```lean
 instance : CoeOut (MeasurableProjectionResolution Ω E) (EffectValuedMeasure Ω E)
 ```
 
-**An instance with no name**, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L69).
+**An instance with no name**, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L69).
 
 ```lean
 instance : CoeFun (MeasurableProjectionResolution Ω E) fun _ =>
     ∀ s : Set Ω, MeasurableSet s → Effect E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.ext`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L76).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.ext`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L76).
 
 > Projection resolutions are determined by their event projections.  This is purely structural
 > and belongs below JBW: normal-state separation is only one later way to establish its premise.
@@ -71,7 +71,7 @@ lemma ext {P Q : MeasurableProjectionResolution Ω E}
     (h : ∀ s hs, (P s hs : E) = (Q s hs : E)) : P = Q
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.map_empty`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L89).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.map_empty`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L89).
 
 > The impossible event is the zero effect.
 
@@ -80,7 +80,7 @@ lemma map_empty (P : MeasurableProjectionResolution Ω E) :
     P ∅ MeasurableSet.empty = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.map_univ`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L94).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.map_univ`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L94).
 
 > The whole outcome space is the unit effect.
 
@@ -89,7 +89,7 @@ lemma map_univ (P : MeasurableProjectionResolution Ω E) :
     P Set.univ MeasurableSet.univ = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.isJordanProjection`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L99).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.isJordanProjection`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L99).
 
 > Each event of a measurable projection resolution is an intrinsic Jordan projection.
 
@@ -99,7 +99,7 @@ lemma isJordanProjection (P : MeasurableProjectionResolution Ω E)
     JordanAlgebra.IsJordanProjection (P s hs : E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.map_inter`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L105).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.map_inter`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L105).
 
 > The projection product computes measurable intersection.
 
@@ -109,7 +109,7 @@ lemma map_inter (P : MeasurableProjectionResolution Ω E)
     (P s hs : E) * (P t ht : E) = P (s ∩ t) (hs.inter ht)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.jordanOrthogonal_of_disjoint`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L111).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.jordanOrthogonal_of_disjoint`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L111).
 
 > Disjoint measurable events have Jordan-orthogonal projections.
 
@@ -119,7 +119,7 @@ lemma jordanOrthogonal_of_disjoint (P : MeasurableProjectionResolution Ω E)
     JordanAlgebra.JordanOrthogonal (P s hs : E) (P t ht : E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.countably_additive`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L122).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.countably_additive`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L122).
 
 > The inherited countable-additivity law, stated in the ambient ordered Jordan algebra.
 
@@ -135,7 +135,7 @@ lemma countably_additive (P : MeasurableProjectionResolution Ω E) (s : ℕ → 
 > The resolution does not duplicate the order-unit integral: in a JB algebra, which is complete in
 > its order-unit norm, this section gives that integral its spectral-calculus name.
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.boundedBorel`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L145).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.boundedBorel`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L145).
 
 > The bounded Borel calculus of a measurable projection resolution. This is the existing
 > effect-valued integral applied to the underlying measure, not a parallel construction.
@@ -145,7 +145,7 @@ noncomputable def boundedBorel (P : MeasurableProjectionResolution Ω E) (f : Ω
     (hf : Measurable f) {M : ℝ} (hM : ∀ x, |f x| ≤ M) : E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.nonneg_boundedBorel`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L150).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.nonneg_boundedBorel`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L150).
 
 > A nonnegative bounded Borel function has a positive value under the resolution calculus.
 
@@ -155,7 +155,7 @@ lemma nonneg_boundedBorel (P : MeasurableProjectionResolution Ω E) (f : Ω → 
     0 ≤ P.boundedBorel f hf hM
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.boundedBorel_indep_of_bound`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L157).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.boundedBorel_indep_of_bound`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L157).
 
 > The bounded Borel value is independent of the particular valid uniform bound used to
 > construct the completed order-unit integral.
@@ -166,7 +166,7 @@ lemma boundedBorel_indep_of_bound (P : MeasurableProjectionResolution Ω E) (f :
     P.boundedBorel f hf hM = P.boundedBorel f hf hM'
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.boundedBorel_add`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L163).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.boundedBorel_add`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L163).
 
 > The bounded Borel calculus is additive.
 
@@ -179,7 +179,7 @@ lemma boundedBorel_add (P : MeasurableProjectionResolution Ω E) {f g : Ω → �
       P.boundedBorel f hf hM + P.boundedBorel g hg hM'
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.boundedBorel_smul`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L172).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.boundedBorel_smul`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L172).
 
 > The bounded Borel calculus is real-homogeneous.
 
@@ -190,7 +190,7 @@ lemma boundedBorel_smul (P : MeasurableProjectionResolution Ω E) (c : ℝ) {f :
     P.boundedBorel (c • f) hcf hMcf = c • P.boundedBorel f hf hM
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.boundedBorel_indicator`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L179).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.boundedBorel_indicator`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L179).
 
 > The functional calculus of an indicator is the projection of the event.
 
@@ -201,7 +201,7 @@ lemma boundedBorel_indicator (P : MeasurableProjectionResolution Ω E) {s : Set 
         (M := 1) (by intro x; by_cases hx : x ∈ s <;> simp [hx]) = (P s hs : E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.boundedBorel_one`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L221).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.boundedBorel_one`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L221).
 
 > The constant-one bounded Borel function integrates to the order unit.  This is the
 > normalization of the inherited effect-valued measure, recovered from the indicator law for the
@@ -212,7 +212,7 @@ lemma boundedBorel_one (P : MeasurableProjectionResolution Ω E) :
     P.boundedBorel (fun _ : Ω => (1 : ℝ)) measurable_const (M := 1) (by intro _; simp) = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.boundedBorelEffect`**, a def, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L228).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.boundedBorelEffect`**, a def, [line 228](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L228).
 
 > A measurable `[0,1]`-valued bounded function has an effect-valued bounded Borel calculus.
 > This packages positivity and normalization once at the shared projection-resolution layer; every
@@ -223,7 +223,7 @@ noncomputable def boundedBorelEffect (P : MeasurableProjectionResolution Ω E) (
     (hf : Measurable f) (hf0 : ∀ x, 0 ≤ f x) (hf1 : ∀ x, f x ≤ 1) : Effect E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.coe_boundedBorelEffect`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L274).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.coe_boundedBorelEffect`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L274).
 
 > Coercing the bounded Borel effect forgets only its established interval bounds.
 
@@ -235,7 +235,7 @@ lemma coe_boundedBorelEffect (P : MeasurableProjectionResolution Ω E) (f : Ω �
         (fun x => by rw [abs_of_nonneg (hf0 x)]; exact hf1 x)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.ext_of_forall_boundedBorel_eq`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L283).
+**`PhyslibAlpha.ProbabilisticTheory.MeasurableProjectionResolution.ext_of_forall_boundedBorel_eq`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean#L283).
 
 > The bounded Borel calculus determines a projection resolution.  It suffices to compare every
 > bounded measurable function because indicators recover exactly the event projections.
@@ -254,4 +254,4 @@ lemma ext_of_forall_boundedBorel_eq {P Q : MeasurableProjectionResolution Ω E}
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean)

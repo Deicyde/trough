@@ -8,7 +8,7 @@ proof: formalized
 
 # The solution space as a Poincaré representation
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Covariance.SolutionSpace`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean): 10 declarations (1 instance with no name), 10 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Covariance.SolutionSpace`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean): 10 declarations (1 instance with no name), 10 with a docstring.
 
 > The space of homogeneous solutions with spacelike compact support carries an action of the
 > Poincaré group. The causal propagator is an equivariant isomorphism from the compact sources
@@ -46,7 +46,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Covariance.SolutionSpa
 
 > - `propagatorClass_actQuot` : the isomorphism is covariant for orthochronous transformations.
 
-**An instance with no name**, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L69).
+**An instance with no name**, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L69).
 
 > Smooth fields form an additive group, needed to form the quotient.
 
@@ -54,7 +54,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Covariance.SolutionSpa
 local instance : AddCommGroup (smoothFields d F)
 ```
 
-**`KleinGordon.Solution.actSmooth_mem_spacelikeCompactSolution`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L74).
+**`KleinGordon.Solution.actSmooth_mem_spacelikeCompactSolution`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L74).
 
 > The action preserves homogeneous solutions with spacelike compact support.
 
@@ -64,7 +64,7 @@ lemma actSmooth_mem_spacelikeCompactSolution (g : PoincareGroup d) {u : smoothFi
     actSmooth g u ∈ (equation (d := d) (V := F) m).spacelikeCompactSolution (causalRelation d)
 ```
 
-**`KleinGordon.Solution.actSol`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L88).
+**`KleinGordon.Solution.actSol`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L88).
 
 > The action of the Poincaré group on homogeneous solutions with spacelike compact support.
 
@@ -74,7 +74,7 @@ def actSol (g : PoincareGroup d) :
       (equation (d := d) (V := F) m).spacelikeCompactSolution (causalRelation d)
 ```
 
-**`KleinGordon.Solution.actSol_coe`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L95).
+**`KleinGordon.Solution.actSol_coe`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L95).
 
 > The value of a transformed solution.
 
@@ -85,7 +85,7 @@ lemma actSol_coe (g : PoincareGroup d)
       smoothFields d F) = actSmooth g u
 ```
 
-**`KleinGordon.Solution.SourceClasses`**, an abbrev, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L105).
+**`KleinGordon.Solution.SourceClasses`**, an abbrev, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L105).
 
 > Compact sources modulo the equation of motion.
 
@@ -93,7 +93,7 @@ lemma actSol_coe (g : PoincareGroup d)
 abbrev SourceClasses (d : ℕ) (F : Type) [NormedAddCommGroup F] [NormedSpace ℂ F] (m : ℝ)
 ```
 
-**`KleinGordon.Solution.actQuot`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L110).
+**`KleinGordon.Solution.actQuot`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L110).
 
 > The action on compact sources modulo the equation of motion.
 
@@ -101,7 +101,7 @@ abbrev SourceClasses (d : ℕ) (F : Type) [NormedAddCommGroup F] [NormedSpace �
 def actQuot (g : PoincareGroup d) : SourceClasses d F m →ₗ[ℝ] SourceClasses d F m
 ```
 
-**`KleinGordon.Solution.actQuot_mk`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L117).
+**`KleinGordon.Solution.actQuot_mk`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L117).
 
 > The action on the class of a source is the class of the transformed source.
 
@@ -111,7 +111,7 @@ lemma actQuot_mk (g : PoincareGroup d) (f : (equation (d := d) (V := F) m).compa
       Submodule.Quotient.mk (actTest g f)
 ```
 
-**`KleinGordon.Solution.solutionsEquivQuotient_symm_mk`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L129).
+**`KleinGordon.Solution.solutionsEquivQuotient_symm_mk`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L129).
 
 > The isomorphism from the quotient of compact sources onto the solutions sends the class of a
 > source to its causal propagator.
@@ -122,7 +122,7 @@ lemma solutionsEquivQuotient_symm_mk (f : (equation (d := d) (V := F) m).compact
         smoothFields d F) = propagator F m f
 ```
 
-**`KleinGordon.Solution.propagatorClass_actQuot`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L135).
+**`KleinGordon.Solution.propagatorClass_actQuot`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L135).
 
 > The isomorphism of compact sources modulo the equation of motion with the solutions is
 > covariant under orthochronous Poincaré transformations.
@@ -134,7 +134,7 @@ lemma propagatorClass_actQuot {g : PoincareGroup d} (hg : g.IsOrthochronous)
       actSol g ((solutionsEquivQuotient (d := d) (F := F) (m := m)).symm x)
 ```
 
-**`KleinGordon.Solution.propagatorClass_actQuot_of_not`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L146).
+**`KleinGordon.Solution.propagatorClass_actQuot_of_not`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean#L146).
 
 > The isomorphism changes sign under Poincaré transformations that reverse time.
 
@@ -156,4 +156,4 @@ lemma propagatorClass_actQuot_of_not {g : PoincareGroup d} (hg : ¬ g.IsOrthochr
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean)

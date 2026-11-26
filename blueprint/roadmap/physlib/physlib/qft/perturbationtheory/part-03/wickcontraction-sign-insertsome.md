@@ -8,14 +8,14 @@ proof: formalized
 
 # Sign on inserting and contracting
 
-The module `Physlib.QFT.PerturbationTheory.WickContraction.Sign.InsertSome`, [Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean): 19 declarations, 8 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.WickContraction.Sign.InsertSome`, [Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean): 19 declarations, 8 with a docstring.
 
 > The main results of this file are `sign_insert_some_of_lt` and `sign_insert_some_of_not_lt` which
 > write the sign of `(φsΛ ↩Λ φ i (some k)).sign` in terms of the sign of `φsΛ`.
 
 ## Sign insert some
 
-**`WickContraction.stat_ofFinset_eq_one_of_gradingCompliant`**, a lemma, [line 36](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L36).
+**`WickContraction.stat_ofFinset_eq_one_of_gradingCompliant`**, a lemma, [line 36](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L36).
 
 ```lean
 lemma stat_ofFinset_eq_one_of_gradingCompliant (φs : List 𝓕.FieldOp)
@@ -25,7 +25,7 @@ lemma stat_ofFinset_eq_one_of_gradingCompliant (φs : List 𝓕.FieldOp)
     (𝓕 |>ₛ ⟨φs.get, a⟩) = 1
 ```
 
-**`WickContraction.signFinset_insertAndContract_some`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L56).
+**`WickContraction.signFinset_insertAndContract_some`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L56).
 
 ```lean
 lemma signFinset_insertAndContract_some (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -44,7 +44,7 @@ lemma signFinset_insertAndContract_some (φ : 𝓕.FieldOp) (φs : List 𝓕.Fie
         (insertAndContractLiftFinset φ i (φsΛ.signFinset i1 i2))
 ```
 
-**`WickContraction.signInsertSomeProd`**, a def, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L200).
+**`WickContraction.signInsertSomeProd`**, a def, [line 200](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L200).
 
 > Given a Wick contraction `φsΛ` the sign defined in the following way,
 > related to inserting a field `φ` at position `i` and contracting it with `j : φsΛ.uncontracted`.
@@ -58,7 +58,7 @@ def signInsertSomeProd (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp) (φsΛ : Wi
     (i : Fin φs.length.succ) (j : φsΛ.uncontracted) : ℂ
 ```
 
-**`WickContraction.signInsertSomeCoef`**, a def, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L219).
+**`WickContraction.signInsertSomeCoef`**, a def, [line 219](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L219).
 
 > Given a Wick contraction `φsΛ` the sign defined in the following way,
 > related to inserting a field `φ` at position `i` and contracting it with `j : φsΛ.uncontracted`.
@@ -72,7 +72,7 @@ def signInsertSomeCoef (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp) (φsΛ : Wi
     (i : Fin φs.length.succ) (j : φsΛ.uncontracted) : ℂ
 ```
 
-**`WickContraction.signInsertSome`**, a def, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L231).
+**`WickContraction.signInsertSome`**, a def, [line 231](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L231).
 
 > Given a Wick contraction `φsΛ` associated with a list of states `φs`
 > and an `i : Fin φs.length.succ`, the change in sign of the contraction associated with
@@ -83,7 +83,7 @@ def signInsertSome (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp) (φsΛ : WickCo
     (i : Fin φs.length.succ) (j : φsΛ.uncontracted) : ℂ
 ```
 
-**`WickContraction.sign_insert_some`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L235).
+**`WickContraction.sign_insert_some`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L235).
 
 ```lean
 lemma sign_insert_some (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp) (φsΛ : WickContraction φs.length)
@@ -91,7 +91,7 @@ lemma sign_insert_some (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp) (φsΛ : Wi
     (φsΛ ↩Λ φ i (some j)).sign = (φsΛ.signInsertSome φ φs i j) * φsΛ.sign
 ```
 
-**`WickContraction.signInsertSomeProd_eq_one_if`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L269).
+**`WickContraction.signInsertSomeProd_eq_one_if`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L269).
 
 ```lean
 lemma signInsertSomeProd_eq_one_if (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -108,7 +108,7 @@ lemma signInsertSomeProd_eq_one_if (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
       1
 ```
 
-**`WickContraction.signInsertSomeProd_eq_prod_prod`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L290).
+**`WickContraction.signInsertSomeProd_eq_prod_prod`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L290).
 
 ```lean
 lemma signInsertSomeProd_eq_prod_prod (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -126,7 +126,7 @@ lemma signInsertSomeProd_eq_prod_prod (φ : 𝓕.FieldOp) (φs : List 𝓕.Field
       1
 ```
 
-**`WickContraction.signInsertSomeProd_eq_prod_fin`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L315).
+**`WickContraction.signInsertSomeProd_eq_prod_fin`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L315).
 
 ```lean
 lemma signInsertSomeProd_eq_prod_fin (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -143,7 +143,7 @@ lemma signInsertSomeProd_eq_prod_fin (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldO
       else 1
 ```
 
-**`WickContraction.signInsertSomeProd_eq_finset`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L333).
+**`WickContraction.signInsertSomeProd_eq_finset`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L333).
 
 ```lean
 lemma signInsertSomeProd_eq_finset (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -157,7 +157,7 @@ lemma signInsertSomeProd_eq_finset (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
       ∨ j < ((φsΛ.getDual? x).get h) ∧ ¬ i.succAbove x < i)))⟩)
 ```
 
-**`WickContraction.signInsertSomeCoef_if`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L351).
+**`WickContraction.signInsertSomeCoef_if`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L351).
 
 ```lean
 lemma signInsertSomeCoef_if (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp) (φsΛ : WickContraction φs.length)
@@ -174,7 +174,7 @@ lemma signInsertSomeCoef_if (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp) (φsΛ
       (finCongr (insertIdx_length_fin φ φs i).symm i)⟩)
 ```
 
-**`WickContraction.stat_signFinset_insert_some_self_fst`**, a lemma, [line 368](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L368).
+**`WickContraction.stat_signFinset_insert_some_self_fst`**, a lemma, [line 368](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L368).
 
 ```lean
 lemma stat_signFinset_insert_some_self_fst
@@ -188,7 +188,7 @@ lemma stat_signFinset_insert_some_self_fst
       ∀ (h : (φsΛ.getDual? x).isSome), i < i.succAbove ((φsΛ.getDual? x).get h))))⟩
 ```
 
-**`WickContraction.stat_signFinset_insert_some_self_snd`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L400).
+**`WickContraction.stat_signFinset_insert_some_self_snd`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L400).
 
 ```lean
 lemma stat_signFinset_insert_some_self_snd (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -202,7 +202,7 @@ lemma stat_signFinset_insert_some_self_snd (φ : 𝓕.FieldOp) (φs : List 𝓕.
       ∀ (h : (φsΛ.getDual? x).isSome), j < ((φsΛ.getDual? x).get h))))⟩
 ```
 
-**`WickContraction.signInsertSomeCoef_eq_finset`**, a lemma, [line 432](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L432).
+**`WickContraction.signInsertSomeCoef_eq_finset`**, a lemma, [line 432](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L432).
 
 ```lean
 lemma signInsertSomeCoef_eq_finset (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
@@ -218,7 +218,7 @@ lemma signInsertSomeCoef_eq_finset (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
         ∀ (h : (φsΛ.getDual? x).isSome), j < ((φsΛ.getDual? x).get h))))⟩)
 ```
 
-**`WickContraction.signInsertSome_mul_filter_contracted_of_lt`**, a lemma, [line 474](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L474).
+**`WickContraction.signInsertSome_mul_filter_contracted_of_lt`**, a lemma, [line 474](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L474).
 
 > The following two signs are equal for `i.succAbove k < i`. The sign `signInsertSome φ φs φsΛ i k`
 > which is constructed as follows:
@@ -255,7 +255,7 @@ lemma signInsertSome_mul_filter_contracted_of_lt (φ : 𝓕.FieldOp) (φs : List
     = 𝓢(𝓕 |>ₛ φ, 𝓕 |>ₛ ⟨φs.get, Finset.univ.filter (fun x => i.succAbove x < i)⟩)
 ```
 
-**`WickContraction.signInsertSome_mul_filter_contracted_of_not_lt`**, a lemma, [line 603](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L603).
+**`WickContraction.signInsertSome_mul_filter_contracted_of_not_lt`**, a lemma, [line 603](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L603).
 
 > The following two signs are equal for `i < i.succAbove k`.
 > The sign `signInsertSome φ φs φsΛ i k` which is constructed
@@ -293,7 +293,7 @@ lemma signInsertSome_mul_filter_contracted_of_not_lt (φ : 𝓕.FieldOp) (φs : 
     = 𝓢(𝓕 |>ₛ φ, 𝓕 |>ₛ ⟨φs.get, Finset.univ.filter (fun x => i.succAbove x < i)⟩)
 ```
 
-**`WickContraction.sign_insert_some_of_lt`**, a lemma, [line 711](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L711).
+**`WickContraction.sign_insert_some_of_lt`**, a lemma, [line 711](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L711).
 
 > For a list `φs = φ₀…φₙ` of `𝓕.FieldOp`, a Wick contraction `φsΛ` of `φs`, an element `φ` of
 >   `𝓕.FieldOp`, a `i ≤ φs.length` and a `k` in `φsΛ.uncontracted` such that `k<i`,
@@ -315,7 +315,7 @@ lemma sign_insert_some_of_lt (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
     * φsΛ.sign
 ```
 
-**`WickContraction.sign_insert_some_of_not_lt`**, a lemma, [line 733](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L733).
+**`WickContraction.sign_insert_some_of_not_lt`**, a lemma, [line 733](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L733).
 
 > For a list `φs = φ₀…φₙ` of `𝓕.FieldOp`, a Wick contraction `φsΛ` of `φs`, an element `φ` of
 >   `𝓕.FieldOp`, a `i ≤ φs.length` and a `k` in `φsΛ.uncontracted` such that `i ≤ k`,
@@ -337,7 +337,7 @@ lemma sign_insert_some_of_not_lt (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
     φsΛ.sign
 ```
 
-**`WickContraction.sign_insert_some_zero`**, a lemma, [line 753](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L753).
+**`WickContraction.sign_insert_some_zero`**, a lemma, [line 753](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean#L753).
 
 > For a list `φs = φ₀…φₙ` of `𝓕.FieldOp`, a Wick contraction `φsΛ` of `φs`, an element `φ` of
 >   `𝓕.FieldOp`, and a `k` in `φsΛ.uncontracted`,
@@ -362,4 +362,4 @@ lemma sign_insert_some_zero (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean)
+- [Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean)

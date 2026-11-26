@@ -8,7 +8,7 @@ proof: formalized
 
 # Trace-norm estimates
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.IdealNorm`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean): 8 declarations, 8 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.IdealNorm`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean): 8 declarations, 8 with a docstring.
 
 > The duality bound for the trace norm, its subadditivity and the two-sided ideal estimate.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.IdealNorm`,
 
 ## A. The duality bound against contractions
 
-**`PhyslibAlpha.ProbabilisticTheory.traceNorm_transport`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean#L59).
+**`PhyslibAlpha.ProbabilisticTheory.traceNorm_transport`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean#L59).
 
 > The trace norm of an operator only depends on the operator, not on the trace-class witness.
 
@@ -40,7 +40,7 @@ lemma traceNorm_transport {X Y : H →L[ℂ] H} (hEq : X = Y) (hX : IsTraceClass
     traceNorm X hX = traceNorm Y (hEq ▸ hX)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.tsum_sqrt_abs_norm_sq_eq_traceNorm`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean#L64).
+**`PhyslibAlpha.ProbabilisticTheory.tsum_sqrt_abs_norm_sq_eq_traceNorm`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean#L64).
 
 > The Hilbert–Schmidt square sum of `√|A|` computes the trace norm, in every basis.
 
@@ -50,7 +50,7 @@ lemma tsum_sqrt_abs_norm_sq_eq_traceNorm {A : H →L[ℂ] H} (hA : IsTraceClass 
     (∑' i : w, ‖CFC.sqrt (CFC.abs A) (b i)‖ ^ 2) = traceNorm A hA
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.summable_norm_inner_contraction_of_isTraceClass`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean#L82).
+**`PhyslibAlpha.ProbabilisticTheory.summable_norm_inner_contraction_of_isTraceClass`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean#L82).
 
 > The contraction pairing `i ↦ ⟪W eᵢ, A eᵢ⟫` is absolutely summable, for trace-class `A` and any
 > contraction `W`.
@@ -61,7 +61,7 @@ lemma summable_norm_inner_contraction_of_isTraceClass {A W : H →L[ℂ] H} (hA 
     Summable (fun i : w => ‖⟪W (b i), A (b i)⟫_ℂ‖)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.tsum_norm_inner_contraction_le_traceNorm`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean#L111).
+**`PhyslibAlpha.ProbabilisticTheory.tsum_norm_inner_contraction_le_traceNorm`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean#L111).
 
 > **The duality bound**: for trace-class `A`, any contraction `W`, and any basis, the pairing
 > `∑ᵢ ‖⟪W eᵢ, A eᵢ⟫‖` never exceeds `‖A‖₁`. This is the single quantitative estimate feeding
@@ -75,7 +75,7 @@ lemma tsum_norm_inner_contraction_le_traceNorm {A W : H →L[ℂ] H} (hA : IsTra
 
 ## B. Attainment at the polar factor and subadditivity
 
-**`PhyslibAlpha.ProbabilisticTheory.traceNorm_eq_tsum_norm_inner_polarFactor`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean#L186).
+**`PhyslibAlpha.ProbabilisticTheory.traceNorm_eq_tsum_norm_inner_polarFactor`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean#L186).
 
 > The trace-norm diagonal in the basis `b` equals the norm-diagonal pairing against `T`'s own
 > polar factor: `⟪eᵢ, |T| eᵢ⟫ = ⟪(polarFactor T) eᵢ, T eᵢ⟫` exactly, and the latter is already a
@@ -87,7 +87,7 @@ lemma traceNorm_eq_tsum_norm_inner_polarFactor {T : H →L[ℂ] H} (hT : IsTrace
     traceNorm T hT = ∑' i : w, ‖⟪Polar.polarFactor T (b i), T (b i)⟫_ℂ‖
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.traceNorm_add_le`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean#L216).
+**`PhyslibAlpha.ProbabilisticTheory.traceNorm_add_le`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean#L216).
 
 > **The trace norm is subadditive.**
 
@@ -99,7 +99,7 @@ lemma traceNorm_add_le {T T' : H →L[ℂ] H} (hT : IsTraceClass T) (hT' : IsTra
 
 ## C. The two-sided ideal estimate
 
-**`PhyslibAlpha.ProbabilisticTheory.traceNorm_mul_le_of_isHilbertSchmidt`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean#L254).
+**`PhyslibAlpha.ProbabilisticTheory.traceNorm_mul_le_of_isHilbertSchmidt`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean#L254).
 
 > **Quantitative master lemma**: the trace norm of a product of two Hilbert–Schmidt operators is
 > bounded by the product of their Hilbert–Schmidt square-root sums, in any common basis.
@@ -111,7 +111,7 @@ lemma traceNorm_mul_le_of_isHilbertSchmidt {R S : H →L[ℂ] H} (hR : IsHilbert
       Real.sqrt (∑' i : w, ‖R (b i)‖ ^ 2) * Real.sqrt (∑' i : w, ‖S (b i)‖ ^ 2)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.traceNorm_mul_mul_le`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean#L306).
+**`PhyslibAlpha.ProbabilisticTheory.traceNorm_mul_mul_le`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean#L306).
 
 > **The two-sided ideal estimate**: `‖A T B‖₁ ≤ ‖A‖ ‖T‖₁ ‖B‖`.
 
@@ -132,4 +132,4 @@ lemma traceNorm_mul_mul_le {A B T : H →L[ℂ] H} (hT : IsTraceClass T)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean)

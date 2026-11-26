@@ -8,7 +8,7 @@ proof: formalized
 
 # Extrema of the Lagrangian density (TemperedDistributional/Dynamics/IsExtrema)
 
-The module `Physlib.Electromagnetism.TemperedDistributional.Dynamics.IsExtrema`, [Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean): 7 declarations, 1 with a docstring.
+The module `Physlib.Electromagnetism.TemperedDistributional.Dynamics.IsExtrema`, [Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean): 7 declarations, 1 with a docstring.
 
 ## i. Overview
 
@@ -31,7 +31,7 @@ The module `Physlib.Electromagnetism.TemperedDistributional.Dynamics.IsExtrema`,
 > The above results looked at the extrema condition for electromagnetic potentials that are
 > functions. We now look at the case where the electromagnetic potential is a distribution.
 
-**`Electromagnetism.TempDistElectromagneticPotential.IsExtrema`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean#L57).
+**`Electromagnetism.TempDistElectromagneticPotential.IsExtrema`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean#L57).
 
 > The proposition on an electromagnetic potential, corresponding to the statement that
 > it is an extrema of the lagrangian.
@@ -42,7 +42,7 @@ def IsExtrema {d} (𝓕 : FreeSpace)
     (J : TempDistLorentzCurrentDensity d) : Prop
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.isExtrema_iff_gradLagrangian`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean#L61).
+**`Electromagnetism.TempDistElectromagneticPotential.isExtrema_iff_gradLagrangian`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean#L61).
 
 ```lean
 lemma isExtrema_iff_gradLagrangian {𝓕 : FreeSpace}
@@ -51,7 +51,7 @@ lemma isExtrema_iff_gradLagrangian {𝓕 : FreeSpace}
     IsExtrema 𝓕 A J ↔ A.gradLagrangian 𝓕 J = 0
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.isExtrema_iff_components`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean#L66).
+**`Electromagnetism.TempDistElectromagneticPotential.isExtrema_iff_components`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean#L66).
 
 ```lean
 lemma isExtrema_iff_components {𝓕 : FreeSpace}
@@ -75,7 +75,7 @@ lemma isExtrema_iff_components {𝓕 : FreeSpace}
 >
 > Here $\mathbf{B}$ is the magnetic field matrix.
 
-**`Electromagnetism.TempDistElectromagneticPotential.isExtrema_iff_space_time`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean#L93).
+**`Electromagnetism.TempDistElectromagneticPotential.isExtrema_iff_space_time`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean#L93).
 
 ```lean
 lemma isExtrema_iff_space_time {𝓕 : FreeSpace}
@@ -102,7 +102,7 @@ lemma isExtrema_iff_space_time {𝓕 : FreeSpace}
 >   \sum_j -(\partial_j \partial_j \vec A_i - \partial_j \partial_i \vec A_j) +
 >   \mu_0 \mathbf{J}_i = 0.$$
 
-**`Electromagnetism.TempDistElectromagneticPotential.isExtrema_iff_vectorPotential`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean#L150).
+**`Electromagnetism.TempDistElectromagneticPotential.isExtrema_iff_vectorPotential`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean#L150).
 
 ```lean
 lemma isExtrema_iff_vectorPotential {𝓕 : FreeSpace}
@@ -124,7 +124,7 @@ lemma isExtrema_iff_vectorPotential {𝓕 : FreeSpace}
 >
 > holds.
 
-**`Electromagnetism.TempDistElectromagneticPotential.isExterma_iff_tensor`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean#L183).
+**`Electromagnetism.TempDistElectromagneticPotential.isExterma_iff_tensor`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean#L183).
 
 ```lean
 lemma isExterma_iff_tensor {𝓕 : FreeSpace}
@@ -142,7 +142,7 @@ lemma isExterma_iff_tensor {𝓕 : FreeSpace}
 > In otherwords that the Maxwell's equations are Lorentz invariant.
 > A natural consequence of this is that the speed of light is the same in all inertial frames.
 
-**`Electromagnetism.TempDistElectromagneticPotential.isExterma_equivariant`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean#L222).
+**`Electromagnetism.TempDistElectromagneticPotential.isExterma_equivariant`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean#L222).
 
 ```lean
 lemma isExterma_equivariant {𝓕 : FreeSpace}
@@ -157,4 +157,4 @@ lemma isExterma_equivariant {𝓕 : FreeSpace}
 
 ## Sources
 
-- [Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean)
+- [Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean)

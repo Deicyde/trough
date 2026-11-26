@@ -8,7 +8,7 @@ proof: formalized
 
 # Pushing an effect-valued measure forward along a channel
 
-The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Pushforward`, [PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean): 6 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Pushforward`, [PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean): 6 declarations, 2 with a docstring.
 
 > Pushing an effect-valued measure forward along a normal channel.
 
@@ -27,7 +27,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Pushforward`, [PhyslibA
 
 ## A. Channels send effects to effects
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.mapEffect`**, a def, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean#L47).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.mapEffect`**, a def, [line 47](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean#L47).
 
 > A channel sends effects to effects.
 
@@ -35,19 +35,19 @@ The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Pushforward`, [PhyslibA
 def mapEffect (φ : Channel E F) (e : Effect E) : Effect F
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.coe_mapEffect`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean#L51).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.coe_mapEffect`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean#L51).
 
 ```lean
 lemma coe_mapEffect (φ : Channel E F) (e : Effect E) : (φ.mapEffect e : F) = φ e
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.mapEffect_zero`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean#L54).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.mapEffect_zero`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean#L54).
 
 ```lean
 lemma mapEffect_zero (φ : Channel E F) : φ.mapEffect 0 = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.mapEffect_one`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean#L57).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.mapEffect_one`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean#L57).
 
 ```lean
 lemma mapEffect_one (φ : Channel E F) : φ.mapEffect 1 = 1
@@ -55,7 +55,7 @@ lemma mapEffect_one (φ : Channel E F) : φ.mapEffect 1 = 1
 
 ## B. Pushing an effect-valued measure forward
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.map`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean#L66).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.map`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean#L66).
 
 > Pushing an effect-valued measure forward along a normal channel.
 
@@ -64,7 +64,7 @@ def map (μ : EffectValuedMeasure Ω E) (φ : Channel E F) (hφ : φ.IsNormal) :
     EffectValuedMeasure Ω F
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.coe_map_apply`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean#L75).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.coe_map_apply`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean#L75).
 
 ```lean
 lemma coe_map_apply (μ : EffectValuedMeasure Ω E) (φ : Channel E F) (hφ : φ.IsNormal)
@@ -78,4 +78,4 @@ lemma coe_map_apply (μ : EffectValuedMeasure Ω E) (φ : Channel E F) (hφ : φ
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean)

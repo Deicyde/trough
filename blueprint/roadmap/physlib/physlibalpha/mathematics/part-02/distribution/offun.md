@@ -8,7 +8,7 @@ proof: formalized
 
 # Distributions induced by smooth functions
 
-The module `PhyslibAlpha.Mathematics.Distribution.OfFun`, [PhyslibAlpha/Mathematics/Distribution/OfFun.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/OfFun.lean): 4 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Mathematics.Distribution.OfFun`, [PhyslibAlpha/Mathematics/Distribution/OfFun.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/OfFun.lean): 4 declarations, 2 with a docstring.
 
 > The distribution of a continuous function is additive in the function. The weak derivative of the
 > distribution of a smooth function is the distribution of its derivative.
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.Mathematics.Distribution.OfFun`, [PhyslibAlpha/Mathemat
 
 > - `Distribution.isVanishingOn_ofFun` : vanishing outside a set.
 
-**`Distribution.ofFun_continuous_add`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/OfFun.lean#L69).
+**`Distribution.ofFun_continuous_add`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/OfFun.lean#L69).
 
 ```lean
 lemma ofFun_continuous_add {u w : E → V} (hu : Continuous u) (hw : Continuous w) :
@@ -54,7 +54,7 @@ lemma ofFun_continuous_add {u w : E → V} (hu : Continuous u) (hw : Continuous 
         ofFun (⊤ : Opens E) w μ ⊤
 ```
 
-**`Distribution.ofFun_finset_sum`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/OfFun.lean#L76).
+**`Distribution.ofFun_finset_sum`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/OfFun.lean#L76).
 
 ```lean
 lemma ofFun_finset_sum {ι : Type*} (S : Finset ι) {g : ι → E → V}
@@ -63,7 +63,7 @@ lemma ofFun_finset_sum {ι : Type*} (S : Finset ι) {g : ι → E → V}
       ∑ i ∈ S, ofFun (⊤ : Opens E) (g i) μ ⊤
 ```
 
-**`Distribution.lineDerivCLM_ofFun`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/OfFun.lean#L92).
+**`Distribution.lineDerivCLM_ofFun`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/OfFun.lean#L92).
 
 > The weak derivative of the distribution induced by a smooth function is the distribution
 > induced by its derivative.
@@ -75,7 +75,7 @@ lemma lineDerivCLM_ofFun {u : E → V} (hu : ContDiff ℝ ∞ u) (v : E) :
       ofFun (⊤ : Opens E) (fun x => fderiv ℝ u x v) μ ⊤
 ```
 
-**`Distribution.isVanishingOn_ofFun`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/OfFun.lean#L130).
+**`Distribution.isVanishingOn_ofFun`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/OfFun.lean#L130).
 
 > A distribution induced by a function that vanishes outside a set vanishes outside it.
 
@@ -91,4 +91,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Distribution/OfFun.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/OfFun.lean)
+- [PhyslibAlpha/Mathematics/Distribution/OfFun.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Distribution/OfFun.lean)

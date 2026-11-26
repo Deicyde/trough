@@ -8,7 +8,7 @@ proof: formalized
 
 # Basic field types for fluid dynamics
 
-The module `Physlib.FluidDynamics.Basic`, [Physlib/FluidDynamics/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/Basic.lean): 6 declarations, 6 with a docstring.
+The module `Physlib.FluidDynamics.Basic`, [Physlib/FluidDynamics/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/Basic.lean): 6 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -31,7 +31,7 @@ The module `Physlib.FluidDynamics.Basic`, [Physlib/FluidDynamics/Basic.lean](htt
 
 ## A. Field types
 
-**`FluidDynamics.ScalarField`**, an abbrev, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/Basic.lean#L52).
+**`FluidDynamics.ScalarField`**, an abbrev, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/Basic.lean#L52).
 
 > A scalar field on `d`-dimensional space, depending on time.
 
@@ -39,7 +39,7 @@ The module `Physlib.FluidDynamics.Basic`, [Physlib/FluidDynamics/Basic.lean](htt
 abbrev ScalarField (d : ℕ)
 ```
 
-**`FluidDynamics.VectorField`**, an abbrev, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/Basic.lean#L55).
+**`FluidDynamics.VectorField`**, an abbrev, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/Basic.lean#L55).
 
 > A vector field on `d`-dimensional space, depending on time.
 
@@ -47,7 +47,7 @@ abbrev ScalarField (d : ℕ)
 abbrev VectorField (d : ℕ)
 ```
 
-**`FluidDynamics.MassDensity`**, an abbrev, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/Basic.lean#L58).
+**`FluidDynamics.MassDensity`**, an abbrev, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/Basic.lean#L58).
 
 > A mass density field on `d`-dimensional space.
 
@@ -55,7 +55,7 @@ abbrev VectorField (d : ℕ)
 abbrev MassDensity (d : ℕ)
 ```
 
-**`FluidDynamics.VelocityField`**, an abbrev, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/Basic.lean#L61).
+**`FluidDynamics.VelocityField`**, an abbrev, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/Basic.lean#L61).
 
 > A velocity field on `d`-dimensional space.
 
@@ -63,7 +63,7 @@ abbrev MassDensity (d : ℕ)
 abbrev VelocityField (d : ℕ)
 ```
 
-**`FluidDynamics.MomentumDensityField`**, an abbrev, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/Basic.lean#L64).
+**`FluidDynamics.MomentumDensityField`**, an abbrev, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/Basic.lean#L64).
 
 > A momentum density field on `d`-dimensional space.
 
@@ -71,7 +71,7 @@ abbrev VelocityField (d : ℕ)
 abbrev MomentumDensityField (d : ℕ)
 ```
 
-**`FluidDynamics.StressTensor`**, an abbrev, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/Basic.lean#L67).
+**`FluidDynamics.StressTensor`**, an abbrev, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/Basic.lean#L67).
 
 > A matrix-valued stress tensor field on `d`-dimensional space.
 
@@ -86,4 +86,4 @@ abbrev StressTensor (d : ℕ)
 
 ## Sources
 
-- [Physlib/FluidDynamics/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/Basic.lean)
+- [Physlib/FluidDynamics/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/Basic.lean)

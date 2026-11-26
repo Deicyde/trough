@@ -8,7 +8,7 @@ proof: formalized
 
 # The harmonic oscillator as a ladder system
 
-The module `PhyslibAlpha.QuantumMechanics.HarmonicOscillator.LadderSystem`, [PhyslibAlpha/QuantumMechanics/HarmonicOscillator/LadderSystem.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HarmonicOscillator/LadderSystem.lean): 2 declarations, 1 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.HarmonicOscillator.LadderSystem`, [PhyslibAlpha/QuantumMechanics/HarmonicOscillator/LadderSystem.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HarmonicOscillator/LadderSystem.lean): 2 declarations, 1 with a docstring.
 
 > The ladder operators of the d-dimensional harmonic oscillator form a `LadderSystem`.
 
@@ -29,7 +29,7 @@ The module `PhyslibAlpha.QuantumMechanics.HarmonicOscillator.LadderSystem`, [Phy
 
 ## A. The ladder system
 
-**`QuantumMechanics.HarmonicOscillator.toLadderSystem`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HarmonicOscillator/LadderSystem.lean#L54).
+**`QuantumMechanics.HarmonicOscillator.toLadderSystem`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HarmonicOscillator/LadderSystem.lean#L54).
 
 > The lowering and raising operators on Schwartz space, bundled as a `LadderSystem`.
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.QuantumMechanics.HarmonicOscillator.LadderSystem`, [Phy
 def toLadderSystem (Q : HarmonicOscillator d) : LadderSystem ℂ (𝓢(Space d, ℂ)) d
 ```
 
-**`QuantumMechanics.HarmonicOscillator.toLadderSystem_N_toLinearMap`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HarmonicOscillator/LadderSystem.lean#L78).
+**`QuantumMechanics.HarmonicOscillator.toLadderSystem_N_toLinearMap`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HarmonicOscillator/LadderSystem.lean#L78).
 
 ```lean
 lemma toLadderSystem_N_toLinearMap (Q : HarmonicOscillator d) (i : Fin d) :
@@ -51,4 +51,4 @@ lemma toLadderSystem_N_toLinearMap (Q : HarmonicOscillator d) (i : Fin d) :
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/HarmonicOscillator/LadderSystem.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HarmonicOscillator/LadderSystem.lean)
+- [PhyslibAlpha/QuantumMechanics/HarmonicOscillator/LadderSystem.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HarmonicOscillator/LadderSystem.lean)

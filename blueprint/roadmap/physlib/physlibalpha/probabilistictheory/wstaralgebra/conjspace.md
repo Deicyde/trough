@@ -8,7 +8,7 @@ proof: formalized
 
 # The complex conjugate of a normed space
 
-The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.ConjSpace`, [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean): 19 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.ConjSpace`, [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean): 19 declarations, 7 with a docstring.
 
 > The complex conjugate `ConjSpace X` of a complex normed space, with twisted scalar action.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.ConjSpace`, [PhyslibAl
 
 ## A. The conjugate space and the identity maps
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L55).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L55).
 
 > The complex conjugate of `X`: the same type, with `c • x = conj c • x`.
 
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.ConjSpace`, [PhyslibAl
 def ConjSpace (X : Type*) : Type _
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.toConj`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L64).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.toConj`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L64).
 
 > The identity, viewed as the map from `X` into `ConjSpace X`. Spelled out explicitly (instead
 > of relying on the bare definitional equality `ConjSpace X := X`) to keep instance search from
@@ -48,7 +48,7 @@ def ConjSpace (X : Type*) : Type _
 def toConj (x : X) : ConjSpace X
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.ofConj`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L67).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.ofConj`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L67).
 
 > The identity, viewed as the map from `ConjSpace X` back into `X`.
 
@@ -56,13 +56,13 @@ def toConj (x : X) : ConjSpace X
 def ofConj (x : ConjSpace X) : X
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.ofConj_toConj`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L69).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.ofConj_toConj`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L69).
 
 ```lean
 lemma ofConj_toConj (x : X) : ofConj (toConj x) = x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.toConj_ofConj`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L70).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.toConj_ofConj`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L70).
 
 ```lean
 lemma toConj_ofConj (x : ConjSpace X) : toConj (ofConj x) = x
@@ -70,52 +70,52 @@ lemma toConj_ofConj (x : ConjSpace X) : toConj (ofConj x) = x
 
 ## B. The additive and normed group structure
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.instAddCommGroup`**, an instance, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L78).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.instAddCommGroup`**, an instance, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L78).
 
 ```lean
 instance instAddCommGroup [AddCommGroup X] : AddCommGroup (ConjSpace X)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.ofConj_add`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L80).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.ofConj_add`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L80).
 
 ```lean
 lemma ofConj_add [AddCommGroup X] (x y : ConjSpace X) :
     ofConj (x + y) = ofConj x + ofConj y
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.ofConj_zero`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L83).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.ofConj_zero`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L83).
 
 ```lean
 lemma ofConj_zero [AddCommGroup X] : ofConj (0 : ConjSpace X) = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.toConj_add`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L85).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.toConj_add`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L85).
 
 ```lean
 lemma toConj_add [AddCommGroup X] (x y : X) :
     toConj (x + y) = toConj x + toConj y
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.toConj_zero`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L88).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.toConj_zero`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L88).
 
 ```lean
 lemma toConj_zero [AddCommGroup X] : toConj (0 : X) = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.instNormedAddCommGroup`**, an instance, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L90).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.instNormedAddCommGroup`**, an instance, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L90).
 
 ```lean
 instance instNormedAddCommGroup [NormedAddCommGroup X] :
     NormedAddCommGroup (ConjSpace X)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.norm_ofConj`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L93).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.norm_ofConj`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L93).
 
 ```lean
 lemma norm_ofConj [NormedAddCommGroup X] (x : ConjSpace X) : ‖ofConj x‖ = ‖x‖
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.norm_toConj`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L95).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.norm_toConj`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L95).
 
 ```lean
 lemma norm_toConj [NormedAddCommGroup X] (x : X) : ‖toConj x‖ = ‖x‖
@@ -123,7 +123,7 @@ lemma norm_toConj [NormedAddCommGroup X] (x : X) : ‖toConj x‖ = ‖x‖
 
 ## C. The conjugate scalar action
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.instSMul`**, an instance, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L107).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.instSMul`**, an instance, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L107).
 
 > The twisted scalar action: `c • x := (starRingEnd ℂ c) • ofConj x`, moved back into
 > `ConjSpace X` via `toConj`.
@@ -132,21 +132,21 @@ lemma norm_toConj [NormedAddCommGroup X] (x : X) : ‖toConj x‖ = ‖x‖
 instance instSMul : SMul ℂ (ConjSpace X)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.smul_def`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L110).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.smul_def`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L110).
 
 ```lean
 lemma smul_def (c : ℂ) (x : ConjSpace X) :
     c • x = toConj ((starRingEnd ℂ c) • ofConj x)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.ofConj_smul`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L113).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.ofConj_smul`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L113).
 
 ```lean
 lemma ofConj_smul (c : ℂ) (x : ConjSpace X) :
     ofConj (c • x) = (starRingEnd ℂ c) • ofConj x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.instModule`**, an instance, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L117).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.instModule`**, an instance, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L117).
 
 > The conjugate module structure on `ConjSpace X`.
 
@@ -154,7 +154,7 @@ lemma ofConj_smul (c : ℂ) (x : ConjSpace X) :
 instance instModule : Module ℂ (ConjSpace X)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.instNormedSpace`**, an instance, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L130).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.instNormedSpace`**, an instance, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L130).
 
 > The norm on `ConjSpace X` is literally `X`'s norm (via `ofConj`), so `norm_smul_le` reduces to
 > `‖conj c‖ = ‖c‖` (`Complex.norm_conj`) composed with `X`'s own `norm_smul_le`.
@@ -163,7 +163,7 @@ instance instModule : Module ℂ (ConjSpace X)
 instance instNormedSpace : NormedSpace ℂ (ConjSpace X)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.instCompleteSpace`**, an instance, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L136).
+**`PhyslibAlpha.ProbabilisticTheory.ConjSpace.instCompleteSpace`**, an instance, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean#L136).
 
 > `ConjSpace X` is complete when `X` is.
 
@@ -177,4 +177,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean)
+- [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Fundamental lemma of the calculus of variations
 
-The module `Physlib.Mathematics.VariationalCalculus.Basic`, [Physlib/Mathematics/VariationalCalculus/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/VariationalCalculus/Basic.lean): 2 declarations, 1 with a docstring.
+The module `Physlib.Mathematics.VariationalCalculus.Basic`, [Physlib/Mathematics/VariationalCalculus/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/VariationalCalculus/Basic.lean): 2 declarations, 1 with a docstring.
 
 > The key took in variational calculus is:
 > ```
@@ -88,7 +88,7 @@ The module `Physlib.Mathematics.VariationalCalculus.Basic`, [Physlib/Mathematics
 
 > * https://leanprover.zulipchat.com/#narrow/channel/479953-Physlib/topic/Variational.20Calculus/with/529022834.
 
-**`fundamental_theorem_of_variational_calculus'`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/VariationalCalculus/Basic.lean#L97).
+**`fundamental_theorem_of_variational_calculus'`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/VariationalCalculus/Basic.lean#L97).
 
 > A version of `fundamental_theorem_of_variational_calculus'` for `Continuous f`.
 > The proof uses assumption that source of `f` is finite-dimensional
@@ -110,7 +110,7 @@ lemma fundamental_theorem_of_variational_calculus' {f : Y → V}
     f = 0
 ```
 
-**`fundamental_theorem_of_variational_calculus`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/VariationalCalculus/Basic.lean#L229).
+**`fundamental_theorem_of_variational_calculus`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/VariationalCalculus/Basic.lean#L229).
 
 ```lean
 lemma fundamental_theorem_of_variational_calculus {f : X → V}
@@ -126,4 +126,4 @@ lemma fundamental_theorem_of_variational_calculus {f : X → V}
 
 ## Sources
 
-- [Physlib/Mathematics/VariationalCalculus/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/VariationalCalculus/Basic.lean)
+- [Physlib/Mathematics/VariationalCalculus/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/VariationalCalculus/Basic.lean)

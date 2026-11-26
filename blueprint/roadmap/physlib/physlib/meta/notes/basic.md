@@ -8,7 +8,7 @@ proof: formalized
 
 # Physlib.Meta.Notes.Basic
 
-The module `Physlib.Meta.Notes.Basic`, [Physlib/Meta/Notes/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/Basic.lean): 2 declarations, 2 with a docstring.
+The module `Physlib.Meta.Notes.Basic`, [Physlib/Meta/Notes/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/Basic.lean): 2 declarations, 2 with a docstring.
 
 ## Underlying structure for notes
 
@@ -22,7 +22,7 @@ The module `Physlib.Meta.Notes.Basic`, [Physlib/Meta/Notes/Basic.lean](https://g
 >
 > Other results relating to notes are in other files.
 
-**`Physlib.NoteInfo`**, a structure, [line 32](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/Basic.lean#L32).
+**`Physlib.NoteInfo`**, a structure, [line 32](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/Basic.lean#L32).
 
 > The information from a `note ...` command. To be used in a note file
 
@@ -36,7 +36,7 @@ structure NoteInfo where
   line : Nat
 ```
 
-**`Physlib.elabNote`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/Basic.lean#L53).
+**`Physlib.elabNote`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/Basic.lean#L53).
 
 > Elaborator for the `note ...` command
 
@@ -52,4 +52,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Meta/Notes/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/Basic.lean)
+- [Physlib/Meta/Notes/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/Basic.lean)

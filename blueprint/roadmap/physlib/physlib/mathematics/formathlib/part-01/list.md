@@ -8,9 +8,9 @@ proof: formalized
 
 # List lemmas (List)
 
-The module `Physlib.Mathematics.ForMathlib.List`, [Physlib/Mathematics/ForMathlib/List.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean): 58 declarations, 8 with a docstring.
+The module `Physlib.Mathematics.ForMathlib.List`, [Physlib/Mathematics/ForMathlib/List.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean): 58 declarations, 8 with a docstring.
 
-**`Physlib.List.takeWhile_eraseIdx`**, a lemma, [line 23](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L23).
+**`Physlib.List.takeWhile_eraseIdx`**, a lemma, [line 23](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L23).
 
 ```lean
 lemma takeWhile_eraseIdx {I : Type} (P : I → Prop) [DecidablePred P] :
@@ -18,7 +18,7 @@ lemma takeWhile_eraseIdx {I : Type} (P : I → Prop) [DecidablePred P] :
     List.takeWhile P (List.eraseIdx l i) = (List.takeWhile P l).eraseIdx i
 ```
 
-**`Physlib.List.dropWile_eraseIdx`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L51).
+**`Physlib.List.dropWile_eraseIdx`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L51).
 
 ```lean
 lemma dropWile_eraseIdx {I : Type} (P : I → Prop) [DecidablePred P] :
@@ -29,14 +29,14 @@ lemma dropWile_eraseIdx {I : Type} (P : I → Prop) [DecidablePred P] :
       else (List.dropWhile P l)
 ```
 
-**`Physlib.List.insertionSort_length`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L89).
+**`Physlib.List.insertionSort_length`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L89).
 
 ```lean
 lemma insertionSort_length {I : Type} (le1 : I → I → Prop) [DecidableRel le1] (l : List I) :
     (List.insertionSort le1 l).length = l.length
 ```
 
-**`Physlib.List.orderedInsertPos`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L95).
+**`Physlib.List.orderedInsertPos`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L95).
 
 > The position `r0` ends up in `r` on adding it via `List.orderedInsert _ r0 r`.
 
@@ -45,14 +45,14 @@ def orderedInsertPos {I : Type} (le1 : I → I → Prop) [DecidableRel le1] (r :
     Fin (List.orderedInsert le1 r0 r).length
 ```
 
-**`Physlib.List.orderedInsertPos_lt_length`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L103).
+**`Physlib.List.orderedInsertPos_lt_length`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L103).
 
 ```lean
 lemma orderedInsertPos_lt_length {I : Type} (le1 : I → I → Prop) [DecidableRel le1] (r : List I)
     (r0 : I) : orderedInsertPos le1 r r0 < (r0 :: r).length
 ```
 
-**`Physlib.List.orderedInsert_get_orderedInsertPos`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L109).
+**`Physlib.List.orderedInsert_get_orderedInsertPos`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L109).
 
 ```lean
 lemma orderedInsert_get_orderedInsertPos {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -60,7 +60,7 @@ lemma orderedInsert_get_orderedInsertPos {I : Type} (le1 : I → I → Prop) [De
     (List.orderedInsert le1 r0 r)[(orderedInsertPos le1 r r0).val] = r0
 ```
 
-**`Physlib.List.orderedInsert_eraseIdx_orderedInsertPos`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L115).
+**`Physlib.List.orderedInsert_eraseIdx_orderedInsertPos`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L115).
 
 ```lean
 lemma orderedInsert_eraseIdx_orderedInsertPos {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -68,7 +68,7 @@ lemma orderedInsert_eraseIdx_orderedInsertPos {I : Type} (le1 : I → I → Prop
     (List.orderedInsert le1 r0 r).eraseIdx ↑(orderedInsertPos le1 r r0) = r
 ```
 
-**`Physlib.List.orderedInsertPos_cons`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L123).
+**`Physlib.List.orderedInsertPos_cons`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L123).
 
 ```lean
 lemma orderedInsertPos_cons {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -77,7 +77,7 @@ lemma orderedInsertPos_cons {I : Type} (le1 : I → I → Prop) [DecidableRel le
     if le1 r0 r1 then ⟨0, by simp⟩ else (Fin.succ (orderedInsertPos le1 r r0))
 ```
 
-**`Physlib.List.orderedInsertPos_sigma`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L131).
+**`Physlib.List.orderedInsertPos_sigma`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L131).
 
 ```lean
 lemma orderedInsertPos_sigma {I : Type} {f : I → Type}
@@ -87,7 +87,7 @@ lemma orderedInsertPos_sigma {I : Type} {f : I → Type}
     (orderedInsertPos le1 (List.map (fun (i : Σ i, f i) => i.1) l) k).1
 ```
 
-**`Physlib.List.orderedInsert_get_lt`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L146).
+**`Physlib.List.orderedInsert_get_lt`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L146).
 
 ```lean
 lemma orderedInsert_get_lt {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -100,7 +100,7 @@ lemma orderedInsert_get_lt {I : Type} (le1 : I → I → Prop) [DecidableRel le1
       omega⟩
 ```
 
-**`Physlib.List.orderedInsertPos_take_orderedInsert`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L161).
+**`Physlib.List.orderedInsertPos_take_orderedInsert`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L161).
 
 ```lean
 lemma orderedInsertPos_take_orderedInsert {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -109,7 +109,7 @@ lemma orderedInsertPos_take_orderedInsert {I : Type} (le1 : I → I → Prop) [D
     List.takeWhile (fun b => decide ¬le1 r0 b) r
 ```
 
-**`Physlib.List.orderedInsertPos_take_eq_orderedInsert`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L167).
+**`Physlib.List.orderedInsertPos_take_eq_orderedInsert`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L167).
 
 ```lean
 lemma orderedInsertPos_take_eq_orderedInsert {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -118,7 +118,7 @@ lemma orderedInsertPos_take_eq_orderedInsert {I : Type} (le1 : I → I → Prop)
     List.take (orderedInsertPos le1 r r0) (List.orderedInsert le1 r0 r)
 ```
 
-**`Physlib.List.orderedInsertPos_drop_eq_orderedInsert`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L181).
+**`Physlib.List.orderedInsertPos_drop_eq_orderedInsert`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L181).
 
 ```lean
 lemma orderedInsertPos_drop_eq_orderedInsert {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -127,7 +127,7 @@ lemma orderedInsertPos_drop_eq_orderedInsert {I : Type} (le1 : I → I → Prop)
     List.drop (orderedInsertPos le1 r r0).succ (List.orderedInsert le1 r0 r)
 ```
 
-**`Physlib.List.orderedInsertPos_take`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L195).
+**`Physlib.List.orderedInsertPos_take`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L195).
 
 ```lean
 lemma orderedInsertPos_take {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -135,7 +135,7 @@ lemma orderedInsertPos_take {I : Type} (le1 : I → I → Prop) [DecidableRel le
     List.take (orderedInsertPos le1 r r0) r = List.takeWhile (fun b => decide ¬le1 r0 b) r
 ```
 
-**`Physlib.List.orderedInsertPos_drop`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L200).
+**`Physlib.List.orderedInsertPos_drop`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L200).
 
 ```lean
 lemma orderedInsertPos_drop {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -143,7 +143,7 @@ lemma orderedInsertPos_drop {I : Type} (le1 : I → I → Prop) [DecidableRel le
     List.drop (orderedInsertPos le1 r r0) r = List.dropWhile (fun b => decide ¬le1 r0 b) r
 ```
 
-**`Physlib.List.orderedInsertPos_succ_take_orderedInsert`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L206).
+**`Physlib.List.orderedInsertPos_succ_take_orderedInsert`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L206).
 
 ```lean
 lemma orderedInsertPos_succ_take_orderedInsert {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -152,7 +152,7 @@ lemma orderedInsertPos_succ_take_orderedInsert {I : Type} (le1 : I → I → Pro
     List.takeWhile (fun b => decide ¬le1 r0 b) r ++ [r0]
 ```
 
-**`Physlib.List.lt_orderedInsertPos_rel`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L212).
+**`Physlib.List.lt_orderedInsertPos_rel`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L212).
 
 ```lean
 lemma lt_orderedInsertPos_rel {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -160,7 +160,7 @@ lemma lt_orderedInsertPos_rel {I : Type} (le1 : I → I → Prop) [DecidableRel 
     (hn : n.val < (orderedInsertPos le1 r r0).val) : ¬ le1 r0 (r.get n)
 ```
 
-**`Physlib.List.lt_orderedInsertPos_rel_fin`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L222).
+**`Physlib.List.lt_orderedInsertPos_rel_fin`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L222).
 
 ```lean
 lemma lt_orderedInsertPos_rel_fin {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -168,7 +168,7 @@ lemma lt_orderedInsertPos_rel_fin {I : Type} (le1 : I → I → Prop) [Decidable
     (hn : n < (orderedInsertPos le1 r r0)) : ¬ le1 r0 ((List.orderedInsert le1 r0 r).get n)
 ```
 
-**`Physlib.List.gt_orderedInsertPos_rel`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L233).
+**`Physlib.List.gt_orderedInsertPos_rel`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L233).
 
 ```lean
 lemma gt_orderedInsertPos_rel {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -177,7 +177,7 @@ lemma gt_orderedInsertPos_rel {I : Type} (le1 : I → I → Prop) [DecidableRel 
     (hn : ¬ n.val < (orderedInsertPos le1 r r0).val) : le1 r0 (r.get n)
 ```
 
-**`Physlib.List.orderedInsert_eraseIdx_lt_orderedInsertPos`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L250).
+**`Physlib.List.orderedInsert_eraseIdx_lt_orderedInsertPos`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L250).
 
 ```lean
 lemma orderedInsert_eraseIdx_lt_orderedInsertPos {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -187,7 +187,7 @@ lemma orderedInsert_eraseIdx_lt_orderedInsertPos {I : Type} (le1 : I → I → P
     (List.orderedInsert le1 r0 r).eraseIdx i = List.orderedInsert le1 r0 (r.eraseIdx i)
 ```
 
-**`Physlib.List.orderedInsert_eraseIdx_orderedInsertPos_le`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L268).
+**`Physlib.List.orderedInsert_eraseIdx_orderedInsertPos_le`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L268).
 
 ```lean
 lemma orderedInsert_eraseIdx_orderedInsertPos_le {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -198,7 +198,7 @@ lemma orderedInsert_eraseIdx_orderedInsertPos_le {I : Type} (le1 : I → I → P
     List.orderedInsert le1 r0 (r.eraseIdx i)
 ```
 
-**`Physlib.List.orderedInsertEquiv`**, a def, [line 300](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L300).
+**`Physlib.List.orderedInsertEquiv`**, a def, [line 300](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L300).
 
 > The equivalence between `Fin (r0 :: r).length` and `Fin (List.orderedInsert le1 r0 r).length`
 > according to where the elements map, i.e. `0` is taken to `orderedInsertPos le1 r r0`.
@@ -208,14 +208,14 @@ def orderedInsertEquiv {I : Type} (le1 : I → I → Prop) [DecidableRel le1] (r
     Fin (r.length + 1) ≃ Fin (List.orderedInsert le1 r0 r).length
 ```
 
-**`Physlib.List.orderedInsertEquiv_zero`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L310).
+**`Physlib.List.orderedInsertEquiv_zero`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L310).
 
 ```lean
 lemma orderedInsertEquiv_zero {I : Type} (le1 : I → I → Prop) [DecidableRel le1] (r : List I)
     (r0 : I) : orderedInsertEquiv le1 r r0 0 = orderedInsertPos le1 r r0
 ```
 
-**`Physlib.List.orderedInsertEquiv_succ`**, a lemma, [line 314](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L314).
+**`Physlib.List.orderedInsertEquiv_succ`**, a lemma, [line 314](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L314).
 
 ```lean
 lemma orderedInsertEquiv_succ {I : Type} (le1 : I → I → Prop) [DecidableRel le1] (r : List I)
@@ -226,7 +226,7 @@ lemma orderedInsertEquiv_succ {I : Type} (le1 : I → I → Prop) [DecidableRel 
     ⟨n, Nat.succ_lt_succ_iff.mp hn⟩)
 ```
 
-**`Physlib.List.orderedInsertEquiv_fin_succ`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L333).
+**`Physlib.List.orderedInsertEquiv_fin_succ`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L333).
 
 ```lean
 lemma orderedInsertEquiv_fin_succ {I : Type} (le1 : I → I → Prop) [DecidableRel le1] (r : List I)
@@ -236,7 +236,7 @@ lemma orderedInsertEquiv_fin_succ {I : Type} (le1 : I → I → Prop) [Decidable
       ⟨n, n.isLt⟩)
 ```
 
-**`Physlib.List.orderedInsertEquiv_monotone_fin_succ`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L350).
+**`Physlib.List.orderedInsertEquiv_monotone_fin_succ`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L350).
 
 ```lean
 lemma orderedInsertEquiv_monotone_fin_succ {I : Type}
@@ -246,7 +246,7 @@ lemma orderedInsertEquiv_monotone_fin_succ {I : Type}
     n < m
 ```
 
-**`Physlib.List.orderedInsertEquiv_congr`**, a lemma, [line 359](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L359).
+**`Physlib.List.orderedInsertEquiv_congr`**, a lemma, [line 359](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L359).
 
 ```lean
 lemma orderedInsertEquiv_congr {α : Type} {r : α → α → Prop} [DecidableRel r] (a : α)
@@ -255,7 +255,7 @@ lemma orderedInsertEquiv_congr {α : Type} {r : α → α → Prop} [DecidableRe
     ((orderedInsertEquiv r l' a).trans (Fin.castOrderIso (by simp [h])).toEquiv)
 ```
 
-**`Physlib.List.get_eq_orderedInsertEquiv`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L366).
+**`Physlib.List.get_eq_orderedInsertEquiv`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L366).
 
 ```lean
 lemma get_eq_orderedInsertEquiv {I : Type} (le1 : I → I → Prop) [DecidableRel le1] (r : List I)
@@ -263,7 +263,7 @@ lemma get_eq_orderedInsertEquiv {I : Type} (le1 : I → I → Prop) [DecidableRe
     (r0 :: r).get = (List.orderedInsert le1 r0 r).get ∘ (orderedInsertEquiv le1 r r0)
 ```
 
-**`Physlib.List.orderedInsertEquiv_get`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L402).
+**`Physlib.List.orderedInsertEquiv_get`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L402).
 
 ```lean
 lemma orderedInsertEquiv_get {I : Type} (le1 : I → I → Prop) [DecidableRel le1] (r : List I)
@@ -271,7 +271,7 @@ lemma orderedInsertEquiv_get {I : Type} (le1 : I → I → Prop) [DecidableRel l
     (r0 :: r).get ∘ (orderedInsertEquiv le1 r r0).symm = (List.orderedInsert le1 r0 r).get
 ```
 
-**`Physlib.List.orderedInsert_eraseIdx_orderedInsertEquiv_zero`**, a lemma, [line 408](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L408).
+**`Physlib.List.orderedInsert_eraseIdx_orderedInsertEquiv_zero`**, a lemma, [line 408](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L408).
 
 ```lean
 lemma orderedInsert_eraseIdx_orderedInsertEquiv_zero
@@ -279,7 +279,7 @@ lemma orderedInsert_eraseIdx_orderedInsertEquiv_zero
     (List.orderedInsert le1 r0 r).eraseIdx (orderedInsertEquiv le1 r r0 ⟨0, by simp⟩) = r
 ```
 
-**`Physlib.List.orderedInsert_eraseIdx_orderedInsertEquiv_succ`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L413).
+**`Physlib.List.orderedInsert_eraseIdx_orderedInsertEquiv_succ`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L413).
 
 ```lean
 lemma orderedInsert_eraseIdx_orderedInsertEquiv_succ
@@ -290,7 +290,7 @@ lemma orderedInsert_eraseIdx_orderedInsertEquiv_succ
     (List.orderedInsert le1 r0 (r.eraseIdx n))
 ```
 
-**`Physlib.List.orderedInsert_eraseIdx_orderedInsertEquiv_fin_succ`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L433).
+**`Physlib.List.orderedInsert_eraseIdx_orderedInsertEquiv_fin_succ`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L433).
 
 ```lean
 lemma orderedInsert_eraseIdx_orderedInsertEquiv_fin_succ
@@ -300,7 +300,7 @@ lemma orderedInsert_eraseIdx_orderedInsertEquiv_fin_succ
     (List.orderedInsert le1 r0 (r.eraseIdx n))
 ```
 
-**`Physlib.List.orderedInsertEquiv_sigma`**, a lemma, [line 440](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L440).
+**`Physlib.List.orderedInsertEquiv_sigma`**, a lemma, [line 440](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L440).
 
 ```lean
 lemma orderedInsertEquiv_sigma {I : Type} {f : I → Type}
@@ -312,7 +312,7 @@ lemma orderedInsertEquiv_sigma {I : Type} {f : I → Type}
     (Fin.castOrderIso (by simp [List.orderedInsert_length])).toEquiv)
 ```
 
-**`Physlib.List.orderedInsert_eq_insertIdx_orderedInsertPos`**, a lemma, [line 464](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L464).
+**`Physlib.List.orderedInsert_eq_insertIdx_orderedInsertPos`**, a lemma, [line 464](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L464).
 
 ```lean
 lemma orderedInsert_eq_insertIdx_orderedInsertPos {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -320,7 +320,7 @@ lemma orderedInsert_eq_insertIdx_orderedInsertPos {I : Type} (le1 : I → I → 
     List.orderedInsert le1 r0 r = List.insertIdx r (orderedInsertPos le1 r r0).1 r0
 ```
 
-**`Physlib.List.insertionSortEquiv`**, a def, [line 513](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L513).
+**`Physlib.List.insertionSortEquiv`**, a def, [line 513](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L513).
 
 > The equivalence between `Fin l.length ≃ Fin (List.insertionSort r l).length` induced by the
 > sorting algorithm.
@@ -330,14 +330,14 @@ def insertionSortEquiv {α : Type} (r : α → α → Prop) [DecidableRel r] : (
     Fin l.length ≃ Fin (List.insertionSort r l).length
 ```
 
-**`Physlib.List.insertionSortEquiv_get`**, a lemma, [line 519](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L519).
+**`Physlib.List.insertionSortEquiv_get`**, a lemma, [line 519](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L519).
 
 ```lean
 lemma insertionSortEquiv_get {α : Type} {r : α → α → Prop} [DecidableRel r] : (l : List α) →
     l.get ∘ (insertionSortEquiv r l).symm = (List.insertionSort r l).get
 ```
 
-**`Physlib.List.insertionSortEquiv_congr`**, a lemma, [line 538](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L538).
+**`Physlib.List.insertionSortEquiv_congr`**, a lemma, [line 538](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L538).
 
 ```lean
 lemma insertionSortEquiv_congr {α : Type} {r : α → α → Prop} [DecidableRel r] (l l' : List α)
@@ -345,7 +345,7 @@ lemma insertionSortEquiv_congr {α : Type} {r : α → α → Prop} [DecidableRe
       ((insertionSortEquiv r l').trans (Fin.castOrderIso (by simp [h])).toEquiv)
 ```
 
-**`Physlib.List.insertionSortEquiv_congr_apply`**, a lemma, [line 544](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L544).
+**`Physlib.List.insertionSortEquiv_congr_apply`**, a lemma, [line 544](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L544).
 
 ```lean
 lemma insertionSortEquiv_congr_apply {α : Type} {r : α → α → Prop} [DecidableRel r] (l l' : List α)
@@ -355,21 +355,21 @@ lemma insertionSortEquiv_congr_apply {α : Type} {r : α → α → Prop} [Decid
     ((insertionSortEquiv r l') (Fin.cast (by simp [h]) i))
 ```
 
-**`Physlib.List.insertionSort_get_comp_insertionSortEquiv`**, a lemma, [line 552](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L552).
+**`Physlib.List.insertionSort_get_comp_insertionSortEquiv`**, a lemma, [line 552](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L552).
 
 ```lean
 lemma insertionSort_get_comp_insertionSortEquiv {α : Type} {r : α → α → Prop} [DecidableRel r]
     (l : List α) : (List.insertionSort r l).get ∘ (insertionSortEquiv r l) = l.get
 ```
 
-**`Physlib.List.insertionSort_eq_ofFn`**, a lemma, [line 557](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L557).
+**`Physlib.List.insertionSort_eq_ofFn`**, a lemma, [line 557](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L557).
 
 ```lean
 lemma insertionSort_eq_ofFn {α : Type} {r : α → α → Prop} [DecidableRel r] (l : List α) :
     List.insertionSort r l = List.ofFn (l.get ∘ (insertionSortEquiv r l).symm)
 ```
 
-**`Physlib.List.insertionSortEquiv_order`**, a lemma, [line 561](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L561).
+**`Physlib.List.insertionSortEquiv_order`**, a lemma, [line 561](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L561).
 
 ```lean
 lemma insertionSortEquiv_order {α : Type} {r : α → α → Prop} [DecidableRel r] :
@@ -378,7 +378,7 @@ lemma insertionSortEquiv_order {α : Type} {r : α → α → Prop} [DecidableRe
     ¬ r l[i] l[j]
 ```
 
-**`Physlib.List.optionErase`**, a def, [line 583](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L583).
+**`Physlib.List.optionErase`**, a def, [line 583](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L583).
 
 > Optional erase of an element in a list. For `none` returns the list, for `some i` returns
 > the list with the `i`'th element erased.
@@ -387,35 +387,35 @@ lemma insertionSortEquiv_order {α : Type} {r : α → α → Prop} [DecidableRe
 def optionErase {I : Type} (l : List I) (i : Option (Fin l.length)) : List I
 ```
 
-**`Physlib.List.eraseIdx_length'`**, a lemma, [line 588](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L588).
+**`Physlib.List.eraseIdx_length'`**, a lemma, [line 588](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L588).
 
 ```lean
 lemma eraseIdx_length' {I : Type} (l : List I) (i : Fin l.length) :
     (List.eraseIdx l i).length = l.length - 1
 ```
 
-**`Physlib.List.eraseIdx_length`**, a lemma, [line 592](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L592).
+**`Physlib.List.eraseIdx_length`**, a lemma, [line 592](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L592).
 
 ```lean
 lemma eraseIdx_length {I : Type} (l : List I) (i : Fin l.length) :
     (List.eraseIdx l i).length + 1 = l.length
 ```
 
-**`Physlib.List.eraseIdx_length_succ`**, a lemma, [line 596](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L596).
+**`Physlib.List.eraseIdx_length_succ`**, a lemma, [line 596](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L596).
 
 ```lean
 lemma eraseIdx_length_succ {I : Type} (l : List I) (i : Fin l.length) :
     (List.eraseIdx l i).length.succ = l.length
 ```
 
-**`Physlib.List.eraseIdx_cons_length`**, a lemma, [line 600](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L600).
+**`Physlib.List.eraseIdx_cons_length`**, a lemma, [line 600](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L600).
 
 ```lean
 lemma eraseIdx_cons_length {I : Type} (a : I) (l : List I) (i : Fin (a :: l).length) :
     (List.eraseIdx (a :: l) i).length= l.length
 ```
 
-**`Physlib.List.eraseIdx_get`**, a lemma, [line 604](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L604).
+**`Physlib.List.eraseIdx_get`**, a lemma, [line 604](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L604).
 
 ```lean
 lemma eraseIdx_get {I : Type} (l : List I) (i : Fin l.length) :
@@ -423,7 +423,7 @@ lemma eraseIdx_get {I : Type} (l : List I) (i : Fin l.length) :
     (Fin.cast (eraseIdx_length l i).symm i).succAbove
 ```
 
-**`Physlib.List.eraseIdx_insertionSort`**, a lemma, [line 623](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L623).
+**`Physlib.List.eraseIdx_insertionSort`**, a lemma, [line 623](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L623).
 
 ```lean
 lemma eraseIdx_insertionSort {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -433,7 +433,7 @@ lemma eraseIdx_insertionSort {I : Type} (le1 : I → I → Prop) [DecidableRel l
     = List.insertionSort le1 (r.eraseIdx n)
 ```
 
-**`Physlib.List.eraseIdx_insertionSort_fin`**, a lemma, [line 649](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L649).
+**`Physlib.List.eraseIdx_insertionSort_fin`**, a lemma, [line 649](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L649).
 
 ```lean
 lemma eraseIdx_insertionSort_fin {I : Type} (le1 : I → I → Prop) [DecidableRel le1]
@@ -442,7 +442,7 @@ lemma eraseIdx_insertionSort_fin {I : Type} (le1 : I → I → Prop) [DecidableR
     = List.insertionSort le1 (r.eraseIdx n)
 ```
 
-**`Physlib.List.insertionSortMinPos`**, a def, [line 661](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L661).
+**`Physlib.List.insertionSortMinPos`**, a def, [line 661](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L661).
 
 > Given a list `i :: l` the left-most minimal position `a` of `i :: l` wrt `r`.
 > That is the first position
@@ -455,7 +455,7 @@ def insertionSortMinPos {α : Type} (r : α → α → Prop) [DecidableRel r] (i
     Fin (i :: l).length
 ```
 
-**`Physlib.List.insertionSortMin`**, a def, [line 667](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L667).
+**`Physlib.List.insertionSortMin`**, a def, [line 667](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L667).
 
 > The element of `i :: l` at `insertionSortMinPos`.
 
@@ -464,7 +464,7 @@ def insertionSortMin {α : Type} (r : α → α → Prop) [DecidableRel r] (i : 
     α
 ```
 
-**`Physlib.List.insertionSortMin_eq_insertionSort_head`**, a lemma, [line 670](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L670).
+**`Physlib.List.insertionSortMin_eq_insertionSort_head`**, a lemma, [line 670](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L670).
 
 ```lean
 lemma insertionSortMin_eq_insertionSort_head {α : Type} (r : α → α → Prop) [DecidableRel r]
@@ -475,7 +475,7 @@ lemma insertionSortMin_eq_insertionSort_head {α : Type} (r : α → α → Prop
     exact Nat.zero_lt_succ l.length)
 ```
 
-**`Physlib.List.insertionSortDropMinPos`**, a def, [line 685](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L685).
+**`Physlib.List.insertionSortDropMinPos`**, a def, [line 685](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L685).
 
 > The list remaining after dropping the element at the position determined by
 > `insertionSortMinPos`.
@@ -485,7 +485,7 @@ def insertionSortDropMinPos {α : Type} (r : α → α → Prop) [DecidableRel r
     List α
 ```
 
-**`Physlib.List.insertionSort_eq_insertionSortMin_cons`**, a lemma, [line 688](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L688).
+**`Physlib.List.insertionSort_eq_insertionSortMin_cons`**, a lemma, [line 688](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L688).
 
 ```lean
 lemma insertionSort_eq_insertionSortMin_cons {α : Type} (r : α → α → Prop) [DecidableRel r]
@@ -494,7 +494,7 @@ lemma insertionSort_eq_insertionSortMin_cons {α : Type} (r : α → α → Prop
     (insertionSortMin r i l) :: List.insertionSort r (insertionSortDropMinPos r i l)
 ```
 
-**`Physlib.List.optionEraseZ`**, a def, [line 705](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L705).
+**`Physlib.List.optionEraseZ`**, a def, [line 705](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L705).
 
 > Optional erase of an element in a list, with addition for `none`. For `none` adds `a` to the
 > front of the list, for `some i` removes the `i`th element of the list (does not add `a`).
@@ -505,14 +505,14 @@ lemma insertionSort_eq_insertionSortMin_cons {α : Type} (r : α → α → Prop
 def optionEraseZ {I : Type} (l : List I) (a : I) (i : Option (Fin l.length)) : List I
 ```
 
-**`Physlib.List.optionEraseZ_some_length`**, a lemma, [line 711](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L711).
+**`Physlib.List.optionEraseZ_some_length`**, a lemma, [line 711](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L711).
 
 ```lean
 lemma optionEraseZ_some_length {I : Type} (l : List I) (a : I) (i : (Fin l.length)) :
     (optionEraseZ l a (some i)).length = l.length - 1
 ```
 
-**`Physlib.List.optionEraseZ_ext`**, a lemma, [line 715](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L715).
+**`Physlib.List.optionEraseZ_ext`**, a lemma, [line 715](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L715).
 
 ```lean
 lemma optionEraseZ_ext {I : Type} {l l' : List I} {a a' : I} {i : Option (Fin l.length)}
@@ -521,7 +521,7 @@ lemma optionEraseZ_ext {I : Type} {l l' : List I} {a a' : I} {i : Option (Fin l.
     optionEraseZ l a i = optionEraseZ l' a' i'
 ```
 
-**`Physlib.List.mem_take_finrange`**, a lemma, [line 725](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean#L725).
+**`Physlib.List.mem_take_finrange`**, a lemma, [line 725](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean#L725).
 
 ```lean
 lemma mem_take_finrange : (n m : ℕ) → (a : Fin n) → a ∈ List.take m (List.finRange n) ↔ a.val < m
@@ -545,4 +545,4 @@ lemma mem_take_finrange : (n m : ℕ) → (a : Fin n) → a ∈ List.take m (Lis
 
 ## Sources
 
-- [Physlib/Mathematics/ForMathlib/List.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/List.lean)
+- [Physlib/Mathematics/ForMathlib/List.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/List.lean)

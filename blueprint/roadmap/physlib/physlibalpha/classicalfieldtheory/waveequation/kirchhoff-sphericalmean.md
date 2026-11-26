@@ -8,7 +8,7 @@ proof: formalized
 
 # Fourier transform and integrability of spherical means
 
-The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Kirchhoff.SphericalMean`, [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean): 7 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Kirchhoff.SphericalMean`, [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean): 7 declarations, 3 with a docstring.
 
 > The spherical mean of a Schwartz function has the transform of the sphere measure times that of
 > the function.
@@ -29,7 +29,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.WaveEquation.Kirchhoff.SphericalMe
 
 ## A. The Fourier transform of a spherical mean
 
-**`WaveEquation.Kirchhoff.translate_complex`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean#L45).
+**`WaveEquation.Kirchhoff.translate_complex`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean#L45).
 
 ```lean
 lemma translate_complex (f : Space 3 → ℂ) (v ξ : Space 3) :
@@ -37,7 +37,7 @@ lemma translate_complex (f : Space 3 → ℂ) (v ξ : Space 3) :
       (phase (inner ℝ v ξ))⁻¹ * ∫ x : Space 3, phase (inner ℝ x ξ) * f x
 ```
 
-**`WaveEquation.Kirchhoff.sphericalIntegral_fourier_integral`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean#L62).
+**`WaveEquation.Kirchhoff.sphericalIntegral_fourier_integral`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean#L62).
 
 ```lean
 lemma sphericalIntegral_fourier_integral (f : 𝓢(Space 3, ℂ)) (r : ℝ) (ξ : Space 3) :
@@ -46,7 +46,7 @@ lemma sphericalIntegral_fourier_integral (f : 𝓢(Space 3, ℂ)) (r : ℝ) (ξ 
         ∫ x : Space 3, phase (inner ℝ x ξ) * f x
 ```
 
-**`WaveEquation.Kirchhoff.sphericalIntegral_fourier`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean#L106).
+**`WaveEquation.Kirchhoff.sphericalIntegral_fourier`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean#L106).
 
 > **Fourier multiplier of the spherical mean.** For `ξ ≠ 0` and `r > 0`, the Fourier integral of
 > the unnormalized spherical mean is `4π sin(2π r |ξ|) / (2π r |ξ|)` times that of `f`.
@@ -61,7 +61,7 @@ lemma sphericalIntegral_fourier (f : 𝓢(Space 3, ℂ)) {r : ℝ} (hr : 0 < r)
 
 ## B. Integrability of the spherical mean
 
-**`WaveEquation.Kirchhoff.integrable_translate_prod`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean#L129).
+**`WaveEquation.Kirchhoff.integrable_translate_prod`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean#L129).
 
 ```lean
 lemma integrable_translate_prod (f : 𝓢(Space 3, ℂ)) (r : ℝ) :
@@ -69,7 +69,7 @@ lemma integrable_translate_prod (f : 𝓢(Space 3, ℂ)) (r : ℝ) :
       (volume.prod sphereMeasure)
 ```
 
-**`WaveEquation.Kirchhoff.integrable_sphericalIntegral`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean#L147).
+**`WaveEquation.Kirchhoff.integrable_sphericalIntegral`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean#L147).
 
 > The spherical mean of a Schwartz function is integrable.
 
@@ -78,14 +78,14 @@ lemma integrable_sphericalIntegral (f : 𝓢(Space 3, ℂ)) (r : ℝ) :
     Integrable (sphericalIntegral r f) volume
 ```
 
-**`WaveEquation.Kirchhoff.sphericalIntegral_bound`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean#L151).
+**`WaveEquation.Kirchhoff.sphericalIntegral_bound`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean#L151).
 
 ```lean
 lemma sphericalIntegral_bound (f : 𝓢(Space 3, ℂ)) (r : ℝ) :
     ∃ C : ℝ, 0 ≤ C ∧ ∀ x, ‖sphericalIntegral r f x‖ ≤ C
 ```
 
-**`WaveEquation.Kirchhoff.memLp_two_sphericalIntegral`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean#L163).
+**`WaveEquation.Kirchhoff.memLp_two_sphericalIntegral`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean#L163).
 
 > The spherical mean of a Schwartz function is square integrable.
 
@@ -105,4 +105,4 @@ lemma memLp_two_sphericalIntegral (f : 𝓢(Space 3, ℂ)) (r : ℝ) :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean)

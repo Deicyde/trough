@@ -8,7 +8,7 @@ proof: formalized
 
 # Reciprocal lattice
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.Reciprocal`, [PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean): 11 declarations, 11 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.Reciprocal`, [PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean): 11 declarations, 11 with a docstring.
 
 ## i. Overview
 
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Reciprocal`, [PhyslibAlpha/Cond
 
 ## A. Characters from wave vectors
 
-**`CondensedMatter.Crystal.phase`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L65).
+**`CondensedMatter.Crystal.phase`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L65).
 
 > The phase accumulated by a plane wave of wave vector `k` under the lattice translation
 > `n`.
@@ -49,7 +49,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Reciprocal`, [PhyslibAlpha/Cond
 noncomputable def phase (k : EuclideanSpace ℝ (Fin D)) (n : Multiplicative (Fin d → ℤ)) : ℝ
 ```
 
-**`CondensedMatter.Crystal.dualCharacter`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L69).
+**`CondensedMatter.Crystal.dualCharacter`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L69).
 
 > The character of the translation group `ℤ^d` given by the plane wave of wave vector `k`.
 
@@ -58,7 +58,7 @@ noncomputable def dualCharacter (k : EuclideanSpace ℝ (Fin D)) :
     PontryaginDual (Multiplicative (Fin d → ℤ))
 ```
 
-**`CondensedMatter.Crystal.reciprocalLattice`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L81).
+**`CondensedMatter.Crystal.reciprocalLattice`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L81).
 
 > The reciprocal lattice: wave vectors whose plane wave is trivial on every lattice
 > translation.
@@ -67,7 +67,7 @@ noncomputable def dualCharacter (k : EuclideanSpace ℝ (Fin D)) :
 def reciprocalLattice : AddSubgroup (EuclideanSpace ℝ (Fin D))
 ```
 
-**`CondensedMatter.Crystal.dualCharacter_apply`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L93).
+**`CondensedMatter.Crystal.dualCharacter_apply`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L93).
 
 > Evaluating the character of a wave vector gives the exponential of the phase.
 
@@ -76,7 +76,7 @@ lemma dualCharacter_apply (k : EuclideanSpace ℝ (Fin D)) (n : Multiplicative (
     dualCharacter a k n = Circle.exp (phase a k n)
 ```
 
-**`CondensedMatter.Crystal.phase_add`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L97).
+**`CondensedMatter.Crystal.phase_add`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L97).
 
 > The phase of a lattice translation is additive in the wave vector.
 
@@ -85,7 +85,7 @@ lemma phase_add (k l : EuclideanSpace ℝ (Fin D)) (n : Multiplicative (Fin d �
     phase a (k + l) n = phase a k n + phase a l n
 ```
 
-**`CondensedMatter.Crystal.dualCharacter_eq_one_iff`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L102).
+**`CondensedMatter.Crystal.dualCharacter_eq_one_iff`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L102).
 
 > A wave vector gives the trivial character exactly when it lies in the reciprocal lattice.
 
@@ -94,7 +94,7 @@ lemma dualCharacter_eq_one_iff (k : EuclideanSpace ℝ (Fin D)) :
     dualCharacter a k = 1 ↔ k ∈ reciprocalLattice a
 ```
 
-**`CondensedMatter.Crystal.dualCharacter_add_of_mem`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L124).
+**`CondensedMatter.Crystal.dualCharacter_add_of_mem`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L124).
 
 > Wave vectors differing by a reciprocal lattice vector give the same character.
 
@@ -105,7 +105,7 @@ lemma dualCharacter_add_of_mem {k l : EuclideanSpace ℝ (Fin D)}
 
 ## B. The reciprocal basis
 
-**`CondensedMatter.Crystal.latticeBasis`**, a def, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L143).
+**`CondensedMatter.Crystal.latticeBasis`**, a def, [line 143](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L143).
 
 > The basis of space formed by independent primitive translations.
 
@@ -114,7 +114,7 @@ noncomputable def latticeBasis (ha : LinearIndependent ℝ a) :
     Module.Basis (Fin d) ℝ (EuclideanSpace ℝ (Fin d))
 ```
 
-**`CondensedMatter.Crystal.reciprocalBasis`**, a def, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L148).
+**`CondensedMatter.Crystal.reciprocalBasis`**, a def, [line 148](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L148).
 
 > The reciprocal basis `b_i`, characterized by `⟨a_j, b_i⟩ = 2π δ_ij`.
 
@@ -123,7 +123,7 @@ noncomputable def reciprocalBasis (ha : LinearIndependent ℝ a) (i : Fin d) :
     EuclideanSpace ℝ (Fin d)
 ```
 
-**`CondensedMatter.Crystal.inner_reciprocalBasis`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L154).
+**`CondensedMatter.Crystal.inner_reciprocalBasis`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L154).
 
 > The reciprocal basis is dual to the primitive translations up to the factor `2π`.
 
@@ -132,7 +132,7 @@ lemma inner_reciprocalBasis (ha : LinearIndependent ℝ a) (i j : Fin d) :
     ⟪a j, reciprocalBasis ha i⟫ = if i = j then 2 * Real.pi else 0
 ```
 
-**`CondensedMatter.Crystal.dualCharacter_surjective`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L161).
+**`CondensedMatter.Crystal.dualCharacter_surjective`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean#L161).
 
 > Every character of the translation group is the plane wave of some wave vector.
 
@@ -147,4 +147,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean)

@@ -8,9 +8,9 @@ proof: formalized
 
 # Metric for complex Lorentz vectors
 
-The module `Physlib.Relativity.Tensors.ComplexTensor.Metrics.Pre`, [Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean): 10 declarations, 6 with a docstring.
+The module `Physlib.Relativity.Tensors.ComplexTensor.Metrics.Pre`, [Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean): 10 declarations, 6 with a docstring.
 
-**`Lorentz.ComplexVector.metricVal`**, a def, [line 27](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L27).
+**`Lorentz.ComplexVector.metricVal`**, a def, [line 27](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L27).
 
 > The metric `ηᵃᵃ` as an element of `(complexContr ⊗ complexContr).V`.
 
@@ -18,7 +18,7 @@ The module `Physlib.Relativity.Tensors.ComplexTensor.Metrics.Pre`, [Physlib/Rela
 def ComplexVector.metricVal : (ComplexVector ⊗[ℂ] ComplexVector)
 ```
 
-**`Lorentz.ComplexVector.metricVal_expand_tmul`**, a lemma, [line 31](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L31).
+**`Lorentz.ComplexVector.metricVal_expand_tmul`**, a lemma, [line 31](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L31).
 
 > The expansion of `ComplexVector.metricVal` into basis vectors.
 
@@ -30,7 +30,7 @@ lemma ComplexVector.metricVal_expand_tmul : ComplexVector.metricVal =
     - ComplexVector.basis (Sum.inr 2) ⊗ₜ[ℂ] ComplexVector.basis (Sum.inr 2)
 ```
 
-**`Lorentz.ComplexVector.metric`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L50).
+**`Lorentz.ComplexVector.metric`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L50).
 
 > The metric `ηᵃᵃ` as a morphism `𝟙_ (Rep ℂ SL(2,ℂ)) ⟶ complexContr ⊗ complexContr`,
 > making its invariance under the action of `SL(2,ℂ)`.
@@ -40,13 +40,13 @@ def ComplexVector.metric : (Representation.trivial ℂ SL(2,ℂ) ℂ).Intertwini
     (ComplexVector.SL2CRep.tprod ComplexVector.SL2CRep)
 ```
 
-**`Lorentz.ComplexVector.metric_apply_one`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L72).
+**`Lorentz.ComplexVector.metric_apply_one`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L72).
 
 ```lean
 lemma ComplexVector.metric_apply_one : ComplexVector.metric (1 : ℂ) = ComplexVector.metricVal
 ```
 
-**`Lorentz.ComplexCoVector.metricVal`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L77).
+**`Lorentz.ComplexCoVector.metricVal`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L77).
 
 > The metric `ηᵢᵢ` as an element of `(complexCo ⊗ complexCo).V`.
 
@@ -54,7 +54,7 @@ lemma ComplexVector.metric_apply_one : ComplexVector.metric (1 : ℂ) = ComplexV
 def ComplexCoVector.metricVal : (ComplexCoVector ⊗[ℂ] ComplexCoVector)
 ```
 
-**`Lorentz.ComplexCoVector.metricVal_expand_tmul`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L81).
+**`Lorentz.ComplexCoVector.metricVal_expand_tmul`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L81).
 
 > The expansion of `ComplexCoVector.metricVal` into basis vectors.
 
@@ -66,7 +66,7 @@ lemma ComplexCoVector.metricVal_expand_tmul : ComplexCoVector.metricVal =
     - ComplexCoVector.basis (Sum.inr 2) ⊗ₜ[ℂ] ComplexCoVector.basis (Sum.inr 2)
 ```
 
-**`Lorentz.ComplexCoVector.metric`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L100).
+**`Lorentz.ComplexCoVector.metric`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L100).
 
 > The metric `ηᵢᵢ` as a morphism `𝟙_ (Rep ℂ SL(2,ℂ)) ⟶ complexCo ⊗ complexCo`,
 > making its invariance under the action of `SL(2,ℂ)`.
@@ -76,7 +76,7 @@ def ComplexCoVector.metric : (Representation.trivial ℂ SL(2,ℂ) ℂ).Intertwi
     (ComplexCoVector.SL2CRep.tprod ComplexCoVector.SL2CRep)
 ```
 
-**`Lorentz.ComplexCoVector.metric_apply_one`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L124).
+**`Lorentz.ComplexCoVector.metric_apply_one`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L124).
 
 ```lean
 lemma ComplexCoVector.metric_apply_one :
@@ -85,7 +85,7 @@ lemma ComplexCoVector.metric_apply_one :
 
 ## Contraction of metrics
 
-**`Lorentz.ComplexVector.contr_metric`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L141).
+**`Lorentz.ComplexVector.contr_metric`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L141).
 
 ```lean
 lemma ComplexVector.contr_metric :
@@ -97,7 +97,7 @@ lemma ComplexVector.contr_metric :
       (ComplexVector.metric 1) ⊗ₜ[ℂ] (ComplexCoVector.metric 1)) = ComplexVector.unit (1 : ℝ)
 ```
 
-**`Lorentz.ComplexCoVector.contr_metric`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L156).
+**`Lorentz.ComplexCoVector.contr_metric`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean#L156).
 
 ```lean
 lemma ComplexCoVector.contr_metric :
@@ -116,4 +116,4 @@ lemma ComplexCoVector.contr_metric :
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean)
+- [Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean)

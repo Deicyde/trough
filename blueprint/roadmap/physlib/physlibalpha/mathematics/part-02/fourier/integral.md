@@ -8,7 +8,7 @@ proof: formalized
 
 # Fourier integrals and their derivatives
 
-The module `PhyslibAlpha.Mathematics.Fourier.Integral`, [PhyslibAlpha/Mathematics/Fourier/Integral.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Integral.lean): 9 declarations, 5 with a docstring.
+The module `PhyslibAlpha.Mathematics.Fourier.Integral`, [PhyslibAlpha/Mathematics/Fourier/Integral.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/Integral.lean): 9 declarations, 5 with a docstring.
 
 ## i. Overview
 
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.Mathematics.Fourier.Integral`, [PhyslibAlpha/Mathematic
 
 > Lemmas: `contDiff_char_pair`.
 
-**`FourierIntegral.fourierInvIntegral_eq_fourier`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L75).
+**`FourierIntegral.fourierInvIntegral_eq_fourier`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L75).
 
 > The inverse Fourier integral is the Fourier integral of the reflected function.
 
@@ -51,7 +51,7 @@ lemma fourierInvIntegral_eq_fourier (h : E → F) (x : E) :
     ∫ ξ : E, (𝐞 (inner ℝ ξ x) : ℂ) • h ξ = 𝓕 (fun v => h (-v)) x
 ```
 
-**`FourierIntegral.laplacian_fourierInvIntegral`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L82).
+**`FourierIntegral.laplacian_fourierInvIntegral`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L82).
 
 > The Laplacian of the inverse Fourier integral of `h` is the integral of `-(2π)² ‖ξ‖² h`.
 
@@ -62,27 +62,27 @@ lemma laplacian_fourierInvIntegral {h : E → F} (hm : AEStronglyMeasurable h vo
       ∫ ξ : E, (-((2 * π) ^ 2 * ‖ξ‖ ^ 2 : ℝ) : ℂ) • ((𝐞 (inner ℝ ξ x) : ℂ) • h ξ)
 ```
 
-**`FourierIntegral.iteratedDeriv_fourierChar`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L141).
+**`FourierIntegral.iteratedDeriv_fourierChar`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L141).
 
 ```lean
 lemma iteratedDeriv_fourierChar (i : ℕ) :
     iteratedDeriv i (fun r : ℝ => (𝐞 r : ℂ)) = fun r => (2 * π * Complex.I) ^ i * (𝐞 r : ℂ)
 ```
 
-**`FourierIntegral.norm_iteratedFDeriv_fourierChar`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L154).
+**`FourierIntegral.norm_iteratedFDeriv_fourierChar`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L154).
 
 ```lean
 lemma norm_iteratedFDeriv_fourierChar (i : ℕ) (r : ℝ) :
     ‖iteratedFDeriv ℝ i (fun r : ℝ => (𝐞 r : ℂ)) r‖ = (2 * π) ^ i
 ```
 
-**`FourierIntegral.contDiff_fourierChar_real`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L159).
+**`FourierIntegral.contDiff_fourierChar_real`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L159).
 
 ```lean
 lemma contDiff_fourierChar_real : ContDiff ℝ ∞ (fun r : ℝ => (𝐞 r : ℂ))
 ```
 
-**`FourierIntegral.norm_iteratedFDeriv_char_le`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L168).
+**`FourierIntegral.norm_iteratedFDeriv_char_le`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L168).
 
 > The derivatives of `(t, x) ↦ 𝐞 ⟪ξ, x⟫` are bounded by `(2π‖ξ‖)ⁱ`.
 
@@ -91,7 +91,7 @@ lemma norm_iteratedFDeriv_char_le (ξ : E) (i : ℕ) (q : ℝ × E) :
     ‖iteratedFDeriv ℝ i (fun q : ℝ × E => (𝐞 (inner ℝ ξ q.2) : ℂ)) q‖ ≤ (2 * π * ‖ξ‖) ^ i
 ```
 
-**`FourierIntegral.norm_iteratedFDeriv_timeShift_le`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L194).
+**`FourierIntegral.norm_iteratedFDeriv_timeShift_le`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L194).
 
 > The derivatives of a time translate are bounded by those of the function.
 
@@ -101,7 +101,7 @@ lemma norm_iteratedFDeriv_timeShift_le (g : ℝ → F) (hg : ContDiff ℝ ∞ g)
     ‖iteratedFDeriv ℝ j (fun q : ℝ × E => g (q.1 - r)) q‖ ≤ ‖iteratedDeriv j g (q.1 - r)‖
 ```
 
-**`FourierIntegral.char_pow_mul_decay_le`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L214).
+**`FourierIntegral.char_pow_mul_decay_le`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L214).
 
 > Polynomial factors from spatial derivatives are absorbed by additional Fourier decay.
 
@@ -111,7 +111,7 @@ lemma char_pow_mul_decay_le {E : Type*} [NormedAddCommGroup E] (ξ : E) (i N : �
       (2 * π) ^ i * (1 + ‖ξ‖) ^ (-(N : ℝ))
 ```
 
-**`FourierIntegral.contDiff_char_pair`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L234).
+**`FourierIntegral.contDiff_char_pair`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/Integral.lean#L234).
 
 ```lean
 lemma contDiff_char_pair : ContDiff ℝ ∞ fun w : (ℝ × E) × (ℝ × E) =>
@@ -124,4 +124,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Fourier/Integral.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Fourier/Integral.lean)
+- [PhyslibAlpha/Mathematics/Fourier/Integral.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Fourier/Integral.lean)

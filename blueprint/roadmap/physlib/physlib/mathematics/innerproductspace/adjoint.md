@@ -8,7 +8,7 @@ proof: formalized
 
 # Adjoint of a linear map
 
-The module `Physlib.Mathematics.InnerProductSpace.Adjoint`, [Physlib/Mathematics/InnerProductSpace/Adjoint.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean): 19 declarations, 1 with a docstring.
+The module `Physlib.Mathematics.InnerProductSpace.Adjoint`, [Physlib/Mathematics/InnerProductSpace/Adjoint.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean): 19 declarations, 1 with a docstring.
 
 > This module defines the adjoint of a linear map `f : E → F` where
 > `E` and `F` carry the instances of `InnerProductSpace'` over a field `𝕜`.
@@ -16,7 +16,7 @@ The module `Physlib.Mathematics.InnerProductSpace.Adjoint`, [Physlib/Mathematics
 > This is a generalization of the usual adjoint defined on `InnerProductSpace` for
 > continuous linear maps.
 
-**`HasAdjoint`**, a structure, [line 38](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L38).
+**`HasAdjoint`**, a structure, [line 38](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L38).
 
 > Adjoint of a linear map `f` such that `∀ x y, ⟪adjoint 𝕜 f y, x⟫ = ⟪y, f x⟫`.
 >
@@ -30,41 +30,41 @@ structure HasAdjoint (f : E → F) (f' : F → E) where
   adjoint_inner_left (x : E) (y : F) : ⟪f' y, x⟫ = ⟪y, f x⟫
 ```
 
-**`adjoint`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L45).
+**`adjoint`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L45).
 
 ```lean
 def adjoint (f : E → F)
 ```
 
-**`HasAdjoint.adjoint_inner_right`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L50).
+**`HasAdjoint.adjoint_inner_right`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L50).
 
 ```lean
 lemma HasAdjoint.adjoint_inner_right {f : E → F} (hf : HasAdjoint 𝕜 f f') :
     ⟪x, f' y⟫ = ⟪f x, y⟫
 ```
 
-**`ContinuousLinearMap.hasAdjoint`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L57).
+**`ContinuousLinearMap.hasAdjoint`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L57).
 
 ```lean
 lemma ContinuousLinearMap.hasAdjoint [CompleteSpace E] [CompleteSpace F] (f : E →L[𝕜] F) :
     HasAdjoint 𝕜 f (fun y => fromL2 𝕜 (((toL2 𝕜) ∘L f ∘L (fromL2 𝕜)).adjoint (toL2 𝕜 y)))
 ```
 
-**`adjoint_eq_clm_adjoint`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L62).
+**`adjoint_eq_clm_adjoint`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L62).
 
 ```lean
 lemma adjoint_eq_clm_adjoint [CompleteSpace E] [CompleteSpace F] (f : E →L[𝕜] F) :
     _root_.adjoint 𝕜 f = fromL2 𝕜 ∘L (toL2 𝕜 ∘L f ∘L fromL2 𝕜).adjoint ∘L (toL2 𝕜)
 ```
 
-**`HasAdjoint.adjoint_apply_zero`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L69).
+**`HasAdjoint.adjoint_apply_zero`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L69).
 
 ```lean
 lemma HasAdjoint.adjoint_apply_zero {f : E → F} {f' : F → E}
     (hf : HasAdjoint 𝕜 f f') : f' 0 = 0
 ```
 
-**`HasAdjoint.adjoint`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L73).
+**`HasAdjoint.adjoint`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L73).
 
 ```lean
 lemma HasAdjoint.adjoint
@@ -72,7 +72,7 @@ lemma HasAdjoint.adjoint
     (hf : HasAdjoint 𝕜 f f') : adjoint 𝕜 f = f'
 ```
 
-**`HasAdjoint.congr_adj`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L84).
+**`HasAdjoint.congr_adj`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L84).
 
 ```lean
 lemma HasAdjoint.congr_adj (f : E → F) (f' g')
@@ -80,19 +80,19 @@ lemma HasAdjoint.congr_adj (f : E → F) (f' g')
     (eq : g' = f') : HasAdjoint 𝕜 f f'
 ```
 
-**`hasAdjoint_id`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L88).
+**`hasAdjoint_id`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L88).
 
 ```lean
 lemma hasAdjoint_id : HasAdjoint 𝕜 (fun x : E => x) (fun x => x)
 ```
 
-**`hasAdjoint_zero`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L91).
+**`hasAdjoint_zero`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L91).
 
 ```lean
 lemma hasAdjoint_zero : HasAdjoint 𝕜 (fun _ : E => (0 : F)) (fun _ => 0)
 ```
 
-**`HasAdjoint.comp`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L94).
+**`HasAdjoint.comp`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L94).
 
 ```lean
 lemma HasAdjoint.comp {f : F → G} {g : E → F} {f' g'}
@@ -100,7 +100,7 @@ lemma HasAdjoint.comp {f : F → G} {g : E → F} {f' g'}
     HasAdjoint 𝕜 (fun x : E => f (g x)) (fun x => g' (f' x))
 ```
 
-**`HasAdjoint.prodMk`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L100).
+**`HasAdjoint.prodMk`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L100).
 
 ```lean
 lemma HasAdjoint.prodMk {f : E → F} {g : E → G} {f' g'}
@@ -108,28 +108,28 @@ lemma HasAdjoint.prodMk {f : E → F} {g : E → G} {f' g'}
     HasAdjoint 𝕜 (fun x : E => (f x, g x)) (fun yz => f' yz.1 + g' yz.2)
 ```
 
-**`HasAdjoint.fst`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L108).
+**`HasAdjoint.fst`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L108).
 
 ```lean
 lemma HasAdjoint.fst {f : E → F×G} {f'} (hf : HasAdjoint 𝕜 f f') :
     HasAdjoint 𝕜 (fun x : E => (f x).1) (fun y => f' (y, 0))
 ```
 
-**`HasAdjoint.snd`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L114).
+**`HasAdjoint.snd`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L114).
 
 ```lean
 lemma HasAdjoint.snd {f : E → F×G} {f'} (hf : HasAdjoint 𝕜 f f') :
     HasAdjoint 𝕜 (fun x : E => (f x).2) (fun z => f' (0, z))
 ```
 
-**`HasAdjoint.neg`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L119).
+**`HasAdjoint.neg`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L119).
 
 ```lean
 lemma HasAdjoint.neg {f : E → F} {f'} (hf : HasAdjoint 𝕜 f f') :
     HasAdjoint 𝕜 (fun x : E => -f x) (fun y => -f' y)
 ```
 
-**`HasAdjoint.add`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L124).
+**`HasAdjoint.add`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L124).
 
 ```lean
 lemma HasAdjoint.add {f g : E → F} {f' g'}
@@ -137,7 +137,7 @@ lemma HasAdjoint.add {f g : E → F} {f' g'}
     HasAdjoint 𝕜 (fun x : E => f x + g x) (fun y => f' y + g' y)
 ```
 
-**`HasAdjoint.sub`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L131).
+**`HasAdjoint.sub`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L131).
 
 ```lean
 lemma HasAdjoint.sub {f g : E → F} {f' g'}
@@ -145,7 +145,7 @@ lemma HasAdjoint.sub {f g : E → F} {f' g'}
     HasAdjoint 𝕜 (fun x : E => f x - g x) (fun y => f' y - g' y)
 ```
 
-**`HasAdjoint.smul_left`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L139).
+**`HasAdjoint.smul_left`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L139).
 
 ```lean
 lemma HasAdjoint.smul_left {f : E → F} {f'} (c : 𝕜)
@@ -153,7 +153,7 @@ lemma HasAdjoint.smul_left {f : E → F} {f'} (c : 𝕜)
     HasAdjoint 𝕜 (fun x : E => c • f x) (fun y => (conj c) • f' y)
 ```
 
-**`HasAdjoint.smul_right`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L146).
+**`HasAdjoint.smul_right`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean#L146).
 
 ```lean
 lemma HasAdjoint.smul_right {f : E → 𝕜} {f'} (v : F)
@@ -167,4 +167,4 @@ lemma HasAdjoint.smul_right {f : E → 𝕜} {f'} (v : F)
 
 ## Sources
 
-- [Physlib/Mathematics/InnerProductSpace/Adjoint.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Adjoint.lean)
+- [Physlib/Mathematics/InnerProductSpace/Adjoint.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Adjoint.lean)

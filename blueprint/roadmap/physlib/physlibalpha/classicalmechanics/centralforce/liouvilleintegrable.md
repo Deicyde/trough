@@ -8,7 +8,7 @@ proof: formalized
 
 # Central-force systems are Liouville integrable
 
-The module `PhyslibAlpha.ClassicalMechanics.CentralForce.LiouvilleIntegrable`, [PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean): 9 declarations, 9 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.CentralForce.LiouvilleIntegrable`, [PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean): 9 declarations, 9 with a docstring.
 
 > Independence and involution of the Hamiltonian, squared angular momentum and axial component.
 
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.ClassicalMechanics.CentralForce.LiouvilleIntegrable`, [
 
 ## A. The domain of integrability
 
-**`ClassicalMechanics.CentralForce.integrabilityDomain`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L65).
+**`ClassicalMechanics.CentralForce.integrabilityDomain`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L65).
 
 > The phase-space domain where the radial momentum is non-zero and the angular momentum
 > is not parallel to the z-axis, used to establish central-force integrability.
@@ -49,7 +49,7 @@ The module `PhyslibAlpha.ClassicalMechanics.CentralForce.LiouvilleIntegrable`, [
 def integrabilityDomain : Set (EuclideanSpace ℝ (Fin 3) × EuclideanSpace ℝ (Fin 3))
 ```
 
-**`ClassicalMechanics.CentralForce.integrabilityDomain_eq`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L69).
+**`ClassicalMechanics.CentralForce.integrabilityDomain_eq`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L69).
 
 > The domain is the non-vanishing set of a polynomial in the phase-space coordinates.
 
@@ -59,7 +59,7 @@ lemma integrabilityDomain_eq : integrabilityDomain =
       ((x.2 1 * x.1 2 - x.2 2 * x.1 1) ^ 2 + (x.2 2 * x.1 0 - x.2 0 * x.1 2) ^ 2) ≠ 0}
 ```
 
-**`ClassicalMechanics.CentralForce.isOpen_integrabilityDomain`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L78).
+**`ClassicalMechanics.CentralForce.isOpen_integrabilityDomain`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L78).
 
 > The chosen central-force domain is open.
 
@@ -67,7 +67,7 @@ lemma integrabilityDomain_eq : integrabilityDomain =
 lemma isOpen_integrabilityDomain : IsOpen integrabilityDomain
 ```
 
-**`ClassicalMechanics.CentralForce.dense_integrabilityDomain`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L83).
+**`ClassicalMechanics.CentralForce.dense_integrabilityDomain`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L83).
 
 > The chosen central-force domain is dense.
 
@@ -75,7 +75,7 @@ lemma isOpen_integrabilityDomain : IsOpen integrabilityDomain
 lemma dense_integrabilityDomain : Dense integrabilityDomain
 ```
 
-**`ClassicalMechanics.CentralForce.snd_ne_zero_of_mem_integrabilityDomain`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L99).
+**`ClassicalMechanics.CentralForce.snd_ne_zero_of_mem_integrabilityDomain`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L99).
 
 > The chosen domain excludes the centre of force.
 
@@ -87,7 +87,7 @@ lemma snd_ne_zero_of_mem_integrabilityDomain
 
 ## B. Functional independence
 
-**`ClassicalMechanics.CentralForce.linearIndependent_gradients`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L117).
+**`ClassicalMechanics.CentralForce.linearIndependent_gradients`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L117).
 
 > On the domain of integrability, a phase-space function whose momentum gradient is a non-zero
 > multiple `a • p` of the momentum and whose position gradient is a multiple `c • q` of the
@@ -103,7 +103,7 @@ lemma linearIndependent_gradients {p q : EuclideanSpace ℝ (Fin 3)} {a c : ℝ}
         p 1 • EuclideanSpace.single 0 1 - p 0 • EuclideanSpace.single 1 1)]
 ```
 
-**`ClassicalMechanics.CentralForce.linearIndependent_conservedQuantities`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L169).
+**`ClassicalMechanics.CentralForce.linearIndependent_conservedQuantities`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L169).
 
 > On the domain of integrability, the conserved quantities of a central-force system are
 > functionally independent: their phase-space gradients are linearly independent.
@@ -117,7 +117,7 @@ lemma linearIndependent_conservedQuantities
 
 ## C. Liouville integrability
 
-**`ClassicalMechanics.CentralForce.liouvilleIntegrable`**, a def, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L185).
+**`ClassicalMechanics.CentralForce.liouvilleIntegrable`**, a def, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L185).
 
 > Every central-force system is Liouville integrable on the domain of integrability, with the
 > Hamiltonian, the squared magnitude of the angular momentum and its z-component as conserved
@@ -128,7 +128,7 @@ noncomputable def liouvilleIntegrable :
     LiouvilleIntegrableOn integrabilityDomain S.hamiltonian
 ```
 
-**`ClassicalMechanics.CentralForce.toHamiltonianSystem_isLiouvilleIntegrableOn`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L202).
+**`ClassicalMechanics.CentralForce.toHamiltonianSystem_isLiouvilleIntegrableOn`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean#L202).
 
 > The Hamiltonian system associated with a central force is Liouville integrable on the
 > coordinate domain of integrability.
@@ -149,4 +149,4 @@ lemma toHamiltonianSystem_isLiouvilleIntegrableOn :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean)
+- [PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean)

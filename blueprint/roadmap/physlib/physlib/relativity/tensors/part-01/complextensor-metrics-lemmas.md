@@ -8,13 +8,13 @@ proof: formalized
 
 # Physlib.Relativity.Tensors.ComplexTensor.Metrics.Lemmas
 
-The module `Physlib.Relativity.Tensors.ComplexTensor.Metrics.Lemmas`, [Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean): 12 declarations, 12 with a docstring.
+The module `Physlib.Relativity.Tensors.ComplexTensor.Metrics.Lemmas`, [Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean): 12 declarations, 12 with a docstring.
 
 ## Basic lemmas regarding metrics
 
 ## Symmetry properties
 
-**`complexLorentzTensor.coMetric_symm`**, a lemma, [line 34](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L34).
+**`complexLorentzTensor.coMetric_symm`**, a lemma, [line 34](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L34).
 
 > The covariant metric is symmetric `{η' | μ ν = η' | ν μ}ᵀ`.
 
@@ -22,7 +22,7 @@ The module `Physlib.Relativity.Tensors.ComplexTensor.Metrics.Lemmas`, [Physlib/R
 lemma coMetric_symm : {η' | μ ν = η' | ν μ}ᵀ
 ```
 
-**`complexLorentzTensor.contrMetric_symm`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L44).
+**`complexLorentzTensor.contrMetric_symm`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L44).
 
 > The contravariant metric is symmetric `{η | μ ν = η | ν μ}ᵀ`.
 
@@ -30,7 +30,7 @@ lemma coMetric_symm : {η' | μ ν = η' | ν μ}ᵀ
 lemma contrMetric_symm : {η | μ ν = η | ν μ}ᵀ
 ```
 
-**`complexLorentzTensor.leftMetric_antisymm`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L54).
+**`complexLorentzTensor.leftMetric_antisymm`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L54).
 
 > The left metric is antisymmetric `{εL | α α' = - εL | α' α}ᵀ`.
 
@@ -38,7 +38,7 @@ lemma contrMetric_symm : {η | μ ν = η | ν μ}ᵀ
 lemma leftMetric_antisymm : {εL | α α' = - (εL| α' α)}ᵀ
 ```
 
-**`complexLorentzTensor.rightMetric_antisymm`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L65).
+**`complexLorentzTensor.rightMetric_antisymm`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L65).
 
 > The right metric is antisymmetric `{εR | β β' = - εR | β' β}ᵀ`.
 
@@ -46,7 +46,7 @@ lemma leftMetric_antisymm : {εL | α α' = - (εL| α' α)}ᵀ
 lemma rightMetric_antisymm : {εR | β β' = - (εR| β' β)}ᵀ
 ```
 
-**`complexLorentzTensor.dualLeftMetric_antisymm`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L76).
+**`complexLorentzTensor.dualLeftMetric_antisymm`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L76).
 
 > The dual-left metric is antisymmetric `{εL' | α α' = - εL' | α' α}ᵀ`.
 
@@ -54,7 +54,7 @@ lemma rightMetric_antisymm : {εR | β β' = - (εR| β' β)}ᵀ
 lemma dualLeftMetric_antisymm : {εL' | α α' = - (εL' | α' α)}ᵀ
 ```
 
-**`complexLorentzTensor.dualRightMetric_antisymm`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L87).
+**`complexLorentzTensor.dualRightMetric_antisymm`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L87).
 
 > The dual-right metric is antisymmetric `{εR' | β β' = - εR' | β' β}ᵀ`.
 
@@ -64,7 +64,7 @@ lemma dualRightMetric_antisymm : {εR' | α α' = - (εR' | α' α)}ᵀ
 
 ## Contractions with each other
 
-**`complexLorentzTensor.coMetric_contr_contrMetric`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L106).
+**`complexLorentzTensor.coMetric_contr_contrMetric`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L106).
 
 > The contraction of the covariant metric with the contravariant metric is the unit
 > `{η' | μ ρ ⊗ η | ρ ν = δ' | μ ν}ᵀ`.
@@ -73,7 +73,7 @@ lemma dualRightMetric_antisymm : {εR' | α α' = - (εR' | α' α)}ᵀ
 lemma coMetric_contr_contrMetric : {η' | μ ρ ⊗ η | ρ ν = δ' | μ ν}ᵀ
 ```
 
-**`complexLorentzTensor.contrMetric_contr_coMetric`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L112).
+**`complexLorentzTensor.contrMetric_contr_coMetric`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L112).
 
 > The contraction of the contravariant metric with the covariant metric is the unit
 > `{η | μ ρ ⊗ η' | ρ ν = δ | μ ν}ᵀ`.
@@ -82,7 +82,7 @@ lemma coMetric_contr_contrMetric : {η' | μ ρ ⊗ η | ρ ν = δ' | μ ν}ᵀ
 lemma contrMetric_contr_coMetric : {η | μ ρ ⊗ η' | ρ ν = δ | μ ν}ᵀ
 ```
 
-**`complexLorentzTensor.leftMetric_contr_dualLeftMetric`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L118).
+**`complexLorentzTensor.leftMetric_contr_dualLeftMetric`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L118).
 
 > The contraction of the left metric with the dual-left metric is the unit
 > `{εL | α β ⊗ εL' | β γ = δL | α γ}ᵀ`.
@@ -91,7 +91,7 @@ lemma contrMetric_contr_coMetric : {η | μ ρ ⊗ η' | ρ ν = δ | μ ν}ᵀ
 lemma leftMetric_contr_dualLeftMetric : {εL | α β ⊗ εL' | β γ = δL | α γ}ᵀ
 ```
 
-**`complexLorentzTensor.rightMetric_contr_dualRightMetric`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L124).
+**`complexLorentzTensor.rightMetric_contr_dualRightMetric`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L124).
 
 > The contraction of the right metric with the dual-right metric is the unit
 > `{εR | α β ⊗ εR' | β γ = δR | α γ}ᵀ`.
@@ -100,7 +100,7 @@ lemma leftMetric_contr_dualLeftMetric : {εL | α β ⊗ εL' | β γ = δL | α
 lemma rightMetric_contr_dualRightMetric : {εR | α β ⊗ εR' | β γ = δR | α γ}ᵀ
 ```
 
-**`complexLorentzTensor.dualLeftMetric_contr_leftMetric`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L130).
+**`complexLorentzTensor.dualLeftMetric_contr_leftMetric`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L130).
 
 > The contraction of the dual-left metric with the left metric is the unit
 > `{εL' | α β ⊗ εL | β γ = δL' | α γ}ᵀ`.
@@ -109,7 +109,7 @@ lemma rightMetric_contr_dualRightMetric : {εR | α β ⊗ εR' | β γ = δR | 
 lemma dualLeftMetric_contr_leftMetric : {εL' | α β ⊗ εL | β γ = δL' | α γ}ᵀ
 ```
 
-**`complexLorentzTensor.dualRightMetric_contr_rightMetric`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L136).
+**`complexLorentzTensor.dualRightMetric_contr_rightMetric`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean#L136).
 
 > The contraction of the dual-right metric with the right metric is the unit
 > `{εR' | α β ⊗ εR | β γ = δR' | α γ}ᵀ`.
@@ -127,4 +127,4 @@ lemma dualRightMetric_contr_rightMetric : {εR' | α β ⊗ εR | β γ = δR' |
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean)
+- [Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean)

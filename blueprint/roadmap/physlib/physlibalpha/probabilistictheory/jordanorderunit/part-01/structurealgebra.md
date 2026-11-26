@@ -8,7 +8,7 @@ proof: formalized
 
 # Jordan derivations
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.StructureAlgebra`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean): 26 declarations (11 instances with no name), 15 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.StructureAlgebra`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean): 26 declarations (11 instances with no name), 15 with a docstring.
 
 > Jordan derivations, their commutator Lie algebra and the inner derivations `[L_a, L_b]`.
 
@@ -29,7 +29,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.StructureAlgebra`, 
 
 ## A. Jordan derivations
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation`**, a structure, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L53).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation`**, a structure, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L53).
 
 > A bundled real Jordan derivation.
 
@@ -40,32 +40,32 @@ structure JordanDerivation (E : Type*) [NonAssocCommRing E] [Module ℝ E] where
   leibniz' : IsDerivation toLinearMap
 ```
 
-**An instance with no name**, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L62).
+**An instance with no name**, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L62).
 
 ```lean
 instance : CoeFun (JordanDerivation E) (fun _ => E → E)
 ```
 
-**An instance with no name**, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L63).
+**An instance with no name**, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L63).
 
 ```lean
 instance : Coe (JordanDerivation E) (E →ₗ[ℝ] E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.ext`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L66).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.ext`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L66).
 
 ```lean
 lemma ext (h : ∀ x, D₁ x = D₂ x) : D₁ = D₂
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.leibniz`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L75).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.leibniz`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L75).
 
 ```lean
 lemma leibniz (D : JordanDerivation E) (x y : E) :
     D (x * y) = D x * y + x * D y
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.submodule`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L79).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.submodule`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L79).
 
 > All derivations as a submodule of linear endomorphisms.
 
@@ -75,7 +75,7 @@ def submodule : Submodule ℝ (E →ₗ[ℝ] E)
 
 ## B. The vector space of derivations
 
-**An instance with no name**, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L88).
+**An instance with no name**, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L88).
 
 > The zero infinitesimal symmetry.
 
@@ -83,7 +83,7 @@ def submodule : Submodule ℝ (E →ₗ[ℝ] E)
 instance : Zero (JordanDerivation E)
 ```
 
-**An instance with no name**, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L91).
+**An instance with no name**, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L91).
 
 > Addition of infinitesimal symmetries.
 
@@ -91,7 +91,7 @@ instance : Zero (JordanDerivation E)
 instance : Add (JordanDerivation E)
 ```
 
-**An instance with no name**, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L95).
+**An instance with no name**, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L95).
 
 > Negation of infinitesimal symmetries.
 
@@ -99,25 +99,25 @@ instance : Add (JordanDerivation E)
 instance : Neg (JordanDerivation E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.zero_apply`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L99).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.zero_apply`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L99).
 
 ```lean
 lemma zero_apply (x : E) : (0 : JordanDerivation E) x = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.add_apply`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L102).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.add_apply`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L102).
 
 ```lean
 lemma add_apply (D₁ D₂ : JordanDerivation E) (x : E) : (D₁ + D₂) x = D₁ x + D₂ x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.neg_apply`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L105).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.neg_apply`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L105).
 
 ```lean
 lemma neg_apply (D : JordanDerivation E) (x : E) : (-D) x = -D x
 ```
 
-**An instance with no name**, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L108).
+**An instance with no name**, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L108).
 
 > Scalar multiples of infinitesimal symmetries.
 
@@ -125,13 +125,13 @@ lemma neg_apply (D : JordanDerivation E) (x : E) : (-D) x = -D x
 instance : SMul ℝ (JordanDerivation E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.smul_apply`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L111).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.smul_apply`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L111).
 
 ```lean
 lemma smul_apply (c : ℝ) (D : JordanDerivation E) (x : E) : (c • D) x = c • D x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.map_one_eq_zero`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L115).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.map_one_eq_zero`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L115).
 
 > Every infinitesimal symmetry fixes the unit to first order.
 
@@ -139,7 +139,7 @@ lemma smul_apply (c : ℝ) (D : JordanDerivation E) (x : E) : (c • D) x = c �
 lemma map_one_eq_zero (D : JordanDerivation E) : D 1 = 0
 ```
 
-**An instance with no name**, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L121).
+**An instance with no name**, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L121).
 
 > Jordan derivations form an additive commutative group.
 
@@ -147,7 +147,7 @@ lemma map_one_eq_zero (D : JordanDerivation E) : D 1 = 0
 instance : AddCommGroup (JordanDerivation E)
 ```
 
-**An instance with no name**, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L132).
+**An instance with no name**, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L132).
 
 > Jordan derivations form a real vector space.
 
@@ -157,7 +157,7 @@ instance : Module ℝ (JordanDerivation E)
 
 ## C. The commutator Lie algebra
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.comm`**, a def, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L153).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.comm`**, a def, [line 153](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L153).
 
 > The commutator of two derivations is again a derivation.
 
@@ -165,14 +165,14 @@ instance : Module ℝ (JordanDerivation E)
 def comm (D₁ D₂ : JordanDerivation E) : JordanDerivation E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.comm_apply`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L165).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.comm_apply`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L165).
 
 ```lean
 lemma comm_apply (D₁ D₂ : JordanDerivation E) (x : E) :
     comm D₁ D₂ x = D₁ (D₂ x) - D₂ (D₁ x)
 ```
 
-**An instance with no name**, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L169).
+**An instance with no name**, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L169).
 
 > Derivations carry their canonical commutator bracket.
 
@@ -180,14 +180,14 @@ lemma comm_apply (D₁ D₂ : JordanDerivation E) (x : E) :
 instance : Bracket (JordanDerivation E) (JordanDerivation E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.lie_apply`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L172).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.JordanDerivation.lie_apply`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L172).
 
 ```lean
 lemma lie_apply (D₁ D₂ : JordanDerivation E) (x : E) :
     ⁅D₁, D₂⁆ x = D₁ (D₂ x) - D₂ (D₁ x)
 ```
 
-**An instance with no name**, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L176).
+**An instance with no name**, [line 176](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L176).
 
 > Infinitesimal Jordan symmetries form a Lie ring under commutator.
 
@@ -195,7 +195,7 @@ lemma lie_apply (D₁ D₂ : JordanDerivation E) (x : E) :
 instance : LieRing (JordanDerivation E)
 ```
 
-**An instance with no name**, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L195).
+**An instance with no name**, [line 195](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L195).
 
 > The commutator Lie ring of derivations is a real Lie algebra.
 
@@ -205,7 +205,7 @@ instance : LieAlgebra ℝ (JordanDerivation E)
 
 ## D. Inner derivations
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.inner`**, a def, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L209).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.inner`**, a def, [line 209](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L209).
 
 > The canonical inner Jordan derivation, generated by two observables.
 
@@ -213,13 +213,13 @@ instance : LieAlgebra ℝ (JordanDerivation E)
 def inner (a b : E) : JordanDerivation E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.inner_apply`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L214).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.inner_apply`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L214).
 
 ```lean
 lemma inner_apply (a b x : E) : inner a b x = a * (b * x) - b * (a * x)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.inner_comm`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L218).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.inner_comm`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean#L218).
 
 > The inner-derivation commutator law in bundled infinitesimal-symmetry form.
 
@@ -236,4 +236,4 @@ lemma inner_comm (a b c d : E) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean)

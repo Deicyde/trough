@@ -8,7 +8,7 @@ proof: formalized
 
 # States of a C⋆-algebra
 
-The module `Physlib.ProbabilisticTheory.CStarAlgebra.State`, [Physlib/ProbabilisticTheory/CStarAlgebra/State.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean): 11 declarations, 11 with a docstring.
+The module `Physlib.ProbabilisticTheory.CStarAlgebra.State`, [Physlib/ProbabilisticTheory/CStarAlgebra/State.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean): 11 declarations, 11 with a docstring.
 
 > States inherit complex extension from channels and can be characterized by traciality.
 
@@ -38,7 +38,7 @@ The module `Physlib.ProbabilisticTheory.CStarAlgebra.State`, [Physlib/Probabilis
 
 ## A. States on all operators
 
-**`ProbabilisticTheory.State.extend`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L60).
+**`ProbabilisticTheory.State.extend`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L60).
 
 > Extend the expectation values of observables to all operators.
 
@@ -46,7 +46,7 @@ The module `Physlib.ProbabilisticTheory.CStarAlgebra.State`, [Physlib/Probabilis
 noncomputable def extend (ω : (ofCStarAlgebra 𝒜).State) : 𝒜 →ₚ[ℂ] ℂ
 ```
 
-**`ProbabilisticTheory.State.extend_apply`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L65).
+**`ProbabilisticTheory.State.extend_apply`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L65).
 
 > Extension preserves the expectation value of every observable.
 
@@ -55,7 +55,7 @@ lemma extend_apply (ω : (ofCStarAlgebra 𝒜).State) (A : selfAdjoint 𝒜) :
     ω.extend (A : 𝒜) = (ω A : ℂ)
 ```
 
-**`ProbabilisticTheory.State.extend_one`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L71).
+**`ProbabilisticTheory.State.extend_one`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L71).
 
 > The extended state is normalized.
 
@@ -63,7 +63,7 @@ lemma extend_apply (ω : (ofCStarAlgebra 𝒜).State) (A : selfAdjoint 𝒜) :
 lemma extend_one (ω : (ofCStarAlgebra 𝒜).State) : ω.extend 1 = 1
 ```
 
-**`ProbabilisticTheory.State.extend_comap`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L75).
+**`ProbabilisticTheory.State.extend_comap`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L75).
 
 > Extending a pulled-back state agrees with composing the extensions.
 
@@ -72,7 +72,7 @@ lemma extend_comap (Φ : Channel (ofCStarAlgebra 𝒜) (ofCStarAlgebra ℬ))
     (ω : (ofCStarAlgebra ℬ).State) : (ω.comap Φ).extend = ω.extend.comp Φ.extend
 ```
 
-**`ProbabilisticTheory.State.complexEquiv`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L81).
+**`ProbabilisticTheory.State.complexEquiv`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L81).
 
 > States of a quantum system are the same as normalized positive functionals on all its
 > operators.
@@ -84,7 +84,7 @@ noncomputable def complexEquiv (𝒜 : Type*) [CStarAlgebra 𝒜] [PartialOrder 
 
 ## B. Tracial states
 
-**`ProbabilisticTheory.State.IsTracial`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L93).
+**`ProbabilisticTheory.State.IsTracial`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L93).
 
 > A state is tracial when `a⋆a` and `aa⋆` have the same expectation for every operator `a`.
 
@@ -92,7 +92,7 @@ noncomputable def complexEquiv (𝒜 : Type*) [CStarAlgebra 𝒜] [PartialOrder 
 def IsTracial (ω : (ofCStarAlgebra 𝒜).State) : Prop
 ```
 
-**`ProbabilisticTheory.State.isTracial_iff_extend_map_mul_comm`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L97).
+**`ProbabilisticTheory.State.isTracial_iff_extend_map_mul_comm`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L97).
 
 > A state is tracial exactly when its complex extension is cyclic on products.
 
@@ -101,7 +101,7 @@ lemma isTracial_iff_extend_map_mul_comm (ω : (ofCStarAlgebra 𝒜).State) :
     ω.IsTracial ↔ ∀ a b : 𝒜, ω.extend (a * b) = ω.extend (b * a)
 ```
 
-**`ProbabilisticTheory.State.IsTracial.map_mul_comm`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L107).
+**`ProbabilisticTheory.State.IsTracial.map_mul_comm`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L107).
 
 > A tracial state does not see the order of a product.
 
@@ -110,7 +110,7 @@ lemma IsTracial.map_mul_comm {ω : (ofCStarAlgebra 𝒜).State} (h : ω.IsTracia
     ω.extend (a * b) = ω.extend (b * a)
 ```
 
-**`ProbabilisticTheory.State.IsTracial.map_commutator`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L112).
+**`ProbabilisticTheory.State.IsTracial.map_commutator`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L112).
 
 > A tracial state vanishes on commutators.
 
@@ -119,7 +119,7 @@ lemma IsTracial.map_commutator {ω : (ofCStarAlgebra 𝒜).State} (h : ω.IsTrac
     ω.extend (a * b - b * a) = 0
 ```
 
-**`ProbabilisticTheory.State.IsTracial.map_conj`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L117).
+**`ProbabilisticTheory.State.IsTracial.map_conj`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L117).
 
 > A tracial state is invariant under the change of frame `x ↦ u * x * u⋆` by a unitary.
 
@@ -128,7 +128,7 @@ lemma IsTracial.map_conj {ω : (ofCStarAlgebra 𝒜).State} (h : ω.IsTracial) (
     (x : 𝒜) : ω.extend (u * x * star (u : 𝒜)) = ω.extend x
 ```
 
-**`ProbabilisticTheory.State.isTracial_iff_star_mul_self_eq_mul_star_self`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L122).
+**`ProbabilisticTheory.State.isTracial_iff_star_mul_self_eq_mul_star_self`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean#L122).
 
 > A state is tracial if and only if `ω (a⋆ * a) = ω (a * a⋆)` for all `a`.
 
@@ -148,4 +148,4 @@ lemma isTracial_iff_star_mul_self_eq_mul_star_self (ω : (ofCStarAlgebra 𝒜).S
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/CStarAlgebra/State.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean)
+- [Physlib/ProbabilisticTheory/CStarAlgebra/State.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/State.lean)

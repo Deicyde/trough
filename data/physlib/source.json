@@ -1,10 +1,10 @@
 {
  "repo": "leanprover-community/physlib",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
- "date": "2026-11-19T11:22:56Z",
- "toolchain": "v4.35.0",
- "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
- "mathlib_version": "v4.35.0",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
+ "date": "2026-11-26T15:16:14Z",
+ "toolchain": "v4.36.0",
+ "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+ "mathlib_version": "v4.36.0",
  "license": "Apache-2.0",
  "readme": {
   "tagline": "An open-source, community, project to digitalize results from physics into Lean 4",
@@ -523,20 +523,20 @@
   ]
  },
  "counts": {
-  "declarations_Physlib": 10949,
-  "declarations_PhyslibAlpha": 15122,
+  "declarations_Physlib": 11090,
+  "declarations_PhyslibAlpha": 13847,
   "declarations_QuantumInfo": 2117,
-  "documented_Physlib": 5516,
-  "documented_PhyslibAlpha": 10970,
+  "documented_Physlib": 5652,
+  "documented_PhyslibAlpha": 10398,
   "documented_QuantumInfo": 903,
-  "files_Physlib": 690,
-  "files_PhyslibAlpha": 875,
+  "files_Physlib": 705,
+  "files_PhyslibAlpha": 849,
   "files_QuantumInfo": 81,
-  "instances_Physlib": 489,
-  "instances_PhyslibAlpha": 290,
+  "instances_Physlib": 484,
+  "instances_PhyslibAlpha": 278,
   "instances_QuantumInfo": 94,
-  "private_Physlib": 122,
-  "private_PhyslibAlpha": 237,
+  "private_Physlib": 124,
+  "private_PhyslibAlpha": 221,
   "private_QuantumInfo": 354
  }
 }

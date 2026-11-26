@@ -8,7 +8,7 @@ proof: formalized
 
 # The fine structure of hydrogen
 
-The module `PhyslibAlpha.QuantumMechanics.Hydrogen.FineStructure`, [PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean): 11 declarations, 8 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.Hydrogen.FineStructure`, [PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean): 11 declarations, 8 with a docstring.
 
 > The first-order fine structure of hydrogen: relativistic kinetic, spin–orbit and Darwin
 > corrections, evaluated with the radial expectation values of `RadialFunctions.lean` and the
@@ -52,7 +52,7 @@ The module `PhyslibAlpha.QuantumMechanics.Hydrogen.FineStructure`, [PhyslibAlpha
 
 ## A. The three first-order corrections
 
-**`PhyslibAlpha.Hydrogen.fineStructureConstant`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L75).
+**`PhyslibAlpha.Hydrogen.fineStructureConstant`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L75).
 
 > The fine-structure constant `α = k/(ℏ c)` of the atom.
 
@@ -60,7 +60,7 @@ The module `PhyslibAlpha.QuantumMechanics.Hydrogen.FineStructure`, [PhyslibAlpha
 def fineStructureConstant : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.relativisticShift`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L80).
+**`PhyslibAlpha.Hydrogen.relativisticShift`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L80).
 
 > The relativistic kinetic correction `-⟨p⁴⟩/(8 m³ c²) = -⟨(E - V)²⟩/(2 m c²)` in the state
 > `(ν, l)`, written with `p² = 2m(E - V)`, `V = -k/r` and the radial expectation values
@@ -70,7 +70,7 @@ def fineStructureConstant : ℝ
 def relativisticShift (ν l : ℕ) : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.spinOrbitShift`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L86).
+**`PhyslibAlpha.Hydrogen.spinOrbitShift`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L86).
 
 > The spin–orbit correction `k/(2 m² c²) ⟨1/r³⟩ ⟨L · S⟩`, where `⟨L · S⟩ = ℏ² ls`.
 
@@ -78,7 +78,7 @@ def relativisticShift (ν l : ℕ) : ℝ
 def spinOrbitShift (ν l : ℕ) (ls : ℝ) : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.darwinShift`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L91).
+**`PhyslibAlpha.Hydrogen.darwinShift`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L91).
 
 > The Darwin correction `π k ℏ²/(2 m² c²) |ψ(0)|²`, which is non-zero only for `s` states;
 > there `|ψ(0)|² = |R(0)|²/(4π)` with `R` normalised in physical units.
@@ -87,7 +87,7 @@ def spinOrbitShift (ν l : ℕ) (ls : ℝ) : ℝ
 def darwinShift (ν l : ℕ) : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.fineStructureShift`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L98).
+**`PhyslibAlpha.Hydrogen.fineStructureShift`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L98).
 
 > The total first-order fine-structure shift of the level `(ν, l)` with `⟨L · S⟩ = ℏ² ls`.
 
@@ -97,26 +97,26 @@ def fineStructureShift (ν l : ℕ) (ls : ℝ) : ℝ
 
 ## B. The fine-structure formula
 
-**`PhyslibAlpha.Hydrogen.levelIndex_sub_one`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L109).
+**`PhyslibAlpha.Hydrogen.levelIndex_sub_one`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L109).
 
 ```lean
 lemma levelIndex_sub_one (hν : 1 ≤ ν) : HydrogenAtom.levelIndex 3 (ν - 1) = ν
 ```
 
-**`PhyslibAlpha.Hydrogen.ls_upper`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L114).
+**`PhyslibAlpha.Hydrogen.ls_upper`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L114).
 
 ```lean
 lemma ls_upper {ls : ℝ} (hls : (ls : ℂ) = Sl2.spinOrbitValue (2 * l) 1 0) : ls = l / 2
 ```
 
-**`PhyslibAlpha.Hydrogen.ls_lower`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L121).
+**`PhyslibAlpha.Hydrogen.ls_lower`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L121).
 
 ```lean
 lemma ls_lower (hl1 : 1 ≤ l) {ls : ℝ} (hls : (ls : ℂ) = Sl2.spinOrbitValue (2 * l) 1 1) :
     ls = -((l : ℝ) + 1) / 2
 ```
 
-**`PhyslibAlpha.Hydrogen.fineStructureShift_upper`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L134).
+**`PhyslibAlpha.Hydrogen.fineStructureShift_upper`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L134).
 
 > **Fine structure, `j = l + 1/2`.** With `⟨L · S⟩/ℏ²` the eigenvalue of `L · S` on the
 > `j = l + 1/2` string (`Sl2.dot_coupled_stringVec`), the three corrections add up to
@@ -130,7 +130,7 @@ lemma fineStructureShift_upper (hk : 0 < H.k) (hl : l < ν) {ls : ℝ}
       (ν : ℝ) ^ 2 * ((ν : ℝ) / ((l + 1 / 2 : ℝ) + 1 / 2) - 3 / 4)
 ```
 
-**`PhyslibAlpha.Hydrogen.fineStructureShift_lower`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L162).
+**`PhyslibAlpha.Hydrogen.fineStructureShift_lower`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L162).
 
 > **Fine structure, `j = l - 1/2`.** For `l ≥ 1` the three corrections add up to
 > `E_ν α²/ν² (ν/(j + 1/2) - 3/4)` with `j = l - 1/2`.
@@ -142,7 +142,7 @@ lemma fineStructureShift_lower (hk : 0 < H.k) (hl : l < ν) (hl1 : 1 ≤ l)
       (ν : ℝ) ^ 2 * ((ν : ℝ) / ((l - 1 / 2 : ℝ) + 1 / 2) - 3 / 4)
 ```
 
-**`PhyslibAlpha.Hydrogen.fineStructureShift_upper_eq_lower`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L184).
+**`PhyslibAlpha.Hydrogen.fineStructureShift_upper_eq_lower`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean#L184).
 
 > **The fine-structure shift depends on `j` only.** The levels `(ν, l, j = l + 1/2)` and
 > `(ν, l + 1, j = l + 1/2)` are shifted by the same amount; for `ν = 2`, `l = 0` this is the
@@ -162,4 +162,4 @@ lemma fineStructureShift_upper_eq_lower (hk : 0 < H.k) (hl : l + 1 < ν)
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean)
+- [PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean)

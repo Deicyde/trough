@@ -8,9 +8,9 @@ proof: formalized
 
 # The theormodynamical quantities of a microcanonical ensemble
 
-The module `Physlib.StatisticalMechanics.MicroCanonicalEnsemble.ThermoQuantities`, [Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean): 14 declarations, 13 with a docstring, 2 listed as significant; 1 private, not shown.
+The module `Physlib.StatisticalMechanics.MicroCanonicalEnsemble.ThermoQuantities`, [Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean): 14 declarations, 13 with a docstring, 2 listed as significant; 1 private, not shown.
 
-**`MicroHamiltonian.partitionZ`**, a def, [line 28](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L28).
+**`MicroHamiltonian.partitionZ`**, a def, [line 28](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L28).
 
 > The partition function corresponding to a given MicroHamiltonian. This is a function taking a
 > thermodynamic β, not a temperature. It also depends on the data D defining the system extrinsincs.
@@ -22,7 +22,7 @@ The module `Physlib.StatisticalMechanics.MicroCanonicalEnsemble.ThermoQuantities
 def partitionZ (β : ℝ) : ℝ
 ```
 
-**`MicroHamiltonian.PartitionZComplex`**, a def, [line 34](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L34).
+**`MicroHamiltonian.PartitionZComplex`**, a def, [line 34](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L34).
 
 > The complexified partition function, viewed as a Laplace transform.
 
@@ -30,7 +30,7 @@ def partitionZ (β : ℝ) : ℝ
 def PartitionZComplex (z : ℂ) : ℂ
 ```
 
-**`MicroHamiltonian.ZComplexConvergenceDomain`**, a def, [line 38](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L38).
+**`MicroHamiltonian.ZComplexConvergenceDomain`**, a def, [line 38](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L38).
 
 > The complex convergence domain of the partition-function Laplace transform.
 
@@ -38,7 +38,7 @@ def PartitionZComplex (z : ℂ) : ℂ
 def ZComplexConvergenceDomain : Set ℂ
 ```
 
-**`MicroHamiltonian.contDiffAt_partitionZ_of_mem_interior_convergenceDomain`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L65).
+**`MicroHamiltonian.contDiffAt_partitionZ_of_mem_interior_convergenceDomain`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L65).
 
 ```lean
 lemma contDiffAt_partitionZ_of_mem_interior_convergenceDomain {β : ℝ}
@@ -46,7 +46,7 @@ lemma contDiffAt_partitionZ_of_mem_interior_convergenceDomain {β : ℝ}
     ContDiffAt ℝ ⊤ (H.partitionZ d) β
 ```
 
-**`MicroHamiltonian.partitionZT`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L76).
+**`MicroHamiltonian.partitionZT`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L76).
 
 > The partition function as a function of temperature T instead of β.
 
@@ -54,7 +54,7 @@ lemma contDiffAt_partitionZ_of_mem_interior_convergenceDomain {β : ℝ}
 def partitionZT (T : ℝ) : ℝ
 ```
 
-**`MicroHamiltonian.internalU`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L80).
+**`MicroHamiltonian.internalU`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L80).
 
 > The Internal Energy, U or E, defined as -∂(ln Z)/∂β. Parameterized here with β.
 
@@ -62,7 +62,7 @@ def partitionZT (T : ℝ) : ℝ
 def internalU (β : ℝ) : ℝ
 ```
 
-**`MicroHamiltonian.helmholtzA`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L85).
+**`MicroHamiltonian.helmholtzA`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L85).
 
 > The Helmholtz Free Energy, -T * ln Z. Also denoted F. Parameterized here with temperature T, not
 > β.
@@ -71,7 +71,7 @@ def internalU (β : ℝ) : ℝ
 def helmholtzA (T : ℝ) : ℝ
 ```
 
-**`MicroHamiltonian.entropyS`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L89).
+**`MicroHamiltonian.entropyS`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L89).
 
 > The entropy, defined as the -∂A/∂T. Function of T.
 
@@ -79,7 +79,7 @@ def helmholtzA (T : ℝ) : ℝ
 def entropyS (T : ℝ) : ℝ
 ```
 
-**`MicroHamiltonian.entropySβ`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L93).
+**`MicroHamiltonian.entropySβ`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L93).
 
 > The entropy, defined as ln Z + β*U. Function of β.
 
@@ -87,7 +87,7 @@ def entropyS (T : ℝ) : ℝ
 def entropySβ (β : ℝ) : ℝ
 ```
 
-**`MicroHamiltonian.ZIntegrable`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L100).
+**`MicroHamiltonian.ZIntegrable`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L100).
 
 > To be able to compute or define anything from a Hamiltonian, we need its partition function to
 > be a computable integral. A Hamiltonian is ZIntegrable at β if PartitionZ is Lesbegue integrable
@@ -97,7 +97,7 @@ def entropySβ (β : ℝ) : ℝ
 def ZIntegrable (β : ℝ) : Prop
 ```
 
-**`MicroHamiltonian.PositiveβIntegrable`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L109).
+**`MicroHamiltonian.PositiveβIntegrable`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L109).
 
 > This Prop defines the most common case of ZIntegrable, that it is integrable at all finite
 > temperatures (aka all positive β).
@@ -106,7 +106,7 @@ def ZIntegrable (β : ℝ) : Prop
 def PositiveβIntegrable : Prop
 ```
 
-**`MicroHamiltonian.entropy_A_eq_entropy_Z`**, a theorem, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L133). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`MicroHamiltonian.entropy_A_eq_entropy_Z`**, a theorem, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L133). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The two definitions of entropy, in terms of `T` or `β = 1 / T`, are equivalent.
 
@@ -117,7 +117,7 @@ theorem entropy_A_eq_entropy_Z (T : ℝ) (hT : T ≠ 0)
     entropyS H d T = entropySβ H d (1 / T)
 ```
 
-**`MicroHamiltonian.β_eq_deriv_S_U`**, a theorem, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L168). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`MicroHamiltonian.β_eq_deriv_S_U`**, a theorem, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L168). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The "definition of temperature from entropy":
 > 1/T = (∂S/∂U), when the derivative is at constant extrinsic d (typically N/V).
@@ -134,7 +134,7 @@ theorem β_eq_deriv_S_U {β : ℝ}
     β = (deriv (H.entropySβ d) β) / deriv (H.internalU d) β
 ```
 
-**`NVEHamiltonian.pressure`**, a def, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L219).
+**`NVEHamiltonian.pressure`**, a def, [line 219](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean#L219).
 
 > Pressure, as a function of T. Defined as the conjugate variable to volume.
 
@@ -149,4 +149,4 @@ def pressure (T : ℝ) : ℝ
 
 ## Sources
 
-- [Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean)
+- [Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean)

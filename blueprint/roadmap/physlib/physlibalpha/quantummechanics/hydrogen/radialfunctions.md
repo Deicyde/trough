@@ -8,7 +8,7 @@ proof: formalized
 
 # The radial functions of the hydrogen atom
 
-The module `PhyslibAlpha.QuantumMechanics.Hydrogen.RadialFunctions`, [PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean): 29 declarations, 15 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.Hydrogen.RadialFunctions`, [PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean): 29 declarations, 15 with a docstring.
 
 > The bound-state radial functions of the three-dimensional hydrogen atom, the radial
 > Schrödinger equation they solve, and the expectation values `⟨1/r⟩`, `⟨1/r²⟩`, `⟨1/r³⟩` and
@@ -56,7 +56,7 @@ The module `PhyslibAlpha.QuantumMechanics.Hydrogen.RadialFunctions`, [PhyslibAlp
 
 ## A. Polynomial times exponential
 
-**`PhyslibAlpha.Hydrogen.hasDerivAt_eval_mul_exp`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L79).
+**`PhyslibAlpha.Hydrogen.hasDerivAt_eval_mul_exp`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L79).
 
 ```lean
 lemma hasDerivAt_eval_mul_exp (Q : ℝ[X]) (β ρ : ℝ) :
@@ -64,7 +64,7 @@ lemma hasDerivAt_eval_mul_exp (Q : ℝ[X]) (β ρ : ℝ) :
       ((derivative Q - C β * Q).eval ρ * Real.exp (-(β * ρ))) ρ
 ```
 
-**`PhyslibAlpha.Hydrogen.deriv_eval_mul_exp`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L88).
+**`PhyslibAlpha.Hydrogen.deriv_eval_mul_exp`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L88).
 
 ```lean
 lemma deriv_eval_mul_exp (Q : ℝ[X]) (β : ℝ) :
@@ -74,7 +74,7 @@ lemma deriv_eval_mul_exp (Q : ℝ[X]) (β : ℝ) :
 
 ## B. The radial functions and the radial equation
 
-**`PhyslibAlpha.Hydrogen.radialPoly`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L102).
+**`PhyslibAlpha.Hydrogen.radialPoly`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L102).
 
 > The polynomial `ρ^(l+1) L_{ν-l-1}^(2l+1)(2ρ/ν)`.
 
@@ -82,7 +82,7 @@ lemma deriv_eval_mul_exp (Q : ℝ[X]) (β : ℝ) :
 def radialPoly : ℝ[X]
 ```
 
-**`PhyslibAlpha.Hydrogen.radialU`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L108).
+**`PhyslibAlpha.Hydrogen.radialU`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L108).
 
 > The reduced radial function `u_{νl}(ρ) = ρ^(l+1) e^(-ρ/ν) L_{ν-l-1}^(2l+1)(2ρ/ν)` of the
 > hydrogen atom, in units of the Bohr radius and not normalised; `ν` is the principal quantum
@@ -92,7 +92,7 @@ def radialPoly : ℝ[X]
 def radialU (ρ : ℝ) : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.eval_radialPoly`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L112).
+**`PhyslibAlpha.Hydrogen.eval_radialPoly`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L112).
 
 ```lean
 lemma eval_radialPoly (ρ : ℝ) :
@@ -100,7 +100,7 @@ lemma eval_radialPoly (ρ : ℝ) :
       ρ ^ (l + 1) * (laguerre (ν - l - 1) (2 * l + 1)).eval (2 / (ν : ℝ) * ρ)
 ```
 
-**`PhyslibAlpha.Hydrogen.eval_derivative_radialPoly`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L117).
+**`PhyslibAlpha.Hydrogen.eval_derivative_radialPoly`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L117).
 
 ```lean
 lemma eval_derivative_radialPoly (ρ : ℝ) :
@@ -110,7 +110,7 @@ lemma eval_derivative_radialPoly (ρ : ℝ) :
           (derivative (laguerre (ν - l - 1) (2 * l + 1))).eval (2 / (ν : ℝ) * ρ)
 ```
 
-**`PhyslibAlpha.Hydrogen.eval_derivative_derivative_radialPoly`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L125).
+**`PhyslibAlpha.Hydrogen.eval_derivative_derivative_radialPoly`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L125).
 
 ```lean
 lemma eval_derivative_derivative_radialPoly (ρ : ℝ) :
@@ -124,7 +124,7 @@ lemma eval_derivative_derivative_radialPoly (ρ : ℝ) :
             (2 / (ν : ℝ) * ρ)
 ```
 
-**`PhyslibAlpha.Hydrogen.radialPoly_identity`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L139).
+**`PhyslibAlpha.Hydrogen.radialPoly_identity`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L139).
 
 > The polynomial identity behind the radial equation:
 > `ρ² (Q'' - 2Q'/ν + Q/ν²) = (l(l+1) - 2ρ + ρ²/ν²) Q` for `Q = radialPoly ν l`.
@@ -137,7 +137,7 @@ lemma radialPoly_identity (hl : l < ν) (ρ : ℝ) :
       ((l : ℝ) * (l + 1) - 2 * ρ + (1 / (ν : ℝ)) ^ 2 * ρ ^ 2) * (radialPoly ν l).eval ρ
 ```
 
-**`PhyslibAlpha.Hydrogen.deriv_deriv_radialU`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L165).
+**`PhyslibAlpha.Hydrogen.deriv_deriv_radialU`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L165).
 
 ```lean
 lemma deriv_deriv_radialU (ρ : ℝ) :
@@ -147,7 +147,7 @@ lemma deriv_deriv_radialU (ρ : ℝ) :
           (1 / (ν : ℝ)) ^ 2 * (radialPoly ν l).eval ρ) * Real.exp (-(1 / (ν : ℝ) * ρ))
 ```
 
-**`PhyslibAlpha.Hydrogen.radialU_ode`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L179).
+**`PhyslibAlpha.Hydrogen.radialU_ode`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L179).
 
 > **The radial Schrödinger equation of hydrogen.** In units of the Bohr radius and the
 > Rydberg energy, `u_{νl}'' = (l(l+1)/ρ² - 2/ρ + 1/ν²) u_{νl}`, i.e. `u_{νl}` is an eigenfunction
@@ -161,7 +161,7 @@ lemma radialU_ode (hl : l < ν) {ρ : ℝ} (hρ : ρ ≠ 0) :
 
 ## C. Radial moments and expectation values
 
-**`PhyslibAlpha.Hydrogen.integral_pow_mul_exp_mul_laguerre_sq_comp`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L193).
+**`PhyslibAlpha.Hydrogen.integral_pow_mul_exp_mul_laguerre_sq_comp`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L193).
 
 ```lean
 lemma integral_pow_mul_exp_mul_laguerre_sq_comp (e N α : ℕ) {b : ℝ} (hb : 0 < b) :
@@ -170,7 +170,7 @@ lemma integral_pow_mul_exp_mul_laguerre_sq_comp (e N α : ℕ) {b : ℝ} (hb : 0
         ∫ x in Ioi (0 : ℝ), x ^ e * Real.exp (-x) * ((laguerre N α).eval x) ^ 2)
 ```
 
-**`PhyslibAlpha.Hydrogen.radialU_sq_div_pow`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L208).
+**`PhyslibAlpha.Hydrogen.radialU_sq_div_pow`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L208).
 
 ```lean
 lemma radialU_sq_div_pow {k : ℕ} (hk : k ≤ 2 * l + 2) {ρ : ℝ} (hρ : 0 < ρ) :
@@ -178,7 +178,7 @@ lemma radialU_sq_div_pow {k : ℕ} (hk : k ≤ 2 * l + 2) {ρ : ℝ} (hρ : 0 < 
       ((laguerre (ν - l - 1) (2 * l + 1)).eval (2 / (ν : ℝ) * ρ)) ^ 2
 ```
 
-**`PhyslibAlpha.Hydrogen.radialMoment`**, a def, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L221).
+**`PhyslibAlpha.Hydrogen.radialMoment`**, a def, [line 221](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L221).
 
 > The radial moment `∫₀^∞ u_{νl}(ρ)² ρ^(-k) dρ`. For `k = 0` this is the squared norm.
 
@@ -186,7 +186,7 @@ lemma radialU_sq_div_pow {k : ℕ} (hk : k ≤ 2 * l + 2) {ρ : ℝ} (hρ : 0 < 
 def radialMoment (ν l k : ℕ) : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.radialMean`**, a def, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L224).
+**`PhyslibAlpha.Hydrogen.radialMean`**, a def, [line 224](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L224).
 
 > The expectation value `⟨ρ^(-k)⟩` in the state `u_{νl}`.
 
@@ -194,7 +194,7 @@ def radialMoment (ν l k : ℕ) : ℝ
 def radialMean (ν l k : ℕ) : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.radialMoment_eq`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L226).
+**`PhyslibAlpha.Hydrogen.radialMoment_eq`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L226).
 
 ```lean
 lemma radialMoment_eq (hl : l < ν) {k : ℕ} (hk : k ≤ 2 * l + 2) :
@@ -203,7 +203,7 @@ lemma radialMoment_eq (hl : l < ν) {k : ℕ} (hk : k ≤ 2 * l + 2) :
         ((laguerre (ν - l - 1) (2 * l + 1)).eval x) ^ 2)
 ```
 
-**`PhyslibAlpha.Hydrogen.radialMoment_zero`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L237).
+**`PhyslibAlpha.Hydrogen.radialMoment_zero`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L237).
 
 > The squared norm `∫ u_{νl}² dρ = (ν/2)^(2l+3) (ν+l)!/(ν-l-1)! · 2ν`.
 
@@ -213,7 +213,7 @@ lemma radialMoment_zero (hl : l < ν) :
       (((ν + l).factorial : ℝ) / (ν - l - 1).factorial * (2 * ν))
 ```
 
-**`PhyslibAlpha.Hydrogen.radialMoment_one`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L247).
+**`PhyslibAlpha.Hydrogen.radialMoment_one`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L247).
 
 ```lean
 lemma radialMoment_one (hl : l < ν) :
@@ -221,7 +221,7 @@ lemma radialMoment_one (hl : l < ν) :
       (((ν + l).factorial : ℝ) / (ν - l - 1).factorial)
 ```
 
-**`PhyslibAlpha.Hydrogen.radialMoment_two`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L254).
+**`PhyslibAlpha.Hydrogen.radialMoment_two`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L254).
 
 ```lean
 lemma radialMoment_two (hl : l < ν) :
@@ -229,7 +229,7 @@ lemma radialMoment_two (hl : l < ν) :
       (((ν + l).factorial : ℝ) / ((ν - l - 1).factorial * (2 * l + 1)))
 ```
 
-**`PhyslibAlpha.Hydrogen.radialMoment_three`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L263).
+**`PhyslibAlpha.Hydrogen.radialMoment_three`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L263).
 
 ```lean
 lemma radialMoment_three (hl : l < ν) (hl1 : 1 ≤ l) :
@@ -238,7 +238,7 @@ lemma radialMoment_three (hl : l < ν) (hl1 : 1 ≤ l) :
         ((ν - l - 1).factorial * (2 * l * (2 * l + 1) * (2 * l + 2))))
 ```
 
-**`PhyslibAlpha.Hydrogen.radialMean_one`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L277).
+**`PhyslibAlpha.Hydrogen.radialMean_one`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L277).
 
 > `⟨1/ρ⟩ = 1/ν²`, the virial theorem for hydrogen.
 
@@ -246,7 +246,7 @@ lemma radialMoment_three (hl : l < ν) (hl1 : 1 ≤ l) :
 lemma radialMean_one (hl : l < ν) : radialMean ν l 1 = 1 / (ν : ℝ) ^ 2
 ```
 
-**`PhyslibAlpha.Hydrogen.radialMean_two`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L284).
+**`PhyslibAlpha.Hydrogen.radialMean_two`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L284).
 
 > `⟨1/ρ²⟩ = 1/(ν³ (l + 1/2))`.
 
@@ -255,7 +255,7 @@ lemma radialMean_two (hl : l < ν) :
     radialMean ν l 2 = 1 / ((ν : ℝ) ^ 3 * (l + 1 / 2))
 ```
 
-**`PhyslibAlpha.Hydrogen.radialMean_three`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L292).
+**`PhyslibAlpha.Hydrogen.radialMean_three`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L292).
 
 > `⟨1/ρ³⟩ = 1/(ν³ l (l + 1/2) (l + 1))` for `l ≥ 1`.
 
@@ -266,7 +266,7 @@ lemma radialMean_three (hl : l < ν) (hl1 : 1 ≤ l) :
 
 ## D. The value at the origin
 
-**`PhyslibAlpha.Hydrogen.radialR`**, a def, [line 307](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L307).
+**`PhyslibAlpha.Hydrogen.radialR`**, a def, [line 307](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L307).
 
 > The radial wave function `R_{νl}(ρ) = u_{νl}(ρ)/ρ = ρ^l e^(-ρ/ν) L_{ν-l-1}^(2l+1)(2ρ/ν)`.
 
@@ -274,13 +274,13 @@ lemma radialMean_three (hl : l < ν) (hl1 : 1 ≤ l) :
 def radialR (ν l : ℕ) (ρ : ℝ) : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.radialU_eq_mul_radialR`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L310).
+**`PhyslibAlpha.Hydrogen.radialU_eq_mul_radialR`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L310).
 
 ```lean
 lemma radialU_eq_mul_radialR (ρ : ℝ) : radialU ν l ρ = ρ * radialR ν l ρ
 ```
 
-**`PhyslibAlpha.Hydrogen.radialR_zero_sq_div`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L315).
+**`PhyslibAlpha.Hydrogen.radialR_zero_sq_div`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L315).
 
 > For an `s` state the normalised density at the nucleus is `|R_{ν0}(0)|²/‖u‖² = 4/ν³`.
 
@@ -291,7 +291,7 @@ lemma radialR_zero_sq_div (hν : 0 < ν) :
 
 ## E. Physical units
 
-**`PhyslibAlpha.Hydrogen.bohrRadius`**, a def, [line 340](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L340).
+**`PhyslibAlpha.Hydrogen.bohrRadius`**, a def, [line 340](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L340).
 
 > The Bohr radius `a = ℏ²/(m k)` of a hydrogen atom.
 
@@ -299,13 +299,13 @@ lemma radialR_zero_sq_div (hν : 0 < ν) :
 def bohrRadius (H : HydrogenAtom d) : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.bohrRadius_pos`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L342).
+**`PhyslibAlpha.Hydrogen.bohrRadius_pos`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L342).
 
 ```lean
 lemma bohrRadius_pos (H : HydrogenAtom d) (hk : 0 < H.k) : 0 < bohrRadius H
 ```
 
-**`PhyslibAlpha.Hydrogen.radialFun`**, a def, [line 346](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L346).
+**`PhyslibAlpha.Hydrogen.radialFun`**, a def, [line 346](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L346).
 
 > The reduced radial function `u_{νl}(r/a)` in physical units.
 
@@ -313,7 +313,7 @@ lemma bohrRadius_pos (H : HydrogenAtom d) (hk : 0 < H.k) : 0 < bohrRadius H
 def radialFun (H : HydrogenAtom d) (ν l : ℕ) (r : ℝ) : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.radialFun_schrodinger`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L352).
+**`PhyslibAlpha.Hydrogen.radialFun_schrodinger`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean#L352).
 
 > **The radial Schrödinger equation of hydrogen in physical units.** For `d = 3` and an
 > attractive potential, `u_{νl}(r/a)` solves
@@ -335,4 +335,4 @@ lemma radialFun_schrodinger (H : HydrogenAtom 3) (hk : 0 < H.k) (hl : l < ν)
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean)
+- [PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean)

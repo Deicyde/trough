@@ -8,7 +8,7 @@ proof: formalized
 
 # Integrating simple functions against an effect-valued measure
 
-The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Integral`, [PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean): 15 declarations, 15 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Integral`, [PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean): 15 declarations, 15 with a docstring.
 
 > The integral of simple functions against an effect-valued measure, linear and positive.
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Integral`, [PhyslibAlph
 > Nothing here refers to `E` or to a POVM at all yet: a partition and the simple function it carries
 > are facts about `Ω` alone.
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.IsPartition`**, a structure, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L62).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.IsPartition`**, a structure, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L62).
 
 > `s` is a finite measurable partition of `Ω`: its pieces are measurable, pairwise disjoint, and
 > cover `Ω`. This is the "unbundled `he : ∑ i, e i = 1`" of `Measurement.toChannel`
@@ -55,7 +55,7 @@ structure IsPartition {ι : Type*} [Fintype ι] (s : ι → Set Ω) : Prop where
   cover : ⋃ i, s i = Set.univ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleValue`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L71).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleValue`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L71).
 
 > The simple function `∑ᵢ cᵢ 𝟙_{sᵢ}` of a partition.
 
@@ -63,7 +63,7 @@ structure IsPartition {ι : Type*} [Fintype ι] (s : ι → Set Ω) : Prop where
 noncomputable def simpleValue {ι : Type*} [Fintype ι] (c : ι → ℝ) (s : ι → Set Ω) (x : Ω) : ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleValue_apply_of_mem`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L76).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleValue_apply_of_mem`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L76).
 
 > At a point lying in piece `i` of the partition, the simple function evaluates to `c i`: every
 > other term of the defining sum vanishes since the pieces are pairwise disjoint.
@@ -81,7 +81,7 @@ lemma simpleValue_apply_of_mem {ι : Type*} [Fintype ι] {c : ι → ℝ} {s : �
 > nonnegative effect) is just its eventual value — which is what lets us read finite sums off
 > `countably_additive` directly.
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.apply_congr`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L101).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.apply_congr`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L101).
 
 > Applying `μ` only depends on the set, not on which proof of measurability is supplied — an
 > immediate consequence of `Set` equality and proof irrelevance, recorded here since it comes up
@@ -92,7 +92,7 @@ lemma apply_congr (μ : EffectValuedMeasure Ω E) {s t : Set Ω} (h : s = t)
     {hs : MeasurableSet s} {ht : MeasurableSet t} : (μ s hs : E) = (μ t ht : E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.apply_iUnion_eq_sum_of_eventually_empty`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L109).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.apply_iUnion_eq_sum_of_eventually_empty`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L109).
 
 > Padding a finite disjoint family with `∅` and applying countable additivity: past the point
 > where every remaining piece is `∅`, the partial sums have stabilized, and since they are also
@@ -107,7 +107,7 @@ lemma apply_iUnion_eq_sum_of_eventually_empty (μ : EffectValuedMeasure Ω E) (t
       ∑ n ∈ Finset.range N, (μ (t n) (htm n) : E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.apply_union_of_disjoint`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L145).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.apply_union_of_disjoint`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L145).
 
 > Binary additivity of `μ`, derived from countable additivity by padding a two-element family
 > with `∅`.
@@ -118,7 +118,7 @@ lemma apply_union_of_disjoint (μ : EffectValuedMeasure Ω E) {A B : Set Ω}
     (μ (A ∪ B) (hA.union hB) : E) = (μ A hA : E) + (μ B hB : E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.apply_biUnion_of_disjoint`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L199).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.apply_biUnion_of_disjoint`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L199).
 
 > Finite additivity of `μ` over a pairwise disjoint family indexed by a `Finset`, with the
 > disjointness only required on the labels actually occurring in `s`. Proved by induction on the
@@ -133,7 +133,7 @@ lemma apply_biUnion_of_disjoint {ι : Type*} [DecidableEq ι] (μ : EffectValued
       ∑ i ∈ s, (μ (f i) (hfm i) : E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.apply_iUnion_of_disjoint`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L237).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.apply_iUnion_of_disjoint`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L237).
 
 > Finite additivity of `μ` over a `Fintype`-indexed pairwise disjoint family: the workhorse used
 > throughout the rest of this file.
@@ -147,7 +147,7 @@ lemma apply_iUnion_of_disjoint {ι : Type*} [Fintype ι] [DecidableEq ι]
 
 ## C. The integral of a simple function
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral`**, a def, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L251).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral`**, a def, [line 251](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L251).
 
 > The integral of the simple function `∑ i, c i • 𝟙_{s i}` against `μ`: `∑ i, c i • μ(s i)`.
 > Well-defined independently of the chosen partition by `simpleIntegral_eq_of_pointwise_eq`, and
@@ -159,7 +159,7 @@ noncomputable def simpleIntegral {ι : Type*} [Fintype ι] (μ : EffectValuedMea
     (c : ι → ℝ) (s : ι → Set Ω) (hs : IsPartition s) : E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.apply_eq_sum_inter`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L258).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.apply_eq_sum_inter`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L258).
 
 > On a partition, the piece `s i` decomposes as the union of its intersections with every piece
 > of a second partition `s'`: `s'` covers `Ω`, so intersecting with `s i` covers `s i`. Used to
@@ -173,7 +173,7 @@ lemma apply_eq_sum_inter {ι ι' : Type*} [Fintype ι] [Fintype ι'] [DecidableE
       ∑ j, (μ (s i ∩ s' j) ((hs.measurable i).inter (hs'.measurable j)) : E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.apply_eq_sum_inter'`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L274).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.apply_eq_sum_inter'`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L274).
 
 > The symmetric counterpart of `apply_eq_sum_inter`, with the roles of the two partitions
 > swapped: the piece `s' j` decomposes as the union of its intersections with every piece of `s`.
@@ -186,7 +186,7 @@ lemma apply_eq_sum_inter' {ι ι' : Type*} [Fintype ι] [Fintype ι'] [Decidable
       ∑ i, (μ (s i ∩ s' j) ((hs.measurable i).inter (hs'.measurable j)) : E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_eq_of_pointwise_eq`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L284).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_eq_of_pointwise_eq`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L284).
 
 > **The simple integral depends only on the function.** Two partitions describing the same
 > function give the same integral, by passing to the common refinement.
@@ -200,7 +200,7 @@ lemma simpleIntegral_eq_of_pointwise_eq {ι ι' : Type*} [Fintype ι] [Fintype �
     simpleIntegral μ c s hs = simpleIntegral μ c' s' hs'
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_add`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L318).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_add`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L318).
 
 > The simple integral is additive in the weights, over a fixed partition.
 
@@ -210,7 +210,7 @@ lemma simpleIntegral_add (μ : EffectValuedMeasure Ω E) (c₁ c₂ : ι → ℝ
     simpleIntegral μ (c₁ + c₂) s hs = simpleIntegral μ c₁ s hs + simpleIntegral μ c₂ s hs
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_smul`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L326).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_smul`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L326).
 
 > The simple integral is homogeneous in the weights, over a fixed partition.
 
@@ -220,7 +220,7 @@ lemma simpleIntegral_smul (μ : EffectValuedMeasure Ω E) (r : ℝ) (c : ι → 
     simpleIntegral μ (r • c) s hs = r • simpleIntegral μ c s hs
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_nonneg`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L335).
+**`PhyslibAlpha.ProbabilisticTheory.EffectValuedMeasure.simpleIntegral_nonneg`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean#L335).
 
 > The simple integral of a nonnegative simple function is nonnegative — matching `μ`'s own
 > positivity: every term `c i • μ(s i)` is a nonnegative scalar times a nonnegative effect.
@@ -236,4 +236,4 @@ lemma simpleIntegral_nonneg (μ : EffectValuedMeasure Ω E) {c : ι → ℝ} (hc
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean)

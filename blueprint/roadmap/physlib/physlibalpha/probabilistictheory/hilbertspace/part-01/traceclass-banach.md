@@ -8,7 +8,7 @@ proof: formalized
 
 # The trace-class Banach space
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.Banach`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean): 21 declarations, 12 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.Banach`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean): 21 declarations, 12 with a docstring.
 
 > Trace-class operators form a Banach space under the trace norm.
 
@@ -33,13 +33,13 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.Banach`, [P
 
 ## A. Arithmetic closure of `IsTraceClass`
 
-**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_zero`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L56).
+**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_zero`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L56).
 
 ```lean
 lemma isTraceClass_zero : IsTraceClass (0 : H →L[ℂ] H)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_smul`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L61).
+**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_smul`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L61).
 
 > Trace-class operators are closed under scalar multiplication.
 
@@ -48,19 +48,19 @@ lemma isTraceClass_smul (c : ℂ) {T : H →L[ℂ] H} (hT : IsTraceClass T) :
     IsTraceClass (c • T)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_neg`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L80).
+**`PhyslibAlpha.ProbabilisticTheory.isTraceClass_neg`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L80).
 
 ```lean
 lemma isTraceClass_neg {T : H →L[ℂ] H} (hT : IsTraceClass T) : IsTraceClass (-T)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.traceNorm_zero`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L84).
+**`PhyslibAlpha.ProbabilisticTheory.traceNorm_zero`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L84).
 
 ```lean
 lemma traceNorm_zero : traceNorm (0 : H →L[ℂ] H) isTraceClass_zero = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.traceNorm_smul`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L90).
+**`PhyslibAlpha.ProbabilisticTheory.traceNorm_smul`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L90).
 
 > The trace norm is absolutely homogeneous: `‖c • T‖₁ = ‖c‖ ‖T‖₁`.
 
@@ -69,14 +69,14 @@ lemma traceNorm_smul (c : ℂ) {T : H →L[ℂ] H} (hT : IsTraceClass T) :
     traceNorm (c • T) (isTraceClass_smul c hT) = ‖c‖ * traceNorm T hT
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.traceNorm_neg`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L107).
+**`PhyslibAlpha.ProbabilisticTheory.traceNorm_neg`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L107).
 
 ```lean
 lemma traceNorm_neg {T : H →L[ℂ] H} (hT : IsTraceClass T) (hnegT : IsTraceClass (-T)) :
     traceNorm (-T) hnegT = traceNorm T hT
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.opNorm_le_traceNorm`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L125).
+**`PhyslibAlpha.ProbabilisticTheory.opNorm_le_traceNorm`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L125).
 
 > **The operator norm is at most the trace norm.** With `S = √|T|`, Parseval and Cauchy–Schwarz
 > give `‖S x‖² ≤ ‖T‖₁ ‖x‖²`, and `‖T‖ = ‖S‖²`.
@@ -87,7 +87,7 @@ lemma opNorm_le_traceNorm {T : H →L[ℂ] H} (hT : IsTraceClass T) : ‖T‖ �
 
 ## B. The trace-class submodule and Banach space
 
-**`PhyslibAlpha.ProbabilisticTheory.traceClassSubmodule`**, a def, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L186).
+**`PhyslibAlpha.ProbabilisticTheory.traceClassSubmodule`**, a def, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L186).
 
 > The trace-class operators, as a submodule of the bounded operators.
 
@@ -96,7 +96,7 @@ def traceClassSubmodule (H : Type*) [NormedAddCommGroup H] [InnerProductSpace �
     [CompleteSpace H] : Submodule ℂ (H →L[ℂ] H)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.TraceClass`**, a def, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L195).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass`**, a def, [line 195](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L195).
 
 > **The trace-class Banach space `𝒮₁(H)`**, normed by the trace norm. It is a `def` so that the
 > operator norm inherited from the ambient submodule is not found as an instance.
@@ -106,25 +106,25 @@ def TraceClass (H : Type*) [NormedAddCommGroup H] [InnerProductSpace ℂ H] [Com
     Type _
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.TraceClass.instAddCommGroup`**, an instance, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L201).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.instAddCommGroup`**, an instance, [line 201](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L201).
 
 ```lean
 noncomputable instance instAddCommGroup : AddCommGroup (TraceClass H)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.TraceClass.instModule`**, an instance, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L204).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.instModule`**, an instance, [line 204](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L204).
 
 ```lean
 noncomputable instance instModule : Module ℂ (TraceClass H)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.TraceClass.mem_iff`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L207).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.mem_iff`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L207).
 
 ```lean
 lemma mem_iff {T : H →L[ℂ] H} : T ∈ traceClassSubmodule H ↔ IsTraceClass T
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.TraceClass.isTraceClass_coe`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L210).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.isTraceClass_coe`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L210).
 
 > The trace-class witness carried by an element of `TraceClass H`.
 
@@ -132,7 +132,7 @@ lemma mem_iff {T : H →L[ℂ] H} : T ∈ traceClassSubmodule H ↔ IsTraceClass
 lemma isTraceClass_coe (T : TraceClass H) : IsTraceClass T.1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.TraceClass.ofOperator`**, a def, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L213).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.ofOperator`**, a def, [line 213](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L213).
 
 > The element of `TraceClass H` given by a trace-class operator.
 
@@ -140,14 +140,14 @@ lemma isTraceClass_coe (T : TraceClass H) : IsTraceClass T.1
 def ofOperator (T : H →L[ℂ] H) (hT : IsTraceClass T) : TraceClass H
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.TraceClass.ofOperator_coe`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L215).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.ofOperator_coe`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L215).
 
 ```lean
 lemma ofOperator_coe (T : H →L[ℂ] H) (hT : IsTraceClass T) :
     (ofOperator T hT).1 = T
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.TraceClass.traceClassAddGroupNorm`**, a def, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L221).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.traceClassAddGroupNorm`**, a def, [line 221](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L221).
 
 > **The trace norm as an `AddGroupNorm`** on the trace-class submodule: nonnegativity, the
 > triangle inequality (`traceNorm_add_le`), invariance under negation, and the zero-detection
@@ -157,7 +157,7 @@ lemma ofOperator_coe (T : H →L[ℂ] H) (hT : IsTraceClass T) :
 noncomputable def traceClassAddGroupNorm : AddGroupNorm (TraceClass H)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.TraceClass.instNormedAddCommGroup`**, an instance, [line 235](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L235).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.instNormedAddCommGroup`**, an instance, [line 235](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L235).
 
 > **The trace-class Banach space's `NormedAddCommGroup` instance**, with norm `traceNorm`.
 
@@ -165,14 +165,14 @@ noncomputable def traceClassAddGroupNorm : AddGroupNorm (TraceClass H)
 noncomputable instance instNormedAddCommGroup : NormedAddCommGroup (TraceClass H)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.TraceClass.norm_eq_traceNorm`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L238).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.norm_eq_traceNorm`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L238).
 
 ```lean
 lemma norm_eq_traceNorm (T : TraceClass H) :
     ‖T‖ = traceNorm T.1 (isTraceClass_coe T)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.TraceClass.instNormedSpace`**, an instance, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L243).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.instNormedSpace`**, an instance, [line 243](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L243).
 
 > **The trace-class Banach space's `NormedSpace ℂ` instance**: scalar multiplication scales the
 > trace norm exactly, by `traceNorm_smul`.
@@ -181,7 +181,7 @@ lemma norm_eq_traceNorm (T : TraceClass H) :
 noncomputable instance instNormedSpace : NormedSpace ℂ (TraceClass H)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.TraceClass.isTraceClass_of_tendsto_of_traceNorm_bounded`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L253).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.isTraceClass_of_tendsto_of_traceNorm_bounded`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L253).
 
 > **Lower semicontinuity of the trace norm.** An operator-norm limit of trace-class operators with
 > trace norms bounded by `C` is trace class, with trace norm at most `C`.
@@ -193,7 +193,7 @@ lemma isTraceClass_of_tendsto_of_traceNorm_bounded {Tn : ℕ → H →L[ℂ] H} 
     ∃ hT : IsTraceClass T, traceNorm T hT ≤ C
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.TraceClass.instCompleteSpace`**, an instance, [line 323](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L323).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.instCompleteSpace`**, an instance, [line 323](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean#L323).
 
 > **The trace-class operators form a Banach space.** The partial sums of an absolutely convergent
 > series converge in operator norm, and lower semicontinuity bounds the trace norm of the tails.
@@ -212,4 +212,4 @@ noncomputable instance instCompleteSpace : CompleteSpace (TraceClass H)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean)

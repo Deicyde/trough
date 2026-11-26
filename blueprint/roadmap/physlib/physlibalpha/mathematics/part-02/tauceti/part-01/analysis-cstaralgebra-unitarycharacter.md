@@ -8,7 +8,7 @@ proof: formalized
 
 # Characters from unitary multipliers
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.CStarAlgebra.UnitaryCharacter`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/UnitaryCharacter.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/UnitaryCharacter.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.CStarAlgebra.UnitaryCharacter`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/UnitaryCharacter.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/UnitaryCharacter.lean): 1 declaration, 1 with a docstring.
 
 > A unitary representation need not be continuous in the norm of a C⋆-algebra.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.CStarAlgebra.UnitaryCharac
 
 ## A. Development
 
-**`MonoidHom.existsUnique_pontryaginDual_of_unitary_translate`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/UnitaryCharacter.lean#L53).
+**`MonoidHom.existsUnique_pontryaginDual_of_unitary_translate`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/UnitaryCharacter.lean#L53).
 
 > A character nonzero on a commuting operator with norm-continuous unitary translates
 > induces a unique continuous circle-valued character. It describes every translate in the subalgebra,
@@ -58,4 +58,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/UnitaryCharacter.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/UnitaryCharacter.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/UnitaryCharacter.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/CStarAlgebra/UnitaryCharacter.lean)

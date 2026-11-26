@@ -8,7 +8,7 @@ proof: formalized
 
 # Crystals, cells and sites (PhyslibAlpha)
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.Basic`, [PhyslibAlpha/CondensedMatter/Crystal/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Basic.lean): 6 declarations (3 instances with no name), 6 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.Basic`, [PhyslibAlpha/CondensedMatter/Crystal/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Basic.lean): 6 declarations (3 instances with no name), 6 with a docstring.
 
 ## i. Overview
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Basic`, [PhyslibAlpha/Condensed
 
 > * N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 4.
 
-**`CondensedMatter.Crystal`**, a structure, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Basic.lean#L65).
+**`CondensedMatter.Crystal`**, a structure, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Basic.lean#L65).
 
 > A perfectly repeating arrangement of sites under the translation group `G`.
 > Every site belongs to one of finitely many families of translated copies.
@@ -66,7 +66,7 @@ structure Crystal (G : Type u) [AddGroup G] where
 > Choose site labels `F` for a reference cell. Repeating this cell under translations by `G`
 > gives one site for each cell index `n : G` and label `i : F`.
 
-**`CondensedMatter.Crystal.CellSite`**, a structure, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Basic.lean#L86).
+**`CondensedMatter.Crystal.CellSite`**, a structure, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Basic.lean#L86).
 
 > The address `⟨n, i⟩` of site `i` in the cell indexed by `n`.
 
@@ -79,7 +79,7 @@ structure CellSite (G : Type u) (F : Type v) where
   deriving DecidableEq, Fintype
 ```
 
-**An instance with no name**, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Basic.lean#L94).
+**An instance with no name**, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Basic.lean#L94).
 
 > Translate a site by changing its cell index and preserving its label.
 
@@ -87,7 +87,7 @@ structure CellSite (G : Type u) (F : Type v) where
 instance {G F : Type*} [AddGroup G] : AddAction G (CellSite G F)
 ```
 
-**An instance with no name**, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Basic.lean#L102).
+**An instance with no name**, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Basic.lean#L102).
 
 > Different cell translations give different copies of a site.
 
@@ -95,7 +95,7 @@ instance {G F : Type*} [AddGroup G] : AddAction G (CellSite G F)
 instance {G F : Type*} [AddGroup G] : IsCancelVAdd G (CellSite G F)
 ```
 
-**`CondensedMatter.Crystal.ofUnitCell`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Basic.lean#L110).
+**`CondensedMatter.Crystal.ofUnitCell`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Basic.lean#L110).
 
 > Construct a crystal by repeating a unit cell containing one site for each label in `F`.
 > The group `G` indexes translated cells. A site of the resulting crystal has address
@@ -105,7 +105,7 @@ instance {G F : Type*} [AddGroup G] : IsCancelVAdd G (CellSite G F)
 def ofUnitCell (G : Type u) (F : Type v) [AddGroup G] [Finite F] : Crystal G
 ```
 
-**An instance with no name**, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Basic.lean#L129).
+**An instance with no name**, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Basic.lean#L129).
 
 > A finite translation group gives a finite crystal.
 
@@ -119,4 +119,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Basic.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/Crystal/Basic.lean)

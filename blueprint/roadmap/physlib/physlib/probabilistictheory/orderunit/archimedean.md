@@ -8,7 +8,7 @@ proof: formalized
 
 # Archimedean order-unit spaces (Physlib)
 
-The module `Physlib.ProbabilisticTheory.OrderUnit.Archimedean`, [Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean): 30 declarations, 27 with a docstring.
+The module `Physlib.ProbabilisticTheory.OrderUnit.Archimedean`, [Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean): 30 declarations, 27 with a docstring.
 
 ## i. Overview
 
@@ -34,7 +34,7 @@ The module `Physlib.ProbabilisticTheory.OrderUnit.Archimedean`, [Physlib/Probabi
 
 ## A. Archimedean order units
 
-**`ProbabilisticTheory.le_zero_of_forall_pos_smul_one_le`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L60).
+**`ProbabilisticTheory.le_zero_of_forall_pos_smul_one_le`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L60).
 
 > An observable below every positive multiple of the certain outcome is nonpositive.
 
@@ -45,7 +45,7 @@ lemma le_zero_of_forall_pos_smul_one_le (A : P.Observables)
 
 ## B. The order-unit bounds and norm
 
-**`ProbabilisticTheory.orderUnitBounds`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L71).
+**`ProbabilisticTheory.orderUnitBounds`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L71).
 
 > The nonnegative scalars that bound an element on both sides by the order unit.
 
@@ -53,7 +53,7 @@ lemma le_zero_of_forall_pos_smul_one_le (A : P.Observables)
 def orderUnitBounds (A : P.Observables) : Set ℝ
 ```
 
-**`ProbabilisticTheory.orderUnitNorm`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L75).
+**`ProbabilisticTheory.orderUnitNorm`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L75).
 
 > The order-unit norm is the infimum of the order-unit bounds.
 
@@ -61,7 +61,7 @@ def orderUnitBounds (A : P.Observables) : Set ℝ
 noncomputable def orderUnitNorm (A : P.Observables) : ℝ
 ```
 
-**`ProbabilisticTheory.orderUnitBounds_bddBelow`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L79).
+**`ProbabilisticTheory.orderUnitBounds_bddBelow`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L79).
 
 > The order-unit bounds are bounded below by `0`.
 
@@ -69,7 +69,7 @@ noncomputable def orderUnitNorm (A : P.Observables) : ℝ
 lemma orderUnitBounds_bddBelow (A : P.Observables) : BddBelow (orderUnitBounds A)
 ```
 
-**`ProbabilisticTheory.orderUnitNorm_le`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L83).
+**`ProbabilisticTheory.orderUnitNorm_le`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L83).
 
 > Any order-unit bound on `A` is an upper bound for `A`'s order-unit norm.
 
@@ -78,7 +78,7 @@ lemma orderUnitNorm_le {A : P.Observables} {r : ℝ} (hr : r ∈ orderUnitBounds
     orderUnitNorm A ≤ r
 ```
 
-**`ProbabilisticTheory.orderUnitBounds_nonempty`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L88).
+**`ProbabilisticTheory.orderUnitBounds_nonempty`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L88).
 
 > Every element has some order-unit bound.
 
@@ -86,7 +86,7 @@ lemma orderUnitNorm_le {A : P.Observables} {r : ℝ} (hr : r ∈ orderUnitBounds
 lemma orderUnitBounds_nonempty (A : P.Observables) : (orderUnitBounds A).Nonempty
 ```
 
-**`ProbabilisticTheory.orderUnitNorm_nonneg`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L95).
+**`ProbabilisticTheory.orderUnitNorm_nonneg`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L95).
 
 > The order-unit norm is an infimum of nonnegative reals, hence itself nonnegative.
 
@@ -94,13 +94,13 @@ lemma orderUnitBounds_nonempty (A : P.Observables) : (orderUnitBounds A).Nonempt
 lemma orderUnitNorm_nonneg (A : P.Observables) : 0 ≤ orderUnitNorm A
 ```
 
-**`ProbabilisticTheory.orderUnitNorm_zero`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L99).
+**`ProbabilisticTheory.orderUnitNorm_zero`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L99).
 
 ```lean
 lemma orderUnitNorm_zero : orderUnitNorm (0 : P.Observables) = 0
 ```
 
-**`ProbabilisticTheory.orderUnitBounds_neg`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L106).
+**`ProbabilisticTheory.orderUnitBounds_neg`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L106).
 
 > Negation preserves the set of order-unit bounds: a symmetric interval bounding `A` bounds
 > `-A` too.
@@ -109,13 +109,13 @@ lemma orderUnitNorm_zero : orderUnitNorm (0 : P.Observables) = 0
 lemma orderUnitBounds_neg (A : P.Observables) : orderUnitBounds (-A) = orderUnitBounds A
 ```
 
-**`ProbabilisticTheory.orderUnitNorm_neg`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L113).
+**`ProbabilisticTheory.orderUnitNorm_neg`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L113).
 
 ```lean
 lemma orderUnitNorm_neg (A : P.Observables) : orderUnitNorm (-A) = orderUnitNorm A
 ```
 
-**`ProbabilisticTheory.add_mem_orderUnitBounds`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L118).
+**`ProbabilisticTheory.add_mem_orderUnitBounds`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L118).
 
 > A bound for `A` and a bound for `B` add up to a bound for `A + B`.
 
@@ -124,7 +124,7 @@ lemma add_mem_orderUnitBounds {A B : P.Observables} {r s : ℝ} (hr : r ∈ orde
     (hs : s ∈ orderUnitBounds B) : r + s ∈ orderUnitBounds (A + B)
 ```
 
-**`ProbabilisticTheory.exists_orderUnitBound_lt`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L127).
+**`ProbabilisticTheory.exists_orderUnitBound_lt`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L127).
 
 > There is an order-unit bound on `A` within `ε` of its norm.
 
@@ -133,7 +133,7 @@ lemma exists_orderUnitBound_lt (A : P.Observables) {ε : ℝ} (hε : 0 < ε) :
     ∃ r ∈ orderUnitBounds A, r < orderUnitNorm A + ε
 ```
 
-**`ProbabilisticTheory.orderUnitNorm_add_le`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L131).
+**`ProbabilisticTheory.orderUnitNorm_add_le`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L131).
 
 ```lean
 lemma orderUnitNorm_add_le (A B : P.Observables) :
@@ -142,7 +142,7 @@ lemma orderUnitNorm_add_le (A B : P.Observables) :
 
 ## C. Norm axioms
 
-**`ProbabilisticTheory.smul_one_mono`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L151).
+**`ProbabilisticTheory.smul_one_mono`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L151).
 
 > Scaling the unit by a larger nonnegative real gives a larger multiple: `r ↦ r • 1` is
 > monotone.
@@ -152,7 +152,7 @@ lemma smul_one_mono {r s : ℝ} (hrs : r ≤ s) :
     r • (1 : P.Observables) ≤ s • (1 : P.Observables)
 ```
 
-**`ProbabilisticTheory.le_orderUnitNorm_smul_one`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L156).
+**`ProbabilisticTheory.le_orderUnitNorm_smul_one`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L156).
 
 > Every element is bounded above by its order-unit norm times `1`.
 
@@ -161,7 +161,7 @@ lemma le_orderUnitNorm_smul_one (A : P.Observables) :
     A ≤ orderUnitNorm A • (1 : P.Observables)
 ```
 
-**`ProbabilisticTheory.neg_orderUnitNorm_smul_one_le`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L170).
+**`ProbabilisticTheory.neg_orderUnitNorm_smul_one_le`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L170).
 
 > `A` is also bounded below by `-(orderUnitNorm A • 1)`.
 
@@ -170,7 +170,7 @@ lemma neg_orderUnitNorm_smul_one_le (A : P.Observables) :
     -(orderUnitNorm A • (1 : P.Observables)) ≤ A
 ```
 
-**`ProbabilisticTheory.orderUnitNorm_mem_orderUnitBounds`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L178).
+**`ProbabilisticTheory.orderUnitNorm_mem_orderUnitBounds`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L178).
 
 > The norm itself is an order-unit bound, i.e. the infimum defining `orderUnitNorm` is a
 > minimum.
@@ -179,7 +179,7 @@ lemma neg_orderUnitNorm_smul_one_le (A : P.Observables) :
 lemma orderUnitNorm_mem_orderUnitBounds (A : P.Observables) : orderUnitNorm A ∈ orderUnitBounds A
 ```
 
-**`ProbabilisticTheory.le_smul_one_of_orderUnitNorm_lt`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L182).
+**`ProbabilisticTheory.le_smul_one_of_orderUnitNorm_lt`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L182).
 
 > An element with order-unit norm strictly below `ε` is itself bounded above by `ε • 1`.
 
@@ -188,7 +188,7 @@ lemma le_smul_one_of_orderUnitNorm_lt {A : P.Observables} {ε : ℝ} (h : orderU
     A ≤ ε • (1 : P.Observables)
 ```
 
-**`ProbabilisticTheory.neg_smul_one_le_of_orderUnitNorm_lt`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L187).
+**`ProbabilisticTheory.neg_smul_one_le_of_orderUnitNorm_lt`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L187).
 
 > The mirror image of `le_smul_one_of_orderUnitNorm_lt`.
 
@@ -197,7 +197,7 @@ lemma neg_smul_one_le_of_orderUnitNorm_lt {A : P.Observables} {ε : ℝ} (h : or
     -(ε • (1 : P.Observables)) ≤ A
 ```
 
-**`ProbabilisticTheory.orderUnitNorm_le_iff`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L194).
+**`ProbabilisticTheory.orderUnitNorm_le_iff`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L194).
 
 > The order-unit norm is characterized exactly by its symmetric order interval.
 
@@ -206,7 +206,7 @@ lemma orderUnitNorm_le_iff {A : P.Observables} {r : ℝ} :
     orderUnitNorm A ≤ r ↔ 0 ≤ r ∧ -(r • (1 : P.Observables)) ≤ A ∧ A ≤ r • (1 : P.Observables)
 ```
 
-**`ProbabilisticTheory.orderUnitNorm_eq_zero_iff`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L202).
+**`ProbabilisticTheory.orderUnitNorm_eq_zero_iff`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L202).
 
 > The order-unit norm is definite: `‖A‖₁ = 0` forces `A = 0`.
 
@@ -214,7 +214,7 @@ lemma orderUnitNorm_le_iff {A : P.Observables} {r : ℝ} :
 lemma orderUnitNorm_eq_zero_iff {A : P.Observables} : orderUnitNorm A = 0 ↔ A = 0
 ```
 
-**`ProbabilisticTheory.orderUnitNorm_smul_le`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L209).
+**`ProbabilisticTheory.orderUnitNorm_smul_le`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L209).
 
 > Nonnegative scalar multiplication scales the order-unit norm from above.
 
@@ -223,7 +223,7 @@ lemma orderUnitNorm_smul_le {r : ℝ} (hr : 0 ≤ r) (A : P.Observables) :
     orderUnitNorm (r • A) ≤ r * orderUnitNorm A
 ```
 
-**`ProbabilisticTheory.orderUnitNorm_smul_of_pos`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L219).
+**`ProbabilisticTheory.orderUnitNorm_smul_of_pos`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L219).
 
 > Positive scalar multiplication scales the order-unit norm.
 
@@ -232,7 +232,7 @@ lemma orderUnitNorm_smul_of_pos {r : ℝ} (hr : 0 < r) (A : P.Observables) :
     orderUnitNorm (r • A) = r * orderUnitNorm A
 ```
 
-**`ProbabilisticTheory.orderUnitNorm_smul`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L226).
+**`ProbabilisticTheory.orderUnitNorm_smul`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L226).
 
 > The order-unit norm is absolutely homogeneous.
 
@@ -241,7 +241,7 @@ lemma orderUnitNorm_smul (r : ℝ) (A : P.Observables) :
     orderUnitNorm (r • A) = |r| * orderUnitNorm A
 ```
 
-**`ProbabilisticTheory.exists_orderUnitNorm_le_one_smul_eq`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L236).
+**`ProbabilisticTheory.exists_orderUnitNorm_le_one_smul_eq`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L236).
 
 > Rescaling any nonzero element down to the unit ball: `(orderUnitNorm A)⁻¹ • A` has norm at
 > most `1`, and scaling it back up by `orderUnitNorm A` recovers `A`.
@@ -253,7 +253,7 @@ lemma exists_orderUnitNorm_le_one_smul_eq {A : P.Observables} (hA : orderUnitNor
 
 ## D. The induced normed space
 
-**`ProbabilisticTheory.orderUnitAddGroupNorm`**, a def, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L250).
+**`ProbabilisticTheory.orderUnitAddGroupNorm`**, a def, [line 250](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L250).
 
 > The order-unit norm packaged as an additive-group norm.
 
@@ -261,7 +261,7 @@ lemma exists_orderUnitNorm_le_one_smul_eq {A : P.Observables} (hA : orderUnitNor
 noncomputable def orderUnitAddGroupNorm : AddGroupNorm P.Observables
 ```
 
-**`ProbabilisticTheory.orderUnitNormedAddCommGroup`**, an instance, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L258).
+**`ProbabilisticTheory.orderUnitNormedAddCommGroup`**, an instance, [line 258](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L258).
 
 > The normed additive group given by the order-unit norm.
 
@@ -269,7 +269,7 @@ noncomputable def orderUnitAddGroupNorm : AddGroupNorm P.Observables
 noncomputable scoped instance orderUnitNormedAddCommGroup : NormedAddCommGroup P.Observables
 ```
 
-**`ProbabilisticTheory.orderUnitNormedSpace`**, an instance, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L262).
+**`ProbabilisticTheory.orderUnitNormedSpace`**, an instance, [line 262](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L262).
 
 > The real normed space given by the order-unit norm.
 
@@ -279,7 +279,7 @@ noncomputable scoped instance orderUnitNormedSpace : NormedSpace ℝ P.Observabl
 
 ## E. Order-closedness of the topology
 
-**`ProbabilisticTheory.isClosed_Ici_zero`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L272).
+**`ProbabilisticTheory.isClosed_Ici_zero`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L272).
 
 > The positive cone is closed in the order-unit-norm topology.
 
@@ -287,7 +287,7 @@ noncomputable scoped instance orderUnitNormedSpace : NormedSpace ℝ P.Observabl
 lemma isClosed_Ici_zero : IsClosed (Set.Ici (0 : P.Observables))
 ```
 
-**`ProbabilisticTheory.closedIciTopology`**, an instance, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L285).
+**`ProbabilisticTheory.closedIciTopology`**, an instance, [line 285](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean#L285).
 
 > Every upper set `[a, ∞)` is closed in the order-unit-norm topology.
 
@@ -305,4 +305,4 @@ scoped instance closedIciTopology : ClosedIciTopology P.Observables
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean)
+- [Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean)

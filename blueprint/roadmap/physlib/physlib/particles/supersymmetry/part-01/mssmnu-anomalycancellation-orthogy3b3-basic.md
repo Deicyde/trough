@@ -8,7 +8,7 @@ proof: formalized
 
 # The type of solutions perpendicular to `Y₃` and `B₃`
 
-The module `Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.OrthogY3B3.Basic`, [Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean): 12 declarations, 2 with a docstring.
+The module `Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.OrthogY3B3.Basic`, [Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean): 12 declarations, 2 with a docstring.
 
 > We define the type of solutions which are orthogonal to `Y₃` and `B₃` and prove some basic lemmas
 > about them.
@@ -18,7 +18,7 @@ The module `Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.OrthogY3B
 > * The main reference for the material in this file is https://arxiv.org/pdf/2107.07926.pdf.
 >   [ref: Allanach:2021yjy]
 
-**`MSSMACC.AnomalyFreePerp`**, a structure, [line 29](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L29).
+**`MSSMACC.AnomalyFreePerp`**, a structure, [line 29](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L29).
 
 > The type of linear solutions orthogonal to $Y_3$ and $B_3$.
 
@@ -28,7 +28,7 @@ structure AnomalyFreePerp extends MSSMACC.LinSols where
   perpB₃ : dot B₃.val val = 0
 ```
 
-**`MSSMACC.proj`**, a def, [line 36](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L36).
+**`MSSMACC.proj`**, a def, [line 36](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L36).
 
 > The projection of an object in `MSSMACC.AnomalyFreeLinear` onto the subspace
 > orthogonal to `Y₃` and`B₃`.
@@ -37,7 +37,7 @@ structure AnomalyFreePerp extends MSSMACC.LinSols where
 def proj (T : MSSMACC.LinSols) : MSSMACC.AnomalyFreePerp
 ```
 
-**`MSSMACC.proj_val`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L56).
+**`MSSMACC.proj_val`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L56).
 
 ```lean
 lemma proj_val (T : MSSMACC.LinSols) :
@@ -46,7 +46,7 @@ lemma proj_val (T : MSSMACC.LinSols) :
     dot Y₃.val B₃.val • T.val
 ```
 
-**`MSSMACC.Y₃_plus_B₃_plus_proj`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L62).
+**`MSSMACC.Y₃_plus_B₃_plus_proj`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L62).
 
 ```lean
 lemma Y₃_plus_B₃_plus_proj (T : MSSMACC.LinSols) (a b c : ℚ) :
@@ -56,21 +56,21 @@ lemma Y₃_plus_B₃_plus_proj (T : MSSMACC.LinSols) (a b c : ℚ) :
     + (dot Y₃.val B₃.val * c) • T.val
 ```
 
-**`MSSMACC.quad_Y₃_proj`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L72).
+**`MSSMACC.quad_Y₃_proj`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L72).
 
 ```lean
 lemma quad_Y₃_proj (T : MSSMACC.LinSols) :
     quadBiLin Y₃.val (proj T).val = dot Y₃.val B₃.val * quadBiLin Y₃.val T.val
 ```
 
-**`MSSMACC.quad_B₃_proj`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L82).
+**`MSSMACC.quad_B₃_proj`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L82).
 
 ```lean
 lemma quad_B₃_proj (T : MSSMACC.LinSols) :
     quadBiLin B₃.val (proj T).val = dot Y₃.val B₃.val * quadBiLin B₃.val T.val
 ```
 
-**`MSSMACC.quad_self_proj`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L92).
+**`MSSMACC.quad_self_proj`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L92).
 
 ```lean
 lemma quad_self_proj (T : MSSMACC.Sols) :
@@ -79,7 +79,7 @@ lemma quad_self_proj (T : MSSMACC.Sols) :
     (dot Y₃.val T.val - 2 * dot B₃.val T.val) * quadBiLin B₃.val T.val
 ```
 
-**`MSSMACC.quad_proj`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L106).
+**`MSSMACC.quad_proj`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L106).
 
 ```lean
 lemma quad_proj (T : MSSMACC.Sols) :
@@ -88,7 +88,7 @@ lemma quad_proj (T : MSSMACC.Sols) :
     (dot Y₃.val T.val - 2 * dot B₃.val T.val) * quadBiLin B₃.val T.val)
 ```
 
-**`MSSMACC.cube_proj_proj_Y₃`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L117).
+**`MSSMACC.cube_proj_proj_Y₃`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L117).
 
 ```lean
 lemma cube_proj_proj_Y₃ (T : MSSMACC.LinSols) :
@@ -96,7 +96,7 @@ lemma cube_proj_proj_Y₃ (T : MSSMACC.LinSols) :
     (dot Y₃.val B₃.val)^2 * cubeTriLin T.val T.val Y₃.val
 ```
 
-**`MSSMACC.cube_proj_proj_B₃`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L143).
+**`MSSMACC.cube_proj_proj_B₃`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L143).
 
 ```lean
 lemma cube_proj_proj_B₃ (T : MSSMACC.LinSols) :
@@ -104,7 +104,7 @@ lemma cube_proj_proj_B₃ (T : MSSMACC.LinSols) :
     (dot Y₃.val B₃.val)^2 * cubeTriLin T.val T.val B₃.val
 ```
 
-**`MSSMACC.cube_proj_proj_self`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L160).
+**`MSSMACC.cube_proj_proj_self`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L160).
 
 ```lean
 lemma cube_proj_proj_self (T : MSSMACC.Sols) :
@@ -114,7 +114,7 @@ lemma cube_proj_proj_self (T : MSSMACC.Sols) :
     (dot Y₃.val T.val - 2 * dot B₃.val T.val) * cubeTriLin T.val T.val B₃.val)
 ```
 
-**`MSSMACC.cube_proj`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L180).
+**`MSSMACC.cube_proj`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean#L180).
 
 ```lean
 lemma cube_proj (T : MSSMACC.Sols) :
@@ -135,4 +135,4 @@ lemma cube_proj (T : MSSMACC.Sols) :
 
 ## Sources
 
-- [Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean)
+- [Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean)

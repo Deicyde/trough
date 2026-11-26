@@ -8,7 +8,7 @@ proof: formalized
 
 # Crystals, cells and sites (Physlib)
 
-The module `Physlib.CondensedMatter.Crystal.Basic`, [Physlib/CondensedMatter/Crystal/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean): 18 declarations (6 instances with no name), 18 with a docstring.
+The module `Physlib.CondensedMatter.Crystal.Basic`, [Physlib/CondensedMatter/Crystal/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean): 18 declarations (6 instances with no name), 18 with a docstring.
 
 > A crystal is a finite unit cell repeated periodically.
 
@@ -48,7 +48,7 @@ The module `Physlib.CondensedMatter.Crystal.Basic`, [Physlib/CondensedMatter/Cry
 
 ## A. The unit cell
 
-**`Physlib.CondensedMatter.Crystal`**, a structure, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L68).
+**`Physlib.CondensedMatter.Crystal`**, a structure, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L68).
 
 > A crystal with finitely generated abelian translation group `G` and a finite, nonempty unit
 > cell. The sites are one copy of each unit-cell label in every translated cell.
@@ -65,7 +65,7 @@ structure Crystal (G : Type*) [AddCommGroup G] [AddGroup.FG G] where
 
 ## B. Constructing a crystal from a unit cell
 
-**`Physlib.CondensedMatter.Crystal.ofUnitCell`**, an abbrev, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L84).
+**`Physlib.CondensedMatter.Crystal.ofUnitCell`**, an abbrev, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L84).
 
 > Construct a crystal by repeating a unit cell with labels `F`.
 > The group `G` indexes translated cells; `⟨n, i⟩` is the site with label `i` in cell `n`.
@@ -77,7 +77,7 @@ abbrev ofUnitCell (G : Type*) (F : Type*) [AddCommGroup G] [AddGroup.FG G]
 
 ## C. Sites and their finiteness
 
-**`Physlib.CondensedMatter.Crystal.Site`**, a structure, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L93).
+**`Physlib.CondensedMatter.Crystal.Site`**, a structure, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L93).
 
 > A site of `C`, with label `i` in cell `n`.
 
@@ -89,7 +89,7 @@ structure Site (C : Crystal G) where
   label : C.UnitCell
 ```
 
-**`Physlib.CondensedMatter.Crystal.Site.ref`**, an abbrev, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L100).
+**`Physlib.CondensedMatter.Crystal.Site.ref`**, an abbrev, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L100).
 
 > The site with label `i` in the reference cell, the cell `0`.
 
@@ -97,7 +97,7 @@ structure Site (C : Crystal G) where
 abbrev Site.ref {C : Crystal G} (i : C.UnitCell) : C.Site
 ```
 
-**`Physlib.CondensedMatter.Crystal.Site.cell_ref`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L103).
+**`Physlib.CondensedMatter.Crystal.Site.cell_ref`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L103).
 
 > The reference site lies in the cell `0`.
 
@@ -105,7 +105,7 @@ abbrev Site.ref {C : Crystal G} (i : C.UnitCell) : C.Site
 lemma Site.cell_ref {C : Crystal G} (i : C.UnitCell) : (Site.ref i).cell = 0
 ```
 
-**`Physlib.CondensedMatter.Crystal.Site.label_ref`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L106).
+**`Physlib.CondensedMatter.Crystal.Site.label_ref`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L106).
 
 > The reference site has the label `i`.
 
@@ -113,7 +113,7 @@ lemma Site.cell_ref {C : Crystal G} (i : C.UnitCell) : (Site.ref i).cell = 0
 lemma Site.label_ref {C : Crystal G} (i : C.UnitCell) : (Site.ref i).label = i
 ```
 
-**`Physlib.CondensedMatter.Crystal.siteEquiv`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L109).
+**`Physlib.CondensedMatter.Crystal.siteEquiv`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L109).
 
 > A site is a pair of its unit-cell label and its cell.
 
@@ -121,7 +121,7 @@ lemma Site.label_ref {C : Crystal G} (i : C.UnitCell) : (Site.ref i).label = i
 def siteEquiv (C : Crystal G) : C.Site ≃ C.UnitCell × G
 ```
 
-**An instance with no name**, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L116).
+**An instance with no name**, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L116).
 
 > Sites can be compared when cells and unit-cell labels can be compared.
 
@@ -129,7 +129,7 @@ def siteEquiv (C : Crystal G) : C.Site ≃ C.UnitCell × G
 instance (C : Crystal G) [DecidableEq G] [DecidableEq C.UnitCell] : DecidableEq C.Site
 ```
 
-**An instance with no name**, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L120).
+**An instance with no name**, [line 120](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L120).
 
 > A finite set of cells and a finite unit cell give a finite set of sites.
 
@@ -137,7 +137,7 @@ instance (C : Crystal G) [DecidableEq G] [DecidableEq C.UnitCell] : DecidableEq 
 instance (C : Crystal G) [Fintype G] [Fintype C.UnitCell] : Fintype C.Site
 ```
 
-**An instance with no name**, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L124).
+**An instance with no name**, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L124).
 
 > A finite translation group, as for periodic boundary conditions, gives a finite crystal.
 
@@ -145,7 +145,7 @@ instance (C : Crystal G) [Fintype G] [Fintype C.UnitCell] : Fintype C.Site
 instance (C : Crystal G) [Finite G] : Finite C.Site
 ```
 
-**An instance with no name**, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L128).
+**An instance with no name**, [line 128](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L128).
 
 > Every crystal has a site in its reference cell.
 
@@ -155,7 +155,7 @@ instance (C : Crystal G) : Nonempty C.Site
 
 ## D. Translation symmetry
 
-**An instance with no name**, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L135).
+**An instance with no name**, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L135).
 
 > Translate a site to another cell, preserving its unit-cell label.
 
@@ -163,7 +163,7 @@ instance (C : Crystal G) : Nonempty C.Site
 instance (C : Crystal G) : AddAction G C.Site
 ```
 
-**`Physlib.CondensedMatter.Crystal.Site.vadd_def`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L141).
+**`Physlib.CondensedMatter.Crystal.Site.vadd_def`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L141).
 
 > Translation changes a site's cell and preserves its label.
 
@@ -172,7 +172,7 @@ lemma Site.vadd_def {C : Crystal G} (a : G) (x : C.Site) :
     a +ᵥ x = ⟨a + x.cell, x.label⟩
 ```
 
-**`Physlib.CondensedMatter.Crystal.Site.cell_vadd`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L145).
+**`Physlib.CondensedMatter.Crystal.Site.cell_vadd`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L145).
 
 > The cell of a translated site is the translated cell.
 
@@ -181,7 +181,7 @@ lemma Site.cell_vadd {C : Crystal G} (a : G) (x : C.Site) :
     (a +ᵥ x).cell = a + x.cell
 ```
 
-**`Physlib.CondensedMatter.Crystal.Site.label_vadd`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L149).
+**`Physlib.CondensedMatter.Crystal.Site.label_vadd`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L149).
 
 > Translation preserves the label of a site.
 
@@ -190,7 +190,7 @@ lemma Site.label_vadd {C : Crystal G} (a : G) (x : C.Site) :
     (a +ᵥ x).label = x.label
 ```
 
-**An instance with no name**, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L154).
+**An instance with no name**, [line 154](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L154).
 
 > Translation acts freely: translations are injective on sites, and different translations move
 > a site to different sites.
@@ -199,7 +199,7 @@ lemma Site.label_vadd {C : Crystal G} (a : G) (x : C.Site) :
 instance (C : Crystal G) : IsCancelVAdd G C.Site
 ```
 
-**`Physlib.CondensedMatter.Crystal.Site.mem_orbit_iff_label_eq`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L159).
+**`Physlib.CondensedMatter.Crystal.Site.mem_orbit_iff_label_eq`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L159).
 
 > The translates of a site are exactly the sites with the same label.
 
@@ -210,7 +210,7 @@ lemma Site.mem_orbit_iff_label_eq {C : Crystal G} (x y : C.Site) :
 
 ## E. Species
 
-**`Physlib.CondensedMatter.Crystal.Species`**, an abbrev, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean#L172).
+**`Physlib.CondensedMatter.Crystal.Species`**, an abbrev, [line 172](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean#L172).
 
 > A species assignment gives each label of the unit cell a species in `Q`, for example a chemical
 > element. The same assignment holds in every cell.
@@ -225,4 +225,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/CondensedMatter/Crystal/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Basic.lean)
+- [Physlib/CondensedMatter/Crystal/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Basic.lean)

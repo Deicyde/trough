@@ -8,7 +8,7 @@ proof: formalized
 
 # The vector Potential (TemperedDistributional/VectorPotential)
 
-The module `Physlib.Electromagnetism.TemperedDistributional.VectorPotential`, [Physlib/Electromagnetism/TemperedDistributional/VectorPotential.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/VectorPotential.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.Electromagnetism.TemperedDistributional.VectorPotential`, [Physlib/Electromagnetism/TemperedDistributional/VectorPotential.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/VectorPotential.lean): 1 declaration, 1 with a docstring.
 
 ## i. Overview
 
@@ -32,7 +32,7 @@ The module `Physlib.Electromagnetism.TemperedDistributional.VectorPotential`, [P
 
 ## A. Vector potential for distributions
 
-**`Electromagnetism.TempDistElectromagneticPotential.vectorPotential`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/VectorPotential.lean#L62).
+**`Electromagnetism.TempDistElectromagneticPotential.vectorPotential`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/VectorPotential.lean#L62).
 
 > The vector potential of an electromagnetic potential which is a distribution.
 
@@ -48,4 +48,4 @@ noncomputable def vectorPotential {d} (c : SpeedOfLight) :
 
 ## Sources
 
-- [Physlib/Electromagnetism/TemperedDistributional/VectorPotential.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/VectorPotential.lean)
+- [Physlib/Electromagnetism/TemperedDistributional/VectorPotential.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/VectorPotential.lean)

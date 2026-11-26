@@ -8,7 +8,7 @@ proof: formalized
 
 # Lorentz covariance of the causal kernel on the Fourier side
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Covariance.Fourier`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean): 20 declarations, 12 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Covariance.Fourier`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean): 20 declarations, 12 with a docstring.
 
 > The Fourier transform of the causal propagator kernel is invariant under orthochronous Lorentz
 > transformations acting on the frequencies by the inverse transpose. It is odd under the others.
@@ -59,7 +59,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Covariance.Fourier`, [
 > - `fourierDist_temperedCausal_freqAct` : invariance under orthochronous transformations.
 > - `fourierDist_temperedCausal_freqAct_of_not` : sign change under the others.
 
-**`KleinGordon.lorentzSplit`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L86).
+**`KleinGordon.lorentzSplit`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L86).
 
 > A Lorentz transformation as a linear equivalence of the split space.
 
@@ -67,14 +67,14 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Covariance.Fourier`, [
 def lorentzSplit (Λ : LorentzGroup d) : SplitSpace d ≃L[ℝ] SplitSpace d
 ```
 
-**`KleinGordon.lorentzSplit_apply`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L89).
+**`KleinGordon.lorentzSplit_apply`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L89).
 
 ```lean
 lemma lorentzSplit_apply (Λ : LorentzGroup d) (ξ : SplitSpace d) :
     lorentzSplit Λ ξ = (splitEquiv d).symm (lorentzCLE Λ (splitEquiv d ξ))
 ```
 
-**`KleinGordon.abs_det_lorentzSplit`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L93).
+**`KleinGordon.abs_det_lorentzSplit`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L93).
 
 > The determinant of a Lorentz transformation of the split space has absolute value one.
 
@@ -83,7 +83,7 @@ lemma abs_det_lorentzSplit (Λ : LorentzGroup d) :
     |LinearMap.det (lorentzSplit Λ : SplitSpace d →ₗ[ℝ] SplitSpace d)| = 1
 ```
 
-**`KleinGordon.freqAct`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L102).
+**`KleinGordon.freqAct`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L102).
 
 > **The action on frequencies.** A Lorentz transformation acts on Schwartz functions of the
 > frequency by the inverse transpose.
@@ -92,14 +92,14 @@ lemma abs_det_lorentzSplit (Λ : LorentzGroup d) :
 def freqAct (Λ : LorentzGroup d) : 𝓢(SplitSpace d, ℂ) →L[ℂ] 𝓢(SplitSpace d, ℂ)
 ```
 
-**`KleinGordon.freqAct_apply`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L105).
+**`KleinGordon.freqAct_apply`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L105).
 
 ```lean
 lemma freqAct_apply (Λ : LorentzGroup d) (g : 𝓢(SplitSpace d, ℂ)) (ξ : SplitSpace d) :
     freqAct Λ g ξ = g (Fourier.invTranspose (lorentzSplit Λ) ξ)
 ```
 
-**`KleinGordon.fourier_freqAct`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L109).
+**`KleinGordon.fourier_freqAct`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L109).
 
 > **The transform of the transformed function.**
 
@@ -108,7 +108,7 @@ lemma fourier_freqAct (Λ : LorentzGroup d) (g : 𝓢(SplitSpace d, ℂ)) (ξ : 
     𝓕 (freqAct Λ g) ξ = 𝓕 g (lorentzSplit Λ ξ)
 ```
 
-**`KleinGordon.partSource`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L118).
+**`KleinGordon.partSource`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L118).
 
 > The real or imaginary part of a complex Schwartz function of the split space as a real
 > Schwartz function of spacetime.
@@ -117,14 +117,14 @@ lemma fourier_freqAct (Λ : LorentzGroup d) (g : 𝓢(SplitSpace d, ℂ)) (ξ : 
 def partSource (part : ℂ →L[ℝ] ℝ) : 𝓢(SplitSpace d, ℂ) →L[ℝ] 𝓢(SpaceTime d, ℝ)
 ```
 
-**`KleinGordon.partSource_apply`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L122).
+**`KleinGordon.partSource_apply`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L122).
 
 ```lean
 lemma partSource_apply (part : ℂ →L[ℝ] ℝ) (h : 𝓢(SplitSpace d, ℂ)) (x : SpaceTime d) :
     partSource part h x = part (h ((splitEquiv d).symm x))
 ```
 
-**`KleinGordon.fourierDist`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L127).
+**`KleinGordon.fourierDist`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L127).
 
 > **The Fourier transform of a tempered functional.** It sends `g` to the functional applied to
 > the real and the imaginary part of `𝓕 g`.
@@ -133,7 +133,7 @@ lemma partSource_apply (part : ℂ →L[ℝ] ℝ) (h : 𝓢(SplitSpace d, ℂ)) 
 def fourierDist (T : 𝓢(SpaceTime d, ℝ) →L[ℝ] ℝ) (g : 𝓢(SplitSpace d, ℂ)) : ℂ
 ```
 
-**`KleinGordon.partSource_lorentz`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L130).
+**`KleinGordon.partSource_lorentz`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L130).
 
 ```lean
 lemma partSource_lorentz (part : ℂ →L[ℝ] ℝ) (Λ : LorentzGroup d) (h : 𝓢(SplitSpace d, ℂ)) :
@@ -141,7 +141,7 @@ lemma partSource_lorentz (part : ℂ →L[ℝ] ℝ) (Λ : LorentzGroup d) (h : �
       SchwartzMap.compCLMOfContinuousLinearEquiv ℝ (lorentzCLE Λ) (partSource part h)
 ```
 
-**`KleinGordon.fourierDist_freqAct`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L138).
+**`KleinGordon.fourierDist_freqAct`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L138).
 
 > **Covariance of a functional transports to its transform.** If `T (φ ∘ Λ) = c * T φ` then
 > the transform of `T` at `g ∘ (Λ⁻¹)ᵀ` is `c` times its value at `g`.
@@ -153,7 +153,7 @@ lemma fourierDist_freqAct (T : 𝓢(SpaceTime d, ℝ) →L[ℝ] ℝ) (Λ : Loren
     (g : 𝓢(SplitSpace d, ℂ)) : fourierDist T (freqAct Λ g) = c * fourierDist T g
 ```
 
-**`KleinGordon.temperedAdvanced`**, a def, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L151).
+**`KleinGordon.temperedAdvanced`**, a def, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L151).
 
 > The advanced kernel as a tempered functional: the retarded one reflected through the origin.
 
@@ -161,7 +161,7 @@ lemma fourierDist_freqAct (T : 𝓢(SpaceTime d, ℝ) →L[ℝ] ℝ) (Λ : Loren
 def temperedAdvanced (d : ℕ) (m : ℝ) : 𝓢(SpaceTime d, ℝ) →L[ℝ] ℝ
 ```
 
-**`KleinGordon.temperedCausal`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L156).
+**`KleinGordon.temperedCausal`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L156).
 
 > **The tempered causal propagator kernel.**
 
@@ -169,7 +169,7 @@ def temperedAdvanced (d : ℕ) (m : ℝ) : 𝓢(SpaceTime d, ℝ) →L[ℝ] ℝ
 def temperedCausal (d : ℕ) (m : ℝ) : 𝓢(SpaceTime d, ℝ) →L[ℝ] ℝ
 ```
 
-**`KleinGordon.compCLM_neg_ofTestFunction`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L159).
+**`KleinGordon.compCLM_neg_ofTestFunction`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L159).
 
 ```lean
 lemma compCLM_neg_ofTestFunction (φ : 𝓓((⊤ : Opens (SpaceTime d)), ℝ)) :
@@ -177,21 +177,21 @@ lemma compCLM_neg_ofTestFunction (φ : 𝓓((⊤ : Opens (SpaceTime d)), ℝ)) :
       (ofTestFunction φ) = ofTestFunction (actTestFunction (pointReflection 0)⁻¹ φ)
 ```
 
-**`KleinGordon.temperedAdvanced_ofTestFunction`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L165).
+**`KleinGordon.temperedAdvanced_ofTestFunction`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L165).
 
 ```lean
 lemma temperedAdvanced_ofTestFunction (m : ℝ) (φ : 𝓓((⊤ : Opens (SpaceTime d)), ℝ)) :
     temperedAdvanced d m (ofTestFunction φ) = advancedPointSource m (0 : SpaceTime d) φ
 ```
 
-**`KleinGordon.temperedCausal_ofTestFunction`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L175).
+**`KleinGordon.temperedCausal_ofTestFunction`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L175).
 
 ```lean
 lemma temperedCausal_ofTestFunction (m : ℝ) (φ : 𝓓((⊤ : Opens (SpaceTime d)), ℝ)) :
     temperedCausal d m (ofTestFunction φ) = causalKernel m φ
 ```
 
-**`KleinGordon.compCLM_lorentz_ofTestFunction`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L181).
+**`KleinGordon.compCLM_lorentz_ofTestFunction`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L181).
 
 ```lean
 lemma compCLM_lorentz_ofTestFunction (Λ : LorentzGroup d)
@@ -200,7 +200,7 @@ lemma compCLM_lorentz_ofTestFunction (Λ : LorentzGroup d)
       ofTestFunction (actTestFunction (⟨0, Λ⟩ : PoincareGroup d)⁻¹ φ)
 ```
 
-**`KleinGordon.temperedCausal_comp`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L192).
+**`KleinGordon.temperedCausal_comp`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L192).
 
 > **Covariance of the tempered causal kernel.** If the causal kernel on test functions picks up
 > the factor `c` under `Λ` then so does its tempered extension on Schwartz functions.
@@ -214,7 +214,7 @@ lemma temperedCausal_comp (m : ℝ) (Λ : LorentzGroup d) (c : ℝ)
       c * temperedCausal d m φ
 ```
 
-**`KleinGordon.fourierDist_temperedCausal_freqAct`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L209).
+**`KleinGordon.fourierDist_temperedCausal_freqAct`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L209).
 
 > **The causal kernel on the Fourier side is Lorentz invariant.** Its transform is unchanged
 > when an orthochronous Lorentz transformation acts on the frequencies by the inverse transpose.
@@ -225,7 +225,7 @@ lemma fourierDist_temperedCausal_freqAct (m : ℝ) {Λ : LorentzGroup d}
     fourierDist (temperedCausal d m) (freqAct Λ g) = fourierDist (temperedCausal d m) g
 ```
 
-**`KleinGordon.fourierDist_temperedCausal_freqAct_of_not`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L221).
+**`KleinGordon.fourierDist_temperedCausal_freqAct_of_not`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean#L221).
 
 > **The causal kernel on the Fourier side is odd under time reversal.** Its transform changes
 > sign when a non-orthochronous Lorentz transformation acts on the frequencies.
@@ -244,4 +244,4 @@ lemma fourierDist_temperedCausal_freqAct_of_not (m : ℝ) {Λ : LorentzGroup d}
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Elementary rules for the gradient
 
-The module `Physlib.Mathematics.Calculus.Gradient`, [Physlib/Mathematics/Calculus/Gradient.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean): 17 declarations, 17 with a docstring.
+The module `Physlib.Mathematics.Calculus.Gradient`, [Physlib/Mathematics/Calculus/Gradient.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean): 17 declarations, 17 with a docstring.
 
 > Algebraic and chain rules for gradients of classical-mechanical observables.
 
@@ -60,7 +60,7 @@ The module `Physlib.Mathematics.Calculus.Gradient`, [Physlib/Mathematics/Calculu
 > additive over differentiable functions, multiplying by a constant scales it, and products satisfy
 > the Leibniz rule.
 
-**`HasGradientAt.add`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean#L87).
+**`HasGradientAt.add`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean#L87).
 
 > The gradient of a sum is the sum of the gradients.
 
@@ -69,7 +69,7 @@ lemma HasGradientAt.add (hf : HasGradientAt f f' x) (hg : HasGradientAt g g' x) 
     HasGradientAt (fun y => f y + g y) (f' + g') x
 ```
 
-**`HasGradientAt.sub`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean#L94).
+**`HasGradientAt.sub`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean#L94).
 
 > The gradient of a difference is the difference of the gradients.
 
@@ -78,7 +78,7 @@ lemma HasGradientAt.sub (hf : HasGradientAt f f' x) (hg : HasGradientAt g g' x) 
     HasGradientAt (fun y => f y - g y) (f' - g') x
 ```
 
-**`HasGradientAt.mul`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean#L101).
+**`HasGradientAt.mul`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean#L101).
 
 > The gradient of a product is given by the Leibniz rule.
 
@@ -87,7 +87,7 @@ lemma HasGradientAt.mul (hf : HasGradientAt f f' x) (hg : HasGradientAt g g' x) 
     HasGradientAt (fun y => f y * g y) (f x • g' + g x • f') x
 ```
 
-**`HasGradientAt.const_mul`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean#L108).
+**`HasGradientAt.const_mul`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean#L108).
 
 > The gradient of a constant multiple is the constant multiple of the gradient.
 
@@ -96,7 +96,7 @@ lemma HasGradientAt.const_mul (c : ℝ) (hf : HasGradientAt f f' x) :
     HasGradientAt (fun y => c * f y) (c • f') x
 ```
 
-**`gradient_add_const`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean#L115).
+**`gradient_add_const`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean#L115).
 
 > Adding a constant to a function does not change its gradient.
 
@@ -105,7 +105,7 @@ lemma gradient_add_const {f : F → ℝ} (c : ℝ) (x : F) :
     gradient (fun y => f y + c) x = gradient f x
 ```
 
-**`gradient_add`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean#L121).
+**`gradient_add`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean#L121).
 
 > The gradient of a sum of differentiable functions is the sum of their gradients.
 
@@ -115,7 +115,7 @@ lemma gradient_add {f g : F → ℝ} {x : F} (hf : DifferentiableAt ℝ f x)
     gradient (fun y => f y + g y) x = gradient f x + gradient g x
 ```
 
-**`gradient_const_mul`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean#L128).
+**`gradient_const_mul`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean#L128).
 
 > The gradient of a constant multiple of a differentiable function is the constant multiple of
 > the gradient.
@@ -127,7 +127,7 @@ lemma gradient_const_mul {f : F → ℝ} {x : F} (c : ℝ) (hf : DifferentiableA
 
 ## B. The chain rule
 
-**`HasDerivAt.comp_hasGradientAt`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean#L140).
+**`HasDerivAt.comp_hasGradientAt`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean#L140).
 
 > The gradient of `y ↦ φ (f y)` is `φ'` times the gradient of `f`, for `φ'` the derivative of
 > `φ` at `f x`.
@@ -142,7 +142,7 @@ lemma HasDerivAt.comp_hasGradientAt {φ : ℝ → ℝ} {φ' : ℝ} (hf : HasGrad
 > The quadratic form `y ↦ ⟪y, y⟫` has derivative `v ↦ 2 ⟪x, v⟫` at `x`, whose Riesz representative
 > is `2 • x`.
 
-**`hasGradientAt_inner_left`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean#L156).
+**`hasGradientAt_inner_left`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean#L156).
 
 > The gradient of `y ↦ ⟪a, y⟫` is `a`.
 
@@ -150,7 +150,7 @@ lemma HasDerivAt.comp_hasGradientAt {φ : ℝ → ℝ} {φ' : ℝ} (hf : HasGrad
 lemma hasGradientAt_inner_left (a x : F) : HasGradientAt (fun y : F => ⟪a, y⟫_ℝ) a x
 ```
 
-**`hasGradientAt_inner_right`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean#L161).
+**`hasGradientAt_inner_right`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean#L161).
 
 > The gradient of `y ↦ ⟪y, a⟫` is `a`.
 
@@ -158,7 +158,7 @@ lemma hasGradientAt_inner_left (a x : F) : HasGradientAt (fun y : F => ⟪a, y�
 lemma hasGradientAt_inner_right (a x : F) : HasGradientAt (fun y : F => ⟪y, a⟫_ℝ) a x
 ```
 
-**`gradient_inner_self`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean#L166).
+**`gradient_inner_self`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean#L166).
 
 > The gradient of `y ↦ ⟪y, y⟫` at `x` is `2 • x`.
 
@@ -166,7 +166,7 @@ lemma hasGradientAt_inner_right (a x : F) : HasGradientAt (fun y : F => ⟪y, a�
 lemma gradient_inner_self (x : F) : gradient (fun y : F => ⟪y, y⟫_ℝ) x = (2 : ℝ) • x
 ```
 
-**`hasGradientAt_inner_self`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean#L174).
+**`hasGradientAt_inner_self`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean#L174).
 
 > The gradient of `y ↦ ⟪y, y⟫` is `2 • y`.
 
@@ -174,7 +174,7 @@ lemma gradient_inner_self (x : F) : gradient (fun y : F => ⟪y, y⟫_ℝ) x = (
 lemma hasGradientAt_inner_self (x : F) : HasGradientAt (fun y : F => ⟪y, y⟫_ℝ) ((2 : ℝ) • x) x
 ```
 
-**`gradient_const_mul_inner_self`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean#L179).
+**`gradient_const_mul_inner_self`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean#L179).
 
 > The gradient of `y ↦ c * ⟪y, y⟫` at `x` is `(2 * c) • x`.
 
@@ -185,7 +185,7 @@ lemma gradient_const_mul_inner_self (c : ℝ) (x : F) :
 
 ## D. The norm
 
-**`hasGradientAt_norm`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean#L191).
+**`hasGradientAt_norm`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean#L191).
 
 > Away from the origin, the gradient of the norm is the unit vector `‖x‖⁻¹ • x`.
 
@@ -198,7 +198,7 @@ lemma hasGradientAt_norm (hx : x ≠ 0) : HasGradientAt (fun y : F => ‖y‖) (
 > The coordinate functional `y ↦ y i` on `EuclideanSpace ℝ ι` is the continuous linear map
 > `EuclideanSpace.proj i`, whose Riesz representative is the basis vector `EuclideanSpace.single i 1`.
 
-**`gradient_coord`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean#L211).
+**`gradient_coord`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean#L211).
 
 > The gradient of the `i`-th coordinate functional on Euclidean space is the `i`-th basis
 > vector.
@@ -208,7 +208,7 @@ lemma gradient_coord {ι : Type*} [Fintype ι] [DecidableEq ι] (i : ι) (x : Eu
     gradient (fun y : EuclideanSpace ℝ ι => y i) x = EuclideanSpace.single i 1
 ```
 
-**`hasGradientAt_coord`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean#L221).
+**`hasGradientAt_coord`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean#L221).
 
 > The gradient of the `i`-th coordinate functional on Euclidean space is the `i`-th basis
 > vector.
@@ -219,7 +219,7 @@ lemma hasGradientAt_coord {ι : Type*} [Fintype ι] [DecidableEq ι] (i : ι)
     HasGradientAt (fun y : EuclideanSpace ℝ ι => y i) (EuclideanSpace.single i 1) x
 ```
 
-**`gradient_comp_coord`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean#L229).
+**`gradient_comp_coord`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean#L229).
 
 > Chain rule for a function of one coordinate: the gradient of `y ↦ f (y i)` at `x` is
 > `f' • EuclideanSpace.single i 1`, where `f'` is the derivative of `f` at `x i`.
@@ -236,4 +236,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/Calculus/Gradient.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Gradient.lean)
+- [Physlib/Mathematics/Calculus/Gradient.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/Calculus/Gradient.lean)

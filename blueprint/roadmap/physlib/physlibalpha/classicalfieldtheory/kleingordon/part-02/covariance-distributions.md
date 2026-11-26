@@ -8,7 +8,7 @@ proof: formalized
 
 # Poincaré covariance for distributional sources
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Covariance.Distributions`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean): 17 declarations, 17 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Covariance.Distributions`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean): 17 declarations, 17 with a docstring.
 
 > The retarded and advanced solutions of compactly supported distributions are covariant.
 
@@ -49,7 +49,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Covariance.Distributio
 
 > - `retardedPointSource_actDist` : the retarded point source is covariant.
 
-**`KleinGordon.Solution.actTestFunction_testFieldEquiv`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L77).
+**`KleinGordon.Solution.actTestFunction_testFieldEquiv`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L77).
 
 > The action on test functions agrees with the action on test fields.
 
@@ -58,7 +58,7 @@ lemma actTestFunction_testFieldEquiv (g : PoincareGroup d) (f : TestField d ℝ)
     actTestFunction g (testFieldEquiv ℝ f) = testFieldEquiv ℝ (actTest g f)
 ```
 
-**`KleinGordon.Solution.testOperator_actTestFunction`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L83).
+**`KleinGordon.Solution.testOperator_actTestFunction`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L83).
 
 > The Klein–Gordon operator on test functions commutes with the Poincaré action.
 
@@ -69,7 +69,7 @@ lemma testOperator_actTestFunction (m : ℝ) (g : PoincareGroup d)
       actTestFunction g (Spacetime.testOperator m φ)
 ```
 
-**`KleinGordon.Solution.distributionOperator_actDist`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L95).
+**`KleinGordon.Solution.distributionOperator_actDist`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L95).
 
 > The Klein–Gordon operator on distributions commutes with the Poincaré action.
 
@@ -79,7 +79,7 @@ lemma distributionOperator_actDist {V : Type} [NormedAddCommGroup V] [NormedSpac
     distributionOperator m (actDist g T) = actDist g (distributionOperator m T)
 ```
 
-**`KleinGordon.Solution.actCompact`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L109).
+**`KleinGordon.Solution.actCompact`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L109).
 
 > The action of the Poincaré group on compactly supported distributions.
 
@@ -88,7 +88,7 @@ def actCompact (g : PoincareGroup d) (T : compactDistributions (SpaceTime d) V) 
     compactDistributions (SpaceTime d) V
 ```
 
-**`KleinGordon.Solution.actCompact_val`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L118).
+**`KleinGordon.Solution.actCompact_val`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L118).
 
 > The value of a transformed compactly supported distribution.
 
@@ -97,7 +97,7 @@ lemma actCompact_val (g : PoincareGroup d) (T : compactDistributions (SpaceTime 
     (actCompact g T : DistributionField d V) = actDist g T
 ```
 
-**`KleinGordon.Solution.retardedDistribution_actCompact`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L124).
+**`KleinGordon.Solution.retardedDistribution_actCompact`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L124).
 
 > The retarded solution of a distribution is covariant under orthochronous transformations.
 
@@ -107,7 +107,7 @@ lemma retardedDistribution_actCompact {g : PoincareGroup d} (hg : g.IsOrthochron
     retardedDistribution m (actCompact g T) = actDist g (retardedDistribution m T)
 ```
 
-**`KleinGordon.Solution.advancedDistribution_actCompact`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L136).
+**`KleinGordon.Solution.advancedDistribution_actCompact`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L136).
 
 > The advanced solution of a distribution is covariant under orthochronous transformations.
 
@@ -117,7 +117,7 @@ lemma advancedDistribution_actCompact {g : PoincareGroup d} (hg : g.IsOrthochron
     advancedDistribution m (actCompact g T) = actDist g (advancedDistribution m T)
 ```
 
-**`KleinGordon.Solution.retardedDistribution_actCompact_of_not`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L149).
+**`KleinGordon.Solution.retardedDistribution_actCompact_of_not`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L149).
 
 > A time reversal turns the retarded solution of the transformed source into the transformed
 > advanced solution.
@@ -128,7 +128,7 @@ lemma retardedDistribution_actCompact_of_not {g : PoincareGroup d} (hg : ¬ g.Is
     retardedDistribution m (actCompact g T) = actDist g (advancedDistribution m T)
 ```
 
-**`KleinGordon.Solution.advancedDistribution_actCompact_of_not`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L162).
+**`KleinGordon.Solution.advancedDistribution_actCompact_of_not`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L162).
 
 > A time reversal turns the advanced solution of the transformed source into the transformed
 > retarded solution.
@@ -139,7 +139,7 @@ lemma advancedDistribution_actCompact_of_not {g : PoincareGroup d} (hg : ¬ g.Is
     advancedDistribution m (actCompact g T) = actDist g (retardedDistribution m T)
 ```
 
-**`KleinGordon.Solution.deltaCompact`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L178).
+**`KleinGordon.Solution.deltaCompact`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L178).
 
 > The delta distribution at `p` as a compactly supported distribution.
 
@@ -147,7 +147,7 @@ lemma advancedDistribution_actCompact_of_not {g : PoincareGroup d} (hg : ¬ g.Is
 def deltaCompact (p : SpaceTime d) : compactDistributions (SpaceTime d) ℝ
 ```
 
-**`KleinGordon.Solution.actCompact_deltaCompact`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L184).
+**`KleinGordon.Solution.actCompact_deltaCompact`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L184).
 
 > The action sends the delta distribution at `p` to the delta distribution at `g p`.
 
@@ -156,7 +156,7 @@ lemma actCompact_deltaCompact (g : PoincareGroup d) (p : SpaceTime d) :
     actCompact g (deltaCompact p) = deltaCompact (g • p)
 ```
 
-**`KleinGordon.Solution.retardedPointSource_eq`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L191).
+**`KleinGordon.Solution.retardedPointSource_eq`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L191).
 
 > The retarded point source is the retarded solution of the delta distribution.
 
@@ -165,7 +165,7 @@ lemma retardedPointSource_eq (p : SpaceTime d) :
     retardedPointSource m p = retardedDistribution m (deltaCompact p)
 ```
 
-**`KleinGordon.Solution.advancedPointSource_eq`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L197).
+**`KleinGordon.Solution.advancedPointSource_eq`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L197).
 
 > The advanced point source is the advanced solution of the delta distribution.
 
@@ -174,7 +174,7 @@ lemma advancedPointSource_eq (p : SpaceTime d) :
     advancedPointSource m p = advancedDistribution m (deltaCompact p)
 ```
 
-**`KleinGordon.Solution.retardedPointSource_actDist`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L203).
+**`KleinGordon.Solution.retardedPointSource_actDist`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L203).
 
 > The retarded point source is covariant under orthochronous transformations.
 
@@ -184,7 +184,7 @@ lemma retardedPointSource_actDist {g : PoincareGroup d} (hg : g.IsOrthochronous)
     actDist g (retardedPointSource m p) = retardedPointSource m (g • p)
 ```
 
-**`KleinGordon.Solution.advancedPointSource_actDist`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L210).
+**`KleinGordon.Solution.advancedPointSource_actDist`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L210).
 
 > The advanced point source is covariant under orthochronous transformations.
 
@@ -194,7 +194,7 @@ lemma advancedPointSource_actDist {g : PoincareGroup d} (hg : g.IsOrthochronous)
     actDist g (advancedPointSource m p) = advancedPointSource m (g • p)
 ```
 
-**`KleinGordon.Solution.retardedPointSource_actDist_of_not`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L218).
+**`KleinGordon.Solution.retardedPointSource_actDist_of_not`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L218).
 
 > A time reversal turns the transformed retarded point source into the advanced point
 > source at the transformed point.
@@ -205,7 +205,7 @@ lemma retardedPointSource_actDist_of_not {g : PoincareGroup d} (hg : ¬ g.IsOrth
     actDist g (retardedPointSource m p) = advancedPointSource m (g • p)
 ```
 
-**`KleinGordon.Solution.advancedPointSource_actDist_of_not`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L226).
+**`KleinGordon.Solution.advancedPointSource_actDist_of_not`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean#L226).
 
 > A time reversal turns the transformed advanced point source into the retarded point source
 > at the transformed point.
@@ -228,4 +228,4 @@ lemma advancedPointSource_actDist_of_not {g : PoincareGroup d} (hg : ¬ g.IsOrth
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean)

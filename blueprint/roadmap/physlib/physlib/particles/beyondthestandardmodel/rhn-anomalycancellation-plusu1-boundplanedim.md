@@ -8,12 +8,12 @@ proof: formalized
 
 # Bound on plane dimension
 
-The module `Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.BoundPlaneDim`, [Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BoundPlaneDim.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BoundPlaneDim.lean): 3 declarations, 1 with a docstring.
+The module `Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.BoundPlaneDim`, [Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BoundPlaneDim.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BoundPlaneDim.lean): 3 declarations, 1 with a docstring.
 
 > We place an upper bound on the dimension of a plane of charges on which every point is a solution.
 > The upper bound is 7, proven in the theorem `plane_exists_dim_le_7`.
 
-**`SMRHN.PlusU1.ExistsPlane`**, a def, [line 28](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BoundPlaneDim.lean#L28).
+**`SMRHN.PlusU1.ExistsPlane`**, a def, [line 28](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BoundPlaneDim.lean#L28).
 
 > A proposition which is true if for a given `n`, a plane of charges of dimension `n` exists
 > in which each point is a solution.
@@ -22,14 +22,14 @@ The module `Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Plu
 def ExistsPlane (n : ℕ) : Prop
 ```
 
-**`SMRHN.PlusU1.exists_plane_exists_basis`**, a lemma, [line 32](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BoundPlaneDim.lean#L32).
+**`SMRHN.PlusU1.exists_plane_exists_basis`**, a lemma, [line 32](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BoundPlaneDim.lean#L32).
 
 ```lean
 lemma exists_plane_exists_basis {n : ℕ} (hE : ExistsPlane n) :
     ∃ (B : Fin 11 ⊕ Fin n → (PlusU1 3).Charges), LinearIndependent ℚ B
 ```
 
-**`SMRHN.PlusU1.plane_exists_dim_le_7`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BoundPlaneDim.lean#L51).
+**`SMRHN.PlusU1.plane_exists_dim_le_7`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BoundPlaneDim.lean#L51).
 
 ```lean
 lemma plane_exists_dim_le_7 {n : ℕ} (hn : ExistsPlane n) : n ≤ 7
@@ -45,4 +45,4 @@ lemma plane_exists_dim_le_7 {n : ℕ} (hn : ExistsPlane n) : n ≤ 7
 
 ## Sources
 
-- [Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BoundPlaneDim.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BoundPlaneDim.lean)
+- [Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BoundPlaneDim.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BoundPlaneDim.lean)

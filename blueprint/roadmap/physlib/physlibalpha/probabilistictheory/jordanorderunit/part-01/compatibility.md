@@ -8,7 +8,7 @@ proof: formalized
 
 # Compatible observables
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Compatibility`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean): 6 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Compatibility`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean): 6 declarations, 3 with a docstring.
 
 > Jordan compatibility of observables: their Jordan multiplication operators commute.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Compatibility`, [Ph
 
 ## A. The compatibility predicate
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanCompatible`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean#L55).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.IsJordanCompatible`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean#L55).
 
 > `a` and `b` are Jordan-compatible: their multiplication operators commute,
 > `L_a \circ L_b = L_b \circ L_a`. The Jordan-intrinsic substitute for "`a` and `b` commute", not
@@ -42,20 +42,20 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Compatibility`, [Ph
 def IsJordanCompatible (a b : E) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.isJordanCompatible_self`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean#L57).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.isJordanCompatible_self`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean#L57).
 
 ```lean
 lemma isJordanCompatible_self (a : E) : IsJordanCompatible a a
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.isJordanCompatible_comm`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean#L59).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.isJordanCompatible_comm`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean#L59).
 
 ```lean
 lemma isJordanCompatible_comm {a b : E} (h : IsJordanCompatible a b) :
     IsJordanCompatible b a
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.mulLeft_one_eq_id`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean#L63).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.mulLeft_one_eq_id`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean#L63).
 
 > `L_1` is the identity.
 
@@ -63,7 +63,7 @@ lemma isJordanCompatible_comm {a b : E} (h : IsJordanCompatible a b) :
 lemma mulLeft_one_eq_id : (L (1 : E) : E →ₗ[ℝ] E) = LinearMap.id
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.isJordanCompatible_one_left`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean#L67).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.isJordanCompatible_one_left`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean#L67).
 
 > The order unit is Jordan-compatible with everything: `L_1 = id` commutes with any operator.
 
@@ -71,7 +71,7 @@ lemma mulLeft_one_eq_id : (L (1 : E) : E →ₗ[ℝ] E) = LinearMap.id
 lemma isJordanCompatible_one_left (a : E) : IsJordanCompatible 1 a
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.isJordanCompatible_one_right`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean#L72).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.isJordanCompatible_one_right`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean#L72).
 
 ```lean
 lemma isJordanCompatible_one_right (a : E) : IsJordanCompatible a 1
@@ -83,4 +83,4 @@ lemma isJordanCompatible_one_right (a : E) : IsJordanCompatible a 1
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean)

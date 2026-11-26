@@ -8,11 +8,11 @@ proof: formalized
 
 # Proper Time
 
-The module `Physlib.Relativity.Special.ProperTime`, [Physlib/Relativity/Special/ProperTime.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/ProperTime.lean): 4 declarations, 1 with a docstring.
+The module `Physlib.Relativity.Special.ProperTime`, [Physlib/Relativity/Special/ProperTime.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/ProperTime.lean): 4 declarations, 1 with a docstring.
 
 > This file introduces 4d Minkowski spacetime.
 
-**`SpaceTime.properTime`**, a def, [line 33](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/ProperTime.lean#L33).
+**`SpaceTime.properTime`**, a def, [line 33](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/ProperTime.lean#L33).
 
 > The proper time from `q` to `p`. Defaults to zero if `p` and `q`
 > have a space-like separation.
@@ -21,7 +21,7 @@ The module `Physlib.Relativity.Special.ProperTime`, [Physlib/Relativity/Special/
 def properTime {d : ℕ} (q p : SpaceTime d) : ℝ
 ```
 
-**`SpaceTime.properTime_pos_ofTimeLike`**, a lemma, [line 36](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/ProperTime.lean#L36).
+**`SpaceTime.properTime_pos_ofTimeLike`**, a lemma, [line 36](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/ProperTime.lean#L36).
 
 ```lean
 lemma properTime_pos_ofTimeLike {d : ℕ} (q p : SpaceTime d)
@@ -29,7 +29,7 @@ lemma properTime_pos_ofTimeLike {d : ℕ} (q p : SpaceTime d)
     0 < properTime q p
 ```
 
-**`SpaceTime.properTime_zero_ofLightLike`**, a lemma, [line 43](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/ProperTime.lean#L43).
+**`SpaceTime.properTime_zero_ofLightLike`**, a lemma, [line 43](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/ProperTime.lean#L43).
 
 ```lean
 lemma properTime_zero_ofLightLike {d : ℕ} (q p : SpaceTime d)
@@ -37,7 +37,7 @@ lemma properTime_zero_ofLightLike {d : ℕ} (q p : SpaceTime d)
     properTime q p = 0
 ```
 
-**`SpaceTime.properTime_zero_ofSpaceLike`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/ProperTime.lean#L50).
+**`SpaceTime.properTime_zero_ofSpaceLike`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/ProperTime.lean#L50).
 
 ```lean
 lemma properTime_zero_ofSpaceLike {d : ℕ} (q p : SpaceTime d)
@@ -57,4 +57,4 @@ lemma properTime_zero_ofSpaceLike {d : ℕ} (q p : SpaceTime d)
 
 ## Sources
 
-- [Physlib/Relativity/Special/ProperTime.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/ProperTime.lean)
+- [Physlib/Relativity/Special/ProperTime.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/ProperTime.lean)

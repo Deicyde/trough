@@ -8,7 +8,7 @@ proof: formalized
 
 # Measurements with finitely many outcomes
 
-The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Finite`, [PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean): 12 declarations, 9 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Finite`, [PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean): 12 declarations, 9 with a docstring.
 
 > Measurements with finitely many outcomes are the families of effects summing to `1`.
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Finite`, [PhyslibAlpha/
 
 ## A. Observables of a finite classical system
 
-**`BoundedMeasurable.eq_sum_indicator`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L64).
+**`BoundedMeasurable.eq_sum_indicator`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L64).
 
 > An observable of a finite classical system is a combination of point indicators.
 
@@ -46,7 +46,7 @@ lemma eq_sum_indicator (f : BoundedMeasurable Ω) :
     f = ∑ x, f x • indicator {x} (measurableSet_singleton x)
 ```
 
-**`BoundedMeasurable.sum_indicator_singleton`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L71).
+**`BoundedMeasurable.sum_indicator_singleton`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L71).
 
 > The point indicators add up to the unit.
 
@@ -57,7 +57,7 @@ lemma sum_indicator_singleton :
 
 ## B. Normality is automatic
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.exists_le_add_smul_one`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L91).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.exists_le_add_smul_one`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L91).
 
 > An increasing sequence of functions on a finite set comes uniformly close to its least upper
 > bound.
@@ -68,7 +68,7 @@ lemma exists_le_add_smul_one {f : ℕ → BoundedMeasurable Ω} (hf : Monotone f
     ∃ n, g ≤ f n + ε • 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.isNormal_of_fintype`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L106).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.isNormal_of_fintype`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L106).
 
 > A channel from a finite classical system into an Archimedean system is normal.
 
@@ -78,7 +78,7 @@ lemma isNormal_of_fintype (Φ : Channel (BoundedMeasurable Ω) E) : Φ.IsNormal
 
 ## C. Measurements from their outcome effects
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.atomsChannel`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L128).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.atomsChannel`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L128).
 
 > The channel `f ↦ ∑ x, f x • a x` of a family of effects adding up to `1`.
 
@@ -87,7 +87,7 @@ noncomputable def atomsChannel (a : Ω → Effect E) (ha : ∑ x, (a x : E) = 1)
     Channel (BoundedMeasurable Ω) E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.ofAtoms`**, a def, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L139).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.ofAtoms`**, a def, [line 139](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L139).
 
 > The measurement of a family of effects adding up to `1`: the outcome `x` has effect `a x`.
 
@@ -95,28 +95,28 @@ noncomputable def atomsChannel (a : Ω → Effect E) (ha : ∑ x, (a x : E) = 1)
 noncomputable def ofAtoms (a : Ω → Effect E) (ha : ∑ x, (a x : E) = 1) : Measurement Ω E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.ofAtoms_toChannel_apply`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L144).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.ofAtoms_toChannel_apply`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L144).
 
 ```lean
 lemma ofAtoms_toChannel_apply (a : Ω → Effect E) (ha : ∑ x, (a x : E) = 1)
     (f : BoundedMeasurable Ω) : (ofAtoms a ha).toChannel f = ∑ x, f x • (a x : E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.coe_ofAtoms_apply`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L149).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.coe_ofAtoms_apply`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L149).
 
 ```lean
 lemma coe_ofAtoms_apply (a : Ω → Effect E) (ha : ∑ x, (a x : E) = 1) (s : Set Ω)
     (hs : MeasurableSet s) : (ofAtoms a ha s hs : E) = ∑ x, if x ∈ s then (a x : E) else 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.coe_ofAtoms_singleton`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L156).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.coe_ofAtoms_singleton`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L156).
 
 ```lean
 lemma coe_ofAtoms_singleton (a : Ω → Effect E) (ha : ∑ x, (a x : E) = 1) (x : Ω)
     (hx : MeasurableSet {x}) : (ofAtoms a ha {x} hx : E) = a x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.sum_singleton`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L163).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.sum_singleton`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L163).
 
 > The effects of the outcomes of a measurement add up to `1`.
 
@@ -125,7 +125,7 @@ lemma sum_singleton (M : Measurement Ω E) :
     ∑ x, (M {x} (measurableSet_singleton x) : E) = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.eq_ofAtoms`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L168).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.eq_ofAtoms`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L168).
 
 > A measurement with finitely many outcomes is the measurement of its outcome effects.
 
@@ -134,7 +134,7 @@ lemma eq_ofAtoms (M : Measurement Ω E) :
     M = ofAtoms (fun x => M {x} (measurableSet_singleton x)) M.sum_singleton
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.ext_of_singleton`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L175).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.ext_of_singleton`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean#L175).
 
 > Two measurements with finitely many outcomes agree when their outcome effects agree.
 
@@ -150,4 +150,4 @@ lemma ext_of_singleton {M N : Measurement Ω E}
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean)

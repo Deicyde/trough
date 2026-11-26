@@ -8,7 +8,7 @@ proof: formalized
 
 # Constant slice distributions
 
-The module `Physlib.SpaceAndTime.Space.ConstantSliceDist`, [Physlib/SpaceAndTime/Space/ConstantSliceDist.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean): 21 declarations, 2 with a docstring.
+The module `Physlib.SpaceAndTime.Space.ConstantSliceDist`, [Physlib/SpaceAndTime/Space/ConstantSliceDist.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean): 21 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -36,7 +36,7 @@ The module `Physlib.SpaceAndTime.Space.ConstantSliceDist`, [Physlib/SpaceAndTime
 
 ### A.1. Bounded condition for derivatives of Schwartz maps on slices
 
-**`Space.schwartzMap_slice_bound`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L78).
+**`Space.schwartzMap_slice_bound`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L78).
 
 ```lean
 lemma schwartzMap_slice_bound {n m} {d : ℕ} (i : Fin d.succ) :
@@ -50,7 +50,7 @@ lemma schwartzMap_slice_bound {n m} {d : ℕ} (i : Fin d.succ) :
 
 ### A.2. Integrability for of Schwartz maps on slices
 
-**`Space.schwartzMap_mul_iteratedFDeriv_integrable_slice_symm`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L145).
+**`Space.schwartzMap_mul_iteratedFDeriv_integrable_slice_symm`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L145).
 
 ```lean
 lemma schwartzMap_mul_iteratedFDeriv_integrable_slice_symm {d : ℕ} (n m : ℕ)
@@ -60,14 +60,14 @@ lemma schwartzMap_mul_iteratedFDeriv_integrable_slice_symm {d : ℕ} (n m : ℕ)
     ‖iteratedFDeriv ℝ n ⇑η ((slice i).symm (r, x))‖) volume
 ```
 
-**`Space.schwartzMap_integrable_slice_symm`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L168).
+**`Space.schwartzMap_integrable_slice_symm`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L168).
 
 ```lean
 lemma schwartzMap_integrable_slice_symm {d : ℕ} (i : Fin d.succ) (η : 𝓢(Space d.succ, ℝ))
     (x : Space d) : Integrable (fun r => η ((slice i).symm (r, x))) volume
 ```
 
-**`Space.schwartzMap_fderiv_integrable_slice_symm`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L174).
+**`Space.schwartzMap_fderiv_integrable_slice_symm`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L174).
 
 ```lean
 lemma schwartzMap_fderiv_integrable_slice_symm {d : ℕ} (η : 𝓢(Space d.succ, ℝ)) (x : Space d)
@@ -75,7 +75,7 @@ lemma schwartzMap_fderiv_integrable_slice_symm {d : ℕ} (η : 𝓢(Space d.succ
     Integrable (fun r => fderiv ℝ (fun x => η (((slice i).symm (r, x)))) x) volume
 ```
 
-**`Space.schwartzMap_fderiv_left_integrable_slice_symm`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L198).
+**`Space.schwartzMap_fderiv_left_integrable_slice_symm`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L198).
 
 ```lean
 lemma schwartzMap_fderiv_left_integrable_slice_symm {d : ℕ} (η : 𝓢(Space d.succ, ℝ)) (x : Space d)
@@ -83,7 +83,7 @@ lemma schwartzMap_fderiv_left_integrable_slice_symm {d : ℕ} (η : 𝓢(Space d
     Integrable (fun r => fderiv ℝ (fun r => η (((slice i).symm (r, x)))) r 1) volume
 ```
 
-**`Space.schwartzMap_iteratedFDeriv_norm_slice_symm_integrable`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L214).
+**`Space.schwartzMap_iteratedFDeriv_norm_slice_symm_integrable`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L214).
 
 ```lean
 lemma schwartzMap_iteratedFDeriv_norm_slice_symm_integrable {n} {d : ℕ} (η : 𝓢(Space d.succ, ℝ))
@@ -91,7 +91,7 @@ lemma schwartzMap_iteratedFDeriv_norm_slice_symm_integrable {n} {d : ℕ} (η : 
     Integrable (fun r => ‖iteratedFDeriv ℝ n ⇑η (((slice i).symm (r, x)))‖) volume
 ```
 
-**`Space.schwartzMap_iteratedFDeriv_slice_symm_integrable`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L220).
+**`Space.schwartzMap_iteratedFDeriv_slice_symm_integrable`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L220).
 
 ```lean
 lemma schwartzMap_iteratedFDeriv_slice_symm_integrable {n} {d : ℕ} (η : 𝓢(Space d.succ, ℝ))
@@ -101,7 +101,7 @@ lemma schwartzMap_iteratedFDeriv_slice_symm_integrable {n} {d : ℕ} (η : 𝓢(
 
 ### A.3. Continiuity of integrations of slices of Schwartz maps
 
-**`Space.continuous_schwartzMap_slice_integral`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L237).
+**`Space.continuous_schwartzMap_slice_integral`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L237).
 
 ```lean
 lemma continuous_schwartzMap_slice_integral {d} (i : Fin d.succ) (η : 𝓢(Space d.succ, ℝ)) :
@@ -110,7 +110,7 @@ lemma continuous_schwartzMap_slice_integral {d} (i : Fin d.succ) (η : 𝓢(Spac
 
 ### A.4. Derivative of integrations of slices of Schwartz maps
 
-**`Space.schwartzMap_slice_integral_hasFDerivAt`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L258).
+**`Space.schwartzMap_slice_integral_hasFDerivAt`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L258).
 
 ```lean
 lemma schwartzMap_slice_integral_hasFDerivAt {d : ℕ} (η : 𝓢(Space d.succ, ℝ)) (i : Fin d.succ)
@@ -121,7 +121,7 @@ lemma schwartzMap_slice_integral_hasFDerivAt {d : ℕ} (η : 𝓢(Space d.succ, 
 
 ### A.5. Differentiability as a slices of Schwartz maps
 
-**`Space.schwartzMap_slice_integral_differentiable`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L318).
+**`Space.schwartzMap_slice_integral_differentiable`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L318).
 
 ```lean
 lemma schwartzMap_slice_integral_differentiable {d : ℕ} (η : 𝓢(Space d.succ, ℝ))
@@ -131,7 +131,7 @@ lemma schwartzMap_slice_integral_differentiable {d : ℕ} (η : 𝓢(Space d.suc
 
 ### A.6. Smoothness as slices of Schwartz maps
 
-**`Space.schwartzMap_slice_integral_contDiff`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L329).
+**`Space.schwartzMap_slice_integral_contDiff`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L329).
 
 ```lean
 lemma schwartzMap_slice_integral_contDiff {d : ℕ} (n : ℕ) (η : 𝓢(Space d.succ, ℝ))
@@ -141,7 +141,7 @@ lemma schwartzMap_slice_integral_contDiff {d : ℕ} (n : ℕ) (η : 𝓢(Space d
 
 ### A.7. Iterated derivatives of integrations of slices of Schwartz maps
 
-**`Space.schwartzMap_slice_integral_iteratedFDeriv_apply`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L375).
+**`Space.schwartzMap_slice_integral_iteratedFDeriv_apply`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L375).
 
 ```lean
 lemma schwartzMap_slice_integral_iteratedFDeriv_apply {d : ℕ} (n : ℕ) (η : 𝓢(Space d.succ, ℝ))
@@ -151,7 +151,7 @@ lemma schwartzMap_slice_integral_iteratedFDeriv_apply {d : ℕ} (n : ℕ) (η : 
       (fun j => (slice i).symm (0, y j))
 ```
 
-**`Space.schwartzMap_slice_integral_iteratedFDeriv`**, a lemma, [line 432](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L432).
+**`Space.schwartzMap_slice_integral_iteratedFDeriv`**, a lemma, [line 432](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L432).
 
 ```lean
 lemma schwartzMap_slice_integral_iteratedFDeriv {d : ℕ} (n : ℕ) (η : 𝓢(Space d.succ, ℝ))
@@ -162,7 +162,7 @@ lemma schwartzMap_slice_integral_iteratedFDeriv {d : ℕ} (n : ℕ) (η : 𝓢(S
       (ContinuousLinearMap.prod (0 : Space d →L[ℝ] ℝ) (ContinuousLinearMap.id ℝ (Space d))))
 ```
 
-**`Space.schwartzMap_slice_integral_iteratedFDeriv_norm_le`**, a lemma, [line 443](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L443).
+**`Space.schwartzMap_slice_integral_iteratedFDeriv_norm_le`**, a lemma, [line 443](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L443).
 
 ```lean
 lemma schwartzMap_slice_integral_iteratedFDeriv_norm_le {d : ℕ} (n : ℕ) (η : 𝓢(Space d.succ, ℝ))
@@ -174,7 +174,7 @@ lemma schwartzMap_slice_integral_iteratedFDeriv_norm_le {d : ℕ} (n : ℕ) (η 
           (ContinuousLinearMap.id ℝ (Space d)))‖ ^ n
 ```
 
-**`Space.schwartzMap_mul_pow_slice_integral_iteratedFDeriv_norm_le`**, a lemma, [line 456](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L456).
+**`Space.schwartzMap_mul_pow_slice_integral_iteratedFDeriv_norm_le`**, a lemma, [line 456](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L456).
 
 ```lean
 lemma schwartzMap_mul_pow_slice_integral_iteratedFDeriv_norm_le {d : ℕ} (n m : ℕ) (i : Fin d.succ) :
@@ -191,7 +191,7 @@ lemma schwartzMap_mul_pow_slice_integral_iteratedFDeriv_norm_le {d : ℕ} (n m :
 
 ### A.8. The map integrating over one component of a Schwartz map
 
-**`Space.sliceSchwartz`**, a def, [line 520](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L520).
+**`Space.sliceSchwartz`**, a def, [line 520](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L520).
 
 > The continuous linear map taking a Schwartz map and integrating over the `i`th component,
 > to give a Schwartz map of one dimension lower.
@@ -201,7 +201,7 @@ def sliceSchwartz {d : ℕ} (i : Fin d.succ) :
     𝓢(Space d.succ, ℝ) →L[ℝ] 𝓢(Space d, ℝ)
 ```
 
-**`Space.sliceSchwartz_apply`**, a lemma, [line 553](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L553).
+**`Space.sliceSchwartz_apply`**, a lemma, [line 553](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L553).
 
 ```lean
 lemma sliceSchwartz_apply {d : ℕ} (i : Fin d.succ) (η : 𝓢(Space d.succ, ℝ)) (x : Space d) :
@@ -210,7 +210,7 @@ lemma sliceSchwartz_apply {d : ℕ} (i : Fin d.succ) (η : 𝓢(Space d.succ, �
 
 ## B. Constant slice distribution
 
-**`Space.constantSliceDist`**, a def, [line 564](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L564).
+**`Space.constantSliceDist`**, a def, [line 564](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L564).
 
 > Distributions on `Space d.succ` from distributions on `Space d` given a
 > direction `i`.
@@ -221,7 +221,7 @@ def constantSliceDist {M : Type} [NormedAddCommGroup M] [NormedSpace ℝ M] {d :
     ((Space d) →d[ℝ] M) →ₗ[ℝ] (Space d.succ) →d[ℝ] M
 ```
 
-**`Space.constantSliceDist_apply`**, a lemma, [line 574](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L574).
+**`Space.constantSliceDist_apply`**, a lemma, [line 574](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L574).
 
 ```lean
 lemma constantSliceDist_apply {M : Type} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -231,7 +231,7 @@ lemma constantSliceDist_apply {M : Type} [NormedAddCommGroup M] [NormedSpace ℝ
 
 ### B.1. Derivative of constant slice distributions
 
-**`Space.distDeriv_constantSliceDist_same`**, a lemma, [line 585](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L585).
+**`Space.distDeriv_constantSliceDist_same`**, a lemma, [line 585](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L585).
 
 ```lean
 lemma distDeriv_constantSliceDist_same {M : Type} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -239,7 +239,7 @@ lemma distDeriv_constantSliceDist_same {M : Type} [NormedAddCommGroup M] [Normed
     distDeriv i (constantSliceDist i f) = 0
 ```
 
-**`Space.distDeriv_constantSliceDist_succAbove`**, a lemma, [line 615](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L615).
+**`Space.distDeriv_constantSliceDist_succAbove`**, a lemma, [line 615](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean#L615).
 
 ```lean
 lemma distDeriv_constantSliceDist_succAbove {M : Type} [NormedAddCommGroup M] [NormedSpace ℝ M]
@@ -255,4 +255,4 @@ lemma distDeriv_constantSliceDist_succAbove {M : Type} [NormedAddCommGroup M] [N
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/ConstantSliceDist.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean)
+- [Physlib/SpaceAndTime/Space/ConstantSliceDist.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/ConstantSliceDist.lean)

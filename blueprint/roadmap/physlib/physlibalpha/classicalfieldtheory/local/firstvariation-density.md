@@ -8,7 +8,7 @@ proof: formalized
 
 # First variation density formulas
 
-The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation.Density`, [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean): 11 declarations, 5 with a docstring; 3 private, not shown.
+The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation.Density`, [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean): 11 declarations, 5 with a docstring; 3 private, not shown.
 
 > Differentiation of the varied action density, pointwise and under the integral sign.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation.Density`, [Ph
 
 ## A. Differentiation under the integral sign
 
-**`ClassicalFieldTheory.Local.HasActionVariationDerivativeUnderIntegral`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L53).
+**`ClassicalFieldTheory.Local.HasActionVariationDerivativeUnderIntegral`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L53).
 
 > Differentiation of the varied action under the integral sign, packaged as a hypothesis.
 
@@ -40,7 +40,7 @@ def HasActionVariationDerivativeUnderIntegral (L : Lagrangian d m k)
     Prop
 ```
 
-**`ClassicalFieldTheory.Local.HasPointwiseLinearizedDensityFormula`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L61).
+**`ClassicalFieldTheory.Local.HasPointwiseLinearizedDensityFormula`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L61).
 
 > Pointwise linearization of the action density before integration by parts.
 
@@ -49,7 +49,7 @@ def HasPointwiseLinearizedDensityFormula (L : Lagrangian d m k)
     (f : Space d → EuclideanSpace ℝ (Fin m)) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.actionVariation_hasDerivAt_of_dominated_loc_of_deriv_le`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L70).
+**`ClassicalFieldTheory.Local.actionVariation_hasDerivAt_of_dominated_loc_of_deriv_le`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L70).
 
 > A direct bridge from Mathlib's dominated differentiation-under-the-integral theorem to the
 > local action variation. This isolates the measure-theoretic input needed to prove
@@ -74,7 +74,7 @@ lemma actionVariation_hasDerivAt_of_dominated_loc_of_deriv_le
     HasDerivAt (actionVariation L f η) (∫ x, F' 0 x) 0
 ```
 
-**`ClassicalFieldTheory.Local.HasDominatedVariationDerivativeNear`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L96).
+**`ClassicalFieldTheory.Local.HasDominatedVariationDerivativeNear`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L96).
 
 > A dominated bound for the pointwise first variation along the varied-field family near
 > `s = 0`. This packages the analytic domination needed to differentiate the action under the
@@ -86,7 +86,7 @@ def HasDominatedVariationDerivativeNear (L : Lagrangian d m k)
     (η : AdmissibleVariation d (EuclideanSpace ℝ (Fin m))) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.hasDominatedVariationDerivativeNear_of_continuous_coordDeriv`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L196).
+**`ClassicalFieldTheory.Local.hasDominatedVariationDerivativeNear_of_continuous_coordDeriv`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L196).
 
 > A concrete dominated bound for the varied first-variation density, obtained from continuity of
 > the jet-coordinate coefficient family in `(s, x)`. The compact support of the iterated derivatives
@@ -104,7 +104,7 @@ lemma hasDominatedVariationDerivativeNear_of_continuous_coordDeriv
 
 ## B. Pointwise linearization
 
-**`ClassicalFieldTheory.Local.hasDerivAt_actionDensity_variedField_zero_of_contDiff`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L258).
+**`ClassicalFieldTheory.Local.hasDerivAt_actionDensity_variedField_zero_of_contDiff`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L258).
 
 ```lean
 lemma hasDerivAt_actionDensity_variedField_zero_of_contDiff
@@ -114,7 +114,7 @@ lemma hasDerivAt_actionDensity_variedField_zero_of_contDiff
         (firstVariationDensity L f η x) 0
 ```
 
-**`ClassicalFieldTheory.Local.hasDerivAt_actionDensity_variedField_of_contDiff`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L280).
+**`ClassicalFieldTheory.Local.hasDerivAt_actionDensity_variedField_of_contDiff`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L280).
 
 ```lean
 lemma hasDerivAt_actionDensity_variedField_of_contDiff
@@ -124,7 +124,7 @@ lemma hasDerivAt_actionDensity_variedField_of_contDiff
       (firstVariationDensity L (variedField f η s) η x) s
 ```
 
-**`ClassicalFieldTheory.Local.hasPointwiseLinearizedDensityFormula_of_contDiff`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L300).
+**`ClassicalFieldTheory.Local.hasPointwiseLinearizedDensityFormula_of_contDiff`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L300).
 
 ```lean
 lemma hasPointwiseLinearizedDensityFormula_of_contDiff
@@ -132,7 +132,7 @@ lemma hasPointwiseLinearizedDensityFormula_of_contDiff
     HasPointwiseLinearizedDensityFormula L f
 ```
 
-**`ClassicalFieldTheory.Local.hasActionVariationDerivativeUnderIntegral_of_contDiff_of_dominatedVariation`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L306).
+**`ClassicalFieldTheory.Local.hasActionVariationDerivativeUnderIntegral_of_contDiff_of_dominatedVariation`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L306).
 
 ```lean
 lemma hasActionVariationDerivativeUnderIntegral_of_contDiff_of_dominatedVariation
@@ -143,7 +143,7 @@ lemma hasActionVariationDerivativeUnderIntegral_of_contDiff_of_dominatedVariatio
     HasActionVariationDerivativeUnderIntegral L f
 ```
 
-**`ClassicalFieldTheory.Local.hasActionVariationDerivativeUnderIntegral_of_contDiff_of_continuous_coordDeriv`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L341).
+**`ClassicalFieldTheory.Local.hasActionVariationDerivativeUnderIntegral_of_contDiff_of_continuous_coordDeriv`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L341).
 
 ```lean
 lemma hasActionVariationDerivativeUnderIntegral_of_contDiff_of_continuous_coordDeriv
@@ -155,7 +155,7 @@ lemma hasActionVariationDerivativeUnderIntegral_of_contDiff_of_continuous_coordD
     HasActionVariationDerivativeUnderIntegral L f
 ```
 
-**`ClassicalFieldTheory.Local.hasActionVariationDerivativeUnderIntegral_of_contDiff_of_regular`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L352).
+**`ClassicalFieldTheory.Local.hasActionVariationDerivativeUnderIntegral_of_contDiff_of_regular`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean#L352).
 
 ```lean
 lemma hasActionVariationDerivativeUnderIntegral_of_contDiff_of_regular
@@ -176,4 +176,4 @@ lemma hasActionVariationDerivativeUnderIntegral_of_contDiff_of_regular
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean)

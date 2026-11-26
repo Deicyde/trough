@@ -8,13 +8,13 @@ proof: formalized
 
 # Harmonic Wave
 
-The module `Physlib.ClassicalMechanics.WaveEquation.HarmonicWave`, [Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean): 5 declarations, 5 with a docstring.
+The module `Physlib.ClassicalMechanics.WaveEquation.HarmonicWave`, [Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean): 5 declarations, 5 with a docstring.
 
 > Time-harmonic waves.
 >
 > …
 
-**`ClassicalMechanics.WaveVector`**, an abbrev, [line 26](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean#L26).
+**`ClassicalMechanics.WaveVector`**, an abbrev, [line 26](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean#L26).
 
 > The wavevector which indicates a direction and has magnitude `2π/λ`.
 
@@ -22,7 +22,7 @@ The module `Physlib.ClassicalMechanics.WaveEquation.HarmonicWave`, [Physlib/Clas
 abbrev WaveVector (d : ℕ := 3)
 ```
 
-**`ClassicalMechanics.WaveVector.toDirection`**, a def, [line 29](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean#L29).
+**`ClassicalMechanics.WaveVector.toDirection`**, a def, [line 29](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean#L29).
 
 > Direction of a wavevector.
 
@@ -31,7 +31,7 @@ noncomputable def WaveVector.toDirection {d : ℕ} (k : WaveVector d) (h : k ≠
     Direction d
 ```
 
-**`ClassicalMechanics.harmonicWave`**, a def, [line 37](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean#L37).
+**`ClassicalMechanics.harmonicWave`**, a def, [line 37](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean#L37).
 
 > General form of time-harmonic wave in terms of angular frequency `ω` and wave vector `k`.
 
@@ -40,7 +40,7 @@ noncomputable def harmonicWave (a g : ℝ → Space d → ℝ) (ω : WaveVector 
     Time → Space d → ℝ
 ```
 
-**`ClassicalMechanics.transverseHarmonicPlaneWave`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean#L49).
+**`ClassicalMechanics.transverseHarmonicPlaneWave`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean#L49).
 
 > Transverse monochromatic time-harmonic plane wave where the direction of propagation
 > is taken to be `EuclideanSpace.single 2 1`. `f₀x` and `f₀y` are the respective amplitudes,
@@ -52,7 +52,7 @@ noncomputable def transverseHarmonicPlaneWave (k : WaveVector) (f₀x f₀y ω �
     Time → Space → EuclideanSpace ℝ (Fin 3)
 ```
 
-**`ClassicalMechanics.transverseHarmonicPlaneWave_eq_planeWave`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean#L58).
+**`ClassicalMechanics.transverseHarmonicPlaneWave_eq_planeWave`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean#L58).
 
 > The transverse harmonic planewave representation is equivalent to the general planewave
 > expression with `‖k‖ = ω/c`.
@@ -72,4 +72,4 @@ lemma transverseHarmonicPlaneWave_eq_planeWave {c : ℝ} {k : WaveVector} {f₀x
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean)
+- [Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean)

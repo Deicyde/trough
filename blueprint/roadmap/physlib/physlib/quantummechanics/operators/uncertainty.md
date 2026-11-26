@@ -8,7 +8,7 @@ proof: formalized
 
 # Uncertainty bounds for partial linear maps
 
-The module `Physlib.QuantumMechanics.Operators.Uncertainty`, [Physlib/QuantumMechanics/Operators/Uncertainty.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Uncertainty.lean): 14 declarations, 9 with a docstring; 1 private, not shown.
+The module `Physlib.QuantumMechanics.Operators.Uncertainty`, [Physlib/QuantumMechanics/Operators/Uncertainty.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Uncertainty.lean): 14 declarations, 9 with a docstring; 1 private, not shown.
 
 ## i. Overview
 
@@ -45,7 +45,7 @@ The module `Physlib.QuantumMechanics.Operators.Uncertainty`, [Physlib/QuantumMec
 
 ## A. Inner product lemmas
 
-**`LinearPMap.inner_im_of_commutator_eq`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L69).
+**`LinearPMap.inner_im_of_commutator_eq`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L69).
 
 ```lean
 lemma inner_im_of_commutator_eq {u v : H} {c : ℝ}
@@ -53,7 +53,7 @@ lemma inner_im_of_commutator_eq {u v : H} {c : ℝ}
     (⟪u, v⟫_ℂ).im = c / 2
 ```
 
-**`LinearPMap.inner_norm_sq_eq_re_sq_add_commutator_half_sq`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L80).
+**`LinearPMap.inner_norm_sq_eq_re_sq_add_commutator_half_sq`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L80).
 
 ```lean
 lemma inner_norm_sq_eq_re_sq_add_commutator_half_sq {u v : H} {c : ℝ}
@@ -61,7 +61,7 @@ lemma inner_norm_sq_eq_re_sq_add_commutator_half_sq {u v : H} {c : ℝ}
     ‖⟪u, v⟫_ℂ‖ ^ 2 = (⟪u, v⟫_ℂ).re ^ 2 + (c / 2) ^ 2
 ```
 
-**`LinearPMap.sub_expectation_commutator_eq_raw`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L86).
+**`LinearPMap.sub_expectation_commutator_eq_raw`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L86).
 
 ```lean
 lemma sub_expectation_commutator_eq_raw
@@ -73,7 +73,7 @@ lemma sub_expectation_commutator_eq_raw
       ⟪a, b⟫_ℂ - ⟪b, a⟫_ℂ
 ```
 
-**`LinearPMap.raw_commutator_eq_of_symmetric`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L109).
+**`LinearPMap.raw_commutator_eq_of_symmetric`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L109).
 
 ```lean
 lemma raw_commutator_eq_of_symmetric
@@ -85,7 +85,7 @@ lemma raw_commutator_eq_of_symmetric
     ⟪A ψ, B ⟨ψ, hψB⟩⟫_ℂ - ⟪B ⟨ψ, hψB⟩, A ψ⟫_ℂ = Complex.I * c
 ```
 
-**`LinearPMap.centeredCommutatorExpectation`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L132).
+**`LinearPMap.centeredCommutatorExpectation`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L132).
 
 > The scalar commutator of the centered vectors of `A` and `B` in the state `ψ`.
 
@@ -94,7 +94,7 @@ def centeredCommutatorExpectation (A B : H →ₗ.[ℂ] H)
     (ψ : A.domain) (hψB : (ψ : H) ∈ B.domain) : ℂ
 ```
 
-**`LinearPMap.rawCommutatorExpectation`**, a def, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L139).
+**`LinearPMap.rawCommutatorExpectation`**, a def, [line 139](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L139).
 
 > The expectation of the raw commutator `[A, B]` in the state `ψ`, with explicit second-order
 > domain witnesses.
@@ -105,7 +105,7 @@ def rawCommutatorExpectation (A B : H →ₗ.[ℂ] H)
     (hBA : A ψ ∈ B.domain) (hAB : B ⟨ψ, hψB⟩ ∈ A.domain) : ℂ
 ```
 
-**`LinearPMap.commutator_half_sq_le_mul_norm_sq`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L144).
+**`LinearPMap.commutator_half_sq_le_mul_norm_sq`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L144).
 
 ```lean
 lemma commutator_half_sq_le_mul_norm_sq {u v : H} {c : ℝ}
@@ -115,7 +115,7 @@ lemma commutator_half_sq_le_mul_norm_sq {u v : H} {c : ℝ}
 
 ## B. Centered commutator bounds
 
-**`LinearPMap.state_uncertainty_squared_of_centered_commutator`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L182).
+**`LinearPMap.state_uncertainty_squared_of_centered_commutator`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L182).
 
 > A centered commutator identity implies the squared Robertson uncertainty bound.
 
@@ -124,7 +124,7 @@ lemma state_uncertainty_squared_of_centered_commutator :
     (|c| / 2) ^ 2 ≤ variance A ψ * variance B ⟨ψ, hψB⟩
 ```
 
-**`LinearPMap.state_uncertainty_squared_with_covariance_of_centered_commutator`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L191).
+**`LinearPMap.state_uncertainty_squared_with_covariance_of_centered_commutator`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L191).
 
 > A centered commutator identity implies the Robertson–Schrödinger uncertainty bound.
 
@@ -134,7 +134,7 @@ lemma state_uncertainty_squared_with_covariance_of_centered_commutator :
       variance A ψ * variance B ⟨ψ, hψB⟩
 ```
 
-**`LinearPMap.state_uncertainty_of_centered_commutator`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L213).
+**`LinearPMap.state_uncertainty_of_centered_commutator`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L213).
 
 > A centered commutator identity implies the standard uncertainty bound.
 
@@ -145,7 +145,7 @@ lemma state_uncertainty_of_centered_commutator :
 
 ## C. Raw commutator bounds
 
-**`LinearPMap.inner_centered_commutator_of_raw_commutator`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L241).
+**`LinearPMap.inner_centered_commutator_of_raw_commutator`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L241).
 
 > A raw commutator expectation determines the centered commutator expectation.
 
@@ -154,7 +154,7 @@ lemma inner_centered_commutator_of_raw_commutator :
     centeredCommutatorExpectation A B ψ hψB = Complex.I * c
 ```
 
-**`LinearPMap.state_uncertainty_squared_of_raw_commutator`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L276).
+**`LinearPMap.state_uncertainty_squared_of_raw_commutator`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L276).
 
 > A raw commutator expectation implies the squared Robertson uncertainty bound.
 
@@ -163,7 +163,7 @@ lemma state_uncertainty_squared_of_raw_commutator :
     (|c| / 2) ^ 2 ≤ variance A ψ * variance B ⟨ψ, hψB⟩
 ```
 
-**`LinearPMap.state_uncertainty_squared_with_covariance_of_raw_commutator`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L282).
+**`LinearPMap.state_uncertainty_squared_with_covariance_of_raw_commutator`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L282).
 
 > A raw commutator expectation implies the squared uncertainty bound with covariance term.
 
@@ -173,7 +173,7 @@ lemma state_uncertainty_squared_with_covariance_of_raw_commutator :
       variance A ψ * variance B ⟨ψ, hψB⟩
 ```
 
-**`LinearPMap.state_uncertainty_of_raw_commutator`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L289).
+**`LinearPMap.state_uncertainty_of_raw_commutator`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Uncertainty.lean#L289).
 
 > A raw commutator expectation implies the standard uncertainty bound.
 
@@ -188,4 +188,4 @@ lemma state_uncertainty_of_raw_commutator :
 
 ## Sources
 
-- [Physlib/QuantumMechanics/Operators/Uncertainty.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Uncertainty.lean)
+- [Physlib/QuantumMechanics/Operators/Uncertainty.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/Uncertainty.lean)

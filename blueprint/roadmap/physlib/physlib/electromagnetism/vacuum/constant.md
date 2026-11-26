@@ -8,7 +8,7 @@ proof: formalized
 
 # The constant electric and magnetic fields
 
-The module `Physlib.Electromagnetism.Vacuum.Constant`, [Physlib/Electromagnetism/Vacuum/Constant.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/Constant.lean): 9 declarations, 1 with a docstring.
+The module `Physlib.Electromagnetism.Vacuum.Constant`, [Physlib/Electromagnetism/Vacuum/Constant.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Vacuum/Constant.lean): 9 declarations, 1 with a docstring.
 
 ## i. Overview
 
@@ -29,7 +29,7 @@ The module `Physlib.Electromagnetism.Vacuum.Constant`, [Physlib/Electromagnetism
 > The electromagnetic potential which gives rise to a constant electric field `E₀`
 > and a constant magnetic field matrix `B₀`.
 
-**`Electromagnetism.ElectromagneticPotential.constantEB`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/Constant.lean#L70).
+**`Electromagnetism.ElectromagneticPotential.constantEB`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Vacuum/Constant.lean#L70).
 
 > An electric potential which gives a given constant E-field and B-field.
 
@@ -43,7 +43,7 @@ noncomputable def constantEB {d : ℕ} (c : SpeedOfLight)
 
 > The potential is smooth.
 
-**`Electromagnetism.ElectromagneticPotential.constantEB_smooth`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/Constant.lean#L86).
+**`Electromagnetism.ElectromagneticPotential.constantEB_smooth`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Vacuum/Constant.lean#L86).
 
 ```lean
 lemma constantEB_smooth {c : SpeedOfLight}
@@ -56,7 +56,7 @@ lemma constantEB_smooth {c : SpeedOfLight}
 
 > The scalar potential of the electromagnetic potential is given by `-⟪E₀, x⟫`.
 
-**`Electromagnetism.ElectromagneticPotential.constantEB_scalarPotential`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/Constant.lean#L119).
+**`Electromagnetism.ElectromagneticPotential.constantEB_scalarPotential`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Vacuum/Constant.lean#L119).
 
 ```lean
 lemma constantEB_scalarPotential {c : SpeedOfLight}
@@ -70,7 +70,7 @@ lemma constantEB_scalarPotential {c : SpeedOfLight}
 
 > The vector potential of the electromagnetic potential is `(1 / 2) * ∑ j, B₀ (i, j) * x j `.
 
-**`Electromagnetism.ElectromagneticPotential.constantEB_vectorPotential`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/Constant.lean#L136).
+**`Electromagnetism.ElectromagneticPotential.constantEB_vectorPotential`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Vacuum/Constant.lean#L136).
 
 ```lean
 lemma constantEB_vectorPotential {c : SpeedOfLight}
@@ -82,7 +82,7 @@ lemma constantEB_vectorPotential {c : SpeedOfLight}
 
 ### D.1. Time derivative of the vector potential
 
-**`Electromagnetism.ElectromagneticPotential.constantEB_vectorPotential_time_deriv`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/Constant.lean#L153).
+**`Electromagnetism.ElectromagneticPotential.constantEB_vectorPotential_time_deriv`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Vacuum/Constant.lean#L153).
 
 ```lean
 lemma constantEB_vectorPotential_time_deriv {c : SpeedOfLight}
@@ -93,7 +93,7 @@ lemma constantEB_vectorPotential_time_deriv {c : SpeedOfLight}
 
 ### D.2. Space derivative of the vector potential
 
-**`Electromagnetism.ElectromagneticPotential.constantEB_vectorPotential_space_deriv`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/Constant.lean#L166).
+**`Electromagnetism.ElectromagneticPotential.constantEB_vectorPotential_space_deriv`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Vacuum/Constant.lean#L166).
 
 ```lean
 lemma constantEB_vectorPotential_space_deriv {c : SpeedOfLight}
@@ -105,7 +105,7 @@ lemma constantEB_vectorPotential_space_deriv {c : SpeedOfLight}
 
 ## E. The electric field
 
-**`Electromagnetism.ElectromagneticPotential.constantEB_electricField`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/Constant.lean#L195).
+**`Electromagnetism.ElectromagneticPotential.constantEB_electricField`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Vacuum/Constant.lean#L195).
 
 ```lean
 lemma constantEB_electricField {c : SpeedOfLight}
@@ -116,7 +116,7 @@ lemma constantEB_electricField {c : SpeedOfLight}
 
 ## F. The magnetic field
 
-**`Electromagnetism.ElectromagneticPotential.constantEB_magneticFieldMatrix`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/Constant.lean#L217).
+**`Electromagnetism.ElectromagneticPotential.constantEB_magneticFieldMatrix`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Vacuum/Constant.lean#L217).
 
 ```lean
 lemma constantEB_magneticFieldMatrix {c : SpeedOfLight}
@@ -127,7 +127,7 @@ lemma constantEB_magneticFieldMatrix {c : SpeedOfLight}
 
 ## G. Is extrema
 
-**`Electromagnetism.ElectromagneticPotential.constantEB_isExtrema`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/Constant.lean#L239).
+**`Electromagnetism.ElectromagneticPotential.constantEB_isExtrema`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Vacuum/Constant.lean#L239).
 
 ```lean
 lemma constantEB_isExtrema {𝓕 : FreeSpace}
@@ -142,4 +142,4 @@ lemma constantEB_isExtrema {𝓕 : FreeSpace}
 
 ## Sources
 
-- [Physlib/Electromagnetism/Vacuum/Constant.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/Constant.lean)
+- [Physlib/Electromagnetism/Vacuum/Constant.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Vacuum/Constant.lean)

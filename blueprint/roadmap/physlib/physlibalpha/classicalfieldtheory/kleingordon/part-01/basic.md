@@ -8,7 +8,7 @@ proof: formalized
 
 # The Klein–Gordon equation
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Basic`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Basic`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean): 5 declarations, 5 with a docstring.
 
 > This file sets up the Klein–Gordon equation on spacetime for smooth fields and for distributions.
 
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Basic`, [PhyslibAlpha/
 > function it is given by the same operator `testOperator m`, and `distributionOperator_apply`
 > states this.
 
-**`KleinGordon.Spacetime.operator`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean#L64).
+**`KleinGordon.Spacetime.operator`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean#L64).
 
 > The massive wave operator, with mass measured in inverse spacetime-length units.
 
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Basic`, [PhyslibAlpha/
 def operator (m : ℝ) : smoothFields d V →ₗ[ℝ] smoothFields d V
 ```
 
-**`KleinGordon.Spacetime.equation`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean#L68).
+**`KleinGordon.Spacetime.equation`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean#L68).
 
 > Klein–Gordon is a local equation on the existing smooth spacetime field class.
 
@@ -58,7 +58,7 @@ def operator (m : ℝ) : smoothFields d V →ₗ[ℝ] smoothFields d V
 def equation (m : ℝ) : LocalOperator (smoothFields d V)
 ```
 
-**`KleinGordon.Spacetime.distributionOperator`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean#L74).
+**`KleinGordon.Spacetime.distributionOperator`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean#L74).
 
 > The Klein–Gordon operator on native distributions.
 
@@ -66,7 +66,7 @@ def equation (m : ℝ) : LocalOperator (smoothFields d V)
 def distributionOperator (m : ℝ) : DistributionField d V →L[ℝ] DistributionField d V
 ```
 
-**`KleinGordon.Spacetime.testOperator`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean#L78).
+**`KleinGordon.Spacetime.testOperator`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean#L78).
 
 > The Klein–Gordon operator on native compact smooth test functions.
 
@@ -76,7 +76,7 @@ def testOperator (m : ℝ) :
       _root_.TestFunction (⊤ : TopologicalSpace.Opens (SpaceTime d)) ℝ ⊤
 ```
 
-**`KleinGordon.Spacetime.distributionOperator_apply`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean#L84).
+**`KleinGordon.Spacetime.distributionOperator_apply`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean#L84).
 
 > The positive second-order operator has the same transpose on test functions.
 
@@ -92,4 +92,4 @@ lemma distributionOperator_apply (m : ℝ) (T : DistributionField d V)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Green operators and causally supported fields
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GreenOperator.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean): 17 declarations, 17 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GreenOperator.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean): 17 declarations, 17 with a docstring.
 
 > Retarded and advanced Green operators of a local operator.
 
@@ -65,7 +65,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GreenOperator.Basic`, [PhyslibAlph
 >
 > Lemmas: `operator_mem_pastCompactFields`, `futureSupportedFields_le_pastCompactFields`.
 
-**`LocalOperator.spacelikeCompactFields`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L92).
+**`LocalOperator.spacelikeCompactFields`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L92).
 
 > Admissible fields with support contained in the causal hull of a compact set.
 
@@ -73,7 +73,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GreenOperator.Basic`, [PhyslibAlph
 def spacelikeCompactFields (_P : LocalOperator S) (C : CausalRelation M) : Submodule 𝕜 S
 ```
 
-**`LocalOperator.futureSupportedFields`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L111).
+**`LocalOperator.futureSupportedFields`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L111).
 
 > Fields supported in the future of a compact set. This is a strictly specified support class;
 > it is not identified with all past-compact fields without additional geometry.
@@ -82,7 +82,7 @@ def spacelikeCompactFields (_P : LocalOperator S) (C : CausalRelation M) : Submo
 def futureSupportedFields (_P : LocalOperator S) (C : CausalRelation M) : Submodule 𝕜 S
 ```
 
-**`LocalOperator.operator_mem_futureSupportedFields`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L129).
+**`LocalOperator.operator_mem_futureSupportedFields`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L129).
 
 > Locality preserves support in the causal future of a compact set.
 
@@ -92,7 +92,7 @@ lemma operator_mem_futureSupportedFields (C : CausalRelation M)
     P.operator u ∈ P.futureSupportedFields C
 ```
 
-**`LocalOperator.futureSupportedOperator`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L136).
+**`LocalOperator.futureSupportedOperator`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L136).
 
 > Restrict the field equation to fields supported to the future of compact sets.
 
@@ -101,7 +101,7 @@ def futureSupportedOperator (C : CausalRelation M) :
     P.futureSupportedFields C →ₗ[𝕜] P.futureSupportedFields C
 ```
 
-**`LocalOperator.spacelikeCompactSolution`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L142).
+**`LocalOperator.spacelikeCompactSolution`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L142).
 
 > Spacelike-compact homogeneous solutions.
 
@@ -109,7 +109,7 @@ def futureSupportedOperator (C : CausalRelation M) :
 def spacelikeCompactSolution (C : CausalRelation M) : Submodule 𝕜 S
 ```
 
-**`LocalOperator.operator_mem_spacelikeCompactFields`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L146).
+**`LocalOperator.operator_mem_spacelikeCompactFields`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L146).
 
 > Locality preserves spacelike-compact support.
 
@@ -119,7 +119,7 @@ lemma operator_mem_spacelikeCompactFields (C : CausalRelation M)
     P.operator u ∈ P.spacelikeCompactFields C
 ```
 
-**`LocalOperator.futureSupportedFields_le_spacelikeCompactFields`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L152).
+**`LocalOperator.futureSupportedFields_le_spacelikeCompactFields`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L152).
 
 > One-sided compactly generated support is spacelike compact.
 
@@ -128,7 +128,7 @@ lemma futureSupportedFields_le_spacelikeCompactFields (C : CausalRelation M) :
     P.futureSupportedFields C ≤ P.spacelikeCompactFields C
 ```
 
-**`LocalOperator.pastSupportedFields_le_spacelikeCompactFields`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L158).
+**`LocalOperator.pastSupportedFields_le_spacelikeCompactFields`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L158).
 
 > Past-supported compactly generated support is spacelike compact.
 
@@ -137,7 +137,7 @@ lemma pastSupportedFields_le_spacelikeCompactFields (C : CausalRelation M) :
     P.futureSupportedFields C.reverse ≤ P.spacelikeCompactFields C
 ```
 
-**`LocalOperator.spacelikeCompactOperator`**, a def, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L164).
+**`LocalOperator.spacelikeCompactOperator`**, a def, [line 164](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L164).
 
 > The field equation restricted to spacelike-compact admissible fields.
 
@@ -146,7 +146,7 @@ def spacelikeCompactOperator (C : CausalRelation M) :
     P.spacelikeCompactFields C →ₗ[𝕜] P.spacelikeCompactFields C
 ```
 
-**`GreenOperator.RetardedGreenOperator`**, a structure, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L181).
+**`GreenOperator.RetardedGreenOperator`**, a structure, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L181).
 
 > A retarded two-sided inverse on compact sources with future causal support.
 
@@ -163,7 +163,7 @@ structure RetardedGreenOperator (C : CausalRelation M) (P : LocalOperator S) whe
     C.causalFuture (tsupport (f.val : M → V))
 ```
 
-**`GreenOperator.AdvancedGreenOperator`**, a structure, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L193).
+**`GreenOperator.AdvancedGreenOperator`**, a structure, [line 193](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L193).
 
 > An advanced two-sided inverse on compact sources with past causal support.
 
@@ -180,7 +180,7 @@ structure AdvancedGreenOperator (C : CausalRelation M) (P : LocalOperator S) whe
     C.causalPast (tsupport (f.val : M → V))
 ```
 
-**`GreenOperator.GreenOperators`**, a structure, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L206).
+**`GreenOperator.GreenOperators`**, a structure, [line 206](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L206).
 
 > A pair of causal Green inverses for the same field equation.
 > Formal-adjoint hypotheses and support extensions are not implicit in this bundle.
@@ -193,7 +193,7 @@ structure GreenOperators (C : CausalRelation M) (P : LocalOperator S) where
   advanced : AdvancedGreenOperator C P
 ```
 
-**`GreenOperator.GreenOperators.reverse`**, a def, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L225).
+**`GreenOperator.GreenOperators.reverse`**, a def, [line 225](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L225).
 
 > Reverse time orientation and exchange the Green operators.
 
@@ -201,7 +201,7 @@ structure GreenOperators (C : CausalRelation M) (P : LocalOperator S) where
 def reverse : GreenOperators C.reverse P
 ```
 
-**`LocalOperator.pastCompactFields`**, a def, [line 241](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L241).
+**`LocalOperator.pastCompactFields`**, a def, [line 241](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L241).
 
 > The full past-compact admissible source and field space.
 
@@ -209,7 +209,7 @@ def reverse : GreenOperators C.reverse P
 def pastCompactFields (_P : LocalOperator S) (C : CausalRelation M) : Submodule 𝕜 S
 ```
 
-**`LocalOperator.operator_mem_pastCompactFields`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L255).
+**`LocalOperator.operator_mem_pastCompactFields`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L255).
 
 > Local field equations preserve past-compact support.
 
@@ -218,7 +218,7 @@ lemma operator_mem_pastCompactFields {u : S} (hu : u ∈ P.pastCompactFields C) 
     P.operator u ∈ P.pastCompactFields C
 ```
 
-**`LocalOperator.pastCompactOperator`**, a def, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L260).
+**`LocalOperator.pastCompactOperator`**, a def, [line 260](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L260).
 
 > The field equation restricted to the full past-compact support class.
 
@@ -226,7 +226,7 @@ lemma operator_mem_pastCompactFields {u : S} (hu : u ∈ P.pastCompactFields C) 
 def pastCompactOperator : P.pastCompactFields C →ₗ[𝕜] P.pastCompactFields C
 ```
 
-**`LocalOperator.futureSupportedFields_le_pastCompactFields`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L265).
+**`LocalOperator.futureSupportedFields_le_pastCompactFields`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean#L265).
 
 > Support in the future of one compact set is included in the full past-compact class.
 
@@ -242,4 +242,4 @@ lemma futureSupportedFields_le_pastCompactFields (hC : C.HasCompactCausalDiamond
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean)

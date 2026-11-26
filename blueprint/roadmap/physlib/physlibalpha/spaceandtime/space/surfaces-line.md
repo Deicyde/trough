@@ -8,7 +8,7 @@ proof: formalized
 
 # Line surfaces in `Space d`
 
-The module `PhyslibAlpha.SpaceAndTime.Space.Surfaces.Line`, [PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean): 16 declarations, 4 with a docstring.
+The module `PhyslibAlpha.SpaceAndTime.Space.Surfaces.Line`, [PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean): 16 declarations, 4 with a docstring.
 
 > The coordinate line in `Space d` with its measure, distribution and vanishing ambient volume.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.SpaceAndTime.Space.Surfaces.Line`, [PhyslibAlpha/SpaceA
 
 ## A. The definition of the line surface
 
-**`Space.line`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L60).
+**`Space.line`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L60).
 
 > The coordinate line embedded in `Space d`.
 
@@ -42,32 +42,32 @@ The module `PhyslibAlpha.SpaceAndTime.Space.Surfaces.Line`, [PhyslibAlpha/SpaceA
 def line (d : ℕ) [NeZero d] : ℝ → Space d
 ```
 
-**`Space.line_eq_smul_basis`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L63).
+**`Space.line_eq_smul_basis`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L63).
 
 ```lean
 lemma line_eq_smul_basis (d : ℕ) [NeZero d] :
     line d = fun r => r • basis (0 : Fin d)
 ```
 
-**`Space.line_injective`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L66).
+**`Space.line_injective`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L66).
 
 ```lean
 lemma line_injective (d : ℕ) [NeZero d] : Function.Injective (line d)
 ```
 
-**`Space.line_continuous`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L72).
+**`Space.line_continuous`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L72).
 
 ```lean
 lemma line_continuous (d : ℕ) [NeZero d] : Continuous (line d)
 ```
 
-**`Space.line_measurableEmbedding`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L76).
+**`Space.line_measurableEmbedding`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L76).
 
 ```lean
 lemma line_measurableEmbedding (d : ℕ) [NeZero d] : MeasurableEmbedding (line d)
 ```
 
-**`Space.norm_line`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L80).
+**`Space.norm_line`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L80).
 
 ```lean
 lemma norm_line (d : ℕ) [NeZero d] (r : ℝ) : ‖line d r‖ = ‖r‖
@@ -75,7 +75,7 @@ lemma norm_line (d : ℕ) [NeZero d] (r : ℝ) : ‖line d r‖ = ‖r‖
 
 ## B. The measure associated with the line
 
-**`Space.lineMeasure`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L91).
+**`Space.lineMeasure`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L91).
 
 > The measure on `Space d` corresponding to integration along a coordinate line.
 
@@ -83,7 +83,7 @@ lemma norm_line (d : ℕ) [NeZero d] (r : ℝ) : ‖line d r‖ = ‖r‖
 def lineMeasure (d : ℕ) [NeZero d] : Measure (Space d)
 ```
 
-**`Space.lineMeasure_hasTemperateGrowth`**, an instance, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L94).
+**`Space.lineMeasure_hasTemperateGrowth`**, an instance, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L94).
 
 ```lean
 instance lineMeasure_hasTemperateGrowth (d : ℕ) [NeZero d] :
@@ -92,7 +92,7 @@ instance lineMeasure_hasTemperateGrowth (d : ℕ) [NeZero d] :
 
 ## C. The distribution associated with the line
 
-**`Space.lineDist`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L115).
+**`Space.lineDist`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L115).
 
 > The distribution on `Space d` corresponding to integration along a coordinate line.
 > One can roughly think of this distribution as taking a test function `f` to its integral against
@@ -102,14 +102,14 @@ instance lineMeasure_hasTemperateGrowth (d : ℕ) [NeZero d] :
 def lineDist (d : ℕ) [NeZero d] : (Space d) →d[ℝ] ℝ
 ```
 
-**`Space.lineDist_apply_eq_integral_lineMeasure`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L118).
+**`Space.lineDist_apply_eq_integral_lineMeasure`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L118).
 
 ```lean
 lemma lineDist_apply_eq_integral_lineMeasure (d : ℕ) [NeZero d] (f : 𝓢(Space d, ℝ)) :
     lineDist d f = ∫ x, f x ∂lineMeasure d
 ```
 
-**`Space.lineDist_apply_eq_integral_volume`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L122).
+**`Space.lineDist_apply_eq_integral_volume`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L122).
 
 ```lean
 lemma lineDist_apply_eq_integral_volume (d : ℕ) [NeZero d] (f : 𝓢(Space d, ℝ)) :
@@ -118,7 +118,7 @@ lemma lineDist_apply_eq_integral_volume (d : ℕ) [NeZero d] (f : 𝓢(Space d, 
 
 ## D. The line has ambient volume zero
 
-**`Space.lineSubmodule`**, a def, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L134).
+**`Space.lineSubmodule`**, a def, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L134).
 
 > The linear subspace spanned by the coordinate line in `Space d`.
 
@@ -126,26 +126,26 @@ lemma lineDist_apply_eq_integral_volume (d : ℕ) [NeZero d] (f : 𝓢(Space d, 
 def lineSubmodule (d : ℕ) [NeZero d] : Submodule ℝ (Space d)
 ```
 
-**`Space.line_mem_lineSubmodule`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L137).
+**`Space.line_mem_lineSubmodule`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L137).
 
 ```lean
 lemma line_mem_lineSubmodule (d : ℕ) [NeZero d] (r : ℝ) : line d r ∈ lineSubmodule d
 ```
 
-**`Space.range_line_subset_lineSubmodule`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L141).
+**`Space.range_line_subset_lineSubmodule`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L141).
 
 ```lean
 lemma range_line_subset_lineSubmodule (d : ℕ) [NeZero d] :
     Set.range (line d) ⊆ (lineSubmodule d : Set (Space d))
 ```
 
-**`Space.lineSubmodule_ne_top`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L146).
+**`Space.lineSubmodule_ne_top`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L146).
 
 ```lean
 lemma lineSubmodule_ne_top (d : ℕ) [NeZero d] (hd : 2 ≤ d) : lineSubmodule d ≠ ⊤
 ```
 
-**`Space.volume_line_range`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L156).
+**`Space.volume_line_range`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean#L156).
 
 ```lean
 lemma volume_line_range (d : ℕ) [NeZero d] (hd : 2 ≤ d) :
@@ -163,4 +163,4 @@ lemma volume_line_range (d : ℕ) [NeZero d] (hd : 2 ≤ d) :
 
 ## Sources
 
-- [PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean)
+- [PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean)

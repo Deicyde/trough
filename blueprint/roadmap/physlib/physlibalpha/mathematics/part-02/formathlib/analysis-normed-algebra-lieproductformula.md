@@ -8,7 +8,7 @@ proof: formalized
 
 # The Lie product formula
 
-The module `PhyslibAlpha.Mathematics.ForMathlib.Analysis.Normed.Algebra.LieProductFormula`, [PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/LieProductFormula.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/LieProductFormula.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.Mathematics.ForMathlib.Analysis.Normed.Algebra.LieProductFormula`, [PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/LieProductFormula.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/LieProductFormula.lean): 4 declarations, 4 with a docstring.
 
 > The exponential of a sum as a limit of products of exponentials.
 
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.Mathematics.ForMathlib.Analysis.Normed.Algebra.LieProdu
 
 ## A. Norm bounds
 
-**`NormedSpace.norm_exp_le_exp_norm`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/LieProductFormula.lean#L64).
+**`NormedSpace.norm_exp_le_exp_norm`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/LieProductFormula.lean#L64).
 
 > The exponential is bounded by the real exponential of the norm, term by term in the
 > exponential series.
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.Mathematics.ForMathlib.Analysis.Normed.Algebra.LieProdu
 lemma norm_exp_le_exp_norm (x : 𝔸) : ‖exp x‖ ≤ Real.exp ‖x‖
 ```
 
-**`NormedSpace.norm_pow_sub_pow_le`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/LieProductFormula.lean#L75).
+**`NormedSpace.norm_pow_sub_pow_le`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/LieProductFormula.lean#L75).
 
 > The difference of two `n`-th powers, by telescoping:
 > `‖a ^ n − b ^ n‖ ≤ n M ^ n ‖a − b‖` when `‖a‖, ‖b‖ ≤ M` and `1 ≤ M`.
@@ -59,7 +59,7 @@ lemma norm_pow_sub_pow_le {a b : 𝔸} {M : ℝ} (hM : 1 ≤ M) (ha : ‖a‖ �
 
 ## B. The Lie product formula
 
-**`NormedSpace.tendsto_nat_smul_exp_mul_exp_sub_exp`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/LieProductFormula.lean#L103).
+**`NormedSpace.tendsto_nat_smul_exp_mul_exp_sub_exp`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/LieProductFormula.lean#L103).
 
 > The curves `t ↦ exp (t X) exp (t Y)` and `t ↦ exp (t (X + Y))` agree to first order at
 > `t = 0`: `n (exp (X / n) exp (Y / n) − exp ((X + Y) / n)) → 0`.
@@ -70,7 +70,7 @@ lemma tendsto_nat_smul_exp_mul_exp_sub_exp (X Y : 𝔸) :
       exp ((n : ℝ)⁻¹ • (X + Y)))) atTop (𝓝 0)
 ```
 
-**`NormedSpace.tendsto_exp_mul_exp_pow`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/LieProductFormula.lean#L120).
+**`NormedSpace.tendsto_exp_mul_exp_pow`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/LieProductFormula.lean#L120).
 
 > **The Lie product formula**: `(exp (X / n) exp (Y / n)) ^ n → exp (X + Y)`.
 
@@ -86,4 +86,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/LieProductFormula.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/LieProductFormula.lean)
+- [PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/LieProductFormula.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/LieProductFormula.lean)

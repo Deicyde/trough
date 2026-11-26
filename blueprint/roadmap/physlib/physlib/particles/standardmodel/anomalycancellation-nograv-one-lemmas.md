@@ -8,7 +8,7 @@ proof: formalized
 
 # Lemmas for 1 family SM Accs
 
-The module `Physlib.Particles.StandardModel.AnomalyCancellation.NoGrav.One.Lemmas`, [Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean): 4 declarations, 4 with a docstring, 1 listed as significant.
+The module `Physlib.Particles.StandardModel.AnomalyCancellation.NoGrav.One.Lemmas`, [Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean): 4 declarations, 4 with a docstring, 1 listed as significant.
 
 > The main result of this file is the conclusion of this paper:
 >   [Lohitsiri and Tong][Lohitsiri:2019fuu] [ref: Lohitsiri:2019fuu]
@@ -19,7 +19,7 @@ The module `Physlib.Particles.StandardModel.AnomalyCancellation.NoGrav.One.Lemma
 
 > * The main result of this file is the conclusion of this paper. [ref: Lohitsiri:2019fuu]
 
-**`SM.SMNoGrav.One.E_zero_iff_Q_zero`**, a lemma, [line 34](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean#L34).
+**`SM.SMNoGrav.One.E_zero_iff_Q_zero`**, a lemma, [line 34](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean#L34).
 
 > For a set of 1 family SM charges satisfying all ACCs except the gravitational,
 > the charge of `Q` is zero if and only if `E` is zero.
@@ -29,7 +29,7 @@ lemma E_zero_iff_Q_zero {S : (SMNoGrav 1).Sols} : Q S.val (0 : Fin 1) = 0 ↔
     E S.val (0 : Fin 1) = 0
 ```
 
-**`SM.SMNoGrav.One.accGrav_Q_zero`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean#L45).
+**`SM.SMNoGrav.One.accGrav_Q_zero`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean#L45).
 
 > For a set of 1-family SM charges satisfying all ACCs except the gravitational,
 > if the `Q` charge is zero then the charges satisfy the gravitational ACCs.
@@ -39,7 +39,7 @@ lemma accGrav_Q_zero {S : (SMNoGrav 1).Sols} (hQ : Q S.val (0 : Fin 1) = 0) :
     accGrav S.val = 0
 ```
 
-**`SM.SMNoGrav.One.accGrav_Q_ne_zero`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean#L59).
+**`SM.SMNoGrav.One.accGrav_Q_ne_zero`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean#L59).
 
 > For a set of 1-family SM charges satisfying all ACCs except the gravitational,
 > if the `Q` charge is not zero then the charges satisfy the gravitational ACCs.
@@ -49,7 +49,7 @@ lemma accGrav_Q_ne_zero {S : (SMNoGrav 1).Sols} (hQ : Q S.val (0 : Fin 1) ≠ 0)
     accGrav S.val = 0
 ```
 
-**`SM.SMNoGrav.One.accGravSatisfied`**, a theorem, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean#L71). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`SM.SMNoGrav.One.accGravSatisfied`**, a theorem, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean#L71). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Any solution to the 1-family ACCs without gravity satisfies the gravitational ACC.
 
@@ -68,4 +68,4 @@ theorem accGravSatisfied {S : (SMNoGrav 1).Sols} :
 
 ## Sources
 
-- [Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean)
+- [Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean)

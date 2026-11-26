@@ -8,7 +8,7 @@ proof: formalized
 
 # Product states of a product of finite targets
 
-The module `PhyslibAlpha.QuantumMechanics.HilbertSpaces.FiniteTarget.ProductState`, [PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean): 30 declarations, 19 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.HilbertSpaces.FiniteTarget.ProductState`, [PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean): 30 declarations, 19 with a docstring.
 
 ## i. Overview
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.QuantumMechanics.HilbertSpaces.FiniteTarget.ProductStat
 
 ## A. Product vectors
 
-**`QuantumMechanics.FiniteHilbertSpace.prodVec`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L74).
+**`QuantumMechanics.FiniteHilbertSpace.prodVec`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L74).
 
 > The product vector `(ψ ⊗ φ) (a, b) = ψ a φ b`.
 
@@ -49,14 +49,14 @@ The module `PhyslibAlpha.QuantumMechanics.HilbertSpaces.FiniteTarget.ProductStat
 noncomputable def prodVec (ψ : 𝓗[α]) (φ : 𝓗[β]) : 𝓗[α × β]
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.prodVec_val`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L77).
+**`QuantumMechanics.FiniteHilbertSpace.prodVec_val`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L77).
 
 ```lean
 lemma prodVec_val (ψ : 𝓗[α]) (φ : 𝓗[β]) (p : α × β) :
     (prodVec ψ φ).val p = ψ.val p.1 * φ.val p.2
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.inner_prodVec`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L81).
+**`QuantumMechanics.FiniteHilbertSpace.inner_prodVec`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L81).
 
 > `⟪ψ ⊗ φ, ψ' ⊗ φ'⟫ = ⟪ψ, ψ'⟫ ⟪φ, φ'⟫`.
 
@@ -65,7 +65,7 @@ lemma inner_prodVec (ψ ψ' : 𝓗[α]) (φ φ' : 𝓗[β]) :
     ⟪prodVec ψ φ, prodVec ψ' φ'⟫_ℂ = ⟪ψ, ψ'⟫_ℂ * ⟪φ, φ'⟫_ℂ
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.norm_prodVec`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L90).
+**`QuantumMechanics.FiniteHilbertSpace.norm_prodVec`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L90).
 
 > `‖ψ ⊗ φ‖ = ‖ψ‖ ‖φ‖`.
 
@@ -73,7 +73,7 @@ lemma inner_prodVec (ψ ψ' : 𝓗[α]) (φ φ' : 𝓗[β]) :
 lemma norm_prodVec (ψ : 𝓗[α]) (φ : 𝓗[β]) : ‖prodVec ψ φ‖ = ‖ψ‖ * ‖φ‖
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.norm_prodVec_eq_one`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L97).
+**`QuantumMechanics.FiniteHilbertSpace.norm_prodVec_eq_one`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L97).
 
 > The product of two unit vectors is a unit vector.
 
@@ -82,35 +82,35 @@ lemma norm_prodVec_eq_one {ψ : 𝓗[α]} {φ : 𝓗[β]} (hψ : ‖ψ‖ = 1) (
     ‖prodVec ψ φ‖ = 1
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.prodVec_sub_left`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L101).
+**`QuantumMechanics.FiniteHilbertSpace.prodVec_sub_left`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L101).
 
 ```lean
 lemma prodVec_sub_left (ψ ψ' : 𝓗[α]) (φ : 𝓗[β]) :
     prodVec (ψ - ψ') φ = prodVec ψ φ - prodVec ψ' φ
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.prodVec_sub_right`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L106).
+**`QuantumMechanics.FiniteHilbertSpace.prodVec_sub_right`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L106).
 
 ```lean
 lemma prodVec_sub_right (ψ : 𝓗[α]) (φ φ' : 𝓗[β]) :
     prodVec ψ (φ - φ') = prodVec ψ φ - prodVec ψ φ'
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.prodVec_smul_left`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L111).
+**`QuantumMechanics.FiniteHilbertSpace.prodVec_smul_left`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L111).
 
 ```lean
 lemma prodVec_smul_left (r : ℝ) (ψ : 𝓗[α]) (φ : 𝓗[β]) :
     prodVec (r • ψ) φ = r • prodVec ψ φ
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.prodVec_smul_right`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L116).
+**`QuantumMechanics.FiniteHilbertSpace.prodVec_smul_right`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L116).
 
 ```lean
 lemma prodVec_smul_right (r : ℝ) (ψ : 𝓗[α]) (φ : 𝓗[β]) :
     prodVec ψ (r • φ) = r • prodVec ψ φ
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.onFst_prodVec`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L122).
+**`QuantumMechanics.FiniteHilbertSpace.onFst_prodVec`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L122).
 
 > `(A ⊗ 1) (ψ ⊗ φ) = A ψ ⊗ φ`.
 
@@ -119,7 +119,7 @@ lemma onFst_prodVec (A : 𝓗[α] →ₗ[ℂ] 𝓗[α]) (ψ : 𝓗[α]) (φ : �
     onFst A (prodVec ψ φ) = prodVec (A ψ) φ
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.onSnd_prodVec`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L129).
+**`QuantumMechanics.FiniteHilbertSpace.onSnd_prodVec`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L129).
 
 > `(1 ⊗ B) (ψ ⊗ φ) = ψ ⊗ B φ`.
 
@@ -130,7 +130,7 @@ lemma onSnd_prodVec (B : 𝓗[β] →ₗ[ℂ] 𝓗[β]) (ψ : 𝓗[α]) (φ : �
 
 ## B. Observables on one coordinate
 
-**`QuantumMechanics.FiniteHilbertSpace.onFstObservable`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L142).
+**`QuantumMechanics.FiniteHilbertSpace.onFstObservable`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L142).
 
 > An observable of the first coordinate as an observable of `𝓗[α × β]`.
 
@@ -139,7 +139,7 @@ noncomputable def onFstObservable (a : Observable (𝓗[α] →L[ℂ] 𝓗[α]))
     Observable (𝓗[α × β] →L[ℂ] 𝓗[α × β])
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.onSndObservable`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L149).
+**`QuantumMechanics.FiniteHilbertSpace.onSndObservable`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L149).
 
 > An observable of the second coordinate as an observable of `𝓗[α × β]`.
 
@@ -150,7 +150,7 @@ noncomputable def onSndObservable (b : Observable (𝓗[β] →L[ℂ] 𝓗[β]))
 
 ## C. Statistics of the first coordinate
 
-**`QuantumMechanics.FiniteHilbertSpace.expectation_onFstObservable`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L164).
+**`QuantumMechanics.FiniteHilbertSpace.expectation_onFstObservable`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L164).
 
 > The mean of the first coordinate is that of `ψ`.
 
@@ -159,7 +159,7 @@ lemma expectation_onFstObservable (a : Observable (𝓗[α] →L[ℂ] 𝓗[α]))
     (ofVec (norm_prodVec_eq_one hψ hφ))⟨onFstObservable a⟩ = (ofVec hψ)⟨a⟩
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.fluctuation_onFstObservable`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L175).
+**`QuantumMechanics.FiniteHilbertSpace.fluctuation_onFstObservable`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L175).
 
 > The fluctuation of the first coordinate is that of `ψ`, tensored with `φ`.
 
@@ -170,14 +170,14 @@ lemma fluctuation_onFstObservable (a : Observable (𝓗[α] →L[ℂ] 𝓗[α]))
       prodVec ((a : 𝓗[α] →L[ℂ] 𝓗[α]) ψ - (ofVec hψ)⟨a⟩ • ψ) φ
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.variance_onFstObservable`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L182).
+**`QuantumMechanics.FiniteHilbertSpace.variance_onFstObservable`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L182).
 
 ```lean
 lemma variance_onFstObservable (a : Observable (𝓗[α] →L[ℂ] 𝓗[α])) :
     variance (ofVec (norm_prodVec_eq_one hψ hφ)) (onFstObservable a) = variance (ofVec hψ) a
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.covariance_onFstObservable`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L186).
+**`QuantumMechanics.FiniteHilbertSpace.covariance_onFstObservable`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L186).
 
 ```lean
 lemma covariance_onFstObservable (a b : Observable (𝓗[α] →L[ℂ] 𝓗[α])) :
@@ -185,7 +185,7 @@ lemma covariance_onFstObservable (a b : Observable (𝓗[α] →L[ℂ] 𝓗[α])
       covariance (ofVec hψ) a b
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.centeredGramDefect_onFstObservable`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L195).
+**`QuantumMechanics.FiniteHilbertSpace.centeredGramDefect_onFstObservable`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L195).
 
 ```lean
 lemma centeredGramDefect_onFstObservable (a b : Observable (𝓗[α] →L[ℂ] 𝓗[α])) :
@@ -195,7 +195,7 @@ lemma centeredGramDefect_onFstObservable (a b : Observable (𝓗[α] →L[ℂ] �
 
 ## D. Statistics of the second coordinate
 
-**`QuantumMechanics.FiniteHilbertSpace.expectation_onSndObservable`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L210).
+**`QuantumMechanics.FiniteHilbertSpace.expectation_onSndObservable`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L210).
 
 > The mean of the second coordinate is that of `φ`.
 
@@ -204,7 +204,7 @@ lemma expectation_onSndObservable (b : Observable (𝓗[β] →L[ℂ] 𝓗[β]))
     (ofVec (norm_prodVec_eq_one hψ hφ))⟨onSndObservable b⟩ = (ofVec hφ)⟨b⟩
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.fluctuation_onSndObservable`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L221).
+**`QuantumMechanics.FiniteHilbertSpace.fluctuation_onSndObservable`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L221).
 
 > The fluctuation of the second coordinate is `ψ` tensored with that of `φ`.
 
@@ -215,14 +215,14 @@ lemma fluctuation_onSndObservable (b : Observable (𝓗[β] →L[ℂ] 𝓗[β]))
       prodVec ψ ((b : 𝓗[β] →L[ℂ] 𝓗[β]) φ - (ofVec hφ)⟨b⟩ • φ)
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.variance_onSndObservable`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L228).
+**`QuantumMechanics.FiniteHilbertSpace.variance_onSndObservable`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L228).
 
 ```lean
 lemma variance_onSndObservable (b : Observable (𝓗[β] →L[ℂ] 𝓗[β])) :
     variance (ofVec (norm_prodVec_eq_one hψ hφ)) (onSndObservable b) = variance (ofVec hφ) b
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.covariance_onSndObservable`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L232).
+**`QuantumMechanics.FiniteHilbertSpace.covariance_onSndObservable`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L232).
 
 ```lean
 lemma covariance_onSndObservable (a b : Observable (𝓗[β] →L[ℂ] 𝓗[β])) :
@@ -230,7 +230,7 @@ lemma covariance_onSndObservable (a b : Observable (𝓗[β] →L[ℂ] 𝓗[β])
       covariance (ofVec hφ) a b
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.centeredGramDefect_onSndObservable`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L241).
+**`QuantumMechanics.FiniteHilbertSpace.centeredGramDefect_onSndObservable`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L241).
 
 ```lean
 lemma centeredGramDefect_onSndObservable (a b : Observable (𝓗[β] →L[ℂ] 𝓗[β])) :
@@ -240,7 +240,7 @@ lemma centeredGramDefect_onSndObservable (a b : Observable (𝓗[β] →L[ℂ] �
 
 ## E. Different coordinates are uncorrelated
 
-**`QuantumMechanics.FiniteHilbertSpace.inner_fluctuation`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L256).
+**`QuantumMechanics.FiniteHilbertSpace.inner_fluctuation`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L256).
 
 > The fluctuation vector of an observable is orthogonal to the state.
 
@@ -250,7 +250,7 @@ lemma inner_fluctuation {γ : Type*} [Fintype γ] [DecidableEq γ] {χ : 𝓗[γ
     ⟪χ, (c : 𝓗[γ] →L[ℂ] 𝓗[γ]) χ - (ofVec hχ)⟨c⟩ • χ⟫_ℂ = 0
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.covariance_onFstObservable_onSndObservable`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L267).
+**`QuantumMechanics.FiniteHilbertSpace.covariance_onFstObservable_onSndObservable`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L267).
 
 > In a product state, an observable of the first coordinate and one of the second are
 > uncorrelated.
@@ -263,7 +263,7 @@ lemma covariance_onFstObservable_onSndObservable (a : Observable (𝓗[α] →L[
 
 ## F. Product vectors of finite families
 
-**`QuantumMechanics.FiniteHilbertSpace.piProdVec`**, a def, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L286).
+**`QuantumMechanics.FiniteHilbertSpace.piProdVec`**, a def, [line 286](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L286).
 
 > The product vector `(⊗ i, v i) k = ∏ i, v i (k i)` of a finite family of vectors,
 > describing independently prepared copies of a system.
@@ -272,7 +272,7 @@ lemma covariance_onFstObservable_onSndObservable (a : Observable (𝓗[α] →L[
 noncomputable def piProdVec (v : ι → 𝓗[α]) : 𝓗[ι → α]
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.piProdVec_val`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L290).
+**`QuantumMechanics.FiniteHilbertSpace.piProdVec_val`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L290).
 
 > The components of a product vector are the products of the components.
 
@@ -281,7 +281,7 @@ lemma piProdVec_val (v : ι → 𝓗[α]) (k : ι → α) :
     (piProdVec v).val k = ∏ i, (v i).val (k i)
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.inner_piProdVec`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L294).
+**`QuantumMechanics.FiniteHilbertSpace.inner_piProdVec`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L294).
 
 > `⟪⊗ v, ⊗ w⟫ = ∏ i, ⟪v i, w i⟫`.
 
@@ -290,7 +290,7 @@ lemma inner_piProdVec (v w : ι → 𝓗[α]) :
     ⟪piProdVec v, piProdVec w⟫_ℂ = ∏ i, ⟪v i, w i⟫_ℂ
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.norm_piProdVec`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L301).
+**`QuantumMechanics.FiniteHilbertSpace.norm_piProdVec`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L301).
 
 > `‖⊗ v‖ = ∏ i, ‖v i‖`.
 
@@ -298,7 +298,7 @@ lemma inner_piProdVec (v w : ι → 𝓗[α]) :
 lemma norm_piProdVec (v : ι → 𝓗[α]) : ‖piProdVec v‖ = ∏ i, ‖v i‖
 ```
 
-**`QuantumMechanics.FiniteHilbertSpace.norm_piProdVec_eq_one`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L309).
+**`QuantumMechanics.FiniteHilbertSpace.norm_piProdVec_eq_one`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean#L309).
 
 > The product of unit vectors is a unit vector.
 
@@ -319,4 +319,4 @@ lemma norm_piProdVec_eq_one {v : ι → 𝓗[α]} (hv : ∀ i, ‖v i‖ = 1) : 
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean)
+- [PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean)

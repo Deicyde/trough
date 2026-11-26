@@ -8,7 +8,7 @@ proof: formalized
 
 # Swapping the two Higgs doublets
 
-The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.SwapDoublet`, [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean): 11 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.SwapDoublet`, [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean): 11 declarations, 2 with a docstring.
 
 > The doublet swap Φ1 ↔ Φ2 commutes with gauge action, preserving invariance and mass dimension.
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.SwapDoublet`, [
 
 ## A. The doublet-swap map and its components
 
-**`TwoHiggsDoublet.EffectivePotential.swapDoublet`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L61).
+**`TwoHiggsDoublet.EffectivePotential.swapDoublet`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L61).
 
 > Swapping the two doublets, as an `ℝ`-linear map. It commutes with the gauge action, so it sends
 > gauge-invariant polynomial potentials to gauge-invariant polynomial potentials, but turns the
@@ -45,19 +45,19 @@ The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.SwapDoublet`, [
 def swapDoublet : TwoHiggsDoublet →ₗ[ℝ] TwoHiggsDoublet
 ```
 
-**`TwoHiggsDoublet.EffectivePotential.swapDoublet_Φ1`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L66).
+**`TwoHiggsDoublet.EffectivePotential.swapDoublet_Φ1`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L66).
 
 ```lean
 lemma swapDoublet_Φ1 (φ : TwoHiggsDoublet) : (swapDoublet φ).Φ1 = φ.Φ2
 ```
 
-**`TwoHiggsDoublet.EffectivePotential.swapDoublet_Φ2`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L67).
+**`TwoHiggsDoublet.EffectivePotential.swapDoublet_Φ2`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L67).
 
 ```lean
 lemma swapDoublet_Φ2 (φ : TwoHiggsDoublet) : (swapDoublet φ).Φ2 = φ.Φ1
 ```
 
-**`TwoHiggsDoublet.EffectivePotential.swapDoublet_swapDoublet`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L69).
+**`TwoHiggsDoublet.EffectivePotential.swapDoublet_swapDoublet`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L69).
 
 ```lean
 lemma swapDoublet_swapDoublet (φ : TwoHiggsDoublet) : swapDoublet (swapDoublet φ) = φ
@@ -65,7 +65,7 @@ lemma swapDoublet_swapDoublet (φ : TwoHiggsDoublet) : swapDoublet (swapDoublet 
 
 ## B. Commutation with the gauge action
 
-**`TwoHiggsDoublet.EffectivePotential.swapDoublet_smul`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L76).
+**`TwoHiggsDoublet.EffectivePotential.swapDoublet_smul`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L76).
 
 ```lean
 lemma swapDoublet_smul (g : StandardModel.GaugeGroupI) (φ : TwoHiggsDoublet) :
@@ -74,7 +74,7 @@ lemma swapDoublet_smul (g : StandardModel.GaugeGroupI) (φ : TwoHiggsDoublet) :
 
 ## C. The action on the Gram vector
 
-**`TwoHiggsDoublet.EffectivePotential.gramVector_swapDoublet_inl`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L86).
+**`TwoHiggsDoublet.EffectivePotential.gramVector_swapDoublet_inl`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L86).
 
 > Swapping the doublets sends the gram vector through the sign flip of the imaginary and
 > difference components.
@@ -84,21 +84,21 @@ lemma gramVector_swapDoublet_inl (φ : TwoHiggsDoublet) :
     (swapDoublet φ).gramVector (Sum.inl 0) = φ.gramVector (Sum.inl 0)
 ```
 
-**`TwoHiggsDoublet.EffectivePotential.gramVector_swapDoublet_inr0`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L90).
+**`TwoHiggsDoublet.EffectivePotential.gramVector_swapDoublet_inr0`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L90).
 
 ```lean
 lemma gramVector_swapDoublet_inr0 (φ : TwoHiggsDoublet) :
     (swapDoublet φ).gramVector (Sum.inr 0) = φ.gramVector (Sum.inr 0)
 ```
 
-**`TwoHiggsDoublet.EffectivePotential.gramVector_swapDoublet_inr1`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L95).
+**`TwoHiggsDoublet.EffectivePotential.gramVector_swapDoublet_inr1`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L95).
 
 ```lean
 lemma gramVector_swapDoublet_inr1 (φ : TwoHiggsDoublet) :
     (swapDoublet φ).gramVector (Sum.inr 1) = -φ.gramVector (Sum.inr 1)
 ```
 
-**`TwoHiggsDoublet.EffectivePotential.gramVector_swapDoublet_inr2`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L100).
+**`TwoHiggsDoublet.EffectivePotential.gramVector_swapDoublet_inr2`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L100).
 
 ```lean
 lemma gramVector_swapDoublet_inr2 (φ : TwoHiggsDoublet) :
@@ -107,14 +107,14 @@ lemma gramVector_swapDoublet_inr2 (φ : TwoHiggsDoublet) :
 
 ## D. Effect on gauge invariance and mass dimension
 
-**`TwoHiggsDoublet.EffectivePotential.HasMaxMassDimLE.comp_swapDoublet`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L108).
+**`TwoHiggsDoublet.EffectivePotential.HasMaxMassDimLE.comp_swapDoublet`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L108).
 
 ```lean
 lemma HasMaxMassDimLE.comp_swapDoublet {V : EffectivePotential} {n : ℕ}
     (h : HasMaxMassDimLE V n) : HasMaxMassDimLE (fun φ => V (swapDoublet φ)) n
 ```
 
-**`TwoHiggsDoublet.EffectivePotential.IsInvariant.comp_swapDoublet`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L117).
+**`TwoHiggsDoublet.EffectivePotential.IsInvariant.comp_swapDoublet`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean#L117).
 
 ```lean
 lemma IsInvariant.comp_swapDoublet {V : EffectivePotential} (hI : IsInvariant V) :
@@ -128,4 +128,4 @@ lemma IsInvariant.comp_swapDoublet {V : EffectivePotential} (hI : IsInvariant V)
 
 ## Sources
 
-- [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean)
+- [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean)

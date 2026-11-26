@@ -8,7 +8,7 @@ proof: formalized
 
 # The action of spacetime series on derivative symbols
 
-The module `Physlib.SpaceAndTime.SpaceTime.SpaceTimeDerivAlgebra.Action`, [Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean): 7 declarations, 7 with a docstring.
+The module `Physlib.SpaceAndTime.SpaceTime.SpaceTimeDerivAlgebra.Action`, [Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean): 7 declarations, 7 with a docstring.
 
 > The action of formal power series in spacetime coordinates on polynomials in derivatives.
 
@@ -46,7 +46,7 @@ The module `Physlib.SpaceAndTime.SpaceTime.SpaceTimeDerivAlgebra.Action`, [Physl
 > The action of `χ` sends each monomial `∂^s` to its Leibniz expansion with `χ`, a finite sum of
 > symbols, which pairs with `f` as `∂^s` pairs with `χ f` by `pairing_constr_leibniz`.
 
-**`SpaceTimeDerivAlgebraℂ.seriesAction`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean#L70).
+**`SpaceTimeDerivAlgebraℂ.seriesAction`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean#L70).
 
 > The action of series on derivative symbols, defined on monomials by the product rule.
 
@@ -54,7 +54,7 @@ The module `Physlib.SpaceAndTime.SpaceTime.SpaceTimeDerivAlgebra.Action`, [Physl
 noncomputable def seriesAction : SpaceTimeAlgebra →+* Module.End ℂ SpaceTimeDerivAlgebraℂ
 ```
 
-**`SpaceTimeDerivAlgebraℂ.seriesAction_basis`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean#L81).
+**`SpaceTimeDerivAlgebraℂ.seriesAction_basis`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean#L81).
 
 > The action of `χ` on a monomial `∂^s` is its Leibniz expansion.
 
@@ -70,7 +70,7 @@ lemma seriesAction_basis (χ : SpaceTimeAlgebra) (s : Multiset (Fin 1 ⊕ Fin 3)
 > `pairing (seriesAction χ P) f = pairing P (χ * f)` says that `seriesAction χ P` applies `P` after
 > multiplying by `χ`. In particular the constant series `C c` acts as multiplication by `c`.
 
-**`SpaceTimeDerivAlgebraℂ.pairing_seriesAction`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean#L97).
+**`SpaceTimeDerivAlgebraℂ.pairing_seriesAction`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean#L97).
 
 > The action of `χ` multiplies by `χ` before applying the symbol.
 
@@ -80,7 +80,7 @@ lemma pairing_seriesAction (χ : SpaceTimeAlgebra) (p : SpaceTimeDerivAlgebraℂ
     pairing (seriesAction χ p) f = pairing p (χ * f)
 ```
 
-**`SpaceTimeDerivAlgebraℂ.seriesAction_C`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean#L104).
+**`SpaceTimeDerivAlgebraℂ.seriesAction_C`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean#L104).
 
 > The constant series `C c` acts as scalar multiplication by `c`.
 
@@ -95,7 +95,7 @@ lemma seriesAction_C (c : ℂ) : seriesAction (C c) = c • LinearMap.id
 > A series `χ` acts on the unit symbol by `χ(x₀)`, and sends `∂_μ` to `χ(x₀) ∂_μ + (∂_μ χ)(x₀)`,
 > which is the product rule at the base point.
 
-**`SpaceTimeDerivAlgebraℂ.seriesAction_apply_one`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean#L121).
+**`SpaceTimeDerivAlgebraℂ.seriesAction_apply_one`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean#L121).
 
 > A series acts on the unit symbol by its base-point value.
 
@@ -104,7 +104,7 @@ lemma seriesAction_apply_one (χ : SpaceTimeAlgebra) :
     seriesAction χ 1 = constantCoeff χ • 1
 ```
 
-**`SpaceTimeDerivAlgebraℂ.seriesAction_basis_singleton`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean#L127).
+**`SpaceTimeDerivAlgebraℂ.seriesAction_basis_singleton`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean#L127).
 
 > A series `χ` sends `∂_μ` to `χ(x₀) ∂_μ + (∂_μ χ)(x₀)`, the product rule.
 
@@ -119,7 +119,7 @@ lemma seriesAction_basis_singleton (χ : SpaceTimeAlgebra) (μ : Fin 1 ⊕ Fin 3
 > `pairing_mul_basis_singleton`, so the product rule for `∂_μ (χ f)` relates the action of `χ` to
 > multiplication by `∂_μ`.
 
-**`SpaceTimeDerivAlgebraℂ.seriesAction_mul_basis_singleton`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean#L144).
+**`SpaceTimeDerivAlgebraℂ.seriesAction_mul_basis_singleton`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean#L144).
 
 > The action commutes with multiplication by `∂_μ` up to the action of `pderiv μ χ`.
 
@@ -135,4 +135,4 @@ lemma seriesAction_mul_basis_singleton (χ : SpaceTimeAlgebra) (p : SpaceTimeDer
 
 ## Sources
 
-- [Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean)
+- [Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean)

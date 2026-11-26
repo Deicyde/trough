@@ -8,7 +8,7 @@ proof: formalized
 
 # Measure-and-prepare channels
 
-The module `PhyslibAlpha.ProbabilisticTheory.Channel.MeasureAndPrepare`, [PhyslibAlpha/ProbabilisticTheory/Channel/MeasureAndPrepare.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/MeasureAndPrepare.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Channel.MeasureAndPrepare`, [PhyslibAlpha/ProbabilisticTheory/Channel/MeasureAndPrepare.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Channel/MeasureAndPrepare.lean): 1 declaration, 1 with a docstring.
 
 > Measure-and-prepare channels: channels that factor through a finite classical system.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Channel.MeasureAndPrepare`, [Physli
 
 ## A. Factorization through a finite classical system
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsMeasureAndPrepare`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/MeasureAndPrepare.lean#L57).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsMeasureAndPrepare`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Channel/MeasureAndPrepare.lean#L57).
 
 > A channel is measure-and-prepare when it factors through a finite classical system: measure,
 > then prepare a state for each outcome. This is the general-probabilistic-theory abstraction of an
@@ -52,4 +52,4 @@ def IsMeasureAndPrepare (Φ : Channel E₂ E₁) : Prop
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Channel/MeasureAndPrepare.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Channel/MeasureAndPrepare.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Channel/MeasureAndPrepare.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Channel/MeasureAndPrepare.lean)

@@ -8,12 +8,12 @@ proof: formalized
 
 # Anomaly Cancellation in the Standard Model without Gravity
 
-The module `Physlib.Particles.StandardModel.AnomalyCancellation.NoGrav.Basic`, [Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean): 10 declarations, 10 with a docstring.
+The module `Physlib.Particles.StandardModel.AnomalyCancellation.NoGrav.Basic`, [Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean): 10 declarations, 10 with a docstring.
 
 > This file defines the system of anomaly equations for the SM without RHN, and
 > without the gravitational ACC.
 
-**`SM.SMNoGrav`**, a def, [line 26](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L26).
+**`SM.SMNoGrav`**, a def, [line 26](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L26).
 
 > The ACC system for the standard model without RHN and without the gravitational ACC.
 
@@ -21,7 +21,7 @@ The module `Physlib.Particles.StandardModel.AnomalyCancellation.NoGrav.Basic`, [
 def SMNoGrav (n : ℕ) : ACCSystem
 ```
 
-**`SM.SMNoGrav.SU2Sol`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L45).
+**`SM.SMNoGrav.SU2Sol`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L45).
 
 > The charges in `(SMNoGrav n).LinSols` satisfy the `SU(2)` anomaly-equation.
 
@@ -29,7 +29,7 @@ def SMNoGrav (n : ℕ) : ACCSystem
 lemma SU2Sol (S : (SMNoGrav n).LinSols) : accSU2 S.val = 0
 ```
 
-**`SM.SMNoGrav.SU3Sol`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L52).
+**`SM.SMNoGrav.SU3Sol`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L52).
 
 > The charges in `(SMNoGrav n).LinSols` satisfy the `SU(3)` anomaly-equation.
 
@@ -37,7 +37,7 @@ lemma SU2Sol (S : (SMNoGrav n).LinSols) : accSU2 S.val = 0
 lemma SU3Sol (S : (SMNoGrav n).LinSols) : accSU3 S.val = 0
 ```
 
-**`SM.SMNoGrav.cubeSol`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L58).
+**`SM.SMNoGrav.cubeSol`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L58).
 
 > The charges in `(SMNoGrav n).Sols` satisfy the cubic anomaly-equation.
 
@@ -45,7 +45,7 @@ lemma SU3Sol (S : (SMNoGrav n).LinSols) : accSU3 S.val = 0
 lemma cubeSol (S : (SMNoGrav n).Sols) : accCube S.val = 0
 ```
 
-**`SM.SMNoGrav.chargeToLinear`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L62).
+**`SM.SMNoGrav.chargeToLinear`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L62).
 
 > An element of `charges` which satisfies the linear ACCs
 > gives us a element of `AnomalyFreeLinear`.
@@ -55,7 +55,7 @@ def chargeToLinear (S : (SMNoGrav n).Charges) (hSU2 : accSU2 S = 0) (hSU3 : accS
     (SMNoGrav n).LinSols
 ```
 
-**`SM.SMNoGrav.linearToQuad`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L72).
+**`SM.SMNoGrav.linearToQuad`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L72).
 
 > An element of `AnomalyFreeLinear` which satisfies the quadratic ACCs
 > gives us a element of `AnomalyFreeQuad`.
@@ -64,7 +64,7 @@ def chargeToLinear (S : (SMNoGrav n).Charges) (hSU2 : accSU2 S = 0) (hSU3 : accS
 def linearToQuad (S : (SMNoGrav n).LinSols) : (SMNoGrav n).QuadSols
 ```
 
-**`SM.SMNoGrav.quadToAF`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L79).
+**`SM.SMNoGrav.quadToAF`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L79).
 
 > An element of `AnomalyFreeQuad` which satisfies the quadratic ACCs
 > gives us a element of `AnomalyFree`.
@@ -74,7 +74,7 @@ def quadToAF (S : (SMNoGrav n).QuadSols) (hc : accCube S.val = 0) :
     (SMNoGrav n).Sols
 ```
 
-**`SM.SMNoGrav.chargeToQuad`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L84).
+**`SM.SMNoGrav.chargeToQuad`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L84).
 
 > An element of `charges` which satisfies the linear and quadratic ACCs
 > gives us a element of `AnomalyFreeQuad`.
@@ -84,7 +84,7 @@ def chargeToQuad (S : (SMNoGrav n).Charges) (hSU2 : accSU2 S = 0) (hSU3 : accSU3
     (SMNoGrav n).QuadSols
 ```
 
-**`SM.SMNoGrav.chargeToAF`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L90).
+**`SM.SMNoGrav.chargeToAF`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L90).
 
 > An element of `charges` which satisfies the linear, quadratic and cubic ACCs
 > gives us a element of `AnomalyFree`.
@@ -94,7 +94,7 @@ def chargeToAF (S : (SMNoGrav n).Charges) (hSU2 : accSU2 S = 0) (hSU3 : accSU3 S
     (hc : accCube S = 0) : (SMNoGrav n).Sols
 ```
 
-**`SM.SMNoGrav.linearToAF`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L96).
+**`SM.SMNoGrav.linearToAF`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean#L96).
 
 > An element of `AnomalyFreeLinear` which satisfies the quadratic and cubic ACCs
 > gives us a element of `AnomalyFree`.
@@ -110,4 +110,4 @@ def linearToAF (S : (SMNoGrav n).LinSols)
 
 ## Sources
 
-- [Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean)
+- [Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean)

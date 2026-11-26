@@ -8,11 +8,11 @@ proof: formalized
 
 # Time Ordering in the FieldOpFreeAlgebra
 
-The module `Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.TimeOrder`, [Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean): 22 declarations, 3 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.TimeOrder`, [Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean): 22 declarations, 3 with a docstring.
 
 ## Time order
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L45).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L45).
 
 > For a field specification `𝓕`, `timeOrderF` is the linear map
 >
@@ -32,67 +32,67 @@ The module `Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.TimeOrder`, [Physl
 def timeOrderF : FieldOpFreeAlgebra 𝓕 →ₗ[ℂ] FieldOpFreeAlgebra 𝓕
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_ofCrAnListF`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L52).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_ofCrAnListF`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L52).
 
 ```lean
 lemma timeOrderF_ofCrAnListF (φs : List 𝓕.CrAnFieldOp) :
     𝓣ᶠ(ofCrAnListF φs) = crAnTimeOrderSign φs • ofCrAnListF (crAnTimeOrderList φs)
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_timeOrderF_mid`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L57).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_timeOrderF_mid`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L57).
 
 ```lean
 lemma timeOrderF_timeOrderF_mid (a b c : 𝓕.FieldOpFreeAlgebra) :
     𝓣ᶠ(a * b * c) = 𝓣ᶠ(a * 𝓣ᶠ(b) * c)
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_timeOrderF_right`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L107).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_timeOrderF_right`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L107).
 
 ```lean
 lemma timeOrderF_timeOrderF_right (a b : 𝓕.FieldOpFreeAlgebra) : 𝓣ᶠ(a * b) = 𝓣ᶠ(a * 𝓣ᶠ(b))
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_timeOrderF_left`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L113).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_timeOrderF_left`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L113).
 
 ```lean
 lemma timeOrderF_timeOrderF_left (a b : 𝓕.FieldOpFreeAlgebra) : 𝓣ᶠ(a * b) = 𝓣ᶠ(𝓣ᶠ(a) * b)
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_ofFieldOpListF`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L119).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_ofFieldOpListF`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L119).
 
 ```lean
 lemma timeOrderF_ofFieldOpListF (φs : List 𝓕.FieldOp) :
     𝓣ᶠ(ofFieldOpListF φs) = timeOrderSign φs • ofFieldOpListF (timeOrderList φs)
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_ofFieldOpListF_nil`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L131).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_ofFieldOpListF_nil`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L131).
 
 ```lean
 lemma timeOrderF_ofFieldOpListF_nil : timeOrderF (𝓕 := 𝓕) (ofFieldOpListF []) = 1
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_ofFieldOpListF_singleton`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L136).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_ofFieldOpListF_singleton`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L136).
 
 ```lean
 lemma timeOrderF_ofFieldOpListF_singleton (φ : 𝓕.FieldOp) :
     𝓣ᶠ(ofFieldOpListF [φ]) = ofFieldOpListF [φ]
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_ofFieldOpF_ofFieldOpF_ordered`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L140).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_ofFieldOpF_ofFieldOpF_ordered`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L140).
 
 ```lean
 lemma timeOrderF_ofFieldOpF_ofFieldOpF_ordered {φ ψ : 𝓕.FieldOp} (h : timeOrderRel φ ψ) :
     𝓣ᶠ(ofFieldOpF φ * ofFieldOpF ψ) = ofFieldOpF φ * ofFieldOpF ψ
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_ofFieldOpF_ofFieldOpF_not_ordered`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L148).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_ofFieldOpF_ofFieldOpF_not_ordered`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L148).
 
 ```lean
 lemma timeOrderF_ofFieldOpF_ofFieldOpF_not_ordered {φ ψ : 𝓕.FieldOp} (h : ¬ timeOrderRel φ ψ) :
     𝓣ᶠ(ofFieldOpF φ * ofFieldOpF ψ) = 𝓢(𝓕 |>ₛ φ, 𝓕 |>ₛ ψ) • ofFieldOpF ψ * ofFieldOpF φ
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_ofFieldOpF_ofFieldOpF_not_ordered_eq_timeOrderF`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L156).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_ofFieldOpF_ofFieldOpF_not_ordered_eq_timeOrderF`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L156).
 
 ```lean
 lemma timeOrderF_ofFieldOpF_ofFieldOpF_not_ordered_eq_timeOrderF {φ ψ : 𝓕.FieldOp}
@@ -100,7 +100,7 @@ lemma timeOrderF_ofFieldOpF_ofFieldOpF_not_ordered_eq_timeOrderF {φ ψ : 𝓕.F
     𝓣ᶠ(ofFieldOpF φ * ofFieldOpF ψ) = 𝓢(𝓕 |>ₛ φ, 𝓕 |>ₛ ψ) • 𝓣ᶠ(ofFieldOpF ψ * ofFieldOpF φ)
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_not_crAnTimeOrderRel`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L165).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_not_crAnTimeOrderRel`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L165).
 
 ```lean
 lemma timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_not_crAnTimeOrderRel
@@ -108,7 +108,7 @@ lemma timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_not_crAnTimeOrderRel
     𝓣ᶠ([ofCrAnOpF φ, ofCrAnOpF ψ]ₛF) = 0
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_not_crAnTimeOrderRel_right`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L183).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_not_crAnTimeOrderRel_right`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L183).
 
 ```lean
 lemma timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_not_crAnTimeOrderRel_right
@@ -116,7 +116,7 @@ lemma timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_not_crAnTimeOrderRel_right
     𝓣ᶠ(a * [ofCrAnOpF φ, ofCrAnOpF ψ]ₛF) = 0
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_not_crAnTimeOrderRel_left`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L190).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_not_crAnTimeOrderRel_left`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L190).
 
 ```lean
 lemma timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_not_crAnTimeOrderRel_left
@@ -124,7 +124,7 @@ lemma timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_not_crAnTimeOrderRel_left
     𝓣ᶠ([ofCrAnOpF φ, ofCrAnOpF ψ]ₛF * a) = 0
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_not_crAnTimeOrderRel_mid`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L197).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_not_crAnTimeOrderRel_mid`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L197).
 
 ```lean
 lemma timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_not_crAnTimeOrderRel_mid
@@ -132,7 +132,7 @@ lemma timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_not_crAnTimeOrderRel_mid
     𝓣ᶠ(a * [ofCrAnOpF φ, ofCrAnOpF ψ]ₛF * b) = 0
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_superCommuteF_ofCrAnOpF_not_crAnTimeOrderRel`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L204).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_superCommuteF_ofCrAnOpF_not_crAnTimeOrderRel`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L204).
 
 ```lean
 lemma timeOrderF_superCommuteF_superCommuteF_ofCrAnOpF_not_crAnTimeOrderRel
@@ -140,7 +140,7 @@ lemma timeOrderF_superCommuteF_superCommuteF_ofCrAnOpF_not_crAnTimeOrderRel
     𝓣ᶠ([a, [ofCrAnOpF φ1, ofCrAnOpF φ2]ₛF]ₛF) = 0
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_ofCrAnOpF_superCommuteF_not_crAnTimeOrderRel`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L227).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_ofCrAnOpF_superCommuteF_not_crAnTimeOrderRel`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L227).
 
 ```lean
 lemma timeOrderF_superCommuteF_ofCrAnOpF_superCommuteF_not_crAnTimeOrderRel
@@ -149,7 +149,7 @@ lemma timeOrderF_superCommuteF_ofCrAnOpF_superCommuteF_not_crAnTimeOrderRel
     𝓣ᶠ([ofCrAnOpF φ1, [ofCrAnOpF φ2, ofCrAnOpF φ3]ₛF]ₛF) = 0
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_ofCrAnOpF_superCommuteF_not_crAnTimeOrderRel'`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L243).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_ofCrAnOpF_superCommuteF_not_crAnTimeOrderRel'`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L243).
 
 ```lean
 lemma timeOrderF_superCommuteF_ofCrAnOpF_superCommuteF_not_crAnTimeOrderRel'
@@ -158,7 +158,7 @@ lemma timeOrderF_superCommuteF_ofCrAnOpF_superCommuteF_not_crAnTimeOrderRel'
     𝓣ᶠ([ofCrAnOpF φ1, [ofCrAnOpF φ2, ofCrAnOpF φ3]ₛF]ₛF) = 0
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_ofCrAnOpF_superCommuteF_all_not_crAnTimeOrderRel`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L259).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_ofCrAnOpF_superCommuteF_all_not_crAnTimeOrderRel`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L259).
 
 ```lean
 lemma timeOrderF_superCommuteF_ofCrAnOpF_superCommuteF_all_not_crAnTimeOrderRel
@@ -169,7 +169,7 @@ lemma timeOrderF_superCommuteF_ofCrAnOpF_superCommuteF_all_not_crAnTimeOrderRel
     𝓣ᶠ([ofCrAnOpF φ1, [ofCrAnOpF φ2, ofCrAnOpF φ3]ₛF]ₛF) = 0
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_eq_time`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L297).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_eq_time`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L297).
 
 ```lean
 lemma timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_eq_time
@@ -179,7 +179,7 @@ lemma timeOrderF_superCommuteF_ofCrAnOpF_ofCrAnOpF_eq_time
 
 ## Interaction with maxTimeField
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_eq_maxTimeField_mul`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L318).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_eq_maxTimeField_mul`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L318).
 
 > In the state algebra time, ordering obeys `T(φ₀φ₁…φₙ) = s * φᵢ * T(φ₀φ₁…φᵢ₋₁φᵢ₊₁…φₙ)`
 > where `φᵢ` is the state
@@ -192,7 +192,7 @@ lemma timeOrderF_eq_maxTimeField_mul (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldO
     ofFieldOpF (maxTimeField φ φs) * 𝓣ᶠ(ofFieldOpListF (eraseMaxTimeField φ φs))
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_eq_maxTimeField_mul_finset`**, a lemma, [line 334](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L334).
+**`FieldSpecification.FieldOpFreeAlgebra.timeOrderF_eq_maxTimeField_mul_finset`**, a lemma, [line 334](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean#L334).
 
 > In the state algebra time, ordering obeys `T(φ₀φ₁…φₙ) = s * φᵢ * T(φ₀φ₁…φᵢ₋₁φᵢ₊₁…φₙ)`
 > where `φᵢ` is the state
@@ -215,4 +215,4 @@ lemma timeOrderF_eq_maxTimeField_mul_finset (φ : 𝓕.FieldOp) (φs : List 𝓕
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean)
+- [Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean)

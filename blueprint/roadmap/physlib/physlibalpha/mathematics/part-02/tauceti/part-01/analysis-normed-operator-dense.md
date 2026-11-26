@@ -8,7 +8,7 @@ proof: formalized
 
 # Extending bounded-operator convergence from dense subsets
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Normed.Operator.Dense`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/Normed/Operator/Dense.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Normed/Operator/Dense.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Normed.Operator.Dense`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/Normed/Operator/Dense.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/Normed/Operator/Dense.lean): 3 declarations, 3 with a docstring.
 
 > This file records two standard density arguments for uniformly bounded families of continuous linear
 > maps between seminormed spaces.
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Normed.Operator.Dense`, [P
 
 ## A. Development
 
-**`ContinuousLinearMap.norm_sub_apply_le_of_norm_le`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Normed/Operator/Dense.lean#L54).
+**`ContinuousLinearMap.norm_sub_apply_le_of_norm_le`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/Normed/Operator/Dense.lean#L54).
 
 > Comparing two continuous linear maps of norm at most `K` at `x` costs at most `2 K ‖x - y‖`
 > more than comparing them at `y`. This is the shared estimate of the two density arguments below:
@@ -44,7 +44,7 @@ lemma norm_sub_apply_le_of_norm_le {T S : X →L[𝕜] Y} {K : ℝ}
     (x y : X) : ‖T x - S x‖ ≤ ‖T y - S y‖ + 2 * K * ‖x - y‖
 ```
 
-**`ContinuousLinearMap.tendsto_apply_of_dense`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Normed/Operator/Dense.lean#L67).
+**`ContinuousLinearMap.tendsto_apply_of_dense`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/Normed/Operator/Dense.lean#L67).
 
 > A uniformly bounded family of continuous linear maps that converges pointwise on a dense
 > subset converges pointwise everywhere.
@@ -57,7 +57,7 @@ lemma tendsto_apply_of_dense {ι : Type*} {l : Filter ι} {D : Set X}
     Tendsto (fun i => f i x) l (nhds (g x))
 ```
 
-**`ContinuousLinearMap.uniformCauchySeqOn_apply_of_dense`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Normed/Operator/Dense.lean#L99).
+**`ContinuousLinearMap.uniformCauchySeqOn_apply_of_dense`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/Normed/Operator/Dense.lean#L99).
 
 > A uniformly bounded family of continuous linear maps that is uniformly Cauchy on a parameter
 > set at every vector in a dense subset is uniformly Cauchy there at every vector.
@@ -77,4 +77,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/Normed/Operator/Dense.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Normed/Operator/Dense.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/Normed/Operator/Dense.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/Normed/Operator/Dense.lean)

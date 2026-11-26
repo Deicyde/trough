@@ -8,7 +8,7 @@ proof: formalized
 
 # Convex spaces of channels
 
-The module `Physlib.ProbabilisticTheory.Channel.Convex`, [Physlib/ProbabilisticTheory/Channel/Convex.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Convex.lean): 7 declarations, 7 with a docstring.
+The module `Physlib.ProbabilisticTheory.Channel.Convex`, [Physlib/ProbabilisticTheory/Channel/Convex.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Convex.lean): 7 declarations, 7 with a docstring.
 
 > Random choice between channels and convexity of the resulting space of linear maps.
 
@@ -29,7 +29,7 @@ The module `Physlib.ProbabilisticTheory.Channel.Convex`, [Physlib/ProbabilisticT
 
 ## A. Mixing channels
 
-**`Channel.mix`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Convex.lean#L50).
+**`Channel.mix`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Convex.lean#L50).
 
 > Choose the first channel with probability `t` and the second with probability `1 - t`.
 
@@ -37,7 +37,7 @@ The module `Physlib.ProbabilisticTheory.Channel.Convex`, [Physlib/ProbabilisticT
 def mix (Φ Ψ : Channel P Q) (t : unitInterval) : Channel P Q
 ```
 
-**`Channel.mix_apply`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Convex.lean#L57).
+**`Channel.mix_apply`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Convex.lean#L57).
 
 > A channel mixture acts by the corresponding convex combination of outputs.
 
@@ -46,7 +46,7 @@ lemma mix_apply (Φ Ψ : Channel P Q) (t : unitInterval) (A : P.Observables) :
     mix Φ Ψ t A = (t : ℝ) • Φ A + (1 - (t : ℝ)) • Ψ A
 ```
 
-**`Channel.toLinearMap_mix`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Convex.lean#L61).
+**`Channel.toLinearMap_mix`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Convex.lean#L61).
 
 > The linear map of a channel mixture is the same convex combination of linear maps.
 
@@ -55,7 +55,7 @@ lemma toLinearMap_mix (Φ Ψ : Channel P Q) (t : unitInterval) :
     (mix Φ Ψ t).toLinearMap = (t : ℝ) • Φ.toLinearMap + (1 - (t : ℝ)) • Ψ.toLinearMap
 ```
 
-**`Channel.mix_symm`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Convex.lean#L65).
+**`Channel.mix_symm`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Convex.lean#L65).
 
 > Swapping the channels swaps their probabilities.
 
@@ -65,7 +65,7 @@ lemma mix_symm (Φ Ψ : Channel P Q) (t : unitInterval) : mix Φ Ψ t = mix Ψ �
 
 ## B. The convex channel space
 
-**`Channel.channelSpace`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Convex.lean#L72).
+**`Channel.channelSpace`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Convex.lean#L72).
 
 > Channels viewed as a subset of the real linear maps between observable spaces.
 
@@ -73,7 +73,7 @@ lemma mix_symm (Φ Ψ : Channel P Q) (t : unitInterval) : mix Φ Ψ t = mix Ψ �
 def channelSpace : Set (P.Observables →ₗ[ℝ] Q.Observables)
 ```
 
-**`Channel.channelSpace_convex`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Convex.lean#L76).
+**`Channel.channelSpace_convex`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Convex.lean#L76).
 
 > Channels form a convex set in the space of real linear maps.
 
@@ -81,7 +81,7 @@ def channelSpace : Set (P.Observables →ₗ[ℝ] Q.Observables)
 lemma channelSpace_convex : Convex ℝ (channelSpace (P := P) (Q := Q))
 ```
 
-**`Channel.mem_openSegment_iff_exists_mix`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Convex.lean#L84).
+**`Channel.mem_openSegment_iff_exists_mix`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Convex.lean#L84).
 
 > Open segments between channels consist exactly of their genuine mixtures.
 
@@ -97,4 +97,4 @@ lemma mem_openSegment_iff_exists_mix (Φ Ψ Χ : Channel P Q) :
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/Channel/Convex.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel/Convex.lean)
+- [Physlib/ProbabilisticTheory/Channel/Convex.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Channel/Convex.lean)

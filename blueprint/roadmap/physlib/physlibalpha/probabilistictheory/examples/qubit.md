@@ -8,7 +8,7 @@ proof: formalized
 
 # The qubit, in Bloch-vector coordinates
 
-The module `PhyslibAlpha.ProbabilisticTheory.Examples.Qubit`, [PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean): 11 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Examples.Qubit`, [PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean): 11 declarations, 7 with a docstring.
 
 > The qubit as the Euclidean norm cone over `ℝ³`: its states form the Bloch ball, not a simplex.
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Examples.Qubit`, [PhyslibAlpha/Prob
 
 ## A. The qubit as a norm cone
 
-**`PhyslibAlpha.ProbabilisticTheory.Qubit`**, an abbrev, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L59).
+**`PhyslibAlpha.ProbabilisticTheory.Qubit`**, an abbrev, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L59).
 
 > The qubit in Bloch coordinates: `ℝ × ℝ³` ordered by the Lorentz cone.
 
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Examples.Qubit`, [PhyslibAlpha/Prob
 abbrev Qubit : Type
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Qubit.stateEquiv`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L66).
+**`PhyslibAlpha.ProbabilisticTheory.Qubit.stateEquiv`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L66).
 
 > The states of the qubit are the Bloch ball.
 
@@ -56,7 +56,7 @@ noncomputable def stateEquiv :
 
 ## B. Infinitely many pure states
 
-**`PhyslibAlpha.ProbabilisticTheory.Qubit.toDualEquiv`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L84).
+**`PhyslibAlpha.ProbabilisticTheory.Qubit.toDualEquiv`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L84).
 
 > The Riesz isomorphism between `EuclideanSpace ℝ (Fin 3)` and its dual.
 
@@ -65,7 +65,7 @@ noncomputable def toDualEquiv :
     EuclideanSpace ℝ (Fin 3) ≃ₗᵢ[ℝ] (EuclideanSpace ℝ (Fin 3) →L[ℝ] ℝ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Qubit.blochVec`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L89).
+**`PhyslibAlpha.ProbabilisticTheory.Qubit.blochVec`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L89).
 
 > The Bloch vector `(t, √(1 - t²), 0)`, a unit vector for `t ∈ [0, 1]`.
 
@@ -73,19 +73,19 @@ noncomputable def toDualEquiv :
 noncomputable def blochVec (t : ℝ) : EuclideanSpace ℝ (Fin 3)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Qubit.norm_blochVec`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L92).
+**`PhyslibAlpha.ProbabilisticTheory.Qubit.norm_blochVec`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L92).
 
 ```lean
 lemma norm_blochVec {t : ℝ} (ht0 : 0 ≤ t) (ht1 : t ≤ 1) : ‖blochVec t‖ = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Qubit.blochVec_injective`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L104).
+**`PhyslibAlpha.ProbabilisticTheory.Qubit.blochVec_injective`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L104).
 
 ```lean
 lemma blochVec_injective : Function.Injective fun t : Set.Icc (0 : ℝ) 1 => blochVec t
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Qubit.purePoint`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L112).
+**`PhyslibAlpha.ProbabilisticTheory.Qubit.purePoint`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L112).
 
 > The pure state dual to the Bloch vector at parameter `t ∈ [0, 1]`.
 
@@ -93,14 +93,14 @@ lemma blochVec_injective : Function.Injective fun t : Set.Icc (0 : ℝ) 1 => blo
 noncomputable def purePoint (t : Set.Icc (0 : ℝ) 1) : 𝓢[ℝ, Qubit]
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Qubit.image_toDualEquiv_closedBall`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L116).
+**`PhyslibAlpha.ProbabilisticTheory.Qubit.image_toDualEquiv_closedBall`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L116).
 
 ```lean
 lemma image_toDualEquiv_closedBall :
     toDualEquiv '' Metric.closedBall (0 : EuclideanSpace ℝ (Fin 3)) 1 = {g | ‖g‖ ≤ 1}
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Qubit.isPure_purePoint`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L125).
+**`PhyslibAlpha.ProbabilisticTheory.Qubit.isPure_purePoint`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L125).
 
 > Every state `purePoint t` is pure: its Bloch vector lies on the sphere, and the sphere
 > consists of extreme points of the ball.
@@ -109,13 +109,13 @@ lemma image_toDualEquiv_closedBall :
 lemma isPure_purePoint (t : Set.Icc (0 : ℝ) 1) : (purePoint t).IsPure
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Qubit.purePoint_injective`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L131).
+**`PhyslibAlpha.ProbabilisticTheory.Qubit.purePoint_injective`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L131).
 
 ```lean
 lemma purePoint_injective : Function.Injective purePoint
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Qubit.not_isSimplex_stateSpace`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L136).
+**`PhyslibAlpha.ProbabilisticTheory.Qubit.not_isSimplex_stateSpace`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean#L136).
 
 > **The qubit is not classical**: it has infinitely many pure states, while a simplex has
 > finitely many extreme points.
@@ -132,4 +132,4 @@ lemma not_isSimplex_stateSpace :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean)

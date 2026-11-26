@@ -8,7 +8,7 @@ proof: formalized
 
 # The massive sine evolution through the massless one
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MassDeformation`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean): 6 declarations, 4 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MassDeformation`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean): 6 declarations, 4 with a docstring.
 
 > The massive sine evolution is the massless sine evolution plus a Bessel average of the massless
 > sine evolutions at smaller radii. This holds in every space dimension.
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MassDeforma
 
 > - `sineEvolution_mass_zero` : the massive sine evolution through the massless one.
 
-**`KleinGordon.cosineFourier`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean#L70).
+**`KleinGordon.cosineFourier`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean#L70).
 
 > The cosine evolution of the massless wave equation, as a Fourier integral.
 
@@ -52,7 +52,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MassDeforma
 def cosineFourier (u : ℝ) (g : 𝓢(E, ℂ)) (x : E) : ℂ
 ```
 
-**`KleinGordon.sineEvolution_mass_cos`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean#L74).
+**`KleinGordon.sineEvolution_mass_cos`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean#L74).
 
 > **The massive sine evolution is a Bessel average of the massless cosine evolution.**
 
@@ -63,7 +63,7 @@ lemma sineEvolution_mass_cos {r : ℝ} (hr : 0 ≤ r) (m : ℝ) (g : 𝓢(E, ℂ
         cosineFourier u g x
 ```
 
-**`KleinGordon.hasDerivAt_sineEvolution_zero`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean#L184).
+**`KleinGordon.hasDerivAt_sineEvolution_zero`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean#L184).
 
 > **The cosine evolution is the derivative of the sine evolution.**
 
@@ -72,20 +72,20 @@ lemma hasDerivAt_sineEvolution_zero (g : 𝓢(E, ℂ)) (x : E) (u₀ : ℝ) :
     HasDerivAt (fun u : ℝ => sineEvolution ℂ u 0 g x) (cosineFourier u₀ g x) u₀
 ```
 
-**`KleinGordon.cosineFourier_neg`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean#L237).
+**`KleinGordon.cosineFourier_neg`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean#L237).
 
 ```lean
 lemma cosineFourier_neg (u : ℝ) (g : 𝓢(E, ℂ)) (x : E) :
     cosineFourier (-u) g x = cosineFourier u g x
 ```
 
-**`KleinGordon.continuous_cosineFourier`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean#L243).
+**`KleinGordon.continuous_cosineFourier`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean#L243).
 
 ```lean
 lemma continuous_cosineFourier (g : 𝓢(E, ℂ)) (x : E) : Continuous fun u => cosineFourier u g x
 ```
 
-**`KleinGordon.sineEvolution_mass_zero`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean#L268).
+**`KleinGordon.sineEvolution_mass_zero`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean#L268).
 
 > **The massive sine evolution in terms of the massless one.** The massive sine evolution is the
 > massless one at the radius plus a Bessel average of the massless sine evolution over smaller
@@ -109,4 +109,4 @@ lemma sineEvolution_mass_zero {r : ℝ} (hr : 0 ≤ r) (m : ℝ) (g : 𝓢(E, �
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean)

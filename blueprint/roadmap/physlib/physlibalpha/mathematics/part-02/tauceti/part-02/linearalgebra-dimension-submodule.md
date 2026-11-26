@@ -8,7 +8,7 @@ proof: formalized
 
 # Intersections of submodules by dimension
 
-The module `PhyslibAlpha.Mathematics.TauCeti.LinearAlgebra.Dimension.Submodule`, [PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Dimension/Submodule.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Dimension/Submodule.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.LinearAlgebra.Dimension.Submodule`, [PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Dimension/Submodule.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Dimension/Submodule.lean): 1 declaration, 1 with a docstring.
 
 > A dimension-counting criterion for nontrivial submodule intersection.
 
@@ -26,7 +26,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.LinearAlgebra.Dimension.Submodule`,
 
 ## A. Development
 
-**`Submodule.inf_ne_bot_of_finrank_lt`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Dimension/Submodule.lean#L44).
+**`Submodule.inf_ne_bot_of_finrank_lt`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Dimension/Submodule.lean#L44).
 
 > Two subspaces whose dimensions sum to more than the dimension of the ambient
 > space have nontrivial intersection.
@@ -42,4 +42,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Dimension/Submodule.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Dimension/Submodule.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Dimension/Submodule.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/LinearAlgebra/Dimension/Submodule.lean)

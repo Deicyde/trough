@@ -8,7 +8,7 @@ proof: formalized
 
 # Derivatives of Lorentz velocities
 
-The module `Physlib.Relativity.Tensors.RealTensor.Velocity.Deriv`, [Physlib/Relativity/Tensors/RealTensor/Velocity/Deriv.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Velocity/Deriv.lean): 2 declarations, 2 with a docstring.
+The module `Physlib.Relativity.Tensors.RealTensor.Velocity.Deriv`, [Physlib/Relativity/Tensors/RealTensor/Velocity/Deriv.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Velocity/Deriv.lean): 2 declarations, 2 with a docstring.
 
 > Derivatives of unit four-velocity curves and the spatial-part constructor.
 
@@ -34,7 +34,7 @@ The module `Physlib.Relativity.Tensors.RealTensor.Velocity.Deriv`, [Physlib/Rela
 
 ## A. Derivative orthogonality
 
-**`Lorentz.Velocity.minkowskiProduct_eq_zero_of_hasDerivAt`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Velocity/Deriv.lean#L55).
+**`Lorentz.Velocity.minkowskiProduct_eq_zero_of_hasDerivAt`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Velocity/Deriv.lean#L55).
 
 > The derivative of a curve of unit future-directed four-velocities is Minkowski
 > orthogonal to its value.
@@ -47,7 +47,7 @@ lemma minkowskiProduct_eq_zero_of_hasDerivAt {d : ℕ} {u : ℝ → Velocity d}
 
 ## B. Derivative of the spatial-part constructor
 
-**`Lorentz.Velocity.hasDerivAt_ofSpatialPart`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Velocity/Deriv.lean#L70).
+**`Lorentz.Velocity.hasDerivAt_ofSpatialPart`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Velocity/Deriv.lean#L70).
 
 > The ambient derivative of the unit future-directed four-velocity determined by
 > a differentiable spatial-part curve.
@@ -66,4 +66,4 @@ lemma hasDerivAt_ofSpatialPart {d : ℕ} {p : ℝ → EuclideanSpace ℝ (Fin d)
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/RealTensor/Velocity/Deriv.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/RealTensor/Velocity/Deriv.lean)
+- [Physlib/Relativity/Tensors/RealTensor/Velocity/Deriv.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/RealTensor/Velocity/Deriv.lean)

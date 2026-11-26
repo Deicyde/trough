@@ -8,7 +8,7 @@ proof: formalized
 
 # The spectral forms of a bounded normal operator
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.UnitaryInfra.SesquilinearForm`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean): 87 declarations, 36 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.UnitaryInfra.SesquilinearForm`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean): 87 declarations, 36 with a docstring.
 
 > Complex measures `⟪y, E(·) x⟫` of a bounded normal operator and their sesquilinear forms.
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.UnitaryInfra
 
 > * None.
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CompactPositiveFunctional`**, a structure, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L75).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CompactPositiveFunctional`**, a structure, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L75).
 
 > A positive scalar functional on a compact spectrum.
 
@@ -47,7 +47,7 @@ structure CompactPositiveFunctional where
   functional : CompactlySupportedContinuousMap X ℝ →ₚ[ℝ] ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CompactPositiveFunctional.measure`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L84).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CompactPositiveFunctional.measure`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L84).
 
 > The regular Borel measure represented by the scalar functional.
 
@@ -55,20 +55,20 @@ structure CompactPositiveFunctional where
 noncomputable def measure : Measure X
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CompactPositiveFunctional.regular`**, an instance, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L86).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CompactPositiveFunctional.regular`**, an instance, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L86).
 
 ```lean
 instance regular : (Λ.measure).Regular
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CompactPositiveFunctional.integral`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L90).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CompactPositiveFunctional.integral`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L90).
 
 ```lean
 lemma integral (f : CompactlySupportedContinuousMap X ℝ) :
     ∫ x, f x ∂Λ.measure = Λ.functional f
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CompactPositiveFunctional.integral_eq_zero_of_support_disjoint`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L94).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CompactPositiveFunctional.integral_eq_zero_of_support_disjoint`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L94).
 
 ```lean
 lemma integral_eq_zero_of_support_disjoint {f : CompactlySupportedContinuousMap X ℝ}
@@ -76,7 +76,7 @@ lemma integral_eq_zero_of_support_disjoint {f : CompactlySupportedContinuousMap 
     ∫ x, f x ∂(Λ.measure.restrict S) = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CompactPositiveFunctional.measure_ext`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L101).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CompactPositiveFunctional.measure_ext`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L101).
 
 ```lean
 lemma measure_ext {Λ₁ Λ₂ : CompactPositiveFunctional (X := X)}
@@ -86,7 +86,7 @@ lemma measure_ext {Λ₁ Λ₂ : CompactPositiveFunctional (X := X)}
 
 ## A. Integrals along the range map
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.pullbackPairing`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L121).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.pullbackPairing`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L121).
 
 > Pull a bilinear pairing back along a continuous linear map in its second argument.
 
@@ -95,7 +95,7 @@ def pullbackPairing (L : F →L[ℝ] G) (B : E →L[ℝ] G →L[ℝ] K) :
     E →L[ℝ] F →L[ℝ] K
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.transpose_mapRange_pullback`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L126).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.transpose_mapRange_pullback`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L126).
 
 ```lean
 lemma transpose_mapRange_pullback (μ : VectorMeasure X F) (L : F →L[ℝ] G)
@@ -104,7 +104,7 @@ lemma transpose_mapRange_pullback (μ : VectorMeasure X F) (L : F →L[ℝ] G)
       μ.transpose (pullbackPairing L B)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integral_mapRange_pullback`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L135).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integral_mapRange_pullback`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L135).
 
 ```lean
 lemma integral_mapRange_pullback (μ : VectorMeasure X F) (L : F →L[ℝ] G)
@@ -116,7 +116,7 @@ lemma integral_mapRange_pullback (μ : VectorMeasure X F) (L : F →L[ℝ] G)
 
 ## B. Complexification of finite signed measures
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.complexSignedPairing`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L157).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.complexSignedPairing`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L157).
 
 > The pairing used for a complex-valued function against a real signed measure.
 
@@ -124,7 +124,7 @@ lemma integral_mapRange_pullback (μ : VectorMeasure X F) (L : F →L[ℝ] G)
 def complexSignedPairing : ℂ →L[ℝ] ℝ →L[ℝ] ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.postcomposePairing`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L162).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.postcomposePairing`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L162).
 
 > Postcompose a pairing `E →L[ℝ] F →L[ℝ] G` with a continuous linear map `G →L[ℝ] K`, giving a
 > pairing `E →L[ℝ] F →L[ℝ] K`.
@@ -139,7 +139,7 @@ def postcomposePairing {E F G K : Type*}
     E →L[ℝ] F →L[ℝ] K
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.transpose_postcomposePairing_apply`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L180).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.transpose_postcomposePairing_apply`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L180).
 
 ```lean
 lemma transpose_postcomposePairing_apply {X E F G K : Type*} [MeasurableSpace X]
@@ -152,7 +152,7 @@ lemma transpose_postcomposePairing_apply {X E F G K : Type*} [MeasurableSpace X]
     μ.transpose (postcomposePairing C B) s x = C (μ.transpose B s x)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.setToL1S_compContinuousLinearMap`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L195).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.setToL1S_compContinuousLinearMap`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L195).
 
 ```lean
 lemma setToL1S_compContinuousLinearMap {X E F G : Type*} [MeasurableSpace X]
@@ -166,7 +166,7 @@ lemma setToL1S_compContinuousLinearMap {X E F G : Type*} [MeasurableSpace X]
     L1.SimpleFunc.setToL1S T' f = C (L1.SimpleFunc.setToL1S T f)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.setToL1_compContinuousLinearMap`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L212).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.setToL1_compContinuousLinearMap`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L212).
 
 ```lean
 lemma setToL1_compContinuousLinearMap {X E F G : Type*} [MeasurableSpace X]
@@ -181,7 +181,7 @@ lemma setToL1_compContinuousLinearMap {X E F G : Type*} [MeasurableSpace X]
     L1.setToL1 hT' f = C (L1.setToL1 hT f)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.setToFun_compContinuousLinearMap`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L230).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.setToFun_compContinuousLinearMap`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L230).
 
 ```lean
 lemma setToFun_compContinuousLinearMap {X E F G : Type*} [MeasurableSpace X]
@@ -196,7 +196,7 @@ lemma setToFun_compContinuousLinearMap {X E F G : Type*} [MeasurableSpace X]
     MeasureTheory.setToFun μ T' hT' f = C (MeasureTheory.setToFun μ T hT f)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integral_postcomposePairing`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L243).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integral_postcomposePairing`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L243).
 
 ```lean
 lemma integral_postcomposePairing {X E F G K : Type*} [MeasurableSpace X]
@@ -210,7 +210,7 @@ lemma integral_postcomposePairing {X E F G K : Type*} [MeasurableSpace X]
       ∫ᵛ x, f x ∂[postcomposePairing C B; μ]
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.imaginaryOfRealCLM`**, a def, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L265).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.imaginaryOfRealCLM`**, a def, [line 265](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L265).
 
 > Multiplication by `I`, followed by the canonical embedding of a real signed measure into a
 > complex vector measure.
@@ -219,13 +219,13 @@ lemma integral_postcomposePairing {X E F G K : Type*} [MeasurableSpace X]
 def imaginaryOfRealCLM : ℝ →L[ℝ] ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.imaginaryOfRealCLM_apply`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L269).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.imaginaryOfRealCLM_apply`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L269).
 
 ```lean
 lemma imaginaryOfRealCLM_apply (r : ℝ) : imaginaryOfRealCLM r = Complex.I * r
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.signedMeasure_toComplexMeasure_eq_add_mapRange`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L272).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.signedMeasure_toComplexMeasure_eq_add_mapRange`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L272).
 
 ```lean
 lemma signedMeasure_toComplexMeasure_eq_add_mapRange
@@ -235,7 +235,7 @@ lemma signedMeasure_toComplexMeasure_eq_add_mapRange
         t.mapRange imaginaryOfRealCLM.toAddMonoidHom imaginaryOfRealCLM.continuous
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integral_toComplexMeasure_eq_add_mapRange`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L286).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integral_toComplexMeasure_eq_add_mapRange`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L286).
 
 ```lean
 lemma integral_toComplexMeasure_eq_add_mapRange
@@ -251,7 +251,7 @@ lemma integral_toComplexMeasure_eq_add_mapRange
         t.mapRange imaginaryOfRealCLM.toAddMonoidHom imaginaryOfRealCLM.continuous]
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.pullbackPairing_ofReal_lsmul`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L300).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.pullbackPairing_ofReal_lsmul`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L300).
 
 ```lean
 lemma pullbackPairing_ofReal_lsmul :
@@ -259,7 +259,7 @@ lemma pullbackPairing_ofReal_lsmul :
       (ContinuousLinearMap.lsmul ℝ ℂ (E := ℂ)) = complexSignedPairing
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integral_mapRange_ofReal_signedMeasure`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L307).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integral_mapRange_ofReal_signedMeasure`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L307).
 
 ```lean
 lemma integral_mapRange_ofReal_signedMeasure
@@ -271,7 +271,7 @@ lemma integral_mapRange_ofReal_signedMeasure
       ∫ᵛ x, f x ∂<•μ.toSignedMeasure
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integrable_mapRange_toSignedMeasure`**, a lemma, [line 343](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L343).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integrable_mapRange_toSignedMeasure`**, a lemma, [line 343](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L343).
 
 ```lean
 lemma integrable_mapRange_toSignedMeasure
@@ -281,7 +281,7 @@ lemma integrable_mapRange_toSignedMeasure
     (μ.toSignedMeasure.mapRange L.toAddMonoidHom L.continuous).Integrable f
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integrable_mapRange_ofReal_signedMeasure`**, a lemma, [line 368](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L368).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integrable_mapRange_ofReal_signedMeasure`**, a lemma, [line 368](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L368).
 
 ```lean
 lemma integrable_mapRange_ofReal_signedMeasure
@@ -291,7 +291,7 @@ lemma integrable_mapRange_ofReal_signedMeasure
       Complex.ofRealCLM.continuous).Integrable f
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integrable_mapRange_imaginaryOfReal_signedMeasure`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L377).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integrable_mapRange_imaginaryOfReal_signedMeasure`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L377).
 
 ```lean
 lemma integrable_mapRange_imaginaryOfReal_signedMeasure
@@ -301,7 +301,7 @@ lemma integrable_mapRange_imaginaryOfReal_signedMeasure
       imaginaryOfRealCLM.continuous).Integrable f
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.mapRange_sub_toSignedMeasure`**, a lemma, [line 387](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L387).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.mapRange_sub_toSignedMeasure`**, a lemma, [line 387](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L387).
 
 ```lean
 lemma mapRange_sub_toSignedMeasure
@@ -312,7 +312,7 @@ lemma mapRange_sub_toSignedMeasure
         ν.toSignedMeasure.mapRange L.toAddMonoidHom L.continuous
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integral_mapRange_ofReal_signedDifference`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L400).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integral_mapRange_ofReal_signedDifference`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L400).
 
 ```lean
 lemma integral_mapRange_ofReal_signedDifference
@@ -325,7 +325,7 @@ lemma integral_mapRange_ofReal_signedDifference
       c • ((∫ x, f x ∂μ) - ∫ x, f x ∂ν)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.imaginaryMulCLM`**, a def, [line 419](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L419).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.imaginaryMulCLM`**, a def, [line 419](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L419).
 
 > Multiplication by `I`, as a continuous ℝ-linear map on `ℂ`.
 
@@ -333,13 +333,13 @@ lemma integral_mapRange_ofReal_signedDifference
 def imaginaryMulCLM : ℂ →L[ℝ] ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.imaginaryMulCLM_apply`**, a lemma, [line 423](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L423).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.imaginaryMulCLM_apply`**, a lemma, [line 423](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L423).
 
 ```lean
 lemma imaginaryMulCLM_apply (z : ℂ) : imaginaryMulCLM z = Complex.I * z
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.imaginarySignedPairing`**, a def, [line 427](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L427).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.imaginarySignedPairing`**, a def, [line 427](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L427).
 
 > The `ℂ →L[ℝ] ℝ →L[ℝ] ℂ` pairing post-composed with multiplication by `I`.
 
@@ -347,7 +347,7 @@ lemma imaginaryMulCLM_apply (z : ℂ) : imaginaryMulCLM z = Complex.I * z
 def imaginarySignedPairing : ℂ →L[ℝ] ℝ →L[ℝ] ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.pullbackPairing_imaginaryOfReal_lsmul`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L430).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.pullbackPairing_imaginaryOfReal_lsmul`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L430).
 
 ```lean
 lemma pullbackPairing_imaginaryOfReal_lsmul :
@@ -355,7 +355,7 @@ lemma pullbackPairing_imaginaryOfReal_lsmul :
       (ContinuousLinearMap.lsmul ℝ ℂ (E := ℂ)) = imaginarySignedPairing
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integral_mapRange_imaginaryOfReal_signedMeasure`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L439).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integral_mapRange_imaginaryOfReal_signedMeasure`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L439).
 
 ```lean
 lemma integral_mapRange_imaginaryOfReal_signedMeasure
@@ -367,7 +367,7 @@ lemma integral_mapRange_imaginaryOfReal_signedMeasure
       Complex.I * (∫ x, f x ∂μ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integral_mapRange_imaginaryOfReal_signedDifference`**, a lemma, [line 479](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L479).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.integral_mapRange_imaginaryOfReal_signedDifference`**, a lemma, [line 479](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L479).
 
 ```lean
 lemma integral_mapRange_imaginaryOfReal_signedDifference
@@ -382,7 +382,7 @@ lemma integral_mapRange_imaginaryOfReal_signedDifference
 
 ## C. Finiteness of the polarized scalar measures
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.isFiniteMeasure_toComplexMeasure`**, a lemma, [line 501](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L501).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.isFiniteMeasure_toComplexMeasure`**, a lemma, [line 501](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L501).
 
 ```lean
 lemma isFiniteMeasure_toComplexMeasure
@@ -397,7 +397,7 @@ lemma isFiniteMeasure_toComplexMeasure
 > continuous functional calculus of a fixed normal operator: it is Step 2 of the idempotency
 > argument below, quantifying `0 ≤ A ≤ 1 ⟹ A ^ 2 ≤ A` into a norm bound.
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.norm_sq_le_inner_of_isPositive_of_le_one`**, a lemma, [line 534](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L534).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.norm_sq_le_inner_of_isPositive_of_le_one`**, a lemma, [line 534](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L534).
 
 > **The positive-contraction norm estimate.** If `0 ≤ A ≤ 1` in the Loewner order on
 > `H →L[ℂ] H`, then `‖A x‖ ^ 2 ≤ re ⟪x, A x⟫` for every `x`.  Proved from `A ^ 2 ≤ A`
@@ -412,7 +412,7 @@ lemma norm_sq_le_inner_of_isPositive_of_le_one {A : H →L[ℂ] H}
 
 ## E. Positive scalar functionals from the continuous functional calculus
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.realToComplexContinuousMap`**, a def, [line 570](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L570).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.realToComplexContinuousMap`**, a def, [line 570](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L570).
 
 > Regard a real-valued continuous function on the spectrum of a normal operator as a complex
 > valued one.  Keeping this map explicit prevents the real/complex scalar changes in the Riesz
@@ -424,7 +424,7 @@ noncomputable def realToComplexContinuousMap
     C(spectrum ℂ U, ℂ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.realToComplexContinuousMap_apply`**, a lemma, [line 578](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L578).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.realToComplexContinuousMap_apply`**, a lemma, [line 578](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L578).
 
 ```lean
 lemma realToComplexContinuousMap_apply
@@ -432,7 +432,7 @@ lemma realToComplexContinuousMap_apply
     realToComplexContinuousMap U f z = f z
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.realToComplexContinuousMap_add`**, a lemma, [line 584](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L584).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.realToComplexContinuousMap_add`**, a lemma, [line 584](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L584).
 
 ```lean
 lemma realToComplexContinuousMap_add
@@ -441,7 +441,7 @@ lemma realToComplexContinuousMap_add
       realToComplexContinuousMap U f + realToComplexContinuousMap U g
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.realToComplexContinuousMap_smul`**, a lemma, [line 592](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L592).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.realToComplexContinuousMap_smul`**, a lemma, [line 592](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L592).
 
 ```lean
 lemma realToComplexContinuousMap_smul (r : ℝ)
@@ -450,7 +450,7 @@ lemma realToComplexContinuousMap_smul (r : ℝ)
       (r : ℂ) • realToComplexContinuousMap U f
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcRealOperator`**, a def, [line 601](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L601).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcRealOperator`**, a def, [line 601](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L601).
 
 > The operator obtained by applying the complex continuous functional calculus to a real test
 > function.
@@ -460,7 +460,7 @@ noncomputable def cfcRealOperator
     (f : CompactlySupportedContinuousMap (spectrum ℂ U) ℝ) : H →L[ℂ] H
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcRealOperator_isSelfAdjoint`**, a lemma, [line 605](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L605).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcRealOperator_isSelfAdjoint`**, a lemma, [line 605](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L605).
 
 ```lean
 lemma cfcRealOperator_isSelfAdjoint
@@ -468,7 +468,7 @@ lemma cfcRealOperator_isSelfAdjoint
     IsSelfAdjoint (cfcRealOperator U hU f)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcRealOperator_nonneg`**, a lemma, [line 617](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L617).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcRealOperator_nonneg`**, a lemma, [line 617](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L617).
 
 ```lean
 lemma cfcRealOperator_nonneg
@@ -477,7 +477,7 @@ lemma cfcRealOperator_nonneg
     ContinuousLinearMap.IsPositive (cfcRealOperator U hU f)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarFunctional`**, a def, [line 638](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L638).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarFunctional`**, a def, [line 638](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L638).
 
 > The vector state of the continuous functional calculus, restricted to real test functions.
 > The positivity proof is the square-root argument above; this is the exact input required by
@@ -488,7 +488,7 @@ noncomputable def cfcScalarFunctional (x : H) :
     CompactPositiveFunctional (X := spectrum ℂ U)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarFunctional_apply`**, a lemma, [line 656](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L656).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarFunctional_apply`**, a lemma, [line 656](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L656).
 
 ```lean
 lemma cfcScalarFunctional_apply (x : H)
@@ -497,7 +497,7 @@ lemma cfcScalarFunctional_apply (x : H)
       RCLike.re ⟪x, cfcRealOperator U hU f x⟫_ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure`**, a def, [line 663](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L663).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure`**, a def, [line 663](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L663).
 
 > The scalar spectral measure supplied by Riesz--Markov for the vector state at `x`.
 
@@ -505,13 +505,13 @@ lemma cfcScalarFunctional_apply (x : H)
 noncomputable def cfcScalarMeasure (x : H) : Measure (spectrum ℂ U)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_isFinite`**, an instance, [line 666](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L666).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_isFinite`**, an instance, [line 666](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L666).
 
 ```lean
 instance cfcScalarMeasure_isFinite (x : H) : IsFiniteMeasure (cfcScalarMeasure U hU x)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_integral`**, a lemma, [line 670](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L670).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_integral`**, a lemma, [line 670](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L670).
 
 ```lean
 lemma cfcScalarMeasure_integral (x : H)
@@ -520,7 +520,7 @@ lemma cfcScalarMeasure_integral (x : H)
       RCLike.re ⟪x, cfcRealOperator U hU f x⟫_ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_integral_complex`**, a lemma, [line 676](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L676).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_integral_complex`**, a lemma, [line 676](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L676).
 
 ```lean
 lemma cfcScalarMeasure_integral_complex (x : H)
@@ -529,7 +529,7 @@ lemma cfcScalarMeasure_integral_complex (x : H)
       ⟪cfcRealOperator U hU f x, x⟫_ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcRealIntegral`**, a def, [line 694](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L694).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcRealIntegral`**, a def, [line 694](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L694).
 
 > The integral of a real function against the polarized measure.
 
@@ -538,7 +538,7 @@ noncomputable def polarizedCfcRealIntegral
     (f : CompactlySupportedContinuousMap (spectrum ℂ U) ℝ) (x y : H) : ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcRealIntegral_eq_inner`**, a lemma, [line 703](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L703).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcRealIntegral_eq_inner`**, a lemma, [line 703](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L703).
 
 ```lean
 lemma polarizedCfcRealIntegral_eq_inner
@@ -547,7 +547,7 @@ lemma polarizedCfcRealIntegral_eq_inner
       ⟪y, cfcRealOperator U hU f x⟫_ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.VectorStateSpectralData`**, a structure, [line 727](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L727).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.VectorStateSpectralData`**, a structure, [line 727](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L727).
 
 > The scalar half of the normal-operator spectral construction.  The operator-valued assembly
 > below uses this data to build the actual weak-operator spectral measure.
@@ -560,7 +560,7 @@ structure VectorStateSpectralData where
     ∫ z, f z ∂measure x = RCLike.re ⟪x, cfcRealOperator U hU f x⟫_ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcVectorStateSpectralData`**, a def, [line 734](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L734).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcVectorStateSpectralData`**, a def, [line 734](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L734).
 
 > The scalar spectral data of `U`'s continuous functional calculus.
 
@@ -568,7 +568,7 @@ structure VectorStateSpectralData where
 noncomputable def cfcVectorStateSpectralData : VectorStateSpectralData U hU
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_parallelogram`**, a lemma, [line 738](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L738).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_parallelogram`**, a lemma, [line 738](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L738).
 
 ```lean
 lemma cfcScalarMeasure_parallelogram (x y : H) :
@@ -577,21 +577,21 @@ lemma cfcScalarMeasure_parallelogram (x y : H) :
         (cfcScalarMeasure U hU y + cfcScalarMeasure U hU y)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_neg`**, a lemma, [line 768](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L768).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_neg`**, a lemma, [line 768](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L768).
 
 ```lean
 lemma cfcScalarMeasure_neg (x : H) :
     cfcScalarMeasure U hU (-x) = cfcScalarMeasure U hU x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_I_smul`**, a lemma, [line 778](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L778).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_I_smul`**, a lemma, [line 778](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L778).
 
 ```lean
 lemma cfcScalarMeasure_I_smul (x : H) :
     cfcScalarMeasure U hU (Complex.I • x) = cfcScalarMeasure U hU x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure`**, a def, [line 793](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L793).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure`**, a def, [line 793](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L793).
 
 > The complex measure `⟪y, E(·) x⟫`, obtained by polarizing the four measures `⟪v, E(·) v⟫`.
 
@@ -599,7 +599,7 @@ lemma cfcScalarMeasure_I_smul (x : H) :
 noncomputable def polarizedCfcScalarMeasure (x y : H) : ComplexMeasure (spectrum ℂ U)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_isFiniteMeasure`**, a lemma, [line 801](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L801).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_isFiniteMeasure`**, a lemma, [line 801](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L801).
 
 ```lean
 lemma polarizedCfcScalarMeasure_isFiniteMeasure (x y : H) :
@@ -607,7 +607,7 @@ lemma polarizedCfcScalarMeasure_isFiniteMeasure (x y : H) :
       (polarizedCfcScalarMeasure (hU := hU) U x y).variation
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_complexIntegral`**, a lemma, [line 853](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L853).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_complexIntegral`**, a lemma, [line 853](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L853).
 
 ```lean
 lemma polarizedCfcScalarMeasure_complexIntegral
@@ -617,7 +617,7 @@ lemma polarizedCfcScalarMeasure_complexIntegral
       polarizedCfcRealIntegral U hU f x y
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_complexIntegral_eq_inner`**, a lemma, [line 902](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L902).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_complexIntegral_eq_inner`**, a lemma, [line 902](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L902).
 
 ```lean
 lemma polarizedCfcScalarMeasure_complexIntegral_eq_inner
@@ -627,7 +627,7 @@ lemma polarizedCfcScalarMeasure_complexIntegral_eq_inner
       ⟪y, cfcRealOperator U hU f x⟫_ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_apply`**, a lemma, [line 910](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L910).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_apply`**, a lemma, [line 910](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L910).
 
 ```lean
 lemma polarizedCfcScalarMeasure_apply {x y : H}
@@ -643,7 +643,7 @@ lemma polarizedCfcScalarMeasure_apply {x y : H}
 
 ## F. Sesquilinearity of the polarized measure
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_parallelogram`**, a lemma, [line 927](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L927).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_parallelogram`**, a lemma, [line 927](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L927).
 
 > The real-valued version of the parallelogram law, at a fixed (not necessarily measurable)
 > set `S`.  This is the algebraic engine behind the sesquilinearity proofs below.
@@ -654,28 +654,28 @@ lemma cfcScalarMeasure_real_parallelogram (a b : H) (S : Set (spectrum ℂ U)) :
       2 * (cfcScalarMeasure U hU a).real S + 2 * (cfcScalarMeasure U hU b).real S
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_neg`**, a lemma, [line 942](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L942).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_neg`**, a lemma, [line 942](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L942).
 
 ```lean
 lemma cfcScalarMeasure_real_neg (a : H) (S : Set (spectrum ℂ U)) :
     (cfcScalarMeasure U hU (-a)).real S = (cfcScalarMeasure U hU a).real S
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_I_smul`**, a lemma, [line 946](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L946).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_I_smul`**, a lemma, [line 946](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L946).
 
 ```lean
 lemma cfcScalarMeasure_real_I_smul (a : H) (S : Set (spectrum ℂ U)) :
     (cfcScalarMeasure U hU (Complex.I • a)).real S = (cfcScalarMeasure U hU a).real S
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_nonneg`**, a lemma, [line 950](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L950).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_nonneg`**, a lemma, [line 950](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L950).
 
 ```lean
 lemma cfcScalarMeasure_real_nonneg (a : H) (S : Set (spectrum ℂ U)) :
     0 ≤ (cfcScalarMeasure U hU a).real S
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_univ`**, a lemma, [line 955](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L955).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_univ`**, a lemma, [line 955](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L955).
 
 > The Riesz measure for the vector state at `x` has total mass `‖x‖ ^ 2`: the vector-state
 > counterpart of `cfcHom hU 1 = 1`.
@@ -685,14 +685,14 @@ lemma cfcScalarMeasure_real_univ (x : H) :
     (cfcScalarMeasure U hU x).real Set.univ = ‖x‖ ^ 2
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_le_univ`**, a lemma, [line 977](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L977).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_le_univ`**, a lemma, [line 977](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L977).
 
 ```lean
 lemma cfcScalarMeasure_real_le_univ (a : H) (S : Set (spectrum ℂ U)) :
     (cfcScalarMeasure U hU a).real S ≤ ‖a‖ ^ 2
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_polar_symm`**, a lemma, [line 984](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L984).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_polar_symm`**, a lemma, [line 984](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L984).
 
 > The real polarization `Q(a + b) - Q(a - b)` of the diagonal measures is symmetric in `a` and
 > `b`.
@@ -703,7 +703,7 @@ lemma cfcScalarMeasure_real_polar_symm (a b : H) (S : Set (spectrum ℂ U)) :
       (cfcScalarMeasure U hU (b + a)).real S - (cfcScalarMeasure U hU (b - a)).real S
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_polar_add_left`**, a lemma, [line 994](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L994).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_polar_add_left`**, a lemma, [line 994](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L994).
 
 > First-argument additivity of the real polarization `Q(a+b) - Q(a-b)`, established by pure
 > algebra from the parallelogram law (`cfcScalarMeasure_real_parallelogram`); no continuity is
@@ -717,7 +717,7 @@ lemma cfcScalarMeasure_real_polar_add_left (x y z : H) (S : Set (spectrum ℂ U)
         ((cfcScalarMeasure U hU (y + z)).real S - (cfcScalarMeasure U hU (y - z)).real S)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_polar_add_right`**, a lemma, [line 1018](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1018).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_real_polar_add_right`**, a lemma, [line 1018](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1018).
 
 > Second-argument additivity of the real polarization, obtained from first-argument additivity
 > (`cfcScalarMeasure_real_polar_add_left`) via the symmetry `cfcScalarMeasure_real_polar_symm`.
@@ -730,7 +730,7 @@ lemma cfcScalarMeasure_real_polar_add_right (a b c : H) (S : Set (spectrum ℂ U
         ((cfcScalarMeasure U hU (a + c)).real S - (cfcScalarMeasure U hU (a - c)).real S)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_add_right`**, a lemma, [line 1038](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1038).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_add_right`**, a lemma, [line 1038](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1038).
 
 > Additivity of the polarized measure in its second (right) vector argument, for a fixed
 > measurable set `S`.  This is the sesquilinearity step promised in the module docstring: it
@@ -745,7 +745,7 @@ lemma polarizedCfcScalarMeasure_add_right (x y₁ y₂ : H) {S : Set (spectrum �
         polarizedCfcScalarMeasure (hU := hU) U x y₂ S
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_add_left`**, a lemma, [line 1062](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1062).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_add_left`**, a lemma, [line 1062](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1062).
 
 > Additivity of the polarized measure in its first (left) vector argument, for a fixed
 > measurable set `S`.
@@ -758,7 +758,7 @@ lemma polarizedCfcScalarMeasure_add_left (x₁ x₂ y : H) {S : Set (spectrum �
         polarizedCfcScalarMeasure (hU := hU) U x₂ y S
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_I_smul_right`**, a lemma, [line 1084](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1084).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_I_smul_right`**, a lemma, [line 1084](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1084).
 
 > Multiplying the second vector by `i` multiplies the polarized measure by `-i`.
 
@@ -769,7 +769,7 @@ lemma polarizedCfcScalarMeasure_I_smul_right (x y : H) {S : Set (spectrum ℂ U)
       -Complex.I * polarizedCfcScalarMeasure (hU := hU) U x y S
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_I_smul_left`**, a lemma, [line 1101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1101).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_I_smul_left`**, a lemma, [line 1101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1101).
 
 > Multiplying the first vector by `i` multiplies the polarized measure by `i`.
 
@@ -780,7 +780,7 @@ lemma polarizedCfcScalarMeasure_I_smul_left (x y : H) {S : Set (spectrum ℂ U)}
       Complex.I * polarizedCfcScalarMeasure (hU := hU) U x y S
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_norm_le`**, a lemma, [line 1122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1122).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_norm_le`**, a lemma, [line 1122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1122).
 
 > A crude but sufficient bound on the polarized measure, from the parallelogram law and
 > `cfcScalarMeasure_real_le_univ`.  This is enough to see `(x, y) ↦ polarizedCfcScalarMeasure U hU
@@ -792,7 +792,7 @@ lemma polarizedCfcScalarMeasure_norm_le (x y : H) {S : Set (spectrum ℂ U)}
     ‖polarizedCfcScalarMeasure (hU := hU) U x y S‖ ≤ ‖x‖ ^ 2 + ‖y‖ ^ 2
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.real_linear_of_additive_bounded`**, a lemma, [line 1161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1161).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.real_linear_of_additive_bounded`**, a lemma, [line 1161](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1161).
 
 > An additive `ℝ → ℂ` function that is bounded on `[-1, 1]` is automatically `ℝ`-linear.  This
 > packages the classical "Cauchy's functional equation" regularity argument (additive + locally
@@ -806,7 +806,7 @@ lemma real_linear_of_additive_bounded {φ : ℝ → ℂ}
     φ r = (r : ℂ) * φ 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_real_smul_right`**, a lemma, [line 1208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1208).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_real_smul_right`**, a lemma, [line 1208](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1208).
 
 > The polarized measure is real homogeneous in the second vector.
 
@@ -817,7 +817,7 @@ lemma polarizedCfcScalarMeasure_real_smul_right (x y : H) (r : ℝ) {S : Set (sp
       (r : ℂ) * polarizedCfcScalarMeasure (hU := hU) U x y S
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_real_smul_left`**, a lemma, [line 1233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1233).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_real_smul_left`**, a lemma, [line 1233](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1233).
 
 > Real-scalar homogeneity in the left (first) argument, the counterpart of
 > `polarizedCfcScalarMeasure_real_smul_right` needed for conjugate-linearity in `x` (real scalars
@@ -832,7 +832,7 @@ lemma polarizedCfcScalarMeasure_real_smul_left (x y : H) (r : ℝ) {S : Set (spe
 
 ## G. Polarization
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.inner_map_polarization_continuous`**, a lemma, [line 1261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1261).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.inner_map_polarization_continuous`**, a lemma, [line 1261](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1261).
 
 > The standard complex polarization identity, exposed at the continuous-operator level for the
 > assembly proof.  The scalar measures obtained above will be polarized with precisely these four
@@ -851,7 +851,7 @@ lemma inner_map_polarization_continuous (A : H →L[ℂ] H) (x y : H) :
 > Writing `c = c.re + c.im i`, homogeneity for real scalars and for `i` gives complex linearity in the
 > first vector and conjugate linearity in the second.
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_smul_left`**, a lemma, [line 1274](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1274).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_smul_left`**, a lemma, [line 1274](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1274).
 
 > Full `ℂ`-linearity of the polarized measure in its first (left) argument.
 
@@ -862,7 +862,7 @@ lemma polarizedCfcScalarMeasure_smul_left (c : ℂ) (x y : H) {S : Set (spectrum
       c * polarizedCfcScalarMeasure (hU := hU) U x y S
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_smul_right`**, a lemma, [line 1291](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1291).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_smul_right`**, a lemma, [line 1291](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1291).
 
 > Full conjugate-`ℂ`-linearity of the polarized measure in its second (right) argument.
 
@@ -873,21 +873,21 @@ lemma polarizedCfcScalarMeasure_smul_right (c : ℂ) (x y : H) {S : Set (spectru
       (starRingEnd ℂ c) * polarizedCfcScalarMeasure (hU := hU) U x y S
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_zero_left`**, a lemma, [line 1311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1311).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_zero_left`**, a lemma, [line 1311](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1311).
 
 ```lean
 lemma polarizedCfcScalarMeasure_zero_left (y : H) {S : Set (spectrum ℂ U)}
     (hS : MeasurableSet S) : polarizedCfcScalarMeasure (hU := hU) U 0 y S = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_zero_right`**, a lemma, [line 1316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1316).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_zero_right`**, a lemma, [line 1316](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1316).
 
 ```lean
 lemma polarizedCfcScalarMeasure_zero_right (x : H) {S : Set (spectrum ℂ U)}
     (hS : MeasurableSet S) : polarizedCfcScalarMeasure (hU := hU) U x 0 S = 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_norm_le_mul`**, a lemma, [line 1322](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1322).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_norm_le_mul`**, a lemma, [line 1322](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1322).
 
 > The polarized measure is bounded by `‖x‖ ‖y‖`.
 
@@ -899,7 +899,7 @@ lemma polarizedCfcScalarMeasure_norm_le_mul (x y : H) {S : Set (spectrum ℂ U)}
 
 ## I. Riesz representation of the polarized measure
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcSesquilinearFormAux`**, a def, [line 1361](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1361).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcSesquilinearFormAux`**, a def, [line 1361](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1361).
 
 > The algebraic (not-yet-continuous) sesquilinear form representing `S`, conjugate-linear in the
 > first argument and linear in the second — the convention Mathlib's
@@ -910,7 +910,7 @@ noncomputable def cfcSesquilinearFormAux (S : Set (spectrum ℂ U)) (hS : Measur
     H →ₛₗ[starRingEnd ℂ] H →ₗ[ℂ] ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcSesquilinearFormAux_apply`**, a lemma, [line 1376](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1376).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcSesquilinearFormAux_apply`**, a lemma, [line 1376](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1376).
 
 ```lean
 lemma cfcSesquilinearFormAux_apply (S : Set (spectrum ℂ U)) (hS : MeasurableSet S) (x y : H) :
@@ -918,7 +918,7 @@ lemma cfcSesquilinearFormAux_apply (S : Set (spectrum ℂ U)) (hS : MeasurableSe
       starRingEnd ℂ (polarizedCfcScalarMeasure (hU := hU) U x y S)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcSesquilinearForm`**, a def, [line 1382](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1382).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcSesquilinearForm`**, a def, [line 1382](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1382).
 
 > The continuous sesquilinear form, in the shape `InnerProductSpace.continuousLinearMapOfBilin`
 > consumes.
@@ -928,7 +928,7 @@ noncomputable def cfcSesquilinearForm (S : Set (spectrum ℂ U)) (hS : Measurabl
     H →L⋆[ℂ] H →L[ℂ] ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcSesquilinearForm_apply`**, a lemma, [line 1389](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1389).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcSesquilinearForm_apply`**, a lemma, [line 1389](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean#L1389).
 
 ```lean
 lemma cfcSesquilinearForm_apply (S : Set (spectrum ℂ U)) (hS : MeasurableSet S) (x y : H) :
@@ -942,4 +942,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean)

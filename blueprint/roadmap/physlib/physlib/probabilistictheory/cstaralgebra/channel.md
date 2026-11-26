@@ -8,7 +8,7 @@ proof: formalized
 
 # Channels of C⋆-algebras
 
-The module `Physlib.ProbabilisticTheory.CStarAlgebra.Channel`, [Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean): 13 declarations, 12 with a docstring.
+The module `Physlib.ProbabilisticTheory.CStarAlgebra.Channel`, [Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean): 13 declarations, 12 with a docstring.
 
 > Channels between the self-adjoint parts of C⋆-algebras extend uniquely to all operators.
 
@@ -34,7 +34,7 @@ The module `Physlib.ProbabilisticTheory.CStarAlgebra.Channel`, [Physlib/Probabil
 
 ### A.1. The extension
 
-**`Channel.complexExtension`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L64).
+**`Channel.complexExtension`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L64).
 
 > The complex-linear extension of a real-linear map on self-adjoint operators to all
 > operators: `a ↦ φ (ℜ a) + i φ (ℑ a)`.
@@ -43,7 +43,7 @@ The module `Physlib.ProbabilisticTheory.CStarAlgebra.Channel`, [Physlib/Probabil
 noncomputable def complexExtension (φ : selfAdjoint A →ₗ[ℝ] B) : A →ₗ[ℂ] B
 ```
 
-**`Channel.complexExtension_apply`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L77).
+**`Channel.complexExtension_apply`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L77).
 
 ```lean
 lemma complexExtension_apply (φ : selfAdjoint A →ₗ[ℝ] B) (a : A) :
@@ -52,7 +52,7 @@ lemma complexExtension_apply (φ : selfAdjoint A →ₗ[ℝ] B) (a : A) :
 
 ### A.2. Agreement and uniqueness
 
-**`Channel.complexExtension_coe`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L88).
+**`Channel.complexExtension_coe`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L88).
 
 > On self-adjoint operators the extension is the original map.
 
@@ -61,7 +61,7 @@ lemma complexExtension_coe (φ : selfAdjoint A →ₗ[ℝ] B) (a : selfAdjoint A
     complexExtension φ (a : A) = φ a
 ```
 
-**`Channel.complexExtension_unique`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L93).
+**`Channel.complexExtension_unique`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L93).
 
 > A complex-linear map is determined by its values on self-adjoint operators.
 
@@ -72,7 +72,7 @@ lemma complexExtension_unique (φ : selfAdjoint A →ₗ[ℝ] B) (f : A →ₗ[�
 
 ## B. Channels on all operators
 
-**`Channel.extend`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L108).
+**`Channel.extend`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L108).
 
 > Extend a channel between observables to a positive map between all operators.
 
@@ -80,7 +80,7 @@ lemma complexExtension_unique (φ : selfAdjoint A →ₗ[ℝ] B) (f : A →ₗ[�
 noncomputable def extend (Φ : Channel (ofCStarAlgebra 𝒜) (ofCStarAlgebra ℬ)) : 𝒜 →ₚ[ℂ] ℬ
 ```
 
-**`Channel.extend_apply`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L117).
+**`Channel.extend_apply`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L117).
 
 > Extension agrees with the channel on every observable.
 
@@ -89,7 +89,7 @@ lemma extend_apply (Φ : Channel (ofCStarAlgebra 𝒜) (ofCStarAlgebra ℬ)) (A 
     Φ.extend (A : 𝒜) = (Φ A : ℬ)
 ```
 
-**`Channel.extend_one`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L123).
+**`Channel.extend_one`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L123).
 
 > The extended channel preserves the identity.
 
@@ -97,7 +97,7 @@ lemma extend_apply (Φ : Channel (ofCStarAlgebra 𝒜) (ofCStarAlgebra ℬ)) (A 
 lemma extend_one (Φ : Channel (ofCStarAlgebra 𝒜) (ofCStarAlgebra ℬ)) : Φ.extend 1 = 1
 ```
 
-**`Channel.ofComplex`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L127).
+**`Channel.ofComplex`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L127).
 
 > A unital positive map between all operators restricts to a channel between observables.
 
@@ -106,7 +106,7 @@ noncomputable def ofComplex (f : 𝒜 →ₚ[ℂ] ℬ) (h : f 1 = 1) :
     Channel (ofCStarAlgebra 𝒜) (ofCStarAlgebra ℬ)
 ```
 
-**`Channel.coe_ofComplex_apply`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L137).
+**`Channel.coe_ofComplex_apply`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L137).
 
 > The restricted channel acts as the original map.
 
@@ -115,7 +115,7 @@ lemma coe_ofComplex_apply (f : 𝒜 →ₚ[ℂ] ℬ) (h : f 1 = 1) (x : selfAdjo
     (ofComplex f h x : ℬ) = f x
 ```
 
-**`Channel.ofComplex_extend`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L142).
+**`Channel.ofComplex_extend`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L142).
 
 > Restricting an extended channel recovers the original channel.
 
@@ -124,7 +124,7 @@ lemma ofComplex_extend (Φ : Channel (ofCStarAlgebra 𝒜) (ofCStarAlgebra ℬ))
     ofComplex Φ.extend Φ.extend_one = Φ
 ```
 
-**`Channel.extend_ofComplex`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L148).
+**`Channel.extend_ofComplex`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L148).
 
 > A unital positive map is determined by its restriction to observables.
 
@@ -132,7 +132,7 @@ lemma ofComplex_extend (Φ : Channel (ofCStarAlgebra 𝒜) (ofCStarAlgebra ℬ))
 lemma extend_ofComplex (f : 𝒜 →ₚ[ℂ] ℬ) (h : f 1 = 1) : (ofComplex f h).extend = f
 ```
 
-**`Channel.complexEquiv`**, a def, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L154).
+**`Channel.complexEquiv`**, a def, [line 154](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L154).
 
 > Channels between two systems are the same as unital positive maps between all their
 > operators.
@@ -142,7 +142,7 @@ noncomputable def complexEquiv :
     Channel (ofCStarAlgebra 𝒜) (ofCStarAlgebra ℬ) ≃ {f : 𝒜 →ₚ[ℂ] ℬ // f 1 = 1}
 ```
 
-**`Channel.extend_comp`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L162).
+**`Channel.extend_comp`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean#L162).
 
 > Extending a composite channel agrees with composing the extensions.
 
@@ -158,4 +158,4 @@ lemma extend_comp (Ψ : Channel (ofCStarAlgebra ℬ) (ofCStarAlgebra 𝒞))
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean)
+- [Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/CStarAlgebra/Channel.lean)

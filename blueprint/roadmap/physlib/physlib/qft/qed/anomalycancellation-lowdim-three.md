@@ -8,12 +8,12 @@ proof: formalized
 
 # The Pure U(1) case with 3 fermion
 
-The module `Physlib.QFT.QED.AnomalyCancellation.LowDim.Three`, [Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean): 5 declarations, 1 with a docstring.
+The module `Physlib.QFT.QED.AnomalyCancellation.LowDim.Three`, [Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean): 5 declarations, 1 with a docstring.
 
 > We show that S is a solution only if one of its charges is zero.
 > We define a surjective map from `LinSols` with a charge equal to zero to `Sols`.
 
-**`PureU1.Three.cube_for_linSol'`**, a lemma, [line 27](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean#L27).
+**`PureU1.Three.cube_for_linSol'`**, a lemma, [line 27](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean#L27).
 
 ```lean
 lemma cube_for_linSol' (S : (PureU1 3).LinSols) :
@@ -21,7 +21,7 @@ lemma cube_for_linSol' (S : (PureU1 3).LinSols) :
     (PureU1 3).cubicACC S.val = 0
 ```
 
-**`PureU1.Three.cube_for_linSol`**, a lemma, [line 38](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean#L38).
+**`PureU1.Three.cube_for_linSol`**, a lemma, [line 38](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean#L38).
 
 ```lean
 lemma cube_for_linSol (S : (PureU1 3).LinSols) :
@@ -29,14 +29,14 @@ lemma cube_for_linSol (S : (PureU1 3).LinSols) :
     (PureU1 3).cubicACC S.val = 0
 ```
 
-**`PureU1.Three.three_sol_zero`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean#L44).
+**`PureU1.Three.three_sol_zero`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean#L44).
 
 ```lean
 lemma three_sol_zero (S : (PureU1 3).Sols) : S.val (0 : Fin 3) = 0 ∨ S.val (1 : Fin 3) = 0
     ∨ S.val (2 : Fin 3) = 0
 ```
 
-**`PureU1.Three.solOfLinear`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean#L48).
+**`PureU1.Three.solOfLinear`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean#L48).
 
 > Given a `LinSol` with a charge equal to zero a `Sol`.
 
@@ -46,7 +46,7 @@ def solOfLinear (S : (PureU1 3).LinSols)
     (PureU1 3).Sols
 ```
 
-**`PureU1.Three.solOfLinear_surjects`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean#L54).
+**`PureU1.Three.solOfLinear_surjects`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean#L54).
 
 ```lean
 lemma solOfLinear_surjects (S : (PureU1 3).Sols) :
@@ -60,4 +60,4 @@ lemma solOfLinear_surjects (S : (PureU1 3).Sols) :
 
 ## Sources
 
-- [Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean)
+- [Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean)

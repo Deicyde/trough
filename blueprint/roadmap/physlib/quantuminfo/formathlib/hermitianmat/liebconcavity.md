@@ -8,14 +8,14 @@ proof: formalized
 
 # QuantumInfo.ForMathlib.HermitianMat.LiebConcavity
 
-The module `QuantumInfo.ForMathlib.HermitianMat.LiebConcavity`, [QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean): 10 declarations, 8 with a docstring; 11 private, not shown.
+The module `QuantumInfo.ForMathlib.HermitianMat.LiebConcavity`, [QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean): 10 declarations, 8 with a docstring; 11 private, not shown.
 
 ## Main result for DPI
 
 > We derive the concavity of the trace functional `σ ↦ Tr[(σ^s H σ^s)^p]` from
 > the Lieb–Ando trace inequalities proved in `LiebAndoTrace.lean`.
 
-**`HermitianMatBridge.Φ`**, an abbrev, [line 34](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L34).
+**`HermitianMatBridge.Φ`**, an abbrev, [line 34](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L34).
 
 > Abbreviation for the star algebra isomorphism.
 
@@ -23,7 +23,7 @@ The module `QuantumInfo.ForMathlib.HermitianMat.LiebConcavity`, [QuantumInfo/For
 noncomputable abbrev Φ : Matrix d d ℂ ≃⋆ₐ[ℂ] (EuclideanSpace ℂ d →L[ℂ] EuclideanSpace ℂ d)
 ```
 
-**`HermitianMatBridge.Φ_continuous`**, a lemma, [line 38](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L38).
+**`HermitianMatBridge.Φ_continuous`**, a lemma, [line 38](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L38).
 
 > `Φ` is continuous (as a linear map between finite-dimensional spaces).
 
@@ -31,7 +31,7 @@ noncomputable abbrev Φ : Matrix d d ℂ ≃⋆ₐ[ℂ] (EuclideanSpace ℂ d �
 lemma Φ_continuous : Continuous (⇑Φ : Matrix d d ℂ → _)
 ```
 
-**`HermitianMatBridge.Φ_isSelfAdjoint`**, a lemma, [line 42](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L42).
+**`HermitianMatBridge.Φ_isSelfAdjoint`**, a lemma, [line 42](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L42).
 
 > `Φ` maps Hermitian matrices to self-adjoint operators.
 
@@ -40,14 +40,14 @@ lemma Φ_isSelfAdjoint (A : HermitianMat d ℂ) :
     IsSelfAdjoint (Φ A.mat)
 ```
 
-**`HermitianMatBridge.Φ_nonneg`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L50).
+**`HermitianMatBridge.Φ_nonneg`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L50).
 
 ```lean
 lemma Φ_nonneg (A : HermitianMat d ℂ) (hA : 0 ≤ A) :
     (0 : EuclideanSpace ℂ d →L[ℂ] EuclideanSpace ℂ d) ≤ Φ A.mat
 ```
 
-**`HermitianMatBridge.Φ_mem_pdSet`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L82).
+**`HermitianMatBridge.Φ_mem_pdSet`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L82).
 
 > `Φ` maps PosDef HermitianMat to pdSet.
 
@@ -56,7 +56,7 @@ lemma Φ_mem_pdSet [Nonempty d] (A : HermitianMat d ℂ) (hA : A.mat.PosDef) :
     Φ A.mat ∈ pdSet (ℋ := EuclideanSpace ℂ d)
 ```
 
-**`HermitianMatBridge.Φ_cfc`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L100).
+**`HermitianMatBridge.Φ_cfc`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L100).
 
 > `Φ` commutes with CFC for Hermitian matrices.
 
@@ -65,7 +65,7 @@ lemma Φ_cfc (A : HermitianMat d ℂ) (f : ℝ → ℝ) :
     Φ (cfc f A.mat) = cfc f (Φ A.mat)
 ```
 
-**`HermitianMatBridge.Φ_rpow`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L107).
+**`HermitianMatBridge.Φ_rpow`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L107).
 
 > `Φ` commutes with rpow for PSD matrices.
 
@@ -74,7 +74,7 @@ lemma Φ_rpow (A : HermitianMat d ℂ) (hA : 0 ≤ A) (r : ℝ) :
     Φ (A ^ r).mat = (Φ A.mat) ^ r
 ```
 
-**`HermitianMatBridge.trace_Φ_eq`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L114).
+**`HermitianMatBridge.trace_Φ_eq`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L114).
 
 > General trace bridge: the operator trace of Φ(M) equals the matrix trace of M,
 > for any matrix M (not just Hermitian).
@@ -84,7 +84,7 @@ lemma trace_Φ_eq (M : Matrix d d ℂ) :
     (LinearMap.trace ℂ (EuclideanSpace ℂ d)) (Φ M).toLinearMap = M.trace
 ```
 
-**`HermitianMatBridge.traceRe_Φ_general`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L122).
+**`HermitianMatBridge.traceRe_Φ_general`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L122).
 
 > `traceRe(Φ(M)) = re(Tr[M])` for any matrix M.
 
@@ -99,7 +99,7 @@ lemma traceRe_Φ_general (M : Matrix d d ℂ) :
 
 ### Core concavity on positive definite matrices
 
-**`HermitianMat.trace_conj_rpow_concave`**, a lemma, [line 485](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L485).
+**`HermitianMat.trace_conj_rpow_concave`**, a lemma, [line 485](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean#L485).
 
 ```lean
 lemma trace_conj_rpow_concave {α : ℝ} (hα : 1 < α)
@@ -119,4 +119,4 @@ lemma trace_conj_rpow_concave {α : ℝ} (hα : 1 < α)
 
 ## Sources
 
-- [QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean)
+- [QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean)

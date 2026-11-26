@@ -8,7 +8,7 @@ proof: formalized
 
 # Weyl's theorem on the essential spectrum
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.EssentialSpectrum.Weyl`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean): 6 declarations, 6 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.EssentialSpectrum.Weyl`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean): 6 declarations, 6 with a docstring.
 
 > Weyl's theorem: compact resolvent differences preserve the essential spectrum.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.EssentialSpe
 
 > - Adapted from `adambornemann-glitch/Spectra`, `SpectralTheory/Essential/Weyl.lean` (Apache 2.0).
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.Essential.I_im_ne_zero`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean#L57).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.Essential.I_im_ne_zero`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean#L57).
 
 > `i` is off the real axis, the spectral parameter used throughout.
 
@@ -40,7 +40,7 @@ lemma I_im_ne_zero : (Complex.I).im ≠ 0
 
 ## A. The bounded resolvent
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.Essential.IsResolventAt`**, a structure, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean#L63).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.Essential.IsResolventAt`**, a structure, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean#L63).
 
 > `R` is the resolvent of the self-adjoint operator `A` at `z`: it maps into the domain of `A`,
 > and inverts `A - z` on both sides.
@@ -55,7 +55,7 @@ structure IsResolventAt {A : H →ₗ.[ℂ] H} (_hA : IsSelfAdjoint A) (z : ℂ)
 
 ## B. Weyl's theorem
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.Essential.essSpectrum_subset_of_isCompactOperator_resolvent_sub`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean#L73).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.Essential.essSpectrum_subset_of_isCompactOperator_resolvent_sub`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean#L73).
 
 > **One inclusion of Weyl's theorem.** If the resolvent difference `R_B(i) − R_A(i)` is compact,
 > then `essSpectrum hA ⊆ essSpectrum hB`.
@@ -68,7 +68,7 @@ lemma essSpectrum_subset_of_isCompactOperator_resolvent_sub
     essSpectrum hA ⊆ essSpectrum hB
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.Essential.essSpectrum_eq_of_isCompactOperator_resolvent_sub`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean#L177).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.Essential.essSpectrum_eq_of_isCompactOperator_resolvent_sub`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean#L177).
 
 > **Weyl's theorem.** If the resolvents `R_A(i)`, `R_B(i)` of two self-adjoint operators differ
 > by a compact operator, then `A` and `B` have the same essential spectrum.
@@ -83,7 +83,7 @@ lemma essSpectrum_eq_of_isCompactOperator_resolvent_sub
 
 ## C. Relatively compact perturbations
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.Essential.isCompactOperator_resolvent_sub_of_isCompactOperator_perturb`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean#L193).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.Essential.isCompactOperator_resolvent_sub_of_isCompactOperator_perturb`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean#L193).
 
 > **Relatively compact perturbations.** If `B - A = W (A - i)` on the domain of `A` for a compact
 > `W`, then `R_B(i) - R_A(i) = -R_B(i) W` is compact.
@@ -98,7 +98,7 @@ lemma isCompactOperator_resolvent_sub_of_isCompactOperator_perturb
     IsCompactOperator ((RB - RA : H →L[ℂ] H) : H → H)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.Essential.essSpectrum_eq_of_isCompactOperator_perturb`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean#L224).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.Essential.essSpectrum_eq_of_isCompactOperator_perturb`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean#L224).
 
 > **Weyl's theorem for relatively compact perturbations.** If `B - A = W (A - i)` on the domain of
 > `A` for a compact `W`, then `A` and `B` have the same essential spectrum.
@@ -123,4 +123,4 @@ lemma essSpectrum_eq_of_isCompactOperator_perturb
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean)

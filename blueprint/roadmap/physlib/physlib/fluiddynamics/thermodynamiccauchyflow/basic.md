@@ -8,7 +8,7 @@ proof: formalized
 
 # Basic predicates for thermodynamic Cauchy flows
 
-The module `Physlib.FluidDynamics.ThermodynamicCauchyFlow.Basic`, [Physlib/FluidDynamics/ThermodynamicCauchyFlow/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Basic.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.FluidDynamics.ThermodynamicCauchyFlow.Basic`, [Physlib/FluidDynamics/ThermodynamicCauchyFlow/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Basic.lean): 1 declaration, 1 with a docstring.
 
 ## i. Overview
 
@@ -31,7 +31,7 @@ The module `Physlib.FluidDynamics.ThermodynamicCauchyFlow.Basic`, [Physlib/Fluid
 
 ## A. Thermodynamic Cauchy-flow structure
 
-**`FluidDynamics.ThermodynamicCauchyFlow`**, a structure, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Basic.lean#L52).
+**`FluidDynamics.ThermodynamicCauchyFlow`**, a structure, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Basic.lean#L52).
 
 > A Cauchy flow equipped with thermodynamic entropy and enthalpy fields.
 >
@@ -53,4 +53,4 @@ structure ThermodynamicCauchyFlow (d : ℕ) extends CauchyFlow d where
 
 ## Sources
 
-- [Physlib/FluidDynamics/ThermodynamicCauchyFlow/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Basic.lean)
+- [Physlib/FluidDynamics/ThermodynamicCauchyFlow/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Basic.lean)

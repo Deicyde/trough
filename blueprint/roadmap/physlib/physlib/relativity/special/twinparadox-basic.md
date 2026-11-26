@@ -8,7 +8,7 @@ proof: formalized
 
 # Twin Paradox
 
-The module `Physlib.Relativity.Special.TwinParadox.Basic`, [Physlib/Relativity/Special/TwinParadox/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/TwinParadox/Basic.lean): 12 declarations, 9 with a docstring.
+The module `Physlib.Relativity.Special.TwinParadox.Basic`, [Physlib/Relativity/Special/TwinParadox/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/TwinParadox/Basic.lean): 12 declarations, 9 with a docstring.
 
 > The twin paradox corresponds to the following scenario:
 >
@@ -24,7 +24,7 @@ The module `Physlib.Relativity.Special.TwinParadox.Basic`, [Physlib/Relativity/S
 >
 > The origin of the twin paradox dates back to Paul Langevin in 1911.
 
-**`SpecialRelativity.InstantaneousTwinParadox`**, a structure, [line 41](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/TwinParadox/Basic.lean#L41).
+**`SpecialRelativity.InstantaneousTwinParadox`**, a structure, [line 41](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/TwinParadox/Basic.lean#L41).
 
 > The twin paradox assuming instantaneous acceleration.
 
@@ -41,7 +41,7 @@ structure InstantaneousTwinParadox where
   endPoint_causallyFollows_twinBMid : causallyFollows twinBMid endPoint
 ```
 
-**`SpecialRelativity.InstantaneousTwinParadox.properTimeTwinA`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/TwinParadox/Basic.lean#L58).
+**`SpecialRelativity.InstantaneousTwinParadox.properTimeTwinA`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/TwinParadox/Basic.lean#L58).
 
 > The proper time experienced by twin A travelling at constant speed
 > from `T.startPoint` to `T.endPoint`.
@@ -50,7 +50,7 @@ structure InstantaneousTwinParadox where
 def properTimeTwinA : ℝ
 ```
 
-**`SpecialRelativity.InstantaneousTwinParadox.properTimeTwinB`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/TwinParadox/Basic.lean#L63).
+**`SpecialRelativity.InstantaneousTwinParadox.properTimeTwinB`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/TwinParadox/Basic.lean#L63).
 
 > The proper time experienced by twin B travelling at constant speed
 > from `T.startPoint` to `T.twinBMid`, and then from `T.twinBMid`
@@ -60,7 +60,7 @@ def properTimeTwinA : ℝ
 def properTimeTwinB : ℝ
 ```
 
-**`SpecialRelativity.InstantaneousTwinParadox.ageGap`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/TwinParadox/Basic.lean#L67).
+**`SpecialRelativity.InstantaneousTwinParadox.ageGap`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/TwinParadox/Basic.lean#L67).
 
 > The proper time of twin A minus the proper time of twin B.
 
@@ -68,7 +68,7 @@ def properTimeTwinB : ℝ
 def ageGap : ℝ
 ```
 
-**`SpecialRelativity.InstantaneousTwinParadox.ageGap_eq`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/TwinParadox/Basic.lean#L71).
+**`SpecialRelativity.InstantaneousTwinParadox.ageGap_eq`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/TwinParadox/Basic.lean#L71).
 
 > The age gap in terms of the two legs of Twin B, `u = twinBMid - startPoint` and
 > `v = endPoint - twinBMid`: `ageGap = √⟪u + v, u + v⟫ₘ - (√⟪u, u⟫ₘ + √⟪v, v⟫ₘ)`.
@@ -81,7 +81,7 @@ lemma ageGap_eq :
         + √⟪T.endPoint - T.twinBMid, T.endPoint - T.twinBMid⟫ₘ)
 ```
 
-**`SpecialRelativity.InstantaneousTwinParadox.ageGap_eq_zero_iff`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/TwinParadox/Basic.lean#L86).
+**`SpecialRelativity.InstantaneousTwinParadox.ageGap_eq_zero_iff`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/TwinParadox/Basic.lean#L86).
 
 > The age gap vanishes if and only if the turning point of Twin B lies on the straight
 > worldline of Twin A between the start and end points: Twin B does not turn. This is the
@@ -93,7 +93,7 @@ lemma ageGap_eq_zero_iff : T.ageGap = 0 ↔
     ∃ μ ∈ Set.Icc (0 : ℝ) 1, T.twinBMid = T.startPoint + μ • (T.endPoint - T.startPoint)
 ```
 
-**`SpecialRelativity.InstantaneousTwinParadox.ageGap_nonneg`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/TwinParadox/Basic.lean#L127).
+**`SpecialRelativity.InstantaneousTwinParadox.ageGap_nonneg`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/TwinParadox/Basic.lean#L127).
 
 > In the twin paradox with instantaneous acceleration, Twin A is always at least as old as
 > Twin B: the age gap is nonnegative. This is the reverse triangle inequality of Minkowski space
@@ -105,7 +105,7 @@ lemma ageGap_nonneg : 0 ≤ T.ageGap
 
 ## Example 1
 
-**`SpecialRelativity.InstantaneousTwinParadox.example1`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/TwinParadox/Basic.lean#L145).
+**`SpecialRelativity.InstantaneousTwinParadox.example1`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/TwinParadox/Basic.lean#L145).
 
 > The twin paradox in which:
 > - Twin A starts at `0` and travels at constant
@@ -117,25 +117,25 @@ lemma ageGap_nonneg : 0 ≤ T.ageGap
 def example1 : InstantaneousTwinParadox
 ```
 
-**`SpecialRelativity.InstantaneousTwinParadox.example1_properTimeTwinA`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/TwinParadox/Basic.lean#L182).
+**`SpecialRelativity.InstantaneousTwinParadox.example1_properTimeTwinA`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/TwinParadox/Basic.lean#L182).
 
 ```lean
 lemma example1_properTimeTwinA : example1.properTimeTwinA = 15
 ```
 
-**`SpecialRelativity.InstantaneousTwinParadox.example1_properTimeTwinB`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/TwinParadox/Basic.lean#L186).
+**`SpecialRelativity.InstantaneousTwinParadox.example1_properTimeTwinB`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/TwinParadox/Basic.lean#L186).
 
 ```lean
 lemma example1_properTimeTwinB : example1.properTimeTwinB = 9
 ```
 
-**`SpecialRelativity.InstantaneousTwinParadox.example1_ageGap`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/TwinParadox/Basic.lean#L191).
+**`SpecialRelativity.InstantaneousTwinParadox.example1_ageGap`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/TwinParadox/Basic.lean#L191).
 
 ```lean
 lemma example1_ageGap : example1.ageGap = 6
 ```
 
-**`SpecialRelativity.InstantaneousTwinParadox.example1_ageGap_ne_zero`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/TwinParadox/Basic.lean#L195).
+**`SpecialRelativity.InstantaneousTwinParadox.example1_ageGap_ne_zero`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/TwinParadox/Basic.lean#L195).
 
 > The example above has a nonzero age gap.
 
@@ -153,4 +153,4 @@ lemma example1_ageGap_ne_zero : example1.ageGap ≠ 0
 
 ## Sources
 
-- [Physlib/Relativity/Special/TwinParadox/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Special/TwinParadox/Basic.lean)
+- [Physlib/Relativity/Special/TwinParadox/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Special/TwinParadox/Basic.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Local action functionals
 
-The module `PhyslibAlpha.ClassicalFieldTheory.Local.Action`, [PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean): 18 declarations, 11 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.Local.Action`, [PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean): 18 declarations, 11 with a docstring.
 
 > The local action of a field, its value under admissible variations, and critical fields.
 
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.Local.Action`, [PhyslibAlpha/Class
 
 ## A. Action densities and action
 
-**`ClassicalFieldTheory.Local.actionDensity`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L62).
+**`ClassicalFieldTheory.Local.actionDensity`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L62).
 
 > The action density determined by a local Lagrangian and a field.
 
@@ -47,7 +47,7 @@ noncomputable def actionDensity (L : Lagrangian d m k)
     (f : Space d → EuclideanSpace ℝ (Fin m)) : Space d → ℝ
 ```
 
-**`ClassicalFieldTheory.Local.HasFiniteAction`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L67).
+**`ClassicalFieldTheory.Local.HasFiniteAction`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L67).
 
 > The integrability condition for the action density of a field.
 
@@ -55,7 +55,7 @@ noncomputable def actionDensity (L : Lagrangian d m k)
 def HasFiniteAction (L : Lagrangian d m k) (f : Space d → EuclideanSpace ℝ (Fin m)) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.IsAdmissibleForAction`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L72).
+**`ClassicalFieldTheory.Local.IsAdmissibleForAction`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L72).
 
 > Symmetric admissibility predicate for the action functional: the pair `(L, f)` is admissible
 > when the field is smooth and the corresponding action density is integrable.
@@ -65,7 +65,7 @@ def IsAdmissibleForAction (L : Lagrangian d m k)
     (f : Space d → EuclideanSpace ℝ (Fin m)) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.action`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L77).
+**`ClassicalFieldTheory.Local.action`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L77).
 
 > The action associated with a local Lagrangian.
 
@@ -74,7 +74,7 @@ noncomputable def action (L : Lagrangian d m k)
     (f : Space d → EuclideanSpace ℝ (Fin m)) : ℝ
 ```
 
-**`ClassicalFieldTheory.Local.actionDensity_apply`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L82).
+**`ClassicalFieldTheory.Local.actionDensity_apply`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L82).
 
 ```lean
 lemma actionDensity_apply (L : Lagrangian d m k)
@@ -82,7 +82,7 @@ lemma actionDensity_apply (L : Lagrangian d m k)
     actionDensity L f x = L (jetAt k f x)
 ```
 
-**`ClassicalFieldTheory.Local.action_eq_integral`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L87).
+**`ClassicalFieldTheory.Local.action_eq_integral`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L87).
 
 ```lean
 lemma action_eq_integral (L : Lagrangian d m k) (f : Space d → EuclideanSpace ℝ (Fin m)) :
@@ -91,7 +91,7 @@ lemma action_eq_integral (L : Lagrangian d m k) (f : Space d → EuclideanSpace 
 
 ## B. Action under variation
 
-**`ClassicalFieldTheory.Local.variedField`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L96).
+**`ClassicalFieldTheory.Local.variedField`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L96).
 
 > The field obtained by varying `f` in the direction `η` with parameter `s`.
 
@@ -102,7 +102,7 @@ noncomputable def variedField (f : Space d → EuclideanSpace ℝ (Fin m))
     Space d → EuclideanSpace ℝ (Fin m)
 ```
 
-**`ClassicalFieldTheory.Local.variedField_contDiff`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L103).
+**`ClassicalFieldTheory.Local.variedField_contDiff`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L103).
 
 > Smoothness of the varied field for smooth `f` and admissible `η`.
 
@@ -114,7 +114,7 @@ lemma variedField_contDiff (f : Space d → EuclideanSpace ℝ (Fin m))
     ContDiff ℝ ∞ (variedField f η s)
 ```
 
-**`ClassicalFieldTheory.Local.actionVariation`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L111).
+**`ClassicalFieldTheory.Local.actionVariation`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L111).
 
 > The action of a field under an admissible variation.
 
@@ -124,7 +124,7 @@ noncomputable def actionVariation (L : Lagrangian d m k)
     (η : AdmissibleVariation d (EuclideanSpace ℝ (Fin m))) : ℝ → ℝ
 ```
 
-**`ClassicalFieldTheory.Local.HasFiniteActionVariation`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L117).
+**`ClassicalFieldTheory.Local.HasFiniteActionVariation`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L117).
 
 > Explicit integrability condition for the family of varied action densities.
 
@@ -133,7 +133,7 @@ def HasFiniteActionVariation (L : Lagrangian d m k) (f : Space d → EuclideanSp
     (η : AdmissibleVariation d (EuclideanSpace ℝ (Fin m))) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.HasCompactlySupportedActionVariationDifference`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L125).
+**`ClassicalFieldTheory.Local.HasCompactlySupportedActionVariationDifference`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L125).
 
 > Locality package for the action density under compactly supported variations: for every
 > variation parameter `s`, the change in the action density is a continuous compactly supported
@@ -146,7 +146,7 @@ def HasCompactlySupportedActionVariationDifference (L : Lagrangian d m k)
     (η : AdmissibleVariation d (EuclideanSpace ℝ (Fin m))) : Prop
 ```
 
-**`ClassicalFieldTheory.Local.hasFiniteActionVariation_of_hasFiniteAction_of_compactlySupportedDifference`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L134).
+**`ClassicalFieldTheory.Local.hasFiniteActionVariation_of_hasFiniteAction_of_compactlySupportedDifference`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L134).
 
 > If the base action is finite and every varied action density differs from the base density by
 > a continuous compactly supported function, then the whole varied family has finite action.
@@ -160,7 +160,7 @@ lemma hasFiniteActionVariation_of_hasFiniteAction_of_compactlySupportedDifferenc
     HasFiniteActionVariation L f η
 ```
 
-**`ClassicalFieldTheory.Local.variedField_apply`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L155).
+**`ClassicalFieldTheory.Local.variedField_apply`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L155).
 
 ```lean
 lemma variedField_apply (f : Space d → EuclideanSpace ℝ (Fin m))
@@ -169,7 +169,7 @@ lemma variedField_apply (f : Space d → EuclideanSpace ℝ (Fin m))
     variedField f η s x = f x + s • η x
 ```
 
-**`ClassicalFieldTheory.Local.actionVariation_apply`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L161).
+**`ClassicalFieldTheory.Local.actionVariation_apply`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L161).
 
 ```lean
 lemma actionVariation_apply (L : Lagrangian d m k) (f : Space d → EuclideanSpace ℝ (Fin m))
@@ -177,7 +177,7 @@ lemma actionVariation_apply (L : Lagrangian d m k) (f : Space d → EuclideanSpa
     actionVariation L f η s = action L (variedField f η s)
 ```
 
-**`ClassicalFieldTheory.Local.jetAt_variedField_eq_of_notMem_tsupport`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L165).
+**`ClassicalFieldTheory.Local.jetAt_variedField_eq_of_notMem_tsupport`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L165).
 
 ```lean
 lemma jetAt_variedField_eq_of_notMem_tsupport
@@ -188,7 +188,7 @@ lemma jetAt_variedField_eq_of_notMem_tsupport
     jetAt k (variedField f η s) x = jetAt k f x
 ```
 
-**`ClassicalFieldTheory.Local.actionDensity_variedField_eq_of_notMem_tsupport`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L179).
+**`ClassicalFieldTheory.Local.actionDensity_variedField_eq_of_notMem_tsupport`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L179).
 
 ```lean
 lemma actionDensity_variedField_eq_of_notMem_tsupport
@@ -199,7 +199,7 @@ lemma actionDensity_variedField_eq_of_notMem_tsupport
     actionDensity L (variedField f η s) x = actionDensity L f x
 ```
 
-**`ClassicalFieldTheory.Local.hasCompactlySupportedActionVariationDifference_of_continuousInCoordinates`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L187).
+**`ClassicalFieldTheory.Local.hasCompactlySupportedActionVariationDifference_of_continuousInCoordinates`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L187).
 
 ```lean
 lemma hasCompactlySupportedActionVariationDifference_of_continuousInCoordinates
@@ -211,7 +211,7 @@ lemma hasCompactlySupportedActionVariationDifference_of_continuousInCoordinates
 
 ## C. Critical fields
 
-**`ClassicalFieldTheory.Local.IsCritical`**, a def, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L219).
+**`ClassicalFieldTheory.Local.IsCritical`**, a def, [line 219](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean#L219).
 
 > A field is critical for a local action if every admissible compactly supported variation has
 > vanishing first derivative at `s = 0`, under the explicit finite-action hypothesis for the varied
@@ -228,4 +228,4 @@ def IsCritical (L : Lagrangian d m k) (f : Space d → EuclideanSpace ℝ (Fin m
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean)

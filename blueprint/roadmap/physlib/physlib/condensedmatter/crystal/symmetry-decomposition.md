@@ -8,7 +8,7 @@ proof: formalized
 
 # Decomposition of crystal symmetries
 
-The module `Physlib.CondensedMatter.Crystal.Symmetry.Decomposition`, [Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean): 15 declarations (1 instance with no name), 10 with a docstring.
+The module `Physlib.CondensedMatter.Crystal.Symmetry.Decomposition`, [Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean): 15 declarations (1 instance with no name), 10 with a docstring.
 
 > Every crystal symmetry is a lattice automorphism, a permutation of labels and a shift.
 
@@ -45,7 +45,7 @@ The module `Physlib.CondensedMatter.Crystal.Symmetry.Decomposition`, [Physlib/Co
 
 ## A. The permutation of labels
 
-**`Physlib.CondensedMatter.Crystal.Symmetry.label_apply`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L69).
+**`Physlib.CondensedMatter.Crystal.Symmetry.label_apply`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L69).
 
 > The label of an image site depends only on the label of the site.
 
@@ -54,7 +54,7 @@ lemma label_apply (φ : Symmetry C) (x : C.Site) :
     (φ x).label = (φ (Site.ref x.label)).label
 ```
 
-**An instance with no name**, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L76).
+**An instance with no name**, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L76).
 
 > Symmetries permute the labels of the unit cell.
 
@@ -62,7 +62,7 @@ lemma label_apply (φ : Symmetry C) (x : C.Site) :
 instance : MulAction (Symmetry C) C.UnitCell
 ```
 
-**`Physlib.CondensedMatter.Crystal.Symmetry.labelPerm`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L82).
+**`Physlib.CondensedMatter.Crystal.Symmetry.labelPerm`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L82).
 
 > The permutation of labels of a symmetry.
 
@@ -70,7 +70,7 @@ instance : MulAction (Symmetry C) C.UnitCell
 def labelPerm (φ : Symmetry C) : Equiv.Perm C.UnitCell
 ```
 
-**`Physlib.CondensedMatter.Crystal.Symmetry.labelPerm_apply`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L84).
+**`Physlib.CondensedMatter.Crystal.Symmetry.labelPerm_apply`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L84).
 
 ```lean
 lemma labelPerm_apply (φ : Symmetry C) (i : C.UnitCell) : φ.labelPerm i = φ • i
@@ -78,7 +78,7 @@ lemma labelPerm_apply (φ : Symmetry C) (i : C.UnitCell) : φ.labelPerm i = φ �
 
 ## B. The shifts of a symmetry
 
-**`Physlib.CondensedMatter.Crystal.Symmetry.shift`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L90).
+**`Physlib.CondensedMatter.Crystal.Symmetry.shift`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L90).
 
 > The shift of a symmetry at the label `j`: the cell of the image of the reference site that
 > the symmetry sends to label `j`.
@@ -87,7 +87,7 @@ lemma labelPerm_apply (φ : Symmetry C) (i : C.UnitCell) : φ.labelPerm i = φ �
 def shift (φ : Symmetry C) (j : C.UnitCell) : G
 ```
 
-**`Physlib.CondensedMatter.Crystal.Symmetry.apply_eq`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L93).
+**`Physlib.CondensedMatter.Crystal.Symmetry.apply_eq`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L93).
 
 > A symmetry acts as `⟨n, i⟩ ↦ ⟨A n + s (σ i), σ i⟩`.
 
@@ -98,7 +98,7 @@ lemma apply_eq (φ : Symmetry C) (x : C.Site) :
 
 ## C. Symmetries from their parts
 
-**`Physlib.CondensedMatter.Crystal.Symmetry.ofParts`**, a def, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L103).
+**`Physlib.CondensedMatter.Crystal.Symmetry.ofParts`**, a def, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L103).
 
 > The symmetry `⟨n, i⟩ ↦ ⟨A n + s (σ i), σ i⟩` with lattice automorphism `A`, label
 > permutation `σ` and shifts `s`.
@@ -108,32 +108,32 @@ def ofParts (C : Crystal G) (A : G ≃+ G) (σ : Equiv.Perm C.UnitCell) (s : C.U
     Symmetry C
 ```
 
-**`Physlib.CondensedMatter.Crystal.Symmetry.ofParts_apply`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L114).
+**`Physlib.CondensedMatter.Crystal.Symmetry.ofParts_apply`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L114).
 
 ```lean
 lemma ofParts_apply (x : C.Site) :
     ofParts C A σ s x = ⟨A x.cell + s (σ x.label), σ x.label⟩
 ```
 
-**`Physlib.CondensedMatter.Crystal.Symmetry.latticeAut_ofParts`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L117).
+**`Physlib.CondensedMatter.Crystal.Symmetry.latticeAut_ofParts`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L117).
 
 ```lean
 lemma latticeAut_ofParts : (ofParts C A σ s).latticeAut = A
 ```
 
-**`Physlib.CondensedMatter.Crystal.Symmetry.labelPerm_ofParts`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L119).
+**`Physlib.CondensedMatter.Crystal.Symmetry.labelPerm_ofParts`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L119).
 
 ```lean
 lemma labelPerm_ofParts : (ofParts C A σ s).labelPerm = σ
 ```
 
-**`Physlib.CondensedMatter.Crystal.Symmetry.shift_ofParts`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L121).
+**`Physlib.CondensedMatter.Crystal.Symmetry.shift_ofParts`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L121).
 
 ```lean
 lemma shift_ofParts : (ofParts C A σ s).shift = s
 ```
 
-**`Physlib.CondensedMatter.Crystal.Symmetry.ofParts_eq`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L127).
+**`Physlib.CondensedMatter.Crystal.Symmetry.ofParts_eq`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L127).
 
 > Every symmetry is built from its lattice automorphism, label permutation and shifts.
 
@@ -142,7 +142,7 @@ lemma ofParts_eq (φ : Symmetry C) :
     ofParts C φ.latticeAut φ.labelPerm φ.shift = φ
 ```
 
-**`Physlib.CondensedMatter.Crystal.Symmetry.ofParts_mul`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L135).
+**`Physlib.CondensedMatter.Crystal.Symmetry.ofParts_mul`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L135).
 
 > Composition composes the automorphisms and permutations. The shifts of the second symmetry
 > are transformed by `A` and relabelled by `σ`.
@@ -154,7 +154,7 @@ lemma ofParts_mul :
 
 ## D. The semidirect product
 
-**`Physlib.CondensedMatter.Crystal.Symmetry.shiftAction`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L144).
+**`Physlib.CondensedMatter.Crystal.Symmetry.shiftAction`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L144).
 
 > Lattice automorphisms and label permutations act on shifts by `s ↦ A ∘ s ∘ σ⁻¹`.
 
@@ -164,7 +164,7 @@ def shiftAction (C : Crystal G) :
       MulAut (Multiplicative (C.UnitCell → G))
 ```
 
-**`Physlib.CondensedMatter.Crystal.Symmetry.semidirectEquiv`**, a def, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L153).
+**`Physlib.CondensedMatter.Crystal.Symmetry.semidirectEquiv`**, a def, [line 153](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean#L153).
 
 > The symmetry group is the semidirect product of the shifts by the lattice automorphisms and
 > label permutations.
@@ -181,4 +181,4 @@ def semidirectEquiv (C : Crystal G) :
 
 ## Sources
 
-- [Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean)
+- [Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The Electric Field (TemperedDistributional/ElectricField)
 
-The module `Physlib.Electromagnetism.TemperedDistributional.ElectricField`, [Physlib/Electromagnetism/TemperedDistributional/ElectricField.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/ElectricField.lean): 2 declarations, 1 with a docstring.
+The module `Physlib.Electromagnetism.TemperedDistributional.ElectricField`, [Physlib/Electromagnetism/TemperedDistributional/ElectricField.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/ElectricField.lean): 2 declarations, 1 with a docstring.
 
 ## i. Overview
 
@@ -28,7 +28,7 @@ The module `Physlib.Electromagnetism.TemperedDistributional.ElectricField`, [Phy
 
 ## A. Electric field for distributions
 
-**`Electromagnetism.TempDistElectromagneticPotential.electricField`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/ElectricField.lean#L58).
+**`Electromagnetism.TempDistElectromagneticPotential.electricField`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/ElectricField.lean#L58).
 
 > The electric field of an electromagnetic potential which is a distribution.
 
@@ -38,7 +38,7 @@ noncomputable def electricField {d} (c : SpeedOfLight) :
     (Time × Space d) →d[ℝ] EuclideanSpace ℝ (Fin d)
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.electricField_eq_fieldStrength`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/ElectricField.lean#L76).
+**`Electromagnetism.TempDistElectromagneticPotential.electricField_eq_fieldStrength`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/ElectricField.lean#L76).
 
 ```lean
 lemma electricField_eq_fieldStrength {d} {c : SpeedOfLight}
@@ -55,4 +55,4 @@ lemma electricField_eq_fieldStrength {d} {c : SpeedOfLight}
 
 ## Sources
 
-- [Physlib/Electromagnetism/TemperedDistributional/ElectricField.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/ElectricField.lean)
+- [Physlib/Electromagnetism/TemperedDistributional/ElectricField.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/ElectricField.lean)

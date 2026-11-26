@@ -8,11 +8,11 @@ proof: formalized
 
 # Physlib.Meta.Notes.HTMLNote
 
-The module `Physlib.Meta.Notes.HTMLNote`, [Physlib/Meta/Notes/HTMLNote.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/HTMLNote.lean): 4 declarations, 4 with a docstring.
+The module `Physlib.Meta.Notes.HTMLNote`, [Physlib/Meta/Notes/HTMLNote.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/HTMLNote.lean): 4 declarations, 4 with a docstring.
 
 ## Turns a declaration into a html note structure.
 
-**`Physlib.HTMLNote`**, a structure, [line 25](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/HTMLNote.lean#L25).
+**`Physlib.HTMLNote`**, a structure, [line 25](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/HTMLNote.lean#L25).
 
 > A `HTMLNote` is a structure containing the html information from
 > individual contributions (commands, informal commands, note ..) etc. to a note file.
@@ -27,7 +27,7 @@ structure HTMLNote where
   line : Nat
 ```
 
-**`Physlib.HTMLNote.ofNodeInfo`**, a def, [line 34](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/HTMLNote.lean#L34).
+**`Physlib.HTMLNote.ofNodeInfo`**, a def, [line 34](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/HTMLNote.lean#L34).
 
 > Converts a note info into a HTMLNote.
 
@@ -35,7 +35,7 @@ structure HTMLNote where
 def HTMLNote.ofNodeInfo (ni : NoteInfo) : HTMLNote
 ```
 
-**`Physlib.HTMLNote.ofFormal`**, a def, [line 38](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/HTMLNote.lean#L38).
+**`Physlib.HTMLNote.ofFormal`**, a def, [line 38](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/HTMLNote.lean#L38).
 
 > An formal definition or lemma to html for a note.
 
@@ -43,7 +43,7 @@ def HTMLNote.ofNodeInfo (ni : NoteInfo) : HTMLNote
 def HTMLNote.ofFormal (name : Name) : CoreM HTMLNote
 ```
 
-**`Physlib.HTMLNote.ofInformal`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/HTMLNote.lean#L51).
+**`Physlib.HTMLNote.ofInformal`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/HTMLNote.lean#L51).
 
 > An informal definition or lemma to html for a note.
 
@@ -58,4 +58,4 @@ unsafe def HTMLNote.ofInformal (name : Name) : CoreM HTMLNote
 
 ## Sources
 
-- [Physlib/Meta/Notes/HTMLNote.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes/HTMLNote.lean)
+- [Physlib/Meta/Notes/HTMLNote.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Notes/HTMLNote.lean)

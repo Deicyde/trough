@@ -8,7 +8,7 @@ proof: formalized
 
 # Lie's Trace Formula
 
-The module `Physlib.Mathematics.ForMathlib.DataStructures.Matrix.LieTrace`, [Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean): 20 declarations (1 instance with no name), 16 with a docstring, 3 listed as significant.
+The module `Physlib.Mathematics.ForMathlib.DataStructures.Matrix.LieTrace`, [Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean): 20 declarations (1 instance with no name), 16 with a docstring, 3 listed as significant.
 
 > This file proves the formula `det (exp A) = exp (tr A)` for matrices, also known as Lie's trace
 > formula.
@@ -21,13 +21,13 @@ The module `Physlib.Mathematics.ForMathlib.DataStructures.Matrix.LieTrace`, [Phy
 
 > - `Matrix.det_exp`: The determinant of the exponential of a matrix is the exponential of its trace.
 
-**An instance with no name**, [line 37](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L37).
+**An instance with no name**, [line 37](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L37).
 
 ```lean
 instance [UniformSpace 𝕂] : UniformSpace (Matrix m n 𝕂)
 ```
 
-**`Matrix.tsum_eq_zero`**, a lemma, [line 40](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L40).
+**`Matrix.tsum_eq_zero`**, a lemma, [line 40](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L40).
 
 > If every term of a series is zero, then its sum is zero.
 
@@ -40,7 +40,7 @@ lemma tsum_eq_zero
 
 ### The determinant of the matrix exponential
 
-**`Matrix.matrix_tsum_apply`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L58).
+**`Matrix.matrix_tsum_apply`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L58).
 
 > Apply a matrix `tsum` to a given entry.
 
@@ -50,7 +50,7 @@ lemma matrix_tsum_apply
     (∑' n, f n) i j = ∑' n, (f n) i j
 ```
 
-**`Matrix.diag_mul_of_blockTriangular_id`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L74).
+**`Matrix.diag_mul_of_blockTriangular_id`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L74).
 
 > For upper-triangular matrices, the diagonal of a product is the product of the diagonals.
 > This is a specific case of a more general property for block-triangular matrices.
@@ -60,7 +60,7 @@ lemma diag_mul_of_blockTriangular_id {A B : Matrix m m 𝕂}
     (hA : BlockTriangular A id) (hB : BlockTriangular B id) : (A * B).diag = A.diag * B.diag
 ```
 
-**`Matrix.blockTriangular.pow`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L86).
+**`Matrix.blockTriangular.pow`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L86).
 
 > Powers of block triangular matrices are block triangular.
 
@@ -69,7 +69,7 @@ lemma blockTriangular.pow {A : Matrix m m 𝕂} (hA : BlockTriangular A id) (k :
     BlockTriangular (A ^ k) id
 ```
 
-**`Matrix.diag_pow_of_blockTriangular_id`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L93).
+**`Matrix.diag_pow_of_blockTriangular_id`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L93).
 
 > For an upper-triangular matrix, the diagonal of a power is the power of the diagonal.
 
@@ -78,7 +78,7 @@ lemma diag_pow_of_blockTriangular_id {A : Matrix m m 𝕂}
     (hA : BlockTriangular A id) (k : ℕ) : (A ^ k).diag = A.diag ^ k
 ```
 
-**`Matrix.blockTriangular_exp_of_blockTriangular_id`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L102).
+**`Matrix.blockTriangular_exp_of_blockTriangular_id`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L102).
 
 > The exponential of an upper-triangular matrix is upper-triangular.
 
@@ -88,7 +88,7 @@ lemma blockTriangular_exp_of_blockTriangular_id
     (NormedSpace.exp A).BlockTriangular id
 ```
 
-**`Matrix.diag_pow_entry_eq_pow_diag_entry`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L123).
+**`Matrix.diag_pow_entry_eq_pow_diag_entry`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L123).
 
 > For an upper–triangular matrix `A`, the `(i,i)` entry of the power `A ^ n`
 > is simply the `n`-th power of the original diagonal entry.
@@ -99,7 +99,7 @@ lemma diag_pow_entry_eq_pow_diag_entry {A : Matrix m m 𝕂}
     (A ^ n) i i = (A i i) ^ n
 ```
 
-**`Matrix.exp_series_diag_term_eq`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L131).
+**`Matrix.exp_series_diag_term_eq`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L131).
 
 > Each term in the matrix exponential series equals the corresponding scalar term on the
 > diagonal
@@ -110,7 +110,7 @@ lemma exp_series_diag_term_eq {A : Matrix m m 𝕂} (hA : BlockTriangular A id)
     ((n.factorial : 𝕂)⁻¹ • (A ^ n)) i i = (n.factorial : 𝕂)⁻¹ • (A i i) ^ n
 ```
 
-**`Matrix.matrix_exp_series_diag_eq_scalar_series`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L137).
+**`Matrix.matrix_exp_series_diag_eq_scalar_series`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L137).
 
 > The diagonal of the matrix exponential series equals the scalar exponential series
 
@@ -120,7 +120,7 @@ lemma matrix_exp_series_diag_eq_scalar_series {A : Matrix m m 𝕂} (hA : BlockT
     (∑' n, ((n.factorial : 𝕂)⁻¹ • (A ^ n)) i i) = ∑' n, (n.factorial : 𝕂)⁻¹ • (A i i) ^ n
 ```
 
-**`Matrix.diag_exp_of_blockTriangular_id`**, a theorem, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L144). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`Matrix.diag_exp_of_blockTriangular_id`**, a theorem, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L144). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The diagonal of the exponential of an upper-triangular matrix `A` consists of the
 > exponentials of the diagonal entries of `A`.
@@ -131,7 +131,7 @@ theorem diag_exp_of_blockTriangular_id
     (NormedSpace.exp A).diag = fun i => NormedSpace.exp (A i i)
 ```
 
-**`Matrix.det_exp_of_blockTriangular_id`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L154).
+**`Matrix.det_exp_of_blockTriangular_id`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L154).
 
 > Lie's trace formula for upper triangular matrices.
 
@@ -140,7 +140,7 @@ lemma det_exp_of_blockTriangular_id {A : Matrix m m 𝕂} (hA : BlockTriangular 
     (NormedSpace.exp A).det = NormedSpace.exp A.trace
 ```
 
-**`Matrix.trace_unitary_conj`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L167).
+**`Matrix.trace_unitary_conj`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L167).
 
 > The trace is invariant under unitary conjugation.
 
@@ -149,7 +149,7 @@ lemma trace_unitary_conj (A : Matrix m m 𝕂) (U : unitaryGroup m 𝕂) :
     trace ((U : Matrix m m 𝕂) * A * star (U : Matrix m m 𝕂)) = trace A
 ```
 
-**`Matrix.det_unitary_conj`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L175).
+**`Matrix.det_unitary_conj`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L175).
 
 > The determinant is invariant under unitary conjugation.
 
@@ -158,7 +158,7 @@ lemma det_unitary_conj (A : Matrix m m 𝕂) (U : unitaryGroup m 𝕂) :
     det ((U : Matrix m m 𝕂) * A * star (U : Matrix m m 𝕂)) = det A
 ```
 
-**`Matrix.exp_unitary_conj`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L181).
+**`Matrix.exp_unitary_conj`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L181).
 
 > The exponential of a matrix commutes with unitary conjugation.
 
@@ -168,7 +168,7 @@ lemma exp_unitary_conj (A : Matrix m m 𝕂) (U : unitaryGroup m 𝕂) :
       (U : Matrix m m 𝕂) * NormedSpace.exp A * star (U : Matrix m m 𝕂)
 ```
 
-**`Matrix.det_exp_unitary_conj`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L192).
+**`Matrix.det_exp_unitary_conj`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L192).
 
 ```lean
 lemma det_exp_unitary_conj (A : Matrix m m 𝕂) (U : unitaryGroup m 𝕂) :
@@ -176,7 +176,7 @@ lemma det_exp_unitary_conj (A : Matrix m m 𝕂) (U : unitaryGroup m 𝕂) :
     (NormedSpace.exp A).det
 ```
 
-**`Matrix.det_exp`**, a theorem, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L199). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`Matrix.det_exp`**, a theorem, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L199). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The determinant of the exponential of a matrix is the exponential of its trace.
 > This is also known as **Lie's trace formula**.
@@ -187,7 +187,7 @@ theorem det_exp {𝕂 m : Type*} [RCLike 𝕂] [IsAlgClosed 𝕂] [Fintype m] [L
     (NormedSpace.exp A).det = NormedSpace.exp A.trace
 ```
 
-**`Matrix.map_tsum`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L217).
+**`Matrix.map_tsum`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L217).
 
 ```lean
 lemma map_tsum {α β m n : Type*}
@@ -197,7 +197,7 @@ lemma map_tsum {α β m n : Type*}
     (∑' k, s k).map f = ∑' k, (s k).map f
 ```
 
-**`NormedSpace.exp_map_algebraMap`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L234).
+**`NormedSpace.exp_map_algebraMap`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L234).
 
 ```lean
 lemma exp_map_algebraMap {n : Type*} [Fintype n] [DecidableEq n]
@@ -205,7 +205,7 @@ lemma exp_map_algebraMap {n : Type*} [Fintype n] [DecidableEq n]
     (exp A).map (algebraMap ℝ ℂ) = exp (A.map (algebraMap ℝ ℂ))
 ```
 
-**`Matrix.det_exp_real`**, a theorem, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L262). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`Matrix.det_exp_real`**, a theorem, [line 262](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean#L262). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Lie's trace formula over ℝ: det(exp(A)) = exp(tr(A)) for any real matrix A.
 > This is proved by transferring the result from ℂ using the naturality of polynomial identities.
@@ -225,4 +225,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean)
+- [Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean)

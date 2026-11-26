@@ -8,7 +8,7 @@ proof: formalized
 
 # Refinement of ensembles
 
-The module `PhyslibAlpha.ProbabilisticTheory.Classical.EnsembleRefinement`, [PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean): 7 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Classical.EnsembleRefinement`, [PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean): 7 declarations, 7 with a docstring.
 
 > Refinement of ensembles, its consequences for pure states, and refinement on a simplex.
 
@@ -46,7 +46,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.EnsembleRefinement`, [Phy
 
 ## A. Ensembles of weighted states
 
-**`PhyslibAlpha.ProbabilisticTheory.EnsemblesRefine`**, an abbrev, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean#L76).
+**`PhyslibAlpha.ProbabilisticTheory.EnsemblesRefine`**, an abbrev, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean#L76).
 
 > Ensembles of weighted states refine: any two finite families of weighted states with the same
 > total have a common refinement, weighted states `γ i j` whose rows add up to the first family and
@@ -56,7 +56,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.EnsembleRefinement`, [Phy
 abbrev EnsemblesRefine (E : Type*) [OrderUnitSpace E] : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsClassical.ensemblesRefine`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean#L82).
+**`PhyslibAlpha.ProbabilisticTheory.IsClassical.ensemblesRefine`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean#L82).
 
 > On a lattice dual cone, ensembles of weighted states refine.
 
@@ -64,7 +64,7 @@ abbrev EnsemblesRefine (E : Type*) [OrderUnitSpace E] : Prop
 lemma IsClassical.ensemblesRefine (hE : IsClassical E) : EnsemblesRefine E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.EnsemblesRefine.exists_table`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean#L87).
+**`PhyslibAlpha.ProbabilisticTheory.EnsemblesRefine.exists_table`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean#L87).
 
 > When ensembles refine, any two finite ensembles with the same total have a common refinement,
 > indexed by arbitrary finite types.
@@ -77,7 +77,7 @@ lemma EnsemblesRefine.exists_table (hE : EnsemblesRefine E) {ι κ : Type*} [Fin
 
 ## B. Refinement separates pure states
 
-**`PhyslibAlpha.ProbabilisticTheory.EnsemblesRefine.eq_of_sum_weighted_eq`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean#L103).
+**`PhyslibAlpha.ProbabilisticTheory.EnsemblesRefine.eq_of_sum_weighted_eq`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean#L103).
 
 > When ensembles refine, a mixture of distinct pure states determines its weights.
 
@@ -89,7 +89,7 @@ lemma EnsemblesRefine.eq_of_sum_weighted_eq (hE : EnsemblesRefine E) {ι : Type*
 
 ## C. Upper envelopes on refining ensembles
 
-**`PhyslibAlpha.ProbabilisticTheory.EnsemblesRefine.upperEnvelope_add_le`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean#L126).
+**`PhyslibAlpha.ProbabilisticTheory.EnsemblesRefine.upperEnvelope_add_le`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean#L126).
 
 > **Choquet–Meyer**: when ensembles refine, the upper envelope is subadditive.
 
@@ -101,7 +101,7 @@ lemma EnsemblesRefine.upperEnvelope_add_le {ι : Type*} [Fintype ι] [Nonempty �
 
 ## D. Ensembles refine on a simplex
 
-**`PhyslibAlpha.ProbabilisticTheory.IsSimplexStateSpace.isClassical`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean#L147).
+**`PhyslibAlpha.ProbabilisticTheory.IsSimplexStateSpace.isClassical`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean#L147).
 
 > On a simplex, any two positive functionals have a least upper bound: integration against the
 > supremum of their measures.
@@ -110,7 +110,7 @@ lemma EnsemblesRefine.upperEnvelope_add_le {ι : Type*} [Fintype ι] [Nonempty �
 lemma IsSimplexStateSpace.isClassical : IsClassical E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsSimplexStateSpace.ensemblesRefine`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean#L165).
+**`PhyslibAlpha.ProbabilisticTheory.IsSimplexStateSpace.ensemblesRefine`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean#L165).
 
 > **On a simplex, ensembles refine.**
 
@@ -130,4 +130,4 @@ lemma IsSimplexStateSpace.ensemblesRefine : EnsemblesRefine E
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean)

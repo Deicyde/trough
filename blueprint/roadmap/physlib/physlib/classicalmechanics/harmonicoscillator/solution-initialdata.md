@@ -8,7 +8,7 @@ proof: formalized
 
 # The initial conditions
 
-The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.InitialData`, [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean): 10 declarations (1 instance with no name), 10 with a docstring.
+The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.InitialData`, [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean): 10 declarations (1 instance with no name), 10 with a docstring.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.InitialData`,
 
 > We start by defining the type of initial conditions for the harmonic oscillator.
 
-**`ClassicalMechanics.HarmonicOscillator.InitialConditions`**, a structure, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L71).
+**`ClassicalMechanics.HarmonicOscillator.InitialConditions`**, a structure, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L71).
 
 > The initial conditions for the harmonic oscillator specified by an initial position,
 >   and an initial velocity.
@@ -93,7 +93,7 @@ structure InitialConditions where
 >
 > Solving this linear system for `x₀` and `v₀` gives the formulas in `toInitialConditions` below.
 
-**`ClassicalMechanics.HarmonicOscillator.InitialConditionsAtTime`**, a structure, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L131).
+**`ClassicalMechanics.HarmonicOscillator.InitialConditionsAtTime`**, a structure, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L131).
 
 > Initial conditions for the harmonic oscillator specified at an arbitrary time `t₀`.
 >
@@ -113,7 +113,7 @@ structure InitialConditionsAtTime where
   vT₀ : EuclideanSpace ℝ (Fin 1)
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.InitialConditionsAtTime.toInitialConditions`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L149).
+**`ClassicalMechanics.HarmonicOscillator.InitialConditionsAtTime.toInitialConditions`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L149).
 
 > Convert initial conditions at time `t₀` to standard initial conditions at `t=0`.
 >
@@ -151,7 +151,7 @@ noncomputable def toInitialConditions (S : HarmonicOscillator)
 > `Δ = sin(ω(t₂-t₁)) ≠ 0`, i.e. when `t₂ - t₁` is not an integer multiple of half a period. The
 > correctness proofs, under this nondegeneracy condition, are given later in section D.2.
 
-**`ClassicalMechanics.HarmonicOscillator.InitialConditionsFromTwoPositions`**, a structure, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L190).
+**`ClassicalMechanics.HarmonicOscillator.InitialConditionsFromTwoPositions`**, a structure, [line 190](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L190).
 
 > Initial conditions for the harmonic oscillator specified by two positions
 > `xT₁` and `xT₂` measured at two times `t₁` and `t₂` respectively.
@@ -171,7 +171,7 @@ structure InitialConditionsFromTwoPositions where
   xT₂ : EuclideanSpace ℝ (Fin 1)
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.InitialConditionsFromTwoPositions.toInitialConditions`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L208).
+**`ClassicalMechanics.HarmonicOscillator.InitialConditionsFromTwoPositions.toInitialConditions`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L208).
 
 > Convert two-position initial conditions to standard initial conditions at `t = 0`.
 >
@@ -203,7 +203,7 @@ noncomputable def toInitialConditions (S : HarmonicOscillator)
 > `Δ = sin(ω(t₂-t₁)) ≠ 0`, i.e. when `t₂ - t₁` is not an integer multiple of half a period. The
 > correctness proofs, under this nondegeneracy condition, are given later in section D.3.
 
-**`ClassicalMechanics.HarmonicOscillator.InitialConditionsFromTwoVelocities`**, a structure, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L245).
+**`ClassicalMechanics.HarmonicOscillator.InitialConditionsFromTwoVelocities`**, a structure, [line 245](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L245).
 
 > Initial conditions for the harmonic oscillator specified by two velocities
 > `vT₁` and `vT₂` measured at two times `t₁` and `t₂` respectively.
@@ -223,7 +223,7 @@ structure InitialConditionsFromTwoVelocities where
   vT₂ : EuclideanSpace ℝ (Fin 1)
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.InitialConditionsFromTwoVelocities.toInitialConditions`**, a def, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L262).
+**`ClassicalMechanics.HarmonicOscillator.InitialConditionsFromTwoVelocities.toInitialConditions`**, a def, [line 262](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L262).
 
 > Convert two-velocity initial conditions to standard initial conditions at `t = 0`.
 >
@@ -244,7 +244,7 @@ noncomputable def toInitialConditions (S : HarmonicOscillator)
 > In the end, we will see that this corresponds to the solution which is identically zero,
 > i.e. the particle remains at rest at the origin.
 
-**An instance with no name**, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L286).
+**An instance with no name**, [line 286](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L286).
 
 > The zero initial condition.
 
@@ -256,7 +256,7 @@ instance : Zero InitialConditions
 
 > Some simple results about the zero initial conditions.
 
-**`ClassicalMechanics.HarmonicOscillator.InitialConditions.x₀_zero`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L297).
+**`ClassicalMechanics.HarmonicOscillator.InitialConditions.x₀_zero`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L297).
 
 > The zero initial condition has zero starting point.
 
@@ -264,7 +264,7 @@ instance : Zero InitialConditions
 lemma x₀_zero : x₀ 0 = 0
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.InitialConditions.v₀_zero`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L301).
+**`ClassicalMechanics.HarmonicOscillator.InitialConditions.v₀_zero`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean#L301).
 
 > The zero initial condition has zero starting velocity.
 
@@ -278,4 +278,4 @@ lemma v₀_zero : v₀ 0 = 0
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean)
+- [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean)

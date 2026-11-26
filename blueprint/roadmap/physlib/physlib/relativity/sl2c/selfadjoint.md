@@ -8,7 +8,7 @@ proof: formalized
 
 # Extra lemmas regarding `Lorentz.SL2C.toSelfAdjointMap`
 
-The module `Physlib.Relativity.SL2C.SelfAdjoint`, [Physlib/Relativity/SL2C/SelfAdjoint.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/SelfAdjoint.lean): 6 declarations, 3 with a docstring.
+The module `Physlib.Relativity.SL2C.SelfAdjoint`, [Physlib/Relativity/SL2C/SelfAdjoint.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/SelfAdjoint.lean): 6 declarations, 3 with a docstring.
 
 > This file redefines `Lorentz.SL2C.toSelfAdjointMap` by dropping the special linear condition for its
 > first argument `M`. Then, `Lorentz.SL2C.toSelfAdjointMap_det_one` is proved for `M` being upper
@@ -22,7 +22,7 @@ The module `Physlib.Relativity.SL2C.SelfAdjoint`, [Physlib/Relativity/SL2C/SelfA
 > additional requirement that `M` be upper triangular. The general case is reduced to this special
 > case via `Matrix.schur_triangulation` in `Lorentz.SL2C.toSelfAdjointMap_det_one`.
 
-**`Lorentz.ℍ₂`**, an abbrev, [line 42](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/SelfAdjoint.lean#L42).
+**`Lorentz.ℍ₂`**, an abbrev, [line 42](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/SelfAdjoint.lean#L42).
 
 > A convenient abbreviation for the type of self-adjoint complex 2-by-2 matrices.
 
@@ -30,7 +30,7 @@ The module `Physlib.Relativity.SL2C.SelfAdjoint`, [Physlib/Relativity/SL2C/SelfA
 noncomputable abbrev ℍ₂
 ```
 
-**`Lorentz.SL2C.toSelfAdjointMap'`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/SelfAdjoint.lean#L48).
+**`Lorentz.SL2C.toSelfAdjointMap'`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/SelfAdjoint.lean#L48).
 
 > Definitionally equal to `Lorentz.SL2C.toSelfAdjointMap` but dropping the requirement that `M` be
 > special linear.
@@ -85,14 +85,14 @@ noncomputable def toSelfAdjointMap' (M : ℂ²ˣ²) : ℍ₂ →ₗ[ℝ] ℍ₂
 > `Matrix.schur_triangulation`, and observe that `Matrix.schurTriangulation` preserves the determinant
 > which is 1.
 
-**`Lorentz.SL2C.toSelfAdjointMap_det_one'`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/SelfAdjoint.lean#L98).
+**`Lorentz.SL2C.toSelfAdjointMap_det_one'`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/SelfAdjoint.lean#L98).
 
 ```lean
 lemma toSelfAdjointMap_det_one' {M : ℂ²ˣ²} (hM : M.IsUpperTriangular) (detM : M.det = 1) :
     LinearMap.det (toSelfAdjointMap' M) = 1
 ```
 
-**`Lorentz.SL2C.toSelfAdjointEquiv`**, a def, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/SelfAdjoint.lean#L180).
+**`Lorentz.SL2C.toSelfAdjointEquiv`**, a def, [line 180](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/SelfAdjoint.lean#L180).
 
 > This promotes `Lorentz.SL2C.toSelfAdjointMap M` and its definitional equivalence,
 > `Lorentz.SL2C.toSelfAdjointMap' M`, to a linear equivalence by recognizing the linear inverse to be
@@ -102,14 +102,14 @@ lemma toSelfAdjointMap_det_one' {M : ℂ²ˣ²} (hM : M.IsUpperTriangular) (detM
 noncomputable def toSelfAdjointEquiv (M : ℂ²ˣ²) [Invertible M] : ℍ₂ ≃ₗ[ℝ] ℍ₂
 ```
 
-**`Lorentz.SL2C.toSelfAdjointMap_mul`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/SelfAdjoint.lean#L192).
+**`Lorentz.SL2C.toSelfAdjointMap_mul`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/SelfAdjoint.lean#L192).
 
 ```lean
 lemma toSelfAdjointMap_mul (M N : ℂ²ˣ²) :
     toSelfAdjointMap' (M * N) = toSelfAdjointMap' M ∘ₗ toSelfAdjointMap' N
 ```
 
-**`Lorentz.SL2C.toSelfAdjointMap_similar_det`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/SelfAdjoint.lean#L197).
+**`Lorentz.SL2C.toSelfAdjointMap_similar_det`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/SelfAdjoint.lean#L197).
 
 ```lean
 lemma toSelfAdjointMap_similar_det (M N : ℂ²ˣ²) [Invertible M] :
@@ -122,4 +122,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Relativity/SL2C/SelfAdjoint.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/SelfAdjoint.lean)
+- [Physlib/Relativity/SL2C/SelfAdjoint.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/SelfAdjoint.lean)

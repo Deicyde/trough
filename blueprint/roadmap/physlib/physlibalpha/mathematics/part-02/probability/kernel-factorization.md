@@ -8,7 +8,7 @@ proof: formalized
 
 # Factorization of Markov kernels
 
-The module `PhyslibAlpha.Mathematics.Probability.Kernel.Factorization`, [PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean): 25 declarations, 25 with a docstring.
+The module `PhyslibAlpha.Mathematics.Probability.Kernel.Factorization`, [PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean): 25 declarations, 25 with a docstring.
 
 > Factoring kernels through Markov kernels, almost everywhere variants, and common refinements.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.Mathematics.Probability.Kernel.Factorization`, [Physlib
 
 ## A. Factorization
 
-**`ProbabilityTheory.Kernel.FactorsThrough`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L65).
+**`ProbabilityTheory.Kernel.FactorsThrough`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L65).
 
 > `K` factors through `L`: `K = κ ∘ₖ L` for a Markov kernel `κ`.
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.Mathematics.Probability.Kernel.Factorization`, [Physlib
 def FactorsThrough (K : Kernel α β) (L : Kernel α γ) : Prop
 ```
 
-**`ProbabilityTheory.Kernel.factorsThrough_refl`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L69).
+**`ProbabilityTheory.Kernel.factorsThrough_refl`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L69).
 
 > Every kernel factors through itself.
 
@@ -52,7 +52,7 @@ def FactorsThrough (K : Kernel α β) (L : Kernel α γ) : Prop
 lemma factorsThrough_refl (K : Kernel α β) : FactorsThrough K K
 ```
 
-**`ProbabilityTheory.Kernel.factorsThrough_trans`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L73).
+**`ProbabilityTheory.Kernel.factorsThrough_trans`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L73).
 
 > Factoring through a kernel is transitive.
 
@@ -61,7 +61,7 @@ lemma factorsThrough_trans {K : Kernel α β} {L : Kernel α γ} {M : Kernel α 
     (hKL : FactorsThrough K L) (hLM : FactorsThrough L M) : FactorsThrough K M
 ```
 
-**`ProbabilityTheory.Kernel.factorsThrough_apply`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L80).
+**`ProbabilityTheory.Kernel.factorsThrough_apply`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L80).
 
 > If `K` factors through `L`, each measure `K a` is the bind of `L a` with a Markov kernel.
 
@@ -71,7 +71,7 @@ lemma factorsThrough_apply {K : Kernel α β} {L : Kernel α γ}
     ∃ κ : Kernel γ β, IsMarkovKernel κ ∧ K a = (L a).bind κ
 ```
 
-**`ProbabilityTheory.Kernel.const_factorsThrough`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L87).
+**`ProbabilityTheory.Kernel.const_factorsThrough`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L87).
 
 > A constant kernel with a probability measure factors through every Markov kernel.
 
@@ -83,7 +83,7 @@ lemma const_factorsThrough (K : Kernel α γ) [IsMarkovKernel K]
 
 ## B. Mutual factorization
 
-**`ProbabilityTheory.Kernel.MutuallyFactor`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L95).
+**`ProbabilityTheory.Kernel.MutuallyFactor`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L95).
 
 > Two kernels factor through each other.
 
@@ -91,7 +91,7 @@ lemma const_factorsThrough (K : Kernel α γ) [IsMarkovKernel K]
 def MutuallyFactor (K : Kernel α β) (L : Kernel α γ) : Prop
 ```
 
-**`ProbabilityTheory.Kernel.mutuallyFactor_refl`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L99).
+**`ProbabilityTheory.Kernel.mutuallyFactor_refl`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L99).
 
 > Mutual factoring is reflexive.
 
@@ -99,7 +99,7 @@ def MutuallyFactor (K : Kernel α β) (L : Kernel α γ) : Prop
 lemma mutuallyFactor_refl (K : Kernel α β) : MutuallyFactor K K
 ```
 
-**`ProbabilityTheory.Kernel.mutuallyFactor_symm`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L103).
+**`ProbabilityTheory.Kernel.mutuallyFactor_symm`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L103).
 
 > Mutual factoring is symmetric.
 
@@ -108,7 +108,7 @@ lemma mutuallyFactor_symm {K : Kernel α β} {L : Kernel α γ}
     (h : MutuallyFactor K L) : MutuallyFactor L K
 ```
 
-**`ProbabilityTheory.Kernel.mutuallyFactor_trans`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L108).
+**`ProbabilityTheory.Kernel.mutuallyFactor_trans`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L108).
 
 > Mutual factoring is transitive.
 
@@ -119,7 +119,7 @@ lemma mutuallyFactor_trans {K : Kernel α β} {L : Kernel α γ} {M : Kernel α 
 
 ## C. Factorization almost everywhere
 
-**`ProbabilityTheory.Kernel.FactorsThroughAE`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L115).
+**`ProbabilityTheory.Kernel.FactorsThroughAE`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L115).
 
 > `K` factors through `L` at `μ`-almost every point: `K =ᵐ[μ] κ ∘ₖ L` for a Markov kernel `κ`.
 
@@ -127,7 +127,7 @@ lemma mutuallyFactor_trans {K : Kernel α β} {L : Kernel α γ} {M : Kernel α 
 def FactorsThroughAE (μ : Measure α) (K : Kernel α β) (L : Kernel α γ) : Prop
 ```
 
-**`ProbabilityTheory.Kernel.FactorsThrough.factorsThroughAE`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L119).
+**`ProbabilityTheory.Kernel.FactorsThrough.factorsThroughAE`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L119).
 
 > Factoring everywhere implies factoring almost everywhere, for every measure.
 
@@ -136,7 +136,7 @@ lemma FactorsThrough.factorsThroughAE (μ : Measure α) {K : Kernel α β} {L : 
     (h : FactorsThrough K L) : FactorsThroughAE μ K L
 ```
 
-**`ProbabilityTheory.Kernel.factorsThroughAE_refl`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L125).
+**`ProbabilityTheory.Kernel.factorsThroughAE_refl`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L125).
 
 > Every kernel factors through itself almost everywhere.
 
@@ -144,7 +144,7 @@ lemma FactorsThrough.factorsThroughAE (μ : Measure α) {K : Kernel α β} {L : 
 lemma factorsThroughAE_refl (μ : Measure α) (K : Kernel α β) : FactorsThroughAE μ K K
 ```
 
-**`ProbabilityTheory.Kernel.factorsThroughAE_trans`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L129).
+**`ProbabilityTheory.Kernel.factorsThroughAE_trans`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L129).
 
 > Factoring almost everywhere is transitive.
 
@@ -156,7 +156,7 @@ lemma factorsThroughAE_trans (μ : Measure α) {K : Kernel α β} {L : Kernel α
 
 ## D. Mutual factorization almost everywhere
 
-**`ProbabilityTheory.Kernel.MutuallyFactorAE`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L141).
+**`ProbabilityTheory.Kernel.MutuallyFactorAE`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L141).
 
 > Two kernels factor through each other almost everywhere.
 
@@ -164,7 +164,7 @@ lemma factorsThroughAE_trans (μ : Measure α) {K : Kernel α β} {L : Kernel α
 def MutuallyFactorAE (μ : Measure α) (K : Kernel α β) (L : Kernel α γ) : Prop
 ```
 
-**`ProbabilityTheory.Kernel.mutuallyFactorAE_refl`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L145).
+**`ProbabilityTheory.Kernel.mutuallyFactorAE_refl`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L145).
 
 > Mutual factoring almost everywhere is reflexive.
 
@@ -173,7 +173,7 @@ lemma mutuallyFactorAE_refl (μ : Measure α) (K : Kernel α β) :
     MutuallyFactorAE μ K K
 ```
 
-**`ProbabilityTheory.Kernel.mutuallyFactorAE_symm`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L150).
+**`ProbabilityTheory.Kernel.mutuallyFactorAE_symm`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L150).
 
 > Mutual factoring almost everywhere is symmetric.
 
@@ -182,7 +182,7 @@ lemma mutuallyFactorAE_symm (μ : Measure α) {K : Kernel α β} {L : Kernel α 
     (h : MutuallyFactorAE μ K L) : MutuallyFactorAE μ L K
 ```
 
-**`ProbabilityTheory.Kernel.mutuallyFactorAE_trans`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L155).
+**`ProbabilityTheory.Kernel.mutuallyFactorAE_trans`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L155).
 
 > Mutual factoring almost everywhere is transitive.
 
@@ -192,7 +192,7 @@ lemma mutuallyFactorAE_trans (μ : Measure α) {K : Kernel α β} {L : Kernel α
     (hLM : MutuallyFactorAE μ L M) : MutuallyFactorAE μ K M
 ```
 
-**`ProbabilityTheory.Kernel.mutuallyFactorAE_of_ae_eq`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L161).
+**`ProbabilityTheory.Kernel.mutuallyFactorAE_of_ae_eq`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L161).
 
 > Kernels equal almost everywhere factor through each other almost everywhere.
 
@@ -203,7 +203,7 @@ lemma mutuallyFactorAE_of_ae_eq (μ : Measure α) {K L : Kernel α β} (h : K =�
 
 ## E. Kernels equal almost everywhere
 
-**`ProbabilityTheory.Kernel.ae_eq_of_forall_ae_apply_eq`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L173).
+**`ProbabilityTheory.Kernel.ae_eq_of_forall_ae_apply_eq`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L173).
 
 > On a countably generated outcome space, two finite kernels which, for each event, give it the
 > same measure at almost every input, are equal at almost every input.
@@ -216,7 +216,7 @@ lemma ae_eq_of_forall_ae_apply_eq [MeasurableSpace.CountablyGenerated β] {μ : 
 
 ## F. Common refinements
 
-**`ProbabilityTheory.Kernel.HaveCommonRefinement`**, a def, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L205).
+**`ProbabilityTheory.Kernel.HaveCommonRefinement`**, a def, [line 205](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L205).
 
 > Two kernels have a common refinement: both factor through one kernel `G`.
 
@@ -224,7 +224,7 @@ lemma ae_eq_of_forall_ae_apply_eq [MeasurableSpace.CountablyGenerated β] {μ : 
 def HaveCommonRefinement (K : Kernel α β) (L : Kernel α γ) : Prop
 ```
 
-**`ProbabilityTheory.Kernel.haveCommonRefinement_refl`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L209).
+**`ProbabilityTheory.Kernel.haveCommonRefinement_refl`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L209).
 
 > Every kernel is a common refinement of itself and itself.
 
@@ -232,7 +232,7 @@ def HaveCommonRefinement (K : Kernel α β) (L : Kernel α γ) : Prop
 lemma haveCommonRefinement_refl (K : Kernel α β) : HaveCommonRefinement K K
 ```
 
-**`ProbabilityTheory.Kernel.haveCommonRefinement_symm`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L213).
+**`ProbabilityTheory.Kernel.haveCommonRefinement_symm`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L213).
 
 > Having a common refinement is symmetric.
 
@@ -241,7 +241,7 @@ lemma haveCommonRefinement_symm {K : Kernel α β} {L : Kernel α γ}
     (h : HaveCommonRefinement K L) : HaveCommonRefinement L K
 ```
 
-**`ProbabilityTheory.Kernel.HaveCommonRefinement.mono`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L219).
+**`ProbabilityTheory.Kernel.HaveCommonRefinement.mono`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L219).
 
 > A common refinement of `K` and `L` refines everything that factors through them.
 
@@ -251,7 +251,7 @@ lemma HaveCommonRefinement.mono {K : Kernel α β} {L : Kernel α γ}
     (hK : FactorsThrough K' K) (hL : FactorsThrough L' L) : HaveCommonRefinement K' L'
 ```
 
-**`ProbabilityTheory.Kernel.haveCommonRefinement_of_factorsThrough_left`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L226).
+**`ProbabilityTheory.Kernel.haveCommonRefinement_of_factorsThrough_left`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L226).
 
 > If `K` factors through `L`, then `L` is a common refinement of both.
 
@@ -260,7 +260,7 @@ lemma haveCommonRefinement_of_factorsThrough_left {K : Kernel α β} {L : Kernel
     (h : FactorsThrough K L) : HaveCommonRefinement K L
 ```
 
-**`ProbabilityTheory.Kernel.haveCommonRefinement_of_factorsThrough_right`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L231).
+**`ProbabilityTheory.Kernel.haveCommonRefinement_of_factorsThrough_right`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean#L231).
 
 > If `L` factors through `K`, then `K` is a common refinement of both.
 
@@ -275,4 +275,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean)
+- [PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/Probability/Kernel/Factorization.lean)

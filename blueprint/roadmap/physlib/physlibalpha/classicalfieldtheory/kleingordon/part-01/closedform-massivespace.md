@@ -8,7 +8,7 @@ proof: formalized
 
 # The massive Kirchhoff formula for every test source
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MassiveSpace`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveSpace.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveSpace.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MassiveSpace`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveSpace.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveSpace.lean): 3 declarations, 3 with a docstring.
 
 > In three space dimensions the massive retarded solution of any test source is the massless
 > Kirchhoff solution plus a Bessel average of the Kirchhoff propagators.
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MassiveSpac
 > - `solution_mass_three` : the Kirchhoff–Bessel formula for the retarded solution.
 > - `solution_mass_three_besselJ1` : the same formula with `J₁`.
 
-**`KleinGordon.sineEvolution_mass_three`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveSpace.lean#L62).
+**`KleinGordon.sineEvolution_mass_three`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveSpace.lean#L62).
 
 > **The Kirchhoff–Bessel formula for the sine evolution on `Space 3`.** For every Schwartz
 > source the massive sine evolution is the Kirchhoff propagator at the radius plus a Bessel
@@ -49,7 +49,7 @@ lemma sineEvolution_mass_three {r : ℝ} (hr : 0 ≤ r) (m : ℝ) (g : 𝓢(Spac
         wavePropagator 1 u g x
 ```
 
-**`KleinGordon.solution_mass_three`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveSpace.lean#L72).
+**`KleinGordon.solution_mass_three`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveSpace.lean#L72).
 
 > **The Kirchhoff–Bessel formula for the retarded solution of a test source.** In three space
 > dimensions the massive retarded solution at `(t, x)` is the massless Kirchhoff solution plus a
@@ -64,7 +64,7 @@ lemma solution_mass_three (m : ℝ) (ψ : TestFunction (⊤ : Opens (ℝ × Spac
           wavePropagator 1 u (slice ℂ ψ s) x)
 ```
 
-**`KleinGordon.solution_mass_three_besselJ1`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveSpace.lean#L87).
+**`KleinGordon.solution_mass_three_besselJ1`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveSpace.lean#L87).
 
 > **The Kirchhoff–Bessel formula with `J₁`.** For `m ≠ 0` the retarded solution of a test source
 > in three space dimensions is the Duhamel integral of
@@ -94,4 +94,4 @@ lemma solution_mass_three_besselJ1 {m : ℝ} (hm : m ≠ 0)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveSpace.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveSpace.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveSpace.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveSpace.lean)

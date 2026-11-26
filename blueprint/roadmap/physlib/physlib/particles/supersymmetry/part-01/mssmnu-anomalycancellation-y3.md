@@ -8,7 +8,7 @@ proof: formalized
 
 # The definition of the solution Y₃ and properties thereof
 
-The module `Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.Y3`, [Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean): 4 declarations, 2 with a docstring.
+The module `Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.Y3`, [Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean): 4 declarations, 2 with a docstring.
 
 > We define $Y_3$ and show that it is a double point of the cubic.
 
@@ -17,7 +17,7 @@ The module `Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.Y3`, [Phy
 > * The main reference for the material in this file is https://arxiv.org/pdf/2107.07926.pdf.
 >   [ref: Allanach:2021yjy]
 
-**`MSSMACC.Y₃AsCharge`**, a def, [line 30](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean#L30).
+**`MSSMACC.Y₃AsCharge`**, a def, [line 30](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean#L30).
 
 > $Y_3$ is the charge which is hypercharge in all families, but with the third
 > family of the opposite sign.
@@ -26,7 +26,7 @@ The module `Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.Y3`, [Phy
 def Y₃AsCharge : MSSMACC.Charges
 ```
 
-**`MSSMACC.Y₃`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean#L57).
+**`MSSMACC.Y₃`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean#L57).
 
 > $Y_3$ as a solution.
 
@@ -34,13 +34,13 @@ def Y₃AsCharge : MSSMACC.Charges
 def Y₃ : MSSMACC.Sols
 ```
 
-**`MSSMACC.Y₃_val`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean#L62).
+**`MSSMACC.Y₃_val`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean#L62).
 
 ```lean
 lemma Y₃_val : Y₃.val = Y₃AsCharge
 ```
 
-**`MSSMACC.doublePoint_Y₃_Y₃`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean#L66).
+**`MSSMACC.doublePoint_Y₃_Y₃`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean#L66).
 
 ```lean
 lemma doublePoint_Y₃_Y₃ (R : MSSMACC.LinSols) :
@@ -53,4 +53,4 @@ lemma doublePoint_Y₃_Y₃ (R : MSSMACC.LinSols) :
 
 ## Sources
 
-- [Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean)
+- [Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean)

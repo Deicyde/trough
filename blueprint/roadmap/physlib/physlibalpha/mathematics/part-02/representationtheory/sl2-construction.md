@@ -8,7 +8,7 @@ proof: formalized
 
 # Explicit standard sl₂ modules
 
-The module `PhyslibAlpha.Mathematics.RepresentationTheory.Sl2.Construction`, [PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean): 44 declarations (2 instances with no name), 21 with a docstring.
+The module `PhyslibAlpha.Mathematics.RepresentationTheory.Sl2.Construction`, [PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean): 44 declarations (2 instances with no name), 21 with a docstring.
 
 > Builds the finite-dimensional standard module `V(n)` and the actions of an `sl₂` triple.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.Mathematics.RepresentationTheory.Sl2.Construction`, [Ph
 
 ## A. The standard module
 
-**`PhyslibAlpha.Sl2.StandardSl2Module`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L55).
+**`PhyslibAlpha.Sl2.StandardSl2Module`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L55).
 
 > Standard module `V(n)`, underlying carrier.
 > An `(n+1)`-dimensional `K`-vector space with standard basis `v_0, …, v_n`.
@@ -40,19 +40,19 @@ The module `PhyslibAlpha.Mathematics.RepresentationTheory.Sl2.Construction`, [Ph
 def StandardSl2Module (K : Type*) (n : ℕ) : Type _
 ```
 
-**An instance with no name**, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L59).
+**An instance with no name**, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L59).
 
 ```lean
 instance : AddCommGroup (StandardSl2Module K n)
 ```
 
-**An instance with no name**, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L62).
+**An instance with no name**, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L62).
 
 ```lean
 instance : Module K (StandardSl2Module K n)
 ```
 
-**`PhyslibAlpha.Sl2.StandardSl2Module.v`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L66).
+**`PhyslibAlpha.Sl2.StandardSl2Module.v`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L66).
 
 > The standard basis vector `v_k` of `StandardSl2Module K n`.
 
@@ -60,7 +60,7 @@ instance : Module K (StandardSl2Module K n)
 def StandardSl2Module.v (k : Fin (n + 1)) : StandardSl2Module K n
 ```
 
-**`PhyslibAlpha.Sl2.generators_eigenvectors`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L74).
+**`PhyslibAlpha.Sl2.generators_eigenvectors`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L74).
 
 > The three generators are eigenvectors of the adjoint action of `h`.
 
@@ -69,7 +69,7 @@ lemma generators_eigenvectors (t : IsSl2Triple h e f) (i : Fin 3) :
     (LieModule.toEnd K L L h).HasEigenvector (![(2 : K), -2, 0] i) (![e, f, h] i)
 ```
 
-**`PhyslibAlpha.Sl2.linearIndependent_efh`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L89).
+**`PhyslibAlpha.Sl2.linearIndependent_efh`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L89).
 
 > The generators of an `sl₂` triple are linearly independent.
 
@@ -78,14 +78,14 @@ lemma linearIndependent_efh (t : IsSl2Triple h e f) :
     LinearIndependent K ![e, f, h]
 ```
 
-**`PhyslibAlpha.Sl2.span_efh_eq`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L101).
+**`PhyslibAlpha.Sl2.span_efh_eq`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L101).
 
 ```lean
 lemma span_efh_eq (t : IsSl2Triple h e f) :
     Submodule.span K (Set.range ![e, f, h]) = (t.toLieSubalgebra (R := K)).toSubmodule
 ```
 
-**`PhyslibAlpha.Sl2.efhSub`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L115).
+**`PhyslibAlpha.Sl2.efhSub`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L115).
 
 > The generators `(e,f,h)`, as elements of the subalgebra subtype.
 
@@ -93,7 +93,7 @@ lemma span_efh_eq (t : IsSl2Triple h e f) :
 def efhSub (t : IsSl2Triple h e f) : Fin 3 → ↥(t.toLieSubalgebra (R := K))
 ```
 
-**`PhyslibAlpha.Sl2.linearIndependent_efhSub`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L121).
+**`PhyslibAlpha.Sl2.linearIndependent_efhSub`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L121).
 
 > The generators `(e,f,h)` are linearly independent in the subalgebra.
 
@@ -102,7 +102,7 @@ lemma linearIndependent_efhSub (t : IsSl2Triple h e f) :
     LinearIndependent K (efhSub (K := K) t)
 ```
 
-**`PhyslibAlpha.Sl2.efhSub_span_top`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L130).
+**`PhyslibAlpha.Sl2.efhSub_span_top`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L130).
 
 > The generators `(e,f,h)` span the subalgebra.
 
@@ -111,7 +111,7 @@ lemma efhSub_span_top (t : IsSl2Triple h e f) :
     ⊤ ≤ Submodule.span K (Set.range (efhSub (K := K) t))
 ```
 
-**`PhyslibAlpha.Sl2.subalgebraBasis`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L144).
+**`PhyslibAlpha.Sl2.subalgebraBasis`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L144).
 
 > A basis of the `sl₂`-subalgebra generated by `t`, given by `(e,f,h)`.
 
@@ -120,14 +120,14 @@ def subalgebraBasis (t : IsSl2Triple h e f) :
     Basis (Fin 3) K ↥(t.toLieSubalgebra (R := K))
 ```
 
-**`PhyslibAlpha.Sl2.subalgebraBasis_apply`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L148).
+**`PhyslibAlpha.Sl2.subalgebraBasis_apply`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L148).
 
 ```lean
 lemma subalgebraBasis_apply (t : IsSl2Triple h e f) (i : Fin 3) :
     (subalgebraBasis (K := K) t i : L) = ![e, f, h] i
 ```
 
-**`PhyslibAlpha.Sl2.ρE`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L156).
+**`PhyslibAlpha.Sl2.ρE`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L156).
 
 > `e` acting on `StandardSl2Module K n`: `ρE (v k) = (k(n-k+1)) • v (k-1)`, `ρE (v 0) = 0`.
 > As a per-component formula (component `k` of the output reads from input component `k+1`,
@@ -138,7 +138,7 @@ lemma subalgebraBasis_apply (t : IsSl2Triple h e f) (i : Fin 3) :
 def ρE : Module.End K (StandardSl2Module K n)
 ```
 
-**`PhyslibAlpha.Sl2.ρF`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L163).
+**`PhyslibAlpha.Sl2.ρF`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L163).
 
 > `f` acting on `StandardSl2Module K n`: `ρF (v k) = v (k+1)`, `ρF (v n) = 0`.
 
@@ -146,7 +146,7 @@ def ρE : Module.End K (StandardSl2Module K n)
 def ρF : Module.End K (StandardSl2Module K n)
 ```
 
-**`PhyslibAlpha.Sl2.ρH`**, a def, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L170).
+**`PhyslibAlpha.Sl2.ρH`**, a def, [line 170](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L170).
 
 > `h` acting on `StandardSl2Module K n`: `ρH (v k) = (n - 2k) • v k`.
 
@@ -154,7 +154,7 @@ def ρF : Module.End K (StandardSl2Module K n)
 def ρH : Module.End K (StandardSl2Module K n)
 ```
 
-**`PhyslibAlpha.Sl2.ρH_v`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L176).
+**`PhyslibAlpha.Sl2.ρH_v`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L176).
 
 ```lean
 lemma ρH_v (k : Fin (n + 1)) :
@@ -162,7 +162,7 @@ lemma ρH_v (k : Fin (n + 1)) :
       = ((n : K) - 2 * (k : ℕ)) • StandardSl2Module.v k
 ```
 
-**`PhyslibAlpha.Sl2.ρF_v_lt`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L185).
+**`PhyslibAlpha.Sl2.ρF_v_lt`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L185).
 
 ```lean
 lemma ρF_v_lt (k : Fin (n + 1)) (hk : (k : ℕ) < n) :
@@ -170,14 +170,14 @@ lemma ρF_v_lt (k : Fin (n + 1)) (hk : (k : ℕ) < n) :
       = StandardSl2Module.v ⟨(k : ℕ) + 1, by omega⟩
 ```
 
-**`PhyslibAlpha.Sl2.ρF_v_last`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L194).
+**`PhyslibAlpha.Sl2.ρF_v_last`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L194).
 
 ```lean
 lemma ρF_v_last :
     (ρF : Module.End K (StandardSl2Module K n)) (StandardSl2Module.v (Fin.last n)) = 0
 ```
 
-**`PhyslibAlpha.Sl2.ρE_v_pos`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L204).
+**`PhyslibAlpha.Sl2.ρE_v_pos`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L204).
 
 ```lean
 lemma ρE_v_pos (k : Fin (n + 1)) (hk : 0 < (k : ℕ)) :
@@ -185,14 +185,14 @@ lemma ρE_v_pos (k : Fin (n + 1)) (hk : 0 < (k : ℕ)) :
       = ((k : ℕ) * (n - (k : ℕ) + 1) : K) • StandardSl2Module.v ⟨(k : ℕ) - 1, by omega⟩
 ```
 
-**`PhyslibAlpha.Sl2.ρE_v_zero`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L219).
+**`PhyslibAlpha.Sl2.ρE_v_zero`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L219).
 
 ```lean
 lemma ρE_v_zero :
     (ρE : Module.End K (StandardSl2Module K n)) (StandardSl2Module.v ⟨0, Nat.succ_pos n⟩) = 0
 ```
 
-**`PhyslibAlpha.Sl2.cast_pred`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L228).
+**`PhyslibAlpha.Sl2.cast_pred`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L228).
 
 > Casting a predecessor index into `K` subtracts one.
 
@@ -201,7 +201,7 @@ lemma cast_pred (j : Fin (n + 1)) (hj0 : (j : ℕ) ≠ 0) :
     (((j : ℕ) - 1 : ℕ) : K) = (j : K) - 1
 ```
 
-**`PhyslibAlpha.Sl2.pred_succ_index`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L234).
+**`PhyslibAlpha.Sl2.pred_succ_index`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L234).
 
 > The successor of the predecessor index is the index itself.
 
@@ -210,7 +210,7 @@ lemma pred_succ_index (j : Fin (n + 1)) (hj0 : (j : ℕ) ≠ 0) :
     (⟨(j : ℕ) - 1 + 1, by omega⟩ : Fin (n + 1)) = j
 ```
 
-**`PhyslibAlpha.Sl2.rel_ef_last_zero`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L243).
+**`PhyslibAlpha.Sl2.rel_ef_last_zero`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L243).
 
 > The `sl₂` relations hold for `(ρH,ρE,ρF)` on `StandardSl2Module K n`: `[ρE,ρF]=ρH`,
 > `[ρH,ρE]=2ρE`, `[ρH,ρF]=-2ρF`. Checked componentwise on an arbitrary vector `w`: each
@@ -225,7 +225,7 @@ lemma rel_ef_last_zero (w : StandardSl2Module K n) (j : Fin (n + 1))
       (ρH : Module.End K (StandardSl2Module K n)) w j
 ```
 
-**`PhyslibAlpha.Sl2.rel_ef_last_pos`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L256).
+**`PhyslibAlpha.Sl2.rel_ef_last_pos`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L256).
 
 ```lean
 lemma rel_ef_last_pos (w : StandardSl2Module K n) (j : Fin (n + 1))
@@ -234,7 +234,7 @@ lemma rel_ef_last_pos (w : StandardSl2Module K n) (j : Fin (n + 1))
       (ρH : Module.End K (StandardSl2Module K n)) w j
 ```
 
-**`PhyslibAlpha.Sl2.rel_ef_first`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L270).
+**`PhyslibAlpha.Sl2.rel_ef_first`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L270).
 
 ```lean
 lemma rel_ef_first (w : StandardSl2Module K n) (j : Fin (n + 1))
@@ -243,7 +243,7 @@ lemma rel_ef_first (w : StandardSl2Module K n) (j : Fin (n + 1))
       (ρH : Module.End K (StandardSl2Module K n)) w j
 ```
 
-**`PhyslibAlpha.Sl2.rel_ef_middle`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L286).
+**`PhyslibAlpha.Sl2.rel_ef_middle`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L286).
 
 ```lean
 lemma rel_ef_middle (w : StandardSl2Module K n) (j : Fin (n + 1))
@@ -252,7 +252,7 @@ lemma rel_ef_middle (w : StandardSl2Module K n) (j : Fin (n + 1))
       (ρH : Module.End K (StandardSl2Module K n)) w j
 ```
 
-**`PhyslibAlpha.Sl2.rel_ef`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L299).
+**`PhyslibAlpha.Sl2.rel_ef`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L299).
 
 > The standard raising and lowering operators have commutator `ρH`.
 
@@ -262,7 +262,7 @@ lemma rel_ef :
       = ρH
 ```
 
-**`PhyslibAlpha.Sl2.rel_he`**, a lemma, [line 314](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L314).
+**`PhyslibAlpha.Sl2.rel_he`**, a lemma, [line 314](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L314).
 
 ```lean
 lemma rel_he :
@@ -270,7 +270,7 @@ lemma rel_he :
       = (2 : K) • ρE
 ```
 
-**`PhyslibAlpha.Sl2.rel_hf`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L330).
+**`PhyslibAlpha.Sl2.rel_hf`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L330).
 
 ```lean
 lemma rel_hf :
@@ -278,7 +278,7 @@ lemma rel_hf :
       = (-2 : K) • ρF
 ```
 
-**`PhyslibAlpha.Sl2.endLieSkew`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L348).
+**`PhyslibAlpha.Sl2.endLieSkew`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L348).
 
 > Antisymmetry of the bracket on `Module.End K (StandardSl2Module K n)`, proved directly via
 > the associative-ring commutator rather than via the generic `lie_skew` (which does not
@@ -289,7 +289,7 @@ lemma rel_hf :
 lemma endLieSkew (a b : Module.End K (StandardSl2Module K n)) : ⁅a, b⁆ = -⁅b, a⁆
 ```
 
-**`PhyslibAlpha.Sl2.endAddLie`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L355).
+**`PhyslibAlpha.Sl2.endAddLie`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L355).
 
 > Bilinearity of the bracket on `Module.End K (StandardSl2Module K n)`, proved directly via
 > the associative-ring commutator for the same reason as `endLieSkew`.
@@ -299,28 +299,28 @@ lemma endAddLie (a b c : Module.End K (StandardSl2Module K n)) :
     ⁅a + b, c⁆ = ⁅a, c⁆ + ⁅b, c⁆
 ```
 
-**`PhyslibAlpha.Sl2.endLieAdd`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L360).
+**`PhyslibAlpha.Sl2.endLieAdd`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L360).
 
 ```lean
 lemma endLieAdd (a b c : Module.End K (StandardSl2Module K n)) :
     ⁅a, b + c⁆ = ⁅a, b⁆ + ⁅a, c⁆
 ```
 
-**`PhyslibAlpha.Sl2.endSmulLie`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L365).
+**`PhyslibAlpha.Sl2.endSmulLie`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L365).
 
 ```lean
 lemma endSmulLie (r : K) (a b : Module.End K (StandardSl2Module K n)) :
     ⁅r • a, b⁆ = r • ⁅a, b⁆
 ```
 
-**`PhyslibAlpha.Sl2.endLieSmul`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L370).
+**`PhyslibAlpha.Sl2.endLieSmul`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L370).
 
 ```lean
 lemma endLieSmul (r : K) (a b : Module.End K (StandardSl2Module K n)) :
     ⁅a, r • b⁆ = r • ⁅a, b⁆
 ```
 
-**`PhyslibAlpha.Sl2.Φ`**, a def, [line 379](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L379).
+**`PhyslibAlpha.Sl2.Φ`**, a def, [line 379](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L379).
 
 > The Lie-algebra homomorphism from the `sl₂`-subalgebra generated by `t` into
 > `Module.End K (StandardSl2Module K n)`, sending `e ↦ ρE`, `f ↦ ρF`, `h ↦ ρH`. Built by
@@ -333,14 +333,14 @@ def Φ (t : IsSl2Triple h e f) :
     ↥(t.toLieSubalgebra (R := K)) →ₗ[K] Module.End K (StandardSl2Module K n)
 ```
 
-**`PhyslibAlpha.Sl2.Φ_apply`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L383).
+**`PhyslibAlpha.Sl2.Φ_apply`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L383).
 
 ```lean
 lemma Φ_apply (t : IsSl2Triple h e f) (i : Fin 3) :
     Φ t (subalgebraBasis t i) = ![(ρE : Module.End K (StandardSl2Module K n)), ρF, ρH] i
 ```
 
-**`PhyslibAlpha.Sl2.lie_subalgebraBasis`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L389).
+**`PhyslibAlpha.Sl2.lie_subalgebraBasis`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L389).
 
 > Transports a bracket identity among the generators `(e,f,h)` down to the corresponding
 > identity among the basis elements `subalgebraBasis t 0,1,2` of the subalgebra.
@@ -352,7 +352,7 @@ lemma lie_subalgebraBasis (t : IsSl2Triple h e f) (i j k : Fin 3) (c : K)
       = c • subalgebraBasis (K := K) t k
 ```
 
-**`PhyslibAlpha.Sl2.Φ_bracket_refl`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L397).
+**`PhyslibAlpha.Sl2.Φ_bracket_refl`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L397).
 
 ```lean
 lemma Φ_bracket_refl (t : IsSl2Triple h e f)
@@ -360,7 +360,7 @@ lemma Φ_bracket_refl (t : IsSl2Triple h e f)
     Φ (K := K) (n := n) t ⁅x, x⁆ = ⁅Φ (K := K) (n := n) t x, Φ (K := K) (n := n) t x⁆
 ```
 
-**`PhyslibAlpha.Sl2.Φ_bracket_swap`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L402).
+**`PhyslibAlpha.Sl2.Φ_bracket_swap`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L402).
 
 ```lean
 lemma Φ_bracket_swap (t : IsSl2Triple h e f)
@@ -369,7 +369,7 @@ lemma Φ_bracket_swap (t : IsSl2Triple h e f)
     Φ (K := K) (n := n) t ⁅y, x⁆ = ⁅Φ (K := K) (n := n) t y, Φ (K := K) (n := n) t x⁆
 ```
 
-**`PhyslibAlpha.Sl2.Φ_bracket_ef`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L409).
+**`PhyslibAlpha.Sl2.Φ_bracket_ef`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L409).
 
 ```lean
 lemma Φ_bracket_ef (t : IsSl2Triple h e f) :
@@ -379,7 +379,7 @@ lemma Φ_bracket_ef (t : IsSl2Triple h e f) :
           Φ (K := K) (n := n) t (subalgebraBasis (K := K) t 1)⁆
 ```
 
-**`PhyslibAlpha.Sl2.Φ_bracket_he`**, a lemma, [line 418](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L418).
+**`PhyslibAlpha.Sl2.Φ_bracket_he`**, a lemma, [line 418](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L418).
 
 ```lean
 lemma Φ_bracket_he (t : IsSl2Triple h e f) :
@@ -389,7 +389,7 @@ lemma Φ_bracket_he (t : IsSl2Triple h e f) :
           Φ (K := K) (n := n) t (subalgebraBasis (K := K) t 0)⁆
 ```
 
-**`PhyslibAlpha.Sl2.Φ_bracket_hf`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L427).
+**`PhyslibAlpha.Sl2.Φ_bracket_hf`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L427).
 
 ```lean
 lemma Φ_bracket_hf (t : IsSl2Triple h e f) :
@@ -399,7 +399,7 @@ lemma Φ_bracket_hf (t : IsSl2Triple h e f) :
           Φ (K := K) (n := n) t (subalgebraBasis (K := K) t 1)⁆
 ```
 
-**`PhyslibAlpha.Sl2.Φ_bracket_basis`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L438).
+**`PhyslibAlpha.Sl2.Φ_bracket_basis`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L438).
 
 > The action map preserves brackets on pairs of the three generators.
 
@@ -411,7 +411,7 @@ lemma Φ_bracket_basis (t : IsSl2Triple h e f) (i j : Fin 3) :
           Φ (K := K) (n := n) t (subalgebraBasis (K := K) t j)⁆
 ```
 
-**`PhyslibAlpha.Sl2.Φ_lie`**, a lemma, [line 455](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L455).
+**`PhyslibAlpha.Sl2.Φ_lie`**, a lemma, [line 455](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean#L455).
 
 > The action map preserves brackets because it does so on pairs of basis elements.
 
@@ -434,4 +434,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean)
+- [PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/RepresentationTheory/Sl2/Construction.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The Levi-Civita symbol in general dimension
 
-The module `Physlib.Mathematics.LeviCivita.Basic`, [Physlib/Mathematics/LeviCivita/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/LeviCivita/Basic.lean): 10 declarations, 10 with a docstring.
+The module `Physlib.Mathematics.LeviCivita.Basic`, [Physlib/Mathematics/LeviCivita/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/LeviCivita/Basic.lean): 10 declarations, 10 with a docstring.
 
 ## i. Overview
 
@@ -40,7 +40,7 @@ The module `Physlib.Mathematics.LeviCivita.Basic`, [Physlib/Mathematics/LeviCivi
 
 ## A. Definition
 
-**`leviCivitaSymbol`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/LeviCivita/Basic.lean#L70).
+**`leviCivitaSymbol`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/LeviCivita/Basic.lean#L70).
 
 > The Levi-Civita symbol on a finite index type `ι`: `leviCivitaSymbol g` is the sign
 > of `g` when `g : ι → ι` is a permutation, and `0` otherwise. It is the generalized
@@ -54,7 +54,7 @@ The module `Physlib.Mathematics.LeviCivita.Basic`, [Physlib/Mathematics/LeviCivi
 def leviCivitaSymbol (g : ι → ι) : ℤ
 ```
 
-**`leviCivitaSymbol_eq_det`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/LeviCivita/Basic.lean#L75).
+**`leviCivitaSymbol_eq_det`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/LeviCivita/Basic.lean#L75).
 
 > The Levi-Civita symbol as the determinant of the matrix of Kronecker deltas
 > `δ[g i, j]`.
@@ -64,7 +64,7 @@ lemma leviCivitaSymbol_eq_det (g : ι → ι) :
     leviCivitaSymbol g = Matrix.det (fun i j => ((kroneckerDelta (g i) j : ℕ) : ℤ))
 ```
 
-**`leviCivitaSymbol_id`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/LeviCivita/Basic.lean#L81).
+**`leviCivitaSymbol_id`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/LeviCivita/Basic.lean#L81).
 
 > The Levi-Civita symbol of the identity, i.e. `ε_{0 1 ⋯ (d-1)}`, is `1`.
 
@@ -74,7 +74,7 @@ lemma leviCivitaSymbol_id : leviCivitaSymbol (id : ι → ι) = 1
 
 ## B. Value on permutations
 
-**`leviCivitaSymbol_perm`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/LeviCivita/Basic.lean#L95).
+**`leviCivitaSymbol_perm`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/LeviCivita/Basic.lean#L95).
 
 > The Levi-Civita symbol of a permutation `σ` is the sign of `σ`.
 
@@ -85,7 +85,7 @@ lemma leviCivitaSymbol_perm (σ : Equiv.Perm ι) :
 
 ## C. Antisymmetry
 
-**`leviCivitaSymbol_comp_swap`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/LeviCivita/Basic.lean#L110).
+**`leviCivitaSymbol_comp_swap`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/LeviCivita/Basic.lean#L110).
 
 > The Levi-Civita symbol is antisymmetric under transposition of two of its indices:
 > precomposing with the swap of two distinct index positions negates it.
@@ -95,7 +95,7 @@ lemma leviCivitaSymbol_comp_swap (g : ι → ι) {i j : ι} (hij : i ≠ j) :
     leviCivitaSymbol (g ∘ Equiv.swap i j) = - leviCivitaSymbol g
 ```
 
-**`leviCivitaSymbol_swap_comp`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/LeviCivita/Basic.lean#L118).
+**`leviCivitaSymbol_swap_comp`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/LeviCivita/Basic.lean#L118).
 
 > The Levi-Civita symbol is antisymmetric under transposition of two index values:
 > postcomposing with the swap of two distinct values exchanges those two values wherever
@@ -108,7 +108,7 @@ lemma leviCivitaSymbol_swap_comp (g : ι → ι) {i j : ι} (hij : i ≠ j) :
 
 ## D. Vanishing on repeated indices
 
-**`leviCivitaSymbol_eq_zero_of_eq`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/LeviCivita/Basic.lean#L135).
+**`leviCivitaSymbol_eq_zero_of_eq`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/LeviCivita/Basic.lean#L135).
 
 > The Levi-Civita symbol vanishes on a repeated index: if two distinct index positions
 > `i ≠ j` carry the same value, the symbol is zero.
@@ -118,7 +118,7 @@ lemma leviCivitaSymbol_eq_zero_of_eq {g : ι → ι} {i j : ι} (hij : i ≠ j) 
     leviCivitaSymbol g = 0
 ```
 
-**`leviCivitaSymbol_eq_zero_of_not_injective`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/LeviCivita/Basic.lean#L141).
+**`leviCivitaSymbol_eq_zero_of_not_injective`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/LeviCivita/Basic.lean#L141).
 
 > The Levi-Civita symbol vanishes on maps which are not injective.
 
@@ -127,7 +127,7 @@ lemma leviCivitaSymbol_eq_zero_of_not_injective {g : ι → ι} (h : ¬ Function
     leviCivitaSymbol g = 0
 ```
 
-**`leviCivitaSymbol_eq_zero_iff`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/LeviCivita/Basic.lean#L149).
+**`leviCivitaSymbol_eq_zero_iff`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/LeviCivita/Basic.lean#L149).
 
 > The Levi-Civita symbol vanishes exactly on maps with a repeated index, i.e. on maps
 > which are not injective.
@@ -139,7 +139,7 @@ lemma leviCivitaSymbol_eq_zero_iff {g : ι → ι} :
 
 ## E. Closed form on `Fin n`
 
-**`leviCivitaSymbol_eq_prod_prod_Ioi`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/LeviCivita/Basic.lean#L166).
+**`leviCivitaSymbol_eq_prod_prod_Ioi`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/LeviCivita/Basic.lean#L166).
 
 > On `Fin n` the Levi-Civita symbol is the product over pairs `i < j` of the sign of
 > `g j - g i`. Unlike the determinant defining `leviCivitaSymbol`, this product is cheap to
@@ -157,4 +157,4 @@ lemma leviCivitaSymbol_eq_prod_prod_Ioi {n : ℕ} (g : Fin n → Fin n) :
 
 ## Sources
 
-- [Physlib/Mathematics/LeviCivita/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/LeviCivita/Basic.lean)
+- [Physlib/Mathematics/LeviCivita/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/LeviCivita/Basic.lean)

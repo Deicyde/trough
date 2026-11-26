@@ -8,7 +8,7 @@ proof: formalized
 
 # Pontryagin characters are positive-definite atoms
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.AdditiveCharacter`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AdditiveCharacter.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AdditiveCharacter.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.AdditiveCharacter`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AdditiveCharacter.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AdditiveCharacter.lean): 1 declaration, 1 with a docstring.
 
 > A continuous character of a topological abelian group becomes a continuous function on the additive
 > group after transporting `G` to `Multiplicative G`.
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.AdditiveC
 
 ## A. Development
 
-**`PontryaginDual.isPositiveDefiniteSub`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AdditiveCharacter.lean#L54).
+**`PontryaginDual.isPositiveDefiniteSub`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AdditiveCharacter.lean#L54).
 
 > Precomposing a Pontryagin character with `Multiplicative.ofAdd` gives a continuous function in
 > subtraction-positive-definite form.
@@ -51,4 +51,4 @@ lemma isPositiveDefiniteSub
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AdditiveCharacter.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AdditiveCharacter.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AdditiveCharacter.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/AdditiveCharacter.lean)

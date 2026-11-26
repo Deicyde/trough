@@ -4,14 +4,14 @@ navigation: transparent
 
 # The open tight binding cube to Energy–position uncertainty in…
 
-Modules in [Cube/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube):
+Modules in [Cube/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Cube):
 
 - [The open tight binding cube](cube-basic.md)
 - [Which observables of the open tight binding cube commute](cube-axiscommutation.md)
 - [Mandelstam–Tamm and Cramér–Rao on the open tight binding cube](cube-mandelstamtamm.md)
 - [The volumetric quantum of the open tight binding cube](cube-volumetricquantum.md)
 
-Modules in [Current/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current):
+Modules in [Current/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Current):
 
 - [The current operator of the open tight binding chain](current-basic.md)
 - [The current eigenstates of the open tight binding chain](current-eigenstates.md)
@@ -19,7 +19,7 @@ Modules in [Current/](https://github.com/leanprover-community/physlib/tree/8c87b
 - [The speed limit of the open tight binding chain](current-speedlimit.md)
 - [Time reversal in the open tight binding chain](current-timereversal.md)
 
-Modules in [MaxCurrentState/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState):
+Modules in [MaxCurrentState/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState):
 
 - [The maximal current state of the open tight binding chain](maxcurrentstate-basic.md)
 - [The fluctuation angle of the maximal current state](maxcurrentstate-fluctuationangle.md)
@@ -30,7 +30,7 @@ Modules in [MaxCurrentState/](https://github.com/leanprover-community/physlib/tr
 - [The elemental uncertainty of the open tight binding chain](maxcurrentstate-uncertaintyratio.md)
 - [The variances of the maximal current state](maxcurrentstate-variances.md)
 
-Modules in [Open/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open):
+Modules in [Open/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Open):
 
 - [The tight binding chain with open boundary conditions](open-basic.md)
 - [The uncertainty of a localized electron](open-localizeduncertainty.md)

@@ -1,18 +1,18 @@
 # PhyslibAlpha
 
-[PhyslibAlpha/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha), downstream of Physlib in the same repository. Its [README](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/README.md) describes it:
+[PhyslibAlpha/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha), downstream of Physlib in the same repository. Its [README](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/README.md) describes it:
 
 > PhyslibAlpha exists for the rapid development of physics digitalizations, enabled by a lighter review process built to handle large-scale, human- or AI-generated contributions.
 
 and gives its review in a section of its own:
 
-> PhyslibAlpha sits downstream of `./Physlib` (within the same repository). The core idea is that PhyslibAlpha has lower review-standards than Physlib making it easier to contribute large PRs, AI-generated content, or formalizations which are not-quite-perfect. PRs for PhyslibAlpha must pass basic linter checks, described [here](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/required/alpha/README.md). PRs must also undergo a light 'one-look' review checking 1) Whether the content is main-stream physics, 2) Whether it looks reasonable (no axioms, easy to read etc.), 3) Whether it is within the right place within PhyslibAlpha (mirroring its place in Physlib).
+> PhyslibAlpha sits downstream of `./Physlib` (within the same repository). The core idea is that PhyslibAlpha has lower review-standards than Physlib making it easier to contribute large PRs, AI-generated content, or formalizations which are not-quite-perfect. PRs for PhyslibAlpha must pass basic linter checks, described [here](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/required/alpha/README.md). PRs must also undergo a light 'one-look' review checking 1) Whether the content is main-stream physics, 2) Whether it looks reasonable (no axioms, easy to read etc.), 3) Whether it is within the right place within PhyslibAlpha (mirroring its place in Physlib).
 >
 > Because of the lower-review bar for PhyslibAlpha we cannot promise to maintain contributions when they break — we will simply record when this happens.
 
-Its 872 modules with a declaration are mapped here, an article each, on a page per area and per folder below it.
+Its 846 modules with a declaration are mapped here, an article each, on a page per area and per folder below it.
 
-The docstrings, Lean statements, API maps and README text are quoted from [leanprover-community/physlib](https://github.com/leanprover-community/physlib) at commit [8c87bdfb](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4), under its Apache-2.0 license.
+The docstrings, Lean statements, API maps and README text are quoted from [leanprover-community/physlib](https://github.com/leanprover-community/physlib) at commit [d6a3586e](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651), under its Apache-2.0 license.
 
 - [ClassicalFieldTheory](classicalfieldtheory/README.md)
 - [ClassicalMechanics](classicalmechanics/README.md)

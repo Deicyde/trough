@@ -8,9 +8,9 @@ proof: formalized
 
 # Koszul sign
 
-The module `Physlib.QFT.PerturbationTheory.Koszul.KoszulSign`, [Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean): 20 declarations, 1 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.Koszul.KoszulSign`, [Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean): 20 declarations, 1 with a docstring.
 
-**`Wick.koszulSign`**, a def, [line 27](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L27).
+**`Wick.koszulSign`**, a def, [line 27](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L27).
 
 > Gives a factor of `- 1` for every fermion-fermion (`q` is `1`) crossing that occurs when sorting
 > a list of based on `r`.
@@ -20,26 +20,26 @@ def koszulSign (q : 𝓕 → FieldStatistic) (le : 𝓕 → 𝓕 → Prop) [Deci
     List 𝓕 → ℂ
 ```
 
-**`Wick.koszulSign_singleton`**, a lemma, [line 33](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L33).
+**`Wick.koszulSign_singleton`**, a lemma, [line 33](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L33).
 
 ```lean
 lemma koszulSign_singleton (q : 𝓕 → FieldStatistic) (le : 𝓕 → 𝓕 → Prop) [DecidableRel le] (φ : 𝓕) :
     koszulSign q le [φ] = 1
 ```
 
-**`Wick.koszulSign_mul_self`**, a lemma, [line 37](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L37).
+**`Wick.koszulSign_mul_self`**, a lemma, [line 37](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L37).
 
 ```lean
 lemma koszulSign_mul_self (l : List 𝓕) : koszulSign q le l * koszulSign q le l = 1
 ```
 
-**`Wick.koszulSign_freeMonoid_of`**, a lemma, [line 48](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L48).
+**`Wick.koszulSign_freeMonoid_of`**, a lemma, [line 47](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L47).
 
 ```lean
-lemma koszulSign_freeMonoid_of (φ : 𝓕) : koszulSign q le (FreeMonoid.of φ) = 1
+lemma koszulSign_freeMonoid_of (φ : 𝓕) : koszulSign q le (FreeMonoid.of φ).toList = 1
 ```
 
-**`Wick.koszulSignInsert_erase_boson`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L53).
+**`Wick.koszulSignInsert_erase_boson`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L52).
 
 ```lean
 lemma koszulSignInsert_erase_boson {𝓕 : Type} (q : 𝓕 → FieldStatistic)
@@ -48,7 +48,7 @@ lemma koszulSignInsert_erase_boson {𝓕 : Type} (q : 𝓕 → FieldStatistic)
     koszulSignInsert q le φ (φs.eraseIdx n) = koszulSignInsert q le φ φs
 ```
 
-**`Wick.koszulSign_erase_boson`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L70).
+**`Wick.koszulSign_erase_boson`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L69).
 
 ```lean
 lemma koszulSign_erase_boson {𝓕 : Type} (q : 𝓕 → FieldStatistic) (le : 𝓕 → 𝓕 → Prop)
@@ -57,7 +57,7 @@ lemma koszulSign_erase_boson {𝓕 : Type} (q : 𝓕 → FieldStatistic) (le : �
     koszulSign q le (φs.eraseIdx n) = koszulSign q le φs
 ```
 
-**`Wick.koszulSign_insertIdx`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L91).
+**`Wick.koszulSign_insertIdx`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L90).
 
 ```lean
 lemma koszulSign_insertIdx [Std.Total le] [IsTrans 𝓕 le] (φ : 𝓕) :
@@ -70,14 +70,14 @@ lemma koszulSign_insertIdx [Std.Total le] [IsTrans 𝓕 le] (φ : 𝓕) :
         omega⟩)))
 ```
 
-**`Wick.insertIdx_eraseIdx`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L197).
+**`Wick.insertIdx_eraseIdx`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L196).
 
 ```lean
 lemma insertIdx_eraseIdx {I : Type} : (n : ℕ) → (r : List I) → (hn : n < r.length) →
     List.insertIdx (r.eraseIdx n) n (r.get ⟨n, hn⟩) = r
 ```
 
-**`Wick.koszulSign_eraseIdx`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L208).
+**`Wick.koszulSign_eraseIdx`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L207).
 
 ```lean
 lemma koszulSign_eraseIdx [Std.Total le] [IsTrans 𝓕 le] (φs : List 𝓕) (n : Fin φs.length) :
@@ -86,7 +86,7 @@ lemma koszulSign_eraseIdx [Std.Total le] [IsTrans 𝓕 le] (φs : List 𝓕) (n 
     (List.insertionSort le φs)))
 ```
 
-**`Wick.koszulSign_eraseIdx_insertionSortMinPos`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L249).
+**`Wick.koszulSign_eraseIdx_insertionSortMinPos`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L248).
 
 ```lean
 lemma koszulSign_eraseIdx_insertionSortMinPos [Std.Total le] [IsTrans 𝓕 le] (φ : 𝓕) (φs : List 𝓕) :
@@ -94,7 +94,7 @@ lemma koszulSign_eraseIdx_insertionSortMinPos [Std.Total le] [IsTrans 𝓕 le] (
     * 𝓢(q (insertionSortMin le φ φs), ofList q ((φ :: φs).take (insertionSortMinPos le φ φs)))
 ```
 
-**`Wick.koszulSign_swap_eq_rel_cons`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L263).
+**`Wick.koszulSign_swap_eq_rel_cons`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L262).
 
 ```lean
 lemma koszulSign_swap_eq_rel_cons {ψ φ : 𝓕}
@@ -102,14 +102,14 @@ lemma koszulSign_swap_eq_rel_cons {ψ φ : 𝓕}
     koszulSign q le (φ :: ψ :: φs') = koszulSign q le (ψ :: φ :: φs')
 ```
 
-**`Wick.koszulSign_swap_eq_rel`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L271).
+**`Wick.koszulSign_swap_eq_rel`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L270).
 
 ```lean
 lemma koszulSign_swap_eq_rel {ψ φ : 𝓕} (h1 : le φ ψ) (h2 : le ψ φ) : (φs φs' : List 𝓕) →
     koszulSign q le (φs ++ φ :: ψ :: φs') = koszulSign q le (φs ++ ψ :: φ :: φs')
 ```
 
-**`Wick.koszulSign_eq_rel_eq_stat_append`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L283).
+**`Wick.koszulSign_eq_rel_eq_stat_append`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L282).
 
 ```lean
 lemma koszulSign_eq_rel_eq_stat_append {ψ φ : 𝓕} [IsTrans 𝓕 le]
@@ -117,7 +117,7 @@ lemma koszulSign_eq_rel_eq_stat_append {ψ φ : 𝓕} [IsTrans 𝓕 le]
     koszulSign q le (φ :: ψ :: φs) = koszulSign q le φs
 ```
 
-**`Wick.koszulSign_eq_rel_eq_stat`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L297).
+**`Wick.koszulSign_eq_rel_eq_stat`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L296).
 
 ```lean
 lemma koszulSign_eq_rel_eq_stat {ψ φ : 𝓕} [IsTrans 𝓕 le]
@@ -125,21 +125,21 @@ lemma koszulSign_eq_rel_eq_stat {ψ φ : 𝓕} [IsTrans 𝓕 le]
     koszulSign q le (φs' ++ φ :: ψ :: φs) = koszulSign q le (φs' ++ φs)
 ```
 
-**`Wick.koszulSign_of_sorted`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L313).
+**`Wick.koszulSign_of_sorted`**, a lemma, [line 312](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L312).
 
 ```lean
 lemma koszulSign_of_sorted : (φs : List 𝓕)
     → (hs : List.Pairwise le φs) → koszulSign q le φs = 1
 ```
 
-**`Wick.koszulSign_of_insertionSort`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L325).
+**`Wick.koszulSign_of_insertionSort`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L324).
 
 ```lean
 lemma koszulSign_of_insertionSort [Std.Total le] [IsTrans 𝓕 le] (φs : List 𝓕) :
     koszulSign q le (List.insertionSort le φs) = 1
 ```
 
-**`Wick.koszulSign_of_append_eq_insertionSort_left`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L330).
+**`Wick.koszulSign_of_append_eq_insertionSort_left`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L329).
 
 ```lean
 lemma koszulSign_of_append_eq_insertionSort_left [Std.Total le] [IsTrans 𝓕 le] :
@@ -147,7 +147,7 @@ lemma koszulSign_of_append_eq_insertionSort_left [Std.Total le] [IsTrans 𝓕 le
     koszulSign q le (List.insertionSort le φs ++ φs') * koszulSign q le φs
 ```
 
-**`Wick.koszulSign_of_append_eq_insertionSort`**, a lemma, [line 371](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L371).
+**`Wick.koszulSign_of_append_eq_insertionSort`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L370).
 
 ```lean
 lemma koszulSign_of_append_eq_insertionSort [Std.Total le] [IsTrans 𝓕 le] : (φs'' φs φs' : List 𝓕) →
@@ -157,7 +157,7 @@ lemma koszulSign_of_append_eq_insertionSort [Std.Total le] [IsTrans 𝓕 le] : (
 
 ## koszulSign with permutations
 
-**`Wick.koszulSign_perm_eq_append`**, a lemma, [line 392](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L392).
+**`Wick.koszulSign_perm_eq_append`**, a lemma, [line 391](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L391).
 
 ```lean
 lemma koszulSign_perm_eq_append [IsTrans 𝓕 le] (φ : 𝓕) (φs φs' φs2 : List 𝓕)
@@ -165,7 +165,7 @@ lemma koszulSign_perm_eq_append [IsTrans 𝓕 le] (φ : 𝓕) (φs φs' φs2 : L
     koszulSign q le (φs ++ φs2) = koszulSign q le (φs' ++ φs2)
 ```
 
-**`Wick.koszulSign_perm_eq`**, a lemma, [line 420](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L420).
+**`Wick.koszulSign_perm_eq`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean#L419).
 
 ```lean
 lemma koszulSign_perm_eq [IsTrans 𝓕 le] (φ : 𝓕) : (φs1 φs φs' φs2 : List 𝓕) →
@@ -179,8 +179,8 @@ lemma koszulSign_perm_eq [IsTrans 𝓕 le] (φ : 𝓕) : (φs1 φs φs' φs2 : L
 
 ## Proof depends on
 
-- [List lemmas (InsertionSort)](../../../mathematics/formathlib/part-01/list-insertionsort.md)
+- [List lemmas (InsertionSort)](../../../mathematics/formathlib/part-02/list-insertionsort.md)
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean)
+- [Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean)

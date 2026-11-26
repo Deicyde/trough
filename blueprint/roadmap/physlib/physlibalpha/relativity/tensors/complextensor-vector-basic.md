@@ -8,7 +8,7 @@ proof: formalized
 
 # The dual of the complex covector representation
 
-The module `PhyslibAlpha.Relativity.Tensors.ComplexTensor.Vector.Basic`, [PhyslibAlpha/Relativity/Tensors/ComplexTensor/Vector/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Tensors/ComplexTensor/Vector/Basic.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Relativity.Tensors.ComplexTensor.Vector.Basic`, [PhyslibAlpha/Relativity/Tensors/ComplexTensor/Vector/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Tensors/ComplexTensor/Vector/Basic.lean): 1 declaration, 1 with a docstring.
 
 > How dual complex covectors transform, on the dual basis.
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.Relativity.Tensors.ComplexTensor.Vector.Basic`, [Physli
 
 ## A. The dual representation on the dual basis
 
-**`Lorentz.ComplexCoVector.SL2CRep_dual_dualBasis`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Tensors/ComplexTensor/Vector/Basic.lean#L60).
+**`Lorentz.ComplexCoVector.SL2CRep_dual_dualBasis`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Tensors/ComplexTensor/Vector/Basic.lean#L60).
 
 > The dual of the complex covector representation on the dual basis: dual covectors
 > transform contravariantly, by the columns of the (complexified) Lorentz matrix. The
@@ -59,4 +59,4 @@ lemma ComplexCoVector.SL2CRep_dual_dualBasis (Λ : SL(2,ℂ))
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/Tensors/ComplexTensor/Vector/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Tensors/ComplexTensor/Vector/Basic.lean)
+- [PhyslibAlpha/Relativity/Tensors/ComplexTensor/Vector/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/Tensors/ComplexTensor/Vector/Basic.lean)

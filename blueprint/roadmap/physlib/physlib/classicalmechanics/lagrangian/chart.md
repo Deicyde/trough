@@ -8,7 +8,7 @@ proof: formalized
 
 # Lagrangian systems in charts
 
-The module `Physlib.ClassicalMechanics.Lagrangian.Chart`, [Physlib/ClassicalMechanics/Lagrangian/Chart.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/Chart.lean): 6 declarations, 6 with a docstring.
+The module `Physlib.ClassicalMechanics.Lagrangian.Chart`, [Physlib/ClassicalMechanics/Lagrangian/Chart.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Lagrangian/Chart.lean): 6 declarations, 6 with a docstring.
 
 > The Lagrangian in a chart, and the action integrand of a curve read in a chart.
 
@@ -34,7 +34,7 @@ The module `Physlib.ClassicalMechanics.Lagrangian.Chart`, [Physlib/ClassicalMech
 
 ## A. The Lagrangian in a chart
 
-**`ClassicalMechanics.LagrangianSystem.chartLagrangian`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/Chart.lean#L63).
+**`ClassicalMechanics.LagrangianSystem.chartLagrangian`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Lagrangian/Chart.lean#L61).
 
 > The Lagrangian in the chart `φ = extChartAt I x`, with time coordinate based at `t₀`:
 > `L (t, q, q̇) = S (t +ᵥ t₀, d(φ.symm) (q, q̇))`, with generalised coordinates `q` and velocities
@@ -45,7 +45,7 @@ noncomputable def chartLagrangian (S : LagrangianSystem I M) (x : M) (t₀ : Tim
     ℝ × E × E → ℝ
 ```
 
-**`ClassicalMechanics.LagrangianSystem.contDiffAt_chartLagrangian`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/Chart.lean#L69).
+**`ClassicalMechanics.LagrangianSystem.contDiffAt_chartLagrangian`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Lagrangian/Chart.lean#L67).
 
 > The chart Lagrangian is smooth over the target of the chart.
 
@@ -55,7 +55,7 @@ lemma contDiffAt_chartLagrangian [I.Boundaryless] (S : LagrangianSystem I M)
     ContDiffAt ℝ ∞ (S.chartLagrangian x t₀) p
 ```
 
-**`ClassicalMechanics.LagrangianSystem.exists_contDiff_chartLagrangian_eq`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/Chart.lean#L90).
+**`ClassicalMechanics.LagrangianSystem.exists_contDiff_chartLagrangian_eq`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Lagrangian/Chart.lean#L88).
 
 > A chart Lagrangian agrees with a globally smooth one near a compact set of positions.
 
@@ -69,7 +69,7 @@ lemma exists_contDiff_chartLagrangian_eq [I.Boundaryless] [FiniteDimensional ℝ
 
 ## B. The action integrand
 
-**`ClassicalMechanics.LagrangianSystem.action_integrand_eq_chartLagrangian`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/Chart.lean#L110).
+**`ClassicalMechanics.LagrangianSystem.action_integrand_eq_chartLagrangian`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Lagrangian/Chart.lean#L108).
 
 > Near a chart-read curve the action integrand is the chart Lagrangian.
 
@@ -83,7 +83,7 @@ lemma action_integrand_eq_chartLagrangian [I.Boundaryless]
       S.chartLagrangian x t₀ (τ, c (τ +ᵥ t₀), deriv (fun σ : ℝ ↦ c (σ +ᵥ t₀)) τ)
 ```
 
-**`ClassicalMechanics.LagrangianSystem.action_integrand_eq_of_eventuallyEq`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/Chart.lean#L134).
+**`ClassicalMechanics.LagrangianSystem.action_integrand_eq_of_eventuallyEq`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Lagrangian/Chart.lean#L132).
 
 > If `γ'` is the chart-read curve `t ↦ (extChartAt I x).symm (c (t -ᵥ t₀))` near `τ +ᵥ t₀` and
 > `L` agrees with the chart Lagrangian over positions in `N ∋ c τ`, the action integrand at `τ` is
@@ -100,7 +100,7 @@ lemma action_integrand_eq_of_eventuallyEq [I.Boundaryless]
     S (τ +ᵥ t₀, tangentMap 𝓘(ℝ, ℝ) I γ' ⟨τ +ᵥ t₀, (1 : ℝ)⟩) = L (τ, c τ, deriv c τ)
 ```
 
-**`ClassicalMechanics.LagrangianSystem.continuousAt_action_integrand`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/Chart.lean#L152).
+**`ClassicalMechanics.LagrangianSystem.continuousAt_action_integrand`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Lagrangian/Chart.lean#L150).
 
 > The action integrand of a smooth curve is continuous.
 
@@ -121,4 +121,4 @@ lemma continuousAt_action_integrand [I.Boundaryless]
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/Lagrangian/Chart.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/Chart.lean)
+- [Physlib/ClassicalMechanics/Lagrangian/Chart.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ClassicalMechanics/Lagrangian/Chart.lean)

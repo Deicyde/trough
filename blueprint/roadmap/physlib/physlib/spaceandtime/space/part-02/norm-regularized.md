@@ -8,7 +8,7 @@ proof: formalized
 
 # Regularized powers of the norm on space
 
-The module `Physlib.SpaceAndTime.Space.Norm.Regularized`, [Physlib/SpaceAndTime/Space/Norm/Regularized.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Regularized.lean): 6 declarations, 4 with a docstring.
+The module `Physlib.SpaceAndTime.Space.Norm.Regularized`, [Physlib/SpaceAndTime/Space/Norm/Regularized.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Norm/Regularized.lean): 6 declarations, 4 with a docstring.
 
 ## i. Overview
 
@@ -28,7 +28,7 @@ The module `Physlib.SpaceAndTime.Space.Norm.Regularized`, [Physlib/SpaceAndTime/
 
 ## A. Regularized powers of the norm
 
-**`Space.normRegularizedPow`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Regularized.lean#L49).
+**`Space.normRegularizedPow`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Norm/Regularized.lean#L49).
 
 > Power of regularized norm, `(‖x‖² + ε²)^(s/2)`.
 
@@ -36,14 +36,14 @@ The module `Physlib.SpaceAndTime.Space.Norm.Regularized`, [Physlib/SpaceAndTime/
 def normRegularizedPow (d : ℕ) (ε s : ℝ) : Space d → ℝ
 ```
 
-**`Space.normRegularizedPow_eq`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Regularized.lean#L52).
+**`Space.normRegularizedPow_eq`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Norm/Regularized.lean#L52).
 
 ```lean
 lemma normRegularizedPow_eq (d : ℕ) (ε s : ℝ) :
     normRegularizedPow d ε s = fun x ↦ (‖x‖ ^ 2 + ε ^ 2) ^ (s / 2)
 ```
 
-**`Space.norm_sq_add_unit_sq_pos`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Regularized.lean#L56).
+**`Space.norm_sq_add_unit_sq_pos`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Norm/Regularized.lean#L56).
 
 > For a nonzero regularization parameter, `‖x‖² + ε²` is positive.
 
@@ -51,7 +51,7 @@ lemma normRegularizedPow_eq (d : ℕ) (ε s : ℝ) :
 lemma norm_sq_add_unit_sq_pos {d : ℕ} (ε : ℝˣ) (x : Space d) : 0 < ‖x‖ ^ 2 + ε ^ 2
 ```
 
-**`Space.normRegularizedPow_pos`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Regularized.lean#L60).
+**`Space.normRegularizedPow_pos`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Norm/Regularized.lean#L60).
 
 > The regularized norm power is positive for nonzero regularization parameter.
 
@@ -60,7 +60,7 @@ lemma normRegularizedPow_pos (d : ℕ) (ε : ℝˣ) (s : ℝ) (x : Space d) :
     0 < normRegularizedPow d ε s x
 ```
 
-**`Space.normRegularizedPow_hasTemperateGrowth`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Regularized.lean#L65).
+**`Space.normRegularizedPow_hasTemperateGrowth`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Norm/Regularized.lean#L65).
 
 > The regularized norm power has temperate growth.
 
@@ -69,7 +69,7 @@ lemma normRegularizedPow_hasTemperateGrowth (d : ℕ) (ε : ℝˣ) (s : ℝ) :
     HasTemperateGrowth (normRegularizedPow d ε s)
 ```
 
-**`Space.normRegularizedPow_measurable`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Regularized.lean#L79).
+**`Space.normRegularizedPow_measurable`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Norm/Regularized.lean#L79).
 
 ```lean
 lemma normRegularizedPow_measurable (d : ℕ) (ε s : ℝ) :
@@ -82,4 +82,4 @@ lemma normRegularizedPow_measurable (d : ℕ) (ε s : ℝ) :
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/Norm/Regularized.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Regularized.lean)
+- [Physlib/SpaceAndTime/Space/Norm/Regularized.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Norm/Regularized.lean)

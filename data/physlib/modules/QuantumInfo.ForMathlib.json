@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
  "modules": [
   {
    "file": "QuantumInfo/ForMathlib/ComplexLaplaceTransform.lean",
@@ -1522,7 +1522,7 @@
     {
      "name": "LownerHeinzCore.cfcR",
      "kind": "abbrev",
-     "line": 42,
+     "line": 41,
      "doc": "",
      "statement": "noncomputable abbrev cfcR (f : ℝ → ℝ) (A : 𝓐) : 𝓐",
      "sorry": false
@@ -1530,7 +1530,7 @@
     {
      "name": "LownerHeinzCore.OperatorMonotone",
      "kind": "def",
-     "line": 46,
+     "line": 45,
      "doc": "Fixed-space operator monotonicity on the ambient algebra `𝓐`.",
      "statement": "def OperatorMonotone (f : ℝ → ℝ) : Prop",
      "sorry": false
@@ -1538,7 +1538,7 @@
     {
      "name": "LownerHeinzCore.OperatorMonotoneOn",
      "kind": "def",
-     "line": 50,
+     "line": 49,
      "doc": "Fixed-space operator monotonicity on `s` for the ambient algebra `𝓐`.",
      "statement": "def OperatorMonotoneOn (s : Set ℝ) (f : ℝ → ℝ) : Prop",
      "sorry": false
@@ -1546,7 +1546,7 @@
     {
      "name": "LownerHeinzCore.OperatorAntitone",
      "kind": "def",
-     "line": 57,
+     "line": 56,
      "doc": "Fixed-space operator antitonicity on the ambient algebra `𝓐`.",
      "statement": "def OperatorAntitone (f : ℝ → ℝ) : Prop",
      "sorry": false
@@ -1554,7 +1554,7 @@
     {
      "name": "LownerHeinzCore.OperatorAntitoneOn",
      "kind": "def",
-     "line": 62,
+     "line": 61,
      "doc": "Fixed-space operator antitonicity on `s` for the ambient algebra `𝓐`.",
      "statement": "def OperatorAntitoneOn (s : Set ℝ) (f : ℝ → ℝ) : Prop",
      "sorry": false
@@ -1562,7 +1562,7 @@
     {
      "name": "LownerHeinzCore.OperatorConvex",
      "kind": "def",
-     "line": 69,
+     "line": 68,
      "doc": "Fixed-space operator convexity on the ambient algebra `𝓐`.",
      "statement": "def OperatorConvex (f : ℝ → ℝ) : Prop",
      "sorry": false
@@ -1570,7 +1570,7 @@
     {
      "name": "LownerHeinzCore.OperatorConvexOn",
      "kind": "def",
-     "line": 75,
+     "line": 74,
      "doc": "Fixed-space operator convexity on `s` for the ambient algebra `𝓐`.",
      "statement": "def OperatorConvexOn (s : Set ℝ) (f : ℝ → ℝ) : Prop",
      "sorry": false
@@ -1578,7 +1578,7 @@
     {
      "name": "LownerHeinzCore.OperatorConcave",
      "kind": "def",
-     "line": 84,
+     "line": 83,
      "doc": "Fixed-space operator concavity on the ambient algebra `𝓐`.",
      "statement": "def OperatorConcave (f : ℝ → ℝ) : Prop",
      "sorry": false
@@ -1586,7 +1586,7 @@
     {
      "name": "LownerHeinzCore.OperatorConcaveOn",
      "kind": "def",
-     "line": 88,
+     "line": 87,
      "doc": "Fixed-space operator concavity on `s` for the ambient algebra `𝓐`.",
      "statement": "def OperatorConcaveOn (s : Set ℝ) (f : ℝ → ℝ) : Prop",
      "sorry": false
@@ -1594,7 +1594,7 @@
     {
      "name": "LownerHeinzCore.OperatorMonotoneAll",
      "kind": "def",
-     "line": 93,
+     "line": 92,
      "doc": "Uniform operator monotonicity over all ambient algebras in universe `u`.",
      "statement": "def OperatorMonotoneAll (f : ℝ → ℝ) : Prop",
      "sorry": false
@@ -1602,7 +1602,7 @@
     {
      "name": "LownerHeinzCore.OperatorMonotoneOnAll",
      "kind": "def",
-     "line": 100,
+     "line": 99,
      "doc": "Uniform operator monotonicity on `s` over all ambient algebras in universe `u`.",
      "statement": "def OperatorMonotoneOnAll (s : Set ℝ) (f : ℝ → ℝ) : Prop",
      "sorry": false
@@ -1610,7 +1610,7 @@
     {
      "name": "LownerHeinzCore.OperatorAntitoneAll",
      "kind": "def",
-     "line": 107,
+     "line": 106,
      "doc": "Uniform operator antitonicity over all ambient algebras in universe `u`.",
      "statement": "def OperatorAntitoneAll (f : ℝ → ℝ) : Prop",
      "sorry": false
@@ -1618,7 +1618,7 @@
     {
      "name": "LownerHeinzCore.OperatorAntitoneOnAll",
      "kind": "def",
-     "line": 114,
+     "line": 113,
      "doc": "Uniform operator antitonicity on `s` over all ambient algebras in universe `u`.",
      "statement": "def OperatorAntitoneOnAll (s : Set ℝ) (f : ℝ → ℝ) : Prop",
      "sorry": false
@@ -1626,7 +1626,7 @@
     {
      "name": "LownerHeinzCore.OperatorConvexAll",
      "kind": "def",
-     "line": 121,
+     "line": 120,
      "doc": "Uniform operator convexity over all ambient algebras in universe `u`.",
      "statement": "def OperatorConvexAll (f : ℝ → ℝ) : Prop",
      "sorry": false
@@ -1634,7 +1634,7 @@
     {
      "name": "LownerHeinzCore.OperatorConvexOnAll",
      "kind": "def",
-     "line": 128,
+     "line": 127,
      "doc": "Uniform operator convexity on `s` over all ambient algebras in universe `u`.",
      "statement": "def OperatorConvexOnAll (s : Set ℝ) (f : ℝ → ℝ) : Prop",
      "sorry": false
@@ -1642,7 +1642,7 @@
     {
      "name": "LownerHeinzCore.OperatorConcaveAll",
      "kind": "def",
-     "line": 135,
+     "line": 134,
      "doc": "Uniform operator concavity over all ambient algebras in universe `u`.",
      "statement": "def OperatorConcaveAll (f : ℝ → ℝ) : Prop",
      "sorry": false
@@ -1650,7 +1650,7 @@
     {
      "name": "LownerHeinzCore.OperatorConcaveOnAll",
      "kind": "def",
-     "line": 142,
+     "line": 141,
      "doc": "Uniform operator concavity on `s` over all ambient algebras in universe `u`.",
      "statement": "def OperatorConcaveOnAll (s : Set ℝ) (f : ℝ → ℝ) : Prop",
      "sorry": false
@@ -1658,7 +1658,7 @@
     {
      "name": "LownerHeinzCore.conjugate_isPositive",
      "kind": "lemma",
-     "line": 157,
+     "line": 156,
      "doc": "",
      "statement": "lemma conjugate_isPositive {X T : 𝓐} (hX : 0 ≤ X) (hT : IsSelfAdjoint T) :\n    0 ≤ T * X * T",
      "sorry": false
@@ -1666,7 +1666,7 @@
     {
      "name": "LownerHeinzCore.one_div_operatorAntitoneOn_Ioi",
      "kind": "lemma",
-     "line": 162,
+     "line": 161,
      "doc": "",
      "statement": "lemma one_div_operatorAntitoneOn_Ioi :\n    OperatorAntitoneOn (𝓐 := 𝓐) (Set.Ioi (0 : ℝ)) (fun x : ℝ ↦ 1 / x)",
      "sorry": false
@@ -1674,7 +1674,7 @@
     {
      "name": "LownerHeinzCore.one_div_operatorConvexOn_Ioi",
      "kind": "lemma",
-     "line": 329,
+     "line": 328,
      "doc": "",
      "statement": "lemma one_div_operatorConvexOn_Ioi :\n  OperatorConvexOn (𝓐 := 𝓐) (Set.Ioi (0 : ℝ)) (fun x : ℝ ↦ 1 / x)",
      "sorry": false
@@ -1682,7 +1682,7 @@
     {
      "name": "LownerHeinzCore.one_div_add_t_operatorAntitoneOn_Ici",
      "kind": "lemma",
-     "line": 438,
+     "line": 437,
      "doc": "",
      "statement": "lemma one_div_add_t_operatorAntitoneOn_Ici : ∀ (t : ℝ), 0 < t →\n  OperatorAntitoneOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x : ℝ ↦ 1 / (x + t))",
      "sorry": false
@@ -1690,7 +1690,7 @@
     {
      "name": "LownerHeinzCore.one_div_add_t_operatorConvexOn_Ici",
      "kind": "lemma",
-     "line": 489,
+     "line": 488,
      "doc": "",
      "statement": "lemma one_div_add_t_operatorConvexOn_Ici : ∀ (t : ℝ), 0 < t →\n  OperatorConvexOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x : ℝ ↦ 1 / (x + t))",
      "sorry": false
@@ -1698,7 +1698,7 @@
     {
      "name": "LownerHeinzCore.ratio_add_t_operatorMonotoneOn_Ici",
      "kind": "lemma",
-     "line": 673,
+     "line": 672,
      "doc": "",
      "statement": "lemma ratio_add_t_operatorMonotoneOn_Ici : ∀ (t : ℝ), 0 < t →\n  OperatorMonotoneOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x : ℝ ↦ x / (x + t))",
      "sorry": false
@@ -1706,7 +1706,7 @@
     {
      "name": "LownerHeinzCore.ratio_add_t_operatorConcaveOn_Ici",
      "kind": "lemma",
-     "line": 745,
+     "line": 744,
      "doc": "",
      "statement": "lemma ratio_add_t_operatorConcaveOn_Ici : ∀ (t : ℝ), 0 < t →\n  OperatorConcaveOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x : ℝ ↦ x / (x + t))",
      "sorry": false
@@ -1714,7 +1714,7 @@
     {
      "name": "LownerHeinzCore.power_Icc_zero_one_operatorMonotoneOn_Ici",
      "kind": "lemma",
-     "line": 935,
+     "line": 934,
      "doc": "",
      "statement": "lemma power_Icc_zero_one_operatorMonotoneOn_Ici : ∀ p ∈ Set.Icc (0 : ℝ) 1,\n  OperatorMonotoneOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x ↦ x ^ p)",
      "sorry": false
@@ -1722,7 +1722,7 @@
     {
      "name": "LownerHeinzCore.power_Icc_zero_one_operatorConcaveOn_Ici",
      "kind": "lemma",
-     "line": 1114,
+     "line": 1113,
      "doc": "",
      "statement": "lemma power_Icc_zero_one_operatorConcaveOn_Ici : ∀ p ∈ Set.Icc (0 : ℝ) 1,\n  OperatorConcaveOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x ↦ x ^ p)",
      "sorry": false
@@ -1730,7 +1730,7 @@
     {
      "name": "LownerHeinzCore.power_Icc_one_two_operatorConvexOn_Ici",
      "kind": "lemma",
-     "line": 1784,
+     "line": 1783,
      "doc": "",
      "statement": "lemma power_Icc_one_two_operatorConvexOn_Ici : ∀ p ∈ Set.Icc (1 : ℝ) 2,\n  OperatorConvexOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x ↦ x ^ p)",
      "sorry": false
@@ -1738,7 +1738,7 @@
     {
      "name": "LownerHeinzCore.power_Icc_neg_one_zero_neg_operatorMonotoneOn_Ioi",
      "kind": "lemma",
-     "line": 1842,
+     "line": 1841,
      "doc": "",
      "statement": "lemma power_Icc_neg_one_zero_neg_operatorMonotoneOn_Ioi : ∀ p ∈ Set.Icc (-1 : ℝ) 0,\n    OperatorMonotoneOn (𝓐 := 𝓐) (Set.Ioi (0 : ℝ)) (fun x ↦ -(x ^ p))",
      "sorry": false
@@ -1746,7 +1746,7 @@
     {
      "name": "LownerHeinzCore.power_Icc_neg_one_zero_neg_operatorConcaveOn_Ioi",
      "kind": "lemma",
-     "line": 2012,
+     "line": 2011,
      "doc": "",
      "statement": "lemma power_Icc_neg_one_zero_neg_operatorConcaveOn_Ioi : ∀ p ∈ Set.Icc (-1 : ℝ) 0,\n    OperatorConcaveOn (𝓐 := 𝓐) (Set.Ioi (0 : ℝ)) (fun x ↦ -(x ^ p))",
      "sorry": false
@@ -1754,7 +1754,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 2344,
+     "line": 2343,
      "doc": "",
      "statement": "noncomputable local instance : PartialOrder 𝓐",
      "sorry": false
@@ -1762,7 +1762,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 2345,
+     "line": 2344,
      "doc": "",
      "statement": "noncomputable local instance : StarOrderedRing 𝓐",
      "sorry": false
@@ -1770,7 +1770,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 2346,
+     "line": 2345,
      "doc": "",
      "statement": "noncomputable local instance : NonnegSpectrumClass ℝ 𝓐",
      "sorry": false
@@ -1778,7 +1778,7 @@
     {
      "name": "LownerHeinzCore.Spectral.one_div_operatorAntitoneOn_Ioi",
      "kind": "lemma",
-     "line": 2351,
+     "line": 2350,
      "doc": "",
      "statement": "lemma one_div_operatorAntitoneOn_Ioi :\n    OperatorAntitoneOn (𝓐 := 𝓐) (Set.Ioi (0 : ℝ)) (fun x : ℝ ↦ 1 / x)",
      "sorry": false
@@ -1786,7 +1786,7 @@
     {
      "name": "LownerHeinzCore.Spectral.one_div_operatorConvexOn_Ioi",
      "kind": "lemma",
-     "line": 2355,
+     "line": 2354,
      "doc": "",
      "statement": "lemma one_div_operatorConvexOn_Ioi :\n    OperatorConvexOn (𝓐 := 𝓐) (Set.Ioi (0 : ℝ)) (fun x : ℝ ↦ 1 / x)",
      "sorry": false
@@ -1794,7 +1794,7 @@
     {
      "name": "LownerHeinzCore.Spectral.one_div_add_t_operatorAntitoneOn_Ici",
      "kind": "lemma",
-     "line": 2360,
+     "line": 2359,
      "doc": "",
      "statement": "lemma one_div_add_t_operatorAntitoneOn_Ici : ∀ (t : ℝ), 0 < t →\n    OperatorAntitoneOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x : ℝ ↦ 1 / (x + t))",
      "sorry": false
@@ -1802,7 +1802,7 @@
     {
      "name": "LownerHeinzCore.Spectral.one_div_add_t_operatorConvexOn_Ici",
      "kind": "lemma",
-     "line": 2365,
+     "line": 2364,
      "doc": "",
      "statement": "lemma one_div_add_t_operatorConvexOn_Ici : ∀ (t : ℝ), 0 < t →\n    OperatorConvexOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x : ℝ ↦ 1 / (x + t))",
      "sorry": false
@@ -1810,7 +1810,7 @@
     {
      "name": "LownerHeinzCore.Spectral.ratio_add_t_operatorMonotoneOn_Ici",
      "kind": "lemma",
-     "line": 2371,
+     "line": 2370,
      "doc": "",
      "statement": "lemma ratio_add_t_operatorMonotoneOn_Ici : ∀ (t : ℝ), 0 < t →\n    OperatorMonotoneOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x : ℝ ↦ x / (x + t))",
      "sorry": false
@@ -1818,7 +1818,7 @@
     {
      "name": "LownerHeinzCore.Spectral.ratio_add_t_operatorConcaveOn_Ici",
      "kind": "lemma",
-     "line": 2376,
+     "line": 2375,
      "doc": "",
      "statement": "lemma ratio_add_t_operatorConcaveOn_Ici : ∀ (t : ℝ), 0 < t →\n    OperatorConcaveOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x : ℝ ↦ x / (x + t))",
      "sorry": false
@@ -1826,7 +1826,7 @@
     {
      "name": "LownerHeinzCore.Spectral.power_Icc_zero_one_operatorMonotoneOn_Ici",
      "kind": "lemma",
-     "line": 2382,
+     "line": 2381,
      "doc": "",
      "statement": "lemma power_Icc_zero_one_operatorMonotoneOn_Ici : ∀ p ∈ Set.Icc (0 : ℝ) 1,\n    OperatorMonotoneOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x ↦ x ^ p)",
      "sorry": false
@@ -1834,7 +1834,7 @@
     {
      "name": "LownerHeinzCore.Spectral.power_Icc_zero_one_operatorConcaveOn_Ici",
      "kind": "lemma",
-     "line": 2387,
+     "line": 2386,
      "doc": "",
      "statement": "lemma power_Icc_zero_one_operatorConcaveOn_Ici : ∀ p ∈ Set.Icc (0 : ℝ) 1,\n    OperatorConcaveOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x ↦ x ^ p)",
      "sorry": false
@@ -1842,7 +1842,7 @@
     {
      "name": "LownerHeinzCore.Spectral.power_Icc_one_two_operatorConvexOn_Ici",
      "kind": "lemma",
-     "line": 2392,
+     "line": 2391,
      "doc": "",
      "statement": "lemma power_Icc_one_two_operatorConvexOn_Ici : ∀ p ∈ Set.Icc (1 : ℝ) 2,\n    OperatorConvexOn (𝓐 := 𝓐) (Set.Ici (0 : ℝ)) (fun x ↦ x ^ p)",
      "sorry": false
@@ -1850,7 +1850,7 @@
     {
      "name": "LownerHeinzCore.Spectral.power_Icc_neg_one_zero_neg_operatorMonotoneOn_Ioi",
      "kind": "lemma",
-     "line": 2398,
+     "line": 2397,
      "doc": "",
      "statement": "lemma power_Icc_neg_one_zero_neg_operatorMonotoneOn_Ioi : ∀ p ∈ Set.Icc (-1 : ℝ) 0,\n    OperatorMonotoneOn (𝓐 := 𝓐) (Set.Ioi (0 : ℝ)) (fun x ↦ -(x ^ p))",
      "sorry": false
@@ -1858,7 +1858,7 @@
     {
      "name": "LownerHeinzCore.Spectral.power_Icc_neg_one_zero_neg_operatorConcaveOn_Ioi",
      "kind": "lemma",
-     "line": 2403,
+     "line": 2402,
      "doc": "",
      "statement": "lemma power_Icc_neg_one_zero_neg_operatorConcaveOn_Ioi : ∀ p ∈ Set.Icc (-1 : ℝ) 0,\n    OperatorConcaveOn (𝓐 := 𝓐) (Set.Ioi (0 : ℝ)) (fun x ↦ -(x ^ p))",
      "sorry": false
@@ -2477,7 +2477,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 172,
+     "line": 173,
      "doc": "",
      "statement": "instance : IsTopologicalAddGroup (HermitianMat n 𝕜)",
      "sorry": false
@@ -2485,7 +2485,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 174,
+     "line": 175,
      "doc": "",
      "statement": "instance : ContinuousSMul ℝ (HermitianMat n ℂ)",
      "sorry": false
@@ -2493,7 +2493,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 177,
+     "line": 178,
      "doc": "",
      "statement": "instance : T3Space (HermitianMat n 𝕜)",
      "sorry": false
@@ -2501,7 +2501,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 185,
+     "line": 186,
      "doc": "",
      "statement": "instance : MulAction R (HermitianMat n α)",
      "sorry": false
@@ -2509,7 +2509,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 194,
+     "line": 195,
      "doc": "",
      "statement": "instance : AddCommGroup (HermitianMat n α)",
      "sorry": false
@@ -2517,7 +2517,7 @@
     {
      "name": "HermitianMat.mat_finset_sum",
      "kind": "lemma",
-     "line": 198,
+     "line": 199,
      "doc": "",
      "statement": "lemma mat_finset_sum (f : ι → HermitianMat n α) (s : Finset ι) :\n    (∑ i ∈ s, f i).mat = ∑ i ∈ s, (f i).mat",
      "sorry": false
@@ -2525,7 +2525,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 206,
+     "line": 207,
      "doc": "",
      "statement": "instance : Module R (HermitianMat n α)",
      "sorry": false
@@ -2533,7 +2533,7 @@
     {
      "name": "HermitianMat.matₗ",
      "kind": "def",
-     "line": 213,
+     "line": 214,
      "doc": "The projection from HermitianMat to Matrix, as a continuous linear map.",
      "statement": "def matₗ : HermitianMat n α →L[R] Matrix n n α",
      "sorry": false
@@ -2541,7 +2541,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 225,
+     "line": 226,
      "doc": "",
      "statement": "instance : One (HermitianMat n α)",
      "sorry": false
@@ -2549,7 +2549,7 @@
     {
      "name": "HermitianMat.mat_one",
      "kind": "lemma",
-     "line": 231,
+     "line": 232,
      "doc": "",
      "statement": "lemma mat_one : (1 : HermitianMat n α).mat = 1",
      "sorry": false
@@ -2557,7 +2557,7 @@
     {
      "name": "HermitianMat.mk_one",
      "kind": "lemma",
-     "line": 235,
+     "line": 236,
      "doc": "",
      "statement": "lemma mk_one (h : (1 : Matrix n n α).IsHermitian) : ⟨1, h⟩ = (1 : HermitianMat n α)",
      "sorry": false
@@ -2565,7 +2565,7 @@
     {
      "name": "HermitianMat.one_apply",
      "kind": "lemma",
-     "line": 239,
+     "line": 240,
      "doc": "",
      "statement": "lemma one_apply (i j : n) : (1 : HermitianMat n α) i j = (1 : Matrix n n α) i j",
      "sorry": false
@@ -2573,7 +2573,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 242,
+     "line": 243,
      "doc": "",
      "statement": "noncomputable instance : AddCommMonoidWithOne (HermitianMat n 𝕜)",
      "sorry": false
@@ -2581,7 +2581,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 244,
+     "line": 245,
      "doc": "",
      "statement": "instance [i : Nonempty n] : NeZero (1 : HermitianMat n 𝕜)",
      "sorry": false
@@ -2589,7 +2589,7 @@
     {
      "name": "HermitianMat.instInv",
      "kind": "instance",
-     "line": 255,
+     "line": 256,
      "doc": "",
      "statement": "noncomputable instance instInv : Inv (HermitianMat m α)",
      "sorry": false
@@ -2597,7 +2597,7 @@
     {
      "name": "HermitianMat.mat_inv",
      "kind": "lemma",
-     "line": 259,
+     "line": 260,
      "doc": "",
      "statement": "lemma mat_inv : (A⁻¹).mat = A.mat⁻¹",
      "sorry": false
@@ -2605,7 +2605,7 @@
     {
      "name": "HermitianMat.zero_inv",
      "kind": "lemma",
-     "line": 263,
+     "line": 264,
      "doc": "",
      "statement": "lemma zero_inv : ((0 : HermitianMat m α)⁻¹) = 0",
      "sorry": false
@@ -2613,7 +2613,7 @@
     {
      "name": "HermitianMat.one_inv",
      "kind": "lemma",
-     "line": 267,
+     "line": 268,
      "doc": "",
      "statement": "lemma one_inv : ((1 : HermitianMat m α)⁻¹) = 1",
      "sorry": false
@@ -2621,7 +2621,7 @@
     {
      "name": "HermitianMat.instPow",
      "kind": "instance",
-     "line": 270,
+     "line": 271,
      "doc": "",
      "statement": "noncomputable instance instPow : Pow (HermitianMat m α) ℕ",
      "sorry": false
@@ -2629,7 +2629,7 @@
     {
      "name": "HermitianMat.mat_pow",
      "kind": "lemma",
-     "line": 274,
+     "line": 275,
      "doc": "",
      "statement": "lemma mat_pow (n : ℕ) : (A ^ n).mat = A.mat ^ n",
      "sorry": false
@@ -2637,7 +2637,7 @@
     {
      "name": "HermitianMat.pow_zero",
      "kind": "lemma",
-     "line": 278,
+     "line": 279,
      "doc": "",
      "statement": "lemma pow_zero : A ^ 0 = 1",
      "sorry": false
@@ -2645,7 +2645,7 @@
     {
      "name": "HermitianMat.zero_pow",
      "kind": "lemma",
-     "line": 282,
+     "line": 283,
      "doc": "",
      "statement": "lemma zero_pow (hn : n ≠ 0): (0 : HermitianMat m α) ^ n = 0",
      "sorry": false
@@ -2653,7 +2653,7 @@
     {
      "name": "HermitianMat.one_pow",
      "kind": "lemma",
-     "line": 286,
+     "line": 287,
      "doc": "",
      "statement": "lemma one_pow : ((1 : HermitianMat m α) ^ n) = 1",
      "sorry": false
@@ -2661,7 +2661,7 @@
     {
      "name": "HermitianMat.instZPow",
      "kind": "instance",
-     "line": 289,
+     "line": 290,
      "doc": "",
      "statement": "noncomputable instance instZPow : Pow (HermitianMat m α) ℤ",
      "sorry": false
@@ -2669,7 +2669,7 @@
     {
      "name": "HermitianMat.mat_zpow",
      "kind": "lemma",
-     "line": 293,
+     "line": 294,
      "doc": "",
      "statement": "lemma mat_zpow (z : ℤ) : (A ^ z).mat = A.mat ^ z",
      "sorry": false
@@ -2677,7 +2677,7 @@
     {
      "name": "HermitianMat.zpow_natCast",
      "kind": "lemma",
-     "line": 297,
+     "line": 298,
      "doc": "",
      "statement": "lemma zpow_natCast : A ^ (n : ℤ) = A ^ n",
      "sorry": false
@@ -2685,7 +2685,7 @@
     {
      "name": "HermitianMat.zpow_zero",
      "kind": "lemma",
-     "line": 301,
+     "line": 302,
      "doc": "",
      "statement": "lemma zpow_zero : A ^ (0 : ℤ) = 1",
      "sorry": false
@@ -2693,7 +2693,7 @@
     {
      "name": "HermitianMat.zpow_one",
      "kind": "lemma",
-     "line": 305,
+     "line": 306,
      "doc": "",
      "statement": "lemma zpow_one : A ^ (1 : ℤ) = A",
      "sorry": false
@@ -2701,7 +2701,7 @@
     {
      "name": "HermitianMat.one_zpow",
      "kind": "lemma",
-     "line": 309,
+     "line": 310,
      "doc": "",
      "statement": "lemma one_zpow : ((1 : HermitianMat m α) ^ z) = 1",
      "sorry": false
@@ -2709,7 +2709,7 @@
     {
      "name": "HermitianMat.zpow_neg_one",
      "kind": "lemma",
-     "line": 313,
+     "line": 314,
      "doc": "",
      "statement": "lemma zpow_neg_one : A ^ (-1 : ℤ) = A⁻¹",
      "sorry": false
@@ -2717,7 +2717,7 @@
     {
      "name": "HermitianMat.inv_zpow",
      "kind": "lemma",
-     "line": 317,
+     "line": 318,
      "doc": "",
      "statement": "lemma inv_zpow : A⁻¹ ^ z = (A ^ z)⁻¹",
      "sorry": false
@@ -2725,7 +2725,7 @@
     {
      "name": "Matrix.inv_commute",
      "kind": "lemma",
-     "line": 324,
+     "line": 325,
      "doc": "",
      "statement": "lemma _root_.Matrix.inv_commute {α : Type*} {A : Matrix m m α} [CommRing α] : Commute A⁻¹ A",
      "sorry": false
@@ -2733,7 +2733,7 @@
     {
      "name": "HermitianMat.commute_inv_self",
      "kind": "lemma",
-     "line": 330,
+     "line": 331,
      "doc": "",
      "statement": "lemma commute_inv_self : Commute A⁻¹.mat A.mat",
      "sorry": false
@@ -2741,7 +2741,7 @@
     {
      "name": "HermitianMat.commute_self_inv",
      "kind": "lemma",
-     "line": 334,
+     "line": 335,
      "doc": "",
      "statement": "lemma commute_self_inv : Commute A.mat A⁻¹.mat",
      "sorry": false
@@ -2749,7 +2749,7 @@
     {
      "name": "HermitianMat.FiniteDimensional",
      "kind": "instance",
-     "line": 341,
+     "line": 342,
      "doc": "",
      "statement": "instance FiniteDimensional : FiniteDimensional ℝ (HermitianMat n 𝕜)",
      "sorry": false
@@ -2757,7 +2757,7 @@
     {
      "name": "HermitianMat.im_diag_eq_zero",
      "kind": "lemma",
-     "line": 345,
+     "line": 346,
      "doc": "",
      "statement": "lemma im_diag_eq_zero (A : HermitianMat n 𝕜) (x : n) :\n    RCLike.im (A x x) = 0",
      "sorry": false
@@ -2765,7 +2765,7 @@
     {
      "name": "HermitianMat.complex_im_eq_zero",
      "kind": "lemma",
-     "line": 351,
+     "line": 352,
      "doc": "",
      "statement": "lemma complex_im_eq_zero (A : HermitianMat n ℂ) (x : n) :\n    (A x x).im = 0",
      "sorry": false
@@ -2773,7 +2773,7 @@
     {
      "name": "HermitianMat.conj",
      "kind": "def",
-     "line": 367,
+     "line": 368,
      "doc": "The Hermitian matrix given by conjugating by a (possibly rectangular) Matrix. If we required `B` to be\nsquare, this would apply to any `Semigroup`+`StarMul` (as proved by `IsSelfAdjoint.conjugate`). But this lets\nus conjugate to other sizes too, as is done in e.g. Kraus operators. That is, it's a _heterogeneous_ conjguation.",
      "statement": "def conj {m} (B : Matrix m n α) : HermitianMat n α →+ HermitianMat m α",
      "sorry": false
@@ -2781,7 +2781,7 @@
     {
      "name": "HermitianMat.conj_apply",
      "kind": "lemma",
-     "line": 379,
+     "line": 380,
      "doc": "",
      "statement": "lemma conj_apply (B : Matrix m n α) (A : HermitianMat n α) :\n    conj B A = ⟨B * A.mat * B.conjTranspose, (conj B A).2⟩",
      "sorry": false
@@ -2789,7 +2789,7 @@
     {
      "name": "HermitianMat.conj_apply_mat",
      "kind": "lemma",
-     "line": 384,
+     "line": 385,
      "doc": "",
      "statement": "lemma conj_apply_mat (B : Matrix m n α) (A : HermitianMat n α) :\n    (A.conj B).mat = B * A.mat * B.conjTranspose",
      "sorry": false
@@ -2797,7 +2797,7 @@
     {
      "name": "HermitianMat.conj_conj",
      "kind": "lemma",
-     "line": 388,
+     "line": 389,
      "doc": "",
      "statement": "lemma conj_conj {m l} [Fintype m] (B : Matrix m n α) (C : Matrix l m α) :\n    (A.conj B).conj C = A.conj (C * B)",
      "sorry": false
@@ -2805,7 +2805,7 @@
     {
      "name": "HermitianMat.conj_zero",
      "kind": "lemma",
-     "line": 397,
+     "line": 398,
      "doc": "",
      "statement": "lemma conj_zero [DecidableEq n] : A.conj (0 : Matrix m n α) = 0",
      "sorry": false
@@ -2813,7 +2813,7 @@
     {
      "name": "HermitianMat.conj_one",
      "kind": "lemma",
-     "line": 402,
+     "line": 403,
      "doc": "",
      "statement": "lemma conj_one [DecidableEq n] : A.conj 1 = A",
      "sorry": false
@@ -2821,7 +2821,7 @@
     {
      "name": "HermitianMat.conj_one_unitary",
      "kind": "lemma",
-     "line": 406,
+     "line": 407,
      "doc": "",
      "statement": "lemma conj_one_unitary [DecidableEq n] (U : Matrix.unitaryGroup n α) :\n    conj U.val 1 = 1",
      "sorry": false
@@ -2829,7 +2829,7 @@
     {
      "name": "HermitianMat.conjLinear",
      "kind": "def",
-     "line": 415,
+     "line": 416,
      "doc": "`HermitianMat.conj` as an `R`-linear map, where `R` is the ring of relevant reals.",
      "statement": "def conjLinear {m} (B : Matrix m n α) : HermitianMat n α →ₗ[R] HermitianMat m α",
      "sorry": false
@@ -2837,7 +2837,7 @@
     {
      "name": "HermitianMat.conjLinear_apply",
      "kind": "lemma",
-     "line": 422,
+     "line": 423,
      "doc": "",
      "statement": "lemma conjLinear_apply (B : Matrix m n α) : conjLinear R B A = conj B A",
      "sorry": false
@@ -2845,7 +2845,7 @@
     {
      "name": "HermitianMat.continuous_conj",
      "kind": "lemma",
-     "line": 428,
+     "line": 429,
      "doc": "",
      "statement": "lemma continuous_conj [TopologicalSpace α] [IsTopologicalRing α] [ContinuousStar α]\n    (ρ : HermitianMat n α) :\n    Continuous (ρ.conj (m := m) ·)",
      "sorry": false
@@ -2853,7 +2853,7 @@
     {
      "name": "HermitianMat.continuous_conj_right",
      "kind": "lemma",
-     "line": 437,
+     "line": 438,
      "doc": "conj is continuous in its right argument.",
      "statement": "lemma continuous_conj_right [TopologicalSpace α] [IsTopologicalRing α] (B : Matrix m n α) :\n    Continuous (HermitianMat.conj B)",
      "sorry": false
@@ -2861,7 +2861,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 448,
+     "line": 449,
      "doc": "",
      "statement": "instance [i : Nonempty n] : FaithfulSMul ℝ (HermitianMat n 𝕜)",
      "sorry": false
@@ -2869,7 +2869,7 @@
     {
      "name": "HermitianMat.lin",
      "kind": "def",
-     "line": 453,
+     "line": 454,
      "doc": "The continuous linear map associated with a Hermitian matrix.",
      "statement": "noncomputable def lin : EuclideanSpace 𝕜 n →L[𝕜] EuclideanSpace 𝕜 n",
      "sorry": false
@@ -2877,7 +2877,7 @@
     {
      "name": "HermitianMat.isSymmetric",
      "kind": "lemma",
-     "line": 458,
+     "line": 459,
      "doc": "",
      "statement": "lemma isSymmetric : A.lin.IsSymmetric",
      "sorry": false
@@ -2885,7 +2885,7 @@
     {
      "name": "HermitianMat.lin_zero",
      "kind": "lemma",
-     "line": 462,
+     "line": 463,
      "doc": "",
      "statement": "lemma lin_zero : (0 : HermitianMat n 𝕜).lin = 0",
      "sorry": false
@@ -2893,7 +2893,7 @@
     {
      "name": "HermitianMat.lin_one",
      "kind": "lemma",
-     "line": 466,
+     "line": 467,
      "doc": "",
      "statement": "lemma lin_one : (1 : HermitianMat n 𝕜).lin = 1",
      "sorry": false
@@ -2901,7 +2901,7 @@
     {
      "name": "HermitianMat.eigenspace",
      "kind": "def",
-     "line": 469,
+     "line": 470,
      "doc": "",
      "statement": "noncomputable def eigenspace (μ : 𝕜) : Submodule 𝕜 (EuclideanSpace 𝕜 n)",
      "sorry": false
@@ -2909,7 +2909,7 @@
     {
      "name": "HermitianMat.ker",
      "kind": "def",
-     "line": 474,
+     "line": 475,
      "doc": "The kernel of a Hermitian matrix `A` as a submodule of Euclidean space, defined by\n`LinearMap.ker A.toMat.toEuclideanLin`. Equivalently, the zero-eigenspace.",
      "statement": "noncomputable def ker : Submodule 𝕜 (EuclideanSpace 𝕜 n)",
      "sorry": false
@@ -2917,7 +2917,7 @@
     {
      "name": "HermitianMat.mem_ker_iff_mulVec_zero",
      "kind": "lemma",
-     "line": 477,
+     "line": 478,
      "doc": "",
      "statement": "lemma mem_ker_iff_mulVec_zero (x : EuclideanSpace 𝕜 n) : x ∈ A.ker ↔ A.mat.mulVec x = 0",
      "sorry": false
@@ -2925,7 +2925,7 @@
     {
      "name": "HermitianMat.ker_eq_eigenspace_zero",
      "kind": "theorem",
-     "line": 481,
+     "line": 482,
      "doc": "The kernel of a Hermitian matrix is its zero eigenspace.",
      "statement": "theorem ker_eq_eigenspace_zero : A.ker = A.eigenspace 0",
      "sorry": false
@@ -2933,7 +2933,7 @@
     {
      "name": "HermitianMat.ker_zero",
      "kind": "lemma",
-     "line": 486,
+     "line": 487,
      "doc": "",
      "statement": "lemma ker_zero : (0 : HermitianMat n 𝕜).ker = ⊤",
      "sorry": false
@@ -2941,7 +2941,7 @@
     {
      "name": "HermitianMat.ker_one",
      "kind": "lemma",
-     "line": 490,
+     "line": 491,
      "doc": "",
      "statement": "lemma ker_one : (1 : HermitianMat n 𝕜).ker = ⊥",
      "sorry": false
@@ -2949,7 +2949,7 @@
     {
      "name": "HermitianMat.ker_pos_smul",
      "kind": "lemma",
-     "line": 493,
+     "line": 494,
      "doc": "",
      "statement": "lemma ker_pos_smul {c : ℝ} (hc : c ≠ 0) : (c • A).ker = A.ker",
      "sorry": false
@@ -2957,7 +2957,7 @@
     {
      "name": "HermitianMat.support",
      "kind": "def",
-     "line": 499,
+     "line": 500,
      "doc": "The support of a Hermitian matrix `A` as a submodule of Euclidean space, defined by\n`LinearMap.range A.toMat.toEuclideanLin`. Equivalently, the sum of all nonzero eigenspaces.",
      "statement": "noncomputable def support : Submodule 𝕜 (EuclideanSpace 𝕜 n)",
      "sorry": false
@@ -2965,7 +2965,7 @@
     {
      "name": "HermitianMat.support_eq_sup_eigenspace_nonzero",
      "kind": "theorem",
-     "line": 503,
+     "line": 504,
      "doc": "The support of a Hermitian matrix is the sum of its nonzero eigenspaces.",
      "statement": "theorem support_eq_sup_eigenspace_nonzero : A.support = ⨆ μ ≠ 0, A.eigenspace μ",
      "sorry": false
@@ -2973,7 +2973,7 @@
     {
      "name": "HermitianMat.support_zero",
      "kind": "lemma",
-     "line": 507,
+     "line": 508,
      "doc": "",
      "statement": "lemma support_zero : (0 : HermitianMat n 𝕜).support = ⊥",
      "sorry": false
@@ -2981,7 +2981,7 @@
     {
      "name": "HermitianMat.support_one",
      "kind": "lemma",
-     "line": 511,
+     "line": 512,
      "doc": "",
      "statement": "lemma support_one : (1 : HermitianMat n 𝕜).support = ⊤",
      "sorry": false
@@ -2989,7 +2989,7 @@
     {
      "name": "HermitianMat.ker_orthogonal_eq_support",
      "kind": "lemma",
-     "line": 515,
+     "line": 516,
      "doc": "",
      "statement": "lemma ker_orthogonal_eq_support : A.kerᗮ = A.support",
      "sorry": false
@@ -2997,7 +2997,7 @@
     {
      "name": "HermitianMat.support_orthogonal_eq_range",
      "kind": "lemma",
-     "line": 521,
+     "line": 522,
      "doc": "",
      "statement": "lemma support_orthogonal_eq_range : A.supportᗮ = A.ker",
      "sorry": false
@@ -3005,7 +3005,7 @@
     {
      "name": "HermitianMat.diagonal",
      "kind": "def",
-     "line": 533,
+     "line": 534,
      "doc": "",
      "statement": "def diagonal (f : n → ℝ) : HermitianMat n 𝕜",
      "sorry": false
@@ -3013,7 +3013,7 @@
     {
      "name": "HermitianMat.diagonal_mat",
      "kind": "lemma",
-     "line": 540,
+     "line": 541,
      "doc": "",
      "statement": "lemma diagonal_mat : (diagonal 𝕜 f).mat = Matrix.diagonal (f · : n → 𝕜)",
      "sorry": false
@@ -3021,7 +3021,7 @@
     {
      "name": "HermitianMat.diagonal_zero",
      "kind": "lemma",
-     "line": 544,
+     "line": 545,
      "doc": "",
      "statement": "lemma diagonal_zero : (diagonal 𝕜 0) = (0 : HermitianMat n 𝕜)",
      "sorry": false
@@ -3029,7 +3029,7 @@
     {
      "name": "HermitianMat.diagonal_eq_zero",
      "kind": "lemma",
-     "line": 548,
+     "line": 549,
      "doc": "",
      "statement": "lemma diagonal_eq_zero {f : n → ℝ} : diagonal 𝕜 f = 0 ↔ f = 0",
      "sorry": false
@@ -3037,7 +3037,7 @@
     {
      "name": "HermitianMat.diagonal_one",
      "kind": "lemma",
-     "line": 552,
+     "line": 553,
      "doc": "",
      "statement": "lemma diagonal_one : (diagonal 𝕜 1) = (1 : HermitianMat n 𝕜)",
      "sorry": false
@@ -3045,7 +3045,7 @@
     {
      "name": "HermitianMat.diagonal_eq_one",
      "kind": "lemma",
-     "line": 556,
+     "line": 557,
      "doc": "",
      "statement": "lemma diagonal_eq_one {f : n → ℝ} : diagonal 𝕜 f = 1 ↔ f = 1",
      "sorry": false
@@ -3053,7 +3053,7 @@
     {
      "name": "HermitianMat.diagonal_add",
      "kind": "lemma",
-     "line": 559,
+     "line": 560,
      "doc": "",
      "statement": "lemma diagonal_add : diagonal 𝕜 (f + g) = diagonal 𝕜 f + diagonal 𝕜 g",
      "sorry": false
@@ -3061,7 +3061,7 @@
     {
      "name": "HermitianMat.diagonal_add_apply",
      "kind": "lemma",
-     "line": 562,
+     "line": 563,
      "doc": "",
      "statement": "lemma diagonal_add_apply : diagonal 𝕜 (fun x ↦ f x + g x) = diagonal 𝕜 f + diagonal 𝕜 g",
      "sorry": false
@@ -3069,7 +3069,7 @@
     {
      "name": "HermitianMat.diagonal_sub",
      "kind": "lemma",
-     "line": 565,
+     "line": 566,
      "doc": "",
      "statement": "lemma diagonal_sub : diagonal 𝕜 (f - g) = diagonal 𝕜 f - diagonal 𝕜 g",
      "sorry": false
@@ -3077,7 +3077,7 @@
     {
      "name": "HermitianMat.diagonal_mul",
      "kind": "lemma",
-     "line": 568,
+     "line": 569,
      "doc": "",
      "statement": "lemma diagonal_mul (c : ℝ) : diagonal 𝕜 (fun x ↦ c * f x) = c • diagonal 𝕜 f",
      "sorry": false
@@ -3085,7 +3085,7 @@
     {
      "name": "HermitianMat.diagonal_conj_diagonal",
      "kind": "lemma",
-     "line": 572,
+     "line": 573,
      "doc": "",
      "statement": "lemma diagonal_conj_diagonal [Fintype n] :\n    (diagonal 𝕜 f).conj (diagonal 𝕜 g) = diagonal 𝕜 (fun i ↦ f i * (g i)^2)",
      "sorry": false
@@ -3093,7 +3093,7 @@
     {
      "name": "HermitianMat.eq_conj_diagonal",
      "kind": "lemma",
-     "line": 582,
+     "line": 583,
      "doc": "A Hermitian matrix is equal to its diagonalization conjugated by its eigenvector unitary matrix.",
      "statement": "lemma eq_conj_diagonal [Fintype n] (A : HermitianMat n 𝕜) :\n    A = (diagonal 𝕜 A.H.eigenvalues).conj A.H.eigenvectorUnitary",
      "sorry": false
@@ -3101,7 +3101,7 @@
     {
      "name": "HermitianMat.kronecker",
      "kind": "def",
-     "line": 596,
+     "line": 597,
      "doc": "The kronecker product of two HermitianMats, see `Matrix.kroneckerMap`.",
      "statement": "def kronecker (A : HermitianMat m α) (B : HermitianMat n α) : HermitianMat (m × n) α",
      "sorry": false
@@ -3109,7 +3109,7 @@
     {
      "name": "HermitianMat.kronecker_mat",
      "kind": "lemma",
-     "line": 604,
+     "line": 605,
      "doc": "",
      "statement": "lemma kronecker_mat (A : HermitianMat m α) (B : HermitianMat n α) :\n    (A ⊗ₖ B).mat = A.mat ⊗ₖ B.mat",
      "sorry": false
@@ -3117,7 +3117,7 @@
     {
      "name": "HermitianMat.zero_kronecker",
      "kind": "lemma",
-     "line": 609,
+     "line": 610,
      "doc": "",
      "statement": "lemma zero_kronecker (A : HermitianMat m α) : (0 : HermitianMat n α) ⊗ₖ A = 0",
      "sorry": false
@@ -3125,7 +3125,7 @@
     {
      "name": "HermitianMat.kronecker_zero",
      "kind": "lemma",
-     "line": 613,
+     "line": 614,
      "doc": "",
      "statement": "lemma kronecker_zero (A : HermitianMat m α) : A ⊗ₖ (0 : HermitianMat n α) = 0",
      "sorry": false
@@ -3133,7 +3133,7 @@
     {
      "name": "HermitianMat.kronecker_one_one",
      "kind": "lemma",
-     "line": 618,
+     "line": 619,
      "doc": "",
      "statement": "lemma kronecker_one_one : (1 : HermitianMat m α) ⊗ₖ (1 : HermitianMat n α) = 1",
      "sorry": false
@@ -3141,7 +3141,7 @@
     {
      "name": "HermitianMat.add_kronecker",
      "kind": "lemma",
-     "line": 622,
+     "line": 623,
      "doc": "",
      "statement": "lemma add_kronecker : (A + B) ⊗ₖ C = A ⊗ₖ C + B ⊗ₖ C",
      "sorry": false
@@ -3149,7 +3149,7 @@
     {
      "name": "HermitianMat.kronecker_add",
      "kind": "lemma",
-     "line": 626,
+     "line": 627,
      "doc": "",
      "statement": "lemma kronecker_add : A ⊗ₖ (B + C) = A ⊗ₖ B + A ⊗ₖ C",
      "sorry": false
@@ -3157,7 +3157,7 @@
     {
      "name": "HermitianMat.kronecker_diagonal",
      "kind": "lemma",
-     "line": 629,
+     "line": 630,
      "doc": "",
      "statement": "lemma kronecker_diagonal [DecidableEq m] [DecidableEq n] (d₁ : m → ℝ) (d₂ : n → ℝ) :\n    (diagonal 𝕜 d₁ ⊗ₖ diagonal 𝕜 d₂) = diagonal 𝕜 (fun (i : m × n) => d₁ i.1 * d₂ i.2)",
      "sorry": false
@@ -3165,7 +3165,7 @@
     {
      "name": "HermitianMat.kron_commute",
      "kind": "theorem",
-     "line": 640,
+     "line": 641,
      "doc": "A ⊗ₖ B always commutes with C ⊗ₖ D if the pairs commute.",
      "statement": "theorem kron_commute [Fintype m] [Fintype n] [DecidableEq m] [DecidableEq n]\n    {A C : HermitianMat m α} {B D : HermitianMat n α}\n    (hAC : Commute A.mat C.mat) (hBD : Commute B.mat D.mat):\n    Commute (A ⊗ₖ B).mat (C ⊗ₖ D).mat",
      "sorry": false
@@ -3173,7 +3173,7 @@
     {
      "name": "HermitianMat.kron_id_commute_id_kro",
      "kind": "theorem",
-     "line": 651,
+     "line": 652,
      "doc": "A ⊗ₖ 1 always commutes with 1 ⊗ₖ B",
      "statement": "theorem kron_id_commute_id_kro [Fintype m] [Fintype n] [DecidableEq m] [DecidableEq n]\n    (A : HermitianMat m α) (B : HermitianMat n α) :\n    Commute (A ⊗ₖ (1 : HermitianMat n α)).mat ((1 : HermitianMat m α) ⊗ₖ B).mat",
      "sorry": false
@@ -3181,7 +3181,7 @@
     {
      "name": "HermitianMat.kronecker_conj",
      "kind": "lemma",
-     "line": 659,
+     "line": 660,
      "doc": "",
      "statement": "lemma kronecker_conj [Fintype m] [Fintype n]\n    (A : HermitianMat m α) (B : HermitianMat n α) (C : Matrix p m α) (D : Matrix q n α) :\n    (A ⊗ₖ B).conj (C ⊗ₖ D) = (A.conj C) ⊗ₖ (B.conj D)",
      "sorry": false
@@ -3189,7 +3189,7 @@
     {
      "name": "HermitianMat.range_le_ker_imp_zero",
      "kind": "lemma",
-     "line": 674,
+     "line": 675,
      "doc": "",
      "statement": "lemma range_le_ker_imp_zero {A : HermitianMat d 𝕜}\n    (h : LinearMap.range A.mat.toEuclideanLin ≤ LinearMap.ker A.mat.toEuclideanLin) : A = 0",
      "sorry": false
@@ -3197,7 +3197,7 @@
     {
      "name": "Matrix.range_mul_conjTranspose_of_ker_le_ker",
      "kind": "theorem",
-     "line": 703,
+     "line": 704,
      "doc": "If ker M ⊆ ker A, then range (A Mᴴ) = range A.",
      "statement": "theorem _root_.Matrix.range_mul_conjTranspose_of_ker_le_ker {A : Matrix d d 𝕜} {M : Matrix d₂ d 𝕜}\n    (h : LinearMap.ker M.toEuclideanLin ≤ LinearMap.ker A.toEuclideanLin) :\n    LinearMap.range (A * M.conjTranspose).toEuclideanLin = LinearMap.range A.toEuclideanLin",
      "sorry": false
@@ -3205,7 +3205,7 @@
     {
      "name": "HermitianMat.conj_ne_zero",
      "kind": "lemma",
-     "line": 744,
+     "line": 745,
      "doc": "",
      "statement": "lemma conj_ne_zero {A : HermitianMat d 𝕜} {M : Matrix d₂ d 𝕜} (hA : A ≠ 0)\n    (h : LinearMap.ker M.toEuclideanLin ≤ A.ker) : A.conj M ≠ 0",
      "sorry": false
@@ -3213,7 +3213,7 @@
     {
      "name": "HermitianMat.conj_ne_zero_iff",
      "kind": "lemma",
-     "line": 756,
+     "line": 757,
      "doc": "",
      "statement": "lemma conj_ne_zero_iff {A : HermitianMat d 𝕜} {M : Matrix d₂ d 𝕜}\n    (h : LinearMap.ker M.toEuclideanLin ≤ A.ker) : A.conj M ≠ 0 ↔ A ≠ 0",
      "sorry": false
@@ -3221,7 +3221,7 @@
     {
      "name": "Matrix.IsHermitian.spectrum_rcLike",
      "kind": "lemma",
-     "line": 765,
+     "line": 766,
      "doc": "",
      "statement": "lemma _root_.Matrix.IsHermitian.spectrum_rcLike {A : Matrix n n 𝕜} (hA : A.IsHermitian) :\n    RCLike.ofReal '' spectrum ℝ A = spectrum 𝕜 A",
      "sorry": false
@@ -3229,7 +3229,7 @@
     {
      "name": "HermitianMat.spectrum_rcLike",
      "kind": "theorem",
-     "line": 772,
+     "line": 773,
      "doc": "We fix a simp-normal form that, for HermitianMat, we always work in terms\nof the real spectrum.",
      "statement": "theorem spectrum_rcLike (A : HermitianMat n 𝕜) :\n    spectrum 𝕜 A.mat = RCLike.ofReal '' spectrum ℝ A.mat",
      "sorry": false
@@ -3237,7 +3237,7 @@
     {
      "name": "HermitianMat.ne_zero_iff_ne_zero_spectrum",
      "kind": "lemma",
-     "line": 776,
+     "line": 777,
      "doc": "",
      "statement": "lemma ne_zero_iff_ne_zero_spectrum (A : HermitianMat n 𝕜) :\n    A ≠ 0 ↔ ∃ x ∈ spectrum ℝ A.mat, x ≠ 0",
      "sorry": false
@@ -3245,7 +3245,7 @@
     {
      "name": "HermitianMat.spectrum_prod",
      "kind": "lemma",
-     "line": 792,
+     "line": 793,
      "doc": "",
      "statement": "lemma spectrum_prod\n  {A : HermitianMat m 𝕜} {B : HermitianMat n 𝕜} :\n    spectrum ℝ (A ⊗ₖ B).mat = spectrum ℝ A.mat * spectrum ℝ B.mat",
      "sorry": false
@@ -3253,7 +3253,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 800,
+     "line": 801,
      "doc": "",
      "statement": "noncomputable instance : AddCommMonoid (HermitianMat d ℂ)",
      "sorry": false
@@ -4499,7 +4499,7 @@
     {
      "name": "HermitianMat.symmMul_comm",
      "kind": "lemma",
-     "line": 35,
+     "line": 42,
      "doc": "",
      "statement": "lemma symmMul_comm : A.symmMul B = B.symmMul A",
      "sorry": false
@@ -4507,7 +4507,7 @@
     {
      "name": "HermitianMat.symmMul_zero",
      "kind": "lemma",
-     "line": 40,
+     "line": 47,
      "doc": "",
      "statement": "lemma symmMul_zero : A.symmMul 0 = 0",
      "sorry": false
@@ -4515,7 +4515,7 @@
     {
      "name": "HermitianMat.zero_symmMul",
      "kind": "lemma",
-     "line": 45,
+     "line": 52,
      "doc": "",
      "statement": "lemma zero_symmMul : symmMul 0 A = 0",
      "sorry": false
@@ -4523,7 +4523,7 @@
     {
      "name": "HermitianMat.symmMul_toMat",
      "kind": "lemma",
-     "line": 48,
+     "line": 55,
      "doc": "",
      "statement": "lemma symmMul_toMat : (A.symmMul B).mat =\n    (2 : 𝕜)⁻¹ • (A.mat * B.mat + B.mat * A.mat)",
      "sorry": false
@@ -4531,7 +4531,7 @@
     {
      "name": "HermitianMat.symmMul_of_commute",
      "kind": "lemma",
-     "line": 56,
+     "line": 63,
      "doc": "",
      "statement": "lemma symmMul_of_commute (hAB : Commute A.mat B.mat) :\n    (A.symmMul B).mat = A.mat * B.mat",
      "sorry": false
@@ -4539,7 +4539,7 @@
     {
      "name": "HermitianMat.symmMul_self",
      "kind": "lemma",
-     "line": 62,
+     "line": 69,
      "doc": "",
      "statement": "lemma symmMul_self : (symmMul A A).mat = A.mat * A.mat",
      "sorry": false
@@ -4547,7 +4547,7 @@
     {
      "name": "HermitianMat.symmMul_one",
      "kind": "lemma",
-     "line": 68,
+     "line": 75,
      "doc": "",
      "statement": "lemma symmMul_one : A.symmMul 1 = A",
      "sorry": false
@@ -4555,7 +4555,7 @@
     {
      "name": "HermitianMat.one_symmMul",
      "kind": "lemma",
-     "line": 72,
+     "line": 79,
      "doc": "",
      "statement": "lemma one_symmMul : symmMul 1 A = A",
      "sorry": false
@@ -4563,7 +4563,7 @@
     {
      "name": "HermitianMat.symmMul_neg_one",
      "kind": "lemma",
-     "line": 76,
+     "line": 83,
      "doc": "",
      "statement": "lemma symmMul_neg_one : A.symmMul (-1) = -A",
      "sorry": false
@@ -4571,7 +4571,7 @@
     {
      "name": "HermitianMat.neg_one_symmMul",
      "kind": "lemma",
-     "line": 80,
+     "line": 87,
      "doc": "",
      "statement": "lemma neg_one_symmMul : symmMul (-1) A = -A",
      "sorry": false
@@ -4579,7 +4579,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 93,
+     "line": 100,
      "doc": "",
      "statement": "scoped instance : CommMagma (HermitianMat d 𝕜)",
      "sorry": false
@@ -4587,7 +4587,7 @@
     {
      "name": "HermMul.mul_eq_symmMul",
      "kind": "lemma",
-     "line": 101,
+     "line": 108,
      "doc": "",
      "statement": "lemma mul_eq_symmMul : A * B = A.symmMul B",
      "sorry": false
@@ -4595,7 +4595,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 104,
+     "line": 111,
      "doc": "",
      "statement": "scoped instance : IsCommJordan (HermitianMat d 𝕜)",
      "sorry": false
@@ -4603,7 +4603,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 111,
+     "line": 118,
      "doc": "",
      "statement": "scoped instance : MulZeroClass (HermitianMat d 𝕜)",
      "sorry": false
@@ -4611,7 +4611,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 117,
+     "line": 124,
      "doc": "",
      "statement": "scoped instance : MulZeroOneClass (HermitianMat d 𝕜)",
      "sorry": false
@@ -4619,7 +4619,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 127,
+     "line": 134,
      "doc": "",
      "statement": "scoped instance : NonUnitalNonAssocRing (HermitianMat d 𝕜)",
      "sorry": false
@@ -4627,7 +4627,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 139,
+     "line": 146,
      "doc": "",
      "statement": "scoped instance : NonAssocCommRing (HermitianMat d 𝕜)",
      "sorry": false
@@ -4635,7 +4635,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 148,
+     "line": 155,
      "doc": "",
      "statement": "scoped instance : IsScalarTower ℝ (HermitianMat d 𝕜) (HermitianMat d 𝕜)",
      "sorry": false
@@ -5393,7 +5393,7 @@
    "copyright": "2025 Alex Meiburg",
    "sections": [
     {
-     "line": 554,
+     "line": 556,
      "text": "## Positivity extensions connecting HermitianMat and Matrix"
     }
    ],
@@ -5633,7 +5633,7 @@
     {
      "name": "HermitianMat.conj_nonneg",
      "kind": "theorem",
-     "line": 336,
+     "line": 337,
      "doc": "Positivity extension for `HermitianMat.conj`: nonneg when the inner matrix is.",
      "statement": "theorem conj_nonneg (hA : 0 ≤ A) : 0 ≤ A.conj M",
      "sorry": false
@@ -5641,7 +5641,7 @@
     {
      "name": "HermitianMat.conj_pos",
      "kind": "lemma",
-     "line": 340,
+     "line": 341,
      "doc": "",
      "statement": "lemma conj_pos [DecidableEq n] {A : HermitianMat n 𝕜} {M : Matrix m n 𝕜} (hA : 0 < A)\n    (h : LinearMap.ker M.toEuclideanLin ≤ A.ker) : 0 < A.conj M",
      "sorry": false
@@ -5649,7 +5649,7 @@
     {
      "name": "HermitianMat.evalHermitianMatConj",
      "kind": "def",
-     "line": 347,
+     "line": 348,
      "doc": "Positivity extension for `HermitianMat.conj`: nonneg when the inner matrix is.",
      "statement": "meta def evalHermitianMatConj : PositivityExt",
      "sorry": false
@@ -5657,7 +5657,7 @@
     {
      "name": "HermitianMat.convex_cone",
      "kind": "lemma",
-     "line": 379,
+     "line": 380,
      "doc": "",
      "statement": "lemma convex_cone (hA : 0 ≤ A) (hB : 0 ≤ B) {c₁ c₂ : ℝ} (hc₁ : 0 ≤ c₁) (hc₂ : 0 ≤ c₂) :\n    0 ≤ (c₁ • A + c₂ • B)",
      "sorry": false
@@ -5665,7 +5665,7 @@
     {
      "name": "HermitianMat.sq_nonneg",
      "kind": "lemma",
-     "line": 384,
+     "line": 385,
      "doc": "",
      "statement": "lemma sq_nonneg [DecidableEq n] : 0 ≤ A ^ 2",
      "sorry": false
@@ -5673,7 +5673,7 @@
     {
      "name": "HermitianMat.ker_antitone",
      "kind": "lemma",
-     "line": 389,
+     "line": 390,
      "doc": "",
      "statement": "lemma ker_antitone [DecidableEq n] (hA : 0 ≤ A) : A ≤ B → B.ker ≤ A.ker",
      "sorry": false
@@ -5681,7 +5681,7 @@
     {
      "name": "HermitianMat.diagonal_le_diagonal",
      "kind": "lemma",
-     "line": 401,
+     "line": 402,
      "doc": "",
      "statement": "lemma diagonal_le_diagonal [DecidableEq n] {f g : n → ℝ} : diagonal 𝕜 f ≤ diagonal 𝕜 g ↔ f ≤ g",
      "sorry": false
@@ -5689,7 +5689,7 @@
     {
      "name": "HermitianMat.diagonal_nonneg",
      "kind": "lemma",
-     "line": 407,
+     "line": 408,
      "doc": "",
      "statement": "lemma diagonal_nonneg [DecidableEq n] {f : n → ℝ} : 0 ≤ diagonal 𝕜 f ↔ 0 ≤ f",
      "sorry": false
@@ -5697,7 +5697,7 @@
     {
      "name": "HermitianMat.conj_mono",
      "kind": "lemma",
-     "line": 410,
+     "line": 412,
      "doc": "",
      "statement": "lemma conj_mono (h : A ≤ B) : A.conj M ≤ B.conj M",
      "sorry": false
@@ -5705,7 +5705,7 @@
     {
      "name": "HermitianMat.conj_posDef",
      "kind": "lemma",
-     "line": 417,
+     "line": 419,
      "doc": "",
      "statement": "lemma conj_posDef [DecidableEq n] (hA : A.mat.PosDef) (hN : IsUnit N) :\n    (A.conj N).mat.PosDef",
      "sorry": false
@@ -5713,7 +5713,7 @@
     {
      "name": "HermitianMat.inv_conj",
      "kind": "lemma",
-     "line": 434,
+     "line": 436,
      "doc": "",
      "statement": "lemma inv_conj [DecidableEq n] {M : Matrix n n 𝕜} (hM : IsUnit M) :\n    (A.conj M)⁻¹ = A⁻¹.conj (M⁻¹)ᴴ",
      "sorry": false
@@ -5721,7 +5721,7 @@
     {
      "name": "HermitianMat.le_iff_mulVec_le_mulVec",
      "kind": "lemma",
-     "line": 444,
+     "line": 446,
      "doc": "",
      "statement": "lemma le_iff_mulVec_le_mulVec (A B : HermitianMat n 𝕜) :\n    A ≤ B ↔ ∀ v : n → 𝕜, star v ⬝ᵥ A.mat *ᵥ v ≤ star v ⬝ᵥ B.mat *ᵥ v",
      "sorry": false
@@ -5729,7 +5729,7 @@
     {
      "name": "HermitianMat.inner_mulVec_nonneg",
      "kind": "lemma",
-     "line": 452,
+     "line": 454,
      "doc": "",
      "statement": "lemma inner_mulVec_nonneg (hA : 0 ≤ A) (v : n → 𝕜) :\n    0 ≤ star v ⬝ᵥ A.mat *ᵥ v",
      "sorry": false
@@ -5737,7 +5737,7 @@
     {
      "name": "HermitianMat.mem_ker_of_inner_mulVec_zero",
      "kind": "lemma",
-     "line": 457,
+     "line": 459,
      "doc": "",
      "statement": "lemma mem_ker_of_inner_mulVec_zero [DecidableEq n] (hA : 0 ≤ A) (v : EuclideanSpace 𝕜 n)\n    (h : star v ⬝ᵥ A.mat *ᵥ v = 0) : v ∈ A.ker",
      "sorry": false
@@ -5745,7 +5745,7 @@
     {
      "name": "HermitianMat.ker_add",
      "kind": "lemma",
-     "line": 462,
+     "line": 464,
      "doc": "",
      "statement": "lemma ker_add [DecidableEq n] (hA : 0 ≤ A) (hB : 0 ≤ B) :\n    (A + B).ker = A.ker ⊓ B.ker",
      "sorry": false
@@ -5753,7 +5753,7 @@
     {
      "name": "HermitianMat.ker_sum",
      "kind": "lemma",
-     "line": 478,
+     "line": 480,
      "doc": "",
      "statement": "lemma ker_sum [DecidableEq n] (f : ι → HermitianMat n 𝕜) (hf : ∀ i, 0 ≤ f i) :\n    (∑ i, f i).ker = ⨅ i, (f i).ker",
      "sorry": false
@@ -5761,7 +5761,7 @@
     {
      "name": "HermitianMat.ker_conj",
      "kind": "lemma",
-     "line": 500,
+     "line": 502,
      "doc": "",
      "statement": "lemma ker_conj [DecidableEq n] (hA : 0 ≤ A) (B : Matrix n n 𝕜) :\n    (A.conj B).ker = Submodule.comap (Matrix.toEuclideanLin B.conjTranspose) A.ker",
      "sorry": false
@@ -5769,7 +5769,7 @@
     {
      "name": "HermitianMat.ker_le_of_le_smul",
      "kind": "lemma",
-     "line": 518,
+     "line": 520,
      "doc": "",
      "statement": "lemma ker_le_of_le_smul {α : ℝ} [DecidableEq n] (hα : α ≠ 0) (hA : 0 ≤ A) (hAB : A ≤ α • B) : B.ker ≤ A.ker",
      "sorry": false
@@ -5777,7 +5777,7 @@
     {
      "name": "HermitianMat.le_smul_one_imp_eigenvalues_le",
      "kind": "theorem",
-     "line": 523,
+     "line": 525,
      "doc": "If a Hermitian matrix is bounded by `M * I`, then all its eigenvalues are at most `M`.",
      "statement": "theorem le_smul_one_imp_eigenvalues_le [DecidableEq n] (A : HermitianMat n ℂ) (M : ℝ)\n    (h : A ≤ M • (1 : HermitianMat n ℂ)) (i : n) :\n    A.H.eigenvalues i ≤ M",
      "sorry": false
@@ -5785,7 +5785,7 @@
     {
      "name": "HermitianMat.eigenvalues_le_imp_le_smul_one",
      "kind": "theorem",
-     "line": 545,
+     "line": 547,
      "doc": "If all eigenvalues of a Hermitian matrix are at most `M`, then it is bounded by `M * I`.",
      "statement": "theorem eigenvalues_le_imp_le_smul_one [DecidableEq n] (A : HermitianMat n ℂ) (M : ℝ)\n    (h : ∀ i, A.H.eigenvalues i ≤ M) :\n    A ≤ M • (1 : HermitianMat n ℂ)",
      "sorry": false
@@ -5793,7 +5793,7 @@
     {
      "name": "HermitianMat.eigenvalues_nonneg",
      "kind": "theorem",
-     "line": 559,
+     "line": 561,
      "doc": "If a HermitianMat is PSD, then its eigenvalues are nonneg.",
      "statement": "theorem eigenvalues_nonneg [DecidableEq n] (hA : 0 ≤ A) (i : n) :\n    0 ≤ A.H.eigenvalues i",
      "sorry": false
@@ -5801,7 +5801,7 @@
     {
      "name": "HermitianMat.mat_nonneg",
      "kind": "theorem",
-     "line": 566,
+     "line": 568,
      "doc": "If a HermitianMat is PSD, its underlying matrix is nonneg in the Loewner order.",
      "statement": "theorem mat_nonneg (hA : 0 ≤ A) : 0 ≤ A.mat",
      "sorry": false
@@ -5809,7 +5809,7 @@
     {
      "name": "HermitianMat.mat_pos",
      "kind": "theorem",
-     "line": 572,
+     "line": 574,
      "doc": "If a HermitianMat is positive, its underlying matrix is positive in the Loewner order.",
      "statement": "theorem mat_pos (hA : 0 < A) : 0 < A.mat",
      "sorry": false
@@ -5817,7 +5817,7 @@
     {
      "name": "Matrix.nonneg_conjTranspose_mul_self",
      "kind": "theorem",
-     "line": 577,
+     "line": 580,
      "doc": "`Mᴴ * M` is nonneg in the Loewner order, for any matrix `M`.",
      "statement": "theorem _root_.Matrix.nonneg_conjTranspose_mul_self {m : Type*} [Fintype m]\n    (M : Matrix m n 𝕜) : 0 ≤ M.conjTranspose * M",
      "sorry": false
@@ -5825,7 +5825,7 @@
     {
      "name": "Matrix.nonneg_self_mul_conjTranspose",
      "kind": "theorem",
-     "line": 583,
+     "line": 587,
      "doc": "`M * Mᴴ` is nonneg in the Loewner order, for any matrix `M`.",
      "statement": "theorem _root_.Matrix.nonneg_self_mul_conjTranspose {m : Type*} [Fintype m]\n    (M : Matrix n m 𝕜) : 0 ≤ M * M.conjTranspose",
      "sorry": false
@@ -5833,7 +5833,7 @@
     {
      "name": "HermitianMat.subtype_mk_nonneg",
      "kind": "lemma",
-     "line": 589,
+     "line": 593,
      "doc": "",
      "statement": "lemma subtype_mk_nonneg {M : Matrix m m 𝕜} (h : 0 ≤ M) :\n    0 ≤ (⟨M, (Matrix.LE.le.posSemidef h).isHermitian⟩ : HermitianMat m 𝕜)",
      "sorry": false
@@ -5841,7 +5841,7 @@
     {
      "name": "HermitianMat.subtype_mk_pos",
      "kind": "lemma",
-     "line": 595,
+     "line": 599,
      "doc": "",
      "statement": "lemma subtype_mk_pos {M : Matrix m m 𝕜} (h : 0 < M) :\n    0 < (⟨M, (Matrix.LE.le.posSemidef h.le).isHermitian⟩ : HermitianMat m 𝕜)",
      "sorry": false
@@ -5849,7 +5849,7 @@
     {
      "name": "HermitianMat.evalHermitianMatMat",
      "kind": "def",
-     "line": 606,
+     "line": 610,
      "doc": "Positivity extension for `A.mat` where `A : HermitianMat`: nonneg when `0 ≤ A`.",
      "statement": "meta def evalHermitianMatMat : PositivityExt",
      "sorry": false
@@ -5857,7 +5857,7 @@
     {
      "name": "HermitianMat.evalHermitianMatVal",
      "kind": "def",
-     "line": 617,
+     "line": 621,
      "doc": "Positivity extension for `A.mat` where `A : HermitianMat`: nonneg when `0 ≤ A`.",
      "statement": "meta def evalHermitianMatVal : PositivityExt",
      "sorry": false
@@ -5865,7 +5865,7 @@
     {
      "name": "HermitianMat.evalMatrixSelfMulConjTranspose",
      "kind": "def",
-     "line": 630,
+     "line": 634,
      "doc": "Positivity extension for `M * Mᴴ` as a Matrix: always nonneg.",
      "statement": "meta def evalMatrixSelfMulConjTranspose : PositivityExt",
      "sorry": false
@@ -5873,7 +5873,7 @@
     {
      "name": "HermitianMat.evalMatrixConjTransposeMulSelf",
      "kind": "def",
-     "line": 638,
+     "line": 642,
      "doc": "Positivity extension for `Mᴴ * M` as a Matrix: always nonneg.",
      "statement": "meta def evalMatrixConjTransposeMulSelf : PositivityExt",
      "sorry": false
@@ -5881,7 +5881,7 @@
     {
      "name": "HermitianMat.evalHermitianMatMk",
      "kind": "def",
-     "line": 647,
+     "line": 651,
      "doc": "Positivity extension for `⟨M, (pf : M.IsHermitian)⟩` as a HermitianMat:\nequivalent to `0 ≤ M` in `MatrixOrder`.",
      "statement": "meta def evalHermitianMatMk : PositivityExt",
      "sorry": false
@@ -5889,7 +5889,7 @@
     {
      "name": "HermitianMat.evalMatrixEigenvalues",
      "kind": "def",
-     "line": 660,
+     "line": 664,
      "doc": "Positivity extension for eigenvalues of a Matrix: `0 ≤ (_ : M.IsHermitian).eigenvalues i`.\nWill try to prove `0 ≤ M` in the `MatrixOrder`. If the proof is `A.H`, i.e. M comes from a\nHermitianMat, this will give `0 ≤ A.mat` which becomes `0 ≤ A` later.",
      "statement": "meta def evalMatrixEigenvalues : PositivityExt",
      "sorry": false
@@ -8347,11 +8347,11 @@
      "text": "### Weak log-majorization implies sum of powers inequality"
     },
     {
-     "line": 960,
+     "line": 966,
      "text": "## Key singular value inequality for products"
     },
     {
-     "line": 982,
+     "line": 988,
      "text": "## Hölder inequality for singular values"
     }
    ],
@@ -8647,7 +8647,7 @@
     {
      "name": "sub_ge_mul_log_div",
      "kind": "lemma",
-     "line": 909,
+     "line": 915,
      "doc": "",
      "statement": "lemma sub_ge_mul_log_div {a b : ℝ} (ha : 0 < a) (hb : 0 < b) :\n    b - a ≥ a * Real.log (b / a)",
      "sorry": false
@@ -8655,7 +8655,7 @@
     {
      "name": "weak_log_maj_sum_le",
      "kind": "lemma",
-     "line": 914,
+     "line": 920,
      "doc": "",
      "statement": "lemma weak_log_maj_sum_le {n : ℕ}\n    {x y : Fin n → ℝ}\n    (hx_nn : ∀ i, 0 ≤ x i) (hy_nn : ∀ i, 0 ≤ y i)\n    (hx_anti : Antitone x) (hy_anti : Antitone y)\n    (h_log_maj : ∀ (k : ℕ) (_ : k ≤ n),\n      ∏ i : Fin k, x ⟨i.val, by omega⟩ ≤\n      ∏ i : Fin k, y ⟨i.val, by omega⟩) :\n    ∑ i, x i ≤ ∑ i, y i",
      "sorry": false
@@ -8663,7 +8663,7 @@
     {
      "name": "weak_log_maj_sum_rpow_le",
      "kind": "lemma",
-     "line": 944,
+     "line": 950,
      "doc": "Weak log-majorization of nonneg antitone sequences implies the sum of\npowers inequality.",
      "statement": "lemma weak_log_maj_sum_rpow_le {n : ℕ}\n    {x y : Fin n → ℝ}\n    (hx_nn : ∀ i, 0 ≤ x i) (hy_nn : ∀ i, 0 ≤ y i)\n    (hx_anti : Antitone x) (hy_anti : Antitone y)\n    (h_log_maj : ∀ (k : ℕ) (_ : k ≤ n),\n      ∏ i : Fin k, x ⟨i.val, by omega⟩ ≤\n      ∏ i : Fin k, y ⟨i.val, by omega⟩)\n    {r : ℝ} (hr : 0 < r) :\n    ∑ i, x i ^ r ≤ ∑ i, y i ^ r",
      "sorry": false
@@ -8671,7 +8671,7 @@
     {
      "name": "sum_rpow_singularValues_mul_le",
      "kind": "lemma",
-     "line": 962,
+     "line": 968,
      "doc": "",
      "statement": "lemma sum_rpow_singularValues_mul_le (A B : Matrix d d ℂ) {r : ℝ} (hr : 0 < r) :\n    ∑ i : Fin (Fintype.card d), singularValuesSorted (A * B) i ^ r ≤\n    ∑ i : Fin (Fintype.card d),\n      (singularValuesSorted A i ^ r * singularValuesSorted B i ^ r)",
      "sorry": false
@@ -8679,7 +8679,7 @@
     {
      "name": "holder_step_for_singularValues",
      "kind": "lemma",
-     "line": 995,
+     "line": 1001,
      "doc": "The finite-sum Hölder inequality applied to sequences of r-th powers of\nsorted singular values.\n\nWith conjugate exponents `p' = p/r > 1` and `q' = q/r > 1` (which satisfy\n`1/p' + 1/q' = 1` when `1/r = 1/p + 1/q`), this gives:\n  `∑ σ↓ᵢ(A)^r · σ↓ᵢ(B)^r ≤ (∑ σ↓ᵢ(A)^p)^{r/p} · (∑ σ↓ᵢ(B)^q)^{r/q}`\n\nNote: The sums on the RHS don't depend on the ordering, so we can replace\nsorted singular values with unsorted ones.",
      "statement": "lemma holder_step_for_singularValues (A B : Matrix d d ℂ)\n    {r p q : ℝ} (hr : 0 < r) (hp : 0 < p) (hq : 0 < q)\n    (hpqr : 1 / r = 1 / p + 1 / q) :\n    (∑ i : Fin (Fintype.card d),\n      (singularValuesSorted A i ^ r * singularValuesSorted B i ^ r)) ≤\n    (∑ i : Fin (Fintype.card d), singularValuesSorted A i ^ p) ^ (r / p) *\n    (∑ i : Fin (Fintype.card d), singularValuesSorted B i ^ q) ^ (r / q)",
      "sorry": false
@@ -8820,7 +8820,7 @@
     {
      "name": "Matrix.PosSemidef.outer_self_conj",
      "kind": "lemma",
-     "line": 172,
+     "line": 171,
      "doc": "",
      "statement": "lemma outer_self_conj (v : n → 𝕜) : PosSemidef (vecMulVec v (conj v))",
      "sorry": false
@@ -8828,7 +8828,7 @@
     {
      "name": "Matrix.PosSemidef.convex_cone",
      "kind": "lemma",
-     "line": 194,
+     "line": 193,
      "doc": "",
      "statement": "lemma convex_cone {c₁ c₂ : 𝕜} (hc₁ : 0 ≤ c₁) (hc₂ : 0 ≤ c₂) : (c₁ • A + c₂ • B).PosSemidef",
      "sorry": false
@@ -8836,7 +8836,7 @@
     {
      "name": "Matrix.PosSemidef.stdBasisMatrix_iff_eq",
      "kind": "theorem",
-     "line": 200,
+     "line": 199,
      "doc": "A standard basis matrix (with a positive entry) is positive semidefinite iff the entry is on the diagonal.",
      "statement": "theorem stdBasisMatrix_iff_eq (i j : m) {c : 𝕜} (hc : 0 < c) : (single i j c).PosSemidef ↔ i = j",
      "sorry": false
@@ -8844,7 +8844,7 @@
     {
      "name": "Matrix.PosSemidef.PosSemidef_kronecker",
      "kind": "lemma",
-     "line": 253,
+     "line": 252,
      "doc": "",
      "statement": "lemma PosSemidef_kronecker : (A ⊗ₖ B).PosSemidef",
      "sorry": false
@@ -8852,7 +8852,7 @@
     {
      "name": "Matrix.PosSemidef.zero_dotProduct_zero_iff",
      "kind": "lemma",
-     "line": 276,
+     "line": 275,
      "doc": "",
      "statement": "lemma zero_dotProduct_zero_iff : (∀ x : m → 𝕜, 0 = star x ⬝ᵥ A.mulVec x) ↔ A = 0",
      "sorry": false
@@ -8860,7 +8860,7 @@
     {
      "name": "Matrix.PosSemidef.pos_smul",
      "kind": "lemma",
-     "line": 288,
+     "line": 287,
      "doc": "",
      "statement": "lemma pos_smul {c : 𝕜} (hA : (c • A).PosSemidef) (hc : 0 < c) : A.PosSemidef",
      "sorry": false
@@ -8868,7 +8868,7 @@
     {
      "name": "Matrix.PosSemidef.zero_posSemidef_neg_posSemidef_iff",
      "kind": "lemma",
-     "line": 295,
+     "line": 294,
      "doc": "",
      "statement": "lemma zero_posSemidef_neg_posSemidef_iff : A.PosSemidef ∧ (-A).PosSemidef ↔ A = 0",
      "sorry": false
@@ -8876,7 +8876,7 @@
     {
      "name": "Matrix.PosDef.toLin_ker_eq_bot",
      "kind": "lemma",
-     "line": 317,
+     "line": 316,
      "doc": "",
      "statement": "lemma toLin_ker_eq_bot (hA : A.PosDef) : LinearMap.ker A.toLin' = ⊥",
      "sorry": false
@@ -8884,7 +8884,7 @@
     {
      "name": "Matrix.PosDef.of_toLin_ker_eq_bot",
      "kind": "lemma",
-     "line": 323,
+     "line": 322,
      "doc": "",
      "statement": "lemma of_toLin_ker_eq_bot (hA : LinearMap.ker A.toLin' = ⊥) (hA₂ : A.PosSemidef) : A.PosDef",
      "sorry": false
@@ -8892,7 +8892,7 @@
     {
      "name": "Matrix.PosDef.ker_range_antitone",
      "kind": "lemma",
-     "line": 326,
+     "line": 325,
      "doc": "",
      "statement": "lemma ker_range_antitone {d : Type*} [Fintype d] [DecidableEq d] {A B : Matrix d d ℂ}\n  (hA : A.IsHermitian) (hB : B.IsHermitian) :\n    LinearMap.ker A.toEuclideanLin ≤ LinearMap.ker B.toEuclideanLin ↔\n    LinearMap.range B.toEuclideanLin ≤ LinearMap.range A.toEuclideanLin",
      "sorry": false
@@ -8900,7 +8900,7 @@
     {
      "name": "Matrix.PosSemidef.le_of_nonneg_imp",
      "kind": "lemma",
-     "line": 348,
+     "line": 347,
      "doc": "",
      "statement": "lemma le_of_nonneg_imp {R : Type*} [AddCommGroup R] [PartialOrder R] [IsOrderedAddMonoid R]\n    (f : Matrix n n 𝕜 →+ R) (h : ∀ A, A.PosSemidef → 0 ≤ f A) :\n    (A ≤ B → f A ≤ f B)",
      "sorry": false
@@ -8908,7 +8908,7 @@
     {
      "name": "Matrix.PosSemidef.le_of_nonneg_imp'",
      "kind": "lemma",
-     "line": 356,
+     "line": 355,
      "doc": "",
      "statement": "lemma le_of_nonneg_imp' {R : Type*} [AddCommGroup R] [PartialOrder R] [IsOrderedAddMonoid R]\n    {x y : R} (f : R →+ Matrix n n 𝕜) (h : ∀ x, 0 ≤ x → (f x).PosSemidef) :\n    (x ≤ y → f x ≤ f y)",
      "sorry": false
@@ -8916,7 +8916,7 @@
     {
      "name": "Matrix.PosSemidef.mul_mul_conjTranspose_mono",
      "kind": "lemma",
-     "line": 365,
+     "line": 364,
      "doc": "",
      "statement": "lemma mul_mul_conjTranspose_mono (C : Matrix m n 𝕜) :\n  A ≤ B → C * A * C.conjTranspose ≤ C * B * C.conjTranspose",
      "sorry": false
@@ -8924,7 +8924,7 @@
     {
      "name": "Matrix.PosSemidef.conjTranspose_mul_mul_mono",
      "kind": "lemma",
-     "line": 376,
+     "line": 375,
      "doc": "",
      "statement": "lemma conjTranspose_mul_mul_mono (C : Matrix n m 𝕜) :\n  A ≤ B → C.conjTranspose * A * C ≤ C.conjTranspose * B * C",
      "sorry": false
@@ -8932,7 +8932,7 @@
     {
      "name": "Matrix.PosSemidef.nonneg_iff_eigenvalue_nonneg",
      "kind": "lemma",
-     "line": 381,
+     "line": 380,
      "doc": "",
      "statement": "lemma nonneg_iff_eigenvalue_nonneg [DecidableEq n] : 0 ≤ A ↔ ∀ x, 0 ≤ hA.eigenvalues x",
      "sorry": false
@@ -8940,7 +8940,7 @@
     {
      "name": "Matrix.PosSemidef.diag_monotone",
      "kind": "lemma",
-     "line": 385,
+     "line": 384,
      "doc": "",
      "statement": "lemma diag_monotone : Monotone (diag : Matrix n n 𝕜 → (n → 𝕜))",
      "sorry": false
@@ -8948,7 +8948,7 @@
     {
      "name": "Matrix.PosSemidef.diag_mono",
      "kind": "lemma",
-     "line": 389,
+     "line": 388,
      "doc": "",
      "statement": "lemma diag_mono : A ≤ B → ∀ i, A.diag i ≤ B.diag i",
      "sorry": false
@@ -8956,7 +8956,7 @@
     {
      "name": "Matrix.PosSemidef.trace_monotone",
      "kind": "lemma",
-     "line": 391,
+     "line": 390,
      "doc": "",
      "statement": "lemma trace_monotone : Monotone (@trace n 𝕜 _ _)",
      "sorry": false
@@ -8964,7 +8964,7 @@
     {
      "name": "Matrix.PosSemidef.trace_mono",
      "kind": "lemma",
-     "line": 394,
+     "line": 393,
      "doc": "",
      "statement": "lemma trace_mono : A ≤ B → A.trace ≤ B.trace",
      "sorry": false
@@ -8972,7 +8972,7 @@
     {
      "name": "Matrix.PosSemidef.diagonal_monotone",
      "kind": "lemma",
-     "line": 399,
+     "line": 398,
      "doc": "",
      "statement": "lemma diagonal_monotone : Monotone (diagonal : (n → 𝕜) → _)",
      "sorry": false
@@ -8980,7 +8980,7 @@
     {
      "name": "Matrix.PosSemidef.diagonal_mono",
      "kind": "lemma",
-     "line": 403,
+     "line": 402,
      "doc": "",
      "statement": "lemma diagonal_mono {d₁ d₂ : n → 𝕜} : d₁ ≤ d₂ → diagonal d₁ ≤ diagonal d₂",
      "sorry": false
@@ -8988,7 +8988,7 @@
     {
      "name": "Matrix.PosSemidef.diagonal_le_iff",
      "kind": "lemma",
-     "line": 406,
+     "line": 405,
      "doc": "",
      "statement": "lemma diagonal_le_iff {d₁ d₂ : n → 𝕜} : d₁ ≤ d₂ ↔ diagonal d₁ ≤ diagonal d₂",
      "sorry": false
@@ -8996,7 +8996,7 @@
     {
      "name": "Matrix.PosSemidef.le_smul_one_of_eigenvalues_iff",
      "kind": "lemma",
-     "line": 412,
+     "line": 411,
      "doc": "",
      "statement": "lemma le_smul_one_of_eigenvalues_iff (hA : A.IsHermitian) (c : ℝ) :\n  (∀ i, hA.eigenvalues i ≤ c) ↔ A ≤ c • (1 : Matrix n n 𝕜)",
      "sorry": false
@@ -9004,7 +9004,7 @@
     {
      "name": "Matrix.PosSemidef.smul_one_le_of_eigenvalues_iff",
      "kind": "lemma",
-     "line": 449,
+     "line": 448,
      "doc": "",
      "statement": "lemma smul_one_le_of_eigenvalues_iff (hA : A.IsHermitian) (c : ℝ) :\n  (∀ i, c ≤ hA.eigenvalues i) ↔ c • (1 : Matrix n n 𝕜) ≤ A",
      "sorry": false
@@ -9012,7 +9012,7 @@
     {
      "name": "Matrix.traceLeft",
      "kind": "def",
-     "line": 590,
+     "line": 589,
      "doc": "",
      "statement": "def traceLeft (m : Matrix (d × d₁) (d × d₂) R) : Matrix d₁ d₂ R",
      "sorry": false
@@ -9020,7 +9020,7 @@
     {
      "name": "Matrix.traceRight",
      "kind": "def",
-     "line": 593,
+     "line": 592,
      "doc": "",
      "statement": "def traceRight (m : Matrix (d₁ × d) (d₂ × d) R) : Matrix d₁ d₂ R",
      "sorry": false
@@ -9028,7 +9028,7 @@
     {
      "name": "Matrix.traceLeft_trace",
      "kind": "lemma",
-     "line": 598,
+     "line": 597,
      "doc": "",
      "statement": "lemma traceLeft_trace (A : Matrix (d₁ × d₂) (d₁ × d₂) R) : A.traceLeft.trace = A.trace",
      "sorry": false
@@ -9036,7 +9036,7 @@
     {
      "name": "Matrix.traceRight_trace",
      "kind": "lemma",
-     "line": 604,
+     "line": 603,
      "doc": "",
      "statement": "lemma traceRight_trace (A : Matrix (d₁ × d₂) (d₁ × d₂) R) : A.traceRight.trace = A.trace",
      "sorry": false
@@ -9044,7 +9044,7 @@
     {
      "name": "Matrix.IsHermitian.traceLeft",
      "kind": "lemma",
-     "line": 609,
+     "line": 608,
      "doc": "",
      "statement": "lemma IsHermitian.traceLeft {A : Matrix (d × d₁) (d × d₁) R} (hA : A.IsHermitian) : A.traceLeft.IsHermitian",
      "sorry": false
@@ -9052,7 +9052,7 @@
     {
      "name": "Matrix.IsHermitian.traceRight",
      "kind": "lemma",
-     "line": 616,
+     "line": 615,
      "doc": "",
      "statement": "lemma IsHermitian.traceRight {A : Matrix (d₁ × d) (d₁ × d) R} (hA : A.IsHermitian) : A.traceRight.IsHermitian",
      "sorry": false
@@ -9060,7 +9060,7 @@
     {
      "name": "Matrix.trace_mul_kron_one_right",
      "kind": "theorem",
-     "line": 627,
+     "line": 626,
      "doc": "`Tr(M (A ⊗ I)) = Tr(Tr_B(M) A)`",
      "statement": "theorem trace_mul_kron_one_right {R : Type*} [Ring R]\n    (M : Matrix (dA × dB) (dA × dB) R) (A : Matrix dA dA R) :\n    (M * (A ⊗ₖ (1 : Matrix dB dB R))).trace = (M.traceRight * A).trace",
      "sorry": false
@@ -9068,7 +9068,7 @@
     {
      "name": "Matrix.trace_mul_one_kron_right",
      "kind": "theorem",
-     "line": 639,
+     "line": 638,
      "doc": "`Tr(M (I ⊗ B)) = Tr(Tr_A(M) B)`",
      "statement": "theorem trace_mul_one_kron_right {R : Type*} [Ring R]\n    (M : Matrix (dA × dB) (dA × dB) R) (B : Matrix dB dB R) :\n    (M * ((1 : Matrix dA dA R) ⊗ₖ B)).trace = (M.traceLeft * B).trace",
      "sorry": false
@@ -9076,7 +9076,7 @@
     {
      "name": "Matrix.PosSemidef.traceLeft",
      "kind": "lemma",
-     "line": 652,
+     "line": 651,
      "doc": "",
      "statement": "lemma PosSemidef.traceLeft [DecidableEq d₁] (hA : A.PosSemidef) : A.traceLeft.PosSemidef",
      "sorry": false
@@ -9084,7 +9084,7 @@
     {
      "name": "Matrix.PosSemidef.traceRight",
      "kind": "lemma",
-     "line": 663,
+     "line": 662,
      "doc": "",
      "statement": "lemma PosSemidef.traceRight [DecidableEq d₂] (hA : A.PosSemidef) : A.traceRight.PosSemidef",
      "sorry": false
@@ -9092,7 +9092,7 @@
     {
      "name": "Matrix.PosDef.kron",
      "kind": "lemma",
-     "line": 681,
+     "line": 680,
      "doc": "",
      "statement": "lemma PosDef.kron {d₁ d₂ 𝕜 : Type*} [Fintype d₁] [DecidableEq d₁] [Fintype d₂] [DecidableEq d₂] [RCLike 𝕜]\n    {A : Matrix d₁ d₁ 𝕜} {B : Matrix d₂ d₂ 𝕜} (hA : A.PosDef) (hB : B.PosDef) : (A ⊗ₖ B).PosDef",
      "sorry": false
@@ -9100,7 +9100,7 @@
     {
      "name": "Matrix.PosDef.reindex",
      "kind": "lemma",
-     "line": 700,
+     "line": 699,
      "doc": "",
      "statement": "lemma PosDef.reindex {d₁ d₂ 𝕜 : Type*} [Fintype d₁] [DecidableEq d₁] [Fintype d₂] [DecidableEq d₂] [RCLike 𝕜]\n    {M : Matrix d₁ d₁ 𝕜} (hM : M.PosDef) (e : d₁ ≃ d₂) : (M.reindex e e).PosDef",
      "sorry": false
@@ -9108,7 +9108,7 @@
     {
      "name": "Matrix.PosDef.reindex_iff",
      "kind": "lemma",
-     "line": 705,
+     "line": 704,
      "doc": "",
      "statement": "lemma PosDef.reindex_iff {d₁ d₂ 𝕜 : Type*} [Fintype d₁] [DecidableEq d₁] [Fintype d₂] [DecidableEq d₂] [RCLike 𝕜]\n    {M : Matrix d₁ d₁ 𝕜} (e : d₁ ≃ d₂) : (M.reindex e e).PosDef ↔ M.PosDef",
      "sorry": false
@@ -9116,7 +9116,7 @@
     {
      "name": "Matrix.PosSemidef.rsmul",
      "kind": "lemma",
-     "line": 711,
+     "line": 710,
      "doc": "",
      "statement": "lemma PosSemidef.rsmul {n : Type*} [Fintype n] {M : Matrix n n ℂ} (hM : M.PosSemidef) {c : ℝ} (hc : 0 ≤ c) :\n    (c • M).PosSemidef",
      "sorry": false
@@ -9124,7 +9124,7 @@
     {
      "name": "Matrix.PosDef.Convex",
      "kind": "lemma",
-     "line": 721,
+     "line": 720,
      "doc": "",
      "statement": "lemma PosDef.Convex {n 𝕜 : Type*} [Fintype n] [RCLike 𝕜] :\n    Convex ℝ {A : Matrix n n 𝕜 | A.PosDef}",
      "sorry": false
@@ -9132,7 +9132,7 @@
     {
      "name": "Matrix.PosDef_iff_eigenvalues'",
      "kind": "lemma",
-     "line": 740,
+     "line": 739,
      "doc": "",
      "statement": "lemma PosDef_iff_eigenvalues' (M : Matrix d d 𝕜) :\n    M.PosDef ↔ ∃ (h : M.IsHermitian), ∀ i, 0 < h.eigenvalues i",
      "sorry": false
@@ -9140,7 +9140,7 @@
     {
      "name": "Matrix.IsHermitian.cfc_eigenvalues",
      "kind": "lemma",
-     "line": 746,
+     "line": 745,
      "doc": "",
      "statement": "lemma IsHermitian.cfc_eigenvalues {M : Matrix d d 𝕜} (hM : M.IsHermitian) (f : ℝ → ℝ) :\n    ∃ (e : d ≃ d), Matrix.IsHermitian.eigenvalues (cfc_predicate f M) = f ∘ hM.eigenvalues ∘ e",
      "sorry": false
@@ -9148,7 +9148,7 @@
     {
      "name": "Matrix.IsHermitian.eigenvalues_eq_of_unitary_similarity_diagonal",
      "kind": "lemma",
-     "line": 794,
+     "line": 793,
      "doc": "If a Hermitian matrix A is unitarily similar to a diagonal matrix with real entries f, then the eigenvalues of A are a permutation of f.",
      "statement": "lemma IsHermitian.eigenvalues_eq_of_unitary_similarity_diagonal {d 𝕜 : Type*}\n    [Fintype d] [DecidableEq d] [RCLike 𝕜]\n    {A : Matrix d d 𝕜} (hA : A.IsHermitian)\n    {U : Matrix d d 𝕜} (hU : U ∈ Matrix.unitaryGroup d 𝕜)\n    {f : d → ℝ}\n    (h : A = U * Matrix.diagonal (fun i => (RCLike.ofReal (f i) : 𝕜)) * Matrix.conjTranspose U) :\n    ∃ σ : d ≃ d, hA.eigenvalues ∘ σ = f",
      "sorry": false
@@ -9156,7 +9156,7 @@
     {
      "name": "Matrix.toEuclideanLin_one",
      "kind": "lemma",
-     "line": 842,
+     "line": 841,
      "doc": "",
      "statement": "lemma toEuclideanLin_one : Matrix.toEuclideanLin (1 : Matrix n n α) = .id",
      "sorry": false
@@ -9164,7 +9164,7 @@
     {
      "name": "Matrix.cfc_diagonal",
      "kind": "lemma",
-     "line": 856,
+     "line": 855,
      "doc": "",
      "statement": "lemma cfc_diagonal (g : d → ℝ) (f : ℝ → ℝ) :\n    cfc f (Matrix.diagonal (fun x ↦ (g x : 𝕜))) = diagonal (RCLike.ofReal ∘ f ∘ g)",
      "sorry": false

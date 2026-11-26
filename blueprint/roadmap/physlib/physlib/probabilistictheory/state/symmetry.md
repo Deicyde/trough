@@ -8,7 +8,7 @@ proof: formalized
 
 # States under symmetries
 
-The module `Physlib.ProbabilisticTheory.State.Symmetry`, [Physlib/ProbabilisticTheory/State/Symmetry.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Symmetry.lean): 4 declarations, 3 with a docstring.
+The module `Physlib.ProbabilisticTheory.State.Symmetry`, [Physlib/ProbabilisticTheory/State/Symmetry.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Symmetry.lean): 4 declarations, 3 with a docstring.
 
 > Reversible changes of observables act on states by inverse pullback.
 
@@ -27,7 +27,7 @@ The module `Physlib.ProbabilisticTheory.State.Symmetry`, [Physlib/ProbabilisticT
 
 ## A. Reversible action
 
-**`ProbabilisticTheory.State.instMulActionReversible`**, an instance, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Symmetry.lean#L47).
+**`ProbabilisticTheory.State.instMulActionReversible`**, an instance, [line 47](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Symmetry.lean#L47).
 
 > The action on states induced by the inverse of a reversible transformation.
 
@@ -35,7 +35,7 @@ The module `Physlib.ProbabilisticTheory.State.Symmetry`, [Physlib/ProbabilisticT
 instance instMulActionReversible : MulAction (Reversible P P) P.State
 ```
 
-**`ProbabilisticTheory.State.reversible_smul_apply`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Symmetry.lean#L52).
+**`ProbabilisticTheory.State.reversible_smul_apply`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Symmetry.lean#L52).
 
 ```lean
 lemma reversible_smul_apply (φ : Reversible P P) (ω : P.State) (x : P.Observables) :
@@ -44,7 +44,7 @@ lemma reversible_smul_apply (φ : Reversible P P) (ω : P.State) (x : P.Observab
 
 ## B. Invariant states
 
-**`ProbabilisticTheory.State.IsInvariant`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Symmetry.lean#L58).
+**`ProbabilisticTheory.State.IsInvariant`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Symmetry.lean#L58).
 
 > A state is invariant when every transformation of the group action fixes it.
 
@@ -52,7 +52,7 @@ lemma reversible_smul_apply (φ : Reversible P P) (ω : P.State) (x : P.Observab
 def IsInvariant (ω : P.State) (ρ : G →* Reversible P P) : Prop
 ```
 
-**`ProbabilisticTheory.State.IsInvariant.comap`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Symmetry.lean#L61).
+**`ProbabilisticTheory.State.IsInvariant.comap`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Symmetry.lean#L61).
 
 > Pulling back an invariant state along an intertwining channel preserves invariance.
 
@@ -69,4 +69,4 @@ lemma IsInvariant.comap {ρ : G →* Reversible P P} {σ : G →* Reversible Q Q
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/State/Symmetry.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Symmetry.lean)
+- [Physlib/ProbabilisticTheory/State/Symmetry.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/State/Symmetry.lean)

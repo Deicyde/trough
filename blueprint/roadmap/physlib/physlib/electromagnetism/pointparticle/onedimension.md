@@ -8,7 +8,7 @@ proof: formalized
 
 # The electrostatics of a stationary point particle in 1d
 
-The module `Physlib.Electromagnetism.PointParticle.OneDimension`, [Physlib/Electromagnetism/PointParticle/OneDimension.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/OneDimension.lean): 13 declarations, 2 with a docstring.
+The module `Physlib.Electromagnetism.PointParticle.OneDimension`, [Physlib/Electromagnetism/PointParticle/OneDimension.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/PointParticle/OneDimension.lean): 13 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -28,7 +28,7 @@ The module `Physlib.Electromagnetism.PointParticle.OneDimension`, [Physlib/Elect
 
 ## A. The current density
 
-**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticleCurrentDensity`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L62).
+**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticleCurrentDensity`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L61).
 
 > The current density of a point particle stationary at the origin
 > of 1d space.
@@ -38,7 +38,7 @@ noncomputable def oneDimPointParticleCurrentDensity (c : SpeedOfLight) (q : ℝ)
     TempDistLorentzCurrentDensity 1
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticleCurrentDensity_eq_distTranslate`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L66).
+**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticleCurrentDensity_eq_distTranslate`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L65).
 
 ```lean
 lemma oneDimPointParticleCurrentDensity_eq_distTranslate (c : SpeedOfLight) (q : ℝ) (r₀ : Space 1) :
@@ -48,14 +48,14 @@ lemma oneDimPointParticleCurrentDensity_eq_distTranslate (c : SpeedOfLight) (q :
     ((c * q) • diracDelta' ℝ 0 (Lorentz.Vector.basis (Sum.inl 0))))
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticleCurrentDensity_currentDensity`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L77).
+**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticleCurrentDensity_currentDensity`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L76).
 
 ```lean
 lemma oneDimPointParticleCurrentDensity_currentDensity (c : SpeedOfLight) (q : ℝ) (r₀ : Space 1) :
     (oneDimPointParticleCurrentDensity c q r₀).currentDensity c = 0
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticleCurrentDensity_chargeDensity`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L84).
+**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticleCurrentDensity_chargeDensity`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L83).
 
 ```lean
 lemma oneDimPointParticleCurrentDensity_chargeDensity (c : SpeedOfLight) (q : ℝ) (r₀ : Space 1) :
@@ -67,7 +67,7 @@ lemma oneDimPointParticleCurrentDensity_chargeDensity (c : SpeedOfLight) (q : �
 
 ### B.1. The electromagnetic potential
 
-**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L110).
+**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L109).
 
 > The electromagnetic potential of a point particle stationary at `r₀`
 > of 1d space.
@@ -77,7 +77,7 @@ noncomputable def oneDimPointParticle (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space
     TempDistElectromagneticPotential 1
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_eq_distTranslate`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L116).
+**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_eq_distTranslate`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L115).
 
 ```lean
 lemma oneDimPointParticle_eq_distTranslate (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 1) :
@@ -88,7 +88,7 @@ lemma oneDimPointParticle_eq_distTranslate (𝓕 : FreeSpace) (q : ℝ) (r₀ : 
       (by fun_prop))
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_vectorPotential`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L134).
+**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_vectorPotential`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L133).
 
 ```lean
 lemma oneDimPointParticle_vectorPotential (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 1) :
@@ -97,7 +97,7 @@ lemma oneDimPointParticle_vectorPotential (𝓕 : FreeSpace) (q : ℝ) (r₀ : S
 
 ### B.3. The scalar potential
 
-**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_scalarPotential`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L146).
+**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_scalarPotential`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L145).
 
 ```lean
 lemma oneDimPointParticle_scalarPotential (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 1) :
@@ -108,7 +108,7 @@ lemma oneDimPointParticle_scalarPotential (𝓕 : FreeSpace) (q : ℝ) (r₀ : S
 
 ## C. The electric field
 
-**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_electricField`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L169).
+**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_electricField`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L168).
 
 ```lean
 lemma oneDimPointParticle_electricField (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 1) :
@@ -120,7 +120,7 @@ lemma oneDimPointParticle_electricField (𝓕 : FreeSpace) (q : ℝ) (r₀ : Spa
 
 ### C.1. The time derivative of the electric field
 
-**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_electricField_timeDeriv`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L195).
+**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_electricField_timeDeriv`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L194).
 
 ```lean
 lemma oneDimPointParticle_electricField_timeDeriv (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 1) :
@@ -129,7 +129,7 @@ lemma oneDimPointParticle_electricField_timeDeriv (𝓕 : FreeSpace) (q : ℝ) (
 
 ## D. The magnetic field
 
-**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_magneticFieldMatrix`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L206).
+**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_magneticFieldMatrix`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L205).
 
 ```lean
 lemma oneDimPointParticle_magneticFieldMatrix (q : ℝ) (r₀ : Space 1) :
@@ -138,7 +138,7 @@ lemma oneDimPointParticle_magneticFieldMatrix (q : ℝ) (r₀ : Space 1) :
 
 ## E. Maxwell's equations
 
-**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_div_electricField`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L216).
+**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_div_electricField`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L215).
 
 ```lean
 lemma oneDimPointParticle_div_electricField {𝓕} (q : ℝ) (r₀ : Space 1) :
@@ -146,7 +146,7 @@ lemma oneDimPointParticle_div_electricField {𝓕} (q : ℝ) (r₀ : Space 1) :
     (𝓕.μ₀ * 𝓕.c ^ 2) • constantTime (q • diracDelta ℝ r₀)
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_isExterma`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L245).
+**`Electromagnetism.TempDistElectromagneticPotential.oneDimPointParticle_isExterma`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/PointParticle/OneDimension.lean#L244).
 
 ```lean
 lemma oneDimPointParticle_isExterma (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 1) :
@@ -164,4 +164,4 @@ lemma oneDimPointParticle_isExterma (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 1
 
 ## Sources
 
-- [Physlib/Electromagnetism/PointParticle/OneDimension.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/PointParticle/OneDimension.lean)
+- [Physlib/Electromagnetism/PointParticle/OneDimension.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/PointParticle/OneDimension.lean)

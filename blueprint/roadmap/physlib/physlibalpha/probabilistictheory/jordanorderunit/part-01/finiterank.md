@@ -8,7 +8,7 @@ proof: formalized
 
 # Trace and determinant of finite-rank Jordan algebras
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.FiniteRank`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean): 8 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.FiniteRank`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean): 8 declarations, 7 with a docstring.
 
 > Traces on formally real Jordan algebras, their density observables and expectations.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.FiniteRank`, [Physl
 
 ## A. Trace and determinant
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.TraceDeterminant`**, a structure, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean#L58).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.TraceDeterminant`**, a structure, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean#L58).
 
 > A trace and a determinant on a formally real Jordan algebra.
 
@@ -51,7 +51,7 @@ structure TraceDeterminant (E : Type*) [NonAssocCommRing E] [Module ℝ E] where
 
 ## B. Density observables and expectations
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.TraceDeterminant.states`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean#L78).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.TraceDeterminant.states`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean#L78).
 
 > The finite-rank density-observable base: sums of Jordan squares with trace one.
 
@@ -59,7 +59,7 @@ structure TraceDeterminant (E : Type*) [NonAssocCommRing E] [Module ℝ E] where
 def states (τ : TraceDeterminant E) : Set E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.TraceDeterminant.pureStates`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean#L82).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.TraceDeterminant.pureStates`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean#L82).
 
 > A pure finite-rank density observable is an idempotent density observable.
 
@@ -67,7 +67,7 @@ def states (τ : TraceDeterminant E) : Set E
 def pureStates (τ : TraceDeterminant E) : Set E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.TraceDeterminant.expectation`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean#L86).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.TraceDeterminant.expectation`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean#L86).
 
 > Expectation in a finite-rank density observable.
 
@@ -75,14 +75,14 @@ def pureStates (τ : TraceDeterminant E) : Set E
 def expectation (τ : TraceDeterminant E) (ρ : τ.states) : E →ₗ[ℝ] ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.TraceDeterminant.expectation_apply`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean#L92).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.TraceDeterminant.expectation_apply`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean#L92).
 
 ```lean
 lemma expectation_apply (τ : TraceDeterminant E) (ρ : τ.states) (a : E) :
     τ.expectation ρ a = τ.trace ((ρ : E) * a)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.TraceDeterminant.sq_smul_isSumSq`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean#L97).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.TraceDeterminant.sq_smul_isSumSq`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean#L97).
 
 > Square scalar weights preserve the sum-of-squares cone.
 
@@ -90,7 +90,7 @@ lemma expectation_apply (τ : TraceDeterminant E) (ρ : τ.states) (a : E) :
 lemma sq_smul_isSumSq {x : E} (hx : IsSumSq x) (r : ℝ) : IsSumSq ((r * r) • x)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.TraceDeterminant.sq_smul_add_sq_smul_mem_states`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean#L109).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.TraceDeterminant.sq_smul_add_sq_smul_mem_states`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean#L109).
 
 > Square-weighted mixtures remain finite-rank density observables.
 
@@ -101,7 +101,7 @@ lemma sq_smul_add_sq_smul_mem_states (τ : TraceDeterminant E)
     (r * r) • ρ + (s * s) • σ ∈ τ.states
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.TraceDeterminant.expectation_sq_smul_add_sq_smul`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean#L119).
+**`PhyslibAlpha.ProbabilisticTheory.JordanAlgebra.TraceDeterminant.expectation_sq_smul_add_sq_smul`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean#L119).
 
 > Expectations respect square-weighted finite-rank mixtures.
 
@@ -120,4 +120,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean)

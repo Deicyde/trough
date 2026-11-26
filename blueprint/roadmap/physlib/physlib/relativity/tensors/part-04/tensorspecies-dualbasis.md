@@ -8,7 +8,7 @@ proof: formalized
 
 # Species whose bases at dual colors are dual bases
 
-The module `Physlib.Relativity.Tensors.TensorSpecies.DualBasis`, [Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean): 11 declarations, 10 with a docstring.
+The module `Physlib.Relativity.Tensors.TensorSpecies.DualBasis`, [Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean): 11 declarations, 10 with a docstring.
 
 ## i. Overview
 
@@ -52,7 +52,7 @@ The module `Physlib.Relativity.Tensors.TensorSpecies.DualBasis`, [Physlib/Relati
 
 ## A. Matchings satisfying the δ law
 
-**`TensorSpecies.IsContrDualMatching`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L84).
+**`TensorSpecies.IsContrDualMatching`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L84).
 
 > A matching `e` of the basis labels at `S.τ c` with those at `c` satisfies the δ law:
 > contracting a basis vector at `c` with one at `S.τ c` gives `1` if `e` matches their labels and
@@ -63,7 +63,7 @@ def IsContrDualMatching (S : TensorSpecies k C G V basisIdx rep b) (c : C)
     (e : basisIdx (S.τ c) ≃ basisIdx c) : Prop
 ```
 
-**`TensorSpecies.IsContrDualMatching.unique`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L90).
+**`TensorSpecies.IsContrDualMatching.unique`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L90).
 
 > Over a nontrivial ring the δ law determines the matching: the label matched with `x₂` is the
 > one whose basis vector pairs with `b (S.τ c) x₂` to `1`.
@@ -76,7 +76,7 @@ lemma IsContrDualMatching.unique [Nontrivial k] {S : TensorSpecies k C G V basis
 
 ## B. The class
 
-**`TensorSpecies.HasContrDualBases`**, a class, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L106).
+**`TensorSpecies.HasContrDualBases`**, a class, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L106).
 
 > A tensor species whose basis at `S.τ c` is dual to its basis at `c` under the pairing
 > `S.contr c`: for every color some matching of the labels satisfies the δ law.
@@ -90,7 +90,7 @@ class HasContrDualBases (S : TensorSpecies k C G V basisIdx rep b) : Prop where
 
 ## C. The matching
 
-**`TensorSpecies.HasContrDualBases.contrDualIdxEquiv`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L125).
+**`TensorSpecies.HasContrDualBases.contrDualIdxEquiv`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L125).
 
 > A matching of the basis labels at `S.τ c` with those at `c` satisfying the δ law, chosen by
 > `Classical.choose`. Over a nontrivial ring it is the only one
@@ -100,7 +100,7 @@ class HasContrDualBases (S : TensorSpecies k C G V basisIdx rep b) : Prop where
 noncomputable def contrDualIdxEquiv (c : C) : basisIdx (S.τ c) ≃ basisIdx c
 ```
 
-**`TensorSpecies.HasContrDualBases.contr_basis_eq_ite`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L129).
+**`TensorSpecies.HasContrDualBases.contr_basis_eq_ite`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L129).
 
 > The δ law for `contrDualIdxEquiv`.
 
@@ -110,7 +110,7 @@ lemma contr_basis_eq_ite (c : C) (x₁ : basisIdx c) (x₂ : basisIdx (S.τ c)) 
       if x₁ = contrDualIdxEquiv S c x₂ then 1 else 0
 ```
 
-**`TensorSpecies.HasContrDualBases.contrDualIdxEquiv_eq_of_isContrDualMatching`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L136).
+**`TensorSpecies.HasContrDualBases.contrDualIdxEquiv_eq_of_isContrDualMatching`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L136).
 
 > Any matching satisfying the δ law is `contrDualIdxEquiv`. This is how a concrete species
 > identifies its matching.
@@ -121,7 +121,7 @@ lemma contrDualIdxEquiv_eq_of_isContrDualMatching [Nontrivial k] {c : C}
     contrDualIdxEquiv S c = e
 ```
 
-**`TensorSpecies.HasContrDualBases.dualIdxEquiv`**, a def, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L143).
+**`TensorSpecies.HasContrDualBases.dualIdxEquiv`**, a def, [line 143](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L143).
 
 > The equivalence between labels of dual indices: a label at `c1` carried across the variance
 > dual by `contrDualIdxEquiv`, then along `h`.
@@ -130,7 +130,7 @@ lemma contrDualIdxEquiv_eq_of_isContrDualMatching [Nontrivial k] {c : C}
 noncomputable def dualIdxEquiv {c1 c2 : C} (h : S.τ c1 = c2) : basisIdx c1 ≃ basisIdx c2
 ```
 
-**`TensorSpecies.HasContrDualBases.dualIdxEquiv_apply`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L147).
+**`TensorSpecies.HasContrDualBases.dualIdxEquiv_apply`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L147).
 
 ```lean
 lemma dualIdxEquiv_apply {c1 c2 : C} (h : S.τ c1 = c2) (x : basisIdx c1) :
@@ -139,7 +139,7 @@ lemma dualIdxEquiv_apply {c1 c2 : C} (h : S.τ c1 = c2) (x : basisIdx c1) :
 
 ## D. The double dual
 
-**`TensorSpecies.HasContrDualBases.contrDualIdxEquiv_tau`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L159).
+**`TensorSpecies.HasContrDualBases.contrDualIdxEquiv_tau`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L159).
 
 > The matching at `S.τ c` is the inverse of the one at `c`, once `S.τ (S.τ c)` is identified
 > with `c` by `S.τ_τ_apply`. The inverse matching satisfies the δ law at `S.τ c` by
@@ -151,7 +151,7 @@ lemma contrDualIdxEquiv_tau [Nontrivial k] (c : C) (x : basisIdx (S.τ (S.τ c))
       (contrDualIdxEquiv S c).symm (basisIdxCongr (S.τ_τ_apply c) x)
 ```
 
-**`TensorSpecies.HasContrDualBases.dualIdxEquiv_symm`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L174).
+**`TensorSpecies.HasContrDualBases.dualIdxEquiv_symm`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L174).
 
 > The inverse of `dualIdxEquiv` from `c1` to `c2` is `dualIdxEquiv` from `c2` to `c1`.
 
@@ -162,7 +162,7 @@ lemma dualIdxEquiv_symm [Nontrivial k] {c1 c2 : C} (h : S.τ c1 = c2) (h' : S.τ
 
 ## E. The dual basis
 
-**`TensorSpecies.HasContrDualBases.contr_tmul_basis_eq_dualBasis`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L189).
+**`TensorSpecies.HasContrDualBases.contr_tmul_basis_eq_dualBasis`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean#L189).
 
 > The functional `v ↦ S.contr c (v ⊗ₜ b (S.τ c) x)` is the element of `(b c).dualBasis` at the
 > label matched with `x`.
@@ -178,4 +178,4 @@ lemma contr_tmul_basis_eq_dualBasis (c : C) (x : basisIdx (S.τ c)) (v : V c) :
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean)
+- [Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean)

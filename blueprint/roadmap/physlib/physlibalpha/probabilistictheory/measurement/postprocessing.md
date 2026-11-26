@@ -8,7 +8,7 @@ proof: formalized
 
 # Post-processing of measurements
 
-The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Postprocessing`, [PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean): 14 declarations, 10 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Postprocessing`, [PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean): 14 declarations, 10 with a docstring.
 
 > Post-processing of measurements through Markov kernels, the information preorder, and Born laws.
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Postprocessing`, [Physl
 
 ## A. Post-processing
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.IsPostprocessing`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L62).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.IsPostprocessing`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L62).
 
 > `M` is a post-processing of `N`: `M = N ∘ K` for a normal channel `K` between the classical
 > systems of outcomes.
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Measurement.Postprocessing`, [Physl
 def IsPostprocessing (M : Measurement Ω E) (N : Measurement Ω' E) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.postprocessing_refl`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L70).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.postprocessing_refl`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L70).
 
 > Every measurement is a post-processing of itself.
 
@@ -52,7 +52,7 @@ def IsPostprocessing (M : Measurement Ω E) (N : Measurement Ω' E) : Prop
 lemma postprocessing_refl (M : Measurement Ω E) : M ≤ₚ M
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.postprocessing_trans`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L74).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.postprocessing_trans`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L74).
 
 > Post-processing is transitive.
 
@@ -61,7 +61,7 @@ lemma postprocessing_trans {M : Measurement Ω E} {N : Measurement Ω' E}
     {P : Measurement Ω'' E} (hMN : M ≤ₚ N) (hNP : N ≤ₚ P) : M ≤ₚ P
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.isPostprocessing_iff_kernel`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L81).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.isPostprocessing_iff_kernel`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L81).
 
 > Post-processing is post-processing through a Markov kernel.
 
@@ -71,7 +71,7 @@ lemma isPostprocessing_iff_kernel {M : Measurement Ω E} {N : Measurement Ω' E}
       M.toChannel = N.toChannel.comp (ofKernel κ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.PostprocessEquiv`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L88).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.PostprocessEquiv`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L88).
 
 > Two measurements are post-processing equivalent when each is a post-processing of the other.
 
@@ -79,20 +79,20 @@ lemma isPostprocessing_iff_kernel {M : Measurement Ω E} {N : Measurement Ω' E}
 def PostprocessEquiv (M : Measurement Ω E) (N : Measurement Ω' E) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.postprocessEquiv_refl`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L91).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.postprocessEquiv_refl`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L91).
 
 ```lean
 lemma postprocessEquiv_refl (M : Measurement Ω E) : PostprocessEquiv M M
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.postprocessEquiv_symm`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L94).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.postprocessEquiv_symm`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L94).
 
 ```lean
 lemma postprocessEquiv_symm {M : Measurement Ω E} {N : Measurement Ω' E}
     (h : PostprocessEquiv M N) : PostprocessEquiv N M
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.postprocessEquiv_trans`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L98).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.postprocessEquiv_trans`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L98).
 
 ```lean
 lemma postprocessEquiv_trans {M : Measurement Ω E} {N : Measurement Ω' E}
@@ -102,7 +102,7 @@ lemma postprocessEquiv_trans {M : Measurement Ω E} {N : Measurement Ω' E}
 
 ## B. Relabeling outcomes
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.mapOutcome`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L106).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.mapOutcome`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L106).
 
 > Relabel the outcomes of a measurement along a measurable map.
 
@@ -110,14 +110,14 @@ lemma postprocessEquiv_trans {M : Measurement Ω E} {N : Measurement Ω' E}
 def mapOutcome (N : Measurement Ω' E) (f : Ω' → Ω) (hf : Measurable f) : Measurement Ω E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.coe_mapOutcome_apply`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L111).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.coe_mapOutcome_apply`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L111).
 
 ```lean
 lemma coe_mapOutcome_apply (N : Measurement Ω' E) (f : Ω' → Ω) (hf : Measurable f)
     (s : Set Ω) (hs : MeasurableSet s) : (N.mapOutcome f hf s hs : E) = N (f ⁻¹' s) (hf hs)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.mapOutcome_isPostprocessing`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L116).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.mapOutcome_isPostprocessing`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L116).
 
 > Measurable relabeling is deterministic post-processing.
 
@@ -128,7 +128,7 @@ lemma mapOutcome_isPostprocessing (N : Measurement Ω' E) (f : Ω' → Ω) (hf :
 
 ## C. Born laws
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.probabilityLaw_comp`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L124).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.probabilityLaw_comp`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L124).
 
 > The Born law of a post-processing through `K` is the Born law of the original measurement
 > composed with the kernel of `K`.
@@ -140,7 +140,7 @@ lemma probabilityLaw_comp {M : Measurement Ω E} {N : Measurement Ω' E}
     (M.probabilityLaw ω hω : Measure Ω) = toKernel K hK ∘ₘ N.probabilityLaw ω hω
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.IsPostprocessing.probabilityLaw_eq`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L136).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.IsPostprocessing.probabilityLaw_eq`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L136).
 
 > The Born law of a post-processing is the Born law of the original measurement composed with a
 > Markov kernel, the same for every state.
@@ -151,7 +151,7 @@ lemma IsPostprocessing.probabilityLaw_eq {M : Measurement Ω E} {N : Measurement
       (hω : ω.IsNormal), (M.probabilityLaw ω hω : Measure Ω) = κ ∘ₘ N.probabilityLaw ω hω
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Measurement.probabilityLaw_mapOutcome`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L143).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.probabilityLaw_mapOutcome`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean#L143).
 
 > Relabeling outcomes pushes each Born law forward along the relabeling map.
 
@@ -168,4 +168,4 @@ lemma probabilityLaw_mapOutcome (N : Measurement Ω' E) (f : Ω' → Ω) (hf : M
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean)

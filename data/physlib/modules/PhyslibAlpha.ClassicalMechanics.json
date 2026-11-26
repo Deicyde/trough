@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
  "modules": [
   {
    "file": "PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean",
@@ -482,7 +482,7 @@
      "text": "## B. Analyticity and derivatives"
     },
     {
-     "line": 132,
+     "line": 120,
      "text": "## C. The local minimum at the origin"
     }
    ],
@@ -530,7 +530,7 @@
     {
      "name": "couplingPotential_posDef",
      "kind": "lemma",
-     "line": 142,
+     "line": 130,
      "doc": "",
      "statement": "lemma couplingPotential_posDef :\n    (iteratedFDerivQuadraticMap couplingPotential\n    (!₂[0, 0] : EuclideanSpace ℝ (Fin 2))).PosDef",
      "sorry": false
@@ -538,7 +538,7 @@
     {
      "name": "coupled_spring_potential",
      "kind": "lemma",
-     "line": 153,
+     "line": 141,
      "doc": "",
      "statement": "lemma coupled_spring_potential :\n    let U := fun x : EuclideanSpace ℝ (Fin 2) => (x 0)^2 + x 0 * x 1 + (x 1)^2\n    IsLocalMin U {\n        ofLp := ![0,0]\n    }",
      "sorry": false
@@ -3755,6 +3755,96 @@
     }
    ],
    "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/BinaryStar.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.BinaryStar",
+   "title": "The Newtonian two-body reduction",
+   "doc": "The center of mass and relative displacement of two stars in an inertial frame.\n\n## i. Overview\n\nAn equivalence with `Fin 2` labels the two particle occurrences. Their center of mass moves\nuniformly in the absence of external forces. Together with the relative displacement, the center\nof mass determines both positions. If their internal forces are the pairwise Newtonian\nforces, the relative displacement from star zero to star one satisfies the Kepler equation at\neach time of positive separation. The gravitational parameter is `G` times the sum of the masses.\nFor positive `G` the relative acceleration points towards zero displacement.\nIn two dimensions the signed specific angular momentum remains constant on collision-free\nintervals. The relative position then sweeps out equal signed areas in equal times.\n\n## ii. Key results\n\n- `centerOfMass_eq_of_two_particles` gives the mass-weighted position of the binary.\n- `positions_eq_centerOfMass_relativePosition` recovers both positions from the center of mass\n  and the displacement from the first particle to the second.\n- `hasDerivAt_deriv_relativePosition_of_gravity` gives the relative acceleration.\n- `binarySignedSweptArea_eq_of_eq_duration` gives Kepler's second law for a planar binary.\n\n## iii. Table of contents\n\n- A. The center of mass of a binary\n- B. Relative motion under gravity\n- C. Kepler's second law\n\n## iv. References\n\n* [ref: goldstein_classicalmechanics], Chapter 3.",
+   "copyright": "2026 Qianli Ma",
+   "sections": [
+    {
+     "line": 60,
+     "text": "## A. The center of mass of a binary"
+    },
+    {
+     "line": 84,
+     "text": "## B. Relative motion under gravity"
+    },
+    {
+     "line": 140,
+     "text": "## C. Kepler's second law"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.PointParticle.NewtonianSystem.centerOfMass_eq_of_two_particles",
+     "kind": "lemma",
+     "line": 65,
+     "doc": "The center of mass of two labelled particles, in the system's frame coordinates.",
+     "statement": "lemma centerOfMass_eq_of_two_particles (t : ℝ) :\n    system.centerOfMass t = ((e 0).mass.val + (e 1).mass.val)⁻¹ •\n      ((e 0).mass.val • (e 0).pos t + (e 1).mass.val • (e 1).pos t)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PointParticle.NewtonianSystem.positions_eq_centerOfMass_relativePosition",
+     "kind": "lemma",
+     "line": 74,
+     "doc": "The two positions are recovered from their center of mass and relative displacement.\nEach offset from the center of mass is weighted by the other particle's mass.",
+     "statement": "lemma positions_eq_centerOfMass_relativePosition (t : ℝ) :\n    let r := (e 1).pos t - (e 0).pos t\n    let M := (e 0).mass.val + (e 1).mass.val\n    (e 0).pos t = system.centerOfMass t - ((e 1).mass.val / M) • r ∧\n      (e 1).pos t = system.centerOfMass t + ((e 0).mass.val / M) • r",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PointParticle.NewtonianSystem.hasDerivAt_deriv_relativePosition_of_gravity",
+     "kind": "lemma",
+     "line": 110,
+     "doc": "At a collision-free time the relative displacement of two mutually gravitating particles\nsatisfies the Kepler equation with gravitational parameter `G` times their total mass.",
+     "statement": "lemma hasDerivAt_deriv_relativePosition_of_gravity\n    (hi : system.internalForces = gravityForces G system.particles)\n    (he : system.externalForces = 0) {t : ℝ} (hne : (e 1).pos t ≠ (e 0).pos t) :\n    let r := fun s => (e 1).pos s - (e 0).pos s\n    HasDerivAt (deriv r)\n      (-(G * ((e 0).mass.val + (e 1).mass.val) / ‖r t‖ ^ 3) • r t) t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PointParticle.NewtonianSystem.binarySpecificAngularMomentum",
+     "kind": "def",
+     "line": 151,
+     "doc": "The signed angular momentum per unit reduced mass of the relative motion.",
+     "statement": "def binarySpecificAngularMomentum (t : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PointParticle.NewtonianSystem.binarySignedSweptArea",
+     "kind": "def",
+     "line": 159,
+     "doc": "The signed area swept by the relative displacement over the oriented time interval.",
+     "statement": "def binarySignedSweptArea (u v : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PointParticle.NewtonianSystem.binarySpecificAngularMomentum_eq_of_gravity",
+     "kind": "lemma",
+     "line": 194,
+     "doc": "The signed specific angular momentum is constant on a collision-free interval.",
+     "statement": "lemma binarySpecificAngularMomentum_eq_of_gravity {a b t : ℝ}\n    (hsep : ∀ s ∈ Icc a b, (e 1).pos s ≠ (e 0).pos s) (ht : t ∈ Icc a b) :\n    system.binarySpecificAngularMomentum e t = system.binarySpecificAngularMomentum e a",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PointParticle.NewtonianSystem.binarySignedSweptArea_eq_of_gravity",
+     "kind": "lemma",
+     "line": 206,
+     "doc": "On a collision-free interval, the area swept per unit time is half the signed specific\nangular momentum.",
+     "statement": "lemma binarySignedSweptArea_eq_of_gravity {a b u v : ℝ}\n    (hsep : ∀ t ∈ Icc a b, (e 1).pos t ≠ (e 0).pos t) (hu : u ∈ Icc a b) (hv : v ∈ Icc a b) :\n    system.binarySignedSweptArea e u v =\n      (v - u) * (system.binarySpecificAngularMomentum e a / 2)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PointParticle.NewtonianSystem.binarySignedSweptArea_eq_of_eq_duration",
+     "kind": "lemma",
+     "line": 222,
+     "doc": "Kepler's second law for a binary. Equal time intervals of the same collision-free motion\nsweep out equal signed areas.",
+     "statement": "lemma binarySignedSweptArea_eq_of_eq_duration {a b u v u' v' : ℝ}\n    (hsep : ∀ t ∈ Icc a b, (e 1).pos t ≠ (e 0).pos t)\n    (hu : u ∈ Icc a b) (hv : v ∈ Icc a b) (hu' : u' ∈ Icc a b) (hv' : v' ∈ Icc a b)\n    (hduration : v - u = v' - u') :\n    system.binarySignedSweptArea e u v = system.binarySignedSweptArea e u' v'",
+     "sorry": false
+    }
+   ],
+   "private": 2,
    "aliases": 0,
    "informal": 0
   },
@@ -7098,7 +7188,7 @@
      "text": "## B. Particles in the inertial frame"
     },
     {
-     "line": 247,
+     "line": 243,
      "text": "## C. The Lagrange solution"
     }
    ],
@@ -7106,9 +7196,9 @@
     {
      "name": "ClassicalMechanics.LagrangeOrbit.exists_lagrange_equilateral_solution",
      "kind": "lemma",
-     "line": 282,
+     "line": 277,
      "doc": "The Lagrange relative equilibrium for three positive masses in a planar inertial frame.\nThe labelled particles move on a rigid equilateral triangle about their mass barycentre,\nwith a positive common period obeying Kepler's third law.",
-     "statement": "public lemma exists_lagrange_equilateral_solution (frame : ReferenceFrame 2) [Fact frame.IsInertial]\n    (hG : 0 < G) (hℓ : 0 < ℓ) :\n    ∃ (system : NewtonianSystem 2) (e : Fin 3 ≃ system.Particle) (T : ℝ),\n      system.frame = frame ∧\n      system.internalForces = gravityForces G system.particles ∧\n      system.externalForces = 0 ∧\n      (∀ i, (e i).mass = m i) ∧\n      (∀ t, ∑ i, (m i).val • (e i).pos t = 0) ∧\n      (∀ t i j, i ≠ j → ‖(e i).pos t - (e j).pos t‖ = ℓ) ∧\n      (∀ i, Function.Periodic (e i).pos T) ∧\n      (∃ plane : ℂ ≃ₗᵢ[ℝ] system.frame.Vector, ∀ t i,\n        (e i).pos t = plane (rotation (Circle.exp (2 * Real.pi / T * t))\n          (plane.symm ((e i).pos 0)))) ∧\n      0 < T ∧ T ^ 2 * (G * ∑ i, (m i).val) = 4 * Real.pi ^ 2 * ℓ ^ 3",
+     "statement": "public lemma exists_lagrange_equilateral_solution (frame : ReferenceFrame 2)\n    (hframe : frame.IsInertial) (hG : 0 < G) (hℓ : 0 < ℓ) :\n    ∃ (system : NewtonianSystem 2) (e : Fin 3 ≃ system.Particle) (T : ℝ),\n      system.frame = frame ∧\n      system.internalForces = gravityForces G system.particles ∧\n      system.externalForces = 0 ∧\n      (∀ i, (e i).mass = m i) ∧\n      (∀ t, ∑ i, (m i).val • (e i).pos t = 0) ∧\n      (∀ t i j, i ≠ j → ‖(e i).pos t - (e j).pos t‖ = ℓ) ∧\n      (∀ i, Function.Periodic (e i).pos T) ∧\n      (∃ plane : ℂ ≃ₗᵢ[ℝ] system.frame.Vector, ∀ t i,\n        (e i).pos t = plane (rotation (Circle.exp (2 * Real.pi / T * t))\n          (plane.symm ((e i).pos 0)))) ∧\n      0 < T ∧ T ^ 2 * (G * ∑ i, (m i).val) = 4 * Real.pi ^ 2 * ℓ ^ 3",
      "sorry": false
     }
    ],
@@ -7128,7 +7218,7 @@
      "text": "## A. Gravitational forces and acceleration"
     },
     {
-     "line": 160,
+     "line": 159,
      "text": "## B. Newtonian systems under gravity"
     }
    ],
@@ -7202,13 +7292,13 @@
      "kind": "lemma",
      "line": 145,
      "doc": "In an inertial frame, the gravitational acceleration equation is equivalent to Newton's\nsecond law for the constructed internal forces.",
-     "statement": "lemma acceleration_eq_gravity_iff [Fact frame.IsInertial]\n    (target : particles) (t : ℝ) :\n    target.1.acceleration t = gravityAcceleration G particles target t ↔\n      netForce target (gravityForces G particles) 0 t =\n        target.1.mass • target.1.acceleration t",
+     "statement": "lemma acceleration_eq_gravity_iff (target : particles) (t : ℝ) :\n    target.1.acceleration t = gravityAcceleration G particles target t ↔\n      netForce target (gravityForces G particles) 0 t =\n        target.1.mass • target.1.acceleration t",
      "sorry": false
     },
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.ofGravity",
      "kind": "def",
-     "line": 170,
+     "line": 169,
      "doc": "Bundle particles that follow the gravitational equations of motion as a Newtonian system\nwith no external forces. The inverse-square law describes the motion at collision-free times.",
      "statement": "def ofGravity (G : ℝ) (particles : Multiset frame.Particle)\n    (motion : ∀ (target : particles) (t : ℝ),\n      target.1.acceleration t = gravityAcceleration G particles target t) :\n    NewtonianSystem d",
      "sorry": false

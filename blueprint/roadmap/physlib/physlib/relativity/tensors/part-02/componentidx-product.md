@@ -8,7 +8,7 @@ proof: formalized
 
 # Products of component indices
 
-The module `Physlib.Relativity.Tensors.ComponentIdx.Product`, [Physlib/Relativity/Tensors/ComponentIdx/Product.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Product.lean): 7 declarations, 3 with a docstring.
+The module `Physlib.Relativity.Tensors.ComponentIdx.Product`, [Physlib/Relativity/Tensors/ComponentIdx/Product.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComponentIdx/Product.lean): 7 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -28,7 +28,7 @@ The module `Physlib.Relativity.Tensors.ComponentIdx.Product`, [Physlib/Relativit
 
 ## A. Product equivalence
 
-**`TensorSpecies.Tensor.ComponentIdx.prod`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Product.lean#L55).
+**`TensorSpecies.Tensor.ComponentIdx.prod`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComponentIdx/Product.lean#L55).
 
 > The equivalence between `ComponentIdx (Fin.append c c1)` and
 > `ComponentIdx c × ComponentIdx c1` formed by products.
@@ -39,7 +39,7 @@ def ComponentIdx.prod {n1 n2 : ℕ} {c : Fin n1 → C} {c1 : Fin n2 → C} :
       ComponentIdx (S := S) c × ComponentIdx (S := S) c1
 ```
 
-**`TensorSpecies.Tensor.ComponentIdx.prod_apply_fst`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Product.lean#L68).
+**`TensorSpecies.Tensor.ComponentIdx.prod_apply_fst`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComponentIdx/Product.lean#L68).
 
 ```lean
 lemma ComponentIdx.prod_apply_fst {n1 n2 : ℕ} {c : Fin n1 → C} {c1 : Fin n2 → C}
@@ -48,7 +48,7 @@ lemma ComponentIdx.prod_apply_fst {n1 n2 : ℕ} {c : Fin n1 → C} {c1 : Fin n2 
       basisIdxCongr (by simp) (p (Fin.castAdd n2 i))
 ```
 
-**`TensorSpecies.Tensor.ComponentIdx.prod_apply_snd`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Product.lean#L73).
+**`TensorSpecies.Tensor.ComponentIdx.prod_apply_snd`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComponentIdx/Product.lean#L73).
 
 ```lean
 lemma ComponentIdx.prod_apply_snd {n1 n2 : ℕ} {c : Fin n1 → C} {c1 : Fin n2 → C}
@@ -57,7 +57,7 @@ lemma ComponentIdx.prod_apply_snd {n1 n2 : ℕ} {c : Fin n1 → C} {c1 : Fin n2 
       basisIdxCongr (by simp) (p (Fin.natAdd n1 i))
 ```
 
-**`TensorSpecies.Tensor.ComponentIdx.prod_symm_natAdd`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Product.lean#L79).
+**`TensorSpecies.Tensor.ComponentIdx.prod_symm_natAdd`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComponentIdx/Product.lean#L79).
 
 ```lean
 lemma ComponentIdx.prod_symm_natAdd {n1 n2 : ℕ} {c : Fin n1 → C} {c1 : Fin n2 → C}
@@ -66,7 +66,7 @@ lemma ComponentIdx.prod_symm_natAdd {n1 n2 : ℕ} {c : Fin n1 → C} {c1 : Fin n
       basisIdxCongr (by simp) (q i)
 ```
 
-**`TensorSpecies.Tensor.ComponentIdx.prod_symm_castAdd`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Product.lean#L85).
+**`TensorSpecies.Tensor.ComponentIdx.prod_symm_castAdd`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComponentIdx/Product.lean#L85).
 
 ```lean
 lemma ComponentIdx.prod_symm_castAdd {n1 n2 : ℕ} {c : Fin n1 → C} {c1 : Fin n2 → C}
@@ -75,7 +75,7 @@ lemma ComponentIdx.prod_symm_castAdd {n1 n2 : ℕ} {c : Fin n1 → C} {c1 : Fin 
       basisIdxCongr (by simp) (p i)
 ```
 
-**`TensorSpecies.Tensor.ComponentIdx.prod_symm_heq_castAdd`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Product.lean#L92).
+**`TensorSpecies.Tensor.ComponentIdx.prod_symm_heq_castAdd`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComponentIdx/Product.lean#L92).
 
 > `ComponentIdx.prod_symm_castAdd` at a slot only propositionally equal to `Fin.castAdd n2 a`,
 > up to `HEq`.
@@ -86,7 +86,7 @@ lemma ComponentIdx.prod_symm_heq_castAdd {n1 n2 : ℕ} {c : Fin n1 → C} {c1 : 
     (hx : x = Fin.castAdd n2 a) : ComponentIdx.prod.symm (p, q) x ≍ p a
 ```
 
-**`TensorSpecies.Tensor.ComponentIdx.prod_symm_heq_natAdd`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Product.lean#L101).
+**`TensorSpecies.Tensor.ComponentIdx.prod_symm_heq_natAdd`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComponentIdx/Product.lean#L101).
 
 > `ComponentIdx.prod_symm_natAdd` at a slot only propositionally equal to `Fin.natAdd n1 a`,
 > up to `HEq`.
@@ -103,4 +103,4 @@ lemma ComponentIdx.prod_symm_heq_natAdd {n1 n2 : ℕ} {c : Fin n1 → C} {c1 : F
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/ComponentIdx/Product.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx/Product.lean)
+- [Physlib/Relativity/Tensors/ComponentIdx/Product.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComponentIdx/Product.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Properties of the γ matrices
 
-The module `PhyslibAlpha.Particles.QED.GammaMatrices`, [PhyslibAlpha/Particles/QED/GammaMatrices.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GammaMatrices.lean): 10 declarations, 8 with a docstring.
+The module `PhyslibAlpha.Particles.QED.GammaMatrices`, [PhyslibAlpha/Particles/QED/GammaMatrices.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GammaMatrices.lean): 10 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.Particles.QED.GammaMatrices`, [PhyslibAlpha/Particles/Q
 > with `σ̄^μ = η_{μμ} σ^μ` (no sum).  Both reduce to the anticommutation
 > relations of the Pauli matrices.
 
-**`QED.JetAlgebra.pauliMatrix_mul_smul_add_swap`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L68).
+**`QED.JetAlgebra.pauliMatrix_mul_smul_add_swap`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L68).
 
 ```lean
 lemma pauliMatrix_mul_smul_add_swap (μ ν : Fin 1 ⊕ Fin 3) :
@@ -53,7 +53,7 @@ lemma pauliMatrix_mul_smul_add_swap (μ ν : Fin 1 ⊕ Fin 3) :
       (2 * η μ ν) • (1 : Matrix (Fin 2) (Fin 2) ℂ)
 ```
 
-**`QED.JetAlgebra.smul_pauliMatrix_mul_add_swap`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L75).
+**`QED.JetAlgebra.smul_pauliMatrix_mul_add_swap`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L75).
 
 ```lean
 lemma smul_pauliMatrix_mul_add_swap (μ ν : Fin 1 ⊕ Fin 3) :
@@ -63,7 +63,7 @@ lemma smul_pauliMatrix_mul_add_swap (μ ν : Fin 1 ⊕ Fin 3) :
 
 ## B. The Clifford algebra relation
 
-**`QED.JetAlgebra.gammaMatrix_mul_add_swap`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L92).
+**`QED.JetAlgebra.gammaMatrix_mul_add_swap`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L92).
 
 > **The Clifford algebra relation** of the Dirac γ matrices:
 > `γ^μ γ^ν + γ^ν γ^μ = 2 η^{μν} 1`.  This is the algebraic identity that
@@ -76,7 +76,7 @@ lemma gammaMatrix_mul_add_swap (μ ν : Fin 1 ⊕ Fin 3) :
       (2 * η μ ν) • (1 : Matrix (Fin 2 ⊕ Fin 2) (Fin 2 ⊕ Fin 2) ℂ)
 ```
 
-**`QED.JetAlgebra.gammaMatrix_sq`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L107).
+**`QED.JetAlgebra.gammaMatrix_sq`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L107).
 
 > The square of a γ matrix: `(γ^μ)² = η^{μμ} 1` (no sum).
 
@@ -86,7 +86,7 @@ lemma gammaMatrix_sq (μ : Fin 1 ⊕ Fin 3) :
       (η μ μ) • (1 : Matrix (Fin 2 ⊕ Fin 2) (Fin 2 ⊕ Fin 2) ℂ)
 ```
 
-**`QED.JetAlgebra.gammaMatrix_anticommute`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L117).
+**`QED.JetAlgebra.gammaMatrix_anticommute`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L117).
 
 > The γ matrices of distinct indices anticommute.
 
@@ -97,7 +97,7 @@ lemma gammaMatrix_anticommute {μ ν : Fin 1 ⊕ Fin 3} (h : μ ≠ ν) :
 
 ## C. Hermiticity
 
-**`QED.JetAlgebra.gammaMatrix_inl_zero`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L131).
+**`QED.JetAlgebra.gammaMatrix_inl_zero`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L131).
 
 > `γ⁰` in the chiral representation is the block off-diagonal identity.
 
@@ -106,7 +106,7 @@ lemma gammaMatrix_inl_zero :
     gammaMatrix (Sum.inl 0) = Matrix.fromBlocks 0 1 1 0
 ```
 
-**`QED.JetAlgebra.kineticGamma_eq_gammaMatrix_mul`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L137).
+**`QED.JetAlgebra.kineticGamma_eq_gammaMatrix_mul`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L137).
 
 > The contraction matrices of the kinetic term are `γ⁰ γ^μ`.
 
@@ -115,7 +115,7 @@ lemma kineticGamma_eq_gammaMatrix_mul (μ : Fin 1 ⊕ Fin 3) :
     kineticGamma μ = gammaMatrix (Sum.inl 0) * gammaMatrix μ
 ```
 
-**`QED.JetAlgebra.kineticGamma_conjTranspose`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L145).
+**`QED.JetAlgebra.kineticGamma_conjTranspose`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L145).
 
 > The contraction matrices `γ⁰ γ^μ` of the kinetic term are self-adjoint;
 > this is what makes the Dirac kinetic term hermitian up to a total
@@ -126,7 +126,7 @@ lemma kineticGamma_conjTranspose (μ : Fin 1 ⊕ Fin 3) :
     (kineticGamma μ)ᴴ = kineticGamma μ
 ```
 
-**`QED.JetAlgebra.gammaMatrix_zero_conjTranspose`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L152).
+**`QED.JetAlgebra.gammaMatrix_zero_conjTranspose`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L152).
 
 > `γ⁰` is self-adjoint.
 
@@ -135,7 +135,7 @@ lemma gammaMatrix_zero_conjTranspose :
     (gammaMatrix (Sum.inl 0))ᴴ = gammaMatrix (Sum.inl 0)
 ```
 
-**`QED.JetAlgebra.gammaMatrix_conjTranspose`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L158).
+**`QED.JetAlgebra.gammaMatrix_conjTranspose`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GammaMatrices.lean#L158).
 
 > The hermiticity relation of the γ matrices, `(γ^μ)† = γ⁰ γ^μ γ⁰`.
 
@@ -151,4 +151,4 @@ lemma gammaMatrix_conjTranspose (μ : Fin 1 ⊕ Fin 3) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/QED/GammaMatrices.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/GammaMatrices.lean)
+- [PhyslibAlpha/Particles/QED/GammaMatrices.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/QED/GammaMatrices.lean)

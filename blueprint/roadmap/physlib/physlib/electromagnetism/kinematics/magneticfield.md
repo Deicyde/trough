@@ -8,7 +8,7 @@ proof: formalized
 
 # The Magnetic Field (Kinematics/MagneticField)
 
-The module `Physlib.Electromagnetism.Kinematics.MagneticField`, [Physlib/Electromagnetism/Kinematics/MagneticField.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean): 23 declarations, 4 with a docstring.
+The module `Physlib.Electromagnetism.Kinematics.MagneticField`, [Physlib/Electromagnetism/Kinematics/MagneticField.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean): 23 declarations, 4 with a docstring.
 
 ## i. Overview
 
@@ -34,7 +34,7 @@ The module `Physlib.Electromagnetism.Kinematics.MagneticField`, [Physlib/Electro
 
 ## A. The magnetic field
 
-**`Electromagnetism.ElectromagneticPotential.magneticField`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L79).
+**`Electromagnetism.ElectromagneticPotential.magneticField`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L79).
 
 > The magnetic field from the electromagnetic potential.
 
@@ -43,7 +43,7 @@ noncomputable def magneticField (c : SpeedOfLight := 1) (A : ElectromagneticPote
     MagneticField
 ```
 
-**`Electromagnetism.ElectromagneticPotential.magneticField_eq`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L83).
+**`Electromagnetism.ElectromagneticPotential.magneticField_eq`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L83).
 
 ```lean
 lemma magneticField_eq {c : SpeedOfLight} (A : ElectromagneticPotential) :
@@ -52,7 +52,7 @@ lemma magneticField_eq {c : SpeedOfLight} (A : ElectromagneticPotential) :
 
 ### A.1. Relation between the magnetic field and the field strength tensor
 
-**`Electromagnetism.ElectromagneticPotential.magneticField_coord_eq_toFieldStrength_eval`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L92).
+**`Electromagnetism.ElectromagneticPotential.magneticField_coord_eq_toFieldStrength_eval`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L92).
 
 ```lean
 lemma magneticField_coord_eq_toFieldStrength_eval {i : Fin 3} {c : SpeedOfLight}
@@ -64,7 +64,7 @@ lemma magneticField_coord_eq_toFieldStrength_eval {i : Fin 3} {c : SpeedOfLight}
 
 ### A.2. Divergence of the magnetic field
 
-**`Electromagnetism.ElectromagneticPotential.magneticField_div_eq_zero`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L116).
+**`Electromagnetism.ElectromagneticPotential.magneticField_div_eq_zero`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L116).
 
 ```lean
 lemma magneticField_div_eq_zero (A : ElectromagneticPotential)
@@ -73,7 +73,7 @@ lemma magneticField_div_eq_zero (A : ElectromagneticPotential)
 
 ### A.4. The magnetic field on constructors
 
-**`Electromagnetism.ElectromagneticPotential.ofScalarPotential_magneticField`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L130).
+**`Electromagnetism.ElectromagneticPotential.ofScalarPotential_magneticField`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L130).
 
 > A scalar-only potential produces no magnetic field.
 
@@ -83,7 +83,7 @@ lemma ofScalarPotential_magneticField (c : SpeedOfLight)
     (ofScalarPotential c φ).magneticField c = 0
 ```
 
-**`Electromagnetism.ElectromagneticPotential.ofElectromagneticField_magneticField`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L139).
+**`Electromagnetism.ElectromagneticPotential.ofElectromagneticField_magneticField`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L139).
 
 > The magnetic field of the electromagnetic potential created from the electric field
 > `E` and the magnetic field `B` is `B`, as long as Gauss's law is satisfied.
@@ -97,7 +97,7 @@ lemma ofElectromagneticField_magneticField {c : SpeedOfLight}
 
 ## B. The components of the field strength tensor in terms of the electric and magnetic fields
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_eq_electric_magnetic`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L159).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_eq_electric_magnetic`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L159).
 
 ```lean
 lemma toFieldStrength_eval_eq_electric_magnetic {c} (A : ElectromagneticPotential) (t : Time)
@@ -120,7 +120,7 @@ lemma toFieldStrength_eval_eq_electric_magnetic {c} (A : ElectromagneticPotentia
     | 2, 2 => 0
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_eq_electric_magnetic_of_spaceTime`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L189).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_eq_electric_magnetic_of_spaceTime`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L189).
 
 ```lean
 lemma toFieldStrength_eval_eq_electric_magnetic_of_spaceTime (c : SpeedOfLight)
@@ -147,7 +147,7 @@ lemma toFieldStrength_eval_eq_electric_magnetic_of_spaceTime (c : SpeedOfLight)
 
 ## C. Magnetic field matrix
 
-**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix`**, a def, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L222).
+**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix`**, a def, [line 222](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L222).
 
 > The matrix corresponding to the magnetic field in general dimensions.
 > In `3` space-dimensions this reduces to a vector.
@@ -157,7 +157,7 @@ noncomputable def magneticFieldMatrix (c : SpeedOfLight := 1) (A : Electromagnet
     Time → Space d → (Fin d × Fin d) → ℝ
 ```
 
-**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_eq`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L226).
+**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_eq`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L226).
 
 ```lean
 lemma magneticFieldMatrix_eq {c : SpeedOfLight} (A : ElectromagneticPotential d) :
@@ -166,7 +166,7 @@ lemma magneticFieldMatrix_eq {c : SpeedOfLight} (A : ElectromagneticPotential d)
         [Sum.inr ij.1] [Sum.inr ij.2]}ᵀ
 ```
 
-**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_inr_inr_eq_magneticFieldMatrix`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L231).
+**`Electromagnetism.ElectromagneticPotential.toFieldStrength_eval_inr_inr_eq_magneticFieldMatrix`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L231).
 
 ```lean
 lemma toFieldStrength_eval_inr_inr_eq_magneticFieldMatrix {c : SpeedOfLight}
@@ -178,7 +178,7 @@ lemma toFieldStrength_eval_inr_inr_eq_magneticFieldMatrix {c : SpeedOfLight}
 
 ### C.1. Antisymmetry of the magnetic field matrix
 
-**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_antisymm`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L244).
+**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_antisymm`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L244).
 
 ```lean
 lemma magneticFieldMatrix_antisymm {c : SpeedOfLight}
@@ -187,7 +187,7 @@ lemma magneticFieldMatrix_antisymm {c : SpeedOfLight}
     A.magneticFieldMatrix c t x (i, j) = - A.magneticFieldMatrix c t x (j, i)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_diag_eq_zero`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L251).
+**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_diag_eq_zero`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L251).
 
 ```lean
 lemma magneticFieldMatrix_diag_eq_zero {c : SpeedOfLight}
@@ -198,7 +198,7 @@ lemma magneticFieldMatrix_diag_eq_zero {c : SpeedOfLight}
 
 ### C.2. Magnetic field in terms of the magnetic field matrix
 
-**`Electromagnetism.ElectromagneticPotential.magneticField_eq_magneticFieldMatrix`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L263).
+**`Electromagnetism.ElectromagneticPotential.magneticField_eq_magneticFieldMatrix`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L263).
 
 ```lean
 lemma magneticField_eq_magneticFieldMatrix {c : SpeedOfLight} (A : ElectromagneticPotential)
@@ -207,7 +207,7 @@ lemma magneticField_eq_magneticFieldMatrix {c : SpeedOfLight} (A : Electromagnet
       - A.magneticFieldMatrix c t x ((i+1), (i+2))
 ```
 
-**`Electromagnetism.ElectromagneticPotential.magneticField_curl_eq_magneticFieldMatrix`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L270).
+**`Electromagnetism.ElectromagneticPotential.magneticField_curl_eq_magneticFieldMatrix`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L270).
 
 ```lean
 lemma magneticField_curl_eq_magneticFieldMatrix{c : SpeedOfLight} (A : ElectromagneticPotential)
@@ -217,7 +217,7 @@ lemma magneticField_curl_eq_magneticFieldMatrix{c : SpeedOfLight} (A : Electroma
 
 ### C.3. Magnetic field matrix in terms of vector potentials
 
-**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_eq_vectorPotential`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L291).
+**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_eq_vectorPotential`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L291).
 
 ```lean
 lemma magneticFieldMatrix_eq_vectorPotential {c : SpeedOfLight} (A : ElectromagneticPotential d)
@@ -228,7 +228,7 @@ lemma magneticFieldMatrix_eq_vectorPotential {c : SpeedOfLight} (A : Electromagn
 
 ### C.4. Smoothness of the magnetic field matrix
 
-**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_contDiff`**, a lemma, [line 314](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L314).
+**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_contDiff`**, a lemma, [line 314](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L314).
 
 ```lean
 lemma magneticFieldMatrix_contDiff {n} {c : SpeedOfLight} (A : ElectromagneticPotential d)
@@ -236,7 +236,7 @@ lemma magneticFieldMatrix_contDiff {n} {c : SpeedOfLight} (A : ElectromagneticPo
     ContDiff ℝ n ↿(fun t x => A.magneticFieldMatrix c t x ij)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_space_contDiff`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L320).
+**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_space_contDiff`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L320).
 
 ```lean
 lemma magneticFieldMatrix_space_contDiff {n} {c : SpeedOfLight} (A : ElectromagneticPotential d)
@@ -246,7 +246,7 @@ lemma magneticFieldMatrix_space_contDiff {n} {c : SpeedOfLight} (A : Electromagn
 
 ### C.5. Differentiablity of the magnetic field matrix
 
-**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_differentiable`**, a lemma, [line 332](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L332).
+**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_differentiable`**, a lemma, [line 332](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L332).
 
 ```lean
 lemma magneticFieldMatrix_differentiable {c : SpeedOfLight} (A : ElectromagneticPotential d)
@@ -255,7 +255,7 @@ lemma magneticFieldMatrix_differentiable {c : SpeedOfLight} (A : Electromagnetic
 
 ### C.6. Spatial derivative of the magnetic field matrix
 
-**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_space_deriv_eq`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L342).
+**`Electromagnetism.ElectromagneticPotential.magneticFieldMatrix_space_deriv_eq`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L342).
 
 ```lean
 lemma magneticFieldMatrix_space_deriv_eq {c : SpeedOfLight} (A : ElectromagneticPotential d)
@@ -267,7 +267,7 @@ lemma magneticFieldMatrix_space_deriv_eq {c : SpeedOfLight} (A : Electromagnetic
 
 ### C.7. Temporal derivative of the magnetic field matrix
 
-**`Electromagnetism.ElectromagneticPotential.time_deriv_magneticFieldMatrix`**, a lemma, [line 369](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L369).
+**`Electromagnetism.ElectromagneticPotential.time_deriv_magneticFieldMatrix`**, a lemma, [line 369](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L369).
 
 ```lean
 lemma time_deriv_magneticFieldMatrix {d : ℕ} {c : SpeedOfLight} (A : ElectromagneticPotential d)
@@ -276,7 +276,7 @@ lemma time_deriv_magneticFieldMatrix {d : ℕ} {c : SpeedOfLight} (A : Electroma
     ∂[i] (A.electricField c t · j) x - ∂[j] (A.electricField c t · i) x
 ```
 
-**`Electromagnetism.ElectromagneticPotential.time_deriv_time_deriv_magneticFieldMatrix`**, a lemma, [line 405](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L405).
+**`Electromagnetism.ElectromagneticPotential.time_deriv_time_deriv_magneticFieldMatrix`**, a lemma, [line 405](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L405).
 
 ```lean
 lemma time_deriv_time_deriv_magneticFieldMatrix {d : ℕ} {c : SpeedOfLight}
@@ -289,7 +289,7 @@ lemma time_deriv_time_deriv_magneticFieldMatrix {d : ℕ} {c : SpeedOfLight}
 
 ### C.8. `curl` of the magnetic field matrix
 
-**`Electromagnetism.ElectromagneticPotential.curl_magneticFieldMatrix_eq_electricField_toFieldStrength_eval`**, a lemma, [line 432](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L432).
+**`Electromagnetism.ElectromagneticPotential.curl_magneticFieldMatrix_eq_electricField_toFieldStrength_eval`**, a lemma, [line 432](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean#L432).
 
 ```lean
 lemma curl_magneticFieldMatrix_eq_electricField_toFieldStrength_eval {d : ℕ} {c : SpeedOfLight}
@@ -307,4 +307,4 @@ lemma curl_magneticFieldMatrix_eq_electricField_toFieldStrength_eval {d : ℕ} {
 
 ## Sources
 
-- [Physlib/Electromagnetism/Kinematics/MagneticField.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/MagneticField.lean)
+- [Physlib/Electromagnetism/Kinematics/MagneticField.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/Kinematics/MagneticField.lean)

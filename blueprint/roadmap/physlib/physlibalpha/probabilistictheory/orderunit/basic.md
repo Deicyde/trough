@@ -8,7 +8,7 @@ proof: formalized
 
 # Ordered vector spaces and order units (PhyslibAlpha)
 
-The module `PhyslibAlpha.ProbabilisticTheory.OrderUnit.Basic`, [PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean): 6 declarations, 6 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.OrderUnit.Basic`, [PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean): 6 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.OrderUnit.Basic`, [PhyslibAlpha/Pro
 
 ## A. Ordered vector spaces and order-unit elements
 
-**`PhyslibAlpha.ProbabilisticTheory.OrderedVectorSpace`**, a class, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean#L56).
+**`PhyslibAlpha.ProbabilisticTheory.OrderedVectorSpace`**, a class, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean#L56).
 
 > An ordered real vector space.
 
@@ -43,7 +43,7 @@ class OrderedVectorSpace (E : Type*) extends AddCommGroup E, PartialOrder E, Mod
     IsOrderedAddMonoid E, PosSMulMono ℝ E
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.OrderUnitSpace`**, a class, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean#L62).
+**`PhyslibAlpha.ProbabilisticTheory.OrderUnitSpace`**, a class, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean#L62).
 
 > An ordered real vector space whose distinguished element `1` is an order unit: it is
 > nonnegative, and every element is bounded above by a natural multiple of it. No multiplication is
@@ -59,7 +59,7 @@ class OrderUnitSpace (E : Type*) extends OrderedVectorSpace E, One E where
 
 ## B. Consequences of being an order unit
 
-**`PhyslibAlpha.ProbabilisticTheory.OrderUnitSpace.exists_two_sided_bound`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean#L79).
+**`PhyslibAlpha.ProbabilisticTheory.OrderUnitSpace.exists_two_sided_bound`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean#L79).
 
 > Every element is bounded on both sides by a natural multiple of the order unit.
 
@@ -67,7 +67,7 @@ class OrderUnitSpace (E : Type*) extends OrderedVectorSpace E, One E where
 lemma exists_two_sided_bound (A : E) : ∃ n : ℕ, -(n • (1 : E)) ≤ A ∧ A ≤ n • (1 : E)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.OrderUnitSpace.exists_eq_sub_nonneg`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean#L86).
+**`PhyslibAlpha.ProbabilisticTheory.OrderUnitSpace.exists_eq_sub_nonneg`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean#L86).
 
 > Every element is a difference of two positive elements.
 
@@ -75,7 +75,7 @@ lemma exists_two_sided_bound (A : E) : ∃ n : ℕ, -(n • (1 : E)) ≤ A ∧ A
 lemma exists_eq_sub_nonneg (A : E) : ∃ Ap An : E, 0 ≤ Ap ∧ 0 ≤ An ∧ A = Ap - An
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.OrderUnitSpace.exists_real_shift_nonneg`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean#L94).
+**`PhyslibAlpha.ProbabilisticTheory.OrderUnitSpace.exists_real_shift_nonneg`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean#L94).
 
 > Every element becomes nonnegative after adding enough copies of the order unit: the positive
 > cone reaches everywhere, once you're allowed to shift by the unit.
@@ -84,7 +84,7 @@ lemma exists_eq_sub_nonneg (A : E) : ∃ Ap An : E, 0 ≤ Ap ∧ 0 ≤ An ∧ A 
 lemma exists_real_shift_nonneg (A : E) : ∃ r : ℝ, 0 ≤ r • (1 : E) + A
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.OrderedVectorSpace.nonneg_add_eq_zero`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean#L108).
+**`PhyslibAlpha.ProbabilisticTheory.OrderedVectorSpace.nonneg_add_eq_zero`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean#L108).
 
 > A nonnegative vector that adds with another nonnegative vector to `0` is itself `0`: the
 > positive cone meets its negation only at `0`.
@@ -99,4 +99,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean)
+- [PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Basic.lean)

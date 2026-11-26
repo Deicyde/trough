@@ -8,7 +8,7 @@ proof: formalized
 
 # A sum rule for multipole transitions
 
-The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.MultipoleSumRule`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/MultipoleSumRule.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/MultipoleSumRule.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.MultipoleSumRule`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/MultipoleSumRule.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/MultipoleSumRule.lean): 2 declarations, 2 with a docstring.
 
 > `Σ_{μ M_f} ⟨J_i M_i λ μ | J_f M_f⟩² = (2J_f + 1) / (2J_i + 1)`, independent of `M_i`.
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.MultipoleSumRule`, [Ph
 
 ## A. The cyclic symmetry
 
-**`PhyslibAlpha.Sl2.wigner3j_cycle`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/MultipoleSumRule.lean#L66).
+**`PhyslibAlpha.Sl2.wigner3j_cycle`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/MultipoleSumRule.lean#L66).
 
 > `(j₁ j₂ J; m₁ m₂ -M) = (j₂ J j₁; m₂ -M m₁)` in the parameters of
 > `ClebschGordanCoefficients`: the new triple is `(n, m + n - 2k)` with `k' = n - k`, `l' = m - α`,
@@ -59,7 +59,7 @@ lemma wigner3j_cycle {k l α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n) (hl : l �
 
 ## B. The sum rule
 
-**`PhyslibAlpha.Sl2.sum_sq_cgCoefficient_initial`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/MultipoleSumRule.lean#L89).
+**`PhyslibAlpha.Sl2.sum_sq_cgCoefficient_initial`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/MultipoleSumRule.lean#L89).
 
 > **Sum rule for multipole transitions.** With `j₁ = m/2 = J_i`, `j₂ = n/2 = λ`,
 > `J = (m + n)/2 - k = J_f` and `m₁ = j₁ - α = M_i`,
@@ -78,4 +78,4 @@ lemma sum_sq_cgCoefficient_initial (hmn : 0 < m + n) {k α : ℕ} (hkm : k ≤ m
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/AngularMomentum/MultipoleSumRule.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/MultipoleSumRule.lean)
+- [PhyslibAlpha/QuantumMechanics/AngularMomentum/MultipoleSumRule.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/MultipoleSumRule.lean)

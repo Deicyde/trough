@@ -8,7 +8,7 @@ proof: formalized
 
 # Completeness of the eigenfunctions of the Harmonic Oscillator
 
-The module `Physlib.QuantumMechanics.HarmonicOscillator.OneDimension.Completeness`, [Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean): 13 declarations, 4 with a docstring, 1 listed as significant.
+The module `Physlib.QuantumMechanics.HarmonicOscillator.OneDimension.Completeness`, [Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean): 13 declarations, 4 with a docstring, 1 listed as significant.
 
 > Completeness of the eigenfunctions follows from Plancherel's theorem.
 >
@@ -19,14 +19,14 @@ The module `Physlib.QuantumMechanics.HarmonicOscillator.OneDimension.Completenes
 >   Part of this is using the concept of `dominated_convergence`.
 > 2. Use 'Plancherel's theorem' to show that `f` is zero.
 
-**`QuantumMechanics.OneDimension.HarmonicOscillator.mul_eigenfunction_integrable`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L45).
+**`QuantumMechanics.OneDimension.HarmonicOscillator.mul_eigenfunction_integrable`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L45).
 
 ```lean
 lemma mul_eigenfunction_integrable (f : ℝ → ℂ) (hf : MemHS f) :
     MeasureTheory.Integrable (fun x => Q.eigenfunction n x * f x)
 ```
 
-**`QuantumMechanics.OneDimension.HarmonicOscillator.mul_physHermite_integrable`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L62).
+**`QuantumMechanics.OneDimension.HarmonicOscillator.mul_physHermite_integrable`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L62).
 
 ```lean
 lemma mul_physHermite_integrable (f : ℝ → ℂ) (hf : MemHS f) (n : ℕ) :
@@ -34,7 +34,7 @@ lemma mul_physHermite_integrable (f : ℝ → ℂ) (hf : MemHS f) (n : ℕ) :
       (f x * ↑(Real.exp (- x ^ 2 / (2 * Q.ξ^2)))))
 ```
 
-**`QuantumMechanics.OneDimension.HarmonicOscillator.mul_polynomial_integrable`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L88).
+**`QuantumMechanics.OneDimension.HarmonicOscillator.mul_polynomial_integrable`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L88).
 
 ```lean
 lemma mul_polynomial_integrable (f : ℝ → ℂ) (hf : MemHS f) (P : Polynomial ℤ) :
@@ -42,7 +42,7 @@ lemma mul_polynomial_integrable (f : ℝ → ℂ) (hf : MemHS f) (P : Polynomial
       (f x * Real.exp (- x^2 / (2 * Q.ξ^2)))) volume
 ```
 
-**`QuantumMechanics.OneDimension.HarmonicOscillator.mul_power_integrable`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L117).
+**`QuantumMechanics.OneDimension.HarmonicOscillator.mul_power_integrable`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L117).
 
 ```lean
 lemma mul_power_integrable (f : ℝ → ℂ) (hf : MemHS f) (r : ℕ) :
@@ -51,7 +51,7 @@ lemma mul_power_integrable (f : ℝ → ℂ) (hf : MemHS f) (r : ℕ) :
 
 ## Orthogonality conditions
 
-**`QuantumMechanics.OneDimension.HarmonicOscillator.orthogonal_eigenfunction_of_mem_orthogonal`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L145).
+**`QuantumMechanics.OneDimension.HarmonicOscillator.orthogonal_eigenfunction_of_mem_orthogonal`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L145).
 
 ```lean
 lemma orthogonal_eigenfunction_of_mem_orthogonal (f : ℝ → ℂ) (hf : MemHS f)
@@ -59,7 +59,7 @@ lemma orthogonal_eigenfunction_of_mem_orthogonal (f : ℝ → ℂ) (hf : MemHS f
     (n : ℕ) : ∫ (x : ℝ), Q.eigenfunction n x * f x = 0
 ```
 
-**`QuantumMechanics.OneDimension.HarmonicOscillator.orthogonal_physHermite_of_mem_orthogonal`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L159).
+**`QuantumMechanics.OneDimension.HarmonicOscillator.orthogonal_physHermite_of_mem_orthogonal`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L159).
 
 ```lean
 lemma orthogonal_physHermite_of_mem_orthogonal (f : ℝ → ℂ) (hf : MemHS f)
@@ -68,7 +68,7 @@ lemma orthogonal_physHermite_of_mem_orthogonal (f : ℝ → ℂ) (hf : MemHS f)
     = 0
 ```
 
-**`QuantumMechanics.OneDimension.HarmonicOscillator.orthogonal_polynomial_of_mem_orthogonal`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L189).
+**`QuantumMechanics.OneDimension.HarmonicOscillator.orthogonal_polynomial_of_mem_orthogonal`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L189).
 
 ```lean
 lemma orthogonal_polynomial_of_mem_orthogonal (f : ℝ → ℂ) (hf : MemHS f)
@@ -77,7 +77,7 @@ lemma orthogonal_polynomial_of_mem_orthogonal (f : ℝ → ℂ) (hf : MemHS f)
     ∫ x : ℝ, (P (x /Q.ξ)) * (f x * Real.exp (- x^2 / (2 * Q.ξ^2))) = 0
 ```
 
-**`QuantumMechanics.OneDimension.HarmonicOscillator.orthogonal_power_of_mem_orthogonal`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L230).
+**`QuantumMechanics.OneDimension.HarmonicOscillator.orthogonal_power_of_mem_orthogonal`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L230).
 
 > If `f` is a function `ℝ → ℂ` satisfying `MemHS f` such that it is orthogonal
 > to all `eigenfunction n` then it is orthogonal to
@@ -92,7 +92,7 @@ lemma orthogonal_power_of_mem_orthogonal (f : ℝ → ℂ) (hf : MemHS f)
     (r : ℕ) : ∫ x : ℝ, (x ^ r * (f x * Real.exp (- x^2 / (2 * Q.ξ^2)))) = 0
 ```
 
-**`QuantumMechanics.OneDimension.HarmonicOscillator.orthogonal_exp_of_mem_orthogonal`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L270).
+**`QuantumMechanics.OneDimension.HarmonicOscillator.orthogonal_exp_of_mem_orthogonal`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L270).
 
 > If `f` is a function `ℝ → ℂ` satisfying `MemHS f` such that it is orthogonal
 > to all `eigenfunction n` then it is orthogonal to
@@ -111,7 +111,7 @@ lemma orthogonal_exp_of_mem_orthogonal (f : ℝ → ℂ) (hf : MemHS f)
     (f x * Real.exp (- x^2 / (2 * Q.ξ^2))) = 0
 ```
 
-**`QuantumMechanics.OneDimension.HarmonicOscillator.fourierIntegral_zero_of_mem_orthogonal`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L373).
+**`QuantumMechanics.OneDimension.HarmonicOscillator.fourierIntegral_zero_of_mem_orthogonal`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L373).
 
 > If `f` is a function `ℝ → ℂ` satisfying `MemHS f` such that it is orthogonal
 > to all `eigenfunction n` then the fourier transform of
@@ -128,7 +128,7 @@ lemma fourierIntegral_zero_of_mem_orthogonal (f : ℝ → ℂ) (hf : MemHS f)
     𝓕 (fun x => f x * Real.exp (- x^2 / (2 * Q.ξ^2))) = 0
 ```
 
-**`QuantumMechanics.OneDimension.HarmonicOscillator.zero_of_orthogonal_mk`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L390).
+**`QuantumMechanics.OneDimension.HarmonicOscillator.zero_of_orthogonal_mk`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L390).
 
 ```lean
 lemma zero_of_orthogonal_mk (f : ℝ → ℂ) (hf : MemHS f)
@@ -138,7 +138,7 @@ lemma zero_of_orthogonal_mk (f : ℝ → ℂ) (hf : MemHS f)
     HilbertSpace.mk hf = 0
 ```
 
-**`QuantumMechanics.OneDimension.HarmonicOscillator.zero_of_orthogonal_eigenVector`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L427).
+**`QuantumMechanics.OneDimension.HarmonicOscillator.zero_of_orthogonal_eigenVector`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L427).
 
 ```lean
 lemma zero_of_orthogonal_eigenVector (f : HilbertSpace)
@@ -147,7 +147,7 @@ lemma zero_of_orthogonal_eigenVector (f : HilbertSpace)
       eLpNorm (𝓕 f) 2 volume = eLpNorm f 2 volume) : f = 0
 ```
 
-**`QuantumMechanics.OneDimension.HarmonicOscillator.eigenfunction_completeness`**, a theorem, [line 446](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L446). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`QuantumMechanics.OneDimension.HarmonicOscillator.eigenfunction_completeness`**, a theorem, [line 446](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean#L446). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Assuming Plancherel's theorem (which is not yet in Mathlib),
 > the topological closure of the span of the eigenfunctions of the harmonic oscillator
@@ -178,4 +178,4 @@ theorem eigenfunction_completeness
 
 ## Sources
 
-- [Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean)
+- [Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean)

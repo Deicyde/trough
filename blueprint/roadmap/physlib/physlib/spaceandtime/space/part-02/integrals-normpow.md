@@ -8,7 +8,7 @@ proof: formalized
 
 # Integrability of norm powers on subsets of Space
 
-The module `Physlib.SpaceAndTime.Space.Integrals.NormPow`, [Physlib/SpaceAndTime/Space/Integrals/NormPow.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean): 8 declarations, 6 with a docstring; 2 private, not shown.
+The module `Physlib.SpaceAndTime.Space.Integrals.NormPow`, [Physlib/SpaceAndTime/Space/Integrals/NormPow.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean): 8 declarations, 6 with a docstring; 2 private, not shown.
 
 ## i. Overview
 
@@ -33,7 +33,7 @@ The module `Physlib.SpaceAndTime.Space.Integrals.NormPow`, [Physlib/SpaceAndTime
 
 > * None.
 
-**`Space.radial_jacobian_zpow_mul_self`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean#L52).
+**`Space.radial_jacobian_zpow_mul_self`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean#L52).
 
 ```lean
 lemma radial_jacobian_zpow_mul_self
@@ -42,7 +42,7 @@ lemma radial_jacobian_zpow_mul_self
     r ^ (d - 1) * (r ^ q * r) = r ^ p
 ```
 
-**`Space.radial_norm_power_spherical_integral_eq_space_integral`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean#L82).
+**`Space.radial_norm_power_spherical_integral_eq_space_integral`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean#L82).
 
 ```lean
 lemma radial_norm_power_spherical_integral_eq_space_integral
@@ -56,7 +56,7 @@ lemma radial_norm_power_spherical_integral_eq_space_integral
         ∂(volume (α := Space d).toSphere)
 ```
 
-**`Space.integrableOn_norm_rpow_ball_iff`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean#L106).
+**`Space.integrableOn_norm_rpow_ball_iff`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean#L106).
 
 > The function `x ↦ ‖x‖ᵖ` is integrable on `{x : Space d | 0 ≤ ‖x‖ < b}` iff `0 < d + p`.
 
@@ -65,7 +65,7 @@ lemma integrableOn_norm_rpow_ball_iff {d : ℕ} [NeZero d] {b : ℝ} (hb : 0 < b
     IntegrableOn (fun x : Space d ↦ ‖x‖ ^ p) (Metric.ball 0 b) ↔ 0 < d + p
 ```
 
-**`Space.integrableOn_norm_rpow_ball_compl_iff`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean#L133).
+**`Space.integrableOn_norm_rpow_ball_compl_iff`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean#L133).
 
 > The function `x ↦ ‖x‖ᵖ` is integrable on `{x : Space d | 0 < a ≤ ‖x‖}` iff `d + p < 0`.
 
@@ -74,7 +74,7 @@ lemma integrableOn_norm_rpow_ball_compl_iff {d : ℕ} [NeZero d] {a : ℝ} (ha :
     IntegrableOn (fun x : Space d ↦ ‖x‖ ^ p) (Metric.ball 0 a)ᶜ ↔ d + p < 0
 ```
 
-**`Space.integrableOn_norm_rpow_shell`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean#L154).
+**`Space.integrableOn_norm_rpow_shell`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean#L154).
 
 > The function `x ↦ ‖x‖ᵖ` is integrable on the shell `{x : Space d | 0 < a ≤ ‖x‖ ∧ ‖x‖ < b}`.
 
@@ -83,7 +83,7 @@ lemma integrableOn_norm_rpow_shell {d : ℕ} {a : ℝ} (ha : 0 < a) (b p : ℝ) 
     IntegrableOn (fun x : Space d ↦ ‖x‖ ^ p) ((Metric.ball 0 b) ∩ (Metric.ball 0 a)ᶜ)
 ```
 
-**`Space.integrableOn_norm_rpow_iff_of_isBounded_nhds`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean#L176).
+**`Space.integrableOn_norm_rpow_iff_of_isBounded_nhds`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean#L176).
 
 > The function `x ↦ ‖x‖ᵖ` is integrable on a bounded neighborhood of the origin
 > iff `0 < d + p`.
@@ -94,7 +94,7 @@ lemma integrableOn_norm_rpow_iff_of_isBounded_nhds {d : ℕ} [NeZero d] {s : Set
     IntegrableOn (fun x : Space d ↦ ‖x‖ ^ p) s ↔ 0 < d + p
 ```
 
-**`Space.integrableOn_norm_rpow_of_isBounded_compl_nhds`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean#L186).
+**`Space.integrableOn_norm_rpow_of_isBounded_compl_nhds`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean#L186).
 
 > The function `x ↦ ‖x‖ᵖ` is integrable on a bounded subset with the origin in its exterior.
 
@@ -104,7 +104,7 @@ lemma integrableOn_norm_rpow_of_isBounded_compl_nhds {d : ℕ} {s : Set (Space d
     IntegrableOn (fun x : Space d ↦ ‖x‖ ^ p) s
 ```
 
-**`Space.integrableOn_norm_rpow_of_compl_nhds`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean#L196).
+**`Space.integrableOn_norm_rpow_of_compl_nhds`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean#L196).
 
 > The function `x ↦ ‖x‖ᵖ` is integrable on a subset with the origin in its exterior provided
 > the decay at infinity is fast enough.
@@ -124,4 +124,4 @@ lemma integrableOn_norm_rpow_of_compl_nhds {d : ℕ} [NeZero d] {s : Set (Space 
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/Integrals/NormPow.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean)
+- [Physlib/SpaceAndTime/Space/Integrals/NormPow.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Space/Integrals/NormPow.lean)

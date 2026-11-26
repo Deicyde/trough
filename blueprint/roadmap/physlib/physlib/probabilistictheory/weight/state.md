@@ -8,7 +8,7 @@ proof: formalized
 
 # States from normalized weights
 
-The module `Physlib.ProbabilisticTheory.Weight.State`, [Physlib/ProbabilisticTheory/Weight/State.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Weight/State.lean): 3 declarations, 3 with a docstring.
+The module `Physlib.ProbabilisticTheory.Weight.State`, [Physlib/ProbabilisticTheory/Weight/State.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Weight/State.lean): 3 declarations, 3 with a docstring.
 
 > Finite normalized weights correspond exactly to states.
 
@@ -26,7 +26,7 @@ The module `Physlib.ProbabilisticTheory.Weight.State`, [Physlib/ProbabilisticThe
 
 ## A. From a normalized weight to a state
 
-**`Weight.IsState.toState`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Weight/State.lean#L51).
+**`Weight.IsState.toState`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Weight/State.lean#L51).
 
 > A finite normalized weight extends to a state.
 
@@ -34,7 +34,7 @@ The module `Physlib.ProbabilisticTheory.Weight.State`, [Physlib/ProbabilisticThe
 noncomputable def IsState.toState (hw : w.IsState) : P.State
 ```
 
-**`Weight.IsState.toState_apply`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Weight/State.lean#L58).
+**`Weight.IsState.toState_apply`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Weight/State.lean#L58).
 
 > The extended state agrees with the weight on positive observables.
 
@@ -44,7 +44,7 @@ lemma IsState.toState_apply (hw : w.IsState) (A : PosCone P) : hw.toState A = (w
 
 ## B. The equivalence
 
-**`Weight.stateEquiv`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Weight/State.lean#L68).
+**`Weight.stateEquiv`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Weight/State.lean#L68).
 
 > Finite normalized weights correspond exactly to states.
 
@@ -59,4 +59,4 @@ noncomputable def stateEquiv : {w : Weight P // w.IsState} ≃ P.State
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/Weight/State.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Weight/State.lean)
+- [Physlib/ProbabilisticTheory/Weight/State.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/Weight/State.lean)

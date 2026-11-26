@@ -7,13 +7,13 @@ navigation: transparent
 - [Unit for complex Lorentz vectors (ComplexTensor/Units/Pre)](complextensor-units-pre.md)
 - [Physlib.Relativity.Tensors.ComplexTensor.Units.Symm](complextensor-units-symm.md)
 
-Modules in [ComplexTensor/Vector/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Vector):
+Modules in [ComplexTensor/Vector/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Vector):
 
 - [Complex Lorentz vectors](complextensor-vector-basic.md)
 - [Contraction of Lorentz vectors](complextensor-vector-contraction.md)
 - [Physlib.Relativity.Tensors.ComplexTensor.Vector.Modules](complextensor-vector-modules.md)
 
-Modules in [ComponentIdx/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComponentIdx):
+Modules in [ComponentIdx/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComponentIdx):
 
 - [Component indices](componentidx-basic.md)
 - [Contractions of component indices](componentidx-contraction.md)
@@ -22,12 +22,12 @@ Modules in [ComponentIdx/](https://github.com/leanprover-community/physlib/tree/
 - [Products of component indices](componentidx-product.md)
 - [Component indices for one-index tensors](componentidx-single.md)
 
-Modules in [Conjugation/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Conjugation):
+Modules in [Conjugation/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Conjugation):
 
 - [Conjugation structure on a tensor species](conjugation-basic.md)
 - [The inverse of a rank-two tensor](conjugation-inverse.md)
 
-Modules in [Contraction/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction):
+Modules in [Contraction/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Contraction):
 
 - [Contractions on tensors](contraction-basic.md)
 - [Contractions on basis tensors](contraction-basis.md)

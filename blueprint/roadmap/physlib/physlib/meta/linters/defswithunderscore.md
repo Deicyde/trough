@@ -8,7 +8,7 @@ proof: formalized
 
 # Physlib exemptions for the `defsWithUnderscore` linter
 
-The module `Physlib.Meta.Linters.DefsWithUnderscore`, [Physlib/Meta/Linters/DefsWithUnderscore.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Linters/DefsWithUnderscore.lean): 5 declarations, 5 with a docstring.
+The module `Physlib.Meta.Linters.DefsWithUnderscore`, [Physlib/Meta/Linters/DefsWithUnderscore.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Linters/DefsWithUnderscore.lean): 5 declarations, 5 with a docstring.
 
 > Mathlib's `defsWithUnderscore` environment linter reports every definition whose name contains
 > an underscore. Four families of Physlib declaration trip it even though the offending name is
@@ -29,7 +29,7 @@ The module `Physlib.Meta.Linters.DefsWithUnderscore`, [Physlib/Meta/Linters/Defs
 > `withDefsWithUnderscoreExemptions` wraps the linter so that these pass; every other declaration
 > is reported as before.
 
-**`Physlib.parserDeclTypes`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Linters/DefsWithUnderscore.lean#L48).
+**`Physlib.parserDeclTypes`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Linters/DefsWithUnderscore.lean#L48).
 
 > The types of the declarations that `syntax`, `notation` and `macro` commands produce, along
 > with the pretty-printer declarations generated beside them. These hold parser data rather than
@@ -39,7 +39,7 @@ The module `Physlib.Meta.Linters.DefsWithUnderscore`, [Physlib/Meta/Linters/Defs
 def parserDeclTypes : List Name
 ```
 
-**`Physlib.projectSuffix`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Linters/DefsWithUnderscore.lean#L56).
+**`Physlib.projectSuffix`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Linters/DefsWithUnderscore.lean#L56).
 
 > The suffix Lean appends to the generated name of an anonymous instance to keep it unique
 > across projects, for example `_physlib` for a declaration of the `Physlib` project. This
@@ -49,7 +49,7 @@ def parserDeclTypes : List Name
 def projectSuffix (env : Environment) (declName : Name) : Option String
 ```
 
-**`Physlib.hasNumericSuffix`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Linters/DefsWithUnderscore.lean#L62).
+**`Physlib.hasNumericSuffix`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Linters/DefsWithUnderscore.lean#L62).
 
 > Whether the final component of `declName` ends in an underscore followed by a number, the
 > suffix Lean adds when the name it generated for an anonymous instance is already taken.
@@ -58,7 +58,7 @@ def projectSuffix (env : Environment) (declName : Name) : Option String
 def hasNumericSuffix (declName : Name) : Bool
 ```
 
-**`Physlib.defsWithUnderscoreExempt`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Linters/DefsWithUnderscore.lean#L67).
+**`Physlib.defsWithUnderscoreExempt`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Linters/DefsWithUnderscore.lean#L67).
 
 > Whether the `defsWithUnderscore` linter should pass over `declName`.
 
@@ -66,7 +66,7 @@ def hasNumericSuffix (declName : Name) : Bool
 def defsWithUnderscoreExempt (declName : Name) : CoreM Bool
 ```
 
-**`Physlib.withDefsWithUnderscoreExemptions`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Linters/DefsWithUnderscore.lean#L79).
+**`Physlib.withDefsWithUnderscoreExemptions`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Linters/DefsWithUnderscore.lean#L79).
 
 > `withDefsWithUnderscoreExemptions linter` behaves like `linter` except that it passes over
 > the declarations selected by `defsWithUnderscoreExempt`.
@@ -81,4 +81,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Meta/Linters/DefsWithUnderscore.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Linters/DefsWithUnderscore.lean)
+- [Physlib/Meta/Linters/DefsWithUnderscore.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Meta/Linters/DefsWithUnderscore.lean)

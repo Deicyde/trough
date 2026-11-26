@@ -8,9 +8,9 @@ proof: formalized
 
 # Generalization of calculus results to `InnerProductSpace'`
 
-The module `Physlib.Mathematics.InnerProductSpace.Calculus`, [Physlib/Mathematics/InnerProductSpace/Calculus.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Calculus.lean): 5 declarations, 1 with a docstring.
+The module `Physlib.Mathematics.InnerProductSpace.Calculus`, [Physlib/Mathematics/InnerProductSpace/Calculus.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Calculus.lean): 5 declarations, 1 with a docstring.
 
-**`fderivInnerCLM'`**, a def, [line 24](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Calculus.lean#L24).
+**`fderivInnerCLM'`**, a def, [line 24](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Calculus.lean#L24).
 
 > Derivative of the inner product for the instance `InnerProductSpace'`.
 
@@ -18,7 +18,7 @@ The module `Physlib.Mathematics.InnerProductSpace.Calculus`, [Physlib/Mathematic
 noncomputable def fderivInnerCLM' [InnerProductSpace' ℝ E] (p : E × E) : E × E →L[ℝ] ℝ
 ```
 
-**`HasFDerivAt.inner'`**, a lemma, [line 27](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Calculus.lean#L27).
+**`HasFDerivAt.inner'`**, a lemma, [line 27](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Calculus.lean#L27).
 
 ```lean
 lemma HasFDerivAt.inner' {f g : E → F}
@@ -26,7 +26,7 @@ lemma HasFDerivAt.inner' {f g : E → F}
     HasFDerivAt (fun t => ⟪f t, g t⟫) ((fderivInnerCLM' (f x, g x)).comp <| f'.prod g') x
 ```
 
-**`fderiv_inner_apply'`**, a lemma, [line 34](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Calculus.lean#L34).
+**`fderiv_inner_apply'`**, a lemma, [line 34](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Calculus.lean#L34).
 
 ```lean
 lemma fderiv_inner_apply'
@@ -35,7 +35,7 @@ lemma fderiv_inner_apply'
     fderiv ℝ (fun t => ⟪f t, g t⟫) x y = ⟪f x, fderiv ℝ g x y⟫ + ⟪fderiv ℝ f x y, g x⟫
 ```
 
-**`deriv_inner_apply'`**, a lemma, [line 42](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Calculus.lean#L42).
+**`deriv_inner_apply'`**, a lemma, [line 42](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Calculus.lean#L42).
 
 ```lean
 lemma deriv_inner_apply'
@@ -44,7 +44,7 @@ lemma deriv_inner_apply'
     deriv (fun t => ⟪f t, g t⟫) x = ⟪f x, deriv g x⟫ + ⟪deriv f x, g x⟫
 ```
 
-**`DifferentiableAt.inner'`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Calculus.lean#L50).
+**`DifferentiableAt.inner'`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Calculus.lean#L50).
 
 ```lean
 lemma DifferentiableAt.inner' {f g : E → F} {x}
@@ -58,4 +58,4 @@ lemma DifferentiableAt.inner' {f g : E → F} {x}
 
 ## Sources
 
-- [Physlib/Mathematics/InnerProductSpace/Calculus.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/InnerProductSpace/Calculus.lean)
+- [Physlib/Mathematics/InnerProductSpace/Calculus.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/InnerProductSpace/Calculus.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The tight binding chain with open boundary conditions
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Open.Basic`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean): 8 declarations, 8 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Open.Basic`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean): 8 declarations, 8 with a docstring; 1 private, not shown.
 
 > The position operator and the Hamiltonian of the tight binding chain with open boundaries.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Open.Basic`, [Physlib
 
 ## A. The position operator
 
-**`CondensedMatter.TightBindingChain.position`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean#L60).
+**`CondensedMatter.TightBindingChain.position`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean#L60).
 
 > The position operator `X = ∑ n, a n |n⟩⟨n|`, measuring from the site `0`.
 
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Open.Basic`, [Physlib
 noncomputable def position : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace
 ```
 
-**`CondensedMatter.TightBindingChain.position_apply_localizedState`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean#L64).
+**`CondensedMatter.TightBindingChain.position_apply_localizedState`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean#L64).
 
 > The localized states are the eigenstates of the position operator.
 
@@ -52,7 +52,7 @@ lemma position_apply_localizedState (n : Fin T.N) :
   simp [position, localizedComp_apply_localizedState]
 ```
 
-**`CondensedMatter.TightBindingChain.position_hermitian`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean#L69).
+**`CondensedMatter.TightBindingChain.position_hermitian`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean#L69).
 
 > The position operator is hermitian.
 
@@ -63,7 +63,7 @@ lemma position_hermitian (ψ φ : T.HilbertSpace) :
 
 ## B. The Hamiltonian with open boundary conditions
 
-**`CondensedMatter.TightBindingChain.openHamiltonian`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean#L83).
+**`CondensedMatter.TightBindingChain.openHamiltonian`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean#L83).
 
 > The Hamiltonian of the tight binding chain with open boundary conditions: the periodic
 > `hamiltonian` with one hopping between the end sites `0` and `N - 1` removed. For `N = 2` the
@@ -75,7 +75,7 @@ noncomputable def openHamiltonian : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace
 
 ### B.1. Hermiticity
 
-**`CondensedMatter.TightBindingChain.openHamiltonian_hermitian`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean#L93).
+**`CondensedMatter.TightBindingChain.openHamiltonian_hermitian`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean#L93).
 
 > The Hamiltonian with open boundary conditions is hermitian.
 
@@ -86,7 +86,7 @@ lemma openHamiltonian_hermitian (ψ φ : T.HilbertSpace) :
 
 ### B.2. Matrix elements
 
-**`CondensedMatter.TightBindingChain.inner_openHamiltonian`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean#L115).
+**`CondensedMatter.TightBindingChain.inner_openHamiltonian`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean#L115).
 
 > The open chain hops only between neighbouring sites, with amplitude `-t`.
 
@@ -110,7 +110,7 @@ lemma inner_openHamiltonian (m n : Fin T.N) :
   split_ifs <;> first | omega | ring
 ```
 
-**`CondensedMatter.TightBindingChain.inner_openHamiltonian_eq_adjMatrix`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean#L135).
+**`CondensedMatter.TightBindingChain.inner_openHamiltonian_eq_adjMatrix`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean#L135).
 
 > The open chain is the hopping Hamiltonian of the path graph: the matrix element between
 > two sites is `E0` times the identity minus `t` times the adjacency matrix of `pathGraph N`.
@@ -130,7 +130,7 @@ lemma inner_openHamiltonian_eq_adjMatrix (m n : Fin T.N) :
 
 ## C. Commutators with the position operator
 
-**`CondensedMatter.TightBindingChain.inner_commutator_position`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean#L154).
+**`CondensedMatter.TightBindingChain.inner_commutator_position`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean#L154).
 
 > Commuting with the position operator weighs each matrix element by the hopping distance:
 > `⟨m|(A X - X A)|n⟩ = a (n - m) ⟨m|A|n⟩`.
@@ -152,4 +152,4 @@ lemma inner_commutator_position (A : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace) 
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean)

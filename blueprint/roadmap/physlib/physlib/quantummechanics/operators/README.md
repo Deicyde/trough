@@ -1,26 +1,26 @@
 # Operators
 
-The folder [Physlib/QuantumMechanics/Operators/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators): 17 modules, an article each, in path order; then 1 folder below it, a page each, 21 modules in all.
+The folder [Physlib/QuantumMechanics/Operators/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators): 18 modules, an article each, in path order with Basic.lean first in its folder; then 1 folder below it, a page each, 23 modules in all.
 
-The repository's API map for this folder, *Operator algebra* ([Physlib/QuantumMechanics/Operators/API-map.md](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
+The repository's API map for this folder, *Operator algebra* ([Physlib/QuantumMechanics/Operators/API-map.md](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
 
 *Content (Alpha)*
 
 > ### Unbounded operators
 >
-> An operator on a Hilbert space is a partially defined linear map. It has a dense domain when its domain is a dense subspace, and it is unbounded, in the technical sense used here, when it is densely defined and closable. [\[1\]](unbounded.md) It is symmetric when the inner-product pairing is symmetric on its domain, which happens exactly when the pairing of each vector with its own image is real. [\[2\]](unbounded.md) Symmetry is stable under sums, powers and closures, and a self-adjoint operator is symmetric and closed. [\[3\]](unbounded.md) An operator is essentially self-adjoint when its closure is self-adjoint; such an operator is unbounded, and its closure is its only self-adjoint extension. [\[4\]](unbounded.md)
+> An operator on a Hilbert space is a partially defined linear map. It has a dense domain when its domain is a dense subspace, and it is unbounded, in the technical sense used here, when it is densely defined and closable. [\[1\]](basic.md) It is symmetric when the inner-product pairing is symmetric on its domain, which happens exactly when the pairing of each vector with its own image is real. [\[2\]](basic.md) Symmetry is stable under sums, powers and closures, and a self-adjoint operator is symmetric and closed. [\[3\]](basic.md) An operator is essentially self-adjoint when its closure is self-adjoint; such an operator is unbounded, and its closure is its only self-adjoint extension. [\[4\]](essentiallyselfadjoint.md)
 >
-> The adjoint is antitone and conjugate-linear in non-zero scalars, the sum of two adjoints is a restriction of the adjoint of the sum, and likewise for compositions; the adjoint of an unbounded operator is again unbounded, and its second adjoint is its closure. [\[5\]](unbounded.md) A symmetric densely defined operator for which T + i and T - i both have the whole space as range is self-adjoint. [\[6\]](unbounded.md) Conjugation by a unitary preserves formal adjoints, dense domains and surjectivity of T - z. [\[7\]](unbounded.md) … These definitions follow the standard treatments of unbounded operators by Hall \{1}, Reed and Simon \{2}, and Schmüdgen \{3}. The spectrum, the resolvent, the numerical range and spectral measures of these operators belong to spectral theory \{4}.
+> The adjoint is antitone and conjugate-linear in non-zero scalars, the sum of two adjoints is a restriction of the adjoint of the sum, and likewise for compositions; the adjoint of an unbounded operator is again unbounded, and its second adjoint is its closure. [\[5\]](basic.md) A symmetric densely defined operator for which T + i and T - i both have the whole space as range is self-adjoint. [\[6\]](basic.md) Conjugation by a unitary preserves formal adjoints, dense domains and surjectivity of T - z. [\[7\]](basic.md) … These definitions follow the standard treatments of unbounded operators by Hall \{1}, Reed and Simon \{2}, and Schmüdgen \{3}. The spectrum, the resolvent, the numerical range and spectral measures of these operators belong to spectral theory \{4}.
 >
 > ### Multiplication operators
 >
-> A complex function on space \{5} gives a multiplication operator on the Hilbert space on space \{6}, defined on its maximal domain, the vectors whose product with the function is still square-integrable; for an almost everywhere strongly measurable multiplier the operator is densely defined. [\[8\]](multiplication.md) For a bounded multiplier the domain is the whole space, and for a multiplier of temperate growth it contains the Schwartz maps. [\[9\]](multiplication.md) The adjoint of a multiplication operator is multiplication by the conjugate function, so a real multiplier gives a self-adjoint operator; multiplication operators are closed and unbounded. [\[10\]](multiplication.md) They behave predictably under scalar multiples, sums and composition. [\[11\]](multiplication.md)
+> A complex function on space \{5} gives a multiplication operator on the Hilbert space on space \{6}, defined on its maximal domain, the vectors whose product with the function is still square-integrable; for an almost everywhere strongly measurable multiplier the operator is densely defined. [\[8\]](spaced-multiplication.md) For a bounded multiplier the domain is the whole space, and for a multiplier of temperate growth it contains the Schwartz maps. [\[9\]](spaced-multiplication.md) The adjoint of a multiplication operator is multiplication by the conjugate function, so a real multiplier gives a self-adjoint operator; multiplication operators are closed and unbounded. [\[10\]](spaced-multiplication.md) They behave predictably under scalar multiples, sums and composition. [\[11\]](spaced-multiplication.md)
 >
 > ### Position and momentum
 >
-> Each component of the position operator is multiplication by a coordinate, first on Schwartz maps and then as a partially defined operator on the Hilbert space, where it is densely defined, self-adjoint and unbounded. [\[12\]](position.md) Multiplication by a power of the radius, and by its smooth regularization, supplies the multipliers of central potentials; the product stays square-integrable under an explicit condition, and the regularized operators converge to the unregularized one. [\[13\]](position.md)
+> Each component of the position operator is multiplication by a coordinate, first on Schwartz maps and then as a partially defined operator on the Hilbert space, where it is densely defined, self-adjoint and unbounded. [\[12\]](spaced-position.md) Multiplication by a power of the radius, and by its smooth regularization, supplies the multipliers of central potentials; the product stays square-integrable under an explicit condition, and the regularized operators converge to the unregularized one. [\[13\]](spaced-position.md)
 >
-> Each component of the momentum operator is -iℏ∂ᵢ, first on Schwartz maps and then as a partially defined operator, which is densely defined, symmetric and unbounded on the Schwartz submodule; the momentum squared acts on the same domain. [\[14\]](momentum.md) …
+> Each component of the momentum operator is -iℏ∂ᵢ, first on Schwartz maps and then as a partially defined operator, which is densely defined, symmetric and unbounded on the Schwartz submodule; the momentum squared acts on the same domain. [\[14\]](spaced-momentum.md) …
 >
 > ### Commutation relations
 >
@@ -28,9 +28,9 @@ The repository's API map for this folder, *Operator algebra* ([Physlib/QuantumMe
 >
 > ### Angular momentum
 >
-> The components 𝐋ᵢⱼ = xᵢpⱼ - xⱼpᵢ of the angular momentum operator and the scalar 𝐋² act on Schwartz maps; the components are antisymmetric in the two indices and vanish for a repeated index, and the one-, two- and three-dimensional cases each have their own description. [\[18\]](angularmomentum.md) Position and momentum transform as vectors under the angular momenta, which close into the Lie algebra of rotations. [\[19\]](angularmomentum.md) The scalar 𝐋² commutes with every angular momentum component, with the momentum squared and with any regularized power of the radius. [\[20\]](angularmomentum.md)
+> The components 𝐋ᵢⱼ = xᵢpⱼ - xⱼpᵢ of the angular momentum operator and the scalar 𝐋² act on Schwartz maps; the components are antisymmetric in the two indices and vanish for a repeated index, and the one-, two- and three-dimensional cases each have their own description. [\[18\]](spaced-angularmomentum.md) Position and momentum transform as vectors under the angular momenta, which close into the Lie algebra of rotations. [\[19\]](spaced-angularmomentum.md) The scalar 𝐋² commutes with every angular momentum component, with the momentum squared and with any regularized power of the radius. [\[20\]](spaced-angularmomentum.md)
 >
-> Each angular momentum component acts on the Hilbert space with dense Schwartz domain, agrees almost everywhere with its action on Schwartz maps, preserves the Schwartz submodule, and is symmetric and closable. [\[21\]](angularmomentum.md) Angular momentum squared acts on the Hilbert space with invariant dense Schwartz domain, equals half the sum of the squares of the components, and is symmetric and closable. [\[22\]](angularmomentum.md) In three dimensions the right-handed Cartesian components act on the invariant Schwartz domain, satisfy the Levi-Civita and cyclic commutation relations, and their three squares sum to angular momentum squared. [\[23\]](angularmomentum-dimthree.md) The ladder operators L± = Lx ± i Ly act on Schwartz maps and on the Hilbert space with invariant dense Schwartz domain, where [Lz, L±] = ±ℏ L± and [L², L±] = 0. [\[24\]](angularmomentum-dimthree.md)
+> Each angular momentum component acts on the Hilbert space with dense Schwartz domain, agrees almost everywhere with its action on Schwartz maps, preserves the Schwartz submodule, and is symmetric and closable. [\[21\]](spaced-angularmomentum.md) Angular momentum squared acts on the Hilbert space with invariant dense Schwartz domain, equals half the sum of the squares of the components, and is symmetric and closable. [\[22\]](spaced-angularmomentum.md) In three dimensions the right-handed Cartesian components act on the invariant Schwartz domain, satisfy the Levi-Civita and cyclic commutation relations, and their three squares sum to angular momentum squared. [\[23\]](spaced-angularmomentum-dimthree.md) The ladder operators L± = Lx ± i Ly act on Schwartz maps and on the Hilbert space with invariant dense Schwartz domain, where [Lz, L±] = ±ℏ L± and [L², L±] = 0. [\[24\]](spaced-angularmomentum-dimthree.md)
 >
 > ### Statistics of observables
 >
@@ -53,28 +53,32 @@ Its references:
 > - \{9\} H. P. Robertson, *The Uncertainty Principle*, Phys. Rev. 34, 163 (1929).
 > - \{10\} E. Schrödinger, *Zum Heisenbergschen Unschärfeprinzip*, Sitzungsberichte der Preussischen Akademie der Wissenschaften 19, 296 (1930).
 
-- [Angular momentum operator](angularmomentum.md)
+- [Unbounded operators (Basic)](basic.md)
 - [Commutation relations (Operators/Commutation)](commutation.md)
 - [Covariance (Physlib)](covariance.md)
-- [Momentum operators](momentum.md)
-- [Multiplication operators on `SpaceDHilbertSpace`](multiplication.md)
-- [Position operators](position.md)
-- [Unbounded operators (Operators/Unbounded)](unbounded.md)
+- [Essentially self-adjoint operators](essentiallyselfadjoint.md)
 - [Uncertainty bounds for partial linear maps](uncertainty.md)
 
-Modules in [AngularMomentum/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum):
-
-- [Three-dimensional angular momentum](angularmomentum-dimthree.md)
-
-Modules in [OneDimension/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/OneDimension):
+Modules in [OneDimension/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/OneDimension):
 
 - [Commutation relations (OneDimension/Commutation)](onedimension-commutation.md)
 - [Momentum operator](onedimension-momentum.md)
 - [Parity operator](onedimension-parity.md)
 - [Position operator](onedimension-position.md)
-- [Unbounded operators (OneDimension/Unbounded)](onedimension-unbounded.md)
+- [Unbounded operators (Unbounded)](onedimension-unbounded.md)
 
-Modules in [StateObservables/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/StateObservables):
+Modules in [SpaceD/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/SpaceD):
+
+- [Angular momentum operator](spaced-angularmomentum.md)
+- [Momentum operators](spaced-momentum.md)
+- [Multiplication operators on `SpaceDHilbertSpace`](spaced-multiplication.md)
+- [Position operators](spaced-position.md)
+
+Modules in [SpaceD/AngularMomentum/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/SpaceD/AngularMomentum):
+
+- [Three-dimensional angular momentum](spaced-angularmomentum-dimthree.md)
+
+Modules in [StateObservables/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/Operators/StateObservables):
 
 - [Expectation values and centered vectors](stateobservables-expectedvalue.md)
 - [Eigenvectors of partial linear maps](stateobservables-iseigenvector.md)

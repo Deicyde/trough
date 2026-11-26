@@ -8,9 +8,9 @@ proof: formalized
 
 # Tensor products of two complex Lorentz vectors
 
-The module `Physlib.Relativity.Tensors.ComplexTensor.Matrix.Pre`, [Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean): 16 declarations, 8 with a docstring.
+The module `Physlib.Relativity.Tensors.ComplexTensor.Matrix.Pre`, [Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean): 16 declarations, 8 with a docstring.
 
-**`Lorentz.contrContrToMatrix`**, a def, [line 27](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L27).
+**`Lorentz.contrContrToMatrix`**, a def, [line 27](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L27).
 
 > Equivalence of `complexContr ⊗ complexContr` to `4 x 4` complex matrices.
 
@@ -19,7 +19,7 @@ def contrContrToMatrix : (ComplexVector ⊗[ℂ] ComplexVector) ≃ₗ[ℂ]
     Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) ℂ
 ```
 
-**`Lorentz.contrContrToMatrix_symm_expand_tmul`**, a lemma, [line 35](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L35).
+**`Lorentz.contrContrToMatrix_symm_expand_tmul`**, a lemma, [line 35](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L35).
 
 > Expanding `contrContrToMatrix` in terms of the standard basis.
 
@@ -29,7 +29,7 @@ lemma contrContrToMatrix_symm_expand_tmul (M : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 �
     ∑ i, ∑ j, M i j • (ComplexVector.basis i ⊗ₜ[ℂ] ComplexVector.basis j)
 ```
 
-**`Lorentz.coCoToMatrix`**, a def, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L47).
+**`Lorentz.coCoToMatrix`**, a def, [line 47](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L47).
 
 > Equivalence of `complexCo ⊗ complexCo` to `4 x 4` complex matrices.
 
@@ -38,7 +38,7 @@ def coCoToMatrix : (ComplexCoVector ⊗[ℂ] ComplexCoVector) ≃ₗ[ℂ]
     Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) ℂ
 ```
 
-**`Lorentz.coCoToMatrix_symm_expand_tmul`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L55).
+**`Lorentz.coCoToMatrix_symm_expand_tmul`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L55).
 
 > Expanding `coCoToMatrix` in terms of the standard basis.
 
@@ -48,7 +48,7 @@ lemma coCoToMatrix_symm_expand_tmul (M : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin
       ∑ i, ∑ j, M i j • (ComplexCoVector.basis i ⊗ₜ[ℂ] ComplexCoVector.basis j)
 ```
 
-**`Lorentz.contrCoToMatrix`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L66).
+**`Lorentz.contrCoToMatrix`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L66).
 
 > Equivalence of `complexContr ⊗ complexCo` to `4 x 4` complex matrices.
 
@@ -57,7 +57,7 @@ def contrCoToMatrix : (ComplexVector ⊗[ℂ] ComplexCoVector) ≃ₗ[ℂ]
     Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) ℂ
 ```
 
-**`Lorentz.contrCoToMatrix_symm_expand_tmul`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L74).
+**`Lorentz.contrCoToMatrix_symm_expand_tmul`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L74).
 
 > Expansion of `contrCoToMatrix` in terms of the standard basis.
 
@@ -67,7 +67,7 @@ lemma contrCoToMatrix_symm_expand_tmul (M : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ 
       ∑ i, ∑ j, M i j • (ComplexVector.basis i ⊗ₜ[ℂ] ComplexCoVector.basis j)
 ```
 
-**`Lorentz.coContrToMatrix`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L86).
+**`Lorentz.coContrToMatrix`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L86).
 
 > Equivalence of `complexCo ⊗ complexContr` to `4 x 4` complex matrices.
 
@@ -76,7 +76,7 @@ def coContrToMatrix : (ComplexCoVector ⊗[ℂ] ComplexVector) ≃ₗ[ℂ]
     Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) ℂ
 ```
 
-**`Lorentz.coContrToMatrix_symm_expand_tmul`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L94).
+**`Lorentz.coContrToMatrix_symm_expand_tmul`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L94).
 
 > Expansion of `coContrToMatrix` in terms of the standard basis.
 
@@ -88,7 +88,7 @@ lemma coContrToMatrix_symm_expand_tmul (M : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ 
 
 ## Group actions
 
-**`Lorentz.contrContrToMatrix_ρ`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L112).
+**`Lorentz.contrContrToMatrix_ρ`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L112).
 
 ```lean
 lemma contrContrToMatrix_ρ (v : (ComplexVector ⊗[ℂ] ComplexVector)) (M : SL(2,ℂ)) :
@@ -97,7 +97,7 @@ lemma contrContrToMatrix_ρ (v : (ComplexVector ⊗[ℂ] ComplexVector)) (M : SL
     (LorentzGroup.toComplex (SL2C.toLorentzGroup M))ᵀ
 ```
 
-**`Lorentz.coCoToMatrix_ρ`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L154).
+**`Lorentz.coCoToMatrix_ρ`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L154).
 
 ```lean
 lemma coCoToMatrix_ρ (v : (ComplexCoVector ⊗[ℂ] ComplexCoVector)) (M : SL(2,ℂ)) :
@@ -106,7 +106,7 @@ lemma coCoToMatrix_ρ (v : (ComplexCoVector ⊗[ℂ] ComplexCoVector)) (M : SL(2
     (LorentzGroup.toComplex (SL2C.toLorentzGroup M))⁻¹
 ```
 
-**`Lorentz.contrCoToMatrix_ρ`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L198).
+**`Lorentz.contrCoToMatrix_ρ`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L198).
 
 ```lean
 lemma contrCoToMatrix_ρ (v : (ComplexVector ⊗[ℂ] ComplexCoVector)) (M : SL(2,ℂ)) :
@@ -115,7 +115,7 @@ lemma contrCoToMatrix_ρ (v : (ComplexVector ⊗[ℂ] ComplexCoVector)) (M : SL(
     (LorentzGroup.toComplex (SL2C.toLorentzGroup M))⁻¹
 ```
 
-**`Lorentz.coContrToMatrix_ρ`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L240).
+**`Lorentz.coContrToMatrix_ρ`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L240).
 
 ```lean
 lemma coContrToMatrix_ρ (v : (ComplexCoVector ⊗[ℂ] ComplexVector)) (M : SL(2,ℂ)) :
@@ -126,7 +126,7 @@ lemma coContrToMatrix_ρ (v : (ComplexCoVector ⊗[ℂ] ComplexVector)) (M : SL(
 
 ## The symm version of the group actions.
 
-**`Lorentz.contrContrToMatrix_ρ_symm`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L288).
+**`Lorentz.contrContrToMatrix_ρ_symm`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L288).
 
 ```lean
 lemma contrContrToMatrix_ρ_symm (v : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) ℂ) (M : SL(2,ℂ)) :
@@ -136,7 +136,7 @@ lemma contrContrToMatrix_ρ_symm (v : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3)
     (LorentzGroup.toComplex (SL2C.toLorentzGroup M))ᵀ)
 ```
 
-**`Lorentz.coCoToMatrix_ρ_symm`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L297).
+**`Lorentz.coCoToMatrix_ρ_symm`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L297).
 
 ```lean
 lemma coCoToMatrix_ρ_symm (v : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) ℂ) (M : SL(2,ℂ)) :
@@ -146,7 +146,7 @@ lemma coCoToMatrix_ρ_symm (v : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) ℂ) 
     (LorentzGroup.toComplex (SL2C.toLorentzGroup M))⁻¹)
 ```
 
-**`Lorentz.contrCoToMatrix_ρ_symm`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L306).
+**`Lorentz.contrCoToMatrix_ρ_symm`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L306).
 
 ```lean
 lemma contrCoToMatrix_ρ_symm (v : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) ℂ) (M : SL(2,ℂ)) :
@@ -156,7 +156,7 @@ lemma contrCoToMatrix_ρ_symm (v : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) �
     (LorentzGroup.toComplex (SL2C.toLorentzGroup M))⁻¹)
 ```
 
-**`Lorentz.coContrToMatrix_ρ_symm`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L315).
+**`Lorentz.coContrToMatrix_ρ_symm`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean#L315).
 
 ```lean
 lemma coContrToMatrix_ρ_symm (v : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) ℂ) (M : SL(2,ℂ)) :
@@ -172,4 +172,4 @@ lemma coContrToMatrix_ρ_symm (v : Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) �
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean)
+- [Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean)

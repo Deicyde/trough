@@ -2,34 +2,34 @@
 navigation: transparent
 ---
 
-# The Maurer–Cartan forms of the… to The kinetic terms of the…
+# The covariant field algebra of… to The mass-weight grading of the…
 
-Modules in [GaugeGroup/MaurerCartan/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan):
+Modules in [LocalFieldAlgebra/LocalCovFieldAlgebra/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/LocalFieldAlgebra/LocalCovFieldAlgebra):
 
-- [The Maurer–Cartan forms of the jet gauge group](gaugegroup-maurercartan-basic.md)
+- [The covariant field algebra of the Standard Model](localfieldalgebra-localcovfieldalgebra-basic.md)
+- [The mass-weight grading of the covariant field algebra of the Standard Model](localfieldalgebra-localcovfieldalgebra-massweigh.md)
+- [The one-kind sectors of the Standard Model](localfieldalgebra-localcovfieldalgebra-sectors.md)
+- [The covariant towers of the Standard Model](localfieldalgebra-localcovfieldalgebra-towers.md)
 
-Modules in [HiggsBoson/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson):
+Modules in [LocalFieldAlgebra/LocalCovFieldAlgebra/MassWeight/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/LocalFieldAlgebra/LocalCovFieldAlgebra/MassWeight):
 
-- [The infinitesimal gauge action on the Higgs doublet](higgsboson-gaugealgebraaction.md)
-- [The Standard Model Higgs field as a matter field](higgsboson-matterfield.md)
+- [The mass-weight filtration and the constant term](localfieldalgebra-localcovfieldalgebra-massweigh-2.md)
+- [The invariant content of the Standard Model](localfieldalgebra-localcovfieldalgebra-massweigh-3.md)
 
-Modules in [HiggsBoson/JetAlgebra/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra):
+Modules in [LocalFieldAlgebra/MixedSector/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/LocalFieldAlgebra/MixedSector):
 
-- [The jet algebra of the Higgs field (Basic)](higgsboson-jetalgebra-basic.md)
-- [The jet algebra of the Higgs field (Algebra)](higgsboson-jetalgebra-algebra.md)
+- [The mixed sector](localfieldalgebra-mixedsector-basic.md)
 
-Modules in [IsFermionSector/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector):
+Modules in [LocalFieldAlgebra/ScalarSector/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/LocalFieldAlgebra/ScalarSector):
 
-- [The fermion sector](isfermionsector-basic.md)
-- [The components of the fermion symbols](isfermionsector-components.md)
+- [The scalar sector of the covariant field algebra](localfieldalgebra-scalarsector-basic.md)
 
-Modules in [IsFermionSector/Deriv/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv):
+Modules in [LocalFieldAlgebra/ScalarSector/DerivSubmodule/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/LocalFieldAlgebra/ScalarSector/DerivSubmodule):
 
-- [The centre of `SL(2,ℂ)` on the fermion sector](isfermionsector-deriv-centre.md)
-- [The gauge weight decomposition of the fermion sector](isfermionsector-deriv-gaugeweight.md)
+- [The derivative submodules of the scalar sector](localfieldalgebra-scalarsector-derivsubmodule-ba.md)
+- [The centre of `SL(2,ℂ)` on the scalar sector](localfieldalgebra-scalarsector-derivsubmodule-ce.md)
+- [The gauge weight decomposition of the scalar sector](localfieldalgebra-scalarsector-derivsubmodule-ga.md)
 
-Modules in [IsFermionSector/MassWeight/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight):
+Modules in [LocalFieldAlgebra/ScalarSector/MassWeight/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/LocalFieldAlgebra/ScalarSector/MassWeight):
 
-- [The mass-weight grading of the fermion sector](isfermionsector-massweight-basic.md)
-- [The gauge weight decomposition of the fermion mass-weight submodules](isfermionsector-massweight-gaugeweight.md)
-- [The kinetic terms of the fermion sector](isfermionsector-massweight-kineticfamilies.md)
+- [The mass-weight grading of the scalar sector, in derivative submodules](localfieldalgebra-scalarsector-massweight-basic.md)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Coordinate-axis rotations in `SL(2,ℂ)`
 
-The module `Physlib.Relativity.SL2C.AxisRotations`, [Physlib/Relativity/SL2C/AxisRotations.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/AxisRotations.lean): 10 declarations, 10 with a docstring.
+The module `Physlib.Relativity.SL2C.AxisRotations`, [Physlib/Relativity/SL2C/AxisRotations.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/AxisRotations.lean): 10 declarations, 10 with a docstring.
 
 > This file defines chosen `SL(2,ℂ)` rotations carrying the `z`-axis to a selected coordinate axis.
 > The spatial-axis convention is `0 = x`, `1 = y`, and `2 = z`; consequently, the rotation associated
@@ -25,7 +25,7 @@ The module `Physlib.Relativity.SL2C.AxisRotations`, [Physlib/Relativity/SL2C/Axi
 > - `rotationZToAxis_zero_mul_diagonal_mul_inv` and its companions, their action on a
 >   diagonal matrix.
 
-**`Lorentz.SL2C.rotationZToAxis`**, a def, [line 37](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/AxisRotations.lean#L37).
+**`Lorentz.SL2C.rotationZToAxis`**, a def, [line 37](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/AxisRotations.lean#L37).
 
 > The `SL(2,ℂ)` rotation carrying the `z`-axis to axis `i`.
 
@@ -33,7 +33,7 @@ The module `Physlib.Relativity.SL2C.AxisRotations`, [Physlib/Relativity/SL2C/Axi
 noncomputable def rotationZToAxis : Fin 3 → SL(2,ℂ)
 ```
 
-**`Lorentz.SL2C.rotationZToAxis_zero_apply`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/AxisRotations.lean#L50).
+**`Lorentz.SL2C.rotationZToAxis_zero_apply`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/AxisRotations.lean#L50).
 
 > The matrix entries of the rotation carrying the `z`-axis to the `x`-axis.
 
@@ -43,7 +43,7 @@ lemma rotationZToAxis_zero_apply (j k : Fin 2) :
       ((((Real.sqrt 2 : ℝ) : ℂ))⁻¹ • !![1, -1; 1, 1]) j k
 ```
 
-**`Lorentz.SL2C.rotationZToAxis_one_apply`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/AxisRotations.lean#L55).
+**`Lorentz.SL2C.rotationZToAxis_one_apply`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/AxisRotations.lean#L55).
 
 > The matrix entries of the rotation carrying the `z`-axis to the `y`-axis.
 
@@ -53,7 +53,7 @@ lemma rotationZToAxis_one_apply (j k : Fin 2) :
       ((((Real.sqrt 2 : ℝ) : ℂ))⁻¹ • !![1, Complex.I; Complex.I, 1]) j k
 ```
 
-**`Lorentz.SL2C.rotationZToAxis_two_apply`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/AxisRotations.lean#L60).
+**`Lorentz.SL2C.rotationZToAxis_two_apply`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/AxisRotations.lean#L60).
 
 > The rotation carrying the `z`-axis to itself is the identity matrix.
 
@@ -62,7 +62,7 @@ lemma rotationZToAxis_two_apply (j k : Fin 2) :
     (rotationZToAxis 2).1 j k = (1 : Matrix (Fin 2) (Fin 2) ℂ) j k
 ```
 
-**`Lorentz.SL2C.rotationZToAxis_zero_inv_apply`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/AxisRotations.lean#L64).
+**`Lorentz.SL2C.rotationZToAxis_zero_inv_apply`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/AxisRotations.lean#L64).
 
 > The matrix entries of the inverse rotation from the `x`-axis to the `z`-axis.
 
@@ -72,7 +72,7 @@ lemma rotationZToAxis_zero_inv_apply (j k : Fin 2) :
       ((((Real.sqrt 2 : ℝ) : ℂ))⁻¹ • !![1, 1; -1, 1]) j k
 ```
 
-**`Lorentz.SL2C.rotationZToAxis_one_inv_apply`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/AxisRotations.lean#L71).
+**`Lorentz.SL2C.rotationZToAxis_one_inv_apply`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/AxisRotations.lean#L71).
 
 > The matrix entries of the inverse rotation from the `y`-axis to the `z`-axis.
 
@@ -82,7 +82,7 @@ lemma rotationZToAxis_one_inv_apply (j k : Fin 2) :
       ((((Real.sqrt 2 : ℝ) : ℂ))⁻¹ • !![1, -Complex.I; -Complex.I, 1]) j k
 ```
 
-**`Lorentz.SL2C.rotationZToAxis_two_inv_apply`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/AxisRotations.lean#L78).
+**`Lorentz.SL2C.rotationZToAxis_two_inv_apply`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/AxisRotations.lean#L78).
 
 > The inverse rotation from the `z`-axis to itself is the identity matrix.
 
@@ -91,7 +91,7 @@ lemma rotationZToAxis_two_inv_apply (j k : Fin 2) :
     ((rotationZToAxis 2)⁻¹).1 j k = (1 : Matrix (Fin 2) (Fin 2) ℂ) j k
 ```
 
-**`Lorentz.SL2C.rotationZToAxis_zero_mul_diagonal_mul_inv`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/AxisRotations.lean#L85).
+**`Lorentz.SL2C.rotationZToAxis_zero_mul_diagonal_mul_inv`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/AxisRotations.lean#L85).
 
 > Conjugating `diag(a, b)` by the rotation to the `x`-axis expresses it in the `x`-axis
 > basis.
@@ -102,7 +102,7 @@ lemma rotationZToAxis_zero_mul_diagonal_mul_inv (a b : ℂ) :
       !![(a + b) / 2, (a - b) / 2; (a - b) / 2, (a + b) / 2]
 ```
 
-**`Lorentz.SL2C.rotationZToAxis_one_mul_diagonal_mul_inv`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/AxisRotations.lean#L100).
+**`Lorentz.SL2C.rotationZToAxis_one_mul_diagonal_mul_inv`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/AxisRotations.lean#L100).
 
 > Conjugating `diag(a, b)` by the rotation to the `y`-axis expresses it in the `y`-axis
 > basis.
@@ -114,7 +114,7 @@ lemma rotationZToAxis_one_mul_diagonal_mul_inv (a b : ℂ) :
         Complex.I * (a - b) / 2, (a + b) / 2]
 ```
 
-**`Lorentz.SL2C.rotationZToAxis_two_mul_diagonal_mul_inv`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/AxisRotations.lean#L118).
+**`Lorentz.SL2C.rotationZToAxis_two_mul_diagonal_mul_inv`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/AxisRotations.lean#L118).
 
 > Conjugating `diag(a, b)` by the identity rotation leaves it unchanged.
 
@@ -130,4 +130,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Relativity/SL2C/AxisRotations.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/AxisRotations.lean)
+- [Physlib/Relativity/SL2C/AxisRotations.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/SL2C/AxisRotations.lean)

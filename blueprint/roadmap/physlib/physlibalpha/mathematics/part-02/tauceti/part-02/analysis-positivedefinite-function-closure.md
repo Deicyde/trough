@@ -8,7 +8,7 @@ proof: formalized
 
 # Weighted closure for positive-definite functions
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Function.Closure`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean): 22 declarations, 22 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Function.Closure`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean): 22 declarations, 22 with a docstring.
 
 > This file adds the weighted finite-mixture and Schur-power API for `TauCeti.IsPositiveDefinite`, the
 > positive-definite-function predicate on an involutive additive monoid.
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Function.
 
 ## A. Development
 
-**`TauCeti.IsPositiveDefinite.real_smul`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L61).
+**`TauCeti.IsPositiveDefinite.real_smul`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L61).
 
 > Positive-definite functions are closed under multiplication by a nonnegative real scalar.
 
@@ -51,7 +51,7 @@ lemma real_smul {r : ℝ} {F : M → ℂ} (hr : 0 ≤ r) (hF : IsPositiveDefinit
     IsPositiveDefinite (fun x => r • F x)
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_smul`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L68).
+**`TauCeti.IsPositiveDefinite.sum_smul`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L68).
 
 > Finite nonnegative complex-weighted sums of positive-definite functions are positive
 > definite. This is the finite-mixture form used when the weights are already complex scalars with
@@ -63,7 +63,7 @@ lemma sum_smul {ι : Type*} {s : Finset ι} {w : ι → ℂ} {F : ι → M → �
     IsPositiveDefinite (fun x => ∑ i ∈ s, w i • F i x)
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_const_mul`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L76).
+**`TauCeti.IsPositiveDefinite.sum_const_mul`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L76).
 
 > Finite nonnegative complex-weighted sums, written using multiplication rather than scalar
 > notation.
@@ -74,7 +74,7 @@ lemma sum_const_mul {ι : Type*} {s : Finset ι} {w : ι → ℂ} {F : ι → M 
     IsPositiveDefinite (fun x => ∑ i ∈ s, w i * F i x)
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_real_smul`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L82).
+**`TauCeti.IsPositiveDefinite.sum_real_smul`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L82).
 
 > Finite nonnegative real-weighted sums of positive-definite functions are positive definite.
 
@@ -84,7 +84,7 @@ lemma sum_real_smul {ι : Type*} {s : Finset ι} {w : ι → ℝ} {F : ι → M 
     IsPositiveDefinite (fun x => ∑ i ∈ s, w i • F i x)
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_real_const_mul`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L89).
+**`TauCeti.IsPositiveDefinite.sum_real_const_mul`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L89).
 
 > Finite nonnegative real-weighted sums, written with the real weight coerced to `ℂ` and
 > multiplied in the codomain.
@@ -95,7 +95,7 @@ lemma sum_real_const_mul {ι : Type*} {s : Finset ι} {w : ι → ℝ} {F : ι �
     IsPositiveDefinite (fun x => ∑ i ∈ s, (w i : ℂ) * F i x)
 ```
 
-**`TauCeti.IsPositiveDefinite.pow`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L95).
+**`TauCeti.IsPositiveDefinite.pow`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L95).
 
 > Schur powers of a positive-definite function are positive definite.
 
@@ -104,7 +104,7 @@ lemma pow {F : M → ℂ} (hF : IsPositiveDefinite F) (n : ℕ) :
     IsPositiveDefinite (fun x => F x ^ n)
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_smul_apply_of_apply_eq_one`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L105).
+**`TauCeti.IsPositiveDefinite.sum_smul_apply_of_apply_eq_one`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L105).
 
 > If each summand in a finite complex-weighted sum is normalized at a point, then the sum's
 > value at that point is the sum of the weights.
@@ -114,7 +114,7 @@ lemma sum_smul_apply_of_apply_eq_one {ι : Type*} {s : Finset ι} {w : ι → �
     {F : ι → N → ℂ} {x : N} (hFx : ∀ i ∈ s, F i x = 1) : (∑ i ∈ s, w i • F i x) = ∑ i ∈ s, w i
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_smul_apply_eq_one`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L113).
+**`TauCeti.IsPositiveDefinite.sum_smul_apply_eq_one`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L113).
 
 > A finite complex-weighted sum of functions normalized at a point is normalized at that point
 > when the weights sum to `1`.
@@ -125,7 +125,7 @@ lemma sum_smul_apply_eq_one {ι : Type*} {s : Finset ι} {w : ι → ℂ}
     (fun y => ∑ i ∈ s, w i • F i y) x = 1
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_const_mul_apply_of_apply_eq_one`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L121).
+**`TauCeti.IsPositiveDefinite.sum_const_mul_apply_of_apply_eq_one`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L121).
 
 > If each summand in a finite complex-weighted sum is normalized at a point, then the sum's
 > multiplication-form value at that point is the sum of the weights.
@@ -135,7 +135,7 @@ lemma sum_const_mul_apply_of_apply_eq_one {ι : Type*} {s : Finset ι} {w : ι �
     {F : ι → N → ℂ} {x : N} (hFx : ∀ i ∈ s, F i x = 1) : (∑ i ∈ s, w i * F i x) = ∑ i ∈ s, w i
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_const_mul_apply_eq_one`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L128).
+**`TauCeti.IsPositiveDefinite.sum_const_mul_apply_eq_one`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L128).
 
 > A finite complex-weighted sum, in multiplication form, of functions normalized at a point is
 > normalized at that point when the weights sum to `1`.
@@ -146,7 +146,7 @@ lemma sum_const_mul_apply_eq_one {ι : Type*} {s : Finset ι} {w : ι → ℂ}
     (fun y => ∑ i ∈ s, w i * F i y) x = 1
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_real_smul_apply_of_apply_eq_one`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L136).
+**`TauCeti.IsPositiveDefinite.sum_real_smul_apply_of_apply_eq_one`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L136).
 
 > If each summand in a finite real-weighted sum is normalized at a point, then the sum's value at
 > that point is the complex coercion of the sum of the real weights.
@@ -157,7 +157,7 @@ lemma sum_real_smul_apply_of_apply_eq_one {ι : Type*} {s : Finset ι} {w : ι �
     (∑ i ∈ s, w i • F i x) = ((∑ i ∈ s, w i : ℝ) : ℂ)
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_real_smul_apply_eq_one`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L144).
+**`TauCeti.IsPositiveDefinite.sum_real_smul_apply_eq_one`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L144).
 
 > A finite real-weighted sum of functions normalized at a point is normalized at that point when
 > the weights sum to `1`.
@@ -168,7 +168,7 @@ lemma sum_real_smul_apply_eq_one {ι : Type*} {s : Finset ι} {w : ι → ℝ}
     (fun y => ∑ i ∈ s, w i • F i y) x = 1
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_real_const_mul_apply_of_apply_eq_one`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L152).
+**`TauCeti.IsPositiveDefinite.sum_real_const_mul_apply_of_apply_eq_one`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L152).
 
 > If each summand in a finite real-weighted sum is normalized at a point, then the sum's
 > multiplication-form value at that point is the complex coercion of the sum of the real weights.
@@ -179,7 +179,7 @@ lemma sum_real_const_mul_apply_of_apply_eq_one {ι : Type*} {s : Finset ι}
     (∑ i ∈ s, (w i : ℂ) * F i x) = ((∑ i ∈ s, w i : ℝ) : ℂ)
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_real_const_mul_apply_eq_one`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L160).
+**`TauCeti.IsPositiveDefinite.sum_real_const_mul_apply_eq_one`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L160).
 
 > A finite real-weighted sum, in multiplication form, of functions normalized at a point is
 > normalized at that point when the weights sum to `1`.
@@ -190,7 +190,7 @@ lemma sum_real_const_mul_apply_eq_one {ι : Type*} {s : Finset ι} {w : ι → �
     (fun y => ∑ i ∈ s, (w i : ℂ) * F i y) x = 1
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_smul_apply_zero_of_apply_zero_eq_one`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L172).
+**`TauCeti.IsPositiveDefinite.sum_smul_apply_zero_of_apply_zero_eq_one`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L172).
 
 > If each summand in a finite complex-weighted sum is normalized at the origin, then the sum's
 > value at the origin is the sum of the weights.
@@ -201,7 +201,7 @@ lemma sum_smul_apply_zero_of_apply_zero_eq_one {ι : Type*} {s : Finset ι}
     (∑ i ∈ s, w i • F i 0) = ∑ i ∈ s, w i
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_smul_apply_zero_eq_one`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L179).
+**`TauCeti.IsPositiveDefinite.sum_smul_apply_zero_eq_one`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L179).
 
 > A finite complex-weighted sum of functions normalized at the origin is normalized when the
 > weights sum to `1`.
@@ -212,7 +212,7 @@ lemma sum_smul_apply_zero_eq_one {ι : Type*} {s : Finset ι} {w : ι → ℂ}
     (fun x => ∑ i ∈ s, w i • F i x) 0 = 1
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_const_mul_apply_zero_of_apply_zero_eq_one`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L186).
+**`TauCeti.IsPositiveDefinite.sum_const_mul_apply_zero_of_apply_zero_eq_one`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L186).
 
 > If each summand in a finite complex-weighted sum is normalized at the origin, then the
 > sum's multiplication-form value at the origin is the sum of the weights.
@@ -223,7 +223,7 @@ lemma sum_const_mul_apply_zero_of_apply_zero_eq_one {ι : Type*} {s : Finset ι}
     (∑ i ∈ s, w i * F i 0) = ∑ i ∈ s, w i
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_const_mul_apply_zero_eq_one`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L193).
+**`TauCeti.IsPositiveDefinite.sum_const_mul_apply_zero_eq_one`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L193).
 
 > A finite complex-weighted sum, in multiplication form, of functions normalized at the origin is
 > normalized when the weights sum to `1`.
@@ -234,7 +234,7 @@ lemma sum_const_mul_apply_zero_eq_one {ι : Type*} {s : Finset ι} {w : ι → �
     (fun x => ∑ i ∈ s, w i * F i x) 0 = 1
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_real_smul_apply_zero_of_apply_zero_eq_one`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L200).
+**`TauCeti.IsPositiveDefinite.sum_real_smul_apply_zero_of_apply_zero_eq_one`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L200).
 
 > If each summand in a finite real-weighted sum is normalized at the origin, then the sum's value
 > at the origin is the complex coercion of the sum of the real weights.
@@ -245,7 +245,7 @@ lemma sum_real_smul_apply_zero_of_apply_zero_eq_one {ι : Type*} {s : Finset ι}
     (∑ i ∈ s, w i • F i 0) = ((∑ i ∈ s, w i : ℝ) : ℂ)
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_real_smul_apply_zero_eq_one`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L207).
+**`TauCeti.IsPositiveDefinite.sum_real_smul_apply_zero_eq_one`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L207).
 
 > A finite real-weighted sum of functions normalized at the origin is normalized when the weights
 > sum to `1`.
@@ -256,7 +256,7 @@ lemma sum_real_smul_apply_zero_eq_one {ι : Type*} {s : Finset ι} {w : ι → �
     (fun x => ∑ i ∈ s, w i • F i x) 0 = 1
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_real_const_mul_apply_zero_of_apply_zero_eq_one`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L214).
+**`TauCeti.IsPositiveDefinite.sum_real_const_mul_apply_zero_of_apply_zero_eq_one`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L214).
 
 > If each summand in a finite real-weighted sum is normalized at the origin, then the sum's
 > multiplication-form value at the origin is the complex coercion of the sum of the real weights.
@@ -267,7 +267,7 @@ lemma sum_real_const_mul_apply_zero_of_apply_zero_eq_one {ι : Type*} {s : Finse
     (∑ i ∈ s, (w i : ℂ) * F i 0) = ((∑ i ∈ s, w i : ℝ) : ℂ)
 ```
 
-**`TauCeti.IsPositiveDefinite.sum_real_const_mul_apply_zero_eq_one`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L221).
+**`TauCeti.IsPositiveDefinite.sum_real_const_mul_apply_zero_eq_one`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean#L221).
 
 > A finite real-weighted sum, in multiplication form, of functions normalized at the origin is
 > normalized when the weights sum to `1`.
@@ -284,4 +284,4 @@ lemma sum_real_const_mul_apply_zero_eq_one {ι : Type*} {s : Finset ι} {w : ι 
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Function/Closure.lean)

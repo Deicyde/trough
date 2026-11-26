@@ -8,9 +8,9 @@ proof: formalized
 
 # QuantumInfo.ClassicalInfo.Capacity
 
-The module `QuantumInfo.ClassicalInfo.Capacity`, [QuantumInfo/ClassicalInfo/Capacity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ClassicalInfo/Capacity.lean): 2 declarations, 2 with a docstring.
+The module `QuantumInfo.ClassicalInfo.Capacity`, [QuantumInfo/ClassicalInfo/Capacity.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ClassicalInfo/Capacity.lean): 2 declarations, 2 with a docstring.
 
-**`Code`**, a structure, [line 26](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ClassicalInfo/Capacity.lean#L26).
+**`Code`**, a structure, [line 26](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ClassicalInfo/Capacity.lean#L26).
 
 > Here we define a *Code* by an encdoder and a decoder. The encoder is a function that takes
 > strings (`List`s) of any length over an alphabet `A`, and returns strings over `I`;
@@ -25,7 +25,7 @@ structure Code where
   decoder : List O → List A
 ```
 
-**`FixedLengthCode`**, a structure, [line 32](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ClassicalInfo/Capacity.lean#L32).
+**`FixedLengthCode`**, a structure, [line 32](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ClassicalInfo/Capacity.lean#L32).
 
 > A `FixedLengthCode` is a `Code` whose output lengths don't depend on the input content, only
 > the input length.
@@ -44,4 +44,4 @@ structure FixedLengthCode extends Code A I O where
 
 ## Sources
 
-- [QuantumInfo/ClassicalInfo/Capacity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ClassicalInfo/Capacity.lean)
+- [QuantumInfo/ClassicalInfo/Capacity.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ClassicalInfo/Capacity.lean)

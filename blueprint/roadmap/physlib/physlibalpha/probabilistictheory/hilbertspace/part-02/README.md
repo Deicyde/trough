@@ -18,13 +18,13 @@ navigation: transparent
 - [The unitary group of a spectral measure](unbounded-stoneunitarygroup.md)
 - [The vector-measure integral against a scalar matrix coefficient](unbounded-weakintegral.md)
 
-Modules in [Unbounded/AnalyticVector/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector):
+Modules in [Unbounded/AnalyticVector/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector):
 
 - [Analytic vectors](unbounded-analyticvector-basic.md)
 - [Local and global analytic orbits](unbounded-analyticvector-local.md)
 - [Nelson's analytic-vector theorem](unbounded-analyticvector-nelson.md)
 
-Modules in [Unbounded/Cayley/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley):
+Modules in [Unbounded/Cayley/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley):
 
 - [The Cayley transform](unbounded-cayley-basic.md)
 - [Spectral data of bounded normal and unitary operators](unbounded-cayley-certificate.md)

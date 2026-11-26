@@ -8,9 +8,9 @@ proof: formalized
 
 # QuantumInfo.ForMathlib.ContinuousSup
 
-The module `QuantumInfo.ForMathlib.ContinuousSup`, [QuantumInfo/ForMathlib/ContinuousSup.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean): 20 declarations, 11 with a docstring, 11 listed as significant.
+The module `QuantumInfo.ForMathlib.ContinuousSup`, [QuantumInfo/ForMathlib/ContinuousSup.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean): 20 declarations, 11 with a docstring, 11 listed as significant.
 
-**`IsCompact.sSup_image_eq_sSup_image_closure`**, a lemma, [line 21](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L21).
+**`IsCompact.sSup_image_eq_sSup_image_closure`**, a lemma, [line 21](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L21).
 
 ```lean
 lemma sSup_image_eq_sSup_image_closure {f : β → α}
@@ -18,14 +18,14 @@ lemma sSup_image_eq_sSup_image_closure {f : β → α}
     sSup (f '' S) = sSup (f '' closure S)
 ```
 
-**`IsCompact.sInf_image_eq_sInf_image_closure`**, a lemma, [line 38](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L38).
+**`IsCompact.sInf_image_eq_sInf_image_closure`**, a lemma, [line 38](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L38).
 
 ```lean
 lemma sInf_image_eq_sInf_image_closure {f : β → α} (hS : IsCompact (closure S)) (hf : Continuous f) :
     sInf (f '' S) = sInf (f '' closure S)
 ```
 
-**`IsCompact.closure_continuous_sSup`**, a theorem, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L44). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`IsCompact.closure_continuous_sSup`**, a theorem, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L44). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > A version of `IsCompact.continuous_sSup` with a slightly weaker hypothesis on the set `K`,
 > that its closure is compact (but the set itself need not be).
@@ -35,7 +35,7 @@ theorem closure_continuous_sSup (hS : IsCompact (closure S)) (hf : Continuous �
     Continuous fun x ↦ sSup (f x '' S)
 ```
 
-**`IsCompact.closure_continuous_sInf`**, a theorem, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L51). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`IsCompact.closure_continuous_sInf`**, a theorem, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L51). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > A version of `IsCompact.continuous_sInf` with a slightly weaker hypothesis on the set `K`,
 > that its closure is compact (but the set itself need not be).
@@ -45,21 +45,21 @@ theorem closure_continuous_sInf (hS : IsCompact (closure S)) (hf : Continuous �
     Continuous fun x ↦ sInf (f x '' S)
 ```
 
-**`IsCompact.continuous_iSup`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L55).
+**`IsCompact.continuous_iSup`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L55).
 
 ```lean
 lemma continuous_iSup (hS : IsCompact (closure S)) (hf : Continuous ↿f) :
     Continuous fun x ↦ ⨆ y : S, f x y
 ```
 
-**`IsCompact.continuous_iInf`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L60).
+**`IsCompact.continuous_iInf`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L60).
 
 ```lean
 lemma continuous_iInf (hS : IsCompact (closure S)) (hf : Continuous ↿f) :
     Continuous fun x ↦ ⨅ y : S, f x y
 ```
 
-**`Bornology.IsBounded.continuous_sSup`**, a theorem, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L71). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`Bornology.IsBounded.continuous_sSup`**, a theorem, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L71). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Similar to `IsCompact.continuous_sSup`, but taking a bounded set in the bornology instead
 > of a compact set.
@@ -69,7 +69,7 @@ theorem continuous_sSup (hS : Bornology.IsBounded S) (hf : Continuous ↿f) :
     Continuous fun x ↦ sSup (f x '' S)
 ```
 
-**`Bornology.IsBounded.continuous_sInf`**, a theorem, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L77). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`Bornology.IsBounded.continuous_sInf`**, a theorem, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L77). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Similar to `IsCompact.continuous_sInf`, but taking a bounded set in the bornology instead
 > of a compact set.
@@ -79,21 +79,21 @@ theorem continuous_sInf (hS : Bornology.IsBounded S) (hf : Continuous ↿f) :
     Continuous fun x ↦ sInf (f x '' S)
 ```
 
-**`Bornology.IsBounded.continuous_iSup`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L81).
+**`Bornology.IsBounded.continuous_iSup`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L81).
 
 ```lean
 lemma continuous_iSup (hS : Bornology.IsBounded S) (hf : Continuous ↿f) :
     Continuous fun x ↦ ⨆ y : S, f x y
 ```
 
-**`Bornology.IsBounded.continuous_iInf`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L86).
+**`Bornology.IsBounded.continuous_iInf`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L86).
 
 ```lean
 lemma continuous_iInf (hS : Bornology.IsBounded S) (hf : Continuous ↿f) :
     Continuous fun x ↦ ⨅ y : S, f x y
 ```
 
-**`LinearMap.continuous_iSup`**, a theorem, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L96). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`LinearMap.continuous_iSup`**, a theorem, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L96). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > For bilinear maps in suitably well-behaved spaces with `IsModuleTopology`, taking the supremum in one
 > argument is still `Continuous`, by `Bornology.IsBounded.continuous_iSup`.
@@ -107,7 +107,7 @@ theorem continuous_iSup {E F 𝕜 : Type*}
     Continuous fun x ↦ ⨆ y : S, f x y
 ```
 
-**`LinearMap.continuous_iInf`**, a theorem, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L106). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`LinearMap.continuous_iInf`**, a theorem, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L106). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > For bilinear maps in suitably well-behaved spaces with `IsModuleTopology`, taking the infimum in one
 > argument is still `Continuous`, by `Bornology.IsBounded.continuous_iInf`.
@@ -121,7 +121,7 @@ theorem continuous_iInf {E F 𝕜 : Type*}
     Continuous fun x ↦ ⨅ y : S, f x y
 ```
 
-**`LinearMap.continuous_iSup'`**, a theorem, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L116). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`LinearMap.continuous_iSup'`**, a theorem, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L116). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > A specialization of `LinearMap.continuous_iSup` to finite dimensional spaces, in place
 > of requiring a (non-instance) `IsModuleTopology`.
@@ -137,7 +137,7 @@ theorem continuous_iSup' {E F 𝕜 : Type*}
     Continuous fun x ↦ ⨆ y : S, f x y
 ```
 
-**`LinearMap.continuous_iInf'`**, a theorem, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L130). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`LinearMap.continuous_iInf'`**, a theorem, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L130). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > A specialization of `LinearMap.continuous_iInf` to finite dimensional spaces, in place
 > of requiring a (non-instance) `IsModuleTopology`.
@@ -153,7 +153,7 @@ theorem continuous_iInf' {E F 𝕜 : Type*}
     Continuous fun x ↦ ⨅ y : S, f x y
 ```
 
-**`LinearMap.BilinForm.continuous_iSup`**, a theorem, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L143). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`LinearMap.BilinForm.continuous_iSup`**, a theorem, [line 143](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L143). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Alias of `LinearMap.continuous_iSup' ` that takes `LinearMap.BilinForm`.
 
@@ -165,7 +165,7 @@ theorem BilinForm.continuous_iSup {𝕜 E : Type*}
     Continuous fun x ↦ ⨆ y : S, f x y
 ```
 
-**`LinearMap.BilinForm.continuous_iInf`**, a theorem, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L151). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`LinearMap.BilinForm.continuous_iInf`**, a theorem, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L151). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > Alias of `LinearMap.continuous_iInf' ` that takes `LinearMap.BilinForm`.
 
@@ -177,7 +177,7 @@ theorem BilinForm.continuous_iInf {𝕜 E : Type*}
     Continuous fun x ↦ ⨅ y : S, f x y
 ```
 
-**`ContinuousLinearMap.continuous_iSup`**, a theorem, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L168). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`ContinuousLinearMap.continuous_iSup`**, a theorem, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L168). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > A specialization of `Bornology.IsBounded.continuous_iSup_bilinear` to `ContinuousLinearMap`.
 
@@ -187,7 +187,7 @@ theorem continuous_iSup
     Continuous fun x ↦ ⨆ y : S, f x y
 ```
 
-**`ContinuousLinearMap.continuous_iInf`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L173).
+**`ContinuousLinearMap.continuous_iInf`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L173).
 
 ```lean
 lemma continuous_iInf
@@ -195,7 +195,7 @@ lemma continuous_iInf
     Continuous fun x ↦ ⨅ y : S, f x y
 ```
 
-**`LinearMap.BilinForm.continuous_iSup_fst`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L181).
+**`LinearMap.BilinForm.continuous_iSup_fst`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L181).
 
 ```lean
 lemma LinearMap.BilinForm.continuous_iSup_fst
@@ -204,7 +204,7 @@ lemma LinearMap.BilinForm.continuous_iSup_fst
     Continuous fun x ↦ ⨆ y : S, f y x
 ```
 
-**`LinearMap.BilinForm.continuous_iInf_fst`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean#L260).
+**`LinearMap.BilinForm.continuous_iInf_fst`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean#L260).
 
 ```lean
 lemma LinearMap.BilinForm.continuous_iInf_fst
@@ -219,4 +219,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [QuantumInfo/ForMathlib/ContinuousSup.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/ContinuousSup.lean)
+- [QuantumInfo/ForMathlib/ContinuousSup.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/ContinuousSup.lean)

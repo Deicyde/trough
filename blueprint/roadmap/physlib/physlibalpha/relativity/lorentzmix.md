@@ -8,7 +8,7 @@ proof: formalized
 
 # The Lorentz mixing of derivative slots
 
-The module `PhyslibAlpha.Relativity.LorentzMix`, [PhyslibAlpha/Relativity/LorentzMix.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean): 19 declarations (1 instance with no name), 18 with a docstring.
+The module `PhyslibAlpha.Relativity.LorentzMix`, [PhyslibAlpha/Relativity/LorentzMix.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean): 19 declarations (1 instance with no name), 18 with a docstring.
 
 ## i. Overview
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.Relativity.LorentzMix`, [PhyslibAlpha/Relativity/Lorent
 
 ## A. The Lorentz mixing of derivative slots
 
-**`Lorentz.lorentzMixStep`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L67).
+**`Lorentz.lorentzMixStep`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L67).
 
 > One peeling step of the Lorentz mixing: the direction `a` is removed from the multiset
 > index of the family and put back as every direction `b`, weighted by `Λ_{b a}`.
@@ -45,7 +45,7 @@ noncomputable def lorentzMixStep (Λ : SL(2,ℂ)) (a : Fin 1 ⊕ Fin 3)
     (G : Multiset (Fin 1 ⊕ Fin 3) → M) : Multiset (Fin 1 ⊕ Fin 3) → M
 ```
 
-**An instance with no name**, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L72).
+**An instance with no name**, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L72).
 
 > Peeling two directions commutes, so the mixing is well defined on a multiset.
 
@@ -53,7 +53,7 @@ noncomputable def lorentzMixStep (Λ : SL(2,ℂ)) (a : Fin 1 ⊕ Fin 3)
 instance (Λ : SL(2,ℂ)) : LeftCommutative (lorentzMixStep (M := M) Λ)
 ```
 
-**`Lorentz.lorentzMix`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L83).
+**`Lorentz.lorentzMix`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L83).
 
 > The Lorentz mixing of a multiset-indexed family along a multiset `s` of directions:
 > every direction of `s` is peeled and replaced by all directions, weighted by the
@@ -64,13 +64,13 @@ noncomputable def lorentzMix (Λ : SL(2,ℂ)) (G : Multiset (Fin 1 ⊕ Fin 3) �
     (s : Multiset (Fin 1 ⊕ Fin 3)) : Multiset (Fin 1 ⊕ Fin 3) → M
 ```
 
-**`Lorentz.lorentzMix_zero`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L90).
+**`Lorentz.lorentzMix_zero`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L90).
 
 ```lean
 lemma lorentzMix_zero : lorentzMix Λ G 0 = G
 ```
 
-**`Lorentz.lorentzMix_cons_apply`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L93).
+**`Lorentz.lorentzMix_cons_apply`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L93).
 
 > Mixing along `a ::ₘ s` peels `a` after mixing along `s`.
 
@@ -79,7 +79,7 @@ lemma lorentzMix_cons_apply (a : Fin 1 ⊕ Fin 3) (s t : Multiset (Fin 1 ⊕ Fin
     lorentzMix Λ G (a ::ₘ s) t = ∑ b, L[Λ] b a • lorentzMix Λ G s (b ::ₘ t)
 ```
 
-**`Lorentz.lorentzMix_apply_add`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L99).
+**`Lorentz.lorentzMix_apply_add`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L99).
 
 > Evaluating a mixed family away from the empty multiset is mixing the translated
 > family at the empty multiset.
@@ -90,7 +90,7 @@ lemma lorentzMix_apply_add (s : Multiset (Fin 1 ⊕ Fin 3)) :
       lorentzMix Λ G s t = lorentzMix Λ (fun r => G (r + t)) s 0
 ```
 
-**`Lorentz.lorentzMix_cons_zero`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L110).
+**`Lorentz.lorentzMix_cons_zero`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L110).
 
 > Peeling at the empty multiset: the peeled direction is pushed into the family.
 
@@ -99,7 +99,7 @@ lemma lorentzMix_cons_zero (a : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)
     lorentzMix Λ G (a ::ₘ s) 0 = ∑ b, L[Λ] b a • lorentzMix Λ (fun t => G (b ::ₘ t)) s 0
 ```
 
-**`Lorentz.lorentzMix_map`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L115).
+**`Lorentz.lorentzMix_map`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L115).
 
 > The mixing operator commutes with any linear map applied to the values.
 
@@ -108,7 +108,7 @@ lemma lorentzMix_map (Φ : M →ₗ[ℂ] N) (s t : Multiset (Fin 1 ⊕ Fin 3)) :
     Φ (lorentzMix Λ G s t) = lorentzMix Λ (fun r => Φ (G r)) s t
 ```
 
-**`Lorentz.lorentzMix_smul_fam`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L122).
+**`Lorentz.lorentzMix_smul_fam`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L122).
 
 > The mixing operator is homogeneous in the family.
 
@@ -117,7 +117,7 @@ lemma lorentzMix_smul_fam (c : ℂ) (s t : Multiset (Fin 1 ⊕ Fin 3)) :
     lorentzMix Λ (fun r => c • G r) s t = c • lorentzMix Λ G s t
 ```
 
-**`Lorentz.lorentzMix_add_fam`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L127).
+**`Lorentz.lorentzMix_add_fam`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L127).
 
 > The mixing operator is additive in the family.
 
@@ -127,7 +127,7 @@ lemma lorentzMix_add_fam (G₁ G₂ : Multiset (Fin 1 ⊕ Fin 3) → M)
     lorentzMix Λ (fun r => G₁ r + G₂ r) s t = lorentzMix Λ G₁ s t + lorentzMix Λ G₂ s t
 ```
 
-**`Lorentz.lorentzMix_sum_fam`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L136).
+**`Lorentz.lorentzMix_sum_fam`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L136).
 
 > The mixing operator commutes with finite sums of families.
 
@@ -137,7 +137,7 @@ lemma lorentzMix_sum_fam {ι : Type*} [Fintype ι] (H : ι → Multiset (Fin 1 �
     lorentzMix Λ (fun r => ∑ i, H i r) s t = ∑ i, lorentzMix Λ (H i) s t
 ```
 
-**`Lorentz.lorentzMix_ofFn`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L148).
+**`Lorentz.lorentzMix_ofFn`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L148).
 
 > The mixing operator agrees with the tuple form of the Lorentz law: along an ordered
 > tuple of directions it is the sum over all tuples with one Lorentz matrix factor per
@@ -152,7 +152,7 @@ lemma lorentzMix_ofFn {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) (t : Multiset 
 
 ## B. The Leibniz convolution
 
-**`Lorentz.derivConv`**, a def, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L177).
+**`Lorentz.derivConv`**, a def, [line 177](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L177).
 
 > The Leibniz convolution of two families of derivative symbols: the sum over the
 > splittings of the multiset of the products of the two symbols.
@@ -162,7 +162,7 @@ noncomputable def derivConv (f g : Multiset (Fin 1 ⊕ Fin 3) → B)
     (s : Multiset (Fin 1 ⊕ Fin 3)) : B
 ```
 
-**`Lorentz.derivConv_cons`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L183).
+**`Lorentz.derivConv_cons`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L183).
 
 > One derivative peeled off a convolution lands on one factor or the other.
 
@@ -173,7 +173,7 @@ lemma derivConv_cons (f g : Multiset (Fin 1 ⊕ Fin 3) → B) (a : Fin 1 ⊕ Fin
       derivConv f (fun r => g (a ::ₘ r)) s + derivConv (fun r => f (a ::ₘ r)) g s
 ```
 
-**`Lorentz.derivConv_sum_right`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L192).
+**`Lorentz.derivConv_sum_right`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L192).
 
 > The convolution is linear in its right-hand family.
 
@@ -183,7 +183,7 @@ lemma derivConv_sum_right {ι : Type*} [Fintype ι] (f : Multiset (Fin 1 ⊕ Fin
     derivConv f (fun r => ∑ i, c i • g i r) s = ∑ i, c i • derivConv f (g i) s
 ```
 
-**`Lorentz.derivConv_sum_left`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L199).
+**`Lorentz.derivConv_sum_left`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L199).
 
 > The convolution is linear in its left-hand family.
 
@@ -193,7 +193,7 @@ lemma derivConv_sum_left {ι : Type*} [Fintype ι] (g : Multiset (Fin 1 ⊕ Fin 
     derivConv (fun r => ∑ i, c i • f i r) g s = ∑ i, c i • derivConv (f i) g s
 ```
 
-**`Lorentz.lorentzMix_derivConv`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L207).
+**`Lorentz.lorentzMix_derivConv`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L207).
 
 > The Lorentz mixing operator is a morphism for the Leibniz convolution: mixing the two
 > factors separately and convolving is the same as convolving and then mixing.
@@ -205,7 +205,7 @@ lemma lorentzMix_derivConv (Λ : SL(2,ℂ)) (s : Multiset (Fin 1 ⊕ Fin 3)) :
         lorentzMix Λ (derivConv f g) s 0
 ```
 
-**`Lorentz.repLorentz_derivConv`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L221).
+**`Lorentz.repLorentz_derivConv`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L221).
 
 > The Lorentz law of a Leibniz convolution: the mixing operator is a morphism for the
 > convolution, so a convolution of two families with Lorentz laws has one too.
@@ -228,7 +228,7 @@ lemma repLorentz_derivConv {repLorentz : Representation ℂ SL(2,ℂ) B}
 > correction that is linear in the family it corrects and lets a twist of the value index
 > through.
 
-**`Lorentz.repLorentz_tower`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean#L256).
+**`Lorentz.repLorentz_tower`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean#L256).
 
 > The Lorentz law of a covariant tower `T` built by the step `hstep` from a correction
 > `C`, transforming into a tower `T'` built by the same step: the seed of `T` transforms
@@ -277,4 +277,4 @@ lemma repLorentz_tower {K : Type} [Field K] {W : Type} [AddCommGroup W] [Module 
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/LorentzMix.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzMix.lean)
+- [PhyslibAlpha/Relativity/LorentzMix.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/LorentzMix.lean)

@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
  "modules": [
   {
    "file": "Physlib/ClassicalMechanics/Basic.lean",
@@ -1502,7 +1502,7 @@
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Basic.lean",
    "module": "Physlib.ClassicalMechanics.HarmonicOscillator.Basic",
    "title": "The Classical Harmonic Oscillator",
-   "doc": "## i. Overview\n\nThe classical harmonic oscillator is a classical mechanical system corresponding to a\nmass `m` under a force `- k x` where `k` is the spring constant and `x` is the position.\n\nIn this file, a coordinate system is assumed where position and velocity both have type\n`EuclideanSpace ℝ (Fin 1)`. This is a simpler model often used for pedagogical purpose,\nbut only works because both the configuration space (position) and its tangent space (velocity)\nare isomorphic to Euclidean Space. A proper formalisation should include the geometric properties\nof the state space via manifolds and tangent bundles.\n\n## ii. Key results\n\nThe key results in the study of the classical harmonic oscillator are the follows:\n\nIn the `Basic` module:\n- `HarmonicOscillator` contains the input data to the problem.\n- `EquationOfMotion` defines the equation of motion for the harmonic oscillator.\n- `energy_conservation_of_equationOfMotion` proves that a trajectory satisfying the\n  equation of motion conserves energy.\n- `equationOfMotion_tfae` proves that the equation of motion of motion is equivalent to\n  - Newton's second law,\n  - Hamilton's equations,\n  - the variational principal for the action,\n  - the Hamilton variation principal.\n\nIn the `Solution` module:\n- `InitialConditions` is a structure for the initial conditions for the harmonic oscillator.\n- `trajectories` is the trajectories to the harmonic oscillator for given initial conditions.\n- `trajectories_equationOfMotion` proves that the solution satisfies the equation of motion.\n\n## iii. Table of contents\n\n- A. The input data\n- B. The angular frequency\n- C. The energies\n  - C.1. The definitions of the energies\n  - C.2. Simple equalities for the energies\n  - C.3. Differentiability of the energies\n  - C.4. Time derivatives of the energies\n- D. Lagrangian and the equation of motion\n  - D.1. The Lagrangian\n    - D.1.1. Equalities for the lagrangian\n    - D.1.2. Smoothness of the lagrangian\n    - D.1.3. Gradients of the lagrangian\n  - D.2. The variational derivative of the action\n    - D.2.1. Equality for the variational derivative\n  - D.3. The equation of motion\n    - D.3.1. Equation of motion if and only if variational-gradient of Lagrangian is zero\n- E. Newton's second law\n  - E.1. The force\n    - E.1.1. The force is equal to `- k x`\n  - E.2. Variational derivative of lagrangian and force\n  - E.3. Equation of motion if and only if Newton's second law\n- F. Energy conservation\n  - F.1. Energy conservation in terms of time derivatives\n  - F.2. Energy conservation in terms of constant energy\n- G. Hamiltonian formulation\n  - G.1. The canonical momentum\n    - G.1.1. Equality for the canonical momentum\n  - G.2. The Hamiltonian\n    - G.2.1. Equality for the Hamiltonian\n    - G.2.2. Smoothness of the Hamiltonian\n    - G.2.3. Gradients of the Hamiltonian\n  - G.3. Relation between Hamiltonian and energy\n  - G.4. Hamilton equation operator\n  - G.5. Equation of motion if and only if Hamilton's equations\n- H. Equivalences between the different formulations of the equations of motion\n\n## iv. References\n\nReferences for the classical harmonic oscillator include:\n\n* Landau & Lifshitz, Mechanics, page 58, section 21. [ref: landau_mechanics]\n\nA reference for the geometric model of position/velocity discussed in a TODO below:\n\n* https://web.williams.edu/Mathematics/it3/texts/var_noether.pdf.\n  [ref: terek_variational_manifolds]",
+   "doc": "## i. Overview\n\nThe classical harmonic oscillator is a classical mechanical system corresponding to a\nmass `m` under a force `- k x` where `k` is the spring constant and `x` is the position.\n\nIn this file, a coordinate system is assumed where position and velocity both have type\n`EuclideanSpace ℝ (Fin 1)`. This is a simpler model often used for pedagogical purpose,\nbut only works because both the configuration space (position) and its tangent space (velocity)\nare isomorphic to Euclidean Space. A proper formalisation should include the geometric properties\nof the state space via manifolds and tangent bundles.\n\n## ii. Key results\n\nThe key results in the study of the classical harmonic oscillator are the follows:\n\nIn the `Basic` module:\n- `HarmonicOscillator` contains the input data to the problem.\n- `EquationOfMotion` defines the equation of motion for the harmonic oscillator.\n- `energy_conservation_of_equationOfMotion` proves that a trajectory satisfying the\n  equation of motion conserves energy.\n- `equationOfMotion_tfae` proves that the equation of motion of motion is equivalent to\n  - Newton's second law,\n  - Hamilton's equations,\n  - the variational principal for the action,\n  - the Hamilton variation principal.\n\nIn the `Solution` module:\n- `InitialConditions` is a structure for the initial conditions for the harmonic oscillator.\n- `trajectory` is the trajectory of the harmonic oscillator for given initial conditions.\n- `trajectory_equationOfMotion` proves that the solution satisfies the equation of motion.\n\n## iii. Table of contents\n\n- A. The input data\n- B. The angular frequency\n- C. The energies\n  - C.1. The definitions of the energies\n  - C.2. Simple equalities for the energies\n  - C.3. Differentiability of the energies\n  - C.4. Time derivatives of the energies\n- D. Lagrangian and the equation of motion\n  - D.1. The Lagrangian\n    - D.1.1. Equalities for the lagrangian\n    - D.1.2. Smoothness of the lagrangian\n    - D.1.3. Gradients of the lagrangian\n  - D.2. The variational derivative of the action\n    - D.2.1. Equality for the variational derivative\n  - D.3. The equation of motion\n    - D.3.1. Equation of motion if and only if variational-gradient of Lagrangian is zero\n- E. Newton's second law\n  - E.1. The force\n    - E.1.1. The force is equal to `- k x`\n  - E.2. Variational derivative of lagrangian and force\n  - E.3. Equation of motion if and only if Newton's second law\n- F. Energy conservation\n  - F.1. Energy conservation in terms of time derivatives\n  - F.2. Energy conservation in terms of constant energy\n- G. Hamiltonian formulation\n  - G.1. The canonical momentum\n    - G.1.1. Equality for the canonical momentum\n  - G.2. The Hamiltonian\n    - G.2.1. Equality for the Hamiltonian\n    - G.2.2. Smoothness of the Hamiltonian\n    - G.2.3. Gradients of the Hamiltonian\n  - G.3. Relation between Hamiltonian and energy\n  - G.4. Hamilton equation operator\n  - G.5. Equation of motion if and only if Hamilton's equations\n- H. Equivalences between the different formulations of the equations of motion\n\n## iv. References\n\nReferences for the classical harmonic oscillator include:\n\n* Landau & Lifshitz, Mechanics, page 58, section 21. [ref: landau_mechanics]\n\nA reference for the geometric model of position/velocity discussed in a TODO below:\n\n* https://web.williams.edu/Mathematics/it3/texts/var_noether.pdf.\n  [ref: terek_variational_manifolds]",
    "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
@@ -3274,11 +3274,11 @@
    "copyright": "2026 Michal Mogielnicki",
    "sections": [
     {
-     "line": 56,
+     "line": 54,
      "text": "## A. The Lagrangian in a chart"
     },
     {
-     "line": 105,
+     "line": 103,
      "text": "## B. The action integrand"
     }
    ],
@@ -3286,7 +3286,7 @@
     {
      "name": "ClassicalMechanics.LagrangianSystem.chartLagrangian",
      "kind": "def",
-     "line": 63,
+     "line": 61,
      "doc": "The Lagrangian in the chart `φ = extChartAt I x`, with time coordinate based at `t₀`:\n`L (t, q, q̇) = S (t +ᵥ t₀, d(φ.symm) (q, q̇))`, with generalised coordinates `q` and velocities\n`q̇`. It is meaningful only for `q` in the target of `φ`.",
      "statement": "noncomputable def chartLagrangian (S : LagrangianSystem I M) (x : M) (t₀ : Time) :\n    ℝ × E × E → ℝ",
      "sorry": false
@@ -3294,7 +3294,7 @@
     {
      "name": "ClassicalMechanics.LagrangianSystem.contDiffAt_chartLagrangian",
      "kind": "lemma",
-     "line": 69,
+     "line": 67,
      "doc": "The chart Lagrangian is smooth over the target of the chart.",
      "statement": "lemma contDiffAt_chartLagrangian [I.Boundaryless] (S : LagrangianSystem I M)\n    (x : M) (t₀ : Time) {p : ℝ × E × E} (hp : p.2.1 ∈ (extChartAt I x).target) :\n    ContDiffAt ℝ ∞ (S.chartLagrangian x t₀) p",
      "sorry": false
@@ -3302,7 +3302,7 @@
     {
      "name": "ClassicalMechanics.LagrangianSystem.exists_contDiff_chartLagrangian_eq",
      "kind": "lemma",
-     "line": 90,
+     "line": 88,
      "doc": "A chart Lagrangian agrees with a globally smooth one near a compact set of positions.",
      "statement": "lemma exists_contDiff_chartLagrangian_eq [I.Boundaryless] [FiniteDimensional ℝ E]\n    (S : LagrangianSystem I M) (x : M) (t₀ : Time) {K : Set E} (hK : IsCompact K)\n    (hKx : K ⊆ (extChartAt I x).target) :\n    ∃ (L : ℝ × E × E → ℝ) (N : Set E), IsOpen N ∧ K ⊆ N ∧ N ⊆ (extChartAt I x).target ∧\n      ContDiff ℝ ∞ L ∧ ∀ p : ℝ × E × E, p.2.1 ∈ N → L p = S.chartLagrangian x t₀ p",
      "sorry": false
@@ -3310,7 +3310,7 @@
     {
      "name": "ClassicalMechanics.LagrangianSystem.action_integrand_eq_chartLagrangian",
      "kind": "lemma",
-     "line": 110,
+     "line": 108,
      "doc": "Near a chart-read curve the action integrand is the chart Lagrangian.",
      "statement": "lemma action_integrand_eq_chartLagrangian [I.Boundaryless]\n    (S : LagrangianSystem I M) (x : M) (t₀ : Time) {γ' : Time → M} {c : Time → E} {τ : ℝ}\n    (hev : γ' =ᶠ[𝓝 (τ +ᵥ t₀)] (extChartAt I x).symm ∘ c)\n    (hc : ContMDiffAt 𝓘(ℝ, ℝ) 𝓘(ℝ, E) ∞ c (τ +ᵥ t₀))\n    (hcx : c (τ +ᵥ t₀) ∈ (extChartAt I x).target) :\n    S (τ +ᵥ t₀, tangentMap 𝓘(ℝ, ℝ) I γ' ⟨τ +ᵥ t₀, (1 : ℝ)⟩) =\n      S.chartLagrangian x t₀ (τ, c (τ +ᵥ t₀), deriv (fun σ : ℝ ↦ c (σ +ᵥ t₀)) τ)",
      "sorry": false
@@ -3318,7 +3318,7 @@
     {
      "name": "ClassicalMechanics.LagrangianSystem.action_integrand_eq_of_eventuallyEq",
      "kind": "lemma",
-     "line": 134,
+     "line": 132,
      "doc": "If `γ'` is the chart-read curve `t ↦ (extChartAt I x).symm (c (t -ᵥ t₀))` near `τ +ᵥ t₀` and\n`L` agrees with the chart Lagrangian over positions in `N ∋ c τ`, the action integrand at `τ` is\n`L (τ, c τ, deriv c τ)`. Here `c` is a function of the time relative to `t₀`.",
      "statement": "lemma action_integrand_eq_of_eventuallyEq [I.Boundaryless]\n    (S : LagrangianSystem I M) (x : M) (t₀ : Time) {γ' : Time → M} {c : ℝ → E} {τ : ℝ}\n    {L : ℝ × E × E → ℝ} {N : Set E}\n    (hN : N ⊆ (extChartAt I x).target)\n    (hLN : ∀ p : ℝ × E × E, p.2.1 ∈ N → L p = S.chartLagrangian x t₀ p) (hc : ContDiffAt ℝ ∞ c τ)\n    (hcN : c τ ∈ N)\n    (hev : γ' =ᶠ[𝓝 (τ +ᵥ t₀)] (extChartAt I x).symm ∘ fun t ↦ c (t -ᵥ t₀)) :\n    S (τ +ᵥ t₀, tangentMap 𝓘(ℝ, ℝ) I γ' ⟨τ +ᵥ t₀, (1 : ℝ)⟩) = L (τ, c τ, deriv c τ)",
      "sorry": false
@@ -3326,7 +3326,7 @@
     {
      "name": "ClassicalMechanics.LagrangianSystem.continuousAt_action_integrand",
      "kind": "lemma",
-     "line": 152,
+     "line": 150,
      "doc": "The action integrand of a smooth curve is continuous.",
      "statement": "lemma continuousAt_action_integrand [I.Boundaryless]\n    (S : LagrangianSystem I M) (t₀ : Time) {γ' : Time → M} (hγ' : ContMDiff 𝓘(ℝ, ℝ) I ∞ γ')\n    (τ : ℝ) : ContinuousAt (fun τ : ℝ ↦\n      S (τ +ᵥ t₀, tangentMap 𝓘(ℝ, ℝ) I γ' ⟨τ +ᵥ t₀, (1 : ℝ)⟩)) τ",
      "sorry": false
@@ -3727,32 +3727,52 @@
   {
    "file": "Physlib/ClassicalMechanics/OrbitalMechanics/VisViva.lean",
    "module": "Physlib.ClassicalMechanics.OrbitalMechanics.VisViva",
-   "title": "Circular Orbit Vis Viva",
-   "doc": "The vis-viva equation relates the speed of an orbiting body to its position\nand the mass of the central body.\n\n## i. Overview\n\nThe circular-orbit case of the vis-viva equation gives the speed from the radius and the\ngravitational parameter. It also relates the speed to the positive angular rate.\n\n## ii. Key results\n\n- `VisViva.speedCircular_sq` gives the squared speed of a circular orbit.\n- `VisViva.speedCircular_eq_radius_mul_angularRate` expresses the speed using the angular rate.\n\n## iii. Table of contents\n\n- A. System parameters and orbital radius\n  - A.1. System parameters\n  - A.2. Orbital radius\n- B. Circular orbit speed\n  - B.1. Speed from the vis-viva equation\n  - B.2. Relation to the angular rate\n\n## iv. References\n\n* None.",
+   "title": "Vis viva for circular orbits and the escape speed",
+   "doc": "The vis-viva equation relates the speed of an orbiting body to its position\nand the mass of the central body.\n\n## i. Overview\n\nThe circular-orbit case of the vis-viva equation gives the speed from the radius and the\ngravitational parameter. It also relates the speed to the positive angular rate.\n\nTwo mass conventions appear. The circular speed, the specific orbital energy and the escape speed\nuse the gravitational parameter `G M` of the central body alone, the limit of a test body with\n`m ≪ M`. The period of the two-body orbit and the reflex motion use the total mass `M + m`.\n\nFor two bodies of masses `M` and `m` on a circular orbit of separation `r`, the central body also\nmoves, on a circle about the barycentre. Its reflex speed, written with the orbital period from\nKepler's third law, is the radial-velocity semi-amplitude of a star with a planet on an edge-on\ncircular orbit.\n\nThe specific orbital energy `v² / 2 - G M / r` is negative on a circular orbit, where it equals\nhalf the potential energy per unit mass, and vanishes at the escape speed `√(2 G M / r)`, which\nis `√2` times the circular speed at the same radius.\n\n## ii. Key results\n\n- `VisViva.speedCircular_sq` gives the squared speed of a circular orbit.\n- `VisViva.speedCircular_eq_radius_mul_angularRate` expresses the speed using the angular rate.\n- `VisViva.periodTwoBody_sq` is Kepler's third law for a circular two-body orbit.\n- `VisViva.reflexSpeed_pow_three` gives the cube of the reflex speed of the central body in terms of\n  the period, `K³ = 2π G m³ / (P (M + m)²)`.\n- `VisViva.specificOrbitalEnergy_speedCircular` and `VisViva.specificOrbitalEnergy_speedEscape`\n  evaluate the specific orbital energy on a circular orbit and at the escape speed.\n- `VisViva.speedEscape_eq_sqrt_two_mul_speedCircular` and `VisViva.speedCircular_lt_speedEscape`\n  relate the escape speed to the circular speed.\n\n## iii. Table of contents\n\n- A. System parameters and orbital radius\n  - A.1. System parameters\n  - A.2. Orbital radius\n- B. Circular orbit speed\n  - B.1. Speed from the vis-viva equation\n  - B.2. Relation to the angular rate\n- C. Reflex motion of the central body\n  - C.1. The period of a two-body orbit\n  - C.2. The reflex speed\n- D. Escape speed\n  - D.1. The specific orbital energy\n  - D.2. The escape speed\n  - D.3. Relation to the circular speed\n\n## iv. References\n\n* Landau & Lifshitz, Mechanics, 3rd ed., sections 13 and 15. [ref: landau_mechanics]\n* Perryman, The Exoplanet Handbook, 2nd ed., chapter 2. [ref: perryman_exoplanet_handbook]",
    "copyright": "2026 Hannah Dawe",
    "sections": [
     {
-     "line": 44,
+     "line": 72,
      "text": "## A. System parameters and orbital radius\n\n### A.1. System parameters"
     },
     {
-     "line": 61,
+     "line": 89,
      "text": "### A.2. Orbital radius"
     },
     {
-     "line": 70,
+     "line": 98,
      "text": "## B. Circular orbit speed\n\n### B.1. Speed from the vis-viva equation"
     },
     {
-     "line": 86,
+     "line": 114,
      "text": "### B.2. Relation to the angular rate"
+    },
+    {
+     "line": 128,
+     "text": "## C. Reflex motion of the central body\n\n### C.1. The period of a two-body orbit"
+    },
+    {
+     "line": 148,
+     "text": "### C.2. The reflex speed"
+    },
+    {
+     "line": 176,
+     "text": "## D. Escape speed\n\n### D.1. The specific orbital energy"
+    },
+    {
+     "line": 196,
+     "text": "### D.2. The escape speed"
+    },
+    {
+     "line": 224,
+     "text": "### D.3. Relation to the circular speed"
     }
    ],
    "declarations": [
     {
      "name": "ClassicalMechanics.VisViva",
      "kind": "structure",
-     "line": 51,
+     "line": 79,
      "doc": "System parameters for the vis-viva equation in circular orbital mechanics.",
      "statement": "structure VisViva where\n  /-- Gravitational constant. -/\n  G : ℝ\n  /-- Central mass body. -/\n  M : ℝ\n  /-- Orbiting mass body. -/\n  m : ℝ",
      "sorry": false
@@ -3760,7 +3780,7 @@
     {
      "name": "ClassicalMechanics.VisViva.ConfigurationSpace",
      "kind": "structure",
-     "line": 66,
+     "line": 94,
      "doc": "Configuration space for orbital mechanics, defining the orbital radius.",
      "statement": "structure ConfigurationSpace where\n  /-- Orbital radius. -/\n  r : ℝ",
      "sorry": false
@@ -3768,7 +3788,7 @@
     {
      "name": "ClassicalMechanics.VisViva.speedCircular",
      "kind": "def",
-     "line": 77,
+     "line": 105,
      "doc": "The orbital speed required for a circular orbit at radius `r`.",
      "statement": "noncomputable def speedCircular (sys : VisViva) (cfg : ConfigurationSpace) : ℝ",
      "sorry": false
@@ -3776,7 +3796,7 @@
     {
      "name": "ClassicalMechanics.VisViva.speedCircular_sq",
      "kind": "lemma",
-     "line": 81,
+     "line": 109,
      "doc": "Lemma: the square of the circular orbit speed equals G M / r.",
      "statement": "lemma speedCircular_sq (sys : VisViva) (cfg : ConfigurationSpace) (hr : 0 < cfg.r) (hG : 0 < sys.G)\n    (hM : 0 < sys.M) :\n    (speedCircular sys cfg)^2 = sys.G * sys.M / cfg.r",
      "sorry": false
@@ -3784,9 +3804,121 @@
     {
      "name": "ClassicalMechanics.VisViva.speedCircular_eq_radius_mul_angularRate",
      "kind": "lemma",
-     "line": 91,
+     "line": 119,
      "doc": "The circular speed equals the orbital radius times the positive circular angular rate.",
      "statement": "lemma speedCircular_eq_radius_mul_angularRate (sys : VisViva) (cfg : ConfigurationSpace)\n    (hr : 0 < cfg.r) (hG : 0 < sys.G) (hM : 0 < sys.M) :\n    sys.speedCircular cfg = cfg.r * Real.sqrt (sys.G * sys.M / cfg.r ^ 3)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.VisViva.periodTwoBody",
+     "kind": "def",
+     "line": 136,
+     "doc": "The period of a circular orbit of two bodies of masses `M` and `m` at separation `r`, from\nKepler's third law with the total mass `M + m`.",
+     "statement": "noncomputable def periodTwoBody (sys : VisViva) (cfg : ConfigurationSpace) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.VisViva.periodTwoBody_sq",
+     "kind": "lemma",
+     "line": 140,
+     "doc": "Kepler's third law for a circular two-body orbit, `P² G (M + m) = 4π² r³`.",
+     "statement": "lemma periodTwoBody_sq (sys : VisViva) (cfg : ConfigurationSpace) (hr : 0 < cfg.r)\n    (hG : 0 < sys.G) (hM : 0 < sys.M) (hm : 0 < sys.m) :\n    sys.periodTwoBody cfg ^ 2 * (sys.G * (sys.M + sys.m)) = 4 * Real.pi ^ 2 * cfg.r ^ 3",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.VisViva.reflexRadius",
+     "kind": "def",
+     "line": 153,
+     "doc": "The distance of the central body from the barycentre, `m r / (M + m)`.",
+     "statement": "noncomputable def reflexRadius (sys : VisViva) (cfg : ConfigurationSpace) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.VisViva.reflexSpeed",
+     "kind": "def",
+     "line": 159,
+     "doc": "The reflex speed of the central body, which goes once round a circle of radius\n`reflexRadius` per orbital period. For a star with a planet on an edge-on circular orbit, this is\nthe radial-velocity semi-amplitude `K`.",
+     "statement": "noncomputable def reflexSpeed (sys : VisViva) (cfg : ConfigurationSpace) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.VisViva.reflexSpeed_pow_three",
+     "kind": "lemma",
+     "line": 164,
+     "doc": "The reflex speed in terms of the period, `K³ = 2π G m³ / (P (M + m)²)`. Taking the cube root\ngives the radial-velocity semi-amplitude `K = (2π G / P)^{1/3} m / (M + m)^{2/3}`.",
+     "statement": "lemma reflexSpeed_pow_three (sys : VisViva) (cfg : ConfigurationSpace) (hr : 0 < cfg.r)\n    (hG : 0 < sys.G) (hM : 0 < sys.M) (hm : 0 < sys.m) :\n    sys.reflexSpeed cfg ^ 3 =\n      2 * Real.pi * sys.G * sys.m ^ 3 / (sys.periodTwoBody cfg * (sys.M + sys.m) ^ 2)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.VisViva.specificOrbitalEnergy",
+     "kind": "def",
+     "line": 185,
+     "doc": "The specific orbital energy of the orbiting body moving at speed `v` at radius `r`: the\nkinetic energy per unit mass `v² / 2` plus the gravitational potential energy per unit mass\n`-G M / r`.",
+     "statement": "noncomputable def specificOrbitalEnergy (sys : VisViva) (cfg : ConfigurationSpace) (v : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.VisViva.specificOrbitalEnergy_speedCircular",
+     "kind": "lemma",
+     "line": 190,
+     "doc": "On a circular orbit the specific orbital energy is `-(G M / r) / 2`, half the potential\nenergy per unit mass.",
+     "statement": "lemma specificOrbitalEnergy_speedCircular (sys : VisViva) (cfg : ConfigurationSpace)\n    (hr : 0 < cfg.r) (hG : 0 < sys.G) (hM : 0 < sys.M) :\n    sys.specificOrbitalEnergy cfg (sys.speedCircular cfg) = -(sys.G * sys.M / cfg.r) / 2",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.VisViva.speedEscape",
+     "kind": "def",
+     "line": 202,
+     "doc": "The escape speed from radius `r`, `√(2 G M / r)`: the speed at which the specific orbital\nenergy vanishes, so that the body can just reach infinite separation.",
+     "statement": "noncomputable def speedEscape (sys : VisViva) (cfg : ConfigurationSpace) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.VisViva.speedEscape_sq",
+     "kind": "lemma",
+     "line": 206,
+     "doc": "The square of the escape speed equals `2 G M / r`.",
+     "statement": "lemma speedEscape_sq (sys : VisViva) (cfg : ConfigurationSpace) (hr : 0 < cfg.r)\n    (hG : 0 < sys.G) (hM : 0 < sys.M) :\n    sys.speedEscape cfg ^ 2 = 2 * sys.G * sys.M / cfg.r",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.VisViva.speedEscape_pos",
+     "kind": "lemma",
+     "line": 212,
+     "doc": "The escape speed is positive.",
+     "statement": "lemma speedEscape_pos (sys : VisViva) (cfg : ConfigurationSpace) (hr : 0 < cfg.r)\n    (hG : 0 < sys.G) (hM : 0 < sys.M) :\n    0 < sys.speedEscape cfg",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.VisViva.specificOrbitalEnergy_speedEscape",
+     "kind": "lemma",
+     "line": 218,
+     "doc": "At the escape speed the specific orbital energy vanishes.",
+     "statement": "lemma specificOrbitalEnergy_speedEscape (sys : VisViva) (cfg : ConfigurationSpace)\n    (hr : 0 < cfg.r) (hG : 0 < sys.G) (hM : 0 < sys.M) :\n    sys.specificOrbitalEnergy cfg (sys.speedEscape cfg) = 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.VisViva.speedEscape_eq_sqrt_two_mul_speedCircular",
+     "kind": "lemma",
+     "line": 229,
+     "doc": "The escape speed is `√2` times the circular speed at the same radius.",
+     "statement": "lemma speedEscape_eq_sqrt_two_mul_speedCircular (sys : VisViva) (cfg : ConfigurationSpace) :\n    sys.speedEscape cfg = Real.sqrt 2 * sys.speedCircular cfg",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.VisViva.speedEscape_sq_eq_two_mul_speedCircular_sq",
+     "kind": "lemma",
+     "line": 236,
+     "doc": "The square of the escape speed is twice the square of the circular speed.",
+     "statement": "lemma speedEscape_sq_eq_two_mul_speedCircular_sq (sys : VisViva) (cfg : ConfigurationSpace) :\n    sys.speedEscape cfg ^ 2 = 2 * sys.speedCircular cfg ^ 2",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.VisViva.speedCircular_lt_speedEscape",
+     "kind": "lemma",
+     "line": 242,
+     "doc": "A body on a circular orbit moves more slowly than the escape speed: it is bound.",
+     "statement": "lemma speedCircular_lt_speedEscape (sys : VisViva) (cfg : ConfigurationSpace) (hr : 0 < cfg.r)\n    (hG : 0 < sys.G) (hM : 0 < sys.M) :\n    sys.speedCircular cfg < sys.speedEscape cfg",
      "sorry": false
     }
    ],
@@ -6392,54 +6524,38 @@
    "file": "Physlib/ClassicalMechanics/PointParticle/Basic.lean",
    "module": "Physlib.ClassicalMechanics.PointParticle.Basic",
    "title": "Point particles",
-   "doc": "This module defines point particles together with their motion relative to a\nreference frame. A `Particle` has a constant positive mass and a position over\ntime. Velocity and acceleration are derived from that position rather than stored\nas independent data.\n\nThe trajectory is part of the particle's description, but need not be given by an\nexplicit solution formula. Particle values can be considered subject to conditions\non their positions and on the forces acting on them. A particular mechanical model\ncan therefore be specified by constraints on particles, with the existence of\nparticles satisfying those constraints established separately.\n\nA particle by itself carries no equation of motion or assumption about which\nforces act on it. It is a constituent from which systems can be assembled, rather\nthan a specification of an isolated or unconstrained one-particle system. Newton's\nlaws are imposed when particles and forces are assembled in\n`ClassicalMechanics.PointParticle.NewtonianSystem`.\n\nPosition and its first time derivative are required to be differentiable when the\nframe is inertial. This ensures that the velocity and acceleration used in\nNewtonian systems are genuine derivatives. The trajectories in this definition\nare defined for all real-valued time coordinates relative to the frame's time origin.",
+   "doc": "This module defines point particles together with their motion relative to a\nreference frame. A `Particle` has a constant positive mass and a position over\ntime. Velocity and acceleration are derived from that position rather than stored\nas independent data.\n\nThe trajectory is part of the particle's description, but need not be given by an\nexplicit solution formula. Particle values can be considered subject to conditions\non their positions and on the forces acting on them. A particular mechanical model\ncan therefore be specified by constraints on particles, with the existence of\nparticles satisfying those constraints established separately.\n\nA particle by itself carries no equation of motion or assumption about which\nforces act on it. It is a constituent from which systems can be assembled, rather\nthan a specification of an isolated or unconstrained one-particle system. Newton's\nlaws are imposed when particles and forces are assembled in\n`ClassicalMechanics.PointParticle.NewtonianSystem`.",
    "copyright": "2026 Raunak Chhatwal",
    "sections": [],
    "declarations": [
     {
      "name": "ClassicalMechanics.ReferenceFrame.Particle",
      "kind": "structure",
-     "line": 47,
+     "line": 43,
      "doc": "A point particle in `frame`.",
-     "statement": "structure Particle (frame : ReferenceFrame d) where\n  /-- The particle's mass. -/\n  mass : ℝ+\n  /-- The particle's position in frame coordinates. -/\n  pos : ℝ → frame.Vector\n  pos_twice_differentiable :\n    frame.IsInertial → Differentiable ℝ pos ∧ Differentiable ℝ (deriv pos)",
-     "sorry": false
-    },
-    {
-     "name": "",
-     "kind": "instance",
-     "line": 60,
-     "doc": "Position is differentiable in an inertial frame.",
-     "statement": "instance [h : Fact frame.IsInertial] : Fact (Differentiable ℝ particle.pos)",
+     "statement": "structure Particle (frame : ReferenceFrame d) where\n  /-- The particle's mass. -/\n  mass : ℝ+\n  /-- The particle's position in frame coordinates. -/\n  pos : ℝ → frame.Vector\n  pos_twice_differentiable : Differentiable ℝ pos ∧ Differentiable ℝ (deriv pos)",
      "sorry": false
     },
     {
      "name": "ClassicalMechanics.ReferenceFrame.Particle.velocity",
      "kind": "def",
-     "line": 64,
+     "line": 55,
      "doc": "The particle's velocity.",
-     "statement": "def velocity [_h : Fact (Differentiable ℝ particle.pos)] : ℝ → frame.Vector",
-     "sorry": false
-    },
-    {
-     "name": "",
-     "kind": "instance",
-     "line": 68,
-     "doc": "Velocity is differentiable in an inertial frame.",
-     "statement": "instance [h : Fact frame.IsInertial] : Fact (Differentiable ℝ particle.velocity)",
+     "statement": "def velocity : ℝ → frame.Vector",
      "sorry": false
     },
     {
      "name": "ClassicalMechanics.ReferenceFrame.Particle.acceleration",
      "kind": "def",
-     "line": 72,
+     "line": 59,
      "doc": "The particle's acceleration.",
-     "statement": "def acceleration [Fact (Differentiable ℝ particle.pos)]\n    [_h : Fact (Differentiable ℝ particle.velocity)] : ℝ → frame.Vector",
+     "statement": "def acceleration  : ℝ → frame.Vector",
      "sorry": false
     },
     {
      "name": "ClassicalMechanics.ReferenceFrame.Particle.pointInSpace",
      "kind": "def",
-     "line": 77,
+     "line": 63,
      "doc": "The particle's position in affine space at frame time coordinate `t`.",
      "statement": "def pointInSpace (t : ℝ) : Space d",
      "sorry": false
@@ -6461,15 +6577,15 @@
      "text": "## A. Systems"
     },
     {
-     "line": 76,
+     "line": 73,
      "text": "## B. System particles"
     },
     {
-     "line": 110,
+     "line": 107,
      "text": "## C. System forces"
     },
     {
-     "line": 183,
+     "line": 212,
      "text": "## D. Aggregate quantities"
     }
    ],
@@ -6479,21 +6595,13 @@
      "kind": "structure",
      "line": 53,
      "doc": "A finite system of point particles satisfying Newton's laws.",
-     "statement": "structure NewtonianSystem (d : ℕ) where\n  /-- The system's reference frame. -/\n  frame : ReferenceFrame d\n  [isInertial : Fact frame.IsInertial]\n  /-- The particles in the system. -/\n  particles : Multiset frame.Particle\n  /-- Forces between particles in the system. -/\n  internalForces : Multiset (frame.InternalForce particles)\n  /-- Forces on the system from external sources. -/\n  externalForces : Multiset (frame.Force particles)\n  /-- Newton's second law: the net force on each particle equals its mass times its acceleration. -/\n  newton_second_law : ∀ particle : particles,\n    netForce particle internalForces externalForces = particle.1.mass • particle.1.acceleration\n  /-- Newton's third law: internal forces and their reverses occur with equal multiplicities. -/\n  newton_third_law : internalForces.map .reverse = internalForces",
-     "sorry": false
-    },
-    {
-     "name": "",
-     "kind": "instance",
-     "line": 73,
-     "doc": "",
-     "statement": "instance : Fact system.frame.IsInertial",
+     "statement": "structure NewtonianSystem (d : ℕ) where\n  /-- The system's reference frame. -/\n  frame : ReferenceFrame d\n  frame_inertial : frame.IsInertial\n  /-- The particles in the system. -/\n  particles : Multiset frame.Particle\n  /-- Forces between particles in the system. -/\n  internalForces : Multiset (frame.InternalForce particles)\n  /-- Forces on the system from external sources. -/\n  externalForces : Multiset (frame.Force particles)\n  /-- Newton's second law: the net force on each particle equals its mass times its acceleration. -/\n  newton_second_law : ∀ particle : particles,\n    netForce particle internalForces externalForces = particle.1.mass • particle.1.acceleration\n  /-- Newton's third law: internal forces and their reverses occur with equal multiplicities. -/\n  newton_third_law : internalForces.map .reverse = internalForces",
      "sorry": false
     },
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.Vector",
      "kind": "abbrev",
-     "line": 81,
+     "line": 78,
      "doc": "Vectors in the system's frame.",
      "statement": "abbrev Vector",
      "sorry": false
@@ -6501,7 +6609,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.Particle",
      "kind": "abbrev",
-     "line": 84,
+     "line": 81,
      "doc": "A particle in `system`.",
      "statement": "abbrev Particle : Type",
      "sorry": false
@@ -6509,7 +6617,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.Particle.mass",
      "kind": "def",
-     "line": 91,
+     "line": 88,
      "doc": "The particle's mass.",
      "statement": "def mass : ℝ+",
      "sorry": false
@@ -6517,7 +6625,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.Particle.pos",
      "kind": "def",
-     "line": 94,
+     "line": 91,
      "doc": "The particle's position at `t`.",
      "statement": "def pos : system.Vector",
      "sorry": false
@@ -6525,7 +6633,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.Particle.velocity",
      "kind": "def",
-     "line": 97,
+     "line": 94,
      "doc": "The particle's velocity at `t`.",
      "statement": "def velocity : system.Vector",
      "sorry": false
@@ -6533,7 +6641,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.Particle.acceleration",
      "kind": "def",
-     "line": 100,
+     "line": 97,
      "doc": "The particle's acceleration at `t`.",
      "statement": "def acceleration : system.Vector",
      "sorry": false
@@ -6541,7 +6649,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.Particle.momentum",
      "kind": "def",
-     "line": 103,
+     "line": 100,
      "doc": "The particle's momentum at `t`.",
      "statement": "def momentum : system.Vector",
      "sorry": false
@@ -6549,7 +6657,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.Particle.kineticEnergy",
      "kind": "def",
-     "line": 106,
+     "line": 103,
      "doc": "The particle's kinetic energy at `t`.",
      "statement": "def kineticEnergy : ℝ",
      "sorry": false
@@ -6557,7 +6665,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.Force",
      "kind": "abbrev",
-     "line": 115,
+     "line": 112,
      "doc": "A force in `system`.",
      "statement": "abbrev Force : Type",
      "sorry": false
@@ -6565,7 +6673,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.Force.inner",
      "kind": "def",
-     "line": 123,
+     "line": 120,
      "doc": "The underlying force.",
      "statement": "def inner : system.frame.Force system.Particle",
      "sorry": false
@@ -6573,7 +6681,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 126,
+     "line": 123,
      "doc": "",
      "statement": "instance : Coe system.Force (system.frame.Force system.Particle)",
      "sorry": false
@@ -6581,7 +6689,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.Force.value",
      "kind": "def",
-     "line": 129,
+     "line": 126,
      "doc": "The force at `t`.",
      "statement": "def value (t : ℝ) : system.Vector",
      "sorry": false
@@ -6589,7 +6697,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 131,
+     "line": 128,
      "doc": "",
      "statement": "instance : CoeFun system.Force (fun _ => ℝ → system.Vector)",
      "sorry": false
@@ -6597,7 +6705,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.Force.target",
      "kind": "def",
-     "line": 135,
+     "line": 132,
      "doc": "The force's target.",
      "statement": "def target : system.Particle",
      "sorry": false
@@ -6605,7 +6713,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.Force.Internal",
      "kind": "def",
-     "line": 138,
+     "line": 135,
      "doc": "Whether `force` is internal.",
      "statement": "def Internal : Prop",
      "sorry": false
@@ -6613,7 +6721,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.Force.External",
      "kind": "def",
-     "line": 141,
+     "line": 138,
      "doc": "Whether `force` is external.",
      "statement": "def External : Prop",
      "sorry": false
@@ -6621,7 +6729,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce",
      "kind": "abbrev",
-     "line": 146,
+     "line": 143,
      "doc": "An internal force in `system`.",
      "statement": "abbrev InternalForce : Type",
      "sorry": false
@@ -6629,7 +6737,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 153,
+     "line": 150,
      "doc": "View an internal force as a system force.",
      "statement": "instance : Coe system.InternalForce system.Force",
      "sorry": false
@@ -6637,7 +6745,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.value",
      "kind": "def",
-     "line": 156,
+     "line": 153,
      "doc": "The force at `t`.",
      "statement": "def value (t : ℝ) : system.Vector",
      "sorry": false
@@ -6645,7 +6753,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.target",
      "kind": "def",
-     "line": 159,
+     "line": 156,
      "doc": "The force's target.",
      "statement": "def target : system.Particle",
      "sorry": false
@@ -6653,7 +6761,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.source",
      "kind": "def",
-     "line": 162,
+     "line": 159,
      "doc": "The force's source.",
      "statement": "def source : system.Particle",
      "sorry": false
@@ -6661,7 +6769,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.reverse_count_eq",
      "kind": "lemma",
-     "line": 165,
+     "line": 162,
      "doc": "A force and its reverse have the same multiplicity.",
      "statement": "lemma reverse_count_eq :\n    system.internalForces.count force.1.reverse = system.internalForces.count force.1",
      "sorry": false
@@ -6669,7 +6777,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.reverse",
      "kind": "def",
-     "line": 174,
+     "line": 171,
      "doc": "The reverse force.",
      "statement": "def reverse : system.InternalForce",
      "sorry": false
@@ -6677,15 +6785,31 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.Central",
      "kind": "def",
-     "line": 178,
+     "line": 175,
      "doc": "Whether the force lies along the line joining its source and target.",
      "statement": "def Central : Prop",
      "sorry": false
     },
     {
+     "name": "ClassicalMechanics.PointParticle.NewtonianSystem.internalForce_sum_zero",
+     "kind": "lemma",
+     "line": 181,
+     "doc": "The internal forces cancel in pairs by Newton's third law.",
+     "statement": "lemma internalForce_sum_zero (t : ℝ) :\n    (system.internalForces.map (fun f => f.value t)).sum = 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PointParticle.NewtonianSystem.sum_mass_acceleration_eq_zero",
+     "kind": "lemma",
+     "line": 196,
+     "doc": "With no external forces, the sum of mass times acceleration vanishes.",
+     "statement": "lemma sum_mass_acceleration_eq_zero (hExt : system.externalForces = 0) (t : ℝ) :\n    ∑ p : system.Particle, p.mass.val • p.acceleration t = 0",
+     "sorry": false
+    },
+    {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.mass",
      "kind": "def",
-     "line": 190,
+     "line": 219,
      "doc": "Total mass.",
      "statement": "def mass : ℝ",
      "sorry": false
@@ -6693,7 +6817,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.momentum",
      "kind": "def",
-     "line": 194,
+     "line": 223,
      "doc": "Total momentum at `t`.",
      "statement": "def momentum : system.Vector",
      "sorry": false
@@ -6701,7 +6825,7 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.netExternalForce",
      "kind": "def",
-     "line": 198,
+     "line": 227,
      "doc": "Net external force at `t`.",
      "statement": "def netExternalForce : system.Vector",
      "sorry": false
@@ -6709,9 +6833,59 @@
     {
      "name": "ClassicalMechanics.PointParticle.NewtonianSystem.kineticEnergy",
      "kind": "def",
-     "line": 202,
+     "line": 231,
      "doc": "Total kinetic energy at `t`.",
      "statement": "def kineticEnergy : ℝ",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/CenterOfMass.lean",
+   "module": "Physlib.ClassicalMechanics.PointParticle.NewtonianSystem.CenterOfMass",
+   "title": "Center of mass of a Newtonian system",
+   "doc": "Motion of the mass-weighted average of the particle positions in an inertial frame.\n\n## i. Overview\n\nThe center of mass is the mass-weighted average of the particle positions. Its velocity is\nthe total momentum divided by the total mass. When there are no external forces,\n`sum_mass_acceleration_eq_zero` from `NewtonianSystem.Basic` gives a zero derivative for\nthe total momentum. The center of mass then moves with constant velocity, so its position\nat any time is determined by its position and the total momentum at a reference time.\n\n## ii. Key results\n\n- `hasDerivAt_centerOfMass` expresses the center-of-mass velocity in terms of total momentum.\n- `centerOfMass_eq_of_noExternalForces` gives the center-of-mass position at any time from\n  its position and the total momentum at a reference time.\n\n## iii. Table of contents\n\n- A. Motion of the center of mass\n\n## iv. References\n\n* [ref: goldstein_classicalmechanics], Chapter 1.",
+   "copyright": "2026 Qianli Ma",
+   "sections": [
+    {
+     "line": 48,
+     "text": "## A. Motion of the center of mass"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.PointParticle.NewtonianSystem.centerOfMass",
+     "kind": "def",
+     "line": 53,
+     "doc": "The center of mass in the system's frame coordinates.",
+     "statement": "def centerOfMass (t : ℝ) : S.Vector",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PointParticle.NewtonianSystem.hasDerivAt_centerOfMass",
+     "kind": "lemma",
+     "line": 57,
+     "doc": "The center-of-mass velocity is the total momentum divided by the total mass.",
+     "statement": "lemma hasDerivAt_centerOfMass (t : ℝ) :\n    HasDerivAt S.centerOfMass (S.mass⁻¹ • S.momentum t) t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PointParticle.NewtonianSystem.hasDerivAt_centerOfMass_of_noExternalForces",
+     "kind": "lemma",
+     "line": 66,
+     "doc": "In the absence of external forces, the center of mass moves with a constant velocity.",
+     "statement": "lemma hasDerivAt_centerOfMass_of_noExternalForces (hExt : S.externalForces = 0) (t₀ t : ℝ) :\n    HasDerivAt S.centerOfMass (S.mass⁻¹ • S.momentum t₀) t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PointParticle.NewtonianSystem.centerOfMass_eq_of_noExternalForces",
+     "kind": "lemma",
+     "line": 79,
+     "doc": "The center of mass follows the straight line fixed by its initial position and momentum.",
+     "statement": "lemma centerOfMass_eq_of_noExternalForces (hExt : S.externalForces = 0) (t₀ t : ℝ) :\n    S.centerOfMass t = S.centerOfMass t₀ + (t - t₀) • (S.mass⁻¹ • S.momentum t₀)",
      "sorry": false
     }
    ],
@@ -6956,7 +7130,7 @@
     {
      "name": "RigidBody",
      "kind": "structure",
-     "line": 44,
+     "line": 43,
      "doc": "A Rigid body defined by its mass distribution.",
      "statement": "structure RigidBody (d : ℕ) where\n  /-- The mass distribution of the rigid body. -/\n  ρ : C^⊤⟮𝓘(ℝ, Space d), Space d; 𝓘(ℝ, ℝ), ℝ⟯ →ₗ[ℝ] ℝ",
      "sorry": false
@@ -6964,7 +7138,7 @@
     {
      "name": "RigidBody.mass",
      "kind": "def",
-     "line": 51,
+     "line": 50,
      "doc": "The total mass of the rigid body.",
      "statement": "noncomputable def mass {d : ℕ} (R : RigidBody d) : ℝ",
      "sorry": false
@@ -6972,7 +7146,7 @@
     {
      "name": "RigidBody.rho_one",
      "kind": "lemma",
-     "line": 55,
+     "line": 54,
      "doc": "The mass distribution applied to the constant function `1` is the total mass.",
      "statement": "lemma rho_one {d : ℕ} (R : RigidBody d) :\n    R.ρ (1 : C^⊤⟮𝓘(ℝ, Space d), Space d; 𝓘(ℝ, ℝ), ℝ⟯) = R.mass",
      "sorry": false
@@ -6980,7 +7154,7 @@
     {
      "name": "RigidBody.centerOfMass",
      "kind": "def",
-     "line": 59,
+     "line": 58,
      "doc": "The center of mass of the rigid body.",
      "statement": "noncomputable def centerOfMass {d : ℕ} (R : RigidBody d) : Space d",
      "sorry": false
@@ -6988,7 +7162,7 @@
     {
      "name": "RigidBody.inertiaTensor",
      "kind": "def",
-     "line": 63,
+     "line": 62,
      "doc": "The inertia tensor of the rigid body.",
      "statement": "noncomputable def inertiaTensor {d : ℕ} (R : RigidBody d) :\n    Matrix (Fin d) (Fin d) ℝ",
      "sorry": false
@@ -6996,7 +7170,7 @@
     {
      "name": "RigidBody.inertiaTensor_symmetric",
      "kind": "lemma",
-     "line": 68,
+     "line": 67,
      "doc": "",
      "statement": "lemma inertiaTensor_symmetric {d : ℕ} (R : RigidBody d) (i j : Fin d) :\n    R.inertiaTensor i j = R.inertiaTensor j i",
      "sorry": false
@@ -7004,7 +7178,7 @@
     {
      "name": "RigidBody.rho_coord_sub_centerOfMass",
      "kind": "lemma",
-     "line": 74,
+     "line": 73,
      "doc": "The first moment of the mass distribution about its own centre of mass vanishes:\nfor nonzero mass, `ρ` of the centred `j`-th coordinate function is zero.",
      "statement": "lemma rho_coord_sub_centerOfMass {d : ℕ} (R : RigidBody d) (h : R.mass ≠ 0) (j : Fin d) :\n    R.ρ (cmap (fun y => y j - R.centerOfMass j) (by fun_prop)) = 0",
      "sorry": false
@@ -7012,7 +7186,7 @@
     {
      "name": "RigidBody.inertiaTensorAbout",
      "kind": "def",
-     "line": 91,
+     "line": 90,
      "doc": "The inertia tensor of the rigid body about the point `p`, that is with the moments taken\nabout `p` rather than about the origin of the reference frame. Taking `p` to be the origin\nrecovers `RigidBody.inertiaTensor`, see `RigidBody.inertiaTensorAbout_zero`.",
      "statement": "noncomputable def inertiaTensorAbout {d : ℕ} (R : RigidBody d) (p : Space d) :\n    Matrix (Fin d) (Fin d) ℝ",
      "sorry": false
@@ -7020,7 +7194,7 @@
     {
      "name": "RigidBody.inertiaTensorAbout_apply",
      "kind": "lemma",
-     "line": 97,
+     "line": 96,
      "doc": "The `(i, j)` entry of the inertia tensor about `p` as a moment of the mass distribution.",
      "statement": "lemma inertiaTensorAbout_apply {d : ℕ} (R : RigidBody d) (p : Space d) (i j : Fin d) :\n    R.inertiaTensorAbout p i j = R.ρ (cmap (fun y => (if i = j then 1 else 0) *\n      ∑ k : Fin d, (y k - p k) ^ 2 - (y i - p i) * (y j - p j)) (by fun_prop))",
      "sorry": false
@@ -7028,7 +7202,7 @@
     {
      "name": "RigidBody.inertiaTensorAbout_zero",
      "kind": "lemma",
-     "line": 103,
+     "line": 102,
      "doc": "The inertia tensor about the origin is the inertia tensor.",
      "statement": "lemma inertiaTensorAbout_zero {d : ℕ} (R : RigidBody d) :\n    R.inertiaTensorAbout 0 = R.inertiaTensor",
      "sorry": false
@@ -7036,7 +7210,7 @@
     {
      "name": "RigidBody.inertiaTensorAbout_symmetric",
      "kind": "lemma",
-     "line": 109,
+     "line": 108,
      "doc": "The inertia tensor about any point is symmetric.",
      "statement": "lemma inertiaTensorAbout_symmetric {d : ℕ} (R : RigidBody d) (p : Space d) (i j : Fin d) :\n    R.inertiaTensorAbout p i j = R.inertiaTensorAbout p j i",
      "sorry": false
@@ -7044,7 +7218,7 @@
     {
      "name": "RigidBody.inertiaTensorAbout_integrand_split",
      "kind": "lemma",
-     "line": 116,
+     "line": 115,
      "doc": "The integrand of the inertia tensor about `p` splits into the integrand about the centre of\nmass, terms linear in the centred coordinates `y − c`, and a constant built from the\ndisplacement `c − p`.",
      "statement": "lemma inertiaTensorAbout_integrand_split {d : ℕ} (R : RigidBody d) (p : Space d) (i j : Fin d) :\n    cmap (fun y => (if i = j then 1 else 0) * ∑ k : Fin d, (y k - p k) ^ 2\n        - (y i - p i) * (y j - p j)) (by fun_prop)\n      = cmap (fun y => (if i = j then 1 else 0) * ∑ k : Fin d, (y k - R.centerOfMass k) ^ 2\n            - (y i - R.centerOfMass i) * (y j - R.centerOfMass j)) (by fun_prop)\n        + ∑ k : Fin d, (2 * (if i = j then 1 else 0) * (R.centerOfMass k - p k)) •\n            cmap (fun y => y k - R.centerOfMass k) (by fun_prop)\n        - (R.centerOfMass j - p j) • cmap (fun y => y i - R.centerOfMass i) (by fun_prop)\n        - (R.centerOfMass i - p i) • cmap (fun y => y j - R.centerOfMass j) (by fun_prop)\n        + ((if i = j then 1 else 0) * ∑ k : Fin d, (R.centerOfMass k - p k) ^ 2\n            - (R.centerOfMass i - p i) * (R.centerOfMass j - p j)) •\n          (1 : C^⊤⟮𝓘(ℝ, Space d), Space d; 𝓘(ℝ, ℝ), ℝ⟯)",
      "sorry": false
@@ -7052,7 +7226,7 @@
     {
      "name": "RigidBody.inertiaTensorAbout_eq_centerOfMass_add_pointMass",
      "kind": "theorem",
-     "line": 148,
+     "line": 147,
      "doc": "**The parallel-axis theorem**: the inertia tensor about a point `p` is the inertia tensor\nabout the centre of mass `c` plus the inertia tensor about `p` of a point particle carrying the\ntotal mass of the body and sitting at `c`, that is `M (|c − p|² 1 − (c − p) ⊗ (c − p))`.",
      "statement": "theorem inertiaTensorAbout_eq_centerOfMass_add_pointMass {d : ℕ} (R : RigidBody d) (h : R.mass ≠ 0)\n    (p : Space d) :\n    R.inertiaTensorAbout p = R.inertiaTensorAbout R.centerOfMass\n      + R.mass • (⟪R.centerOfMass - p, R.centerOfMass - p⟫_ℝ • (1 : Matrix (Fin d) (Fin d) ℝ)\n        - Matrix.vecMulVec ⇑(R.centerOfMass - p) ⇑(R.centerOfMass - p))",
      "sorry": false
@@ -7060,7 +7234,7 @@
     {
      "name": "RigidBody.inertiaTensor_eq_centerOfMass_add_pointMass",
      "kind": "lemma",
-     "line": 163,
+     "line": 162,
      "doc": "The inertia tensor about the origin is the inertia tensor about the centre of mass `c` plus\n`M (|c|² 1 − c ⊗ c)`.",
      "statement": "lemma inertiaTensor_eq_centerOfMass_add_pointMass {d : ℕ} (R : RigidBody d) (h : R.mass ≠ 0) :\n    R.inertiaTensor = R.inertiaTensorAbout R.centerOfMass\n      + R.mass • (⟪R.centerOfMass, R.centerOfMass⟫_ℝ • (1 : Matrix (Fin d) (Fin d) ℝ)\n        - Matrix.vecMulVec ⇑R.centerOfMass ⇑R.centerOfMass)",
      "sorry": false

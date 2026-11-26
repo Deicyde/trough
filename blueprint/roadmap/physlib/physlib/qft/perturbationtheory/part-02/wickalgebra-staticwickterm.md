@@ -8,9 +8,9 @@ proof: formalized
 
 # Static Wick's terms
 
-The module `Physlib.QFT.PerturbationTheory.WickAlgebra.StaticWickTerm`, [Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean): 5 declarations, 5 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.WickAlgebra.StaticWickTerm`, [Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean): 5 declarations, 5 with a docstring.
 
-**`WickContraction.staticWickTerm`**, a def, [line 36](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean#L36).
+**`WickContraction.staticWickTerm`**, a def, [line 36](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean#L36).
 
 > For a list `φs` of `𝓕.FieldOp`, and a Wick contraction `φsΛ` of `φs`, the element
 > of `𝓕.WickAlgebra`, `φsΛ.staticWickTerm` is defined as
@@ -23,7 +23,7 @@ The module `Physlib.QFT.PerturbationTheory.WickAlgebra.StaticWickTerm`, [Physlib
 def staticWickTerm {φs : List 𝓕.FieldOp} (φsΛ : WickContraction φs.length) : 𝓕.WickAlgebra
 ```
 
-**`WickContraction.staticWickTerm_empty_nil`**, a lemma, [line 43](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean#L43).
+**`WickContraction.staticWickTerm_empty_nil`**, a lemma, [line 43](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean#L43).
 
 > For the empty list `[]` of `𝓕.FieldOp`, the `staticWickTerm` of the Wick contraction
 > corresponding to the empty set `∅` (the only Wick contraction of `[]`) is `1`.
@@ -33,7 +33,7 @@ lemma staticWickTerm_empty_nil :
     staticWickTerm (empty (n := ([] : List 𝓕.FieldOp).length)) = 1
 ```
 
-**`WickContraction.staticWickTerm_insert_zero_none`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean#L58).
+**`WickContraction.staticWickTerm_insert_zero_none`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean#L58).
 
 > For a list `φs = φ₀…φₙ` of `𝓕.FieldOp`, a Wick contraction `φsΛ` of `φs`, and an element `φ` of
 >   `𝓕.FieldOp`, then `(φsΛ ↩Λ φ 0 none).staticWickTerm` is equal to
@@ -51,7 +51,7 @@ lemma staticWickTerm_insert_zero_none (φ : 𝓕.FieldOp) (φs : List 𝓕.Field
     φsΛ.sign • φsΛ.staticContract * 𝓝(ofFieldOpList (φ :: [φsΛ]ᵘᶜ))
 ```
 
-**`WickContraction.staticWickTerm_insert_zero_some`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean#L80).
+**`WickContraction.staticWickTerm_insert_zero_some`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean#L80).
 
 > For a list `φs = φ₀…φₙ` of `𝓕.FieldOp`, a Wick contraction `φsΛ` of `φs`, an element `φ` of
 >   `𝓕.FieldOp`, and a `k` in `φsΛ.uncontracted`, `(φsΛ ↩Λ φ 0 (some k)).wickTerm` is equal
@@ -77,7 +77,7 @@ lemma staticWickTerm_insert_zero_some (φ : 𝓕.FieldOp) (φs : List 𝓕.Field
     𝓝(ofFieldOpList (optionEraseZ [φsΛ]ᵘᶜ φ (uncontractedFieldOpEquiv φs φsΛ k)))))
 ```
 
-**`WickContraction.mul_staticWickTerm_eq_sum`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean#L127).
+**`WickContraction.mul_staticWickTerm_eq_sum`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean#L127).
 
 > For a list `φs = φ₀…φₙ` of `𝓕.FieldOp`, a Wick contraction `φsΛ` of `φs`, the following relation
 > holds
@@ -112,4 +112,4 @@ lemma mul_staticWickTerm_eq_sum (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean)
+- [Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean)

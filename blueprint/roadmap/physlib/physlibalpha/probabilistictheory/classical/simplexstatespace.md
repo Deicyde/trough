@@ -8,7 +8,7 @@ proof: formalized
 
 # Classical systems: unique decomposition into pure states
 
-The module `PhyslibAlpha.ProbabilisticTheory.Classical.SimplexStateSpace`, [PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean): 16 declarations, 9 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Classical.SimplexStateSpace`, [PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean): 16 declarations, 9 with a docstring.
 
 > Pure decompositions, simplex and Bauer simplex state spaces, and measures as functionals.
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.SimplexStateSpace`, [Phys
 
 ## A. Pure decompositions and simplices
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.HasPureDecomposition`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L81).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.HasPureDecomposition`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L81).
 
 > The state `ω` decomposes into pure states: some regular probability measure on the pure states
 > represents it.
@@ -53,7 +53,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.SimplexStateSpace`, [Phys
 def HasPureDecomposition (ω : 𝓢[ℝ, E]) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.HasUniquePureDecomposition`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L87).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.HasUniquePureDecomposition`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L87).
 
 > The state `ω` decomposes uniquely into pure states: exactly one regular probability measure on
 > the pure states represents it.
@@ -62,7 +62,7 @@ def HasPureDecomposition (ω : 𝓢[ℝ, E]) : Prop
 def HasUniquePureDecomposition (ω : 𝓢[ℝ, E]) : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsSimplexStateSpace`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L96).
+**`PhyslibAlpha.ProbabilisticTheory.IsSimplexStateSpace`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L96).
 
 > The state space of `E` is a simplex: every state is a unique mixture of pure states, given by
 > a regular probability measure on the pure states. In finite dimension this is the convex hull of
@@ -72,7 +72,7 @@ def HasUniquePureDecomposition (ω : 𝓢[ℝ, E]) : Prop
 def IsSimplexStateSpace : Prop
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.IsBauerSimplexStateSpace`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L102).
+**`PhyslibAlpha.ProbabilisticTheory.IsBauerSimplexStateSpace`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L102).
 
 > The state space of `E` is a Bauer simplex: a simplex whose pure states form a closed, hence
 > compact, set.
@@ -83,14 +83,14 @@ def IsBauerSimplexStateSpace : Prop
 
 ## B. Measures on the pure states as positive functionals
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.integrable`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L117).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.integrable`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L117).
 
 ```lean
 lemma integrable (μ : Measure (PureState E)) [IsFiniteMeasure μ] (f : E) :
     Integrable (fun ω : PureState E => toState ω.1 f) μ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.toPositive`**, a def, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L123).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.toPositive`**, a def, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L123).
 
 > Integration of the observables against a finite measure on the pure states.
 
@@ -98,42 +98,42 @@ lemma integrable (μ : Measure (PureState E)) [IsFiniteMeasure μ] (f : E) :
 noncomputable def toPositive (μ : Measure (PureState E)) [IsFiniteMeasure μ] : E →ₚ[ℝ] ℝ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.toPositive_apply`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L131).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.toPositive_apply`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L131).
 
 ```lean
 lemma toPositive_apply (μ : Measure (PureState E)) [IsFiniteMeasure μ] (f : E) :
     toPositive μ f = ∫ ω, toState ω.1 f ∂μ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.toPositive_add`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L134).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.toPositive_add`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L134).
 
 ```lean
 lemma toPositive_add (μ ν : Measure (PureState E)) [IsFiniteMeasure μ] [IsFiniteMeasure ν] :
     toPositive (μ + ν) = toPositive μ + toPositive ν
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.toPositive_mono`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L138).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.toPositive_mono`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L138).
 
 ```lean
 lemma toPositive_mono {μ ν : Measure (PureState E)} [IsFiniteMeasure μ] [IsFiniteMeasure ν]
     (h : μ ≤ ν) : toPositive μ ≤ toPositive ν
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.toPositive_one`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L142).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.toPositive_one`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L142).
 
 ```lean
 lemma toPositive_one (μ : Measure (PureState E)) [IsFiniteMeasure μ] :
     toPositive μ 1 = μ.real Set.univ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.measure_univ_eq_of_toPositive_eq`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L146).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.measure_univ_eq_of_toPositive_eq`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L146).
 
 ```lean
 lemma measure_univ_eq_of_toPositive_eq {μ ν : Measure (PureState E)} [IsFiniteMeasure μ]
     [IsFiniteMeasure ν] (hμν : toPositive μ = toPositive ν) : μ Set.univ = ν Set.univ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.PureState.toPositive_smul_eq`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L152).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.toPositive_smul_eq`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L152).
 
 ```lean
 lemma toPositive_smul_eq {μ ν : Measure (PureState E)} [IsFiniteMeasure μ] [IsFiniteMeasure ν]
@@ -143,7 +143,7 @@ lemma toPositive_smul_eq {μ ν : Measure (PureState E)} [IsFiniteMeasure μ] [I
 
 ## C. Simplices identify functionals with measures
 
-**`PhyslibAlpha.ProbabilisticTheory.exists_toPositive_eq`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L175).
+**`PhyslibAlpha.ProbabilisticTheory.exists_toPositive_eq`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L175).
 
 > Every positive functional is integration against a finite regular measure on the pure
 > states.
@@ -153,7 +153,7 @@ lemma exists_toPositive_eq (α : E →ₚ[ℝ] ℝ) :
     ∃ (μ : Measure (PureState E)) (_ : IsFiniteMeasure μ), μ.Regular ∧ toPositive μ = α
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.eq_of_toPositive_eq_of_isProbabilityMeasure`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L189).
+**`PhyslibAlpha.ProbabilisticTheory.eq_of_toPositive_eq_of_isProbabilityMeasure`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L189).
 
 > Regular probability measures on the pure states with the same integrals are equal.
 
@@ -163,7 +163,7 @@ lemma eq_of_toPositive_eq_of_isProbabilityMeasure {μ ν : Measure (PureState E)
     (hμν : toPositive μ = toPositive ν) : μ = ν
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.eq_of_toPositive_eq`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L202).
+**`PhyslibAlpha.ProbabilisticTheory.eq_of_toPositive_eq`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L202).
 
 > Finite regular measures on the pure states with the same integrals are equal.
 
@@ -172,7 +172,7 @@ lemma eq_of_toPositive_eq {μ ν : Measure (PureState E)} [μ.Regular] [ν.Regul
     [IsFiniteMeasure μ] [IsFiniteMeasure ν] (hμν : toPositive μ = toPositive ν) : μ = ν
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.le_of_toPositive_le`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L219).
+**`PhyslibAlpha.ProbabilisticTheory.le_of_toPositive_le`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean#L219).
 
 > Unique decomposition makes the order on positive functionals that of measures.
 
@@ -188,4 +188,4 @@ lemma le_of_toPositive_le {μ θ : Measure (PureState E)} [μ.Regular] [θ.Regul
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean)

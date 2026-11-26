@@ -8,7 +8,7 @@ proof: formalized
 
 # Yukawa charges
 
-The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Yukawa`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean): 13 declarations (1 instance with no name), 3 with a docstring.
+The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Yukawa`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean): 13 declarations (1 instance with no name), 3 with a docstring.
 
 ## i. Overview
 
@@ -35,7 +35,7 @@ The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Yukawa`, [Physlib
 
 ## A. Charges of the Yukawa terms
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofYukawaTerms`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L68).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofYukawaTerms`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L68).
 
 > The collection of charges associated with Yukawa terms.
 > Correspondingly, the (negative) of the charges of the singlets needed to regenerate all
@@ -47,7 +47,7 @@ def ofYukawaTerms (x : ChargeSpectrum 𝓩) : Multiset 𝓩
 
 ### A.1. Monotonicity of charges of the Yukawa terms
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofYukawaTerms_subset_of_subset`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L77).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofYukawaTerms_subset_of_subset`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L77).
 
 ```lean
 lemma ofYukawaTerms_subset_of_subset [DecidableEq 𝓩] {x y : ChargeSpectrum 𝓩} (h : x ⊆ y) :
@@ -56,7 +56,7 @@ lemma ofYukawaTerms_subset_of_subset [DecidableEq 𝓩] {x y : ChargeSpectrum �
 
 ### A.2. upto n-copies of charges of the Yukawa terms (aka charges of singlet insertions)
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofYukawaTermsNSum`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L102).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofYukawaTermsNSum`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L102).
 
 > The charges of those terms which can be regenerated with up-to `n`
 > insertions of singlets needed to regenerate the Yukawa terms.
@@ -69,7 +69,7 @@ def ofYukawaTermsNSum (x : ChargeSpectrum 𝓩) : ℕ → Multiset 𝓩
 
 ### A.3. Monotonicity of set of charges of upto n-copies of the Yukawa terms
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofYukawaTermsNSum_subset_of_subset`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L113).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofYukawaTermsNSum_subset_of_subset`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L113).
 
 ```lean
 lemma ofYukawaTermsNSum_subset_of_subset [DecidableEq 𝓩] {x y : ChargeSpectrum 𝓩}
@@ -79,7 +79,7 @@ lemma ofYukawaTermsNSum_subset_of_subset [DecidableEq 𝓩] {x y : ChargeSpectru
 
 ## B. Regeneration of phenomenologically constrained terms via upto n Yukawa singlet insertions
 
-**`SuperSymmetry.SU5.ChargeSpectrum.YukawaGeneratesDangerousAtLevel`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L150).
+**`SuperSymmetry.SU5.ChargeSpectrum.YukawaGeneratesDangerousAtLevel`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L150).
 
 > For a charge spectrum `x : ChargeSpectrum 𝓩`, the proposition which states that the singlets
 > needed to regenerate the Yukawa couplings regenerate a dangerous coupling
@@ -94,7 +94,7 @@ def YukawaGeneratesDangerousAtLevel (x : ChargeSpectrum 𝓩) (n : ℕ) : Prop
 
 ### B.1. Decidability of `YukawaGeneratesDangerousAtLevel`
 
-**An instance with no name**, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L159).
+**An instance with no name**, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L159).
 
 ```lean
 instance (x : ChargeSpectrum 𝓩) (n : ℕ) : Decidable (YukawaGeneratesDangerousAtLevel x n)
@@ -102,7 +102,7 @@ instance (x : ChargeSpectrum 𝓩) (n : ℕ) : Decidable (YukawaGeneratesDangero
 
 ### B.2. Simplifications of condition for regenerating dangerous terms
 
-**`SuperSymmetry.SU5.ChargeSpectrum.YukawaGeneratesDangerousAtLevel_iff_inter`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L169).
+**`SuperSymmetry.SU5.ChargeSpectrum.YukawaGeneratesDangerousAtLevel_iff_inter`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L169).
 
 ```lean
 lemma YukawaGeneratesDangerousAtLevel_iff_inter {x : ChargeSpectrum 𝓩} {n : ℕ} :
@@ -110,7 +110,7 @@ lemma YukawaGeneratesDangerousAtLevel_iff_inter {x : ChargeSpectrum 𝓩} {n : �
     (x.ofYukawaTermsNSum n) ∩ x.phenoConstrainingChargesSP ≠ ∅
 ```
 
-**`SuperSymmetry.SU5.ChargeSpectrum.yukawaGeneratesDangerousAtLevel_iff_toFinset`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L173).
+**`SuperSymmetry.SU5.ChargeSpectrum.yukawaGeneratesDangerousAtLevel_iff_toFinset`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L173).
 
 ```lean
 lemma yukawaGeneratesDangerousAtLevel_iff_toFinset (x : ChargeSpectrum 𝓩) (n : ℕ) :
@@ -120,7 +120,7 @@ lemma yukawaGeneratesDangerousAtLevel_iff_toFinset (x : ChargeSpectrum 𝓩) (n 
 
 ### B.3. Empty charge spectrum does not regenerate dangerous terms
 
-**`SuperSymmetry.SU5.ChargeSpectrum.not_yukawaGeneratesDangerousAtLevel_of_empty`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L204).
+**`SuperSymmetry.SU5.ChargeSpectrum.not_yukawaGeneratesDangerousAtLevel_of_empty`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L204).
 
 ```lean
 lemma not_yukawaGeneratesDangerousAtLevel_of_empty (n : ℕ) :
@@ -132,7 +132,7 @@ lemma not_yukawaGeneratesDangerousAtLevel_of_empty (n : ℕ) :
 > If `x` regenerates a dangerous term with up-to `n` insertions of Yukawa singlets,
 > and `x ⊆ y`, then `y` also regenerates a dangerous term with up-to `n` insertions.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.yukawaGeneratesDangerousAtLevel_of_subset`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L217).
+**`SuperSymmetry.SU5.ChargeSpectrum.yukawaGeneratesDangerousAtLevel_of_subset`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L217).
 
 ```lean
 lemma yukawaGeneratesDangerousAtLevel_of_subset {x y : ChargeSpectrum 𝓩} {n : ℕ} (h : x ⊆ y)
@@ -145,7 +145,7 @@ lemma yukawaGeneratesDangerousAtLevel_of_subset {x y : ChargeSpectrum 𝓩} {n :
 > If `x` regenerates a dangerous term with up-to `n` insertions of Yukawa singlets,
 > then `x` also regenerates a dangerous term with up-to `n + 1` insertions.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.yukawaGeneratesDangerousAtLevel_succ`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L245).
+**`SuperSymmetry.SU5.ChargeSpectrum.yukawaGeneratesDangerousAtLevel_succ`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L245).
 
 ```lean
 lemma yukawaGeneratesDangerousAtLevel_succ {x : ChargeSpectrum 𝓩} {n : ℕ}
@@ -153,7 +153,7 @@ lemma yukawaGeneratesDangerousAtLevel_succ {x : ChargeSpectrum 𝓩} {n : ℕ}
     x.YukawaGeneratesDangerousAtLevel (n + 1)
 ```
 
-**`SuperSymmetry.SU5.ChargeSpectrum.yukawaGeneratesDangerousAtLevel_add_of_left`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L256).
+**`SuperSymmetry.SU5.ChargeSpectrum.yukawaGeneratesDangerousAtLevel_add_of_left`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L256).
 
 ```lean
 lemma yukawaGeneratesDangerousAtLevel_add_of_left {x : ChargeSpectrum 𝓩} {n k : ℕ}
@@ -161,7 +161,7 @@ lemma yukawaGeneratesDangerousAtLevel_add_of_left {x : ChargeSpectrum 𝓩} {n k
     x.YukawaGeneratesDangerousAtLevel (n + k)
 ```
 
-**`SuperSymmetry.SU5.ChargeSpectrum.yukawaGeneratesDangerousAtLevel_of_le`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L263).
+**`SuperSymmetry.SU5.ChargeSpectrum.yukawaGeneratesDangerousAtLevel_of_le`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean#L263).
 
 ```lean
 lemma yukawaGeneratesDangerousAtLevel_of_le {x : ChargeSpectrum 𝓩} {n m : ℕ}
@@ -175,4 +175,4 @@ lemma yukawaGeneratesDangerousAtLevel_of_le {x : ChargeSpectrum 𝓩} {n m : ℕ
 
 ## Sources
 
-- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean)
+- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean)

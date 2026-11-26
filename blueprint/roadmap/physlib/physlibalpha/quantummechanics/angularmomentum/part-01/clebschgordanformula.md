@@ -8,7 +8,7 @@ proof: formalized
 
 # Closed formulas for the Clebsch–Gordan coefficients
 
-The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.ClebschGordanFormula`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean): 38 declarations, 28 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.ClebschGordanFormula`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean): 38 declarations, 28 with a docstring.
 
 > The second orthogonality relation, an explicit single-sum formula and Racah's formula for
 > `⟨j₁ m₁ j₂ m₂ | J M⟩`.
@@ -67,7 +67,7 @@ The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.ClebschGordanFormula`,
 
 ## A. Completeness and the second orthogonality relation
 
-**`PhyslibAlpha.Sl2.tensorForm_coupledVec_stringVec`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L100).
+**`PhyslibAlpha.Sl2.tensorForm_coupledVec_stringVec`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L100).
 
 > `⟨|J, M⟩, f^{l'} w_{k'}⟩ = δ_{kk'} δ_{ll'} √(normSq N l · ⟨w_k, w_k⟩)`.
 
@@ -80,7 +80,7 @@ lemma tensorForm_coupledVec_stringVec (hmn : 0 < m + n) {k k' l l' : ℕ} (hkm :
       else 0
 ```
 
-**`PhyslibAlpha.Sl2.eq_sum_coupledVec`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L121).
+**`PhyslibAlpha.Sl2.eq_sum_coupledVec`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L121).
 
 > **Completeness.** Every vector of `V(m) ⊗ V(n)` is `Σ_{J M} ⟨|J, M⟩, x⟩ |J, M⟩`.
 
@@ -90,7 +90,7 @@ lemma eq_sum_coupledVec (hmn : 0 < m + n) (x : StandardSl2Module ℝ m ⊗[ℝ] 
       tensorForm m n (coupledVec m n k l) x • coupledVec m n k l
 ```
 
-**`PhyslibAlpha.Sl2.sum_cgCoefficient_mul_cgCoefficient`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L160).
+**`PhyslibAlpha.Sl2.sum_cgCoefficient_mul_cgCoefficient`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L160).
 
 > **Second orthogonality relation.**
 > `Σ_{J M} ⟨j₁ m₁ j₂ m₂ | J M⟩ ⟨j₁ m₁' j₂ m₂' | J M⟩ = δ_{m₁ m₁'} δ_{m₂ m₂'}`.
@@ -107,7 +107,7 @@ lemma sum_cgCoefficient_mul_cgCoefficient (hmn : 0 < m + n) {a b a' b' : ℕ} (h
 
 ### B.1. A factorial identity
 
-**`PhyslibAlpha.Sl2.factorialSum`**, a def, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L185).
+**`PhyslibAlpha.Sl2.factorialSum`**, a def, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L185).
 
 > `S(k, p, s) = Σ_{i + j = k} C(k, i) (p + i)! (s + j)!`.
 
@@ -115,7 +115,7 @@ lemma sum_cgCoefficient_mul_cgCoefficient (hmn : 0 < m + n) {a b a' b' : ℕ} (h
 def factorialSum (k p s : ℕ) : ℕ
 ```
 
-**`PhyslibAlpha.Sl2.factorialSum_succ`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L189).
+**`PhyslibAlpha.Sl2.factorialSum_succ`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L189).
 
 > Pascal's rule for `S`.
 
@@ -124,7 +124,7 @@ lemma factorialSum_succ (k p s : ℕ) :
     factorialSum (k + 1) p s = factorialSum k p (s + 1) + factorialSum k (p + 1) s
 ```
 
-**`PhyslibAlpha.Sl2.factorialSum_mul`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L203).
+**`PhyslibAlpha.Sl2.factorialSum_mul`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L203).
 
 > `S(k, p, s) · (p + s + 1)! = (p + k + s + 1)! p! s!`.
 
@@ -134,7 +134,7 @@ lemma factorialSum_mul (k p s : ℕ) :
       (p + k + s + 1).factorial * p.factorial * s.factorial
 ```
 
-**`PhyslibAlpha.Sl2.sum_choose_mul_factorial`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L224).
+**`PhyslibAlpha.Sl2.sum_choose_mul_factorial`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L224).
 
 > The factorial identity in the form used for `⟨w_k, w_k⟩`:
 > `Σ_a C(k, a) (p + a)! (s + k - a)! · (p + s + 1)! = (p + k + s + 1)! p! s!`.
@@ -147,7 +147,7 @@ lemma sum_choose_mul_factorial (k p s : ℕ) :
 
 ### B.2. The closed norm
 
-**`PhyslibAlpha.Sl2.hwNormNum`**, a def, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L236).
+**`PhyslibAlpha.Sl2.hwNormNum`**, a def, [line 236](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L236).
 
 > The numerator `k! m! n! (m + n - k + 1)! (n - k)! (m - k)!` of `⟨w_k, w_k⟩`.
 
@@ -155,7 +155,7 @@ lemma sum_choose_mul_factorial (k p s : ℕ) :
 def hwNormNum (m n k : ℕ) : ℕ
 ```
 
-**`PhyslibAlpha.Sl2.cgCoeff_sq_mul_normSq`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L240).
+**`PhyslibAlpha.Sl2.cgCoeff_sq_mul_normSq`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L240).
 
 ```lean
 lemma cgCoeff_sq_mul_normSq {k a : ℕ} (hkm : k ≤ m) (hkn : k ≤ n) (ha : a ≤ k) :
@@ -164,7 +164,7 @@ lemma cgCoeff_sq_mul_normSq {k a : ℕ} (hkm : k ≤ m) (hkn : k ≤ n) (ha : a 
         (k.factorial * m.factorial * n.factorial) : ℕ) : ℝ)
 ```
 
-**`PhyslibAlpha.Sl2.hwNormSq_mul_factorial`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L259).
+**`PhyslibAlpha.Sl2.hwNormSq_mul_factorial`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L259).
 
 > `⟨w_k, w_k⟩ (m + n - 2k + 1)! = k! m! n! (m + n - k + 1)! (n - k)! (m - k)!`.
 
@@ -173,7 +173,7 @@ lemma hwNormSq_mul_factorial {k : ℕ} (hkm : k ≤ m) (hkn : k ≤ n) :
     hwNormSq m n k * ((m + n - 2 * k + 1).factorial : ℝ) = hwNormNum m n k
 ```
 
-**`PhyslibAlpha.Sl2.hwNormSq_closed`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L280).
+**`PhyslibAlpha.Sl2.hwNormSq_closed`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L280).
 
 > **The closed norm.**
 > `⟨w_k, w_k⟩ = k! m! n! (m + n - k + 1)! (n - k)! (m - k)! / (m + n - 2k + 1)!`.
@@ -185,14 +185,14 @@ lemma hwNormSq_closed {k : ℕ} (hkm : k ≤ m) (hkn : k ≤ n) :
 
 ## C. The lowering strings in the product basis
 
-**`PhyslibAlpha.Sl2.ρF_pow_vNat`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L290).
+**`PhyslibAlpha.Sl2.ρF_pow_vNat`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L290).
 
 ```lean
 lemma ρF_pow_vNat (a l : ℕ) :
     ((ρF : Module.End ℝ (StandardSl2Module ℝ n)) ^ l) (vNat n a) = vNat n (a + l)
 ```
 
-**`PhyslibAlpha.Sl2.tensorF_pow_tmul_vNat`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L298).
+**`PhyslibAlpha.Sl2.tensorF_pow_tmul_vNat`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L298).
 
 > The binomial theorem for the lowering operator:
 > `f^l (v_a ⊗ v_b) = Σ_i C(l, i) v_{a+i} ⊗ v_{b+l-i}`.
@@ -205,7 +205,7 @@ lemma tensorF_pow_tmul_vNat (a b l : ℕ) :
 
 ## D. The closed formula
 
-**`PhyslibAlpha.Sl2.cgSum`**, a def, [line 318](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L318).
+**`PhyslibAlpha.Sl2.cgSum`**, a def, [line 318](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L318).
 
 > The alternating sum `Σ_{a ≤ min(k, α)} (-1)^a C(k, a) (n - k + a)! (m - a)! C(l, α - a)`.
 
@@ -213,7 +213,7 @@ lemma tensorF_pow_tmul_vNat (a b l : ℕ) :
 def cgSum (m n k l α : ℕ) : ℝ
 ```
 
-**`PhyslibAlpha.Sl2.sum_choose_mul_ite`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L321).
+**`PhyslibAlpha.Sl2.sum_choose_mul_ite`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L321).
 
 ```lean
 lemma sum_choose_mul_ite {l a α : ℕ} (X : ℝ) :
@@ -221,7 +221,7 @@ lemma sum_choose_mul_ite {l a α : ℕ} (X : ℝ) :
       if a ≤ α then (l.choose (α - a) : ℝ) * X else 0
 ```
 
-**`PhyslibAlpha.Sl2.tensorForm_normVec_tmul_vNat`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L335).
+**`PhyslibAlpha.Sl2.tensorForm_normVec_tmul_vNat`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L335).
 
 ```lean
 lemma tensorForm_normVec_tmul_vNat {α β a i k l : ℕ} (hα : α ≤ m) (hβ : β ≤ n)
@@ -230,7 +230,7 @@ lemma tensorForm_normVec_tmul_vNat {α β a i k l : ℕ} (hα : α ≤ m) (hβ :
       if α = a + i then Real.sqrt (normSq m α) * Real.sqrt (normSq n β) else 0
 ```
 
-**`PhyslibAlpha.Sl2.tensorForm_normVec_stringVec`**, a lemma, [line 345](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L345).
+**`PhyslibAlpha.Sl2.tensorForm_normVec_stringVec`**, a lemma, [line 345](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L345).
 
 > `⟨u_α ⊗ u_β, f^l w_k⟩ = cgSum · √(normSq m α) √(normSq n β)` for `α + β = k + l`.
 
@@ -241,7 +241,7 @@ lemma tensorForm_normVec_stringVec {k l α β : ℕ} (hα : α ≤ m) (hβ : β 
       cgSum m n k l α * Real.sqrt (normSq m α) * Real.sqrt (normSq n β)
 ```
 
-**`PhyslibAlpha.Sl2.cgCoefficient_eq_cgSum`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L363).
+**`PhyslibAlpha.Sl2.cgCoefficient_eq_cgSum`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L363).
 
 > The Clebsch–Gordan coefficient as one finite sum, with the norm of `w_k` still unevaluated.
 
@@ -252,7 +252,7 @@ lemma cgCoefficient_eq_cgSum {k l α β : ℕ} (hα : α ≤ m) (hβ : β ≤ n)
         (cgSum m n k l α * Real.sqrt (normSq m α) * Real.sqrt (normSq n β))
 ```
 
-**`PhyslibAlpha.Sl2.cgCoefficient_closed`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L373).
+**`PhyslibAlpha.Sl2.cgCoefficient_closed`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L373).
 
 > **Closed formula for the Clebsch–Gordan coefficients.** For `α + β = k + l`, with
 > `N = m + n - 2k`,
@@ -271,7 +271,7 @@ lemma cgCoefficient_closed {k l α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n)
 
 ### E.1. Binomial coefficients with an integer lower index
 
-**`PhyslibAlpha.Sl2.zchoose`**, a def, [line 401](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L401).
+**`PhyslibAlpha.Sl2.zchoose`**, a def, [line 401](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L401).
 
 > `C(n, j)` for `j ≥ 0` and `0` for `j < 0`.
 
@@ -279,19 +279,19 @@ lemma cgCoefficient_closed {k l α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n)
 def zchoose (n : ℕ) (j : ℤ) : ℤ
 ```
 
-**`PhyslibAlpha.Sl2.zchoose_natCast`**, a lemma, [line 403](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L403).
+**`PhyslibAlpha.Sl2.zchoose_natCast`**, a lemma, [line 403](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L403).
 
 ```lean
 lemma zchoose_natCast (n t : ℕ) : zchoose n t = n.choose t
 ```
 
-**`PhyslibAlpha.Sl2.zchoose_of_neg`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L406).
+**`PhyslibAlpha.Sl2.zchoose_of_neg`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L406).
 
 ```lean
 lemma zchoose_of_neg {n : ℕ} {j : ℤ} (h : j < 0) : zchoose n j = 0
 ```
 
-**`PhyslibAlpha.Sl2.zchoose_succ`**, a lemma, [line 410](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L410).
+**`PhyslibAlpha.Sl2.zchoose_succ`**, a lemma, [line 410](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L410).
 
 > Pascal's rule `C(n + 1, j) = C(n, j) + C(n, j - 1)` for all integers `j`.
 
@@ -299,7 +299,7 @@ lemma zchoose_of_neg {n : ℕ} {j : ℤ} (h : j < 0) : zchoose n j = 0
 lemma zchoose_succ (n : ℕ) (j : ℤ) : zchoose (n + 1) j = zchoose n j + zchoose n (j - 1)
 ```
 
-**`PhyslibAlpha.Sl2.sum_range_choose_succ_mul`**, a lemma, [line 421](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L421).
+**`PhyslibAlpha.Sl2.sum_range_choose_succ_mul`**, a lemma, [line 421](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L421).
 
 > Pascal's rule inside a binomial sum.
 
@@ -312,7 +312,7 @@ lemma sum_range_choose_succ_mul (f : ℕ → ℤ) (k : ℕ) :
 
 ### E.2. Two binomial sums with the same recursion
 
-**`PhyslibAlpha.Sl2.racahL`**, a def, [line 444](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L444).
+**`PhyslibAlpha.Sl2.racahL`**, a def, [line 444](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L444).
 
 > `L(k, α, s) = Σ_a (-1)^a C(k, a) C(r + k - a, α - a) C(p + a, s + a)`: the sum `cgSum` after
 > dividing out factorials.
@@ -321,7 +321,7 @@ lemma sum_range_choose_succ_mul (f : ℕ → ℤ) (k : ℕ) :
 def racahL (r p k : ℕ) (α s : ℤ) : ℤ
 ```
 
-**`PhyslibAlpha.Sl2.racahR`**, a def, [line 450](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L450).
+**`PhyslibAlpha.Sl2.racahR`**, a def, [line 450](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L450).
 
 > `R(k, α, s) = Σ_z (-1)^z C(k, z) C(r, α - z) C(p, s + z)`: Racah's sum after dividing out
 > factorials.
@@ -330,21 +330,21 @@ def racahL (r p k : ℕ) (α s : ℤ) : ℤ
 def racahR (r p k : ℕ) (α s : ℤ) : ℤ
 ```
 
-**`PhyslibAlpha.Sl2.racahL_succ`**, a lemma, [line 453](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L453).
+**`PhyslibAlpha.Sl2.racahL_succ`**, a lemma, [line 453](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L453).
 
 ```lean
 lemma racahL_succ (r p k : ℕ) (α s : ℤ) :
     racahL r p (k + 1) α s = racahL r p k α s - racahL r p k (α - 1) (s + 1)
 ```
 
-**`PhyslibAlpha.Sl2.racahR_succ`**, a lemma, [line 465](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L465).
+**`PhyslibAlpha.Sl2.racahR_succ`**, a lemma, [line 465](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L465).
 
 ```lean
 lemma racahR_succ (r p k : ℕ) (α s : ℤ) :
     racahR r p (k + 1) α s = racahR r p k α s - racahR r p k (α - 1) (s + 1)
 ```
 
-**`PhyslibAlpha.Sl2.racahL_eq_racahR`**, a lemma, [line 475](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L475).
+**`PhyslibAlpha.Sl2.racahL_eq_racahR`**, a lemma, [line 475](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L475).
 
 > **The transformation.** `L = R`, by induction on `k`: both satisfy
 > `X(k + 1, α, s) = X(k, α, s) - X(k, α - 1, s + 1)` and agree for `k = 0`.
@@ -355,7 +355,7 @@ lemma racahL_eq_racahR (r p k : ℕ) (α s : ℤ) : racahL r p k α s = racahR r
 
 ### E.3. Racah's formula
 
-**`PhyslibAlpha.Sl2.racahSum`**, a def, [line 490](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L490).
+**`PhyslibAlpha.Sl2.racahSum`**, a def, [line 490](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L490).
 
 > Racah's alternating sum
 > `Σ_z (-1)^z / (z! (k - z)! (α - z)! (n - β - z)! (m - k - α + z)! (β - k + z)!)`
@@ -366,7 +366,7 @@ lemma racahL_eq_racahR (r p k : ℕ) (α s : ℤ) : racahL r p k α s = racahR r
 def racahSum (m n k α β : ℕ) : ℝ
 ```
 
-**`PhyslibAlpha.Sl2.cgSum_eq_racahL`**, a lemma, [line 497](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L497).
+**`PhyslibAlpha.Sl2.cgSum_eq_racahL`**, a lemma, [line 497](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L497).
 
 ```lean
 lemma cgSum_eq_racahL {k l α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n) (hα : α ≤ m) (hβ : β ≤ n)
@@ -375,7 +375,7 @@ lemma cgSum_eq_racahL {k l α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n) (hα : �
       (racahL (m - k) (n - k) k α ((l : ℤ) - α) : ℝ)
 ```
 
-**`PhyslibAlpha.Sl2.racahR_eq_racahSum`**, a lemma, [line 536](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L536).
+**`PhyslibAlpha.Sl2.racahR_eq_racahSum`**, a lemma, [line 536](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L536).
 
 ```lean
 lemma racahR_eq_racahSum {k l α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n) (h : α + β = k + l) :
@@ -383,7 +383,7 @@ lemma racahR_eq_racahSum {k l α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n) (h : 
       (k.factorial : ℝ) * (m - k).factorial * (n - k).factorial * racahSum m n k α β
 ```
 
-**`PhyslibAlpha.Sl2.cgSum_eq_racahSum`**, a lemma, [line 579](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L579).
+**`PhyslibAlpha.Sl2.cgSum_eq_racahSum`**, a lemma, [line 579](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L579).
 
 > `cgSum = l! (m - α)! (n - β)! · k! (m - k)! (n - k)! · racahSum`.
 
@@ -394,7 +394,7 @@ lemma cgSum_eq_racahSum {k l α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n) (hα :
       ((k.factorial : ℝ) * (m - k).factorial * (n - k).factorial) * racahSum m n k α β
 ```
 
-**`PhyslibAlpha.Sl2.cgCoefficient_racah`**, a lemma, [line 590](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L590).
+**`PhyslibAlpha.Sl2.cgCoefficient_racah`**, a lemma, [line 590](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L590).
 
 > **Racah's formula.** For `α + β = k + l`, with `j₁ = m/2`, `m₁ = j₁ - α`, `j₂ = n/2`,
 > `m₂ = j₂ - β`, `J = (m + n)/2 - k`, `M = J - l`,
@@ -413,7 +413,7 @@ lemma cgCoefficient_racah {k l α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n)
 
 ## F. Coupling with a spin ½
 
-**`PhyslibAlpha.Sl2.cgCoefficient_add_half_up`**, a lemma, [line 633](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L633).
+**`PhyslibAlpha.Sl2.cgCoefficient_add_half_up`**, a lemma, [line 633](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L633).
 
 > `⟨j₁ m₁ ½ ½ | j₁ + ½, M⟩ = √((j₁ + M + ½)/(2j₁ + 1))`: with `j₁ = m/2`, `J = j₁ + ½` (`k = 0`),
 > `M = J - l` and `m₁ = j₁ - l`, the value is `√((m + 1 - l)/(m + 1))`.
@@ -423,7 +423,7 @@ lemma cgCoefficient_add_half_up {m l : ℕ} (hl : l ≤ m) :
     cgCoefficient m 1 0 l l 0 = Real.sqrt (((m + 1 - l : ℕ) : ℝ) / (m + 1))
 ```
 
-**`PhyslibAlpha.Sl2.cgCoefficient_add_half_down`**, a lemma, [line 652](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L652).
+**`PhyslibAlpha.Sl2.cgCoefficient_add_half_down`**, a lemma, [line 652](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L652).
 
 > `⟨j₁ m₁ ½ -½ | j₁ + ½, M⟩ = √((j₁ - M + ½)/(2j₁ + 1))`: with `j₁ = m/2`, `J = j₁ + ½`
 > (`k = 0`), `M = J - (l + 1)` and `m₁ = j₁ - l`, the value is `√((l + 1)/(m + 1))`.
@@ -433,7 +433,7 @@ lemma cgCoefficient_add_half_down {m l : ℕ} (hl : l ≤ m) :
     cgCoefficient m 1 0 (l + 1) l 1 = Real.sqrt (((l + 1 : ℕ) : ℝ) / (m + 1))
 ```
 
-**`PhyslibAlpha.Sl2.cgCoefficient_sub_half_up`**, a lemma, [line 669](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L669).
+**`PhyslibAlpha.Sl2.cgCoefficient_sub_half_up`**, a lemma, [line 669](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L669).
 
 > `⟨j₁ m₁ ½ ½ | j₁ - ½, M⟩ = -√((j₁ - M + ½)/(2j₁ + 1))`: with `j₁ = m/2`, `J = j₁ - ½`
 > (`k = 1`), `M = J - l` and `m₁ = j₁ - (l + 1)`, the value is `-√((l + 1)/(m + 1))`.
@@ -443,7 +443,7 @@ lemma cgCoefficient_sub_half_up {m l : ℕ} (hl : l + 1 ≤ m) :
     cgCoefficient m 1 1 l (l + 1) 0 = -Real.sqrt (((l + 1 : ℕ) : ℝ) / (m + 1))
 ```
 
-**`PhyslibAlpha.Sl2.cgCoefficient_sub_half_down`**, a lemma, [line 689](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L689).
+**`PhyslibAlpha.Sl2.cgCoefficient_sub_half_down`**, a lemma, [line 689](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean#L689).
 
 > `⟨j₁ m₁ ½ -½ | j₁ - ½, M⟩ = √((j₁ + M + ½)/(2j₁ + 1))`: with `j₁ = m/2`, `J = j₁ - ½`
 > (`k = 1`), `M = J - l` and `m₁ = j₁ - l`, the value is `√((m - l)/(m + 1))`.
@@ -459,4 +459,4 @@ lemma cgCoefficient_sub_half_down {m l : ℕ} (hl : l + 1 ≤ m) :
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean)
+- [PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean)

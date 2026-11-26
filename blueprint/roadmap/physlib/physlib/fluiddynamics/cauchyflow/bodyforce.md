@@ -8,7 +8,7 @@ proof: formalized
 
 # Body-force predicates for Cauchy flows
 
-The module `Physlib.FluidDynamics.CauchyFlow.BodyForce`, [Physlib/FluidDynamics/CauchyFlow/BodyForce.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/BodyForce.lean): 2 declarations, 2 with a docstring.
+The module `Physlib.FluidDynamics.CauchyFlow.BodyForce`, [Physlib/FluidDynamics/CauchyFlow/BodyForce.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/CauchyFlow/BodyForce.lean): 2 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -27,7 +27,7 @@ The module `Physlib.FluidDynamics.CauchyFlow.BodyForce`, [Physlib/FluidDynamics/
 
 ## A. Conservative-force convention
 
-**`FluidDynamics.CauchyFlow.HasBodyForcePotential`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/BodyForce.lean#L50).
+**`FluidDynamics.CauchyFlow.HasBodyForcePotential`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/CauchyFlow/BodyForce.lean#L50).
 
 > A flow has body-force potential `Phi` when its specific body force is minus the gradient of
 > `Phi`.
@@ -36,7 +36,7 @@ The module `Physlib.FluidDynamics.CauchyFlow.BodyForce`, [Physlib/FluidDynamics/
 def HasBodyForcePotential (d : ℕ) (flow : CauchyFlow d) (potential : Space d → ℝ) : Prop
 ```
 
-**`FluidDynamics.CauchyFlow.HasConservativeBodyForce`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/BodyForce.lean#L54).
+**`FluidDynamics.CauchyFlow.HasConservativeBodyForce`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/CauchyFlow/BodyForce.lean#L54).
 
 > A flow has conservative body force when its specific body force has some potential.
 
@@ -51,4 +51,4 @@ def HasConservativeBodyForce (d : ℕ) (flow : CauchyFlow d) : Prop
 
 ## Sources
 
-- [Physlib/FluidDynamics/CauchyFlow/BodyForce.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/BodyForce.lean)
+- [Physlib/FluidDynamics/CauchyFlow/BodyForce.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/FluidDynamics/CauchyFlow/BodyForce.lean)

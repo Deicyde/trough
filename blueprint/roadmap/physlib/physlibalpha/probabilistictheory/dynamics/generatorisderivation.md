@@ -8,7 +8,7 @@ proof: formalized
 
 # Generators of automorphism groups are derivations
 
-The module `PhyslibAlpha.ProbabilisticTheory.Dynamics.GeneratorIsDerivation`, [PhyslibAlpha/ProbabilisticTheory/Dynamics/GeneratorIsDerivation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Dynamics/GeneratorIsDerivation.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Dynamics.GeneratorIsDerivation`, [PhyslibAlpha/ProbabilisticTheory/Dynamics/GeneratorIsDerivation.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Dynamics/GeneratorIsDerivation.lean): 1 declaration, 1 with a docstring.
 
 > The generator of a one-parameter family of automorphisms is a derivation.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Dynamics.GeneratorIsDerivation`, [P
 
 ## A. The generator is a derivation
 
-**`PhyslibAlpha.ProbabilisticTheory.IsGenerator.isDerivation_of_isAutomorphismFamily`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Dynamics/GeneratorIsDerivation.lean#L52).
+**`PhyslibAlpha.ProbabilisticTheory.IsGenerator.isDerivation_of_isAutomorphismFamily`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Dynamics/GeneratorIsDerivation.lean#L52).
 
 > **The generator of a family of automorphisms is a derivation.** If `α 0 = id` and every `α t`
 > preserves a bounded bilinear multiplication, the generator of `α` is a derivation of it.
@@ -49,4 +49,4 @@ lemma IsGenerator.isDerivation_of_isAutomorphismFamily
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Dynamics/GeneratorIsDerivation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Dynamics/GeneratorIsDerivation.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Dynamics/GeneratorIsDerivation.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Dynamics/GeneratorIsDerivation.lean)

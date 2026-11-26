@@ -1,6 +1,6 @@
 # Local
 
-The folder [PhyslibAlpha/ClassicalFieldTheory/Local/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local): 19 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [PhyslibAlpha/ClassicalFieldTheory/Local/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local): 19 modules, an article each, in path order with Basic.lean first in its folder.
 
 - [Local action functionals](action.md)
 - [Local Euler-Lagrange operators](eulerlagrange.md)
@@ -16,7 +16,7 @@ The folder [PhyslibAlpha/ClassicalFieldTheory/Local/](https://github.com/leanpro
 - [Lagrangian equivalence up to total divergences](totaldivergenceequivalence.md)
 - [Alpha extensions for admissible local variations](variation.md)
 
-Modules in [FirstVariation/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation):
+Modules in [FirstVariation/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation):
 
 - [First variation core objects](firstvariation-basic.md)
 - [First variation criteria](firstvariation-criterion.md)

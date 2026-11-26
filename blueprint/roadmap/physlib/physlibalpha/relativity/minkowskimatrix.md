@@ -8,7 +8,7 @@ proof: formalized
 
 # The Minkowski matrix over the integers
 
-The module `PhyslibAlpha.Relativity.MinkowskiMatrix`, [PhyslibAlpha/Relativity/MinkowskiMatrix.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/MinkowskiMatrix.lean): 7 declarations, 7 with a docstring.
+The module `PhyslibAlpha.Relativity.MinkowskiMatrix`, [PhyslibAlpha/Relativity/MinkowskiMatrix.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/MinkowskiMatrix.lean): 7 declarations, 7 with a docstring.
 
 > The Minkowski matrix with integer entries, so that the kernel can evaluate it.
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.Relativity.MinkowskiMatrix`, [PhyslibAlpha/Relativity/M
 
 ## A. The Minkowski matrix over the integers
 
-**`minkowskiMatrixZ`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/MinkowskiMatrix.lean#L53).
+**`minkowskiMatrixZ`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/MinkowskiMatrix.lean#L53).
 
 > The Minkowski matrix over the integers, `diag(1, -1, -1, ...)` in `ℤ`. Its cast to `ℝ` is
 > `minkowskiMatrix`, by `minkowskiMatrixZ.cast_apply`.
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.Relativity.MinkowskiMatrix`, [PhyslibAlpha/Relativity/M
 def minkowskiMatrixZ {d : ℕ} : Matrix (Fin 1 ⊕ Fin d) (Fin 1 ⊕ Fin d) ℤ
 ```
 
-**`minkowskiMatrixZ.as_diagonal`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/MinkowskiMatrix.lean#L61).
+**`minkowskiMatrixZ.as_diagonal`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/MinkowskiMatrix.lean#L61).
 
 > The integer Minkowski matrix as a diagonal matrix.
 
@@ -52,7 +52,7 @@ def minkowskiMatrixZ {d : ℕ} : Matrix (Fin 1 ⊕ Fin d) (Fin 1 ⊕ Fin d) ℤ
 lemma as_diagonal : @minkowskiMatrixZ d = diagonal (Sum.elim 1 (-1))
 ```
 
-**`minkowskiMatrixZ.inl_0_inl_0`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/MinkowskiMatrix.lean#L65).
+**`minkowskiMatrixZ.inl_0_inl_0`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/MinkowskiMatrix.lean#L65).
 
 > The time-time component of the integer Minkowski matrix is `1`.
 
@@ -60,7 +60,7 @@ lemma as_diagonal : @minkowskiMatrixZ d = diagonal (Sum.elim 1 (-1))
 lemma inl_0_inl_0 : @minkowskiMatrixZ d (Sum.inl 0) (Sum.inl 0) = 1
 ```
 
-**`minkowskiMatrixZ.inr_i_inr_i`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/MinkowskiMatrix.lean#L70).
+**`minkowskiMatrixZ.inr_i_inr_i`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/MinkowskiMatrix.lean#L70).
 
 > The space diagonal components of the integer Minkowski matrix are `-1`.
 
@@ -68,7 +68,7 @@ lemma inl_0_inl_0 : @minkowskiMatrixZ d (Sum.inl 0) (Sum.inl 0) = 1
 lemma inr_i_inr_i (i : Fin d) : @minkowskiMatrixZ d (Sum.inr i) (Sum.inr i) = -1
 ```
 
-**`minkowskiMatrixZ.off_diag_zero`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/MinkowskiMatrix.lean#L75).
+**`minkowskiMatrixZ.off_diag_zero`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/MinkowskiMatrix.lean#L75).
 
 > The off-diagonal components of the integer Minkowski matrix vanish.
 
@@ -76,7 +76,7 @@ lemma inr_i_inr_i (i : Fin d) : @minkowskiMatrixZ d (Sum.inr i) (Sum.inr i) = -1
 lemma off_diag_zero {μ ν : Fin 1 ⊕ Fin d} (h : μ ≠ ν) : @minkowskiMatrixZ d μ ν = 0
 ```
 
-**`minkowskiMatrixZ.comm`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/MinkowskiMatrix.lean#L79).
+**`minkowskiMatrixZ.comm`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/MinkowskiMatrix.lean#L79).
 
 > The integer Minkowski matrix is symmetric, being diagonal.
 
@@ -84,7 +84,7 @@ lemma off_diag_zero {μ ν : Fin 1 ⊕ Fin d} (h : μ ≠ ν) : @minkowskiMatrix
 lemma comm (μ ν : Fin 1 ⊕ Fin d) : @minkowskiMatrixZ d μ ν = minkowskiMatrixZ ν μ
 ```
 
-**`minkowskiMatrixZ.cast_apply`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/MinkowskiMatrix.lean#L85).
+**`minkowskiMatrixZ.cast_apply`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/MinkowskiMatrix.lean#L85).
 
 > The integer Minkowski matrix casts to the Minkowski matrix, entry by entry.
 
@@ -99,4 +99,4 @@ lemma cast_apply (μ ν : Fin 1 ⊕ Fin d) :
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/MinkowskiMatrix.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/MinkowskiMatrix.lean)
+- [PhyslibAlpha/Relativity/MinkowskiMatrix.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/MinkowskiMatrix.lean)

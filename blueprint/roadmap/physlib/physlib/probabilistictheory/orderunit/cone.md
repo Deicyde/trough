@@ -8,7 +8,7 @@ proof: formalized
 
 # Ordered positive cones (Physlib)
 
-The module `Physlib.ProbabilisticTheory.OrderUnit.Cone`, [Physlib/ProbabilisticTheory/OrderUnit/Cone.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean): 7 declarations, 5 with a docstring.
+The module `Physlib.ProbabilisticTheory.OrderUnit.Cone`, [Physlib/ProbabilisticTheory/OrderUnit/Cone.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean): 7 declarations, 5 with a docstring.
 
 ## i. Overview
 
@@ -28,7 +28,7 @@ The module `Physlib.ProbabilisticTheory.OrderUnit.Cone`, [Physlib/ProbabilisticT
 
 ## A. The positive cone
 
-**`ProbabilisticTheory.PosCone`**, an abbrev, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean#L51).
+**`ProbabilisticTheory.PosCone`**, an abbrev, [line 51](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean#L51).
 
 > The positive pointed cone of an ordered real module.
 
@@ -36,7 +36,7 @@ The module `Physlib.ProbabilisticTheory.OrderUnit.Cone`, [Physlib/ProbabilisticT
 abbrev ProbabilisticTheory.PosCone (P : ProbabilisticTheory) : PointedCone ℝ P.Observables
 ```
 
-**`ProbabilisticTheory.PosCone.instModule`**, an instance, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean#L59).
+**`ProbabilisticTheory.PosCone.instModule`**, an instance, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean#L59).
 
 > The positive cone carries a nonnegative-real scalar action.
 
@@ -46,7 +46,7 @@ instance instModule : Module ℝ≥0 (PosCone P)
 
 ## B. Topological closedness
 
-**`ProbabilisticTheory.PosCone.isClosed`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean#L69).
+**`ProbabilisticTheory.PosCone.isClosed`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean#L69).
 
 > The positive cone is closed in the topology induced by the order-unit norm.
 
@@ -56,14 +56,14 @@ lemma isClosed : IsClosed (PosCone P : Set P.Observables)
 
 ## C. The order unit
 
-**`ProbabilisticTheory.PosCone.coe_nnreal_smul`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean#L78).
+**`ProbabilisticTheory.PosCone.coe_nnreal_smul`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean#L78).
 
 ```lean
 lemma coe_nnreal_smul (t : ℝ≥0) (p : PosCone P) :
     ((t • p : PosCone P) : P.Observables) = (t : ℝ) • (p : P.Observables)
 ```
 
-**`ProbabilisticTheory.PosCone.instOne`**, an instance, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean#L83).
+**`ProbabilisticTheory.PosCone.instOne`**, an instance, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean#L83).
 
 > The order unit, regarded as a point of the positive cone.
 
@@ -71,13 +71,13 @@ lemma coe_nnreal_smul (t : ℝ≥0) (p : PosCone P) :
 instance instOne : One (PosCone P)
 ```
 
-**`ProbabilisticTheory.PosCone.coe_one`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean#L86).
+**`ProbabilisticTheory.PosCone.coe_one`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean#L86).
 
 ```lean
 lemma coe_one : ((1 : PosCone P) : P.Observables) = (1 : P.Observables)
 ```
 
-**`ProbabilisticTheory.PosCone.exists_sub`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean#L89).
+**`ProbabilisticTheory.PosCone.exists_sub`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean#L89).
 
 > Every observable is a difference `(A + n • 1) - n • 1` of two positive observables.
 
@@ -92,4 +92,4 @@ lemma exists_sub (A : P.Observables) : ∃ p q : PosCone P, (p : P.Observables) 
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/OrderUnit/Cone.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean)
+- [Physlib/ProbabilisticTheory/OrderUnit/Cone.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/ProbabilisticTheory/OrderUnit/Cone.lean)

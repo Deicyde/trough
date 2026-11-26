@@ -8,7 +8,7 @@ proof: formalized
 
 # Charges which are not pheno-constrained and do not regenerate dangerous couplings with Yukawas
 
-The module `Physlib.StringTheory.FTheory.SU5.Charges.Viable`, [Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean): 26 declarations, 5 with a docstring.
+The module `Physlib.StringTheory.FTheory.SU5.Charges.Viable`, [Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean): 26 declarations, 5 with a docstring.
 
 ## i. Overview
 
@@ -63,7 +63,7 @@ The module `Physlib.StringTheory.FTheory.SU5.Charges.Viable`, [Physlib/StringThe
 
 ### A.1. Stating the multiset `viableCompletions`
 
-**`FTheory.SU5.ChargeSpectrum.viableCompletions`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L128).
+**`FTheory.SU5.ChargeSpectrum.viableCompletions`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L128).
 
 > The multiset of charges which are completions of charges which minimally allow the top Yukawa,
 >   which are not phenomenologically constrained, and do not regenerate dangerous couplings.
@@ -78,7 +78,7 @@ def viableCompletions (I : CodimensionOneConfig) : Multiset (ChargeSpectrum ℤ)
 
 ### A.2. Cardinality of `viableCompletions`
 
-**`FTheory.SU5.ChargeSpectrum.viableCompletions_card`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L236).
+**`FTheory.SU5.ChargeSpectrum.viableCompletions_card`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L236).
 
 ```lean
 lemma viableCompletions_card (I : CodimensionOneConfig) :
@@ -88,7 +88,7 @@ lemma viableCompletions_card (I : CodimensionOneConfig) :
 
 ### A.3. No duplicates of `viableCompletions`
 
-**`FTheory.SU5.ChargeSpectrum.viableCompletions_nodup`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L247).
+**`FTheory.SU5.ChargeSpectrum.viableCompletions_nodup`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L247).
 
 ```lean
 lemma viableCompletions_nodup (I : CodimensionOneConfig) :
@@ -97,7 +97,7 @@ lemma viableCompletions_nodup (I : CodimensionOneConfig) :
 
 ### A.4. Elements of `viableCompletions` are not pheno-constrained
 
-**`FTheory.SU5.ChargeSpectrum.viableCompletions_isPhenoConstrained`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L257).
+**`FTheory.SU5.ChargeSpectrum.viableCompletions_isPhenoConstrained`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L257).
 
 ```lean
 lemma viableCompletions_isPhenoConstrained (I : CodimensionOneConfig) :
@@ -106,7 +106,7 @@ lemma viableCompletions_isPhenoConstrained (I : CodimensionOneConfig) :
 
 ### A.5. Elements of `viableCompletions` do not regenerate dangerous couplings
 
-**`FTheory.SU5.ChargeSpectrum.viableCompletions_yukawaGeneratesDangerousAtLevel_one`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L267).
+**`FTheory.SU5.ChargeSpectrum.viableCompletions_yukawaGeneratesDangerousAtLevel_one`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L267).
 
 ```lean
 lemma viableCompletions_yukawaGeneratesDangerousAtLevel_one (I : CodimensionOneConfig) :
@@ -115,7 +115,7 @@ lemma viableCompletions_yukawaGeneratesDangerousAtLevel_one (I : CodimensionOneC
 
 ### A.6. `viableCompletions` contain all pheno-viable completions of top-yukawa permitting
 
-**`FTheory.SU5.ChargeSpectrum.containsPhenoCompletionsOfMinimallyAllows_viableCompletions`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L277).
+**`FTheory.SU5.ChargeSpectrum.containsPhenoCompletionsOfMinimallyAllows_viableCompletions`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L277).
 
 ```lean
 lemma containsPhenoCompletionsOfMinimallyAllows_viableCompletions :
@@ -128,7 +128,7 @@ lemma containsPhenoCompletionsOfMinimallyAllows_viableCompletions :
 
 ### B.1. Stating the multiset `viableChargesAdditional`
 
-**`FTheory.SU5.ChargeSpectrum.viableChargesAdditional`**, a def, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L304).
+**`FTheory.SU5.ChargeSpectrum.viableChargesAdditional`**, a def, [line 304](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L304).
 
 > The charges in addition to `viableCompletions` which which permit a top Yukawa coupling,
 > are not phenomenologically constrained,
@@ -145,7 +145,7 @@ def viableChargesAdditional : CodimensionOneConfig → Multiset (ChargeSpectrum 
 
 ### B.2. `viableChargesAdditional` has no duplicates
 
-**`FTheory.SU5.ChargeSpectrum.viableChargesAdditional_nodup`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L350).
+**`FTheory.SU5.ChargeSpectrum.viableChargesAdditional_nodup`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L350).
 
 ```lean
 lemma viableChargesAdditional_nodup (I : CodimensionOneConfig) :
@@ -154,7 +154,7 @@ lemma viableChargesAdditional_nodup (I : CodimensionOneConfig) :
 
 ### B.3. Elements of `viableChargesAdditional` are not pheno-constrained
 
-**`FTheory.SU5.ChargeSpectrum.not_isPhenoConstrained_of_mem_viableChargesAdditional`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L360).
+**`FTheory.SU5.ChargeSpectrum.not_isPhenoConstrained_of_mem_viableChargesAdditional`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L360).
 
 ```lean
 lemma not_isPhenoConstrained_of_mem_viableChargesAdditional (I : CodimensionOneConfig) :
@@ -163,7 +163,7 @@ lemma not_isPhenoConstrained_of_mem_viableChargesAdditional (I : CodimensionOneC
 
 ### B.4. Elements of `viableChargesAdditional` do not regenerate dangerous couplings
 
-**`FTheory.SU5.ChargeSpectrum.yukawaGeneratesDangerousAtLevel_one_of_mem_viableChargesAdditional`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L370).
+**`FTheory.SU5.ChargeSpectrum.yukawaGeneratesDangerousAtLevel_one_of_mem_viableChargesAdditional`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L370).
 
 ```lean
 lemma yukawaGeneratesDangerousAtLevel_one_of_mem_viableChargesAdditional
@@ -173,7 +173,7 @@ lemma yukawaGeneratesDangerousAtLevel_one_of_mem_viableChargesAdditional
 
 ### B.5. `viableChargesAdditional` is disjoint from `viableCompletions`
 
-**`FTheory.SU5.ChargeSpectrum.viableCompletions_disjiont_viableChargesAdditional`**, a lemma, [line 381](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L381).
+**`FTheory.SU5.ChargeSpectrum.viableCompletions_disjiont_viableChargesAdditional`**, a lemma, [line 381](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L381).
 
 ```lean
 lemma viableCompletions_disjiont_viableChargesAdditional (I : CodimensionOneConfig) :
@@ -184,7 +184,7 @@ lemma viableCompletions_disjiont_viableChargesAdditional (I : CodimensionOneConf
 
 ### C.1. Stating the multiset `viableCharges`
 
-**`FTheory.SU5.ChargeSpectrum.viableCharges`**, a def, [line 405](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L405).
+**`FTheory.SU5.ChargeSpectrum.viableCharges`**, a def, [line 405](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L405).
 
 > All charges, for a given `CodimensionOneConfig`, `I`,
 > which permit a top Yukawa coupling, are not phenomenologically constrained,
@@ -199,7 +199,7 @@ def viableCharges (I : CodimensionOneConfig) : Multiset (ChargeSpectrum ℤ)
 
 ### C.2. `viableCharges` has no duplicates
 
-**`FTheory.SU5.ChargeSpectrum.viableCharges_nodup`**, a lemma, [line 414](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L414).
+**`FTheory.SU5.ChargeSpectrum.viableCharges_nodup`**, a lemma, [line 414](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L414).
 
 ```lean
 lemma viableCharges_nodup (I : CodimensionOneConfig) :
@@ -208,7 +208,7 @@ lemma viableCharges_nodup (I : CodimensionOneConfig) :
 
 ### C.3. Cardinality of `viableCharges`
 
-**`FTheory.SU5.ChargeSpectrum.viableCharges_card`**, a lemma, [line 424](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L424).
+**`FTheory.SU5.ChargeSpectrum.viableCharges_card`**, a lemma, [line 424](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L424).
 
 ```lean
 lemma viableCharges_card (I : CodimensionOneConfig) :
@@ -219,7 +219,7 @@ lemma viableCharges_card (I : CodimensionOneConfig) :
 
 ### C.4. Elements of `viableCharges` have charges allowed by configuration
 
-**`FTheory.SU5.ChargeSpectrum.viableCharges_mem_ofFinset`**, a lemma, [line 436](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L436).
+**`FTheory.SU5.ChargeSpectrum.viableCharges_mem_ofFinset`**, a lemma, [line 436](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L436).
 
 ```lean
 lemma viableCharges_mem_ofFinset (I : CodimensionOneConfig) :
@@ -228,7 +228,7 @@ lemma viableCharges_mem_ofFinset (I : CodimensionOneConfig) :
 
 ### C.5. Elements of `viableCharges` are complete
 
-**`FTheory.SU5.ChargeSpectrum.isComplete_of_mem_viableCharges`**, a lemma, [line 447](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L447).
+**`FTheory.SU5.ChargeSpectrum.isComplete_of_mem_viableCharges`**, a lemma, [line 447](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L447).
 
 ```lean
 lemma isComplete_of_mem_viableCharges (I : CodimensionOneConfig) :
@@ -237,7 +237,7 @@ lemma isComplete_of_mem_viableCharges (I : CodimensionOneConfig) :
 
 ### C.6. Elements of `viableCharges` permit a top Yukawa coupling
 
-**`FTheory.SU5.ChargeSpectrum.allowsTerm_topYukawa_of_mem_viableCharges`**, a lemma, [line 457](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L457).
+**`FTheory.SU5.ChargeSpectrum.allowsTerm_topYukawa_of_mem_viableCharges`**, a lemma, [line 457](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L457).
 
 ```lean
 lemma allowsTerm_topYukawa_of_mem_viableCharges (I : CodimensionOneConfig) :
@@ -246,7 +246,7 @@ lemma allowsTerm_topYukawa_of_mem_viableCharges (I : CodimensionOneConfig) :
 
 ### C.7. Elements of `viableCharges` are not pheno-constrained
 
-**`FTheory.SU5.ChargeSpectrum.not_isPhenoConstrained_of_mem_viableCharges`**, a lemma, [line 467](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L467).
+**`FTheory.SU5.ChargeSpectrum.not_isPhenoConstrained_of_mem_viableCharges`**, a lemma, [line 467](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L467).
 
 ```lean
 lemma not_isPhenoConstrained_of_mem_viableCharges (I : CodimensionOneConfig) :
@@ -255,7 +255,7 @@ lemma not_isPhenoConstrained_of_mem_viableCharges (I : CodimensionOneConfig) :
 
 ### C.8. Elements of `viableCharges` do not regenerate dangerous couplings
 
-**`FTheory.SU5.ChargeSpectrum.not_yukawaGeneratesDangerousAtLevel_one_of_mem_viableCharges`**, a lemma, [line 480](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L480).
+**`FTheory.SU5.ChargeSpectrum.not_yukawaGeneratesDangerousAtLevel_one_of_mem_viableCharges`**, a lemma, [line 480](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L480).
 
 ```lean
 lemma not_yukawaGeneratesDangerousAtLevel_one_of_mem_viableCharges
@@ -265,7 +265,7 @@ lemma not_yukawaGeneratesDangerousAtLevel_one_of_mem_viableCharges
 
 ### C.9. Elements of `viableCharges` have at most two 5-bar reps
 
-**`FTheory.SU5.ChargeSpectrum.card_five_bar_le_of_mem_viableCharges`**, a lemma, [line 494](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L494).
+**`FTheory.SU5.ChargeSpectrum.card_five_bar_le_of_mem_viableCharges`**, a lemma, [line 494](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L494).
 
 ```lean
 lemma card_five_bar_le_of_mem_viableCharges (I : CodimensionOneConfig) :
@@ -274,7 +274,7 @@ lemma card_five_bar_le_of_mem_viableCharges (I : CodimensionOneConfig) :
 
 ### C.10. Elements of `viableCharges` have at most two 10d reps
 
-**`FTheory.SU5.ChargeSpectrum.card_ten_le_of_mem_viableCharges`**, a lemma, [line 504](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L504).
+**`FTheory.SU5.ChargeSpectrum.card_ten_le_of_mem_viableCharges`**, a lemma, [line 504](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L504).
 
 ```lean
 lemma card_ten_le_of_mem_viableCharges (I : CodimensionOneConfig) :
@@ -287,7 +287,7 @@ lemma card_ten_le_of_mem_viableCharges (I : CodimensionOneConfig) :
 > charge which is either not phenomenologically constrained, or does not regenerate dangerous
 > couplings, or is already in `viableCharges I`.
 
-**`FTheory.SU5.ChargeSpectrum.isPhenoClosedQ5_viableCharges`**, a lemma, [line 522](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L522).
+**`FTheory.SU5.ChargeSpectrum.isPhenoClosedQ5_viableCharges`**, a lemma, [line 522](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L522).
 
 > Inserting a `q5` charge into an element of `viableCharges I` either
 > 1. produces another element of `viableCharges I`, or
@@ -301,7 +301,7 @@ lemma isPhenoClosedQ5_viableCharges : (I : CodimensionOneConfig) →
 
 ### C.12. `viableCharges` is phenomenologically closed under adding 10d charges
 
-**`FTheory.SU5.ChargeSpectrum.isPhenoClosedQ10_viableCharges`**, a lemma, [line 538](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L538).
+**`FTheory.SU5.ChargeSpectrum.isPhenoClosedQ10_viableCharges`**, a lemma, [line 538](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L538).
 
 > Inserting a `q10` charge into an element of `viableCharges I` either
 > 1. produces another element of `viableCharges I`, or
@@ -315,7 +315,7 @@ lemma isPhenoClosedQ10_viableCharges : (I : CodimensionOneConfig) →
 
 ### C.13. `viableCompletions` is a subset of `viableCharges`
 
-**`FTheory.SU5.ChargeSpectrum.viableCompletions_subset_viableCharges`**, a lemma, [line 550](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L550).
+**`FTheory.SU5.ChargeSpectrum.viableCompletions_subset_viableCharges`**, a lemma, [line 550](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L550).
 
 ```lean
 lemma viableCompletions_subset_viableCharges (I : CodimensionOneConfig) :
@@ -324,7 +324,7 @@ lemma viableCompletions_subset_viableCharges (I : CodimensionOneConfig) :
 
 ### C.14. `viableCharges` contains all pheno-viable charges given a section configuration
 
-**`FTheory.SU5.ChargeSpectrum.mem_viableCharges_iff`**, a lemma, [line 562](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L562).
+**`FTheory.SU5.ChargeSpectrum.mem_viableCharges_iff`**, a lemma, [line 562](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L562).
 
 ```lean
 lemma mem_viableCharges_iff {I} {x : ChargeSpectrum}
@@ -333,7 +333,7 @@ lemma mem_viableCharges_iff {I} {x : ChargeSpectrum}
     ¬ IsPhenoConstrained x ∧ ¬ YukawaGeneratesDangerousAtLevel x 1 ∧ IsComplete x
 ```
 
-**`FTheory.SU5.ChargeSpectrum.mem_viableCharges_iff'`**, a lemma, [line 578](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L578).
+**`FTheory.SU5.ChargeSpectrum.mem_viableCharges_iff'`**, a lemma, [line 578](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean#L578).
 
 ```lean
 lemma mem_viableCharges_iff' {I} {x : ChargeSpectrum} :
@@ -350,4 +350,4 @@ lemma mem_viableCharges_iff' {I} {x : ChargeSpectrum} :
 
 ## Sources
 
-- [Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean)
+- [Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean)

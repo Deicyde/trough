@@ -8,7 +8,7 @@ proof: formalized
 
 # The Norton dome
 
-The module `PhyslibAlpha.ClassicalMechanics.NortonDome.Basic`, [PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean): 51 declarations, 51 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.NortonDome.Basic`, [PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean): 51 declarations, 51 with a docstring.
 
 > The Norton dome: energies, force, equation of motion, and the non-Lipschitz force at the apex.
 
@@ -84,7 +84,7 @@ The module `PhyslibAlpha.ClassicalMechanics.NortonDome.Basic`, [PhyslibAlpha/Cla
 > The dome is specified by the mass of the particle and the gravitational acceleration; its shape
 > is fixed by Norton's formula.
 
-**`ClassicalMechanics.NortonDome`**, a structure, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L122).
+**`ClassicalMechanics.NortonDome`**, a structure, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L122).
 
 > The Norton dome is specified by the mass `m` of the particle sliding on it and the
 > gravitational acceleration `g`, both positive. The configuration of the particle is the arc
@@ -100,7 +100,7 @@ structure NortonDome where
   g_pos : 0 < g
 ```
 
-**`ClassicalMechanics.NortonDome.m_ne_zero`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L136).
+**`ClassicalMechanics.NortonDome.m_ne_zero`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L136).
 
 > The mass of the particle is not equal to zero.
 
@@ -108,7 +108,7 @@ structure NortonDome where
 lemma m_ne_zero : S.m ≠ 0
 ```
 
-**`ClassicalMechanics.NortonDome.g_ne_zero`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L140).
+**`ClassicalMechanics.NortonDome.g_ne_zero`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L140).
 
 > The gravitational acceleration is not equal to zero.
 
@@ -123,7 +123,7 @@ lemma g_ne_zero : S.g ≠ 0
 
 ### B.1. The height below the apex
 
-**`ClassicalMechanics.NortonDome.height`**, a def, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L159).
+**`ClassicalMechanics.NortonDome.height`**, a def, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L159).
 
 > The depth of the surface of the dome below its apex at arc length `r` from the apex,
 > `(2/(3g)) r^{3/2}`. It vanishes at the apex and for negative arguments.
@@ -132,7 +132,7 @@ lemma g_ne_zero : S.g ≠ 0
 noncomputable def height (r : ℝ) : ℝ
 ```
 
-**`ClassicalMechanics.NortonDome.height_eq`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L162).
+**`ClassicalMechanics.NortonDome.height_eq`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L162).
 
 > The depth of the dome below its apex, written out.
 
@@ -140,7 +140,7 @@ noncomputable def height (r : ℝ) : ℝ
 lemma height_eq (r : ℝ) : S.height r = 2 / (3 * S.g) * √r ^ 3
 ```
 
-**`ClassicalMechanics.NortonDome.height_nonneg`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L165).
+**`ClassicalMechanics.NortonDome.height_nonneg`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L165).
 
 > The depth of the dome below its apex is non-negative.
 
@@ -148,7 +148,7 @@ lemma height_eq (r : ℝ) : S.height r = 2 / (3 * S.g) * √r ^ 3
 lemma height_nonneg (r : ℝ) : 0 ≤ S.height r
 ```
 
-**`ClassicalMechanics.NortonDome.height_eq_zero_iff`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L171).
+**`ClassicalMechanics.NortonDome.height_eq_zero_iff`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L171).
 
 > The depth of the dome below its apex vanishes exactly at and before the apex.
 
@@ -161,7 +161,7 @@ lemma height_eq_zero_iff (r : ℝ) : S.height r = 0 ↔ r ≤ 0
 > The slope `√r / g` of the profile is continuous and vanishes at the apex, so the profile is
 > `C¹`. The slope itself is not differentiable at the apex, so the profile is not `C²`.
 
-**`ClassicalMechanics.NortonDome.hasDerivAt_height`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L186).
+**`ClassicalMechanics.NortonDome.hasDerivAt_height`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L186).
 
 > The derivative of the depth of the dome with respect to the arc length is `√r / g`, at
 > every `r`, including the apex.
@@ -170,7 +170,7 @@ lemma height_eq_zero_iff (r : ℝ) : S.height r = 0 ↔ r ≤ 0
 lemma hasDerivAt_height (r : ℝ) : HasDerivAt S.height (√r / S.g) r
 ```
 
-**`ClassicalMechanics.NortonDome.height_differentiable`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L193).
+**`ClassicalMechanics.NortonDome.height_differentiable`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L193).
 
 > The depth of the dome is a differentiable function of the arc length.
 
@@ -178,7 +178,7 @@ lemma hasDerivAt_height (r : ℝ) : HasDerivAt S.height (√r / S.g) r
 lemma height_differentiable : Differentiable ℝ S.height
 ```
 
-**`ClassicalMechanics.NortonDome.deriv_height`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L197).
+**`ClassicalMechanics.NortonDome.deriv_height`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L197).
 
 > The derivative of the depth of the dome with respect to the arc length is `√r / g`.
 
@@ -186,7 +186,7 @@ lemma height_differentiable : Differentiable ℝ S.height
 lemma deriv_height : deriv S.height = fun r => √r / S.g
 ```
 
-**`ClassicalMechanics.NortonDome.height_contDiff_one`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L201).
+**`ClassicalMechanics.NortonDome.height_contDiff_one`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L201).
 
 > The depth of the dome is a `C¹` function of the arc length.
 
@@ -201,7 +201,7 @@ lemma height_contDiff_one : ContDiff ℝ 1 S.height
 
 ### C.1. The definitions of the energies
 
-**`ClassicalMechanics.NortonDome.kineticEnergy`**, a def, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L224).
+**`ClassicalMechanics.NortonDome.kineticEnergy`**, a def, [line 224](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L224).
 
 > The kinetic energy of the particle on the dome along a curve `r` of the arc length is
 > `½ m ‖ṙ‖²`.
@@ -210,7 +210,7 @@ lemma height_contDiff_one : ContDiff ℝ 1 S.height
 noncomputable def kineticEnergy (r : Time → EuclideanSpace ℝ (Fin 1)) : Time → ℝ
 ```
 
-**`ClassicalMechanics.NortonDome.potentialEnergy`**, a def, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L230).
+**`ClassicalMechanics.NortonDome.potentialEnergy`**, a def, [line 230](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L230).
 
 > The potential energy of the particle on the dome at arc length `x` from the apex is
 > `-m g h(x 0)`, the gravitational potential at depth `h` below the apex, which vanishes at the
@@ -220,7 +220,7 @@ noncomputable def kineticEnergy (r : Time → EuclideanSpace ℝ (Fin 1)) : Time
 noncomputable def potentialEnergy (x : EuclideanSpace ℝ (Fin 1)) : ℝ
 ```
 
-**`ClassicalMechanics.NortonDome.energy`**, a def, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L234).
+**`ClassicalMechanics.NortonDome.energy`**, a def, [line 234](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L234).
 
 > The energy of the particle on the dome is the kinetic energy plus the potential energy.
 
@@ -228,7 +228,7 @@ noncomputable def potentialEnergy (x : EuclideanSpace ℝ (Fin 1)) : ℝ
 noncomputable def energy (r : Time → EuclideanSpace ℝ (Fin 1)) : Time → ℝ
 ```
 
-**`ClassicalMechanics.NortonDome.kineticEnergy_eq`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L238).
+**`ClassicalMechanics.NortonDome.kineticEnergy_eq`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L238).
 
 > The kinetic energy of the particle on the dome, written out.
 
@@ -237,7 +237,7 @@ lemma kineticEnergy_eq (r : Time → EuclideanSpace ℝ (Fin 1)) :
     S.kineticEnergy r = fun t => (1 / (2 : ℝ)) * S.m * ⟪∂ₜ r t, ∂ₜ r t⟫_ℝ
 ```
 
-**`ClassicalMechanics.NortonDome.potentialEnergy_eq`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L243).
+**`ClassicalMechanics.NortonDome.potentialEnergy_eq`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L243).
 
 > The potential energy of the particle on the dome is `-(2m/3) r^{3/2}`: the gravitational
 > acceleration cancels against the shape of the dome.
@@ -247,7 +247,7 @@ lemma potentialEnergy_eq (x : EuclideanSpace ℝ (Fin 1)) :
     S.potentialEnergy x = -(2 * S.m / 3) * √(x 0) ^ 3
 ```
 
-**`ClassicalMechanics.NortonDome.energy_eq`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L249).
+**`ClassicalMechanics.NortonDome.energy_eq`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L249).
 
 > The energy of the particle on the dome, written out.
 
@@ -256,7 +256,7 @@ lemma energy_eq (r : Time → EuclideanSpace ℝ (Fin 1)) :
     S.energy r = fun t => S.kineticEnergy r t + S.potentialEnergy (r t)
 ```
 
-**`ClassicalMechanics.NortonDome.potentialEnergy_nonpos`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L254).
+**`ClassicalMechanics.NortonDome.potentialEnergy_nonpos`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L254).
 
 > The potential energy of the particle on the dome is non-positive, the apex being the
 > highest point of the dome.
@@ -265,7 +265,7 @@ lemma energy_eq (r : Time → EuclideanSpace ℝ (Fin 1)) :
 lemma potentialEnergy_nonpos (x : EuclideanSpace ℝ (Fin 1)) : S.potentialEnergy x ≤ 0
 ```
 
-**`ClassicalMechanics.NortonDome.potentialEnergy_eq_zero_iff`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L260).
+**`ClassicalMechanics.NortonDome.potentialEnergy_eq_zero_iff`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L260).
 
 > The potential energy of the particle on the dome vanishes exactly at the apex, that is for
 > arc length `≤ 0`.
@@ -280,7 +280,7 @@ lemma potentialEnergy_eq_zero_iff (x : EuclideanSpace ℝ (Fin 1)) :
 > The potential energy is differentiable, with gradient `-m √r` times the unit vector of the
 > arc-length coordinate. It is `C¹` but not `C²`, since `√r` is not differentiable at `0`.
 
-**`ClassicalMechanics.NortonDome.differentiableAt_sqrt_coord_pow_three`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L276).
+**`ClassicalMechanics.NortonDome.differentiableAt_sqrt_coord_pow_three`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L276).
 
 > The cube of the square root of the arc-length coordinate is differentiable on the Euclidean
 > lift, at every point.
@@ -290,7 +290,7 @@ lemma differentiableAt_sqrt_coord_pow_three (x : EuclideanSpace ℝ (Fin 1)) :
     DifferentiableAt ℝ (fun y : EuclideanSpace ℝ (Fin 1) => √(y 0) ^ 3) x
 ```
 
-**`ClassicalMechanics.NortonDome.differentiable_potentialEnergy`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L286).
+**`ClassicalMechanics.NortonDome.differentiable_potentialEnergy`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L286).
 
 > The potential energy of the particle on the dome is a differentiable function of the arc
 > length.
@@ -299,7 +299,7 @@ lemma differentiableAt_sqrt_coord_pow_three (x : EuclideanSpace ℝ (Fin 1)) :
 lemma differentiable_potentialEnergy : Differentiable ℝ S.potentialEnergy
 ```
 
-**`ClassicalMechanics.NortonDome.gradient_potentialEnergy`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L295).
+**`ClassicalMechanics.NortonDome.gradient_potentialEnergy`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L295).
 
 > The gradient of the potential energy of the particle on the dome is `-m √r` times the unit
 > vector of the arc-length coordinate.
@@ -309,7 +309,7 @@ lemma gradient_potentialEnergy (x : EuclideanSpace ℝ (Fin 1)) :
     gradient S.potentialEnergy x = -(S.m * √(x 0)) • EuclideanSpace.single 0 1
 ```
 
-**`ClassicalMechanics.NortonDome.kineticEnergy_differentiable`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L307).
+**`ClassicalMechanics.NortonDome.kineticEnergy_differentiable`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L307).
 
 > Along a curve of the arc length with differentiable velocity the kinetic energy is
 > differentiable in time.
@@ -319,7 +319,7 @@ lemma kineticEnergy_differentiable (r : Time → EuclideanSpace ℝ (Fin 1))
     (hr' : Differentiable ℝ (∂ₜ r)) : Differentiable ℝ (S.kineticEnergy r)
 ```
 
-**`ClassicalMechanics.NortonDome.potentialEnergy_differentiable`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L315).
+**`ClassicalMechanics.NortonDome.potentialEnergy_differentiable`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L315).
 
 > Along a differentiable curve of the arc length the potential energy is a differentiable
 > function of the time.
@@ -329,7 +329,7 @@ lemma potentialEnergy_differentiable (r : Time → EuclideanSpace ℝ (Fin 1))
     (hr : Differentiable ℝ r) : Differentiable ℝ (fun t => S.potentialEnergy (r t))
 ```
 
-**`ClassicalMechanics.NortonDome.energy_differentiable`**, a lemma, [line 322](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L322).
+**`ClassicalMechanics.NortonDome.energy_differentiable`**, a lemma, [line 322](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L322).
 
 > Along a twice differentiable curve of the arc length the energy is differentiable in
 > time.
@@ -344,7 +344,7 @@ lemma energy_differentiable (r : Time → EuclideanSpace ℝ (Fin 1)) (hr : Diff
 > Along a twice differentiable curve, solution or not, the time derivatives of the energies are
 > inner products against the velocity; the equation of motion makes the two contributions cancel.
 
-**`ClassicalMechanics.NortonDome.kineticEnergy_deriv`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L337).
+**`ClassicalMechanics.NortonDome.kineticEnergy_deriv`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L337).
 
 > The rate of change of the kinetic energy is the velocity paired with `m r̈`.
 
@@ -354,7 +354,7 @@ lemma kineticEnergy_deriv (r : Time → EuclideanSpace ℝ (Fin 1))
     ∂ₜ (S.kineticEnergy r) = fun t => ⟪∂ₜ r t, S.m • ∂ₜ (∂ₜ r) t⟫_ℝ
 ```
 
-**`ClassicalMechanics.NortonDome.potentialEnergy_deriv`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L350).
+**`ClassicalMechanics.NortonDome.potentialEnergy_deriv`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L350).
 
 > The rate of change of the potential energy is the velocity paired with the gradient of the
 > potential.
@@ -365,7 +365,7 @@ lemma potentialEnergy_deriv (r : Time → EuclideanSpace ℝ (Fin 1)) (hr : Diff
       fun t => ⟪∂ₜ r t, gradient S.potentialEnergy (r t)⟫_ℝ
 ```
 
-**`ClassicalMechanics.NortonDome.energy_deriv`**, a lemma, [line 361](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L361).
+**`ClassicalMechanics.NortonDome.energy_deriv`**, a lemma, [line 361](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L361).
 
 > The rate of change of the energy is the velocity paired with the sum of `m r̈` and the
 > gradient of the potential; the equation of motion is exactly the vanishing of that sum.
@@ -383,7 +383,7 @@ lemma energy_deriv (r : Time → EuclideanSpace ℝ (Fin 1)) (hr : Differentiabl
 > harmonic oscillator and the pendulum it is only `C¹`; its partial gradients still exist, and
 > are the force of section E and the momentum `m ṙ`.
 
-**`ClassicalMechanics.NortonDome.lagrangian`**, a def, [line 387](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L387).
+**`ClassicalMechanics.NortonDome.lagrangian`**, a def, [line 387](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L387).
 
 > The Lagrangian of the particle on the dome, `L(t, r, ṙ) = ½ m ‖ṙ‖² - V(r)`, the kinetic
 > energy minus the potential energy as a function on phase space. It does not depend on the
@@ -393,7 +393,7 @@ lemma energy_deriv (r : Time → EuclideanSpace ℝ (Fin 1)) (hr : Differentiabl
 noncomputable def lagrangian (t : Time) (x v : EuclideanSpace ℝ (Fin 1)) : ℝ
 ```
 
-**`ClassicalMechanics.NortonDome.lagrangian_eq_kineticEnergy_sub_potentialEnergy`**, a lemma, [line 392](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L392).
+**`ClassicalMechanics.NortonDome.lagrangian_eq_kineticEnergy_sub_potentialEnergy`**, a lemma, [line 392](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L392).
 
 > Along a curve of the arc length the Lagrangian of the particle on the dome is the kinetic
 > energy minus the potential energy.
@@ -404,7 +404,7 @@ lemma lagrangian_eq_kineticEnergy_sub_potentialEnergy (t : Time)
     S.lagrangian t (r t) (∂ₜ r t) = S.kineticEnergy r t - S.potentialEnergy (r t)
 ```
 
-**`ClassicalMechanics.NortonDome.gradient_lagrangian_position_eq`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L399).
+**`ClassicalMechanics.NortonDome.gradient_lagrangian_position_eq`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L399).
 
 > The gradient of the Lagrangian of the particle on the dome in the arc length is minus the
 > gradient of the potential energy, `m √r` times the unit vector of the arc-length
@@ -415,7 +415,7 @@ lemma gradient_lagrangian_position_eq (t : Time) (x v : EuclideanSpace ℝ (Fin 
     gradient (fun x => S.lagrangian t x v) x = (S.m * √(x 0)) • EuclideanSpace.single 0 1
 ```
 
-**`ClassicalMechanics.NortonDome.gradient_lagrangian_velocity_eq`**, a lemma, [line 412](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L412).
+**`ClassicalMechanics.NortonDome.gradient_lagrangian_velocity_eq`**, a lemma, [line 412](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L412).
 
 > The gradient of the Lagrangian of the particle on the dome in the velocity is the momentum
 > `m ṙ`.
@@ -434,7 +434,7 @@ lemma gradient_lagrangian_velocity_eq (t : Time) (x v : EuclideanSpace ℝ (Fin 
 
 ### E.1. The force
 
-**`ClassicalMechanics.NortonDome.force`**, a def, [line 441](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L441).
+**`ClassicalMechanics.NortonDome.force`**, a def, [line 441](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L441).
 
 > The generalized force on the particle on the dome conjugate to the arc length, minus the
 > gradient of the potential energy, `F = -∂V/∂r`.
@@ -443,7 +443,7 @@ lemma gradient_lagrangian_velocity_eq (t : Time) (x v : EuclideanSpace ℝ (Fin 
 noncomputable def force (x : EuclideanSpace ℝ (Fin 1)) : EuclideanSpace ℝ (Fin 1)
 ```
 
-**`ClassicalMechanics.NortonDome.force_eq`**, a lemma, [line 446](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L446).
+**`ClassicalMechanics.NortonDome.force_eq`**, a lemma, [line 446](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L446).
 
 > The force on the particle on the dome is `m √r` times the unit vector of the arc-length
 > coordinate: it points away from the apex, and vanishes there.
@@ -453,7 +453,7 @@ lemma force_eq (x : EuclideanSpace ℝ (Fin 1)) :
     S.force x = (S.m * √(x 0)) • EuclideanSpace.single 0 1
 ```
 
-**`ClassicalMechanics.NortonDome.force_apply`**, a lemma, [line 451](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L451).
+**`ClassicalMechanics.NortonDome.force_apply`**, a lemma, [line 451](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L451).
 
 > The single component of the force on the particle on the dome is `m √r`.
 
@@ -461,7 +461,7 @@ lemma force_eq (x : EuclideanSpace ℝ (Fin 1)) :
 lemma force_apply (x : EuclideanSpace ℝ (Fin 1)) : S.force x 0 = S.m * √(x 0)
 ```
 
-**`ClassicalMechanics.NortonDome.force_zero`**, a lemma, [line 456](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L456).
+**`ClassicalMechanics.NortonDome.force_zero`**, a lemma, [line 456](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L456).
 
 > The force on the particle on the dome vanishes at the apex.
 
@@ -475,7 +475,7 @@ lemma force_zero : S.force 0 = 0
 > root is not Lipschitz on any `[0, ε]`: the Picard–Lindelöf hypothesis fails, which is the
 > source of the non-uniqueness.
 
-**`ClassicalMechanics.NortonDome.force_continuous`**, a lemma, [line 472](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L472).
+**`ClassicalMechanics.NortonDome.force_continuous`**, a lemma, [line 472](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L472).
 
 > The force on the particle on the dome is a continuous function of the arc length.
 
@@ -483,7 +483,7 @@ lemma force_zero : S.force 0 = 0
 lemma force_continuous : Continuous S.force
 ```
 
-**`ClassicalMechanics.NortonDome.dist_smul_single`**, a lemma, [line 479](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L479).
+**`ClassicalMechanics.NortonDome.dist_smul_single`**, a lemma, [line 479](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L479).
 
 > The distance between two multiples of the unit vector of the arc-length coordinate is the
 > distance between the coefficients.
@@ -494,7 +494,7 @@ lemma dist_smul_single (a b : ℝ) :
       |a - b|
 ```
 
-**`ClassicalMechanics.NortonDome.not_lipschitzOnWith_force`**, a lemma, [line 487](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L487).
+**`ClassicalMechanics.NortonDome.not_lipschitzOnWith_force`**, a lemma, [line 487](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L487).
 
 > The force on the particle on the dome is not Lipschitz on any closed ball about the apex,
 > for any Lipschitz constant.
@@ -506,7 +506,7 @@ lemma not_lipschitzOnWith_force (K : NNReal) {ε : ℝ} (hε : 0 < ε) :
 
 ### E.3. The equation of motion
 
-**`ClassicalMechanics.NortonDome.EquationOfMotion`**, a def, [line 516](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L516).
+**`ClassicalMechanics.NortonDome.EquationOfMotion`**, a def, [line 516](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L516).
 
 > The equation of motion of the particle on the dome: at every instant `m r̈` equals the
 > generalized force `F(r) = m √r`. This pointwise relation is the definition; for curves with
@@ -517,7 +517,7 @@ lemma not_lipschitzOnWith_force (K : NNReal) {ε : ℝ} (hε : 0 < ε) :
 def EquationOfMotion (r : Time → EuclideanSpace ℝ (Fin 1)) : Prop
 ```
 
-**`ClassicalMechanics.NortonDome.equationOfMotion_iff_newtons_2nd_law`**, a lemma, [line 522](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L522).
+**`ClassicalMechanics.NortonDome.equationOfMotion_iff_newtons_2nd_law`**, a lemma, [line 522](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L522).
 
 > The equation of motion with all terms on one side: at every instant `m r̈` plus the
 > gradient of the potential energy vanishes. This is the combination `energy_deriv` pairs with
@@ -529,7 +529,7 @@ lemma equationOfMotion_iff_newtons_2nd_law (r : Time → EuclideanSpace ℝ (Fin
       ∀ t, S.m • ∂ₜ (∂ₜ r) t + gradient S.potentialEnergy (r t) = 0
 ```
 
-**`ClassicalMechanics.NortonDome.equationOfMotion_iff_scalar`**, a lemma, [line 529](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L529).
+**`ClassicalMechanics.NortonDome.equationOfMotion_iff_scalar`**, a lemma, [line 529](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L529).
 
 > The equation of motion of the particle on the dome in scalar form, `r̈ = √r`. Both the mass
 > and the gravitational acceleration have cancelled.
@@ -547,7 +547,7 @@ lemma equationOfMotion_iff_scalar (r : Time → EuclideanSpace ℝ (Fin 1)) :
 > pointwise equation, whose derivatives are zero wherever they do not exist, admits rough accidental
 > solutions. Smoothness is not demanded: the motions leaving the apex are `C³` but not `C⁴`.
 
-**`ClassicalMechanics.NortonDome.IsSolution`**, a def, [line 557](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L557).
+**`ClassicalMechanics.NortonDome.IsSolution`**, a def, [line 557](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L557).
 
 > A solution of the dome is a twice differentiable curve of the arc length, its position and
 > velocity both differentiable, satisfying the equation of motion.
@@ -556,7 +556,7 @@ lemma equationOfMotion_iff_scalar (r : Time → EuclideanSpace ℝ (Fin 1)) :
 def IsSolution (r : Time → EuclideanSpace ℝ (Fin 1)) : Prop
 ```
 
-**`ClassicalMechanics.NortonDome.IsSolution.differentiable`**, a lemma, [line 561](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L561).
+**`ClassicalMechanics.NortonDome.IsSolution.differentiable`**, a lemma, [line 561](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L561).
 
 > The position along a solution of the dome is differentiable.
 
@@ -565,7 +565,7 @@ lemma IsSolution.differentiable {S : NortonDome} {r : Time → EuclideanSpace �
     (h : S.IsSolution r) : Differentiable ℝ r
 ```
 
-**`ClassicalMechanics.NortonDome.IsSolution.deriv_differentiable`**, a lemma, [line 565](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L565).
+**`ClassicalMechanics.NortonDome.IsSolution.deriv_differentiable`**, a lemma, [line 565](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L565).
 
 > The velocity along a solution of the dome is differentiable.
 
@@ -574,7 +574,7 @@ lemma IsSolution.deriv_differentiable {S : NortonDome} {r : Time → EuclideanSp
     (h : S.IsSolution r) : Differentiable ℝ (∂ₜ r)
 ```
 
-**`ClassicalMechanics.NortonDome.IsSolution.equationOfMotion`**, a lemma, [line 569](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L569).
+**`ClassicalMechanics.NortonDome.IsSolution.equationOfMotion`**, a lemma, [line 569](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L569).
 
 > A solution of the dome satisfies the equation of motion.
 
@@ -590,7 +590,7 @@ lemma IsSolution.equationOfMotion {S : NortonDome} {r : Time → EuclideanSpace 
 > The identification of this operator with the variational derivative of the action,
 > `euler_lagrange_varGradient`, needs a smooth Lagrangian and so does not apply to the dome.
 
-**`ClassicalMechanics.NortonDome.eulerLagrangeOp_lagrangian`**, a lemma, [line 585](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L585).
+**`ClassicalMechanics.NortonDome.eulerLagrangeOp_lagrangian`**, a lemma, [line 585](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L585).
 
 > Along a curve of the arc length with differentiable velocity the Euler–Lagrange operator of
 > the Lagrangian of the dome is the force minus `m r̈`.
@@ -601,7 +601,7 @@ lemma eulerLagrangeOp_lagrangian (r : Time → EuclideanSpace ℝ (Fin 1))
     eulerLagrangeOp S.lagrangian r = fun t => S.force (r t) - S.m • ∂ₜ (∂ₜ r) t
 ```
 
-**`ClassicalMechanics.NortonDome.equationOfMotion_iff_eulerLagrangeOp_zero`**, a lemma, [line 595](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L595).
+**`ClassicalMechanics.NortonDome.equationOfMotion_iff_eulerLagrangeOp_zero`**, a lemma, [line 595](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L595).
 
 > For a curve of the arc length with differentiable velocity the equation of motion of the
 > dome holds if and only if the Euler–Lagrange operator of its Lagrangian vanishes along it.
@@ -619,7 +619,7 @@ lemma equationOfMotion_iff_eulerLagrangeOp_zero (r : Time → EuclideanSpace ℝ
 > at rest at the apex and every motion leaving it all have zero energy, which is proved in
 > `NortonDome.Solution` as `energy_rest` and `energy_solution`.
 
-**`ClassicalMechanics.NortonDome.energy_conservation_of_equationOfMotion`**, a lemma, [line 615](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L615).
+**`ClassicalMechanics.NortonDome.energy_conservation_of_equationOfMotion`**, a lemma, [line 615](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L615).
 
 > Along a twice differentiable curve of the arc length satisfying the equation of motion the
 > time derivative of the energy of the dome vanishes.
@@ -630,7 +630,7 @@ lemma energy_conservation_of_equationOfMotion (r : Time → EuclideanSpace ℝ (
     ∂ₜ (S.energy r) = 0
 ```
 
-**`ClassicalMechanics.NortonDome.energy_conservation_of_equationOfMotion'`**, a lemma, [line 625](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L625).
+**`ClassicalMechanics.NortonDome.energy_conservation_of_equationOfMotion'`**, a lemma, [line 625](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L625).
 
 > Along a twice differentiable curve of the arc length satisfying the equation of motion the
 > energy of the dome at any time is equal to its initial value.
@@ -641,7 +641,7 @@ lemma energy_conservation_of_equationOfMotion' (r : Time → EuclideanSpace ℝ 
     (t : Time) : S.energy r t = S.energy r 0
 ```
 
-**`ClassicalMechanics.NortonDome.IsSolution.energy_eq`**, a lemma, [line 636](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L636).
+**`ClassicalMechanics.NortonDome.IsSolution.energy_eq`**, a lemma, [line 636](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean#L636).
 
 > The energy of the dome along a solution at any time is equal to its initial value.
 
@@ -661,4 +661,4 @@ lemma IsSolution.energy_eq {S : NortonDome} {r : Time → EuclideanSpace ℝ (Fi
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean)
+- [PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/NortonDome/Basic.lean)

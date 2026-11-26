@@ -8,7 +8,7 @@ proof: formalized
 
 # Attainment of the Hohmann lower bound
 
-The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.H1Bridge`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean): 10 declarations, 4 with a docstring; 2 private, not shown.
+The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.H1Bridge`, [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean): 10 declarations, 4 with a docstring; 2 private, not shown.
 
 > The explicit Hohmann trajectory attains the lower bound within the comparison class.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.
 
 ## A. Physical attainment and the minimum
 
-**`ClassicalMechanics.HohmannOptimality.unitsOfH1`**, a def, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L44).
+**`ClassicalMechanics.HohmannOptimality.unitsOfH1`**, a def, [line 44](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L44).
 
 > Data conversion only; no optimality assumption is added to H1.
 
@@ -36,28 +36,28 @@ The module `PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.
 def unitsOfH1 (p : HohmannTransfer.Parameters) : Units
 ```
 
-**`ClassicalMechanics.HohmannOptimality.h1_speed`**, a lemma, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L47).
+**`ClassicalMechanics.HohmannOptimality.h1_speed`**, a lemma, [line 47](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L47).
 
 ```lean
 lemma h1_speed (p : HohmannTransfer.Parameters) :
     (unitsOfH1 p).speed=HohmannTransfer.circularSpeed p.mu p.r₁
 ```
 
-**`ClassicalMechanics.HohmannOptimality.h1_outer_speed`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L49).
+**`ClassicalMechanics.HohmannOptimality.h1_outer_speed`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L49).
 
 ```lean
 lemma h1_outer_speed (p : HohmannTransfer.Parameters) :
     (unitsOfH1 p).circular₂=HohmannTransfer.circularSpeed p.mu p.r₂
 ```
 
-**`ClassicalMechanics.HohmannOptimality.h1_peri_speed`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L53).
+**`ClassicalMechanics.HohmannOptimality.h1_peri_speed`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L53).
 
 ```lean
 lemma h1_peri_speed (p : HohmannTransfer.Parameters) :
     (unitsOfH1 p).speed*(unitsOfH1 p).shape.hH=HohmannTransfer.periSpeed p
 ```
 
-**`ClassicalMechanics.HohmannOptimality.h1_apo_speed`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L67).
+**`ClassicalMechanics.HohmannOptimality.h1_apo_speed`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L67).
 
 ```lean
 lemma h1_apo_speed (p : HohmannTransfer.Parameters) :
@@ -65,14 +65,14 @@ lemma h1_apo_speed (p : HohmannTransfer.Parameters) :
       HohmannTransfer.apoSpeed p
 ```
 
-**`ClassicalMechanics.HohmannOptimality.h1_bound_eq_totalDeltaV`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L82).
+**`ClassicalMechanics.HohmannOptimality.h1_bound_eq_totalDeltaV`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L82).
 
 ```lean
 lemma h1_bound_eq_totalDeltaV (p : HohmannTransfer.Parameters) :
     (unitsOfH1 p).bound=HohmannTransfer.totalDeltaV p
 ```
 
-**`ClassicalMechanics.HohmannOptimality.h1_global_two_impulse_minimum`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L97).
+**`ClassicalMechanics.HohmannOptimality.h1_global_two_impulse_minimum`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L97).
 
 > Physical attainment from H1 plus a global lower bound against arbitrary
 > smooth two-impulse competitors. Free time, free phase, fixed central field.
@@ -92,7 +92,7 @@ lemma h1_global_two_impulse_minimum (p : HohmannTransfer.Parameters) :
         (a.state a.t₁).impulse (HohmannTransfer.circularSpeed p.mu p.r₂))
 ```
 
-**`ClassicalMechanics.HohmannOptimality.h1KeplerArc`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L118).
+**`ClassicalMechanics.HohmannOptimality.h1KeplerArc`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L118).
 
 > The explicit H1 coast is a member of the same class used for the lower bound.
 
@@ -100,14 +100,14 @@ lemma h1_global_two_impulse_minimum (p : HohmannTransfer.Parameters) :
 def h1KeplerArc (p : HohmannTransfer.Parameters) : KeplerArc p.mu
 ```
 
-**`ClassicalMechanics.HohmannOptimality.h1_state_radius`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L151).
+**`ClassicalMechanics.HohmannOptimality.h1_state_radius`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L151).
 
 ```lean
 lemma h1_state_radius (p : HohmannTransfer.Parameters) (t : ℝ) :
     ((h1KeplerArc p).state t).radius = ‖HohmannTransfer.position p t‖
 ```
 
-**`ClassicalMechanics.HohmannOptimality.h1_attains_bound_in_kepler_class`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L185).
+**`ClassicalMechanics.HohmannOptimality.h1_attains_bound_in_kepler_class`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean#L185).
 
 > The lower bound is attained within the actual Newtonian comparison class.
 
@@ -130,4 +130,4 @@ lemma h1_attains_bound_in_kepler_class (p : HohmannTransfer.Parameters) :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean)
+- [PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean)

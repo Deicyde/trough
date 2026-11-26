@@ -8,7 +8,7 @@ proof: formalized
 
 # Matter content of FLRW cosmology
 
-The module `Physlib.Cosmology.FLRW.MatterContent`, [Physlib/Cosmology/FLRW/MatterContent.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/MatterContent.lean): 15 declarations, 15 with a docstring.
+The module `Physlib.Cosmology.FLRW.MatterContent`, [Physlib/Cosmology/FLRW/MatterContent.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/MatterContent.lean): 15 declarations, 15 with a docstring.
 
 ## i. Overview
 
@@ -58,7 +58,7 @@ The module `Physlib.Cosmology.FLRW.MatterContent`, [Physlib/Cosmology/FLRW/Matte
 
 ### A.1. The definition
 
-**`Cosmology.FLRW.FriedmannEquation.ContinuityEquation`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/MatterContent.lean#L97).
+**`Cosmology.FLRW.FriedmannEquation.ContinuityEquation`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/MatterContent.lean#L97).
 
 > The continuity equation of the cosmic fluid at the instant `t`:
 > `∂ₜ ρ + 3 H (ρ + p / c²) = 0`, with `H = hubbleConstant a`.
@@ -69,7 +69,7 @@ def ContinuityEquation (a ρ p : Time → ℝ) (c : SpeedOfLight) (t : Time) : P
 
 ### A.2. The derivative of the first-order Friedmann equation
 
-**`Cosmology.FLRW.FriedmannEquation.deriv_firstOrderFriedmann`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/MatterContent.lean#L108).
+**`Cosmology.FLRW.FriedmannEquation.deriv_firstOrderFriedmann`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/MatterContent.lean#L108).
 
 > Differentiating the first-order Friedmann equation, assumed at all times near `t`, at `t`:
 > `2 H (a''/a - H²) = (8 π G / 3) ρ' + 2 k c² H / a²`.
@@ -84,7 +84,7 @@ lemma deriv_firstOrderFriedmann {a ρ : Time → ℝ} {k Λ G : ℝ} {c : SpeedO
 
 ### A.3. Continuity from the Friedmann equations
 
-**`Cosmology.FLRW.FriedmannEquation.continuityEquation_of_friedmann`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/MatterContent.lean#L138).
+**`Cosmology.FLRW.FriedmannEquation.continuityEquation_of_friedmann`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/MatterContent.lean#L138).
 
 > The continuity equation follows from the first-order Friedmann equation, assumed at all
 > times near `t`, and the second-order Friedmann equation at `t`; `a` must be twice
@@ -101,7 +101,7 @@ lemma continuityEquation_of_friedmann {a ρ p : Time → ℝ} {k Λ G : ℝ} {c 
 
 ### A.4. The second-order Friedmann equation from continuity
 
-**`Cosmology.FLRW.FriedmannEquation.secondOrderFriedmann_of_continuityEquation`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/MatterContent.lean#L163).
+**`Cosmology.FLRW.FriedmannEquation.secondOrderFriedmann_of_continuityEquation`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/MatterContent.lean#L163).
 
 > The second-order Friedmann equation at `t` follows from the first-order Friedmann
 > equation, assumed at all times near `t`, and the continuity equation at `t`, provided
@@ -119,7 +119,7 @@ lemma secondOrderFriedmann_of_continuityEquation {a ρ p : Time → ℝ} {k Λ G
 
 ### A.5. The continuity equation of a solution of the Friedmann equations
 
-**`Cosmology.FLRW.FriedmannSolution.continuityEquation`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/MatterContent.lean#L190).
+**`Cosmology.FLRW.FriedmannSolution.continuityEquation`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/MatterContent.lean#L190).
 
 > If the FLRW model `U` filled with the cosmic fluid `F` solves the Friedmann equations, the
 > continuity equation holds at every time of the interval `U.I` at which the energy density is
@@ -137,7 +137,7 @@ lemma _root_.Cosmology.FLRW.FriedmannSolution.continuityEquation {U : FLRW} {F :
 
 ### B.1. The equation of state
 
-**`Cosmology.FLRW.FriedmannEquation.barotropicPressure`**, a def, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/MatterContent.lean#L211).
+**`Cosmology.FLRW.FriedmannEquation.barotropicPressure`**, a def, [line 211](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/MatterContent.lean#L211).
 
 > The barotropic pressure `p = w ρ c²` with constant equation-of-state parameter `w`.
 
@@ -145,7 +145,7 @@ lemma _root_.Cosmology.FLRW.FriedmannSolution.continuityEquation {U : FLRW} {F :
 noncomputable def barotropicPressure (w : ℝ) (ρ : Time → ℝ) (c : SpeedOfLight) : Time → ℝ
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.deriv_of_continuityEquation_barotropic`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/MatterContent.lean#L215).
+**`Cosmology.FLRW.FriedmannEquation.deriv_of_continuityEquation_barotropic`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/MatterContent.lean#L215).
 
 > Under the barotropic continuity equation, `∂ₜ ρ = -3 (1 + w) H ρ`.
 
@@ -157,7 +157,7 @@ lemma deriv_of_continuityEquation_barotropic {a ρ : Time → ℝ} {w : ℝ} {c 
 
 ### B.2. The density scaling law
 
-**`Cosmology.FLRW.FriedmannEquation.density_scaling`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/MatterContent.lean#L234).
+**`Cosmology.FLRW.FriedmannEquation.density_scaling`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/MatterContent.lean#L234).
 
 > The density scaling law: under the barotropic continuity equation at all times, with `a`
 > and `ρ` differentiable and `a > 0`, `ρ t = ρ t₀ (a t / a t₀)^(-3(1+w))`. The proof shows that
@@ -170,7 +170,7 @@ lemma density_scaling {a ρ : Time → ℝ} {w : ℝ} {c : SpeedOfLight} (hd1 : 
     ρ t = ρ t₀ * (a t / a t₀) ^ (-(3 * (1 + w)))
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.continuityEquation_of_scaling`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/MatterContent.lean#L263).
+**`Cosmology.FLRW.FriedmannEquation.continuityEquation_of_scaling`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/MatterContent.lean#L263).
 
 > Conversely, `ρ = ρ₀ (a / a₀)^(-3(1+w))` satisfies the barotropic continuity equation at
 > all times, for `a` differentiable and positive.
@@ -184,7 +184,7 @@ lemma continuityEquation_of_scaling {a : Time → ℝ} {w : ℝ} {c : SpeedOfLig
 
 ### B.3. Dust, radiation and vacuum energy
 
-**`Cosmology.FLRW.FriedmannEquation.density_scaling_dust`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/MatterContent.lean#L288).
+**`Cosmology.FLRW.FriedmannEquation.density_scaling_dust`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/MatterContent.lean#L288).
 
 > Dust, `w = 0`: `ρ ∝ a⁻³`.
 
@@ -195,7 +195,7 @@ lemma density_scaling_dust {a ρ : Time → ℝ} {c : SpeedOfLight} (hd1 : Diffe
     ρ t = ρ t₀ * (a t₀ / a t) ^ 3
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.density_scaling_radiation`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/MatterContent.lean#L298).
+**`Cosmology.FLRW.FriedmannEquation.density_scaling_radiation`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/MatterContent.lean#L298).
 
 > Radiation, `w = 1/3`: `ρ ∝ a⁻⁴`.
 
@@ -206,7 +206,7 @@ lemma density_scaling_radiation {a ρ : Time → ℝ} {c : SpeedOfLight} (hd1 : 
     ρ t = ρ t₀ * (a t₀ / a t) ^ 4
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.density_scaling_vacuum`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/MatterContent.lean#L308).
+**`Cosmology.FLRW.FriedmannEquation.density_scaling_vacuum`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/MatterContent.lean#L308).
 
 > Vacuum energy, `w = -1`: `ρ` is constant.
 
@@ -223,7 +223,7 @@ lemma density_scaling_vacuum {a ρ : Time → ℝ} {c : SpeedOfLight} (hd1 : Dif
 > cosmological constant, and the cosmic fluid `CosmicFluid.addCosmologicalConstant` with the
 > cosmological constant folded in, are defined in `Physlib.Cosmology.FLRW.Basic`.
 
-**`Cosmology.FLRW.FriedmannEquation.firstOrderFriedmann_iff_lambdaFluid`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/MatterContent.lean#L327).
+**`Cosmology.FLRW.FriedmannEquation.firstOrderFriedmann_iff_lambdaFluid`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/MatterContent.lean#L327).
 
 > The first-order Friedmann equation with `Λ` is the first-order Friedmann equation without
 > `Λ` for the density `ρ + ρ_Λ`.
@@ -235,7 +235,7 @@ lemma firstOrderFriedmann_iff_lambdaFluid {a ρ : Time → ℝ} {k Λ G : ℝ} {
       FirstOrderFriedmann a (fun s => ρ s + cosmologicalConstantDensity Λ G c) k 0 G c t
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.secondOrderFriedmann_iff_lambdaFluid`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/MatterContent.lean#L342).
+**`Cosmology.FLRW.FriedmannEquation.secondOrderFriedmann_iff_lambdaFluid`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/MatterContent.lean#L342).
 
 > The second-order Friedmann equation with `Λ` is the second-order Friedmann equation
 > without `Λ` for the density `ρ + ρ_Λ` and the pressure `p + p_Λ`.
@@ -248,7 +248,7 @@ lemma secondOrderFriedmann_iff_lambdaFluid {a ρ p : Time → ℝ} {Λ G : ℝ} 
         (fun s => p s + cosmologicalConstantPressure Λ G c) 0 G c t
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.cosmologicalConstantPressure_eq_barotropic`**, a lemma, [line 359](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/MatterContent.lean#L359).
+**`Cosmology.FLRW.FriedmannEquation.cosmologicalConstantPressure_eq_barotropic`**, a lemma, [line 359](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/MatterContent.lean#L359).
 
 > `p_Λ` is the barotropic pressure of `ρ_Λ` with `w = -1`.
 
@@ -266,4 +266,4 @@ lemma cosmologicalConstantPressure_eq_barotropic (Λ G : ℝ) (c : SpeedOfLight)
 
 ## Sources
 
-- [Physlib/Cosmology/FLRW/MatterContent.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/MatterContent.lean)
+- [Physlib/Cosmology/FLRW/MatterContent.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Cosmology/FLRW/MatterContent.lean)

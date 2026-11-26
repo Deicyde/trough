@@ -8,7 +8,7 @@ proof: formalized
 
 # Dimension
 
-The module `Physlib.Units.Dimension`, [Physlib/Units/Dimension.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean): 28 declarations (6 instances with no name), 13 with a docstring.
+The module `Physlib.Units.Dimension`, [Physlib/Units/Dimension.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean): 28 declarations (6 instances with no name), 13 with a docstring.
 
 > In this module we define the type `Dimension` which carries the dimension
 > of a physical quantity.
@@ -31,7 +31,7 @@ The module `Physlib.Units.Dimension`, [Physlib/Units/Dimension.lean](https://git
 
 ## Defining dimensions
 
-**`DimensionBasis`**, a class, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L45).
+**`DimensionBasis`**, a class, [line 45](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L45).
 
 > A choice of exponent-tuple representation for a basis `B`. Native addition on `Exponents`
 > is used for dimension multiplication, while `exponentEquiv` provides the basis-generic API.
@@ -46,7 +46,7 @@ class DimensionBasis (B : Type) where
   exponentEquiv : Exponents ≃+ (B → Dimension.Exponent)
 ```
 
-**`DimensionBasis.pi`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L58).
+**`DimensionBasis.pi`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L58).
 
 > The function-backed exponent representation for a basis without a specialized tuple.
 
@@ -54,7 +54,7 @@ class DimensionBasis (B : Type) where
 def pi (B : Type) : DimensionBasis B
 ```
 
-**`Dimension`**, a structure, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L67).
+**`Dimension`**, a structure, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L67).
 
 > A dimension over a represented basis `B`. PhysLib's default basis is
 > `LTMCTDimensionBase`.
@@ -65,7 +65,7 @@ structure Dimension (B : Type) [DimensionBasis B] where
   exponents : DimensionBasis.Exponents B
 ```
 
-**`Dimension.exponent`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L76).
+**`Dimension.exponent`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L76).
 
 > The exponent of a dimension at a base dimension.
 
@@ -73,7 +73,7 @@ structure Dimension (B : Type) [DimensionBasis B] where
 def exponent (d : Dimension B) : B → Exponent
 ```
 
-**`Dimension.ofFunction`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L80).
+**`Dimension.ofFunction`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L80).
 
 > Construct a dimension from an exponent function.
 
@@ -81,83 +81,83 @@ def exponent (d : Dimension B) : B → Exponent
 def ofFunction (f : B → Exponent) : Dimension B
 ```
 
-**`Dimension.ofFunction_exponent`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L84).
+**`Dimension.ofFunction_exponent`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L84).
 
 ```lean
 lemma ofFunction_exponent (f : B → Exponent) (b : B) : (ofFunction f).exponent b = f b
 ```
 
-**`Dimension.ext`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L88).
+**`Dimension.ext`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L88).
 
 ```lean
 lemma ext {d1 d2 : Dimension B} (h : ∀ b, d1.exponent b = d2.exponent b) : d1 = d2
 ```
 
-**An instance with no name**, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L96).
+**An instance with no name**, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L96).
 
 ```lean
 instance : Mul (Dimension B)
 ```
 
-**`Dimension.mul_exponent`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L100).
+**`Dimension.mul_exponent`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L100).
 
 ```lean
 lemma mul_exponent (d1 d2 : Dimension B) (b : B) :
     (d1 * d2).exponent b = d1.exponent b + d2.exponent b
 ```
 
-**An instance with no name**, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L104).
+**An instance with no name**, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L104).
 
 ```lean
 instance : One (Dimension B)
 ```
 
-**`Dimension.one_exponent`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L108).
+**`Dimension.one_exponent`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L108).
 
 ```lean
 lemma one_exponent (b : B) : (1 : Dimension B).exponent b = 0
 ```
 
-**An instance with no name**, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L111).
+**An instance with no name**, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L111).
 
 ```lean
 instance : CommGroup (Dimension B)
 ```
 
-**`Dimension.inv_exponent`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L132).
+**`Dimension.inv_exponent`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L132).
 
 ```lean
 lemma inv_exponent (d : Dimension B) (b : B) : d⁻¹.exponent b = -d.exponent b
 ```
 
-**`Dimension.div_exponent`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L136).
+**`Dimension.div_exponent`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L136).
 
 ```lean
 lemma div_exponent (d1 d2 : Dimension B) (b : B) :
     (d1 / d2).exponent b = d1.exponent b - d2.exponent b
 ```
 
-**`Dimension.npow_exponent`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L141).
+**`Dimension.npow_exponent`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L141).
 
 ```lean
 lemma npow_exponent (d : Dimension B) (n : ℕ) (b : B) :
     (d ^ n).exponent b = n • d.exponent b
 ```
 
-**An instance with no name**, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L147).
+**An instance with no name**, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L147).
 
 ```lean
 instance : Pow (Dimension B) ℚ
 ```
 
-**`Dimension.qpow_exponent`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L151).
+**`Dimension.qpow_exponent`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L151).
 
 ```lean
 lemma qpow_exponent (d : Dimension B) (q : ℚ) (b : B) :
     (d ^ q).exponent b = d.exponent b * Exponent.ofRat q
 ```
 
-**An instance with no name**, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L158).
+**An instance with no name**, [line 158](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L158).
 
 > Raising a dimension to an `Exponent` power. Unlike the `ℚ`-valued power, this preserves
 > reducible arithmetic for concrete fractional exponents.
@@ -166,14 +166,14 @@ lemma qpow_exponent (d : Dimension B) (q : ℚ) (b : B) :
 instance : Pow (Dimension B) Exponent
 ```
 
-**`Dimension.epow_exponent`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L162).
+**`Dimension.epow_exponent`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L162).
 
 ```lean
 lemma epow_exponent (d : Dimension B) (c : Exponent) (b : B) :
     (d ^ c).exponent b = d.exponent b * c
 ```
 
-**An instance with no name**, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L167).
+**An instance with no name**, [line 167](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L167).
 
 > Decidable equality of dimensions over a finite basis `B`.
 
@@ -181,7 +181,7 @@ lemma epow_exponent (d : Dimension B) (c : Exponent) (b : B) :
 instance [Fintype B] : DecidableEq (Dimension B)
 ```
 
-**`Dimension.single`**, a def, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L173).
+**`Dimension.single`**, a def, [line 173](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L173).
 
 > The base-dimension vector for `b : B`: exponent `1` at `b`, `0` elsewhere. This
 > is the generic analogue of the named generators `L𝓭`, `T𝓭`, …
@@ -190,14 +190,14 @@ instance [Fintype B] : DecidableEq (Dimension B)
 def single [DecidableEq B] (b : B) : Dimension B
 ```
 
-**`Dimension.single_exponent`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L176).
+**`Dimension.single_exponent`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L176).
 
 ```lean
 lemma single_exponent [DecidableEq B] (b b' : B) :
     (single b).exponent b' = if b' = b then 1 else 0
 ```
 
-**`Dimension.extend`**, a def, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L184).
+**`Dimension.extend`**, a def, [line 184](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L184).
 
 > Change of basis along a map `f : B → B'` of base dimensions: reindex a dimension
 > over `B` into one over `B'` by placing each exponent at its image. For an embedding
@@ -209,7 +209,7 @@ def extend {B' : Type} [DimensionBasis B'] [Fintype B] [DecidableEq B']
     (f : B → B') (d : Dimension B) : Dimension B'
 ```
 
-**`Dimension.extend_exponent_apply`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L189).
+**`Dimension.extend_exponent_apply`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L189).
 
 ```lean
 lemma extend_exponent_apply {B' : Type} [DimensionBasis B'] [Fintype B] [DecidableEq B']
@@ -233,7 +233,7 @@ lemma extend_exponent_apply {B' : Type} [DimensionBasis B'] [Fintype B] [Decidab
 > of these, so that dimension-preservation holds by construction — a bare relabelling
 > that sends a base dimension to an inequivalent one is *not* expressible as either.
 
-**`Dimension.extendHom`**, a def, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L217).
+**`Dimension.extendHom`**, a def, [line 217](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L217).
 
 > `extend f` packaged as a monoid homomorphism of dimensions.
 
@@ -242,7 +242,7 @@ def extendHom {B' : Type} [DimensionBasis B'] [Fintype B] [DecidableEq B'] (f : 
     Dimension B →* Dimension B'
 ```
 
-**`Dimension.Embedding`**, a structure, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L233).
+**`Dimension.Embedding`**, a structure, [line 233](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L233).
 
 > A **dimension embedding** `B ↪ B'`: an injective monoid homomorphism of
 > dimensions. As a `MonoidHom` it is dimension-preserving (it respects products,
@@ -258,7 +258,7 @@ structure Embedding (B B' : Type) [DimensionBasis B] [DimensionBasis B'] where
   inj : Function.Injective toHom
 ```
 
-**`Dimension.Projection`**, a structure, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L243).
+**`Dimension.Projection`**, a structure, [line 243](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L243).
 
 > A **dimension projection** `B' ↠ B`: a surjective monoid homomorphism of
 > dimensions. As a `MonoidHom` it is truth-preserving, but it is lossy — it reduces a
@@ -273,7 +273,7 @@ structure Projection (B' B : Type) [DimensionBasis B'] [DimensionBasis B] where
   surj : Function.Surjective toHom
 ```
 
-**`Dimension.Embedding.ofBasis`**, a def, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean#L252).
+**`Dimension.Embedding.ofBasis`**, a def, [line 252](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean#L252).
 
 > An injective *basis* map `f : B → B'` induces a dimension embedding, via `extend`.
 > This is the label-level case: it sends each base dimension of `B` to a base dimension
@@ -291,4 +291,4 @@ def Embedding.ofBasis {B B' : Type} [DimensionBasis B] [DimensionBasis B']
 
 ## Sources
 
-- [Physlib/Units/Dimension.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/Dimension.lean)
+- [Physlib/Units/Dimension.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Units/Dimension.lean)

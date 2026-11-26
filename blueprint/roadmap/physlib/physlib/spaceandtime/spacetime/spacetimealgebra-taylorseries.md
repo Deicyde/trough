@@ -8,7 +8,7 @@ proof: formalized
 
 # Taylor series of functions on spacetime
 
-The module `Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.TaylorSeries`, [Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean): 6 declarations, 3 with a docstring.
+The module `Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.TaylorSeries`, [Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean): 6 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -36,7 +36,7 @@ The module `Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.TaylorSeries`, [Phys
 > For smooth functions, iterated derivatives distribute over sums and scalar multiples, and so does
 > the Taylor series.
 
-**`SpaceTimeAlgebra.taylorSeries`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean#L59).
+**`SpaceTimeAlgebra.taylorSeries`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean#L59).
 
 > The Taylor series at `x₀` of a complex-valued function on spacetime.
 
@@ -44,7 +44,7 @@ The module `Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.TaylorSeries`, [Phys
 noncomputable def taylorSeries (x₀ : SpaceTime) (f : SpaceTime → ℂ) : SpaceTimeAlgebra
 ```
 
-**`SpaceTimeAlgebra.coeff_taylorSeries`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean#L62).
+**`SpaceTimeAlgebra.coeff_taylorSeries`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean#L62).
 
 ```lean
 lemma coeff_taylorSeries (x₀ : SpaceTime) (f : SpaceTime → ℂ) (m : (Fin 1 ⊕ Fin 3) →₀ ℕ) :
@@ -52,7 +52,7 @@ lemma coeff_taylorSeries (x₀ : SpaceTime) (f : SpaceTime → ℂ) (m : (Fin 1 
       ((∏ ν, (m ν).factorial : ℕ) : ℂ)⁻¹ * iteratedDeriv (Finsupp.toMultiset m) f x₀
 ```
 
-**`SpaceTimeAlgebra.constantCoeff_iteratedPDeriv_taylorSeries`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean#L68).
+**`SpaceTimeAlgebra.constantCoeff_iteratedPDeriv_taylorSeries`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean#L68).
 
 > The base-point derivative values of `taylorSeries x₀ f` are the derivatives of `f` at `x₀`.
 
@@ -62,7 +62,7 @@ lemma constantCoeff_iteratedPDeriv_taylorSeries (x₀ : SpaceTime) (f : SpaceTim
     constantCoeff (iteratedPDeriv s (taylorSeries x₀ f)) = iteratedDeriv s f x₀
 ```
 
-**`SpaceTimeAlgebra.taylorSeries_add`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean#L76).
+**`SpaceTimeAlgebra.taylorSeries_add`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean#L76).
 
 ```lean
 lemma taylorSeries_add (x₀ : SpaceTime) {f g : SpaceTime → ℂ} (hf : ContDiff ℝ ∞ f)
@@ -70,7 +70,7 @@ lemma taylorSeries_add (x₀ : SpaceTime) {f g : SpaceTime → ℂ} (hf : ContDi
     taylorSeries x₀ (f + g) = taylorSeries x₀ f + taylorSeries x₀ g
 ```
 
-**`SpaceTimeAlgebra.taylorSeries_const_smul`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean#L83).
+**`SpaceTimeAlgebra.taylorSeries_const_smul`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean#L83).
 
 ```lean
 lemma taylorSeries_const_smul (x₀ : SpaceTime) (c : ℂ) {f : SpaceTime → ℂ}
@@ -85,7 +85,7 @@ lemma taylorSeries_const_smul (x₀ : SpaceTime) (c : ℂ) {f : SpaceTime → �
 > Taylor series of `f` have the same base-point derivative values, namely `(∂^(μ ::ₘ s) f)(x₀)` at
 > each `s`. A series is determined by its base-point derivative values, so the two are equal.
 
-**`SpaceTimeAlgebra.taylorSeries_deriv`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean#L102).
+**`SpaceTimeAlgebra.taylorSeries_deriv`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean#L102).
 
 > The Taylor series of a derivative is the formal partial derivative of the Taylor series.
 
@@ -102,4 +102,4 @@ lemma taylorSeries_deriv (x₀ : SpaceTime) (μ : Fin 1 ⊕ Fin 3) {f : SpaceTim
 
 ## Sources
 
-- [Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean)
+- [Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean)

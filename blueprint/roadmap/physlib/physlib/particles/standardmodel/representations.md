@@ -8,11 +8,11 @@ proof: formalized
 
 # Representations appearing in the Standard Model
 
-The module `Physlib.Particles.StandardModel.Representations`, [Physlib/Particles/StandardModel/Representations.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Representations.lean): 4 declarations, 3 with a docstring.
+The module `Physlib.Particles.StandardModel.Representations`, [Physlib/Particles/StandardModel/Representations.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Representations.lean): 4 declarations, 3 with a docstring.
 
 > This file defines the basic representations which appear in the Standard Model.
 
-**`StandardModel.repU1Map`**, a def, [line 28](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Representations.lean#L28).
+**`StandardModel.repU1Map`**, a def, [line 28](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Representations.lean#L28).
 
 > The 2d representation of U(1) with charge 3 as a map from U(1) to `unitaryGroup (Fin 2) ℂ`.
 
@@ -20,7 +20,7 @@ The module `Physlib.Particles.StandardModel.Representations`, [Physlib/Particles
 noncomputable def repU1Map (g : unitary ℂ) : unitaryGroup (Fin 2) ℂ
 ```
 
-**`StandardModel.repU1`**, a def, [line 40](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Representations.lean#L40).
+**`StandardModel.repU1`**, a def, [line 40](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Representations.lean#L40).
 
 > The 2d representation of U(1) with charge 3 as a homomorphism
 > from U(1) to `unitaryGroup (Fin 2) ℂ`.
@@ -29,7 +29,7 @@ noncomputable def repU1Map (g : unitary ℂ) : unitaryGroup (Fin 2) ℂ
 noncomputable def repU1 : unitary ℂ →* unitaryGroup (Fin 2) ℂ
 ```
 
-**`StandardModel.fundamentalSU2`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Representations.lean#L49).
+**`StandardModel.fundamentalSU2`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Representations.lean#L49).
 
 > The fundamental representation of SU(2) as a homomorphism to `unitaryGroup (Fin 2) ℂ`.
 
@@ -37,7 +37,7 @@ noncomputable def repU1 : unitary ℂ →* unitaryGroup (Fin 2) ℂ
 def fundamentalSU2 : specialUnitaryGroup (Fin 2) ℂ →* unitaryGroup (Fin 2) ℂ
 ```
 
-**`StandardModel.repU1_fundamentalSU2_commute`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Representations.lean#L54).
+**`StandardModel.repU1_fundamentalSU2_commute`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Representations.lean#L54).
 
 ```lean
 lemma repU1_fundamentalSU2_commute (u1 : unitary ℂ) (g : specialUnitaryGroup (Fin 2) ℂ) :
@@ -50,4 +50,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Particles/StandardModel/Representations.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/Representations.lean)
+- [Physlib/Particles/StandardModel/Representations.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Particles/StandardModel/Representations.lean)

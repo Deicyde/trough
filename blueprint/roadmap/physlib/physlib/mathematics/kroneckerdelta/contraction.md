@@ -8,7 +8,7 @@ proof: formalized
 
 # Contraction identities for the generalized Kronecker delta
 
-The module `Physlib.Mathematics.KroneckerDelta.Contraction`, [Physlib/Mathematics/KroneckerDelta/Contraction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/KroneckerDelta/Contraction.lean): 13 declarations, 13 with a docstring; 3 private, not shown.
+The module `Physlib.Mathematics.KroneckerDelta.Contraction`, [Physlib/Mathematics/KroneckerDelta/Contraction.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/KroneckerDelta/Contraction.lean): 13 declarations, 13 with a docstring; 3 private, not shown.
 
 ## i. Overview
 
@@ -55,7 +55,7 @@ The module `Physlib.Mathematics.KroneckerDelta.Contraction`, [Physlib/Mathematic
 
 ## B. Contraction identities
 
-**`generalizedKroneckerDelta_mul`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L147).
+**`generalizedKroneckerDelta_mul`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L147).
 
 > The product of two Levi-Civita-type symbols is a generalized Kronecker delta:
 > `δ^{μ}_{·} · δ^{ν}_{·} = δ^{μ}_{ν}`, where each single factor is a Kronecker matrix against the
@@ -67,7 +67,7 @@ lemma generalizedKroneckerDelta_mul (μ ν : α → α) :
       = generalizedKroneckerDelta μ ν
 ```
 
-**`generalizedKroneckerDelta_sum_snoc`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L170).
+**`generalizedKroneckerDelta_sum_snoc`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L170).
 
 > **Generalized Kronecker delta contraction.** Summing a `generalizedKroneckerDelta` over one
 > shared index appended at the end lowers the rank by one and pulls out a factor of `card α - n`.
@@ -79,7 +79,7 @@ lemma generalizedKroneckerDelta_sum_snoc {n : ℕ} (μ ν : Fin n → α) :
       = ((Fintype.card α : ℤ) - n) * generalizedKroneckerDelta μ ν
 ```
 
-**`sum_generalizedKroneckerDelta_self_card`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L225).
+**`sum_generalizedKroneckerDelta_self_card`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L225).
 
 > **Full contraction over an arbitrary finite type.** Summing `δ^{h}_{h}` over all `k`-tuples
 > `h` of indices gives the falling product `card α · (card α - 1) ⋯ (card α - k + 1)`.
@@ -90,7 +90,7 @@ lemma sum_generalizedKroneckerDelta_self_card (k : ℕ) :
       = ∏ j ∈ Finset.range k, ((Fintype.card α : ℤ) - j)
 ```
 
-**`sum_generalizedKroneckerDelta_cons_card`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L245).
+**`sum_generalizedKroneckerDelta_cons_card`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L245).
 
 > **Single contraction over an arbitrary finite type.** Contracting the last `k` of `k+1`
 > index pairs leaves one free pair `σ, τ`, with the falling product
@@ -104,7 +104,7 @@ lemma sum_generalizedKroneckerDelta_cons_card (σ τ : α) (k : ℕ) :
         * ((kroneckerDelta σ τ : ℕ) : ℤ)
 ```
 
-**`sum_generalizedKroneckerDelta_cons₂_card`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L273).
+**`sum_generalizedKroneckerDelta_cons₂_card`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L273).
 
 > **Double contraction over an arbitrary finite type.** Contracting the last `k` of `k+2`
 > index pairs leaves two free pairs, with value a `2×2` generalized Kronecker delta times the
@@ -118,7 +118,7 @@ lemma sum_generalizedKroneckerDelta_cons₂_card (ρ σ τ ω : α) (k : ℕ) :
         * generalizedKroneckerDelta ![ρ, σ] ![τ, ω]
 ```
 
-**`sum_generalizedKroneckerDelta_self_eq_factorial`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L307).
+**`sum_generalizedKroneckerDelta_self_eq_factorial`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L307).
 
 > When the index type has exactly `k` elements, the full contraction is `k!`.
 
@@ -127,7 +127,7 @@ lemma sum_generalizedKroneckerDelta_self_eq_factorial {k : ℕ} (hk : Fintype.ca
     ∑ h : Fin k → α, generalizedKroneckerDelta h h = (k.factorial : ℤ)
 ```
 
-**`sum_generalizedKroneckerDelta_self`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L318).
+**`sum_generalizedKroneckerDelta_self`**, a lemma, [line 318](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L318).
 
 > **Full contraction.** Iterating the snoc contraction over all four indices:
 > `∑_f δ^{f}_{f} = 4!`. Here `f` ranges over all maps `Fin 4 → Fin 4`. The `Fin 4` instance of
@@ -139,7 +139,7 @@ lemma sum_generalizedKroneckerDelta_self (k : ℕ) :
       = ∏ j ∈ Finset.range k, ((4 : ℤ) - j)
 ```
 
-**`sum_generalizedKroneckerDelta_cons`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L325).
+**`sum_generalizedKroneckerDelta_cons`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L325).
 
 > **Single contraction.** Contracting the last `k` of `k+1` index pairs leaves one free pair
 > `σ, τ`, with the factorial factor `(4-1)(4-2)…`.
@@ -151,7 +151,7 @@ lemma sum_generalizedKroneckerDelta_cons (σ τ : Fin 4) (k : ℕ) :
       = (∏ j ∈ Finset.range k, ((3 : ℤ) - j)) * ((kroneckerDelta σ τ : ℕ) : ℤ)
 ```
 
-**`sum_generalizedKroneckerDelta_cons₂`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L333).
+**`sum_generalizedKroneckerDelta_cons₂`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L333).
 
 > **Double contraction.** Contracting the last `k` of `k+2` index pairs leaves two free pairs,
 > with value a `2×2` generalized Kronecker delta times the factorial factor.
@@ -164,7 +164,7 @@ lemma sum_generalizedKroneckerDelta_cons₂ (ρ σ τ ω : Fin 4) (k : ℕ) :
         * generalizedKroneckerDelta ![ρ, σ] ![τ, ω]
 ```
 
-**`sum_generalizedKroneckerDelta_mul_self`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L341).
+**`sum_generalizedKroneckerDelta_mul_self`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L341).
 
 > Symbol-level full contraction over `Fin 4 → Fin 4`.
 
@@ -174,7 +174,7 @@ lemma sum_generalizedKroneckerDelta_mul_self :
       generalizedKroneckerDelta g id * generalizedKroneckerDelta g id = (24 : ℤ)
 ```
 
-**`sum_generalizedKroneckerDelta_mul_cons`**, a lemma, [line 349](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L349).
+**`sum_generalizedKroneckerDelta_mul_cons`**, a lemma, [line 349](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L349).
 
 > Symbol-level triple contraction, one free pair `σ, τ`.
 
@@ -186,7 +186,7 @@ lemma sum_generalizedKroneckerDelta_mul_cons (σ τ : Fin 4) :
       = 6 * ((kroneckerDelta σ τ : ℕ) : ℤ)
 ```
 
-**`sum_generalizedKroneckerDelta_mul_snoc`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L360).
+**`sum_generalizedKroneckerDelta_mul_snoc`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L360).
 
 > Symbol-level triple contraction with the free index in the last slot.
 
@@ -197,7 +197,7 @@ lemma sum_generalizedKroneckerDelta_mul_snoc (σ τ : Fin 4) :
       6 * ((kroneckerDelta σ τ : ℕ) : ℤ)
 ```
 
-**`sum_generalizedKroneckerDelta_mul_cons₂`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L377).
+**`sum_generalizedKroneckerDelta_mul_cons₂`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/KroneckerDelta/Contraction.lean#L377).
 
 > Symbol-level double contraction, two free pairs.
 
@@ -216,4 +216,4 @@ lemma sum_generalizedKroneckerDelta_mul_cons₂ (ρ σ τ ω : Fin 4) :
 
 ## Sources
 
-- [Physlib/Mathematics/KroneckerDelta/Contraction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/KroneckerDelta/Contraction.lean)
+- [Physlib/Mathematics/KroneckerDelta/Contraction.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/KroneckerDelta/Contraction.lean)

@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
  "modules": [
   {
    "file": "Physlib/Mathematics/Calculus/AdjFDeriv.lean",
@@ -189,7 +189,7 @@
     {
      "name": "adjFDeriv_uncurry",
      "kind": "lemma",
-     "line": 248,
+     "line": 247,
      "doc": "",
      "statement": "lemma adjFDeriv_uncurry [CompleteSpace E] [CompleteSpace F] [CompleteSpace G]\n    {f : E → F → G} {xy} (hfx : DifferentiableAt 𝕜 (↿f) xy) :\n    adjFDeriv 𝕜 (↿f) xy = fun dz => (adjFDeriv 𝕜 (f · xy.snd) xy.fst dz,\n                                    adjFDeriv 𝕜 (f xy.fst ·) xy.snd dz)",
      "sorry": false
@@ -197,7 +197,7 @@
     {
      "name": "HasAdjFDerivAt.neg",
      "kind": "lemma",
-     "line": 258,
+     "line": 257,
      "doc": "",
      "statement": "lemma HasAdjFDerivAt.neg {f : E → F} {f'} {x : E} (hf : HasAdjFDerivAt 𝕜 f f' x) :\n    HasAdjFDerivAt 𝕜 (fun x => - f x) (fun dy => - f' dy) x",
      "sorry": false
@@ -205,7 +205,7 @@
     {
      "name": "adjFDeriv_neg",
      "kind": "lemma",
-     "line": 263,
+     "line": 262,
      "doc": "",
      "statement": "lemma adjFDeriv_neg [CompleteSpace E] [CompleteSpace F]\n    {f : E → F} {x : E} (hf : DifferentiableAt 𝕜 f x) :\n    adjFDeriv 𝕜 (fun x => - f x) x = fun dy => - adjFDeriv 𝕜 f x dy",
      "sorry": false
@@ -213,7 +213,7 @@
     {
      "name": "HasAjdFDerivAt.add",
      "kind": "lemma",
-     "line": 269,
+     "line": 268,
      "doc": "",
      "statement": "lemma HasAjdFDerivAt.add {f g : E → F} {f' g'} {x : E}\n    (hf : HasAdjFDerivAt 𝕜 f f' x) (hg : HasAdjFDerivAt 𝕜 g g' x) :\n    HasAdjFDerivAt 𝕜 (fun x => f x + g x) (fun dy => f' dy + g' dy) x",
      "sorry": false
@@ -221,7 +221,7 @@
     {
      "name": "adjFDeriv_add",
      "kind": "lemma",
-     "line": 277,
+     "line": 276,
      "doc": "",
      "statement": "lemma adjFDeriv_add [CompleteSpace E] [CompleteSpace F]\n    {f g : E → F} {x : E}\n    (hf : DifferentiableAt 𝕜 f x) (hg : DifferentiableAt 𝕜 g x) :\n    adjFDeriv 𝕜 (fun x => f x + g x) x = fun dy => adjFDeriv 𝕜 f x dy + adjFDeriv 𝕜 g x dy",
      "sorry": false
@@ -229,7 +229,7 @@
     {
      "name": "HasAdjFDerivAt.sub",
      "kind": "lemma",
-     "line": 286,
+     "line": 285,
      "doc": "",
      "statement": "lemma HasAdjFDerivAt.sub\n    {f g : E → F} {f' g'} {x : E}\n    (hf : HasAdjFDerivAt 𝕜 f f' x) (hg : HasAdjFDerivAt 𝕜 g g' x) :\n    HasAdjFDerivAt 𝕜 (fun x => f x - g x) (fun dy => f' dy - g' dy) x",
      "sorry": false
@@ -237,7 +237,7 @@
     {
      "name": "adjFDeriv_sub",
      "kind": "lemma",
-     "line": 295,
+     "line": 294,
      "doc": "",
      "statement": "lemma adjFDeriv_sub [CompleteSpace E] [CompleteSpace F] {f g : E → F} {x : E}\n    (hf : DifferentiableAt 𝕜 f x) (hg : DifferentiableAt 𝕜 g x) :\n    adjFDeriv 𝕜 (fun x => f x - g x) x = fun dy => adjFDeriv 𝕜 f x dy - adjFDeriv 𝕜 g x dy",
      "sorry": false
@@ -245,7 +245,7 @@
     {
      "name": "HasAdjFDerivAt.smul",
      "kind": "lemma",
-     "line": 304,
+     "line": 303,
      "doc": "",
      "statement": "lemma HasAdjFDerivAt.smul {f : E → F} {g : E → 𝕜} {f' g'}\n    (hf : HasAdjFDerivAt 𝕜 f f' x) (hg : HasAdjFDerivAt 𝕜 g g' x) :\n    HasAdjFDerivAt 𝕜 (fun x => g x • f x)\n      (fun dy => conj (g x) • f' dy + g' (conj (inner 𝕜 dy (f x)))) x",
      "sorry": false
@@ -253,7 +253,7 @@
     {
      "name": "adjFDeriv_smul",
      "kind": "lemma",
-     "line": 316,
+     "line": 315,
      "doc": "",
      "statement": "lemma adjFDeriv_smul [CompleteSpace E] [CompleteSpace F]\n    {f : E → F} {g : E → 𝕜} {x : E}\n    (hf : DifferentiableAt 𝕜 f x) (hg : DifferentiableAt 𝕜 g x) :\n    adjFDeriv 𝕜 (fun x => g x • f x) x = fun dy => conj (g x) • adjFDeriv 𝕜 f x dy +\n                                                  adjFDeriv 𝕜 g x (conj (inner 𝕜 dy (f x)))",
      "sorry": false
@@ -261,7 +261,7 @@
     {
      "name": "HasAdjFDerivAt.inner",
      "kind": "lemma",
-     "line": 328,
+     "line": 327,
      "doc": "",
      "statement": "lemma HasAdjFDerivAt.inner {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]\n    [InnerProductSpace' ℝ E] (x : E × E) :\n    HasAdjFDerivAt ℝ (fun (x : E × E) => ⟪x.1, x.2⟫_ℝ) (fun y => y • (x.2, x.1)) x",
      "sorry": false
@@ -269,7 +269,7 @@
     {
      "name": "adjFDeriv_inner",
      "kind": "lemma",
-     "line": 348,
+     "line": 347,
      "doc": "",
      "statement": "lemma adjFDeriv_inner {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [InnerProductSpace' ℝ E]\n    (x : E × E) :\n    adjFDeriv ℝ (fun (x : E × E) => ⟪x.1, x.2⟫_ℝ) x =\n      fun y => y • (x.2, x.1)",
      "sorry": false
@@ -2324,6 +2324,14 @@
      "doc": "Having defined a CLM between test functions, we now define a continuous linear map between spaces\nof distributions `𝓓'(Ω, F)` and `𝓓'(Ω', F)`.",
      "statement": "noncomputable def compContinuousLinearEquiv {E E'} [NormedAddCommGroup E]\n    [NormedAddCommGroup E'] [NormedSpace ℝ E] [NormedSpace ℝ E']\n    {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]\n    {Ω : Opens E} {Ω' : Opens E'} (g : E ≃L[ℝ] E')\n    (h : g.invFun '' Ω' ⊆ ↑Ω) :\n    Distribution Ω F ⊤ →L[ℝ] Distribution Ω' F ⊤",
      "sorry": false
+    },
+    {
+     "name": "Distribution.compContinuousLinearEquiv_apply_apply",
+     "kind": "lemma",
+     "line": 53,
+     "doc": "",
+     "statement": "lemma compContinuousLinearEquiv_apply_apply {E E'} [NormedAddCommGroup E]\n    [NormedAddCommGroup E'] [NormedSpace ℝ E] [NormedSpace ℝ E']\n    {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]\n    {Ω : Opens E} {Ω' : Opens E'} (g : E ≃L[ℝ] E')\n    (h : g.invFun '' Ω' ⊆ ↑Ω) (T : Distribution Ω F ⊤)\n    (κ : TestFunction Ω' ℝ ⊤):\n    compContinuousLinearEquiv g h T κ =\n    T (compCLMofContinuousLinearEquiv (F := ℝ) g h κ)",
+     "sorry": false
     }
    ],
    "private": 0,
@@ -3053,9 +3061,33 @@
     {
      "name": "Function.HasTemperateGrowth.prod",
      "kind": "lemma",
-     "line": 25,
+     "line": 26,
      "doc": "The finite product of functions of temperate growth is again of temperate growth.",
      "statement": "lemma prod {ι : Type*} {s : Finset ι} {E F : Type*} [NormedAddCommGroup E]\n    [NormedSpace ℝ E] [NormedCommRing F] [NormedAlgebra ℝ F] {f : ι → E → F}\n    (hf : ∀ i ∈ s, HasTemperateGrowth (f i)) : HasTemperateGrowth (∏ i ∈ s, f i)",
+     "sorry": false
+    },
+    {
+     "name": "Function.HasTemperateGrowth.fderiv",
+     "kind": "lemma",
+     "line": 37,
+     "doc": "The derivative of a function of temperate growth is again of temperate growth.",
+     "statement": "lemma fderiv {E F : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [NormedAddCommGroup F]\n    [NormedSpace ℝ F] {f : E → F} (hf : HasTemperateGrowth f) :\n    HasTemperateGrowth (fderiv ℝ f)",
+     "sorry": false
+    },
+    {
+     "name": "Function.HasTemperateGrowth.polynomial_eval",
+     "kind": "lemma",
+     "line": 45,
+     "doc": "A polynomial evaluated on a function of temperate growth is again of temperate growth.",
+     "statement": "lemma polynomial_eval {E F : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [NormedCommRing F]\n    [NormedAlgebra ℝ F] {f : E → F} (hf : HasTemperateGrowth f) (p : Polynomial F) :\n    HasTemperateGrowth (fun x => p.eval (f x))",
+     "sorry": false
+    },
+    {
+     "name": "Function.HasTemperateGrowth.integrable_mul_schwartzMap",
+     "kind": "lemma",
+     "line": 57,
+     "doc": "The product of a function of temperate growth and a Schwartz map is integrable.",
+     "statement": "lemma integrable_mul_schwartzMap {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]\n    [MeasurableSpace E] [BorelSpace E] [SecondCountableTopology E] {μ : MeasureTheory.Measure E}\n    [μ.HasTemperateGrowth] {g : E → ℂ} (hg : HasTemperateGrowth g) (ψ : SchwartzMap E ℂ) :\n    MeasureTheory.Integrable (fun x => g x * ψ x) μ",
      "sorry": false
     }
    ],
@@ -3082,6 +3114,40 @@
      "line": 47,
      "doc": "Integrating `g` against the measure with real-valued density `f` (taken through\n`ENNReal.ofReal`) is integrating `f x • g x` against the original measure, for measurable\n`f` that is everywhere nonnegative. This is the `ℝ`-valued form of\n`integral_withDensity_eq_integral_smul`, which takes an `NNReal`-valued density.",
      "statement": "lemma integral_withDensity_ofReal_eq_integral_smul {α : Type*} [MeasurableSpace α]\n    {μ : Measure α} {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]\n    {f : α → ℝ} (hf : Measurable f) (hf0 : ∀ x, 0 ≤ f x) (g : α → E) :\n    ∫ x, g x ∂(μ.withDensity fun x => ENNReal.ofReal (f x)) = ∫ x, f x • g x ∂μ",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Mathematics/ForMathlib/IsConst.lean",
+   "module": "Physlib.Mathematics.ForMathlib.IsConst",
+   "title": "The value of a constant function",
+   "doc": "Extract the common value of a constant function on a nonempty domain.\n\n## i. Overview\n\nA proof `h : f.IsConst` identifies the outputs of `f` at any two inputs. If the domain is\nnonempty, `h.value` names their common value without requiring the caller to supply an input.\n\n## ii. Key results\n\n- `Function.IsConst.apply_eq_value`: at every input `x`, `f x = h.value`.\n\n## iii. Table of contents\n\n- A. The common value\n\n## iv. References\n\n`Mathlib.Logic.Function.Const` defines `Function.IsConst`.",
+   "copyright": "2026 Physlib Contributors",
+   "sections": [
+    {
+     "line": 36,
+     "text": "## A. The common value"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Function.IsConst.value",
+     "kind": "def",
+     "line": 43,
+     "doc": "The common value of a constant function on a nonempty domain.",
+     "statement": "def value : β",
+     "sorry": false
+    },
+    {
+     "name": "Function.IsConst.apply_eq_value",
+     "kind": "lemma",
+     "line": 47,
+     "doc": "A constant function takes its common value at every input.",
+     "statement": "lemma apply_eq_value : ∀ x, f x = h.value",
      "sorry": false
     }
    ],
@@ -4745,6 +4811,84 @@
    "informal": 0
   },
   {
+   "file": "Physlib/Mathematics/ForMathlib/LpStarOrder.lean",
+   "module": "Physlib.Mathematics.ForMathlib.LpStarOrder",
+   "title": "The pointwise star order on bounded functions",
+   "doc": "Bounded complex functions are ordered pointwise, and this order is their star order.\n\n## i. Overview\n\nThe bounded complex functions `lp (fun _ : X ↦ ℂ) ∞` on a type `X` form a commutative\nC⋆-algebra. Ordering them pointwise makes them a star-ordered ring: a bounded function is\npositive exactly when it is the square of the square root of its real part. Every closed\nstar subalgebra is then a commutative C⋆-algebra with the same star order.\n\n## ii. Key results\n\n- `lp.instStarOrderedRing` : the pointwise order on bounded complex functions is the star order.\n- `lp.instStarOrderedSubalgebra` : a closed star subalgebra carries the pointwise star order.\n\n## iii. Table of contents\n\n- A. The pointwise order\n- B. Closed subalgebras\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 47,
+     "text": "## A. The pointwise order"
+    },
+    {
+     "line": 80,
+     "text": "## B. Closed subalgebras"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "lp.instPartialOrder",
+     "kind": "instance",
+     "line": 50,
+     "doc": "Bounded functions are ordered pointwise.",
+     "statement": "noncomputable instance instPartialOrder : PartialOrder (lp (fun _ : X ↦ ℂ) ∞)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 54,
+     "doc": "Adding a bounded function preserves the pointwise order.",
+     "statement": "instance : IsOrderedAddMonoid (lp (fun _ : X ↦ ℂ) ∞)",
+     "sorry": false
+    },
+    {
+     "name": "lp.sqrtRe",
+     "kind": "def",
+     "line": 58,
+     "doc": "The pointwise square root of the real part of a bounded function.",
+     "statement": "noncomputable def sqrtRe (f : lp (fun _ : X ↦ ℂ) ∞) : lp (fun _ : X ↦ ℂ) ∞",
+     "sorry": false
+    },
+    {
+     "name": "lp.star_sqrtRe_mul_self",
+     "kind": "lemma",
+     "line": 65,
+     "doc": "A positive bounded function is the square of its square root.",
+     "statement": "lemma star_sqrtRe_mul_self {f : lp (fun _ : X ↦ ℂ) ∞} (hf : 0 ≤ f) :\n    star (sqrtRe f) * sqrtRe f = f",
+     "sorry": false
+    },
+    {
+     "name": "lp.instStarOrderedRing",
+     "kind": "instance",
+     "line": 75,
+     "doc": "The pointwise order is the star order: positive bounded functions are squares.",
+     "statement": "noncomputable instance instStarOrderedRing : StarOrderedRing (lp (fun _ : X ↦ ℂ) ∞)",
+     "sorry": false
+    },
+    {
+     "name": "lp.instCommCStarSubalgebra",
+     "kind": "instance",
+     "line": 83,
+     "doc": "A closed algebra of bounded functions is a commutative C⋆-algebra.",
+     "statement": "noncomputable instance instCommCStarSubalgebra : CommCStarAlgebra S",
+     "sorry": false
+    },
+    {
+     "name": "lp.instStarOrderedSubalgebra",
+     "kind": "instance",
+     "line": 87,
+     "doc": "A closed algebra of bounded functions carries the pointwise star order.",
+     "statement": "noncomputable instance instStarOrderedSubalgebra : StarOrderedRing S",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
    "file": "Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean",
    "module": "Physlib.Mathematics.ForMathlib.OneParameterSubgroups.Basic",
    "title": "One-parameter subgroups of real Banach algebras",
@@ -5206,6 +5350,14 @@
      "line": 45,
      "doc": "Given normed spaces `E` and `E'` and open subsets `Ω ⊆ E` and `Ω' ⊆ E'` and a map between\nthem `g : E → E'`, define a continuous linear map between the spaces of test functions\n`𝓓(Ω', F)` and `𝓓(Ω, F)`.",
      "statement": "noncomputable def compCLMofContinuousLinearEquiv {E E'} [NormedAddCommGroup E]\n    [NormedAddCommGroup E'] [NormedSpace ℝ E] [NormedSpace ℝ E']\n    {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]\n    {Ω : Opens E} {Ω' : Opens E'} (g : E ≃L[ℝ] E')\n    (h : g.invFun '' Ω' ⊆ ↑Ω) :\n    TestFunction Ω' F ⊤ →L[ℝ] TestFunction Ω F ⊤",
+     "sorry": false
+    },
+    {
+     "name": "TestFunction.compCLMofContinuousLinearEquiv_apply",
+     "kind": "lemma",
+     "line": 120,
+     "doc": "",
+     "statement": "lemma compCLMofContinuousLinearEquiv_apply {E E'} [NormedAddCommGroup E]\n    [NormedAddCommGroup E'] [NormedSpace ℝ E] [NormedSpace ℝ E']\n    {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]\n    {Ω : Opens E} {Ω' : Opens E'} (g : E ≃L[ℝ] E')\n    (h : g.invFun '' Ω' ⊆ ↑Ω) (φ : TestFunction Ω' F ⊤) :\n    compCLMofContinuousLinearEquiv g h φ = φ ∘ g",
      "sorry": false
     }
    ],
@@ -6133,15 +6285,15 @@
    "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
-     "line": 62,
+     "line": 61,
      "text": "## A. The contraction of adjoint indices\n\n### A.1. The real case"
     },
     {
-     "line": 167,
+     "line": 166,
      "text": "### A.2. The complex case"
     },
     {
-     "line": 267,
+     "line": 266,
      "text": "## B. Invariant bilinear forms"
     }
    ],
@@ -6149,7 +6301,7 @@
     {
      "name": "SULieAlgebra.adjointContr",
      "kind": "def",
-     "line": 72,
+     "line": 71,
      "doc": "The contraction of two real adjoint indices: the trace form `x ⊗ y ↦ tr (x y)` on `su(n)`,\nwhich is real since `x` and `y` are hermitian.",
      "statement": "noncomputable def adjointContr {n : ℕ} : ((adjoint (n := n)).tprod adjoint).IntertwiningMap\n    (Representation.trivial ℝ (specialUnitaryGroup (Fin n) ℂ) ℝ)",
      "sorry": false
@@ -6157,7 +6309,7 @@
     {
      "name": "SULieAlgebra.adjointContr_tmul",
      "kind": "lemma",
-     "line": 91,
+     "line": 90,
      "doc": "The real contraction is the real part of the trace, `x ⊗ y ↦ re tr (x y)`.",
      "statement": "lemma adjointContr_tmul {n : ℕ} (x y : SULieAlgebra n ℂ) :\n    adjointContr (x ⊗ₜ y) = (x.1 * y.1).trace.re",
      "sorry": false
@@ -6165,7 +6317,7 @@
     {
      "name": "SULieAlgebra.adjointContr_adjoint",
      "kind": "lemma",
-     "line": 96,
+     "line": 95,
      "doc": "The adjoint representation preserves the real contraction, so `SU(n)` acts on `su(n)` by\nisometries.",
      "statement": "lemma adjointContr_adjoint {n : ℕ} (g : specialUnitaryGroup (Fin n) ℂ) (x y : SULieAlgebra n ℂ) :\n    adjointContr (adjoint g x ⊗ₜ adjoint g y) = adjointContr (x ⊗ₜ y)",
      "sorry": false
@@ -6173,7 +6325,7 @@
     {
      "name": "SULieAlgebra.ofReal_adjointContr_tmul",
      "kind": "lemma",
-     "line": 101,
+     "line": 100,
      "doc": "The trace `tr (x y)` of two elements of `su(n)` is real, equal to their contraction.",
      "statement": "lemma ofReal_adjointContr_tmul {n : ℕ} (x y : SULieAlgebra n ℂ) :\n    (adjointContr (x ⊗ₜ y) : ℂ) = (x.1 * y.1).trace",
      "sorry": false
@@ -6181,7 +6333,7 @@
     {
      "name": "SULieAlgebra.adjointContr_symm",
      "kind": "lemma",
-     "line": 109,
+     "line": 108,
      "doc": "",
      "statement": "lemma adjointContr_symm {n : ℕ} (x y : SULieAlgebra n ℂ) :\n    adjointContr (x ⊗ₜ y) = adjointContr (y ⊗ₜ x)",
      "sorry": false
@@ -6189,7 +6341,7 @@
     {
      "name": "SULieAlgebra.adjointContr_lie",
      "kind": "lemma",
-     "line": 115,
+     "line": 114,
      "doc": "The real contraction is invariant under the bracket, `tr (⁅x, y⁆ z) = tr (x ⁅y, z⁆)`; in terms\nof generators, the structure constants `tr (T^a ⁅T^b, T^c⁆)` are totally antisymmetric.",
      "statement": "lemma adjointContr_lie {n : ℕ} (x y z : SULieAlgebra n ℂ) :\n    adjointContr (⁅x, y⁆ ⊗ₜ z) = adjointContr (x ⊗ₜ ⁅y, z⁆)",
      "sorry": false
@@ -6197,7 +6349,7 @@
     {
      "name": "SULieAlgebra.adjointContr_self_nonneg",
      "kind": "lemma",
-     "line": 122,
+     "line": 121,
      "doc": "The real contraction is positive semidefinite: `tr (x x) = tr (x x†) ≥ 0`.",
      "statement": "lemma adjointContr_self_nonneg {n : ℕ} (x : SULieAlgebra n ℂ) : 0 ≤ adjointContr (x ⊗ₜ x)",
      "sorry": false
@@ -6205,7 +6357,7 @@
     {
      "name": "SULieAlgebra.adjointContr_self_eq_zero_iff",
      "kind": "lemma",
-     "line": 128,
+     "line": 127,
      "doc": "The real contraction of `x` with itself vanishes only for `x = 0`.",
      "statement": "lemma adjointContr_self_eq_zero_iff {n : ℕ} (x : SULieAlgebra n ℂ) :\n    adjointContr (x ⊗ₜ x) = 0 ↔ x = 0",
      "sorry": false
@@ -6213,7 +6365,7 @@
     {
      "name": "SULieAlgebra.adjointContr_self_pos",
      "kind": "lemma",
-     "line": 135,
+     "line": 134,
      "doc": "The real contraction is positive definite, making it an inner product on `su(n)`.",
      "statement": "lemma adjointContr_self_pos {n : ℕ} {x : SULieAlgebra n ℂ} (hx : x ≠ 0) :\n    0 < adjointContr (x ⊗ₜ x)",
      "sorry": false
@@ -6221,7 +6373,7 @@
     {
      "name": "SULieAlgebra.adjointContr_separating_left",
      "kind": "lemma",
-     "line": 139,
+     "line": 138,
      "doc": "",
      "statement": "lemma adjointContr_separating_left {n : ℕ} (x : SULieAlgebra n ℂ)\n    (hx : ∀ y, adjointContr (x ⊗ₜ y) = 0) : x = 0",
      "sorry": false
@@ -6229,7 +6381,7 @@
     {
      "name": "SULieAlgebra.adjointContr_separating_right",
      "kind": "lemma",
-     "line": 143,
+     "line": 142,
      "doc": "",
      "statement": "lemma adjointContr_separating_right {n : ℕ} (y : SULieAlgebra n ℂ)\n    (hy : ∀ x, adjointContr (x ⊗ₜ y) = 0) : y = 0",
      "sorry": false
@@ -6237,7 +6389,7 @@
     {
      "name": "SULieAlgebra.adjointContr_flip_injective",
      "kind": "lemma",
-     "line": 148,
+     "line": 147,
      "doc": "The real contraction separates `su(n)`: `y ↦ (x ↦ re tr (x y))` is injective.",
      "statement": "lemma adjointContr_flip_injective {n : ℕ} :\n    Function.Injective (TensorProduct.curry (adjointContr (n := n)).toLinearMap).flip",
      "sorry": false
@@ -6245,7 +6397,7 @@
     {
      "name": "SULieAlgebra.adjointContr_isSymm",
      "kind": "lemma",
-     "line": 158,
+     "line": 157,
      "doc": "The real contraction, as a bilinear form, is symmetric.",
      "statement": "lemma adjointContr_isSymm {n : ℕ} :\n    LinearMap.BilinForm.IsSymm (TensorProduct.curry (adjointContr (n := n)).toLinearMap)",
      "sorry": false
@@ -6253,7 +6405,7 @@
     {
      "name": "SULieAlgebra.adjointContr_nondegenerate",
      "kind": "lemma",
-     "line": 163,
+     "line": 162,
      "doc": "The real contraction, as a bilinear form, is nondegenerate.",
      "statement": "lemma adjointContr_nondegenerate {n : ℕ} :\n    (TensorProduct.curry (adjointContr (n := n)).toLinearMap).Nondegenerate",
      "sorry": false
@@ -6261,7 +6413,7 @@
     {
      "name": "SULieAlgebra.adjointℂContr",
      "kind": "def",
-     "line": 175,
+     "line": 174,
      "doc": "The contraction of two complex adjoint indices: the complexification of the real contraction\n`adjointContr`.",
      "statement": "noncomputable def adjointℂContr {n : ℕ} : ((adjointℂ (n := n)).tprod adjointℂ).IntertwiningMap\n    (Representation.trivial ℂ (specialUnitaryGroup (Fin n) ℂ) ℂ)",
      "sorry": false
@@ -6269,7 +6421,7 @@
     {
      "name": "SULieAlgebra.adjointℂContr_adjointℂ",
      "kind": "lemma",
-     "line": 193,
+     "line": 192,
      "doc": "The adjoint representation preserves the complex contraction.",
      "statement": "lemma adjointℂContr_adjointℂ {n : ℕ} (g : specialUnitaryGroup (Fin n) ℂ)\n    (A B : Complexification n) :\n    adjointℂContr (adjointℂ g A ⊗ₜ adjointℂ g B) = adjointℂContr (A ⊗ₜ B)",
      "sorry": false
@@ -6277,7 +6429,7 @@
     {
      "name": "SULieAlgebra.adjointℂContr_tmul",
      "kind": "lemma",
-     "line": 201,
+     "line": 200,
      "doc": "The contraction is the trace form, `A ⊗ B ↦ tr (A B)`.",
      "statement": "lemma adjointℂContr_tmul (A B : Complexification n) :\n    adjointℂContr (A ⊗ₜ B) = (toMatrixℂ A * toMatrixℂ B).trace",
      "sorry": false
@@ -6285,7 +6437,7 @@
     {
      "name": "SULieAlgebra.adjointℂContr_one_tmul",
      "kind": "lemma",
-     "line": 218,
+     "line": 217,
      "doc": "On the real elements `1 ⊗ x` of the complexification the complex contraction is the real\ncontraction, so the two agree on real gauge fields.",
      "statement": "lemma adjointℂContr_one_tmul {n : ℕ} (x y : SULieAlgebra n ℂ) :\n    adjointℂContr ((1 ⊗ₜ x) ⊗ₜ (1 ⊗ₜ y)) = adjointContr (x ⊗ₜ y)",
      "sorry": false
@@ -6293,7 +6445,7 @@
     {
      "name": "SULieAlgebra.adjointℂContr_symm",
      "kind": "lemma",
-     "line": 223,
+     "line": 222,
      "doc": "",
      "statement": "lemma adjointℂContr_symm {n} (A B : Complexification n) :\n    adjointℂContr (A ⊗ₜ B) = adjointℂContr (B ⊗ₜ A)",
      "sorry": false
@@ -6301,7 +6453,7 @@
     {
      "name": "SULieAlgebra.adjointℂContr_lie",
      "kind": "lemma",
-     "line": 228,
+     "line": 227,
      "doc": "The complex contraction is invariant under the bracket, `tr (⁅A, B⁆ C) = tr (A ⁅B, C⁆)`.",
      "statement": "lemma adjointℂContr_lie {n} (A B C : Complexification n) :\n    adjointℂContr (⁅A, B⁆ ⊗ₜ C) = adjointℂContr (A ⊗ₜ ⁅B, C⁆)",
      "sorry": false
@@ -6309,7 +6461,7 @@
     {
      "name": "SULieAlgebra.adjointℂContr_separating_left",
      "kind": "lemma",
-     "line": 235,
+     "line": 234,
      "doc": "",
      "statement": "lemma adjointℂContr_separating_left {n} (A : Complexification n)\n    (hA : ∀ B, adjointℂContr (A ⊗ₜ B) = 0) : A = 0",
      "sorry": false
@@ -6317,7 +6469,7 @@
     {
      "name": "SULieAlgebra.adjointℂContr_separating_right",
      "kind": "lemma",
-     "line": 242,
+     "line": 241,
      "doc": "",
      "statement": "lemma adjointℂContr_separating_right {n} (B : Complexification n)\n    (hB : ∀ A, adjointℂContr (A ⊗ₜ B) = 0) : B = 0",
      "sorry": false
@@ -6325,7 +6477,7 @@
     {
      "name": "SULieAlgebra.adjointℂContr_flip_injective",
      "kind": "lemma",
-     "line": 247,
+     "line": 246,
      "doc": "The contraction separates the complexification: `B ↦ (A ↦ tr (A B))` is injective.",
      "statement": "lemma adjointℂContr_flip_injective :\n    Function.Injective (TensorProduct.curry (adjointℂContr (n := n)).toLinearMap).flip",
      "sorry": false
@@ -6333,7 +6485,7 @@
     {
      "name": "SULieAlgebra.adjointℂContr_isSymm",
      "kind": "lemma",
-     "line": 257,
+     "line": 256,
      "doc": "The complex contraction, as a bilinear form, is symmetric.",
      "statement": "lemma adjointℂContr_isSymm {n : ℕ} :\n    LinearMap.BilinForm.IsSymm (TensorProduct.curry (adjointℂContr (n := n)).toLinearMap)",
      "sorry": false
@@ -6341,7 +6493,7 @@
     {
      "name": "SULieAlgebra.adjointℂContr_nondegenerate",
      "kind": "lemma",
-     "line": 262,
+     "line": 261,
      "doc": "The complex contraction, as a bilinear form, is nondegenerate.",
      "statement": "lemma adjointℂContr_nondegenerate {n : ℕ} :\n    (TensorProduct.curry (adjointℂContr (n := n)).toLinearMap).Nondegenerate",
      "sorry": false
@@ -6349,7 +6501,7 @@
     {
      "name": "SULieAlgebra.exists_eq_adjointℂContr_tmul",
      "kind": "lemma",
-     "line": 275,
+     "line": 274,
      "doc": "Every bilinear form on the complexification is the contraction against an endomorphism,\nthe contraction being nondegenerate.",
      "statement": "lemma exists_eq_adjointℂContr_tmul {n : ℕ}\n    (B : Complexification n ⊗[ℂ] Complexification n →ₗ[ℂ] ℂ) :\n    ∃ T : Module.End ℂ (Complexification n), ∀ A C, B (A ⊗ₜ C) = adjointℂContr (T A ⊗ₜ C)",
      "sorry": false
@@ -6357,7 +6509,7 @@
     {
      "name": "SULieAlgebra.adjointℂ_comp_eq_of_adjointℂContr_tmul",
      "kind": "lemma",
-     "line": 284,
+     "line": 283,
      "doc": "The endomorphism representing an invariant bilinear form commutes with the adjoint\naction.",
      "statement": "lemma adjointℂ_comp_eq_of_adjointℂContr_tmul {n : ℕ}\n    (B : ((adjointℂ (n := n)).tprod adjointℂ).IntertwiningMap\n      (Representation.trivial ℂ (specialUnitaryGroup (Fin n) ℂ) ℂ))\n    {T : Module.End ℂ (Complexification n)} (hT : ∀ A C, B (A ⊗ₜ C) = adjointℂContr (T A ⊗ₜ C))\n    (g : specialUnitaryGroup (Fin n) ℂ) :\n    T ∘ₗ adjointℂ g = adjointℂ g ∘ₗ T",
      "sorry": false
@@ -6365,7 +6517,7 @@
     {
      "name": "SULieAlgebra.intertwiningMap_eq_smul_adjointℂContr",
      "kind": "lemma",
-     "line": 300,
+     "line": 299,
      "doc": "Every intertwiner `adj ⊗ adj → ℂ` is a multiple of the contraction: up to scale, the\ncontraction is the unique `SU(n)`-invariant bilinear form on the complexification.",
      "statement": "lemma intertwiningMap_eq_smul_adjointℂContr {n : ℕ}\n    (B : ((adjointℂ (n := n)).tprod adjointℂ).IntertwiningMap\n      (Representation.trivial ℂ (specialUnitaryGroup (Fin n) ℂ) ℂ)) :\n    ∃ z : ℂ, B = z • adjointℂContr",
      "sorry": false
@@ -8284,6 +8436,136 @@
    "informal": 0
   },
   {
+   "file": "Physlib/Mathematics/Projection/Compress.lean",
+   "module": "Physlib.Mathematics.Projection.Compress",
+   "title": "Compression by a projection",
+   "doc": "## i. Overview\n\nThe compression of `a` by `p` is the product `p * a * p`. If `p` is idempotent, then\ncompression by `p` is an idempotent map. If `p` is self-adjoint, compression commutes\nwith the star operation. A star projection has both properties.\n\n## ii. Key results\n\n- `Projection.compress` defines compression using only multiplication.\n- `IsIdempotentElem.compress_comp_compress` gives idempotence of the compression map.\n- `IsSelfAdjoint.star_compress` relates compression and the star operation.\n\n## iii. Table of contents\n\n- A. Compression\n- B. Compression by an idempotent\n- C. Compression by a self-adjoint element\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 38,
+     "text": "## A. Compression"
+    },
+    {
+     "line": 68,
+     "text": "## B. Compression by an idempotent"
+    },
+    {
+     "line": 100,
+     "text": "## C. Compression by a self-adjoint element"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Projection.compress",
+     "kind": "def",
+     "line": 47,
+     "doc": "The compression of `a` by an idempotent element `p`, given by `p * a * p`.",
+     "statement": "def compress [Mul A] (p a : A) : A",
+     "sorry": false
+    },
+    {
+     "name": "Projection.compress_apply",
+     "kind": "lemma",
+     "line": 49,
+     "doc": "",
+     "statement": "lemma compress_apply [Mul A] (p a : A) : compress p a = p * a * p",
+     "sorry": false
+    },
+    {
+     "name": "Projection.compress_zero",
+     "kind": "lemma",
+     "line": 51,
+     "doc": "",
+     "statement": "lemma compress_zero [MulZeroClass A] (p : A) : compress p 0 = 0",
+     "sorry": false
+    },
+    {
+     "name": "Projection.zero_compress_apply",
+     "kind": "lemma",
+     "line": 54,
+     "doc": "",
+     "statement": "lemma zero_compress_apply [MulZeroClass A] (a : A) : compress 0 a = 0",
+     "sorry": false
+    },
+    {
+     "name": "Projection.zero_compress",
+     "kind": "lemma",
+     "line": 57,
+     "doc": "",
+     "statement": "lemma zero_compress [MulZeroClass A] : compress (0 : A) = 0",
+     "sorry": false
+    },
+    {
+     "name": "Projection.compress_add",
+     "kind": "lemma",
+     "line": 60,
+     "doc": "",
+     "statement": "lemma compress_add [Distrib A] (p a b : A) :\n    compress p (a + b) = compress p a + compress p b",
+     "sorry": false
+    },
+    {
+     "name": "IsIdempotentElem.mul_compress",
+     "kind": "lemma",
+     "line": 79,
+     "doc": "Multiplying a compression by its idempotent on the left leaves it unchanged.",
+     "statement": "lemma mul_compress (a : A) : p * compress p a = compress p a",
+     "sorry": false
+    },
+    {
+     "name": "IsIdempotentElem.compress_mul",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "Multiplying a compression by its idempotent on the right leaves it unchanged.",
+     "statement": "lemma compress_mul (a : A) : compress p a * p = compress p a",
+     "sorry": false
+    },
+    {
+     "name": "IsIdempotentElem.compress_compress",
+     "kind": "lemma",
+     "line": 87,
+     "doc": "Compression by the same idempotent twice gives the original compression.",
+     "statement": "lemma compress_compress (a : A) : compress p (compress p a) = compress p a",
+     "sorry": false
+    },
+    {
+     "name": "IsIdempotentElem.compress_comp_compress",
+     "kind": "lemma",
+     "line": 91,
+     "doc": "Compression by an idempotent is idempotent under function composition.",
+     "statement": "lemma compress_comp_compress : compress p ∘ compress p = compress p",
+     "sorry": false
+    },
+    {
+     "name": "IsIdempotentElem.compress_mul_compress",
+     "kind": "lemma",
+     "line": 95,
+     "doc": "The product of two compressions is a compression with an intermediate idempotent.",
+     "statement": "lemma compress_mul_compress (a b : A) : compress p a * compress p b = compress p (a * p * b)",
+     "sorry": false
+    },
+    {
+     "name": "IsSelfAdjoint.star_compress",
+     "kind": "lemma",
+     "line": 111,
+     "doc": "Compression by a self-adjoint element commutes with taking the star.",
+     "statement": "lemma star_compress (a : A) : star (compress p a) = compress p (star a)",
+     "sorry": false
+    },
+    {
+     "name": "IsSelfAdjoint.isSelfAdjoint_compress",
+     "kind": "lemma",
+     "line": 115,
+     "doc": "Compression by a self-adjoint element preserves self-adjointness.",
+     "statement": "lemma isSelfAdjoint_compress {a : A} (ha : IsSelfAdjoint a) : IsSelfAdjoint (compress p a)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
    "file": "Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean",
    "module": "Physlib.Mathematics.SpecialFunctions.EllipticIntegral",
    "title": "The complete elliptic integral of the first kind",
@@ -8897,7 +9179,7 @@
     {
      "name": "Polynomial.polynomial_mem_physHermite_span",
      "kind": "lemma",
-     "line": 479,
+     "line": 480,
      "doc": "",
      "statement": "lemma polynomial_mem_physHermite_span (P : Polynomial ℤ) :\n    (P : ℝ → ℝ) ∈ Submodule.span ℝ (Set.range (fun n => (physHermite n : ℝ → ℝ)))",
      "sorry": false
@@ -8905,7 +9187,7 @@
     {
      "name": "Polynomial.cos_mem_physHermite_span_topologicalClosure",
      "kind": "lemma",
-     "line": 483,
+     "line": 484,
      "doc": "",
      "statement": "lemma cos_mem_physHermite_span_topologicalClosure (c : ℝ) :\n    (fun (x : ℝ) => Real.cos (c * x)) ∈\n    (Submodule.span ℝ (Set.range (fun n => (physHermite n : ℝ → ℝ)))).topologicalClosure",
      "sorry": false
@@ -9001,15 +9283,15 @@
    "copyright": "2026 Andrea Pari",
    "sections": [
     {
-     "line": 83,
+     "line": 82,
      "text": "## A. Species\n\nThe basis of a color `c` is labelled by `basisIdx c.kind`, the values that an index of that kind\nruns over. A color and its dual share labels, as `μ` in `v^μ` and `α_μ`. `basisIdx` is a\nparameter of `Species`.\n\nThe condition is stated at every color, so that lemmas about a general color `c` use it directly.\nAt a lower color it is the condition at the upper color with the factors swapped, and\n`invariant_of_up` proves it from the upper colors."
     },
     {
-     "line": 144,
+     "line": 143,
      "text": "## B. The contraction\n\nThe contraction is not a field of `Species`. It is defined from the bases, as\n`u ⊗ α ↦ ∑ μ, u^μ α_μ`, so the bases of `c` and `c.dual` are dual by definition\n(`contr_basis`). Its invariance is the condition on the species. It is a perfect pairing in\nMathlib's sense, and `dualEquiv` identifies `V c.dual` with Mathlib's dual representation of\n`V c`, so Mathlib's results on duals apply. When an invariant pairing for which the bases are\ndual is already known, `Module.Basis.coordPairing_invariant` gives the condition."
     },
     {
-     "line": 220,
+     "line": 219,
      "text": "## C. Moving a vector along an equality of colors\n\nWhen two colors are equal by computation, as `c.dual.dual` and `c`, their spaces are the same\ntype. When they are equal only through a proof `p : a = a'`, Lean cannot use a vector of `S.V a`\nwhere one of `S.V a'` is expected. This happens for a hypothesis such as `c i = a`, and for the\ncolors `c s` and `c s'` of two indices with `s = s'`. `S.cast p` moves the vector from `S.V a` to\n`S.V a'` without changing it. The lemmas below say that `S.cast` keeps the group action, the\ncomponents and the contraction, so that proofs can remove it."
     }
    ],
@@ -9017,7 +9299,7 @@
     {
      "name": "Tensor.Species",
      "kind": "structure",
-     "line": 101,
+     "line": 100,
      "doc": "A tensor species gives each color `c` a space `V c`, a representation `rep c` of `G` on it and\na basis `basis c` labelled by `basisIdx c.kind`, so that a color and its dual share labels. Its one\ncondition, `invariant`, says that the coordinate pairing `u ⊗ α ↦ ∑ μ, u^μ α_μ` of the bases of\n`c` and `c.dual` is invariant.",
      "statement": "structure Species (k : Type) [RCLike k] (G : Type) [Group G] (K : Type)\n    (basisIdx : K → Type) [∀ κ, Fintype (basisIdx κ)] [∀ κ, DecidableEq (basisIdx κ)] where\n  /-- The vector space of a color. -/\n  V : Color K → Type\n  /-- The vector spaces are additive groups. -/\n  [addCommGroup : ∀ c, AddCommGroup (V c)]\n  /-- The vector spaces are modules over `k`. -/\n  [module : ∀ c, Module k (V c)]\n  /-- The representation of a color. -/\n  rep : (c : Color K) → Representation k G (V c)\n  /-- The basis of a color. -/\n  basis : (c : Color K) → Module.Basis (basisIdx c.kind) k (V c)\n  /-- The coordinate pairing `u ⊗ α ↦ ∑ μ, u^μ α_μ` of the bases of `c` and `c.dual` is\n  invariant, `(Λu)^μ (Λα)_μ = u^μ α_μ`. -/\n  invariant : ∀ c g x y, (basis c).coordPairing (basis c.dual) (rep c g x ⊗ₜ rep c.dual g y) =\n    (basis c).coordPairing (basis c.dual) (x ⊗ₜ y)",
      "sorry": false
@@ -9025,7 +9307,7 @@
     {
      "name": "Tensor.Species.invariant_of_up",
      "kind": "lemma",
-     "line": 127,
+     "line": 126,
      "doc": "The condition `invariant` at every color from the condition at the upper colors. At a lower\ncolor the pairing is the pairing at the dual, upper color with its factors swapped.",
      "statement": "lemma invariant_of_up {V : Color K → Type} [∀ c, AddCommGroup (V c)] [∀ c, Module k (V c)]\n    (rep : (c : Color K) → Representation k G (V c))\n    (basis : (c : Color K) → Module.Basis (basisIdx c.kind) k (V c))\n    (h : ∀ κ g x y, (basis ⟨κ, .up⟩).coordPairing (basis ⟨κ, .down⟩)\n      (rep ⟨κ, .up⟩ g x ⊗ₜ rep ⟨κ, .down⟩ g y) =\n        (basis ⟨κ, .up⟩).coordPairing (basis ⟨κ, .down⟩) (x ⊗ₜ y)) :\n    ∀ c g x y, (basis c).coordPairing (basis c.dual) (rep c g x ⊗ₜ rep c.dual g y) =\n      (basis c).coordPairing (basis c.dual) (x ⊗ₜ y)",
      "sorry": false
@@ -9033,7 +9315,7 @@
     {
      "name": "Tensor.Species.finiteDimensional",
      "kind": "instance",
-     "line": 140,
+     "line": 139,
      "doc": "The space of each color is finite-dimensional, since it has a finite basis.",
      "statement": "instance finiteDimensional (S : Species k G K basisIdx) (c : Color K) :\n    FiniteDimensional k (S.V c)",
      "sorry": false
@@ -9041,7 +9323,7 @@
     {
      "name": "Tensor.Species.contr",
      "kind": "def",
-     "line": 161,
+     "line": 160,
      "doc": "The invariant contraction `V c ⊗ V c.dual → k`, `u ⊗ α ↦ u^μ α_μ`, the coordinate pairing of\nthe bases. The vector of color `c` is the first factor.",
      "statement": "noncomputable def contr (c : Color K) :\n    ((S.rep c).tprod (S.rep c.dual)).IntertwiningMap (Representation.trivial k G k)",
      "sorry": false
@@ -9049,7 +9331,7 @@
     {
      "name": "Tensor.Species.contr_basis",
      "kind": "lemma",
-     "line": 167,
+     "line": 166,
      "doc": "The bases of a color and its dual are dual, `S.contr c (e_μ ⊗ e^ν) = δ_μ^ν`.",
      "statement": "lemma contr_basis (c : Color K) (μ ν : basisIdx c.kind) :\n    S.contr c (S.basis c μ ⊗ₜ S.basis c.dual ν) = if μ = ν then 1 else 0",
      "sorry": false
@@ -9057,7 +9339,7 @@
     {
      "name": "Tensor.Species.contr_tmul_eq_sum_basis",
      "kind": "lemma",
-     "line": 173,
+     "line": 172,
      "doc": "The contraction in components, `S.contr c (u ⊗ α) = ∑ μ, u^μ α_μ`.",
      "statement": "lemma contr_tmul_eq_sum_basis (c : Color K) (x : S.V c) (y : S.V c.dual) :\n    S.contr c (x ⊗ₜ y) = ∑ μ, (S.basis c).repr x μ * (S.basis c.dual).repr y μ",
      "sorry": false
@@ -9065,7 +9347,7 @@
     {
      "name": "Tensor.Species.contr_tmul_symm",
      "kind": "lemma",
-     "line": 179,
+     "line": 178,
      "doc": "The contraction is symmetric. `u^μ α_μ` at `c` is `α_μ u^μ` at `c.dual`, with the factors\nswapped.",
      "statement": "lemma contr_tmul_symm (c : Color K) (x : S.V c) (y : S.V c.dual) :\n    S.contr c (x ⊗ₜ[k] y) = S.contr c.dual (y ⊗ₜ[k] x)",
      "sorry": false
@@ -9073,7 +9355,7 @@
     {
      "name": "Tensor.Species.isPerfPair_contr",
      "kind": "instance",
-     "line": 184,
+     "line": 183,
      "doc": "The contraction is a perfect pairing, so it identifies `V c.dual` with the dual of `V c`.",
      "statement": "instance isPerfPair_contr (c : Color K) :\n    (TensorProduct.curry (S.contr c).toLinearMap).IsPerfPair",
      "sorry": false
@@ -9081,7 +9363,7 @@
     {
      "name": "Tensor.Species.ext_contr",
      "kind": "lemma",
-     "line": 191,
+     "line": 190,
      "doc": "The contraction is nondegenerate in its second argument. Two vectors of `c.dual` with the\nsame contraction against every vector of `c` are equal.",
      "statement": "lemma ext_contr {c : Color K} {α α' : S.V c.dual}\n    (h : ∀ u, S.contr c (u ⊗ₜ α) = S.contr c (u ⊗ₜ α')) : α = α'",
      "sorry": false
@@ -9089,7 +9371,7 @@
     {
      "name": "Tensor.Species.contr_invariant",
      "kind": "lemma",
-     "line": 197,
+     "line": 196,
      "doc": "The contraction is invariant, `(Λu)^μ (Λα)_μ = u^μ α_μ` for every `Λ : G`.",
      "statement": "lemma contr_invariant (c : Color K) (g : G) (x : S.V c) (y : S.V c.dual) :\n    S.contr c (S.rep c g x ⊗ₜ[k] S.rep c.dual g y) = S.contr c (x ⊗ₜ[k] y)",
      "sorry": false
@@ -9097,7 +9379,7 @@
     {
      "name": "Tensor.Species.contr_tmul_rep",
      "kind": "lemma",
-     "line": 202,
+     "line": 201,
      "doc": "Contracting `u` with `Λα` is contracting `Λ⁻¹u` with `α`.",
      "statement": "lemma contr_tmul_rep (c : Color K) (g : G) (u : S.V c) (α : S.V c.dual) :\n    S.contr c (u ⊗ₜ S.rep c.dual g α) = S.contr c (S.rep c g⁻¹ u ⊗ₜ α)",
      "sorry": false
@@ -9105,7 +9387,7 @@
     {
      "name": "Tensor.Species.dualEquiv",
      "kind": "def",
-     "line": 208,
+     "line": 207,
      "doc": "The space of `c.dual` is the dual representation of the space of `c`, a vector `α` read as the\nlinear form `u ↦ u^μ α_μ`.",
      "statement": "noncomputable def dualEquiv (c : Color K) : (S.rep c.dual).Equiv (S.rep c).dual",
      "sorry": false
@@ -9113,7 +9395,7 @@
     {
      "name": "Tensor.Species.dualEquiv_apply",
      "kind": "lemma",
-     "line": 214,
+     "line": 213,
      "doc": "`dualEquiv c α` is the linear form `u ↦ u^μ α_μ`.",
      "statement": "lemma dualEquiv_apply (c : Color K) (α : S.V c.dual) (u : S.V c) :\n    S.dualEquiv c α u = S.contr c (u ⊗ₜ α)",
      "sorry": false
@@ -9121,7 +9403,7 @@
     {
      "name": "Tensor.Species.cast",
      "kind": "def",
-     "line": 236,
+     "line": 235,
      "doc": "Moving a vector along an equality of colors `a = a'`, Mathlib's `LinearEquiv.cast`, as an\nequivalence of representations.",
      "statement": "protected def cast {a a' : Color K} (p : a = a') : (S.rep a).Equiv (S.rep a')",
      "sorry": false
@@ -9129,7 +9411,7 @@
     {
      "name": "Tensor.Species.cast_apply",
      "kind": "lemma",
-     "line": 241,
+     "line": 240,
      "doc": "`S.cast p` is Mathlib's `cast` of the vector.",
      "statement": "lemma cast_apply {a a' : Color K} (p : a = a') (x : S.V a) :\n    S.cast p x = cast (congrArg S.V p) x",
      "sorry": false
@@ -9137,7 +9419,7 @@
     {
      "name": "Tensor.Species.cast_rep",
      "kind": "lemma",
-     "line": 245,
+     "line": 244,
      "doc": "Moving a vector along an equality of colors `a = a'` commutes with the group action.",
      "statement": "lemma cast_rep {a a' : Color K} (p : a = a') (g : G) (x : S.V a) :\n    S.cast p (S.rep a g x) = S.rep a' g (S.cast p x)",
      "sorry": false
@@ -9145,7 +9427,7 @@
     {
      "name": "Tensor.Species.basis_repr_cast",
      "kind": "lemma",
-     "line": 251,
+     "line": 250,
      "doc": "Moving a vector along an equality of colors `a = b` keeps its components, with the label cast\nback to a label at `a`.",
      "statement": "lemma basis_repr_cast {a b : Color K} (p : a = b) (v : S.V a) (μ : basisIdx b.kind) :\n    (S.basis b).repr (S.cast p v) μ =\n      (S.basis a).repr v (cast (congrArg (basisIdx ∘ Color.kind) p.symm) μ)",
      "sorry": false
@@ -9153,7 +9435,7 @@
     {
      "name": "Tensor.Species.cast_apply_congr",
      "kind": "lemma",
-     "line": 259,
+     "line": 258,
      "doc": "For a family `f` of vectors on indices, moving `f s` to the color `b` is moving `f s'`, for\nany index `s'` equal to `s`.",
      "statement": "lemma cast_apply_congr {ι : Type} {d : ι → Color K} (f : Π s, S.V (d s)) {s s' : ι}\n    (e : s = s') {b : Color K} (p : d s = b) : S.cast p (f s) = S.cast (e ▸ p) (f s')",
      "sorry": false
@@ -9161,7 +9443,7 @@
     {
      "name": "Tensor.Species.contr_cast_tmul_cast",
      "kind": "lemma",
-     "line": 265,
+     "line": 264,
      "doc": "The contraction of two vectors does not depend on the colors they are moved to.",
      "statement": "lemma contr_cast_tmul_cast {d e a b : Color K} (x : S.V d) (y : S.V e) (p : d = a)\n    (q : e = a.dual) (p' : d = b) (q' : e = b.dual) :\n    S.contr a (S.cast p x ⊗ₜ S.cast q y) = S.contr b (S.cast p' x ⊗ₜ S.cast q' y)",
      "sorry": false
@@ -9169,7 +9451,7 @@
     {
      "name": "Tensor.Species.contr_cast_tmul_cast_symm",
      "kind": "lemma",
-     "line": 273,
+     "line": 272,
      "doc": "The contraction of two vectors moved along equalities of colors is symmetric,\n`u^μ α_μ = α_μ u^μ`.",
      "statement": "lemma contr_cast_tmul_cast_symm {d e a b : Color K} (x : S.V d) (y : S.V e) (p : d = a)\n    (q : e = a.dual) (p' : e = b) (q' : d = b.dual) :\n    S.contr a (S.cast p x ⊗ₜ S.cast q y) = S.contr b (S.cast p' y ⊗ₜ S.cast q' x)",
      "sorry": false

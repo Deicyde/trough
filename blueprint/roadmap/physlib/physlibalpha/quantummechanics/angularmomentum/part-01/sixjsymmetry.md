@@ -8,7 +8,7 @@ proof: formalized
 
 # The tetrahedral symmetry of the 6j symbols
 
-The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.SixJSymmetry`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean): 38 declarations, 22 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.SixJSymmetry`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean): 38 declarations, 22 with a docstring.
 
 > The 3j symbols with general arguments, the 6j symbols as sums over four 3j symbols, their
 > agreement with the 6j symbols of `SixJ`, and the 24 symmetries of the tetrahedron.
@@ -63,7 +63,7 @@ The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.SixJSymmetry`, [Physli
 
 ## A. The 3j symbol with general arguments
 
-**`PhyslibAlpha.Sl2.Adm3`**, an abbrev, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L85).
+**`PhyslibAlpha.Sl2.Adm3`**, an abbrev, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L85).
 
 > Admissibility of `(j₁ j₂ j₃; m₁ m₂ m₃)` in doubled units: the projections add up to zero,
 > `|mᵢ| ≤ jᵢ`, `jᵢ - mᵢ` is even and the triangle condition holds with even perimeter.
@@ -72,7 +72,7 @@ The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.SixJSymmetry`, [Physli
 abbrev Adm3 (j₁ j₂ j₃ : ℕ) (m₁ m₂ m₃ : ℤ) : Prop
 ```
 
-**`PhyslibAlpha.Sl2.reggeJ`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L92).
+**`PhyslibAlpha.Sl2.reggeJ`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L92).
 
 > The Regge square of `(j₁ j₂ j₃; m₁ m₂ m₃)` in doubled units.
 
@@ -80,7 +80,7 @@ abbrev Adm3 (j₁ j₂ j₃ : ℕ) (m₁ m₂ m₃ : ℤ) : Prop
 def reggeJ (j₁ j₂ j₃ : ℕ) (m₁ m₂ m₃ : ℤ) : Fin 3 → Fin 3 → ℕ
 ```
 
-**`PhyslibAlpha.Sl2.threeJ`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L99).
+**`PhyslibAlpha.Sl2.threeJ`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L99).
 
 > The **3j symbol** `(j₁ j₂ j₃; m₁ m₂ m₃)` with `jᵢ` and `mᵢ` given in doubled units, zero for
 > inadmissible arguments.
@@ -89,25 +89,25 @@ def reggeJ (j₁ j₂ j₃ : ℕ) (m₁ m₂ m₃ : ℤ) : Fin 3 → Fin 3 → �
 def threeJ (j₁ j₂ j₃ : ℕ) (m₁ m₂ m₃ : ℤ) : ℝ
 ```
 
-**`PhyslibAlpha.Sl2.threeJ_of_not`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L104).
+**`PhyslibAlpha.Sl2.threeJ_of_not`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L104).
 
 ```lean
 lemma threeJ_of_not (h : ¬Adm3 j₁ j₂ j₃ m₁ m₂ m₃) : threeJ j₁ j₂ j₃ m₁ m₂ m₃ = 0
 ```
 
-**`PhyslibAlpha.Sl2.adm3_of_threeJ_ne_zero`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L107).
+**`PhyslibAlpha.Sl2.adm3_of_threeJ_ne_zero`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L107).
 
 ```lean
 lemma adm3_of_threeJ_ne_zero (h : threeJ j₁ j₂ j₃ m₁ m₂ m₃ ≠ 0) : Adm3 j₁ j₂ j₃ m₁ m₂ m₃
 ```
 
-**`PhyslibAlpha.Sl2.isMagic_reggeJ`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L111).
+**`PhyslibAlpha.Sl2.isMagic_reggeJ`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L111).
 
 ```lean
 lemma isMagic_reggeJ (h : Adm3 j₁ j₂ j₃ m₁ m₂ m₃) : IsMagic (reggeJ j₁ j₂ j₃ m₁ m₂ m₃)
 ```
 
-**`PhyslibAlpha.Sl2.reggeJ_row_sum`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L129).
+**`PhyslibAlpha.Sl2.reggeJ_row_sum`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L129).
 
 ```lean
 lemma reggeJ_row_sum (h : Adm3 j₁ j₂ j₃ m₁ m₂ m₃) :
@@ -115,7 +115,7 @@ lemma reggeJ_row_sum (h : Adm3 j₁ j₂ j₃ m₁ m₂ m₃) :
       reggeJ j₁ j₂ j₃ m₁ m₂ m₃ 0 2 = (j₁ + j₂ + j₃) / 2
 ```
 
-**`PhyslibAlpha.Sl2.threeJ_swap`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L138).
+**`PhyslibAlpha.Sl2.threeJ_swap`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L138).
 
 > Exchange of the first two columns:
 > `(j₂ j₁ j₃; m₂ m₁ m₃) = (-1)^(j₁+j₂+j₃) (j₁ j₂ j₃; m₁ m₂ m₃)`.
@@ -125,7 +125,7 @@ lemma threeJ_swap (j₁ j₂ j₃ : ℕ) (m₁ m₂ m₃ : ℤ) :
     threeJ j₂ j₁ j₃ m₂ m₁ m₃ = (-1) ^ ((j₁ + j₂ + j₃) / 2) * threeJ j₁ j₂ j₃ m₁ m₂ m₃
 ```
 
-**`PhyslibAlpha.Sl2.threeJ_cycle`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L155).
+**`PhyslibAlpha.Sl2.threeJ_cycle`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L155).
 
 > Cyclic permutation of the columns: `(j₂ j₃ j₁; m₂ m₃ m₁) = (j₁ j₂ j₃; m₁ m₂ m₃)`.
 
@@ -134,7 +134,7 @@ lemma threeJ_cycle (j₁ j₂ j₃ : ℕ) (m₁ m₂ m₃ : ℤ) :
     threeJ j₂ j₃ j₁ m₂ m₃ m₁ = threeJ j₁ j₂ j₃ m₁ m₂ m₃
 ```
 
-**`PhyslibAlpha.Sl2.threeJ_neg`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L172).
+**`PhyslibAlpha.Sl2.threeJ_neg`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L172).
 
 > Reversal of the projections:
 > `(j₁ j₂ j₃; -m₁ -m₂ -m₃) = (-1)^(j₁+j₂+j₃) (j₁ j₂ j₃; m₁ m₂ m₃)`.
@@ -144,7 +144,7 @@ lemma threeJ_neg (j₁ j₂ j₃ : ℕ) (m₁ m₂ m₃ : ℤ) :
     threeJ j₁ j₂ j₃ (-m₁) (-m₂) (-m₃) = (-1) ^ ((j₁ + j₂ + j₃) / 2) * threeJ j₁ j₂ j₃ m₁ m₂ m₃
 ```
 
-**`PhyslibAlpha.Sl2.wigner3j_eq_threeJ`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L188).
+**`PhyslibAlpha.Sl2.wigner3j_eq_threeJ`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L188).
 
 > The 3j symbols of `Wigner3j` in terms of `threeJ`.
 
@@ -157,7 +157,7 @@ lemma wigner3j_eq_threeJ {m n k l α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n)
 
 ## B. The 6j symbol as a sum over four 3j symbols
 
-**`PhyslibAlpha.Sl2.sixJTerm`**, a def, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L212).
+**`PhyslibAlpha.Sl2.sixJTerm`**, a def, [line 212](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L212).
 
 > The summand of `sixJSym`:
 > `(-1)^(Σ (jᵢ - mᵢ)) (j₁ j₂ j₃; -m₁ -m₂ -m₃) (j₁ j₅ j₆; m₁ -m₅ m₆) (j₄ j₂ j₆; m₄ m₂ -m₆)
@@ -167,7 +167,7 @@ lemma wigner3j_eq_threeJ {m n k l α β : ℕ} (hkm : k ≤ m) (hkn : k ≤ n)
 def sixJTerm (j₁ j₂ j₃ j₄ j₅ j₆ : ℕ) (m : Fin 6 → ℤ) : ℝ
 ```
 
-**`PhyslibAlpha.Sl2.sixJBox`**, a def, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L219).
+**`PhyslibAlpha.Sl2.sixJBox`**, a def, [line 219](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L219).
 
 > The projections `|mᵢ| ≤ jᵢ`.
 
@@ -175,7 +175,7 @@ def sixJTerm (j₁ j₂ j₃ j₄ j₅ j₆ : ℕ) (m : Fin 6 → ℤ) : ℝ
 def sixJBox (j₁ j₂ j₃ j₄ j₅ j₆ : ℕ) : Finset (Fin 6 → ℤ)
 ```
 
-**`PhyslibAlpha.Sl2.mem_sixJBox`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L224).
+**`PhyslibAlpha.Sl2.mem_sixJBox`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L224).
 
 ```lean
 lemma mem_sixJBox {j₁ j₂ j₃ j₄ j₅ j₆ : ℕ} {m : Fin 6 → ℤ} :
@@ -185,7 +185,7 @@ lemma mem_sixJBox {j₁ j₂ j₃ j₄ j₅ j₆ : ℕ} {m : Fin 6 → ℤ} :
           (-(j₆ : ℤ) ≤ m 5 ∧ m 5 ≤ j₆)
 ```
 
-**`PhyslibAlpha.Sl2.sixJSym`**, a def, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L233).
+**`PhyslibAlpha.Sl2.sixJSym`**, a def, [line 233](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L233).
 
 > The **6j symbol** `{j₁ j₂ j₃; j₄ j₅ j₆}` (doubled units) as a sum over the projections of
 > four 3j symbols.
@@ -196,7 +196,7 @@ def sixJSym (j₁ j₂ j₃ j₄ j₅ j₆ : ℕ) : ℝ
 
 ## C. The tetrahedral symmetry
 
-**`PhyslibAlpha.Sl2.neg_one_zpow_mul_pow_four`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L242).
+**`PhyslibAlpha.Sl2.neg_one_zpow_mul_pow_four`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L242).
 
 ```lean
 lemma neg_one_zpow_mul_pow_four {S S' : ℤ} {p q r s : ℕ}
@@ -204,14 +204,14 @@ lemma neg_one_zpow_mul_pow_four {S S' : ℤ} {p q r s : ℕ}
     (-1 : ℝ) ^ S' * ((-1) ^ p * (-1) ^ q * (-1) ^ r * (-1) ^ s) = (-1) ^ S
 ```
 
-**`PhyslibAlpha.Sl2.prod_four_eq_zero_or`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L250).
+**`PhyslibAlpha.Sl2.prod_four_eq_zero_or`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L250).
 
 ```lean
 lemma prod_four_eq_zero_or {F₁ F₂ F₃ F₄ : ℝ} {P : Prop}
     (h : F₁ ≠ 0 → F₂ ≠ 0 → F₃ ≠ 0 → F₄ ≠ 0 → P) : F₁ * F₂ * F₃ * F₄ = 0 ∨ P
 ```
 
-**`PhyslibAlpha.Sl2.term_congr_1324`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L262).
+**`PhyslibAlpha.Sl2.term_congr_1324`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L262).
 
 ```lean
 lemma term_congr_1324 {S S' : ℤ} {p q r s : ℕ} {F₁ F₂ F₃ F₄ : ℝ}
@@ -220,7 +220,7 @@ lemma term_congr_1324 {S S' : ℤ} {p q r s : ℕ} {F₁ F₂ F₃ F₄ : ℝ}
       (-1) ^ S' * ((-1) ^ p * F₁ * ((-1) ^ q * F₃) * ((-1) ^ r * F₂) * ((-1) ^ s * F₄))
 ```
 
-**`PhyslibAlpha.Sl2.term_congr_1243`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L274).
+**`PhyslibAlpha.Sl2.term_congr_1243`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L274).
 
 ```lean
 lemma term_congr_1243 {S S' : ℤ} {p q r s : ℕ} {F₁ F₂ F₃ F₄ : ℝ}
@@ -229,7 +229,7 @@ lemma term_congr_1243 {S S' : ℤ} {p q r s : ℕ} {F₁ F₂ F₃ F₄ : ℝ}
       (-1) ^ S' * ((-1) ^ p * F₁ * ((-1) ^ q * F₂) * ((-1) ^ r * F₄) * ((-1) ^ s * F₃))
 ```
 
-**`PhyslibAlpha.Sl2.term_congr_4321`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L286).
+**`PhyslibAlpha.Sl2.term_congr_4321`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L286).
 
 ```lean
 lemma term_congr_4321 {S S' : ℤ} {F₁ F₂ F₃ F₄ : ℝ}
@@ -237,7 +237,7 @@ lemma term_congr_4321 {S S' : ℤ} {F₁ F₂ F₃ F₄ : ℝ}
     (-1 : ℝ) ^ S * (F₁ * F₂ * F₃ * F₄) = (-1) ^ S' * (F₄ * F₃ * F₂ * F₁)
 ```
 
-**`PhyslibAlpha.Sl2.threeJ_swap₂₃`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L297).
+**`PhyslibAlpha.Sl2.threeJ_swap₂₃`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L297).
 
 > Exchange of the last two columns:
 > `(j₁ j₃ j₂; m₁ m₃ m₂) = (-1)^(j₁+j₂+j₃) (j₁ j₂ j₃; m₁ m₂ m₃)`.
@@ -247,7 +247,7 @@ lemma threeJ_swap₂₃ (j₁ j₂ j₃ : ℕ) (m₁ m₂ m₃ : ℤ) :
     threeJ j₁ j₃ j₂ m₁ m₃ m₂ = (-1) ^ ((j₁ + j₂ + j₃) / 2) * threeJ j₁ j₂ j₃ m₁ m₂ m₃
 ```
 
-**`PhyslibAlpha.Sl2.threeJ_negCycle`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L302).
+**`PhyslibAlpha.Sl2.threeJ_negCycle`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L302).
 
 > `(j₂ j₃ j₁; -m₂ m₃ -m₁) = (-1)^(j₁+j₂+j₃) (j₁ j₂ j₃; m₁ m₂ -m₃)`.
 
@@ -256,7 +256,7 @@ lemma threeJ_negCycle (j₁ j₂ j₃ : ℕ) (x y z : ℤ) :
     threeJ j₂ j₃ j₁ (-y) z (-x) = (-1) ^ ((j₁ + j₂ + j₃) / 2) * threeJ j₁ j₂ j₃ x y (-z)
 ```
 
-**`PhyslibAlpha.Sl2.sixJSym_swap₁₂`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L311).
+**`PhyslibAlpha.Sl2.sixJSym_swap₁₂`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L311).
 
 > Exchange of the first two columns: `{j₂ j₁ j₃; j₅ j₄ j₆} = {j₁ j₂ j₃; j₄ j₅ j₆}`.
 
@@ -264,7 +264,7 @@ lemma threeJ_negCycle (j₁ j₂ j₃ : ℕ) (x y z : ℤ) :
 lemma sixJSym_swap₁₂ : sixJSym j₂ j₁ j₃ j₅ j₄ j₆ = sixJSym j₁ j₂ j₃ j₄ j₅ j₆
 ```
 
-**`PhyslibAlpha.Sl2.sixJSym_swap₂₃`**, a lemma, [line 336](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L336).
+**`PhyslibAlpha.Sl2.sixJSym_swap₂₃`**, a lemma, [line 336](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L336).
 
 > Exchange of the last two columns: `{j₁ j₃ j₂; j₄ j₆ j₅} = {j₁ j₂ j₃; j₄ j₅ j₆}`.
 
@@ -272,7 +272,7 @@ lemma sixJSym_swap₁₂ : sixJSym j₂ j₁ j₃ j₅ j₄ j₆ = sixJSym j₁ 
 lemma sixJSym_swap₂₃ : sixJSym j₁ j₃ j₂ j₄ j₆ j₅ = sixJSym j₁ j₂ j₃ j₄ j₅ j₆
 ```
 
-**`PhyslibAlpha.Sl2.sixJSym_flip₁₂`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L363).
+**`PhyslibAlpha.Sl2.sixJSym_flip₁₂`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L363).
 
 > Exchange of upper and lower arguments in the first two columns:
 > `{j₄ j₅ j₃; j₁ j₂ j₆} = {j₁ j₂ j₃; j₄ j₅ j₆}`.
@@ -281,7 +281,7 @@ lemma sixJSym_swap₂₃ : sixJSym j₁ j₃ j₂ j₄ j₆ j₅ = sixJSym j₁ 
 lemma sixJSym_flip₁₂ : sixJSym j₄ j₅ j₃ j₁ j₂ j₆ = sixJSym j₁ j₂ j₃ j₄ j₅ j₆
 ```
 
-**`PhyslibAlpha.Sl2.sixJSymEdge`**, a def, [line 388](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L388).
+**`PhyslibAlpha.Sl2.sixJSymEdge`**, a def, [line 388](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L388).
 
 > The 6j symbol as a function of the edge labels of the tetrahedron whose vertices are the four
 > triads `0 = (j₁ j₂ j₃)`, `1 = (j₁ j₅ j₆)`, `2 = (j₄ j₂ j₆)`, `3 = (j₄ j₅ j₃)`.
@@ -290,21 +290,21 @@ lemma sixJSym_flip₁₂ : sixJSym j₄ j₅ j₃ j₁ j₂ j₆ = sixJSym j₁ 
 def sixJSymEdge (j : Sym2 (Fin 4) → ℕ) : ℝ
 ```
 
-**`PhyslibAlpha.Sl2.sixJSymEdge_comp_map_swap₁₂`**, a lemma, [line 391](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L391).
+**`PhyslibAlpha.Sl2.sixJSymEdge_comp_map_swap₁₂`**, a lemma, [line 391](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L391).
 
 ```lean
 lemma sixJSymEdge_comp_map_swap₁₂ (j : Sym2 (Fin 4) → ℕ) :
     sixJSymEdge (j ∘ Sym2.map (Equiv.swap 1 2)) = sixJSymEdge j
 ```
 
-**`PhyslibAlpha.Sl2.sixJSymEdge_comp_map_swap₂₃`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L402).
+**`PhyslibAlpha.Sl2.sixJSymEdge_comp_map_swap₂₃`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L402).
 
 ```lean
 lemma sixJSymEdge_comp_map_swap₂₃ (j : Sym2 (Fin 4) → ℕ) :
     sixJSymEdge (j ∘ Sym2.map (Equiv.swap 2 3)) = sixJSymEdge j
 ```
 
-**`PhyslibAlpha.Sl2.sixJSymEdge_comp_map_flip`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L413).
+**`PhyslibAlpha.Sl2.sixJSymEdge_comp_map_flip`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L413).
 
 ```lean
 lemma sixJSymEdge_comp_map_flip (j : Sym2 (Fin 4) → ℕ) :
@@ -312,7 +312,7 @@ lemma sixJSymEdge_comp_map_flip (j : Sym2 (Fin 4) → ℕ) :
       sixJSymEdge j
 ```
 
-**`PhyslibAlpha.Sl2.sixJSymEdge_comp_map_mul`**, a lemma, [line 431](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L431).
+**`PhyslibAlpha.Sl2.sixJSymEdge_comp_map_mul`**, a lemma, [line 431](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L431).
 
 ```lean
 lemma sixJSymEdge_comp_map_mul {σ τ : Equiv.Perm (Fin 4)}
@@ -321,7 +321,7 @@ lemma sixJSymEdge_comp_map_mul {σ τ : Equiv.Perm (Fin 4)}
     sixJSymEdge (j ∘ Sym2.map (σ * τ : Equiv.Perm (Fin 4))) = sixJSymEdge j
 ```
 
-**`PhyslibAlpha.Sl2.sixJSymEdge_comp_map`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L439).
+**`PhyslibAlpha.Sl2.sixJSymEdge_comp_map`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L439).
 
 > **Tetrahedral symmetry.** The 6j symbol is invariant under every permutation of the four
 > triads.
@@ -331,7 +331,7 @@ lemma sixJSymEdge_comp_map (σ : Equiv.Perm (Fin 4)) (j : Sym2 (Fin 4) → ℕ) 
     sixJSymEdge (j ∘ Sym2.map σ) = sixJSymEdge j
 ```
 
-**`PhyslibAlpha.Sl2.sym2_map_perm_injective`**, a lemma, [line 475](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L475).
+**`PhyslibAlpha.Sl2.sym2_map_perm_injective`**, a lemma, [line 475](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L475).
 
 > The permutations of the triads act faithfully on the edges, so the symmetries of
 > `sixJSymEdge_comp_map` are 24 distinct permutations of the arguments.
@@ -343,7 +343,7 @@ lemma sym2_map_perm_injective :
 
 ## D. The 6j symbols of `SixJ` as sums over four 3j symbols
 
-**`PhyslibAlpha.Sl2.link_congr`**, a lemma, [line 493](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L493).
+**`PhyslibAlpha.Sl2.link_congr`**, a lemma, [line 493](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L493).
 
 ```lean
 lemma link_congr {S : ℤ} {p₁ p₂ p₃ p₄ q₁ q₂ q₃ q₄ r : ℕ} {A B C T₁ T₂ T₃ T₄ : ℝ}
@@ -356,7 +356,7 @@ lemma link_congr {S : ℤ} {p₁ p₂ p₃ p₄ q₁ q₂ q₃ q₄ r : ℕ} {A 
         ((-1) ^ q₁ * T₁ * ((-1) ^ q₄ * T₄) * ((-1) ^ q₃ * T₃) * ((-1) ^ q₂ * T₂)))
 ```
 
-**`PhyslibAlpha.Sl2.tripleForm_normVec_stateB`**, a lemma, [line 521](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L521).
+**`PhyslibAlpha.Sl2.tripleForm_normVec_stateB`**, a lemma, [line 521](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L521).
 
 ```lean
 lemma tripleForm_normVec_stateB (hbc : 0 < b + c) (k₃ : Fin (min b c + 1)) (k₄ l : ℕ)
@@ -366,7 +366,7 @@ lemma tripleForm_normVec_stateB (hbc : 0 < b + c) (k₃ : Fin (min b c + 1)) (k�
         cgCoefficient a (b + c - 2 * (k₃ : ℕ)) k₄ l α ν * cgCoefficient b c k₃ ν β γ
 ```
 
-**`PhyslibAlpha.Sl2.recoupling_eq_sum`**, a lemma, [line 547](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L547).
+**`PhyslibAlpha.Sl2.recoupling_eq_sum`**, a lemma, [line 547](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L547).
 
 > The recoupling coefficient as a sum over products of four Clebsch–Gordan coefficients.
 
@@ -383,7 +383,7 @@ lemma recoupling_eq_sum (hab : 0 < a + b) (hbc : 0 < b + c) (K l : ℕ) (k₁ : 
                   cgCoefficient b c k₃ ν β γ
 ```
 
-**`PhyslibAlpha.Sl2.cg_four_eq`**, a lemma, [line 571](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L571).
+**`PhyslibAlpha.Sl2.cg_four_eq`**, a lemma, [line 571](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L571).
 
 > One summand of `recoupling_eq_sum` is a summand of `sixJSym`.
 
@@ -402,7 +402,7 @@ lemma cg_four_eq {a b c e f g k₁ k₂ k₃ k₄ l μ γ α β ν : ℕ}
             (c : ℤ) - 2 * γ, (g : ℤ) - 2 * l, (f : ℤ) - 2 * ν]
 ```
 
-**`PhyslibAlpha.Sl2.sum_sixJTerm_eq`**, a lemma, [line 600](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L600).
+**`PhyslibAlpha.Sl2.sum_sixJTerm_eq`**, a lemma, [line 600](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L600).
 
 > The sum of `sixJTerm` over the six projections, written through `jᵢ - 2·index`.
 
@@ -415,7 +415,7 @@ lemma sum_sixJTerm_eq (a b c e f g : ℕ) :
         (f : ℤ) - 2 * x.2.2.2.2.2] = sixJSym a b e c g f
 ```
 
-**`PhyslibAlpha.Sl2.sixJ_eq_sixJSym`**, a lemma, [line 647](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L647).
+**`PhyslibAlpha.Sl2.sixJ_eq_sixJSym`**, a lemma, [line 647](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean#L647).
 
 > **The 6j symbols of `SixJ` are the symmetric sums over four 3j symbols.** With
 > `j₁₂ = (a + b)/2 - k₁`, `j₂₃ = (b + c)/2 - k₃` and `J = (a + b + c)/2 - K`,
@@ -436,4 +436,4 @@ lemma sixJ_eq_sixJSym (hab : 0 < a + b) (hbc : 0 < b + c) (ha : 0 < a) (hc : 0 <
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean)
+- [PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Vector states
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.State.Vector`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.State.Vector`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean): 5 declarations, 5 with a docstring.
 
 > A unit vector `ψ` defines the vector state `x ↦ ⟪ψ, x ψ⟫` on the bounded operators.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.State.Vector`, [Physli
 
 ## A. Vector states
 
-**`PositiveLinearMap.ofVec`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean#L64).
+**`PositiveLinearMap.ofVec`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean#L64).
 
 > The vector functional associated with `ψ`.
 
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.State.Vector`, [Physli
 def _root_.PositiveLinearMap.ofVec (ψ : H) : 𝓟[𝕜, H →L[𝕜] H]
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.ofVec`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean#L72).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.ofVec`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean#L72).
 
 > The vector state associated with a unit vector.
 
@@ -48,7 +48,7 @@ def _root_.PositiveLinearMap.ofVec (ψ : H) : 𝓟[𝕜, H →L[𝕜] H]
 def UnitalPositiveLinearMap.ofVec {ψ : H} (h : ‖ψ‖ = 1) : 𝓢[𝕜, H →L[𝕜] H]
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.ofVec_apply`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.ofVec_apply`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean#L77).
 
 > Evaluation of a vector state is the corresponding quadratic form.
 
@@ -59,7 +59,7 @@ lemma UnitalPositiveLinearMap.ofVec_apply {ψ : H} (h : ‖ψ‖ = 1) (x : H →
 
 ## B. Phase invariance
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.ofVec_smul`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean#L87).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.ofVec_smul`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean#L87).
 
 > Vector states do not see a global phase: `ofVec (c • ψ) = ofVec ψ` for `‖c‖ = 1`.
 
@@ -69,7 +69,7 @@ lemma UnitalPositiveLinearMap.ofVec_smul {ψ : H} (h : ‖ψ‖ = 1) {c : 𝕜} 
     UnitalPositiveLinearMap.ofVec (𝕜 := 𝕜) h' = UnitalPositiveLinearMap.ofVec (𝕜 := 𝕜) h
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.norm_inner_lt_one_of_ofVec_ne`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean#L97).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.norm_inner_lt_one_of_ofVec_ne`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean#L97).
 
 > Unit vectors with different vector states are not parallel: `‖⟪ψ, φ⟫‖ < 1`.
 
@@ -86,4 +86,4 @@ lemma UnitalPositiveLinearMap.norm_inner_lt_one_of_ofVec_ne {ψ φ : H} (hψ : �
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean)

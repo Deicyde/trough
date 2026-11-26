@@ -8,12 +8,12 @@ proof: formalized
 
 # Variational gradient
 
-The module `Physlib.Mathematics.VariationalCalculus.HasVarGradient`, [Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean): 7 declarations, 2 with a docstring.
+The module `Physlib.Mathematics.VariationalCalculus.HasVarGradient`, [Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean): 7 declarations, 2 with a docstring.
 
 > Definition of variational gradient that allows for formal treatment of variational calculus
 > as used in physics textbooks.
 
-**`HasVarGradientAt`**, an inductive, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean#L64).
+**`HasVarGradientAt`**, an inductive, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean#L64).
 
 > Function `grad` is variational gradient of functional `S` at point `u`.
 >
@@ -59,7 +59,7 @@ inductive HasVarGradientAt (F : (X → U) → (X → ℝ)) (grad : X → U) (u :
   | intro (F') (hF' : HasVarAdjDerivAt F F' u) (hgrad : grad = F' (fun _ => 1))
 ```
 
-**`HasVarGradientAt.add`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean#L67).
+**`HasVarGradientAt.add`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean#L67).
 
 ```lean
 lemma HasVarGradientAt.add (F F' : (X → U) → (X → ℝ))
@@ -69,7 +69,7 @@ lemma HasVarGradientAt.add (F F' : (X → U) → (X → ℝ))
     HasVarGradientAt (F + F') (grad + grad') u
 ```
 
-**`HasVarGradientAt.sum`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean#L80).
+**`HasVarGradientAt.sum`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean#L80).
 
 ```lean
 lemma HasVarGradientAt.sum {ι : Type} [Fintype ι] (F : ι → (X → U) → (X → ℝ))
@@ -79,7 +79,7 @@ lemma HasVarGradientAt.sum {ι : Type} [Fintype ι] (F : ι → (X → U) → (X
     HasVarGradientAt (fun v x => ∑ i, F i v x) (∑ i, grad i) u
 ```
 
-**`HasVarGradientAt.neg`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean#L111).
+**`HasVarGradientAt.neg`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean#L111).
 
 ```lean
 lemma HasVarGradientAt.neg {F : (X → U) → (X → ℝ)}
@@ -88,7 +88,7 @@ lemma HasVarGradientAt.neg {F : (X → U) → (X → ℝ)}
     HasVarGradientAt (-F) (-grad) u
 ```
 
-**`varGradient`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean#L135).
+**`varGradient`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean#L135).
 
 > The variational gradient of a function `F : (X → U) → (X → ℝ)` evaluated
 > at a function `u : X → U`.
@@ -105,7 +105,7 @@ lemma HasVarGradientAt.neg {F : (X → U) → (X → ℝ)}
 noncomputable def varGradient (F : (X → U) → (X → ℝ)) (u : X → U) : X → U
 ```
 
-**`HasVarGradientAt.unique`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean#L156).
+**`HasVarGradientAt.unique`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean#L156).
 
 ```lean
 lemma unique
@@ -114,7 +114,7 @@ lemma unique
     grad = grad'
 ```
 
-**`HasVarGradientAt.varGradient`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean#L165).
+**`HasVarGradientAt.varGradient`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean#L165).
 
 ```lean
 protected lemma varGradient
@@ -129,4 +129,4 @@ protected lemma varGradient
 
 ## Sources
 
-- [Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean)
+- [Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean)

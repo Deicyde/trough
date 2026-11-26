@@ -8,7 +8,7 @@ proof: formalized
 
 # The kinetic term (TemperedDistributional/Dynamics/KineticTerm)
 
-The module `Physlib.Electromagnetism.TemperedDistributional.Dynamics.KineticTerm`, [Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean): 6 declarations, 1 with a docstring.
+The module `Physlib.Electromagnetism.TemperedDistributional.Dynamics.KineticTerm`, [Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean): 6 declarations, 1 with a docstring.
 
 ## i. Overview
 
@@ -35,7 +35,7 @@ The module `Physlib.Electromagnetism.TemperedDistributional.Dynamics.KineticTerm
 > For distributions we define the gradient of the kinetic term directly
 > using `ElectromagneticPotential.gradKineticTerm_eq_sum_sum` as the defining formula.
 
-**`Electromagnetism.TempDistElectromagneticPotential.gradKineticTerm`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean#L64).
+**`Electromagnetism.TempDistElectromagneticPotential.gradKineticTerm`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean#L64).
 
 > The gradient of the kinetic term for an Electromagnetic potential which
 > is a distribution.
@@ -45,7 +45,7 @@ noncomputable def gradKineticTerm {d} (𝓕 : FreeSpace) :
     TempDistElectromagneticPotential d →ₗ[ℝ] (SpaceTime d) →d[ℝ] Lorentz.Vector d
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.gradKineticTerm_eq_sum_sum`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean#L95).
+**`Electromagnetism.TempDistElectromagneticPotential.gradKineticTerm_eq_sum_sum`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean#L95).
 
 ```lean
 lemma gradKineticTerm_eq_sum_sum {d} {𝓕 : FreeSpace}
@@ -55,7 +55,7 @@ lemma gradKineticTerm_eq_sum_sum {d} {𝓕 : FreeSpace}
         distDeriv μ (distDeriv ν A) ε μ)) • Lorentz.Vector.basis ν
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.gradKineticTerm_eq_fieldStrength`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean#L101).
+**`Electromagnetism.TempDistElectromagneticPotential.gradKineticTerm_eq_fieldStrength`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean#L101).
 
 ```lean
 lemma gradKineticTerm_eq_fieldStrength {d} {𝓕 : FreeSpace} (A : TempDistElectromagneticPotential d)
@@ -65,7 +65,7 @@ lemma gradKineticTerm_eq_fieldStrength {d} {𝓕 : FreeSpace} (A : TempDistElect
       (distDeriv μ (A.fieldStrength) ε) (μ, ν))) • Lorentz.Vector.basis ν
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.gradKineticTerm_sum_inl_eq`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean#L122).
+**`Electromagnetism.TempDistElectromagneticPotential.gradKineticTerm_sum_inl_eq`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean#L122).
 
 ```lean
 lemma gradKineticTerm_sum_inl_eq {d} {𝓕 : FreeSpace}
@@ -74,7 +74,7 @@ lemma gradKineticTerm_sum_inl_eq {d} {𝓕 : FreeSpace}
    (tempDistTimeSlice 𝓕.c).symm (Space.distSpaceDiv (A.electricField 𝓕.c)) ε)
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.gradKineticTerm_sum_inr_eq`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean#L143).
+**`Electromagnetism.TempDistElectromagneticPotential.gradKineticTerm_sum_inr_eq`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean#L143).
 
 ```lean
 lemma gradKineticTerm_sum_inr_eq {d} {𝓕 : FreeSpace}
@@ -89,7 +89,7 @@ lemma gradKineticTerm_sum_inr_eq {d} {𝓕 : FreeSpace}
 
 ### A.1. The gradient of the kinetic term as a tensor
 
-**`Electromagnetism.TempDistElectromagneticPotential.gradKineticTerm_eq_distTensorDeriv`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean#L177).
+**`Electromagnetism.TempDistElectromagneticPotential.gradKineticTerm_eq_distTensorDeriv`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean#L177).
 
 ```lean
 lemma gradKineticTerm_eq_distTensorDeriv {d} {𝓕 : FreeSpace}
@@ -107,4 +107,4 @@ lemma gradKineticTerm_eq_distTensorDeriv {d} {𝓕 : FreeSpace}
 
 ## Sources
 
-- [Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean)
+- [Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean)

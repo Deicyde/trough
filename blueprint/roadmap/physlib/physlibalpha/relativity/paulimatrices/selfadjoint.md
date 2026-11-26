@@ -8,7 +8,7 @@ proof: formalized
 
 # The covariant Pauli matrices as plain matrices
 
-The module `PhyslibAlpha.Relativity.PauliMatrices.SelfAdjoint`, [PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.Relativity.PauliMatrices.SelfAdjoint`, [PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean): 4 declarations, 4 with a docstring.
 
 > The Pauli matrices with the vector index lowered, and their completeness relation.
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.Relativity.PauliMatrices.SelfAdjoint`, [PhyslibAlpha/Re
 
 ## A. The covariant Pauli matrices as plain matrices
 
-**`PauliMatrix.pauliLower`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean#L59).
+**`PauliMatrix.pauliLower`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean#L59).
 
 > The Pauli matrices with the vector index lowered by the Minkowski metric,
 > `σ_μ = η_{μμ} σ^μ`, as plain matrices: the underlying matrices of `pauliSelfAdjoint'`.
@@ -46,7 +46,7 @@ The module `PhyslibAlpha.Relativity.PauliMatrices.SelfAdjoint`, [PhyslibAlpha/Re
 def pauliLower (μ : Fin 1 ⊕ Fin 3) : Matrix (Fin 2) (Fin 2) ℂ
 ```
 
-**`PauliMatrix.pauliBasis'_coe`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean#L62).
+**`PauliMatrix.pauliBasis'_coe`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean#L62).
 
 > The covariant Pauli matrices are the underlying matrices of the basis `pauliBasis'`.
 
@@ -54,7 +54,7 @@ def pauliLower (μ : Fin 1 ⊕ Fin 3) : Matrix (Fin 2) (Fin 2) ℂ
 lemma pauliBasis'_coe (μ : Fin 1 ⊕ Fin 3) : (pauliBasis' μ).1 = pauliLower μ
 ```
 
-**`PauliMatrix.pauliLower_eq_smul`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean#L66).
+**`PauliMatrix.pauliLower_eq_smul`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean#L66).
 
 > Lowering the vector index multiplies by the diagonal entry of the metric.
 
@@ -63,7 +63,7 @@ lemma pauliLower_eq_smul (μ : Fin 1 ⊕ Fin 3) :
     pauliLower μ = ((minkowskiMatrixZ μ μ : ℤ) : ℂ) • pauliMatrix μ
 ```
 
-**`PauliMatrix.sum_pauliLower_mul_pauliLower`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean#L72).
+**`PauliMatrix.sum_pauliLower_mul_pauliLower`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean#L72).
 
 > The Fierz completeness relation: the covariant Pauli matrices span the `2 × 2` matrices,
 > with the trace pairing as the duality and normalisation `2`.
@@ -81,4 +81,4 @@ lemma sum_pauliLower_mul_pauliLower (α α' β β' : Fin 2) :
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean)
+- [PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean)

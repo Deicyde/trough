@@ -8,7 +8,7 @@ proof: formalized
 
 # The gauge slice and the hypercharges of the doublet components
 
-The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.GaugeSlice`, [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean): 14 declarations, 9 with a docstring.
+The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.GaugeSlice`, [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean): 14 declarations, 9 with a docstring.
 
 > The gauge slice of 2HDM configurations and the gauge-torus phases acting on it.
 
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.GaugeSlice`, [P
 
 ## A. The slice configuration
 
-**`TwoHiggsDoublet.sliceHiggs`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L71).
+**`TwoHiggsDoublet.sliceHiggs`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L71).
 
 > The gauge slice configuration `⟨(0, z), (w₁, w₀)⟩`. It specialises to `repHiggs`
 > when the components take their real "canonical frame" values.
@@ -52,31 +52,31 @@ The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.GaugeSlice`, [P
 def sliceHiggs (z w0 w1 : ℂ) : TwoHiggsDoublet
 ```
 
-**`TwoHiggsDoublet.sliceHiggs_Φ1`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L75).
+**`TwoHiggsDoublet.sliceHiggs_Φ1`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L75).
 
 ```lean
 lemma sliceHiggs_Φ1 (z w0 w1 : ℂ) : (sliceHiggs z w0 w1).Φ1 = !₂[0, z]
 ```
 
-**`TwoHiggsDoublet.sliceHiggs_Φ2`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L76).
+**`TwoHiggsDoublet.sliceHiggs_Φ2`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L76).
 
 ```lean
 lemma sliceHiggs_Φ2 (z w0 w1 : ℂ) : (sliceHiggs z w0 w1).Φ2 = !₂[w1, w0]
 ```
 
-**`TwoHiggsDoublet.real_smul_fst`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L78).
+**`TwoHiggsDoublet.real_smul_fst`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L78).
 
 ```lean
 lemma real_smul_fst (c : ℝ) (H : TwoHiggsDoublet) : (c • H).Φ1 = c • H.Φ1
 ```
 
-**`TwoHiggsDoublet.real_smul_snd`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L79).
+**`TwoHiggsDoublet.real_smul_snd`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L79).
 
 ```lean
 lemma real_smul_snd (c : ℝ) (H : TwoHiggsDoublet) : (c • H).Φ2 = c • H.Φ2
 ```
 
-**`TwoHiggsDoublet.sliceR`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L83).
+**`TwoHiggsDoublet.sliceR`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L83).
 
 > The slice as a real-linear map from the six real field parameters
 > `(Re Φ1₁, Im Φ1₁, Re Φ2₁, Im Φ2₁, Re Φ2₀, Im Φ2₀)`.
@@ -85,7 +85,7 @@ lemma real_smul_snd (c : ℝ) (H : TwoHiggsDoublet) : (c • H).Φ2 = c • H.Φ
 def sliceR : (Fin 6 → ℝ) →ₗ[ℝ] TwoHiggsDoublet
 ```
 
-**`TwoHiggsDoublet.sliceR_apply`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L97).
+**`TwoHiggsDoublet.sliceR_apply`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L97).
 
 ```lean
 lemma sliceR_apply (a : Fin 6 → ℝ) :
@@ -93,7 +93,7 @@ lemma sliceR_apply (a : Fin 6 → ℝ) :
       (↑(a 4) + Complex.I * ↑(a 5))
 ```
 
-**`TwoHiggsDoublet.repHiggs_eq_sliceHiggs`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L102).
+**`TwoHiggsDoublet.repHiggs_eq_sliceHiggs`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L102).
 
 > The representative family is the real slice.
 
@@ -104,7 +104,7 @@ lemma repHiggs_eq_sliceHiggs (X : Fin 4 → ℝ) :
 
 ## B. Hypercharge action on the slice
 
-**`TwoHiggsDoublet.gaugeCartan_smul_sliceHiggs`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L113).
+**`TwoHiggsDoublet.gaugeCartan_smul_sliceHiggs`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L113).
 
 > Hypercharge action of the Cartan phase `diag(ā, a)` on the slice: it multiplies the components
 > along `Φ1` by `a` and the charged component by `ā`.
@@ -115,7 +115,7 @@ lemma gaugeCartan_smul_sliceHiggs (a : unitary ℂ) (z w0 w1 : ℂ) :
       = sliceHiggs ((a : ℂ) * z) ((a : ℂ) * w0) ((star a : ℂ) * w1)
 ```
 
-**`TwoHiggsDoublet.electromagnetismU1_smul_sliceHiggs`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L126).
+**`TwoHiggsDoublet.electromagnetismU1_smul_sliceHiggs`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L126).
 
 > Hypercharge action of the residual electromagnetic `U(1)` on the slice: it multiplies the
 > charged component by `c⁶` and leaves the components along `Φ1` fixed.
@@ -128,7 +128,7 @@ lemma electromagnetismU1_smul_sliceHiggs (c : unitary ℂ) (z w0 w1 : ℂ) :
 
 ## C. Gauge action on the real parameters
 
-**`TwoHiggsDoublet.cartanRotParam`**, a def, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L146).
+**`TwoHiggsDoublet.cartanRotParam`**, a def, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L146).
 
 > The Cartan hypercharge phase `u`, transported to a rotation of the six real field parameters:
 > it phases the first-component pairs by `u` and the perpendicular pair by `ū`.
@@ -137,7 +137,7 @@ lemma electromagnetismU1_smul_sliceHiggs (c : unitary ℂ) (z w0 w1 : ℂ) :
 def cartanRotParam (u : unitary ℂ) (a : Fin 6 → ℝ) : Fin 6 → ℝ
 ```
 
-**`TwoHiggsDoublet.gaugeCartan_smul_sliceR`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L152).
+**`TwoHiggsDoublet.gaugeCartan_smul_sliceR`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L152).
 
 > Acting by the Cartan phase on a slice configuration is the same as rotating its parameters.
 
@@ -146,7 +146,7 @@ lemma gaugeCartan_smul_sliceR (u : unitary ℂ) (a : Fin 6 → ℝ) :
     GaugeGroupI.gaugeCartan (star u) • sliceR a = sliceR (cartanRotParam u a)
 ```
 
-**`TwoHiggsDoublet.resRotParam`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L162).
+**`TwoHiggsDoublet.resRotParam`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L162).
 
 > The residual `U(1)` phase `c`, transported to a rotation of the perpendicular parameter pair.
 
@@ -154,7 +154,7 @@ lemma gaugeCartan_smul_sliceR (u : unitary ℂ) (a : Fin 6 → ℝ) :
 def resRotParam (c : unitary ℂ) (a : Fin 6 → ℝ) : Fin 6 → ℝ
 ```
 
-**`TwoHiggsDoublet.electromagnetismU1_smul_sliceR`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L167).
+**`TwoHiggsDoublet.electromagnetismU1_smul_sliceR`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean#L167).
 
 > Acting by the residual `U(1)` on a slice configuration rotates only the perpendicular pair.
 
@@ -171,4 +171,4 @@ lemma electromagnetismU1_smul_sliceR (c : unitary ℂ) (a : Fin 6 → ℝ) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean)
+- [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean)

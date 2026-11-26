@@ -8,7 +8,7 @@ proof: formalized
 
 # The integral of the identity is self-adjoint
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.SpectralIntegral.SpecTheorem`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean): 46 declarations, 9 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.SpectralIntegral.SpecTheorem`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean): 46 declarations, 9 with a docstring.
 
 > The integral of the identity against a spectral measure on `ℝ` is self-adjoint.
 
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.SpectralInte
 > multiplier.  This is the measure-level statement that turns bounded resolvents into vectors in the
 > maximal square-moment domain.
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.diagonalMeasure_boundedIntegral_eq_withDensity`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L70).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.diagonalMeasure_boundedIntegral_eq_withDensity`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L70).
 
 ```lean
 lemma diagonalMeasure_boundedIntegral_eq_withDensity
@@ -52,7 +52,7 @@ lemma diagonalMeasure_boundedIntegral_eq_withDensity
         (fun a => ENNReal.ofReal (‖g a‖ ^ 2))
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral_mem_spectralSquareMomentDomain`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L110).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral_mem_spectralSquareMomentDomain`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L110).
 
 ```lean
 lemma expIntegral_mem_spectralSquareMomentDomain
@@ -61,7 +61,7 @@ lemma expIntegral_mem_spectralSquareMomentDomain
     expIntegral μS t x ∈ spectralSquareMomentDomain μS
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedMultiplier_mem_spectralSquareMomentDomain`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L129).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedMultiplier_mem_spectralSquareMomentDomain`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L129).
 
 ```lean
 lemma boundedMultiplier_mem_spectralSquareMomentDomain
@@ -77,7 +77,7 @@ lemma boundedMultiplier_mem_spectralSquareMomentDomain
 > resolvent API usable at arbitrary non-real parameters without weakening any of the existing
 > callers.
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedMultiplier_mem_spectralSquareMomentDomain_of_bound`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L161).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedMultiplier_mem_spectralSquareMomentDomain_of_bound`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L161).
 
 ```lean
 lemma boundedMultiplier_mem_spectralSquareMomentDomain_of_bound
@@ -88,7 +88,7 @@ lemma boundedMultiplier_mem_spectralSquareMomentDomain_of_bound
     boundedIntegral μS g hg hgb x ∈ spectralSquareMomentDomain μS
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_apply_boundedMultiplier`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L189).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_apply_boundedMultiplier`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L189).
 
 ```lean
 lemma maximalSpectralIntegral_apply_boundedMultiplier
@@ -104,7 +104,7 @@ lemma maximalSpectralIntegral_apply_boundedMultiplier
         ⟨1, hcoord⟩ x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_apply_boundedMultiplier_of_bound`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L254).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_apply_boundedMultiplier_of_bound`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L254).
 
 ```lean
 lemma maximalSpectralIntegral_apply_boundedMultiplier_of_bound
@@ -129,7 +129,7 @@ lemma maximalSpectralIntegral_apply_boundedMultiplier_of_bound
 > construction is independent of any pre-existing self-adjoint operator; it is purely the real PVM
 > calculus applied to the scalar functions `(r ± i)⁻¹`.
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.plusResolventMultiplier`**, a def, [line 333](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L333).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.plusResolventMultiplier`**, a def, [line 333](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L333).
 
 > The scalar multiplier `r ↦ (r + i)⁻¹`.
 
@@ -137,7 +137,7 @@ lemma maximalSpectralIntegral_apply_boundedMultiplier_of_bound
 def plusResolventMultiplier (r : ℝ) : ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.minusResolventMultiplier`**, a def, [line 336](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L336).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.minusResolventMultiplier`**, a def, [line 336](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L336).
 
 > The scalar multiplier `r ↦ (r - i)⁻¹`.
 
@@ -145,7 +145,7 @@ def plusResolventMultiplier (r : ℝ) : ℂ
 def minusResolventMultiplier (r : ℝ) : ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.resolventMultiplier`**, a def, [line 339](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L339).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.resolventMultiplier`**, a def, [line 339](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L339).
 
 > The scalar resolvent multiplier at an arbitrary non-real parameter.
 
@@ -153,28 +153,28 @@ def minusResolventMultiplier (r : ℝ) : ℂ
 def resolventMultiplier (z : ℂ) (r : ℝ) : ℂ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.resolventMultiplier_measurable`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L341).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.resolventMultiplier_measurable`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L341).
 
 ```lean
 lemma resolventMultiplier_measurable (z : ℂ) :
     Measurable (resolventMultiplier z)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.resolventMultiplier_denom_ne_zero`**, a lemma, [line 346](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L346).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.resolventMultiplier_denom_ne_zero`**, a lemma, [line 346](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L346).
 
 ```lean
 lemma resolventMultiplier_denom_ne_zero {z : ℂ} (hz : z.im ≠ 0) (r : ℝ) :
     (r : ℂ) - z ≠ 0
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.resolventMultiplier_bounded`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L352).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.resolventMultiplier_bounded`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L352).
 
 ```lean
 lemma resolventMultiplier_bounded {z : ℂ} (hz : z.im ≠ 0) :
     ∃ C : ℝ, ∀ r, ‖resolventMultiplier z r‖ ≤ C
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.resolventMultiplier_coordinate_bounded`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L366).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.resolventMultiplier_coordinate_bounded`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L366).
 
 ```lean
 lemma resolventMultiplier_coordinate_bounded {z : ℂ} (hz : z.im ≠ 0) :
@@ -182,77 +182,77 @@ lemma resolventMultiplier_coordinate_bounded {z : ℂ} (hz : z.im ≠ 0) :
       ‖(r : ℂ) * resolventMultiplier z r‖ ≤ C
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.resolventMultiplier_coordinate_measurable`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L397).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.resolventMultiplier_coordinate_measurable`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L397).
 
 ```lean
 lemma resolventMultiplier_coordinate_measurable (z : ℂ) :
     Measurable (fun r : ℝ => (r : ℂ) * resolventMultiplier z r)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.resolventMultiplier_identity`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L402).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.resolventMultiplier_identity`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L402).
 
 ```lean
 lemma resolventMultiplier_identity {z : ℂ} (hz : z.im ≠ 0) (r : ℝ) :
     (r : ℂ) * resolventMultiplier z r - z * resolventMultiplier z r = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.plusResolventMultiplier_measurable`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L409).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.plusResolventMultiplier_measurable`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L409).
 
 ```lean
 lemma plusResolventMultiplier_measurable :
     Measurable plusResolventMultiplier
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.minusResolventMultiplier_measurable`**, a lemma, [line 414](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L414).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.minusResolventMultiplier_measurable`**, a lemma, [line 414](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L414).
 
 ```lean
 lemma minusResolventMultiplier_measurable :
     Measurable minusResolventMultiplier
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.plusResolventMultiplier_bounded`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L419).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.plusResolventMultiplier_bounded`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L419).
 
 ```lean
 lemma plusResolventMultiplier_bounded :
     ∃ C : ℝ, ∀ r, ‖plusResolventMultiplier r‖ ≤ C
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.minusResolventMultiplier_bounded`**, a lemma, [line 432](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L432).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.minusResolventMultiplier_bounded`**, a lemma, [line 432](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L432).
 
 ```lean
 lemma minusResolventMultiplier_bounded :
     ∃ C : ℝ, ∀ r, ‖minusResolventMultiplier r‖ ≤ C
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.plusResolventMultiplier_coordinate_bounded`**, a lemma, [line 445](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L445).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.plusResolventMultiplier_coordinate_bounded`**, a lemma, [line 445](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L445).
 
 ```lean
 lemma plusResolventMultiplier_coordinate_bounded :
     ∀ r : ℝ, ‖(r : ℂ) * plusResolventMultiplier r‖ ≤ 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.minusResolventMultiplier_coordinate_bounded`**, a lemma, [line 459](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L459).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.minusResolventMultiplier_coordinate_bounded`**, a lemma, [line 459](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L459).
 
 ```lean
 lemma minusResolventMultiplier_coordinate_bounded :
     ∀ r : ℝ, ‖(r : ℂ) * minusResolventMultiplier r‖ ≤ 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.plusResolventMultiplier_coordinate_measurable`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L473).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.plusResolventMultiplier_coordinate_measurable`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L473).
 
 ```lean
 lemma plusResolventMultiplier_coordinate_measurable :
     Measurable (fun r : ℝ => (r : ℂ) * plusResolventMultiplier r)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.minusResolventMultiplier_coordinate_measurable`**, a lemma, [line 478](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L478).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.minusResolventMultiplier_coordinate_measurable`**, a lemma, [line 478](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L478).
 
 ```lean
 lemma minusResolventMultiplier_coordinate_measurable :
     Measurable (fun r : ℝ => (r : ℂ) * minusResolventMultiplier r)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_shift_range_of_multiplier`**, a lemma, [line 483](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L483).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_shift_range_of_multiplier`**, a lemma, [line 483](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L483).
 
 ```lean
 lemma maximalSpectralIntegral_shift_range_of_multiplier
@@ -264,7 +264,7 @@ lemma maximalSpectralIntegral_shift_range_of_multiplier
     (maximalSpectralIntegral μS + c • (1 : H →ₗ.[ℂ] H)).toFun.range = ⊤
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_shift_range_of_multiplier_of_bound`**, a lemma, [line 539](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L539).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_shift_range_of_multiplier_of_bound`**, a lemma, [line 539](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L539).
 
 ```lean
 lemma maximalSpectralIntegral_shift_range_of_multiplier_of_bound
@@ -276,7 +276,7 @@ lemma maximalSpectralIntegral_shift_range_of_multiplier_of_bound
     (maximalSpectralIntegral μS + c • (1 : H →ₗ.[ℂ] H)).toFun.range = ⊤
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_resolvent_range`**, a lemma, [line 601](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L601).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_resolvent_range`**, a lemma, [line 601](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L601).
 
 > Every non-real shift of the canonical spectral integral is onto.  This is the concrete range
 > form of the resolvent theorem, proved directly from the bounded scalar multiplier
@@ -287,7 +287,7 @@ lemma maximalSpectralIntegral_resolvent_range {z : ℂ} (hz : z.im ≠ 0) :
     (maximalSpectralIntegral μS - z • (1 : H →ₗ.[ℂ] H)).toFun.range = ⊤
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_resolvent_inverse_apply`**, a lemma, [line 623](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L623).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_resolvent_inverse_apply`**, a lemma, [line 623](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L623).
 
 > The value of the inverse of a general non-real shift is the corresponding bounded spectral
 > multiplier.  This is the operator-level resolvent formula, including its domain proof.
@@ -302,14 +302,14 @@ lemma maximalSpectralIntegral_resolvent_inverse_apply {z : ℂ} (hz : z.im ≠ 0
         (resolventMultiplier_bounded hz) x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_plus_resolvent_range`**, a lemma, [line 728](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L728).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_plus_resolvent_range`**, a lemma, [line 728](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L728).
 
 ```lean
 lemma maximalSpectralIntegral_plus_resolvent_range :
     (maximalSpectralIntegral μS + Complex.I • (1 : H →ₗ.[ℂ] H)).toFun.range = ⊤
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_minus_resolvent_range`**, a lemma, [line 748](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L748).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_minus_resolvent_range`**, a lemma, [line 748](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L748).
 
 ```lean
 lemma maximalSpectralIntegral_minus_resolvent_range :
@@ -328,7 +328,7 @@ lemma maximalSpectralIntegral_minus_resolvent_range :
 > unbounded-operator hierarchy, and they are exactly what the Cayley adapter needs when converting
 > between a self-adjoint operator and its bounded unitary transform.
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_plus_resolvent_inverse_apply`**, a lemma, [line 790](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L790).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_plus_resolvent_inverse_apply`**, a lemma, [line 790](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L790).
 
 ```lean
 lemma maximalSpectralIntegral_plus_resolvent_inverse_apply (x : H) :
@@ -340,7 +340,7 @@ lemma maximalSpectralIntegral_plus_resolvent_inverse_apply (x : H) :
         plusResolventMultiplier_bounded x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_minus_resolvent_inverse_apply`**, a lemma, [line 900](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L900).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_minus_resolvent_inverse_apply`**, a lemma, [line 900](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L900).
 
 ```lean
 lemma maximalSpectralIntegral_minus_resolvent_inverse_apply (x : H) :
@@ -358,14 +358,14 @@ lemma maximalSpectralIntegral_minus_resolvent_inverse_apply (x : H) :
 > keeping separate from the abstract range criterion: this theorem is the point at which a real PVM
 > itself produces a self-adjoint (closed) unbounded operator, with no prior operator or domain datum.
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_isSelfAdjoint`**, a lemma, [line 1011](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1011).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_isSelfAdjoint`**, a lemma, [line 1011](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1011).
 
 ```lean
 lemma maximalSpectralIntegral_isSelfAdjoint (μS : WOTSpectralMeasure ℝ H) :
     IsSelfAdjoint (maximalSpectralIntegral μS)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_sub_smul_surjective`**, a lemma, [line 1020](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1020).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_sub_smul_surjective`**, a lemma, [line 1020](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1020).
 
 > The canonical maximal realization has a surjective shifted operator at every non-real
 > spectral parameter.  The preceding explicit `± Complex.I` calculations establish
@@ -378,7 +378,7 @@ lemma maximalSpectralIntegral_sub_smul_surjective
       (maximalSpectralIntegral μS - z • (1 : H →ₗ.[ℂ] H)).toFun
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_mem_resolventSet`**, a lemma, [line 1031](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1031).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_mem_resolventSet`**, a lemma, [line 1031](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1031).
 
 > Every non-real point belongs to the resolvent set of the canonical maximal spectral
 > integral.  This is the public `resolventSet` form of the preceding range theorem and the
@@ -391,7 +391,7 @@ lemma maximalSpectralIntegral_mem_resolventSet
     z ∈ LinearPMap.resolventSet (maximalSpectralIntegral μS)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_resolvent_apply`**, a lemma, [line 1040](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1040).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_resolvent_apply`**, a lemma, [line 1040](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1040).
 
 > Resolvent notation for the canonical spectral integral is exactly the bounded spectral
 > multiplier `λ ↦ (λ - z)⁻¹`.  The subtype in the left-hand side is the canonical full-domain
@@ -407,21 +407,21 @@ lemma maximalSpectralIntegral_resolvent_apply {z : ℂ} (hz : z.im ≠ 0) (x : H
         (resolventMultiplier_bounded hz) x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_closure_eq_self_adjoint`**, a lemma, [line 1049](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1049).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_closure_eq_self_adjoint`**, a lemma, [line 1049](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1049).
 
 ```lean
 lemma maximalSpectralIntegral_closure_eq_self_adjoint (μS : WOTSpectralMeasure ℝ H) :
     (maximalSpectralIntegral μS).closure = maximalSpectralIntegral μS
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_isEssentiallySelfAdjoint`**, a lemma, [line 1053](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1053).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_isEssentiallySelfAdjoint`**, a lemma, [line 1053](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1053).
 
 ```lean
 lemma maximalSpectralIntegral_isEssentiallySelfAdjoint (μS : WOTSpectralMeasure ℝ H) :
     (maximalSpectralIntegral μS).IsEssentiallySelfAdjoint
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_isSelfAdjoint`**, a lemma, [line 1059](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1059).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_isSelfAdjoint`**, a lemma, [line 1059](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1059).
 
 ```lean
 lemma measurableSpectralIntegral_isSelfAdjoint
@@ -429,7 +429,7 @@ lemma measurableSpectralIntegral_isSelfAdjoint
     _root_.IsSelfAdjoint (measurableSpectralIntegral μS f hf)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_closure_eq_self`**, a lemma, [line 1064](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1064).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_closure_eq_self`**, a lemma, [line 1064](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1064).
 
 ```lean
 lemma measurableSpectralIntegral_closure_eq_self
@@ -438,7 +438,7 @@ lemma measurableSpectralIntegral_closure_eq_self
       measurableSpectralIntegral μS f hf
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_isEssentiallySelfAdjoint`**, a lemma, [line 1070](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1070).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_isEssentiallySelfAdjoint`**, a lemma, [line 1070](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1070).
 
 ```lean
 lemma measurableSpectralIntegral_isEssentiallySelfAdjoint
@@ -446,7 +446,7 @@ lemma measurableSpectralIntegral_isEssentiallySelfAdjoint
     (measurableSpectralIntegral μS f hf).IsEssentiallySelfAdjoint
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_norm_sq`**, a lemma, [line 1075](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1075).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_norm_sq`**, a lemma, [line 1075](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1075).
 
 ```lean
 lemma measurableSpectralIntegral_norm_sq
@@ -457,7 +457,7 @@ lemma measurableSpectralIntegral_norm_sq
       ∫⁻ r, ENNReal.ofReal ((f r) ^ 2) ∂μS.diagonalMeasure x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_norm_sq_eq_integral`**, a lemma, [line 1092](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1092).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.measurableSpectralIntegral_norm_sq_eq_integral`**, a lemma, [line 1092](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1092).
 
 ```lean
 lemma measurableSpectralIntegral_norm_sq_eq_integral
@@ -472,7 +472,7 @@ lemma measurableSpectralIntegral_norm_sq_eq_integral
 > A self-adjoint operator resolved by a spectral measure is the integral of the identity on its
 > maximal domain.
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_eq_of_isSelfAdjoint_of_isWeakSpectralResolution`**, a lemma, [line 1115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1115).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.maximalSpectralIntegral_eq_of_isSelfAdjoint_of_isWeakSpectralResolution`**, a lemma, [line 1115](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1115).
 
 ```lean
 lemma maximalSpectralIntegral_eq_of_isSelfAdjoint_of_isWeakSpectralResolution
@@ -483,7 +483,7 @@ lemma maximalSpectralIntegral_eq_of_isSelfAdjoint_of_isWeakSpectralResolution
     maximalSpectralIntegral μS = T
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.domainAwareSelfAdjointSpectralTheorem_of_isWeakSpectralResolution`**, a lemma, [line 1183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1183).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.domainAwareSelfAdjointSpectralTheorem_of_isWeakSpectralResolution`**, a lemma, [line 1183](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1183).
 
 > **A spectral resolution determines the domain.** If `μ` resolves the self-adjoint operator `T`
 > and the domain of `T` has finite second moments, then the domain of `T` is exactly the set of
@@ -504,14 +504,14 @@ lemma domainAwareSelfAdjointSpectralTheorem_of_isWeakSpectralResolution
 > theorem: its operator domain is the square-moment domain of its PVM.  Exposing this equality as a
 > method keeps later Cayley and representation proofs from reconstructing the same argument.
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.maximal_eq`**, a lemma, [line 1222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1222).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.maximal_eq`**, a lemma, [line 1222](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1222).
 
 ```lean
 lemma maximal_eq (D : DomainAwareSelfAdjointSpectralTheorem T μS) :
     maximalSpectralIntegral μS = T
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.SelfAdjointSpectralTheorem.maximal_eq_of_domain_inclusion`**, a lemma, [line 1239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1239).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.SelfAdjointSpectralTheorem.maximal_eq_of_domain_inclusion`**, a lemma, [line 1239](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean#L1239).
 
 ```lean
 lemma maximal_eq_of_domain_inclusion
@@ -527,4 +527,4 @@ lemma maximal_eq_of_domain_inclusion
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean)

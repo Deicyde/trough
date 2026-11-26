@@ -1,8 +1,8 @@
 # WaveVectorSpace
 
-The folder [Physlib/SpaceAndTime/WaveVectorSpace/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/WaveVectorSpace): 4 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [Physlib/SpaceAndTime/WaveVectorSpace/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/WaveVectorSpace): 4 modules, an article each, in path order with Basic.lean first in its folder.
 
-The repository's API map for this folder, *Wavevector space* ([Physlib/SpaceAndTime/WaveVectorSpace/API-map.md](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/WaveVectorSpace/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
+The repository's API map for this folder, *Wavevector space* ([Physlib/SpaceAndTime/WaveVectorSpace/API-map.md](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/WaveVectorSpace/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
 
 *Content (Alpha)*
 
@@ -20,7 +20,7 @@ The repository's API map for this folder, *Wavevector space* ([Physlib/SpaceAndT
 >
 > ### Fourier transforms
 >
-> The Fourier transform takes a suitably nice function of space to a function of wavevector, resolving its spatial dependence into plane-wave components; the inverse Fourier transform reconstructs the spatial function from those components. [\[8\]](fourier.md) …
+> The Fourier transform (FT) takes a suitably nice function of space to a function of wavevector, resolving its spatial dependence into plane-wave components; the inverse Fourier transform (IFT) reconstructs the spatial function from those components. [\[8\]](fourier.md) Under suitable regularity and integrability assumptions, the FT maps derivatives with respect to space to multiplication by wavevector and *vice versa* [\[9\]](fourier.md) , the FT and IFT are in fact left and right inverses with a consistent choice of normalization \[10\] , and the FT and IFT are continuously differentiable [\[11\]](fourier.md) .
 
 Its references:
 
@@ -30,6 +30,6 @@ Its references:
 - [Duality of `Space` and `WaveVectorSpace`](dualpairing.md)
 - [Fourier transforms between `Space` and `WaveVectorSpace`](fourier.md)
 
-Modules in [Derivatives/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/WaveVectorSpace/Derivatives):
+Modules in [Derivatives/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/WaveVectorSpace/Derivatives):
 
 - [Derivatives on `WaveVectorSpace`](derivatives-basic.md)

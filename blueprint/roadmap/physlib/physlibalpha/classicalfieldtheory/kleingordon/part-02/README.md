@@ -4,7 +4,7 @@ navigation: transparent
 
 # The causal propagator kernel to A Schwartz bound for the…
 
-Modules in [Covariance/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance):
+Modules in [Covariance/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance):
 
 - [The causal propagator kernel](covariance-causalkernel.md)
 - [Poincaré covariance for distributional sources](covariance-distributions.md)
@@ -12,7 +12,7 @@ Modules in [Covariance/](https://github.com/leanprover-community/physlib/tree/8c
 - [Poincaré covariance of the Klein–Gordon Green operators](covariance-operators.md)
 - [The solution space as a Poincaré representation](covariance-solutionspace.md)
 
-Modules in [DimensionRaising/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising):
+Modules in [DimensionRaising/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising):
 
 - [Descent from `d + k` to `d` space dimensions](dimensionraising-descent.md)
 - [Smooth radial lifts](dimensionraising-radiallift.md)
@@ -21,7 +21,7 @@ Modules in [DimensionRaising/](https://github.com/leanprover-community/physlib/t
 - [Dimension raising for the sine evolution](dimensionraising-sineevolution.md)
 - [Splitting off two space dimensions](dimensionraising-spacesplit.md)
 
-Modules in [RetardedKernel/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel):
+Modules in [RetardedKernel/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel):
 
 - [The retarded kernel as a boundary value in the spacetime Fourier variables](retardedkernel-boundaryvalue.md)
 - [The retarded solution as a convolution with the retarded kernel](retardedkernel-convolution.md)

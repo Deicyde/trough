@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
  "modules": [
   {
    "file": "Physlib/ProbabilisticTheory/Basic.lean",
@@ -621,6 +621,214 @@
    "private": 0,
    "aliases": 0,
    "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/Classical/Basic.lean",
+   "module": "Physlib.ProbabilisticTheory.Classical.Basic",
+   "title": "Classical probabilistic theories",
+   "doc": "In a classical system every observable has a definite value in each configuration.\n\n## i. Overview\n\nAn observable of a classical system with configurations `X` is a bounded real function on `X`.\nA closed algebra `S` of bounded functions fixes which functions count as observables. On a\nmeasurable space these are the bounded measurable functions.\n\nThe observables in `S` form the probabilistic theory `classical S`. Observables add, multiply and\ncompare value by value. Their algebra is commutative, which is characteristic of classical\nsystems.\n\n## ii. Key results\n\n- `ProbabilisticTheory.classical` : the classical theory of a closed algebra of bounded functions.\n- `ProbabilisticTheory.Classical.instFunLike` : the value of an observable in a configuration.\n- `ProbabilisticTheory.Classical.le_def` : observables are ordered by their values.\n\n## iii. Table of contents\n\n- A. The classical theory\n- B. Values of observables\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 47,
+     "text": "## A. The classical theory"
+    },
+    {
+     "line": 62,
+     "text": "## B. Values of observables"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory.classical",
+     "kind": "def",
+     "line": 51,
+     "doc": "The classical theory whose observables are the real functions in a closed algebra `S` of\nbounded functions.",
+     "statement": "noncomputable def classical {X : Type*} (S : StarSubalgebra ℂ (lp (fun _ : X ↦ ℂ) ∞))\n    [IsClosed (S : Set (lp (fun _ : X ↦ ℂ) ∞))] : ProbabilisticTheory",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Classical.toSelfAdjoint",
+     "kind": "def",
+     "line": 65,
+     "doc": "An observable as a real function in `S`.",
+     "statement": "def toSelfAdjoint : Observables (classical S) ≃ selfAdjoint S",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 69,
+     "doc": "Observables multiply value by value.",
+     "statement": "noncomputable instance : CommRing (Observables (classical S))",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Classical.instFunLike",
+     "kind": "instance",
+     "line": 76,
+     "doc": "The value of an observable in a configuration.",
+     "statement": "noncomputable instance instFunLike : FunLike (Observables (classical S)) X ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Classical.ofReal_apply",
+     "kind": "lemma",
+     "line": 85,
+     "doc": "The function of an observable takes real values.",
+     "statement": "lemma ofReal_apply (f : Observables (classical S)) (x : X) :\n    (f x : ℂ) = ((toSelfAdjoint f).1 : lp (fun _ : X ↦ ℂ) ∞) x",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Classical.zero_apply",
+     "kind": "lemma",
+     "line": 89,
+     "doc": "",
+     "statement": "lemma zero_apply (x : X) : (0 : Observables (classical S)) x = 0",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Classical.one_apply",
+     "kind": "lemma",
+     "line": 91,
+     "doc": "",
+     "statement": "lemma one_apply (x : X) : (1 : Observables (classical S)) x = 1",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Classical.add_apply",
+     "kind": "lemma",
+     "line": 93,
+     "doc": "",
+     "statement": "lemma add_apply (f g : Observables (classical S)) (x : X) : (f + g) x = f x + g x",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Classical.sub_apply",
+     "kind": "lemma",
+     "line": 95,
+     "doc": "",
+     "statement": "lemma sub_apply (f g : Observables (classical S)) (x : X) : (f - g) x = f x - g x",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Classical.smul_apply",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "",
+     "statement": "lemma smul_apply (c : ℝ) (f : Observables (classical S)) (x : X) :\n    (c • f) x = c * f x",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Classical.mul_apply",
+     "kind": "lemma",
+     "line": 102,
+     "doc": "The product of two observables multiplies their values.",
+     "statement": "lemma mul_apply (f g : Observables (classical S)) (x : X) : (f * g) x = f x * g x",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Classical.pow_apply",
+     "kind": "lemma",
+     "line": 106,
+     "doc": "",
+     "statement": "lemma pow_apply (f : Observables (classical S)) (n : ℕ) (x : X) :\n    (f ^ n) x = f x ^ n",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Classical.le_def",
+     "kind": "lemma",
+     "line": 111,
+     "doc": "Observables are ordered by their values.",
+     "statement": "lemma le_def {f g : Observables (classical S)} : f ≤ g ↔ ∀ x, f x ≤ g x",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Classical.sq_nonneg'",
+     "kind": "lemma",
+     "line": 115,
+     "doc": "The square of an observable is positive.",
+     "statement": "lemma sq_nonneg' (f : Observables (classical S)) : 0 ≤ f ^ 2",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/Classical/Dirac.lean",
+   "module": "Physlib.ProbabilisticTheory.Classical.Dirac",
+   "title": "Dirac states",
+   "doc": "A classical system in a definite configuration is in a pure state.\n\n## i. Overview\n\nThe Dirac state at a configuration `x` assigns to each observable its value at `x`. It describes\na classical system whose configuration is known exactly, so every observable has vanishing\nvariance. Conversely, a state in which every observable has vanishing variance around its value\nat `x` is the Dirac state at `x`. Dirac states are therefore pure.\n\n## ii. Key results\n\n- `ProbabilisticTheory.Classical.dirac` : the Dirac state at a configuration.\n- `ProbabilisticTheory.Classical.eq_dirac_iff` : the Dirac state is the state in which every\n  observable has a sharp value.\n- `ProbabilisticTheory.Classical.isPure_dirac` : Dirac states are pure.\n\n## iii. Table of contents\n\n- A. Dirac states\n- B. Sharp values\n- C. Purity\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 51,
+     "text": "## A. Dirac states"
+    },
+    {
+     "line": 70,
+     "text": "## B. Sharp values"
+    },
+    {
+     "line": 91,
+     "text": "## C. Purity"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory.Classical.eval",
+     "kind": "def",
+     "line": 55,
+     "doc": "Reading off the value of each quantity in the configuration `x`.",
+     "statement": "noncomputable def eval (x : X) : S →ₚ[ℂ] ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Classical.dirac",
+     "kind": "def",
+     "line": 63,
+     "doc": "The Dirac state at a configuration `x` evaluates observables at `x`.",
+     "statement": "noncomputable def dirac (x : X) : State (classical S)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Classical.dirac_apply",
+     "kind": "lemma",
+     "line": 68,
+     "doc": "The Dirac state at `x` assigns each observable its value at `x`.",
+     "statement": "lemma dirac_apply (x : X) (f : Observables (classical S)) : dirac S x f = f x",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Classical.sq_apply_le_apply_sq",
+     "kind": "lemma",
+     "line": 75,
+     "doc": "The square of the mean is at most the mean of the square.",
+     "statement": "lemma sq_apply_le_apply_sq (ω : State (classical S)) (f : Observables (classical S)) :\n    ω f ^ 2 ≤ ω (f ^ 2)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Classical.eq_dirac_iff",
+     "kind": "lemma",
+     "line": 85,
+     "doc": "The Dirac state at `x` is the state in which every observable has the sharp value it takes\nat `x`.",
+     "statement": "lemma eq_dirac_iff {ω : State (classical S)} {x : X} :\n    ω = dirac S x ↔ ∀ f, ω ((f - f x • 1) ^ 2) = 0",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Classical.isPure_dirac",
+     "kind": "lemma",
+     "line": 94,
+     "doc": "A classical system in a definite configuration is in a pure state.",
+     "statement": "lemma isPure_dirac (x : X) : (dirac S x).IsPure",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/ProbabilisticTheory/CStarAlgebra/Basic.lean",
@@ -1702,7 +1910,7 @@
      "text": "## C. The order\n\nA comparison `x ≤ y` means that `y - x` has a positive local description. This is a partial order:\nan observable cannot be both positive and negative unless it is zero. When inclusions reflect\norder, comparisons made within a subsystem agree with comparisons in the global system."
     },
     {
-     "line": 218,
+     "line": 219,
      "text": "## D. Global observables and local channels\n\nEvery global observable has a local representative bounded by a multiple of the local unit.\nThese bounds give the global unit its order-unit property. Order-reflecting inclusions also\ncarry the local Archimedean property to the global space. Each subsystem then maps into the\nglobal observable space by a channel."
     }
    ],
@@ -1776,13 +1984,13 @@
      "kind": "def",
      "line": 169,
      "doc": "The cone of positive global observables.",
-     "statement": "noncomputable def posCone : AddGroupCone N.Quasilocal",
+     "statement": "noncomputable def posCone : AddSubmonoid N.Quasilocal",
      "sorry": false
     },
     {
      "name": "",
      "kind": "instance",
-     "line": 176,
+     "line": 175,
      "doc": "The order on global observables induced by local positivity.",
      "statement": "noncomputable instance : PartialOrder N.Quasilocal",
      "sorry": false
@@ -1814,7 +2022,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 192,
+     "line": 193,
      "doc": "Nonnegative scaling preserves comparisons between global observables.",
      "statement": "instance : PosSMulMono ℝ N.Quasilocal",
      "sorry": false
@@ -1822,7 +2030,7 @@
     {
      "name": "ProbabilisticTheory.LocalNet.toQuasilocal_nonneg_iff",
      "kind": "lemma",
-     "line": 202,
+     "line": 203,
      "doc": "A local observable is positive globally exactly when it is positive locally.",
      "statement": "lemma toQuasilocal_nonneg_iff\n    (i : R) (a : (A i).Observables) : 0 ≤ toQuasilocal N i a ↔ 0 ≤ a",
      "sorry": false
@@ -1830,7 +2038,7 @@
     {
      "name": "ProbabilisticTheory.LocalNet.toQuasilocal_le_iff",
      "kind": "lemma",
-     "line": 213,
+     "line": 214,
      "doc": "A comparison of local observables has the same meaning globally.",
      "statement": "lemma toQuasilocal_le_iff\n    (i : R) (a b : (A i).Observables) :\n    toQuasilocal N i a ≤ toQuasilocal N i b ↔ a ≤ b",
      "sorry": false
@@ -1838,7 +2046,7 @@
     {
      "name": "ProbabilisticTheory.LocalNet.quasilocalTheory",
      "kind": "abbrev",
-     "line": 230,
+     "line": 231,
      "doc": "The quasilocal observables equipped with their Archimedean order and common unit.",
      "statement": "noncomputable abbrev quasilocalTheory (N : LocalNet R A) [N.IsOrderEmbedding] :\n    ProbabilisticTheory",
      "sorry": false
@@ -1846,7 +2054,7 @@
     {
      "name": "ProbabilisticTheory.LocalNet.toQuasilocalChannel",
      "kind": "def",
-     "line": 251,
+     "line": 252,
      "doc": "Regard a subsystem observable as a global observable by a channel.",
      "statement": "noncomputable def toQuasilocalChannel (N : LocalNet R A) [N.IsOrderEmbedding] (i : R) :\n    Channel (A i) N.quasilocalTheory",
      "sorry": false
@@ -1854,7 +2062,7 @@
     {
      "name": "ProbabilisticTheory.LocalNet.toQuasilocalChannel_apply",
      "kind": "lemma",
-     "line": 256,
+     "line": 257,
      "doc": "",
      "statement": "lemma toQuasilocalChannel_apply\n    (i : R) (a : (A i).Observables) :\n    toQuasilocalChannel N i a = toQuasilocal N i a",
      "sorry": false
@@ -2565,6 +2773,14 @@
      "line": 121,
      "doc": "A state is pure exactly when every genuine binary mixture producing it is trivial.",
      "statement": "lemma isPure_iff_forall_mix_eq {ω : P.State} :\n    ω.IsPure ↔ ∀ φ ψ t, 0 < t → t < 1 → mix φ ψ t = ω → φ = ω ∧ ψ = ω",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.State.apply_eq_zero_of_mix_eq",
+     "kind": "lemma",
+     "line": 128,
+     "doc": "A positive observable with vanishing expectation in a genuine mixture vanishes in both\ncomponents.",
+     "statement": "lemma apply_eq_zero_of_mix_eq {ω φ ψ : P.State} {t : unitInterval} (ht0 : 0 < t) (ht1 : t < 1)\n    (h : mix φ ψ t = ω) {A : P.Observables} (hA : 0 ≤ A) (hωA : ω A = 0) :\n    φ A = 0 ∧ ψ A = 0",
      "sorry": false
     }
    ],

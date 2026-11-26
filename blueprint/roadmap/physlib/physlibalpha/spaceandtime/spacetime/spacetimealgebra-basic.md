@@ -8,7 +8,7 @@ proof: formalized
 
 # Star, derivatives, truncation and the Euler operator on the jet ring
 
-The module `PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Basic`, [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean): 28 declarations, 20 with a docstring.
+The module `PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Basic`, [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean): 28 declarations, 20 with a docstring.
 
 > The further structure the jet ring of spacetime carries, beyond its ring structure.
 
@@ -58,7 +58,7 @@ The module `PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Basic`, [Physli
 > The star operation on the jet ring is coefficientwise complex conjugation, fixing
 > the formal variables. In particular the spacetime coordinates are self-adjoint.
 
-**`SpaceTimeAlgebra.starConjEquiv`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L90).
+**`SpaceTimeAlgebra.starConjEquiv`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L90).
 
 > **The real structure of the jet ring.** Coefficientwise conjugation is a `ℂ`-linear
 > equivalence from the conjugate module of the jet ring back to the jet ring itself. It is
@@ -73,21 +73,21 @@ The module `PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Basic`, [Physli
 noncomputable def starConjEquiv : ConjModule SpaceTimeAlgebra ≃ₗ[ℂ] SpaceTimeAlgebra
 ```
 
-**`SpaceTimeAlgebra.starConjEquiv_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L94).
+**`SpaceTimeAlgebra.starConjEquiv_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L94).
 
 ```lean
 lemma starConjEquiv_apply (f : ConjModule SpaceTimeAlgebra) :
     starConjEquiv f = star ((conjEquiv (k := ℂ) (M := SpaceTimeAlgebra)).symm f)
 ```
 
-**`SpaceTimeAlgebra.starConjEquiv_symm_apply`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L98).
+**`SpaceTimeAlgebra.starConjEquiv_symm_apply`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L98).
 
 ```lean
 lemma starConjEquiv_symm_apply (f : SpaceTimeAlgebra) :
     starConjEquiv.symm f = conjEquiv (k := ℂ) (M := SpaceTimeAlgebra) (star f)
 ```
 
-**`SpaceTimeAlgebra.coeff_single_one_mul`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L105).
+**`SpaceTimeAlgebra.coeff_single_one_mul`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L105).
 
 > The first-order Leibniz rule: the degree-one Taylor coefficient, in the
 > direction `μ`, of a product of jets. This is the coefficient-level statement
@@ -100,7 +100,7 @@ lemma coeff_single_one_mul (μ : Fin 1 ⊕ Fin 3) (f g : SpaceTimeAlgebra) :
         constantCoeff f * coeff (Finsupp.single μ 1) g
 ```
 
-**`SpaceTimeAlgebra.constantCoeffₗ`**, a def, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L119).
+**`SpaceTimeAlgebra.constantCoeffₗ`**, a def, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L119).
 
 > The constant-coefficient evaluation of a jet, as a `ℂ`-linear map.
 
@@ -108,7 +108,7 @@ lemma coeff_single_one_mul (μ : Fin 1 ⊕ Fin 3) (f g : SpaceTimeAlgebra) :
 noncomputable def constantCoeffₗ : SpaceTimeAlgebra →ₗ[ℂ] ℂ
 ```
 
-**`SpaceTimeAlgebra.constantCoeffₗ_apply`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L125).
+**`SpaceTimeAlgebra.constantCoeffₗ_apply`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L125).
 
 ```lean
 lemma constantCoeffₗ_apply (f : SpaceTimeAlgebra) : constantCoeffₗ f = constantCoeff f
@@ -116,7 +116,7 @@ lemma constantCoeffₗ_apply (f : SpaceTimeAlgebra) : constantCoeffₗ f = const
 
 ## B. The formal partial derivative
 
-**`SpaceTimeAlgebra.iteratedPDeriv_pderiv`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L134).
+**`SpaceTimeAlgebra.iteratedPDeriv_pderiv`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L134).
 
 > Iterated formal derivatives commute with a single formal partial derivative.
 
@@ -126,7 +126,7 @@ lemma iteratedPDeriv_pderiv (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin
     iteratedPDeriv s (pderiv μ f) = pderiv μ (iteratedPDeriv s f)
 ```
 
-**`SpaceTimeAlgebra.iteratedPDeriv_smul`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L144).
+**`SpaceTimeAlgebra.iteratedPDeriv_smul`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L144).
 
 > Iterated formal derivatives preserve complex scalar multiplication.
 
@@ -136,7 +136,7 @@ lemma iteratedPDeriv_smul (s : Multiset (Fin 1 ⊕ Fin 3)) (c : ℂ)
     iteratedPDeriv s (c • f) = c • iteratedPDeriv s f
 ```
 
-**`SpaceTimeAlgebra.iteratedPDeriv_neg`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L152).
+**`SpaceTimeAlgebra.iteratedPDeriv_neg`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L152).
 
 > Iterated formal derivatives commute with negation.
 
@@ -145,7 +145,7 @@ lemma iteratedPDeriv_neg (s : Multiset (Fin 1 ⊕ Fin 3)) (f : SpaceTimeAlgebra)
     iteratedPDeriv s (-f) = -iteratedPDeriv s f
 ```
 
-**`SpaceTimeAlgebra.iteratedPDeriv_zero_apply`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L160).
+**`SpaceTimeAlgebra.iteratedPDeriv_zero_apply`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L160).
 
 > The iterated formal derivative of the zero jet vanishes.
 
@@ -154,7 +154,7 @@ lemma iteratedPDeriv_zero_apply (s : Multiset (Fin 1 ⊕ Fin 3)) :
     iteratedPDeriv s (0 : SpaceTimeAlgebra) = 0
 ```
 
-**`SpaceTimeAlgebra.iteratedPDeriv_sum`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L167).
+**`SpaceTimeAlgebra.iteratedPDeriv_sum`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L167).
 
 > The iterated formal derivative of a finite sum.
 
@@ -165,7 +165,7 @@ lemma iteratedPDeriv_sum {κ : Type*} (s : Multiset (Fin 1 ⊕ Fin 3)) (t : Fins
       = ∑ k ∈ t, iteratedPDeriv s (f k)
 ```
 
-**`SpaceTimeAlgebra.iteratedPDeriv_C_of_ne_zero`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L179).
+**`SpaceTimeAlgebra.iteratedPDeriv_C_of_ne_zero`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L179).
 
 > The iterated derivative of a constant jet vanishes for a nonempty multiset of
 > directions.
@@ -177,7 +177,7 @@ lemma iteratedPDeriv_C_of_ne_zero {s : Multiset (Fin 1 ⊕ Fin 3)} (hs : s ≠ 0
 
 ## C. Truncation of jets
 
-**`SpaceTimeAlgebra.truncation`**, a def, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L192).
+**`SpaceTimeAlgebra.truncation`**, a def, [line 192](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L192).
 
 > The `n`-th truncation of a jet: the Taylor coefficients of total degree
 > greater than `n` are set to zero.
@@ -186,7 +186,7 @@ lemma iteratedPDeriv_C_of_ne_zero {s : Multiset (Fin 1 ⊕ Fin 3)} (hs : s ≠ 0
 noncomputable def truncation (n : ℕ) (f : SpaceTimeAlgebra) : SpaceTimeAlgebra
 ```
 
-**`SpaceTimeAlgebra.coeff_truncation_of_le`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L196).
+**`SpaceTimeAlgebra.coeff_truncation_of_le`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L196).
 
 ```lean
 lemma coeff_truncation_of_le {n : ℕ} {m : (Fin 1 ⊕ Fin 3) →₀ ℕ}
@@ -194,7 +194,7 @@ lemma coeff_truncation_of_le {n : ℕ} {m : (Fin 1 ⊕ Fin 3) →₀ ℕ}
     coeff m (truncation n f) = coeff m f
 ```
 
-**`SpaceTimeAlgebra.coeff_truncation_of_gt`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L201).
+**`SpaceTimeAlgebra.coeff_truncation_of_gt`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L201).
 
 ```lean
 lemma coeff_truncation_of_gt {n : ℕ} {m : (Fin 1 ⊕ Fin 3) →₀ ℕ}
@@ -202,20 +202,20 @@ lemma coeff_truncation_of_gt {n : ℕ} {m : (Fin 1 ⊕ Fin 3) →₀ ℕ}
     coeff m (truncation n f) = 0
 ```
 
-**`SpaceTimeAlgebra.truncation_add`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L205).
+**`SpaceTimeAlgebra.truncation_add`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L205).
 
 ```lean
 lemma truncation_add (n : ℕ) (f g : SpaceTimeAlgebra) :
     truncation n (f + g) = truncation n f + truncation n g
 ```
 
-**`SpaceTimeAlgebra.truncation_zero`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L215).
+**`SpaceTimeAlgebra.truncation_zero`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L215).
 
 ```lean
 lemma truncation_zero (n : ℕ) : truncation n (0 : SpaceTimeAlgebra) = 0
 ```
 
-**`SpaceTimeAlgebra.truncation_one`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L224).
+**`SpaceTimeAlgebra.truncation_one`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L224).
 
 > Truncation fixes the identity: a constant series has its only nonzero Taylor
 > coefficient in degree zero, which every truncation keeps.
@@ -224,7 +224,7 @@ lemma truncation_zero (n : ℕ) : truncation n (0 : SpaceTimeAlgebra) = 0
 lemma truncation_one (n : ℕ) : truncation n (1 : SpaceTimeAlgebra) = 1
 ```
 
-**`SpaceTimeAlgebra.truncation_eq_one_of_coeff`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L233).
+**`SpaceTimeAlgebra.truncation_eq_one_of_coeff`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L233).
 
 > A power series with value `1` and no coefficients in nonzero degree up to `n`
 > truncates to `1`.
@@ -237,7 +237,7 @@ lemma truncation_eq_one_of_coeff {n : ℕ} {f : SpaceTimeAlgebra} (h0 : constant
 
 ## D. The Euler operator
 
-**`SpaceTimeAlgebra.coeff_X_smul`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L253).
+**`SpaceTimeAlgebra.coeff_X_smul`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L253).
 
 > The Taylor coefficients of a jet multiplied by a formal coordinate: the
 > coefficient shifts down by one in that direction.
@@ -248,7 +248,7 @@ lemma coeff_X_smul (ρ : Fin 1 ⊕ Fin 3) (f : SpaceTimeAlgebra) (p : (Fin 1 ⊕
       if Finsupp.single ρ 1 ≤ p then coeff (p - Finsupp.single ρ 1) f else 0
 ```
 
-**`SpaceTimeAlgebra.coeff_sum_X_smul_pderiv`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L262).
+**`SpaceTimeAlgebra.coeff_sum_X_smul_pderiv`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L262).
 
 > The Euler (radial) operator acts on Taylor coefficients as multiplication by the
 > total degree.
@@ -259,7 +259,7 @@ lemma coeff_sum_X_smul_pderiv (f : SpaceTimeAlgebra) (p : (Fin 1 ⊕ Fin 3) →�
       ((Finsupp.degree p : ℕ) : ℂ) * coeff p f
 ```
 
-**`SpaceTimeAlgebra.eq_zero_of_sum_X_smul_pderiv_eq_zero`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L286).
+**`SpaceTimeAlgebra.eq_zero_of_sum_X_smul_pderiv_eq_zero`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L286).
 
 > The scalar vanishing principle for the Euler operator: a jet vanishing at the base
 > point that is killed by the Euler operator is zero.
@@ -274,7 +274,7 @@ lemma eq_zero_of_sum_X_smul_pderiv_eq_zero {f : SpaceTimeAlgebra} (h0 : constant
 > The graded form of `eq_zero_of_sum_X_smul_pderiv_eq_zero`: control of the first
 > derivatives below degree `n` controls the coefficients up to degree `n`.
 
-**`SpaceTimeAlgebra.coeff_mul_eq_zero_of_lt`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L308).
+**`SpaceTimeAlgebra.coeff_mul_eq_zero_of_lt`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L308).
 
 > A product with a factor whose coefficients vanish below degree `n` has coefficients
 > vanishing below degree `n`.
@@ -285,7 +285,7 @@ lemma coeff_mul_eq_zero_of_lt {n : ℕ} {w : SpaceTimeAlgebra}
     {q : (Fin 1 ⊕ Fin 3) →₀ ℕ} (hq : Finsupp.degree q < n) : coeff q (w * v) = 0
 ```
 
-**`SpaceTimeAlgebra.coeff_eq_zero_of_coeff_pderiv_eq_zero`**, a lemma, [line 323](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L323).
+**`SpaceTimeAlgebra.coeff_eq_zero_of_coeff_pderiv_eq_zero`**, a lemma, [line 323](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L323).
 
 > The Euler vanishing principle: a power series all of whose first derivatives have
 > coefficients vanishing below degree `n` has vanishing coefficients in every nonzero degree
@@ -299,7 +299,7 @@ lemma coeff_eq_zero_of_coeff_pderiv_eq_zero {n : ℕ} {f : SpaceTimeAlgebra}
     {p : (Fin 1 ⊕ Fin 3) →₀ ℕ} (hp : p ≠ 0) (hpn : Finsupp.degree p ≤ n) : coeff p f = 0
 ```
 
-**`SpaceTimeAlgebra.coeff_eq_zero_of_pderiv_eq_mul`**, a lemma, [line 345](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L345).
+**`SpaceTimeAlgebra.coeff_eq_zero_of_pderiv_eq_mul`**, a lemma, [line 345](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L345).
 
 > A power series satisfying a radial relation `∂_ρ f = x_ρ f`, with the `x_ρ` vanishing
 > below degree `n`, has no coefficients in nonzero degree up to `n`.
@@ -313,14 +313,14 @@ lemma coeff_eq_zero_of_pderiv_eq_mul {n : ℕ} {f : SpaceTimeAlgebra}
     {p : (Fin 1 ⊕ Fin 3) →₀ ℕ} (hp : p ≠ 0) (hpn : Finsupp.degree p ≤ n) : coeff p f = 0
 ```
 
-**`SpaceTimeAlgebra.C_real_smul`**, a lemma, [line 354](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L354).
+**`SpaceTimeAlgebra.C_real_smul`**, a lemma, [line 354](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L354).
 
 ```lean
 lemma C_real_smul (r : ℝ) (x : ℂ) :
     (MvPowerSeries.C (r • x) : SpaceTimeAlgebra) = r • MvPowerSeries.C x
 ```
 
-**`SpaceTimeAlgebra.constantCoeff_real_smul`**, a lemma, [line 359](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L359).
+**`SpaceTimeAlgebra.constantCoeff_real_smul`**, a lemma, [line 359](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L359).
 
 > The constant coefficient commutes with real scalars.
 
@@ -329,7 +329,7 @@ lemma constantCoeff_real_smul (r : ℝ) (f : SpaceTimeAlgebra) :
     MvPowerSeries.constantCoeff (r • f) = r • MvPowerSeries.constantCoeff f
 ```
 
-**`SpaceTimeAlgebra.pderiv_real_smul`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L364).
+**`SpaceTimeAlgebra.pderiv_real_smul`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean#L364).
 
 > The formal derivatives commute with real scalars.
 
@@ -345,4 +345,4 @@ lemma pderiv_real_smul (μ : Fin 1 ⊕ Fin 3) (r : ℝ) (f : SpaceTimeAlgebra) :
 
 ## Sources
 
-- [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean)
+- [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean)

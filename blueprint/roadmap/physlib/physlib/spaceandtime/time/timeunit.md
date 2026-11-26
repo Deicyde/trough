@@ -8,7 +8,7 @@ proof: formalized
 
 # Units on time
 
-The module `Physlib.SpaceAndTime.Time.TimeUnit`, [Physlib/SpaceAndTime/Time/TimeUnit.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean): 22 declarations (1 instance with no name), 13 with a docstring.
+The module `Physlib.SpaceAndTime.Time.TimeUnit`, [Physlib/SpaceAndTime/Time/TimeUnit.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean): 22 declarations (1 instance with no name), 13 with a docstring.
 
 > A unit of time corresponds to a choice of translationally-invariant
 > metric on the time manifold. Such a choice is (non-canonically) equivalent to a
@@ -25,7 +25,7 @@ The module `Physlib.SpaceAndTime.Time.TimeUnit`, [Physlib/SpaceAndTime/Time/Time
 > a given time unit, and then construct all other time units from it. We choose to state the
 > existence of the time unit of seconds, and construct all other time units from that.
 
-**`TimeUnit`**, a structure, [line 36](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L36).
+**`TimeUnit`**, a structure, [line 36](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L36).
 
 > The choices of translationally-invariant metrics on the time manifold.
 > Such a choice corresponds to a choice of units for time.
@@ -37,7 +37,7 @@ structure TimeUnit : Type where
   property : 0 < val
 ```
 
-**An instance with no name**, [line 41](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L41).
+**An instance with no name**, [line 41](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L41).
 
 ```lean
 instance : PositiveRealUnitCore TimeUnit
@@ -51,7 +51,7 @@ instance : PositiveRealUnitCore TimeUnit
 > on the time manifold and the positive reals.
 > From this choice of second, we can define other length units by scaling second.
 
-**`TimeUnit.seconds`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L66).
+**`TimeUnit.seconds`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L66).
 
 > The definition of a time unit of seconds.
 
@@ -59,7 +59,7 @@ instance : PositiveRealUnitCore TimeUnit
 def seconds : TimeUnit
 ```
 
-**`TimeUnit.femtoseconds`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L69).
+**`TimeUnit.femtoseconds`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L69).
 
 > The time unit of femtoseconds (10⁻¹⁵ of a second).
 
@@ -67,7 +67,7 @@ def seconds : TimeUnit
 noncomputable def femtoseconds : TimeUnit
 ```
 
-**`TimeUnit.picoseconds`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L72).
+**`TimeUnit.picoseconds`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L72).
 
 > The time unit of picoseconds (10⁻¹² of a second).
 
@@ -75,7 +75,7 @@ noncomputable def femtoseconds : TimeUnit
 noncomputable def picoseconds : TimeUnit
 ```
 
-**`TimeUnit.nanoseconds`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L75).
+**`TimeUnit.nanoseconds`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L75).
 
 > The time unit of nanoseconds (10⁻⁹ of a second).
 
@@ -83,7 +83,7 @@ noncomputable def picoseconds : TimeUnit
 noncomputable def nanoseconds : TimeUnit
 ```
 
-**`TimeUnit.microseconds`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L78).
+**`TimeUnit.microseconds`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L78).
 
 > The time unit of microseconds (10⁻⁶ of a second).
 
@@ -91,7 +91,7 @@ noncomputable def nanoseconds : TimeUnit
 noncomputable def microseconds : TimeUnit
 ```
 
-**`TimeUnit.milliseconds`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L81).
+**`TimeUnit.milliseconds`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L81).
 
 > The time unit of milliseconds (10⁻³ of a second).
 
@@ -99,7 +99,7 @@ noncomputable def microseconds : TimeUnit
 noncomputable def milliseconds : TimeUnit
 ```
 
-**`TimeUnit.centiseconds`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L84).
+**`TimeUnit.centiseconds`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L84).
 
 > The time unit of centiseconds (10⁻² of a second).
 
@@ -107,7 +107,7 @@ noncomputable def milliseconds : TimeUnit
 noncomputable def centiseconds : TimeUnit
 ```
 
-**`TimeUnit.deciseconds`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L87).
+**`TimeUnit.deciseconds`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L87).
 
 > The time unit of deciseconds (10⁻¹ of a second).
 
@@ -115,7 +115,7 @@ noncomputable def centiseconds : TimeUnit
 noncomputable def deciseconds : TimeUnit
 ```
 
-**`TimeUnit.minutes`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L90).
+**`TimeUnit.minutes`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L90).
 
 > The time unit of minutes.
 
@@ -123,7 +123,7 @@ noncomputable def deciseconds : TimeUnit
 noncomputable def minutes : TimeUnit
 ```
 
-**`TimeUnit.hours`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L93).
+**`TimeUnit.hours`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L93).
 
 > The time unit of hours.
 
@@ -131,7 +131,7 @@ noncomputable def minutes : TimeUnit
 noncomputable def hours : TimeUnit
 ```
 
-**`TimeUnit.days`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L96).
+**`TimeUnit.days`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L96).
 
 > The time unit of 24 hour days.
 
@@ -139,7 +139,7 @@ noncomputable def hours : TimeUnit
 noncomputable def days : TimeUnit
 ```
 
-**`TimeUnit.weeks`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L99).
+**`TimeUnit.weeks`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L99).
 
 > The time unit of 7 day weeks.
 
@@ -149,49 +149,49 @@ noncomputable def weeks : TimeUnit
 
 ## Relations between time units
 
-**`TimeUnit.minutes_div_seconds`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L107).
+**`TimeUnit.minutes_div_seconds`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L107).
 
 ```lean
 lemma minutes_div_seconds : minutes / seconds = (60 : ℝ≥0)
 ```
 
-**`TimeUnit.hours_div_seconds`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L110).
+**`TimeUnit.hours_div_seconds`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L110).
 
 ```lean
 lemma hours_div_seconds : hours / seconds = (3600 : ℝ≥0)
 ```
 
-**`TimeUnit.days_div_seconds`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L113).
+**`TimeUnit.days_div_seconds`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L113).
 
 ```lean
 lemma days_div_seconds : days / seconds = (86400 : ℝ≥0)
 ```
 
-**`TimeUnit.weeks_div_seconds`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L116).
+**`TimeUnit.weeks_div_seconds`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L116).
 
 ```lean
 lemma weeks_div_seconds : weeks / seconds = (604800 : ℝ≥0)
 ```
 
-**`TimeUnit.days_div_minutes`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L119).
+**`TimeUnit.days_div_minutes`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L119).
 
 ```lean
 lemma days_div_minutes : days / minutes = (1440 : ℝ≥0)
 ```
 
-**`TimeUnit.weeks_div_minutes`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L125).
+**`TimeUnit.weeks_div_minutes`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L125).
 
 ```lean
 lemma weeks_div_minutes : weeks / minutes = (10080 : ℝ≥0)
 ```
 
-**`TimeUnit.days_div_hours`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L131).
+**`TimeUnit.days_div_hours`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L131).
 
 ```lean
 lemma days_div_hours : days / hours = (24 : ℝ≥0)
 ```
 
-**`TimeUnit.weeks_div_hours`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean#L137).
+**`TimeUnit.weeks_div_hours`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean#L137).
 
 ```lean
 lemma weeks_div_hours : weeks / hours = (168 : ℝ≥0)
@@ -203,4 +203,4 @@ lemma weeks_div_hours : weeks / hours = (168 : ℝ≥0)
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Time/TimeUnit.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Time/TimeUnit.lean)
+- [Physlib/SpaceAndTime/Time/TimeUnit.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/SpaceAndTime/Time/TimeUnit.lean)

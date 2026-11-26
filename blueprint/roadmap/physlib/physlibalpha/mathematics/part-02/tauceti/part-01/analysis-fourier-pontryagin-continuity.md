@@ -8,7 +8,7 @@ proof: formalized
 
 # Continuity of the Fourier–Stieltjes transform on a Pontryagin dual
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Fourier.Pontryagin.Continuity`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Continuity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Continuity.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Fourier.Pontryagin.Continuity`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Continuity.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Continuity.lean): 1 declaration, 1 with a docstring.
 
 > The Fourier–Stieltjes transform of a tight finite positive measure on the Pontryagin dual is
 > continuous on the original locally compact group.
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Fourier.Pontryagin.Continu
 
 ## A. Development
 
-**`MeasureTheory.FiniteMeasure.continuous_pontryaginMeasureTransform`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Continuity.lean#L57).
+**`MeasureTheory.FiniteMeasure.continuous_pontryaginMeasureTransform`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Continuity.lean#L57).
 
 > The transform of a tight finite measure on the Pontryagin dual is continuous. Tightness is
 > automatic for finite Radon measures and is the regularity needed when the dual is not metrizable.
@@ -53,4 +53,4 @@ lemma _root_.MeasureTheory.FiniteMeasure.continuous_pontryaginMeasureTransform
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Continuity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Continuity.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Continuity.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Continuity.lean)

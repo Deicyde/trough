@@ -8,7 +8,7 @@ proof: formalized
 
 # Symmetries of the quantum net
 
-The module `PhyslibAlpha.CondensedMatter.QuasiLocal.Symmetry`, [PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean): 19 declarations, 10 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.QuasiLocal.Symmetry`, [PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean): 19 declarations, 10 with a docstring.
 
 > A group acting on the sites acts on the operators of regions by `*`-isomorphisms, compatibly with
 > the inclusions.
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.CondensedMatter.QuasiLocal.Symmetry`, [PhyslibAlpha/Con
 
 ## A. Configurations of a moved region
 
-**`CondensedMatter.QuasiLocal.cfgEquiv`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L63).
+**`CondensedMatter.QuasiLocal.cfgEquiv`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L63).
 
 > A configuration of the region `γ • X` is a configuration of `X`: read it at `γ • x`.
 
@@ -44,7 +44,7 @@ def cfgEquiv (γ : Γ) (X : Finset S) : Cfg (fun _ : S => Ω₀) (γ • X) ≃ 
 
 ## B. The moved operators
 
-**`CondensedMatter.QuasiLocal.quantumIso`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L78).
+**`CondensedMatter.QuasiLocal.quantumIso`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L78).
 
 > The operator of `γ • X` that acts as `M` after moving the configurations back to `X`.
 
@@ -53,13 +53,13 @@ def quantumIso (γ : Γ) (X : Finset S) :
     Alg (fun _ : S => Ω₀) X →⋆ₐ[ℂ] Alg (fun _ : S => Ω₀) (γ • X)
 ```
 
-**`CondensedMatter.QuasiLocal.smul_mono`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L101).
+**`CondensedMatter.QuasiLocal.smul_mono`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L101).
 
 ```lean
 lemma smul_mono (γ : Γ) {X Y : Finset S} (h : X ≤ Y) : γ • X ≤ γ • Y
 ```
 
-**`CondensedMatter.QuasiLocal.restr_cfgEquiv`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L106).
+**`CondensedMatter.QuasiLocal.restr_cfgEquiv`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L106).
 
 ```lean
 lemma restr_cfgEquiv (γ : Γ) {X Y : Finset S} (h : X ≤ Y)
@@ -67,7 +67,7 @@ lemma restr_cfgEquiv (γ : Γ) {X Y : Finset S} (h : X ≤ Y)
     restr h (cfgEquiv Γ Ω₀ γ Y c) = cfgEquiv Γ Ω₀ γ X (restr (smul_mono γ h) c)
 ```
 
-**`CondensedMatter.QuasiLocal.agree_cfgEquiv`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L112).
+**`CondensedMatter.QuasiLocal.agree_cfgEquiv`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L112).
 
 ```lean
 lemma agree_cfgEquiv (γ : Γ) {X Y : Finset S} (h : X ≤ Y)
@@ -75,7 +75,7 @@ lemma agree_cfgEquiv (γ : Γ) {X Y : Finset S} (h : X ≤ Y)
     Agree h (cfgEquiv Γ Ω₀ γ Y c) (cfgEquiv Γ Ω₀ γ Y c') ↔ Agree (smul_mono γ h) c c'
 ```
 
-**`CondensedMatter.QuasiLocal.quantumIso_incl`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L127).
+**`CondensedMatter.QuasiLocal.quantumIso_incl`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L127).
 
 > **Naturality**: moving operators commutes with extending them by the identity.
 
@@ -86,7 +86,7 @@ lemma quantumIso_incl (γ : Γ) {X Y : Finset S} (h : X ≤ Y) (M : Alg (fun _ :
 
 ## C. The action on the quasi-local algebra
 
-**`CondensedMatter.QuasiLocal.cfgCast`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L140).
+**`CondensedMatter.QuasiLocal.cfgCast`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L140).
 
 > Transport of configurations along an equality of regions.
 
@@ -95,7 +95,7 @@ def cfgCast {X Y : Finset S} (e : X = Y) (c : Cfg (fun _ : S => Ω₀) Y) :
     Cfg (fun _ : S => Ω₀) X
 ```
 
-**`CondensedMatter.QuasiLocal.regionIso`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L145).
+**`CondensedMatter.QuasiLocal.regionIso`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L145).
 
 > Transport of operators along an equality of regions.
 
@@ -104,7 +104,7 @@ def regionIso {X Y : Finset S} (e : X = Y) :
     Alg (fun _ : S => Ω₀) X →⋆ₐ[ℂ] Alg (fun _ : S => Ω₀) Y
 ```
 
-**`CondensedMatter.QuasiLocal.regionIso_apply`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L150).
+**`CondensedMatter.QuasiLocal.regionIso_apply`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L150).
 
 ```lean
 lemma regionIso_apply {X Y : Finset S} (e : X = Y) (M : Alg (fun _ : S => Ω₀) X)
@@ -112,7 +112,7 @@ lemma regionIso_apply {X Y : Finset S} (e : X = Y) (M : Alg (fun _ : S => Ω₀)
     regionIso e M c c' = M (cfgCast e c) (cfgCast e c')
 ```
 
-**`CondensedMatter.QuasiLocal.uniformNet`**, an abbrev, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L156).
+**`CondensedMatter.QuasiLocal.uniformNet`**, an abbrev, [line 156](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L156).
 
 > The quantum net of a system whose sites all carry the same finite configuration space.
 
@@ -120,14 +120,14 @@ lemma regionIso_apply {X Y : Finset S} (e : X = Y) (M : Alg (fun _ : S => Ω₀)
 abbrev uniformNet (Ω₀ : Type*) [Fintype Ω₀] [DecidableEq Ω₀] : AlgebraNet S
 ```
 
-**`CondensedMatter.QuasiLocal.of_regionIso`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L159).
+**`CondensedMatter.QuasiLocal.of_regionIso`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L159).
 
 ```lean
 lemma of_regionIso {X Y : Finset S} (e : X = Y) (M : Alg (fun _ : S => Ω₀) X) :
     (uniformNet Ω₀).of Y (regionIso e M) = (uniformNet Ω₀).of X M
 ```
 
-**`CondensedMatter.QuasiLocal.symAct`**, a def, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L165).
+**`CondensedMatter.QuasiLocal.symAct`**, a def, [line 165](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L165).
 
 > **The action of a site symmetry on the quasi-local algebra**: an endomorphism that moves the
 > observables of a region `X` to those of `γ • X`.
@@ -137,14 +137,14 @@ def symAct (γ : Γ) :
     (uniformNet (S := S) Ω₀).Quasilocal →⋆ₐ[ℂ] (uniformNet (S := S) Ω₀).Quasilocal
 ```
 
-**`CondensedMatter.QuasiLocal.symAct_of`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L170).
+**`CondensedMatter.QuasiLocal.symAct_of`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L170).
 
 ```lean
 lemma symAct_of (γ : Γ) (X : Finset S) (M : Alg (fun _ : S => Ω₀) X) :
     symAct (Ω₀ := Ω₀) γ ((uniformNet Ω₀).of X M) = (uniformNet Ω₀).of (γ • X) (quantumIso γ X M)
 ```
 
-**`CondensedMatter.QuasiLocal.quantumIso_mul`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L174).
+**`CondensedMatter.QuasiLocal.quantumIso_mul`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L174).
 
 ```lean
 lemma quantumIso_mul (γ₁ γ₂ : Γ) (X : Finset S) (M : Alg (fun _ : S => Ω₀) X) :
@@ -152,14 +152,14 @@ lemma quantumIso_mul (γ₁ γ₂ : Γ) (X : Finset S) (M : Alg (fun _ : S => Ω
       quantumIso γ₁ (γ₂ • X) (quantumIso γ₂ X M)
 ```
 
-**`CondensedMatter.QuasiLocal.quantumIso_one`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L187).
+**`CondensedMatter.QuasiLocal.quantumIso_one`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L187).
 
 ```lean
 lemma quantumIso_one (X : Finset S) (M : Alg (fun _ : S => Ω₀) X) :
     regionIso (one_smul Γ X) (quantumIso (1 : Γ) X M) = M
 ```
 
-**`CondensedMatter.QuasiLocal.symAct_mul`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L199).
+**`CondensedMatter.QuasiLocal.symAct_mul`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L199).
 
 > The action of site symmetries is multiplicative.
 
@@ -168,13 +168,13 @@ lemma symAct_mul (γ₁ γ₂ : Γ) :
     symAct (Ω₀ := Ω₀) (S := S) (γ₁ * γ₂) = (symAct γ₁).comp (symAct γ₂)
 ```
 
-**`CondensedMatter.QuasiLocal.symAct_one`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L215).
+**`CondensedMatter.QuasiLocal.symAct_one`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L215).
 
 ```lean
 lemma symAct_one : symAct (Ω₀ := Ω₀) (S := S) (1 : Γ) = StarAlgHom.id ℂ _
 ```
 
-**`CondensedMatter.QuasiLocal.symEquiv`**, a def, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L225).
+**`CondensedMatter.QuasiLocal.symEquiv`**, a def, [line 225](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L225).
 
 > **A group acting on the sites acts on the quasi-local algebra by automorphisms.**
 
@@ -183,7 +183,7 @@ def symEquiv (γ : Γ) : (uniformNet (S := S) Ω₀).Quasilocal ≃⋆ₐ[ℂ]
     (uniformNet (S := S) Ω₀).Quasilocal
 ```
 
-**`CondensedMatter.QuasiLocal.symAction`**, a def, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L233).
+**`CondensedMatter.QuasiLocal.symAction`**, a def, [line 233](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean#L233).
 
 > **The symmetry action** of a group on the sites, as a homomorphism to the automorphisms of the
 > quasi-local algebra.
@@ -199,4 +199,4 @@ def symAction : Γ →* ((uniformNet (S := S) Ω₀).Quasilocal ≃⋆ₐ[ℂ]
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean)
+- [PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean)

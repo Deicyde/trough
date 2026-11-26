@@ -8,7 +8,7 @@ proof: formalized
 
 # The long chain limit of `C`
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.LongChainLimit`, [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.LongChainLimit`, [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean): 5 declarations, 5 with a docstring.
 
 ## i. Overview
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.LongC
 
 ## A. The limit of the closed form
 
-**`CondensedMatter.TightBindingChain.uncertaintyRatioSqForm`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean#L55).
+**`CondensedMatter.TightBindingChain.uncertaintyRatioSqForm`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean#L55).
 
 > The closed form of `C²` as a function of `n = N + 1`, written with `sinc`.
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.LongC
 noncomputable def uncertaintyRatioSqForm (n : ℝ) : ℝ
 ```
 
-**`CondensedMatter.TightBindingChain.tendsto_uncertaintyRatioSqForm`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean#L60).
+**`CondensedMatter.TightBindingChain.tendsto_uncertaintyRatioSqForm`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean#L60).
 
 > The closed form tends to `π² / 3 - 2` as `n → ∞`.
 
@@ -50,7 +50,7 @@ lemma tendsto_uncertaintyRatioSqForm :
     Tendsto uncertaintyRatioSqForm atTop (𝓝 (Real.pi ^ 2 / 3 - 2))
 ```
 
-**`CondensedMatter.TightBindingChain.uncertaintyRatio_sq_eq_uncertaintyRatioSqForm`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean#L79).
+**`CondensedMatter.TightBindingChain.uncertaintyRatio_sq_eq_uncertaintyRatioSqForm`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean#L79).
 
 > For `N ≥ 2`, `C²` is the closed form at `n = N + 1`.
 
@@ -62,7 +62,7 @@ lemma uncertaintyRatio_sq_eq_uncertaintyRatioSqForm (T : TightBindingChain) (ht 
 
 ## B. The limit of `C`
 
-**`CondensedMatter.TightBindingChain.tendsto_uncertaintyRatio`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean#L96).
+**`CondensedMatter.TightBindingChain.tendsto_uncertaintyRatio`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean#L96).
 
 > **The long chain limit.** Along any family of chains whose number of sites tends to infinity,
 > the constant `C` of the maximal current state tends to `√(π² / 3 - 2)`.
@@ -73,7 +73,7 @@ lemma tendsto_uncertaintyRatio {ι : Type*} {l : Filter ι} (T : ι → TightBin
     Tendsto (fun i => (T i).uncertaintyRatio) l (𝓝 √(Real.pi ^ 2 / 3 - 2))
 ```
 
-**`CondensedMatter.TightBindingChain.one_lt_sqrt_pi_sq_div_three_sub_two`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean#L108).
+**`CondensedMatter.TightBindingChain.one_lt_sqrt_pi_sq_div_three_sub_two`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean#L108).
 
 > The limit `√(π² / 3 - 2)` is strictly larger than one, since `π > 3`.
 
@@ -91,4 +91,4 @@ lemma one_lt_sqrt_pi_sq_div_three_sub_two : 1 < √(Real.pi ^ 2 / 3 - 2)
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean)

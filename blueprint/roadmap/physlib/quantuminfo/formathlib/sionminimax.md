@@ -8,16 +8,16 @@ proof: formalized
 
 # QuantumInfo.ForMathlib.SionMinimax
 
-The module `QuantumInfo.ForMathlib.SionMinimax`, [QuantumInfo/ForMathlib/SionMinimax.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean): 29 declarations, 2 with a docstring, 2 listed as significant; 3 private, not shown.
+The module `QuantumInfo.ForMathlib.SionMinimax`, [QuantumInfo/ForMathlib/SionMinimax.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean): 29 declarations, 2 with a docstring, 2 listed as significant; 3 private, not shown.
 
-**`Set.image2_flip`**, a lemma, [line 17](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L17).
+**`Set.image2_flip`**, a lemma, [line 17](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L17).
 
 ```lean
 lemma Set.image2_flip {α β γ : Type*} {f : α → β → γ} (s : Set α) (t : Set β) :
     image2 (flip f) t s = image2 f s t
 ```
 
-**`ciSup_ciInf_le_ciInf_ciSup`**, a theorem, [line 26](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L26). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`ciSup_ciInf_le_ciInf_ciSup`**, a theorem, [line 26](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L26). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > The **max-min theorem**. A version of `iSup_iInf_le_iInf_iSup` for conditionally complete lattices.
 
@@ -27,21 +27,21 @@ theorem ciSup_ciInf_le_ciInf_ciSup {ι': Type*} [Nonempty ι]
     ⨆ i, ⨅ j, f i j ≤ ⨅ j, ⨆ i, f i j
 ```
 
-**`BddAbove.range_max`**, a lemma, [line 31](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L31).
+**`BddAbove.range_max`**, a lemma, [line 31](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L31).
 
 ```lean
 lemma BddAbove.range_max (hf : BddAbove (Set.range f)) (hg : BddAbove (Set.range g)) :
     BddAbove (Set.range (max f g))
 ```
 
-**`BddBelow.range_min`**, a lemma, [line 42](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L42).
+**`BddBelow.range_min`**, a lemma, [line 42](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L42).
 
 ```lean
 lemma BddBelow.range_min (hf : BddBelow (Set.range f)) (hg : BddBelow (Set.range g)) :
     BddBelow (Set.range (min f g))
 ```
 
-**`ciInf_eq_min_cInf_inter_diff`**, a lemma, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L46).
+**`ciInf_eq_min_cInf_inter_diff`**, a lemma, [line 46](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L46).
 
 ```lean
 lemma ciInf_eq_min_cInf_inter_diff (S T : Set ι)
@@ -49,40 +49,40 @@ lemma ciInf_eq_min_cInf_inter_diff (S T : Set ι)
     ⨅ i : S, f i = (⨅ i : (S ∩ T : Set ι), f i) ⊓ ⨅ i : (S \ T : Set ι), f i
 ```
 
-**`lt_ciInf_iff`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L68).
+**`lt_ciInf_iff`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L68).
 
 ```lean
 lemma lt_ciInf_iff (hf : BddBelow (Set.range f)) :
     a < iInf f ↔ ∃ b, a < b ∧ ∀ (i : ι), b ≤ f i
 ```
 
-**`sup_ciSup`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L72).
+**`sup_ciSup`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L72).
 
 ```lean
 lemma sup_ciSup (hf : BddAbove (Set.range f)) : a ⊔ ⨆ x, f x = ⨆ x, a ⊔ f x
 ```
 
-**`inf_ciInf`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L75).
+**`inf_ciInf`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L75).
 
 ```lean
 lemma inf_ciInf (hf : BddBelow (Set.range f)) : a ⊓ ⨅ x, f x = ⨅ x, a ⊓ f x
 ```
 
-**`ciInf_sup_ciInf_le`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L78).
+**`ciInf_sup_ciInf_le`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L78).
 
 ```lean
 lemma ciInf_sup_ciInf_le (hf : BddBelow (Set.range f)) (hg : BddBelow (Set.range g)) :
     (⨅ i, f i) ⊔ ⨅ i, g i ≤ ⨅ i, f i ⊔ g i
 ```
 
-**`le_ciSup_inf_ciSup`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L82).
+**`le_ciSup_inf_ciSup`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L82).
 
 ```lean
 lemma le_ciSup_inf_ciSup (hf : BddAbove (Set.range f)) (hg : BddAbove (Set.range g)) :
     ⨆ (i : ι), f i ⊓ g i ≤ (⨆ (i : ι), f i) ⊓ ⨆ (i : ι), g i
 ```
 
-**`QuasiconvexOn.subset`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L88).
+**`QuasiconvexOn.subset`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L88).
 
 ```lean
 lemma QuasiconvexOn.subset
@@ -91,7 +91,7 @@ lemma QuasiconvexOn.subset
     QuasiconvexOn 𝕜 t f
 ```
 
-**`QuasiconvexOn.mem_segment_le_max`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L96).
+**`QuasiconvexOn.mem_segment_le_max`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L96).
 
 ```lean
 lemma QuasiconvexOn.mem_segment_le_max
@@ -101,7 +101,7 @@ lemma QuasiconvexOn.mem_segment_le_max
     f z ≤ f x ⊔ f y
 ```
 
-**`QuasiconcaveOn.min_le_mem_segment`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L103).
+**`QuasiconcaveOn.min_le_mem_segment`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L103).
 
 ```lean
 lemma QuasiconcaveOn.min_le_mem_segment
@@ -111,14 +111,14 @@ lemma QuasiconcaveOn.min_le_mem_segment
     f x ⊓ f y ≤ f z
 ```
 
-**`LowerSemicontinuousOn.bddBelow`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L110).
+**`LowerSemicontinuousOn.bddBelow`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L110).
 
 ```lean
 lemma LowerSemicontinuousOn.bddBelow {α : Type*} [TopologicalSpace α] {S : Set α} {g : α → ℝ}
     (hg : LowerSemicontinuousOn g S) (hS : IsCompact S) : BddBelow (g '' S)
 ```
 
-**`LowerSemicontinuousOn.max`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L137).
+**`LowerSemicontinuousOn.max`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L137).
 
 ```lean
 lemma LowerSemicontinuousOn.max {α : Type*} [TopologicalSpace α] {S : Set α} {f g : α → ℝ}
@@ -126,21 +126,21 @@ lemma LowerSemicontinuousOn.max {α : Type*} [TopologicalSpace α] {S : Set α} 
     LowerSemicontinuousOn (fun x ↦ max (f x) (g x)) S
 ```
 
-**`lowerSemicontinuousOn_iff_isClosed_preimage`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L148).
+**`lowerSemicontinuousOn_iff_isClosed_preimage`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L148).
 
 ```lean
 lemma lowerSemicontinuousOn_iff_isClosed_preimage {f : α → γ} [IsClosed s] :
     LowerSemicontinuousOn f s ↔ ∀ y, IsClosed (s ∩ f ⁻¹' Set.Iic y)
 ```
 
-**`segment.isConnected`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L168).
+**`segment.isConnected`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L168).
 
 ```lean
 lemma segment.isConnected {E : Type u_1} [AddCommGroup E] [Module ℝ E] [TopologicalSpace E] [ContinuousAdd E] [ContinuousSMul ℝ E] (a b : E) :
     IsConnected (segment ℝ a b)
 ```
 
-**`BddAbove.range_inf_of_image2`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L173).
+**`BddAbove.range_inf_of_image2`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L173).
 
 ```lean
 lemma BddAbove.range_inf_of_image2 {M N α : Type*} {f : M → N → α} [ConditionallyCompleteLinearOrder α]
@@ -148,7 +148,7 @@ lemma BddAbove.range_inf_of_image2 {M N α : Type*} {f : M → N → α} [Condit
     BddAbove (Set.range fun y : T ↦ ⨅ x : S, f x y)
 ```
 
-**`BddBelow.range_sup_of_image2`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L190).
+**`BddBelow.range_sup_of_image2`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L190).
 
 ```lean
 lemma BddBelow.range_sup_of_image2 {M N α : Type*} {f : M → N → α} [ConditionallyCompleteLinearOrder α]
@@ -156,7 +156,7 @@ lemma BddBelow.range_sup_of_image2 {M N α : Type*} {f : M → N → α} [Condit
       BddBelow (Set.range fun y : T ↦ ⨆ x : S, f x y)
 ```
 
-**`ciInf_le_ciInf_of_subset`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L195).
+**`ciInf_le_ciInf_of_subset`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L195).
 
 ```lean
 lemma ciInf_le_ciInf_of_subset {α β : Type*} [ConditionallyCompleteLattice α]
@@ -164,7 +164,7 @@ lemma ciInf_le_ciInf_of_subset {α β : Type*} [ConditionallyCompleteLattice α]
     ⨅ x : t, f x ≤ ⨅ x : s, f x
 ```
 
-**`LowerSemicontinuousOn.dite_top`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L207).
+**`LowerSemicontinuousOn.dite_top`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L207).
 
 ```lean
 lemma LowerSemicontinuousOn.dite_top {α β : Type*} [TopologicalSpace α] [Preorder β] [OrderTop β]
@@ -174,7 +174,7 @@ lemma LowerSemicontinuousOn.dite_top {α β : Type*} [TopologicalSpace α] [Preo
     LowerSemicontinuousOn (fun x ↦ dite (p x) (f x) (fun _ ↦ ⊤)) s
 ```
 
-**`LowerSemicontinuousOn.comp_continuousOn`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L230).
+**`LowerSemicontinuousOn.comp_continuousOn`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L230).
 
 ```lean
 lemma LowerSemicontinuousOn.comp_continuousOn {α β γ : Type*}
@@ -183,7 +183,7 @@ lemma LowerSemicontinuousOn.comp_continuousOn {α β γ : Type*}
     LowerSemicontinuousOn (g ∘ f) s
 ```
 
-**`UpperSemicontinuousOn.comp_continuousOn`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L245).
+**`UpperSemicontinuousOn.comp_continuousOn`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L245).
 
 ```lean
 lemma UpperSemicontinuousOn.comp_continuousOn {α β γ : Type*}
@@ -192,7 +192,7 @@ lemma UpperSemicontinuousOn.comp_continuousOn {α β γ : Type*}
     UpperSemicontinuousOn (g ∘ f) s
 ```
 
-**`LowerSemicontinuousOn.ite_top`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L251).
+**`LowerSemicontinuousOn.ite_top`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L251).
 
 ```lean
 lemma LowerSemicontinuousOn.ite_top {α β : Type*} [TopologicalSpace α] [Preorder β] [OrderTop β]
@@ -201,7 +201,7 @@ lemma LowerSemicontinuousOn.ite_top {α β : Type*} [TopologicalSpace α] [Preor
     LowerSemicontinuousOn (fun x ↦ ite (p x) (f x) ⊤) s
 ```
 
-**`LeftOrdContinuous.comp_lowerSemicontinuousOn_strong_assumptions`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L257).
+**`LeftOrdContinuous.comp_lowerSemicontinuousOn_strong_assumptions`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L257).
 
 ```lean
 lemma LeftOrdContinuous.comp_lowerSemicontinuousOn_strong_assumptions {α γ δ : Type*}
@@ -211,7 +211,7 @@ lemma LeftOrdContinuous.comp_lowerSemicontinuousOn_strong_assumptions {α γ δ 
     LowerSemicontinuousOn (g ∘ f) s
 ```
 
-**`UpperSemicontinuousOn.frequently_lt_of_tendsto`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L292).
+**`UpperSemicontinuousOn.frequently_lt_of_tendsto`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L292).
 
 ```lean
 lemma UpperSemicontinuousOn.frequently_lt_of_tendsto {α β γ : Type*} [TopologicalSpace β] [Preorder γ]
@@ -220,7 +220,7 @@ lemma UpperSemicontinuousOn.frequently_lt_of_tendsto {α β γ : Type*} [Topolog
     ∀ᶠ a in l, f (zs a) < c
 ```
 
-**`Finset.ciInf_insert`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L301).
+**`Finset.ciInf_insert`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L301).
 
 ```lean
 lemma Finset.ciInf_insert {α β : Type*} [DecidableEq α] [ConditionallyCompleteLattice β]
@@ -228,7 +228,7 @@ lemma Finset.ciInf_insert {α β : Type*} [DecidableEq α] [ConditionallyComplet
     ⨅ (a : (insert x t : _)), f a = f x ⊓ ⨅ (a : t), f a
 ```
 
-**`Finset.ciSup_insert`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L320).
+**`Finset.ciSup_insert`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L320).
 
 ```lean
 lemma Finset.ciSup_insert {α β : Type*} [DecidableEq α] [ConditionallyCompleteLattice β]
@@ -240,7 +240,7 @@ lemma Finset.ciSup_insert {α β : Type*} [DecidableEq α] [ConditionallyComplet
 > `(∀ x, a < f x) → (a < ⨅ x, f x)`. This is repaired by taking an extra `exists_between` to get `a < b < ⨅ ...`, concluding that
 > `(∀ x, b < f x) → (b ≤ ⨅ x, f x)` and so `(a < ⨅ x, f x)`.
 
-**`sion_minimax`**, a theorem, [line 683](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean#L683). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
+**`sion_minimax`**, a theorem, [line 683](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean#L683). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/scripts/lint/exemptions/Theorems.txt).
 
 > **Sion's Minimax theorem**. Because of `ciSup` and `ciInf` junk values when f isn't
 > bounded, we need to assume that it's bounded above and below.
@@ -258,4 +258,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [QuantumInfo/ForMathlib/SionMinimax.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/SionMinimax.lean)
+- [QuantumInfo/ForMathlib/SionMinimax.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/QuantumInfo/ForMathlib/SionMinimax.lean)

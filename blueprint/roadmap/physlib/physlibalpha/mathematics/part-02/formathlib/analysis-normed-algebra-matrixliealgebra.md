@@ -8,7 +8,7 @@ proof: formalized
 
 # The Lie algebra of a closed group of matrices
 
-The module `PhyslibAlpha.Mathematics.ForMathlib.Analysis.Normed.Algebra.MatrixLieAlgebra`, [PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean): 5 declarations, 4 with a docstring.
+The module `PhyslibAlpha.Mathematics.ForMathlib.Analysis.Normed.Algebra.MatrixLieAlgebra`, [PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean): 5 declarations, 4 with a docstring.
 
 > The generators of the one-parameter subgroups of a closed subgroup of `GL(κ, ℂ)`.
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.Mathematics.ForMathlib.Analysis.Normed.Algebra.MatrixLi
 
 ## A. Closure under addition
 
-**`Matrix.exp_add_mem_of_isClosed`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean#L70).
+**`Matrix.exp_add_mem_of_isClosed`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean#L70).
 
 > In a closed group of matrices, if the one-parameter subgroups of `X` and of `Y` lie in
 > the group, then so does `exp (X + Y)`: it is the limit of the products
@@ -57,7 +57,7 @@ lemma exp_add_mem_of_isClosed {H : Subgroup (GeneralLinearGroup κ ℂ)}
 
 ## B. The Lie algebra
 
-**`Matrix.lieAlgebraOfIsClosed`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean#L117).
+**`Matrix.lieAlgebraOfIsClosed`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean#L117).
 
 > The Lie algebra of a closed subgroup of `GL(κ, ℂ)`: the real subspace of matrices whose
 > one-parameter subgroups lie in the group.
@@ -67,7 +67,7 @@ def lieAlgebraOfIsClosed (H : Subgroup (GeneralLinearGroup κ ℂ))
     (hH : IsClosed (H : Set (GeneralLinearGroup κ ℂ))) : Submodule ℝ (Matrix κ κ ℂ)
 ```
 
-**`Matrix.mem_lieAlgebraOfIsClosed_iff`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean#L132).
+**`Matrix.mem_lieAlgebraOfIsClosed_iff`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean#L132).
 
 ```lean
 lemma mem_lieAlgebraOfIsClosed_iff {H : Subgroup (GeneralLinearGroup κ ℂ)}
@@ -78,7 +78,7 @@ lemma mem_lieAlgebraOfIsClosed_iff {H : Subgroup (GeneralLinearGroup κ ℂ)}
 
 ## C. Conjugation and the commutator
 
-**`Matrix.conj_mem_lieAlgebraOfIsClosed`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean#L148).
+**`Matrix.conj_mem_lieAlgebraOfIsClosed`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean#L148).
 
 > The Lie algebra is invariant under conjugation by the group: the one-parameter subgroup
 > of the conjugate of a generator by a group element is the conjugate of the one-parameter
@@ -90,7 +90,7 @@ lemma conj_mem_lieAlgebraOfIsClosed (g : H) {X : Matrix κ κ ℂ}
     (g.1 : Matrix κ κ ℂ) * X * (↑g.1⁻¹ : Matrix κ κ ℂ) ∈ lieAlgebraOfIsClosed H hH
 ```
 
-**`Matrix.commutator_mem_lieAlgebraOfIsClosed`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean#L163).
+**`Matrix.commutator_mem_lieAlgebraOfIsClosed`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean#L163).
 
 > The Lie algebra is closed under the commutator. The conjugates
 > `exp (t X) Y exp (−t X)` lie in the Lie algebra, a closed subspace, and so does their
@@ -112,4 +112,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean)
+- [PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Mathematics/ForMathlib/Analysis/Normed/Algebra/MatrixLieAlgebra.lean)

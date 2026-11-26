@@ -8,7 +8,7 @@ proof: formalized
 
 # Elaboration of tensor expressions
 
-The module `Physlib.Relativity.Tensors.Elab`, [Physlib/Relativity/Tensors/Elab.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean): 37 declarations, 37 with a docstring.
+The module `Physlib.Relativity.Tensors.Elab`, [Physlib/Relativity/Tensors/Elab.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean): 37 declarations, 37 with a docstring.
 
 > - Syntax in Lean allows us to represent tensor expressions in a way close to what we expect to
 >   see on pen-and-paper.
@@ -51,7 +51,7 @@ The module `Physlib.Relativity.Tensors.Elab`, [Physlib/Relativity/Tensors/Elab.l
 
 ## Indices
 
-**`TensorSpecies.Tensor.indexExprIsNum`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L86).
+**`TensorSpecies.Tensor.indexExprIsNum`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L86).
 
 > Bool which is true if an index is a num.
 
@@ -59,7 +59,7 @@ The module `Physlib.Relativity.Tensors.Elab`, [Physlib/Relativity/Tensors/Elab.l
 def indexExprIsNum (stx : Syntax) : Bool
 ```
 
-**`TensorSpecies.Tensor.indexExprIsJiggle`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L92).
+**`TensorSpecies.Tensor.indexExprIsJiggle`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L92).
 
 > Bool which is true if an index is a jiggle `τ(i)`.
 
@@ -67,7 +67,7 @@ def indexExprIsNum (stx : Syntax) : Bool
 def indexExprIsJiggle (stx : Syntax) : Bool
 ```
 
-**`TensorSpecies.Tensor.indexRemoveTau`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L99).
+**`TensorSpecies.Tensor.indexRemoveTau`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L99).
 
 > Removes a `τ(⬝)` wrapper from an index, leaving any other index unchanged. Pure, so it can be
 > used to compare indices up to `τ` (e.g. when counting contractions in `withoutContrEval`).
@@ -76,7 +76,7 @@ def indexExprIsJiggle (stx : Syntax) : Bool
 def indexRemoveTau (stx : TSyntax `indexExpr) : TSyntax `indexExpr
 ```
 
-**`TensorSpecies.Tensor.indexExprIsBracketEval`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L105).
+**`TensorSpecies.Tensor.indexExprIsBracketEval`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L105).
 
 > Bool which is true if an index is evaluated bracket `[μ]`.
 
@@ -84,7 +84,7 @@ def indexRemoveTau (stx : TSyntax `indexExpr) : TSyntax `indexExpr
 def indexExprIsBracketEval(stx : Syntax) : Bool
 ```
 
-**`TensorSpecies.Tensor.indexToNum`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L111).
+**`TensorSpecies.Tensor.indexToNum`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L111).
 
 > If an index is a num - the underlying natural number.
 
@@ -92,7 +92,7 @@ def indexExprIsBracketEval(stx : Syntax) : Bool
 def indexToNum (stx : Syntax) : TermElabM Nat
 ```
 
-**`TensorSpecies.Tensor.indexToIdent`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L121).
+**`TensorSpecies.Tensor.indexToIdent`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L121).
 
 > When an index is not a num, the corresponding ident.
 
@@ -100,7 +100,7 @@ def indexToNum (stx : Syntax) : TermElabM Nat
 def indexToIdent (stx : Syntax) : TermElabM Ident
 ```
 
-**`TensorSpecies.Tensor.indexToBracketTerm`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L129).
+**`TensorSpecies.Tensor.indexToBracketTerm`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L129).
 
 > For an evaluated bracket index `[t]`, the term `t` giving the value of the index.
 
@@ -108,7 +108,7 @@ def indexToIdent (stx : Syntax) : TermElabM Ident
 def indexToBracketTerm (stx : Syntax) : TermElabM Term
 ```
 
-**`TensorSpecies.Tensor.indexPosEq`**, a def, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L137).
+**`TensorSpecies.Tensor.indexPosEq`**, a def, [line 137](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L137).
 
 > Takes a pair ``a b : ℕ × TSyntax `indexExpr``. If `a.1 < b.1` and `a.2 = b.2` then
 > outputs `some (a.1, b.1)`, otherwise `none`.
@@ -117,7 +117,7 @@ def indexToBracketTerm (stx : Syntax) : TermElabM Term
 def indexPosEq (a b : TSyntax `indexExpr × ℕ) : TermElabM (Option (ℕ × ℕ))
 ```
 
-**`TensorSpecies.Tensor.indexToDual`**, a def, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L146).
+**`TensorSpecies.Tensor.indexToDual`**, a def, [line 146](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L146).
 
 > Bool which is true if an index is of the form τ(i) that is, to be dualed.
 
@@ -127,7 +127,7 @@ def indexToDual (stx : Syntax) : Bool
 
 ## Manipulation of lists of indexExpr
 
-**`TensorSpecies.Tensor.evalAdjustPos`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L162).
+**`TensorSpecies.Tensor.evalAdjustPos`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L162).
 
 > Adjusts a list `List ℕ` by subtracting from each natural number the number
 > of elements before it in the list which are less than itself. This is used
@@ -137,7 +137,7 @@ def indexToDual (stx : Syntax) : Bool
 def evalAdjustPos (l : List ℕ) : List ℕ
 ```
 
-**`TensorSpecies.Tensor.getJigglePos`**, a def, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L172).
+**`TensorSpecies.Tensor.getJigglePos`**, a def, [line 172](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L172).
 
 > Returns the positions of indices which are "jiggled", i.e., of the form `τ(μ)`,
 > these are the indices which are to be raised or lowered.
@@ -146,7 +146,7 @@ def evalAdjustPos (l : List ℕ) : List ℕ
 def getJigglePos (ind : List (TSyntax `indexExpr)) : TermElabM (List ℕ)
 ```
 
-**`TensorSpecies.Tensor.getEvalPos`**, a def, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L192).
+**`TensorSpecies.Tensor.getEvalPos`**, a def, [line 192](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L192).
 
 > For list of `indexExpr` e.g. `[α, 3, β, 2, γ]`, `getEvalPos`
 > returns a list of pairs `ℕ × ℕ` related to indices which are numbers.
@@ -159,7 +159,7 @@ def getJigglePos (ind : List (TSyntax `indexExpr)) : TermElabM (List ℕ)
 def getEvalPos (ind : List (TSyntax `indexExpr)) : TermElabM (List (ℕ × ℕ))
 ```
 
-**`TensorSpecies.Tensor.getEvalBracketPos`**, a def, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L206).
+**`TensorSpecies.Tensor.getEvalBracketPos`**, a def, [line 206](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L206).
 
 > For list of `indexExpr` e.g. `[α, 3, β, 2, [γ]]`, `getEvalPos`
 > returns a list of pairs `ℕ × Term` related to indices which are evaluated
@@ -173,7 +173,7 @@ def getEvalPos (ind : List (TSyntax `indexExpr)) : TermElabM (List (ℕ × ℕ))
 def getEvalBracketPos (ind : List (TSyntax `indexExpr)) : TermElabM (List (ℕ × Term))
 ```
 
-**`TensorSpecies.Tensor.getContrPos`**, a def, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L218).
+**`TensorSpecies.Tensor.getContrPos`**, a def, [line 218](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L218).
 
 > For list of `indexExpr` e.g. `[α, 3, β, α, 2, γ]`, `getContrPos`
 > first removes all indices which are numbers (e.g. `[α, β, α, γ]`).
@@ -185,7 +185,7 @@ def getEvalBracketPos (ind : List (TSyntax `indexExpr)) : TermElabM (List (ℕ �
 def getContrPos (ind : List (TSyntax `indexExpr)) : TermElabM (List (ℕ × ℕ))
 ```
 
-**`TensorSpecies.Tensor.withoutContrEval`**, a def, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L236).
+**`TensorSpecies.Tensor.withoutContrEval`**, a def, [line 236](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L236).
 
 > The list of indices after contraction or evaluation.
 
@@ -193,7 +193,7 @@ def getContrPos (ind : List (TSyntax `indexExpr)) : TermElabM (List (ℕ × ℕ)
 def withoutContrEval (ind : List (TSyntax `indexExpr)) : TermElabM (List (TSyntax `indexExpr))
 ```
 
-**`TensorSpecies.Tensor.toPairs`**, a def, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L256).
+**`TensorSpecies.Tensor.toPairs`**, a def, [line 256](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L256).
 
 > Takes a list and puts consecutive elements into pairs.
 > e.g. [0, 1, 2, 3] becomes [(0, 1), (2, 3)].
@@ -202,7 +202,7 @@ def withoutContrEval (ind : List (TSyntax `indexExpr)) : TermElabM (List (TSynta
 def toPairs (l : List ℕ) : List (ℕ × ℕ)
 ```
 
-**`TensorSpecies.Tensor.contrListAdjust`**, a def, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L265).
+**`TensorSpecies.Tensor.contrListAdjust`**, a def, [line 265](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L265).
 
 > Adjusts a list `List (ℕ × ℕ)` by subtracting from each natural number the number
 > of elements before it in the list which are less than itself. This is used
@@ -214,7 +214,7 @@ def contrListAdjust (l : List (ℕ × ℕ)) : List (ℕ × ℕ)
 
 ## Permutations of indices
 
-**`TensorSpecies.Tensor.getPermutation`**, a def, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L280).
+**`TensorSpecies.Tensor.getPermutation`**, a def, [line 280](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L280).
 
 > Given two lists of indices, all of which are identifiers, returns the `List (ℕ)` whose
 > `i`th entry is the position in `l2` of the `i`th index in `l1`.
@@ -223,7 +223,7 @@ def contrListAdjust (l : List (ℕ × ℕ)) : List (ℕ × ℕ)
 def getPermutation (l1 l2 : List (TSyntax `indexExpr)) : TermElabM (List ℕ)
 ```
 
-**`TensorSpecies.Tensor.stringToTerm`**, a def, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L292).
+**`TensorSpecies.Tensor.stringToTerm`**, a def, [line 292](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L292).
 
 > The construction of an expression corresponding to the type of a given string once parsed.
 
@@ -235,7 +235,7 @@ def stringToTerm (str : String) : TermElabM Term
 
 ## Syntax of tensor expressions to indices.
 
-**`TensorSpecies.Tensor.getNumIndicesExact`**, a def, [line 343](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L343).
+**`TensorSpecies.Tensor.getNumIndicesExact`**, a def, [line 343](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L343).
 
 > For syntax of the form `T` where `T` is `Tensor S c` this returns
 > the value of `TensorSpecies.numIndices T`. That is, the exact number of indices
@@ -245,7 +245,7 @@ def stringToTerm (str : String) : TermElabM Term
 def getNumIndicesExact (stx : Syntax) : TermElabM ℕ
 ```
 
-**`TensorSpecies.Tensor.getAllIndices`**, a def, [line 356](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L356).
+**`TensorSpecies.Tensor.getAllIndices`**, a def, [line 356](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L356).
 
 > For syntax of the form `T | α β 2 β `, `getAllIndices` returns a list `[α, β, 2, β]`
 > of all `indexExpr`.
@@ -256,7 +256,7 @@ def getAllIndices (stx : Syntax) : TermElabM (List (TSyntax `indexExpr))
 
 ## Modifying terms to tensor trees
 
-**`TensorSpecies.Tensor.TensorExpressionOperator`**, an abbrev, [line 388](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L388).
+**`TensorSpecies.Tensor.TensorExpressionOperator`**, an abbrev, [line 388](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L388).
 
 > A Tensor expression operator is a map which takes in a pair
 > consisting of a list of indices and a term and outputs a list of indices and a term,
@@ -266,7 +266,7 @@ def getAllIndices (stx : Syntax) : TermElabM (List (TSyntax `indexExpr))
 abbrev TensorExpressionOperator
 ```
 
-**`TensorSpecies.Tensor.TensorExpressionOperator.create`**, a def, [line 392](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L392).
+**`TensorSpecies.Tensor.TensorExpressionOperator.create`**, a def, [line 392](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L392).
 
 > The creation of a tensor from a syntax tree.
 
@@ -275,7 +275,7 @@ def TensorExpressionOperator.create (stx : Syntax) :
     TermElabM (List (TSyntax `indexExpr) × Term)
 ```
 
-**`TensorSpecies.Tensor.TensorExpressionOperator.jiggle`**, a def, [line 407](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L407).
+**`TensorSpecies.Tensor.TensorExpressionOperator.jiggle`**, a def, [line 407](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L407).
 
 > The tensor expression operator which rises or lowers the indices of a tensor based on
 > indices with `τ`-syntax.
@@ -284,7 +284,7 @@ def TensorExpressionOperator.create (stx : Syntax) :
 def TensorExpressionOperator.jiggle : TensorExpressionOperator
 ```
 
-**`TensorSpecies.Tensor.TensorExpressionOperator.eval`**, a def, [line 415](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L415).
+**`TensorSpecies.Tensor.TensorExpressionOperator.eval`**, a def, [line 415](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L415).
 
 > The tensor expression operator which evaluates indices.
 
@@ -292,7 +292,7 @@ def TensorExpressionOperator.jiggle : TensorExpressionOperator
 def TensorExpressionOperator.eval : TensorExpressionOperator
 ```
 
-**`TensorSpecies.Tensor.TensorExpressionOperator.contr`**, a def, [line 429](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L429).
+**`TensorSpecies.Tensor.TensorExpressionOperator.contr`**, a def, [line 429](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L429).
 
 > The tensor expression operator which contracts indices.
 
@@ -300,7 +300,7 @@ def TensorExpressionOperator.eval : TensorExpressionOperator
 def TensorExpressionOperator.contr : TensorExpressionOperator
 ```
 
-**`TensorSpecies.Tensor.TensorExpressionOperator.prod`**, a def, [line 441](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L441).
+**`TensorSpecies.Tensor.TensorExpressionOperator.prod`**, a def, [line 441](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L441).
 
 > The tensor expression operator which takes the product of two tensors.
 
@@ -310,7 +310,7 @@ def TensorExpressionOperator.prod : List (TSyntax `indexExpr) × Term →
     TermElabM (List (TSyntax `indexExpr) × Term)
 ```
 
-**`TensorSpecies.Tensor.TensorExpressionOperator.neg`**, a def, [line 449](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L449).
+**`TensorSpecies.Tensor.TensorExpressionOperator.neg`**, a def, [line 449](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L449).
 
 > The tensor expression operator which negates a tensor.
 
@@ -318,7 +318,7 @@ def TensorExpressionOperator.prod : List (TSyntax `indexExpr) × Term →
 def TensorExpressionOperator.neg : TensorExpressionOperator
 ```
 
-**`TensorSpecies.Tensor.TensorExpressionOperator.smul`**, a def, [line 454](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L454).
+**`TensorSpecies.Tensor.TensorExpressionOperator.smul`**, a def, [line 454](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L454).
 
 > The tensor expression operator which multiplies a tensor by a scalar.
 
@@ -326,7 +326,7 @@ def TensorExpressionOperator.neg : TensorExpressionOperator
 def TensorExpressionOperator.smul (c : Term) : TensorExpressionOperator
 ```
 
-**`TensorSpecies.Tensor.TensorExpressionOperator.action`**, a def, [line 459](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L459).
+**`TensorSpecies.Tensor.TensorExpressionOperator.action`**, a def, [line 459](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L459).
 
 > The tensor expression operator which acts on a tensor by a group element.
 
@@ -334,7 +334,7 @@ def TensorExpressionOperator.smul (c : Term) : TensorExpressionOperator
 def TensorExpressionOperator.action (c : Term) : TensorExpressionOperator
 ```
 
-**`TensorSpecies.Tensor.colorsDefEq`**, a def, [line 467](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L467).
+**`TensorSpecies.Tensor.colorsDefEq`**, a def, [line 467](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L467).
 
 > Whether `T1` and `T2` elaborate to tensors of definitionally equal colour (equal type).
 > Used to decide whether an identity reindexing between them may be dropped: the bare,
@@ -345,7 +345,7 @@ def TensorExpressionOperator.action (c : Term) : TensorExpressionOperator
 def colorsDefEq (T1 T2 : Term) : TermElabM Bool
 ```
 
-**`TensorSpecies.Tensor.permWrap`**, a def, [line 480](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L480).
+**`TensorSpecies.Tensor.permWrap`**, a def, [line 480](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L480).
 
 > Wraps `T` in the reindexing `permT ![lPerm] IsReindexing.auto`.
 
@@ -353,7 +353,7 @@ def colorsDefEq (T1 T2 : Term) : TermElabM Bool
 def permWrap (lPerm : List ℕ) (T : Term) : TermElabM Term
 ```
 
-**`TensorSpecies.Tensor.TensorExpressionOperator.add`**, a def, [line 486](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L486).
+**`TensorSpecies.Tensor.TensorExpressionOperator.add`**, a def, [line 486](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L486).
 
 > The tensor expression operator which adds two tensors.
 
@@ -363,7 +363,7 @@ def TensorExpressionOperator.add : List (TSyntax `indexExpr) × Term →
     TermElabM (List (TSyntax `indexExpr) × Term)
 ```
 
-**`TensorSpecies.Tensor.TensorExpressionOperator.equal`**, a def, [line 499](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L499).
+**`TensorSpecies.Tensor.TensorExpressionOperator.equal`**, a def, [line 499](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L499).
 
 > The tensor expression operator which equates two tensors.
 
@@ -375,7 +375,7 @@ def TensorExpressionOperator.equal : List (TSyntax `indexExpr) × Term →
 
 ## Syntax to tensor tree
 
-**`TensorSpecies.Tensor.syntaxFull`**, a def, [line 519](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L519).
+**`TensorSpecies.Tensor.syntaxFull`**, a def, [line 519](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L519).
 
 > Takes a syntax corresponding to a tensor expression and turns it into a
 > term corresponding to a tensor tree.
@@ -386,7 +386,7 @@ partial def syntaxFull (stx : Syntax) : TermElabM (List (TSyntax `indexExpr) × 
 
 ## Elaboration
 
-**`TensorSpecies.Tensor.stripToTensorSelf`**, a def, [line 558](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L558).
+**`TensorSpecies.Tensor.stripToTensorSelf`**, a def, [line 558](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L558).
 
 > Removes redundant `Tensorial.toTensor` coercions from an elaborated tensor expression:
 > every subterm `Tensorial.toTensor t` whose `Tensorial` instance is the canonical instance
@@ -398,7 +398,7 @@ partial def syntaxFull (stx : Syntax) : TermElabM (List (TSyntax `indexExpr) × 
 def stripToTensorSelf (e : Expr) : Expr
 ```
 
-**`TensorSpecies.Tensor.elaborateTensorNode`**, a def, [line 570](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean#L570).
+**`TensorSpecies.Tensor.elaborateTensorNode`**, a def, [line 570](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean#L570).
 
 > Takes a syntax corresponding to a tensor expression and turns it into an
 > expression corresponding to a tensor tree. The redundant `Tensorial.toTensor` coercions
@@ -423,4 +423,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/Elab.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Elab.lean)
+- [Physlib/Relativity/Tensors/Elab.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Relativity/Tensors/Elab.lean)

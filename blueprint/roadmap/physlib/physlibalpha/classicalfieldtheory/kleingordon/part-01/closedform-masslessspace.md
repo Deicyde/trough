@@ -8,7 +8,7 @@ proof: formalized
 
 # Kirchhoff's formula for the massless retarded solution in three dimensions
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MasslessSpace`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MasslessSpace`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean): 5 declarations, 5 with a docstring.
 
 > The massless sine evolution in three space dimensions is Kirchhoff's spherical mean.
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.ClosedForm.MasslessSpa
 > - `solution_zero_mass_three` : the massless retarded solution is the Duhamel integral of the
 >   spherical means.
 
-**`KleinGordon.continuous_wavePropagator`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean#L65).
+**`KleinGordon.continuous_wavePropagator`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean#L65).
 
 > The wave propagator of a Schwartz function is continuous.
 
@@ -53,7 +53,7 @@ lemma continuous_wavePropagator (g : 𝓢(Space 3, ℂ)) (t : ℝ) :
     Continuous (wavePropagator 1 t g)
 ```
 
-**`KleinGordon.fourier_wavePropagator`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean#L80).
+**`KleinGordon.fourier_wavePropagator`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean#L80).
 
 > **Kirchhoff's formula in Fourier space.** The Fourier transform of the wave propagator is
 > the multiplier of the massless sine evolution times the transform of the data.
@@ -63,7 +63,7 @@ lemma fourier_wavePropagator (g : 𝓢(Space 3, ℂ)) (t : ℝ) {ξ : Space 3} (
     𝓕 (wavePropagator 1 t g) ξ = multiplier t 0 ξ * 𝓕 g ξ
 ```
 
-**`KleinGordon.sineEvolution_zero_mass_three`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean#L102).
+**`KleinGordon.sineEvolution_zero_mass_three`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean#L102).
 
 > **The massless sine evolution is Kirchhoff's propagator.** In three space dimensions the
 > massless sine evolution of a Schwartz function is the spherical mean `t M_t g`.
@@ -73,7 +73,7 @@ lemma sineEvolution_zero_mass_three (t : ℝ) (g : 𝓢(Space 3, ℂ)) (x : Spac
     sineEvolution ℂ t 0 g x = wavePropagator 1 t g x
 ```
 
-**`KleinGordon.solution_zero_mass_three`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean#L131).
+**`KleinGordon.solution_zero_mass_three`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean#L131).
 
 > **Kirchhoff's formula for the retarded solution.** The massless retarded solution in three
 > space dimensions is the Duhamel integral of the spherical means of the source over the earlier
@@ -85,7 +85,7 @@ lemma solution_zero_mass_three (ψ : TestFunction (⊤ : Opens (ℝ × Space 3))
     solution ℂ ψ 0 t x = ∫ s in Set.Iic t, wavePropagator 1 (t - s) (slice ℂ ψ s) x
 ```
 
-**`KleinGordon.wavePropagator_radial`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean#L139).
+**`KleinGordon.wavePropagator_radial`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean#L139).
 
 > The Kirchhoff propagator at the origin of a radial function is the radius times its value.
 
@@ -105,4 +105,4 @@ lemma wavePropagator_radial {Φ : ℝ → ℂ} {g : Space 3 → ℂ} (hg : ∀ x
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean)

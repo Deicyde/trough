@@ -8,7 +8,7 @@ proof: formalized
 
 # Ladder operators
 
-The module `Physlib.QuantumMechanics.HarmonicOscillator.LadderOperators`, [Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean): 18 declarations, 14 with a docstring.
+The module `Physlib.QuantumMechanics.HarmonicOscillator.LadderOperators`, [Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean): 18 declarations, 14 with a docstring.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `Physlib.QuantumMechanics.HarmonicOscillator.LadderOperators`, [Physl
 
 ### A.1. Definitions
 
-**`QuantumMechanics.HarmonicOscillator.loweringCLM`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L75).
+**`QuantumMechanics.HarmonicOscillator.loweringCLM`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L75).
 
 > The lowering (annihilation) operator `aᵢ = (xᵢ/ξᵢ + i ξᵢ pᵢ/ℏ)/√2`, as a continuous linear
 > map on Schwartz maps.
@@ -46,7 +46,7 @@ The module `Physlib.QuantumMechanics.HarmonicOscillator.LadderOperators`, [Physl
 def loweringCLM : 𝓢(Space d, ℂ) →L[ℂ] 𝓢(Space d, ℂ)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.raisingCLM`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L80).
+**`QuantumMechanics.HarmonicOscillator.raisingCLM`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L80).
 
 > The raising (creation) operator `aᵢ† = (xᵢ/ξᵢ - i ξᵢ pᵢ/ℏ)/√2`, as a continuous linear
 > map on Schwartz maps.
@@ -55,21 +55,21 @@ def loweringCLM : 𝓢(Space d, ℂ) →L[ℂ] 𝓢(Space d, ℂ)
 def raisingCLM : 𝓢(Space d, ℂ) →L[ℂ] 𝓢(Space d, ℂ)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.loweringCLM_eq`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L83).
+**`QuantumMechanics.HarmonicOscillator.loweringCLM_eq`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L83).
 
 ```lean
 lemma loweringCLM_eq : Q.loweringCLM i =
     (Real.sqrt 2 : ℂ)⁻¹ • (((Q.ξ i : ℝ) : ℂ)⁻¹ • 𝐱 i + (I * ((Q.ξ i : ℝ) : ℂ) / (ℏ : ℂ)) • 𝐩 i)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.raisingCLM_eq`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L87).
+**`QuantumMechanics.HarmonicOscillator.raisingCLM_eq`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L87).
 
 ```lean
 lemma raisingCLM_eq : Q.raisingCLM i =
     (Real.sqrt 2 : ℂ)⁻¹ • (((Q.ξ i : ℝ) : ℂ)⁻¹ • 𝐱 i - (I * ((Q.ξ i : ℝ) : ℂ) / (ℏ : ℂ)) • 𝐩 i)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.sqrt_two_sq_ofReal`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L92).
+**`QuantumMechanics.HarmonicOscillator.sqrt_two_sq_ofReal`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L92).
 
 > `(√2)² = 2` as complex numbers.
 
@@ -79,7 +79,7 @@ lemma sqrt_two_sq_ofReal : ((Real.sqrt 2 : ℝ) : ℂ) ^ 2 = 2
 
 ### A.2. Commutation relations
 
-**`QuantumMechanics.HarmonicOscillator.lowering_commutation_raising`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L103).
+**`QuantumMechanics.HarmonicOscillator.lowering_commutation_raising`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L103).
 
 > `[aᵢ, aⱼ†] = δᵢⱼ 𝟙`.
 
@@ -88,7 +88,7 @@ lemma lowering_commutation_raising :
     ⁅Q.loweringCLM i, Q.raisingCLM j⁆ = δ[i,j] • ContinuousLinearMap.id ℂ 𝓢(Space d, ℂ)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.lowering_commutation_lowering`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L120).
+**`QuantumMechanics.HarmonicOscillator.lowering_commutation_lowering`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L120).
 
 > `[aᵢ, aⱼ] = 0`.
 
@@ -96,7 +96,7 @@ lemma lowering_commutation_raising :
 lemma lowering_commutation_lowering : ⁅Q.loweringCLM i, Q.loweringCLM j⁆ = 0
 ```
 
-**`QuantumMechanics.HarmonicOscillator.raising_commutation_raising`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L135).
+**`QuantumMechanics.HarmonicOscillator.raising_commutation_raising`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L135).
 
 > `[aᵢ†, aⱼ†] = 0`.
 
@@ -104,7 +104,7 @@ lemma lowering_commutation_lowering : ⁅Q.loweringCLM i, Q.loweringCLM j⁆ = 0
 lemma raising_commutation_raising : ⁅Q.raisingCLM i, Q.raisingCLM j⁆ = 0
 ```
 
-**`QuantumMechanics.HarmonicOscillator.raising_commutation_lowering`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L151).
+**`QuantumMechanics.HarmonicOscillator.raising_commutation_lowering`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L151).
 
 > `[aᵢ†, aⱼ] = -δᵢⱼ 𝟙`.
 
@@ -115,7 +115,7 @@ lemma raising_commutation_lowering :
 
 ### A.3. Position and momentum in terms of the ladder operators
 
-**`QuantumMechanics.HarmonicOscillator.position_eq_lowering_add_raising`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L162).
+**`QuantumMechanics.HarmonicOscillator.position_eq_lowering_add_raising`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L162).
 
 > `xᵢ = (ξᵢ/√2) (aᵢ + aᵢ†)`.
 
@@ -124,7 +124,7 @@ lemma position_eq_lowering_add_raising :
     𝐱 i = (((Q.ξ i : ℝ) : ℂ) / (Real.sqrt 2 : ℂ)) • (Q.loweringCLM i + Q.raisingCLM i)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.momentum_eq_raising_sub_lowering`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L173).
+**`QuantumMechanics.HarmonicOscillator.momentum_eq_raising_sub_lowering`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L173).
 
 > `pᵢ = (i ℏ/(√2 ξᵢ)) (aᵢ† - aᵢ)`.
 
@@ -136,7 +136,7 @@ lemma momentum_eq_raising_sub_lowering :
 
 ### A.4. The ladder operators as unbounded operators, adjointness
 
-**`QuantumMechanics.HarmonicOscillator.loweringOperator`**, a def, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L191).
+**`QuantumMechanics.HarmonicOscillator.loweringOperator`**, a def, [line 191](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L191).
 
 > The lowering operator as an unbounded operator with domain the Schwartz submodule.
 
@@ -144,7 +144,7 @@ lemma momentum_eq_raising_sub_lowering :
 def loweringOperator : Q.HS →ₗ.[ℂ] Q.HS
 ```
 
-**`QuantumMechanics.HarmonicOscillator.raisingOperator`**, a def, [line 196](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L196).
+**`QuantumMechanics.HarmonicOscillator.raisingOperator`**, a def, [line 196](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L196).
 
 > The raising operator as an unbounded operator with domain the Schwartz submodule.
 
@@ -152,7 +152,7 @@ def loweringOperator : Q.HS →ₗ.[ℂ] Q.HS
 def raisingOperator : Q.HS →ₗ.[ℂ] Q.HS
 ```
 
-**`QuantumMechanics.HarmonicOscillator.loweringOperator_apply`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L200).
+**`QuantumMechanics.HarmonicOscillator.loweringOperator_apply`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L200).
 
 ```lean
 lemma loweringOperator_apply (ψ : SchwartzSubmodule d) :
@@ -160,7 +160,7 @@ lemma loweringOperator_apply (ψ : SchwartzSubmodule d) :
       schwartzEquiv volume (Q.loweringCLM i ((schwartzEquiv volume).symm ψ))
 ```
 
-**`QuantumMechanics.HarmonicOscillator.raisingOperator_apply`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L205).
+**`QuantumMechanics.HarmonicOscillator.raisingOperator_apply`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L205).
 
 ```lean
 lemma raisingOperator_apply (ψ : SchwartzSubmodule d) :
@@ -168,7 +168,7 @@ lemma raisingOperator_apply (ψ : SchwartzSubmodule d) :
       schwartzEquiv volume (Q.raisingCLM i ((schwartzEquiv volume).symm ψ))
 ```
 
-**`QuantumMechanics.HarmonicOscillator.loweringCLM_inner`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L211).
+**`QuantumMechanics.HarmonicOscillator.loweringCLM_inner`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L211).
 
 > `⟪aᵢ f, g⟫ = ⟪f, aᵢ† g⟫` for Schwartz maps `f`, `g`.
 
@@ -178,7 +178,7 @@ lemma loweringCLM_inner (f g : 𝓢(Space d, ℂ)) :
       = ⟪(schwartzEquiv volume f : Q.HS), schwartzEquiv volume (Q.raisingCLM i g)⟫_ℂ
 ```
 
-**`QuantumMechanics.HarmonicOscillator.raisingCLM_inner`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L221).
+**`QuantumMechanics.HarmonicOscillator.raisingCLM_inner`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L221).
 
 > `⟪aᵢ† f, g⟫ = ⟪f, aᵢ g⟫` for Schwartz maps `f`, `g`.
 
@@ -188,7 +188,7 @@ lemma raisingCLM_inner (f g : 𝓢(Space d, ℂ)) :
       = ⟪(schwartzEquiv volume f : Q.HS), schwartzEquiv volume (Q.loweringCLM i g)⟫_ℂ
 ```
 
-**`QuantumMechanics.HarmonicOscillator.loweringOperator_isFormalAdjoint_raisingOperator`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L227).
+**`QuantumMechanics.HarmonicOscillator.loweringOperator_isFormalAdjoint_raisingOperator`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean#L227).
 
 > The raising operator is the formal adjoint of the lowering operator.
 
@@ -201,7 +201,7 @@ lemma loweringOperator_isFormalAdjoint_raisingOperator :
 
 - [Kronecker delta](../../mathematics/kroneckerdelta/basic.md)
 - [The quantum harmonic oscillator](basic.md)
-- [Position operators](../operators/position.md)
+- [Position operators](../operators/spaced-position.md)
 
 ## Proof depends on
 
@@ -209,4 +209,4 @@ lemma loweringOperator_isFormalAdjoint_raisingOperator :
 
 ## Sources
 
-- [Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean)
+- [Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean)

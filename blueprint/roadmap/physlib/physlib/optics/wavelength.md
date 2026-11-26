@@ -8,7 +8,7 @@ proof: formalized
 
 # Wavelength
 
-The module `Physlib.Optics.Wavelength`, [Physlib/Optics/Wavelength.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Wavelength.lean): 15 declarations, 13 with a docstring.
+The module `Physlib.Optics.Wavelength`, [Physlib/Optics/Wavelength.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Optics/Wavelength.lean): 15 declarations, 13 with a docstring.
 
 > In this module we define the type `Wavelength`, corresponding to the wavelength of a wave
 > carrying the dimension of length, and relate it to the type `Frequency` through the
@@ -43,7 +43,7 @@ The module `Physlib.Optics.Wavelength`, [Physlib/Optics/Wavelength.lean](https:/
 
 ## A. The Wavelength type
 
-**`Wavelength`**, an abbrev, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Wavelength.lean#L70).
+**`Wavelength`**, an abbrev, [line 70](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Optics/Wavelength.lean#L70).
 
 > The type `Wavelength` represents the distance between consecutive
 > corresponding points of the same phase on the wave, such as two adjacent
@@ -56,7 +56,7 @@ abbrev Wavelength : Type
 
 ## B. Wavelength from frequency
 
-**`Wavelength.ofFrequency`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Wavelength.lean#L82).
+**`Wavelength.ofFrequency`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Optics/Wavelength.lean#L82).
 
 > The wavelength of a wave of frequency `ν` propagating at a speed `c`,
 > given by `λ = c / ν`.
@@ -66,14 +66,14 @@ noncomputable def ofFrequency (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (ν : F
     Wavelength
 ```
 
-**`Wavelength.ofFrequency_val`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Wavelength.lean#L86).
+**`Wavelength.ofFrequency_val`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Optics/Wavelength.lean#L86).
 
 ```lean
 lemma ofFrequency_val (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (ν : Frequency) (hν : 0 < ν.val) :
     (ofFrequency c ν hν).val = c.val / ν.val
 ```
 
-**`Wavelength.ofFrequency_pos`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Wavelength.lean#L91).
+**`Wavelength.ofFrequency_pos`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Optics/Wavelength.lean#L91).
 
 > Positivity of the wavelength associated with a positive frequency and a positive
 > speed.
@@ -83,7 +83,7 @@ lemma ofFrequency_pos (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (hc : 0 < c.val
     (hν : 0 < ν.val) : 0 < (ofFrequency c ν hν).val
 ```
 
-**`Wavelength.ofFrequency_mul`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Wavelength.lean#L96).
+**`Wavelength.ofFrequency_mul`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Optics/Wavelength.lean#L96).
 
 > The wavelength associated with a frequency satisfies `λ * ν = c`.
 
@@ -92,7 +92,7 @@ lemma ofFrequency_mul (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (ν : Frequency
     (ofFrequency c ν hν).val * ν.val = c.val
 ```
 
-**`Wavelength.ofFrequency_scaleUnit`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Wavelength.lean#L103).
+**`Wavelength.ofFrequency_scaleUnit`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Optics/Wavelength.lean#L103).
 
 > The wavelength associated with a frequency scales with units as a wavelength should:
 > changing the units from `u1` to `u2` rescales the resulting wavelength by the scale factor
@@ -107,7 +107,7 @@ lemma ofFrequency_scaleUnit (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (ν : Fre
 
 ## C. Frequency from wavelength
 
-**`Frequency.ofWavelength`**, a def, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Wavelength.lean#L123).
+**`Frequency.ofWavelength`**, a def, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Optics/Wavelength.lean#L123).
 
 > The frequency of a wave of wavelength `w` propagating at a speed `c`,
 > given by `ν = c / w`. We can't use `λ` due to Lean anon function.
@@ -117,14 +117,14 @@ noncomputable def ofWavelength (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (w : W
     Frequency
 ```
 
-**`Frequency.ofWavelength_val`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Wavelength.lean#L127).
+**`Frequency.ofWavelength_val`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Optics/Wavelength.lean#L127).
 
 ```lean
 lemma ofWavelength_val (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (w : Wavelength) (w_pos : 0 < w.val) :
     (ofWavelength c w w_pos).val = c.val / w.val
 ```
 
-**`Frequency.ofWavelength_pos`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Wavelength.lean#L132).
+**`Frequency.ofWavelength_pos`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Optics/Wavelength.lean#L132).
 
 > Positivity of the frequency associated with a positive wavelength and a positive
 > speed.
@@ -134,7 +134,7 @@ lemma ofWavelength_pos (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (c_pos : 0 < c
     (hw : 0 < w.val) : 0 < (ofWavelength c w hw).val
 ```
 
-**`Frequency.ofWavelength_mul`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Wavelength.lean#L137).
+**`Frequency.ofWavelength_mul`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Optics/Wavelength.lean#L137).
 
 > The frequency associated with a wavelength satisfies `ν * λ = c`.
 
@@ -143,7 +143,7 @@ lemma ofWavelength_mul (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (w : Wavelengt
     (ofWavelength c w w_pos).val * w.val = c.val
 ```
 
-**`Frequency.ofWavelength_scaleUnit`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Wavelength.lean#L144).
+**`Frequency.ofWavelength_scaleUnit`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Optics/Wavelength.lean#L144).
 
 > The frequency associated with a wavelength scales with units as a frequency should:
 > changing the units from `u1` to `u2` rescales the resulting frequency by the scale factor
@@ -159,7 +159,7 @@ lemma ofWavelength_scaleUnit (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (w : Wav
 
 ## D. Round trips
 
-**`Frequency.ofWavelength_ofFrequency`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Wavelength.lean#L161).
+**`Frequency.ofWavelength_ofFrequency`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Optics/Wavelength.lean#L161).
 
 > Converting a wavelength to a frequency and back recovers the wavelength.
 
@@ -170,7 +170,7 @@ lemma ofWavelength_ofFrequency (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (hc : 
       (Wavelength.ofFrequency_pos c hc ν hν) = ν
 ```
 
-**`Wavelength.ofFrequency_ofWavelength`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Wavelength.lean#L175).
+**`Wavelength.ofFrequency_ofWavelength`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Optics/Wavelength.lean#L175).
 
 > Converting a frequency to a wavelength and back recovers the frequency.
 
@@ -183,7 +183,7 @@ lemma ofFrequency_ofWavelength (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (hc : 
 
 ## E. Dimensional correctness
 
-**`SpeedEqWavelengthMulFrequency`**, a def, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Wavelength.lean#L194).
+**`SpeedEqWavelengthMulFrequency`**, a def, [line 194](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Optics/Wavelength.lean#L194).
 
 > The relation `c = λ * ν` between a speed `c`, a wavelength `λ` and a frequency `ν`,
 > stated on real-valued quantities carrying the dimensions of speed, length and inverse time
@@ -194,7 +194,7 @@ def SpeedEqWavelengthMulFrequency (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ) (w : Wi
     (ν : WithDim T𝓭⁻¹ ℝ) : Prop
 ```
 
-**`speedEqWavelengthMulFrequency_isDimensionallyCorrect`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Wavelength.lean#L200).
+**`speedEqWavelengthMulFrequency_isDimensionallyCorrect`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Optics/Wavelength.lean#L200).
 
 > The relation `c = λ * ν` is dimensionally correct: it holds in one system of units if and
 > only if it holds in every system of units.
@@ -210,4 +210,4 @@ lemma speedEqWavelengthMulFrequency_isDimensionallyCorrect :
 
 ## Sources
 
-- [Physlib/Optics/Wavelength.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Optics/Wavelength.lean)
+- [Physlib/Optics/Wavelength.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/Physlib/Optics/Wavelength.lean)

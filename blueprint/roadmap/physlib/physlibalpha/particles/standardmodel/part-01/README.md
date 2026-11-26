@@ -2,29 +2,42 @@
 navigation: transparent
 ---
 
-# The Standard Model to The mass-weight filtration and…
+# The field data of the Standard… to The root decomposition of the…
 
-- [The Standard Model](basic.md)
 - [The field data of the Standard Model](fielddata.md)
-- [Invariant reduction for the gauge and Lorentz groups](invariantreduction.md)
 
-Modules in [CovRealization/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization):
+Modules in [Fermions/DownSinglet/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet):
 
-- [The covariant algebra valued Standard Model](covrealization-basic.md)
-- [The covariant generators of the field algebra](covrealization-generators.md)
-- [The mass-weight grading of the field algebra](covrealization-massweight.md)
-- [The sectors of the field algebra](covrealization-sectors.md)
+- [Down-type singlets (PhyslibAlpha)](fermions-downsinglet-basic.md)
+- [The infinitesimal gauge action on the down-type singlet](fermions-downsinglet-gaugealgebraaction.md)
+- [The down-type singlet as a matter field](fermions-downsinglet-matterfield.md)
 
-Modules in [CovRealization/FermionGaugeSector/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector):
+Modules in [Fermions/LeptonDoublet/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet):
 
-- [The mixed gauge-fermion sector](covrealization-fermiongaugesector-basic.md)
-- [The gauge-fermion invariants below mass weight nine](covrealization-fermiongaugesector-massweight.md)
+- [Lepton doublets (PhyslibAlpha)](fermions-leptondoublet-basic.md)
+- [The infinitesimal gauge action on the lepton doublet](fermions-leptondoublet-gaugealgebraaction.md)
+- [The lepton doublet as a matter field](fermions-leptondoublet-matterfield.md)
 
-Modules in [CovRealization/GaugeHiggsSector/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector):
+Modules in [Fermions/LeptonSinglet/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet):
 
-- [The mixed gauge-Higgs sector](covrealization-gaugehiggssector-basic.md)
-- [The gauge-Higgs invariants below mass weight nine](covrealization-gaugehiggssector-massweight.md)
+- [Charged-lepton singlets (PhyslibAlpha)](fermions-leptonsinglet-basic.md)
+- [The infinitesimal gauge action on the charged-lepton singlet](fermions-leptonsinglet-gaugealgebraaction.md)
+- [The charged-lepton singlet as a matter field](fermions-leptonsinglet-matterfield.md)
 
-Modules in [CovRealization/MassWeight/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight):
+Modules in [Fermions/QuarkDoublet/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/Fermions/QuarkDoublet):
 
-- [The mass-weight filtration and the constant term](covrealization-massweight-filtration.md)
+- [Quark doublets](fermions-quarkdoublet-basic.md)
+- [The infinitesimal gauge action on the quark doublet](fermions-quarkdoublet-gaugealgebraaction.md)
+- [The quark doublet as a matter field](fermions-quarkdoublet-matterfield.md)
+
+Modules in [Fermions/UpSinglet/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/Fermions/UpSinglet):
+
+- [Up-type singlets (PhyslibAlpha)](fermions-upsinglet-basic.md)
+- [The infinitesimal gauge action on the up-type singlet](fermions-upsinglet-gaugealgebraaction.md)
+- [The up-type singlet as a matter field](fermions-upsinglet-matterfield.md)
+
+Modules in [GaugeAlgebra/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/GaugeAlgebra):
+
+- [The gauge algebra of the Standard Model](gaugealgebra-basic.md)
+- [The standard basis of the gauge algebra](gaugealgebra-basis.md)
+- [The root decomposition of the gauge algebra](gaugealgebra-rootdecomposition.md)

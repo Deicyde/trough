@@ -8,7 +8,7 @@ proof: formalized
 
 # Polar decomposition of bounded operators
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.Polar`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean): 24 declarations, 10 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.Polar`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean): 24 declarations, 10 with a docstring.
 
 > Polar decomposition `T = U |T|` of a bounded operator with a partial-isometry factor `U`.
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.Polar`, [Ph
 
 ## A. The polar factor
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.absOperator`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L60).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.absOperator`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L60).
 
 > The absolute value used in the polar construction.
 
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.Polar`, [Ph
 noncomputable def absOperator (T : H →L[ℂ] H) : H →L[ℂ] H
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.rangeClosure`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L63).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.rangeClosure`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L63).
 
 > The closed range subspace of the absolute value.
 
@@ -47,7 +47,7 @@ noncomputable def absOperator (T : H →L[ℂ] H) : H →L[ℂ] H
 noncomputable def rangeClosure (T : H →L[ℂ] H) : Submodule ℂ H
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.absIntoRange`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L67).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.absIntoRange`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L67).
 
 > The absolute value, with codomain restricted to its closed range.
 
@@ -55,7 +55,7 @@ noncomputable def rangeClosure (T : H →L[ℂ] H) : Submodule ℂ H
 noncomputable def absIntoRange (T : H →L[ℂ] H) : H →ₗ[ℂ] rangeClosure T
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.rangeInClosure`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L73).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.rangeInClosure`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L73).
 
 > The inclusion of `range |T|` into its closed range, bundled continuously.
 
@@ -64,52 +64,52 @@ noncomputable def rangeInClosure (T : H →L[ℂ] H) :
     (LinearMap.range (absOperator T).toLinearMap) →L[ℂ] rangeClosure T
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.rangeInClosure_apply`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L80).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.rangeInClosure_apply`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L80).
 
 ```lean
 lemma rangeInClosure_apply (T : H →L[ℂ] H) (x : LinearMap.range (absOperator T).toLinearMap) :
     (rangeInClosure T x : H) = x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.denseRange_rangeInClosure`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L83).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.denseRange_rangeInClosure`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L83).
 
 ```lean
 lemma denseRange_rangeInClosure (T : H →L[ℂ] H) : DenseRange (rangeInClosure T)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.absIntoRange_factor`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L105).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.absIntoRange_factor`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L105).
 
 ```lean
 lemma absIntoRange_factor (T : H →L[ℂ] H) (x : H) :
     absIntoRange T x = rangeInClosure T ⟨absOperator T x, LinearMap.mem_range_self _ x⟩
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.denseRange_absIntoRange`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L108).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.denseRange_absIntoRange`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L108).
 
 ```lean
 lemma denseRange_absIntoRange (T : H →L[ℂ] H) : DenseRange (absIntoRange T)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.absIntoRange_apply`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L123).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.absIntoRange_apply`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L123).
 
 ```lean
 lemma absIntoRange_apply (T : H →L[ℂ] H) (x : H) : (absIntoRange T x : H) = absOperator T x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.norm_apply_eq_norm_abs_apply`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L125).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.norm_apply_eq_norm_abs_apply`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L125).
 
 ```lean
 lemma norm_apply_eq_norm_abs_apply (T : H →L[ℂ] H) (x : H) : ‖T x‖ = ‖absOperator T x‖
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.norm_absIntoRange_apply`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L148).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.norm_absIntoRange_apply`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L148).
 
 ```lean
 lemma norm_absIntoRange_apply (T : H →L[ℂ] H) (x : H) :
     ‖absIntoRange T x‖ = ‖absOperator T x‖
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.instCompleteSpaceRangeClosure`**, an instance, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L153).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.instCompleteSpaceRangeClosure`**, an instance, [line 153](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L153).
 
 > The closed-range subspace is complete, so it admits the orthogonal projection used to define
 > the bounded polar factor.
@@ -119,7 +119,7 @@ noncomputable instance instCompleteSpaceRangeClosure (T : H →L[ℂ] H) :
     CompleteSpace (rangeClosure T)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.polarOnRange`**, a def, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L159).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.polarOnRange`**, a def, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L159).
 
 > The polar factor on the closed range of `|T|`.
 
@@ -127,20 +127,20 @@ noncomputable instance instCompleteSpaceRangeClosure (T : H →L[ℂ] H) :
 noncomputable def polarOnRange (T : H →L[ℂ] H) : rangeClosure T →L[ℂ] H
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.polarOnRange_eq_on_abs`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L162).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.polarOnRange_eq_on_abs`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L162).
 
 ```lean
 lemma polarOnRange_eq_on_abs (T : H →L[ℂ] H) (x : H) :
     polarOnRange T (absIntoRange T x) = T x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.polarOnRange_norm_le`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L170).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.polarOnRange_norm_le`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L170).
 
 ```lean
 lemma polarOnRange_norm_le (T : H →L[ℂ] H) (x : rangeClosure T) : ‖polarOnRange T x‖ ≤ ‖x‖
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.polarFactor`**, a def, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L181).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.polarFactor`**, a def, [line 181](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L181).
 
 > The bounded polar factor, obtained by extending the range isometry by zero on the orthogonal
 > complement of `closure (range |T|)`.
@@ -149,25 +149,25 @@ lemma polarOnRange_norm_le (T : H →L[ℂ] H) (x : rangeClosure T) : ‖polarOn
 noncomputable def polarFactor (T : H →L[ℂ] H) : H →L[ℂ] H
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.polarFactor_eq_on_abs`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L184).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.polarFactor_eq_on_abs`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L184).
 
 ```lean
 lemma polarFactor_eq_on_abs (T : H →L[ℂ] H) (x : H) : polarFactor T (absOperator T x) = T x
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.polarFactor_norm_le`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L193).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.polarFactor_norm_le`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L193).
 
 ```lean
 lemma polarFactor_norm_le (T : H →L[ℂ] H) (x : H) : ‖polarFactor T x‖ ≤ ‖x‖
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.polarFactor_opNorm_le`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L201).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.polarFactor_opNorm_le`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L201).
 
 ```lean
 lemma polarFactor_opNorm_le (T : H →L[ℂ] H) : ‖polarFactor T‖ ≤ 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.polarFactor_mul_absOperator`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L205).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.polarFactor_mul_absOperator`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L205).
 
 ```lean
 lemma polarFactor_mul_absOperator (T : H →L[ℂ] H) : polarFactor T * absOperator T = T
@@ -175,14 +175,14 @@ lemma polarFactor_mul_absOperator (T : H →L[ℂ] H) : polarFactor T * absOpera
 
 ### A.1. The partial-isometry adjoint identity
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.polarOnRange_norm_eq`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L210).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.polarOnRange_norm_eq`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L210).
 
 ```lean
 lemma polarOnRange_norm_eq (T : H →L[ℂ] H) (y : rangeClosure T) :
     ‖polarOnRange T y‖ = ‖y‖
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.adjoint_polarOnRange_comp_self`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L222).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.adjoint_polarOnRange_comp_self`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L222).
 
 > `polarOnRange T` is an isometry: its adjoint is a left inverse.
 
@@ -191,7 +191,7 @@ lemma adjoint_polarOnRange_comp_self (T : H →L[ℂ] H) :
     ContinuousLinearMap.adjoint (polarOnRange T) ∘L polarOnRange T = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.star_polarFactor_mul_polarFactor`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L229).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.star_polarFactor_mul_polarFactor`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L229).
 
 > `star (polarFactor T) * polarFactor T` is exactly the orthogonal projection onto
 > `rangeClosure T`.
@@ -201,7 +201,7 @@ lemma star_polarFactor_mul_polarFactor (T : H →L[ℂ] H) :
     star (polarFactor T) * polarFactor T = (rangeClosure T).starProjection
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.Polar.star_polarFactor_mul_self`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L245).
+**`PhyslibAlpha.ProbabilisticTheory.Polar.star_polarFactor_mul_self`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean#L245).
 
 > **`U⋆ T = |T|`** for the polar factor `U` of any bounded operator `T`.
 
@@ -215,4 +215,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean)

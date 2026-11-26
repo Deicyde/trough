@@ -2,22 +2,19 @@
 navigation: transparent
 ---
 
-# The ten kinetic blocks to The gauge weight decomposition…
+# The gauge weight decomposition… to The Yukawa terms built on the…
 
-- [The ten kinetic blocks](isfermionsector-massweight-kineticterms.md)
-- [The kinetic terms at mass weight eight](isfermionsector-massweight-massdimeight.md)
-- [The invariants below mass weight eight (IsFermionSector/MassWeight/MassDimLTEight)](isfermionsector-massweight-massdimlteight.md)
+- [The gauge weight decomposition of the Higgs mass-weight submodules](localfieldalgebra-scalarsector-massweight-gaugew.md)
+- [The Higgs invariants of mass weight eight](localfieldalgebra-scalarsector-massweight-massdi.md)
+- [The Higgs invariants below mass weight eight](localfieldalgebra-scalarsector-massweight-massdi-2.md)
 
-Modules in [IsGaugeSector/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector):
+Modules in [LocalFieldAlgebra/YukawaSector/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/LocalFieldAlgebra/YukawaSector):
 
-- [The gauge sector](isgaugesector-basic.md)
+- [The Yukawa sector's mass-weight submodules](localfieldalgebra-yukawasector-basic.md)
+- [The gauge weight decomposition of the Yukawa sector at mass weight eight](localfieldalgebra-yukawasector-gaugeweight.md)
+- [The Yukawa sector at mass weight eight](localfieldalgebra-yukawasector-massdimeight.md)
+- [The Yukawa invariants below mass weight eight](localfieldalgebra-yukawasector-massdimlteight.md)
 
-Modules in [IsGaugeSector/Deriv/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv):
+Modules in [LocalFieldAlgebra/YukawaSector/Families/](https://github.com/leanprover-community/physlib/tree/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/Particles/StandardModel/LocalFieldAlgebra/YukawaSector/Families):
 
-- [The centre of `SL(2,ℂ)` on the gauge sector](isgaugesector-deriv-centre.md)
-- [The gauge weight decomposition of the gauge sector](isgaugesector-deriv-gaugeweight.md)
-
-Modules in [IsGaugeSector/MassWeight/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight):
-
-- [The mass-weight grading of the gauge sector](isgaugesector-massweight-basic.md)
-- [The gauge weight decomposition of the gauge mass-weight submodules](isgaugesector-massweight-gaugeweight.md)
+- [The Yukawa terms built on the conjugate Higgs symbol](localfieldalgebra-yukawasector-families-barhiggs.md)

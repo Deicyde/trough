@@ -8,7 +8,7 @@ proof: formalized
 
 # The boundary value formula for compactly supported distributional sources
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.DistributionSource`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean): 13 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.DistributionSource`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean): 13 declarations, 7 with a docstring.
 
 > The retarded response of a compactly supported distribution is the limit of the responses to its
 > damped advanced solutions.
@@ -53,7 +53,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.Distrib
 
 > - `tendsto_distribution_boundary_value` : the boundary value formula.
 
-**`KleinGordon.timeCLM`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L79).
+**`KleinGordon.timeCLM`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L79).
 
 > The time coordinate as a continuous linear functional.
 
@@ -61,13 +61,13 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.Distrib
 def timeCLM (d : ℕ) : SpaceTime d →L[ℝ] ℝ
 ```
 
-**`KleinGordon.timeCLM_symm`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L82).
+**`KleinGordon.timeCLM_symm`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L82).
 
 ```lean
 lemma timeCLM_symm (s : ℝ) (x : Space d) : timeCLM d ((coordinates d).symm (s, x)) = s
 ```
 
-**`KleinGordon.slice_twist`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L85).
+**`KleinGordon.slice_twist`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L85).
 
 ```lean
 lemma slice_twist (ε : ℝ) (ψ : 𝓓((⊤ : Opens (SpaceTime d)), ℝ)) (s : ℝ) :
@@ -77,7 +77,7 @@ lemma slice_twist (ε : ℝ) (ψ : 𝓓((⊤ : Opens (SpaceTime d)), ℝ)) (s : 
         (TestFunction.postcompCLM Complex.ofRealCLM ψ)) s
 ```
 
-**`KleinGordon.kernel_twist`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L99).
+**`KleinGordon.kernel_twist`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L99).
 
 > The kernel at the origin applied to a twisted test function is the damped kernel.
 
@@ -88,7 +88,7 @@ lemma kernel_twist (m ε : ℝ) (ψ : 𝓓((⊤ : Opens (SpaceTime d)), ℝ)) :
         (sourceEquiv ℂ (TestFunction.postcompCLM Complex.ofRealCLM ψ))).re
 ```
 
-**`KleinGordon.realAdvancedCutoff_eq`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L110).
+**`KleinGordon.realAdvancedCutoff_eq`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L110).
 
 ```lean
 lemma realAdvancedCutoff_eq (m : ℝ) (χ : 𝓓((⊤ : Opens (SpaceTime d)), ℝ))
@@ -96,14 +96,14 @@ lemma realAdvancedCutoff_eq (m : ℝ) (χ : 𝓓((⊤ : Opens (SpaceTime d)), �
     realAdvancedCutoff m χ g p = χ p * retardedPointSource m p g
 ```
 
-**`KleinGordon.tsupport_realAdvancedCutoff_subset`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L117).
+**`KleinGordon.tsupport_realAdvancedCutoff_subset`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L117).
 
 ```lean
 lemma tsupport_realAdvancedCutoff_subset (m : ℝ) (χ g : 𝓓((⊤ : Opens (SpaceTime d)), ℝ)) :
     tsupport ⇑(realAdvancedCutoff m χ g) ⊆ tsupport χ
 ```
 
-**`KleinGordon.precompTranslationCLM_twistCLM`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L124).
+**`KleinGordon.precompTranslationCLM_twistCLM`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L124).
 
 ```lean
 lemma precompTranslationCLM_twistCLM (a : ℝ) (p : SpaceTime d)
@@ -112,7 +112,7 @@ lemma precompTranslationCLM_twistCLM (a : ℝ) (p : SpaceTime d)
       Real.exp (a * timeCLM d p) • ExpTwist.twistCLM (timeCLM d) a (precompTranslationCLM p g)
 ```
 
-**`KleinGordon.twisted_apply`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L135).
+**`KleinGordon.twisted_apply`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L135).
 
 > **The twisted advanced response is the damped kernel centred at `p`.**
 
@@ -125,7 +125,7 @@ lemma twisted_apply (m ε : ℝ) (χ φ : 𝓓((⊤ : Opens (SpaceTime d)), ℝ)
           (TestFunction.postcompCLM Complex.ofRealCLM (precompTranslationCLM p φ)))).re
 ```
 
-**`KleinGordon.twisted_apply_fourier`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L152).
+**`KleinGordon.twisted_apply_fourier`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L152).
 
 > For `ε > 0` the twisted advanced response is the cut off resolvent pairing of the translate.
 
@@ -137,7 +137,7 @@ lemma twisted_apply_fourier (m : ℝ) {ε : ℝ} (hε : 0 < ε) (χ φ : 𝓓((�
       χ p * (fourierPairing (m ^ 2) ε (ofTestFunction (precompTranslationCLM p φ))).re
 ```
 
-**`KleinGordon.splitSource_translate`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L159).
+**`KleinGordon.splitSource_translate`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L159).
 
 ```lean
 lemma splitSource_translate (p : SpaceTime d) (φ : 𝓓((⊤ : Opens (SpaceTime d)), ℝ)) :
@@ -145,7 +145,7 @@ lemma splitSource_translate (p : SpaceTime d) (φ : 𝓓((⊤ : Opens (SpaceTime
       fun v => splitSource d (ofTestFunction φ) (v + (splitEquiv d).symm p)
 ```
 
-**`KleinGordon.fourierPairing_translate`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L168).
+**`KleinGordon.fourierPairing_translate`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L168).
 
 > **The pairing of a translate in Fourier variables.** The resolvent pairing of the translate of
 > `φ` by `p` is the integral of the phase `𝐞 ⟨p, ζ⟩` times the transform of `φ` times the
@@ -159,7 +159,7 @@ lemma fourierPairing_translate (μ ε : ℝ) (p : SpaceTime d)
         (𝓕 (splitSource d (ofTestFunction φ)) ζ * splitResolvent μ ε ζ)
 ```
 
-**`KleinGordon.twisted_apply_phase`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L183).
+**`KleinGordon.twisted_apply_phase`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L183).
 
 > **The twisted advanced response in Fourier variables.** For `ε > 0` it is
 > `x ↦ χ x * Re ∫ 𝐞 ⟨x, ζ⟩ φ̂ (ζ) / (ω_ξ² - (2π w + i ε)²) dζ`.
@@ -173,7 +173,7 @@ lemma twisted_apply_phase (m : ℝ) {ε : ℝ} (hε : 0 < ε) (χ φ : 𝓓((⊤
         (𝓕 (splitSource d (ofTestFunction φ)) ζ * splitResolvent (m ^ 2) ε ζ)).re
 ```
 
-**`KleinGordon.tendsto_distribution_boundary_value`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L192).
+**`KleinGordon.tendsto_distribution_boundary_value`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean#L192).
 
 > **The boundary value formula for compactly supported distributional sources.**
 
@@ -202,4 +202,4 @@ lemma tendsto_distribution_boundary_value (m : ℝ) (T : compactDistributions (S
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean)

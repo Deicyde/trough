@@ -8,7 +8,7 @@ proof: formalized
 
 # The 9j symbols
 
-The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.NineJ`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.NineJ`, [PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean): 4 declarations, 4 with a docstring.
 
 > The 9j symbols as sums over products of three 6j symbols, and their invariance under
 > transposition.
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.QuantumMechanics.AngularMomentum.NineJ`, [PhyslibAlpha/
 
 ## A. The 9j symbol
 
-**`PhyslibAlpha.Sl2.sixJSym_eq_zero_of_lt`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean#L61).
+**`PhyslibAlpha.Sl2.sixJSym_eq_zero_of_lt`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean#L61).
 
 > A 6j symbol whose triad `(j₁ j₅ j₆)` violates the triangle inequality `j₆ ≤ j₁ + j₅`
 > vanishes.
@@ -52,7 +52,7 @@ lemma sixJSym_eq_zero_of_lt {j₁ j₂ j₃ j₄ j₅ j₆ : ℕ} (h : j₁ + j�
     sixJSym j₁ j₂ j₃ j₄ j₅ j₆ = 0
 ```
 
-**`PhyslibAlpha.Sl2.nineJSym`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean#L72).
+**`PhyslibAlpha.Sl2.nineJSym`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean#L72).
 
 > The **9j symbol** `{j₁₁ j₁₂ j₁₃; j₂₁ j₂₂ j₂₃; j₃₁ j₃₂ j₃₃}` (doubled units) as a sum over
 > products of three 6j symbols.
@@ -61,7 +61,7 @@ lemma sixJSym_eq_zero_of_lt {j₁ j₂ j₃ j₄ j₅ j₆ : ℕ} (h : j₁ + j�
 def nineJSym (j₁₁ j₁₂ j₁₃ j₂₁ j₂₂ j₂₃ j₃₁ j₃₂ j₃₃ : ℕ) : ℝ
 ```
 
-**`PhyslibAlpha.Sl2.nineJSym_eq_sum`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean#L78).
+**`PhyslibAlpha.Sl2.nineJSym_eq_sum`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean#L78).
 
 > The sum defining `nineJSym` may be taken over any range containing `J ≤ j₁₁ + j₃₃`.
 
@@ -75,7 +75,7 @@ lemma nineJSym_eq_sum {j₁₁ j₁₂ j₁₃ j₂₁ j₂₂ j₂₃ j₃₁ j
 
 ## B. Invariance under transposition
 
-**`PhyslibAlpha.Sl2.nineJSym_transpose`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean#L95).
+**`PhyslibAlpha.Sl2.nineJSym_transpose`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean#L95).
 
 > **Transposition symmetry.** The 9j symbol is invariant under exchange of rows and columns.
 
@@ -91,4 +91,4 @@ lemma nineJSym_transpose (j₁₁ j₁₂ j₁₃ j₂₁ j₂₂ j₂₃ j₃�
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean)
+- [PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean)

@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "rev": "d6a3586eb33124da3d6740c9e609d8adbf87e651",
  "modules": [
   {
    "file": "PhyslibAlpha/CondensedMatter/Bloch/Algebraic.lean",
@@ -1261,6 +1261,40 @@
      "line": 384,
      "doc": "**The band structure**: for a Hermitian symbol, the spectrum of the translation-invariant\noperator on `ℓ²(G, ℂ^N)` is exactly the set of band values `ε_k(χ)`, the ordered eigenvalues of the\nBloch matrices.",
      "statement": "lemma spectrum_blochOperator_eq_bands\n    (b : C(PontryaginDual (Multiplicative G), Matrix (Fin N) (Fin N) ℂ))\n    (hb : ∀ χ, (b χ).IsHermitian) :\n    spectrum ℂ (blochOperator b) =\n      {z | ∃ (χ : PontryaginDual (Multiplicative G)) (k : Fin (Fintype.card (Fin N))),\n        z = ((bandOf (hb χ) k : ℝ) : ℂ)}",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/CondensedMatter/Bloch/TightBindingChain.lean",
+   "module": "PhyslibAlpha.CondensedMatter.Bloch.TightBindingChain",
+   "title": "The tight binding chain as a finite periodic crystal",
+   "doc": "## i. Overview\n\nThe tight binding chain of `N` sites with periodic boundary conditions is a finite periodic\ncrystal with translation group `Fin N` and one orbital per cell. In the coordinates `⟪|x⟩, ψ⟫`\nits Hamiltonian is the hopping operator with the matrix `E0` on the site itself and `-t` to each\nof its two neighbours.\n\n## ii. Key results\n\n- `hoppingMatrix` : the hopping matrices of the tight binding chain.\n- `hopping_hoppingMatrix` : the Hamiltonian of the tight binding chain is the hopping operator of\n  these matrices.\n\n## iii. Table of contents\n\n- A. The Hamiltonian as a hopping operator\n\n## iv. References\n\nNone.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
+   "sections": [
+    {
+     "line": 47,
+     "text": "## A. The Hamiltonian as a hopping operator"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "CondensedMatter.TightBindingChain.hoppingMatrix",
+     "kind": "def",
+     "line": 55,
+     "doc": "The hopping matrices of the tight binding chain as a finite periodic crystal with one orbital\nper cell: `E0` on the site itself and `-t` to each of its two neighbours.",
+     "statement": "noncomputable def hoppingMatrix (r : Fin T.N) : Matrix (Fin 1) (Fin 1) ℂ",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.hopping_hoppingMatrix",
+     "kind": "lemma",
+     "line": 61,
+     "doc": "The Hamiltonian of the tight binding chain, in the coordinates `⟪|x⟩, ψ⟫`, is the hopping\noperator of the finite periodic crystal with the matrices `hoppingMatrix`.",
+     "statement": "lemma hopping_hoppingMatrix (ψ : T.HilbertSpace) :\n    hopping T.hoppingMatrix (fun x _ => ⟪|x⟩, ψ⟫_ℂ) = fun x _ => ⟪|x⟩, T.hamiltonian ψ⟫_ℂ := by\n  ext x i\n  rw [hopping_apply, ← hamiltonian_hermitian, hamiltonian_apply_localizedState]\n  simp only [hoppingMatrix, Matrix.smul_mulVec, Matrix.one_mulVec, Finset.sum_apply,\n    Pi.smul_apply, smul_eq_mul, sub_mul, ite_mul, zero_mul, Finset.sum_sub_distrib,\n    Finset.sum_ite_eq', Finset.mem_univ, ite_true, sub_zero, sub_neg_eq_add, inner_sub_left,\n    inner_add_left, inner_smul_left, Complex.conj_ofReal]\n  ring",
      "sorry": false
     }
    ],
@@ -7274,7 +7308,7 @@
      "text": "## B. The pair of an axis does not commute"
     },
     {
-     "line": 130,
+     "line": 134,
      "text": "## C. Commuting and axes"
     }
    ],
@@ -7314,7 +7348,7 @@
     {
      "name": "CondensedMatter.TightBindingChain.variance_mul_variance_cubePairs_pos",
      "kind": "lemma",
-     "line": 121,
+     "line": 125,
      "doc": "In the maximal current state of the cube, the variances of `H` and `X` of each axis have a\npositive product.",
      "statement": "lemma variance_mul_variance_cubePairs_pos (hx : Tx.t ≠ 0) (hy : Ty.t ≠ 0) (hz : Tz.t ≠ 0)\n    (hNx : 2 ≤ Tx.N) (hNy : 2 ≤ Ty.N) (hNz : 2 ≤ Tz.N) (k : Fin 3) :\n    0 < variance (Tx.maxCurrentCubeVectorState Ty Tz) (Tx.cubePairs Ty Tz (0, k)) *\n      variance (Tx.maxCurrentCubeVectorState Ty Tz) (Tx.cubePairs Ty Tz (1, k))",
      "sorry": false
@@ -7322,7 +7356,7 @@
     {
      "name": "CondensedMatter.TightBindingChain.bracket_cubePairs_eq_zero_iff",
      "kind": "lemma",
-     "line": 137,
+     "line": 141,
      "doc": "Two distinct observables of the cube commute if and only if they lie on different axes.",
      "statement": "lemma bracket_cubePairs_eq_zero_iff (hx : Tx.t ≠ 0) (hy : Ty.t ≠ 0) (hz : Tz.t ≠ 0)\n    (hNx : 2 ≤ Tx.N) (hNy : 2 ≤ Ty.N) (hNz : 2 ≤ Tz.N) {p q : Fin 2 × Fin 3} (h : p ≠ q) :\n    ⁅Tx.cubePairs Ty Tz p, Tx.cubePairs Ty Tz q⁆ = 0 ↔ p.2 ≠ q.2",
      "sorry": false
@@ -9468,27 +9502,31 @@
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.VelocityBand.Width",
    "title": "The velocity band is open from four sites on",
-   "doc": "## i. Overview\n\nTime reversal `Θ` (`Current/TimeReversal`) commutes with `H` and `X` and reverses the current `J`,\nso it keeps the uncertainty defect, as does a global phase. A unit vector moving at the\nspeed limit is, up to a phase, an extreme current eigenstate, the maximal current state or its\ntime reverse, so it has the defect of the maximal current state. From four sites on this defect\nis positive, and since the threshold is attained it lies strictly below the speed limit: the\nvelocity band is not empty.\n\n## ii. Key results\n\n- `defectOf_timeReversal`, `meanOf_current_timeReversal` : `Θ` keeps the defect and reverses\n  the current.\n- `defectOf_eq_of_meanOf_current_eq` : at the speed limit, the defect of the maximal current state.\n- `threshold_lt_maxCurrent`, `maxCurrent_mem_velocityBand` : for `N ≥ 4` the band is not empty.\n\n## iii. Table of contents\n\n- A. Time reversal and the uncertainty defect\n- B. The speed limit is reached only by extreme eigenstates\n- C. The band is not empty\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "doc": "## i. Overview\n\nTime reversal `Θ` (`Current/TimeReversal`) commutes with `H` and `X` and reverses the current `J`,\nso it keeps the uncertainty defect, as does a global phase. A unit vector moving at the\nspeed limit is, up to a phase, an extreme current eigenstate, the maximal current state or its\ntime reverse, so it has the defect of the maximal current state. From four sites on this defect\nis positive, and since the threshold is attained it lies strictly below the speed limit: the\nvelocity band is not empty.\n\n## ii. Key results\n\n- `defectOf_timeReversal`, `meanOf_current_timeReversal` : `Θ` keeps the defect and reverses\n  the current.\n- `defectOf_eq_of_meanOf_current_eq` : at the speed limit, the defect of the maximal current state.\n- `threshold_lt_maxCurrent`, `maxCurrent_mem_velocityBand` : for `N ≥ 4` the band is not empty.\n- `three_div_two_mul_abs_le_threshold` : for `N = 4` the threshold is at least `3/2 |a t|`.\n\n## iii. Table of contents\n\n- A. Time reversal and the uncertainty defect\n- B. The speed limit is reached only by extreme eigenstates\n- C. The band is not empty\n- D. A vector of minimum uncertainty on four sites\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
    "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
-     "line": 49,
+     "line": 51,
      "text": "## A. Time reversal and the uncertainty defect"
     },
     {
-     "line": 90,
+     "line": 92,
      "text": "## B. The speed limit is reached only by extreme eigenstates"
     },
     {
-     "line": 180,
+     "line": 182,
      "text": "## C. The band is not empty"
+    },
+    {
+     "line": 210,
+     "text": "## D. A vector of minimum uncertainty on four sites"
     }
    ],
    "declarations": [
     {
      "name": "CondensedMatter.TightBindingChain.meanOf_timeReversal",
      "kind": "lemma",
-     "line": 55,
+     "line": 57,
      "doc": "",
      "statement": "lemma meanOf_timeReversal {A : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace}\n    (hA : ∀ ψ, A (T.timeReversal ψ) = T.timeReversal (A ψ)) (ψ : T.HilbertSpace) :\n    T.meanOf A (T.timeReversal ψ) = T.meanOf A ψ",
      "sorry": false
@@ -9496,7 +9534,7 @@
     {
      "name": "CondensedMatter.TightBindingChain.meanOf_current_timeReversal",
      "kind": "lemma",
-     "line": 60,
+     "line": 62,
      "doc": "",
      "statement": "lemma meanOf_current_timeReversal (ψ : T.HilbertSpace) :\n    T.meanOf T.current (T.timeReversal ψ) = -T.meanOf T.current ψ",
      "sorry": false
@@ -9504,7 +9542,7 @@
     {
      "name": "CondensedMatter.TightBindingChain.flucOf_timeReversal",
      "kind": "lemma",
-     "line": 65,
+     "line": 67,
      "doc": "",
      "statement": "lemma flucOf_timeReversal {A : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace}\n    (hA : ∀ ψ, A (T.timeReversal ψ) = T.timeReversal (A ψ)) (ψ : T.HilbertSpace) :\n    T.flucOf A (T.timeReversal ψ) = T.timeReversal (T.flucOf A ψ)",
      "sorry": false
@@ -9512,7 +9550,7 @@
     {
      "name": "CondensedMatter.TightBindingChain.defectOf_timeReversal",
      "kind": "lemma",
-     "line": 71,
+     "line": 73,
      "doc": "Time reversal keeps the uncertainty defect.",
      "statement": "lemma defectOf_timeReversal (ψ : T.HilbertSpace) :\n    T.defectOf (T.timeReversal ψ) = T.defectOf ψ",
      "sorry": false
@@ -9520,7 +9558,7 @@
     {
      "name": "CondensedMatter.TightBindingChain.defectOf_smul",
      "kind": "lemma",
-     "line": 78,
+     "line": 80,
      "doc": "A global phase keeps the uncertainty defect.",
      "statement": "lemma defectOf_smul {c : ℂ} (hc : ‖c‖ = 1) (ψ : T.HilbertSpace) :\n    T.defectOf (c • ψ) = T.defectOf ψ",
      "sorry": false
@@ -9528,7 +9566,7 @@
     {
      "name": "CondensedMatter.TightBindingChain.timeReversal_currentEigenstate_one",
      "kind": "lemma",
-     "line": 97,
+     "line": 99,
      "doc": "The time reverse of the longest standing wave is the shortest one.",
      "statement": "lemma timeReversal_currentEigenstate_one :\n    T.timeReversal (T.currentEigenstate 1) = T.currentEigenstate T.N",
      "sorry": false
@@ -9536,7 +9574,7 @@
     {
      "name": "CondensedMatter.TightBindingChain.currentBasis_zero",
      "kind": "lemma",
-     "line": 111,
+     "line": 113,
      "doc": "The maximal current state and its time reverse are the extreme current eigenstates.",
      "statement": "lemma currentBasis_zero (ht : T.t ≠ 0) :\n    T.currentBasis ht ⟨0, Nat.pos_of_neZero _⟩ = T.maxCurrentState",
      "sorry": false
@@ -9544,7 +9582,7 @@
     {
      "name": "CondensedMatter.TightBindingChain.currentBasis_last",
      "kind": "lemma",
-     "line": 115,
+     "line": 117,
      "doc": "",
      "statement": "lemma currentBasis_last (ht : T.t ≠ 0) :\n    T.currentBasis ht ⟨T.N - 1, Nat.sub_lt (Nat.pos_of_neZero _) one_pos⟩ =\n      T.timeReversal T.maxCurrentState",
      "sorry": false
@@ -9552,7 +9590,7 @@
     {
      "name": "CondensedMatter.TightBindingChain.defectOf_eq_of_meanOf_current_eq",
      "kind": "lemma",
-     "line": 123,
+     "line": 125,
      "doc": "A unit vector moving at the speed limit has the defect of the maximal current state.",
      "statement": "lemma defectOf_eq_of_meanOf_current_eq (ht : T.t ≠ 0) {ψ : T.HilbertSpace} (hψ : ‖ψ‖ = 1)\n    (hv : T.meanOf T.current ψ = T.maxCurrent) :\n    T.defectOf ψ = T.defectOf T.maxCurrentState",
      "sorry": false
@@ -9560,7 +9598,7 @@
     {
      "name": "CondensedMatter.TightBindingChain.threshold_lt_maxCurrent",
      "kind": "lemma",
-     "line": 187,
+     "line": 189,
      "doc": "From four sites on, the threshold lies strictly below the speed limit.",
      "statement": "lemma threshold_lt_maxCurrent (ht : T.t ≠ 0) (hN : 4 ≤ T.N) : T.threshold < T.maxCurrent",
      "sorry": false
@@ -9568,13 +9606,21 @@
     {
      "name": "CondensedMatter.TightBindingChain.maxCurrent_mem_velocityBand",
      "kind": "lemma",
-     "line": 203,
+     "line": 205,
      "doc": "From four sites on, the velocity band is not empty: it contains the speed limit.",
      "statement": "lemma maxCurrent_mem_velocityBand (ht : T.t ≠ 0) (hN : 4 ≤ T.N) :\n    T.maxCurrent ∈ T.velocityBand",
      "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.three_div_two_mul_abs_le_threshold",
+     "kind": "lemma",
+     "line": 232,
+     "doc": "On four sites the threshold is at least `3/2 |a t|`: the unit vector\n`√2/8 (2i, -(3 + i√3), √3 - 3i, 2)` has zero defect and current `3 a t / 2`.",
+     "statement": "lemma three_div_two_mul_abs_le_threshold (hN : T.N = 4) :\n    3 / 2 * |T.a * T.t| ≤ T.threshold",
+     "sorry": false
     }
    ],
-   "private": 0,
+   "private": 2,
    "aliases": 0,
    "informal": 0
   }

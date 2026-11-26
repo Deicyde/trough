@@ -8,7 +8,7 @@ proof: formalized
 
 # The Koopman representation of a measure-preserving action
 
-The module `PhyslibAlpha.ProbabilisticTheory.Representation.Koopman`, [PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean): 12 declarations, 6 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Representation.Koopman`, [PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean): 12 declarations, 6 with a docstring.
 
 > An abelian group acting on a probability space by measure-preserving maps acts unitarily on `L²`.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.Koopman`, [PhyslibAl
 
 ## A. The Koopman operators
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopmanIsometry`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L72).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopmanIsometry`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L72).
 
 > The composition operator `f ↦ f ∘ T_g⁻¹` on `L²(μ)` as a linear isometry.
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.Koopman`, [PhyslibAl
 def koopmanIsometry (g : Γ) : Lp E 2 μ →ₗᵢ[ℂ] Lp E 2 μ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.compMeasurePreserving_congr`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L76).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.compMeasurePreserving_congr`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L76).
 
 ```lean
 lemma compMeasurePreserving_congr {f f' : X → X} (hf : MeasurePreserving f μ μ)
@@ -52,21 +52,21 @@ lemma compMeasurePreserving_congr {f f' : X → X} (hf : MeasurePreserving f μ 
     Lp.compMeasurePreserving f hf g = Lp.compMeasurePreserving f' hf' g
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopmanIsometry_apply`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L82).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopmanIsometry_apply`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L82).
 
 ```lean
 lemma koopmanIsometry_apply (g : Γ) (f : Lp E 2 μ) :
     koopmanIsometry μ T hT g f = Lp.compMeasurePreserving (T g⁻¹) (hT g⁻¹) f
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopmanIsometry_mul`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L86).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopmanIsometry_mul`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L86).
 
 ```lean
 lemma koopmanIsometry_mul (g h : Γ) (f : Lp E 2 μ) :
     koopmanIsometry μ T hT (g * h) f = koopmanIsometry μ T hT g (koopmanIsometry μ T hT h f)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopmanIsometry_one`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L97).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopmanIsometry_one`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L97).
 
 ```lean
 lemma koopmanIsometry_one (f : Lp E 2 μ) : koopmanIsometry μ T hT 1 f = f
@@ -74,7 +74,7 @@ lemma koopmanIsometry_one (f : Lp E 2 μ) : koopmanIsometry μ T hT 1 f = f
 
 ## B. The unitary representation
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopmanEquiv`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L107).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopmanEquiv`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L107).
 
 > The Koopman operator as a linear isometric equivalence.
 
@@ -82,13 +82,13 @@ lemma koopmanIsometry_one (f : Lp E 2 μ) : koopmanIsometry μ T hT 1 f = f
 def koopmanEquiv (g : Γ) : Lp E 2 μ ≃ₗᵢ[ℂ] Lp E 2 μ
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopmanEquiv_one`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L119).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopmanEquiv_one`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L119).
 
 ```lean
 lemma koopmanEquiv_one : koopmanEquiv (E := E) μ T hT 1 = 1
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopmanEquiv_mul`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L123).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopmanEquiv_mul`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L123).
 
 ```lean
 lemma koopmanEquiv_mul (g h : Γ) :
@@ -96,7 +96,7 @@ lemma koopmanEquiv_mul (g h : Γ) :
       koopmanEquiv (E := E) μ T hT g * koopmanEquiv (E := E) μ T hT h
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopman`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L130).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopman`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L130).
 
 > **The Koopman representation**: a group acting on a measure space by measure-preserving
 > bijections acts unitarily on `L²(μ)` by `(U_g f)(x) = f(g⁻¹ x)`.
@@ -105,7 +105,7 @@ lemma koopmanEquiv_mul (g h : Γ) :
 def koopman : Γ →* unitary (Lp E 2 μ →L[ℂ] Lp E 2 μ)
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopman_apply`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L136).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.koopman_apply`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L136).
 
 > The Koopman operator acts by composition with the inverse of the group action.
 
@@ -115,7 +115,7 @@ lemma koopman_apply (g : Γ) (f : Lp E 2 μ) :
       Lp.compMeasurePreserving (T g⁻¹) (hT g⁻¹) f
 ```
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.inner_koopman`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L142).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.inner_koopman`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L142).
 
 > **The correlation function of an observable**: the matrix coefficient of the Koopman
 > representation is the covariance `∫ ⟨f(x), f(g⁻¹ x)⟩ dμ(x)` of `f` with its translate.
@@ -128,7 +128,7 @@ lemma inner_koopman (g : Γ) (f : Lp E 2 μ) :
 
 ## C. Invariant functions
 
-**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.range_projection_one_koopman`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L169).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.range_projection_one_koopman`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean#L169).
 
 > **Invariant observables of a classical system have zero momentum**: the spectral projection of
 > the trivial character of the Koopman representation projects onto the translation-invariant
@@ -148,4 +148,4 @@ lemma range_projection_one_koopman :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean at d6a3586e](https://github.com/leanprover-community/physlib/blob/d6a3586eb33124da3d6740c9e609d8adbf87e651/PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean)
