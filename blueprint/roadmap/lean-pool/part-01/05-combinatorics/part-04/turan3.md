@@ -1,0 +1,40 @@
+---
+declaration: theorem
+origin: cited
+lean: Turan3.turans, Turan3.finale_bound, Turan3.Better_forms_clique
+statement: formalized
+proof: formalized
+---
+
+# Turán's theorem (the "Book" weighting proof)
+
+> Formalizes the weighting/optimization proof of Turán's theorem from Proofs from THE BOOK, bounding the number of edges of a p-clique-free simple graph by (1/2)(1 - 1/(p-1)) n².
+
+*Quoted from the card [LeanPool/projects/turan3.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/turan3.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
+
+## Depends on
+
+No dependencies are recorded: edges between declarations need Lean, and this chapter reads the source text without running it.
+
+## Main results
+
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+
+- [`Turan3.turans`](https://leanpool.github.io/lean-pool/LeanPool/Turan3/Turans3rdProof.html#Turan3.turans) (theorem; a main declaration), declared in [LeanPool/Turan3/Turans3rdProof.lean, line 2578](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Turan3/Turans3rdProof.lean#L2578): “Turán's theorem — a p-clique-free simple graph on n vertices has at most (1/2)(1 - 1/(p-1)) n² edges.”
+- [`Turan3.finale_bound`](https://leanpool.github.io/lean-pool/LeanPool/Turan3/Turans3rdProof.html#Turan3.finale_bound) (theorem; a main declaration), declared in [LeanPool/Turan3/Turans3rdProof.lean, line 2344](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Turan3/Turans3rdProof.lean#L2344): “For any weight distribution on a p-clique-free graph, the total edge weight is at most ((p-1)(p-2)/2)·(1/(p-1))², the bound used to derive the edge count.”
+- [`Turan3.Better_forms_clique`](https://leanpool.github.io/lean-pool/LeanPool/Turan3/Turans3rdProof.html#Turan3.Better_forms_clique) (theorem; a main declaration), declared in [LeanPool/Turan3/Turans3rdProof.lean, line 532](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Turan3/Turans3rdProof.lean#L532): “Starting from any weight function, the minimal-support weight-non-decreasing improvement has support that forms a clique.”
+- [`Turan3.Enhance_total_weight_stricinc`](https://leanpool.github.io/lean-pool/LeanPool/Turan3/Turans3rdProof.html#Turan3.Enhance_total_weight_stricinc) (theorem), declared in [LeanPool/Turan3/Turans3rdProof.lean, line 1545](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Turan3/Turans3rdProof.lean#L1545): “Equalizing weights between a maximum- and minimum-weight vertex in the clique support strictly increases the total edge weight.”
+
+## Project
+
+- Authors: Rodrigo Gutierrez, Yves Jäckle.
+- Project repository: [ro-gut/turan3](https://github.com/ro-gut/turan3).
+- Provenance: human, which in Lean Pool's terms means its Lean proofs were “written by people”.
+- License: Apache-2.0.
+- MSC2020: 05C35.
+- In Lean Pool: [LeanPool/Turan3](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Turan3), from the card [LeanPool/projects/turan3.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/turan3.yaml).
+
+## Sources
+
+- [Lean Pool at bb99e52c: LeanPool/projects/turan3.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/turan3.yaml)
+- [Lean Pool at bb99e52c: LeanPool/Turan3](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Turan3)

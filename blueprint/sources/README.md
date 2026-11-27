@@ -47,7 +47,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ## Lean Pool
 
-- `data/lean-pool/projects.json`: the title, summary, authors, sources, license, provenance, MSC2020 codes and main results of each project card in [LeanPool/lean-pool at 307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0, with the note, its copyright line or a remark about it, that its NOTICE.extra.yml keeps for a project published under MIT, and the module, line and kind of each main result's declaration, read from the source text without Lean. `data/lean-pool/source.json` records the commit, its Lean toolchain and Mathlib.
+- `data/lean-pool/projects.json`: the title, summary, authors, sources, license, provenance, MSC2020 codes and main results of each project card in [LeanPool/lean-pool at bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0, with the note, its copyright line or a remark about it, that its NOTICE.extra.yml keeps for a project published under MIT, and the module, line and kind of each main result's declaration, read from the source text without Lean. `data/lean-pool/source.json` records the commit, its Lean toolchain and Mathlib.
 
 ## Fermat's Last Theorem (Anthropic)
 
@@ -150,7 +150,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 - [Fermat's Last Theorem (Anthropic)](https://github.com/anthropics/fermats-last-theorem) at 6e837e753555: Its README states that it is a complete, machine-checked proof of FLT via Frey, Serre, Ribet, Wiles and Taylor-Wiles, from the three standard axioms, checked by comparator and the nanoda kernel.
 - [OpenAI Math](https://github.com/openai/math) at 4eaee8754825: Research manuscripts produced by an OpenAI model, with Lean formalizations of some of their results (Hodge for CM abelian varieties; counterexamples to Hadwiger and Kaplansky).
 - [Classification of Finite Simple Groups (Axiom)](https://github.com/AxiomMath/CFSG) at 69cb972f587a: A sorry-free proof of the Classification of Finite Simple Groups, mostly first-generation, using TauCeti's ClassificationStatement; produced by AxiomProver.
-- [Lean Pool](https://github.com/LeanPool/lean-pool) at 307e31252a8b: A pool of permissively licensed Lean projects outside Mathlib's scope, e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa.
+- [Lean Pool](https://github.com/LeanPool/lean-pool) at bb99e52c3f05: A pool of permissively licensed Lean projects outside Mathlib's scope, e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa.
 - [The Stacks Project in Lean (Axiom)](https://github.com/AxiomMath/Stacks) at f56a316ddf7a: A formalization of the Stacks Project, indexed by Stacks tag, in two tiers: StacksCore, human-reviewed, and StacksFrontier, drafted with AxiomProver and not yet reviewed. Declarations also carry the EGA and SGA items they prove.
 - [Riemann Hypothesis (Alpöge)](https://github.com/leanprover-community/riemann-hypothesis) at 2d0c622a3464: Lean source, announced on 2026-11-20, that claims proofs of the Riemann Hypothesis and of the Generalized Riemann Hypothesis for Dirichlet L-functions, mirrored with the files a Comparator check needs; the check is pending. Published without a license.
 

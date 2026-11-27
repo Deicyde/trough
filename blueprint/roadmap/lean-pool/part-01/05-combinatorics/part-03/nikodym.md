@@ -10,7 +10,7 @@ proof: formalized
 
 > Proves a lower bound for Nikodym sets over arbitrary finite fields and a matching exponent upper construction over sufficiently large prime fields, using interpolation, algebraic degree bounds, and multiquadratic constructions.
 
-*Quoted from the card [LeanPool/projects/nikodym.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/nikodym.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/nikodym.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/nikodym.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
 
 ## Depends on
 
@@ -18,10 +18,10 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`Nikodym.card_ge_pow_sub`](https://leanpool.github.io/lean-pool/LeanPool/Nikodym/Nikodym/Main.html#Nikodym.card_ge_pow_sub) (theorem; a main declaration), declared in [LeanPool/Nikodym/Nikodym/Main.lean, line 55](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Nikodym/Nikodym/Main.lean#L55): “Every Nikodym set in dimension d ≥ 2 over a finite field of size q has size at least q^d − (8d²+1)q^(d−2^(1−d)).”
-- [`Nikodym.exists_isNikodym_card_le`](https://leanpool.github.io/lean-pool/LeanPool/Nikodym/Nikodym/Main.html#Nikodym.exists_isNikodym_card_le) (theorem; a main declaration), declared in [LeanPool/Nikodym/Nikodym/Main.lean, line 64](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Nikodym/Nikodym/Main.lean#L64): “For every positive ε and dimension d ≥ 2, sufficiently large prime fields admit a Nikodym set of size at most q^d − q^(d−2^(1−d)−ε).”
+- [`Nikodym.card_ge_pow_sub`](https://leanpool.github.io/lean-pool/LeanPool/Nikodym/Nikodym/Main.html#Nikodym.card_ge_pow_sub) (theorem; a main declaration), declared in [LeanPool/Nikodym/Nikodym/Main.lean, line 55](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Nikodym/Nikodym/Main.lean#L55): “Every Nikodym set in dimension d ≥ 2 over a finite field of size q has size at least q^d − (8d²+1)q^(d−2^(1−d)).”
+- [`Nikodym.exists_isNikodym_card_le`](https://leanpool.github.io/lean-pool/LeanPool/Nikodym/Nikodym/Main.html#Nikodym.exists_isNikodym_card_le) (theorem; a main declaration), declared in [LeanPool/Nikodym/Nikodym/Main.lean, line 64](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Nikodym/Nikodym/Main.lean#L64): “For every positive ε and dimension d ≥ 2, sufficiently large prime fields admit a Nikodym set of size at most q^d − q^(d−2^(1−d)−ε).”
 
 ## Project
 
@@ -30,9 +30,9 @@ The card lists 2 main results, each with its informal statement quoted from the 
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.
 - MSC2020: 05B25, 11T99.
-- In Lean Pool: [LeanPool/Nikodym](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Nikodym), from the card [LeanPool/projects/nikodym.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/nikodym.yaml).
+- In Lean Pool: [LeanPool/Nikodym](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Nikodym), from the card [LeanPool/projects/nikodym.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/nikodym.yaml).
 
 ## Sources
 
-- [Lean Pool at 307e3125: LeanPool/projects/nikodym.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/nikodym.yaml)
-- [Lean Pool at 307e3125: LeanPool/Nikodym](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Nikodym)
+- [Lean Pool at bb99e52c: LeanPool/projects/nikodym.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/nikodym.yaml)
+- [Lean Pool at bb99e52c: LeanPool/Nikodym](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Nikodym)

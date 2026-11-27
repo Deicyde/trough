@@ -10,7 +10,7 @@ proof: formalized
 
 > Formalizes a blueprint step in the three-squares theorem using quadratic forms and geometry of numbers.
 
-*Quoted from the card [LeanPool/projects/sumsthreesquares.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/sumsthreesquares.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/sumsthreesquares.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/sumsthreesquares.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
 
 ## Depends on
 
@@ -18,9 +18,9 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`LeanPool.SumsThreeSquares.blueprint_case_mod8_eq3`](https://leanpool.github.io/lean-pool/LeanPool/SumsThreeSquares/SumThreeSquares.html#LeanPool.SumsThreeSquares.blueprint_case_mod8_eq3) (theorem; a main declaration), declared in [LeanPool/SumsThreeSquares/SumThreeSquares.lean, line 979](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/SumsThreeSquares/SumThreeSquares.lean#L979): “Proves the mod-8-equals-3 blueprint case for the three-squares theorem.” Its source, as the card gives it: “H. Davenport, The geometry of numbers, The Mathematical Gazette 31 (1947), 206-210, doi:10.2307/3608159.”
+- [`LeanPool.SumsThreeSquares.blueprint_case_mod8_eq3`](https://leanpool.github.io/lean-pool/LeanPool/SumsThreeSquares/SumThreeSquares.html#LeanPool.SumsThreeSquares.blueprint_case_mod8_eq3) (theorem; a main declaration), declared in [LeanPool/SumsThreeSquares/SumThreeSquares.lean, line 981](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/SumsThreeSquares/SumThreeSquares.lean#L981): “Proves the mod-8-equals-3 blueprint case for the three-squares theorem.” Its source, as the card gives it: “H. Davenport, The geometry of numbers, The Mathematical Gazette 31 (1947), 206-210, doi:10.2307/3608159.”
 
 ## Project
 
@@ -30,9 +30,9 @@ The card lists one main result, with its informal statement quoted from the card
 - Provenance: mix, which in Lean Pool's terms means people and AI “both contributed substantially” to its Lean proofs.
 - License: Apache-2.0.
 - MSC2020: 11E25, 11H06.
-- In Lean Pool: [LeanPool/SumsThreeSquares](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/SumsThreeSquares), from the card [LeanPool/projects/sumsthreesquares.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/sumsthreesquares.yaml).
+- In Lean Pool: [LeanPool/SumsThreeSquares](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/SumsThreeSquares), from the card [LeanPool/projects/sumsthreesquares.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/sumsthreesquares.yaml).
 
 ## Sources
 
-- [Lean Pool at 307e3125: LeanPool/projects/sumsthreesquares.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/sumsthreesquares.yaml)
-- [Lean Pool at 307e3125: LeanPool/SumsThreeSquares](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/SumsThreeSquares)
+- [Lean Pool at bb99e52c: LeanPool/projects/sumsthreesquares.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/sumsthreesquares.yaml)
+- [Lean Pool at bb99e52c: LeanPool/SumsThreeSquares](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/SumsThreeSquares)

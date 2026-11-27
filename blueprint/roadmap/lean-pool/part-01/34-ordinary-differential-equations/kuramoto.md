@@ -10,7 +10,7 @@ proof: formalized
 
 > Formalizes the finite-N Kuramoto model of coupled phase oscillators: the order parameter and its unit bound, the potential/force gradient identities, smoothness and local Lipschitz continuity of the vector field with ODE existence and uniqueness, Lyapunov descent along trajectories, pairwise and semicircle contraction estimates, Hebbian phase/weight dynamics, and full convergence to synchrony under all-to-all coupling from initial phases in an open semicircle.
 
-*Quoted from the card [LeanPool/projects/kuramoto.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/kuramoto.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/kuramoto.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/kuramoto.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
 
 ## Depends on
 
@@ -18,11 +18,11 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`kuramotoR_norm_le_one`](https://leanpool.github.io/lean-pool/LeanPool/Kuramoto/OrderParameter.html#kuramotoR_norm_le_one) (theorem; a main declaration), declared in [LeanPool/Kuramoto/OrderParameter.lean, line 28](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Kuramoto/OrderParameter.lean#L28): “The Kuramoto order parameter has norm at most one for any phase configuration.”
-- [`weighted_lyapunov_descent`](https://leanpool.github.io/lean-pool/LeanPool/Kuramoto/Weighted.html#weighted_lyapunov_descent) (theorem; a main declaration), declared in [LeanPool/Kuramoto/Weighted.lean, line 185](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Kuramoto/Weighted.lean#L185): “The weighted Kuramoto potential is non-increasing along the gradient flow, since the sum of force times potential-derivative over all oscillators is at most zero.”
-- [`allToAll_convergence_to_synchrony`](https://leanpool.github.io/lean-pool/LeanPool/Kuramoto/Frontier.html#allToAll_convergence_to_synchrony) (theorem), declared in [LeanPool/Kuramoto/Frontier.lean, line 1019](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Kuramoto/Frontier.lean#L1019): “Under all-to-all coupling with positive strength and initial phases in an open semicircle, the order parameter norm tends to one, i.e. the oscillators synchronize.”
+- [`kuramotoR_norm_le_one`](https://leanpool.github.io/lean-pool/LeanPool/Kuramoto/OrderParameter.html#kuramotoR_norm_le_one) (theorem; a main declaration), declared in [LeanPool/Kuramoto/OrderParameter.lean, line 28](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Kuramoto/OrderParameter.lean#L28): “The Kuramoto order parameter has norm at most one for any phase configuration.”
+- [`weighted_lyapunov_descent`](https://leanpool.github.io/lean-pool/LeanPool/Kuramoto/Weighted.html#weighted_lyapunov_descent) (theorem; a main declaration), declared in [LeanPool/Kuramoto/Weighted.lean, line 185](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Kuramoto/Weighted.lean#L185): “The weighted Kuramoto potential is non-increasing along the gradient flow, since the sum of force times potential-derivative over all oscillators is at most zero.”
+- [`allToAll_convergence_to_synchrony`](https://leanpool.github.io/lean-pool/LeanPool/Kuramoto/Frontier.html#allToAll_convergence_to_synchrony) (theorem), declared in [LeanPool/Kuramoto/Frontier.lean, line 1022](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Kuramoto/Frontier.lean#L1022): “Under all-to-all coupling with positive strength and initial phases in an open semicircle, the order parameter norm tends to one, i.e. the oscillators synchronize.”
 
 ## Project
 
@@ -32,9 +32,9 @@ The card lists 3 main results, each with its informal statement quoted from the 
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 34D06.
-- In Lean Pool: [LeanPool/Kuramoto](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Kuramoto), from the card [LeanPool/projects/kuramoto.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/kuramoto.yaml).
+- In Lean Pool: [LeanPool/Kuramoto](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Kuramoto), from the card [LeanPool/projects/kuramoto.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/kuramoto.yaml).
 
 ## Sources
 
-- [Lean Pool at 307e3125: LeanPool/projects/kuramoto.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/kuramoto.yaml)
-- [Lean Pool at 307e3125: LeanPool/Kuramoto](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Kuramoto)
+- [Lean Pool at bb99e52c: LeanPool/projects/kuramoto.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/kuramoto.yaml)
+- [Lean Pool at bb99e52c: LeanPool/Kuramoto](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Kuramoto)

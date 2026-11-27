@@ -10,7 +10,7 @@ proof: formalized
 
 > Formalizes Osterwalder-Schrader axioms for the massive Gaussian free field using Minlos, covariance, and reflection-positivity infrastructure.
 
-*Quoted from the card [LeanPool/projects/osforgff.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/osforgff.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/osforgff.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/osforgff.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
 
 ## Depends on
 
@@ -18,9 +18,9 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`OSforGFF.gaussianFreeField_satisfies_all_OS_axioms`](https://leanpool.github.io/lean-pool/LeanPool/OSforGFF/OS/Master.html#OSforGFF.gaussianFreeField_satisfies_all_OS_axioms) (theorem; a main declaration), declared in [LeanPool/OSforGFF/OS/Master.lean, line 57](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/OSforGFF/OS/Master.lean#L57): “Proves that the massive Gaussian free field satisfies the OS0-OS4 Osterwalder-Schrader axioms.”
+- [`OSforGFF.gaussianFreeField_satisfies_all_OS_axioms`](https://leanpool.github.io/lean-pool/LeanPool/OSforGFF/OS/Master.html#OSforGFF.gaussianFreeField_satisfies_all_OS_axioms) (theorem; a main declaration), declared in [LeanPool/OSforGFF/OS/Master.lean, line 57](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/OSforGFF/OS/Master.lean#L57): “Proves that the massive Gaussian free field satisfies the OS0-OS4 Osterwalder-Schrader axioms.”
 
 ## Project
 
@@ -29,9 +29,9 @@ The card lists one main result, with its informal statement quoted from the card
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.
 - MSC2020: 81T08, 60G15, 46G12.
-- In Lean Pool: [LeanPool/OSforGFF](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/OSforGFF), from the card [LeanPool/projects/osforgff.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/osforgff.yaml).
+- In Lean Pool: [LeanPool/OSforGFF](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/OSforGFF), from the card [LeanPool/projects/osforgff.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/osforgff.yaml).
 
 ## Sources
 
-- [Lean Pool at 307e3125: LeanPool/projects/osforgff.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/osforgff.yaml)
-- [Lean Pool at 307e3125: LeanPool/OSforGFF](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/OSforGFF)
+- [Lean Pool at bb99e52c: LeanPool/projects/osforgff.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/osforgff.yaml)
+- [Lean Pool at bb99e52c: LeanPool/OSforGFF](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/OSforGFF)

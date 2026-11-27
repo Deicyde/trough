@@ -1,7 +1,8 @@
 # Operator theory
 
-The Lean Pool projects whose card's first MSC2020 code is in class 47, Operator theory: 7 articles, one per card.
+The Lean Pool projects whose card's first MSC2020 code is in class 47, Operator theory: 8 articles, one per card.
 
+- [Cancellation-aware error bounds for the fourth-order Suzuki formula](suzuki-cancellation.md)
 - [Continuity and zero-class properties of abstract linear control systems](abstract-linear-control.md)
 - [Davis–Kahan rotation of eigenvectors](aiq-davis-kahan-1970-rotation-eigenvectgors-perturbation-formalization.md)
 - [lean-spectral-theory](lean-spectral-theory.md)

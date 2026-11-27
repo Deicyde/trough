@@ -10,7 +10,7 @@ proof: formalized
 
 > Formalizes the Bannai-Bannai-Stanton theorem: a distance set `S` in `ℝ^d` realizing `s` distinct distances has size at most `Nat.choose (d + s) s`. Follows the short polynomial-method proof of Petrov and Pohoata via a generalized Croot-Lev-Pach rank lemma, with auxiliary results on the diagonal linear-independence argument for polynomials, monomial counting of bounded degree, and a rank bound for sums of matrices.
 
-*Quoted from the card [LeanPool/projects/bannai-bannai-stanton.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/bannai-bannai-stanton.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/bannai-bannai-stanton.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/bannai-bannai-stanton.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
 
 ## Depends on
 
@@ -18,9 +18,9 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`BannaiBannaiStanton.bannai_bannai_stanton_bound`](https://leanpool.github.io/lean-pool/LeanPool/BannaiBannaiStanton/BoundOnDistanceSet.html#BannaiBannaiStanton.bannai_bannai_stanton_bound) (theorem; a main declaration), declared in [LeanPool/BannaiBannaiStanton/BoundOnDistanceSet.lean, line 954](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/BannaiBannaiStanton/BoundOnDistanceSet.lean#L954): “A distance set `S` in Euclidean space `ℝ^d` realizing `s` distinct distances satisfies `S.encard ≤ Nat.choose (d + s) s`.”
+- [`BannaiBannaiStanton.bannai_bannai_stanton_bound`](https://leanpool.github.io/lean-pool/LeanPool/BannaiBannaiStanton/BoundOnDistanceSet.html#BannaiBannaiStanton.bannai_bannai_stanton_bound) (theorem; a main declaration), declared in [LeanPool/BannaiBannaiStanton/BoundOnDistanceSet.lean, line 954](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/BannaiBannaiStanton/BoundOnDistanceSet.lean#L954): “A distance set `S` in Euclidean space `ℝ^d` realizing `s` distinct distances satisfies `S.encard ≤ Nat.choose (d + s) s`.”
 
 ## Project
 
@@ -29,9 +29,9 @@ The card lists one main result, with its informal statement quoted from the card
 - Provenance: mix, which in Lean Pool's terms means people and AI “both contributed substantially” to its Lean proofs.
 - License: Apache-2.0.
 - MSC2020: 52C10, 05B30.
-- In Lean Pool: [LeanPool/BannaiBannaiStanton](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/BannaiBannaiStanton), from the card [LeanPool/projects/bannai-bannai-stanton.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/bannai-bannai-stanton.yaml).
+- In Lean Pool: [LeanPool/BannaiBannaiStanton](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/BannaiBannaiStanton), from the card [LeanPool/projects/bannai-bannai-stanton.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/bannai-bannai-stanton.yaml).
 
 ## Sources
 
-- [Lean Pool at 307e3125: LeanPool/projects/bannai-bannai-stanton.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/bannai-bannai-stanton.yaml)
-- [Lean Pool at 307e3125: LeanPool/BannaiBannaiStanton](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/BannaiBannaiStanton)
+- [Lean Pool at bb99e52c: LeanPool/projects/bannai-bannai-stanton.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/bannai-bannai-stanton.yaml)
+- [Lean Pool at bb99e52c: LeanPool/BannaiBannaiStanton](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/BannaiBannaiStanton)

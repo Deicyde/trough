@@ -1,6 +1,6 @@
 # Combinatorics
 
-The Lean Pool projects whose card's first MSC2020 code is in class 05, Combinatorics: 62 articles, one per card.
+The Lean Pool projects whose card's first MSC2020 code is in class 05, Combinatorics: 70 articles, one per card.
 
 ## [A proof of the Regts–Sevenster… to Dross's fractional triangle…](part-01/README.md)
 
@@ -25,8 +25,9 @@ The Lean Pool projects whose card's first MSC2020 code is in class 05, Combinato
 - [The density Hales–Jewett theorem and Szemerédi's theorem](part-01/densityhalesjewett.md)
 - [Dross's fractional triangle decomposition theorem](part-01/dross-fractional-triangle-decomposition.md)
 
-## [The Erdős–Sós conjecture (Erdős… to Kolokolnikov's ACMAX conjecture](part-02/README.md)
+## [Dynamic maximum cardinality… to Kahn–Kalai…](part-02/README.md)
 
+- [Dynamic maximum cardinality search](part-02/dynamic-mcs.md)
 - [The Erdős–Sós conjecture (Erdős Problem 548)](part-02/erdos548.md)
 - [Even graphs are edge-disjoint unions of cycles](part-02/even-graph-cycle-decomposition.md)
 - [Extended Demazure Product on ASP Permutations](part-02/demazure-product.md)
@@ -38,6 +39,7 @@ The Lean Pool projects whose card's first MSC2020 code is in class 05, Combinato
 - [Fundamental groups of finite connected graphs](part-02/finite-graph-fundamental-group.md)
 - [Genus-Zero Pairings and Catalan Numbers](part-02/semicircle-catalan.md)
 - [Geometric Four-Colorings of the Moser Lattice and Ring](part-02/moser-lattice-colorings.md)
+- [Giambelli's identity for Schur polynomials](part-02/giambelli.md)
 - [The Goldberg–Seymour edge-coloring theorem](part-02/goldberg-seymour.md)
 - [Goodman's formula and clique supersaturation for two-colourings](part-02/goodman-supersaturation.md)
 - [Graph removal and extremal stability](part-02/graph-removal-extremal-stability.md)
@@ -45,33 +47,39 @@ The Lean Pool projects whose card's first MSC2020 code is in class 05, Combinato
 - [Hard-sphere Mayer NBC identity and fork-packing volume bound](part-02/hs-virial-nbc-identity.md)
 - [Häggkvist–Janssen list edge colouring of complete graphs](part-02/list-edge-coloring-complete.md)
 - [Kahn–Kalai expectation-threshold theorem](part-02/kahn-kalai.md)
-- [Known Bounds for the Hadwiger-Nelson Problem](part-02/hadwiger-nelson-bounds.md)
-- [Kolokolnikov's ACMAX conjecture](part-02/acmax-conjecture.md)
 
-## [Line-graph colourings and… to Verified canonical labelling of…](part-03/README.md)
+## [Known Bounds for the… to The smallest critical set in a…](part-03/README.md)
 
+- [Known Bounds for the Hadwiger-Nelson Problem](part-03/hadwiger-nelson-bounds.md)
+- [Kolokolnikov's ACMAX conjecture](part-03/acmax-conjecture.md)
+- [The Last Exception for Two-Colour Rado Numbers](part-03/rado-numbers-last-exception.md)
 - [Line-graph colourings and matching decompositions](part-03/line-graph-colouring-matching.md)
 - [Linear finite bipartization costs force countable graph colourings](part-03/erdos111-bipartization.md)
 - [Maxima of Coxeter frieze patterns are Fibonacci numbers](part-03/frieze-patterns.md)
 - [Nash-Williams–Tutte tree packing and arboricity](part-03/nash-williams-tutte.md)
 - [Near-perfect triangle packings from sum-zero triples](part-03/erdos81-paper-iii-sum-zero-triangles.md)
+- [Nearly quadratic additive gaps for edge-clique partitions of split graphs](part-03/split-clique-partition-gap.md)
+- [Non-Sperner Intervals and Exact Deficiency Family in the Permutation Pattern Poset](part-03/pattern-poset-not-sperner.md)
+- [Non-word-representability of tensor products of Mycielski graphs](part-03/word-rep-tensor.md)
 - [Optimal Pebbling Number of the Hypercube](part-03/pebbling-hypercube.md)
+- [Planar separators and nested dissection](part-03/planar-separator.md)
 - [Pólya's enumeration theorem](part-03/polya-enumeration-theorem.md)
 - [Reservoir and book calculus for greedy Ramsey arguments](part-03/ramsey-reservoir.md)
+- [The Robertson–Seymour graph minor theorem](part-03/robertson-seymour-graph-minor.md)
 - [Sabidussi's compatibility conjecture for Eulerian multigraphs](part-03/sabidussi.md)
 - [The sharp finite-field Nikodym exponent](part-03/nikodym.md)
 - [Shelah's bound for the Hales–Jewett numbers](part-03/shelah-hales-jewett.md)
 - [The smallest critical set in a Latin square](part-03/latin-quarter.md)
-- [Split, cograph and threshold graph structures](part-03/structural-graph-classes.md)
-- [Strict Beck–Fiala rounding for incidence matrices](part-03/beck-fiala-matrix.md)
-- [Superexponential lower bounds for multicolor triangle Ramsey numbers](part-03/multicolor-triangle-ramsey.md)
-- [The Sym(3) permutation coboundary constant of the complete complex](part-03/coboundary-k3.md)
-- [The ten minimum universal collections of MacMahon cubes](part-03/macmahon-min-universal-sets.md)
-- [Turán's theorem (the "Book" weighting proof)](part-03/turan3.md)
-- [Tutte’s path theorem for matroids](part-03/tutte-path.md)
-- [Verified canonical labelling of finite graphs](part-03/isograph-canonical-labelling.md)
 
-## [Vizing's theorem and equitable… to Weight shifting and extremal…](part-04/README.md)
+## [Split, cograph and threshold… to Weight shifting and extremal…](part-04/README.md)
 
+- [Split, cograph and threshold graph structures](part-04/structural-graph-classes.md)
+- [Strict Beck–Fiala rounding for incidence matrices](part-04/beck-fiala-matrix.md)
+- [Superexponential lower bounds for multicolor triangle Ramsey numbers](part-04/multicolor-triangle-ramsey.md)
+- [The Sym(3) permutation coboundary constant of the complete complex](part-04/coboundary-k3.md)
+- [The ten minimum universal collections of MacMahon cubes](part-04/macmahon-min-universal-sets.md)
+- [Turán's theorem (the "Book" weighting proof)](part-04/turan3.md)
+- [Tutte’s path theorem for matroids](part-04/tutte-path.md)
+- [Verified canonical labelling of finite graphs](part-04/isograph-canonical-labelling.md)
 - [Vizing's theorem and equitable edge colourings](part-04/vizing-equitable-edge-colouring.md)
 - [Weight shifting and extremal graph theory](part-04/graph-extremal.md)

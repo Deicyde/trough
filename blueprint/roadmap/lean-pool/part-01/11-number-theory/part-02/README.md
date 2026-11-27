@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Exact odd-prime distributions… to Minimum modulus for the unique…
+# Eventually greedy best Egyptian… to Linear independence of 1…
 
+- [Eventually greedy best Egyptian underapproximations](egyptian-underapproximations.md)
+- [Every Pisot number is a two-sided limit of Salem numbers](salem-theorem.md)
 - [Exact odd-prime distributions of central-binomial valuations](odd-prime-valuation-distribution.md)
 - [Exceptional Set in the abc Conjecture](abc-exceptions.md)
 - [Fermat's Last Theorem for regular primes](flt-regular.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Leo Moser's finite distinct-subset-sums inequality](erdos-moser-distinct-subset-sums.md)
 - [Li's criterion for the Riemann Hypothesis](li-criterion-rh-equivalence-lean.md)
 - [Linear independence of 1, zeta(2), and zeta(3)](zeta2-zeta3-linear-independence.md)
-- [Markoff mod p](markoff-modp.md)
-- [Minimum modulus for the unique multiset-sum problem](min-modulus-unique-multiset-sum.md)

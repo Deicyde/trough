@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 2-Coloring Cycles in One Round to Pumping Lemma for Context-Free…
+# 2-Coloring Cycles in One Round to Parikh's theorem and a…
 
 - [2-Coloring Cycles in One Round](2-coloring-1-round.md)
 - [The Aaronson–Ambainis influence conjecture](aaronson-ambainis.md)
@@ -14,13 +14,13 @@ navigation: transparent
 - [Descriptive counting complexity and parsimonious completeness of \#SAT](descriptive-counting.md)
 - [Event Structures and Causal-Consistent Reversibility](event-structures.md)
 - [Exact Boolean multiplicative complexity of four-term polynomial multiplication](boolean-multiplication.md)
+- [Exact square, dual and rectangular matrix multiplication exponents](exact-matrix-exponents.md)
 - [Finite witnesses and the width hierarchy for language generation](language-generation-characterization.md)
 - [Formal Learning Theory Kernel](formal-learning-theory.md)
 - [Formalizations of theorems related to model checking](lean-model-checking.md)
 - [The Johnson–Lindenstrauss Lemma and Quantized JL](johnson-lindenstrauss-lean.md)
+- [Lafont's interaction combinators](interaction-combinators.md)
 - [Matrix multiplication exponent at most 9/4 over every field](matrix-multiplication-all-fields.md)
 - [MRiscX](mriscx.md)
+- [Optimal mean comparison count for ordinary Shellsort](shellsort-mean-comparisons.md)
 - [Parikh's theorem and a certified semilinear grammar compiler](parikh.md)
-- [Polynomial lower bounds for high-dimensional Steiner spanners](high-dimensional-steiner-spanners.md)
-- [Polynomial-factor hardness of the closest vector problem](gap-cvp.md)
-- [Pumping Lemma for Context-Free Grammars](pumping-cfg.md)

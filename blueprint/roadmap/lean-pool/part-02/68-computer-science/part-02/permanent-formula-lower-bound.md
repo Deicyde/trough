@@ -10,7 +10,7 @@ proof: formalized
 
 > Proves that every valid rational arithmetic formula over the complex numbers computing the n-by-n permanent, for n at least 32, has at least n^4 / (192 log_2 n) variable leaves. The development derives the bound through coefficient-field transcendence degree, Jacobian minors, matching-polynomial identities, and a cyclic block decomposition.
 
-*Quoted from the card [LeanPool/projects/permanent-formula-lower-bound.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/permanent-formula-lower-bound.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/permanent-formula-lower-bound.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/permanent-formula-lower-bound.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
 
 ## Depends on
 
@@ -18,10 +18,10 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound`](https://leanpool.github.io/lean-pool/LeanPool/PermanentFormulaLowerBound.html#PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound) (theorem; a main declaration), declared in [LeanPool/PermanentFormulaLowerBound.lean, line 6243](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/PermanentFormulaLowerBound.lean#L6243): “For n at least 32, every valid rational formula over the complex numbers that computes the n-by-n permanent has at least n^4 / (192 log_2 n) variable leaves.”
-- [`PermanentFormulaLowerBound.permanent_rational_formula_lower_bound`](https://leanpool.github.io/lean-pool/LeanPool/PermanentFormulaLowerBound.html#PermanentFormulaLowerBound.permanent_rational_formula_lower_bound) (theorem), declared in [LeanPool/PermanentFormulaLowerBound.lean, line 6222](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/PermanentFormulaLowerBound.lean#L6222): “The same quartic-over-logarithmic lower bound controls variable leaves, total leaves, and vertices, and half that bound controls internal gates.”
+- [`PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound`](https://leanpool.github.io/lean-pool/LeanPool/PermanentFormulaLowerBound.html#PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound) (theorem; a main declaration), declared in [LeanPool/PermanentFormulaLowerBound.lean, line 6242](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/PermanentFormulaLowerBound.lean#L6242): “For n at least 32, every valid rational formula over the complex numbers that computes the n-by-n permanent has at least n^4 / (192 log_2 n) variable leaves.”
+- [`PermanentFormulaLowerBound.permanent_rational_formula_lower_bound`](https://leanpool.github.io/lean-pool/LeanPool/PermanentFormulaLowerBound.html#PermanentFormulaLowerBound.permanent_rational_formula_lower_bound) (theorem), declared in [LeanPool/PermanentFormulaLowerBound.lean, line 6221](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/PermanentFormulaLowerBound.lean#L6221): “The same quartic-over-logarithmic lower bound controls variable leaves, total leaves, and vertices, and half that bound controls internal gates.”
 
 ## Project
 
@@ -31,9 +31,9 @@ The card lists 2 main results, each with its informal statement quoted from the 
 - Provenance: mix, which in Lean Pool's terms means people and AI “both contributed substantially” to its Lean proofs.
 - License: Apache-2.0.
 - MSC2020: 68Q17, 68Q25, 15A15.
-- In Lean Pool: [LeanPool/PermanentFormulaLowerBound](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/PermanentFormulaLowerBound), from the card [LeanPool/projects/permanent-formula-lower-bound.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/permanent-formula-lower-bound.yaml).
+- In Lean Pool: [LeanPool/PermanentFormulaLowerBound](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/PermanentFormulaLowerBound), from the card [LeanPool/projects/permanent-formula-lower-bound.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/permanent-formula-lower-bound.yaml).
 
 ## Sources
 
-- [Lean Pool at 307e3125: LeanPool/projects/permanent-formula-lower-bound.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/permanent-formula-lower-bound.yaml)
-- [Lean Pool at 307e3125: LeanPool/PermanentFormulaLowerBound](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/PermanentFormulaLowerBound)
+- [Lean Pool at bb99e52c: LeanPool/projects/permanent-formula-lower-bound.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/permanent-formula-lower-bound.yaml)
+- [Lean Pool at bb99e52c: LeanPool/PermanentFormulaLowerBound](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/PermanentFormulaLowerBound)

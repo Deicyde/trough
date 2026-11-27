@@ -10,7 +10,7 @@ proof: formalized
 
 > Formalizes the Akopyan–Avvakumov–Karasev theorem that every planar convex body can be partitioned into any prescribed positive number of convex pieces with equal area and equal perimeter. Area is Lebesgue measure and perimeter is Hausdorff measure of the boundary.
 
-*Quoted from the card [LeanPool/projects/nrr-aak.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/nrr-aak.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/nrr-aak.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/nrr-aak.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
 
 ## Depends on
 
@@ -18,9 +18,9 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`HumanVerification.equalAreaEqualPerimeterPartition`](https://leanpool.github.io/lean-pool/LeanPool/NandakumarRamanaRao/HumanVerification/Main.html#HumanVerification.equalAreaEqualPerimeterPartition) (theorem; a main declaration), declared in [LeanPool/NandakumarRamanaRao/HumanVerification/Main.lean, line 106](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/NandakumarRamanaRao/HumanVerification/Main.lean#L106): “Every compact convex planar set with nonempty interior admits a convex partition into any positive number of pieces whose areas and perimeters are all equal.”
+- [`HumanVerification.equalAreaEqualPerimeterPartition`](https://leanpool.github.io/lean-pool/LeanPool/NandakumarRamanaRao/HumanVerification/Main.html#HumanVerification.equalAreaEqualPerimeterPartition) (theorem; a main declaration), declared in [LeanPool/NandakumarRamanaRao/HumanVerification/Main.lean, line 106](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/NandakumarRamanaRao/HumanVerification/Main.lean#L106): “Every compact convex planar set with nonempty interior admits a convex partition into any positive number of pieces whose areas and perimeters are all equal.”
 
 ## Project
 
@@ -29,9 +29,9 @@ The card lists one main result, with its informal statement quoted from the card
 - Provenance: mix, which in Lean Pool's terms means people and AI “both contributed substantially” to its Lean proofs.
 - License: Apache-2.0.
 - MSC2020: 52A10, 55M20.
-- In Lean Pool: [LeanPool/NandakumarRamanaRao](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/NandakumarRamanaRao), from the card [LeanPool/projects/nrr-aak.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/nrr-aak.yaml).
+- In Lean Pool: [LeanPool/NandakumarRamanaRao](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/NandakumarRamanaRao), from the card [LeanPool/projects/nrr-aak.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/nrr-aak.yaml).
 
 ## Sources
 
-- [Lean Pool at 307e3125: LeanPool/projects/nrr-aak.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/nrr-aak.yaml)
-- [Lean Pool at 307e3125: LeanPool/NandakumarRamanaRao](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/NandakumarRamanaRao)
+- [Lean Pool at bb99e52c: LeanPool/projects/nrr-aak.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/nrr-aak.yaml)
+- [Lean Pool at bb99e52c: LeanPool/NandakumarRamanaRao](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/NandakumarRamanaRao)

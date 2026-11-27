@@ -10,7 +10,7 @@ proof: formalized
 
 > Introduces an original conditional sieve criterion for the Twin Prime Conjecture. Using a centered modular alignment (termed the Krafft alignment), proves that if the Rayleigh-Ritz quotient over the orthogonal unit sphere satisfies muMin < 1, then a twin prime pair must exist in the corresponding interval.
 
-*Quoted from the card [LeanPool/projects/krafftsieve.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/krafftsieve.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/krafftsieve.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/krafftsieve.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
 
 ## Depends on
 
@@ -18,10 +18,10 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`KrafftSieve.krafft_sieve_guarantee_with_mu_min`](https://leanpool.github.io/lean-pool/LeanPool/KrafftSieve/OptimalWeights.html#KrafftSieve.krafft_sieve_guarantee_with_mu_min) (theorem), declared in [LeanPool/KrafftSieve/OptimalWeights.lean, line 730](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/KrafftSieve/OptimalWeights.lean#L730): “Proves that muMin n < 1 is a sufficient condition for the existence of a twin prime pair in the corresponding interval.”
-- [`KrafftSieve.mu_min_lt_one_implies_tpc`](https://leanpool.github.io/lean-pool/LeanPool/KrafftSieve/MainTheorem.html#KrafftSieve.mu_min_lt_one_implies_tpc) (theorem; a main declaration), declared in [LeanPool/KrafftSieve/MainTheorem.lean, line 28](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/KrafftSieve/MainTheorem.lean#L28): “If there are infinitely many intervals where the optimal multidimensional weight achieves a ratio strictly less than 1, then there are infinitely many twin primes. This is a conditional reduction; the hypothesis muMin n < 1 is not established here for any n.”
+- [`KrafftSieve.krafft_sieve_guarantee_with_mu_min`](https://leanpool.github.io/lean-pool/LeanPool/KrafftSieve/OptimalWeights.html#KrafftSieve.krafft_sieve_guarantee_with_mu_min) (theorem), declared in [LeanPool/KrafftSieve/OptimalWeights.lean, line 731](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/KrafftSieve/OptimalWeights.lean#L731): “Proves that muMin n < 1 is a sufficient condition for the existence of a twin prime pair in the corresponding interval.”
+- [`KrafftSieve.mu_min_lt_one_implies_tpc`](https://leanpool.github.io/lean-pool/LeanPool/KrafftSieve/MainTheorem.html#KrafftSieve.mu_min_lt_one_implies_tpc) (theorem; a main declaration), declared in [LeanPool/KrafftSieve/MainTheorem.lean, line 28](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/KrafftSieve/MainTheorem.lean#L28): “If there are infinitely many intervals where the optimal multidimensional weight achieves a ratio strictly less than 1, then there are infinitely many twin primes. This is a conditional reduction; the hypothesis muMin n < 1 is not established here for any n.”
 
 ## Project
 
@@ -31,9 +31,9 @@ The card lists 2 main results, each with its informal statement quoted from the 
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.
 - MSC2020: 11N05, 11N35.
-- In Lean Pool: [LeanPool/KrafftSieve](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/KrafftSieve), from the card [LeanPool/projects/krafftsieve.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/krafftsieve.yaml).
+- In Lean Pool: [LeanPool/KrafftSieve](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/KrafftSieve), from the card [LeanPool/projects/krafftsieve.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/krafftsieve.yaml).
 
 ## Sources
 
-- [Lean Pool at 307e3125: LeanPool/projects/krafftsieve.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/krafftsieve.yaml)
-- [Lean Pool at 307e3125: LeanPool/KrafftSieve](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/KrafftSieve)
+- [Lean Pool at bb99e52c: LeanPool/projects/krafftsieve.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/krafftsieve.yaml)
+- [Lean Pool at bb99e52c: LeanPool/KrafftSieve](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/KrafftSieve)

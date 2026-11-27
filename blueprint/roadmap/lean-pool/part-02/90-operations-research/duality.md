@@ -10,7 +10,7 @@ proof: formalized
 
 > Formalizes Farkas-like theorems and strong LP duality, including extensions to a linearly ordered field with bot and top.
 
-*Quoted from the card [LeanPool/projects/duality.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/duality.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/duality.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/duality.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
 
 ## Depends on
 
@@ -18,13 +18,13 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 5 main results, each with its informal statement quoted from the card. The scan finds 5 of their declarations in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`equalityFarkas`](https://leanpool.github.io/lean-pool/LeanPool/Duality/FarkasBasic.html#equalityFarkas) (theorem), declared in [LeanPool/Duality/FarkasBasic.lean, line 43](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Duality/FarkasBasic.lean#L43): “Farkas' lemma for linear equalities over nonnegative variables.”
-- [`inequalityFarkas`](https://leanpool.github.io/lean-pool/LeanPool/Duality/FarkasBasic.html#inequalityFarkas) (theorem), declared in [LeanPool/Duality/FarkasBasic.lean, line 128](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Duality/FarkasBasic.lean#L128): “Farkas' lemma for linear inequalities over nonnegative variables.”
-- [`extendedFarkas`](https://leanpool.github.io/lean-pool/LeanPool/Duality/FarkasSpecial.html#extendedFarkas) (theorem; a main declaration), declared in [LeanPool/Duality/FarkasSpecial.lean, line 572](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Duality/FarkasSpecial.lean#L572): “Extended Farkas theorem for matrices and vectors over a linearly ordered field with bot and top.”
-- [`ValidELP.strongDuality`](https://leanpool.github.io/lean-pool/LeanPool/Duality/LinearProgramming.html#ValidELP.strongDuality) (theorem), declared in [LeanPool/Duality/LinearProgramming.lean, line 1151](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Duality/LinearProgramming.lean#L1151): “Strong duality theorem for extended linear programs.”
-- [`StandardLP.strongDuality`](https://leanpool.github.io/lean-pool/LeanPool/Duality/LinearProgrammingB.html#StandardLP.strongDuality) (theorem; a main declaration), declared in [LeanPool/Duality/LinearProgrammingB.lean, line 242](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Duality/LinearProgrammingB.lean#L242): “Strong duality theorem for linear programs in standard form.”
+- [`equalityFarkas`](https://leanpool.github.io/lean-pool/LeanPool/Duality/FarkasBasic.html#equalityFarkas) (theorem), declared in [LeanPool/Duality/FarkasBasic.lean, line 43](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Duality/FarkasBasic.lean#L43): “Farkas' lemma for linear equalities over nonnegative variables.”
+- [`inequalityFarkas`](https://leanpool.github.io/lean-pool/LeanPool/Duality/FarkasBasic.html#inequalityFarkas) (theorem), declared in [LeanPool/Duality/FarkasBasic.lean, line 128](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Duality/FarkasBasic.lean#L128): “Farkas' lemma for linear inequalities over nonnegative variables.”
+- [`extendedFarkas`](https://leanpool.github.io/lean-pool/LeanPool/Duality/FarkasSpecial.html#extendedFarkas) (theorem; a main declaration), declared in [LeanPool/Duality/FarkasSpecial.lean, line 572](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Duality/FarkasSpecial.lean#L572): “Extended Farkas theorem for matrices and vectors over a linearly ordered field with bot and top.”
+- [`ValidELP.strongDuality`](https://leanpool.github.io/lean-pool/LeanPool/Duality/LinearProgramming.html#ValidELP.strongDuality) (theorem), declared in [LeanPool/Duality/LinearProgramming.lean, line 1151](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Duality/LinearProgramming.lean#L1151): “Strong duality theorem for extended linear programs.”
+- [`StandardLP.strongDuality`](https://leanpool.github.io/lean-pool/LeanPool/Duality/LinearProgrammingB.html#StandardLP.strongDuality) (theorem; a main declaration), declared in [LeanPool/Duality/LinearProgrammingB.lean, line 242](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Duality/LinearProgrammingB.lean#L242): “Strong duality theorem for linear programs in standard form.”
 
 ## Project
 
@@ -34,9 +34,9 @@ The card lists 5 main results, each with its informal statement quoted from the 
 - Provenance: human, which in Lean Pool's terms means its Lean proofs were “written by people”.
 - License: Apache-2.0.
 - MSC2020: 90C05, 90C46.
-- In Lean Pool: [LeanPool/Duality](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Duality), from the card [LeanPool/projects/duality.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/duality.yaml).
+- In Lean Pool: [LeanPool/Duality](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Duality), from the card [LeanPool/projects/duality.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/duality.yaml).
 
 ## Sources
 
-- [Lean Pool at 307e3125: LeanPool/projects/duality.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/duality.yaml)
-- [Lean Pool at 307e3125: LeanPool/Duality](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Duality)
+- [Lean Pool at bb99e52c: LeanPool/projects/duality.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/duality.yaml)
+- [Lean Pool at bb99e52c: LeanPool/Duality](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Duality)

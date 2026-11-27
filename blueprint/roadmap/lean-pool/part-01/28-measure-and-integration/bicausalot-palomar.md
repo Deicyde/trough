@@ -10,7 +10,7 @@ proof: formalized
 
 > Develops Kuratowski–Ryll-Nardzewski selection, Jankov–von Neumann uniformization, and finite-horizon Bellman identities for locally feasible coupling strategies. Exact Borel measurable optimal strategies and initial couplings are obtained on Polish Borel spaces for weakly continuous probability kernels and nonnegative extended-real lower semicontinuous costs. Equivalence with optimization over bicausal path laws is not established.
 
-*Quoted from the card [LeanPool/projects/bicausalot-palomar.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/bicausalot-palomar.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/bicausalot-palomar.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/bicausalot-palomar.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
 
 ## Depends on
 
@@ -18,9 +18,9 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`MeasurableSelection.exists_measurable_selection`](https://leanpool.github.io/lean-pool/LeanPool/BicausalOT/Solution.html#MeasurableSelection.exists_measurable_selection) (theorem; a main declaration), declared in [LeanPool/BicausalOT/Solution.lean, line 56](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/BicausalOT/Solution.lean#L56): “A weakly measurable multifunction from an arbitrary measurable space to a Polish space with nonempty closed values admits an everywhere-defined Borel-measurable selector.”
+- [`MeasurableSelection.exists_measurable_selection`](https://leanpool.github.io/lean-pool/LeanPool/BicausalOT/Solution.html#MeasurableSelection.exists_measurable_selection) (theorem; a main declaration), declared in [LeanPool/BicausalOT/Solution.lean, line 56](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/BicausalOT/Solution.lean#L56): “A weakly measurable multifunction from an arbitrary measurable space to a Polish space with nonempty closed values admits an everywhere-defined Borel-measurable selector.”
 
 ## Project
 
@@ -29,9 +29,9 @@ The card lists one main result, with its informal statement quoted from the card
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.
 - MSC2020: 28B20, 54C65, 54H05, 03E15, 28A20, 68V20.
-- In Lean Pool: [LeanPool/BicausalOT](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/BicausalOT), from the card [LeanPool/projects/bicausalot-palomar.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/bicausalot-palomar.yaml).
+- In Lean Pool: [LeanPool/BicausalOT](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/BicausalOT), from the card [LeanPool/projects/bicausalot-palomar.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/bicausalot-palomar.yaml).
 
 ## Sources
 
-- [Lean Pool at 307e3125: LeanPool/projects/bicausalot-palomar.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/bicausalot-palomar.yaml)
-- [Lean Pool at 307e3125: LeanPool/BicausalOT](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/BicausalOT)
+- [Lean Pool at bb99e52c: LeanPool/projects/bicausalot-palomar.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/bicausalot-palomar.yaml)
+- [Lean Pool at bb99e52c: LeanPool/BicausalOT](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/BicausalOT)

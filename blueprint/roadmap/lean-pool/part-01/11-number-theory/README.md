@@ -1,8 +1,8 @@
 # Number theory
 
-The Lean Pool projects whose card's first MSC2020 code is in class 11, Number theory: 71 articles, one per card.
+The Lean Pool projects whose card's first MSC2020 code is in class 11, Number theory: 76 articles, one per card.
 
-## [A 4AP-free permutation of the… to Every Pisot number is a…](part-01/README.md)
+## [A 4AP-free permutation of the… to Euler's pentagonal number…](part-01/README.md)
 
 - [A 4AP-free permutation of the positive integers](part-01/four-ap-free-permutation.md)
 - [A Conditional Sieve Criterion for Twin Primes via Krafft Geometry](part-01/krafftsieve.md)
@@ -12,6 +12,7 @@ The Lean Pool projects whose card's first MSC2020 code is in class 11, Number th
 - [ABC implies that Ramanujan's tau function misses almost all primes](part-01/ramanujan-tau-misses-primes.md)
 - [Almost all primes are partially regular](part-01/partial-regularity.md)
 - [Carlet's Kasami cyclic-additive conjecture](part-01/kasami-cyclic-additive.md)
+- [Cauchy–Schwarz covering barriers for Erdős problem 711](part-01/erdos-711-covering-barriers.md)
 - [Chabauty–Coleman bounds for odd-degree hyperelliptic curves](part-01/hyperelliptic-chabauty-coleman.md)
 - [Champernowne normality in every base](part-01/champernowne-normality.md)
 - [Convex geometry and the Erdős–Ginzburg–Ziv problem](part-01/egz-formal-proof.md)
@@ -23,10 +24,11 @@ The Lean Pool projects whose card's first MSC2020 code is in class 11, Number th
 - [The Erdős–Graham–Ruzsa–Straus two-prime theorem](part-01/egrs75.md)
 - [Euler's pentagonal number theorem](part-01/pentagonal-number-theorem.md)
 - [Euler's pentagonal number theorem, two independent proofs, and the Jacobi triple product](part-01/pentagonal-number-theorem-analytic.md)
-- [Every Pisot number is a two-sided limit of Salem numbers](part-01/salem-theorem.md)
 
-## [Exact odd-prime distributions… to Minimum modulus for the unique…](part-02/README.md)
+## [Eventually greedy best Egyptian… to Linear independence of 1…](part-02/README.md)
 
+- [Eventually greedy best Egyptian underapproximations](part-02/egyptian-underapproximations.md)
+- [Every Pisot number is a two-sided limit of Salem numbers](part-02/salem-theorem.md)
 - [Exact odd-prime distributions of central-binomial valuations](part-02/odd-prime-valuation-distribution.md)
 - [Exceptional Set in the abc Conjecture](part-02/abc-exceptions.md)
 - [Fermat's Last Theorem for regular primes](part-02/flt-regular.md)
@@ -45,11 +47,11 @@ The Lean Pool projects whose card's first MSC2020 code is in class 11, Number th
 - [Leo Moser's finite distinct-subset-sums inequality](part-02/erdos-moser-distinct-subset-sums.md)
 - [Li's criterion for the Riemann Hypothesis](part-02/li-criterion-rh-equivalence-lean.md)
 - [Linear independence of 1, zeta(2), and zeta(3)](part-02/zeta2-zeta3-linear-independence.md)
-- [Markoff mod p](part-02/markoff-modp.md)
-- [Minimum modulus for the unique multiset-sum problem](part-02/min-modulus-unique-multiset-sum.md)
 
-## [Modular forms and the… to Sharp Five-Distance and…](part-03/README.md)
+## [Markoff mod p to Selberg Sieve](part-03/README.md)
 
+- [Markoff mod p](part-03/markoff-modp.md)
+- [Minimum modulus for the unique multiset-sum problem](part-03/min-modulus-unique-multiset-sum.md)
 - [Modular forms and the generalized residue theorem](part-03/leanmodularforms.md)
 - [Nair–Tenenbaum short sums of arithmetic functions](part-03/nair-tenenbaum-short-sums.md)
 - [Neukirch's Algebraic Number Theory: Hilbert ramification theory](part-03/neukirch.md)
@@ -65,17 +67,20 @@ The Lean Pool projects whose card's first MSC2020 code is in class 11, Number th
 - [Primitive Sets Above x (Erdos Problem 1196)](part-03/erdos1196.md)
 - [Quadratic-order prime classification](part-03/singular-moduli.md)
 - [The Ramanujan-Nagell theorem](part-03/ramanujan-nagell.md)
+- [Rowland's prime-generating recurrence](part-03/rowland-primes.md)
 - [Roy's strong six exponentials theorem](part-03/roy-strong-six.md)
 - [Selberg Sieve](part-03/selberg-sieve4.md)
-- [Serre's mass formula for totally ramified local-field extensions](part-03/serre-mass-formula.md)
-- [Sharp asymptotic bounds for runs of multiples in finite sets](part-03/runs-of-multiples.md)
-- [Sharp Five-Distance and Sup-Norm Gap Theorems](part-03/five-distance-sharp.md)
 
-## [Siegel's lower bound for real… to Weierstrass models and singular…](part-04/README.md)
+## [Serre's mass formula for… to Weierstrass models and singular…](part-04/README.md)
 
+- [Serre's mass formula for totally ramified local-field extensions](part-04/serre-mass-formula.md)
+- [Sharp asymptotic bounds for runs of multiples in finite sets](part-04/runs-of-multiples.md)
+- [Sharp Five-Distance and Sup-Norm Gap Theorems](part-04/five-distance-sharp.md)
 - [Siegel's lower bound for real Dirichlet L-functions](part-04/siegel.md)
 - [Simple zeros of the Riemann zeta function](part-04/zeta-zeros.md)
+- [The six exponentials theorem of Lang and Ramachandra](part-04/six-exponentials.md)
 - [Square-difference-free polynomials beyond Naslund's conjectured bound](part-04/naslund-counterexample.md)
+- [Statements read in Sophie Germain's manuscripts](part-04/sophie-germain-archives.md)
 - [Sum of sets in several dimensions](part-04/sum-of-sets-in-several-dimensions.md)
 - [Sums of Distinct Factorials That Are Powers of Two (Erdos Problem 403)](part-04/erdos403.md)
 - [Sums of Three Squares](part-04/sumsthreesquares.md)

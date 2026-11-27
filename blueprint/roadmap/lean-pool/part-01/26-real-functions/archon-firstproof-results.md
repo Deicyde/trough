@@ -10,7 +10,7 @@ proof: formalized
 
 > Collects formal solutions from the Archon FirstProof benchmark, including polynomial and graph-theoretic results.
 
-*Quoted from the card [LeanPool/projects/archon-firstproof-results.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/archon-firstproof-results.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/archon-firstproof-results.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/archon-firstproof-results.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
 
 ## Depends on
 
@@ -18,10 +18,10 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`Problem4.harmonic_mean_inequality_full`](https://leanpool.github.io/lean-pool/LeanPool/ArchonFirstProofResults/FirstProof4/Problem4.html#Problem4.harmonic_mean_inequality_full) (theorem; a main declaration), declared in [LeanPool/ArchonFirstProofResults/FirstProof4/Problem4.lean, line 878](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/ArchonFirstProofResults/FirstProof4/Problem4.lean#L878): “Proves the benchmark harmonic-mean inequality for real-rooted polynomial transforms.”
-- [`Problem6.exists_eps_light_subset`](https://leanpool.github.io/lean-pool/LeanPool/ArchonFirstProofResults/FirstProof6/Problem6.html#Problem6.exists_eps_light_subset) (theorem; a main declaration), declared in [LeanPool/ArchonFirstProofResults/FirstProof6/Problem6.lean, line 1319](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/ArchonFirstProofResults/FirstProof6/Problem6.lean#L1319): “Proves the benchmark light-subset existence theorem in the graph Laplacian setting.”
+- [`Problem4.harmonic_mean_inequality_full`](https://leanpool.github.io/lean-pool/LeanPool/ArchonFirstProofResults/FirstProof4/Problem4.html#Problem4.harmonic_mean_inequality_full) (theorem; a main declaration), declared in [LeanPool/ArchonFirstProofResults/FirstProof4/Problem4.lean, line 878](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/ArchonFirstProofResults/FirstProof4/Problem4.lean#L878): “Proves the benchmark harmonic-mean inequality for real-rooted polynomial transforms.”
+- [`Problem6.exists_eps_light_subset`](https://leanpool.github.io/lean-pool/LeanPool/ArchonFirstProofResults/FirstProof6/Problem6.html#Problem6.exists_eps_light_subset) (theorem; a main declaration), declared in [LeanPool/ArchonFirstProofResults/FirstProof6/Problem6.lean, line 1319](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/ArchonFirstProofResults/FirstProof6/Problem6.lean#L1319): “Proves the benchmark light-subset existence theorem in the graph Laplacian setting.”
 
 ## Project
 
@@ -31,9 +31,9 @@ The card lists 2 main results, each with its informal statement quoted from the 
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.
 - MSC2020: 26D15, 05C50, 15A42.
-- In Lean Pool: [LeanPool/ArchonFirstProofResults](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/ArchonFirstProofResults), from the card [LeanPool/projects/archon-firstproof-results.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/archon-firstproof-results.yaml).
+- In Lean Pool: [LeanPool/ArchonFirstProofResults](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/ArchonFirstProofResults), from the card [LeanPool/projects/archon-firstproof-results.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/archon-firstproof-results.yaml).
 
 ## Sources
 
-- [Lean Pool at 307e3125: LeanPool/projects/archon-firstproof-results.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/archon-firstproof-results.yaml)
-- [Lean Pool at 307e3125: LeanPool/ArchonFirstProofResults](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/ArchonFirstProofResults)
+- [Lean Pool at bb99e52c: LeanPool/projects/archon-firstproof-results.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/archon-firstproof-results.yaml)
+- [Lean Pool at bb99e52c: LeanPool/ArchonFirstProofResults](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/ArchonFirstProofResults)

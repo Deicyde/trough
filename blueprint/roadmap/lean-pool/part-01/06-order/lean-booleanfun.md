@@ -10,7 +10,7 @@ proof: formalized
 
 > Walsh-Fourier analysis on Boolean functions, including Arrow's theorem and BLR linearity testing.
 
-*Quoted from the card [LeanPool/projects/lean-booleanfun.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/lean-booleanfun.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/lean-booleanfun.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/lean-booleanfun.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
 
 ## Depends on
 
@@ -18,9 +18,9 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`LeanPool.LeanBooleanfun.BooleanFun.BV.dictator_of_condorcet_and_unanimous`](https://leanpool.github.io/lean-pool/LeanPool/LeanBooleanfun/Arrow.html#LeanPool.LeanBooleanfun.BooleanFun.BV.dictator_of_condorcet_and_unanimous) (theorem; a main declaration), declared in [LeanPool/LeanBooleanfun/Arrow.lean, line 271](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/LeanBooleanfun/Arrow.lean#L271): “Arrow's theorem for two-candidate Boolean voting rules.”
+- [`LeanPool.LeanBooleanfun.BooleanFun.BV.dictator_of_condorcet_and_unanimous`](https://leanpool.github.io/lean-pool/LeanPool/LeanBooleanfun/Arrow.html#LeanPool.LeanBooleanfun.BooleanFun.BV.dictator_of_condorcet_and_unanimous) (theorem; a main declaration), declared in [LeanPool/LeanBooleanfun/Arrow.lean, line 271](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/LeanBooleanfun/Arrow.lean#L271): “Arrow's theorem for two-candidate Boolean voting rules.”
 
 ## Project
 
@@ -30,9 +30,9 @@ The card lists one main result, with its informal statement quoted from the card
 - Provenance: human, which in Lean Pool's terms means its Lean proofs were “written by people”.
 - License: Apache-2.0.
 - MSC2020: 06E30, 42C10, 91B14.
-- In Lean Pool: [LeanPool/LeanBooleanfun](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/LeanBooleanfun), from the card [LeanPool/projects/lean-booleanfun.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/lean-booleanfun.yaml).
+- In Lean Pool: [LeanPool/LeanBooleanfun](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/LeanBooleanfun), from the card [LeanPool/projects/lean-booleanfun.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/lean-booleanfun.yaml).
 
 ## Sources
 
-- [Lean Pool at 307e3125: LeanPool/projects/lean-booleanfun.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/lean-booleanfun.yaml)
-- [Lean Pool at 307e3125: LeanPool/LeanBooleanfun](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/LeanBooleanfun)
+- [Lean Pool at bb99e52c: LeanPool/projects/lean-booleanfun.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/lean-booleanfun.yaml)
+- [Lean Pool at bb99e52c: LeanPool/LeanBooleanfun](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/LeanBooleanfun)

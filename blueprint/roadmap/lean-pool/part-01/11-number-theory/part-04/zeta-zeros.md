@@ -10,7 +10,7 @@ proof: formalized
 
 > Formalizes Lamzouri's Hilbert-space proof of lower bounds for simple and distinct zeros of the Riemann zeta function. From explicit Riemann--von Mangoldt and unconditional pair-correlation hypotheses, the development proves that eventually more than 67.25% of nontrivial zeros are simple and on the critical line and more than 83.625% are distinct. It includes the finite-multiset Hilbert-space inequality, zeta-zero multiplicity symmetries, an admissible cutoff construction, and certified trigonometric estimates.
 
-*Quoted from the card [LeanPool/projects/zeta-zeros.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/zeta-zeros.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/zeta-zeros.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/zeta-zeros.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
 
 ## Depends on
 
@@ -18,12 +18,12 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`ZetaZeros.simple_proportion_d4`](https://leanpool.github.io/lean-pool/LeanPool/ZetaZeros/Main.html#ZetaZeros.simple_proportion_d4) (theorem; a main declaration), declared in [LeanPool/ZetaZeros/Main.lean, line 110](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/ZetaZeros/Main.lean#L110): “Assuming the stated Riemann--von Mangoldt and unconditional pair-correlation formulas, beyond some height more than 67.25% of nontrivial zeta zeros are simple and lie on the critical line.”
-- [`ZetaZeros.distinct_proportion_d5`](https://leanpool.github.io/lean-pool/LeanPool/ZetaZeros/Main.html#ZetaZeros.distinct_proportion_d5) (theorem), declared in [LeanPool/ZetaZeros/Main.lean, line 129](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/ZetaZeros/Main.lean#L129): “Under the same two explicit analytic hypotheses, beyond some height more than 83.625% of nontrivial zeta zeros are distinct.”
-- [`ZetaZeros.card_simpleRealPart_lower`](https://leanpool.github.io/lean-pool/LeanPool/ZetaZeros/Hilbert/AlphaExpansion.html#ZetaZeros.card_simpleRealPart_lower) (theorem), declared in [LeanPool/ZetaZeros/Hilbert/AlphaExpansion.lean, line 2473](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/ZetaZeros/Hilbert/AlphaExpansion.lean#L2473): “Bounds from below the number of multiplicity-one real points in a finite nonempty conjugation-invariant multiset using the squared test-kernel sum of any admissible function.”
-- [`ZetaZeros.card_lower`](https://leanpool.github.io/lean-pool/LeanPool/ZetaZeros/Hilbert/AlphaExpansion.html#ZetaZeros.card_lower) (theorem), declared in [LeanPool/ZetaZeros/Hilbert/AlphaExpansion.lean, line 2603](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/ZetaZeros/Hilbert/AlphaExpansion.lean#L2603): “Bounds from below the number of distinct points in a finite nonempty conjugation-invariant multiset using the same Hilbert-space kernel method.”
+- [`ZetaZeros.simple_proportion_d4`](https://leanpool.github.io/lean-pool/LeanPool/ZetaZeros/Main.html#ZetaZeros.simple_proportion_d4) (theorem; a main declaration), declared in [LeanPool/ZetaZeros/Main.lean, line 110](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/ZetaZeros/Main.lean#L110): “Assuming the stated Riemann--von Mangoldt and unconditional pair-correlation formulas, beyond some height more than 67.25% of nontrivial zeta zeros are simple and lie on the critical line.”
+- [`ZetaZeros.distinct_proportion_d5`](https://leanpool.github.io/lean-pool/LeanPool/ZetaZeros/Main.html#ZetaZeros.distinct_proportion_d5) (theorem), declared in [LeanPool/ZetaZeros/Main.lean, line 129](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/ZetaZeros/Main.lean#L129): “Under the same two explicit analytic hypotheses, beyond some height more than 83.625% of nontrivial zeta zeros are distinct.”
+- [`ZetaZeros.card_simpleRealPart_lower`](https://leanpool.github.io/lean-pool/LeanPool/ZetaZeros/Hilbert/AlphaExpansion.html#ZetaZeros.card_simpleRealPart_lower) (theorem), declared in [LeanPool/ZetaZeros/Hilbert/AlphaExpansion.lean, line 2473](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/ZetaZeros/Hilbert/AlphaExpansion.lean#L2473): “Bounds from below the number of multiplicity-one real points in a finite nonempty conjugation-invariant multiset using the squared test-kernel sum of any admissible function.”
+- [`ZetaZeros.card_lower`](https://leanpool.github.io/lean-pool/LeanPool/ZetaZeros/Hilbert/AlphaExpansion.html#ZetaZeros.card_lower) (theorem), declared in [LeanPool/ZetaZeros/Hilbert/AlphaExpansion.lean, line 2603](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/ZetaZeros/Hilbert/AlphaExpansion.lean#L2603): “Bounds from below the number of distinct points in a finite nonempty conjugation-invariant multiset using the same Hilbert-space kernel method.”
 
 ## Project
 
@@ -33,9 +33,9 @@ The card lists 4 main results, each with its informal statement quoted from the 
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.
 - MSC2020: 11M06, 11M26.
-- In Lean Pool: [LeanPool/ZetaZeros](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/ZetaZeros), from the card [LeanPool/projects/zeta-zeros.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/zeta-zeros.yaml).
+- In Lean Pool: [LeanPool/ZetaZeros](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/ZetaZeros), from the card [LeanPool/projects/zeta-zeros.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/zeta-zeros.yaml).
 
 ## Sources
 
-- [Lean Pool at 307e3125: LeanPool/projects/zeta-zeros.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/zeta-zeros.yaml)
-- [Lean Pool at 307e3125: LeanPool/ZetaZeros](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/ZetaZeros)
+- [Lean Pool at bb99e52c: LeanPool/projects/zeta-zeros.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/zeta-zeros.yaml)
+- [Lean Pool at bb99e52c: LeanPool/ZetaZeros](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/ZetaZeros)

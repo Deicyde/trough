@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# A 4AP-free permutation of the… to Every Pisot number is a…
+# A 4AP-free permutation of the… to Euler's pentagonal number…
 
 - [A 4AP-free permutation of the positive integers](four-ap-free-permutation.md)
 - [A Conditional Sieve Criterion for Twin Primes via Krafft Geometry](krafftsieve.md)
@@ -12,6 +12,7 @@ navigation: transparent
 - [ABC implies that Ramanujan's tau function misses almost all primes](ramanujan-tau-misses-primes.md)
 - [Almost all primes are partially regular](partial-regularity.md)
 - [Carlet's Kasami cyclic-additive conjecture](kasami-cyclic-additive.md)
+- [Cauchy–Schwarz covering barriers for Erdős problem 711](erdos-711-covering-barriers.md)
 - [Chabauty–Coleman bounds for odd-degree hyperelliptic curves](hyperelliptic-chabauty-coleman.md)
 - [Champernowne normality in every base](champernowne-normality.md)
 - [Convex geometry and the Erdős–Ginzburg–Ziv problem](egz-formal-proof.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [The Erdős–Graham–Ruzsa–Straus two-prime theorem](egrs75.md)
 - [Euler's pentagonal number theorem](pentagonal-number-theorem.md)
 - [Euler's pentagonal number theorem, two independent proofs, and the Jacobi triple product](pentagonal-number-theorem-analytic.md)
-- [Every Pisot number is a two-sided limit of Salem numbers](salem-theorem.md)

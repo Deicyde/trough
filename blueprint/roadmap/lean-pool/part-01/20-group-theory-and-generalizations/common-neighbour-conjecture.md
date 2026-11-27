@@ -10,7 +10,7 @@ proof: formalized
 
 > Proves that for every base size B at least two and every prescribed degree bound, there is a finite faithful primitive permutation group of at least that degree and exact base size B whose generalized Saxl graph contains two nonadjacent vertices with no common neighbor. The supporting library constructs an explicit infinite family from binary deleted permutation modules over finite fields and proves the required base-size, irreducibility, primitivity, and graph-theoretic properties.
 
-*Quoted from the card [LeanPool/projects/common-neighbour-conjecture.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/common-neighbour-conjecture.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/common-neighbour-conjecture.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/common-neighbour-conjecture.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
 
 ## Depends on
 
@@ -18,10 +18,10 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`SaxlCounterexamples.MainTheorems.mainTheorem`](https://leanpool.github.io/lean-pool/LeanPool/CommonNeighbourConjecture/Examples/MainTheorems.html#SaxlCounterexamples.MainTheorems.mainTheorem) (theorem; a main declaration), declared in [LeanPool/CommonNeighbourConjecture/Examples/MainTheorems.lean, line 28](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/CommonNeighbourConjecture/Examples/MainTheorems.lean#L28): “For every natural number B at least two and every degree bound, there exists a finite faithful primitive permutation group of degree at least the bound and base size exactly B whose generalized Saxl graph has two nonadjacent vertices with no common neighbor.”
-- [`SaxlCounterexamples.EveryBase.hq_coreFamily`](https://leanpool.github.io/lean-pool/LeanPool/CommonNeighbourConjecture/Examples/EveryBase/Main.html#SaxlCounterexamples.EveryBase.hq_coreFamily) (theorem), declared in [LeanPool/CommonNeighbourConjecture/Examples/EveryBase/Main.lean, line 175](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/CommonNeighbourConjecture/Examples/EveryBase/Main.lean#L175): “For every odd d with 3 ≤ d and every tail, the explicit affine wreath-product family has exact base size tail + 2, acts primitively, and its displayed pair has no common neighbor in the corresponding generalized Saxl graph.”
+- [`SaxlCounterexamples.MainTheorems.mainTheorem`](https://leanpool.github.io/lean-pool/LeanPool/CommonNeighbourConjecture/Examples/MainTheorems.html#SaxlCounterexamples.MainTheorems.mainTheorem) (theorem; a main declaration), declared in [LeanPool/CommonNeighbourConjecture/Examples/MainTheorems.lean, line 28](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/CommonNeighbourConjecture/Examples/MainTheorems.lean#L28): “For every natural number B at least two and every degree bound, there exists a finite faithful primitive permutation group of degree at least the bound and base size exactly B whose generalized Saxl graph has two nonadjacent vertices with no common neighbor.”
+- [`SaxlCounterexamples.EveryBase.hq_coreFamily`](https://leanpool.github.io/lean-pool/LeanPool/CommonNeighbourConjecture/Examples/EveryBase/Main.html#SaxlCounterexamples.EveryBase.hq_coreFamily) (theorem), declared in [LeanPool/CommonNeighbourConjecture/Examples/EveryBase/Main.lean, line 175](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/CommonNeighbourConjecture/Examples/EveryBase/Main.lean#L175): “For every odd d with 3 ≤ d and every tail, the explicit affine wreath-product family has exact base size tail + 2, acts primitively, and its displayed pair has no common neighbor in the corresponding generalized Saxl graph.”
 
 ## Project
 
@@ -31,9 +31,9 @@ The card lists 2 main results, each with its informal statement quoted from the 
 - Provenance: human, which in Lean Pool's terms means its Lean proofs were “written by people”.
 - License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 20B15, 05C25.
-- In Lean Pool: [LeanPool/CommonNeighbourConjecture](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/CommonNeighbourConjecture), from the card [LeanPool/projects/common-neighbour-conjecture.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/common-neighbour-conjecture.yaml).
+- In Lean Pool: [LeanPool/CommonNeighbourConjecture](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/CommonNeighbourConjecture), from the card [LeanPool/projects/common-neighbour-conjecture.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/common-neighbour-conjecture.yaml).
 
 ## Sources
 
-- [Lean Pool at 307e3125: LeanPool/projects/common-neighbour-conjecture.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/common-neighbour-conjecture.yaml)
-- [Lean Pool at 307e3125: LeanPool/CommonNeighbourConjecture](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/CommonNeighbourConjecture)
+- [Lean Pool at bb99e52c: LeanPool/projects/common-neighbour-conjecture.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/common-neighbour-conjecture.yaml)
+- [Lean Pool at bb99e52c: LeanPool/CommonNeighbourConjecture](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/CommonNeighbourConjecture)

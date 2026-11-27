@@ -1,7 +1,8 @@
 # Commutative algebra
 
-The Lean Pool projects whose card's first MSC2020 code is in class 13, Commutative algebra: 3 articles, one per card.
+The Lean Pool projects whose card's first MSC2020 code is in class 13, Commutative algebra: 4 articles, one per card.
 
 - [The Anderson Conjecture: A Weakly Quasi-Complete Ring Need Not Be Quasi-Complete](anderson-conjecture.md)
 - [Commutative algebra toolkit](commutative-algebra-toolkit.md)
 - [Nagata's prime-generated factoriality theorem](nagatafactoriality.md)
+- [The Quillen–Suslin theorem (Quillen patching, Horrocks and Bass)](quillen-suslin.md)

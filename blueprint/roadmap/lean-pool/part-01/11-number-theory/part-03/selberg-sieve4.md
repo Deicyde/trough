@@ -10,7 +10,7 @@ proof: formalized
 
 > Formalizes the Selberg sieve with applications to prime-counting bounds and a Brun-Titchmarsh-style estimate.
 
-*Quoted from the card [LeanPool/projects/selberg-sieve4.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/selberg-sieve4.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/selberg-sieve4.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/selberg-sieve4.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
 
 ## Depends on
 
@@ -18,12 +18,12 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 4 main results, each with its informal statement quoted from the card. The scan finds 4 of their declarations in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`fundamental_theorem_simple`](https://leanpool.github.io/lean-pool/LeanPool/SelbergSieve4/MainResults.html#fundamental_theorem_simple) (theorem; a main declaration), declared in [LeanPool/SelbergSieve4/MainResults.lean, line 29](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/SelbergSieve4/MainResults.lean#L29): “Proves the simple Selberg sieve upper-bound theorem.”
-- [`primeCounting_isBigO_atTop`](https://leanpool.github.io/lean-pool/LeanPool/SelbergSieve4/MainResults.html#primeCounting_isBigO_atTop) (theorem; a main declaration), declared in [LeanPool/SelbergSieve4/MainResults.lean, line 35](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/SelbergSieve4/MainResults.lean#L35): “Derives the asymptotic prime-counting upper bound.”
-- [`primeCounting_le_mul`](https://leanpool.github.io/lean-pool/LeanPool/SelbergSieve4/MainResults.html#primeCounting_le_mul) (theorem), declared in [LeanPool/SelbergSieve4/MainResults.lean, line 39](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/SelbergSieve4/MainResults.lean#L39): “Gives an eventual explicit constant upper bound for the prime-counting function.”
-- [`primesBetween_le`](https://leanpool.github.io/lean-pool/LeanPool/SelbergSieve4/MainResults.html#primesBetween_le) (theorem; a main declaration), declared in [LeanPool/SelbergSieve4/MainResults.lean, line 42](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/SelbergSieve4/MainResults.lean#L42): “Bounds the number of primes in an interval using the sieve estimate.”
+- [`fundamental_theorem_simple`](https://leanpool.github.io/lean-pool/LeanPool/SelbergSieve4/MainResults.html#fundamental_theorem_simple) (theorem; a main declaration), declared in [LeanPool/SelbergSieve4/MainResults.lean, line 29](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/SelbergSieve4/MainResults.lean#L29): “Proves the simple Selberg sieve upper-bound theorem.”
+- [`primeCounting_isBigO_atTop`](https://leanpool.github.io/lean-pool/LeanPool/SelbergSieve4/MainResults.html#primeCounting_isBigO_atTop) (theorem; a main declaration), declared in [LeanPool/SelbergSieve4/MainResults.lean, line 35](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/SelbergSieve4/MainResults.lean#L35): “Derives the asymptotic prime-counting upper bound.”
+- [`primeCounting_le_mul`](https://leanpool.github.io/lean-pool/LeanPool/SelbergSieve4/MainResults.html#primeCounting_le_mul) (theorem), declared in [LeanPool/SelbergSieve4/MainResults.lean, line 39](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/SelbergSieve4/MainResults.lean#L39): “Gives an eventual explicit constant upper bound for the prime-counting function.”
+- [`primesBetween_le`](https://leanpool.github.io/lean-pool/LeanPool/SelbergSieve4/MainResults.html#primesBetween_le) (theorem; a main declaration), declared in [LeanPool/SelbergSieve4/MainResults.lean, line 42](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/SelbergSieve4/MainResults.lean#L42): “Bounds the number of primes in an interval using the sieve estimate.”
 
 ## Project
 
@@ -33,9 +33,9 @@ The card lists 4 main results, each with its informal statement quoted from the 
 - Provenance: human, which in Lean Pool's terms means its Lean proofs were “written by people”.
 - License: Apache-2.0.
 - MSC2020: 11N35, 11N05, 11N13.
-- In Lean Pool: [LeanPool/SelbergSieve4](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/SelbergSieve4), from the card [LeanPool/projects/selberg-sieve4.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/selberg-sieve4.yaml).
+- In Lean Pool: [LeanPool/SelbergSieve4](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/SelbergSieve4), from the card [LeanPool/projects/selberg-sieve4.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/selberg-sieve4.yaml).
 
 ## Sources
 
-- [Lean Pool at 307e3125: LeanPool/projects/selberg-sieve4.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/selberg-sieve4.yaml)
-- [Lean Pool at 307e3125: LeanPool/SelbergSieve4](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/SelbergSieve4)
+- [Lean Pool at bb99e52c: LeanPool/projects/selberg-sieve4.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/selberg-sieve4.yaml)
+- [Lean Pool at bb99e52c: LeanPool/SelbergSieve4](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/SelbergSieve4)

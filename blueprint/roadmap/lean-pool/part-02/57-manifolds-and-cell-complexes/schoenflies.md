@@ -10,7 +10,7 @@ proof: formalized
 
 > Formalizes the Jordan curve theorem and the extension of every homeomorphism between Jordan curves to a plane homeomorphism.
 
-*Quoted from the card [LeanPool/projects/schoenflies.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/schoenflies.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/schoenflies.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/schoenflies.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
 
 ## Depends on
 
@@ -18,11 +18,11 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`Schoenflies.jordan_schoenflies_of_homeomorph`](https://leanpool.github.io/lean-pool/LeanPool/Schoenflies/JordanSchoenflies.html#Schoenflies.jordan_schoenflies_of_homeomorph) (theorem; a main declaration), declared in [LeanPool/Schoenflies/JordanSchoenflies.lean, line 64](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Schoenflies/JordanSchoenflies.lean#L64): “Every homeomorphism between two Jordan curves in the plane extends to a self-homeomorphism of the plane.”
-- [`Schoenflies.jordan_schoenflies`](https://leanpool.github.io/lean-pool/LeanPool/Schoenflies/JordanSchoenflies.html#Schoenflies.jordan_schoenflies) (theorem), declared in [LeanPool/Schoenflies/JordanSchoenflies.lean, line 50](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Schoenflies/JordanSchoenflies.lean#L50): “A homeomorphism between Jordan curves extends to a global homeomorphism agreeing with it on the source curve.”
-- [`Schoenflies.forall_isSeparating_of_isJordanCurve`](https://leanpool.github.io/lean-pool/LeanPool/Schoenflies/InitialPairFixed.html#Schoenflies.forall_isSeparating_of_isJordanCurve) (theorem), declared in [LeanPool/Schoenflies/InitialPairFixed.lean, line 94](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Schoenflies/InitialPairFixed.lean#L94): “Every Jordan curve separates the plane into an inside and an outside region.”
+- [`Schoenflies.jordan_schoenflies_of_homeomorph`](https://leanpool.github.io/lean-pool/LeanPool/Schoenflies/JordanSchoenflies.html#Schoenflies.jordan_schoenflies_of_homeomorph) (theorem; a main declaration), declared in [LeanPool/Schoenflies/JordanSchoenflies.lean, line 64](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Schoenflies/JordanSchoenflies.lean#L64): “Every homeomorphism between two Jordan curves in the plane extends to a self-homeomorphism of the plane.”
+- [`Schoenflies.jordan_schoenflies`](https://leanpool.github.io/lean-pool/LeanPool/Schoenflies/JordanSchoenflies.html#Schoenflies.jordan_schoenflies) (theorem), declared in [LeanPool/Schoenflies/JordanSchoenflies.lean, line 50](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Schoenflies/JordanSchoenflies.lean#L50): “A homeomorphism between Jordan curves extends to a global homeomorphism agreeing with it on the source curve.”
+- [`Schoenflies.forall_isSeparating_of_isJordanCurve`](https://leanpool.github.io/lean-pool/LeanPool/Schoenflies/InitialPairFixed.html#Schoenflies.forall_isSeparating_of_isJordanCurve) (theorem), declared in [LeanPool/Schoenflies/InitialPairFixed.lean, line 94](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Schoenflies/InitialPairFixed.lean#L94): “Every Jordan curve separates the plane into an inside and an outside region.”
 
 ## Project
 
@@ -32,9 +32,9 @@ The card lists 3 main results, each with its informal statement quoted from the 
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.
 - MSC2020: 57K10, 54C25.
-- In Lean Pool: [LeanPool/Schoenflies](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Schoenflies), from the card [LeanPool/projects/schoenflies.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/schoenflies.yaml).
+- In Lean Pool: [LeanPool/Schoenflies](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Schoenflies), from the card [LeanPool/projects/schoenflies.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/schoenflies.yaml).
 
 ## Sources
 
-- [Lean Pool at 307e3125: LeanPool/projects/schoenflies.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/schoenflies.yaml)
-- [Lean Pool at 307e3125: LeanPool/Schoenflies](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/Schoenflies)
+- [Lean Pool at bb99e52c: LeanPool/projects/schoenflies.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/schoenflies.yaml)
+- [Lean Pool at bb99e52c: LeanPool/Schoenflies](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/Schoenflies)

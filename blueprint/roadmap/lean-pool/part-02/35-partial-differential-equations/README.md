@@ -1,10 +1,12 @@
 # Partial differential equations
 
-The Lean Pool projects whose card's first MSC2020 code is in class 35, Partial differential equations: 10 articles, one per card.
+The Lean Pool projects whose card's first MSC2020 code is in class 35, Partial differential equations: 12 articles, one per card.
 
+- [A fast dynamo with zero topological entropy](fast-dynamo.md)
 - [Anomalous diffusion by fractal homogenization](anomalous-diffusion-fractal-homogenization.md)
 - [Caffarelli–Kohn–Nirenberg partial regularity](caffarelli-kohn-nirenberg.md)
 - [Clawristotle: Vlasov-Maxwell-Landau steady-state classification](clawristotle.md)
+- [Cutoff for fast diffusion and porous medium equations](cutoff-fast-diffusion.md)
 - [Escauriaza–Seregin–Šverák and Ladyzhenskaya–Prodi–Serrin regularity](escauriaza-seregin-sverak.md)
 - [Finite-time breakdown for Navier–Stokes and Euler](navier-stokes-and-euler.md)
 - [Homogenization at a polynomial scale in high contrast](high-contrast-homogenization.md)

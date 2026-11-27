@@ -9,7 +9,7 @@ statement: formalized
 
 > Constructs one finitely generated property-(T) ICC group and an infinite family of finitely generated property-(T) ICC groups that are pairwise nonisomorphic and are each nonisomorphic to the first group, while all of their tracial group von Neumann algebras are normally star-isomorphic. This unconditional infinite-family result is independent of the pooled conditional two-group Connes-rigidity formalization.
 
-*Quoted from the card [LeanPool/projects/infinite-connes-rigidity.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/infinite-connes-rigidity.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/infinite-connes-rigidity.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/infinite-connes-rigidity.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122), Apache-2.0.*
 
 ## Depends on
 
@@ -17,10 +17,10 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [307e3125](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [bb99e52c](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`ConnesRigidity.infiniteConnesRigidity`](https://leanpool.github.io/lean-pool/LeanPool/InfiniteConnesRigidity/FactorAndRigidity.html#ConnesRigidity.infiniteConnesRigidity) (abbrev; a main declaration), declared in [LeanPool/InfiniteConnesRigidity/FactorAndRigidity.lean, line 5004](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/InfiniteConnesRigidity/FactorAndRigidity.lean#L5004): “Registry-friendly alias of the exact canonical infinite-family Connes-rigidity counterexample theorem below.”
-- [`ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors`](https://leanpool.github.io/lean-pool/LeanPool/InfiniteConnesRigidity/FactorAndRigidity.html#ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors) (theorem), declared in [LeanPool/InfiniteConnesRigidity/FactorAndRigidity.lean, line 4978](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/InfiniteConnesRigidity/FactorAndRigidity.lean#L4978): “There exist a finitely generated property-(T) ICC group and an infinite sequence of finitely generated property-(T) ICC groups such that all their tracial group von Neumann algebras are normally star-isomorphic, although the sequence is pairwise nonisomorphic and none of its groups is isomorphic to the distinguished group.”
+- [`ConnesRigidity.infiniteConnesRigidity`](https://leanpool.github.io/lean-pool/LeanPool/InfiniteConnesRigidity/FactorAndRigidity.html#ConnesRigidity.infiniteConnesRigidity) (abbrev; a main declaration), declared in [LeanPool/InfiniteConnesRigidity/FactorAndRigidity.lean, line 5004](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/InfiniteConnesRigidity/FactorAndRigidity.lean#L5004): “Registry-friendly alias of the exact canonical infinite-family Connes-rigidity counterexample theorem below.”
+- [`ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors`](https://leanpool.github.io/lean-pool/LeanPool/InfiniteConnesRigidity/FactorAndRigidity.html#ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors) (theorem), declared in [LeanPool/InfiniteConnesRigidity/FactorAndRigidity.lean, line 4978](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/InfiniteConnesRigidity/FactorAndRigidity.lean#L4978): “There exist a finitely generated property-(T) ICC group and an infinite sequence of finitely generated property-(T) ICC groups such that all their tracial group von Neumann algebras are normally star-isomorphic, although the sequence is pairwise nonisomorphic and none of its groups is isomorphic to the distinguished group.”
 
 ## Project
 
@@ -30,9 +30,9 @@ The card lists 2 main results, each with its informal statement quoted from the 
 - Provenance: mix, which in Lean Pool's terms means people and AI “both contributed substantially” to its Lean proofs.
 - License: Apache-2.0.
 - MSC2020: 46L10, 20F65, 22D10.
-- In Lean Pool: [LeanPool/InfiniteConnesRigidity](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/InfiniteConnesRigidity), from the card [LeanPool/projects/infinite-connes-rigidity.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/infinite-connes-rigidity.yaml).
+- In Lean Pool: [LeanPool/InfiniteConnesRigidity](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/InfiniteConnesRigidity), from the card [LeanPool/projects/infinite-connes-rigidity.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/infinite-connes-rigidity.yaml).
 
 ## Sources
 
-- [Lean Pool at 307e3125: LeanPool/projects/infinite-connes-rigidity.yaml](https://github.com/LeanPool/lean-pool/blob/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/projects/infinite-connes-rigidity.yaml)
-- [Lean Pool at 307e3125: LeanPool/InfiniteConnesRigidity](https://github.com/LeanPool/lean-pool/tree/307e31252a8b55092789f868afe6238397a6b50c/LeanPool/InfiniteConnesRigidity)
+- [Lean Pool at bb99e52c: LeanPool/projects/infinite-connes-rigidity.yaml](https://github.com/LeanPool/lean-pool/blob/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/projects/infinite-connes-rigidity.yaml)
+- [Lean Pool at bb99e52c: LeanPool/InfiniteConnesRigidity](https://github.com/LeanPool/lean-pool/tree/bb99e52c3f05626056b5718b442ec2f84ece1122/LeanPool/InfiniteConnesRigidity)
