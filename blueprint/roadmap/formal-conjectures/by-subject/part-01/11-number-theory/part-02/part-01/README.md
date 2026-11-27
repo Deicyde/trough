@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Erdős Problem 846 to Erdős Problem 869
+# Erdős Problem 844 to Erdős Problem 867
 
+- [Erdős Problem 844](../../../../../erdos-problems/800-899/part-02/erdos-problem-844.md)
+- [Erdős Problem 845](../../../../../erdos-problems/800-899/part-03/erdos-problem-845.md)
 - [Erdős Problem 846](../../../../../erdos-problems/800-899/part-03/erdos-problem-846.md)
 - [Erdős Problem 847](../../../../../erdos-problems/800-899/part-03/erdos-problem-847.md)
 - [Erdős Problem 848](../../../../../erdos-problems/800-899/part-03/erdos-problem-848.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Erdős Problem 864](../../../../../erdos-problems/800-899/part-03/erdos-problem-864.md)
 - [Erdős Problem 865](../../../../../erdos-problems/800-899/part-03/erdos-problem-865.md)
 - [Erdős Problem 867](../../../../../erdos-problems/800-899/part-03/erdos-problem-867.md)
-- [Erdős Problem 868](../../../../../erdos-problems/800-899/part-04/erdos-problem-868.md)
-- [Erdős Problem 869](../../../../../erdos-problems/800-899/part-04/erdos-problem-869.md)

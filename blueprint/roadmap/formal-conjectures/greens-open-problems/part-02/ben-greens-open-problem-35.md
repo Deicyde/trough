@@ -35,7 +35,7 @@ statement: formalized
 > The constants of [CS17], [MV10], [AE25], [GGTW25] and [YD26] are stated for functions supported on
 > $[-1/4, 1/4]$; rescaling to $[0, 1]$ halves them.
 
-*Quoted from [FormalConjectures/GreensOpenProblems/35.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/35.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/GreensOpenProblems/35.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/35.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 8 research or textbook statements: 1 open, 6 solved and 1 textbook result.
 
@@ -53,7 +53,7 @@ theorem green_35.lower :
         0.64 < green_35.lower.answer ∞)
 ```
 
-Category `research open`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/GreensOpenProblems/35.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/35.lean#L72).
+Category `research open`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/GreensOpenProblems/35.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/35.lean#L72).
 
 ## `Green35.green_35.upper`
 
@@ -68,7 +68,7 @@ theorem green_35.upper :
     (∀ p, 1 < p → c p ≤ green_35.upper.answer p) ∧ green_35.upper.answer ∞ < 0.7516
 ```
 
-Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/GreensOpenProblems/35.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/35.lean#L85).
+Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/GreensOpenProblems/35.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/35.lean#L85).
 
 ## `Green35.variants.c_2_lower`
 
@@ -80,7 +80,7 @@ Solved: stated here without proof.
 theorem c_2_lower : ENNReal.ofReal (Real.sqrt (4 / 7)) ≤ c 2
 ```
 
-Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/GreensOpenProblems/35.lean, line 94](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/35.lean#L94).
+Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/GreensOpenProblems/35.lean, line 94](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/35.lean#L94).
 
 ## `Green35.variants.c_inf_lower`
 
@@ -92,7 +92,7 @@ Solved: stated here without proof.
 theorem c_inf_lower : 0.64 ≤ c ∞
 ```
 
-Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/GreensOpenProblems/35.lean, line 99](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/35.lean#L99).
+Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/GreensOpenProblems/35.lean, line 99](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/35.lean#L99).
 
 ## `Green35.variants.c_inf_upper`
 
@@ -105,7 +105,7 @@ Solved: stated here without proof.
 theorem c_inf_upper : c ∞ ≤ 0.7549
 ```
 
-Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/GreensOpenProblems/35.lean, line 105](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/35.lean#L105).
+Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/GreensOpenProblems/35.lean, line 105](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/35.lean#L105).
 
 ## `Green35.variants.c_inf_upper_ae25`
 
@@ -119,7 +119,7 @@ Solved: stated here without proof.
 theorem c_inf_upper_ae25 : c ∞ ≤ 0.75265
 ```
 
-Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/GreensOpenProblems/35.lean, line 112](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/35.lean#L112).
+Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/GreensOpenProblems/35.lean, line 112](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/35.lean#L112).
 
 ## `Green35.variants.c_inf_upper_ggtw25`
 
@@ -132,7 +132,7 @@ Solved: stated here without proof.
 theorem c_inf_upper_ggtw25 : c ∞ ≤ 0.7516
 ```
 
-Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/GreensOpenProblems/35.lean, line 118](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/35.lean#L118).
+Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/GreensOpenProblems/35.lean, line 118](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/35.lean#L118).
 
 ## `Green35.variants.c_inf_lower_young`
 
@@ -144,7 +144,7 @@ Textbook result, stated without proof.
 theorem c_inf_lower_young : (c 2) ^ 2 ≤ c ∞
 ```
 
-Category `textbook`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/GreensOpenProblems/35.lean, line 123](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/35.lean#L123).
+Category `textbook`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md), [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/GreensOpenProblems/35.lean, line 123](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/35.lean#L123).
 
 ## Depends on
 
@@ -152,5 +152,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/GreensOpenProblems/35.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/35.lean)
+- [FormalConjectures/GreensOpenProblems/35.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/35.lean)
 - [Ben Green's Open Problem 35](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.35)

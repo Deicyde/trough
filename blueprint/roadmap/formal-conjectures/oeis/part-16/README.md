@@ -2,8 +2,14 @@
 navigation: transparent
 ---
 
-# Representations of $n$ as $x^2… to Four-square conjecture with…
+# Prime values in recurrence… to Step difference bound $a(n+1) -…
 
+- [Prime values in recurrence $a(n+1) = |a(n) - \gcd(a(n), 7n+6)|$](prime-values-in-recurrence-a-n-1-a-n-gcd-a-n-7n.md)
+- [Primes $p$ such that $n - (p n' - 1)$ and $n + (p n' - 1)$ are both prime](primes-p-such-that-n-p-n-1-and-n-p-n-1-are-both.md)
+- [Sums of four binary palindromes](sums-of-four-binary-palindromes.md)
+- [Refining Lagrange's four-square theorem with $(5x^2 + 7y^2 + 9z^2)yz$ a square](refining-lagranges-four-square-theorem-with-5x-2.md)
+- [Additive decompositions of $\pi(T(n))$](additive-decompositions-of-pi-t-n.md)
+- [Additive decompositions of $\pi(\frac{n(n+1)}{2} + 1)$](additive-decompositions-of-pi-frac-n-n-1-2-1.md)
 - [Representations of $n$ as $x^2 + \phi(y^2) + \phi(z^2)$](representations-of-n-as-x-2-phi-y-2-phi-z-2.md)
 - [Sums of a cube, a square, and a positive triangular number](sums-of-a-cube-a-square-and-a-positive-triangula.md)
 - [Sums of a square and three weighted cubes](sums-of-a-square-and-three-weighted-cubes.md)
@@ -18,9 +24,3 @@ navigation: transparent
 - [Sum of a triangular number, a generalized pentagonal number, and a generalized heptagonal number](sum-of-a-triangular-number-a-generalized-pentago.md)
 - [Symmetry of digit sum differences $\operatorname{sign}(S_5(k) - S_1(k))$](symmetry-of-digit-sum-differences-sign-s-5-k-s-1.md)
 - [Step difference bound $a(n+1) - a(n) \in \{1, 2\}$ in mass-redistribution cellular automata](step-difference-bound-a-n-1-a-n-in-1-2-in-mass-r.md)
-- [Sum of two squares and two central-binomial-type terms](sum-of-two-squares-and-two-central-binomial-type.md)
-- [Sum of two squares, a power of 3, and a power of 5](sum-of-two-squares-a-power-of-3-and-a-power-of-5.md)
-- [Maximality of $k = 43$ with restricted digit counts in bases $3 \le b < k$](maximality-of-k-43-with-restricted-digit-counts.md)
-- [The 2-4-6-8 Conjecture](the-2-4-6-8-conjecture.md)
-- [Vanishing of bases with $b^n \equiv -1 \pmod{2n+1}$ for absolute Euler pseudoprimes](vanishing-of-bases-with-b-n-equiv-1-pmod-2n-1-fo.md)
-- [Four-square conjecture with powers of 2, 3, and 5](four-square-conjecture-with-powers-of-2-3-and-5.md)

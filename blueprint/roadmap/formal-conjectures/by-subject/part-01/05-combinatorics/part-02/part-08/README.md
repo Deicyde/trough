@@ -4,6 +4,12 @@ navigation: transparent
 
 # Written on the Wall II -… to Written on the Wall II -…
 
+- [Written on the Wall II - Conjecture 31](../../../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-31.md)
+- [Written on the Wall II - Conjecture 32](../../../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-32.md)
+- [Written on the Wall II - Conjecture 33](../../../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-33.md)
+- [Written on the Wall II - Conjecture 34](../../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-34.md)
+- [Written on the Wall II - Conjecture 36](../../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-36.md)
+- [Written on the Wall II - Conjecture 40](../../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-40.md)
 - [Written on the Wall II - Conjecture 58](../../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-58.md)
 - [Written on the Wall II - Conjecture 59](../../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-59.md)
 - [Written on the Wall II - Conjecture 61](../../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-61.md)
@@ -18,9 +24,3 @@ navigation: transparent
 - [Written on the Wall II - Conjecture 100](../../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-100.md)
 - [Written on the Wall II - Conjecture 101](../../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-101.md)
 - [Written on the Wall II - Conjecture 103](../../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-103.md)
-- [Written on the Wall II - Conjecture 109](../../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-109.md)
-- [Written on the Wall II - Conjecture 133](../../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-133.md)
-- [Written on the Wall II - Conjecture 141](../../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-141.md)
-- [Written on the Wall II - Conjecture 142](../../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-142.md)
-- [Written on the Wall II - Conjecture 143](../../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-143.md)
-- [Written on the Wall II - Conjecture 144](../../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-144.md)

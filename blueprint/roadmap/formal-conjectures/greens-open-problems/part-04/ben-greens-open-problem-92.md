@@ -20,7 +20,7 @@ statement: formalized
 > - [Ch21] Chase, Z., *New lower bounds for trace reconstruction*. Ann. Inst. Henri Poincaré
 >   Probab. Stat. 57 (2021), 627--643. [arXiv:1905.03031](https://arxiv.org/abs/1905.03031)
 
-*Quoted from [FormalConjectures/GreensOpenProblems/92.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/92.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/GreensOpenProblems/92.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/92.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 1 open and 2 solved. It also has 1 test statement, counted here but not shown.
 
@@ -43,7 +43,7 @@ Open: stated without proof.
 theorem green_92 : (fun n ↦ (numTraces n : ℝ)) =Θ[atTop] green_92.answer
 ```
 
-Category `research open`; AMS [60 Probability theory and stochastic processes](../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/GreensOpenProblems/92.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/92.lean#L98).
+Category `research open`; AMS [60 Probability theory and stochastic processes](../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/GreensOpenProblems/92.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/92.lean#L98).
 
 ## `Green92.green_92.variants.chase_upper`
 
@@ -61,7 +61,7 @@ theorem green_92.variants.chase_upper :
       numTraces n ≤ ⌈Real.exp (C * (n : ℝ) ^ (1 / 5 : ℝ) * Real.log n ^ 5)⌉₊
 ```
 
-Category `research solved`; AMS [60 Probability theory and stochastic processes](../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/GreensOpenProblems/92.lean, line 109](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/92.lean#L109).
+Category `research solved`; AMS [60 Probability theory and stochastic processes](../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/GreensOpenProblems/92.lean, line 109](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/92.lean#L109).
 
 ## `Green92.green_92.variants.chase_lower`
 
@@ -81,7 +81,7 @@ theorem green_92.variants.chase_lower :
       c * (n : ℝ) ^ (3 / 2 : ℝ) / Real.log n ^ 7 ≤ numTraces n
 ```
 
-Category `research solved`; AMS [60 Probability theory and stochastic processes](../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/GreensOpenProblems/92.lean, line 124](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/92.lean#L124).
+Category `research solved`; AMS [60 Probability theory and stochastic processes](../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/GreensOpenProblems/92.lean, line 124](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/92.lean#L124).
 
 ## Depends on
 
@@ -89,5 +89,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/GreensOpenProblems/92.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/92.lean)
+- [FormalConjectures/GreensOpenProblems/92.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/92.lean)
 - [Green, Ben. "100 open problems." (2024).](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.92)

@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# Catalan-Mersenne numbers to Nearest integer to $n/\sqrt{2}$
+# Recamán's sequence to Smallest composite $c$ such…
 
+- [Recamán's sequence](../../../../../oeis/part-02/recamans-sequence.md)
+- [Practical numbers](../../../../../oeis/part-02/practical-numbers.md)
+- [Apéry numbers](../../../../../oeis/part-02/apery-numbers.md)
 - [Catalan-Mersenne numbers](../../../../../oeis/part-02/catalan-mersenne-numbers.md)
 - [Wolstenholme numbers](../../../../../oeis/part-02/wolstenholme-numbers.md)
 - [Sum of next $n$ primes](../../../../../oeis/part-02/sum-of-next-n-primes.md)
@@ -21,6 +24,3 @@ navigation: transparent
 - [Number of primes $< n^2$](../../../../../oeis/part-02/number-of-primes-n-2.md)
 - [Conjectures associated with A038552](../../../../../oeis/part-03/conjectures-associated-with-a038552.md)
 - [Smallest composite $c$ such that $\textrm{primorial}(n) + c$ is prime](../../../../../oeis/part-03/smallest-composite-c-such-that-textrm-primorial.md)
-- [Denominators of coefficients in Stirling's expansion for $\log(\Gamma(z))$](../../../../../oeis/part-03/denominators-of-coefficients-in-stirlings-expans.md)
-- [$a(n) = \sum_{k=1}^n (k^2 \bmod n)$](../../../../../oeis/part-03/a-n-sum-k-1-n-k-2-bmod-n.md)
-- [Nearest integer to $n/\sqrt{2}$](../../../../../oeis/part-03/nearest-integer-to-n-sqrt-2.md)

@@ -2,8 +2,14 @@
 navigation: transparent
 ---
 
-# Ben Green's Open Problem 55 to Written on the Wall II -…
+# Ben Green's Open Problem 43 to Green's Open Problem 87
 
+- [Ben Green's Open Problem 43](../../../../../greens-open-problems/part-02/ben-greens-open-problem-43.md)
+- [Green's Open Problem 49](../../../../../greens-open-problems/part-02/greens-open-problem-49.md)
+- [Ben Green's Open Problem 50](../../../../../greens-open-problems/part-03/ben-greens-open-problem-50.md)
+- [Green's Open Problem 51](../../../../../greens-open-problems/part-03/greens-open-problem-51.md)
+- [Green's Open Problem 52](../../../../../greens-open-problems/part-03/greens-open-problem-52.md)
+- [Green's Open Problem 53](../../../../../greens-open-problems/part-03/greens-open-problem-53.md)
 - [Ben Green's Open Problem 55](../../../../../greens-open-problems/part-03/ben-greens-open-problem-55.md)
 - [Ben Green's Open Problem 57](../../../../../greens-open-problems/part-03/ben-greens-open-problem-57.md)
 - [Ben Green's Open Problem 58](../../../../../greens-open-problems/part-03/ben-greens-open-problem-58.md)
@@ -18,9 +24,3 @@ navigation: transparent
 - [Ben Green's Open Problem 77](../../../../../greens-open-problems/part-04/ben-greens-open-problem-77.md)
 - [Ben Green's Open Problem 84](../../../../../greens-open-problems/part-04/ben-greens-open-problem-84.md)
 - [Green's Open Problem 87](../../../../../greens-open-problems/part-04/greens-open-problem-87.md)
-- [Ben Green's Open Problem 88](../../../../../greens-open-problems/part-04/ben-greens-open-problem-88.md)
-- [Ben Green's Open Problem 91](../../../../../greens-open-problems/part-04/ben-greens-open-problem-91.md)
-- [Ben Green's Open Problem 97](../../../../../greens-open-problems/part-04/ben-greens-open-problem-97.md)
-- [Written on the Wall II - Conjecture 160](../../../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-160.md)
-- [Written on the Wall II - Conjecture 1](../../../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-1.md)
-- [Written on the Wall II - Conjecture 2](../../../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-2.md)

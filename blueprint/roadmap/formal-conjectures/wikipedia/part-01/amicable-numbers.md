@@ -23,7 +23,7 @@ statement: formalized
 > - [MathWorld](https://mathworld.wolfram.com/AmicableNumbers.html)
 > - [OEIS A063990](https://oeis.org/A063990)
 
-*Quoted from [FormalConjectures/Wikipedia/AmicableNumbers.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/AmicableNumbers.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/AmicableNumbers.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/AmicableNumbers.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 3 open. It also has 2 test statements, counted here but not shown.
 
@@ -44,7 +44,7 @@ theorem relatively_prime_amicable :
     ∃ a b : ℕ, IsAmicable a b ∧ a ≠ b ∧ a.Coprime b
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/AmicableNumbers.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/AmicableNumbers.lean#L66).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/AmicableNumbers.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/AmicableNumbers.lean#L66).
 
 ## `AmicableNumbers.infinitely_many_amicable`
 
@@ -63,7 +63,7 @@ Open: stated without proof.
 theorem infinitely_many_amicable : type_of% Erdos830.erdos_830.parts.i
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/AmicableNumbers.lean, line 81](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/AmicableNumbers.lean#L81).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/AmicableNumbers.lean, line 81](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/AmicableNumbers.lean#L81).
 
 ## `AmicableNumbers.opposite_parity_amicable`
 
@@ -82,7 +82,7 @@ theorem opposite_parity_amicable :
     ∃ a b : ℕ, IsAmicable a b ∧ (Even a ↔ Odd b)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/AmicableNumbers.lean, line 94](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/AmicableNumbers.lean#L94).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/AmicableNumbers.lean, line 94](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/AmicableNumbers.lean#L94).
 
 ## Depends on
 
@@ -90,5 +90,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/AmicableNumbers.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/AmicableNumbers.lean)
+- [FormalConjectures/Wikipedia/AmicableNumbers.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/AmicableNumbers.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Amicable_numbers)

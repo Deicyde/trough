@@ -9,7 +9,7 @@ statement: formalized
 
 > *Reference:* [erdosproblems.com/321](https://www.erdosproblems.com/321)
 
-*Quoted from [FormalConjectures/ErdosProblems/321.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/321.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/321.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/321.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/321](https://www.erdosproblems.com/321).
 
@@ -24,10 +24,10 @@ Open: stated without proof.
 
 ```lean
 theorem erdos_321 (N : ℕ) :
-    R N = erdos_321.answer
+    R N = erdos_321.answer N
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/321.lean, line 49](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/321.lean#L49).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/321.lean, line 49](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/321.lean#L49).
 
 ## `Erdos321.erdos_321.variants.isTheta`
 
@@ -41,7 +41,7 @@ theorem erdos_321.variants.isTheta :
     (fun N ↦ (R N : ℝ)) =Θ[atTop] erdos_321.variants.isTheta.answer
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/321.lean, line 69](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/321.lean#L69).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/321.lean, line 69](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/321.lean#L69).
 
 ## `Erdos321.erdos_321.variants.isBigO`
 
@@ -54,7 +54,7 @@ theorem erdos_321.variants.isBigO :
     (fun N ↦ (R N : ℝ)) =O[atTop] erdos_321.variants.isBigO.answer
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/321.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/321.lean#L79).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/321.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/321.lean#L79).
 
 ## `Erdos321.erdos_321.variants.isLittleO`
 
@@ -67,7 +67,7 @@ theorem erdos_321.variants.isLittleO :
     (fun N ↦ (R N : ℝ)) =o[atTop] erdos_321.variants.isLittleO.answer
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/321.lean, line 89](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/321.lean#L89).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/321.lean, line 89](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/321.lean#L89).
 
 ## `Erdos321.erdos_321.variants.lower`
 
@@ -81,7 +81,7 @@ Solved: stated here without proof.
 >
 > valid for any $k \ge 4$ with $\log_k N \ge k$ and any $r \ge 1$ with $\log_{2r} N \ge 1$. (In these bounds $\log_i n$ denotes the $i$-fold iterated logarithm.)
 >
-> [BlEr75] Bleicher, M. N. and Erdős, P., _The number of distinct subsums of $\sum \sb{1}\spN\,1/i$_. Math. Comp. (1975), 29-42.
+> [BlEr75] Bleicher, M. N. and Erdős, P., _The number of distinct subsums of $\sum_{1}^{N}\,1/i$_. Math. Comp. (1975), 29-42.
 > [BlEr76b] Bleicher, Michael N. and Erdős, Paul, _Denominators of Egyptian fractions. II_. Illinois J. Math. (1976), 598-613.
 
 ```lean
@@ -89,7 +89,7 @@ theorem erdos_321.variants.lower (N k : ℕ) (hk : 4 ≤ k) (hkN : k ≤ log^[k]
     N / log N * ∏ i ∈ Finset.Icc 3 k, (log^[i] N) ≤ R N
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/321.lean, line 104](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/321.lean#L104).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/321.lean, line 104](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/321.lean#L104).
 
 ## `Erdos321.erdos_321.variants.upper`
 
@@ -107,7 +107,7 @@ Solved: stated here without proof.
 > formalised as $\log_i N \ge 1$ for all $i \le 2r$, which is equivalent to it for the
 > genuine iterated logarithm and ensures that every intermediate iterate is positive.
 >
-> [BlEr75] Bleicher, M. N. and Erdős, P., _The number of distinct subsums of $\sum \sb{1}\spN\,1/i$_. Math. Comp. (1975), 29-42.
+> [BlEr75] Bleicher, M. N. and Erdős, P., _The number of distinct subsums of $\sum_{1}^{N}\,1/i$_. Math. Comp. (1975), 29-42.
 > [BlEr76b] Bleicher, Michael N. and Erdős, Paul, _Denominators of Egyptian fractions. II_. Illinois J. Math. (1976), 598-613.
 
 ```lean
@@ -115,7 +115,7 @@ theorem erdos_321.variants.upper (N r : ℕ) (hr : 1 ≤ r) (hrN : ∀ i ≤ 2 *
     R N ≤ 1 / log 2 * log^[r] N * N / log N * ∏ i ∈ Finset.Icc 3 r, (log^[i] N)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/321.lean, line 123](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/321.lean#L123).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/321.lean, line 123](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/321.lean#L123).
 
 ## Depends on
 
@@ -123,5 +123,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/321.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/321.lean)
+- [FormalConjectures/ErdosProblems/321.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/321.lean)
 - [erdosproblems.com/321](https://www.erdosproblems.com/321)

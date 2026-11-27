@@ -9,7 +9,7 @@ statement: formalized
 
 > *Reference:* [erdosproblems.com/1041](https://www.erdosproblems.com/1041)
 
-*Quoted from [FormalConjectures/ErdosProblems/1041.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1041.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/1041.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1041.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/1041](https://www.erdosproblems.com/1041).
 
@@ -34,7 +34,7 @@ theorem exists_connected_component_contains_two_roots :
       2 ≤ (f.roots.filter (· ∈ C)).card
 ```
 
-Category `research solved`; AMS [32 Several complex variables and analytic spaces](../../../by-subject/part-01/32-several-complex-variables-and-analytic-spaces/README.md). Declared in [FormalConjectures/ErdosProblems/1041.lean, line 57](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1041.lean#L57).
+Category `research solved`; AMS [32 Several complex variables and analytic spaces](../../../by-subject/part-01/32-several-complex-variables-and-analytic-spaces/README.md). Declared in [FormalConjectures/ErdosProblems/1041.lean, line 57](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1041.lean#L57).
 
 ## `Erdos1041.erdos_1041`
 
@@ -66,7 +66,7 @@ theorem erdos_1041 :
         Set.range γ ⊆ { z : ℂ | ‖f.eval z‖ < 1 } ∧ length (Set.range γ) < 2
 ```
 
-Category `research solved`; AMS [32 Several complex variables and analytic spaces](../../../by-subject/part-01/32-several-complex-variables-and-analytic-spaces/README.md). Declared in [FormalConjectures/ErdosProblems/1041.lean, line 82](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1041.lean#L82).
+Category `research solved`; AMS [32 Several complex variables and analytic spaces](../../../by-subject/part-01/32-several-complex-variables-and-analytic-spaces/README.md). Declared in [FormalConjectures/ErdosProblems/1041.lean, line 82](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1041.lean#L82).
 
 ## Depends on
 
@@ -74,5 +74,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/1041.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1041.lean)
+- [FormalConjectures/ErdosProblems/1041.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1041.lean)
 - [erdosproblems.com/1041](https://www.erdosproblems.com/1041)

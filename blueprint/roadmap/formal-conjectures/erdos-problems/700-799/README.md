@@ -48,7 +48,7 @@ The Erdős problems numbered 700 to 799 that Formal Conjectures states, one arti
 - [Erdős Problem 743](part-02/erdos-problem-743.md)
 - [Erdős Problem 745: Second-largest component of a random graph](part-02/erdos-problem-745-second-largest-component-of-a.md)
 
-## [Erdős Problem 747 to Erdős Problem 771](part-03/README.md)
+## [Erdős Problem 747 to Erdős Problem 770](part-03/README.md)
 
 - [Erdős Problem 747](part-03/erdos-problem-747.md)
 - [Erdős Problem 748](part-03/erdos-problem-748.md)
@@ -67,12 +67,13 @@ The Erdős problems numbered 700 to 799 that Formal Conjectures states, one arti
 - [Erdős Problem 765](part-03/erdos-problem-765.md)
 - [Erdős Problem 766](part-03/erdos-problem-766.md)
 - [Erdős Problem 767](part-03/erdos-problem-767.md)
+- [Erdős Problem 768](part-03/erdos-problem-768.md)
 - [Erdős Problem 769](part-03/erdos-problem-769.md)
 - [Erdős Problem 770](part-03/erdos-problem-770.md)
-- [Erdős Problem 771](part-03/erdos-problem-771.md)
 
-## [Erdős Problem 772 to Erdős Problem 798](part-04/README.md)
+## [Erdős Problem 771 to Erdős Problem 798](part-04/README.md)
 
+- [Erdős Problem 771](part-04/erdos-problem-771.md)
 - [Erdős Problem 772](part-04/erdos-problem-772.md)
 - [Erdős Problem 773](part-04/erdos-problem-773.md)
 - [Erdős Problem 774](part-04/erdos-problem-774.md)

@@ -17,7 +17,7 @@ statement: formalized
 > - [NeRo87] Nešetřil, J. and Rödl, V., *Strong Ramsey theorems for Steiner systems*,
 >   *Trans. Amer. Math. Soc.* **303** (1987), 183–192.
 
-*Quoted from [FormalConjectures/ErdosProblems/596.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/596.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/596.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/596](https://www.erdosproblems.com/596).
 
@@ -47,7 +47,7 @@ theorem erdos_596 :
       IsErdosHajnalExceptional G₁ G₂ ↔ erdos_596.answer G₁ G₂
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 58](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean#L58).
+Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 58](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/596.lean#L58).
 
 ## `Erdos596.erdos_596.variants.exists_exceptional`
 
@@ -62,7 +62,7 @@ theorem erdos_596.variants.exists_exceptional :
       IsErdosHajnalExceptional G₁ G₂
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 65](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean#L65).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 65](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/596.lean#L65).
 
 ## `Erdos596.erdos_596.variants.C4_free_countable_escape`
 
@@ -76,7 +76,7 @@ theorem erdos_596.variants.C4_free_countable_escape :
     HasCountableRamseyEscape (cycleGraph 4) (cycleGraph 6)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 74](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean#L74).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 74](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/596.lean#L74).
 
 ## `Erdos596.erdos_596.variants.C4_C6_finite_ramsey`
 
@@ -90,7 +90,7 @@ theorem erdos_596.variants.C4_C6_finite_ramsey :
     HasFiniteRamseyProperty (cycleGraph 4) (cycleGraph 6)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 81](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean#L81).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 81](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/596.lean#L81).
 
 ## `Erdos596.erdos_596.variants.C4_C6_is_exceptional`
 
@@ -104,7 +104,7 @@ theorem erdos_596.variants.C4_C6_is_exceptional :
     IsErdosHajnalExceptional (cycleGraph 4) (cycleGraph 6)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean#L88).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/596.lean#L88).
 
 ## `Erdos596.erdos_596.variants.original_conjecture_is_false`
 
@@ -119,7 +119,7 @@ theorem erdos_596.variants.original_conjecture_is_false :
       ¬IsErdosHajnalExceptional G₁ G₂
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 95](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean#L95).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 95](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/596.lean#L95).
 
 ## `Erdos596.erdos_596.variants.K4_K3_exceptional_iff`
 
@@ -135,7 +135,7 @@ theorem erdos_596.variants.K4_K3_exceptional_iff :
     IsErdosHajnalExceptional (completeGraph (Fin 4)) (completeGraph (Fin 3))
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 105](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean#L105).
+Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 105](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/596.lean#L105).
 
 ## `Erdos596.erdos_596.variants.K4_K3_finite_ramsey`
 
@@ -149,7 +149,7 @@ theorem erdos_596.variants.K4_K3_finite_ramsey :
     HasFiniteRamseyProperty (completeGraph (Fin 4)) (completeGraph (Fin 3))
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 112](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean#L112).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/596.lean, line 112](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/596.lean#L112).
 
 ## Depends on
 
@@ -157,5 +157,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/596.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/596.lean)
+- [FormalConjectures/ErdosProblems/596.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/596.lean)
 - [erdosproblems.com/596](https://www.erdosproblems.com/596)

@@ -12,13 +12,13 @@ statement: formalized
 > Do there exist infinitely many primes $p$ for which $p - 2$ has an odd number of prime factors,
 > counted with multiplicity?
 
-*Quoted from [FormalConjectures/GreensOpenProblems/64.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/64.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/GreensOpenProblems/64.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/64.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
-The file states 2 research or textbook statements: 2 open. It also has 3 test statements, counted here but not shown.
+The file states 2 research or textbook statements: 1 open and 1 solved. It also has 3 test statements, counted here but not shown.
 
 ## `Green64.green_64`
 
-Open: stated without proof.
+Solved: stated here; a Lean proof is at [https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000010&version=3](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-13-000010&version=3).
 
 > Do there exist infinitely many primes $p$ for which $p - 2$ has an odd number of prime factors,
 > counted with multiplicity (i.e. $\Omega(p - 2)$ is odd)?
@@ -28,7 +28,7 @@ theorem green_64 :
     {p : ℕ | p.Prime ∧ Odd (Ω (p - 2))}.Infinite
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/GreensOpenProblems/64.lean, line 42](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/64.lean#L42).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/GreensOpenProblems/64.lean, line 43](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/64.lean#L43).
 
 ## `Green64.green_64.variants.p_sub_one`
 
@@ -42,7 +42,7 @@ theorem green_64.variants.p_sub_one :
     {p : ℕ | p.Prime ∧ Odd (Ω (p - 1))}.Infinite
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/GreensOpenProblems/64.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/64.lean#L73).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/GreensOpenProblems/64.lean, line 74](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/64.lean#L74).
 
 ## Depends on
 
@@ -50,5 +50,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/GreensOpenProblems/64.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/64.lean)
+- [FormalConjectures/GreensOpenProblems/64.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/64.lean)
 - [Ben Green's Open Problems](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.64)

@@ -17,7 +17,7 @@ navigation: transparent
 - [54. `Erdos17.isClusterPrime_97_isLeast_non_cluster` (test), in Erdős Problem 17](../../../erdos-problems/1-99/part-01/erdos-problem-17.md)
 - [55. `BealConjecture.flt_of_beal_conjecture` (textbook), in Beal conjecture](../../../wikipedia/part-01/beal-conjecture.md)
 - [56. `Arxiv.«1609.08688».maximalLength_ge_of_isSquare` (research solved), in The length of an $s$-increasing sequence of $r$-tuples](../../../arxiv/part-01/the-length-of-an-s-increasing-sequence-of-r-tupl.md)
-- [57. `RiemannZetaValues.infinite_irrational_at_odd` (research solved), in Particular values of the Riemann zeta function](../../../wikipedia/part-07/particular-values-of-the-riemann-zeta-function.md)
+- [57. `RiemannZetaValues.infinite_irrational_at_odd` (research solved), in Particular values of the Riemann zeta function](../../../wikipedia/part-08/particular-values-of-the-riemann-zeta-function.md)
 - [58. `AgohGiuga.isWeakGiuga_iff_sum_primeFactors` (research solved), in Agoh-Giuga conjecture](../../../wikipedia/part-01/agoh-giuga-conjecture.md)
 - [59. `OeisA6697.count_false_morphism` (API), in Subword complexity of the morphism a → aab, b → b](../../../oeis/part-02/subword-complexity-of-the-morphism-a-aab-b-b.md)
 - [60. `Mathoverflow10799.μ_half_eq_uniform` (test), in Optimal monotone families for the discrete isoperimetric inequality](../../../mathoverflow/optimal-monotone-families-for-the-discrete-isope.md)

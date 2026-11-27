@@ -25,7 +25,7 @@ statement: formalized
 >     Diophantine Approximation: Lectures given at the CIME Summer School held in Cetraro, Italy,
 >     June 28–July 6, 2000. Berlin, Heidelberg: Springer Berlin Heidelberg, 2003. 249-344.
 
-*Quoted from [FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 4 open. It also has 1 test statement, counted here but not shown.
 
@@ -43,7 +43,7 @@ theorem problem_10_1 :
       Filter.Tendsto (fun n : ℕ ↦ distToNearestInt (ξ * α ^ n)) Filter.atTop (nhds 0)
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean, line 52](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean#L52).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean, line 52](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean#L52).
 
 ## `Bugeaud01.problem_10_2`
 
@@ -57,7 +57,7 @@ theorem problem_10_2 :
     ¬ Filter.Tendsto (fun n : ℕ ↦ distToNearestInt (Real.exp n)) Filter.atTop (nhds 0)
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean, line 62](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean#L62).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean, line 62](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean#L62).
 
 ## `Bugeaud01.problem_10_3`
 
@@ -71,7 +71,7 @@ theorem problem_10_3 :
     ∃ c : ℝ, 0 < c ∧ ∀ n : ℕ, 1 ≤ n → Real.exp (-c * n) < distToNearestInt (Real.exp n)
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean#L71).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean#L71).
 
 ## `Bugeaud01.waldschmidt`
 
@@ -89,7 +89,7 @@ theorem waldschmidt :
     ∃ c : ℝ, 0 < c ∧ ∀ n : ℕ, 2 ≤ n → (n : ℝ) ^ (-c) < distToNearestInt (Real.exp n)
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean, line 84](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean#L84).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean, line 84](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean#L84).
 
 ## Depends on
 
@@ -97,5 +97,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean)
+- [FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Books/BugeaudDistributionModuloOne/IntDistanceDistribution.lean)
 - [Wal03](http://webusers.imj-prg.fr/~michel.waldschmidt/articles/pdf/Cetraro.pdf)

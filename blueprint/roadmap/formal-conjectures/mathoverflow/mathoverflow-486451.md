@@ -10,7 +10,7 @@ statement: formalized
 > *Reference:* [mathoverflow/486451](https://mathoverflow.net/questions/486451)
 > asked by user [*Junyan Xu*](https://mathoverflow.net/users/3332/junyan-xu)
 
-*Quoted from [FormalConjectures/Mathoverflow/486451.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/486451.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Mathoverflow/486451.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/486451.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 2 solved.
 
@@ -26,7 +26,7 @@ theorem exists_semiring_unique_left_maximal_not_unique_right_maximal :
       ∃ I J : Ideal Rᵐᵒᵖ, I.IsMaximal ∧ J.IsMaximal ∧ I ≠ J
 ```
 
-Category `research solved`; AMS [16 Associative rings and algebras](../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Mathoverflow/486451.lean, line 32](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/486451.lean#L32).
+Category `research solved`; AMS [16 Associative rings and algebras](../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Mathoverflow/486451.lean, line 32](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/486451.lean#L32).
 
 ## `Mathoverflow486451.exists_semiring_unique_left_right_maximal_ne`
 
@@ -46,7 +46,7 @@ theorem exists_semiring_unique_left_right_maximal_ne :
         (hI.choose : Set R) ≠ MulOpposite.op ⁻¹' hJ.choose
 ```
 
-Category `research solved`; AMS [16 Associative rings and algebras](../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Mathoverflow/486451.lean, line 46](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/486451.lean#L46).
+Category `research solved`; AMS [16 Associative rings and algebras](../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Mathoverflow/486451.lean, line 46](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/486451.lean#L46).
 
 ## Depends on
 
@@ -54,5 +54,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Mathoverflow/486451.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/486451.lean)
+- [FormalConjectures/Mathoverflow/486451.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/486451.lean)
 - [mathoverflow/486451](https://mathoverflow.net/questions/486451)

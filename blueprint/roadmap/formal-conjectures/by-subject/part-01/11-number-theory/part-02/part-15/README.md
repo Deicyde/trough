@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# Number of decompositions of… to Numerator of $\sum_{k=1}^n…
+# Conjectures associated with… to A108306: Expansion of…
 
+- [Conjectures associated with A102371](../../../../../oeis/part-06/conjectures-associated-with-a102371.md)
+- [Floor of sum of $\{n/k\}$](../../../../../oeis/part-06/floor-of-sum-of-n-k.md)
+- [$a(0) = 1$, $a(n) = a(n-1)a(n-1) + 2$](../../../../../oeis/part-06/a-0-1-a-n-a-n-1-a-n-1-2.md)
 - [Number of decompositions of $2n+1$ into $2p+q$, where $p$ and $q$ are both odd primes](../../../../../oeis/part-06/number-of-decompositions-of-2n-1-into-2p-q-where.md)
 - [Fibonacci transform satisfying $|a(n)| = F(n+1)$](../../../../../oeis/part-06/fibonacci-transform-satisfying-a-n-f-n-1.md)
 - [$a(n) = 3a(n-1) + a(n-2) - 3a(n-3)$](../../../../../oeis/part-06/a-n-3a-n-1-a-n-2-3a-n-3.md)
@@ -21,6 +24,3 @@ navigation: transparent
 - [$a(n) = 16n^2 + 1$](../../../../../oeis/part-07/a-n-16n-2-1.md)
 - [Digital sum of the Fermat number $2^{2^n} + 1$](../../../../../oeis/part-07/digital-sum-of-the-fermat-number-2-2-n-1.md)
 - [A108306: Expansion of $(3x+1)/(1-3x-3x^2)$](../../../../../oeis/part-07/a108306-expansion-of-3x-1-1-3x-3x-2.md)
-- [Numbers $n$ such that $\phi(n) = \phi(n + \phi(n))$](../../../../../oeis/part-07/numbers-n-such-that-phi-n-phi-n-phi-n.md)
-- [Numbers $n$ such that the perfect deficiency of $n$ is $\le 10$.](../../../../../oeis/part-07/numbers-n-such-that-the-perfect-deficiency-of-n.md)
-- [Numerator of $\sum_{k=1}^n 2^k/k$.](../../../../../oeis/part-07/numerator-of-sum-k-1-n-2-k-k.md)

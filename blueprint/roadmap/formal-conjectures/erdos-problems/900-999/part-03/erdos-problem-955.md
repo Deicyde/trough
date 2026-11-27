@@ -26,7 +26,7 @@ statement: formalized
 > - [Tr20] Troupe, Lee, Divisor sums representable as the sum of two squares. Proc. Amer. Math. Soc.
 >   (2020), 4189--4202.
 
-*Quoted from [FormalConjectures/ErdosProblems/955.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/955.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/955.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/955.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/955](https://www.erdosproblems.com/955).
 
@@ -45,7 +45,7 @@ theorem erdos_955 :
     ∀ A : Set ℕ, A.HasDensity 0 → { x | s x ∈ A }.HasDensity 0
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/955.lean, line 76](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/955.lean#L76).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/955.lean, line 76](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/955.lean#L76).
 
 ## `Erdos955.erdos_955.variants.positive_density`
 
@@ -59,7 +59,7 @@ theorem erdos_955.variants.positive_density :
     ∃ A : Set ℕ, A.HasDensity 0 ∧ (∃ d > 0, (s '' A).HasDensity d)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/955.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/955.lean#L85).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/955.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/955.lean#L85).
 
 ## `Erdos955.erdos_955.variants.empty_preimage`
 
@@ -77,7 +77,7 @@ theorem erdos_955.variants.empty_preimage :
     ∃ A : Set ℕ, 0 < A.lowerDensity ∧ { x | s x ∈ A } = ∅
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/955.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/955.lean#L98).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/955.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/955.lean#L98).
 
 ## `Erdos955.erdos_955.variants.pollack_primes`
 
@@ -90,7 +90,7 @@ theorem erdos_955.variants.pollack_primes :
     { x | Nat.Prime (s x) }.HasDensity 0
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/955.lean, line 106](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/955.lean#L106).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/955.lean, line 106](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/955.lean#L106).
 
 ## `Erdos955.erdos_955.variants.troupe_unusually_many_prime_factors`
 
@@ -105,7 +105,7 @@ theorem erdos_955.variants.troupe_unusually_many_prime_factors :
       (ArithmeticFunction.cardDistinctFactors (s x) : ℝ) }.HasDensity 0
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/955.lean, line 115](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/955.lean#L115).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/955.lean, line 115](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/955.lean#L115).
 
 ## `Erdos955.erdos_955.variants.troupe_sum_of_two_squares`
 
@@ -119,7 +119,7 @@ theorem erdos_955.variants.troupe_sum_of_two_squares :
     { x | ∃ a b : ℕ, s x = a^2 + b^2 }.HasDensity 0
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/955.lean, line 125](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/955.lean#L125).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/955.lean, line 125](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/955.lean#L125).
 
 ## `Erdos955.erdos_955.variants.pollack_pomerance_thompson_bound`
 
@@ -138,7 +138,7 @@ theorem erdos_955.variants.pollack_pomerance_thompson_bound :
       { x | s x ∈ A }.HasDensity 0
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/955.lean, line 137](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/955.lean#L137).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/955.lean, line 137](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/955.lean#L137).
 
 ## Depends on
 
@@ -146,5 +146,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/955.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/955.lean)
+- [FormalConjectures/ErdosProblems/955.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/955.lean)
 - [erdosproblems.com/955](https://www.erdosproblems.com/955)

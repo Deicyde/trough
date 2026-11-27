@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# Asymptotics of subsets of $\{1… to Number of primes $p$ such that…
+# Denominators of coefficients in… to Sum of $a(k)/k!$ over divisors…
 
+- [Denominators of coefficients in Stirling's expansion for $\log(\Gamma(z))$](../../../../../oeis/part-03/denominators-of-coefficients-in-stirlings-expans.md)
+- [$a(n) = \sum_{k=1}^n (k^2 \bmod n)$](../../../../../oeis/part-03/a-n-sum-k-1-n-k-2-bmod-n.md)
+- [Nearest integer to $n/\sqrt{2}$](../../../../../oeis/part-03/nearest-integer-to-n-sqrt-2.md)
 - [Asymptotics of subsets of $\{1, 2, \dots, n\}$ with integer average](../../../../../oeis/part-03/asymptotics-of-subsets-of-1-2-dots-n-with-intege.md)
 - [Maximum exponent in the prime factorization of $n$](../../../../../oeis/part-03/maximum-exponent-in-the-prime-factorization-of-n.md)
 - [Expansion of g.f. $(1-\sqrt{1-4x-4x^2})/(2(1+x))$](../../../../../oeis/part-03/expansion-of-g-f-1-sqrt-1-4x-4x-2-2-1-x.md)
@@ -21,6 +24,3 @@ navigation: transparent
 - [Conjectures associated with A067720](../../../../../oeis/part-04/conjectures-associated-with-a067720.md)
 - [Euclid–Fortunate prime coverage](../../../../../oeis/part-04/euclid-fortunate-prime-coverage.md)
 - [Sum of $a(k)/k!$ over divisors equals harmonic number](../../../../../oeis/part-04/sum-of-a-k-k-over-divisors-equals-harmonic-numbe.md)
-- [Number of times $n^2 + s^2$ is prime for positive integers $s < n$](../../../../../oeis/part-04/number-of-times-n-2-s-2-is-prime-for-positive-in.md)
-- [Determinant of prime sum indicator matrix](../../../../../oeis/part-04/determinant-of-prime-sum-indicator-matrix.md)
-- [Number of primes $p$ such that $n^n \le p \le n^n + n^2$](../../../../../oeis/part-04/number-of-primes-p-such-that-n-n-le-p-le-n-n-n-2.md)

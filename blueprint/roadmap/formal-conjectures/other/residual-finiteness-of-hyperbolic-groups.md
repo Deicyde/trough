@@ -25,7 +25,7 @@ statement: formalized
 >   Release preprint (2026).
 >   https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/a-torsion-free-hyperbolic-group-that-is-not-residually-finite-September-23-2026/paper.pdf
 
-*Quoted from [FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 3 solved.
 
@@ -49,7 +49,7 @@ theorem hyperbolic_residuallyFinite :
     ¬ ∀ (G : Type) [Group G] [Group.IsHyperbolic G], Group.ResiduallyFinite G
 ```
 
-Category `research solved`; AMS [20 Group theory and generalizations](../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean, line 59](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean#L59).
+Category `research solved`; AMS [20 Group theory and generalizations](../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean, line 59](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean#L59).
 
 ## `HyperbolicGroupsResiduallyFinite.hyperbolic_exists_finiteIndex_ne_top`
 
@@ -69,7 +69,7 @@ theorem hyperbolic_exists_finiteIndex_ne_top :
       ∃ H : Subgroup G, H ≠ ⊤ ∧ H.FiniteIndex
 ```
 
-Category `research solved`; AMS [20 Group theory and generalizations](../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean#L73).
+Category `research solved`; AMS [20 Group theory and generalizations](../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean#L73).
 
 ## `HyperbolicGroupsResiduallyFinite.hyperbolic_residuallyFinite_iff_exists_finiteIndex_ne_top`
 
@@ -87,7 +87,7 @@ theorem hyperbolic_residuallyFinite_iff_exists_finiteIndex_ne_top :
         ∃ H : Subgroup G, H ≠ ⊤ ∧ H.FiniteIndex
 ```
 
-Category `research solved`; AMS [20 Group theory and generalizations](../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean#L85).
+Category `research solved`; AMS [20 Group theory and generalizations](../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean#L85).
 
 ## Depends on
 
@@ -95,5 +95,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean)
+- [FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Other/HyperbolicGroupsResiduallyFinite.lean)
 - [online](https://shpilrain.ccny.cuny.edu/gworld/problems/probhyp.html)

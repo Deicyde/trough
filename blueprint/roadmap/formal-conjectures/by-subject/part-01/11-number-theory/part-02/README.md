@@ -2,10 +2,12 @@
 navigation: transparent
 ---
 
-# Erdős Problem 846 to Existence of integers $k$ with…
+# Erdős Problem 844 to Smallest integer $s > n$ such…
 
-## [Erdős Problem 846 to Erdős Problem 869](part-01/README.md)
+## [Erdős Problem 844 to Erdős Problem 867](part-01/README.md)
 
+- [Erdős Problem 844](../../../../erdos-problems/800-899/part-02/erdos-problem-844.md)
+- [Erdős Problem 845](../../../../erdos-problems/800-899/part-03/erdos-problem-845.md)
 - [Erdős Problem 846](../../../../erdos-problems/800-899/part-03/erdos-problem-846.md)
 - [Erdős Problem 847](../../../../erdos-problems/800-899/part-03/erdos-problem-847.md)
 - [Erdős Problem 848](../../../../erdos-problems/800-899/part-03/erdos-problem-848.md)
@@ -24,11 +26,11 @@ navigation: transparent
 - [Erdős Problem 864](../../../../erdos-problems/800-899/part-03/erdos-problem-864.md)
 - [Erdős Problem 865](../../../../erdos-problems/800-899/part-03/erdos-problem-865.md)
 - [Erdős Problem 867](../../../../erdos-problems/800-899/part-03/erdos-problem-867.md)
+
+## [Erdős Problem 868 to Erdős Problem 891](part-02/README.md)
+
 - [Erdős Problem 868](../../../../erdos-problems/800-899/part-04/erdos-problem-868.md)
 - [Erdős Problem 869](../../../../erdos-problems/800-899/part-04/erdos-problem-869.md)
-
-## [Erdős Problem 871 to Erdős Problem 897](part-02/README.md)
-
 - [Erdős Problem 871](../../../../erdos-problems/800-899/part-04/erdos-problem-871.md)
 - [Erdős Problem 872](../../../../erdos-problems/800-899/part-04/erdos-problem-872.md)
 - [Erdős Problem 873](../../../../erdos-problems/800-899/part-04/erdos-problem-873.md)
@@ -47,11 +49,11 @@ navigation: transparent
 - [Erdős Problem 889](../../../../erdos-problems/800-899/part-04/erdos-problem-889.md)
 - [Erdős Problem 890](../../../../erdos-problems/800-899/part-04/erdos-problem-890.md)
 - [Erdős Problem 891](../../../../erdos-problems/800-899/part-04/erdos-problem-891.md)
+
+## [Erdős Problem 894 to Erdős Problem 946](part-03/README.md)
+
 - [Erdős Problem 894](../../../../erdos-problems/800-899/part-05/erdos-problem-894.md)
 - [Erdős Problem 897](../../../../erdos-problems/800-899/part-05/erdos-problem-897.md)
-
-## [Erdős Problem 912 to Erdős Problem 948](part-03/README.md)
-
 - [Erdős Problem 912](../../../../erdos-problems/900-999/part-01/erdos-problem-912.md)
 - [Erdős Problem 913](../../../../erdos-problems/900-999/part-01/erdos-problem-913.md)
 - [Erdős Problem 929](../../../../erdos-problems/900-999/part-02/erdos-problem-929.md)
@@ -70,11 +72,11 @@ navigation: transparent
 - [Erdős Problem 944](../../../../erdos-problems/900-999/part-02/erdos-problem-944.md)
 - [Erdős Problem 945](../../../../erdos-problems/900-999/part-02/erdos-problem-945.md)
 - [Erdős Problem 946](../../../../erdos-problems/900-999/part-02/erdos-problem-946.md)
+
+## [Erdős Problem 947 to Erdős Problem 974](part-04/README.md)
+
 - [Erdős Problem 947](../../../../erdos-problems/900-999/part-02/erdos-problem-947.md)
 - [Erdős Problem 948](../../../../erdos-problems/900-999/part-03/erdos-problem-948.md)
-
-## [Erdős Problem 950 to Erdős Problem 976](part-04/README.md)
-
 - [Erdős Problem 950](../../../../erdos-problems/900-999/part-03/erdos-problem-950.md)
 - [Erdős Problem 951](../../../../erdos-problems/900-999/part-03/erdos-problem-951.md)
 - [Erdős Problem 952](../../../../erdos-problems/900-999/part-03/erdos-problem-952.md)
@@ -93,11 +95,11 @@ navigation: transparent
 - [Erdős Problem 972](../../../../erdos-problems/900-999/part-04/erdos-problem-972.md)
 - [Erdős Problem 973](../../../../erdos-problems/900-999/part-04/erdos-problem-973.md)
 - [Erdős Problem 974](../../../../erdos-problems/900-999/part-04/erdos-problem-974.md)
+
+## [Erdős Problem 975 to Erdős Problem 1005](part-05/README.md)
+
 - [Erdős Problem 975](../../../../erdos-problems/900-999/part-04/erdos-problem-975.md)
 - [Erdős Problem 976](../../../../erdos-problems/900-999/part-04/erdos-problem-976.md)
-
-## [Erdős Problem 977 to Erdős Problem 1050](part-05/README.md)
-
 - [Erdős Problem 977](../../../../erdos-problems/900-999/part-04/erdos-problem-977.md)
 - [Erdős Problem 978](../../../../erdos-problems/900-999/part-04/erdos-problem-978.md)
 - [Erdős Problem 979](../../../../erdos-problems/900-999/part-04/erdos-problem-979.md)
@@ -116,11 +118,11 @@ navigation: transparent
 - [Erdős Problem 1003](../../../../erdos-problems/1000-1099/part-01/erdos-problem-1003.md)
 - [Erdős Problem 1004](../../../../erdos-problems/1000-1099/part-01/erdos-problem-1004.md)
 - [Erdős Problem 1005](../../../../erdos-problems/1000-1099/part-01/erdos-problem-1005.md)
+
+## [Erdős Problem 1049 to Erdős Problem 1074](part-06/README.md)
+
 - [Erdős Problem 1049](../../../../erdos-problems/1000-1099/part-02/erdos-problem-1049.md)
 - [Erdős Problem 1050](../../../../erdos-problems/1000-1099/part-02/erdos-problem-1050.md)
-
-## [Erdős Problem 1051 to Erdős Problem 1094](part-06/README.md)
-
 - [Erdős Problem 1051](../../../../erdos-problems/1000-1099/part-03/erdos-problem-1051.md)
 - [Erdős Problem 1052](../../../../erdos-problems/1000-1099/part-03/erdos-problem-1052.md)
 - [Erdős Problem 1053](../../../../erdos-problems/1000-1099/part-03/erdos-problem-1053.md)
@@ -139,11 +141,11 @@ navigation: transparent
 - [Erdős Problem 1072](../../../../erdos-problems/1000-1099/part-04/erdos-problem-1072.md)
 - [Erdős Problem 1073](../../../../erdos-problems/1000-1099/part-04/erdos-problem-1073.md)
 - [Erdős Problem 1074](../../../../erdos-problems/1000-1099/part-04/erdos-problem-1074.md)
+
+## [Erdős Problem 1081 to Erdős Problem 1137](part-07/README.md)
+
 - [Erdős Problem 1081](../../../../erdos-problems/1000-1099/part-04/erdos-problem-1081.md)
 - [Erdős Problem 1094](../../../../erdos-problems/1000-1099/part-05/erdos-problem-1094.md)
-
-## [Erdős Problem 1095 to Erdős Problem 1139](part-07/README.md)
-
 - [Erdős Problem 1095](../../../../erdos-problems/1000-1099/part-05/erdos-problem-1095.md)
 - [Erdős Problem 1096](../../../../erdos-problems/1000-1099/part-05/erdos-problem-1096.md)
 - [Erdős Problem 1097](../../../../erdos-problems/1000-1099/part-05/erdos-problem-1097.md)
@@ -162,11 +164,11 @@ navigation: transparent
 - [Erdős Problem 1135](../../../../erdos-problems/1100-1199/part-02/erdos-problem-1135.md)
 - [Erdős Problem 1136](../../../../erdos-problems/1100-1199/part-02/erdos-problem-1136.md)
 - [Erdős Problem 1137](../../../../erdos-problems/1100-1199/part-02/erdos-problem-1137.md)
+
+## [Erdős Problem 1138 to Erdős Problem 1193](part-08/README.md)
+
 - [Erdős Problem 1138](../../../../erdos-problems/1100-1199/part-02/erdos-problem-1138.md)
 - [Erdős Problem 1139](../../../../erdos-problems/1100-1199/part-02/erdos-problem-1139.md)
-
-## [Erdős Problem 1140 to Erdős Problem 1196](part-08/README.md)
-
 - [Erdős Problem 1140](../../../../erdos-problems/1100-1199/part-02/erdos-problem-1140.md)
 - [Erdős Problem 1141](../../../../erdos-problems/1100-1199/part-02/erdos-problem-1141.md)
 - [Erdős Problem 1142](../../../../erdos-problems/1100-1199/part-02/erdos-problem-1142.md)
@@ -176,6 +178,7 @@ navigation: transparent
 - [Erdős Problem 1149](../../../../erdos-problems/1100-1199/part-02/erdos-problem-1149.md)
 - [Erdős Problem 1179](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1179.md)
 - [Erdős Problem 1180](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1180.md)
+- [Erdős Problem 1184](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1184.md)
 - [Erdős Problem 1185](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1185.md)
 - [Erdős Problem 1186](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1186.md)
 - [Erdős Problem 1187](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1187.md)
@@ -184,12 +187,12 @@ navigation: transparent
 - [Erdős Problem 1190](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1190.md)
 - [Erdős Problem 1191](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1191.md)
 - [Erdős Problem 1193](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1193.md)
+
+## [Erdős Problem 1194 to Density of ones in the…](part-09/README.md)
+
 - [Erdős Problem 1194](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1194.md)
 - [Erdős Problem 1195](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1195.md)
 - [Erdős Problem 1196](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1196.md)
-
-## [Erdős Problem 1197 to Fractional parts of sums of…](part-09/README.md)
-
 - [Erdős Problem 1197](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1197.md)
 - [Erdős Problem 1198](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1198.md)
 - [Erdős Problem 1201](../../../../erdos-problems/1200-1299/erdos-problem-1201.md)
@@ -207,12 +210,12 @@ navigation: transparent
 - [Erdős Problem 1217](../../../../erdos-problems/1200-1299/erdos-problem-1217.md)
 - [Erdős Problem 1221](../../../../erdos-problems/1200-1299/erdos-problem-1221.md)
 - [Density of ones in the Kolakoski sequence](../../../../oeis/part-01/density-of-ones-in-the-kolakoski-sequence.md)
+
+## [The prime numbers to Least positive multiple of $n$…](part-10/README.md)
+
 - [The prime numbers](../../../../oeis/part-01/the-prime-numbers.md)
 - [No powers as partition numbers](../../../../oeis/part-01/no-powers-as-partition-numbers.md)
 - [Fractional parts of sums of reciprocals of Catalan numbers $C(n)$](../../../../oeis/part-01/fractional-parts-of-sums-of-reciprocals-of-catal.md)
-
-## [Number of squares $\bmod n$ to Apéry numbers](part-10/README.md)
-
 - [Number of squares $\bmod n$](../../../../oeis/part-01/number-of-squares-bmod-n.md)
 - [Euclid-Mullin sequence](../../../../oeis/part-01/euclid-mullin-sequence.md)
 - [$a(n) = 2^(2^n)$](../../../../oeis/part-01/a-n-2-2-n.md)
@@ -230,12 +233,12 @@ navigation: transparent
 - [A binomial coefficient summation](../../../../oeis/part-01/a-binomial-coefficient-summation.md)
 - [Primes congruent to $\{3, 5, 6\} \pmod 7$](../../../../oeis/part-01/primes-congruent-to-3-5-6-pmod-7.md)
 - [Least positive multiple of $n$ in base 10 with digits 0 and 1](../../../../oeis/part-02/least-positive-multiple-of-n-in-base-10-with-dig.md)
+
+## [Recamán's sequence to Smallest composite $c$ such…](part-11/README.md)
+
 - [Recamán's sequence](../../../../oeis/part-02/recamans-sequence.md)
 - [Practical numbers](../../../../oeis/part-02/practical-numbers.md)
 - [Apéry numbers](../../../../oeis/part-02/apery-numbers.md)
-
-## [Catalan-Mersenne numbers to Nearest integer to $n/\sqrt{2}$](part-11/README.md)
-
 - [Catalan-Mersenne numbers](../../../../oeis/part-02/catalan-mersenne-numbers.md)
 - [Wolstenholme numbers](../../../../oeis/part-02/wolstenholme-numbers.md)
 - [Sum of next $n$ primes](../../../../oeis/part-02/sum-of-next-n-primes.md)
@@ -253,12 +256,12 @@ navigation: transparent
 - [Number of primes $< n^2$](../../../../oeis/part-02/number-of-primes-n-2.md)
 - [Conjectures associated with A038552](../../../../oeis/part-03/conjectures-associated-with-a038552.md)
 - [Smallest composite $c$ such that $\textrm{primorial}(n) + c$ is prime](../../../../oeis/part-03/smallest-composite-c-such-that-textrm-primorial.md)
+
+## [Denominators of coefficients in… to Sum of $a(k)/k!$ over divisors…](part-12/README.md)
+
 - [Denominators of coefficients in Stirling's expansion for $\log(\Gamma(z))$](../../../../oeis/part-03/denominators-of-coefficients-in-stirlings-expans.md)
 - [$a(n) = \sum_{k=1}^n (k^2 \bmod n)$](../../../../oeis/part-03/a-n-sum-k-1-n-k-2-bmod-n.md)
 - [Nearest integer to $n/\sqrt{2}$](../../../../oeis/part-03/nearest-integer-to-n-sqrt-2.md)
-
-## [Asymptotics of subsets of $\{1… to Number of primes $p$ such that…](part-12/README.md)
-
 - [Asymptotics of subsets of $\{1, 2, \dots, n\}$ with integer average](../../../../oeis/part-03/asymptotics-of-subsets-of-1-2-dots-n-with-intege.md)
 - [Maximum exponent in the prime factorization of $n$](../../../../oeis/part-03/maximum-exponent-in-the-prime-factorization-of-n.md)
 - [Expansion of g.f. $(1-\sqrt{1-4x-4x^2})/(2(1+x))$](../../../../oeis/part-03/expansion-of-g-f-1-sqrt-1-4x-4x-2-2-1-x.md)
@@ -276,12 +279,12 @@ navigation: transparent
 - [Conjectures associated with A067720](../../../../oeis/part-04/conjectures-associated-with-a067720.md)
 - [Euclid–Fortunate prime coverage](../../../../oeis/part-04/euclid-fortunate-prime-coverage.md)
 - [Sum of $a(k)/k!$ over divisors equals harmonic number](../../../../oeis/part-04/sum-of-a-k-k-over-divisors-equals-harmonic-numbe.md)
+
+## [Number of times $n^2 + s^2$ is… to Primes of the form 2^n + 2^i + 1](part-13/README.md)
+
 - [Number of times $n^2 + s^2$ is prime for positive integers $s < n$](../../../../oeis/part-04/number-of-times-n-2-s-2-is-prime-for-positive-in.md)
 - [Determinant of prime sum indicator matrix](../../../../oeis/part-04/determinant-of-prime-sum-indicator-matrix.md)
 - [Number of primes $p$ such that $n^n \le p \le n^n + n^2$](../../../../oeis/part-04/number-of-primes-p-such-that-n-n-le-p-le-n-n-n-2.md)
-
-## [Number of primes $p$ such that… to Smallest $r$ such that…](part-13/README.md)
-
 - [Number of primes $p$ such that $2^n \le p \le 2^n + \mathrm{prime}(n)$](../../../../oeis/part-04/number-of-primes-p-such-that-2-n-le-p-le-2-n-pri.md)
 - [Value of $n$-th cyclotomic polynomial at $n$](../../../../oeis/part-04/value-of-n-th-cyclotomic-polynomial-at-n.md)
 - [Recurrence $a(n+2) = |a(n+1)a(n) - a(n)a(n+1)|$ via concatenation](../../../../oeis/part-04/recurrence-a-n-2-a-n-1-a-n-a-n-a-n-1-via-concate.md)
@@ -299,12 +302,12 @@ navigation: transparent
 - [Conjecture relating two characterizations of a set of integers.](../../../../oeis/part-05/conjecture-relating-two-characterizations-of-a-s.md)
 - [Denominator of $\sum_{k=1}^n k^{\mu(k)}$](../../../../oeis/part-05/denominator-of-sum-k-1-n-k-mu-k.md)
 - [Primes of the form 2^n + 2^i + 1](../../../../oeis/part-05/primes-of-the-form-2-n-2-i-1.md)
+
+## [Smallest palindrome with… to Conjectures associated with…](part-14/README.md)
+
 - [Smallest palindrome with exactly $n$ divisors](../../../../oeis/part-05/smallest-palindrome-with-exactly-n-divisors.md)
 - [Smallest prime $p$ such that $p + n$ is an $n$-th power](../../../../oeis/part-05/smallest-prime-p-such-that-p-n-is-an-n-th-power.md)
 - [Smallest $r$ such that (concatenation of $n$, $r$ times) $\cdot 10 + 1$ is prime](../../../../oeis/part-05/smallest-r-such-that-concatenation-of-n-r-times.md)
-
-## [Binary representation of primes… to $a(0) = 1$, $a(n) =…](part-14/README.md)
-
 - [Binary representation of primes that divide a number, in decimal](../../../../oeis/part-05/binary-representation-of-primes-that-divide-a-nu.md)
 - [Expansion of $(1 - x)/(1 - 2 x + 3 x^2)$](../../../../oeis/part-05/expansion-of-1-x-1-2-x-3-x-2.md)
 - [Smallest prime formed by concatenation $n, n-1, \dots, n-k$](../../../../oeis/part-05/smallest-prime-formed-by-concatenation-n-n-1-dot.md)
@@ -322,12 +325,12 @@ navigation: transparent
 - [Pentanacci $\pi$ sequence](../../../../oeis/part-06/pentanacci-pi-sequence.md)
 - [Conjectures associated with A100800](../../../../oeis/part-06/conjectures-associated-with-a100800.md)
 - [Conjectures associated with A101779](../../../../oeis/part-06/conjectures-associated-with-a101779.md)
+
+## [Conjectures associated with… to A108306: Expansion of…](part-15/README.md)
+
 - [Conjectures associated with A102371](../../../../oeis/part-06/conjectures-associated-with-a102371.md)
 - [Floor of sum of $\{n/k\}$](../../../../oeis/part-06/floor-of-sum-of-n-k.md)
 - [$a(0) = 1$, $a(n) = a(n-1)a(n-1) + 2$](../../../../oeis/part-06/a-0-1-a-n-a-n-1-a-n-1-2.md)
-
-## [Number of decompositions of… to Numerator of $\sum_{k=1}^n…](part-15/README.md)
-
 - [Number of decompositions of $2n+1$ into $2p+q$, where $p$ and $q$ are both odd primes](../../../../oeis/part-06/number-of-decompositions-of-2n-1-into-2p-q-where.md)
 - [Fibonacci transform satisfying $|a(n)| = F(n+1)$](../../../../oeis/part-06/fibonacci-transform-satisfying-a-n-f-n-1.md)
 - [$a(n) = 3a(n-1) + a(n-2) - 3a(n-3)$](../../../../oeis/part-06/a-n-3a-n-1-a-n-2-3a-n-3.md)
@@ -345,12 +348,12 @@ navigation: transparent
 - [$a(n) = 16n^2 + 1$](../../../../oeis/part-07/a-n-16n-2-1.md)
 - [Digital sum of the Fermat number $2^{2^n} + 1$](../../../../oeis/part-07/digital-sum-of-the-fermat-number-2-2-n-1.md)
 - [A108306: Expansion of $(3x+1)/(1-3x-3x^2)$](../../../../oeis/part-07/a108306-expansion-of-3x-1-1-3x-3x-2.md)
+
+## [Numbers $n$ such that $\phi(n)… to Number of digits of n raised to…](part-16/README.md)
+
 - [Numbers $n$ such that $\phi(n) = \phi(n + \phi(n))$](../../../../oeis/part-07/numbers-n-such-that-phi-n-phi-n-phi-n.md)
 - [Numbers $n$ such that the perfect deficiency of $n$ is $\le 10$.](../../../../oeis/part-07/numbers-n-such-that-the-perfect-deficiency-of-n.md)
 - [Numerator of $\sum_{k=1}^n 2^k/k$.](../../../../oeis/part-07/numerator-of-sum-k-1-n-2-k-k.md)
-
-## [Numerator of $\binom{6n-2}{2n}… to Conjectures associated with…](part-16/README.md)
-
 - [Numerator of $\binom{6n-2}{2n} / \left(2 \binom{4n-1}{2n}\right)$](../../../../oeis/part-07/numerator-of-binom-6n-2-2n-left-2-binom-4n-1-2n.md)
 - [Conjectures associated with A109227](../../../../oeis/part-07/conjectures-associated-with-a109227.md)
 - [Conjectures associated with A109671](../../../../oeis/part-07/conjectures-associated-with-a109671.md)
@@ -368,12 +371,12 @@ navigation: transparent
 - [A generalized Stern sequence](../../../../oeis/part-08/a-generalized-stern-sequence.md)
 - [Number of digits of n raised to the power of the sum of the digits of n](../../../../oeis/part-08/number-of-digits-of-n-raised-to-the-power-of-the.md)
 - [Number of digits of n raised to the power of the digital root of n](../../../../oeis/part-08/number-of-digits-of-n-raised-to-the-power-of-the-2.md)
+
+## [Smallest number $m$ such that… to Sum of Fermat number and…](part-17/README.md)
+
 - [Smallest number $m$ such that $2^n - m$ and $2^n + m$ are primes](../../../../oeis/part-08/smallest-number-m-such-that-2-n-m-and-2-n-m-are.md)
 - [Expansion of g.f. $-(1 - 48x^2 - 256x^3) / ((1 - 4x)(1 + 4x)(1 + 4x + 16x^2))$](../../../../oeis/part-08/expansion-of-g-f-1-48x-2-256x-3-1-4x-1-4x-1-4x-1.md)
 - [Conjectures associated with A113252](../../../../oeis/part-08/conjectures-associated-with-a113252.md)
-
-## [Square odd-indexed terms in the… to Ratio of product of GCDs to…](part-17/README.md)
-
 - [Square odd-indexed terms in the recurrence $a(n) = 8a(n-1) - 8a(n-2) + 8a(n-3) - a(n-4)$](../../../../oeis/part-08/square-odd-indexed-terms-in-the-recurrence-a-n-8.md)
 - [Conjectures associated with A113255](../../../../oeis/part-08/conjectures-associated-with-a113255.md)
 - [Ascending descending base exponent transform of squares](../../../../oeis/part-08/ascending-descending-base-exponent-transform-of.md)
@@ -391,12 +394,12 @@ navigation: transparent
 - [Number of primes in $n$-th row of triangle $k^2 - k + p_n$](../../../../oeis/part-09/number-of-primes-in-n-th-row-of-triangle-k-2-k-p.md)
 - [Least $k$ such that cyclotomic polynomial $\Phi_k(n)$ is prime](../../../../oeis/part-09/least-k-such-that-cyclotomic-polynomial-phi-k-n.md)
 - [Sum of Fermat number and Mersenne number minus 1: $2^{2^n} + 2^n - 1$](../../../../oeis/part-09/sum-of-fermat-number-and-mersenne-number-minus-1.md)
+
+## [Least $k \ge 1$ such that $2… to Central binomial sum $a(n) =…](part-18/README.md)
+
 - [Least $k \ge 1$ such that $2 \cdot n^k - 1$ is prime](../../../../oeis/part-09/least-k-ge-1-such-that-2-cdot-n-k-1-is-prime.md)
 - [Half-Fibonacci sequence](../../../../oeis/part-09/half-fibonacci-sequence.md)
 - [Ratio of product of GCDs to product of factorials of floor divisions](../../../../oeis/part-09/ratio-of-product-of-gcds-to-product-of-factorial.md)
-
-## [Odious primes minus evil primes… to Sum of fourth powers of…](part-18/README.md)
-
 - [Odious primes minus evil primes among first $n$ primes](../../../../oeis/part-09/odious-primes-minus-evil-primes-among-first-n-pr.md)
 - [Recurrence involving LCM: $a(n) = x(n+1)/x(n) - 2$](../../../../oeis/part-09/recurrence-involving-lcm-a-n-x-n-1-x-n-2.md)
 - [Number of Abelian cubes of length $3n$ over an alphabet of size 3](../../../../oeis/part-09/number-of-abelian-cubes-of-length-3n-over-an-alp.md)
@@ -414,25 +417,34 @@ navigation: transparent
 - [Recurrence with fourth powers of binomial coefficients](../../../../oeis/part-10/recurrence-with-fourth-powers-of-binomial-coeffi.md)
 - [Central binomial sum $a(n) = \sum_{k=0}^n (-4)^k \binom{n}{k}^2 \binom{n-k}{k}^2$](../../../../oeis/part-10/central-binomial-sum-a-n-sum-k-0-n-4-k-binom-n-k.md)
 - [Central binomial sum $a(n) = \sum_{k=0}^n \binom{n}{k}^2 \binom{n-k}{k}^2 (-16)^k$](../../../../oeis/part-10/central-binomial-sum-a-n-sum-k-0-n-binom-n-k-2-b.md)
+
+## [Difference of digit sums in… to Number of distinct sums of…](part-19/README.md)
+
 - [Difference of digit sums in base 3 and base 2](../../../../oeis/part-10/difference-of-digit-sums-in-base-3-and-base-2.md)
+- [Hanna's exponential series for $\binom{n+k-1}{k}^{n}$](../../../../oeis/part-10/hannas-exponential-series-for-binom-n-k-1-k-n.md)
+- [Hanna's exponential series for $\binom{n+k-1}{k}^{n+k-1}$](../../../../oeis/part-10/hannas-exponential-series-for-binom-n-k-1-k-n-k.md)
+- [Hanna's exponential series for $\binom{n}{k}^{n+k}$](../../../../oeis/part-10/hannas-exponential-series-for-binom-n-k-n-k.md)
+- [Hanna's exponential series for $\binom{n}{k}^{n+k+1}$](../../../../oeis/part-10/hannas-exponential-series-for-binom-n-k-n-k-1.md)
 - [Van Eck's sequence (OEIS A181391)](../../../../oeis/part-10/van-ecks-sequence-oeis-a181391.md)
 - [Sum of fourth powers of Fibonacci-like binomial coefficients](../../../../oeis/part-10/sum-of-fourth-powers-of-fibonacci-like-binomial.md)
-
-## [Product of two consecutive… to Integrality and…](part-19/README.md)
-
 - [Product of two consecutive primes modulo the next prime](../../../../oeis/part-10/product-of-two-consecutive-primes-modulo-the-nex.md)
 - [Recurrence with bitwise XOR](../../../../oeis/part-10/recurrence-with-bitwise-xor.md)
+- [Hanna's exponential series for $\binom{n+k-1}{k}^{k^2+1}$](../../../../oeis/part-10/hannas-exponential-series-for-binom-n-k-1-k-k-2.md)
+- [Hanna's exponential series for $\binom{n+k-1}{k}^{k^2+k}$](../../../../oeis/part-10/hannas-exponential-series-for-binom-n-k-1-k-k-2-2.md)
 - [Number of odd primes between $n^2$ and $(n+1)^2$ with $(n/p) = 1$](../../../../oeis/part-10/number-of-odd-primes-between-n-2-and-n-1-2-with.md)
 - [Coefficients of $\prod_{k>0} (1 - x^k/k!)$](../../../../oeis/part-10/coefficients-of-prod-k-0-1-x-k-k.md)
 - [Number of ways to write $n = x + y$ ($0 < x < y < n$) with $6x \pm 1$ and $6y \pm 1$ prime](../../../../oeis/part-10/number-of-ways-to-write-n-x-y-0-x-y-n-with-6x-pm.md)
 - [Normalized convolution of $\binom{6k}{3k}\binom{3k}{k}$](../../../../oeis/part-10/normalized-convolution-of-binom-6k-3k-binom-3k-k.md)
 - [Primorial squared plus one](../../../../oeis/part-10/primorial-squared-plus-one.md)
-- [Sequence $a(n) = n + \lfloor n r / t \rfloor + \lfloor n s / t \rfloor$](../../../../oeis/part-10/sequence-a-n-n-lfloor-n-r-t-rfloor-lfloor-n-s-t.md)
-- [Linear recurrence $a(n) = 5a(n-1) - 8a(n-2)$ with $a(0)=0, a(1)=1$](../../../../oeis/part-10/linear-recurrence-a-n-5a-n-1-8a-n-2-with-a-0-0-a.md)
-- [Representations of $n = p + q + (n \bmod 2)q$ with Jacobi symbol constraints](../../../../oeis/part-10/representations-of-n-p-q-n-bmod-2-q-with-jacobi.md)
-- [Number of distinct sums of distinct proper divisors of $n$](../../../../oeis/part-10/number-of-distinct-sums-of-distinct-proper-divis.md)
-- [Size of smallest subset of $\{1, 2, \dots, n\}$ with distinct subset sums](../../../../oeis/part-10/size-of-smallest-subset-of-1-2-dots-n-with-disti.md)
-- [Denominator of $B_{n+1}(x) - B_{n+1}$](../../../../oeis/part-10/denominator-of-b-n-1-x-b-n-1.md)
+- [Sequence $a(n) = n + \lfloor n r / t \rfloor + \lfloor n s / t \rfloor$](../../../../oeis/part-11/sequence-a-n-n-lfloor-n-r-t-rfloor-lfloor-n-s-t.md)
+- [Linear recurrence $a(n) = 5a(n-1) - 8a(n-2)$ with $a(0)=0, a(1)=1$](../../../../oeis/part-11/linear-recurrence-a-n-5a-n-1-8a-n-2-with-a-0-0-a.md)
+- [Representations of $n = p + q + (n \bmod 2)q$ with Jacobi symbol constraints](../../../../oeis/part-11/representations-of-n-p-q-n-bmod-2-q-with-jacobi.md)
+- [Number of distinct sums of distinct proper divisors of $n$](../../../../oeis/part-11/number-of-distinct-sums-of-distinct-proper-divis.md)
+
+## [Size of smallest subset of… to Smallest integer $s > n$ such…](part-20/README.md)
+
+- [Size of smallest subset of $\{1, 2, \dots, n\}$ with distinct subset sums](../../../../oeis/part-11/size-of-smallest-subset-of-1-2-dots-n-with-disti.md)
+- [Denominator of $B_{n+1}(x) - B_{n+1}$](../../../../oeis/part-11/denominator-of-b-n-1-x-b-n-1.md)
 - [Number of primes of the form $2^n \pm 2^k \pm 1$ with $0 \le k < n$](../../../../oeis/part-11/number-of-primes-of-the-form-2-n-pm-2-k-pm-1-wit.md)
 - [Primes of the form $3^n \pm 3^k \pm 1$](../../../../oeis/part-11/primes-of-the-form-3-n-pm-3-k-pm-1.md)
 - [Lerch quotients of odd primes](../../../../oeis/part-11/lerch-quotients-of-odd-primes.md)
@@ -440,9 +452,6 @@ navigation: transparent
 - [Expansion of $\sum_{n \ge 0} \frac{(3n)!}{n!^3} \frac{x^{2n}}{(1-x)^{3n+1}}$](../../../../oeis/part-11/expansion-of-sum-n-ge-0-frac-3n-n-3-frac-x-2n-1.md)
 - [Least integer $m > 1$ dividing no sum of two distinct primorials up to $P_n$](../../../../oeis/part-11/least-integer-m-1-dividing-no-sum-of-two-distinc.md)
 - [Integrality and supercongruences of the factorial ratio $\frac{(6n)! n!}{(3n)! (2n)!^2}$](../../../../oeis/part-11/integrality-and-supercongruences-of-the-factoria.md)
-
-## [Sequence $\frac{(8n)! n!}{(4n)!… to Existence of integers $k$ with…](part-20/README.md)
-
 - [Sequence $\frac{(8n)! n!}{(4n)! (3n)! (2n)!}$](../../../../oeis/part-11/sequence-frac-8n-n-4n-3n-2n.md)
 - [Balanced walks on a 4-dimensional cubic lattice with neighbor steps](../../../../oeis/part-11/balanced-walks-on-a-4-dimensional-cubic-lattice.md)
 - [Partial sums of $(-1)^{k - \Omega(k)}$](../../../../oeis/part-11/partial-sums-of-1-k-omega-k.md)
@@ -450,16 +459,7 @@ navigation: transparent
 - [Twin primes of the form $(3^n - k) 2^n \pm 1$](../../../../oeis/part-11/twin-primes-of-the-form-3-n-k-2-n-pm-1.md)
 - [Number of $0$'s in the binary expansion of $n^2$](../../../../oeis/part-11/number-of-0-s-in-the-binary-expansion-of-n-2.md)
 - [Smallest deficient multiplier for non-deficiency](../../../../oeis/part-11/smallest-deficient-multiplier-for-non-deficiency.md)
-- [Number of primes between $n^3 - n$ and $n^3$](../../../../oeis/part-11/number-of-primes-between-n-3-n-and-n-3.md)
-- [Number of primes between $n^2$ and $n^2 + (\log_2 n)^2$](../../../../oeis/part-11/number-of-primes-between-n-2-and-n-2-log-2-n-2.md)
-- [Recurrence $a(n+1) = 2n(n+1)a(n) - n^4 a(n-1)$ and associated polynomials](../../../../oeis/part-11/recurrence-a-n-1-2n-n-1-a-n-n-4-a-n-1-and-associ.md)
-- [Smallest integer $s > n$ such that $1 + 2s + 3s^2 + \dots + n s^{n-1}$ is prime](../../../../oeis/part-11/smallest-integer-s-n-such-that-1-2s-3s-2-dots-n.md)
-- [Partitions $n = x + y$ with $x^2 + xy + y^2$ prime](../../../../oeis/part-11/partitions-n-x-y-with-x-2-xy-y-2-prime.md)
-- [Partitions $2n + 1 = x + y$ with $x^4 + y^4$ prime](../../../../oeis/part-11/partitions-2n-1-x-y-with-x-4-y-4-prime.md)
-- [Primes $p < n$ with $n^2 - n + p$ and $n^2 + n - p$ prime](../../../../oeis/part-12/primes-p-n-with-n-2-n-p-and-n-2-n-p-prime.md)
-- [Representations of $n$ using prime pairs with prime gaps of $6$](../../../../oeis/part-12/representations-of-n-using-prime-pairs-with-prim.md)
-- [Partitions of $n$ into $x + y$ with $(xy)^2 + 1$ prime](../../../../oeis/part-12/partitions-of-n-into-x-y-with-xy-2-1-prime.md)
-- [Partitions of $n$ into $x + y$ with $(xy)^2 + xy + 1$ prime](../../../../oeis/part-12/partitions-of-n-into-x-y-with-xy-2-xy-1-prime.md)
-- [A double sum of five binomial factors](../../../../oeis/part-12/a-double-sum-of-five-binomial-factors.md)
-- [Trajectory of $64$ under the map $n \to \text{A006368}(n)$](../../../../oeis/part-12/trajectory-of-64-under-the-map-n-to-a006368-n.md)
-- [Existence of integers $k$ with $k^2 \operatorname{XOR} (k+1)^2 = (2n+1)^2$](../../../../oeis/part-12/existence-of-integers-k-with-k-2-xor-k-1-2-2n-1.md)
+- [Number of primes between $n^3 - n$ and $n^3$](../../../../oeis/part-12/number-of-primes-between-n-3-n-and-n-3.md)
+- [Number of primes between $n^2$ and $n^2 + (\log_2 n)^2$](../../../../oeis/part-12/number-of-primes-between-n-2-and-n-2-log-2-n-2.md)
+- [Recurrence $a(n+1) = 2n(n+1)a(n) - n^4 a(n-1)$ and associated polynomials](../../../../oeis/part-12/recurrence-a-n-1-2n-n-1-a-n-n-4-a-n-1-and-associ.md)
+- [Smallest integer $s > n$ such that $1 + 2s + 3s^2 + \dots + n s^{n-1}$ is prime](../../../../oeis/part-12/smallest-integer-s-n-such-that-1-2s-3s-2-dots-n.md)

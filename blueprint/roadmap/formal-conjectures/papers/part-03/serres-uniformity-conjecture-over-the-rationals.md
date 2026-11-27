@@ -24,7 +24,7 @@ statement: formalized
 > - [Lem17] P. Lemos, *Serre's uniformity conjecture for elliptic curves with rational
 >   cyclic isogenies*, introduction. https://arxiv.org/abs/1702.01985
 
-*Quoted from [FormalConjectures/Paper/SerreUniformity.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/SerreUniformity.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/SerreUniformity.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/SerreUniformity.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 2 open.
 
@@ -42,7 +42,7 @@ theorem serre_uniformity :
       ∀ p : ℕ, p.Prime → C < p → HasFullTorsionAction E p
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Paper/SerreUniformity.lean, line 68](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/SerreUniformity.lean#L68).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Paper/SerreUniformity.lean, line 68](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/SerreUniformity.lean#L68).
 
 ## `SerreUniformity.serre_uniformity.variants.bound_37`
 
@@ -60,7 +60,7 @@ theorem serre_uniformity.variants.bound_37 :
       ∀ p : ℕ, p.Prime → 37 < p → HasFullTorsionAction E p
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Paper/SerreUniformity.lean, line 81](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/SerreUniformity.lean#L81).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Paper/SerreUniformity.lean, line 81](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/SerreUniformity.lean#L81).
 
 ## Depends on
 
@@ -68,5 +68,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/SerreUniformity.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/SerreUniformity.lean)
+- [FormalConjectures/Paper/SerreUniformity.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/SerreUniformity.lean)
 - [https://doi.org/10.1007/BF01405086](https://doi.org/10.1007/BF01405086)

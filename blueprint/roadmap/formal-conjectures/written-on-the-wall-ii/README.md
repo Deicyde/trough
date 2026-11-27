@@ -1,6 +1,6 @@
 # Written on the Wall II
 
-The 63 problem files in [FormalConjectures/WrittenOnTheWallII](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/WrittenOnTheWallII) that state a research or textbook statement, at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), one article each.
+The 64 problem files in [FormalConjectures/WrittenOnTheWallII](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/WrittenOnTheWallII) that state a research or textbook statement, at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), one article each.
 
 Their docstrings and Lean statements are quoted from [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at that commit, under its Apache-2.0 license.
 
@@ -76,7 +76,8 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 ## [Written on the Wall II -… to Written on the Wall II -…](part-04/README.md)
 
 - [Written on the Wall II - Conjecture 327](part-04/written-on-the-wall-ii-conjecture-327.md)
+- [Written on the Wall II - Conjecture 372](part-04/written-on-the-wall-ii-conjecture-372.md)
 - [Written on the Wall II - Conjecture 430a](part-04/written-on-the-wall-ii-conjecture-430a.md)
 - [Written on the Wall II - Conjecture 438b](part-04/written-on-the-wall-ii-conjecture-438b.md)
 
-No article: 1 file here states no research or textbook statement: [Testing Graph Invariants](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/WrittenOnTheWallII/Test.lean).
+No article: 1 file here states no research or textbook statement: [Testing Graph Invariants](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/WrittenOnTheWallII/Test.lean).

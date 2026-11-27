@@ -5,13 +5,13 @@ navigation: transparent
 # Entries 23 to 43
 
 - [23. `Kaplansky.UnitConjecture.counterexamples.ii` (research solved), in Kaplansky's Conjectures](../../../wikipedia/part-05/kaplanskys-conjectures.md)
-- [24. `Erdos697.erdos_697.parts.i` (research solved), in Erdős Problem 697](../../../erdos-problems/600-699/part-04/erdos-problem-697.md)
+- [24. `Erdos697.erdos_697.parts.i` (research solved), in Erdős Problem 697](../../../erdos-problems/600-699/part-05/erdos-problem-697.md)
 - [25. `Erdos61.erdos_61.variants.bnss23` (research solved), in Erdős Problem 61 -- Erdős–Hajnal Conjecture](../../../erdos-problems/1-99/part-03/erdos-problem-61-erdos-hajnal-conjecture.md)
 - [26. `Erdos968.erdos_968.variants.sum_abs_diff_isTheta_log_sq` (research solved), in Erdős Problem 968](../../../erdos-problems/900-999/part-03/erdos-problem-968.md)
-- [27. `RamanujanTau.ramanujan_petersson` (research solved), in Ramanujan τ-function](../../../wikipedia/part-07/ramanujan-function.md)
+- [27. `RamanujanTau.ramanujan_petersson` (research solved), in Ramanujan τ-function](../../../wikipedia/part-08/ramanujan-function.md)
 - [28. `Green14.green_14_quadratic` (research solved), in Ben Green's Open Problem 14](../../../greens-open-problems/part-01/ben-greens-open-problem-14.md)
 - [29. `Erdos1063.erdos_1063.variants.cambie_upper_bound` (research solved), in Erdős Problem 1063](../../../erdos-problems/1000-1099/part-03/erdos-problem-1063.md)
-- [31. `Erdos697.density_exists` (research solved), in Erdős Problem 697](../../../erdos-problems/600-699/part-04/erdos-problem-697.md)
+- [31. `Erdos697.density_exists` (research solved), in Erdős Problem 697](../../../erdos-problems/600-699/part-05/erdos-problem-697.md)
 - [32. `Green14.W_3_15` (research solved), in Ben Green's Open Problem 14](../../../greens-open-problems/part-01/ben-greens-open-problem-14.md)
 - [33. `OpenQuantumProblem35.ame_2_exists` (research solved), in Open Quantum Problem 35: existence of absolutely maximally entangled pure states](../../../open-quantum-problems/open-quantum-problem-35-existence-of-absolutely.md)
 - [34. `Erdos392.erdos_392.variants.implication` (research solved), in Erdős Problem 392](../../../erdos-problems/300-399/part-04/erdos-problem-392.md)

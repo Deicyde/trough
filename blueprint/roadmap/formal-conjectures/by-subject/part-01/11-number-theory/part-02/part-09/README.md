@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# Erdős Problem 1197 to Fractional parts of sums of…
+# Erdős Problem 1194 to Density of ones in the…
 
+- [Erdős Problem 1194](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1194.md)
+- [Erdős Problem 1195](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1195.md)
+- [Erdős Problem 1196](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1196.md)
 - [Erdős Problem 1197](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1197.md)
 - [Erdős Problem 1198](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1198.md)
 - [Erdős Problem 1201](../../../../../erdos-problems/1200-1299/erdos-problem-1201.md)
@@ -21,6 +24,3 @@ navigation: transparent
 - [Erdős Problem 1217](../../../../../erdos-problems/1200-1299/erdos-problem-1217.md)
 - [Erdős Problem 1221](../../../../../erdos-problems/1200-1299/erdos-problem-1221.md)
 - [Density of ones in the Kolakoski sequence](../../../../../oeis/part-01/density-of-ones-in-the-kolakoski-sequence.md)
-- [The prime numbers](../../../../../oeis/part-01/the-prime-numbers.md)
-- [No powers as partition numbers](../../../../../oeis/part-01/no-powers-as-partition-numbers.md)
-- [Fractional parts of sums of reciprocals of Catalan numbers $C(n)$](../../../../../oeis/part-01/fractional-parts-of-sums-of-reciprocals-of-catal.md)

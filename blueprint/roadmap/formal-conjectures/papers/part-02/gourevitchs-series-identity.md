@@ -12,7 +12,7 @@ statement: formalized
 >  - [G2003] Guillera, Jesús. "About a new kind of Ramanujan-type series." Experimental Mathematics 12.4 (2003): 507-510.
 >  - [A2025] Au, Kam Cheong. "Wilf-Zeilberger seeds and non-trivial hypergeometric identities." Journal of Symbolic Computation 130 (2025): 102421. [arXiv:2312.14051](https://arxiv.org/abs/2312.14051)
 
-*Quoted from [FormalConjectures/Paper/Gourevitch.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/Gourevitch.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/Gourevitch.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/Gourevitch.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 1 research or textbook statement: 1 solved.
 
@@ -31,7 +31,7 @@ theorem gourevitch_series_identity :
       * Nat.centralBinom n ^ 7 = 32 / (Real.pi ^ 3)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [33 Special functions](../../by-subject/part-02/33-special-functions/README.md). Declared in [FormalConjectures/Paper/Gourevitch.lean, line 40](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/Gourevitch.lean#L40).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [33 Special functions](../../by-subject/part-02/33-special-functions/README.md). Declared in [FormalConjectures/Paper/Gourevitch.lean, line 40](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/Gourevitch.lean#L40).
 
 ## Depends on
 
@@ -39,5 +39,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/Gourevitch.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/Gourevitch.lean)
+- [FormalConjectures/Paper/Gourevitch.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/Gourevitch.lean)
 - [About a New Kind of Ramanujan-Type Series](https://doi.org/10.1080/10586458.2003.10504518)

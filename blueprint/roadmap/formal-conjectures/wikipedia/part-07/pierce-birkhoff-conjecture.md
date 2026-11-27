@@ -16,7 +16,7 @@ statement: formalized
 >
 > The conjecture has been proved for `n = 1` and `n = 2` by Louis Mahé.
 
-*Quoted from [FormalConjectures/Wikipedia/PierceBirkhoff.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/PierceBirkhoff.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/PierceBirkhoff.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/PierceBirkhoff.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 1 open and 2 solved.
 
@@ -35,7 +35,7 @@ theorem pierce_birkhoff_conjecture {n : ℕ} (f : (Fin n → ℝ) → ℝ)
       ∀ x, f x = ⨆ i, ⨅ j, MvPolynomial.eval x (g i j)
 ```
 
-Category `research open`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Wikipedia/PierceBirkhoff.lean, line 90](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/PierceBirkhoff.lean#L90).
+Category `research open`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Wikipedia/PierceBirkhoff.lean, line 90](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/PierceBirkhoff.lean#L90).
 
 ## `PierceBirkhoff.pierce_birkhoff_conjecture_dim_one`
 
@@ -51,7 +51,7 @@ theorem pierce_birkhoff_conjecture_dim_one (f : ℝ → ℝ)
       ∀ x, f x = ⨆ i, ⨅ j, Polynomial.eval x (g i j)
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Wikipedia/PierceBirkhoff.lean, line 101](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/PierceBirkhoff.lean#L101).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Wikipedia/PierceBirkhoff.lean, line 101](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/PierceBirkhoff.lean#L101).
 
 ## `PierceBirkhoff.pierce_birkhoff_conjecture_dim_two`
 
@@ -67,7 +67,7 @@ theorem pierce_birkhoff_conjecture_dim_two
       ∀ x, f x = ⨆ i, ⨅ j, MvPolynomial.eval x (g i j)
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Wikipedia/PierceBirkhoff.lean, line 112](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/PierceBirkhoff.lean#L112).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Wikipedia/PierceBirkhoff.lean, line 112](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/PierceBirkhoff.lean#L112).
 
 ## Depends on
 
@@ -75,5 +75,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/PierceBirkhoff.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/PierceBirkhoff.lean)
+- [FormalConjectures/Wikipedia/PierceBirkhoff.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/PierceBirkhoff.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Pierce%E2%80%93Birkhoff_conjecture)

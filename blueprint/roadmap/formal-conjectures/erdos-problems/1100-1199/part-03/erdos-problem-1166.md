@@ -20,7 +20,7 @@ statement: formalized
 > - [HLOZ24] Hao, C., Li, X., Okada, I. and Zheng, Y., *Favorite sites for simple random walk in
 >   two and more dimensions*. [arXiv:2409.00995](https://arxiv.org/abs/2409.00995) (2024).
 
-*Quoted from [FormalConjectures/ErdosProblems/1166.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1166.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/1166.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1166.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/1166](https://www.erdosproblems.com/1166).
 
@@ -63,7 +63,7 @@ theorem erdos_1166 {Ω : Type*} [MeasureSpace Ω] [IsProbabilityMeasure (ℙ : M
       ((⋃ k ≤ n, favouriteSites X k ω).encard : ℝ≥0∞) ≤ ENNReal.ofReal (Real.log n ^ C)
 ```
 
-Category `research solved`; AMS [60 Probability theory and stochastic processes](../../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/ErdosProblems/1166.lean, line 105](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1166.lean#L105).
+Category `research solved`; AMS [60 Probability theory and stochastic processes](../../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/ErdosProblems/1166.lean, line 105](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1166.lean#L105).
 
 ## `Erdos1166.erdos_1166.variants.erdos_taylor`
 
@@ -90,7 +90,7 @@ theorem erdos_1166.variants.erdos_taylor {Ω : Type*} [MeasureSpace Ω]
       (∀ᶠ n : ℕ in atTop, (maxLocalTime X n ω : ℝ) / Real.log n ^ 2 ≤ 1 / π + ε)
 ```
 
-Category `research solved`; AMS [60 Probability theory and stochastic processes](../../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/ErdosProblems/1166.lean, line 123](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1166.lean#L123).
+Category `research solved`; AMS [60 Probability theory and stochastic processes](../../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/ErdosProblems/1166.lean, line 123](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1166.lean#L123).
 
 ## `Erdos1166.erdos_1166.variants.dembo_peres_rosen_zeitouni`
 
@@ -112,7 +112,7 @@ theorem erdos_1166.variants.dembo_peres_rosen_zeitouni {Ω : Type*} [MeasureSpac
     ∀ᵐ ω, Tendsto (fun n : ℕ ↦ (maxLocalTime X n ω : ℝ) / Real.log n ^ 2) atTop (𝓝 (1 / π))
 ```
 
-Category `research solved`; AMS [60 Probability theory and stochastic processes](../../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/ErdosProblems/1166.lean, line 141](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1166.lean#L141).
+Category `research solved`; AMS [60 Probability theory and stochastic processes](../../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/ErdosProblems/1166.lean, line 141](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1166.lean#L141).
 
 ## Depends on
 
@@ -120,5 +120,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/1166.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1166.lean)
+- [FormalConjectures/ErdosProblems/1166.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1166.lean)
 - [erdosproblems.com/1166](https://www.erdosproblems.com/1166)

@@ -9,7 +9,7 @@ statement: formalized
 
 > *Reference:* [Wikipedia](https://en.wikipedia.org/wiki/Inverse_Galois_problem)
 
-*Quoted from [FormalConjectures/Wikipedia/InverseGalois.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/InverseGalois.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/InverseGalois.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/InverseGalois.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 6 research or textbook statements: 1 open and 5 solved.
 
@@ -26,7 +26,7 @@ theorem inverse_galois_problem {G : Type*} [Fintype G] [Group G] :
     IsRealizable ℚ G
 ```
 
-Category `research open`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/InverseGalois.lean, line 53](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/InverseGalois.lean#L53).
+Category `research open`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/InverseGalois.lean, line 53](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/InverseGalois.lean#L53).
 
 ## `InverseGalois.inverse_galois_problem.variants.cyclic`
 
@@ -40,7 +40,7 @@ theorem inverse_galois_problem.variants.cyclic
     IsRealizable ℚ G
 ```
 
-Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/InverseGalois.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/InverseGalois.lean#L61).
+Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/InverseGalois.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/InverseGalois.lean#L61).
 
 ## `InverseGalois.inverse_galois_problem.variants.abelian`
 
@@ -54,7 +54,7 @@ theorem inverse_galois_problem.variants.abelian
     IsRealizable ℚ G
 ```
 
-Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/InverseGalois.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/InverseGalois.lean#L70).
+Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/InverseGalois.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/InverseGalois.lean#L70).
 
 ## `InverseGalois.inverse_galois_problem.variants.symmetric_group`
 
@@ -68,7 +68,7 @@ theorem inverse_galois_problem.variants.symmetric_group
     IsRealizable ℚ (S ≃ S)
 ```
 
-Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/InverseGalois.lean, line 80](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/InverseGalois.lean#L80).
+Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/InverseGalois.lean, line 80](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/InverseGalois.lean#L80).
 
 ## `InverseGalois.inverse_galois_problem.variants.complex_rational_functions`
 
@@ -83,7 +83,7 @@ theorem inverse_galois_problem.variants.complex_rational_functions
     IsRealizable (RatFunc ℂ) G
 ```
 
-Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/InverseGalois.lean, line 90](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/InverseGalois.lean#L90).
+Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/InverseGalois.lean, line 90](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/InverseGalois.lean#L90).
 
 ## `InverseGalois.inverse_galois_problem.variants.complex_function_field`
 
@@ -98,7 +98,7 @@ theorem inverse_galois_problem.variants.complex_function_field
     IsRealizable (RatFunc K) G
 ```
 
-Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/InverseGalois.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/InverseGalois.lean#L100).
+Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/InverseGalois.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/InverseGalois.lean#L100).
 
 ## Depends on
 
@@ -106,5 +106,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/InverseGalois.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/InverseGalois.lean)
+- [FormalConjectures/Wikipedia/InverseGalois.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/InverseGalois.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Inverse_Galois_problem)

@@ -15,7 +15,7 @@ statement: formalized
 >   asymptotically." *J. Combin. Theory Ser. B* 168, pp. 208--235.
 >   [arXiv:2207.04035](https://arxiv.org/abs/2207.04035)
 
-*Quoted from [FormalConjectures/Paper/BurningNumberConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/BurningNumberConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/BurningNumberConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/BurningNumberConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 1 open and 2 solved. It also has 2 test statements and 1 API statement, counted here but not shown.
 
@@ -35,7 +35,7 @@ theorem burning_number_conjecture {V : Type} [Fintype V] (G : SimpleGraph V)
     burningNumber G ≤ ⌈Real.sqrt (Fintype.card V)⌉₊
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/BurningNumberConjecture.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/BurningNumberConjecture.lean#L73).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/BurningNumberConjecture.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/BurningNumberConjecture.lean#L73).
 
 ## `BurningNumberConjecture.burning_number_conjecture.variants.path`
 
@@ -51,7 +51,7 @@ theorem burning_number_conjecture.variants.path (n : ℕ) (hn : 1 ≤ n) :
     burningNumber (SimpleGraph.pathGraph n) = ⌈Real.sqrt n⌉₊
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/BurningNumberConjecture.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/BurningNumberConjecture.lean#L85).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/BurningNumberConjecture.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/BurningNumberConjecture.lean#L85).
 
 ## `BurningNumberConjecture.burning_number_conjecture.variants.norin_turcotte`
 
@@ -71,7 +71,7 @@ theorem burning_number_conjecture.variants.norin_turcotte (ε : ℝ) (hε : 0 < 
         (burningNumber G : ℝ) ≤ (1 + ε) * Real.sqrt (Fintype.card V)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/BurningNumberConjecture.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/BurningNumberConjecture.lean#L98).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/BurningNumberConjecture.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/BurningNumberConjecture.lean#L98).
 
 ## Depends on
 
@@ -79,5 +79,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/BurningNumberConjecture.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/BurningNumberConjecture.lean)
+- [FormalConjectures/Paper/BurningNumberConjecture.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/BurningNumberConjecture.lean)
 - [arXiv:1507.06524](https://arxiv.org/abs/1507.06524)

@@ -17,7 +17,7 @@ statement: formalized
 > *Reference:* [mathoverflow/34145](https://mathoverflow.net/q/34145)
 > asked by user [*Kaveh*](https://mathoverflow.net/users/7507/kaveh)
 
-*Quoted from [FormalConjectures/Mathoverflow/34145.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/34145.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Mathoverflow/34145.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/34145.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 2 open and 2 solved. It also has 6 test statements, counted here but not shown.
 
@@ -32,7 +32,7 @@ theorem rectangles_cover_unit_square :
     ∃ c : Configuration, ∀ p ∈ unitSquare, ∃ n, p ∈ (c.rect n).toSet
 ```
 
-Category `research open`; AMS [51 Geometry](../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Mathoverflow/34145.lean, line 146](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/34145.lean#L146).
+Category `research open`; AMS [51 Geometry](../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Mathoverflow/34145.lean, line 146](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/34145.lean#L146).
 
 ## `Mathoverflow34145.rectangles_pack_unit_square`
 
@@ -46,7 +46,7 @@ theorem rectangles_pack_unit_square :
     ∃ c : Configuration, (∀ n, (c.rect n).toSet ⊆ unitSquare) ∧ c.IsPacking
 ```
 
-Category `research open`; AMS [51 Geometry](../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Mathoverflow/34145.lean, line 153](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/34145.lean#L153).
+Category `research open`; AMS [51 Geometry](../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Mathoverflow/34145.lean, line 153](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/34145.lean#L153).
 
 ## `Mathoverflow34145.rectangles_pack_square_133_div_132`
 
@@ -63,7 +63,7 @@ theorem rectangles_pack_square_133_div_132 :
       c.IsPacking)
 ```
 
-Category `research solved`; AMS [51 Geometry](../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Mathoverflow/34145.lean, line 162](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/34145.lean#L162).
+Category `research solved`; AMS [51 Geometry](../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Mathoverflow/34145.lean, line 162](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/34145.lean#L162).
 
 ## `Mathoverflow34145.rectangles_pack_square_501_div_500`
 
@@ -80,7 +80,7 @@ theorem rectangles_pack_square_501_div_500 :
       c.IsPacking)
 ```
 
-Category `research solved`; AMS [51 Geometry](../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Mathoverflow/34145.lean, line 173](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/34145.lean#L173).
+Category `research solved`; AMS [51 Geometry](../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Mathoverflow/34145.lean, line 173](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/34145.lean#L173).
 
 ## Depends on
 
@@ -88,5 +88,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Mathoverflow/34145.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/34145.lean)
+- [FormalConjectures/Mathoverflow/34145.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/34145.lean)
 - [mathoverflow/34145](https://mathoverflow.net/q/34145)

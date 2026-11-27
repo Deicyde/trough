@@ -4,7 +4,7 @@
 > from all problems without the `category research open` tag
 > (solved, test, API, etc.).
 
-*Quoted from [FormalConjectures/Subsets/FC100SolvedSet1.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Subsets/FC100SolvedSet1.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0.*
+*Quoted from [FormalConjectures/Subsets/FC100SolvedSet1.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Subsets/FC100SolvedSet1.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0.*
 
 The 100 statements the list names, numbered as it lists them, 94 of them linked to their problem's article; the 6 others, without an article here, are listed at the end.
 
@@ -19,7 +19,7 @@ The 100 statements the list names, numbered as it lists them, 94 of them linked 
 - [8. `Erdos141.first_three_odd_primes` (test), in Erdős Problem 141](../../erdos-problems/100-199/part-02/erdos-problem-141.md)
 - [9. `WrittenOnTheWallII.GraphConjecture33.conjecture33` (research solved), in Written on the Wall II - Conjecture 33](../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-33.md)
 - [10. `MonochromaticQuantumGraph.eqSystem4_has_solution_d2` (test), in Monochromatic quantum graphs (inherited vertex colorings)](../../papers/part-02/monochromatic-quantum-graphs-inherited-vertex-co.md)
-- [11. `OeisA228828.a_2` (test), in Numbers $n$ such that $n^2 + \pi(n)$ is prime](../../oeis/part-12/numbers-n-such-that-n-2-pi-n-is-prime.md)
+- [11. `OeisA228828.a_2` (test), in Numbers $n$ such that $n^2 + \pi(n)$ is prime](../../oeis/part-13/numbers-n-such-that-n-2-pi-n-is-prime.md)
 - [12. `Erdos399.erdos_399.variants.cambie` (research solved), in Erdős Problem 399](../../erdos-problems/300-399/part-05/erdos-problem-399.md)
 - [13. `Erdos349.exists_t_for_k_disjoint_segments` (research solved), in Erdős Problem 349](../../erdos-problems/300-399/part-03/erdos-problem-349.md)
 - [14. `Erdos686.erdos_686.variants.four_three` (research solved), in Erdős Problem 686](../../erdos-problems/600-699/part-04/erdos-problem-686.md)
@@ -34,13 +34,13 @@ The 100 statements the list names, numbered as it lists them, 94 of them linked 
 ## [Entries 23 to 43](part-02/README.md)
 
 - [23. `Kaplansky.UnitConjecture.counterexamples.ii` (research solved), in Kaplansky's Conjectures](../../wikipedia/part-05/kaplanskys-conjectures.md)
-- [24. `Erdos697.erdos_697.parts.i` (research solved), in Erdős Problem 697](../../erdos-problems/600-699/part-04/erdos-problem-697.md)
+- [24. `Erdos697.erdos_697.parts.i` (research solved), in Erdős Problem 697](../../erdos-problems/600-699/part-05/erdos-problem-697.md)
 - [25. `Erdos61.erdos_61.variants.bnss23` (research solved), in Erdős Problem 61 -- Erdős–Hajnal Conjecture](../../erdos-problems/1-99/part-03/erdos-problem-61-erdos-hajnal-conjecture.md)
 - [26. `Erdos968.erdos_968.variants.sum_abs_diff_isTheta_log_sq` (research solved), in Erdős Problem 968](../../erdos-problems/900-999/part-03/erdos-problem-968.md)
-- [27. `RamanujanTau.ramanujan_petersson` (research solved), in Ramanujan τ-function](../../wikipedia/part-07/ramanujan-function.md)
+- [27. `RamanujanTau.ramanujan_petersson` (research solved), in Ramanujan τ-function](../../wikipedia/part-08/ramanujan-function.md)
 - [28. `Green14.green_14_quadratic` (research solved), in Ben Green's Open Problem 14](../../greens-open-problems/part-01/ben-greens-open-problem-14.md)
 - [29. `Erdos1063.erdos_1063.variants.cambie_upper_bound` (research solved), in Erdős Problem 1063](../../erdos-problems/1000-1099/part-03/erdos-problem-1063.md)
-- [31. `Erdos697.density_exists` (research solved), in Erdős Problem 697](../../erdos-problems/600-699/part-04/erdos-problem-697.md)
+- [31. `Erdos697.density_exists` (research solved), in Erdős Problem 697](../../erdos-problems/600-699/part-05/erdos-problem-697.md)
 - [32. `Green14.W_3_15` (research solved), in Ben Green's Open Problem 14](../../greens-open-problems/part-01/ben-greens-open-problem-14.md)
 - [33. `OpenQuantumProblem35.ame_2_exists` (research solved), in Open Quantum Problem 35: existence of absolutely maximally entangled pure states](../../open-quantum-problems/open-quantum-problem-35-existence-of-absolutely.md)
 - [34. `Erdos392.erdos_392.variants.implication` (research solved), in Erdős Problem 392](../../erdos-problems/300-399/part-04/erdos-problem-392.md)
@@ -69,7 +69,7 @@ The 100 statements the list names, numbered as it lists them, 94 of them linked 
 - [54. `Erdos17.isClusterPrime_97_isLeast_non_cluster` (test), in Erdős Problem 17](../../erdos-problems/1-99/part-01/erdos-problem-17.md)
 - [55. `BealConjecture.flt_of_beal_conjecture` (textbook), in Beal conjecture](../../wikipedia/part-01/beal-conjecture.md)
 - [56. `Arxiv.«1609.08688».maximalLength_ge_of_isSquare` (research solved), in The length of an $s$-increasing sequence of $r$-tuples](../../arxiv/part-01/the-length-of-an-s-increasing-sequence-of-r-tupl.md)
-- [57. `RiemannZetaValues.infinite_irrational_at_odd` (research solved), in Particular values of the Riemann zeta function](../../wikipedia/part-07/particular-values-of-the-riemann-zeta-function.md)
+- [57. `RiemannZetaValues.infinite_irrational_at_odd` (research solved), in Particular values of the Riemann zeta function](../../wikipedia/part-08/particular-values-of-the-riemann-zeta-function.md)
 - [58. `AgohGiuga.isWeakGiuga_iff_sum_primeFactors` (research solved), in Agoh-Giuga conjecture](../../wikipedia/part-01/agoh-giuga-conjecture.md)
 - [59. `OeisA6697.count_false_morphism` (API), in Subword complexity of the morphism a → aab, b → b](../../oeis/part-02/subword-complexity-of-the-morphism-a-aab-b-b.md)
 - [60. `Mathoverflow10799.μ_half_eq_uniform` (test), in Optimal monotone families for the discrete isoperimetric inequality](../../mathoverflow/optimal-monotone-families-for-the-discrete-isope.md)
@@ -88,7 +88,7 @@ The 100 statements the list names, numbered as it lists them, 94 of them linked 
 - [70. `Erdos951.erdos_951.variants.isBeurlingPrimes` (API), in Erdős Problem 951](../../erdos-problems/900-999/part-03/erdos-problem-951.md)
 - [71. `Erdos965.erdos_965.variants.generalization` (research solved), in Erdős Problem 965](../../erdos-problems/900-999/part-03/erdos-problem-965.md)
 - [72. `Erdos985.erdos_985.variants.two_three_five_primitive_root` (research solved), in Erdős Problem 985](../../erdos-problems/900-999/part-04/erdos-problem-985.md)
-- [73. `PellNumbers.pellNumber_two` (test), in Infinitude of Pell number primes](../../wikipedia/part-06/infinitude-of-pell-number-primes.md)
+- [73. `PellNumbers.pellNumber_two` (test), in Infinitude of Pell number primes](../../wikipedia/part-07/infinitude-of-pell-number-primes.md)
 - [75. `BusyBeaver.sanity_check` (API), in Busy Beaver](../../wikipedia/part-02/busy-beaver.md)
 - [76. `OpenQuantumProblem13.Qubit.firstCol_normSq` (API), in Open Quantum Problem 13: Mutually unbiased bases](../../open-quantum-problems/open-quantum-problem-13-mutually-unbiased-bases.md)
 - [77. `Erdos263.erdos_263.variants.sub_doubly_exponential` (research solved), in Erdős Problem 263](../../erdos-problems/200-299/part-03/erdos-problem-263.md)
@@ -117,4 +117,4 @@ The 100 statements the list names, numbered as it lists them, 94 of them linked 
 - [99. `Erdos1052.isUnitaryPerfect_60` (test), in Erdős Problem 1052](../../erdos-problems/1000-1099/part-03/erdos-problem-1052.md)
 - [100. `OeisA67720.a_1` (test), in Conjectures associated with A067720](../../oeis/part-04/conjectures-associated-with-a067720.md)
 
-Without an article here: 1. `WrittenOnTheWallII.Test.petersen_size` (test, in [FormalConjectures/WrittenOnTheWallII/Test.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/WrittenOnTheWallII/Test.lean)), 16. `WrittenOnTheWallII.Test.house_radius` (test, in [FormalConjectures/WrittenOnTheWallII/Test.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/WrittenOnTheWallII/Test.lean)), 30. `WrittenOnTheWallII.Test.petersen_residue` (test, in [FormalConjectures/WrittenOnTheWallII/Test.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/WrittenOnTheWallII/Test.lean)), 74. `WrittenOnTheWallII.Test.C6_size` (test, in [FormalConjectures/WrittenOnTheWallII/Test.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/WrittenOnTheWallII/Test.lean)), 88. `WrittenOnTheWallII.Test.petersen_szeged` (test, in [FormalConjectures/WrittenOnTheWallII/Test.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/WrittenOnTheWallII/Test.lean)), 89. `WrittenOnTheWallII.Test.petersen_radius` (test, in [FormalConjectures/WrittenOnTheWallII/Test.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/WrittenOnTheWallII/Test.lean)).
+Without an article here: 1. `WrittenOnTheWallII.Test.petersen_size` (test, in [FormalConjectures/WrittenOnTheWallII/Test.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/WrittenOnTheWallII/Test.lean)), 16. `WrittenOnTheWallII.Test.house_radius` (test, in [FormalConjectures/WrittenOnTheWallII/Test.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/WrittenOnTheWallII/Test.lean)), 30. `WrittenOnTheWallII.Test.petersen_residue` (test, in [FormalConjectures/WrittenOnTheWallII/Test.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/WrittenOnTheWallII/Test.lean)), 74. `WrittenOnTheWallII.Test.C6_size` (test, in [FormalConjectures/WrittenOnTheWallII/Test.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/WrittenOnTheWallII/Test.lean)), 88. `WrittenOnTheWallII.Test.petersen_szeged` (test, in [FormalConjectures/WrittenOnTheWallII/Test.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/WrittenOnTheWallII/Test.lean)), 89. `WrittenOnTheWallII.Test.petersen_radius` (test, in [FormalConjectures/WrittenOnTheWallII/Test.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/WrittenOnTheWallII/Test.lean)).

@@ -14,7 +14,7 @@ The 17 problems with a statement whose `AMS` attribute names 28, Measure and int
 - [Erdős Problem 1154](../../../erdos-problems/1100-1199/part-03/erdos-problem-1154.md)
 - [Erdős Problem 1195](../../../erdos-problems/1100-1199/part-04/erdos-problem-1195.md)
 - [Erdős Problem 1197](../../../erdos-problems/1100-1199/part-04/erdos-problem-1197.md)
-- [Falconer's distance set conjecture](../../../wikipedia/part-03/falconers-distance-set-conjecture.md)
+- [Falconer's distance set conjecture](../../../wikipedia/part-04/falconers-distance-set-conjecture.md)
 - [Ben Green's Open Problem 35](../../../greens-open-problems/part-02/ben-greens-open-problem-35.md)
 - [Green's Open Problem 85](../../../greens-open-problems/part-04/greens-open-problem-85.md)
 - [Ben Green's Open Problem 94](../../../greens-open-problems/part-04/ben-greens-open-problem-94.md)

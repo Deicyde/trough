@@ -1,10 +1,10 @@
 # arXiv
 
-The 44 problem files in [FormalConjectures/Arxiv](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv) that state a research or textbook statement, at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), one article each.
+The 47 problem files in [FormalConjectures/Arxiv](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv) that state a research or textbook statement, at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), one article each.
 
 Their docstrings and Lean statements are quoted from [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at that commit, under its Apache-2.0 license.
 
-## [Generic and maximal rank of… to An Arithmetic Sum Associated…](part-01/README.md)
+## [Generic and maximal rank of… to The circulant Hadamard…](part-01/README.md)
 
 - [Generic and maximal rank of 3-tensors](part-01/generic-and-maximal-rank-of-3-tensors.md)
 - [Central Binomial Tail Bounds, Conjecture 6.3](part-01/central-binomial-tail-bounds-conjecture-6-3.md)
@@ -20,15 +20,17 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Barker sequences](part-01/barker-sequences.md)
 - [Independent Domination of Regular Graphs, Conjecture 1.6](part-01/independent-domination-of-regular-graphs-conject.md)
 - [Digit $2$ in base $3$ representation of $2^n$](part-01/digit-2-in-base-3-representation-of-2-n.md)
+- [Multiplicative persistence](part-01/multiplicative-persistence.md)
 - [Zariski Cancellation](part-01/zariski-cancellation.md)
 - [Spectral sets and weak tiling](part-01/spectral-sets-and-weak-tiling.md)
+- [Primes of the form $F_n+L_{n+1}$](part-01/primes-of-the-form-f-n-l-n-1.md)
 - [Furstenberg's \`times p, times q\` conjectures](part-01/furstenbergs-times-p-times-q-conjectures.md)
 - [The circulant Hadamard conjecture](part-01/the-circulant-hadamard-conjecture.md)
-- [Pittel's stable-matching hyperbola threshold conjecture](part-01/pittels-stable-matching-hyperbola-threshold-conj.md)
-- [An Arithmetic Sum Associated with the Classical Theta Function](part-01/an-arithmetic-sum-associated-with-the-classical.md)
 
-## [A conjecture by Margulis on… to Banach-Mazur Rotation Problem](part-02/README.md)
+## [Pittel's stable-matching… to The Balister–Győri–Schelp…](part-02/README.md)
 
+- [Pittel's stable-matching hyperbola threshold conjecture](part-02/pittels-stable-matching-hyperbola-threshold-conj.md)
+- [An Arithmetic Sum Associated with the Classical Theta Function](part-02/an-arithmetic-sum-associated-with-the-classical.md)
 - [A conjecture by Margulis on matrix groups](part-02/a-conjecture-by-margulis-on-matrix-groups.md)
 - [TxGraffiti Conjecture 1: independence, annihilation, and residue](part-02/txgraffiti-conjecture-1-independence-annihilatio.md)
 - [TxGraffiti Conjecture 2: zero forcing versus independence (cubic graphs)](part-02/txgraffiti-conjecture-2-zero-forcing-versus-inde.md)
@@ -47,11 +49,12 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [The Alon-Tarsi short cycle cover conjecture](part-02/the-alon-tarsi-short-cycle-cover-conjecture.md)
 - [Minimum modulus for the unique multiset-sum problem](part-02/minimum-modulus-for-the-unique-multiset-sum-prob.md)
 - [The Balister–Győri–Schelp conjecture](part-02/the-balister-gyori-schelp-conjecture.md)
-- [The Maxwell conjecture](part-02/the-maxwell-conjecture.md)
-- [Banach-Mazur Rotation Problem](part-02/banach-mazur-rotation-problem.md)
 
-## [Finite generation of the… to Algebraic consequences of the…](part-03/README.md)
+## [The Maxwell conjecture to Algebraic consequences of the…](part-03/README.md)
 
+- [The Maxwell conjecture](part-03/the-maxwell-conjecture.md)
+- [Computing Bayes–Nash equilibria in Bayesian simple security games](part-03/computing-bayes-nash-equilibria-in-bayesian-simp.md)
+- [Banach-Mazur Rotation Problem](part-03/banach-mazur-rotation-problem.md)
 - [Finite generation of the cohomology of finite-dimensional Hopf algebras](part-03/finite-generation-of-the-cohomology-of-finite-di.md)
 - [The Dixmier Conjecture](part-03/the-dixmier-conjecture.md)
 - [The Poisson Conjecture](part-03/the-poisson-conjecture.md)

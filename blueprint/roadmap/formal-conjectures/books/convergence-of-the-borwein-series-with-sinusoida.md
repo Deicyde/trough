@@ -12,7 +12,7 @@ statement: formalized
 > - Borwein, J.; Bailey, D.; Girgensohn, R. *Experimentation in Mathematics: Computational Paths
 >   to Discovery*, A K Peters, 2004, p. 56.
 
-*Quoted from [FormalConjectures/Books/BorweinSineSeries.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Books/BorweinSineSeries.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Books/BorweinSineSeries.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Books/BorweinSineSeries.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 1 research or textbook statement: 1 solved.
 
@@ -43,7 +43,7 @@ theorem borwein_sine_series :
     Summable fun n : ℕ+ ↦ ((2 / 3 + 1 / 3 * Real.sin (n : ℝ)) ^ (n : ℕ)) / (n : ℝ)
 ```
 
-Category `research solved`; AMS [26 Real functions](../by-subject/part-01/26-real-functions/README.md), [40 Sequences, series, summability](../by-subject/part-02/40-sequences-series-summability/README.md). Declared in [FormalConjectures/Books/BorweinSineSeries.lean, line 52](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Books/BorweinSineSeries.lean#L52).
+Category `research solved`; AMS [26 Real functions](../by-subject/part-01/26-real-functions/README.md), [40 Sequences, series, summability](../by-subject/part-02/40-sequences-series-summability/README.md). Declared in [FormalConjectures/Books/BorweinSineSeries.lean, line 52](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Books/BorweinSineSeries.lean#L52).
 
 ## Depends on
 
@@ -51,5 +51,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Books/BorweinSineSeries.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Books/BorweinSineSeries.lean)
+- [FormalConjectures/Books/BorweinSineSeries.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Books/BorweinSineSeries.lean)
 - [MathWorld, Harmonic Series](https://mathworld.wolfram.com/HarmonicSeries.html)

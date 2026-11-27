@@ -6,7 +6,7 @@ The 9 problems with a statement whose `AMS` attribute names 37, Dynamical system
 - [Collatz conjecture](../../../wikipedia/part-02/collatz-conjecture.md)
 - [Juggler conjecture](../../../wikipedia/part-05/juggler-conjecture.md)
 - [Conjectures about the Mandelbrot and Multibrot sets](../../../wikipedia/part-06/conjectures-about-the-mandelbrot-and-multibrot-s.md)
-- [Gottschalk's surjunctivity conjecture](../../../wikipedia/part-09/gottschalks-surjunctivity-conjecture.md)
+- [Gottschalk's surjunctivity conjecture](../../../wikipedia/part-10/gottschalks-surjunctivity-conjecture.md)
 - [Furstenberg's \`times p, times q\` conjectures](../../../arxiv/part-01/furstenbergs-times-p-times-q-conjectures.md)
 - [Bugeaud Collection of Conjectures and Open Questions: Simultaneously Small Entropies](../../../books/bugeaud-collection-of-conjectures-and-open-quest-9.md)
 - [Bugeaud Collection of Conjectures and Open Questions: Pisot orbits on the Cantor set](../../../books/bugeaud-collection-of-conjectures-and-open-quest-10.md)

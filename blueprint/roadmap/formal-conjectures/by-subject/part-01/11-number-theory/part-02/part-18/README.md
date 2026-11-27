@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# Odious primes minus evil primes… to Sum of fourth powers of…
+# Least $k \ge 1$ such that $2… to Central binomial sum $a(n) =…
 
+- [Least $k \ge 1$ such that $2 \cdot n^k - 1$ is prime](../../../../../oeis/part-09/least-k-ge-1-such-that-2-cdot-n-k-1-is-prime.md)
+- [Half-Fibonacci sequence](../../../../../oeis/part-09/half-fibonacci-sequence.md)
+- [Ratio of product of GCDs to product of factorials of floor divisions](../../../../../oeis/part-09/ratio-of-product-of-gcds-to-product-of-factorial.md)
 - [Odious primes minus evil primes among first $n$ primes](../../../../../oeis/part-09/odious-primes-minus-evil-primes-among-first-n-pr.md)
 - [Recurrence involving LCM: $a(n) = x(n+1)/x(n) - 2$](../../../../../oeis/part-09/recurrence-involving-lcm-a-n-x-n-1-x-n-2.md)
 - [Number of Abelian cubes of length $3n$ over an alphabet of size 3](../../../../../oeis/part-09/number-of-abelian-cubes-of-length-3n-over-an-alp.md)
@@ -21,6 +24,3 @@ navigation: transparent
 - [Recurrence with fourth powers of binomial coefficients](../../../../../oeis/part-10/recurrence-with-fourth-powers-of-binomial-coeffi.md)
 - [Central binomial sum $a(n) = \sum_{k=0}^n (-4)^k \binom{n}{k}^2 \binom{n-k}{k}^2$](../../../../../oeis/part-10/central-binomial-sum-a-n-sum-k-0-n-4-k-binom-n-k.md)
 - [Central binomial sum $a(n) = \sum_{k=0}^n \binom{n}{k}^2 \binom{n-k}{k}^2 (-16)^k$](../../../../../oeis/part-10/central-binomial-sum-a-n-sum-k-0-n-binom-n-k-2-b.md)
-- [Difference of digit sums in base 3 and base 2](../../../../../oeis/part-10/difference-of-digit-sums-in-base-3-and-base-2.md)
-- [Van Eck's sequence (OEIS A181391)](../../../../../oeis/part-10/van-ecks-sequence-oeis-a181391.md)
-- [Sum of fourth powers of Fibonacci-like binomial coefficients](../../../../../oeis/part-10/sum-of-fourth-powers-of-fibonacci-like-binomial.md)

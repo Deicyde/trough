@@ -9,7 +9,7 @@ statement: formalized
 
 > *Reference:* [Wikipedia](https://en.wikipedia.org/wiki/K%C3%B6the_conjecture)
 
-*Quoted from [FormalConjectures/Wikipedia/Koethe.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/Koethe.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/Koethe.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/Koethe.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 13 research or textbook statements: 5 open and 8 solved. It also has 1 test statement and 12 API statements, counted here but not shown.
 
@@ -23,7 +23,7 @@ Open: stated without proof.
 theorem KotheConjecture (I J : Ideal R) (hI : IsNil I) (hJ : IsNil J) : IsNil (I + J)
 ```
 
-Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 115](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/Koethe.lean#L115).
+Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 115](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/Koethe.lean#L115).
 
 ## `Koethe.KotherConjecture.variants.le_KotherRadical`
 
@@ -36,7 +36,7 @@ theorem KotherConjecture.variants.le_KotherRadical {I : Ideal R} (hI : IsNil I) 
     (I : Set R) ⊆ KotheRadical R
 ```
 
-Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 120](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/Koethe.lean#L120).
+Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 120](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/Koethe.lean#L120).
 
 ## `Koethe.KotherConjecture.variants.general_matrix`
 
@@ -50,7 +50,7 @@ theorem KotherConjecture.variants.general_matrix {I : TwoSidedIdeal R} (hI : IsN
     (n : Type*) [Fintype n] : IsNil (matrix n I)
 ```
 
-Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 128](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/Koethe.lean#L128).
+Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 128](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/Koethe.lean#L128).
 
 ## `Koethe.KotherConjecture.variants.two_by_two_matrix`
 
@@ -64,7 +64,7 @@ theorem KotherConjecture.variants.two_by_two_matrix {I : TwoSidedIdeal R} (hI : 
     IsNil (matrix (Fin 2) I)
 ```
 
-Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 135](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/Koethe.lean#L135).
+Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 135](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/Koethe.lean#L135).
 
 ## `Koethe.KotherConjecture.variants.matrixOver_KotherRadical`
 
@@ -78,7 +78,7 @@ theorem KotherConjecture.variants.matrixOver_KotherRadical (n : Type*) [Fintype 
     matrix n (Nil* R) = Nil* (Matrix n n R)
 ```
 
-Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 143](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/Koethe.lean#L143).
+Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 143](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/Koethe.lean#L143).
 
 ## `Koethe.KotherConjecture.variants.general_matrix_of_KotheConjecture`
 
@@ -93,7 +93,7 @@ theorem KotherConjecture.variants.general_matrix_of_KotheConjecture
     type_of% @KotherConjecture.variants.general_matrix.{u, v}
 ```
 
-Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 236](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/Koethe.lean#L236).
+Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 236](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/Koethe.lean#L236).
 
 ## `Koethe.KotherConjecture.variants.KotheConjecture_of_le_KotherRadical`
 
@@ -107,7 +107,7 @@ theorem KotherConjecture.variants.KotheConjecture_of_le_KotherRadical
     type_of% @KotheConjecture.{u}
 ```
 
-Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 246](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/Koethe.lean#L246).
+Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 246](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/Koethe.lean#L246).
 
 ## `Koethe.KotherConjecture.variants.le_KotherRadical_of_KotheConjecture`
 
@@ -121,7 +121,7 @@ theorem KotherConjecture.variants.le_KotherRadical_of_KotheConjecture
     type_of% @KotherConjecture.variants.le_KotherRadical.{u}
 ```
 
-Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 256](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/Koethe.lean#L256).
+Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 256](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/Koethe.lean#L256).
 
 ## `Koethe.KotherConjecture.variants.general_matrix_of_le_KotherRadical`
 
@@ -136,7 +136,7 @@ theorem KotherConjecture.variants.general_matrix_of_le_KotherRadical
     type_of% @KotherConjecture.variants.general_matrix.{u, v}
 ```
 
-Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 283](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/Koethe.lean#L283).
+Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 283](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/Koethe.lean#L283).
 
 ## `Koethe.KotherConjecture.variants.general_matrix_of_two_by_two_matrix`
 
@@ -152,7 +152,7 @@ theorem KotherConjecture.variants.general_matrix_of_two_by_two_matrix
     type_of% @KotherConjecture.variants.general_matrix.{u, v}
 ```
 
-Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 346](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/Koethe.lean#L346).
+Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 346](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/Koethe.lean#L346).
 
 ## `Koethe.KotherConjecture.variants.general_matrix_of_matrixOver_KotherRadical`
 
@@ -167,7 +167,7 @@ theorem KotherConjecture.variants.general_matrix_of_matrixOver_KotherRadical
     type_of% @KotherConjecture.variants.general_matrix.{u, v}
 ```
 
-Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 368](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/Koethe.lean#L368).
+Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 368](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/Koethe.lean#L368).
 
 ## `Koethe.KotherConjecture.variants.matrixOver_KotherRadical_of_general_matrix`
 
@@ -182,7 +182,7 @@ theorem KotherConjecture.variants.matrixOver_KotherRadical_of_general_matrix
     type_of% @KotherConjecture.variants.matrixOver_KotherRadical.{u, v}
 ```
 
-Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 380](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/Koethe.lean#L380).
+Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 380](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/Koethe.lean#L380).
 
 ## `Koethe.amitsur_conjecture`
 
@@ -196,7 +196,7 @@ theorem amitsur_conjecture : ¬ ∀ (R : Type) [Ring R] (J : TwoSidedIdeal R), I
     IsNil (TwoSidedIdeal.map (Polynomial.C) J)
 ```
 
-Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 426](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/Koethe.lean#L426).
+Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Wikipedia/Koethe.lean, line 426](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/Koethe.lean#L426).
 
 ## Depends on
 
@@ -204,5 +204,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/Koethe.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/Koethe.lean)
+- [FormalConjectures/Wikipedia/Koethe.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/Koethe.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/K%C3%B6the_conjecture)

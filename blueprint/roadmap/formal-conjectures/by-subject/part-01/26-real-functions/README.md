@@ -7,7 +7,7 @@ The 14 problems with a statement whose `AMS` attribute names 26, Real functions,
 - [Erdős Problem 1125](../../../erdos-problems/1100-1199/part-01/erdos-problem-1125.md)
 - [Erdős Problem 1126](../../../erdos-problems/1100-1199/part-01/erdos-problem-1126.md)
 - [Erdős Problem 1133](../../../erdos-problems/1100-1199/part-02/erdos-problem-1133.md)
-- [Recurrence $a(n+1) = 2n(n+1)a(n) - n^4 a(n-1)$ and associated polynomials](../../../oeis/part-11/recurrence-a-n-1-2n-n-1-a-n-n-4-a-n-1-and-associ.md)
+- [Recurrence $a(n+1) = 2n(n+1)a(n) - n^4 a(n-1)$ and associated polynomials](../../../oeis/part-12/recurrence-a-n-1-2n-n-1-a-n-n-4-a-n-1-and-associ.md)
 - [Ben Green's Open Problem 35](../../../greens-open-problems/part-02/ben-greens-open-problem-35.md)
 - [Voronovskaja-type Formula for the Bezier Variant of the Bernstein Operators](../../../papers/part-03/voronovskaja-type-formula-for-the-bezier-variant.md)
 - [Unique Crystal Components](../../../arxiv/part-01/unique-crystal-components.md)

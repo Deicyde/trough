@@ -16,7 +16,7 @@ statement: formalized
 > - Z.-W. Sun, "Open Conjectures on Congruences", arXiv preprint
 >   [arXiv:0911.5665](https://arxiv.org/abs/0911.5665) [math.NT], 2009-2011.
 
-*Quoted from [FormalConjectures/OEIS/179524.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS/179524.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/OEIS/179524.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/OEIS/179524.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 5 open. It also has 5 test statements, counted here but not shown.
 
@@ -35,7 +35,7 @@ theorem conjecture1 (p : ℕ) (hp : p.Prime)
     ∑ k ∈ Finset.range p, a k ≡ 4 * x ^ 2 - 2 * (p : ℤ) [ZMOD (p : ℤ) ^ 2]
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/179524.lean, line 60](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS/179524.lean#L60).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/179524.lean, line 60](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/OEIS/179524.lean#L60).
 
 ## `OeisA179524.conjecture2`
 
@@ -52,7 +52,7 @@ theorem conjecture2 (p : ℕ) (hp : p.Prime)
     ∑ k ∈ Finset.range p, a k ≡ 2 * x ^ 2 - 2 * (p : ℤ) [ZMOD (p : ℤ) ^ 2]
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/179524.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS/179524.lean#L72).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/179524.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/OEIS/179524.lean#L72).
 
 ## `OeisA179524.conjecture3`
 
@@ -69,7 +69,7 @@ theorem conjecture3 (p : ℕ) (hp : p.Prime)
     ∑ k ∈ Finset.range p, a k ≡ 0 [ZMOD (p : ℤ) ^ 2]
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/179524.lean, line 84](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS/179524.lean#L84).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/179524.lean, line 84](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/OEIS/179524.lean#L84).
 
 ## `OeisA179524.conjecture4`
 
@@ -83,7 +83,7 @@ theorem conjecture4 (n : ℕ) (hn : 1 ≤ n) :
     (n : ℤ) ∣ ∑ k ∈ Finset.range n, ((20 * (k : ℤ) + 17) * a k)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/179524.lean, line 95](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS/179524.lean#L95).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/179524.lean, line 95](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/OEIS/179524.lean#L95).
 
 ## `OeisA179524.conjecture5`
 
@@ -98,7 +98,7 @@ theorem conjecture5 (p : ℕ) [hp : Fact p.Prime] (_hp2 : p ≠ 2) :
       (p : ℤ) * (10 * legendreSym p (-1) + 7) [ZMOD (p : ℤ) ^ 2]
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/179524.lean, line 104](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS/179524.lean#L104).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/179524.lean, line 104](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/OEIS/179524.lean#L104).
 
 ## Depends on
 
@@ -106,5 +106,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/OEIS/179524.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS/179524.lean)
+- [FormalConjectures/OEIS/179524.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/OEIS/179524.lean)
 - [A179524](https://oeis.org/A179524)

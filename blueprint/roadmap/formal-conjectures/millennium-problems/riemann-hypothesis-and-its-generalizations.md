@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: RiemannHypothesis.riemannHypothesis, GRH.generalized_riemann_hypothesis
+lean: RiemannHypothesis.riemannHypothesis, GRH.generalized_riemann_hypothesis, ERH.extended_riemann_hypothesis
 statement: formalized
 ---
 
@@ -13,30 +13,26 @@ statement: formalized
 > posed by the Clay Mathematics Institute.
 >
 > The Generalized Riemann Hypothesis extends this to Dirichlet $L$-functions of primitive
-> Dirichlet characters.
->
-> Note: the **Extended Riemann Hypothesis** (ERH) for Dedekind zeta functions is intentionally
-> **not** stated here. Mathlib's `NumberField.dedekindZeta` is the naive Dirichlet series
-> (`LSeries`), not a meromorphic continuation; outside the region of absolute convergence
-> `tsum` returns junk `0`, producing spurious zeros that make the naive foramlisation of the
-> conjecture provably false. The ERH should be added once Mathlib provides a meromorphic
-> continuation of the Dedekind zeta function.
+> Dirichlet characters. The Extended Riemann Hypothesis extends it to Dedekind zeta functions of
+> number fields.
 >
 > *References:*
 > - [The Clay Institute](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf)
+> - L. Alpöge, [Note on the Riemann Hypothesis](https://alpo.ge/remark.pdf), 2026. Announces a
+>   Lean proof of the Riemann Hypothesis and the Generalized Riemann Hypothesis.
 > - [Wikipedia: Riemann hypothesis](https://en.wikipedia.org/wiki/Riemann_hypothesis)
 > - [Wikipedia: Generalized Riemann hypothesis](https://en.wikipedia.org/wiki/Generalized_Riemann_hypothesis)
 > - [Wikipedia: Dedekind zeta function](https://en.wikipedia.org/wiki/Dedekind_zeta_function)
 > - J. Neukirch, *Algebraic Number Theory*, Springer (Grundlehren 322), 1999, Chapter VII, §5.
 > - D. A. Marcus, *Number Fields*, Springer (GTM 81), 1977, Chapter VII.
 
-*Quoted from [FormalConjectures/Millennium/RiemannHypothesis.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Millennium/RiemannHypothesis.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Millennium/RiemannHypothesis.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Millennium/RiemannHypothesis.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
-The file states 2 research or textbook statements: 2 open. It also has 1 test statement, counted here but not shown.
+The file states 3 research or textbook statements: 1 open and 2 solved. It also has 1 test statement, counted here but not shown.
 
 ## `RiemannHypothesis.riemannHypothesis`
 
-Open: stated without proof.
+Solved: stated here; a Lean proof is at [https://github.com/leanprover-community/riemann-hypothesis](https://github.com/leanprover-community/riemann-hypothesis).
 
 > The **Riemann Hypothesis**: all non-trivial zeros of the Riemann zeta function have real
 > part $\frac{1}{2}$. That is, if $\zeta(s) = 0$, $s \neq 1$, and $s$ is not a trivial zero
@@ -52,15 +48,19 @@ Open: stated without proof.
 theorem riemannHypothesis : RiemannHypothesis
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Millennium/RiemannHypothesis.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Millennium/RiemannHypothesis.lean#L61).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Millennium/RiemannHypothesis.lean, line 59](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Millennium/RiemannHypothesis.lean#L59).
 
 ## `GRH.generalized_riemann_hypothesis`
 
-Open: stated without proof.
+Solved: stated here; a Lean proof is at [https://github.com/leanprover-community/riemann-hypothesis/blob/d27f71347abceb76cd37dc8a5fccbe556ec2be90/src/Main.lean#L54](https://github.com/leanprover-community/riemann-hypothesis/blob/d27f71347abceb76cd37dc8a5fccbe556ec2be90/src/Main.lean#L54).
 
 > The **Generalized Riemann Hypothesis** asserts that all the non-trivial zeros of the
 > Dirichlet $L$-function $L(\chi, s)$ of a primitive Dirichlet character $\chi$ have real part
 > $\frac{1}{2}$.
+>
+> The linked proof states this for the zeros with $0 < \operatorname{Re}(s) < 1$. Our statement
+> follows by combining it with the
+> [bridge theorem](https://github.com/leanprover-community/riemann-hypothesis/blob/d27f71347abceb76cd37dc8a5fccbe556ec2be90/comparator/FormalConjecturesBridge.lean#L152).
 
 ```lean
 theorem generalized_riemann_hypothesis (q : ℕ) [NeZero q] (χ : DirichletCharacter ℂ q)
@@ -69,7 +69,22 @@ theorem generalized_riemann_hypothesis (q : ℕ) [NeZero q] (χ : DirichletChara
     s.re = 1 / 2
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Millennium/RiemannHypothesis.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Millennium/RiemannHypothesis.lean#L83).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Millennium/RiemannHypothesis.lean, line 87](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Millennium/RiemannHypothesis.lean#L87).
+
+## `ERH.extended_riemann_hypothesis`
+
+Open: stated without proof.
+
+> The **Extended Riemann Hypothesis**: for every number field $K$, all zeros of the Dedekind
+> zeta function $\zeta_K$ in the critical strip $0 < \operatorname{Re} s < 1$ have real part
+> $\frac{1}{2}$.
+
+```lean
+theorem extended_riemann_hypothesis (K : Type*) [Field K] [NumberField K] :
+    ExtendedRiemannHypothesis K
+```
+
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Millennium/RiemannHypothesis.lean, line 124](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Millennium/RiemannHypothesis.lean#L124).
 
 ## Depends on
 
@@ -77,5 +92,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Millennium/RiemannHypothesis.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Millennium/RiemannHypothesis.lean)
+- [FormalConjectures/Millennium/RiemannHypothesis.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Millennium/RiemannHypothesis.lean)
 - [The Clay Institute](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf)

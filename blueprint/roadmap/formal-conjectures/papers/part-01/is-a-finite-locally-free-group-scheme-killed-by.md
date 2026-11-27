@@ -32,7 +32,7 @@ statement: formalized
 >   four*](https://leanprover-community.github.io/mathlib4_docs/Counterexamples/GrothendieckPower.html),
 >   the counterexample
 
-*Quoted from [FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 1 open and 4 solved. It also has 5 test statements and 2 API statements, counted here but not shown.
 
@@ -52,7 +52,7 @@ theorem killed_by_rank :
     ¬ ∀ n : ℕ+, IsUniversalKillingExponent.{0, 0} n n
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean, line 157](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean#L157).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean, line 157](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean#L157).
 
 ## `FiniteLocallyFreeGroupSchemeExponent.killed_by_rank.variants.field`
 
@@ -67,7 +67,7 @@ theorem killed_by_rank.variants.field (n : ℕ+) (k : Type*) [Field k] (A : Type
     IsKilledBy k A n
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean, line 166](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean#L166).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean, line 166](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean#L166).
 
 ## `FiniteLocallyFreeGroupSchemeExponent.killed_by_rank.variants.reduced_base`
 
@@ -84,7 +84,7 @@ theorem killed_by_rank.variants.reduced_base (n : ℕ+) (R : Type*) [CommRing R]
     IsKilledBy R A n
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean, line 177](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean#L177).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean, line 177](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean#L177).
 
 ## `FiniteLocallyFreeGroupSchemeExponent.killed_by_rank.variants.commutative`
 
@@ -102,7 +102,7 @@ theorem killed_by_rank.variants.commutative (n : ℕ+) (R : Type*) [CommRing R] 
     IsKilledBy R A n
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean, line 189](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean#L189).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean, line 189](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean#L189).
 
 ## `FiniteLocallyFreeGroupSchemeExponent.optimal_exponent`
 
@@ -123,7 +123,7 @@ theorem optimal_exponent :
       n
 ```
 
-Category `research open`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean, line 209](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean#L209).
+Category `research open`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean, line 209](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean#L209).
 
 ## Depends on
 
@@ -131,6 +131,6 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean)
+- [FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/FiniteLocallyFreeGroupSchemeExponent.lean)
 - [M. Demazure and A. Grothendieck, *Schémas en groupes* (SGA 3), re-edition by P. Gille and
   P. Polo](https://webusers.imj-prg.fr/~patrick.polo/SGA3/)

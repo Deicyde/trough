@@ -13,11 +13,14 @@ statement: formalized
 > * [Wa2011] Wanless, Ian. "Transversals in Latin Squares: A Survey."
 >   Surveys in Combinatorics 2011, R. Chapman, Ed. Cambridge University Press, 2011, pp. 403–437.
 >   https://users.monash.edu.au/~iwanless/papers/transurveyBCC.pdf
+> * [EMM19] Eberhard, Sean, Freddie Manners, and Rudi Mrazović. "Additive triples of bijections, or
+>   the toroidal semiqueens problem." J. Eur. Math. Soc. 21 (2019), no. 2, pp. 441–463.
+>   https://arxiv.org/abs/1510.05987
 > * https://en.wikipedia.org/wiki/Problems_in_Latin_squares
 
-*Quoted from [FormalConjectures/Paper/LatinSquare.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/LatinSquare.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/LatinSquare.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/LatinSquare.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
-The file states 10 research or textbook statements: 7 open, 2 solved and 1 textbook result. It also has 2 test statements, counted here but not shown.
+The file states 10 research or textbook statements: 5 open, 4 solved and 1 textbook result. It also has 2 test statements, counted here but not shown.
 
 ## `LatinSquare.oddOrderLatinSquareTransversal`
 
@@ -31,7 +34,7 @@ theorem oddOrderLatinSquareTransversal :
     ∀ (n : ℕ), Odd n → ∀ (L : LatinSquare n), ∃ σ, IsTransversal L σ
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 60](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/LatinSquare.lean#L60).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 63](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/LatinSquare.lean#L63).
 
 ## `LatinSquare.oddOrderLeq9LatinSquareTransversal`
 
@@ -44,7 +47,7 @@ theorem oddOrderLeq9LatinSquareTransversal :
     ∀ n ≤ 9, Odd n → ∀ (L : LatinSquare n), ∃ σ, IsTransversal L σ
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 68](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/LatinSquare.lean#L68).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/LatinSquare.lean#L71).
 
 ## `LatinSquare.latinSquareOrder11Transversal`
 
@@ -57,7 +60,7 @@ theorem latinSquareOrder11Transversal :
     ∀ (L : LatinSquare 11), ∃ σ, IsTransversal L σ
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 76](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/LatinSquare.lean#L76).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/LatinSquare.lean#L79).
 
 ## `LatinSquare.latinSquareNearTransversal`
 
@@ -71,7 +74,7 @@ theorem latinSquareNearTransversal :
     ∀ (n : ℕ) (L : LatinSquare n), ∃ ρ σ, IsNearTransversal L ρ σ
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/LatinSquare.lean#L91).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 94](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/LatinSquare.lean#L94).
 
 ## `LatinSquare.z_even`
 
@@ -83,11 +86,11 @@ Textbook result, proved here.
 theorem z_even (n : ℕ) : z (2 * (n + 1)) = 0
 ```
 
-Category `textbook`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 118](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/LatinSquare.lean#L118).
+Category `textbook`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 121](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/LatinSquare.lean#L121).
 
 ## `LatinSquare.numTransversalsZn`
 
-Open: stated without proof.
+Solved: stated here without proof.
 
 > Conjecture 6.7 in [Wa2011]:
 > There exist real constants $0 < c_1 < c_2 < 1$ such that
@@ -97,6 +100,11 @@ Open: stated without proof.
 > $$
 >
 > for all odd $n \geq 3$.
+>
+> This is true. By [EMM19, Theorem 1.2], $z_n = (e^{-1/2} + o(1)) \, n!^2 / n^{n-1}$ for odd $n$
+> (the paper's $s_n$ equals $n! \, z_n$), which proves Vardi's conjecture [EMM19, Conjecture 1.1]:
+> the bounds hold for all large odd $n$ with any $0 < c_1 < 1/e < c_2 < 1$. The finitely many
+> remaining odd $n \geq 3$ are covered by $0 < z_n < n!$, after decreasing $c_1$ and increasing $c_2$.
 
 ```lean
 theorem numTransversalsZn :
@@ -105,11 +113,11 @@ theorem numTransversalsZn :
         (z n : ℝ) ∈ Set.Icc (c₁ ^ n * n.factorial) (c₂ ^ n * n.factorial)
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 169](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/LatinSquare.lean#L169).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 177](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/LatinSquare.lean#L177).
 
 ## `LatinSquare.growthRateZn`
 
-Open: stated without proof.
+Solved: stated here without proof.
 
 > Conjecture 6.9 in [Wa2011]:
 >
@@ -117,8 +125,12 @@ Open: stated without proof.
 > \lim_{\substack{n \to \infty \\ n \text{ odd}}} \frac{1}{n} \log(z_n / n!) = -1
 > $$
 >
-> It is not even known if this limit exists. Note that $z_n = 0$ for even $n$ (see `z_even`), so the
-> limit must be restricted to odd $n$; here we parametrise odd $n$ as $2k + 1$.
+> Note that $z_n = 0$ for even $n$ (see `z_even`), so the limit must be restricted to odd $n$; here
+> we parametrise odd $n$ as $2k + 1$.
+>
+> This is true: the limit exists and equals $-1$. It follows from the asymptotic
+> $z_n = (e^{-1/2} + o(1)) \, n!^2 / n^{n-1}$ for odd $n$ of [EMM19, Theorem 1.2] and Stirling's
+> formula; the introduction of [EMM19] notes that the theorem confirms this conjecture.
 
 ```lean
 theorem growthRateZn :
@@ -127,7 +139,7 @@ theorem growthRateZn :
       (nhds (-1))
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 184](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/LatinSquare.lean#L184).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 196](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/LatinSquare.lean#L196).
 
 ## `LatinSquare.maxTransversalsBound`
 
@@ -149,7 +161,7 @@ theorem maxTransversalsBound :
       (T n : ℝ) ∈ Set.Icc ((15 : ℝ) ^ ((n : ℝ) / 5)) (c ^ n * Real.sqrt n * n.factorial)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 202](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/LatinSquare.lean#L202).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 214](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/LatinSquare.lean#L214).
 
 ## `LatinSquare.molsExistenceProblem`
 
@@ -165,7 +177,7 @@ Open: stated without proof.
 theorem molsExistenceProblem : molsExistenceProblem.answer = {n : ℕ | HasCompleteMOLS n}
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 218](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/LatinSquare.lean#L218).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 230](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/LatinSquare.lean#L230).
 
 ## `LatinSquare.molsOrder12`
 
@@ -178,7 +190,7 @@ Open: stated without proof.
 theorem molsOrder12 : HasCompleteMOLS 12
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 226](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/LatinSquare.lean#L226).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/LatinSquare.lean, line 238](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/LatinSquare.lean#L238).
 
 ## Depends on
 
@@ -186,5 +198,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/LatinSquare.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/LatinSquare.lean)
+- [FormalConjectures/Paper/LatinSquare.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/LatinSquare.lean)
 - [https://users.monash.edu.au/~iwanless/papers/transurveyBCC.pdf](https://users.monash.edu.au/~iwanless/papers/transurveyBCC.pdf)

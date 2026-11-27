@@ -12,17 +12,18 @@ statement: formalized
 >  - [Er77c] Erdős, Paul, Problems and results on combinatorial number theory. III. Number theory day (Proc. Conf., Rockefeller Univ.,
 >     New York, 1976) (1977), 43-72.
 
-*Quoted from [FormalConjectures/ErdosProblems/951.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/951.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/951.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/951.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/951](https://www.erdosproblems.com/951).
 
-The file states 2 research or textbook statements: 1 open and 1 solved. It also has 1 API statement, counted here but not shown.
+The file states 2 research or textbook statements: 2 open. It also has 1 API statement, counted here but not shown.
 
 ## `Erdos951.erdos_951`
 
 Open: stated without proof.
 
-> If `1 < a 0 < ...` has property `Erdos951Prop`, is it true that `#{a i ≤ x} ≤ π x`?
+> If `1 < a 0 < ...` has property `Erdos951Prop`, is it true that `#{a i ≤ x} ≤ π x` for all
+> sufficiently large $x$?
 
 ```lean
 theorem erdos_951 :
@@ -30,25 +31,26 @@ theorem erdos_951 :
       ∀ᶠ (x : ℝ) in Filter.atTop, {i : ℕ | a i ≤ x}.ncard ≤ π ⌊x⌋₊
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/951.lean, line 62](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/951.lean#L62).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/951.lean, line 63](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/951.lean#L63).
 
 ## `Erdos951.erdos_951.variants.beurling`
 
-Solved: stated here without proof.
+Open: stated without proof.
 
-> Beurling conjectured that if `1 < a 0 < a 1 < ⋯` has property `Erdos951Prop` and the number
-> of reals in $[1, x]$ of the form $\prod_i a_i^{k_i}$ is $x + o(\log x)$, then `a` must be the
-> sequence of primes. Property `Erdos951Prop` makes distinct exponent vectors give distinct
-> Beurling integers, so counting the set `BeurlingIntegers a` counts the generalised integers.
+> Beurling conjectured that if $1 < a_0 < a_1 < \cdots$ is a sequence of Beurling primes and
+> the number of generalised integers $\prod_i a_i^{k_i} \le x$ (counted with multiplicity) is
+> $x + o(\log x)$, then $a$ must be the sequence of primes. Counting with multiplicity is needed
+> because without it $a_n = n + 2$ is a counterexample (its set of generalised integers is
+> $\mathbb{N}_{\ge 1}$, giving count $\lfloor x \rfloor = x + O(1)$).
 
 ```lean
 theorem erdos_951.variants.beurling :
-    ∀ a : ℕ → ℝ, IsBeurlingPrimes a → Erdos951Prop a →
-    ((fun x => (BeurlingIntegers a ∩ .Iic x).ncard - x) =o[atTop] Real.log) →
-    a = Nat.cast ∘ Nat.nth Nat.Prime
+    ∀ a : ℕ → ℝ, IsBeurlingPrimes a →
+      ((fun x => ({k : ℕ →₀ ℕ | beurlingInteger a k ≤ x}.ncard : ℝ) - x) =o[atTop] Real.log) →
+      a = Nat.cast ∘ Nat.nth Nat.Prime
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/951.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/951.lean#L72).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/951.lean, line 74](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/951.lean#L74).
 
 ## Depends on
 
@@ -56,5 +58,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/951.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/951.lean)
+- [FormalConjectures/ErdosProblems/951.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/951.lean)
 - [erdosproblems.com/951](https://www.erdosproblems.com/951)

@@ -11,7 +11,7 @@ statement: formalized
 >
 > Conjectured by Ringel (1963) and Kotzig; formalized by Rosa (1967).
 
-*Quoted from [FormalConjectures/Wikipedia/GracefulLabeling.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/GracefulLabeling.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/GracefulLabeling.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/GracefulLabeling.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 1 research or textbook statement: 1 open. It also has 2 test statements, counted here but not shown.
 
@@ -39,7 +39,7 @@ theorem graceful_tree_conjecture {V : Type*} [Fintype V] [DecidableEq V]
                   rw [← Int.natAbs_neg, neg_sub]⟩) = Finset.Icc 1 m
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/GracefulLabeling.lean, line 77](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/GracefulLabeling.lean#L77).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/GracefulLabeling.lean, line 77](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/GracefulLabeling.lean#L77).
 
 ## Depends on
 
@@ -47,5 +47,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/GracefulLabeling.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/GracefulLabeling.lean)
+- [FormalConjectures/Wikipedia/GracefulLabeling.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/GracefulLabeling.lean)
 - [Wikipedia/Graceful_labeling](https://en.wikipedia.org/wiki/Graceful_labeling)

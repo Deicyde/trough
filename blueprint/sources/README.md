@@ -43,7 +43,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ## Formal Conjectures
 
-- `data/formal-conjectures/problems.json`: each problem file's title and module docstring, its research and textbook statements with their categories, subjects, proof links, docstrings and Lean statements, and its counts of test and API statements, with the FC100 lists, from [google-deepmind/formal-conjectures at d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0. They are read from the source text, without Lean.
+- `data/formal-conjectures/problems.json`: each problem file's title and module docstring, its research and textbook statements with their categories, subjects, proof links, docstrings and Lean statements, and its counts of test and API statements, with the FC100 lists, from [google-deepmind/formal-conjectures at f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0. They are read from the source text, without Lean.
 
 ## Lean Pool
 
@@ -136,7 +136,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ### Libraries
 
-- [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) at d8d031d4998c: Statements, mostly without proof, of open and solved problems, a file per problem in a folder per source: the Erdős problems, OEIS, Wikipedia, Green's open problems, Written on the Wall II, papers, arXiv, MathOverflow, books and smaller ones.
+- [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) at f606af160664: Statements, mostly without proof, of open and solved problems, a file per problem in a folder per source: the Erdős problems, OEIS, Wikipedia, Green's open problems, Written on the Wall II, papers, arXiv, MathOverflow, books and smaller ones.
 - [Physlib](https://github.com/leanprover-community/physlib) at d6a3586eb331: Physics in Lean (formerly PhysLean, and HepLean before that), merged with Lean-QuantumInfo: three libraries, the reviewed core Physlib (space and time, relativity, particles, QFT, quantum and classical mechanics, electromagnetism, condensed matter, cosmology and more), PhyslibAlpha under a lighter review, and QuantumInfo.
 - [CSLib](https://github.com/leanprover/cslib) at 7c95c37f9524: The Lean Computer Science Library: computability (automata, machines, circuits, formal languages), operational semantics and transition systems, programming languages and calculi, logics, algorithms, cryptography and learning theory, documented in Mathlib's style.
 - [Batteries](https://github.com/leanprover-community/batteries) at e389e88a4288: The "batteries included" extended library for Lean: data structures, tactics, linters, code actions and other tools for Lean programs and proofs, in folders under Batteries/ (Classes, CodeAction, Control, Data, Lean, Linter, Recycling, Tactic, Util). Mathlib requires it.

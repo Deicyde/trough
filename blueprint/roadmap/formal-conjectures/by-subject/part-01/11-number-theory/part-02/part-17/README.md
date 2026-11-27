@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# Square odd-indexed terms in the… to Ratio of product of GCDs to…
+# Smallest number $m$ such that… to Sum of Fermat number and…
 
+- [Smallest number $m$ such that $2^n - m$ and $2^n + m$ are primes](../../../../../oeis/part-08/smallest-number-m-such-that-2-n-m-and-2-n-m-are.md)
+- [Expansion of g.f. $-(1 - 48x^2 - 256x^3) / ((1 - 4x)(1 + 4x)(1 + 4x + 16x^2))$](../../../../../oeis/part-08/expansion-of-g-f-1-48x-2-256x-3-1-4x-1-4x-1-4x-1.md)
+- [Conjectures associated with A113252](../../../../../oeis/part-08/conjectures-associated-with-a113252.md)
 - [Square odd-indexed terms in the recurrence $a(n) = 8a(n-1) - 8a(n-2) + 8a(n-3) - a(n-4)$](../../../../../oeis/part-08/square-odd-indexed-terms-in-the-recurrence-a-n-8.md)
 - [Conjectures associated with A113255](../../../../../oeis/part-08/conjectures-associated-with-a113255.md)
 - [Ascending descending base exponent transform of squares](../../../../../oeis/part-08/ascending-descending-base-exponent-transform-of.md)
@@ -21,6 +24,3 @@ navigation: transparent
 - [Number of primes in $n$-th row of triangle $k^2 - k + p_n$](../../../../../oeis/part-09/number-of-primes-in-n-th-row-of-triangle-k-2-k-p.md)
 - [Least $k$ such that cyclotomic polynomial $\Phi_k(n)$ is prime](../../../../../oeis/part-09/least-k-such-that-cyclotomic-polynomial-phi-k-n.md)
 - [Sum of Fermat number and Mersenne number minus 1: $2^{2^n} + 2^n - 1$](../../../../../oeis/part-09/sum-of-fermat-number-and-mersenne-number-minus-1.md)
-- [Least $k \ge 1$ such that $2 \cdot n^k - 1$ is prime](../../../../../oeis/part-09/least-k-ge-1-such-that-2-cdot-n-k-1-is-prime.md)
-- [Half-Fibonacci sequence](../../../../../oeis/part-09/half-fibonacci-sequence.md)
-- [Ratio of product of GCDs to product of factorials of floor divisions](../../../../../oeis/part-09/ratio-of-product-of-gcds-to-product-of-factorial.md)

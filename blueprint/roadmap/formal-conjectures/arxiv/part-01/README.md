@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Generic and maximal rank of… to An Arithmetic Sum Associated…
+# Generic and maximal rank of… to The circulant Hadamard…
 
 - [Generic and maximal rank of 3-tensors](generic-and-maximal-rank-of-3-tensors.md)
 - [Central Binomial Tail Bounds, Conjecture 6.3](central-binomial-tail-bounds-conjecture-6-3.md)
@@ -18,9 +18,9 @@ navigation: transparent
 - [Barker sequences](barker-sequences.md)
 - [Independent Domination of Regular Graphs, Conjecture 1.6](independent-domination-of-regular-graphs-conject.md)
 - [Digit $2$ in base $3$ representation of $2^n$](digit-2-in-base-3-representation-of-2-n.md)
+- [Multiplicative persistence](multiplicative-persistence.md)
 - [Zariski Cancellation](zariski-cancellation.md)
 - [Spectral sets and weak tiling](spectral-sets-and-weak-tiling.md)
+- [Primes of the form $F_n+L_{n+1}$](primes-of-the-form-f-n-l-n-1.md)
 - [Furstenberg's \`times p, times q\` conjectures](furstenbergs-times-p-times-q-conjectures.md)
 - [The circulant Hadamard conjecture](the-circulant-hadamard-conjecture.md)
-- [Pittel's stable-matching hyperbola threshold conjecture](pittels-stable-matching-hyperbola-threshold-conj.md)
-- [An Arithmetic Sum Associated with the Classical Theta Function](an-arithmetic-sum-associated-with-the-classical.md)

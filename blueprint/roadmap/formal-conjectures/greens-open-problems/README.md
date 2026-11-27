@@ -1,6 +1,6 @@
 # Green's open problems
 
-The 76 problem files in [FormalConjectures/GreensOpenProblems](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems) that state a research or textbook statement, at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), one article each.
+The 76 problem files in [FormalConjectures/GreensOpenProblems](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems) that state a research or textbook statement, at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), one article each.
 
 Their docstrings and Lean statements are quoted from [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at that commit, under its Apache-2.0 license.
 
@@ -92,4 +92,4 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Ben Green's Open Problem 97](part-04/ben-greens-open-problem-97.md)
 - [Ben Green's Open Problem 100](part-04/ben-greens-open-problem-100.md)
 
-No article: 2 files here state no research or textbook statement: [Ben Green's Open Problem 63](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/63.lean), [Ben Green's Open Problem 81](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/81.lean).
+No article: 2 files here state no research or textbook statement: [Ben Green's Open Problem 63](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/63.lean), [Ben Green's Open Problem 81](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/81.lean).

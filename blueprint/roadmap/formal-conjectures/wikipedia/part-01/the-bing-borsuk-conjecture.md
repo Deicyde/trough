@@ -20,7 +20,7 @@ statement: formalized
 >    conjectures." Mathematical Communications 13.2 (2008): 163-184.
 >    https://arxiv.org/abs/0811.0886
 
-*Quoted from [FormalConjectures/Wikipedia/BingBorsuk.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/BingBorsuk.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/BingBorsuk.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/BingBorsuk.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 1 research or textbook statement: 1 open.
 
@@ -38,7 +38,7 @@ theorem bing_borsuk_conjecture : ∀ n : ℕ, ∀ (X : Type) [TopologicalSpace X
     HasLebesgueCoveringDimensionEq X n → Nonempty (ChartedSpace (Fin n → ℝ) X)
 ```
 
-Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Wikipedia/BingBorsuk.lean, line 51](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/BingBorsuk.lean#L51).
+Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Wikipedia/BingBorsuk.lean, line 51](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/BingBorsuk.lean#L51).
 
 ## Depends on
 
@@ -46,5 +46,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/BingBorsuk.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/BingBorsuk.lean)
+- [FormalConjectures/Wikipedia/BingBorsuk.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/BingBorsuk.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Bing%E2%80%93Borsuk_conjecture)

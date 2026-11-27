@@ -34,7 +34,7 @@ statement: formalized
 > - [W. Banaszczyk, *Balancing vectors and Gaussian measures of n-dimensional convex bodies*,
 >   Random Structures & Algorithms **12** (1998), 351–360](https://doi.org/10.1002/(SICI)1098-2418(199807)12:4%3C351::AID-RSA3%3E3.0.CO;2-S)
 
-*Quoted from [FormalConjectures/Wikipedia/BeckFialaConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/BeckFialaConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/BeckFialaConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/BeckFialaConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 1 open and 1 solved. It also has 1 test statement, counted here but not shown.
 
@@ -62,7 +62,7 @@ theorem beck_fiala_theorem (n m t : ℕ) (ht : 1 ≤ t) (S : Fin m → Finset (F
       ∀ i, |∑ j ∈ S i, χ j| ≤ 2 * (t : ℝ) - 1
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/BeckFialaConjecture.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/BeckFialaConjecture.lean#L73).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/BeckFialaConjecture.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/BeckFialaConjecture.lean#L73).
 
 ## `BeckFiala.beck_fiala_conjecture`
 
@@ -83,7 +83,7 @@ theorem beck_fiala_conjecture :
         ∀ i, |∑ j ∈ S i, χ j| ≤ C * Real.sqrt t
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/BeckFialaConjecture.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/BeckFialaConjecture.lean#L88).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/BeckFialaConjecture.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/BeckFialaConjecture.lean#L88).
 
 ## Depends on
 
@@ -91,5 +91,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/BeckFialaConjecture.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/BeckFialaConjecture.lean)
+- [FormalConjectures/Wikipedia/BeckFialaConjecture.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/BeckFialaConjecture.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Beck%E2%80%93Fiala_theorem)

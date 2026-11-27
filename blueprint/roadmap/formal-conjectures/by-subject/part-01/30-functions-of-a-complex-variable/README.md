@@ -1,6 +1,6 @@
 # Functions of a complex variable
 
-The 33 problems with a statement whose `AMS` attribute names 30, Functions of a complex variable, in the Mathematics Subject Classification. A problem with statements in several subjects is listed under each; its article sits in its source folder's part.
+The 35 problems with a statement whose `AMS` attribute names 30, Functions of a complex variable, in the Mathematics Subject Classification. A problem with statements in several subjects is listed under each; its article sits in its source folder's part.
 
 ## [Erdős Problem 114 to Erdős Problem 1043](part-01/README.md)
 
@@ -37,6 +37,8 @@ The 33 problems with a statement whose `AMS` attribute names 30, Functions of a 
 - [Erdős Problem 1150](../../../erdos-problems/1100-1199/part-02/erdos-problem-1150.md)
 - [Bloch and Landau constants](../../../wikipedia/part-01/bloch-and-landau-constants.md)
 - [Brennan's Conjecture](../../../wikipedia/part-02/brennans-conjecture.md)
+- [Density hypothesis for Riemann zeta zeros](../../../wikipedia/part-03/density-hypothesis-for-riemann-zeta-zeros.md)
 - [Goodman's conjecture on coefficients of $p$-valent functions](../../../wikipedia/part-04/goodmans-conjecture-on-coefficients-of-p-valent.md)
-- [Sendov's conjecture](../../../wikipedia/part-08/sendovs-conjecture.md)
+- [Montgomery's GUE pair correlation conjecture for zeta zeros](../../../wikipedia/part-07/montgomerys-gue-pair-correlation-conjecture-for.md)
+- [Sendov's conjecture](../../../wikipedia/part-09/sendovs-conjecture.md)
 - [Ben Green's Open Problem 84](../../../greens-open-problems/part-04/ben-greens-open-problem-84.md)

@@ -20,7 +20,7 @@ statement: formalized
 >   toroidal semiqueens problem*. J. Eur. Math. Soc. 21 (2019), 441--463.
 >   [arXiv:1510.05987](https://arxiv.org/abs/1510.05987)
 
-*Quoted from [FormalConjectures/GreensOpenProblems/97.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/97.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/GreensOpenProblems/97.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/97.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 6 research or textbook statements: 3 open and 3 solved. It also has 3 test statements, counted here but not shown.
 
@@ -42,7 +42,7 @@ theorem green_97 :
     (fun n : ℕ ↦ (numQueens n : ℝ)) ~[atTop] green_97.answer
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/GreensOpenProblems/97.lean, line 122](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/97.lean#L122).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/GreensOpenProblems/97.lean, line 122](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/97.lean#L122).
 
 ## `Green97.green_97.variants.simkin`
 
@@ -66,7 +66,7 @@ theorem green_97.variants.simkin :
         (𝓝 (Real.exp (-α)))
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/GreensOpenProblems/97.lean, line 137](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/97.lean#L137).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/GreensOpenProblems/97.lean, line 137](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/97.lean#L137).
 
 ## `Green97.green_97.variants.alpha`
 
@@ -85,7 +85,7 @@ theorem green_97.variants.alpha :
       (𝓝 (Real.exp (-green_97.variants.alpha.answer)))
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/GreensOpenProblems/97.lean, line 154](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/97.lean#L154).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/GreensOpenProblems/97.lean, line 154](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/97.lean#L154).
 
 ## `Green97.green_97.variants.bowtell_keevash`
 
@@ -101,7 +101,7 @@ theorem green_97.variants.bowtell_keevash :
       (𝓝 (Real.exp (-3)))
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/GreensOpenProblems/97.lean, line 165](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/97.lean#L165).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/GreensOpenProblems/97.lean, line 165](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/97.lean#L165).
 
 ## `Green97.green_97.variants.toroidal`
 
@@ -121,7 +121,7 @@ theorem green_97.variants.toroidal :
       green_97.variants.toroidal.answer
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/GreensOpenProblems/97.lean, line 182](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/97.lean#L182).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/GreensOpenProblems/97.lean, line 182](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/97.lean#L182).
 
 ## `Green97.green_97.variants.eberhard_manners_mrazovic`
 
@@ -143,7 +143,7 @@ theorem green_97.variants.eberhard_manners_mrazovic :
       fun n : ℕ ↦ Real.exp (-(1 / 2)) * ((n ! : ℕ) : ℝ) ^ 3 / (n : ℝ) ^ (n - 1)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/GreensOpenProblems/97.lean, line 208](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/97.lean#L208).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/GreensOpenProblems/97.lean, line 208](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/97.lean#L208).
 
 ## Depends on
 
@@ -151,5 +151,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/GreensOpenProblems/97.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/97.lean)
+- [FormalConjectures/GreensOpenProblems/97.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/GreensOpenProblems/97.lean)
 - [Green, Ben. "100 open problems." (2024).](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.97)

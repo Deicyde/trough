@@ -1,10 +1,10 @@
 # Erdős problems
 
-The 1,021 problem files in [FormalConjectures/ErdosProblems](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems) that state a research or textbook statement, at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), one article each, in sections by hundreds of problem number.
+The 1,024 problem files in [FormalConjectures/ErdosProblems](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems) that state a research or textbook statement, at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), one article each, in sections by hundreds of problem number.
 
 Their docstrings and Lean statements are quoted from [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at that commit, under its Apache-2.0 license.
 
-Formal Conjectures' [README for this folder](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/README.md) asks contributors to keep each docstring as close as possible to the problem's text on [erdosproblems.com](https://www.erdosproblems.com), and to copy it from the site's LaTeX. Each article links its problem's page there.
+Formal Conjectures' [README for this folder](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/README.md) asks contributors to keep each docstring as close as possible to the problem's text on [erdosproblems.com](https://www.erdosproblems.com), and to copy it from the site's LaTeX. Each article links its problem's page there.
 
 - [Problems 1 to 99](1-99/README.md)
 - [Problems 100 to 199](100-199/README.md)

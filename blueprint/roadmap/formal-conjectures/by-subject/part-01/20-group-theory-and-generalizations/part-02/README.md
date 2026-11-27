@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# The $S_3$-conjecture (conjugacy… to Conjecture 21.149
+# Ben Green's Open Problem 100 to Conjecture 21.149
 
+- [Ben Green's Open Problem 100](../../../../greens-open-problems/part-04/ben-greens-open-problem-100.md)
 - [The $S_3$-conjecture (conjugacy classes of distinct sizes)](../../../../papers/part-01/the-s-3-conjecture-conjugacy-classes-of-distinct.md)
 - [Group structure via subgroup counts](../../../../arxiv/part-02/group-structure-via-subgroup-counts.md)
 - [Fernandes' conjecture on the 2-generation of even direct product permutation groups](../../../../arxiv/part-02/fernandes-conjecture-on-the-2-generation-of-even.md)

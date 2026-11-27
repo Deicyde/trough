@@ -7,13 +7,16 @@ statement: formalized
 
 # Erdős Problem 349
 
-> *Reference:* [erdosproblems.com/349](https://www.erdosproblems.com/349)
+> *References:*
+> - [erdosproblems.com/349](https://www.erdosproblems.com/349)
+> - [Ge26] Geneson, J., *Deletion thresholds and exponential examples for complete sequences*.
+>   [arXiv:2609.25107](https://arxiv.org/abs/2609.25107) (2026).
 
-*Quoted from [FormalConjectures/ErdosProblems/349.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/349.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/349.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/349.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/349](https://www.erdosproblems.com/349).
 
-The file states 13 research or textbook statements: 4 open, 8 solved and 1 textbook result.
+The file states 13 research or textbook statements: 3 open, 9 solved and 1 textbook result.
 
 ## `Erdos349.erdos_349`
 
@@ -27,21 +30,24 @@ theorem erdos_349 :
     {(t, α) | 0 < t ∧ 0 < α ∧ IsGoodPair t α} = erdos_349.answer
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 46](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/349.lean#L46).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 49](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/349.lean#L49).
 
 ## `Erdos349.complete_for_alpha_in_Ioo_one_to_goldenRatio`
 
-Open: stated without proof.
+Solved: stated here without proof.
 
-> It seems likely that the sequence is complete for all
-> for all $t>0$ and all $1 < \alpha < \frac{1+\sqrt{5}}{2}$.
+> Graham suggested that the sequence is complete for all $t>0$ and all
+> $1 < \alpha < \frac{1+\sqrt{5}}{2}$. Geneson [Ge26, Theorem 9] disproved this: for the Salem number
+> $\alpha$ with minimal polynomial $x^{18} - x^{12} - x^{11} - x^{10} - x^9 - x^8 - x^7 - x^6 + 1$,
+> which satisfies $6/5 < \alpha < 13/10$, there are arbitrarily large $t > 0$ such that
+> $\lfloor t\alpha^n\rfloor$ is even for every $n \geq 0$, so no odd integer is a sum of terms.
 
 ```lean
-theorem complete_for_alpha_in_Ioo_one_to_goldenRatio (t α : ℝ) (ht : 0 < t)
-    (hα : α ∈ Set.Ioo 1 ((1 + √5) / 2)) : IsGoodPair t α
+theorem complete_for_alpha_in_Ioo_one_to_goldenRatio :
+    ¬ ∀ t α : ℝ, 0 < t → α ∈ Set.Ioo 1 ((1 + √5) / 2) → IsGoodPair t α
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 55](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/349.lean#L55).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/349.lean#L61).
 
 ## `Erdos349.exists_t_for_k_disjoint_segments`
 
@@ -58,7 +64,7 @@ theorem exists_t_for_k_disjoint_segments (k : ℕ) :
       k ≤ (connectedComponentIn S '' S).encard
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 65](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/349.lean#L65).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/349.lean#L71).
 
 ## `Erdos349.erdos_349.variants.floor_3_halves_odd`
 
@@ -72,7 +78,7 @@ theorem erdos_349.variants.floor_3_halves_odd :
     {n | Odd ⌊(3/2 : ℝ) ^ n⌋}.Infinite
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 76](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/349.lean#L76).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 82](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/349.lean#L82).
 
 ## `Erdos349.erdos_349.variants.floor_3_halves_even`
 
@@ -85,7 +91,7 @@ theorem erdos_349.variants.floor_3_halves_even :
     {n | Even ⌊(3/2 : ℝ) ^ n⌋}.Infinite
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 84](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/349.lean#L84).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 90](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/349.lean#L90).
 
 ## `Erdos349.alpha_gt_two_not_isGoodPair`
 
@@ -102,7 +108,7 @@ Solved: stated here; a Lean proof is at [https://github.com/cepadugato/formal-co
 theorem alpha_gt_two_not_isGoodPair (t α : ℝ) (ht : 0 < t) (hα : 2 < α) : ¬ IsGoodPair t α
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/349.lean#L98).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 104](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/349.lean#L104).
 
 ## `Erdos349.alpha_le_one_not_isGoodPair`
 
@@ -119,7 +125,7 @@ theorem alpha_le_one_not_isGoodPair (t α : ℝ) (ht : 0 < t) (hα0 : 0 < α) (h
     ¬ IsGoodPair t α
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 110](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/349.lean#L110).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 116](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/349.lean#L116).
 
 ## `Erdos349.exists_finsetSum_two_pow`
 
@@ -135,7 +141,7 @@ theorem exists_finsetSum_two_pow (k : ℕ) :
     ∃ E : Finset ℕ, k = ∑ i ∈ E, 2 ^ i
 ```
 
-Category `textbook`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 121](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/349.lean#L121).
+Category `textbook`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 127](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/349.lean#L127).
 
 ## `Erdos349.one_two_isGoodPair`
 
@@ -148,7 +154,7 @@ Solved: stated here; a Lean proof is at [https://github.com/cepadugato/formal-co
 theorem one_two_isGoodPair : IsGoodPair 1 2
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 131](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/349.lean#L131).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 137](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/349.lean#L137).
 
 ## `Erdos349.dyadic_two_isGoodPair`
 
@@ -163,7 +169,7 @@ Solved: stated here; a Lean proof is at [https://github.com/cepadugato/formal-co
 theorem dyadic_two_isGoodPair (k : ℕ) : IsGoodPair (1 / 2 ^ k) 2
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 142](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/349.lean#L142).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 148](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/349.lean#L148).
 
 ## `Erdos349.int_coeff_ge_two_not_isGoodPair`
 
@@ -180,7 +186,7 @@ theorem int_coeff_ge_two_not_isGoodPair (t : ℤ) (ht : 2 ≤ t) (α : ℤ) :
     ¬ IsGoodPair (t : ℝ) (α : ℝ)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 154](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/349.lean#L154).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 160](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/349.lean#L160).
 
 ## `Erdos349.integer_isGoodPair_iff`
 
@@ -197,7 +203,7 @@ theorem integer_isGoodPair_iff (t α : ℤ) (ht : 1 ≤ t) (hα : 1 ≤ α) :
     IsGoodPair (t : ℝ) (α : ℝ) ↔ t = 1 ∧ α = 2
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 167](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/349.lean#L167).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 173](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/349.lean#L173).
 
 ## `Erdos349.three_halves_two_not_isGoodPair`
 
@@ -216,7 +222,7 @@ Solved: stated here; a Lean proof is at [https://github.com/cepadugato/formal-co
 theorem three_halves_two_not_isGoodPair : ¬ IsGoodPair (3 / 2) 2
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 183](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/349.lean#L183).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/349.lean, line 189](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/349.lean#L189).
 
 ## Depends on
 
@@ -224,5 +230,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/349.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/349.lean)
+- [FormalConjectures/ErdosProblems/349.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/349.lean)
 - [erdosproblems.com/349](https://www.erdosproblems.com/349)

@@ -2,8 +2,17 @@
 navigation: transparent
 ---
 
-# Gap conjecture to Invariant Subspace Problem
+# Falconer's distance set… to Hadamard's conjecture
 
+- [Falconer's distance set conjecture](falconers-distance-set-conjecture.md)
+- [Feit-Thompson conjecture on primes](feit-thompson-conjecture-on-primes.md)
+- [Open questions about Fermat numbers](open-questions-about-fermat-numbers.md)
+- [Fermat-Catalan conjecture](fermat-catalan-conjecture.md)
+- [Fibonacci Primes](fibonacci-primes.md)
+- [Firoozbakht's conjecture](firoozbakhts-conjecture.md)
+- [Convergence of the Flint Hills and Cookson Hills series](convergence-of-the-flint-hills-and-cookson-hills.md)
+- [Fortune's Conjecture](fortunes-conjecture.md)
+- [Fuglede's conjecture in dimensions 1 and 2](fugledes-conjecture-in-dimensions-1-and-2.md)
 - [Gap conjecture](gap-conjecture.md)
 - [Gauss circle problem](gauss-circle-problem.md)
 - [Gilbreath's conjecture](gilbreaths-conjecture.md)
@@ -15,12 +24,3 @@ navigation: transparent
 - [Gromov's theorem on groups of polynomial growth](gromovs-theorem-on-groups-of-polynomial-growth.md)
 - [The Gyárfás–Sumner conjecture](the-gyarfas-sumner-conjecture.md)
 - [Hadamard's conjecture](hadamards-conjecture.md)
-- [Hajós' conjecture (1961) — disproved](hajos-conjecture-1961-disproved.md)
-- [Hall's conjecture](halls-conjecture.md)
-- [First Hardy–Littlewood conjecture](first-hardy-littlewood-conjecture.md)
-- [The Hasse--Weil conjecture for elliptic curves](the-hasse-weil-conjecture-for-elliptic-curves.md)
-- [Hedetniemi's conjecture (1966)](hedetniemis-conjecture-1966.md)
-- [Idoneal numbers completeness conjecture](idoneal-numbers-completeness-conjecture.md)
-- [Inscribed square problem](inscribed-square-problem.md)
-- [Polynomial-time computability of factoring](polynomial-time-computability-of-factoring.md)
-- [Invariant Subspace Problem](invariant-subspace-problem.md)

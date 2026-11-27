@@ -41,7 +41,7 @@ statement: formalized
 > See also [erdosproblems.com/1130](https://www.erdosproblems.com/1130), which uses the
 > definitions of this file.
 
-*Quoted from [FormalConjectures/ErdosProblems/1129.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1129.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/1129.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1129.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/1129](https://www.erdosproblems.com/1129).
 
@@ -81,7 +81,7 @@ theorem erdos_1129 (n : ℕ) :
     {x : Fin n → ℝ | IsMinimiser x} = erdos_1129.answer n
 ```
 
-Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1129.lean, line 155](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1129.lean#L155).
+Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1129.lean, line 155](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1129.lean#L155).
 
 ## `Erdos1129.erdos_1129.variants.canonical`
 
@@ -99,7 +99,7 @@ theorem erdos_1129.variants.canonical (n : ℕ) :
     {x : Fin n → ℝ | IsCanonical x ∧ IsMinimiser x} = {x | IsCanonical x ∧ Equioscillates x}
 ```
 
-Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1129.lean, line 168](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1129.lean#L168).
+Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1129.lean, line 168](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1129.lean#L168).
 
 ## `Erdos1129.erdos_1129.variants.unique`
 
@@ -116,7 +116,7 @@ theorem erdos_1129.variants.unique (n : ℕ) (hn : 2 ≤ n) :
     ∃! x : Fin n → ℝ, IsCanonical x ∧ Equioscillates x
 ```
 
-Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1129.lean, line 180](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1129.lean#L180).
+Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1129.lean, line 180](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1129.lean#L180).
 
 ## `Erdos1129.erdos_1129.variants.free_nodes_not_unique`
 
@@ -139,7 +139,7 @@ theorem erdos_1129.variants.free_nodes_not_unique (n : ℕ) (hn : 3 ≤ n) :
     ¬ {x : Fin n → ℝ | IsMinimiser x}.Countable
 ```
 
-Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1129.lean, line 198](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1129.lean#L198).
+Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1129.lean, line 198](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1129.lean#L198).
 
 ## `Erdos1129.erdos_1129.variants.three_nodes`
 
@@ -154,7 +154,7 @@ theorem erdos_1129.variants.three_nodes :
       lebesgueConstant (![(-1 : ℝ), 0, 1] : Fin 3 → ℝ) = 5 / 4
 ```
 
-Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1129.lean, line 207](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1129.lean#L207).
+Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1129.lean, line 207](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1129.lean#L207).
 
 ## `Erdos1129.erdos_1129.variants.four_nodes`
 
@@ -172,7 +172,7 @@ theorem erdos_1129.variants.four_nodes (t : ℝ) (ht : 0 < t)
       lebesgueConstant (![(-1 : ℝ), -t, t, 1] : Fin 4 → ℝ) = (1 + t ^ 2) / (1 - t ^ 2)
 ```
 
-Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1129.lean, line 218](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1129.lean#L218).
+Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1129.lean, line 218](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1129.lean#L218).
 
 ## `Erdos1129.erdos_1129.variants.erdos_lower_bound`
 
@@ -191,7 +191,7 @@ theorem erdos_1129.variants.erdos_lower_bound :
       2 / Real.pi * Real.log n - C < lebesgueConstant x
 ```
 
-Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1129.lean, line 233](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1129.lean#L233).
+Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1129.lean, line 233](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1129.lean#L233).
 
 ## `Erdos1129.erdos_1129.variants.chebyshev_upper_bound`
 
@@ -207,7 +207,7 @@ theorem erdos_1129.variants.chebyshev_upper_bound :
       lebesgueConstant x < 2 / Real.pi * Real.log n + C
 ```
 
-Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1129.lean, line 244](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1129.lean#L244).
+Category `research solved`; AMS [41 Approximations and expansions](../../../by-subject/part-02/41-approximations-and-expansions/README.md). Declared in [FormalConjectures/ErdosProblems/1129.lean, line 244](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1129.lean#L244).
 
 ## Depends on
 
@@ -215,5 +215,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/1129.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1129.lean)
+- [FormalConjectures/ErdosProblems/1129.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1129.lean)
 - [erdosproblems.com/1129](https://www.erdosproblems.com/1129)

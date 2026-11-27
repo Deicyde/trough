@@ -15,11 +15,11 @@ statement: formalized
 > - [ChMa25] K. Chen and J. Ma, *A problem of Erdős and Hajnal on paths with equal-degree
 >   endpoints*. arXiv:2503.19569 (2025).
 
-*Quoted from [FormalConjectures/ErdosProblems/816.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/816.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/816.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/816.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/816](https://www.erdosproblems.com/816).
 
-The file states 3 research or textbook statements: 3 solved.
+The file states 3 research or textbook statements: 3 solved. It also has 2 API statements, counted here but not shown.
 
 ## `Erdos816.erdos_816`
 
@@ -42,7 +42,7 @@ theorem erdos_816 : ∀ n : ℕ, 2 ≤ n → ∀ G : SimpleGraph (Fin (2 * n + 1
     G.edgeFinset.card = n ^ 2 + n + 1 → HasEqualDegreePathThree G
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/816.lean, line 62](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/816.lean#L62).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/816.lean, line 62](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/816.lean#L62).
 
 ## `Erdos816.erdos_816.variants.chen_ma`
 
@@ -59,11 +59,11 @@ theorem erdos_816.variants.chen_ma : ∀ n : ℕ, 600 ≤ n →
         HasEqualDegreePathThree G
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/816.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/816.lean#L73).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/816.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/816.lean#L73).
 
 ## `Erdos816.erdos_816.variants.complete_bipartite`
 
-Solved: stated here without proof.
+Proved here.
 
 > The example of $K_{n,n+1}$ shows that this fails if we only have $n^2+n$ edges.
 
@@ -73,7 +73,7 @@ theorem erdos_816.variants.complete_bipartite : ∀ n : ℕ,
       ¬ HasEqualDegreePathThree (completeBipartiteGraph (Fin n) (Fin (n + 1)))
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/816.lean, line 82](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/816.lean#L82).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/816.lean, line 108](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/816.lean#L108).
 
 ## Depends on
 
@@ -81,5 +81,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/816.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/816.lean)
+- [FormalConjectures/ErdosProblems/816.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/816.lean)
 - [erdosproblems.com/816](https://www.erdosproblems.com/816)

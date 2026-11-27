@@ -33,7 +33,7 @@ statement: formalized
 > - [S. R. Karingula and S. Lovett, *An elementary proof of the Komlós conjecture*,
 >   arXiv:2609.20979](https://arxiv.org/abs/2609.20979)
 
-*Quoted from [FormalConjectures/Wikipedia/KomlosConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/KomlosConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/KomlosConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/KomlosConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 2 solved. It also has 1 test statement, counted here but not shown.
 
@@ -59,7 +59,7 @@ theorem komlos_conjecture :
         ∀ j, |∑ i, ε i * v i j| ≤ K
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/KomlosConjecture.lean, line 67](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/KomlosConjecture.lean#L67).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/KomlosConjecture.lean, line 67](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/KomlosConjecture.lean#L67).
 
 ## `KomlosConjecture.komlos_conjecture.variants.banaszczyk`
 
@@ -86,7 +86,7 @@ theorem komlos_conjecture.variants.banaszczyk :
         ∀ j, |∑ i, ε i * v i j| ≤ C * Real.sqrt (Real.log (n + 2))
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/KomlosConjecture.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/KomlosConjecture.lean#L91).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/KomlosConjecture.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/KomlosConjecture.lean#L91).
 
 ## Depends on
 
@@ -94,5 +94,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/KomlosConjecture.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/KomlosConjecture.lean)
+- [FormalConjectures/Wikipedia/KomlosConjecture.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/KomlosConjecture.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Discrepancy_theory#Major_open_problems)

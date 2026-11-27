@@ -71,13 +71,14 @@ The Erdős problems numbered 1100 to 1199 that Formal Conjectures states, one ar
 - [Erdős Problem 1176](part-03/erdos-problem-1176.md)
 - [Erdős Problem 1177](part-03/erdos-problem-1177.md)
 
-## [Erdős Problem 1178 to Erdős Problem 1199](part-04/README.md)
+## [Erdős Problem 1178 to Erdős Problem 1198](part-04/README.md)
 
 - [Erdős Problem 1178](part-04/erdos-problem-1178.md)
 - [Erdős Problem 1179](part-04/erdos-problem-1179.md)
 - [Erdős Problem 1180](part-04/erdos-problem-1180.md)
 - [Erdős Problem 1182](part-04/erdos-problem-1182.md)
 - [Erdős Problem 1183](part-04/erdos-problem-1183.md)
+- [Erdős Problem 1184](part-04/erdos-problem-1184.md)
 - [Erdős Problem 1185](part-04/erdos-problem-1185.md)
 - [Erdős Problem 1186](part-04/erdos-problem-1186.md)
 - [Erdős Problem 1187](part-04/erdos-problem-1187.md)
@@ -92,4 +93,7 @@ The Erdős problems numbered 1100 to 1199 that Formal Conjectures states, one ar
 - [Erdős Problem 1196](part-04/erdos-problem-1196.md)
 - [Erdős Problem 1197](part-04/erdos-problem-1197.md)
 - [Erdős Problem 1198](part-04/erdos-problem-1198.md)
-- [Erdős Problem 1199](part-04/erdos-problem-1199.md)
+
+## [Erdős Problem 1199](part-05/README.md)
+
+- [Erdős Problem 1199](part-05/erdos-problem-1199.md)

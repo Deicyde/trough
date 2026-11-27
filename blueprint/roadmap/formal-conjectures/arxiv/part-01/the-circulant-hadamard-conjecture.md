@@ -16,7 +16,7 @@ statement: formalized
 > * [OAI26a] OpenAI, *The circulant Hadamard conjecture*. OpenAI Math Release preprint (2026).
 >   https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-circulant-Hadamard-conjecture-September-23-2026/paper.pdf
 
-*Quoted from [FormalConjectures/Arxiv/2402.13202/CirculantHadamard.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2402.13202/CirculantHadamard.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2402.13202/CirculantHadamard.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/2402.13202/CirculantHadamard.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 1 research or textbook statement: 1 solved. It also has 1 test statement, counted here but not shown.
 
@@ -35,7 +35,7 @@ theorem circulant_hadamard_conjecture {n : ℕ} (v : Fin n → ℝ)
     (hv : Hadamard.IsHadamard' (Matrix.circulant v)) : n ≤ 4
 ```
 
-Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/2402.13202/CirculantHadamard.lean, line 65](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2402.13202/CirculantHadamard.lean#L65).
+Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/2402.13202/CirculantHadamard.lean, line 65](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/2402.13202/CirculantHadamard.lean#L65).
 
 ## Depends on
 
@@ -43,5 +43,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2402.13202/CirculantHadamard.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2402.13202/CirculantHadamard.lean)
+- [FormalConjectures/Arxiv/2402.13202/CirculantHadamard.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/2402.13202/CirculantHadamard.lean)
 - [A note on approximate Hadamard matrices](https://arxiv.org/abs/2402.13202)

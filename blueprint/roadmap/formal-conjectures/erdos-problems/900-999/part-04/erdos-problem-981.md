@@ -14,7 +14,7 @@ statement: formalized
 > - [TaZh25] [arxiv/2512.24631](https://arxiv.org/abs/2512.24631)
 >   **Average first-passage times for character sums** by *Quanyu Tang and Hao Zhang*
 
-*Quoted from [FormalConjectures/ErdosProblems/981.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/981.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/981.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/981.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/981](https://www.erdosproblems.com/981).
 
@@ -38,7 +38,7 @@ theorem erdos_981 (ε : ℝ) (hε : 0 < ε) :
     ∃ c > (0 : ℝ), Tendsto (fun x ↦ (∑ p : Nat.primesBelow ⌈x⌉₊, f ε p) * log x / x) atTop (𝓝 c)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/981.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/981.lean#L71).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/981.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/981.lean#L71).
 
 ## `Erdos981.erdos_981.variants.first_time`
 
@@ -57,7 +57,7 @@ theorem erdos_981.variants.first_time (ε : ℝ) (hε : 0 < ε) :
     ∃ c > (0 : ℝ), Tendsto (fun x ↦ (∑ p : Nat.primesBelow ⌈x⌉₊, f' ε p) * log x / x) atTop (𝓝 c)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/981.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/981.lean#L83).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/981.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/981.lean#L83).
 
 ## Depends on
 
@@ -65,5 +65,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/981.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/981.lean)
+- [FormalConjectures/ErdosProblems/981.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/981.lean)
 - [erdosproblems.com/981](https://www.erdosproblems.com/981)

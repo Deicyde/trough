@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Erdős Problem 747 to Erdős Problem 771
+# Erdős Problem 747 to Erdős Problem 770
 
 - [Erdős Problem 747](erdos-problem-747.md)
 - [Erdős Problem 748](erdos-problem-748.md)
@@ -21,6 +21,6 @@ navigation: transparent
 - [Erdős Problem 765](erdos-problem-765.md)
 - [Erdős Problem 766](erdos-problem-766.md)
 - [Erdős Problem 767](erdos-problem-767.md)
+- [Erdős Problem 768](erdos-problem-768.md)
 - [Erdős Problem 769](erdos-problem-769.md)
 - [Erdős Problem 770](erdos-problem-770.md)
-- [Erdős Problem 771](erdos-problem-771.md)

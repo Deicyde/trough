@@ -12,6 +12,8 @@ statement: formalized
 >   simple and on the critical line*, August 2026.
 >   [pdf](https://www-cdn.anthropic.com/95c246936988e43127bc6b2ceb7077c1dad2d68e.pdf),
 >   [Lean formalisation](https://github.com/anthropics/zeta-23-lean).
+> - [BH13] Bui, H. M. and Heath-Brown, D. R., *On simple zeros of the Riemann zeta-function*, 2013.
+>   [arXiv:1302.5018](https://arxiv.org/abs/1302.5018)
 > - [Wikipedia](https://en.wikipedia.org/wiki/Riemann_hypothesis#Zeros_on_the_critical_line)
 >
 > For a nontrivial zero `ρ = β + iγ` of `ζ` (or of a Dirichlet `L`-function) with multiplicity
@@ -25,7 +27,7 @@ statement: formalized
 > `(3 - c_MT⁻¹) / 2 = 0.8362…` with the Montgomery–Taylor window, where
 > `c_MT⁻¹ = 1/2 + cot(1/√2)/√2`; [Cl26, Theorem B] is the same for `L(s, χ)`, `χ` primitive.
 
-*Quoted from [FormalConjectures/Paper/RiemannZetaZeros.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/RiemannZetaZeros.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 16 research or textbook statements: 8 open and 8 solved.
 
@@ -41,7 +43,7 @@ theorem simple_prop_two_thirds : ∃ o : ℝ → ℝ, o =o[atTop] (1 : ℝ → �
     ∀ T > 0, (2 / 3 - o T) * N riemannZeta T (2 * T) ≤ Ns riemannZeta T (2 * T)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 82](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean#L82).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 84](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean#L84).
 
 ## `riemannZeta.distinct_prop_five_sixths`
 
@@ -55,7 +57,7 @@ theorem distinct_prop_five_sixths : ∃ o : ℝ → ℝ, o =o[atTop] (1 : ℝ �
     ∀ T > 0, (5 / 6 - o T) * N riemannZeta T (2 * T) ≤ Nd riemannZeta T (2 * T)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean#L91).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 93](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean#L93).
 
 ## `riemannZeta.simple_prop_montgomeryTaylor`
 
@@ -70,7 +72,7 @@ theorem simple_prop_montgomeryTaylor : ∃ o : ℝ → ℝ, o =o[atTop] (1 : ℝ
       Ns riemannZeta T (2 * T)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean#L100).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 102](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean#L102).
 
 ## `riemannZeta.distinct_prop_montgomeryTaylor`
 
@@ -85,7 +87,7 @@ theorem distinct_prop_montgomeryTaylor : ∃ o : ℝ → ℝ, o =o[atTop] (1 : �
       Nd riemannZeta T (2 * T)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 110](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean#L110).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 112](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean#L112).
 
 ## `riemannZeta.simple_prop_lt`
 
@@ -94,6 +96,10 @@ Open: stated without proof.
 > Is the proportion of simple zeros of `ζ` on the critical line unconditionally larger than
 > the Montgomery–Taylor bound `2 - c_MT⁻¹ = 0.6725…`? [Cl26, §7.2] puts the ceiling of its
 > method at about `0.682`.
+>
+> Assuming the Riemann Hypothesis, Bui and Heath-Brown [BH13] proved that the proportion of simple
+> zeros is at least `19/27 = 0.7037…`. They count the zeros with `0 < γ < T`, and the statement here
+> counts those with `T < γ ≤ 2T`.
 
 ```lean
 theorem simple_prop_lt : ∃ c > 2 - montgomeryTaylorConst⁻¹, ∃ o : ℝ → ℝ,
@@ -101,7 +107,7 @@ theorem simple_prop_lt : ∃ c > 2 - montgomeryTaylorConst⁻¹, ∃ o : ℝ →
       ∀ T > 0, (c - o T) * N riemannZeta T (2 * T) ≤ Ns riemannZeta T (2 * T)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 119](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean#L119).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 125](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean#L125).
 
 ## `riemannZeta.simple_prop_one_hundred`
 
@@ -114,7 +120,7 @@ theorem simple_prop_one_hundred : ∃ o : ℝ → ℝ, o =o[atTop] (1 : ℝ → 
     ∀ T > 0, (1 - o T) * N riemannZeta T (2 * T) ≤ Ns riemannZeta T (2 * T)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 126](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean#L126).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 132](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean#L132).
 
 ## `riemannZeta.distinct_prop_lt`
 
@@ -122,6 +128,10 @@ Open: stated without proof.
 
 > Is the proportion of distinct zeros of `ζ` unconditionally larger than the Montgomery–Taylor
 > bound `(3 - c_MT⁻¹) / 2 = 0.8362…`?
+>
+> Assuming the Riemann Hypothesis, Bui and Heath-Brown [BH13] proved that the proportion of distinct
+> zeros is at least `0.84665`. They count the zeros with `0 < γ < T`, and the statement here counts
+> those with `T < γ ≤ 2T`.
 
 ```lean
 theorem distinct_prop_lt : ∃ c > (3 - montgomeryTaylorConst⁻¹) / 2, ∃ o : ℝ → ℝ,
@@ -129,7 +139,7 @@ theorem distinct_prop_lt : ∃ c > (3 - montgomeryTaylorConst⁻¹) / 2, ∃ o :
     ∀ T > 0, (c - o T) * N riemannZeta T (2 * T) ≤ Nd riemannZeta T (2 * T)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 133](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean#L133).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 143](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean#L143).
 
 ## `riemannZeta.distinct_prop_one_hundred`
 
@@ -142,7 +152,7 @@ theorem distinct_prop_one_hundred : ∃ o : ℝ → ℝ, o =o[atTop] (1 : ℝ �
     ∀ T > 0, (1 - o T) * N riemannZeta T (2 * T) ≤ Nd riemannZeta T (2 * T)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 140](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean#L140).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 150](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean#L150).
 
 ## `DirichletCharacter.simple_prop_two_thirds`
 
@@ -156,7 +166,7 @@ theorem simple_prop_two_thirds (hχ : χ.IsPrimitive) : ∃ o : ℝ → ℝ, o =
     ∀ T > 0, (2 / 3 - o T) * N (LFunction χ) T (2 * T) ≤ Ns (LFunction χ) T (2 * T)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 155](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean#L155).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 165](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean#L165).
 
 ## `DirichletCharacter.distinct_prop_five_sixths`
 
@@ -170,7 +180,7 @@ theorem distinct_prop_five_sixths (hχ : χ.IsPrimitive) : ∃ o : ℝ → ℝ, 
     ∀ T > 0, (5 / 6 - o T) * N (LFunction χ) T (2 * T) ≤ Nd (LFunction χ) T (2 * T)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 164](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean#L164).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 174](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean#L174).
 
 ## `DirichletCharacter.simple_prop_montgomeryTaylor`
 
@@ -186,7 +196,7 @@ theorem simple_prop_montgomeryTaylor (hχ : χ.IsPrimitive) :
       Ns (LFunction χ) T (2 * T)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 173](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean#L173).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 183](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean#L183).
 
 ## `DirichletCharacter.distinct_prop_montgomeryTaylor`
 
@@ -202,7 +212,7 @@ theorem distinct_prop_montgomeryTaylor (hχ : χ.IsPrimitive) :
       Nd (LFunction χ) T (2 * T)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 184](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean#L184).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 194](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean#L194).
 
 ## `DirichletCharacter.simple_prop_lt`
 
@@ -217,7 +227,7 @@ theorem simple_prop_lt (hχ : χ.IsPrimitive) : ∃ c > 2 - montgomeryTaylorCons
     ∀ T > 0, (c - o T) * N (LFunction χ) T (2 * T) ≤ Ns (LFunction χ) T (2 * T)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 193](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean#L193).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 203](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean#L203).
 
 ## `DirichletCharacter.simple_prop_one_hundred`
 
@@ -231,7 +241,7 @@ theorem simple_prop_one_hundred (hχ : χ.IsPrimitive) : ∃ o : ℝ → ℝ, o 
     ∀ T > 0, (1 - o T) * N (LFunction χ) T (2 * T) ≤ Ns (LFunction χ) T (2 * T)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 201](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean#L201).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 211](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean#L211).
 
 ## `DirichletCharacter.distinct_prop_lt`
 
@@ -246,7 +256,7 @@ theorem distinct_prop_lt (hχ : χ.IsPrimitive) : ∃ c > (3 - montgomeryTaylorC
       ∀ T > 0, (c - o T) * N (LFunction χ) T (2 * T) ≤ Nd (LFunction χ) T (2 * T)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 208](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean#L208).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 218](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean#L218).
 
 ## `DirichletCharacter.distinct_prop_one_hundred`
 
@@ -259,7 +269,7 @@ theorem distinct_prop_one_hundred (hχ : χ.IsPrimitive) : ∃ o : ℝ → ℝ, 
     ∀ T > 0, (1 - o T) * N (LFunction χ) T (2 * T) ≤ Nd (LFunction χ) T (2 * T)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 215](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean#L215).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaZeros.lean, line 225](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean#L225).
 
 ## Depends on
 
@@ -267,5 +277,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/RiemannZetaZeros.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaZeros.lean)
+- [FormalConjectures/Paper/RiemannZetaZeros.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/RiemannZetaZeros.lean)
 - [pdf](https://www-cdn.anthropic.com/95c246936988e43127bc6b2ceb7077c1dad2d68e.pdf)

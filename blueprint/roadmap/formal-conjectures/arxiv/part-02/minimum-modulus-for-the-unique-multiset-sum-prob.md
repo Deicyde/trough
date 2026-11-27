@@ -17,7 +17,7 @@ statement: formalized
 > The paper's Main Theorem fixes the super-increasing set $\{2^k - 1\}$ and pins the least modulus
 > at which *it* is valid. Conjecture 1 says no other set of $n$ residues does better, and is open.
 
-*Quoted from [FormalConjectures/Arxiv/2607.08366/MinModulus.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2607.08366/MinModulus.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2607.08366/MinModulus.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/2607.08366/MinModulus.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 1 open and 1 solved. It also has 5 API statements, counted here but not shown.
 
@@ -40,7 +40,7 @@ theorem min_modulus :
       ∀ A : Finset (ZMod N), #A = n → ¬ IsValidMod A
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.08366/MinModulus.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2607.08366/MinModulus.lean#L85).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.08366/MinModulus.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/2607.08366/MinModulus.lean#L85).
 
 ## `Arxiv.«2607.08366».exists_isValidMod_minModulus`
 
@@ -55,7 +55,7 @@ theorem exists_isValidMod_minModulus (n : ℕ) (hn : 2 ≤ n) :
     ∃ A : Finset (ZMod (minModulus n)), #A = n ∧ IsValidMod A
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.08366/MinModulus.lean, line 99](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2607.08366/MinModulus.lean#L99).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.08366/MinModulus.lean, line 99](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/2607.08366/MinModulus.lean#L99).
 
 ## Depends on
 
@@ -63,5 +63,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2607.08366/MinModulus.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2607.08366/MinModulus.lean)
+- [FormalConjectures/Arxiv/2607.08366/MinModulus.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/2607.08366/MinModulus.lean)
 - [arxiv/2607.08366](https://arxiv.org/abs/2607.08366)

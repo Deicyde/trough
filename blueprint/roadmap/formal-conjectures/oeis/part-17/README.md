@@ -2,8 +2,14 @@
 navigation: transparent
 ---
 
-# Characterization of Carmichael… to Integrality of the factorial…
+# Sum of two squares and two… to A generating function with…
 
+- [Sum of two squares and two central-binomial-type terms](sum-of-two-squares-and-two-central-binomial-type.md)
+- [Sum of two squares, a power of 3, and a power of 5](sum-of-two-squares-a-power-of-3-and-a-power-of-5.md)
+- [Maximality of $k = 43$ with restricted digit counts in bases $3 \le b < k$](maximality-of-k-43-with-restricted-digit-counts.md)
+- [The 2-4-6-8 Conjecture](the-2-4-6-8-conjecture.md)
+- [Vanishing of bases with $b^n \equiv -1 \pmod{2n+1}$ for absolute Euler pseudoprimes](vanishing-of-bases-with-b-n-equiv-1-pmod-2n-1-fo.md)
+- [Four-square conjecture with powers of 2, 3, and 5](four-square-conjecture-with-powers-of-2-3-and-5.md)
 - [Characterization of Carmichael numbers via squarefree denominators $a(n)$](characterization-of-carmichael-numbers-via-squar.md)
 - [Nonnegativity of the Dirichlet square root of A046644](nonnegativity-of-the-dirichlet-square-root-of-a0.md)
 - [Pronic indices for odd coefficients of $\sum_{n \ge 0} x^n \frac{(1+x^n)^n}{(1+x^{n+1})^{n+1}}$](pronic-indices-for-odd-coefficients-of-sum-n-ge.md)
@@ -18,9 +24,3 @@ navigation: transparent
 - [Realization of primes $p \equiv \pm 1 \pmod{10}$ by continued fraction denominators](realization-of-primes-p-equiv-pm-1-pmod-10-by-co.md)
 - [A generating function with powers two and three](a-generating-function-with-powers-two-and-three.md)
 - [A generating function with powers two and four](a-generating-function-with-powers-two-and-four.md)
-- [A generating function with powers two and four](a-generating-function-with-powers-two-and-four-2.md)
-- [A self-compositional exponential generating function](a-self-compositional-exponential-generating-func.md)
-- [A quadratic generating function with sign substitution](a-quadratic-generating-function-with-sign-substi.md)
-- [A generating function with signed square terms](a-generating-function-with-signed-square-terms.md)
-- [The generating function $A(x)=1+3xA(x)^2-2xA(-x)^2$](the-generating-function-a-x-1-3xa-x-2-2xa-x-2.md)
-- [Integrality of the factorial ratio $\frac{(12n+6)! (6n+9)!}{108 (4n+2)! (2n+3)! ((6n+5)!)^2}$](integrality-of-the-factorial-ratio-frac-12n-6-6n.md)

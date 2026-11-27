@@ -40,7 +40,7 @@ statement: formalized
 > - [LMS14](https://arxiv.org/pdf/1112.4816) Lenstra, H.W. et al. "Character sums for primitive root densities" _arXiv:1112.4816_ [math.NT] (2014).
 > - [Ho67] Hooley, C. "On Artin's conjecture." _Journal für die reine und angewandte Mathematik_ 225 (1967): 209-220.
 
-*Quoted from [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 9 research or textbook statements: 4 open and 5 solved. It also has 1 API statement, counted here but not shown.
 
@@ -58,7 +58,7 @@ theorem artin_primitive_roots.parts.i (a : ℤ) (ha : ¬IsSquare a) (ha' : a ≠
     ∃ x > 0, (S a).HasDensity x {p | p.Prime}
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 120](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L120).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 108](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L108).
 
 ## `ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.parts.i`
 
@@ -74,7 +74,7 @@ theorem conditional_artin_primitive_roots.parts.i (a : ℤ) (ha : ¬IsSquare a) 
     ∃ x > 0, (S a).HasDensity x {p | p.Prime}
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 130](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L130).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 118](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L118).
 
 ## `ArtinPrimitiveRootsConjecture.artin_primitive_roots.parts.ii`
 
@@ -94,7 +94,7 @@ theorem artin_primitive_roots.parts.ii
     (S a).HasDensity ArtinConstant {p | p.Prime}
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 143](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L143).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 131](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L131).
 
 ## `ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.parts.ii`
 
@@ -113,7 +113,7 @@ theorem conditional_artin_primitive_roots.parts.ii
     (S a).HasDensity ArtinConstant {p | p.Prime}
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 157](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L157).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 145](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L145).
 
 ## `ArtinPrimitiveRootsConjecture.artin_primitive_roots.variants.part_ii_square_or_minus_one`
 
@@ -129,7 +129,7 @@ theorem artin_primitive_roots.variants.part_ii_square_or_minus_one
     (S a).HasDensity 0 {p | p.Prime}
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 198](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L198).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 186](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L186).
 
 ## `ArtinPrimitiveRootsConjecture.artin_primitive_roots.variants.part_ii_power_squarefreePart_not_modeq_one`
 
@@ -152,7 +152,7 @@ theorem artin_primitive_roots.variants.part_ii_power_squarefreePart_not_modeq_on
     (S a).HasDensity (ArtinConstant * powCorrectionFactor m) {p | p.Prime}
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 214](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L214).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 202](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L202).
 
 ## `ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.variants.part_ii_power_squarefreePart_not_modeq_one`
 
@@ -170,7 +170,7 @@ theorem conditional_artin_primitive_roots.variants.part_ii_power_squarefreePart_
     (S a).HasDensity (ArtinConstant * powCorrectionFactor m) {p | p.Prime}
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 226](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L226).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 214](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L214).
 
 ## `ArtinPrimitiveRootsConjecture.artin_primitive_roots.variants.part_ii_power_squarefreePart_modeq_one`
 
@@ -196,7 +196,7 @@ theorem artin_primitive_roots.variants.part_ii_power_squarefreePart_modeq_one
       {p | p.Prime}
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 244](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L244).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 232](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L232).
 
 ## `ArtinPrimitiveRootsConjecture.conditional_artin_primitive_roots.variants.part_ii_power_squarefreePart_modeq_one`
 
@@ -216,7 +216,7 @@ theorem conditional_artin_primitive_roots.variants.part_ii_power_squarefreePart_
       {p | p.Prime}
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 258](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L258).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean, line 246](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean#L246).
 
 ## Depends on
 
@@ -224,5 +224,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean)
+- [FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/ArtinPrimitiveRootsConjecture.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Artin%27s_conjecture_on_primitive_roots)

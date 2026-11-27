@@ -1,6 +1,6 @@
 # Combinatorics
 
-The 627 problems with a statement whose `AMS` attribute names 05, Combinatorics, in the Mathematics Subject Classification. A problem with statements in several subjects is listed under each; its article sits in its source folder's part.
+The 634 problems with a statement whose `AMS` attribute names 05, Combinatorics, in the Mathematics Subject Classification. A problem with statements in several subjects is listed under each; its article sits in its source folder's part.
 
 ## [Erdős Problem 1 to Erdős Problem 1111](part-01/README.md)
 
@@ -28,14 +28,14 @@ The 627 problems with a statement whose `AMS` attribute names 05, Combinatorics,
 ## [Erdős Problem 1128 to Open Quantum Problem 35…](part-02/README.md)
 
 - [Erdős Problem 1128 to Erdős Problem 1186](part-02/part-01/README.md)
-- [Erdős Problem 1187 to Butson-type Hadamard matrices](part-02/part-02/README.md)
-- [Conway's 99-graph problem to Six standard deviations suffice…](part-02/part-03/README.md)
-- [Snake in the box to Ben Green's Open Problem 21](part-02/part-04/README.md)
-- [Green's Open Problem 22 to Green's Open Problem 53](part-02/part-05/README.md)
-- [Ben Green's Open Problem 55 to Written on the Wall II -…](part-02/part-06/README.md)
-- [Written on the Wall II -… to Written on the Wall II -…](part-02/part-07/README.md)
+- [Erdős Problem 1187 to Hanna's exponential series for…](part-02/part-02/README.md)
+- [Hanna's exponential series for… to Ohba's conjecture (2002; proved…](part-02/part-03/README.md)
+- [Pebbling number conjecture to Ben Green's Open Problem 14](part-02/part-04/README.md)
+- [Green's Open Problem 15 to Ben Green's Open Problem 40](part-02/part-05/README.md)
+- [Ben Green's Open Problem 43 to Green's Open Problem 87](part-02/part-06/README.md)
+- [Ben Green's Open Problem 88 to Written on the Wall II -…](part-02/part-07/README.md)
 - [Written on the Wall II -… to Written on the Wall II -…](part-02/part-08/README.md)
 - [Written on the Wall II -… to Written on the Wall II -…](part-02/part-09/README.md)
-- [Fanelli–Moscardelli conjecture… to Shelah-Spencer's Zero-One Law…](part-02/part-10/README.md)
-- [Size, Order, and Connected… to MathOverflow 508539](part-02/part-11/README.md)
-- [Beaver Math Olympiad (BMO) to Open Quantum Problem 35…](part-02/part-12/README.md)
+- [Written on the Wall II -… to Latin Tableau Conjecture](part-02/part-10/README.md)
+- [Lennon–Pittel conjecture on… to TxGraffiti Conjecture 4: the…](part-02/part-11/README.md)
+- [First Proof, Theorem 6 to Open Quantum Problem 35…](part-02/part-12/README.md)

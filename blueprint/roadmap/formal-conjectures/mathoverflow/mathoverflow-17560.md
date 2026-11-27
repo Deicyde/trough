@@ -10,7 +10,7 @@ statement: formalized
 > *Reference:* [mathoverflow/17560](https://mathoverflow.net/questions/17560)
 > asked by user [Alon-Amit](https://mathoverflow.net/users/25/alon-amit)
 
-*Quoted from [FormalConjectures/Mathoverflow/17560.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/17560.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Mathoverflow/17560.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/17560.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 1 open and 2 textbook results.
 
@@ -25,7 +25,7 @@ theorem mathoverflow_17560 {x : ℝ} (hx : ∃ m : ℕ, (2 : ℝ) ^ x = m) (hx' 
     ∃ m : ℕ, x = m
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [13 Commutative algebra](../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Mathoverflow/17560.lean, line 35](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/17560.lean#L35).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [13 Commutative algebra](../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Mathoverflow/17560.lean, line 35](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/17560.lean#L35).
 
 ## `Mathoverflow17560.mathoverflow_17560.variants.all_nats`
 
@@ -38,7 +38,7 @@ theorem mathoverflow_17560.variants.all_nats {x : ℝ} (hx : ∀ n : ℕ, ∃ m 
     ∃ m : ℕ, x = m
 ```
 
-Category `textbook`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [13 Commutative algebra](../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Mathoverflow/17560.lean, line 43](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/17560.lean#L43).
+Category `textbook`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [13 Commutative algebra](../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Mathoverflow/17560.lean, line 43](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/17560.lean#L43).
 
 ## `Mathoverflow17560.mathoverflow_17560.variants.with_5`
 
@@ -51,7 +51,7 @@ theorem mathoverflow_17560.variants.with_5 {x : ℝ} (hx : ∃ m : ℕ, (2 : ℝ
     (hx' : ∃ m : ℕ, (3 : ℝ) ^ x = m) (hx'' : ∃ m : ℕ, (5 : ℝ) ^ x = m) : ∃ m : ℕ, x = m
 ```
 
-Category `textbook`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [13 Commutative algebra](../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Mathoverflow/17560.lean, line 51](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/17560.lean#L51).
+Category `textbook`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [13 Commutative algebra](../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Mathoverflow/17560.lean, line 51](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/17560.lean#L51).
 
 ## Depends on
 
@@ -59,5 +59,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Mathoverflow/17560.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/17560.lean)
+- [FormalConjectures/Mathoverflow/17560.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/17560.lean)
 - [mathoverflow/17560](https://mathoverflow.net/questions/17560)

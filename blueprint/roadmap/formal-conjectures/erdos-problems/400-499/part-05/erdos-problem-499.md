@@ -9,7 +9,7 @@ statement: formalized
 
 > *Reference:* [erdosproblems.com/499](https://www.erdosproblems.com/499)
 
-*Quoted from [FormalConjectures/ErdosProblems/499.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/499.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/499.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/499.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/499](https://www.erdosproblems.com/499).
 
@@ -35,7 +35,7 @@ lemma erdos_499 :
       n ^ (- n : ℤ) ≤ ∏ i, M i (σ i))
 ```
 
-Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/ErdosProblems/499.lean, line 42](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/499.lean#L42).
+Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/ErdosProblems/499.lean, line 42](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/499.lean#L42).
 
 ## `Erdos499.vanDerWaerden`
 
@@ -55,7 +55,7 @@ lemma vanDerWaerden (n : ℕ) (M : Matrix (Fin n) (Fin n) ℝ) (hM : M ∈ doubl
     n ^ (- n : ℤ) * n ! ≤ M.permanent
 ```
 
-Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/ErdosProblems/499.lean, line 58](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/499.lean#L58).
+Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/ErdosProblems/499.lean, line 58](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/499.lean#L58).
 
 ## `Erdos499.erdos_499.variants.one_le`
 
@@ -78,7 +78,7 @@ lemma erdos_499.variants.one_le :
       (∀ i, M i (σ i) ≠ 0) ∧ 1 ≤ ∑ i, M i (σ i)
 ```
 
-Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/ErdosProblems/499.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/499.lean#L73).
+Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/ErdosProblems/499.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/499.lean#L73).
 
 ## Depends on
 
@@ -86,5 +86,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/499.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/499.lean)
+- [FormalConjectures/ErdosProblems/499.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/499.lean)
 - [erdosproblems.com/499](https://www.erdosproblems.com/499)

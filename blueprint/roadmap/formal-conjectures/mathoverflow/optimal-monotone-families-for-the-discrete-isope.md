@@ -17,7 +17,7 @@ statement: formalized
 > - [A Proof of the Kahn–Kalai Conjecture](https://arxiv.org/abs/2203.17207) by *Jinyoung Park*
 >   and *Huy Tuan Pham* (2022)
 
-*Quoted from [FormalConjectures/Mathoverflow/10799.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/10799.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Mathoverflow/10799.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/10799.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 3 solved and 1 textbook result. It also has 9 test statements, counted here but not shown.
 
@@ -45,7 +45,7 @@ theorem mathoverflow_10799 :
     ∃ p, s ≤ p ∧ p ≤ t ∧ IsOptimal p F
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [60 Probability theory and stochastic processes](../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/Mathoverflow/10799.lean, line 178](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/10799.lean#L178).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [60 Probability theory and stochastic processes](../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/Mathoverflow/10799.lean, line 178](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/10799.lean#L178).
 
 ## `Mathoverflow10799.mathoverflow_10799.variants.kahn_kalai_conjecture_7`
 
@@ -72,7 +72,7 @@ theorem mathoverflow_10799.variants.kahn_kalai_conjecture_7 :
     ∃ p, s ≤ p ∧ p ≤ t ∧ IsOptimal p F
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [60 Probability theory and stochastic processes](../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/Mathoverflow/10799.lean, line 202](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/10799.lean#L202).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [60 Probability theory and stochastic processes](../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/Mathoverflow/10799.lean, line 202](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/10799.lean#L202).
 
 ## `Mathoverflow10799.mathoverflow_10799.variants.weak_kahn_kalai`
 
@@ -91,7 +91,7 @@ theorem mathoverflow_10799.variants.weak_kahn_kalai :
     ∃ p, (n : ℝ) ^ (-ε) * t ≤ p ∧ p ≤ t ∧ IsOptimalWith C p F
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [60 Probability theory and stochastic processes](../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/Mathoverflow/10799.lean, line 218](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/10799.lean#L218).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [60 Probability theory and stochastic processes](../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/Mathoverflow/10799.lean, line 218](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/10799.lean#L218).
 
 ## `Mathoverflow10799.discrete_isoperimetric_inequality`
 
@@ -115,7 +115,7 @@ theorem discrete_isoperimetric_inequality (n : ℕ) (p : ℝ) (hp : 0 < p) (hp' 
     edgeBoundary n p F ≥ m * Real.logb p m / p
 ```
 
-Category `textbook`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [60 Probability theory and stochastic processes](../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/Mathoverflow/10799.lean, line 238](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/10799.lean#L238).
+Category `textbook`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [60 Probability theory and stochastic processes](../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/Mathoverflow/10799.lean, line 238](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/10799.lean#L238).
 
 ## Depends on
 
@@ -123,5 +123,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Mathoverflow/10799.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/10799.lean)
+- [FormalConjectures/Mathoverflow/10799.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/10799.lean)
 - [mathoverflow/10799](https://mathoverflow.net/questions/10799)

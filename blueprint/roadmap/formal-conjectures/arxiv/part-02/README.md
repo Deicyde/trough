@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# A conjecture by Margulis on… to Banach-Mazur Rotation Problem
+# Pittel's stable-matching… to The Balister–Győri–Schelp…
 
+- [Pittel's stable-matching hyperbola threshold conjecture](pittels-stable-matching-hyperbola-threshold-conj.md)
+- [An Arithmetic Sum Associated with the Classical Theta Function](an-arithmetic-sum-associated-with-the-classical.md)
 - [A conjecture by Margulis on matrix groups](a-conjecture-by-margulis-on-matrix-groups.md)
 - [TxGraffiti Conjecture 1: independence, annihilation, and residue](txgraffiti-conjecture-1-independence-annihilatio.md)
 - [TxGraffiti Conjecture 2: zero forcing versus independence (cubic graphs)](txgraffiti-conjecture-2-zero-forcing-versus-inde.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [The Alon-Tarsi short cycle cover conjecture](the-alon-tarsi-short-cycle-cover-conjecture.md)
 - [Minimum modulus for the unique multiset-sum problem](minimum-modulus-for-the-unique-multiset-sum-prob.md)
 - [The Balister–Győri–Schelp conjecture](the-balister-gyori-schelp-conjecture.md)
-- [The Maxwell conjecture](the-maxwell-conjecture.md)
-- [Banach-Mazur Rotation Problem](banach-mazur-rotation-problem.md)

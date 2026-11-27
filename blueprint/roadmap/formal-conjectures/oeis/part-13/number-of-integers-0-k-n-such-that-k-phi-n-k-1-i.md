@@ -13,7 +13,7 @@ statement: formalized
 > *References:*
 > - [A234246](https://oeis.org/A234246)
 
-*Quoted from [FormalConjectures/OEIS/234246.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS/234246.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/OEIS/234246.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/OEIS/234246.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 6 research or textbook statements: 6 open. It also has 5 test statements, counted here but not shown.
 
@@ -27,7 +27,7 @@ Open: stated without proof.
 theorem conjecture_1 (n : ℕ) (hn : 0 < n) (hd : ¬(n ∣ 6)) : 0 < a n
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/234246.lean, line 65](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS/234246.lean#L65).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/234246.lean, line 65](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/OEIS/234246.lean#L65).
 
 ## `OeisA234246.conjecture_2`
 
@@ -40,7 +40,7 @@ theorem conjecture_2 (n : ℕ) :
     a n = 1 ↔ n ∈ ({4, 5, 8, 9, 12, 13, 24, 33, 49} : Finset ℕ)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/234246.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS/234246.lean#L72).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/234246.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/OEIS/234246.lean#L72).
 
 ## `OeisA234246.conjecture_3`
 
@@ -53,7 +53,7 @@ theorem conjecture_3 (n : ℕ) (hn : 60 ≤ n) :
     ∃ k, 0 < k ∧ k < n ∧ IsSquare (k + (n - k).totient)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/234246.lean, line 80](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS/234246.lean#L80).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/234246.lean, line 80](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/OEIS/234246.lean#L80).
 
 ## `OeisA234246.conjecture_4`
 
@@ -67,7 +67,7 @@ theorem conjecture_4 (n : ℕ) (hn : 60 < n) :
     ∃ k, 0 < k ∧ k < n ∧ IsSquare (σ 1 k + (n - k).totient)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/234246.lean, line 89](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS/234246.lean#L89).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/234246.lean, line 89](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/OEIS/234246.lean#L89).
 
 ## `OeisA234246.conjecture_5`
 
@@ -81,7 +81,7 @@ theorem conjecture_5 (n : ℕ) (hn : 7 < n) (hne10 : n ≠ 10) (hne20 : n ≠ 20
     ∃ k, 0 < k ∧ k < n ∧ IsSquare (k.totient * (n - k).totient + 1)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/234246.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS/234246.lean#L98).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/234246.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/OEIS/234246.lean#L98).
 
 ## `OeisA234246.conjecture_6`
 
@@ -95,7 +95,7 @@ theorem conjecture_6 (n : ℕ) (hn : 7 < n) (hne10 : n ≠ 10) (hne19 : n ≠ 19
     ∃ k, 0 < k ∧ k < n ∧ ∃ m : ℕ, k.totient + (n - k).totient = m * (m + 1)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/234246.lean, line 107](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS/234246.lean#L107).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OEIS/234246.lean, line 107](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/OEIS/234246.lean#L107).
 
 ## Depends on
 
@@ -103,5 +103,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/OEIS/234246.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS/234246.lean)
+- [FormalConjectures/OEIS/234246.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/OEIS/234246.lean)
 - [A234246](https://oeis.org/A234246)

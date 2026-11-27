@@ -22,5 +22,5 @@ navigation: transparent
 - [96. `WeaklyFirstCountable.CH.existsWeaklyFirstCountableCompactNotFirstCountable` (research solved), in Conjectures about Weakly First Countable spaces](../../../papers/part-03/conjectures-about-weakly-first-countable-spaces.md)
 - [97. `Green21.green_21.variants.fox_kleitman` (research solved), in Ben Green's Open Problem 21](../../../greens-open-problems/part-01/ben-greens-open-problem-21.md)
 - [98. `Green51.green_51.upper_ap` (research solved), in Green's Open Problem 51](../../../greens-open-problems/part-03/greens-open-problem-51.md)
-- [99. `LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.not_reciprocal` (research solved), in Lehmer's Mahler measure problem](../../../wikipedia/part-05/lehmers-mahler-measure-problem.md)
-- [100. `SixStandardDeviations.six_standard_deviations` (research solved), in Six standard deviations suffice (Spencer's theorem)](../../../wikipedia/part-08/six-standard-deviations-suffice-spencers-theorem.md)
+- [99. `LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.not_reciprocal` (research solved), in Lehmer's Mahler measure problem](../../../wikipedia/part-06/lehmers-mahler-measure-problem.md)
+- [100. `SixStandardDeviations.six_standard_deviations` (research solved), in Six standard deviations suffice (Spencer's theorem)](../../../wikipedia/part-09/six-standard-deviations-suffice-spencers-theorem.md)

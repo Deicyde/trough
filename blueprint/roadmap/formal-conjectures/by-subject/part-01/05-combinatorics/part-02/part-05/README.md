@@ -2,8 +2,14 @@
 navigation: transparent
 ---
 
-# Green's Open Problem 22 to Green's Open Problem 53
+# Green's Open Problem 15 to Ben Green's Open Problem 40
 
+- [Green's Open Problem 15](../../../../../greens-open-problems/part-01/greens-open-problem-15.md)
+- [Ben Green's Open Problem 16](../../../../../greens-open-problems/part-01/ben-greens-open-problem-16.md)
+- [Ben Green's Open Problem 17](../../../../../greens-open-problems/part-01/ben-greens-open-problem-17.md)
+- [Ben Green's Open Problem 18](../../../../../greens-open-problems/part-01/ben-greens-open-problem-18.md)
+- [Ben Green's Open Problem 19](../../../../../greens-open-problems/part-01/ben-greens-open-problem-19.md)
+- [Ben Green's Open Problem 21](../../../../../greens-open-problems/part-01/ben-greens-open-problem-21.md)
 - [Green's Open Problem 22](../../../../../greens-open-problems/part-01/greens-open-problem-22.md)
 - [Green's Open Problem 23](../../../../../greens-open-problems/part-01/greens-open-problem-23.md)
 - [Green's Open Problem 24](../../../../../greens-open-problems/part-01/greens-open-problem-24.md)
@@ -18,9 +24,3 @@ navigation: transparent
 - [Green's Open Problem 38](../../../../../greens-open-problems/part-02/greens-open-problem-38.md)
 - [Green's Open Problem 39](../../../../../greens-open-problems/part-02/greens-open-problem-39.md)
 - [Ben Green's Open Problem 40](../../../../../greens-open-problems/part-02/ben-greens-open-problem-40.md)
-- [Ben Green's Open Problem 43](../../../../../greens-open-problems/part-02/ben-greens-open-problem-43.md)
-- [Green's Open Problem 49](../../../../../greens-open-problems/part-02/greens-open-problem-49.md)
-- [Ben Green's Open Problem 50](../../../../../greens-open-problems/part-03/ben-greens-open-problem-50.md)
-- [Green's Open Problem 51](../../../../../greens-open-problems/part-03/greens-open-problem-51.md)
-- [Green's Open Problem 52](../../../../../greens-open-problems/part-03/greens-open-problem-52.md)
-- [Green's Open Problem 53](../../../../../greens-open-problems/part-03/greens-open-problem-53.md)

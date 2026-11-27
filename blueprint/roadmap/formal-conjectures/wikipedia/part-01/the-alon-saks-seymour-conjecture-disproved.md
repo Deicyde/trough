@@ -18,7 +18,7 @@ statement: formalized
 >   conjecture and related problems." *Combinatorica* 32, pp. 205--219.
 >   [arXiv:1002.4687](https://arxiv.org/abs/1002.4687)
 
-*Quoted from [FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 3 solved. It also has 1 test statement and 2 API statements, counted here but not shown.
 
@@ -42,7 +42,7 @@ theorem alon_saks_seymour_conjecture : ¬
       G.chromaticNumber ≤ bicliquePartitionNumber G + 1
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean#L73).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean#L73).
 
 ## `AlonSaksSeymourConjecture.alon_saks_seymour_conjecture.variants.graham_pollak`
 
@@ -60,7 +60,7 @@ theorem alon_saks_seymour_conjecture.variants.graham_pollak (n : ℕ) :
     bicliquePartitionNumber (completeGraph (Fin n)) = n - 1
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean, line 87](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean#L87).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean, line 87](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean#L87).
 
 ## `AlonSaksSeymourConjecture.alon_saks_seymour_conjecture.variants.huang_sudakov`
 
@@ -80,7 +80,7 @@ theorem alon_saks_seymour_conjecture.variants.huang_sudakov :
         (c * (k : ℝ) ^ ((6 : ℝ) / 5) : ℝ) ≤ (G.chromaticNumber.toNat : ℝ)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean#L100).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean#L100).
 
 ## Depends on
 
@@ -88,5 +88,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean)
+- [FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Wikipedia/AlonSaksSeymourConjecture.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Graham%E2%80%93Pollak_theorem)

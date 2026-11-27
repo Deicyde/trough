@@ -16,7 +16,7 @@ statement: formalized
 > - [To01] Tóth, B., *No more than three favorite sites for simple random walk*.
 >   Ann. Probab. 29 (2001), 484--503.
 
-*Quoted from [FormalConjectures/ErdosProblems/1165.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1165.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/1165.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1165.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/1165](https://www.erdosproblems.com/1165).
 
@@ -50,7 +50,7 @@ theorem erdos_1165 {Ω : Type*} [MeasureSpace Ω] [IsProbabilityMeasure (ℙ : M
     ℙ {ω | ∃ᶠ n in atTop, (favouriteSites X n ω).encard = (r : ℕ∞)} = erdos_1165.answer r
 ```
 
-Category `research solved`; AMS [60 Probability theory and stochastic processes](../../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/ErdosProblems/1165.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1165.lean#L98).
+Category `research solved`; AMS [60 Probability theory and stochastic processes](../../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/ErdosProblems/1165.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1165.lean#L98).
 
 ## `Erdos1165.erdos_1165.variants.hao_li_okada_zheng`
 
@@ -72,7 +72,7 @@ theorem erdos_1165.variants.hao_li_okada_zheng {Ω : Type*} [MeasureSpace Ω]
     ∀ᵐ ω, limsup (fun n ↦ (favouriteSites X n ω).encard) atTop = 3
 ```
 
-Category `research solved`; AMS [60 Probability theory and stochastic processes](../../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/ErdosProblems/1165.lean, line 113](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1165.lean#L113).
+Category `research solved`; AMS [60 Probability theory and stochastic processes](../../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/ErdosProblems/1165.lean, line 113](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1165.lean#L113).
 
 ## Depends on
 
@@ -80,5 +80,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/1165.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/1165.lean)
+- [FormalConjectures/ErdosProblems/1165.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/1165.lean)
 - [erdosproblems.com/1165](https://www.erdosproblems.com/1165)

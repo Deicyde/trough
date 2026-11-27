@@ -28,9 +28,9 @@ The 30 problems with a statement whose `AMS` attribute names 51, Geometry, in th
 ## [The Erdős–Ulam problem to Mathoverflow 34145](part-02/README.md)
 
 - [The Erdős–Ulam problem](../../../wikipedia/part-03/the-erdos-ulam-problem.md)
-- [Inscribed square problem](../../../wikipedia/part-04/inscribed-square-problem.md)
-- [Rational distance problem](../../../wikipedia/part-07/rational-distance-problem.md)
-- [Packing](../../../wikipedia/part-08/packing.md)
+- [Inscribed square problem](../../../wikipedia/part-05/inscribed-square-problem.md)
+- [Rational distance problem](../../../wikipedia/part-08/rational-distance-problem.md)
+- [Packing](../../../wikipedia/part-09/packing.md)
 - [Ben Green's Open Problem 41](../../../greens-open-problems/part-02/ben-greens-open-problem-41.md)
 - [Green's Open Problem 42](../../../greens-open-problems/part-02/greens-open-problem-42.md)
 - [Ben Green's Open Problem 68](../../../greens-open-problems/part-03/ben-greens-open-problem-68.md)

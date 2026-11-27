@@ -2,8 +2,14 @@
 navigation: transparent
 ---
 
-# Number of primes of the form… to Partitions $2n + 1 = x + y$…
+# Sequence $a(n) = n + \lfloor n… to Smallest deficient multiplier…
 
+- [Sequence $a(n) = n + \lfloor n r / t \rfloor + \lfloor n s / t \rfloor$](sequence-a-n-n-lfloor-n-r-t-rfloor-lfloor-n-s-t.md)
+- [Linear recurrence $a(n) = 5a(n-1) - 8a(n-2)$ with $a(0)=0, a(1)=1$](linear-recurrence-a-n-5a-n-1-8a-n-2-with-a-0-0-a.md)
+- [Representations of $n = p + q + (n \bmod 2)q$ with Jacobi symbol constraints](representations-of-n-p-q-n-bmod-2-q-with-jacobi.md)
+- [Number of distinct sums of distinct proper divisors of $n$](number-of-distinct-sums-of-distinct-proper-divis.md)
+- [Size of smallest subset of $\{1, 2, \dots, n\}$ with distinct subset sums](size-of-smallest-subset-of-1-2-dots-n-with-disti.md)
+- [Denominator of $B_{n+1}(x) - B_{n+1}$](denominator-of-b-n-1-x-b-n-1.md)
 - [Number of primes of the form $2^n \pm 2^k \pm 1$ with $0 \le k < n$](number-of-primes-of-the-form-2-n-pm-2-k-pm-1-wit.md)
 - [Primes of the form $3^n \pm 3^k \pm 1$](primes-of-the-form-3-n-pm-3-k-pm-1.md)
 - [Lerch quotients of odd primes](lerch-quotients-of-odd-primes.md)
@@ -18,9 +24,3 @@ navigation: transparent
 - [Twin primes of the form $(3^n - k) 2^n \pm 1$](twin-primes-of-the-form-3-n-k-2-n-pm-1.md)
 - [Number of $0$'s in the binary expansion of $n^2$](number-of-0-s-in-the-binary-expansion-of-n-2.md)
 - [Smallest deficient multiplier for non-deficiency](smallest-deficient-multiplier-for-non-deficiency.md)
-- [Number of primes between $n^3 - n$ and $n^3$](number-of-primes-between-n-3-n-and-n-3.md)
-- [Number of primes between $n^2$ and $n^2 + (\log_2 n)^2$](number-of-primes-between-n-2-and-n-2-log-2-n-2.md)
-- [Recurrence $a(n+1) = 2n(n+1)a(n) - n^4 a(n-1)$ and associated polynomials](recurrence-a-n-1-2n-n-1-a-n-n-4-a-n-1-and-associ.md)
-- [Smallest integer $s > n$ such that $1 + 2s + 3s^2 + \dots + n s^{n-1}$ is prime](smallest-integer-s-n-such-that-1-2s-3s-2-dots-n.md)
-- [Partitions $n = x + y$ with $x^2 + xy + y^2$ prime](partitions-n-x-y-with-x-2-xy-y-2-prime.md)
-- [Partitions $2n + 1 = x + y$ with $x^4 + y^4$ prime](partitions-2n-1-x-y-with-x-4-y-4-prime.md)

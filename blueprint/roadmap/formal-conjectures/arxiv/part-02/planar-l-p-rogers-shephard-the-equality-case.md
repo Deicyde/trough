@@ -18,7 +18,7 @@ statement: formalized
 > symmetry containing the origin, and notes that parallelograms with a vertex at the origin
 > attain it. Conjecture 5 asks whether they are the only bodies that do.
 
-*Quoted from [FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 3 solved. It also has 1 API statement, counted here but not shown.
 
@@ -40,7 +40,7 @@ theorem volume_lpSum_le (K : Set ℝ²) (hK : Convex ℝ K) (hKc : IsCompact K)
     volume (lpSum p K (-K)) ≤ ENNReal.ofReal (rsConstant q) * volume K
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean#L75).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean#L75).
 
 ## `Arxiv.«2607.03582».volume_lpSum_eq_of_isParallelogramAtOrigin`
 
@@ -55,7 +55,7 @@ theorem volume_lpSum_eq_of_isParallelogramAtOrigin (K : Set ℝ²)
     volume (lpSum p K (-K)) = ENNReal.ofReal (rsConstant q) * volume K
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean, line 86](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean#L86).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean, line 86](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean#L86).
 
 ## `Arxiv.«2607.03582».isParallelogramAtOrigin_of_volume_lpSum_eq`
 
@@ -73,7 +73,7 @@ theorem isParallelogramAtOrigin_of_volume_lpSum_eq :
           IsParallelogramAtOrigin K
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean#L100).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean#L100).
 
 ## Depends on
 
@@ -81,5 +81,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean)
+- [FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean)
 - [arxiv/2607.03582](https://arxiv.org/abs/2607.03582)

@@ -21,7 +21,7 @@ statement: formalized
 >   - [Pol79] Pollington, Andrew Douglas. "On the density of sequence $\{n_ {k}\xi\} $."
 >     Illinois Journal of Mathematics 23.4 (1979): 511-515.
 
-*Quoted from [FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 2 open, 2 solved and 1 textbook result. It also has 1 test statement and 1 API statement, counted here but not shown.
 
@@ -38,7 +38,7 @@ theorem isAccumulationPoint_exists_subsequence_tendsto
     ∃ (u : ℕ → ℕ), StrictMono u ∧ Filter.atTop.Tendsto (s ∘ u) (𝓝 x)
 ```
 
-Category `textbook`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [54 General topology](../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean, line 56](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean#L56).
+Category `textbook`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [54 General topology](../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean, line 56](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean#L56).
 
 ## `Equidistribution.isEquidistributedModuloOne_three_halves_pow`
 
@@ -51,7 +51,7 @@ theorem isEquidistributedModuloOne_three_halves_pow :
     IsEquidistributedModuloOne (fun n => (3 / 2 : ℝ)^n)
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean, line 81](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean#L81).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean, line 81](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean#L81).
 
 ## `Equidistribution.isEquidistributedModuloOne_transcendental_three_halves_pow`
 
@@ -73,7 +73,7 @@ theorem isEquidistributedModuloOne_transcendental_three_halves_pow :
       IsEquidistributedModuloOne (fun n ↦ x * (3 / 2 : ℝ) ^ n)
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean, line 95](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean#L95).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean, line 95](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean#L95).
 
 ## `Equidistribution.isAccumulationPoint_three_halves_pow_infinite`
 
@@ -86,7 +86,7 @@ theorem isAccumulationPoint_three_halves_pow_infinite :
     {x | IsAccumulationPoint x (fun n => Int.fract <| (3 / 2 : ℝ)^n)}.Infinite
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean, line 104](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean#L104).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean, line 104](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean#L104).
 
 ## `Equidistribution.isAccumulationPoint_three_halves_pow`
 
@@ -100,7 +100,7 @@ theorem isAccumulationPoint_three_halves_pow :
       (fun n => Int.fract <| (3 / 2 : ℝ)^n)
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean, line 114](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean#L114).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean, line 114](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean#L114).
 
 ## Depends on
 
@@ -108,5 +108,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean)
+- [FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Books/UniformDistributionOfSequences/Equidistribution.lean)
 - [Uniform Distribution of Sequences](https://store.doverpublications.com/products/9780486149998)

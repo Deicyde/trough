@@ -16,7 +16,7 @@ statement: formalized
 > Let $M(n)$ be the maximum number of stable matchings with $n$ participants per side and complete,
 > strict preferences. The Irving–Leather construction has $a_k$ stable matchings at size $2^k$.
 
-*Quoted from [FormalConjectures/Paper/IrvingLeatherStableMatchings.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/IrvingLeatherStableMatchings.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/IrvingLeatherStableMatchings.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/IrvingLeatherStableMatchings.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 2 open.
 
@@ -32,7 +32,7 @@ theorem irving_leather_pow_two (k : ℕ) :
     maxStableMatchings (2 ^ k) = irvingLeatherCount k
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/IrvingLeatherStableMatchings.lean, line 56](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/IrvingLeatherStableMatchings.lean#L56).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/IrvingLeatherStableMatchings.lean, line 56](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/IrvingLeatherStableMatchings.lean#L56).
 
 ## `IrvingLeather.irving_leather_growth_rate`
 
@@ -51,7 +51,7 @@ theorem irving_leather_growth_rate :
         (1 / (2 : ℝ) ^ k)) atTop (𝓝 c)
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/IrvingLeatherStableMatchings.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/IrvingLeatherStableMatchings.lean#L66).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/IrvingLeatherStableMatchings.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/IrvingLeatherStableMatchings.lean#L66).
 
 ## Depends on
 
@@ -59,5 +59,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/IrvingLeatherStableMatchings.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/IrvingLeatherStableMatchings.lean)
+- [FormalConjectures/Paper/IrvingLeatherStableMatchings.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/IrvingLeatherStableMatchings.lean)
 - [Concerning the maximum number of stable matchings in the stable marriage problem](https://core.ac.uk/download/pdf/82220141.pdf)

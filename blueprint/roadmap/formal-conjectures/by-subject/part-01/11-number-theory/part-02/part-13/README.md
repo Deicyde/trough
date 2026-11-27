@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# Number of primes $p$ such that… to Smallest $r$ such that…
+# Number of times $n^2 + s^2$ is… to Primes of the form 2^n + 2^i + 1
 
+- [Number of times $n^2 + s^2$ is prime for positive integers $s < n$](../../../../../oeis/part-04/number-of-times-n-2-s-2-is-prime-for-positive-in.md)
+- [Determinant of prime sum indicator matrix](../../../../../oeis/part-04/determinant-of-prime-sum-indicator-matrix.md)
+- [Number of primes $p$ such that $n^n \le p \le n^n + n^2$](../../../../../oeis/part-04/number-of-primes-p-such-that-n-n-le-p-le-n-n-n-2.md)
 - [Number of primes $p$ such that $2^n \le p \le 2^n + \mathrm{prime}(n)$](../../../../../oeis/part-04/number-of-primes-p-such-that-2-n-le-p-le-2-n-pri.md)
 - [Value of $n$-th cyclotomic polynomial at $n$](../../../../../oeis/part-04/value-of-n-th-cyclotomic-polynomial-at-n.md)
 - [Recurrence $a(n+2) = |a(n+1)a(n) - a(n)a(n+1)|$ via concatenation](../../../../../oeis/part-04/recurrence-a-n-2-a-n-1-a-n-a-n-a-n-1-via-concate.md)
@@ -21,6 +24,3 @@ navigation: transparent
 - [Conjecture relating two characterizations of a set of integers.](../../../../../oeis/part-05/conjecture-relating-two-characterizations-of-a-s.md)
 - [Denominator of $\sum_{k=1}^n k^{\mu(k)}$](../../../../../oeis/part-05/denominator-of-sum-k-1-n-k-mu-k.md)
 - [Primes of the form 2^n + 2^i + 1](../../../../../oeis/part-05/primes-of-the-form-2-n-2-i-1.md)
-- [Smallest palindrome with exactly $n$ divisors](../../../../../oeis/part-05/smallest-palindrome-with-exactly-n-divisors.md)
-- [Smallest prime $p$ such that $p + n$ is an $n$-th power](../../../../../oeis/part-05/smallest-prime-p-such-that-p-n-is-an-n-th-power.md)
-- [Smallest $r$ such that (concatenation of $n$, $r$ times) $\cdot 10 + 1$ is prime](../../../../../oeis/part-05/smallest-r-such-that-concatenation-of-n-r-times.md)

@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# Number of squares $\bmod n$ to Apéry numbers
+# The prime numbers to Least positive multiple of $n$…
 
+- [The prime numbers](../../../../../oeis/part-01/the-prime-numbers.md)
+- [No powers as partition numbers](../../../../../oeis/part-01/no-powers-as-partition-numbers.md)
+- [Fractional parts of sums of reciprocals of Catalan numbers $C(n)$](../../../../../oeis/part-01/fractional-parts-of-sums-of-reciprocals-of-catal.md)
 - [Number of squares $\bmod n$](../../../../../oeis/part-01/number-of-squares-bmod-n.md)
 - [Euclid-Mullin sequence](../../../../../oeis/part-01/euclid-mullin-sequence.md)
 - [$a(n) = 2^(2^n)$](../../../../../oeis/part-01/a-n-2-2-n.md)
@@ -21,6 +24,3 @@ navigation: transparent
 - [A binomial coefficient summation](../../../../../oeis/part-01/a-binomial-coefficient-summation.md)
 - [Primes congruent to $\{3, 5, 6\} \pmod 7$](../../../../../oeis/part-01/primes-congruent-to-3-5-6-pmod-7.md)
 - [Least positive multiple of $n$ in base 10 with digits 0 and 1](../../../../../oeis/part-02/least-positive-multiple-of-n-in-base-10-with-dig.md)
-- [Recamán's sequence](../../../../../oeis/part-02/recamans-sequence.md)
-- [Practical numbers](../../../../../oeis/part-02/practical-numbers.md)
-- [Apéry numbers](../../../../../oeis/part-02/apery-numbers.md)

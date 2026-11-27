@@ -3,13 +3,13 @@
 > A random subset of 100 open research problems, drawn uniformly at random
 > from all problems with the `category research open` tag.
 
-*Quoted from [FormalConjectures/Subsets/FC100OpenSet1.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Subsets/FC100OpenSet1.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0.*
+*Quoted from [FormalConjectures/Subsets/FC100OpenSet1.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Subsets/FC100OpenSet1.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0.*
 
 The 100 statements the list names, numbered as it lists them, each linked to its problem's article.
 
 ## [Entries 1 to 20](part-01/README.md)
 
-- [1. `OeisA308734.conjecture` (research open), in Four-square conjecture with powers of 2, 3, and 5](../../oeis/part-16/four-square-conjecture-with-powers-of-2-3-and-5.md)
+- [1. `OeisA308734.conjecture` (research open), in Four-square conjecture with powers of 2, 3, and 5](../../oeis/part-17/four-square-conjecture-with-powers-of-2-3-and-5.md)
 - [2. `Buchi.buchi_problem` (research open), in Büchi's problem](../../wikipedia/part-02/buchis-problem.md)
 - [3. `Erdos200.erdos_200` (research open), in Erdős Problem 200](../../erdos-problems/200-299/part-01/erdos-problem-200.md)
 - [4. `Green31.green_31.variants.upper_eventually` (research open), in Ben Green's Open Problem 31](../../greens-open-problems/part-02/ben-greens-open-problem-31.md)
@@ -21,10 +21,10 @@ The 100 statements the list names, numbered as it lists them, each linked to its
 - [10. `Erdos125.erdos_125.variants.positive_unequal_density` (research solved), in Erdős Problem 125](../../erdos-problems/100-199/part-02/erdos-problem-125.md)
 - [11. `Erdos1113.erdos_1113.variants.filaseta_finch_kozek` (research open), in Erdős Problem 1113](../../erdos-problems/1100-1199/part-01/erdos-problem-1113.md)
 - [12. `Erdos539.erdos_539.variants.isBigO_sq` (research solved), in Erdős Problem 539](../../erdos-problems/500-599/part-02/erdos-problem-539.md)
-- [13. `RiemannZetaValues.irrational_five` (research solved), in Particular values of the Riemann zeta function](../../wikipedia/part-07/particular-values-of-the-riemann-zeta-function.md)
+- [13. `RiemannZetaValues.irrational_five` (research solved), in Particular values of the Riemann zeta function](../../wikipedia/part-08/particular-values-of-the-riemann-zeta-function.md)
 - [14. `Erdos1074.erdos_1074.parts.ii` (research open), in Erdős Problem 1074](../../erdos-problems/1000-1099/part-04/erdos-problem-1074.md)
 - [15. `Erdos282.erdos_282.variants.general` (research open), in Erdős Problem 282](../../erdos-problems/200-299/part-04/erdos-problem-282.md)
-- [16. `PellNumbers.infinite_pellNumber_primes` (research open), in Infinitude of Pell number primes](../../wikipedia/part-06/infinitude-of-pell-number-primes.md)
+- [16. `PellNumbers.infinite_pellNumber_primes` (research open), in Infinitude of Pell number primes](../../wikipedia/part-07/infinitude-of-pell-number-primes.md)
 - [17. `ClassNumberProblem.class_number_problem` (research open), in Class number problem for real quadratic fields](../../wikipedia/part-02/class-number-problem-for-real-quadratic-fields.md)
 - [18. `Grimm.grimm_conjecture_weak` (research open), in Grimm's conjecture](../../wikipedia/part-04/grimms-conjecture.md)
 - [19. `OeisA63880.mod_216_of_a` (research open), in Conjectures associated with A063880](../../oeis/part-03/conjectures-associated-with-a063880.md)
@@ -36,7 +36,7 @@ The 100 statements the list names, numbered as it lists them, each linked to its
 - [22. `Erdos288.erdos_288.variants.exists_k_gt_2` (research open), in Erdős Problem 288](../../erdos-problems/200-299/part-04/erdos-problem-288.md)
 - [23. `EllipticCurveRank.RatEllipticCurve.twentyone_le_rank_height_count_asymptotic` (research open), in Some conjectures about ranks of elliptic curves over ℚ](../../wikipedia/part-03/some-conjectures-about-ranks-of-elliptic-curves.md)
 - [24. `Erdos647.erdos_647.variants.lim` (research open), in Erdős Problem 647](../../erdos-problems/600-699/part-02/erdos-problem-647.md)
-- [25. `Selfridge.selfridge_conjecture` (research open), in Selfridge's conjectures](../../wikipedia/part-08/selfridges-conjectures.md)
+- [25. `Selfridge.selfridge_conjecture` (research open), in Selfridge's conjectures](../../wikipedia/part-09/selfridges-conjectures.md)
 - [26. `Erdos887.erdos_887.parts.i` (research open), in Erdős Problem 887](../../erdos-problems/800-899/part-04/erdos-problem-887.md)
 - [27. `Erdos340.erdos_340.variants.co_density_zero_sub` (research open), in Erdős Problem 340](../../erdos-problems/300-399/part-02/erdos-problem-340.md)
 - [28. `Erdos694.erdos_694.variants.carmichael` (research open), in Erdős Problem 694](../../erdos-problems/600-699/part-04/erdos-problem-694.md)
@@ -51,22 +51,22 @@ The 100 statements the list names, numbered as it lists them, each linked to its
 - [37. `Irrational.irrational_e_to_e` (research open), in Open questions on irrationality of numbers](../../wikipedia/part-05/open-questions-on-irrationality-of-numbers.md)
 - [38. `Erdos324.erdos_324` (research open), in Erdős Problem 324](../../erdos-problems/300-399/part-02/erdos-problem-324.md)
 - [39. `Erdos329.erdos_329` (research open), in Erdős Problem 329: Maximum Density of Sidon Sets](../../erdos-problems/300-399/part-02/erdos-problem-329-maximum-density-of-sidon-sets.md)
-- [40. `Transcendental.pi_pow_pi_pow_pi_transcendental` (research open), in Open questions on transcendence of numbers](../../wikipedia/part-09/open-questions-on-transcendence-of-numbers.md)
+- [40. `Transcendental.pi_pow_pi_pow_pi_transcendental` (research open), in Open questions on transcendence of numbers](../../wikipedia/part-10/open-questions-on-transcendence-of-numbers.md)
 
 ## [Entries 41 to 60](part-03/README.md)
 
 - [41. `Erdos409.erdos_409.parts.i.isBigO` (research open), in Erdős Problem 409](../../erdos-problems/400-499/part-01/erdos-problem-409.md)
-- [42. `Arxiv.«2501.03234».conjecture_4_1` (research open), in An Arithmetic Sum Associated with the Classical Theta Function](../../arxiv/part-01/an-arithmetic-sum-associated-with-the-classical.md)
+- [42. `Arxiv.«2501.03234».conjecture_4_1` (research open), in An Arithmetic Sum Associated with the Classical Theta Function](../../arxiv/part-02/an-arithmetic-sum-associated-with-the-classical.md)
 - [43. `MonochromaticQuantumGraph.eqSystem10_no_solution_d3` (research open), in Monochromatic quantum graphs (inherited vertex colorings)](../../papers/part-02/monochromatic-quantum-graphs-inherited-vertex-co.md)
 - [44. `PoincareConjecture.poincare_conjecture.variants.smooth_dimension_four` (research open), in The Poincaré Conjecture](../../millennium-problems/the-poincare-conjecture.md)
-- [45. `Transcendental.pi_pow_sqrt_two_transcendental` (research open), in Open questions on transcendence of numbers](../../wikipedia/part-09/open-questions-on-transcendence-of-numbers.md)
-- [46. `OeisA303656.conjecture` (research open), in Sum of two squares, a power of 3, and a power of 5](../../oeis/part-16/sum-of-two-squares-a-power-of-3-and-a-power-of-5.md)
+- [45. `Transcendental.pi_pow_sqrt_two_transcendental` (research open), in Open questions on transcendence of numbers](../../wikipedia/part-10/open-questions-on-transcendence-of-numbers.md)
+- [46. `OeisA303656.conjecture` (research open), in Sum of two squares, a power of 3, and a power of 5](../../oeis/part-17/sum-of-two-squares-a-power-of-3-and-a-power-of-5.md)
 - [47. `Erdos517.erdos_517` (research open), in Erdős Problem 517](../../erdos-problems/500-599/part-01/erdos-problem-517.md)
 - [48. `MonochromaticQuantumGraph.eqSystem16_no_solution_d3` (research open), in Monochromatic quantum graphs (inherited vertex colorings)](../../papers/part-02/monochromatic-quantum-graphs-inherited-vertex-co.md)
 - [49. `Arxiv.«0912.2382».curling_number_conjecture` (research open), in The Curling Number Conjecture](../../arxiv/part-01/the-curling-number-conjecture.md)
 - [50. `Grimm.grimm_conjecture` (research open), in Grimm's conjecture](../../wikipedia/part-04/grimms-conjecture.md)
 - [51. `Erdos272.erdos_272.variants.szabo_strong` (research open), in Erdős Problem 272](../../erdos-problems/200-299/part-04/erdos-problem-272.md)
-- [52. `UnionClosed.union_closed.variants.cardinality_even_of_union_closed_tight` (research open), in Union-closed sets conjecture](../../wikipedia/part-09/union-closed-sets-conjecture.md)
+- [52. `UnionClosed.union_closed.variants.cardinality_even_of_union_closed_tight` (research open), in Union-closed sets conjecture](../../wikipedia/part-10/union-closed-sets-conjecture.md)
 - [53. `MonochromaticQuantumGraph.eqSystem12_no_solution_d3` (research open), in Monochromatic quantum graphs (inherited vertex colorings)](../../papers/part-02/monochromatic-quantum-graphs-inherited-vertex-co.md)
 - [54. `Erdos1097.erdos_1097` (research solved), in Erdős Problem 1097](../../erdos-problems/1000-1099/part-05/erdos-problem-1097.md)
 - [55. `MonochromaticQuantumGraph.eqSystem_no_solution_ge6_ge3_real` (research open), in Monochromatic quantum graphs (inherited vertex colorings)](../../papers/part-02/monochromatic-quantum-graphs-inherited-vertex-co.md)
@@ -80,7 +80,7 @@ The 100 statements the list names, numbered as it lists them, each linked to its
 
 - [61. `Erdos1002.erdos_1002` (research open), in Erdős Problem 1002](../../erdos-problems/1000-1099/part-01/erdos-problem-1002.md)
 - [62. `Erdos188.erdos_188` (research open), in Erdős Problem 188](../../erdos-problems/100-199/part-04/erdos-problem-188.md)
-- [63. `BabaiSeressConjectures.babai_seress_conjecture_alternating` (research open), in Babai–Seress Conjectures on the Diameter of Finite Groups](../../wikipedia/part-02/babai-seress-conjectures-on-the-diameter-of-fini.md)
+- [63. `BabaiSeressConjectures.babai_seress_conjecture_alternating` (research open), in Babai–Seress Conjectures on the Diameter of Finite Groups](../../wikipedia/part-03/babai-seress-conjectures-on-the-diameter-of-fini.md)
 - [64. `OpenQuantumProblem23.hasSICPOVM_60` (research open), in Open Quantum Problem 23: SIC-POVMs](../../open-quantum-problems/open-quantum-problem-23-sic-povms.md)
 - [65. `Erdos23.erdos_23` (research open), in Erdős Problem 23](../../erdos-problems/1-99/part-02/erdos-problem-23.md)
 - [66. `Gilbreath.gilbreath_conjecture` (research open), in Gilbreath's conjecture](../../wikipedia/part-04/gilbreaths-conjecture.md)
@@ -93,9 +93,9 @@ The 100 statements the list names, numbered as it lists them, each linked to its
 - [73. `Erdos695.erdos_695` (research open), in Erdős Problem 695](../../erdos-problems/600-699/part-04/erdos-problem-695.md)
 - [74. `MonochromaticQuantumGraph.eqSystem10_no_solution_d3_trinary_int` (research solved), in Monochromatic quantum graphs (inherited vertex colorings)](../../papers/part-02/monochromatic-quantum-graphs-inherited-vertex-co.md)
 - [75. `Erdos92.erdos_92.variants.weak` (research solved), in Erdős Problem 92](../../erdos-problems/1-99/part-05/erdos-problem-92.md)
-- [76. `RamseyNumbers.ramsey_number_five_five` (research open), in Ramsey numbers](../../wikipedia/part-07/ramsey-numbers.md)
+- [76. `RamseyNumbers.ramsey_number_five_five` (research open), in Ramsey numbers](../../wikipedia/part-08/ramsey-numbers.md)
 - [77. `Erdos385.erdos_385.parts.ii` (research open), in Erdős Problem 385](../../erdos-problems/300-399/part-04/erdos-problem-385.md)
-- [78. `LittlewoodConjecture.padic_littlewood_conjecture` (research open), in Littlewood conjectures](../../wikipedia/part-05/littlewood-conjectures.md)
+- [78. `LittlewoodConjecture.padic_littlewood_conjecture` (research open), in Littlewood conjectures](../../wikipedia/part-06/littlewood-conjectures.md)
 - [79. `Mandelbrot.volume_frontier_mandelbrotSet_eq_zero` (research open), in Conjectures about the Mandelbrot and Multibrot sets](../../wikipedia/part-06/conjectures-about-the-mandelbrot-and-multibrot-s.md)
 - [80. `Erdos358.erdos_358.variants.prime_set` (research open), in Erdős Problem 358](../../erdos-problems/300-399/part-03/erdos-problem-358.md)
 
@@ -108,14 +108,14 @@ The 100 statements the list names, numbered as it lists them, each linked to its
 - [85. `Erdos269.erdos_269.variants.rational` (research open), in Erdős Problem 269](../../erdos-problems/200-299/part-04/erdos-problem-269.md)
 - [86. `Arxiv.«1601.03081».crystals_components_unique` (research open), in Unique Crystal Components](../../arxiv/part-01/unique-crystal-components.md)
 - [87. `Erdos123.erdos_123.variants.powers_2_3_5_snug` (research open), in Erdős Problem 123](../../erdos-problems/100-199/part-01/erdos-problem-123.md)
-- [88. `SumOfThreeCubes.isSumOfThreeCubes_iff_mod_9` (research open), in Sum of three cubes](../../wikipedia/part-08/sum-of-three-cubes.md)
+- [88. `SumOfThreeCubes.isSumOfThreeCubes_iff_mod_9` (research open), in Sum of three cubes](../../wikipedia/part-10/sum-of-three-cubes.md)
 - [89. `WrittenOnTheWallII.GraphConjecture327.conjecture327` (research solved), in Written on the Wall II - Conjecture 327](../../written-on-the-wall-ii/part-04/written-on-the-wall-ii-conjecture-327.md)
 - [90. `WrittenOnTheWallII.GraphConjecture316.conjecture316` (research solved), in Written on the Wall II - Conjecture 316](../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-316.md)
 - [91. `Erdos888.erdos_888` (research solved), in Erdős Problem 888](../../erdos-problems/800-899/part-04/erdos-problem-888.md)
 - [92. `Erdos260.erdos_260` (research solved), in Erdős Problem 260](../../erdos-problems/200-299/part-03/erdos-problem-260.md)
 - [93. `Erdos36.erdos_36.variants.lower` (research open), in Erdős Problem 36](../../erdos-problems/1-99/part-02/erdos-problem-36.md)
 - [94. `MonochromaticQuantumGraph.eqSystem10_no_solution_d4` (research open), in Monochromatic quantum graphs (inherited vertex colorings)](../../papers/part-02/monochromatic-quantum-graphs-inherited-vertex-co.md)
-- [95. `Superperfect.twoFivePerfect` (research open), in (m,k)-perfect numbers](../../wikipedia/part-08/m-k-perfect-numbers.md)
+- [95. `Superperfect.twoFivePerfect` (research open), in (m,k)-perfect numbers](../../wikipedia/part-10/m-k-perfect-numbers.md)
 - [96. `Erdos307.erdos_307` (research open), in Erdős Problem 307](../../erdos-problems/300-399/part-01/erdos-problem-307.md)
 - [97. `MonochromaticQuantumGraph.eqSystem6_no_solution_d4` (research solved), in Monochromatic quantum graphs (inherited vertex colorings)](../../papers/part-02/monochromatic-quantum-graphs-inherited-vertex-co.md)
 - [98. `OeisA41.noPowerPartitionNumber` (research open), in No powers as partition numbers](../../oeis/part-01/no-powers-as-partition-numbers.md)

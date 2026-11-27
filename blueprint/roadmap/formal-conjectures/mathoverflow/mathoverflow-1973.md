@@ -15,7 +15,7 @@ statement: formalized
 > - [Al26] L. Alpöge, [*A compact complex threefold fibred by tori over the projective line, and the six-sphere*](https://alpo.ge/s6.pdf) (2026),
 >   originally [shared on X](https://x.com/__alpoge__/status/2091639597193368014).
 
-*Quoted from [FormalConjectures/Mathoverflow/1973.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/1973.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Mathoverflow/1973.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/1973.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 1 research or textbook statement: 1 solved.
 
@@ -35,7 +35,7 @@ theorem mathoverflow_1973 :
       IsManifold 𝓘(ℂ, EuclideanSpace ℂ (Fin 3)) 1 (unitSphere 6)
 ```
 
-Category `research solved`; AMS [32 Several complex variables and analytic spaces](../by-subject/part-01/32-several-complex-variables-and-analytic-spaces/README.md). Declared in [FormalConjectures/Mathoverflow/1973.lean, line 50](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/1973.lean#L50).
+Category `research solved`; AMS [32 Several complex variables and analytic spaces](../by-subject/part-01/32-several-complex-variables-and-analytic-spaces/README.md). Declared in [FormalConjectures/Mathoverflow/1973.lean, line 50](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/1973.lean#L50).
 
 ## Depends on
 
@@ -43,5 +43,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Mathoverflow/1973.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Mathoverflow/1973.lean)
+- [FormalConjectures/Mathoverflow/1973.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Mathoverflow/1973.lean)
 - [mathoverflow/1973](https://mathoverflow.net/questions/1973/)

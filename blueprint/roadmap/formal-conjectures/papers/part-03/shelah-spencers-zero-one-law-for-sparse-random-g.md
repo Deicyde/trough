@@ -17,7 +17,7 @@ statement: formalized
 >   in the restricted predicate calculus](https://doi.org/10.1007/BF01071084),
 >   Cybernetics, 5(2), 142-154 (1969) (for $\alpha = 0$).
 
-*Quoted from [FormalConjectures/Paper/ShelahSpencerZeroOneLaw.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/ShelahSpencerZeroOneLaw.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/ShelahSpencerZeroOneLaw.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/ShelahSpencerZeroOneLaw.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 2 solved.
 
@@ -40,7 +40,7 @@ theorem zeroOne_irrational
        {G | @Language.Sentence.Realize Language.graph (Fin n) G.structure φ}) atTop (𝓝 1)
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/ShelahSpencerZeroOneLaw.lean, line 60](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/ShelahSpencerZeroOneLaw.lean#L60).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/ShelahSpencerZeroOneLaw.lean, line 60](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/ShelahSpencerZeroOneLaw.lean#L60).
 
 ## `ShelahSpencerZeroOneLaw.zeroOne_rational`
 
@@ -60,7 +60,7 @@ theorem zeroOne_rational
        {G | @Language.Sentence.Realize Language.graph (Fin n) G.structure φ}) atTop (𝓝 b)
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/ShelahSpencerZeroOneLaw.lean, line 74](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/ShelahSpencerZeroOneLaw.lean#L74).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/ShelahSpencerZeroOneLaw.lean, line 74](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/ShelahSpencerZeroOneLaw.lean#L74).
 
 ## Depends on
 
@@ -68,6 +68,6 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/ShelahSpencerZeroOneLaw.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/ShelahSpencerZeroOneLaw.lean)
+- [FormalConjectures/Paper/ShelahSpencerZeroOneLaw.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/ShelahSpencerZeroOneLaw.lean)
 - [Shelah and Spencer,
   Zero-one laws for sparse random graphs](https://doi.org/10.1090/S0894-0347-1988-0924703-8)

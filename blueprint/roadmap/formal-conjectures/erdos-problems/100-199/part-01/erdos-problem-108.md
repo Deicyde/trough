@@ -9,29 +9,31 @@ statement: formalized
 
 > *Reference:* [erdosproblems.com/108](https://www.erdosproblems.com/108)
 
-*Quoted from [FormalConjectures/ErdosProblems/108.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/108.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/108.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/108.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/108](https://www.erdosproblems.com/108).
 
-The file states 1 research or textbook statement: 1 open.
+The file states 1 research or textbook statement: 1 solved.
 
 ## `Erdos108.erdos_108`
 
-Open: stated without proof.
+Solved: stated here without proof.
 
 > For every r ≥ 4 and k ≥ 2 is there some finite f(k,r) such that every graph of chromatic number ≥ f(k,r)
 > contains a subgraph of girth ≥ r and chromatic number ≥ k?
+>
+> The answer is no for $r \geq 5$. See the reference above.
 
 ```lean
 theorem erdos_108 :
-    ∀ r ≥ 4, ∀ k ≥ (2 : ℕ), ∃ (f : ℕ),
+    ¬ ∀ r ≥ 4, ∀ k ≥ (2 : ℕ), ∃ (f : ℕ),
     ∀ (V : Type u) (G : SimpleGraph V) (_ : Nonempty V)
       (hchro : f ≤ SimpleGraph.chromaticNumber G),
     ∃ (H : G.Subgraph), (SimpleGraph.girth H.coe ≥ r) ∧
     (SimpleGraph.chromaticNumber H.coe ≥ k)
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/108.lean, line 39](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/108.lean#L39).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/108.lean, line 41](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/108.lean#L41).
 
 ## Depends on
 
@@ -39,5 +41,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/108.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/108.lean)
+- [FormalConjectures/ErdosProblems/108.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/108.lean)
 - [erdosproblems.com/108](https://www.erdosproblems.com/108)

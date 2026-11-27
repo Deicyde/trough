@@ -9,7 +9,7 @@ statement: formalized
 
 > *Reference:* [erdosproblems.com/409](https://www.erdosproblems.com/409)
 
-*Quoted from [FormalConjectures/ErdosProblems/409.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/409.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/409.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/409.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/409](https://www.erdosproblems.com/409).
 
@@ -26,7 +26,7 @@ theorem erdos_409.parts.i (n : ℕ) (hn : 0 < n) :
     IsLeast { i | (φ · + 1)^[i] n |>.Prime } (erdos_409.parts.i.answer n)
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 42](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/409.lean#L42).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 42](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/409.lean#L42).
 
 ## `Erdos409.erdos_409.parts.i.isTheta`
 
@@ -41,7 +41,7 @@ theorem erdos_409.parts.i.isTheta (c : ℕ → ℕ)
     (fun n => (c n : ℝ)) =Θ[atTop] erdos_409.parts.i.isTheta.answer
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 84](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/409.lean#L84).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 84](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/409.lean#L84).
 
 ## `Erdos409.erdos_409.parts.i.isBigO`
 
@@ -56,7 +56,7 @@ theorem erdos_409.parts.i.isBigO (c : ℕ → ℕ)
     (fun n => (c n : ℝ)) =O[atTop] erdos_409.parts.i.isBigO.answer
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 96](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/409.lean#L96).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 96](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/409.lean#L96).
 
 ## `Erdos409.erdos_409.parts.i.isLittleO`
 
@@ -71,7 +71,7 @@ theorem erdos_409.parts.i.isLittleO (c : ℕ → ℕ)
     (fun n => (c n : ℝ)) =o[atTop] erdos_409.parts.i.isLittleO.answer
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 108](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/409.lean#L108).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 108](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/409.lean#L108).
 
 ## `Erdos409.erdos_409.parts.ii`
 
@@ -84,7 +84,7 @@ theorem erdos_409.parts.ii :
     ∃ (p : ℕ) (hp : p.Prime), { n | ∃ i, (φ · + 1)^[i] n = p }.Infinite
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 117](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/409.lean#L117).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 117](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/409.lean#L117).
 
 ## `Erdos409.erdos_409.parts.iii`
 
@@ -94,10 +94,10 @@ Open: stated without proof.
 
 ```lean
 theorem erdos_409.parts.iii (p : ℕ) (h : p.Prime) :
-    { n | ∃ i, (φ · + 1)^[i] n = p }.HasDensity erdos_409.parts.iii.answer
+    { n | ∃ i, (φ · + 1)^[i] n = p }.HasDensity (erdos_409.parts.iii.answer p)
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 127](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/409.lean#L127).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 127](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/409.lean#L127).
 
 ## `Erdos409.erdos_409.variants.sigma`
 
@@ -112,7 +112,7 @@ theorem erdos_409.variants.sigma (n : ℕ) (hn : n > 1)
     IsLeast { i | (σ 1 · - 1)^[i] n |>.Prime } (erdos_409.variants.sigma.answer n)
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 140](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/409.lean#L140).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 140](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/409.lean#L140).
 
 ## `Erdos409.erdos_409.variants.sigma_termination`
 
@@ -127,7 +127,7 @@ theorem erdos_409.variants.sigma_termination (n : ℕ) (hn : n > 1) :
     ∃ i, (σ 1 · - 1)^[i] n |>.Prime
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 149](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/409.lean#L149).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 149](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/409.lean#L149).
 
 ## `Erdos409.erdos_409.variants.sigma_isTheta`
 
@@ -142,7 +142,7 @@ theorem erdos_409.variants.sigma_isTheta (c : ℕ → ℕ)
     (fun n => (c n : ℝ)) =Θ[atTop] erdos_409.variants.sigma_isTheta.answer
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 162](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/409.lean#L162).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 162](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/409.lean#L162).
 
 ## `Erdos409.erdos_409.variants.sigma_isBigO`
 
@@ -157,7 +157,7 @@ theorem erdos_409.variants.sigma_isBigO (c : ℕ → ℕ)
     (fun n => (c n : ℝ)) =O[atTop] erdos_409.variants.sigma_isBigO.answer
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 174](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/409.lean#L174).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 174](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/409.lean#L174).
 
 ## `Erdos409.erdos_409.variants.sigma_isLittleO`
 
@@ -172,7 +172,7 @@ theorem erdos_409.variants.sigma_isLittleO (c : ℕ → ℕ)
     (fun n => (c n : ℝ)) =o[atTop] erdos_409.variants.sigma_isLittleO.answer
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 186](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/409.lean#L186).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 186](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/409.lean#L186).
 
 ## `Erdos409.erdos_409.variants.sigma_prime_termination`
 
@@ -185,7 +185,7 @@ theorem erdos_409.variants.sigma_prime_termination :
     ∀ n > 1, ∃ i, (σ 1 · - 1)^[i] n |>.Prime
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 195](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/409.lean#L195).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/409.lean, line 195](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/409.lean#L195).
 
 ## Depends on
 
@@ -193,5 +193,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/409.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/409.lean)
+- [FormalConjectures/ErdosProblems/409.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/409.lean)
 - [erdosproblems.com/409](https://www.erdosproblems.com/409)

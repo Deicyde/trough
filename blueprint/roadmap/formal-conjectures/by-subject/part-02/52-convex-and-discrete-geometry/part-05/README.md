@@ -4,8 +4,8 @@ navigation: transparent
 
 # Moser's Worm to VCₙ dimension of convex sets in…
 
-- [Moser's Worm](../../../../wikipedia/part-06/mosers-worm.md)
-- [Sendov's conjecture](../../../../wikipedia/part-08/sendovs-conjecture.md)
+- [Moser's Worm](../../../../wikipedia/part-07/mosers-worm.md)
+- [Sendov's conjecture](../../../../wikipedia/part-09/sendovs-conjecture.md)
 - [Ben Green's Open Problem 41](../../../../greens-open-problems/part-02/ben-greens-open-problem-41.md)
 - [Green's Open Problem 42](../../../../greens-open-problems/part-02/greens-open-problem-42.md)
 - [Ben Green's Open Problem 54](../../../../greens-open-problems/part-03/ben-greens-open-problem-54.md)

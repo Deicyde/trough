@@ -1,6 +1,6 @@
 # FC100 subsets
 
-Formal Conjectures' 4 benchmark lists in [FormalConjectures/Subsets](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Subsets), a page each.
+Formal Conjectures' 4 benchmark lists in [FormalConjectures/Subsets](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Subsets), a page each.
 
 - [FC100OpenSet1](fc100openset1/README.md)
 - [FC100OpenSet2](fc100openset2/README.md)

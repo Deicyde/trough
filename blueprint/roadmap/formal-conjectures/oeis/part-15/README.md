@@ -2,8 +2,14 @@
 navigation: transparent
 ---
 
-# Difference between $n \tau(n)$… to Additive decompositions of…
+# Largest smallest-base in a… to A GCD-Driven Sequence with…
 
+- [Largest smallest-base in a decomposition of $n$ into at most four squares](largest-smallest-base-in-a-decomposition-of-n-in.md)
+- [Least primitive prime divisor of the Franel numbers of order $4$](least-primitive-prime-divisor-of-the-franel-numb.md)
+- [Smallest $k \ge 1$ such that the concatenation of $k$ threes and $\text{prime}(n)$ is prime](smallest-k-ge-1-such-that-the-concatenation-of-k.md)
+- [Signed digit sums in bases $b \ge 5$](signed-digit-sums-in-bases-b-ge-5.md)
+- [Least index $i$ for which $\text{num}(\sigma_1(i)/i) - \text{den}(\sigma_1(i)/i) = n$](least-index-i-for-which-num-sigma-1-i-i-den-sigm.md)
+- [Sum of $d \cdot \tau(d)$ over proper divisors $d$ of $n$](sum-of-d-cdot-tau-d-over-proper-divisors-d-of-n.md)
 - [Difference between $n \tau(n)$ and $\sum_{d \mid n, d < n} d \tau(d)$](difference-between-n-tau-n-and-sum-d-mid-n-d-n-d.md)
 - [Least $m$ such that $m + n$ divides $\mathrm{prime}(m) + \mathrm{prime}(n)$](least-m-such-that-m-n-divides-prime-m-prime-n.md)
 - [Least $m > 0$ coprime to $n$ such that $mn \mid C(m+n)$](least-m-0-coprime-to-n-such-that-mn-mid-c-m-n.md)
@@ -18,9 +24,3 @@ navigation: transparent
 - [Asymptotics of an inner sum formula for $a(n)$](asymptotics-of-an-inner-sum-formula-for-a-n.md)
 - [Catalan numbers modulo $6$](catalan-numbers-modulo-6.md)
 - [A GCD-Driven Sequence with Universal Jumps](a-gcd-driven-sequence-with-universal-jumps.md)
-- [Prime values in recurrence $a(n+1) = |a(n) - \gcd(a(n), 7n+6)|$](prime-values-in-recurrence-a-n-1-a-n-gcd-a-n-7n.md)
-- [Primes $p$ such that $n - (p n' - 1)$ and $n + (p n' - 1)$ are both prime](primes-p-such-that-n-p-n-1-and-n-p-n-1-are-both.md)
-- [Sums of four binary palindromes](sums-of-four-binary-palindromes.md)
-- [Refining Lagrange's four-square theorem with $(5x^2 + 7y^2 + 9z^2)yz$ a square](refining-lagranges-four-square-theorem-with-5x-2.md)
-- [Additive decompositions of $\pi(T(n))$](additive-decompositions-of-pi-t-n.md)
-- [Additive decompositions of $\pi(\frac{n(n+1)}{2} + 1)$](additive-decompositions-of-pi-frac-n-n-1-2-1.md)

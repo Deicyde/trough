@@ -65,7 +65,7 @@ statement: formalized
 >   (organisers), *Mini-Workshop: Cohomology of Hopf Algebras and Tensor Categories*, Oberwolfach
 >   Rep. (2019), 663–693; "asked by a number of mathematicians", p. 664.
 
-*Quoted from [FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 2 open and 3 solved. It also has 2 test statements, counted here but not shown.
 
@@ -81,7 +81,7 @@ Open: stated without proof.
 theorem cohomologyRing_finiteType : Algebra.FiniteType k (cohomologyRing k A)
 ```
 
-Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean, line 96](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean#L96).
+Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean, line 96](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean#L96).
 
 ## `HopfAlgebraCohomology.cohomology_finite`
 
@@ -97,7 +97,7 @@ theorem cohomology_finite (M : ModuleCat.{u} A) [FiniteDimensional k M] :
     Module.Finite (cohomologyRing k A) (cohomology k A M)
 ```
 
-Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean, line 104](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean#L104).
+Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean, line 104](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean#L104).
 
 ## `HopfAlgebraCohomology.cohomologyRing_finiteType_of_isCocomm`
 
@@ -112,7 +112,7 @@ theorem cohomologyRing_finiteType_of_isCocomm [Coalgebra.IsCocomm k A] :
     Algebra.FiniteType k (cohomologyRing k A)
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean, line 112](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean#L112).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean, line 112](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean#L112).
 
 ## `HopfAlgebraCohomology.cohomology_finite_of_isCocomm`
 
@@ -127,7 +127,7 @@ theorem cohomology_finite_of_isCocomm [Coalgebra.IsCocomm k A] (M : ModuleCat.{u
     [FiniteDimensional k M] : Module.Finite (cohomologyRing k A) (cohomology k A M)
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean, line 120](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean#L120).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean, line 120](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean#L120).
 
 ## `HopfAlgebraCohomology.cohomologyRing_finiteType_monoidAlgebra`
 
@@ -142,7 +142,7 @@ theorem cohomologyRing_finiteType_monoidAlgebra (G : Type u) [Group G] [Finite G
     Algebra.FiniteType k (cohomologyRing k (MonoidAlgebra k G))
 ```
 
-Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean, line 128](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean#L128).
+Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean, line 128](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean#L128).
 
 ## Depends on
 
@@ -150,5 +150,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean)
+- [FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Arxiv/math.0301027/FiniteGenerationOfCohomology.lean)
 - [arXiv:math/0301027](https://arxiv.org/abs/math/0301027)

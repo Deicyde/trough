@@ -13,7 +13,7 @@ navigation: transparent
 - [8. `Erdos141.first_three_odd_primes` (test), in Erdős Problem 141](../../../erdos-problems/100-199/part-02/erdos-problem-141.md)
 - [9. `WrittenOnTheWallII.GraphConjecture33.conjecture33` (research solved), in Written on the Wall II - Conjecture 33](../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-33.md)
 - [10. `MonochromaticQuantumGraph.eqSystem4_has_solution_d2` (test), in Monochromatic quantum graphs (inherited vertex colorings)](../../../papers/part-02/monochromatic-quantum-graphs-inherited-vertex-co.md)
-- [11. `OeisA228828.a_2` (test), in Numbers $n$ such that $n^2 + \pi(n)$ is prime](../../../oeis/part-12/numbers-n-such-that-n-2-pi-n-is-prime.md)
+- [11. `OeisA228828.a_2` (test), in Numbers $n$ such that $n^2 + \pi(n)$ is prime](../../../oeis/part-13/numbers-n-such-that-n-2-pi-n-is-prime.md)
 - [12. `Erdos399.erdos_399.variants.cambie` (research solved), in Erdős Problem 399](../../../erdos-problems/300-399/part-05/erdos-problem-399.md)
 - [13. `Erdos349.exists_t_for_k_disjoint_segments` (research solved), in Erdős Problem 349](../../../erdos-problems/300-399/part-03/erdos-problem-349.md)
 - [14. `Erdos686.erdos_686.variants.four_three` (research solved), in Erdős Problem 686](../../../erdos-problems/600-699/part-04/erdos-problem-686.md)

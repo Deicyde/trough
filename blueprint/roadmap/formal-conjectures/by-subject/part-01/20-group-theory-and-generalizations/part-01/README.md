@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Erdős Problem 274 to Ben Green's Open Problem 100
+# Erdős Problem 274 to Green's Open Problem 87
 
 - [Erdős Problem 274](../../../../erdos-problems/200-299/part-04/erdos-problem-274.md)
 - [Erdős Problem 1098](../../../../erdos-problems/1000-1099/part-05/erdos-problem-1098.md)
@@ -11,16 +11,16 @@ navigation: transparent
 - [Erdős Problem 1162](../../../../erdos-problems/1100-1199/part-03/erdos-problem-1162.md)
 - [The Andrews-Curtis conjecture](../../../../wikipedia/part-01/the-andrews-curtis-conjecture.md)
 - [Bounded Burnside problem](../../../../wikipedia/part-02/bounded-burnside-problem.md)
-- [Babai–Seress Conjectures on the Diameter of Finite Groups](../../../../wikipedia/part-02/babai-seress-conjectures-on-the-diameter-of-fini.md)
+- [Babai–Seress Conjectures on the Diameter of Finite Groups](../../../../wikipedia/part-03/babai-seress-conjectures-on-the-diameter-of-fini.md)
 - [Gap conjecture](../../../../wikipedia/part-04/gap-conjecture.md)
 - [Gromov's theorem on groups of polynomial growth](../../../../wikipedia/part-04/gromovs-theorem-on-groups-of-polynomial-growth.md)
 - [Kaplansky's Conjectures](../../../../wikipedia/part-05/kaplanskys-conjectures.md)
-- [Leinster Groups](../../../../wikipedia/part-05/leinster-groups.md)
-- [Gottschalk's surjunctivity conjecture](../../../../wikipedia/part-09/gottschalks-surjunctivity-conjecture.md)
+- [Leinster Groups](../../../../wikipedia/part-06/leinster-groups.md)
+- [Gottschalk's surjunctivity conjecture](../../../../wikipedia/part-10/gottschalks-surjunctivity-conjecture.md)
+- [Wilf's Conjecture on Numerical Semigroups](../../../../wikipedia/part-10/wilfs-conjecture-on-numerical-semigroups.md)
 - [Ben Green's Open Problem 4](../../../../greens-open-problems/part-01/ben-greens-open-problem-4.md)
 - [Ben Green's Open Problem 5](../../../../greens-open-problems/part-01/ben-greens-open-problem-5.md)
 - [Ben Green's Open Problem 18](../../../../greens-open-problems/part-01/ben-greens-open-problem-18.md)
 - [Ben Green's Open Problem 29](../../../../greens-open-problems/part-02/ben-greens-open-problem-29.md)
 - [Green's Open Problem 36](../../../../greens-open-problems/part-02/greens-open-problem-36.md)
 - [Green's Open Problem 87](../../../../greens-open-problems/part-04/greens-open-problem-87.md)
-- [Ben Green's Open Problem 100](../../../../greens-open-problems/part-04/ben-greens-open-problem-100.md)

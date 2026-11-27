@@ -17,7 +17,7 @@ statement: formalized
 > - [LiSa24] Liu, Y. and Sawhney, M., *On further questions regarding unit fractions*.
 >   arXiv:2404.07113 (2024).
 
-*Quoted from [FormalConjectures/ErdosProblems/305.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/305.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/305.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/305.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/305](https://www.erdosproblems.com/305).
 
@@ -53,7 +53,7 @@ theorem erdos_305 : ∃ δ : ℕ → ℝ, Tendsto δ atTop (nhds 0) ∧
       (Dmax b : ℝ) ≤ C * b * (log b) ^ (1 + δ b)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/305.lean, line 69](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/305.lean#L69).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/305.lean, line 69](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/305.lean#L69).
 
 ## `Erdos305.erdos_305.variants.bleicher_erdos`
 
@@ -66,7 +66,7 @@ theorem erdos_305.variants.bleicher_erdos : ∃ C : ℝ, 0 < C ∧
     ∀ᶠ b : ℕ in atTop, (Dmax b : ℝ) ≤ C * b * (log b) ^ 2
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/305.lean, line 76](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/305.lean#L76).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/305.lean, line 76](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/305.lean#L76).
 
 ## `Erdos305.erdos_305.variants.prime_lower_bound`
 
@@ -79,7 +79,7 @@ theorem erdos_305.variants.prime_lower_bound : ∃ c : ℝ, 0 < c ∧
     ∀ᶠ p : ℕ in atTop, p.Prime → c * p * log p ≤ Dmax p
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/305.lean, line 82](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/305.lean#L82).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/305.lean, line 82](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/305.lean#L82).
 
 ## `Erdos305.erdos_305.variants.yokota`
 
@@ -92,7 +92,7 @@ theorem erdos_305.variants.yokota : ∃ C : ℝ, 0 < C ∧ ∀ᶠ b : ℕ in atT
     (Dmax b : ℝ) ≤ C * b * log b * log (log b) ^ 4 * log (log (log b)) ^ 2
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/305.lean, line 90](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/305.lean#L90).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/305.lean, line 90](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/305.lean#L90).
 
 ## `Erdos305.erdos_305.variants.liu_sawhney`
 
@@ -105,7 +105,7 @@ theorem erdos_305.variants.liu_sawhney : ∃ C K : ℝ, 0 < C ∧ ∀ᶠ b : ℕ
     (Dmax b : ℝ) ≤ C * b * log b * log (log b) ^ 3 * log (log (log b)) ^ K
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/305.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/305.lean#L98).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/305.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/305.lean#L98).
 
 ## Depends on
 
@@ -113,5 +113,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/305.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/ErdosProblems/305.lean)
+- [FormalConjectures/ErdosProblems/305.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/ErdosProblems/305.lean)
 - [erdosproblems.com/305](https://www.erdosproblems.com/305)

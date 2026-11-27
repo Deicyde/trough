@@ -67,9 +67,9 @@ statement: formalized
 >   solution for $N = 10$ and $D = 8$ over integral domains](https://github.com/KitaKen1/monochromatic-quantum-graph-n10-d8-lean/tree/a9309005c7a27a2615f8e7eebef7a1db017809ab),
 >   commit `a9309005`.
 
-*Quoted from [FormalConjectures/Paper/MonochromaticQuantumGraph.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/MonochromaticQuantumGraph.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
-The file states 45 research or textbook statements: 16 open and 29 solved. It also has 3 test statements, counted here but not shown.
+The file states 45 research or textbook statements: 13 open and 32 solved. It also has 3 test statements and 2 API statements, counted here but not shown.
 
 ## `MonochromaticQuantumGraph.eqSystem4_no_solution_nnreal_ge4`
 
@@ -83,7 +83,7 @@ theorem eqSystem4_no_solution_nnreal_ge4 :
       ¬ ∃ W : WeightsN 4 D ℝ≥0, EqSystemN 4 D W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 346](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L346).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 373](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L373).
 
 ## `MonochromaticQuantumGraph.eqSystem_no_solution_nnreal_even_ge6_ge3`
 
@@ -98,7 +98,7 @@ theorem eqSystem_no_solution_nnreal_even_ge6_ge3 :
         ¬ ∃ W : WeightsN N D ℝ≥0, EqSystemN N D W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 353](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L353).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 380](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L380).
 
 ## `MonochromaticQuantumGraph.eqSystem_no_solution_even_ge4_d_eq_n_explicit`
 
@@ -115,7 +115,7 @@ theorem eqSystem_no_solution_even_ge4_d_eq_n_explicit :
       ¬ ∃ W : WeightsN N N ℂ, EqSystemN N N W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 383](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L383).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 410](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L410).
 
 ## `MonochromaticQuantumGraph.eqSystem4_no_solution_d4`
 
@@ -131,7 +131,7 @@ theorem eqSystem4_no_solution_d4 :
     ¬ ∃ W : WeightsN 4 4 ℂ, EqSystemN 4 4 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 395](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L395).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 422](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L422).
 
 ## `MonochromaticQuantumGraph.eqSystem4_no_solution_ge4`
 
@@ -148,7 +148,7 @@ theorem eqSystem4_no_solution_ge4 :
       ¬ ∃ W : WeightsN 4 D ℂ, EqSystemN 4 D W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 408](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L408).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 435](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L435).
 
 ## `MonochromaticQuantumGraph.eqSystem6_no_solution_d3`
 
@@ -164,7 +164,7 @@ theorem eqSystem6_no_solution_d3 :
     ¬ ∃ W : WeightsN 6 3 ℂ, EqSystemN 6 3 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 422](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L422).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 449](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L449).
 
 ## `MonochromaticQuantumGraph.eqSystem6_no_solution_d4`
 
@@ -178,7 +178,7 @@ theorem eqSystem6_no_solution_d4 :
     ¬ ∃ W : WeightsN 6 4 ℂ, EqSystemN 6 4 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 433](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L433).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 460](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L460).
 
 ## `MonochromaticQuantumGraph.eqSystem6_no_solution_d5`
 
@@ -194,7 +194,7 @@ theorem eqSystem6_no_solution_d5 :
     ¬ ∃ W : WeightsN 6 5 ℂ, EqSystemN 6 5 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 445](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L445).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 472](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L472).
 
 ## `MonochromaticQuantumGraph.eqSystem6_no_solution_d6`
 
@@ -210,14 +210,17 @@ theorem eqSystem6_no_solution_d6 :
     ¬ ∃ W : WeightsN 6 6 ℂ, EqSystemN 6 6 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 457](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L457).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 484](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L484).
 
 ## `MonochromaticQuantumGraph.eqSystem6_no_solution_ge3`
 
-Open: stated without proof.
+Proved here.
 
 > For $N = 6$ and all $D \geq 3$, does there exist no solution to the monochromatic quantum graph
 > equation system over $\mathbb{C}$?
+>
+> This follows from `eqSystem6_no_solution_d3`: a solution with $D \geq 3$ colours restricts to a
+> solution with $3$ colours.
 
 ```lean
 theorem eqSystem6_no_solution_ge3 :
@@ -225,7 +228,7 @@ theorem eqSystem6_no_solution_ge3 :
       ¬ ∃ W : WeightsN 6 D ℂ, EqSystemN 6 D W
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 464](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L464).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 494](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L494).
 
 ## `MonochromaticQuantumGraph.eqSystem8_no_solution_d3`
 
@@ -239,7 +242,7 @@ theorem eqSystem8_no_solution_d3 :
     ¬ ∃ W : WeightsN 8 3 ℂ, EqSystemN 8 3 W
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 472](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L472).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 503](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L503).
 
 ## `MonochromaticQuantumGraph.eqSystem8_no_solution_d10`
 
@@ -255,7 +258,7 @@ theorem eqSystem8_no_solution_d10 :
     ¬ ∃ W : WeightsN 8 10 ℂ, EqSystemN 8 10 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 484](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L484).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 515](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L515).
 
 ## `MonochromaticQuantumGraph.eqSystem10_no_solution_d3`
 
@@ -269,7 +272,7 @@ theorem eqSystem10_no_solution_d3 :
     ¬ ∃ W : WeightsN 10 3 ℂ, EqSystemN 10 3 W
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 491](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L491).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 522](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L522).
 
 ## `MonochromaticQuantumGraph.eqSystem10_no_solution_d4`
 
@@ -283,7 +286,7 @@ theorem eqSystem10_no_solution_d4 :
     ¬ ∃ W : WeightsN 10 4 ℂ, EqSystemN 10 4 W
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 498](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L498).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 529](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L529).
 
 ## `MonochromaticQuantumGraph.eqSystem10_no_solution_d5`
 
@@ -297,7 +300,7 @@ theorem eqSystem10_no_solution_d5 :
     ¬ ∃ W : WeightsN 10 5 ℂ, EqSystemN 10 5 W
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 505](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L505).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 536](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L536).
 
 ## `MonochromaticQuantumGraph.eqSystem10_no_solution_d6`
 
@@ -311,7 +314,7 @@ theorem eqSystem10_no_solution_d6 :
     ¬ ∃ W : WeightsN 10 6 ℂ, EqSystemN 10 6 W
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 512](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L512).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 543](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L543).
 
 ## `MonochromaticQuantumGraph.eqSystem10_no_solution_d7`
 
@@ -325,7 +328,7 @@ theorem eqSystem10_no_solution_d7 :
     ¬ ∃ W : WeightsN 10 7 ℂ, EqSystemN 10 7 W
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 519](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L519).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 550](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L550).
 
 ## `MonochromaticQuantumGraph.eqSystem10_no_solution_d8`
 
@@ -342,7 +345,7 @@ theorem eqSystem10_no_solution_d8 :
     ¬ ∃ W : WeightsN 10 8 ℂ, EqSystemN 10 8 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 532](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L532).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 563](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L563).
 
 ## `MonochromaticQuantumGraph.eqSystem10_no_solution_d9`
 
@@ -358,7 +361,7 @@ theorem eqSystem10_no_solution_d9 :
     ¬ ∃ W : WeightsN 10 9 ℂ, EqSystemN 10 9 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 543](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L543).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 574](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L574).
 
 ## `MonochromaticQuantumGraph.eqSystem10_no_solution_d10`
 
@@ -374,7 +377,7 @@ theorem eqSystem10_no_solution_d10 :
     ¬ ∃ W : WeightsN 10 10 ℂ, EqSystemN 10 10 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 554](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L554).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 585](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L585).
 
 ## `MonochromaticQuantumGraph.eqSystem12_no_solution_d3`
 
@@ -388,7 +391,7 @@ theorem eqSystem12_no_solution_d3 :
     ¬ ∃ W : WeightsN 12 3 ℂ, EqSystemN 12 3 W
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 561](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L561).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 592](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L592).
 
 ## `MonochromaticQuantumGraph.eqSystem14_no_solution_d3`
 
@@ -402,7 +405,7 @@ theorem eqSystem14_no_solution_d3 :
     ¬ ∃ W : WeightsN 14 3 ℂ, EqSystemN 14 3 W
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 568](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L568).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 599](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L599).
 
 ## `MonochromaticQuantumGraph.eqSystem16_no_solution_d3`
 
@@ -416,7 +419,7 @@ theorem eqSystem16_no_solution_d3 :
     ¬ ∃ W : WeightsN 16 3 ℂ, EqSystemN 16 3 W
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 575](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L575).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 606](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L606).
 
 ## `MonochromaticQuantumGraph.eqSystem_no_solution_ge6_ge3`
 
@@ -431,7 +434,7 @@ theorem eqSystem_no_solution_ge6_ge3 :
       ¬ ∃ W : WeightsN N D ℂ, EqSystemN N D W
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 584](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L584).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 615](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L615).
 
 ## `MonochromaticQuantumGraph.eqSystem4_no_solution_ge4_real`
 
@@ -449,21 +452,23 @@ theorem eqSystem4_no_solution_ge4_real :
       ¬ ∃ W : WeightsN 4 D ℝ, EqSystemN 4 D W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 601](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L601).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 632](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L632).
 
 ## `MonochromaticQuantumGraph.eqSystem6_no_solution_d3_real`
 
-Open: stated without proof.
+Proved here.
 
 > For $N = 6$ and $D = 3$, does there exist no solution to the monochromatic quantum graph
 > equation system over $\mathbb{R}$?
+>
+> This follows from `eqSystem6_no_solution_d3`: a real solution is a complex solution.
 
 ```lean
 theorem eqSystem6_no_solution_d3_real :
     ¬ ∃ W : WeightsN 6 3 ℝ, EqSystemN 6 3 W
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 609](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L609).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 642](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L642).
 
 ## `MonochromaticQuantumGraph.eqSystem6_no_solution_d5_real`
 
@@ -479,14 +484,16 @@ theorem eqSystem6_no_solution_d5_real :
     ¬ ∃ W : WeightsN 6 5 ℝ, EqSystemN 6 5 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 620](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L620).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 654](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L654).
 
 ## `MonochromaticQuantumGraph.eqSystem6_no_solution_ge3_real`
 
-Open: stated without proof.
+Proved here.
 
 > For $N = 6$ and all $D \geq 3$, does there exist no solution to the monochromatic quantum graph
 > equation system over $\mathbb{R}$?
+>
+> This follows from `eqSystem6_no_solution_ge3`: a real solution is a complex solution.
 
 ```lean
 theorem eqSystem6_no_solution_ge3_real :
@@ -494,7 +501,7 @@ theorem eqSystem6_no_solution_ge3_real :
       ¬ ∃ W : WeightsN 6 D ℝ, EqSystemN 6 D W
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 627](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L627).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 663](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L663).
 
 ## `MonochromaticQuantumGraph.eqSystem8_no_solution_d3_real`
 
@@ -508,7 +515,7 @@ theorem eqSystem8_no_solution_d3_real :
     ¬ ∃ W : WeightsN 8 3 ℝ, EqSystemN 8 3 W
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 635](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L635).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 672](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L672).
 
 ## `MonochromaticQuantumGraph.eqSystem10_no_solution_d3_real`
 
@@ -522,7 +529,7 @@ theorem eqSystem10_no_solution_d3_real :
     ¬ ∃ W : WeightsN 10 3 ℝ, EqSystemN 10 3 W
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 644](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L644).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 681](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L681).
 
 ## `MonochromaticQuantumGraph.eqSystem_no_solution_ge6_ge3_real`
 
@@ -537,7 +544,7 @@ theorem eqSystem_no_solution_ge6_ge3_real :
       ¬ ∃ W : WeightsN N D ℝ, EqSystemN N D W
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 651](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L651).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 688](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L688).
 
 ## `MonochromaticQuantumGraph.eqSystem4_no_solution_ge4_int`
 
@@ -555,7 +562,7 @@ theorem eqSystem4_no_solution_ge4_int :
       ¬ ∃ W : WeightsN 4 D ℤ, EqSystemN 4 D W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 667](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L667).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 704](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L704).
 
 ## `MonochromaticQuantumGraph.eqSystem6_no_solution_d3_int`
 
@@ -569,7 +576,7 @@ theorem eqSystem6_no_solution_d3_int :
     ¬ ∃ W : WeightsN 6 3 ℤ, EqSystemN 6 3 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 678](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L678).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 715](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L715).
 
 ## `MonochromaticQuantumGraph.eqSystem6_no_solution_d5_int`
 
@@ -583,7 +590,7 @@ theorem eqSystem6_no_solution_d5_int :
     ¬ ∃ W : WeightsN 6 5 ℤ, EqSystemN 6 5 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 688](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L688).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 725](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L725).
 
 ## `MonochromaticQuantumGraph.eqSystem6_no_solution_ge3_int`
 
@@ -598,7 +605,7 @@ theorem eqSystem6_no_solution_ge3_int :
       ¬ ∃ W : WeightsN 6 D ℤ, EqSystemN 6 D W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 698](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L698).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 735](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L735).
 
 ## `MonochromaticQuantumGraph.eqSystem8_no_solution_d3_int`
 
@@ -612,7 +619,7 @@ theorem eqSystem8_no_solution_d3_int :
     ¬ ∃ W : WeightsN 8 3 ℤ, EqSystemN 8 3 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 709](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L709).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 746](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L746).
 
 ## `MonochromaticQuantumGraph.eqSystem10_no_solution_d3_int`
 
@@ -626,7 +633,7 @@ theorem eqSystem10_no_solution_d3_int :
     ¬ ∃ W : WeightsN 10 3 ℤ, EqSystemN 10 3 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 720](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L720).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 757](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L757).
 
 ## `MonochromaticQuantumGraph.eqSystem_no_solution_ge6_ge3_int`
 
@@ -641,7 +648,7 @@ theorem eqSystem_no_solution_ge6_ge3_int :
       ¬ ∃ W : WeightsN N D ℤ, EqSystemN N D W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 730](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L730).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 767](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L767).
 
 ## `MonochromaticQuantumGraph.eqSystem4_no_solution_ge4_trinary_int`
 
@@ -660,7 +667,7 @@ theorem eqSystem4_no_solution_ge4_trinary_int :
             EqSystemN 4 D W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 746](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L746).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 783](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L783).
 
 ## `MonochromaticQuantumGraph.eqSystem6_no_solution_d3_trinary_int`
 
@@ -676,7 +683,7 @@ theorem eqSystem6_no_solution_d3_trinary_int :
           EqSystemN 6 3 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 759](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L759).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 796](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L796).
 
 ## `MonochromaticQuantumGraph.eqSystem6_no_solution_d5_trinary_int`
 
@@ -692,7 +699,7 @@ theorem eqSystem6_no_solution_d5_trinary_int :
           EqSystemN 6 5 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 771](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L771).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 808](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L808).
 
 ## `MonochromaticQuantumGraph.eqSystem6_no_solution_ge3_trinary_int`
 
@@ -709,7 +716,7 @@ theorem eqSystem6_no_solution_ge3_trinary_int :
             EqSystemN 6 D W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 783](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L783).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 820](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L820).
 
 ## `MonochromaticQuantumGraph.eqSystem8_no_solution_d3_trinary_int`
 
@@ -725,7 +732,7 @@ theorem eqSystem8_no_solution_d3_trinary_int :
           EqSystemN 8 3 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 796](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L796).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 833](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L833).
 
 ## `MonochromaticQuantumGraph.eqSystem10_no_solution_d3_trinary_int`
 
@@ -741,7 +748,7 @@ theorem eqSystem10_no_solution_d3_trinary_int :
           EqSystemN 10 3 W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 809](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L809).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 846](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L846).
 
 ## `MonochromaticQuantumGraph.eqSystem_no_solution_ge6_ge3_trinary_int`
 
@@ -758,7 +765,7 @@ theorem eqSystem_no_solution_ge6_ge3_trinary_int :
             EqSystemN N D W
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 821](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L821).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [81 Quantum theory](../../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/Paper/MonochromaticQuantumGraph.lean, line 858](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean#L858).
 
 ## Depends on
 
@@ -766,5 +773,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/MonochromaticQuantumGraph.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/MonochromaticQuantumGraph.lean)
+- [FormalConjectures/Paper/MonochromaticQuantumGraph.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/MonochromaticQuantumGraph.lean)
 - [Vertex coloring inherited from perfect matchings (motivated by quantum physics)](https://mathoverflow.net/questions/311325)

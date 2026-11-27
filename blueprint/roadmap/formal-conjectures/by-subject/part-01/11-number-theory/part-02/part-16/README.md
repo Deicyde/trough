@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# Numerator of $\binom{6n-2}{2n}… to Conjectures associated with…
+# Numbers $n$ such that $\phi(n)… to Number of digits of n raised to…
 
+- [Numbers $n$ such that $\phi(n) = \phi(n + \phi(n))$](../../../../../oeis/part-07/numbers-n-such-that-phi-n-phi-n-phi-n.md)
+- [Numbers $n$ such that the perfect deficiency of $n$ is $\le 10$.](../../../../../oeis/part-07/numbers-n-such-that-the-perfect-deficiency-of-n.md)
+- [Numerator of $\sum_{k=1}^n 2^k/k$.](../../../../../oeis/part-07/numerator-of-sum-k-1-n-2-k-k.md)
 - [Numerator of $\binom{6n-2}{2n} / \left(2 \binom{4n-1}{2n}\right)$](../../../../../oeis/part-07/numerator-of-binom-6n-2-2n-left-2-binom-4n-1-2n.md)
 - [Conjectures associated with A109227](../../../../../oeis/part-07/conjectures-associated-with-a109227.md)
 - [Conjectures associated with A109671](../../../../../oeis/part-07/conjectures-associated-with-a109671.md)
@@ -21,6 +24,3 @@ navigation: transparent
 - [A generalized Stern sequence](../../../../../oeis/part-08/a-generalized-stern-sequence.md)
 - [Number of digits of n raised to the power of the sum of the digits of n](../../../../../oeis/part-08/number-of-digits-of-n-raised-to-the-power-of-the.md)
 - [Number of digits of n raised to the power of the digital root of n](../../../../../oeis/part-08/number-of-digits-of-n-raised-to-the-power-of-the-2.md)
-- [Smallest number $m$ such that $2^n - m$ and $2^n + m$ are primes](../../../../../oeis/part-08/smallest-number-m-such-that-2-n-m-and-2-n-m-are.md)
-- [Expansion of g.f. $-(1 - 48x^2 - 256x^3) / ((1 - 4x)(1 + 4x)(1 + 4x + 16x^2))$](../../../../../oeis/part-08/expansion-of-g-f-1-48x-2-256x-3-1-4x-1-4x-1-4x-1.md)
-- [Conjectures associated with A113252](../../../../../oeis/part-08/conjectures-associated-with-a113252.md)

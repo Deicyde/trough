@@ -13,7 +13,7 @@ navigation: transparent
 - [70. `Erdos951.erdos_951.variants.isBeurlingPrimes` (API), in Erdős Problem 951](../../../erdos-problems/900-999/part-03/erdos-problem-951.md)
 - [71. `Erdos965.erdos_965.variants.generalization` (research solved), in Erdős Problem 965](../../../erdos-problems/900-999/part-03/erdos-problem-965.md)
 - [72. `Erdos985.erdos_985.variants.two_three_five_primitive_root` (research solved), in Erdős Problem 985](../../../erdos-problems/900-999/part-04/erdos-problem-985.md)
-- [73. `PellNumbers.pellNumber_two` (test), in Infinitude of Pell number primes](../../../wikipedia/part-06/infinitude-of-pell-number-primes.md)
+- [73. `PellNumbers.pellNumber_two` (test), in Infinitude of Pell number primes](../../../wikipedia/part-07/infinitude-of-pell-number-primes.md)
 - [75. `BusyBeaver.sanity_check` (API), in Busy Beaver](../../../wikipedia/part-02/busy-beaver.md)
 - [76. `OpenQuantumProblem13.Qubit.firstCol_normSq` (API), in Open Quantum Problem 13: Mutually unbiased bases](../../../open-quantum-problems/open-quantum-problem-13-mutually-unbiased-bases.md)
 - [77. `Erdos263.erdos_263.variants.sub_doubly_exponential` (research solved), in Erdős Problem 263](../../../erdos-problems/200-299/part-03/erdos-problem-263.md)

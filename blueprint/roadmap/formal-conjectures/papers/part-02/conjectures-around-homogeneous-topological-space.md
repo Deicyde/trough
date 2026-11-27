@@ -18,7 +18,7 @@ statement: formalized
 >   images." Russian Mathematical Surveys 42.2 (1987): 83-131.
 >   https://doi.org/10.1070/RM1987v042n02ABEH001333
 
-*Quoted from [FormalConjectures/Paper/Homogenous.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/Homogenous.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/Homogenous.lean](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/Homogenous.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [f606af16](https://github.com/google-deepmind/formal-conjectures/tree/f606af160664c5a10952e9a957b100a1cd45bbeb), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 5 open. It also has 5 test statements, counted here but not shown.
 
@@ -36,7 +36,7 @@ theorem homogeneousSpace_exists_inj_tendsto :
       HomogeneousSpace X → ∃ s : ℕ → X, s.Injective ∧ ∃ a : X, Tendsto s atTop (nhds a)
 ```
 
-Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/Homogenous.lean, line 63](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/Homogenous.lean#L63).
+Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/Homogenous.lean, line 63](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/Homogenous.lean#L63).
 
 ## `Homogeneous.homogeneousSpace_exists_surjective`
 
@@ -53,7 +53,7 @@ theorem homogeneousSpace_exists_surjective :
         ∃ f : Y → X, Continuous f ∧ f.Surjective
 ```
 
-Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/Homogenous.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/Homogenous.lean#L72).
+Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/Homogenous.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/Homogenous.lean#L72).
 
 ## `Homogeneous.firstCountableTopology_of_countablyMonolithicSpace`
 
@@ -68,7 +68,7 @@ theorem firstCountableTopology_of_countablyMonolithicSpace :
       HomogeneousSpace X → CountablyMonolithicSpace X → FirstCountableTopology X
 ```
 
-Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/Homogenous.lean, line 94](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/Homogenous.lean#L94).
+Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/Homogenous.lean, line 94](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/Homogenous.lean#L94).
 
 ## `Homogeneous.countablyMonolithicSpace_card_lt`
 
@@ -83,7 +83,7 @@ theorem countablyMonolithicSpace_card_lt :
       HomogeneousSpace X → CountablyMonolithicSpace X → #X ≤ 𝔠
 ```
 
-Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/Homogenous.lean, line 102](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/Homogenous.lean#L102).
+Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/Homogenous.lean, line 102](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/Homogenous.lean#L102).
 
 ## `Homogeneous.monolithicSpace_exists_nhds_generated_countable`
 
@@ -101,7 +101,7 @@ theorem monolithicSpace_exists_nhds_generated_countable :
       Nonempty X → MonolithicSpace X → ∃ x : X, (𝓝 x).IsCountablyGenerated
 ```
 
-Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/Homogenous.lean, line 152](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/Homogenous.lean#L152).
+Category `research open`; AMS [54 General topology](../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/Paper/Homogenous.lean, line 152](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/Homogenous.lean#L152).
 
 ## Depends on
 
@@ -109,5 +109,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/Homogenous.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/Homogenous.lean)
+- [FormalConjectures/Paper/Homogenous.lean at f606af16](https://github.com/google-deepmind/formal-conjectures/blob/f606af160664c5a10952e9a957b100a1cd45bbeb/FormalConjectures/Paper/Homogenous.lean)
 - [https://www.math.md/files/basm/y2013-n2-3/y2013-n2-3-(pp37-46](https://www.math.md/files/basm/y2013-n2-3/y2013-n2-3-%28pp37-46)
