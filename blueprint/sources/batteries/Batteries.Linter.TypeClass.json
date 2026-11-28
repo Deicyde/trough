@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "dd0900df51045e7d9be143ed167c9d200bcf2b45",
+ "module": "Batteries.Linter.TypeClass",
+ "file": "Batteries/Linter/TypeClass.lean",
+ "public": [
+  {"name": "Batteries.Linter.impossibleInstance", "kind": "def", "line": 24},
+  {"name": "Batteries.Linter.nonClassInstance", "kind": "def", "line": 49},
+  {"name": "Batteries.Tactic.Lint.impossibleInstance", "kind": "alias", "line": 65},
+  {"name": "Batteries.Tactic.Lint.nonClassInstance", "kind": "alias", "line": 67}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

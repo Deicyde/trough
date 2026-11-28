@@ -7,7 +7,7 @@ proof: formalized
 
 # A nondeterminism monad
 
-`Batteries.Control.Nondet.Basic`, in [Batteries/Control/Nondet/Basic.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean), by Kim Morrison.
+`Batteries.Control.Nondet.Basic`, in [Batteries/Control/Nondet/Basic.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean), by Kim Morrison.
 
 > We represent nondeterministic values in a type `α` as a single field structure containing an
 > `MLList m (σ × α)`, i.e. as a monadic lazy list of possible values,
@@ -23,7 +23,7 @@ proof: formalized
 > (typically this doesn't need to be done explicitly,
 > but just happens as a side effect in the monad `m`).
 
-`Nondet` (structure, [line 50](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L50))
+`Nondet` (structure, [line 50](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L50))
 
 > `Nondet m α` is variation on `MLList m α` suitable for use with backtrackable monads `m`.
 >
@@ -47,7 +47,7 @@ structure Nondet (m : Type → Type) [MonadBacktrack σ m] (α : Type) : Type wh
   toMLList : MLList m (α × σ)
 ```
 
-`Nondet.nil` (definition, [line 64](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L64))
+`Nondet.nil` (definition, [line 64](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L64))
 
 > The empty nondeterministic value.
 
@@ -55,7 +55,7 @@ structure Nondet (m : Type → Type) [MonadBacktrack σ m] (α : Type) : Type wh
 def nil : Nondet m α
 ```
 
-`Nondet.squash` (definition, [line 71](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L71))
+`Nondet.squash` (definition, [line 71](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L71))
 
 > Squash a monadic nondeterministic value to a nondeterministic value.
 
@@ -63,7 +63,7 @@ def nil : Nondet m α
 def squash (L : Unit → m (Nondet m α)) : Nondet m α
 ```
 
-`Nondet.bind` (definition, [line 78](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L78))
+`Nondet.bind` (definition, [line 78](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L78))
 
 > Bind a nondeterministic function over a nondeterministic value,
 > ensuring the function is run with the relevant backtrackable state at each value.
@@ -72,7 +72,7 @@ def squash (L : Unit → m (Nondet m α)) : Nondet m α
 partial def bind (L : Nondet m α) (f : α → Nondet m β) : Nondet m β
 ```
 
-`Nondet.singletonM` (definition, [line 89](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L89))
+`Nondet.singletonM` (definition, [line 89](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L89))
 
 > Convert any value in the monad to the singleton nondeterministic value.
 
@@ -80,7 +80,7 @@ partial def bind (L : Nondet m α) (f : α → Nondet m β) : Nondet m β
 def singletonM (x : m α) : Nondet m α
 ```
 
-`Nondet.singleton` (definition, [line 95](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L95))
+`Nondet.singleton` (definition, [line 95](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L95))
 
 > Convert a value to the singleton nondeterministic value.
 
@@ -88,7 +88,7 @@ def singletonM (x : m α) : Nondet m α
 def singleton (x : α) : Nondet m α
 ```
 
-`Nondet.ofListM` (definition, [line 111](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L111))
+`Nondet.ofListM` (definition, [line 111](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L111))
 
 > Lift a list of monadic values to a nondeterministic value.
 > We ensure that each monadic value is evaluated with the same backtrackable state.
@@ -97,7 +97,7 @@ def singleton (x : α) : Nondet m α
 def ofListM (L : List (m α)) : Nondet m α
 ```
 
-`Nondet.ofList` (definition, [line 124](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L124))
+`Nondet.ofList` (definition, [line 124](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L124))
 
 > Lift a list of values to a nondeterministic value.
 > (The backtrackable state in each will be identical:
@@ -107,7 +107,7 @@ def ofListM (L : List (m α)) : Nondet m α
 def ofList (L : List α) : Nondet m α
 ```
 
-`Nondet.mapM` (definition, [line 127](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L127))
+`Nondet.mapM` (definition, [line 127](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L127))
 
 > Apply a function which returns values in the monad to every alternative of a `Nondet m α`.
 
@@ -115,7 +115,7 @@ def ofList (L : List α) : Nondet m α
 def mapM (f : α → m β) (L : Nondet m α) : Nondet m β
 ```
 
-`Nondet.map` (definition, [line 131](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L131))
+`Nondet.map` (definition, [line 131](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L131))
 
 > Apply a function to each alternative in a `Nondet m α` .
 
@@ -123,7 +123,7 @@ def mapM (f : α → m β) (L : Nondet m α) : Nondet m β
 def map (f : α → β) (L : Nondet m α) : Nondet m β
 ```
 
-`Nondet.ofOptionM` (definition, [line 135](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L135))
+`Nondet.ofOptionM` (definition, [line 135](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L135))
 
 > Convert a monadic optional value to a nondeterministic value.
 
@@ -131,7 +131,7 @@ def map (f : α → β) (L : Nondet m α) : Nondet m β
 def ofOptionM (x : m (Option α)) : Nondet m α
 ```
 
-`Nondet.ofOption` (definition, [line 141](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L141))
+`Nondet.ofOption` (definition, [line 141](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L141))
 
 > Convert an optional value to a nondeterministic value.
 
@@ -139,7 +139,7 @@ def ofOptionM (x : m (Option α)) : Nondet m α
 def ofOption (x : Option α) : Nondet m α
 ```
 
-`Nondet.filterMapM` (definition, [line 144](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L144))
+`Nondet.filterMapM` (definition, [line 144](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L144))
 
 > Filter and map a nondeterministic value using a monadic function which may return `none`.
 
@@ -147,7 +147,7 @@ def ofOption (x : Option α) : Nondet m α
 def filterMapM (f : α → m (Option β)) (L : Nondet m α) : Nondet m β
 ```
 
-`Nondet.filterMap` (definition, [line 148](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L148))
+`Nondet.filterMap` (definition, [line 148](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L148))
 
 > Filter and map a nondeterministic value.
 
@@ -155,7 +155,7 @@ def filterMapM (f : α → m (Option β)) (L : Nondet m α) : Nondet m β
 def filterMap (f : α → Option β) (L : Nondet m α) : Nondet m β
 ```
 
-`Nondet.filterM` (definition, [line 152](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L152))
+`Nondet.filterM` (definition, [line 152](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L152))
 
 > Filter a nondeterministic value using a monadic predicate.
 
@@ -163,7 +163,7 @@ def filterMap (f : α → Option β) (L : Nondet m α) : Nondet m β
 def filterM (p : α → m (ULift Bool)) (L : Nondet m α) : Nondet m α
 ```
 
-`Nondet.filter` (definition, [line 160](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L160))
+`Nondet.filter` (definition, [line 160](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L160))
 
 > Filter a nondeterministic value.
 
@@ -171,7 +171,7 @@ def filterM (p : α → m (ULift Bool)) (L : Nondet m α) : Nondet m α
 def filter (p : α → Bool) (L : Nondet m α) : Nondet m α
 ```
 
-`Nondet.iterate` (definition, [line 168](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L168))
+`Nondet.iterate` (definition, [line 168](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L168))
 
 > All iterations of a non-deterministic function on an initial value.
 >
@@ -181,7 +181,7 @@ def filter (p : α → Bool) (L : Nondet m α) : Nondet m α
 partial def iterate (f : α → Nondet m α) (a : α) : Nondet m α
 ```
 
-`Nondet.toMLList'` (definition, [line 174](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L174))
+`Nondet.toMLList'` (definition, [line 174](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L174))
 
 > Convert a non-deterministic value into a lazy list, by discarding the backtrackable state.
 
@@ -189,7 +189,7 @@ partial def iterate (f : α → Nondet m α) (a : α) : Nondet m α
 def toMLList' (L : Nondet m α) : MLList m α
 ```
 
-`Nondet.toList` (definition, [line 179](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L179))
+`Nondet.toList` (definition, [line 179](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L179))
 
 > Convert a non-deterministic value into a list in the monad, retaining the backtrackable state.
 
@@ -197,7 +197,7 @@ def toMLList' (L : Nondet m α) : MLList m α
 def toList (L : Nondet m α) : m (List (α × σ))
 ```
 
-`Nondet.toList'` (definition, [line 184](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L184))
+`Nondet.toList'` (definition, [line 184](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L184))
 
 > Convert a non-deterministic value into a list in the monad, by discarding the backtrackable state.
 
@@ -205,7 +205,7 @@ def toList (L : Nondet m α) : m (List (α × σ))
 def toList' (L : Nondet m α) : m (List α)
 ```
 
-`Nondet.head` (definition, [line 194](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L194))
+`Nondet.head` (definition, [line 194](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L194))
 
 > Find the first alternative in a nondeterministic value, as a monadic value.
 
@@ -213,7 +213,7 @@ def toList' (L : Nondet m α) : m (List α)
 def head (L : Nondet m α) : m α
 ```
 
-`Nondet.firstM` (definition, [line 203](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean#L203))
+`Nondet.firstM` (definition, [line 203](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean#L203))
 
 > Find the value of a monadic function on the first alternative in a nondeterministic value
 > where the function succeeds.
@@ -228,5 +228,5 @@ def firstM (L : Nondet m α) (f : α → m (Option β)) : m β
 
 ## Sources
 
-- [Batteries/Control/Nondet/Basic.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/Nondet/Basic.lean)
+- [Batteries/Control/Nondet/Basic.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/Nondet/Basic.lean)
 - [Declaration ledger](../../../../sources/batteries/Batteries.Control.Nondet.Basic.json)

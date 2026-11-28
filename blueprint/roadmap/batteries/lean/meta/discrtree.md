@@ -7,9 +7,9 @@ proof: formalized
 
 # DiscrTree
 
-`Batteries.Lean.Meta.DiscrTree`, in [Batteries/Lean/Meta/DiscrTree.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/DiscrTree.lean), by Jannis Limperg, Kim Morrison.
+`Batteries.Lean.Meta.DiscrTree`, in [Batteries/Lean/Meta/DiscrTree.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/DiscrTree.lean), by Jannis Limperg, Kim Morrison.
 
-`Lean.Meta.DiscrTree.Key.cmp` (definition, [line 23](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/DiscrTree.lean#L23))
+`Lean.Meta.DiscrTree.Key.cmp` (definition, [line 23](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/DiscrTree.lean#L23))
 
 > Compare two `Key`s. The ordering is total but otherwise arbitrary. (It uses
 > `Name.quickCmp` internally.)
@@ -18,7 +18,7 @@ proof: formalized
 protected def cmp : Key → Key → Ordering
 ```
 
-`Lean.Meta.DiscrTree.Trie.mergePreservingDuplicates` (definition, [line 41](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/DiscrTree.lean#L41))
+`Lean.Meta.DiscrTree.Trie.mergePreservingDuplicates` (definition, [line 41](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/DiscrTree.lean#L41))
 
 > Merge two `Trie`s. Duplicate values are preserved.
 
@@ -26,7 +26,7 @@ protected def cmp : Key → Key → Ordering
 partial def mergePreservingDuplicates (t₁ t₂ : Trie α) : Trie α
 ```
 
-`Lean.Meta.DiscrTree.mergePreservingDuplicates` (definition, [line 59](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/DiscrTree.lean#L59))
+`Lean.Meta.DiscrTree.mergePreservingDuplicates` (definition, [line 59](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/DiscrTree.lean#L59))
 
 > Merge two `DiscrTree`s. Duplicate values are preserved.
 
@@ -44,5 +44,5 @@ def mergePreservingDuplicates (t u : DiscrTree α) : DiscrTree α
 
 ## Sources
 
-- [Batteries/Lean/Meta/DiscrTree.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/DiscrTree.lean)
+- [Batteries/Lean/Meta/DiscrTree.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/DiscrTree.lean)
 - [Declaration ledger](../../../../sources/batteries/Batteries.Lean.Meta.DiscrTree.json)

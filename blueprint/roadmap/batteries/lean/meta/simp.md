@@ -7,11 +7,11 @@ proof: formalized
 
 # Helper functions for using the simplifier
 
-`Batteries.Lean.Meta.Simp`, in [Batteries/Lean/Meta/Simp.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Simp.lean), by Kim Morrison, Gabriel Ebner, Floris van Doorn.
+`Batteries.Lean.Meta.Simp`, in [Batteries/Lean/Meta/Simp.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Simp.lean), by Kim Morrison, Gabriel Ebner, Floris van Doorn.
 
 > …
 
-`Lean.Meta.Simp.mkEqSymm` (definition, [line 26](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Simp.lean#L26))
+`Lean.Meta.Simp.mkEqSymm` (definition, [line 26](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Simp.lean#L26))
 
 > Flip the proof in a `Simp.Result`.
 
@@ -19,7 +19,7 @@ proof: formalized
 def mkEqSymm (e : Expr) (r : Simp.Result) : MetaM Simp.Result
 ```
 
-`Lean.Meta.Simp.mkCast` (definition, [line 33](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Simp.lean#L33))
+`Lean.Meta.Simp.mkCast` (definition, [line 33](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Simp.lean#L33))
 
 > Construct the `Expr` `cast h e`, from a `Simp.Result` with proof `h`.
 
@@ -27,7 +27,7 @@ def mkEqSymm (e : Expr) (r : Simp.Result) : MetaM Simp.Result
 def mkCast (r : Simp.Result) (e : Expr) : MetaM Expr
 ```
 
-`Lean.Meta.Simp.mkDischargeWrapper` (definition, [line 37](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Simp.lean#L37))
+`Lean.Meta.Simp.mkDischargeWrapper` (definition, [line 37](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Simp.lean#L37))
 
 > Construct a `Simp.DischargeWrapper` from the `Syntax` for a `simp` discharger.
 
@@ -35,7 +35,7 @@ def mkCast (r : Simp.Result) (e : Expr) : MetaM Expr
 nonrec def mkDischargeWrapper
 ```
 
-`Lean.Meta.Simp.mkSimpContext'` (definition, [line 45](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Simp.lean#L45))
+`Lean.Meta.Simp.mkSimpContext'` (definition, [line 45](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Simp.lean#L45))
 
 > If `ctx == false`, the config argument is assumed to have type `Meta.Simp.Config`,
 > and `Meta.Simp.ConfigCtx` otherwise.
@@ -53,5 +53,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Lean/Meta/Simp.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Simp.lean)
+- [Batteries/Lean/Meta/Simp.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Simp.lean)
 - [Declaration ledger](../../../../sources/batteries/Batteries.Lean.Meta.Simp.json)

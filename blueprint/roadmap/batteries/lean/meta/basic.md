@@ -7,9 +7,9 @@ proof: formalized
 
 # Meta/Basic
 
-`Batteries.Lean.Meta.Basic`, in [Batteries/Lean/Meta/Basic.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Basic.lean), by Mario Carneiro, Jannis Limperg.
+`Batteries.Lean.Meta.Basic`, in [Batteries/Lean/Meta/Basic.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Basic.lean), by Mario Carneiro, Jannis Limperg.
 
-`Lean.Meta.sortFVarsByContextOrder` (definition, [line 25](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Basic.lean#L25))
+`Lean.Meta.sortFVarsByContextOrder` (definition, [line 25](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Basic.lean#L25))
 
 > Sort the given `FVarId`s by the order in which they appear in the current local
 > context. If any of the `FVarId`s do not appear in the current local context, the
@@ -20,7 +20,7 @@ def Meta.sortFVarsByContextOrder [Monad m] [MonadLCtx m]
     (hyps : Array FVarId) : m (Array FVarId)
 ```
 
-`Lean.MetavarContext.getExprMVarDecl` (definition, [line 35](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Basic.lean#L35))
+`Lean.MetavarContext.getExprMVarDecl` (definition, [line 35](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Basic.lean#L35))
 
 > Get the `MetavarDecl` of `mvarId`. If `mvarId` is not a declared metavariable
 > in the given `MetavarContext`, throw an error.
@@ -30,7 +30,7 @@ def getExprMVarDecl [Monad m] [MonadError m] (mctx : MetavarContext)
     (mvarId : MVarId) : m MetavarDecl
 ```
 
-`Lean.MetavarContext.declareExprMVar` (definition, [line 46](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Basic.lean#L46))
+`Lean.MetavarContext.declareExprMVar` (definition, [line 46](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Basic.lean#L46))
 
 > Declare a metavariable. You must make sure that the metavariable is not already
 > declared.
@@ -40,7 +40,7 @@ def declareExprMVar (mctx : MetavarContext) (mvarId : MVarId)
     (mdecl : MetavarDecl) : MetavarContext
 ```
 
-`Lean.MetavarContext.isExprMVarAssignedOrDelayedAssigned` (definition, [line 57](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Basic.lean#L57))
+`Lean.MetavarContext.isExprMVarAssignedOrDelayedAssigned` (definition, [line 57](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Basic.lean#L57))
 
 > Check whether a metavariable is assigned or delayed-assigned. A
 > delayed-assigned metavariable is already 'solved' but the solution cannot be
@@ -53,7 +53,7 @@ def isExprMVarAssignedOrDelayedAssigned (mctx : MetavarContext)
     (mvarId : MVarId) : Bool
 ```
 
-`Lean.MetavarContext.isExprMVarDeclared` (definition, [line 64](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Basic.lean#L64))
+`Lean.MetavarContext.isExprMVarDeclared` (definition, [line 64](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Basic.lean#L64))
 
 > Check whether a metavariable is declared in the given `MetavarContext`.
 
@@ -61,7 +61,7 @@ def isExprMVarAssignedOrDelayedAssigned (mctx : MetavarContext)
 def isExprMVarDeclared (mctx : MetavarContext) (mvarId : MVarId) : Bool
 ```
 
-`Lean.MetavarContext.eraseExprMVarAssignment` (definition, [line 70](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Basic.lean#L70))
+`Lean.MetavarContext.eraseExprMVarAssignment` (definition, [line 70](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Basic.lean#L70))
 
 > Erase any assignment or delayed assignment of the given metavariable.
 
@@ -70,7 +70,7 @@ def eraseExprMVarAssignment (mctx : MetavarContext) (mvarId : MVarId) :
     MetavarContext
 ```
 
-`Lean.MetavarContext.unassignedExprMVars` (definition, [line 81](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Basic.lean#L81))
+`Lean.MetavarContext.unassignedExprMVars` (definition, [line 81](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Basic.lean#L81))
 
 > Obtain all unassigned metavariables from the given `MetavarContext`. If
 > `includeDelayed` is `true`, delayed-assigned metavariables are considered
@@ -81,7 +81,7 @@ def unassignedExprMVars (mctx : MetavarContext) (includeDelayed := false) :
     Array MVarId
 ```
 
-`Lean.MVarId.isDeclared` (definition, [line 98](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Basic.lean#L98))
+`Lean.MVarId.isDeclared` (definition, [line 98](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Basic.lean#L98))
 
 > Check whether a metavariable is declared.
 
@@ -89,7 +89,7 @@ def unassignedExprMVars (mctx : MetavarContext) (includeDelayed := false) :
 def isDeclared [Monad m] [MonadMCtx m] (mvarId : MVarId) : m Bool
 ```
 
-`Lean.MVarId.eraseAssignment` (definition, [line 104](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Basic.lean#L104))
+`Lean.MVarId.eraseAssignment` (definition, [line 104](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Basic.lean#L104))
 
 > Erase any assignment or delayed assignment of the given metavariable.
 
@@ -97,7 +97,7 @@ def isDeclared [Monad m] [MonadMCtx m] (mvarId : MVarId) : m Bool
 def eraseAssignment [MonadMCtx m] (mvarId : MVarId) : m Unit
 ```
 
-`Lean.MVarId.synthInstance` (definition, [line 109](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Basic.lean#L109))
+`Lean.MVarId.synthInstance` (definition, [line 109](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Basic.lean#L109))
 
 > Solve a goal by synthesizing an instance.
 
@@ -105,7 +105,7 @@ def eraseAssignment [MonadMCtx m] (mvarId : MVarId) : m Unit
 def synthInstance (g : MVarId) : MetaM Unit
 ```
 
-`Lean.MVarId.getTypeCleanup` (definition, [line 114](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Basic.lean#L114))
+`Lean.MVarId.getTypeCleanup` (definition, [line 114](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Basic.lean#L114))
 
 > Get the type the given metavariable after instantiating metavariables and cleaning up
 > annotations.
@@ -114,7 +114,7 @@ def synthInstance (g : MVarId) : MetaM Unit
 def getTypeCleanup (mvarId : MVarId) : MetaM Expr
 ```
 
-`Lean.Meta.getUnassignedExprMVars` (definition, [line 126](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Basic.lean#L126))
+`Lean.Meta.getUnassignedExprMVars` (definition, [line 126](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Basic.lean#L126))
 
 > Obtain all unassigned metavariables. If `includeDelayed` is `true`,
 > delayed-assigned metavariables are considered unassigned.
@@ -124,7 +124,7 @@ def getUnassignedExprMVars [Monad m] [MonadMCtx m] (includeDelayed := false) :
     m (Array MVarId)
 ```
 
-`Lean.Meta.unhygienic` (definition, [line 133](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Basic.lean#L133))
+`Lean.Meta.unhygienic` (definition, [line 133](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Basic.lean#L133))
 
 > Run a computation with hygiene turned off.
 
@@ -132,7 +132,7 @@ def getUnassignedExprMVars [Monad m] [MonadMCtx m] (includeDelayed := false) :
 def unhygienic [MonadWithOptions m] (x : m α) : m α
 ```
 
-`Lean.Meta.mkFreshIdWithPrefix` (definition, [line 141](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Basic.lean#L141))
+`Lean.Meta.mkFreshIdWithPrefix` (definition, [line 141](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Basic.lean#L141))
 
 > A variant of `mkFreshId` which generates names with a particular prefix. The
 > generated names are unique and have the form `<prefix>.<N>` where `N` is a
@@ -143,7 +143,7 @@ def mkFreshIdWithPrefix [Monad m] [MonadNameGenerator m] («prefix» : Name) :
     m Name
 ```
 
-`Lean.Meta.saturate1` (definition, [line 157](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Basic.lean#L157))
+`Lean.Meta.saturate1` (definition, [line 157](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Basic.lean#L157))
 
 > `saturate1 goal tac` runs `tac` on `goal`, then on the resulting goals, etc.,
 > until `tac` does not apply to any goal any more (i.e. it returns `none`). The
@@ -164,5 +164,5 @@ partial def saturate1 [Monad m] [MonadError m] [MonadRecDepth m] [MonadLiftT (ST
 
 ## Sources
 
-- [Batteries/Lean/Meta/Basic.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Basic.lean)
+- [Batteries/Lean/Meta/Basic.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Meta/Basic.lean)
 - [Declaration ledger](../../../../sources/batteries/Batteries.Lean.Meta.Basic.json)

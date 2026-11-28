@@ -7,9 +7,9 @@ proof: formalized
 
 # AttributeExtra
 
-`Batteries.Lean.AttributeExtra`, in [Batteries/Lean/AttributeExtra.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/AttributeExtra.lean), by Mario Carneiro.
+`Batteries.Lean.AttributeExtra`, in [Batteries/Lean/AttributeExtra.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/AttributeExtra.lean), by Mario Carneiro.
 
-`Lean.TagAttributeExtra` (structure, [line 30](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/AttributeExtra.lean#L30))
+`Lean.TagAttributeExtra` (structure, [line 30](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/AttributeExtra.lean#L30))
 
 > `TagAttributeExtra` works around a limitation of `TagAttribute`, which is that definitions
 > must be tagged in the same file that declares the definition.
@@ -31,7 +31,7 @@ structure TagAttributeExtra where
   deriving Inhabited
 ```
 
-`Lean.registerTagAttributeExtra` (definition, [line 45](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/AttributeExtra.lean#L45))
+`Lean.registerTagAttributeExtra` (definition, [line 45](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/AttributeExtra.lean#L45))
 
 > Registers a new tag attribute. The `extra` field is a list of definitions from other modules
 > which will be "pre-tagged" and are not subject to the usual restriction on tagging in the same
@@ -46,7 +46,7 @@ def registerTagAttributeExtra (name : Name) (descr : String) (extra : List Name)
     IO TagAttributeExtra
 ```
 
-`Lean.TagAttributeExtra.hasTag` (definition, [line 54](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/AttributeExtra.lean#L54))
+`Lean.TagAttributeExtra.hasTag` (definition, [line 54](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/AttributeExtra.lean#L54))
 
 > Does declaration `decl` have the tag `attr`?
 
@@ -54,7 +54,7 @@ def registerTagAttributeExtra (name : Name) (descr : String) (extra : List Name)
 def hasTag (attr : TagAttributeExtra) (env : Environment) (decl : Name) : Bool
 ```
 
-`Lean.TagAttributeExtra.getDecls` (definition, [line 61](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/AttributeExtra.lean#L61))
+`Lean.TagAttributeExtra.getDecls` (definition, [line 61](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/AttributeExtra.lean#L61))
 
 > Get the list of declarations tagged with the tag attribute `attr`.
 
@@ -62,7 +62,7 @@ def hasTag (attr : TagAttributeExtra) (env : Environment) (decl : Name) : Bool
 def getDecls (attr : TagAttributeExtra) (env : Environment) : Array Name
 ```
 
-`Lean.ParametricAttributeExtra` (structure, [line 79](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/AttributeExtra.lean#L79))
+`Lean.ParametricAttributeExtra` (structure, [line 79](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/AttributeExtra.lean#L79))
 
 > `ParametricAttributeExtra` works around a limitation of `ParametricAttribute`, which is that
 > definitions must be tagged in the same file that declares the definition.
@@ -84,7 +84,7 @@ structure ParametricAttributeExtra (α : Type) where
   deriving Inhabited
 ```
 
-`Lean.registerParametricAttributeExtra` (definition, [line 91](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/AttributeExtra.lean#L91))
+`Lean.registerParametricAttributeExtra` (definition, [line 91](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/AttributeExtra.lean#L91))
 
 > Registers a new parametric attribute. The `extra` field is a list of definitions from other modules
 > which will be "pre-tagged" and are not subject to the usual restriction on tagging in the same
@@ -95,7 +95,7 @@ def registerParametricAttributeExtra (impl : ParametricAttributeImpl α)
     (extra : List (Name × α)) : IO (ParametricAttributeExtra α)
 ```
 
-`Lean.ParametricAttributeExtra.getParam?` (definition, [line 102](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/AttributeExtra.lean#L102))
+`Lean.ParametricAttributeExtra.getParam?` (definition, [line 102](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/AttributeExtra.lean#L102))
 
 > Gets the parameter of attribute `attr` associated to declaration `decl`,
 > or `none` if `decl` is not tagged.
@@ -105,7 +105,7 @@ def getParam? [Inhabited α] (attr : ParametricAttributeExtra α)
     (env : Environment) (decl : Name) : Option α
 ```
 
-`Lean.ParametricAttributeExtra.setParam` (definition, [line 107](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/AttributeExtra.lean#L107))
+`Lean.ParametricAttributeExtra.setParam` (definition, [line 107](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/AttributeExtra.lean#L107))
 
 > Applies attribute `attr` to declaration `decl`, given a value for the parameter.
 
@@ -120,5 +120,5 @@ def setParam (attr : ParametricAttributeExtra α)
 
 ## Sources
 
-- [Batteries/Lean/AttributeExtra.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/AttributeExtra.lean)
+- [Batteries/Lean/AttributeExtra.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/AttributeExtra.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Lean.AttributeExtra.json)

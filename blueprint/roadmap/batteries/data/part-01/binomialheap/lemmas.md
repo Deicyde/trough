@@ -7,28 +7,28 @@ proof: formalized
 
 # BinomialHeap/Lemmas
 
-`Batteries.Data.BinomialHeap.Lemmas`, in [Batteries/Data/BinomialHeap/Lemmas.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/BinomialHeap/Lemmas.lean), by Mario Carneiro.
+`Batteries.Data.BinomialHeap.Lemmas`, in [Batteries/Data/BinomialHeap/Lemmas.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/BinomialHeap/Lemmas.lean), by Mario Carneiro.
 
-`Batteries.BinomialHeap.Imp.Heap.findMin_val` (theorem, [line 15](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/BinomialHeap/Lemmas.lean#L15))
+`Batteries.BinomialHeap.Imp.Heap.findMin_val` (theorem, [line 15](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/BinomialHeap/Lemmas.lean#L15))
 
 ```lean
 theorem Heap.findMin_val : ((s : Heap α).findMin le k res).val = s.headD le res.val
 ```
 
-`Batteries.BinomialHeap.Imp.Heap.deleteMin_fst` (theorem, [line 20](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/BinomialHeap/Lemmas.lean#L20))
+`Batteries.BinomialHeap.Imp.Heap.deleteMin_fst` (theorem, [line 20](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/BinomialHeap/Lemmas.lean#L20))
 
 ```lean
 theorem Heap.deleteMin_fst : ((s : Heap α).deleteMin le).map (·.1) = s.head? le
 ```
 
-`Batteries.BinomialHeap.Imp.HeapNode.WF.realSize_eq` (theorem, [line 25](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/BinomialHeap/Lemmas.lean#L25))
+`Batteries.BinomialHeap.Imp.HeapNode.WF.realSize_eq` (theorem, [line 25](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/BinomialHeap/Lemmas.lean#L25))
 
 ```lean
 theorem HeapNode.WF.realSize_eq :
     ∀ {n} {s : HeapNode α}, s.WF le a n → s.realSize + 1 = 2 ^ n
 ```
 
-`Batteries.BinomialHeap.Imp.Heap.WF.size_eq` (theorem, [line 32](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/BinomialHeap/Lemmas.lean#L32))
+`Batteries.BinomialHeap.Imp.Heap.WF.size_eq` (theorem, [line 32](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/BinomialHeap/Lemmas.lean#L32))
 
 ```lean
 theorem Heap.WF.size_eq :
@@ -41,5 +41,5 @@ theorem Heap.WF.size_eq :
 
 ## Sources
 
-- [Batteries/Data/BinomialHeap/Lemmas.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/BinomialHeap/Lemmas.lean)
+- [Batteries/Data/BinomialHeap/Lemmas.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/BinomialHeap/Lemmas.lean)
 - [Declaration ledger](../../../../../sources/batteries/Batteries.Data.BinomialHeap.Lemmas.json)

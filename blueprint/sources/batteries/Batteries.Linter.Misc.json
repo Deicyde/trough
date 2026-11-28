@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "dd0900df51045e7d9be143ed167c9d200bcf2b45",
+ "module": "Batteries.Linter.Misc",
+ "file": "Batteries/Linter/Misc.lean",
+ "public": [
+  {"name": "Batteries.Linter.unusedArguments", "kind": "def", "line": 30},
+  {"name": "Batteries.Linter.docBlame", "kind": "def", "line": 84},
+  {"name": "Batteries.Linter.docBlameThm", "kind": "def", "line": 112},
+  {"name": "Batteries.Linter.checkType", "kind": "def", "line": 142},
+  {"name": "Batteries.Linter.synTaut", "kind": "def", "line": 159},
+  {"name": "Batteries.Linter.findUnusedHaves", "kind": "def", "line": 184},
+  {"name": "Batteries.Linter.unusedHavesSuffices", "kind": "def", "line": 204},
+  {"name": "Batteries.Linter.explicitVarsOfIff", "kind": "def", "line": 231},
+  {"name": "Batteries.Tactic.Lint.checkType", "kind": "alias", "line": 257},
+  {"name": "Batteries.Tactic.Lint.docBlame", "kind": "alias", "line": 259},
+  {"name": "Batteries.Tactic.Lint.docBlameThm", "kind": "alias", "line": 261},
+  {"name": "Batteries.Tactic.Lint.explicitVarsOfIff", "kind": "alias", "line": 263},
+  {"name": "Batteries.Tactic.Lint.findUnusedHaves", "kind": "alias", "line": 265},
+  {"name": "Batteries.Tactic.Lint.synTaut", "kind": "alias", "line": 267},
+  {"name": "Batteries.Tactic.Lint.unusedArguments", "kind": "alias", "line": 269},
+  {"name": "Batteries.Tactic.Lint.unusedHavesSuffices", "kind": "alias", "line": 271}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

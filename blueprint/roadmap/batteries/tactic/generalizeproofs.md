@@ -7,7 +7,7 @@ proof: formalized
 
 # The `generalize_proofs` tactic
 
-`Batteries.Tactic.GeneralizeProofs`, in [Batteries/Tactic/GeneralizeProofs.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean), by Alex J. Best, Kyle Miller.
+`Batteries.Tactic.GeneralizeProofs`, in [Batteries/Tactic/GeneralizeProofs.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean), by Alex J. Best, Kyle Miller.
 
 > Generalize any proofs occurring in the goal or in chosen hypotheses,
 > replacing them by local hypotheses.
@@ -29,7 +29,7 @@ proof: formalized
 > One difference is that it the tactic tries to propagate expected types so that
 > we get `1 < [1, 2].length` in the above example rather than `1 < Nat.succ 1`.
 
-`Batteries.Tactic.GeneralizeProofs.Config` (structure, [line 51](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L51))
+`Batteries.Tactic.GeneralizeProofs.Config` (structure, [line 51](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L51))
 
 > Configuration for the `generalize_proofs` tactic.
 
@@ -46,7 +46,7 @@ structure Config where
   debug : Bool := false
 ```
 
-`Batteries.Tactic.GeneralizeProofs.GState` (structure, [line 66](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L66))
+`Batteries.Tactic.GeneralizeProofs.GState` (structure, [line 66](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L66))
 
 > State for the `MGen` monad.
 
@@ -56,7 +56,7 @@ structure GState where
   propToFVar : ExprMap Expr
 ```
 
-`Batteries.Tactic.GeneralizeProofs.MGen` (abbreviation, [line 72](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L72))
+`Batteries.Tactic.GeneralizeProofs.MGen` (abbreviation, [line 72](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L72))
 
 > Monad used to generalize proofs.
 > Carries `Mathlib.Tactic.GeneralizeProofs.Config` and `Mathlib.Tactic.GeneralizeProofs.State`.
@@ -65,7 +65,7 @@ structure GState where
 abbrev MGen
 ```
 
-`Batteries.Tactic.GeneralizeProofs.MGen.insertFVar` (definition, [line 75](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L75))
+`Batteries.Tactic.GeneralizeProofs.MGen.insertFVar` (definition, [line 75](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L75))
 
 > Inserts a prop/fvar pair into the `propToFVar` map.
 
@@ -73,7 +73,7 @@ abbrev MGen
 def MGen.insertFVar (prop fvar : Expr) : MGen Unit
 ```
 
-`Batteries.Tactic.GeneralizeProofs.AContext` (structure, [line 79](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L79))
+`Batteries.Tactic.GeneralizeProofs.AContext` (structure, [line 79](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L79))
 
 > Context for the `MAbs` monad.
 
@@ -92,7 +92,7 @@ structure AContext where
   config : Config
 ```
 
-`Batteries.Tactic.GeneralizeProofs.AState` (structure, [line 93](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L93))
+`Batteries.Tactic.GeneralizeProofs.AState` (structure, [line 93](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L93))
 
 > State for the `MAbs` monad.
 
@@ -105,7 +105,7 @@ structure AState where
   propToProof : ExprMap Expr := {}
 ```
 
-`Batteries.Tactic.GeneralizeProofs.MAbs` (abbreviation, [line 106](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L106))
+`Batteries.Tactic.GeneralizeProofs.MAbs` (abbreviation, [line 106](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L106))
 
 > Monad used to abstract proofs, to prepare for generalization.
 > Has a cache (of expr/type? pairs),
@@ -116,7 +116,7 @@ structure AState where
 abbrev MAbs
 ```
 
-`Batteries.Tactic.GeneralizeProofs.MGen.runMAbs` (definition, [line 109](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L109))
+`Batteries.Tactic.GeneralizeProofs.MGen.runMAbs` (definition, [line 109](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L109))
 
 > Runs `MAbs` in `MGen`. Returns the value and the `generalizations`.
 
@@ -124,7 +124,7 @@ abbrev MAbs
 def MGen.runMAbs {α : Type} (mx : MAbs α) : MGen (α × Array (Expr × Expr))
 ```
 
-`Batteries.Tactic.GeneralizeProofs.MAbs.findProof?` (definition, [line 119](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L119))
+`Batteries.Tactic.GeneralizeProofs.MAbs.findProof?` (definition, [line 119](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L119))
 
 > Finds a proof of `prop` by looking at `propToFVar` and `propToProof`.
 
@@ -132,7 +132,7 @@ def MGen.runMAbs {α : Type} (mx : MAbs α) : MGen (α × Array (Expr × Expr))
 def MAbs.findProof? (prop : Expr) : MAbs (Option Expr)
 ```
 
-`Batteries.Tactic.GeneralizeProofs.MAbs.insertProof` (definition, [line 128](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L128))
+`Batteries.Tactic.GeneralizeProofs.MAbs.insertProof` (definition, [line 128](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L128))
 
 > Generalize `prop`, where `proof` is its proof.
 
@@ -140,7 +140,7 @@ def MAbs.findProof? (prop : Expr) : MAbs (Option Expr)
 def MAbs.insertProof (prop pf : Expr) : MAbs Unit
 ```
 
-`Batteries.Tactic.GeneralizeProofs.MAbs.withLocal` (definition, [line 144](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L144))
+`Batteries.Tactic.GeneralizeProofs.MAbs.withLocal` (definition, [line 144](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L144))
 
 > Runs `x` with an additional local variable.
 
@@ -148,7 +148,7 @@ def MAbs.insertProof (prop pf : Expr) : MAbs Unit
 def MAbs.withLocal {α : Type} (fvar : Expr) (x : MAbs α) : MAbs α
 ```
 
-`Batteries.Tactic.GeneralizeProofs.MAbs.withRecurse` (definition, [line 148](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L148))
+`Batteries.Tactic.GeneralizeProofs.MAbs.withRecurse` (definition, [line 148](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L148))
 
 > Runs `x` with an increased recursion depth and the initial local context, clearing `fvars`.
 
@@ -156,7 +156,7 @@ def MAbs.withLocal {α : Type} (fvar : Expr) (x : MAbs α) : MAbs α
 def MAbs.withRecurse {α : Type} (x : MAbs α) : MAbs α
 ```
 
-`Batteries.Tactic.GeneralizeProofs.appArgExpectedTypes` (definition, [line 157](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L157))
+`Batteries.Tactic.GeneralizeProofs.appArgExpectedTypes` (definition, [line 157](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L157))
 
 > Computes expected types for each argument to `f`,
 > given that the type of `mkAppN f args` is supposed to be `ty?`
@@ -167,7 +167,7 @@ def appArgExpectedTypes (f : Expr) (args : Array Expr) (ty? : Option Expr) :
     MetaM (Array (Option Expr))
 ```
 
-`Batteries.Tactic.GeneralizeProofs.mkLambdaFVarsUsedOnly` (definition, [line 199](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L199))
+`Batteries.Tactic.GeneralizeProofs.mkLambdaFVarsUsedOnly` (definition, [line 199](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L199))
 
 > Does `mkLambdaFVars fvars e` but
 > 1. zeta reduces let bindings
@@ -178,7 +178,7 @@ def appArgExpectedTypes (f : Expr) (args : Array Expr) (ty? : Option Expr) :
 def mkLambdaFVarsUsedOnly (fvars : Array Expr) (e : Expr) : MetaM (Array Expr × Expr)
 ```
 
-`Batteries.Tactic.GeneralizeProofs.abstractProofs` (definition, [line 230](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L230))
+`Batteries.Tactic.GeneralizeProofs.abstractProofs` (definition, [line 230](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L230))
 
 > Abstract proofs occurring in the expression.
 > A proof is *abstracted* if it is of the form `f a b ...` where `a b ...` are bound variables
@@ -196,7 +196,7 @@ def mkLambdaFVarsUsedOnly (fvars : Array Expr) (e : Expr) : MetaM (Array Expr ×
 partial def abstractProofs (e : Expr) (ty? : Option Expr) : MAbs Expr
 ```
 
-`Batteries.Tactic.GeneralizeProofs.initialPropToFVar` (definition, [line 333](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L333))
+`Batteries.Tactic.GeneralizeProofs.initialPropToFVar` (definition, [line 333](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L333))
 
 > Create a mapping of all propositions in the local context to their fvars.
 
@@ -204,7 +204,7 @@ partial def abstractProofs (e : Expr) (ty? : Option Expr) : MAbs Expr
 def initialPropToFVar : MetaM (ExprMap Expr)
 ```
 
-`Batteries.Tactic.GeneralizeProofs.withGeneralizedProofs` (definition, [line 352](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L352))
+`Batteries.Tactic.GeneralizeProofs.withGeneralizedProofs` (definition, [line 352](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L352))
 
 > Generalizes the proofs in the type `e` and runs `k` in a local context with these propositions.
 > This continuation `k` is passed
@@ -220,7 +220,7 @@ partial def withGeneralizedProofs {α : Type} [Nonempty α] (e : Expr) (ty? : Op
     MGen α
 ```
 
-`Batteries.Tactic.GeneralizeProofs.generalizeProofsCore` (definition, [line 385](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L385))
+`Batteries.Tactic.GeneralizeProofs.generalizeProofsCore` (definition, [line 385](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L385))
 
 > Main loop for `Lean.MVarId.generalizeProofs`.
 > The `fvars` array is the array of fvars to generalize proofs for,
@@ -233,7 +233,7 @@ partial def generalizeProofsCore
     MGen (Array Expr × MVarId)
 ```
 
-`Lean.MVarId.generalizeProofs` (definition, [line 471](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean#L471))
+`Lean.MVarId.generalizeProofs` (definition, [line 471](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean#L471))
 
 > Generalize proofs in the hypotheses `fvars` and, if `target` is true, the target.
 > Returns the fvars for the generalized proofs and the new goal.
@@ -263,5 +263,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Tactic/GeneralizeProofs.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/GeneralizeProofs.lean)
+- [Batteries/Tactic/GeneralizeProofs.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/GeneralizeProofs.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Tactic.GeneralizeProofs.json)

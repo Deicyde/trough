@@ -7,11 +7,11 @@ proof: formalized
 
 # Interleaving lists
 
-`Batteries.Data.List.Interleave`, in [Batteries/Data/List/Interleave.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean), by Yaël Dillies.
+`Batteries.Data.List.Interleave`, in [Batteries/Data/List/Interleave.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean), by Yaël Dillies.
 
 > This file defines interleaving of lists as an operation.
 
-`List.interleave` (definition, [line 33](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L33))
+`List.interleave` (definition, [line 33](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L33))
 
 > Interleave two lists `l₁` and `l₂`, starting with an element of `l₁`.
 >
@@ -31,66 +31,66 @@ proof: formalized
 def interleave : List α → List α → List α
 ```
 
-`List.nil_interleave` (theorem, [line 38](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L38))
+`List.nil_interleave` (theorem, [line 38](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L38))
 
 ```lean
 theorem nil_interleave (l₂ : List α) : [].interleave l₂ = l₂
 ```
 
-`List.interleave_nil` (theorem, [line 41](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L41))
+`List.interleave_nil` (theorem, [line 41](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L41))
 
 ```lean
 theorem interleave_nil (l₁ : List α) : l₁.interleave [] = l₁
 ```
 
-`List.cons_interleave` (theorem, [line 44](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L44))
+`List.cons_interleave` (theorem, [line 44](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L44))
 
 ```lean
 theorem cons_interleave (a : α) (l₁ : List α) (l₂ : List α) :
     (a :: l₁).interleave l₂ = a :: interleave l₂ l₁
 ```
 
-`List.interleave_perm_append` (theorem, [line 47](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L47))
+`List.interleave_perm_append` (theorem, [line 47](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L47))
 
 ```lean
 theorem interleave_perm_append : ∀ {l₁ l₂ : List α}, l₁.interleave l₂ ~ l₁ ++ l₂
 ```
 
-`List.interleave_eq_nil` (theorem, [line 54](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L54))
+`List.interleave_eq_nil` (theorem, [line 54](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L54))
 
 ```lean
 theorem interleave_eq_nil : l₁.interleave l₂ = [] ↔ l₁ = [] ∧ l₂ = []
 ```
 
-`List.Perm.interleave` (theorem, [line 57](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L57))
+`List.Perm.interleave` (theorem, [line 57](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L57))
 
 ```lean
 protected theorem Perm.interleave (h₁₃ : l₁ ~ l₃) (h₂₄ : l₂ ~ l₄) :
     l₁.interleave l₂ ~ l₃.interleave l₄
 ```
 
-`List.length_interleave` (theorem, [line 61](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L61))
+`List.length_interleave` (theorem, [line 61](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L61))
 
 ```lean
 theorem length_interleave (l₁ l₂ : List α) :
     (l₁.interleave l₂).length = l₁.length + l₂.length
 ```
 
-`List.countP_interleave` (theorem, [line 64](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L64))
+`List.countP_interleave` (theorem, [line 64](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L64))
 
 ```lean
 theorem countP_interleave (l₁ l₂ : List α) (p : α → Bool) :
     (l₁.interleave l₂).countP p = l₁.countP p + l₂.countP p
 ```
 
-`List.count_interleave` (theorem, [line 68](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L68))
+`List.count_interleave` (theorem, [line 68](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L68))
 
 ```lean
 theorem count_interleave [BEq α] (l₁ l₂ : List α) (a : α) :
     (l₁.interleave l₂).count a = l₁.count a + l₂.count a
 ```
 
-`List.interleave_append_append_of_length_eq_length` (theorem, [line 72](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L72))
+`List.interleave_append_append_of_length_eq_length` (theorem, [line 72](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L72))
 
 ```lean
 theorem interleave_append_append_of_length_eq_length :
@@ -98,7 +98,7 @@ theorem interleave_append_append_of_length_eq_length :
       (l₁ ++ l₃).interleave (l₂ ++ l₄) = l₁.interleave l₂ ++ l₃.interleave l₄
 ```
 
-`List.interleave_append_append_of_length_eq_length_add_one` (theorem, [line 78](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L78))
+`List.interleave_append_append_of_length_eq_length_add_one` (theorem, [line 78](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L78))
 
 ```lean
 theorem interleave_append_append_of_length_eq_length_add_one :
@@ -106,7 +106,7 @@ theorem interleave_append_append_of_length_eq_length_add_one :
       (l₁ ++ l₃).interleave (l₂ ++ l₄) = l₁.interleave l₂ ++ l₄.interleave l₃
 ```
 
-`List.interleave_append_left` (theorem, [line 83](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L83))
+`List.interleave_append_left` (theorem, [line 83](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L83))
 
 ```lean
 theorem interleave_append_left :
@@ -114,7 +114,7 @@ theorem interleave_append_left :
       (l₁ ++ l₃).interleave l₂ = l₁.interleave l₂ ++ l₃
 ```
 
-`List.interleave_append_right` (theorem, [line 89](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L89))
+`List.interleave_append_right` (theorem, [line 89](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L89))
 
 ```lean
 theorem interleave_append_right :
@@ -122,7 +122,7 @@ theorem interleave_append_right :
     l₁.interleave (l₂ ++ l₃) = l₁.interleave l₂ ++ l₃
 ```
 
-`List.interleave_flatten_flatten_of_length_eq_length` (theorem, [line 96](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L96))
+`List.interleave_flatten_flatten_of_length_eq_length` (theorem, [line 96](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L96))
 
 ```lean
 theorem interleave_flatten_flatten_of_length_eq_length :
@@ -131,7 +131,7 @@ theorem interleave_flatten_flatten_of_length_eq_length :
         L₁.flatten.interleave L₂.flatten = (zipWith interleave L₁ L₂).flatten
 ```
 
-`List.reverse_interleave_of_length_eq_length` (theorem, [line 107](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L107))
+`List.reverse_interleave_of_length_eq_length` (theorem, [line 107](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L107))
 
 ```lean
 theorem reverse_interleave_of_length_eq_length :
@@ -139,7 +139,7 @@ theorem reverse_interleave_of_length_eq_length :
       (l₁.interleave l₂).reverse = l₂.reverse.interleave l₁.reverse
 ```
 
-`List.reverse_interleave_of_length_eq_length_add_one` (theorem, [line 113](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L113))
+`List.reverse_interleave_of_length_eq_length_add_one` (theorem, [line 113](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L113))
 
 ```lean
 theorem reverse_interleave_of_length_eq_length_add_one :
@@ -147,7 +147,7 @@ theorem reverse_interleave_of_length_eq_length_add_one :
       (l₁.interleave l₂).reverse = l₁.reverse.interleave l₂.reverse
 ```
 
-`List.interleave_ofFn_ofFn_even` (theorem, [line 119](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L119))
+`List.interleave_ofFn_ofFn_even` (theorem, [line 119](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L119))
 
 ```lean
 theorem interleave_ofFn_ofFn_even :
@@ -156,7 +156,7 @@ theorem interleave_ofFn_ofFn_even :
         ofFn (n := 2 * n) (fun i => if i.val % 2 = 0 then f ⟨i / 2, by lia⟩ else g ⟨i / 2, by lia⟩)
 ```
 
-`List.interleave_ofFn_ofFn_odd` (theorem, [line 126](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L126))
+`List.interleave_ofFn_ofFn_odd` (theorem, [line 126](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L126))
 
 ```lean
 theorem interleave_ofFn_ofFn_odd :
@@ -166,19 +166,19 @@ theorem interleave_ofFn_ofFn_odd :
           (fun i => if hi : i.val % 2 = 0 then f ⟨i / 2, by lia⟩ else g ⟨i / 2, by lia⟩)
 ```
 
-`List.right_sublist_interleave` (theorem, [line 134](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L134))
+`List.right_sublist_interleave` (theorem, [line 134](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L134))
 
 ```lean
 theorem right_sublist_interleave : ∀ {l₁ l₂ : List α}, l₂ <+ l₁.interleave l₂
 ```
 
-`List.left_sublist_interleave` (theorem, [line 141](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L141))
+`List.left_sublist_interleave` (theorem, [line 141](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L141))
 
 ```lean
 theorem left_sublist_interleave : l₁ <+ l₁.interleave l₂
 ```
 
-`List.IsPrefix.interleave` (theorem, [line 143](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean#L143))
+`List.IsPrefix.interleave` (theorem, [line 143](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean#L143))
 
 ```lean
 protected theorem IsPrefix.interleave  :
@@ -192,5 +192,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Data/List/Interleave.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Interleave.lean)
+- [Batteries/Data/List/Interleave.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Interleave.lean)
 - [Declaration ledger](../../../../../../sources/batteries/Batteries.Data.List.Interleave.json)

@@ -7,9 +7,9 @@ proof: formalized
 
 # Position
 
-`Batteries.Lean.Position`, in [Batteries/Lean/Position.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Position.lean), by Mario Carneiro, Thomas R. Murrills.
+`Batteries.Lean.Position`, in [Batteries/Lean/Position.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Position.lean), by Mario Carneiro, Thomas R. Murrills.
 
-`Lean.findLineStart` (definition, [line 15](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Position.lean#L15))
+`Lean.findLineStart` (definition, [line 15](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Position.lean#L15))
 
 > Return the beginning of the line contatining character `pos`.
 
@@ -17,7 +17,7 @@ proof: formalized
 def findLineStart (s : String) (pos : String.Pos.Raw) : String.Pos.Raw
 ```
 
-`Lean.findIndentAndIsStart` (definition, [line 22](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Position.lean#L22))
+`Lean.findIndentAndIsStart` (definition, [line 22](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Position.lean#L22))
 
 > Return the indentation (number of leading spaces) of the line containing `pos`,
 > and whether `pos` is the first non-whitespace character in the line.
@@ -26,7 +26,7 @@ def findLineStart (s : String) (pos : String.Pos.Raw) : String.Pos.Raw
 def findIndentAndIsStart (s : String) (pos : String.Pos.Raw) : Nat × Bool
 ```
 
-`Lean.Position.getDeclsAfter` (definition, [line 38](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Position.lean#L38))
+`Lean.Position.getDeclsAfter` (definition, [line 38](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Position.lean#L38))
 
 > If `pos` is a `Lean.Position`, then `pos.getDeclsAfter` returns the array of names of declarations
 > whose selection range begins in position at least `pos`. By using the `selectionRange`, which is
@@ -43,7 +43,7 @@ protected def Position.getDeclsAfter (env : Environment) (pos : Position)
     (asyncMode := EnvExtension.AsyncMode.local) : Array Name
 ```
 
-`String.Pos.Raw.getDeclsAfter` (definition, [line 52](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Position.lean#L52))
+`String.Pos.Raw.getDeclsAfter` (definition, [line 52](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Position.lean#L52))
 
 > If `pos` is a `String.Pos.Raw`, then `pos.getDeclsAfter` returns the array of names of declarations
 > whose selection range begins in position at least `pos`. By using the `selectionRange`, which is
@@ -57,7 +57,7 @@ protected def _root_.String.Pos.Raw.getDeclsAfter (env : Environment) (map : Fil
     (pos : String.Pos.Raw) (asyncMode := EnvExtension.AsyncMode.local) : Array Name
 ```
 
-`Lean.DeclarationRange.toSyntaxRange` (definition, [line 58](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Position.lean#L58))
+`Lean.DeclarationRange.toSyntaxRange` (definition, [line 58](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Position.lean#L58))
 
 > Converts a `DeclarationRange` to a `Syntax.Range`. This assumes that the
 > `DeclarationRange` is sourced in the given `FileMap`.
@@ -66,7 +66,7 @@ protected def _root_.String.Pos.Raw.getDeclsAfter (env : Environment) (map : Fil
 def DeclarationRange.toSyntaxRange (map : FileMap) (range : DeclarationRange) : Syntax.Range
 ```
 
-`Lean.findDeclarationSyntaxRange?` (definition, [line 67](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Position.lean#L67))
+`Lean.findDeclarationSyntaxRange?` (definition, [line 67](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Position.lean#L67))
 
 > Yields the `Syntax.Range` for the declaration `decl` in the current file. If `decl` is not in
 > the current file, yields `none`.
@@ -80,7 +80,7 @@ def findDeclarationSyntaxRange? {m : Type → Type} [Monad m] [MonadEnv m] [Mona
     [MonadFileMap m] (decl : Name) (fullRange := false) : m (Option Syntax.Range)
 ```
 
-`Lean.withDeclRef?` (definition, [line 86](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Position.lean#L86))
+`Lean.withDeclRef?` (definition, [line 86](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Position.lean#L86))
 
 > Runs `x` with a synthetic ref that has position info locating the given `decl` if it is defined
 > in the current file, or else runs `x` without modifying the ref. This is useful for logging on a
@@ -107,5 +107,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Lean/Position.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Position.lean)
+- [Batteries/Lean/Position.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Position.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Lean.Position.json)

@@ -7,9 +7,9 @@ proof: formalized
 
 # OfBits
 
-`Batteries.Data.Fin.OfBits`, in [Batteries/Data/Fin/OfBits.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/OfBits.lean), by François G. Dorais.
+`Batteries.Data.Fin.OfBits`, in [Batteries/Data/Fin/OfBits.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/Fin/OfBits.lean), by François G. Dorais.
 
-`Fin.ofBits` (abbreviation, [line 17](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/OfBits.lean#L17))
+`Fin.ofBits` (abbreviation, [line 17](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/Fin/OfBits.lean#L17))
 
 > Construct an element of `Fin (2 ^ n)` from a sequence of bits (little endian).
 
@@ -17,7 +17,7 @@ proof: formalized
 abbrev ofBits (f : Fin n → Bool) : Fin (2 ^ n)
 ```
 
-`Fin.val_ofBits` (theorem, [line 19](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/OfBits.lean#L19))
+`Fin.val_ofBits` (theorem, [line 19](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/Fin/OfBits.lean#L19))
 
 ```lean
 theorem val_ofBits (f : Fin n → Bool) : (ofBits f).val = Nat.ofBits f
@@ -29,5 +29,5 @@ theorem val_ofBits (f : Fin n → Bool) : (ofBits f).val = Nat.ofBits f
 
 ## Sources
 
-- [Batteries/Data/Fin/OfBits.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/OfBits.lean)
+- [Batteries/Data/Fin/OfBits.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/Fin/OfBits.lean)
 - [Declaration ledger](../../../../../sources/batteries/Batteries.Data.Fin.OfBits.json)

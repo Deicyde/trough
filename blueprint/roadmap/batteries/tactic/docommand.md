@@ -7,13 +7,13 @@ proof: formalized
 
 # The `#do` command
 
-`Batteries.Tactic.DoCommand`, in [Batteries/Tactic/DoCommand.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/DoCommand.lean), by Robin Arnez.
+`Batteries.Tactic.DoCommand`, in [Batteries/Tactic/DoCommand.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/DoCommand.lean), by Robin Arnez.
 
 > The `#do` command is like `run_cmd` but allows using variables from previous uses of `#do`.
 > Furthermore, `#do_meta` is like `#do` and shares its variable state while operating in `MetaM`.
 > Finally, `#clear_do` can be used to remove all variables from the current do state.
 
-`Batteries.Tactic.DoCommand.MonadStateStack` (structure, [line 28](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/DoCommand.lean#L28))
+`Batteries.Tactic.DoCommand.MonadStateStack` (structure, [line 28](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/DoCommand.lean#L28))
 
 > The part of the `DoCommandExtensionState` used for monad state
 
@@ -24,7 +24,7 @@ structure MonadStateStack where
 deriving Inhabited
 ```
 
-`Batteries.Tactic.DoCommand.DoCommandExtensionState` (structure, [line 34](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/DoCommand.lean#L34))
+`Batteries.Tactic.DoCommand.DoCommandExtensionState` (structure, [line 34](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/DoCommand.lean#L34))
 
 > The state for `#do`
 
@@ -53,7 +53,7 @@ structure DoCommandExtensionState where
 deriving Inhabited
 ```
 
-`Batteries.Tactic.DoCommand.Data` (abbreviation, [line 62](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/DoCommand.lean#L62))
+`Batteries.Tactic.DoCommand.Data` (abbreviation, [line 62](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/DoCommand.lean#L62))
 
 > Implementation detail of `#do`
 
@@ -61,7 +61,7 @@ deriving Inhabited
 abbrev Data
 ```
 
-`Batteries.Tactic.DoCommand.Data.getValue` (definition, [line 65](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/DoCommand.lean#L65))
+`Batteries.Tactic.DoCommand.Data.getValue` (definition, [line 65](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/DoCommand.lean#L65))
 
 > Implementation detail of `#do`
 
@@ -69,13 +69,13 @@ abbrev Data
 unsafe def Data.getValue.{u} {α : Sort u} (vs : Data) (i : Nat) : α
 ```
 
-`Batteries.Tactic.DoCommand.Data.getValueLetImpl` (definition, [line 69](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/DoCommand.lean#L69))
+`Batteries.Tactic.DoCommand.Data.getValueLetImpl` (definition, [line 69](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/DoCommand.lean#L69))
 
 ```lean
 unsafe def Data.getValueLetImpl.{u} {α : Sort u} (vs : Data) (i : Nat) (_v : α) : α
 ```
 
-`Batteries.Tactic.DoCommand.Data.getValueLet` (abbreviation, [line 74](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/DoCommand.lean#L74))
+`Batteries.Tactic.DoCommand.Data.getValueLet` (abbreviation, [line 74](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/DoCommand.lean#L74))
 
 > Implementation detail of `#do`
 
@@ -83,7 +83,7 @@ unsafe def Data.getValueLetImpl.{u} {α : Sort u} (vs : Data) (i : Nat) (_v : α
 unsafe abbrev Data.getValueLet.{u} {α : Sort u} (_vs : Data) (_i : Nat) (v : α) : α
 ```
 
-`Batteries.Tactic.DoCommand.Data.empty` (definition, [line 77](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/DoCommand.lean#L77))
+`Batteries.Tactic.DoCommand.Data.empty` (definition, [line 77](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/DoCommand.lean#L77))
 
 > Implementation detail of `#do`
 
@@ -91,7 +91,7 @@ unsafe abbrev Data.getValueLet.{u} {α : Sort u} (_vs : Data) (_i : Nat) (v : α
 def Data.empty : Data
 ```
 
-`Batteries.Tactic.DoCommand.Data.push` (definition, [line 80](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/DoCommand.lean#L80))
+`Batteries.Tactic.DoCommand.Data.push` (definition, [line 80](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/DoCommand.lean#L80))
 
 > Implementation detail of `#do`
 
@@ -99,7 +99,7 @@ def Data.empty : Data
 unsafe nonrec def Data.push.{u} {α : Sort u} (d : Data) (x : α) : Data
 ```
 
-`Batteries.Tactic.DoCommand.DoCommandExtensionState.eval` (definition, [line 86](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/DoCommand.lean#L86))
+`Batteries.Tactic.DoCommand.DoCommandExtensionState.eval` (definition, [line 86](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/DoCommand.lean#L86))
 
 > Given `value : type` which may depend on free variables in `state.lctx`, evaluates it to a value
 > of type `α` (assuming `type` is equivalent to `α`).
@@ -110,7 +110,7 @@ unsafe def DoCommandExtensionState.eval (state : DoCommandExtensionState)
     (allowSorry := false) (alternative? : Option String := none) : MetaM α
 ```
 
-`Batteries.Tactic.DoCommand.ContinuationResult` (structure, [line 160](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/DoCommand.lean#L160))
+`Batteries.Tactic.DoCommand.ContinuationResult` (structure, [line 160](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/DoCommand.lean#L160))
 
 > Implementation detail of `#do`
 
@@ -122,7 +122,7 @@ structure ContinuationResult where
   newState : DoCommandExtensionState
 ```
 
-`Batteries.Tactic.DoCommand.elabDoCommandCore` (definition, [line 195](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/DoCommand.lean#L195))
+`Batteries.Tactic.DoCommand.elabDoCommandCore` (definition, [line 195](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/DoCommand.lean#L195))
 
 > Monad-generic version of the `#do` command
 
@@ -134,25 +134,25 @@ def elabDoCommandCore (m : Type → Type)
     CommandElabM Unit
 ```
 
-`Batteries.Tactic.DoCommand.elabDoCommand` (definition, [line 283](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/DoCommand.lean#L283))
+`Batteries.Tactic.DoCommand.elabDoCommand` (definition, [line 283](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/DoCommand.lean#L283))
 
 ```lean
 def elabDoCommand : CommandElab
 ```
 
-`Batteries.Tactic.DoCommand.elabDoBangCommand` (definition, [line 289](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/DoCommand.lean#L289))
+`Batteries.Tactic.DoCommand.elabDoBangCommand` (definition, [line 289](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/DoCommand.lean#L289))
 
 ```lean
 def elabDoBangCommand : CommandElab
 ```
 
-`Batteries.Tactic.DoCommand.elabDoMetaCommand` (definition, [line 321](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/DoCommand.lean#L321))
+`Batteries.Tactic.DoCommand.elabDoMetaCommand` (definition, [line 321](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/DoCommand.lean#L321))
 
 ```lean
 def elabDoMetaCommand : CommandElab
 ```
 
-`Batteries.Tactic.DoCommand.elabDoMetaBangCommand` (definition, [line 327](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/DoCommand.lean#L327))
+`Batteries.Tactic.DoCommand.elabDoMetaBangCommand` (definition, [line 327](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/DoCommand.lean#L327))
 
 ```lean
 def elabDoMetaBangCommand : CommandElab
@@ -165,5 +165,5 @@ def elabDoMetaBangCommand : CommandElab
 
 ## Sources
 
-- [Batteries/Tactic/DoCommand.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/DoCommand.lean)
+- [Batteries/Tactic/DoCommand.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/DoCommand.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Tactic.DoCommand.json)

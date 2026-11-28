@@ -7,7 +7,7 @@ proof: formalized
 
 # Running Statistics
 
-`Batteries.Data.RunningStats`, in [Batteries/Data/RunningStats.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/RunningStats.lean), by François G. Dorais.
+`Batteries.Data.RunningStats`, in [Batteries/Data/RunningStats.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/RunningStats.lean), by François G. Dorais.
 
 > This module implements Welford's one-pass algorithm for calculating the mean and
 > standard deviation of a sample or a population. The advantage of this algorithm is
@@ -30,7 +30,7 @@ proof: formalized
 > ```
 > Then: `μₖ = Mₖ`, `σ²ₖ = Sₖ/k`, `s²ₖ = Sₖ/(k-1)`.
 
-`Batteries.RunningStats` (structure, [line 38](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/RunningStats.lean#L38))
+`Batteries.RunningStats` (structure, [line 38](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/RunningStats.lean#L38))
 
 > Compute running statistics of a data stream using Welford's algorithm.
 
@@ -46,7 +46,7 @@ public structure RunningStats where
   var : Float := 0.0
 ```
 
-`Batteries.RunningStats.push` (definition, [line 52](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/RunningStats.lean#L52))
+`Batteries.RunningStats.push` (definition, [line 52](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/RunningStats.lean#L52))
 
 > Add a new data point to running statistics.
 
@@ -54,7 +54,7 @@ public structure RunningStats where
 public def push (data : Float) (s : RunningStats) : RunningStats
 ```
 
-`Batteries.RunningStats.variance` (definition, [line 60](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/RunningStats.lean#L60))
+`Batteries.RunningStats.variance` (definition, [line 60](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/RunningStats.lean#L60))
 
 > Variance of running data stream (population variance).
 
@@ -62,7 +62,7 @@ public def push (data : Float) (s : RunningStats) : RunningStats
 public def variance (s : RunningStats) : Float
 ```
 
-`Batteries.RunningStats.sampleVariance` (definition, [line 65](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/RunningStats.lean#L65))
+`Batteries.RunningStats.sampleVariance` (definition, [line 65](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/RunningStats.lean#L65))
 
 > Unbiased variance of running data stream (sample variance).
 
@@ -70,7 +70,7 @@ public def variance (s : RunningStats) : Float
 public def sampleVariance (s : RunningStats) : Float
 ```
 
-`Batteries.RunningStats.standardDeviation` (definition, [line 70](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/RunningStats.lean#L70))
+`Batteries.RunningStats.standardDeviation` (definition, [line 70](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/RunningStats.lean#L70))
 
 > Standard deviation of running data stream (square-root of population variance).
 
@@ -78,7 +78,7 @@ public def sampleVariance (s : RunningStats) : Float
 public def standardDeviation (s : RunningStats) : Float
 ```
 
-`Batteries.RunningStats.sampleStandardDeviation` (definition, [line 75](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/RunningStats.lean#L75))
+`Batteries.RunningStats.sampleStandardDeviation` (definition, [line 75](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/RunningStats.lean#L75))
 
 > Sample standard deviation of running data stream (square root of sample variance).
 
@@ -92,5 +92,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Data/RunningStats.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/RunningStats.lean)
+- [Batteries/Data/RunningStats.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/RunningStats.lean)
 - [Declaration ledger](../../../../sources/batteries/Batteries.Data.RunningStats.json)

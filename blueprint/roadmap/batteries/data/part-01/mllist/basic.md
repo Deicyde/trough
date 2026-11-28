@@ -7,7 +7,7 @@ proof: formalized
 
 # Monadic lazy lists
 
-`Batteries.Data.MLList.Basic`, in [Batteries/Data/MLList/Basic.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean), by Mario Carneiro, Keeley Hoek, Simon Hudon, Kim Morrison.
+`Batteries.Data.MLList.Basic`, in [Batteries/Data/MLList/Basic.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean), by Mario Carneiro, Keeley Hoek, Simon Hudon, Kim Morrison.
 
 > Lazy lists with "laziness" controlled by an arbitrary monad.
 
@@ -15,7 +15,7 @@ proof: formalized
 > and provide a private unsafe implementation,
 > and then a public `opaque` wrapper of this implementation, satisfying the specification.
 
-`MLList` (definition, [line 76](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L76))
+`MLList` (definition, [line 76](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L76))
 
 > A monadic lazy list, controlled by an arbitrary monad.
 
@@ -23,7 +23,7 @@ proof: formalized
 def MLList (m : Type u → Type u) (α : Type u) : Type u
 ```
 
-`MLList.nil` (definition, [line 81](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L81))
+`MLList.nil` (definition, [line 81](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L81))
 
 > The empty `MLList`.
 
@@ -31,7 +31,7 @@ def MLList (m : Type u → Type u) (α : Type u) : Type u
 def nil : MLList m α
 ```
 
-`MLList.cons` (definition, [line 86](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L86))
+`MLList.cons` (definition, [line 86](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L86))
 
 > Constructs a `MLList` from head and tail.
 
@@ -39,7 +39,7 @@ def nil : MLList m α
 def cons : α → MLList m α → MLList m α
 ```
 
-`MLList.thunk` (definition, [line 89](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L89))
+`MLList.thunk` (definition, [line 89](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L89))
 
 > Embed a non-monadic thunk as a lazy list.
 
@@ -47,7 +47,7 @@ def cons : α → MLList m α → MLList m α
 def thunk : (Unit → MLList m α) → MLList m α
 ```
 
-`MLList.squash` (definition, [line 92](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L92))
+`MLList.squash` (definition, [line 92](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L92))
 
 > Lift a monadic lazy list inside the monad to a monadic lazy list.
 
@@ -55,7 +55,7 @@ def thunk : (Unit → MLList m α) → MLList m α
 def squash : (Unit → m (MLList m α)) → MLList m α
 ```
 
-`MLList.uncons` (definition, [line 96](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L96))
+`MLList.uncons` (definition, [line 96](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L96))
 
 > Deconstruct a `MLList`, returning inside the monad an optional pair `α × MLList m α`
 > representing the head and tail of the list.
@@ -64,7 +64,7 @@ def squash : (Unit → m (MLList m α)) → MLList m α
 def uncons [Monad m] : MLList.{u} m α → m (Option (α × MLList m α))
 ```
 
-`MLList.uncons?` (definition, [line 101](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L101))
+`MLList.uncons?` (definition, [line 101](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L101))
 
 > Try to deconstruct a `MLList`, returning an optional pair `α × MLList m α`
 > representing the head and tail of the list if it is already evaluated, and `none` otherwise.
@@ -73,7 +73,7 @@ def uncons [Monad m] : MLList.{u} m α → m (Option (α × MLList m α))
 def uncons? : MLList.{u} m α → Option (Option (α × MLList m α))
 ```
 
-`MLList.forIn` (definition, [line 110](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L110))
+`MLList.forIn` (definition, [line 110](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L110))
 
 > The implementation of `ForIn`, which enables `for a in L do ...` notation.
 
@@ -82,7 +82,7 @@ protected partial def forIn [Monad m] [Monad n] [MonadLiftT m n]
     (as : MLList m α) (init : δ) (f : α → δ → n (ForInStep δ)) : n δ
 ```
 
-`MLList.singletonM` (definition, [line 122](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L122))
+`MLList.singletonM` (definition, [line 122](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L122))
 
 > Construct a singleton monadic lazy list from a single monadic value.
 
@@ -90,7 +90,7 @@ protected partial def forIn [Monad m] [Monad n] [MonadLiftT m n]
 def singletonM [Monad m] (x : m α) : MLList m α
 ```
 
-`MLList.singleton` (definition, [line 126](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L126))
+`MLList.singleton` (definition, [line 126](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L126))
 
 > Construct a singleton monadic lazy list from a single value.
 
@@ -98,7 +98,7 @@ def singletonM [Monad m] (x : m α) : MLList m α
 def singleton [Monad m] (x : α) : MLList m α
 ```
 
-`MLList.fix` (definition, [line 130](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L130))
+`MLList.fix` (definition, [line 130](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L130))
 
 > Construct a `MLList` recursively. Failures from `f` will result in `uncons` failing.
 
@@ -106,7 +106,7 @@ def singleton [Monad m] (x : α) : MLList m α
 partial def fix [Monad m] (f : α → m α) (x : α) : MLList m α
 ```
 
-`MLList.fix?'` (definition, [line 139](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L139))
+`MLList.fix?'` (definition, [line 139](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L139))
 
 > Constructs an `MLList` recursively, with state in `α`, recording terms from `β`.
 > If `f` returns `none` the list will terminate.
@@ -117,7 +117,7 @@ partial def fix [Monad m] (f : α → m α) (x : α) : MLList m α
 partial def fix?' [Monad m] (f : α → m (Option (β × α))) (init : α) : MLList m β
 ```
 
-`MLList.fix?` (definition, [line 150](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L150))
+`MLList.fix?` (definition, [line 150](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L150))
 
 > Constructs an `MLList` recursively. If `f` returns `none` the list will terminate.
 >
@@ -127,7 +127,7 @@ partial def fix?' [Monad m] (f : α → m (Option (β × α))) (init : α) : MLL
 partial def fix? [Monad m] (f : α → m (Option α)) (x : α) : MLList m α
 ```
 
-`MLList.iterate` (definition, [line 157](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L157))
+`MLList.iterate` (definition, [line 157](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L157))
 
 > Construct a `MLList` by iteration. (`m` must be a stateful monad for this to be useful.)
 
@@ -135,7 +135,7 @@ partial def fix? [Monad m] (f : α → m (Option α)) (x : α) : MLList m α
 partial def iterate [Monad m] (f : m α) : MLList m α
 ```
 
-`MLList.fixlWith` (definition, [line 164](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L164))
+`MLList.fixlWith` (definition, [line 164](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L164))
 
 > Repeatedly apply a function `f : α → m (α × List β)` to an initial `a : α`,
 > accumulating the elements of the resulting `List β` as a single monadic lazy list.
@@ -147,7 +147,7 @@ partial def fixlWith [Monad m] {α β : Type u} (f : α → m (α × List β))
     (s : α) (l : List β) : MLList m β
 ```
 
-`MLList.fixl` (definition, [line 177](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L177))
+`MLList.fixl` (definition, [line 177](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L177))
 
 > Repeatedly apply a function `f : α → m (α × List β)` to an initial `a : α`,
 > accumulating the elements of the resulting `List β` as a single monadic lazy list.
@@ -156,7 +156,7 @@ partial def fixlWith [Monad m] {α β : Type u} (f : α → m (α × List β))
 def fixl [Monad m] {α β : Type u} (f : α → m (α × List β)) (s : α) : MLList m β
 ```
 
-`MLList.isEmpty` (definition, [line 181](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L181))
+`MLList.isEmpty` (definition, [line 181](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L181))
 
 > Compute, inside the monad, whether a `MLList` is empty.
 
@@ -164,7 +164,7 @@ def fixl [Monad m] {α β : Type u} (f : α → m (α × List β)) (s : α) : ML
 def isEmpty [Monad m] (xs : MLList m α) : m (ULift Bool)
 ```
 
-`MLList.ofList` (definition, [line 185](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L185))
+`MLList.ofList` (definition, [line 185](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L185))
 
 > Convert a `List` to a `MLList`.
 
@@ -172,7 +172,7 @@ def isEmpty [Monad m] (xs : MLList m α) : m (ULift Bool)
 def ofList : List α → MLList m α
 ```
 
-`MLList.ofListM` (definition, [line 190](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L190))
+`MLList.ofListM` (definition, [line 190](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L190))
 
 > Convert a `List` of values inside the monad into a `MLList`.
 
@@ -180,7 +180,7 @@ def ofList : List α → MLList m α
 def ofListM [Monad m] : List (m α) → MLList m α
 ```
 
-`MLList.force` (definition, [line 195](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L195))
+`MLList.force` (definition, [line 195](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L195))
 
 > Extract a list inside the monad from a `MLList`.
 
@@ -188,7 +188,7 @@ def ofListM [Monad m] : List (m α) → MLList m α
 partial def force [Monad m] (L : MLList m α) : m (List α)
 ```
 
-`MLList.asArray` (definition, [line 201](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L201))
+`MLList.asArray` (definition, [line 201](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L201))
 
 > Extract an array inside the monad from a `MLList`.
 
@@ -196,7 +196,7 @@ partial def force [Monad m] (L : MLList m α) : m (List α)
 def asArray [Monad m] (L : MLList m α) : m (Array α)
 ```
 
-`MLList.casesM` (definition, [line 209](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L209))
+`MLList.casesM` (definition, [line 209](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L209))
 
 > Performs a monadic case distinction on a `MLList` when the motive is a `MLList` as well.
 
@@ -205,7 +205,7 @@ def casesM [Monad m] (xs : MLList m α)
     (hnil : Unit → m (MLList m β)) (hcons : α → MLList m α → m (MLList m β)) : MLList m β
 ```
 
-`MLList.cases` (definition, [line 221](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L221))
+`MLList.cases` (definition, [line 221](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L221))
 
 > Performs a case distinction on a `MLList` when the motive is a `MLList` as well.
 > (We need to be in a monadic context to distinguish a nil from a cons.)
@@ -215,7 +215,7 @@ def cases [Monad m] (xs : MLList m α)
     (hnil : Unit → MLList m β) (hcons : α → MLList m α → MLList m β) : MLList m β
 ```
 
-`MLList.foldsM` (definition, [line 230](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L230))
+`MLList.foldsM` (definition, [line 230](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L230))
 
 > Gives the monadic lazy list consisting all of folds of a function on a given initial element.
 > Thus `[a₀, a₁, ...].foldsM f b` will give `[b, ← f b a₀, ← f (← f b a₀) a₁, ...]`.
@@ -224,7 +224,7 @@ def cases [Monad m] (xs : MLList m α)
 partial def foldsM [Monad m] (f : β → α → m β) (init : β) (L : MLList m α) : MLList m β
 ```
 
-`MLList.folds` (definition, [line 238](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L238))
+`MLList.folds` (definition, [line 238](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L238))
 
 > Gives the monadic lazy list consisting all of folds of a function on a given initial element.
 > Thus `[a₀, a₁, ...].foldsM f b` will give `[b, f b a₀, f (f b a₀) a₁, ...]`.
@@ -233,7 +233,7 @@ partial def foldsM [Monad m] (f : β → α → m β) (init : β) (L : MLList m 
 def folds [Monad m] (f : β → α → β) (init : β) (L : MLList m α) : MLList m β
 ```
 
-`MLList.takeAsList` (definition, [line 242](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L242))
+`MLList.takeAsList` (definition, [line 242](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L242))
 
 > Take the first `n` elements, as a list inside the monad.
 
@@ -241,7 +241,7 @@ def folds [Monad m] (f : β → α → β) (init : β) (L : MLList m α) : MLLis
 partial def takeAsList [Monad m] (xs : MLList m α) (n : Nat) : m (List α)
 ```
 
-`MLList.takeAsArray` (definition, [line 254](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L254))
+`MLList.takeAsArray` (definition, [line 254](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L254))
 
 > Take the first `n` elements, as an array inside the monad.
 
@@ -249,7 +249,7 @@ partial def takeAsList [Monad m] (xs : MLList m α) (n : Nat) : m (List α)
 partial def takeAsArray [Monad m] (xs : MLList m α) (n : Nat) : m (Array α)
 ```
 
-`MLList.take` (definition, [line 266](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L266))
+`MLList.take` (definition, [line 266](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L266))
 
 > Take the first `n` elements.
 
@@ -257,7 +257,7 @@ partial def takeAsArray [Monad m] (xs : MLList m α) (n : Nat) : m (Array α)
 partial def take [Monad m] (xs : MLList m α) : Nat → MLList m α
 ```
 
-`MLList.drop` (definition, [line 271](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L271))
+`MLList.drop` (definition, [line 271](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L271))
 
 > Drop the first `n` elements.
 
@@ -265,7 +265,7 @@ partial def take [Monad m] (xs : MLList m α) : Nat → MLList m α
 def drop [Monad m] (xs : MLList m α) : Nat → MLList m α
 ```
 
-`MLList.mapM` (definition, [line 276](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L276))
+`MLList.mapM` (definition, [line 276](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L276))
 
 > Apply a function which returns values in the monad to every element of a `MLList`.
 
@@ -273,7 +273,7 @@ def drop [Monad m] (xs : MLList m α) : Nat → MLList m α
 partial def mapM [Monad m] (f : α → m β) (xs : MLList m α) : MLList m β
 ```
 
-`MLList.map` (definition, [line 280](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L280))
+`MLList.map` (definition, [line 280](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L280))
 
 > Apply a function to every element of a `MLList`.
 
@@ -281,7 +281,7 @@ partial def mapM [Monad m] (f : α → m β) (xs : MLList m α) : MLList m β
 def map [Monad m] (f : α → β) (L : MLList m α) : MLList m β
 ```
 
-`MLList.filterM` (definition, [line 284](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L284))
+`MLList.filterM` (definition, [line 284](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L284))
 
 > Filter a `MLList` using a monadic function.
 
@@ -289,7 +289,7 @@ def map [Monad m] (f : α → β) (L : MLList m α) : MLList m β
 partial def filterM [Monad m] (p : α → m (ULift Bool)) (L : MLList m α) : MLList m α
 ```
 
-`MLList.filter` (definition, [line 289](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L289))
+`MLList.filter` (definition, [line 289](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L289))
 
 > Filter a `MLList`.
 
@@ -297,7 +297,7 @@ partial def filterM [Monad m] (p : α → m (ULift Bool)) (L : MLList m α) : ML
 def filter [Monad m] (p : α → Bool) (L : MLList m α) : MLList m α
 ```
 
-`MLList.filterMapM` (definition, [line 295](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L295))
+`MLList.filterMapM` (definition, [line 295](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L295))
 
 > Filter and transform a `MLList` using a function that returns values inside the monad.
 
@@ -305,7 +305,7 @@ def filter [Monad m] (p : α → Bool) (L : MLList m α) : MLList m α
 partial def filterMapM [Monad m] (f : α → m (Option β)) (xs : MLList m α) : MLList m β
 ```
 
-`MLList.filterMap` (definition, [line 302](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L302))
+`MLList.filterMap` (definition, [line 302](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L302))
 
 > Filter and transform a `MLList` using an `Option` valued function.
 
@@ -313,7 +313,7 @@ partial def filterMapM [Monad m] (f : α → m (Option β)) (xs : MLList m α) :
 def filterMap [Monad m] (f : α → Option β) : MLList m α → MLList m β
 ```
 
-`MLList.takeWhileM` (definition, [line 306](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L306))
+`MLList.takeWhileM` (definition, [line 306](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L306))
 
 > Take the initial segment of the lazy list, until the function `f` first returns `false`.
 
@@ -321,7 +321,7 @@ def filterMap [Monad m] (f : α → Option β) : MLList m α → MLList m β
 partial def takeWhileM [Monad m] (f : α → m (ULift Bool)) (L : MLList m α) : MLList m α
 ```
 
-`MLList.takeWhile` (definition, [line 311](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L311))
+`MLList.takeWhile` (definition, [line 311](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L311))
 
 > Take the initial segment of the lazy list, until the function `f` first returns `false`.
 
@@ -329,7 +329,7 @@ partial def takeWhileM [Monad m] (f : α → m (ULift Bool)) (L : MLList m α) :
 def takeWhile [Monad m] (f : α → Bool) : MLList m α → MLList m α
 ```
 
-`MLList.append` (definition, [line 315](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L315))
+`MLList.append` (definition, [line 315](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L315))
 
 > Concatenate two monadic lazy lists.
 
@@ -337,7 +337,7 @@ def takeWhile [Monad m] (f : α → Bool) : MLList m α → MLList m α
 partial def append [Monad m] (xs : MLList m α) (ys : Unit → MLList m α) : MLList m α
 ```
 
-`MLList.join` (definition, [line 319](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L319))
+`MLList.join` (definition, [line 319](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L319))
 
 > Join a monadic lazy list of monadic lazy lists into a single monadic lazy list.
 
@@ -345,7 +345,7 @@ partial def append [Monad m] (xs : MLList m α) (ys : Unit → MLList m α) : ML
 partial def join [Monad m] (xs : MLList m (MLList m α)) : MLList m α
 ```
 
-`MLList.enumFrom` (definition, [line 323](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L323))
+`MLList.enumFrom` (definition, [line 323](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L323))
 
 > Enumerate the elements of a monadic lazy list, starting at a specified offset.
 
@@ -353,7 +353,7 @@ partial def join [Monad m] (xs : MLList m (MLList m α)) : MLList m α
 partial def enumFrom [Monad m] (n : Nat) (xs : MLList m α) : MLList m (Nat × α)
 ```
 
-`MLList.enum` (definition, [line 327](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L327))
+`MLList.enum` (definition, [line 327](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L327))
 
 > Enumerate the elements of a monadic lazy list.
 
@@ -361,7 +361,7 @@ partial def enumFrom [Monad m] (n : Nat) (xs : MLList m α) : MLList m (Nat × �
 def enum [Monad m] : MLList m α → MLList m (Nat × α)
 ```
 
-`MLList.range` (definition, [line 330](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L330))
+`MLList.range` (definition, [line 330](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L330))
 
 > The infinite monadic lazy list of natural numbers.
 
@@ -369,7 +369,7 @@ def enum [Monad m] : MLList m α → MLList m (Nat × α)
 def range [Monad m] : MLList m Nat
 ```
 
-`MLList.fin` (definition, [line 333](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L333))
+`MLList.fin` (definition, [line 333](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L333))
 
 > Iterate through the elements of `Fin n`.
 
@@ -377,7 +377,7 @@ def range [Monad m] : MLList m Nat
 partial def fin (n : Nat) : MLList m (Fin n)
 ```
 
-`MLList.ofArray` (definition, [line 339](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L339))
+`MLList.ofArray` (definition, [line 339](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L339))
 
 > Convert an array to a monadic lazy list.
 
@@ -385,7 +385,7 @@ partial def fin (n : Nat) : MLList m (Fin n)
 partial def ofArray {α : Type} (L : Array α) : MLList m α
 ```
 
-`MLList.chunk` (definition, [line 346](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L346))
+`MLList.chunk` (definition, [line 346](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L346))
 
 > Group the elements of a lazy list into chunks of a given size.
 > If the lazy list is finite, the last chunk may be smaller (possibly even length 0).
@@ -394,7 +394,7 @@ partial def ofArray {α : Type} (L : Array α) : MLList m α
 partial def chunk [Monad m] (L : MLList m α) (n : Nat) : MLList m (Array α)
 ```
 
-`MLList.concat` (definition, [line 357](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L357))
+`MLList.concat` (definition, [line 357](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L357))
 
 > Add one element to the end of a monadic lazy list.
 
@@ -402,7 +402,7 @@ partial def chunk [Monad m] (L : MLList m α) (n : Nat) : MLList m (Array α)
 def concat [Monad m] (L : MLList m α) (a : α) : MLList m α
 ```
 
-`MLList.zip` (definition, [line 360](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L360))
+`MLList.zip` (definition, [line 360](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L360))
 
 > Take the product of two monadic lazy lists.
 
@@ -410,7 +410,7 @@ def concat [Monad m] (L : MLList m α) (a : α) : MLList m α
 partial def zip [Monad m] (L : MLList m α) (M : MLList m β) : MLList.{u} m (α × β)
 ```
 
-`MLList.bind` (definition, [line 367](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L367))
+`MLList.bind` (definition, [line 367](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L367))
 
 > Apply a function returning a monadic lazy list to each element of a monadic lazy list,
 > joining the results.
@@ -419,7 +419,7 @@ partial def zip [Monad m] (L : MLList m α) (M : MLList m β) : MLList.{u} m (α
 partial def bind [Monad m] (xs : MLList m α) (f : α → MLList m β) : MLList m β
 ```
 
-`MLList.monadLift` (definition, [line 374](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L374))
+`MLList.monadLift` (definition, [line 374](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L374))
 
 > Convert any value in the monad to the singleton monadic lazy list.
 
@@ -427,7 +427,7 @@ partial def bind [Monad m] (xs : MLList m α) (f : α → MLList m β) : MLList 
 def monadLift [Monad m] (x : m α) : MLList m α
 ```
 
-`MLList.liftM` (definition, [line 378](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L378))
+`MLList.liftM` (definition, [line 378](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L378))
 
 > Lift the monad of a lazy list.
 
@@ -435,7 +435,7 @@ def monadLift [Monad m] (x : m α) : MLList m α
 partial def liftM [Monad m] [Monad n] [MonadLiftT m n] (L : MLList m α) : MLList n α
 ```
 
-`MLList.runState` (definition, [line 385](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L385))
+`MLList.runState` (definition, [line 385](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L385))
 
 > Given a lazy list in a state monad, run it on some initial state, recording the states.
 
@@ -443,7 +443,7 @@ partial def liftM [Monad m] [Monad n] [MonadLiftT m n] (L : MLList m α) : MLLis
 partial def runState [Monad m] (L : MLList (StateT.{u} σ m) α) (s : σ) : MLList m (α × σ)
 ```
 
-`MLList.runState'` (definition, [line 392](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L392))
+`MLList.runState'` (definition, [line 392](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L392))
 
 > Given a lazy list in a state monad, run it on some initial state.
 
@@ -451,7 +451,7 @@ partial def runState [Monad m] (L : MLList (StateT.{u} σ m) α) (s : σ) : MLLi
 def runState' [Monad m] (L : MLList (StateT.{u} σ m) α) (s : σ) : MLList m α
 ```
 
-`MLList.runReader` (definition, [line 396](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L396))
+`MLList.runReader` (definition, [line 396](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L396))
 
 > Run a lazy list in a `ReaderT` monad on some fixed state.
 
@@ -460,7 +460,7 @@ partial def runReader [Monad m] (L : MLList (ReaderT.{u, u} ρ m) α) (r : ρ) :
     MLList m α
 ```
 
-`MLList.runStateRef` (definition, [line 404](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L404))
+`MLList.runStateRef` (definition, [line 404](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L404))
 
 > Run a lazy list in a `StateRefT'` monad on some initial state.
 
@@ -469,7 +469,7 @@ partial def runStateRef [Monad m] [MonadLiftT (ST ω) m] (L : MLList (StateRefT'
     MLList m α
 ```
 
-`MLList.head?` (definition, [line 412](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L412))
+`MLList.head?` (definition, [line 412](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L412))
 
 > Return the head of a monadic lazy list if it exists, as an `Option` in the monad.
 
@@ -477,7 +477,7 @@ partial def runStateRef [Monad m] [MonadLiftT (ST ω) m] (L : MLList (StateRefT'
 def head? [Monad m] (L : MLList m α) : m (Option α)
 ```
 
-`MLList.takeUpToFirstM` (definition, [line 416](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L416))
+`MLList.takeUpToFirstM` (definition, [line 416](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L416))
 
 > Take the initial segment of the lazy list,
 > up to and including the first place where `f` gives `true`.
@@ -486,7 +486,7 @@ def head? [Monad m] (L : MLList m α) : m (Option α)
 partial def takeUpToFirstM [Monad m] (L : MLList m α) (f : α → m (ULift Bool)) : MLList m α
 ```
 
-`MLList.takeUpToFirst` (definition, [line 422](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L422))
+`MLList.takeUpToFirst` (definition, [line 422](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L422))
 
 > Take the initial segment of the lazy list,
 > up to and including the first place where `f` gives `true`.
@@ -495,7 +495,7 @@ partial def takeUpToFirstM [Monad m] (L : MLList m α) (f : α → m (ULift Bool
 def takeUpToFirst [Monad m] (L : MLList m α) (f : α → Bool) : MLList m α
 ```
 
-`MLList.getLast?` (definition, [line 427](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L427))
+`MLList.getLast?` (definition, [line 427](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L427))
 
 > Gets the last element of a monadic lazy list, as an option in the monad.
 > This will run forever if the list is infinite.
@@ -504,7 +504,7 @@ def takeUpToFirst [Monad m] (L : MLList m α) (f : α → Bool) : MLList m α
 partial def getLast? [Monad m] (L : MLList m α) : m (Option α)
 ```
 
-`MLList.getLast!` (definition, [line 440](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L440))
+`MLList.getLast!` (definition, [line 440](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L440))
 
 > Gets the last element of a monadic lazy list, or the default value if the list is empty.
 > This will run forever if the list is infinite.
@@ -513,7 +513,7 @@ partial def getLast? [Monad m] (L : MLList m α) : m (Option α)
 partial def getLast! [Monad m] [Inhabited α] (L : MLList m α) : m α
 ```
 
-`MLList.foldM` (definition, [line 444](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L444))
+`MLList.foldM` (definition, [line 444](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L444))
 
 > Folds a binary function across a monadic lazy list, from an initial starting value.
 > This will run forever if the list is infinite.
@@ -522,7 +522,7 @@ partial def getLast! [Monad m] [Inhabited α] (L : MLList m α) : m α
 partial def foldM [Monad m] (f : β → α → m β) (init : β) (L : MLList m α) : m β
 ```
 
-`MLList.fold` (definition, [line 449](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L449))
+`MLList.fold` (definition, [line 449](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L449))
 
 > Folds a binary function across a monadic lazy list, from an initial starting value.
 > This will run forever if the list is infinite.
@@ -531,7 +531,7 @@ partial def foldM [Monad m] (f : β → α → m β) (init : β) (L : MLList m �
 partial def fold [Monad m] (f : β → α → β) (init : β) (L : MLList m α) : m β
 ```
 
-`MLList.head` (definition, [line 456](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L456))
+`MLList.head` (definition, [line 456](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L456))
 
 > Return the head of a monadic lazy list, as a value in the monad.
 > Fails if the list is empty.
@@ -540,7 +540,7 @@ partial def fold [Monad m] (f : β → α → β) (init : β) (L : MLList m α) 
 def head [AlternativeMonad m] (L : MLList m α) : m α
 ```
 
-`MLList.firstM` (definition, [line 464](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L464))
+`MLList.firstM` (definition, [line 464](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L464))
 
 > Apply a function returning values inside the monad to a monadic lazy list,
 > returning only the first successful result.
@@ -549,7 +549,7 @@ def head [AlternativeMonad m] (L : MLList m α) : m α
 def firstM [AlternativeMonad m] (L : MLList m α) (f : α → m (Option β)) : m β
 ```
 
-`MLList.first` (definition, [line 468](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean#L468))
+`MLList.first` (definition, [line 468](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean#L468))
 
 > Return the first value on which a predicate returns true.
 
@@ -563,5 +563,5 @@ def first [AlternativeMonad m] (L : MLList m α) (p : α → Bool) : m α
 
 ## Sources
 
-- [Batteries/Data/MLList/Basic.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Basic.lean)
+- [Batteries/Data/MLList/Basic.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/MLList/Basic.lean)
 - [Declaration ledger](../../../../../sources/batteries/Batteries.Data.MLList.Basic.json)

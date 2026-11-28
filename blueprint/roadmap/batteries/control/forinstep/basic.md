@@ -7,9 +7,9 @@ proof: formalized
 
 # Additional definitions on `ForInStep`
 
-`Batteries.Control.ForInStep.Basic`, in [Batteries/Control/ForInStep/Basic.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Basic.lean), by Mario Carneiro.
+`Batteries.Control.ForInStep.Basic`, in [Batteries/Control/ForInStep/Basic.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Basic.lean), by Mario Carneiro.
 
-`ForInStep.bind` (definition, [line 16](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Basic.lean#L16))
+`ForInStep.bind` (definition, [line 16](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Basic.lean#L16))
 
 > This is similar to a monadic `bind` operator, except that the two type parameters have to be
 > the same, which prevents putting a monad instance on `ForInStepT m α := m (ForInStep α)`.
@@ -19,14 +19,14 @@ protected def ForInStep.bind [Monad m]
     (a : ForInStep α) (f : α → m (ForInStep α)) : m (ForInStep α)
 ```
 
-`ForInStep.bindM` (abbreviation, [line 22](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Basic.lean#L22))
+`ForInStep.bindM` (abbreviation, [line 22](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Basic.lean#L22))
 
 ```lean
 protected abbrev ForInStep.bindM [Monad m]
     (a : m (ForInStep α)) (f : α → m (ForInStep α)) : m (ForInStep α)
 ```
 
-`ForInStep.run` (definition, [line 29](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Basic.lean#L29))
+`ForInStep.run` (definition, [line 29](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Basic.lean#L29))
 
 > Get the value out of a `ForInStep`.
 > This is usually done at the end of a `forIn` loop to scope the early exit to the loop body.
@@ -35,7 +35,7 @@ protected abbrev ForInStep.bindM [Monad m]
 def ForInStep.run : ForInStep α → α
 ```
 
-`ForInStep.bindList` (definition, [line 34](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Basic.lean#L34))
+`ForInStep.bindList` (definition, [line 34](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Basic.lean#L34))
 
 > Applies function `f` to each element of a list to accumulate a `ForInStep` value.
 
@@ -50,5 +50,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Control/ForInStep/Basic.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Basic.lean)
+- [Batteries/Control/ForInStep/Basic.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Basic.lean)
 - [Declaration ledger](../../../../sources/batteries/Batteries.Control.ForInStep.Basic.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Initial setup for code action attributes
 
-`Batteries.CodeAction.Attr`, in [Batteries/CodeAction/Attr.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Attr.lean), by Mario Carneiro.
+`Batteries.CodeAction.Attr`, in [Batteries/CodeAction/Attr.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/CodeAction/Attr.lean), by Mario Carneiro.
 
 > * `@[hole_code_action]` and `@[command_code_action]` now live in the Lean repository,
 >   and are builtin.
@@ -15,7 +15,7 @@ proof: formalized
 > * Attribute `@[tactic_code_action]` collects code actions which will be called
 >   on each occurrence of a tactic.
 
-`Batteries.CodeAction.TacticCodeAction` (abbreviation, [line 27](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Attr.lean#L27))
+`Batteries.CodeAction.TacticCodeAction` (abbreviation, [line 27](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/CodeAction/Attr.lean#L27))
 
 > A tactic code action extension.
 
@@ -23,7 +23,7 @@ proof: formalized
 abbrev TacticCodeAction
 ```
 
-`Batteries.CodeAction.TacticSeqCodeAction` (abbreviation, [line 33](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Attr.lean#L33))
+`Batteries.CodeAction.TacticSeqCodeAction` (abbreviation, [line 33](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/CodeAction/Attr.lean#L33))
 
 > A tactic code action extension.
 
@@ -31,7 +31,7 @@ abbrev TacticCodeAction
 abbrev TacticSeqCodeAction
 ```
 
-`Batteries.CodeAction.mkTacticCodeAction` (definition, [line 39](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Attr.lean#L39))
+`Batteries.CodeAction.mkTacticCodeAction` (definition, [line 39](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/CodeAction/Attr.lean#L39))
 
 > Read a tactic code action from a declaration of the right type.
 
@@ -39,7 +39,7 @@ abbrev TacticSeqCodeAction
 def mkTacticCodeAction (n : Name) : ImportM TacticCodeAction
 ```
 
-`Batteries.CodeAction.mkTacticSeqCodeAction` (definition, [line 44](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Attr.lean#L44))
+`Batteries.CodeAction.mkTacticSeqCodeAction` (definition, [line 44](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/CodeAction/Attr.lean#L44))
 
 > Read a tacticSeq code action from a declaration of the right type.
 
@@ -47,7 +47,7 @@ def mkTacticCodeAction (n : Name) : ImportM TacticCodeAction
 def mkTacticSeqCodeAction (n : Name) : ImportM TacticSeqCodeAction
 ```
 
-`Batteries.CodeAction.TacticCodeActionEntry` (structure, [line 49](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Attr.lean#L49))
+`Batteries.CodeAction.TacticCodeActionEntry` (structure, [line 49](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/CodeAction/Attr.lean#L49))
 
 > An entry in the tactic code actions extension, containing the attribute arguments.
 
@@ -60,7 +60,7 @@ structure TacticCodeActionEntry where
   deriving Inhabited
 ```
 
-`Batteries.CodeAction.TacticCodeActions` (structure, [line 57](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Attr.lean#L57))
+`Batteries.CodeAction.TacticCodeActions` (structure, [line 57](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/CodeAction/Attr.lean#L57))
 
 > The state of the tactic code actions extension.
 
@@ -73,7 +73,7 @@ structure TacticCodeActions where
   deriving Inhabited
 ```
 
-`Batteries.CodeAction.TacticCodeActions.insert` (definition, [line 65](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Attr.lean#L65))
+`Batteries.CodeAction.TacticCodeActions.insert` (definition, [line 65](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/CodeAction/Attr.lean#L65))
 
 > Insert a tactic code action entry into the `TacticCodeActions` structure.
 
@@ -88,5 +88,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/CodeAction/Attr.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Attr.lean)
+- [Batteries/CodeAction/Attr.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/CodeAction/Attr.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.CodeAction.Attr.json)

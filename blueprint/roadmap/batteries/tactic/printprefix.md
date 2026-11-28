@@ -7,9 +7,9 @@ proof: formalized
 
 # PrintPrefix
 
-`Batteries.Tactic.PrintPrefix`, in [Batteries/Tactic/PrintPrefix.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/PrintPrefix.lean), by Shing Tak Lam, Daniel Selsam, Mario Carneiro.
+`Batteries.Tactic.PrintPrefix`, in [Batteries/Tactic/PrintPrefix.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/PrintPrefix.lean), by Shing Tak Lam, Daniel Selsam, Mario Carneiro.
 
-`Batteries.Tactic.PrintPrefixConfig` (structure, [line 23](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/PrintPrefix.lean#L23))
+`Batteries.Tactic.PrintPrefixConfig` (structure, [line 23](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/PrintPrefix.lean#L23))
 
 > Options to control `#print prefix` command and `getMatchingConstants`.
 
@@ -39,5 +39,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Tactic/PrintPrefix.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/PrintPrefix.lean)
+- [Batteries/Tactic/PrintPrefix.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/PrintPrefix.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Tactic.PrintPrefix.json)

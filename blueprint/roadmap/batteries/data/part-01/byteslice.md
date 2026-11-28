@@ -7,9 +7,9 @@ proof: formalized
 
 # ByteSlice
 
-`Batteries.Data.ByteSlice`, in [Batteries/Data/ByteSlice.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/ByteSlice.lean), by Mario Carneiro, François G. Dorais.
+`Batteries.Data.ByteSlice`, in [Batteries/Data/ByteSlice.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/ByteSlice.lean), by Mario Carneiro, François G. Dorais.
 
-`ByteSlice.isEmpty` (abbreviation, [line 15](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/ByteSlice.lean#L15))
+`ByteSlice.isEmpty` (abbreviation, [line 15](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/ByteSlice.lean#L15))
 
 > Test whether a byte slice is empty.
 
@@ -17,13 +17,13 @@ proof: formalized
 public protected abbrev isEmpty (s : ByteSlice)
 ```
 
-`ByteSlice.stop_eq_start_add_size` (theorem, [line 17](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/ByteSlice.lean#L17))
+`ByteSlice.stop_eq_start_add_size` (theorem, [line 17](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/ByteSlice.lean#L17))
 
 ```lean
 public theorem stop_eq_start_add_size (s : ByteSlice) : s.stop = s.start + s.size
 ```
 
-`ByteSlice.pop` (abbreviation, [line 21](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/ByteSlice.lean#L21))
+`ByteSlice.pop` (abbreviation, [line 21](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/ByteSlice.lean#L21))
 
 > Returns the subslice obtained by removing the last element.
 
@@ -31,7 +31,7 @@ public theorem stop_eq_start_add_size (s : ByteSlice) : s.stop = s.start + s.siz
 public abbrev pop (s : ByteSlice) : ByteSlice
 ```
 
-`ByteSlice.popFront` (abbreviation, [line 25](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/ByteSlice.lean#L25))
+`ByteSlice.popFront` (abbreviation, [line 25](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/ByteSlice.lean#L25))
 
 > Returns the subslice obtained by removing the first element.
 
@@ -39,7 +39,7 @@ public abbrev pop (s : ByteSlice) : ByteSlice
 public abbrev popFront (s : ByteSlice) : ByteSlice
 ```
 
-`ByteSlice.foldlM` (definition, [line 30](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/ByteSlice.lean#L30))
+`ByteSlice.foldlM` (definition, [line 30](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/ByteSlice.lean#L30))
 
 > Folds a monadic function over a `ByteSubarray` from left to right.
 
@@ -47,7 +47,7 @@ public abbrev popFront (s : ByteSlice) : ByteSlice
 public def foldlM [Monad m] (s : ByteSlice) (f : β → UInt8 → m β) (init : β) : m β
 ```
 
-`ByteSlice.foldl` (definition, [line 35](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/ByteSlice.lean#L35))
+`ByteSlice.foldl` (definition, [line 35](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/ByteSlice.lean#L35))
 
 > Folds a function over a `ByteSubarray` from left to right.
 
@@ -55,7 +55,7 @@ public def foldlM [Monad m] (s : ByteSlice) (f : β → UInt8 → m β) (init : 
 public def foldl (s : ByteSlice) (f : β → UInt8 → β) (init : β) : β
 ```
 
-`ByteSlice.forIn` (definition, [line 40](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/ByteSlice.lean#L40))
+`ByteSlice.forIn` (definition, [line 40](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/ByteSlice.lean#L40))
 
 > Implementation of `forIn` for a `ByteSlice`.
 
@@ -70,5 +70,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Data/ByteSlice.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/ByteSlice.lean)
+- [Batteries/Data/ByteSlice.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/ByteSlice.lean)
 - [Declaration ledger](../../../../sources/batteries/Batteries.Data.ByteSlice.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # The `on_goal`, `pick_goal`, and `swap` tactics
 
-`Batteries.Tactic.PermuteGoals`, in [Batteries/Tactic/PermuteGoals.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/PermuteGoals.lean), by Arthur Paulino, Mario Carneiro.
+`Batteries.Tactic.PermuteGoals`, in [Batteries/Tactic/PermuteGoals.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/PermuteGoals.lean), by Arthur Paulino, Mario Carneiro.
 
 > `pick_goal n` moves the `n`-th goal to the front. If `n` is negative this is counted from the back.
 >
@@ -17,7 +17,7 @@ proof: formalized
 >
 > `swap` is a shortcut for `pick_goal 2`, which interchanges the 1st and 2nd goals.
 
-`Batteries.Tactic.elabGoalNum` (definition, [line 34](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/PermuteGoals.lean#L34))
+`Batteries.Tactic.elabGoalNum` (definition, [line 34](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/PermuteGoals.lean#L34))
 
 > Turn the given `goalNum` syntax into a (zero-based) index in the current `getGoals` list.
 
@@ -31,5 +31,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Tactic/PermuteGoals.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/PermuteGoals.lean)
+- [Batteries/Tactic/PermuteGoals.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/PermuteGoals.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Tactic.PermuteGoals.json)

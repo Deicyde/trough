@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Array to Ordered association lists
+# Array to PairingHeap
 
 - [Array](array/README.md)
 - [AssocList](assoclist/README.md)
@@ -18,9 +18,9 @@ navigation: transparent
 - [Fin](fin/README.md)
 - [Float](float/README.md)
 - [FloatArray](floatarray.md)
-- [HashMap](hashmap/README.md)
 - [Int](int.md)
 - [List](list/README.md)
 - [MLList](mllist/README.md)
 - [Nat](nat/README.md)
 - [Ordered association lists](orderedassoclist.md)
+- [PairingHeap](pairingheap.md)

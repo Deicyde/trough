@@ -7,42 +7,42 @@ proof: formalized
 
 # Additional theorems on `ForInStep`
 
-`Batteries.Control.ForInStep.Lemmas`, in [Batteries/Control/ForInStep/Lemmas.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Lemmas.lean), by Mario Carneiro.
+`Batteries.Control.ForInStep.Lemmas`, in [Batteries/Control/ForInStep/Lemmas.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Lemmas.lean), by Mario Carneiro.
 
-`ForInStep.bind_done` (theorem, [line 14](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Lemmas.lean#L14))
+`ForInStep.bind_done` (theorem, [line 14](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Lemmas.lean#L14))
 
 ```lean
 theorem ForInStep.bind_done [Monad m] (a : α) (f : α → m (ForInStep α)) :
     (ForInStep.done a).bind (m := m) f = pure (.done a)
 ```
 
-`ForInStep.bind_yield` (theorem, [line 16](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Lemmas.lean#L16))
+`ForInStep.bind_yield` (theorem, [line 16](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Lemmas.lean#L16))
 
 ```lean
 theorem ForInStep.bind_yield [Monad m] (a : α) (f : α → m (ForInStep α)) :
     (ForInStep.yield a).bind (m := m) f = f a
 ```
 
-`ForInStep.run_done` (theorem, [line 21](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Lemmas.lean#L21))
+`ForInStep.run_done` (theorem, [line 21](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Lemmas.lean#L21))
 
 ```lean
 theorem ForInStep.run_done : (ForInStep.done a).run = a
 ```
 
-`ForInStep.run_yield` (theorem, [line 22](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Lemmas.lean#L22))
+`ForInStep.run_yield` (theorem, [line 22](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Lemmas.lean#L22))
 
 ```lean
 theorem ForInStep.run_yield : (ForInStep.yield a).run = a
 ```
 
-`ForInStep.bindList_nil` (theorem, [line 24](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Lemmas.lean#L24))
+`ForInStep.bindList_nil` (theorem, [line 24](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Lemmas.lean#L24))
 
 ```lean
 theorem ForInStep.bindList_nil [Monad m] (f : α → β → m (ForInStep β))
     (s : ForInStep β) : s.bindList f [] = pure s
 ```
 
-`ForInStep.bindList_cons` (theorem, [line 27](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Lemmas.lean#L27))
+`ForInStep.bindList_cons` (theorem, [line 27](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Lemmas.lean#L27))
 
 ```lean
 theorem ForInStep.bindList_cons [Monad m]
@@ -50,7 +50,7 @@ theorem ForInStep.bindList_cons [Monad m]
     s.bindList f (a::l) = s.bind fun b => f a b >>= (·.bindList f l)
 ```
 
-`ForInStep.done_bindList` (theorem, [line 31](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Lemmas.lean#L31))
+`ForInStep.done_bindList` (theorem, [line 31](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Lemmas.lean#L31))
 
 ```lean
 theorem ForInStep.done_bindList [Monad m]
@@ -58,7 +58,7 @@ theorem ForInStep.done_bindList [Monad m]
     (ForInStep.done a).bindList f l = pure (.done a)
 ```
 
-`ForInStep.bind_yield_bindList` (theorem, [line 35](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Lemmas.lean#L35))
+`ForInStep.bind_yield_bindList` (theorem, [line 35](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Lemmas.lean#L35))
 
 ```lean
 theorem ForInStep.bind_yield_bindList [Monad m]
@@ -66,7 +66,7 @@ theorem ForInStep.bind_yield_bindList [Monad m]
     (s.bind fun a => (yield a).bindList f l) = s.bindList f l
 ```
 
-`ForInStep.bind_bindList_assoc` (theorem, [line 39](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Lemmas.lean#L39))
+`ForInStep.bind_bindList_assoc` (theorem, [line 39](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Lemmas.lean#L39))
 
 ```lean
 theorem ForInStep.bind_bindList_assoc [Monad m] [LawfulMonad m]
@@ -74,7 +74,7 @@ theorem ForInStep.bind_bindList_assoc [Monad m] [LawfulMonad m]
     s.bind f >>= (·.bindList g l) = s.bind fun b => f b >>= (·.bindList g l)
 ```
 
-`ForInStep.bindList_cons'` (theorem, [line 44](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Lemmas.lean#L44))
+`ForInStep.bindList_cons'` (theorem, [line 44](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Lemmas.lean#L44))
 
 ```lean
 theorem ForInStep.bindList_cons' [Monad m] [LawfulMonad m]
@@ -82,7 +82,7 @@ theorem ForInStep.bindList_cons' [Monad m] [LawfulMonad m]
     s.bindList f (a::l) = s.bind (f a) >>= (·.bindList f l)
 ```
 
-`ForInStep.bindList_append` (theorem, [line 48](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Lemmas.lean#L48))
+`ForInStep.bindList_append` (theorem, [line 48](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Lemmas.lean#L48))
 
 ```lean
 theorem ForInStep.bindList_append [Monad m] [LawfulMonad m]
@@ -96,5 +96,5 @@ theorem ForInStep.bindList_append [Monad m] [LawfulMonad m]
 
 ## Sources
 
-- [Batteries/Control/ForInStep/Lemmas.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/ForInStep/Lemmas.lean)
+- [Batteries/Control/ForInStep/Lemmas.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/ForInStep/Lemmas.lean)
 - [Declaration ledger](../../../../sources/batteries/Batteries.Control.ForInStep.Lemmas.json)

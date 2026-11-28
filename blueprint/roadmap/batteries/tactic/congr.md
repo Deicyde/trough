@@ -7,9 +7,9 @@ proof: formalized
 
 # `congr with` tactic, `rcongr` tactic
 
-`Batteries.Tactic.Congr`, in [Batteries/Tactic/Congr.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Congr.lean), by Mario Carneiro, Miyahara Kō.
+`Batteries.Tactic.Congr`, in [Batteries/Tactic/Congr.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/Congr.lean), by Mario Carneiro, Miyahara Kō.
 
-`Batteries.Tactic.Congr.Config` (structure, [line 23](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Congr.lean#L23))
+`Batteries.Tactic.Congr.Config` (structure, [line 23](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/Congr.lean#L23))
 
 > Configuration options for `congr` & `rcongr`
 
@@ -23,7 +23,7 @@ structure Congr.Config where
   closePost : Bool := true
 ```
 
-`Batteries.Tactic.rcongrCore` (definition, [line 80](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Congr.lean#L80))
+`Batteries.Tactic.rcongrCore` (definition, [line 80](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/Congr.lean#L80))
 
 > Recursive core of `rcongr`. Calls `ext pats <;> congr` and then itself recursively,
 > unless `ext pats <;> congr` made no progress.
@@ -39,5 +39,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Tactic/Congr.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Congr.lean)
+- [Batteries/Tactic/Congr.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/Congr.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Tactic.Congr.json)

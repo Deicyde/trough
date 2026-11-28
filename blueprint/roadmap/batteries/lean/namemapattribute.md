@@ -7,9 +7,9 @@ proof: formalized
 
 # NameMapAttribute
 
-`Batteries.Lean.NameMapAttribute`, in [Batteries/Lean/NameMapAttribute.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/NameMapAttribute.lean), by E.W.Ayers.
+`Batteries.Lean.NameMapAttribute`, in [Batteries/Lean/NameMapAttribute.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/NameMapAttribute.lean), by E.W.Ayers.
 
-`Lean.NameMapExtension` (definition, [line 17](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/NameMapAttribute.lean#L17))
+`Lean.NameMapExtension` (definition, [line 17](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/NameMapAttribute.lean#L17))
 
 > Environment extension that maps declaration names to `α`.
 > This uses a `Thunk` to avoid computing the name map when it isn't used.
@@ -18,7 +18,7 @@ proof: formalized
 def NameMapExtension (α : Type)
 ```
 
-`Lean.NameMapExtension.find?` (definition, [line 23](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/NameMapAttribute.lean#L23))
+`Lean.NameMapExtension.find?` (definition, [line 23](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/NameMapAttribute.lean#L23))
 
 > Look up a value in the given extension in the environment.
 
@@ -26,7 +26,7 @@ def NameMapExtension (α : Type)
 def NameMapExtension.find? (ext : NameMapExtension α) (env : Environment) : Name → Option α
 ```
 
-`Lean.NameMapExtension.add` (definition, [line 27](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/NameMapAttribute.lean#L27))
+`Lean.NameMapExtension.add` (definition, [line 27](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/NameMapAttribute.lean#L27))
 
 > Add the given k,v pair to the NameMapExtension.
 
@@ -35,7 +35,7 @@ def NameMapExtension.add [Monad M] [MonadEnv M] [MonadError M]
   (ext : NameMapExtension α) (k : Name) (v : α) :  M Unit
 ```
 
-`Lean.registerNameMapExtension` (definition, [line 35](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/NameMapAttribute.lean#L35))
+`Lean.registerNameMapExtension` (definition, [line 35](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/NameMapAttribute.lean#L35))
 
 > Registers a new extension with the given name and type.
 
@@ -44,7 +44,7 @@ def registerNameMapExtension (α) (name : Name := by exact decl_name%) :
     IO (NameMapExtension α)
 ```
 
-`Lean.NameMapAttributeImpl` (structure, [line 44](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/NameMapAttribute.lean#L44))
+`Lean.NameMapAttributeImpl` (structure, [line 44](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/NameMapAttribute.lean#L44))
 
 > The inputs to `registerNameMapAttribute`.
 
@@ -62,7 +62,7 @@ structure NameMapAttributeImpl (α : Type) where
   deriving Inhabited
 ```
 
-`Lean.registerNameMapAttribute` (definition, [line 58](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/NameMapAttribute.lean#L58))
+`Lean.registerNameMapAttribute` (definition, [line 58](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/NameMapAttribute.lean#L58))
 
 > Similar to `registerParametricAttribute` except that attributes do not
 > have to be assigned in the same file as the declaration.
@@ -77,5 +77,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Lean/NameMapAttribute.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/NameMapAttribute.lean)
+- [Batteries/Lean/NameMapAttribute.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/NameMapAttribute.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Lean.NameMapAttribute.json)

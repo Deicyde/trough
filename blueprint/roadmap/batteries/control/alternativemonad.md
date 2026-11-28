@@ -7,7 +7,7 @@ proof: formalized
 
 # Laws for Monads with Failure
 
-`Batteries.Control.AlternativeMonad`, in [Batteries/Control/AlternativeMonad.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/AlternativeMonad.lean), by Devon Tuma.
+`Batteries.Control.AlternativeMonad`, in [Batteries/Control/AlternativeMonad.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/AlternativeMonad.lean), by Devon Tuma.
 
 > Definitions for monads that also have an `Alternative` instance while sharing the underlying
 > `Applicative` instance, and a class `LawfulAlternative` for types where the `failure` and `orElse`
@@ -34,7 +34,7 @@ proof: formalized
 >
 > monad, alternative, failure
 
-`AlternativeMonad` (class, [line 49](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/AlternativeMonad.lean#L49))
+`AlternativeMonad` (class, [line 49](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/AlternativeMonad.lean#L49))
 
 > `AlternativeMonad m` means that `m` has both a `Monad` and `Alternative` instance,
 > which both share the same underlying `Applicative` instance.
@@ -44,7 +44,7 @@ proof: formalized
 class AlternativeMonad (m : Type _ → Type _) extends Alternative m, Monad m
 ```
 
-`LawfulAlternative` (class, [line 55](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/AlternativeMonad.lean#L55))
+`LawfulAlternative` (class, [line 55](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/AlternativeMonad.lean#L55))
 
 > `LawfulAlternative m` means that the `failure` operation on `m` behaves naturally
 > with respect to `map`, `seq`, and `orElse` operators.
@@ -66,49 +66,49 @@ class LawfulAlternative (m : Type _ → Type _) [Alternative m] : Prop
   map_orElse (x y : m α) (f : α → β) : f <$> (x <|> y) = (f <$> x <|> f <$> y)
 ```
 
-`mapConst_failure` (theorem, [line 76](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/AlternativeMonad.lean#L76))
+`mapConst_failure` (theorem, [line 76](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/AlternativeMonad.lean#L76))
 
 ```lean
 theorem mapConst_failure [Alternative m] [LawfulAlternative m] (y : β) :
     Functor.mapConst y (failure : m α) = failure
 ```
 
-`mapConst_orElse` (theorem, [line 80](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/AlternativeMonad.lean#L80))
+`mapConst_orElse` (theorem, [line 80](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/AlternativeMonad.lean#L80))
 
 ```lean
 theorem mapConst_orElse [Alternative m] [LawfulAlternative m] (x x' : m α) (y : β) :
     Functor.mapConst y (x <|> x') = (Functor.mapConst y x <|> Functor.mapConst y x')
 ```
 
-`failure_seqLeft` (theorem, [line 84](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/AlternativeMonad.lean#L84))
+`failure_seqLeft` (theorem, [line 84](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/AlternativeMonad.lean#L84))
 
 ```lean
 theorem failure_seqLeft [Alternative m] [LawfulAlternative m] (x : m α) :
     (failure : m β) <* x = failure
 ```
 
-`failure_seqRight` (theorem, [line 88](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/AlternativeMonad.lean#L88))
+`failure_seqRight` (theorem, [line 88](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/AlternativeMonad.lean#L88))
 
 ```lean
 theorem failure_seqRight [Alternative m] [LawfulAlternative m] (x : m α) :
     (failure : m β) *> x = failure
 ```
 
-`failure_bind` (theorem, [line 96](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/AlternativeMonad.lean#L96))
+`failure_bind` (theorem, [line 96](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/AlternativeMonad.lean#L96))
 
 ```lean
 theorem failure_bind [AlternativeMonad m] [LawfulAlternative m] [LawfulMonad m]
     (x : α → m β) : failure >>= x = failure
 ```
 
-`seq_failure` (theorem, [line 104](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/AlternativeMonad.lean#L104))
+`seq_failure` (theorem, [line 104](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/AlternativeMonad.lean#L104))
 
 ```lean
 theorem seq_failure [AlternativeMonad m] [LawfulAlternative m] [LawfulMonad m]
     (x : m (α → β)) : x <*> failure = x *> failure
 ```
 
-`LawfulAlternativeLift` (class, [line 113](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/AlternativeMonad.lean#L113))
+`LawfulAlternativeLift` (class, [line 113](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/AlternativeMonad.lean#L113))
 
 > Type-class for monad lifts that preserve the `Alternative` operations.
 
@@ -131,5 +131,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Control/AlternativeMonad.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Control/AlternativeMonad.lean)
+- [Batteries/Control/AlternativeMonad.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Control/AlternativeMonad.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Control.AlternativeMonad.json)

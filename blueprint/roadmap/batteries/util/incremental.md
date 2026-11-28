@@ -7,9 +7,9 @@ proof: formalized
 
 # A utility for simple incremental commands
 
-`Batteries.Util.Incremental`, in [Batteries/Util/Incremental.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Incremental.lean), by Robin Arnez.
+`Batteries.Util.Incremental`, in [Batteries/Util/Incremental.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Util/Incremental.lean), by Robin Arnez.
 
-`Batteries.Tactic.CommandElabResultSnapshot` (structure, [line 21](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Incremental.lean#L21))
+`Batteries.Tactic.CommandElabResultSnapshot` (structure, [line 21](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Util/Incremental.lean#L21))
 
 > A snapshot for the result of command elaboration
 
@@ -26,7 +26,7 @@ structure CommandElabResultSnapshot extends Language.Snapshot where
 deriving Nonempty
 ```
 
-`Batteries.Tactic.SimpleIncrementalSnapshot` (structure, [line 33](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Incremental.lean#L33))
+`Batteries.Tactic.SimpleIncrementalSnapshot` (structure, [line 33](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Util/Incremental.lean#L33))
 
 > The snapshot type for `simpleIncrementalElab`
 
@@ -39,7 +39,7 @@ structure SimpleIncrementalSnapshot extends Language.Snapshot where
 deriving TypeName
 ```
 
-`Batteries.Tactic.simpleIncrementalElab` (definition, [line 69](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Incremental.lean#L69))
+`Batteries.Tactic.simpleIncrementalElab` (definition, [line 69](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Util/Incremental.lean#L69))
 
 > Wraps `cmd` with simple incrementality handling that makes the command not re-run if only trailing
 > whitespace was changed or when a syntax error gets introduced and then removed again.
@@ -68,5 +68,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Util/Incremental.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Incremental.lean)
+- [Batteries/Util/Incremental.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Util/Incremental.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Util.Incremental.json)

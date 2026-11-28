@@ -2,12 +2,14 @@
  "schema": "trough-ledger/v1",
  "library": "Batteries",
  "repo": "leanprover-community/batteries",
- "rev": "e389e88a42889041c731d3aa86223f0ec70476a0",
+ "rev": "dd0900df51045e7d9be143ed167c9d200bcf2b45",
  "module": "Batteries.Lean.HashMap",
  "file": "Batteries/Lean/HashMap.lean",
  "public": [
   {"name": "Std.HashMap.mergeWithM", "kind": "def", "line": 20},
-  {"name": "Std.HashMap.mergeWith", "kind": "def", "line": 32}
+  {"name": "Std.HashMap.mergeWith", "kind": "def", "line": 32},
+  {"name": "Std.HashMap.findEntry?", "kind": "def", "line": 52},
+  {"name": "Std.HashMap.ofListWith", "kind": "def", "line": 61}
  ],
  "private": [],
  "missing": [],

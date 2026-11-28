@@ -7,11 +7,11 @@ proof: formalized
 
 # List/Basic
 
-`Batteries.Data.List.Basic`, in [Batteries/Data/List/Basic.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean), by Leonardo de Moura.
+`Batteries.Data.List.Basic`, in [Batteries/Data/List/Basic.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean), by Leonardo de Moura.
 
 > ## New definitions
 
-`List.max!` (definition, [line 17](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L17))
+`List.max!` (definition, [line 17](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L17))
 
 > Get the maximum element of a list.
 > If the given list is empty, returns `(default : α)` and produces a panic error message.
@@ -20,7 +20,7 @@ proof: formalized
 def max! {α} [Inhabited α] [Max α] (xs : List α) : α
 ```
 
-`List.min!` (definition, [line 24](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L24))
+`List.min!` (definition, [line 24](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L24))
 
 > Get the minimum element of a list.
 > If the given list is empty, returns `(default : α)` and produces a panic error message.
@@ -29,7 +29,7 @@ def max! {α} [Inhabited α] [Max α] (xs : List α) : α
 def min! {α} [Inhabited α] [Min α] (xs : List α) : α
 ```
 
-`List.bagInter` (definition, [line 34](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L34))
+`List.bagInter` (definition, [line 34](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L34))
 
 > Computes the "bag intersection" of `l₁` and `l₂`, that is,
 > the collection of elements of `l₁` which are also in `l₂`. As each element
@@ -39,7 +39,7 @@ def min! {α} [Inhabited α] [Min α] (xs : List α) : α
 protected def bagInter {α} [BEq α] : List α → List α → List α
 ```
 
-`List.diff` (definition, [line 40](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L40))
+`List.diff` (definition, [line 40](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L40))
 
 > Computes the difference of `l₁` and `l₂`, by removing each element in `l₂` from `l₁`.
 
@@ -47,7 +47,7 @@ protected def bagInter {α} [BEq α] : List α → List α → List α
 protected def diff {α} [BEq α] : List α → List α → List α
 ```
 
-`List.next?` (definition, [line 47](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L47))
+`List.next?` (definition, [line 47](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L47))
 
 > Get the head and tail of a list, if it is nonempty.
 
@@ -55,7 +55,7 @@ protected def diff {α} [BEq α] : List α → List α → List α
 def next? : List α → Option (α × List α)
 ```
 
-`List.after` (definition, [line 59](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L59))
+`List.after` (definition, [line 59](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L59))
 
 > `after p xs` is the suffix of `xs` after the first element that satisfies
 > `p`, not including that element.
@@ -68,7 +68,7 @@ def next? : List α → Option (α × List α)
 def after (p : α → Bool) : List α → List α
 ```
 
-`List.replaceF` (definition, [line 64](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L64))
+`List.replaceF` (definition, [line 64](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L64))
 
 > Replaces the first element of the list for which `f` returns `some` with the returned value.
 
@@ -76,7 +76,7 @@ def after (p : α → Bool) : List α → List α
 def replaceF (f : α → Option α) : List α → List α
 ```
 
-`List.replaceFTR` (definition, [line 71](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L71))
+`List.replaceFTR` (definition, [line 71](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L71))
 
 > Tail-recursive version of `replaceF`.
 
@@ -84,13 +84,13 @@ def replaceF (f : α → Option α) : List α → List α
 def replaceFTR (f : α → Option α) (l : List α) : List α
 ```
 
-`List.replaceF_eq_replaceFTR` (theorem, [line 79](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L79))
+`List.replaceF_eq_replaceFTR` (theorem, [line 79](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L79))
 
 ```lean
 theorem replaceF_eq_replaceFTR : @replaceF = @replaceFTR
 ```
 
-`List.union` (definition, [line 93](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L93))
+`List.union` (definition, [line 93](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L93))
 
 > Constructs the union of two lists, by inserting the elements of `l₁` in reverse order to `l₂`.
 > As a result, `l₂` will always be a suffix, but only the last occurrence of each element in `l₁`
@@ -100,7 +100,7 @@ theorem replaceF_eq_replaceFTR : @replaceF = @replaceFTR
 protected def union [BEq α] (l₁ l₂ : List α) : List α
 ```
 
-`List.inter` (definition, [line 101](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L101))
+`List.inter` (definition, [line 101](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L101))
 
 > Constructs the intersection of two lists, by filtering the elements of `l₁` that are in `l₂`.
 > Unlike `bagInter` this does not preserve multiplicity: `[1, 1].inter [1]` is `[1, 1]`.
@@ -109,7 +109,7 @@ protected def union [BEq α] (l₁ l₂ : List α) : List α
 protected def inter [BEq α] (l₁ l₂ : List α) : List α
 ```
 
-`List.splitAtD` (definition, [line 113](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L113))
+`List.splitAtD` (definition, [line 113](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L113))
 
 > Split a list at an index. Ensures the left list always has the specified length
 > by right padding with the provided default element.
@@ -122,7 +122,7 @@ protected def inter [BEq α] (l₁ l₂ : List α) : List α
 def splitAtD (n : Nat) (l : List α) (dflt : α) : List α × List α
 ```
 
-`List.modifyLast` (definition, [line 122](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L122))
+`List.modifyLast` (definition, [line 122](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L122))
 
 > Apply `f` to the last element of `l`, if it exists.
 
@@ -130,13 +130,13 @@ def splitAtD (n : Nat) (l : List α) (dflt : α) : List α × List α
 def modifyLast (f : α → α) (l : List α) : List α
 ```
 
-`List.headD_eq_head?` (theorem, [line 129](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L129))
+`List.headD_eq_head?` (theorem, [line 129](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L129))
 
 ```lean
 theorem headD_eq_head? (l) (a : α) : headD l a = (head? l).getD a
 ```
 
-`List.takeD` (definition, [line 135](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L135))
+`List.takeD` (definition, [line 135](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L135))
 
 > Take `n` elements from a list `l`. If `l` has less than `n` elements, append `n - length l`
 > elements `x`.
@@ -145,26 +145,26 @@ theorem headD_eq_head? (l) (a : α) : headD l a = (head? l).getD a
 def takeD : Nat → List α → α → List α
 ```
 
-`List.takeD_zero` (theorem, [line 139](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L139))
+`List.takeD_zero` (theorem, [line 139](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L139))
 
 ```lean
 theorem takeD_zero (l) (a : α) : takeD 0 l a = []
 ```
 
-`List.takeD_succ` (theorem, [line 140](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L140))
+`List.takeD_succ` (theorem, [line 140](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L140))
 
 ```lean
 theorem takeD_succ (l) (a : α) :
     takeD (n+1) l a = l.head?.getD a :: takeD n l.tail a
 ```
 
-`List.takeD_nil` (theorem, [line 143](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L143))
+`List.takeD_nil` (theorem, [line 143](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L143))
 
 ```lean
 theorem takeD_nil (n) (a : α) : takeD n [] a = replicate n a
 ```
 
-`List.takeDTR` (definition, [line 147](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L147))
+`List.takeDTR` (definition, [line 147](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L147))
 
 > Tail-recursive version of `takeD`.
 
@@ -172,19 +172,19 @@ theorem takeD_nil (n) (a : α) : takeD n [] a = replicate n a
 def takeDTR (n : Nat) (l : List α) (dflt : α) : List α
 ```
 
-`List.takeDTR_go_eq` (theorem, [line 154](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L154))
+`List.takeDTR_go_eq` (theorem, [line 154](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L154))
 
 ```lean
 theorem takeDTR_go_eq : ∀ n l, takeDTR.go dflt n l acc = acc.toList ++ takeD n l dflt
 ```
 
-`List.takeD_eq_takeDTR` (theorem, [line 159](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L159))
+`List.takeD_eq_takeDTR` (theorem, [line 159](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L159))
 
 ```lean
 theorem takeD_eq_takeDTR : @takeD = @takeDTR
 ```
 
-`List.scanAuxM` (definition, [line 165](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L165))
+`List.scanAuxM` (definition, [line 165](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L165))
 
 > Tail-recursive helper function for `scanlM` and `scanrM`
 
@@ -192,7 +192,7 @@ theorem takeD_eq_takeDTR : @takeD = @takeDTR
 def scanAuxM [Monad m] (f : β → α → m β) (init : β) (l : List α) : m (List β)
 ```
 
-`List.foldlIdx` (definition, [line 179](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L179))
+`List.foldlIdx` (definition, [line 179](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L179))
 
 > Fold a list from left to right as with `foldl`, but the combining function
 > also receives each element's index added to an optional parameter `start`
@@ -204,7 +204,7 @@ def foldlIdx (f : Nat → α → β → α) (init : α) :
     List β → (start : Nat := 0) → α
 ```
 
-`List.foldrIdx` (definition, [line 190](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L190))
+`List.foldrIdx` (definition, [line 190](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L190))
 
 > Fold a list from right to left as with `foldr`, but the combining function
 > also receives each element's index added to an optional parameter `start`
@@ -216,7 +216,7 @@ def foldrIdx {α : Type u} {β : Type v} (f : Nat → α → β → β) (init : 
     (l : List α) → (start : Nat := 0) → β
 ```
 
-`List.foldrIdxTR` (definition, [line 196](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L196))
+`List.foldrIdxTR` (definition, [line 196](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L196))
 
 > A tail-recursive version of `foldrIdx`.
 
@@ -224,13 +224,13 @@ def foldrIdx {α : Type u} {β : Type v} (f : Nat → α → β → β) (init : 
 def foldrIdxTR (f : Nat → α → β → β) (init : β) (l : List α) (start : Nat := 0) : β
 ```
 
-`List.foldrIdx_eq_foldrIdxTR` (theorem, [line 199](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L199))
+`List.foldrIdx_eq_foldrIdxTR` (theorem, [line 199](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L199))
 
 ```lean
 theorem foldrIdx_eq_foldrIdxTR : @foldrIdx = @foldrIdxTR
 ```
 
-`List.findIdxs` (definition, [line 208](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L208))
+`List.findIdxs` (definition, [line 208](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L208))
 
 > `findIdxs p l s` is the list of indexes of elements of `l` that satisfy `p`, added to an
 > optional parameter `s` (so that the members of `findIdxs p l s` will be greater than or
@@ -240,7 +240,7 @@ theorem foldrIdx_eq_foldrIdxTR : @foldrIdx = @foldrIdxTR
 def findIdxs (p : α → Bool) (l : List α) (start : Nat := 0) : List Nat
 ```
 
-`List.findIdxsValues` (definition, [line 217](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L217))
+`List.findIdxsValues` (definition, [line 217](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L217))
 
 > Returns the elements of `l` that satisfy `p` together with their indexes in
 > `l` added to an optional parameter `start`. The returned list is ordered by index.
@@ -250,7 +250,7 @@ def findIdxs (p : α → Bool) (l : List α) (start : Nat := 0) : List Nat
 def findIdxsValues (p : α → Bool) (l : List α) (start : Nat := 0) : List (Nat × α)
 ```
 
-`List.findIdxNth` (definition, [line 226](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L226))
+`List.findIdxNth` (definition, [line 226](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L226))
 
 > `findIdxNth p xs n` returns the index of the `n`th element for which `p` returns `true`.
 > For example:
@@ -262,7 +262,7 @@ def findIdxsValues (p : α → Bool) (l : List α) (start : Nat := 0) : List (Na
 def findIdxNth (p : α → Bool) (xs : List α) (n : Nat) : Nat
 ```
 
-`List.idxsOf` (definition, [line 241](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L241))
+`List.idxsOf` (definition, [line 241](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L241))
 
 > `idxsOf a l s` is the list of all indexes of `a` in `l`,  added to an
 > optional parameter `s`. For example:
@@ -275,7 +275,7 @@ def findIdxNth (p : α → Bool) (xs : List α) (n : Nat) : Nat
 def idxsOf [BEq α] (a : α) (xs : List α) (start : Nat := 0) : List Nat
 ```
 
-`List.idxOfNth` (definition, [line 251](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L251))
+`List.idxOfNth` (definition, [line 251](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L251))
 
 > `idxOfNth a xs n` returns the index of the `n`th instance of `a` in `xs`, counting from `0`.
 >
@@ -288,7 +288,7 @@ def idxsOf [BEq α] (a : α) (xs : List α) (start : Nat := 0) : List Nat
 def idxOfNth [BEq α] (a : α) (xs : List α) (n : Nat) : Nat
 ```
 
-`List.countPBefore` (definition, [line 262](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L262))
+`List.countPBefore` (definition, [line 262](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L262))
 
 > `countPBefore p xs i hip` counts the number of `x` in `xs` before the `i`th index for
 > which `p x = true`.
@@ -302,7 +302,7 @@ def idxOfNth [BEq α] (a : α) (xs : List α) (n : Nat) : Nat
 def countPBefore (p : α → Bool) (xs : List α) (i : Nat) : Nat
 ```
 
-`List.countBefore` (definition, [line 277](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L277))
+`List.countBefore` (definition, [line 277](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L277))
 
 > `countBefore a xs n` counts the number of `x` in `xs` before the
 > `i`th index for which `x == a` is true.
@@ -316,7 +316,7 @@ def countPBefore (p : α → Bool) (xs : List α) (i : Nat) : Nat
 def countBefore [BEq α] (a : α) : List α → Nat → Nat
 ```
 
-`List.lookmap` (definition, [line 285](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L285))
+`List.lookmap` (definition, [line 285](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L285))
 
 > `lookmap` is a combination of `lookup` and `filterMap`.
 > `lookmap f l` will apply `f : α → Option α` to each element of the list,
@@ -326,7 +326,7 @@ def countBefore [BEq α] (a : α) : List α → Nat → Nat
 def lookmap (f : α → Option α) (l : List α) : List α
 ```
 
-`List.inits` (definition, [line 299](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L299))
+`List.inits` (definition, [line 299](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L299))
 
 > `inits l` is the list of initial segments of `l`.
 > ```
@@ -337,7 +337,7 @@ def lookmap (f : α → Option α) (l : List α) : List α
 def inits : List α → List (List α)
 ```
 
-`List.initsTR` (definition, [line 304](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L304))
+`List.initsTR` (definition, [line 304](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L304))
 
 > Tail-recursive version of `inits`.
 
@@ -345,13 +345,13 @@ def inits : List α → List (List α)
 def initsTR (l : List α) : List (List α)
 ```
 
-`List.inits_eq_initsTR` (theorem, [line 307](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L307))
+`List.inits_eq_initsTR` (theorem, [line 307](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L307))
 
 ```lean
 theorem inits_eq_initsTR : @inits = @initsTR
 ```
 
-`List.tails` (definition, [line 316](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L316))
+`List.tails` (definition, [line 316](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L316))
 
 > `tails l` is the list of terminal segments of `l`.
 > ```
@@ -362,7 +362,7 @@ theorem inits_eq_initsTR : @inits = @initsTR
 def tails : List α → List (List α)
 ```
 
-`List.tailsTR` (definition, [line 321](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L321))
+`List.tailsTR` (definition, [line 321](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L321))
 
 > Tail-recursive version of `tails`.
 
@@ -370,13 +370,13 @@ def tails : List α → List (List α)
 def tailsTR (l : List α) : List (List α)
 ```
 
-`List.tails_eq_tailsTR` (theorem, [line 328](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L328))
+`List.tails_eq_tailsTR` (theorem, [line 328](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L328))
 
 ```lean
 theorem tails_eq_tailsTR : @tails = @tailsTR
 ```
 
-`List.sublists'` (definition, [line 343](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L343))
+`List.sublists'` (definition, [line 343](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L343))
 
 > `sublists' l` is the list of all (non-contiguous) sublists of `l`.
 > It differs from `sublists` only in the order of appearance of the sublists;
@@ -390,7 +390,7 @@ theorem tails_eq_tailsTR : @tails = @tailsTR
 def sublists' (l : List α) : List (List α)
 ```
 
-`List.sublists` (definition, [line 354](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L354))
+`List.sublists` (definition, [line 354](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L354))
 
 > `sublists l` is the list of all (non-contiguous) sublists of `l`; cf. `sublists'`
 > for a different ordering.
@@ -402,7 +402,7 @@ def sublists' (l : List α) : List (List α)
 def sublists (l : List α) : List (List α)
 ```
 
-`List.sublistsFast` (definition, [line 358](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L358))
+`List.sublistsFast` (definition, [line 358](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L358))
 
 > A version of `List.sublists` that has faster runtime performance but worse kernel performance
 
@@ -410,13 +410,13 @@ def sublists (l : List α) : List (List α)
 def sublistsFast (l : List α) : List (List α)
 ```
 
-`List.sublists_eq_sublistsFast` (theorem, [line 363](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L363))
+`List.sublists_eq_sublistsFast` (theorem, [line 363](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L363))
 
 ```lean
 theorem sublists_eq_sublistsFast : @sublists = @sublistsFast
 ```
 
-`List.Forall₂` (inductive type, [line 377](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L377))
+`List.Forall₂` (inductive type, [line 377](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L377))
 
 > `Forall₂ R l₁ l₂` means that `l₁` and `l₂` have the same length,
 > and whenever `a` is the nth element of `l₁`, and `b` is the nth element of `l₂`,
@@ -431,14 +431,14 @@ inductive Forall₂ (R : α → β → Prop) : List α → List β → Prop
   | cons {a b l₁ l₂} : R a b → Forall₂ R l₁ l₂ → Forall₂ R (a :: l₁) (b :: l₂)
 ```
 
-`List.forall₂_cons` (theorem, [line 386](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L386))
+`List.forall₂_cons` (theorem, [line 386](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L386))
 
 ```lean
 theorem forall₂_cons {R : α → β → Prop} {a b l₁ l₂} :
     Forall₂ R (a :: l₁) (b :: l₂) ↔ R a b ∧ Forall₂ R l₁ l₂
 ```
 
-`List.all₂` (definition, [line 394](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L394))
+`List.all₂` (definition, [line 394](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L394))
 
 > Check for all elements `a`, `b`, where `a` and `b` are the nth element of the first and second
 > List respectively, that `r a b = true`.
@@ -447,14 +447,14 @@ theorem forall₂_cons {R : α → β → Prop} {a b l₁ l₂} :
 def all₂ (r : α → β → Bool) : List α → List β → Bool
 ```
 
-`List.all₂_eq_true` (theorem, [line 402](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L402))
+`List.all₂_eq_true` (theorem, [line 402](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L402))
 
 ```lean
 theorem all₂_eq_true {r : α → β → Bool} :
     ∀ l₁ l₂, all₂ r l₁ l₂ ↔ Forall₂ (r · ·) l₁ l₂
 ```
 
-`List.transpose` (definition, [line 423](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L423))
+`List.transpose` (definition, [line 423](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L423))
 
 > Transpose of a list of lists, treated as a matrix.
 > ```
@@ -465,7 +465,7 @@ theorem all₂_eq_true {r : α → β → Bool} :
 def transpose (l : List (List α)) : List (List α)
 ```
 
-`List.sections` (definition, [line 450](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L450))
+`List.sections` (definition, [line 450](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L450))
 
 > List of all sections through a list of lists. A section
 > of `[L₁, L₂, ..., Lₙ]` is a list whose first element comes from
@@ -475,7 +475,7 @@ def transpose (l : List (List α)) : List (List α)
 def sections : List (List α) → List (List α)
 ```
 
-`List.sectionsTR` (definition, [line 455](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L455))
+`List.sectionsTR` (definition, [line 455](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L455))
 
 > Optimized version of `sections`.
 
@@ -483,19 +483,19 @@ def sections : List (List α) → List (List α)
 def sectionsTR (L : List (List α)) : List (List α)
 ```
 
-`List.sections_eq_nil_of_isEmpty` (theorem, [line 465](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L465))
+`List.sections_eq_nil_of_isEmpty` (theorem, [line 465](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L465))
 
 ```lean
 theorem sections_eq_nil_of_isEmpty : ∀ {L}, L.any isEmpty → @sections α L = []
 ```
 
-`List.sections_eq_sectionsTR` (theorem, [line 472](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L472))
+`List.sections_eq_sectionsTR` (theorem, [line 472](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L472))
 
 ```lean
 theorem sections_eq_sectionsTR : @sections = @sectionsTR
 ```
 
-`List.extractP` (definition, [line 483](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L483))
+`List.extractP` (definition, [line 483](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L483))
 
 > `extractP p l` returns a pair of an element `a` of `l` satisfying the predicate
 > `p`, and `l`, with `a` removed. If there is no such element `a` it returns `(none, l)`.
@@ -504,7 +504,7 @@ theorem sections_eq_sectionsTR : @sections = @sectionsTR
 def extractP (p : α → Bool) (l : List α) : Option α × List α
 ```
 
-`List.revzip` (definition, [line 498](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L498))
+`List.revzip` (definition, [line 498](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L498))
 
 > `revzip l` returns a list of pairs of the elements of `l` paired
 > with the elements of `l` in reverse order.
@@ -516,7 +516,7 @@ def extractP (p : α → Bool) (l : List α) : Option α × List α
 def revzip (l : List α) : List (α × α)
 ```
 
-`List.product` (definition, [line 507](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L507))
+`List.product` (definition, [line 507](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L507))
 
 > `product l₁ l₂` is the list of pairs `(a, b)` where `a ∈ l₁` and `b ∈ l₂`.
 > ```
@@ -527,7 +527,7 @@ def revzip (l : List α) : List (α × α)
 def product (l₁ : List α) (l₂ : List β) : List (α × β)
 ```
 
-`List.productTR` (definition, [line 510](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L510))
+`List.productTR` (definition, [line 510](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L510))
 
 > Optimized version of `product`.
 
@@ -535,13 +535,13 @@ def product (l₁ : List α) (l₂ : List β) : List (α × β)
 def productTR (l₁ : List α) (l₂ : List β) : List (α × β)
 ```
 
-`List.product_eq_productTR` (theorem, [line 513](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L513))
+`List.product_eq_productTR` (theorem, [line 513](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L513))
 
 ```lean
 theorem product_eq_productTR : @product = @productTR
 ```
 
-`List.sigma` (definition, [line 523](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L523))
+`List.sigma` (definition, [line 523](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L523))
 
 > `sigma l₁ l₂` is the list of dependent pairs `(a, b)` where `a ∈ l₁` and `b ∈ l₂ a`.
 > ```
@@ -552,7 +552,7 @@ theorem product_eq_productTR : @product = @productTR
 protected def sigma {σ : α → Type _} (l₁ : List α) (l₂ : ∀ a, List (σ a)) : List (Σ a, σ a)
 ```
 
-`List.sigmaTR` (definition, [line 527](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L527))
+`List.sigmaTR` (definition, [line 527](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L527))
 
 > Optimized version of `sigma`.
 
@@ -560,13 +560,13 @@ protected def sigma {σ : α → Type _} (l₁ : List α) (l₂ : ∀ a, List (�
 def sigmaTR {σ : α → Type _} (l₁ : List α) (l₂ : ∀ a, List (σ a)) : List (Σ a, σ a)
 ```
 
-`List.sigma_eq_sigmaTR` (theorem, [line 530](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L530))
+`List.sigma_eq_sigmaTR` (theorem, [line 530](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L530))
 
 ```lean
 theorem sigma_eq_sigmaTR : @List.sigma = @sigmaTR
 ```
 
-`List.ofFnNthVal` (definition, [line 536](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L536))
+`List.ofFnNthVal` (definition, [line 536](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L536))
 
 > `ofFnNthVal f i` returns `some (f i)` if `i < n` and `none` otherwise.
 
@@ -574,7 +574,7 @@ theorem sigma_eq_sigmaTR : @List.sigma = @sigmaTR
 def ofFnNthVal {n} (f : Fin n → α) (i : Nat) : Option α
 ```
 
-`List.Disjoint` (definition, [line 540](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L540))
+`List.Disjoint` (definition, [line 540](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L540))
 
 > `Disjoint l₁ l₂` means that `l₁` and `l₂` have no elements in common.
 
@@ -582,7 +582,7 @@ def ofFnNthVal {n} (f : Fin n → α) (i : Nat) : Option α
 def Disjoint (l₁ l₂ : List α) : Prop
 ```
 
-`List.takeWhile₂` (definition, [line 549](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L549))
+`List.takeWhile₂` (definition, [line 549](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L549))
 
 > Returns the longest initial prefix of two lists such that they are pairwise related by `R`.
 > ```
@@ -593,7 +593,7 @@ def Disjoint (l₁ l₂ : List α) : Prop
 def takeWhile₂ (R : α → β → Bool) : List α → List β → List α × List β
 ```
 
-`List.takeWhile₂TR` (definition, [line 557](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L557))
+`List.takeWhile₂TR` (definition, [line 557](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L557))
 
 > Tail-recursive version of `takeWhile₂`.
 
@@ -601,13 +601,13 @@ def takeWhile₂ (R : α → β → Bool) : List α → List β → List α × L
 def takeWhile₂TR (R : α → β → Bool) (as : List α) (bs : List β) : List α × List β
 ```
 
-`List.takeWhile₂_eq_takeWhile₂TR` (theorem, [line 568](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L568))
+`List.takeWhile₂_eq_takeWhile₂TR` (theorem, [line 568](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L568))
 
 ```lean
 theorem takeWhile₂_eq_takeWhile₂TR : @takeWhile₂ = @takeWhile₂TR
 ```
 
-`List.pwFilter` (definition, [line 584](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L584))
+`List.pwFilter` (definition, [line 584](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L584))
 
 > `pwFilter R l` is a maximal sublist of `l` which is `Pairwise R`.
 > `pwFilter (·≠·)` is the erase duplicates function (cf. `eraseDups`), and `pwFilter (·<·)` finds
@@ -620,7 +620,7 @@ theorem takeWhile₂_eq_takeWhile₂TR : @takeWhile₂ = @takeWhile₂TR
 def pwFilter (R : α → α → Prop) [DecidableRel R] (l : List α) : List α
 ```
 
-`List.IsChain` (inductive type, [line 593](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L593))
+`List.IsChain` (inductive type, [line 593](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L593))
 
 > `IsChain R l` means that `R` holds between adjacent elements of `l`. Example:
 > ```
@@ -637,13 +637,13 @@ inductive IsChain (R : α → α → Prop) : List α → Prop where
   | cons_cons (hr : R a b) (h : IsChain R (b :: l)) : IsChain R (a :: b :: l)
 ```
 
-`List.isChain_cons_cons` (theorem, [line 604](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L604))
+`List.isChain_cons_cons` (theorem, [line 604](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L604))
 
 ```lean
 theorem isChain_cons_cons : IsChain R (a :: b :: l) ↔ R a b ∧ IsChain R (b :: l)
 ```
 
-`List.eraseDup` (abbreviation, [line 617](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L617))
+`List.eraseDup` (abbreviation, [line 617](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L617))
 
 > **Deprecated:** Use `reverse ∘ eraseDups ∘ reverse` or just `eraseDups` instead.
 
@@ -651,7 +651,7 @@ theorem isChain_cons_cons : IsChain R (a :: b :: l) ↔ R a b ∧ IsChain R (b :
 abbrev eraseDup [BEq α] : List α → List α
 ```
 
-`List.rotate` (definition, [line 625](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L625))
+`List.rotate` (definition, [line 625](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L625))
 
 > `rotate l n` rotates the elements of `l` to the left by `n`
 > ```
@@ -662,7 +662,7 @@ abbrev eraseDup [BEq α] : List α → List α
 def rotate (l : List α) (n : Nat) : List α
 ```
 
-`List.rotate'` (definition, [line 630](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L630))
+`List.rotate'` (definition, [line 630](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L630))
 
 > `rotate'` is the same as `rotate`, but slower. Used for proofs about `rotate`
 
@@ -670,7 +670,7 @@ def rotate (l : List α) (n : Nat) : List α
 def rotate' : List α → Nat → List α
 ```
 
-`List.mapDiagM` (definition, [line 644](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L644))
+`List.mapDiagM` (definition, [line 644](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L644))
 
 > `mapDiagM f l` calls `f` on all elements in the upper triangular part of `l × l`.
 > That is, for each `e ∈ l`, it will run `f e e` and then `f e e'`
@@ -684,7 +684,7 @@ def rotate' : List α → Nat → List α
 def mapDiagM [Monad m] (f : α → α → m β) (l : List α) : m (List β)
 ```
 
-`List.forDiagM` (definition, [line 661](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L661))
+`List.forDiagM` (definition, [line 661](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L661))
 
 > `forDiagM f l` calls `f` on all elements in the upper triangular part of `l × l`.
 > That is, for each `e ∈ l`, it will run `f e e` and then `f e e'`
@@ -697,7 +697,7 @@ def mapDiagM [Monad m] (f : α → α → m β) (l : List α) : m (List β)
 def forDiagM [Monad m] (f : α → α → m PUnit) : List α → m PUnit
 ```
 
-`List.getRest` (definition, [line 667](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L667))
+`List.getRest` (definition, [line 667](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L667))
 
 > `getRest l l₁` returns `some l₂` if `l = l₁ ++ l₂`.
 > If `l₁` is not a prefix of `l`, returns `none`
@@ -706,7 +706,7 @@ def forDiagM [Monad m] (f : α → α → m PUnit) : List α → m PUnit
 def getRest [DecidableEq α] : List α → List α → Option (List α)
 ```
 
-`List.dropSlice` (definition, [line 673](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L673))
+`List.dropSlice` (definition, [line 673](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L673))
 
 > `List.dropSlice n m xs` removes a slice of length `m` at index `n` in list `xs`.
 
@@ -714,7 +714,7 @@ def getRest [DecidableEq α] : List α → List α → Option (List α)
 def dropSlice : Nat → Nat → List α → List α
 ```
 
-`List.dropSliceTR` (definition, [line 679](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L679))
+`List.dropSliceTR` (definition, [line 679](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L679))
 
 > Optimized version of `dropSlice`.
 
@@ -722,19 +722,19 @@ def dropSlice : Nat → Nat → List α → List α
 def dropSliceTR (n m : Nat) (l : List α) : List α
 ```
 
-`List.dropSlice_zero₂` (theorem, [line 691](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L691))
+`List.dropSlice_zero₂` (theorem, [line 691](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L691))
 
 ```lean
 theorem dropSlice_zero₂ : ∀ n l, @dropSlice α n 0 l = l
 ```
 
-`List.dropSlice_eq_dropSliceTR` (theorem, [line 695](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L695))
+`List.dropSlice_eq_dropSliceTR` (theorem, [line 695](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L695))
 
 ```lean
 theorem dropSlice_eq_dropSliceTR : @dropSlice = @dropSliceTR
 ```
 
-`List.zipWithLeft'` (definition, [line 716](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L716))
+`List.zipWithLeft'` (definition, [line 716](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L716))
 
 > Left-biased version of `List.zipWith`. `zipWithLeft' f as bs` applies `f` to each
 > pair of elements `aᵢ ∈ as` and `bᵢ ∈ bs`. If `bs` is shorter than `as`, `f` is
@@ -749,7 +749,7 @@ theorem dropSlice_eq_dropSliceTR : @dropSlice = @dropSliceTR
 def zipWithLeft' (f : α → Option β → γ) : List α → List β → List γ × List β
 ```
 
-`List.zipWithLeft'TR` (definition, [line 722](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L722))
+`List.zipWithLeft'TR` (definition, [line 722](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L722))
 
 > Tail-recursive version of `zipWithLeft'`.
 
@@ -758,13 +758,13 @@ def zipWithLeft'TR (f : α → Option β → γ)
     (as : List α) (bs : List β) : List γ × List β
 ```
 
-`List.zipWithLeft'_eq_zipWithLeft'TR` (theorem, [line 730](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L730))
+`List.zipWithLeft'_eq_zipWithLeft'TR` (theorem, [line 730](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L730))
 
 ```lean
 theorem zipWithLeft'_eq_zipWithLeft'TR : @zipWithLeft' = @zipWithLeft'TR
 ```
 
-`List.zipWithRight'` (definition, [line 750](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L750))
+`List.zipWithRight'` (definition, [line 750](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L750))
 
 > Right-biased version of `List.zipWith`. `zipWithRight' f as bs` applies `f` to each
 > pair of elements `aᵢ ∈ as` and `bᵢ ∈ bs`. If `as` is shorter than `bs`, `f` is
@@ -779,7 +779,7 @@ theorem zipWithLeft'_eq_zipWithLeft'TR : @zipWithLeft' = @zipWithLeft'TR
 def zipWithRight' (f : Option α → β → γ) (as : List α) (bs : List β) : List γ × List α
 ```
 
-`List.zipLeft'` (definition, [line 764](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L764))
+`List.zipLeft'` (definition, [line 764](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L764))
 
 > Left-biased version of `List.zip`. `zipLeft' as bs` returns the list of
 > pairs `(aᵢ, bᵢ)` for `aᵢ ∈ as` and `bᵢ ∈ bs`. If `bs` is shorter than `as`, the
@@ -794,7 +794,7 @@ def zipWithRight' (f : Option α → β → γ) (as : List α) (bs : List β) : 
 def zipLeft' : List α → List β → List (α × Option β) × List β
 ```
 
-`List.zipRight'` (definition, [line 777](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L777))
+`List.zipRight'` (definition, [line 777](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L777))
 
 > Right-biased version of `List.zip`. `zipRight' as bs` returns the list of
 > pairs `(aᵢ, bᵢ)` for `aᵢ ∈ as` and `bᵢ ∈ bs`. If `as` is shorter than `bs`, the
@@ -809,7 +809,7 @@ def zipLeft' : List α → List β → List (α × Option β) × List β
 def zipRight' : List α → List β → List (Option α × β) × List α
 ```
 
-`List.zipWithLeft` (definition, [line 789](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L789))
+`List.zipWithLeft` (definition, [line 789](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L789))
 
 > Left-biased version of `List.zipWith`. `zipWithLeft f as bs` applies `f` to each pair
 > `aᵢ ∈ as` and `bᵢ ‌∈ bs`. If `bs` is shorter than `as`, `f` is applied to `none`
@@ -824,7 +824,7 @@ def zipRight' : List α → List β → List (Option α × β) × List α
 def zipWithLeft (f : α → Option β → γ) : List α → List β → List γ
 ```
 
-`List.zipWithLeftTR` (definition, [line 795](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L795))
+`List.zipWithLeftTR` (definition, [line 795](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L795))
 
 > Tail-recursive version of `zipWithLeft`.
 
@@ -833,13 +833,13 @@ def zipWithLeftTR (f : α → Option β → γ)
     (as : List α) (bs : List β) : List γ
 ```
 
-`List.zipWithLeft_eq_zipWithLeftTR` (theorem, [line 803](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L803))
+`List.zipWithLeft_eq_zipWithLeftTR` (theorem, [line 803](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L803))
 
 ```lean
 theorem zipWithLeft_eq_zipWithLeftTR : @zipWithLeft = @zipWithLeftTR
 ```
 
-`List.zipWithRight` (definition, [line 821](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L821))
+`List.zipWithRight` (definition, [line 821](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L821))
 
 > Right-biased version of `List.zipWith`. `zipWithRight f as bs` applies `f` to each
 > pair `aᵢ ∈ as` and `bᵢ ‌∈ bs`. If `as` is shorter than `bs`, `f` is applied to
@@ -854,7 +854,7 @@ theorem zipWithLeft_eq_zipWithLeftTR : @zipWithLeft = @zipWithLeftTR
 def zipWithRight (f : Option α → β → γ) (as : List α) (bs : List β) : List γ
 ```
 
-`List.zipLeft` (definition, [line 834](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L834))
+`List.zipLeft` (definition, [line 834](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L834))
 
 > Left-biased version of `List.zip`. `zipLeft as bs` returns the list of pairs
 > `(aᵢ, bᵢ)` for `aᵢ ∈ as` and `bᵢ ∈ bs`. If `bs` is shorter than `as`, the
@@ -869,7 +869,7 @@ def zipWithRight (f : Option α → β → γ) (as : List α) (bs : List β) : L
 def zipLeft : List α → List β → List (α × Option β)
 ```
 
-`List.zipRight` (definition, [line 846](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L846))
+`List.zipRight` (definition, [line 846](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L846))
 
 > Right-biased version of `List.zip`. `zipRight as bs` returns the list of pairs
 > `(aᵢ, bᵢ)` for `aᵢ ∈ as` and `bᵢ ∈ bs`. If `as` is shorter than `bs`, the
@@ -884,7 +884,7 @@ def zipLeft : List α → List β → List (α × Option β)
 def zipRight : List α → List β → List (Option α × β)
 ```
 
-`List.allSome` (definition, [line 856](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L856))
+`List.allSome` (definition, [line 856](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L856))
 
 > If all elements of `xs` are `some xᵢ`, `allSome xs` returns the `xᵢ`. Otherwise
 > it returns `none`.
@@ -897,7 +897,7 @@ def zipRight : List α → List β → List (Option α × β)
 def allSome (l : List (Option α)) : Option (List α)
 ```
 
-`List.takeList` (definition, [line 869](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L869))
+`List.takeList` (definition, [line 869](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L869))
 
 > `takeList as ns` extracts successive sublists from `as`. For `ns = n₁ ... nₘ`,
 > it first takes the `n₁` initial elements from `as`, then the next `n₂` ones,
@@ -913,7 +913,7 @@ def allSome (l : List (Option α)) : Option (List α)
 def takeList {α} : List α → List Nat → List (List α) × List α
 ```
 
-`List.takeListTR` (definition, [line 877](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L877))
+`List.takeListTR` (definition, [line 877](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L877))
 
 > Tail-recursive version of `takeList`.
 
@@ -922,13 +922,13 @@ def takeListTR
     (xs : List α) (ns : List Nat) : List (List α) × List α
 ```
 
-`List.takeList_eq_takeListTR` (theorem, [line 886](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L886))
+`List.takeList_eq_takeListTR` (theorem, [line 886](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L886))
 
 ```lean
 theorem takeList_eq_takeListTR : @takeList = @takeListTR
 ```
 
-`List.toChunksAux` (definition, [line 898](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L898))
+`List.toChunksAux` (definition, [line 898](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L898))
 
 > Auxliary definition used to define `toChunks`.
 > `toChunksAux n xs i` returns `(xs.take i, (xs.drop i).toChunks (n+1))`,
@@ -939,7 +939,7 @@ theorem takeList_eq_takeListTR : @takeList = @takeListTR
 def toChunksAux {α} (n : Nat) : List α → Nat → List α × List (List α)
 ```
 
-`List.toChunks` (definition, [line 917](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L917))
+`List.toChunks` (definition, [line 917](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L917))
 
 > `xs.toChunks n` splits the list into sublists of size at most `n`,
 > such that `(xs.toChunks n).join = xs`.
@@ -961,7 +961,7 @@ def toChunks {α} : Nat → List α → List (List α)
 > or as
 > `(zip xs <| zip ys zs).map fun ⟨x, y, z⟩ => f x y z`.
 
-`List.zipWith₃` (definition, [line 945](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L945))
+`List.zipWith₃` (definition, [line 945](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L945))
 
 > Ternary version of `List.zipWith`.
 
@@ -969,7 +969,7 @@ def toChunks {α} : Nat → List α → List (List α)
 def zipWith₃ (f : α → β → γ → δ) : List α → List β → List γ → List δ
 ```
 
-`List.zipWith₄` (definition, [line 950](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L950))
+`List.zipWith₄` (definition, [line 950](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L950))
 
 > Quaternary version of `List.zipWith`.
 
@@ -977,7 +977,7 @@ def zipWith₃ (f : α → β → γ → δ) : List α → List β → List γ �
 def zipWith₄ (f : α → β → γ → δ → ε) : List α → List β → List γ → List δ → List ε
 ```
 
-`List.zipWith₅` (definition, [line 955](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L955))
+`List.zipWith₅` (definition, [line 955](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L955))
 
 > Quinary version of `List.zipWith`.
 
@@ -985,7 +985,7 @@ def zipWith₄ (f : α → β → γ → δ → ε) : List α → List β → Li
 def zipWith₅ (f : α → β → γ → δ → ε → ζ) : List α → List β → List γ → List δ → List ε → List ζ
 ```
 
-`List.mapWithPrefixSuffixAux` (definition, [line 961](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L961))
+`List.mapWithPrefixSuffixAux` (definition, [line 961](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L961))
 
 > An auxiliary function for `List.mapWithPrefixSuffix`.
 
@@ -993,7 +993,7 @@ def zipWith₅ (f : α → β → γ → δ → ε → ζ) : List α → List β
 def mapWithPrefixSuffixAux {α β} (f : List α → α → List α → β) : List α → List α → List β
 ```
 
-`List.mapWithPrefixSuffix` (definition, [line 972](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L972))
+`List.mapWithPrefixSuffix` (definition, [line 972](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L972))
 
 > `List.mapWithPrefixSuffix f l` maps `f` across a list `l`.
 > For each `a ∈ l` with `l = pref ++ [a] ++ suff`, `a` is mapped to `f pref a suff`.
@@ -1005,7 +1005,7 @@ def mapWithPrefixSuffixAux {α β} (f : List α → α → List α → β) : Lis
 def mapWithPrefixSuffix {α β} (f : List α → α → List α → β) (l : List α) : List β
 ```
 
-`List.mapWithComplement` (definition, [line 983](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L983))
+`List.mapWithComplement` (definition, [line 983](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L983))
 
 > `List.mapWithComplement f l` is a variant of `List.mapWithPrefixSuffix`
 > that maps `f` across a list `l`.
@@ -1018,7 +1018,7 @@ def mapWithPrefixSuffix {α β} (f : List α → α → List α → β) (l : Lis
 def mapWithComplement {α β} (f : α → List α → β) : List α → List β
 ```
 
-`List.traverse` (definition, [line 990](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L990))
+`List.traverse` (definition, [line 990](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L990))
 
 > Map each element of a `List` to an action, evaluate these actions in order,
 > and collect the results.
@@ -1027,7 +1027,7 @@ def mapWithComplement {α β} (f : α → List α → β) : List α → List β
 protected def traverse [Applicative F] (f : α → F β) : List α → F (List β)
 ```
 
-`List.Subperm` (definition, [line 999](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L999))
+`List.Subperm` (definition, [line 999](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L999))
 
 > `Subperm l₁ l₂`, denoted `l₁ <+~ l₂`, means that `l₁` is a sublist of
 > a permutation of `l₂`. This is an analogue of `l₁ ⊆ l₂` which respects
@@ -1037,7 +1037,7 @@ protected def traverse [Applicative F] (f : α → F β) : List α → F (List �
 def Subperm (l₁ l₂ : List α) : Prop
 ```
 
-`List.isSubperm` (definition, [line 1007](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L1007))
+`List.isSubperm` (definition, [line 1007](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L1007))
 
 > `O(|l₁| * (|l₁| + |l₂|))`. Computes whether `l₁` is a sublist of a permutation of `l₂`.
 > See `isSubperm_iff` for a characterization in terms of `List.Subperm`.
@@ -1046,7 +1046,7 @@ def Subperm (l₁ l₂ : List α) : Prop
 def isSubperm [BEq α] (l₁ l₂ : List α) : Bool
 ```
 
-`List.insertP` (definition, [line 1013](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L1013))
+`List.insertP` (definition, [line 1013](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L1013))
 
 > `O(|l|)`. Inserts `a` in `l` right before the first element such that `p` is true, or at the end of
 > the list if `p` always false on `l`.
@@ -1055,7 +1055,7 @@ def isSubperm [BEq α] (l₁ l₂ : List α) : Bool
 def insertP (p : α → Bool) (a : α) (l : List α) : List α
 ```
 
-`List.dropPrefix?` (definition, [line 1024](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L1024))
+`List.dropPrefix?` (definition, [line 1024](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L1024))
 
 > `dropPrefix? l p` returns
 > `some r` if `l = p' ++ r` for some `p'` which is paiwise `==` to `p`,
@@ -1065,7 +1065,7 @@ def insertP (p : α → Bool) (a : α) (l : List α) : List α
 def dropPrefix? [BEq α] : List α → List α → Option (List α)
 ```
 
-`List.dropSuffix?` (definition, [line 1032](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L1032))
+`List.dropSuffix?` (definition, [line 1032](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L1032))
 
 > `dropSuffix? l s` returns
 > `some r` if `l = r ++ s'` for some `s'` which is paiwise `==` to `s`,
@@ -1075,7 +1075,7 @@ def dropPrefix? [BEq α] : List α → List α → Option (List α)
 def dropSuffix? [BEq α] (l s : List α) : Option (List α)
 ```
 
-`List.dropInfix?` (definition, [line 1043](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L1043))
+`List.dropInfix?` (definition, [line 1043](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L1043))
 
 > `dropInfix? l i` returns
 > `some (p, s)` if `l = p ++ i' ++ s` for some `i'` which is paiwise `==` to `i`,
@@ -1088,7 +1088,7 @@ def dropSuffix? [BEq α] (l s : List α) : Option (List α)
 def dropInfix? [BEq α] (l i : List α) : Option (List α × List α)
 ```
 
-`List.partialSums` (definition, [line 1061](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L1061))
+`List.partialSums` (definition, [line 1061](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L1061))
 
 > Computes the partial sums of the elements of a list.
 >
@@ -1101,7 +1101,7 @@ def dropInfix? [BEq α] (l i : List α) : Option (List α × List α)
 def partialSums [Add α] [Zero α] (l : List α) : List α
 ```
 
-`List.partialProds` (definition, [line 1072](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L1072))
+`List.partialProds` (definition, [line 1072](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L1072))
 
 > Computes the partial products of the elements of a list.
 >
@@ -1114,7 +1114,7 @@ def partialSums [Add α] [Zero α] (l : List α) : List α
 def partialProds [Mul α] [One α] (l : List α) : List α
 ```
 
-`List.swapAt` (definition, [line 1077](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L1077))
+`List.swapAt` (definition, [line 1077](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L1077))
 
 > `swapAt xs i v` sets position `i` of `xs` to `v` and returns the displaced
 > element, or `v` itself (with `xs` unchanged) if `i` is out of bounds.
@@ -1123,7 +1123,7 @@ def partialProds [Mul α] [One α] (l : List α) : List α
 def swapAt (xs : List α) (i : Nat) (v : α) : α × List α
 ```
 
-`List.swapAtTR` (definition, [line 1080](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L1080))
+`List.swapAtTR` (definition, [line 1080](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L1080))
 
 > Tail-recursive version of `swapAt`.
 
@@ -1131,13 +1131,13 @@ def swapAt (xs : List α) (i : Nat) (v : α) : α × List α
 def swapAtTR (l : List α) (i : Nat) (v : α) : α × List α
 ```
 
-`List.swapAt_eq_swapAtTR` (theorem, [line 1087](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L1087))
+`List.swapAt_eq_swapAtTR` (theorem, [line 1087](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L1087))
 
 ```lean
 theorem swapAt_eq_swapAtTR : @swapAt = @swapAtTR
 ```
 
-`List.swap` (definition, [line 1097](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L1097))
+`List.swap` (definition, [line 1097](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L1097))
 
 > `l.swap i j` exchanges the elements at positions `i` and `j` of `l`.
 > If either index is out of bounds, `l` is returned unchanged.
@@ -1146,7 +1146,7 @@ theorem swapAt_eq_swapAtTR : @swapAt = @swapAtTR
 def swap : List α → Nat → Nat → List α
 ```
 
-`List.swapTR` (definition, [line 1103](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L1103))
+`List.swapTR` (definition, [line 1103](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L1103))
 
 > Tail-recursive version of `swap`.
 
@@ -1154,7 +1154,7 @@ def swap : List α → Nat → Nat → List α
 def swapTR (l : List α) (i j : Nat) : List α
 ```
 
-`List.swap_eq_swapTR` (theorem, [line 1111](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean#L1111))
+`List.swap_eq_swapTR` (theorem, [line 1111](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean#L1111))
 
 ```lean
 theorem swap_eq_swapTR : @swap = @swapTR
@@ -1166,5 +1166,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Data/List/Basic.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Basic.lean)
+- [Batteries/Data/List/Basic.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/List/Basic.lean)
 - [Declaration ledger](../../../../../../sources/batteries/Batteries.Data.List.Basic.json)

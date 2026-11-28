@@ -7,9 +7,9 @@ proof: formalized
 
 # `exact` tactic (`MetaM` version)
 
-`Batteries.Tactic.Exact`, in [Batteries/Tactic/Exact.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Exact.lean), by Mario Carneiro.
+`Batteries.Tactic.Exact`, in [Batteries/Tactic/Exact.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/Exact.lean), by Mario Carneiro.
 
-`Lean.MVarId.assignIfDefEq` (definition, [line 20](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Exact.lean#L20))
+`Lean.MVarId.assignIfDefEq` (definition, [line 20](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/Exact.lean#L20))
 
 > `MetaM` version of `Lean.Elab.Tactic.evalExact`: add `mvarId := x` to the metavariable assignment.
 > This method wraps `Lean.MVarId.assign`, checking whether `mvarId` is already assigned, and whether
@@ -25,5 +25,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Tactic/Exact.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Exact.lean)
+- [Batteries/Tactic/Exact.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Tactic/Exact.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Tactic.Exact.json)

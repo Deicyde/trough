@@ -2,11 +2,9 @@
 navigation: transparent
 ---
 
-# PairingHeap to Vector
+# Random to Vector
 
-- [PairingHeap](pairingheap.md)
 - [Random](random/README.md)
-- [Range](range/README.md)
 - [Running Statistics](runningstats.md)
 - [Stream](stream.md)
 - [String](string/README.md)

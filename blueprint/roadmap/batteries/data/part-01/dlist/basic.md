@@ -7,9 +7,9 @@ proof: formalized
 
 # DList/Basic
 
-`Batteries.Data.DList.Basic`, in [Batteries/Data/DList/Basic.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/DList/Basic.lean), by Leonardo de Moura.
+`Batteries.Data.DList.Basic`, in [Batteries/Data/DList/Basic.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/DList/Basic.lean), by Leonardo de Moura.
 
-`Batteries.DList` (structure, [line 17](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/DList/Basic.lean#L17))
+`Batteries.DList` (structure, [line 17](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/DList/Basic.lean#L17))
 
 > A difference List is a Function that, given a List, returns the original
 > contents of the difference List prepended to the given List.
@@ -24,7 +24,7 @@ structure DList (α : Type u) where
   invariant : ∀ l, apply l = apply [] ++ l
 ```
 
-`Batteries.DList.ofList` (definition, [line 30](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/DList/Basic.lean#L30))
+`Batteries.DList.ofList` (definition, [line 30](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/DList/Basic.lean#L30))
 
 > `O(1)` (`apply` is `O(|l|)`). Convert a `List α` into a `DList α`.
 
@@ -32,7 +32,7 @@ structure DList (α : Type u) where
 def ofList (l : List α) : DList α
 ```
 
-`Batteries.DList.empty` (definition, [line 34](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/DList/Basic.lean#L34))
+`Batteries.DList.empty` (definition, [line 34](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/DList/Basic.lean#L34))
 
 > `O(1)` (`apply` is `O(1)`). Return an empty `DList α`.
 
@@ -40,7 +40,7 @@ def ofList (l : List α) : DList α
 def empty : DList α
 ```
 
-`Batteries.DList.toList` (definition, [line 42](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/DList/Basic.lean#L42))
+`Batteries.DList.toList` (definition, [line 42](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/DList/Basic.lean#L42))
 
 > `O(apply())`. Convert a `DList α` into a `List α` by running the `apply` function.
 
@@ -48,13 +48,13 @@ def empty : DList α
 def toList : DList α → List α
 ```
 
-`Batteries.DList.toList_mk` (theorem, [line 45](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/DList/Basic.lean#L45))
+`Batteries.DList.toList_mk` (theorem, [line 45](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/DList/Basic.lean#L45))
 
 ```lean
 theorem toList_mk : toList ⟨f, h⟩ = f []
 ```
 
-`Batteries.DList.singleton` (definition, [line 48](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/DList/Basic.lean#L48))
+`Batteries.DList.singleton` (definition, [line 48](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/DList/Basic.lean#L48))
 
 > `O(1)` (`apply` is `O(1)`). A `DList α` corresponding to the list `[a]`.
 
@@ -62,7 +62,7 @@ theorem toList_mk : toList ⟨f, h⟩ = f []
 def singleton (a : α) : DList α
 ```
 
-`Batteries.DList.cons` (definition, [line 53](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/DList/Basic.lean#L53))
+`Batteries.DList.cons` (definition, [line 53](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/DList/Basic.lean#L53))
 
 > `O(1)` (`apply` is `O(1)`). Prepend `a` on a `DList α`.
 
@@ -70,7 +70,7 @@ def singleton (a : α) : DList α
 def cons : α → DList α → DList α
 ```
 
-`Batteries.DList.append` (definition, [line 60](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/DList/Basic.lean#L60))
+`Batteries.DList.append` (definition, [line 60](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/DList/Basic.lean#L60))
 
 > `O(1)` (`apply` is `O(1)`). Append two `DList α`.
 
@@ -78,7 +78,7 @@ def cons : α → DList α → DList α
 def append : DList α → DList α → DList α
 ```
 
-`Batteries.DList.push` (definition, [line 70](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/DList/Basic.lean#L70))
+`Batteries.DList.push` (definition, [line 70](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/DList/Basic.lean#L70))
 
 > `O(1)` (`apply` is `O(1)`). Append an element at the end of a `DList α`.
 
@@ -86,7 +86,7 @@ def append : DList α → DList α → DList α
 def push : DList α → α → DList α
 ```
 
-`Batteries.DList.ofThunk` (definition, [line 83](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/DList/Basic.lean#L83))
+`Batteries.DList.ofThunk` (definition, [line 83](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/DList/Basic.lean#L83))
 
 > Convert a lazily-evaluated `List` to a `DList`
 
@@ -94,7 +94,7 @@ def push : DList α → α → DList α
 def ofThunk (l : Thunk (List α)) : DList α
 ```
 
-`Batteries.DList.join` (definition, [line 88](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/DList/Basic.lean#L88))
+`Batteries.DList.join` (definition, [line 88](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/DList/Basic.lean#L88))
 
 > Concatenates a list of difference lists to form a single difference list. Similar to
 > `List.join`.
@@ -109,5 +109,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Data/DList/Basic.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/DList/Basic.lean)
+- [Batteries/Data/DList/Basic.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/DList/Basic.lean)
 - [Declaration ledger](../../../../../sources/batteries/Batteries.Data.DList.Basic.json)

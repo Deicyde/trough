@@ -1,10 +1,10 @@
 # Lean
 
-29 modules under `Batteries/Lean/`, with 136 public declarations.
+29 modules under `Batteries/Lean/`, with 138 public declarations.
 
-These modules declare nothing public by name, so they have no article: [`Batteries.Lean.Except`](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Except.lean), [`Batteries.Lean.Float`](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Float.lean), [`Batteries.Lean.Json`](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Json.lean), [`Batteries.Lean.LawfulMonad`](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/LawfulMonad.lean) and [`Batteries.Lean.SatisfiesM`](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/SatisfiesM.lean).
+These modules declare nothing public by name, so they have no article: [`Batteries.Lean.Except`](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Except.lean), [`Batteries.Lean.Float`](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Float.lean), [`Batteries.Lean.Json`](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/Json.lean), [`Batteries.Lean.LawfulMonad`](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/LawfulMonad.lean) and [`Batteries.Lean.SatisfiesM`](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/SatisfiesM.lean).
 
-The docstrings, Lean statements and README text are quoted from [leanprover-community/batteries](https://github.com/leanprover-community/batteries) at commit [e389e88a](https://github.com/leanprover-community/batteries/tree/e389e88a42889041c731d3aa86223f0ec70476a0), under its Apache-2.0 license.
+The docstrings, Lean statements and README text are quoted from [leanprover-community/batteries](https://github.com/leanprover-community/batteries) at commit [dd0900df](https://github.com/leanprover-community/batteries/tree/dd0900df51045e7d9be143ed167c9d200bcf2b45), under its Apache-2.0 license.
 
 - [AttributeExtra](attributeextra.md)
 - [EStateM](estatem.md)

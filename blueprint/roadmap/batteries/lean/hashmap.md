@@ -1,15 +1,15 @@
 ---
 catalog: module
-lean: Std.HashMap.mergeWithM, Std.HashMap.mergeWith
+lean: Std.HashMap.mergeWithM, Std.HashMap.mergeWith, Std.HashMap.findEntry?, Std.HashMap.ofListWith
 statement: formalized
 proof: formalized
 ---
 
 # HashMap
 
-`Batteries.Lean.HashMap`, in [Batteries/Lean/HashMap.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/HashMap.lean), by Jannis Limperg.
+`Batteries.Lean.HashMap`, in [Batteries/Lean/HashMap.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/HashMap.lean), by Jannis Limperg.
 
-`Std.HashMap.mergeWithM` (definition, [line 20](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/HashMap.lean#L20))
+`Std.HashMap.mergeWithM` (definition, [line 20](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/HashMap.lean#L20))
 
 > `O(|other|)` amortized. Merge two `HashMap`s.
 > The values of keys which appear in both maps are combined using the monadic function `f`.
@@ -19,7 +19,7 @@ def mergeWithM {m α β} [BEq α] [Hashable α] [Monad m] (f : α → β → β 
     (self other : HashMap α β) : m (HashMap α β)
 ```
 
-`Std.HashMap.mergeWith` (definition, [line 32](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/HashMap.lean#L32))
+`Std.HashMap.mergeWith` (definition, [line 32](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/HashMap.lean#L32))
 
 > `O(|other|)` amortized. Merge two `HashMap`s.
 > The values of keys which appear in both maps are combined using `f`.
@@ -28,11 +28,37 @@ def mergeWithM {m α β} [BEq α] [Hashable α] [Monad m] (f : α → β → β 
 def mergeWith (f : α → β → β → β) (self other : HashMap α β) : HashMap α β
 ```
 
+`Std.HashMap.findEntry?` (definition, [line 52](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/HashMap.lean#L52))
+
+> Given a key `a`, returns a key-value pair in the map whose key compares equal to `a`.
+> Note that the returned key may not be identical to the input, if `==` ignores some part
+> of the value.
+> ```
+> def hashMap := ofList [("one", 1), ("two", 2)]
+> hashMap.findEntry? "one" = some ("one", 1)
+> hashMap.findEntry? "three" = none
+> ```
+
+```lean
+def findEntry? [BEq α] [Hashable α] (m : Std.HashMap α β) (k : α) : Option (α × β)
+```
+
+`Std.HashMap.ofListWith` (definition, [line 61](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/HashMap.lean#L61))
+
+> Variant of `ofList` which accepts a function that combines values of duplicated keys.
+> ```
+> ofListWith [("one", 1), ("one", 2)] (fun v₁ v₂ => v₁ + v₂) = {"one" => 3}
+> ```
+
+```lean
+def ofListWith [BEq α] [Hashable α] (l : List (α × β)) (f : β → β → β) : HashMap α β
+```
+
 ## Depends on
 
 Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Lean/HashMap.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/HashMap.lean)
+- [Batteries/Lean/HashMap.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Lean/HashMap.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Lean.HashMap.json)

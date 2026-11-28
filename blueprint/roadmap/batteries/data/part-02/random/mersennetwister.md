@@ -7,7 +7,7 @@ proof: formalized
 
 # Mersenne Twister
 
-`Batteries.Data.Random.MersenneTwister`, in [Batteries/Data/Random/MersenneTwister.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Random/MersenneTwister.lean), by François G. Dorais.
+`Batteries.Data.Random.MersenneTwister`, in [Batteries/Data/Random/MersenneTwister.lean](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/Random/MersenneTwister.lean), by François G. Dorais.
 
 > Generic implementation for the Mersenne Twister pseudorandom number generator.
 >
@@ -42,7 +42,7 @@ proof: formalized
 >   ACM Trans. Model. Comput. Simul. 10, No. 4, 348-357.
 >   [ZBL1390.65014](https://zbmath.org/?q=an:1390.65014).
 
-`Batteries.Random.MersenneTwister.Config` (structure, [line 54](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Random/MersenneTwister.lean#L54))
+`Batteries.Random.MersenneTwister.Config` (structure, [line 54](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/Random/MersenneTwister.lean#L54))
 
 > Mersenne Twister configuration.
 >
@@ -71,19 +71,19 @@ structure Config where
   initSeed : BitVec wordSize
 ```
 
-`Batteries.Random.MersenneTwister.Config.zero_lt_wordSize` (theorem, [line 80](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Random/MersenneTwister.lean#L80))
+`Batteries.Random.MersenneTwister.Config.zero_lt_wordSize` (theorem, [line 80](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/Random/MersenneTwister.lean#L80))
 
 ```lean
 theorem Config.zero_lt_wordSize (cfg : Config) : 0 < cfg.wordSize
 ```
 
-`Batteries.Random.MersenneTwister.Config.zero_lt_stateSize` (theorem, [line 83](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Random/MersenneTwister.lean#L83))
+`Batteries.Random.MersenneTwister.Config.zero_lt_stateSize` (theorem, [line 83](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/Random/MersenneTwister.lean#L83))
 
 ```lean
 theorem Config.zero_lt_stateSize (cfg : Config) : 0 < cfg.stateSize
 ```
 
-`Batteries.Random.MersenneTwister.State` (structure, [line 87](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Random/MersenneTwister.lean#L87))
+`Batteries.Random.MersenneTwister.State` (structure, [line 87](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/Random/MersenneTwister.lean#L87))
 
 > Mersenne Twister State.
 
@@ -95,7 +95,7 @@ structure State (cfg : Config) where
   index : Fin cfg.stateSize
 ```
 
-`Batteries.Random.MersenneTwister.Config.init` (definition, [line 94](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Random/MersenneTwister.lean#L94))
+`Batteries.Random.MersenneTwister.Config.init` (definition, [line 94](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/Random/MersenneTwister.lean#L94))
 
 > Mersenne Twister initialization given an optional seed.
 
@@ -104,7 +104,7 @@ protected def Config.init (cfg : MersenneTwister.Config)
     (seed : BitVec cfg.wordSize := cfg.initSeed) : State cfg
 ```
 
-`Batteries.Random.MersenneTwister.State.twist` (definition, [line 106](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Random/MersenneTwister.lean#L106))
+`Batteries.Random.MersenneTwister.State.twist` (definition, [line 106](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/Random/MersenneTwister.lean#L106))
 
 > Apply the twisting transformation to the given state.
 
@@ -112,7 +112,7 @@ protected def Config.init (cfg : MersenneTwister.Config)
 protected def State.twist (state : State cfg) : State cfg
 ```
 
-`Batteries.Random.MersenneTwister.State.update` (definition, [line 116](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Random/MersenneTwister.lean#L116))
+`Batteries.Random.MersenneTwister.State.update` (definition, [line 116](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/Random/MersenneTwister.lean#L116))
 
 > Update the state by a number of generation steps (default 1).
 
@@ -120,7 +120,7 @@ protected def State.twist (state : State cfg) : State cfg
 protected def State.update (state : State cfg) : (steps : Nat := 1) → State cfg
 ```
 
-`Batteries.Random.MersenneTwister.State.next` (definition, [line 121](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Random/MersenneTwister.lean#L121))
+`Batteries.Random.MersenneTwister.State.next` (definition, [line 121](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/Random/MersenneTwister.lean#L121))
 
 > Mersenne Twister iteration.
 
@@ -128,7 +128,7 @@ protected def State.update (state : State cfg) : (steps : Nat := 1) → State cf
 protected def State.next (state : State cfg) : BitVec cfg.wordSize × State cfg
 ```
 
-`Batteries.Random.MersenneTwister.mt19937` (definition, [line 139](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Random/MersenneTwister.lean#L139))
+`Batteries.Random.MersenneTwister.mt19937` (definition, [line 139](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/Random/MersenneTwister.lean#L139))
 
 > 32 bit Mersenne Twister (MT19937) configuration.
 
@@ -136,7 +136,7 @@ protected def State.next (state : State cfg) : BitVec cfg.wordSize × State cfg
 def mt19937 : Config
 ```
 
-`Batteries.Random.MersenneTwister.mt19937_64` (definition, [line 151](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Random/MersenneTwister.lean#L151))
+`Batteries.Random.MersenneTwister.mt19937_64` (definition, [line 151](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/Random/MersenneTwister.lean#L151))
 
 > 64 bit Mersenne Twister (MT19937-64) configuration.
 
@@ -150,5 +150,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Data/Random/MersenneTwister.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Random/MersenneTwister.lean)
+- [Batteries/Data/Random/MersenneTwister.lean at dd0900df](https://github.com/leanprover-community/batteries/blob/dd0900df51045e7d9be143ed167c9d200bcf2b45/Batteries/Data/Random/MersenneTwister.lean)
 - [Declaration ledger](../../../../../sources/batteries/Batteries.Data.Random.MersenneTwister.json)
