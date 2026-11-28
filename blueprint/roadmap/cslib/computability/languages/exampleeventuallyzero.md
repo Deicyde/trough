@@ -7,14 +7,14 @@ proof: formalized
 
 # An ω-regular language that is not accepted by any deterministic Buchi automaton
 
-`Cslib.Computability.Languages.ExampleEventuallyZero`, in [Cslib/Computability/Languages/ExampleEventuallyZero.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/ExampleEventuallyZero.lean), by Ching-Tsun Chou.
+`Cslib.Computability.Languages.ExampleEventuallyZero`, in [Cslib/Computability/Languages/ExampleEventuallyZero.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/ExampleEventuallyZero.lean), by Ching-Tsun Chou.
 
 > This example is adapted from Example 4.2 of [Thomas1990].
 >
 > ## References
 > * [W. Thomas, "Automata on infinite objects"][Thomas1990]
 
-`Cslib.ωLanguage.Example.eventuallyZero` (definition, [line 31](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/ExampleEventuallyZero.lean#L31))
+`Cslib.ωLanguage.Example.eventuallyZero` (definition, [line 31](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/ExampleEventuallyZero.lean#L31))
 
 > A sequence `xs` is in `eventuallyZero` iff `xs k = 0` for all large `k`.
 
@@ -22,7 +22,7 @@ proof: formalized
 def eventuallyZero : ωLanguage (Fin 2)
 ```
 
-`Cslib.ωLanguage.Example.eventuallyZeroNa` (definition, [line 36](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/ExampleEventuallyZero.lean#L36))
+`Cslib.ωLanguage.Example.eventuallyZeroNa` (definition, [line 36](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/ExampleEventuallyZero.lean#L36))
 
 > `eventuallyZero` is accepted by a 2-state nondeterministic Buchi automaton.
 
@@ -30,14 +30,14 @@ def eventuallyZero : ωLanguage (Fin 2)
 def eventuallyZeroNa : NA.Buchi (Fin 2) (Fin 2)
 ```
 
-`Cslib.ωLanguage.Example.eventuallyZero_accepted_by_na_buchi` (theorem, [line 43](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/ExampleEventuallyZero.lean#L43))
+`Cslib.ωLanguage.Example.eventuallyZero_accepted_by_na_buchi` (theorem, [line 43](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/ExampleEventuallyZero.lean#L43))
 
 ```lean
 theorem eventuallyZero_accepted_by_na_buchi :
     language eventuallyZeroNa = eventuallyZero
 ```
 
-`Cslib.ωLanguage.Example.eventuallyZero_not_omegaLim` (theorem, [line 98](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/ExampleEventuallyZero.lean#L98))
+`Cslib.ωLanguage.Example.eventuallyZero_not_omegaLim` (theorem, [line 98](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/ExampleEventuallyZero.lean#L98))
 
 ```lean
 theorem eventuallyZero_not_omegaLim :
@@ -50,5 +50,5 @@ theorem eventuallyZero_not_omegaLim :
 
 ## Sources
 
-- [Cslib/Computability/Languages/ExampleEventuallyZero.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/ExampleEventuallyZero.lean)
+- [Cslib/Computability/Languages/ExampleEventuallyZero.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/ExampleEventuallyZero.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Languages.ExampleEventuallyZero.json)

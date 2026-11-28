@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "8b510d014295ed2c2334a379a7c96561a1603dc4",
+ "module": "Cslib.Languages.Mech.Common.Basic",
+ "file": "Cslib/Languages/Mech/Common/Basic.lean",
+ "public": [
+  {"name": "Cslib.Mech.LocalSig", "kind": "structure", "line": 61},
+  {"name": "Cslib.Mech.LocalSig.Var", "kind": "structure", "line": 74},
+  {"name": "Cslib.Mech.LocalSig.Var.Type", "kind": "abbrev", "line": 81},
+  {"name": "Cslib.Mech.LocalSig.Var.name_ne_of_type_ne", "kind": "theorem", "line": 84},
+  {"name": "Cslib.Mech.Sig", "kind": "abbrev", "line": 94},
+  {"name": "Cslib.Mech.Sig.Var", "kind": "abbrev", "line": 99}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

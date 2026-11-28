@@ -7,7 +7,7 @@ proof: formalized
 
 # Safety and Liveness properties of ω-sequences
 
-`Cslib.Computability.Languages.SafetyLiveness`, in [Cslib/Computability/Languages/SafetyLiveness.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SafetyLiveness.lean), by Ching-Tsun Chou.
+`Cslib.Computability.Languages.SafetyLiveness`, in [Cslib/Computability/Languages/SafetyLiveness.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SafetyLiveness.lean), by Ching-Tsun Chou.
 
 > This file formalizes the main results of [AlpernSchneider1985].  Namely, given
 > an appropriate topology on ω-sequences:
@@ -19,7 +19,7 @@ proof: formalized
 > * [Alpern, Bowen; Schneider, Fred B. (1985). "Defining liveness".
 > Information Processing Letters. 21 (4): 181–185.][AlpernSchneider1985]
 
-`Cslib.ωLanguage.IsSafety` (abbreviation, [line 35](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SafetyLiveness.lean#L35))
+`Cslib.ωLanguage.IsSafety` (abbreviation, [line 35](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SafetyLiveness.lean#L35))
 
 > Safety properties are identified with closed sets.
 
@@ -27,7 +27,7 @@ proof: formalized
 abbrev IsSafety (p : ωLanguage α) : Prop
 ```
 
-`Cslib.ωLanguage.isSafety_iff` (theorem, [line 40](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SafetyLiveness.lean#L40))
+`Cslib.ωLanguage.isSafety_iff` (theorem, [line 40](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SafetyLiveness.lean#L40))
 
 > An alternative characterization of `IsSafety` that justifies its definition:
 > if an ω-sequence violates a safety property, then it has a finite prefix all of whose
@@ -38,7 +38,7 @@ theorem isSafety_iff (p : ωLanguage α) :
     p.IsSafety ↔ ∀ xs, xs ∉ p → ∃ n, ∀ ys, (xs.take n) ++ω ys ∉ p
 ```
 
-`Cslib.ωLanguage.IsLiveness` (abbreviation, [line 45](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SafetyLiveness.lean#L45))
+`Cslib.ωLanguage.IsLiveness` (abbreviation, [line 45](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SafetyLiveness.lean#L45))
 
 > Liveness properties are identified with dense sets.
 
@@ -46,7 +46,7 @@ theorem isSafety_iff (p : ωLanguage α) :
 abbrev IsLiveness (p : ωLanguage α) : Prop
 ```
 
-`Cslib.ωLanguage.isLiveness_iff` (theorem, [line 49](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SafetyLiveness.lean#L49))
+`Cslib.ωLanguage.isLiveness_iff` (theorem, [line 49](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SafetyLiveness.lean#L49))
 
 > An alternative characterization of `IsLiveness` that justifies its definition:
 > any finite sequence can be extended to an infinite sequence satisfying a liveness property.
@@ -56,7 +56,7 @@ theorem isLiveness_iff (p : ωLanguage α) :
     p.IsLiveness ↔ ∀ (xs : ωSequence α) (n : ℕ), ∃ ys, (xs.take n) ++ω ys ∈ p
 ```
 
-`Cslib.ωLanguage.isSafety_closure` (theorem, [line 54](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SafetyLiveness.lean#L54))
+`Cslib.ωLanguage.isSafety_closure` (theorem, [line 54](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SafetyLiveness.lean#L54))
 
 > `p.closure` is always a safety property for any ω-language `p`.
 
@@ -65,7 +65,7 @@ theorem isSafety_closure (p : ωLanguage α) :
     p.closure.IsSafety
 ```
 
-`Cslib.ωLanguage.isLiveness_sup_compl_closure` (theorem, [line 59](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SafetyLiveness.lean#L59))
+`Cslib.ωLanguage.isLiveness_sup_compl_closure` (theorem, [line 59](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SafetyLiveness.lean#L59))
 
 > `p ⊔ p.closureᶜ` is always a liveness property for any ω-language `p`.
 
@@ -74,7 +74,7 @@ theorem isLiveness_sup_compl_closure (p : ωLanguage α) :
     (p ⊔ p.closureᶜ).IsLiveness
 ```
 
-`Cslib.ωLanguage.exists_safetyLivenessDecomposition` (theorem, [line 66](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SafetyLiveness.lean#L66))
+`Cslib.ωLanguage.exists_safetyLivenessDecomposition` (theorem, [line 66](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SafetyLiveness.lean#L66))
 
 > Every property `p` is the intersection of a safety property (namely, `p.closure`) and
 > a liveness property (namely, `p ⊔ p.closureᶜ`).
@@ -90,5 +90,5 @@ theorem exists_safetyLivenessDecomposition (p : ωLanguage α) :
 
 ## Sources
 
-- [Cslib/Computability/Languages/SafetyLiveness.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SafetyLiveness.lean)
+- [Cslib/Computability/Languages/SafetyLiveness.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SafetyLiveness.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Languages.SafetyLiveness.json)

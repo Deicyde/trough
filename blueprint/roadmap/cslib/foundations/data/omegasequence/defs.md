@@ -7,7 +7,7 @@ proof: formalized
 
 # Definition of `ωSequence` and functions on infinite sequences
 
-`Cslib.Foundations.Data.OmegaSequence.Defs`, in [Cslib/Foundations/Data/OmegaSequence/Defs.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Defs.lean), by Ching-Tsun Chou, Fabrizio Montesi.
+`Cslib.Foundations.Data.OmegaSequence.Defs`, in [Cslib/Foundations/Data/OmegaSequence/Defs.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/Defs.lean), by Ching-Tsun Chou, Fabrizio Montesi.
 
 > An `ωSequence α` is an infinite sequence of elements of `α`.  It is basically
 > a wrapper around the type `ℕ → α` which supports the dot-notation and
@@ -18,7 +18,7 @@ proof: formalized
 > In this file we define `ωSequence` and its API functions.
 > Most code below is adapted from Mathlib.Data.Stream.Defs.
 
-`Cslib.ωSequence` (structure, [line 34](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L34))
+`Cslib.ωSequence` (structure, [line 34](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L34))
 
 > An `ωSequence α` is an infinite sequence of elements of `α`.
 
@@ -28,7 +28,7 @@ structure ωSequence (α : Type u) where
   get : ℕ → α
 ```
 
-`Cslib.ωSequence.head` (abbreviation, [line 49](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L49))
+`Cslib.ωSequence.head` (abbreviation, [line 49](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L49))
 
 > Head of an ω-sequence: `ωSequence.head s = ωSequence s 0`.
 
@@ -36,7 +36,7 @@ structure ωSequence (α : Type u) where
 abbrev head (s : ωSequence α) : α
 ```
 
-`Cslib.ωSequence.tail` (definition, [line 52](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L52))
+`Cslib.ωSequence.tail` (definition, [line 52](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L52))
 
 > Tail of an ω-sequence: `ωSequence.tail (h :: t) = t`.
 
@@ -44,7 +44,7 @@ abbrev head (s : ωSequence α) : α
 def tail (s : ωSequence α) : ωSequence α
 ```
 
-`Cslib.ωSequence.drop` (definition, [line 55](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L55))
+`Cslib.ωSequence.drop` (definition, [line 55](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L55))
 
 > Drop first `n` elements of an ω-sequence.
 
@@ -52,7 +52,7 @@ def tail (s : ωSequence α) : ωSequence α
 def drop (n : ℕ) (s : ωSequence α) : ωSequence α
 ```
 
-`Cslib.ωSequence.take` (definition, [line 58](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L58))
+`Cslib.ωSequence.take` (definition, [line 58](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L58))
 
 > `take n s` returns a list of the `n` first elements of ω-sequence `s`
 
@@ -60,7 +60,7 @@ def drop (n : ℕ) (s : ωSequence α) : ωSequence α
 def take : ℕ → ωSequence α → List α
 ```
 
-`Cslib.ωSequence.extract` (definition, [line 63](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L63))
+`Cslib.ωSequence.extract` (definition, [line 63](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L63))
 
 > Get the list containing the elements of `xs` from position `m` to `n - 1`.
 
@@ -68,7 +68,7 @@ def take : ℕ → ωSequence α → List α
 def extract (xs : ωSequence α) (m n : ℕ) : List α
 ```
 
-`Cslib.ωSequence.cons` (definition, [line 67](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L67))
+`Cslib.ωSequence.cons` (definition, [line 67](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L67))
 
 > Prepend an element to an ω-sequence.
 
@@ -76,7 +76,7 @@ def extract (xs : ωSequence α) (m n : ℕ) : List α
 def cons (a : α) (s : ωSequence α) : ωSequence α
 ```
 
-`Cslib.ωSequence.appendωSequence` (definition, [line 74](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L74))
+`Cslib.ωSequence.appendωSequence` (definition, [line 74](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L74))
 
 > Append an ω-sequence to a list.
 
@@ -84,7 +84,7 @@ def cons (a : α) (s : ωSequence α) : ωSequence α
 def appendωSequence : List α → ωSequence α → ωSequence α
 ```
 
-`Cslib.ωSequence.const` (definition, [line 81](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L81))
+`Cslib.ωSequence.const` (definition, [line 81](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L81))
 
 > The constant ω-sequence: `ωSequence n (ωSequence.const a) = a`.
 
@@ -92,7 +92,7 @@ def appendωSequence : List α → ωSequence α → ωSequence α
 def const (a : α) : ωSequence α
 ```
 
-`Cslib.ωSequence.map` (definition, [line 84](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L84))
+`Cslib.ωSequence.map` (definition, [line 84](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L84))
 
 > Apply a function `f` to all elements of an ω-sequence `s`.
 
@@ -100,7 +100,7 @@ def const (a : α) : ωSequence α
 def map (f : α → β) (s : ωSequence α) : ωSequence β
 ```
 
-`Cslib.ωSequence.zip` (definition, [line 88](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L88))
+`Cslib.ωSequence.zip` (definition, [line 88](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L88))
 
 > Zip two ω-sequences using a binary operation:
 > `ωSequence n (ωSequence.zip f s₁ s₂) = f (ωSequence s₁) (ωSequence s₂)`.
@@ -109,7 +109,7 @@ def map (f : α → β) (s : ωSequence α) : ωSequence β
 def zip (f : α → β → δ) (s₁ : ωSequence α) (s₂ : ωSequence β) : ωSequence δ
 ```
 
-`Cslib.ωSequence.iterate` (definition, [line 92](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L92))
+`Cslib.ωSequence.iterate` (definition, [line 92](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/Defs.lean#L92))
 
 > Iterates of a function as an ω-sequence.
 
@@ -123,5 +123,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Foundations/Data/OmegaSequence/Defs.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/Defs.lean)
+- [Cslib/Foundations/Data/OmegaSequence/Defs.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/Defs.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Data.OmegaSequence.Defs.json)

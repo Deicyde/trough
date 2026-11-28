@@ -7,7 +7,7 @@ proof: formalized
 
 # Standard Form Programs
 
-`Cslib.Computability.URM.StandardForm`, in [Cslib/Computability/URM/StandardForm.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean), by Jesse Alama.
+`Cslib.Computability.URM.StandardForm`, in [Cslib/Computability/URM/StandardForm.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean), by Jesse Alama.
 
 > This file defines standard-form programs (those with bounded jump targets)
 > and proves their execution properties.
@@ -24,7 +24,7 @@ proof: formalized
 
 > ## Standard Form Definitions
 
-`Cslib.URM.Program.IsStandardForm` (definition, [line 36](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean#L36))
+`Cslib.URM.Program.IsStandardForm` (definition, [line 36](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean#L36))
 
 > A program is in standard form if all jump targets are bounded by the program length.
 > Jumps can target any instruction (0..length-1) or the "virtual halt" position (length).
@@ -33,7 +33,7 @@ proof: formalized
 def IsStandardForm (p : Program) : Prop
 ```
 
-`Cslib.URM.Program.toStandardForm` (definition, [line 43](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean#L43))
+`Cslib.URM.Program.toStandardForm` (definition, [line 43](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean#L43))
 
 > Convert a program to standard form by capping all jump targets at the program length.
 
@@ -41,7 +41,7 @@ def IsStandardForm (p : Program) : Prop
 def toStandardForm (p : Program) : Program
 ```
 
-`Cslib.URM.Program.toStandardForm_length` (theorem, [line 48](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean#L48))
+`Cslib.URM.Program.toStandardForm_length` (theorem, [line 48](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean#L48))
 
 > toStandardForm preserves program length.
 
@@ -49,7 +49,7 @@ def toStandardForm (p : Program) : Program
 theorem toStandardForm_length (p : Program) : p.toStandardForm.length = p.length
 ```
 
-`Cslib.URM.Program.toStandardForm_isStandardForm` (theorem, [line 52](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean#L52))
+`Cslib.URM.Program.toStandardForm_isStandardForm` (theorem, [line 52](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean#L52))
 
 > toStandardForm produces a standard form program.
 
@@ -58,7 +58,7 @@ theorem toStandardForm_isStandardForm (p : Program) :
     p.toStandardForm.IsStandardForm
 ```
 
-`Cslib.URM.Program.getElem?_toStandardForm` (theorem, [line 61](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean#L61))
+`Cslib.URM.Program.getElem?_toStandardForm` (theorem, [line 61](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean#L61))
 
 > Accessing an instruction in toStandardForm gives the capJump'd instruction.
 
@@ -67,7 +67,7 @@ theorem getElem?_toStandardForm (p : Program) (i : ℕ) :
     p.toStandardForm[i]? = (p[i]?).map (Instr.capJump p.length)
 ```
 
-`Cslib.URM.Program.toStandardForm_idempotent` (theorem, [line 67](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean#L67))
+`Cslib.URM.Program.toStandardForm_idempotent` (theorem, [line 67](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean#L67))
 
 > toStandardForm is idempotent: applying it twice equals applying it once.
 
@@ -78,7 +78,7 @@ theorem toStandardForm_idempotent (p : Program) :
 
 > ## Standard Form Properties
 
-`Cslib.URM.straight_line_IsStandardForm` (theorem, [line 79](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean#L79))
+`Cslib.URM.straight_line_IsStandardForm` (theorem, [line 79](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean#L79))
 
 > Straight-line programs are in standard form.
 
@@ -95,7 +95,7 @@ theorem straight_line_IsStandardForm {p : Program} (hsl : p.IsStraightLine) :
 > The key insight is that jumps with target `q > p.length` land in halted states in both
 > programs.
 
-`Cslib.URM.Step.toStandardForm` (theorem, [line 96](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean#L96))
+`Cslib.URM.Step.toStandardForm` (theorem, [line 96](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean#L96))
 
 > Forward step correspondence: if p steps from s to s', then either:
 > (1) p.toStandardForm steps from s to s' (same step), or
@@ -109,7 +109,7 @@ theorem Step.toStandardForm {p : Program} {s s' : State} (hstep : Step p s s') :
       s₂.isHalted p.toStandardForm ∧ s'.regs = s₂.regs)
 ```
 
-`Cslib.URM.Steps.toStandardForm_halts` (theorem, [line 128](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean#L128))
+`Cslib.URM.Steps.toStandardForm_halts` (theorem, [line 128](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean#L128))
 
 > Forward halting: if p reaches a halted state, p.toStandardForm reaches a halted state
 > with the same registers.
@@ -121,7 +121,7 @@ theorem Steps.toStandardForm_halts {p : Program} {s s' : State}
       s₂.isHalted p.toStandardForm ∧ s'.regs = s₂.regs
 ```
 
-`Cslib.URM.Halts.toStandardForm` (theorem, [line 145](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean#L145))
+`Cslib.URM.Halts.toStandardForm` (theorem, [line 145](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean#L145))
 
 > Forward halting theorem.
 
@@ -130,7 +130,7 @@ theorem Halts.toStandardForm {p : Program} {inputs : List ℕ} (h : Halts p inpu
     Halts p.toStandardForm inputs
 ```
 
-`Cslib.URM.Step.from_toStandardForm` (theorem, [line 156](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean#L156))
+`Cslib.URM.Step.from_toStandardForm` (theorem, [line 156](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean#L156))
 
 > Reverse step correspondence: if p.toStandardForm steps from s to s', then either:
 > (1) p steps from s to s' (same step), or
@@ -143,7 +143,7 @@ theorem Step.from_toStandardForm {p : Program} {s s' : State} (hstep : Step p.to
     (s'.isHalted p.toStandardForm ∧ ∃ s₂, Step p s s₂ ∧ s₂.isHalted p ∧ s'.regs = s₂.regs)
 ```
 
-`Cslib.URM.Steps.from_toStandardForm_halts` (theorem, [line 170](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean#L170))
+`Cslib.URM.Steps.from_toStandardForm_halts` (theorem, [line 170](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean#L170))
 
 > Reverse halting: if p.toStandardForm reaches a halted state, p reaches a halted state
 > with the same registers.
@@ -154,7 +154,7 @@ theorem Steps.from_toStandardForm_halts {p : Program} {s s' : State}
     ∃ s₂, Steps p s s₂ ∧ s₂.isHalted p ∧ s'.regs = s₂.regs
 ```
 
-`Cslib.URM.Halts.of_toStandardForm` (theorem, [line 189](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean#L189))
+`Cslib.URM.Halts.of_toStandardForm` (theorem, [line 189](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean#L189))
 
 > Reverse halting theorem.
 
@@ -163,7 +163,7 @@ theorem Halts.of_toStandardForm {p : Program} {inputs : List ℕ}
     (h : Halts p.toStandardForm inputs) : Halts p inputs
 ```
 
-`Cslib.URM.Halts.toStandardForm_iff` (theorem, [line 196](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean#L196))
+`Cslib.URM.Halts.toStandardForm_iff` (theorem, [line 196](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean#L196))
 
 > Halting equivalence: original halts iff standard form halts.
 
@@ -174,7 +174,7 @@ theorem Halts.toStandardForm_iff {p : Program} {inputs : List ℕ} :
 
 > ### eval Preservation
 
-`Cslib.URM.evalState_toStandardForm_regs` (theorem, [line 203](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean#L203))
+`Cslib.URM.evalState_toStandardForm_regs` (theorem, [line 203](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean#L203))
 
 > Registers preservation: both reach states with the same registers.
 
@@ -185,7 +185,7 @@ theorem evalState_toStandardForm_regs {p : Program} {inputs : List ℕ}
       ((evalState p.toStandardForm inputs).get hq).regs
 ```
 
-`Cslib.URM.eval_toStandardForm` (theorem, [line 213](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean#L213))
+`Cslib.URM.eval_toStandardForm` (theorem, [line 213](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean#L213))
 
 > eval equality: both programs produce the same partial result.
 
@@ -194,7 +194,7 @@ theorem eval_toStandardForm {p : Program} {inputs : List ℕ} :
     eval p inputs = eval p.toStandardForm inputs
 ```
 
-`Cslib.URM.toStandardForm_equiv` (theorem, [line 225](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean#L225))
+`Cslib.URM.toStandardForm_equiv` (theorem, [line 225](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean#L225))
 
 > A program is equivalent to its standard form.
 
@@ -208,5 +208,5 @@ theorem toStandardForm_equiv (p : Program) : p.toStandardForm ≈ p
 
 ## Sources
 
-- [Cslib/Computability/URM/StandardForm.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StandardForm.lean)
+- [Cslib/Computability/URM/StandardForm.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StandardForm.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.URM.StandardForm.json)

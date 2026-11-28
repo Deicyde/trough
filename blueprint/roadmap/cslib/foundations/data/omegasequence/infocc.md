@@ -7,9 +7,9 @@ proof: formalized
 
 # Infinite occurrences
 
-`Cslib.Foundations.Data.OmegaSequence.InfOcc`, in [Cslib/Foundations/Data/OmegaSequence/InfOcc.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/InfOcc.lean), by Ching-Tsun Chou.
+`Cslib.Foundations.Data.OmegaSequence.InfOcc`, in [Cslib/Foundations/Data/OmegaSequence/InfOcc.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/InfOcc.lean), by Ching-Tsun Chou.
 
-`Cslib.ωSequence.infOcc` (definition, [line 30](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/InfOcc.lean#L30))
+`Cslib.ωSequence.infOcc` (definition, [line 30](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/InfOcc.lean#L30))
 
 > The set of elements that appear infinitely often in an ω-sequence.
 
@@ -17,7 +17,7 @@ proof: formalized
 def infOcc (xs : ωSequence α) : Set α
 ```
 
-`Cslib.ωSequence.frequently_iff_strictMono` (theorem, [line 34](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/InfOcc.lean#L34))
+`Cslib.ωSequence.frequently_iff_strictMono` (theorem, [line 34](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/InfOcc.lean#L34))
 
 > An alternative characterization of "infinitely often".
 
@@ -26,7 +26,7 @@ theorem frequently_iff_strictMono {p : ℕ → Prop} :
     (∃ᶠ n in atTop, p n) ↔ ∃ f : ℕ → ℕ, StrictMono f ∧ ∀ m, p (f m)
 ```
 
-`Cslib.ωSequence.frequently_in_finite_type` (theorem, [line 46](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/InfOcc.lean#L46))
+`Cslib.ωSequence.frequently_in_finite_type` (theorem, [line 46](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/InfOcc.lean#L46))
 
 > In a finite type, the elements of a set occurs infinitely often iff
 > some element in the set occurs infinitely often.
@@ -36,7 +36,7 @@ theorem frequently_in_finite_type [Finite α] {s : Set α} {xs : ωSequence α} 
     (∃ᶠ k in atTop, xs k ∈ s) ↔ ∃ x ∈ s, ∃ᶠ k in atTop, xs k = x
 ```
 
-`Cslib.ωSequence.frequently_in_strictMono` (theorem, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/InfOcc.lean#L53))
+`Cslib.ωSequence.frequently_in_strictMono` (theorem, [line 53](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/InfOcc.lean#L53))
 
 > If `p` is true infinitely often, then `p` is true in infinitely many segments
 > of any strictly monotonic function `f`.
@@ -47,7 +47,7 @@ theorem frequently_in_strictMono {p : ℕ → Prop} {f : ℕ → ℕ}
     ∃ᶠ n in atTop, ∃ k, k < f (n + 1) - f n ∧ p (f n + k)
 ```
 
-`Cslib.ωSequence.strictMono_of_infinite` (theorem, [line 70](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/InfOcc.lean#L70))
+`Cslib.ωSequence.strictMono_of_infinite` (theorem, [line 70](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/InfOcc.lean#L70))
 
 > Every infinite subset of ℕ is the range of a strictly monotonic function from ℕ to ℕ.
 
@@ -66,5 +66,5 @@ theorem strictMono_of_infinite {ns : Set ℕ} (h : ns.Infinite) :
 
 ## Sources
 
-- [Cslib/Foundations/Data/OmegaSequence/InfOcc.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/OmegaSequence/InfOcc.lean)
+- [Cslib/Foundations/Data/OmegaSequence/InfOcc.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/OmegaSequence/InfOcc.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Data.OmegaSequence.InfOcc.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Simulation between circuit bases with gate budgets
 
-`Cslib.Computability.Circuit.Simulation`, in [Cslib/Computability/Circuit/Simulation.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean), by Samuel Schlesinger.
+`Cslib.Computability.Circuit.Simulation`, in [Cslib/Computability/Circuit/Simulation.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean), by Samuel Schlesinger.
 
 > `J.Simulates I` means that every operation of `I` can be computed by a circuit over `J`.
 > `J.SimulatesWithCost I cost` also bounds the number of gates used for each operation.
@@ -23,7 +23,7 @@ proof: formalized
 > Simulations compose, multiplying uniform gate budgets, and transfer functional completeness
 > from the simulated basis to the simulating basis.
 
-`Cslib.Circuits.Interpretation.SimulatesWithCost` (definition, [line 39](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L39))
+`Cslib.Circuits.Interpretation.SimulatesWithCost` (definition, [line 39](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L39))
 
 > A simulation with a gate budget for each primitive operation.
 
@@ -32,7 +32,7 @@ def Interpretation.SimulatesWithCost (J : Interpretation τ U) (I : Interpretati
     (cost : σ.Op → ℕ) : Prop
 ```
 
-`Cslib.Circuits.Interpretation.Simulates` (definition, [line 45](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L45))
+`Cslib.Circuits.Interpretation.Simulates` (definition, [line 45](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L45))
 
 > `J` simulates `I` if it can compute every primitive operation of `I`, with some gate budget.
 
@@ -40,14 +40,14 @@ def Interpretation.SimulatesWithCost (J : Interpretation τ U) (I : Interpretati
 def Interpretation.Simulates (J : Interpretation τ U) (I : Interpretation σ U) : Prop
 ```
 
-`Cslib.Circuits.Interpretation.SimulatesWithCost.simulates` (theorem, [line 48](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L48))
+`Cslib.Circuits.Interpretation.SimulatesWithCost.simulates` (theorem, [line 48](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L48))
 
 ```lean
 theorem Interpretation.SimulatesWithCost.simulates {cost : σ.Op → ℕ}
     (h : J.SimulatesWithCost I cost) : J.Simulates I
 ```
 
-`Cslib.Circuits.Interpretation.simulates_iff` (theorem, [line 52](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L52))
+`Cslib.Circuits.Interpretation.simulates_iff` (theorem, [line 52](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L52))
 
 ```lean
 theorem Interpretation.simulates_iff :
@@ -55,7 +55,7 @@ theorem Interpretation.simulates_iff :
       c.Computes J (single (I op))
 ```
 
-`Cslib.Circuits.Program.cost` (definition, [line 63](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L63))
+`Cslib.Circuits.Program.cost` (definition, [line 63](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L63))
 
 > Given a cost per operation, this is the sum of the costs along a straight-line program.
 
@@ -63,35 +63,35 @@ theorem Interpretation.simulates_iff :
 def Program.cost {g : ℕ} (p : Program σ n g) (cost : σ.Op → ℕ) : ℕ
 ```
 
-`Cslib.Circuits.Program.cost_empty` (theorem, [line 66](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L66))
+`Cslib.Circuits.Program.cost_empty` (theorem, [line 66](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L66))
 
 ```lean
 theorem Program.cost_empty (cost : σ.Op → ℕ) :
     (Program.empty : Program σ n 0).cost cost = 0
 ```
 
-`Cslib.Circuits.Program.cost_gate` (theorem, [line 69](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L69))
+`Cslib.Circuits.Program.cost_gate` (theorem, [line 69](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L69))
 
 ```lean
 theorem Program.cost_gate (p : Program σ n g) (line : Line σ n g)
     (cost : σ.Op → ℕ) : (p.gate line).cost cost = p.cost cost + cost line.op
 ```
 
-`Cslib.Circuits.Program.cost_const` (theorem, [line 72](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L72))
+`Cslib.Circuits.Program.cost_const` (theorem, [line 72](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L72))
 
 ```lean
 theorem Program.cost_const (p : Program σ n g) (b : ℕ) :
     p.cost (fun _ => b) = b * g
 ```
 
-`Cslib.Circuits.Program.cost_mono` (theorem, [line 76](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L76))
+`Cslib.Circuits.Program.cost_mono` (theorem, [line 76](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L76))
 
 ```lean
 theorem Program.cost_mono (p : Program σ n g) {cost cost' : σ.Op → ℕ}
     (h : ∀ op, cost op ≤ cost' op) : p.cost cost ≤ p.cost cost'
 ```
 
-`Cslib.Circuits.Program.simulate` (definition, [line 83](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L83))
+`Cslib.Circuits.Program.simulate` (definition, [line 83](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L83))
 
 > Replace each operation by its supplied circuit, returning the resulting program and
 > a map from the original wires to their replacements. The gate count is the sum of the
@@ -104,7 +104,7 @@ def Program.simulate {g : ℕ} (p : Program σ n g)
       Wire.Renaming n g (p.cost fun op => (impl op).size)
 ```
 
-`Cslib.Circuits.Program.simulateProgram` (abbreviation, [line 97](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L97))
+`Cslib.Circuits.Program.simulateProgram` (abbreviation, [line 97](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L97))
 
 > The program obtained by replacing each operation by its supplied circuit.
 
@@ -114,7 +114,7 @@ abbrev Program.simulateProgram (p : Program σ n g)
     Program τ n (p.cost fun op => (impl op).size)
 ```
 
-`Cslib.Circuits.Program.simulateRenaming` (abbreviation, [line 103](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L103))
+`Cslib.Circuits.Program.simulateRenaming` (abbreviation, [line 103](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L103))
 
 > The map from original wires to their replacements in `Program.simulateProgram`.
 
@@ -124,7 +124,7 @@ abbrev Program.simulateRenaming (p : Program σ n g)
     Wire.Renaming n g (p.cost fun op => (impl op).size)
 ```
 
-`Cslib.Circuits.Program.trace_simulate` (theorem, [line 109](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L109))
+`Cslib.Circuits.Program.trace_simulate` (theorem, [line 109](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L109))
 
 > Replacing each operation by a circuit computing it preserves every wire value.
 
@@ -135,7 +135,7 @@ theorem Program.trace_simulate (p : Program σ n g)
     (p.simulateProgram impl).trace J x ∘ p.simulateRenaming impl = p.trace I x
 ```
 
-`Cslib.Circuits.Program.exists_simulationWithCost` (theorem, [line 146](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L146))
+`Cslib.Circuits.Program.exists_simulationWithCost` (theorem, [line 146](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L146))
 
 > Simulate a program over `σ` by a program over `τ`, with a bound on the number of gates.
 >
@@ -154,7 +154,7 @@ theorem Program.exists_simulationWithCost (p : Program σ n g) (cost : σ.Op →
       k ≤ p.cost cost ∧ ∀ x : Fin n → U, q.trace J x ∘ ρ = p.trace I x
 ```
 
-`Cslib.Circuits.Program.exists_simulation` (theorem, [line 155](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L155))
+`Cslib.Circuits.Program.exists_simulation` (theorem, [line 155](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L155))
 
 > Replace the gates of a program, preserving every input and intermediate value.
 
@@ -164,7 +164,7 @@ theorem Program.exists_simulation (p : Program σ n g) (h : J.Simulates I) :
       ∀ x : Fin n → U, q.trace J x ∘ ρ = p.trace I x
 ```
 
-`Cslib.Circuits.Circuit.exists_simulationWithCost` (theorem, [line 163](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L163))
+`Cslib.Circuits.Circuit.exists_simulationWithCost` (theorem, [line 163](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L163))
 
 > The total replacement cost bounds the size of an equivalent circuit.
 
@@ -174,7 +174,7 @@ theorem Circuit.exists_simulationWithCost (c : Circuit σ n m) (cost : σ.Op →
     ∃ d : Circuit τ n m, d.eval J = c.eval I ∧ d.size ≤ c.program.cost cost
 ```
 
-`Cslib.Circuits.Circuit.exists_simulation_le` (theorem, [line 170](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L170))
+`Cslib.Circuits.Circuit.exists_simulation_le` (theorem, [line 170](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L170))
 
 > A uniform per-gate simulation budget gives a multiplicative circuit-size bound.
 
@@ -184,7 +184,7 @@ theorem Circuit.exists_simulation_le (c : Circuit σ n m) {b : ℕ}
     ∃ d : Circuit τ n m, d.eval J = c.eval I ∧ d.size ≤ b * c.size
 ```
 
-`Cslib.Circuits.Interpretation.SimulatesWithCost.refl` (theorem, [line 176](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L176))
+`Cslib.Circuits.Interpretation.SimulatesWithCost.refl` (theorem, [line 176](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L176))
 
 > Every basis simulates itself with a one-gate budget for each operation.
 
@@ -193,7 +193,7 @@ theorem Interpretation.SimulatesWithCost.refl (I : Interpretation σ U) :
     I.SimulatesWithCost I (fun _ => 1)
 ```
 
-`Cslib.Circuits.Interpretation.SimulatesWithCost.trans` (theorem, [line 181](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L181))
+`Cslib.Circuits.Interpretation.SimulatesWithCost.trans` (theorem, [line 181](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L181))
 
 > Uniform simulation budgets multiply under composition.
 
@@ -203,7 +203,7 @@ theorem Interpretation.SimulatesWithCost.trans {b c : ℕ}
     K.SimulatesWithCost I (fun _ => b * c)
 ```
 
-`Cslib.Circuits.Circuit.exists_simulation` (theorem, [line 191](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L191))
+`Cslib.Circuits.Circuit.exists_simulation` (theorem, [line 191](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L191))
 
 > Gate replacement gives an equivalent circuit over the simulating basis.
 
@@ -212,7 +212,7 @@ theorem Circuit.exists_simulation (c : Circuit σ n m) (h : J.Simulates I) :
     ∃ d : Circuit τ n m, d.eval J = c.eval I
 ```
 
-`Cslib.Circuits.Circuit.ComputesOn.simulation` (theorem, [line 197](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L197))
+`Cslib.Circuits.Circuit.ComputesOn.simulation` (theorem, [line 197](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L197))
 
 > Simulation preserves computation on any support.
 
@@ -222,7 +222,7 @@ theorem Circuit.ComputesOn.simulation {c : Circuit σ n m} {S : Set (Fin n → U
     ∃ d : Circuit τ n m, d.ComputesOn J S f
 ```
 
-`Cslib.Circuits.Circuit.Computes.simulation` (theorem, [line 204](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L204))
+`Cslib.Circuits.Circuit.Computes.simulation` (theorem, [line 204](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L204))
 
 > Simulation preserves computation on all inputs.
 
@@ -232,7 +232,7 @@ theorem Circuit.Computes.simulation {c : Circuit σ n m} {f : (Fin n → U) → 
     ∃ d : Circuit τ n m, d.Computes J f
 ```
 
-`Cslib.Circuits.Interpretation.Simulates.refl` (theorem, [line 211](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L211))
+`Cslib.Circuits.Interpretation.Simulates.refl` (theorem, [line 211](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L211))
 
 > Every basis simulates itself.
 
@@ -240,7 +240,7 @@ theorem Circuit.Computes.simulation {c : Circuit σ n m} {f : (Fin n → U) → 
 theorem Interpretation.Simulates.refl (I : Interpretation σ U) : I.Simulates I
 ```
 
-`Cslib.Circuits.Interpretation.Simulates.trans` (theorem, [line 215](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L215))
+`Cslib.Circuits.Interpretation.Simulates.trans` (theorem, [line 215](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L215))
 
 > Compose simulations by replacing the gates of each implementing circuit.
 
@@ -249,7 +249,7 @@ theorem Interpretation.Simulates.trans (hK : K.Simulates J) (hJ : J.Simulates I)
     K.Simulates I
 ```
 
-`Cslib.Circuits.Interpretation.Simulates.isComplete` (theorem, [line 223](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L223))
+`Cslib.Circuits.Interpretation.Simulates.isComplete` (theorem, [line 223](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L223))
 
 > A basis that simulates a complete basis is itself complete.
 
@@ -258,7 +258,7 @@ theorem Interpretation.Simulates.isComplete (h : J.Simulates I) [I.IsComplete] :
     J.IsComplete
 ```
 
-`Cslib.Circuits.Interpretation.IsComplete.simulates` (theorem, [line 230](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean#L230))
+`Cslib.Circuits.Interpretation.IsComplete.simulates` (theorem, [line 230](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean#L230))
 
 > A complete basis simulates every interpretation on the same carrier.
 
@@ -273,5 +273,5 @@ theorem Interpretation.IsComplete.simulates [J.IsComplete] (I : Interpretation �
 
 ## Sources
 
-- [Cslib/Computability/Circuit/Simulation.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Simulation.lean)
+- [Cslib/Computability/Circuit/Simulation.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Simulation.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Circuit.Simulation.json)

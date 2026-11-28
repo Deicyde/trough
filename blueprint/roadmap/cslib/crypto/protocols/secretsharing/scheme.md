@@ -7,7 +7,7 @@ proof: formalized
 
 # Secret Sharing Schemes
 
-`Cslib.Crypto.Protocols.SecretSharing.Scheme`, in [Cslib/Crypto/Protocols/SecretSharing/Scheme.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Scheme.lean), by Samuel Schlesinger.
+`Cslib.Crypto.Protocols.SecretSharing.Scheme`, in [Cslib/Crypto/Protocols/SecretSharing/Scheme.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Scheme.lean), by Samuel Schlesinger.
 
 > A secret-sharing scheme bundles the deterministic sharing/reconstruction
 > interface, the distribution on randomness, and privacy for unauthorized
@@ -25,7 +25,7 @@ proof: formalized
 > * [Adi Shamir, *How to Share a Secret*][Shamir1979]
 > * [J. Katz, Y. Lindell, *Introduction to Modern Cryptography*][KatzLindell2020]
 
-`Cslib.Crypto.Protocols.SecretSharing.viewDistOf` (definition, [line 38](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Scheme.lean#L38))
+`Cslib.Crypto.Protocols.SecretSharing.viewDistOf` (definition, [line 38](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Scheme.lean#L38))
 
 > The view distribution induced by raw sharing data.
 
@@ -35,7 +35,7 @@ noncomputable def viewDistOf {Secret Randomness Party Share : Type*}
     (s : Finset Party) (secret : Secret) : PMF (s → Share)
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Scheme` (structure, [line 52](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Scheme.lean#L52))
+`Cslib.Crypto.Protocols.SecretSharing.Scheme` (structure, [line 52](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Scheme.lean#L52))
 
 > A secret-sharing scheme over secret space `Secret`, randomness space
 > `Randomness`, party set `Party`, and share space `Share`.
@@ -67,7 +67,7 @@ structure Scheme (Secret Randomness Party Share : Type*) where
       viewDistOf gen share s secret₀ = viewDistOf gen share s secret₁
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Scheme.view` (definition, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Scheme.lean#L77))
+`Cslib.Crypto.Protocols.SecretSharing.Scheme.view` (definition, [line 77](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Scheme.lean#L77))
 
 > The restricted shares observed by the coalition `s`.
 
@@ -76,7 +76,7 @@ def view (scheme : Scheme Secret Randomness Party Share) (s : Finset Party)
     (r : Randomness) (secret : Secret) : s → Share
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Scheme.view_apply` (theorem, [line 82](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Scheme.lean#L82))
+`Cslib.Crypto.Protocols.SecretSharing.Scheme.view_apply` (theorem, [line 82](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Scheme.lean#L82))
 
 ```lean
 theorem view_apply (scheme : Scheme Secret Randomness Party Share) (s : Finset Party)
@@ -84,7 +84,7 @@ theorem view_apply (scheme : Scheme Secret Randomness Party Share) (s : Finset P
     scheme.view s r secret i = scheme.share r secret i
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Scheme.reconstruct_view_eq_secret` (theorem, [line 88](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Scheme.lean#L88))
+`Cslib.Crypto.Protocols.SecretSharing.Scheme.reconstruct_view_eq_secret` (theorem, [line 88](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Scheme.lean#L88))
 
 > Authorized coalitions reconstruct the secret from the restricted view.
 
@@ -96,7 +96,7 @@ theorem reconstruct_view_eq_secret
     scheme.reconstruct s (scheme.view s r secret) = secret
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Scheme.not_authorized_of_subset` (theorem, [line 96](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Scheme.lean#L96))
+`Cslib.Crypto.Protocols.SecretSharing.Scheme.not_authorized_of_subset` (theorem, [line 96](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Scheme.lean#L96))
 
 > Any sub-coalition of an unauthorized coalition is unauthorized as well.
 
@@ -114,5 +114,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Crypto/Protocols/SecretSharing/Scheme.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Scheme.lean)
+- [Cslib/Crypto/Protocols/SecretSharing/Scheme.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Scheme.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Crypto.Protocols.SecretSharing.Scheme.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Free Monad Catamorphism
 
-`Cslib.Foundations.Control.Monad.Free.Fold`, in [Cslib/Foundations/Control/Monad/Free/Fold.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/Free/Fold.lean), by Tanner Duve.
+`Cslib.Foundations.Control.Monad.Free.Fold`, in [Cslib/Foundations/Control/Monad/Free/Fold.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/Free/Fold.lean), by Tanner Duve.
 
 > This file defines the fold operation for free monads and proves its universal property.
 >
@@ -35,7 +35,7 @@ proof: formalized
 > For any such algebra, `foldFreeM onValue onEffect` is the unique algebra morphism
 > from the initial algebra `FreeM F α` to `(β, onValue, onEffect)`.
 
-`Cslib.FreeM.foldFreeM` (definition, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/Free/Fold.lean#L51))
+`Cslib.FreeM.foldFreeM` (definition, [line 51](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/Free/Fold.lean#L51))
 
 > Fold function for the `FreeM` monad
 
@@ -46,7 +46,7 @@ def foldFreeM
     FreeM F α → β
 ```
 
-`Cslib.FreeM.foldFreeM_pure` (theorem, [line 59](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/Free/Fold.lean#L59))
+`Cslib.FreeM.foldFreeM_pure` (theorem, [line 59](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/Free/Fold.lean#L59))
 
 ```lean
 theorem foldFreeM_pure
@@ -55,7 +55,7 @@ theorem foldFreeM_pure
     (a : α) : foldFreeM onValue onEffect (pure a) = onValue a
 ```
 
-`Cslib.FreeM.foldFreeM_lift_bind` (theorem, [line 65](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/Free/Fold.lean#L65))
+`Cslib.FreeM.foldFreeM_lift_bind` (theorem, [line 65](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/Free/Fold.lean#L65))
 
 ```lean
 theorem foldFreeM_lift_bind
@@ -66,7 +66,7 @@ theorem foldFreeM_lift_bind
       = onEffect op (fun x => foldFreeM onValue onEffect (k x))
 ```
 
-`Cslib.FreeM.foldFreeM_lift_bind'` (theorem, [line 73](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/Free/Fold.lean#L73))
+`Cslib.FreeM.foldFreeM_lift_bind'` (theorem, [line 73](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/Free/Fold.lean#L73))
 
 ```lean
 theorem foldFreeM_lift_bind' {F : Type w → Type v} {ι : Type w}
@@ -77,7 +77,7 @@ theorem foldFreeM_lift_bind' {F : Type w → Type v} {ι : Type w}
       = onEffect op (fun x => foldFreeM onValue onEffect (k x))
 ```
 
-`Cslib.FreeM.foldFreeM_lift` (theorem, [line 81](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/Free/Fold.lean#L81))
+`Cslib.FreeM.foldFreeM_lift` (theorem, [line 81](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/Free/Fold.lean#L81))
 
 ```lean
 theorem foldFreeM_lift
@@ -87,7 +87,7 @@ theorem foldFreeM_lift
     foldFreeM onValue onEffect (lift op) = onEffect op onValue
 ```
 
-`Cslib.FreeM.foldFreeM_unique` (theorem, [line 95](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/Free/Fold.lean#L95))
+`Cslib.FreeM.foldFreeM_unique` (theorem, [line 95](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/Free/Fold.lean#L95))
 
 > **Universal Property**: If `h : FreeM F α → β` satisfies:
 > * `h (pure a) = onValue a`
@@ -106,7 +106,7 @@ theorem foldFreeM_unique
     h = foldFreeM onValue onEffect
 ```
 
-`Cslib.FreeM.foldFreeM_bind` (theorem, [line 112](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/Free/Fold.lean#L112))
+`Cslib.FreeM.foldFreeM_bind` (theorem, [line 112](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/Free/Fold.lean#L112))
 
 > Sequencing substitutes the fold of the continuation for the value handler.
 
@@ -118,7 +118,7 @@ theorem foldFreeM_bind (onValue : β → γ)
       foldFreeM (fun a => foldFreeM onValue onEffect (k a)) onEffect x
 ```
 
-`Cslib.FreeM.foldFreeM_map` (theorem, [line 121](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/Free/Fold.lean#L121))
+`Cslib.FreeM.foldFreeM_map` (theorem, [line 121](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/Free/Fold.lean#L121))
 
 ```lean
 theorem foldFreeM_map (onValue : β → γ)
@@ -126,7 +126,7 @@ theorem foldFreeM_map (onValue : β → γ)
     foldFreeM onValue onEffect (map f x) = foldFreeM (onValue ∘ f) onEffect x
 ```
 
-`Cslib.FreeM.liftM_eq_foldFreeM` (theorem, [line 128](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/Free/Fold.lean#L128))
+`Cslib.FreeM.liftM_eq_foldFreeM` (theorem, [line 128](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/Free/Fold.lean#L128))
 
 > Monadic interpretation is the fold whose effect handler uses `bind`.
 
@@ -142,5 +142,5 @@ theorem liftM_eq_foldFreeM {m : Type u → Type w} [Monad m] {α : Type u}
 
 ## Sources
 
-- [Cslib/Foundations/Control/Monad/Free/Fold.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/Free/Fold.lean)
+- [Cslib/Foundations/Control/Monad/Free/Fold.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/Free/Fold.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Foundations.Control.Monad.Free.Fold.json)

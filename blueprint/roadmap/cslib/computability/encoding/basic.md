@@ -7,7 +7,7 @@ proof: formalized
 
 # Default encodings
 
-`Cslib.Computability.Encoding.Basic`, in [Cslib/Computability/Encoding/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean), by Christian Reitwiessner.
+`Cslib.Computability.Encoding.Basic`, in [Cslib/Computability/Encoding/Basic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean), by Christian Reitwiessner.
 
 > Provides default encodings and encoding combinators for basic Lean types such as natural numbers,
 > finite types, products, dependent pairs, sums, options and lists into Boolean words.
@@ -39,7 +39,7 @@ proof: formalized
 > We do not use Mathlib's `Computability.Encoding` combinators since they change the alphabet
 > (e.g. `encodingProd` encodes into `Γ₁ ⊕ Γ₂`), while here every encoding targets `List Bool`.
 
-`Cslib.Encoding.encDelimited` (definition, [line 57](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L57))
+`Cslib.Encoding.encDelimited` (definition, [line 57](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L57))
 
 > Wraps every code word of an encoding with `delimit`, so that it can be followed by further
 > data.
@@ -50,7 +50,7 @@ def encDelimited (enc : α ↪ List Bool) : α ↪ List Bool
 
 > ### Basic types
 
-`Cslib.Encoding.encBool` (definition, [line 64](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L64))
+`Cslib.Encoding.encBool` (definition, [line 64](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L64))
 
 > A Boolean is encoded by its single bit.
 
@@ -58,7 +58,7 @@ def encDelimited (enc : α ↪ List Bool) : α ↪ List Bool
 def encBool : Bool ↪ List Bool
 ```
 
-`Cslib.Encoding.encBits` (definition, [line 69](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L69))
+`Cslib.Encoding.encBits` (definition, [line 69](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L69))
 
 > Boolean words already are codes.
 
@@ -66,7 +66,7 @@ def encBool : Bool ↪ List Bool
 def encBits : List Bool ↪ List Bool
 ```
 
-`Nat.bits_injective` (theorem, [line 72](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L72))
+`Nat.bits_injective` (theorem, [line 72](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L72))
 
 > `Nat.bits` is injective. Candidate for upstreaming to `Mathlib.Data.Nat.Bits`.
 
@@ -74,19 +74,19 @@ def encBits : List Bool ↪ List Bool
 theorem _root_.Nat.bits_injective : Function.Injective Nat.bits
 ```
 
-`Nat.bits_inj` (theorem, [line 78](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L78))
+`Nat.bits_inj` (theorem, [line 78](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L78))
 
 ```lean
 theorem _root_.Nat.bits_inj {m n : ℕ} : m.bits = n.bits ↔ m = n
 ```
 
-`Nat.bits_eq_nil` (theorem, [line 81](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L81))
+`Nat.bits_eq_nil` (theorem, [line 81](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L81))
 
 ```lean
 theorem _root_.Nat.bits_eq_nil {n : ℕ} : n.bits = [] ↔ n = 0
 ```
 
-`Cslib.Encoding.encNat` (definition, [line 86](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L86))
+`Cslib.Encoding.encNat` (definition, [line 86](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L86))
 
 > A natural number is encoded in binary, least significant bit first, as `Nat.bits`.
 
@@ -96,7 +96,7 @@ def encNat : ℕ ↪ List Bool
 
 > ### Finite types
 
-`Cslib.Encoding.encFin` (definition, [line 92](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L92))
+`Cslib.Encoding.encFin` (definition, [line 92](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L92))
 
 > `Fin n` is encoded in binary as a fixed-width code of `Nat.clog 2 n` bits, least significant
 > bit first.
@@ -105,20 +105,20 @@ def encNat : ℕ ↪ List Bool
 def encFin (n : ℕ) : Fin n ↪ List Bool
 ```
 
-`Cslib.Encoding.encFin_apply` (theorem, [line 99](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L99))
+`Cslib.Encoding.encFin_apply` (theorem, [line 99](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L99))
 
 ```lean
 theorem encFin_apply (n : ℕ) (a : Fin n) :
     encFin n a = (List.range (Nat.clog 2 n)).map (a.val.testBit ·)
 ```
 
-`Cslib.Encoding.length_encFin` (theorem, [line 103](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L103))
+`Cslib.Encoding.length_encFin` (theorem, [line 103](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L103))
 
 ```lean
 theorem length_encFin (n : ℕ) (a : Fin n) : (encFin n a).length = Nat.clog 2 n
 ```
 
-`Cslib.Encoding.getElem_encFin` (theorem, [line 108](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L108))
+`Cslib.Encoding.getElem_encFin` (theorem, [line 108](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L108))
 
 > The `i`-th bit of the code is the `i`-th bit of the number.
 
@@ -127,7 +127,7 @@ theorem getElem_encFin (n : ℕ) (a : Fin n) (i : ℕ) (h : i < (encFin n a).len
     (encFin n a)[i] = a.val.testBit i
 ```
 
-`Cslib.Encoding.encFin_eq_nil` (theorem, [line 114](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L114))
+`Cslib.Encoding.encFin_eq_nil` (theorem, [line 114](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L114))
 
 > Types with at most one element are encoded as the empty word.
 
@@ -135,7 +135,7 @@ theorem getElem_encFin (n : ℕ) (a : Fin n) (i : ℕ) (h : i < (encFin n a).len
 theorem encFin_eq_nil {n : ℕ} (h : n ≤ 1) (a : Fin n) : encFin n a = []
 ```
 
-`Cslib.Encoding.encFintype` (definition, [line 121](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L121))
+`Cslib.Encoding.encFintype` (definition, [line 121](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L121))
 
 > A finite type is encoded with the fixed width `Nat.clog 2 (Fintype.card α)` through
 > `Fintype.equivFin`. The enumeration is not computable and depends on the `Fintype` instance, so
@@ -146,21 +146,21 @@ theorem encFin_eq_nil {n : ℕ} (h : n ≤ 1) (a : Fin n) : encFin n a = []
 noncomputable def encFintype (α : Type*) [Fintype α] : α ↪ List Bool
 ```
 
-`Cslib.Encoding.encFintype_apply` (theorem, [line 124](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L124))
+`Cslib.Encoding.encFintype_apply` (theorem, [line 124](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L124))
 
 ```lean
 theorem encFintype_apply [Fintype α] (a : α) :
     encFintype α a = encFin _ (Fintype.equivFin α a)
 ```
 
-`Cslib.Encoding.length_encFintype` (theorem, [line 128](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L128))
+`Cslib.Encoding.length_encFintype` (theorem, [line 128](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L128))
 
 ```lean
 theorem length_encFintype [Fintype α] (a : α) :
     (encFintype α a).length = Nat.clog 2 (Fintype.card α)
 ```
 
-`Cslib.Encoding.encFintype_eq_nil` (theorem, [line 134](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L134))
+`Cslib.Encoding.encFintype_eq_nil` (theorem, [line 134](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L134))
 
 > Subsingletons are encoded as the empty word via `encFintype`.
 
@@ -168,7 +168,7 @@ theorem length_encFintype [Fintype α] (a : α) :
 theorem encFintype_eq_nil [Fintype α] [Subsingleton α] (a : α) : encFintype α a = []
 ```
 
-`Cslib.Encoding.encSubsingleton` (definition, [line 140](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L140))
+`Cslib.Encoding.encSubsingleton` (definition, [line 140](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L140))
 
 > A type with at most one element, such as a proposition, is encoded as the empty word. Unlike
 > `encFintype`, this is computable and needs no `Fintype` instance.
@@ -177,7 +177,7 @@ theorem encFintype_eq_nil [Fintype α] [Subsingleton α] (a : α) : encFintype �
 def encSubsingleton (α : Sort*) [Subsingleton α] : α ↪ List Bool
 ```
 
-`Cslib.Encoding.encFintype_eq_encSubsingleton` (theorem, [line 144](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L144))
+`Cslib.Encoding.encFintype_eq_encSubsingleton` (theorem, [line 144](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L144))
 
 > On finite subsingletons, `encSubsingleton` agrees with `encFintype`.
 
@@ -188,7 +188,7 @@ theorem encFintype_eq_encSubsingleton [Fintype α] [Subsingleton α] :
 
 > ### Combinators
 
-`Cslib.Encoding.encProd` (definition, [line 154](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L154))
+`Cslib.Encoding.encProd` (definition, [line 154](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L154))
 
 > A product is encoded as the delimited first component followed by the second component.
 > Only the first component is delimited since the second one extends to the end of the code word;
@@ -198,7 +198,7 @@ theorem encFintype_eq_encSubsingleton [Fintype α] [Subsingleton α] :
 def encProd (enc₁ : α ↪ List Bool) (enc₂ : β ↪ List Bool) : α × β ↪ List Bool
 ```
 
-`Cslib.Encoding.encSigma` (definition, [line 161](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L161))
+`Cslib.Encoding.encSigma` (definition, [line 161](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L161))
 
 > A dependent pair is encoded as the delimited first component followed by the second component,
 > encoded under the encoding selected by the first component. As for `encProd`, only the first
@@ -209,7 +209,7 @@ def encSigma {β : α → Type*} (enc₁ : α ↪ List Bool) (enc₂ : ∀ a, β
     (a : α) × β a ↪ List Bool
 ```
 
-`Cslib.Encoding.encProd_eq_encSigma` (theorem, [line 171](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L171))
+`Cslib.Encoding.encProd_eq_encSigma` (theorem, [line 171](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L171))
 
 > A product is a dependent pair with a constant second type.
 
@@ -218,7 +218,7 @@ theorem encProd_eq_encSigma (enc₁ : α ↪ List Bool) (enc₂ : β ↪ List Bo
     encProd enc₁ enc₂ p = encSigma enc₁ (fun _ => enc₂) ⟨p.1, p.2⟩
 ```
 
-`Cslib.Encoding.encSum` (definition, [line 177](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L177))
+`Cslib.Encoding.encSum` (definition, [line 177](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L177))
 
 > A sum is encoded by a tag bit, `false` for `inl` and `true` for `inr`, followed by the code of
 > the component. A tag bit is used instead of a delimiter since it has a fixed length and does not
@@ -228,7 +228,7 @@ theorem encProd_eq_encSigma (enc₁ : α ↪ List Bool) (enc₂ : β ↪ List Bo
 def encSum (enc₁ : α ↪ List Bool) (enc₂ : β ↪ List Bool) : α ⊕ β ↪ List Bool
 ```
 
-`Cslib.Encoding.encOption` (definition, [line 182](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L182))
+`Cslib.Encoding.encOption` (definition, [line 182](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L182))
 
 > An option is encoded as the sum `Unit ⊕ α`: `none` is encoded as `[false]` and `some a` as
 > `true` followed by the code of `a`.
@@ -237,7 +237,7 @@ def encSum (enc₁ : α ↪ List Bool) (enc₂ : β ↪ List Bool) : α ⊕ β �
 def encOption (enc : α ↪ List Bool) : Option α ↪ List Bool
 ```
 
-`Cslib.Encoding.encList` (definition, [line 187](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L187))
+`Cslib.Encoding.encList` (definition, [line 187](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L187))
 
 > A list is encoded as the concatenation of the delimited codes of its elements.
 
@@ -245,54 +245,54 @@ def encOption (enc : α ↪ List Bool) : Option α ↪ List Bool
 def encList (enc : α ↪ List Bool) : List α ↪ List Bool
 ```
 
-`Cslib.Encoding.encSum_inl` (theorem, [line 197](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L197))
+`Cslib.Encoding.encSum_inl` (theorem, [line 197](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L197))
 
 ```lean
 theorem encSum_inl (enc₁ : α ↪ List Bool) (enc₂ : β ↪ List Bool) (a : α) :
     encSum enc₁ enc₂ (.inl a) = false :: enc₁ a
 ```
 
-`Cslib.Encoding.encSum_inr` (theorem, [line 200](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L200))
+`Cslib.Encoding.encSum_inr` (theorem, [line 200](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L200))
 
 ```lean
 theorem encSum_inr (enc₁ : α ↪ List Bool) (enc₂ : β ↪ List Bool) (b : β) :
     encSum enc₁ enc₂ (.inr b) = true :: enc₂ b
 ```
 
-`Cslib.Encoding.encOption_none` (theorem, [line 204](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L204))
+`Cslib.Encoding.encOption_none` (theorem, [line 204](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L204))
 
 ```lean
 theorem encOption_none (enc : α ↪ List Bool) : encOption enc none = [false]
 ```
 
-`Cslib.Encoding.encOption_some` (theorem, [line 206](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L206))
+`Cslib.Encoding.encOption_some` (theorem, [line 206](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L206))
 
 ```lean
 theorem encOption_some (enc : α ↪ List Bool) (a : α) :
     encOption enc (some a) = true :: enc a
 ```
 
-`Cslib.Encoding.encList_nil` (theorem, [line 209](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L209))
+`Cslib.Encoding.encList_nil` (theorem, [line 209](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L209))
 
 ```lean
 theorem encList_nil (enc : α ↪ List Bool) : encList enc [] = []
 ```
 
-`Cslib.Encoding.encList_cons` (theorem, [line 211](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L211))
+`Cslib.Encoding.encList_cons` (theorem, [line 211](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L211))
 
 ```lean
 theorem encList_cons (enc : α ↪ List Bool) (a : α) (l : List α) :
     encList enc (a :: l) = delimit (enc a) ++ encList enc l
 ```
 
-`Cslib.Encoding.encList_singleton` (theorem, [line 214](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L214))
+`Cslib.Encoding.encList_singleton` (theorem, [line 214](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L214))
 
 ```lean
 theorem encList_singleton (enc : α ↪ List Bool) (a : α) :
     encList enc [a] = delimit (enc a)
 ```
 
-`Cslib.Encoding.encList_append` (theorem, [line 218](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L218))
+`Cslib.Encoding.encList_append` (theorem, [line 218](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L218))
 
 ```lean
 theorem encList_append (enc : α ↪ List Bool) (l l' : List α) :
@@ -301,14 +301,14 @@ theorem encList_append (enc : α ↪ List Bool) (l l' : List α) :
 
 > ### Lengths
 
-`Cslib.Encoding.length_encProd` (theorem, [line 224](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L224))
+`Cslib.Encoding.length_encProd` (theorem, [line 224](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L224))
 
 ```lean
 theorem length_encProd (enc₁ : α ↪ List Bool) (enc₂ : β ↪ List Bool) (p : α × β) :
     (encProd enc₁ enc₂ p).length = 2 * (enc₁ p.1).length + 1 + (enc₂ p.2).length
 ```
 
-`Cslib.Encoding.length_encSigma` (theorem, [line 228](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L228))
+`Cslib.Encoding.length_encSigma` (theorem, [line 228](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L228))
 
 ```lean
 theorem length_encSigma {β : α → Type*} (enc₁ : α ↪ List Bool) (enc₂ : ∀ a, β a ↪ List Bool)
@@ -316,7 +316,7 @@ theorem length_encSigma {β : α → Type*} (enc₁ : α ↪ List Bool) (enc₂ 
     (encSigma enc₁ enc₂ x).length = 2 * (enc₁ x.1).length + 1 + (enc₂ x.1 x.2).length
 ```
 
-`Cslib.Encoding.length_encSum` (theorem, [line 233](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L233))
+`Cslib.Encoding.length_encSum` (theorem, [line 233](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L233))
 
 ```lean
 theorem length_encSum (enc₁ : α ↪ List Bool) (enc₂ : β ↪ List Bool) (x : α ⊕ β) :
@@ -324,27 +324,27 @@ theorem length_encSum (enc₁ : α ↪ List Bool) (enc₂ : β ↪ List Bool) (x
       x.elim (fun a => (enc₁ a).length + 1) (fun b => (enc₂ b).length + 1)
 ```
 
-`Cslib.Encoding.length_encOption` (theorem, [line 238](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L238))
+`Cslib.Encoding.length_encOption` (theorem, [line 238](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L238))
 
 ```lean
 theorem length_encOption (enc : α ↪ List Bool) (o : Option α) :
     (encOption enc o).length = o.elim 1 (fun a => (enc a).length + 1)
 ```
 
-`Cslib.Encoding.length_encOption_none` (theorem, [line 242](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L242))
+`Cslib.Encoding.length_encOption_none` (theorem, [line 242](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L242))
 
 ```lean
 theorem length_encOption_none (enc : α ↪ List Bool) : (encOption enc none).length = 1
 ```
 
-`Cslib.Encoding.length_encOption_some` (theorem, [line 244](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L244))
+`Cslib.Encoding.length_encOption_some` (theorem, [line 244](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L244))
 
 ```lean
 theorem length_encOption_some (enc : α ↪ List Bool) (a : α) :
     (encOption enc (some a)).length = (enc a).length + 1
 ```
 
-`Cslib.Encoding.length_encList` (theorem, [line 248](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L248))
+`Cslib.Encoding.length_encList` (theorem, [line 248](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L248))
 
 > Each element contributes twice the length of its code plus one delimiter bit.
 
@@ -353,7 +353,7 @@ theorem length_encList (enc : α ↪ List Bool) (l : List α) :
     (encList enc l).length = 2 * (l.map fun a => (enc a).length).sum + l.length
 ```
 
-`Cslib.Encoding.length_le_length_encList` (theorem, [line 253](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean#L253))
+`Cslib.Encoding.length_le_length_encList` (theorem, [line 253](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean#L253))
 
 > Delimiters account for at least one bit per list element, even for empty element codes.
 
@@ -368,5 +368,5 @@ theorem length_le_length_encList (enc : α ↪ List Bool) (l : List α) :
 
 ## Sources
 
-- [Cslib/Computability/Encoding/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Encoding/Basic.lean)
+- [Cslib/Computability/Encoding/Basic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Encoding/Basic.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Encoding.Basic.json)

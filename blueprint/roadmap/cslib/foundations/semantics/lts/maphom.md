@@ -7,9 +7,9 @@ proof: formalized
 
 # Label homomorphism map for LTS
 
-`Cslib.Foundations.Semantics.LTS.MapHom`, in [Cslib/Foundations/Semantics/LTS/MapHom.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/MapHom.lean), by Fabrizio Montesi, Ching-Tsun Chou.
+`Cslib.Foundations.Semantics.LTS.MapHom`, in [Cslib/Foundations/Semantics/LTS/MapHom.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/MapHom.lean), by Fabrizio Montesi, Ching-Tsun Chou.
 
-`Cslib.LTS.mapHom` (definition, [line 32](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/MapHom.lean#L32))
+`Cslib.LTS.mapHom` (definition, [line 32](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/MapHom.lean#L32))
 
 > Given a language homomorphism `f` from `Label₂` to `Label₁` and an LTS `lts` that
 > uses `Label₁`, `lts.mapHom f` is an LTS with the same state space but uses `Label₂`, whose
@@ -20,14 +20,14 @@ proof: formalized
 def mapHom (lts : LTS State Label₁) (f : Hom Label₂ Label₁) : LTS State Label₂
 ```
 
-`Cslib.LTS.mapHom_tr` (theorem, [line 38](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/MapHom.lean#L38))
+`Cslib.LTS.mapHom_tr` (theorem, [line 38](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/MapHom.lean#L38))
 
 ```lean
 theorem mapHom_tr {lts : LTS State Label₁} {μ : Label₂} :
     (lts.mapHom f).Tr s μ s' ↔ lts.MTr s (f [μ]) s'
 ```
 
-`Cslib.LTS.mapHom_mTr` (theorem, [line 44](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/MapHom.lean#L44))
+`Cslib.LTS.mapHom_mTr` (theorem, [line 44](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/MapHom.lean#L44))
 
 > This theorem says basically that `lts.mapHom f` is well-defined because `f` is
 > a language homomorphism.
@@ -37,7 +37,7 @@ theorem mapHom_mTr {lts : LTS State Label₁} {μs : List Label₂} :
     (lts.mapHom f).MTr s μs s' ↔ lts.MTr s (f μs) s'
 ```
 
-`Cslib.LTS.mapLabel` (definition, [line 58](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/MapHom.lean#L58))
+`Cslib.LTS.mapLabel` (definition, [line 58](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/MapHom.lean#L58))
 
 > This is the special case of `LTS.mapHom` when the language homomorphism maps
 > single labels to single labels.
@@ -46,14 +46,14 @@ theorem mapHom_mTr {lts : LTS State Label₁} {μs : List Label₂} :
 def mapLabel (lts : LTS State Label₁) (f : Label₂ → Label₁) : LTS State Label₂
 ```
 
-`Cslib.LTS.mapLabel_tr` (theorem, [line 62](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/MapHom.lean#L62))
+`Cslib.LTS.mapLabel_tr` (theorem, [line 62](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/MapHom.lean#L62))
 
 ```lean
 theorem mapLabel_tr {lts : LTS State Label₁} :
     (lts.mapLabel f).Tr s μ s' ↔ lts.Tr s (f μ) s'
 ```
 
-`Cslib.LTS.mapLabel_mTr` (theorem, [line 69](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/MapHom.lean#L69))
+`Cslib.LTS.mapLabel_mTr` (theorem, [line 69](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/MapHom.lean#L69))
 
 ```lean
 theorem mapLabel_mTr {lts : LTS State Label₁} {f : Label₂ → Label₁} :
@@ -67,5 +67,5 @@ theorem mapLabel_mTr {lts : LTS State Label₁} {f : Label₂ → Label₁} :
 
 ## Sources
 
-- [Cslib/Foundations/Semantics/LTS/MapHom.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/MapHom.lean)
+- [Cslib/Foundations/Semantics/LTS/MapHom.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/MapHom.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.LTS.MapHom.json)

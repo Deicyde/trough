@@ -7,7 +7,7 @@ proof: formalized
 
 # Comparison Sorting Lower Bound
 
-`Cslib.Algorithms.Lean.Query.Sort.LowerBound`, in [Cslib/Algorithms/Lean/Query/Sort/LowerBound.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/LowerBound.lean), by Kim Morrison, Shreyas Srinivas, Eric Wieser.
+`Cslib.Algorithms.Lean.Query.Sort.LowerBound`, in [Cslib/Algorithms/Lean/Query/Sort/LowerBound.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Sort/LowerBound.lean), by Kim Morrison, Shreyas Srinivas, Eric Wieser.
 
 > `IsSort.lowerBound_infinite`: any correct comparison sort on an infinite type
 > has query complexity at least `⌈log₂(n!)⌉` for every input size `n`.
@@ -21,7 +21,7 @@ proof: formalized
 
 > ## Main theorem
 
-`Cslib.Query.IsSort.lowerBound_infinite` (theorem, [line 116](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/LowerBound.lean#L116))
+`Cslib.Query.IsSort.lowerBound_infinite` (theorem, [line 116](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Sort/LowerBound.lean#L116))
 
 > Any correct comparison sort on an infinite type has query complexity at least `⌈log₂(n!)⌉`
 > for every input size `n`.
@@ -40,5 +40,5 @@ theorem IsSort.lowerBound_infinite [Infinite α]
 
 ## Sources
 
-- [Cslib/Algorithms/Lean/Query/Sort/LowerBound.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/LowerBound.lean)
+- [Cslib/Algorithms/Lean/Query/Sort/LowerBound.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Sort/LowerBound.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Algorithms.Lean.Query.Sort.LowerBound.json)

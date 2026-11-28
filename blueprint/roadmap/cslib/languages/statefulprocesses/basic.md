@@ -7,7 +7,7 @@ proof: formalized
 
 # Stateful Processes
 
-`Cslib.Languages.StatefulProcesses.Basic`, in [Cslib/Languages/StatefulProcesses/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean), by Fabrizio Montesi.
+`Cslib.Languages.StatefulProcesses.Basic`, in [Cslib/Languages/StatefulProcesses/Basic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/StatefulProcesses/Basic.lean), by Fabrizio Montesi.
 
 > The language of Stateful Processes (SP for short), a process calculus
 > where processes communicate via message passing [Montesi2023]. Stateful processes or similar
@@ -23,10 +23,15 @@ proof: formalized
 >
 > ## Implementation notes
 >
-> This development follows the presentation in [Montesi2023], with one difference: we adopt a modular
-> approach to the definition of operational semantics, by first defining a symbolic semantics from
-> which a concrete semantics is then derived by adding stores (process memory). This approach is
-> described in [Acclavio2026].
+> In process syntax, expressions can use the notation for the syntactic
+> category `mechExpr`, see `Cslib.Languages.Mech.Common.Expr.Notation`): `{f $x $y}` applies a Lean
+> function to participant-local variables `x` and `y`, `{term}` embeds a Lean term, and any term of
+> type `L.Expr α` can be used directly.
+>
+> This development otherwise follows the presentation in [Montesi2023], with one difference: we
+> adopt a modular approach to the definition of operational semantics, by first defining a symbolic
+> semantics from which a concrete semantics is then derived by adding stores (process memory). This
+> approach is described in [Acclavio2026].
 >
 > ## References
 >
@@ -36,110 +41,106 @@ proof: formalized
 
 > ## Syntax of process terms
 
-`Cslib.StatefulProcesses.Prefix` (inductive type, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean#L53))
+`Cslib.StatefulProcesses.Prefix` (inductive type, [line 61](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/StatefulProcesses/Basic.lean#L61))
 
-> Prefixes.
+> A prefix of a stateful process.
 
 ```lean
-inductive Prefix (Pid Var Val FunId SelLabel : Type*) where
-  /-- Assign to `x` the result of evaluating `e`. -/
-  | assign (x : Var) (e : Expr Var Val FunId)
-  /-- Send to `p` the result of evaluating `e`. -/
-  | sendValue (p : Pid) (e : Expr Var Val FunId)
-  /-- Receive a value from `p` and store it in `x`. -/
-  | recvValue (p : Pid) (x : Var)
-  /-- Send to `p` the label `l`. -/
+inductive Prefix (Pid : Type u) (L : LocalSig.{v, w}) (SelLabel : Type*)
+  /-- Assign a local variable. -/
+  | assign {α : Type w} (x : L.Var α) (e : L.Expr α)
+  /-- Send a value to a participant. -/
+  | sendValue {α : Type w} (p : Pid) (e : L.Expr α)
+  /-- Receive a value in a local variable. -/
+  | recvValue {α : Type w} (p : Pid) (x : L.Var α)
+  /-- Send a selection label. -/
   | sendLabel (p : Pid) (l : SelLabel)
 ```
 
-`Cslib.StatefulProcesses.Process` (inductive type, [line 64](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean#L64))
+`Cslib.StatefulProcesses.Process` (inductive type, [line 72](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/StatefulProcesses/Basic.lean#L72))
 
-> Processes.
+> Processes with typed local computations.
 
 ```lean
-inductive Process (Pid Var Val FunId SelLabel ProcName : Type*) where
-  /-- The terminated process. -/
+inductive Process (Pid : Type u) (L : LocalSig.{v, w}) (SelLabel ProcName : Type*)
+  /-- Terminate. -/
   | nil
-  /-- Execute the prefix `prf` and proceed as the continuation `pr`. -/
-  | pre (prf : Prefix Pid Var Val FunId SelLabel) (pr : Process Pid Var Val FunId SelLabel ProcName)
-  /-- Branching process: receives a selection label and continues accordingly. -/
-  | recvLabel (p : Pid) (branches : List (SelLabel × Process Pid Var Val FunId SelLabel ProcName))
-  /-- Conditional: evaluate `e` to choose between `pr₁` and `pr₂`. -/
-  | cond (e : Expr Var Val FunId) (pr₁ pr₂ : Process Pid Var Val FunId SelLabel ProcName)
+  /-- Execute a prefix and continue. -/
+  | pre (prf : Prefix Pid L SelLabel) (pr : Process Pid L SelLabel ProcName)
+  /-- Branch on a received label. -/
+  | recvLabel (p : Pid) (branches : List (SelLabel × Process Pid L SelLabel ProcName))
+  /-- Branch on a local computation `e`: continue as `pr₁` if `e` evaluates to the true value of its
+  guard type (see `HasTrue`) and as `pr₂` otherwise. -/
+  | cond {α : Type w} [inst : HasTrue α] (e : L.Expr α)
+    (pr₁ pr₂ : Process Pid L SelLabel ProcName)
   /-- Call the procedure `proc`. -/
   | call (proc : ProcName) (ps : List Pid)
 ```
 
 > ## Semantics
 
-`Cslib.StatefulProcesses.Act` (inductive type, [line 137](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean#L137))
+`Cslib.StatefulProcesses.Act` (inductive type, [line 152](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/StatefulProcesses/Basic.lean#L152))
 
-> Actions.
+> Symbolic actions.
 
 ```lean
-inductive Act (Pid Var Val FunId SelLabel : Type*) where
-  /-- Assign to `x` the result of evaluating `e`. -/
-  | assign (x : Var) (e : Expr Var Val FunId)
-  /-- Send to `p` the result of evaluating `e`. -/
-  | sendValue (p : Pid) (e : Expr Var Val FunId)
-  /-- Receive a value from `p` and store it in variable `x`. -/
-  | recvValue (p : Pid) (x : Var)
-  /-- Send to `p` the selection label `l`. -/
+inductive Act (Pid : Type u) (L : LocalSig.{v, w}) (SelLabel : Type*)
+  | assign {α : Type w} (x : L.Var α) (e : L.Expr α)
+  | sendValue {α : Type w} (p : Pid) (e : L.Expr α)
+  | recvValue {α : Type w} (p : Pid) (x : L.Var α)
   | sendLabel (p : Pid) (l : SelLabel)
-  /-- Receive from `p` the selection label `l`. -/
   | recvLabel (p : Pid) (l : SelLabel)
-  /-- Choose the then-branch of a conditional guarded by `e`. -/
-  | condThen (e : Expr Var Val FunId)
-  /-- Choose the else-branch of a conditional guarded by `e`. -/
-  | condElse (e : Expr Var Val FunId)
+  | condThen {α : Type w} [inst : HasTrue α] (e : L.Expr α)
+  | condElse {α : Type w} [inst : HasTrue α] (e : L.Expr α)
 ```
 
-`Cslib.StatefulProcesses.Act.isInternal` (definition, [line 154](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean#L154))
+`Cslib.StatefulProcesses.Act.isInternal` (definition, [line 162](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/StatefulProcesses/Basic.lean#L162))
 
 > An action is internal if it is not meant to interact with another process.
 
 ```lean
-def Act.isInternal : Act Pid Var Val FunId SelLabel → Bool
+def Act.isInternal : Act Pid L SelLabel → Bool
 ```
 
-`Cslib.StatefulProcesses.Prefix.toAct` (abbreviation, [line 159](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean#L159))
+`Cslib.StatefulProcesses.Prefix.toAct` (abbreviation, [line 167](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/StatefulProcesses/Basic.lean#L167))
 
 > Transforms a `Prefix` into an `Act`.
 
 ```lean
-abbrev Prefix.toAct : Prefix Pid Var Val FunId SelLabel → Act Pid Var Val FunId SelLabel
+abbrev Prefix.toAct : Prefix Pid L SelLabel → Act Pid L SelLabel
 ```
 
-`Cslib.StatefulProcesses.Process.Tr` (inductive type, [line 167](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean#L167))
+`Cslib.StatefulProcesses.Process.Tr` (inductive type, [line 175](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/StatefulProcesses/Basic.lean#L175))
 
 > Symbolic transition relation for processes.
 > Do not use this directly, use `Process.lts` instead.
 
 ```lean
 inductive Process.Tr :
-    Process Pid Var Val FunId SelLabel ProcName → Act Pid Var Val FunId SelLabel →
-    Process Pid Var Val FunId SelLabel ProcName → Prop
+    Process Pid L SelLabel ProcName → Act Pid L SelLabel →
+    Process Pid L SelLabel ProcName → Prop
   | pre : Tr (pre prf pr) prf.toAct (pr)
-  | condThen : Tr (cond e pr₁ pr₂) (.condThen e) pr₁
-  | condElse : Tr (cond e pr₁ pr₂) (.condElse e) pr₂
+  | condThen {α} {_ : HasTrue α} {e : L.Expr α} : Tr (cond e pr₁ pr₂) (.condThen e) pr₁
+  | condElse {α} {_ : HasTrue α} {e : L.Expr α} : Tr (cond e pr₁ pr₂) (.condElse e) pr₂
   | recvLabel (h : (l, pr) ∈ branches): Tr (recvLabel p branches) (.recvLabel p l) pr
 ```
 
-`Cslib.StatefulProcesses.Process.lts` (definition, [line 176](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean#L176))
+`Cslib.StatefulProcesses.Process.lts` (definition, [line 184](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/StatefulProcesses/Basic.lean#L184))
 
 > Symbolic LTS of processes.
 
 ```lean
 def Process.lts :
-    LTS (Process Pid Var Val FunId SelLabel ProcName) (Act Pid Var Val FunId SelLabel)
+    LTS (Process Pid L SelLabel ProcName) (Act Pid L SelLabel)
 ```
 
 ## Depends on
 
+- [Types with a designated true value](../../foundations/data/hastrue.md)
 - [Labelled Transition System (LTS)](../../foundations/semantics/lts/basic.md)
-- [Local expressions, stores, and evaluation](../mech/localcomputation.md)
+- [Local expressions](../mech/common/expr/basic.md)
 
 ## Sources
 
-- [Cslib/Languages/StatefulProcesses/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/StatefulProcesses/Basic.lean)
+- [Cslib/Languages/StatefulProcesses/Basic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/StatefulProcesses/Basic.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Languages.StatefulProcesses.Basic.json)

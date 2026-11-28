@@ -7,7 +7,7 @@ proof: formalized
 
 # Nondeterministic Multi-Tape Turing Machines
 
-`Cslib.Computability.Machines.Turing.MultiTape.Nondeterministic`, in [Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean), by Aviv Bar Natan.
+`Cslib.Computability.Machines.Turing.MultiTape.Nondeterministic`, in [Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean), by Aviv Bar Natan.
 
 > Defines nondeterministic Turing machines with a read-only input tape, `k` work tapes and one
 > write-only output tape, their computation paths, and time bounds.
@@ -48,7 +48,7 @@ proof: formalized
 > * [C. Papadimitriou, *Computational Complexity*][Papadimitriou94]
 > * [M. Sipser, *Introduction to the Theory of Computation*][Sipser2013]
 
-`RelSeries.exists_of_mem_map` (lemma, [line 62](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L62))
+`RelSeries.exists_of_mem_map` (lemma, [line 62](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L62))
 
 > A member of a mapped series is the image of a member.
 
@@ -57,7 +57,7 @@ lemma exists_of_mem_map {p : RelSeries r} {f : r.Hom s} {b : β} (hb : b ∈ p.m
     ∃ a ∈ p, f a = b
 ```
 
-`RelSeries.mem_or_mem_of_mem_smash` (lemma, [line 68](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L68))
+`RelSeries.mem_or_mem_of_mem_smash` (lemma, [line 68](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L68))
 
 > A member of two joined series lies on one of them.
 
@@ -66,7 +66,7 @@ lemma mem_or_mem_of_mem_smash {p q : RelSeries r} {h : p.last = q.head} {a : α}
     (ha : a ∈ p.smash q h) : a ∈ p ∨ a ∈ q
 ```
 
-`Turing.MultiTapeNTM` (structure, [line 85](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L85))
+`Turing.MultiTapeNTM` (structure, [line 85](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L85))
 
 > A nondeterministic multi-tape Turing machine with `k` work tapes over the alphabet of
 > `Option Symbol` (where `none` is the blank symbol). Neither `Symbol` nor `State` is required to be
@@ -82,7 +82,7 @@ structure MultiTapeNTM (k : ℕ) (Symbol State : Type*) where
     (action : Action k Symbol State) : Prop
 ```
 
-`Turing.MultiTapeNTM.Step` (definition, [line 100](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L100))
+`Turing.MultiTapeNTM.Step` (definition, [line 100](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L100))
 
 > The one-step relation on configurations. A halted configuration steps only to itself. A running
 > configuration steps by applying any action related to its state and read symbols by `Tr`.
@@ -91,7 +91,7 @@ structure MultiTapeNTM (k : ℕ) (Symbol State : Type*) where
 def Step (ntm : MultiTapeNTM k Symbol State) (c₁ c₂ : Cfg k Symbol State input) : Prop
 ```
 
-`Turing.MultiTapeNTM.step_of_halt` (lemma, [line 107](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L107))
+`Turing.MultiTapeNTM.step_of_halt` (lemma, [line 107](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L107))
 
 > A halted configuration steps only to itself.
 
@@ -100,7 +100,7 @@ lemma step_of_halt {c c' : Cfg k Symbol State input} (h : c.Halted) :
     ntm.Step c c' ↔ c' = c
 ```
 
-`Turing.MultiTapeNTM.initCfg` (definition, [line 113](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L113))
+`Turing.MultiTapeNTM.initCfg` (definition, [line 113](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L113))
 
 > The initial configuration corresponding to an input string.
 
@@ -109,7 +109,7 @@ def initCfg (ntm : MultiTapeNTM k Symbol State) (input : List Symbol) :
     Cfg k Symbol State input
 ```
 
-`Turing.MultiTapeNTM.stepRel` (abbreviation, [line 118](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L118))
+`Turing.MultiTapeNTM.stepRel` (abbreviation, [line 118](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L118))
 
 > The one-step relation on configurations for `input`, as a set of pairs.
 
@@ -118,7 +118,7 @@ abbrev stepRel (ntm : MultiTapeNTM k Symbol State) (input : List Symbol) :
     SetRel (Cfg k Symbol State input) (Cfg k Symbol State input)
 ```
 
-`Turing.MultiTapeNTM.runningStepRel` (abbreviation, [line 123](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L123))
+`Turing.MultiTapeNTM.runningStepRel` (abbreviation, [line 123](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L123))
 
 > The steps of `ntm` from running configurations: the steps within a run until it halts.
 
@@ -127,7 +127,7 @@ abbrev runningStepRel (ntm : MultiTapeNTM k Symbol State) (input : List Symbol) 
     SetRel (Cfg k Symbol State input) (Cfg k Symbol State input)
 ```
 
-`Turing.MultiTapeNTM.RunPath` (abbreviation, [line 128](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L128))
+`Turing.MultiTapeNTM.RunPath` (abbreviation, [line 128](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L128))
 
 > A nonempty list of configurations joined by steps of `ntm`.
 
@@ -135,7 +135,7 @@ abbrev runningStepRel (ntm : MultiTapeNTM k Symbol State) (input : List Symbol) 
 abbrev RunPath (ntm : MultiTapeNTM k Symbol State) (input : List Symbol)
 ```
 
-`Turing.MultiTapeNTM.RunPath.map` (abbreviation, [line 135](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L135))
+`Turing.MultiTapeNTM.RunPath.map` (abbreviation, [line 135](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L135))
 
 > A run path mapped along a step-preserving map of configurations: `RelSeries.map`, typed as a
 > run path of the target machine.
@@ -146,7 +146,7 @@ abbrev map {k' : ℕ} {State' : Type*} {input' : List Symbol} {ntm' : MultiTapeN
     ntm'.RunPath input'
 ```
 
-`Turing.MultiTapeNTM.RunPath.length_output_mono` (lemma, [line 141](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L141))
+`Turing.MultiTapeNTM.RunPath.length_output_mono` (lemma, [line 141](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L141))
 
 > The output only grows along a run path.
 
@@ -155,7 +155,7 @@ lemma length_output_mono (p : ntm.RunPath input) :
     Monotone fun i ↦ (p i).output.length
 ```
 
-`Turing.MultiTapeNTM.RunPath.last_eq_of_head_halted` (lemma, [line 149](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L149))
+`Turing.MultiTapeNTM.RunPath.last_eq_of_head_halted` (lemma, [line 149](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L149))
 
 > Once a run path is halted, its configuration stays unchanged.
 
@@ -163,7 +163,7 @@ lemma length_output_mono (p : ntm.RunPath input) :
 lemma last_eq_of_head_halted (p : ntm.RunPath input) (h : p.head.Halted) : p.last = p.head
 ```
 
-`Turing.MultiTapeNTM.RunPath.last_eq_of_halted` (lemma, [line 158](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L158))
+`Turing.MultiTapeNTM.RunPath.last_eq_of_halted` (lemma, [line 158](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L158))
 
 > The last configuration equals any earlier halted configuration.
 
@@ -172,7 +172,7 @@ lemma last_eq_of_halted (p : ntm.RunPath input) (i : Fin (p.length + 1))
     (h : (p i).Halted) : p.last = p i
 ```
 
-`Turing.MultiTapeNTM.RunPath.time` (definition, [line 163](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L163))
+`Turing.MultiTapeNTM.RunPath.time` (definition, [line 163](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L163))
 
 > The number of steps taken by a run path.
 
@@ -180,7 +180,7 @@ lemma last_eq_of_halted (p : ntm.RunPath input) (i : Fin (p.length + 1))
 def time (p : ntm.RunPath input) : ℕ
 ```
 
-`Turing.MultiTapeNTM.RunPath.exists_running` (lemma, [line 167](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L167))
+`Turing.MultiTapeNTM.RunPath.exists_running` (lemma, [line 167](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L167))
 
 > A path that ends halted runs from its head to its last configuration in running steps, up to
 > its first halted configuration.
@@ -191,7 +191,7 @@ lemma exists_running (p : ntm.RunPath input) (h : p.last.Halted) :
       q.length ≤ p.length ∧ ∀ c ∈ q, c ∈ p
 ```
 
-`Turing.MultiTapeNTM.ComputationPath` (structure, [line 181](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L181))
+`Turing.MultiTapeNTM.ComputationPath` (structure, [line 181](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L181))
 
 > A run path starting at the initial configuration for `input`.
 
@@ -202,7 +202,7 @@ structure ComputationPath (ntm : MultiTapeNTM k Symbol State) (input : List Symb
   head_eq : toRunPath.head = ntm.initCfg input
 ```
 
-`Turing.MultiTapeNTM.ComputationPath.time` (definition, [line 189](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L189))
+`Turing.MultiTapeNTM.ComputationPath.time` (definition, [line 189](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L189))
 
 > The number of steps taken by a computation path.
 
@@ -210,7 +210,7 @@ structure ComputationPath (ntm : MultiTapeNTM k Symbol State) (input : List Symb
 def time (p : ntm.ComputationPath input) : ℕ
 ```
 
-`Turing.MultiTapeNTM.RunsInTime` (definition, [line 195](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L195))
+`Turing.MultiTapeNTM.RunsInTime` (definition, [line 195](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L195))
 
 > Every computation path on `input` of at least `t` steps ends in a halted configuration.
 > A path ending in a stuck configuration must have fewer than `t` steps.
@@ -219,7 +219,7 @@ def time (p : ntm.ComputationPath input) : ℕ
 def RunsInTime (ntm : MultiTapeNTM k Symbol State) (input : List Symbol) (t : ℕ) : Prop
 ```
 
-`Turing.MultiTapeNTM.RunsInTime.mono` (lemma, [line 199](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L199))
+`Turing.MultiTapeNTM.RunsInTime.mono` (lemma, [line 199](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L199))
 
 > A time bound can be increased.
 
@@ -230,7 +230,7 @@ lemma RunsInTime.mono {input : List Symbol} {t t' : ℕ}
 
 > ### Following a machine
 
-`Turing.MultiTapeNTM.Adapter` (structure, [line 210](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L210))
+`Turing.MultiTapeNTM.Adapter` (structure, [line 210](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L210))
 
 > How a machine with `k'` work tapes and states `State'` performs the transitions of a machine
 > with `k` work tapes and states `State`. A transition turns the symbols under the heads into an
@@ -246,7 +246,7 @@ structure Adapter (k k' : ℕ) (Symbol State State' : Type*) where
   action : HeadSymbols k' Symbol → Action k Symbol State → Action k' Symbol State'
 ```
 
-`Turing.MultiTapeNTM.Adapter.mapState` (definition, [line 218](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L218))
+`Turing.MultiTapeNTM.Adapter.mapState` (definition, [line 218](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L218))
 
 > The adapter that relabels the states through `φ` and reads and acts on the same tapes.
 
@@ -255,7 +255,7 @@ def Adapter.mapState {State' : Type*} (φ : Option State → Option State') :
     Adapter k k Symbol State State'
 ```
 
-`Turing.MultiTapeNTM.Follows` (definition, [line 224](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L224))
+`Turing.MultiTapeNTM.Follows` (definition, [line 224](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L224))
 
 > `ntm'` follows `ntm` through `adapter`, in state `state q` while `ntm` is in state `q`: whatever
 > `ntm` may do in `q` on what `adapter` reads, `ntm'` may do the adapted action in `state q`.
@@ -266,7 +266,7 @@ def Follows {k' : ℕ} {State' : Type*} (ntm' : MultiTapeNTM k' Symbol State')
     (adapter : Adapter k k' Symbol State State') : Prop
 ```
 
-`Turing.MultiTapeNTM.Follows.step` (lemma, [line 239](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L239))
+`Turing.MultiTapeNTM.Follows.step` (lemma, [line 239](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L239))
 
 > **A follower mirrors a step.** If `ntm'` follows `ntm`, and the map `f` relabels the state of
 > `c` through `state`, reads through `adapter` what `c` reads, and carries the action of a step from
@@ -282,7 +282,7 @@ lemma step (h : ntm'.Follows ntm state adapter)
     ntm'.Step (f c) (f c')
 ```
 
-`Turing.MultiTapeNTM.Follows.runningStepHom` (definition, [line 258](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L258))
+`Turing.MultiTapeNTM.Follows.runningStepHom` (definition, [line 258](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L258))
 
 > **A follower mirrors the running steps.** If `ntm'` follows `ntm`, and `f` sends a configuration
 > in state `q` to one in state `state q`, from which `adapter` reads what the configuration reads and
@@ -299,7 +299,7 @@ def runningStepHom (h : ntm'.Follows ntm state adapter)
     (ntm.runningStepRel input).Hom (ntm'.stepRel input')
 ```
 
-`Turing.MultiTapeNTM.Follows.stepHom` (definition, [line 270](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L270))
+`Turing.MultiTapeNTM.Follows.stepHom` (definition, [line 270](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L270))
 
 > **A follower mirrors the steps.** As `runningStepHom`, for an `f` that relabels every state
 > through `state`, so that it also keeps halted configurations halted.
@@ -314,7 +314,7 @@ def stepHom (h : ntm'.Follows ntm state adapter)
     (ntm.stepRel input).Hom (ntm'.stepRel input')
 ```
 
-`Turing.MultiTapeNTM.prependOutputHom` (definition, [line 283](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L283))
+`Turing.MultiTapeNTM.prependOutputHom` (definition, [line 283](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean#L283))
 
 > A machine never reads its output tape, so prepending a word to the output preserves steps.
 
@@ -329,5 +329,5 @@ def prependOutputHom (ntm : MultiTapeNTM k Symbol State) (pre : List Symbol) :
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Nondeterministic.json)

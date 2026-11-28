@@ -7,13 +7,13 @@ proof: formalized
 
 # Examples separating boundedness, termination, and acyclicity
 
-`Cslib.Foundations.Semantics.LTS.ExampleTermination`, in [Cslib/Foundations/Semantics/LTS/ExampleTermination.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean), by Samuel Schlesinger.
+`Cslib.Foundations.Semantics.LTS.ExampleTermination`, in [Cslib/Foundations/Semantics/LTS/ExampleTermination.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean), by Samuel Schlesinger.
 
 > On infinite state spaces, boundedness, termination, and acyclicity are distinct properties.
 > This file gives concrete LTSs witnessing that the converses in
 > `Bounded → Terminating → Acyclic` do not hold in general.
 
-`Cslib.LTS.Example.countdownLTS` (definition, [line 24](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean#L24))
+`Cslib.LTS.Example.countdownLTS` (definition, [line 24](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean#L24))
 
 > The countdown LTS takes a natural number to its predecessor.
 
@@ -21,13 +21,13 @@ proof: formalized
 def countdownLTS : LTS ℕ Unit
 ```
 
-`Cslib.LTS.Example.countdownLTS_terminating` (instance, [line 27](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean#L27))
+`Cslib.LTS.Example.countdownLTS_terminating` (instance, [line 27](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean#L27))
 
 ```lean
 instance countdownLTS_terminating : countdownLTS.Terminating
 ```
 
-`Cslib.LTS.Example.countdownLTS_not_bounded` (theorem, [line 44](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean#L44))
+`Cslib.LTS.Example.countdownLTS_not_bounded` (theorem, [line 44](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean#L44))
 
 > The countdown LTS is not bounded.
 
@@ -35,7 +35,7 @@ instance countdownLTS_terminating : countdownLTS.Terminating
 theorem countdownLTS_not_bounded : ¬ countdownLTS.Bounded
 ```
 
-`Cslib.LTS.Example.successorLTS` (definition, [line 49](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean#L49))
+`Cslib.LTS.Example.successorLTS` (definition, [line 49](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean#L49))
 
 > The successor LTS takes each natural number to its successor.
 
@@ -43,13 +43,13 @@ theorem countdownLTS_not_bounded : ¬ countdownLTS.Bounded
 def successorLTS : LTS ℕ Unit
 ```
 
-`Cslib.LTS.Example.successorLTS_acyclic` (instance, [line 60](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean#L60))
+`Cslib.LTS.Example.successorLTS_acyclic` (instance, [line 60](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean#L60))
 
 ```lean
 instance successorLTS_acyclic : successorLTS.Acyclic
 ```
 
-`Cslib.LTS.Example.successorLTS_not_terminating` (theorem, [line 64](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean#L64))
+`Cslib.LTS.Example.successorLTS_not_terminating` (theorem, [line 64](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean#L64))
 
 > The successor LTS is not terminating.
 
@@ -57,7 +57,7 @@ instance successorLTS_acyclic : successorLTS.Acyclic
 theorem successorLTS_not_terminating : ¬ successorLTS.Terminating
 ```
 
-`Cslib.LTS.Example.selfLoopLTS` (definition, [line 70](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean#L70))
+`Cslib.LTS.Example.selfLoopLTS` (definition, [line 70](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean#L70))
 
 > The self-loop LTS has a transition from its unique state to itself.
 
@@ -65,7 +65,7 @@ theorem successorLTS_not_terminating : ¬ successorLTS.Terminating
 def selfLoopLTS : LTS Unit Unit
 ```
 
-`Cslib.LTS.Example.selfLoopLTS_not_acyclic` (theorem, [line 74](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean#L74))
+`Cslib.LTS.Example.selfLoopLTS_not_acyclic` (theorem, [line 74](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean#L74))
 
 > The self-loop LTS is not acyclic.
 
@@ -83,5 +83,5 @@ theorem selfLoopLTS_not_acyclic : ¬ selfLoopLTS.Acyclic
 
 ## Sources
 
-- [Cslib/Foundations/Semantics/LTS/ExampleTermination.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean)
+- [Cslib/Foundations/Semantics/LTS/ExampleTermination.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/ExampleTermination.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.LTS.ExampleTermination.json)

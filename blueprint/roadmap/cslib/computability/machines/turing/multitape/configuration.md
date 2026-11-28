@@ -7,7 +7,7 @@ proof: formalized
 
 # Configurations of Multi-Tape Turing Machines
 
-`Cslib.Computability.Machines.Turing.MultiTape.Configuration`, in [Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean), by Christian Reitwiessner, Samuel Schlesinger, Aviv Bar Natan.
+`Cslib.Computability.Machines.Turing.MultiTape.Configuration`, in [Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean), by Christian Reitwiessner, Samuel Schlesinger, Aviv Bar Natan.
 
 > Configurations of a multi-tape Turing machine with a read-only input tape, `k` work tapes and one
 > write-only output tape, together with what a single transition does to a configuration.
@@ -59,7 +59,7 @@ proof: formalized
 > * [C. Papadimitriou, *Computational Complexity*][Papadimitriou94]
 > * [S. Arora, B. Barak, *Computational Complexity: A Modern Approach*][AroraBarak09]
 
-`Turing.Action` (structure, [line 79](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L79))
+`Turing.Action` (structure, [line 79](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L79))
 
 > What a machine does in one step.
 
@@ -75,7 +75,7 @@ structure Action (k : ℕ) (Symbol State : Type*) where
   state : Option State
 ```
 
-`Turing.Cfg` (structure, [line 98](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L98))
+`Turing.Cfg` (structure, [line 98](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L98))
 
 > The configurations of a Turing machine is relative to the input of the machine and consist of:
 > - an `Option`al state (or none for the halting state),
@@ -99,7 +99,7 @@ structure Cfg (k : ℕ) (Symbol State : Type*) (input : List Symbol) where
 deriving Inhabited
 ```
 
-`Turing.Cfg.ext_zero_tapes` (lemma, [line 113](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L113))
+`Turing.Cfg.ext_zero_tapes` (lemma, [line 113](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L113))
 
 > Two configurations with no work tapes are equal when their state, input head and output
 > agree.
@@ -111,7 +111,7 @@ lemma Cfg.ext_zero_tapes {Symbol State : Type*} {input : List Symbol}
     cfg₁ = cfg₂
 ```
 
-`Turing.moveInputPos` (definition, [line 126](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L126))
+`Turing.moveInputPos` (definition, [line 126](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L126))
 
 > Attempt to move the input tape head.
 > The machine can only read one empty cell outside of the input,
@@ -124,28 +124,28 @@ lemma Cfg.ext_zero_tapes {Symbol State : Type*} {input : List Symbol}
 def moveInputPos {n : ℕ} (pos : Fin (n + 2)) (m : SignType) : Fin (n + 2)
 ```
 
-`Turing.moveInputPos_zero` (lemma, [line 131](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L131))
+`Turing.moveInputPos_zero` (lemma, [line 131](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L131))
 
 ```lean
 lemma moveInputPos_zero {n : ℕ} (pos : Fin (n + 2)) :
     moveInputPos pos 0 = pos
 ```
 
-`Turing.moveInputPos_leftBoundary` (lemma, [line 137](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L137))
+`Turing.moveInputPos_leftBoundary` (lemma, [line 137](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L137))
 
 ```lean
 lemma moveInputPos_leftBoundary {n : ℕ} :
     moveInputPos (0 : Fin (n + 2)) (-1) = 0
 ```
 
-`Turing.moveInputPos_rightBoundary` (lemma, [line 143](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L143))
+`Turing.moveInputPos_rightBoundary` (lemma, [line 143](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L143))
 
 ```lean
 lemma moveInputPos_rightBoundary {n : ℕ} :
     moveInputPos (⟨n + 1, by omega⟩ : Fin (n + 2)) 1 = ⟨n + 1, by omega⟩
 ```
 
-`Turing.moveInputPos_neg_of_ne_left` (lemma, [line 149](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L149))
+`Turing.moveInputPos_neg_of_ne_left` (lemma, [line 149](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L149))
 
 > A left move away from the left input boundary decrements the native input position.
 
@@ -154,7 +154,7 @@ lemma moveInputPos_neg_of_ne_left {n : ℕ} (p : Fin (n + 2)) (h : p ≠ 0) :
     moveInputPos p .neg = ⟨p.val - 1, by have := p.isLt; omega⟩
 ```
 
-`Turing.moveInputPos_pos_of_ne_right` (lemma, [line 157](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L157))
+`Turing.moveInputPos_pos_of_ne_right` (lemma, [line 157](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L157))
 
 > A right move away from the right input boundary increments the native input position.
 
@@ -163,7 +163,7 @@ lemma moveInputPos_pos_of_ne_right {n : ℕ} (p : Fin (n + 2)) (h : p.val ≠ n 
     moveInputPos p .pos = ⟨p.val + 1, by have := p.isLt; omega⟩
 ```
 
-`Turing.val_moveInputPos_eq` (lemma, [line 167](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L167))
+`Turing.val_moveInputPos_eq` (lemma, [line 167](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L167))
 
 > The value of the input head after a move, as a clamped integer. `omega`-friendly.
 
@@ -172,7 +172,7 @@ lemma val_moveInputPos_eq {n : ℕ} (pos : Fin (n + 2)) (m : SignType) :
     ((moveInputPos pos m).val : ℤ) = min ((n : ℤ) + 1) (max 0 ((pos.val : ℤ) + (m.cast : ℤ)))
 ```
 
-`Turing.val_moveInputPos_le` (lemma, [line 172](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L172))
+`Turing.val_moveInputPos_le` (lemma, [line 172](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L172))
 
 > The input head moves by at most one position.
 
@@ -181,7 +181,7 @@ lemma val_moveInputPos_le {n : ℕ} (pos : Fin (n + 2)) (m : SignType) :
     (moveInputPos pos m).val ≤ pos.val + 1
 ```
 
-`Turing.Cfg.inputSymbol` (definition, [line 180](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L180))
+`Turing.Cfg.inputSymbol` (definition, [line 180](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L180))
 
 > The symbol currently under the input tape head.
 
@@ -189,7 +189,7 @@ lemma val_moveInputPos_le {n : ℕ} (pos : Fin (n + 2)) (m : SignType) :
 def Cfg.inputSymbol (cfg : Cfg k Symbol State input) : Option Symbol
 ```
 
-`Turing.inputSymbol_eq_none_of_boundary` (lemma, [line 186](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L186))
+`Turing.inputSymbol_eq_none_of_boundary` (lemma, [line 186](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L186))
 
 > At either boundary of the input, the head reads a blank.
 
@@ -199,7 +199,7 @@ lemma inputSymbol_eq_none_of_boundary {cfg : Cfg k Symbol State input}
     cfg.inputSymbol = none
 ```
 
-`Turing.inputSymbolInner` (lemma, [line 192](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L192))
+`Turing.inputSymbolInner` (lemma, [line 192](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L192))
 
 ```lean
 lemma inputSymbolInner {cfg : Cfg k Symbol State input} (p : ℕ)
@@ -208,7 +208,7 @@ lemma inputSymbolInner {cfg : Cfg k Symbol State input} (p : ℕ)
     cfg.inputSymbol = some input[p]
 ```
 
-`Turing.Cfg.workTapeSymbols` (definition, [line 199](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L199))
+`Turing.Cfg.workTapeSymbols` (definition, [line 199](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L199))
 
 > The symbol read by work tape `i`.
 
@@ -216,7 +216,7 @@ lemma inputSymbolInner {cfg : Cfg k Symbol State input} (p : ℕ)
 def Cfg.workTapeSymbols (cfg : Cfg k Symbol State input) (i : Fin k) : Option Symbol
 ```
 
-`Turing.HeadSymbols` (structure, [line 204](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L204))
+`Turing.HeadSymbols` (structure, [line 204](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L204))
 
 > The symbols under the heads of a machine with `k` work tapes, which its transitions read.
 
@@ -228,7 +228,7 @@ structure HeadSymbols (k : ℕ) (Symbol : Type*) where
   workTapeSymbols : Fin k → Option Symbol
 ```
 
-`Turing.Cfg.headSymbols` (definition, [line 212](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L212))
+`Turing.Cfg.headSymbols` (definition, [line 212](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L212))
 
 > The symbols under the heads of a configuration.
 
@@ -236,7 +236,7 @@ structure HeadSymbols (k : ℕ) (Symbol : Type*) where
 def Cfg.headSymbols (cfg : Cfg k Symbol State input) : HeadSymbols k Symbol
 ```
 
-`Turing.Cfg.Halted` (abbreviation, [line 216](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L216))
+`Turing.Cfg.Halted` (abbreviation, [line 216](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L216))
 
 > A configuration is halted when it has no state to continue from.
 
@@ -244,7 +244,7 @@ def Cfg.headSymbols (cfg : Cfg k Symbol State input) : HeadSymbols k Symbol
 abbrev Cfg.Halted (cfg : Cfg k Symbol State input) : Prop
 ```
 
-`Turing.Cfg.prependOutput` (definition, [line 220](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L220))
+`Turing.Cfg.prependOutput` (definition, [line 220](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L220))
 
 > The same configuration with a word prepended to the output tape. A machine never reads its
 > output, so prepending to it preserves steps: cf. `Turing.MultiTapeNTM.prependOutputHom`.
@@ -254,7 +254,7 @@ def Cfg.prependOutput (c : Cfg k Symbol State input) (pre : List Symbol) :
     Cfg k Symbol State input
 ```
 
-`Turing.Cfg.withState` (definition, [line 225](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L225))
+`Turing.Cfg.withState` (definition, [line 225](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L225))
 
 > The same configuration in a different control state, possibly of a different state type.
 
@@ -263,7 +263,7 @@ def Cfg.withState (cfg : Cfg k Symbol State input)
     {State' : Type*} (q : Option State') : Cfg k Symbol State' input
 ```
 
-`Turing.Cfg.mapState` (definition, [line 232](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L232))
+`Turing.Cfg.mapState` (definition, [line 232](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L232))
 
 > Remap the (optional) state of a configuration through `φ`, leaving the input head, the work
 > tapes, the work-tape heads and the output alone. Control-flow combinators such as `seq` embed a
@@ -274,7 +274,7 @@ def Cfg.mapState {State' : Type*} (φ : Option State → Option State')
     (c : Cfg k Symbol State input) : Cfg k Symbol State' input
 ```
 
-`Turing.Cfg.init` (definition, [line 238](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L238))
+`Turing.Cfg.init` (definition, [line 238](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L238))
 
 > The initial configuration for a starting state and an input string.
 
@@ -282,7 +282,7 @@ def Cfg.mapState {State' : Type*} (φ : Option State → Option State')
 def Cfg.init (q₀ : State) (input : List Symbol) : Cfg k Symbol State input
 ```
 
-`Turing.Action.apply` (definition, [line 247](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L247))
+`Turing.Action.apply` (definition, [line 247](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L247))
 
 > The effect of an action on a configuration: move the input head, write and move on the work tapes,
 > append the emitted symbol to the output tape, and go to the successor state. This is the part of a
@@ -293,7 +293,7 @@ def Action.apply (action : Action k Symbol State) (cfg : Cfg k Symbol State inpu
     Cfg k Symbol State input
 ```
 
-`Turing.workTapePos_apply_le` (lemma, [line 258](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L258))
+`Turing.workTapePos_apply_le` (lemma, [line 258](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L258))
 
 > A work tape head moves by at most one cell when an action is applied.
 
@@ -309,5 +309,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Configuration.json)

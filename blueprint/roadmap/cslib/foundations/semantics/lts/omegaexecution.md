@@ -7,9 +7,9 @@ proof: formalized
 
 # Infinite executions of LTS
 
-`Cslib.Foundations.Semantics.LTS.OmegaExecution`, in [Cslib/Foundations/Semantics/LTS/OmegaExecution.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean), by Fabrizio Montesi, Ching-Tsun Chou.
+`Cslib.Foundations.Semantics.LTS.OmegaExecution`, in [Cslib/Foundations/Semantics/LTS/OmegaExecution.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean), by Fabrizio Montesi, Ching-Tsun Chou.
 
-`Cslib.LTS.OmegaExecution` (definition, [line 25](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L25))
+`Cslib.LTS.OmegaExecution` (definition, [line 25](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L25))
 
 > An infinite execution is conceptually an infinite sequence of transitions. But it is
 > technically more convenient to separate the states and the labels into two ω-sequences.
@@ -19,7 +19,7 @@ def OmegaExecution (lts : LTS State Label)
     (ss : ωSequence State) (μs : ωSequence Label) : Prop
 ```
 
-`Cslib.LTS.OmegaExecution.extract_execution` (theorem, [line 32](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L32))
+`Cslib.LTS.OmegaExecution.extract_execution` (theorem, [line 32](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L32))
 
 > Any finite execution extracted from an infinite execution is valid.
 
@@ -29,7 +29,7 @@ theorem OmegaExecution.extract_execution
     lts.Execution (ss n) (μs.extract n m) (ss m) (ss.extract n (m + 1))
 ```
 
-`Cslib.LTS.OmegaExecution.extract_mTr` (theorem, [line 38](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L38))
+`Cslib.LTS.OmegaExecution.extract_mTr` (theorem, [line 38](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L38))
 
 > Any multistep transition extracted from an infinite execution is valid.
 
@@ -39,7 +39,7 @@ theorem OmegaExecution.extract_mTr
     lts.MTr (ss n) (μs.extract n m) (ss m)
 ```
 
-`Cslib.LTS.OmegaExecution.cons` (theorem, [line 43](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L43))
+`Cslib.LTS.OmegaExecution.cons` (theorem, [line 43](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L43))
 
 > Prepends an infinite execution with a transition.
 
@@ -49,7 +49,7 @@ theorem OmegaExecution.cons (htr : lts.Tr s μ t)
     lts.OmegaExecution (s ::ω ss) (μ ::ω μs)
 ```
 
-`Cslib.LTS.OmegaExecution.prepend_execution_tr` (theorem, [line 50](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L50))
+`Cslib.LTS.OmegaExecution.prepend_execution_tr` (theorem, [line 50](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L50))
 
 > Prepend an infinite execution with a finite one, bridged with a transition.
 
@@ -59,7 +59,7 @@ theorem OmegaExecution.prepend_execution_tr (he_head : lts.Execution s μl t sl)
     lts.OmegaExecution (sl ++ω ss) (μl ++ω μ ::ω μs)
 ```
 
-`Cslib.LTS.OmegaExecution.prepend_execution` (theorem, [line 60](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L60))
+`Cslib.LTS.OmegaExecution.prepend_execution` (theorem, [line 60](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L60))
 
 > Glue a finite execution and an infinite execution together on a common first and last state.
 
@@ -69,7 +69,7 @@ theorem OmegaExecution.prepend_execution (he_head : lts.Execution s μl t sl)
     lts.OmegaExecution (sl ++ω ss.tail) (μl ++ω μs)
 ```
 
-`Cslib.LTS.OmegaExecution.append` (theorem, [line 70](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L70))
+`Cslib.LTS.OmegaExecution.append` (theorem, [line 70](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L70))
 
 > Prepends an infinite execution with a finite execution.
 
@@ -80,7 +80,7 @@ theorem OmegaExecution.append
       ss' 0 = s ∧ ss' μl.length = t ∧ ss'.drop μl.length = ss
 ```
 
-`Cslib.LTS.OmegaExecution.flatten_execution'` (theorem, [line 87](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L87))
+`Cslib.LTS.OmegaExecution.flatten_execution'` (theorem, [line 87](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L87))
 
 > Concatenating an infinite sequence of finite executions, with an explicit expression for the
 > state sequence.
@@ -93,7 +93,7 @@ theorem OmegaExecution.flatten_execution' [Inhabited Label] [Inhabited State]
     lts.OmegaExecution (sls.map List.dropLast).flatten μls.flatten
 ```
 
-`Cslib.LTS.OmegaExecution.flatten_execution` (theorem, [line 114](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L114))
+`Cslib.LTS.OmegaExecution.flatten_execution` (theorem, [line 114](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L114))
 
 > Concatenating an infinite sequence of finite executions.
 
@@ -106,7 +106,7 @@ theorem OmegaExecution.flatten_execution [Inhabited Label]
       ∀ k, ss.extract (μls.cumLen k) (μls.cumLen (k + 1)) = (sls k).take (μls k).length
 ```
 
-`Cslib.LTS.OmegaExecution.flatten_mTr` (theorem, [line 128](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L128))
+`Cslib.LTS.OmegaExecution.flatten_mTr` (theorem, [line 128](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean#L128))
 
 > Concatenating an infinite sequence of multistep transitions.
 
@@ -124,5 +124,5 @@ theorem OmegaExecution.flatten_mTr [Inhabited Label]
 
 ## Sources
 
-- [Cslib/Foundations/Semantics/LTS/OmegaExecution.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean)
+- [Cslib/Foundations/Semantics/LTS/OmegaExecution.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/OmegaExecution.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.LTS.OmegaExecution.json)

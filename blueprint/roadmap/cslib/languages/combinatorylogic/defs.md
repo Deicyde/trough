@@ -7,7 +7,7 @@ proof: formalized
 
 # SKI Combinatory Logic
 
-`Cslib.Languages.CombinatoryLogic.Defs`, in [Cslib/Languages/CombinatoryLogic/Defs.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean), by Thomas Waring.
+`Cslib.Languages.CombinatoryLogic.Defs`, in [Cslib/Languages/CombinatoryLogic/Defs.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean), by Thomas Waring.
 
 > This file defines the syntax and operational semantics (reduction rules) of combinatory logic,
 > using the SKI basis.
@@ -30,7 +30,7 @@ proof: formalized
 > - <https://en.m.wikipedia.org/wiki/SKI_combinator_calculus>
 > - <https://en.m.wikipedia.org/wiki/Combinatory_logic>
 
-`Cslib.SKI` (inductive type, [line 43](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean#L43))
+`Cslib.SKI` (inductive type, [line 43](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean#L43))
 
 > An SKI expression is built from the primitive combinators `S`, `K` and `I`, and application.
 
@@ -47,7 +47,7 @@ inductive SKI where
 deriving Repr, DecidableEq
 ```
 
-`Cslib.SKI.applyList` (definition, [line 60](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean#L60))
+`Cslib.SKI.applyList` (definition, [line 60](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean#L60))
 
 > Apply a term to a list of terms
 
@@ -55,14 +55,14 @@ deriving Repr, DecidableEq
 def applyList (f : SKI) (xs : List SKI) : SKI
 ```
 
-`Cslib.SKI.applyList_concat` (lemma, [line 62](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean#L62))
+`Cslib.SKI.applyList_concat` (lemma, [line 62](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean#L62))
 
 ```lean
 lemma applyList_concat (f : SKI) (ys : List SKI) (z : SKI) :
     f.applyList (ys ++ [z]) = f.applyList ys ⬝ z
 ```
 
-`Cslib.SKI.size` (definition, [line 67](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean#L67))
+`Cslib.SKI.size` (definition, [line 67](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean#L67))
 
 > The size of an SKI term is its number of combinators.
 
@@ -72,7 +72,7 @@ def size : SKI → Nat
 
 > ### Reduction relations between SKI terms
 
-`Cslib.SKI.Red` (inductive type, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean#L77))
+`Cslib.SKI.Red` (inductive type, [line 77](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean#L77))
 
 > Single-step reduction of SKI terms
 
@@ -90,76 +90,76 @@ inductive Red : SKI → SKI → Prop where
   | red_tail (x y y' : SKI) (_ : Red y y') : Red (x ⬝ y) (x ⬝ y')
 ```
 
-`Cslib.SKI.Red.ne` (lemma, [line 92](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean#L92))
+`Cslib.SKI.Red.ne` (lemma, [line 92](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean#L92))
 
 ```lean
 lemma Red.ne {x y : SKI} : (x ⭢ y) → x ≠ y
 ```
 
-`Cslib.SKI.MRed.S` (theorem, [line 99](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean#L99))
+`Cslib.SKI.MRed.S` (theorem, [line 99](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean#L99))
 
 ```lean
 theorem MRed.S (x y z : SKI) : (S ⬝ x ⬝ y ⬝ z) ↠ (x ⬝ z ⬝ (y ⬝ z))
 ```
 
-`Cslib.SKI.MRed.K` (theorem, [line 100](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean#L100))
+`Cslib.SKI.MRed.K` (theorem, [line 100](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean#L100))
 
 ```lean
 theorem MRed.K (x y : SKI) : (K ⬝ x ⬝ y) ↠ x
 ```
 
-`Cslib.SKI.MRed.I` (theorem, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean#L101))
+`Cslib.SKI.MRed.I` (theorem, [line 101](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean#L101))
 
 ```lean
 theorem MRed.I (x : SKI) : (I ⬝ x) ↠ x
 ```
 
-`Cslib.SKI.MRed.head` (theorem, [line 103](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean#L103))
+`Cslib.SKI.MRed.head` (theorem, [line 103](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean#L103))
 
 ```lean
 theorem MRed.head {a a' : SKI} (b : SKI) (h : a ↠ a') : (a ⬝ b) ↠ (a' ⬝ b)
 ```
 
-`Cslib.SKI.MRed.tail` (theorem, [line 106](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean#L106))
+`Cslib.SKI.MRed.tail` (theorem, [line 106](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean#L106))
 
 ```lean
 theorem MRed.tail (a : SKI) {b b' : SKI} (h : b ↠ b') : (a ⬝ b) ↠ (a ⬝ b')
 ```
 
-`Cslib.SKI.parallel_mRed` (lemma, [line 109](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean#L109))
+`Cslib.SKI.parallel_mRed` (lemma, [line 109](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean#L109))
 
 ```lean
 lemma parallel_mRed {a a' b b' : SKI} (ha : a ↠ a') (hb : b ↠ b') :
     (a ⬝ b) ↠ (a' ⬝ b')
 ```
 
-`Cslib.SKI.parallel_red` (lemma, [line 113](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean#L113))
+`Cslib.SKI.parallel_red` (lemma, [line 113](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean#L113))
 
 ```lean
 lemma parallel_red {a a' b b' : SKI} (ha : a ⭢ a') (hb : b ⭢ b') : (a ⬝ b) ↠ (a' ⬝ b')
 ```
 
-`Cslib.SKI.join_mRed_head` (theorem, [line 116](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean#L116))
+`Cslib.SKI.join_mRed_head` (theorem, [line 116](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean#L116))
 
 ```lean
 theorem join_mRed_head {x x' : SKI} (y : SKI) :
     Join (ReflTransGen Red) x x' → Join (ReflTransGen Red) (x ⬝ y) (x' ⬝ y)
 ```
 
-`Cslib.SKI.mJoin_red_head` (alias, [line 120](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean#L120))
+`Cslib.SKI.mJoin_red_head` (alias, [line 120](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean#L120))
 
 ```lean
 alias mJoin_red_head
 ```
 
-`Cslib.SKI.join_mRed_tail` (theorem, [line 122](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean#L122))
+`Cslib.SKI.join_mRed_tail` (theorem, [line 122](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean#L122))
 
 ```lean
 theorem join_mRed_tail (x : SKI) {y y' : SKI} :
     Join (ReflTransGen Red) y y' → Join (ReflTransGen Red) (x ⬝ y) (x ⬝ y')
 ```
 
-`Cslib.SKI.mJoin_red_tail` (alias, [line 126](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean#L126))
+`Cslib.SKI.mJoin_red_tail` (alias, [line 126](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean#L126))
 
 ```lean
 alias mJoin_red_tail
@@ -171,5 +171,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Languages/CombinatoryLogic/Defs.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Defs.lean)
+- [Cslib/Languages/CombinatoryLogic/Defs.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Defs.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Languages.CombinatoryLogic.Defs.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # λ-calculus (Stlc/Basic)
 
-`Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.Basic`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean), by Chris Henson.
+`Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.Basic`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean), by Chris Henson.
 
 > The simply typed λ-calculus, with a locally nameless representation of syntax.
 >
@@ -17,7 +17,7 @@ proof: formalized
 > * See also <https://www.cis.upenn.edu/~plclub/popl08-tutorial/code/>, from which
 >   this is partially adapted
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.Ty` (inductive type, [line 39](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L39))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.Ty` (inductive type, [line 39](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L39))
 
 > Types of the simply typed lambda calculus.
 
@@ -29,7 +29,7 @@ inductive Ty (Base : Type v)
   | arrow : Ty Base → Ty Base → Ty Base
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.Typing` (inductive type, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L51))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.Typing` (inductive type, [line 51](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L51))
 
 > An extrinsic typing derivation for locally nameless terms.
 
@@ -43,7 +43,7 @@ inductive Typing : Context Var (Ty Base) → Term Var → Ty Base → Prop
   | app : Typing Γ t (σ ⤳ τ) → Typing Γ t' σ → Typing Γ (app t t') τ
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.Typing.perm` (theorem, [line 70](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L70))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.Typing.perm` (theorem, [line 70](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L70))
 
 > Typing is preserved on permuting a context.
 
@@ -51,7 +51,7 @@ inductive Typing : Context Var (Ty Base) → Term Var → Ty Base → Prop
 theorem perm (ht : Γ ⊢ t ∶ τ) (hperm : Γ.Perm Δ) : Δ ⊢ t ∶ τ
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.Typing.weaken_aux` (lemma, [line 76](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L76))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.Typing.weaken_aux` (lemma, [line 76](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L76))
 
 > Weakening of a typing derivation with an appended context.
 
@@ -59,7 +59,7 @@ theorem perm (ht : Γ ⊢ t ∶ τ) (hperm : Γ.Perm Δ) : Δ ⊢ t ∶ τ
 lemma weaken_aux (der : Γ ++ Δ ⊢ t ∶ τ) : (Γ ++ Θ ++ Δ)✓ → (Γ ++ Θ ++ Δ) ⊢ t ∶ τ
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.Typing.weaken` (lemma, [line 83](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L83))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.Typing.weaken` (lemma, [line 83](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L83))
 
 > Weakening of a typing derivation by an additional context.
 
@@ -67,7 +67,7 @@ lemma weaken_aux (der : Γ ++ Δ ⊢ t ∶ τ) : (Γ ++ Θ ++ Δ)✓ → (Γ ++ 
 lemma weaken (der : Γ ⊢ t ∶ τ) (ok : (Γ ++ Δ)✓) : Γ ++ Δ ⊢ t ∶ τ
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.Typing.lc` (lemma, [line 89](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L89))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.Typing.lc` (lemma, [line 89](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L89))
 
 > Typing derivations exist only for locally closed terms.
 
@@ -75,7 +75,7 @@ lemma weaken (der : Γ ⊢ t ∶ τ) (ok : (Γ ++ Δ)✓) : Γ ++ Δ ⊢ t ∶ �
 lemma lc (der : Γ ⊢ t ∶ τ) : t.LC
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.Typing.subst_aux` (lemma, [line 99](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L99))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.Typing.subst_aux` (lemma, [line 99](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L99))
 
 > Substitution for a context weakened by a single type between appended contexts.
 
@@ -84,7 +84,7 @@ lemma subst_aux (h : Δ ++ ⟨x, σ⟩ :: Γ ⊢ t ∶ τ) (der : Γ ⊢ s ∶ �
     Δ ++ Γ ⊢ t[x := s] ∶ τ
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.Typing.typing_subst_head` (lemma, [line 116](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L116))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.Typing.typing_subst_head` (lemma, [line 116](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L116))
 
 > Substitution for a context weakened by a single type.
 
@@ -93,7 +93,7 @@ lemma typing_subst_head (weak : ⟨x, σ⟩ :: Γ ⊢ t ∶ τ) (der : Γ ⊢ s 
     Γ ⊢ (t[x := s]) ∶ τ
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.Typing.preservation_open` (theorem, [line 121](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L121))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.Typing.preservation_open` (theorem, [line 121](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean#L121))
 
 > Typing preservation for opening.
 
@@ -114,5 +114,5 @@ theorem preservation_open {xs : Finset Var}
 
 ## Sources
 
-- [Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean)
+- [Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Basic.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.Basic.json)

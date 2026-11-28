@@ -7,9 +7,9 @@ proof: formalized
 
 # Making a nondeterministic automaton total
 
-`Cslib.Computability.Automata.NA.Total`, in [Cslib/Computability/Automata/NA/Total.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Total.lean), by Ching-Tsun Chou.
+`Cslib.Computability.Automata.NA.Total`, in [Cslib/Computability/Automata/NA/Total.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Total.lean), by Ching-Tsun Chou.
 
-`Cslib.Automata.NA.totalize` (definition, [line 25](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Total.lean#L25))
+`Cslib.Automata.NA.totalize` (definition, [line 25](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Total.lean#L25))
 
 > `NA.totalize` makes the original NA total by replacing its LTS with `LTS.totalize`
 > and its starting states with their lifted non-sink versions.
@@ -18,7 +18,7 @@ proof: formalized
 def totalize (na : NA State Symbol) : NA (Option State) Symbol
 ```
 
-`Cslib.Automata.NA.totalize_run_mtr` (theorem, [line 33](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Total.lean#L33))
+`Cslib.Automata.NA.totalize_run_mtr` (theorem, [line 33](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Total.lean#L33))
 
 > In an infinite execution of `NA.totalize`, as long as the NA stays in a non-sink state,
 > the execution so far corresponds to a finite execution of the original NA.
@@ -29,7 +29,7 @@ theorem totalize_run_mtr {xs : ωSequence Symbol} {ss : ωSequence (Option State
     ∃ s t, na.MTr s (xs.take n) t ∧ s ∈ na.start ∧ ss 0 = some s ∧ ss n = some t
 ```
 
-`Cslib.Automata.NA.totalize_mtr_run` (theorem, [line 46](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Total.lean#L46))
+`Cslib.Automata.NA.totalize_mtr_run` (theorem, [line 46](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Total.lean#L46))
 
 > Any finite execution of the original NA can be extended to an infinite execution of
 > `NA.totalize`, provided that the alphabet is inbabited.
@@ -40,7 +40,7 @@ theorem totalize_mtr_run [Inhabited Symbol] {xl : List Symbol} {s t : State}
     ∃ xs ss, na.totalize.Run (xl ++ω xs) ss ∧ ss 0 = some s ∧ ss xl.length = some t
 ```
 
-`Cslib.Automata.NA.FinAcc.totalize_language_eq` (theorem, [line 55](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Total.lean#L55))
+`Cslib.Automata.NA.FinAcc.totalize_language_eq` (theorem, [line 55](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Total.lean#L55))
 
 > `NA.totalize` and the original NA accept the same language of finite words,
 > as long as the accepting states are also lifted in the obvious way.
@@ -57,5 +57,5 @@ theorem totalize_language_eq {na : FinAcc State Symbol} :
 
 ## Sources
 
-- [Cslib/Computability/Automata/NA/Total.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Total.lean)
+- [Cslib/Computability/Automata/NA/Total.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Total.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.NA.Total.json)

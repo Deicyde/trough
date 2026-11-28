@@ -7,7 +7,7 @@ proof: formalized
 
 # Merge Sort as a Query Program
 
-`Cslib.Algorithms.Lean.Query.Sort.Merge.Defs`, in [Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean), by Kim Morrison, Shreyas Srinivas, Eric Wieser, Sorrachai Yingchareonthawornchai.
+`Cslib.Algorithms.Lean.Query.Sort.Merge.Defs`, in [Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean), by Kim Morrison, Shreyas Srinivas, Eric Wieser, Sorrachai Yingchareonthawornchai.
 
 > Merge sort implemented as a `FreeM (LEQuery α)`, making all comparison queries explicit.
 > The definitions mirror `List.merge` and `List.mergeSort` exactly: the list is split into
@@ -18,7 +18,7 @@ proof: formalized
 > The recursive calls of `mergeSort` are not structural, since the two halves are not
 > syntactic subterms, and are justified separately using their lengths.
 
-`List.split` (definition, [line 34](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L34))
+`List.split` (definition, [line 34](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L34))
 
 > Split a list into contiguous halves; if the length is odd, the first half is one element
 > longer. This agrees with `List.MergeSort.Internal.splitInTwo`, so that `mergeSort` agrees
@@ -28,41 +28,41 @@ proof: formalized
 def split (xs : List α) : List α × List α
 ```
 
-`List.split_fst_length_eq` (theorem, [line 37](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L37))
+`List.split_fst_length_eq` (theorem, [line 37](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L37))
 
 ```lean
 theorem split_fst_length_eq (xs : List α) :
     (split xs).1.length = (xs.length + 1) / 2
 ```
 
-`List.split_snd_length_eq` (theorem, [line 42](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L42))
+`List.split_snd_length_eq` (theorem, [line 42](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L42))
 
 ```lean
 theorem split_snd_length_eq (xs : List α) :
     (split xs).2.length = xs.length / 2
 ```
 
-`List.split_fst_append_split_snd` (theorem, [line 47](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L47))
+`List.split_fst_append_split_snd` (theorem, [line 47](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L47))
 
 ```lean
 theorem split_fst_append_split_snd (xs : List α) : (split xs).1 ++ (split xs).2 = xs
 ```
 
-`List.splitInTwo_fst` (theorem, [line 52](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L52))
+`List.splitInTwo_fst` (theorem, [line 52](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L52))
 
 ```lean
 theorem splitInTwo_fst (xs : {l : List α // l.length = n}) :
     (List.MergeSort.Internal.splitInTwo xs).1 = xs.val.split.1
 ```
 
-`List.splitInTwo_snd` (theorem, [line 56](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L56))
+`List.splitInTwo_snd` (theorem, [line 56](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L56))
 
 ```lean
 theorem splitInTwo_snd (xs : {l : List α // l.length = n}) :
     (List.MergeSort.Internal.splitInTwo xs).2 = xs.val.split.2
 ```
 
-`Cslib.Query.merge` (abbreviation, [line 65](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L65))
+`Cslib.Query.merge` (abbreviation, [line 65](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L65))
 
 > Merge two sorted lists using comparison queries.
 
@@ -70,7 +70,7 @@ theorem splitInTwo_snd (xs : {l : List α // l.length = n}) :
 abbrev merge (xs ys : List α) : FreeM (LEQuery α) (List α)
 ```
 
-`Cslib.Query.mergeSort` (abbreviation, [line 69](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L69))
+`Cslib.Query.mergeSort` (abbreviation, [line 69](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L69))
 
 > Sort a list using merge sort with comparison queries.
 
@@ -85,5 +85,5 @@ abbrev mergeSort (xs : List α) : FreeM (LEQuery α) (List α)
 
 ## Sources
 
-- [Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean)
+- [Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean)
 - [Declaration ledger](../../../../../../../sources/cslib/Cslib.Algorithms.Lean.Query.Sort.Merge.Defs.json)

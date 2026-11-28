@@ -7,7 +7,7 @@ proof: formalized
 
 # (unbundled) morphisms of monads
 
-`Cslib.Foundations.Control.Monad.IsMonadHom`, in [Cslib/Foundations/Control/Monad/IsMonadHom.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean), by Eric Wieser.
+`Cslib.Foundations.Control.Monad.IsMonadHom`, in [Cslib/Foundations/Control/Monad/IsMonadHom.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean), by Eric Wieser.
 
 > This file defines predicates on functions `f : ∀ {α}, m α → n α` that preserve functor, applicative,
 > monadic, and alternative structure (`IsFunctorHom`, `IsApplicativeHom`, `IsMonadHom`,
@@ -17,7 +17,7 @@ proof: formalized
 > defined by the corresponding typeclasses, with helper constructors that dismiss the derived
 > operators when the structures are lawful.
 
-`Id.pure_injective` (theorem, [line 29](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L29))
+`Id.pure_injective` (theorem, [line 29](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L29))
 
 ```lean
 theorem _root_.Id.pure_injective : Function.Injective (pure : α → Id α)
@@ -25,7 +25,7 @@ theorem _root_.Id.pure_injective : Function.Injective (pure : α → Id α)
 
 > ### Functor Homomorphisms
 
-`Cslib.IsFunctorHom` (structure, [line 39](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L39))
+`Cslib.IsFunctorHom` (structure, [line 39](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L39))
 
 > A function `f` is a morphism of functors if it preserves `<$>` and `Functor.mapConst`.
 
@@ -35,7 +35,7 @@ structure IsFunctorHom (m n) [Functor m] [Functor n] (f : ∀ {α}, m α → n �
   map_mapConst {α β} (a : α) (x : m β) : f (Functor.mapConst a x) = Functor.mapConst a (f x)
 ```
 
-`Cslib.IsFunctorHom.mk'` (theorem, [line 56](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L56))
+`Cslib.IsFunctorHom.mk'` (theorem, [line 56](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L56))
 
 > Construct an `IsFunctorHom` for lawful functors from `map_map`.
 
@@ -45,13 +45,13 @@ theorem mk' [LawfulFunctor m] [LawfulFunctor n] {f : ∀ {α}, m α → n α}
     IsFunctorHom m n f
 ```
 
-`Cslib.IsFunctorHom.id` (theorem, [line 63](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L63))
+`Cslib.IsFunctorHom.id` (theorem, [line 63](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L63))
 
 ```lean
 protected theorem id : IsFunctorHom m m id
 ```
 
-`Cslib.IsFunctorHom.comp` (theorem, [line 67](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L67))
+`Cslib.IsFunctorHom.comp` (theorem, [line 67](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L67))
 
 ```lean
 protected theorem comp {f : ∀ {α}, n α → p α} {g : ∀ {α}, m α → n α}
@@ -61,7 +61,7 @@ protected theorem comp {f : ∀ {α}, n α → p α} {g : ∀ {α}, m α → n �
 
 > ### Applicative Homomorphisms
 
-`Cslib.IsApplicativeHom` (structure, [line 81](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L81))
+`Cslib.IsApplicativeHom` (structure, [line 81](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L81))
 
 > A function `f` is a morphism of applicatives if it preserves `pure`, `<$>`, `<*>`, `<*`, and `*>`.
 
@@ -77,7 +77,7 @@ structure IsApplicativeHom (m n) [Applicative m] [Applicative n] (f : ∀ {α}, 
       f (SeqRight.seqRight x y) = SeqRight.seqRight (f x) (f <| y ·)
 ```
 
-`Cslib.IsApplicativeHom.mk'` (theorem, [line 132](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L132))
+`Cslib.IsApplicativeHom.mk'` (theorem, [line 132](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L132))
 
 > Construct an `IsApplicativeHom` for lawful applicatives from `map_pure` and `map_seq`.
 
@@ -89,13 +89,13 @@ theorem mk' [LawfulApplicative m] [LawfulApplicative n] {f : ∀ {α}, m α → 
     IsApplicativeHom m n f
 ```
 
-`Cslib.IsApplicativeHom.id` (theorem, [line 146](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L146))
+`Cslib.IsApplicativeHom.id` (theorem, [line 146](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L146))
 
 ```lean
 protected theorem id : IsApplicativeHom m m id
 ```
 
-`Cslib.IsApplicativeHom.comp` (theorem, [line 153](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L153))
+`Cslib.IsApplicativeHom.comp` (theorem, [line 153](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L153))
 
 ```lean
 protected theorem comp {f : ∀ {α}, n α → p α} {g : ∀ {α}, m α → n α}
@@ -105,7 +105,7 @@ protected theorem comp {f : ∀ {α}, n α → p α} {g : ∀ {α}, m α → n �
 
 > ### Monad Homomorphisms
 
-`Cslib.IsMonadHom` (structure, [line 170](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L170))
+`Cslib.IsMonadHom` (structure, [line 170](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L170))
 
 > A function `f` is a morphism of monads if it preserves `pure`, `>>=`, `<$>`, `<*>`, `<*`, and `*>`.
 
@@ -115,7 +115,7 @@ structure IsMonadHom (m n) [Monad m] [Monad n] (f : ∀ {α}, m α → n α) : P
   map_bind {α β} (x : m α) (y : α → m β) : f (x >>= y) = f x >>= (f <| y ·)
 ```
 
-`Cslib.IsMonadHom.mk'` (theorem, [line 199](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L199))
+`Cslib.IsMonadHom.mk'` (theorem, [line 199](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L199))
 
 > Construct an `IsMonadHom` for lawful monads from `map_pure` and `map_bind`.
 
@@ -126,13 +126,13 @@ theorem mk' [LawfulMonad m] [LawfulMonad n] {f : ∀ {α}, m α → n α}
     IsMonadHom m n f
 ```
 
-`Cslib.IsMonadHom.id` (theorem, [line 207](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L207))
+`Cslib.IsMonadHom.id` (theorem, [line 207](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L207))
 
 ```lean
 protected theorem id : IsMonadHom m m id
 ```
 
-`Cslib.IsMonadHom.comp` (theorem, [line 211](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L211))
+`Cslib.IsMonadHom.comp` (theorem, [line 211](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L211))
 
 ```lean
 protected theorem comp {f : ∀ {α}, n α → p α} {g : ∀ {α}, m α → n α}
@@ -140,7 +140,7 @@ protected theorem comp {f : ∀ {α}, n α → p α} {g : ∀ {α}, m α → n �
     IsMonadHom m p (f ∘ g)
 ```
 
-`Cslib.IsMonadHom.monadLift` (theorem, [line 217](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L217))
+`Cslib.IsMonadHom.monadLift` (theorem, [line 217](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L217))
 
 ```lean
 protected theorem monadLift [LawfulMonad m] [LawfulMonad n]
@@ -148,7 +148,7 @@ protected theorem monadLift [LawfulMonad m] [LawfulMonad n]
     IsMonadHom m n MonadLift.monadLift
 ```
 
-`Cslib.IsMonadHom.monadLiftT` (theorem, [line 222](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L222))
+`Cslib.IsMonadHom.monadLiftT` (theorem, [line 222](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L222))
 
 ```lean
 protected theorem monadLiftT [LawfulMonad m] [LawfulMonad n]
@@ -158,7 +158,7 @@ protected theorem monadLiftT [LawfulMonad m] [LawfulMonad n]
 
 > ### Alternative Homomorphisms
 
-`Cslib.IsAlternativeHom` (structure, [line 235](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L235))
+`Cslib.IsAlternativeHom` (structure, [line 235](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L235))
 
 > A function `f` is a morphism of alternatives if it preserves `pure`, `<$>`, `<*>`, `<*`, `*>`,
 > `failure`, and `orElse`.
@@ -171,7 +171,7 @@ structure IsAlternativeHom (m n) [Alternative m] [Alternative n] (f : ∀ {α}, 
     f (HOrElse.hOrElse x y) = HOrElse.hOrElse (f x) (f <| y ·)
 ```
 
-`Cslib.IsAlternativeHom.mk'` (theorem, [line 249](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L249))
+`Cslib.IsAlternativeHom.mk'` (theorem, [line 249](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L249))
 
 > Construct an `IsAlternativeHom` for lawful applicatives from `map_pure`, `map_seq`,
 > `map_failure`, and `map_orElse`.
@@ -187,13 +187,13 @@ theorem mk' [LawfulApplicative m] [LawfulApplicative n] {f : ∀ {α}, m α → 
     IsAlternativeHom m n f
 ```
 
-`Cslib.IsAlternativeHom.id` (theorem, [line 262](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L262))
+`Cslib.IsAlternativeHom.id` (theorem, [line 262](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L262))
 
 ```lean
 protected theorem id : IsAlternativeHom m m id
 ```
 
-`Cslib.IsAlternativeHom.comp` (theorem, [line 267](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L267))
+`Cslib.IsAlternativeHom.comp` (theorem, [line 267](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L267))
 
 ```lean
 protected theorem comp {f : ∀ {α}, n α → p α} {g : ∀ {α}, m α → n α}
@@ -203,7 +203,7 @@ protected theorem comp {f : ∀ {α}, n α → p α} {g : ∀ {α}, m α → n �
 
 > ### Alternative Monad Homomorphisms
 
-`Cslib.IsAlternativeMonadHom` (structure, [line 282](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L282))
+`Cslib.IsAlternativeMonadHom` (structure, [line 282](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L282))
 
 > A function `f` is a morphism of alternative monads if it preserves monadic and alternative
 > structure.
@@ -214,7 +214,7 @@ structure IsAlternativeMonadHom (m n) [AlternativeMonad m] [AlternativeMonad n]
     extends IsMonadHom m n f, IsAlternativeHom m n f
 ```
 
-`Cslib.IsAlternativeMonadHom.mk'` (theorem, [line 293](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L293))
+`Cslib.IsAlternativeMonadHom.mk'` (theorem, [line 293](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L293))
 
 > Construct an `IsAlternativeMonadHom` for lawful monads from `map_pure`, `map_bind`,
 > `map_failure`, and `map_orElse`.
@@ -229,13 +229,13 @@ theorem mk' [LawfulMonad m] [LawfulMonad n] {f : ∀ {α}, m α → n α}
     IsAlternativeMonadHom m n f
 ```
 
-`Cslib.IsAlternativeMonadHom.id` (theorem, [line 305](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L305))
+`Cslib.IsAlternativeMonadHom.id` (theorem, [line 305](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L305))
 
 ```lean
 protected theorem id : IsAlternativeMonadHom m m id
 ```
 
-`Cslib.IsAlternativeMonadHom.comp` (theorem, [line 310](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L310))
+`Cslib.IsAlternativeMonadHom.comp` (theorem, [line 310](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L310))
 
 ```lean
 protected theorem comp {f : ∀ {α}, n α → p α} {g : ∀ {α}, m α → n α}
@@ -243,7 +243,7 @@ protected theorem comp {f : ∀ {α}, n α → p α} {g : ∀ {α}, m α → n �
     IsAlternativeMonadHom m p (f ∘ g)
 ```
 
-`Cslib.IsMonadHom.wp` (theorem, [line 320](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L320))
+`Cslib.IsMonadHom.wp` (theorem, [line 320](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean#L320))
 
 ```lean
 theorem IsMonadHom.wp [Monad m] [WPMonad m ps] : IsMonadHom m (PredTrans ps) WP.wp
@@ -255,5 +255,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Foundations/Control/Monad/IsMonadHom.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom.lean)
+- [Cslib/Foundations/Control/Monad/IsMonadHom.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Control.Monad.IsMonadHom.json)

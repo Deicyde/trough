@@ -7,7 +7,7 @@ proof: formalized
 
 # Commitment Schemes
 
-`Cslib.Crypto.Protocols.Commitment.Basic`, in [Cslib/Crypto/Protocols/Commitment/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Basic.lean), by Samuel Schlesinger.
+`Cslib.Crypto.Protocols.Commitment.Basic`, in [Cslib/Crypto/Protocols/Commitment/Basic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Basic.lean), by Samuel Schlesinger.
 
 > Basic results about information-theoretic commitment schemes.
 >
@@ -31,7 +31,7 @@ proof: formalized
 > - `Scheme.perfectlyHiding_iff_statisticallyHiding_zero`: perfect hiding is
 >   statistical hiding with zero error
 
-`Cslib.Crypto.Protocols.Commitment.Scheme.perfectlyHiding_iff_statisticallyHiding_zero` (theorem, [line 47](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Basic.lean#L47))
+`Cslib.Crypto.Protocols.Commitment.Scheme.perfectlyHiding_iff_statisticallyHiding_zero` (theorem, [line 47](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Basic.lean#L47))
 
 > Perfect hiding is exactly statistical hiding with zero error.
 
@@ -41,7 +41,7 @@ theorem perfectlyHiding_iff_statisticallyHiding_zero
     scheme.PerfectlyHiding ↔ scheme.StatisticallyHiding 0
 ```
 
-`Cslib.Crypto.Protocols.Commitment.Scheme.StatisticallyHiding.mono` (theorem, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Basic.lean#L53))
+`Cslib.Crypto.Protocols.Commitment.Scheme.StatisticallyHiding.mono` (theorem, [line 53](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Basic.lean#L53))
 
 > Enlarging the permitted error preserves statistical hiding.
 
@@ -51,7 +51,7 @@ theorem StatisticallyHiding.mono [Fintype Commitment]
     Monotone scheme.StatisticallyHiding
 ```
 
-`Cslib.Crypto.Protocols.Commitment.Scheme.PerfectlyBinding.disjoint_support_commitmentDist` (theorem, [line 61](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Basic.lean#L61))
+`Cslib.Crypto.Protocols.Commitment.Scheme.PerfectlyBinding.disjoint_support_commitmentDist` (theorem, [line 61](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Basic.lean#L61))
 
 > Distinct messages of a perfectly binding scheme have disjoint sets of
 > possible commitments.
@@ -64,7 +64,7 @@ theorem PerfectlyBinding.disjoint_support_commitmentDist
       (scheme.commitmentDist message₁).support
 ```
 
-`Cslib.Crypto.Protocols.Commitment.Scheme.PerfectlyBinding.dist_commitmentDist_eq_one` (theorem, [line 76](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Basic.lean#L76))
+`Cslib.Crypto.Protocols.Commitment.Scheme.PerfectlyBinding.dist_commitmentDist_eq_one` (theorem, [line 76](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Basic.lean#L76))
 
 > In a perfectly binding scheme, the commitment distributions of distinct
 > messages are at the maximum statistical distance: an unbounded observer can
@@ -79,7 +79,7 @@ theorem PerfectlyBinding.dist_commitmentDist_eq_one
       (scheme.commitmentDist message₁) = 1
 ```
 
-`Cslib.Crypto.Protocols.Commitment.Scheme.subsingleton_of_statisticallyHiding_of_perfectlyBinding` (theorem, [line 88](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Basic.lean#L88))
+`Cslib.Crypto.Protocols.Commitment.Scheme.subsingleton_of_statisticallyHiding_of_perfectlyBinding` (theorem, [line 88](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Basic.lean#L88))
 
 > **The hiding–binding trade-off.** A scheme cannot be both statistically
 > hiding with error below one and perfectly binding unless any two messages are
@@ -93,7 +93,7 @@ theorem subsingleton_of_statisticallyHiding_of_perfectlyBinding
     (hbind : scheme.PerfectlyBinding) : Subsingleton Message
 ```
 
-`Cslib.Crypto.Protocols.Commitment.Scheme.subsingleton_of_perfectlyHiding_of_perfectlyBinding` (theorem, [line 102](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Basic.lean#L102))
+`Cslib.Crypto.Protocols.Commitment.Scheme.subsingleton_of_perfectlyHiding_of_perfectlyBinding` (theorem, [line 102](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Basic.lean#L102))
 
 > A scheme cannot be both perfectly hiding and perfectly binding unless any
 > two messages are equal. Unlike the statistical version, this needs no
@@ -112,5 +112,5 @@ theorem subsingleton_of_perfectlyHiding_of_perfectlyBinding
 
 ## Sources
 
-- [Cslib/Crypto/Protocols/Commitment/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Basic.lean)
+- [Cslib/Crypto/Protocols/Commitment/Basic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Basic.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Crypto.Protocols.Commitment.Basic.json)

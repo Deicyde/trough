@@ -1,0 +1,24 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "8b510d014295ed2c2334a379a7c96561a1603dc4",
+ "module": "Cslib.Computability.Automata.DA.Transducer",
+ "file": "Cslib/Computability/Automata/DA/Transducer.lean",
+ "public": [
+  {"name": "Cslib.Automata.SequentialTransducer", "kind": "structure", "line": 58},
+  {"name": "Cslib.Automata.SubsequentialTransducer", "kind": "structure", "line": 63},
+  {"name": "Cslib.Automata.SequentialTransducer.toSubsequential", "kind": "def", "line": 74},
+  {"name": "Cslib.Automata.SubsequentialTransducer.OutputBoundedBy", "kind": "def", "line": 87},
+  {"name": "Cslib.Automata.SubsequentialTransducer.exists_outputBoundedBy_of_finite", "kind": "theorem", "line": 92},
+  {"name": "Cslib.Automata.SubsequentialTransducer.evalFrom", "kind": "def", "line": 100},
+  {"name": "Cslib.Automata.SubsequentialTransducer.evalFrom_unique", "kind": "theorem", "line": 106},
+  {"name": "Cslib.Automata.SubsequentialTransducer.eval", "kind": "abbrev", "line": 116},
+  {"name": "Cslib.Automata.SequentialTransducer.evalFrom", "kind": "abbrev", "line": 134},
+  {"name": "Cslib.Automata.SequentialTransducer.evalFrom_unique", "kind": "theorem", "line": 138},
+  {"name": "Cslib.Automata.SequentialTransducer.eval", "kind": "abbrev", "line": 145}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -7,9 +7,9 @@ proof: formalized
 
 # Language homomorphism
 
-`Cslib.Computability.Languages.LanguageHom`, in [Cslib/Computability/Languages/LanguageHom.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean), by Ching-Tsun Chou.
+`Cslib.Computability.Languages.LanguageHom`, in [Cslib/Computability/Languages/LanguageHom.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean), by Ching-Tsun Chou.
 
-`Language.Hom` (structure, [line 28](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L28))
+`Language.Hom` (structure, [line 28](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L28))
 
 > A language homomorphism from `α` to `β` is a map from `List α` to `List β` which
 > preserves the empty word `[]` and concatenation `(· ++ ·)`.
@@ -22,33 +22,33 @@ structure Hom (α β : Type*) where
   map_append' (as as' : List α) : toFun (as ++ as') = toFun as ++ toFun as'
 ```
 
-`Language.Hom.ext_iff'` (theorem, [line 44](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L44))
+`Language.Hom.ext_iff'` (theorem, [line 44](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L44))
 
 ```lean
 theorem ext_iff' (f f' : Hom α β) :
     f = f' ↔ ∀ as, f as = f' as
 ```
 
-`Language.Hom.map_nil` (theorem, [line 54](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L54))
+`Language.Hom.map_nil` (theorem, [line 54](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L54))
 
 ```lean
 theorem map_nil (f : Hom α β) : f [] = []
 ```
 
-`Language.Hom.map_append` (theorem, [line 57](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L57))
+`Language.Hom.map_append` (theorem, [line 57](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L57))
 
 ```lean
 theorem map_append (f : Hom α β) (as as' : List α) : f (as ++ as') = (f as) ++ (f as')
 ```
 
-`Language.Hom.map_cons` (theorem, [line 61](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L61))
+`Language.Hom.map_cons` (theorem, [line 61](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L61))
 
 ```lean
 theorem map_cons (f : Hom α β) (a : α) (as : List α) :
     f (a :: as) = f [a] ++ f as
 ```
 
-`Language.Hom.liftAux` (definition, [line 67](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L67))
+`Language.Hom.liftAux` (definition, [line 67](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L67))
 
 > This auxiliary function should not be used outside this file.
 > Instead, use the equivalence `lift` below.
@@ -57,27 +57,27 @@ theorem map_cons (f : Hom α β) (a : α) (as : List α) :
 def liftAux (f : α → List β) : Hom α β
 ```
 
-`Language.Hom.liftAux_eq_flatMap` (theorem, [line 72](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L72))
+`Language.Hom.liftAux_eq_flatMap` (theorem, [line 72](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L72))
 
 ```lean
 theorem liftAux_eq_flatMap (f : α → List β) : liftAux f = List.flatMap f
 ```
 
-`Language.Hom.listAux_left_inv` (theorem, [line 75](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L75))
+`Language.Hom.listAux_left_inv` (theorem, [line 75](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L75))
 
 ```lean
 theorem listAux_left_inv (f : α → List β) :
     (fun f a ↦ f [a]) (liftAux f) = f
 ```
 
-`Language.Hom.listAux_right_inv` (theorem, [line 79](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L79))
+`Language.Hom.listAux_right_inv` (theorem, [line 79](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L79))
 
 ```lean
 theorem listAux_right_inv (f : Hom α β) :
     liftAux (fun a ↦ f [a]) = f
 ```
 
-`Language.Hom.lift` (definition, [line 91](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L91))
+`Language.Hom.lift` (definition, [line 91](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L91))
 
 > An equivalence from `f : α → List β` to `Hom α β`, whose forward direction can be
 > used to define language homomorphisms conveniently.
@@ -86,7 +86,7 @@ theorem listAux_right_inv (f : Hom α β) :
 def lift : (α → List β) ≃ (Hom α β)
 ```
 
-`Language.Hom.lift_eq_flatMap` (theorem, [line 98](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L98))
+`Language.Hom.lift_eq_flatMap` (theorem, [line 98](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L98))
 
 > `lift.toFun` is in fact `List.flatMap`.
 
@@ -94,7 +94,7 @@ def lift : (α → List β) ≃ (Hom α β)
 theorem lift_eq_flatMap (f : α → List β) : lift f = List.flatMap f
 ```
 
-`Language.Hom.reduceOption` (definition, [line 102](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L102))
+`Language.Hom.reduceOption` (definition, [line 102](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L102))
 
 > Dropping the `none`s from a list of options is a language homomorphism.
 
@@ -102,13 +102,13 @@ theorem lift_eq_flatMap (f : α → List β) : lift f = List.flatMap f
 def reduceOption : Hom (Option α) α
 ```
 
-`Language.Hom.reduceOption_apply` (theorem, [line 108](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L108))
+`Language.Hom.reduceOption_apply` (theorem, [line 108](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L108))
 
 ```lean
 theorem reduceOption_apply (as : List (Option α)) : reduceOption as = as.reduceOption
 ```
 
-`Language.image` (definition, [line 116](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L116))
+`Language.image` (definition, [line 116](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L116))
 
 > The image of a language under a function `f`, which need not be a language homomorphism.
 
@@ -116,7 +116,7 @@ theorem reduceOption_apply (as : List (Option α)) : reduceOption as = as.reduce
 def image (f : List α → List β) (l : Language α) : Language β
 ```
 
-`Language.preimage` (definition, [line 120](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L120))
+`Language.preimage` (definition, [line 120](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L120))
 
 > The preimage of a language under a function `f`, which need not be a language homomorphism.
 
@@ -124,41 +124,41 @@ def image (f : List α → List β) (l : Language α) : Language β
 def preimage (f : List α → List β) (l : Language β) : Language α
 ```
 
-`Language.mem_image` (theorem, [line 124](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L124))
+`Language.mem_image` (theorem, [line 124](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L124))
 
 ```lean
 theorem mem_image (f : List α → List β) (l : Language α) (bs : List β) :
     bs ∈ l.image f ↔ ∃ as, as ∈ l ∧ f as = bs
 ```
 
-`Language.mem_preimage` (theorem, [line 129](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L129))
+`Language.mem_preimage` (theorem, [line 129](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L129))
 
 ```lean
 theorem mem_preimage (f : List α → List β) (l : Language β) (as : List α) :
     as ∈ l.preimage f ↔ f as ∈ l
 ```
 
-`Language.image_singleton` (theorem, [line 133](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L133))
+`Language.image_singleton` (theorem, [line 133](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L133))
 
 ```lean
 theorem image_singleton (f : List α → List β) (as : List α) :
     ({as} : Language α).image f = {f as}
 ```
 
-`Language.image_zero` (theorem, [line 138](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L138))
+`Language.image_zero` (theorem, [line 138](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L138))
 
 ```lean
 theorem image_zero (f : List α → List β) : (0 : Language α).image f = 0
 ```
 
-`Language.image_add` (theorem, [line 141](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L141))
+`Language.image_add` (theorem, [line 141](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L141))
 
 ```lean
 theorem image_add (f : List α → List β) (l1 l2 : Language α) :
     (l1 + l2).image f = l1.image f + l2.image f
 ```
 
-`Language.image_iSup` (theorem, [line 145](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L145))
+`Language.image_iSup` (theorem, [line 145](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L145))
 
 ```lean
 theorem image_iSup (f : List α → List β) {I : Type*} (l : I → Language α) :
@@ -168,27 +168,27 @@ theorem image_iSup (f : List α → List β) {I : Type*} (l : I → Language α)
 > The following distributive laws for the `image` operation requires the function `f`
 > to be a language homomorphism.
 
-`Language.image_one` (theorem, [line 152](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L152))
+`Language.image_one` (theorem, [line 152](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L152))
 
 ```lean
 theorem image_one (f : Hom α β) : (1 : Language α).image f = 1
 ```
 
-`Language.image_mul` (theorem, [line 156](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L156))
+`Language.image_mul` (theorem, [line 156](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L156))
 
 ```lean
 theorem image_mul (f : Hom α β) (l1 l2 : Language α) :
     (l1 * l2).image f = l1.image f * l2.image f
 ```
 
-`Language.image_pow` (theorem, [line 161](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L161))
+`Language.image_pow` (theorem, [line 161](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L161))
 
 ```lean
 theorem image_pow (f : Hom α β) (l : Language α) (n : ℕ) :
     (l^n).image f = (l.image f)^n
 ```
 
-`Language.image_kstar` (theorem, [line 167](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean#L167))
+`Language.image_kstar` (theorem, [line 167](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean#L167))
 
 ```lean
 theorem image_kstar (f : Hom α β) (l : Language α) :
@@ -201,5 +201,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Computability/Languages/LanguageHom.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/LanguageHom.lean)
+- [Cslib/Computability/Languages/LanguageHom.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/LanguageHom.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Languages.LanguageHom.json)

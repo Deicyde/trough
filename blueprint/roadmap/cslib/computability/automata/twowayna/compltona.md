@@ -7,7 +7,7 @@ proof: formalized
 
 # A finite acceptor for the complement of the language of a two-way automaton
 
-`Cslib.Computability.Automata.TwoWayNA.ComplToNA`, in [Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean), by Christian Reitwiessner.
+`Cslib.Computability.Automata.TwoWayNA.ComplToNA`, in [Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean), by Christian Reitwiessner.
 
 > For every nondeterministic two-way automaton (`TwoWayNA`) `a`, this file constructs a
 > nondeterministic finite acceptor (`NA.FinAcc`) that accepts exactly the words rejected by `a`
@@ -63,7 +63,7 @@ proof: formalized
 
 > ## Vardi's condition of non-acceptance
 
-`Cslib.Automata.TwoWayNA.IsStepClosed` (definition, [line 85](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L85))
+`Cslib.Automata.TwoWayNA.IsStepClosed` (definition, [line 85](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L85))
 
 > Every step of `a` on `input` out of a state that `cert` attaches to the head position lands in a
 > state that `cert` attaches to the new head position. The conjunct on the input restricts the
@@ -74,7 +74,7 @@ def IsStepClosed (a : TwoWayNA State Symbol) (input : List Symbol)
     (cert : ωSequence (Set State)) : Prop
 ```
 
-`Cslib.Automata.TwoWayNA.IsRejectionCert` (structure, [line 92](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L92))
+`Cslib.Automata.TwoWayNA.IsRejectionCert` (structure, [line 92](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L92))
 
 > A family of subsets of the state set, one for every position of the input head on `input`,
 > which contains all initial states, is closed under the transitions of `a`, and contains no
@@ -91,7 +91,7 @@ structure IsRejectionCert (a : TwoWayNA State Symbol) (input : List Symbol)
   accept_notMem : ∀ s ∈ cert input.length, s ∉ a.accept
 ```
 
-`Cslib.Automata.TwoWayNA.IsRejectionCert.not_accepts` (theorem, [line 104](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L104))
+`Cslib.Automata.TwoWayNA.IsRejectionCert.not_accepts` (theorem, [line 104](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L104))
 
 > If a rejection certificate for `input` exists, then `a` does not accept `input`.
 
@@ -100,7 +100,7 @@ theorem IsRejectionCert.not_accepts (hT : a.IsRejectionCert input cert) :
     ¬ Accepts a input
 ```
 
-`Cslib.Automata.TwoWayNA.reachable` (definition, [line 114](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L114))
+`Cslib.Automata.TwoWayNA.reachable` (definition, [line 114](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L114))
 
 > The set of states that `a` can be in while its head sits at position `i` of `input`, having
 > started in an initial configuration.
@@ -109,7 +109,7 @@ theorem IsRejectionCert.not_accepts (hT : a.IsRejectionCert input cert) :
 def reachable (a : TwoWayNA State Symbol) (input : List Symbol) : ωSequence (Set State)
 ```
 
-`Cslib.Automata.TwoWayNA.isRejectionCert_reachable` (theorem, [line 120](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L120))
+`Cslib.Automata.TwoWayNA.isRejectionCert_reachable` (theorem, [line 120](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L120))
 
 > If `a` does not accept `input`, then its reachable states form a rejection certificate.
 
@@ -118,7 +118,7 @@ theorem isRejectionCert_reachable (h : ¬ Accepts a input) :
     a.IsRejectionCert input (a.reachable input)
 ```
 
-`Cslib.Automata.TwoWayNA.not_accepts_iff_exists_isRejectionCert` (theorem, [line 138](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L138))
+`Cslib.Automata.TwoWayNA.not_accepts_iff_exists_isRejectionCert` (theorem, [line 138](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L138))
 
 > A two-way automaton rejects an input exactly when a rejection certificate for it exists.
 
@@ -130,7 +130,7 @@ theorem not_accepts_iff_exists_isRejectionCert (a : TwoWayNA State Symbol)
 
 > ## Localising the closure condition
 
-`Cslib.Automata.TwoWayNA.LocalOK` (definition, [line 148](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L148))
+`Cslib.Automata.TwoWayNA.LocalOK` (definition, [line 148](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L148))
 
 > Every move of `a` out of a state in `cur` while reading `x` lands in `left`, in `cur` or in
 > `right`, according to whether it moves the head to the left, keeps it in place, or moves it to the
@@ -140,7 +140,7 @@ theorem not_accepts_iff_exists_isRejectionCert (a : TwoWayNA State Symbol)
 def LocalOK (a : TwoWayNA State Symbol) (x : Symbol) (left cur right : Set State) : Prop
 ```
 
-`Cslib.Automata.TwoWayNA.isStepClosed_iff_localOK` (theorem, [line 154](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L154))
+`Cslib.Automata.TwoWayNA.isStepClosed_iff_localOK` (theorem, [line 154](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L154))
 
 > Closure of `cert` under the transitions of `a` is the same as local consistency of `cert` at
 > every position carrying an input symbol.
@@ -154,7 +154,7 @@ theorem isStepClosed_iff_localOK :
 
 > ## The finite acceptor for the complement
 
-`Cslib.Automata.TwoWayNA.complToNA` (definition, [line 199](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L199))
+`Cslib.Automata.TwoWayNA.complToNA` (definition, [line 199](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L199))
 
 > The nondeterministic finite acceptor that guesses a rejection certificate `cert` for `a` while
 > scanning the input, keeping the pair `(cert (i - 1), cert i)` in its state after reading `i`
@@ -165,7 +165,7 @@ theorem isStepClosed_iff_localOK :
 def complToNA (a : TwoWayNA State Symbol) : NA.FinAcc (Set State × Set State) Symbol
 ```
 
-`Cslib.Automata.TwoWayNA.exists_accepting_mTr_iff` (theorem, [line 208](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L208))
+`Cslib.Automata.TwoWayNA.exists_accepting_mTr_iff` (theorem, [line 208](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L208))
 
 > An accepting multistep transition of `a.complToNA` out of `(left, cur)` over `xs` is the same
 > thing as a certificate starting with `left` and `cur` that is locally consistent at every position
@@ -180,7 +180,7 @@ theorem exists_accepting_mTr_iff (a : TwoWayNA State Symbol) (xs : List Symbol)
           ∀ s ∈ cert (xs.length + 1), s ∉ a.accept
 ```
 
-`Cslib.Automata.TwoWayNA.accepts_complToNA_iff` (theorem, [line 252](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L252))
+`Cslib.Automata.TwoWayNA.accepts_complToNA_iff` (theorem, [line 252](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L252))
 
 > `a.complToNA` accepts exactly the words that `a` rejects.
 
@@ -189,7 +189,7 @@ theorem accepts_complToNA_iff (a : TwoWayNA State Symbol) (input : List Symbol) 
     Accepts a.complToNA input ↔ ¬ Accepts a input
 ```
 
-`Cslib.Automata.TwoWayNA.language_complToNA` (theorem, [line 278](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L278))
+`Cslib.Automata.TwoWayNA.language_complToNA` (theorem, [line 278](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean#L278))
 
 > `a.complToNA` recognises the complement of the language of `a`.
 
@@ -207,5 +207,5 @@ theorem language_complToNA (a : TwoWayNA State Symbol) : language a.complToNA = 
 
 ## Sources
 
-- [Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean)
+- [Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/ComplToNA.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.TwoWayNA.ComplToNA.json)

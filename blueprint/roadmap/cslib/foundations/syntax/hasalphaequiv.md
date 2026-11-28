@@ -7,11 +7,11 @@ proof: formalized
 
 # HasAlphaEquiv
 
-`Cslib.Foundations.Syntax.HasAlphaEquiv`, in [Cslib/Foundations/Syntax/HasAlphaEquiv.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Syntax/HasAlphaEquiv.lean), by Fabrizio Montesi.
+`Cslib.Foundations.Syntax.HasAlphaEquiv`, in [Cslib/Foundations/Syntax/HasAlphaEquiv.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Syntax/HasAlphaEquiv.lean), by Fabrizio Montesi.
 
 > Notation typeclass for α-equivalence.
 
-`Cslib.HasAlphaEquiv` (class, [line 18](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Syntax/HasAlphaEquiv.lean#L18))
+`Cslib.HasAlphaEquiv` (class, [line 18](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Syntax/HasAlphaEquiv.lean#L18))
 
 > Typeclass for the α-equivalence notation `x =α y`.
 
@@ -27,5 +27,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Foundations/Syntax/HasAlphaEquiv.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Syntax/HasAlphaEquiv.lean)
+- [Cslib/Foundations/Syntax/HasAlphaEquiv.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Syntax/HasAlphaEquiv.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Foundations.Syntax.HasAlphaEquiv.json)

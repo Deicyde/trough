@@ -1,6 +1,6 @@
 # Mech
 
-2 modules under `Cslib/Languages/Mech/`, with 13 public declarations.
+6 modules under `Cslib/Languages/Mech/`, with 59 public declarations.
 
 - [Choreography](choreography/README.md)
-- [Local expressions, stores, and evaluation](localcomputation.md)
+- [Common](common/README.md)

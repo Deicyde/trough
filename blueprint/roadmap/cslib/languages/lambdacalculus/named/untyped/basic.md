@@ -7,7 +7,7 @@ proof: formalized
 
 # λ-calculus (Named/Untyped/Basic)
 
-`Cslib.Languages.LambdaCalculus.Named.Untyped.Basic`, in [Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean), by Fabrizio Montesi, Haoxuan Yin.
+`Cslib.Languages.LambdaCalculus.Named.Untyped.Basic`, in [Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean), by Fabrizio Montesi, Haoxuan Yin.
 
 > The untyped λ-calculus, with a named representation of variables. This file contains the definitions
 > of α-equivalence and capture-avoiding substitution.
@@ -18,7 +18,7 @@ proof: formalized
 > * Definition of α-equivalence [M. Gabbay and A. Pitts, *A New Approach to Abstract Syntax with
 > Variable Binding*][Gabbay2002]
 
-`Cslib.LambdaCalculus.Named.Untyped.Term` (inductive type, [line 37](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L37))
+`Cslib.LambdaCalculus.Named.Untyped.Term` (inductive type, [line 37](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L37))
 
 > Syntax of terms.
 
@@ -30,7 +30,7 @@ inductive Term (Var : Type u) : Type u where
 deriving DecidableEq
 ```
 
-`Cslib.LambdaCalculus.Named.Untyped.Term.fv` (definition, [line 47](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L47))
+`Cslib.LambdaCalculus.Named.Untyped.Term.fv` (definition, [line 47](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L47))
 
 > Free variables.
 
@@ -38,7 +38,7 @@ deriving DecidableEq
 def fv : Term Var → Finset Var
 ```
 
-`Cslib.LambdaCalculus.Named.Untyped.Term.bv` (definition, [line 54](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L54))
+`Cslib.LambdaCalculus.Named.Untyped.Term.bv` (definition, [line 54](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L54))
 
 > Bound variables.
 
@@ -46,7 +46,7 @@ def fv : Term Var → Finset Var
 def bv : Term Var → Finset Var
 ```
 
-`Cslib.LambdaCalculus.Named.Untyped.Term.vars` (definition, [line 61](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L61))
+`Cslib.LambdaCalculus.Named.Untyped.Term.vars` (definition, [line 61](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L61))
 
 > Variable names (free and bound) in a term.
 
@@ -54,7 +54,7 @@ def bv : Term Var → Finset Var
 def vars : Term Var → Finset Var
 ```
 
-`Cslib.LambdaCalculus.Named.Untyped.Term.rename` (definition, [line 69](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L69))
+`Cslib.LambdaCalculus.Named.Untyped.Term.rename` (definition, [line 69](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L69))
 
 > Variable renaming, applying to both free and bound variables.
 > `m.rename x y` changes all occurrences of `x` into `y` in `m`.
@@ -63,7 +63,7 @@ def vars : Term Var → Finset Var
 def rename (m : Term Var) (x y : Var) : Term Var
 ```
 
-`Cslib.LambdaCalculus.Named.Untyped.Term.rename_eq_sizeOf` (theorem, [line 78](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L78))
+`Cslib.LambdaCalculus.Named.Untyped.Term.rename_eq_sizeOf` (theorem, [line 78](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L78))
 
 > Renaming preserves size.
 
@@ -71,7 +71,7 @@ def rename (m : Term Var) (x y : Var) : Term Var
 theorem rename_eq_sizeOf {m : Term Var} {x y : Var} : sizeOf (m.rename x y) = sizeOf m
 ```
 
-`Cslib.LambdaCalculus.Named.Untyped.Term.AlphaEquiv` (inductive type, [line 82](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L82))
+`Cslib.LambdaCalculus.Named.Untyped.Term.AlphaEquiv` (inductive type, [line 82](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L82))
 
 > α-equivalence.
 
@@ -83,7 +83,7 @@ inductive AlphaEquiv : Term Var → Term Var → Prop where
   | app {m1 n1 m2 n2} : AlphaEquiv m1 n1 → AlphaEquiv m2 n2 → AlphaEquiv (app m1 m2) (app n1 n2)
 ```
 
-`Cslib.LambdaCalculus.Named.Untyped.Term.instHasAlphaEquivTerm` (instance, [line 89](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L89))
+`Cslib.LambdaCalculus.Named.Untyped.Term.instHasAlphaEquivTerm` (instance, [line 89](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L89))
 
 > Instance for the notation `m =α n`.
 
@@ -91,7 +91,7 @@ inductive AlphaEquiv : Term Var → Term Var → Prop where
 instance instHasAlphaEquivTerm : HasAlphaEquiv (Term Var)
 ```
 
-`Cslib.LambdaCalculus.Named.Untyped.Term.AlphaEquiv_def` (theorem, [line 95](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L95))
+`Cslib.LambdaCalculus.Named.Untyped.Term.AlphaEquiv_def` (theorem, [line 95](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L95))
 
 > Allow grind to recognise the notation of α-equivalence.
 
@@ -99,7 +99,7 @@ instance instHasAlphaEquivTerm : HasAlphaEquiv (Term Var)
 theorem AlphaEquiv_def (m n : Term Var) : m =α n ↔ AlphaEquiv m n
 ```
 
-`Cslib.LambdaCalculus.Named.Untyped.Term.Subst` (inductive type, [line 99](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L99))
+`Cslib.LambdaCalculus.Named.Untyped.Term.Subst` (inductive type, [line 99](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L99))
 
 > Capture-avoiding substitution, as an inference system.
 
@@ -113,7 +113,7 @@ inductive Subst : Term Var → Var → Term Var → Term Var → Prop where
   | alpha {m m' r r' n n' x} : m =α m' → r =α r' → n =α n' → Subst m x r n → m'.Subst x r' n'
 ```
 
-`Cslib.LambdaCalculus.Named.Untyped.Term.subst` (definition, [line 110](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L110))
+`Cslib.LambdaCalculus.Named.Untyped.Term.subst` (definition, [line 110](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L110))
 
 > Capture-avoiding substitution. `m.subst x r` replaces the free occurrences of variable `x`
 > in `m` with `r`.
@@ -123,7 +123,7 @@ def subst (m : Term Var) (x : Var) (r : Term Var) :
     Term Var
 ```
 
-`Cslib.LambdaCalculus.Named.Untyped.Term.instHasSubstitutionTerm` (instance, [line 127](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L127))
+`Cslib.LambdaCalculus.Named.Untyped.Term.instHasSubstitutionTerm` (instance, [line 127](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L127))
 
 > `Term.subst` is a substitution for λ-terms. Gives access to the notation `m[x := n]`.
 
@@ -132,7 +132,7 @@ instance instHasSubstitutionTerm :
     HasSubstitution (Term Var) Var (Term Var)
 ```
 
-`Cslib.LambdaCalculus.Named.Untyped.Term.subst_def` (theorem, [line 133](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L133))
+`Cslib.LambdaCalculus.Named.Untyped.Term.subst_def` (theorem, [line 133](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L133))
 
 > Allow grind to recognise the notation of substitution.
 
@@ -140,7 +140,7 @@ instance instHasSubstitutionTerm :
 theorem subst_def (m r : Term Var) (x : Var) : m[x := r] = m.subst x r
 ```
 
-`Cslib.LambdaCalculus.Named.Untyped.Term.Context` (inductive type, [line 137](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L137))
+`Cslib.LambdaCalculus.Named.Untyped.Term.Context` (inductive type, [line 137](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L137))
 
 > Contexts.
 
@@ -153,7 +153,7 @@ inductive Context (Var : Type u) : Type u where
 deriving DecidableEq
 ```
 
-`Cslib.LambdaCalculus.Named.Untyped.Term.Context.fill` (definition, [line 145](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L145))
+`Cslib.LambdaCalculus.Named.Untyped.Term.Context.fill` (definition, [line 145](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L145))
 
 > Replaces the hole in a `Context` with a `Term`.
 
@@ -161,7 +161,7 @@ deriving DecidableEq
 def Context.fill (c : Context Var) (m : Term Var) : Term Var
 ```
 
-`Cslib.LambdaCalculus.Named.Untyped.Term.Context.vars` (definition, [line 153](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L153))
+`Cslib.LambdaCalculus.Named.Untyped.Term.Context.vars` (definition, [line 153](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean#L153))
 
 > Variables (both free and bound) in a context.
 
@@ -177,5 +177,5 @@ def Context.vars : Context Var → Finset Var
 
 ## Sources
 
-- [Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean)
+- [Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/Named/Untyped/Basic.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.Named.Untyped.Basic.json)

@@ -7,12 +7,12 @@ proof: formalized
 
 # Upper and Lower Bounds for Query Complexity
 
-`Cslib.Algorithms.Lean.Query.Bounds`, in [Cslib/Algorithms/Lean/Query/Bounds.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Bounds.lean), by Sebastian Graf, Kim Morrison, Shreyas Srinivas.
+`Cslib.Algorithms.Lean.Query.Bounds`, in [Cslib/Algorithms/Lean/Query/Bounds.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Bounds.lean), by Sebastian Graf, Kim Morrison, Shreyas Srinivas.
 
 > Definitions of upper and lower bounds on the number of queries a program makes,
 > quantified over oracles.
 
-`Cslib.Query.UpperBound` (definition, [line 26](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Bounds.lean#L26))
+`Cslib.Query.UpperBound` (definition, [line 26](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Bounds.lean#L26))
 
 > Upper bound: for all oracles, inputs of size ≤ n make at most `bound n` queries.
 
@@ -21,7 +21,7 @@ def UpperBound (prog : α → FreeM Q β)
     (size : α → Nat) (bound : Nat → Nat) : Prop
 ```
 
-`Cslib.Query.LowerBound` (definition, [line 33](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Bounds.lean#L33))
+`Cslib.Query.LowerBound` (definition, [line 33](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Bounds.lean#L33))
 
 > Lower bound: for every size n, there exists an input of size at most n and an oracle
 > making the program perform ≥ `bound n` queries.
@@ -31,7 +31,7 @@ def LowerBound (prog : α → FreeM Q β)
     (size : α → Nat) (bound : Nat → Nat) : Prop
 ```
 
-`Cslib.Query.UpperBound.of_pointwise` (theorem, [line 40](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Bounds.lean#L40))
+`Cslib.Query.UpperBound.of_pointwise` (theorem, [line 40](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Bounds.lean#L40))
 
 > To prove an `UpperBound` with a monotone bound function, it suffices to bound the
 > query count of each input by `bound` at its own size.
@@ -44,7 +44,7 @@ theorem UpperBound.of_pointwise {prog : α → FreeM Q β} {size : α → Nat} {
     UpperBound prog size bound
 ```
 
-`Cslib.Query.LowerBound.le_upperBound` (theorem, [line 49](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Bounds.lean#L49))
+`Cslib.Query.LowerBound.le_upperBound` (theorem, [line 49](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Bounds.lean#L49))
 
 > A lower bound for a program never exceeds an upper bound for the same program and
 > size function.
@@ -60,5 +60,5 @@ theorem LowerBound.le_upperBound {prog : α → FreeM Q β} {size : α → Nat} 
 
 ## Sources
 
-- [Cslib/Algorithms/Lean/Query/Bounds.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Bounds.lean)
+- [Cslib/Algorithms/Lean/Query/Bounds.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Bounds.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Algorithms.Lean.Query.Bounds.json)

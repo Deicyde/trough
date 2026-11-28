@@ -1,6 +1,6 @@
 # Automata
 
-31 modules under `Cslib/Computability/Automata/`, with 185 public declarations.
+32 modules under `Cslib/Computability/Automata/`, with 196 public declarations.
 
 - [Acceptors](acceptors/README.md)
 - [DA](da/README.md)

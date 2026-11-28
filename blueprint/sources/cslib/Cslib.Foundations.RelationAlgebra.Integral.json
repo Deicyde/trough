@@ -1,0 +1,19 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "8b510d014295ed2c2334a379a7c96561a1603dc4",
+ "module": "Cslib.Foundations.RelationAlgebra.Integral",
+ "file": "Cslib/Foundations/RelationAlgebra/Integral.lean",
+ "public": [
+  {"name": "Cslib.RelationAlgebra.IsIntegral.relDom_eq_one", "kind": "lemma", "line": 19},
+  {"name": "Cslib.RelationAlgebra.isIntegral_iff_forall_relDom", "kind": "theorem", "line": 25},
+  {"name": "Cslib.RelationAlgebra.IsIntegral.relCod_eq_one", "kind": "lemma", "line": 35},
+  {"name": "Cslib.RelationAlgebra.isIntegral_iff_forall_relCod", "kind": "theorem", "line": 41},
+  {"name": "Cslib.RelationAlgebra.IsIntegral.mul_eq_bot_iff", "kind": "lemma", "line": 48},
+  {"name": "Cslib.RelationAlgebra.isIntegral_tfae", "kind": "theorem", "line": 58}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

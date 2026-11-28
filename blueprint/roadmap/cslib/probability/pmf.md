@@ -7,7 +7,7 @@ proof: formalized
 
 # PMF Utilities
 
-`Cslib.Probability.PMF`, in [Cslib/Probability/PMF.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/PMF.lean), by Josha Dekker, Devon Tuma, Kexing Ying, Samuel Schlesinger.
+`Cslib.Probability.PMF`, in [Cslib/Probability/PMF.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Probability/PMF.lean), by Josha Dekker, Devon Tuma, Kexing Ying, Samuel Schlesinger.
 
 > ## NB: This module is temporary
 >
@@ -32,7 +32,7 @@ proof: formalized
 >   if the output distribution does not depend on the input, conditioning does
 >   not change the prior
 
-`Cslib.Probability.PMF.uniformOfFinset` (definition, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/PMF.lean#L53))
+`Cslib.Probability.PMF.uniformOfFinset` (definition, [line 53](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Probability/PMF.lean#L53))
 
 > Uniform probability mass function on a nonempty finite set.
 
@@ -40,21 +40,21 @@ proof: formalized
 noncomputable def uniformOfFinset (s : Finset α) (hs : s.Nonempty) : PMF α
 ```
 
-`Cslib.Probability.PMF.uniformOfFinset_apply` (theorem, [line 65](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/PMF.lean#L65))
+`Cslib.Probability.PMF.uniformOfFinset_apply` (theorem, [line 65](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Probability/PMF.lean#L65))
 
 ```lean
 theorem uniformOfFinset_apply (s : Finset α) (hs : s.Nonempty) (a : α) :
     uniformOfFinset s hs a = if a ∈ s then (s.card : ℝ≥0∞)⁻¹ else 0
 ```
 
-`Cslib.Probability.PMF.mem_support_uniformOfFinset_iff` (theorem, [line 69](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/PMF.lean#L69))
+`Cslib.Probability.PMF.mem_support_uniformOfFinset_iff` (theorem, [line 69](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Probability/PMF.lean#L69))
 
 ```lean
 theorem mem_support_uniformOfFinset_iff {s : Finset α} (hs : s.Nonempty) (a : α) :
     a ∈ (uniformOfFinset s hs).support ↔ a ∈ s
 ```
 
-`Cslib.Probability.PMF.uniformOfFintype` (definition, [line 74](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/PMF.lean#L74))
+`Cslib.Probability.PMF.uniformOfFintype` (definition, [line 74](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Probability/PMF.lean#L74))
 
 > Uniform probability mass function on a nonempty finite type.
 
@@ -62,14 +62,14 @@ theorem mem_support_uniformOfFinset_iff {s : Finset α} (hs : s.Nonempty) (a : �
 noncomputable def uniformOfFintype (α : Type*) [Fintype α] [Nonempty α] : PMF α
 ```
 
-`Cslib.Probability.PMF.uniformOfFintype_apply` (theorem, [line 78](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/PMF.lean#L78))
+`Cslib.Probability.PMF.uniformOfFintype_apply` (theorem, [line 78](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Probability/PMF.lean#L78))
 
 ```lean
 theorem uniformOfFintype_apply [Fintype α] (a : α) :
     @uniformOfFintype α _ ⟨a⟩ a = (Fintype.card α : ℝ≥0∞)⁻¹
 ```
 
-`Cslib.Probability.PMF.bind_pair_apply` (theorem, [line 84](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/PMF.lean#L84))
+`Cslib.Probability.PMF.bind_pair_apply` (theorem, [line 84](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Probability/PMF.lean#L84))
 
 > Evaluating the "pairing" bind `(do let a ← p; return (a, ← f a))` at `(a, b)`
 > gives the product `p a * f a b`.
@@ -79,7 +79,7 @@ theorem bind_pair_apply (p : PMF α) (f : α → PMF β) (a : α) (b : β) :
     (p.bind fun a' => (f a').bind fun b' => PMF.pure (a', b')) (a, b) = p a * f a b
 ```
 
-`Cslib.Probability.PMF.bind_pair_tsum_fst` (theorem, [line 93](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/PMF.lean#L93))
+`Cslib.Probability.PMF.bind_pair_tsum_fst` (theorem, [line 93](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Probability/PMF.lean#L93))
 
 > Summing the pairing bind over the first component gives the marginal.
 
@@ -89,7 +89,7 @@ theorem bind_pair_tsum_fst (p : PMF α) (f : α → PMF β) (b : β) :
       (p.bind f) b
 ```
 
-`Cslib.Probability.PMF.uniformOfFintype_map_equiv` (theorem, [line 99](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/PMF.lean#L99))
+`Cslib.Probability.PMF.uniformOfFintype_map_equiv` (theorem, [line 99](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Probability/PMF.lean#L99))
 
 > A uniform distribution on a finite type is invariant under any equivalence.
 
@@ -99,7 +99,7 @@ theorem uniformOfFintype_map_equiv {γ : Type v} [Fintype α] [Fintype γ] [None
     (uniformOfFintype α).map e = @uniformOfFintype γ _ e.symm.nonempty
 ```
 
-`Cslib.Probability.PMF.uniformOfFintype_prod` (theorem, [line 108](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/PMF.lean#L108))
+`Cslib.Probability.PMF.uniformOfFintype_prod` (theorem, [line 108](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Probability/PMF.lean#L108))
 
 > Independent uniform sampling on `α` and `β` equals uniform sampling on `α × β`.
 
@@ -111,7 +111,7 @@ theorem uniformOfFintype_prod (α β : Type*)
     PMF.uniformOfFintype (α × β)
 ```
 
-`Cslib.Probability.PMF.posteriorDist` (definition, [line 121](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/PMF.lean#L121))
+`Cslib.Probability.PMF.posteriorDist` (definition, [line 121](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Probability/PMF.lean#L121))
 
 > The posterior distribution `Pr[A = a | B = b]` as a `PMF`,
 > given `a ← p`, `b ← f a`, and that `b` has positive marginal probability:
@@ -122,7 +122,7 @@ noncomputable def posteriorDist (p : PMF α) (f : α → PMF β) (b : β)
     (hb : b ∈ (p.bind f).support) : PMF α
 ```
 
-`Cslib.Probability.PMF.posteriorDist_apply` (theorem, [line 129](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/PMF.lean#L129))
+`Cslib.Probability.PMF.posteriorDist_apply` (theorem, [line 129](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Probability/PMF.lean#L129))
 
 ```lean
 theorem posteriorDist_apply (p : PMF α) (f : α → PMF β) (b : β)
@@ -132,7 +132,7 @@ theorem posteriorDist_apply (p : PMF α) (f : α → PMF β) (b : β)
         (p.bind f) b
 ```
 
-`Cslib.Probability.PMF.posteriorDist_eq_prior_of_outputIndist` (theorem, [line 138](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/PMF.lean#L138))
+`Cslib.Probability.PMF.posteriorDist_eq_prior_of_outputIndist` (theorem, [line 138](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Probability/PMF.lean#L138))
 
 > If the output distribution of a channel does not depend on the input, then
 > conditioning on any output with positive probability leaves the prior unchanged.
@@ -150,5 +150,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Probability/PMF.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Probability/PMF.lean)
+- [Cslib/Probability/PMF.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Probability/PMF.lean)
 - [Declaration ledger](../../../sources/cslib/Cslib.Probability.PMF.json)

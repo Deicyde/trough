@@ -7,9 +7,9 @@ proof: formalized
 
 # Basic Modal Logic for Lean
 
-`Cslib.Logics.Modal.Unimodal.Lean.Basic`, in [Cslib/Logics/Modal/Unimodal/Lean/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Unimodal/Lean/Basic.lean), by Fabrizio Montesi.
+`Cslib.Logics.Modal.Unimodal.Lean.Basic`, in [Cslib/Logics/Modal/Unimodal/Lean/Basic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Modal/Unimodal/Lean/Basic.lean), by Fabrizio Montesi.
 
-`Cslib.Logic.Modal.Model.unimodalOfPredicates` (abbreviation, [line 23](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Unimodal/Lean/Basic.lean#L23))
+`Cslib.Logic.Modal.Model.unimodalOfPredicates` (abbreviation, [line 23](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Modal/Unimodal/Lean/Basic.lean#L23))
 
 > Builds a unimodal predicate model from a binary relation.
 
@@ -17,7 +17,7 @@ proof: formalized
 abbrev Model.unimodalOfPredicates (r : α → α → Prop) : Model α τ (α → Prop)
 ```
 
-`Cslib.Logic.Modal.Model.unimodalOfContainers` (abbreviation, [line 27](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Unimodal/Lean/Basic.lean#L27))
+`Cslib.Logic.Modal.Model.unimodalOfContainers` (abbreviation, [line 27](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Modal/Unimodal/Lean/Basic.lean#L27))
 
 > Builds a unimodal container model from a binary relation.
 
@@ -25,7 +25,7 @@ abbrev Model.unimodalOfPredicates (r : α → α → Prop) : Model α τ (α →
 abbrev Model.unimodalOfContainers [Membership α β] (r : α → α → Prop) : Model α τ β
 ```
 
-`Cslib.Logic.Modal.Satisfies.unimodalOfPredicates_preserves_iff` (theorem, [line 34](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Unimodal/Lean/Basic.lean#L34))
+`Cslib.Logic.Modal.Satisfies.unimodalOfPredicates_preserves_iff` (theorem, [line 34](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Modal/Unimodal/Lean/Basic.lean#L34))
 
 > Under `Model.unimodalOfPredicates r`, `P → □P` is an axiom iff `r` preserves `P`.
 
@@ -34,7 +34,7 @@ theorem Satisfies.unimodalOfPredicates_preserves_iff {P : α → Prop} (r : α �
     (∀ a, ⇓Modal[Model.unimodalOfPredicates (τ := τ) r,a ⊨ P → □P]) ↔ Preserves r P
 ```
 
-`Cslib.Logic.Modal.Satisfies.unimodalOfPredicates_preserves_reflTransGen` (theorem, [line 50](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Unimodal/Lean/Basic.lean#L50))
+`Cslib.Logic.Modal.Satisfies.unimodalOfPredicates_preserves_reflTransGen` (theorem, [line 50](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Modal/Unimodal/Lean/Basic.lean#L50))
 
 > Invariants are preserved by the reflexive and transitive closure of the accessibility relation.
 
@@ -56,5 +56,5 @@ theorem Satisfies.unimodalOfPredicates_preserves_reflTransGen
 
 ## Sources
 
-- [Cslib/Logics/Modal/Unimodal/Lean/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Unimodal/Lean/Basic.lean)
+- [Cslib/Logics/Modal/Unimodal/Lean/Basic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Modal/Unimodal/Lean/Basic.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Logics.Modal.Unimodal.Lean.Basic.json)

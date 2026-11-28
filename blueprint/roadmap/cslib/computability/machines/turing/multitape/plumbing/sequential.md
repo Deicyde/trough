@@ -7,7 +7,7 @@ proof: formalized
 
 # Sequential composition of machines on shared tapes
 
-`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Sequential`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean), by Christian Reitwiessner, Samuel Schlesinger.
+`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Sequential`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean), by Christian Reitwiessner, Samuel Schlesinger.
 
 > `seq tm₀ tm₁` behaves like `tm₀` until `tm₀` would halt, at which point it continues as `tm₁`,
 > started in its initial state on the tapes as `tm₀` left them. The state space is
@@ -26,7 +26,7 @@ proof: formalized
 >   cells that the two paths visit.
 > * `Turing.MultiTapeTM.transformsTapes_seq`: transformations compose, bounds adding.
 
-`Turing.MultiTapeTM.seq` (abbreviation, [line 41](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean#L41))
+`Turing.MultiTapeTM.seq` (abbreviation, [line 41](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean#L41))
 
 > The sequential composition of `tm₀` and `tm₁`: it behaves like `tm₀` until `tm₀` would halt,
 > at which point it switches to the initial state of `tm₁` and behaves like `tm₁`. The switch is
@@ -37,7 +37,7 @@ noncomputable abbrev seq (tm₀ : MultiTapeTM k Symbol State₀) (tm₁ : MultiT
     MultiTapeTM k Symbol (State₀ ⊕ State₁)
 ```
 
-`Turing.MultiTapeTM.exists_runPath_seq` (theorem, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean#L51))
+`Turing.MultiTapeTM.exists_runPath_seq` (theorem, [line 51](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean#L51))
 
 > **Sequential composition of runs.** A run path of `tm₀` to a halted configuration and a run path
 > of `tm₁` started where `tm₀` halted combine into a run path of `seq`: the first path up to its first
@@ -53,7 +53,7 @@ theorem exists_runPath_seq {p₀ : tm₀.RunPath input} (h₀ : p₀.last.Halted
       ∀ i, p.visitedByTapeHead i ⊆ p₀.visitedByTapeHead i ∪ p₁.visitedByTapeHead i
 ```
 
-`Turing.MultiTapeTM.transformsTapes_seq` (theorem, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean#L77))
+`Turing.MultiTapeTM.transformsTapes_seq` (theorem, [line 77](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean#L77))
 
 > **Sequential composition of transformations.** If the postcondition of the first
 > transformation implies the precondition of the second, the composed machine performs the two
@@ -80,5 +80,5 @@ theorem transformsTapes_seq
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean)
 - [Declaration ledger](../../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Sequential.json)

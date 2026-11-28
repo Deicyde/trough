@@ -7,11 +7,11 @@ proof: formalized
 
 # MultiApp
 
-`Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.MultiApp`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean), by David Wegmann.
+`Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.MultiApp`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean), by David Wegmann.
 
 > Multiple application for untyped lambda calculus.
 
-`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiApp` (definition, [line 29](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L29))
+`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiApp` (definition, [line 29](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L29))
 
 > multiApp f [x₁, x₂, ..., xₙ] applies the arguments x₁, x₂, ..., xₙ
 > to f in left-associative order, i.e. as (((f x₁) x₂) ... xₙ).
@@ -20,7 +20,7 @@ proof: formalized
 def multiApp (f : Term Var) : List (Term Var) → Term Var
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.ListFullBeta` (inductive type, [line 40](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L40))
+`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.ListFullBeta` (inductive type, [line 40](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L40))
 
 > A list of arguments performs a single reduction step
 >
@@ -33,13 +33,13 @@ def multiApp (f : Term Var) : List (Term Var) → Term Var
 inductive ListFullBeta : List (Term Var) → List (Term Var) → Prop where
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiApp_tail` (lemma, [line 48](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L48))
+`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiApp_tail` (lemma, [line 48](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L48))
 
 ```lean
 lemma multiApp_tail {N} : (M.multiApp (Ns ++ [N])) = (M.multiApp Ns).app  N
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiApp_lc` (lemma, [line 56](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L56))
+`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiApp_lc` (lemma, [line 56](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L56))
 
 > A term resulting from a multi-application is locally closed if
 > and only if the leftmost term and all arguments applied to it are locally closed
@@ -48,7 +48,7 @@ lemma multiApp_tail {N} : (M.multiApp (Ns ++ [N])) = (M.multiApp Ns).app  N
 lemma multiApp_lc : LC (M.multiApp Ns) ↔ LC M ∧ (∀ N ∈ Ns, LC N)
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.step_multiApp_l` (lemma, [line 66](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L66))
+`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.step_multiApp_l` (lemma, [line 66](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L66))
 
 > Just like ordinary beta reduction, the left-hand side
 > of a multi-application step is locally closed
@@ -58,7 +58,7 @@ lemma step_multiApp_l (steps : M ⭢βᶠ M') (lc_Ns : ∀ N ∈ Ns, LC N) :
     M.multiApp Ns ⭢βᶠ M'.multiApp Ns
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.steps_multiApp_l` (lemma, [line 74](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L74))
+`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.steps_multiApp_l` (lemma, [line 74](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L74))
 
 > Congruence lemma for multi reduction of the left most term of a multi-application
 
@@ -67,7 +67,7 @@ lemma steps_multiApp_l (steps : M ↠βᶠ M') (lc_Ns : ∀ N ∈ Ns, LC N) :
     M.multiApp Ns ↠βᶠ M'.multiApp Ns
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.step_multiApp_r` (lemma, [line 80](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L80))
+`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.step_multiApp_r` (lemma, [line 80](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L80))
 
 > Congruence lemma for single reduction of one of the arguments of a multi-application
 
@@ -75,7 +75,7 @@ lemma steps_multiApp_l (steps : M ↠βᶠ M') (lc_Ns : ∀ N ∈ Ns, LC N) :
 lemma step_multiApp_r (steps : Ns ⭢lβᶠ Ns') (lc_M : LC M) : M.multiApp Ns ⭢βᶠ M.multiApp Ns'
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.steps_multiApp_r` (lemma, [line 84](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L84))
+`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.steps_multiApp_r` (lemma, [line 84](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L84))
 
 > Congruence lemma for multiple reduction of one of the arguments of a multi-application
 
@@ -83,19 +83,19 @@ lemma step_multiApp_r (steps : Ns ⭢lβᶠ Ns') (lc_M : LC M) : M.multiApp Ns �
 lemma steps_multiApp_r (steps : Ns ↠lβᶠ Ns') (lc_M : LC M) : M.multiApp Ns ↠βᶠ M.multiApp Ns'
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.listFullBeta_cons_r` (lemma, [line 87](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L87))
+`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.listFullBeta_cons_r` (lemma, [line 87](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L87))
 
 ```lean
 lemma listFullBeta_cons_r (h : Ns ⭢lβᶠ Ns') (h_lc : ∀ M ∈ l, LC M) : (l ++ Ns) ⭢lβᶠ (l ++ Ns')
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.listFullBeta_cons_l` (lemma, [line 90](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L90))
+`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.listFullBeta_cons_l` (lemma, [line 90](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L90))
 
 ```lean
 lemma listFullBeta_cons_l (h : Ns ⭢lβᶠ Ns') (h_lc : ∀ M ∈ l, LC M) : (Ns ++ l) ⭢lβᶠ (Ns' ++ l)
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.invert_abs_multiApp_st` (lemma, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L101))
+`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.invert_abs_multiApp_st` (lemma, [line 101](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L101))
 
 > If a term (λ M) N P_1 ... P_n reduces in a single step to Q, then
 > Q must be one of the following forms:
@@ -114,7 +114,7 @@ lemma invert_abs_multiApp_st {Ps} {M N Q : Term Var}
     (Q = multiApp (M ^ N) Ps)
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.invert_abs_multiApp_mst` (lemma, [line 136](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L136))
+`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.invert_abs_multiApp_mst` (lemma, [line 136](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L136))
 
 > If a term (λ M) N P₁ ... Pₙ reduces in multiple steps to Q, then either Q if of the form
 >
@@ -141,7 +141,7 @@ lemma invert_abs_multiApp_mst {Ps} {M N Q : Term Var}
                                      multiApp (M' ^ N') Ns' ↠βᶠ Q))
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiApp_step_lc_r` (lemma, [line 155](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L155))
+`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiApp_step_lc_r` (lemma, [line 155](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L155))
 
 > Just like ordinary beta reduction, the right-hand side
 > of a multi-application step is locally closed
@@ -150,7 +150,7 @@ lemma invert_abs_multiApp_mst {Ps} {M N Q : Term Var}
 lemma multiApp_step_lc_r (step : Ns ⭢lβᶠ Ns') : ∀ N ∈ Ns', LC N
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiApp_steps_lc` (lemma, [line 159](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L159))
+`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiApp_steps_lc` (lemma, [line 159](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean#L159))
 
 > Just like ordinary beta reduction, multiple steps of a argument list preserves local closure
 
@@ -164,5 +164,5 @@ lemma multiApp_steps_lc (step : Ns ↠lβᶠ Ns') (H : ∀ N ∈ Ns, LC N) : ∀
 
 ## Sources
 
-- [Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean)
+- [Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/MultiApp.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.MultiApp.json)

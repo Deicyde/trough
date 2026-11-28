@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "8b510d014295ed2c2334a379a7c96561a1603dc4",
+ "module": "Cslib.Foundations.RelationAlgebra.Relativization",
+ "file": "Cslib/Foundations/RelationAlgebra/Relativization.lean",
+ "public": [
+  {"name": "Set.Iic.instRelationAlgebra", "kind": "instance", "line": 40},
+  {"name": "Cslib.RelationAlgebraHom.restrictIic", "kind": "def", "line": 62},
+  {"name": "Cslib.RelationAlgebraEquiv.restrictIic", "kind": "def", "line": 77}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

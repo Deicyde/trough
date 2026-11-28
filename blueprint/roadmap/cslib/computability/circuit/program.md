@@ -7,7 +7,7 @@ proof: formalized
 
 # Straight-line programs
 
-`Cslib.Computability.Circuit.Program`, in [Cslib/Computability/Circuit/Program.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean), by Samuel Schlesinger.
+`Cslib.Computability.Circuit.Program`, in [Cslib/Computability/Circuit/Program.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean), by Samuel Schlesinger.
 
 > A program is a topologically ordered sequence of gates. Each `Line` records an
 > operation and its argument wires. The gate-count index ensures that wires refer
@@ -29,7 +29,7 @@ proof: formalized
 > Evaluation of lines and programs commutes with homomorphisms
 > (`Line.map_eval`, `Program.map_eval`, `Program.map_trace`).
 
-`Cslib.Circuits.Line` (structure, [line 48](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L48))
+`Cslib.Circuits.Line` (structure, [line 48](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L48))
 
 > One gate together with the wires supplying its arguments.
 
@@ -41,7 +41,7 @@ structure Line (σ : Signature) (inputCount gateCount : Nat) where
   wires : Fin (σ.Arity op) → Wire inputCount gateCount
 ```
 
-`Cslib.Circuits.Line.equiv` (definition, [line 55](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L55))
+`Cslib.Circuits.Line.equiv` (definition, [line 55](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L55))
 
 > A line is an operation symbol together with a tuple of argument wires.
 
@@ -50,14 +50,14 @@ def Line.equiv (σ : Signature) (inputCount gateCount : Nat) :
     Line σ inputCount gateCount ≃ Σ op : σ.Op, Fin (σ.Arity op) → Wire inputCount gateCount
 ```
 
-`Cslib.Circuits.Line.ext` (theorem, [line 63](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L63))
+`Cslib.Circuits.Line.ext` (theorem, [line 63](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L63))
 
 ```lean
 protected theorem Line.ext {l₁ l₂ : Line σ inputCount gateCount} (hop : l₁.op = l₂.op)
     (hw : l₁.wires = hop ▸ l₂.wires) : l₁ = l₂
 ```
 
-`Cslib.Circuits.Line.mapInputs` (definition, [line 73](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L73))
+`Cslib.Circuits.Line.mapInputs` (definition, [line 73](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L73))
 
 > Map the inputs of a line through a function, if it is connected to any.
 
@@ -66,14 +66,14 @@ def Line.mapInputs {inputCount' : ℕ} (f : Fin inputCount → Fin inputCount')
     (l : Line σ inputCount gateCount) : Line σ inputCount' gateCount
 ```
 
-`Cslib.Circuits.Line.mapInputs_id` (theorem, [line 78](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L78))
+`Cslib.Circuits.Line.mapInputs_id` (theorem, [line 78](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L78))
 
 ```lean
 theorem Line.mapInputs_id :
     (Line.mapInputs id : Line σ inputCount gateCount → Line σ inputCount gateCount) = id
 ```
 
-`Cslib.Circuits.Line.mapInputs_mapInputs` (theorem, [line 84](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L84))
+`Cslib.Circuits.Line.mapInputs_mapInputs` (theorem, [line 84](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L84))
 
 ```lean
 theorem Line.mapInputs_mapInputs {inputCount' inputCount'' : ℕ}
@@ -81,7 +81,7 @@ theorem Line.mapInputs_mapInputs {inputCount' inputCount'' : ℕ}
     (l : Line σ inputCount gateCount) : (l.mapInputs f).mapInputs g = l.mapInputs (g ∘ f)
 ```
 
-`Cslib.Circuits.Line.mapWires` (definition, [line 90](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L90))
+`Cslib.Circuits.Line.mapWires` (definition, [line 90](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L90))
 
 > Apply a function to every wire read by a line.
 
@@ -92,7 +92,7 @@ def Line.mapWires
     Line σ targetInputCount targetGateCount
 ```
 
-`Cslib.Circuits.Line.mapWires_op` (theorem, [line 97](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L97))
+`Cslib.Circuits.Line.mapWires_op` (theorem, [line 97](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L97))
 
 ```lean
 theorem Line.mapWires_op
@@ -101,7 +101,7 @@ theorem Line.mapWires_op
     (line.mapWires wireMap).op = line.op
 ```
 
-`Cslib.Circuits.Line.mapWires_wires` (theorem, [line 102](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L102))
+`Cslib.Circuits.Line.mapWires_wires` (theorem, [line 102](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L102))
 
 ```lean
 theorem Line.mapWires_wires
@@ -111,7 +111,7 @@ theorem Line.mapWires_wires
     (line.mapWires wireMap).wires argument = wireMap (line.wires argument)
 ```
 
-`Cslib.Circuits.Program` (inductive type, [line 109](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L109))
+`Cslib.Circuits.Program` (inductive type, [line 109](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L109))
 
 > A topologically ordered straight-line program, indexed by its gate count.
 
@@ -123,7 +123,7 @@ inductive Program (σ : Signature.{v}) (inputCount : Nat) : Nat → Type v where
         Program σ inputCount (gateCount + 1)
 ```
 
-`Cslib.Circuits.Program.emptyEquiv` (definition, [line 116](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L116))
+`Cslib.Circuits.Program.emptyEquiv` (definition, [line 116](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L116))
 
 > The empty program is the only program with no gates.
 
@@ -131,7 +131,7 @@ inductive Program (σ : Signature.{v}) (inputCount : Nat) : Nat → Type v where
 def Program.emptyEquiv (σ : Signature) (inputCount : Nat) : Program σ inputCount 0 ≃ PUnit.{1}
 ```
 
-`Cslib.Circuits.Program.gateEquiv` (definition, [line 123](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L123))
+`Cslib.Circuits.Program.gateEquiv` (definition, [line 123](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L123))
 
 > A nonempty program is a prefix followed by its last gate.
 
@@ -141,7 +141,7 @@ def Program.gateEquiv (σ : Signature) (inputCount gateCount : Nat) :
       Program σ inputCount gateCount × Line σ inputCount gateCount
 ```
 
-`Cslib.Circuits.Program.foldl` (definition, [line 133](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L133))
+`Cslib.Circuits.Program.foldl` (definition, [line 133](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L133))
 
 > Fold the lines from the first gate to the last. The step accepts a line at any gate count,
 > retaining its original bound on references to previous gates.
@@ -151,7 +151,7 @@ def Program.foldl {gateCount : Nat} (p : Program σ inputCount gateCount)
     (f : ∀ {k : Nat}, α → Line σ inputCount k → α) (init : α) : α
 ```
 
-`Cslib.Circuits.Program.foldl_empty` (theorem, [line 139](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L139))
+`Cslib.Circuits.Program.foldl_empty` (theorem, [line 139](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L139))
 
 ```lean
 theorem Program.foldl_empty
@@ -159,7 +159,7 @@ theorem Program.foldl_empty
     (Program.empty : Program σ inputCount 0).foldl f init = init
 ```
 
-`Cslib.Circuits.Program.foldl_gate` (theorem, [line 143](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L143))
+`Cslib.Circuits.Program.foldl_gate` (theorem, [line 143](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L143))
 
 ```lean
 theorem Program.foldl_gate (p : Program σ inputCount gateCount)
@@ -168,7 +168,7 @@ theorem Program.foldl_gate (p : Program σ inputCount gateCount)
     (p.gate line).foldl f init = f (p.foldl f init) line
 ```
 
-`Cslib.Circuits.Program.foldl_rel` (theorem, [line 150](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L150))
+`Cslib.Circuits.Program.foldl_rel` (theorem, [line 150](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L150))
 
 > Two left folds preserve a relation if their initial accumulators are related and each
 > pair of steps preserves it. For example, use equality or an order relation.
@@ -182,7 +182,7 @@ theorem Program.foldl_rel (p : Program σ inputCount gateCount) (R : α → β �
       R a b → R (f a line) (f' b line)) : R (p.foldl f a) (p.foldl f' b)
 ```
 
-`Cslib.Circuits.Program.foldr` (definition, [line 162](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L162))
+`Cslib.Circuits.Program.foldr` (definition, [line 162](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L162))
 
 > Fold the lines from the last gate to the first. Each line retains its original bound on
 > references to previous gates, and the step receives the line before the accumulator.
@@ -192,7 +192,7 @@ def Program.foldr {gateCount : Nat} (p : Program σ inputCount gateCount)
     (f : ∀ {k : Nat}, Line σ inputCount k → α → α) (init : α) : α
 ```
 
-`Cslib.Circuits.Program.foldr_empty` (theorem, [line 168](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L168))
+`Cslib.Circuits.Program.foldr_empty` (theorem, [line 168](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L168))
 
 ```lean
 theorem Program.foldr_empty
@@ -200,7 +200,7 @@ theorem Program.foldr_empty
     (Program.empty : Program σ inputCount 0).foldr f init = init
 ```
 
-`Cslib.Circuits.Program.foldr_gate` (theorem, [line 172](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L172))
+`Cslib.Circuits.Program.foldr_gate` (theorem, [line 172](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L172))
 
 ```lean
 theorem Program.foldr_gate (p : Program σ inputCount gateCount)
@@ -209,7 +209,7 @@ theorem Program.foldr_gate (p : Program σ inputCount gateCount)
     (p.gate line).foldr f init = p.foldr f (f line init)
 ```
 
-`Cslib.Circuits.Program.foldr_rel` (theorem, [line 179](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L179))
+`Cslib.Circuits.Program.foldr_rel` (theorem, [line 179](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L179))
 
 > Two right folds preserve a relation if their initial accumulators are related and each
 > pair of steps preserves it.
@@ -223,7 +223,7 @@ theorem Program.foldr_rel (p : Program σ inputCount gateCount) (R : α → β �
       R a b → R (f line a) (f' line b)) : R (p.foldr f a) (p.foldr f' b)
 ```
 
-`Cslib.Circuits.Program.mapInputs` (definition, [line 190](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L190))
+`Cslib.Circuits.Program.mapInputs` (definition, [line 190](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L190))
 
 > Map the inputs of a program through a function.
 
@@ -232,14 +232,14 @@ def Program.mapInputs {gateCount inputCount' : ℕ} (f : Fin inputCount → Fin 
     Program σ inputCount gateCount → Program σ inputCount' gateCount
 ```
 
-`Cslib.Circuits.Program.mapInputs_empty` (theorem, [line 196](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L196))
+`Cslib.Circuits.Program.mapInputs_empty` (theorem, [line 196](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L196))
 
 ```lean
 theorem Program.mapInputs_empty {inputCount' : ℕ} (f : Fin inputCount → Fin inputCount') :
     (.empty : Program σ inputCount 0).mapInputs f = .empty
 ```
 
-`Cslib.Circuits.Program.mapInputs_gate` (theorem, [line 201](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L201))
+`Cslib.Circuits.Program.mapInputs_gate` (theorem, [line 201](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L201))
 
 ```lean
 theorem Program.mapInputs_gate {inputCount' : ℕ} (f : Fin inputCount → Fin inputCount')
@@ -247,7 +247,7 @@ theorem Program.mapInputs_gate {inputCount' : ℕ} (f : Fin inputCount → Fin i
     (p.gate l).mapInputs f = .gate (p.mapInputs f) (l.mapInputs f)
 ```
 
-`Cslib.Circuits.Program.mapInputs_id` (theorem, [line 206](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L206))
+`Cslib.Circuits.Program.mapInputs_id` (theorem, [line 206](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L206))
 
 ```lean
 theorem Program.mapInputs_id :
@@ -255,7 +255,7 @@ theorem Program.mapInputs_id :
       Program σ inputCount gateCount → Program σ inputCount gateCount) = id
 ```
 
-`Cslib.Circuits.Program.mapInputs_mapInputs` (theorem, [line 215](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L215))
+`Cslib.Circuits.Program.mapInputs_mapInputs` (theorem, [line 215](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L215))
 
 ```lean
 theorem Program.mapInputs_mapInputs {inputCount' inputCount'' : ℕ}
@@ -263,7 +263,7 @@ theorem Program.mapInputs_mapInputs {inputCount' inputCount'' : ℕ}
     (p : Program σ inputCount gateCount) : (p.mapInputs f).mapInputs g = p.mapInputs (g ∘ f)
 ```
 
-`Cslib.Circuits.Program.FanInAtMost` (definition, [line 221](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L221))
+`Cslib.Circuits.Program.FanInAtMost` (definition, [line 221](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L221))
 
 > Every gate in a program has at most `r` arguments.
 
@@ -271,7 +271,7 @@ theorem Program.mapInputs_mapInputs {inputCount' inputCount'' : ℕ}
 def Program.FanInAtMost {gateCount : Nat} : (program : Program σ inputCount gateCount) → Nat → Prop
 ```
 
-`Cslib.Circuits.Program.instDecidableFanInAtMost` (instance, [line 227](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L227))
+`Cslib.Circuits.Program.instDecidableFanInAtMost` (instance, [line 227](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L227))
 
 > Bounded fan-in is decidable for every concrete program.
 
@@ -281,7 +281,7 @@ instance Program.instDecidableFanInAtMost {gateCount : Nat}
     (r : Nat) : Decidable (program.FanInAtMost r)
 ```
 
-`Cslib.Circuits.Line.eval` (definition, [line 238](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L238))
+`Cslib.Circuits.Line.eval` (definition, [line 238](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L238))
 
 > Evaluate a line from the values of the inputs and preceding gates.
 
@@ -293,7 +293,7 @@ def Line.eval
     (gates : Fin gateCount → U) : U
 ```
 
-`Cslib.Circuits.Line.eval_mapWires` (theorem, [line 248](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L248))
+`Cslib.Circuits.Line.eval_mapWires` (theorem, [line 248](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L248))
 
 > Mapping a line's wires preserves evaluation when the new valuation agrees
 > with the old valuation along the map. The source and target input namespaces
@@ -314,7 +314,7 @@ theorem Line.eval_mapWires
       line.eval interpretation oldInputs oldGates
 ```
 
-`Cslib.Circuits.Line.eval_mapInputs` (theorem, [line 267](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L267))
+`Cslib.Circuits.Line.eval_mapInputs` (theorem, [line 267](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L267))
 
 > Evaluating a line with relabeled inputs precomposes its input valuation.
 
@@ -325,7 +325,7 @@ theorem Line.eval_mapInputs {inputCount' : ℕ}
     (line.mapInputs f).eval i inputs gates = line.eval i (inputs ∘ f) gates
 ```
 
-`Cslib.Circuits.Line.eval_mapRenaming` (theorem, [line 275](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L275))
+`Cslib.Circuits.Line.eval_mapRenaming` (theorem, [line 275](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L275))
 
 > Specialization of `Line.eval_mapWires` to an input-fixing wire renaming.
 
@@ -342,7 +342,7 @@ theorem Line.eval_mapRenaming
       line.eval interpretation inputs oldGates
 ```
 
-`Cslib.Circuits.Line.depth` (definition, [line 289](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L289))
+`Cslib.Circuits.Line.depth` (definition, [line 289](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L289))
 
 > The depth of a line, given the depth of every wire it may read.
 
@@ -352,7 +352,7 @@ def Line.depth
     (wireDepths : Wire inputCount gateCount → Nat) : Nat
 ```
 
-`Cslib.Circuits.Line.map_eval` (theorem, [line 296](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L296))
+`Cslib.Circuits.Line.map_eval` (theorem, [line 296](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L296))
 
 > Evaluating a line commutes with a homomorphism.
 
@@ -368,7 +368,7 @@ theorem Line.map_eval
       line.eval i₂ (h.map ∘ inputs) (h.map ∘ gates)
 ```
 
-`Cslib.Circuits.Program.eval` (definition, [line 312](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L312))
+`Cslib.Circuits.Program.eval` (definition, [line 312](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L312))
 
 > Evaluate every gate in a program, in program order.
 
@@ -379,7 +379,7 @@ def Program.eval {gateCount : Nat}
     (x : Fin inputCount → U) : Fin gateCount → U
 ```
 
-`Cslib.Circuits.Program.eval_gate_last` (theorem, [line 322](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L322))
+`Cslib.Circuits.Program.eval_gate_last` (theorem, [line 322](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L322))
 
 ```lean
 theorem Program.eval_gate_last
@@ -391,7 +391,7 @@ theorem Program.eval_gate_last
       line.eval interpretation input (program.eval interpretation input)
 ```
 
-`Cslib.Circuits.Program.eval_gate_castSucc` (theorem, [line 331](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L331))
+`Cslib.Circuits.Program.eval_gate_castSucc` (theorem, [line 331](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L331))
 
 ```lean
 theorem Program.eval_gate_castSucc
@@ -404,7 +404,7 @@ theorem Program.eval_gate_castSucc
       program.eval interpretation input gate
 ```
 
-`Cslib.Circuits.Program.eval_mapInputs` (theorem, [line 342](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L342))
+`Cslib.Circuits.Program.eval_mapInputs` (theorem, [line 342](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L342))
 
 > Evaluating a program with relabeled inputs precomposes its input valuation.
 
@@ -415,7 +415,7 @@ theorem Program.eval_mapInputs {inputCount' : ℕ}
     (program.mapInputs f).eval i inputs = program.eval i (inputs ∘ f)
 ```
 
-`Cslib.Circuits.Program.depths` (definition, [line 352](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L352))
+`Cslib.Circuits.Program.depths` (definition, [line 352](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L352))
 
 > The depth of every gate in a program. Inputs have implicit depth zero.
 
@@ -423,7 +423,7 @@ theorem Program.eval_mapInputs {inputCount' : ℕ}
 def Program.depths {gateCount : Nat} (p : Program σ inputCount gateCount) : Fin gateCount → Nat
 ```
 
-`Cslib.Circuits.Program.wireDepths` (definition, [line 361](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L361))
+`Cslib.Circuits.Program.wireDepths` (definition, [line 361](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L361))
 
 > The depth of every input or gate wire in a program.
 
@@ -431,7 +431,7 @@ def Program.depths {gateCount : Nat} (p : Program σ inputCount gateCount) : Fin
 def Program.wireDepths (p : Program σ inputCount gateCount) : Wire inputCount gateCount → Nat
 ```
 
-`Cslib.Circuits.Program.depth` (definition, [line 365](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L365))
+`Cslib.Circuits.Program.depth` (definition, [line 365](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L365))
 
 > The maximum depth of any gate in a program.
 
@@ -439,7 +439,7 @@ def Program.wireDepths (p : Program σ inputCount gateCount) : Wire inputCount g
 def Program.depth (p : Program σ inputCount gateCount) : Nat
 ```
 
-`Cslib.Circuits.Program.map_eval` (theorem, [line 369](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L369))
+`Cslib.Circuits.Program.map_eval` (theorem, [line 369](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L369))
 
 > Evaluating a program commutes with a homomorphism.
 
@@ -453,7 +453,7 @@ theorem Program.map_eval
     h.map ∘ p.eval i₁ x = p.eval i₂ (h.map ∘ x)
 ```
 
-`Cslib.Circuits.Program.trace` (definition, [line 383](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L383))
+`Cslib.Circuits.Program.trace` (definition, [line 383](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L383))
 
 > The value of every input and gate wire.
 
@@ -464,7 +464,7 @@ def Program.trace
     (x : Fin inputCount → U) : Wire inputCount gateCount → U
 ```
 
-`Cslib.Circuits.Program.trace_input` (theorem, [line 389](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L389))
+`Cslib.Circuits.Program.trace_input` (theorem, [line 389](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L389))
 
 ```lean
 theorem Program.trace_input
@@ -476,7 +476,7 @@ theorem Program.trace_input
       input sourceInput
 ```
 
-`Cslib.Circuits.Program.trace_gate_castSucc` (theorem, [line 397](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L397))
+`Cslib.Circuits.Program.trace_gate_castSucc` (theorem, [line 397](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L397))
 
 ```lean
 theorem Program.trace_gate_castSucc
@@ -489,7 +489,7 @@ theorem Program.trace_gate_castSucc
       program.trace interpretation input wire
 ```
 
-`Cslib.Circuits.supportInterpretation` (definition, [line 408](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L408))
+`Cslib.Circuits.supportInterpretation` (definition, [line 408](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L408))
 
 > The interpretation that computes the original inputs supporting a wire.
 
@@ -498,7 +498,7 @@ def supportInterpretation (σ : Signature) (inputCount : ℕ) :
     Interpretation σ (Finset (Fin inputCount))
 ```
 
-`Cslib.Circuits.Line.inputSupport` (definition, [line 413](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L413))
+`Cslib.Circuits.Line.inputSupport` (definition, [line 413](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L413))
 
 > The original inputs supporting a line, given the support of each wire it may read.
 
@@ -509,7 +509,7 @@ def Line.inputSupport
     Finset (Fin inputCount)
 ```
 
-`Cslib.Circuits.Line.mem_inputSupport` (theorem, [line 419](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L419))
+`Cslib.Circuits.Line.mem_inputSupport` (theorem, [line 419](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L419))
 
 ```lean
 theorem Line.mem_inputSupport
@@ -520,7 +520,7 @@ theorem Line.mem_inputSupport
       ∃ argument, input ∈ wireSupport (line.wires argument)
 ```
 
-`Cslib.Circuits.Program.wireSupport` (definition, [line 428](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L428))
+`Cslib.Circuits.Program.wireSupport` (definition, [line 428](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L428))
 
 > The original inputs that can reach a wire through the program.
 
@@ -530,7 +530,7 @@ def Program.wireSupport
     Wire inputCount gateCount → Finset (Fin inputCount)
 ```
 
-`Cslib.Circuits.Program.wireSupport_input` (theorem, [line 433](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L433))
+`Cslib.Circuits.Program.wireSupport_input` (theorem, [line 433](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L433))
 
 ```lean
 theorem Program.wireSupport_input
@@ -539,7 +539,7 @@ theorem Program.wireSupport_input
     program.wireSupport (.input input) = {input}
 ```
 
-`Cslib.Circuits.Program.wireSupport_gate_castSucc` (theorem, [line 439](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L439))
+`Cslib.Circuits.Program.wireSupport_gate_castSucc` (theorem, [line 439](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L439))
 
 ```lean
 theorem Program.wireSupport_gate_castSucc
@@ -549,7 +549,7 @@ theorem Program.wireSupport_gate_castSucc
     (program.gate line).wireSupport wire.castSucc = program.wireSupport wire
 ```
 
-`Cslib.Circuits.Program.wireSupport_gate_last` (theorem, [line 447](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L447))
+`Cslib.Circuits.Program.wireSupport_gate_last` (theorem, [line 447](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L447))
 
 ```lean
 theorem Program.wireSupport_gate_last
@@ -559,7 +559,7 @@ theorem Program.wireSupport_gate_last
       line.inputSupport program.wireSupport
 ```
 
-`Cslib.Circuits.Program.trace_congr` (theorem, [line 460](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L460))
+`Cslib.Circuits.Program.trace_congr` (theorem, [line 460](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L460))
 
 > Program traces agree on a wire when its supporting inputs agree.
 
@@ -574,7 +574,7 @@ theorem Program.trace_congr
       program.trace interpretation right wire
 ```
 
-`Cslib.Circuits.Program.map_trace` (theorem, [line 493](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L493))
+`Cslib.Circuits.Program.map_trace` (theorem, [line 493](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L493))
 
 > Evaluating every input and gate wire commutes with a homomorphism.
 
@@ -588,7 +588,7 @@ theorem Program.map_trace
     h.map ∘ p.trace i₁ x = p.trace i₂ (h.map ∘ x)
 ```
 
-`Cslib.Circuits.Program.gateFunction` (definition, [line 506](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L506))
+`Cslib.Circuits.Program.gateFunction` (definition, [line 506](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L506))
 
 > The scalar function computed by an internal gate.
 
@@ -600,7 +600,7 @@ def Program.gateFunction
     (input : Fin inputCount → U) : U
 ```
 
-`Cslib.Circuits.Program.wireFunction` (definition, [line 514](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L514))
+`Cslib.Circuits.Program.wireFunction` (definition, [line 514](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L514))
 
 > The scalar function carried by an input or internal-gate wire.
 
@@ -612,7 +612,7 @@ def Program.wireFunction
     (input : Fin inputCount → U) : U
 ```
 
-`Cslib.Circuits.Program.gateFunction_apply` (theorem, [line 521](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L521))
+`Cslib.Circuits.Program.gateFunction_apply` (theorem, [line 521](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L521))
 
 ```lean
 theorem Program.gateFunction_apply
@@ -624,7 +624,7 @@ theorem Program.gateFunction_apply
       program.eval interpretation input gate
 ```
 
-`Cslib.Circuits.Program.wireFunction_input` (theorem, [line 529](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L529))
+`Cslib.Circuits.Program.wireFunction_input` (theorem, [line 529](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L529))
 
 ```lean
 theorem Program.wireFunction_input
@@ -635,7 +635,7 @@ theorem Program.wireFunction_input
       fun input => input inputWire
 ```
 
-`Cslib.Circuits.Program.wireFunction_gate` (theorem, [line 536](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L536))
+`Cslib.Circuits.Program.wireFunction_gate` (theorem, [line 536](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L536))
 
 ```lean
 theorem Program.wireFunction_gate
@@ -646,7 +646,7 @@ theorem Program.wireFunction_gate
       program.gateFunction interpretation gate
 ```
 
-`Cslib.Circuits.Program.gateFunction_gate_last` (theorem, [line 543](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L543))
+`Cslib.Circuits.Program.gateFunction_gate_last` (theorem, [line 543](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L543))
 
 ```lean
 theorem Program.gateFunction_gate_last
@@ -658,7 +658,7 @@ theorem Program.gateFunction_gate_last
         (program.eval interpretation input)
 ```
 
-`Cslib.Circuits.Program.gateFunction_gate_castSucc` (theorem, [line 553](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L553))
+`Cslib.Circuits.Program.gateFunction_gate_castSucc` (theorem, [line 553](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L553))
 
 ```lean
 theorem Program.gateFunction_gate_castSucc
@@ -670,7 +670,7 @@ theorem Program.gateFunction_gate_castSucc
       program.gateFunction interpretation gate
 ```
 
-`Cslib.Circuits.Program.trace_gateWire` (theorem, [line 563](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L563))
+`Cslib.Circuits.Program.trace_gateWire` (theorem, [line 563](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L563))
 
 ```lean
 theorem Program.trace_gateWire
@@ -682,7 +682,7 @@ theorem Program.trace_gateWire
       program.gateFunction interpretation gate input
 ```
 
-`Cslib.Circuits.Program.lines` (definition, [line 572](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L572))
+`Cslib.Circuits.Program.lines` (definition, [line 572](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L572))
 
 > The program's lines, each widened to the final wire namespace.
 
@@ -691,7 +691,7 @@ def Program.lines {gateCount : Nat} :
     (program : Program σ inputCount gateCount) → Fin gateCount → Line σ inputCount gateCount
 ```
 
-`Cslib.Circuits.Program.lines_gate_last` (theorem, [line 580](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L580))
+`Cslib.Circuits.Program.lines_gate_last` (theorem, [line 580](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L580))
 
 ```lean
 theorem Program.lines_gate_last
@@ -701,7 +701,7 @@ theorem Program.lines_gate_last
       line.mapWires Wire.Renaming.castSucc
 ```
 
-`Cslib.Circuits.Program.lines_gate_castSucc` (theorem, [line 587](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L587))
+`Cslib.Circuits.Program.lines_gate_castSucc` (theorem, [line 587](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L587))
 
 ```lean
 theorem Program.lines_gate_castSucc
@@ -712,7 +712,7 @@ theorem Program.lines_gate_castSucc
       (program.lines gate).mapWires Wire.Renaming.castSucc
 ```
 
-`Cslib.Circuits.Program.lines_eval` (theorem, [line 596](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L596))
+`Cslib.Circuits.Program.lines_eval` (theorem, [line 596](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L596))
 
 > A widened line evaluates to the value of its corresponding program gate.
 
@@ -727,7 +727,7 @@ theorem Program.lines_eval
       program.eval interpretation input gate
 ```
 
-`Cslib.Circuits.Program.eq_eval_of_forall_lines_eval` (theorem, [line 623](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean#L623))
+`Cslib.Circuits.Program.eq_eval_of_forall_lines_eval` (theorem, [line 623](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean#L623))
 
 > A valuation satisfying every gate equation is the program's evaluation.
 
@@ -746,5 +746,5 @@ theorem Program.eq_eval_of_forall_lines_eval
 
 ## Sources
 
-- [Cslib/Computability/Circuit/Program.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Program.lean)
+- [Cslib/Computability/Circuit/Program.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Program.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Circuit.Program.json)

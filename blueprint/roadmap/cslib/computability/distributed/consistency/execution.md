@@ -7,7 +7,7 @@ proof: formalized
 
 # Concrete executions
 
-`Cslib.Computability.Distributed.Consistency.Execution`, in [Cslib/Computability/Distributed/Consistency/Execution.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean), by Ching-Tsun Chou.
+`Cslib.Computability.Distributed.Consistency.Execution`, in [Cslib/Computability/Distributed/Consistency/Execution.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean), by Ching-Tsun Chou.
 
 > A concrete execution is the sequence of events corresponding to the transitions executed
 > by a distributed system containing (potentially) multiple roles.
@@ -21,7 +21,7 @@ proof: formalized
 >
 > * [*Principles of Eventual Consistency*][Burckhardt2014]
 
-`Cslib.DistributedConsistency.ConcreteExecution` (structure, [line 35](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L35))
+`Cslib.DistributedConsistency.ConcreteExecution` (structure, [line 35](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L35))
 
 > Concrete execution structure.
 
@@ -36,7 +36,7 @@ structure ConcreteExecution (Event State Operation Value Message Process Role : 
   del : Event → Event → Prop
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.op` (abbreviation, [line 49](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L49))
+`Cslib.DistributedConsistency.ConcreteExecution.op` (abbreviation, [line 49](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L49))
 
 > The operation of an event.
 
@@ -44,7 +44,7 @@ structure ConcreteExecution (Event State Operation Value Message Process Role : 
 abbrev op (x : Event)
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.rcv` (abbreviation, [line 52](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L52))
+`Cslib.DistributedConsistency.ConcreteExecution.rcv` (abbreviation, [line 52](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L52))
 
 > The received message of an event.
 
@@ -52,7 +52,7 @@ abbrev op (x : Event)
 abbrev rcv (x : Event)
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.proc` (abbreviation, [line 55](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L55))
+`Cslib.DistributedConsistency.ConcreteExecution.proc` (abbreviation, [line 55](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L55))
 
 > The process of an event.
 
@@ -60,7 +60,7 @@ abbrev rcv (x : Event)
 abbrev proc (x : Event)
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.pre` (abbreviation, [line 58](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L58))
+`Cslib.DistributedConsistency.ConcreteExecution.pre` (abbreviation, [line 58](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L58))
 
 > The previous state of an event.
 
@@ -68,7 +68,7 @@ abbrev proc (x : Event)
 abbrev pre (x : Event)
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.post` (abbreviation, [line 61](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L61))
+`Cslib.DistributedConsistency.ConcreteExecution.post` (abbreviation, [line 61](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L61))
 
 > The next state of an event.
 
@@ -76,7 +76,7 @@ abbrev pre (x : Event)
 abbrev post (x : Event)
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.snd` (abbreviation, [line 64](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L64))
+`Cslib.DistributedConsistency.ConcreteExecution.snd` (abbreviation, [line 64](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L64))
 
 > The set of messages sent by an event.
 
@@ -84,7 +84,7 @@ abbrev post (x : Event)
 abbrev snd (x : Event)
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.rval` (abbreviation, [line 67](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L67))
+`Cslib.DistributedConsistency.ConcreteExecution.rval` (abbreviation, [line 67](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L67))
 
 > The value returned by an event.
 
@@ -92,7 +92,7 @@ abbrev snd (x : Event)
 abbrev rval (x : Event)
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.isCall` (abbreviation, [line 70](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L70))
+`Cslib.DistributedConsistency.ConcreteExecution.isCall` (abbreviation, [line 70](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L70))
 
 > An event is considered a call iff it has an operation.
 
@@ -100,7 +100,7 @@ abbrev rval (x : Event)
 abbrev isCall (x : Event)
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.isReturn` (abbreviation, [line 73](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L73))
+`Cslib.DistributedConsistency.ConcreteExecution.isReturn` (abbreviation, [line 73](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L73))
 
 > An event is considered a return iff it has a return value.
 
@@ -108,7 +108,7 @@ abbrev isCall (x : Event)
 abbrev isReturn (x : Event)
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.trajectory` (definition, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L77))
+`Cslib.DistributedConsistency.ConcreteExecution.trajectory` (definition, [line 77](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L77))
 
 > Projecting a concrete execution on a role to obtain a trajectory.
 
@@ -117,7 +117,7 @@ noncomputable def trajectory (r : Role) :
     Trajectory {x : Event // exec.role x = r} State Operation Value Message Process
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.returnOf` (definition, [line 82](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L82))
+`Cslib.DistributedConsistency.ConcreteExecution.returnOf` (definition, [line 82](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L82))
 
 > The return event of an event according to its role's trajectory.
 
@@ -125,7 +125,7 @@ noncomputable def trajectory (r : Role) :
 noncomputable def returnOf (x : Event) : Option Event
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.callOf` (definition, [line 86](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L86))
+`Cslib.DistributedConsistency.ConcreteExecution.callOf` (definition, [line 86](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L86))
 
 > The call event of an event according to its role's trajectory.
 
@@ -133,7 +133,7 @@ noncomputable def returnOf (x : Event) : Option Event
 noncomputable def callOf (x : Event) : Option Event
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.WellFormed` (structure, [line 90](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L90))
+`Cslib.DistributedConsistency.ConcreteExecution.WellFormed` (structure, [line 90](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L90))
 
 > The well-formedness conditions on a concrete execution.
 
@@ -149,7 +149,7 @@ structure WellFormed : Prop where
   del_sender_unique (x1 x2 y : Event) : exec.del x1 y → exec.del x2 y → x1 = x2
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.isCall_eq_isReturn_returnWellFormed` (theorem, [line 102](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L102))
+`Cslib.DistributedConsistency.ConcreteExecution.isCall_eq_isReturn_returnWellFormed` (theorem, [line 102](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L102))
 
 > Lemma 7.1 of [Burckhardt2014]: if all calls return immediately,
 > then the concrete execution is return well-formed.
@@ -159,7 +159,7 @@ theorem isCall_eq_isReturn_returnWellFormed (h : exec.isCall = exec.isReturn) (r
     (exec.trajectory r).ReturnWellFormed
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.HistoryEvent` (abbreviation, [line 107](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L107))
+`Cslib.DistributedConsistency.ConcreteExecution.HistoryEvent` (abbreviation, [line 107](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L107))
 
 > A history contains only call events.
 
@@ -167,7 +167,7 @@ theorem isCall_eq_isReturn_returnWellFormed (h : exec.isCall = exec.isReturn) (r
 abbrev HistoryEvent
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.baseHistory` (definition, [line 110](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L110))
+`Cslib.DistributedConsistency.ConcreteExecution.baseHistory` (definition, [line 110](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L110))
 
 > Extracting a history from a concrete execution by restriction to call events.
 
@@ -175,58 +175,58 @@ abbrev HistoryEvent
 noncomputable def baseHistory : BaseHistory exec.HistoryEvent Operation Value Role
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.self_le_returnOf` (theorem, [line 116](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L116))
+`Cslib.DistributedConsistency.ConcreteExecution.self_le_returnOf` (theorem, [line 116](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L116))
 
 ```lean
 theorem self_le_returnOf {x z : Event} (h : exec.returnOf x = some z) : x ≤ z
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.isReturn_returnOf` (theorem, [line 125](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L125))
+`Cslib.DistributedConsistency.ConcreteExecution.isReturn_returnOf` (theorem, [line 125](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L125))
 
 ```lean
 theorem isReturn_returnOf {x z : Event} (h : exec.returnOf x = some z) : exec.isReturn z
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.rb_strict_order` (theorem, [line 134](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L134))
+`Cslib.DistributedConsistency.ConcreteExecution.rb_strict_order` (theorem, [line 134](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L134))
 
 ```lean
 theorem rb_strict_order : IsStrictOrder exec.HistoryEvent exec.baseHistory.rb
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.rb_pred_finite` (theorem, [line 141](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L141))
+`Cslib.DistributedConsistency.ConcreteExecution.rb_pred_finite` (theorem, [line 141](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L141))
 
 ```lean
 theorem rb_pred_finite (x : exec.HistoryEvent) : (predecessors exec.baseHistory.rb x).Finite
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.not_rb` (theorem, [line 147](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L147))
+`Cslib.DistributedConsistency.ConcreteExecution.not_rb` (theorem, [line 147](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L147))
 
 ```lean
 theorem not_rb {x y : exec.HistoryEvent} {z : Event}
     (hxy : ¬ exec.baseHistory.rb x y) (hx : exec.returnOf x.val = some z) : y ≤ z
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.rb_interval_order` (theorem, [line 151](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L151))
+`Cslib.DistributedConsistency.ConcreteExecution.rb_interval_order` (theorem, [line 151](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L151))
 
 ```lean
 theorem rb_interval_order : IsIntervalOrder exec.baseHistory.rb
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.rb_rval_ne_none` (theorem, [line 160](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L160))
+`Cslib.DistributedConsistency.ConcreteExecution.rb_rval_ne_none` (theorem, [line 160](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L160))
 
 ```lean
 theorem rb_rval_ne_none {x y : exec.HistoryEvent}
     (h : exec.baseHistory.rb x y) : exec.baseHistory.rval x ≠ none
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.rb_of_lt` (theorem, [line 166](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L166))
+`Cslib.DistributedConsistency.ConcreteExecution.rb_of_lt` (theorem, [line 166](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L166))
 
 ```lean
 theorem rb_of_lt (hwf : exec.WellFormed) {x y : exec.HistoryEvent}
     (hr : exec.role x.val = exec.role y.val) (hlt : x.val < y.val) : exec.baseHistory.rb x y
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.so_strict_total_order` (theorem, [line 174](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L174))
+`Cslib.DistributedConsistency.ConcreteExecution.so_strict_total_order` (theorem, [line 174](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L174))
 
 ```lean
 theorem so_strict_total_order (hwf : exec.WellFormed) (r : Role) :
@@ -234,7 +234,7 @@ theorem so_strict_total_order (hwf : exec.WellFormed) (r : Role) :
       (exec.baseHistory.so r)
 ```
 
-`Cslib.DistributedConsistency.ConcreteExecution.history` (definition, [line 191](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean#L191))
+`Cslib.DistributedConsistency.ConcreteExecution.history` (definition, [line 191](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean#L191))
 
 > The history extracted from a concrete execution by restriction to call events
 > is a well-defined history.
@@ -251,5 +251,5 @@ noncomputable def history (hwf : exec.WellFormed) :
 
 ## Sources
 
-- [Cslib/Computability/Distributed/Consistency/Execution.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Execution.lean)
+- [Cslib/Computability/Distributed/Consistency/Execution.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Execution.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Distributed.Consistency.Execution.json)

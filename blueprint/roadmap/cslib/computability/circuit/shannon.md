@@ -7,7 +7,7 @@ proof: formalized
 
 # Shannon's lower bounds for finite carriers
 
-`Cslib.Computability.Circuit.Shannon`, in [Cslib/Computability/Circuit/Shannon.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Shannon.lean), by Samuel Schlesinger.
+`Cslib.Computability.Circuit.Shannon`, in [Cslib/Computability/Circuit/Shannon.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Shannon.lean), by Samuel Schlesinger.
 
 > `exists_hard_full_function` gives a finite criterion for the full basis with every parameter
 > explicit, including the arity. The following asymptotic theorem specializes to binary bases.
@@ -31,7 +31,7 @@ proof: formalized
 > * [Stasys Jukna, *Boolean Function Complexity: Advances and Frontiers*][Jukna2012]:
 >   Lemma 1.12 and Theorem 1.14, a modern treatment of Boolean circuit counting.
 
-`Cslib.Circuits.Shannon.exists_hard_function_of_card_lt` (theorem, [line 57](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Shannon.lean#L57))
+`Cslib.Circuits.Shannon.exists_hard_function_of_card_lt` (theorem, [line 57](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Shannon.lean#L57))
 
 > A finite counting bound yields a hard function without asymptotic assumptions.
 
@@ -42,7 +42,7 @@ theorem exists_hard_function_of_card_lt [Finite σ.Op] [Finite U]
     ∃ f : (Fin n → U) → U, ∀ c : Circuit σ n 1, c.Computes I (single f) → s < c.size
 ```
 
-`Cslib.Circuits.Shannon.exists_hard_full_function` (theorem, [line 67](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Shannon.lean#L67))
+`Cslib.Circuits.Shannon.exists_hard_full_function` (theorem, [line 67](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Shannon.lean#L67))
 
 > A finite Shannon criterion for the full basis, valid simultaneously for every arity,
 > input count, and gate budget. The factorial correction accounts for gate relabelings.
@@ -55,7 +55,7 @@ theorem exists_hard_full_function [Finite U] (k n s : ℕ)
       c.Computes fullInterpretation (single f) → s < c.size
 ```
 
-`Cslib.Circuits.Shannon.tendsto_card_computableFunctions_div` (theorem, [line 157](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Shannon.lean#L157))
+`Cslib.Circuits.Shannon.tendsto_card_computableFunctions_div` (theorem, [line 157](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Shannon.lean#L157))
 
 > Almost all functions on `n` inputs require more than `|U|ⁿ/n` gates over a fixed finite
 > signature whose operations have arity at most two: the fraction of functions computable within
@@ -68,7 +68,7 @@ theorem tendsto_card_computableFunctions_div [Finite σ.Op] [Finite U] [Nontrivi
       (card U : ℝ) ^ (card U ^ n)) atTop (𝓝 0)
 ```
 
-`Cslib.Circuits.Shannon.exists_hard_function` (theorem, [line 174](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Shannon.lean#L174))
+`Cslib.Circuits.Shannon.exists_hard_function` (theorem, [line 174](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Shannon.lean#L174))
 
 > For all sufficiently large `n`, some function on `n` inputs over `U` requires more than
 > `|U|ⁿ/n` gates over a signature whose operations have arity at most two, which may have
@@ -95,5 +95,5 @@ theorem exists_hard_function [Finite U] [Nontrivial U]
 
 ## Sources
 
-- [Cslib/Computability/Circuit/Shannon.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Shannon.lean)
+- [Cslib/Computability/Circuit/Shannon.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Shannon.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Circuit.Shannon.json)

@@ -7,12 +7,12 @@ proof: formalized
 
 # Union of LTSs
 
-`Cslib.Foundations.Semantics.LTS.Union`, in [Cslib/Foundations/Semantics/LTS/Union.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Union.lean), by Fabrizio Montesi.
+`Cslib.Foundations.Semantics.LTS.Union`, in [Cslib/Foundations/Semantics/LTS/Union.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Union.lean), by Fabrizio Montesi.
 
 > Note: there is a nontrivial balance between ergonomics and generality here. These definitions might
 > change in the future.
 
-`Cslib.LTS.union` (definition, [line 27](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Union.lean#L27))
+`Cslib.LTS.union` (definition, [line 27](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Union.lean#L27))
 
 > The union of two LTSs defined on the same types.
 
@@ -20,7 +20,7 @@ proof: formalized
 def union (lts1 lts2 : LTS State Label) : LTS State Label
 ```
 
-`Cslib.LTS.unionSubtype` (definition, [line 31](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Union.lean#L31))
+`Cslib.LTS.unionSubtype` (definition, [line 31](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Union.lean#L31))
 
 > The union of two LTSs that have common supertypes for states and labels.
 
@@ -32,7 +32,7 @@ def unionSubtype
   LTS State Label
 ```
 
-`Cslib.LTS.inl` (definition, [line 41](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Union.lean#L41))
+`Cslib.LTS.inl` (definition, [line 41](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Union.lean#L41))
 
 > Lifting of an `LTS State Label` to `LTS (State ⊕ State') Label`.
 
@@ -41,7 +41,7 @@ def inl (lts : LTS State Label) :
     LTS { x : State ⊕ State' // x.isLeft } { _label : Label // True }
 ```
 
-`Cslib.LTS.inr` (definition, [line 49](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Union.lean#L49))
+`Cslib.LTS.inr` (definition, [line 49](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Union.lean#L49))
 
 > Lifting of an `LTS State Label` to `LTS (State' ⊕ State) Label`.
 
@@ -50,7 +50,7 @@ def inr (lts : LTS State Label) :
     LTS { x : State' ⊕ State // x.isRight } { _label : Label // True }
 ```
 
-`Cslib.LTS.unionSum` (definition, [line 58](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Union.lean#L58))
+`Cslib.LTS.unionSum` (definition, [line 58](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Union.lean#L58))
 
 > Union of two LTSs with the same `Label` type. The result combines the original respective
 > state types `State1` and `State2` into `(State1 ⊕ State2)`.
@@ -60,35 +60,35 @@ def unionSum (lts1 : LTS State1 Label) (lts2 : LTS State2 Label) :
     LTS (State1 ⊕ State2) Label
 ```
 
-`Cslib.LTS.unionSum_tr_inl_inl` (theorem, [line 67](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Union.lean#L67))
+`Cslib.LTS.unionSum_tr_inl_inl` (theorem, [line 67](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Union.lean#L67))
 
 ```lean
 theorem unionSum_tr_inl_inl {s s' : State1} {μ : Label} :
     (unionSum lts1 lts2).Tr (.inl s) μ (.inl s') ↔ lts1.Tr s μ s'
 ```
 
-`Cslib.LTS.unionSum_tr_inr_inr` (theorem, [line 72](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Union.lean#L72))
+`Cslib.LTS.unionSum_tr_inr_inr` (theorem, [line 72](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Union.lean#L72))
 
 ```lean
 theorem unionSum_tr_inr_inr {s s' : State2} {μ : Label} :
     (unionSum lts1 lts2).Tr (.inr s) μ (.inr s') ↔ lts2.Tr s μ s'
 ```
 
-`Cslib.LTS.unionSum_not_tr_inl_inr` (theorem, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Union.lean#L77))
+`Cslib.LTS.unionSum_not_tr_inl_inr` (theorem, [line 77](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Union.lean#L77))
 
 ```lean
 theorem unionSum_not_tr_inl_inr {s : State1} {s' : State2} {μ : Label} :
     ¬(unionSum lts1 lts2).Tr (.inl s) μ (.inr s')
 ```
 
-`Cslib.LTS.unionSum_not_tr_inr_inl` (theorem, [line 82](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Union.lean#L82))
+`Cslib.LTS.unionSum_not_tr_inr_inl` (theorem, [line 82](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Union.lean#L82))
 
 ```lean
 theorem unionSum_not_tr_inr_inl {s : State2} {s' : State1} {μ : Label} :
     ¬(unionSum lts1 lts2).Tr (.inr s) μ (.inl s')
 ```
 
-`Cslib.LTS.unionSum_mTr_inl` (theorem, [line 88](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Union.lean#L88))
+`Cslib.LTS.unionSum_mTr_inl` (theorem, [line 88](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Union.lean#L88))
 
 > A run of `unionSum lts1 lts2` from a state of `lts1` stays among the states of `lts1`, where it
 > is a run of `lts1`.
@@ -98,7 +98,7 @@ theorem unionSum_mTr_inl {s : State1} {μs : List Label} {y : State1 ⊕ State2}
     (h : (unionSum lts1 lts2).MTr (.inl s) μs y) : ∃ t, y = .inl t ∧ lts1.MTr s μs t
 ```
 
-`Cslib.LTS.unionSum_mTr_inr` (theorem, [line 103](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Union.lean#L103))
+`Cslib.LTS.unionSum_mTr_inr` (theorem, [line 103](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Union.lean#L103))
 
 > A run of `unionSum lts1 lts2` from a state of `lts2` stays among the states of `lts2`, where it
 > is a run of `lts2`.
@@ -108,7 +108,7 @@ theorem unionSum_mTr_inr {s : State2} {μs : List Label} {y : State1 ⊕ State2}
     (h : (unionSum lts1 lts2).MTr (.inr s) μs y) : ∃ t, y = .inr t ∧ lts2.MTr s μs t
 ```
 
-`Cslib.LTS.unionSum_mTr_inl_iff` (theorem, [line 117](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Union.lean#L117))
+`Cslib.LTS.unionSum_mTr_inl_iff` (theorem, [line 117](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Union.lean#L117))
 
 > The runs of `unionSum lts1 lts2` between states of `lts1` are the runs of `lts1`.
 
@@ -117,7 +117,7 @@ theorem unionSum_mTr_inl_iff {s t : State1} {μs : List Label} :
     (unionSum lts1 lts2).MTr (.inl s) μs (.inl t) ↔ lts1.MTr s μs t
 ```
 
-`Cslib.LTS.unionSum_mTr_inr_iff` (theorem, [line 128](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Union.lean#L128))
+`Cslib.LTS.unionSum_mTr_inr_iff` (theorem, [line 128](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Union.lean#L128))
 
 > The runs of `unionSum lts1 lts2` between states of `lts2` are the runs of `lts2`.
 
@@ -132,5 +132,5 @@ theorem unionSum_mTr_inr_iff {s t : State2} {μs : List Label} :
 
 ## Sources
 
-- [Cslib/Foundations/Semantics/LTS/Union.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Union.lean)
+- [Cslib/Foundations/Semantics/LTS/Union.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Union.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.LTS.Union.json)

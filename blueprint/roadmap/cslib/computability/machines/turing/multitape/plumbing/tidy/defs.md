@@ -7,7 +7,7 @@ proof: formalized
 
 # Tidy computations
 
-`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean), by Christian Reitwiessner.
+`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean), by Christian Reitwiessner.
 
 > A machine computes *tidily* if it clears its work tapes before halting and moves all tape heads
 > to their initial position.
@@ -35,7 +35,7 @@ proof: formalized
 
 > ### Tidy computations
 
-`Turing.MultiTapeTM.ComputesTidilyInTimeAndSpace` (abbreviation, [line 50](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean#L50))
+`Turing.MultiTapeTM.ComputesTidilyInTimeAndSpace` (abbreviation, [line 50](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean#L50))
 
 > `ComputesTidilyInTimeAndSpace tm input output t s`: started on `input` with blank work tapes,
 > `tm` halts within `t` steps and `s` work-tape cells, having emitted `output`, with every work tape
@@ -46,7 +46,7 @@ abbrev ComputesTidilyInTimeAndSpace (tm : MultiTapeTM k Symbol State)
     (input output : List Symbol) (t s : ℕ) : Prop
 ```
 
-`Turing.MultiTapeTM.computesTidily_iff` (theorem, [line 57](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean#L57))
+`Turing.MultiTapeTM.computesTidily_iff` (theorem, [line 57](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean#L57))
 
 > A tidy computation is a single run path between `Turing.MultiTapeTM.wordsCfg` configurations
 > with blank work tapes, which emits the output, within the time and space bounds.
@@ -58,7 +58,7 @@ theorem computesTidily_iff {input output : List Symbol} :
         p.last = wordsCfg input none (fun _ => []) output ∧ p.time ≤ t ∧ p.space ≤ s
 ```
 
-`Turing.MultiTapeTM.ComputesTidilyInTimeAndSpace.mono` (theorem, [line 69](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean#L69))
+`Turing.MultiTapeTM.ComputesTidilyInTimeAndSpace.mono` (theorem, [line 69](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean#L69))
 
 > Resource bounds can be weakened.
 
@@ -70,7 +70,7 @@ theorem ComputesTidilyInTimeAndSpace.mono {input output : List Symbol} {t' s' : 
 
 > ### Tidily computing a function
 
-`Turing.MultiTapeTM.ComputesFunTidilyInTimeAndSpace` (definition, [line 80](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean#L80))
+`Turing.MultiTapeTM.ComputesFunTidilyInTimeAndSpace` (definition, [line 80](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean#L80))
 
 > `ComputesFunTidilyInTimeAndSpace tm encIn encOut f t s`: for every `a`, the machine computes
 > `encOut (f a)` from `encIn a` tidily, within `t a` steps and `s a` cells.
@@ -80,7 +80,7 @@ def ComputesFunTidilyInTimeAndSpace (tm : MultiTapeTM k Symbol State)
     (encIn : α ↪ List Symbol) (encOut : β ↪ List Symbol) (f : α → β) (t s : α → ℕ) : Prop
 ```
 
-`Turing.MultiTapeTM.ComputesFunTidilyInTimeAndSpace.mono` (theorem, [line 85](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean#L85))
+`Turing.MultiTapeTM.ComputesFunTidilyInTimeAndSpace.mono` (theorem, [line 85](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean#L85))
 
 > Resource bounds can be weakened independently on every input.
 
@@ -93,7 +93,7 @@ theorem ComputesFunTidilyInTimeAndSpace.mono {encIn : α ↪ List Symbol} {encOu
 
 > ### Tidy computability
 
-`Turing.MultiTapeTM.ComputableTidilyInTimeAndSpace` (definition, [line 95](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean#L95))
+`Turing.MultiTapeTM.ComputableTidilyInTimeAndSpace` (definition, [line 95](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean#L95))
 
 > Some machine with binary alphabet and finitely many states computes `f` tidily within the
 > bounds `t` and `s`. The bounds include the cost of restoring the tapes.
@@ -103,7 +103,7 @@ def ComputableTidilyInTimeAndSpace (f : α → β) (encIn : α ↪ List Bool) (e
     (t s : α → ℕ) : Prop
 ```
 
-`Turing.MultiTapeTM.ComputableTidilyInTimeAndSpaceOfLength` (abbreviation, [line 103](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean#L103))
+`Turing.MultiTapeTM.ComputableTidilyInTimeAndSpaceOfLength` (abbreviation, [line 103](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean#L103))
 
 > `Turing.MultiTapeTM.ComputableTidilyInTimeAndSpace` with the bounds `t` and `s` evaluated at the
 > length of the encoded input: the tidy analog of
@@ -114,7 +114,7 @@ abbrev ComputableTidilyInTimeAndSpaceOfLength (f : α → β) (encIn : α ↪ Li
     (encOut : β ↪ List Bool) (t s : ℕ → ℕ) : Prop
 ```
 
-`Turing.MultiTapeTM.ComputableTidilyInTimeAndSpace.mono` (theorem, [line 109](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean#L109))
+`Turing.MultiTapeTM.ComputableTidilyInTimeAndSpace.mono` (theorem, [line 109](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean#L109))
 
 > Tidy computability is monotone in the resource bounds.
 
@@ -132,5 +132,5 @@ theorem ComputableTidilyInTimeAndSpace.mono {f : α → β} {encIn : α ↪ List
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean)
 - [Declaration ledger](../../../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs.json)

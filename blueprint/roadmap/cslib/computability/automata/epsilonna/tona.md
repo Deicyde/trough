@@ -7,9 +7,9 @@ proof: formalized
 
 # Translation of εNA into NA
 
-`Cslib.Computability.Automata.EpsilonNA.ToNA`, in [Cslib/Computability/Automata/EpsilonNA/ToNA.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/EpsilonNA/ToNA.lean), by Fabrizio Montesi.
+`Cslib.Computability.Automata.EpsilonNA.ToNA`, in [Cslib/Computability/Automata/EpsilonNA/ToNA.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/EpsilonNA/ToNA.lean), by Fabrizio Montesi.
 
-`Cslib.Automata.εNA.FinAcc.toNAFinAcc` (definition, [line 22](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/EpsilonNA/ToNA.lean#L22))
+`Cslib.Automata.εNA.FinAcc.toNAFinAcc` (definition, [line 22](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/EpsilonNA/ToNA.lean#L22))
 
 > Any `εNA.FinAcc` can be converted into an `NA.FinAcc` that does not use ε-transitions.
 
@@ -17,7 +17,7 @@ proof: formalized
 def toNAFinAcc (a : εNA.FinAcc State Symbol) : NA.FinAcc State Symbol
 ```
 
-`Cslib.Automata.εNA.FinAcc.toNAFinAcc_language_eq` (theorem, [line 31](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/EpsilonNA/ToNA.lean#L31))
+`Cslib.Automata.εNA.FinAcc.toNAFinAcc_language_eq` (theorem, [line 31](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/EpsilonNA/ToNA.lean#L31))
 
 > Correctness of `toNAFinAcc`.
 
@@ -33,5 +33,5 @@ theorem toNAFinAcc_language_eq {a : εNA.FinAcc State Symbol} :
 
 ## Sources
 
-- [Cslib/Computability/Automata/EpsilonNA/ToNA.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/EpsilonNA/ToNA.lean)
+- [Cslib/Computability/Automata/EpsilonNA/ToNA.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/EpsilonNA/ToNA.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.EpsilonNA.ToNA.json)

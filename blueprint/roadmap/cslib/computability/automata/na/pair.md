@@ -7,9 +7,9 @@ proof: formalized
 
 # Languages determined by pairs of states
 
-`Cslib.Computability.Automata.NA.Pair`, in [Cslib/Computability/Automata/NA/Pair.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Pair.lean), by Ching-Tsun Chou.
+`Cslib.Computability.Automata.NA.Pair`, in [Cslib/Computability/Automata/NA/Pair.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Pair.lean), by Ching-Tsun Chou.
 
-`Cslib.LTS.pairLang` (definition, [line 25](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Pair.lean#L25))
+`Cslib.LTS.pairLang` (definition, [line 25](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Pair.lean#L25))
 
 > `LTS.pairLang s t` is the language of finite words that can take the LTS
 > from state `s` to state `t`.
@@ -18,14 +18,14 @@ proof: formalized
 def LTS.pairLang (lts : LTS State Symbol) (s t : State) : Language Symbol
 ```
 
-`Cslib.LTS.mem_pairLang` (theorem, [line 29](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Pair.lean#L29))
+`Cslib.LTS.mem_pairLang` (theorem, [line 29](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Pair.lean#L29))
 
 ```lean
 theorem LTS.mem_pairLang {lts : LTS State Symbol} {s t : State} {xs : List Symbol} :
     xs ∈ lts.pairLang s t ↔ lts.MTr s xs t
 ```
 
-`Cslib.LTS.pairLang_regular` (theorem, [line 34](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Pair.lean#L34))
+`Cslib.LTS.pairLang_regular` (theorem, [line 34](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Pair.lean#L34))
 
 > `LTS.pairLang s t` is a regular language if there are only finitely many states.
 
@@ -34,7 +34,7 @@ theorem LTS.pairLang_regular [Finite State] {lts : LTS State Symbol} {s t : Stat
     (lts.pairLang s t).IsRegular
 ```
 
-`Cslib.LTS.pairViaLang` (definition, [line 43](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Pair.lean#L43))
+`Cslib.LTS.pairViaLang` (definition, [line 43](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Pair.lean#L43))
 
 > `LTS.pairViaLang via s t` is the language of finite words that can take the LTS
 > from state `s` to state `t` via a state in `via`.
@@ -43,7 +43,7 @@ theorem LTS.pairLang_regular [Finite State] {lts : LTS State Symbol} {s t : Stat
 def LTS.pairViaLang (lts : LTS State Symbol) (via : Set State) (s t : State) : Language Symbol
 ```
 
-`Cslib.LTS.mem_pairViaLang` (theorem, [line 47](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Pair.lean#L47))
+`Cslib.LTS.mem_pairViaLang` (theorem, [line 47](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Pair.lean#L47))
 
 ```lean
 theorem LTS.mem_pairViaLang {lts : LTS State Symbol} {via : Set State}
@@ -51,7 +51,7 @@ theorem LTS.mem_pairViaLang {lts : LTS State Symbol} {via : Set State}
       ∃ r ∈ via, ∃ xs1 xs2, lts.MTr s xs1 r ∧ lts.MTr r xs2 t ∧ xs1 ++ xs2 = xs
 ```
 
-`Cslib.LTS.pairViaLang_regular` (theorem, [line 54](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Pair.lean#L54))
+`Cslib.LTS.pairViaLang_regular` (theorem, [line 54](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Pair.lean#L54))
 
 > `LTS.pairViaLang via s t` is a regular language if there are only finitely many states.
 
@@ -60,7 +60,7 @@ theorem LTS.pairViaLang_regular [Finite State] {lts : LTS State Symbol}
     {via : Set State} {s t : State} : (lts.pairViaLang via s t).IsRegular
 ```
 
-`Cslib.LTS.pairLang_append` (theorem, [line 59](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Pair.lean#L59))
+`Cslib.LTS.pairLang_append` (theorem, [line 59](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Pair.lean#L59))
 
 ```lean
 theorem LTS.pairLang_append {lts : LTS State Symbol} {s0 s1 s2 : State} {xs1 xs2 : List Symbol}
@@ -68,7 +68,7 @@ theorem LTS.pairLang_append {lts : LTS State Symbol} {s0 s1 s2 : State} {xs1 xs2
     xs1 ++ xs2 ∈ lts.pairLang s0 s2
 ```
 
-`Cslib.LTS.pairLang_split` (theorem, [line 64](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Pair.lean#L64))
+`Cslib.LTS.pairLang_split` (theorem, [line 64](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Pair.lean#L64))
 
 ```lean
 theorem LTS.pairLang_split {lts : LTS State Symbol} {s0 s2 : State} {xs1 xs2 : List Symbol}
@@ -76,7 +76,7 @@ theorem LTS.pairLang_split {lts : LTS State Symbol} {s0 s2 : State} {xs1 xs2 : L
     ∃ s1, xs1 ∈ lts.pairLang s0 s1 ∧ xs2 ∈ lts.pairLang s1 s2
 ```
 
-`Cslib.LTS.pairViaLang_append_pairLang` (theorem, [line 71](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Pair.lean#L71))
+`Cslib.LTS.pairViaLang_append_pairLang` (theorem, [line 71](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Pair.lean#L71))
 
 ```lean
 theorem LTS.pairViaLang_append_pairLang {lts : LTS State Symbol}
@@ -85,7 +85,7 @@ theorem LTS.pairViaLang_append_pairLang {lts : LTS State Symbol}
     xs1 ++ xs2 ∈ lts.pairViaLang via s0 s2
 ```
 
-`Cslib.LTS.pairLang_append_pairViaLang` (theorem, [line 80](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Pair.lean#L80))
+`Cslib.LTS.pairLang_append_pairViaLang` (theorem, [line 80](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Pair.lean#L80))
 
 ```lean
 theorem LTS.pairLang_append_pairViaLang {lts : LTS State Symbol}
@@ -94,7 +94,7 @@ theorem LTS.pairLang_append_pairViaLang {lts : LTS State Symbol}
     xs1 ++ xs2 ∈ lts.pairViaLang via s0 s2
 ```
 
-`Cslib.LTS.pairViaLang_split` (theorem, [line 86](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Pair.lean#L86))
+`Cslib.LTS.pairViaLang_split` (theorem, [line 86](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Pair.lean#L86))
 
 ```lean
 theorem LTS.pairViaLang_split {lts : LTS State Symbol} {s0 s2 : State} {xs1 xs2 : List Symbol}
@@ -103,7 +103,7 @@ theorem LTS.pairViaLang_split {lts : LTS State Symbol} {s0 s2 : State} {xs1 xs2 
           xs1 ∈ lts.pairLang s0 s1 ∧ xs2 ∈ lts.pairViaLang via s1 s2
 ```
 
-`Cslib.Automata.NA.Buchi.language_eq_fin_iSup_hmul_omegaPow` (theorem, [line 106](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Pair.lean#L106))
+`Cslib.Automata.NA.Buchi.language_eq_fin_iSup_hmul_omegaPow` (theorem, [line 106](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Pair.lean#L106))
 
 > The ω-language accepted by a finite-state Büchi automaton is the finite union of ω-languages
 > of the form `L * M^ω`, where all `L`s and `M`s are regular languages.
@@ -125,5 +125,5 @@ theorem language_eq_fin_iSup_hmul_omegaPow
 
 ## Sources
 
-- [Cslib/Computability/Automata/NA/Pair.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Pair.lean)
+- [Cslib/Computability/Automata/NA/Pair.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Pair.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.NA.Pair.json)

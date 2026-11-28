@@ -7,7 +7,7 @@ proof: formalized
 
 # URM Execution Semantics
 
-`Cslib.Computability.URM.Execution`, in [Cslib/Computability/URM/Execution.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean), by Jesse Alama.
+`Cslib.Computability.URM.Execution`, in [Cslib/Computability/URM/Execution.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean), by Jesse Alama.
 
 > Single-step and multi-step execution semantics for URMs.
 >
@@ -37,7 +37,7 @@ proof: formalized
 > - `step_confluent`: The step relation is confluent (from determinism)
 > - `haltsWithResult_iff_eval`: `p ↓ inputs ≫ result ↔ eval p inputs = Part.some result`
 
-`Cslib.URM.Step` (inductive type, [line 59](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L59))
+`Cslib.URM.Step` (inductive type, [line 59](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L59))
 
 > Single-step execution relation for URMs.
 >
@@ -69,7 +69,7 @@ inductive Step : State → State → Prop where
       Step s ⟨s.pc + 1, s.regs⟩
 ```
 
-`Cslib.URM.Steps` (abbreviation, [line 79](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L79))
+`Cslib.URM.Steps` (abbreviation, [line 79](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L79))
 
 > Multi-step execution: the reflexive-transitive closure of `Step`.
 
@@ -77,7 +77,7 @@ inductive Step : State → State → Prop where
 abbrev Steps : State → State → Prop
 ```
 
-`Cslib.URM.Step.deterministic` (theorem, [line 87](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L87))
+`Cslib.URM.Step.deterministic` (theorem, [line 87](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L87))
 
 > The step relation is deterministic: each state has at most one successor.
 
@@ -85,7 +85,7 @@ abbrev Steps : State → State → Prop
 theorem deterministic : Relator.RightUnique (Step p)
 ```
 
-`Cslib.URM.Step.no_step_of_halted` (theorem, [line 90](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L90))
+`Cslib.URM.Step.no_step_of_halted` (theorem, [line 90](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L90))
 
 > A halted state has no successor in the step relation.
 
@@ -93,7 +93,7 @@ theorem deterministic : Relator.RightUnique (Step p)
 theorem no_step_of_halted {s s' : State} (hhalted : s.isHalted p) : ¬Step p s s'
 ```
 
-`Cslib.URM.Step.preserves_register` (theorem, [line 97](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L97))
+`Cslib.URM.Step.preserves_register` (theorem, [line 97](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L97))
 
 > A single step preserves registers not written to by the current instruction.
 >
@@ -109,7 +109,7 @@ theorem preserves_register {s s' : State} {r : ℕ}
 
 > ### Step Properties
 
-`Cslib.URM.isHalted_iff_normal` (theorem, [line 113](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L113))
+`Cslib.URM.isHalted_iff_normal` (theorem, [line 113](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L113))
 
 > A state is halted iff it is normal (has no successor) in the reduction system.
 
@@ -118,7 +118,7 @@ theorem isHalted_iff_normal {p : Program} {s : State} :
     s.isHalted p ↔ Relation.Normal (Step p) s
 ```
 
-`Cslib.URM.step_confluent` (theorem, [line 135](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L135))
+`Cslib.URM.step_confluent` (theorem, [line 135](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L135))
 
 > The step relation is confluent.
 
@@ -126,7 +126,7 @@ theorem isHalted_iff_normal {p : Program} {s : State} :
 theorem step_confluent (p : Program) : Relation.Confluent (Step p)
 ```
 
-`Cslib.URM.Steps.preserves_register` (theorem, [line 144](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L144))
+`Cslib.URM.Steps.preserves_register` (theorem, [line 144](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L144))
 
 > Multi-step execution preserves registers not written by any executed instruction.
 
@@ -137,7 +137,7 @@ theorem preserves_register {s s' : State} {r : ℕ}
     s'.regs.read r = s.regs.read r
 ```
 
-`Cslib.URM.Steps.eq_of_halts` (theorem, [line 156](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L156))
+`Cslib.URM.Steps.eq_of_halts` (theorem, [line 156](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L156))
 
 > If two halted states are reachable from the same start, they are equal.
 >
@@ -150,7 +150,7 @@ theorem eq_of_halts {init s₁ s₂ : State}
     (h2 : Steps p init s₂) (hh2 : s₂.isHalted p) : s₁ = s₂
 ```
 
-`Cslib.URM.Halts` (definition, [line 172](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L172))
+`Cslib.URM.Halts` (definition, [line 172](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L172))
 
 > A program halts on given inputs if execution reaches a halted state.
 >
@@ -161,7 +161,7 @@ theorem eq_of_halts {init s₁ s₂ : State}
 def Halts (inputs : List ℕ) : Prop
 ```
 
-`Cslib.URM.halts_iff_normalizable` (theorem, [line 176](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L176))
+`Cslib.URM.halts_iff_normalizable` (theorem, [line 176](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L176))
 
 > Halting is equivalent to normalizability in the reduction system.
 
@@ -170,7 +170,7 @@ theorem halts_iff_normalizable {p : Program} {inputs : List ℕ} :
     Halts p inputs ↔ Relation.Normalizable (Step p) (State.init inputs)
 ```
 
-`Cslib.URM.Diverges` (definition, [line 181](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L181))
+`Cslib.URM.Diverges` (definition, [line 181](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L181))
 
 > A program diverges on given inputs if it does not halt.
 
@@ -178,7 +178,7 @@ theorem halts_iff_normalizable {p : Program} {inputs : List ℕ} :
 def Diverges (inputs : List ℕ) : Prop
 ```
 
-`Cslib.URM.HaltsWithResult` (definition, [line 184](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L184))
+`Cslib.URM.HaltsWithResult` (definition, [line 184](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L184))
 
 > A program halts on given inputs with a specific result in R[0].
 
@@ -186,7 +186,7 @@ def Diverges (inputs : List ℕ) : Prop
 def HaltsWithResult (inputs : List ℕ) (result : ℕ) : Prop
 ```
 
-`Cslib.URM.HaltsWithResult.toHalts` (theorem, [line 200](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L200))
+`Cslib.URM.HaltsWithResult.toHalts` (theorem, [line 200](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L200))
 
 > If a program halts with a result, it halts.
 
@@ -195,7 +195,7 @@ theorem toHalts {inputs : List ℕ} {result : ℕ}
     (h : p ↓ inputs ≫ result) : p ↓ inputs
 ```
 
-`Cslib.URM.evalState` (definition, [line 208](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L208))
+`Cslib.URM.evalState` (definition, [line 208](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L208))
 
 > Evaluation returning the full halting state.
 
@@ -203,7 +203,7 @@ theorem toHalts {inputs : List ℕ} {result : ℕ}
 noncomputable def evalState (inputs : List ℕ) : Part State
 ```
 
-`Cslib.URM.evalState_spec` (theorem, [line 212](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L212))
+`Cslib.URM.evalState_spec` (theorem, [line 212](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L212))
 
 > Specification: the state from evalState satisfies Steps and isHalted.
 
@@ -213,7 +213,7 @@ theorem evalState_spec {inputs : List ℕ} (h : (evalState p inputs).Dom) :
     Steps p (State.init inputs) s ∧ s.isHalted p
 ```
 
-`Cslib.URM.Halts.toHaltsWithResult` (theorem, [line 222](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L222))
+`Cslib.URM.Halts.toHaltsWithResult` (theorem, [line 222](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L222))
 
 > If a program halts, it halts with the output of the final state.
 
@@ -222,7 +222,7 @@ theorem toHaltsWithResult {inputs : List ℕ} (h : p ↓ inputs) :
     p ↓ inputs ≫ ((evalState p inputs).get h).regs.output
 ```
 
-`Cslib.URM.eval` (definition, [line 232](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L232))
+`Cslib.URM.eval` (definition, [line 232](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L232))
 
 > Evaluation as a partial function using `Part`.
 > Defined when the program halts, returning the value in register 0.
@@ -231,7 +231,7 @@ theorem toHaltsWithResult {inputs : List ℕ} (h : p ↓ inputs) :
 noncomputable def eval (inputs : List ℕ) : Part ℕ
 ```
 
-`Cslib.URM.haltsWithResult_iff_eval` (theorem, [line 236](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L236))
+`Cslib.URM.haltsWithResult_iff_eval` (theorem, [line 236](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L236))
 
 > A program halts with result `a` iff evaluation returns `Part.some a`.
 
@@ -240,7 +240,7 @@ theorem haltsWithResult_iff_eval {inputs : List ℕ} {result : ℕ} :
     p ↓ inputs ≫ result ↔ eval p inputs = Part.some result
 ```
 
-`Cslib.URM.ProgramEquiv` (definition, [line 252](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L252))
+`Cslib.URM.ProgramEquiv` (definition, [line 252](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L252))
 
 > Two programs are equivalent if they produce the same result for all inputs.
 
@@ -248,7 +248,7 @@ theorem haltsWithResult_iff_eval {inputs : List ℕ} {result : ℕ} :
 def ProgramEquiv (p q : Program) : Prop
 ```
 
-`Cslib.URM.ProgramEquiv.equivalence` (theorem, [line 256](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean#L256))
+`Cslib.URM.ProgramEquiv.equivalence` (theorem, [line 256](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean#L256))
 
 > Program equivalence is an equivalence relation.
 
@@ -267,5 +267,5 @@ theorem ProgramEquiv.equivalence : Equivalence ProgramEquiv
 
 ## Sources
 
-- [Cslib/Computability/URM/Execution.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Execution.lean)
+- [Cslib/Computability/URM/Execution.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Execution.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.URM.Execution.json)

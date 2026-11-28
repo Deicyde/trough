@@ -7,14 +7,14 @@ proof: formalized
 
 # Signatures and interpretations
 
-`Cslib.Computability.Circuit.Signature`, in [Cslib/Computability/Circuit/Signature.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Signature.lean), by Samuel Schlesinger.
+`Cslib.Computability.Circuit.Signature`, in [Cslib/Computability/Circuit/Signature.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Signature.lean), by Samuel Schlesinger.
 
 > A `Signature` specifies operation symbols with finite arities. The set of symbols
 > may be infinite, and their arities need not have a uniform bound.
 > An `Interpretation` assigns each symbol an operation on a carrier type.
 > Programs and circuits keep the signature separate from its interpretation.
 
-`Cslib.Circuits.Signature` (structure, [line 26](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Signature.lean#L26))
+`Cslib.Circuits.Signature` (structure, [line 26](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Signature.lean#L26))
 
 > A collection of operation symbols, each with a fixed finite arity.
 
@@ -26,7 +26,7 @@ structure Signature where
   Arity : Op → Nat
 ```
 
-`Cslib.Circuits.Interpretation` (abbreviation, [line 33](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Signature.lean#L33))
+`Cslib.Circuits.Interpretation` (abbreviation, [line 33](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Signature.lean#L33))
 
 > An interpretation assigns an operation on `Carrier` to every symbol in `σ`.
 
@@ -34,7 +34,7 @@ structure Signature where
 abbrev Interpretation (σ : Signature) (Carrier : Type*)
 ```
 
-`Cslib.Circuits.FullOp` (inductive type, [line 37](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Signature.lean#L37))
+`Cslib.Circuits.FullOp` (inductive type, [line 37](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Signature.lean#L37))
 
 > An operation with labels for all constants and operations of arity k.
 
@@ -44,7 +44,7 @@ inductive FullOp (k : Nat) Carrier where
   | con : Carrier → FullOp k Carrier
 ```
 
-`Cslib.Circuits.fullSignature` (definition, [line 42](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Signature.lean#L42))
+`Cslib.Circuits.fullSignature` (definition, [line 42](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Signature.lean#L42))
 
 > The signature for FullOp.
 
@@ -52,7 +52,7 @@ inductive FullOp (k : Nat) Carrier where
 def fullSignature (k : Nat) (Carrier : Type v) : Signature
 ```
 
-`Cslib.Circuits.fullInterpretation` (definition, [line 50](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Signature.lean#L50))
+`Cslib.Circuits.fullInterpretation` (definition, [line 50](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Signature.lean#L50))
 
 > The natural interpretation for FullOp, where we evaluate each constant
 > and function to itself.
@@ -67,5 +67,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Computability/Circuit/Signature.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Signature.lean)
+- [Cslib/Computability/Circuit/Signature.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Signature.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Circuit.Signature.json)

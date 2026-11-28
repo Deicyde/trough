@@ -7,7 +7,7 @@ proof: formalized
 
 # Syntactic monoid
 
-`Cslib.Computability.Languages.SyntacticMonoid`, in [Cslib/Computability/Languages/SyntacticMonoid.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SyntacticMonoid.lean), by Ching-Tsun Chou.
+`Cslib.Computability.Languages.SyntacticMonoid`, in [Cslib/Computability/Languages/SyntacticMonoid.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SyntacticMonoid.lean), by Ching-Tsun Chou.
 
 > This file has two main results:
 > (1) We define the syntactic monoid of a language `l` and show that `l` is regular
@@ -19,7 +19,7 @@ proof: formalized
 >
 > [Holcombe1982] Holcombe, W.M.L. (1982). Algebraic automata theory. Section 5.3
 
-`Language.Congruence.toCon` (definition, [line 34](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SyntacticMonoid.lean#L34))
+`Language.Congruence.toCon` (definition, [line 34](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SyntacticMonoid.lean#L34))
 
 > Converting a (two-sided) congruence `c` on finite words to a congruence relation
 > on the (multiplicative) free monoid.
@@ -28,7 +28,7 @@ proof: formalized
 def Congruence.toCon [c : Congruence α] : Con (FreeMonoid α)
 ```
 
-`Language.SyntacticMonoid` (abbreviation, [line 46](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SyntacticMonoid.lean#L46))
+`Language.SyntacticMonoid` (abbreviation, [line 46](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SyntacticMonoid.lean#L46))
 
 > The syntactic monoid of a language `l` is the quotient of the free monoid
 > by the Myhill congruence of `l`.
@@ -37,7 +37,7 @@ def Congruence.toCon [c : Congruence α] : Con (FreeMonoid α)
 abbrev SyntacticMonoid (l : Language α)
 ```
 
-`Language.homSyntacticMonoid` (abbreviation, [line 50](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SyntacticMonoid.lean#L50))
+`Language.homSyntacticMonoid` (abbreviation, [line 50](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SyntacticMonoid.lean#L50))
 
 > The natural homomorphism from `FreeMonoid α` to `l.SyntacticMonoid` induced
 > by the Myhill congruence of `l`.
@@ -46,7 +46,7 @@ abbrev SyntacticMonoid (l : Language α)
 abbrev homSyntacticMonoid (l : Language α)
 ```
 
-`Language.syntacticMonoidEquivMyhillQuotient` (definition, [line 54](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SyntacticMonoid.lean#L54))
+`Language.syntacticMonoidEquivMyhillQuotient` (definition, [line 54](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SyntacticMonoid.lean#L54))
 
 > The syntactic monoid of a language `l` and its Myhill quotient are the quotients of
 > `FreeMonoid α` and of `List α` by the same relation, hence in bijection.
@@ -56,7 +56,7 @@ def syntacticMonoidEquivMyhillQuotient (l : Language α) :
     l.SyntacticMonoid ≃ l.MyhillQuotient
 ```
 
-`Language.IsRegular.iff_finite_syntacticMonoid` (theorem, [line 59](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SyntacticMonoid.lean#L59))
+`Language.IsRegular.iff_finite_syntacticMonoid` (theorem, [line 59](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SyntacticMonoid.lean#L59))
 
 > A language `l` is regular if and only if its syntactic monoid is finite.
 
@@ -65,7 +65,7 @@ theorem IsRegular.iff_finite_syntacticMonoid (l : Language α) :
     l.IsRegular ↔ Finite (l.SyntacticMonoid)
 ```
 
-`Language.homSyntacticMonoid_iff_myhillCongruence` (theorem, [line 65](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SyntacticMonoid.lean#L65))
+`Language.homSyntacticMonoid_iff_myhillCongruence` (theorem, [line 65](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SyntacticMonoid.lean#L65))
 
 > The congruence induced by `homSyntacticMonoid` is exactly the Myhill congruence.
 
@@ -75,7 +75,7 @@ theorem homSyntacticMonoid_iff_myhillCongruence {l : Language α} {x y : List α
     l.MyhillCongruence.eq x y
 ```
 
-`Language.IsRegular.exists_finite_monoid` (theorem, [line 73](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SyntacticMonoid.lean#L73))
+`Language.IsRegular.exists_finite_monoid` (theorem, [line 73](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SyntacticMonoid.lean#L73))
 
 > Any regular language is the preimage of a subset of a finite monoid `M`
 > under a monoid homomorphism from the free monoid on its alphabet to `M`.
@@ -86,7 +86,7 @@ theorem IsRegular.exists_finite_monoid {l : Language α} (h : l.IsRegular) :
     (f ∘ ofList) ⁻¹' s = l
 ```
 
-`Language.inducedCongr` (definition, [line 94](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SyntacticMonoid.lean#L94))
+`Language.inducedCongr` (definition, [line 94](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SyntacticMonoid.lean#L94))
 
 > Given a monoid homomorphism `f` from `FreeMonoid α` to another monoid `M`,
 > `inducedCongr f` is the language congruence induced by `f`.
@@ -95,14 +95,14 @@ theorem IsRegular.exists_finite_monoid {l : Language α} (h : l.IsRegular) :
 def inducedCongr : RightCongruence α
 ```
 
-`Language.inducedCongr_ofList` (theorem, [line 104](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SyntacticMonoid.lean#L104))
+`Language.inducedCongr_ofList` (theorem, [line 104](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SyntacticMonoid.lean#L104))
 
 ```lean
 theorem inducedCongr_ofList (x : List α) :
     (f ∘ ofList) ⁻¹' {(f ∘ ofList) x} = (inducedCongr f).eqvCls ⟦ x ⟧
 ```
 
-`Language.IsRegular.of_finite_monoid_singleton` (theorem, [line 111](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SyntacticMonoid.lean#L111))
+`Language.IsRegular.of_finite_monoid_singleton` (theorem, [line 111](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SyntacticMonoid.lean#L111))
 
 > The preimage of a singleton in a finite monoid `M` under a monoid homomorphism
 > from the free monoid to `M` is regular.
@@ -112,7 +112,7 @@ theorem IsRegular.of_finite_monoid_singleton [Finite M]
     (m : M) : IsRegular ((f ∘ ofList) ⁻¹' {m})
 ```
 
-`Language.IsRegular.of_finite_monoid` (theorem, [line 122](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SyntacticMonoid.lean#L122))
+`Language.IsRegular.of_finite_monoid` (theorem, [line 122](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SyntacticMonoid.lean#L122))
 
 > The preimage of a subset of a finite monoid `M` under a monoid homomorphism
 > from the free monoid to `M` is regular.
@@ -122,7 +122,7 @@ theorem IsRegular.of_finite_monoid [Finite M]
     (s : Set M) : IsRegular ((f ∘ ofList) ⁻¹' s)
 ```
 
-`Language.IsRegular.iff_finite_monoid` (theorem, [line 134](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SyntacticMonoid.lean#L134))
+`Language.IsRegular.iff_finite_monoid` (theorem, [line 134](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SyntacticMonoid.lean#L134))
 
 > A language is regular if and only if it is the preimage of a subset of a finite monoid `M`
 > under a monoid homomorphism from the free monoid on its alphabet to `M`.
@@ -140,5 +140,5 @@ theorem IsRegular.iff_finite_monoid {l : Language α} :
 
 ## Sources
 
-- [Cslib/Computability/Languages/SyntacticMonoid.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/SyntacticMonoid.lean)
+- [Cslib/Computability/Languages/SyntacticMonoid.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/SyntacticMonoid.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Languages.SyntacticMonoid.json)

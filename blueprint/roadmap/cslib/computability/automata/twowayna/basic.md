@@ -7,7 +7,7 @@ proof: formalized
 
 # Nondeterministic Two-Way Automaton
 
-`Cslib.Computability.Automata.TwoWayNA.Basic`, in [Cslib/Computability/Automata/TwoWayNA/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/Basic.lean), by Christian Reitwiessner.
+`Cslib.Computability.Automata.TwoWayNA.Basic`, in [Cslib/Computability/Automata/TwoWayNA/Basic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/Basic.lean), by Christian Reitwiessner.
 
 > A Nondeterministic Two-Way Automaton (`TwoWayNA`) reads a finite input word on a tape and may move
 > its input head in either direction. A transition reads the symbol under the head and, besides
@@ -38,7 +38,7 @@ proof: formalized
 >
 > * [Moshe Y. Vardi, *A Note on the Reduction of Two-Way Automata to One-Way Automata*][Vardi1989]
 
-`Cslib.Automata.TwoWayNA` (structure, [line 56](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/Basic.lean#L56))
+`Cslib.Automata.TwoWayNA` (structure, [line 56](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/Basic.lean#L56))
 
 > A nondeterministic two-way automaton: a transition relation that reads an input symbol and
 > moves the input head, together with a set of initial and a set of accepting states.
@@ -55,7 +55,7 @@ structure TwoWayNA (State Symbol : Type*) where
   accept : Set State
 ```
 
-`Cslib.Automata.TwoWayNACfg` (structure, [line 68](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/Basic.lean#L68))
+`Cslib.Automata.TwoWayNACfg` (structure, [line 68](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/Basic.lean#L68))
 
 > The configuration of a two-way nondeterministic automaton.
 
@@ -70,7 +70,7 @@ structure TwoWayNACfg (State Symbol : Type*) where
   pos : Fin (input.length + 1)
 ```
 
-`Cslib.Automata.TwoWayNACfg.IsInitialForInput` (definition, [line 78](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/Basic.lean#L78))
+`Cslib.Automata.TwoWayNACfg.IsInitialForInput` (definition, [line 78](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/Basic.lean#L78))
 
 > This defines the set of initial configurations on a specific input.
 
@@ -79,7 +79,7 @@ def TwoWayNACfg.IsInitialForInput (a : TwoWayNA State Symbol) (c : TwoWayNACfg S
     (input : List Symbol) : Prop
 ```
 
-`Cslib.Automata.TwoWayNACfg.IsAccepting` (definition, [line 83](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/Basic.lean#L83))
+`Cslib.Automata.TwoWayNACfg.IsAccepting` (definition, [line 83](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/Basic.lean#L83))
 
 > If a configuration is a accepting.
 
@@ -87,7 +87,7 @@ def TwoWayNACfg.IsInitialForInput (a : TwoWayNA State Symbol) (c : TwoWayNACfg S
 def TwoWayNACfg.IsAccepting (a : TwoWayNA State Symbol) (c : TwoWayNACfg State Symbol) : Prop
 ```
 
-`Cslib.Automata.TwoWayNA.toCfgNA` (definition, [line 88](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/Basic.lean#L88))
+`Cslib.Automata.TwoWayNA.toCfgNA` (definition, [line 88](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/Basic.lean#L88))
 
 > Returns a nondeterministic finite acceptor on the configurations as states, accepting exactly
 > the runs of the two-way automaton on `input` that end in an accepting configuration.
@@ -98,7 +98,7 @@ def TwoWayNA.toCfgNA {State Symbol : Type*} (a : TwoWayNA State Symbol)
     NA.FinAcc (TwoWayNACfg State Symbol) (Symbol × SignType)
 ```
 
-`Cslib.Automata.TwoWayNA.toCfgNA_input_eq` (lemma, [line 111](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/Basic.lean#L111))
+`Cslib.Automata.TwoWayNA.toCfgNA_input_eq` (lemma, [line 111](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/Basic.lean#L111))
 
 > Any reachable state of `a.toCfgNA input` contains the original input.
 
@@ -108,7 +108,7 @@ lemma TwoWayNA.toCfgNA_input_eq {State Symbol : Type*} (a : TwoWayNA State Symbo
     (a.toCfgNA input).TrInv (fun c => c.input = input)
 ```
 
-`Cslib.Automata.TwoWayNACfg.eta` (theorem, [line 118](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/Basic.lean#L118))
+`Cslib.Automata.TwoWayNACfg.eta` (theorem, [line 118](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/Basic.lean#L118))
 
 > A configuration running on `input` is the one determined by its state and head position.
 
@@ -118,7 +118,7 @@ theorem TwoWayNACfg.eta {input : List Symbol} {c : TwoWayNACfg State Symbol}
     ({ input := input, pos := ⟨c.pos, h'⟩, state := c.state } : TwoWayNACfg State Symbol) = c
 ```
 
-`Cslib.Automata.TwoWayNA.getElem_of_tr` (theorem, [line 126](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/Basic.lean#L126))
+`Cslib.Automata.TwoWayNA.getElem_of_tr` (theorem, [line 126](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/Basic.lean#L126))
 
 > A step reads the symbol at the head position, which therefore lies inside the input.
 
@@ -135,5 +135,5 @@ theorem TwoWayNA.getElem_of_tr {a : TwoWayNA State Symbol} {input : List Symbol}
 
 ## Sources
 
-- [Cslib/Computability/Automata/TwoWayNA/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/TwoWayNA/Basic.lean)
+- [Cslib/Computability/Automata/TwoWayNA/Basic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/TwoWayNA/Basic.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.TwoWayNA.Basic.json)

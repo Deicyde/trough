@@ -7,7 +7,7 @@ proof: formalized
 
 # Shamir Secret Sharing
 
-`Cslib.Crypto.Protocols.SecretSharing.Shamir`, in [Cslib/Crypto/Protocols/SecretSharing/Shamir.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean), by Samuel Schlesinger.
+`Cslib.Crypto.Protocols.SecretSharing.Shamir`, in [Cslib/Crypto/Protocols/SecretSharing/Shamir.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean), by Samuel Schlesinger.
 
 > This module presents a secure-by-construction API for finite-party Shamir secret
 > sharing through the abstract `SecretSharing.Scheme` interface.
@@ -51,7 +51,7 @@ proof: formalized
 > * [Adi Shamir, *How to Share a Secret*][Shamir1979]
 > * [J. Katz, Y. Lindell, *Introduction to Modern Cryptography*][KatzLindell2020]
 
-`Cslib.Crypto.Protocols.SecretSharing.Shamir.Params` (structure, [line 72](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L72))
+`Cslib.Crypto.Protocols.SecretSharing.Shamir.Params` (structure, [line 72](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L72))
 
 > Public parameters for a finite Shamir secret-sharing instance. The threshold
 > is bundled with the evaluation points so the API can enforce the standard
@@ -72,7 +72,7 @@ structure Params (F : Type*) [Zero F] (Party : Type*) [Fintype Party] where
   point_nonzero : ∀ i : Party, point i ≠ 0
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Shamir.Randomness` (abbreviation, [line 86](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L86))
+`Cslib.Crypto.Protocols.SecretSharing.Shamir.Randomness` (abbreviation, [line 86](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L86))
 
 > The random coefficients of the degree-`threshold - 1` tail polynomial.
 
@@ -80,7 +80,7 @@ structure Params (F : Type*) [Zero F] (Party : Type*) [Fintype Party] where
 abbrev Randomness (params : Params F Party)
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Shamir.authorized` (definition, [line 90](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L90))
+`Cslib.Crypto.Protocols.SecretSharing.Shamir.authorized` (definition, [line 90](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L90))
 
 > A coalition is authorized exactly when it contains at least
 > `params.threshold + 1` parties.
@@ -89,7 +89,7 @@ abbrev Randomness (params : Params F Party)
 def authorized (params : Params F Party) (s : Finset Party) : Prop
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Shamir.authorized_univ` (theorem, [line 95](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L95))
+`Cslib.Crypto.Protocols.SecretSharing.Shamir.authorized_univ` (theorem, [line 95](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L95))
 
 > Because `params.threshold < |Party|`, the full party set can always
 > reconstruct the secret.
@@ -100,7 +100,7 @@ theorem authorized_univ {F Party : Type*} [Field F] [Fintype Party]
     authorized params (Finset.univ : Finset Party)
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Shamir.share` (definition, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L101))
+`Cslib.Crypto.Protocols.SecretSharing.Shamir.share` (definition, [line 101](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L101))
 
 > The Shamir share value sent to one party.
 
@@ -109,7 +109,7 @@ noncomputable def share (params : Params F Party)
     (coeffs : Randomness params) (secretValue : F) (i : Party) : F
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Shamir.reconstruct` (definition, [line 107](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L107))
+`Cslib.Crypto.Protocols.SecretSharing.Shamir.reconstruct` (definition, [line 107](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L107))
 
 > Reconstruct the secret from one coalition's Shamir shares.
 
@@ -118,7 +118,7 @@ noncomputable def reconstruct (params : Params F Party)
     (s : Finset Party) (σ : s → F) : F
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Shamir.TailSampler` (structure, [line 114](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L114))
+`Cslib.Crypto.Protocols.SecretSharing.Shamir.TailSampler` (structure, [line 114](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L114))
 
 > A sampler on Shamir tail coefficients is privacy-compatible when its
 > distribution is invariant under translation by any coefficient vector. This is
@@ -132,7 +132,7 @@ structure TailSampler (params : Params F Party) where
   map_add_eq_self : ∀ δ : Randomness params, gen.map (fun coeffs => coeffs + δ) = gen
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Shamir.uniformTailSampler` (definition, [line 121](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L121))
+`Cslib.Crypto.Protocols.SecretSharing.Shamir.uniformTailSampler` (definition, [line 121](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L121))
 
 > Uniform tail coefficients form the canonical privacy-compatible sampler.
 
@@ -141,7 +141,7 @@ noncomputable def uniformTailSampler (params : Params F Party)
     [Fintype F] [Nonempty F] : TailSampler params
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Shamir.view_indist_of_tailSampler` (theorem, [line 207](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L207))
+`Cslib.Crypto.Protocols.SecretSharing.Shamir.view_indist_of_tailSampler` (theorem, [line 207](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L207))
 
 > Translation-invariant Shamir tail samplers induce secret-independent views
 > for unauthorized coalitions.
@@ -154,7 +154,7 @@ theorem view_indist_of_tailSampler (params : Params F Party)
         viewDistOf sampler.gen (share params) s secret₁
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Shamir.schemeWith` (definition, [line 242](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L242))
+`Cslib.Crypto.Protocols.SecretSharing.Shamir.schemeWith` (definition, [line 242](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L242))
 
 > Shamir's scheme built from a privacy-compatible tail sampler.
 
@@ -164,7 +164,7 @@ noncomputable def schemeWith (params : Params F Party) (sampler : TailSampler pa
     SecretSharing.Scheme F (Randomness params) Party F
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Shamir.scheme` (definition, [line 280](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L280))
+`Cslib.Crypto.Protocols.SecretSharing.Shamir.scheme` (definition, [line 280](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L280))
 
 > The canonical finite-field Shamir scheme with uniformly sampled tail
 > coefficients.
@@ -175,7 +175,7 @@ noncomputable def scheme (params : Params F Party)
     SecretSharing.Scheme F (Randomness params) Party F
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Shamir.schemeWith_authorized_iff` (theorem, [line 286](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L286))
+`Cslib.Crypto.Protocols.SecretSharing.Shamir.schemeWith_authorized_iff` (theorem, [line 286](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L286))
 
 ```lean
 theorem schemeWith_authorized_iff (params : Params F Party)
@@ -183,7 +183,7 @@ theorem schemeWith_authorized_iff (params : Params F Party)
     (schemeWith params sampler).authorized s ↔ params.threshold + 1 ≤ s.card
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Shamir.scheme_authorized_iff` (theorem, [line 292](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L292))
+`Cslib.Crypto.Protocols.SecretSharing.Shamir.scheme_authorized_iff` (theorem, [line 292](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L292))
 
 ```lean
 theorem scheme_authorized_iff (params : Params F Party)
@@ -191,7 +191,7 @@ theorem scheme_authorized_iff (params : Params F Party)
     (scheme params).authorized s ↔ params.threshold + 1 ≤ s.card
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Shamir.schemeWith_share_eq` (theorem, [line 298](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L298))
+`Cslib.Crypto.Protocols.SecretSharing.Shamir.schemeWith_share_eq` (theorem, [line 298](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L298))
 
 ```lean
 theorem schemeWith_share_eq (params : Params F Party)
@@ -201,7 +201,7 @@ theorem schemeWith_share_eq (params : Params F Party)
       share params coeffs secretValue i
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Shamir.reconstruct_view_eq_secret` (theorem, [line 306](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L306))
+`Cslib.Crypto.Protocols.SecretSharing.Shamir.reconstruct_view_eq_secret` (theorem, [line 306](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean#L306))
 
 > Any authorized coalition reconstructs the secret from the shares it sees.
 
@@ -222,5 +222,5 @@ theorem reconstruct_view_eq_secret
 
 ## Sources
 
-- [Cslib/Crypto/Protocols/SecretSharing/Shamir.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean)
+- [Cslib/Crypto/Protocols/SecretSharing/Shamir.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/SecretSharing/Shamir.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Crypto.Protocols.SecretSharing.Shamir.json)

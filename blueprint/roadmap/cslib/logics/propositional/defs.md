@@ -7,7 +7,7 @@ proof: formalized
 
 # Propositions and theories
 
-`Cslib.Logics.Propositional.Defs`, in [Cslib/Logics/Propositional/Defs.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Propositional/Defs.lean), by Thomas Waring.
+`Cslib.Logics.Propositional.Defs`, in [Cslib/Logics/Propositional/Defs.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Propositional/Defs.lean), by Thomas Waring.
 
 > ## Main definitions
 >
@@ -29,7 +29,7 @@ proof: formalized
 >
 > * [J. Avigad, *Mathematical Logic and Computation*][Avigad2022]
 
-`Cslib.Logic.PL.Proposition` (inductive type, [line 46](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Propositional/Defs.lean#L46))
+`Cslib.Logic.PL.Proposition` (inductive type, [line 46](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Propositional/Defs.lean#L46))
 
 > Propositions.
 
@@ -48,13 +48,13 @@ inductive Proposition (Atom : Type u) : Type u where
 deriving DecidableEq
 ```
 
-`Cslib.Logic.PL.instBotProposition` (instance, [line 59](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Propositional/Defs.lean#L59))
+`Cslib.Logic.PL.instBotProposition` (instance, [line 59](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Propositional/Defs.lean#L59))
 
 ```lean
 instance instBotProposition : Bot (Proposition Atom)
 ```
 
-`Cslib.Logic.PL.Proposition.neg` (abbreviation, [line 61](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Propositional/Defs.lean#L61))
+`Cslib.Logic.PL.Proposition.neg` (abbreviation, [line 61](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Propositional/Defs.lean#L61))
 
 > We view negation as a defined connective ¬A := A → ⊥
 
@@ -62,7 +62,7 @@ instance instBotProposition : Bot (Proposition Atom)
 abbrev Proposition.neg : Proposition Atom → Proposition Atom
 ```
 
-`Cslib.Logic.PL.Proposition.verum` (abbreviation, [line 64](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Propositional/Defs.lean#L64))
+`Cslib.Logic.PL.Proposition.verum` (abbreviation, [line 64](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Propositional/Defs.lean#L64))
 
 > A fixed choice of a derivable proposition (of course any two are equivalent).
 
@@ -70,19 +70,19 @@ abbrev Proposition.neg : Proposition Atom → Proposition Atom
 abbrev Proposition.verum : Proposition Atom
 ```
 
-`Cslib.Logic.PL.instTopProposition` (instance, [line 66](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Propositional/Defs.lean#L66))
+`Cslib.Logic.PL.instTopProposition` (instance, [line 66](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Propositional/Defs.lean#L66))
 
 ```lean
 instance instTopProposition : Top (Proposition Atom)
 ```
 
-`Cslib.Logic.PL.Proposition.not_eq` (lemma, [line 76](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Propositional/Defs.lean#L76))
+`Cslib.Logic.PL.Proposition.not_eq` (lemma, [line 76](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Propositional/Defs.lean#L76))
 
 ```lean
 lemma Proposition.not_eq (A : Proposition Atom) : (A → ⊥) = ¬ A
 ```
 
-`Cslib.Logic.PL.Proposition.subst` (definition, [line 80](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Propositional/Defs.lean#L80))
+`Cslib.Logic.PL.Proposition.subst` (definition, [line 80](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Propositional/Defs.lean#L80))
 
 > Substitute each atom in a proposition for a proposition, possibly changing the atomic
 > language.
@@ -92,7 +92,7 @@ def Proposition.subst {Atom Atom' : Type*} (f : Atom → Proposition Atom') :
     Proposition Atom → Proposition Atom'
 ```
 
-`Cslib.Logic.PL.IPL` (abbreviation, [line 94](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Propositional/Defs.lean#L94))
+`Cslib.Logic.PL.IPL` (abbreviation, [line 94](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Propositional/Defs.lean#L94))
 
 > The empty collection of axioms corresponds to intuitionistic propositional logic.
 
@@ -100,7 +100,7 @@ def Proposition.subst {Atom Atom' : Type*} (f : Atom → Proposition Atom') :
 abbrev IPL (Atom : Type u) : Set (Proposition Atom)
 ```
 
-`Cslib.Logic.PL.CPL` (abbreviation, [line 97](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Propositional/Defs.lean#L97))
+`Cslib.Logic.PL.CPL` (abbreviation, [line 97](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Propositional/Defs.lean#L97))
 
 > Classical logic adds double negation elimination.
 
@@ -108,13 +108,13 @@ abbrev IPL (Atom : Type u) : Set (Proposition Atom)
 abbrev CPL (Atom : Type u) : Set (Proposition Atom)
 ```
 
-`Cslib.Logic.PL.dne_mem_cpl` (lemma, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Propositional/Defs.lean#L101))
+`Cslib.Logic.PL.dne_mem_cpl` (lemma, [line 101](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Propositional/Defs.lean#L101))
 
 ```lean
 lemma dne_mem_cpl (A : Proposition Atom) : (¬¬A → A) ∈ CPL Atom
 ```
 
-`Cslib.Logic.PL.LEM` (definition, [line 104](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Propositional/Defs.lean#L104))
+`Cslib.Logic.PL.LEM` (definition, [line 104](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Propositional/Defs.lean#L104))
 
 > The axiom system consisting of instances of LEM.
 
@@ -122,13 +122,13 @@ lemma dne_mem_cpl (A : Proposition Atom) : (¬¬A → A) ∈ CPL Atom
 def LEM (Atom : Type u) : Set (Proposition Atom)
 ```
 
-`Cslib.Logic.PL.mem_lem` (lemma, [line 108](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Propositional/Defs.lean#L108))
+`Cslib.Logic.PL.mem_lem` (lemma, [line 108](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Propositional/Defs.lean#L108))
 
 ```lean
 lemma mem_lem (A : Proposition Atom) : (A ∨ ¬ A) ∈ LEM Atom
 ```
 
-`Cslib.Logic.PL.Peirce` (definition, [line 111](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Propositional/Defs.lean#L111))
+`Cslib.Logic.PL.Peirce` (definition, [line 111](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Propositional/Defs.lean#L111))
 
 > The axiom system consisting of instances of Peirce's law.
 
@@ -136,7 +136,7 @@ lemma mem_lem (A : Proposition Atom) : (A ∨ ¬ A) ∈ LEM Atom
 def Peirce (Atom : Type u) : Set (Proposition Atom)
 ```
 
-`Cslib.Logic.PL.mem_peirce` (lemma, [line 116](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Propositional/Defs.lean#L116))
+`Cslib.Logic.PL.mem_peirce` (lemma, [line 116](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Propositional/Defs.lean#L116))
 
 ```lean
 lemma mem_peirce (A B : Proposition Atom) : (((A → B) → A) → A) ∈ Peirce Atom
@@ -148,5 +148,5 @@ lemma mem_peirce (A B : Proposition Atom) : (((A → B) → A) → A) ∈ Peirce
 
 ## Sources
 
-- [Cslib/Logics/Propositional/Defs.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Propositional/Defs.lean)
+- [Cslib/Logics/Propositional/Defs.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Propositional/Defs.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Logics.Propositional.Defs.json)

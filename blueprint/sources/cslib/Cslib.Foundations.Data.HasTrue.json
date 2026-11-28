@@ -1,0 +1,17 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "8b510d014295ed2c2334a379a7c96561a1603dc4",
+ "module": "Cslib.Foundations.Data.HasTrue",
+ "file": "Cslib/Foundations/Data/HasTrue.lean",
+ "public": [
+  {"name": "Cslib.HasTrue", "kind": "class", "line": 23},
+  {"name": "Cslib.HasTrue.true_bool", "kind": "theorem", "line": 36},
+  {"name": "Cslib.HasTrue.true_prop", "kind": "theorem", "line": 39},
+  {"name": "Cslib.HasTrue.true_ulift", "kind": "theorem", "line": 42}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

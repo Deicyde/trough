@@ -7,13 +7,13 @@ proof: formalized
 
 # Folding polynomial free monads
 
-`Cslib.Foundations.Data.PFunctor.Free.Fold`, in [Cslib/Foundations/Data/PFunctor/Free/Fold.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/PFunctor/Free/Fold.lean), by Devon Tuma, Quang Dao.
+`Cslib.Foundations.Data.PFunctor.Free.Fold`, in [Cslib/Foundations/Data/PFunctor/Free/Fold.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/PFunctor/Free/Fold.lean), by Devon Tuma, Quang Dao.
 
 > `PFunctor.FreeM.foldFreeM` evaluates a free polynomial tree in an algebra given by handlers
 > for values and operations. It satisfies the same universal property and substitution laws
 > as `Cslib.FreeM.foldFreeM`.
 
-`PFunctor.FreeM.foldFreeM` (definition, [line 28](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L28))
+`PFunctor.FreeM.foldFreeM` (definition, [line 28](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L28))
 
 > Fold a free polynomial tree into an algebra of its signature.
 
@@ -21,14 +21,14 @@ proof: formalized
 def foldFreeM (onValue : α → β) (onEffect : (a : P.A) → (P.B a → β) → β) : P.FreeM α → β
 ```
 
-`PFunctor.FreeM.foldFreeM_pure` (theorem, [line 33](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L33))
+`PFunctor.FreeM.foldFreeM_pure` (theorem, [line 33](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L33))
 
 ```lean
 theorem foldFreeM_pure (onValue : α → β) (onEffect : (a : P.A) → (P.B a → β) → β) (a : α) :
     foldFreeM onValue onEffect (pure a) = onValue a
 ```
 
-`PFunctor.FreeM.foldFreeM_lift_bind` (theorem, [line 37](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L37))
+`PFunctor.FreeM.foldFreeM_lift_bind` (theorem, [line 37](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L37))
 
 ```lean
 theorem foldFreeM_lift_bind (onValue : α → β) (onEffect : (a : P.A) → (P.B a → β) → β)
@@ -37,7 +37,7 @@ theorem foldFreeM_lift_bind (onValue : α → β) (onEffect : (a : P.A) → (P.B
       onEffect a (fun b => foldFreeM onValue onEffect (cont b))
 ```
 
-`PFunctor.FreeM.foldFreeM_lift_bind'` (theorem, [line 44](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L44))
+`PFunctor.FreeM.foldFreeM_lift_bind'` (theorem, [line 44](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L44))
 
 ```lean
 theorem foldFreeM_lift_bind' {α : Type uB} (onValue : α → β)
@@ -46,7 +46,7 @@ theorem foldFreeM_lift_bind' {α : Type uB} (onValue : α → β)
       onEffect a (fun b => foldFreeM onValue onEffect (cont b))
 ```
 
-`PFunctor.FreeM.foldFreeM_lift` (theorem, [line 50](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L50))
+`PFunctor.FreeM.foldFreeM_lift` (theorem, [line 50](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L50))
 
 ```lean
 theorem foldFreeM_lift (a : P.A) (onValue : P.B a → β)
@@ -54,7 +54,7 @@ theorem foldFreeM_lift (a : P.A) (onValue : P.B a → β)
     foldFreeM (α := no_index (P.B a)) onValue onEffect (lift a) = onEffect a onValue
 ```
 
-`PFunctor.FreeM.foldFreeM_unique` (theorem, [line 55](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L55))
+`PFunctor.FreeM.foldFreeM_unique` (theorem, [line 55](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L55))
 
 > A function agreeing with the algebra on values and operations is the fold.
 
@@ -66,7 +66,7 @@ theorem foldFreeM_unique (onValue : α → β) (onEffect : (a : P.A) → (P.B a 
     h = foldFreeM onValue onEffect
 ```
 
-`PFunctor.FreeM.foldFreeM_bind` (theorem, [line 67](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L67))
+`PFunctor.FreeM.foldFreeM_bind` (theorem, [line 67](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L67))
 
 > Sequencing substitutes the fold of the continuation for the value handler.
 
@@ -77,7 +77,7 @@ theorem foldFreeM_bind (onValue : β → γ) (onEffect : (a : P.A) → (P.B a �
       foldFreeM (fun a => foldFreeM onValue onEffect (k a)) onEffect x
 ```
 
-`PFunctor.FreeM.foldFreeM_map` (theorem, [line 75](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L75))
+`PFunctor.FreeM.foldFreeM_map` (theorem, [line 75](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L75))
 
 ```lean
 theorem foldFreeM_map (onValue : β → γ) (onEffect : (a : P.A) → (P.B a → γ) → γ)
@@ -85,7 +85,7 @@ theorem foldFreeM_map (onValue : β → γ) (onEffect : (a : P.A) → (P.B a →
     foldFreeM onValue onEffect (map f x) = foldFreeM (onValue ∘ f) onEffect x
 ```
 
-`PFunctor.FreeM.liftM_eq_foldFreeM` (theorem, [line 82](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L82))
+`PFunctor.FreeM.liftM_eq_foldFreeM` (theorem, [line 82](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/PFunctor/Free/Fold.lean#L82))
 
 > Monadic interpretation is the fold whose effect handler uses `bind`.
 
@@ -101,5 +101,5 @@ theorem liftM_eq_foldFreeM {m : Type uB → Type v} [Monad m] {α : Type uB}
 
 ## Sources
 
-- [Cslib/Foundations/Data/PFunctor/Free/Fold.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/PFunctor/Free/Fold.lean)
+- [Cslib/Foundations/Data/PFunctor/Free/Fold.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/PFunctor/Free/Fold.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Foundations.Data.PFunctor.Free.Fold.json)

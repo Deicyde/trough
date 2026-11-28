@@ -7,11 +7,11 @@ proof: formalized
 
 # Translation of Deterministic Automata into Nonodeterministic Automata
 
-`Cslib.Computability.Automata.DA.ToNA`, in [Cslib/Computability/Automata/DA/ToNA.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/ToNA.lean), by Fabrizio Montesi.
+`Cslib.Computability.Automata.DA.ToNA`, in [Cslib/Computability/Automata/DA/ToNA.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/ToNA.lean), by Fabrizio Montesi.
 
 > This is the general version of the standard translation of DFAs into NFAs.
 
-`Cslib.Automata.DA.toNA` (definition, [line 27](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/ToNA.lean#L27))
+`Cslib.Automata.DA.toNA` (definition, [line 27](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/ToNA.lean#L27))
 
 > `DA` is a special case of `NA`.
 
@@ -19,14 +19,14 @@ proof: formalized
 def toNA (a : DA State Symbol) : NA State Symbol
 ```
 
-`Cslib.Automata.DA.toNA_run` (theorem, [line 36](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/ToNA.lean#L36))
+`Cslib.Automata.DA.toNA_run` (theorem, [line 36](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/ToNA.lean#L36))
 
 ```lean
 theorem toNA_run {a : DA State Symbol} {xs : ωSequence Symbol} {ss : ωSequence State} :
     a.toNA.Run xs ss ↔ a.run xs = ss
 ```
 
-`Cslib.Automata.DA.FinAcc.toNAFinAcc` (definition, [line 50](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/ToNA.lean#L50))
+`Cslib.Automata.DA.FinAcc.toNAFinAcc` (definition, [line 50](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/ToNA.lean#L50))
 
 > `DA.FinAcc` is a special case of `NA.FinAcc`.
 
@@ -34,7 +34,7 @@ theorem toNA_run {a : DA State Symbol} {xs : ωSequence Symbol} {ss : ωSequence
 def toNAFinAcc (a : DA.FinAcc State Symbol) : NA.FinAcc State Symbol
 ```
 
-`Cslib.Automata.DA.FinAcc.toNAFinAcc_language_eq` (theorem, [line 57](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/ToNA.lean#L57))
+`Cslib.Automata.DA.FinAcc.toNAFinAcc_language_eq` (theorem, [line 57](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/ToNA.lean#L57))
 
 > The `NA.FinAcc` constructed from a `DA.FinAcc` has the same language.
 
@@ -43,7 +43,7 @@ theorem toNAFinAcc_language_eq {a : DA.FinAcc State Symbol} :
     language a.toNAFinAcc = language a
 ```
 
-`Cslib.Automata.DA.Buchi.toNABuchi` (definition, [line 68](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/ToNA.lean#L68))
+`Cslib.Automata.DA.Buchi.toNABuchi` (definition, [line 68](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/ToNA.lean#L68))
 
 > `DA.Buchi` is a special case of `NA.Buchi`.
 
@@ -51,7 +51,7 @@ theorem toNAFinAcc_language_eq {a : DA.FinAcc State Symbol} :
 def toNABuchi (a : DA.Buchi State Symbol) : NA.Buchi State Symbol
 ```
 
-`Cslib.Automata.DA.Buchi.toNABuchi_language_eq` (theorem, [line 74](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/ToNA.lean#L74))
+`Cslib.Automata.DA.Buchi.toNABuchi_language_eq` (theorem, [line 74](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/ToNA.lean#L74))
 
 > The `NA.Buchi` constructed from a `DA.Buchi` has the same ω-language.
 
@@ -68,5 +68,5 @@ theorem toNABuchi_language_eq {a : DA.Buchi State Symbol} :
 
 ## Sources
 
-- [Cslib/Computability/Automata/DA/ToNA.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/ToNA.lean)
+- [Cslib/Computability/Automata/DA/ToNA.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/ToNA.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.DA.ToNA.json)

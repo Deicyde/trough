@@ -7,7 +7,7 @@ proof: formalized
 
 # Trajectories
 
-`Cslib.Computability.Distributed.Consistency.Trajectory`, in [Cslib/Computability/Distributed/Consistency/Trajectory.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean), by Ching-Tsun Chou.
+`Cslib.Computability.Distributed.Consistency.Trajectory`, in [Cslib/Computability/Distributed/Consistency/Trajectory.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean), by Ching-Tsun Chou.
 
 > A trajectory is the sequence of events corresponding to the transitions executed by a role.
 > Various well-formedness conditions are imposed on trajectories.
@@ -18,7 +18,7 @@ proof: formalized
 >
 > * [*Principles of Eventual Consistency*][Burckhardt2014]
 
-`Cslib.DistributedConsistency.Trajectory` (structure, [line 35](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L35))
+`Cslib.DistributedConsistency.Trajectory` (structure, [line 35](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L35))
 
 > Trajectory structure.
 
@@ -29,7 +29,7 @@ structure Trajectory (Event State Operation Value Message Process : Type*)
   tr : Event → Transition State Operation Value Message Process
 ```
 
-`Cslib.DistributedConsistency.Trajectory.op` (abbreviation, [line 45](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L45))
+`Cslib.DistributedConsistency.Trajectory.op` (abbreviation, [line 45](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L45))
 
 > The operation of an event.
 
@@ -37,7 +37,7 @@ structure Trajectory (Event State Operation Value Message Process : Type*)
 abbrev op (x : Event)
 ```
 
-`Cslib.DistributedConsistency.Trajectory.rcv` (abbreviation, [line 48](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L48))
+`Cslib.DistributedConsistency.Trajectory.rcv` (abbreviation, [line 48](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L48))
 
 > The received message of an event.
 
@@ -45,7 +45,7 @@ abbrev op (x : Event)
 abbrev rcv (x : Event)
 ```
 
-`Cslib.DistributedConsistency.Trajectory.proc` (abbreviation, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L51))
+`Cslib.DistributedConsistency.Trajectory.proc` (abbreviation, [line 51](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L51))
 
 > The process of an event.
 
@@ -53,7 +53,7 @@ abbrev rcv (x : Event)
 abbrev proc (x : Event)
 ```
 
-`Cslib.DistributedConsistency.Trajectory.pre` (abbreviation, [line 54](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L54))
+`Cslib.DistributedConsistency.Trajectory.pre` (abbreviation, [line 54](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L54))
 
 > The previous state of an event.
 
@@ -61,7 +61,7 @@ abbrev proc (x : Event)
 abbrev pre (x : Event)
 ```
 
-`Cslib.DistributedConsistency.Trajectory.post` (abbreviation, [line 57](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L57))
+`Cslib.DistributedConsistency.Trajectory.post` (abbreviation, [line 57](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L57))
 
 > The next state of an event.
 
@@ -69,7 +69,7 @@ abbrev pre (x : Event)
 abbrev post (x : Event)
 ```
 
-`Cslib.DistributedConsistency.Trajectory.snd` (abbreviation, [line 60](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L60))
+`Cslib.DistributedConsistency.Trajectory.snd` (abbreviation, [line 60](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L60))
 
 > The set of messages sent by an event.
 
@@ -77,7 +77,7 @@ abbrev post (x : Event)
 abbrev snd (x : Event)
 ```
 
-`Cslib.DistributedConsistency.Trajectory.rval` (abbreviation, [line 63](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L63))
+`Cslib.DistributedConsistency.Trajectory.rval` (abbreviation, [line 63](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L63))
 
 > The value returned by an event.
 
@@ -85,7 +85,7 @@ abbrev snd (x : Event)
 abbrev rval (x : Event)
 ```
 
-`Cslib.DistributedConsistency.Trajectory.isCall` (abbreviation, [line 66](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L66))
+`Cslib.DistributedConsistency.Trajectory.isCall` (abbreviation, [line 66](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L66))
 
 > An event is considered a call iff it has an operation.
 
@@ -93,7 +93,7 @@ abbrev rval (x : Event)
 abbrev isCall (x : Event)
 ```
 
-`Cslib.DistributedConsistency.Trajectory.isReturn` (abbreviation, [line 69](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L69))
+`Cslib.DistributedConsistency.Trajectory.isReturn` (abbreviation, [line 69](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L69))
 
 > An event is considered a return iff it has a return value.
 
@@ -101,7 +101,7 @@ abbrev isCall (x : Event)
 abbrev isReturn (x : Event)
 ```
 
-`Cslib.DistributedConsistency.Trajectory.WellFormed` (structure, [line 73](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L73))
+`Cslib.DistributedConsistency.Trajectory.WellFormed` (structure, [line 73](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L73))
 
 > The well-formedness conditions on a trajectory.
 > NOTE: In [Burckhardt2014], this is conditions "t3" and "t4" in the definition of a trajectory.
@@ -119,7 +119,7 @@ structure WellFormed : Prop where
     x < y → traj.isCall x → traj.isCall y → ∃ z, traj.isReturn z ∧ x ≤ z ∧ z < y
 ```
 
-`Cslib.DistributedConsistency.Trajectory.callsBefore` (definition, [line 85](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L85))
+`Cslib.DistributedConsistency.Trajectory.callsBefore` (definition, [line 85](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L85))
 
 > The finite set of calls preceding an event (in the non-strict execution order).
 
@@ -127,7 +127,7 @@ structure WellFormed : Prop where
 def callsBefore (x : Event) : Finset Event
 ```
 
-`Cslib.DistributedConsistency.Trajectory.returnsBefore` (definition, [line 88](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L88))
+`Cslib.DistributedConsistency.Trajectory.returnsBefore` (definition, [line 88](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L88))
 
 > The finite set of returns preceding an event (in the non-strict execution order).
 
@@ -135,7 +135,7 @@ def callsBefore (x : Event) : Finset Event
 def returnsBefore (x : Event) : Finset Event
 ```
 
-`Cslib.DistributedConsistency.Trajectory.ReturnWellFormed` (definition, [line 93](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L93))
+`Cslib.DistributedConsistency.Trajectory.ReturnWellFormed` (definition, [line 93](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L93))
 
 > The return well-formedness condition on a trajectory, which says that
 > each event is preceded by no more returns than calls.
@@ -145,7 +145,7 @@ def returnsBefore (x : Event) : Finset Event
 def ReturnWellFormed : Prop
 ```
 
-`Cslib.DistributedConsistency.Trajectory.isCall_eq_isReturn_returnWellFormed` (theorem, [line 97](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L97))
+`Cslib.DistributedConsistency.Trajectory.isCall_eq_isReturn_returnWellFormed` (theorem, [line 97](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L97))
 
 > Lemma 7.1 of [Burckhardt2014]: if all calls return immediately,
 > then the trajectory is return well-formed.
@@ -155,7 +155,7 @@ theorem isCall_eq_isReturn_returnWellFormed
     (h : traj.isCall = traj.isReturn) : traj.ReturnWellFormed
 ```
 
-`Cslib.DistributedConsistency.Trajectory.returnsAfter` (definition, [line 103](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L103))
+`Cslib.DistributedConsistency.Trajectory.returnsAfter` (definition, [line 103](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L103))
 
 > The set of returns succeeding an event (in the non-strict execution order).
 
@@ -163,7 +163,7 @@ theorem isCall_eq_isReturn_returnWellFormed
 def returnsAfter (x : Event) : Set Event
 ```
 
-`Cslib.DistributedConsistency.Trajectory.returnOf` (definition, [line 107](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L107))
+`Cslib.DistributedConsistency.Trajectory.returnOf` (definition, [line 107](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L107))
 
 > The return event of an event is the least return event succeeding it, if it exists.
 
@@ -171,25 +171,25 @@ def returnsAfter (x : Event) : Set Event
 noncomputable def returnOf (x : Event) : Option Event
 ```
 
-`Cslib.DistributedConsistency.Trajectory.self_le_returnOf` (theorem, [line 112](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L112))
+`Cslib.DistributedConsistency.Trajectory.self_le_returnOf` (theorem, [line 112](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L112))
 
 ```lean
 theorem self_le_returnOf {x y : Event} (h : traj.returnOf x = some y) : x ≤ y
 ```
 
-`Cslib.DistributedConsistency.Trajectory.isReturn_returnOf` (theorem, [line 118](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L118))
+`Cslib.DistributedConsistency.Trajectory.isReturn_returnOf` (theorem, [line 118](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L118))
 
 ```lean
 theorem isReturn_returnOf {x y : Event} (h : traj.returnOf x = some y) : traj.isReturn y
 ```
 
-`Cslib.DistributedConsistency.Trajectory.returnOf_isReturn` (theorem, [line 124](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L124))
+`Cslib.DistributedConsistency.Trajectory.returnOf_isReturn` (theorem, [line 124](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L124))
 
 ```lean
 theorem returnOf_isReturn {x : Event} (h : traj.isReturn x) : traj.returnOf x = some x
 ```
 
-`Cslib.DistributedConsistency.Trajectory.returnOf_le` (theorem, [line 131](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L131))
+`Cslib.DistributedConsistency.Trajectory.returnOf_le` (theorem, [line 131](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L131))
 
 > Every event preceding a return event has its return event.
 
@@ -198,7 +198,7 @@ theorem returnOf_le {x z : Event} (hz : traj.isReturn z) (hxz : x ≤ z) :
     ∃ y, traj.returnOf x = some y ∧ y ≤ z
 ```
 
-`Cslib.DistributedConsistency.Trajectory.callOf` (definition, [line 139](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L139))
+`Cslib.DistributedConsistency.Trajectory.callOf` (definition, [line 139](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L139))
 
 > The call event of an event is the greatest call event preceding it, if it exists.
 
@@ -206,13 +206,13 @@ theorem returnOf_le {x z : Event} (hz : traj.isReturn z) (hxz : x ≤ z) :
 def callOf (x : Event) : Option Event
 ```
 
-`Cslib.DistributedConsistency.Trajectory.callOf_le_self` (theorem, [line 144](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L144))
+`Cslib.DistributedConsistency.Trajectory.callOf_le_self` (theorem, [line 144](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L144))
 
 ```lean
 theorem callOf_le_self {x y : Event} (h : traj.callOf x = some y) : y ≤ x
 ```
 
-`Cslib.DistributedConsistency.Trajectory.callOf_isCall` (theorem, [line 150](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L150))
+`Cslib.DistributedConsistency.Trajectory.callOf_isCall` (theorem, [line 150](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean#L150))
 
 ```lean
 theorem callOf_isCall {x : Event} (h : traj.isCall x) : traj.callOf x = some x
@@ -225,5 +225,5 @@ theorem callOf_isCall {x : Event} (h : traj.isCall x) : traj.callOf x = some x
 
 ## Sources
 
-- [Cslib/Computability/Distributed/Consistency/Trajectory.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/Consistency/Trajectory.lean)
+- [Cslib/Computability/Distributed/Consistency/Trajectory.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/Consistency/Trajectory.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Distributed.Consistency.Trajectory.json)

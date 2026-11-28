@@ -7,7 +7,7 @@ proof: formalized
 
 # Perfect Secrecy
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.Basic`, in [Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean), by Samuel Schlesinger.
+`Cslib.Crypto.Protocols.PerfectSecrecy.Basic`, in [Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean), by Samuel Schlesinger.
 
 > Characterisation theorems for perfect secrecy following
 > [KatzLindell2020], Chapter 2: the equivalence with message-ciphertext
@@ -27,7 +27,7 @@ proof: formalized
 >
 > * [J. Katz, Y. Lindell, *Introduction to Modern Cryptography*][KatzLindell2020]
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.jointDist_eq` (theorem, [line 43](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean#L43))
+`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.jointDist_eq` (theorem, [line 43](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean#L43))
 
 > The joint distribution at `(m, c)` equals `msgDist m * ciphertextDist m c`.
 
@@ -37,7 +37,7 @@ theorem jointDist_eq (scheme : EncScheme M K C) (msgDist : PMF M)
     scheme.jointDist msgDist (m, c) = msgDist m * scheme.ciphertextDist m c
 ```
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.jointDist_tsum_fst` (theorem, [line 50](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean#L50))
+`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.jointDist_tsum_fst` (theorem, [line 50](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean#L50))
 
 > Summing the joint distribution over messages gives the marginal ciphertext
 > distribution.
@@ -47,7 +47,7 @@ theorem jointDist_tsum_fst (scheme : EncScheme M K C) (msgDist : PMF M) (c : C) 
     ∑' m, scheme.jointDist msgDist (m, c) = scheme.marginalCiphertextDist msgDist c
 ```
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.perfectlySecret_iff_indep` (theorem, [line 56](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean#L56))
+`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.perfectlySecret_iff_indep` (theorem, [line 56](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean#L56))
 
 > Perfect secrecy is equivalent to message-ciphertext independence.
 > The two formulations are related by multiplying/dividing by `marginal(c)`.
@@ -60,7 +60,7 @@ theorem perfectlySecret_iff_indep (scheme : EncScheme M K C) :
         msgDist m * scheme.marginalCiphertextDist msgDist c
 ```
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.perfectlySecret_iff_ciphertextIndist` (theorem, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean#L77))
+`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.perfectlySecret_iff_ciphertextIndist` (theorem, [line 77](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean#L77))
 
 > A scheme is perfectly secret iff the ciphertext distribution is
 > independent of the plaintext ([KatzLindell2020], Lemma 2.5).
@@ -70,7 +70,7 @@ theorem perfectlySecret_iff_ciphertextIndist (scheme : EncScheme M K C) :
     scheme.PerfectlySecret ↔ scheme.CiphertextIndist
 ```
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.indep_of_ciphertextIndist` (theorem, [line 95](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean#L95))
+`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.indep_of_ciphertextIndist` (theorem, [line 95](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean#L95))
 
 > Ciphertext indistinguishability implies message-ciphertext independence.
 
@@ -81,7 +81,7 @@ theorem indep_of_ciphertextIndist (scheme : EncScheme M K C)
       msgDist m * scheme.marginalCiphertextDist msgDist c
 ```
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.perfectlySecret_keySpace_ge` (theorem, [line 115](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean#L115))
+`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.perfectlySecret_keySpace_ge` (theorem, [line 115](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean#L115))
 
 > Perfect secrecy requires `|K| ≥ |M|` — Shannon's theorem
 > ([KatzLindell2020], Theorem 2.12).
@@ -98,5 +98,5 @@ theorem perfectlySecret_keySpace_ge [Finite K]
 
 ## Sources
 
-- [Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean)
+- [Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/PerfectSecrecy/Basic.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Crypto.Protocols.PerfectSecrecy.Basic.json)

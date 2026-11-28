@@ -7,13 +7,13 @@ proof: formalized
 
 # Polynomial bounds on natural-valued functions
 
-`Cslib.Foundations.Data.Nat.PolynomialBound`, in [Cslib/Foundations/Data/Nat/PolynomialBound.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Nat/PolynomialBound.lean), by Samuel Schlesinger.
+`Cslib.Foundations.Data.Nat.PolynomialBound`, in [Cslib/Foundations/Data/Nat/PolynomialBound.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Nat/PolynomialBound.lean), by Samuel Schlesinger.
 
 > `PolynomiallyBounded f` means that `f n ≤ n ^ d` eventually, for some fixed degree `d`.
 > This is equivalent to a real-valued `IsBigO` bound and to a bound `c * (n + 1) ^ d`
 > at every input. It is a growth condition and does not assert computability.
 
-`Cslib.PolynomiallyBounded` (definition, [line 29](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Nat/PolynomialBound.lean#L29))
+`Cslib.PolynomiallyBounded` (definition, [line 29](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Nat/PolynomialBound.lean#L29))
 
 > A function is polynomially bounded if a fixed power eventually bounds its values.
 
@@ -21,7 +21,7 @@ proof: formalized
 def PolynomiallyBounded (f : ℕ → ℕ) : Prop
 ```
 
-`Cslib.polynomiallyBounded_iff_isBigO` (theorem, [line 33](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Nat/PolynomialBound.lean#L33))
+`Cslib.polynomiallyBounded_iff_isBigO` (theorem, [line 33](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Nat/PolynomialBound.lean#L33))
 
 > Polynomial growth is equivalent to a big-O bound after casting to the reals.
 
@@ -31,7 +31,7 @@ theorem polynomiallyBounded_iff_isBigO {f : ℕ → ℕ} :
       ∃ d : ℕ, (fun n => (f n : ℝ)) =O[atTop] (fun n => (n : ℝ) ^ d)
 ```
 
-`Cslib.polynomiallyBounded_iff_le` (theorem, [line 49](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Nat/PolynomialBound.lean#L49))
+`Cslib.polynomiallyBounded_iff_le` (theorem, [line 49](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Nat/PolynomialBound.lean#L49))
 
 > A polynomial bound can absorb every finite prefix into its constant factor.
 
@@ -46,5 +46,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Foundations/Data/Nat/PolynomialBound.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Nat/PolynomialBound.lean)
+- [Cslib/Foundations/Data/Nat/PolynomialBound.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Nat/PolynomialBound.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Data.Nat.PolynomialBound.json)

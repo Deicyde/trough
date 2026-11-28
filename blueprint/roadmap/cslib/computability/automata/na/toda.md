@@ -7,11 +7,11 @@ proof: formalized
 
 # Translation of Nondeterministic Automata for finite strings into Deterministic Automata
 
-`Cslib.Computability.Automata.NA.ToDA`, in [Cslib/Computability/Automata/NA/ToDA.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/ToDA.lean), by Fabrizio Montesi.
+`Cslib.Computability.Automata.NA.ToDA`, in [Cslib/Computability/Automata/NA/ToDA.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/ToDA.lean), by Fabrizio Montesi.
 
 > This file implements the standard subset construction.
 
-`Cslib.Automata.NA.toDA` (definition, [line 28](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/ToDA.lean#L28))
+`Cslib.Automata.NA.toDA` (definition, [line 28](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/ToDA.lean#L28))
 
 > Converts an `NA` into a `DA` using the subset construction.
 
@@ -19,7 +19,7 @@ proof: formalized
 def toDA (a : NA State Symbol) : DA (Set State) Symbol
 ```
 
-`Cslib.Automata.NA.FinAcc.toDAFinAcc` (definition, [line 35](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/ToDA.lean#L35))
+`Cslib.Automata.NA.FinAcc.toDAFinAcc` (definition, [line 35](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/ToDA.lean#L35))
 
 > Converts an `NA.FinAcc` into a `DA.FinAcc` using the subset construction.
 
@@ -27,7 +27,7 @@ def toDA (a : NA State Symbol) : DA (Set State) Symbol
 def toDAFinAcc (a : NA.FinAcc State Symbol) : DA.FinAcc (Set State) Symbol
 ```
 
-`Cslib.Automata.NA.FinAcc.toDAFinAcc_language_eq` (theorem, [line 42](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/ToDA.lean#L42))
+`Cslib.Automata.NA.FinAcc.toDAFinAcc_language_eq` (theorem, [line 42](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/ToDA.lean#L42))
 
 > The `DA` constructed from an `NA` has the same language.
 
@@ -44,5 +44,5 @@ theorem toDAFinAcc_language_eq {na : NA.FinAcc State Symbol} :
 
 ## Sources
 
-- [Cslib/Computability/Automata/NA/ToDA.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/ToDA.lean)
+- [Cslib/Computability/Automata/NA/ToDA.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/ToDA.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.NA.ToDA.json)

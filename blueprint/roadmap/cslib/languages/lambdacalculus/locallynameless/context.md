@@ -7,11 +7,11 @@ proof: formalized
 
 # λ-calculus (Context)
 
-`Cslib.Languages.LambdaCalculus.LocallyNameless.Context`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean), by Chris Henson.
+`Cslib.Languages.LambdaCalculus.LocallyNameless.Context`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean), by Chris Henson.
 
 > Contexts as pairs of free variables and types.
 
-`Cslib.LambdaCalculus.LocallyNameless.Context` (abbreviation, [line 33](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean#L33))
+`Cslib.LambdaCalculus.LocallyNameless.Context` (abbreviation, [line 33](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean#L33))
 
 > A typing context is a list of free variables and corresponding types.
 
@@ -19,7 +19,7 @@ proof: formalized
 abbrev Context (α : Type u) (β : Type v)
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Context.dom` (definition, [line 58](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean#L58))
+`Cslib.LambdaCalculus.LocallyNameless.Context.dom` (definition, [line 58](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean#L58))
 
 > The domain of a context is the finite set of free variables it uses.
 
@@ -27,13 +27,13 @@ abbrev Context (α : Type u) (β : Type v)
 def dom (Γ : Context α β) : Finset α
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Context.haswellformed_def` (theorem, [line 65](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean#L65))
+`Cslib.LambdaCalculus.LocallyNameless.Context.haswellformed_def` (theorem, [line 65](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean#L65))
 
 ```lean
 theorem haswellformed_def (Γ : Context α β) : Γ✓ = Γ.NodupKeys
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Context.mapVal` (definition, [line 71](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean#L71))
+`Cslib.LambdaCalculus.LocallyNameless.Context.mapVal` (definition, [line 71](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean#L71))
 
 > A mapping of values within a context.
 
@@ -41,7 +41,7 @@ theorem haswellformed_def (Γ : Context α β) : Γ✓ = Γ.NodupKeys
 def mapVal (f : β → β) (Γ : Context α β) : Context α β
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Context.mapVal_keys` (lemma, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean#L77))
+`Cslib.LambdaCalculus.LocallyNameless.Context.mapVal_keys` (lemma, [line 77](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean#L77))
 
 > A mapping of values preserves keys.
 
@@ -49,7 +49,7 @@ def mapVal (f : β → β) (Γ : Context α β) : Context α β
 lemma mapVal_keys (f : β → β) : Γ.keys = (Γ.mapVal f).keys
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Context.mapVal_mem` (lemma, [line 81](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean#L81))
+`Cslib.LambdaCalculus.LocallyNameless.Context.mapVal_mem` (lemma, [line 81](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean#L81))
 
 > A mapping of values maps lookups.
 
@@ -64,5 +64,5 @@ lemma mapVal_mem {x : α} {σ : β} (mem : σ ∈ Γ.dlookup x) (f : β → β) 
 
 ## Sources
 
-- [Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean)
+- [Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/LambdaCalculus/LocallyNameless/Context.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Context.json)

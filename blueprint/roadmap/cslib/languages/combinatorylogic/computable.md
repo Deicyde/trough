@@ -7,7 +7,7 @@ proof: formalized
 
 # SKI-computable functions
 
-`Cslib.Languages.CombinatoryLogic.Computable`, in [Cslib/Languages/CombinatoryLogic/Computable.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Computable.lean), by Jesse Alama.
+`Cslib.Languages.CombinatoryLogic.Computable`, in [Cslib/Languages/CombinatoryLogic/Computable.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Computable.lean), by Jesse Alama.
 
 > This file defines the notion of SKI-computability for partial functions on natural
 > numbers, via Church numerals: a term computes `f : ℕ →. ℕ` if it maps Church numeral
@@ -24,7 +24,7 @@ proof: formalized
 > predicate is one-sided: it constrains the term's behavior only where the function is
 > defined, and says nothing about inputs outside the domain.
 
-`Cslib.SKI.Computes` (definition, [line 42](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Computable.lean#L42))
+`Cslib.SKI.Computes` (definition, [line 42](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Computable.lean#L42))
 
 > An SKI term `t` computes a partial function `f : ℕ →. ℕ` if,
 > for every Church numeral input, `t` applied to the input is a Church numeral
@@ -34,7 +34,7 @@ proof: formalized
 def Computes (t : SKI) (f : ℕ →. ℕ) : Prop
 ```
 
-`Cslib.SKI.Computable` (definition, [line 47](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Computable.lean#L47))
+`Cslib.SKI.Computable` (definition, [line 47](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Computable.lean#L47))
 
 > A partial function `f : ℕ →. ℕ` is SKI-computable if there exists an SKI term that
 > computes it.
@@ -43,7 +43,7 @@ def Computes (t : SKI) (f : ℕ →. ℕ) : Prop
 def Computable (f : ℕ →. ℕ) : Prop
 ```
 
-`Cslib.SKI.computes_of_total` (theorem, [line 52](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Computable.lean#L52))
+`Cslib.SKI.computes_of_total` (theorem, [line 52](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Computable.lean#L52))
 
 > To show that a term computes a total function, it suffices to produce a Church
 > numeral for the output on every input.
@@ -55,7 +55,7 @@ theorem computes_of_total {t : SKI} {f : ℕ →. ℕ} (g : ℕ → ℕ)
     Computes t f
 ```
 
-`Cslib.SKI.comp_computes` (theorem, [line 60](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Computable.lean#L60))
+`Cslib.SKI.comp_computes` (theorem, [line 60](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Computable.lean#L60))
 
 > Composition of computable functions is computable.
 
@@ -65,7 +65,7 @@ theorem comp_computes {f g : ℕ →. ℕ} {tf tg : SKI}
     Computes (B ⬝ tf ⬝ tg) (f.comp g)
 ```
 
-`Cslib.SKI.pair_computes` (theorem, [line 69](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Computable.lean#L69))
+`Cslib.SKI.pair_computes` (theorem, [line 69](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Computable.lean#L69))
 
 > Pairing of computable functions is computable.
 
@@ -82,5 +82,5 @@ theorem pair_computes {f g : ℕ →. ℕ} {tf tg : SKI}
 
 ## Sources
 
-- [Cslib/Languages/CombinatoryLogic/Computable.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Computable.lean)
+- [Cslib/Languages/CombinatoryLogic/Computable.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Computable.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Languages.CombinatoryLogic.Computable.json)

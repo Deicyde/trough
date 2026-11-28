@@ -7,9 +7,9 @@ proof: formalized
 
 # Unary Modal Logic
 
-`Cslib.Logics.Modal.Unary.Basic`, in [Cslib/Logics/Modal/Unary/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Unary/Basic.lean), by Fabrizio Montesi.
+`Cslib.Logics.Modal.Unary.Basic`, in [Cslib/Logics/Modal/Unary/Basic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Modal/Unary/Basic.lean), by Fabrizio Montesi.
 
-`Cslib.Logic.Modal.Proposition.Context.dynDiamond` (definition, [line 27](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Unary/Basic.lean#L27))
+`Cslib.Logic.Modal.Proposition.Context.dynDiamond` (definition, [line 27](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Modal/Unary/Basic.lean#L27))
 
 > Context constructor for the dynamic diamond modality.
 
@@ -17,14 +17,14 @@ proof: formalized
 def Proposition.Context.dynDiamond (c : Context τ Atom) (a : τ.A) : Context τ Atom
 ```
 
-`Cslib.Logic.Modal.Proposition.unary_triangle_eq_dynDiamond` (theorem, [line 31](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Unary/Basic.lean#L31))
+`Cslib.Logic.Modal.Proposition.unary_triangle_eq_dynDiamond` (theorem, [line 31](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Modal/Unary/Basic.lean#L31))
 
 ```lean
 theorem Proposition.unary_triangle_eq_dynDiamond {a : τ.A}
     (φs : PropositionMap τ a Atom) : (Δ[a]φs) = d⟨a⟩(φs default)
 ```
 
-`Cslib.Logic.Modal.Satisfies.dynDiamond_iff_exists` (theorem, [line 37](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Unary/Basic.lean#L37))
+`Cslib.Logic.Modal.Satisfies.dynDiamond_iff_exists` (theorem, [line 37](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Modal/Unary/Basic.lean#L37))
 
 ```lean
 theorem Satisfies.dynDiamond_iff_exists {m : Model World τ Atom}
@@ -32,14 +32,14 @@ theorem Satisfies.dynDiamond_iff_exists {m : Model World τ Atom}
       ∃ w', m.toFrame.diagonal a w w' ∧ ⇓Modal[m,w' ⊨ φ]
 ```
 
-`Cslib.Logic.Modal.Satisfies.dynBox_iff_forall` (theorem, [line 42](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Unary/Basic.lean#L42))
+`Cslib.Logic.Modal.Satisfies.dynBox_iff_forall` (theorem, [line 42](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Modal/Unary/Basic.lean#L42))
 
 ```lean
 theorem Satisfies.dynBox_iff_forall {m : Model World τ Atom} {φ : Proposition τ Atom} :
     ⇓Modal[m,w ⊨ d[a]φ] ↔ ∀ w', m.toFrame.diagonal a w w' → ⇓Modal[m,w' ⊨ φ]
 ```
 
-`Cslib.Logic.Modal.Satisfies.dynBox_dynDiamond_diagonalInverse₁` (theorem, [line 46](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Unary/Basic.lean#L46))
+`Cslib.Logic.Modal.Satisfies.dynBox_dynDiamond_diagonalInverse₁` (theorem, [line 46](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Modal/Unary/Basic.lean#L46))
 
 > If two operators `op₁` and `op₂` have inverse diagonal relations, then `φ → d[op₁](d⟨op₂⟩φ)`.
 
@@ -49,7 +49,7 @@ theorem Satisfies.dynBox_dynDiamond_diagonalInverse₁ {m : Model World τ Atom}
     ⇓Modal[m,w ⊨ φ → d[op₁](d⟨op₂⟩φ)]
 ```
 
-`Cslib.Logic.Modal.Satisfies.dynBox_dynDiamond_diagonalInverse₂` (theorem, [line 52](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Unary/Basic.lean#L52))
+`Cslib.Logic.Modal.Satisfies.dynBox_dynDiamond_diagonalInverse₂` (theorem, [line 52](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Modal/Unary/Basic.lean#L52))
 
 > If two operators `op₁` and `op₂` have inverse diagonal relations, then `φ → d[op₂](d⟨op₁⟩φ)`.
 
@@ -59,7 +59,7 @@ theorem Satisfies.dynBox_dynDiamond_diagonalInverse₂ {m : Model World τ Atom}
     ⇓Modal[m,w ⊨ φ → d[op₂](d⟨op₁⟩φ)]
 ```
 
-`Cslib.Logic.Modal.Satisfies.unary_dual` (theorem, [line 59](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Unary/Basic.lean#L59))
+`Cslib.Logic.Modal.Satisfies.unary_dual` (theorem, [line 59](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Modal/Unary/Basic.lean#L59))
 
 > The dual axiom (reformulated for unary modal logic).
 
@@ -74,5 +74,5 @@ theorem Satisfies.unary_dual (f : Frame World τ) {a : τ.A} {φ : Proposition �
 
 ## Sources
 
-- [Cslib/Logics/Modal/Unary/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/Modal/Unary/Basic.lean)
+- [Cslib/Logics/Modal/Unary/Basic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/Modal/Unary/Basic.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Logics.Modal.Unary.Basic.json)

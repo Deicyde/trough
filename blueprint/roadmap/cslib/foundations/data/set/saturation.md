@@ -7,9 +7,9 @@ proof: formalized
 
 # Saturation
 
-`Cslib.Foundations.Data.Set.Saturation`, in [Cslib/Foundations/Data/Set/Saturation.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Set/Saturation.lean), by Ching-Tsun Chou.
+`Cslib.Foundations.Data.Set.Saturation`, in [Cslib/Foundations/Data/Set/Saturation.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Set/Saturation.lean), by Ching-Tsun Chou.
 
-`Set.Saturates` (definition, [line 25](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Set/Saturation.lean#L25))
+`Set.Saturates` (definition, [line 25](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Set/Saturation.lean#L25))
 
 > `f : ι → Set α` saturates `s : Set α` iff `f i` is a subset of `s`
 > whenever `f i` and `s` has any intersection at all.
@@ -18,7 +18,7 @@ proof: formalized
 def Saturates (f : ι → Set α) (s : Set α) : Prop
 ```
 
-`Set.saturates_compl` (theorem, [line 32](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Set/Saturation.lean#L32))
+`Set.saturates_compl` (theorem, [line 32](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Set/Saturation.lean#L32))
 
 > If `f` saturates `s`, then `f` saturates its complement `sᶜ` as well.
 
@@ -26,7 +26,7 @@ def Saturates (f : ι → Set α) (s : Set α) : Prop
 theorem saturates_compl (hs : Saturates f s) : Saturates f sᶜ
 ```
 
-`Set.saturates_eq_biUnion` (theorem, [line 38](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Set/Saturation.lean#L38))
+`Set.saturates_eq_biUnion` (theorem, [line 38](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Set/Saturation.lean#L38))
 
 > If `f` is a cover and saturates `s`, then `s` is the union of all `f i` that intersects `s`.
 
@@ -41,5 +41,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Foundations/Data/Set/Saturation.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Set/Saturation.lean)
+- [Cslib/Foundations/Data/Set/Saturation.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Set/Saturation.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Data.Set.Saturation.json)

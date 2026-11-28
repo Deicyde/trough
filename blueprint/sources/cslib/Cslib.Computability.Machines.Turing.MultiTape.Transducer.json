@@ -1,0 +1,22 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "8b510d014295ed2c2334a379a7c96561a1603dc4",
+ "module": "Cslib.Computability.Machines.Turing.MultiTape.Transducer",
+ "file": "Cslib/Computability/Machines/Turing/MultiTape/Transducer.lean",
+ "public": [
+  {"name": "Turing.MultiTapeTM.emitChunk", "kind": "def", "line": 57},
+  {"name": "Turing.MultiTapeTM.ofSubsequential", "kind": "def", "line": 97},
+  {"name": "Turing.MultiTapeTM.transducerCfg", "kind": "def", "line": 105},
+  {"name": "Turing.MultiTapeTM.transducerHaltCfg", "kind": "def", "line": 111},
+  {"name": "Turing.MultiTapeTM.runFrom_ofSubsequential_tr", "kind": "theorem", "line": 115},
+  {"name": "Turing.MultiTapeTM.runFrom_ofSubsequential", "kind": "theorem", "line": 135},
+  {"name": "Turing.MultiTapeTM.computesInTimeAndSpace_ofSubsequential", "kind": "theorem", "line": 161},
+  {"name": "Turing.MultiTapeTM.computableInTimeAndSpace_of_subsequential", "kind": "theorem", "line": 176},
+  {"name": "Turing.MultiTapeTM.computableInTimeAndSpace_of_sequential", "kind": "theorem", "line": 187}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

@@ -7,7 +7,7 @@ proof: formalized
 
 # Arithmetic Queries and Complex Multiplication
 
-`Cslib.Algorithms.Lean.Query.Arith.Defs`, in [Cslib/Algorithms/Lean/Query/Arith/Defs.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Defs.lean), by Kim Morrison, Shreyas Srinivas.
+`Cslib.Algorithms.Lean.Query.Arith.Defs`, in [Cslib/Algorithms/Lean/Query/Arith/Defs.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Defs.lean), by Kim Morrison, Shreyas Srinivas.
 
 > A simple example showing how to use `FreeM.cost` with variable/parametrized query costs.
 >
@@ -16,7 +16,7 @@ proof: formalized
 > where two algorithms (naive and Gauss's trick) trade multiplications for additions,
 > and the optimal choice depends on the cost ratio.
 
-`Cslib.Query.ArithQuery` (inductive type, [line 25](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Defs.lean#L25))
+`Cslib.Query.ArithQuery` (inductive type, [line 25](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Defs.lean#L25))
 
 > Arithmetic queries: addition, subtraction, and multiplication.
 
@@ -27,7 +27,7 @@ inductive ArithQuery (α : Type) : Type → Type where
   | mul (a b : α) : ArithQuery α α
 ```
 
-`Cslib.Query.ArithQuery.doAdd` (abbreviation, [line 33](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Defs.lean#L33))
+`Cslib.Query.ArithQuery.doAdd` (abbreviation, [line 33](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Defs.lean#L33))
 
 > Lift `ArithQuery.add a b` into a `FreeM` that returns the sum.
 
@@ -35,7 +35,7 @@ inductive ArithQuery (α : Type) : Type → Type where
 abbrev doAdd (a b : α) : FreeM (ArithQuery α) α
 ```
 
-`Cslib.Query.ArithQuery.doSub` (abbreviation, [line 35](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Defs.lean#L35))
+`Cslib.Query.ArithQuery.doSub` (abbreviation, [line 35](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Defs.lean#L35))
 
 > Lift `ArithQuery.sub a b` into a `FreeM` that returns the difference.
 
@@ -43,7 +43,7 @@ abbrev doAdd (a b : α) : FreeM (ArithQuery α) α
 abbrev doSub (a b : α) : FreeM (ArithQuery α) α
 ```
 
-`Cslib.Query.ArithQuery.doMul` (abbreviation, [line 37](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Defs.lean#L37))
+`Cslib.Query.ArithQuery.doMul` (abbreviation, [line 37](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Defs.lean#L37))
 
 > Lift `ArithQuery.mul a b` into a `FreeM` that returns the product.
 
@@ -51,7 +51,7 @@ abbrev doSub (a b : α) : FreeM (ArithQuery α) α
 abbrev doMul (a b : α) : FreeM (ArithQuery α) α
 ```
 
-`Cslib.Query.ArithQuery.honest` (definition, [line 40](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Defs.lean#L40))
+`Cslib.Query.ArithQuery.honest` (definition, [line 40](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Defs.lean#L40))
 
 > An honest oracle interprets arithmetic queries using the actual ring operations.
 
@@ -59,7 +59,7 @@ abbrev doMul (a b : α) : FreeM (ArithQuery α) α
 def honest [Add α] [Sub α] [Mul α] {ι : Type} : ArithQuery α ι → ι
 ```
 
-`Cslib.Query.ArithQuery.weight` (definition, [line 47](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Defs.lean#L47))
+`Cslib.Query.ArithQuery.weight` (definition, [line 47](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Defs.lean#L47))
 
 > Weighted cost model for arithmetic queries. Subtraction costs the same as addition
 > (both are linear-time on bignums).
@@ -68,7 +68,7 @@ def honest [Add α] [Sub α] [Mul α] {ι : Type} : ArithQuery α ι → ι
 def weight (c_add c_mul : Nat) {ι : Type} : ArithQuery α ι → Nat
 ```
 
-`Cslib.Query.complexMulNaive` (definition, [line 56](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Defs.lean#L56))
+`Cslib.Query.complexMulNaive` (definition, [line 56](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Defs.lean#L56))
 
 > Naive complex multiplication: `(a + bi)(c + di) = (ac - bd) + (ad + bc)i`.
 > Uses 4 multiplications, 1 subtraction, 1 addition.
@@ -77,7 +77,7 @@ def weight (c_add c_mul : Nat) {ι : Type} : ArithQuery α ι → Nat
 def complexMulNaive (a b c d : α) : FreeM (ArithQuery α) (α × α)
 ```
 
-`Cslib.Query.complexMulGauss` (definition, [line 68](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Defs.lean#L68))
+`Cslib.Query.complexMulGauss` (definition, [line 68](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Defs.lean#L68))
 
 > Gauss's trick for complex multiplication: computes `(a+b)(c+d)` to save one
 > multiplication, at the cost of extra additions and subtractions.
@@ -93,5 +93,5 @@ def complexMulGauss (a b c d : α) : FreeM (ArithQuery α) (α × α)
 
 ## Sources
 
-- [Cslib/Algorithms/Lean/Query/Arith/Defs.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Defs.lean)
+- [Cslib/Algorithms/Lean/Query/Arith/Defs.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Defs.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Algorithms.Lean.Query.Arith.Defs.json)

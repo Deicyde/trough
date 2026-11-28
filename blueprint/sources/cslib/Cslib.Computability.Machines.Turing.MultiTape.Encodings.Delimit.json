@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "8b510d014295ed2c2334a379a7c96561a1603dc4",
+ "module": "Cslib.Computability.Machines.Turing.MultiTape.Encodings.Delimit",
+ "file": "Cslib/Computability/Machines/Turing/MultiTape/Encodings/Delimit.lean",
+ "public": [
+  {"name": "Cslib.Encoding.undelimitOr", "kind": "def", "line": 48},
+  {"name": "Cslib.Encoding.undelimitOr_nil_left", "kind": "theorem", "line": 55},
+  {"name": "Cslib.Encoding.undelimitOr_delimit_append", "kind": "theorem", "line": 60},
+  {"name": "Cslib.Encoding.undelimitAll", "kind": "def", "line": 67},
+  {"name": "Cslib.Encoding.undelimitAll_delimit_append", "kind": "theorem", "line": 73},
+  {"name": "Cslib.Encoding.length_undelimitOr_le", "kind": "theorem", "line": 78},
+  {"name": "Cslib.Encoding.length_undelimitAll_le", "kind": "theorem", "line": 83},
+  {"name": "Turing.MultiTapeTM.computableInTimeAndSpace_delimit", "kind": "theorem", "line": 104},
+  {"name": "Turing.MultiTapeTM.computableInTimeAndSpace_undelimitOr", "kind": "theorem", "line": 152},
+  {"name": "Turing.MultiTapeTM.computableInTimeAndSpace_undelimit", "kind": "theorem", "line": 160},
+  {"name": "Turing.MultiTapeTM.computableInTimeAndSpace_dropDelimited", "kind": "theorem", "line": 200},
+  {"name": "Turing.MultiTapeTM.computableInTimeAndSpace_undelimitAll", "kind": "theorem", "line": 229}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

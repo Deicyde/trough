@@ -7,9 +7,9 @@ proof: formalized
 
 # Basic definitions for Turing Machines (TMs)
 
-`Cslib.Computability.Machines.Turing.SingleTape.Defs`, in [Cslib/Computability/Machines/Turing/SingleTape/Defs.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean), by Fabrizio Montesi, Bolton Bailey.
+`Cslib.Computability.Machines.Turing.SingleTape.Defs`, in [Cslib/Computability/Machines/Turing/SingleTape/Defs.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean), by Fabrizio Montesi, Bolton Bailey.
 
-`Cslib.Computability.Turing.SingleTape.TrLabel` (inductive type, [line 18](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean#L18))
+`Cslib.Computability.Turing.SingleTape.TrLabel` (inductive type, [line 18](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean#L18))
 
 > The transition labels used by a single-tape Turing Machine.
 
@@ -25,7 +25,7 @@ inductive TrLabel (Symbol : Type*)
   | skip
 ```
 
-`Cslib.Computability.Turing.SingleTape.TrLabel.applyToTape` (definition, [line 30](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean#L30))
+`Cslib.Computability.Turing.SingleTape.TrLabel.applyToTape` (definition, [line 30](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean#L30))
 
 > Applies a transition label to a tape, returning `none` if it is not possible.
 > The input is taken as an `Option` to make the function composable.
@@ -36,21 +36,21 @@ def TrLabel.applyToTape [DecidableEq Symbol]
     Option (Turing.BiTape Symbol)
 ```
 
-`Cslib.Computability.Turing.SingleTape.TrLabel.applyToTape_isSome` (theorem, [line 41](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean#L41))
+`Cslib.Computability.Turing.SingleTape.TrLabel.applyToTape_isSome` (theorem, [line 41](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean#L41))
 
 ```lean
 theorem TrLabel.applyToTape_isSome [DecidableEq Symbol] {μ : TrLabel Symbol}
     {ot : Option (Turing.BiTape Symbol)} (h : (μ.applyToTape ot).isSome) : ot.isSome
 ```
 
-`Cslib.Computability.Turing.SingleTape.TrLabel.applyToTape_foldl_isSome` (theorem, [line 48](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean#L48))
+`Cslib.Computability.Turing.SingleTape.TrLabel.applyToTape_foldl_isSome` (theorem, [line 48](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean#L48))
 
 ```lean
 theorem TrLabel.applyToTape_foldl_isSome [DecidableEq Symbol] {μs : List (TrLabel Symbol)}
     {ot : Option (Turing.BiTape Symbol)} (h : (μs.foldl applyToTape ot).isSome) : ot.isSome
 ```
 
-`Cslib.Computability.Turing.SingleTape.Cfg` (structure, [line 54](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean#L54))
+`Cslib.Computability.Turing.SingleTape.Cfg` (structure, [line 54](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean#L54))
 
 > Configuration of a single-tape Turing machine.
 
@@ -62,7 +62,7 @@ structure Cfg (State Symbol : Type*) where
   tape : Turing.BiTape Symbol
 ```
 
-`Cslib.Computability.Turing.SingleTape.Cfg.mk₁` (definition, [line 61](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean#L61))
+`Cslib.Computability.Turing.SingleTape.Cfg.mk₁` (definition, [line 61](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean#L61))
 
 > Helper builder for a configuration with a given tape content.
 
@@ -70,7 +70,7 @@ structure Cfg (State Symbol : Type*) where
 def Cfg.mk₁ (s : State) (xs : List Symbol) : Cfg State Symbol
 ```
 
-`Cslib.Computability.Turing.SingleTape.Cfg.spaceUsed` (definition, [line 66](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean#L66))
+`Cslib.Computability.Turing.SingleTape.Cfg.spaceUsed` (definition, [line 66](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean#L66))
 
 > The space used by a configuration is the space used by its tape.
 
@@ -84,5 +84,5 @@ def Cfg.spaceUsed (cfg : Cfg State Symbol) : ℕ
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/SingleTape/Defs.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean)
+- [Cslib/Computability/Machines/Turing/SingleTape/Defs.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/SingleTape/Defs.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.SingleTape.Defs.json)

@@ -7,9 +7,9 @@ proof: formalized
 
 # Equivalence of nondeterministic Buchi automata (NBAs)
 
-`Cslib.Computability.Automata.NA.BuchiEquiv`, in [Cslib/Computability/Automata/NA/BuchiEquiv.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/BuchiEquiv.lean), by Ching-Tsun Chou.
+`Cslib.Computability.Automata.NA.BuchiEquiv`, in [Cslib/Computability/Automata/NA/BuchiEquiv.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/BuchiEquiv.lean), by Ching-Tsun Chou.
 
-`Cslib.Automata.NA.Buchi.reindex` (definition, [line 26](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/BuchiEquiv.lean#L26))
+`Cslib.Automata.NA.Buchi.reindex` (definition, [line 26](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/BuchiEquiv.lean#L26))
 
 > Lifts an equivalence on states to an equivalence on NBAs.
 
@@ -17,7 +17,7 @@ proof: formalized
 def reindex (f : State ≃ State') : Buchi State Symbol ≃ Buchi State' Symbol
 ```
 
-`Cslib.Automata.NA.Buchi.reindex_run_iff` (theorem, [line 40](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/BuchiEquiv.lean#L40))
+`Cslib.Automata.NA.Buchi.reindex_run_iff` (theorem, [line 40](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/BuchiEquiv.lean#L40))
 
 ```lean
 theorem reindex_run_iff {f : State ≃ State'} {nba : Buchi State Symbol}
@@ -25,7 +25,7 @@ theorem reindex_run_iff {f : State ≃ State'} {nba : Buchi State Symbol}
     (nba.reindex f).Run xs ss' ↔ nba.Run xs (ss'.map f.symm)
 ```
 
-`Cslib.Automata.NA.Buchi.reindex_run_iff'` (theorem, [line 50](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/BuchiEquiv.lean#L50))
+`Cslib.Automata.NA.Buchi.reindex_run_iff'` (theorem, [line 50](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/BuchiEquiv.lean#L50))
 
 ```lean
 theorem reindex_run_iff' {f : State ≃ State'} {nba : Buchi State Symbol}
@@ -33,7 +33,7 @@ theorem reindex_run_iff' {f : State ≃ State'} {nba : Buchi State Symbol}
     (nba.reindex f).Run xs (ss.map f) ↔ nba.Run xs ss
 ```
 
-`Cslib.Automata.NA.Buchi.reindex_language_eq` (theorem, [line 56](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/BuchiEquiv.lean#L56))
+`Cslib.Automata.NA.Buchi.reindex_language_eq` (theorem, [line 56](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/BuchiEquiv.lean#L56))
 
 ```lean
 theorem reindex_language_eq {f : State ≃ State'} {nba : Buchi State Symbol} :
@@ -46,5 +46,5 @@ theorem reindex_language_eq {f : State ≃ State'} {nba : Buchi State Symbol} :
 
 ## Sources
 
-- [Cslib/Computability/Automata/NA/BuchiEquiv.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/BuchiEquiv.lean)
+- [Cslib/Computability/Automata/NA/BuchiEquiv.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/BuchiEquiv.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.NA.BuchiEquiv.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Bounds on the number of reachable configurations in bounded space
 
-`Cslib.Computability.Machines.Turing.MultiTape.ConfigBound`, in [Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean), by Christian Reitwiessner.
+`Cslib.Computability.Machines.Turing.MultiTape.ConfigBound`, in [Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean), by Christian Reitwiessner.
 
 > A multi-tape Turing machine that uses at most `s` cells of work-tape space can only reach a number
 > of configurations that differ in their storage content (state and work tapes) that is bounded
@@ -69,7 +69,7 @@ proof: formalized
 > positions all lie inside the `[-s, s]` windows, so that counting `BoundedStorage` bounds the
 > number of such `Storage`s.
 
-`Turing.Storage` (structure, [line 95](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L95))
+`Turing.Storage` (structure, [line 95](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L95))
 
 > The state and work-tape data of a machine.
 
@@ -83,7 +83,7 @@ structure Storage (Symbol State : Type*) (k : ℕ) where
   workTapePos (i : Fin k) : ℤ
 ```
 
-`Turing.BoundedStorage` (abbreviation, [line 105](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L105))
+`Turing.BoundedStorage` (abbreviation, [line 105](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L105))
 
 > A bounded storage: the state and work-tape data of a machine, but with the cells and the head
 > position of tape `i` restricted to the finite window `[-(w i), w i]`.
@@ -92,7 +92,7 @@ structure Storage (Symbol State : Type*) (k : ℕ) where
 abbrev BoundedStorage (Symbol State : Type*) {k : ℕ} (w : Fin k → ℕ)
 ```
 
-`Turing.Storage.FitsIn` (structure, [line 110](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L110))
+`Turing.Storage.FitsIn` (structure, [line 110](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L110))
 
 > A storage fits in the per-tape windows `w`: on each tape `j`, the head position and every
 > non-blank cell have absolute value `≤ w j`.
@@ -105,7 +105,7 @@ structure Storage.FitsIn (x : Storage Symbol State k) (w : Fin k → ℕ) : Prop
   cell_le : ∀ j z, x.workTapes j z ≠ none → z.natAbs ≤ w j
 ```
 
-`Turing.Storage.FitsIn_mono` (lemma, [line 117](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L117))
+`Turing.Storage.FitsIn_mono` (lemma, [line 117](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L117))
 
 > If a `Storage` fits in a smaller window, it also fits in the larger window.
 
@@ -113,7 +113,7 @@ structure Storage.FitsIn (x : Storage Symbol State k) (w : Fin k → ℕ) : Prop
 lemma Storage.FitsIn_mono {x : Storage Symbol State k} : Monotone x.FitsIn
 ```
 
-`Turing.Storage.toBounded` (definition, [line 127](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L127))
+`Turing.Storage.toBounded` (definition, [line 127](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L127))
 
 > Restriction of a storage to the finite windows `w` (with heads outside their window
 > clamped to `0`).
@@ -123,7 +123,7 @@ def Storage.toBounded (x : Storage Symbol State k) (w : Fin k → ℕ) :
     BoundedStorage Symbol State w
 ```
 
-`Turing.Storage.toBounded_injOn` (lemma, [line 134](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L134))
+`Turing.Storage.toBounded_injOn` (lemma, [line 134](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L134))
 
 > The restriction is injective on storages that fit in the windows.
 
@@ -137,7 +137,7 @@ lemma Storage.toBounded_injOn (w : Fin k → ℕ) :
 > This section is purely combinatorial: it counts how many values a `Storage` restricted to given
 > windows can take, without reference to a machine or a run.
 
-`Turing.storageBound` (definition, [line 155](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L155))
+`Turing.storageBound` (definition, [line 155](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L155))
 
 > An upper bound on the number of storages a `k`-tape machine can be in while using
 > at most `s` cells of total work-tape space, over the given alphabet and state set. The `(2s + 1)^k`
@@ -148,7 +148,7 @@ lemma Storage.toBounded_injOn (w : Fin k → ℕ) :
 def storageBound (Symbol State : Type*) [Fintype Symbol] [Fintype State] (k s : ℕ) : ℕ
 ```
 
-`Turing.card_boundedStorage_le` (lemma, [line 162](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L162))
+`Turing.card_boundedStorage_le` (lemma, [line 162](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L162))
 
 > The number of bounded storages is at most `storageBound`. Counting the tapes separately gives
 > the per-tape product `∏ᵢ (2 wᵢ + 1) · (|Symbol| + 1) ^ (2 wᵢ + 1)`; each tape uses at most the
@@ -161,7 +161,7 @@ lemma card_boundedStorage_le [Fintype Symbol] [Fintype State]
     Fintype.card (BoundedStorage Symbol State w) ≤ storageBound Symbol State k s
 ```
 
-`Turing.encard_fitsIn_le` (theorem, [line 181](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L181))
+`Turing.encard_fitsIn_le` (theorem, [line 181](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L181))
 
 > The counting result at the heart of this file: a `Storage` whose non-blank cells and head
 > positions stay within per-tape windows of total size at most `s` can take at most
@@ -178,7 +178,7 @@ theorem encard_fitsIn_le [Fintype Symbol] [Fintype State]
 >
 > This proves that `storageBound` is exponential in the space `s`.
 
-`Turing.storageBoundBase` (definition, [line 201](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L201))
+`Turing.storageBoundBase` (definition, [line 201](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L201))
 
 > The base factor in the resulting exponential form of `storageBound`.
 
@@ -186,7 +186,7 @@ theorem encard_fitsIn_le [Fintype Symbol] [Fintype State]
 def storageBoundBase (Symbol State : Type*) [Fintype Symbol] [Fintype State] (k : ℕ) : ℕ
 ```
 
-`Turing.storageBoundExp` (definition, [line 205](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L205))
+`Turing.storageBoundExp` (definition, [line 205](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L205))
 
 > The factor in the exponent of the exponential form of `storageBound`.
 
@@ -194,7 +194,7 @@ def storageBoundBase (Symbol State : Type*) [Fintype Symbol] [Fintype State] (k 
 def storageBoundExp (Symbol : Type*) [Fintype Symbol] (k : ℕ) : ℕ
 ```
 
-`Turing.storageBound_le_base_mul_pow` (lemma, [line 210](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L210))
+`Turing.storageBound_le_base_mul_pow` (lemma, [line 210](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L210))
 
 > `storageBound` grows at most exponentially in the space `s`, with a constant factor and a
 > factor in the exponent that only depend on the machine's alphabet, state set and tape count.
@@ -205,7 +205,7 @@ lemma storageBound_le_base_mul_pow [Fintype Symbol] [Fintype State] (s : ℕ) :
       ≤ storageBoundBase Symbol State k * 2 ^ (storageBoundExp Symbol k * s)
 ```
 
-`Turing.storageBound_le_pow` (lemma, [line 231](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L231))
+`Turing.storageBound_le_pow` (lemma, [line 231](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L231))
 
 > `storageBound` grows at most exponentially in the space `s`: there exist constants `a` and `c`
 > (depending on the machine's alphabet, state set and tape count) with
@@ -220,7 +220,7 @@ lemma storageBound_le_pow [Fintype Symbol] [Fintype State] :
 >
 > Now we relate `Cfg` and `Storage` by giving the projection.
 
-`Turing.Cfg.storage` (definition, [line 242](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L242))
+`Turing.Cfg.storage` (definition, [line 242](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L242))
 
 > This function maps a `Cfg` to `Storage`, forgetting the input head position and the
 > write-only output tape.
@@ -229,7 +229,7 @@ lemma storageBound_le_pow [Fintype Symbol] [Fintype State] :
 def Cfg.storage (c : Cfg k Symbol State input) : Storage Symbol State k
 ```
 
-`Turing.Cfg.core` (definition, [line 247](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L247))
+`Turing.Cfg.core` (definition, [line 247](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L247))
 
 > The part of a configuration that the machine can still read: the input head position together
 > with the `Storage`, i.e. the configuration without the write-only output tape.
@@ -244,7 +244,7 @@ def Cfg.core (c : Cfg k Symbol State input) :
 > These are the main results giving upper bounds on the number of storages and configuration cores
 > reachable in bounded space.
 
-`Turing.MultiTapeNTM.ComputationPath.storage_fitsIn` (lemma, [line 261](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L261))
+`Turing.MultiTapeNTM.ComputationPath.storage_fitsIn` (lemma, [line 261](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L261))
 
 > The storage at the end of a computation path fits in the windows given by its per-tape space:
 > the tapes start blank, with every head at `0`.
@@ -254,7 +254,7 @@ lemma ComputationPath.storage_fitsIn {ntm : MultiTapeNTM k Symbol State}
     (p : ntm.ComputationPath input) : p.last.storage.FitsIn p.spaceUsedByTape
 ```
 
-`Turing.MultiTapeTM.encard_storages_le` (theorem, [line 279](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L279))
+`Turing.MultiTapeTM.encard_storages_le` (theorem, [line 279](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L279))
 
 > A machine that uses at most `s` cells of work-tape space at every point in time passes through
 > at most `storageBound Symbol State k s` different storages during its whole run — independently of
@@ -267,7 +267,7 @@ theorem encard_storages_le [Fintype Symbol] [Fintype State] {s : ℕ}
       ≤ storageBound Symbol State k s
 ```
 
-`Turing.MultiTapeTM.encard_cores_le` (theorem, [line 291](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L291))
+`Turing.MultiTapeTM.encard_cores_le` (theorem, [line 291](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L291))
 
 > The number of configuration cores that a machine bounded by space `s` can reach is at most
 > `(n + 2) * storageBound Symbol State k s`, where `n` is the length of the input.
@@ -279,7 +279,7 @@ theorem encard_cores_le [Fintype Symbol] [Fintype State] {s : ℕ}
       ≤ (input.length + 2) * storageBound Symbol State k s
 ```
 
-`Turing.MultiTapeTM.encard_storages_le_pow` (theorem, [line 309](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L309))
+`Turing.MultiTapeTM.encard_storages_le_pow` (theorem, [line 309](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L309))
 
 > The storage bound in exponential form: the number of storages a space-`s`-bounded machine
 > passes through is at most `2 ^ (O(s))`, with constants depending only on the machine.
@@ -291,7 +291,7 @@ theorem encard_storages_le_pow [Finite Symbol] [Finite State] :
       (Set.range fun p : tm.ComputationPath input => p.last.storage).encard ≤ a * 2 ^ (c * s)
 ```
 
-`Turing.MultiTapeTM.encard_cores_le_pow` (theorem, [line 322](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L322))
+`Turing.MultiTapeTM.encard_cores_le_pow` (theorem, [line 322](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean#L322))
 
 > The core bound in exponential form: the number of cores a space-`s`-bounded machine can reach
 > is at most `(n + 2) * 2 ^ (O(s))`, with constants depending only on the machine and not on the
@@ -315,5 +315,5 @@ theorem encard_cores_le_pow [Finite Symbol] [Finite State] :
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/ConfigBound.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.ConfigBound.json)

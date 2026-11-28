@@ -7,7 +7,7 @@ proof: formalized
 
 # The ε-NA of a regular expression
 
-`Cslib.Computability.Automata.EpsilonNA.OfRegularExpression`, in [Cslib/Computability/Automata/EpsilonNA/OfRegularExpression.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/EpsilonNA/OfRegularExpression.lean), by Yusuf Demir.
+`Cslib.Computability.Automata.EpsilonNA.OfRegularExpression`, in [Cslib/Computability/Automata/EpsilonNA/OfRegularExpression.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/EpsilonNA/OfRegularExpression.lean), by Yusuf Demir.
 
 > Thompson's construction [Thompson1968]: every regular expression is sent to an `εNA` with finitely
 > many states that accepts exactly its language, by assembling the automata of
@@ -26,7 +26,7 @@ proof: formalized
 >
 > * [K. Thompson, *Regular expression search algorithm*][Thompson1968]
 
-`RegularExpression.State` (definition, [line 42](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/EpsilonNA/OfRegularExpression.lean#L42))
+`RegularExpression.State` (definition, [line 42](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/EpsilonNA/OfRegularExpression.lean#L42))
 
 > The states of the automaton of a regular expression.
 
@@ -34,7 +34,7 @@ proof: formalized
 def State : RegularExpression α → Type
 ```
 
-`RegularExpression.instFiniteState` (instance, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/EpsilonNA/OfRegularExpression.lean#L51))
+`RegularExpression.instFiniteState` (instance, [line 51](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/EpsilonNA/OfRegularExpression.lean#L51))
 
 > The automaton of a regular expression has finitely many states.
 
@@ -42,7 +42,7 @@ def State : RegularExpression α → Type
 instance instFiniteState : (r : RegularExpression α) → Finite r.State
 ```
 
-`RegularExpression.toEpsilonNA` (definition, [line 68](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/EpsilonNA/OfRegularExpression.lean#L68))
+`RegularExpression.toEpsilonNA` (definition, [line 68](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/EpsilonNA/OfRegularExpression.lean#L68))
 
 > Thompson's construction: the `εNA` of a regular expression.
 
@@ -50,7 +50,7 @@ instance instFiniteState : (r : RegularExpression α) → Finite r.State
 def toEpsilonNA : (r : RegularExpression α) → FinAcc r.State α
 ```
 
-`RegularExpression.language_toEpsilonNA` (theorem, [line 78](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/EpsilonNA/OfRegularExpression.lean#L78))
+`RegularExpression.language_toEpsilonNA` (theorem, [line 78](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/EpsilonNA/OfRegularExpression.lean#L78))
 
 > The automaton of a regular expression accepts exactly its language.
 
@@ -69,5 +69,5 @@ theorem language_toEpsilonNA (r : RegularExpression α) :
 
 ## Sources
 
-- [Cslib/Computability/Automata/EpsilonNA/OfRegularExpression.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/EpsilonNA/OfRegularExpression.lean)
+- [Cslib/Computability/Automata/EpsilonNA/OfRegularExpression.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/EpsilonNA/OfRegularExpression.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.EpsilonNA.OfRegularExpression.json)

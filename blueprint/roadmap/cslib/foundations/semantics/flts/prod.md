@@ -7,9 +7,9 @@ proof: formalized
 
 # Product of functional labelled transition systems
 
-`Cslib.Foundations.Semantics.FLTS.Prod`, in [Cslib/Foundations/Semantics/FLTS/Prod.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/FLTS/Prod.lean), by Ching-Tsun Chou, Fabrizio Montesi.
+`Cslib.Foundations.Semantics.FLTS.Prod`, in [Cslib/Foundations/Semantics/FLTS/Prod.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/FLTS/Prod.lean), by Ching-Tsun Chou, Fabrizio Montesi.
 
-`Cslib.FLTS.prod` (definition, [line 21](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/FLTS/Prod.lean#L21))
+`Cslib.FLTS.prod` (definition, [line 21](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/FLTS/Prod.lean#L21))
 
 > The product of two FLTS with the same label type.
 
@@ -18,7 +18,7 @@ def prod (flts1 : FLTS State1 Label) (flts2 : FLTS State2 Label) :
     FLTS (State1 × State2) Label
 ```
 
-`Cslib.FLTS.prod_mtr_eq` (theorem, [line 28](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/FLTS/Prod.lean#L28))
+`Cslib.FLTS.prod_mtr_eq` (theorem, [line 28](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/FLTS/Prod.lean#L28))
 
 > A state is reachable by the product FLTS iff its components are reachable by
 > the respective FLTS components.
@@ -35,5 +35,5 @@ theorem prod_mtr_eq (flts1 : FLTS State1 Label) (flts2 : FLTS State2 Label)
 
 ## Sources
 
-- [Cslib/Foundations/Semantics/FLTS/Prod.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/FLTS/Prod.lean)
+- [Cslib/Foundations/Semantics/FLTS/Prod.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/FLTS/Prod.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.FLTS.Prod.json)

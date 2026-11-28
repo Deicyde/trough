@@ -7,12 +7,12 @@ proof: formalized
 
 # Buchi Congruence
 
-`Cslib.Computability.Languages.Congruences.BuchiCongruence`, in [Cslib/Computability/Languages/Congruences/BuchiCongruence.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean), by Ching-Tsun Chou.
+`Cslib.Computability.Languages.Congruences.BuchiCongruence`, in [Cslib/Computability/Languages/Congruences/BuchiCongruence.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean), by Ching-Tsun Chou.
 
 > A special type of right congruences used by J.R. Büchi to prove the closure
 > of ω-regular languages under complementation.
 
-`Cslib.Automata.NA.Buchi.BuchiCongruence` (definition, [line 37](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L37))
+`Cslib.Automata.NA.Buchi.BuchiCongruence` (definition, [line 37](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L37))
 
 > Given a Buchi automaton `na`, two finite words `u` and `v` are Buchi-congruent
 > according to `na` iff for every pair of states `s` and `t` of `na`, both of the
@@ -25,7 +25,7 @@ proof: formalized
 def BuchiCongruence (na : Buchi State Symbol) : RightCongruence Symbol
 ```
 
-`Cslib.Automata.NA.Buchi.BuchiCongrParam` (definition, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L51))
+`Cslib.Automata.NA.Buchi.BuchiCongrParam` (definition, [line 51](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L51))
 
 > `BuchiCongrParam` is a parameterization of the equivalence classes of `na.BuchiCongruence`
 > using the type `State → State → Prop × Prop`, which is finite if `State` is.
@@ -35,7 +35,7 @@ noncomputable def BuchiCongrParam (na : Buchi State Symbol)
     (f : State → State → Prop × Prop) : Quotient na.BuchiCongruence.eq
 ```
 
-`Cslib.Automata.NA.Buchi.buchiCongrParam_surjective` (lemma, [line 61](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L61))
+`Cslib.Automata.NA.Buchi.buchiCongrParam_surjective` (lemma, [line 61](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L61))
 
 > `BuchiCongrParam` is surjective.
 
@@ -43,7 +43,7 @@ noncomputable def BuchiCongrParam (na : Buchi State Symbol)
 lemma buchiCongrParam_surjective : Surjective na.BuchiCongrParam
 ```
 
-`Cslib.Automata.NA.Buchi.buchiCongruence_fin_index` (theorem, [line 76](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L76))
+`Cslib.Automata.NA.Buchi.buchiCongruence_fin_index` (theorem, [line 76](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L76))
 
 > `na.BuchiCongruence` is of finite index if `na` has only finitely many states.
 
@@ -51,7 +51,7 @@ lemma buchiCongrParam_surjective : Surjective na.BuchiCongrParam
 theorem buchiCongruence_fin_index [Finite State] : Finite (Quotient na.BuchiCongruence.eq)
 ```
 
-`Cslib.Automata.NA.Buchi.buchiCongruence_transfer` (lemma, [line 82](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L82))
+`Cslib.Automata.NA.Buchi.buchiCongruence_transfer` (lemma, [line 82](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L82))
 
 > If `xl` and `yl` belong to the same equivalence class of `na.BuchiCongruence`
 > and `xl` can move `na` from state `s` to state `t`, then so can `yl` and, furthermore,
@@ -65,7 +65,7 @@ lemma buchiCongruence_transfer
       ( xl ∈ na.pairViaLang na.accept s t → ∃ r ∈ na.accept, r ∈ sl )
 ```
 
-`Cslib.Automata.NA.Buchi.buchiFamily` (definition, [line 107](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L107))
+`Cslib.Automata.NA.Buchi.buchiFamily` (definition, [line 107](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L107))
 
 > `na.buchiFamily` is a family of ω-languages indexed by a pair of equivalence classes
 > of `na.BuchiCongruence` which will turn out to saturate the ω-language accepted by `na`
@@ -76,7 +76,7 @@ def buchiFamily [Inhabited Symbol] (na : Buchi State Symbol) :
     Quotient na.BuchiCongruence.eq × Quotient na.BuchiCongruence.eq → ωLanguage Symbol
 ```
 
-`Cslib.Automata.NA.Buchi.mem_buchiFamily` (theorem, [line 111](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L111))
+`Cslib.Automata.NA.Buchi.mem_buchiFamily` (theorem, [line 111](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L111))
 
 ```lean
 theorem mem_buchiFamily [Inhabited Symbol]
@@ -86,7 +86,7 @@ theorem mem_buchiFamily [Inhabited Symbol]
       xl ++ω xls.flatten = xs
 ```
 
-`Cslib.Automata.NA.Buchi.buchiFamily_cover` (theorem, [line 122](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L122))
+`Cslib.Automata.NA.Buchi.buchiFamily_cover` (theorem, [line 122](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L122))
 
 > `na.buchiFamily` is a cover if `na` has only finitely many states.
 > This theorem uses the Ramsey theorem for infinite graphs and does not depend on any details
@@ -97,7 +97,7 @@ theorem buchiFamily_cover [Inhabited Symbol] [Finite State] :
     ⨆ i, na.buchiFamily i = ⊤
 ```
 
-`Cslib.Automata.NA.Buchi.buchiFamily_saturation` (theorem, [line 184](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L184))
+`Cslib.Automata.NA.Buchi.buchiFamily_saturation` (theorem, [line 184](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean#L184))
 
 > `na.buchiFamily` saturates the ω-language accepted by `na`.
 
@@ -118,5 +118,5 @@ theorem buchiFamily_saturation [Inhabited Symbol] :
 
 ## Sources
 
-- [Cslib/Computability/Languages/Congruences/BuchiCongruence.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean)
+- [Cslib/Computability/Languages/Congruences/BuchiCongruence.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Congruences/BuchiCongruence.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Languages.Congruences.BuchiCongruence.json)

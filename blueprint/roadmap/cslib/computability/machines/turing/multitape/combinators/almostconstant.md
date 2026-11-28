@@ -7,7 +7,7 @@ proof: formalized
 
 # Complexity of Almost Constant Functions
 
-`Cslib.Computability.Machines.Turing.MultiTape.Combinators.AlmostConstant`, in [Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean), by Christian Reitwiessner.
+`Cslib.Computability.Machines.Turing.MultiTape.Combinators.AlmostConstant`, in [Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean), by Christian Reitwiessner.
 
 > A function `f : α → β` that is constant except for a finite number of arguments is computable in
 > constant time and zero space: the machine reads the encoded input while remembering the prefix it
@@ -34,7 +34,7 @@ proof: formalized
 > The machine `almostConstTM encIn encOut f S out` computes `f`, provided that the encoded output
 > of `f` is the fixed Boolean string `out` outside of the finite set `S`.
 
-`Turing.MultiTapeTM.almostConstTime` (definition, [line 252](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean#L252))
+`Turing.MultiTapeTM.almostConstTime` (definition, [line 252](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean#L252))
 
 > A constant time bound for the machine `almostConstTM`.
 
@@ -43,7 +43,7 @@ public def almostConstTime (encIn : α ↪ List Bool) (encOut : β ↪ List Bool
     (S : Finset α) (out : List Bool) : ℕ
 ```
 
-`Turing.MultiTapeTM.computableInTimeAndSpace_almostConstTime` (theorem, [line 346](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean#L346))
+`Turing.MultiTapeTM.computableInTimeAndSpace_almostConstTime` (theorem, [line 346](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean#L346))
 
 > Every function whose encoded output is constant outside of a finite set is computable in time
 > `almostConstTime` and zero space.
@@ -55,7 +55,7 @@ public theorem computableInTimeAndSpace_almostConstTime
       (fun _ => almostConstTime encIn encOut f S out) (fun _ => 0)
 ```
 
-`Turing.MultiTapeTM.computableInTimeAndSpace_of_exists_finite_ne` (theorem, [line 354](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean#L354))
+`Turing.MultiTapeTM.computableInTimeAndSpace_of_exists_finite_ne` (theorem, [line 354](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean#L354))
 
 > Every almost constant function is computable in constant time and zero space.
 
@@ -65,7 +65,7 @@ public theorem computableInTimeAndSpace_of_exists_finite_ne
     ∃ c, ComputableInTimeAndSpace f encIn encOut (fun _ => c) (fun _ => 0)
 ```
 
-`Turing.MultiTapeTM.computableInTimeAndSpace_of_const` (theorem, [line 364](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean#L364))
+`Turing.MultiTapeTM.computableInTimeAndSpace_of_const` (theorem, [line 364](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean#L364))
 
 > Every constant function is computable in constant time and zero space.
 
@@ -76,7 +76,7 @@ public theorem computableInTimeAndSpace_of_const {α β : Type*}
       (fun _ => c) (fun _ => 0)
 ```
 
-`Turing.MultiTapeTM.finiteFunTime` (definition, [line 372](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean#L372))
+`Turing.MultiTapeTM.finiteFunTime` (definition, [line 372](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean#L372))
 
 > A constant time bound for functions on a finite type.
 
@@ -85,7 +85,7 @@ public noncomputable def finiteFunTime {α β : Type*} [Finite α] (encIn : α �
     (encOut : β ↪ List Bool) (f : α → β) : ℕ
 ```
 
-`Turing.MultiTapeTM.computableInTimeAndSpace_finiteFunTime` (theorem, [line 378](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean#L378))
+`Turing.MultiTapeTM.computableInTimeAndSpace_finiteFunTime` (theorem, [line 378](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean#L378))
 
 > Every function on a finite type is computable in time `finiteFunTime` and zero space.
 
@@ -96,7 +96,7 @@ public theorem computableInTimeAndSpace_finiteFunTime {α β : Type*} [Finite α
       (fun _ => finiteFunTime encIn encOut f) (fun _ => 0)
 ```
 
-`Turing.MultiTapeTM.computableInTimeAndSpace_of_finite` (theorem, [line 386](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean#L386))
+`Turing.MultiTapeTM.computableInTimeAndSpace_of_finite` (theorem, [line 386](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean#L386))
 
 > Every function on a finite type is computable in constant time and zero space.
 
@@ -113,5 +113,5 @@ public theorem computableInTimeAndSpace_of_finite {α β : Type*} [Finite α]
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean)
 - [Declaration ledger](../../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Combinators.AlmostConstant.json)

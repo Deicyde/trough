@@ -7,14 +7,14 @@ proof: formalized
 
 # List operations and monad morphisms
 
-`Cslib.Foundations.Control.Monad.IsMonadHom.List`, in [Cslib/Foundations/Control/Monad/IsMonadHom/List.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean), by Eric Wieser.
+`Cslib.Foundations.Control.Monad.IsMonadHom.List`, in [Cslib/Foundations/Control/Monad/IsMonadHom/List.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean), by Eric Wieser.
 
 > This file proves that monadic operations on lists commute with monad homomorphisms
 > (and applicative homomorphisms), and that `List.reverse` is a monad homomorphism on `List`.
 
 > ### Preservation of list operations under applicative homomorphisms
 
-`Cslib.IsApplicativeHom.map_listMapA` (theorem, [line 35](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L35))
+`Cslib.IsApplicativeHom.map_listMapA` (theorem, [line 35](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L35))
 
 ```lean
 theorem map_listMapA {F : ∀ {α}, m α → n α} (hf : IsApplicativeHom m n F)
@@ -22,7 +22,7 @@ theorem map_listMapA {F : ∀ {α}, m α → n α} (hf : IsApplicativeHom m n F)
     F (l.mapA f) = l.mapA (F ∘ f)
 ```
 
-`Cslib.IsApplicativeHom.map_listForA` (theorem, [line 41](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L41))
+`Cslib.IsApplicativeHom.map_listForA` (theorem, [line 41](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L41))
 
 ```lean
 theorem map_listForA {F : ∀ {α}, m α → n α} (hf : IsApplicativeHom m n F)
@@ -32,7 +32,7 @@ theorem map_listForA {F : ∀ {α}, m α → n α} (hf : IsApplicativeHom m n F)
 
 > ### Preservation of list operations under monad homomorphisms
 
-`Cslib.IsMonadHom.map_listMapM'` (theorem, [line 54](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L54))
+`Cslib.IsMonadHom.map_listMapM'` (theorem, [line 54](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L54))
 
 ```lean
 theorem map_listMapM'
@@ -41,7 +41,7 @@ theorem map_listMapM'
     F (l.mapM' f) = l.mapM' (F ∘ f)
 ```
 
-`Cslib.IsMonadHom.map_listMapMLoop` (theorem, [line 61](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L61))
+`Cslib.IsMonadHom.map_listMapMLoop` (theorem, [line 61](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L61))
 
 ```lean
 theorem map_listMapMLoop
@@ -50,7 +50,7 @@ theorem map_listMapMLoop
     F (List.mapM.loop f l acc) = List.mapM.loop (F ∘ f) l acc
 ```
 
-`Cslib.IsMonadHom.map_listMapM` (theorem, [line 70](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L70))
+`Cslib.IsMonadHom.map_listMapM` (theorem, [line 70](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L70))
 
 ```lean
 theorem map_listMapM
@@ -59,7 +59,7 @@ theorem map_listMapM
     F (l.mapM f) = l.mapM (F ∘ f)
 ```
 
-`Cslib.IsMonadHom.map_listForM` (theorem, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L77))
+`Cslib.IsMonadHom.map_listForM` (theorem, [line 77](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L77))
 
 ```lean
 theorem map_listForM {F : ∀ {α}, m α → n α} (hf : IsMonadHom m n F)
@@ -67,7 +67,7 @@ theorem map_listForM {F : ∀ {α}, m α → n α} (hf : IsMonadHom m n F)
     F (l.forM f) = l.forM (F ∘ f)
 ```
 
-`Cslib.IsMonadHom.map_listFoldlM` (theorem, [line 83](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L83))
+`Cslib.IsMonadHom.map_listFoldlM` (theorem, [line 83](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L83))
 
 ```lean
 theorem map_listFoldlM {F : ∀ {α}, m α → n α} (hf : IsMonadHom m n F)
@@ -75,7 +75,7 @@ theorem map_listFoldlM {F : ∀ {α}, m α → n α} (hf : IsMonadHom m n F)
     F (l.foldlM f init) = l.foldlM (fun s a => F (f s a)) init
 ```
 
-`Cslib.IsMonadHom.map_listFoldrM` (theorem, [line 89](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L89))
+`Cslib.IsMonadHom.map_listFoldrM` (theorem, [line 89](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L89))
 
 ```lean
 theorem map_listFoldrM {F : ∀ {α}, m α → n α} (hf : IsMonadHom m n F)
@@ -83,7 +83,7 @@ theorem map_listFoldrM {F : ∀ {α}, m α → n α} (hf : IsMonadHom m n F)
     F (l.foldrM f init) = l.foldrM (fun a s => F (f a s)) init
 ```
 
-`Cslib.IsMonadHom.map_listFindSomeM?` (theorem, [line 96](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L96))
+`Cslib.IsMonadHom.map_listFindSomeM?` (theorem, [line 96](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L96))
 
 ```lean
 theorem map_listFindSomeM?
@@ -92,7 +92,7 @@ theorem map_listFindSomeM?
     F (l.findSomeM? f) = l.findSomeM? (F ∘ f)
 ```
 
-`Cslib.IsMonadHom.map_listFindM?` (theorem, [line 103](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L103))
+`Cslib.IsMonadHom.map_listFindM?` (theorem, [line 103](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L103))
 
 ```lean
 theorem map_listFindM? {m n : Type → Type v} [Monad m] [Monad n]
@@ -101,7 +101,7 @@ theorem map_listFindM? {m n : Type → Type v} [Monad m] [Monad n]
     F (l.findM? p) = l.findM? (F ∘ p)
 ```
 
-`Cslib.IsMonadHom.map_listAnyM` (theorem, [line 110](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L110))
+`Cslib.IsMonadHom.map_listAnyM` (theorem, [line 110](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L110))
 
 ```lean
 theorem map_listAnyM {m n : Type → Type v} [Monad m] [Monad n]
@@ -110,7 +110,7 @@ theorem map_listAnyM {m n : Type → Type v} [Monad m] [Monad n]
     F (l.anyM p) = l.anyM (F ∘ p)
 ```
 
-`Cslib.IsMonadHom.map_listAllM` (theorem, [line 117](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L117))
+`Cslib.IsMonadHom.map_listAllM` (theorem, [line 117](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L117))
 
 ```lean
 theorem map_listAllM {m n : Type → Type v} [Monad m] [Monad n]
@@ -119,7 +119,7 @@ theorem map_listAllM {m n : Type → Type v} [Monad m] [Monad n]
     F (l.allM p) = l.allM (F ∘ p)
 ```
 
-`Cslib.IsMonadHom.map_listFilterAuxM` (theorem, [line 124](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L124))
+`Cslib.IsMonadHom.map_listFilterAuxM` (theorem, [line 124](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L124))
 
 ```lean
 theorem map_listFilterAuxM {m n : Type → Type v} [Monad m] [Monad n]
@@ -128,7 +128,7 @@ theorem map_listFilterAuxM {m n : Type → Type v} [Monad m] [Monad n]
     F (List.filterAuxM p l acc) = List.filterAuxM (F ∘ p) l acc
 ```
 
-`Cslib.IsMonadHom.map_listFilterM` (theorem, [line 131](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L131))
+`Cslib.IsMonadHom.map_listFilterM` (theorem, [line 131](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L131))
 
 ```lean
 theorem map_listFilterM {m n : Type → Type v} [Monad m] [Monad n]
@@ -139,7 +139,7 @@ theorem map_listFilterM {m n : Type → Type v} [Monad m] [Monad n]
 
 > ### Preservation of list operations under alternative homomorphisms
 
-`Cslib.IsAlternativeHom.map_listFirstM` (theorem, [line 145](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L145))
+`Cslib.IsAlternativeHom.map_listFirstM` (theorem, [line 145](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L145))
 
 ```lean
 theorem map_listFirstM {F : ∀ {α}, m α → n α} (hf : IsAlternativeHom m n F)
@@ -149,7 +149,7 @@ theorem map_listFirstM {F : ∀ {α}, m α → n α} (hf : IsAlternativeHom m n 
 
 > ### Monad homomorphisms on the `List` monad
 
-`Cslib.IsApplicativeHom.map_listSingleton` (theorem, [line 155](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L155))
+`Cslib.IsApplicativeHom.map_listSingleton` (theorem, [line 155](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L155))
 
 ```lean
 theorem IsApplicativeHom.map_listSingleton
@@ -157,7 +157,7 @@ theorem IsApplicativeHom.map_listSingleton
     F ([a] : List α) = [a]
 ```
 
-`Cslib.IsMonadHom.map_listFlatMap` (theorem, [line 159](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L159))
+`Cslib.IsMonadHom.map_listFlatMap` (theorem, [line 159](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L159))
 
 ```lean
 theorem IsMonadHom.map_listFlatMap
@@ -165,20 +165,20 @@ theorem IsMonadHom.map_listFlatMap
     F (l.flatMap g) = (F l).flatMap (F <| g ·)
 ```
 
-`Cslib.IsFunctorHom.map_listNil` (theorem, [line 164](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L164))
+`Cslib.IsFunctorHom.map_listNil` (theorem, [line 164](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L164))
 
 ```lean
 theorem IsFunctorHom.map_listNil {F : ∀ {α}, List α → List α} (hf : IsFunctorHom List List F) {α} :
     F ([] : List α) = []
 ```
 
-`List.isMonadHom_reverse` (theorem, [line 169](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L169))
+`List.isMonadHom_reverse` (theorem, [line 169](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L169))
 
 ```lean
 protected theorem _root_.List.isMonadHom_reverse : IsMonadHom List List List.reverse
 ```
 
-`Cslib.isMonadHom_list_iff` (theorem, [line 195](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L195))
+`Cslib.isMonadHom_list_iff` (theorem, [line 195](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean#L195))
 
 > The only monad morphisms on lists are the identity and reversal.
 
@@ -193,5 +193,5 @@ theorem isMonadHom_list_iff (f : ∀ {α : Type u}, List α → List α) :
 
 ## Sources
 
-- [Cslib/Foundations/Control/Monad/IsMonadHom/List.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean)
+- [Cslib/Foundations/Control/Monad/IsMonadHom/List.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Control/Monad/IsMonadHom/List.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Foundations.Control.Monad.IsMonadHom.List.json)

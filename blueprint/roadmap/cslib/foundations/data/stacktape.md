@@ -7,7 +7,7 @@ proof: formalized
 
 # StackTape: Infinite, eventually-`none` lists of `Option`s
 
-`Cslib.Foundations.Data.StackTape`, in [Cslib/Foundations/Data/StackTape.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean), by Bolton Bailey.
+`Cslib.Foundations.Data.StackTape`, in [Cslib/Foundations/Data/StackTape.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean), by Bolton Bailey.
 
 > This file defines `StackTape`, a stack-like data structure of `Option` values,
 > where the tape is considered to be infinite and eventually all `none`s.
@@ -27,7 +27,7 @@ proof: formalized
 >
 > …
 
-`Cslib.Turing.StackTape` (structure, [line 49](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L49))
+`Cslib.Turing.StackTape` (structure, [line 49](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L49))
 
 > An infinite tape representation using a list of `Option` values,
 > where the list is eventually `none`.
@@ -45,7 +45,7 @@ structure StackTape (Symbol : Type*) where
   toList_getLast?_ne_some_none : toList.getLast? ≠ some none
 ```
 
-`Cslib.Turing.StackTape.nil` (definition, [line 65](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L65))
+`Cslib.Turing.StackTape.nil` (definition, [line 65](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L65))
 
 > The empty `StackTape`
 
@@ -53,19 +53,19 @@ structure StackTape (Symbol : Type*) where
 def nil : StackTape Symbol
 ```
 
-`Cslib.Turing.StackTape.empty_eq_nil` (lemma, [line 74](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L74))
+`Cslib.Turing.StackTape.empty_eq_nil` (lemma, [line 74](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L74))
 
 ```lean
 lemma empty_eq_nil : (∅ : StackTape Symbol) = nil
 ```
 
-`Cslib.Turing.StackTape.nil_toList` (lemma, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L77))
+`Cslib.Turing.StackTape.nil_toList` (lemma, [line 77](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L77))
 
 ```lean
 lemma nil_toList : (nil : StackTape Symbol).toList = []
 ```
 
-`Cslib.Turing.StackTape.cons` (definition, [line 80](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L80))
+`Cslib.Turing.StackTape.cons` (definition, [line 80](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L80))
 
 > Prepend an `Option` to the `StackTape`
 
@@ -73,20 +73,20 @@ lemma nil_toList : (nil : StackTape Symbol).toList = []
 def cons (x : Option Symbol) (xs : StackTape Symbol) : StackTape Symbol
 ```
 
-`Cslib.Turing.StackTape.cons_none_nil_toList` (lemma, [line 87](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L87))
+`Cslib.Turing.StackTape.cons_none_nil_toList` (lemma, [line 87](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L87))
 
 ```lean
 lemma cons_none_nil_toList : (cons none (nil : StackTape Symbol)).toList = []
 ```
 
-`Cslib.Turing.StackTape.cons_some_toList` (lemma, [line 91](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L91))
+`Cslib.Turing.StackTape.cons_some_toList` (lemma, [line 91](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L91))
 
 ```lean
 lemma cons_some_toList (a : Symbol) (l : StackTape Symbol) :
     (cons (some a) l).toList = some a :: l.toList
 ```
 
-`Cslib.Turing.StackTape.tail` (definition, [line 96](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L96))
+`Cslib.Turing.StackTape.tail` (definition, [line 96](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L96))
 
 > Remove the first element of the `StackTape`, returning the rest
 
@@ -94,7 +94,7 @@ lemma cons_some_toList (a : Symbol) (l : StackTape Symbol) :
 def tail (l : StackTape Symbol) : StackTape Symbol
 ```
 
-`Cslib.Turing.StackTape.head` (definition, [line 103](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L103))
+`Cslib.Turing.StackTape.head` (definition, [line 103](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L103))
 
 > Get the first element of the `StackTape`.
 
@@ -102,33 +102,33 @@ def tail (l : StackTape Symbol) : StackTape Symbol
 def head (l : StackTape Symbol) : Option Symbol
 ```
 
-`Cslib.Turing.StackTape.eq_iff` (lemma, [line 108](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L108))
+`Cslib.Turing.StackTape.eq_iff` (lemma, [line 108](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L108))
 
 ```lean
 lemma eq_iff (l1 l2 : StackTape Symbol) :
     l1 = l2 ↔ l1.head = l2.head ∧ l1.tail = l2.tail
 ```
 
-`Cslib.Turing.StackTape.head_cons` (lemma, [line 118](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L118))
+`Cslib.Turing.StackTape.head_cons` (lemma, [line 118](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L118))
 
 ```lean
 lemma head_cons (o : Option Symbol) (l : StackTape Symbol) : (cons o l).head = o
 ```
 
-`Cslib.Turing.StackTape.tail_cons` (lemma, [line 126](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L126))
+`Cslib.Turing.StackTape.tail_cons` (lemma, [line 126](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L126))
 
 ```lean
 lemma tail_cons (o : Option Symbol) (l : StackTape Symbol) : (cons o l).tail = l
 ```
 
-`Cslib.Turing.StackTape.cons_head_tail` (lemma, [line 135](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L135))
+`Cslib.Turing.StackTape.cons_head_tail` (lemma, [line 135](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L135))
 
 ```lean
 lemma cons_head_tail (l : StackTape Symbol) :
     cons (l.head) (l.tail) = l
 ```
 
-`Cslib.Turing.StackTape.mapSome` (definition, [line 142](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L142))
+`Cslib.Turing.StackTape.mapSome` (definition, [line 142](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L142))
 
 > Create a `StackTape` from a list by mapping all elements to `some`
 
@@ -136,7 +136,7 @@ lemma cons_head_tail (l : StackTape Symbol) :
 def mapSome (l : List Symbol) : StackTape Symbol
 ```
 
-`Cslib.Turing.StackTape.length` (definition, [line 148](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L148))
+`Cslib.Turing.StackTape.length` (definition, [line 148](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L148))
 
 > The length of the `StackTape` is the number of elements up to the last non-`none` element
 
@@ -144,40 +144,40 @@ def mapSome (l : List Symbol) : StackTape Symbol
 def length (l : StackTape Symbol) : ℕ
 ```
 
-`Cslib.Turing.StackTape.length_tail_le` (lemma, [line 150](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L150))
+`Cslib.Turing.StackTape.length_tail_le` (lemma, [line 150](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L150))
 
 ```lean
 lemma length_tail_le (l : StackTape Symbol) : l.tail.length ≤ l.length
 ```
 
-`Cslib.Turing.StackTape.length_cons_none` (lemma, [line 156](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L156))
+`Cslib.Turing.StackTape.length_cons_none` (lemma, [line 156](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L156))
 
 ```lean
 lemma length_cons_none (l : StackTape Symbol) :
     (cons none l).length = l.length + if l.length = 0 then 0 else 1
 ```
 
-`Cslib.Turing.StackTape.length_cons_some` (lemma, [line 161](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L161))
+`Cslib.Turing.StackTape.length_cons_some` (lemma, [line 161](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L161))
 
 ```lean
 lemma length_cons_some (a : Symbol) (l : StackTape Symbol) :
     (cons (some a) l).length = l.length + 1
 ```
 
-`Cslib.Turing.StackTape.length_cons_le` (lemma, [line 165](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L165))
+`Cslib.Turing.StackTape.length_cons_le` (lemma, [line 165](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L165))
 
 ```lean
 lemma length_cons_le (o : Option Symbol) (l : StackTape Symbol) :
     (cons o l).length ≤ l.length + 1
 ```
 
-`Cslib.Turing.StackTape.length_mapSome` (lemma, [line 170](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L170))
+`Cslib.Turing.StackTape.length_mapSome` (lemma, [line 170](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L170))
 
 ```lean
 lemma length_mapSome (l : List Symbol) : (mapSome l).length = l.length
 ```
 
-`Cslib.Turing.StackTape.length_nil` (lemma, [line 173](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean#L173))
+`Cslib.Turing.StackTape.length_nil` (lemma, [line 173](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean#L173))
 
 ```lean
 lemma length_nil : (nil : StackTape Symbol).length = 0
@@ -189,5 +189,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Foundations/Data/StackTape.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/StackTape.lean)
+- [Cslib/Foundations/Data/StackTape.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/StackTape.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Foundations.Data.StackTape.json)

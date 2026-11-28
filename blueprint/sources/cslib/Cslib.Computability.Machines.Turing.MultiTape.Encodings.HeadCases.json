@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "8b510d014295ed2c2334a379a7c96561a1603dc4",
+ "module": "Cslib.Computability.Machines.Turing.MultiTape.Encodings.HeadCases",
+ "file": "Cslib/Computability/Machines/Turing/MultiTape/Encodings/HeadCases.lean",
+ "public": [
+  {"name": "Cslib.Encoding.headCases", "kind": "def", "line": 41},
+  {"name": "Cslib.Encoding.length_headCases_le", "kind": "theorem", "line": 51},
+  {"name": "Turing.MultiTapeTM.computableInTimeAndSpace_headCases", "kind": "theorem", "line": 94}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

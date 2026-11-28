@@ -7,11 +7,11 @@ proof: formalized
 
 # LTSToFLTS
 
-`Cslib.Foundations.Semantics.FLTS.LTSToFLTS`, in [Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean), by Fabrizio Montesi.
+`Cslib.Foundations.Semantics.FLTS.LTSToFLTS`, in [Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean), by Fabrizio Montesi.
 
 > Converting from `LTS` to `FLTS`
 
-`Cslib.LTS.toFLTS` (definition, [line 22](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean#L22))
+`Cslib.LTS.toFLTS` (definition, [line 22](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean#L22))
 
 > Converts an `LTS` into an `FLTS` using the subset construction.
 
@@ -19,7 +19,7 @@ proof: formalized
 def toFLTS (lts : LTS State Label) : FLTS (Set State) Label
 ```
 
-`Cslib.LTS.toFLTS_mem_tr` (theorem, [line 27](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean#L27))
+`Cslib.LTS.toFLTS_mem_tr` (theorem, [line 27](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean#L27))
 
 > Characterisation of transitions in `LTS.toFLTS` wrt transitions in the original `LTS`.
 
@@ -28,7 +28,7 @@ theorem toFLTS_mem_tr {lts : LTS State Label} {S : Set State} {s' : State} {μ :
   s' ∈ lts.toFLTS.tr S μ ↔ ∃ s ∈ S, lts.Tr s μ s'
 ```
 
-`Cslib.LTS.toFLTS_mem_mtr` (theorem, [line 35](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean#L35))
+`Cslib.LTS.toFLTS_mem_mtr` (theorem, [line 35](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean#L35))
 
 > Characterisation of multistep transitions in `LTS.toFLTS` wrt multistep transitions in the
 > original `LTS`.
@@ -38,7 +38,7 @@ theorem toFLTS_mem_mtr {lts : LTS State Label} {S : Set State} {s' : State} {μs
     s' ∈ lts.toFLTS.mtr S μs ↔ ∃ s ∈ S, lts.MTr s μs s'
 ```
 
-`Cslib.LTS.toFLTS_mtr_setImageMultistep` (theorem, [line 41](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean#L41))
+`Cslib.LTS.toFLTS_mtr_setImageMultistep` (theorem, [line 41](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean#L41))
 
 > Characterisation of multistep transitions in `LTS.toFLTS` as image transitions in `LTS`.
 
@@ -54,5 +54,5 @@ theorem toFLTS_mtr_setImageMultistep {lts : LTS State Label} :
 
 ## Sources
 
-- [Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean)
+- [Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.FLTS.LTSToFLTS.json)

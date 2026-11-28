@@ -7,7 +7,7 @@ proof: formalized
 
 # Deterministic Automata
 
-`Cslib.Computability.Automata.DA.Basic`, in [Cslib/Computability/Automata/DA/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/Basic.lean), by Fabrizio Montesi, Ching-Tsun Chou.
+`Cslib.Computability.Automata.DA.Basic`, in [Cslib/Computability/Automata/DA/Basic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/Basic.lean), by Fabrizio Montesi, Ching-Tsun Chou.
 
 > A Deterministic Automaton (`DA`) is an automaton defined by a transition function equipped with an
 > initial state.
@@ -21,7 +21,7 @@ proof: formalized
 > * [J. E. Hopcroft, R. Motwani, J. D. Ullman,
 >   *Introduction to Automata Theory, Languages, and Computation*][Hopcroft2006]
 
-`Cslib.Automata.DA` (structure, [line 37](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/Basic.lean#L37))
+`Cslib.Automata.DA` (structure, [line 37](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/Basic.lean#L37))
 
 > A deterministic automaton extends a `FLTS` with a unique initial state.
 
@@ -31,7 +31,7 @@ structure DA (State Symbol : Type*) extends FLTS State Symbol where
   start : State
 ```
 
-`Cslib.Automata.DA.run'` (definition, [line 47](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/Basic.lean#L47))
+`Cslib.Automata.DA.run'` (definition, [line 47](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/Basic.lean#L47))
 
 > Helper function for defining `run` below.
 
@@ -39,7 +39,7 @@ structure DA (State Symbol : Type*) extends FLTS State Symbol where
 def run' (da : DA State Symbol) (xs : ωSequence Symbol) : ℕ → State
 ```
 
-`Cslib.Automata.DA.run` (definition, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/Basic.lean#L53))
+`Cslib.Automata.DA.run` (definition, [line 53](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/Basic.lean#L53))
 
 > Infinite run.
 
@@ -47,28 +47,28 @@ def run' (da : DA State Symbol) (xs : ωSequence Symbol) : ℕ → State
 def run (da : DA State Symbol) (xs : ωSequence Symbol) : ωSequence State
 ```
 
-`Cslib.Automata.DA.run_zero` (theorem, [line 56](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/Basic.lean#L56))
+`Cslib.Automata.DA.run_zero` (theorem, [line 56](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/Basic.lean#L56))
 
 ```lean
 theorem run_zero {da : DA State Symbol} {xs : ωSequence Symbol} :
     da.run xs 0 = da.start
 ```
 
-`Cslib.Automata.DA.run_succ` (theorem, [line 61](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/Basic.lean#L61))
+`Cslib.Automata.DA.run_succ` (theorem, [line 61](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/Basic.lean#L61))
 
 ```lean
 theorem run_succ {da : DA State Symbol} {xs : ωSequence Symbol} {n : ℕ} :
     da.run xs (n + 1) = da.tr (da.run xs n) (xs n)
 ```
 
-`Cslib.Automata.DA.mtr_extract_eq_run` (theorem, [line 66](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/Basic.lean#L66))
+`Cslib.Automata.DA.mtr_extract_eq_run` (theorem, [line 66](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/Basic.lean#L66))
 
 ```lean
 theorem mtr_extract_eq_run {da : DA State Symbol} {xs : ωSequence Symbol} {n : ℕ} :
     da.mtr da.start (xs.extract 0 n) = da.run xs n
 ```
 
-`Cslib.Automata.DA.FinAcc` (structure, [line 73](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/Basic.lean#L73))
+`Cslib.Automata.DA.FinAcc` (structure, [line 73](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/Basic.lean#L73))
 
 > A deterministic automaton that accepts finite strings (lists of symbols).
 
@@ -78,7 +78,7 @@ structure FinAcc (State Symbol : Type*) extends DA State Symbol where
   accept : Set State
 ```
 
-`Cslib.Automata.DA.Buchi` (structure, [line 91](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/Basic.lean#L91))
+`Cslib.Automata.DA.Buchi` (structure, [line 91](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/Basic.lean#L91))
 
 > Deterministic Buchi automaton.
 
@@ -88,7 +88,7 @@ structure Buchi (State Symbol : Type*) extends DA State Symbol where
   accept : Set State
 ```
 
-`Cslib.Automata.DA.Muller` (structure, [line 106](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/Basic.lean#L106))
+`Cslib.Automata.DA.Muller` (structure, [line 106](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/Basic.lean#L106))
 
 > Deterministic Muller automaton.
 
@@ -110,5 +110,5 @@ structure Muller (State Symbol : Type*) extends DA State Symbol where
 
 ## Sources
 
-- [Cslib/Computability/Automata/DA/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/Basic.lean)
+- [Cslib/Computability/Automata/DA/Basic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/DA/Basic.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.DA.Basic.json)

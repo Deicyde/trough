@@ -7,11 +7,11 @@ proof: formalized
 
 # FLTSToLTS
 
-`Cslib.Foundations.Semantics.FLTS.FLTSToLTS`, in [Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean), by Fabrizio Montesi.
+`Cslib.Foundations.Semantics.FLTS.FLTSToLTS`, in [Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean), by Fabrizio Montesi.
 
 > Converting from `FLTS` to `LTS`
 
-`Cslib.FLTS.toLTS` (definition, [line 22](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean#L22))
+`Cslib.FLTS.toLTS` (definition, [line 22](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean#L22))
 
 > `FLTS` is a special case of `LTS`.
 
@@ -19,7 +19,7 @@ proof: formalized
 def toLTS (flts : FLTS State Label) : LTS State Label
 ```
 
-`Cslib.FLTS.toLTS_tr` (theorem, [line 30](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean#L30))
+`Cslib.FLTS.toLTS_tr` (theorem, [line 30](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean#L30))
 
 > `FLTS.toLTS` correctly characterises transitions.
 
@@ -28,7 +28,7 @@ theorem toLTS_tr {flts : FLTS State Label} {s1 : State} {μ : Label} {s2 : State
   flts.toLTS.Tr s1 μ s2 ↔ flts.tr s1 μ = s2
 ```
 
-`Cslib.FLTS.toLTS_deterministic` (instance, [line 35](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean#L35))
+`Cslib.FLTS.toLTS_deterministic` (instance, [line 35](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean#L35))
 
 > The transition system of a FLTS is deterministic.
 
@@ -36,7 +36,7 @@ theorem toLTS_tr {flts : FLTS State Label} {s1 : State} {μ : Label} {s2 : State
 instance toLTS_deterministic (flts : FLTS State Label) : flts.toLTS.Deterministic
 ```
 
-`Cslib.FLTS.toLTS_imageFinite` (instance, [line 40](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean#L40))
+`Cslib.FLTS.toLTS_imageFinite` (instance, [line 40](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean#L40))
 
 > The transition system of a FLTS is image-finite.
 
@@ -44,7 +44,7 @@ instance toLTS_deterministic (flts : FLTS State Label) : flts.toLTS.Deterministi
 instance toLTS_imageFinite (flts : FLTS State Label) : flts.toLTS.ImageFinite
 ```
 
-`Cslib.FLTS.toLTS_mtr` (theorem, [line 46](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean#L46))
+`Cslib.FLTS.toLTS_mtr` (theorem, [line 46](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean#L46))
 
 > Characterisation of multistep transitions.
 
@@ -60,5 +60,5 @@ theorem toLTS_mtr {flts : FLTS State Label} {s1 : State} {μs : List Label} {s2 
 
 ## Sources
 
-- [Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean)
+- [Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/FLTS/FLTSToLTS.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.FLTS.FLTSToLTS.json)

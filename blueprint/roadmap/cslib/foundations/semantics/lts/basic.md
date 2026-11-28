@@ -7,7 +7,7 @@ proof: formalized
 
 # Labelled Transition System (LTS)
 
-`Cslib.Foundations.Semantics.LTS.Basic`, in [Cslib/Foundations/Semantics/LTS/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean), by Fabrizio Montesi.
+`Cslib.Foundations.Semantics.LTS.Basic`, in [Cslib/Foundations/Semantics/LTS/Basic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean), by Fabrizio Montesi.
 
 > A Labelled Transition System (`LTS`) models the observable behaviour of the possible states of a
 > system. They are particularly popular in the fields of concurrency theory, logic, and programming
@@ -45,7 +45,7 @@ proof: formalized
 > * [F. Montesi, *Introduction to Choreographies*][Montesi2023]
 > * [D. Sangiorgi, *Introduction to Bisimulation and Coinduction*][Sangiorgi2011]
 
-`Cslib.LTS` (structure, [line 64](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L64))
+`Cslib.LTS` (structure, [line 64](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L64))
 
 > A Labelled Transition System (LTS) for a type of states (`State`) and a type of transition
 > labels (`Label`) consists of a labelled transition relation (`Tr`).
@@ -56,7 +56,7 @@ structure LTS (State : Type u) (Label : Type v) where
   Tr : State → Label → State → Prop
 ```
 
-`Cslib.LTS.UnlabelledTr` (definition, [line 71](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L71))
+`Cslib.LTS.UnlabelledTr` (definition, [line 71](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L71))
 
 > The unlabelled transition relation underlying an LTS.
 
@@ -64,7 +64,7 @@ structure LTS (State : Type u) (Label : Type v) where
 def UnlabelledTr (lts : LTS State Label) : State → State → Prop
 ```
 
-`Cslib.LTS.IsTerminal` (definition, [line 75](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L75))
+`Cslib.LTS.IsTerminal` (definition, [line 75](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L75))
 
 > A state is terminal if it has no outgoing transitions.
 
@@ -76,7 +76,7 @@ def IsTerminal (lts : LTS State Label) (s : State) : Prop
 >
 > This section treats executions with a finite number of steps.
 
-`Cslib.LTS.MTr` (inductive type, [line 95](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L95))
+`Cslib.LTS.MTr` (inductive type, [line 95](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L95))
 
 > Definition of a multistep transition.
 >
@@ -92,7 +92,7 @@ inductive MTr (lts : LTS State Label) : State → List Label → State → Prop 
     lts.MTr s1 (μ :: μs) s3
 ```
 
-`Cslib.LTS.MTr.nil_eq` (theorem, [line 103](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L103))
+`Cslib.LTS.MTr.nil_eq` (theorem, [line 103](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L103))
 
 > In any zero-steps multistep transition, the origin and the derivative are the same.
 
@@ -100,13 +100,13 @@ inductive MTr (lts : LTS State Label) : State → List Label → State → Prop 
 theorem MTr.nil_eq (h : lts.MTr s1 [] s2) : s1 = s2
 ```
 
-`Cslib.LTS.MTr.nil_iff` (theorem, [line 107](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L107))
+`Cslib.LTS.MTr.nil_iff` (theorem, [line 107](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L107))
 
 ```lean
 theorem MTr.nil_iff (s1 s2 : State) : lts.MTr s1 [] s2 ↔ s1 = s2
 ```
 
-`Cslib.LTS.MTr.single` (theorem, [line 112](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L112))
+`Cslib.LTS.MTr.single` (theorem, [line 112](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L112))
 
 > Any transition is also a multistep transition.
 
@@ -115,7 +115,7 @@ theorem MTr.single {s1 : State} {μ : Label} {s2 : State} :
   lts.Tr s1 μ s2 → lts.MTr s1 [μ] s2
 ```
 
-`Cslib.LTS.MTr.cons_iff` (theorem, [line 121](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L121))
+`Cslib.LTS.MTr.cons_iff` (theorem, [line 121](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L121))
 
 > A multistep transition along `μ :: μs` is a transition labelled by `μ` plus a multistep
 > transition labelled by `μs`.
@@ -125,7 +125,7 @@ theorem MTr.cons_iff {lts : LTS State Label} :
     lts.MTr s1 (μ :: μs) s2 ↔ ∃ s, lts.Tr s1 μ s ∧ lts.MTr s μs s2
 ```
 
-`Cslib.LTS.MTr.stepR` (theorem, [line 130](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L130))
+`Cslib.LTS.MTr.stepR` (theorem, [line 130](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L130))
 
 > Any multistep transition can be extended by adding a transition.
 
@@ -134,7 +134,7 @@ theorem MTr.stepR {s1 : State} {μs : List Label} {s2 : State} {μ : Label} {s3 
   lts.MTr s1 μs s2 → lts.Tr s2 μ s3 → lts.MTr s1 (μs ++ [μ]) s3
 ```
 
-`Cslib.LTS.MTr.comp` (theorem, [line 142](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L142))
+`Cslib.LTS.MTr.comp` (theorem, [line 142](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L142))
 
 > Multistep transitions can be composed.
 
@@ -144,7 +144,7 @@ theorem MTr.comp {s1 : State} {μs1 : List Label} {s2 : State} {μs2 : List Labe
   lts.MTr s1 (μs1 ++ μs2) s3
 ```
 
-`Cslib.LTS.MTr.single_invert` (theorem, [line 155](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L155))
+`Cslib.LTS.MTr.single_invert` (theorem, [line 155](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L155))
 
 > Any 1-sized multistep transition implies a transition with the same states and label.
 
@@ -153,7 +153,7 @@ theorem MTr.single_invert (s1 : State) (μ : Label) (s2 : State) :
   lts.MTr s1 [μ] s2 → lts.Tr s1 μ s2
 ```
 
-`Cslib.LTS.MTr.singleton_iff` (theorem, [line 164](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L164))
+`Cslib.LTS.MTr.singleton_iff` (theorem, [line 164](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L164))
 
 > A 1-sized multistep transition is exactly a single transition with the given label.
 
@@ -162,7 +162,7 @@ theorem MTr.singleton_iff (s1 : State) (μ : Label) (s2 : State) :
   lts.MTr s1 [μ] s2 ↔ lts.Tr s1 μ s2
 ```
 
-`Cslib.LTS.MTr.split` (theorem, [line 168](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L168))
+`Cslib.LTS.MTr.split` (theorem, [line 168](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L168))
 
 > A multistep transition over a concatenation can be split into two multistep transitions.
 
@@ -171,7 +171,7 @@ theorem MTr.split {lts : LTS State Label} (h : lts.MTr s1 (μs ++ μs') s2) :
     ∃ s, lts.MTr s1 μs s ∧ lts.MTr s μs' s2
 ```
 
-`Cslib.LTS.MTr.append_iff` (theorem, [line 181](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L181))
+`Cslib.LTS.MTr.append_iff` (theorem, [line 181](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L181))
 
 > Multistep-transitions over `μs ++ μs'` are exactly multistep transitions over `μs` and `μs'`
 > with a common end & start state (respectively).
@@ -180,7 +180,7 @@ theorem MTr.split {lts : LTS State Label} (h : lts.MTr s1 (μs ++ μs') s2) :
 theorem MTr.append_iff : lts.MTr s1 (μs ++ μs') s2 ↔ ∃ s, lts.MTr s1 μs s ∧ lts.MTr s μs' s2
 ```
 
-`Cslib.LTS.TrInv` (definition, [line 188](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L188))
+`Cslib.LTS.TrInv` (definition, [line 188](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L188))
 
 > Single-step invariant.
 
@@ -188,7 +188,7 @@ theorem MTr.append_iff : lts.MTr s1 (μs ++ μs') s2 ↔ ∃ s, lts.MTr s1 μs s
 def TrInv (p : State → Prop) : Prop
 ```
 
-`Cslib.LTS.MTrInv` (definition, [line 193](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L193))
+`Cslib.LTS.MTrInv` (definition, [line 193](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L193))
 
 > Multistep invariant.
 
@@ -196,7 +196,7 @@ def TrInv (p : State → Prop) : Prop
 def MTrInv (p : State → Prop) : Prop
 ```
 
-`Cslib.LTS.mtrInv_of_trInv` (theorem, [line 197](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L197))
+`Cslib.LTS.mtrInv_of_trInv` (theorem, [line 197](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L197))
 
 > Any single-step invariant is also a multistep invariant.
 
@@ -205,7 +205,7 @@ theorem mtrInv_of_trInv {lts : LTS State Label} {p : State → Prop}
     (htr : lts.TrInv p) : lts.MTrInv p
 ```
 
-`Cslib.LTS.CanReach` (definition, [line 205](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L205))
+`Cslib.LTS.CanReach` (definition, [line 205](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L205))
 
 > A state `s1` can reach a state `s2` if there exists a multistep transition from
 > `s1` to `s2`.
@@ -214,7 +214,7 @@ theorem mtrInv_of_trInv {lts : LTS State Label} {p : State → Prop}
 def CanReach (s1 s2 : State) : Prop
 ```
 
-`Cslib.LTS.CanReach.refl` (theorem, [line 210](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L210))
+`Cslib.LTS.CanReach.refl` (theorem, [line 210](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L210))
 
 > Any state can reach itself.
 
@@ -222,7 +222,7 @@ def CanReach (s1 s2 : State) : Prop
 theorem CanReach.refl (s : State) : lts.CanReach s s
 ```
 
-`Cslib.LTS.generatedBy` (definition, [line 216](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L216))
+`Cslib.LTS.generatedBy` (definition, [line 216](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L216))
 
 > The LTS generated by a state `s` is the LTS given by all the states reachable from `s`.
 
@@ -230,7 +230,7 @@ theorem CanReach.refl (s : State) : lts.CanReach s s
 def generatedBy (s : State) : LTS {s' : State // lts.CanReach s s'} Label
 ```
 
-`Cslib.LTS.traces` (definition, [line 227](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L227))
+`Cslib.LTS.traces` (definition, [line 227](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L227))
 
 > The traces of a state `s` is the set of all lists of labels `μs` such that there is a multi-step
 > transition labelled by `μs` originating from `s`.
@@ -239,7 +239,7 @@ def generatedBy (s : State) : LTS {s' : State // lts.CanReach s s'} Label
 def traces (s : State)
 ```
 
-`Cslib.LTS.completeTraces` (definition, [line 231](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L231))
+`Cslib.LTS.completeTraces` (definition, [line 231](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L231))
 
 > The complete traces of a state `s` is the set of all lists of labels `μs` such that there is a
 > multi-step transition labelled by `μs` from `s` to a state with no outgoing transitions.
@@ -248,7 +248,7 @@ def traces (s : State)
 def completeTraces (s : State)
 ```
 
-`Cslib.LTS.mem_traces_iff` (theorem, [line 234](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L234))
+`Cslib.LTS.mem_traces_iff` (theorem, [line 234](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L234))
 
 > Definition of `LTS.traces` for general label sequences, ...
 
@@ -257,7 +257,7 @@ theorem mem_traces_iff {lts : LTS State Label} (μs : List Label) :
   μs ∈ lts.traces s ↔ ∃ s', lts.MTr s μs s'
 ```
 
-`Cslib.LTS.mem_traces_singleton_iff` (theorem, [line 238](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L238))
+`Cslib.LTS.mem_traces_singleton_iff` (theorem, [line 238](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L238))
 
 > ... singleton sequences, ...
 
@@ -266,7 +266,7 @@ theorem mem_traces_singleton_iff {lts : LTS State Label} (μ : Label) :
     [μ] ∈ lts.traces s ↔ ∃ s', lts.Tr s μ s'
 ```
 
-`Cslib.LTS.mem_traces_cons_iff` (theorem, [line 243](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L243))
+`Cslib.LTS.mem_traces_cons_iff` (theorem, [line 243](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L243))
 
 > ... and sequences extended with a single transition.
 
@@ -275,7 +275,7 @@ theorem mem_traces_cons_iff {lts : LTS State Label} (μ : Label) (μs : List Lab
     (μ :: μs) ∈ lts.traces s ↔ ∃ s', lts.Tr s μ s' ∧ μs ∈ lts.traces s'
 ```
 
-`Cslib.LTS.traces_in` (theorem, [line 250](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L250))
+`Cslib.LTS.traces_in` (theorem, [line 250](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L250))
 
 > If there is a multi-step transition from `s` labelled by `μs`, then `μs` is in the traces of
 > `s`.
@@ -286,7 +286,7 @@ theorem traces_in {lts : LTS State Label} (h : lts.MTr s μs s') : μs ∈ lts.t
 
 > ### Classes of LTSs
 
-`Cslib.LTS.image` (definition, [line 263](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L263))
+`Cslib.LTS.image` (definition, [line 263](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L263))
 
 > The `μ`-image of a state `s` is the set of all `μ`-derivatives of `s`.
 
@@ -294,7 +294,7 @@ theorem traces_in {lts : LTS State Label} (h : lts.MTr s μs s') : μs ∈ lts.t
 def image (s : State) (μ : Label) : Set State
 ```
 
-`Cslib.LTS.DeterministicStateLabel` (definition, [line 267](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L267))
+`Cslib.LTS.DeterministicStateLabel` (definition, [line 267](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L267))
 
 > A state `s` is deterministic for a label `μ` if `s` has at most one `μ`-derivative.
 
@@ -302,7 +302,7 @@ def image (s : State) (μ : Label) : Set State
 def DeterministicStateLabel (s : State) (μ : Label) : Prop
 ```
 
-`Cslib.LTS.deterministicStateLabel_iff_subsingleton_image` (theorem, [line 271](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L271))
+`Cslib.LTS.deterministicStateLabel_iff_subsingleton_image` (theorem, [line 271](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L271))
 
 > Determinism at a state and label means that its image is a subsingleton.
 
@@ -311,7 +311,7 @@ theorem deterministicStateLabel_iff_subsingleton_image {lts : LTS State Label} :
     lts.DeterministicStateLabel s μ ↔ (lts.image s μ).Subsingleton
 ```
 
-`Cslib.LTS.DeterministicState` (definition, [line 280](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L280))
+`Cslib.LTS.DeterministicState` (definition, [line 280](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L280))
 
 > A state `s` is deterministic if it is deterministic for all labels.
 
@@ -319,7 +319,7 @@ theorem deterministicStateLabel_iff_subsingleton_image {lts : LTS State Label} :
 def DeterministicState (s : State) : Prop
 ```
 
-`Cslib.LTS.deterministicState_iff_subsingleton_image` (theorem, [line 283](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L283))
+`Cslib.LTS.deterministicState_iff_subsingleton_image` (theorem, [line 283](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L283))
 
 > A state is deterministic exactly when each of its labelled images is a subsingleton.
 
@@ -328,7 +328,7 @@ theorem deterministicState_iff_subsingleton_image {lts : LTS State Label} :
     lts.DeterministicState s ↔ ∀ μ, (lts.image s μ).Subsingleton
 ```
 
-`Cslib.LTS.Deterministic` (class, [line 292](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L292))
+`Cslib.LTS.Deterministic` (class, [line 292](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L292))
 
 > An lts is deterministic if it is deterministic at every state.
 
@@ -339,7 +339,7 @@ class Deterministic (lts : LTS State Label) where
   deterministic : ∀ s, lts.DeterministicState s
 ```
 
-`Cslib.LTS.deterministic_iff_subsingleton_image` (theorem, [line 298](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L298))
+`Cslib.LTS.deterministic_iff_subsingleton_image` (theorem, [line 298](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L298))
 
 > An LTS is deterministic exactly when every labelled image is a subsingleton.
 
@@ -348,14 +348,14 @@ theorem deterministic_iff_subsingleton_image {lts : LTS State Label} :
     lts.Deterministic ↔ ∀ s μ, (lts.image s μ).Subsingleton
 ```
 
-`Cslib.LTS.Deterministic.eq_of_tr` (theorem, [line 305](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L305))
+`Cslib.LTS.Deterministic.eq_of_tr` (theorem, [line 305](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L305))
 
 ```lean
 theorem Deterministic.eq_of_tr {lts : LTS State Label} [h : lts.Deterministic]
     (htr : lts.Tr s1 μ s2) (htr' : lts.Tr s1 μ s2') : s2 = s2'
 ```
 
-`Cslib.LTS.Deterministic.eq_of_mTr` (theorem, [line 311](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L311))
+`Cslib.LTS.Deterministic.eq_of_mTr` (theorem, [line 311](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L311))
 
 > In a deterministic lts, multistep transitions with a given start state and trace reach a unique
 > end state.
@@ -365,7 +365,7 @@ theorem Deterministic.eq_of_mTr {lts : LTS State Label} [lts.Deterministic]
     (hmtr : lts.MTr s1 μs s2) (hmtr' : lts.MTr s1 μs s2') : s2 = s2'
 ```
 
-`Cslib.LTS.imageMultistep` (definition, [line 323](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L323))
+`Cslib.LTS.imageMultistep` (definition, [line 323](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L323))
 
 > The `μs`-image of a state `s`, where `μs` is a list of labels, is the set of all
 > `μs`-derivatives of `s`.
@@ -374,7 +374,7 @@ theorem Deterministic.eq_of_mTr {lts : LTS State Label} [lts.Deterministic]
 def imageMultistep (s : State) (μs : List Label) : Set State
 ```
 
-`Cslib.LTS.ImageFinite` (abbreviation, [line 327](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L327))
+`Cslib.LTS.ImageFinite` (abbreviation, [line 327](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L327))
 
 > An lts is image-finite if all images of its states are finite.
 
@@ -382,7 +382,7 @@ def imageMultistep (s : State) (μs : List Label) : Set State
 abbrev ImageFinite
 ```
 
-`Cslib.LTS.DeterministicStateLabel.not_tr_of_ne` (theorem, [line 332](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L332))
+`Cslib.LTS.DeterministicStateLabel.not_tr_of_ne` (theorem, [line 332](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L332))
 
 > In a deterministic LTS, if a state has a `μ`-derivative, then it can have no other
 > `μ`-derivative.
@@ -392,14 +392,14 @@ theorem DeterministicStateLabel.not_tr_of_ne (hdet : lts.DeterministicStateLabel
     (hne : s₁ ≠ s₂) (htr₁ : lts.Tr s μ s₁) : ¬lts.Tr s μ s₂
 ```
 
-`Cslib.LTS.DeterministicStateLabel.image_singleton_iff_tr` (theorem, [line 337](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L337))
+`Cslib.LTS.DeterministicStateLabel.image_singleton_iff_tr` (theorem, [line 337](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L337))
 
 ```lean
 theorem DeterministicStateLabel.image_singleton_iff_tr (h : lts.DeterministicStateLabel s μ) :
     lts.image s μ = {s'} ↔ lts.Tr s μ s'
 ```
 
-`Cslib.LTS.DeterministicStateLabel.image_char` (theorem, [line 345](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L345))
+`Cslib.LTS.DeterministicStateLabel.image_char` (theorem, [line 345](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L345))
 
 > If `s` is deterministic for `μ`, then the `μ`-image of `s` is either a singleton or the empty
 > set.
@@ -409,7 +409,7 @@ theorem DeterministicStateLabel.image_char (h : lts.DeterministicStateLabel s μ
     (∃ s', lts.image s μ = { s' }) ∨ (lts.image s μ = ∅)
 ```
 
-`Cslib.LTS.DeterministicStateLabel.finite_image` (theorem, [line 351](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L351))
+`Cslib.LTS.DeterministicStateLabel.finite_image` (theorem, [line 351](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L351))
 
 > If `s` is deterministic at `μ`, then the `μ`-image of `s` is finite.
 
@@ -418,7 +418,7 @@ theorem DeterministicStateLabel.finite_image (h : lts.DeterministicStateLabel s 
     Finite (lts.image s μ)
 ```
 
-`Cslib.LTS.deterministic_imageFinite` (instance, [line 359](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L359))
+`Cslib.LTS.deterministic_imageFinite` (instance, [line 359](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L359))
 
 > Every deterministic LTS is also image-finite.
 
@@ -426,7 +426,7 @@ theorem DeterministicStateLabel.finite_image (h : lts.DeterministicStateLabel s 
 instance deterministic_imageFinite [lts.Deterministic] : lts.ImageFinite
 ```
 
-`Cslib.LTS.finiteState_imageFinite` (instance, [line 363](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L363))
+`Cslib.LTS.finiteState_imageFinite` (instance, [line 363](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L363))
 
 > Every finite-state LTS is also image-finite.
 
@@ -434,7 +434,7 @@ instance deterministic_imageFinite [lts.Deterministic] : lts.ImageFinite
 instance finiteState_imageFinite [Finite State] : lts.ImageFinite
 ```
 
-`Cslib.LTS.HasOutLabel` (definition, [line 366](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L366))
+`Cslib.LTS.HasOutLabel` (definition, [line 366](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L366))
 
 > A state has an outgoing label `μ` if it has a `μ`-derivative.
 
@@ -442,7 +442,7 @@ instance finiteState_imageFinite [Finite State] : lts.ImageFinite
 def HasOutLabel (s : State) (μ : Label) : Prop
 ```
 
-`Cslib.LTS.outgoingLabels` (definition, [line 370](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L370))
+`Cslib.LTS.outgoingLabels` (definition, [line 370](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L370))
 
 > The set of outgoing labels of a state.
 
@@ -450,7 +450,7 @@ def HasOutLabel (s : State) (μ : Label) : Prop
 def outgoingLabels (s : State)
 ```
 
-`Cslib.LTS.FinitelyBranching` (class, [line 374](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L374))
+`Cslib.LTS.FinitelyBranching` (class, [line 374](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L374))
 
 > An LTS is finitely branching if it is image-finite and all states have finite sets of
 > outgoing labels.
@@ -461,7 +461,7 @@ class FinitelyBranching where
   [finite_state : ∀ s, Finite (lts.outgoingLabels s)]
 ```
 
-`Cslib.LTS.FinitelyBranching.of_finite` (instance, [line 381](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L381))
+`Cslib.LTS.FinitelyBranching.of_finite` (instance, [line 381](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L381))
 
 > Every LTS with finite types for states and labels is also finitely branching.
 
@@ -469,7 +469,7 @@ class FinitelyBranching where
 instance FinitelyBranching.of_finite [Finite State] [Finite Label] : lts.FinitelyBranching
 ```
 
-`Cslib.LTS.BoundedUpTo` (definition, [line 384](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L384))
+`Cslib.LTS.BoundedUpTo` (definition, [line 384](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L384))
 
 > An LTS is bounded up to `n` if every finite execution has length strictly less than `n`.
 
@@ -477,7 +477,7 @@ instance FinitelyBranching.of_finite [Finite State] [Finite Label] : lts.Finitel
 def BoundedUpTo (lts : LTS State Label) (n : ℕ) : Prop
 ```
 
-`Cslib.LTS.Bounded` (class, [line 388](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L388))
+`Cslib.LTS.Bounded` (class, [line 388](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L388))
 
 > An LTS is bounded if there is a global bound on the length of all of its finite executions.
 
@@ -486,7 +486,7 @@ class Bounded (lts : LTS State Label) where
   bounded : ∃ n, lts.BoundedUpTo n
 ```
 
-`Cslib.LTS.Terminating` (class, [line 393](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L393))
+`Cslib.LTS.Terminating` (class, [line 393](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L393))
 
 > An LTS is terminating if its underlying unlabelled transition relation is terminating,
 > equivalently if it admits no infinite execution.
@@ -496,7 +496,7 @@ class Terminating (lts : LTS State Label) where
   terminating : Relation.Terminating lts.UnlabelledTr
 ```
 
-`Cslib.LTS.Acyclic` (class, [line 398](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L398))
+`Cslib.LTS.Acyclic` (class, [line 398](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L398))
 
 > An LTS is acyclic if its underlying unlabelled transition relation contains no nonempty
 > cycle.
@@ -506,7 +506,7 @@ class Acyclic (lts : LTS State Label) where
   [acyclic : Relation.Acyclic lts.UnlabelledTr]
 ```
 
-`Cslib.LTS.Deterministic.traces_of_mTr` (theorem, [line 405](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L405))
+`Cslib.LTS.Deterministic.traces_of_mTr` (theorem, [line 405](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L405))
 
 > In a deterministic lts, a state's traces are determined by any of its multi-step predecessors.
 
@@ -515,7 +515,7 @@ theorem Deterministic.traces_of_mTr {lts : LTS State Label} [lts.Deterministic]
     (h : lts.MTr s μs s') : lts.traces s' = {μs' | μs ++ μs' ∈ lts.traces s}
 ```
 
-`Cslib.LTS.Deterministic.traces_of_tr` (theorem, [line 417](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean#L417))
+`Cslib.LTS.Deterministic.traces_of_tr` (theorem, [line 417](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean#L417))
 
 > In a deterministic lts, a state's traces are determined by any of its predecessors.
 
@@ -530,5 +530,5 @@ theorem Deterministic.traces_of_tr {lts : LTS State Label} [lts.Deterministic]
 
 ## Sources
 
-- [Cslib/Foundations/Semantics/LTS/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Basic.lean)
+- [Cslib/Foundations/Semantics/LTS/Basic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Basic.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.LTS.Basic.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Evaluation results
 
-`Cslib.Languages.CombinatoryLogic.Evaluation`, in [Cslib/Languages/CombinatoryLogic/Evaluation.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean), by Thomas Waring.
+`Cslib.Languages.CombinatoryLogic.Evaluation`, in [Cslib/Languages/CombinatoryLogic/Evaluation.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean), by Thomas Waring.
 
 > This file formalises evaluation and normal forms of SKI terms.
 >
@@ -29,7 +29,7 @@ proof: formalized
 >
 > This file draws heavily from <https://gist.github.com/b-mehta/e412c837818223b8f16ca0b4aa19b166>.
 
-`Cslib.SKI.RedexFree` (definition, [line 45](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L45))
+`Cslib.SKI.RedexFree` (definition, [line 45](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L45))
 
 > The predicate that a term has no reducible sub-terms.
 
@@ -37,7 +37,7 @@ proof: formalized
 def RedexFree : SKI → Prop
 ```
 
-`Cslib.SKI.evalStep` (definition, [line 64](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L64))
+`Cslib.SKI.evalStep` (definition, [line 64](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L64))
 
 > One-step evaluation as a function: either it returns a term that has been reduced by one step,
 > or a proof that the term is redex free. Uses normal-order reduction.
@@ -46,7 +46,7 @@ def RedexFree : SKI → Prop
 def evalStep : (x : SKI) → PLift (x.RedexFree) ⊕ SKI
 ```
 
-`Cslib.SKI.evalStep_right_correct` (theorem, [line 90](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L90))
+`Cslib.SKI.evalStep_right_correct` (theorem, [line 90](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L90))
 
 > The normal-order reduction implemented by `evalStep` indeed computes a one-step reduction.
 
@@ -54,19 +54,19 @@ def evalStep : (x : SKI) → PLift (x.RedexFree) ⊕ SKI
 theorem evalStep_right_correct : (x y : SKI) → (x.evalStep = Sum.inr y) → x ⭢ y
 ```
 
-`Cslib.SKI.redexFree_of_normal_red` (theorem, [line 134](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L134))
+`Cslib.SKI.redexFree_of_normal_red` (theorem, [line 134](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L134))
 
 ```lean
 theorem redexFree_of_normal_red {x : SKI} (h : Normal Red x) : x.RedexFree
 ```
 
-`Cslib.SKI.RedexFree.normal_red` (theorem, [line 139](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L139))
+`Cslib.SKI.RedexFree.normal_red` (theorem, [line 139](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L139))
 
 ```lean
 theorem RedexFree.normal_red {x : SKI} (hx : x.RedexFree) : Normal Red x
 ```
 
-`Cslib.SKI.redexFree_iff` (theorem, [line 151](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L151))
+`Cslib.SKI.redexFree_iff` (theorem, [line 151](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L151))
 
 > A term is redex free iff it has no one-step reductions.
 
@@ -74,13 +74,13 @@ theorem RedexFree.normal_red {x : SKI} (hx : x.RedexFree) : Normal Red x
 theorem redexFree_iff {x : SKI} : x.RedexFree ↔ Normal Red x
 ```
 
-`Cslib.SKI.redexFree_iff_evalStep` (theorem, [line 154](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L154))
+`Cslib.SKI.redexFree_iff_evalStep` (theorem, [line 154](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L154))
 
 ```lean
 theorem redexFree_iff_evalStep {x : SKI} : x.RedexFree ↔ (x.evalStep).isLeft = true
 ```
 
-`Cslib.SKI.redexFree_iff_mred_eq` (theorem, [line 170](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L170))
+`Cslib.SKI.redexFree_iff_mred_eq` (theorem, [line 170](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L170))
 
 > A term is redex free iff its only many-step reduction is itself.
 
@@ -88,7 +88,7 @@ theorem redexFree_iff_evalStep {x : SKI} : x.RedexFree ↔ (x.evalStep).isLeft =
 theorem redexFree_iff_mred_eq {x : SKI} : x.RedexFree ↔ ∀ y, (x ↠ y) ↔ x = y
 ```
 
-`Cslib.SKI.join_mRed_redexFree` (theorem, [line 181](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L181))
+`Cslib.SKI.join_mRed_redexFree` (theorem, [line 181](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L181))
 
 > If a term has a common reduct with a normal term, it in fact reduces to that term.
 
@@ -97,13 +97,13 @@ theorem join_mRed_redexFree {x y : SKI} (hy : y.RedexFree) (h : Join (ReflTransG
     x ↠ y
 ```
 
-`Cslib.SKI.mJoin_red_redexFree` (alias, [line 186](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L186))
+`Cslib.SKI.mJoin_red_redexFree` (alias, [line 186](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L186))
 
 ```lean
 alias mJoin_red_redexFree
 ```
 
-`Cslib.SKI.confluent_redexFree` (lemma, [line 189](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L189))
+`Cslib.SKI.confluent_redexFree` (lemma, [line 189](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L189))
 
 > If `x` reduces to both `y` and `z`, and `z` is not reducible, then `y` reduces to `z`.
 
@@ -111,7 +111,7 @@ alias mJoin_red_redexFree
 lemma confluent_redexFree {x y z : SKI} (hxy : x ↠ y) (hxz : x ↠ z) (hz : RedexFree z) : y ↠ z
 ```
 
-`Cslib.SKI.unique_normal_form` (lemma, [line 196](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L196))
+`Cslib.SKI.unique_normal_form` (lemma, [line 196](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L196))
 
 > If `x` reduces to both `y` and `z`, and both `y` and `z` are in normal form, then they are equal.
 
@@ -120,7 +120,7 @@ lemma unique_normal_form {x y z : SKI}
     (hxy : x ↠ y) (hxz : x ↠ z) (hy : y.RedexFree) (hz : RedexFree z) : y = z
 ```
 
-`Cslib.SKI.eq_of_join_mRed_redexFree` (lemma, [line 201](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L201))
+`Cslib.SKI.eq_of_join_mRed_redexFree` (lemma, [line 201](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L201))
 
 > If `x` and `y` are normal and have a common reduct, then they are equal.
 
@@ -129,7 +129,7 @@ lemma eq_of_join_mRed_redexFree {x y : SKI} (h : Join (ReflTransGen Red) x y)
     (hx : x.RedexFree) (hy : y.RedexFree) : x = y
 ```
 
-`Cslib.SKI.eq_of_mJoin_red_redexFree` (alias, [line 205](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L205))
+`Cslib.SKI.eq_of_mJoin_red_redexFree` (alias, [line 205](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L205))
 
 ```lean
 alias eq_of_mJoin_red_redexFree
@@ -137,13 +137,13 @@ alias eq_of_mJoin_red_redexFree
 
 > ### Injectivity for datatypes
 
-`Cslib.SKI.sk_nequiv` (lemma, [line 210](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L210))
+`Cslib.SKI.sk_nequiv` (lemma, [line 210](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L210))
 
 ```lean
 lemma sk_nequiv : ¬ Join (ReflTransGen Red) S K
 ```
 
-`Cslib.SKI.isBool_injective` (theorem, [line 218](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L218))
+`Cslib.SKI.isBool_injective` (theorem, [line 218](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L218))
 
 > Injectivity for booleans.
 
@@ -152,13 +152,13 @@ theorem isBool_injective (x y : SKI) (u v : Bool) (hx : IsBool u x) (hy : IsBool
     (hxy : Join (ReflTransGen Red) x y) : u = v
 ```
 
-`Cslib.SKI.TF_nequiv` (lemma, [line 231](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L231))
+`Cslib.SKI.TF_nequiv` (lemma, [line 231](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L231))
 
 ```lean
 lemma TF_nequiv : ¬ Join (ReflTransGen Red) TT FF
 ```
 
-`Cslib.SKI.churchK` (definition, [line 235](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L235))
+`Cslib.SKI.churchK` (definition, [line 235](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L235))
 
 > A specialisation of `Church : Nat → SKI`.
 
@@ -166,31 +166,31 @@ lemma TF_nequiv : ¬ Join (ReflTransGen Red) TT FF
 def churchK : Nat → SKI
 ```
 
-`Cslib.SKI.churchK_church` (lemma, [line 239](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L239))
+`Cslib.SKI.churchK_church` (lemma, [line 239](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L239))
 
 ```lean
 lemma churchK_church : (n : Nat) → churchK n = Church n K K
 ```
 
-`Cslib.SKI.churchK_redexFree` (lemma, [line 243](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L243))
+`Cslib.SKI.churchK_redexFree` (lemma, [line 243](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L243))
 
 ```lean
 lemma churchK_redexFree : (n : Nat) → RedexFree (churchK n)
 ```
 
-`Cslib.SKI.churchK_size` (lemma, [line 248](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L248))
+`Cslib.SKI.churchK_size` (lemma, [line 248](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L248))
 
 ```lean
 lemma churchK_size : (n : Nat) → (churchK n).size = n+1
 ```
 
-`Cslib.SKI.churchK_injective` (lemma, [line 252](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L252))
+`Cslib.SKI.churchK_injective` (lemma, [line 252](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L252))
 
 ```lean
 lemma churchK_injective : Function.Injective churchK
 ```
 
-`Cslib.SKI.isChurch_injective` (theorem, [line 256](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L256))
+`Cslib.SKI.isChurch_injective` (theorem, [line 256](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L256))
 
 > Injectivity for Church numerals
 
@@ -199,7 +199,7 @@ theorem isChurch_injective (x y : SKI) (n m : Nat) (hx : IsChurch n x) (hy : IsC
     (hxy : Join (ReflTransGen Red) x y) : n = m
 ```
 
-`Cslib.SKI.rice` (theorem, [line 278](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L278))
+`Cslib.SKI.rice` (theorem, [line 278](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L278))
 
 > **Rice's theorem**: no SKI term is a non-trivial predicate.
 >
@@ -214,7 +214,7 @@ theorem rice {P : SKI} (hP : ∀ x : SKI, ((P ⬝ x) ↠ TT) ∨ (P ⬝ x) ↠ F
     (hxt : ∃ x : SKI, (P ⬝ x) ↠ TT) (hxf : ∃ x : SKI, (P ⬝ x) ↠ FF) : False
 ```
 
-`Cslib.SKI.rice'` (theorem, [line 309](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L309))
+`Cslib.SKI.rice'` (theorem, [line 309](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean#L309))
 
 > **Rice's theorem**: any SKI predicate is trivial.
 >
@@ -237,5 +237,5 @@ theorem rice' {P : SKI} (hP : ∀ x : SKI, ((P ⬝ x) ↠ TT) ∨ (P ⬝ x) ↠ 
 
 ## Sources
 
-- [Cslib/Languages/CombinatoryLogic/Evaluation.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Evaluation.lean)
+- [Cslib/Languages/CombinatoryLogic/Evaluation.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CombinatoryLogic/Evaluation.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Languages.CombinatoryLogic.Evaluation.json)

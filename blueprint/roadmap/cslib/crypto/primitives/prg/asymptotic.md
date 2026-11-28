@@ -7,7 +7,7 @@ proof: formalized
 
 # Asymptotic pseudorandom generator security
 
-`Cslib.Crypto.Primitives.PRG.Asymptotic`, in [Cslib/Crypto/Primitives/PRG/Asymptotic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Primitives/PRG/Asymptotic.lean), by Samuel Schlesinger.
+`Cslib.Crypto.Primitives.PRG.Asymptotic`, in [Cslib/Crypto/Primitives/PRG/Asymptotic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Primitives/PRG/Asymptotic.lean), by Samuel Schlesinger.
 
 > Security for families of generators means negligible advantage for each admissible
 > adversary family, following [BonehShoup2023], Definition 3.1. Negligibility uses Mathlib's
@@ -23,7 +23,7 @@ proof: formalized
 > when the range-test family is admissible. In particular, a bitstring family that eventually
 > stretches by at least one bit is insecure against any class admitting its range test.
 
-`Cslib.Crypto.PRG.Family` (abbreviation, [line 39](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L39))
+`Cslib.Crypto.PRG.Family` (abbreviation, [line 39](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L39))
 
 > A security-parameter-indexed collection of deterministic generators.
 
@@ -31,7 +31,7 @@ proof: formalized
 abbrev Family (Seed Output : ℕ → Type*)
 ```
 
-`Cslib.Crypto.PRG.Family.Secure` (definition, [line 49](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L49))
+`Cslib.Crypto.PRG.Family.Secure` (definition, [line 49](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L49))
 
 > Every admissible adversary family has negligible distinguishing advantage.
 > The predicate can encode computational restrictions; `fun _ => True` permits all families.
@@ -41,7 +41,7 @@ def Secure (G : Family Seed Output)
     (Admissible : (∀ n, Adversary (Output n)) → Prop) : Prop
 ```
 
-`Cslib.Crypto.PRG.Family.Secure.of_admissible` (theorem, [line 56](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L56))
+`Cslib.Crypto.PRG.Family.Secure.of_admissible` (theorem, [line 56](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L56))
 
 > Restricting the admissible adversary families preserves asymptotic security.
 
@@ -53,7 +53,7 @@ theorem Secure.of_admissible {G : Family Seed Output}
     G.Secure Restricted
 ```
 
-`Cslib.Crypto.PRG.Family.SecureWithError` (definition, [line 64](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L64))
+`Cslib.Crypto.PRG.Family.SecureWithError` (definition, [line 64](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L64))
 
 > Every admissible adversary family has advantage at most `ε n` at each parameter `n`.
 
@@ -62,7 +62,7 @@ def SecureWithError (G : Family Seed Output)
     (Admissible : (∀ n, Adversary (Output n)) → Prop) (ε : ℕ → ℝ≥0) : Prop
 ```
 
-`Cslib.Crypto.PRG.Family.SecureWithError.secure` (theorem, [line 70](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L70))
+`Cslib.Crypto.PRG.Family.SecureWithError.secure` (theorem, [line 70](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L70))
 
 > A negligible error bound implies asymptotic security.
 
@@ -74,7 +74,7 @@ theorem SecureWithError.secure {G : Family Seed Output}
       (fun n => (ε n : ℝ))) : G.Secure Admissible
 ```
 
-`Cslib.Crypto.PRG.Family.not_secure_of_rangeAdversary` (theorem, [line 87](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L87))
+`Cslib.Crypto.PRG.Family.not_secure_of_rangeAdversary` (theorem, [line 87](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L87))
 
 > A non-negligible lower bound on the fraction of outputs outside the image rules out
 > security whenever exhaustive range testing is admissible.
@@ -90,7 +90,7 @@ theorem not_secure_of_rangeAdversary (G : Family Seed Output)
     ¬ G.Secure Admissible
 ```
 
-`Cslib.Crypto.PRG.Family.not_secure_of_two_mul_card_le` (theorem, [line 106](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L106))
+`Cslib.Crypto.PRG.Family.not_secure_of_two_mul_card_le` (theorem, [line 106](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L106))
 
 > If outputs eventually outnumber seeds by a factor of two, admissibility of exhaustive
 > seed enumeration and output comparison suffices to rule out security.
@@ -103,7 +103,7 @@ theorem not_secure_of_two_mul_card_le (G : Family Seed Output)
     ¬ G.Secure Admissible
 ```
 
-`Cslib.Crypto.PRG.Family.not_secure_of_bitstring_stretch` (theorem, [line 130](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L130))
+`Cslib.Crypto.PRG.Family.not_secure_of_bitstring_stretch` (theorem, [line 130](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L130))
 
 > A bitstring generator that eventually stretches by at least one bit is insecure
 > against any class admitting its range-test family.
@@ -117,7 +117,7 @@ theorem not_secure_of_bitstring_stretch {seedLength outputLength : ℕ → ℕ}
     ¬ G.Secure Admissible
 ```
 
-`Cslib.Crypto.PRG.Family.not_exists_secure_bitstring_stretch` (theorem, [line 145](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L145))
+`Cslib.Crypto.PRG.Family.not_exists_secure_bitstring_stretch` (theorem, [line 145](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L145))
 
 > No bitstring generator family that eventually stretches by at least one bit is secure
 > against all adversary families.
@@ -129,7 +129,7 @@ theorem not_exists_secure_bitstring_stretch {seedLength outputLength : ℕ → �
       (fun n => Fin (outputLength n) → Bool), G.Secure (fun _ => True)
 ```
 
-`Cslib.Crypto.PRG.Family.not_secure_of_bitVec_stretch` (theorem, [line 154](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L154))
+`Cslib.Crypto.PRG.Family.not_secure_of_bitVec_stretch` (theorem, [line 154](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L154))
 
 > A `BitVec` generator that eventually stretches by at least one bit is insecure
 > against any class admitting its range-test family.
@@ -143,7 +143,7 @@ theorem not_secure_of_bitVec_stretch {seedLength outputLength : ℕ → ℕ}
     ¬ G.Secure Admissible
 ```
 
-`Cslib.Crypto.PRG.Family.not_exists_secure_bitVec_stretch` (theorem, [line 169](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L169))
+`Cslib.Crypto.PRG.Family.not_exists_secure_bitVec_stretch` (theorem, [line 169](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Primitives/PRG/Asymptotic.lean#L169))
 
 > No `BitVec` generator family that eventually stretches by at least one bit is secure
 > against all adversary families.
@@ -161,5 +161,5 @@ theorem not_exists_secure_bitVec_stretch {seedLength outputLength : ℕ → ℕ}
 
 ## Sources
 
-- [Cslib/Crypto/Primitives/PRG/Asymptotic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Primitives/PRG/Asymptotic.lean)
+- [Cslib/Crypto/Primitives/PRG/Asymptotic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Primitives/PRG/Asymptotic.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Crypto.Primitives.PRG.Asymptotic.json)

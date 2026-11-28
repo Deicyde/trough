@@ -7,7 +7,7 @@ proof: formalized
 
 # Reversal of nondeterministic automata
 
-`Cslib.Computability.Automata.NA.Reverse`, in [Cslib/Computability/Automata/NA/Reverse.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Reverse.lean), by Vignesh Karri.
+`Cslib.Computability.Automata.NA.Reverse`, in [Cslib/Computability/Automata/NA/Reverse.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Reverse.lean), by Vignesh Karri.
 
 > This file defines `Cslib.Automata.NA.FinAcc.reverse`, which reverses every transition of a
 > nondeterministic automaton and swaps its start and accept states. Its underlying transition system
@@ -18,7 +18,7 @@ proof: formalized
 > `Language.reverse` of the language accepted by `na`. It follows from `FinAcc.accepts_reverse`,
 > the statement that `na.reverse` accepts `xs` iff `na` accepts `xs.reverse`.
 
-`Cslib.Automata.NA.FinAcc.reverse` (definition, [line 38](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Reverse.lean#L38))
+`Cslib.Automata.NA.FinAcc.reverse` (definition, [line 38](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Reverse.lean#L38))
 
 > `na.reverse` reverses every transition of `na` and swaps its start and accept states,
 > so that it accepts exactly the reversals of the words accepted by `na`.
@@ -27,7 +27,7 @@ proof: formalized
 def reverse (na : FinAcc State Symbol) : FinAcc State Symbol
 ```
 
-`Cslib.Automata.NA.FinAcc.reverse_reverse` (theorem, [line 45](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Reverse.lean#L45))
+`Cslib.Automata.NA.FinAcc.reverse_reverse` (theorem, [line 45](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Reverse.lean#L45))
 
 > Reversing an automaton twice gives back the original automaton.
 
@@ -35,7 +35,7 @@ def reverse (na : FinAcc State Symbol) : FinAcc State Symbol
 theorem reverse_reverse (na : FinAcc State Symbol) : na.reverse.reverse = na
 ```
 
-`Cslib.Automata.NA.FinAcc.reverse_involutive` (theorem, [line 48](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Reverse.lean#L48))
+`Cslib.Automata.NA.FinAcc.reverse_involutive` (theorem, [line 48](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Reverse.lean#L48))
 
 > Reversal of an automaton is an involution.
 
@@ -43,7 +43,7 @@ theorem reverse_reverse (na : FinAcc State Symbol) : na.reverse.reverse = na
 theorem reverse_involutive : Function.Involutive (reverse (State := State) (Symbol := Symbol))
 ```
 
-`Cslib.Automata.NA.FinAcc.reverse_start` (theorem, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Reverse.lean#L53))
+`Cslib.Automata.NA.FinAcc.reverse_start` (theorem, [line 53](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Reverse.lean#L53))
 
 > The start states of `na.reverse` are the accept states of `na`.
 
@@ -51,7 +51,7 @@ theorem reverse_involutive : Function.Involutive (reverse (State := State) (Symb
 theorem reverse_start (na : FinAcc State Symbol) : na.reverse.start = na.accept
 ```
 
-`Cslib.Automata.NA.FinAcc.reverse_accept` (theorem, [line 57](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Reverse.lean#L57))
+`Cslib.Automata.NA.FinAcc.reverse_accept` (theorem, [line 57](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Reverse.lean#L57))
 
 > The accept states of `na.reverse` are the start states of `na`.
 
@@ -59,7 +59,7 @@ theorem reverse_start (na : FinAcc State Symbol) : na.reverse.start = na.accept
 theorem reverse_accept (na : FinAcc State Symbol) : na.reverse.accept = na.start
 ```
 
-`Cslib.Automata.NA.FinAcc.reverse_mTr` (theorem, [line 62](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Reverse.lean#L62))
+`Cslib.Automata.NA.FinAcc.reverse_mTr` (theorem, [line 62](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Reverse.lean#L62))
 
 > The multistep transitions of `na.reverse` are exactly the reversed multistep transitions
 > of `na`.
@@ -69,7 +69,7 @@ theorem reverse_mTr (na : FinAcc State Symbol) {xs : List Symbol} {s s' : State}
     na.reverse.MTr s' xs s ↔ na.MTr s xs.reverse s'
 ```
 
-`Cslib.Automata.NA.FinAcc.accepts_reverse` (theorem, [line 67](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Reverse.lean#L67))
+`Cslib.Automata.NA.FinAcc.accepts_reverse` (theorem, [line 67](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Reverse.lean#L67))
 
 > `na.reverse` accepts a word iff `na` accepts its reversal.
 
@@ -78,7 +78,7 @@ theorem accepts_reverse {na : FinAcc State Symbol} {xs : List Symbol} :
     Accepts na.reverse xs ↔ Accepts na xs.reverse
 ```
 
-`Cslib.Automata.NA.FinAcc.reverse_language_eq` (theorem, [line 73](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Reverse.lean#L73))
+`Cslib.Automata.NA.FinAcc.reverse_language_eq` (theorem, [line 73](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Reverse.lean#L73))
 
 > `na.reverse` accepts exactly the reversals of the words accepted by `na`.
 
@@ -94,5 +94,5 @@ theorem reverse_language_eq (na : FinAcc State Symbol) :
 
 ## Sources
 
-- [Cslib/Computability/Automata/NA/Reverse.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Reverse.lean)
+- [Cslib/Computability/Automata/NA/Reverse.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Reverse.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.NA.Reverse.json)

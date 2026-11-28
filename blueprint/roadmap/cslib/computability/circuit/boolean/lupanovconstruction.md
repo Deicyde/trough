@@ -7,7 +7,7 @@ proof: formalized
 
 # Lupanov's block construction
 
-`Cslib.Computability.Circuit.Boolean.LupanovConstruction`, in [Cslib/Computability/Circuit/Boolean/LupanovConstruction.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/LupanovConstruction.lean), by Samuel Schlesinger.
+`Cslib.Computability.Circuit.Boolean.LupanovConstruction`, in [Cslib/Computability/Circuit/Boolean/LupanovConstruction.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Boolean/LupanovConstruction.lean), by Samuel Schlesinger.
 
 > This file is the finite, parametrised core of Lupanov's upper bound. Its purpose is to give a
 > gate budget `bound k d s` that is valid for every Boolean function on `k + d` inputs and every
@@ -77,7 +77,7 @@ proof: formalized
 
 > ### The bound
 
-`Cslib.Circuits.Boolean.Lupanov.bound` (definition, [line 260](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/LupanovConstruction.lean#L260))
+`Cslib.Circuits.Boolean.Lupanov.bound` (definition, [line 260](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Boolean/LupanovConstruction.lean#L260))
 
 > Gate budget for `k` address bits, `d` data bits, and blocks of `s` rows, as spent by
 > `synthesis`. In order: the shared minterms; then for each of the `2 ^ k / s + 1` blocks
@@ -91,7 +91,7 @@ proof: formalized
 def bound (k d s : ℕ) : ℕ
 ```
 
-`Cslib.Circuits.Boolean.Lupanov.synthesis` (theorem, [line 267](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/LupanovConstruction.lean#L267))
+`Cslib.Circuits.Boolean.Lupanov.synthesis` (theorem, [line 267](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Boolean/LupanovConstruction.lean#L267))
 
 > Every Boolean function on `k + d` inputs can be built from the input projections within
 > `bound k d s` gates: build all minterms, then the disjunction over block-pattern pairs of
@@ -114,5 +114,5 @@ theorem synthesis (f : BooleanFunction (k + d)) (hs : 0 < s) :
 
 ## Sources
 
-- [Cslib/Computability/Circuit/Boolean/LupanovConstruction.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/LupanovConstruction.lean)
+- [Cslib/Computability/Circuit/Boolean/LupanovConstruction.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Boolean/LupanovConstruction.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Circuit.Boolean.LupanovConstruction.json)

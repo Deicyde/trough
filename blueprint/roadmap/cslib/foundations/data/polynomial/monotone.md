@@ -7,13 +7,13 @@ proof: formalized
 
 # Monotonicity of polynomial evaluation
 
-`Cslib.Foundations.Data.Polynomial.Monotone`, in [Cslib/Foundations/Data/Polynomial/Monotone.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Polynomial/Monotone.lean), by John Jennings, Bolton Bailey.
+`Cslib.Foundations.Data.Polynomial.Monotone`, in [Cslib/Foundations/Data/Polynomial/Monotone.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Polynomial/Monotone.lean), by John Jennings, Bolton Bailey.
 
 > Over a canonically ordered semiring (such as `ℕ`), every coefficient of a polynomial is
 > nonnegative, so evaluation of the polynomial is a monotone function. This is useful for
 > reasoning about polynomial time bounds.
 
-`Polynomial.monotone_eval` (theorem, [line 31](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Polynomial/Monotone.lean#L31))
+`Polynomial.monotone_eval` (theorem, [line 31](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Polynomial/Monotone.lean#L31))
 
 > Over a canonically ordered semiring, evaluation of a polynomial is monotone.
 
@@ -21,7 +21,7 @@ proof: formalized
 theorem monotone_eval : Monotone (fun x : R => p.eval x)
 ```
 
-`Polynomial.eval_mono` (theorem, [line 39](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Polynomial/Monotone.lean#L39))
+`Polynomial.eval_mono` (theorem, [line 39](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Polynomial/Monotone.lean#L39))
 
 > Over a canonically ordered semiring, evaluation of a polynomial preserves `≤`.
 
@@ -35,5 +35,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Foundations/Data/Polynomial/Monotone.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Polynomial/Monotone.lean)
+- [Cslib/Foundations/Data/Polynomial/Monotone.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Polynomial/Monotone.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Data.Polynomial.Monotone.json)

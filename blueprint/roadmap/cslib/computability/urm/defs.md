@@ -7,7 +7,7 @@ proof: formalized
 
 # URM Core Definitions
 
-`Cslib.Computability.URM.Defs`, in [Cslib/Computability/URM/Defs.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean), by Jesse Alama.
+`Cslib.Computability.URM.Defs`, in [Cslib/Computability/URM/Defs.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean), by Jesse Alama.
 
 > This file contains the core definitions for Unlimited Register Machines (URMs):
 > instructions, register state, programs, and machine configurations.
@@ -27,7 +27,7 @@ proof: formalized
 
 > ## Instructions
 
-`Cslib.URM.Instr` (inductive type, [line 44](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L44))
+`Cslib.URM.Instr` (inductive type, [line 44](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L44))
 
 > URM instructions.
 > - `Z n`: Set register n to zero
@@ -45,7 +45,7 @@ inductive Instr : Type where
 deriving DecidableEq, Repr
 ```
 
-`Cslib.URM.Instr.readsFrom` (definition, [line 55](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L55))
+`Cslib.URM.Instr.readsFrom` (definition, [line 55](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L55))
 
 > The registers read by an instruction.
 
@@ -53,7 +53,7 @@ deriving DecidableEq, Repr
 def readsFrom : Instr → Finset ℕ
 ```
 
-`Cslib.URM.Instr.writesTo` (definition, [line 63](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L63))
+`Cslib.URM.Instr.writesTo` (definition, [line 63](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L63))
 
 > The register written to by an instruction, if any.
 
@@ -61,7 +61,7 @@ def readsFrom : Instr → Finset ℕ
 def writesTo : Instr → Option ℕ
 ```
 
-`Cslib.URM.Instr.maxRegister` (definition, [line 71](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L71))
+`Cslib.URM.Instr.maxRegister` (definition, [line 71](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L71))
 
 > The maximum register index referenced by an instruction.
 
@@ -69,7 +69,7 @@ def writesTo : Instr → Option ℕ
 def maxRegister : Instr → ℕ
 ```
 
-`Cslib.URM.Instr.shiftJumps` (definition, [line 80](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L80))
+`Cslib.URM.Instr.shiftJumps` (definition, [line 80](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L80))
 
 > Shift all jump targets in an instruction by `offset`.
 > Used when concatenating programs to maintain correct jump destinations.
@@ -78,7 +78,7 @@ def maxRegister : Instr → ℕ
 def shiftJumps (offset : ℕ) : Instr → Instr
 ```
 
-`Cslib.URM.Instr.shiftRegisters` (definition, [line 89](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L89))
+`Cslib.URM.Instr.shiftRegisters` (definition, [line 89](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L89))
 
 > Shift all register references in an instruction by `offset`.
 > Used to isolate register usage when composing programs.
@@ -89,7 +89,7 @@ def shiftRegisters (offset : ℕ) : Instr → Instr
 
 > ## Register Contents
 
-`Cslib.URM.Regs` (abbreviation, [line 103](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L103))
+`Cslib.URM.Regs` (abbreviation, [line 103](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L103))
 
 > Register contents: maps register indices to natural number contents.
 >
@@ -100,7 +100,7 @@ def shiftRegisters (offset : ℕ) : Instr → Instr
 abbrev Regs
 ```
 
-`Cslib.URM.Regs.zero` (definition, [line 109](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L109))
+`Cslib.URM.Regs.zero` (definition, [line 109](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L109))
 
 > The zero registers where all registers contain 0.
 
@@ -108,7 +108,7 @@ abbrev Regs
 def zero : Regs
 ```
 
-`Cslib.URM.Regs.read` (definition, [line 113](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L113))
+`Cslib.URM.Regs.read` (definition, [line 113](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L113))
 
 > Read the contents of register n.
 
@@ -116,7 +116,7 @@ def zero : Regs
 def read (σ : Regs) (n : ℕ) : ℕ
 ```
 
-`Cslib.URM.Regs.write` (definition, [line 117](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L117))
+`Cslib.URM.Regs.write` (definition, [line 117](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L117))
 
 > Write value v to register n.
 
@@ -124,7 +124,7 @@ def read (σ : Regs) (n : ℕ) : ℕ
 def write (σ : Regs) (n : ℕ) (v : ℕ) : Regs
 ```
 
-`Cslib.URM.Regs.ofInputs` (definition, [line 122](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L122))
+`Cslib.URM.Regs.ofInputs` (definition, [line 122](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L122))
 
 > Initialize registers with input values in registers 0, 1, ..., k-1.
 > Registers beyond the inputs are initialized to 0.
@@ -133,7 +133,7 @@ def write (σ : Regs) (n : ℕ) (v : ℕ) : Regs
 def ofInputs (inputs : List ℕ) : Regs
 ```
 
-`Cslib.URM.Regs.output` (definition, [line 126](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L126))
+`Cslib.URM.Regs.output` (definition, [line 126](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L126))
 
 > Extract output from register 0.
 
@@ -143,7 +143,7 @@ def output (σ : Regs) : ℕ
 
 > ## Programs
 
-`Cslib.URM.Program` (abbreviation, [line 133](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L133))
+`Cslib.URM.Program` (abbreviation, [line 133](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L133))
 
 > A URM program is a list of instructions.
 
@@ -151,7 +151,7 @@ def output (σ : Regs) : ℕ
 abbrev Program
 ```
 
-`Cslib.URM.Program.maxRegister` (definition, [line 139](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L139))
+`Cslib.URM.Program.maxRegister` (definition, [line 139](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L139))
 
 > The maximum register index referenced by any instruction in the program.
 
@@ -159,7 +159,7 @@ abbrev Program
 def maxRegister (p : Program) : ℕ
 ```
 
-`Cslib.URM.Program.shiftJumps` (definition, [line 146](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L146))
+`Cslib.URM.Program.shiftJumps` (definition, [line 146](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L146))
 
 > Shift all jump targets in a program by `offset`.
 > Used when concatenating programs: the second program's jumps must be adjusted
@@ -169,7 +169,7 @@ def maxRegister (p : Program) : ℕ
 def shiftJumps (p : Program) (offset : ℕ) : Program
 ```
 
-`Cslib.URM.Program.shiftRegisters` (definition, [line 152](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L152))
+`Cslib.URM.Program.shiftRegisters` (definition, [line 152](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L152))
 
 > Shift all register references in a program by `offset`.
 > Used to isolate register usage when composing programs.
@@ -180,7 +180,7 @@ def shiftRegisters (p : Program) (offset : ℕ) : Program
 
 > ## Machine State
 
-`Cslib.URM.State` (structure, [line 160](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L160))
+`Cslib.URM.State` (structure, [line 160](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L160))
 
 > Machine state: program counter (0-indexed) and register contents.
 
@@ -192,7 +192,7 @@ structure State where
   regs : Regs
 ```
 
-`Cslib.URM.State.init` (definition, [line 171](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L171))
+`Cslib.URM.State.init` (definition, [line 171](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L171))
 
 > Initial state for a program with given inputs.
 > The program counter starts at 0, and inputs are loaded into registers 0, 1, ....
@@ -201,7 +201,7 @@ structure State where
 def init (inputs : List ℕ) : State
 ```
 
-`Cslib.URM.State.isHalted` (definition, [line 175](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean#L175))
+`Cslib.URM.State.isHalted` (definition, [line 175](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean#L175))
 
 > A state is halted if the program counter is at or beyond the program length.
 
@@ -215,5 +215,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Computability/URM/Defs.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Defs.lean)
+- [Cslib/Computability/URM/Defs.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/Defs.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.URM.Defs.json)

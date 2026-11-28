@@ -7,12 +7,12 @@ proof: formalized
 
 # Semantic circuit normalization
 
-`Cslib.Computability.Circuit.Normalization`, in [Cslib/Computability/Circuit/Normalization.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Normalization.lean), by Samuel Schlesinger.
+`Cslib.Computability.Circuit.Normalization`, in [Cslib/Computability/Circuit/Normalization.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Normalization.lean), by Samuel Schlesinger.
 
 > Merging gates that compute the same function preserves wire values and does not
 > increase circuit size.
 
-`Cslib.Circuits.Program.Irredundant` (definition, [line 25](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Normalization.lean#L25))
+`Cslib.Circuits.Program.Irredundant` (definition, [line 25](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Normalization.lean#L25))
 
 > Distinct gates compute distinct scalar functions. Gates may still duplicate input
 > functions or be unused by the outputs.
@@ -21,7 +21,7 @@ proof: formalized
 def Program.Irredundant (p : Program σ n g) (i : Interpretation σ U) : Prop
 ```
 
-`Cslib.Circuits.Circuit.Irredundant` (definition, [line 29](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Normalization.lean#L29))
+`Cslib.Circuits.Circuit.Irredundant` (definition, [line 29](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Normalization.lean#L29))
 
 > A circuit is irredundant when its internal gates compute pairwise distinct functions.
 
@@ -29,7 +29,7 @@ def Program.Irredundant (p : Program σ n g) (i : Interpretation σ U) : Prop
 def Circuit.Irredundant (c : Circuit σ n m) (i : Interpretation σ U) : Prop
 ```
 
-`Cslib.Circuits.Program.exists_irredundant` (theorem, [line 33](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Normalization.lean#L33))
+`Cslib.Circuits.Program.exists_irredundant` (theorem, [line 33](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Normalization.lean#L33))
 
 > A program can be rebuilt with distinct gate functions, preserving every wire's value.
 
@@ -40,7 +40,7 @@ theorem Program.exists_irredundant (p : Program σ n g) (i : Interpretation σ U
         q.Irredundant i
 ```
 
-`Cslib.Circuits.Circuit.exists_irredundant` (theorem, [line 63](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Normalization.lean#L63))
+`Cslib.Circuits.Circuit.exists_irredundant` (theorem, [line 63](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Normalization.lean#L63))
 
 > Every circuit has an equivalent circuit with distinct gate functions and no more gates.
 
@@ -55,5 +55,5 @@ theorem Circuit.exists_irredundant (c : Circuit σ n m) (i : Interpretation σ U
 
 ## Sources
 
-- [Cslib/Computability/Circuit/Normalization.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Normalization.lean)
+- [Cslib/Computability/Circuit/Normalization.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Normalization.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Circuit.Normalization.json)

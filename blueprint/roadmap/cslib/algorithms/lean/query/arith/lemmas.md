@@ -7,7 +7,7 @@ proof: formalized
 
 # Complex Multiplication: Correctness and Cost Analysis
 
-`Cslib.Algorithms.Lean.Query.Arith.Lemmas`, in [Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean), by Kim Morrison.
+`Cslib.Algorithms.Lean.Query.Arith.Lemmas`, in [Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean), by Kim Morrison.
 
 > A simple example showing how to use `FreeM.cost` with variable/parametrized query costs.
 >
@@ -19,14 +19,14 @@ proof: formalized
 
 > ## Correctness
 
-`Cslib.Query.complexMulNaive_eval_honest` (theorem, [line 33](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean#L33))
+`Cslib.Query.complexMulNaive_eval_honest` (theorem, [line 33](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean#L33))
 
 ```lean
 theorem complexMulNaive_eval_honest [Add α] [Sub α] [Mul α] (a b c d : α) :
     (complexMulNaive a b c d).eval ArithQuery.honest = (a * c - b * d, a * d + b * c)
 ```
 
-`Cslib.Query.complexMulGauss_eval_honest` (theorem, [line 37](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean#L37))
+`Cslib.Query.complexMulGauss_eval_honest` (theorem, [line 37](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean#L37))
 
 ```lean
 theorem complexMulGauss_eval_honest [CommRing α] (a b c d : α) :
@@ -35,7 +35,7 @@ theorem complexMulGauss_eval_honest [CommRing α] (a b c d : α) :
 
 > ## Exact cost counts
 
-`Cslib.Query.complexMulNaive_cost` (theorem, [line 44](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean#L44))
+`Cslib.Query.complexMulNaive_cost` (theorem, [line 44](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean#L44))
 
 ```lean
 theorem complexMulNaive_cost (oracle : {ι : Type} → ArithQuery α ι → ι)
@@ -44,7 +44,7 @@ theorem complexMulNaive_cost (oracle : {ι : Type} → ArithQuery α ι → ι)
       4 * c_mul + 2 * c_add
 ```
 
-`Cslib.Query.complexMulGauss_cost` (theorem, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean#L51))
+`Cslib.Query.complexMulGauss_cost` (theorem, [line 51](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean#L51))
 
 ```lean
 theorem complexMulGauss_cost (oracle : {ι : Type} → ArithQuery α ι → ι)
@@ -55,7 +55,7 @@ theorem complexMulGauss_cost (oracle : {ι : Type} → ArithQuery α ι → ι)
 
 > ## Crossover: Gauss beats naive when multiplication costs at least 3× addition
 
-`Cslib.Query.gauss_le_naive` (theorem, [line 60](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean#L60))
+`Cslib.Query.gauss_le_naive` (theorem, [line 60](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean#L60))
 
 ```lean
 theorem gauss_le_naive (oracle : {ι : Type} → ArithQuery α ι → ι)
@@ -64,7 +64,7 @@ theorem gauss_le_naive (oracle : {ι : Type} → ArithQuery α ι → ι)
       (complexMulNaive a b c d).cost oracle (ArithQuery.weight c_add c_mul)
 ```
 
-`Cslib.Query.gauss_le_naive_iff` (theorem, [line 67](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean#L67))
+`Cslib.Query.gauss_le_naive_iff` (theorem, [line 67](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean#L67))
 
 ```lean
 theorem gauss_le_naive_iff (oracle : {ι : Type} → ArithQuery α ι → ι)
@@ -81,5 +81,5 @@ theorem gauss_le_naive_iff (oracle : {ι : Type} → ArithQuery α ι → ι)
 
 ## Sources
 
-- [Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean)
+- [Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/Query/Arith/Lemmas.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Algorithms.Lean.Query.Arith.Lemmas.json)

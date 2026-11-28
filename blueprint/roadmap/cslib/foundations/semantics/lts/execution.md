@@ -7,7 +7,7 @@ proof: formalized
 
 # Finite executions of LTS
 
-`Cslib.Foundations.Semantics.LTS.Execution`, in [Cslib/Foundations/Semantics/LTS/Execution.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean), by Fabrizio Montesi, Ching-Tsun Chou, Thomas Waring.
+`Cslib.Foundations.Semantics.LTS.Execution`, in [Cslib/Foundations/Semantics/LTS/Execution.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean), by Fabrizio Montesi, Ching-Tsun Chou, Thomas Waring.
 
 > A finite execution of `lts : LTS State Label`, a proposition `lts.Execution s μs t ss`, which says
 > that `lts` can transition from `s` to `t` through `ss` using the transition labels `μ`. That is,
@@ -17,7 +17,7 @@ proof: formalized
 > We define `Cslib.LTS.Execution` as an inductive proposition, which is equivalent to the definition
 > in terms of indicies: see `Cslib.LTS.Execution.mk` and `Cslib.LTS.execution_iff_index`.
 
-`Cslib.LTS.Execution` (inductive type, [line 42](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L42))
+`Cslib.LTS.Execution` (inductive type, [line 42](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L42))
 
 > `Execution` extends `MTr` by providing the intermediate states of a multistep transition:
 > `lts.Execution s₁ μs s₂ ss` means that `lts` can transition from `s₁` to `s₂` through `ss` using
@@ -41,13 +41,13 @@ inductive Execution (lts : LTS State Label) :
       lts.Execution r (μ :: μs) t (r :: ss)
 ```
 
-`Cslib.LTS.Execution.of_tr` (theorem, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L53))
+`Cslib.LTS.Execution.of_tr` (theorem, [line 53](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L53))
 
 ```lean
 theorem of_tr (h : lts.Tr s μ t) : lts.Execution s [μ] t [s, t]
 ```
 
-`Cslib.LTS.Execution.length` (theorem, [line 59](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L59))
+`Cslib.LTS.Execution.length` (theorem, [line 59](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L59))
 
 > The lengths of `μs` and `ss` are constrained by the fact that each label `μ ∈ μs` represents
 > a transition between two states in `ss`.
@@ -56,14 +56,14 @@ theorem of_tr (h : lts.Tr s μ t) : lts.Execution s [μ] t [s, t]
 theorem length (h : lts.Execution s μs t ss) : ss.length = μs.length + 1
 ```
 
-`Cslib.LTS.Execution.length'` (theorem, [line 62](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L62))
+`Cslib.LTS.Execution.length'` (theorem, [line 62](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L62))
 
 ```lean
 theorem length' (h : lts.Execution s μs t ss) :
   μs.length = ss.length - 1
 ```
 
-`Cslib.LTS.Execution.length_ss_pos` (theorem, [line 67](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L67))
+`Cslib.LTS.Execution.length_ss_pos` (theorem, [line 67](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L67))
 
 > Transitions have positive length.
 
@@ -71,7 +71,7 @@ theorem length' (h : lts.Execution s μs t ss) :
 theorem length_ss_pos (h : lts.Execution s μs t ss) : 0 < ss.length
 ```
 
-`Cslib.LTS.Execution.ss_ne_nil` (theorem, [line 72](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L72))
+`Cslib.LTS.Execution.ss_ne_nil` (theorem, [line 72](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L72))
 
 > Every execution has at least one intermediate state.
 
@@ -79,13 +79,13 @@ theorem length_ss_pos (h : lts.Execution s μs t ss) : 0 < ss.length
 theorem ss_ne_nil (h : lts.Execution s μs t ss) : ss ≠ []
 ```
 
-`Cslib.LTS.Execution.nonEmpty_states` (alias, [line 75](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L75))
+`Cslib.LTS.Execution.nonEmpty_states` (alias, [line 75](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L75))
 
 ```lean
 alias nonEmpty_states
 ```
 
-`Cslib.LTS.Execution.head` (theorem, [line 78](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L78))
+`Cslib.LTS.Execution.head` (theorem, [line 78](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L78))
 
 > `s` is the first state of the execution.
 
@@ -93,7 +93,7 @@ alias nonEmpty_states
 theorem head (h : lts.Execution s μs t ss) : ss.head h.ss_ne_nil = s
 ```
 
-`Cslib.LTS.Execution.start` (theorem, [line 82](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L82))
+`Cslib.LTS.Execution.start` (theorem, [line 82](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L82))
 
 > Alternative accessor for `Cslib.LTS.Execution.head`.
 
@@ -101,7 +101,7 @@ theorem head (h : lts.Execution s μs t ss) : ss.head h.ss_ne_nil = s
 theorem start (h : lts.Execution s μs t ss) : ss[0]'(h.length_ss_pos) = s
 ```
 
-`Cslib.LTS.Execution.getLast` (theorem, [line 87](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L87))
+`Cslib.LTS.Execution.getLast` (theorem, [line 87](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L87))
 
 > `t` is the last state of the execution.
 
@@ -110,7 +110,7 @@ theorem getLast (h : lts.Execution s μs t ss) :
     ss.getLast h.ss_ne_nil = t
 ```
 
-`Cslib.LTS.Execution.last` (theorem, [line 95](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L95))
+`Cslib.LTS.Execution.last` (theorem, [line 95](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L95))
 
 > Alternative accessor for `Cslib.LTS.Execution.getLast`.
 
@@ -119,7 +119,7 @@ theorem last (h : lts.Execution s μs t ss) :
     ss[ss.length - 1]'(by lia [h.length_ss_pos]) = t
 ```
 
-`Cslib.LTS.Execution.last'` (theorem, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L101))
+`Cslib.LTS.Execution.last'` (theorem, [line 101](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L101))
 
 > Alternative accessor for `Cslib.LTS.Execution.getLast`.
 
@@ -128,7 +128,7 @@ theorem last' (h : lts.Execution s μs t ss) :
   ss[μs.length]'(by grind) = t
 ```
 
-`Cslib.LTS.Execution.trans` (theorem, [line 107](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L107))
+`Cslib.LTS.Execution.trans` (theorem, [line 107](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L107))
 
 > `lts` transitions along the `k`th label in `μs` between the `k`th and `(k + 1)`th states in
 > `ss`.
@@ -138,7 +138,7 @@ theorem trans (h : lts.Execution s μs t ss) (k : ℕ) (hk : k < μs.length) :
     lts.Tr (ss[k]'(by lia [h.length])) μs[k] (ss[k + 1]'(by lia [h.length]))
 ```
 
-`Cslib.LTS.Execution.mk` (theorem, [line 122](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L122))
+`Cslib.LTS.Execution.mk` (theorem, [line 122](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L122))
 
 > Alternative constructor for `Cslib.LTS.Execution`, in terms of the indexed collections of
 > states and labels.
@@ -150,7 +150,7 @@ protected theorem mk {s t : State} {μs : List Label} {ss : List State}
     lts.Execution s μs t ss
 ```
 
-`Cslib.LTS.execution_iff_index` (theorem, [line 141](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L141))
+`Cslib.LTS.execution_iff_index` (theorem, [line 141](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L141))
 
 > The inductive definition of `Cslib.LTS.Execution` is equivalent to that in terms of indices.
 
@@ -161,7 +161,7 @@ theorem _root_.Cslib.LTS.execution_iff_index :
         ∀ k (_ : k < μs.length), lts.Tr ss[k] μs[k] ss[k + 1]
 ```
 
-`Cslib.LTS.Execution.cons_invert` (theorem, [line 148](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L148))
+`Cslib.LTS.Execution.cons_invert` (theorem, [line 148](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L148))
 
 > Deconstruction of executions with `List.cons`.
 
@@ -170,7 +170,7 @@ theorem cons_invert (h : lts.Execution s (μ :: μs) t (s :: ss)) :
     lts.Execution (ss[0]'(by grind)) μs t ss
 ```
 
-`Cslib.LTS.Execution.cons_cons_invert` (theorem, [line 155](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L155))
+`Cslib.LTS.Execution.cons_cons_invert` (theorem, [line 155](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L155))
 
 > Deconstruct a positive-length execution, with a specific value for the second state in the
 > sequence.
@@ -180,7 +180,7 @@ theorem cons_cons_invert (h : lts.Execution r (μ :: μs) t (r' :: s :: ss)) :
     lts.Execution s μs t (s :: ss)
 ```
 
-`Cslib.LTS.Execution.tail_of_length_pos` (theorem, [line 161](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L161))
+`Cslib.LTS.Execution.tail_of_length_pos` (theorem, [line 161](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L161))
 
 > Trim the first state from a positive-length execution.
 
@@ -189,7 +189,7 @@ theorem tail_of_length_pos (he : lts.Execution s μs t ss) (hlen : 0 < μs.lengt
     lts.Execution (ss[1]'(by grind)) μs.tail t ss.tail
 ```
 
-`Cslib.LTS.Execution.of_mTr` (theorem, [line 169](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L169))
+`Cslib.LTS.Execution.of_mTr` (theorem, [line 169](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L169))
 
 > A multistep transition implies the existence of an execution.
 
@@ -198,7 +198,7 @@ theorem of_mTr {lts : LTS State Label} {s : State} {μs : List Label} {t : State
     (h : lts.MTr s μs t) : ∃ ss : List State, lts.Execution s μs t ss
 ```
 
-`Cslib.LTS.Execution.to_mTr` (theorem, [line 180](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L180))
+`Cslib.LTS.Execution.to_mTr` (theorem, [line 180](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L180))
 
 > Converts an execution into a multistep transition.
 
@@ -207,7 +207,7 @@ theorem to_mTr (hex : lts.Execution s μs t ss) :
     lts.MTr s μs t
 ```
 
-`Cslib.LTS.Execution.isChainFromTo` (theorem, [line 188](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L188))
+`Cslib.LTS.Execution.isChainFromTo` (theorem, [line 188](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L188))
 
 > The states visited by an execution form a chain from the initial to the final state
 > in the underlying unlabelled relation.
@@ -217,7 +217,7 @@ theorem isChainFromTo (hex : lts.Execution s μs t ss) :
     ss.IsChainFromTo lts.UnlabelledTr s t
 ```
 
-`Cslib.LTS.Execution.isChain` (theorem, [line 195](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L195))
+`Cslib.LTS.Execution.isChain` (theorem, [line 195](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L195))
 
 > The states visited by an execution form a chain in the underlying unlabelled relation.
 
@@ -226,7 +226,7 @@ theorem isChain (hex : lts.Execution s μs t ss) :
     ss.IsChain lts.UnlabelledTr
 ```
 
-`Cslib.LTS.mTr_iff_execution` (theorem, [line 201](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L201))
+`Cslib.LTS.mTr_iff_execution` (theorem, [line 201](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L201))
 
 > Correspondence of multistep transitions and executions.
 
@@ -235,7 +235,7 @@ theorem _root_.Cslib.LTS.mTr_iff_execution :
     lts.MTr s μs t ↔ ∃ ss : List State, lts.Execution s μs t ss
 ```
 
-`Cslib.LTS.Execution.comp` (theorem, [line 206](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L206))
+`Cslib.LTS.Execution.comp` (theorem, [line 206](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L206))
 
 > The composition of two executions is an execution.
 
@@ -245,7 +245,7 @@ theorem comp {lts : LTS State Label} {s r t : State} {μs₁ μs₂ : List Label
     lts.Execution s (μs₁ ++ μs₂) t (ss₁ ++ ss₂.tail)
 ```
 
-`Cslib.LTS.Execution.take` (theorem, [line 214](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L214))
+`Cslib.LTS.Execution.take` (theorem, [line 214](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L214))
 
 > The states up to `ss[n]` form an execution.
 
@@ -254,7 +254,7 @@ theorem take (he : lts.Execution s μs t ss) (n : ℕ) (hn : n < ss.length) :
     lts.Execution s (μs.take n) ss[n] (ss.take (n + 1))
 ```
 
-`Cslib.LTS.Execution.drop` (theorem, [line 224](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L224))
+`Cslib.LTS.Execution.drop` (theorem, [line 224](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L224))
 
 > The states from `ss[n]` onward form an execution.
 
@@ -263,7 +263,7 @@ theorem drop (he : lts.Execution s μs t ss) (n : ℕ) (hn : n < ss.length) :
     lts.Execution ss[n] (μs.drop n) t (ss.drop n)
 ```
 
-`Cslib.LTS.Execution.split` (theorem, [line 237](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean#L237))
+`Cslib.LTS.Execution.split` (theorem, [line 237](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean#L237))
 
 > Split an execution at an intermediate state `ss[n]`.
 
@@ -280,5 +280,5 @@ theorem split (he : lts.Execution s μs t ss) {n : ℕ} (hn : n < ss.length) :
 
 ## Sources
 
-- [Cslib/Foundations/Semantics/LTS/Execution.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Execution.lean)
+- [Cslib/Foundations/Semantics/LTS/Execution.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/Execution.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.LTS.Execution.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Slices of languages
 
-`Cslib.Computability.Languages.Slice`, in [Cslib/Computability/Languages/Slice.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Slice.lean), by Samuel Schlesinger.
+`Cslib.Computability.Languages.Slice`, in [Cslib/Computability/Languages/Slice.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Slice.lean), by Samuel Schlesinger.
 
 > A language is the union of its slices, one for each word length. The slice at length `n` is a
 > Boolean-valued function of the `n` letters of a word, so it can be handled by models of
@@ -18,7 +18,7 @@ proof: formalized
 > what lets notions defined for Boolean-valued functions, such as circuit complexity, apply to every
 > language rather than only to decidable ones.
 
-`Language.slice` (definition, [line 31](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Slice.lean#L31))
+`Language.slice` (definition, [line 31](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Slice.lean#L31))
 
 > The words of length `n` in `L`, as a Boolean-valued function of their letters.
 
@@ -26,14 +26,14 @@ proof: formalized
 noncomputable def slice (L : Language α) (n : ℕ) : (Fin n → α) → Bool
 ```
 
-`Language.slice_eq_true_iff` (theorem, [line 34](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Slice.lean#L34))
+`Language.slice_eq_true_iff` (theorem, [line 34](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Slice.lean#L34))
 
 ```lean
 theorem slice_eq_true_iff {L : Language α} {n : ℕ} {x : Fin n → α} :
     L.slice n x = true ↔ List.ofFn x ∈ L
 ```
 
-`Language.ofSlices` (definition, [line 39](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Slice.lean#L39))
+`Language.ofSlices` (definition, [line 39](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Slice.lean#L39))
 
 > The language whose slice at each length `n` is `f n`.
 
@@ -41,21 +41,21 @@ theorem slice_eq_true_iff {L : Language α} {n : ℕ} {x : Fin n → α} :
 def ofSlices (f : ∀ n, (Fin n → α) → Bool) : Language α
 ```
 
-`Language.mem_ofSlices` (theorem, [line 42](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Slice.lean#L42))
+`Language.mem_ofSlices` (theorem, [line 42](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Slice.lean#L42))
 
 ```lean
 theorem mem_ofSlices {f : ∀ n, (Fin n → α) → Bool} {w : List α} :
     w ∈ ofSlices f ↔ f w.length (w[·])
 ```
 
-`Language.ofFn_mem_ofSlices` (theorem, [line 45](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Slice.lean#L45))
+`Language.ofFn_mem_ofSlices` (theorem, [line 45](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Slice.lean#L45))
 
 ```lean
 theorem ofFn_mem_ofSlices {f : ∀ n, (Fin n → α) → Bool} {n : ℕ} {x : Fin n → α} :
     .ofFn x ∈ ofSlices f ↔ f n x
 ```
 
-`Language.slice_ofSlices` (theorem, [line 50](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Slice.lean#L50))
+`Language.slice_ofSlices` (theorem, [line 50](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Slice.lean#L50))
 
 ```lean
 theorem slice_ofSlices (f : ∀ n, (Fin n → α) → Bool) (n : ℕ) :
@@ -68,5 +68,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Computability/Languages/Slice.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/Slice.lean)
+- [Cslib/Computability/Languages/Slice.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Languages/Slice.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Languages.Slice.json)

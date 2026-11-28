@@ -7,7 +7,7 @@ proof: formalized
 
 # Commitment Schemes: Information-Theoretic Security
 
-`Cslib.Crypto.Protocols.Commitment.Defs`, in [Cslib/Crypto/Protocols/Commitment/Defs.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Defs.lean), by Samuel Schlesinger.
+`Cslib.Crypto.Protocols.Commitment.Defs`, in [Cslib/Crypto/Protocols/Commitment/Defs.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Defs.lean), by Samuel Schlesinger.
 
 > Hiding and binding for commitment schemes, in their information-theoretic forms
 > ([BonehShoup2023], Section 8.12). Perfect hiding: every message yields the same
@@ -35,7 +35,7 @@ proof: formalized
 > * [D. Boneh, V. Shoup, *A Graduate Course in Applied Cryptography*,
 >   Version 0.6][BonehShoup2023]
 
-`Cslib.Crypto.Protocols.Commitment.Scheme.PerfectlyHiding` (definition, [line 54](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Defs.lean#L54))
+`Cslib.Crypto.Protocols.Commitment.Scheme.PerfectlyHiding` (definition, [line 54](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Defs.lean#L54))
 
 > A scheme is perfectly hiding when every message yields the same commitment
 > distribution, so a commitment reveals nothing about the message as long as its
@@ -45,7 +45,7 @@ proof: formalized
 def PerfectlyHiding (scheme : Scheme Message Commitment Opening) : Prop
 ```
 
-`Cslib.Crypto.Protocols.Commitment.Scheme.StatisticallyHiding` (definition, [line 61](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Defs.lean#L61))
+`Cslib.Crypto.Protocols.Commitment.Scheme.StatisticallyHiding` (definition, [line 61](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Defs.lean#L61))
 
 > A scheme is statistically hiding with error `ε` when the commitment
 > distributions of any two messages are within statistical distance `ε`
@@ -56,7 +56,7 @@ def StatisticallyHiding [Fintype Commitment]
     (scheme : Scheme Message Commitment Opening) (ε : ℝ≥0) : Prop
 ```
 
-`Cslib.Crypto.Protocols.Commitment.Scheme.PerfectlyBinding` (definition, [line 71](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Defs.lean#L71))
+`Cslib.Crypto.Protocols.Commitment.Scheme.PerfectlyBinding` (definition, [line 71](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Defs.lean#L71))
 
 > A scheme is perfectly binding when a commitment can be opened to at most
 > one message: any two accepted openings of the same commitment agree on the
@@ -74,5 +74,5 @@ def PerfectlyBinding (scheme : Scheme Message Commitment Opening) : Prop
 
 ## Sources
 
-- [Cslib/Crypto/Protocols/Commitment/Defs.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Defs.lean)
+- [Cslib/Crypto/Protocols/Commitment/Defs.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Defs.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Crypto.Protocols.Commitment.Defs.json)

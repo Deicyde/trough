@@ -7,7 +7,7 @@ proof: formalized
 
 # Commitment Schemes: Syntax and Correctness
 
-`Cslib.Crypto.Protocols.Commitment.Scheme`, in [Cslib/Crypto/Protocols/Commitment/Scheme.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Scheme.lean), by Samuel Schlesinger.
+`Cslib.Crypto.Protocols.Commitment.Scheme`, in [Cslib/Crypto/Protocols/Commitment/Scheme.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Scheme.lean), by Samuel Schlesinger.
 
 > The syntax of a commitment scheme ([BonehShoup2023], Section 8.12): committing
 > to a message samples a commitment-opening pair `(c, o)`, verification of a
@@ -30,7 +30,7 @@ proof: formalized
 > * [D. Boneh, V. Shoup, *A Graduate Course in Applied Cryptography*,
 >   Version 0.6][BonehShoup2023]
 
-`Cslib.Crypto.Protocols.Commitment.Scheme` (structure, [line 49](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Scheme.lean#L49))
+`Cslib.Crypto.Protocols.Commitment.Scheme` (structure, [line 49](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Scheme.lean#L49))
 
 > A noninteractive, unkeyed commitment scheme over message, commitment, and
 > opening types ([BonehShoup2023], Section 8.12).
@@ -53,7 +53,7 @@ structure Scheme (Message Commitment Opening : Type*) where
       verify message commitment opening = true
 ```
 
-`Cslib.Crypto.Protocols.Commitment.Scheme.commitmentDist` (definition, [line 64](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Scheme.lean#L64))
+`Cslib.Crypto.Protocols.Commitment.Scheme.commitmentDist` (definition, [line 64](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Scheme.lean#L64))
 
 > The public commitment distribution obtained by forgetting the opening.
 
@@ -62,7 +62,7 @@ noncomputable def commitmentDist (scheme : Scheme Message Commitment Opening)
     (message : Message) : PMF Commitment
 ```
 
-`Cslib.Crypto.Protocols.Commitment.Scheme.mem_support_commitmentDist_iff` (theorem, [line 70](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Scheme.lean#L70))
+`Cslib.Crypto.Protocols.Commitment.Scheme.mem_support_commitmentDist_iff` (theorem, [line 70](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Scheme.lean#L70))
 
 > A commitment lies in the public distribution's support exactly when some
 > opening makes the corresponding pair an honest possible output.
@@ -75,7 +75,7 @@ theorem mem_support_commitmentDist_iff
       ∃ opening, (commitment, opening) ∈ (scheme.commit message).support
 ```
 
-`Cslib.Crypto.Protocols.Commitment.Scheme.Accepts` (definition, [line 78](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Scheme.lean#L78))
+`Cslib.Crypto.Protocols.Commitment.Scheme.Accepts` (definition, [line 78](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Scheme.lean#L78))
 
 > The proposition that an opening is accepted for a commitment and message.
 
@@ -84,7 +84,7 @@ def Accepts (scheme : Scheme Message Commitment Opening) (message : Message)
     (commitment : Commitment) (opening : Opening) : Prop
 ```
 
-`Cslib.Crypto.Protocols.Commitment.Scheme.accepts_of_mem_support` (theorem, [line 83](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Scheme.lean#L83))
+`Cslib.Crypto.Protocols.Commitment.Scheme.accepts_of_mem_support` (theorem, [line 83](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Scheme.lean#L83))
 
 > Every pair in the support of an honest commitment is accepted.
 
@@ -95,7 +95,7 @@ theorem accepts_of_mem_support (scheme : Scheme Message Commitment Opening)
     scheme.Accepts message commitment opening
 ```
 
-`Cslib.Crypto.Protocols.Commitment.Scheme.ofPure` (definition, [line 90](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Scheme.lean#L90))
+`Cslib.Crypto.Protocols.Commitment.Scheme.ofPure` (definition, [line 90](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Scheme.lean#L90))
 
 > Build a commitment scheme from a deterministic commitment generation.
 
@@ -112,5 +112,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Crypto/Protocols/Commitment/Scheme.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/Commitment/Scheme.lean)
+- [Cslib/Crypto/Protocols/Commitment/Scheme.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/Commitment/Scheme.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Crypto.Protocols.Commitment.Scheme.json)

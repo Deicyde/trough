@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "8b510d014295ed2c2334a379a7c96561a1603dc4",
+ "module": "Cslib.Languages.Mech.Common.Expr.Basic",
+ "file": "Cslib/Languages/Mech/Common/Expr/Basic.lean",
+ "public": [
+  {"name": "Cslib.Mech.LocalSig.Expr", "kind": "inductive", "line": 20},
+  {"name": "Cslib.Mech.LocalSig.Expr.map", "kind": "def", "line": 36},
+  {"name": "Cslib.Mech.LocalSig.Expr.map₂", "kind": "def", "line": 40},
+  {"name": "Cslib.Mech.LocalSig.Expr.varNames", "kind": "def", "line": 50},
+  {"name": "Cslib.Mech.LocalSig.Expr.varNames_val", "kind": "theorem", "line": 57},
+  {"name": "Cslib.Mech.LocalSig.Expr.varNames_var", "kind": "theorem", "line": 60},
+  {"name": "Cslib.Mech.LocalSig.Expr.varNames_pair", "kind": "theorem", "line": 64},
+  {"name": "Cslib.Mech.LocalSig.Expr.varNames_call", "kind": "theorem", "line": 68},
+  {"name": "Cslib.Mech.LocalSig.Expr.varNames_map", "kind": "theorem", "line": 72},
+  {"name": "Cslib.Mech.LocalSig.Expr.Eval", "kind": "inductive", "line": 77},
+  {"name": "Cslib.Mech.LocalSig.Expr.Eval.var_iff", "kind": "theorem", "line": 91},
+  {"name": "Cslib.Mech.LocalSig.Expr.Eval.call_iff", "kind": "theorem", "line": 98},
+  {"name": "Cslib.Mech.LocalSig.Expr.Eval.map_iff", "kind": "theorem", "line": 109},
+  {"name": "Cslib.Mech.LocalSig.Expr.Eval.of_agreeOn", "kind": "theorem", "line": 114},
+  {"name": "Cslib.Mech.LocalSig.Expr.Eval.congr", "kind": "theorem", "line": 124},
+  {"name": "Cslib.Mech.Sig.Expr", "kind": "abbrev", "line": 133}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

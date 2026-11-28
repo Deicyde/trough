@@ -7,7 +7,7 @@ proof: formalized
 
 # Deterministic Multi-Tape Turing Machines
 
-`Cslib.Computability.Machines.Turing.MultiTape.Deterministic`, in [Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean), by Christian Reitwiessner, Samuel Schlesinger, Aviv Bar Natan.
+`Cslib.Computability.Machines.Turing.MultiTape.Deterministic`, in [Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean), by Christian Reitwiessner, Samuel Schlesinger, Aviv Bar Natan.
 
 > A deterministic Turing machine is a nondeterministic machine whose transition relation has exactly
 > one action for every combination of state and symbols read. From the transition relation it derives
@@ -38,7 +38,7 @@ proof: formalized
 > * `DecidableInTimeAndSpace`: a proof that a TM decides a language within a certain time
 >     and space bound.
 
-`Turing.MultiTapeNTM.IsDeterministic` (definition, [line 57](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L57))
+`Turing.MultiTapeNTM.IsDeterministic` (definition, [line 57](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L57))
 
 > Every state and tuple of read symbols is related to exactly one action by `ntm`'s transition
 > relation.
@@ -47,7 +47,7 @@ proof: formalized
 def MultiTapeNTM.IsDeterministic (ntm : MultiTapeNTM k Symbol State) : Prop
 ```
 
-`Turing.MultiTapeTM` (structure, [line 67](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L67))
+`Turing.MultiTapeTM` (structure, [line 67](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L67))
 
 > A multi-tape Turing machine with `k` work tapes over the alphabet of `Option Symbol` (where `none`
 > is the blank tape symbol). Note that it is not required that `Symbol` or `State` are finite
@@ -62,7 +62,7 @@ structure MultiTapeTM (k : ℕ) (Symbol State : Type*)
   deterministic : toMultiTapeNTM.IsDeterministic
 ```
 
-`Turing.MultiTapeTM.tr` (definition, [line 81](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L81))
+`Turing.MultiTapeTM.tr` (definition, [line 81](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L81))
 
 > The unique action related to the given state and read symbols by `Tr`.
 
@@ -71,7 +71,7 @@ noncomputable def tr (tm : MultiTapeTM k Symbol State) (q : State) (input : Opti
     (work : Fin k → Option Symbol) : Action k Symbol State
 ```
 
-`Turing.MultiTapeTM.tr_iff` (lemma, [line 87](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L87))
+`Turing.MultiTapeTM.tr_iff` (lemma, [line 87](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L87))
 
 > `Tr` relates a state and read symbols to an action exactly when `tr` returns that action.
 
@@ -80,7 +80,7 @@ lemma tr_iff {q : State} {input : Option Symbol} {work : Fin k → Option Symbol
     {action : Action k Symbol State} : tm.Tr q input work action ↔ tm.tr q input work = action
 ```
 
-`Turing.MultiTapeTM.ofTr` (definition, [line 93](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L93))
+`Turing.MultiTapeTM.ofTr` (definition, [line 93](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L93))
 
 > Construct a deterministic machine from an initial state and transition function.
 
@@ -90,7 +90,7 @@ def ofTr (q₀ : State)
     MultiTapeTM k Symbol State
 ```
 
-`Turing.MultiTapeTM.q₀_ofTr` (lemma, [line 102](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L102))
+`Turing.MultiTapeTM.q₀_ofTr` (lemma, [line 102](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L102))
 
 > The initial state of `ofTr` is the supplied one.
 
@@ -100,7 +100,7 @@ lemma q₀_ofTr (q₀ : State)
     (ofTr q₀ tr).q₀ = q₀
 ```
 
-`Turing.MultiTapeTM.tr_ofTr` (lemma, [line 109](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L109))
+`Turing.MultiTapeTM.tr_ofTr` (lemma, [line 109](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L109))
 
 > Extracting the transition of `ofTr` recovers the supplied function.
 
@@ -111,7 +111,7 @@ lemma tr_ofTr (q₀ : State)
     (ofTr q₀ tr).tr q input work = tr q input work
 ```
 
-`Turing.MultiTapeTM.adaptedTr` (definition, [line 117](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L117))
+`Turing.MultiTapeTM.adaptedTr` (definition, [line 117](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L117))
 
 > The transitions of `tm` performed through `adapter`: it reads what `tm` reads through `adapter`
 > and performs the adaptation of the action of `tm`.
@@ -122,7 +122,7 @@ noncomputable def adaptedTr {k' : ℕ} {State' : Type*} (tm : MultiTapeTM k Symb
     (work : Fin k' → Option Symbol) : Action k' Symbol State'
 ```
 
-`Turing.MultiTapeTM.adapt` (definition, [line 127](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L127))
+`Turing.MultiTapeTM.adapt` (definition, [line 127](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L127))
 
 > `tm` run through `adapter`, a `MultiTapeNTM.Adapter`: the adapter computes what `tm` reads
 > from the symbols under the heads of the new machine, and gives the action of the new machine
@@ -134,7 +134,7 @@ noncomputable def adapt {k' : ℕ} (tm : MultiTapeTM k Symbol State)
     (adapter : MultiTapeNTM.Adapter k k' Symbol State State) : MultiTapeTM k' Symbol State
 ```
 
-`Turing.MultiTapeTM.follows_adapt` (lemma, [line 132](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L132))
+`Turing.MultiTapeTM.follows_adapt` (lemma, [line 132](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L132))
 
 > `tm.adapt adapter` follows `tm`.
 
@@ -143,7 +143,7 @@ lemma follows_adapt {k' : ℕ} {adapter : MultiTapeNTM.Adapter k k' Symbol State
     (tm.adapt adapter).Follows tm id adapter
 ```
 
-`Turing.MultiTapeTM.combine` (definition, [line 140](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L140))
+`Turing.MultiTapeTM.combine` (definition, [line 140](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L140))
 
 > `tm₀` and `tm₁` combined into one machine on their shared tapes, which starts in `q₀`: in a
 > state `inl q` it performs the transition of `tm₀` in `q`, and in `inr q` that of `tm₁`. The maps
@@ -157,7 +157,7 @@ noncomputable def combine {State₀ State₁ : Type*} (tm₀ : MultiTapeTM k Sym
     MultiTapeTM k Symbol (State₀ ⊕ State₁)
 ```
 
-`Turing.MultiTapeTM.handOver` (definition, [line 148](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L148))
+`Turing.MultiTapeTM.handOver` (definition, [line 148](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L148))
 
 > Where the steps of a first machine lead when it runs in its own states: halting hands over to
 > the second machine in its state `q₁`.
@@ -167,21 +167,21 @@ def handOver {State₀ State₁ : Type*} (q₁ : State₁) (state : Option State
     Option (State₀ ⊕ State₁)
 ```
 
-`Turing.MultiTapeTM.handOver_some` (lemma, [line 152](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L152))
+`Turing.MultiTapeTM.handOver_some` (lemma, [line 152](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L152))
 
 ```lean
 lemma handOver_some {State₀ State₁ : Type*} (q₁ : State₁) (q : State₀) :
     handOver q₁ (some q) = some (.inl q)
 ```
 
-`Turing.MultiTapeTM.handOver_none` (lemma, [line 155](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L155))
+`Turing.MultiTapeTM.handOver_none` (lemma, [line 155](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L155))
 
 ```lean
 lemma handOver_none {State₀ State₁ : Type*} (q₁ : State₁) :
     handOver (State₀ := State₀) q₁ none = some (.inr q₁)
 ```
 
-`Turing.MultiTapeTM.follows_combine_left` (lemma, [line 165](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L165))
+`Turing.MultiTapeTM.follows_combine_left` (lemma, [line 165](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L165))
 
 > In its states `inl q`, the combined machine follows `tm₀`, its steps leading along `next₀`.
 
@@ -189,7 +189,7 @@ lemma handOver_none {State₀ State₁ : Type*} (q₁ : State₁) :
 lemma follows_combine_left : (combine tm₀ tm₁ next₀ next₁ q₀).Follows tm₀ .inl (.mapState next₀)
 ```
 
-`Turing.MultiTapeTM.follows_combine_right` (lemma, [line 169](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L169))
+`Turing.MultiTapeTM.follows_combine_right` (lemma, [line 169](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L169))
 
 > In its states `inr q`, the combined machine follows `tm₁`, its steps leading along `next₁`.
 
@@ -197,7 +197,7 @@ lemma follows_combine_left : (combine tm₀ tm₁ next₀ next₁ q₀).Follows 
 lemma follows_combine_right : (combine tm₀ tm₁ next₀ next₁ q₀).Follows tm₁ .inr (.mapState next₁)
 ```
 
-`Turing.MultiTapeTM.combineLeftHom` (definition, [line 175](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L175))
+`Turing.MultiTapeTM.combineLeftHom` (definition, [line 175](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L175))
 
 > If `next₀` keeps the live states of `tm₀` in `tm₀`, the combined machine mirrors the running
 > steps of `tm₀`, its states relabeled along `next₀`.
@@ -207,7 +207,7 @@ noncomputable def combineLeftHom {input : List Symbol} (h : ∀ q, next₀ (some
     (tm₀.runningStepRel input).Hom ((combine tm₀ tm₁ next₀ next₁ q₀).stepRel input)
 ```
 
-`Turing.MultiTapeTM.combineRightHom` (definition, [line 182](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L182))
+`Turing.MultiTapeTM.combineRightHom` (definition, [line 182](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L182))
 
 > If the steps of `tm₁` stay in `tm₁`, the combined machine mirrors them.
 
@@ -222,7 +222,7 @@ noncomputable def combineRightHom {input : List Symbol} :
 > gives the configuration reached after a number of steps. Configurations themselves are defined in
 > `Cslib.Computability.Machines.Turing.MultiTape.Configuration`.
 
-`Turing.MultiTapeTM.step` (definition, [line 203](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L203))
+`Turing.MultiTapeTM.step` (definition, [line 203](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L203))
 
 > The unique successor configuration related to `cfg` by the inherited step relation.
 
@@ -230,7 +230,7 @@ noncomputable def combineRightHom {input : List Symbol} :
 noncomputable def step (cfg : Cfg k Symbol State input) : Cfg k Symbol State input
 ```
 
-`Turing.MultiTapeTM.step_iff` (lemma, [line 208](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L208))
+`Turing.MultiTapeTM.step_iff` (lemma, [line 208](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L208))
 
 > `Step` relates `c` to `c'` exactly when `step c = c'`.
 
@@ -238,7 +238,7 @@ noncomputable def step (cfg : Cfg k Symbol State input) : Cfg k Symbol State inp
 lemma step_iff {c c' : Cfg k Symbol State input} : tm.Step c c' ↔ tm.step c = c'
 ```
 
-`Turing.MultiTapeTM.step_of_state` (lemma, [line 213](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L213))
+`Turing.MultiTapeTM.step_of_state` (lemma, [line 213](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L213))
 
 > A running configuration takes the action selected by the transition function.
 
@@ -247,7 +247,7 @@ lemma step_of_state {cfg : Cfg k Symbol State input} {q : State} (h : cfg.state 
     tm.step cfg = (tm.tr q cfg.inputSymbol cfg.workTapeSymbols).apply cfg
 ```
 
-`Turing.MultiTapeTM.step_inputPos_of_state` (lemma, [line 219](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L219))
+`Turing.MultiTapeTM.step_inputPos_of_state` (lemma, [line 219](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L219))
 
 > The input head after a live step.
 
@@ -258,7 +258,7 @@ public lemma step_inputPos_of_state {cfg : Cfg k Symbol State input} {q : State}
       moveInputPos cfg.inputPos (tm.tr q cfg.inputSymbol cfg.workTapeSymbols).inputTape
 ```
 
-`Turing.MultiTapeTM.step_workTapes_of_state` (lemma, [line 226](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L226))
+`Turing.MultiTapeTM.step_workTapes_of_state` (lemma, [line 226](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L226))
 
 > A work tape after a live step.
 
@@ -271,7 +271,7 @@ public lemma step_workTapes_of_state {cfg : Cfg k Symbol State input} {q : State
       | some s => Function.update (cfg.workTapes i) (cfg.workTapePos i) s
 ```
 
-`Turing.MultiTapeTM.step_workTapePos_of_state` (lemma, [line 236](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L236))
+`Turing.MultiTapeTM.step_workTapePos_of_state` (lemma, [line 236](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L236))
 
 > A work tape head after a live step.
 
@@ -282,14 +282,14 @@ public lemma step_workTapePos_of_state {cfg : Cfg k Symbol State input} {q : Sta
       cfg.workTapePos i + ((tm.tr q cfg.inputSymbol cfg.workTapeSymbols).workTapes i).2
 ```
 
-`Turing.MultiTapeTM.step_of_halt` (lemma, [line 244](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L244))
+`Turing.MultiTapeTM.step_of_halt` (lemma, [line 244](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L244))
 
 ```lean
 lemma step_of_halt {cfg : Cfg k Symbol State input} (h : cfg.state = none) :
     tm.step cfg = cfg
 ```
 
-`Turing.MultiTapeNTM.RunPath.ofDeterministic` (definition, [line 255](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L255))
+`Turing.MultiTapeNTM.RunPath.ofDeterministic` (definition, [line 255](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L255))
 
 > The path of the first `t` steps from `cfg`.
 
@@ -298,7 +298,7 @@ noncomputable def RunPath.ofDeterministic (tm : MultiTapeTM k Symbol State)
     (cfg : Cfg k Symbol State input) (t : ℕ) : tm.RunPath input
 ```
 
-`Turing.MultiTapeNTM.RunPath.eq_ofDeterministic` (lemma, [line 262](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L262))
+`Turing.MultiTapeNTM.RunPath.eq_ofDeterministic` (lemma, [line 262](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L262))
 
 > Every deterministic run path is the canonical path from its head for its duration.
 
@@ -307,7 +307,7 @@ lemma RunPath.eq_ofDeterministic (p : tm.RunPath input) :
     p = .ofDeterministic tm p.head p.time
 ```
 
-`Turing.MultiTapeNTM.ComputationPath.ofDeterministic` (definition, [line 271](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L271))
+`Turing.MultiTapeNTM.ComputationPath.ofDeterministic` (definition, [line 271](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L271))
 
 > The path of the first `t` steps on `input`, starting at the initial configuration.
 
@@ -316,7 +316,7 @@ noncomputable def ComputationPath.ofDeterministic (tm : MultiTapeTM k Symbol Sta
     (input : List Symbol) (t : ℕ) : tm.ComputationPath input
 ```
 
-`Turing.MultiTapeNTM.ComputationPath.eq_ofDeterministic` (lemma, [line 276](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L276))
+`Turing.MultiTapeNTM.ComputationPath.eq_ofDeterministic` (lemma, [line 276](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L276))
 
 > Every deterministic computation path is the canonical path for its duration.
 
@@ -325,7 +325,7 @@ lemma ComputationPath.eq_ofDeterministic (p : tm.ComputationPath input) :
     p = .ofDeterministic tm input p.time
 ```
 
-`Turing.MultiTapeNTM.RunPath.eq_take` (lemma, [line 284](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L284))
+`Turing.MultiTapeNTM.RunPath.eq_take` (lemma, [line 284](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L284))
 
 > Deterministic run paths from the same configuration are prefixes of one another: the shorter one
 > is the longer one, cut at its length.
@@ -335,7 +335,7 @@ lemma RunPath.eq_take {p q : tm.RunPath input} (hhead : p.head = q.head) (h : p.
     p = q.take ⟨p.length, Nat.lt_succ_of_le h⟩
 ```
 
-`Turing.MultiTapeNTM.ComputationPath.spaceUsedByTape_le_of_space_le` (lemma, [line 292](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L292))
+`Turing.MultiTapeNTM.ComputationPath.spaceUsedByTape_le_of_space_le` (lemma, [line 292](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L292))
 
 > The computation paths of a deterministic machine are prefixes of one another, so a path visiting
 > at most as many cells as another visits at most as many on each tape.
@@ -346,7 +346,7 @@ lemma ComputationPath.spaceUsedByTape_le_of_space_le (p : tm.ComputationPath inp
     p.spaceUsedByTape ≤ q.spaceUsedByTape
 ```
 
-`Turing.MultiTapeNTM.RunPath.map_ofDeterministic` (lemma, [line 310](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L310))
+`Turing.MultiTapeNTM.RunPath.map_ofDeterministic` (lemma, [line 310](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L310))
 
 > A step-preserving map sends the path of `t` steps from `cfg` to the path of `t` steps from the
 > image of `cfg`.
@@ -358,7 +358,7 @@ lemma RunPath.map_ofDeterministic {k' : ℕ} {State' : Type*} {input' : List Sym
     (RunPath.ofDeterministic tm cfg t).map f = .ofDeterministic tm' (f cfg) t
 ```
 
-`Turing.MultiTapeTM.runFrom` (definition, [line 324](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L324))
+`Turing.MultiTapeTM.runFrom` (definition, [line 324](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L324))
 
 > The configuration reached by running the Turing machine for `t` steps from `cfg`.
 > If the Turing machine halts, it will stay at the halting configuration.
@@ -367,7 +367,7 @@ lemma RunPath.map_ofDeterministic {k' : ℕ} {State' : Type*} {input' : List Sym
 noncomputable def runFrom (cfg : Cfg k Symbol State input) (t : ℕ) : Cfg k Symbol State input
 ```
 
-`Turing.MultiTapeTM.runPath_apply_eq_runFrom` (lemma, [line 328](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L328))
+`Turing.MultiTapeTM.runPath_apply_eq_runFrom` (lemma, [line 328](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L328))
 
 > Every path of a deterministic machine follows its iterated step function.
 
@@ -376,7 +376,7 @@ lemma runPath_apply_eq_runFrom (p : tm.RunPath input) (i : Fin (p.length + 1)) :
     p i = tm.runFrom p.head i
 ```
 
-`Turing.MultiTapeTM.runPath_last_eq_runFrom` (lemma, [line 335](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L335))
+`Turing.MultiTapeTM.runPath_last_eq_runFrom` (lemma, [line 335](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L335))
 
 > Every path of a deterministic machine ends at the iterate given by its length.
 
@@ -384,7 +384,7 @@ lemma runPath_apply_eq_runFrom (p : tm.RunPath input) (i : Fin (p.length + 1)) :
 lemma runPath_last_eq_runFrom (p : tm.RunPath input) : p.last = tm.runFrom p.head p.length
 ```
 
-`Turing.MultiTapeTM.computationPath_last_eq_runFrom` (lemma, [line 339](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L339))
+`Turing.MultiTapeTM.computationPath_last_eq_runFrom` (lemma, [line 339](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L339))
 
 > A deterministic computation ends at the corresponding iterate.
 
@@ -393,7 +393,7 @@ lemma computationPath_last_eq_runFrom (p : tm.ComputationPath input) :
     p.last = tm.runFrom (tm.initCfg input) p.time
 ```
 
-`Turing.MultiTapeTM.runFrom_map` (lemma, [line 346](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L346))
+`Turing.MultiTapeTM.runFrom_map` (lemma, [line 346](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L346))
 
 > Running from the image of a configuration under a step-preserving map reaches the image of the
 > original run.
@@ -405,7 +405,7 @@ lemma runFrom_map {k' : ℕ} {State' : Type*} {input' : List Symbol}
     tm'.runFrom (f cfg) t = f (tm.runFrom cfg t)
 ```
 
-`Turing.MultiTapeTM.runFrom_eq_of_halt` (lemma, [line 353](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L353))
+`Turing.MultiTapeTM.runFrom_eq_of_halt` (lemma, [line 353](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L353))
 
 > Nothing changes after the machine has halted.
 
@@ -417,7 +417,7 @@ lemma runFrom_eq_of_halt
     tm.runFrom cfg t = tm.runFrom cfg τ
 ```
 
-`Turing.MultiTapeTM.runsInTime_of_halted` (lemma, [line 362](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L362))
+`Turing.MultiTapeTM.runsInTime_of_halted` (lemma, [line 362](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L362))
 
 > A deterministic machine halted after `t` steps satisfies the shared time bound.
 
@@ -426,7 +426,7 @@ lemma runsInTime_of_halted {input : List Symbol} {t : ℕ}
     (h : (tm.runFrom (tm.initCfg input) t).Halted) : tm.RunsInTime input t
 ```
 
-`Turing.MultiTapeTM.inputPos_runFrom_le` (lemma, [line 369](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L369))
+`Turing.MultiTapeTM.inputPos_runFrom_le` (lemma, [line 369](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L369))
 
 > In `t` steps the input head moves at most `t` positions to the right.
 
@@ -436,7 +436,7 @@ lemma inputPos_runFrom_le (tm : MultiTapeTM k Symbol State)
     ((tm.runFrom cfg t).inputPos : ℕ) ≤ (cfg.inputPos : ℕ) + t
 ```
 
-`Turing.MultiTapeTM.inputPos_last_runPath_le` (lemma, [line 387](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L387))
+`Turing.MultiTapeTM.inputPos_last_runPath_le` (lemma, [line 387](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L387))
 
 > Along a run path the input head moves at most one position to the right per step.
 
@@ -445,7 +445,7 @@ lemma inputPos_last_runPath_le (p : tm.RunPath input) :
     (p.last.inputPos : ℕ) ≤ (p.head.inputPos : ℕ) + p.length
 ```
 
-`Turing.MultiTapeTM.Computes` (definition, [line 393](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L393))
+`Turing.MultiTapeTM.Computes` (definition, [line 393](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L393))
 
 > The machine eventually halts on `input` with the given `output`.
 
@@ -453,7 +453,7 @@ lemma inputPos_last_runPath_le (p : tm.RunPath input) :
 def Computes (tm : MultiTapeTM k Symbol State) (input output : List Symbol) : Prop
 ```
 
-`Turing.MultiTapeTM.ComputesInTimeAndSpace` (definition, [line 398](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L398))
+`Turing.MultiTapeTM.ComputesInTimeAndSpace` (definition, [line 398](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L398))
 
 > The machine computes `output` from `input` within the shared time and space bounds.
 
@@ -462,7 +462,7 @@ def ComputesInTimeAndSpace (tm : MultiTapeTM k Symbol State)
     (input output : List Symbol) (t s : ℕ) : Prop
 ```
 
-`Turing.MultiTapeTM.computesInTimeAndSpace_iff_exists_runPath` (theorem, [line 404](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L404))
+`Turing.MultiTapeTM.computesInTimeAndSpace_iff_exists_runPath` (theorem, [line 404](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L404))
 
 > A deterministic computation satisfies time and space bounds exactly when it has a halted
 > run path with those bounds and the required output.
@@ -474,7 +474,7 @@ theorem computesInTimeAndSpace_iff_exists_runPath {output : List Symbol} {t s : 
         p.last.output = output ∧ p.length ≤ t ∧ p.space ≤ s
 ```
 
-`Turing.MultiTapeTM.ComputesFunInTimeAndSpace` (definition, [line 432](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L432))
+`Turing.MultiTapeTM.ComputesFunInTimeAndSpace` (definition, [line 432](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L432))
 
 > The machine computes `f` relative to given encodings within the given time and space bounds.
 
@@ -483,7 +483,7 @@ def ComputesFunInTimeAndSpace {α β : Type*} (tm : MultiTapeTM k Symbol State)
     (encIn : α ↪ List Symbol) (encOut : β ↪ List Symbol) (f : α → β) (t s : α → ℕ) : Prop
 ```
 
-`Turing.MultiTapeTM.ComputesFunInTimeAndSpace.mono` (theorem, [line 437](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L437))
+`Turing.MultiTapeTM.ComputesFunInTimeAndSpace.mono` (theorem, [line 437](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L437))
 
 > Resource bounds can be weakened independently on every input.
 
@@ -495,7 +495,7 @@ theorem ComputesFunInTimeAndSpace.mono {α β : Type*}
     tm.ComputesFunInTimeAndSpace encIn encOut f t' s'
 ```
 
-`Turing.MultiTapeTM.ComputableInTimeAndSpace` (definition, [line 446](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L446))
+`Turing.MultiTapeTM.ComputableInTimeAndSpace` (definition, [line 446](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L446))
 
 > Computability by a deterministic machine with a binary tape alphabet and finitely many states,
 > within the supplied input-indexed bounds.
@@ -506,7 +506,7 @@ def ComputableInTimeAndSpace {α β : Type*}
     (t s : α → ℕ) : Prop
 ```
 
-`Turing.MultiTapeTM.ComputableInTimeAndSpaceOfLength` (abbreviation, [line 455](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L455))
+`Turing.MultiTapeTM.ComputableInTimeAndSpaceOfLength` (abbreviation, [line 455](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L455))
 
 > There exists a binary Turing machine with finitely many states that, for every input `a`,
 > computes `encOut (f a)` from `encIn a` in at most `t (encIn a).length` steps,
@@ -518,7 +518,7 @@ abbrev ComputableInTimeAndSpaceOfLength {α β : Type*}
     (t s : ℕ → ℕ) : Prop
 ```
 
-`Turing.MultiTapeTM.ComputableInTimeAndSpace.mono` (theorem, [line 462](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L462))
+`Turing.MultiTapeTM.ComputableInTimeAndSpace.mono` (theorem, [line 462](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L462))
 
 > Computability is monotone in the resource bounds.
 
@@ -530,7 +530,7 @@ theorem ComputableInTimeAndSpace.mono {α β : Type*}
     ComputableInTimeAndSpace f encIn encOut t' s'
 ```
 
-`Turing.MultiTapeTM.indicator` (definition, [line 472](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L472))
+`Turing.MultiTapeTM.indicator` (definition, [line 472](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L472))
 
 > The Boolean indicator function of a set.
 
@@ -538,7 +538,7 @@ theorem ComputableInTimeAndSpace.mono {α β : Type*}
 noncomputable def indicator {α : Type*} (L : Set α) : α → Bool
 ```
 
-`Turing.MultiTapeTM.DecidableInTimeAndSpace` (definition, [line 477](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L477))
+`Turing.MultiTapeTM.DecidableInTimeAndSpace` (definition, [line 477](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L477))
 
 > A set is decidable within the given input-indexed bounds when its Boolean indicator is
 > computable in those bounds.
@@ -548,7 +548,7 @@ def DecidableInTimeAndSpace {α : Type*} (L : Set α) (enc : α ↪ List Bool)
     (t s : α → ℕ) : Prop
 ```
 
-`Turing.MultiTapeTM.not_halts_of_repeat_nonhalt` (lemma, [line 485](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L485))
+`Turing.MultiTapeTM.not_halts_of_repeat_nonhalt` (lemma, [line 485](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L485))
 
 > If a deterministic machine repeats a non-halting configuration, it never halts,
 > because the sequence between the two configurations will loop forever.
@@ -570,5 +570,5 @@ lemma not_halts_of_repeat_nonhalt
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Deterministic.json)

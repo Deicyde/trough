@@ -7,14 +7,14 @@ proof: formalized
 
 # Boolean circuits
 
-`Cslib.Computability.Circuit.Boolean.Basic`, in [Cslib/Computability/Circuit/Boolean/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Basic.lean), by Samuel Schlesinger.
+`Cslib.Computability.Circuit.Boolean.Basic`, in [Cslib/Computability/Circuit/Boolean/Basic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Boolean/Basic.lean), by Samuel Schlesinger.
 
 > The De Morgan basis consists of binary AND and OR, unary NOT, and Boolean constants.
 > Every gate has fan-in at most two, so these are the usual bounded fan-in Boolean circuits
 > (`Program.fanInAtMost_two`). Circuit size counts every gate, including constants;
 > designated output wires are free.
 
-`Cslib.Circuits.Boolean.Op` (inductive type, [line 29](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Basic.lean#L29))
+`Cslib.Circuits.Boolean.Op` (inductive type, [line 29](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Boolean/Basic.lean#L29))
 
 > Operations of the De Morgan basis, including constants.
 
@@ -31,7 +31,7 @@ inductive Op where
   deriving DecidableEq, Fintype
 ```
 
-`Cslib.Circuits.Boolean.Op.card` (theorem, [line 41](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Basic.lean#L41))
+`Cslib.Circuits.Boolean.Op.card` (theorem, [line 41](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Boolean/Basic.lean#L41))
 
 > The De Morgan basis has five operation symbols, counting its two constants.
 
@@ -39,7 +39,7 @@ inductive Op where
 theorem Op.card : Fintype.card Op = 5
 ```
 
-`Cslib.Circuits.Boolean.signature` (abbreviation, [line 44](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Basic.lean#L44))
+`Cslib.Circuits.Boolean.signature` (abbreviation, [line 44](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Boolean/Basic.lean#L44))
 
 > The De Morgan signature.
 
@@ -47,7 +47,7 @@ theorem Op.card : Fintype.card Op = 5
 abbrev signature : Signature
 ```
 
-`Cslib.Circuits.Boolean.interpretation` (definition, [line 52](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Basic.lean#L52))
+`Cslib.Circuits.Boolean.interpretation` (definition, [line 52](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Boolean/Basic.lean#L52))
 
 > The usual Boolean interpretation.
 
@@ -55,7 +55,7 @@ abbrev signature : Signature
 def interpretation : Interpretation signature Bool
 ```
 
-`Cslib.Circuits.Program.fanInAtMost_two` (theorem, [line 61](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Basic.lean#L61))
+`Cslib.Circuits.Program.fanInAtMost_two` (theorem, [line 61](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Boolean/Basic.lean#L61))
 
 > Every De Morgan program has fan-in at most two.
 
@@ -64,7 +64,7 @@ theorem Program.fanInAtMost_two {n g : ℕ} (p : Program Boolean.signature n g) 
     p.FanInAtMost 2
 ```
 
-`Cslib.Circuits.Circuit.fanInAtMost_two` (theorem, [line 68](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Basic.lean#L68))
+`Cslib.Circuits.Circuit.fanInAtMost_two` (theorem, [line 68](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Boolean/Basic.lean#L68))
 
 > Every De Morgan circuit has fan-in at most two.
 
@@ -79,5 +79,5 @@ theorem Circuit.fanInAtMost_two {n o : ℕ} (c : Circuit Boolean.signature n o) 
 
 ## Sources
 
-- [Cslib/Computability/Circuit/Boolean/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Basic.lean)
+- [Cslib/Computability/Circuit/Boolean/Basic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Circuit/Boolean/Basic.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Circuit.Boolean.Basic.json)

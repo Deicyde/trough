@@ -7,7 +7,7 @@ proof: formalized
 
 # Boolean functions on the hypercube
 
-`Cslib.Computability.QueryComplexity.Defs`, in [Cslib/Computability/QueryComplexity/Defs.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean), by Vignesh Karri.
+`Cslib.Computability.QueryComplexity.Defs`, in [Cslib/Computability/QueryComplexity/Defs.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean), by Vignesh Karri.
 
 > A Boolean function is a map `{0,1}ⁿ → {0,1}`, shared across the library as
 > `Cslib.BooleanFunction` on `Cslib.BitString n`. This file sets up block flips, which are the moves
@@ -31,7 +31,7 @@ proof: formalized
 
 > ## Flipping blocks of bits
 
-`Cslib.BitString.flipBlock` (definition, [line 49](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L49))
+`Cslib.BitString.flipBlock` (definition, [line 49](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L49))
 
 > `x` with every coordinate of `B` flipped.
 
@@ -39,7 +39,7 @@ proof: formalized
 def flipBlock (B : Finset (Fin n)) (x : BitString n) : BitString n
 ```
 
-`Cslib.BitString.flipBlock_eq_piecewise` (theorem, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L53))
+`Cslib.BitString.flipBlock_eq_piecewise` (theorem, [line 53](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L53))
 
 > Flipping `B` splices the negation of `x` into `x` on `B`.
 
@@ -48,21 +48,21 @@ theorem flipBlock_eq_piecewise (B : Finset (Fin n)) (x : BitString n) :
     flipBlock B x = B.piecewise (fun j => !(x j)) x
 ```
 
-`Cslib.BitString.flipBlock_apply_of_mem` (theorem, [line 58](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L58))
+`Cslib.BitString.flipBlock_apply_of_mem` (theorem, [line 58](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L58))
 
 ```lean
 theorem flipBlock_apply_of_mem {B : Finset (Fin n)} {x : BitString n} {j : Fin n} (h : j ∈ B) :
     flipBlock B x j = !(x j)
 ```
 
-`Cslib.BitString.flipBlock_apply_of_notMem` (theorem, [line 63](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L63))
+`Cslib.BitString.flipBlock_apply_of_notMem` (theorem, [line 63](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L63))
 
 ```lean
 theorem flipBlock_apply_of_notMem {B : Finset (Fin n)} {x : BitString n} {j : Fin n} (h : j ∉ B) :
     flipBlock B x j = x j
 ```
 
-`Cslib.BitString.flipBlock_empty` (theorem, [line 69](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L69))
+`Cslib.BitString.flipBlock_empty` (theorem, [line 69](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L69))
 
 > Flipping no coordinates does nothing.
 
@@ -70,7 +70,7 @@ theorem flipBlock_apply_of_notMem {B : Finset (Fin n)} {x : BitString n} {j : Fi
 theorem flipBlock_empty (x : BitString n) : flipBlock ∅ x = x
 ```
 
-`Cslib.BitString.flipBlock_flipBlock` (theorem, [line 74](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L74))
+`Cslib.BitString.flipBlock_flipBlock` (theorem, [line 74](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L74))
 
 > Flipping the same block twice does nothing.
 
@@ -79,7 +79,7 @@ theorem flipBlock_flipBlock (B : Finset (Fin n)) (x : BitString n) :
     flipBlock B (flipBlock B x) = x
 ```
 
-`Cslib.BitString.flipBlock_involutive` (theorem, [line 79](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L79))
+`Cslib.BitString.flipBlock_involutive` (theorem, [line 79](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L79))
 
 > Flipping a block is an involution.
 
@@ -87,7 +87,7 @@ theorem flipBlock_flipBlock (B : Finset (Fin n)) (x : BitString n) :
 theorem flipBlock_involutive (B : Finset (Fin n)) : Function.Involutive (flipBlock B)
 ```
 
-`Cslib.BitString.flipBlock_singleton` (theorem, [line 84](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L84))
+`Cslib.BitString.flipBlock_singleton` (theorem, [line 84](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L84))
 
 > Flipping the block `{i}` is flipping the single bit `i`.
 
@@ -96,7 +96,7 @@ theorem flipBlock_singleton (i : Fin n) (x : BitString n) :
     flipBlock {i} x = Function.update x i (!x i)
 ```
 
-`Cslib.BitString.flipBlock_erase` (theorem, [line 89](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L89))
+`Cslib.BitString.flipBlock_erase` (theorem, [line 89](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L89))
 
 > Flipping `B \ {i}` is flipping `B` and then restoring bit `i ∈ B`.
 
@@ -105,7 +105,7 @@ theorem flipBlock_erase {B : Finset (Fin n)} {i : Fin n} (hi : i ∈ B) (x : Bit
     flipBlock (B.erase i) x = Function.update (flipBlock B x) i (x i)
 ```
 
-`Cslib.QueryComplexity.Block` (abbreviation, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L101))
+`Cslib.QueryComplexity.Block` (abbreviation, [line 101](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L101))
 
 > A block: a set of coordinates.
 
@@ -115,7 +115,7 @@ abbrev Block (n : ℕ) : Type
 
 > ## Partial assignments
 
-`Cslib.QueryComplexity.PartialAssignment` (abbreviation, [line 106](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L106))
+`Cslib.QueryComplexity.PartialAssignment` (abbreviation, [line 106](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L106))
 
 > `C i = some b` fixes coordinate `i` to `b`; `C i = none` leaves it free.
 
@@ -123,7 +123,7 @@ abbrev Block (n : ℕ) : Type
 abbrev PartialAssignment (n : ℕ) : Type
 ```
 
-`Cslib.QueryComplexity.support` (definition, [line 109](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L109))
+`Cslib.QueryComplexity.support` (definition, [line 109](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L109))
 
 > The coordinates the partial assignment fixes.
 
@@ -131,7 +131,7 @@ abbrev PartialAssignment (n : ℕ) : Type
 def support (C : PartialAssignment n) : Finset (Fin n)
 ```
 
-`Cslib.QueryComplexity.mem_support` (lemma, [line 114](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L114))
+`Cslib.QueryComplexity.mem_support` (lemma, [line 114](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L114))
 
 > A coordinate lies in the support if and only if the partial assignment fixes it.
 
@@ -140,7 +140,7 @@ lemma mem_support {C : PartialAssignment n} {i : Fin n} :
     i ∈ support C ↔ (C i).isSome
 ```
 
-`Cslib.QueryComplexity.size` (definition, [line 118](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L118))
+`Cslib.QueryComplexity.size` (definition, [line 118](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L118))
 
 > How many coordinates the partial assignment fixes.
 
@@ -148,7 +148,7 @@ lemma mem_support {C : PartialAssignment n} {i : Fin n} :
 def size (C : PartialAssignment n) : ℕ
 ```
 
-`Cslib.QueryComplexity.Agrees` (definition, [line 121](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L121))
+`Cslib.QueryComplexity.Agrees` (definition, [line 121](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L121))
 
 > `x` agrees with `C` when it matches `C` on every fixed coordinate.
 
@@ -156,7 +156,7 @@ def size (C : PartialAssignment n) : ℕ
 def Agrees (C : PartialAssignment n) (x : BitString n) : Prop
 ```
 
-`Cslib.QueryComplexity.ofBitString` (definition, [line 127](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L127))
+`Cslib.QueryComplexity.ofBitString` (definition, [line 127](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L127))
 
 > The total assignment reading off every coordinate of `x`.
 
@@ -164,7 +164,7 @@ def Agrees (C : PartialAssignment n) (x : BitString n) : Prop
 def ofBitString (x : BitString n) : PartialAssignment n
 ```
 
-`Cslib.QueryComplexity.agrees_ofBitString_iff` (theorem, [line 131](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L131))
+`Cslib.QueryComplexity.agrees_ofBitString_iff` (theorem, [line 131](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L131))
 
 > A total assignment read off `x` is agreed with by `x` alone.
 
@@ -172,7 +172,7 @@ def ofBitString (x : BitString n) : PartialAssignment n
 theorem agrees_ofBitString_iff {x y : BitString n} : Agrees (ofBitString x) y ↔ y = x
 ```
 
-`Cslib.QueryComplexity.size_ofBitString` (theorem, [line 138](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L138))
+`Cslib.QueryComplexity.size_ofBitString` (theorem, [line 138](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L138))
 
 > Reading off the whole input fixes all `n` coordinates.
 
@@ -180,7 +180,7 @@ theorem agrees_ofBitString_iff {x y : BitString n} : Agrees (ofBitString x) y �
 theorem size_ofBitString (x : BitString n) : size (ofBitString x) = n
 ```
 
-`Cslib.QueryComplexity.restrict` (definition, [line 142](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L142))
+`Cslib.QueryComplexity.restrict` (definition, [line 142](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L142))
 
 > The partial assignment reading off `x` on the coordinates only in `S`.
 
@@ -188,7 +188,7 @@ theorem size_ofBitString (x : BitString n) : size (ofBitString x) = n
 def restrict (x : BitString n) (S : Finset (Fin n)) : PartialAssignment n
 ```
 
-`Cslib.QueryComplexity.agrees_restrict_iff` (theorem, [line 147](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L147))
+`Cslib.QueryComplexity.agrees_restrict_iff` (theorem, [line 147](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L147))
 
 > An input agrees with `restrict x S` if and only if it matches `x` on `S`.
 
@@ -197,7 +197,7 @@ theorem agrees_restrict_iff {x y : BitString n} {S : Finset (Fin n)} :
     Agrees (restrict x S) y ↔ ∀ i ∈ S, y i = x i
 ```
 
-`Cslib.QueryComplexity.support_restrict` (theorem, [line 157](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L157))
+`Cslib.QueryComplexity.support_restrict` (theorem, [line 157](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L157))
 
 > `restrict x S` fixes exactly the coordinates in `S`.
 
@@ -205,7 +205,7 @@ theorem agrees_restrict_iff {x y : BitString n} {S : Finset (Fin n)} :
 theorem support_restrict (x : BitString n) (S : Finset (Fin n)) : support (restrict x S) = S
 ```
 
-`Cslib.QueryComplexity.eq_restrict_support` (theorem, [line 162](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean#L162))
+`Cslib.QueryComplexity.eq_restrict_support` (theorem, [line 162](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean#L162))
 
 > A partial assignment consistent with `x` is `x` restricted to its support.
 
@@ -220,5 +220,5 @@ theorem eq_restrict_support {C : PartialAssignment n} {x : BitString n} (h : Agr
 
 ## Sources
 
-- [Cslib/Computability/QueryComplexity/Defs.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/QueryComplexity/Defs.lean)
+- [Cslib/Computability/QueryComplexity/Defs.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/QueryComplexity/Defs.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.QueryComplexity.Defs.json)

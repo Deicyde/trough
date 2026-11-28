@@ -7,7 +7,7 @@ proof: formalized
 
 # Tapes holding words and configurations of such tapes
 
-`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.WordsCfg`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean), by Christian Reitwiessner.
+`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.WordsCfg`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean), by Christian Reitwiessner.
 
 > The normal form in which "tape transformer" machines (cf. `TransformsTapes.lean`) start and finish:
 > every work tape holds a word in the cells `0, 1, …` and is blank everywhere else, with every head
@@ -18,7 +18,7 @@ proof: formalized
 > * `Turing.tapeOfList`: the tape holding exactly a given word.
 > * `Turing.wordsCfg`: the configuration whose tapes hold given words.
 
-`Turing.tapeOfList` (definition, [line 31](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L31))
+`Turing.tapeOfList` (definition, [line 31](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L31))
 
 > A tape containing exactly the symbols of `xs` at positions `0, ..., xs.length - 1`.
 
@@ -26,20 +26,20 @@ proof: formalized
 def tapeOfList (xs : List Symbol) : ℤ → Option Symbol
 ```
 
-`Turing.tapeOfList_ofNat` (lemma, [line 36](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L36))
+`Turing.tapeOfList_ofNat` (lemma, [line 36](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L36))
 
 ```lean
 lemma tapeOfList_ofNat (xs : List Symbol) (n : ℕ) : tapeOfList xs n = xs[n]?
 ```
 
-`Turing.tapeOfList_negSucc` (lemma, [line 39](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L39))
+`Turing.tapeOfList_negSucc` (lemma, [line 39](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L39))
 
 ```lean
 lemma tapeOfList_negSucc (xs : List Symbol) (n : ℕ) :
     tapeOfList xs (.negSucc n) = none
 ```
 
-`Turing.tapeOfList_append_single` (lemma, [line 43](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L43))
+`Turing.tapeOfList_append_single` (lemma, [line 43](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L43))
 
 > Appending one symbol writes precisely the cell after the existing word.
 
@@ -48,7 +48,7 @@ lemma tapeOfList_append_single (xs : List Symbol) (x : Symbol) :
     tapeOfList (xs ++ [x]) = Function.update (tapeOfList xs) (xs.length : ℤ) (some x)
 ```
 
-`Turing.tapeOfList_eq_none_iff` (lemma, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L51))
+`Turing.tapeOfList_eq_none_iff` (lemma, [line 51](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L51))
 
 > A cell of `tapeOfList xs` is blank exactly outside the positions `0, …, xs.length - 1`.
 
@@ -57,7 +57,7 @@ lemma tapeOfList_eq_none_iff (xs : List Symbol) (z : ℤ) :
     tapeOfList xs z = none ↔ z < 0 ∨ (xs.length : ℤ) ≤ z
 ```
 
-`Turing.tapeOfList_nil` (lemma, [line 57](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L57))
+`Turing.tapeOfList_nil` (lemma, [line 57](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L57))
 
 > The blank tape holds the empty word.
 
@@ -65,7 +65,7 @@ lemma tapeOfList_eq_none_iff (xs : List Symbol) (z : ℤ) :
 lemma tapeOfList_nil : tapeOfList ([] : List Symbol) = fun _ => none
 ```
 
-`Turing.tapeOfList_zero` (lemma, [line 62](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L62))
+`Turing.tapeOfList_zero` (lemma, [line 62](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L62))
 
 > The cell at position `0` holds the first symbol of the word.
 
@@ -73,7 +73,7 @@ lemma tapeOfList_nil : tapeOfList ([] : List Symbol) = fun _ => none
 lemma tapeOfList_zero (xs : List Symbol) : tapeOfList xs 0 = xs.head?
 ```
 
-`Turing.wordsCfg` (definition, [line 70](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L70))
+`Turing.wordsCfg` (definition, [line 70](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L70))
 
 > The configuration whose work tape `i` holds exactly the word `ws i` with its head at the
 > start, whose input head is at the start of the input, in state `q` with output `out`.
@@ -83,7 +83,7 @@ def wordsCfg (input : List Symbol) (q : Option State)
     (ws : Fin k → List Symbol) (out : List Symbol) : Cfg k Symbol State input
 ```
 
-`Turing.mapState_wordsCfg` (lemma, [line 76](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L76))
+`Turing.mapState_wordsCfg` (lemma, [line 76](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L76))
 
 > Remapping the state of a `wordsCfg` remaps its state and leaves the words alone.
 
@@ -93,7 +93,7 @@ lemma mapState_wordsCfg {State' : Type*} (φ : Option State → Option State')
     (wordsCfg input q ws out).mapState φ = wordsCfg input (φ q) ws out
 ```
 
-`Turing.withState_wordsCfg` (lemma, [line 82](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L82))
+`Turing.withState_wordsCfg` (lemma, [line 82](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L82))
 
 > Changing the state of a `wordsCfg` leaves the words alone.
 
@@ -103,7 +103,7 @@ lemma withState_wordsCfg {State' : Type*} (input : List Symbol) (q : Option Stat
     (wordsCfg input q ws out).withState q' = wordsCfg input q' ws out
 ```
 
-`Turing.prependOutput_wordsCfg` (lemma, [line 88](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L88))
+`Turing.prependOutput_wordsCfg` (lemma, [line 88](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L88))
 
 > Prepending a word to the output of a `wordsCfg` prepends it to the output word.
 
@@ -113,7 +113,7 @@ lemma prependOutput_wordsCfg (input : List Symbol) (q : Option State)
     (wordsCfg input q ws out).prependOutput pre = wordsCfg input q ws (pre ++ out)
 ```
 
-`Turing.Cfg.init_eq_wordsCfg` (lemma, [line 93](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L93))
+`Turing.Cfg.init_eq_wordsCfg` (lemma, [line 93](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean#L93))
 
 > The initial configuration is the word configuration with blank tapes and no output.
 
@@ -128,5 +128,5 @@ lemma Cfg.init_eq_wordsCfg (q₀ : State) (input : List Symbol) :
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean)
 - [Declaration ledger](../../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Plumbing.WordsCfg.json)

@@ -7,12 +7,12 @@ proof: formalized
 
 # Appending tuples
 
-`Cslib.Foundations.Data.Fin.Tuple`, in [Cslib/Foundations/Data/Fin/Tuple.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Fin/Tuple.lean), by Christian Reitwiessner.
+`Cslib.Foundations.Data.Fin.Tuple`, in [Cslib/Foundations/Data/Fin/Tuple.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Fin/Tuple.lean), by Christian Reitwiessner.
 
 > Lemmas about `Fin.append` not (yet) in Mathlib: the two parts of an appended tuple never overlap
 > and appending commutes with post-composition and with updating an entry on either side.
 
-`Fin.castAdd_ne_natAdd` (theorem, [line 26](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Fin/Tuple.lean#L26))
+`Fin.castAdd_ne_natAdd` (theorem, [line 26](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Fin/Tuple.lean#L26))
 
 > The two parts of `Fin.append` never overlap.
 
@@ -20,7 +20,7 @@ proof: formalized
 theorem castAdd_ne_natAdd (i : Fin m) (j : Fin n) : castAdd n i ≠ natAdd m j
 ```
 
-`Fin.comp_append` (theorem, [line 30](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Fin/Tuple.lean#L30))
+`Fin.comp_append` (theorem, [line 30](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Fin/Tuple.lean#L30))
 
 > Post-composition commutes with `Fin.append`.
 
@@ -29,7 +29,7 @@ theorem comp_append (f : α → β) (a : Fin m → α) (b : Fin n → α) :
     f ∘ append a b = append (f ∘ a) (f ∘ b)
 ```
 
-`Fin.append_update_left` (theorem, [line 36](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Fin/Tuple.lean#L36))
+`Fin.append_update_left` (theorem, [line 36](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Fin/Tuple.lean#L36))
 
 > Updating an entry of the left tuple is updating the appended tuple at `castAdd`.
 
@@ -38,7 +38,7 @@ theorem append_update_left (a : Fin m → α) (b : Fin n → α) (i : Fin m) (x 
     append (Function.update a i x) b = Function.update (append a b) (castAdd n i) x
 ```
 
-`Fin.append_update_right` (theorem, [line 44](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Fin/Tuple.lean#L44))
+`Fin.append_update_right` (theorem, [line 44](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Fin/Tuple.lean#L44))
 
 > Updating an entry of the right tuple is updating the appended tuple at `natAdd`.
 
@@ -53,5 +53,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Foundations/Data/Fin/Tuple.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Fin/Tuple.lean)
+- [Cslib/Foundations/Data/Fin/Tuple.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Data/Fin/Tuple.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Data.Fin.Tuple.json)

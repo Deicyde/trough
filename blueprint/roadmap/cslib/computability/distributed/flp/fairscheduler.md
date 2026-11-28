@@ -7,7 +7,7 @@ proof: formalized
 
 # Machinery for constructing infinite fair executions
 
-`Cslib.Computability.Distributed.FLP.FairScheduler`, in [Cslib/Computability/Distributed/FLP/FairScheduler.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean), by Ching-Tsun Chou.
+`Cslib.Computability.Distributed.FLP.FairScheduler`, in [Cslib/Computability/Distributed/FLP/FairScheduler.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean), by Ching-Tsun Chou.
 
 > The main goal of this file is to define a `fairScheduler` that, given a function `d`
 > of type `DeliverMsg`, a state predicate `q`, and a state `s0` of an algorithm `a`,
@@ -16,7 +16,7 @@ proof: formalized
 > we may also want to require that all actions in the infinite execution satisfy an action
 > predicate `r`.
 
-`Cslib.FLP.DeliverMsg` (definition, [line 32](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L32))
+`Cslib.FLP.DeliverMsg` (definition, [line 32](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L32))
 
 > Given a state `s` and a message `m`, a function `d` of type `DeliverMsg` is supposed to
 > return `(xs, t)` where `xs` is a finite execution from `s` to `t` in which `m` is delivered.
@@ -25,7 +25,7 @@ proof: formalized
 def DeliverMsg P M S
 ```
 
-`Cslib.FLP.DeliverMsg.ForallActions` (definition, [line 35](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L35))
+`Cslib.FLP.DeliverMsg.ForallActions` (definition, [line 35](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L35))
 
 > `d.ForallActions r` requires that all actions returned by `d` satisfy `r`.
 
@@ -33,7 +33,7 @@ def DeliverMsg P M S
 def DeliverMsg.ForallActions (d : DeliverMsg P M S) (r : Action P M → Prop) : Prop
 ```
 
-`Cslib.FLP.DeliverMsg.foldList` (definition, [line 41](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L41))
+`Cslib.FLP.DeliverMsg.foldList` (definition, [line 41](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L41))
 
 > `d.foldList s ml ms` uses `d` to deliver all messages that are in `ml` but not in `ms` from
 > state `s`. Note that if a message `m` in `ml` is delivered during the delivery of an earlier
@@ -44,7 +44,7 @@ def DeliverMsg.foldList (d : DeliverMsg P M S) (s : State P M S) :
     List (Message P M) → Finset (Message P M) → List (Action P M) × State P M S
 ```
 
-`Cslib.FLP.DeliverMsg.scheduleMsgs` (definition, [line 57](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L57))
+`Cslib.FLP.DeliverMsg.scheduleMsgs` (definition, [line 57](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L57))
 
 > `d.scheduleMsgs ps s` schedules and delivers all messages which are in-flight in state `s`
 > and have destinations in `ps` in some order (as determined by choice).  If no such message exists,
@@ -55,7 +55,7 @@ noncomputable def DeliverMsg.scheduleMsgs (d : DeliverMsg P M S) (ps : Set P)
     (s : State P M S) : List (Action P M) × State P M S
 ```
 
-`Cslib.FLP.DeliverMsg.foldList_forallActions` (theorem, [line 70](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L70))
+`Cslib.FLP.DeliverMsg.foldList_forallActions` (theorem, [line 70](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L70))
 
 > If `d.ForallActions r`, then `d.foldList s ml ms` can only use actions satisfying `r`.
 
@@ -65,7 +65,7 @@ theorem foldList_forallActions {r : Action P M → Prop}
     (h : d.ForallActions r) : (d.foldList s ml ms).fst.Forall r
 ```
 
-`Cslib.FLP.Algorithm.fairScheduler` (definition, [line 80](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L80))
+`Cslib.FLP.Algorithm.fairScheduler` (definition, [line 80](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L80))
 
 > Starting from state `s0`, `a.fairScheduler d ps s0` constructs an infinite sequence of
 > finite executions of `a` by repeatedly applying `d.scheduleMsgs ps`.
@@ -75,7 +75,7 @@ noncomputable def Algorithm.fairScheduler (a : Algorithm P M S) (d : DeliverMsg 
     (s0 : State P M S) : ℕ → List (Action P M) × State P M S
 ```
 
-`Cslib.FLP.Algorithm.fairSegEnds` (definition, [line 87](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L87))
+`Cslib.FLP.Algorithm.fairSegEnds` (definition, [line 87](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L87))
 
 > The infinite sequence of states forming the end states of the finite executions constructed
 > by `Algorithm.fairScheduler`.
@@ -85,7 +85,7 @@ noncomputable def Algorithm.fairSegEnds (a : Algorithm P M S) (d : DeliverMsg P 
     (ps : Set P) (s0 : State P M S) : ωSequence (State P M S)
 ```
 
-`Cslib.FLP.Algorithm.fairSegActions` (definition, [line 93](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L93))
+`Cslib.FLP.Algorithm.fairSegActions` (definition, [line 93](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L93))
 
 > The infinite sequence of finite action sequences from the finite executions constructed
 > by `Algorithm.fairScheduler`.
@@ -95,7 +95,7 @@ noncomputable def Algorithm.fairSegActions (a : Algorithm P M S) (d : DeliverMsg
     (ps : Set P) (s0 : State P M S) : ωSequence (List (Action P M))
 ```
 
-`Cslib.FLP.Algorithm.FairDeliverMsg` (definition, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L101))
+`Cslib.FLP.Algorithm.FairDeliverMsg` (definition, [line 101](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L101))
 
 > `a.FairDeliverMsg d ps q` says that for any state `s` of `a` satisfying `q` and
 > any message `m` which is in-flight in `s` and whose destination is in `ps`, `d s m`
@@ -107,7 +107,7 @@ def Algorithm.FairDeliverMsg (a : Algorithm P M S) (d : DeliverMsg P M S)
     (ps : Set P) (q : State P M S → Prop) : Prop
 ```
 
-`Cslib.FLP.FairScheduler.fairScheduler_init` (theorem, [line 113](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L113))
+`Cslib.FLP.FairScheduler.fairScheduler_init` (theorem, [line 113](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L113))
 
 > Re-stating the definition of `Algorithm.fairScheduler` as a mutual recursion of
 > `Algorithm.fairSegEnds` and `Algorithm.fairSegActions`.
@@ -117,7 +117,7 @@ theorem fairScheduler_init {d : DeliverMsg P M S} (ps : Set P) (s0 : State P M S
     a.fairSegEnds d ps s0 0 = s0
 ```
 
-`Cslib.FLP.FairScheduler.fairScheduler_step` (theorem, [line 119](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L119))
+`Cslib.FLP.FairScheduler.fairScheduler_step` (theorem, [line 119](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L119))
 
 > Re-stating the definition of `Algorithm.fairScheduler` as a mutual recursion of
 > `Algorithm.fairSegEnds` and `Algorithm.fairSegActions`.
@@ -128,7 +128,7 @@ theorem fairScheduler_step {d : DeliverMsg P M S} (ps : Set P) (s0 : State P M S
     (a.fairSegActions d ps s0 k, a.fairSegEnds d ps s0 (k + 1))
 ```
 
-`Cslib.FLP.FairScheduler.fairSeg_forallActions` (theorem, [line 125](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L125))
+`Cslib.FLP.FairScheduler.fairSeg_forallActions` (theorem, [line 125](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L125))
 
 > If `d.ForallActions r`, then `a.fairSegActions d ps s0` can only use actions satisfying `r`.
 
@@ -138,7 +138,7 @@ theorem fairSeg_forallActions {d : DeliverMsg P M S} {r : Action P M → Prop}
     (a.fairSegActions d ps s0 k).Forall r
 ```
 
-`Cslib.FLP.FairScheduler.fairDeliverMsg_foldList` (theorem, [line 132](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L132))
+`Cslib.FLP.FairScheduler.fairDeliverMsg_foldList` (theorem, [line 132](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L132))
 
 > The correctness of `d.foldList s ml ms` under the assumption `a.FairDeliverMsg d ps q`.
 
@@ -151,7 +151,7 @@ theorem fairDeliverMsg_foldList {d : DeliverMsg P M S} {ps : Set P} {q : State P
     a.lts.MTr s xl t ∧ q t ∧ ∀ m, m ∈ ml → ¬ m ∈ ms → some m ∈ xl
 ```
 
-`Cslib.FLP.FairScheduler.fairDeliverMsg_scheduleMsgs` (theorem, [line 153](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L153))
+`Cslib.FLP.FairScheduler.fairDeliverMsg_scheduleMsgs` (theorem, [line 153](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L153))
 
 > The correctness of `d.scheduleMsgs ps s` under the assumption `a.FairDeliverMsg d ps q`.
 
@@ -163,7 +163,7 @@ theorem fairDeliverMsg_scheduleMsgs {d : DeliverMsg P M S} {ps : Set P} {q : Sta
     q t ∧ a.lts.MTr s xl t ∧ 0 < xl.length ∧ ∀ m, m ∈ s.msgs → m.dest ∈ ps → some m ∈ xl
 ```
 
-`Cslib.FLP.FairScheduler.fair_fairSegs` (theorem, [line 177](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L177))
+`Cslib.FLP.FairScheduler.fair_fairSegs` (theorem, [line 177](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L177))
 
 > The correctness of `a.fairSegEnds d ps s0` and `a.fairSegActions d ps s0`
 > under the assumption `a.FairDeliverMsg d ps q`.
@@ -177,7 +177,7 @@ theorem fair_fairSegs {d : DeliverMsg P M S} {ps : Set P} {q : State P M S → P
       ∀ m, m ∈ (ts k).msgs → m.dest ∈ ps → some m ∈ xls k
 ```
 
-`Cslib.FLP.FairScheduler.flatten_fairSegs` (theorem, [line 190](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L190))
+`Cslib.FLP.FairScheduler.flatten_fairSegs` (theorem, [line 190](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L190))
 
 > Given an infinite sequence of non-empty finite executions of algorithm `a`,
 > if all messages with destinations in `ps` that are in-flight at the beginning of each
@@ -194,7 +194,7 @@ theorem flatten_fairSegs {ps : Set P}
       ∀ p, p ∈ ps → ProcFair p ss xls.flatten
 ```
 
-`Cslib.FLP.FairScheduler.fair_omegaExecution` (theorem, [line 212](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L212))
+`Cslib.FLP.FairScheduler.fair_omegaExecution` (theorem, [line 212](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L212))
 
 > Under the assumption `a.FairDeliverMsg d ps q`, the infinite sequence of finite executions
 > of `a` represented by `a.fairSegEnds d ps s0` and `a.fairSegActions d ps s0` can be concatenated
@@ -212,7 +212,7 @@ theorem fair_omegaExecution {d : DeliverMsg P M S} {ps : Set P} {q : State P M S
       ∀ p, p ∈ ps → ProcFair p ss xls.flatten
 ```
 
-`Cslib.FLP.FairScheduler.omega_forall_actions` (theorem, [line 233](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L233))
+`Cslib.FLP.FairScheduler.omega_forall_actions` (theorem, [line 233](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean#L233))
 
 > If `d.ForallActions r`, then the concatenation of all `a.fairSegActions d ps s0` segments
 > can only use actions satisfying `r`.
@@ -231,5 +231,5 @@ theorem omega_forall_actions {d : DeliverMsg P M S} {ps : Set P}
 
 ## Sources
 
-- [Cslib/Computability/Distributed/FLP/FairScheduler.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/FairScheduler.lean)
+- [Cslib/Computability/Distributed/FLP/FairScheduler.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Distributed/FLP/FairScheduler.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Distributed.FLP.FairScheduler.json)

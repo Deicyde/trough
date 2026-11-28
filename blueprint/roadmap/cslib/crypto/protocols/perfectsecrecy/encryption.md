@@ -7,7 +7,7 @@ proof: formalized
 
 # Private-Key Encryption Schemes (Information-Theoretic)
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.Encryption`, in [Cslib/Crypto/Protocols/PerfectSecrecy/Encryption.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Encryption.lean), by Samuel Schlesinger.
+`Cslib.Crypto.Protocols.PerfectSecrecy.Encryption`, in [Cslib/Crypto/Protocols/PerfectSecrecy/Encryption.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/PerfectSecrecy/Encryption.lean), by Samuel Schlesinger.
 
 > An information-theoretic private-key encryption scheme following
 > [KatzLindell2020], Definition 2.1. Key generation and encryption are
@@ -23,7 +23,7 @@ proof: formalized
 >
 > * [J. Katz, Y. Lindell, *Introduction to Modern Cryptography*][KatzLindell2020]
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme` (structure, [line 38](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Encryption.lean#L38))
+`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme` (structure, [line 38](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/PerfectSecrecy/Encryption.lean#L38))
 
 > A private-key encryption scheme over message space `M`, key space `K`,
 > and ciphertext space `C` ([KatzLindell2020], Definition 2.1).
@@ -41,7 +41,7 @@ structure EncScheme (Message Key Ciphertext : Type*) where
     ciphertext ∈ (enc key message).support → dec key ciphertext = message
 ```
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.ofPure` (definition, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Encryption.lean#L51))
+`Cslib.Crypto.Protocols.PerfectSecrecy.EncScheme.ofPure` (definition, [line 51](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/PerfectSecrecy/Encryption.lean#L51))
 
 > Build an encryption scheme from deterministic pure encryption/decryption
 > where decryption is a left inverse of encryption for every key.
@@ -59,5 +59,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Crypto/Protocols/PerfectSecrecy/Encryption.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/Encryption.lean)
+- [Cslib/Crypto/Protocols/PerfectSecrecy/Encryption.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Crypto/Protocols/PerfectSecrecy/Encryption.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Crypto.Protocols.PerfectSecrecy.Encryption.json)

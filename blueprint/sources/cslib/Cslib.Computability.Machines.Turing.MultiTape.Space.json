@@ -2,7 +2,7 @@
  "schema": "trough-ledger/v1",
  "library": "CSLib",
  "repo": "leanprover/cslib",
- "rev": "7c95c37f952458306479b64468cb98d101ee1cf1",
+ "rev": "8b510d014295ed2c2334a379a7c96561a1603dc4",
  "module": "Cslib.Computability.Machines.Turing.MultiTape.Space",
  "file": "Cslib/Computability/Machines/Turing/MultiTape/Space.lean",
  "public": [

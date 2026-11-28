@@ -7,7 +7,7 @@ proof: formalized
 
 # Version Space
 
-`Cslib.MachineLearning.PACLearning.VersionSpace`, in [Cslib/MachineLearning/PACLearning/VersionSpace.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean), by Dhruv Gupta.
+`Cslib.MachineLearning.PACLearning.VersionSpace`, in [Cslib/MachineLearning/PACLearning/VersionSpace.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean), by Dhruv Gupta.
 
 > The *version space* of a concept class `C` given a labeled sample `S` is the
 > subset of `C` whose concepts agree with `S` on every observed point — the
@@ -47,7 +47,7 @@ proof: formalized
 
 > ### Version Space
 
-`Cslib.MachineLearning.PACLearning.VersionSpace` (definition, [line 65](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L65))
+`Cslib.MachineLearning.PACLearning.VersionSpace` (definition, [line 65](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L65))
 
 > The *version space* of a concept class `C` given a labeled sample `S`:
 > the set of concepts in `C` whose labels agree with `S` on every observed point.
@@ -57,7 +57,7 @@ def VersionSpace {m : ℕ} (C : ConceptClass α β) (S : LabeledSample α β m) 
     ConceptClass α β
 ```
 
-`Cslib.MachineLearning.PACLearning.mem_versionSpace_iff` (theorem, [line 71](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L71))
+`Cslib.MachineLearning.PACLearning.mem_versionSpace_iff` (theorem, [line 71](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L71))
 
 > Membership in the version space unfolds to concept membership plus
 > per-sample consistency.
@@ -68,7 +68,7 @@ theorem mem_versionSpace_iff {m : ℕ} {C : ConceptClass α β}
     h ∈ VersionSpace C S ↔ h ∈ C ∧ ∀ i : Fin m, h (S i).1 = (S i).2
 ```
 
-`Cslib.MachineLearning.PACLearning.versionSpace_subset` (theorem, [line 76](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L76))
+`Cslib.MachineLearning.PACLearning.versionSpace_subset` (theorem, [line 76](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L76))
 
 > The version space is a subset of the original concept class.
 
@@ -78,7 +78,7 @@ theorem versionSpace_subset {m : ℕ} (C : ConceptClass α β)
     VersionSpace C S ⊆ C
 ```
 
-`Cslib.MachineLearning.PACLearning.versionSpace_empty_sample` (theorem, [line 81](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L81))
+`Cslib.MachineLearning.PACLearning.versionSpace_empty_sample` (theorem, [line 81](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L81))
 
 > Version space on the empty sample equals the whole concept class.
 
@@ -88,7 +88,7 @@ theorem versionSpace_empty_sample (C : ConceptClass α β)
     VersionSpace C S = C
 ```
 
-`Cslib.MachineLearning.PACLearning.versionSpace_reindex` (theorem, [line 90](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L90))
+`Cslib.MachineLearning.PACLearning.versionSpace_reindex` (theorem, [line 90](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L90))
 
 > *Version space reindexing.* For any reindexing `f : Fin m → Fin n`, the
 > version space on `S` is contained in the version space on the reindexed sample
@@ -100,7 +100,7 @@ theorem versionSpace_reindex {m n : ℕ} (f : Fin m → Fin n) (C : ConceptClass
     VersionSpace C S ⊆ VersionSpace C (S ∘ f)
 ```
 
-`Cslib.MachineLearning.PACLearning.versionSpace_antitone` (theorem, [line 99](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L99))
+`Cslib.MachineLearning.PACLearning.versionSpace_antitone` (theorem, [line 99](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L99))
 
 > *Version space antitonicity.* Given a sample of size `n` and `m ≤ n`, the
 > version space on all `n` observations is a subset of the version space on the
@@ -113,7 +113,7 @@ theorem versionSpace_antitone {m n : ℕ} (hmn : m ≤ n) (C : ConceptClass α �
     VersionSpace C S ⊆ VersionSpace C (S ∘ Fin.castLE hmn)
 ```
 
-`Cslib.MachineLearning.PACLearning.versionSpace_mono_C` (theorem, [line 105](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L105))
+`Cslib.MachineLearning.PACLearning.versionSpace_mono_C` (theorem, [line 105](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L105))
 
 > *Version space is monotone in the concept class.*
 
@@ -125,7 +125,7 @@ theorem versionSpace_mono_C {m : ℕ} {C C' : ConceptClass α β} (hCC' : C ⊆ 
 
 > ### Empirical Error
 
-`Cslib.MachineLearning.PACLearning.empiricalMiscount` (definition, [line 114](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L114))
+`Cslib.MachineLearning.PACLearning.empiricalMiscount` (definition, [line 114](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L114))
 
 > The *empirical miscount* of a hypothesis `h` on a labeled sample `S`: the
 > number of sample points where `h` predicts incorrectly.
@@ -135,7 +135,7 @@ def empiricalMiscount [DecidableEq β] {m : ℕ} (h : α → β)
     (S : LabeledSample α β m) : ℕ
 ```
 
-`Cslib.MachineLearning.PACLearning.empiricalMeasure` (definition, [line 123](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L123))
+`Cslib.MachineLearning.PACLearning.empiricalMeasure` (definition, [line 123](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L123))
 
 > The *empirical distribution* of a labeled sample: the uniform mixture of
 > Dirac measures at each sample point. Equals the zero measure when `m = 0`.
@@ -145,7 +145,7 @@ noncomputable def empiricalMeasure {m : ℕ} (S : LabeledSample α β m) :
     Measure (α × β)
 ```
 
-`Cslib.MachineLearning.PACLearning.empiricalError` (definition, [line 130](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L130))
+`Cslib.MachineLearning.PACLearning.empiricalError` (definition, [line 130](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L130))
 
 > The *empirical 0-1 error* of `h` on `S`: the empirical distribution's
 > mass on the disagreement set.
@@ -155,7 +155,7 @@ noncomputable def empiricalError {m : ℕ} (h : α → β) (S : LabeledSample α
     ℝ≥0∞
 ```
 
-`Cslib.MachineLearning.PACLearning.mem_versionSpace_iff_empiricalMiscount_zero` (theorem, [line 138](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L138))
+`Cslib.MachineLearning.PACLearning.mem_versionSpace_iff_empiricalMiscount_zero` (theorem, [line 138](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L138))
 
 > Version-space membership equals concept-class membership plus zero empirical
 > miscount (combinatorial bridge).
@@ -166,7 +166,7 @@ theorem mem_versionSpace_iff_empiricalMiscount_zero [DecidableEq β]
     h ∈ VersionSpace C S ↔ h ∈ C ∧ empiricalMiscount h S = 0
 ```
 
-`Cslib.MachineLearning.PACLearning.mem_versionSpace_iff_empiricalError_zero` (theorem, [line 147](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L147))
+`Cslib.MachineLearning.PACLearning.mem_versionSpace_iff_empiricalError_zero` (theorem, [line 147](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L147))
 
 > Version-space membership equals concept-class membership plus zero empirical
 > error (measure-theoretic bridge).
@@ -179,7 +179,7 @@ theorem mem_versionSpace_iff_empiricalError_zero
     h ∈ VersionSpace C S ↔ h ∈ C ∧ empiricalError h S = 0
 ```
 
-`Cslib.MachineLearning.PACLearning.empiricalError_eq_div` (theorem, [line 161](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L161))
+`Cslib.MachineLearning.PACLearning.empiricalError_eq_div` (theorem, [line 161](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L161))
 
 > The empirical 0-1 error equals the empirical miscount divided by the
 > sample size.
@@ -194,7 +194,7 @@ theorem empiricalError_eq_div [DecidableEq β]
 
 > ### Realizable Samples
 
-`Cslib.MachineLearning.PACLearning.Realizable` (definition, [line 176](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L176))
+`Cslib.MachineLearning.PACLearning.Realizable` (definition, [line 176](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L176))
 
 > A labeled sample `S` is *realizable* by concept class `C` if some concept
 > in `C` labels every sample point correctly.
@@ -205,7 +205,7 @@ def Realizable {m : ℕ} (C : ConceptClass α β) (S : LabeledSample α β m) : 
 
 > ### Consistent Learners
 
-`Cslib.MachineLearning.PACLearning.IsConsistent` (definition, [line 185](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L185))
+`Cslib.MachineLearning.PACLearning.IsConsistent` (definition, [line 185](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L185))
 
 > A learner is *consistent* with the concept class `C` if, on every sample
 > realizable by `C`, its output hypothesis lies in the version space of `C` at
@@ -216,7 +216,7 @@ def Realizable {m : ℕ} (C : ConceptClass α β) (S : LabeledSample α β m) : 
 def IsConsistent {m : ℕ} (A : Learner α β m) (C : ConceptClass α β) : Prop
 ```
 
-`Cslib.MachineLearning.PACLearning.IsConsistent.output_mem_conceptClass` (theorem, [line 189](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L189))
+`Cslib.MachineLearning.PACLearning.IsConsistent.output_mem_conceptClass` (theorem, [line 189](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L189))
 
 > A consistent learner's output is in the concept class on every realizable sample.
 
@@ -227,7 +227,7 @@ theorem IsConsistent.output_mem_conceptClass {m : ℕ} {A : Learner α β m}
     A S ∈ C
 ```
 
-`Cslib.MachineLearning.PACLearning.IsConsistent.output_agrees` (theorem, [line 196](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L196))
+`Cslib.MachineLearning.PACLearning.IsConsistent.output_agrees` (theorem, [line 196](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L196))
 
 > On every realizable sample, a consistent learner's output agrees with
 > every observed point.
@@ -239,7 +239,7 @@ theorem IsConsistent.output_agrees {m : ℕ} {A : Learner α β m}
     A S (S i).1 = (S i).2
 ```
 
-`Cslib.MachineLearning.PACLearning.IsConsistent.empiricalMiscount_eq_zero` (theorem, [line 202](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L202))
+`Cslib.MachineLearning.PACLearning.IsConsistent.empiricalMiscount_eq_zero` (theorem, [line 202](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L202))
 
 > A consistent learner has zero empirical miscount on every realizable sample.
 
@@ -250,7 +250,7 @@ theorem IsConsistent.empiricalMiscount_eq_zero [DecidableEq β]
     empiricalMiscount (A S) S = 0
 ```
 
-`Cslib.MachineLearning.PACLearning.IsConsistent.empiricalError_eq_zero` (theorem, [line 209](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L209))
+`Cslib.MachineLearning.PACLearning.IsConsistent.empiricalError_eq_zero` (theorem, [line 209](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L209))
 
 > A consistent learner has zero empirical error on every realizable sample.
 
@@ -265,7 +265,7 @@ theorem IsConsistent.empiricalError_eq_zero
 
 > ### Realizable Version Spaces
 
-`Cslib.MachineLearning.PACLearning.mem_versionSpace_of_realizable` (theorem, [line 222](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L222))
+`Cslib.MachineLearning.PACLearning.mem_versionSpace_of_realizable` (theorem, [line 222](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L222))
 
 > *Realizable version-space nonemptiness.* If a target concept `c` lies in
 > `C` and the sample `S` is labeled by `c` (i.e. every `(S i).2 = c (S i).1`),
@@ -278,7 +278,7 @@ theorem mem_versionSpace_of_realizable {m : ℕ} {C : ConceptClass α β}
     c ∈ VersionSpace C S
 ```
 
-`Cslib.MachineLearning.PACLearning.Realizable.versionSpace_nonempty` (theorem, [line 229](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L229))
+`Cslib.MachineLearning.PACLearning.Realizable.versionSpace_nonempty` (theorem, [line 229](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L229))
 
 > A realizable sample has nonempty version space.
 
@@ -290,7 +290,7 @@ theorem Realizable.versionSpace_nonempty {m : ℕ} {C : ConceptClass α β}
 
 > ### Probabilistic Realizable
 
-`Cslib.MachineLearning.PACLearning.ae_mem_versionSpace_of_realizable` (theorem, [line 263](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L263))
+`Cslib.MachineLearning.PACLearning.ae_mem_versionSpace_of_realizable` (theorem, [line 263](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean#L263))
 
 > Under iid sampling from the realizable joint distribution induced by
 > `c ∈ C` and a probability measure `P` on `α`, the target concept `c` lies in
@@ -313,5 +313,5 @@ theorem ae_mem_versionSpace_of_realizable
 
 ## Sources
 
-- [Cslib/MachineLearning/PACLearning/VersionSpace.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VersionSpace.lean)
+- [Cslib/MachineLearning/PACLearning/VersionSpace.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/MachineLearning/PACLearning/VersionSpace.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.MachineLearning.PACLearning.VersionSpace.json)

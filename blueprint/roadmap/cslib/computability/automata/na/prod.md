@@ -7,9 +7,9 @@ proof: formalized
 
 # Product of nondeterministic automata
 
-`Cslib.Computability.Automata.NA.Prod`, in [Cslib/Computability/Automata/NA/Prod.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Prod.lean), by Ching-Tsun Chou.
+`Cslib.Computability.Automata.NA.Prod`, in [Cslib/Computability/Automata/NA/Prod.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Prod.lean), by Ching-Tsun Chou.
 
-`Cslib.Automata.NA.iProd` (definition, [line 24](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Prod.lean#L24))
+`Cslib.Automata.NA.iProd` (definition, [line 24](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Prod.lean#L24))
 
 > The product of an indexed family of nondeterministic automata.
 
@@ -17,7 +17,7 @@ proof: formalized
 def iProd (na : (i : I) → NA (State i) Symbol) : NA (Π i, State i) Symbol
 ```
 
-`Cslib.Automata.NA.iProd_run_iff` (theorem, [line 31](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Prod.lean#L31))
+`Cslib.Automata.NA.iProd_run_iff` (theorem, [line 31](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Prod.lean#L31))
 
 > Every run of the product automaton projects onto runs of its component automata,
 > and vice versa.
@@ -34,5 +34,5 @@ theorem iProd_run_iff {na : (i : I) → NA (State i) Symbol}
 
 ## Sources
 
-- [Cslib/Computability/Automata/NA/Prod.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/Prod.lean)
+- [Cslib/Computability/Automata/NA/Prod.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/Automata/NA/Prod.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.NA.Prod.json)

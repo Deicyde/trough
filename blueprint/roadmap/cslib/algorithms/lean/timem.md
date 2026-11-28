@@ -7,7 +7,7 @@ proof: formalized
 
 # TimeM: Time Complexity Monad
 
-`Cslib.Algorithms.Lean.TimeM`, in [Cslib/Algorithms/Lean/TimeM.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean), by Sorrachai Yingchareonthawornhcai, Eric Wieser.
+`Cslib.Algorithms.Lean.TimeM`, in [Cslib/Algorithms/Lean/TimeM.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean), by Sorrachai Yingchareonthawornhcai, Eric Wieser.
 
 > `TimeM T α` represents a computation that produces a value of type `α` and tracks its time cost.
 >
@@ -34,7 +34,7 @@ proof: formalized
 >
 > See [Danielsson2008] for the discussion.
 
-`Cslib.Algorithms.Lean.TimeM` (structure, [line 50](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L50))
+`Cslib.Algorithms.Lean.TimeM` (structure, [line 50](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L50))
 
 > A monad for tracking time complexity of computations.
 > `TimeM T α` represents a computation that returns a value of type `α`
@@ -48,7 +48,7 @@ structure TimeM (T : Type*) (α : Type*) where
   time : T
 ```
 
-`Cslib.Algorithms.Lean.TimeM.pure` (definition, [line 61](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L61))
+`Cslib.Algorithms.Lean.TimeM.pure` (definition, [line 61](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L61))
 
 > Lifts a pure value into a `TimeM` computation with zero time cost.
 >
@@ -58,7 +58,7 @@ structure TimeM (T : Type*) (α : Type*) where
 protected def pure [Zero T] {α} (a : α) : TimeM T α
 ```
 
-`Cslib.Algorithms.Lean.TimeM.bind` (definition, [line 70](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L70))
+`Cslib.Algorithms.Lean.TimeM.bind` (definition, [line 70](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L70))
 
 > Sequentially composes two `TimeM` computations, summing their time costs.
 >
@@ -68,100 +68,100 @@ protected def pure [Zero T] {α} (a : α) : TimeM T α
 protected def bind {α β} [Add T] (m : TimeM T α) (f : α → TimeM T β) : TimeM T β
 ```
 
-`Cslib.Algorithms.Lean.TimeM.ret_pure` (theorem, [line 97](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L97))
+`Cslib.Algorithms.Lean.TimeM.ret_pure` (theorem, [line 97](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L97))
 
 ```lean
 theorem ret_pure {α} [Zero T] (a : α) : (pure a : TimeM T α).ret = a
 ```
 
-`Cslib.Algorithms.Lean.TimeM.ret_bind` (theorem, [line 98](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L98))
+`Cslib.Algorithms.Lean.TimeM.ret_bind` (theorem, [line 98](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L98))
 
 ```lean
 theorem ret_bind {α β} [Add T] (m : TimeM T α) (f : α → TimeM T β) :
     (m >>= f).ret = (f m.ret).ret
 ```
 
-`Cslib.Algorithms.Lean.TimeM.ret_map` (theorem, [line 100](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L100))
+`Cslib.Algorithms.Lean.TimeM.ret_map` (theorem, [line 100](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L100))
 
 ```lean
 theorem ret_map {α β} (f : α → β) (x : TimeM T α) : (f <$> x).ret = f x.ret
 ```
 
-`Cslib.Algorithms.Lean.TimeM.ret_mapConst` (theorem, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L101))
+`Cslib.Algorithms.Lean.TimeM.ret_mapConst` (theorem, [line 101](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L101))
 
 ```lean
 theorem ret_mapConst {α β} (a : α) (x : TimeM T β) :
     (Functor.mapConst a x).ret = a
 ```
 
-`Cslib.Algorithms.Lean.TimeM.ret_seqRight` (theorem, [line 103](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L103))
+`Cslib.Algorithms.Lean.TimeM.ret_seqRight` (theorem, [line 103](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L103))
 
 ```lean
 theorem ret_seqRight {α} (x : TimeM T α) (y : Unit → TimeM T β) [Add T] :
     (SeqRight.seqRight x y).ret = (y ()).ret
 ```
 
-`Cslib.Algorithms.Lean.TimeM.ret_seqLeft` (theorem, [line 105](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L105))
+`Cslib.Algorithms.Lean.TimeM.ret_seqLeft` (theorem, [line 105](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L105))
 
 ```lean
 theorem ret_seqLeft {α} [Add T] (x : TimeM T α) (y : Unit → TimeM T β) :
     (SeqLeft.seqLeft x y).ret = x.ret
 ```
 
-`Cslib.Algorithms.Lean.TimeM.ret_seq` (theorem, [line 107](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L107))
+`Cslib.Algorithms.Lean.TimeM.ret_seq` (theorem, [line 107](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L107))
 
 ```lean
 theorem ret_seq {α β} [Add T] (f : TimeM T (α → β)) (x : Unit → TimeM T α) :
     (Seq.seq f x).ret = f.ret (x ()).ret
 ```
 
-`Cslib.Algorithms.Lean.TimeM.isMonadHom_pure_ret` (theorem, [line 110](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L110))
+`Cslib.Algorithms.Lean.TimeM.isMonadHom_pure_ret` (theorem, [line 110](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L110))
 
 ```lean
 theorem isMonadHom_pure_ret [AddZero T] : Cslib.IsMonadHom (TimeM T) Id (fun x => pure x.ret)
 ```
 
-`Cslib.Algorithms.Lean.TimeM.time_bind` (theorem, [line 119](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L119))
+`Cslib.Algorithms.Lean.TimeM.time_bind` (theorem, [line 119](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L119))
 
 ```lean
 theorem time_bind {α β} [Add T] (m : TimeM T α) (f : α → TimeM T β) :
     (m >>= f).time = m.time + (f m.ret).time
 ```
 
-`Cslib.Algorithms.Lean.TimeM.time_pure` (theorem, [line 121](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L121))
+`Cslib.Algorithms.Lean.TimeM.time_pure` (theorem, [line 121](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L121))
 
 ```lean
 theorem time_pure {α} [Zero T] (a : α) : (pure a : TimeM T α).time = 0
 ```
 
-`Cslib.Algorithms.Lean.TimeM.time_map` (theorem, [line 122](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L122))
+`Cslib.Algorithms.Lean.TimeM.time_map` (theorem, [line 122](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L122))
 
 ```lean
 theorem time_map {α β} (f : α → β) (x : TimeM T α) : (f <$> x).time = x.time
 ```
 
-`Cslib.Algorithms.Lean.TimeM.time_seqRight` (theorem, [line 123](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L123))
+`Cslib.Algorithms.Lean.TimeM.time_seqRight` (theorem, [line 123](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L123))
 
 ```lean
 theorem time_seqRight {α} [Add T] (x : TimeM T α) (y : Unit → TimeM T β) :
     (SeqRight.seqRight x y).time = x.time + (y ()).time
 ```
 
-`Cslib.Algorithms.Lean.TimeM.time_seqLeft` (theorem, [line 125](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L125))
+`Cslib.Algorithms.Lean.TimeM.time_seqLeft` (theorem, [line 125](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L125))
 
 ```lean
 theorem time_seqLeft {α} [Add T] (x : TimeM T α) (y : Unit → TimeM T β) :
     (SeqLeft.seqLeft x y).time = x.time + (y ()).time
 ```
 
-`Cslib.Algorithms.Lean.TimeM.time_seq` (theorem, [line 127](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L127))
+`Cslib.Algorithms.Lean.TimeM.time_seq` (theorem, [line 127](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L127))
 
 ```lean
 theorem time_seq {α β} [Add T] (f : TimeM T (α → β)) (x : Unit → TimeM T α) :
     (Seq.seq f x).time = f.time + (x ()).time
 ```
 
-`Cslib.Algorithms.Lean.TimeM.tick` (definition, [line 139](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L139))
+`Cslib.Algorithms.Lean.TimeM.tick` (definition, [line 139](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L139))
 
 > Creates a `TimeM` computation with a time cost.
 
@@ -169,13 +169,13 @@ theorem time_seq {α β} [Add T] (f : TimeM T (α → β)) (x : Unit → TimeM T
 def tick (c : T) : TimeM T PUnit
 ```
 
-`Cslib.Algorithms.Lean.TimeM.ret_tick` (theorem, [line 141](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L141))
+`Cslib.Algorithms.Lean.TimeM.ret_tick` (theorem, [line 141](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L141))
 
 ```lean
 theorem ret_tick (c : T) : (tick c).ret = ()
 ```
 
-`Cslib.Algorithms.Lean.TimeM.time_tick` (theorem, [line 142](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean#L142))
+`Cslib.Algorithms.Lean.TimeM.time_tick` (theorem, [line 142](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean#L142))
 
 ```lean
 theorem time_tick (c : T) : (tick c).time = c
@@ -187,5 +187,5 @@ theorem time_tick (c : T) : (tick c).time = c
 
 ## Sources
 
-- [Cslib/Algorithms/Lean/TimeM.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/TimeM.lean)
+- [Cslib/Algorithms/Lean/TimeM.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Algorithms/Lean/TimeM.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Algorithms.Lean.TimeM.json)

@@ -1,14 +1,14 @@
 {"stats":
- {"theorems_with_proof": 11289,
-  "theorems": 11289,
-  "statement_edges": 865,
-  "requested": 4811,
-  "proof_edges": 251,
+ {"theorems_with_proof": 12119,
+  "theorems": 12119,
+  "statement_edges": 904,
+  "requested": 5193,
+  "proof_edges": 266,
   "private": 59,
-  "modules": 312,
+  "modules": 327,
   "missing": 0},
  "schema": "trough-library-deps/v1",
- "rev": "7c95c37f952458306479b64468cb98d101ee1cf1",
+ "rev": "8b510d014295ed2c2334a379a7c96561a1603dc4",
  "private":
  ["HuntingtonAlgebra.bot_sup",
   "HuntingtonAlgebra.bot_sup_bot",
@@ -246,17 +246,41 @@
    "proof": ["Cslib.Logics.Modal.Unary.Basic"]},
   "Cslib.Languages.StatefulProcesses.Network":
   {"statement":
-   ["Cslib.Foundations.Semantics.LTS.Basic",
+   ["Cslib.Foundations.Data.HasTrue",
+    "Cslib.Foundations.Semantics.LTS.Basic",
     "Cslib.Foundations.Syntax.HasSubstitution",
-    "Cslib.Languages.Mech.LocalComputation",
+    "Cslib.Languages.Mech.Common.Basic",
+    "Cslib.Languages.Mech.Common.Expr.Basic",
+    "Cslib.Languages.Mech.Common.GlobalStore",
     "Cslib.Languages.StatefulProcesses.Basic"],
    "proof": []},
   "Cslib.Languages.StatefulProcesses.Basic":
-  {"statement": ["Cslib.Foundations.Semantics.LTS.Basic", "Cslib.Languages.Mech.LocalComputation"],
+  {"statement":
+   ["Cslib.Foundations.Data.HasTrue",
+    "Cslib.Foundations.Semantics.LTS.Basic",
+    "Cslib.Languages.Mech.Common.Basic",
+    "Cslib.Languages.Mech.Common.Expr.Basic"],
    "proof": []},
-  "Cslib.Languages.Mech.LocalComputation":
-  {"statement": ["Cslib.Foundations.Syntax.HasSubstitution"], "proof": []},
-  "Cslib.Languages.Mech.Choreography.Basic": {"statement": [], "proof": []},
+  "Cslib.Languages.Mech.Common.LocalStore":
+  {"statement": ["Cslib.Foundations.Syntax.HasSubstitution", "Cslib.Languages.Mech.Common.Basic"],
+   "proof": []},
+  "Cslib.Languages.Mech.Common.GlobalStore":
+  {"statement":
+   ["Cslib.Foundations.Syntax.HasSubstitution",
+    "Cslib.Languages.Mech.Common.Basic",
+    "Cslib.Languages.Mech.Common.LocalStore"],
+   "proof": []},
+  "Cslib.Languages.Mech.Common.Expr.Notation": {"statement": [], "proof": []},
+  "Cslib.Languages.Mech.Common.Expr.Basic":
+  {"statement": ["Cslib.Languages.Mech.Common.Basic", "Cslib.Languages.Mech.Common.LocalStore"],
+   "proof": []},
+  "Cslib.Languages.Mech.Common.Basic": {"statement": [], "proof": []},
+  "Cslib.Languages.Mech.Choreography.Basic":
+  {"statement":
+   ["Cslib.Foundations.Data.HasTrue",
+    "Cslib.Languages.Mech.Common.Basic",
+    "Cslib.Languages.Mech.Common.Expr.Basic"],
+   "proof": []},
   "Cslib.Languages.LambdaCalculus.Named.Untyped.Properties":
   {"statement":
    ["Cslib.Foundations.Data.HasFresh",
@@ -671,30 +695,54 @@
   {"statement": ["Cslib.Foundations.Semantics.FLTS.Basic", "Cslib.Foundations.Semantics.LTS.Basic"],
    "proof": []},
   "Cslib.Foundations.Semantics.FLTS.Basic": {"statement": [], "proof": []},
+  "Cslib.Foundations.RelationAlgebra.SpecialElements":
+  {"statement":
+   ["Cslib.Foundations.Data.SetRel",
+    "Cslib.Foundations.Relation.Defs",
+    "Cslib.Foundations.RelationAlgebra.Basic"],
+   "proof": []},
   "Cslib.Foundations.RelationAlgebra.Representation":
   {"statement":
    ["Cslib.Foundations.RelationAlgebra.Basic",
     "Cslib.Foundations.RelationAlgebra.Hom",
     "Cslib.Foundations.RelationAlgebra.Pi"],
    "proof": []},
+  "Cslib.Foundations.RelationAlgebra.Relativization":
+  {"statement":
+   ["Cslib.Foundations.RelationAlgebra.Basic",
+    "Cslib.Foundations.RelationAlgebra.Hom",
+    "Cslib.Foundations.RelationAlgebra.SpecialElements"],
+   "proof": ["Cslib.Foundations.Order.AlgebraIntervals"]},
   "Cslib.Foundations.RelationAlgebra.Pi":
   {"statement":
    ["Cslib.Foundations.RelationAlgebra.Basic", "Cslib.Foundations.RelationAlgebra.Hom"],
    "proof": []},
+  "Cslib.Foundations.RelationAlgebra.IntegralAtomStructure":
+  {"statement":
+   ["Cslib.Foundations.RelationAlgebra.AtomStructure", "Cslib.Foundations.RelationAlgebra.Basic"],
+   "proof": ["Cslib.Foundations.RelationAlgebra.Hom"]},
+  "Cslib.Foundations.RelationAlgebra.Integral":
+  {"statement":
+   ["Cslib.Foundations.RelationAlgebra.Basic", "Cslib.Foundations.RelationAlgebra.SpecialElements"],
+   "proof": []},
   "Cslib.Foundations.RelationAlgebra.Hom":
-  {"statement": ["Cslib.Foundations.RelationAlgebra.Basic"], "proof": []},
+  {"statement": ["Cslib.Foundations.Data.SetRel", "Cslib.Foundations.RelationAlgebra.Basic"],
+   "proof": []},
   "Cslib.Foundations.RelationAlgebra.Group":
   {"statement":
    ["Cslib.Foundations.RelationAlgebra.AtomStructure",
     "Cslib.Foundations.RelationAlgebra.Basic",
     "Cslib.Foundations.RelationAlgebra.Hom",
-    "Cslib.Foundations.RelationAlgebra.Representation"],
+    "Cslib.Foundations.RelationAlgebra.Representation",
+    "Cslib.Foundations.RelationAlgebra.SpecialElements"],
    "proof": ["Cslib.Foundations.RelationAlgebra.Pi"]},
   "Cslib.Foundations.RelationAlgebra.Basic":
   {"statement": ["Cslib.Foundations.Order.Huntington"], "proof": []},
   "Cslib.Foundations.RelationAlgebra.AtomStructure":
   {"statement":
-   ["Cslib.Foundations.RelationAlgebra.Basic", "Cslib.Foundations.RelationAlgebra.Hom"],
+   ["Cslib.Foundations.RelationAlgebra.Basic",
+    "Cslib.Foundations.RelationAlgebra.Hom",
+    "Cslib.Foundations.RelationAlgebra.SpecialElements"],
    "proof": []},
   "Cslib.Foundations.Relation.Termination":
   {"statement": ["Cslib.Foundations.Relation.Defs"], "proof": []},
@@ -720,6 +768,7 @@
   "Cslib.Foundations.Order.Huntington": {"statement": [], "proof": []},
   "Cslib.Foundations.Order.Heyting": {"statement": [], "proof": []},
   "Cslib.Foundations.Order.FixedPoints": {"statement": [], "proof": []},
+  "Cslib.Foundations.Order.AlgebraIntervals": {"statement": [], "proof": []},
   "Cslib.Foundations.MeasureTheory.FiniteSupport": {"statement": [], "proof": []},
   "Cslib.Foundations.Logic.Operators":
   {"statement": ["Cslib.Foundations.Data.PFunctor.Basic"], "proof": []},
@@ -736,6 +785,7 @@
    "proof": []},
   "Cslib.Foundations.Lint.Basic": {"statement": [], "proof": []},
   "Cslib.Foundations.Data.StackTape": {"statement": [], "proof": []},
+  "Cslib.Foundations.Data.SetRel": {"statement": [], "proof": []},
   "Cslib.Foundations.Data.Set.Saturation": {"statement": [], "proof": []},
   "Cslib.Foundations.Data.Polynomial.Monotone": {"statement": [], "proof": []},
   "Cslib.Foundations.Data.PFunctor.Free.W":
@@ -765,6 +815,7 @@
   "Cslib.Foundations.Data.Nat.Factorial": {"statement": [], "proof": []},
   "Cslib.Foundations.Data.Nat.Asymptotics": {"statement": [], "proof": []},
   "Cslib.Foundations.Data.List.IsChainFromTo": {"statement": [], "proof": []},
+  "Cslib.Foundations.Data.HasTrue": {"statement": [], "proof": []},
   "Cslib.Foundations.Data.HasFresh": {"statement": [], "proof": []},
   "Cslib.Foundations.Data.Finset.Involution": {"statement": [], "proof": []},
   "Cslib.Foundations.Data.FinFun.Update":
@@ -870,6 +921,16 @@
    "proof": ["Cslib.Foundations.Data.Polynomial.Monotone"]},
   "Cslib.Computability.Machines.Turing.SingleTape.Defs":
   {"statement": ["Cslib.Foundations.Data.BiTape"], "proof": []},
+  "Cslib.Computability.Machines.Turing.MultiTape.Transducer":
+  {"statement":
+   ["Cslib.Computability.Automata.DA.Basic",
+    "Cslib.Computability.Automata.DA.Transducer",
+    "Cslib.Computability.Machines.Turing.MultiTape.Configuration",
+    "Cslib.Computability.Machines.Turing.MultiTape.Deterministic",
+    "Cslib.Foundations.Semantics.FLTS.Basic"],
+   "proof":
+   ["Cslib.Computability.Machines.Turing.MultiTape.Nondeterministic",
+    "Cslib.Computability.Machines.Turing.MultiTape.Space"]},
   "Cslib.Computability.Machines.Turing.MultiTape.TapeLemmas":
   {"statement":
    ["Cslib.Computability.Machines.Turing.MultiTape.Configuration",
@@ -979,6 +1040,25 @@
     "Cslib.Computability.Machines.Turing.MultiTape.Space"]},
   "Cslib.Computability.Machines.Turing.MultiTape.Nondeterministic":
   {"statement": ["Cslib.Computability.Machines.Turing.MultiTape.Configuration"], "proof": []},
+  "Cslib.Computability.Machines.Turing.MultiTape.Encodings.HeadCases":
+  {"statement":
+   ["Cslib.Computability.Encoding.Basic",
+    "Cslib.Computability.Machines.Turing.MultiTape.Deterministic"],
+   "proof":
+   ["Cslib.Computability.Automata.DA.Basic",
+    "Cslib.Computability.Automata.DA.Transducer",
+    "Cslib.Computability.Machines.Turing.MultiTape.Transducer",
+    "Cslib.Foundations.Semantics.FLTS.Basic"]},
+  "Cslib.Computability.Machines.Turing.MultiTape.Encodings.Delimit":
+  {"statement":
+   ["Cslib.Computability.Encoding.Basic",
+    "Cslib.Computability.Encoding.Delimit",
+    "Cslib.Computability.Machines.Turing.MultiTape.Deterministic"],
+   "proof":
+   ["Cslib.Computability.Automata.DA.Basic",
+    "Cslib.Computability.Automata.DA.Transducer",
+    "Cslib.Computability.Machines.Turing.MultiTape.Transducer",
+    "Cslib.Foundations.Semantics.FLTS.Basic"]},
   "Cslib.Computability.Machines.Turing.MultiTape.Deterministic":
   {"statement":
    ["Cslib.Computability.Machines.Turing.MultiTape.Configuration",
@@ -1598,6 +1678,12 @@
     "Cslib.Foundations.Semantics.LTS.Basic",
     "Cslib.Foundations.Semantics.LTS.HasTau"],
    "proof": []},
+  "Cslib.Computability.Automata.DA.Transducer":
+  {"statement":
+   ["Cslib.Computability.Automata.DA.Basic",
+    "Cslib.Computability.Automata.Transducers.Transducer",
+    "Cslib.Foundations.Semantics.FLTS.Basic"],
+   "proof": []},
   "Cslib.Computability.Automata.DA.ToNA":
   {"statement":
    ["Cslib.Computability.Automata.Acceptors.Acceptor",
@@ -1648,12 +1734,14 @@
   "Cslib.Computability.Automata.Acceptors.Acceptor": {"statement": [], "proof": []},
   "Cslib.Algorithms.StatefulProcesses.DiffieHellman.Basic":
   {"statement":
-   ["Cslib.Foundations.Semantics.LTS.Basic",
-    "Cslib.Foundations.Syntax.HasSubstitution",
-    "Cslib.Languages.Mech.LocalComputation",
+   ["Cslib.Languages.Mech.Common.Basic",
+    "Cslib.Languages.Mech.Common.Expr.Basic",
     "Cslib.Languages.StatefulProcesses.Basic",
     "Cslib.Languages.StatefulProcesses.Network"],
-   "proof": []},
+   "proof":
+   ["Cslib.Foundations.Semantics.LTS.Basic",
+    "Cslib.Languages.Mech.Common.GlobalStore",
+    "Cslib.Languages.Mech.Common.LocalStore"]},
   "Cslib.Algorithms.Lean.TimeM":
   {"statement": ["Cslib.Foundations.Control.Monad.IsMonadHom"], "proof": []},
   "Cslib.Algorithms.Lean.Sort.Merge":
@@ -1773,6 +1861,7 @@
   "Cslib.Computability.Automata.DA.Congr",
   "Cslib.Computability.Automata.DA.Prod",
   "Cslib.Computability.Automata.DA.ToNA",
+  "Cslib.Computability.Automata.DA.Transducer",
   "Cslib.Computability.Automata.EpsilonNA.Basic",
   "Cslib.Computability.Automata.EpsilonNA.OfRegularExpression",
   "Cslib.Computability.Automata.EpsilonNA.ThompsonConstruction",
@@ -1857,6 +1946,8 @@
   "Cslib.Computability.Machines.Turing.MultiTape.ConfigBound",
   "Cslib.Computability.Machines.Turing.MultiTape.Configuration",
   "Cslib.Computability.Machines.Turing.MultiTape.Deterministic",
+  "Cslib.Computability.Machines.Turing.MultiTape.Encodings.Delimit",
+  "Cslib.Computability.Machines.Turing.MultiTape.Encodings.HeadCases",
   "Cslib.Computability.Machines.Turing.MultiTape.Nondeterministic",
   "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ClearWork",
   "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapes",
@@ -1872,6 +1963,7 @@
   "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.WordsCfg",
   "Cslib.Computability.Machines.Turing.MultiTape.Space",
   "Cslib.Computability.Machines.Turing.MultiTape.TapeLemmas",
+  "Cslib.Computability.Machines.Turing.MultiTape.Transducer",
   "Cslib.Computability.Machines.Turing.SingleTape.Defs",
   "Cslib.Computability.Machines.Turing.SingleTape.Deterministic",
   "Cslib.Computability.Machines.Turing.SingleTape.NonDeterministic",
@@ -1912,6 +2004,7 @@
   "Cslib.Foundations.Data.FinFun.Update",
   "Cslib.Foundations.Data.Finset.Involution",
   "Cslib.Foundations.Data.HasFresh",
+  "Cslib.Foundations.Data.HasTrue",
   "Cslib.Foundations.Data.List.IsChainFromTo",
   "Cslib.Foundations.Data.Nat.Asymptotics",
   "Cslib.Foundations.Data.Nat.Factorial",
@@ -1929,6 +2022,7 @@
   "Cslib.Foundations.Data.PFunctor.Free.W",
   "Cslib.Foundations.Data.Polynomial.Monotone",
   "Cslib.Foundations.Data.Set.Saturation",
+  "Cslib.Foundations.Data.SetRel",
   "Cslib.Foundations.Data.StackTape",
   "Cslib.Foundations.Lint.Basic",
   "Cslib.Foundations.Logic.InferenceSystem.Basic",
@@ -1936,6 +2030,7 @@
   "Cslib.Foundations.Logic.LogicalEquivalence",
   "Cslib.Foundations.Logic.Operators",
   "Cslib.Foundations.MeasureTheory.FiniteSupport",
+  "Cslib.Foundations.Order.AlgebraIntervals",
   "Cslib.Foundations.Order.FixedPoints",
   "Cslib.Foundations.Order.Heyting",
   "Cslib.Foundations.Order.Huntington",
@@ -1953,8 +2048,12 @@
   "Cslib.Foundations.RelationAlgebra.Basic",
   "Cslib.Foundations.RelationAlgebra.Group",
   "Cslib.Foundations.RelationAlgebra.Hom",
+  "Cslib.Foundations.RelationAlgebra.Integral",
+  "Cslib.Foundations.RelationAlgebra.IntegralAtomStructure",
   "Cslib.Foundations.RelationAlgebra.Pi",
+  "Cslib.Foundations.RelationAlgebra.Relativization",
   "Cslib.Foundations.RelationAlgebra.Representation",
+  "Cslib.Foundations.RelationAlgebra.SpecialElements",
   "Cslib.Foundations.Semantics.FLTS.Basic",
   "Cslib.Foundations.Semantics.FLTS.FLTSToLTS",
   "Cslib.Foundations.Semantics.FLTS.LTSToFLTS",
@@ -2028,7 +2127,11 @@
   "Cslib.Languages.LambdaCalculus.Named.Untyped.Basic",
   "Cslib.Languages.LambdaCalculus.Named.Untyped.Properties",
   "Cslib.Languages.Mech.Choreography.Basic",
-  "Cslib.Languages.Mech.LocalComputation",
+  "Cslib.Languages.Mech.Common.Basic",
+  "Cslib.Languages.Mech.Common.Expr.Basic",
+  "Cslib.Languages.Mech.Common.Expr.Notation",
+  "Cslib.Languages.Mech.Common.GlobalStore",
+  "Cslib.Languages.Mech.Common.LocalStore",
   "Cslib.Languages.StatefulProcesses.Basic",
   "Cslib.Languages.StatefulProcesses.Network",
   "Cslib.Logics.BTL.Basic",

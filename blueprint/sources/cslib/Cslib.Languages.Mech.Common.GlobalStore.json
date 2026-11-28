@@ -1,0 +1,25 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "8b510d014295ed2c2334a379a7c96561a1603dc4",
+ "module": "Cslib.Languages.Mech.Common.GlobalStore",
+ "file": "Cslib/Languages/Mech/Common/GlobalStore.lean",
+ "public": [
+  {"name": "Cslib.Mech.Sig.Store", "kind": "abbrev", "line": 21},
+  {"name": "Cslib.Mech.Sig.Store.write", "kind": "def", "line": 25},
+  {"name": "Cslib.Mech.Sig.Store.instHasSubstitution", "kind": "instance", "line": 38},
+  {"name": "Cslib.Mech.Sig.Store.write_def", "kind": "theorem", "line": 43},
+  {"name": "Cslib.Mech.Sig.Store.subst_eq_update", "kind": "theorem", "line": 46},
+  {"name": "Cslib.Mech.Sig.Store.subst_apply_self", "kind": "theorem", "line": 52},
+  {"name": "Cslib.Mech.Sig.Store.subst_apply_of_ne", "kind": "theorem", "line": 58},
+  {"name": "Cslib.Mech.Sig.Store.getElem_subst_self", "kind": "theorem", "line": 65},
+  {"name": "Cslib.Mech.Sig.Store.getElem_subst_of_name_ne", "kind": "theorem", "line": 71},
+  {"name": "Cslib.Mech.Sig.Store.subst_subst_self", "kind": "theorem", "line": 78},
+  {"name": "Cslib.Mech.Sig.Store.subst_comm_of_ne", "kind": "theorem", "line": 84},
+  {"name": "Cslib.Mech.Sig.Store.subst_comm_of_name_ne", "kind": "theorem", "line": 91}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

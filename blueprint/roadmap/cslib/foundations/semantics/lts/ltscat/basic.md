@@ -7,7 +7,7 @@ proof: formalized
 
 # Category of Labelled Transition Systems
 
-`Cslib.Foundations.Semantics.LTS.LTSCat.Basic`, in [Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean), by Ayberk Tosun.
+`Cslib.Foundations.Semantics.LTS.LTSCat.Basic`, in [Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean), by Ayberk Tosun.
 
 > This file contains the definition of the category of labelled transition systems
 > as defined in Winskel and Nielsen's handbook chapter [WinskelNielsen1995].
@@ -16,7 +16,7 @@ proof: formalized
 >
 > * [N. Winskel and M. Nielsen, *Models for concurrency*][WinskelNielsen1995]
 
-`Cslib.LTS.withIdle` (definition, [line 33](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean#L33))
+`Cslib.LTS.withIdle` (definition, [line 33](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean#L33))
 
 > We first define what is denoted `Tran*` in [WinskelNielsen1995]: the extension of
 > a transition relation with idle transitions.
@@ -27,7 +27,7 @@ def LTS.withIdle (lts : LTS State Label) : LTS State (Option Label)
 
 > ## LTSs and LTS morphisms form a category
 
-`Cslib.LTSCat` (structure, [line 43](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean#L43))
+`Cslib.LTSCat` (structure, [line 43](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean#L43))
 
 > The definition of labelled transition system (with the type of states and the
 > type of labels as part of the structure).
@@ -42,7 +42,7 @@ structure LTSCat : Type (max u v + 1) where
   lts : LTS State Label
 ```
 
-`Cslib.LTS.Morphism` (structure, [line 56](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean#L56))
+`Cslib.LTS.Morphism` (structure, [line 56](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean#L56))
 
 > A morphism between two labelled transition systems consists of (1) a function on
 > states, (2) a partial function on labels, and a proof that (1) preserves each
@@ -59,7 +59,7 @@ structure LTS.Morphism (lts₁ lts₂ : LTSCat.{u, v}) : Type (max u v) where
     lts₁.lts.Tr s l s' → (withIdle lts₂.lts).Tr (stateMap s) (labelMap l) (stateMap s')
 ```
 
-`Cslib.LTS.Morphism.id` (definition, [line 66](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean#L66))
+`Cslib.LTS.Morphism.id` (definition, [line 66](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean#L66))
 
 > The identity LTS morphism.
 
@@ -67,7 +67,7 @@ structure LTS.Morphism (lts₁ lts₂ : LTSCat.{u, v}) : Type (max u v) where
 def LTS.Morphism.id (lts : LTSCat) : LTS.Morphism lts lts
 ```
 
-`Cslib.LTS.Morphism.comp` (definition, [line 75](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean#L75))
+`Cslib.LTS.Morphism.comp` (definition, [line 75](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean#L75))
 
 > Composition of LTS morphisms.
 >
@@ -84,5 +84,5 @@ def LTS.Morphism.comp {lts₁ lts₂ lts₃} (f : LTS.Morphism lts₁ lts₂) (g
 
 ## Sources
 
-- [Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean)
+- [Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Foundations/Semantics/LTS/LTSCat/Basic.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Foundations.Semantics.LTS.LTSCat.Basic.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Straight-Line Programs
 
-`Cslib.Computability.URM.StraightLine`, in [Cslib/Computability/URM/StraightLine.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StraightLine.lean), by Jesse Alama.
+`Cslib.Computability.URM.StraightLine`, in [Cslib/Computability/URM/StraightLine.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StraightLine.lean), by Jesse Alama.
 
 > This file defines straight-line programs (those without jumps) and proves
 > they always halt exactly at their length.
@@ -23,7 +23,7 @@ proof: formalized
 
 > ## Straight-Line Programs
 
-`Cslib.URM.Program.IsStraightLine` (definition, [line 33](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StraightLine.lean#L33))
+`Cslib.URM.Program.IsStraightLine` (definition, [line 33](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StraightLine.lean#L33))
 
 > A program is "straight-line" if it contains no jump instructions.
 
@@ -31,7 +31,7 @@ proof: formalized
 def Program.IsStraightLine (p : Program) : Prop
 ```
 
-`Cslib.URM.Program.IsStraightLine.append` (theorem, [line 40](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StraightLine.lean#L40))
+`Cslib.URM.Program.IsStraightLine.append` (theorem, [line 40](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StraightLine.lean#L40))
 
 > Append preserves straight-line property.
 
@@ -41,7 +41,7 @@ theorem Program.IsStraightLine.append {p q : Program}
     (p ++ q).IsStraightLine
 ```
 
-`Cslib.URM.Program.IsStraightLine.cons` (theorem, [line 48](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StraightLine.lean#L48))
+`Cslib.URM.Program.IsStraightLine.cons` (theorem, [line 48](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StraightLine.lean#L48))
 
 > Cons of non-jumping instruction preserves straight-line.
 
@@ -51,7 +51,7 @@ theorem Program.IsStraightLine.cons {instr : Instr} {p : Program}
     Program.IsStraightLine (instr :: p)
 ```
 
-`Cslib.URM.Program.IsStraightLine.singleton` (theorem, [line 56](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StraightLine.lean#L56))
+`Cslib.URM.Program.IsStraightLine.singleton` (theorem, [line 56](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StraightLine.lean#L56))
 
 > Singleton non-jumping instruction is straight-line.
 
@@ -62,7 +62,7 @@ theorem Program.IsStraightLine.singleton {instr : Instr}
 
 > ## Straight-Line Program Execution
 
-`Cslib.URM.Step.of_nonJump` (theorem, [line 65](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StraightLine.lean#L65))
+`Cslib.URM.Step.of_nonJump` (theorem, [line 65](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StraightLine.lean#L65))
 
 > A non-jumping instruction produces a step that increments PC by 1.
 
@@ -72,7 +72,7 @@ theorem Step.of_nonJump {p : Program} {s : State} (hlt : s.pc < p.length)
     ∃ s', Step p s s' ∧ s'.pc = s.pc + 1
 ```
 
-`Cslib.URM.straight_line_halts_from_regs` (theorem, [line 83](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StraightLine.lean#L83))
+`Cslib.URM.straight_line_halts_from_regs` (theorem, [line 83](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StraightLine.lean#L83))
 
 > Straight-line programs halt from any starting registers, not just State.init.
 > Useful for chaining: after running one program, we can run the next
@@ -83,7 +83,7 @@ theorem straight_line_halts_from_regs {p : Program} (hsl : p.IsStraightLine) (r 
     ∃ s, Steps p ⟨0, r⟩ s ∧ s.isHalted p ∧ s.pc = p.length
 ```
 
-`Cslib.URM.straight_line_halts` (theorem, [line 99](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StraightLine.lean#L99))
+`Cslib.URM.straight_line_halts` (theorem, [line 99](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StraightLine.lean#L99))
 
 > A straight-line program halts on any input.
 
@@ -92,7 +92,7 @@ theorem straight_line_halts {p : Program} (hsl : p.IsStraightLine) (inputs : Lis
     Halts p inputs
 ```
 
-`Cslib.URM.straightLinefinalState` (definition, [line 106](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StraightLine.lean#L106))
+`Cslib.URM.straightLinefinalState` (definition, [line 106](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StraightLine.lean#L106))
 
 > The halting state for a straight-line program starting from registers r.
 > Wraps Classical.choose to hide it from the API.
@@ -102,7 +102,7 @@ noncomputable def straightLinefinalState {p : Program}
     (hsl : p.IsStraightLine) (r : Regs) : State
 ```
 
-`Cslib.URM.straightLinefinalState_spec` (theorem, [line 112](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StraightLine.lean#L112))
+`Cslib.URM.straightLinefinalState_spec` (theorem, [line 112](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StraightLine.lean#L112))
 
 > Specification: the state from straightLinefinalState satisfies Steps, isHalted,
 > and has pc = p.length.
@@ -113,7 +113,7 @@ theorem straightLinefinalState_spec {p : Program} (hsl : p.IsStraightLine) (r : 
     Steps p ⟨0, r⟩ s ∧ s.isHalted p ∧ s.pc = p.length
 ```
 
-`Cslib.URM.straightLineFinalRegs` (definition, [line 118](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StraightLine.lean#L118))
+`Cslib.URM.straightLineFinalRegs` (definition, [line 118](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StraightLine.lean#L118))
 
 > The final registers after running a straight-line program from given starting registers.
 
@@ -121,7 +121,7 @@ theorem straightLinefinalState_spec {p : Program} (hsl : p.IsStraightLine) (r : 
 noncomputable def straightLineFinalRegs {p : Program} (hsl : p.IsStraightLine) (r : Regs) : Regs
 ```
 
-`Cslib.URM.straightLineFinalRegs_eq_of_halted` (theorem, [line 122](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StraightLine.lean#L122))
+`Cslib.URM.straightLineFinalRegs_eq_of_halted` (theorem, [line 122](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StraightLine.lean#L122))
 
 > For a straight-line program, s.regs equals straightLineFinalRegs if halted from r.
 
@@ -131,7 +131,7 @@ theorem straightLineFinalRegs_eq_of_halted {p : Program} (hsl : p.IsStraightLine
     s.regs = straightLineFinalRegs hsl r
 ```
 
-`Cslib.URM.straight_line_state_at_pc` (theorem, [line 130](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StraightLine.lean#L130))
+`Cslib.URM.straight_line_state_at_pc` (theorem, [line 130](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StraightLine.lean#L130))
 
 > In a straight-line program, we can characterize the state at any intermediate pc.
 > This gives us the state after executing instructions 0..pc-1.
@@ -149,5 +149,5 @@ theorem straight_line_state_at_pc {p : Program} (hsl : p.IsStraightLine)
 
 ## Sources
 
-- [Cslib/Computability/URM/StraightLine.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/StraightLine.lean)
+- [Cslib/Computability/URM/StraightLine.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Computability/URM/StraightLine.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.URM.StraightLine.json)

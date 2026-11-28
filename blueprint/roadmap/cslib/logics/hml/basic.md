@@ -7,7 +7,7 @@ proof: formalized
 
 # Hennessy-Milner Logic (HML)
 
-`Cslib.Logics.HML.Basic`, in [Cslib/Logics/HML/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean), by Fabrizio Montesi, Marco Peressotti, Alexandre Rademaker.
+`Cslib.Logics.HML.Basic`, in [Cslib/Logics/HML/Basic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean), by Fabrizio Montesi, Marco Peressotti, Alexandre Rademaker.
 
 > Hennessy-Milner Logic (HML) is a logic for reasoning about the behaviour of nondeterministic and
 > concurrent systems.
@@ -40,7 +40,7 @@ proof: formalized
 > * [M. Hennessy, R. Milner, *Algebraic Laws for Nondeterminism and Concurrency*][Hennessy1985]
 > * [L. Aceto, A. Ingólfsdóttir, *Testing Hennessy-Milner Logic with Recursion*][Aceto1999]
 
-`Cslib.Logic.Modal.HML.Proposition` (abbreviation, [line 58](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean#L58))
+`Cslib.Logic.Modal.HML.Proposition` (abbreviation, [line 58](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean#L58))
 
 > Propositions.
 
@@ -48,7 +48,7 @@ proof: formalized
 abbrev Proposition (Label Atom : Type*)
 ```
 
-`Cslib.Logic.Modal.HML.Model` (structure, [line 61](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean#L61))
+`Cslib.Logic.Modal.HML.Model` (structure, [line 61](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean#L61))
 
 > An HML model consists of an LTS and a valuation for its states.
 
@@ -60,7 +60,7 @@ structure Model State Label Atom where
   v : State → Atom → Prop
 ```
 
-`Cslib.Logic.Modal.HML.Model.toModal` (definition, [line 68](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean#L68))
+`Cslib.Logic.Modal.HML.Model.toModal` (definition, [line 68](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean#L68))
 
 > Converts an HML into a unary modal model.
 
@@ -68,48 +68,48 @@ structure Model State Label Atom where
 def Model.toModal (m : Model State Label Atom)
 ```
 
-`Cslib.Logic.Modal.HML.Model.toModal_toFrame` (theorem, [line 71](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean#L71))
+`Cslib.Logic.Modal.HML.Model.toModal_toFrame` (theorem, [line 71](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean#L71))
 
 ```lean
 theorem Model.toModal_toFrame (m : Model State Label Atom) :
     m.toModal.toFrame = m.lts.toFrame
 ```
 
-`Cslib.Logic.Modal.Satisfies.hml_atom_iff` (theorem, [line 85](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean#L85))
+`Cslib.Logic.Modal.Satisfies.hml_atom_iff` (theorem, [line 85](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean#L85))
 
 ```lean
 theorem Satisfies.hml_atom_iff {p : Atom} : ⇓HML[m,s ⊨ p] ↔ m.v s p
 ```
 
-`Cslib.Logic.Modal.Satisfies.hml_dynDiamond_iff_exists` (theorem, [line 87](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean#L87))
+`Cslib.Logic.Modal.Satisfies.hml_dynDiamond_iff_exists` (theorem, [line 87](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean#L87))
 
 ```lean
 theorem Satisfies.hml_dynDiamond_iff_exists :
     ⇓HML[m,s ⊨ d⟨μ⟩φ] ↔ ∃ s', m.lts.Tr s μ s' ∧ ⇓HML[m,s' ⊨ φ]
 ```
 
-`Cslib.Logic.Modal.Satisfies.hml_dynBox_iff_forall` (theorem, [line 92](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean#L92))
+`Cslib.Logic.Modal.Satisfies.hml_dynBox_iff_forall` (theorem, [line 92](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean#L92))
 
 ```lean
 theorem Satisfies.hml_dynBox_iff_forall :
     ⇓HML[m,s ⊨ d[μ]φ] ↔ ∀ s', m.lts.Tr s μ s' → ⇓HML[m,s' ⊨ φ]
 ```
 
-`Cslib.Logic.Modal.Satisfies.hml_dynDiamond_intro` (theorem, [line 98](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean#L98))
+`Cslib.Logic.Modal.Satisfies.hml_dynDiamond_intro` (theorem, [line 98](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean#L98))
 
 ```lean
 theorem Satisfies.hml_dynDiamond_intro (htr : m.lts.Tr s μ s')
     (h : ⇓HML[m,s' ⊨ φ]) : ⇓HML[m,s ⊨ d⟨μ⟩φ]
 ```
 
-`Cslib.Logic.Modal.Satisfies.hml_dynBox_elim` (theorem, [line 102](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean#L102))
+`Cslib.Logic.Modal.Satisfies.hml_dynBox_elim` (theorem, [line 102](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean#L102))
 
 ```lean
 theorem Satisfies.hml_dynBox_elim (hbox : ⇓HML[m,s ⊨ d[μ]φ])
     (htr : m.lts.Tr s μ s') : ⇓HML[m,s' ⊨ φ]
 ```
 
-`Cslib.Logic.Modal.propositions` (definition, [line 112](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean#L112))
+`Cslib.Logic.Modal.propositions` (definition, [line 112](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean#L112))
 
 > The list of propositions over finite μ-derivatives.
 
@@ -117,13 +117,13 @@ theorem Satisfies.hml_dynBox_elim (hbox : ⇓HML[m,s ⊨ d[μ]φ])
 noncomputable def propositions : List (HML.Proposition Label Atom)
 ```
 
-`Cslib.Logic.Modal.propositions_complete` (theorem, [line 115](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean#L115))
+`Cslib.Logic.Modal.propositions_complete` (theorem, [line 115](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean#L115))
 
 ```lean
 theorem propositions_complete (s' : m.lts.image s μ) : stateMap s' ∈ propositions stateMap
 ```
 
-`Cslib.Logic.Modal.propositions_satisfies_conjunction` (theorem, [line 119](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean#L119))
+`Cslib.Logic.Modal.propositions_satisfies_conjunction` (theorem, [line 119](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean#L119))
 
 ```lean
 theorem propositions_satisfies_conjunction (htr : m.lts.Tr s1 μ s1')
@@ -131,7 +131,7 @@ theorem propositions_satisfies_conjunction (htr : m.lts.Tr s1 μ s1')
     ⇓HML[m,s1 ⊨ d⟨μ⟩(⋀(propositions stateMap))]
 ```
 
-`Cslib.Logic.Modal.theoryEq_isBisimulation` (theorem, [line 131](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean#L131))
+`Cslib.Logic.Modal.theoryEq_isBisimulation` (theorem, [line 131](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean#L131))
 
 > Theory equivalence is a bisimulation.
 
@@ -141,7 +141,7 @@ theorem theoryEq_isBisimulation
     m.lts.IsHomBisimulation (TheoryEq m.toModal)
 ```
 
-`Cslib.Logic.Modal.bisimulation_satisfies` (lemma, [line 170](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean#L170))
+`Cslib.Logic.Modal.bisimulation_satisfies` (lemma, [line 170](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean#L170))
 
 > If two states are in a bisimulation, one satisfies a proposition iff the other does.
 
@@ -151,7 +151,7 @@ lemma bisimulation_satisfies {hrb : m.lts.IsHomBisimulation r}
     (φ : HML.Proposition Label Atom) : ⇓HML[m,s1 ⊨ φ] ↔ ⇓HML[m,s2 ⊨ φ]
 ```
 
-`Cslib.Logic.Modal.bisimulation_theoryEq` (lemma, [line 179](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean#L179))
+`Cslib.Logic.Modal.bisimulation_theoryEq` (lemma, [line 179](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean#L179))
 
 ```lean
 lemma bisimulation_theoryEq {hrb : m.lts.IsHomBisimulation r}
@@ -159,7 +159,7 @@ lemma bisimulation_theoryEq {hrb : m.lts.IsHomBisimulation r}
     TheoryEq m.toModal s1 s2
 ```
 
-`Cslib.Logic.Modal.theoryEq_eq_bisimilarity` (theorem, [line 184](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean#L184))
+`Cslib.Logic.Modal.theoryEq_eq_bisimilarity` (theorem, [line 184](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean#L184))
 
 > Theory equivalence and bisimilarity coincide for image-finite LTSs.
 
@@ -182,5 +182,5 @@ theorem theoryEq_eq_bisimilarity
 
 ## Sources
 
-- [Cslib/Logics/HML/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/HML/Basic.lean)
+- [Cslib/Logics/HML/Basic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Logics/HML/Basic.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Logics.HML.Basic.json)

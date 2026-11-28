@@ -7,7 +7,7 @@ proof: formalized
 
 # Calculus of Communicating Systems (CCS)
 
-`Cslib.Languages.CCS.Basic`, in [Cslib/Languages/CCS/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Basic.lean), by Fabrizio Montesi.
+`Cslib.Languages.CCS.Basic`, in [Cslib/Languages/CCS/Basic.lean](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CCS/Basic.lean), by Fabrizio Montesi.
 
 > CCS [Milner80], as presented in [Sangiorgi2011]. In the semantics (see `CCS.lts`), we adopt the
 > option of constant definitions (K = P).
@@ -25,7 +25,7 @@ proof: formalized
 > * [R. Milner, *A Calculus of Communicating Systems*][Milner80]
 > * [D. Sangiorgi, *Introduction to Bisimulation and Coinduction*][Sangiorgi2011]
 
-`Cslib.CCS.Act` (inductive type, [line 39](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Basic.lean#L39))
+`Cslib.CCS.Act` (inductive type, [line 39](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CCS/Basic.lean#L39))
 
 > Actions.
 
@@ -37,7 +37,7 @@ inductive Act (Name : Type u) : Type u where
 deriving DecidableEq
 ```
 
-`Cslib.CCS.Process` (inductive type, [line 46](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Basic.lean#L46))
+`Cslib.CCS.Process` (inductive type, [line 46](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CCS/Basic.lean#L46))
 
 > Processes.
 
@@ -58,7 +58,7 @@ inductive Process (Name : Type u) (Constant : Type v) : Type (max u v) where
 deriving DecidableEq
 ```
 
-`Cslib.CCS.Act.IsVisible` (inductive type, [line 105](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Basic.lean#L105))
+`Cslib.CCS.Act.IsVisible` (inductive type, [line 105](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CCS/Basic.lean#L105))
 
 > An action is visible if it a name or a coname.
 
@@ -68,7 +68,7 @@ inductive IsVisible : Act Name → Prop where
   | coname : IsVisible (Act.coname a)
 ```
 
-`Cslib.CCS.Act.isVisible_neq_τ` (theorem, [line 111](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Basic.lean#L111))
+`Cslib.CCS.Act.isVisible_neq_τ` (theorem, [line 111](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CCS/Basic.lean#L111))
 
 > If an action is visible, it is not `τ`.
 
@@ -76,7 +76,7 @@ inductive IsVisible : Act Name → Prop where
 theorem isVisible_neq_τ {μ : Act Name} (h : μ.IsVisible) : μ ≠ Act.τ
 ```
 
-`Cslib.CCS.Act.Co` (inductive type, [line 116](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Basic.lean#L116))
+`Cslib.CCS.Act.Co` (inductive type, [line 116](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CCS/Basic.lean#L116))
 
 > Checks that an action is the coaction of another.
 
@@ -86,7 +86,7 @@ inductive Co {Name : Type u} : Act Name → Act Name → Prop where
   | cn : Co (coname a) (name a)
 ```
 
-`Cslib.CCS.Act.Co.symm` (theorem, [line 122](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Basic.lean#L122))
+`Cslib.CCS.Act.Co.symm` (theorem, [line 122](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CCS/Basic.lean#L122))
 
 > `Act.Co` is symmetric.
 
@@ -94,7 +94,7 @@ inductive Co {Name : Type u} : Act Name → Act Name → Prop where
 theorem Co.symm (h : Act.Co μ μ') : Act.Co μ' μ
 ```
 
-`Cslib.CCS.Act.co_isVisible` (theorem, [line 126](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Basic.lean#L126))
+`Cslib.CCS.Act.co_isVisible` (theorem, [line 126](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CCS/Basic.lean#L126))
 
 > If two actions are one the coaction of the other, then they are both visible.
 
@@ -102,7 +102,7 @@ theorem Co.symm (h : Act.Co μ μ') : Act.Co μ' μ
 theorem co_isVisible (h : Act.Co μ μ') : μ.IsVisible ∧ μ'.IsVisible
 ```
 
-`Cslib.CCS.Act.isCo` (definition, [line 130](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Basic.lean#L130))
+`Cslib.CCS.Act.isCo` (definition, [line 130](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CCS/Basic.lean#L130))
 
 > Checks that an action is the coaction of another. This is the Boolean version of `Act.Co`.
 
@@ -110,13 +110,13 @@ theorem co_isVisible (h : Act.Co μ μ') : μ.IsVisible ∧ μ'.IsVisible
 def isCo [DecidableEq Name] (μ μ' : Act Name) : Bool
 ```
 
-`Cslib.CCS.Act.isCo_iff` (theorem, [line 135](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Basic.lean#L135))
+`Cslib.CCS.Act.isCo_iff` (theorem, [line 135](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CCS/Basic.lean#L135))
 
 ```lean
 theorem isCo_iff [DecidableEq Name] {μ μ' : Act Name} : isCo μ μ' ↔ Co μ μ'
 ```
 
-`Cslib.CCS.Context` (inductive type, [line 146](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Basic.lean#L146))
+`Cslib.CCS.Context` (inductive type, [line 146](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CCS/Basic.lean#L146))
 
 > Contexts.
 
@@ -132,7 +132,7 @@ inductive Context (Name : Type u) (Constant : Type v) : Type (max u v) where
 deriving DecidableEq
 ```
 
-`Cslib.CCS.Context.fill` (definition, [line 158](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Basic.lean#L158))
+`Cslib.CCS.Context.fill` (definition, [line 158](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CCS/Basic.lean#L158))
 
 > Replaces the hole in a `Context` with a `Process`.
 
@@ -140,7 +140,7 @@ deriving DecidableEq
 def Context.fill (c : Context Name Constant) (p : Process Name Constant) : Process Name Constant
 ```
 
-`Cslib.CCS.context_fill_def` (theorem, [line 172](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Basic.lean#L172))
+`Cslib.CCS.context_fill_def` (theorem, [line 172](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CCS/Basic.lean#L172))
 
 > Definition of context filling.
 
@@ -149,7 +149,7 @@ theorem context_fill_def (c : Context Name Constant) (p : Process Name Constant)
   c<[p] = c.fill p
 ```
 
-`Cslib.CCS.Context.complete` (theorem, [line 177](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Basic.lean#L177))
+`Cslib.CCS.Context.complete` (theorem, [line 177](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CCS/Basic.lean#L177))
 
 > Any `Process` can be obtained by filling a `Context` with an atom. This proves that `Context`
 > is a complete formalisation of syntactic contexts for CCS.
@@ -166,5 +166,5 @@ theorem Context.complete (p : Process Name Constant) :
 
 ## Sources
 
-- [Cslib/Languages/CCS/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Basic.lean)
+- [Cslib/Languages/CCS/Basic.lean at 8b510d01](https://github.com/leanprover/cslib/blob/8b510d014295ed2c2334a379a7c96561a1603dc4/Cslib/Languages/CCS/Basic.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Languages.CCS.Basic.json)
